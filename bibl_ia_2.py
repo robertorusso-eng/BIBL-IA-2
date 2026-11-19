@@ -16,6 +16,7 @@ import json
 import math
 import os
 import random
+import secrets
 import re
 import threading
 import unicodedata
@@ -10835,11 +10836,11 @@ def modello_voce():
     return WhisperModel("base", device="cpu", compute_type="int8")
 
 
-def voce_dello_studente(chiave):
+def voce_dello_studente(chiave, etichetta="🎙️ Registra la domanda: premi, parla, premi di nuovo"):
     """Il microfono: lo studente registra la domanda nel browser e il Mac la trascrive (faster-whisper).
     Prima la riconosceva il browser, ma dentro l'app spesso non partiva (Safari e Chrome lo bloccano)."""
     import io
-    audio = st.audio_input(L.tr("🎙️ Registra la domanda: premi, parla, premi di nuovo"), key=f"voce_{chiave}")
+    audio = st.audio_input(L.tr(etichetta), key=f"voce_{chiave}")
     if audio is None:
         return None
     dati = audio.getvalue()
@@ -10992,6 +10993,17 @@ def rispondi_tutor(domanda, modo, professore):
     if risposta_fissa(domanda):
         chat.append(("assistant", risposta_fissa(domanda), {"ora": datetime.now().strftime("%H:%M")}))
         return
+    catena = collegamento_richiesto(domanda)
+    if catena is not None:
+        if catena:
+            chat.append(("assistant", testo_collegamento(catena), {"ora": datetime.now().strftime("%H:%M"),
+                                                                  "collegamento": catena}))
+        else:
+            chat.append(("assistant", "Per questi argomenti non ho un collegamento controllato da mostrarti. Scegli tra "
+                         "i collegamenti già pronti qui sopra (🔗 Collega gli argomenti), oppure chiedimi di spiegarti "
+                         "un argomento alla volta.", {"ora": datetime.now().strftime("%H:%M")}))
+            st.session_state["tutor_collegamenti"] = True
+        return
     with st.spinner(f"{professore} cerca nei testi di BIBL-IA e scrive la spiegazione..."):
         trovati = testi_per_la_domanda(domanda, 4)[:6]
         if st.session_state.get("tutor_doc_testo"):
@@ -11060,6 +11072,425 @@ def rispondi_tutor(domanda, modo, professore):
     registra_domanda(domanda, frasi)
 
 
+# ---- Collegamenti tra argomenti (solo quelli scritti e controllati a mano nei percorsi) ------------------------------
+RICHIESTA_COLLEGAMENTO = re.compile(r"\bcolleg\w*|che (?:rapporto|relazione|nesso) c'è tra|come si passa d|"
+                                    r"come si arriva da|\bconnection|\blink between", re.I)
+
+
+@st.cache_data(show_spinner=False)
+def collegamenti_percorsi():
+    """I collegamenti «da un percorso al successivo» scritti a mano (mappe/percorsi.json, voce «dopo»)."""
+    tutti = percorsi.percorsi()
+    elenco = []
+    for nome, p in tutti.items():
+        for strada in (p.get("dopo") or {}).get("strade", []):
+            if strada.get("prossimo") in tutti and strada["prossimo"] != nome:
+                elenco.append({"da_percorso": nome, "a_percorso": strada["prossimo"], **strada})
+    return elenco
+
+
+def cammino_tra(partenza, arrivo):
+    """La catena più breve di collegamenti da un percorso all'altro (anche al contrario, se serve)."""
+    from collections import deque
+    for verso in (1, -1):
+        archi = {}
+        for c in collegamenti_percorsi():
+            da, a = (c["da_percorso"], c["a_percorso"]) if verso == 1 else (c["a_percorso"], c["da_percorso"])
+            archi.setdefault(da, []).append((a, c))
+        coda, visti = deque([(partenza, [])]), {partenza}
+        while coda:
+            nodo, strada = coda.popleft()
+            if nodo == arrivo and strada:
+                return strada if verso == 1 else strada[::-1]
+            for dopo, c in archi.get(nodo, []):
+                if dopo not in visti and len(strada) < 5:
+                    visti.add(dopo)
+                    coda.append((dopo, strada + [c]))
+    return []
+
+
+def percorsi_nominati(testo):
+    """Tutti i percorsi nominati in un testo, nell'ordine in cui compaiono (nome o altro nome preciso)."""
+    t = (testo or "").lower()
+    trovati = []
+    for nome in percorsi.percorsi():
+        i = t.find(nome.lower())
+        if i >= 0:
+            trovati.append((i, nome))
+    for regola, nome in ALTRI_NOMI_PERCORSI:
+        m = re.search(regola, t)
+        if m and nome in percorsi.percorsi():
+            trovati.append((m.start(), nome))
+    ordinati = []
+    for _, nome in sorted(trovati):
+        if nome not in ordinati:
+            ordinati.append(nome)
+    return ordinati
+
+
+def collegamenti_pronti():
+    """Le scelte già pronte: alcune catene lunghe (solo se i collegamenti esistono) e tutti i collegamenti singoli."""
+    scelte = {}
+    for titolo, tappe in [("Dal glucosio all'ATP", ["glicolisi", "ciclo di Krebs", "fosforilazione ossidativa"]),
+                          ("Il lattato del muscolo torna glucosio nel fegato", ["glicolisi", "ciclo di cori"]),
+                          ("Dal glucosio ai grassi", ["glicolisi", "ciclo di Krebs", "sintesi degli acidi grassi"]),
+                          ("Dai grassi all'energia", ["beta-ossidazione", "ciclo di Krebs", "fosforilazione ossidativa"])]:
+        catena = []
+        for da, a in zip(tappe, tappe[1:]):
+            catena += cammino_tra(da, a)
+        if catena and len(catena) >= len(tappe) - 1:
+            scelte[f"🔗 {titolo}: " + " → ".join(tappe)] = catena
+    for c in collegamenti_percorsi():
+        scelte[f"{c['da_percorso']} → {c['a_percorso']} ({c.get('condizione', '').lower()})"] = [c]
+    return scelte
+
+
+def testo_collegamento(catena):
+    tappe = [catena[0]["da_percorso"]] + [c["a_percorso"] for c in catena]
+    righe = [f"🔗 **Il collegamento: {' → '.join(tappe)}**"]
+    for c in catena:
+        ponte = f"{c.get('da', '')} → {c.get('a', '')}" + (f" (grazie a {c['enzima']})" if c.get("enzima") else "")
+        righe.append(f"\n**{c['da_percorso']} → {c['a_percorso']}** · _{c.get('condizione', '')}_\n\n"
+                     f"Il ponte: {ponte}." + (f" Entra {', '.join(c['entra'])}." if c.get("entra") else "")
+                     + (f" Esce {', '.join(c['esce'])}." if c.get("esce") else "") + (f"\n\n{c['nota']}" if c.get("nota") else ""))
+    return "\n".join(righe)
+
+
+def mostra_collegamento(catena, chiave):
+    """Lo schema del collegamento (i percorsi in fila, con la molecola che fa da ponte) e le reazioni di ogni tappa."""
+    righe = ['digraph G { rankdir=TB; bgcolor="transparent"; node [shape=box style="rounded,filled" fillcolor="#EEF2F7" '
+             'color="#2563EB" fontname="Helvetica" fontsize=12]; edge [color="#2563EB" fontname="Helvetica" fontsize=10];']
+    for c in catena:
+        ponte = f"{c.get('da', '')} → {c.get('a', '')}".replace('"', "'")
+        righe.append(f'"{c["da_percorso"]}" -> "{c["a_percorso"]}" [label="{ponte}"];')
+    st.graphviz_chart("\n".join(righe) + "}")
+    st.caption("🗺️ Collegamenti scritti e controllati a mano nei percorsi di BIBL-IA (non dall'AI).")
+    tappe = list(dict.fromkeys([catena[0]["da_percorso"]] + [c["a_percorso"] for c in catena]))
+    for nome in tappe:
+        reazioni_passo_passo(nome, f"coll_{chiave}")
+
+
+def collegamento_richiesto(domanda):
+    """Se lo studente chiede un collegamento: la catena controllata (lista), [] se non ce n'è una, None se non lo chiede."""
+    if not RICHIESTA_COLLEGAMENTO.search(domanda or ""):
+        return None
+    nominati = percorsi_nominati(domanda)
+    if len(nominati) >= 2:
+        return cammino_tra(nominati[0], nominati[1])
+    if len(nominati) == 1:
+        uscite = [c for c in collegamenti_percorsi() if c["da_percorso"] == nominati[0]]
+        return uscite[:1]
+    return []
+
+
+def pannello_collegamenti():
+    """Le scelte pronte: lo studente sceglie un collegamento e lo vede nella chat."""
+    with st.container(border=True):
+        st.markdown("**🔗 Collega gli argomenti** — scegli un collegamento già pronto:")
+        scelte = collegamenti_pronti()
+        scelta = st.selectbox("Collegamento", list(scelte), key="tutor_coll_scelta", label_visibility="collapsed")
+        a, b = st.columns(2)
+        if a.button("Mostra il collegamento", type="primary", key="tutor_coll_mostra", width="stretch"):
+            chat = st.session_state.setdefault("tutor_chat", [])
+            ora = datetime.now().strftime("%H:%M")
+            chat.append(("user", f"Collegami: {scelta.replace('🔗 ', '')}", {"ora": ora}))
+            chat.append(("assistant", testo_collegamento(scelte[scelta]), {"ora": ora, "collegamento": scelte[scelta]}))
+            st.session_state["tutor_collegamenti"] = False
+            st.rerun()
+        if b.button("Chiudi", key="tutor_coll_chiudi", width="stretch"):
+            st.session_state["tutor_collegamenti"] = False
+            st.rerun()
+
+
+# ---- L'interrogazione orale con il professore ------------------------------------------------------------------------
+PROF_PER_MATERIA = [(r"chimic|biochim", "Marco"), (r"fisic|matemat|logic|statist|informat|elettr|termodin", "Sara"),
+                    (r"medicin|farmac|microbio|igiene|sanit", "Luca"), (r"biolog|anatom|genet|botan|ecolog", "Lina")]
+GIUDIZI = [(9, "Ottima", "#16A34A"), (7, "Buona", "#2563EB"), (6, "Sufficiente", "#CA8A04"), (4, "Parziale", "#EA580C"),
+           (0, "Da ripassare", "#DC2626")]
+
+
+def professore_della_materia(materia):
+    for regola, nome in PROF_PER_MATERIA:
+        if re.search(regola, materia or "", re.I):
+            return nome
+    return st.session_state.get("tutor_prof", "Lina")
+
+
+def domande_della_lezione(lez):
+    d = lez.get("domande", [])
+    if isinstance(d, str):
+        try:
+            d = json.loads(d)
+        except ValueError:
+            import ast
+            try:
+                d = ast.literal_eval(d)
+            except (ValueError, SyntaxError):
+                d = [d]
+    return [x for x in d if isinstance(x, str) and len(x.split()) >= 3]
+
+
+def riferimento_orale(lez, domanda):
+    """I testi controllati della lezione più vicini alla domanda: servono per correggere la risposta."""
+    import numpy as np
+    v = riscritta(lez) or {}
+    pezzi = []
+    for x in v.get("paragrafi", []) or []:
+        if isinstance(x, dict) and x.get("testo"):
+            pezzi.append(x["testo"])
+    pezzi += [t for t in v.get("punti_chiave", []) or [] if isinstance(t, str)]
+    pezzi += [f"{t['termine']}: {t['definizione']}" for t in v.get("termini", []) or [] if isinstance(t, dict)]
+    altri = [t for t, _ in testi_per_la_domanda(domanda, 3)][:2]     # anche i percorsi, le schede e le mappe controllate
+    if not pezzi:
+        return altri or []
+    vettori = modello_frasi().encode(pezzi, normalize_embeddings=True)
+    vicini = [pezzi[int(k)] for k in np.argsort(-(vettori @ modello_frasi().encode(domanda, normalize_embeddings=True)))[:4]]
+    return list(dict.fromkeys(vicini + altri))[:6]
+
+
+def _radici(testo):
+    """Le parole che contano di un testo (dalle 5 lettere in su), ridotte alla radice per confrontarle."""
+    vuote = {"della", "delle", "degli", "nella", "nelle", "negli", "dalla", "sulla", "anche", "molto", "questo", "questa",
+             "quello", "quella", "perché", "quando", "sono", "viene", "vengono", "studente", "risposta", "detto"}
+    return {w[:5] for w in re.findall(r"[a-zà-ù0-9₀-₉⁺⁻]{5,}", (testo or "").lower()) if w not in vuote}
+
+
+def _detto(punto, risposta, quota, domanda=""):
+    """Se un punto compare davvero nella risposta dello studente (senza contare le parole della domanda, che ci sono
+    quasi sempre: «glicolisi»)."""
+    parole = _radici(punto) - _radici(domanda)
+    comuni = parole & _radici(risposta)
+    return bool(parole) and len(comuni) / len(parole) >= quota and (len(comuni) >= 2 or len(parole) == len(comuni) == 1
+                                                                       and quota < 0.6)
+
+
+def valuta_risposta_orale(professore, materia, domanda, risposta, riferimento):
+    """Il professore (l'AI del Mac) confronta la risposta con i testi controllati: voto, cosa va, cosa manca, spiegazione."""
+    if len((risposta or "").split()) < 2:
+        risposta = "(lo studente non ha risposto)"
+    testo = chiedi_ai(
+        f"Sei {professore}, professore di {materia}, e stai interrogando oralmente uno studente. Valuta la sua risposta "
+        "SOLO confrontandola con il RIFERIMENTO qui sotto (testi controllati): non usare altre fonti e non inventare. "
+        "La risposta è trascritta dalla voce: ignora gli errori di trascrizione e di grammatica.\n\n"
+        f"DOMANDA: {domanda}\n\nRISPOSTA DELLO STUDENTE: {risposta}\n\nRIFERIMENTO:\n- " + "\n- ".join(riferimento) +
+        "\n\nRispondi SOLO con un oggetto JSON con queste chiavi:\n"
+        '"voto": un numero intero da 1 a 10 (10 = completa e corretta; 1-3 = vuota, sbagliata o fuori tema);\n'
+        '"giusto": elenco (al massimo 3) di frasi brevi su che cosa lo studente ha detto di corretto;\n'
+        '"manca": elenco (al massimo 3) dei concetti importanti del riferimento che lo studente non ha detto;\n'
+        '"errori": elenco delle affermazioni sbagliate dello studente, ognuna con la correzione ([] se non ce ne sono);\n'
+        '"spiegazione": la tua spiegazione della risposta giusta in 4-6 frasi, in italiano, rivolta direttamente allo '
+        "studente con il tu (per esempio «Hai detto…», «Ricorda che…»; mai «lo studente»), in modo incoraggiante, usando "
+        "solo il riferimento; non dire mai che ha detto qualcosa che nella sua risposta non c'è;\n"
+        '"approfondimento": una domanda di approfondimento sullo stesso argomento a cui si risponde con il riferimento.', 900)
+    m = re.search(r"\{.*\}", testo or "", re.S)
+    try:
+        dati = json.loads(m.group(0)) if m else {}
+    except ValueError:
+        try:
+            dati = json.loads(re.sub(r",\s*([}\]])", r"\1", m.group(0).replace("“", '"').replace("”", '"')))
+        except ValueError:
+            dati = {}
+    try:
+        voto = max(1, min(10, int(round(float(dati.get("voto"))))))
+    except (TypeError, ValueError):
+        voto = None
+    def lista(k):
+        voci = []
+        for x in dati.get(k) or [] if isinstance(dati.get(k), list) else []:
+            if isinstance(x, (list, tuple)):
+                x = " → corretto: ".join(str(y) for y in x)
+            elif isinstance(x, dict):
+                x = " → corretto: ".join(str(y) for y in x.values())
+            x = str(x).strip().strip("[]'\"")
+            if x:
+                voci.append(re.sub(r"'\s*,\s*'", " → corretto: ", x))
+        return voci[:4]
+    # Il controllo del programma (non dell'AI): «hai detto bene» solo se lo studente l'ha detto davvero, «manca» solo
+    # se non l'ha detto (l'AI piccola a volte si contraddice).
+    giusto = [x for x in lista("giusto") if _detto(x, risposta, 0.6, domanda) and not re.search(r"\bnon\b", x, re.I)]
+    manca = [x for x in lista("manca") if not _detto(x, risposta, 0.6, domanda)]
+    spiegazione = str(dati.get("spiegazione") or "").strip() or (testo or "").strip()[:1200]
+    spiegazione = re.sub(r"\b[Ll]a risposta dello studente\b", "La tua risposta", spiegazione)
+    spiegazione = re.sub(r"\b[Ll]o studente ha\b", "Hai", spiegazione)
+    if not giusto:     # niente di giusto: via le frasi che lodano cose che lo studente non ha detto
+        frasi = re.split(r"(?<=[.!?])\s+", spiegazione)
+        spiegazione = " ".join(f for f in frasi if not re.search(
+            r"\bhai (?:\w+ )?(?:correttamente|giustamente|colto|identificato|indicato|ricordato|capito)", f, re.I)) or spiegazione
+    return {"voto": voto, "giusto": giusto, "manca": manca, "errori": lista("errori"),
+            "spiegazione": spiegazione,
+            "approfondimento": str(dati.get("approfondimento") or "").strip()}
+
+
+def giudizio_del_voto(voto):
+    for soglia, nome, colore in GIUDIZI:
+        if voto is not None and voto >= soglia:
+            return nome, colore
+    return "Da rivedere", "#64748B"
+
+
+def parla_una_volta(testo, chiave):
+    """Il professore legge ad alta voce (una sola volta per ogni testo)."""
+    if st.session_state.get(f"letto_{chiave}"):
+        return
+    st.session_state[f"letto_{chiave}"] = True
+    audio = audio_italiano(re.sub(r"[*#_>`]", "", testo))
+    if audio:
+        st.audio(audio, format="audio/mp4", autoplay=True)
+
+
+def nuvoletta_professore(volto, testo, colore="#2563EB"):
+    st.markdown(f'<div style="display:flex;gap:12px;align-items:flex-start;margin:6px 0"><div style="font-size:40px;line-height:1">'
+                f'{volto}</div><div style="background:#F1F5F9;border-left:4px solid {colore};border-radius:14px;padding:12px 16px;'
+                f'font-size:16px;color:#0F1B3D">{html.escape(testo)}</div></div>', unsafe_allow_html=True)
+
+
+def interrogazione_orale():
+    """Il professore fa le domande della lezione a voce, lo studente risponde al microfono (o scrivendo) e il professore
+    dice che cosa va, che cosa manca e spiega. È un allenamento: il giudizio lo dà l'AI del Mac."""
+    p = profilo()
+    o = st.session_state.get("orale")
+    if not o:
+        st.markdown("### 🗣️ Interrogazione orale")
+        st.caption("Il professore ti fa le domande di una lezione a voce; tu rispondi al microfono (o scrivendo). Poi ti dice "
+                   "che cosa hai detto bene, che cosa manca e ti spiega la risposta. È un allenamento per l'orale: il giudizio "
+                   "lo dà l'AI del Mac confrontando la tua risposta con i testi controllati della lezione, non è un voto "
+                   "ufficiale.")
+        lezioni = [l for l in lezioni_materie() if domande_della_lezione(l)]
+        materie = list(dict.fromkeys(l["materia"] for l in lezioni))
+        colonne = st.columns(2)
+        materia = colonne[0].selectbox("Materia", materie, key="orale_materia")
+        di_materia = [l for l in lezioni if l["materia"] == materia]
+        scelta = colonne[1].selectbox("Lezione", range(len(di_materia)), key=f"orale_lez_{seme_di(materia)}",
+                                      format_func=lambda i: f"{di_materia[i]['tema']} · {titolo_lezione(di_materia[i])}")
+        quante = st.segmented_control("Quante domande?", [3, 5], default=3, key="orale_quante") or 3
+        if st.button("🎙️ Inizia l'interrogazione", type="primary", key="orale_inizia"):
+            lez = di_materia[scelta]
+            domande = domande_della_lezione(lez)
+            random.shuffle(domande)
+            professore = professore_della_materia(materia)
+            st.session_state["tutor_prof"] = professore
+            st.session_state["orale"] = {"lez": {k: lez[k] for k in ("materia", "tema", "numero", "titolo")},
+                                         "titolo": titolo_lezione(lez), "materia": materia, "prof": professore,
+                                         "domande": domande[:quante], "n": 0, "esiti": [], "fase": "domanda",
+                                         "id": secrets.token_hex(3)}
+            st.rerun()
+        fatte = p.get("interrogazioni", [])
+        if fatte:
+            with st.expander(f"📒 Le tue interrogazioni ({len(fatte)})"):
+                for x in fatte[::-1][:10]:
+                    st.markdown(f"- {x['data']} · **{x['titolo']}** · media **{x['media']}/10** su {x['domande']} domande")
+        return
+    lez = next((l for l in lezioni_materie() if (l["materia"], l["tema"], l["numero"]) ==
+                (o["lez"]["materia"], o["lez"]["tema"], o["lez"]["numero"])), o["lez"])
+    prof = PROFESSORI.get(o["prof"], PROFESSORI["Lina"])
+    totale = len(o["domande"])
+    st.markdown(f"### 🗣️ Interrogazione: {o['titolo']}")
+    if o["fase"] != "fine":
+        st.progress(min(o["n"] / totale, 1.0), text=f"Domanda {min(o['n'] + 1, totale)} di {totale}")
+    chiave = f"{o['id']}_{o['n']}"
+    if o["fase"] == "domanda":
+        domanda = o["domande"][o["n"]]
+        nuvoletta_professore(prof["volto"], f"{o['prof']}: {domanda}", prof["colore"])
+        parla_una_volta(domanda, f"orale_d_{chiave}")
+        ascolta(domanda, f"orale_d_{chiave}")
+        parlato = voce_dello_studente(f"orale_{chiave}", "🎙️ Registra la risposta: premi, parla, premi di nuovo")
+        if parlato:
+            st.session_state[f"orale_testo_{chiave}"] = parlato
+        # Risposta e pulsanti nello stesso modulo: un solo clic basta (senza modulo il primo clic serviva solo a
+        # confermare il testo scritto).
+        with st.form(f"orale_form_{chiave}", border=False):
+            risposta = st.text_area("La tua risposta (puoi correggere la trascrizione o scriverla)",
+                                    key=f"orale_testo_{chiave}", height=130)
+            a, b, c = st.columns(3)
+            valuta = a.form_submit_button("✅ Ho risposto: correggi", type="primary", width="stretch")
+            non_so = b.form_submit_button("🤷 Non lo so: spiegamelo", width="stretch")
+            ferma = c.form_submit_button("⏹ Termina", width="stretch")
+        if valuta and not risposta.strip():
+            st.warning("Prima rispondi: registra la risposta con il microfono o scrivila nel riquadro.")
+        elif valuta or non_so:
+            o["risposta"] = risposta.strip() if valuta else ""
+            o["fase"] = "valuta"
+            st.rerun()
+        elif ferma:
+            o["fase"] = "fine"
+            st.rerun()
+        return
+    if o["fase"] == "valuta":
+        domanda = o["domande"][o["n"]]
+        with st.spinner(f"{o['prof']} ascolta la tua risposta e la confronta con la lezione..."):
+            riferimento = riferimento_orale(lez, domanda)
+            esito = valuta_risposta_orale(o["prof"], o["materia"], domanda, o.get("risposta", ""), riferimento)
+        if not o.get("risposta"):
+            esito["voto"] = None
+        o["esiti"].append({"domanda": domanda, "risposta": o.get("risposta", ""), "riferimento": riferimento, **esito})
+        o["fase"] = "esito"
+        st.rerun()
+    if o["fase"] == "esito":
+        e = o["esiti"][-1]
+        nuvoletta_professore(prof["volto"], f"{o['prof']}: {e['domanda']}", prof["colore"])
+        if e["risposta"]:
+            st.markdown(f'<div style="display:flex;justify-content:flex-end;margin:6px 0"><div style="background:#2563EB;'
+                        f'color:#fff;border-radius:14px;padding:10px 14px;max-width:80%">{html.escape(e["risposta"])}</div></div>',
+                        unsafe_allow_html=True)
+        nome, colore = giudizio_del_voto(e["voto"])
+        voto = f"{e['voto']}/10 · {nome}" if e["voto"] else ("Non hai risposto: ecco la spiegazione" if not e["risposta"]
+                                                             else "Giudizio non disponibile")
+        st.markdown(f'<span class="badge" style="background:{colore};color:#fff;font-size:15px;padding:6px 14px">{voto}</span>',
+                    unsafe_allow_html=True)
+        if e["giusto"]:
+            st.markdown("**✅ Che cosa hai detto bene**\n" + "\n".join(f"- {x}" for x in e["giusto"]))
+        if e["manca"]:
+            st.markdown("**🧩 Che cosa manca**\n" + "\n".join(f"- {x}" for x in e["manca"]))
+        if e["errori"]:
+            st.markdown("**⚠️ Da correggere**\n" + "\n".join(f"- {x}" for x in e["errori"]))
+        st.markdown(f"**{prof['volto']} La spiegazione di {o['prof']}**\n\n{e['spiegazione']}")
+        parla_una_volta(e["spiegazione"], f"orale_s_{chiave}")
+        ascolta(e["spiegazione"], f"orale_s_{chiave}")
+        with st.expander("📘 Su che cosa si basa la correzione (testi controllati della lezione)"):
+            for t in e["riferimento"]:
+                st.markdown(f"- {t}")
+        st.caption("🤖 Correzione e spiegazione scritte dall'AI del Mac confrontando la tua risposta con i testi controllati: "
+                   "è un allenamento, non un voto ufficiale.")
+        a, b, c = st.columns(3)
+        ultima = o["n"] + 1 >= totale
+        if a.button("🏁 Fine e riepilogo" if ultima else "➡️ Prossima domanda", type="primary", key=f"orale_avanti_{chiave}",
+                    width="stretch"):
+            o["n"] += 1
+            o["fase"] = "fine" if ultima else "domanda"
+            st.rerun()
+        if e.get("approfondimento") and b.button("🔎 Domanda di approfondimento", key=f"orale_appr_{chiave}", width="stretch"):
+            o["domande"].insert(o["n"] + 1, e["approfondimento"])
+            o["n"] += 1
+            o["fase"] = "domanda"
+            st.rerun()
+        if c.button("⏹ Termina", key=f"orale_stop2_{chiave}", width="stretch"):
+            o["fase"] = "fine"
+            st.rerun()
+        return
+    # Il riepilogo finale
+    voti = [e["voto"] for e in o["esiti"] if e.get("voto")]
+    media = round(sum(voti) / len(voti), 1) if voti else 0
+    nome, colore = giudizio_del_voto(media if voti else None)
+    if not o.get("salvata") and o["esiti"]:
+        p.setdefault("interrogazioni", []).append({"data": oggi(), "titolo": o["titolo"], "materia": o["materia"],
+                                                   "media": media, "domande": len(o["esiti"]),
+                                                   "da_ripassare": [e["domanda"] for e in o["esiti"]
+                                                                    if (e.get("voto") or 0) < 6]})
+        p["interrogazioni"] = p["interrogazioni"][-50:]
+        aggiungi_punti(5 * len(o["esiti"]))
+        o["salvata"] = True
+    nuvoletta_professore(prof["volto"], f"{o['prof']}: abbiamo finito! " + (
+        f"Media {media}/10 ({nome.lower()}). " if voti else "") + "Ecco il riepilogo: ripassa le domande segnate.", prof["colore"])
+    for e in o["esiti"]:
+        segno = "✅" if (e.get("voto") or 0) >= 6 else "🔁"
+        st.markdown(f"{segno} **{e['domanda']}** — {str(e['voto']) + '/10' if e.get('voto') else 'senza risposta'}")
+    if o["esiti"]:
+        st.success(f"+{5 * len(o['esiti'])} XP per esserti allenato all'orale.")
+    if st.button("🔄 Nuova interrogazione", type="primary", key=f"orale_nuova_{o['id']}"):
+        st.session_state.pop("orale", None)
+        st.rerun()
+
+
 def tutor_ai():
     p = profilo()
     professore = st.session_state.setdefault("tutor_prof", "Lina")
@@ -11084,6 +11515,13 @@ def tutor_ai():
                 if st.button(etichetta, key=f"tut_rapido_{k}", width="stretch"):
                     st.session_state["tutor_da_fare"] = richiesta
                     st.rerun()
+            if st.button("🔗 Collega gli argomenti", key="tut_rapido_coll", width="stretch"):
+                st.session_state["tutor_collegamenti"] = True
+                st.session_state["tutor_vista"] = "💬 Chat con il professore"
+                st.rerun()
+            if st.button("🗣️ Interrogami", key="tut_rapido_orale", width="stretch"):
+                st.session_state["tutor_vista"] = "🗣️ Interrogazione orale"
+                st.rerun()
             if st.button("Simula un esame", key="tut_rapido_esame", width="stretch"):
                 st.switch_page(PAGINE["simulazione"])
         with st.container(key="card_tutor_sessione"):
@@ -11131,12 +11569,19 @@ def tutor_ai():
                     f'font-weight:700;color:#fff">✦ {professore}</div><div style="font-size:12.5px;color:#A9B6D3">'
                     f'{prof["materia"]}</div><div style="margin-top:8px;color:#E6ECF8;font-size:14.5px">{prof["saluto"]}</div>'
                     '</div></div>', unsafe_allow_html=True)
+        vista = st.segmented_control("Che cosa vuoi fare?", ["💬 Chat con il professore", "🗣️ Interrogazione orale"],
+                                     default="💬 Chat con il professore", key="tutor_vista") or "💬 Chat con il professore"
+        if vista == "🗣️ Interrogazione orale":
+            interrogazione_orale()
+            return
         modo = st.segmented_control("Come vuoi la spiegazione?", list(MODI_TUTOR), default="🌱 Semplice",
                                     key="tutor_modo") or "🌱 Semplice"
         deboli = argomenti_deboli(3)
         if deboli:
             st.caption("💡 Secondo le tue risposte potresti chiedere di: " + ", ".join(a for _, _, _, a in deboli) + ".")
         chat = st.session_state.setdefault("tutor_chat", [])
+        if st.session_state.get("tutor_collegamenti"):
+            pannello_collegamenti()
         with st.container(key="card_chat"):
             if not chat:
                 st.markdown(f'<div style="display:flex;gap:10px;align-items:flex-start"><div style="font-size:30px">'
@@ -11163,6 +11608,8 @@ def tutor_ai():
                     st.markdown(testo)
                     if extra.get("mappa"):
                         mappa_nella_chat(extra["mappa"], i)
+                    if extra.get("collegamento"):
+                        mostra_collegamento(extra["collegamento"], i)
                     if i == len(chat) - 1 and st.session_state.pop("voce_risposta_tutor", False):
                         audio = audio_italiano(re.sub(r"[*#_>`]", "", testo.split("**✅")[0]))
                         if audio:
