@@ -12,6 +12,7 @@ Chi studia materie scientifiche ha poco tempo, programmi lunghi e spesso nessuno
 - **Ricerche di università ed enti.** Sotto la risposta si possono aprire le rassegne scientifiche pubblicate su Europe PMC (che comprende PubMed), con il nome dell'ente che le ha fatte e una sintesi in italiano.
 - **Tutor AI.** Una chat con un professore virtuale che conosce il profilo dello studente; se richiesto disegna una **mappa concettuale** nella chat.
 - **Piano di studio, quiz, flashcard, simulazioni d'esame.** Test di livello iniziale, piano per giorni, ripasso degli argomenti più deboli, oltre 6.000 domande scritte per BIBL-IA con la spiegazione.
+- **Reazioni passo per passo** in 23 percorsi di chimica e biochimica (glicolisi, ciclo di Krebs, fotosintesi, acidi e basi…): equazione generale bilanciata, ogni passaggio con enzima e formule, e le molecole di partenza e di arrivo in 3D da ruotare.
 - **Mappe concettuali** (oltre 600), **modelli 3D** di 3.149 molecole e 82 organi, **Sintomi e cure** (circa 580 schede su fonti ufficiali, con l'avviso che non è un consulto medico).
 - **Piani di studio ufficiali** di 24 corsi di laurea, presi dai siti delle università.
 - **Classi.** Un professore crea una classe, i ragazzi entrano con un codice, il professore assegna compiti e vede chi è in difficoltà.

@@ -9,6 +9,7 @@ modelli 3D e solo modelli di intelligenza artificiale locali e gratuiti (Ollama)
 mai.
 Avvio: ./venv/bin/python -m streamlit run bibl_ia_2.py --server.port 8767
 """
+import base64
 import hashlib
 import html
 import json
@@ -17,6 +18,7 @@ import os
 import random
 import re
 import threading
+import unicodedata
 import time
 import urllib.parse
 import urllib.request
@@ -1610,6 +1612,7 @@ def mostra_lezione(argomento, materia, chiave):
             if nome in percorsi.percorsi() and st.toggle("🔬 Mostra il percorso passo per passo, con le spiegazioni",
                                                          key=f"passi_{chiave}"):
                 st.html(chiaro(percorsi.html_percorso(nome, "superiore" if p.get("stato") in ("test", "superiori") else "universita")))
+            reazioni_passo_passo(nome, f"lez_{chiave}")
             if nome in ORGANI_ARGOMENTO and st.toggle(f"🫀 Guarda in 3D: {ORGANI_ARGOMENTO[nome]}",
                                                       key=f"organo_{chiave}"):
                 componenti.html(organo_leggibile(modelli3d.html_organo(ORGANI_ARGOMENTO[nome], altezza=420)), height=920, scrolling=True)
@@ -2229,6 +2232,7 @@ def mostra_risposta(domanda, spiegata, trovati, chiave):
             for testo, fonte in trovati:
                 st.markdown(testo)
                 st.caption(f"📘 {fonte}")
+        reazioni_per_argomento(domanda, f"risp_{chiave}")
 
 
 SALUTE_PERSONALE = re.compile(
@@ -2815,6 +2819,7 @@ def mostra_mappa_controllata(fonte, nome, chiave):
     if nome in percorsi.percorsi() and st.toggle("🔬 Il percorso passo per passo, con le spiegazioni",
                                                  key=f"pp_{chiave}_{nome}"):
         st.html(chiaro(percorsi.html_percorso(nome, "superiore" if profilo().get("stato") in ("test", "superiori") else "universita")))
+    reazioni_passo_passo(nome, f"arg_{chiave}")
     if nome in ORGANI_ARGOMENTO and st.toggle(f"🫀 Guarda in 3D: {ORGANI_ARGOMENTO[nome]}", key=f"org_{chiave}_{nome}"):
         componenti.html(organo_leggibile(modelli3d.html_organo(ORGANI_ARGOMENTO[nome], altezza=420)), height=920, scrolling=True)
     return bool(mappa)
@@ -2998,6 +3003,14 @@ def mostra_lezione_materia(lez, chiave, al_termine=None):
     voci_gioco = [(t["termine"], t["definizione"]) for t in (v or {}).get("termini", [])]
     giochi_lezione(voci_gioco, molecole_nel_testo(concetti), f"m_{chiave}")
     reazioni_della_lezione(lez["tema"], f"m_{chiave}")
+    domande_lez = lez.get("domande", [])
+    if isinstance(domande_lez, str):
+        try:
+            domande_lez = json.loads(domande_lez)
+        except ValueError:
+            domande_lez = [domande_lez]
+    for nome in percorsi_chimici_nel_testo(" ".join([lez.get("titolo", ""), titolo_lezione(lez)] + list(domande_lez)), 3):
+        reazioni_passo_passo(nome, f"lm_{chiave}")
     with st.expander("🤔 Qualcosa non ti è chiaro?"):
         mostra_video(lez["tema"], chiave=f"lz_{chiave}")
         st.markdown("**Fai una domanda**")
@@ -5812,6 +5825,251 @@ def reazioni_della_lezione(argomento, chiave):
                 carta_reazione(x, f"_{chiave}_{n}")
 
 
+# ---- Le reazioni dei percorsi passo per passo, con le formule e le strutture ----------------------------------------
+# Le molecole e gli enzimi vengono dai percorsi scritti e controllati a mano (mappe/percorsi.json); le strutture
+# dalle schede dei percorsi, dalle molecole 3D di BIBL-IA (PubChem) e da contenuti_v2/strutture_percorsi.json
+# (PubChem). Le formule le calcola RDKit dalla struttura: niente è scritto dall'AI.
+EQUAZIONI_GENERALI = {
+    "glicolisi": "glucosio + 2 NAD⁺ + 2 ADP + 2 Pᵢ → 2 piruvato + 2 NADH + 2 H⁺ + 2 ATP + 2 H₂O",
+    "ciclo di Krebs": "acetil-CoA + 3 NAD⁺ + FAD + GDP + Pᵢ + 2 H₂O → 2 CO₂ + 3 NADH + 3 H⁺ + FADH₂ + GTP + CoA-SH",
+    "respirazione cellulare": "C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O   (con circa 30-32 ATP prodotti)",
+    "fotosintesi": "6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂   (con l'energia della luce)",
+    "fermentazione lattica e alcolica": "lattica: glucosio + 2 ADP + 2 Pᵢ → 2 lattato + 2 ATP + 2 H₂O\n"
+                                        "alcolica: glucosio + 2 ADP + 2 Pᵢ → 2 etanolo + 2 CO₂ + 2 ATP + 2 H₂O",
+    "gluconeogenesi": "2 piruvato + 4 ATP + 2 GTP + 2 NADH + 2 H⁺ + 6 H₂O → glucosio + 4 ADP + 2 GDP + 6 Pᵢ + 2 NAD⁺",
+    "beta-ossidazione": "palmitoil-CoA + 7 CoA + 7 FAD + 7 NAD⁺ + 7 H₂O → 8 acetil-CoA + 7 FADH₂ + 7 NADH + 7 H⁺",
+    "fosforilazione ossidativa": "NADH + H⁺ + ½ O₂ → NAD⁺ + H₂O   (catena respiratoria)\nADP + Pᵢ → ATP   (ATP sintasi)",
+    "via dei pentoso fosfati": "fase ossidativa: glucosio 6-fosfato + 2 NADP⁺ + H₂O → ribulosio 5-fosfato + 2 NADPH + 2 H⁺ + CO₂",
+    "sintesi degli acidi grassi": "acetil-CoA + 7 malonil-CoA + 14 NADPH + 14 H⁺ → palmitato + 7 CO₂ + 8 CoA + 14 NADP⁺ + 6 H₂O",
+    "ciclo dell'urea": "CO₂ + NH₄⁺ + 3 ATP + aspartato + 2 H₂O → urea + 2 ADP + 2 Pᵢ + AMP + PPᵢ + fumarato",
+    "reazioni acido-base": "HA + H₂O ⇌ H₃O⁺ + A⁻   (acido)\nB + H₂O ⇌ BH⁺ + OH⁻   (base)",
+    "equilibrio acido-base": "CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻",
+    "sostituzione nucleofila": "Nu⁻ + R–X → R–Nu + X⁻   (per esempio OH⁻ + CH₃Br → CH₃OH + Br⁻)",
+    "ossidoriduzioni": "per esempio Zn + Cu²⁺ → Zn²⁺ + Cu   (lo zinco si ossida, il rame si riduce)",
+    "ciclo dell'azoto": "fissazione: N₂ + 8 H⁺ + 8 e⁻ + 16 ATP → 2 NH₃ + H₂ + 16 ADP + 16 Pᵢ",
+}
+PEDICI = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
+# ATP, NAD, FAD, coenzima A…: portano energia o elettroni e restano uguali da un percorso all'altro; la loro formula
+# (grande) non aiuta a capire il passaggio, quindi si scrive solo il nome.
+TRASPORTATORI = re.compile(r"^(?:[AGUC][TDM]P|NADP?H?|NADP?⁺|NAD\(P\)H|FADH?₂?|FMN|coenzima A|CoA(?:-SH)?|fosfato|Pi|PPi|"
+                           r"pirofosfato|H⁺|H₂O|acqua|elettroni)\b", re.I)
+
+
+def _norma_nome(t):
+    t = unicodedata.normalize("NFKD", str(t).lower())
+    return re.sub(r"[^a-z0-9]", "", "".join(c for c in t if not unicodedata.combining(c)))
+
+
+@st.cache_data(show_spinner=False)
+def _strutture_note():
+    """nome normalizzato → SMILES, da tutte le fonti di BIBL-IA (prima le schede dei percorsi)."""
+    from rdkit import Chem, RDLogger
+    RDLogger.DisableLog("rdApp.*")
+    note = {}
+    for f in sorted((ROOT / "modelli_3d" / "molecole").glob("*.json")):
+        d = leggi(f, {})
+        if not d.get("sdf"):
+            continue
+        m = Chem.MolFromMolBlock(d["sdf"])
+        if m is None:
+            continue
+        smiles = Chem.MolToSmiles(m)
+        for n in (d.get("nome"), d.get("inglese")):
+            if n:
+                note.setdefault(_norma_nome(n), smiles)
+    for nome, v in leggi(ROOT / "contenuti_v2" / "strutture_percorsi.json", {}).items():
+        if isinstance(v, dict) and v.get("smiles"):
+            note[_norma_nome(nome)] = v["smiles"]
+    for nome, v in percorsi.schede().items():
+        if v.get("smiles"):
+            note[_norma_nome(nome)] = v["smiles"]
+    return note
+
+
+def struttura_di(nome):
+    return _strutture_note().get(_norma_nome(nome))
+
+
+@st.cache_data(show_spinner=False, max_entries=2000)
+def formula_bruta(smiles):
+    """La formula bruta (C₆H₁₂O₆) calcolata da RDKit."""
+    from rdkit import Chem
+    from rdkit.Chem.rdMolDescriptors import CalcMolFormula
+    from rdkit.Chem.MolStandardize import rdMolStandardize
+    m = Chem.MolFromSmiles(smiles)
+    if m is None:
+        return ""
+    m = rdMolStandardize.Uncharger().uncharge(m)     # sempre la forma neutra (piruvato → acido piruvico)
+    f = CalcMolFormula(m)
+    carica = re.search(r"([+-])(\d*)$", f)
+    if carica:
+        f = f[:carica.start()]
+    f = f.translate(PEDICI)
+    if carica:
+        f += (carica.group(2) or "").translate(str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")) + ("⁺" if carica.group(1) == "+" else "⁻")
+    return f
+
+
+@st.cache_data(show_spinner=False, max_entries=500)
+def disegno_struttura(smiles):
+    """La formula di struttura disegnata da RDKit, chiara (per il tema di BIBL-IA 2)."""
+    from rdkit import Chem
+    from rdkit.Chem.Draw import rdMolDraw2D
+    m = Chem.MolFromSmiles(smiles)
+    if m is None or m.GetNumHeavyAtoms() > 45:
+        return ""
+    d = rdMolDraw2D.MolDraw2DSVG(210, 150)
+    o = d.drawOptions()
+    o.clearBackground = False
+    o.bondLineWidth = 2
+    o.padding = 0.08
+    o.minFontSize = 11
+    rdMolDraw2D.PrepareAndDrawMolecule(d, m)
+    d.FinishDrawing()
+    svg = d.GetDrawingText()
+    return svg[svg.find("<svg"):]
+
+
+@st.cache_data(show_spinner=False, max_entries=500)
+def modello_3d_da_smiles(smiles):
+    """La molecola in 3D (idrogeni, geometria ottimizzata) con lo stesso metodo dei Modelli 3D di BIBL-IA."""
+    from rdkit import Chem
+    m = Chem.MolFromSmiles(smiles or "")
+    if m is None or m.GetNumHeavyAtoms() > 60:
+        return ""
+    return modelli3d.forma_3d(Chem.MolToMolBlock(m))
+
+
+def html_reazione_3d(sinistra, destra, altezza=230):
+    """Le molecole di partenza → quelle di arrivo, ognuna in 3D (si ruota con il mouse o con il dito)."""
+    celle, modelli = [], []
+    for lato, nomi in ((0, sinistra), (1, destra)):
+        if lato == 1:
+            celle.append('<div style="font-size:34px;color:#2563EB;padding:0 4px;align-self:center">→</div>')
+        for nome, modello in nomi:
+            ident = f"m{len(modelli)}"
+            modelli.append((ident, modello))
+            celle.append(f'<div style="flex:1 1 170px;min-width:150px"><div id="{ident}" style="height:{altezza}px;'
+                         f'position:relative;border-radius:12px;background:#0f1218"></div><div style="text-align:center;'
+                         f'font:13px sans-serif;color:#334155;margin-top:4px">{html.escape(nome)}</div></div>')
+    script = "".join(
+        f'(function(){{const v=$3Dmol.createViewer("{i}",{{backgroundColor:"#0f1218"}});v.addModel({json.dumps(m)},"sdf");'
+        "v.setStyle({},{stick:{radius:0.15,colorscheme:'Jmol'},sphere:{scale:0.25,colorscheme:'Jmol'}});"
+        "v.zoomTo();v.zoom(0.85);v.render();v.spin('y',0.5);})();" for i, m in modelli)
+    return (f'<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">{"".join(celle)}</div>'
+            f'<script src="{modelli3d.LIBRERIA_3D}"></script><script>{script}</script>')
+
+
+def _con_formula(nome):
+    if TRASPORTATORI.search(nome):
+        return nome
+    smiles = struttura_di(nome)
+    f = formula_bruta(smiles) if smiles else ""
+    return f"{nome} ({f})" if f and f != nome else nome
+
+
+@st.cache_data(show_spinner=False)
+def percorsi_chimici():
+    """I percorsi in cui almeno due passaggi trasformano molecole con una struttura nota."""
+    chimici = []
+    for nome, p in percorsi.percorsi().items():
+        passi = p.get("passaggi", [])
+        # una trasformazione chimica: c'è una struttura sia tra le molecole di partenza sia tra quelle di arrivo
+        trasformati = sum(1 for x in passi if any(struttura_di(m) for m in x.get("da", []))
+                          and any(struttura_di(m) for m in x.get("a", [])))
+        if passi and trasformati >= 3 and trasformati >= len(passi) / 2 or nome in EQUAZIONI_GENERALI:
+            chimici.append(nome)
+    return chimici
+
+
+def reazioni_passo_passo(nome, chiave):
+    """Per un percorso chimico (glicolisi, ciclo di Krebs…): l'equazione generale e, per ogni passaggio,
+    la reazione con le formule e le strutture delle molecole."""
+    if not nome or nome not in percorsi_chimici():
+        return
+    p = percorsi.percorsi()[nome]
+    if not st.toggle(f"⚗️ Le reazioni passo per passo, con le formule: {nome}", key=f"rpp_{chiave}_{seme_di(nome)}"):
+        return
+    if nome in EQUAZIONI_GENERALI:
+        righe = "".join(f"<div>{html.escape(r)}</div>" for r in EQUAZIONI_GENERALI[nome].split("\n"))
+        st.html('<div style="background:#EEF2F7;border-left:4px solid #2563EB;border-radius:10px;padding:10px 14px;'
+                f'font-size:15px;line-height:1.6;color:#0F1B3D"><b>Equazione generale</b>{righe}</div>')
+    for n, x in enumerate(p.get("passaggi", []), 1):
+        sinistra = [_con_formula(m) for m in x.get("da", []) + x.get("entra", [])]
+        destra = [_con_formula(m) for m in x.get("a", []) + x.get("esce", [])]
+        testa = f"**{n}.** "
+        if x.get("enzima"):
+            testa += f"⚙️ _{html.escape(x['enzima'])}_"
+        if x.get("irreversibile"):
+            testa += " · ⛔ irreversibile"
+        if x.get("volte") == 2:
+            testa += " · ×2 (una volta per ogni metà del glucosio)" if nome == "glicolisi" else " · ×2"
+        st.markdown(testa)
+        st.markdown(" + ".join(sinistra) + "  **→**  " + " + ".join(destra))
+        sinistra = [(m, modello_3d_da_smiles(struttura_di(m))) for m in x.get("da", []) if struttura_di(m)]
+        destra = [(m, modello_3d_da_smiles(struttura_di(m))) for m in x.get("a", []) if struttura_di(m)]
+        sinistra, destra = [v for v in sinistra if v[1]], [v for v in destra if v[1]]
+        if sinistra and destra:
+            righe = 2 if len(sinistra) + len(destra) > 3 else 1
+            componenti.html(html_reazione_3d(sinistra, destra), height=275 * righe)
+        if x.get("nota"):
+            st.caption(x["nota"])
+    if p.get("bilancio"):
+        st.markdown("**Bilancio:** " + ", ".join(p["bilancio"]))
+    st.caption("Modelli 3D: si ruotano con il mouse o con il dito e si ingrandiscono con la rotella. Colori degli atomi: "
+               "carbonio grigio, ossigeno rosso, azoto blu, fosforo arancione, zolfo giallo, idrogeno bianco.")
+    st.caption("Molecole ed enzimi controllati a mano; strutture da PubChem, formule calcolate da RDKit (forme neutre: "
+               "nella cellula molti gruppi fosfato e carbossilici sono ionizzati). Nelle reazioni dei singoli passaggi "
+               "acqua, H⁺ e fosfato possono non comparire: l'equazione generale è bilanciata.")
+
+
+ALTRI_NOMI_PERCORSI = [
+    (r"\bkrebs\b|ciclo dell'acido citrico|ciclo degli acidi tricarbossilici", "ciclo di Krebs"),
+    (r"catena respiratoria|catena di trasporto degli elettroni|atp sintasi", "fosforilazione ossidativa"),
+    (r"\bfermentazion", "fermentazione lattica e alcolica"),
+    (r"[βb]eta[- ]?ossidazione|ossidazione degli acidi grassi", "beta-ossidazione"),
+    (r"glicogenosintesi|glicogenolisi|sintesi del glicogeno|demolizione del glicogeno", "metabolismo del glicogeno"),
+    (r"pentoso fosfat|shunt dell'esoso", "via dei pentoso fosfati"),
+    (r"ossidoriduzion|\bredox\b|ossidazione e riduzione", "ossidoriduzioni"),
+    (r"\bsn[12]\b|sostituzion\w* nucleofil", "sostituzione nucleofila"),
+    (r"acid[oi][- ]bas[ei]|acidi e (?:le )?basi|brønsted|bronsted", "reazioni acido-base"),
+    (r"\btampon[ei]\b|equilibrio acido|acidosi|alcalosi", "equilibrio acido-base"),
+    (r"corpi chetonici|chetogenesi", "chetogenesi"),
+    (r"sintesi del colesterolo|biosintesi del colesterolo", "sintesi del colesterolo"),
+    (r"sintesi degli acidi grassi|lipogenesi", "sintesi degli acidi grassi"),
+    (r"sintesi dell'eme|\bporfirin", "sintesi dell'eme"),
+    (r"\bpurin\w* .{0,20}catabolism|catabolismo delle purine|acido urico", "catabolismo delle purine"),
+    (r"ciclo di cori", "ciclo di cori"),
+    (r"ciclo dell'urea|ureogenesi", "ciclo dell'urea"),
+    (r"fissazione dell'azoto|ciclo dell'azoto|nitrificazion", "ciclo dell'azoto"),
+    (r"transaminazion|metabolismo degli amminoacidi|deaminazion", "metabolismo degli amminoacidi"),
+]
+
+
+def percorsi_chimici_nel_testo(testo, massimo=2):
+    """I percorsi chimici nominati in un testo (il nome del percorso o un suo altro nome preciso)."""
+    t = (testo or "").lower()
+    trovati = [n for n in sorted(percorsi_chimici(), key=len, reverse=True) if n.lower() in t]
+    for regola, n in ALTRI_NOMI_PERCORSI:
+        if n in percorsi_chimici() and n not in trovati and re.search(regola, t):
+            trovati.append(n)
+    return trovati[:massimo]
+
+
+def reazioni_per_argomento(argomento, chiave):
+    """Sotto una risposta o una lezione: le reazioni del percorso dell'argomento e quelle dello strumento di chimica."""
+    for nome in percorsi_chimici_nel_testo(argomento):
+        reazioni_passo_passo(nome, chiave)
+    try:
+        elenco = list({x["equazione"]: x for x in C.reazioni_argomento(prepara_concetto(argomento) or argomento)}.values())
+    except Exception:
+        elenco = []
+    if elenco:
+        with st.expander(f"⚗️ Le reazioni di chimica su questo argomento ({len(elenco)})"):
+            for n, x in enumerate(elenco[:8]):
+                carta_reazione(x, f"_arg_{chiave}_{n}")
+
+
 def racconto_percorso(nome):
     """Il percorso raccontato passaggio per passaggio, in frasi (da leggere o ascoltare)."""
     p = percorsi.percorsi()[nome]
@@ -5890,6 +6148,7 @@ def racconta(testo, chiave, severo=False):
         ascolta(" ".join(righe), f"racc_{chiave}_{nome}")
         if st.toggle("🔬 Mostralo passo per passo con le formule", key=f"raccpp_{chiave}_{nome}"):
             st.html(chiaro(percorsi.html_percorso(nome, "superiore" if profilo().get("stato") in ("test", "superiori") else "universita")))
+        reazioni_passo_passo(nome, f"racc_{chiave}")
         video_di([nome], f"racc_{chiave}_{nome}", titolo=f"🎬 Video: {nome}")
     elif tipo == "impianto":
         mostra_impianto(nome, f"racc_{chiave}")
