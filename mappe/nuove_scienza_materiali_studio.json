@@ -1,0 +1,730 @@
+{
+ "Struttura cristallina e difetti": {
+  "superiore": {
+   "spiegazione": [
+    "Nei solidi cristallini gli atomi sono disposti in modo ordinato e periodico: la stessa disposizione si ripete nelle tre direzioni dello spazio. La più piccola unità che, ripetuta, ricostruisce tutto il cristallo si chiama cella elementare, e la sua dimensione è il parametro reticolare a, di pochi decimi di nanometro. Metalli, sali e molti ceramici sono cristallini; vetro e molte plastiche, invece, sono amorfi, cioè privi di questo ordine a lungo raggio. Conoscere la struttura cristallina aiuta a capire perché un metallo è duttile o un ceramico fragile.",
+    "La maggior parte dei metalli adotta tre strutture. Nella cubica a corpo centrato (CCC), tipica del ferro a temperatura ambiente, del cromo e del tungsteno, ci sono 2 atomi per cella, ogni atomo ha 8 vicini e il 68% del volume è occupato. Nella cubica a facce centrate (CFC), di rame, alluminio, oro e nichel, gli atomi per cella sono 4, i vicini 12 e lo spazio occupato il 74%, il massimo possibile per sfere uguali. L'esagonale compatta (EC), di magnesio, zinco e titanio, ha anch'essa 12 vicini e il 74% di impaccamento.",
+    "Dalla geometria si ricavano relazioni utili. Nella CFC gli atomi si toccano lungo la diagonale di faccia, quindi a = 2√2·R; nella CCC lungo la diagonale del cubo, quindi a = 4R/√3. Conoscendo il numero di atomi per cella n, la massa molare A e il volume a³, si calcola la densità teorica ρ = n·A/(a³·N_A): per il rame si ottengono circa 8,9 g/cm³, in accordo con la misura. Alcuni elementi cambiano struttura con la temperatura (allotropia): il ferro è CCC fino a 912 °C e diventa CFC sopra, ed è questo che rende possibili i trattamenti termici degli acciai.",
+    "Nessun cristallo reale è perfetto: contiene difetti che ne determinano molte proprietà. I difetti di punto sono le vacanze (atomi mancanti), gli atomi interstiziali (infilati negli spazi tra gli altri) e gli atomi sostituzionali (estranei al posto di quelli del reticolo). Quando un elemento si scioglie in un metallo forma una soluzione solida: il carbonio nel ferro è interstiziale perché è molto piccolo, il nichel nel rame è sostituzionale perché ha dimensioni simili. Gli atomi estranei deformano il reticolo e, per questo, una lega è in genere più resistente del metallo puro.",
+    "I difetti di linea sono le dislocazioni, file di atomi fuori posto che possono scorrere nel cristallo. La deformazione plastica dei metalli avviene proprio per scorrimento delle dislocazioni: così si rompono pochi legami alla volta e basta uno sforzo modesto. I difetti di superficie più importanti sono i bordi di grano, cioè le zone di confine tra cristalli orientati in modo diverso. I bordi ostacolano le dislocazioni: un metallo a grano fine è quindi più resistente di uno a grano grosso."
+   ],
+   "metodo": [
+    "Costruisci con delle palline (o disegna) le celle CCC e CFC e conta gli atomi pesando vertici (1/8), facce (1/2) e centro (1).",
+    "Prepara una tabella con struttura, atomi per cella, numero di coordinazione, fattore di impaccamento ed esempi di metalli.",
+    "Ricava da solo le formule a = 4R/√3 e a = 2√2·R disegnando la diagonale su cui gli atomi si toccano.",
+    "Esegui un calcolo di densità per rame e ferro e confrontalo con i valori delle tabelle.",
+    "Classifica i difetti per dimensione (punto, linea, superficie, volume) con un esempio quotidiano per ciascuno.",
+    "Collega l'argomento a «Proprietà meccaniche» e «Metalli e leghe»: dislocazioni e grani spiegano resistenza e duttilità."
+   ],
+   "ricorda": [
+    "«CCC: 2 e 8; CFC: 4 e 12» (atomi per cella e vicini).",
+    "Impaccamento: CCC 0,68, CFC ed EC 0,74.",
+    "Vacanza = punto, dislocazione = linea, bordo di grano = superficie.",
+    "Ferro: CCC fino a 912 °C, poi CFC."
+   ],
+   "errori": [
+    "Contare tutti gli atomi disegnati nella cella invece di pesarli secondo la condivisione con le celle vicine.",
+    "Usare a = 4R/√3 per la CFC o a = 2√2·R per la CCC, invertendo le formule.",
+    "Pensare che un cristallo «perfetto» sia più facile da deformare: senza dislocazioni la plasticità sarebbe molto più difficile.",
+    "Dimenticare di convertire i nanometri in centimetri nel calcolo della densità."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanti atomi ci sono in una cella CFC?",
+     "risposta": "4: 8 vertici × 1/8 + 6 facce × 1/2."
+    },
+    {
+     "domanda": "Qual è il numero di coordinazione nella CCC?",
+     "risposta": "8."
+    },
+    {
+     "domanda": "Che tipo di soluzione solida forma il carbonio nel ferro?",
+     "risposta": "Interstiziale, perché l'atomo di carbonio è molto piccolo."
+    },
+    {
+     "domanda": "Che tipo di difetto è una dislocazione?",
+     "risposta": "Un difetto di linea, il cui scorrimento produce la deformazione plastica."
+    },
+    {
+     "domanda": "Perché un metallo a grano fine è più resistente?",
+     "risposta": "Perché i bordi di grano ostacolano il moto delle dislocazioni."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Un cristallo si descrive come un reticolo di punti, uno dei 14 reticoli di Bravais, a cui si associa una base di atomi. Per i metalli contano soprattutto CCC, CFC ed EC: le ultime due sono strutture compatte, con fattore di impaccamento π/(3√2) ≈ 0,74, e differiscono solo per la sequenza di impilamento dei piani compatti (ABCABC nella CFC, ABAB nella EC). Nella CCC l'APF è √3π/8 ≈ 0,68. La densità teorica ρ = n·A/(V_c·N_A) permette di verificare una struttura o di stimare il parametro reticolare: per il rame, con a = 0,3615 nm, si ottiene ρ ≈ 8,94 g/cm³.",
+    "Piani e direzioni si indicano con gli indici di Miller. Per un piano si prendono le intercette con gli assi in unità di a, se ne calcolano i reciproci e li si riduce ai più piccoli interi: un piano che taglia x = 1, y = 2 e z = ∞ è (210). Le famiglie di piani equivalenti si indicano con le graffe, ad esempio {111}. Nei sistemi cubici la distanza tra piani paralleli vale d = a/√(h² + k² + l²), e i piani più fitti di atomi sono quelli più distanziati tra loro. Questi strumenti servono per leggere i diffrattogrammi a raggi X tramite la legge di Bragg nλ = 2d sinθ.",
+    "Le vacanze sono difetti termodinamicamente inevitabili: la loro concentrazione di equilibrio segue N_v/N = exp(−Q_v/kT). Per il rame, con Q_v ≈ 0,9 eV, a 1000 °C la frazione è circa 2,7·10⁻⁴. Le vacanze rendono possibile la diffusione sostituzionale e quindi molti processi ad alta temperatura. Nei cristalli ionici i difetti devono rispettare la neutralità elettrica: il difetto di Schottky è una coppia di vacanze di segno opposto, quello di Frenkel una vacanza cationica accompagnata da un catione interstiziale.",
+    "Le dislocazioni si caratterizzano con il vettore di Burgers b, ottenuto chiudendo un circuito attorno alla linea: nella dislocazione a spigolo b è perpendicolare alla linea, in quella a vite è parallelo, nelle miste ha un angolo intermedio. Lo scorrimento avviene su un sistema di scorrimento, combinazione di un piano compatto e di una direzione compatta. La CFC ne ha 12 di tipo {111}<110> facilmente attivabili, ed è duttile a ogni temperatura; nella CCC lo scorrimento è più sensibile alla temperatura, da cui la transizione duttile-fragile degli acciai ferritici. Nella EC i sistemi facili sono pochi, e infatti magnesio e zinco sono poco duttili a temperatura ambiente.",
+    "Tutti i meccanismi di rafforzamento dei metalli consistono nell'ostacolare il moto delle dislocazioni. I bordi di grano lo fanno secondo la relazione di Hall-Petch σ_y = σ₀ + k·d^(−1/2): passando da grani di 100 µm a 25 µm, il contributo del grano raddoppia. Gli atomi in soluzione solida distorcono il reticolo e frenano le dislocazioni; l'incrudimento aumenta la densità di dislocazioni, che si intralciano a vicenda; i precipitati fini fanno da ostacoli. Questa visione unitaria collega la struttura cristallina alle proprietà meccaniche."
+   ],
+   "metodo": [
+    "Dimostra i fattori di impaccamento di CCC e CFC partendo dalla condizione di contatto tra gli atomi.",
+    "Esercitati a passare da intercette a indici di Miller e viceversa, disegnando i piani (100), (110) e (111) nel cubo.",
+    "Risolvi esercizi di diffrazione combinando Bragg e d = a/√(h² + k² + l²) per ricavare il parametro reticolare.",
+    "Calcola la frazione di vacanze a varie temperature e traccia il grafico di ln(N_v/N) contro 1/T.",
+    "Disegna dislocazioni a spigolo e a vite con il circuito di Burgers, per fissare l'orientazione di b.",
+    "Riassumi in una tabella i meccanismi di rafforzamento con la grandezza che li controlla."
+   ],
+   "ricorda": [
+    "Miller: «reciproci, poi interi»; parallelo a un asse significa indice 0.",
+    "Bragg: sui diffrattogrammi si legge 2θ, nella formula si usa θ.",
+    "Spigolo: b ⊥ linea; vite: b ∥ linea.",
+    "Hall-Petch: grano 4 volte più piccolo, contributo del grano doppio."
+   ],
+   "errori": [
+    "Scrivere le intercette al posto dei loro reciproci negli indici di Miller.",
+    "Usare la temperatura in °C nell'esponenziale delle vacanze.",
+    "Confondere gli angoli θ e 2θ nella legge di Bragg.",
+    "Dimenticare la neutralità elettrica quando si contano i difetti nei cristalli ionici."
+   ],
+   "domande": [
+    {
+     "domanda": "Indici di Miller del piano con intercette 1, 2, ∞?",
+     "risposta": "(2 1 0)."
+    },
+    {
+     "domanda": "Distanza tra i piani (111) del rame, a = 0,3615 nm?",
+     "risposta": "Circa 0,209 nm: 0,3615/√3."
+    },
+    {
+     "domanda": "Come cambia N_v/N se la temperatura aumenta?",
+     "risposta": "Cresce in modo esponenziale, secondo exp(−Q_v/kT)."
+    },
+    {
+     "domanda": "Quanti sistemi di scorrimento ha la CFC?",
+     "risposta": "12, del tipo {111}<110>."
+    },
+    {
+     "domanda": "Che cos'è un difetto di Frenkel?",
+     "risposta": "Uno ione che lascia il suo sito per una posizione interstiziale: vacanza più interstiziale."
+    }
+   ]
+  }
+ },
+ "Proprietà meccaniche": {
+  "superiore": {
+   "spiegazione": [
+    "Le proprietà meccaniche dicono come un materiale reagisce ai carichi. La prova più importante è quella di trazione: un provino viene tirato lentamente e si registrano forza e allungamento. Per confrontare pezzi di dimensioni diverse si usano lo sforzo σ = F/A₀, misurato in MPa (1 MPa = 1 N/mm²), e la deformazione ε = ΔL/L₀, un numero puro. Con questi dati si traccia la curva sforzo-deformazione, una vera carta d'identità del materiale.",
+    "Nel primo tratto la curva è una retta: il materiale si comporta come una molla e, togliendo il carico, torna alla forma iniziale. Vale la legge di Hooke σ = E·ε, dove E è il modulo di Young, che misura la rigidezza: circa 210 GPa per l'acciaio, 70 GPa per l'alluminio, pochi GPa per le plastiche. Mentre il provino si allunga, la sezione si restringe: il rapporto tra le due deformazioni è il coefficiente di Poisson, circa 0,3 per i metalli. Nel campo elastico, quindi, un cavo d'acciaio teso si allunga pochissimo: con 300 MPa l'allungamento è appena lo 0,15%.",
+    "Superato il carico di snervamento il materiale si deforma in modo permanente. Quando lo snervamento non è netto si usa per convenzione R_p0,2, lo sforzo che lascia una deformazione permanente dello 0,2%. La curva sale fino al carico massimo, la resistenza a trazione R_m; da lì in poi inizia la strizione, una riduzione localizzata della sezione, e infine la rottura. L'allungamento percentuale a rottura A% misura la duttilità: un acciaio da costruzione supera spesso il 20%.",
+    "Altre prove completano il quadro. La durezza misura la resistenza alla penetrazione ed è veloce da determinare: la prova Brinell usa una sfera, la Vickers una piramide di diamante, la Rockwell misura la profondità dell'impronta. La prova Charpy misura con un pendolo l'energia assorbita nella rottura per urto di un provino intagliato, cioè la resilienza. Negli acciai ferritici questa energia crolla sotto una certa temperatura: è la transizione duttile-fragile.",
+    "Molti cedimenti reali non dipendono da un unico carico eccessivo. La fatica è la rottura sotto carichi ripetuti, anche inferiori allo snervamento, e interessa alberi, molle e ali degli aerei. Il creep è la deformazione lenta sotto carico costante ad alta temperatura, importante oltre circa 0,4 volte la temperatura di fusione in kelvin. Nel progetto si usa uno sforzo ammissibile σ_amm = σ_y/n, con un coefficiente di sicurezza n che copre incertezze su carichi e difetti."
+   ],
+   "metodo": [
+    "Disegna la curva sforzo-deformazione di un acciaio e segna campo elastico, snervamento, R_m, strizione e rottura.",
+    "Ripeti a voce le definizioni di σ, ε ed E con le unità di misura e un esempio numerico.",
+    "Svolgi esercizi con uno schema fisso: dati, conversione delle unità, formula, calcolo, controllo dell'ordine di grandezza.",
+    "Prepara una tabella con le prove (trazione, durezza, Charpy, fatica, creep) e la grandezza che misurano.",
+    "Confronta i valori di E di acciaio, alluminio, legno e plastica per farti un'idea degli ordini di grandezza.",
+    "Collega la mappa a «Struttura cristallina e difetti» per capire perché alcuni materiali sono duttili."
+   ],
+   "ricorda": [
+    "1 MPa = 1 N/mm²: con forze in newton e aree in mm² lo sforzo esce già in MPa.",
+    "Elastico = torna indietro; plastico = resta deformato.",
+    "Rigidezza (E) e resistenza (R_m) sono cose diverse.",
+    "Fatica = cicli; creep = tempo e temperatura."
+   ],
+   "errori": [
+    "Confondere modulo di Young e carico di snervamento.",
+    "Calcolare l'area con il diametro al posto del raggio in πr².",
+    "Pensare che dopo il carico massimo il provino si rompa subito.",
+    "Dimenticare di convertire i GPa in MPa nella legge di Hooke."
+   ],
+   "domande": [
+    {
+     "domanda": "Forza 10 kN su un'area di 50 mm²: quanto vale lo sforzo?",
+     "risposta": "200 MPa."
+    },
+    {
+     "domanda": "Che deformazione dà σ = 140 MPa in una lega con E = 70 GPa?",
+     "risposta": "0,002."
+    },
+    {
+     "domanda": "Che cosa misura la prova Charpy?",
+     "risposta": "L'energia assorbita nella rottura per urto (resilienza)."
+    },
+    {
+     "domanda": "Che cos'è R_p0,2?",
+     "risposta": "Lo sforzo che lascia una deformazione permanente dello 0,2%."
+    },
+    {
+     "domanda": "Un pezzo con σ_y = 300 MPa e n = 1,5: quanto vale σ_amm?",
+     "risposta": "200 MPa."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La curva ingegneristica usa l'area e la lunghezza iniziali; quella vera usa i valori istantanei. Finché la deformazione è uniforme e il volume si conserva valgono σ_v = σ(1 + ε) e ε_v = ln(1 + ε). Nel tratto plastico la curva vera segue spesso la legge di Hollomon σ_v = K·ε_v^n, dove n è l'esponente di incrudimento; la strizione inizia quando ε_v = n (criterio di Considère). Un n elevato, tipico dei metalli CFC come il rame, indica un materiale che si deforma uniformemente a lungo, utile nello stampaggio delle lamiere.",
+    "In campo elastico lineare e isotropo bastano due costanti: E e ν, da cui si ricava il modulo di taglio G = E/[2(1 + ν)]. L'energia elastica per unità di volume immagazzinata fino allo snervamento è il modulo di resilienza U_r = σ_y²/(2E): per un acciaio con σ_y = 250 MPa vale circa 0,16 MJ/m³. La tenacità, intesa come energia totale assorbita fino alla rottura, è l'area sotto l'intera curva e richiede sia resistenza sia duttilità. Un materiale molto resistente ma fragile, come un acciaio temprato non rinvenuto, può quindi avere tenacità bassa.",
+    "La meccanica della frattura lineare elastica spiega perché pezzi con difetti cedono sotto carichi inferiori a quelli previsti. All'apice di una cricca lo sforzo è descritto dal fattore di intensità K_I = Y·σ·√(πa), con a profondità (o semilunghezza) della cricca e Y fattore geometrico. La rottura fragile avviene quando K_I raggiunge la tenacità a frattura K_Ic, proprietà del materiale: circa 50 MPa·m^(1/2) per un acciaio, 3-5 per un'allumina, meno di 1 per il vetro. Note due delle tre grandezze (σ, a, K_Ic) si ricava la terza, ad esempio la cricca massima tollerabile.",
+    "La fatica si descrive con la curva S-N (Wöhler): ampiezza di sforzo contro numero di cicli a rottura in scala logaritmica. Gli acciai mostrano un limite di fatica, circa metà di R_m, sotto il quale la vita è praticamente infinita; le leghe di alluminio no, e si progetta per un numero finito di cicli. La rottura procede per innesco in superficie, propagazione stabile (con le tipiche linee di spiaggia sulla frattura) e cedimento finale. Finitura superficiale, intagli e sforzi residui di compressione, come quelli della pallinatura, influenzano fortemente la vita a fatica.",
+    "Il creep si studia con prove a carico e temperatura costanti. La curva deformazione-tempo mostra un tratto primario a velocità decrescente, uno secondario stazionario (la velocità usata nel progetto) e un terziario accelerato fino alla rottura. La velocità stazionaria cresce con lo sforzo secondo una legge di potenza e con la temperatura secondo un termine di Arrhenius. Per le palette di turbina si usano superleghe di nichel, a volte monocristalline, proprio per eliminare i bordi di grano che favoriscono lo scorrimento."
+   ],
+   "metodo": [
+    "Converti una serie di punti dalla curva ingegneristica a quella vera e ricava K e n con un grafico log-log.",
+    "Calcola U_r per acciaio, alluminio e gomma e discuti quale materiale è più adatto per una molla.",
+    "Risolvi esercizi di frattura in tutte e tre le direzioni: K_I noto σ e a, σ_c noti K_Ic e a, a_c noti K_Ic e σ.",
+    "Leggi una curva S-N reale e stima la vita a fatica per due livelli di carico.",
+    "Disegna la curva di creep con i tre stadi e indica su quale si basa il progetto.",
+    "Controlla sempre le unità: in frattura la lunghezza della cricca va in metri."
+   ],
+   "ricorda": [
+    "Sforzo vero = sforzo ingegneristico × (1 + ε), solo prima della strizione.",
+    "K_I = Y·σ·√(πa): a in metri, risultato in MPa·m^(1/2).",
+    "Strizione quando ε_v = n.",
+    "Limite di fatica degli acciai ≈ R_m/2; l'alluminio non ne ha uno."
+   ],
+   "errori": [
+    "Applicare σ_v = σ(1 + ε) anche dopo l'inizio della strizione.",
+    "Lasciare a in millimetri nel calcolo di K_I.",
+    "Confondere tenacità (energia) e tenacità a frattura K_Ic (resistenza alla propagazione delle cricche).",
+    "Ritenere che sotto lo snervamento non ci sia rischio di rottura: fatica e frattura fragile lo smentiscono."
+   ],
+   "domande": [
+    {
+     "domanda": "σ = 400 MPa, ε = 0,2: quanto vale lo sforzo vero?",
+     "risposta": "480 MPa."
+    },
+    {
+     "domanda": "Modulo di taglio per E = 210 GPa e ν = 0,3?",
+     "risposta": "Circa 81 GPa: 210/(2·1,3)."
+    },
+    {
+     "domanda": "K_Ic = 50 MPa·m^(1/2), Y = 1, a = 1 mm: sforzo critico?",
+     "risposta": "Circa 890 MPa."
+    },
+    {
+     "domanda": "Quale tratto della curva di creep si usa nel progetto?",
+     "risposta": "Il secondario, a velocità stazionaria."
+    },
+    {
+     "domanda": "Perché la pallinatura migliora la vita a fatica?",
+     "risposta": "Introduce sforzi residui di compressione in superficie che ostacolano l'innesco delle cricche."
+    }
+   ]
+  }
+ },
+ "Metalli e leghe": {
+  "superiore": {
+   "spiegazione": [
+    "I metalli si dividono in ferrosi (acciai e ghise) e non ferrosi (alluminio, rame, titanio, magnesio e le loro leghe). Quasi mai si usano puri: si preparano leghe aggiungendo altri elementi per migliorare resistenza, durezza o resistenza alla corrosione. Un acciaio contiene meno del 2,1% circa di carbonio, una ghisa di più. Le ghise fondono a temperatura più bassa e si colano facilmente negli stampi, ma sono più fragili; gli acciai si possono laminare, forgiare e saldare.",
+    "Il comportamento degli acciai si legge sul diagramma ferro-carbonio, che indica le fasi presenti all'equilibrio al variare di temperatura e composizione. Le fasi principali sono la ferrite α (CCC, tenera, pochissimo carbonio), l'austenite γ (CFC, stabile ad alta temperatura) e la cementite Fe₃C (dura e fragile, 6,7% di C). A 727 °C e 0,76% di C c'è il punto eutettoide: l'austenite si trasforma in perlite, lamelle alternate di ferrite e cementite. Con la regola della leva si calcola quanta parte di ciascun costituente è presente.",
+    "I trattamenti termici cambiano la microstruttura senza cambiare la composizione. La ricottura (riscaldamento e raffreddamento lento) rende l'acciaio tenero e lavorabile. La tempra, cioè un raffreddamento rapido in acqua o olio dallo stato austenitico, produce martensite, durissima ma fragile. Il rinvenimento successivo, a temperatura inferiore a 727 °C, riduce la fragilità; tempra più rinvenimento si chiama bonifica ed è usata per alberi, ingranaggi e bulloni ad alta resistenza.",
+    "Anche la lavorazione meccanica modifica le proprietà. Deformando a freddo, ad esempio trafilando un filo, il metallo si incrudisce: diventa più resistente e duro ma meno duttile. Una ricottura di ricristallizzazione ripristina la duttilità. Il grado di incrudimento si esprime come riduzione percentuale dell'area: passare da 10 a 8 mm di diametro significa una riduzione del 36%.",
+    "Tra i non ferrosi, l'alluminio (2,7 g/cm³) è leggero e resiste alla corrosione grazie al suo ossido; le sue leghe migliori si rinforzano per indurimento per precipitazione e si usano in aeronautica. Il rame è un ottimo conduttore; con lo zinco forma l'ottone, con lo stagno il bronzo. Il titanio (4,5 g/cm³) unisce resistenza, leggerezza e biocompatibilità, ma costa molto. Gli acciai inossidabili contengono almeno il 10,5% circa di cromo, che forma un film protettivo invisibile."
+   ],
+   "metodo": [
+    "Disegna il diagramma ferro-carbonio semplificato fino al 2% di C, segnando le fasi e il punto eutettoide.",
+    "Esercitati con la regola della leva su acciai con 0,2%, 0,4% e 0,6% di C.",
+    "Prepara una tabella dei trattamenti termici: temperatura, tipo di raffreddamento, microstruttura e proprietà ottenute.",
+    "Associa a ogni lega non ferrosa (ottone, bronzo, Al, Ti, inox) un oggetto quotidiano che la contiene.",
+    "Calcola il grado di incrudimento per alcune trafilature cambiando il diametro.",
+    "Collega l'argomento a «Struttura cristallina e difetti» per capire perché la tempra indurisce."
+   ],
+   "ricorda": [
+    "Acciaio sotto il 2% di C, ghisa sopra.",
+    "Eutettoide: 727 °C e 0,76% C → perlite.",
+    "Tempra = dura e fragile; rinvenimento = più tenace.",
+    "Ottone = Cu + Zn; bronzo = Cu + Sn."
+   ],
+   "errori": [
+    "Confondere eutettico (da liquido) ed eutettoide (da solido).",
+    "Invertire i bracci della regola della leva.",
+    "Calcolare l'incrudimento sui diametri invece che sulle aree.",
+    "Pensare che l'inox sia inossidabile per un rivestimento esterno e non per il cromo nella lega."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cos'è la perlite?",
+     "risposta": "Lamelle alternate di ferrite e cementite, formate all'eutettoide."
+    },
+    {
+     "domanda": "Frazione di perlite in un acciaio con 0,40% C?",
+     "risposta": "Circa 51%."
+    },
+    {
+     "domanda": "Che cosa produce la tempra?",
+     "risposta": "Martensite, dura e fragile."
+    },
+    {
+     "domanda": "Quanto cromo serve almeno in un inox?",
+     "risposta": "Circa il 10,5%."
+    },
+    {
+     "domanda": "Quale lega è formata da rame e stagno?",
+     "risposta": "Il bronzo."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "I diagrammi di fase binari si interpretano con due strumenti. La regola delle fasi, a pressione costante, è F = C − P + 1: in un sistema binario un campo monofase ha due gradi di libertà, un campo bifase uno, un punto a tre fasi come l'eutettico nessuno. Nei campi bifase la composizione delle fasi si legge sulla linea orizzontale (conoda) e le quantità con la regola della leva. In un diagramma isomorfo come Cu-Ni, una lega al 35% di Ni con liquido al 32% e solido al 43% contiene circa il 73% di liquido.",
+    "Nel diagramma Fe-Fe₃C si distinguono acciai ipoeutettoidi, con ferrite proeutettoide e perlite, e ipereutettoidi, con cementite proeutettoide ai bordi di grano e perlite. Applicando la leva sulla linea eutettoide si trova che la perlite è per circa l'89% ferrite e l'11% cementite. Le proprietà dipendono dalla quantità e dalla finezza della perlite: lamelle più sottili, ottenute con raffreddamenti più rapidi, danno maggiore resistenza. Se la perlite viene trattata a lungo poco sotto 727 °C, la cementite si raccoglie in globuli (sferoidite) e l'acciaio diventa tenero e facile da lavorare alle macchine utensili.",
+    "Lontano dall'equilibrio contano le cinetiche, descritte dalle curve TTT (trasformazione isoterma) e CCT (raffreddamento continuo). Sotto il naso delle curve si forma bainite, mentre con raffreddamenti più rapidi della velocità critica si ottiene martensite. Questa nasce senza diffusione: il reticolo CFC dell'austenite si trasforma per taglio in una struttura tetragonale sovrassatura di carbonio, molto distorta e quindi durissima. La temprabilità, misurata con la prova Jominy, aumenta con elementi di lega come Cr, Mo, Ni e Mn, che rallentano le trasformazioni diffusive.",
+    "La diffusione allo stato solido segue le leggi di Fick e un coefficiente D = D₀·exp(−Q/RT). Per il carbonio nel ferro γ a 900 °C si ottiene D ≈ 5,9·10⁻¹² m²/s; la profondità di penetrazione scala come √(Dt), quindi per raddoppiare lo spessore cementato serve un tempo quattro volte maggiore. La diffusione controlla cementazione, omogeneizzazione dei getti, precipitazione e ricristallizzazione. Il carbonio, interstiziale, diffonde molto più rapidamente degli elementi sostituzionali come il cromo o il nichel.",
+    "Le leghe non ferrose sfruttano altri meccanismi. Le leghe di alluminio da trattamento termico (serie 2xxx, 6xxx, 7xxx) si induriscono per precipitazione: solubilizzazione, tempra in acqua e invecchiamento formano precipitati coerenti di pochi nanometri; un invecchiamento eccessivo li ingrossa e la resistenza cala. Le leghe di titanio α-β come Ti-6Al-4V combinano resistenza specifica e biocompatibilità. L'incrudimento si annulla con la ricristallizzazione, che avviene a circa 0,3-0,5 volte la temperatura di fusione assoluta e dipende dal grado di deformazione precedente."
+   ],
+   "metodo": [
+    "Applica la regola delle fasi a ogni regione di un diagramma eutettico e verifica il numero di gradi di libertà.",
+    "Esercitati con la leva su Cu-Ni e su Fe-C, sia per le fasi sia per i costituenti.",
+    "Sovrapponi curve di raffreddamento a un diagramma CCT e prevedi la microstruttura finale.",
+    "Calcola D a diverse temperature e stima con √(Dt) i tempi di cementazione.",
+    "Disegna la curva durezza-tempo di invecchiamento di una lega Al-Cu indicando sotto- e sovra-invecchiamento.",
+    "Associa a ogni meccanismo di rafforzamento l'ostacolo che oppone alle dislocazioni."
+   ],
+   "ricorda": [
+    "Pressione costante: F = C − P + 1.",
+    "Leva: la frazione di una fase usa il braccio opposto.",
+    "Martensite: trasformazione senza diffusione, per taglio.",
+    "Profondità di diffusione ∝ √(Dt)."
+   ],
+   "errori": [
+    "Usare F = C − P + 2 quando la pressione è fissata.",
+    "Confondere durezza massima (che dipende dal carbonio) e temprabilità (che dipende dagli elementi di lega).",
+    "Lasciare la temperatura in °C nella legge di Arrhenius.",
+    "Pensare che un invecchiamento più lungo aumenti sempre la resistenza."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanti gradi di libertà ha il punto eutettico di un binario a p costante?",
+     "risposta": "Zero."
+    },
+    {
+     "domanda": "Frazione di cementite nella perlite?",
+     "risposta": "Circa 11%."
+    },
+    {
+     "domanda": "Che cosa misura la prova Jominy?",
+     "risposta": "La temprabilità."
+    },
+    {
+     "domanda": "Se raddoppio il tempo di cementazione, di quanto cresce lo spessore?",
+     "risposta": "Di √2, circa il 41%."
+    },
+    {
+     "domanda": "Che cosa succede con un invecchiamento eccessivo?",
+     "risposta": "I precipitati si ingrossano e la resistenza diminuisce."
+    }
+   ]
+  }
+ },
+ "Polimeri": {
+  "superiore": {
+   "spiegazione": [
+    "I polimeri sono macromolecole formate dalla ripetizione di molte unità uguali, i monomeri. Il numero medio di unità in una catena è il grado di polimerizzazione: un polietilene con massa molare 280 000 g/mol contiene circa 10 000 unità −CH₂−CH₂−. Esistono polimeri naturali, come cellulosa, amido e proteine, e sintetici, come polietilene, PVC e nylon. Le catene sono tenute insieme al loro interno da legami covalenti e tra loro da forze più deboli, e questo spiega molte proprietà.",
+    "I polimeri si producono in due modi. Nella poliaddizione si apre il doppio legame di un monomero come l'etilene e le unità si legano una dopo l'altra senza perdere atomi: così si ottengono polietilene, polipropilene, PVC e polistirene. Nella policondensazione due gruppi funzionali reagiscono liberando una piccola molecola, spesso acqua: così nascono il nylon, il PET delle bottiglie e i policarbonati. Nella poliaddizione la catena cresce molto in fretta una volta innescata, mentre nella policondensazione le catene lunghe si formano solo alla fine, quando quasi tutti i gruppi hanno reagito.",
+    "In base al comportamento col calore si distinguono tre famiglie. I termoplastici hanno catene lineari o ramificate e si possono rifondere e rimodellare: è il caso di PE, PP, PET e PVC, che si riciclano. I termoindurenti, come resine epossidiche e bachelite, formano durante la cura un reticolo tridimensionale e non fondono più. Gli elastomeri, come la gomma vulcanizzata, hanno poche reticolazioni che permettono grandi deformazioni elastiche.",
+    "Le catene possono essere disordinate (zone amorfe) o allineate (zone cristalline). Catene lineari e regolari cristallizzano meglio: l'HDPE, poco ramificato, è più denso e rigido dell'LDPE. Due temperature sono fondamentali: sotto la temperatura di transizione vetrosa Tg la parte amorfa è rigida e fragile, sopra diventa gommosa; alla temperatura di fusione Tm fondono i cristalli. Un polimero amorfo come il polistirene, con Tg intorno a 100 °C, è rigido a temperatura ambiente; il polietilene, con Tg molto bassa, è flessibile.",
+    "Le proprietà si regolano anche con gli additivi. I plastificanti abbassano la Tg e rendono flessibile il PVC; gli stabilizzanti UV e il nerofumo proteggono dalla luce solare; le cariche minerali aumentano rigidezza o riducono il costo. Alcuni polimeri, come il PLA ottenuto da zuccheri vegetali, sono di origine rinnovabile e compostabili in impianti industriali. La scelta del polimero giusto per un oggetto dipende quindi da temperatura d'uso, rigidezza richiesta e fine vita."
+   ],
+   "metodo": [
+    "Scrivi le unità ripetenti di PE, PP, PVC e PS e confrontale con quella dell'etilene.",
+    "Prepara una tabella termoplastici-termoindurenti-elastomeri con struttura, comportamento al calore ed esempi.",
+    "Cerca in casa i codici di riciclo sugli oggetti di plastica e associa a ciascuno il polimero.",
+    "Calcola il grado di polimerizzazione per due o tre polimeri con masse molari diverse.",
+    "Disegna un grafico qualitativo modulo-temperatura indicando Tg e Tm.",
+    "Collega l'argomento a «Materiali compositi»: molte matrici sono polimeriche."
+   ],
+   "ricorda": [
+    "Termoplastico = si rifonde; termoindurente = no.",
+    "Addizione: nessuna perdita; condensazione: esce una piccola molecola.",
+    "Sotto Tg rigido e fragile, sopra Tg gommoso.",
+    "Catene lineari → più cristallinità → più rigidezza."
+   ],
+   "errori": [
+    "Pensare che «termoindurente» significhi che si ammorbidisce col calore.",
+    "Confondere Tg e Tm.",
+    "Credere che tutti i polimeri siano sintetici e non riciclabili.",
+    "Usare −CH₂− invece di −CH₂−CH₂− come unità ripetente del polietilene."
+   ],
+   "domande": [
+    {
+     "domanda": "Quante unità ha in media una catena di PE da 280 000 g/mol?",
+     "risposta": "Circa 10 000."
+    },
+    {
+     "domanda": "Il PET si ottiene per addizione o condensazione?",
+     "risposta": "Per condensazione: è un poliestere."
+    },
+    {
+     "domanda": "Perché l'HDPE è più rigido dell'LDPE?",
+     "risposta": "Ha catene poco ramificate, più cristalline."
+    },
+    {
+     "domanda": "A cosa serve la vulcanizzazione?",
+     "risposta": "A creare ponti di zolfo tra le catene, rendendo la gomma elastica."
+    },
+    {
+     "domanda": "Che effetto hanno i plastificanti?",
+     "risposta": "Abbassano la Tg e rendono il polimero flessibile."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Un polimero reale contiene catene di lunghezze diverse e si descrive con medie. La massa molare media numerica M_n = Σn_iM_i/Σn_i pesa ogni catena allo stesso modo; quella ponderale M_w = Σn_iM_i²/Σn_iM_i dà più importanza alle catene lunghe. L'indice di polidispersità M_w/M_n è almeno 1: con quantità uguali di catene da 10 000 e 30 000 g/mol si ottiene M_n = 20 000, M_w = 25 000 e PDI = 1,25. Molte proprietà, come la viscosità del fuso e la resistenza, crescono con la massa molare fino a un valore di saturazione.",
+    "La struttura molecolare determina la capacità di cristallizzare. Contano la linearità, la regolarità dei gruppi laterali (tatticità: isotattico, sindiotattico, atattico) e la presenza di gruppi polari. Il polipropilene isotattico cristallizza ed è un buon materiale strutturale, quello atattico no. La cristallinità si stima dalla densità con %χ = ρ_c(ρ − ρ_a)/[ρ(ρ_c − ρ_a)]: un PE di densità 0,950 g/cm³, con ρ_c = 1,000 e ρ_a = 0,870, è cristallino al 65% circa in massa.",
+    "La transizione vetrosa è legata alla mobilità dei segmenti di catena. Catene rigide, gruppi laterali voluminosi, interazioni polari e reticolazione alzano la Tg; plastificanti e catene flessibili la abbassano. Per i polimeri semicristallini la Tg vale spesso tra metà e due terzi della Tm, in kelvin. Tra Tg e Tm il materiale è tenace, perché i cristalli danno rigidezza e la fase amorfa gommosa assorbe energia.",
+    "I polimeri sono viscoelastici: la risposta dipende da tempo, velocità di carico e temperatura. Sotto carico costante si osserva creep, a deformazione imposta il rilassamento degli sforzi. Modelli semplici come quelli di Maxwell (molla e smorzatore in serie) e Kelvin-Voigt (in parallelo) descrivono qualitativamente questi comportamenti. Il principio di equivalenza tempo-temperatura permette di prevedere il comportamento a lungo termine con prove brevi a temperatura più alta.",
+    "Le applicazioni ad alte prestazioni sfruttano l'orientazione delle catene: nelle fibre aramidiche e nel polietilene a peso molecolare ultra-alto le catene allineate portano il carico lungo i legami covalenti, con resistenze specifiche superiori all'acciaio. Il degrado avviene per fotoossidazione, idrolisi o attacco termico e si contrasta con additivi stabilizzanti. Il riciclo meccanico è possibile per i termoplastici ma ogni ciclo accorcia le catene; per i termoindurenti si studiano riciclo chimico e resine riprocessabili. Valutare l'intero ciclo di vita, dalla materia prima allo smaltimento, è ormai parte integrante della scelta di un polimero."
+   ],
+   "metodo": [
+    "Calcola M_n, M_w e PDI per distribuzioni discrete di tre o quattro frazioni.",
+    "Esercitati con la formula della cristallinità da densità e confronta il risultato con la proporzione lineare in volume.",
+    "Elenca i fattori che alzano e abbassano la Tg con un esempio di polimero per ciascuno.",
+    "Disegna le risposte dei modelli di Maxwell e Kelvin-Voigt a un gradino di sforzo e di deformazione.",
+    "Collega la struttura molecolare delle aramidi alle loro proprietà meccaniche.",
+    "Confronta riciclo meccanico e chimico per un termoplastico e un termoindurente."
+   ],
+   "ricorda": [
+    "M_w ≥ M_n, PDI ≥ 1.",
+    "Isotattico = ordinato = cristallizza.",
+    "Tg ≈ 0,5-0,7 Tm (in kelvin) nei semicristallini.",
+    "Viscoelastico = dipende dal tempo."
+   ],
+   "errori": [
+    "Usare la proporzione lineare sulle densità e chiamarla frazione in massa.",
+    "Pensare che il PDI sia una massa molare.",
+    "Applicare le leggi elastiche dei metalli a un polimero sotto carico prolungato.",
+    "Ritenere che un polimero sotto Tg sia sempre cristallino."
+   ],
+   "domande": [
+    {
+     "domanda": "Moli uguali di catene da 10 000 e 30 000 g/mol: M_w?",
+     "risposta": "25 000 g/mol."
+    },
+    {
+     "domanda": "Che cosa misura il PDI?",
+     "risposta": "L'ampiezza della distribuzione delle masse molari, M_w/M_n."
+    },
+    {
+     "domanda": "Perché il PP atattico non è strutturale?",
+     "risposta": "Perché il disordine dei gruppi laterali gli impedisce di cristallizzare."
+    },
+    {
+     "domanda": "Che cosa descrive il modello di Maxwell?",
+     "risposta": "Molla e smorzatore in serie: spiega il rilassamento degli sforzi."
+    },
+    {
+     "domanda": "Come si alza la Tg di un polimero?",
+     "risposta": "Con catene più rigide, gruppi voluminosi o polari, o reticolazione."
+    }
+   ]
+  }
+ },
+ "Ceramici e vetri": {
+  "superiore": {
+   "spiegazione": [
+    "I ceramici sono materiali inorganici e non metallici, formati in genere da metalli e non metalli legati con legami ionici e covalenti: ossidi, carburi, nitruri, silicati. Questi legami sono forti e senza elettroni liberi, e ne derivano durezza elevata, alta temperatura di fusione, buona resistenza chimica e isolamento elettrico e termico. Il rovescio della medaglia è la fragilità: un ceramico si rompe di colpo, senza deformarsi prima. Una tazza di porcellana o una piastrella sono esempi quotidiani.",
+    "Si distinguono diverse famiglie. I ceramici tradizionali nascono dall'argilla, un silicato di alluminio idrato a strati che con l'acqua diventa plastico: mattoni, piastrelle, terracotta e porcellana. I ceramici avanzati, come allumina, carburo di silicio, nitruro di silicio e zirconia, sono sintetici e puri e servono per utensili, protesi, componenti elettronici e motori. I leganti come il cemento Portland fanno presa reagendo con l'acqua, e per questo il calcestruzzo fresco va tenuto umido.",
+    "Nei cristalli ionici la struttura dipende dalle dimensioni degli ioni. Il rapporto tra raggio del catione e raggio dell'anione indica quanti anioni circondano il catione: tra 0,414 e 0,732 sono 6, come nel sale da cucina (0,56); sopra 0,732 sono 8, come nel cloruro di cesio. Inoltre il cristallo deve restare elettricamente neutro, e questo vincola anche i difetti. Per esempio, se in un cristallo manca uno ione positivo, deve mancare anche uno negativo, oppure deve cambiare la carica di un altro ione.",
+    "Il vetro è un ceramico amorfo: i tetraedri di silice sono collegati in modo disordinato. Non ha una temperatura di fusione netta ma si ammorbidisce gradualmente, e questo permette di soffiarlo e modellarlo. Nel vetro comune si aggiungono ossido di sodio, che abbassa la temperatura di lavorazione, e ossido di calcio, che migliora la resistenza chimica. Il vetro temprato ha la superficie in compressione: è più resistente e, se si rompe, si frantuma in piccoli granelli.",
+    "Molti ceramici avanzati si producono per sinterizzazione: le polveri vengono compattate e scaldate sotto la temperatura di fusione, e le particelle si saldano per diffusione. Resta sempre un po' di porosità, che si calcola confrontando la densità misurata con quella teorica: un'allumina con 3,60 g/cm³ su 3,98 teorici ha circa il 9,5% di pori. Pori e piccoli difetti abbassano la resistenza. Un altro nemico dei ceramici è lo shock termico: un raffreddamento brusco crea sforzi σ = E·α·ΔT che possono creparli."
+   ],
+   "metodo": [
+    "Prepara una tabella che confronti metalli, ceramici e polimeri per legame, durezza, duttilità e conducibilità.",
+    "Calcola il rapporto dei raggi per NaCl, CsCl e MgO e prevedi il numero di coordinazione.",
+    "Associa a ogni famiglia di ceramici (tradizionali, avanzati, vetri, leganti) due oggetti di uso comune.",
+    "Spiega a voce, con un disegno, perché il vetro temprato è più resistente.",
+    "Risolvi esercizi di porosità e di shock termico controllando le unità.",
+    "Collega l'argomento a «Proprietà meccaniche» per capire la fragilità."
+   ],
+   "ricorda": [
+    "Ceramici: duri, refrattari, isolanti ma fragili.",
+    "Rapporto dei raggi: 0,414 → 6, 0,732 → 8.",
+    "Vetro = amorfo, niente fusione netta.",
+    "Il cemento indurisce con l'acqua, non asciugandosi."
+   ],
+   "errori": [
+    "Pensare che i ceramici siano fragili perché i legami sono deboli: sono fortissimi, ma non permettono lo scorrimento.",
+    "Fare il rapporto dei raggi anione/catione invece di catione/anione.",
+    "Credere che il vetro sia un liquido che scorre a temperatura ambiente.",
+    "Confondere densità relativa e porosità."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché i ceramici sono buoni isolanti elettrici?",
+     "risposta": "Perché i legami ionici e covalenti non lasciano elettroni liberi."
+    },
+    {
+     "domanda": "Numero di coordinazione previsto per NaCl?",
+     "risposta": "6, con rapporto dei raggi circa 0,56."
+    },
+    {
+     "domanda": "A cosa serve Na₂O nel vetro comune?",
+     "risposta": "Ad abbassare la temperatura di lavorazione rompendo parte della rete di silice."
+    },
+    {
+     "domanda": "Che cos'è la sinterizzazione?",
+     "risposta": "Il consolidamento di polveri scaldate sotto la temperatura di fusione."
+    },
+    {
+     "domanda": "Sforzo termico con E = 70 GPa, α = 9·10⁻⁶ K⁻¹, ΔT = 100 K?",
+     "risposta": "63 MPa."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Le strutture dei ceramici cristallini derivano dall'impacchettamento degli anioni, in genere più grandi, con i cationi negli interstizi. Il rapporto dei raggi stabilisce la coordinazione: 0,225-0,414 tetraedrica, 0,414-0,732 ottaedrica, oltre 0,732 cubica. Così si spiegano la struttura del salgemma (NaCl, MgO), quella del cloruro di cesio e quella della fluorite (CaF₂, ZrO₂ cubica). Nei silicati l'unità base è il tetraedro SiO₄⁴⁻, che si collega in isole, catene, strati (come nelle argille) o reticoli tridimensionali (come nel quarzo).",
+    "I difetti devono rispettare la neutralità elettrica. Oltre ai difetti di Schottky e Frenkel, conta il drogaggio con ioni di valenza diversa: nella zirconia stabilizzata con ittria, ogni due Y³⁺ al posto di Zr⁴⁺ si forma una vacanza di ossigeno. Queste vacanze rendono il materiale un conduttore di ioni ossigeno ad alta temperatura, sfruttato nelle sonde lambda delle auto e nelle celle a combustibile a ossidi solidi. La chimica dei difetti permette quindi di progettare proprietà elettriche, non solo meccaniche.",
+    "La resistenza dei ceramici è controllata dai difetti, secondo la meccanica della frattura: σ_f = K_Ic/(Y√(πa)), con K_Ic di pochi MPa·m^(1/2). Poiché la dimensione del difetto più grave varia da pezzo a pezzo, la resistenza è dispersa e si descrive con la statistica di Weibull; un modulo m elevato indica un materiale affidabile. Pezzi più grandi hanno più probabilità di contenere un difetto critico e sono in media meno resistenti. La resistenza si misura in flessione su tre o quattro punti, ad esempio con σ = 3FL/(2bh²).",
+    "Esistono strategie per tenacizzare i ceramici. Nella zirconia parzialmente stabilizzata, i grani tetragonali metastabili si trasformano in monoclini all'apice della cricca, con un'espansione di volume di circa il 4% che chiude la cricca. Altri meccanismi sono la deviazione della cricca su grani allungati e il bridging di fibre o whisker nei compositi a matrice ceramica. Anche la tempra dei vetri, termica o chimica per scambio ionico, introduce compressione superficiale.",
+    "I vetri sono descritti dalla teoria del reticolo disordinato: formatori (SiO₂, B₂O₃) costruiscono la rete, modificatori (Na₂O, CaO) la interrompono creando ossigeni non pontanti, intermedi (Al₂O₃) possono fare entrambe le cose. La viscosità varia di molti ordini di grandezza con la temperatura e definisce punti tecnologici come il punto di lavoro, di rammollimento e di ricottura. La resistenza allo shock termico migliora con bassa dilatazione e alta conducibilità: per questo esistono il vetro borosilicato e le vetroceramiche, con dilatazione quasi nulla. Il borosilicato si dilata circa tre volte meno del vetro sodico-calcico ed è il vetro delle pirofile e della vetreria da laboratorio."
+   ],
+   "metodo": [
+    "Disegna le coordinazioni tetraedrica, ottaedrica e cubica e ricava geometricamente i rapporti critici 0,414 e 0,732.",
+    "Scrivi le reazioni di difetto per il drogaggio di ZrO₂ con Y₂O₃ e di NaCl con CaCl₂.",
+    "Esegui un'analisi di Weibull su dieci valori di resistenza (ln ln(1/(1−F)) contro ln σ).",
+    "Confronta i valori di K_Ic di vetro, allumina, zirconia e acciaio e calcola la cricca critica a parità di sforzo.",
+    "Prepara uno schema formatori-modificatori-intermedi con esempi di ossidi.",
+    "Valuta la resistenza allo shock termico di vetro sodico e borosilicato con σ = E·α·ΔT."
+   ],
+   "ricorda": [
+    "0,225 → 4; 0,414 → 6; 0,732 → 8.",
+    "2 Y³⁺ → 1 vacanza di O²⁻.",
+    "Weibull: m alto = resistenza prevedibile.",
+    "Zirconia: t → m con +4% di volume."
+   ],
+   "errori": [
+    "Ignorare la neutralità elettrica quando si introducono droganti.",
+    "Considerare la resistenza di un ceramico come un valore unico invece che come una distribuzione.",
+    "Dimenticare il quadrato dello spessore nella formula della flessione.",
+    "Pensare che la trasformazione della zirconia comporti una contrazione."
+   ],
+   "domande": [
+    {
+     "domanda": "Coordinazione prevista per rapporto dei raggi 0,94?",
+     "risposta": "8, cubica (come in CsCl)."
+    },
+    {
+     "domanda": "Perché la zirconia con ittria conduce ioni?",
+     "risposta": "Per le vacanze di ossigeno create dal drogaggio."
+    },
+    {
+     "domanda": "Che cosa indica un modulo di Weibull basso?",
+     "risposta": "Grande dispersione della resistenza."
+    },
+    {
+     "domanda": "Resistenza a flessione con F = 400 N, L = 40 mm, b = 4 mm, h = 3 mm?",
+     "risposta": "Circa 667 MPa."
+    },
+    {
+     "domanda": "Che ruolo ha Na₂O in un vetro?",
+     "risposta": "Modificatore: crea ossigeni non pontanti e abbassa la viscosità."
+    }
+   ]
+  }
+ },
+ "Materiali compositi": {
+  "superiore": {
+   "spiegazione": [
+    "Un composito è un materiale formato da due o più fasi distinte che lavorano insieme. Di solito c'è una matrice continua, che tiene unito il materiale, protegge e distribuisce il carico, e un rinforzo, fibre o particelle, che porta la maggior parte del carico. L'obiettivo è ottenere proprietà che nessun componente da solo avrebbe. Il legno, fatto di fibre di cellulosa in una matrice di lignina, e le ossa sono compositi naturali.",
+    "I compositi si classificano in base alla matrice: polimerica (PMC), come la vetroresina e la fibra di carbonio con resina epossidica; metallica (MMC), come l'alluminio rinforzato con particelle di carburo di silicio; ceramica (CMC), come i dischi freno carbo-ceramici. In base al rinforzo si parla di compositi particellari (calcestruzzo, metallo duro per utensili), a fibre (corte o lunghe) e strutturali (laminati e pannelli sandwich). Ogni combinazione nasce da un'esigenza precisa: leggerezza, resistenza al calore o all'usura. Una canna da pesca in carbonio, ad esempio, deve essere rigida e leggera, mentre un disco freno deve sopportare temperature altissime.",
+    "Le fibre più usate sono di vetro, economiche e molto diffuse; di carbonio, molto rigide e leggere; aramidiche, resistenti agli urti. Il grande vantaggio dei compositi è l'alta rigidezza e resistenza specifiche, cioè divise per la densità: un laminato in carbonio è più di tre volte più rigido dell'acciaio a parità di peso. Per questo si usano in aerei, auto sportive, biciclette, pale eoliche e attrezzature sportive. Il prezzo da pagare è un costo più alto e una riparazione più difficile rispetto ai metalli.",
+    "Molte proprietà si stimano con la regola delle miscele. La densità è la media pesata sui volumi: con metà vetro (2,54 g/cm³) e metà resina (1,20 g/cm³) si ottiene 1,87 g/cm³. Anche il modulo lungo le fibre è una media pesata: con il 60% di fibre di carbonio da 230 GPa in una resina da 3,5 GPa si arriva a circa 139 GPa. Perpendicolarmente alle fibre, invece, il composito è molto meno rigido.",
+    "Questa differenza tra le direzioni si chiama anisotropia. Per ottenere proprietà più equilibrate si sovrappongono strati con fibre orientate in modo diverso, a 0°, 90° e ±45°, come nel compensato. I pannelli sandwich uniscono due pelli rigide e un'anima leggera a nido d'ape: sono molto rigidi a flessione e leggerissimi. Un difetto tipico dei laminati è la delaminazione, cioè il distacco degli strati dopo un urto, che spesso non si vede dall'esterno. Nel calcestruzzo armato, l'acciaio porta la trazione e il calcestruzzo la compressione."
+   ],
+   "metodo": [
+    "Costruisci una tabella matrice-rinforzo-esempio per PMC, MMC e CMC.",
+    "Esercitati con la regola delle miscele per densità e modulo, cambiando la frazione di fibre.",
+    "Confronta la rigidezza specifica E/ρ di acciaio, alluminio e fibra di carbonio.",
+    "Osserva un pezzo di compensato o di cartone ondulato e spiega da dove viene la sua rigidezza.",
+    "Disegna una trave in calcestruzzo armato caricata al centro e indica dove mettere i ferri.",
+    "Collega l'argomento a «Polimeri» e «Ceramici e vetri», che forniscono matrici e fibre."
+   ],
+   "ricorda": [
+    "Matrice = colla e protezione; rinforzo = forza.",
+    "Lungo le fibre: media pesata; di traverso: comanda la matrice.",
+    "Rigidezza specifica = E/ρ.",
+    "Calcestruzzo armato: ferro sotto, dove c'è trazione."
+   ],
+   "errori": [
+    "Considerare una lega metallica come un composito.",
+    "Usare la media pesata semplice anche per il modulo trasversale.",
+    "Pensare che un composito sia uguale in tutte le direzioni.",
+    "Mettere le armature nella zona compressa della trave."
+   ],
+   "domande": [
+    {
+     "domanda": "Densità di un composito con 50% vetro (2,54) e 50% resina (1,20)?",
+     "risposta": "1,87 g/cm³."
+    },
+    {
+     "domanda": "Modulo longitudinale con 60% di fibre da 230 GPa e resina da 3,5 GPa?",
+     "risposta": "Circa 139 GPa."
+    },
+    {
+     "domanda": "Che cos'è un composito a matrice ceramica?",
+     "risposta": "Un composito con matrice ceramica e rinforzo, ad esempio SiC/SiC nei freni."
+    },
+    {
+     "domanda": "Perché i laminati alternano l'orientazione degli strati?",
+     "risposta": "Per compensare l'anisotropia di uno strato unidirezionale."
+    },
+    {
+     "domanda": "Qual è un composito naturale?",
+     "risposta": "Il legno (o l'osso)."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Per un composito unidirezionale caricato lungo le fibre vale l'ipotesi di isodeformazione: fibre e matrice si allungano allo stesso modo e il modulo è E_c = V_f·E_f + V_m·E_m (limite di Voigt). Caricando di traverso le fasi lavorano in serie, a parità di sforzo, e 1/E_c = V_f/E_f + V_m/E_m (limite di Reuss). Con il 60% di fibre di carbonio i due valori sono circa 139 e 8,6 GPa: un'anisotropia di oltre un fattore 15. I valori reali in direzione trasversale stanno tra i due limiti e si stimano meglio con modelli semiempirici come quello di Halpin-Tsai.",
+    "In isodeformazione il carico si ripartisce in proporzione alle rigidezze: F_f/F_m = E_f·V_f/(E_m·V_m). Con fibre di vetro al 40% (72 GPa) in una matrice da 3 GPa, le fibre portano circa il 94% del carico. La resistenza longitudinale, se le fibre si rompono per prime, è σ_c = σ_f·V_f + σ'_m·(1 − V_f), dove σ'_m è lo sforzo nella matrice alla deformazione di rottura delle fibre. Esiste una frazione minima di fibre sotto la quale il rinforzo peggiora invece di migliorare il materiale.",
+    "Il trasferimento del carico dalla matrice alla fibra avviene per taglio all'interfaccia. Una fibra deve superare la lunghezza critica l_c = σ_f·d/(2τ_c) per essere caricata fino a rottura: per fibre di carbonio da 7 µm, con τ_c = 50 MPa, l_c ≈ 0,25 mm. Fibre molto più lunghe di l_c (indicativamente 15 volte) si comportano come continue. Per questo la qualità dell'interfaccia è decisiva, e le fibre di vetro si trattano con agenti di accoppiamento silanici.",
+    "I laminati si progettano scegliendo la sequenza degli strati con la teoria classica della laminazione, che lega carichi e momenti alle deformazioni del piano medio. Laminati simmetrici evitano accoppiamenti indesiderati tra trazione e flessione; laminati quasi-isotropi (0/±45/90) hanno proprietà simili in tutte le direzioni del piano. I modi di cedimento comprendono rottura delle fibre, fessurazione della matrice, distacco all'interfaccia e delaminazione, che riduce soprattutto la resistenza a compressione dopo un urto. Per questo nei progetti aeronautici si verifica la resistenza residua a compressione dopo un impatto di energia nota.",
+    "I processi produttivi influenzano fortemente le proprietà. La laminazione manuale è economica ma dà frazioni di fibre basse; l'autoclave con preimpregnati (prepreg) assicura bassa porosità e alte prestazioni, al prezzo di costi elevati; l'RTM inietta resina in uno stampo chiuso con le fibre già disposte; la pultrusione produce profili continui. Nei pannelli sandwich, allontanare le pelli dall'asse neutro aumenta il momento d'inerzia approssimativamente con il quadrato della distanza, ottenendo grande rigidezza flessionale con poco peso. L'anima deve però resistere al taglio e restare ben incollata alle pelli, perché il distacco è il principale modo di cedimento di questi pannelli."
+   ],
+   "metodo": [
+    "Calcola i limiti di Voigt e Reuss per varie frazioni di fibre e traccia il grafico E_c contro V_f.",
+    "Ricava la formula della ripartizione del carico dall'uguaglianza delle deformazioni.",
+    "Calcola la lunghezza critica per fibre di vetro, carbonio e aramide con dati di letteratura.",
+    "Disegna la sequenza di un laminato quasi-isotropo simmetrico e spiega il ruolo di ogni strato.",
+    "Confronta processi produttivi per costo, frazione di fibre e porosità ottenibile.",
+    "Collega la delaminazione ai controlli non distruttivi a ultrasuoni."
+   ],
+   "ricorda": [
+    "Voigt (lungo le fibre) = limite superiore; Reuss (di traverso) = limite inferiore.",
+    "Le fibre si «prendono» il carico in proporzione a E·V.",
+    "l_c = σ_f·d/(2τ_c): fibre efficaci se l ≫ l_c.",
+    "Laminato simmetrico = niente accoppiamento trazione-flessione."
+   ],
+   "errori": [
+    "Usare la resistenza massima della matrice invece di σ'_m nella regola delle miscele per la resistenza.",
+    "Dimenticare il fattore 2 nella lunghezza critica.",
+    "Confondere frazione in volume e frazione in massa delle fibre.",
+    "Pensare che un laminato quasi-isotropo lo sia anche fuori dal piano."
+   ],
+   "domande": [
+    {
+     "domanda": "Modulo trasversale con V_f = 0,6, E_f = 230 GPa, E_m = 3,5 GPa?",
+     "risposta": "Circa 8,6 GPa."
+    },
+    {
+     "domanda": "Quota di carico sulle fibre con V_f = 0,4, E_f = 72 GPa, E_m = 3 GPa?",
+     "risposta": "Circa 94%."
+    },
+    {
+     "domanda": "Lunghezza critica con σ_f = 3500 MPa, d = 7 µm, τ_c = 50 MPa?",
+     "risposta": "245 µm."
+    },
+    {
+     "domanda": "A cosa servono gli strati a ±45°?",
+     "risposta": "A sopportare taglio e torsione."
+    },
+    {
+     "domanda": "Perché l'autoclave dà laminati migliori?",
+     "risposta": "Pressione e temperatura controllate riducono la porosità e aumentano la frazione di fibre."
+    }
+   ]
+  }
+ },
+ "Corrosione e degrado": {
+  "superiore": {
+   "spiegazione": [
+    "La corrosione è il deterioramento di un materiale per reazione con l'ambiente. Nei metalli è quasi sempre un processo elettrochimico, simile a una pila in cortocircuito. All'anodo il metallo si ossida e passa in soluzione come ione, ad esempio Fe → Fe²⁺ + 2e⁻; al catodo gli elettroni vengono consumati da una riduzione, spesso dell'ossigeno sciolto nell'acqua. Servono quindi un anodo, un catodo, un elettrolita (anche solo un velo d'umidità) e un collegamento elettrico tra le zone.",
+    "Quando due metalli diversi sono a contatto in presenza di un elettrolita si forma una coppia galvanica: si corrode il metallo meno nobile, che fa da anodo. La tendenza si legge nella serie dei potenziali: tra zinco (−0,76 V) e rame (+0,34 V) la differenza è 1,10 V, e lo zinco si consuma. La situazione è particolarmente pericolosa se l'anodo è piccolo e il catodo grande, perché la corrosione si concentra su poca superficie. Per questo non si devono fissare lamiere di rame con viti d'acciaio.",
+    "Alcuni metalli molto reattivi resistono bene grazie alla passivazione: si ricoprono di un sottilissimo strato di ossido compatto e aderente che blocca la reazione. È il caso dell'alluminio, del titanio e degli acciai inossidabili, protetti dall'ossido di cromo. Il film passivo però può essere rotto localmente, ad esempio dai cloruri, causando la vaiolatura (pitting): piccoli fori profondi. Altre forme localizzate sono la corrosione interstiziale nelle fessure e quella intergranulare lungo i bordi dei grani.",
+    "Per proteggere i metalli si usano diversi metodi. I rivestimenti, come vernici e smalti, separano il metallo dall'ambiente. La zincatura è speciale: lo zinco, più attivo del ferro, si corrode al suo posto anche dove il rivestimento è graffiato. La protezione catodica rende la struttura catodo, con anodi sacrificali di magnesio, zinco o alluminio oppure con un generatore che collega la struttura al polo negativo. Gli inibitori sono sostanze aggiunte in piccole quantità all'ambiente che rallentano le reazioni.",
+    "Il degrado non riguarda solo i metalli. Nel calcestruzzo armato l'anidride carbonica dell'aria abbassa il pH (carbonatazione) e i ferri, non più passivati, arrugginiscono; la ruggine si espande e fa saltare il copriferro. I polimeri esposti al sole subiscono la fotoossidazione: i raggi UV rompono le catene, il materiale ingiallisce e diventa fragile, e si protegge con stabilizzanti e nerofumo. Anche legno e pietre si degradano, per funghi, gelo e piogge acide."
+   ],
+   "metodo": [
+    "Disegna una goccia d'acqua su una lamiera di ferro indicando anodo, catodo, flusso di elettroni e ioni.",
+    "Impara la posizione di alcuni metalli nella serie galvanica: Mg, Zn, Al, Fe, Cu, Ag, Au.",
+    "Per ogni forma di corrosione (uniforme, galvanica, vaiolatura, interstiziale) annota un esempio reale.",
+    "Prepara una tabella dei metodi di protezione con il principio su cui si basano.",
+    "Fai una piccola prova: chiodi in acqua, in acqua salata e in aria secca, osservandoli per una settimana.",
+    "Collega l'argomento all'elettrochimica studiata in chimica (pile e potenziali standard)."
+   ],
+   "ricorda": [
+    "«Anodo = Ossidazione»: iniziano entrambe con una vocale.",
+    "Si corrode il metallo più attivo (meno nobile).",
+    "Piccolo anodo + grande catodo = pericolo.",
+    "Zincatura: lo zinco si sacrifica per il ferro."
+   ],
+   "errori": [
+    "Pensare che basti l'aria secca per far arrugginire il ferro.",
+    "Credere che l'inox non possa mai corrodersi.",
+    "Collegare la struttura da proteggere al polo positivo del generatore.",
+    "Ritenere che un metallo nobile a contatto con il ferro lo protegga."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa avviene al catodo nella corrosione del ferro in aria umida?",
+     "risposta": "La riduzione dell'ossigeno: O₂ + 2H₂O + 4e⁻ → 4OH⁻."
+    },
+    {
+     "domanda": "f.e.m. della coppia Zn-Cu?",
+     "risposta": "1,10 V."
+    },
+    {
+     "domanda": "Perché l'alluminio resiste alla corrosione?",
+     "risposta": "Si passiva con un sottile strato di Al₂O₃."
+    },
+    {
+     "domanda": "Quale metallo si usa come anodo sacrificale?",
+     "risposta": "Magnesio, zinco o alluminio."
+    },
+    {
+     "domanda": "Che cos'è la carbonatazione?",
+     "risposta": "La CO₂ abbassa il pH del calcestruzzo e i ferri perdono la passivazione."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La termodinamica della corrosione si basa sui potenziali di elettrodo. L'equazione di Nernst, E = E° + (0,0592/n)·log[Mⁿ⁺] a 25 °C, mostra come il potenziale dipenda dalla concentrazione degli ioni: per il rame in una soluzione 0,010 M si ottiene circa 0,28 V. I diagrammi di Pourbaix (potenziale-pH) indicano per ogni metallo le zone di immunità, corrosione e passività, e spiegano ad esempio perché il ferro è passivo nel calcestruzzo a pH 13. La serie galvanica pratica, misurata in acqua di mare, è più utile della serie standard per prevedere le coppie reali.",
+    "La quantità di metallo corroso si ricava dalla legge di Faraday: m = I·t·M/(n·F). Una corrente di 2 A per 24 ore consuma circa 50 g di ferro. La velocità di corrosione si esprime anche come penetrazione, CPR = Δm/(ρ·A·t): 10 g persi in un anno su 100 cm² di acciaio corrispondono a circa 0,13 mm/anno. Nel progetto si aggiunge un sovraspessore di corrosione pari alla velocità prevista moltiplicata per la vita utile.",
+    "La cinetica si studia con la teoria del potenziale misto. Le curve anodica e catodica si incontrano al potenziale di corrosione, dove la corrente anodica eguaglia quella catodica; l'equazione di Tafel lega la sovratensione al logaritmo della densità di corrente. La polarizzazione per concentrazione limita spesso la reazione catodica dell'ossigeno. Nelle coppie galvaniche la corrente totale dipende dall'area del catodo, da cui l'effetto area: un piccolo anodo su un grande catodo subisce densità di corrente elevate.",
+    "Molte forme di corrosione localizzata sono autocatalitiche. Nella vaiolatura e nella corrosione interstiziale l'idrolisi degli ioni metallici acidifica la zona confinata e richiama cloruri, mentre la superficie esterna, ricca di ossigeno, fa da catodo. Negli inox austenitici tenuti tra circa 450 e 850 °C precipitano carburi di cromo ai bordi di grano (sensibilizzazione), con corrosione intergranulare; si rimedia con acciai a basso carbonio o stabilizzati con Ti o Nb. La tensocorrosione combina sforzo di trazione e ambiente specifico e produce cricche fragili anche sotto lo snervamento.",
+    "L'ossidazione a secco ad alta temperatura è governata dalla diffusione attraverso lo strato di ossido, con crescita spesso parabolica nel tempo. Il rapporto di Pilling-Bedworth, volume dell'ossido su volume del metallo consumato, dà un'indicazione sulla protettività: tra 1 e 2 lo strato è continuo e aderente (Al ≈ 1,3), sotto 1 è poroso (Mg ≈ 0,8), molto sopra 2 tende a sfaldarsi. Le leghe per alte temperature contengono Cr, Al o Si, che formano ossidi protettivi a crescita lenta. Per i polimeri il degrado procede per meccanismi radicalici di fotoossidazione e idrolisi, contrastati da stabilizzanti specifici."
+   ],
+   "metodo": [
+    "Applica Nernst a diverse concentrazioni e calcola la f.e.m. di pile a concentrazione.",
+    "Leggi un diagramma di Pourbaix del ferro e individua le zone di immunità, corrosione e passività.",
+    "Risolvi esercizi di Faraday e di velocità di penetrazione convertendo con cura tempi e unità.",
+    "Disegna un diagramma di Evans con le rette di Tafel e individua E_corr e i_corr.",
+    "Spiega con uno schema il meccanismo autocatalitico della vaiolatura.",
+    "Calcola il sovraspessore di corrosione per una tubazione con vita utile di 30 anni."
+   ],
+   "ricorda": [
+    "Nernst: −0,0296 V per ogni decade di concentrazione in meno se n = 2.",
+    "Faraday: tempo in secondi, n = elettroni per atomo.",
+    "Pilling-Bedworth tra 1 e 2: ossido protettivo.",
+    "Inox «L» contro la sensibilizzazione."
+   ],
+   "errori": [
+    "Dimenticare n nella legge di Faraday o in quella di Nernst.",
+    "Usare la serie standard dei potenziali per coppie in ambienti reali senza verificare la serie galvanica pratica.",
+    "Pensare che il potenziale di corrosione sia un valore di equilibrio termodinamico: è un potenziale misto.",
+    "Confondere tensocorrosione e fatica-corrosione, che richiede carichi ciclici."
+   ],
+   "domande": [
+    {
+     "domanda": "Potenziale del rame in Cu²⁺ 0,010 M?",
+     "risposta": "Circa 0,28 V."
+    },
+    {
+     "domanda": "Ferro consumato da 2 A per 24 h?",
+     "risposta": "Circa 50 g."
+    },
+    {
+     "domanda": "Che cosa rappresenta il potenziale di corrosione?",
+     "risposta": "Il potenziale misto a cui corrente anodica e catodica si eguagliano."
+    },
+    {
+     "domanda": "Perché il magnesio si ossida in modo non protettivo?",
+     "risposta": "Il suo rapporto di Pilling-Bedworth è minore di 1: l'ossido è poroso."
+    },
+    {
+     "domanda": "Che cosa causa la sensibilizzazione degli inox?",
+     "risposta": "La precipitazione di carburi di cromo ai bordi di grano tra circa 450 e 850 °C."
+    }
+   ]
+  }
+ }
+}

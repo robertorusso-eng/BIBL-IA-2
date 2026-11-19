@@ -1,0 +1,986 @@
+[
+ {
+  "id": "NMED-121",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Partendo da una sola molecola di DNA stampo, quante copie del frammento bersaglio si ottengono in teoria dopo 30 cicli di PCR con efficienza del 100%?",
+  "opzioni": {
+   "A": "30",
+   "B": "60",
+   "C": "900",
+   "D": "Circa 3 · 10⁶",
+   "E": "2³⁰, circa 1,07 · 10⁹"
+  },
+  "giusta": "E",
+  "perche": "In ogni ciclo di PCR (denaturazione, appaiamento dei primer, estensione) il numero di molecole raddoppia, quindi dopo n cicli si hanno N₀ · 2ⁿ copie. Con N₀ = 1 e n = 30: 2³⁰ = 1 073 741 824 ≈ 1,07 · 10⁹. Gli errori tipici sono pensare a una crescita lineare (30 o 60 copie) o calcolare 30² = 900. In pratica l'efficienza è minore del 100% e la reazione raggiunge un plateau.",
+  "semplice": "È come piegare un foglio a metà tante volte: ogni piega raddoppia lo spessore. Dopo 30 raddoppi da una sola copia si arriva a più di un miliardo.",
+  "passaggi": [
+   "Ricorda che ogni ciclo raddoppia le copie",
+   "Formula: N = N₀ · 2ⁿ",
+   "Calcolo: 1 · 2³⁰",
+   "2¹⁰ ≈ 1024, quindi 2³⁰ ≈ 1024³ ≈ 1,07 · 10⁹"
+  ],
+  "concetto": "Amplificazione esponenziale nella PCR"
+ },
+ {
+  "id": "NMED-122",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Qual è la funzione dei dideossinucleotidi (ddNTP) nel sequenziamento con il metodo Sanger?",
+  "opzioni": {
+   "A": "Fanno da primer per la polimerasi",
+   "B": "Interrompono l'allungamento del filamento perché mancano del gruppo 3'-OH",
+   "C": "Separano i due filamenti del DNA",
+   "D": "Tagliano il DNA in siti specifici",
+   "E": "Legano i frammenti al vettore"
+  },
+  "giusta": "B",
+  "perche": "I ddNTP non hanno l'ossidrile in posizione 3' del desossiribosio, quindi la DNA polimerasi, dopo averne incorporato uno, non può legare il nucleotide successivo e la catena si ferma. Si generano frammenti di tutte le lunghezze, ognuno terminato da un ddNTP marcato con un fluorocromo specifico per la base; separandoli per dimensione si legge la sequenza. Tagliare il DNA è il compito degli enzimi di restrizione.",
+  "semplice": "I ddNTP sono come mattoncini senza il gancio per attaccare il successivo: quando uno viene inserito, la costruzione si ferma. Guardando dove si ferma ogni catena si ricostruisce la sequenza.",
+  "passaggi": [
+   "Ricorda la struttura dei ddNTP: senza 3'-OH",
+   "Senza 3'-OH non si forma il legame fosfodiesterico successivo",
+   "La catena termina in posizioni diverse",
+   "I frammenti ordinati per lunghezza rivelano la sequenza",
+   "Scegli B"
+  ],
+  "concetto": "Sequenziamento Sanger"
+ },
+ {
+  "id": "NMED-123",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Nell'elettroforesi su gel di agarosio, verso quale elettrodo migrano i frammenti di DNA e quali si muovono più velocemente?",
+  "opzioni": {
+   "A": "Verso il catodo; i più grandi",
+   "B": "Verso il catodo; i più piccoli",
+   "C": "Verso l'anodo; i più grandi",
+   "D": "Verso l'anodo (polo positivo); i più piccoli",
+   "E": "Restano fermi; si separano per carica"
+  },
+  "giusta": "D",
+  "perche": "Il DNA è carico negativamente per i gruppi fosfato e quindi migra verso l'anodo, il polo positivo. Poiché il rapporto carica/massa è quasi costante, la separazione dipende dalle dimensioni: i frammenti piccoli passano più facilmente tra le maglie del gel e arrivano più lontano. La distanza percorsa è circa proporzionale al logaritmo della lunghezza in paia di basi.",
+  "semplice": "Il gel è come un bosco fitto: i bambini piccoli corrono tra gli alberi più in fretta degli adulti. Il DNA, negativo, è attirato dal polo positivo.",
+  "passaggi": [
+   "Ricorda la carica del DNA: negativa per i fosfati",
+   "Le cariche negative vanno verso il polo positivo (anodo)",
+   "Il gel agisce da setaccio",
+   "I frammenti piccoli migrano di più",
+   "Scegli D"
+  ],
+  "concetto": "Elettroforesi del DNA"
+ },
+ {
+  "id": "NMED-124",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "In una qPCR il gene X nel campione trattato ha un Ct di 22 e nel controllo di 25, dopo normalizzazione sullo stesso gene di riferimento (efficienza 100%). Come varia l'espressione di X nel trattato?",
+  "opzioni": {
+   "A": "È circa 8 volte maggiore",
+   "B": "È 3 volte maggiore",
+   "C": "È 8 volte minore",
+   "D": "È 3 volte minore",
+   "E": "È invariata"
+  },
+  "giusta": "A",
+  "perche": "Il Ct è il ciclo in cui la fluorescenza supera la soglia: più stampo iniziale significa Ct più basso. Una differenza di 3 cicli, con raddoppio a ogni ciclo, corrisponde a 2³ = 8 volte più stampo nel campione trattato. L'errore più comune è leggere la differenza in modo lineare (3 volte) o invertire il segno pensando che un Ct più basso indichi meno espressione.",
+  "semplice": "Il Ct è come il tempo per riempire un secchio: se parti con più acqua lo riempi prima. Tre «raddoppi» di vantaggio significano otto volte più acqua di partenza.",
+  "passaggi": [
+   "ΔCt = 25 − 22 = 3 cicli in meno nel trattato",
+   "Ct più basso significa più stampo iniziale",
+   "Ogni ciclo corrisponde a un raddoppio",
+   "Rapporto: 2³ = 8 volte maggiore"
+  ],
+  "concetto": "Quantificazione relativa con qPCR"
+ },
+ {
+  "id": "NMED-125",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Un campione di DNA a doppio filamento diluito 1:10 ha assorbanza a 260 nm pari a 0,5 (cammino 1 cm). Sapendo che A₂₆₀ = 1 corrisponde a 50 µg/mL di dsDNA, qual è la concentrazione del campione originale?",
+  "opzioni": {
+   "A": "25 µg/mL",
+   "B": "100 µg/mL",
+   "C": "250 µg/mL",
+   "D": "500 µg/mL",
+   "E": "2,5 µg/mL"
+  },
+  "giusta": "C",
+  "perche": "Nella diluizione la concentrazione è 0,5 · 50 µg/mL = 25 µg/mL. Il campione originale era 10 volte più concentrato: 25 · 10 = 250 µg/mL. L'errore tipico è fermarsi a 25 µg/mL dimenticando il fattore di diluizione. Il rapporto A₂₆₀/A₂₈₀ (circa 1,8 per DNA puro) serve invece a valutare la contaminazione da proteine.",
+  "semplice": "Prima calcoli quanto DNA c'è nella provetta diluita, poi moltiplichi per quante volte l'hai diluita. Come quando allunghi un succo con acqua e vuoi sapere quanto era forte all'inizio.",
+  "passaggi": [
+   "Concentrazione nel diluito: 0,5 · 50 = 25 µg/mL",
+   "Fattore di diluizione: 10",
+   "Originale: 25 · 10 = 250 µg/mL",
+   "Risultato: 250 µg/mL"
+  ],
+  "concetto": "Quantificazione spettrofotometrica del DNA"
+ },
+ {
+  "id": "NMED-126",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Un enzima di restrizione riconosce una sequenza specifica di 4 paia di basi. In un DNA con le quattro basi in proporzioni uguali e distribuite a caso, con quale frequenza media taglia?",
+  "opzioni": {
+   "A": "Ogni 16 bp",
+   "B": "Ogni 256 bp",
+   "C": "Ogni 4096 bp",
+   "D": "Ogni 64 bp",
+   "E": "Ogni 1024 bp"
+  },
+  "giusta": "B",
+  "perche": "La probabilità di trovare una specifica base in una posizione è 1/4; per una sequenza di 4 basi è (1/4)⁴ = 1/256, quindi in media si incontra un sito ogni 256 bp. Per un sito di 6 bp sarebbe 4⁶ = 4096 bp. L'errore comune è usare 4² = 16 o 4³ = 64.",
+  "semplice": "È come indovinare quattro lettere di fila tra A, C, G e T: hai una possibilità su 4 per ogni lettera, quindi una su 256 per tutte e quattro.",
+  "passaggi": [
+   "Probabilità di una base specifica: 1/4",
+   "Per 4 basi consecutive: (1/4)⁴",
+   "Calcolo: 4⁴ = 256",
+   "In media un sito ogni 256 bp"
+  ],
+  "concetto": "Frequenza dei siti di restrizione"
+ },
+ {
+  "id": "NMED-127",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Nel sistema CRISPR-Cas9 usato in laboratorio, che cosa determina il punto del genoma in cui Cas9 taglia?",
+  "opzioni": {
+   "A": "La sequenza della proteina Cas9",
+   "B": "Un primer di DNA a singolo filamento",
+   "C": "La metilazione del sito",
+   "D": "Un enzima di restrizione associato",
+   "E": "L'RNA guida, complementare al bersaglio, adiacente a una sequenza PAM"
+  },
+  "giusta": "E",
+  "perche": "Cas9 è una nucleasi guidata da un RNA: i circa 20 nucleotidi dell'RNA guida si appaiano al DNA bersaglio e Cas9 taglia entrambi i filamenti, purché subito dopo ci sia la breve sequenza PAM (per SpCas9, NGG). Cambiando solo la sequenza della guida si può dirigere il taglio quasi ovunque. La rottura viene poi riparata per unione delle estremità (spesso con piccole inserzioni o delezioni) o per ricombinazione omologa con uno stampo.",
+  "semplice": "Cas9 è una forbice cieca: l'RNA guida è il navigatore che la porta all'indirizzo giusto del DNA, e la PAM è il «numero civico» che deve esserci vicino.",
+  "passaggi": [
+   "Ricorda i componenti: Cas9 e RNA guida",
+   "La specificità dipende dall'appaiamento RNA-DNA",
+   "Serve la sequenza PAM adiacente",
+   "Escludi A: Cas9 è la stessa per tutti i bersagli",
+   "Scegli E"
+  ],
+  "concetto": "Editing genomico con CRISPR-Cas9"
+ },
+ {
+  "id": "NMED-128",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Quale tecnica si usa per rilevare una specifica proteina in un estratto cellulare dopo separazione per peso molecolare?",
+  "opzioni": {
+   "A": "Il Southern blot",
+   "B": "Il Northern blot",
+   "C": "Il Western blot",
+   "D": "La PCR",
+   "E": "Il sequenziamento Sanger"
+  },
+  "giusta": "C",
+  "perche": "Nel Western blot le proteine vengono separate per massa con SDS-PAGE, trasferite su una membrana e riconosciute con un anticorpo specifico, poi rivelato con un anticorpo secondario marcato. Il Southern blot rileva sequenze di DNA e il Northern blot di RNA, entrambi con sonde di acidi nucleici. La PCR amplifica DNA e non rileva proteine.",
+  "semplice": "Per ricordarlo: Southern per il DNA, Northern per l'RNA, Western per le proteine. Nel Western si usa un anticorpo come «cane da tartufo» che trova la proteina cercata.",
+  "passaggi": [
+   "Riconosci il bersaglio: una proteina",
+   "Ricorda che le proteine si rilevano con anticorpi",
+   "Associa la tecnica: Western blot",
+   "Escludi Southern (DNA) e Northern (RNA)",
+   "Scegli C"
+  ],
+  "concetto": "Western blot"
+ },
+ {
+  "id": "NMED-129",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Per esprimere una proteina umana in E. coli si clona il suo cDNA, non il gene genomico. Perché?",
+  "opzioni": {
+   "A": "Perché il cDNA non contiene introni, che i batteri non sanno rimuovere",
+   "B": "Perché il cDNA è più lungo e stabile",
+   "C": "Perché il gene genomico non contiene il codice per la proteina",
+   "D": "Perché i batteri leggono solo RNA",
+   "E": "Perché il cDNA contiene già il promotore batterico"
+  },
+  "giusta": "A",
+  "perche": "Il cDNA si ottiene trascrivendo all'inverso l'mRNA maturo, già privo di introni; i batteri non hanno lo spliceosoma, quindi tradurrebbero anche gli introni producendo una proteina sbagliata. Il cDNA è più corto del gene genomico. Il promotore batterico non è nel cDNA ma viene fornito dal vettore di espressione.",
+  "semplice": "Il gene umano è come una ricetta piena di note in mezzo (gli introni) che il cuoco batterico non sa saltare. Il cDNA è la ricetta già ripulita, pronta da seguire.",
+  "passaggi": [
+   "Ricorda che i geni eucariotici hanno introni",
+   "Ricorda che i batteri non fanno splicing",
+   "Il cDNA deriva da mRNA maturo, senza introni",
+   "Escludi E: il promotore viene dal vettore",
+   "Scegli A"
+  ],
+  "concetto": "Clonaggio di cDNA per l'espressione batterica"
+ },
+ {
+  "id": "NMED-130",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Tecniche di biologia molecolare",
+  "livello": "università",
+  "domanda": "Dopo una trasformazione con un plasmide che porta un gene di resistenza all'ampicillina e un sito di clonaggio dentro il gene lacZ, le colonie blu su terreno con ampicillina e X-gal che cosa indicano?",
+  "opzioni": {
+   "A": "Batteri senza plasmide",
+   "B": "Batteri con plasmide che contiene l'inserto",
+   "C": "Batteri resistenti per mutazione spontanea all'X-gal",
+   "D": "Batteri con plasmide privo dell'inserto, con lacZ intatto",
+   "E": "Batteri morti"
+  },
+  "giusta": "D",
+  "perche": "Sull'ampicillina crescono solo i batteri con il plasmide. Se l'inserto è entrato nel sito di clonaggio, interrompe lacZ e la β-galattosidasi non si forma: la colonia resta bianca. Se il plasmide si è richiuso senza inserto, lacZ funziona, l'enzima scinde l'X-gal e la colonia diventa blu. Si scelgono quindi le colonie bianche.",
+  "semplice": "Il colore funziona da semaforo: blu significa «plasmide vuoto», bianco significa «il gene che volevi è entrato».",
+  "passaggi": [
+   "L'ampicillina seleziona i batteri con il plasmide",
+   "L'inserto nel sito di clonaggio interrompe lacZ",
+   "lacZ intatto scinde X-gal e dà colore blu",
+   "Colonie blu: plasmide senza inserto",
+   "Scegli D"
+  ],
+  "concetto": "Selezione blu-bianco"
+ },
+ {
+  "id": "NMED-131",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Perché i batteri Gram-positivi si colorano di viola con la colorazione di Gram?",
+  "opzioni": {
+   "A": "Perché hanno una parete con uno strato spesso di peptidoglicano che trattiene il complesso cristalvioletto-iodio",
+   "B": "Perché hanno una membrana esterna ricca di lipidi",
+   "C": "Perché non hanno parete cellulare",
+   "D": "Perché hanno il nucleo",
+   "E": "Perché producono un pigmento viola"
+  },
+  "giusta": "A",
+  "perche": "Nei Gram-positivi lo spesso strato di peptidoglicano, disidratato dall'alcol, trattiene il complesso cristalvioletto-iodio, e le cellule restano viola. Nei Gram-negativi il peptidoglicano è sottile e la membrana esterna lipidica viene danneggiata dall'alcol: il colorante esce e le cellule prendono il colore rosa della safranina. La presenza di membrana esterna è quindi tipica dei Gram-negativi.",
+  "semplice": "La parete dei Gram-positivi è come una spugna spessa che trattiene l'inchiostro viola anche quando la si «lava» con l'alcol. Quella dei Gram-negativi è sottile e l'inchiostro scappa.",
+  "passaggi": [
+   "Ricorda i passaggi del Gram: cristalvioletto, iodio, alcol, safranina",
+   "Il colore dopo l'alcol dipende dal peptidoglicano",
+   "Peptidoglicano spesso: colore trattenuto, viola",
+   "Escludi B: la membrana esterna è dei Gram-negativi",
+   "Scegli A"
+  ],
+  "concetto": "Colorazione di Gram"
+ },
+ {
+  "id": "NMED-132",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Quale struttura è presente in TUTTE le cellule batteriche?",
+  "opzioni": {
+   "A": "Il flagello",
+   "B": "La capsula",
+   "C": "La membrana plasmatica e i ribosomi 70S",
+   "D": "Il plasmide",
+   "E": "Le fimbrie"
+  },
+  "giusta": "C",
+  "perche": "Membrana plasmatica, citoplasma, ribosomi 70S e cromosoma (nel nucleoide) sono indispensabili alla vita della cellula e si trovano in tutti i batteri. Flagelli, capsula, fimbrie e plasmidi sono strutture accessorie presenti solo in alcune specie o ceppi; per esempio molti batteri sono immobili e senza flagello. Persino la parete manca in alcuni batteri, come i micoplasmi.",
+  "semplice": "Alcune cose sono «di serie» in ogni batterio (membrana, ribosomi, DNA), altre sono «optional» come il flagello per nuotare o la capsula protettiva.",
+  "passaggi": [
+   "Distingui strutture essenziali e accessorie",
+   "Elenca le essenziali: membrana, citoplasma, ribosomi, nucleoide",
+   "Le altre opzioni sono accessorie",
+   "Scegli C"
+  ],
+  "concetto": "Strutture essenziali della cellula batterica"
+ },
+ {
+  "id": "NMED-133",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Dove si trova il DNA cromosomico di un batterio?",
+  "opzioni": {
+   "A": "In un nucleo delimitato da doppia membrana",
+   "B": "In una regione del citoplasma detta nucleoide, senza membrana",
+   "C": "Nei mitocondri",
+   "D": "Nella parete cellulare",
+   "E": "Nella capsula"
+  },
+  "giusta": "B",
+  "perche": "I batteri sono procarioti: non hanno nucleo né organuli delimitati da membrana. Il cromosoma, di solito circolare, è ripiegato e compattato da proteine in una zona del citoplasma chiamata nucleoide. I batteri non hanno mitocondri; anzi, i mitocondri delle cellule eucariotiche derivano da antichi batteri.",
+  "semplice": "Nel batterio il DNA non ha una «stanza» chiusa: è un gomitolo appoggiato in mezzo alla cellula, in una zona chiamata nucleoide.",
+  "passaggi": [
+   "Ricorda che i batteri sono procarioti",
+   "Procarioti significa senza nucleo",
+   "Il DNA si raccoglie nel nucleoide",
+   "Escludi A e C",
+   "Scegli B"
+  ],
+  "concetto": "Nucleoide"
+ },
+ {
+  "id": "NMED-134",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Quale funzione svolgono le endospore prodotte da generi come Bacillus e Clostridium?",
+  "opzioni": {
+   "A": "Sono cellule riproduttive che moltiplicano il batterio",
+   "B": "Servono al movimento",
+   "C": "Trasferiscono plasmidi tra cellule",
+   "D": "Producono le tossine",
+   "E": "Sono forme di resistenza che sopravvivono a calore, essiccamento e disinfettanti"
+  },
+  "giusta": "E",
+  "perche": "In condizioni sfavorevoli alcuni batteri Gram-positivi formano dentro la cellula un'endospora disidratata, con involucri spessi e dipicolinato di calcio, che resiste a ebollizione, radiazioni ed essiccamento anche per anni; quando l'ambiente torna favorevole germina. Ogni cellula produce una sola spora, quindi non è un mezzo di moltiplicazione. Per distruggerle serve l'autoclave (121 °C sotto pressione).",
+  "semplice": "L'endospora è come un bunker in cui il batterio si chiude quando le cose si mettono male. Per questo il botulino nelle conserve casalinghe è pericoloso: la bollitura normale non basta a ucciderne le spore.",
+  "passaggi": [
+   "Ricorda quando si formano: condizioni sfavorevoli",
+   "Ricorda le proprietà: resistenza estrema",
+   "Una cellula forma una spora: non è riproduzione",
+   "Escludi A, B, C, D",
+   "Scegli E"
+  ],
+  "concetto": "Endospore batteriche"
+ },
+ {
+  "id": "NMED-135",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Che cos'è il lipopolisaccaride (LPS) e in quali batteri si trova?",
+  "opzioni": {
+   "A": "Un componente della membrana plasmatica di tutti i batteri",
+   "B": "Un enzima della parete dei Gram-positivi",
+   "C": "Un polisaccaride della capsula dei Gram-positivi",
+   "D": "Un componente della membrana esterna dei Gram-negativi, il cui lipide A è un'endotossina",
+   "E": "Un acido teicoico"
+  },
+  "giusta": "D",
+  "perche": "L'LPS forma il foglietto esterno della membrana esterna dei Gram-negativi ed è costituito da lipide A, oligosaccaride centrale e antigene O. Il lipide A, liberato quando i batteri muoiono, scatena una forte risposta infiammatoria (febbre, shock settico): per questo è chiamato endotossina. Gli acidi teicoici sono invece tipici della parete dei Gram-positivi.",
+  "semplice": "L'LPS è come la vernice esterna dei Gram-negativi. Se il batterio si rompe la vernice si sparge nel sangue e il nostro corpo reagisce in modo molto violento, con febbre alta.",
+  "passaggi": [
+   "Ricorda la struttura della parete dei Gram-negativi",
+   "L'LPS si trova nella membrana esterna",
+   "Ricorda la parte tossica: lipide A = endotossina",
+   "Escludi E, tipico dei Gram-positivi",
+   "Scegli D"
+  ],
+  "concetto": "Lipopolisaccaride ed endotossina"
+ },
+ {
+  "id": "NMED-136",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Perché la penicillina danneggia i batteri ma non le cellule umane?",
+  "opzioni": {
+   "A": "Perché distrugge il DNA batterico",
+   "B": "Perché blocca i ribosomi 80S",
+   "C": "Perché inibisce la sintesi del peptidoglicano, assente nelle cellule umane",
+   "D": "Perché danneggia i mitocondri",
+   "E": "Perché blocca il flagello"
+  },
+  "giusta": "C",
+  "perche": "La penicillina è un β-lattamico che si lega alle proteine leganti la penicillina (PBP), enzimi transpeptidasi che formano i legami crociati del peptidoglicano. Senza una parete integra il batterio in crescita si rompe per la pressione osmotica. Le cellule umane non hanno parete né peptidoglicano, quindi il bersaglio manca. I ribosomi 80S sono quelli umani: un antibiotico che li bloccasse sarebbe tossico per noi.",
+  "semplice": "La penicillina rompe i «mattoni» della parete dei batteri. Le nostre cellule non hanno questa parete, quindi l'antibiotico non trova niente da colpire.",
+  "passaggi": [
+   "Ricorda il bersaglio della penicillina: sintesi del peptidoglicano",
+   "Ricorda che le cellule umane non hanno peptidoglicano",
+   "Collega: tossicità selettiva",
+   "Escludi B: 80S sono ribosomi umani",
+   "Scegli C"
+  ],
+  "concetto": "Tossicità selettiva della penicillina"
+ },
+ {
+  "id": "NMED-137",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Qual è la funzione principale delle fimbrie (pili comuni)?",
+  "opzioni": {
+   "A": "Permettere l'adesione del batterio alle superfici e alle cellule dell'ospite",
+   "B": "Permettere il movimento rotatorio",
+   "C": "Conservare il glicogeno",
+   "D": "Produrre energia",
+   "E": "Proteggere dal calore"
+  },
+  "giusta": "A",
+  "perche": "Le fimbrie sono appendici proteiche sottili e numerose che portano in punta adesine capaci di legare recettori sulle cellule dell'ospite: sono essenziali, per esempio, perché E. coli uropatogeno si attacchi all'epitelio urinario. Il movimento dipende invece dal flagello, che ruota grazie a un motore alla base. Il pilo sessuale (pilo F) è un tipo specializzato coinvolto nella coniugazione.",
+  "semplice": "Le fimbrie sono come i ganci del velcro: permettono al batterio di attaccarsi alle cellule e non essere lavato via, per esempio dall'urina.",
+  "passaggi": [
+   "Distingui fimbrie, pilo sessuale e flagello",
+   "Associa le fimbrie all'adesione",
+   "Escludi B, funzione del flagello",
+   "Scegli A"
+  ],
+  "concetto": "Fimbrie e adesione"
+ },
+ {
+  "id": "NMED-138",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Quale caratteristica hanno i micoplasmi, e quale conseguenza ne deriva?",
+  "opzioni": {
+   "A": "Hanno una parete molto spessa e sono sensibili alla penicillina",
+   "B": "Hanno il nucleo e si dividono per mitosi",
+   "C": "Producono endospore e resistono all'autoclave",
+   "D": "Non hanno parete cellulare e sono quindi naturalmente resistenti ai β-lattamici",
+   "E": "Sono fotosintetici"
+  },
+  "giusta": "D",
+  "perche": "I micoplasmi, tra i più piccoli batteri liberi, non hanno parete né peptidoglicano; la loro membrana è stabilizzata da steroli. Per questo non si colorano bene con il Gram, hanno forma variabile e sono intrinsecamente resistenti agli antibiotici che agiscono sulla parete, come penicilline e cefalosporine. Mycoplasma pneumoniae si tratta con macrolidi o tetracicline.",
+  "semplice": "Se l'antibiotico distrugge le mura di un castello, non può nulla contro una tenda: il micoplasma non ha la parete, quindi la penicillina non lo colpisce.",
+  "passaggi": [
+   "Ricorda la caratteristica del micoplasma: assenza di parete",
+   "Ricorda il bersaglio dei β-lattamici: la parete",
+   "Senza bersaglio c'è resistenza naturale",
+   "Escludi A, B, C, E",
+   "Scegli D"
+  ],
+  "concetto": "Micoplasmi senza parete"
+ },
+ {
+  "id": "NMED-139",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Quale batterio ha una parete ricca di acidi micolici e per questo si studia con la colorazione di Ziehl-Neelsen (alcol-acido resistente)?",
+  "opzioni": {
+   "A": "Escherichia coli",
+   "B": "Staphylococcus aureus",
+   "C": "Streptococcus pyogenes",
+   "D": "Neisseria meningitidis",
+   "E": "Mycobacterium tuberculosis"
+  },
+  "giusta": "E",
+  "perche": "I micobatteri hanno una parete con abbondanti acidi micolici, lipidi a catena lunghissima che la rendono cerosa e poco permeabile: non si colorano bene con il Gram, ma una volta colorati con fucsina a caldo trattengono il colorante anche dopo decolorazione con alcol-acido. Questa parete spiega anche la resistenza a molti disinfettanti e la crescita lenta. Le altre opzioni sono batteri Gram-positivi o Gram-negativi tipici.",
+  "semplice": "Il bacillo della tubercolosi ha un «cappotto di cera» che non lascia entrare i coloranti normali. Bisogna scaldare il colorante per farlo penetrare, e poi non esce più nemmeno con l'acido.",
+  "passaggi": [
+   "Ricorda quale batterio ha acidi micolici: i micobatteri",
+   "Associa la colorazione di Ziehl-Neelsen",
+   "Escludi i Gram tipici (A-D)",
+   "Scegli E"
+  ],
+  "concetto": "Micobatteri e acido-resistenza"
+ },
+ {
+  "id": "NMED-140",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Struttura della cellula batterica",
+  "livello": "superiori",
+  "domanda": "Che cosa distingue un batterio da una cellula eucariotica animale?",
+  "opzioni": {
+   "A": "Il batterio ha ribosomi 80S",
+   "B": "Il batterio non ha nucleo né organuli delimitati da membrana e ha ribosomi 70S",
+   "C": "Il batterio ha mitocondri ma non ribosomi",
+   "D": "Il batterio ha più cromosomi lineari",
+   "E": "Il batterio non ha membrana plasmatica"
+  },
+  "giusta": "B",
+  "perche": "I batteri sono procarioti: niente nucleo, niente reticolo endoplasmatico, Golgi o mitocondri; il cromosoma è di solito unico e circolare e i ribosomi sono 70S (subunità 30S + 50S). Le cellule eucariotiche hanno nucleo, organuli e ribosomi 80S nel citoplasma. Queste differenze sono alla base dell'azione selettiva di molti antibiotici, per esempio quelli che bloccano i ribosomi 70S.",
+  "semplice": "La cellula batterica è come un monolocale: tutto in una sola stanza. La cellula animale è come un appartamento con tante stanze separate, una per ogni funzione.",
+  "passaggi": [
+   "Ricorda le caratteristiche dei procarioti",
+   "Nessun nucleo né organuli membranosi",
+   "Ribosomi 70S contro 80S",
+   "Escludi A, C, D, E",
+   "Scegli B"
+  ],
+  "concetto": "Procarioti ed eucarioti"
+ },
+ {
+  "id": "NMED-141",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Una coltura passa da 1 · 10³ a 1,024 · 10⁶ cellule/mL in 200 minuti di fase esponenziale. Qual è il tempo di generazione?",
+  "opzioni": {
+   "A": "10 minuti",
+   "B": "200 minuti",
+   "C": "40 minuti",
+   "D": "20 minuti",
+   "E": "1024 minuti"
+  },
+  "giusta": "D",
+  "perche": "In crescita esponenziale N = N₀ · 2ⁿ, dove n è il numero di generazioni. Il rapporto N/N₀ = 1,024 · 10⁶ / 10³ = 1024 = 2¹⁰, quindi n = 10. Il tempo di generazione è g = t / n = 200 min / 10 = 20 minuti. Chi risponde 40 minuti usa un numero di generazioni sbagliato.",
+  "semplice": "Ogni volta che passa un tempo di generazione i batteri raddoppiano. Per moltiplicarsi per 1024 servono 10 raddoppi; se ci vogliono 200 minuti, ogni raddoppio dura 20 minuti.",
+  "passaggi": [
+   "Rapporto: N/N₀ = 1,024 · 10⁶ / 10³ = 1024",
+   "1024 = 2¹⁰, quindi n = 10 generazioni",
+   "g = t / n = 200 / 10",
+   "Risultato: 20 minuti"
+  ],
+  "concetto": "Tempo di generazione"
+ },
+ {
+  "id": "NMED-142",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "In quale fase della curva di crescita batterica in coltura chiusa le cellule si adattano al nuovo terreno senza aumentare di numero?",
+  "opzioni": {
+   "A": "Fase esponenziale",
+   "B": "Fase stazionaria",
+   "C": "Fase di morte",
+   "D": "Fase di sporulazione",
+   "E": "Fase di latenza (lag)"
+  },
+  "giusta": "E",
+  "perche": "Nella fase di latenza i batteri, appena trasferiti, sintetizzano enzimi, ribosomi e altri componenti necessari al nuovo ambiente: il loro metabolismo è attivo ma il numero resta quasi costante. Segue la fase esponenziale, con divisioni a ritmo costante, poi quella stazionaria, quando nutrienti e accumulo di scarti bloccano la crescita netta, e infine la fase di morte.",
+  "semplice": "È come chi arriva in una cucina nuova: prima di cucinare deve trovare pentole e ingredienti. Per un po' non produce nulla, poi comincia a lavorare a pieno ritmo.",
+  "passaggi": [
+   "Ricorda le fasi: latenza, esponenziale, stazionaria, morte",
+   "Associa l'adattamento senza aumento di numero alla latenza",
+   "Escludi la stazionaria, dove il numero è alto ma costante per esaurimento",
+   "Scegli E"
+  ],
+  "concetto": "Curva di crescita batterica"
+ },
+ {
+  "id": "NMED-143",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Partendo da 100 cellule con tempo di generazione di 30 minuti, quante cellule ci sono dopo 3 ore di crescita esponenziale?",
+  "opzioni": {
+   "A": "6400",
+   "B": "600",
+   "C": "800",
+   "D": "3200",
+   "E": "12 800"
+  },
+  "giusta": "A",
+  "perche": "In 3 ore = 180 minuti si compiono 180 / 30 = 6 generazioni. Il numero finale è N = N₀ · 2ⁿ = 100 · 2⁶ = 100 · 64 = 6400. L'errore comune è moltiplicare 100 per 6 (600), come se la crescita fosse lineare, oppure contare una generazione in più o in meno.",
+  "semplice": "Ogni mezz'ora le cellule raddoppiano: 100, 200, 400, 800, 1600, 3200, 6400. Sei raddoppi in tre ore.",
+  "passaggi": [
+   "Tempo in minuti: 3 h = 180 min",
+   "Generazioni: 180 / 30 = 6",
+   "N = 100 · 2⁶ = 100 · 64",
+   "Risultato: 6400 cellule"
+  ],
+  "concetto": "Crescita esponenziale"
+ },
+ {
+  "id": "NMED-144",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Come si definisce un batterio che cresce sia in presenza sia in assenza di ossigeno, usando la respirazione quando c'è O₂ e la fermentazione quando manca?",
+  "opzioni": {
+   "A": "Aerobio obbligato",
+   "B": "Anaerobio facoltativo",
+   "C": "Anaerobio obbligato",
+   "D": "Microaerofilo",
+   "E": "Aerotollerante"
+  },
+  "giusta": "B",
+  "perche": "Gli anaerobi facoltativi, come E. coli e gli stafilococchi, preferiscono la respirazione aerobia, che rende più ATP, ma senza ossigeno passano alla fermentazione o alla respirazione anaerobia. In un terreno liquido crescono soprattutto in superficie ma anche in profondità. Gli aerotolleranti tollerano l'ossigeno ma non lo usano mai, e fermentano sempre.",
+  "semplice": "Un anaerobio facoltativo è come un'auto ibrida: usa il motore più efficiente (ossigeno) quando può, e passa a quello di riserva (fermentazione) quando l'ossigeno manca.",
+  "passaggi": [
+   "Riconosci la crescita con e senza O₂",
+   "Distingui chi usa l'O₂ quando c'è da chi lo ignora",
+   "Uso dell'O₂ quando disponibile: anaerobio facoltativo",
+   "Escludi E: gli aerotolleranti non lo usano",
+   "Scegli B"
+  ],
+  "concetto": "Rapporti con l'ossigeno"
+ },
+ {
+  "id": "NMED-145",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Perché molti anaerobi obbligati muoiono in presenza di ossigeno?",
+  "opzioni": {
+   "A": "Perché l'ossigeno blocca la sintesi del peptidoglicano",
+   "B": "Perché l'ossigeno abbassa il pH",
+   "C": "Perché mancano di enzimi come catalasi e superossido dismutasi e non eliminano le specie reattive dell'ossigeno",
+   "D": "Perché l'ossigeno li fa sporulare",
+   "E": "Perché respirano solo nitrati"
+  },
+  "giusta": "C",
+  "perche": "Il metabolismo in presenza di O₂ genera radicale superossido e perossido di idrogeno, molto tossici. Gli aerobi li neutralizzano con superossido dismutasi, catalasi o perossidasi; molti anaerobi obbligati, come Clostridium, non hanno questi enzimi e vengono danneggiati. Per questo si coltivano in giare o camere senza ossigeno.",
+  "semplice": "L'ossigeno, usato nel metabolismo, lascia degli «scarti» corrosivi. I batteri aerobi hanno gli strumenti per pulirli; gli anaerobi obbligati no, e ne vengono avvelenati.",
+  "passaggi": [
+   "Ricorda che l'O₂ produce specie reattive",
+   "Ricorda gli enzimi difensivi: SOD e catalasi",
+   "Gli anaerobi obbligati ne sono privi o carenti",
+   "Scegli C"
+  ],
+  "concetto": "Tossicità dell'ossigeno per gli anaerobi"
+ },
+ {
+  "id": "NMED-146",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Durante la fermentazione lattica, qual è il ruolo della trasformazione del piruvato in lattato?",
+  "opzioni": {
+   "A": "Produrre altre due molecole di ATP",
+   "B": "Fissare la CO₂",
+   "C": "Produrre ossigeno",
+   "D": "Formare il gradiente protonico",
+   "E": "Rigenerare NAD⁺ per permettere alla glicolisi di continuare"
+  },
+  "giusta": "E",
+  "perche": "La glicolisi produce 2 ATP e riduce 2 NAD⁺ a NADH. Senza ossigeno (o una catena respiratoria) il NADH non può essere riossidato e la glicolisi si fermerebbe; la lattato deidrogenasi usa il NADH per ridurre il piruvato a lattato, rigenerando NAD⁺. La reazione non produce ATP: tutto l'ATP della fermentazione viene dalla glicolisi.",
+  "semplice": "Il NAD⁺ è come un carrello che porta via gli elettroni: se i carrelli si riempiono e nessuno li svuota, la catena di montaggio si ferma. Trasformare il piruvato in lattato svuota i carrelli.",
+  "passaggi": [
+   "Ricorda il bilancio della glicolisi: 2 ATP, 2 NADH",
+   "Senza respirazione il NADH si accumula",
+   "La riduzione del piruvato riossida il NADH",
+   "Escludi A: nessun ATP in più",
+   "Scegli E"
+  ],
+  "concetto": "Fermentazione e rigenerazione del NAD⁺"
+ },
+ {
+  "id": "NMED-147",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Quale tipo di terreno permette di distinguere i batteri che fermentano il lattosio da quelli che non lo fanno, grazie a un indicatore di pH, inibendo anche i Gram-positivi?",
+  "opzioni": {
+   "A": "Agar sangue",
+   "B": "Terreno di arricchimento non selettivo",
+   "C": "Agar MacConkey",
+   "D": "Agar cioccolato",
+   "E": "Terreno di Löwenstein-Jensen"
+  },
+  "giusta": "C",
+  "perche": "L'agar MacConkey contiene sali biliari e cristalvioletto, che inibiscono i Gram-positivi (terreno selettivo), e lattosio con rosso neutro, che vira al rosa quando la fermentazione acidifica il terreno (terreno differenziale): E. coli forma colonie rosa, Salmonella e Shigella incolori. L'agar sangue evidenzia l'emolisi, l'agar cioccolato serve a germi esigenti come Haemophilus e il Löwenstein-Jensen ai micobatteri.",
+  "semplice": "Il MacConkey fa due lavori: fa da «buttafuori» per i Gram-positivi e colora di rosa chi mangia il lattosio. Così con un solo sguardo si separano gruppi diversi di batteri intestinali.",
+  "passaggi": [
+   "Riconosci le richieste: selettivo per Gram-negativi e differenziale per il lattosio",
+   "Ricorda i componenti del MacConkey",
+   "Escludi A e D, non selettivi per Gram-negativi",
+   "Escludi E, per i micobatteri",
+   "Scegli C"
+  ],
+  "concetto": "Terreni selettivi e differenziali"
+ },
+ {
+  "id": "NMED-148",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Un batterio che ricava energia ossidando composti inorganici (per es. ammoniaca) e carbonio dalla CO₂ come si classifica?",
+  "opzioni": {
+   "A": "Chemiolitoautotrofo",
+   "B": "Fotoautotrofo",
+   "C": "Chemioorganoeterotrofo",
+   "D": "Fotoeterotrofo",
+   "E": "Parassita obbligato"
+  },
+  "giusta": "A",
+  "perche": "La classificazione combina fonte di energia (luce = foto, sostanze chimiche = chemio), donatore di elettroni (inorganico = lito, organico = organo) e fonte di carbonio (CO₂ = autotrofo, composti organici = eterotrofo). Ossidare ammoniaca per ottenere energia e fissare la CO₂ significa essere chemiolitoautotrofo, come i batteri nitrificanti. I patogeni umani sono quasi tutti chemioorganoeterotrofi.",
+  "semplice": "Questi batteri «mangiano» sostanze minerali come l'ammoniaca per avere energia e costruiscono il proprio corpo con l'anidride carbonica dell'aria. Non hanno bisogno né di luce né di cibo organico.",
+  "passaggi": [
+   "Energia da reazioni chimiche: chemio-",
+   "Donatore di elettroni inorganico: -lito-",
+   "Carbonio da CO₂: -autotrofo",
+   "Combina: chemiolitoautotrofo",
+   "Scegli A"
+  ],
+  "concetto": "Classificazione metabolica dei batteri"
+ },
+ {
+  "id": "NMED-149",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Perché nella fase stazionaria i batteri sono spesso meno sensibili agli antibiotici β-lattamici?",
+  "opzioni": {
+   "A": "Perché nella fase stazionaria la parete scompare",
+   "B": "Perché i batteri diventano Gram-negativi",
+   "C": "Perché l'antibiotico viene degradato dalla luce",
+   "D": "Perché i β-lattamici agiscono su cellule che sintetizzano attivamente peptidoglicano, e in fase stazionaria la crescita è ferma",
+   "E": "Perché i batteri sono tutti morti"
+  },
+  "giusta": "D",
+  "perche": "I β-lattamici inibiscono le PBP durante la costruzione del peptidoglicano: uccidono soprattutto cellule che crescono e si dividono, nelle quali la parete viene continuamente rimodellata. In fase stazionaria (e nei biofilm o nelle cellule «persister») la sintesi della parete è quasi ferma e l'antibiotico ha poco effetto, pur senza veri geni di resistenza. Questo fenomeno si chiama tolleranza.",
+  "semplice": "La penicillina colpisce i muratori mentre costruiscono il muro. Se i lavori sono fermi, non c'è niente da sabotare e i batteri sopravvivono anche se non sono «resistenti».",
+  "passaggi": [
+   "Ricorda il meccanismo dei β-lattamici: sintesi della parete",
+   "Ricorda che agiscono su cellule in crescita",
+   "In fase stazionaria la crescita è ferma",
+   "Riconosci il concetto di tolleranza",
+   "Scegli D"
+  ],
+  "concetto": "Tolleranza agli antibiotici in fase stazionaria"
+ },
+ {
+  "id": "NMED-150",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Crescita e metabolismo batterico",
+  "livello": "università",
+  "domanda": "Un campione viene diluito 1:10⁴ e 0,1 mL della diluizione vengono seminati su piastra; dopo incubazione si contano 85 colonie. Qual è la concentrazione nel campione originale?",
+  "opzioni": {
+   "A": "8,5 · 10⁴ UFC/mL",
+   "B": "8,5 · 10⁶ UFC/mL",
+   "C": "8,5 · 10⁵ UFC/mL",
+   "D": "85 UFC/mL",
+   "E": "8,5 · 10³ UFC/mL"
+  },
+  "giusta": "B",
+  "perche": "Le 85 colonie derivano da 0,1 mL della diluizione, quindi la diluizione contiene 850 UFC/mL. Il campione originale è 10⁴ volte più concentrato: 850 · 10⁴ = 8,5 · 10⁶ UFC/mL. Dimenticare il volume seminato (0,1 mL) porta a 8,5 · 10⁵, l'errore più frequente.",
+  "semplice": "Prima calcoli quanti batteri ci sono in un millilitro della provetta diluita, poi moltiplichi per quante volte l'hai diluita. Le colonie su piastra sono come persone contate in un piccolo campione di folla.",
+  "passaggi": [
+   "Colonie per mL di diluizione: 85 / 0,1 = 850 UFC/mL",
+   "Fattore di diluizione: 10⁴",
+   "Originale: 850 · 10⁴ = 8,5 · 10⁶",
+   "Risultato: 8,5 · 10⁶ UFC/mL"
+  ],
+  "concetto": "Conta delle colonie e diluizioni"
+ },
+ {
+  "id": "NMED-151",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Quale meccanismo di trasferimento genico richiede un batteriofago come veicolo del DNA batterico?",
+  "opzioni": {
+   "A": "Trasformazione",
+   "B": "Trasduzione",
+   "C": "Coniugazione",
+   "D": "Trasposizione",
+   "E": "Mutazione puntiforme"
+  },
+  "giusta": "B",
+  "perche": "Nella trasduzione un fago, durante l'assemblaggio, impacchetta per errore frammenti di DNA della cellula ospite (trasduzione generalizzata) o geni vicini al sito di integrazione del profago (trasduzione specializzata) e li inietta in un nuovo batterio. Nella trasformazione il batterio capta DNA libero dall'ambiente; nella coniugazione il DNA passa per contatto diretto attraverso un pilo sessuale.",
+  "semplice": "Il fago fa da corriere che per sbaglio porta un pacco destinato a un altro: invece del proprio DNA consegna un pezzo del batterio precedente al batterio successivo.",
+  "passaggi": [
+   "Elenca i tre meccanismi: trasformazione, trasduzione, coniugazione",
+   "Associa ciascuno al veicolo: DNA libero, fago, contatto",
+   "Il fago è il veicolo della trasduzione",
+   "Escludi D ed E, che non trasferiscono DNA tra cellule",
+   "Scegli B"
+  ],
+  "concetto": "Trasduzione"
+ },
+ {
+  "id": "NMED-152",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Nella coniugazione batterica, che cosa trasferisce un ceppo F⁺ a un ceppo F⁻?",
+  "opzioni": {
+   "A": "Una copia del plasmide F, e il ricevente diventa F⁺",
+   "B": "L'intero cromosoma batterico",
+   "C": "Il plasmide F, che lascia il donatore che diventa F⁻",
+   "D": "Solo proteine del pilo",
+   "E": "Un batteriofago"
+  },
+  "giusta": "A",
+  "perche": "Il plasmide F codifica il pilo sessuale e gli enzimi del trasferimento. Durante la coniugazione un filamento del plasmide viene tagliato all'origine di trasferimento e trasferito, mentre in entrambe le cellule viene sintetizzato il filamento complementare (replicazione a cerchio rotante): alla fine entrambe le cellule hanno il plasmide e sono F⁺. Il trasferimento di geni cromosomici avviene invece nei ceppi Hfr, nei quali F è integrato nel cromosoma.",
+  "semplice": "Il donatore non regala il suo plasmide: ne fa una fotocopia e la passa al vicino. Alla fine tutti e due hanno la stessa copia.",
+  "passaggi": [
+   "Ricorda il ruolo del plasmide F",
+   "Ricorda la replicazione a cerchio rotante durante il trasferimento",
+   "Il donatore conserva la sua copia",
+   "Il ricevente diventa F⁺",
+   "Scegli A"
+  ],
+  "concetto": "Coniugazione F⁺ × F⁻"
+ },
+ {
+  "id": "NMED-153",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Nell'operone lac di E. coli, che cosa accade in presenza di lattosio e assenza di glucosio?",
+  "opzioni": {
+   "A": "Il repressore resta legato all'operatore e la trascrizione è bloccata",
+   "B": "La trascrizione è bassa perché il cAMP è basso",
+   "C": "Il lattosio si lega direttamente alla RNA polimerasi",
+   "D": "L'allolattosio inattiva il repressore e il complesso CAP-cAMP attiva fortemente la trascrizione",
+   "E": "L'operone viene eliminato dal cromosoma"
+  },
+  "giusta": "D",
+  "perche": "Il lattosio viene in parte convertito in allolattosio, che si lega al repressore LacI e lo stacca dall'operatore. In assenza di glucosio i livelli di cAMP sono alti e il complesso CAP-cAMP si lega vicino al promotore, favorendo il legame della RNA polimerasi: la trascrizione dei geni lacZ, lacY e lacA è massima. Con glucosio presente il cAMP è basso e, anche senza repressore, la trascrizione è modesta (repressione da catabolita).",
+  "semplice": "L'operone lac si accende solo quando conviene: c'è lattosio da usare (il repressore se ne va) e manca il glucosio, cibo preferito (CAP dà la spinta in più).",
+  "passaggi": [
+   "Considera il lattosio: allolattosio stacca il repressore",
+   "Considera il glucosio assente: cAMP alto",
+   "CAP-cAMP attiva il promotore",
+   "Risultato: trascrizione massima",
+   "Scegli D"
+  ],
+  "concetto": "Regolazione dell'operone lac"
+ },
+ {
+  "id": "NMED-154",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Che cos'è un trasposone?",
+  "opzioni": {
+   "A": "Un plasmide circolare che si replica autonomamente",
+   "B": "Un fago che uccide sempre il batterio",
+   "C": "Un segmento di DNA che può spostarsi da una posizione all'altra del genoma grazie a una trasposasi",
+   "D": "Un enzima che taglia siti palindromici",
+   "E": "Un ribosoma specializzato"
+  },
+  "giusta": "C",
+  "perche": "I trasposoni sono elementi genetici mobili delimitati da sequenze ripetute invertite e che codificano una trasposasi, l'enzima che li taglia e li inserisce in un nuovo sito, sul cromosoma o su un plasmide. Non si replicano autonomamente come i plasmidi. Molti trasportano geni di resistenza agli antibiotici e contribuiscono a spostarli tra plasmidi e cromosoma.",
+  "semplice": "Un trasposone è un «gene che salta»: può staccarsi da un punto del DNA e incollarsi in un altro, e a volte porta con sé un gene di resistenza come bagaglio.",
+  "passaggi": [
+   "Ricorda le caratteristiche: elemento mobile con trasposasi",
+   "Distingui dal plasmide, che si replica da solo",
+   "Collega ai geni di resistenza trasportati",
+   "Scegli C"
+  ],
+  "concetto": "Trasposoni"
+ },
+ {
+  "id": "NMED-155",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Nel test di fluttuazione di Luria e Delbrück, il numero di batteri resistenti al fago variava moltissimo tra colture parallele. Che cosa dimostrò questo risultato?",
+  "opzioni": {
+   "A": "Che il fago induce la resistenza al momento del contatto",
+   "B": "Che i batteri non mutano mai",
+   "C": "Che la resistenza si trasmette per trasformazione",
+   "D": "Che la resistenza si eredita solo per coniugazione",
+   "E": "Che le mutazioni insorgono spontaneamente e a caso prima dell'esposizione all'agente selettivo"
+  },
+  "giusta": "E",
+  "perche": "Se la resistenza fosse indotta dal fago, ogni coltura avrebbe circa lo stesso numero di resistenti. Invece alcune colture ne avevano moltissimi (mutazione avvenuta presto, poi moltiplicata) e altre quasi nessuno: la distribuzione indicava mutazioni casuali avvenute durante la crescita, prima del contatto con il fago. L'agente selettivo non crea le mutazioni, le seleziona.",
+  "semplice": "L'antibiotico o il fago non «insegnano» ai batteri a resistere: fanno solo da setaccio, lasciando vivi quelli che per caso erano già cambiati.",
+  "passaggi": [
+   "Considera le due ipotesi: mutazione indotta o spontanea",
+   "L'induzione darebbe numeri simili in ogni coltura",
+   "La grande variabilità indica mutazioni casuali precedenti",
+   "Scegli E"
+  ],
+  "concetto": "Mutazioni spontanee e selezione"
+ },
+ {
+  "id": "NMED-156",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Che cosa caratterizza il ciclo lisogeno di un batteriofago temperato?",
+  "opzioni": {
+   "A": "Il fago distrugge subito la cellula producendo centinaia di virioni",
+   "B": "Il fago perde il suo DNA",
+   "C": "Il batterio diventa resistente a tutti gli antibiotici",
+   "D": "Il genoma del fago si integra nel cromosoma (profago) e viene replicato con esso finché non viene indotto",
+   "E": "Il fago si replica nel nucleo del batterio"
+  },
+  "giusta": "D",
+  "perche": "Nel ciclo lisogeno il DNA del fago temperato (per es. lambda) si integra nel cromosoma batterico e resta silente come profago, trasmesso alle cellule figlie a ogni divisione. Stress come i danni al DNA possono indurlo a uscire e avviare il ciclo litico. Alcuni profagi portano geni di tossine (conversione lisogenica), come la tossina difterica e quella colerica. I batteri non hanno nucleo.",
+  "semplice": "Nel ciclo lisogeno il fago si «nasconde» nel DNA del batterio come un passeggero clandestino, e viaggia con lui generazione dopo generazione. Solo in caso di pericolo esce e distrugge la cellula.",
+  "passaggi": [
+   "Distingui ciclo litico e lisogeno",
+   "Ricorda l'integrazione come profago",
+   "Il profago si replica con il cromosoma",
+   "Escludi A, che descrive il ciclo litico",
+   "Scegli D"
+  ],
+  "concetto": "Ciclo lisogeno e profago"
+ },
+ {
+  "id": "NMED-157",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Perché Corynebacterium diphtheriae causa la difteria solo se è lisogenizzato da un particolare fago?",
+  "opzioni": {
+   "A": "Perché il fago distrugge le difese dell'ospite",
+   "B": "Perché il gene della tossina difterica è portato dal fago (conversione lisogenica)",
+   "C": "Perché il fago rende il batterio Gram-negativo",
+   "D": "Perché il fago fornisce la capsula",
+   "E": "Perché il fago aumenta la velocità di crescita"
+  },
+  "giusta": "B",
+  "perche": "Il gene tox, che codifica la tossina difterica, si trova nel genoma del fago β: solo i ceppi che lo portano come profago producono la tossina e causano la malattia. Questo fenomeno, in cui un profago cambia le proprietà del batterio, si chiama conversione lisogenica. Lo stesso accade per la tossina colerica (fago CTXφ) e per alcune tossine Shiga.",
+  "semplice": "Il batterio della difteria è innocuo finché non «ospita» un virus che gli porta l'istruzione per fabbricare il veleno. Il virus è il vero portatore dell'arma.",
+  "passaggi": [
+   "Ricorda dove si trova il gene della tossina difterica",
+   "È nel genoma del fago β",
+   "Solo i ceppi lisogenizzati la producono",
+   "Riconosci la conversione lisogenica",
+   "Scegli B"
+  ],
+  "concetto": "Conversione lisogenica"
+ },
+ {
+  "id": "NMED-158",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Che cos'è la competenza nella trasformazione batterica?",
+  "opzioni": {
+   "A": "La capacità di produrre un pilo sessuale",
+   "B": "La capacità di resistere ai fagi",
+   "C": "La capacità di integrare un profago",
+   "D": "La capacità di un plasmide di replicarsi",
+   "E": "Lo stato fisiologico in cui un batterio può captare DNA libero dall'ambiente"
+  },
+  "giusta": "E",
+  "perche": "Alcuni batteri, come Streptococcus pneumoniae, Haemophilus e Neisseria, diventano naturalmente competenti in certe fasi di crescita, esprimendo proteine che legano e trasportano DNA all'interno; il DNA può poi ricombinarsi nel cromosoma. In laboratorio E. coli si rende competente artificialmente con cloruro di calcio e shock termico o con elettroporazione. È il fenomeno alla base dell'esperimento di Griffith.",
+  "semplice": "Un batterio competente è come una persona con la porta aperta: raccoglie pezzi di DNA lasciati da altri batteri morti e li può usare.",
+  "passaggi": [
+   "Ricorda che la trasformazione usa DNA libero",
+   "La competenza è la capacità di captarlo",
+   "Può essere naturale o indotta in laboratorio",
+   "Escludi A, che riguarda la coniugazione",
+   "Scegli E"
+  ],
+  "concetto": "Competenza e trasformazione"
+ },
+ {
+  "id": "NMED-159",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "In un incrocio interrotto con un ceppo Hfr, i geni compaiono nei riceventi in un ordine e a tempi caratteristici. Perché?",
+  "opzioni": {
+   "A": "Perché il cromosoma viene trasferito linearmente a partire dall'origine di trasferimento, e il trasferimento può essere interrotto",
+   "B": "Perché i geni più grandi passano prima",
+   "C": "Perché i geni passano tutti insieme ma si esprimono in tempi diversi",
+   "D": "Perché i fagi trasportano i geni uno alla volta",
+   "E": "Perché il ricevente sceglie i geni da accettare"
+  },
+  "giusta": "A",
+  "perche": "Nel ceppo Hfr il plasmide F è integrato nel cromosoma; durante la coniugazione il trasferimento parte dall'origine di F e il cromosoma entra nel ricevente come un filo che si srotola, gene dopo gene. Interrompendo la coniugazione a tempi diversi (agitando la coltura) si vede quali geni sono già entrati: l'ordine e i minuti di ingresso danno una mappa del cromosoma. Il trasferimento completo è raro perché la coppia si stacca prima.",
+  "semplice": "È come tirare un lungo spaghetto attraverso una cannuccia: entra un pezzo dopo l'altro, sempre nello stesso ordine. Se lo spezzi presto, è passato solo l'inizio.",
+  "passaggi": [
+   "Ricorda che in Hfr F è integrato nel cromosoma",
+   "Il trasferimento inizia all'origine e procede in una direzione",
+   "L'interruzione a tempi diversi rivela l'ordine dei geni",
+   "Scegli A"
+  ],
+  "concetto": "Mappatura con ceppi Hfr"
+ },
+ {
+  "id": "NMED-160",
+  "materia": "Microbiologia e immunologia",
+  "argomento": "Genetica batterica",
+  "livello": "università",
+  "domanda": "Quale sistema batterico agisce come difesa adattativa contro i fagi, conservando nel genoma frammenti dei fagi già incontrati?",
+  "opzioni": {
+   "A": "Il sistema di restrizione-modificazione",
+   "B": "Il plasmide F",
+   "C": "Il sistema CRISPR-Cas",
+   "D": "L'operone lac",
+   "E": "Il sistema SOS"
+  },
+  "giusta": "C",
+  "perche": "Nel sistema CRISPR-Cas i batteri inseriscono brevi frammenti del DNA dei fagi (spaziatori) tra ripetizioni del locus CRISPR; trascritti in piccoli RNA, guidano le nucleasi Cas a tagliare il DNA dello stesso fago in caso di nuova infezione. È quindi una memoria ereditabile. Il sistema di restrizione-modificazione è anch'esso una difesa, ma innata: riconosce siti fissi senza memoria delle infezioni.",
+  "semplice": "CRISPR è come un album di foto segnaletiche: il batterio conserva un pezzo di ogni virus incontrato e, se il virus torna, lo riconosce e lo distrugge.",
+  "passaggi": [
+   "Riconosci il concetto di memoria delle infezioni",
+   "Ricorda gli spaziatori del locus CRISPR",
+   "Distingui dalla restrizione-modificazione, senza memoria",
+   "Scegli C"
+  ],
+  "concetto": "CRISPR-Cas come immunità batterica"
+ }
+]

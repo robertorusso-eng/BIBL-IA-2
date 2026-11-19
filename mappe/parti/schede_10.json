@@ -1,0 +1,871 @@
+{
+ "vaso sanguigno lesionato": {
+  "tipo": "struttura",
+  "base": "Un vaso del sangue che si è rotto, per esempio quando ci si taglia un dito.",
+  "superiore": "Vaso con la parete danneggiata: il sangue esce e il sottoendotelio (collagene, fattore tissutale) viene a contatto con il sangue. È lo stimolo che fa partire l'emostasi.",
+  "universita": "L'endotelio sano è antitrombotico: produce NO e prostaciclina (frenano le piastrine), trombomodulina ed eparan solfato (favoriscono proteina C e antitrombina) e tPA. La lesione toglie questi freni ed espone sostanze procoagulanti.",
+  "clinica": ""
+ },
+ "collagene sottoendoteliale": {
+  "tipo": "molecola",
+  "base": "Le fibre che stanno sotto il rivestimento interno dei vasi: quando restano scoperte, le piastrine ci si attaccano.",
+  "superiore": "Proteina fibrosa della parete del vaso, sotto l'endotelio. Normalmente non tocca il sangue; quando è esposta, attiva le piastrine.",
+  "universita": "Collagene di tipo I e III della parete e di tipo IV della membrana basale. Le piastrine lo legano direttamente con la GPVI e l'integrina α2β1 e, quando il flusso è veloce, tramite il fattore di von Willebrand legato alla GPIb.",
+  "clinica": "Nella sindrome di Ehlers-Danlos il collagene è difettoso: lividi facili e sanguinamenti nonostante coagulazione normale."
+ },
+ "spasmo vascolare": {
+  "tipo": "struttura",
+  "base": "Il vaso rotto si stringe da solo, così esce meno sangue.",
+  "superiore": "Prima risposta alla lesione: contrazione del muscolo liscio della parete del vaso. Dura da pochi minuti a qualche ora e riduce la perdita di sangue.",
+  "universita": "Dovuto a un riflesso nervoso locale, alla risposta miogena del muscolo danneggiato e a sostanze vasocostrittrici: trombossano A₂ delle piastrine (importante nei vasi piccoli), endotelina e serotonina. Più il vaso è schiacciato o strappato, più lo spasmo è forte.",
+  "clinica": ""
+ },
+ "piastrine": {
+  "tipo": "struttura",
+  "base": "Piccolissimi pezzetti di cellula nel sangue che corrono a tappare i buchi dei vasi.",
+  "superiore": "Frammenti di citoplasma senza nucleo che si staccano dai megacariociti del midollo osseo. Formano il tappo piastrinico e offrono la superficie su cui lavorano i fattori della coagulazione. Valori normali circa 150.000-400.000 per µL.",
+  "universita": "Vivono circa 8-10 giorni; la milza ne trattiene circa un terzo. Contengono granuli α (fibrinogeno, fattore di von Willebrand, fattore V, PF4) e granuli densi (ADP, serotonina, Ca²⁺). Recettori principali: GPIb (vWF), GPVI (collagene), P2Y12 (ADP), PAR-1 (trombina), GPIIb/IIIa (fibrinogeno). Producono trombossano A₂ con la COX-1.",
+  "clinica": "Piastrinopenia: sanguinamenti di cute e mucose (petecchie, epistassi), rischio di emorragie spontanee quando sono molto basse. Cause: porpora trombocitopenica immune, leucemie, chemioterapia, CID, eparina (HIT)."
+ },
+ "piastrine attivate": {
+  "tipo": "struttura",
+  "base": "Piastrine «sveglie»: cambiano forma, diventano appiccicose e chiamano altre piastrine.",
+  "superiore": "Piastrine che, a contatto con collagene o trombina, cambiano forma (emettono prolungamenti), liberano il contenuto dei granuli e diventano adesive.",
+  "universita": "Con l'attivazione la fosfatidilserina passa sul lato esterno della membrana: su questa superficie carica negativa, con il Ca²⁺, si montano tenasi e protrombinasi. La GPIIb/IIIa cambia conformazione e lega il fibrinogeno (segnale «inside-out»).",
+  "clinica": "Bersaglio degli antiaggreganti: aspirina (COX-1), clopidogrel, prasugrel e ticagrelor (P2Y12), inibitori della GPIIb/IIIa. Doppia antiaggregazione dopo uno stent coronarico."
+ },
+ "fattore di von Willebrand": {
+  "tipo": "molecola",
+  "base": "Una «colla» del sangue che attacca le piastrine alla parete rotta del vaso.",
+  "superiore": "Grande proteina prodotta dall'endotelio e dai megacariociti. Fa da ponte tra il collagene e le piastrine (adesione) e trasporta e protegge il fattore VIII.",
+  "universita": "Multimero conservato nei corpi di Weibel-Palade dell'endotelio e nei granuli α. Lega il recettore GPIb-IX-V delle piastrine, soprattutto quando il flusso è veloce (arteriole). La metalloproteasi ADAMTS13 taglia i multimeri troppo grandi.",
+  "clinica": "Malattia di von Willebrand: il disturbo emorragico ereditario più frequente (epistassi, mestruazioni abbondanti, sanguinamento dopo estrazioni); si cura con desmopressina o concentrati. Deficit di ADAMTS13: porpora trombotica trombocitopenica (PTT)."
+ },
+ "trombossano A₂ (TXA₂)": {
+  "tipo": "molecola",
+  "base": "Un segnale che le piastrine liberano per chiamare altre piastrine e far stringere il vaso.",
+  "superiore": "Eicosanoide prodotto dalle piastrine attivate a partire dall'acido arachidonico. Fa aggregare le piastrine e contrarre i vasi.",
+  "universita": "Sintesi: acido arachidonico → COX-1 → PGH₂ → trombossano sintasi → TXA₂. Molto instabile (emivita di secondi), agisce vicino al punto di produzione tramite il recettore TP (Gq). Il suo opposto è la prostaciclina (PGI₂) dell'endotelio.",
+  "clinica": "L'aspirina a basse dosi acetila in modo irreversibile la COX-1 delle piastrine: non avendo nucleo, la piastrina non può rifarla e l'effetto dura tutta la sua vita (circa 7-10 giorni)."
+ },
+ "tappo piastrinico": {
+  "tipo": "struttura",
+  "base": "Un mucchietto di piastrine attaccate tra loro che chiude il buco del vaso, come un tappo.",
+  "superiore": "Aggregato di piastrine che si forma in pochi minuti nel punto della lesione: è il risultato dell'emostasi primaria. Basta per i buchi piccolissimi, ma è fragile finché non viene rinforzato dalla fibrina.",
+  "universita": "Si forma per adesione (vWF-GPIb, collagene-GPVI), attivazione (ADP, TXA₂, trombina) e aggregazione (fibrinogeno tra le GPIIb/IIIa). La sua superficie ricca di fosfatidilserina ospita la coagulazione.",
+  "clinica": "Difetti dell'emostasi primaria (piastrine poche o che non funzionano, malattia di von Willebrand) danno sanguinamenti di cute e mucose; i difetti dei fattori della coagulazione danno sanguinamenti profondi (articolazioni, muscoli)."
+ },
+ "glicoproteina IIb/IIIa": {
+  "tipo": "molecola",
+  "base": "Le «mani» delle piastrine, che si aggrappano tra loro tramite il fibrinogeno.",
+  "superiore": "Recettore della membrana delle piastrine che, quando la piastrina è attivata, lega il fibrinogeno: una molecola di fibrinogeno unisce due piastrine (aggregazione).",
+  "universita": "Integrina αIIbβ3, il recettore più abbondante sulla piastrina. A riposo è inattiva; l'attivazione cambia la sua forma e la rende capace di legare fibrinogeno e vWF. È la via finale comune dell'aggregazione.",
+  "clinica": "Trombastenia di Glanzmann: GPIIb/IIIa assente, piastrine normali di numero ma che non aggregano. Inibitori (abciximab, eptifibatide, tirofiban) usati in alcune sindromi coronariche acute."
+ },
+ "fibrinogeno": {
+  "tipo": "molecola",
+  "base": "Una proteina sciolta nel sangue che, quando serve, diventa i fili che tengono insieme il coagulo.",
+  "superiore": "Fattore I della coagulazione: grande proteina solubile del plasma prodotta dal fegato. La trombina la trasforma in fibrina; unisce anche le piastrine tra loro. Valori normali circa 200-400 mg/dL.",
+  "universita": "Dimero di tre catene (Aα, Bβ, γ). La trombina stacca i fibrinopeptidi A e B e i monomeri di fibrina polimerizzano. È una proteina della fase acuta: aumenta nelle infiammazioni.",
+  "clinica": "Basso nella coagulazione intravascolare disseminata (CID), nelle gravi malattie del fegato e nelle emorragie massive (si reintegra con crioprecipitato o concentrato). La differenza tra plasma e siero è proprio il fibrinogeno consumato nel coagulo."
+ },
+ "fattore tissutale": {
+  "tipo": "molecola",
+  "base": "Una sostanza che sta fuori dai vasi e che, quando il vaso si rompe, dà il «via» alla coagulazione.",
+  "superiore": "Fattore III: proteina della membrana delle cellule che stanno attorno ai vasi. Normalmente non tocca il sangue; quando viene esposto lega il fattore VII e avvia la coagulazione (via estrinseca).",
+  "universita": "Glicoproteina transmembrana espressa da fibroblasti, cellule muscolari lisce, cellule del cervello e del polmone; monociti ed endotelio la esprimono in caso di infiammazione e sepsi. Il complesso fattore tissutale-VIIa attiva X e IX; lo frena il TFPI.",
+  "clinica": "Il tempo di protrombina (PT, espresso come INR) misura la via che parte dal fattore tissutale. Nella sepsi l'espressione di fattore tissutale da parte dei monociti contribuisce alla CID."
+ },
+ "fattore VIIa": {
+  "tipo": "enzima",
+  "base": "L'aiutante che riceve per primo il segnale dalla ferita e accende la catena.",
+  "superiore": "Fattore VII attivato: enzima della coagulazione prodotto dal fegato, dipendente dalla vitamina K. Insieme al fattore tissutale attiva il fattore X e il fattore IX.",
+  "universita": "Serin-proteasi. Una piccola quota circola già attiva, ma lavora solo legata al fattore tissutale. Ha l'emivita più breve tra i fattori vitamina K-dipendenti (poche ore): per questo con il warfarin il PT si allunga per primo.",
+  "clinica": "Il fattore VII attivato ricombinante si usa nell'emofilia con inibitori e nel deficit congenito di fattore VII."
+ },
+ "fattore X": {
+  "tipo": "molecola",
+  "base": "Un aiutante della coagulazione che aspetta di essere acceso.",
+  "superiore": "Fattore della coagulazione prodotto dal fegato, dipendente dalla vitamina K. Viene attivato (fattore Xa) sia dal complesso fattore tissutale-VIIa sia dalla tenasi intrinseca: è il punto dove le due vie si incontrano.",
+  "universita": "Zimogeno di una serin-proteasi. I residui di acido γ-carbossiglutammico (Gla) gli permettono di legare il Ca²⁺ e le membrane con fosfatidilserina.",
+  "clinica": "Deficit raro (ereditario o nell'amiloidosi). Il suo livello cala con il warfarin."
+ },
+ "fattore Xa": {
+  "tipo": "enzima",
+  "base": "L'aiutante della coagulazione che prepara la trombina.",
+  "superiore": "Fattore X attivato: enzima che, insieme al cofattore Va, al Ca²⁺ e ai fosfolipidi delle piastrine, trasforma la protrombina in trombina.",
+  "universita": "Serin-proteasi; nel complesso protrombinasi la sua efficienza aumenta enormemente rispetto all'enzima libero. È inibito dall'antitrombina (molto di più in presenza di eparina) e dal TFPI.",
+  "clinica": "Bersaglio di molti anticoagulanti: inibitori diretti orali (rivaroxaban, apixaban, edoxaban), eparine a basso peso molecolare e fondaparinux (tramite l'antitrombina). L'attività anti-Xa si usa per monitorare le eparine a basso peso molecolare."
+ },
+ "protrombinasi (Xa-Va)": {
+  "tipo": "enzima",
+  "base": "La «squadra» che fabbrica la trombina, montata sulla superficie delle piastrine.",
+  "superiore": "Complesso formato da fattore Xa (enzima) e fattore Va (cofattore), con Ca²⁺, sulla membrana delle piastrine attivate. Trasforma la protrombina in trombina.",
+  "universita": "Il fattore Va avvicina substrato ed enzima; il complesso è molte migliaia di volte più veloce del fattore Xa da solo. La proteina C attivata (con la proteina S) inattiva il fattore Va e spegne il complesso.",
+  "clinica": "Fattore V Leiden: mutazione che rende il fattore Va resistente alla proteina C attivata; è la trombofilia ereditaria più frequente nella popolazione europea (rischio di trombosi venosa)."
+ },
+ "protrombina (fattore II)": {
+  "tipo": "molecola",
+  "base": "La forma «spenta» della trombina, sempre pronta nel sangue.",
+  "superiore": "Fattore II della coagulazione: proteina del plasma prodotta dal fegato, dipendente dalla vitamina K. Il complesso protrombinasi la trasforma in trombina.",
+  "universita": "Zimogeno con dominio Gla; il taglio da parte del fattore Xa libera la trombina (fattore IIa) e il frammento 1+2, che si può misurare come indice di trombina prodotta.",
+  "clinica": "La mutazione G20210A del gene della protrombina aumenta i livelli di protrombina ed è una causa di trombofilia ereditaria. Nelle malattie del fegato la produzione cala e il PT si allunga."
+ },
+ "trombina": {
+  "tipo": "enzima",
+  "base": "L'aiutante più importante della coagulazione: trasforma una proteina sciolta nel sangue in fili che chiudono la ferita.",
+  "superiore": "Fattore IIa: enzima che trasforma il fibrinogeno in fibrina. Attiva anche le piastrine e altri fattori (V, VIII, XI, XIII), così amplifica la propria produzione (feedback positivo).",
+  "universita": "Serin-proteasi (EC 3.4.21.5). Attiva le piastrine tramite i recettori PAR. Legata alla trombomodulina dell'endotelio cambia ruolo e attiva la proteina C, cioè diventa anticoagulante. Inibita dall'antitrombina (accelerata dall'eparina).",
+  "clinica": "Inibitori diretti: dabigatran (orale; antidoto idarucizumab), argatroban e bivalirudina (endovena). Il tempo di trombina si allunga con eparina, dabigatran e fibrinogeno basso."
+ },
+ "fattore VIII": {
+  "tipo": "molecola",
+  "base": "Un aiutante della coagulazione che manca nelle persone con emofilia A.",
+  "superiore": "Fattore antiemofilico A: cofattore che, attivato dalla trombina (VIIIa), si unisce al fattore IXa e forma la tenasi intrinseca. Nel sangue viaggia legato al fattore di von Willebrand, che lo protegge.",
+  "universita": "Glicoproteina prodotta soprattutto dalle cellule endoteliali (in particolare dei sinusoidi del fegato). Non è un enzima ma un cofattore. Inattivato dalla proteina C attivata. Gene sul cromosoma X.",
+  "clinica": "Deficit: emofilia A (aPTT allungato, PT normale). Si alza nell'infiammazione e in gravidanza. Nella malattia di von Willebrand grave cala anche il fattore VIII perché manca chi lo protegge."
+ },
+ "fattore IX": {
+  "tipo": "molecola",
+  "base": "Un aiutante della coagulazione che manca nelle persone con emofilia B.",
+  "superiore": "Fattore della coagulazione prodotto dal fegato, dipendente dalla vitamina K. Attivato (IXa) dal fattore XIa o dal complesso fattore tissutale-VIIa, forma con il fattore VIIIa la tenasi intrinseca.",
+  "universita": "Zimogeno di una serin-proteasi con dominio Gla. Gene sul cromosoma X.",
+  "clinica": "Deficit: emofilia B (aPTT allungato, PT normale). Esiste una terapia genica per l'emofilia B."
+ },
+ "tenasi intrinseca (IXa-VIIIa)": {
+  "tipo": "enzima",
+  "base": "Una «squadra» di due aiutanti che accende moltissimi altri aiutanti, così il coagulo si forma in fretta.",
+  "superiore": "Complesso formato da fattore IXa (enzima) e fattore VIIIa (cofattore), con Ca²⁺, sulla membrana delle piastrine attivate. Attiva il fattore X in grande quantità.",
+  "universita": "Circa 50 volte più efficiente del complesso fattore tissutale-VIIa nell'attivare il fattore X: è il motore della fase di propagazione. Quando il TFPI spegne la via del fattore tissutale, è la tenasi intrinseca a mantenere la produzione di trombina.",
+  "clinica": "È il complesso che non funziona nelle emofilie A e B: per questo, pur avendo la via del fattore tissutale intatta, chi ha l'emofilia sanguina. L'emicizumab, un anticorpo che unisce IXa e X, imita il fattore VIIIa ed è usato nella profilassi dell'emofilia A."
+ },
+ "fibrina": {
+  "tipo": "molecola",
+  "base": "I fili lunghi e appiccicosi che formano una rete sopra la ferita e intrappolano il sangue.",
+  "superiore": "Proteina insolubile che si forma quando la trombina taglia il fibrinogeno. I suoi fili si uniscono in una rete che intrappola piastrine e globuli rossi e forma il coagulo.",
+  "universita": "I monomeri di fibrina (senza fibrinopeptidi) si associano spontaneamente in fibre; la rete è debole finché il fattore XIIIa non la lega con legami covalenti. Si lega al tPA e al plasminogeno, che così la sciolgono dall'interno.",
+  "clinica": "Il deposito di fibrina nei piccoli vasi è tipico della CID. I prodotti di degradazione della fibrina (e il D-dimero) aumentano quando un coagulo si scioglie."
+ },
+ "fattore XIIIa": {
+  "tipo": "enzima",
+  "base": "L'aiutante che «cuce» insieme i fili del coagulo per renderlo forte.",
+  "superiore": "Fattore XIII attivato dalla trombina: enzima che crea legami stabili tra i fili di fibrina, rendendo il coagulo resistente.",
+  "universita": "Transglutaminasi (EC 2.3.2.13), dipendente dal Ca²⁺: forma legami covalenti tra glutammina e lisina di catene di fibrina vicine. Lega alla fibrina anche l'α2-antiplasmina, proteggendo il coagulo dalla fibrinolisi.",
+  "clinica": "Deficit di fattore XIII: PT e aPTT normali ma sanguinamenti ritardati (tipico quello del cordone ombelicale nel neonato) e cattiva guarigione delle ferite."
+ },
+ "coagulo stabile": {
+  "tipo": "struttura",
+  "base": "Il «tappo» definitivo: una crosticina solida fatta di fili, piastrine e globuli rossi.",
+  "superiore": "Rete di fibrina stabilizzata che intrappola piastrine e globuli rossi e chiude la ferita. Poi si contrae (retrazione) e lascia uscire il siero.",
+  "universita": "La retrazione dipende dalle proteine contrattili delle piastrine (actina e miosina) legate alla fibrina attraverso la GPIIb/IIIa. Fibroblasti ed endotelio invadono poi il coagulo e riparano il vaso.",
+  "clinica": "Un coagulo che si forma dentro un vaso intatto è un trombo; se si stacca e viaggia nel sangue diventa un embolo (per esempio embolia polmonare)."
+ },
+ "plasminogeno": {
+  "tipo": "molecola",
+  "base": "La forma «spenta» della forbice che scioglie i coaguli.",
+  "superiore": "Proteina del plasma prodotta dal fegato. Gli attivatori del plasminogeno (tPA, urochinasi) la trasformano in plasmina.",
+  "universita": "Zimogeno con domini «kringle» che legano le lisine della fibrina: così si concentra dentro il coagulo, insieme al tPA.",
+  "clinica": "L'acido tranexamico occupa i siti che legano la lisina: impedisce al plasminogeno di legarsi alla fibrina e riduce i sanguinamenti (traumi, emorragia dopo il parto, chirurgia)."
+ },
+ "plasmina": {
+  "tipo": "enzima",
+  "base": "La forbice che taglia i fili del coagulo quando la ferita è guarita.",
+  "superiore": "Enzima che scioglie la fibrina e quindi il coagulo (fibrinolisi). Si forma dal plasminogeno grazie al tPA.",
+  "universita": "Serin-proteasi (EC 3.4.21.7). Taglia fibrina e fibrinogeno in prodotti di degradazione. Nel sangue libero è subito inattivata dall'α2-antiplasmina; il PAI-1 frena invece il tPA.",
+  "clinica": "Iperfibrinolisi nei grandi traumi e in alcune leucemie (promielocitica acuta). I prodotti di degradazione e il D-dimero aumentano nella CID."
+ },
+ "attivatore tissutale del plasminogeno (tPA)": {
+  "tipo": "enzima",
+  "base": "Un aiutante che le pareti dei vasi liberano per sciogliere i coaguli.",
+  "superiore": "Enzima prodotto dall'endotelio che trasforma il plasminogeno in plasmina, soprattutto quando entrambi sono legati alla fibrina.",
+  "universita": "Serin-proteasi; lavora molto meglio in presenza di fibrina, quindi agisce soprattutto dentro il coagulo. Inibito dal PAI-1. L'urochinasi (uPA) è l'altro attivatore fisiologico.",
+  "clinica": "Alteplase (tPA ricombinante): trombolisi nell'ictus ischemico (entro poche ore dall'esordio, in genere 4,5) e nell'embolia polmonare massiva. Rischio principale: emorragia cerebrale."
+ },
+ "D-dimero": {
+  "tipo": "molecola",
+  "base": "Un pezzetto di coagulo sciolto che si trova nel sangue quando da qualche parte si è formato un coagulo.",
+  "superiore": "Frammento che nasce quando la plasmina taglia la fibrina già stabilizzata dal fattore XIIIa. Indica che si è formato e si sta sciogliendo un coagulo.",
+  "universita": "Contiene due domini D legati covalentemente dal fattore XIIIa: per questo non deriva dal fibrinogeno ma solo dalla fibrina stabilizzata.",
+  "clinica": "Molto sensibile ma poco specifico: un D-dimero normale, se la probabilità clinica è bassa, esclude trombosi venosa profonda ed embolia polmonare. Aumenta però anche in gravidanza, tumori, infezioni, dopo interventi e con l'età. Alto nella CID."
+ },
+ "antitrombina": {
+  "tipo": "molecola",
+  "base": "Un freno naturale del sangue che spegne la coagulazione dove non serve.",
+  "superiore": "Proteina del plasma prodotta dal fegato che blocca la trombina e il fattore Xa (e altri fattori attivati). L'eparina la rende molto più veloce.",
+  "universita": "Serpina (inibitore delle serin-proteasi): forma con l'enzima un complesso stabile e inattivo. Sull'endotelio l'eparan solfato ne aumenta l'attività; l'eparina farmaco lo fa di circa mille volte.",
+  "clinica": "Deficit ereditario di antitrombina: trombofilia con trombosi venose, anche in giovani; possibile resistenza all'eparina. Cala nella CID e nella sindrome nefrosica (persa con le urine)."
+ },
+ "proteina C e proteina S": {
+  "tipo": "molecola",
+  "base": "Due freni naturali che spengono gli aiutanti della coagulazione quando il lavoro è fatto.",
+  "superiore": "Proteine anticoagulanti prodotte dal fegato e dipendenti dalla vitamina K. La proteina C, attivata dalla trombina legata all'endotelio, con l'aiuto della proteina S distrugge i fattori Va e VIIIa.",
+  "universita": "La trombina legata alla trombomodulina (con il recettore endoteliale della proteina C) attiva la proteina C; la proteina C attivata è una serin-proteasi e la proteina S è il suo cofattore. È un esempio di feedback negativo della coagulazione.",
+  "clinica": "Deficit di proteina C o S: trombofilia. All'inizio del warfarin la proteina C (emivita breve) cala prima dei fattori procoagulanti: rischio di necrosi cutanea, per questo si associa eparina nei primi giorni. Il fattore V Leiden resiste alla proteina C attivata."
+ },
+ "vitamina K": {
+  "tipo": "coenzima",
+  "base": "Una vitamina delle verdure a foglia verde che serve al sangue per coagulare.",
+  "superiore": "Vitamina liposolubile (K₁ dalle verdure, K₂ dai batteri intestinali). Serve al fegato per completare i fattori II, VII, IX e X e le proteine C e S.",
+  "universita": "Cofattore della γ-glutamil carbossilasi, che trasforma residui di glutammato in γ-carbossiglutammato (Gla), capace di legare il Ca²⁺ e le membrane. La vitamina K ossidata viene ricaricata dalla vitamina K epossido reduttasi (VKORC1), bersaglio del warfarin.",
+  "clinica": "Malattia emorragica del neonato: si previene con vitamina K alla nascita. Deficit in malassorbimento, colestasi, terapie antibiotiche lunghe. Antidoto del warfarin (per bocca o endovena)."
+ },
+ "acido acetilsalicilico (aspirina)": {
+  "tipo": "molecola",
+  "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+  "base": "Una medicina comune che, a piccole dosi, rende le piastrine meno appiccicose.",
+  "superiore": "Farmaco antinfiammatorio non steroideo che blocca la cicloossigenasi. A basse dosi è un antiaggregante: le piastrine producono meno trombossano A₂.",
+  "universita": "Acetila in modo irreversibile una serina della COX-1 (e della COX-2). Le piastrine, senza nucleo, non sintetizzano nuova COX-1: l'effetto dura per tutta la vita della piastrina (circa 7-10 giorni).",
+  "clinica": "Usata a basse dosi nella prevenzione secondaria di infarto e ictus. Effetti avversi: ulcera e sanguinamento gastrico, broncospasmo in alcuni asmatici, sindrome di Reye nei bambini con infezioni virali."
+ },
+ "eparina": {
+  "tipo": "molecola",
+  "base": "Una medicina che si fa con un'iniezione per impedire al sangue di formare coaguli.",
+  "superiore": "Anticoagulante che potenzia l'antitrombina: si blocca l'azione della trombina e del fattore Xa. Agisce subito; si somministra per via endovenosa o sottocutanea.",
+  "universita": "Glicosaminoglicano solforato. Una sequenza di cinque zuccheri lega l'antitrombina e ne aumenta l'attività di circa mille volte. L'eparina non frazionata inibisce trombina e Xa (si controlla con l'aPTT); le eparine a basso peso molecolare (enoxaparina) agiscono soprattutto sul Xa.",
+  "clinica": "Antidoto: protamina. Trombocitopenia indotta da eparina (HIT): anticorpi contro il complesso eparina-PF4, calo delle piastrine dopo 5-10 giorni e trombosi; si sospende e si usa un altro anticoagulante. Non attraversa la placenta: si usa in gravidanza."
+ },
+ "warfarin": {
+  "tipo": "molecola",
+  "smiles": "CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O",
+  "base": "Una medicina in compresse che rallenta la coagulazione del sangue: bisogna controllarla spesso con un esame.",
+  "superiore": "Anticoagulante orale antagonista della vitamina K: il fegato produce fattori II, VII, IX e X che non funzionano. Agisce dopo alcuni giorni e si controlla con l'INR.",
+  "universita": "Derivato cumarinico che inibisce la vitamina K epossido reduttasi (VKORC1). Metabolizzato dal CYP2C9: molte interazioni con farmaci e cibi ricchi di vitamina K. Per la maggior parte delle indicazioni si cerca un INR tra 2 e 3.",
+  "clinica": "Antidoti: vitamina K e, nelle emorragie gravi, concentrato di complesso protrombinico. Teratogeno (embriopatia da warfarin). Necrosi cutanea se c'è deficit di proteina C. Ancora necessario nelle protesi valvolari meccaniche, dove i nuovi anticoagulanti orali non sono indicati."
+ },
+ "emofilia": {
+  "tipo": "struttura",
+  "base": "Una malattia ereditaria in cui il sangue fa fatica a coagulare: anche piccoli colpi possono causare lividi e sangue nelle articolazioni.",
+  "superiore": "Malattia genetica legata al cromosoma X, quasi solo nei maschi: manca il fattore VIII (emofilia A, la più frequente) o il fattore IX (emofilia B). Le donne sono di solito portatrici.",
+  "universita": "Recessiva legata all'X. Il difetto della tenasi intrinseca impedisce l'esplosione di trombina. Esami: aPTT allungato, PT e piastrine normali, dosaggio del fattore. La gravità dipende dal livello residuo del fattore.",
+  "clinica": "Emartri ricorrenti (artropatia emofilica), ematomi muscolari, emorragie dopo interventi. Terapia: profilassi con concentrati di fattore, emicizumab nell'emofilia A, terapia genica. Complicanza: anticorpi inibitori contro il fattore infuso. Evitare iniezioni intramuscolari e FANS."
+ },
+ "trombosi venosa profonda": {
+  "tipo": "struttura",
+  "base": "Un coagulo che si forma dentro una vena della gamba e la chiude: la gamba si gonfia e fa male.",
+  "superiore": "Formazione di un trombo in una vena profonda, quasi sempre degli arti inferiori. Il pericolo è che un pezzo si stacchi e arrivi al polmone (embolia polmonare).",
+  "universita": "Triade di Virchow: rallentamento del flusso (immobilità, viaggi lunghi), danno della parete del vaso (traumi, interventi) e ipercoagulabilità (tumori, gravidanza, estrogeni, trombofilie).",
+  "clinica": "Diagnosi: probabilità clinica (punteggio di Wells), D-dimero, ecografia con compressione. Terapia con anticoagulanti per almeno 3 mesi. Profilassi con eparina a basso peso molecolare nei pazienti allettati o operati."
+ },
+ "cellula staminale ematopoietica": {
+  "tipo": "struttura",
+  "base": "La «cellula mamma» del midollo osseo da cui nascono tutte le cellule del sangue.",
+  "superiore": "Cellula del midollo osseo capace di rinnovarsi (fa copie di sé) e di differenziarsi in tutte le cellule del sangue: globuli rossi, piastrine e globuli bianchi.",
+  "universita": "Cellula multipotente CD34⁺, rara, per lo più quiescente, che vive in «nicchie» del midollo vicino agli osteoblasti e ai vasi. Nel feto l'emopoiesi avviene prima nel sacco vitellino, poi soprattutto nel fegato (e nella milza) e infine nel midollo.",
+  "clinica": "Base del trapianto di cellule staminali ematopoietiche (prelevate da midollo, sangue periferico dopo mobilizzazione con G-CSF o cordone ombelicale). Malattie della staminale: anemia aplastica, sindromi mielodisplastiche, neoplasie mieloproliferative."
+ },
+ "progenitore mieloide comune": {
+  "tipo": "struttura",
+  "base": "Una cellula del midollo che ha già scelto di diventare globulo rosso, piastrina o certi globuli bianchi.",
+  "superiore": "Cellula che nasce dalla staminale ematopoietica e dà origine a globuli rossi, piastrine, granulociti (neutrofili, eosinofili, basofili) e monociti. Non produce linfociti.",
+  "universita": "Si divide in progenitore megacariocitico-eritroide (globuli rossi e piastrine) e progenitore granulocitico-monocitico. Nelle colture forma colonie (CFU) che danno il nome ai progenitori: BFU-E, CFU-E, CFU-GM, CFU-Meg.",
+  "clinica": "Le leucemie mieloidi acute nascono da progenitori mieloidi bloccati nella maturazione (blasti nel midollo e nel sangue)."
+ },
+ "proeritroblasto": {
+  "tipo": "struttura",
+  "base": "La prima cellula del midollo che si riconosce come futuro globulo rosso.",
+  "superiore": "Primo precursore eritroide riconoscibile al microscopio: cellula grande, con nucleo e citoplasma blu (pieno di ribosomi). Si divide più volte e dà gli eritroblasti.",
+  "universita": "Deriva dalle CFU-E, che sono le cellule più sensibili all'eritropoietina. Dal proeritroblasto al reticolocito passano pochi giorni e alcune divisioni.",
+  "clinica": "Nell'infezione da parvovirus B19 i precursori eritroidi vengono distrutti (proeritroblasti giganti nel midollo): crisi aplastica nelle anemie emolitiche croniche."
+ },
+ "eritropoietina (EPO)": {
+  "tipo": "molecola",
+  "base": "Il messaggio che il rene manda al midollo osseo quando nel sangue arriva poco ossigeno: «fai più globuli rossi».",
+  "superiore": "Ormone glicoproteico prodotto soprattutto dal rene (circa il 90%) e in piccola parte dal fegato. Quando l'ossigeno nei tessuti cala, stimola il midollo a produrre globuli rossi.",
+  "universita": "Prodotta da cellule interstiziali peritubulari della corticale renale. Il sensore è il fattore HIF: con poco O₂ non viene degradato e accende il gene dell'EPO. Recettore con chinasi JAK2: impedisce l'apoptosi e fa proliferare i progenitori eritroidi (CFU-E). È un feedback negativo: più globuli rossi, più O₂, meno EPO.",
+  "clinica": "Nella malattia renale cronica l'EPO manca: anemia, curata con EPO ricombinante (epoetine) e ferro. EPO alta in altitudine, nelle malattie polmonari e in alcuni tumori (policitemia secondaria); bassa nella policitemia vera (mutazione JAK2). Usata illecitamente come doping."
+ },
+ "eritroblasti": {
+  "tipo": "struttura",
+  "base": "Cellule giovani del midollo che si moltiplicano e si riempiono di emoglobina per diventare globuli rossi.",
+  "superiore": "Precursori dei globuli rossi con nucleo, che si dividono e accumulano emoglobina. Man mano il citoplasma passa da blu a rosa e il nucleo si rimpicciolisce.",
+  "universita": "Stadi: eritroblasto basofilo, policromatofilo e ortocromatico. Si raccolgono in «isole» intorno a un macrofago, che fornisce ferro e fagocita i nuclei espulsi.",
+  "clinica": "Eritroblasti nel sangue periferico indicano un midollo molto stressato o infiltrato (emolisi grave, mielofibrosi, metastasi). L'eritropoiesi inefficace, con eritroblasti che muoiono nel midollo, è tipica di talassemia e anemia megaloblastica."
+ },
+ "vitamina B₁₂": {
+  "tipo": "coenzima",
+  "base": "Una vitamina che si trova solo nei cibi animali (carne, pesce, uova, latte) e serve per fare i globuli rossi e per i nervi.",
+  "superiore": "Cobalamina: vitamina idrosolubile che contiene cobalto. Serve per copiare il DNA (insieme all'acido folico) e per il buon funzionamento del sistema nervoso. Per essere assorbita ha bisogno del fattore intrinseco dello stomaco.",
+  "universita": "Cofattore della metionina sintasi (rigenera il tetraidrofolato dal metiltetraidrofolato) e della metilmalonil-CoA mutasi. Si lega al fattore intrinseco prodotto dalle cellule parietali e viene assorbita nell'ileo terminale. Il fegato ne conserva riserve per anni.",
+  "clinica": "Deficit: anemia megaloblastica e danni neurologici (degenerazione combinata subacuta del midollo spinale). Cause: anemia perniciosa (autoanticorpi contro cellule parietali e fattore intrinseco), gastrectomia, resezione dell'ileo, dieta vegana, metformina. Omocisteina e acido metilmalonico alti."
+ },
+ "acido folico": {
+  "tipo": "coenzima",
+  "base": "Una vitamina delle verdure a foglia verde che serve alle cellule per moltiplicarsi.",
+  "superiore": "Vitamina B₉ (folati negli alimenti). Nella forma attiva, il tetraidrofolato, trasporta pezzi di un carbonio necessari per costruire le basi del DNA.",
+  "universita": "Il tetraidrofolato serve per la sintesi della timidina (timidilato sintasi) e delle purine. Le riserve durano pochi mesi. Lavora insieme alla vitamina B₁₂ nella metionina sintasi.",
+  "clinica": "Deficit: anemia megaloblastica (omocisteina alta, acido metilmalonico normale). Integrazione con 0,4 mg al giorno prima del concepimento per prevenire i difetti del tubo neurale. Metotrexato e trimetoprim bloccano la diidrofolato reduttasi. Non dare solo folati se manca la B₁₂: l'anemia migliora ma il danno neurologico progredisce."
+ },
+ "eritroblasto ortocromatico": {
+  "tipo": "struttura",
+  "base": "L'ultima cellula con il nucleo prima del globulo rosso: è già piena di emoglobina.",
+  "superiore": "Ultimo stadio dei precursori eritroidi con nucleo: citoplasma rosa per l'emoglobina, nucleo piccolo e compatto. Non si divide più ed espelle il nucleo.",
+  "universita": "Il nucleo picnotico viene espulso avvolto da un po' di membrana e fagocitato dal macrofago dell'isola eritroblastica. Insieme al nucleo si perdono la capacità di sintetizzare nuove proteine e, poco dopo, i mitocondri.",
+  "clinica": ""
+ },
+ "ALA sintasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che fa il primo passo per costruire la parte dell'emoglobina che tiene il ferro.",
+  "superiore": "δ-aminolevulinato sintasi: primo enzima e tappa che regola la sintesi dell'eme. Unisce succinil-CoA e glicina e forma l'acido δ-aminolevulinico (ALA).",
+  "universita": "Transferasi (EC 2.3.1.37) mitocondriale, cofattore piridossal-fosfato (vitamina B₆). Due forme: ALAS1 (fegato, frenata dall'eme) e ALAS2 (eritroidi, gene sul cromosoma X, regolata dalla disponibilità di ferro). Dopo l'ALA servono altri sette enzimi; l'ultimo, la ferrochelatasi, inserisce il ferro.",
+  "clinica": "Anemia sideroblastica (sideroblasti ad anello): mutazioni di ALAS2, carenza di vitamina B₆, isoniazide, alcol, piombo. Nelle porfirie acute farmaci e digiuno inducono ALAS1; si curano con emina e glucosio, che la frenano."
+ },
+ "ferro": {
+  "tipo": "piccola",
+  "base": "Un metallo che mangiamo con carne, legumi e verdure: serve all'emoglobina per tenere l'ossigeno.",
+  "superiore": "Elemento indispensabile per l'emoglobina, la mioglobina e molti enzimi. Si assorbe nel duodeno, viaggia nel sangue legato alla transferrina e si conserva come ferritina.",
+  "universita": "Nel corpo ce ne sono circa 3-4 g, per circa due terzi nell'emoglobina. Assorbito come Fe²⁺ (trasportatore DMT1), esce dagli enterociti e dai macrofagi tramite la ferroportina; l'epcidina del fegato blocca la ferroportina e regola tutto il bilancio. Non esiste una via attiva di eliminazione: se ne perde circa 1 mg al giorno.",
+  "clinica": "Ferritina bassa = riserve vuote (anemia sideropenica). Nell'infiammazione l'epcidina alta trattiene il ferro (anemia delle malattie croniche). Emocromatosi ereditaria (gene HFE): accumulo di ferro in fegato, cuore, pancreas."
+ },
+ "glicina": {
+  "tipo": "piccola",
+  "smiles": "NCC(=O)O",
+  "base": "Il più piccolo dei mattoncini che formano le proteine.",
+  "superiore": "Amminoacido non essenziale, il più semplice (il suo gruppo laterale è un atomo di idrogeno). Serve per proteine come il collagene e per costruire l'eme, la creatina e il glutatione.",
+  "universita": "NH₂-CH₂-COOH, unico amminoacido non chirale. Con il succinil-CoA forma l'ALA (prima tappa dell'eme). Nel midollo spinale e nel tronco encefalico è un neurotrasmettitore inibitorio (recettore-canale del Cl⁻).",
+  "clinica": "La stricnina blocca il recettore della glicina: convulsioni e rigidità. Nel collagene è un residuo ogni tre: mutazioni che la sostituiscono causano l'osteogenesi imperfetta."
+ },
+ "reticolocito": {
+  "tipo": "struttura",
+  "base": "Un globulo rosso «appena nato», che ha ancora qualche resto della sua vita nel midollo.",
+  "superiore": "Globulo rosso giovane, senza nucleo ma con ancora un po' di RNA ribosomiale. Esce dal midollo e in 1-2 giorni matura nel sangue. Normalmente sono circa l'1% dei globuli rossi.",
+  "universita": "Con le colorazioni sopravitali (blu brillante di cresile) l'RNA appare come un reticolo, da cui il nome. Leggermente più grande del globulo rosso maturo. Con molta EPO escono dal midollo prima del tempo.",
+  "clinica": "La conta dei reticolociti dice se il midollo risponde: alta nelle emorragie e nelle emolisi; bassa nelle anemie da deficit (ferro, B₁₂, folati), nell'aplasia e nella malattia renale. Sale pochi giorni dopo aver iniziato ferro o vitamina B₁₂."
+ },
+ "bilirubina": {
+  "tipo": "molecola",
+  "base": "La sostanza gialla che si forma quando si smontano i globuli rossi vecchi: dà il colore giallo ai lividi che guariscono e il colore alle feci.",
+  "superiore": "Pigmento giallo prodotto dalla demolizione dell'eme. Viaggia nel sangue legata all'albumina, il fegato la coniuga e la elimina con la bile.",
+  "universita": "Eme → biliverdina (eme ossigenasi, libera Fe e CO) → bilirubina (biliverdina reduttasi). La bilirubina non coniugata (indiretta) è insolubile in acqua; il fegato la coniuga con acido glucuronico (UGT1A1) e la rende diretta. Nell'intestino diventa urobilinogeno e stercobilina.",
+  "clinica": "Ittero quando supera circa 2-3 mg/dL. Indiretta alta: emolisi, sindrome di Gilbert, ittero del neonato (fototerapia; rischio di kernittero). Diretta alta: colestasi, epatiti, ostruzione delle vie biliari."
+ },
+ "trombopoietina (TPO)": {
+  "tipo": "molecola",
+  "base": "Il messaggio che dice al midollo osseo di fare più piastrine.",
+  "superiore": "Ormone prodotto soprattutto dal fegato che stimola i megacariociti a crescere e a produrre piastrine.",
+  "universita": "Il fegato la produce a ritmo quasi costante; la quantità libera dipende da quante piastrine e megacariociti la catturano con il recettore c-Mpl: poche piastrine, più TPO libera. Agisce anche sulle cellule staminali.",
+  "clinica": "Agonisti del recettore della trombopoietina (romiplostim, eltrombopag) nella porpora trombocitopenica immune. Nelle cirrosi gravi la TPO cala e contribuisce alla piastrinopenia."
+ },
+ "G-CSF": {
+  "tipo": "molecola",
+  "base": "Un messaggio chimico che fa produrre al midollo più globuli bianchi «spazzini» (neutrofili).",
+  "superiore": "Fattore di crescita dei granulociti: citochina che stimola il midollo a produrre neutrofili e a liberarli nel sangue.",
+  "universita": "Prodotto da macrofagi, endotelio e fibroblasti, soprattutto durante le infezioni. Fa maturare i progenitori granulocitari, accorcia la maturazione e mobilita i neutrofili (e le cellule staminali) dal midollo al sangue.",
+  "clinica": "Filgrastim e pegfilgrastim prevengono o abbreviano la neutropenia da chemioterapia e servono a mobilizzare le cellule staminali prima del prelievo per il trapianto."
+ },
+ "anemia": {
+  "tipo": "struttura",
+  "base": "Quando nel sangue ci sono pochi globuli rossi o poca emoglobina: ci si sente stanchi, pallidi e col fiatone.",
+  "superiore": "Riduzione dell'emoglobina nel sangue sotto i valori normali (per l'OMS meno di 13 g/dL nell'uomo e di 12 g/dL nella donna). Il sangue porta meno ossigeno ai tessuti.",
+  "universita": "Si classifica secondo il volume dei globuli rossi (MCV): microcitica (sotto circa 80 fL: ferro, talassemia), normocitica (emorragia acuta, malattie croniche, malattia renale, emolisi) e macrocitica (sopra circa 100 fL: B₁₂, folati, alcol, ipotiroidismo). I reticolociti distinguono la produzione scarsa dalla perdita o distruzione.",
+  "clinica": "Sintomi: astenia, pallore, dispnea da sforzo, tachicardia, soffio sistolico. Nell'anziano può peggiorare l'angina e lo scompenso. Primi esami: emocromo con MCV, reticolociti, ferritina, B₁₂ e folati."
+ },
+ "anemia sideropenica": {
+  "tipo": "struttura",
+  "base": "Un'anemia dovuta alla mancanza di ferro: è la più frequente al mondo.",
+  "superiore": "Anemia da carenza di ferro: senza ferro il midollo non riesce a fare abbastanza emoglobina e i globuli rossi sono piccoli e pallidi (microcitici e ipocromici).",
+  "universita": "Ferritina bassa (l'esame più utile), ferro basso, transferrina e capacità di legare il ferro alte, saturazione della transferrina bassa. Cause: perdite di sangue (mestruazioni abbondanti, intestino), aumento del fabbisogno (gravidanza, crescita), scarso assorbimento (celiachia, gastrite atrofica, Helicobacter).",
+  "clinica": "Nell'uomo e nella donna dopo la menopausa si cerca sempre un sanguinamento intestinale (endoscopia: tumore del colon). Terapia: ferro per bocca (anche a giorni alterni) o endovena; i reticolociti salgono in pochi giorni."
+ },
+ "anemia megaloblastica": {
+  "tipo": "struttura",
+  "base": "Un'anemia in cui i globuli rossi sono pochi e troppo grandi, perché mancano alcune vitamine.",
+  "superiore": "Anemia dovuta alla carenza di vitamina B₁₂ o di acido folico: le cellule del midollo non riescono a copiare bene il DNA, crescono senza dividersi e diventano grandi (megaloblasti).",
+  "universita": "MCV sopra circa 100 fL, neutrofili ipersegmentati, possibile calo anche di piastrine e globuli bianchi. Eritropoiesi inefficace: LDH e bilirubina indiretta alte. Omocisteina alta in entrambe le carenze; acido metilmalonico alto solo nella carenza di B₁₂.",
+  "clinica": "Cercare sempre la carenza di B₁₂ (anemia perniciosa, dieta vegana, metformina, chirurgia gastrica) prima di dare acido folico. Anche farmaci come metotrexato e idrossiurea danno megaloblastosi."
+ },
+ "O₂ disciolto nel plasma": {
+  "tipo": "molecola",
+  "base": "Un pochino di ossigeno si scioglie direttamente nel liquido del sangue, come le bollicine in una bibita.",
+  "superiore": "Ossigeno sciolto fisicamente nel plasma. È poco (circa 0,3 mL ogni 100 mL di sangue arterioso), ma è quello che determina la pressione parziale di O₂ (PO₂) e passa per primo dagli alveoli al sangue e dal sangue ai tessuti.",
+  "universita": "Legge di Henry: quantità disciolta = 0,003 mL di O₂ per 100 mL di sangue per ogni mmHg di PO₂. La PaO₂ arteriosa normale è circa 80-100 mmHg. Respirando O₂ ad alta pressione (camera iperbarica) la quota disciolta aumenta molto.",
+  "clinica": "La PaO₂ si misura con l'emogasanalisi; il saturimetro misura invece la saturazione dell'emoglobina. La terapia iperbarica sfrutta l'O₂ disciolto (intossicazione da monossido di carbonio, embolia gassosa)."
+ },
+ "ossiemoglobina": {
+  "tipo": "molecola",
+  "base": "L'emoglobina carica di ossigeno: rende il sangue delle arterie rosso vivo.",
+  "superiore": "Emoglobina legata all'ossigeno (fino a 4 O₂ per molecola). Nel sangue arterioso normale circa il 97-98% dell'emoglobina è in questa forma (saturazione).",
+  "universita": "Il ferro resta Fe²⁺. Il legame del primo O₂ cambia la forma della proteina dallo stato T (teso) allo stato R (rilassato), che lega l'O₂ con più affinità: da qui la curva sigmoide. Contenuto di O₂ = 1,34 × Hb × saturazione + 0,003 × PO₂.",
+  "clinica": "Il saturimetro (pulsossimetro) sfrutta il diverso assorbimento della luce rossa e infrarossa da parte di ossi- e deossiemoglobina; non distingue la carbossiemoglobina e sbaglia con la metaemoglobina."
+ },
+ "deossiemoglobina": {
+  "tipo": "molecola",
+  "base": "L'emoglobina che ha lasciato l'ossigeno ai tessuti: rende il sangue delle vene più scuro.",
+  "superiore": "Emoglobina senza ossigeno legato. Lega meglio la CO₂ e gli H⁺ (fa da tampone).",
+  "universita": "Stato T (teso), stabilizzato da H⁺, CO₂ e 2,3-BPG. Nel sangue venoso misto a riposo l'emoglobina è ancora ossigenata per circa il 75%, quindi la deossiemoglobina è circa un quarto del totale.",
+  "clinica": "Cianosi (colorito bluastro di labbra e unghie) quando la deossiemoglobina nel sangue capillare supera circa 5 g/dL: per questo nell'anemia grave può mancare anche con ipossia, e nella policitemia compare più facilmente."
+ },
+ "effetto Bohr": {
+  "tipo": "struttura",
+  "base": "Dove i muscoli lavorano tanto, l'emoglobina lascia andare più ossigeno: arriva di più proprio dove serve.",
+  "superiore": "Riduzione dell'affinità dell'emoglobina per l'O₂ quando aumentano H⁺ (pH più basso) e CO₂: la curva di dissociazione si sposta a destra e l'O₂ viene ceduto più facilmente ai tessuti.",
+  "universita": "Gli H⁺ si legano a gruppi della globina (per esempio l'istidina 146 della catena β) e stabilizzano lo stato T. Spostano la curva a destra (P50 più alta) anche la temperatura e il 2,3-BPG. Nei polmoni avviene il contrario: la CO₂ esce, il pH sale e l'emoglobina lega meglio l'O₂.",
+  "clinica": "Nell'alcalosi (per esempio da iperventilazione) la curva si sposta a sinistra e l'emoglobina cede meno O₂ ai tessuti; nell'acidosi e nella febbre lo cede di più."
+ },
+ "2,3-bisfosfoglicerato (2,3-BPG)": {
+  "tipo": "piccola",
+  "smiles": "OC(=O)C(OP(=O)(O)O)COP(=O)(O)O",
+  "base": "Una sostanza dei globuli rossi che aiuta l'emoglobina a lasciare l'ossigeno ai tessuti.",
+  "superiore": "Molecola prodotta nei globuli rossi da una deviazione della glicolisi. Si lega all'emoglobina senza ossigeno e ne riduce l'affinità per l'O₂: la curva si sposta a destra.",
+  "universita": "Si forma dall'1,3-bisfosfoglicerato con la bisfosfoglicerato mutasi (shunt di Rapoport-Luebering). Una molecola si lega nella cavità centrale tra le catene β della deossiemoglobina. Aumenta in altitudine, nell'anemia e nelle malattie polmonari croniche. L'emoglobina fetale lo lega poco.",
+  "clinica": "Il sangue conservato perde 2,3-BPG: subito dopo una trasfusione l'emoglobina cede meno O₂. Nel deficit di piruvato chinasi il 2,3-BPG aumenta e l'anemia è tollerata meglio."
+ },
+ "carbamminoemoglobina": {
+  "tipo": "molecola",
+  "base": "L'emoglobina che, tornando dai tessuti, si porta dietro un po' di anidride carbonica.",
+  "superiore": "Emoglobina che ha legato CO₂. La CO₂ non si lega al ferro (come l'O₂) ma ai gruppi amminici delle catene proteiche. Trasporta circa il 20-30% della CO₂.",
+  "universita": "Reazione: Hb-NH₂ + CO₂ ⇄ Hb-NH-COO⁻ + H⁺, sulle estremità N-terminali delle globine. La deossiemoglobina forma carbammati più facilmente dell'ossiemoglobina (effetto Haldane).",
+  "clinica": ""
+ },
+ "effetto Haldane": {
+  "tipo": "struttura",
+  "base": "L'emoglobina che ha lasciato l'ossigeno ha più posto per portare via l'anidride carbonica.",
+  "superiore": "Quando l'emoglobina perde l'O₂ lega di più CO₂ e H⁺; quando si carica di O₂ (nei polmoni) li libera. Così il sangue prende più CO₂ nei tessuti e la scarica meglio nei polmoni.",
+  "universita": "La deossiemoglobina è un acido più debole: lega più H⁺ (spinge la reazione dell'anidrasi carbonica verso il bicarbonato) e forma più carbammati. È il «rovescio» dell'effetto Bohr e raddoppia circa la quantità di CO₂ scambiata.",
+  "clinica": "Nei pazienti con BPCO e ipercapnia cronica troppo O₂ può far salire la CO₂: contribuiscono l'effetto Haldane e soprattutto il peggioramento del rapporto ventilazione/perfusione. Si punta a una saturazione intorno all'88-92%."
+ },
+ "plasma": {
+  "tipo": "struttura",
+  "base": "La parte liquida e gialla del sangue, in cui nuotano le cellule.",
+  "superiore": "Parte liquida del sangue (circa il 55% del volume): acqua con sali, glucosio, ormoni, gas e proteine (albumina, globuline, fibrinogeno). Il siero è il plasma senza i fattori della coagulazione.",
+  "universita": "Circa 90-92% acqua; proteine circa 6-8 g/dL. L'albumina mantiene la pressione oncotica. Trasporta la maggior parte della CO₂ come bicarbonato e i nutrienti assorbiti. L'ematocrito (circa 40-45%) è la parte occupata dalle cellule.",
+  "clinica": "Plasma fresco congelato: si trasfonde per sostituire i fattori della coagulazione (CID, emorragie massive). Plasmaferesi nella porpora trombotica trombocitopenica e in alcune malattie autoimmuni."
+ },
+ "scambiatore Cl⁻/HCO₃⁻ (banda 3)": {
+  "tipo": "molecola",
+  "base": "Una porticina dei globuli rossi che fa uscire il bicarbonato e fa entrare il cloro.",
+  "superiore": "Proteina di trasporto della membrana del globulo rosso che scambia un bicarbonato con un cloruro (spostamento dei cloruri, o di Hamburger). Così il bicarbonato prodotto nel globulo rosso passa nel plasma.",
+  "universita": "AE1 (SLC4A1), la proteina più abbondante della membrana del globulo rosso; ancora anche lo scheletro della membrana (anchirina). Scambio elettroneutro e molto rapido, in entrambe le direzioni (nei tessuti esce HCO₃⁻, nei polmoni rientra). Lo stesso trasportatore lavora nella membrana basolaterale delle cellule intercalate di tipo A del rene.",
+  "clinica": "Mutazioni di banda 3: sferocitosi ereditaria e ovalocitosi del sud-est asiatico; nel rene acidosi tubulare distale."
+ },
+ "emoglobina fetale (HbF)": {
+  "tipo": "molecola",
+  "base": "L'emoglobina del bambino prima di nascere, che riesce a «rubare» l'ossigeno dal sangue della mamma.",
+  "superiore": "Emoglobina formata da 2 catene α e 2 catene γ. Lega l'O₂ più forte dell'emoglobina dell'adulto: così il feto prende ossigeno dal sangue materno attraverso la placenta.",
+  "universita": "α₂γ₂: le catene γ legano poco il 2,3-BPG, quindi la curva è spostata a sinistra (P50 più bassa). Dopo la nascita viene sostituita dall'HbA nei primi mesi di vita; nell'adulto resta sotto circa l'1%.",
+  "clinica": "L'idrossiurea aumenta l'HbF ed è usata nell'anemia falciforme (riduce le crisi). HbF alta nella β-talassemia e nella persistenza ereditaria dell'HbF."
+ },
+ "mioglobina": {
+  "tipo": "molecola",
+  "base": "Una sostanza dei muscoli che tiene in serbo un po' di ossigeno per quando servirà.",
+  "superiore": "Proteina dei muscoli con un solo gruppo eme: lega un solo O₂, ma con grande affinità. Fa da piccola riserva di ossigeno e lo aiuta a diffondere nella cellula muscolare.",
+  "universita": "Catena singola: legame non cooperativo, curva iperbolica, P50 di pochi mmHg; cede l'O₂ solo quando la PO₂ nel muscolo è molto bassa. Abbondante nei muscoli rossi e nel cuore.",
+  "clinica": "Rabdomiolisi (traumi da schiacciamento, statine, sforzi estremi): la mioglobina passa nelle urine (urine scure) e può causare insufficienza renale acuta. CK molto alta."
+ },
+ "monossido di carbonio (CO)": {
+  "tipo": "piccola",
+  "smiles": "[C-]#[O+]",
+  "base": "Un gas velenoso senza colore e senza odore che esce da stufe e caldaie che bruciano male: prende il posto dell'ossigeno nel sangue.",
+  "superiore": "Gas che si lega all'emoglobina circa 200-250 volte più dell'O₂ e forma carbossiemoglobina: il sangue trasporta molto meno ossigeno.",
+  "universita": "Oltre a occupare i siti dell'O₂, sposta la curva di dissociazione dell'emoglobina rimasta a sinistra (l'O₂ legato viene ceduto meno) e blocca la citocromo c ossidasi. Si forma anche nel corpo, in piccola quantità, quando l'eme diventa biliverdina.",
+  "clinica": "Intossicazione: cefalea, nausea, confusione, coma; più persone colpite nella stessa casa. Il saturimetro dà valori falsamente normali: serve la co-ossimetria. Terapia: O₂ al 100% (accorcia molto l'emivita della carbossiemoglobina) o camera iperbarica."
+ },
+ "metaemoglobina": {
+  "tipo": "molecola",
+  "base": "Un'emoglobina «rovinata» che non riesce più a portare ossigeno.",
+  "superiore": "Emoglobina con il ferro ossidato a Fe³⁺: non lega l'O₂. Normalmente è meno dell'1-2% perché un enzima dei globuli rossi la riporta a Fe²⁺.",
+  "universita": "Ridotta dalla citocromo b₅ reduttasi (con NADH). La metaemoglobina sposta anche a sinistra la curva dell'emoglobina normale rimasta. Ossidanti: nitriti e nitrati, dapsone, anestetici locali (benzocaina, prilocaina).",
+  "clinica": "Metaemoglobinemia: cianosi che non migliora con l'O₂, sangue color cioccolato, saturimetro intorno all'85%. Terapia: blu di metilene (controindicato nel deficit di G6PD)."
+ },
+ "acidi del metabolismo": {
+  "tipo": "molecola",
+  "base": "Le sostanze acide che le cellule producono ogni giorno lavorando, come i «rifiuti» di una fabbrica.",
+  "superiore": "Acidi prodotti dal metabolismo: la CO₂ (acido volatile, eliminata dai polmoni) e gli acidi fissi o non volatili (solforico, fosforico, lattico, corpi chetonici), eliminati dai reni.",
+  "universita": "Gli acidi fissi vengono soprattutto dagli amminoacidi solforati (metionina, cisteina → acido solforico) e dai fosfolipidi; in una dieta occidentale sono circa 1 mEq di H⁺ per kg al giorno. Acido lattico e corpi chetonici sono normalmente riutilizzati, ma si accumulano nell'ipossia e nel diabete scompensato.",
+  "clinica": "Accumulo di acidi fissi: acidosi metabolica con gap anionico aumentato (acidosi lattica, chetoacidosi, insufficienza renale, intossicazioni)."
+ },
+ "acido carbonico (H₂CO₃)": {
+  "tipo": "piccola",
+  "smiles": "OC(=O)O",
+  "base": "Lo stesso acido debole che c'è nell'acqua frizzante: nel sangue si forma da anidride carbonica e acqua.",
+  "superiore": "Acido debole che si forma da CO₂ + H₂O (velocemente con l'anidrasi carbonica) e si divide in H⁺ + HCO₃⁻. Collega la CO₂ del respiro con l'acidità del sangue.",
+  "universita": "CO₂ + H₂O ⇄ H₂CO₃ ⇄ H⁺ + HCO₃⁻. La sua concentrazione è minima ed è proporzionale alla CO₂ disciolta (0,03 × PCO₂ in mmol/L): per questo nell'equazione di Henderson-Hasselbalch si usa la PCO₂, con pK apparente 6,1.",
+  "clinica": ""
+ },
+ "tampone bicarbonato": {
+  "tipo": "struttura",
+  "base": "Una «spugna» del sangue che assorbe l'acido in più e impedisce che il sangue diventi troppo acido.",
+  "superiore": "Sistema tampone formato da bicarbonato (HCO₃⁻) e acido carbonico/CO₂. È il tampone più importante del liquido extracellulare: cattura gli H⁺ e li trasforma in CO₂, che si elimina col respiro.",
+  "universita": "Henderson-Hasselbalch: pH = 6,1 + log [HCO₃⁻ / (0,03 × PCO₂)]. Con HCO₃⁻ 24 mEq/L e PCO₂ 40 mmHg il rapporto è 20:1 e il pH è 7,4. Il pK è lontano da 7,4, ma il tampone è potente perché è abbondante ed è «aperto»: polmone (CO₂) e rene (HCO₃⁻) ne regolano i due componenti.",
+  "clinica": "Base dell'interpretazione dell'emogasanalisi: si guarda quale dei due componenti è cambiato per primo (HCO₃⁻ = disturbo metabolico, PCO₂ = disturbo respiratorio) e se l'altro compensa."
+ },
+ "bicarbonato filtrato": {
+  "tipo": "piccola",
+  "base": "Il bicarbonato che passa dal sangue nell'urina in formazione: il rene lo deve riprendere quasi tutto.",
+  "superiore": "Bicarbonato che attraversa il filtro del glomerulo insieme all'acqua. Se non venisse recuperato, il corpo perderebbe la sua principale riserva di tampone.",
+  "universita": "Con una filtrazione di circa 180 L al giorno e 24 mEq/L se ne filtrano circa 4300 mEq al giorno. Il recupero avviene soprattutto nel tubulo prossimale (circa 80-90%), poi nell'ansa di Henle e nel nefrone distale; serve l'anidrasi carbonica del lume e della cellula.",
+  "clinica": "Acidosi tubulare renale prossimale (tipo 2), anche nella sindrome di Fanconi: il bicarbonato filtrato non viene recuperato. L'acetazolamide blocca l'anidrasi carbonica e fa perdere bicarbonato con le urine."
+ },
+ "acidità titolabile": {
+  "tipo": "piccola",
+  "base": "Il modo in cui il rene porta via l'acido nell'urina «attaccato» a una sostanza che lo trasporta.",
+  "superiore": "H⁺ eliminati nell'urina legati a tamponi urinari, soprattutto il fosfato (HPO₄²⁻ + H⁺ → H₂PO₄⁻). Ogni H⁺ eliminato così corrisponde a un bicarbonato nuovo che entra nel sangue.",
+  "universita": "Si misura titolando l'urina con una base fino a pH 7,4. Dipende soprattutto da quanto fosfato viene filtrato, quindi può aumentare poco; nella chetoacidosi contribuiscono anche β-idrossibutirrato e acetoacetato.",
+  "clinica": ""
+ },
+ "cellule intercalate di tipo A": {
+  "tipo": "struttura",
+  "base": "Cellule speciali del rene che buttano nell'urina l'acido in più.",
+  "superiore": "Cellule del tubulo distale e del dotto collettore che secernono H⁺ nell'urina con pompe che consumano ATP e restituiscono bicarbonato al sangue.",
+  "universita": "Sul lato del lume: H⁺-ATPasi vacuolare e H⁺/K⁺-ATPasi; sul lato del sangue: scambiatore Cl⁻/HCO₃⁻ (AE1). Possono abbassare il pH urinario fino a circa 4,5. L'aldosterone ne aumenta l'attività. Le cellule intercalate di tipo B fanno il contrario (secernono bicarbonato con la pendrina) nell'alcalosi.",
+  "clinica": "Acidosi tubulare renale distale (tipo 1): l'urina non si acidifica (pH sopra 5,5), ipokaliemia, nefrocalcinosi e calcoli; cause: sindrome di Sjögren, amfotericina B, mutazioni di AE1 o della H⁺-ATPasi."
+ },
+ "glutammina": {
+  "tipo": "piccola",
+  "smiles": "N[C@@H](CCC(N)=O)C(=O)O",
+  "base": "Un mattoncino delle proteine che porta in giro azoto nel corpo; il rene la usa per eliminare l'acido.",
+  "superiore": "Amminoacido non essenziale, il più abbondante nel plasma. Trasporta azoto tra i tessuti; nel rene viene smontata per produrre ammonio e bicarbonato.",
+  "universita": "Nel tubulo prossimale la glutaminasi la trasforma in glutammato + NH₄⁺, poi la glutammato deidrogenasi produce α-chetoglutarato + NH₄⁺; il metabolismo dell'α-chetoglutarato genera 2 HCO₃⁻ nuovi. L'acidosi cronica aumenta gli enzimi e i trasportatori della glutammina.",
+  "clinica": "Carburante importante per enterociti e linfociti. Nelle malattie del fegato la glutammina cerebrale aumenta come conseguenza dell'ammoniaca alta (encefalopatia epatica)."
+ },
+ "ammonio (NH₄⁺)": {
+  "tipo": "piccola",
+  "smiles": "[NH4+]",
+  "base": "Una sostanza che il rene usa come «sacchetto» per portare via l'acido nell'urina.",
+  "superiore": "Ione formato da ammoniaca e H⁺. Il rene lo produce dalla glutammina e lo elimina con l'urina: ogni NH₄⁺ eliminato lascia nel sangue un bicarbonato nuovo.",
+  "universita": "Prodotto nel tubulo prossimale, riassorbito in parte nell'ansa di Henle e concentrato nella midollare, poi secreto nel dotto collettore come NH₃ + H⁺ e intrappolato nel lume come NH₄⁺ (non attraversa le membrane). Nell'acidosi cronica la sua escrezione può aumentare di molte volte: è la risposta adattativa principale.",
+  "clinica": "Il gap anionico urinario (Na⁺ + K⁺ − Cl⁻) stima l'NH₄⁺ urinario: negativo nella diarrea (il rene elimina ammonio), positivo nell'acidosi tubulare distale."
+ },
+ "acidosi metabolica": {
+  "tipo": "struttura",
+  "base": "Quando nel sangue c'è troppo acido perché il corpo ne produce troppo o perde le sostanze che lo neutralizzano.",
+  "superiore": "Disturbo con pH basso (sotto 7,35) e bicarbonato basso. Il corpo compensa respirando più forte e profondo per eliminare CO₂.",
+  "universita": "Compenso respiratorio atteso: PCO₂ ≈ 1,5 × HCO₃⁻ + 8 (± 2) (formula di Winter). Gap anionico = Na⁺ − (Cl⁻ + HCO₃⁻). Gap aumentato: chetoacidosi, acidosi lattica, insufficienza renale, intossicazioni (metanolo, glicole etilenico, salicilati). Gap normale (ipercloremica): diarrea, acidosi tubulari renali, eccesso di soluzione fisiologica.",
+  "clinica": "Respiro di Kussmaul, iperkaliemia, ridotta contrattilità cardiaca se grave. Si cura la causa; il bicarbonato endovena si riserva a casi selezionati (acidosi molto grave, perdita di bicarbonato)."
+ },
+ "alcalosi metabolica": {
+  "tipo": "struttura",
+  "base": "Quando il sangue diventa troppo poco acido, per esempio dopo aver vomitato molte volte.",
+  "superiore": "Disturbo con pH alto (sopra 7,45) e bicarbonato alto. Il corpo compensa respirando un po' meno, così trattiene CO₂.",
+  "universita": "Si genera perdendo H⁺ (vomito, aspirazione gastrica, diuretici, eccesso di mineralcorticoidi) o ricevendo bicarbonato; si mantiene perché il rene, con poco volume, poco Cl⁻ e poco K⁺, continua a recuperare bicarbonato. Il compenso respiratorio è limitato dal bisogno di O₂.",
+  "clinica": "Cloro urinario basso: forma che risponde alla soluzione fisiologica (vomito, diuretici sospesi). Cloro urinario alto con ipertensione: iperaldosteronismo, sindrome di Cushing. Spesso associata a ipokaliemia."
+ },
+ "acidosi respiratoria": {
+  "tipo": "struttura",
+  "base": "Quando si respira troppo poco e l'anidride carbonica si accumula nel sangue, rendendolo acido.",
+  "superiore": "Disturbo con PCO₂ alta (sopra 45 mmHg) e pH basso, dovuto a ventilazione insufficiente. Il rene compensa trattenendo bicarbonato, ma ci vogliono giorni.",
+  "universita": "In acuto il bicarbonato sale di poco (tamponi cellulari); in cronico, dopo 3-5 giorni, il rene lo aumenta molto di più e il pH si avvicina al normale. Cause: BPCO, crisi d'asma grave, oppioidi e sedativi, malattie neuromuscolari, obesità grave.",
+  "clinica": "Sonnolenza fino al coma (narcosi da CO₂), cefalea, vasodilatazione cerebrale. Terapia: trattare la causa e sostenere la ventilazione (ventilazione non invasiva o intubazione)."
+ },
+ "alcalosi respiratoria": {
+  "tipo": "struttura",
+  "base": "Quando si respira troppo in fretta (per esempio per l'ansia) e si butta fuori troppa anidride carbonica.",
+  "superiore": "Disturbo con PCO₂ bassa (sotto 35 mmHg) e pH alto, dovuto a iperventilazione. Il rene compensa eliminando bicarbonato.",
+  "universita": "Cause: ansia, dolore, febbre, altitudine, embolia polmonare, polmoniti, sepsi iniziale, gravidanza, intossicazione da salicilati (all'inizio). Con pH alto più calcio si lega all'albumina e il calcio ionizzato cala.",
+  "clinica": "Parestesie intorno alla bocca e alle dita, crampi e tetania (calcio ionizzato basso), capogiri da vasocostrizione cerebrale. Nell'attacco di panico si tranquillizza il paziente e si fa rallentare il respiro."
+ },
+ "chetoacidosi diabetica": {
+  "tipo": "struttura",
+  "base": "Una grave emergenza del diabete: senza insulina il corpo brucia i grassi in modo esagerato e il sangue diventa acido.",
+  "superiore": "Complicanza acuta del diabete (soprattutto di tipo 1) dovuta a grave mancanza di insulina: glicemia molto alta, accumulo di corpi chetonici e acidosi metabolica.",
+  "universita": "Poca insulina e troppo glucagone: lipolisi e β-ossidazione massicce, il fegato produce acetoacetato e β-idrossibutirrato, che consumano bicarbonato (acidosi con gap anionico aumentato). L'iperglicemia dà diuresi osmotica e disidratazione. Di solito glicemia oltre 250 mg/dL, pH sotto 7,30, bicarbonato basso e chetoni nel sangue.",
+  "clinica": "Sintomi: sete, tanta urina, vomito, dolore addominale, respiro di Kussmaul, alito che sa di acetone, confusione. Terapia: liquidi, insulina endovena, potassio (il K⁺ totale è basso anche se il valore nel sangue sembra normale, e l'insulina lo fa scendere). Con gli inibitori di SGLT2 può comparire con glicemia quasi normale."
+ },
+ "emogasanalisi": {
+  "tipo": "struttura",
+  "base": "Un esame del sangue, preso da un'arteria del polso, che dice quanto ossigeno e anidride carbonica ci sono e quanto è acido il sangue.",
+  "superiore": "Esame su sangue arterioso che misura pH, PaO₂, PaCO₂ e calcola il bicarbonato. Serve a valutare respirazione ed equilibrio acido-base.",
+  "universita": "Valori normali: pH 7,35-7,45; PaCO₂ 35-45 mmHg; HCO₃⁻ 22-26 mEq/L; PaO₂ circa 80-100 mmHg (cala con l'età). Molti apparecchi danno anche lattati, elettroliti, emoglobina e carbossiemoglobina.",
+  "clinica": "Lettura in tre passi: 1) acidemia o alcalemia (pH); 2) causa primaria (PCO₂ = respiratoria, HCO₃⁻ = metabolica); 3) compenso atteso e gap anionico. Si preleva di solito dall'arteria radiale."
+ },
+ "cellule β del pancreas": {
+  "tipo": "struttura",
+  "base": "Le cellule del pancreas che producono l'insulina quando mangiamo.",
+  "superiore": "Cellule delle isole di Langerhans (la parte endocrina del pancreas) che producono insulina; sono le più numerose delle isole. Le isole contengono anche cellule α (glucagone) e δ (somatostatina).",
+  "universita": "Nelle isole circa il 60% delle cellule sono β, il 25% α, il 10% δ. Il glucosio entra con trasportatori GLUT, la glucochinasi lo fosforila, l'ATP chiude i canali K⁺-ATP, il Ca²⁺ entra e libera i granuli. La secrezione ha due fasi: un picco rapido e una fase più lunga.",
+  "clinica": "Diabete di tipo 1: distruzione autoimmune delle cellule β. Nel tipo 2 la loro funzione cala nel tempo. Insulinoma: tumore delle cellule β con ipoglicemie. Trapianto di isole in casi selezionati."
+ },
+ "glucochinasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che «misura» quanto zucchero c'è nel sangue, nel fegato e nel pancreas.",
+  "superiore": "Esochinasi IV: enzima del fegato e delle cellule β che fosforila il glucosio a glucosio 6-fosfato. Lavora tanto più quanto più glucosio c'è: fa da sensore della glicemia.",
+  "universita": "Transferasi (EC 2.7.1.2). Ha bassa affinità per il glucosio (Km intorno a 8-10 mM, vicino alla glicemia) e non è inibita dal glucosio 6-fosfato, a differenza delle altre esochinasi. Nel fegato una proteina regolatrice la trattiene nel nucleo durante il digiuno; l'insulina ne aumenta la sintesi.",
+  "clinica": "Mutazioni inattivanti in eterozigosi: MODY 2 (GCK), iperglicemia lieve e stabile a digiuno che di solito non richiede terapia. Mutazioni attivanti: iperinsulinismo congenito con ipoglicemie."
+ },
+ "canali K⁺-ATP": {
+  "tipo": "molecola",
+  "base": "Piccole porte delle cellule del pancreas che si chiudono quando c'è tanto zucchero, e così fanno uscire l'insulina.",
+  "superiore": "Canali del potassio della cellula β che si chiudono quando l'ATP aumenta. La chiusura depolarizza la membrana, apre i canali del Ca²⁺ e fa liberare insulina.",
+  "universita": "Ottameri di 4 subunità Kir6.2 (il canale) e 4 SUR1 (la parte regolatrice). Il rapporto ATP/ADP alto li chiude; il MgADP li apre. Lo stesso tipo di canale, con altre subunità, c'è nel cuore e nella muscolatura liscia.",
+  "clinica": "Sulfoniluree e glinidi si legano a SUR1 e chiudono i canali: aumentano l'insulina (rischio di ipoglicemia). Il diazossido li apre (si usa nell'insulinoma). Mutazioni attivanti di Kir6.2 o SUR1 danno diabete neonatale, curabile con le sulfoniluree."
+ },
+ "peptide C": {
+  "tipo": "molecola",
+  "base": "Un pezzetto che si stacca quando si forma l'insulina: misurarlo dice quanta insulina produce il pancreas.",
+  "superiore": "Peptide di connessione che si stacca dalla proinsulina quando si forma l'insulina. Esce dalla cellula β in quantità uguale all'insulina.",
+  "universita": "Taglio della proinsulina nei granuli di secrezione (proormone convertasi e carbossipeptidasi E). A differenza dell'insulina il fegato non lo trattiene e ha un'emivita più lunga: riflette bene la secrezione propria del paziente.",
+  "clinica": "Peptide C basso: diabete di tipo 1. Ipoglicemia con insulina alta e peptide C basso: insulina iniettata dall'esterno; con entrambi alti: insulinoma o assunzione di sulfoniluree."
+ },
+ "recettore dell'insulina": {
+  "tipo": "molecola",
+  "base": "La «serratura» sulle cellule a cui si attacca l'insulina per dare il suo messaggio.",
+  "superiore": "Recettore della membrana che lega l'insulina e attiva nella cellula una catena di segnali: entrata del glucosio, sintesi di glicogeno, grassi e proteine, crescita.",
+  "universita": "Recettore tirosin-chinasico (tetramero α₂β₂). Si autofosforila e fosforila le proteine IRS: via PI3K-Akt (GLUT4 in membrana, glicogeno sintasi attiva, gluconeogenesi frenata) e via MAPK (crescita). Nel fegato attiva anche la lipogenesi.",
+  "clinica": "Insulino-resistenza: segnale ridotto a valle del recettore (obesità, diabete di tipo 2, sindrome metabolica, PCOS); segno cutaneo tipico l'acanthosis nigricans. Mutazioni rare del recettore: insulino-resistenza grave ereditaria."
+ },
+ "tessuto adiposo": {
+  "tipo": "struttura",
+  "base": "Il grasso del corpo: una grande riserva di energia, ma anche una coperta che ci tiene caldi.",
+  "superiore": "Tessuto formato da adipociti che conservano energia come trigliceridi. Dopo il pasto, con l'insulina, accumula grassi; nel digiuno li libera come acidi grassi e glicerolo. Produce anche ormoni (leptina, adiponectina).",
+  "universita": "L'insulina attiva la lipoproteina lipasi (prende acidi grassi da chilomicroni e VLDL), fa entrare glucosio con GLUT4 e frena la lipolisi (ATGL, lipasi ormone-sensibile). Catecolamine, glucagone e cortisolo stimolano la lipolisi. Il tessuto adiposo bruno produce calore con la termogenina.",
+  "clinica": "Il grasso viscerale (addominale) è legato a insulino-resistenza, diabete di tipo 2 e rischio cardiovascolare (sindrome metabolica). La leptina segnala all'ipotalamo quanta riserva c'è."
+ },
+ "GLUT4": {
+  "tipo": "molecola",
+  "base": "La porticina che l'insulina apre nei muscoli e nel grasso per far entrare lo zucchero.",
+  "superiore": "Trasportatore del glucosio di muscolo scheletrico, cuore e tessuto adiposo. A riposo sta in vescicole dentro la cellula; l'insulina lo porta in membrana e il glucosio entra.",
+  "universita": "SLC2A4, diffusione facilitata. Traslocazione tramite la via PI3K-Akt. Anche la contrazione muscolare la provoca, attraverso l'AMPK, indipendentemente dall'insulina.",
+  "clinica": "L'esercizio fisico fa entrare glucosio nei muscoli anche quando c'è insulino-resistenza: per questo è parte della cura del diabete di tipo 2 (e attenzione alle ipoglicemie da sforzo in chi usa insulina)."
+ },
+ "cellule α del pancreas": {
+  "tipo": "struttura",
+  "base": "Le cellule del pancreas che producono il glucagone quando lo zucchero nel sangue scende.",
+  "superiore": "Cellule delle isole di Langerhans che producono glucagone. Si attivano quando la glicemia cala e sono frenate da glucosio e insulina.",
+  "universita": "Circa il 25% delle cellule delle isole. Stimolate da glicemia bassa, amminoacidi (soprattutto dopo pasti proteici), sistema simpatico e adrenalina; inibite da glucosio, insulina e somatostatina (azione paracrina) e dal GLP-1.",
+  "clinica": "Nel diabete di tipo 1 di lunga durata la risposta del glucagone all'ipoglicemia si perde: ipoglicemie più gravi. Nel diabete il glucagone è spesso troppo alto e contribuisce all'iperglicemia. Glucagonoma: diabete, eritema necrolitico migrante, calo di peso."
+ },
+ "recettore del glucagone": {
+  "tipo": "molecola",
+  "base": "La «serratura» del fegato a cui si attacca il glucagone per far uscire lo zucchero.",
+  "superiore": "Recettore della membrana delle cellule del fegato (e in misura minore di rene e tessuto adiposo) che lega il glucagone e fa liberare glucosio nel sangue.",
+  "universita": "Recettore accoppiato a proteina Gs: adenilato ciclasi → cAMP → PKA. La PKA attiva la glicogeno fosforilasi (tramite la fosforilasi chinasi), inibisce la glicogeno sintasi, abbassa il fruttosio 2,6-bisfosfato (meno glicolisi, più gluconeogenesi) e aumenta la sintesi di PEP carbossichinasi.",
+  "clinica": "Il glucagone si usa per l'ipoglicemia grave quando non si può dare zucchero per bocca (iniezione o spray nasale) e nell'intossicazione da β-bloccanti, perché aumenta il cAMP nel cuore senza passare dai recettori β."
+ },
+ "ormone della crescita (GH)": {
+  "tipo": "molecola",
+  "base": "Un messaggio dell'ipofisi che fa crescere i bambini e, negli adulti, aiuta a tenere su lo zucchero nel sangue.",
+  "superiore": "Somatotropina: ormone dell'ipofisi anteriore che stimola la crescita (soprattutto tramite l'IGF-1 prodotto dal fegato) e ha effetti opposti all'insulina: alza la glicemia e fa usare i grassi.",
+  "universita": "Secrezione a impulsi, maggiore durante il sonno profondo; stimolata dal GHRH, dall'ipoglicemia e dal digiuno, inibita dalla somatostatina e dall'IGF-1. Riduce l'entrata del glucosio nei tessuti e aumenta la lipolisi.",
+  "clinica": "Acromegalia (eccesso nell'adulto, adenoma ipofisario): spesso diabete o intolleranza al glucosio; diagnosi con IGF-1 e mancata soppressione del GH dopo carico di glucosio. Deficit nel bambino: bassa statura e ipoglicemie."
+ },
+ "diabete mellito di tipo 1": {
+  "tipo": "struttura",
+  "base": "Una malattia in cui il pancreas non produce più insulina: bisogna farsela con iniezioni o con un microinfusore.",
+  "superiore": "Diabete dovuto alla distruzione autoimmune delle cellule β: l'insulina manca del tutto. Inizia spesso nell'infanzia o nell'adolescenza (ma può comparire a ogni età) e richiede insulina per sempre.",
+  "universita": "Predisposizione genetica (HLA DR3 e DR4) e autoanticorpi contro antigeni delle isole (GAD65, IA-2, insulina, ZnT8). Peptide C basso. Esordio con sete, tanta urina, calo di peso, a volte chetoacidosi. Forma dell'adulto a lenta progressione: LADA.",
+  "clinica": "Terapia insulinica basal-bolus o con microinfusore, monitoraggio continuo del glucosio. Rischi acuti: ipoglicemia e chetoacidosi. Associato ad altre malattie autoimmuni (tiroidite, celiachia): screening periodico."
+ },
+ "diabete mellito di tipo 2": {
+  "tipo": "struttura",
+  "base": "Il diabete più frequente, soprattutto negli adulti in sovrappeso: l'insulina c'è, ma funziona male e col tempo diventa poca.",
+  "superiore": "Diabete dovuto a insulino-resistenza (le cellule rispondono poco all'insulina) e a un progressivo calo della funzione delle cellule β. È circa il 90% dei casi di diabete. Favorito da sovrappeso, sedentarietà e familiarità.",
+  "universita": "Diagnosi: glicemia a digiuno ≥126 mg/dL (confermata), glicemia 2 ore dopo carico orale di glucosio ≥200 mg/dL, HbA1c ≥6,5%, oppure glicemia casuale ≥200 mg/dL con sintomi. Spesso senza sintomi per anni.",
+  "clinica": "Complicanze microvascolari (retinopatia, nefropatia, neuropatia) e macrovascolari (infarto, ictus, arteriopatia). Terapia: stile di vita, metformina, inibitori di SGLT2 e agonisti del GLP-1 (con benefici su cuore e rene), poi altri farmaci e insulina. Emergenza tipica: stato iperglicemico iperosmolare."
+ },
+ "ipoglicemia": {
+  "tipo": "struttura",
+  "base": "Quando lo zucchero nel sangue scende troppo: si trema, si suda, si ha fame e ci si può sentire confusi.",
+  "superiore": "Glicemia troppo bassa: sotto 70 mg/dL è un valore di allarme, sotto 54 mg/dL è un'ipoglicemia importante. Il cervello, che usa quasi solo glucosio, ne soffre per primo.",
+  "universita": "Sintomi adrenergici (tremore, sudore, palpitazioni, fame) dovuti alla risposta controregolatoria, e neuroglicopenici (confusione, disturbi del comportamento, convulsioni, coma). Triade di Whipple: sintomi, glicemia bassa, miglioramento dopo glucosio.",
+  "clinica": "Cause più frequenti: insulina e sulfoniluree nei diabetici, alcol, digiuno prolungato; più rare insulinoma, insufficienza surrenalica, gravi malattie del fegato. Terapia: circa 15 g di zuccheri semplici e nuovo controllo dopo 15 minuti; se il paziente non è cosciente, glucagone o glucosio endovena."
+ },
+ "emoglobina glicata (HbA1c)": {
+  "tipo": "molecola",
+  "base": "Un esame del sangue che dice com'è stato lo zucchero nel sangue negli ultimi due-tre mesi.",
+  "superiore": "Emoglobina a cui si è legato il glucosio. Più alta è la glicemia media, più emoglobina si «zucchera». Riflette la glicemia media degli ultimi 2-3 mesi (la vita dei globuli rossi).",
+  "universita": "Legame non enzimatico (glicazione) del glucosio alla valina N-terminale della catena β. Valori: normale sotto 5,7% (39 mmol/mol), prediabete 5,7-6,4%, diabete ≥6,5% (48 mmol/mol). L'obiettivo di cura è spesso sotto il 7% (53 mmol/mol), da adattare al paziente.",
+  "clinica": "Falsamente bassa se i globuli rossi vivono meno (emolisi, emorragia, trasfusioni recenti, gravidanza); falsamente alta nella carenza di ferro. Alcune varianti dell'emoglobina disturbano il dosaggio."
+ },
+ "neuroni a GnRH": {
+  "tipo": "struttura",
+  "base": "Le cellule del cervello che danno il segnale per far partire la pubertà e il ciclo.",
+  "superiore": "Neuroni dell'ipotalamo che producono GnRH (ormone di rilascio delle gonadotropine) e lo liberano a impulsi nel sistema portale verso l'ipofisi.",
+  "universita": "Si trovano soprattutto nel nucleo arcuato e nell'area preottica. Durante lo sviluppo embrionale migrano dalla placca olfattiva all'ipotalamo. Il ritmo degli impulsi è guidato dai neuroni KNDy (kisspeptina, neurochinina B, dinorfina). Impulsi più frequenti favoriscono l'LH, più lenti l'FSH.",
+  "clinica": "Sindrome di Kallmann: i neuroni non migrano, ipogonadismo ipogonadotropo con anosmia. Amenorrea ipotalamica da stress, perdita di peso o sport intenso. Gli agonisti del GnRH dati in modo continuo (leuprorelina) spengono l'asse: tumore della prostata, endometriosi, pubertà precoce."
+ },
+ "follicolo dominante": {
+  "tipo": "struttura",
+  "base": "Il «sacchetto» dell'ovaio che a ogni ciclo vince la gara e libera l'ovocita.",
+  "superiore": "Follicolo che, tra quelli che crescono in un ciclo, viene selezionato verso la prima settimana e arriva a maturazione (follicolo di Graaf o preovulatorio). Produce molti estrogeni.",
+  "universita": "Viene scelto perché ha più recettori per l'FSH e un'aromatasi più attiva: continua a crescere anche quando l'FSH cala, mentre gli altri vanno in atresia. Acquista recettori per l'LH sulla granulosa. Prima dell'ovulazione misura circa 2 cm.",
+  "clinica": "Nella procreazione assistita si segue la crescita dei follicoli con l'ecografia transvaginale. Se maturano più follicoli possono nascere gemelli dizigoti."
+ },
+ "cellule della granulosa": {
+  "tipo": "struttura",
+  "base": "Le cellule che avvolgono l'ovocita nel follicolo, lo nutrono e producono gli ormoni femminili.",
+  "superiore": "Cellule del follicolo ovarico che circondano l'ovocita. Stimolate dall'FSH trasformano gli androgeni (prodotti dalle vicine cellule della teca sotto l'LH) in estradiolo.",
+  "universita": "Modello «due cellule, due gonadotropine»: teca (LH → androgeni) e granulosa (FSH → aromatasi, CYP19 → estradiolo). Producono anche inibina e, nei follicoli piccoli, ormone antimülleriano (AMH). Dopo l'ovulazione si luteinizzano e producono progesterone.",
+  "clinica": "L'AMH si usa per stimare la riserva ovarica. Tumore a cellule della granulosa: produce estrogeni (sanguinamenti, iperplasia dell'endometrio); l'inibina è un suo marcatore."
+ },
+ "inibina": {
+  "tipo": "molecola",
+  "base": "Un messaggio prodotto dalle ovaie e dai testicoli che dice all'ipofisi di produrre meno FSH.",
+  "superiore": "Ormone proteico prodotto dalle cellule della granulosa e dal corpo luteo nella donna e dalle cellule del Sertoli nell'uomo. Frena in modo selettivo la secrezione di FSH.",
+  "universita": "Glicoproteina della famiglia del TGF-β. Inibina B: dai follicoli antrali piccoli e dalle cellule del Sertoli (indice dell'attività della spermatogenesi). Inibina A: dal follicolo dominante, dal corpo luteo e dalla placenta. L'activina ha l'effetto opposto.",
+  "clinica": "L'inibina A fa parte del test combinato del secondo trimestre per la sindrome di Down (aumentata). Inibina B bassa con FSH alto indica danno della spermatogenesi. Marcatore dei tumori della granulosa."
+ },
+ "endometrio proliferativo": {
+  "tipo": "struttura",
+  "base": "Il rivestimento dell'utero che dopo la mestruazione si ricostruisce e diventa più spesso.",
+  "superiore": "Endometrio della prima metà del ciclo (fase proliferativa, dalla fine della mestruazione all'ovulazione): sotto gli estrogeni lo strato funzionale ricresce dallo strato basale.",
+  "universita": "Ghiandole dritte e tubulari, molte mitosi, stroma denso; gli estrogeni inducono anche i recettori per il progesterone, che servono nella fase successiva. Lo spessore aumenta di diversi millimetri.",
+  "clinica": "Estrogeni senza progesterone per molto tempo (cicli senza ovulazione, obesità, terapia con soli estrogeni) causano iperplasia dell'endometrio e aumentano il rischio di carcinoma endometriale: nella terapia ormonale della menopausa, se c'è l'utero, si aggiunge un progestinico."
+ },
+ "picco di LH": {
+  "tipo": "molecola",
+  "base": "Un'ondata improvvisa di un ormone dell'ipofisi che fa scoppiare il follicolo e liberare l'ovocita.",
+  "superiore": "Brusco aumento di LH (con un picco minore di FSH) a metà ciclo, scatenato dal feedback positivo degli estrogeni. Provoca l'ovulazione e trasforma il follicolo in corpo luteo.",
+  "universita": "Dura circa 48 ore. Fa riprendere la meiosi all'ovocita (fino alla metafase II), avvia la luteinizzazione della granulosa e attiva enzimi proteolitici e prostaglandine che rompono la parete del follicolo. L'ovulazione avviene circa 34-36 ore dopo l'inizio del picco.",
+  "clinica": "I test di ovulazione da farmacia rilevano l'LH nelle urine: i giorni più fertili sono quello del test positivo e i successivi 1-2. Nella fecondazione assistita il picco viene sostituito da un'iniezione di hCG o di un agonista del GnRH."
+ },
+ "feedback positivo": {
+  "tipo": "struttura",
+  "base": "Un sistema in cui un segnale, invece di spegnersi, si rinforza sempre di più, come una valanga.",
+  "superiore": "Meccanismo di regolazione in cui il prodotto aumenta lo stimolo che lo ha generato: il processo si amplifica finché un evento esterno lo interrompe. È più raro del feedback negativo.",
+  "universita": "Esempi: estrogeni alti e prolungati → picco di LH; ossitocina e contrazioni dell'utero nel parto; trombina che attiva i fattori V, VIII e XI; apertura dei canali del Na⁺ nel potenziale d'azione.",
+  "clinica": "Nelle emorragie gravi si possono innescare circoli viziosi (shock che peggiora la funzione del cuore, che peggiora lo shock)."
+ },
+ "ovulazione": {
+  "tipo": "struttura",
+  "base": "Il momento in cui l'ovaio libera un ovocita, circa a metà del ciclo.",
+  "superiore": "Rottura del follicolo dominante e liberazione dell'ovocita II, circa 14 giorni prima della mestruazione successiva. L'ovocita viene raccolto dalla tuba e resta fecondabile per circa 12-24 ore.",
+  "universita": "Provocata dal picco di LH: l'ovocita completa la meiosi I (primo globulo polare) e si ferma in metafase II; enzimi proteolitici e prostaglandine assottigliano la parete del follicolo nel punto di rottura (stigma). La fase luteale dura in modo abbastanza costante circa 14 giorni.",
+  "clinica": "Segni: dolore a metà ciclo (mittelschmerz), muco cervicale filante, aumento della temperatura basale dopo l'ovulazione. Anovulazione: PCOS, iperprolattinemia, disturbi ipotalamici, tiroide. Induzione dell'ovulazione con letrozolo o clomifene."
+ },
+ "endometrio secretivo": {
+  "tipo": "struttura",
+  "base": "Il rivestimento dell'utero dopo l'ovulazione: diventa morbido e pieno di nutrimento, pronto ad accogliere un embrione.",
+  "superiore": "Endometrio della seconda metà del ciclo (fase secretiva o luteale): sotto il progesterone le ghiandole secernono glicogeno e muco e i vasi si sviluppano. È pronto per l'impianto dell'embrione.",
+  "universita": "Ghiandole tortuose con vacuoli di glicogeno, stroma edematoso, arterie spirali allungate e attorcigliate. La «finestra di impianto» è di pochi giorni, circa una settimana dopo l'ovulazione. Se c'è gravidanza lo stroma si trasforma in decidua.",
+  "clinica": "Un difetto della fase luteale (progesterone insufficiente) è stato a lungo ipotizzato come causa di infertilità e aborti precoci; nella procreazione assistita si dà sempre supporto con progesterone."
+ },
+ "corpo albicante": {
+  "tipo": "struttura",
+  "base": "La piccola cicatrice bianca che resta nell'ovaio dopo che il corpo luteo si è spento.",
+  "superiore": "Cicatrice fibrosa che si forma quando il corpo luteo regredisce (luteolisi). Non produce ormoni.",
+  "universita": "Le cellule luteiniche muoiono e vengono sostituite da tessuto connettivo ricco di collagene; con il tempo il corpo albicante viene in gran parte riassorbito.",
+  "clinica": ""
+ },
+ "luteolisi": {
+  "tipo": "struttura",
+  "base": "Lo «spegnimento» del corpo luteo quando non c'è una gravidanza.",
+  "superiore": "Regressione del corpo luteo dopo circa 12-14 giorni dall'ovulazione, se l'embrione non produce hCG. Progesterone ed estrogeni crollano e arriva la mestruazione.",
+  "universita": "Il corpo luteo dipende dall'LH, che nella fase luteale è tenuto basso dal feedback negativo di progesterone, estrogeni e inibina. Nella donna il meccanismo è soprattutto locale (nell'ovaio); vi partecipano prostaglandine e apoptosi delle cellule luteiniche.",
+  "clinica": "Se c'è gravidanza l'hCG impedisce la luteolisi fino a quando la placenta prende il controllo della produzione di progesterone (verso la 7ª-9ª settimana). Il dosaggio dell'hCG serve proprio a questo nei test di gravidanza."
+ },
+ "prostaglandine": {
+  "tipo": "molecola",
+  "base": "Messaggi chimici prodotti in tanti tessuti: nell'utero causano i crampi delle mestruazioni.",
+  "superiore": "Eicosanoidi prodotti a partire dall'acido arachidonico, che agiscono vicino a dove si formano. Nell'utero fanno contrarre le arterie spirali e il muscolo (miometrio); altrove regolano infiammazione, dolore, febbre e protezione dello stomaco.",
+  "universita": "Sintesi: fosfolipasi A₂ → acido arachidonico → cicloossigenasi (COX-1 e COX-2) → PGH₂ → PGE₂, PGF₂α, PGI₂, TXA₂. Il calo del progesterone aumenta la loro produzione nell'endometrio. La PGF₂α fa contrarre l'utero.",
+  "clinica": "Dismenorrea primaria: troppe prostaglandine, i FANS sono la prima scelta. Il misoprostolo (analogo della PGE₁) si usa per indurre il travaglio, nell'interruzione di gravidanza e nell'emorragia dopo il parto. La PGE₂ mantiene aperto il dotto arterioso."
+ },
+ "amenorrea": {
+  "tipo": "struttura",
+  "base": "Quando le mestruazioni non arrivano: la prima cosa da pensare, in età fertile, è una gravidanza.",
+  "superiore": "Assenza delle mestruazioni. Primaria: non sono mai comparse (entro i 15 anni). Secondaria: si interrompono per almeno 3 mesi in chi aveva cicli regolari (6 mesi se irregolari).",
+  "universita": "Si ragiona per livelli: ipotalamo (stress, calo di peso, sport intenso), ipofisi (iperprolattinemia, adenomi), ovaio (PCOS, insufficienza ovarica prematura, sindrome di Turner), utero e vie di uscita (sindrome di Asherman, agenesia mülleriana, imene imperforato).",
+  "clinica": "Primi esami: test di gravidanza (β-hCG), poi FSH, LH, estradiolo, prolattina, TSH ed ecografia pelvica. Nell'amenorrea ipotalamica gli estrogeni bassi danneggiano le ossa (osteopenia)."
+ },
+ "sindrome dell'ovaio policistico (PCOS)": {
+  "tipo": "struttura",
+  "base": "Un disturbo frequente dell'ovaio che rende i cicli irregolari e può far crescere peli in eccesso.",
+  "superiore": "Disturbo ormonale frequente nelle donne in età fertile: cicli irregolari per ovulazione rara o assente, eccesso di androgeni (acne, irsutismo) e ovaie con molti piccoli follicoli all'ecografia.",
+  "universita": "Criteri di Rotterdam: almeno 2 su 3 tra oligo-anovulazione, iperandrogenismo (clinico o di laboratorio) e morfologia policistica, dopo aver escluso altre cause. Spesso LH alto rispetto all'FSH e insulino-resistenza, che aumenta gli androgeni dell'ovaio e riduce la SHBG.",
+  "clinica": "Rischi: infertilità, diabete di tipo 2, sindrome metabolica, iperplasia dell'endometrio (estrogeni senza progesterone). Terapia: stile di vita e calo di peso, pillola estroprogestinica per cicli e iperandrogenismo, metformina, letrozolo per indurre l'ovulazione."
+ },
+ "menopausa": {
+  "tipo": "struttura",
+  "base": "Il momento della vita, di solito intorno ai 50 anni, in cui le mestruazioni finiscono per sempre.",
+  "superiore": "Fine definitiva dei cicli mestruali per esaurimento dei follicoli dell'ovaio. Si conferma dopo 12 mesi senza mestruazioni; l'età media è intorno ai 50-51 anni.",
+  "universita": "Con pochi follicoli calano estradiolo e inibina, quindi l'FSH sale molto (feedback negativo perso). Gli anni prima (perimenopausa) hanno cicli irregolari. Prima dei 40 anni si parla di insufficienza ovarica prematura.",
+  "clinica": "Vampate, disturbi del sonno, secchezza vaginale, osteoporosi, aumento del rischio cardiovascolare. Terapia ormonale sostitutiva (estrogeni, più progestinico se c'è l'utero) per i sintomi, valutando rischi e benefici."
+ },
+ "pillola estroprogestinica": {
+  "tipo": "molecola",
+  "base": "Una pillola che, presa ogni giorno, impedisce l'ovulazione ed evita la gravidanza.",
+  "superiore": "Contraccettivo orale con un estrogeno (di solito etinilestradiolo) e un progestinico. Frena ipotalamo e ipofisi: niente picco di LH e quindi niente ovulazione.",
+  "universita": "Il progestinico blocca il picco di LH e rende denso il muco cervicale; l'estrogeno frena l'FSH (niente follicolo dominante) e stabilizza l'endometrio. Il sanguinamento della pausa è da sospensione, non una vera mestruazione.",
+  "clinica": "Rischio di tromboembolismo venoso (più alto nelle fumatrici oltre i 35 anni e con trombofilie); controindicata nell'emicrania con aura e dopo trombosi. Riduce il rischio di tumore dell'ovaio e dell'endometrio. Usata anche per PCOS, dismenorrea e mestruazioni abbondanti."
+ },
+ "infertilità": {
+  "tipo": "struttura",
+  "base": "Quando una coppia desidera un figlio ma, dopo un anno di tentativi, la gravidanza non arriva.",
+  "superiore": "Mancata gravidanza dopo 12 mesi di rapporti regolari non protetti (6 mesi se la donna ha 35 anni o più). Le cause possono essere femminili, maschili, di entrambi o non trovate.",
+  "universita": "Cause femminili: disturbi dell'ovulazione (PCOS, ipotalamo, iperprolattinemia), danni alle tube, endometriosi, età. Cause maschili: alterazioni della spermatogenesi (varicocele, criptorchidismo, cause genetiche, ormoni), ostruzioni delle vie seminali. In circa metà delle coppie c'è un fattore maschile.",
+  "clinica": "Si studiano sempre entrambi i partner: spermiogramma; nella donna conferma dell'ovulazione, pervietà delle tube, riserva ovarica (AMH, conta dei follicoli antrali). Tecniche: inseminazione intrauterina, FIVET, ICSI."
+ },
+ "cellule di Leydig": {
+  "tipo": "struttura",
+  "base": "Le cellule del testicolo che producono il testosterone, l'ormone maschile.",
+  "superiore": "Cellule interstiziali del testicolo, tra i tubuli seminiferi, vicino ai vasi. Stimolate dall'LH producono testosterone.",
+  "universita": "Il colesterolo entra nel mitocondrio con la proteina StAR (tappa che regola) e diventa pregnenolone, poi testosterone. Nel feto, stimolate dall'hCG, producono il testosterone che mascolinizza i genitali. Possono contenere i cristalli di Reinke.",
+  "clinica": "Testosterone basso con LH alto: danno primitivo del testicolo (ipogonadismo primario, per esempio sindrome di Klinefelter). Tumore a cellule di Leydig: pubertà precoce nel bambino, ginecomastia nell'adulto."
+ },
+ "recettore degli androgeni": {
+  "tipo": "molecola",
+  "base": "La «serratura» dentro le cellule a cui si attacca il testosterone per dare il suo messaggio.",
+  "superiore": "Recettore nucleare che lega testosterone e diidrotestosterone (DHT) e accende i geni degli effetti maschili. Nelle cellule del Sertoli è indispensabile per la spermatogenesi.",
+  "universita": "Fattore di trascrizione della famiglia dei recettori degli steroidi; il gene è sul cromosoma X. Il DHT, prodotto dal testosterone con la 5α-reduttasi, lo lega più forte. Contiene una sequenza ripetuta CAG di lunghezza variabile.",
+  "clinica": "Sindrome da insensibilità completa agli androgeni: cariotipo 46,XY, aspetto femminile, testicoli nell'addome, niente utero, testosterone e LH alti. Antiandrogeni (bicalutamide, enzalutamide) nel tumore della prostata. Espansione delle ripetizioni CAG: malattia di Kennedy."
+ },
+ "spermatocita primario": {
+  "tipo": "struttura",
+  "base": "Una cellula del testicolo che si prepara a dividersi in un modo speciale per fare gli spermatozoi.",
+  "superiore": "Cellula che nasce dallo spermatogonio e inizia la meiosi. Ha 46 cromosomi con il DNA già duplicato. Con la prima divisione meiotica forma due spermatociti secondari.",
+  "universita": "È la cellula germinale più grande del tubulo e rimane a lungo in profase I (circa tre settimane), durante la quale avvengono appaiamento degli omologhi e crossing-over. Si trova nel compartimento adluminale, oltre la barriera emato-testicolare.",
+  "clinica": "Errori di separazione dei cromosomi nella meiosi I paterna possono dare aneuploidie dei cromosomi sessuali (per esempio una parte dei casi di sindrome di Klinefelter, 47,XXY)."
+ },
+ "spermatociti secondari": {
+  "tipo": "struttura",
+  "base": "Cellule del testicolo a metà strada: hanno già dimezzato i cromosomi e stanno per dividersi ancora.",
+  "superiore": "Cellule nate dalla prima divisione meiotica: 23 cromosomi, ciascuno ancora fatto di due cromatidi. Vanno subito incontro alla seconda divisione meiotica.",
+  "universita": "Vivono pochissimo (poche ore), perciò al microscopio si vedono raramente. Metà contengono il cromosoma X e metà il cromosoma Y.",
+  "clinica": ""
+ },
+ "meiosi I": {
+  "tipo": "struttura",
+  "base": "La prima delle due divisioni speciali che dimezzano i cromosomi per fare i gameti.",
+  "superiore": "Divisione riduzionale: i cromosomi omologhi si appaiano, si scambiano pezzi (crossing-over) e poi si separano. Da una cellula con 46 cromosomi nascono due cellule con 23 cromosomi doppi.",
+  "universita": "Profase I (leptotene, zigotene, pachitene, diplotene, diacinesi) con complesso sinaptonemale e chiasmi; metafase I con le tetradi sulla piastra; anafase I con separazione degli omologhi. Nell'uomo avviene di continuo dalla pubertà; nella donna inizia prima della nascita e si blocca.",
+  "clinica": "La non-disgiunzione in meiosi I è all'origine di molte aneuploidie (trisomie, monosomie dei cromosomi sessuali)."
+ },
+ "meiosi II": {
+  "tipo": "struttura",
+  "base": "La seconda divisione speciale: divide a metà i cromosomi doppi.",
+  "superiore": "Divisione equazionale, simile a una mitosi ma senza duplicare prima il DNA: si separano i cromatidi fratelli. Da ogni spermatocita secondario nascono 2 spermatidi con 23 cromosomi semplici.",
+  "universita": "Avviene subito dopo la meiosi I, senza fase S. La coesina centromerica, protetta durante la meiosi I dalla shugoshina, viene ora tagliata dalla separasi. Nella donna la meiosi II si completa solo se l'ovocita viene fecondato.",
+  "clinica": ""
+ },
+ "spermatidi": {
+  "tipo": "struttura",
+  "base": "Cellule rotonde con metà dei cromosomi, che devono ancora prendere la forma di spermatozoo.",
+  "superiore": "Cellule aploidi (23 cromosomi) nate dalla meiosi II, vicino al lume del tubulo. Non si dividono più: con la spermiogenesi si trasformano in spermatozoi.",
+  "universita": "Da ogni spermatocita primario si formano 4 spermatidi, uniti da ponti citoplasmatici che permettono di condividere i prodotti dei geni (anche quelli del cromosoma X o Y). Si distinguono spermatidi rotondi e allungati.",
+  "clinica": ""
+ },
+ "spermiogenesi": {
+  "tipo": "struttura",
+  "base": "La trasformazione finale: una cellula rotonda diventa uno spermatozoo con testa e coda.",
+  "superiore": "Ultima fase della spermatogenesi, senza divisioni: lo spermatide forma l'acrosoma, il flagello e una testa compatta, e perde gran parte del citoplasma.",
+  "universita": "L'acrosoma deriva dall'apparato del Golgi; il flagello (assonema 9+2) nasce dal centriolo distale; i mitocondri formano la guaina del tratto intermedio; gli istoni sono sostituiti dalle protamine e la cromatina si compatta. I corpi residui sono fagocitati dalle cellule del Sertoli; la spermiazione libera lo spermatozoo nel lume.",
+  "clinica": "Difetti della struttura del flagello (discinesia ciliare primaria, sindrome di Kartagener) danno spermatozoi immobili e infertilità; si può ricorrere alla ICSI."
+ },
+ "spermatozoo maturo": {
+  "tipo": "struttura",
+  "base": "Uno spermatozoo «pronto» che ha imparato a nuotare nell'epididimo.",
+  "superiore": "Spermatozoo che, attraversando l'epididimo, ha acquistato la capacità di muoversi in modo progressivo. Diventerà capace di fecondare solo dopo la capacitazione nelle vie genitali femminili.",
+  "universita": "Nell'epididimo cambiano la membrana (lipidi e proteine di superficie) e la cromatina si stabilizza con ponti disolfuro. L'energia per il flagello viene dai mitocondri del tratto intermedio e dalla glicolisi (fruttosio del liquido seminale). Nelle vie genitali femminili sopravvive fino a circa 5 giorni.",
+  "clinica": "Nell'azoospermia ostruttiva gli spermatozoi si producono ma non escono: si possono prelevare dall'epididimo o dal testicolo per la ICSI."
+ },
+ "spermiogramma": {
+  "tipo": "struttura",
+  "base": "L'esame del liquido seminale: conta gli spermatozoi e guarda come si muovono e come sono fatti.",
+  "superiore": "Analisi del liquido seminale (dopo 2-7 giorni di astinenza): volume, numero, movimento e forma degli spermatozoi. È il primo esame per valutare la fertilità maschile.",
+  "universita": "Limiti inferiori di riferimento OMS (2021): volume 1,4 mL, concentrazione 16 milioni/mL, numero totale 39 milioni, motilità progressiva 30%, forme normali 4%. Termini: oligozoospermia (pochi), astenozoospermia (poco mobili), teratozoospermia (forme anomale), azoospermia (assenti).",
+  "clinica": "Un solo esame alterato va ripetuto dopo almeno qualche settimana, perché la spermatogenesi dura circa 70 giorni e febbre, farmaci o stress la alterano temporaneamente. Nell'azoospermia si dosano FSH, LH e testosterone e si studiano cariotipo e microdelezioni del cromosoma Y."
+ },
+ "varicocele": {
+  "tipo": "struttura",
+  "base": "Vene gonfie intorno al testicolo, di solito a sinistra: scaldano troppo il testicolo e possono ridurre gli spermatozoi.",
+  "superiore": "Dilatazione delle vene del plesso pampiniforme dello scroto, quasi sempre a sinistra. È frequente (circa un uomo su sette) ed è una causa comune di infertilità maschile correggibile.",
+  "universita": "Più frequente a sinistra perché la vena spermatica sinistra sbocca ad angolo retto nella vena renale sinistra (pressione più alta). Aumenta la temperatura del testicolo e lo stress ossidativo, peggiorando la spermatogenesi. Alla palpazione «sacchetto di vermi», più evidente in piedi e con la manovra di Valsalva.",
+  "clinica": "Diagnosi clinica ed ecodoppler. Si tratta (chirurgia o embolizzazione) se c'è infertilità con spermiogramma alterato o atrofia del testicolo nell'adolescente. Un varicocele improvviso a destra, o che non si svuota da sdraiati, fa cercare una massa retroperitoneale (tumore del rene)."
+ },
+ "criptorchidismo": {
+  "tipo": "struttura",
+  "base": "Quando un testicolo non è sceso nello scroto alla nascita e resta nella pancia o nell'inguine.",
+  "superiore": "Mancata discesa di uno o entrambi i testicoli nello scroto. È l'anomalia genitale più frequente nel neonato maschio, molto più comune nei prematuri. Il testicolo che resta caldo produce male gli spermatozoi.",
+  "universita": "Fattori della discesa: ormone antimülleriano e INSL3 (fase addominale), testosterone (fase inguino-scrotale). Molti testicoli scendono da soli nei primi mesi di vita. A temperatura corporea le cellule germinali si danneggiano progressivamente.",
+  "clinica": "Orchidopessi consigliata tra i 6 e i 18 mesi di età per proteggere la fertilità. Rischio aumentato di tumore a cellule germinali del testicolo (anche dopo la correzione) e di infertilità, soprattutto se bilaterale: insegnare l'autopalpazione."
+ }
+}

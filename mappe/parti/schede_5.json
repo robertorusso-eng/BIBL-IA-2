@@ -1,0 +1,728 @@
+{
+ "ione ammonio (NH₄⁺)": {
+  "tipo": "piccola",
+  "smiles": "[NH4+]",
+  "base": "Un rifiuto che si forma quando il corpo usa le proteine. È velenoso per il cervello, così il fegato lo trasforma subito in una sostanza innocua.",
+  "superiore": "Ione NH₄⁺, la forma dell'ammoniaca (NH₃) a pH del sangue. Contiene l'azoto tolto agli amminoacidi. Nel fegato diventa urea.",
+  "universita": "Equilibrio NH₃/NH₄⁺ con pKa circa 9,2: nel sangue prevale NH₄⁺, ma è NH₃ ad attraversare le membrane. Fonti: deaminazione del glutammato (glutammato deidrogenasi), glutaminasi, batteri del colon. Detossificazione: ciclo dell'urea negli epatociti periportali; glutammina sintetasi negli epatociti perivenosi, nel muscolo e negli astrociti.",
+  "clinica": "Iperammoniemia: insufficienza epatica (encefalopatia epatica), difetti del ciclo dell'urea, valproato. Sintomi: vomito, letargia, asterixis, fino al coma. Prelievo in ghiaccio e analisi rapida. Terapia: lattulosio, rifaximina; nei difetti congeniti dieta povera di proteine, benzoato e fenilbutirrato di sodio, dialisi nei casi gravi."
+ },
+ "transaminasi (ALT e AST)": {
+  "tipo": "enzima",
+  "base": "Aiutanti che spostano un pezzetto con l'azoto da una molecola all'altra.",
+  "superiore": "Enzimi che trasferiscono il gruppo amminico (–NH₂) da un amminoacido a un α-chetoacido, quasi sempre all'α-chetoglutarato, che diventa glutammato. Le principali sono l'ALT (alanina aminotransferasi) e l'AST (aspartato aminotransferasi).",
+  "universita": "Transferasi: ALT EC 2.6.1.2 (alanina + α-chetoglutarato ⇄ piruvato + glutammato), AST EC 2.6.1.1 (aspartato + α-chetoglutarato ⇄ ossalacetato + glutammato). Coenzima: piridossal fosfato (vitamina B6), meccanismo «ping-pong» con piridossammina fosfato. Reazioni reversibili: servono sia a demolire sia a sintetizzare amminoacidi non essenziali.",
+  "clinica": "Esami di funzionalità epatica: ALT più specifica del fegato, AST presente anche in muscolo e cuore. Molto alte (oltre 10-20 volte) in epatiti virali acute, danno da paracetamolo, ischemia epatica. Rapporto AST/ALT > 2 suggerisce epatopatia alcolica."
+ },
+ "α-chetoacidi": {
+  "tipo": "molecola",
+  "base": "Quello che resta di un amminoacido dopo che gli si toglie il pezzo con l'azoto.",
+  "superiore": "Lo «scheletro di carbonio» degli amminoacidi: al posto del gruppo amminico hanno un gruppo chetonico. Esempi: piruvato (dall'alanina), ossalacetato (dall'aspartato).",
+  "universita": "Prodotti delle transaminazioni. A seconda dell'amminoacido d'origine sono glucogenici (piruvato, ossalacetato, α-chetoglutarato, succinil-CoA, fumarato) o chetogenici (acetil-CoA, acetoacetil-CoA). Leucina e lisina sono solo chetogeniche.",
+  "clinica": "Malattia delle urine a sciroppo d'acero: deficit della deidrogenasi degli α-chetoacidi ramificati; accumulo di leucina, isoleucina, valina e dei loro chetoacidi, con encefalopatia neonatale. Fa parte dello screening neonatale."
+ },
+ "glutammato deidrogenasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che stacca l'azoto dal glutammato, così il fegato lo può eliminare.",
+  "superiore": "Enzima del mitocondrio che toglie il gruppo amminico al glutammato come ione ammonio (deaminazione ossidativa). Il glutammato torna α-chetoglutarato.",
+  "universita": "Ossidoreduttasi (EC 1.4.1.3), usa sia NAD⁺ sia NADP⁺. Reazione reversibile: glutammato + NAD(P)⁺ + H₂O ⇄ α-chetoglutarato + NH₄⁺ + NAD(P)H. Regolazione allosterica: ADP e GDP la attivano, ATP e GTP la inibiscono. Insieme alle transaminasi fa la «transdeaminazione».",
+  "clinica": "Mutazioni attivanti del gene GLUD1: sindrome iperinsulinismo-iperammoniemia (ipoglicemie dopo pasti proteici e ammoniaca moderatamente alta)."
+ },
+ "carbamil fosfato sintetasi I (CPS I)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che fa il primo passo per trasformare il rifiuto velenoso in urea.",
+  "superiore": "Enzima del mitocondrio del fegato che unisce ammoniaca e bicarbonato, spendendo 2 ATP, per formare il carbamil fosfato. È la tappa che regola il ciclo dell'urea.",
+  "universita": "Ligasi (EC 6.3.4.16). Attivatore allosterico obbligato: N-acetilglutammato (NAG), prodotto dalla NAG sintasi a partire da acetil-CoA e glutammato e stimolato dall'arginina: così il ciclo accelera quando arrivano molti amminoacidi. Diversa dalla CPS II citosolica, che usa la glutammina e serve alla sintesi delle pirimidine.",
+  "clinica": "Deficit di CPS I o di NAG sintasi: iperammoniemia neonatale grave senza aumento dell'acido orotico (a differenza del deficit di OTC). Il deficit di NAG sintasi si cura con acido carglumico, un analogo del NAG."
+ },
+ "carbamil fosfato": {
+  "tipo": "piccola",
+  "smiles": "NC(=O)OP(=O)(O)O",
+  "base": "Un pezzetto che contiene il primo azoto destinato a diventare urea.",
+  "superiore": "Molecola formata da ammoniaca, CO₂ (dal bicarbonato) e un fosfato. Porta il primo atomo di azoto nel ciclo dell'urea.",
+  "universita": "Anidride mista carbammico-fosforica, ad alta energia: cede il gruppo carbamile all'ornitina (OTC). Il carbamil fosfato citosolico (CPS II) è invece il primo intermedio della sintesi delle pirimidine.",
+  "clinica": "Nel deficit di OTC il carbamil fosfato mitocondriale passa nel citosol ed entra nella via delle pirimidine: aumenta l'acido orotico nelle urine."
+ },
+ "ornitina transcarbamilasi (OTC)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che attacca il primo azoto all'ornitina, la molecola che gira nel ciclo.",
+  "superiore": "Enzima del mitocondrio del fegato che trasferisce il gruppo carbamile dal carbamil fosfato all'ornitina: si forma la citrullina.",
+  "universita": "Transferasi (EC 2.1.3.3). Gene sull'X. La citrullina esce dal mitocondrio in cambio di ornitina tramite il trasportatore ORNT1.",
+  "clinica": "Il deficit di OTC è il difetto del ciclo dell'urea più frequente, legato all'X: maschi con iperammoniemia neonatale grave; femmine portatrici a volte con crisi dopo pasti ricchi di proteine. Esami: ammoniaca alta, citrullina bassa, acido orotico urinario alto."
+ },
+ "ornitina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCCN)C(=O)O",
+  "base": "Una molecola che gira in tondo nel ciclo dell'urea: alla fine di ogni giro torna come era all'inizio.",
+  "superiore": "Amminoacido che non entra nelle proteine. Nel ciclo dell'urea fa da «trasportatore»: riceve gli azoti, li cede come urea e si rigenera.",
+  "universita": "Si forma dall'arginina (arginasi) e riceve il carbamile (OTC). È anche precursore delle poliammine (ornitina decarbossilasi) e della prolina.",
+  "clinica": "L-ornitina L-aspartato si usa in alcuni Paesi per ridurre l'ammoniaca nell'encefalopatia epatica. L'eflornitina inibisce l'ornitina decarbossilasi (tripanosomiasi africana, irsutismo)."
+ },
+ "citrullina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCCNC(N)=O)C(=O)O",
+  "base": "Una molecola del ciclo dell'urea che porta il primo azoto fuori dal mitocondrio.",
+  "superiore": "Amminoacido che non entra nelle proteine. Si forma da ornitina e carbamil fosfato nel mitocondrio, poi esce nel citoplasma.",
+  "universita": "Nel citosol si condensa con l'aspartato (argininosuccinato sintetasi). È prodotta anche dall'ossido nitrico sintasi quando l'arginina diventa NO, e dagli enterociti, che la mandano al rene per fare arginina.",
+  "clinica": "Citrullina plasmatica molto alta: citrullinemia di tipo I (deficit di argininosuccinato sintetasi). Bassa: deficit di CPS I o OTC. È uno degli esami chiave per distinguere i difetti del ciclo."
+ },
+ "argininosuccinato sintetasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che attacca il secondo azoto, preso da un altro amminoacido.",
+  "superiore": "Enzima del citoplasma che unisce citrullina e aspartato formando argininosuccinato. Spende un ATP, che diventa AMP.",
+  "universita": "Ligasi (EC 6.3.4.5). Intermedio citrullil-AMP. ATP → AMP + PPi: la pirofosfatasi idrolizza il PPi, quindi costa 2 legami ad alta energia.",
+  "clinica": "Deficit: citrullinemia di tipo I, con iperammoniemia e citrullina molto alta. Terapia con dieta, arginina, chelanti dell'azoto (benzoato, fenilbutirrato)."
+ },
+ "aspartato": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CC(=O)O)C(=O)O",
+  "base": "Un mattoncino delle proteine che nel fegato regala il secondo azoto per fare l'urea.",
+  "superiore": "Amminoacido non essenziale con due gruppi carbossilici (acido). Si forma dall'ossalacetato con una transaminasi e porta il secondo azoto nel ciclo dell'urea.",
+  "universita": "Precursore di asparagina, purine e pirimidine. Nella navetta malato-aspartato trasporta equivalenti riducenti. Nel ciclo dell'urea il suo scheletro esce come fumarato, che torna ossalacetato e poi aspartato («bicicletta di Krebs»).",
+  "clinica": "L'aspartato aminotransferasi (AST) è un comune esame di danno di fegato e muscolo."
+ },
+ "argininosuccinato": {
+  "tipo": "molecola",
+  "base": "Una molecola che contiene già tutti e due gli azoti dell'urea.",
+  "superiore": "Intermedio del ciclo dell'urea formato da citrullina e aspartato. Si spezza in arginina e fumarato.",
+  "universita": "Substrato dell'argininosuccinato liasi. In caso di deficit dell'enzima viene eliminato nelle urine (contiene 2 azoti, quindi permette di eliminarne una parte).",
+  "clinica": "Aciduria argininosuccinica (deficit di argininosuccinato liasi): iperammoniemia, epatopatia, tricoressi nodosa (capelli fragili)."
+ },
+ "argininosuccinato liasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che taglia in due la molecola con i due azoti.",
+  "superiore": "Enzima del citoplasma che spezza l'argininosuccinato in arginina e fumarato.",
+  "universita": "Liasi (EC 4.3.2.1), eliminazione senza idrolisi né ossidazione. Il fumarato collega il ciclo dell'urea al ciclo di Krebs.",
+  "clinica": "Deficit: aciduria argininosuccinica; terapia con arginina, dieta e chelanti dell'azoto."
+ },
+ "arginina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCCNC(=N)N)C(=O)O",
+  "base": "Un mattoncino delle proteine che, nel fegato, si spezza e libera l'urea.",
+  "superiore": "Amminoacido basico (con carica positiva). Nel ciclo dell'urea è la molecola da cui si stacca l'urea.",
+  "universita": "Semi-essenziale: nell'adulto si forma dal ciclo intestino-rene (citrullina → arginina). Precursore di ossido nitrico (NO sintasi), creatina, agmatina; stimola la NAG sintasi e quindi il ciclo dell'urea.",
+  "clinica": "Nei difetti del ciclo dell'urea (tranne l'argininemia) si somministra arginina, che diventa essenziale. L'NO prodotto dall'arginina regola il tono dei vasi (i nitrati agiscono liberando NO)."
+ },
+ "arginasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che usa l'acqua per staccare l'urea dall'arginina.",
+  "superiore": "Enzima del citoplasma del fegato che idrolizza l'arginina in urea e ornitina. È l'ultimo passaggio del ciclo dell'urea.",
+  "universita": "Idrolasi (EC 3.5.3.1) con due ioni Mn²⁺ nel sito attivo. Arginasi 1 nel fegato (ciclo dell'urea); arginasi 2 mitocondriale in rene e altri tessuti (produce ornitina per poliammine e prolina).",
+  "clinica": "Deficit di arginasi 1 (argininemia): iperammoniemia lieve, diplegia spastica progressiva; qui non si dà arginina."
+ },
+ "alanina": {
+  "tipo": "molecola",
+  "smiles": "C[C@H](N)C(=O)O",
+  "base": "Un mattoncino delle proteine che porta l'azoto dai muscoli al fegato.",
+  "superiore": "Amminoacido semplice e non essenziale. Il muscolo trasferisce l'azoto sul piruvato e forma alanina, che va al fegato con il sangue.",
+  "universita": "Ciclo glucosio-alanina: nel muscolo piruvato + glutammato → alanina (ALT); nel fegato l'alanina torna piruvato, che fa glucosio (gluconeogenesi), e l'azoto va all'urea. È il principale amminoacido gluconeogenico nel digiuno.",
+  "clinica": "L'alanina aminotransferasi (ALT) è il marcatore più specifico di danno degli epatociti."
+ },
+ "glutammina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCC(N)=O)C(=O)O",
+  "base": "Un mattoncino delle proteine che trasporta l'azoto nel sangue in modo sicuro.",
+  "superiore": "L'amminoacido più abbondante nel sangue. Ha due atomi di azoto: è la forma non tossica con cui molti tessuti mandano l'ammoniaca al fegato e al rene.",
+  "universita": "Glutammina sintetasi: glutammato + NH₄⁺ + ATP → glutammina. Glutaminasi (fegato, rene, intestino) la riconverte liberando NH₄⁺. Nel rene l'ammoniaca dalla glutammina serve a eliminare acidi (ammoniogenesi, aumenta nell'acidosi). Donatore di azoto per purine, pirimidine e amminozuccheri; carburante per enterociti e linfociti.",
+  "clinica": "Nell'encefalopatia epatica gli astrociti accumulano glutammina dall'ammoniaca in eccesso: si gonfiano (edema cerebrale)."
+ },
+ "glucosio 1-fosfato": {
+  "tipo": "zucchero",
+  "smiles": "OCC1OC(OP(=O)(O)O)C(O)C(O)C1O",
+  "base": "Il glucosio con l'«etichetta» attaccata in un altro punto: è la forma che entra e esce dal glicogeno.",
+  "superiore": "Glucosio con un gruppo fosfato sul carbonio 1. Si forma quando il glicogeno viene demolito e serve per costruirlo.",
+  "universita": "Prodotto della glicogeno fosforilasi (fosforolisi). Si interconverte con il glucosio 6-fosfato (fosfoglucomutasi). È il substrato della UDP-glucosio pirofosforilasi. Nel metabolismo del galattosio si forma dal galattosio 1-fosfato (via GALT).",
+  "clinica": "Galattosemia classica (deficit di GALT): il galattosio 1-fosfato si accumula e non diventa glucosio 1-fosfato; vomito, ittero, cataratta nel neonato."
+ },
+ "fosfoglucomutasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che sposta l'etichetta del glucosio da un posto all'altro.",
+  "superiore": "Enzima che sposta il fosfato del glucosio dal carbonio 6 al carbonio 1 e viceversa. Serve sia a costruire sia a demolire il glicogeno.",
+  "universita": "Isomerasi/mutasi (EC 5.4.2.2) con una serina fosforilata nel sito attivo; intermedio glucosio 1,6-bisfosfato. Reazione vicina all'equilibrio: la direzione dipende dalle concentrazioni.",
+  "clinica": "Deficit di PGM1: rara malattia congenita della glicosilazione con ipoglicemia, epatopatia e miopatia."
+ },
+ "UTP": {
+  "tipo": "energia",
+  "base": "Una «pila» simile all'ATP, usata soprattutto per attaccare gli zuccheri.",
+  "superiore": "Uridina trifosfato: nucleotide con tre fosfati, come l'ATP ma con la base uracile. Dà energia alla sintesi del glicogeno e serve per fare l'RNA.",
+  "universita": "Attiva gli zuccheri formando UDP-zuccheri (UDP-glucosio, UDP-galattosio, UDP-glucuronato). Viene rigenerato da UDP + ATP (nucleoside difosfato chinasi). Precursore del CTP.",
+  "clinica": ""
+ },
+ "UDP-glucosio pirofosforilasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che prepara il glucosio per attaccarlo alla scorta.",
+  "superiore": "Enzima che unisce il glucosio 1-fosfato con l'UTP: si forma l'UDP-glucosio, il glucosio «attivato» e si libera pirofosfato.",
+  "universita": "Nucleotidiltransferasi (EC 2.7.7.9). Reazione di per sé reversibile, resa irreversibile dall'idrolisi del PPi da parte della pirofosfatasi inorganica.",
+  "clinica": ""
+ },
+ "UDP-glucosio": {
+  "tipo": "zucchero",
+  "base": "Il glucosio pronto per essere attaccato alla catena della scorta.",
+  "superiore": "Glucosio legato all'UDP: è la forma «attivata» del glucosio che la glicogeno sintasi aggiunge al glicogeno.",
+  "universita": "Donatore di glucosio per glicogeno, glicolipidi e glicoproteine. L'UDP-glucosio deidrogenasi lo ossida a UDP-glucuronato (coniugazione di bilirubina e farmaci); l'epimerasi lo converte in UDP-galattosio (via di Leloir).",
+  "clinica": "L'UDP-glucuronato derivato serve alla UGT1A1 per coniugare la bilirubina (sindromi di Gilbert e Crigler-Najjar quando l'enzima funziona poco)."
+ },
+ "UDP": {
+  "tipo": "energia",
+  "base": "La «pila scarica» che resta dopo aver attaccato lo zucchero.",
+  "superiore": "Uridina difosfato: nucleotide con due fosfati. Si libera quando la glicogeno sintasi aggiunge il glucosio alla catena.",
+  "universita": "Viene rifosforilato a UTP dalla nucleoside difosfato chinasi a spese di un ATP: per questo ogni glucosio aggiunto al glicogeno costa 2 legami ad alta energia.",
+  "clinica": ""
+ },
+ "glicogeno sintasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che allunga la catena della scorta di zucchero.",
+  "superiore": "Enzima che aggiunge il glucosio dell'UDP-glucosio alla punta di una catena di glicogeno con legami α(1→4). È la tappa regolata della sintesi del glicogeno.",
+  "universita": "Glicosiltransferasi (EC 2.4.1.11). Non può iniziare da sola: allunga un innesco di 7-8 glucosi costruito dalla glicogenina. Forma a (defosforilata, attiva) e b (fosforilata, meno attiva). La fosforilano PKA (glucagone, adrenalina) e GSK3; l'insulina la attiva inibendo GSK3 (via Akt) e attivando la fosfatasi PP1. Il glucosio 6-fosfato la attiva allostericamente.",
+  "clinica": "Deficit della glicogeno sintasi epatica (glicogenosi 0): ipoglicemia chetotica a digiuno e iperglicemia dopo i pasti. Nel diabete tipo 2 la sintesi di glicogeno muscolare è ridotta (resistenza all'insulina)."
+ },
+ "enzima ramificante": {
+  "tipo": "enzima",
+  "base": "L'aiutante che fa i «rami» della scorta di zucchero, come un albero.",
+  "superiore": "Enzima che stacca un pezzo della catena di glicogeno e lo riattacca di lato con un legame α(1→6), creando una ramificazione.",
+  "universita": "Amilo-(1,4→1,6)-transglicosilasi (EC 2.4.1.18). Trasferisce un segmento di 6-7 residui da una catena di almeno 11 residui. Le ramificazioni aumentano la solubilità e il numero di estremità non riducenti.",
+  "clinica": "Deficit: glicogenosi di tipo IV (Andersen). Glicogeno anomalo con poche ramificazioni, simile all'amilopectina: cirrosi epatica precoce."
+ },
+ "glicogeno fosforilasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che stacca il glucosio dalla scorta quando serve energia.",
+  "superiore": "Enzima che stacca un glucosio alla volta dalle punte del glicogeno usando un fosfato (non l'acqua): si forma glucosio 1-fosfato. È la tappa regolata della demolizione del glicogeno.",
+  "universita": "Glicosiltransferasi (EC 2.4.1.1), coenzima piridossal fosfato (il fosfato del PLP fa da acido-base). Si ferma 4 residui prima di una ramificazione. Forma b (meno attiva) → forma a (fosforilata) per opera della fosforilasi chinasi, attivata da PKA (glucagone, adrenalina) e da Ca²⁺ (contrazione muscolare). Nel muscolo l'AMP attiva la forma b; nel fegato il glucosio inibisce la forma a.",
+  "clinica": "Deficit muscolare: malattia di McArdle (glicogenosi V), crampi e mioglobinuria sotto sforzo, nessun aumento di lattato nel test da sforzo dell'avambraccio, fenomeno del «secondo respiro». Deficit epatico: malattia di Hers (glicogenosi VI), epatomegalia e ipoglicemia lieve."
+ },
+ "enzima deramificante": {
+  "tipo": "enzima",
+  "base": "L'aiutante che toglie i «rami» della scorta, così si può continuare a staccare zucchero.",
+  "superiore": "Enzima con due attività: sposta tre glucosi di un ramo corto su un'altra catena e poi stacca con l'acqua l'ultimo glucosio, quello del punto di ramificazione, come glucosio libero.",
+  "universita": "Un solo polipeptide con attività 4-α-glucanotransferasi (EC 2.4.1.25) e amilo-α-1,6-glucosidasi (EC 3.2.1.33). Circa il 10% del glucosio liberato dal glicogeno esce come glucosio libero, il resto come glucosio 1-fosfato.",
+  "clinica": "Deficit: glicogenosi di tipo III (Cori-Forbes), glicogeno con rami corti; epatomegalia, ipoglicemia (più lieve della von Gierke), spesso miopatia."
+ },
+ "enzimi della glicolisi": {
+  "tipo": "enzima",
+  "base": "La squadra di dieci aiutanti che spezza lo zucchero in due pezzi e ne ricava un po' di energia.",
+  "superiore": "I dieci enzimi che, nel citoplasma, trasformano un glucosio in due piruvati: esochinasi, fosfoglucosio isomerasi, fosfofruttochinasi-1, aldolasi, trioso fosfato isomerasi, gliceraldeide 3-fosfato deidrogenasi, fosfoglicerato chinasi, fosfoglicerato mutasi, enolasi, piruvato chinasi.",
+  "universita": "Tre tappe irreversibili e regolate: esochinasi/glucochinasi, PFK-1 (la principale, attivata da AMP e fruttosio 2,6-bisfosfato, inibita da ATP e citrato), piruvato chinasi (attivata dal fruttosio 1,6-bisfosfato, inibita da ATP, alanina e, nel fegato, dalla fosforilazione da glucagone). Le altre sette sono reversibili e servono anche alla gluconeogenesi.",
+  "clinica": "Deficit di piruvato chinasi eritrocitaria: anemia emolitica cronica non sferocitica. L'enolasi è il bersaglio del fluoruro, usato nelle provette per la glicemia per bloccare il consumo di glucosio."
+ },
+ "glucosio 6-fosfato deidrogenasi (G6PD)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che produce le «riserve di protezione» che difendono i globuli rossi dai danni.",
+  "superiore": "Primo enzima della via dei pentoso fosfati: ossida il glucosio 6-fosfato e produce NADPH. È la tappa che regola tutta la via.",
+  "universita": "Ossidoreduttasi (EC 1.1.1.49). Regolata soprattutto dal rapporto NADP⁺/NADPH: il NADPH la inibisce in modo competitivo. L'insulina ne aumenta la sintesi nel fegato in condizioni di sintesi lipidica. Gene sull'X.",
+  "clinica": "Deficit di G6PD, la carenza enzimatica più comune al mondo (diffusa nell'area mediterranea; protegge in parte dalla malaria): crisi emolitiche dopo fave (favismo), infezioni o farmaci ossidanti (primachina, dapsone, rasburicase, sulfamidici). Striscio: corpi di Heinz, cellule «morsicate». Il dosaggio dell'enzima va ripetuto lontano dalla crisi, quando i globuli rossi giovani possono dare un falso normale."
+ },
+ "NADP⁺": {
+  "tipo": "coenzima",
+  "base": "Un «carrello vuoto» che raccoglie energia per costruire grassi e proteggere la cellula.",
+  "superiore": "Nicotinammide adenin dinucleotide fosfato, forma ossidata. Accetta 2 elettroni e un H⁺ e diventa NADPH. Deriva dalla vitamina B3 (niacina).",
+  "universita": "Come il NAD⁺ ma con un fosfato in più sul 2' del ribosio adenilico: gli enzimi lo riconoscono e lo tengono separato dal pool del NAD. Nel citosol il rapporto NADPH/NADP⁺ è alto (ambiente riducente), quello NADH/NAD⁺ basso.",
+  "clinica": ""
+ },
+ "NADPH": {
+  "tipo": "coenzima",
+  "base": "Un «carrello carico» di energia che serve a costruire grassi e a proteggere le cellule dai danni.",
+  "superiore": "Forma ridotta del NADP⁺. Porta elettroni alle reazioni che costruiscono molecole (acidi grassi, colesterolo) e a quelle che difendono dall'ossidazione. Si produce soprattutto nella via dei pentoso fosfati.",
+  "universita": "Fonti: G6PD e 6-fosfogluconato deidrogenasi, enzima malico, isocitrato deidrogenasi NADP-dipendente. Usi: sintesi riduttive (acido grasso sintasi, HMG-CoA reduttasi), glutatione reduttasi, citocromi P450, NADPH ossidasi dei fagociti (esplosione respiratoria), ossido nitrico sintasi.",
+  "clinica": "Malattia granulomatosa cronica: difetto della NADPH ossidasi dei fagociti, infezioni ricorrenti da batteri catalasi-positivi e funghi; test con diidrorodamina (DHR). Deficit di G6PD: poco NADPH nei globuli rossi, emolisi."
+ },
+ "6-fosfoglucono-δ-lattone": {
+  "tipo": "zucchero",
+  "base": "Lo zucchero appena trasformato dal primo aiutante della via, ancora chiuso ad anello.",
+  "superiore": "Estere ciclico (lattone) che si forma dall'ossidazione del glucosio 6-fosfato sul carbonio 1.",
+  "universita": "Prodotto della G6PD. Si idrolizza spontaneamente, ma la lattonasi accelera la reazione ed evita che il lattone reagisca con altre molecole.",
+  "clinica": ""
+ },
+ "lattonasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che apre l'anello dello zucchero con l'acqua.",
+  "superiore": "Enzima che idrolizza il 6-fosfoglucono-δ-lattone in 6-fosfogluconato.",
+  "universita": "6-fosfogluconolattonasi (EC 3.1.1.31), idrolasi. Reazione praticamente irreversibile.",
+  "clinica": ""
+ },
+ "6-fosfogluconato": {
+  "tipo": "zucchero",
+  "smiles": "OC(=O)C(O)C(O)C(O)C(O)COP(=O)(O)O",
+  "base": "Uno zucchero trasformato in acido, a metà della via che produce le «riserve di protezione».",
+  "superiore": "Acido zuccherino a 6 atomi di carbonio con un fosfato. Si forma aprendo l'anello del lattone.",
+  "universita": "Substrato della 6-fosfogluconato deidrogenasi, che lo decarbossila ossidativamente a ribulosio 5-fosfato producendo il secondo NADPH.",
+  "clinica": ""
+ },
+ "6-fosfogluconato deidrogenasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che produce la seconda «riserva di protezione» e libera un po' di anidride carbonica.",
+  "superiore": "Enzima che ossida il 6-fosfogluconato e gli toglie un carbonio come CO₂: si formano ribulosio 5-fosfato e il secondo NADPH.",
+  "universita": "Ossidoreduttasi decarbossilante (EC 1.1.1.44), NADP⁺-dipendente. Intermedio 3-cheto-6-fosfogluconato.",
+  "clinica": ""
+ },
+ "ribulosio 5-fosfato": {
+  "tipo": "zucchero",
+  "base": "Uno zucchero con 5 atomi di carbonio, il punto d'arrivo della prima parte della via.",
+  "superiore": "Chetopentoso (zucchero a 5 atomi di carbonio con gruppo chetonico) con un fosfato. È il prodotto della fase ossidativa.",
+  "universita": "Diventa ribosio 5-fosfato (isomerasi) o xilulosio 5-fosfato (epimerasi). Nella fotosintesi la sua forma bisfosfato (ribulosio 1,5-bisfosfato) è il substrato della RuBisCO.",
+  "clinica": ""
+ },
+ "ribosio 5-fosfato isomerasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che trasforma uno zucchero a 5 atomi nello zucchero del DNA e dell'RNA.",
+  "superiore": "Isomerasi che trasforma il ribulosio 5-fosfato (chetoso) nel ribosio 5-fosfato (aldoso), con un intermedio enediolo.",
+  "universita": "Isomerasi (EC 5.3.1.6). Reazione reversibile, vicina all'equilibrio.",
+  "clinica": "Deficit di ribosio 5-fosfato isomerasi: malattia rarissima con leucoencefalopatia."
+ },
+ "ribosio 5-fosfato": {
+  "tipo": "zucchero",
+  "base": "Lo zucchero che serve a costruire il DNA e l'RNA.",
+  "superiore": "Aldopentoso (zucchero a 5 atomi di carbonio) con un fosfato. È lo zucchero dei nucleotidi e dei coenzimi come ATP, NAD⁺, FAD e coenzima A.",
+  "universita": "Con l'ATP forma il PRPP (PRPP sintetasi), base per la sintesi de novo e di recupero dei nucleotidi. Le cellule che si dividono molto ne hanno bisogno in quantità.",
+  "clinica": ""
+ },
+ "ribulosio 5-fosfato 3-epimerasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che gira un pezzetto dello zucchero dall'altra parte.",
+  "superiore": "Epimerasi che trasforma il ribulosio 5-fosfato nel suo epimero sul carbonio 3, lo xilulosio 5-fosfato.",
+  "universita": "Isomerasi (EC 5.1.3.1). Reazione reversibile della fase non ossidativa.",
+  "clinica": ""
+ },
+ "xilulosio 5-fosfato": {
+  "tipo": "zucchero",
+  "base": "Un altro zucchero a 5 atomi di carbonio che la cellula rimescola.",
+  "superiore": "Chetopentoso fosfato, epimero del ribulosio 5-fosfato. Cede 2 atomi di carbonio nelle reazioni della transchetolasi.",
+  "universita": "Donatore di unità a 2 C per la transchetolasi. Nel fegato fa anche da segnale: attiva la fosfatasi PP2A, che attiva la sintesi di fruttosio 2,6-bisfosfato e il fattore di trascrizione ChREBP (geni della lipogenesi) dopo un pasto ricco di carboidrati.",
+  "clinica": "Pentosuria essenziale: difetto benigno della via degli acidi uronici con L-xilulosio nelle urine."
+ },
+ "transchetolasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che sposta un pezzetto di 2 atomi di carbonio da uno zucchero all'altro.",
+  "superiore": "Enzima della fase non ossidativa che trasferisce un frammento di 2 atomi di carbonio da un chetoso a un aldoso. Usa la vitamina B1.",
+  "universita": "Transferasi (EC 2.2.1.1), coenzima tiamina pirofosfato (TPP) e Mg²⁺. Reazioni: xilulosio 5-P + ribosio 5-P ⇄ sedoeptulosio 7-P + gliceraldeide 3-P; xilulosio 5-P + eritrosio 4-P ⇄ fruttosio 6-P + gliceraldeide 3-P.",
+  "clinica": "L'attività della transchetolasi dei globuli rossi (e il suo aumento dopo aggiunta di TPP) misura la carenza di tiamina. Carenza di B1 negli alcolisti: encefalopatia di Wernicke-Korsakoff; dare tiamina prima del glucosio."
+ },
+ "transaldolasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che sposta un pezzetto di 3 atomi di carbonio da uno zucchero all'altro.",
+  "superiore": "Enzima della fase non ossidativa che trasferisce un frammento di 3 atomi di carbonio dal sedoeptulosio 7-fosfato alla gliceraldeide 3-fosfato.",
+  "universita": "Transferasi (EC 2.2.1.2), con una lisina che forma una base di Schiff (non usa TPP). Prodotti: eritrosio 4-fosfato e fruttosio 6-fosfato.",
+  "clinica": ""
+ },
+ "sedoeptulosio 7-fosfato": {
+  "tipo": "zucchero",
+  "base": "Uno zucchero con 7 atomi di carbonio che si forma mentre la cellula rimescola gli zuccheri.",
+  "superiore": "Chetoeptoso (zucchero a 7 atomi di carbonio) con un fosfato, intermedio della fase non ossidativa.",
+  "universita": "Prodotto della prima reazione della transchetolasi e substrato della transaldolasi.",
+  "clinica": ""
+ },
+ "eritrosio 4-fosfato": {
+  "tipo": "zucchero",
+  "base": "Uno zucchero piccolo, con 4 atomi di carbonio.",
+  "superiore": "Aldotetroso (zucchero a 4 atomi di carbonio) con un fosfato, intermedio della fase non ossidativa.",
+  "universita": "Accettore della seconda reazione della transchetolasi. In piante e batteri è precursore degli amminoacidi aromatici (via dello shikimato), che l'uomo non ha: per questo fenilalanina e triptofano sono essenziali.",
+  "clinica": ""
+ },
+ "glutatione ossidato (GSSG)": {
+  "tipo": "molecola",
+  "base": "Il «difensore» della cellula dopo aver combattuto le sostanze dannose: deve essere ricaricato.",
+  "superiore": "Due molecole di glutatione unite da un ponte disolfuro (–S–S–). Si forma quando il glutatione elimina le sostanze ossidanti.",
+  "universita": "Prodotto della glutatione perossidasi (enzima con selenio): 2 GSH + H₂O₂ → GSSG + 2 H₂O. Il rapporto GSH/GSSG, normalmente molto alto, è un indice dello stato redox della cellula.",
+  "clinica": ""
+ },
+ "glutatione reduttasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che ricarica il «difensore» della cellula.",
+  "superiore": "Enzima che riporta il glutatione ossidato alla forma ridotta usando gli elettroni del NADPH.",
+  "universita": "Flavoproteina (EC 1.8.1.7) con FAD (dalla vitamina B2). GSSG + NADPH + H⁺ → 2 GSH + NADP⁺.",
+  "clinica": "L'attività della glutatione reduttasi dei globuli rossi, con e senza FAD aggiunto, misura la carenza di riboflavina."
+ },
+ "glutatione ridotto (GSH)": {
+  "tipo": "molecola",
+  "base": "Il «difensore» della cellula: neutralizza le sostanze che la danneggiano.",
+  "superiore": "Tripeptide (glutammato, cisteina, glicina) con un gruppo –SH libero. È il principale antiossidante della cellula.",
+  "universita": "γ-glutamil-cisteinil-glicina: il legame γ lo protegge dalle peptidasi. Riduce perossidi (glutatione perossidasi), mantiene ridotti i gruppi –SH delle proteine e il ferro dell'emoglobina, coniuga farmaci e tossine (glutatione S-transferasi).",
+  "clinica": "Intossicazione da paracetamolo: il metabolita NAPQI esaurisce il glutatione epatico e causa necrosi; antidoto N-acetilcisteina, che fornisce cisteina per rifare glutatione."
+ },
+ "PRPP": {
+  "tipo": "zucchero",
+  "base": "Lo zucchero «attivato» da cui si costruiscono i pezzi del DNA e dell'RNA.",
+  "superiore": "5-fosforibosil-1-pirofosfato: ribosio con un fosfato sul carbonio 5 e un pirofosfato sul carbonio 1. È la base per costruire i nucleotidi.",
+  "universita": "Substrato della sintesi de novo delle purine (prima tappa regolata: glutammina-PRPP amidotransferasi) e delle pirimidine, e delle vie di recupero (HGPRT, APRT). Anche nella sintesi di NAD⁺ e di istidina e triptofano nei batteri.",
+  "clinica": "Sindrome di Lesch-Nyhan (deficit di HGPRT): il PRPP si accumula, aumenta la sintesi di purine e di acido urico; gotta, autolesionismo, disturbi motori."
+ },
+ "PRPP sintetasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che prepara lo zucchero per costruire i pezzi del DNA.",
+  "superiore": "Enzima che trasferisce un pirofosfato dall'ATP al ribosio 5-fosfato: si forma PRPP e l'ATP diventa AMP.",
+  "universita": "Ribosio-fosfato difosfochinasi (EC 2.7.6.1). Inibita da ADP e GDP e dai nucleotidi purinici.",
+  "clinica": "Iperattività della PRPP sintetasi (legata all'X): troppa sintesi di purine, iperuricemia e gotta precoce."
+ },
+ "ATP-citrato liasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che, fuori dal mitocondrio, spezza il citrato per riavere il pezzo da 2 atomi di carbonio.",
+  "superiore": "Enzima del citoplasma che spezza il citrato in acetil-CoA e ossalacetato spendendo un ATP. Serve a portare l'acetil-CoA fuori dal mitocondrio per fare grassi e colesterolo.",
+  "universita": "EC 2.3.3.8. Citrato + ATP + CoA → acetil-CoA + ossalacetato + ADP + Pi. La sua sintesi aumenta con l'insulina e con le diete ricche di carboidrati. L'ossalacetato torna malato (malato deidrogenasi) e poi piruvato con l'enzima malico, che produce NADPH.",
+  "clinica": "Acido bempedoico: profarmaco attivato nel fegato che inibisce l'ATP-citrato liasi e abbassa il colesterolo LDL, usato nei pazienti che non tollerano le statine."
+ },
+ "acetil-CoA carbossilasi (ACC)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che decide se il corpo deve fabbricare grassi.",
+  "superiore": "Enzima del citoplasma che aggiunge una CO₂ (dal bicarbonato) all'acetil-CoA e forma malonil-CoA, spendendo un ATP. È la tappa che regola la sintesi degli acidi grassi. Usa la biotina.",
+  "universita": "Ligasi (EC 6.4.1.2), biotina-dipendente: biotina carbossilasi + carbossitransferasi. Regolazione: il citrato la attiva (polimerizzazione), il palmitoil-CoA la inibisce; la fosforilazione da AMPK la inattiva (glucagone e adrenalina contribuiscono), l'insulina la attiva tramite defosforilazione e ne aumenta la sintesi (SREBP-1c). ACC1 citosolica (lipogenesi); ACC2 legata ai mitocondri (malonil-CoA che inibisce la CPT1).",
+  "clinica": "Carenza di biotina (molti albumi crudi, per l'avidina; deficit di biotinidasi o di olocarbossilasi sintetasi): colpisce tutte le carbossilasi, con dermatite, alopecia, acidosi."
+ },
+ "malonil-CoA": {
+  "tipo": "molecola",
+  "base": "Il «mattoncino attivato» con cui si allungano i grassi, 2 atomi di carbonio alla volta.",
+  "superiore": "Acetil-CoA con un carbonio in più (un gruppo carbossilico). È il donatore di unità a 2 atomi di carbonio nella sintesi degli acidi grassi.",
+  "universita": "Prodotto dell'ACC. Trasferito sull'ACP (malonil/acetil transacilasi) prima della condensazione. Inibisce la carnitina palmitoiltrasferasi I (CPT1): mentre si fanno grassi non si bruciano. È anche il donatore per gli allungamenti nel reticolo endoplasmatico.",
+  "clinica": "Deficit di malonil-CoA decarbossilasi: aciduria malonica, con cardiomiopatia e ipoglicemia."
+ },
+ "β-chetoacil-ACP sintasi": {
+  "tipo": "enzima",
+  "base": "La parte della «macchina dei grassi» che attacca il nuovo pezzetto alla catena.",
+  "superiore": "Attività dell'acido grasso sintasi che unisce la catena in crescita al malonile. Si libera una CO₂.",
+  "universita": "Dominio KS (condensante, EC 2.3.1.41) dell'acido grasso sintasi di tipo I dei mammiferi (EC 2.3.1.85, un omodimero multifunzionale). L'acile in crescita è legato a una cisteina del dominio KS, il malonile al braccio di fosfopanteteina dell'ACP; la decarbossilazione del malonile rende la condensazione favorevole.",
+  "clinica": "L'antibiotico cerulenina inibisce questo dominio (uso solo sperimentale)."
+ },
+ "β-chetoacil-ACP": {
+  "tipo": "molecola",
+  "base": "La catena del grasso appena allungata, ancora da «sistemare».",
+  "superiore": "Catena legata all'ACP con un gruppo chetonico sul carbonio β (carbonio 3). Al primo giro è l'acetoacetil-ACP (4 atomi di carbonio).",
+  "universita": "Prodotto della condensazione di Claisen tra acile e malonil-ACP. Viene ridotto in tre passaggi (riduzione, disidratazione, riduzione) fino a un acile saturo.",
+  "clinica": ""
+ },
+ "β-chetoacil-ACP reduttasi": {
+  "tipo": "enzima",
+  "base": "La parte della «macchina dei grassi» che fa la prima sistemazione usando energia del NADPH.",
+  "superiore": "Attività dell'acido grasso sintasi che riduce il gruppo chetonico a gruppo ossidrile usando NADPH.",
+  "universita": "Dominio KR (EC 1.1.1.100). Produce l'isomero D-β-idrossiacil-ACP (nella β-ossidazione l'intermedio è invece L-3-idrossiacil-CoA).",
+  "clinica": ""
+ },
+ "β-idrossiacil-ACP": {
+  "tipo": "molecola",
+  "base": "La catena del grasso a metà della sistemazione.",
+  "superiore": "Catena legata all'ACP con un gruppo –OH sul carbonio β. È l'isomero D.",
+  "universita": "D-3-idrossiacil-ACP. Viene disidratato a trans-Δ²-enoil-ACP.",
+  "clinica": ""
+ },
+ "β-idrossiacil-ACP deidratasi": {
+  "tipo": "enzima",
+  "base": "La parte della «macchina dei grassi» che toglie una goccia d'acqua alla catena.",
+  "superiore": "Attività dell'acido grasso sintasi che toglie una molecola d'acqua e crea un doppio legame.",
+  "universita": "Dominio DH (EC 4.2.1.59). Forma il doppio legame trans tra C2 e C3.",
+  "clinica": ""
+ },
+ "trans-Δ²-enoil-ACP": {
+  "tipo": "molecola",
+  "base": "La catena del grasso con un doppio legame, quasi pronta.",
+  "superiore": "Catena legata all'ACP con un doppio legame trans tra il carbonio 2 e il carbonio 3.",
+  "universita": "Substrato della enoil-ACP reduttasi. Il corrispondente nella β-ossidazione è il trans-Δ²-enoil-CoA.",
+  "clinica": ""
+ },
+ "enoil-ACP reduttasi": {
+  "tipo": "enzima",
+  "base": "La parte della «macchina dei grassi» che fa l'ultima sistemazione: la catena ora è più lunga di 2 atomi di carbonio.",
+  "superiore": "Attività dell'acido grasso sintasi che riduce il doppio legame usando NADPH. Si ottiene una catena satura allungata di 2 atomi di carbonio.",
+  "universita": "Dominio ER dell'acido grasso sintasi di tipo I. Nei batteri (sintasi di tipo II, enzimi separati) l'enzima corrispondente si chiama FabI (InhA nei micobatteri).",
+  "clinica": "L'isoniazide, attivata dall'enzima micobatterico KatG, inibisce InhA, l'enoil-ACP reduttasi di Mycobacterium tuberculosis: blocca la sintesi degli acidi micolici della parete. Resistenza: mutazioni di katG o inhA."
+ },
+ "acil-ACP (catena allungata)": {
+  "tipo": "molecola",
+  "base": "La catena del grasso cresciuta di 2 atomi di carbonio, pronta per un altro giro.",
+  "superiore": "Catena satura legata all'ACP, più lunga di 2 atomi di carbonio rispetto all'inizio del giro. Ricomincia il giro finché arriva a 16 atomi di carbonio.",
+  "universita": "Viene trasferita dall'ACP alla cisteina del dominio KS per il giro successivo. A 16 C (palmitoil-ACP) la tasca del dominio KS non accoglie catene più lunghe e interviene la tioesterasi.",
+  "clinica": ""
+ },
+ "tioesterasi": {
+  "tipo": "enzima",
+  "base": "La parte della «macchina dei grassi» che stacca il grasso finito.",
+  "superiore": "Attività dell'acido grasso sintasi che stacca con l'acqua il palmitato (16 atomi di carbonio) dall'ACP.",
+  "universita": "Dominio TE dell'acido grasso sintasi, specifico per catene di 16 C. Nella ghiandola mammaria una tioesterasi II libera catene più corte (acidi grassi a catena media del latte).",
+  "clinica": ""
+ },
+ "palmitato": {
+  "tipo": "molecola",
+  "smiles": "CCCCCCCCCCCCCCCC(=O)[O-]",
+  "base": "Il grasso «di base» che il corpo fabbrica da solo, con 16 atomi di carbonio.",
+  "superiore": "Acido grasso saturo con 16 atomi di carbonio (acido palmitico, 16:0). È il prodotto della sintesi degli acidi grassi.",
+  "universita": "Viene allungato (stearato, 18:0) e desaturato (oleato, 18:1 Δ⁹) nel reticolo endoplasmatico, oppure esterificato in trigliceridi e fosfolipidi. Si lega anche a proteine (palmitoilazione) per ancorarle alla membrana.",
+  "clinica": ""
+ },
+ "elongasi e desaturasi": {
+  "tipo": "enzima",
+  "base": "Gli aiutanti che allungano i grassi e ci mettono delle «pieghe».",
+  "superiore": "Enzimi del reticolo endoplasmatico: le elongasi allungano gli acidi grassi di 2 atomi di carbonio alla volta (con malonil-CoA), le desaturasi creano doppi legami (con O₂).",
+  "universita": "Elongasi ELOVL (condensazione, riduzione, disidratazione, riduzione, come nella sintasi ma con enzimi separati). Desaturasi: stearoil-CoA desaturasi (Δ⁹, SCD1), Δ⁵ e Δ⁶ desaturasi, con citocromo b₅ e NADH. L'uomo non sa inserire doppi legami oltre il C9: acido linoleico (ω-6) e α-linolenico (ω-3) sono essenziali; da questi si fanno arachidonato, EPA e DHA.",
+  "clinica": "Carenza di acidi grassi essenziali (nutrizione parenterale senza lipidi): dermatite squamosa, alopecia, scarsa crescita. Dall'arachidonato derivano prostaglandine e leucotrieni (bersaglio di FANS e corticosteroidi)."
+ },
+ "glicerolo 3-fosfato aciltransferasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che attacca i grassi al loro «gancio» per fare la scorta.",
+  "superiore": "Enzima che lega il primo acido grasso (come acil-CoA) al glicerolo 3-fosfato: è il primo passo per fare trigliceridi e fosfolipidi.",
+  "universita": "EC 2.3.1.15, tappa iniziale e regolata della via del glicerolo 3-fosfato (forme nel mitocondrio e nel reticolo endoplasmatico). Seguono: aggiunta del secondo acile (acido fosfatidico), rimozione del fosfato (fosfatasi, lipina) e aggiunta del terzo acile (DGAT). Il glicerolo 3-fosfato arriva dal diidrossiacetone fosfato o, nel fegato, dal glicerolo (glicerolo chinasi).",
+  "clinica": ""
+ },
+ "acetoacetil-CoA": {
+  "tipo": "molecola",
+  "base": "Due pezzetti da 2 atomi di carbonio uniti insieme, pronti a diventare corpi chetonici o colesterolo.",
+  "superiore": "Molecola con 4 atomi di carbonio legata al coenzima A. Si forma unendo due acetil-CoA.",
+  "universita": "Prodotto della tiolasi (reazione inversa dell'ultimo passaggio della β-ossidazione). Nel mitocondrio epatico è il primo intermedio della chetogenesi, nel citosol della sintesi del colesterolo. Nella chetolisi si forma dall'acetoacetato (SCOT).",
+  "clinica": "Deficit di β-chetotiolasi mitocondriale: episodi di chetoacidosi grave."
+ },
+ "HMG-CoA": {
+  "tipo": "molecola",
+  "base": "Una molecola-bivio: nel fegato può diventare carburante di riserva oppure colesterolo.",
+  "superiore": "3-idrossi-3-metilglutaril-CoA: molecola a 6 atomi di carbonio legata al coenzima A, fatta con tre acetil-CoA.",
+  "universita": "Prodotto dell'HMG-CoA sintasi. Nel mitocondrio epatico l'HMG-CoA liasi lo trasforma in acetoacetato (chetogenesi); nel citosol e nel reticolo endoplasmatico l'HMG-CoA reduttasi lo trasforma in mevalonato (colesterolo). Le due vie usano isoforme diverse della sintasi.",
+  "clinica": ""
+ },
+ "HMG-CoA liasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che taglia la molecola-bivio e libera il primo corpo chetonico.",
+  "superiore": "Enzima del mitocondrio del fegato che spezza l'HMG-CoA in acetoacetato e acetil-CoA.",
+  "universita": "Liasi (EC 4.1.3.4). Serve anche alla demolizione della leucina, che produce HMG-CoA.",
+  "clinica": "Deficit di HMG-CoA liasi: ipoglicemia ipochetotica a digiuno con acidosi metabolica (come nei difetti della β-ossidazione), acidi organici urinari anomali. Prevenzione: evitare il digiuno, dieta povera di leucina e grassi."
+ },
+ "acetoacetato": {
+  "tipo": "molecola",
+  "smiles": "CC(=O)CC(=O)[O-]",
+  "base": "Il primo «carburante di riserva» che il fegato produce quando si mangia poco.",
+  "superiore": "Corpo chetonico con 4 atomi di carbonio e un gruppo chetonico. Si forma nel fegato dall'HMG-CoA e viaggia nel sangue fino agli organi che lo usano.",
+  "universita": "β-chetoacido instabile: si decarbossila spontaneamente ad acetone. È ridotto a β-idrossibutirrato dalla β-idrossibutirrato deidrogenasi. Nei tessuti è attivato ad acetoacetil-CoA dalla SCOT. pKa circa 3,6: nel sangue è quasi tutto in forma di anione e porta un H⁺ liberato (acidosi).",
+  "clinica": "Le strisce reattive per urine (nitroprussiato) rilevano l'acetoacetato e, meno, l'acetone, ma non il β-idrossibutirrato: nella chetoacidosi diabetica possono sottostimare i chetoni; meglio dosare il β-idrossibutirrato nel sangue."
+ },
+ "β-idrossibutirrato": {
+  "tipo": "molecola",
+  "smiles": "CC(O)CC(=O)[O-]",
+  "base": "Il «carburante di riserva» più abbondante nel sangue durante il digiuno.",
+  "superiore": "Corpo chetonico con 4 atomi di carbonio e un gruppo ossidrile. Si forma riducendo l'acetoacetato. Tecnicamente non è un chetone, ma è chiamato corpo chetonico.",
+  "universita": "D-3-idrossibutirrato. Il rapporto β-idrossibutirrato/acetoacetato riflette il rapporto NADH/NAD⁺ del mitocondrio epatico: nel digiuno è circa 3:1 e aumenta molto in chetoacidosi diabetica e alcolica. Nel digiuno prolungato può superare 5 mmol/L.",
+  "clinica": "Chetoacidosi diabetica: β-idrossibutirrato capillare alto (soglie di riferimento delle linee guida intorno a 3 mmol/L), acidosi a gap anionico aumentato. Gli inibitori di SGLT2 possono dare una chetoacidosi con glicemia quasi normale (euglicemica). Chetoacidosi alcolica: soprattutto β-idrossibutirrato, chetoni urinari possono risultare bassi."
+ },
+ "β-idrossibutirrato deidrogenasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che trasforma un carburante di riserva nell'altro, avanti e indietro.",
+  "superiore": "Enzima del mitocondrio che riduce l'acetoacetato a β-idrossibutirrato con il NADH (nel fegato) e fa la reazione opposta nei tessuti che usano i corpi chetonici.",
+  "universita": "Ossidoreduttasi (EC 1.1.1.30) della membrana mitocondriale interna, richiede fosfatidilcolina. Reazione reversibile vicina all'equilibrio: la direzione dipende dal rapporto NADH/NAD⁺.",
+  "clinica": ""
+ },
+ "succinil-CoA:acetoacetato CoA transferasi (SCOT)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che permette a cervello e muscoli di usare il carburante di riserva. Il fegato non ce l'ha.",
+  "superiore": "Enzima del mitocondrio che sposta il coenzima A dal succinil-CoA all'acetoacetato, che diventa acetoacetil-CoA. Chiamato anche tioforasi.",
+  "universita": "CoA-transferasi (EC 2.8.3.5), gene OXCT1. Assente negli epatociti: il fegato esporta tutti i corpi chetonici che produce. Il succinil-CoA usato non fa GTP nel ciclo di Krebs: l'attivazione costa l'equivalente di un GTP.",
+  "clinica": "Deficit di SCOT: crisi ricorrenti di chetoacidosi grave, con chetosi persistente anche dopo i pasti."
+ },
+ "acetone": {
+  "tipo": "piccola",
+  "smiles": "CC(C)=O",
+  "base": "Una sostanza che dà all'alito un odore di frutta quando il corpo usa troppo i grassi.",
+  "superiore": "Il corpo chetonico più piccolo (3 atomi di carbonio). Si forma spontaneamente dall'acetoacetato perdendo CO₂. Non si usa come energia: è volatile ed esce con il respiro.",
+  "universita": "Decarbossilazione non enzimatica dell'acetoacetato. Una parte viene metabolizzata (fino a piruvato e lattato tramite il CYP2E1), il resto è eliminato con respiro e urine. Quantitativamente minore rispetto agli altri due corpi chetonici.",
+  "clinica": "Alito «fruttato» o «di mela» nella chetoacidosi diabetica. L'intossicazione da alcol isopropilico dà acetone alto senza acidosi metabolica (chetosi senza acidosi)."
+ },
+ "HMG-CoA reduttasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che decide quanto colesterolo fabbrica il corpo. Le medicine contro il colesterolo lo bloccano.",
+  "superiore": "Enzima del reticolo endoplasmatico che trasforma l'HMG-CoA in mevalonato usando 2 NADPH. È la tappa che regola la sintesi del colesterolo e il bersaglio delle statine.",
+  "universita": "Ossidoreduttasi (EC 1.1.1.34), proteina integrale del reticolo endoplasmatico con dominio sensore degli steroli. Regolazione: trascrizione tramite SREBP-2 (attivo quando gli steroli sono bassi, trattenuto da SCAP-Insig quando sono alti); degradazione accelerata da steroli e lanosterolo (ubiquitinazione legata a Insig); fosforilazione da AMPK (inattiva), defosforilazione favorita dall'insulina (attiva); glucagone la inibisce.",
+  "clinica": "Statine (atorvastatina, rosuvastatina, simvastatina...): inibitori competitivi; il calo del colesterolo epatico aumenta i recettori LDL e abbassa il colesterolo LDL del sangue. Effetti avversi: miopatia (fino alla rabdomiolisi, dosare la CK se dolori), aumento delle transaminasi, lieve aumento del rischio di diabete. Controindicate in gravidanza. Interazioni con inibitori del CYP3A4 (claritromicina, alcuni antifungini)."
+ },
+ "mevalonato": {
+  "tipo": "molecola",
+  "smiles": "CC(O)(CCO)CC(=O)[O-]",
+  "base": "Il primo pezzo «speciale» da cui il corpo costruisce il colesterolo.",
+  "superiore": "Molecola a 6 atomi di carbonio prodotta dall'HMG-CoA reduttasi. Da qui partono il colesterolo e molte altre molecole (isoprenoidi).",
+  "universita": "Acido 3,5-diidrossi-3-metilpentanoico. Dopo due fosforilazioni e una decarbossilazione diventa isopentenil pirofosfato. Dalla via del mevalonato derivano colesterolo, ubichinone (coenzima Q), dolicolo, gruppi farnesile e geranilgeranile per la prenilazione delle proteine (Ras, Rho).",
+  "clinica": "Deficit di mevalonato chinasi: forma lieve = sindrome da iper-IgD (febbri periodiche con linfoadenopatia, dolori addominali, rash); forma grave = aciduria mevalonica. La riduzione del coenzima Q da parte delle statine è una delle ipotesi sulla miopatia."
+ },
+ "chinasi del mevalonato e decarbossilasi": {
+  "tipo": "enzima",
+  "base": "Tre aiutanti che, spendendo energia, trasformano il mevalonato nel mattoncino a 5 atomi di carbonio.",
+  "superiore": "Tre enzimi del citoplasma: due chinasi aggiungono due fosfati al mevalonato (con 2 ATP), poi una decarbossilasi toglie CO₂ e un fosfato (con un terzo ATP). Si forma l'isopentenil pirofosfato.",
+  "universita": "Mevalonato chinasi (EC 2.7.1.36) → mevalonato 5-fosfato; fosfomevalonato chinasi (EC 2.7.4.2) → mevalonato 5-pirofosfato; difosfomevalonato decarbossilasi (EC 4.1.1.33), che usa ATP per fosforilare il 3-OH e poi elimina fosfato e CO₂.",
+  "clinica": "Deficit di mevalonato chinasi: sindrome da iper-IgD e aciduria mevalonica (malattie autoinfiammatorie; si usano farmaci anti-IL-1)."
+ },
+ "isopentenil pirofosfato (IPP)": {
+  "tipo": "molecola",
+  "smiles": "CC(=C)CCOP(=O)(O)OP(=O)(O)O",
+  "base": "Il «mattoncino» a 5 atomi di carbonio con cui si costruisce il colesterolo.",
+  "superiore": "Unità isoprenica attivata (5 atomi di carbonio con un pirofosfato). Sei di queste unità servono a costruire una molecola di colesterolo.",
+  "universita": "Isopentenil difosfato: il doppio legame è in posizione terminale (Δ³). Si isomerizza a dimetilallil pirofosfato. Nelle condensazioni fa da nucleofilo che si aggiunge al carbocatione allilico del partner.",
+  "clinica": "L'IPP accumulato quando si blocca la FPP sintasi (aminobisfosfonati) attiva i linfociti T γδ: è la causa della reazione di fase acuta (febbre, dolori) dopo la prima infusione di acido zoledronico."
+ },
+ "isopentenil pirofosfato isomerasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che fa la seconda versione del mattoncino a 5 atomi di carbonio.",
+  "superiore": "Enzima che sposta il doppio legame dell'isopentenil pirofosfato, formando il dimetilallil pirofosfato.",
+  "universita": "Isomerasi (EC 5.3.3.2). Meccanismo di protonazione-deprotonazione con intermedio carbocationico.",
+  "clinica": ""
+ },
+ "dimetilallil pirofosfato (DMAPP)": {
+  "tipo": "molecola",
+  "smiles": "CC(C)=CCOP(=O)(O)OP(=O)(O)O",
+  "base": "La seconda versione del mattoncino a 5 atomi di carbonio: serve per agganciare gli altri.",
+  "superiore": "Isomero dell'isopentenil pirofosfato, con il doppio legame in una posizione diversa. È la «testa» da cui parte la catena.",
+  "universita": "Il pirofosfato allilico si stacca facilmente formando un carbocatione allilico stabilizzato per risonanza: è l'elettrofilo della condensazione testa-coda con l'IPP.",
+  "clinica": ""
+ },
+ "farnesil pirofosfato sintasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che unisce i mattoncini a 5 atomi di carbonio, uno dopo l'altro.",
+  "superiore": "Enzima (prenil transferasi) che unisce il dimetilallil pirofosfato a un isopentenil pirofosfato (10 atomi di carbonio) e poi aggiunge un secondo isopentenil pirofosfato (15 atomi di carbonio).",
+  "universita": "Prenil transferasi con due attività: dimetilalliltranstransferasi (EC 2.5.1.1) e geraniltranstransferasi (EC 2.5.1.10). Condensazioni testa-coda con liberazione di PPi.",
+  "clinica": "Bersaglio degli aminobisfosfonati (alendronato, risedronato, acido zoledronico): bloccando la FPP sintasi negli osteoclasti impediscono la prenilazione di proteine come Ras e Rho, e gli osteoclasti muoiono. Usati in osteoporosi, metastasi ossee, malattia di Paget."
+ },
+ "geranil pirofosfato (GPP)": {
+  "tipo": "molecola",
+  "base": "Due mattoncini a 5 atomi di carbonio già uniti: 10 atomi in tutto.",
+  "superiore": "Isoprenoide a 10 atomi di carbonio (monoterpene) con un pirofosfato. Intermedio verso il farnesil pirofosfato.",
+  "universita": "Prodotto della condensazione testa-coda DMAPP + IPP. Nelle piante è il precursore dei monoterpeni (mentolo, limonene).",
+  "clinica": ""
+ },
+ "farnesil pirofosfato (FPP)": {
+  "tipo": "molecola",
+  "base": "Tre mattoncini uniti: 15 atomi di carbonio. Due di questi pezzi uniti fanno lo squalene.",
+  "superiore": "Isoprenoide a 15 atomi di carbonio (sesquiterpene) con un pirofosfato. Due molecole si uniscono per formare lo squalene.",
+  "universita": "Punto di ramificazione della via del mevalonato: squalene (colesterolo), geranilgeranil pirofosfato, dolicolo (glicosilazione delle proteine), catena laterale dell'ubichinone, gruppo farnesile dell'eme a. Farnesilazione delle proteine (Ras, lamina A) da parte della farnesiltransferasi.",
+  "clinica": "Progeria di Hutchinson-Gilford: la lamina A anomala (progerina) resta farnesilata; il lonafarnib, inibitore della farnesiltransferasi, è approvato per questa malattia."
+ },
+ "squalene sintasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che unisce due pezzi da 15 atomi di carbonio in una lunga catena da 30.",
+  "superiore": "Enzima del reticolo endoplasmatico che unisce due farnesil pirofosfato «testa-testa» formando lo squalene, usando NADPH.",
+  "universita": "Farnesil-difosfato farnesiltransferasi (EC 2.5.1.21). Passa per l'intermedio ciclopropanico presqualene pirofosfato; si liberano 2 PPi. È la prima tappa dedicata solo agli steroli.",
+  "clinica": ""
+ },
+ "squalene": {
+  "tipo": "molecola",
+  "base": "Una lunga catena oleosa da 30 atomi di carbonio. Si trova anche nell'olio di fegato di squalo, da cui il nome.",
+  "superiore": "Idrocarburo isoprenoide a 30 atomi di carbonio (triterpene), lineare e senza ossigeno. È il precursore diretto degli steroli.",
+  "universita": "Formato da 6 unità isopreniche. È presente nel sebo umano e in alcuni oli vegetali (oliva). L'epossidazione e la ciclizzazione lo trasformano in lanosterolo.",
+  "clinica": "Lo squalene è il componente principale di alcuni adiuvanti dei vaccini (emulsioni olio-in-acqua come MF59)."
+ },
+ "squalene epossidasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che attacca un atomo di ossigeno alla lunga catena.",
+  "superiore": "Enzima del reticolo endoplasmatico che aggiunge un atomo di ossigeno allo squalene (epossido), usando O₂ e NADPH.",
+  "universita": "Monoossigenasi a FAD (non un citocromo P450): un atomo di O₂ va nell'epossido, l'altro diventa acqua. È un secondo punto di controllo della via: gli steroli ne accelerano la degradazione.",
+  "clinica": "La terbinafina inibisce la squalene epossidasi dei funghi (bloccando la sintesi dell'ergosterolo): si usa per le onicomicosi e le dermatofitosi. Controllare la funzione epatica."
+ },
+ "2,3-ossidosqualene": {
+  "tipo": "molecola",
+  "base": "La lunga catena con un atomo di ossigeno attaccato: è pronta a chiudersi ad anelli.",
+  "superiore": "Squalene con un epossido (un anello a tre atomi con un ossigeno) a un'estremità. Chiamato anche squalene 2,3-epossido.",
+  "universita": "(3S)-2,3-ossidosqualene. La protonazione dell'epossido avvia la ciclizzazione a cascata nella ossidosqualene ciclasi; nelle piante dà invece cicloartenolo.",
+  "clinica": ""
+ },
+ "ossidosqualene ciclasi (lanosterolo sintasi)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che chiude la lunga catena in quattro anelli, in un colpo solo.",
+  "superiore": "Enzima del reticolo endoplasmatico che trasforma il 2,3-ossidosqualene in lanosterolo, formando i quattro anelli tipici degli steroidi.",
+  "universita": "Isomerasi (EC 5.4.99.7). Una sola reazione con una serie di ciclizzazioni concertate, poi spostamenti di idruri e metili (1,2-shift) e una deprotonazione finale.",
+  "clinica": ""
+ },
+ "lanosterolo": {
+  "tipo": "molecola",
+  "base": "Il primo «scheletro» a quattro anelli: assomiglia già al colesterolo ma ha qualche pezzo in più.",
+  "superiore": "Primo sterolo della via, con 30 atomi di carbonio e 4 anelli. Togliendo 3 gruppi metilici e spostando i doppi legami diventa colesterolo (27 atomi di carbonio).",
+  "universita": "Contiene tre metili in più (due su C4, uno su C14) e il doppio legame Δ⁸ e Δ²⁴. Le tappe successive procedono per la via di Bloch (attraverso il desmosterolo) o di Kandutsch-Russell (attraverso il 7-deidrocolesterolo). Il lanosterolo stimola la degradazione dell'HMG-CoA reduttasi.",
+  "clinica": ""
+ },
+ "lanosterolo 14α-demetilasi (CYP51) e altri enzimi": {
+  "tipo": "enzima",
+  "base": "La squadra di aiutanti che toglie i pezzi in più al lanosterolo e lo trasforma, poco alla volta, in colesterolo.",
+  "superiore": "Circa venti reazioni nel reticolo endoplasmatico: il primo enzima, il citocromo P450 CYP51, toglie il gruppo metilico sul carbonio 14; altri enzimi tolgono i due metili sul carbonio 4 e spostano i doppi legami.",
+  "universita": "CYP51 (lanosterolo 14α-demetilasi): monoossigenasi P450 che usa O₂ e NADPH e libera il metile come formiato. Seguono le C4-demetilasi (che liberano CO₂), riduttasi degli steroli e isomerasi (Δ⁸→Δ⁷, tra cui EBP).",
+  "clinica": "Gli antifungini azolici (fluconazolo, itraconazolo, voriconazolo) inibiscono il CYP51 dei funghi (sintesi dell'ergosterolo); inibiscono anche altri citocromi P450 umani, da cui molte interazioni farmacologiche."
+ },
+ "7-deidrocolesterolo reduttasi (DHCR7)": {
+  "tipo": "enzima",
+  "base": "L'ultimo aiutante: con una piccola modifica trasforma la molecola in colesterolo.",
+  "superiore": "Enzima del reticolo endoplasmatico che riduce il doppio legame tra i carboni 7 e 8 del 7-deidrocolesterolo, usando NADPH: si forma il colesterolo.",
+  "universita": "Ossidoreduttasi (EC 1.3.1.21). Ultima tappa della via di Kandutsch-Russell. Compete con la sintesi di vitamina D per il 7-deidrocolesterolo della pelle.",
+  "clinica": "Sindrome di Smith-Lemli-Opitz (autosomica recessiva): deficit di DHCR7, 7-deidrocolesterolo alto e colesterolo basso; microcefalia, sindattilia di 2° e 3° dito del piede, anomalie genitali, disabilità intellettiva. Diagnosi con il dosaggio del 7-deidrocolesterolo; si dà colesterolo con la dieta."
+ },
+ "colesterolo": {
+  "tipo": "molecola",
+  "base": "Una sostanza grassa che il corpo fabbrica e usa per costruire le pareti delle cellule e alcuni ormoni. Troppa nel sangue fa male alle arterie.",
+  "superiore": "Sterolo a 27 atomi di carbonio con 4 anelli e un gruppo –OH. Componente delle membrane delle cellule animali; precursore di ormoni steroidei, acidi biliari e vitamina D. Arriva dal cibo e viene prodotto soprattutto dal fegato.",
+  "universita": "Anfipatico: il 3β-OH verso l'acqua, l'anello rigido tra le code dei fosfolipidi; regola la fluidità della membrana e forma i lipid raft. Trasportato nel sangue dalle lipoproteine (LDL verso i tessuti, HDL verso il fegato) e esterificato da ACAT (cellule) e LCAT (plasma). Omeostasi: SREBP-2, recettore LDL, PCSK9, assorbimento intestinale tramite NPC1L1.",
+  "clinica": "Colesterolo LDL alto: fattore di rischio principale dell'aterosclerosi. Ipercolesterolemia familiare (mutazioni del recettore LDL, di APOB o PCSK9): xantomi tendinei, infarto precoce. Farmaci: statine, ezetimibe (blocca NPC1L1), inibitori di PCSK9, acido bempedoico."
+ },
+ "acidi biliari": {
+  "tipo": "molecola",
+  "base": "Sostanze fatte dal fegato con il colesterolo: nell'intestino aiutano a sciogliere i grassi, come il sapone con l'unto.",
+  "superiore": "Molecole derivate dal colesterolo e prodotte dal fegato (acido colico, acido chenodesossicolico). Coniugati con glicina o taurina formano i sali biliari della bile, che emulsionano i grassi nell'intestino.",
+  "universita": "Sintesi: colesterolo 7α-idrossilasi (CYP7A1), tappa limitante, inibita a feedback dagli acidi biliari tramite il recettore FXR (e FGF19 intestinale). Circa il 95% è riassorbito nell'ileo terminale e torna al fegato (circolo enteroepatico). I batteri del colon formano gli acidi biliari secondari (desossicolico, litocolico).",
+  "clinica": "Le resine sequestranti (colestiramina) interrompono il circolo enteroepatico: il fegato usa più colesterolo e il colesterolo LDL cala. Resezione ileale: diarrea da acidi biliari e malassorbimento dei grassi. Acido ursodesossicolico: colangite biliare primitiva e alcuni calcoli di colesterolo."
+ },
+ "colesterolo 7α-idrossilasi (CYP7A1)": {
+  "tipo": "enzima",
+  "base": "L'aiutante del fegato che comincia a trasformare il colesterolo in acidi biliari.",
+  "superiore": "Enzima del reticolo endoplasmatico del fegato che aggiunge un –OH al carbonio 7 del colesterolo. È la tappa che regola la sintesi degli acidi biliari.",
+  "universita": "Citocromo P450 (monoossigenasi con O₂ e NADPH), presente solo nel fegato. Inibito a livello trascrizionale dagli acidi biliari (FXR → SHP; FGF19 dall'ileo); stimolato dal colesterolo tramite LXR (nel roditore più che nell'uomo).",
+  "clinica": "I sequestranti degli acidi biliari ne aumentano l'attività (meno feedback): il fegato consuma più colesterolo. Deficit di CYP7A1: ipercolesterolemia e calcoli biliari."
+ },
+ "pregnenolone": {
+  "tipo": "molecola",
+  "base": "Il punto di partenza da cui le ghiandole fanno tutti gli ormoni «steroidi».",
+  "superiore": "Steroide a 21 atomi di carbonio ottenuto tagliando la catena laterale del colesterolo. Da qui si formano progesterone, cortisolo, aldosterone, testosterone ed estrogeni.",
+  "universita": "Si forma nel mitocondrio (CYP11A1). Esce verso il reticolo endoplasmatico, dove la 3β-idrossisteroide deidrogenasi lo trasforma in progesterone e il CYP17A1 in 17α-idrossipregnenolone e DHEA.",
+  "clinica": "Iperplasia surrenale congenita: difetti degli enzimi a valle (il più comune è la 21-idrossilasi, con 17-idrossiprogesterone alto, virilizzazione e perdita di sale)."
+ },
+ "enzima di taglio della catena laterale (CYP11A1)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che accorcia il colesterolo per cominciare a fare gli ormoni.",
+  "superiore": "Enzima del mitocondrio delle ghiandole endocrine (surrene, gonadi, placenta) che taglia la catena laterale del colesterolo: si forma il pregnenolone.",
+  "universita": "Citocromo P450 (desmolasi, P450scc) della membrana mitocondriale interna; usa O₂ e NADPH tramite adrenodossina e adrenodossina reduttasi. Il passaggio limitante della steroidogenesi è il trasporto del colesterolo nel mitocondrio con la proteina StAR, stimolato da ACTH, LH e angiotensina II.",
+  "clinica": "Iperplasia surrenale lipoidea congenita (di solito da mutazioni di StAR, raramente di CYP11A1): deficit di tutti gli steroidi, crisi surrenalica e genitali femminili nei maschi XY. Il ketoconazolo inibisce vari enzimi della steroidogenesi (usato nella sindrome di Cushing)."
+ },
+ "piruvato decarbossilasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante dei lieviti che stacca un pezzetto dallo zucchero e libera le bollicine di gas.",
+  "superiore": "Enzima dei lieviti (e di alcuni batteri) che toglie una CO₂ al piruvato e forma acetaldeide. Usa la vitamina B1. Non esiste nell'uomo.",
+  "universita": "Liasi (EC 4.1.1.1), coenzima tiamina pirofosfato (TPP) e Mg²⁺. Decarbossilazione non ossidativa (a differenza del complesso della piruvato deidrogenasi, che è ossidativo e usa anche lipoato, CoA, FAD e NAD⁺). Irreversibile.",
+  "clinica": ""
+ },
+ "acetaldeide": {
+  "tipo": "piccola",
+  "smiles": "CC=O",
+  "base": "Una sostanza che si forma dall'alcol: è lei a far stare male dopo aver bevuto troppo.",
+  "superiore": "Aldeide con 2 atomi di carbonio (CH₃CHO). Nei lieviti si forma dal piruvato e diventa etanolo; nell'uomo si forma dall'etanolo bevuto ed è tossica.",
+  "universita": "Molto reattiva: forma addotti con proteine e DNA. Nel fegato è ossidata ad acetato dall'aldeide deidrogenasi mitocondriale (ALDH2). Classificata dall'IARC come cancerogena (nel contesto del consumo di alcol).",
+  "clinica": "Accumulo di acetaldeide: reazione con rossore, nausea, cefalea, tachicardia (deficit di ALDH2 o disulfiram). Contribuisce al danno epatico alcolico e al rischio di tumori di esofago e cavo orale."
+ },
+ "alcol deidrogenasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che fa l'alcol nei lieviti e, nel nostro fegato, lo comincia a smaltire.",
+  "superiore": "Enzima che trasforma l'acetaldeide in etanolo con il NADH (nei lieviti) e, al contrario, l'etanolo in acetaldeide con il NAD⁺ (nel fegato dell'uomo).",
+  "universita": "Ossidoreduttasi (EC 1.1.1.1), metalloenzima con Zn²⁺. Nell'uomo più classi di isoenzimi (soprattutto epatici, ma anche gastrici). Cinetica di saturazione già a basse alcolemie: l'etanolo viene eliminato a velocità quasi costante (ordine zero). Con il consumo cronico aumenta anche il sistema microsomiale (CYP2E1).",
+  "clinica": "Intossicazione da metanolo o glicole etilenico: l'ADH li trasforma in acidi tossici (formico, glicolico, ossalico) con acidosi a gap anionico e gap osmolare aumentati, cecità (metanolo), insufficienza renale (glicole). Antidoto: fomepizolo (o etanolo), che blocca l'ADH; dialisi. L'aumento del NADH epatico durante il metabolismo dell'alcol frena la gluconeogenesi (ipoglicemia) e favorisce steatosi e iperlattatemia."
+ },
+ "etanolo": {
+  "tipo": "piccola",
+  "smiles": "CCO",
+  "base": "L'alcol del vino e della birra, prodotto dai lieviti quando trasformano lo zucchero.",
+  "superiore": "Alcol con 2 atomi di carbonio (CH₃CH₂OH). È il prodotto della fermentazione alcolica dei lieviti. Nell'uomo è assorbito rapidamente e smaltito soprattutto dal fegato.",
+  "universita": "Apporta circa 7 kcal/g. Metabolismo: ADH (citosol) → acetaldeide; ALDH2 (mitocondrio) → acetato → acetil-CoA. Vie secondarie: CYP2E1 (induzione nel consumo cronico) e catalasi. Il metabolismo produce molto NADH: rapporto NADH/NAD⁺ alto.",
+  "clinica": "Effetti metabolici dell'alcol: ipoglicemia (blocco della gluconeogenesi), acidosi lattica, chetoacidosi alcolica, steatosi epatica, iperuricemia. Alcolisti: carenza di tiamina (dare B1). Clinica dell'abuso: epatite alcolica, cirrosi, pancreatite."
+ },
+ "aldeide deidrogenasi (ALDH2)": {
+  "tipo": "enzima",
+  "base": "L'aiutante del fegato che trasforma la sostanza tossica dell'alcol in una innocua.",
+  "superiore": "Enzima del mitocondrio del fegato che ossida l'acetaldeide ad acetato usando NAD⁺.",
+  "universita": "Ossidoreduttasi (EC 1.2.1.3), isoforma mitocondriale con Km bassa per l'acetaldeide. La variante ALDH2*2 (Glu504Lys), frequente in Asia orientale, è quasi inattiva ed è dominante negativa.",
+  "clinica": "Disulfiram inibisce l'ALDH: se si beve alcol, l'acetaldeide si accumula (rossore, nausea, vomito, ipotensione); usato per scoraggiare il bere. Reazioni simili («disulfiram-like») con metronidazolo e alcune cefalosporine. I portatori di ALDH2*2 che bevono hanno un rischio più alto di tumore dell'esofago."
+ },
+ "lattobacilli": {
+  "tipo": "struttura",
+  "base": "Batteri buoni che trasformano lo zucchero del latte in acido lattico: così nascono lo yogurt e alcuni formaggi.",
+  "superiore": "Batteri del genere Lactobacillus (Gram-positivi, a bastoncino). Fanno la fermentazione lattica e producono acido lattico, che acidifica l'ambiente. Si usano per yogurt, formaggi, crauti; vivono anche nell'intestino e nella vagina.",
+  "universita": "Anaerobi aerotolleranti. Omofermentanti (solo lattato) o eterofermentanti (lattato, etanolo o acetato e CO₂, tramite la via della fosfochetolasi). L'acido lattico abbassa il pH e inibisce altri microrganismi.",
+  "clinica": "Nella vagina i lattobacilli (bacilli di Döderlein) mantengono il pH acido (circa 4-4,5); nella vaginosi batterica diminuiscono e il pH sale. Usati come probiotici. Raramente causa di batteriemia in pazienti immunodepressi."
+ },
+ "lieviti (Saccharomyces)": {
+  "tipo": "struttura",
+  "base": "Funghi piccolissimi, fatti di una sola cellula, che fanno lievitare il pane e trasformano l'uva in vino.",
+  "superiore": "Funghi unicellulari. Saccharomyces cerevisiae, il lievito di birra e del pane, senza ossigeno fa la fermentazione alcolica: trasforma il glucosio in etanolo e CO₂.",
+  "universita": "Eucarioti anaerobi facoltativi: con ossigeno respirano, senza ossigeno fermentano; con molto glucosio fermentano anche in presenza di ossigeno (effetto Crabtree). Organismo modello di genetica e biologia cellulare (ciclo cellulare, autofagia). La membrana contiene ergosterolo invece di colesterolo.",
+  "clinica": "Saccharomyces boulardii si usa come probiotico (diarrea da antibiotici). I lieviti patogeni più importanti sono altri (Candida, Cryptococcus); l'ergosterolo della loro membrana è il bersaglio di azoli, terbinafina, amfotericina B."
+ }
+}

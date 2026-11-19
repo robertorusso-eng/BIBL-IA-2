@@ -1,0 +1,3028 @@
+[
+ {
+  "id": "FMO-001",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Quali sono i due postulati su cui Einstein fondò la relatività ristretta?",
+  "opzioni": {
+   "A": "Le leggi della fisica sono le stesse in tutti i sistemi inerziali e la velocità della luce nel vuoto è la stessa per tutti gli osservatori inerziali",
+   "B": "Il tempo è assoluto e lo spazio si contrae alle alte velocità",
+   "C": "La luce si propaga nell'etere e la massa si conserva sempre",
+   "D": "La velocità della luce dipende dalla velocità della sorgente e le leggi della fisica cambiano tra sistemi inerziali",
+   "E": "L'energia si conserva e la gravità curva lo spazio-tempo"
+  },
+  "giusta": "A",
+  "perche": "Einstein partì da due soli principi: il principio di relatività (nessun esperimento distingue un sistema inerziale da un altro) e l'invarianza della velocità della luce c. Dilatazione dei tempi e contrazione delle lunghezze non sono postulati ma conseguenze di questi due principi. La trappola tipica è confondere la relatività ristretta con quella generale, dove entra la curvatura dello spazio-tempo dovuta alla gravità. Anche l'etere non fa parte della teoria: anzi, la teoria lo rende superfluo.",
+  "semplice": "Se sei su un treno perfettamente liscio e lanci una palla, tutto funziona come a terra: è il primo postulato. Se accendi una torcia, chiunque, fermo o in movimento, misura per la luce sempre circa 300 000 km/s: è il secondo.",
+  "passaggi": [
+   "Einstein partì da due soli principi.",
+   "Principio di relatività: le leggi della fisica sono le stesse in tutti i sistemi inerziali.",
+   "Invarianza della velocità della luce: c è la stessa per tutti gli osservatori inerziali.",
+   "Dilatazione dei tempi e contrazione delle lunghezze sono conseguenze, non postulati; la curvatura è relatività generale; l'etere non serve.",
+   "Risposta: la A."
+  ],
+  "concetto": "postulati di Einstein"
+ },
+ {
+  "id": "FMO-002",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Quanto vale il fattore di Lorentz γ per un corpo che si muove a v = 0,6c?",
+  "opzioni": {
+   "A": "0,8",
+   "B": "1,6",
+   "C": "0,6",
+   "D": "2,5",
+   "E": "1,25"
+  },
+  "giusta": "E",
+  "perche": "Il fattore di Lorentz è γ = 1/√(1 − v²/c²). Con v = 0,6c si ha v²/c² = 0,36, quindi 1 − 0,36 = 0,64, la cui radice è 0,8: γ = 1/0,8 = 1,25. La trappola è fermarsi a 0,8, cioè alla radice, dimenticando di fare il reciproco. Ricorda che γ è sempre maggiore o uguale a 1.",
+  "semplice": "Il fattore γ dice di quanto «si allunga» il tempo di un orologio in moto. A 0,6c vale 1,25: un secondo dell'orologio in moto viene visto durare 1,25 secondi da chi sta fermo.",
+  "passaggi": [
+   "v²/c² = 0,6² = 0,36",
+   "1 − 0,36 = 0,64",
+   "√0,64 = 0,8",
+   "γ = 1/0,8 = 1,25"
+  ],
+  "concetto": "fattore di Lorentz"
+ },
+ {
+  "id": "FMO-003",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Un muone ha una vita media propria di 2,2 μs. Se si muove a 0,8c rispetto alla Terra, quanto dura la sua vita media misurata da un osservatore terrestre?",
+  "opzioni": {
+   "A": "Circa 1,3 μs",
+   "B": "Circa 3,7 μs",
+   "C": "2,2 μs",
+   "D": "Circa 1,8 μs",
+   "E": "Circa 6,1 μs"
+  },
+  "giusta": "B",
+  "perche": "Il tempo proprio è quello misurato nel sistema in cui il muone è fermo; per chi lo vede muoversi il tempo è dilatato: Δt = γ·Δt₀. A 0,8c il fattore γ vale 1/√(1 − 0,64) = 1/0,6 ≈ 1,667, quindi Δt ≈ 2,2 × 1,667 ≈ 3,7 μs. L'errore tipico è dividere per γ invece di moltiplicare, ottenendo 1,3 μs: il tempo proprio è sempre il più breve.",
+  "semplice": "Un orologio in moto, visto da terra, va più piano. Il muone «vive» 2,2 μs nel suo orologio, ma da terra lo vediamo vivere più a lungo, circa 3,7 μs.",
+  "passaggi": [
+   "γ = 1/√(1 − 0,8²) = 1/0,6 ≈ 1,667",
+   "Δt = γ·Δt₀ = 1,667 × 2,2 μs",
+   "Δt ≈ 3,7 μs"
+  ],
+  "concetto": "dilatazione dei tempi"
+ },
+ {
+  "id": "FMO-004",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Un'astronave lunga 100 m (lunghezza propria) passa davanti alla Terra a 0,8c. Quanto è lunga per un osservatore terrestre?",
+  "opzioni": {
+   "A": "100 m",
+   "B": "60 m",
+   "C": "167 m",
+   "D": "80 m",
+   "E": "36 m"
+  },
+  "giusta": "B",
+  "perche": "La lunghezza misurata nella direzione del moto si contrae: L = L₀/γ = L₀·√(1 − v²/c²). Con v = 0,8c la radice vale 0,6, quindi L = 100 × 0,6 = 60 m. La trappola è moltiplicare per γ e ottenere 167 m, oppure usare v/c = 0,8 direttamente come fattore. La contrazione riguarda solo la dimensione parallela al moto.",
+  "semplice": "Un oggetto che sfreccia velocissimo appare più corto nella direzione in cui si muove. A 0,8c un'astronave di 100 m appare lunga 60 m, ma la sua larghezza non cambia.",
+  "passaggi": [
+   "√(1 − 0,8²) = √0,36 = 0,6",
+   "L = L₀ × 0,6 = 100 × 0,6",
+   "L = 60 m"
+  ],
+  "concetto": "contrazione delle lunghezze"
+ },
+ {
+  "id": "FMO-005",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Quanta energia corrisponde alla massa di 1 g di materia secondo E = mc²?",
+  "opzioni": {
+   "A": "9 × 10¹⁶ J",
+   "B": "3 × 10⁵ J",
+   "C": "9 × 10¹³ J",
+   "D": "9 × 10¹⁰ J",
+   "E": "3 × 10⁸ J"
+  },
+  "giusta": "C",
+  "perche": "Bisogna esprimere la massa in kilogrammi: 1 g = 10⁻³ kg. Allora E = 10⁻³ × (3 × 10⁸)² = 10⁻³ × 9 × 10¹⁶ = 9 × 10¹³ J. L'errore più comune è usare la massa in grammi e ottenere 9 × 10¹⁶ J, mille volte di più. Un altro errore è dimenticare il quadrato di c.",
+  "semplice": "Anche una massa piccolissima contiene un'enorme energia di riposo: 1 g equivale a circa 90 mila miliardi di joule, l'energia consumata da una città media in diversi giorni.",
+  "passaggi": [
+   "m = 1 g = 10⁻³ kg",
+   "c² = (3 × 10⁸)² = 9 × 10¹⁶ m²/s²",
+   "E = 10⁻³ × 9 × 10¹⁶ = 9 × 10¹³ J"
+  ],
+  "concetto": "equivalenza massa-energia"
+ },
+ {
+  "id": "FMO-006",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Due razzi si allontanano dalla Terra in versi opposti, ciascuno a 0,5c rispetto alla Terra. Con che velocità un razzo vede allontanarsi l'altro?",
+  "opzioni": {
+   "A": "1,0c",
+   "B": "0,8c",
+   "C": "0,5c",
+   "D": "0,25c",
+   "E": "1,25c"
+  },
+  "giusta": "B",
+  "perche": "Alle alte velocità le velocità non si sommano semplicemente: si usa u' = (u + v)/(1 + uv/c²). Con u = v = 0,5c si ottiene (0,5 + 0,5)/(1 + 0,25) = 1/1,25 = 0,8c. La trappola è la somma galileiana, che darebbe esattamente c. La formula relativistica garantisce che nessuna velocità relativa superi mai c.",
+  "semplice": "Nella vita quotidiana 50 + 50 km/h fa 100 km/h. Quando le velocità sono vicine a quella della luce, la somma «si accorcia»: metà della luce più metà della luce fa solo 0,8 volte la luce.",
+  "passaggi": [
+   "u = 0,5c, v = 0,5c",
+   "uv/c² = 0,25",
+   "u' = (0,5 + 0,5)c/(1 + 0,25) = c/1,25",
+   "u' = 0,8c"
+  ],
+  "concetto": "composizione delle velocità"
+ },
+ {
+  "id": "FMO-007",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Che cosa dimostrò l'esperimento di Michelson e Morley (1887)?",
+  "opzioni": {
+   "A": "Che non si osserva alcuna differenza nella velocità della luce dovuta al moto della Terra rispetto a un ipotetico etere",
+   "B": "Che la luce è formata da particelle chiamate fotoni",
+   "C": "Che la velocità della luce cambia a seconda della stagione",
+   "D": "Che l'etere esiste e trascina la luce con sé",
+   "E": "Che gli orologi in moto rallentano"
+  },
+  "giusta": "A",
+  "perche": "Michelson e Morley usarono un interferometro per cercare uno spostamento delle frange dovuto al «vento d'etere», cioè al moto della Terra nel mezzo che si pensava trasportasse la luce. Non trovarono alcun effetto apprezzabile. Questo risultato nullo fu uno degli indizi che portarono a pensare la velocità della luce come invariante. La trappola è credere che l'esperimento abbia misurato la dilatazione dei tempi: quella fu verificata molto più tardi, per esempio con i muoni e con orologi atomici in volo.",
+  "semplice": "Era come cercare il vento correndo in bici, aspettandosi di sentirlo in faccia: invece la luce andava sempre alla stessa velocità in tutte le direzioni, come se il vento non ci fosse.",
+  "passaggi": [
+   "Michelson e Morley cercavano con un interferometro il «vento d'etere» dovuto al moto della Terra.",
+   "Se l'etere esistesse, la velocità della luce misurata cambierebbe con la direzione e le frange si sposterebbero.",
+   "Non osservarono alcuno spostamento apprezzabile: risultato nullo.",
+   "Non riguardava i fotoni né la dilatazione dei tempi, verificata molto più tardi.",
+   "Dimostrò che non c'è differenza nella velocità della luce dovuta al moto rispetto all'etere."
+  ],
+  "concetto": "esperimento di Michelson-Morley"
+ },
+ {
+  "id": "FMO-008",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Che cosa si intende per «relatività della simultaneità»?",
+  "opzioni": {
+   "A": "Due eventi simultanei per un osservatore possono non esserlo per un altro osservatore in moto rispetto al primo",
+   "B": "Due eventi simultanei lo sono per tutti gli osservatori",
+   "C": "Gli orologi di tutti gli osservatori segnano sempre la stessa ora",
+   "D": "Un evento può avvenire prima della sua causa",
+   "E": "Il tempo scorre allo stesso modo ovunque nell'universo"
+  },
+  "giusta": "A",
+  "perche": "In relatività la simultaneità dipende dal sistema di riferimento: due lampi che per chi è sul marciapiede arrivano contemporaneamente possono non esserlo per chi viaggia sul treno. Ciò discende dall'invarianza della velocità della luce. Attenzione però: l'ordine di eventi legati da un rapporto di causa-effetto non si inverte mai, perché nessun segnale supera c. La trappola è pensare che la relatività permetta di invertire causa ed effetto.",
+  "semplice": "Due fulmini colpiscono i due estremi di un treno. Chi è a terra a metà strada li vede insieme; chi è sul treno, andando incontro a uno dei due lampi, vede prima quello davanti.",
+  "passaggi": [
+   "La velocità della luce è la stessa per tutti gli osservatori inerziali.",
+   "Due lampi che arrivano insieme a chi è fermo possono arrivare in tempi diversi a chi si muove verso uno dei due.",
+   "Quindi la simultaneità dipende dal sistema di riferimento.",
+   "L'ordine di causa ed effetto però non si inverte mai, perché nessun segnale supera c.",
+   "Risposta: la A."
+  ],
+  "concetto": "simultaneità relativa"
+ },
+ {
+  "id": "FMO-009",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "test",
+  "domanda": "Un elettrone (energia di riposo 0,511 MeV) ha fattore di Lorentz γ = 2. Quanto vale la sua energia cinetica?",
+  "opzioni": {
+   "A": "1,022 MeV",
+   "B": "0,256 MeV",
+   "C": "0,511 MeV",
+   "D": "1,533 MeV",
+   "E": "2,044 MeV"
+  },
+  "giusta": "C",
+  "perche": "L'energia totale è E = γmc², e l'energia cinetica è la differenza tra energia totale e energia di riposo: K = (γ − 1)mc². Con γ = 2 si ottiene K = 1 × 0,511 MeV = 0,511 MeV. La trappola è dare l'energia totale (1,022 MeV) come energia cinetica, oppure usare la formula classica ½mv², che alle alte velocità non vale.",
+  "semplice": "Quando un elettrone ha γ = 2, la sua energia totale è il doppio di quella che ha da fermo. Metà è energia di riposo, l'altra metà è energia di movimento.",
+  "passaggi": [
+   "E = γmc² = 2 × 0,511 = 1,022 MeV",
+   "K = E − mc² = 1,022 − 0,511",
+   "K = 0,511 MeV"
+  ],
+  "concetto": "energia cinetica relativistica"
+ },
+ {
+  "id": "FMO-010",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "test",
+  "domanda": "Quale relazione lega energia totale E, quantità di moto p e massa m di una particella?",
+  "opzioni": {
+   "A": "E² = (pc)² + (mc²)²",
+   "B": "E = pc + mc²",
+   "C": "E = ½mv² + mc²",
+   "D": "E² = (pc)² − (mc²)²",
+   "E": "E = p²/2m"
+  },
+  "giusta": "A",
+  "perche": "La relazione energia-impulso relativistica è E² = (pc)² + (mc²)². Per una particella ferma (p = 0) si ritrova E = mc²; per una particella senza massa, come il fotone, si ha E = pc. La trappola è sommare direttamente pc e mc² senza i quadrati, o usare formule classiche che valgono solo a basse velocità.",
+  "semplice": "È come il teorema di Pitagora: l'energia totale è l'ipotenusa di un triangolo rettangolo i cui cateti sono l'energia di riposo e il termine pc. Per la luce il cateto della massa è zero.",
+  "passaggi": [
+   "La relazione energia-impulso relativistica è E² = (pc)² + (mc²)².",
+   "Controllo 1: particella ferma, p = 0, dà E = mc².",
+   "Controllo 2: fotone senza massa, m = 0, dà E = pc.",
+   "Le formule senza quadrati o classiche non soddisfano questi casi in generale.",
+   "La relazione è E² = (pc)² + (mc²)²."
+  ],
+  "concetto": "relazione energia-impulso"
+ },
+ {
+  "id": "FMO-011",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "test",
+  "domanda": "Perché un corpo dotato di massa non può raggiungere la velocità della luce?",
+  "opzioni": {
+   "A": "Perché l'attrito dell'etere lo frena",
+   "B": "Perché la sua massa diventerebbe nulla",
+   "C": "Perché la sua energia, data da γmc², tenderebbe all'infinito avvicinandosi a c",
+   "D": "Perché il tempo per lui si fermerebbe e non potrebbe più accelerare",
+   "E": "Perché la gravità glielo impedisce"
+  },
+  "giusta": "C",
+  "perche": "Quando v si avvicina a c, il fattore γ = 1/√(1 − v²/c²) cresce senza limiti, e così l'energia totale γmc². Per portare un corpo con massa esattamente a c servirebbe un'energia infinita. Per questo negli acceleratori i protoni arrivano a 0,999999c ma mai a c. La trappola è attribuire il limite a un attrito o a un mezzo: non c'è nessun mezzo, è una proprietà dello spazio-tempo.",
+  "semplice": "Ogni volta che spingi un protone più vicino alla luce, serve sempre più energia per guadagnare sempre meno velocità: l'ultimo passo costerebbe un'energia infinita.",
+  "passaggi": [
+   "Energia totale: E = γmc², con γ = 1/√(1 − v²/c²).",
+   "Se v → c, allora v²/c² → 1 e il denominatore √(1 − v²/c²) → 0.",
+   "Quindi γ → ∞ e anche l'energia tende all'infinito.",
+   "Servirebbe energia infinita per arrivare a c: non c'è alcun etere che frena.",
+   "Risposta: la C."
+  ],
+  "concetto": "limite della velocità della luce"
+ },
+ {
+  "id": "FMO-012",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "test",
+  "domanda": "In un sistema inerziale, due eventi sono separati da Δx = 3 × 10⁸ m e Δt = 2 s. Che tipo di intervallo spazio-temporale li separa?",
+  "opzioni": {
+   "A": "Di tipo spazio: nessun segnale può collegarli",
+   "B": "Di tipo luce: solo un raggio di luce può collegarli",
+   "C": "Nullo: gli eventi coincidono",
+   "D": "Di tipo tempo: un segnale più lento della luce può collegarli",
+   "E": "Non si può dire senza conoscere un secondo sistema di riferimento"
+  },
+  "giusta": "D",
+  "perche": "L'intervallo invariante è s² = (cΔt)² − Δx². Qui cΔt = 6 × 10⁸ m, quindi (cΔt)² = 36 × 10¹⁶ m² supera Δx² = 9 × 10¹⁶ m²: s² > 0, intervallo di tipo tempo. Basterebbe un segnale a metà della velocità della luce per collegare i due eventi, quindi uno può essere causa dell'altro. L'intervallo è invariante, quindi la classificazione è la stessa in ogni sistema inerziale: la trappola è pensare che dipenda dall'osservatore.",
+  "semplice": "Per andare da un evento all'altro avresti 2 secondi per percorrere 300 000 km: la luce ce ne metterebbe solo 1. Quindi c'è tempo a sufficienza, anche andando più piano della luce.",
+  "passaggi": [
+   "cΔt = 3 × 10⁸ × 2 = 6 × 10⁸ m",
+   "(cΔt)² = 36 × 10¹⁶ m², Δx² = 9 × 10¹⁶ m²",
+   "s² = 27 × 10¹⁶ m² > 0",
+   "Intervallo di tipo tempo"
+  ],
+  "concetto": "intervallo spazio-temporale"
+ },
+ {
+  "id": "FMO-013",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "test",
+  "domanda": "Un protone (energia di riposo circa 938 MeV) si muove a 0,6c. Quanto vale la sua energia totale?",
+  "opzioni": {
+   "A": "Circa 938 MeV",
+   "B": "Circa 750 MeV",
+   "C": "Circa 1563 MeV",
+   "D": "Circa 1107 MeV",
+   "E": "Circa 1173 MeV"
+  },
+  "giusta": "E",
+  "perche": "L'energia totale vale E = γmc². A 0,6c il fattore di Lorentz è 1,25, quindi E = 1,25 × 938 ≈ 1173 MeV. L'energia cinetica è la parte in più rispetto all'energia di riposo, cioè circa 235 MeV. La trappola è usare 1/γ = 0,8, ottenendo 750 MeV, minore dell'energia di riposo: l'energia totale non può mai essere inferiore a mc².",
+  "semplice": "Un protone fermo ha 938 MeV di energia «da fermo». Se corre a 0,6c la sua energia cresce del 25%, arrivando a circa 1173 MeV.",
+  "passaggi": [
+   "γ = 1/√(1 − 0,36) = 1,25",
+   "E = γmc² = 1,25 × 938 MeV",
+   "E ≈ 1173 MeV"
+  ],
+  "concetto": "energia relativistica totale"
+ },
+ {
+  "id": "FMO-014",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "università",
+  "domanda": "Quali sono le trasformazioni di Lorentz per x e t, per un sistema S' che si muove con velocità v lungo x rispetto a S?",
+  "opzioni": {
+   "A": "x' = x − vt, t' = t",
+   "B": "x' = γ(x + vt), t' = γ(t + vx/c²)",
+   "C": "x' = (x − vt)/γ, t' = t/γ",
+   "D": "x' = γ(x − vt), t' = γ(t − vx/c²)",
+   "E": "x' = γx, t' = γt"
+  },
+  "giusta": "D",
+  "perche": "Le trasformazioni di Lorentz sono x' = γ(x − vt), y' = y, z' = z, t' = γ(t − vx/c²). Il termine vx/c² nella trasformazione del tempo è all'origine della relatività della simultaneità. Per v molto minore di c, γ ≈ 1 e vx/c² ≈ 0: si ritrovano le trasformazioni di Galileo. La trappola è scambiare i segni (quelli con il più valgono per la trasformazione inversa) o dimenticare che anche il tempo si mescola con lo spazio.",
+  "semplice": "Le trasformazioni di Lorentz sono la «ricetta» per tradurre le coordinate di un evento da un osservatore a un altro. A bassa velocità diventano le solite regole di Galileo: la posizione si sposta di vt e il tempo resta uguale.",
+  "passaggi": [
+   "Le trasformazioni di Lorentz devono ridursi a quelle di Galileo per v molto minore di c.",
+   "Forma corretta: x' = γ(x − vt), t' = γ(t − vx/c²).",
+   "Con v ≪ c: γ ≈ 1 e vx/c² ≈ 0, si ritrova x' = x − vt, t' = t.",
+   "I segni + valgono per la trasformazione inversa; A è solo Galileo.",
+   "Risposta: la D."
+  ],
+  "concetto": "trasformazioni di Lorentz"
+ },
+ {
+  "id": "FMO-015",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "università",
+  "domanda": "Un fascio di muoni viaggia a 0,99c. La loro vita media propria è 2,2 μs. Quale distanza media percorrono nel sistema del laboratorio prima di decadere?",
+  "opzioni": {
+   "A": "Circa 650 m",
+   "B": "Circa 92 m",
+   "C": "Circa 46 km",
+   "D": "Circa 4,6 km",
+   "E": "Circa 1,3 km"
+  },
+  "giusta": "D",
+  "perche": "Nel laboratorio la vita media è dilatata: γ a 0,99c vale circa 7,09, quindi τ ≈ 15,6 μs. La distanza è d = v·τ ≈ 0,99 × 3 × 10⁸ × 15,6 × 10⁻⁶ ≈ 4,6 km. Senza dilatazione si otterrebbero solo circa 650 m: è questo il motivo per cui i muoni prodotti in alta atmosfera arrivano al suolo, un classico test della relatività. Nel sistema del muone, invece, è l'atmosfera a essere contratta: le due descrizioni danno lo stesso risultato.",
+  "semplice": "Senza relatività un muone veloce percorrerebbe poco più di mezzo chilometro. Grazie alla dilatazione dei tempi «vive» circa 7 volte più a lungo e percorre quasi 5 km.",
+  "passaggi": [
+   "γ = 1/√(1 − 0,99²) ≈ 7,09",
+   "τ = γτ₀ ≈ 7,09 × 2,2 μs ≈ 15,6 μs",
+   "d = vτ ≈ 2,97 × 10⁸ m/s × 15,6 × 10⁻⁶ s",
+   "d ≈ 4,6 km"
+  ],
+  "concetto": "dilatazione dei tempi e muoni"
+ },
+ {
+  "id": "FMO-016",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "università",
+  "domanda": "Che cosa rappresenta il quadrivettore energia-impulso e quale grandezza è invariante?",
+  "opzioni": {
+   "A": "Il vettore (E, v), il cui modulo è sempre uguale a c",
+   "B": "Il vettore (E/c, p), la cui «lunghezza» al quadrato (E/c)² − p² = m²c² è la stessa in ogni sistema inerziale",
+   "C": "Il vettore (t, x), il cui modulo è sempre nullo",
+   "D": "Il vettore (m, p), la cui somma è invariante",
+   "E": "Il vettore (E, F), dove la forza è invariante"
+  },
+  "giusta": "B",
+  "perche": "In relatività energia e quantità di moto formano un quadrivettore P = (E/c, p). La sua norma di Minkowski (E/c)² − |p|² vale m²c² ed è identica per tutti gli osservatori inerziali: è la massa invariante. Questo è utilissimo nei processi d'urto e di decadimento, dove si calcola la massa invariante del sistema. La trappola è pensare che l'energia da sola sia invariante: E e p cambiano da un sistema all'altro, solo la combinazione resta costante.",
+  "semplice": "Energia e quantità di moto sono come le due facce di uno stesso oggetto: ogni osservatore le vede diverse, ma combinandole nel modo giusto trova sempre lo stesso numero, la massa della particella.",
+  "passaggi": [
+   "Energia e quantità di moto formano il quadrivettore P = (E/c, p).",
+   "La sua norma di Minkowski è (E/c)² − |p|².",
+   "Dalla relazione E² = (pc)² + (mc²)², dividendo per c²: (E/c)² − p² = m²c².",
+   "Questa quantità è la stessa in ogni sistema inerziale, mentre E e p da soli cambiano.",
+   "Risposta: la B."
+  ],
+  "concetto": "quadrivettore energia-impulso"
+ },
+ {
+  "id": "FMO-017",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "università",
+  "domanda": "Due particelle si allontanano da un osservatore in versi opposti, ciascuna a 0,8c. Qual è la velocità di una rispetto all'altra?",
+  "opzioni": {
+   "A": "1,6c",
+   "B": "0,8c",
+   "C": "Circa 0,976c",
+   "D": "Circa 0,64c",
+   "E": "Esattamente c"
+  },
+  "giusta": "C",
+  "perche": "Si usa la composizione relativistica: w = (u + v)/(1 + uv/c²) = 1,6c/(1 + 0,64) = 1,6c/1,64 ≈ 0,976c. Il risultato è vicino a c ma sempre minore. La trappola è la somma classica 1,6c, che violerebbe il limite della velocità della luce. Notare che la velocità di separazione misurata dall'osservatore (1,6c) non è la velocità di un oggetto rispetto a un altro e non viola alcun principio.",
+  "semplice": "Dal punto di vista di una delle due particelle, l'altra corre via quasi alla velocità della luce, ma non la supera mai.",
+  "passaggi": [
+   "uv/c² = 0,8 × 0,8 = 0,64",
+   "w = (0,8 + 0,8)c/(1 + 0,64)",
+   "w = 1,6c/1,64 ≈ 0,976c"
+  ],
+  "concetto": "composizione relativistica"
+ },
+ {
+  "id": "FMO-018",
+  "materia": "Fisica moderna",
+  "argomento": "Relatività ristretta",
+  "livello": "università",
+  "domanda": "Nel paradosso dei gemelli, perché il gemello che viaggia e ritorna risulta più giovane, mentre la situazione non è simmetrica?",
+  "opzioni": {
+   "A": "Perché la gravità della Terra rallenta l'orologio del gemello a terra",
+   "B": "Perché il gemello viaggiatore ha una massa maggiore",
+   "C": "Perché la luce impiega più tempo a raggiungerlo",
+   "D": "Perché la situazione è perfettamente simmetrica e nessuno dei due invecchia di meno",
+   "E": "Perché il gemello viaggiatore cambia sistema inerziale invertendo la rotta, mentre quello rimasto a terra resta sempre nello stesso sistema inerziale"
+  },
+  "giusta": "E",
+  "perche": "Il paradosso nasce dall'idea che ciascun gemello possa considerare l'altro in moto. In realtà la situazione non è simmetrica: solo il viaggiatore cambia sistema di riferimento inerziale (al momento dell'inversione, o con accelerazioni). La sua linea d'universo tra partenza e ritorno ha un tempo proprio minore di quella del gemello rimasto inerziale. La trappola è pensare che serva la relatività generale o che l'effetto sia solo apparente: la differenza di età è reale ed è stata confermata con orologi atomici.",
+  "semplice": "Uno dei gemelli resta a casa, l'altro parte, si ferma, gira e torna. Chi ha fatto il «giro» ha percorso un cammino nello spazio-tempo più corto in termini di tempo proprio: al ritorno è più giovane.",
+  "passaggi": [
+   "Il paradosso nasce dal pensare che ognuno veda l'altro in moto in modo simmetrico.",
+   "Il gemello a terra resta sempre nello stesso sistema inerziale.",
+   "Il viaggiatore inverte la rotta: cambia sistema inerziale.",
+   "La sua linea d'universo ha un tempo proprio minore: invecchia di meno, ed è un effetto reale.",
+   "Risposta: la E."
+  ],
+  "concetto": "paradosso dei gemelli"
+ },
+ {
+  "id": "FMO-019",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "superiori",
+  "domanda": "Che cos'è l'effetto fotoelettrico?",
+  "opzioni": {
+   "A": "La produzione di luce da parte di un metallo riscaldato",
+   "B": "La deviazione della luce attorno a un ostacolo",
+   "C": "L'emissione di luce da parte di un gas attraversato da corrente",
+   "D": "L'assorbimento di elettroni da parte di un metallo illuminato",
+   "E": "L'emissione di elettroni da parte di un metallo colpito da radiazione elettromagnetica di frequenza sufficientemente alta"
+  },
+  "giusta": "E",
+  "perche": "Nell'effetto fotoelettrico la luce che colpisce una superficie metallica estrae elettroni, detti fotoelettroni. L'emissione avviene solo se la frequenza supera una soglia che dipende dal metallo. La trappola è confonderlo con l'emissione termica (un metallo caldo emette luce o elettroni per riscaldamento) o con la diffrazione, che è un fenomeno ondulatorio. Fu spiegato da Einstein nel 1905 introducendo i quanti di luce.",
+  "semplice": "Se illumini una lastra di zinco con luce ultravioletta, la lastra perde elettroni e un elettroscopio collegato si scarica. Con luce rossa, anche fortissima, non succede nulla.",
+  "passaggi": [
+   "Nell'effetto fotoelettrico la luce colpisce una superficie metallica.",
+   "La luce estrae elettroni dal metallo (fotoelettroni).",
+   "L'emissione avviene solo sopra una frequenza di soglia che dipende dal metallo.",
+   "Non è emissione di luce per riscaldamento né diffrazione.",
+   "È l'emissione di elettroni da un metallo colpito da radiazione di frequenza sufficiente."
+  ],
+  "concetto": "effetto fotoelettrico"
+ },
+ {
+  "id": "FMO-020",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "superiori",
+  "domanda": "Quanto vale l'energia di un fotone di luce verde con lunghezza d'onda 500 nm? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 0,4 eV",
+   "B": "Circa 620 eV",
+   "C": "Circa 25 eV",
+   "D": "Circa 2,5 eV",
+   "E": "Circa 1,2 eV"
+  },
+  "giusta": "D",
+  "perche": "L'energia di un fotone è E = hf = hc/λ. Usando la scorciatoia hc ≈ 1240 eV·nm si ottiene E = 1240/500 ≈ 2,48 eV. La trappola è moltiplicare invece di dividere, oppure convertire male i nanometri in metri se si usa la formula in joule (in quel caso E ≈ 4,0 × 10⁻¹⁹ J). La luce visibile ha fotoni tra circa 1,6 e 3,3 eV.",
+  "semplice": "Ogni «pacchetto» di luce verde porta circa 2,5 elettronvolt, un'energia minuscola ma sufficiente a eccitare le molecole del nostro occhio.",
+  "passaggi": [
+   "E = hc/λ",
+   "E = 1240 eV·nm / 500 nm",
+   "E ≈ 2,48 eV"
+  ],
+  "concetto": "energia del fotone"
+ },
+ {
+  "id": "FMO-021",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "superiori",
+  "domanda": "Che cosa succede all'energia cinetica massima dei fotoelettroni se si raddoppia l'intensità della luce, lasciando invariata la frequenza?",
+  "opzioni": {
+   "A": "Raddoppia",
+   "B": "Si dimezza",
+   "C": "Rimane la stessa; aumenta invece il numero di elettroni emessi",
+   "D": "Quadruplica",
+   "E": "Diventa nulla"
+  },
+  "giusta": "C",
+  "perche": "Secondo Einstein ogni elettrone assorbe un singolo fotone, la cui energia hf dipende solo dalla frequenza. Aumentando l'intensità si inviano più fotoni al secondo, quindi si estraggono più elettroni e cresce la corrente, ma l'energia di ciascuno resta K_max = hf − W. La trappola è il ragionamento ondulatorio classico, secondo cui un'onda più intensa dovrebbe dare elettroni più energetici: proprio questo fallimento rese necessaria l'ipotesi dei fotoni.",
+  "semplice": "È come lanciare palline tutte uguali contro un vetro: lanciandone di più ne rompi più punti, ma ogni pallina colpisce sempre con la stessa forza.",
+  "passaggi": [
+   "Ogni elettrone assorbe un singolo fotone di energia hf.",
+   "K_max = hf − W dipende solo dalla frequenza f e dal metallo (W).",
+   "Raddoppiare l'intensità a frequenza fissa raddoppia il numero di fotoni al secondo.",
+   "Quindi si estraggono più elettroni (più corrente), ma ciascuno con la stessa energia massima.",
+   "Risposta: la C."
+  ],
+  "concetto": "intensità e frequenza"
+ },
+ {
+  "id": "FMO-022",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "superiori",
+  "domanda": "Un metallo ha lavoro di estrazione 2,3 eV. Viene illuminato con luce di 400 nm (fotoni da circa 3,1 eV). Qual è l'energia cinetica massima dei fotoelettroni?",
+  "opzioni": {
+   "A": "Circa 3,1 eV",
+   "B": "Circa 5,4 eV",
+   "C": "Circa 2,3 eV",
+   "D": "Circa 0,8 eV",
+   "E": "Zero"
+  },
+  "giusta": "D",
+  "perche": "L'equazione di Einstein è K_max = hf − W. L'energia del fotone è 1240/400 ≈ 3,1 eV; sottraendo il lavoro di estrazione di 2,3 eV resta circa 0,8 eV. La trappola è sommare le due energie, oppure dare come risposta l'energia del fotone senza togliere l'energia spesa per strappare l'elettrone dal metallo.",
+  "semplice": "Il fotone porta 3,1 eV: 2,3 servono per «pagare l'uscita» dell'elettrone dal metallo, il resto, 0,8 eV, diventa energia di movimento.",
+  "passaggi": [
+   "E_fotone = 1240/400 ≈ 3,1 eV",
+   "K_max = E_fotone − W",
+   "K_max ≈ 3,1 − 2,3 = 0,8 eV"
+  ],
+  "concetto": "equazione di Einstein"
+ },
+ {
+  "id": "FMO-023",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "superiori",
+  "domanda": "Che cos'è la frequenza di soglia nell'effetto fotoelettrico?",
+  "opzioni": {
+   "A": "La frequenza massima che un metallo può assorbire",
+   "B": "La frequenza minima della luce sotto la quale non vengono emessi elettroni, qualunque sia l'intensità",
+   "C": "La frequenza con cui gli elettroni oscillano nel metallo",
+   "D": "La frequenza della luce che massimizza la corrente",
+   "E": "La frequenza a cui il metallo comincia a fondere"
+  },
+  "giusta": "B",
+  "perche": "La frequenza di soglia f₀ è quella per cui l'energia del fotone eguaglia il lavoro di estrazione: hf₀ = W. Sotto questa frequenza un singolo fotone non ha energia sufficiente per liberare un elettrone, e aumentare l'intensità non serve. La trappola è pensare che con abbastanza luce, o aspettando abbastanza, l'emissione cominci comunque: l'esperimento mostra che non accade.",
+  "semplice": "È come una porta che si apre solo se la spingi con una forza minima: tante spinte deboli una dopo l'altra non la aprono mai.",
+  "passaggi": [
+   "Un elettrone viene estratto se l'energia di un fotone basta: hf ≥ W.",
+   "La frequenza di soglia f₀ è quella con hf₀ = W.",
+   "Sotto f₀ un singolo fotone non basta, e aumentare l'intensità non aiuta.",
+   "È la frequenza minima sotto la quale non si emettono elettroni, qualunque sia l'intensità."
+  ],
+  "concetto": "frequenza di soglia"
+ },
+ {
+  "id": "FMO-024",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "superiori",
+  "domanda": "Come si chiama il valore di tensione inversa che azzera la corrente in una fotocella, e che cosa misura?",
+  "opzioni": {
+   "A": "Potenziale di arresto; misura l'energia cinetica massima dei fotoelettroni",
+   "B": "Potenziale di estrazione; misura il numero di elettroni emessi",
+   "C": "Tensione di soglia; misura la frequenza della luce",
+   "D": "Potenziale di ionizzazione; misura l'energia del nucleo",
+   "E": "Forza elettromotrice; misura l'intensità della luce"
+  },
+  "giusta": "A",
+  "perche": "Applicando una tensione che frena gli elettroni, si arriva a un valore V₀ per cui nemmeno i più veloci raggiungono l'altro elettrodo: è il potenziale di arresto. Vale eV₀ = K_max, quindi un potenziale di arresto di 1,5 V corrisponde a K_max = 1,5 eV. La trappola è confonderlo con il lavoro di estrazione, che è una proprietà del metallo e non dipende dalla luce.",
+  "semplice": "Metti in salita gli elettroni: se la «collina» elettrica è alta 1,5 volt, solo elettroni con più di 1,5 eV la superano. Quando la corrente si annulla, hai trovato l'energia dei più veloci.",
+  "passaggi": [
+   "Si applica una tensione che frena gli elettroni tra gli elettrodi.",
+   "Il valore V₀ che ferma anche i più veloci si chiama potenziale di arresto.",
+   "Vale eV₀ = K_max: per esempio V₀ = 1,5 V corrisponde a K_max = 1,5 eV.",
+   "Non va confuso con il lavoro di estrazione, proprietà del metallo.",
+   "Potenziale di arresto, che misura l'energia cinetica massima."
+  ],
+  "concetto": "potenziale di arresto"
+ },
+ {
+  "id": "FMO-025",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "superiori",
+  "domanda": "Chi introdusse per primo l'idea che l'energia venga scambiata in quanti, per spiegare lo spettro del corpo nero?",
+  "opzioni": {
+   "A": "Albert Einstein",
+   "B": "Niels Bohr",
+   "C": "Max Planck",
+   "D": "Ernest Rutherford",
+   "E": "Arthur Compton"
+  },
+  "giusta": "C",
+  "perche": "Nel 1900 Max Planck ipotizzò che gli oscillatori nelle pareti di un corpo nero potessero scambiare energia solo in multipli di hf, introducendo la costante h ≈ 6,63 × 10⁻³⁴ J·s. Einstein nel 1905 fece un passo ulteriore: è la luce stessa a essere quantizzata in fotoni. La trappola è attribuire a Einstein l'introduzione dei quanti; a lui si deve l'estensione alla radiazione e la spiegazione dell'effetto fotoelettrico.",
+  "semplice": "Planck fu il primo a dire che l'energia «si compra» solo a pacchetti, come le monete: non puoi pagare mezza moneta.",
+  "passaggi": [
+   "Il problema era lo spettro del corpo nero, nel 1900.",
+   "Max Planck ipotizzò che gli oscillatori scambiassero energia in multipli di hf, introducendo h.",
+   "Einstein nel 1905 estese l'idea alla luce stessa (fotoni); Bohr e Compton vennero dopo.",
+   "Il primo fu Max Planck."
+  ],
+  "concetto": "ipotesi di Planck"
+ },
+ {
+  "id": "FMO-026",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "test",
+  "domanda": "Secondo la legge di Wien, a quale lunghezza d'onda emette di più una stella con temperatura superficiale di 5800 K? (b ≈ 2,9 × 10⁻³ m·K)",
+  "opzioni": {
+   "A": "Circa 50 nm",
+   "B": "Circa 5 μm",
+   "C": "Circa 17 nm",
+   "D": "Circa 500 nm",
+   "E": "Circa 1700 nm"
+  },
+  "giusta": "D",
+  "perche": "La legge dello spostamento di Wien è λ_max·T = b, con b ≈ 2,9 × 10⁻³ m·K. Quindi λ_max = 2,9 × 10⁻³/5800 ≈ 5,0 × 10⁻⁷ m = 500 nm, nel verde-azzurro: è il caso del Sole. La trappola è sbagliare le potenze di dieci nella conversione da metri a nanometri. Più un corpo è caldo, più il picco si sposta verso lunghezze d'onda corte.",
+  "semplice": "Il Sole, a circa 5800 K, emette soprattutto luce visibile. Una stella più fredda ha il picco nel rosso, una più calda nell'azzurro.",
+  "passaggi": [
+   "λ_max = b/T",
+   "λ_max = 2,9 × 10⁻³ / 5800 m",
+   "λ_max ≈ 5,0 × 10⁻⁷ m = 500 nm"
+  ],
+  "concetto": "legge di Wien"
+ },
+ {
+  "id": "FMO-027",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "test",
+  "domanda": "Di quanto aumenta la potenza irraggiata da un corpo nero se la sua temperatura assoluta raddoppia?",
+  "opzioni": {
+   "A": "Di 16 volte",
+   "B": "Di 2 volte",
+   "C": "Di 4 volte",
+   "D": "Di 8 volte",
+   "E": "Di 32 volte"
+  },
+  "giusta": "A",
+  "perche": "La legge di Stefan-Boltzmann dice che la potenza irraggiata per unità di superficie è σT⁴. Raddoppiando T la potenza si moltiplica per 2⁴ = 16. La trappola è pensare a una dipendenza lineare o quadratica. Attenzione anche a usare la temperatura in kelvin: passare da 20 °C a 40 °C non raddoppia la temperatura assoluta.",
+  "semplice": "Un corpo nero molto caldo brilla in modo impressionante: basta raddoppiarne la temperatura per farlo irraggiare sedici volte di più.",
+  "passaggi": [
+   "P ∝ T⁴",
+   "P₂/P₁ = (2T/T)⁴",
+   "P₂/P₁ = 2⁴ = 16"
+  ],
+  "concetto": "legge di Stefan-Boltzmann"
+ },
+ {
+  "id": "FMO-028",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "test",
+  "domanda": "Una lastra metallica con lavoro di estrazione 3,0 eV è illuminata con radiazione di frequenza 1,2 × 10¹⁵ Hz. Qual è circa l'energia cinetica massima dei fotoelettroni? (h ≈ 4,14 × 10⁻¹⁵ eV·s)",
+  "opzioni": {
+   "A": "Circa 2,0 eV",
+   "B": "Circa 5,0 eV",
+   "C": "Circa 8,0 eV",
+   "D": "Circa 3,0 eV",
+   "E": "Nessun elettrone viene emesso"
+  },
+  "giusta": "A",
+  "perche": "L'energia del fotone è hf = 4,14 × 10⁻¹⁵ × 1,2 × 10¹⁵ ≈ 4,97 eV. Sottraendo il lavoro di estrazione si ottiene K_max ≈ 4,97 − 3,0 ≈ 2,0 eV. La trappola è usare h in J·s e confrontarla con W in eV senza convertire: bisogna usare sempre le stesse unità. Poiché hf > W, l'emissione avviene.",
+  "semplice": "Il fotone ha circa 5 eV; 3 servono per estrarre l'elettrone e circa 2 restano come energia cinetica.",
+  "passaggi": [
+   "hf = 4,14 × 10⁻¹⁵ eV·s × 1,2 × 10¹⁵ Hz ≈ 4,97 eV",
+   "K_max = hf − W ≈ 4,97 − 3,0",
+   "K_max ≈ 2,0 eV"
+  ],
+  "concetto": "bilancio energetico fotoelettrico"
+ },
+ {
+  "id": "FMO-029",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "test",
+  "domanda": "Un puntatore laser rosso da 1 mW emette a 650 nm. Quanti fotoni emette circa al secondo?",
+  "opzioni": {
+   "A": "Circa 3 × 10⁹",
+   "B": "Circa 3 × 10¹⁵",
+   "C": "Circa 3 × 10²⁵",
+   "D": "Circa 650",
+   "E": "Circa 1,6 × 10¹⁹"
+  },
+  "giusta": "B",
+  "perche": "Ogni fotone ha energia E = hc/λ ≈ 6,63 × 10⁻³⁴ × 3 × 10⁸ / 650 × 10⁻⁹ ≈ 3,1 × 10⁻¹⁹ J. Il numero di fotoni al secondo è la potenza divisa per l'energia di un fotone: 10⁻³/3,1 × 10⁻¹⁹ ≈ 3 × 10¹⁵. La trappola è dimenticare che 1 mW = 10⁻³ W o sbagliare la conversione dei nanometri. Il numero enorme spiega perché a livello quotidiano la luce sembra continua.",
+  "semplice": "Anche un piccolo laser da presentazione spara migliaia di miliardi di fotoni ogni secondo: per questo non ci accorgiamo che la luce è fatta di pacchetti.",
+  "passaggi": [
+   "E = hc/λ ≈ 6,63 × 10⁻³⁴ × 3 × 10⁸ / 6,5 × 10⁻⁷ ≈ 3,06 × 10⁻¹⁹ J",
+   "N = P/E = 10⁻³ / 3,06 × 10⁻¹⁹",
+   "N ≈ 3,3 × 10¹⁵ fotoni al secondo"
+  ],
+  "concetto": "flusso di fotoni"
+ },
+ {
+  "id": "FMO-030",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "test",
+  "domanda": "Qual è la lunghezza d'onda di soglia per un metallo con lavoro di estrazione 2,5 eV? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 3100 nm",
+   "B": "Circa 500 nm",
+   "C": "Circa 250 nm",
+   "D": "Circa 1240 nm",
+   "E": "Circa 2,5 nm"
+  },
+  "giusta": "B",
+  "perche": "Alla soglia l'energia del fotone eguaglia il lavoro di estrazione: hc/λ₀ = W, quindi λ₀ = hc/W = 1240/2,5 ≈ 496 nm. Luce con lunghezza d'onda maggiore (verso il rosso) non estrae elettroni. La trappola è ragionare al contrario: per la lunghezza d'onda la soglia è un valore massimo, mentre per la frequenza è un valore minimo.",
+  "semplice": "Con un lavoro di estrazione di 2,5 eV, serve luce più «blu» di circa 500 nm. La luce rossa o gialla non basta.",
+  "passaggi": [
+   "λ₀ = hc/W",
+   "λ₀ = 1240 eV·nm / 2,5 eV",
+   "λ₀ ≈ 496 nm ≈ 500 nm"
+  ],
+  "concetto": "lunghezza d'onda di soglia"
+ },
+ {
+  "id": "FMO-031",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "università",
+  "domanda": "Nell'effetto Compton, di quanto aumenta la lunghezza d'onda di un fotone X diffuso a 90° da un elettrone libero? (h/(m_e c) ≈ 2,43 pm)",
+  "opzioni": {
+   "A": "Circa 4,86 pm",
+   "B": "Zero",
+   "C": "Circa 2,43 pm",
+   "D": "Circa 1,21 pm",
+   "E": "Circa 0,511 pm"
+  },
+  "giusta": "C",
+  "perche": "La formula di Compton è Δλ = (h/m_e c)(1 − cos θ). A 90° il coseno è zero, quindi Δλ è uguale alla lunghezza d'onda Compton dell'elettrone, circa 2,43 pm. Il massimo, 4,86 pm, si ha a 180°. La trappola è usare il seno o pensare che lo spostamento dipenda dalla lunghezza d'onda iniziale: non dipende, ed è per questo che l'effetto si nota con i raggi X e non con la luce visibile.",
+  "semplice": "Un fotone X che urta un elettrone si comporta come una pallina da biliardo: cede un po' di energia e torna indietro con lunghezza d'onda un po' più lunga.",
+  "passaggi": [
+   "Δλ = (h/m_e c)(1 − cos θ)",
+   "cos 90° = 0",
+   "Δλ = 2,43 pm × 1 = 2,43 pm"
+  ],
+  "concetto": "effetto Compton"
+ },
+ {
+  "id": "FMO-032",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "università",
+  "domanda": "Quale fatto sperimentale dell'effetto Compton non si spiega con la teoria ondulatoria classica?",
+  "opzioni": {
+   "A": "La radiazione diffusa ha la stessa lunghezza d'onda di quella incidente",
+   "B": "La variazione di lunghezza d'onda dipende dall'angolo di diffusione come in un urto tra particelle con energia e quantità di moto",
+   "C": "La radiazione X si propaga in linea retta",
+   "D": "I raggi X producono interferenza nei cristalli",
+   "E": "Gli elettroni oscillano alla frequenza della radiazione incidente"
+  },
+  "giusta": "B",
+  "perche": "Classicamente un'onda elettromagnetica fa oscillare l'elettrone alla stessa frequenza, che riemette radiazione della stessa lunghezza d'onda (diffusione Thomson). Compton osservò invece una componente con lunghezza d'onda maggiore, con uno spostamento che segue esattamente le leggi di conservazione di energia e quantità di moto in un urto fotone-elettrone, con p = h/λ. La trappola è citare l'interferenza nei cristalli, che anzi è una prova del comportamento ondulatorio dei raggi X.",
+  "semplice": "Compton dimostrò che la luce non solo porta energia a pacchetti, ma anche quantità di moto: il fotone dà un «calcio» all'elettrone.",
+  "passaggi": [
+   "Classicamente l'elettrone oscilla alla frequenza dell'onda e riemette la stessa lunghezza d'onda.",
+   "Compton osservò radiazione diffusa con lunghezza d'onda maggiore.",
+   "Lo spostamento dipende dall'angolo come in un urto fotone-elettrone, con p = h/λ.",
+   "L'interferenza nei cristalli è invece una prova ondulatoria.",
+   "Il fatto non classico è la B."
+  ],
+  "concetto": "quantità di moto del fotone"
+ },
+ {
+  "id": "FMO-033",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "università",
+  "domanda": "Qual è la quantità di moto di un fotone con lunghezza d'onda 663 nm? (h = 6,63 × 10⁻³⁴ J·s)",
+  "opzioni": {
+   "A": "1,0 × 10⁻²⁵ kg·m/s",
+   "B": "4,4 × 10⁻⁴⁰ kg·m/s",
+   "C": "3,0 × 10⁻¹⁹ kg·m/s",
+   "D": "Zero, perché il fotone non ha massa",
+   "E": "1,0 × 10⁻²⁷ kg·m/s"
+  },
+  "giusta": "E",
+  "perche": "Per il fotone vale p = E/c = h/λ. Con λ = 663 nm = 6,63 × 10⁻⁷ m si ha p = 6,63 × 10⁻³⁴/6,63 × 10⁻⁷ = 1,0 × 10⁻²⁷ kg·m/s. La trappola è dire che il fotone, non avendo massa, non ha quantità di moto: in relatività p = E/c anche per m = 0. È questa quantità di moto che produce la pressione di radiazione, sfruttata dalle vele solari.",
+  "semplice": "La luce spinge, anche se pochissimo: un singolo fotone ha una quantità di moto piccolissima, ma miliardi di miliardi possono muovere una vela solare nello spazio.",
+  "passaggi": [
+   "p = h/λ",
+   "λ = 663 nm = 6,63 × 10⁻⁷ m",
+   "p = 6,63 × 10⁻³⁴ / 6,63 × 10⁻⁷ = 1,0 × 10⁻²⁷ kg·m/s"
+  ],
+  "concetto": "quantità di moto del fotone"
+ },
+ {
+  "id": "FMO-034",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "università",
+  "domanda": "In un esperimento di Millikan si riporta il potenziale di arresto V₀ in funzione della frequenza f. Che cosa rappresenta la pendenza della retta ottenuta?",
+  "opzioni": {
+   "A": "Il rapporto h/e",
+   "B": "Il lavoro di estrazione W",
+   "C": "La carica dell'elettrone",
+   "D": "La frequenza di soglia",
+   "E": "Il prodotto h·e"
+  },
+  "giusta": "A",
+  "perche": "Dall'equazione di Einstein eV₀ = hf − W si ottiene V₀ = (h/e)f − W/e: una retta con pendenza h/e, uguale per tutti i metalli, e intercetta −W/e. L'intercetta sull'asse delle frequenze è la frequenza di soglia. Millikan, che era scettico sui fotoni, ottenne proprio così un valore di h in accordo con Planck. La trappola è confondere pendenza e intercetta: il lavoro di estrazione si ricava dall'intercetta.",
+  "semplice": "Se disegni la tensione di arresto contro la frequenza ottieni rette parallele per metalli diversi: la pendenza comune svela la costante di Planck.",
+  "passaggi": [
+   "eV₀ = hf − W",
+   "V₀ = (h/e)·f − W/e",
+   "pendenza = h/e ≈ 4,14 × 10⁻¹⁵ V·s"
+  ],
+  "concetto": "misura di h"
+ },
+ {
+  "id": "FMO-035",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "università",
+  "domanda": "Che cosa si intende per «catastrofe ultravioletta»?",
+  "opzioni": {
+   "A": "Il danno provocato dai raggi ultravioletti alle cellule",
+   "B": "L'impossibilità di estrarre elettroni con luce ultravioletta",
+   "C": "La previsione classica (Rayleigh-Jeans) che un corpo nero emetta energia infinita alle alte frequenze",
+   "D": "L'assorbimento totale degli ultravioletti da parte dell'atmosfera",
+   "E": "La scomparsa delle righe spettrali nell'ultravioletto"
+  },
+  "giusta": "C",
+  "perche": "La fisica classica, assegnando a ogni modo di oscillazione della radiazione un'energia media kT, prevedeva una densità di energia proporzionale a f² senza limite, quindi energia totale infinita: un risultato assurdo smentito dagli esperimenti. Planck risolse il problema quantizzando l'energia: i modi ad alta frequenza, con hf molto maggiore di kT, sono di fatto «spenti». La trappola è prendere il nome alla lettera, come se fosse un danno biologico: si tratta di un fallimento della teoria classica.",
+  "semplice": "La teoria classica diceva che un forno acceso dovrebbe sparare energia infinita nell'ultravioletto. Ovviamente non succede: servivano i quanti per capire perché.",
+  "passaggi": [
+   "La teoria classica (Rayleigh-Jeans) dà a ogni modo di oscillazione energia media kT.",
+   "Il numero di modi cresce come f²: la densità di energia cresce senza limite alle alte frequenze.",
+   "Sommando su tutte le frequenze si otterrebbe energia infinita: assurdo, smentito dagli esperimenti.",
+   "Il nome indica questo fallimento verso l'ultravioletto, risolto da Planck.",
+   "Risposta: la C."
+  ],
+  "concetto": "corpo nero"
+ },
+ {
+  "id": "FMO-036",
+  "materia": "Fisica moderna",
+  "argomento": "Effetto fotoelettrico e quanti di luce",
+  "livello": "test",
+  "domanda": "In un tubo a raggi X gli elettroni sono accelerati da 30 kV. Qual è la lunghezza d'onda minima dei raggi X prodotti? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 41 nm",
+   "B": "Circa 0,41 nm",
+   "C": "Circa 4,1 nm",
+   "D": "Circa 0,0041 nm",
+   "E": "Circa 0,041 nm"
+  },
+  "giusta": "E",
+  "perche": "La lunghezza d'onda minima si ha quando un elettrone cede tutta la sua energia cinetica, eV = 30 keV, a un solo fotone (legge di Duane-Hunt). Quindi λ_min = hc/(eV) = 1240/30 000 ≈ 0,041 nm. È una prova ulteriore del carattere quantistico della radiazione: classicamente non ci sarebbe un limite netto nello spettro. La trappola è dimenticare di convertire i kilovolt in volt, ottenendo un risultato mille volte più grande.",
+  "semplice": "Ogni elettrone può regalare al massimo tutta la sua energia a un unico fotone: per questo lo spettro dei raggi X si interrompe bruscamente a una lunghezza d'onda minima.",
+  "passaggi": [
+   "E_max = eV = 30 000 eV",
+   "λ_min = hc/E_max = 1240 eV·nm / 30 000 eV",
+   "λ_min ≈ 0,041 nm"
+  ],
+  "concetto": "limite di Duane-Hunt"
+ },
+ {
+  "id": "FMO-037",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "superiori",
+  "domanda": "Quale risultato dell'esperimento di Rutherford (lamina d'oro) portò al modello nucleare dell'atomo?",
+  "opzioni": {
+   "A": "Tutte le particelle alfa passavano senza deviazione",
+   "B": "Le particelle alfa venivano assorbite completamente dalla lamina",
+   "C": "La lamina emetteva luce di colori diversi",
+   "D": "Alcune particelle alfa venivano deviate ad angoli molto grandi, a volte rimbalzando indietro",
+   "E": "Le particelle alfa si trasformavano in elettroni"
+  },
+  "giusta": "D",
+  "perche": "La maggior parte delle particelle alfa attraversava la lamina quasi indisturbata, segno che l'atomo è in gran parte vuoto. Una piccola frazione però veniva deviata a grandi angoli, cosa impossibile nel modello «a panettone» di Thomson, dove la carica positiva è diffusa. Rutherford concluse che la carica positiva e quasi tutta la massa sono concentrate in un nucleo minuscolo. La trappola è citare solo il fatto che quasi tutte passano: quello dimostra il vuoto, ma è il rimbalzo a dimostrare il nucleo.",
+  "semplice": "È come sparare palline contro un velo di zucchero filato e vederne ogni tanto una rimbalzare: dentro deve esserci un sassolino piccolo e duro.",
+  "passaggi": [
+   "Quasi tutte le particelle alfa attraversavano la lamina: l'atomo è in gran parte vuoto.",
+   "Una piccola frazione veniva deviata a grandi angoli, alcune rimbalzavano indietro.",
+   "Nel modello di Thomson, con carica positiva diffusa, questo era impossibile.",
+   "Serve una carica positiva concentrata in un nucleo minuscolo.",
+   "Il risultato decisivo è la D."
+  ],
+  "concetto": "esperimento di Rutherford"
+ },
+ {
+  "id": "FMO-038",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "superiori",
+  "domanda": "Nel modello di Bohr, quanto vale l'energia dell'elettrone dell'atomo di idrogeno nel livello n = 2?",
+  "opzioni": {
+   "A": "−3,4 eV",
+   "B": "−13,6 eV",
+   "C": "−6,8 eV",
+   "D": "−1,5 eV",
+   "E": "+3,4 eV"
+  },
+  "giusta": "A",
+  "perche": "Nel modello di Bohr i livelli energetici dell'idrogeno sono E_n = −13,6 eV/n². Per n = 2 si ha E₂ = −13,6/4 = −3,4 eV. La trappola è dividere per n invece che per n², ottenendo −6,8 eV, oppure dimenticare il segno meno: l'energia negativa indica uno stato legato.",
+  "semplice": "Più l'elettrone sta su un gradino alto, meno è legato al nucleo: al livello 2 basta dargli 3,4 eV per strapparlo via.",
+  "passaggi": [
+   "E_n = −13,6 eV/n²",
+   "n² = 4",
+   "E₂ = −13,6/4 = −3,4 eV"
+  ],
+  "concetto": "livelli di Bohr"
+ },
+ {
+  "id": "FMO-039",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "superiori",
+  "domanda": "Perché un gas rarefatto e caldo emette uno spettro a righe e non uno spettro continuo?",
+  "opzioni": {
+   "A": "Perché il gas filtra alcuni colori della luce bianca",
+   "B": "Perché gli elettroni degli atomi possono stare solo su livelli di energia discreti e i fotoni emessi hanno energie pari alle differenze tra livelli",
+   "C": "Perché gli atomi del gas si muovono a velocità diverse",
+   "D": "Perché la luce viene diffratta dagli atomi",
+   "E": "Perché gli atomi emettono solo luce bianca"
+  },
+  "giusta": "B",
+  "perche": "Ogni atomo ha livelli energetici quantizzati. Quando un elettrone scende da un livello più alto a uno più basso emette un fotone di energia ΔE = hf, quindi solo certe frequenze sono possibili: ne risultano righe nette, caratteristiche di ciascun elemento. La trappola è confondere lo spettro di emissione con quello di assorbimento: righe scure su fondo continuo si osservano quando luce bianca attraversa un gas più freddo.",
+  "semplice": "Ogni elemento ha la sua «impronta digitale» di colori: il sodio dà un giallo intenso, il neon il rosso-arancio delle insegne. Così si riconoscono gli elementi anche nelle stelle.",
+  "passaggi": [
+   "Negli atomi gli elettroni possono stare solo su livelli di energia discreti.",
+   "Scendendo da un livello all'altro l'elettrone emette un fotone con hf = ΔE.",
+   "Le ΔE possibili sono poche e fisse: solo certe frequenze, quindi righe.",
+   "Righe scure su fondo continuo si avrebbero invece in assorbimento.",
+   "Risposta: la B."
+  ],
+  "concetto": "spettri a righe"
+ },
+ {
+  "id": "FMO-040",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "superiori",
+  "domanda": "Che cosa prevede il modello atomico di Thomson?",
+  "opzioni": {
+   "A": "Un nucleo piccolo e denso circondato da elettroni in orbita",
+   "B": "Una sfera di carica positiva diffusa in cui sono immersi gli elettroni",
+   "C": "Elettroni su orbite circolari con energia quantizzata",
+   "D": "Una nuvola di probabilità attorno al nucleo",
+   "E": "Atomi indivisibili senza struttura interna"
+  },
+  "giusta": "B",
+  "perche": "Thomson, dopo aver scoperto l'elettrone, propose un atomo formato da una sfera uniforme di carica positiva con gli elettroni distribuiti all'interno, come uvette in un dolce. Il modello spiegava la neutralità dell'atomo ma non i grandi angoli di deviazione osservati da Rutherford. La trappola è confonderlo con il modello di Rutherford (nucleo) o con quello di Bohr (orbite quantizzate).",
+  "semplice": "Immagina un panettone: la pasta è la carica positiva, le uvette sono gli elettroni sparsi qua e là.",
+  "passaggi": [
+   "Thomson scoprì l'elettrone e propose un modello atomico neutro.",
+   "Sfera uniforme di carica positiva con gli elettroni immersi dentro, come uvette in un dolce.",
+   "Il nucleo è di Rutherford, le orbite quantizzate di Bohr, la nuvola di probabilità della meccanica quantistica.",
+   "Risposta: la B."
+  ],
+  "concetto": "modello di Thomson"
+ },
+ {
+  "id": "FMO-041",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "superiori",
+  "domanda": "Quale problema del modello di Rutherford risolse Bohr?",
+  "opzioni": {
+   "A": "Il nucleo era troppo grande per spiegare le deviazioni",
+   "B": "Gli elettroni dovevano essere più pesanti dei protoni",
+   "C": "L'atomo non poteva essere neutro",
+   "D": "Un elettrone in orbita, essendo accelerato, dovrebbe irraggiare energia e cadere sul nucleo, rendendo l'atomo instabile",
+   "E": "Non spiegava l'esistenza dei neutroni"
+  },
+  "giusta": "D",
+  "perche": "Secondo l'elettromagnetismo classico una carica accelerata irraggia. Un elettrone in orbita circolare è accelerato verso il centro, quindi perderebbe energia spiraleggiando sul nucleo in una frazione di secondo. Bohr postulò che esistano orbite stazionarie in cui l'elettrone non irraggia, e che l'emissione avvenga solo nei salti tra orbite. La trappola è pensare che Bohr abbia spiegato tutto: il suo modello funziona bene per l'idrogeno ma non per atomi a più elettroni.",
+  "semplice": "Nel modello di Rutherford l'elettrone sarebbe come un satellite che perde quota e precipita in un attimo. Bohr disse: ci sono orbite «speciali» dove questo non succede.",
+  "passaggi": [
+   "Nel modello di Rutherford l'elettrone orbita attorno al nucleo.",
+   "In orbita circolare è accelerato verso il centro.",
+   "Una carica accelerata irraggia: perderebbe energia e cadrebbe sul nucleo in una frazione di secondo.",
+   "Bohr postulò orbite stazionarie senza irraggiamento, con emissione solo nei salti.",
+   "Il problema risolto è la D."
+  ],
+  "concetto": "stabilità dell'atomo"
+ },
+ {
+  "id": "FMO-042",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "superiori",
+  "domanda": "Un elettrone dell'idrogeno passa dal livello n = 3 al livello n = 2. Quale lunghezza d'onda ha il fotone emesso? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 122 nm (ultravioletto)",
+   "B": "Circa 486 nm (azzurro)",
+   "C": "Circa 1875 nm (infrarosso)",
+   "D": "Circa 365 nm (ultravioletto)",
+   "E": "Circa 656 nm (rosso)"
+  },
+  "giusta": "E",
+  "perche": "Le energie sono E₃ = −13,6/9 ≈ −1,51 eV ed E₂ = −3,40 eV; la differenza è circa 1,89 eV. La lunghezza d'onda è λ = 1240/1,89 ≈ 656 nm: è la riga rossa H-alfa della serie di Balmer. La trappola è usare la differenza dei numeri quantici invece delle energie, o confondersi con la transizione 2 → 1 (122 nm, serie di Lyman).",
+  "semplice": "Il bagliore rosso delle nebulose dove nascono le stelle è proprio questa riga dell'idrogeno: elettroni che scendono dal terzo al secondo gradino.",
+  "passaggi": [
+   "E₃ = −13,6/9 ≈ −1,51 eV; E₂ = −3,40 eV",
+   "ΔE = 3,40 − 1,51 ≈ 1,89 eV",
+   "λ = 1240/1,89 ≈ 656 nm"
+  ],
+  "concetto": "serie di Balmer"
+ },
+ {
+  "id": "FMO-043",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "superiori",
+  "domanda": "Quanta energia serve per ionizzare un atomo di idrogeno nello stato fondamentale?",
+  "opzioni": {
+   "A": "3,4 eV",
+   "B": "1,0 eV",
+   "C": "27,2 eV",
+   "D": "0 eV",
+   "E": "13,6 eV"
+  },
+  "giusta": "E",
+  "perche": "Lo stato fondamentale ha energia −13,6 eV; ionizzare significa portare l'elettrone a energia zero, cioè libero e fermo. Servono quindi 13,6 eV. La trappola è confondere l'energia di ionizzazione con quella del primo salto (10,2 eV, da n = 1 a n = 2) o con l'energia del livello 2. Un fotone con lunghezza d'onda inferiore a circa 91 nm può ionizzare l'idrogeno.",
+  "semplice": "Per liberare del tutto l'elettrone dell'idrogeno bisogna dargli almeno 13,6 eV, come per far uscire una pallina dal fondo di un pozzo profondo 13,6 gradini.",
+  "passaggi": [
+   "Energia dello stato fondamentale dell'idrogeno: E₁ = −13,6 eV.",
+   "Ionizzare significa portare l'elettrone a energia 0 (libero e fermo).",
+   "Energia necessaria: 0 − (−13,6 eV) = 13,6 eV.",
+   "10,2 eV è il salto 1 → 2 e 3,4 eV è l'energia del livello 2: non sono la ionizzazione.",
+   "Servono 13,6 eV."
+  ],
+  "concetto": "energia di ionizzazione"
+ },
+ {
+  "id": "FMO-044",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "test",
+  "domanda": "Quante righe spettrali diverse può emettere un insieme di atomi di idrogeno eccitati fino al livello n = 4?",
+  "opzioni": {
+   "A": "4",
+   "B": "3",
+   "C": "6",
+   "D": "10",
+   "E": "12"
+  },
+  "giusta": "C",
+  "perche": "Le transizioni possibili sono tutte le coppie di livelli tra 1 e 4: 4→3, 4→2, 4→1, 3→2, 3→1, 2→1. Sono n(n − 1)/2 = 4 × 3/2 = 6. La trappola è contare solo le transizioni dirette verso il fondamentale (3) o solo quelle che partono da n = 4. In un gas con tanti atomi, tutte le cascate possibili avvengono.",
+  "semplice": "Pensa a una scala con 4 gradini: puoi saltare giù da ogni gradino a ogni gradino più basso. Contando tutte le combinazioni ottieni 6 salti diversi, quindi 6 colori.",
+  "passaggi": [
+   "Coppie di livelli tra 1 e 4",
+   "N = n(n − 1)/2",
+   "N = 4 × 3/2 = 6"
+  ],
+  "concetto": "numero di transizioni"
+ },
+ {
+  "id": "FMO-045",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "test",
+  "domanda": "Quale formula esprime il raggio dell'orbita n-esima nell'atomo di idrogeno secondo Bohr?",
+  "opzioni": {
+   "A": "r_n = n·a₀",
+   "B": "r_n = n²·a₀, con a₀ ≈ 0,053 nm",
+   "C": "r_n = a₀/n²",
+   "D": "r_n = a₀/n",
+   "E": "r_n = a₀·√n"
+  },
+  "giusta": "B",
+  "perche": "Nel modello di Bohr la quantizzazione del momento angolare (L = nħ) porta a raggi r_n = n²a₀, dove a₀ ≈ 0,0529 nm è il raggio di Bohr. Per n = 3 il raggio è 9a₀ ≈ 0,48 nm. La trappola è confondere la dipendenza da n del raggio (n²) con quella dell'energia (1/n²).",
+  "semplice": "Ogni orbita successiva è molto più grande della precedente: la seconda è 4 volte la prima, la terza 9 volte.",
+  "passaggi": [
+   "La quantizzazione L = nħ porta a raggi r_n = n²·a₀.",
+   "a₀ ≈ 0,053 nm è il raggio di Bohr (n = 1).",
+   "Esempio: n = 3 dà r₃ = 9 · 0,053 nm ≈ 0,48 nm.",
+   "Non confondere con l'energia, che va come 1/n².",
+   "La formula è r_n = n²·a₀."
+  ],
+  "concetto": "raggio di Bohr"
+ },
+ {
+  "id": "FMO-046",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "test",
+  "domanda": "Quale ipotesi è alla base della quantizzazione delle orbite nel modello di Bohr?",
+  "opzioni": {
+   "A": "La velocità dell'elettrone è un multiplo intero di c",
+   "B": "La massa dell'elettrone è quantizzata",
+   "C": "Il raggio dell'orbita è un multiplo intero del raggio del nucleo",
+   "D": "La carica dell'elettrone varia con l'orbita",
+   "E": "Il momento angolare dell'elettrone è un multiplo intero di h/2π"
+  },
+  "giusta": "E",
+  "perche": "Bohr postulò che solo le orbite con momento angolare L = mvr = nħ, con ħ = h/2π e n intero positivo, siano permesse. Da qui discendono i raggi e le energie quantizzate. In seguito de Broglie diede un'interpretazione: l'orbita contiene un numero intero di lunghezze d'onda dell'elettrone. La trappola è pensare che sia l'energia a essere postulata direttamente: è conseguenza della condizione sul momento angolare.",
+  "semplice": "È come una corda chiusa ad anello che può vibrare solo se ci stanno esattamente 1, 2, 3 onde intere: le orbite permesse sono quelle che «quadrano».",
+  "passaggi": [
+   "Bohr postulò quali orbite fossero permesse.",
+   "Condizione: momento angolare L = mvr = nħ, con ħ = h/2π e n intero positivo.",
+   "Raggi ed energie quantizzate sono conseguenze di questa condizione.",
+   "Né massa né carica né velocità sono quantizzate in questo modo.",
+   "L'ipotesi è che il momento angolare sia multiplo intero di h/2π."
+  ],
+  "concetto": "quantizzazione del momento angolare"
+ },
+ {
+  "id": "FMO-047",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "test",
+  "domanda": "A quale serie spettrale appartengono le righe dell'idrogeno che terminano nel livello n = 1, e in che zona dello spettro cadono?",
+  "opzioni": {
+   "A": "Serie di Balmer, visibile",
+   "B": "Serie di Paschen, infrarosso",
+   "C": "Serie di Lyman, ultravioletto",
+   "D": "Serie di Lyman, infrarosso",
+   "E": "Serie di Balmer, ultravioletto"
+  },
+  "giusta": "C",
+  "perche": "Le transizioni verso n = 1 formano la serie di Lyman; poiché i salti verso il livello fondamentale sono i più grandi (almeno 10,2 eV), i fotoni cadono nell'ultravioletto. La serie di Balmer termina in n = 2 e ha righe nel visibile; quella di Paschen termina in n = 3 nell'infrarosso. La trappola è associare la serie di Balmer al livello fondamentale, solo perché è la più famosa.",
+  "semplice": "Saltare fino al pianterreno (n = 1) libera tanta energia: luce ultravioletta. Fermarsi al primo piano (n = 2) libera meno energia: luce visibile.",
+  "passaggi": [
+   "Righe che terminano in n = 1: serie di Lyman (Balmer termina in n = 2, Paschen in n = 3).",
+   "I salti verso n = 1 sono i più grandi: almeno 13,6 · (1 − 1/4) = 10,2 eV.",
+   "λ = hc/E ≈ 1240 eV·nm / 10,2 eV ≈ 122 nm, nell'ultravioletto.",
+   "Serie di Lyman, ultravioletto."
+  ],
+  "concetto": "serie spettrali"
+ },
+ {
+  "id": "FMO-048",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "test",
+  "domanda": "Nell'esperimento di Franck e Hertz con vapori di mercurio la corrente cala bruscamente ogni 4,9 V circa. Che lunghezza d'onda ha la luce emessa dagli atomi eccitati? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 490 nm",
+   "B": "Circa 608 nm",
+   "C": "Circa 253 nm",
+   "D": "Circa 25 nm",
+   "E": "Circa 1240 nm"
+  },
+  "giusta": "C",
+  "perche": "I cali di corrente ogni 4,9 V mostrano che gli elettroni cedono energia agli atomi di mercurio solo in quantità da 4,9 eV: è la prova diretta dei livelli discreti. Quando l'atomo torna allo stato fondamentale emette un fotone di 4,9 eV, con λ = 1240/4,9 ≈ 253 nm, nell'ultravioletto. La trappola è confondere 4,9 eV con 490 nm per una coincidenza di cifre.",
+  "semplice": "Gli elettroni possono «regalare» energia agli atomi di mercurio solo in pacchetti da 4,9 eV. Poi l'atomo restituisce quel pacchetto come luce ultravioletta.",
+  "passaggi": [
+   "E = 4,9 eV",
+   "λ = hc/E = 1240/4,9",
+   "λ ≈ 253 nm"
+  ],
+  "concetto": "esperimento di Franck-Hertz"
+ },
+ {
+  "id": "FMO-049",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "università",
+  "domanda": "Qual è l'energia dello stato fondamentale dello ione idrogenoide He⁺ (Z = 2)?",
+  "opzioni": {
+   "A": "−54,4 eV",
+   "B": "−13,6 eV",
+   "C": "−27,2 eV",
+   "D": "−6,8 eV",
+   "E": "−3,4 eV"
+  },
+  "giusta": "A",
+  "perche": "Per uno ione con un solo elettrone e nucleo di carica Ze il modello di Bohr dà E_n = −13,6 eV·Z²/n². Con Z = 2 e n = 1 si ottiene −13,6 × 4 = −54,4 eV. La trappola è usare Z invece di Z², ottenendo −27,2 eV: l'energia dipende da Z² perché la carica nucleare compare sia nel potenziale sia nel raggio dell'orbita, che si riduce di un fattore Z.",
+  "semplice": "Un nucleo con carica doppia tiene l'elettrone molto più stretto: l'orbita è più piccola e l'energia di legame è quattro volte quella dell'idrogeno.",
+  "passaggi": [
+   "E_n = −13,6 eV·Z²/n²",
+   "Z = 2, n = 1",
+   "E₁ = −13,6 × 4 = −54,4 eV"
+  ],
+  "concetto": "atomi idrogenoidi"
+ },
+ {
+  "id": "FMO-050",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "università",
+  "domanda": "Quale limite della serie di Balmer si ottiene con la formula di Rydberg (R ≈ 1,097 × 10⁷ m⁻¹)?",
+  "opzioni": {
+   "A": "Circa 365 nm",
+   "B": "Circa 656 nm",
+   "C": "Circa 91 nm",
+   "D": "Circa 820 nm",
+   "E": "Circa 122 nm"
+  },
+  "giusta": "A",
+  "perche": "La formula di Rydberg è 1/λ = R(1/n₁² − 1/n₂²). Il limite della serie di Balmer si ha per n₁ = 2 e n₂ → ∞: 1/λ = R/4 ≈ 2,74 × 10⁶ m⁻¹, quindi λ ≈ 365 nm. Oltre questo limite lo spettro di emissione diventa continuo, perché corrisponde alla ricombinazione di elettroni liberi. La trappola è confondere il limite (lunghezza d'onda minima della serie) con la prima riga, H-alfa a 656 nm, che è la più lunga.",
+  "semplice": "Le righe di Balmer si stringono sempre di più verso l'ultravioletto e si «accumulano» a circa 365 nm, come i pioli di una scala che si avvicinano verso l'alto.",
+  "passaggi": [
+   "1/λ = R(1/2² − 1/∞²) = R/4",
+   "1/λ = 1,097 × 10⁷/4 ≈ 2,74 × 10⁶ m⁻¹",
+   "λ ≈ 3,65 × 10⁻⁷ m = 365 nm"
+  ],
+  "concetto": "formula di Rydberg"
+ },
+ {
+  "id": "FMO-051",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "università",
+  "domanda": "Quali numeri quantici caratterizzano lo stato di un elettrone nell'atomo di idrogeno secondo la meccanica quantistica?",
+  "opzioni": {
+   "A": "Solo n, come nel modello di Bohr",
+   "B": "n, l, m_l e m_s (principale, orbitale, magnetico e di spin)",
+   "C": "n e la velocità dell'elettrone",
+   "D": "Il raggio dell'orbita e la sua energia",
+   "E": "l e m_l soltanto, perché n non è quantizzato"
+  },
+  "giusta": "B",
+  "perche": "La soluzione dell'equazione di Schrödinger per l'idrogeno introduce tre numeri quantici: n (energia, n ≥ 1), l (momento angolare, da 0 a n − 1), m_l (proiezione del momento angolare, da −l a +l). A questi si aggiunge lo spin, con m_s = ±½. Il livello n ha 2n² stati: è la base della tavola periodica. La trappola è pensare che le orbite di Bohr siano ancora valide: in meccanica quantistica si parla di orbitali, cioè distribuzioni di probabilità.",
+  "semplice": "Ogni elettrone ha un «indirizzo» di quattro numeri: piano (n), forma della stanza (l), orientamento (m_l) e verso dello spin.",
+  "passaggi": [
+   "L'equazione di Schrödinger per l'idrogeno dà tre numeri quantici.",
+   "n principale (n ≥ 1), l orbitale (da 0 a n − 1), m_l magnetico (da −l a +l).",
+   "A questi si aggiunge lo spin m_s = ±½.",
+   "Le orbite di Bohr con solo n non bastano più.",
+   "I numeri sono n, l, m_l e m_s."
+  ],
+  "concetto": "numeri quantici"
+ },
+ {
+  "id": "FMO-052",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "università",
+  "domanda": "Che cosa afferma il principio di esclusione di Pauli?",
+  "opzioni": {
+   "A": "Due elettroni non possono mai trovarsi nello stesso orbitale",
+   "B": "Gli elettroni devono avere tutti lo stesso spin",
+   "C": "Un elettrone non può cambiare livello energetico",
+   "D": "Due elettroni in uno stesso atomo non possono avere tutti e quattro i numeri quantici uguali",
+   "E": "Il nucleo e gli elettroni non possono avere la stessa energia"
+  },
+  "giusta": "D",
+  "perche": "Il principio di Pauli vale per i fermioni come gli elettroni: due di essi non possono occupare lo stesso stato quantico. In un atomo ciò significa che non possono avere la stessa quaterna (n, l, m_l, m_s); quindi in un orbitale stanno al massimo due elettroni, con spin opposti. La trappola è dire che due elettroni non possono stare nello stesso orbitale: possono, purché abbiano spin diverso. Il principio spiega la struttura a gusci e la tavola periodica.",
+  "semplice": "In un orbitale c'è posto solo per due elettroni, come in una camera doppia: uno con lo spin «su» e uno con lo spin «giù».",
+  "passaggi": [
+   "Il principio di Pauli vale per i fermioni, come gli elettroni.",
+   "Due fermioni non possono occupare lo stesso stato quantico.",
+   "In un atomo lo stato è dato dalla quaterna (n, l, m_l, m_s).",
+   "Due elettroni possono stare nello stesso orbitale se hanno spin opposti: A è sbagliata.",
+   "Risposta: non possono avere tutti e quattro i numeri quantici uguali."
+  ],
+  "concetto": "principio di Pauli"
+ },
+ {
+  "id": "FMO-053",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "università",
+  "domanda": "Perché i raggi X caratteristici di un elemento seguono la legge di Moseley, con √f proporzionale a (Z − 1)?",
+  "opzioni": {
+   "A": "Perché la massa del nucleo cresce linearmente con Z",
+   "B": "Perché i raggi X sono prodotti dal nucleo e non dagli elettroni",
+   "C": "Perché un elettrone che scende nel guscio K vede la carica del nucleo schermata da circa un elettrone rimasto in quel guscio",
+   "D": "Perché la velocità degli elettroni è proporzionale a Z",
+   "E": "Perché i neutroni schermano la carica del nucleo"
+  },
+  "giusta": "C",
+  "perche": "La riga Kα nasce quando un elettrone passa dal guscio L al guscio K, rimasto con una lacuna. L'elettrone vede una carica efficace Z − 1, perché l'altro elettrone del guscio K scherma quasi un'unità di carica. Con il modello di Bohr l'energia è circa 10,2 eV × (Z − 1)², da cui √f ∝ (Z − 1). Moseley la usò per ordinare gli elementi per numero atomico anziché per massa. La trappola è attribuire i raggi X caratteristici al nucleo: sono transizioni elettroniche interne.",
+  "semplice": "Più protoni ha il nucleo, più energetico è il «salto» degli elettroni interni: misurando i raggi X si legge direttamente il numero atomico dell'elemento.",
+  "passaggi": [
+   "La riga Kα nasce da un elettrone che passa dal guscio L al guscio K, dove c'è una lacuna.",
+   "Nel guscio K resta un altro elettrone che scherma circa una unità di carica.",
+   "La carica efficace vista è Z − 1: con Bohr E ≈ 10,2 eV · (Z − 1)².",
+   "f = E/h ∝ (Z − 1)², quindi √f ∝ (Z − 1).",
+   "Risposta: la C (transizioni elettroniche interne, non nucleari)."
+  ],
+  "concetto": "legge di Moseley"
+ },
+ {
+  "id": "FMO-054",
+  "materia": "Fisica moderna",
+  "argomento": "Modelli atomici e spettri",
+  "livello": "università",
+  "domanda": "Che cos'è la struttura fine delle righe spettrali dell'idrogeno?",
+  "opzioni": {
+   "A": "Una piccola separazione dei livelli dovuta a effetti relativistici e all'interazione spin-orbita",
+   "B": "La divisione delle righe causata da un campo magnetico esterno",
+   "C": "L'allargamento delle righe dovuto al moto termico degli atomi",
+   "D": "La presenza di righe dovute a impurità nel gas",
+   "E": "Le righe prodotte dal nucleo dell'atomo"
+  },
+  "giusta": "A",
+  "perche": "Osservando con alta risoluzione, molte righe dell'idrogeno risultano formate da più righe vicine. La separazione, dell'ordine di α² ≈ 5 × 10⁻⁵ rispetto all'energia del livello, è dovuta alle correzioni relativistiche dell'energia cinetica e all'interazione tra lo spin dell'elettrone e il suo moto orbitale. La trappola è confonderla con l'effetto Zeeman, che richiede un campo magnetico esterno, o con l'allargamento Doppler, che non separa le righe ma le allarga.",
+  "semplice": "Guardate con uno strumento molto preciso, alcune righe che sembravano singole si rivelano coppie di righe vicinissime, come gemelli quasi identici.",
+  "passaggi": [
+   "Ad alta risoluzione molte righe dell'idrogeno sono formate da più righe vicine.",
+   "La separazione è piccola, dell'ordine di α² ≈ 5 × 10⁻⁵ rispetto all'energia del livello.",
+   "È dovuta a correzioni relativistiche e all'interazione spin-orbita, senza campi esterni.",
+   "L'effetto Zeeman richiede un campo magnetico esterno; il Doppler allarga, non separa.",
+   "Risposta: la A."
+  ],
+  "concetto": "struttura fine"
+ },
+ {
+  "id": "FMO-055",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "superiori",
+  "domanda": "Che cosa afferma l'ipotesi di de Broglie?",
+  "opzioni": {
+   "A": "La luce è formata da particelle con massa",
+   "B": "Gli elettroni ruotano su orbite circolari intorno al nucleo",
+   "C": "Ogni particella materiale ha associata un'onda di lunghezza λ = h/p",
+   "D": "La massa di una particella dipende dalla sua velocità",
+   "E": "Le onde elettromagnetiche hanno bisogno di un mezzo per propagarsi"
+  },
+  "giusta": "C",
+  "perche": "Nel 1924 de Broglie propose che il dualismo onda-particella valesse anche per la materia: a una particella di quantità di moto p è associata una lunghezza d'onda λ = h/p. L'ipotesi fu confermata dalla diffrazione degli elettroni (Davisson e Germer, 1927). La trappola è pensare che l'ipotesi riguardi la luce: il comportamento corpuscolare della luce era già noto, la novità fu attribuire un'onda alla materia.",
+  "semplice": "Un elettrone veloce si comporta come un'onda con lunghezza d'onda simile alle distanze tra gli atomi di un cristallo: per questo un cristallo può farlo diffrangere, come un reticolo fa con la luce.",
+  "passaggi": [
+   "De Broglie (1924) estese il dualismo onda-particella alla materia.",
+   "A una particella di quantità di moto p si associa un'onda di lunghezza λ = h/p.",
+   "Confermata dalla diffrazione degli elettroni (Davisson e Germer, 1927).",
+   "Risposta: la C."
+  ],
+  "concetto": "onde di materia"
+ },
+ {
+  "id": "FMO-056",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "superiori",
+  "domanda": "Qual è circa la lunghezza d'onda di de Broglie di un elettrone accelerato da una differenza di potenziale di 100 V?",
+  "opzioni": {
+   "A": "Circa 0,12 nm",
+   "B": "Circa 120 nm",
+   "C": "Circa 1,2 μm",
+   "D": "Circa 12 nm",
+   "E": "Circa 0,0012 nm"
+  },
+  "giusta": "A",
+  "perche": "L'elettrone acquista energia cinetica K = eV = 100 eV, quindi p = √(2mK). Sostituendo, λ = h/√(2m·eV) ≈ 6,63 × 10⁻³⁴/√(2 × 9,11 × 10⁻³¹ × 1,6 × 10⁻¹⁷) ≈ 1,2 × 10⁻¹⁰ m, cioè 0,12 nm. È una distanza tipica tra atomi nei cristalli: per questo gli elettroni sono usati nei microscopi elettronici. La trappola è confondere l'energia in eV con quella in joule.",
+  "semplice": "Basta una tensione di 100 V per dare a un elettrone una lunghezza d'onda grande quanto un atomo: abbastanza piccola da «vedere» dettagli che la luce visibile non risolve.",
+  "passaggi": [
+   "K = eV = 1,6 × 10⁻¹⁹ × 100 = 1,6 × 10⁻¹⁷ J",
+   "p = √(2mK) = √(2 × 9,11 × 10⁻³¹ × 1,6 × 10⁻¹⁷) ≈ 5,4 × 10⁻²⁴ kg·m/s",
+   "λ = h/p ≈ 6,63 × 10⁻³⁴ / 5,4 × 10⁻²⁴ ≈ 1,2 × 10⁻¹⁰ m"
+  ],
+  "concetto": "lunghezza d'onda di de Broglie"
+ },
+ {
+  "id": "FMO-057",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "superiori",
+  "domanda": "Perché non osserviamo il comportamento ondulatorio di una palla da tennis?",
+  "opzioni": {
+   "A": "Perché gli oggetti macroscopici non hanno quantità di moto",
+   "B": "Perché l'ipotesi di de Broglie vale solo per particelle cariche",
+   "C": "Perché la palla si muove troppo lentamente",
+   "D": "Perché la gravità annulla le onde di materia",
+   "E": "Perché la sua lunghezza d'onda di de Broglie è enormemente più piccola di qualunque ostacolo o fenditura"
+  },
+  "giusta": "E",
+  "perche": "Per una palla di 0,1 kg a 10 m/s si ha λ = h/(mv) ≈ 6,6 × 10⁻³⁴ m, un valore miliardi di miliardi di volte più piccolo di un nucleo. Per vedere diffrazione o interferenza servono aperture paragonabili a λ, impossibili da realizzare. La trappola è pensare che la meccanica quantistica non valga per gli oggetti grandi: vale, ma i suoi effetti ondulatori sono del tutto trascurabili.",
+  "semplice": "Le onde della palla da tennis sono così minuscole che nessuna rete o fessura potrà mai farle notare: per gli oggetti di tutti i giorni la fisica classica funziona benissimo.",
+  "passaggi": [
+   "λ = h/(mv)",
+   "λ = 6,63 × 10⁻³⁴ / (0,1 × 10)",
+   "λ ≈ 6,6 × 10⁻³⁴ m"
+  ],
+  "concetto": "limite classico"
+ },
+ {
+  "id": "FMO-058",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "superiori",
+  "domanda": "Che cosa afferma il principio di indeterminazione di Heisenberg per posizione e quantità di moto?",
+  "opzioni": {
+   "A": "La posizione e la quantità di moto si possono misurare insieme con precisione arbitraria",
+   "B": "L'incertezza dipende solo dalla qualità degli strumenti",
+   "C": "Più si conosce la posizione, più si conosce la velocità",
+   "D": "L'energia di una particella è sempre indeterminata",
+   "E": "Il prodotto delle incertezze Δx·Δp non può essere minore di ħ/2"
+  },
+  "giusta": "E",
+  "perche": "Il principio di indeterminazione stabilisce che Δx·Δp ≥ ħ/2, con ħ = h/2π. Non è un limite tecnico degli strumenti ma una proprietà della natura: una particella non possiede contemporaneamente posizione e quantità di moto perfettamente definite. La trappola è attribuirlo solo al «disturbo» della misura o pensare che con strumenti migliori si possa aggirare.",
+  "semplice": "Se stringi un elettrone in uno spazio piccolissimo, la sua velocità diventa molto incerta: più lo «blocchi» in un punto, più non sai dove sta andando.",
+  "passaggi": [
+   "Il principio di Heisenberg lega le incertezze su posizione e quantità di moto.",
+   "Formula: Δx · Δp ≥ ħ/2, con ħ = h/2π.",
+   "Non è un limite degli strumenti ma una proprietà della natura.",
+   "Più si restringe Δx, più cresce Δp: l'opposto dell'opzione C.",
+   "Risposta: la E."
+  ],
+  "concetto": "principio di indeterminazione"
+ },
+ {
+  "id": "FMO-059",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "superiori",
+  "domanda": "Nell'esperimento della doppia fenditura con elettroni inviati uno alla volta, che cosa si osserva sullo schermo dopo molto tempo?",
+  "opzioni": {
+   "A": "Due sole strisce in corrispondenza delle fenditure",
+   "B": "Una figura d'interferenza a frange, costruita da impatti singoli e puntiformi",
+   "C": "Una macchia uniforme senza frange",
+   "D": "Nessun impatto, perché gli elettroni si annullano",
+   "E": "Un'unica striscia al centro dello schermo"
+  },
+  "giusta": "B",
+  "perche": "Ogni elettrone arriva sullo schermo in un punto preciso, come una particella. Accumulando migliaia di arrivi, però, la distribuzione forma frange chiare e scure, tipiche dell'interferenza di un'onda passata per entrambe le fenditure. È il cuore del dualismo onda-particella: l'onda determina la probabilità, la rivelazione è puntiforme. La trappola è pensare che l'interferenza nasca da elettroni che si urtano tra loro: si forma anche inviandoli uno alla volta.",
+  "semplice": "È come se ogni elettrone, da solo, «esplorasse» entrambe le fessure. Un punto per volta, sullo schermo compare un disegno a strisce.",
+  "passaggi": [
+   "Ogni elettrone arriva sullo schermo in un punto preciso, come una particella.",
+   "Inviandoli uno alla volta non possono interferire tra loro.",
+   "Accumulando migliaia di arrivi compare una figura a frange chiare e scure.",
+   "L'onda (passata per entrambe le fenditure) determina la probabilità, la rivelazione è puntiforme.",
+   "Risposta: la B."
+  ],
+  "concetto": "doppia fenditura"
+ },
+ {
+  "id": "FMO-060",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "superiori",
+  "domanda": "Che significato ha il modulo quadro della funzione d'onda |ψ|²?",
+  "opzioni": {
+   "A": "È l'energia della particella",
+   "B": "È la velocità della particella",
+   "C": "È la carica distribuita nello spazio",
+   "D": "È la densità di probabilità di trovare la particella in un certo punto",
+   "E": "È la traiettoria della particella"
+  },
+  "giusta": "D",
+  "perche": "Secondo l'interpretazione di Born, la funzione d'onda ψ non è direttamente misurabile; il suo modulo quadro |ψ|² dà la densità di probabilità. La probabilità di trovare la particella in una piccola regione è |ψ|² per il volume della regione. La trappola è pensare che |ψ|² descriva una traiettoria o che la particella sia «spalmata» fisicamente: è una probabilità di rivelarla lì.",
+  "semplice": "Dove |ψ|² è grande, è probabile trovare l'elettrone; dove è piccolo, è improbabile. È come una mappa meteo della probabilità.",
+  "passaggi": [
+   "La funzione d'onda ψ non si misura direttamente.",
+   "Interpretazione di Born: |ψ|² è una densità di probabilità.",
+   "Probabilità in una piccola regione = |ψ|² × volume della regione.",
+   "Non è energia, velocità, carica o traiettoria.",
+   "|ψ|² è la densità di probabilità di trovare la particella."
+  ],
+  "concetto": "interpretazione di Born"
+ },
+ {
+  "id": "FMO-061",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "test",
+  "domanda": "Un elettrone è confinato in una regione larga 0,1 nm. Qual è l'ordine di grandezza dell'incertezza minima sulla sua velocità? (ħ ≈ 1,05 × 10⁻³⁴ J·s, m ≈ 9,1 × 10⁻³¹ kg)",
+  "opzioni": {
+   "A": "Circa 6 m/s",
+   "B": "Circa 6 × 10¹⁰ m/s",
+   "C": "Circa 6 × 10⁵ m/s",
+   "D": "Circa 6 × 10⁻⁵ m/s",
+   "E": "Circa 3 × 10⁸ m/s"
+  },
+  "giusta": "C",
+  "perche": "Dal principio di indeterminazione Δp ≥ ħ/(2Δx) = 1,05 × 10⁻³⁴/(2 × 10⁻¹⁰) ≈ 5,3 × 10⁻²⁵ kg·m/s. Dividendo per la massa: Δv ≈ 5,3 × 10⁻²⁵/9,1 × 10⁻³¹ ≈ 5,8 × 10⁵ m/s. È una velocità enorme: ecco perché l'elettrone in un atomo non può stare «fermo». La trappola è dimenticare il fattore 2 o usare h invece di ħ (dà un ordine di grandezza simile, ma il valore è diverso).",
+  "semplice": "Rinchiudere un elettrone in uno spazio grande come un atomo lo rende inevitabilmente «agitato»: la sua velocità è incerta di centinaia di km al secondo.",
+  "passaggi": [
+   "Δp ≥ ħ/(2Δx) = 1,05 × 10⁻³⁴ / (2 × 10⁻¹⁰)",
+   "Δp ≈ 5,3 × 10⁻²⁵ kg·m/s",
+   "Δv = Δp/m ≈ 5,3 × 10⁻²⁵ / 9,1 × 10⁻³¹ ≈ 5,8 × 10⁵ m/s"
+  ],
+  "concetto": "indeterminazione e confinamento"
+ },
+ {
+  "id": "FMO-062",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "test",
+  "domanda": "Per una particella in una buca di potenziale infinita unidimensionale, come dipendono i livelli di energia dal numero quantico n?",
+  "opzioni": {
+   "A": "E_n ∝ n²",
+   "B": "E_n ∝ n",
+   "C": "E_n ∝ 1/n²",
+   "D": "E_n ∝ √n",
+   "E": "E_n non dipende da n"
+  },
+  "giusta": "A",
+  "perche": "Le onde stazionarie nella buca devono annullarsi alle pareti, quindi L = nλ/2. Da λ = h/p segue p = nh/(2L) e l'energia E = p²/2m = n²h²/(8mL²). Quindi E_n cresce come n²: il secondo livello ha energia quattro volte il primo. La trappola è confondersi con l'atomo di idrogeno, dove E_n ∝ −1/n²: lì il potenziale non è una buca a pareti rigide.",
+  "semplice": "È come la corda di una chitarra: può vibrare solo con un numero intero di mezze onde. Più mezze onde ci sono, più energia serve, e cresce con il quadrato.",
+  "passaggi": [
+   "L = nλ/2 ⇒ λ = 2L/n",
+   "p = h/λ = nh/(2L)",
+   "E = p²/2m = n²h²/(8mL²)"
+  ],
+  "concetto": "particella nella scatola"
+ },
+ {
+  "id": "FMO-063",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "test",
+  "domanda": "Un elettrone è in una buca infinita larga 1 nm, con E₁ ≈ 0,38 eV. Quale lunghezza d'onda ha il fotone emesso nella transizione da n = 2 a n = 1? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 3300 nm",
+   "B": "Circa 1100 nm",
+   "C": "Circa 820 nm",
+   "D": "Circa 410 nm",
+   "E": "Circa 1650 nm"
+  },
+  "giusta": "B",
+  "perche": "Con E_n = n²E₁ si ha E₂ = 4E₁, quindi ΔE = 3E₁ ≈ 3 × 0,376 ≈ 1,13 eV. La lunghezza d'onda è λ = 1240/1,13 ≈ 1100 nm, nel vicino infrarosso. La trappola è usare ΔE = E₁ (pensando che i livelli siano equidistanti) e trovare circa 3300 nm. Questo principio è alla base dei punti quantici, il cui colore dipende dalla dimensione.",
+  "semplice": "Più stretta è la scatola, più distanti sono i livelli e più «blu» è la luce emessa: per questo i punti quantici più piccoli brillano di blu e quelli più grandi di rosso.",
+  "passaggi": [
+   "E₂ = 4E₁, quindi ΔE = 3E₁",
+   "ΔE ≈ 3 × 0,376 ≈ 1,13 eV",
+   "λ = 1240/1,13 ≈ 1100 nm"
+  ],
+  "concetto": "transizioni nella buca"
+ },
+ {
+  "id": "FMO-064",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "test",
+  "domanda": "Che cos'è l'effetto tunnel?",
+  "opzioni": {
+   "A": "Il passaggio della luce attraverso una fibra ottica",
+   "B": "La deviazione di una particella carica in un campo magnetico",
+   "C": "La possibilità che una particella attraversi una barriera di potenziale più alta della sua energia",
+   "D": "L'emissione di elettroni da un metallo riscaldato",
+   "E": "L'aumento di energia di una particella quando attraversa un campo"
+  },
+  "giusta": "C",
+  "perche": "In meccanica quantistica la funzione d'onda non si annulla bruscamente dentro una barriera, ma decresce esponenzialmente; se la barriera è sottile, ne resta una parte dall'altro lato. C'è quindi una probabilità non nulla di trovare la particella oltre la barriera, anche se classicamente non avrebbe energia sufficiente. L'effetto spiega il decadimento alfa e il funzionamento del microscopio a effetto tunnel. La trappola è pensare che la particella «acquisti» energia per superare la barriera: la sua energia resta la stessa.",
+  "semplice": "È come se una pallina che non ha abbastanza energia per salire su una collina comparisse, ogni tanto, dall'altra parte: in natura succede davvero alle particelle microscopiche.",
+  "passaggi": [
+   "Classicamente una particella con energia minore della barriera viene respinta.",
+   "Quantisticamente la funzione d'onda dentro la barriera decresce esponenzialmente senza annullarsi.",
+   "Se la barriera è sottile, ne resta una parte dall'altro lato: probabilità non nulla di trovarla oltre.",
+   "L'energia della particella non cambia.",
+   "Risposta: la C."
+  ],
+  "concetto": "effetto tunnel"
+ },
+ {
+  "id": "FMO-065",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "test",
+  "domanda": "Che cosa si intende per principio di complementarità di Bohr?",
+  "opzioni": {
+   "A": "Gli aspetti ondulatorio e corpuscolare sono entrambi necessari per descrivere un sistema, ma non si manifestano nello stesso esperimento",
+   "B": "Un elettrone è sempre un'onda e mai una particella",
+   "C": "Due osservatori misurano sempre risultati complementari",
+   "D": "Energia e massa sono complementari",
+   "E": "Ogni particella ha un'antiparticella complementare"
+  },
+  "giusta": "A",
+  "perche": "Bohr sostenne che onda e particella sono descrizioni complementari: servono entrambe, ma un esperimento che rivela una delle due nasconde l'altra. Se nella doppia fenditura si individua da quale fenditura passa l'elettrone, la figura d'interferenza sparisce. La trappola è confondere la complementarità con l'esistenza delle antiparticelle o pensare che una delle due descrizioni sia quella «vera».",
+  "semplice": "È come una moneta: puoi guardare testa o croce, ma mai entrambe nello stesso istante. Eppure servono tutte e due per descriverla.",
+  "passaggi": [
+   "Onda e particella sono due descrizioni dello stesso sistema.",
+   "Servono entrambe per descriverlo in modo completo.",
+   "Un esperimento che rivela una delle due nasconde l'altra (se si vede la fenditura, sparisce l'interferenza).",
+   "Non riguarda antiparticelle né massa-energia.",
+   "Risposta: la A."
+  ],
+  "concetto": "complementarità"
+ },
+ {
+  "id": "FMO-066",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "test",
+  "domanda": "Qual è la condizione di normalizzazione della funzione d'onda in una dimensione?",
+  "opzioni": {
+   "A": "La funzione d'onda deve valere 1 in ogni punto",
+   "B": "L'integrale di ψ(x) su tutto lo spazio deve valere zero",
+   "C": "Il massimo di |ψ|² deve essere 1",
+   "D": "La funzione d'onda deve essere sempre positiva",
+   "E": "L'integrale di |ψ(x)|² su tutto lo spazio deve valere 1"
+  },
+  "giusta": "E",
+  "perche": "Poiché |ψ|² è una densità di probabilità, la probabilità totale di trovare la particella da qualche parte deve essere 1: ∫|ψ(x)|²dx = 1 su tutto l'asse. Una funzione che soddisfa questa condizione si dice normalizzata. La trappola è richiedere che ψ valga 1 o che il suo massimo valga 1: un valore puntuale della densità può superare 1, se la regione è stretta.",
+  "semplice": "La particella deve stare da qualche parte: sommando la probabilità in tutti i posti possibili si deve ottenere il 100%.",
+  "passaggi": [
+   "|ψ|² è una densità di probabilità.",
+   "La particella deve trovarsi da qualche parte: probabilità totale 1.",
+   "Quindi ∫|ψ(x)|² dx su tutto l'asse = 1.",
+   "Non serve che ψ valga 1 o che il massimo di |ψ|² sia 1.",
+   "Risposta: la E."
+  ],
+  "concetto": "normalizzazione"
+ },
+ {
+  "id": "FMO-067",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "università",
+  "domanda": "Quale equazione descrive l'evoluzione temporale della funzione d'onda di una particella non relativistica?",
+  "opzioni": {
+   "A": "iħ ∂ψ/∂t = −(ħ²/2m) ∂²ψ/∂x² + V(x)ψ",
+   "B": "F = ma",
+   "C": "∂²ψ/∂t² = c² ∂²ψ/∂x²",
+   "D": "E = hf",
+   "E": "ψ = A sin(kx)"
+  },
+  "giusta": "A",
+  "perche": "L'equazione di Schrödinger dipendente dal tempo è iħ ∂ψ/∂t = Ĥψ, con l'hamiltoniano Ĥ = −(ħ²/2m)∂²/∂x² + V(x). È del primo ordine nel tempo e contiene l'unità immaginaria, per cui le soluzioni sono complesse. La trappola è confonderla con l'equazione delle onde classica, che è del secondo ordine nel tempo. Per stati di energia definita si ottiene l'equazione stazionaria Ĥψ = Eψ.",
+  "semplice": "L'equazione di Schrödinger è per la meccanica quantistica ciò che F = ma è per quella classica: dice come cambia lo stato di un sistema nel tempo.",
+  "passaggi": [
+   "Si cerca l'equazione d'evoluzione della funzione d'onda non relativistica: l'equazione di Schrödinger.",
+   "Forma: iħ ∂ψ/∂t = Ĥψ, con Ĥ = −(ħ²/2m)∂²/∂x² + V(x).",
+   "È del primo ordine nel tempo e contiene i: l'equazione delle onde classica (C) è del secondo ordine.",
+   "F = ma è meccanica classica, E = hf è la relazione di Planck, A sin(kx) è solo una possibile funzione.",
+   "Risposta: la A."
+  ],
+  "concetto": "equazione di Schrödinger"
+ },
+ {
+  "id": "FMO-068",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "università",
+  "domanda": "Qual è l'energia di punto zero di un oscillatore armonico quantistico di pulsazione ω?",
+  "opzioni": {
+   "A": "Zero",
+   "B": "ħω/2",
+   "C": "ħω",
+   "D": "2ħω",
+   "E": "kT/2"
+  },
+  "giusta": "B",
+  "perche": "I livelli dell'oscillatore armonico quantistico sono E_n = ħω(n + ½), con n = 0, 1, 2… Anche nello stato fondamentale l'energia è ħω/2, non zero. È una conseguenza del principio di indeterminazione: posizione e quantità di moto non possono essere entrambe nulle. La trappola è pensare che allo zero assoluto ogni moto cessi: le vibrazioni di punto zero esistono e, per esempio, impediscono all'elio di solidificare a pressione ordinaria.",
+  "semplice": "Anche al freddo più estremo un oscillatore quantistico non sta mai fermo del tutto: conserva un minimo di vibrazione, l'energia di punto zero.",
+  "passaggi": [
+   "E_n = ħω(n + ½)",
+   "Stato fondamentale: n = 0",
+   "E₀ = ħω/2"
+  ],
+  "concetto": "oscillatore armonico"
+ },
+ {
+  "id": "FMO-069",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "università",
+  "domanda": "Quanto vale il commutatore [x̂, p̂] tra gli operatori posizione e quantità di moto?",
+  "opzioni": {
+   "A": "0",
+   "B": "ħ",
+   "C": "iħ",
+   "D": "−ħ²",
+   "E": "1"
+  },
+  "giusta": "C",
+  "perche": "Applicando i due operatori a una funzione di prova, con p̂ = −iħ d/dx, si ottiene [x̂, p̂]ψ = x(−iħψ') − (−iħ)(xψ)' = iħψ. Quindi [x̂, p̂] = iħ. Il fatto che il commutatore non sia nullo implica che x e p non possano avere valori definiti contemporaneamente, da cui il principio di indeterminazione. La trappola è dimenticare l'unità immaginaria o pensare che gli operatori commutino come numeri ordinari.",
+  "semplice": "In meccanica quantistica l'ordine conta: misurare prima la posizione e poi la quantità di moto non è come fare il contrario. Il commutatore misura questa differenza.",
+  "passaggi": [
+   "p̂ = −iħ d/dx",
+   "[x̂, p̂]ψ = x(−iħψ') + iħ(ψ + xψ')",
+   "[x̂, p̂]ψ = iħψ"
+  ],
+  "concetto": "commutatori"
+ },
+ {
+  "id": "FMO-070",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "università",
+  "domanda": "Che cosa accade alla funzione d'onda, secondo l'interpretazione di Copenaghen, quando si misura un'osservabile?",
+  "opzioni": {
+   "A": "La funzione d'onda resta invariata",
+   "B": "La funzione d'onda si moltiplica per una costante",
+   "C": "Il sistema torna sempre allo stato fondamentale",
+   "D": "Il sistema si trova in un autostato dell'osservabile corrispondente al valore misurato",
+   "E": "La particella si divide in più particelle"
+  },
+  "giusta": "D",
+  "perche": "Secondo il postulato della misura, il risultato è uno degli autovalori dell'operatore associato all'osservabile, con probabilità data dal modulo quadro della proiezione dello stato sull'autostato corrispondente. Subito dopo la misura il sistema è in quell'autostato: si parla di riduzione o collasso della funzione d'onda. Ripetendo subito la misura si ottiene lo stesso risultato. La trappola è pensare che la misura «riveli» un valore già posseduto prima: in generale non è così.",
+  "semplice": "Prima della misura l'elettrone è in una sovrapposizione di possibilità; quando lo misuri, «sceglie» un risultato e da quel momento resta lì.",
+  "passaggi": [
+   "Postulato della misura: il risultato è uno degli autovalori dell'operatore dell'osservabile.",
+   "La probabilità di ciascun risultato è il modulo quadro della proiezione dello stato sull'autostato.",
+   "Subito dopo la misura il sistema si trova nell'autostato corrispondente al valore ottenuto (collasso).",
+   "Ripetendo subito la misura si ottiene lo stesso valore.",
+   "Risposta: la D."
+  ],
+  "concetto": "postulato della misura"
+ },
+ {
+  "id": "FMO-071",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "università",
+  "domanda": "Che cos'è una sovrapposizione di stati in meccanica quantistica?",
+  "opzioni": {
+   "A": "Un sistema in cui due particelle occupano lo stesso punto",
+   "B": "Una combinazione lineare di stati possibili, che è anch'essa uno stato possibile del sistema",
+   "C": "La somma delle energie di due particelle",
+   "D": "Uno stato con energia infinita",
+   "E": "Lo stato di un sistema dopo una misura"
+  },
+  "giusta": "B",
+  "perche": "Poiché l'equazione di Schrödinger è lineare, se ψ₁ e ψ₂ sono soluzioni, anche aψ₁ + bψ₂ lo è. Un sistema può quindi trovarsi in una sovrapposizione: misurando, si otterrà il risultato associato a ψ₁ con probabilità |a|² e quello di ψ₂ con probabilità |b|², se gli stati sono normalizzati e ortogonali. La sovrapposizione produce effetti d'interferenza ed è la risorsa sfruttata dai computer quantistici. La trappola è pensare che il sistema sia «metà in uno stato e metà nell'altro» in senso classico.",
+  "semplice": "Un qubit può essere una combinazione di 0 e 1 nello stesso tempo. Solo quando lo leggi trovi 0 oppure 1, con certe probabilità.",
+  "passaggi": [
+   "L'equazione di Schrödinger è lineare.",
+   "Se ψ₁ e ψ₂ sono soluzioni, anche aψ₁ + bψ₂ è una soluzione, cioè uno stato possibile.",
+   "Misurando si ottiene il risultato di ψ₁ con probabilità |a|² e quello di ψ₂ con |b|² (stati ortonormali).",
+   "Non è «metà e metà» in senso classico, né due particelle nello stesso punto.",
+   "È una combinazione lineare di stati possibili."
+  ],
+  "concetto": "principio di sovrapposizione"
+ },
+ {
+  "id": "FMO-072",
+  "materia": "Fisica moderna",
+  "argomento": "Meccanica quantistica di base",
+  "livello": "università",
+  "domanda": "Un elettrone incide su una barriera di potenziale rettangolare con energia inferiore all'altezza della barriera. Come varia, approssimativamente, la probabilità di attraversamento al crescere dello spessore L della barriera?",
+  "opzioni": {
+   "A": "Decresce linearmente con L",
+   "B": "Resta costante",
+   "C": "Cresce con L",
+   "D": "Decresce esponenzialmente, circa come e^(−2κL)",
+   "E": "Diventa subito nulla per qualsiasi L"
+  },
+  "giusta": "D",
+  "perche": "Dentro la barriera la funzione d'onda è una combinazione di esponenziali reali con κ = √(2m(V₀ − E))/ħ. Per barriere spesse prevale il termine decrescente e il coefficiente di trasmissione è T ≈ e^(−2κL), a meno di un fattore prossimo a uno. Raddoppiare lo spessore porta quindi a elevare al quadrato un numero già piccolo. Questa sensibilità estrema rende il microscopio a effetto tunnel capace di risolvere singoli atomi. La trappola è pensare a una diminuzione lineare.",
+  "semplice": "Ogni decimo di nanometro in più di barriera riduce di molto la probabilità di passare: per questo la corrente di tunnel è un «metro» precisissimo delle distanze.",
+  "passaggi": [
+   "κ = √(2m(V₀ − E))/ħ",
+   "T ≈ e^(−2κL)",
+   "raddoppiare L ⇒ T diventa circa T²"
+  ],
+  "concetto": "coefficiente di trasmissione"
+ },
+ {
+  "id": "FMO-073",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "superiori",
+  "domanda": "Che cosa succede al nucleo durante un decadimento alfa?",
+  "opzioni": {
+   "A": "Emette un nucleo di elio-4: il numero atomico diminuisce di 2 e il numero di massa di 4",
+   "B": "Emette un elettrone: il numero atomico aumenta di 1",
+   "C": "Emette un fotone: numero atomico e di massa restano uguali",
+   "D": "Emette un neutrone: il numero di massa diminuisce di 1",
+   "E": "Assorbe un protone: il numero atomico aumenta di 1"
+  },
+  "giusta": "A",
+  "perche": "La particella alfa è formata da 2 protoni e 2 neutroni, cioè un nucleo di elio-4. Il nucleo che la emette perde quindi 2 unità di numero atomico e 4 di numero di massa: per esempio l'uranio-238 diventa torio-234. La trappola è confondere il decadimento alfa con il beta, in cui il numero di massa resta lo stesso, o con il gamma, in cui cambia solo l'energia del nucleo.",
+  "semplice": "Il nucleo pesante «sputa fuori» un piccolo pacchetto di 4 particelle e diventa un altro elemento, due caselle prima nella tavola periodica.",
+  "passaggi": [
+   "La particella alfa è un nucleo di elio-4: 2 protoni e 2 neutroni.",
+   "Il nucleo che la emette perde 2 protoni: Z diminuisce di 2.",
+   "Perde 4 nucleoni: A diminuisce di 4.",
+   "Esempio: uranio-238 (Z = 92) → torio-234 (Z = 90) + alfa.",
+   "Risposta: la A."
+  ],
+  "concetto": "decadimento alfa"
+ },
+ {
+  "id": "FMO-074",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "superiori",
+  "domanda": "In quale nucleo si trasforma il carbonio-14 (Z = 6) con un decadimento beta meno?",
+  "opzioni": {
+   "A": "Azoto-14 (Z = 7)",
+   "B": "Boro-14 (Z = 5)",
+   "C": "Carbonio-13 (Z = 6)",
+   "D": "Berillio-10 (Z = 4)",
+   "E": "Ossigeno-14 (Z = 8)"
+  },
+  "giusta": "A",
+  "perche": "Nel decadimento beta meno un neutrone si trasforma in un protone, emettendo un elettrone e un antineutrino. Il numero atomico aumenta di 1 e il numero di massa resta invariato: ¹⁴C → ¹⁴N + e⁻ + ν̄. La trappola è diminuire Z (che accade nel beta più) o cambiare il numero di massa: l'elettrone ha massa trascurabile rispetto ai nucleoni e non conta nel numero di massa.",
+  "semplice": "Dentro il nucleo un neutrone diventa protone: il carbonio guadagna un protone e diventa azoto, con lo stesso numero totale di nucleoni.",
+  "passaggi": [
+   "Beta meno: n → p + e⁻ + ν̄",
+   "Z: 6 + 1 = 7 (azoto)",
+   "A resta 14"
+  ],
+  "concetto": "decadimento beta"
+ },
+ {
+  "id": "FMO-075",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "superiori",
+  "domanda": "Un campione radioattivo contiene 80 g di un isotopo con tempo di dimezzamento 5 giorni. Quanto ne rimane dopo 15 giorni?",
+  "opzioni": {
+   "A": "40 g",
+   "B": "20 g",
+   "C": "5 g",
+   "D": "10 g",
+   "E": "0 g"
+  },
+  "giusta": "D",
+  "perche": "Quindici giorni corrispondono a tre tempi di dimezzamento. Dopo ognuno la quantità si dimezza: 80 → 40 → 20 → 10 g. In formula, m = m₀(½)^(t/T) = 80 × ⅛ = 10 g. La trappola è sottrarre una quantità fissa a ogni intervallo, come se il decadimento fosse lineare, o pensare che dopo due dimezzamenti non resti nulla.",
+  "semplice": "Ogni 5 giorni metà degli atomi rimasti decade: come una torta divisa a metà, poi la metà della metà, e così via.",
+  "passaggi": [
+   "t/T = 15/5 = 3",
+   "m = 80 × (½)³",
+   "m = 80/8 = 10 g"
+  ],
+  "concetto": "tempo di dimezzamento"
+ },
+ {
+  "id": "FMO-076",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "superiori",
+  "domanda": "Quale tipo di radiazione è la più penetrante tra alfa, beta e gamma?",
+  "opzioni": {
+   "A": "La radiazione alfa",
+   "B": "La radiazione beta",
+   "C": "Sono tutte ugualmente penetranti",
+   "D": "Dipende solo dalla temperatura della sorgente",
+   "E": "La radiazione gamma"
+  },
+  "giusta": "E",
+  "perche": "Le particelle alfa sono pesanti e cariche: si fermano con un foglio di carta o pochi centimetri d'aria. Le beta, elettroni veloci, sono fermate da pochi millimetri di alluminio. I raggi gamma sono fotoni senza carica e serve piombo o calcestruzzo spesso per attenuarli. La trappola è pensare che la più pericolosa sia sempre la più penetrante: una sorgente alfa ingerita o inalata è molto dannosa, perché cede tutta la sua energia in pochissimo spazio.",
+  "semplice": "La carta ferma le alfa, un foglio di alluminio ferma le beta, per le gamma serve un muro di piombo.",
+  "passaggi": [
+   "Alfa: pesanti e cariche, si fermano con un foglio di carta.",
+   "Beta: elettroni veloci, si fermano con pochi millimetri di alluminio.",
+   "Gamma: fotoni senza carica, servono piombo o calcestruzzo spesso.",
+   "La più penetrante è la radiazione gamma."
+  ],
+  "concetto": "potere penetrante"
+ },
+ {
+  "id": "FMO-077",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "superiori",
+  "domanda": "Che cosa sono gli isotopi?",
+  "opzioni": {
+   "A": "Atomi con lo stesso numero di neutroni ma diverso numero di protoni",
+   "B": "Atomi di elementi diversi con la stessa massa",
+   "C": "Atomi che hanno perso elettroni",
+   "D": "Atomi dello stesso elemento con lo stesso numero di protoni ma diverso numero di neutroni",
+   "E": "Atomi sempre radioattivi"
+  },
+  "giusta": "D",
+  "perche": "Il numero di protoni (Z) identifica l'elemento; gli isotopi hanno lo stesso Z ma numero di massa A diverso, perché cambia il numero di neutroni. Per esempio carbonio-12, carbonio-13 e carbonio-14 hanno tutti 6 protoni ma 6, 7 e 8 neutroni. La trappola è pensare che tutti gli isotopi siano radioattivi: il carbonio-12 e il carbonio-13 sono stabili. Atomi che hanno perso elettroni sono invece ioni.",
+  "semplice": "Gli isotopi sono come fratelli: stesso «cognome» (stesso elemento, stessi protoni) ma peso un po' diverso per via dei neutroni.",
+  "passaggi": [
+   "Il numero di protoni Z identifica l'elemento.",
+   "Isotopi: stesso Z, ma diverso numero di neutroni, quindi diverso A.",
+   "Esempio: carbonio-12, -13, -14 hanno 6 protoni e 6, 7, 8 neutroni.",
+   "Non sono per forza radioattivi (C-12 e C-13 sono stabili); atomi con elettroni persi sono ioni.",
+   "Risposta: la D."
+  ],
+  "concetto": "isotopi"
+ },
+ {
+  "id": "FMO-078",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "superiori",
+  "domanda": "Qual è l'unità di misura dell'attività di una sorgente radioattiva nel Sistema Internazionale?",
+  "opzioni": {
+   "A": "Il sievert (Sv)",
+   "B": "Il becquerel (Bq), pari a un decadimento al secondo",
+   "C": "Il gray (Gy)",
+   "D": "L'elettronvolt (eV)",
+   "E": "Il curie per chilogrammo"
+  },
+  "giusta": "B",
+  "perche": "L'attività è il numero di decadimenti per unità di tempo e si misura in becquerel: 1 Bq = 1 decadimento al secondo. Il gray misura invece la dose assorbita (joule per kg) e il sievert la dose equivalente, che tiene conto del tipo di radiazione e degli organi. La trappola è confondere l'attività di una sorgente con la dose ricevuta da una persona.",
+  "semplice": "Un contatore che fa 100 «clic» al secondo (se li registra tutti) misura una sorgente da 100 Bq. Quanto danno fa a una persona si misura invece in sievert.",
+  "passaggi": [
+   "L'attività è il numero di decadimenti per unità di tempo.",
+   "Nel SI si misura in becquerel: 1 Bq = 1 decadimento/s.",
+   "Gray (dose assorbita, J/kg) e sievert (dose equivalente) riguardano la dose ricevuta; l'eV è un'energia.",
+   "L'unità dell'attività è il becquerel."
+  ],
+  "concetto": "attività radioattiva"
+ },
+ {
+  "id": "FMO-079",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "superiori",
+  "domanda": "Che cosa si intende per fissione nucleare?",
+  "opzioni": {
+   "A": "L'unione di due nuclei leggeri in uno più pesante",
+   "B": "L'emissione di una particella alfa",
+   "C": "La rottura di un nucleo pesante in due nuclei più leggeri con liberazione di energia e neutroni",
+   "D": "La trasformazione di un protone in neutrone",
+   "E": "La combustione dell'uranio"
+  },
+  "giusta": "C",
+  "perche": "Nella fissione un nucleo pesante, come l'uranio-235 colpito da un neutrone lento, si spezza in due frammenti di massa media, liberando circa 200 MeV e 2-3 neutroni. Questi neutroni possono provocare altre fissioni: è la reazione a catena usata nelle centrali. La trappola è confonderla con la fusione, che unisce nuclei leggeri e alimenta le stelle, o pensare a una combustione chimica, che libera milioni di volte meno energia.",
+  "semplice": "Un neutrone colpisce un nucleo di uranio come un sasso su un vaso: il nucleo si spezza in due, libera energia e altri neutroni che rompono altri nuclei.",
+  "passaggi": [
+   "Fissione significa «rottura».",
+   "Un nucleo pesante (come U-235 colpito da un neutrone lento) si spezza in due nuclei medi.",
+   "Si liberano circa 200 MeV e 2-3 neutroni, che possono dare una reazione a catena.",
+   "L'unione di nuclei leggeri è la fusione; non è una combustione chimica.",
+   "Risposta: la C."
+  ],
+  "concetto": "fissione nucleare"
+ },
+ {
+  "id": "FMO-080",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "test",
+  "domanda": "In un reperto organico l'attività del carbonio-14 è il 25% di quella di un organismo vivente. Quanti anni ha circa il reperto? (T½ = 5730 anni)",
+  "opzioni": {
+   "A": "Circa 11 500 anni",
+   "B": "Circa 5700 anni",
+   "C": "Circa 1400 anni",
+   "D": "Circa 23 000 anni",
+   "E": "Circa 17 000 anni"
+  },
+  "giusta": "A",
+  "perche": "Il 25% corrisponde a ¼ = (½)², cioè a due tempi di dimezzamento. L'età è quindi 2 × 5730 ≈ 11 460 anni. La trappola è pensare che il 25% corrisponda a un quarto del tempo di dimezzamento, o calcolare tre dimezzamenti contando male le metà. Il metodo funziona perché, dopo la morte, l'organismo smette di scambiare carbonio con l'ambiente.",
+  "semplice": "Metà della metà: sono passati due «dimezzamenti» da circa 5700 anni ciascuno, quindi circa 11 500 anni.",
+  "passaggi": [
+   "A/A₀ = 0,25 = (½)²",
+   "n = 2 tempi di dimezzamento",
+   "t = 2 × 5730 ≈ 11 460 anni"
+  ],
+  "concetto": "datazione al carbonio"
+ },
+ {
+  "id": "FMO-081",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "test",
+  "domanda": "Qual è la costante di decadimento dello iodio-131, il cui tempo di dimezzamento è circa 8 giorni?",
+  "opzioni": {
+   "A": "Circa 0,125 giorni⁻¹",
+   "B": "Circa 5,5 giorni⁻¹",
+   "C": "Circa 0,087 giorni⁻¹",
+   "D": "Circa 11,5 giorni⁻¹",
+   "E": "Circa 0,693 giorni⁻¹"
+  },
+  "giusta": "C",
+  "perche": "Costante di decadimento e tempo di dimezzamento sono legati da λ = ln 2/T½. Con T½ = 8 giorni si ottiene λ = 0,693/8 ≈ 0,087 giorni⁻¹. La trappola è usare 1/T½ = 0,125, dimenticando il fattore ln 2, oppure moltiplicare invece di dividere. Il reciproco di λ è la vita media τ ≈ 11,5 giorni, più lunga del tempo di dimezzamento.",
+  "semplice": "La costante di decadimento indica la frazione di nuclei che decade per unità di tempo: per lo iodio-131 circa l'8-9% al giorno, all'inizio.",
+  "passaggi": [
+   "λ = ln 2 / T½",
+   "λ = 0,693 / 8 giorni",
+   "λ ≈ 0,087 giorni⁻¹"
+  ],
+  "concetto": "costante di decadimento"
+ },
+ {
+  "id": "FMO-082",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "test",
+  "domanda": "Qual è l'energia di legame del nucleo di elio-4, sapendo che il difetto di massa è circa 0,0304 u? (1 u ≈ 931,5 MeV/c²)",
+  "opzioni": {
+   "A": "Circa 7,1 MeV",
+   "B": "Circa 0,03 MeV",
+   "C": "Circa 3,7 MeV",
+   "D": "Circa 28,3 MeV",
+   "E": "Circa 931 MeV"
+  },
+  "giusta": "D",
+  "perche": "L'energia di legame è l'energia equivalente al difetto di massa: E = Δm·c² = 0,0304 × 931,5 ≈ 28,3 MeV. Divisa per i 4 nucleoni dà circa 7,1 MeV per nucleone, un valore alto per un nucleo così leggero, che spiega la grande stabilità dell'elio-4. La trappola è dare l'energia per nucleone come energia totale, o usare la massa del nucleo intera invece del solo difetto di massa.",
+  "semplice": "I 4 nucleoni dell'elio, una volta uniti, pesano un po' meno che separati. Quella massa «mancante» è diventata energia di legame: circa 28 MeV.",
+  "passaggi": [
+   "Δm = 2m(¹H) + 2m_n − m(⁴He) ≈ 0,0304 u",
+   "E = Δm × 931,5 MeV/u",
+   "E ≈ 28,3 MeV (≈ 7,1 MeV per nucleone)"
+  ],
+  "concetto": "energia di legame"
+ },
+ {
+  "id": "FMO-083",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "test",
+  "domanda": "Perché la fusione di nuclei leggeri e la fissione di nuclei pesanti liberano entrambe energia?",
+  "opzioni": {
+   "A": "Perché in entrambi i casi aumenta il numero totale di nucleoni",
+   "B": "Perché la fusione libera energia elettrica e la fissione energia chimica",
+   "C": "Perché in entrambi i casi i prodotti hanno energia di legame per nucleone maggiore, avvicinandosi al massimo attorno al ferro-nichel",
+   "D": "Perché in entrambi i casi si creano nuovi protoni",
+   "E": "Perché i nuclei pesanti e leggeri hanno la stessa energia di legame"
+  },
+  "giusta": "C",
+  "perche": "La curva dell'energia di legame per nucleone cresce rapidamente per i nuclei leggeri, raggiunge un massimo di circa 8,8 MeV attorno a ferro-56 e nichel-62, poi decresce lentamente. Unendo nuclei leggeri o spezzando nuclei pesanti si ottengono prodotti più legati, e la differenza di energia di legame viene liberata. La trappola è pensare che il numero di nucleoni cambi: si conserva, cambia solo quanto sono legati.",
+  "semplice": "I nuclei di media grandezza, come il ferro, sono i più «comodi». Sia i nuclei piccoli che si uniscono, sia quelli grandi che si spezzano, scendono verso questo fondo e liberano energia.",
+  "passaggi": [
+   "La curva dell'energia di legame per nucleone sale per i nuclei leggeri e ha un massimo vicino a ferro-56 e nichel-62 (circa 8,8 MeV).",
+   "Poi scende lentamente per i nuclei pesanti.",
+   "Fondere nuclei leggeri o spezzare nuclei pesanti produce nuclei più vicini al massimo, cioè più legati.",
+   "La differenza di energia di legame viene liberata; il numero di nucleoni si conserva.",
+   "Risposta: la C."
+  ],
+  "concetto": "curva dell'energia di legame"
+ },
+ {
+  "id": "FMO-084",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "test",
+  "domanda": "Quanto vale circa il raggio di un nucleo con numero di massa A = 216? (R ≈ 1,2 fm · A^(1/3))",
+  "opzioni": {
+   "A": "Circa 259 fm",
+   "B": "Circa 1,2 fm",
+   "C": "Circa 18 fm",
+   "D": "Circa 0,72 fm",
+   "E": "Circa 7,2 fm"
+  },
+  "giusta": "E",
+  "perche": "Il raggio nucleare cresce con la radice cubica del numero di massa, perché i nucleoni sono impacchettati con densità quasi costante. Per A = 216 la radice cubica vale 6, quindi R ≈ 1,2 × 6 = 7,2 fm. La trappola è moltiplicare 1,2 per A invece che per la sua radice cubica. Poiché il volume è proporzionale ad A, la densità della materia nucleare è circa la stessa per tutti i nuclei, circa 2 × 10¹⁷ kg/m³.",
+  "semplice": "I nucleoni si comportano come biglie in un sacchetto: raddoppiando il numero di biglie il volume raddoppia, ma il raggio cresce molto meno.",
+  "passaggi": [
+   "R = 1,2 fm · A^(1/3)",
+   "216^(1/3) = 6",
+   "R ≈ 1,2 × 6 = 7,2 fm"
+  ],
+  "concetto": "raggio nucleare"
+ },
+ {
+  "id": "FMO-085",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "università",
+  "domanda": "Quanto vale l'energia liberata nella reazione di fusione D + T → ⁴He + n? (masse: D 2,014102 u; T 3,016049 u; ⁴He 4,002602 u; n 1,008665 u; 1 u = 931,5 MeV/c²)",
+  "opzioni": {
+   "A": "Circa 3,3 MeV",
+   "B": "Circa 17,6 MeV",
+   "C": "Circa 200 MeV",
+   "D": "Circa 28,3 MeV",
+   "E": "Circa 0,019 MeV"
+  },
+  "giusta": "B",
+  "perche": "Il valore Q è la differenza tra le masse dei reagenti e quella dei prodotti, moltiplicata per c². Reagenti: 5,030151 u; prodotti: 5,011267 u; differenza 0,018884 u. Quindi Q ≈ 0,018884 × 931,5 ≈ 17,6 MeV, di cui circa 14,1 MeV portati dal neutrone. La trappola è dimenticare il neutrone tra i prodotti o confondere il risultato con la fissione (circa 200 MeV per evento, ma su un nucleo molto più pesante).",
+  "semplice": "Unendo deuterio e trizio la massa totale cala di poco, ma quel poco diventa quasi 18 MeV: è la reazione su cui puntano i reattori a fusione come ITER.",
+  "passaggi": [
+   "m(reagenti) = 2,014102 + 3,016049 = 5,030151 u",
+   "m(prodotti) = 4,002602 + 1,008665 = 5,011267 u",
+   "Δm = 0,018884 u",
+   "Q = 0,018884 × 931,5 ≈ 17,6 MeV"
+  ],
+  "concetto": "valore Q di reazione"
+ },
+ {
+  "id": "FMO-086",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "università",
+  "domanda": "Qual è l'attività di 1 mg di iodio-131 (massa molare 131 g/mol, T½ ≈ 8,02 giorni)?",
+  "opzioni": {
+   "A": "Circa 4,6 × 10¹² Bq",
+   "B": "Circa 4,6 × 10¹⁸ Bq",
+   "C": "Circa 4,6 × 10⁶ Bq",
+   "D": "Circa 0,087 Bq",
+   "E": "Circa 1,0 × 10⁻⁶ Bq"
+  },
+  "giusta": "A",
+  "perche": "Il numero di nuclei è N = (10⁻³/131) × 6,022 × 10²³ ≈ 4,6 × 10¹⁸. La costante di decadimento in s⁻¹ è λ = 0,693/(8,02 × 86 400 s) ≈ 1,0 × 10⁻⁶ s⁻¹. L'attività è A = λN ≈ 4,6 × 10¹² Bq. La trappola è lasciare λ in giorni⁻¹ (il becquerel richiede i secondi) o dare il numero di nuclei come attività.",
+  "semplice": "Un solo milligrammo di iodio-131 produce migliaia di miliardi di decadimenti al secondo: per questo in medicina se ne usano quantità piccolissime.",
+  "passaggi": [
+   "N = (10⁻³/131) × 6,022 × 10²³ ≈ 4,6 × 10¹⁸",
+   "λ = 0,693/(8,02 × 86 400 s) ≈ 1,0 × 10⁻⁶ s⁻¹",
+   "A = λN ≈ 4,6 × 10¹² Bq"
+  ],
+  "concetto": "attività e numero di nuclei"
+ },
+ {
+  "id": "FMO-087",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "università",
+  "domanda": "Quale legge descrive il numero di nuclei non ancora decaduti nel tempo, e quanto vale la vita media?",
+  "opzioni": {
+   "A": "N(t) = N₀ − λt; la vita media è τ = T½",
+   "B": "N(t) = N₀e^(−λt); la vita media è τ = 1/λ = T½/ln 2",
+   "C": "N(t) = N₀/(1 + λt); la vita media è τ = 2T½",
+   "D": "N(t) = N₀e^(λt); la vita media è τ = λ",
+   "E": "N(t) = N₀λt; la vita media è τ = ln 2/λ"
+  },
+  "giusta": "B",
+  "perche": "Ogni nucleo ha la stessa probabilità λ di decadere per unità di tempo, indipendentemente dalla sua «età». Questo porta a dN/dt = −λN e quindi alla legge esponenziale N = N₀e^(−λt). La vita media, cioè il tempo medio di sopravvivenza di un nucleo, è τ = 1/λ, circa 1,44 volte il tempo di dimezzamento. La trappola è confondere τ con T½, che è τ·ln 2.",
+  "semplice": "I nuclei non «invecchiano»: un nucleo che esiste da mille anni ha la stessa probabilità di decadere domani di uno appena formato. Da qui la curva esponenziale.",
+  "passaggi": [
+   "dN/dt = −λN",
+   "N(t) = N₀e^(−λt)",
+   "τ = 1/λ; T½ = τ ln 2"
+  ],
+  "concetto": "legge del decadimento"
+ },
+ {
+  "id": "FMO-088",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "università",
+  "domanda": "Perché nel decadimento beta Pauli ipotizzò l'esistenza del neutrino?",
+  "opzioni": {
+   "A": "Perché gli elettroni emessi hanno sempre la stessa energia",
+   "B": "Perché nel decadimento beta la carica non si conservava",
+   "C": "Perché il nucleo figlio aveva un numero di massa diverso",
+   "D": "Perché si osservavano direttamente i neutrini nelle camere a nebbia",
+   "E": "Perché gli elettroni emessi hanno uno spettro continuo di energia, che senza una terza particella violerebbe la conservazione dell'energia"
+  },
+  "giusta": "E",
+  "perche": "In un decadimento a due corpi l'elettrone avrebbe un'energia fissa, determinata dalla differenza di massa. Invece gli esperimenti mostravano energie distribuite da zero a un massimo. Pauli propose una particella neutra, leggerissima e difficile da rivelare che si portasse via l'energia mancante (e momento angolare). Fermi la chiamò neutrino e costruì la teoria del decadimento beta; il neutrino fu osservato solo nel 1956. La trappola è pensare che fosse stato visto direttamente: fu un'ipotesi teorica a lungo.",
+  "semplice": "Il conto dell'energia non tornava: mancava sempre qualcosa. Pauli disse che un «ladro invisibile», il neutrino, scappava via con la parte mancante.",
+  "passaggi": [
+   "In un decadimento a due corpi l'elettrone avrebbe un'energia fissa.",
+   "Gli esperimenti mostravano invece uno spettro continuo, da zero a un massimo.",
+   "Senza un'altra particella mancherebbe energia: la conservazione sarebbe violata.",
+   "Pauli ipotizzò una particella neutra e leggerissima che porta via l'energia mancante; fu osservata solo nel 1956.",
+   "Risposta: la E."
+  ],
+  "concetto": "neutrino nel decadimento beta"
+ },
+ {
+  "id": "FMO-089",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "università",
+  "domanda": "Quale condizione deve essere soddisfatta perché un reattore a fissione funzioni in regime stazionario?",
+  "opzioni": {
+   "A": "Il fattore di moltiplicazione deve essere molto maggiore di 1",
+   "B": "Il fattore di moltiplicazione dei neutroni deve essere uguale a 1",
+   "C": "Il fattore di moltiplicazione deve essere zero",
+   "D": "Tutti i neutroni devono sfuggire dal nocciolo",
+   "E": "Il combustibile deve essere solo uranio-238"
+  },
+  "giusta": "B",
+  "perche": "Il fattore di moltiplicazione k è il numero medio di neutroni di una generazione che provocano una nuova fissione. Con k = 1 (criticità) la reazione si autosostiene a potenza costante; con k > 1 la potenza cresce, con k < 1 la reazione si spegne. Le barre di controllo assorbono neutroni per mantenere k = 1, e il moderatore li rallenta perché quelli lenti sono più efficaci nell'uranio-235. La trappola è pensare che serva k molto maggiore di 1: quella è la condizione di un'esplosione.",
+  "semplice": "Ogni fissione deve causare in media esattamente un'altra fissione: né di più, altrimenti la potenza cresce, né di meno, altrimenti il reattore si spegne.",
+  "passaggi": [
+   "k = numero medio di neutroni di una generazione che provocano una nuova fissione.",
+   "k > 1: la potenza cresce; k < 1: la reazione si spegne.",
+   "k = 1 (criticità): la reazione si autosostiene a potenza costante.",
+   "Le barre di controllo assorbono neutroni per tenere k = 1.",
+   "Il fattore di moltiplicazione deve essere uguale a 1."
+  ],
+  "concetto": "reazione a catena controllata"
+ },
+ {
+  "id": "FMO-090",
+  "materia": "Fisica moderna",
+  "argomento": "Radioattività e fisica nucleare",
+  "livello": "università",
+  "domanda": "Un reperto ha attività del carbonio-14 pari al 10% di quella iniziale. Quanti anni ha circa? (T½ = 5730 anni)",
+  "opzioni": {
+   "A": "Circa 57 000 anni",
+   "B": "Circa 5700 anni",
+   "C": "Circa 19 000 anni",
+   "D": "Circa 11 500 anni",
+   "E": "Circa 573 anni"
+  },
+  "giusta": "C",
+  "perche": "Dalla legge di decadimento A/A₀ = (½)^(t/T½) si ottiene t = T½ · log₂(A₀/A) = 5730 × log₂ 10 ≈ 5730 × 3,32 ≈ 19 000 anni. La trappola è pensare che il 10% corrisponda a dieci dimezzamenti, o fare una proporzione lineare. Il risultato è tra tre (12,5%) e quattro (6,25%) dimezzamenti, come deve essere.",
+  "semplice": "Restare con un decimo dell'attività significa che sono passati poco più di tre «dimezzamenti» del carbonio-14: circa 19 mila anni.",
+  "passaggi": [
+   "t = T½ · ln(A₀/A)/ln 2",
+   "ln 10 / ln 2 ≈ 3,32",
+   "t ≈ 5730 × 3,32 ≈ 19 000 anni"
+  ],
+  "concetto": "datazione radiometrica"
+ },
+ {
+  "id": "FMO-091",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "superiori",
+  "domanda": "Da quali quark è formato il protone?",
+  "opzioni": {
+   "A": "Due quark down e un quark up (udd)",
+   "B": "Due quark up e un quark down (uud)",
+   "C": "Tre quark up (uuu)",
+   "D": "Un quark e un antiquark",
+   "E": "Un quark up, un down e un elettrone"
+  },
+  "giusta": "B",
+  "perche": "Il protone è un barione composto da tre quark di valenza: due up, con carica +2/3 ciascuno, e un down, con carica −1/3. La somma 2/3 + 2/3 − 1/3 dà +1, la carica del protone. La trappola è scambiarlo con il neutrone, che è udd con carica totale zero. Coppie quark-antiquark formano invece i mesoni.",
+  "semplice": "Il protone è come una piccola squadra di tre giocatori: due «up» e un «down». Le loro cariche frazionarie sommate fanno esattamente +1.",
+  "passaggi": [
+   "carica(u) = +2/3, carica(d) = −1/3",
+   "uud: 2/3 + 2/3 − 1/3",
+   "carica totale = +1"
+  ],
+  "concetto": "composizione del protone"
+ },
+ {
+  "id": "FMO-092",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "superiori",
+  "domanda": "Quale particella è la mediatrice dell'interazione elettromagnetica?",
+  "opzioni": {
+   "A": "Il fotone",
+   "B": "Il gluone",
+   "C": "Il bosone W",
+   "D": "Il bosone di Higgs",
+   "E": "Il neutrino"
+  },
+  "giusta": "A",
+  "perche": "Nel Modello Standard ogni interazione fondamentale è trasmessa da bosoni mediatori: il fotone per quella elettromagnetica, i gluoni per quella forte, i bosoni W⁺, W⁻ e Z⁰ per quella debole. Il bosone di Higgs non è un mediatore di forza nel senso usuale: è legato al meccanismo che dà massa alle particelle. La trappola è citare il neutrino, che è un leptone e non trasporta alcuna forza.",
+  "semplice": "Due cariche elettriche «si parlano» scambiandosi fotoni, come due pattinatori che si passano una palla e per questo si allontanano.",
+  "passaggi": [
+   "Nel Modello Standard ogni interazione ha un bosone mediatore.",
+   "Forte: gluoni. Debole: W⁺, W⁻, Z⁰.",
+   "Il bosone di Higgs è legato all'origine della massa; il neutrino è un leptone, non un mediatore.",
+   "L'interazione elettromagnetica è mediata dal fotone."
+  ],
+  "concetto": "bosoni mediatori"
+ },
+ {
+  "id": "FMO-093",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "superiori",
+  "domanda": "Che cos'è un'antiparticella?",
+  "opzioni": {
+   "A": "Una particella con massa negativa",
+   "B": "Una particella che si muove all'indietro nel tempo",
+   "C": "Una particella con la stessa massa e carica elettrica opposta (e altri numeri quantici opposti) rispetto alla particella corrispondente",
+   "D": "Una particella più leggera della corrispondente",
+   "E": "Una particella che non interagisce con la materia"
+  },
+  "giusta": "C",
+  "perche": "Ogni particella ha un'antiparticella con la stessa massa e lo stesso spin ma carica e altri numeri quantici additivi opposti. Il positrone è l'antiparticella dell'elettrone, l'antiprotone del protone. Quando particella e antiparticella si incontrano possono annichilarsi trasformando la loro massa in energia, per esempio in fotoni. La trappola è pensare che l'antimateria abbia massa negativa o «antigravità»: gli esperimenti al CERN mostrano che cade come la materia ordinaria.",
+  "semplice": "Il positrone è il «gemello allo specchio» dell'elettrone: stessa massa, carica opposta. Se si incontrano, scompaiono entrambi in un lampo di luce.",
+  "passaggi": [
+   "Ogni particella ha un'antiparticella.",
+   "Stessa massa e stesso spin.",
+   "Carica elettrica e altri numeri quantici additivi opposti (esempio: positrone ed elettrone).",
+   "Non ha massa negativa e interagisce con la materia (può annichilarsi).",
+   "Risposta: la C."
+  ],
+  "concetto": "antimateria"
+ },
+ {
+  "id": "FMO-094",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "superiori",
+  "domanda": "Quali sono le quattro interazioni fondamentali della natura?",
+  "opzioni": {
+   "A": "Gravitazionale, elettrica, magnetica e nucleare",
+   "B": "Gravitazionale, elettromagnetica, nucleare forte e nucleare debole",
+   "C": "Forte, debole, centripeta e di attrito",
+   "D": "Elettromagnetica, nucleare, chimica e meccanica",
+   "E": "Gravitazionale, elastica, elettrica e nucleare"
+  },
+  "giusta": "B",
+  "perche": "Tutte le forze note si riconducono a quattro interazioni fondamentali: gravitazionale, elettromagnetica (che unifica elettricità e magnetismo), nucleare forte (che tiene insieme i quark e i nucleoni) e nucleare debole (responsabile, per esempio, del decadimento beta). Attrito e forze elastiche sono effetti macroscopici dell'interazione elettromagnetica tra atomi. La trappola è contare elettricità e magnetismo come due forze distinte.",
+  "semplice": "Che tu spinga una porta, che un magnete attiri un chiodo o che la Luna giri attorno alla Terra, dietro ci sono sempre solo quattro tipi di interazione.",
+  "passaggi": [
+   "Tutte le forze note si riducono a quattro interazioni fondamentali.",
+   "Gravitazionale ed elettromagnetica (elettricità e magnetismo sono un'unica interazione).",
+   "Nucleare forte (quark e nucleoni) e nucleare debole (per esempio decadimento beta).",
+   "Attrito, forze elastiche, forza chimica sono effetti dell'elettromagnetismo.",
+   "Risposta: la B."
+  ],
+  "concetto": "interazioni fondamentali"
+ },
+ {
+  "id": "FMO-095",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "superiori",
+  "domanda": "Che cosa fu scoperto al CERN nel 2012?",
+  "opzioni": {
+   "A": "Il positrone",
+   "B": "Il bosone di Higgs",
+   "C": "Il neutrone",
+   "D": "Il quark top",
+   "E": "Il gravitone"
+  },
+  "giusta": "B",
+  "perche": "Nel 2012 gli esperimenti ATLAS e CMS al Large Hadron Collider annunciarono la scoperta di una particella con massa di circa 125 GeV/c², compatibile con il bosone di Higgs previsto negli anni Sessanta. Il bosone è la manifestazione del campo di Higgs, attraverso cui acquistano massa i bosoni W e Z e le particelle di materia. La trappola è citare il quark top (scoperto al Fermilab nel 1995) o il gravitone, che finora non è mai stato osservato.",
+  "semplice": "Il campo di Higgs è come una folla in cui alcune particelle avanzano a fatica (hanno massa) e altre, come il fotone, passano senza ostacoli.",
+  "passaggi": [
+   "Nel 2012 ATLAS e CMS all'LHC del CERN annunciarono una nuova particella.",
+   "Massa circa 125 GeV/c², compatibile con il bosone previsto negli anni Sessanta.",
+   "Il quark top fu scoperto al Fermilab nel 1995; il gravitone non è mai stato osservato.",
+   "Fu scoperto il bosone di Higgs."
+  ],
+  "concetto": "bosone di Higgs"
+ },
+ {
+  "id": "FMO-096",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "superiori",
+  "domanda": "Come si classificano gli adroni?",
+  "opzioni": {
+   "A": "In barioni, formati da tre quark, e mesoni, formati da un quark e un antiquark",
+   "B": "In leptoni e bosoni",
+   "C": "In elettroni e neutrini",
+   "D": "In fotoni e gluoni",
+   "E": "In particelle cariche e neutre soltanto"
+  },
+  "giusta": "A",
+  "perche": "Gli adroni sono le particelle che risentono dell'interazione forte, perché composte da quark. I barioni (come protone e neutrone) contengono tre quark, i mesoni (come i pioni) una coppia quark-antiquark. La trappola è includere i leptoni, come l'elettrone, che non sono fatti di quark e non sentono l'interazione forte.",
+  "semplice": "I quark non si trovano mai da soli: si raggruppano in squadre da tre (barioni) o in coppie con un antiquark (mesoni).",
+  "passaggi": [
+   "Gli adroni sono particelle fatte di quark, che sentono l'interazione forte.",
+   "Barioni: tre quark (protone, neutrone).",
+   "Mesoni: un quark e un antiquark (pioni).",
+   "Leptoni, fotoni e gluoni non sono adroni.",
+   "Risposta: la A."
+  ],
+  "concetto": "adroni"
+ },
+ {
+  "id": "FMO-097",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "superiori",
+  "domanda": "Quale tra le seguenti particelle è un leptone?",
+  "opzioni": {
+   "A": "Il muone",
+   "B": "Il protone",
+   "C": "Il pione",
+   "D": "Il neutrone",
+   "E": "Il gluone"
+  },
+  "giusta": "A",
+  "perche": "I leptoni sono particelle elementari che non risentono dell'interazione forte: elettrone, muone, tau e i rispettivi neutrini. Il muone è come un elettrone ma circa 207 volte più pesante e instabile. Protone e neutrone sono barioni, il pione è un mesone, il gluone è un bosone mediatore. La trappola è pensare che tutte le particelle leggere siano leptoni: il pione è leggero ma è un adrone.",
+  "semplice": "La famiglia dei leptoni ha tre «generazioni»: elettrone, muone e tau, ognuno con il suo neutrino.",
+  "passaggi": [
+   "I leptoni non sentono l'interazione forte: elettrone, muone, tau e neutrini.",
+   "Protone e neutrone sono barioni, il pione è un mesone (adroni).",
+   "Il gluone è un bosone mediatore.",
+   "Il leptone è il muone."
+  ],
+  "concetto": "leptoni"
+ },
+ {
+  "id": "FMO-098",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "test",
+  "domanda": "Un elettrone e un positrone fermi si annichilano producendo due fotoni. Quale energia ha ciascun fotone? (m_e c² = 0,511 MeV)",
+  "opzioni": {
+   "A": "1,022 MeV",
+   "B": "0,511 MeV",
+   "C": "0,256 MeV",
+   "D": "938 MeV",
+   "E": "0 MeV"
+  },
+  "giusta": "B",
+  "perche": "L'energia totale iniziale è la somma delle energie di riposo, 2 × 0,511 = 1,022 MeV, e la quantità di moto totale è zero. Per conservare la quantità di moto i due fotoni partono in versi opposti con la stessa energia: 0,511 MeV ciascuno. La trappola è attribuire a ciascun fotone l'energia totale. Questi fotoni sono rivelati nella PET, la tomografia a emissione di positroni.",
+  "semplice": "Elettrone e positrone spariscono e al loro posto partono due fotoni identici, in direzioni opposte, ognuno con l'energia di riposo di un elettrone.",
+  "passaggi": [
+   "E_tot = 2 × 0,511 = 1,022 MeV",
+   "p_tot = 0 ⇒ due fotoni uguali e opposti",
+   "E_fotone = 1,022/2 = 0,511 MeV"
+  ],
+  "concetto": "annichilazione"
+ },
+ {
+  "id": "FMO-099",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "test",
+  "domanda": "Qual è l'energia minima di un fotone per produrre una coppia elettrone-positrone (vicino a un nucleo pesante)?",
+  "opzioni": {
+   "A": "0,511 MeV",
+   "B": "13,6 eV",
+   "C": "938 MeV",
+   "D": "1,022 MeV",
+   "E": "2,04 MeV"
+  },
+  "giusta": "D",
+  "perche": "Il fotone deve fornire almeno l'energia di riposo delle due particelle create: 2 × 0,511 = 1,022 MeV. Il nucleo vicino è necessario per conservare la quantità di moto, ma assorbe pochissima energia perché è molto pesante. La trappola è indicare 0,511 MeV, dimenticando che si creano due particelle. Nello spazio vuoto, un fotone isolato non può creare una coppia.",
+  "semplice": "Per «fabbricare» un elettrone e un positrone servono come minimo i 2 × 0,511 MeV di massa che li costituiscono.",
+  "passaggi": [
+   "E_min = 2m_e c²",
+   "E_min = 2 × 0,511 MeV",
+   "E_min = 1,022 MeV"
+  ],
+  "concetto": "produzione di coppie"
+ },
+ {
+  "id": "FMO-100",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "test",
+  "domanda": "Quale carica elettrica ha un mesone formato da un quark up e un antiquark down (u d̄)?",
+  "opzioni": {
+   "A": "+1",
+   "B": "0",
+   "C": "−1",
+   "D": "+1/3",
+   "E": "+2/3"
+  },
+  "giusta": "A",
+  "perche": "Il quark up ha carica +2/3; l'antiquark down ha carica opposta al down, cioè +1/3. La somma è +1: si tratta del pione positivo π⁺. La trappola è dare all'antiquark la stessa carica del quark (−1/3), ottenendo +1/3, valore impossibile per un adrone osservabile, che ha sempre carica intera.",
+  "semplice": "Un antiquark ha carica opposta al suo quark: l'anti-down ha +1/3, e insieme al +2/3 dell'up fa +1.",
+  "passaggi": [
+   "carica(u) = +2/3",
+   "carica(d̄) = −(−1/3) = +1/3",
+   "totale = +1 (π⁺)"
+  ],
+  "concetto": "cariche dei quark"
+ },
+ {
+  "id": "FMO-101",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "test",
+  "domanda": "Quale delle seguenti reazioni è vietata dalla conservazione del numero barionico?",
+  "opzioni": {
+   "A": "n → p + e⁻ + ν̄_e",
+   "B": "p + p → p + p + π⁰",
+   "C": "π⁺ → μ⁺ + ν_μ",
+   "D": "e⁺ + e⁻ → γ + γ",
+   "E": "p → e⁺ + γ"
+  },
+  "giusta": "E",
+  "perche": "Il numero barionico vale +1 per i barioni, −1 per gli antibarioni e 0 per leptoni, mesoni e fotoni. Nel decadimento p → e⁺ + γ si passerebbe da numero barionico 1 a 0: è proibito, e infatti il protone risulta stabile, con vita media superiore a 10³⁴ anni. Nelle altre reazioni il numero barionico si conserva. La trappola è guardare solo la conservazione della carica, che in questa reazione è rispettata.",
+  "semplice": "I barioni non possono comparire o sparire da soli: il loro «conto» deve tornare prima e dopo. Per questo il protone non decade in particelle più leggere.",
+  "passaggi": [
+   "B(p) = +1",
+   "B(e⁺) = 0, B(γ) = 0",
+   "B iniziale 1 ≠ B finale 0 ⇒ vietata"
+  ],
+  "concetto": "numero barionico"
+ },
+ {
+  "id": "FMO-102",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "test",
+  "domanda": "Che cosa si intende per confinamento dei quark?",
+  "opzioni": {
+   "A": "I quark sono confinati nel nucleo dalla forza elettromagnetica",
+   "B": "I quark esistono solo nelle stelle di neutroni",
+   "C": "I quark non possono essere osservati isolati, ma solo all'interno di adroni",
+   "D": "I quark sono bloccati in un'orbita fissa intorno al nucleo",
+   "E": "I quark non possono muoversi"
+  },
+  "giusta": "C",
+  "perche": "L'interazione forte, descritta dalla cromodinamica quantistica, ha una proprietà particolare: l'energia del legame tra quark cresce con la distanza. Tentando di separarli, l'energia diventa sufficiente a creare nuove coppie quark-antiquark, che formano nuovi adroni. Per questo non si osservano mai quark liberi. La trappola è pensare che sia la forza elettromagnetica a trattenerli: i quark hanno carica di colore, e il legame è dovuto ai gluoni.",
+  "semplice": "È come un elastico che diventa più forte quanto più lo tiri: quando finalmente si spezza, ai due capi si formano due nuovi pezzi, mai un quark solo.",
+  "passaggi": [
+   "Nell'interazione forte l'energia del legame tra quark cresce con la distanza.",
+   "Tentando di separarli, l'energia basta a creare nuove coppie quark-antiquark.",
+   "Queste formano nuovi adroni: non si ottiene mai un quark isolato.",
+   "Il legame è dovuto ai gluoni (carica di colore), non all'elettromagnetismo.",
+   "Confinamento: i quark si osservano solo dentro gli adroni."
+  ],
+  "concetto": "confinamento"
+ },
+ {
+  "id": "FMO-103",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "università",
+  "domanda": "Stimando la portata dell'interazione nucleare in circa 1,4 fm e usando la relazione di Yukawa mc² ≈ ħc/R (ħc ≈ 197 MeV·fm), quale massa si prevede per il mediatore?",
+  "opzioni": {
+   "A": "Circa 0,5 MeV/c²",
+   "B": "Circa 938 MeV/c²",
+   "C": "Circa 140 MeV/c²",
+   "D": "Circa 1,4 MeV/c²",
+   "E": "Circa 80 GeV/c²"
+  },
+  "giusta": "C",
+  "perche": "Una particella virtuale di massa m può esistere per un tempo Δt ≈ ħ/(mc²) e percorrere al più R ≈ cΔt, da cui mc² ≈ ħc/R = 197/1,4 ≈ 140 MeV. Yukawa predisse così una particella poi identificata con il pione. La trappola è usare ħ invece di ħc o sbagliare le unità; il valore di 80 GeV corrisponde al bosone W, mediatore dell'interazione debole a cortissimo raggio.",
+  "semplice": "Più pesante è la particella scambiata, meno lontano può arrivare: dal raggio d'azione della forza nucleare si ricava la massa del pione.",
+  "passaggi": [
+   "Δt ≈ ħ/(mc²), R ≈ cΔt",
+   "mc² ≈ ħc/R",
+   "mc² ≈ 197 MeV·fm / 1,4 fm ≈ 140 MeV"
+  ],
+  "concetto": "teoria di Yukawa"
+ },
+ {
+  "id": "FMO-104",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "università",
+  "domanda": "Nel decadimento μ⁻ → e⁻ + ν̄_e + ν_μ, quale legge di conservazione impone la presenza di un ν_μ e di un ν̄_e?",
+  "opzioni": {
+   "A": "La conservazione del numero barionico",
+   "B": "La conservazione della stranezza",
+   "C": "La conservazione del colore",
+   "D": "La conservazione dei numeri leptonici di famiglia (elettronico e muonico)",
+   "E": "La conservazione della parità"
+  },
+  "giusta": "D",
+  "perche": "Il muone ha numero leptonico muonico L_μ = +1 ed elettronico L_e = 0. Nello stato finale l'elettrone porta L_e = +1, che va compensato dall'antineutrino elettronico (L_e = −1), mentre il neutrino muonico conserva L_μ = +1. Quindi entrambe le grandezze si conservano separatamente, come osservato nei processi del Modello Standard. La trappola è citare la parità, che è invece violata dall'interazione debole. Le oscillazioni dei neutrini mostrano che i numeri di famiglia non sono esattamente conservati, ma il numero leptonico totale sì.",
+  "semplice": "Ogni famiglia di leptoni tiene il suo conto separato: il muone che sparisce lascia il posto a un neutrino muonico, e l'elettrone creato viene «pareggiato» da un antineutrino elettronico.",
+  "passaggi": [
+   "Iniziale: L_μ = 1, L_e = 0",
+   "Finale: L_e = 1 − 1 + 0 = 0, L_μ = 0 + 0 + 1 = 1",
+   "entrambi conservati"
+  ],
+  "concetto": "numeri leptonici"
+ },
+ {
+  "id": "FMO-105",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "università",
+  "domanda": "Perché l'interazione debole ha un raggio d'azione così piccolo, dell'ordine di 10⁻³ fm?",
+  "opzioni": {
+   "A": "Perché i suoi mediatori sono privi di massa",
+   "B": "Perché agisce solo tra quark",
+   "C": "Perché è schermata dagli elettroni",
+   "D": "Perché la costante di accoppiamento è nulla",
+   "E": "Perché i suoi mediatori, i bosoni W e Z, hanno masse elevate (circa 80-91 GeV/c²)"
+  },
+  "giusta": "E",
+  "perche": "La portata di un'interazione mediata da un bosone di massa M è dell'ordine di ħ/(Mc), cioè ħc/(Mc²). Con Mc² ≈ 80 GeV si ottiene circa 197 MeV·fm/80 400 MeV ≈ 2,5 × 10⁻³ fm. Il fotone invece, avendo massa nulla, dà all'interazione elettromagnetica una portata infinita. La trappola è attribuire la debolezza dell'interazione a un accoppiamento piccolo: a energie molto alte la sua intensità è paragonabile a quella elettromagnetica, ed è la massa dei bosoni a renderla debole a bassa energia.",
+  "semplice": "Il «messaggero» della forza debole è pesantissimo, circa 85 volte un protone: può fare solo pochissima strada prima di dover scomparire.",
+  "passaggi": [
+   "R ≈ ħc/(Mc²)",
+   "R ≈ 197 MeV·fm / 80 400 MeV",
+   "R ≈ 2,5 × 10⁻³ fm"
+  ],
+  "concetto": "portata dell'interazione debole"
+ },
+ {
+  "id": "FMO-106",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "università",
+  "domanda": "Che cos'è la carica di colore nella cromodinamica quantistica?",
+  "opzioni": {
+   "A": "Il colore della luce emessa dai quark",
+   "B": "Una proprietà dei leptoni che determina la loro massa",
+   "C": "La carica elettrica dei quark espressa in frazioni",
+   "D": "Un numero quantico dei quark e dei gluoni, con tre valori (rosso, verde, blu) e i rispettivi anticolori, sorgente dell'interazione forte",
+   "E": "Un'etichetta che distingue particelle e antiparticelle"
+  },
+  "giusta": "D",
+  "perche": "Il colore è la «carica» dell'interazione forte: ogni quark porta uno di tre colori, gli antiquark gli anticolori, e i gluoni portano combinazioni di colore e anticolore. Gli adroni osservabili sono sempre «bianchi», cioè neutri di colore: tre colori diversi nei barioni, colore e anticolore nei mesoni. A differenza del fotone, i gluoni sono essi stessi carichi e interagiscono tra loro, il che porta al confinamento e alla libertà asintotica. La trappola è prendere il nome alla lettera: non ha nulla a che fare con i colori visibili.",
+  "semplice": "Il colore dei quark è solo un nome di fantasia per una carica a tre valori. Come nei colori della luce, rosso + verde + blu insieme danno «bianco», cioè neutro.",
+  "passaggi": [
+   "Il colore è la «carica» dell'interazione forte, non un colore visibile.",
+   "I quark portano uno di tre colori (rosso, verde, blu), gli antiquark gli anticolori.",
+   "I gluoni portano combinazioni colore-anticolore e interagiscono tra loro.",
+   "Gli adroni osservabili sono neutri di colore («bianchi»).",
+   "Risposta: la D."
+  ],
+  "concetto": "carica di colore"
+ },
+ {
+  "id": "FMO-107",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "università",
+  "domanda": "Che cosa si intende per libertà asintotica nell'interazione forte?",
+  "opzioni": {
+   "A": "I quark diventano liberi a basse energie",
+   "B": "L'interazione forte aumenta indefinitamente a piccole distanze",
+   "C": "I gluoni hanno massa infinita",
+   "D": "Gli adroni si separano spontaneamente in quark",
+   "E": "L'intensità dell'interazione forte diminuisce a energie molto alte, cioè a distanze molto piccole"
+  },
+  "giusta": "E",
+  "perche": "La costante di accoppiamento forte α_s dipende dalla scala di energia: diminuisce quando l'energia cresce, a causa dell'autointerazione dei gluoni. A distanze piccolissime i quark si comportano quasi come particelle libere, cosa che spiega lo scattering profondamente anelastico; a distanze grandi invece il legame diventa fortissimo, da cui il confinamento. La scoperta valse il Nobel 2004 a Gross, Wilczek e Politzer. La trappola è confondere la libertà asintotica con la possibilità di osservare quark isolati.",
+  "semplice": "Quando due quark sono vicinissimi si «ignorano» quasi del tutto; quando provi ad allontanarli, la forza tra loro cresce.",
+  "passaggi": [
+   "La costante di accoppiamento forte α_s dipende dalla scala di energia.",
+   "Cresce l'energia (distanze piccolissime): α_s diminuisce e i quark sono quasi liberi.",
+   "A grandi distanze il legame diventa fortissimo: confinamento.",
+   "Libertà asintotica non vuol dire quark isolati osservabili.",
+   "Risposta: la E."
+  ],
+  "concetto": "libertà asintotica"
+ },
+ {
+  "id": "FMO-108",
+  "materia": "Fisica moderna",
+  "argomento": "Particelle elementari",
+  "livello": "università",
+  "domanda": "Quale delle seguenti grandezze si conserva nelle interazioni forti ed elettromagnetiche ma non in quelle deboli?",
+  "opzioni": {
+   "A": "La carica elettrica",
+   "B": "L'energia",
+   "C": "La stranezza (e in generale il sapore dei quark)",
+   "D": "Il numero barionico",
+   "E": "La quantità di moto"
+  },
+  "giusta": "C",
+  "perche": "Le interazioni forte ed elettromagnetica non cambiano il sapore dei quark: per questo le particelle strane vengono prodotte a coppie in collisioni forti. Solo l'interazione debole, tramite i bosoni W, può trasformare un quark strano in un quark up, violando la stranezza; per questo le particelle strane hanno vite relativamente lunghe, dell'ordine di 10⁻¹⁰ s. La trappola è indicare carica, energia o quantità di moto, che si conservano in tutte le interazioni.",
+  "semplice": "Le particelle «strane» nascono a coppie in modo rapido, ma possono decadere solo lentamente, attraverso la forza debole che è l'unica capace di cambiare il tipo di quark.",
+  "passaggi": [
+   "Carica, energia, quantità di moto e numero barionico si conservano in tutte le interazioni.",
+   "Forte ed elettromagnetica non cambiano il sapore dei quark: le particelle strane si producono a coppie.",
+   "Solo la debole, con i bosoni W, trasforma un quark strano in un up.",
+   "Per questo le particelle strane vivono relativamente a lungo (circa 10⁻¹⁰ s).",
+   "La grandezza è la stranezza (il sapore dei quark)."
+  ],
+  "concetto": "stranezza"
+ },
+ {
+  "id": "FMO-109",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "superiori",
+  "domanda": "Che cosa distingue un semiconduttore da un conduttore e da un isolante nella teoria delle bande?",
+  "opzioni": {
+   "A": "Non ha banda di valenza",
+   "B": "Ha una banda proibita (gap) piccola, di circa 1 eV, tra banda di valenza e banda di conduzione",
+   "C": "Ha la banda di conduzione sempre piena",
+   "D": "Ha una banda proibita molto ampia, superiore a 5 eV",
+   "E": "Ha bande sovrapposte come i metalli"
+  },
+  "giusta": "B",
+  "perche": "Nei solidi i livelli energetici degli elettroni si raggruppano in bande. Nei metalli la banda di conduzione è parzialmente occupata o sovrapposta alla banda di valenza; negli isolanti un gap ampio (diversi eV) impedisce agli elettroni di passare in conduzione. I semiconduttori, come il silicio con circa 1,1 eV, hanno un gap piccolo: a temperatura ambiente alcuni elettroni lo superano. La trappola è pensare che un semiconduttore sia un «metallo cattivo»: la sua conduzione cresce con la temperatura, al contrario dei metalli.",
+  "semplice": "Immagina un fossato tra due prati: nei metalli non c'è, negli isolanti è troppo largo da saltare, nei semiconduttori è stretto e qualche elettrone ce la fa con un po' di energia termica.",
+  "passaggi": [
+   "Nei solidi i livelli degli elettroni formano bande: valenza e conduzione, separate da un gap.",
+   "Metalli: bande sovrapposte o conduzione parzialmente piena.",
+   "Isolanti: gap ampio, diversi eV.",
+   "Semiconduttori: gap piccolo, circa 1 eV (silicio 1,1 eV), superabile a temperatura ambiente da alcuni elettroni.",
+   "Risposta: la B."
+  ],
+  "concetto": "teoria delle bande"
+ },
+ {
+  "id": "FMO-110",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "superiori",
+  "domanda": "Quale elemento si aggiunge al silicio per ottenere un semiconduttore di tipo n?",
+  "opzioni": {
+   "A": "Il boro, che ha 3 elettroni di valenza",
+   "B": "Il germanio, che ha 4 elettroni di valenza",
+   "C": "L'elio, che è un gas nobile",
+   "D": "Il carbonio, che ha 4 elettroni di valenza",
+   "E": "Il fosforo, che ha 5 elettroni di valenza"
+  },
+  "giusta": "E",
+  "perche": "Il silicio ha 4 elettroni di valenza. Un atomo di fosforo (gruppo 15) ne porta 5: quattro formano legami con il silicio e il quinto è debolmente legato e diventa facilmente un elettrone di conduzione. Il drogaggio con donatori produce un tipo n, dove i portatori maggioritari sono elettroni. La trappola è scegliere il boro, che con 3 elettroni crea lacune e dà un tipo p.",
+  "semplice": "Aggiungere fosforo al silicio è come aggiungere invitati che portano una «moneta in più»: questi elettroni extra sono liberi di muoversi.",
+  "passaggi": [
+   "Il silicio ha 4 elettroni di valenza.",
+   "Per il tipo n serve un donatore con un elettrone in più: 5 elettroni di valenza.",
+   "Il fosforo (gruppo 15) ne ha 5: quattro fanno legami, il quinto diventa elettrone di conduzione.",
+   "Il boro (3 elettroni) darebbe il tipo p; germanio e carbonio hanno 4.",
+   "Si aggiunge il fosforo."
+  ],
+  "concetto": "drogaggio di tipo n"
+ },
+ {
+  "id": "FMO-111",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "superiori",
+  "domanda": "Che cos'è una lacuna in un semiconduttore?",
+  "opzioni": {
+   "A": "Un protone libero nel cristallo",
+   "B": "Un difetto che blocca la corrente",
+   "C": "La mancanza di un elettrone in un legame, che si comporta come una carica positiva mobile",
+   "D": "Un atomo mancante nel reticolo",
+   "E": "Un elettrone con energia negativa"
+  },
+  "giusta": "C",
+  "perche": "Quando un elettrone lascia un legame covalente, resta un «posto vuoto». Un elettrone vicino può occuparlo, spostando il vuoto altrove: il risultato netto è che la lacuna si muove come una carica positiva. Nei semiconduttori di tipo p le lacune sono i portatori maggioritari. La trappola è pensare che la lacuna sia un protone o uno ione positivo che si muove: i nuclei restano fermi, si spostano gli elettroni.",
+  "semplice": "In una fila di sedie con un posto libero, ognuno si sposta di un posto verso la sedia vuota: sembra che sia la sedia vuota a camminare nella direzione opposta.",
+  "passaggi": [
+   "Quando un elettrone lascia un legame covalente resta un posto vuoto.",
+   "Un elettrone vicino può occuparlo, spostando il vuoto altrove.",
+   "L'effetto netto è un vuoto che si muove come una carica positiva.",
+   "I nuclei restano fermi: non è un protone né un atomo mancante.",
+   "Risposta: la C."
+  ],
+  "concetto": "lacune"
+ },
+ {
+  "id": "FMO-112",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "superiori",
+  "domanda": "Che cosa significa la parola LASER?",
+  "opzioni": {
+   "A": "Amplificazione della luce mediante emissione stimolata di radiazione",
+   "B": "Luce artificiale a sorgente elettrica rinforzata",
+   "C": "Emissione spontanea di radiazione amplificata",
+   "D": "Luce ad alta energia solare riflessa",
+   "E": "Radiazione elettromagnetica a raggi X"
+  },
+  "giusta": "A",
+  "perche": "LASER è l'acronimo inglese di Light Amplification by Stimulated Emission of Radiation, cioè amplificazione della luce mediante emissione stimolata di radiazione. Il meccanismo chiave è l'emissione stimolata: un fotone induce un atomo eccitato a emettere un secondo fotone identico. La trappola è indicare l'emissione spontanea, che produce invece la luce di una normale lampadina, incoerente e in tutte le direzioni.",
+  "semplice": "In un laser un fotone ne «clona» un altro, quello ne clona un altro ancora, e così via: si forma un fascio di fotoni tutti uguali.",
+  "passaggi": [
+   "LASER è un acronimo inglese: Light Amplification by Stimulated Emission of Radiation.",
+   "Tradotto: amplificazione della luce mediante emissione stimolata di radiazione.",
+   "Il meccanismo chiave è l'emissione stimolata, non quella spontanea delle lampadine.",
+   "Risposta: la A."
+  ],
+  "concetto": "emissione stimolata"
+ },
+ {
+  "id": "FMO-113",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "superiori",
+  "domanda": "Quale proprietà NON è tipica della luce laser?",
+  "opzioni": {
+   "A": "È emessa in tutte le direzioni come quella di una lampadina",
+   "B": "È quasi monocromatica",
+   "C": "È coerente",
+   "D": "È molto direzionale",
+   "E": "Può essere concentrata in un punto molto piccolo"
+  },
+  "giusta": "A",
+  "perche": "La luce laser è quasi monocromatica (una lunghezza d'onda ben definita), coerente (le onde sono in fase) e molto direzionale (il fascio si allarga pochissimo). Grazie a queste proprietà può essere focalizzata in un punto minuscolo con grande intensità. L'emissione in tutte le direzioni è tipica delle sorgenti ordinarie come lampadine e LED. La trappola è pensare che un laser sia «solo una luce molto forte»: anche un laser di bassa potenza è diverso da una lampadina per coerenza e direzionalità.",
+  "semplice": "Una lampadina è come una folla che grida a caso; un laser è come un coro che canta la stessa nota, insieme e nella stessa direzione.",
+  "passaggi": [
+   "La domanda chiede la proprietà NON tipica.",
+   "La luce laser è quasi monocromatica, coerente e molto direzionale.",
+   "Per questo si concentra in un punto molto piccolo.",
+   "L'emissione in tutte le direzioni è delle sorgenti ordinarie come le lampadine.",
+   "Non tipica: la A."
+  ],
+  "concetto": "proprietà della luce laser"
+ },
+ {
+  "id": "FMO-114",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "superiori",
+  "domanda": "Un LED ha un gap energetico di 2,0 eV. Di che colore è circa la luce emessa? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Rosso-arancio, circa 620 nm",
+   "B": "Blu, circa 450 nm",
+   "C": "Verde, circa 530 nm",
+   "D": "Infrarosso, circa 1240 nm",
+   "E": "Ultravioletto, circa 250 nm"
+  },
+  "giusta": "A",
+  "perche": "In un LED gli elettroni della banda di conduzione si ricombinano con le lacune emettendo fotoni con energia circa uguale al gap. Con 2,0 eV si ottiene λ = 1240/2,0 = 620 nm, nella zona rosso-arancio. Per un LED blu serve un gap più grande, intorno a 2,7 eV, come nel nitruro di gallio. La trappola è pensare che un gap maggiore dia luce più rossa: è il contrario.",
+  "semplice": "Il colore di un LED dipende dal «salto» che fanno gli elettroni: un salto piccolo dà luce rossa, uno grande luce blu.",
+  "passaggi": [
+   "λ = hc/E_g",
+   "λ = 1240/2,0",
+   "λ = 620 nm (rosso-arancio)"
+  ],
+  "concetto": "LED"
+ },
+ {
+  "id": "FMO-115",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "superiori",
+  "domanda": "Che cosa fa un diodo a giunzione p-n?",
+  "opzioni": {
+   "A": "Amplifica qualsiasi segnale elettrico",
+   "B": "Lascia passare la corrente facilmente in un verso (polarizzazione diretta) e quasi per niente nell'altro (polarizzazione inversa)",
+   "C": "Conduce allo stesso modo in entrambi i versi",
+   "D": "Immagazzina grandi quantità di carica come una batteria",
+   "E": "Trasforma la corrente continua in alternata"
+  },
+  "giusta": "B",
+  "perche": "Alla giunzione tra la parte p e la parte n si forma una zona di svuotamento con un campo elettrico interno. In polarizzazione diretta (p al positivo) la barriera si abbassa e passa corrente; in polarizzazione inversa la barriera si alza e scorre solo una corrente minima. Per questo il diodo si usa come raddrizzatore. La trappola è confonderlo con il transistor, che invece può amplificare.",
+  "semplice": "Il diodo è come una valvola a senso unico per la corrente: lascia passare l'acqua in un verso e la blocca nell'altro.",
+  "passaggi": [
+   "Alla giunzione p-n si forma una zona di svuotamento con un campo elettrico interno.",
+   "In polarizzazione diretta (p al positivo) la barriera si abbassa e la corrente passa.",
+   "In polarizzazione inversa la barriera si alza: passa solo una corrente minima.",
+   "Non amplifica (è il transistor) e non immagazzina carica come una batteria.",
+   "Risposta: la B."
+  ],
+  "concetto": "giunzione p-n"
+ },
+ {
+  "id": "FMO-116",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "test",
+  "domanda": "Qual è la lunghezza d'onda massima della luce che può creare coppie elettrone-lacuna nel silicio, con gap 1,12 eV? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 550 nm",
+   "B": "Circa 112 nm",
+   "C": "Circa 1100 nm",
+   "D": "Circa 2200 nm",
+   "E": "Circa 400 nm"
+  },
+  "giusta": "C",
+  "perche": "Per portare un elettrone dalla banda di valenza a quella di conduzione, un fotone deve avere energia almeno pari al gap. La lunghezza d'onda massima è λ = 1240/1,12 ≈ 1107 nm, nel vicino infrarosso. Fotoni con λ maggiore non vengono assorbiti per questo processo. La trappola è pensare che il valore trovato sia un minimo: per l'energia è un minimo, per la lunghezza d'onda un massimo. Per questo le celle solari al silicio usano tutto il visibile.",
+  "semplice": "Il silicio «vede» tutta la luce visibile e un po' di infrarosso: oltre circa 1100 nm diventa trasparente.",
+  "passaggi": [
+   "E_fotone ≥ E_g",
+   "λ_max = hc/E_g = 1240/1,12",
+   "λ_max ≈ 1107 nm"
+  ],
+  "concetto": "assorbimento nei semiconduttori"
+ },
+ {
+  "id": "FMO-117",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "test",
+  "domanda": "Che cos'è l'inversione di popolazione, necessaria per il funzionamento di un laser?",
+  "opzioni": {
+   "A": "Lo scambio tra elettroni e lacune",
+   "B": "L'inversione del verso del fascio laser",
+   "C": "La situazione in cui tutti gli atomi sono nello stato fondamentale",
+   "D": "Una situazione in cui un livello eccitato è più popolato del livello inferiore",
+   "E": "L'equilibrio termico tra due livelli energetici"
+  },
+  "giusta": "D",
+  "perche": "All'equilibrio termico i livelli più bassi sono sempre più popolati, quindi un fotone viene più spesso assorbito che amplificato. Per avere amplificazione serve che il livello superiore della transizione laser sia più popolato di quello inferiore: è l'inversione di popolazione, ottenuta con il pompaggio (ottico, elettrico, chimico) e sfruttando livelli metastabili. La trappola è pensare che basti eccitare gli atomi: con due soli livelli non si riesce a superare la parità.",
+  "semplice": "Normalmente quasi tutti gli atomi «dormono» al piano terra. Per fare un laser bisogna portarne la maggioranza al piano di sopra, pronti a emettere insieme.",
+  "passaggi": [
+   "All'equilibrio termico i livelli più bassi sono più popolati.",
+   "Così un fotone viene più spesso assorbito che amplificato.",
+   "Per amplificare serve il livello superiore più popolato di quello inferiore: inversione di popolazione.",
+   "Si ottiene con il pompaggio e livelli metastabili.",
+   "Risposta: la D."
+  ],
+  "concetto": "inversione di popolazione"
+ },
+ {
+  "id": "FMO-118",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "test",
+  "domanda": "Qual è l'energia di un fotone emesso da un laser elio-neon a 632,8 nm? (hc ≈ 1240 eV·nm)",
+  "opzioni": {
+   "A": "Circa 0,51 eV",
+   "B": "Circa 3,92 eV",
+   "C": "Circa 1,96 eV",
+   "D": "Circa 6,33 eV",
+   "E": "Circa 1,24 eV"
+  },
+  "giusta": "C",
+  "perche": "L'energia del fotone è E = hc/λ = 1240/632,8 ≈ 1,96 eV. Questo valore corrisponde alla differenza tra due livelli dell'atomo di neon, mentre l'elio serve a trasferire energia al neon tramite urti. La trappola è invertire il rapporto o confondere i nanometri con i micrometri.",
+  "semplice": "La luce rossa del laser elio-neon dei vecchi lettori di codici a barre è fatta di fotoni da circa 2 eV.",
+  "passaggi": [
+   "E = hc/λ",
+   "E = 1240/632,8",
+   "E ≈ 1,96 eV"
+  ],
+  "concetto": "energia dei fotoni laser"
+ },
+ {
+  "id": "FMO-119",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "test",
+  "domanda": "Perché la resistività di un semiconduttore puro diminuisce quando la temperatura aumenta?",
+  "opzioni": {
+   "A": "Perché gli atomi del reticolo vibrano di meno",
+   "B": "Perché il gap energetico diventa nullo",
+   "C": "Perché aumenta il numero di elettroni che superano il gap e quindi il numero di portatori di carica",
+   "D": "Perché gli elettroni diventano più pesanti",
+   "E": "Perché si formano nuovi protoni liberi"
+  },
+  "giusta": "C",
+  "perche": "Nei semiconduttori intrinseci la concentrazione dei portatori cresce circa come e^(−E_g/2kT): un aumento di temperatura porta molti più elettroni in banda di conduzione e altrettante lacune in banda di valenza. Questo effetto prevale sull'aumento degli urti con il reticolo, che invece domina nei metalli facendone crescere la resistività. La trappola è applicare ai semiconduttori il comportamento dei metalli. Su questo principio funzionano i termistori NTC.",
+  "semplice": "Scaldando un semiconduttore, sempre più elettroni riescono a saltare il fossato e la corrente passa meglio: il contrario di quanto accade in un filo di rame.",
+  "passaggi": [
+   "In un semiconduttore puro i portatori nascono da elettroni che superano il gap.",
+   "La loro concentrazione cresce circa come e^(−E_g/2kT): aumenta molto con T.",
+   "Più portatori significa più conduzione, quindi resistività più bassa.",
+   "Questo prevale sull'aumento degli urti con il reticolo (che domina nei metalli).",
+   "Risposta: la C."
+  ],
+  "concetto": "conduzione e temperatura"
+ },
+ {
+  "id": "FMO-120",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "test",
+  "domanda": "A che cosa serve la cavità ottica (due specchi affacciati) in un laser?",
+  "opzioni": {
+   "A": "A raffreddare il mezzo attivo",
+   "B": "A produrre l'inversione di popolazione",
+   "C": "A trasformare la luce in corrente elettrica",
+   "D": "A disperdere la luce in tutte le direzioni",
+   "E": "A far passare la luce più volte nel mezzo attivo per amplificarla e selezionarne direzione e lunghezze d'onda"
+  },
+  "giusta": "E",
+  "perche": "I fotoni che viaggiano lungo l'asse della cavità vengono riflessi avanti e indietro e attraversano molte volte il mezzo attivo, stimolando nuove emissioni: la luce viene amplificata. Solo le onde che formano onde stazionarie tra gli specchi (i modi della cavità) sono favorite, e uno degli specchi è parzialmente trasparente per far uscire il fascio. La trappola è attribuire alla cavità il pompaggio: l'inversione di popolazione è prodotta da una sorgente di energia esterna.",
+  "semplice": "Gli specchi sono come le pareti di un corridoio in cui l'eco rimbalza e si rinforza: alla fine una parte esce da una porta socchiusa come fascio laser.",
+  "passaggi": [
+   "I due specchi riflettono i fotoni avanti e indietro lungo l'asse.",
+   "La luce attraversa molte volte il mezzo attivo e stimola nuove emissioni: si amplifica.",
+   "Sono favorite solo le onde stazionarie tra gli specchi: si selezionano direzione e lunghezze d'onda.",
+   "L'inversione di popolazione la produce il pompaggio esterno, non la cavità.",
+   "Risposta: la E."
+  ],
+  "concetto": "cavità risonante"
+ },
+ {
+  "id": "FMO-121",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "università",
+  "domanda": "Qual è la separazione in frequenza tra due modi longitudinali consecutivi di una cavità laser lunga 30 cm (in aria)?",
+  "opzioni": {
+   "A": "1 GHz",
+   "B": "500 MHz",
+   "C": "250 MHz",
+   "D": "5 GHz",
+   "E": "50 MHz"
+  },
+  "giusta": "B",
+  "perche": "Le onde stazionarie nella cavità soddisfano L = nλ/2, cioè f_n = nc/(2L). La distanza tra due modi consecutivi è Δf = c/(2L) = 3 × 10⁸/(2 × 0,3) = 5 × 10⁸ Hz = 500 MHz. La trappola è dimenticare il fattore 2, dovuto al fatto che la luce percorre la cavità avanti e indietro, ottenendo 1 GHz.",
+  "semplice": "In una cavità di 30 cm possono stare solo onde che «ci entrano» un numero intero di mezze volte: i colori permessi sono distanziati di 500 MHz, una differenza minuscola rispetto alla frequenza della luce.",
+  "passaggi": [
+   "f_n = nc/(2L)",
+   "Δf = c/(2L)",
+   "Δf = 3 × 10⁸ / 0,6 = 5 × 10⁸ Hz = 500 MHz"
+  ],
+  "concetto": "modi della cavità"
+ },
+ {
+  "id": "FMO-122",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "università",
+  "domanda": "All'equilibrio termico a 300 K, qual è circa il rapporto tra le popolazioni di due livelli separati da 2 eV? (kT ≈ 0,0259 eV)",
+  "opzioni": {
+   "A": "Circa 0,5",
+   "B": "Circa 10⁻³",
+   "C": "Circa 1",
+   "D": "Circa 10³⁴",
+   "E": "Circa 10⁻³⁴"
+  },
+  "giusta": "E",
+  "perche": "Secondo la distribuzione di Boltzmann N₂/N₁ = e^(−ΔE/kT) = e^(−2/0,0259) ≈ e^(−77) ≈ 2,5 × 10⁻³⁴. Il livello superiore è praticamente vuoto: ecco perché all'equilibrio l'emissione stimolata nel visibile è trascurabile e per un laser serve un pompaggio che porti il sistema lontano dall'equilibrio. La trappola è dimenticare l'esponenziale e fare un semplice rapporto tra energie.",
+  "semplice": "A temperatura ambiente l'agitazione termica è troppo debole per eccitare salti di 2 eV: praticamente tutti gli atomi restano nel livello più basso.",
+  "passaggi": [
+   "ΔE/kT = 2/0,0259 ≈ 77",
+   "N₂/N₁ = e^(−77)",
+   "N₂/N₁ ≈ 2,5 × 10⁻³⁴"
+  ],
+  "concetto": "distribuzione di Boltzmann"
+ },
+ {
+  "id": "FMO-123",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "università",
+  "domanda": "Perché un laser a tre o quattro livelli funziona, mentre un sistema a due soli livelli non può raggiungere l'inversione di popolazione con il solo pompaggio ottico?",
+  "opzioni": {
+   "A": "Perché con due livelli i fotoni hanno energia nulla",
+   "B": "Perché due livelli non possono emettere luce",
+   "C": "Perché l'emissione spontanea è vietata nei sistemi a due livelli",
+   "D": "Perché in un sistema a due livelli il pompaggio produce anche emissione stimolata e al massimo si arriva a popolazioni uguali",
+   "E": "Perché i sistemi a due livelli non assorbono luce"
+  },
+  "giusta": "D",
+  "perche": "In un sistema a due livelli la stessa radiazione di pompa che eccita gli atomi stimola anche l'emissione verso il basso con la stessa probabilità per atomo (i coefficienti di Einstein B sono uguali per livelli non degeneri). Aumentando l'intensità si tende a N₂ = N₁, mai a N₂ > N₁. Con tre o quattro livelli si pompa verso un livello alto che decade rapidamente in un livello metastabile, separando la transizione di pompa da quella laser. La trappola è credere che basti pompare più forte.",
+  "semplice": "Con due soli gradini, la stessa luce che fa salire gli atomi li fa anche ridiscendere: si arriva al massimo a metà e metà. Servono gradini aggiuntivi per «parcheggiare» gli atomi in alto.",
+  "passaggi": [
+   "In un sistema a due livelli la stessa luce di pompa eccita gli atomi verso l'alto.",
+   "Ma stimola anche l'emissione verso il basso con la stessa probabilità per atomo.",
+   "Aumentando l'intensità si tende a N₂ = N₁, mai a N₂ > N₁.",
+   "Con tre o quattro livelli si pompa in un livello alto che decade in uno metastabile, separando pompa e transizione laser.",
+   "Risposta: la D."
+  ],
+  "concetto": "laser a più livelli"
+ },
+ {
+  "id": "FMO-124",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "università",
+  "domanda": "Come varia approssimativamente la concentrazione intrinseca dei portatori nel silicio (E_g = 1,12 eV) passando da 300 K a 350 K, considerando solo il fattore esponenziale e^(−E_g/2kT)?",
+  "opzioni": {
+   "A": "Aumenta di circa il 17%",
+   "B": "Aumenta di circa 20 volte",
+   "C": "Resta invariata",
+   "D": "Diminuisce di circa 20 volte",
+   "E": "Raddoppia esattamente"
+  },
+  "giusta": "B",
+  "perche": "Il rapporto è e^(−E_g/2kT₂)/e^(−E_g/2kT₁) = exp[(E_g/2k)(1/T₁ − 1/T₂)]. Con E_g/2k ≈ 1,12/(2 × 8,62 × 10⁻⁵) ≈ 6500 K e 1/300 − 1/350 ≈ 4,76 × 10⁻⁴ K⁻¹, l'esponente vale circa 3,1 e il rapporto circa 22. Considerando anche il prefattore T^(3/2) l'aumento sarebbe ancora un po' maggiore. La trappola è ragionare in modo lineare (350/300 ≈ +17%): la dipendenza esponenziale amplifica enormemente le piccole variazioni di temperatura.",
+  "semplice": "Basta scaldare un chip di silicio di 50 gradi perché i portatori intrinseci diventino una ventina di volte di più: per questo l'elettronica soffre il calore.",
+  "passaggi": [
+   "n_i ∝ e^(−E_g/2kT)",
+   "E_g/2k ≈ 6500 K; 1/300 − 1/350 ≈ 4,76 × 10⁻⁴ K⁻¹",
+   "esponente ≈ 3,1 ⇒ rapporto ≈ e^3,1 ≈ 22"
+  ],
+  "concetto": "concentrazione intrinseca"
+ },
+ {
+  "id": "FMO-125",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "università",
+  "domanda": "Che cosa rappresenta il livello di Fermi in un semiconduttore?",
+  "opzioni": {
+   "A": "L'energia alla quale la probabilità di occupazione di uno stato, secondo la distribuzione di Fermi-Dirac, vale 1/2",
+   "B": "L'energia massima che un elettrone può avere nel cristallo",
+   "C": "Il fondo della banda di conduzione",
+   "D": "L'energia del gap",
+   "E": "L'energia di ionizzazione degli atomi droganti"
+  },
+  "giusta": "A",
+  "perche": "La distribuzione di Fermi-Dirac f(E) = 1/(e^((E − E_F)/kT) + 1) dà la probabilità che uno stato di energia E sia occupato; per E = E_F vale esattamente 1/2. In un semiconduttore intrinseco il livello di Fermi cade circa a metà del gap; il drogaggio n lo sposta verso la banda di conduzione, il drogaggio p verso la banda di valenza. In una giunzione p-n all'equilibrio il livello di Fermi è lo stesso in tutto il dispositivo, e da questo nasce il potenziale di contatto. La trappola è pensare che debba esserci uno stato permesso proprio a quell'energia: spesso cade nel gap.",
+  "semplice": "Il livello di Fermi è come la linea di galleggiamento del mare di elettroni: sotto quasi tutto è pieno, sopra quasi tutto è vuoto.",
+  "passaggi": [
+   "Distribuzione di Fermi-Dirac: f(E) = 1/(e^((E − E_F)/kT) + 1).",
+   "Per E = E_F l'esponente è 0: f = 1/(1 + 1) = 1/2.",
+   "Quindi E_F è l'energia con probabilità di occupazione 1/2 (può cadere nel gap).",
+   "In un semiconduttore intrinseco sta circa a metà gap; il drogaggio lo sposta.",
+   "Risposta: la A."
+  ],
+  "concetto": "livello di Fermi"
+ },
+ {
+  "id": "FMO-126",
+  "materia": "Fisica moderna",
+  "argomento": "Semiconduttori e laser",
+  "livello": "università",
+  "domanda": "In una cella fotovoltaica a giunzione p-n illuminata, quale meccanismo separa le cariche generate dalla luce?",
+  "opzioni": {
+   "A": "Un campo magnetico esterno applicato alla cella",
+   "B": "La gravità, che fa cadere gli elettroni verso il basso",
+   "C": "Il riscaldamento della cella da parte del Sole",
+   "D": "Il campo elettrico interno della zona di svuotamento, che spinge elettroni verso la parte n e lacune verso la parte p",
+   "E": "Una batteria interna che alimenta la cella"
+  },
+  "giusta": "D",
+  "perche": "Un fotone con energia maggiore del gap crea una coppia elettrone-lacuna. Se la coppia si forma nella zona di svuotamento, o vi arriva per diffusione, il campo elettrico interno della giunzione separa le cariche: elettroni verso la regione n, lacune verso la regione p. Si crea così una tensione ai capi della cella e, chiudendo il circuito, una corrente. La trappola è pensare che la cella funzioni per riscaldamento: il calore riduce anzi il rendimento. Fotoni con energia molto maggiore del gap disperdono l'eccesso in calore, uno dei motivi del limite di efficienza di una singola giunzione.",
+  "semplice": "La giunzione è come uno scivolo con due discese opposte: la luce crea coppie di cariche, e lo scivolo manda gli elettroni da una parte e le lacune dall'altra, producendo corrente.",
+  "passaggi": [
+   "Un fotone con energia maggiore del gap crea una coppia elettrone-lacuna.",
+   "Nella zona di svuotamento c'è un campo elettrico interno.",
+   "Il campo spinge gli elettroni verso la parte n e le lacune verso la parte p.",
+   "Così nasce una tensione e, chiudendo il circuito, una corrente; il calore anzi riduce il rendimento.",
+   "Risposta: la D."
+  ],
+  "concetto": "effetto fotovoltaico"
+ }
+]

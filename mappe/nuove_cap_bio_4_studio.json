@@ -1,0 +1,230 @@
+{
+"Genetica di virus e batteri": {
+"superiore": {
+"spiegazione": [
+"I batteri sono procarioti con un unico cromosoma circolare di DNA, di solito di qualche milione di paia di basi (Escherichia coli ne ha circa 4,6 milioni e circa 4300 geni), e spesso con plasmidi, piccole molecole circolari di DNA che si replicano in modo indipendente e portano geni utili ma non essenziali, come quelli di resistenza agli antibiotici. I batteri si riproducono per scissione binaria: in condizioni ottimali E. coli si divide ogni 20 minuti, così dopo 2 ore una cellula ne ha generate 2⁶ = 64.",
+"Anche senza riproduzione sessuale i batteri scambiano geni con il trasferimento genico orizzontale, in tre modi. Nella trasformazione un batterio assorbe frammenti di DNA libero nell'ambiente: fu scoperta da Griffith nel 1928 con lo pneumococco, e nel 1944 Avery, MacLeod e McCarty dimostrarono che il «principio trasformante» era il DNA. Nella coniugazione un batterio donatore, che possiede il plasmide F, forma un ponte citoplasmatico con un ricevente e gli trasferisce una copia del plasmide. Nella trasduzione un virus batterico trasporta per errore un pezzo di DNA da un batterio a un altro.",
+"Questi meccanismi spiegano la rapida diffusione della resistenza agli antibiotici: un gene di resistenza situato su un plasmide può passare anche fra specie diverse. L'uso eccessivo o scorretto degli antibiotici seleziona i batteri resistenti, e questo è oggi uno dei problemi più seri della medicina.",
+"I virus sono formati da un acido nucleico (DNA o RNA, a filamento singolo o doppio) racchiuso in un capside proteico, a volte avvolto da un involucro lipidico derivato dalla membrana della cellula ospite, come nell'influenza o nell'HIV. Sono specifici: ogni virus infetta solo certi tipi di cellule, perché deve legarsi a recettori particolari sulla loro superficie. I virus che infettano i batteri si chiamano batteriofagi. Hershey e Chase nel 1952, marcando il DNA con fosforo radioattivo e le proteine con zolfo radioattivo, dimostrarono che è il DNA del fago a entrare nel batterio e a dirigere la formazione di nuovi virus.",
+"I fagi possono seguire due cicli. Nel ciclo litico il fago inietta il suo DNA, la cellula produce nuovi virus e alla fine si rompe (lisi) liberandoli. Nel ciclo lisogeno il DNA del fago si inserisce nel cromosoma batterico (profago) e viene copiato con esso a ogni divisione, finché uno stimolo non lo fa passare al ciclo litico. Anche fra i virus animali esistono infezioni latenti: l'herpes resta silente nei neuroni e si riattiva. I retrovirus, come l'HIV, hanno RNA e l'enzima trascrittasi inversa, che lo copia in DNA, poi integrato nel genoma della cellula ospite. Poiché i virus usano il macchinario della cellula, gli antibiotici non hanno effetto su di loro: servono antivirali specifici o la prevenzione con i vaccini."
+],
+"metodo": [
+"Fai una tabella dei tre meccanismi di trasferimento genico con che cosa viene trasferito, come, e chi lo ha scoperto.",
+"Disegna in sequenza i cicli litico e lisogeno e indica il punto in cui si può passare dall'uno all'altro.",
+"Ripercorri gli esperimenti di Griffith, Avery e Hershey-Chase e scrivi per ciascuno la conclusione in una frase.",
+"Esercitati a calcolare la crescita batterica con le potenze di 2, dato il tempo di generazione.",
+"Classifica alcuni virus noti per tipo di acido nucleico e presenza di involucro.",
+"Spiega a voce come si diffonde la resistenza agli antibiotici usando i termini plasmide, coniugazione e selezione."
+],
+"ricorda": [
+"Trasformazione = DNA raccolto da terra; coniugazione = passaggio di mano; trasduzione = consegna tramite corriere virale.",
+"Hershey-Chase: fosforo nel DNA, zolfo nelle proteine; nel batterio entra il fosforo.",
+"Litico = lisi, la cellula si rompe; lisogeno = il virus «dorme» nel cromosoma.",
+"Retrovirus: copia al contrario, da RNA a DNA."
+],
+"errori": [
+"Pensare che i plasmidi siano indispensabili al batterio: portano geni accessori, quelli essenziali stanno nel cromosoma.",
+"Dire che il ciclo lisogeno distrugge subito la cellula: il profago viene replicato insieme al cromosoma senza ucciderla.",
+"Credere che Griffith avesse già dimostrato che il materiale genetico è il DNA: scoprì la trasformazione, il DNA fu identificato più tardi.",
+"Usare antibiotici contro le infezioni virali: non hanno alcun effetto sui virus.",
+"Considerare la coniugazione una forma di riproduzione: è uno scambio di geni, non genera nuovi individui."
+],
+"domande": [
+{"domanda": "Che cos'è un plasmide?", "risposta": "Una piccola molecola di DNA circolare, distinta dal cromosoma batterico, che si replica autonomamente e porta geni accessori come quelli di resistenza."},
+{"domanda": "Che cosa dimostrò l'esperimento di Hershey e Chase?", "risposta": "Che è il DNA, e non le proteine, a entrare nel batterio e a costituire il materiale genetico del fago."},
+{"domanda": "Quante cellule si ottengono da un batterio che si divide ogni 20 minuti dopo 2 ore?", "risposta": "Sei generazioni, quindi 2⁶ = 64 cellule."},
+{"domanda": "Qual è la differenza fra ciclo litico e lisogeno?", "risposta": "Nel litico il virus si moltiplica subito e la cellula si rompe; nel lisogeno il DNA virale si integra nel cromosoma e passa alle cellule figlie senza ucciderle."},
+{"domanda": "Che cosa fa la trascrittasi inversa?", "risposta": "Sintetizza DNA usando come stampo l'RNA virale; è tipica dei retrovirus."}
+]
+},
+"universita": {
+"spiegazione": [
+"Il genoma batterico è compatto: nella maggior parte è codificante e i geni con funzioni collegate sono spesso organizzati in operoni, trascritti in RNA policistronici. La replicazione parte da un'unica origine (oriC) e procede in due direzioni fino alla regione terminale; in crescita rapida nuovi cicli iniziano prima che il precedente sia concluso (replicazione multiforcella), così il tempo di generazione può essere più breve del tempo necessario a replicare l'intero cromosoma. Il genoma contiene anche elementi mobili: sequenze di inserzione, trasposoni, spesso portatori di geni di resistenza, e isole di patogenicità acquisite per trasferimento orizzontale, riconoscibili dal diverso contenuto di GC.",
+"Nella coniugazione il fattore F codifica l'apparato di trasferimento; il DNA viene tagliato in un sito specifico e un singolo filamento passa al ricevente con replicazione a cerchio rotante, così entrambe le cellule diventano F⁺. Se il fattore F è integrato nel cromosoma (ceppi Hfr), il trasferimento trascina con sé geni cromosomici in ordine fisso: interrompendo la coniugazione a tempi diversi, Wollman e Jacob mapparono il cromosoma di E. coli in minuti. Raramente il ricevente diventa a sua volta Hfr, perché il trasferimento completo richiede troppo tempo. Nella trasformazione naturale, tipica di specie competenti come Streptococcus pneumoniae, il DNA entra come filamento singolo e si integra per ricombinazione omologa mediata da RecA. La trasduzione può essere generalizzata (il fago impacchetta per errore un frammento qualsiasi) o specializzata (un profago, escidendosi in modo impreciso, porta con sé i geni adiacenti al suo sito di integrazione).",
+"La scelta fra ciclo litico e lisogeno del fago λ è un modello classico di interruttore genetico: il repressore CI mantiene la lisogenia reprimendo i promotori litici, mentre la proteina Cro favorisce la via litica; la proteina CII, più stabile in cellule affamate, favorisce la lisogenia. Un danno al DNA attiva RecA, che stimola l'autoproteolisi di CI e induce il ciclo litico. Contro i fagi i batteri hanno sviluppato i sistemi di restrizione-modificazione, con enzimi che tagliano il DNA estraneo non metilato, e il sistema CRISPR-Cas, una forma di immunità adattativa che conserva frammenti di DNA dei fagi e li usa come guida per riconoscerli in una nuova infezione.",
+"La classificazione di Baltimore divide i virus in sette gruppi secondo il genoma e il modo di produrre mRNA: DNA a doppio filamento (herpesvirus, adenovirus), DNA a filamento singolo (parvovirus), RNA a doppio filamento (rotavirus), RNA a singolo filamento positivo, che funziona direttamente da mRNA (poliovirus, coronavirus), RNA negativo, che deve essere trascritto da una polimerasi portata nel virione (influenza, morbillo, rabbia), RNA positivo con trascrittasi inversa (retrovirus) e DNA con trascrittasi inversa (virus dell'epatite B). Le polimerasi virali a RNA non correggono gli errori: con tassi dell'ordine di 10⁻⁴-10⁻⁵ errori per nucleotide, le popolazioni virali sono molto eterogenee (quasispecie), evolvono rapidamente e possono sviluppare resistenza ai farmaci.",
+"Nel virus influenzale il genoma è segmentato in otto parti: lo scambio di segmenti fra ceppi diversi che infettano la stessa cellula (riassortimento, antigenic shift) può generare ceppi molto nuovi per il sistema immunitario, mentre le mutazioni puntiformi causano la deriva antigenica stagionale che impone di aggiornare ogni anno il vaccino. Il ciclo dell'HIV illustra i bersagli della terapia: la glicoproteina di superficie lega CD4 e un corecettore, la trascrittasi inversa produce DNA a doppio filamento, l'integrasi lo inserisce nel genoma ospite e la proteasi virale matura le proteine del nuovo virione; la terapia antiretrovirale combina farmaci diretti contro tappe diverse proprio per ridurre la probabilità che emergano resistenze. Alcuni virus contribuiscono allo sviluppo di tumori: il papillomavirus ad alto rischio produce proteine che inattivano p53 e Rb, togliendo due freni fondamentali al ciclo cellulare."
+],
+"metodo": [
+"Ricava l'ordine dei geni di un cromosoma batterico da una tabella di tempi di ingresso in un esperimento di coniugazione interrotta.",
+"Fai una tabella della classificazione di Baltimore con un esempio per gruppo e il percorso che porta all'mRNA.",
+"Schematizza l'interruttore del fago λ con CI, Cro, CII e RecA e le condizioni che favoriscono ciascun destino.",
+"Ripercorri il ciclo dell'HIV e associa a ogni tappa la classe di farmaci che la blocca.",
+"Confronta trasduzione generalizzata e specializzata con un disegno dei frammenti trasferiti.",
+"Spiega il funzionamento naturale di CRISPR-Cas nei batteri in tre fasi: acquisizione, espressione, interferenza."
+],
+"ricorda": [
+"Hfr trasferisce geni cromosomici in ordine, ma quasi mai tutto il cromosoma.",
+"Baltimore: la domanda è sempre «come fa questo virus a ottenere mRNA?».",
+"Shift = scambio di segmenti, salto brusco; drift = deriva di mutazioni, cambiamento graduale.",
+"CI tiene il fago addormentato, Cro lo sveglia, RecA toglie di mezzo CI quando il DNA è danneggiato."
+],
+"errori": [
+"Pensare che il ricevente di una coniugazione con Hfr diventi Hfr: di solito riceve solo una parte del cromosoma.",
+"Dire che i virus a RNA negativo possono usare il genoma direttamente come mRNA: devono prima trascriverlo.",
+"Confondere trasposoni e plasmidi: i trasposoni si spostano all'interno del DNA ma non si replicano autonomamente.",
+"Credere che CRISPR sia nato in laboratorio: è un sistema di difesa naturale di batteri e archei.",
+"Attribuire la variabilità dei virus a RNA solo al riassortimento: la causa principale è l'alto tasso di errore delle polimerasi."
+],
+"domande": [
+{"domanda": "Che cosa distingue la trasduzione specializzata da quella generalizzata?", "risposta": "Nella specializzata vengono trasferiti solo i geni adiacenti al sito di integrazione del profago; nella generalizzata può essere impacchettato qualunque frammento del cromosoma."},
+{"domanda": "Perché i virus a RNA evolvono più rapidamente di quelli a DNA?", "risposta": "Perché le loro polimerasi non correggono gli errori e introducono molte mutazioni a ogni replicazione, creando variabilità su cui agisce la selezione."},
+{"domanda": "Come induce il ciclo litico un danno al DNA in un batterio lisogeno?", "risposta": "Attiva RecA, che stimola l'autoproteolisi del repressore CI; senza CI si esprimono i geni litici."},
+{"domanda": "A quale gruppo di Baltimore appartiene il virus dell'influenza?", "risposta": "Ai virus a RNA a singolo filamento di polarità negativa, con genoma segmentato."},
+{"domanda": "Che cos'è il riassortimento nel virus influenzale?", "risposta": "Lo scambio di interi segmenti genomici fra ceppi diversi che infettano la stessa cellula, che genera virus con combinazioni antigeniche nuove."}
+]
+}
+},
+"Biotecnologie e loro applicazioni": {
+"superiore": {
+"spiegazione": [
+"Le biotecnologie sono l'uso di organismi viventi o di loro parti per ottenere prodotti e servizi. Quelle tradizionali sono antichissime: fermentazioni per pane, vino, yogurt e formaggi, selezione di piante e animali da parte degli agricoltori. Le biotecnologie moderne, nate negli anni Settanta, si basano sull'ingegneria genetica, cioè sulla possibilità di isolare, modificare e trasferire geni da un organismo all'altro con la tecnologia del DNA ricombinante.",
+"Gli strumenti principali sono gli enzimi di restrizione, prodotti dai batteri, che tagliano il DNA in corrispondenza di sequenze specifiche, spesso palindrome, e la DNA ligasi, che unisce i frammenti. Per clonare un gene lo si inserisce in un vettore, di solito un plasmide, tagliato con lo stesso enzima; il plasmide ricombinante viene introdotto in un batterio, che moltiplicandosi produce molte copie del gene e, se questo viene espresso, la proteina corrispondente. Il primo farmaco ottenuto in questo modo fu l'insulina umana prodotta da batteri, disponibile dal 1982; oggi si producono così anche ormone della crescita, fattori della coagulazione ed eritropoietina.",
+"La PCR (reazione a catena della polimerasi), ideata da Kary Mullis nel 1983, permette di copiare milioni di volte un tratto di DNA in poche ore. Si ripetono cicli con tre fasi: denaturazione a circa 95 °C, appaiamento dei primer a circa 50-65 °C ed estensione a 72 °C con una DNA polimerasi resistente al calore, isolata da batteri delle sorgenti termali. Ogni ciclo raddoppia il numero di copie: dopo 30 cicli si ottengono in teoria 2³⁰, circa un miliardo di copie. L'elettroforesi su gel separa poi i frammenti in base alla lunghezza: il DNA, carico negativamente, migra verso il polo positivo e i frammenti più corti arrivano più lontano. Su questi metodi si basano molti test diagnostici, l'analisi del DNA in medicina legale e i test di parentela.",
+"Gli organismi geneticamente modificati (OGM) hanno ricevuto geni nuovi o modificati. In agricoltura esistono piante resistenti ad alcuni insetti, tolleranti a certi erbicidi o arricchite in nutrienti, come il riso che accumula il precursore della vitamina A. Gli animali transgenici servono soprattutto alla ricerca, per esempio come modelli di malattie umane. La clonazione di un mammifero adulto è stata ottenuta nel 1996 con la pecora Dolly, trasferendo il nucleo di una cellula somatica in un ovocita privato del proprio nucleo.",
+"In medicina la terapia genica cerca di curare le malattie genetiche introducendo nelle cellule una copia funzionante del gene difettoso, spesso con vettori derivati da virus resi innocui. Le tecniche di modifica mirata del genoma, come il sistema CRISPR-Cas9 sviluppato da Emmanuelle Charpentier e Jennifer Doudna (premio Nobel nel 2020), permettono di intervenire su punti precisi del DNA scelti grazie a un RNA guida. Le biotecnologie pongono anche questioni etiche e di sicurezza: impatto ambientale delle colture modificate, uso dei dati genetici personali, limiti agli interventi sugli embrioni umani. In Europa la coltivazione e la commercializzazione degli OGM sono regolate da norme rigorose e dal principio di precauzione."
+],
+"metodo": [
+"Disegna passo per passo la clonazione di un gene in un plasmide: taglio, unione, introduzione nel batterio, selezione delle colonie.",
+"Disegna un ciclo di PCR con le tre temperature e calcola il numero di copie dopo n cicli (2ⁿ).",
+"Esercitati a leggere un gel di elettroforesi ordinando i frammenti per lunghezza.",
+"Fai una tabella delle applicazioni divise per settore: medicina, agricoltura, industria, ambiente, giustizia.",
+"Ripeti le tappe della clonazione di Dolly e spiega perché il clone ha il DNA nucleare della pecora donatrice.",
+"Prepara una lista di argomenti a favore e contrari agli OGM per saperne discutere in modo equilibrato."
+],
+"ricorda": [
+"Forbici e colla: gli enzimi di restrizione tagliano, la ligasi incolla.",
+"PCR: 95-55-72, e ogni giro raddoppia.",
+"Nel gel il DNA corre verso il polo positivo e i frammenti piccoli vanno più lontano.",
+"CRISPR: un RNA fa da navigatore, la proteina Cas fa da forbice."
+],
+"errori": [
+"Pensare che nell'elettroforesi i frammenti grandi migrino di più: migrano meno perché faticano ad attraversare le maglie del gel.",
+"Dire che la polimerasi usata nella PCR è un enzima umano: proviene da batteri termofili ed è resistente al calore.",
+"Credere che un clone sia identico in tutto all'originale: ha lo stesso DNA nucleare, ma ambiente, mitocondri dell'ovocita ed epigenetica lo rendono diverso.",
+"Confondere OGM e ibridi: gli ibridi nascono da incroci, gli OGM da tecniche di ingegneria genetica.",
+"Pensare che le tecniche di editing servano solo ad aggiungere geni: spesso servono a inattivare o correggere un gene già presente."
+],
+"domande": [
+{"domanda": "Che cosa fanno gli enzimi di restrizione?", "risposta": "Tagliano il DNA in corrispondenza di sequenze di riconoscimento specifiche, producendo estremità coesive o piatte."},
+{"domanda": "Quante copie si ottengono in teoria da una molecola dopo 20 cicli di PCR?", "risposta": "2²⁰, cioè circa un milione di copie."},
+{"domanda": "Perché nella PCR serve una polimerasi termostabile?", "risposta": "Perché a ogni ciclo si raggiungono circa 95 °C, che inattiverebbero un enzima normale."},
+{"domanda": "Come è stata ottenuta la pecora Dolly?", "risposta": "Trasferendo il nucleo di una cellula somatica adulta in un ovocita senza nucleo, poi impiantato in una madre surrogata."},
+{"domanda": "Qual è stato il primo farmaco prodotto con il DNA ricombinante?", "risposta": "L'insulina umana prodotta da batteri, disponibile dal 1982."}
+]
+},
+"universita": {
+"spiegazione": [
+"Un vettore di clonaggio plasmidico contiene un'origine di replicazione, un marcatore di selezione (per esempio una resistenza a un antibiotico usata in laboratorio) e un sito di clonaggio multiplo. Nei vettori più diffusi l'inserimento interrompe un gene reporter, così le colonie ricombinanti si distinguono per colore dalle altre. I vettori di espressione aggiungono un promotore regolabile, un sito di legame del ribosoma ed eventualmente sequenze che facilitano la purificazione della proteina. Per esprimere geni eucariotici in batteri si parte dal cDNA, ottenuto dall'mRNA con la trascrittasi inversa, perché i batteri non eseguono lo splicing; per proteine che richiedono glicosilazione o ripiegamenti complessi si usano lieviti o cellule di mammifero, come le cellule CHO impiegate per molti anticorpi terapeutici.",
+"La PCR ha numerose varianti. La PCR quantitativa in tempo reale misura la fluorescenza a ogni ciclo: il ciclo soglia Ct è inversamente proporzionale al logaritmo della quantità iniziale, e con efficienza del 100% una differenza di un Ct corrisponde a un fattore 2 e di circa 3,3 Ct a un fattore 10. La RT-qPCR quantifica gli RNA, per esempio nelle diagnosi virologiche e negli studi di espressione genica con il metodo del ΔΔCt. La progettazione dei primer richiede lunghezze di 18-25 nucleotidi, contenuto di GC del 40-60% e temperature di fusione simili. Il sequenziamento Sanger si basa su dideossinucleotidi che bloccano l'allungamento; le tecnologie di nuova generazione leggono in parallelo miliardi di frammenti e hanno reso praticabile il sequenziamento di interi genomi, mentre quelle a lettura lunga facilitano l'assemblaggio di regioni ripetute.",
+"I sistemi di editing del genoma derivano da meccanismi naturali: una nucleasi guidata da un RNA complementare riconosce una sequenza bersaglio affiancata da un breve motivo di riconoscimento e produce una rottura del DNA. La cellula la ripara per unione non omologa delle estremità, che introduce piccole inserzioni o delezioni e di solito inattiva il gene, oppure per riparazione diretta da omologia, che permette correzioni precise se si fornisce uno stampo, ma con efficienza minore e soprattutto in cellule in divisione. Varianti più recenti modificano singole basi senza rotture a doppio filamento. I problemi aperti riguardano la specificità, cioè gli effetti fuori bersaglio, il mosaicismo e soprattutto la consegna nelle cellule giuste. Nel 2023 è stata approvata la prima terapia basata su questo approccio per anemia falciforme e beta-talassemia: agisce sulle cellule staminali del sangue del paziente, trattate fuori dall'organismo, per riattivare la produzione di emoglobina fetale.",
+"Gli animali geneticamente modificati per la ricerca si ottengono con l'inserimento di un transgene, con ricombinazione omologa in cellule staminali embrionali (topi knock-out, lavoro premiato con il Nobel nel 2007) o con tecniche di editing; il sistema Cre-lox permette inattivazioni limitate a un tessuto o a un momento scelto. La terapia genica usa vettori lentivirali, che si integrano e sono adatti a cellule staminali modificate fuori dall'organismo, e vettori adeno-associati, per lo più non integrativi, usati direttamente in vivo, per esempio nell'atrofia muscolare spinale e in alcune distrofie retiniche; i primi studi sulle immunodeficienze gravi mostrarono il rischio di mutagenesi inserzionale, oggi ridotto da vettori più sicuri. Le cellule CAR-T sono linfociti T del paziente modificati per riconoscere un antigene tumorale, usate in leucemie e linfomi.",
+"Gli anticorpi monoclonali, ottenuti all'inizio con la tecnica degli ibridomi messa a punto da Köhler e Milstein nel 1975 e poi resi chimerici, umanizzati o completamente umani, sono oggi fra i farmaci più usati in oncologia, reumatologia e malattie infettive. In agricoltura le piante si trasformano spesso sfruttando Agrobacterium tumefaciens, che trasferisce naturalmente un tratto di DNA nel genoma vegetale. Le biotecnologie ambientali impiegano microrganismi per depurazione e biorisanamento; quelle industriali usano enzimi e microrganismi per produrre biocarburanti, materiali biodegradabili e molecole fini, nel campo della biologia sintetica. Le questioni bioetiche più discusse riguardano gli interventi sulla linea germinale umana, vietati in molti paesi, la tutela dei dati genomici, la brevettabilità e la valutazione del rischio ambientale."
+],
+"metodo": [
+"Progetta su carta un esperimento di clonaggio completo: scelta degli enzimi, vettore, selezione, verifica con PCR e sequenziamento.",
+"Esercitati con i calcoli della qPCR: differenze di Ct, ΔΔCt e quantità relative.",
+"Confronta i due principali esiti della riparazione dopo una rottura del DNA e di' quale serve per inattivare e quale per correggere un gene.",
+"Costruisci una tabella dei vettori di terapia genica con capacità di carico, integrazione, vantaggi e rischi.",
+"Fai uno schema delle tappe della produzione di un anticorpo monoclonale terapeutico.",
+"Prepara una scheda sulle principali questioni etiche, distinguendo interventi su cellule somatiche e sulla linea germinale."
+],
+"ricorda": [
+"Un Ct in meno significa il doppio di stampo di partenza.",
+"Unione non omologa: rompe e sbaglia, quindi spegne; riparazione da omologia: copia lo stampo, quindi corregge.",
+"cDNA per esprimere geni umani nei batteri: niente introni.",
+"Somatico resta nel paziente, germinale passa ai figli: la differenza etica è tutta qui."
+],
+"errori": [
+"Pensare che un gene umano con introni possa essere espresso direttamente nei batteri: serve il cDNA.",
+"Confondere specificità ed efficienza di una tecnica di editing: sono due problemi distinti, bersagli sbagliati e percentuale di cellule modificate.",
+"Credere che i vettori adeno-associati si integrino regolarmente nel genoma: restano per lo più episomali.",
+"Dire che gli anticorpi monoclonali murini siano ancora la norma in terapia: oggi si usano forme umanizzate o umane per ridurre le reazioni immunitarie.",
+"Trattare «OGM» come categoria omogenea: le modifiche, i rischi e le valutazioni variano molto da caso a caso."
+],
+"domande": [
+{"domanda": "Perché per esprimere un gene eucariotico in un batterio si usa il cDNA?", "risposta": "Perché i batteri non eseguono lo splicing e non potrebbero rimuovere gli introni; il cDNA contiene solo la sequenza codificante."},
+{"domanda": "Che cosa indica il ciclo soglia in una qPCR?", "risposta": "Il ciclo in cui la fluorescenza supera la soglia: è inversamente proporzionale al logaritmo della quantità iniziale di stampo."},
+{"domanda": "Quali sono i due principali esiti della riparazione di una rottura a doppio filamento?", "risposta": "L'unione non omologa delle estremità, che spesso inattiva il gene, e la riparazione diretta da omologia, che permette modifiche precise con uno stampo."},
+{"domanda": "Che cosa sono le cellule CAR-T?", "risposta": "Linfociti T del paziente modificati per esprimere un recettore che riconosce un antigene tumorale, reinfusi per attaccare le cellule malate."},
+{"domanda": "Qual è la differenza etica fondamentale fra interventi su cellule somatiche e sulla linea germinale?", "risposta": "Le modifiche somatiche riguardano solo il paziente, quelle germinali sarebbero trasmesse alle generazioni successive e non potrebbero essere acconsentite da chi le eredita."}
+]
+}
+},
+"Brani scientifici": {
+"superiore": {
+"spiegazione": [
+"Nei test di ammissione i brani scientifici sono testi di 300-800 parole su argomenti di biologia, medicina, fisica, ambiente o tecnologia, seguiti da domande a risposta multipla. Non misurano quanto sai di quell'argomento, ma se sai leggere con precisione: la risposta corretta è sempre ricavabile dal brano, anche quando contraddice quello che credi di sapere. La prima regola è quindi rispondere con il testo davanti, non con la memoria.",
+"Un brano scientifico ha una struttura prevedibile: contesto o problema, metodo o esperimento, risultati, interpretazione e limiti. Riconoscerla aiuta a orientarsi. Spesso compaiono dati numerici, percentuali, confronti fra gruppi e connettivi logici che vanno letti con attenzione: «tuttavia», «al contrario», «pertanto», «sebbene», «solo se». Una singola parola può ribaltare il significato di una frase, e molte risposte sbagliate si basano proprio sull'aver trascurato un «non», un «raramente» o un «la maggior parte».",
+"Le domande sono di quattro tipi principali. Le domande di dettaglio chiedono un'informazione esplicita: si risolvono tornando al punto esatto del brano. Le domande di inferenza chiedono che cosa si può dedurre: la risposta non è scritta, ma deve seguire necessariamente da ciò che è scritto. Le domande sull'idea principale chiedono il senso complessivo o un titolo adatto: la risposta deve coprire tutto il brano, non solo un paragrafo. Le domande sul lessico chiedono il significato di un termine nel contesto, che può essere diverso da quello abituale.",
+"Le alternative sbagliate seguono schemi ricorrenti: affermazioni vere nella realtà ma non contenute nel brano; affermazioni troppo generali («tutti», «sempre», «mai») rispetto a quanto dice il testo, che di solito è prudente («può», «spesso», «in alcuni casi»); affermazioni che invertono una relazione, per esempio scambiano causa ed effetto o confondono una correlazione con un nesso causale; risposte parzialmente corrette, giuste in metà frase e sbagliate nell'altra metà.",
+"La distinzione fra correlazione e causalità è il tranello più frequente nei brani scientifici. Se il testo dice che due fenomeni sono associati, non è lecito concludere che uno causi l'altro. Allo stesso modo, un risultato ottenuto su un campione di cellule o su topi non autorizza a concludere che valga nell'uomo, e un'ipotesi degli autori non è un fatto dimostrato. Essere fedeli alla forza esatta delle affermazioni del testo è ciò che distingue la risposta corretta da quella quasi corretta."
+],
+"metodo": [
+"Leggi prima il brano in modo continuo e veloce per coglierne l'impianto, poi leggi le domande e torna al testo per ciascuna.",
+"Sottolinea connettivi e quantificatori mentre leggi: «ma», «invece», «solo», «tutti», «alcuni», «non».",
+"Per ogni risposta che scegli, individua la riga del brano che la giustifica: se non la trovi, probabilmente è sbagliata.",
+"Elimina prima le alternative chiaramente false, poi confronta le due rimaste parola per parola.",
+"Allenati a cronometro: 8-10 minuti per brano con cinque domande, per abituarti al ritmo della prova.",
+"Dopo ogni esercizio rileggi gli errori e scrivi il tipo di trappola in cui sei caduto: col tempo si ripetono."
+],
+"ricorda": [
+"La risposta sta nel brano, non nella tua testa.",
+"Le parole assolute (sempre, mai, tutti) sono spesso la spia di un'alternativa sbagliata.",
+"Associato non vuol dire causato.",
+"Se due alternative sembrano giuste, la differenza sta in una parola: trovala."
+],
+"errori": [
+"Rispondere usando le proprie conoscenze di scienze invece del testo: il brano potrebbe presentare dati diversi o più recenti.",
+"Scegliere l'alternativa che contiene più parole prese dal brano: spesso è un'esca, perché copia i termini ma cambia la relazione.",
+"Leggere solo le domande e cercare le parole chiave dentro al brano: così si perdono le negazioni e le restrizioni.",
+"Trasformare in certezza un'ipotesi del testo: «gli autori suppongono» non equivale a «è dimostrato».",
+"Lasciare in bianco per paura dove non c'è penalità, o rispondere a caso dove la penalità è prevista: valuta sempre le regole della prova."
+],
+"domande": [
+{"domanda": "Che cosa bisogna fare se un'alternativa è vera nella realtà ma non è scritta nel brano?", "risposta": "Scartarla: nelle prove di comprensione vale solo ciò che si può ricavare dal testo."},
+{"domanda": "Come si riconosce una domanda di inferenza?", "risposta": "Chiede ciò che si può dedurre o concludere dal testo, con formule come «si può dedurre che»; la risposta non è letterale ma deve seguire necessariamente dal brano."},
+{"domanda": "Perché le alternative con «sempre» o «mai» sono spesso sbagliate?", "risposta": "Perché i testi scientifici usano formulazioni prudenti; un'affermazione assoluta di solito va oltre quanto il brano afferma."},
+{"domanda": "Che differenza c'è fra correlazione e causalità?", "risposta": "La correlazione indica che due fenomeni variano insieme; la causalità afferma che uno produce l'altro e richiede prove sperimentali o argomenti ulteriori."},
+{"domanda": "Qual è il criterio per scegliere la risposta a una domanda sull'idea principale?", "risposta": "Deve coprire l'intero brano senza aggiungere nulla: le alternative troppo circoscritte o troppo ampie vanno scartate."}
+]
+},
+"universita": {
+"spiegazione": [
+"A livello universitario la lettura di un testo scientifico diventa valutazione critica: non basta capire che cosa dice, occorre giudicare quanto le conclusioni siano sostenute dai dati. Il formato tipico di un articolo originale è IMRAD: introduzione (che cosa si sapeva e qual è la domanda), metodi (come si è risposto), risultati (che cosa si è osservato), discussione (che cosa significa e quali sono i limiti). Leggere in ordine abstract, figure e metodi, e solo dopo la discussione, aiuta a formarsi un'opinione prima di assorbire quella degli autori.",
+"La forza delle conclusioni dipende dal disegno dello studio. Le serie di casi e gli studi trasversali descrivono, ma non stabiliscono una direzione temporale; gli studi caso-controllo sono efficienti per malattie rare ma esposti a errori di selezione e di memoria; gli studi di coorte seguono i soggetti nel tempo e misurano l'incidenza; gli studi randomizzati controllati, distribuendo a caso l'esposizione, bilanciano anche i fattori di confondimento non noti e permettono inferenze causali. Revisioni sistematiche e meta-analisi sintetizzano gli studi disponibili, con la qualità limitata da quella degli studi inclusi e dal rischio di errore di pubblicazione.",
+"Le misure di effetto vanno interpretate con attenzione. Il rischio relativo e l'odds ratio esprimono un rapporto: un raddoppio del rischio è molto diverso a seconda del rischio di partenza. La riduzione assoluta del rischio e il numero di pazienti da trattare per evitare un evento (NNT, pari all'inverso della riduzione assoluta) dicono quanto l'effetto conti nella pratica. Un intervallo di confidenza al 95% che include il valore nullo (1 per i rapporti, 0 per le differenze) indica un risultato non statisticamente significativo; un valore p piccolo indica che dati come quelli osservati sarebbero improbabili se l'ipotesi nulla fosse vera, ma non misura la grandezza dell'effetto né la probabilità che l'ipotesi sia vera.",
+"Riconoscere le fonti di errore sistematico è parte della lettura critica: selezione dei partecipanti, misurazione non cieca degli esiti, perdita al follow-up, confondimento (una variabile associata sia all'esposizione sia all'esito), esiti surrogati al posto di esiti clinici rilevanti, analisi di molti sottogruppi che moltiplicano i confronti e quindi i falsi positivi. Anche la potenza statistica conta: uno studio piccolo che non trova differenze non dimostra che non ce ne siano, perché assenza di prova non è prova di assenza.",
+"Nelle prove di ammissione universitarie e nei concorsi i brani scientifici riprendono spesso questi concetti in forma semplificata: descrivono uno studio, ne riportano i numeri e chiedono quale conclusione sia legittima. La strategia efficace consiste nel separare tre livelli: che cosa è stato osservato, che cosa gli autori concludono e che cosa si può legittimamente concludere. La risposta corretta è quasi sempre la più cauta fra quelle compatibili con il testo, perché le alternative errate tendono a estendere i risultati a popolazioni, contesti o meccanismi di cui il brano non parla."
+],
+"metodo": [
+"Esercitati a riassumere un articolo in quattro frasi, una per sezione IMRAD, senza guardare la discussione degli autori.",
+"Per ogni studio che leggi scrivi disegno, popolazione, esposizione, esito e durata: è la carta d'identità del lavoro.",
+"Converti i risultati da rischio relativo a riduzione assoluta e a NNT, usando il rischio di base riportato.",
+"Elencati i possibili fattori di confondimento prima di leggere i limiti dichiarati, poi confronta.",
+"Fai esercizi cronometrati con brani che riportano dati numerici e verifica ogni volta il salto logico richiesto dalle alternative.",
+"Tieni un quaderno delle trappole ricorrenti: estensione indebita, inversione causale, confusione fra relativo e assoluto."
+],
+"ricorda": [
+"Randomizzare serve a bilanciare anche ciò che non sai di dover bilanciare.",
+"Intervallo di confidenza che tocca il valore nullo: risultato non significativo.",
+"Il rischio relativo impressiona, il rischio assoluto informa.",
+"Assenza di prova non è prova di assenza."
+],
+"errori": [
+"Interpretare il valore p come probabilità che l'ipotesi sia vera: è la probabilità dei dati, o di dati più estremi, assumendo vera l'ipotesi nulla.",
+"Dedurre un nesso causale da uno studio osservazionale, anche se l'associazione è forte.",
+"Confondere significatività statistica e rilevanza clinica: un effetto minimo può risultare significativo in campioni molto grandi.",
+"Generalizzare i risultati a popolazioni non rappresentate nello studio, per esempio da adulti a bambini.",
+"Dare lo stesso peso a esiti surrogati e a esiti clinici: un miglioramento di un parametro di laboratorio non garantisce un beneficio reale."
+],
+"domande": [
+{"domanda": "Perché la randomizzazione permette inferenze causali più solide?", "risposta": "Perché distribuisce a caso i partecipanti, bilanciando in media sia i fattori di confondimento noti sia quelli ignoti fra i gruppi."},
+{"domanda": "Che cosa indica un intervallo di confidenza al 95% che comprende il valore 1 per un rischio relativo?", "risposta": "Che l'effetto non è statisticamente significativo: i dati sono compatibili anche con l'assenza di differenza."},
+{"domanda": "Come si calcola il numero di pazienti da trattare per evitare un evento?", "risposta": "Come inverso della riduzione assoluta del rischio: se questa è del 5%, NNT = 1/0,05 = 20."},
+{"domanda": "Che cos'è un fattore di confondimento?", "risposta": "Una variabile associata sia all'esposizione sia all'esito, che può generare un'associazione apparente non causale."},
+{"domanda": "Perché uno studio piccolo con risultato non significativo non dimostra l'assenza di effetto?", "risposta": "Perché può avere potenza statistica insufficiente a rilevare un effetto reale: assenza di prova non è prova di assenza."}
+]
+}
+}
+}

@@ -1,0 +1,3419 @@
+[
+ {
+  "id": "CMP-CHI-001",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un atomo di sodio-23 (²³Na, numero atomico Z = 11) contiene ___ neutroni.",
+  "risposta": "12",
+  "accettate": [
+   "12",
+   "dodici"
+  ],
+  "perche": "Il numero di massa A è la somma di protoni e neutroni, mentre Z è il numero di protoni. I neutroni si ottengono quindi come A − Z = 23 − 11 = 12. L'errore tipico è rispondere 11 (confondendo neutroni e protoni) oppure 23 (prendendo il numero di massa).",
+  "semplice": "Il numero in alto (23) conta tutte le particelle del nucleo. Il numero atomico (11) conta solo i protoni. Togli i protoni dal totale e restano i neutroni: 23 − 11 = 12.",
+  "passaggi": [
+   "1. A = protoni + neutroni = 23",
+   "2. Z = protoni = 11",
+   "3. Neutroni = A − Z = 23 − 11 = 12"
+  ],
+  "concetto": "numero di massa e neutroni"
+ },
+ {
+  "id": "CMP-CHI-002",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un singolo orbitale può contenere al massimo ___ elettroni.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "due"
+  ],
+  "perche": "Per il principio di esclusione di Pauli, due elettroni dello stesso atomo non possono avere tutti e quattro i numeri quantici uguali. In un orbitale n, l e mₗ sono fissati, quindi resta solo lo spin, che ha due valori (+½ e −½). Perciò al massimo 2 elettroni, con spin opposti. Errore tipico: confondere orbitale e sottolivello (il sottolivello p, ad esempio, ne contiene 6).",
+  "semplice": "Immagina l'orbitale come una stanza con due soli letti. Ogni elettrone ha uno «spin» su o giù, e due elettroni nella stessa stanza devono avere spin opposto. Quindi in ogni orbitale ci sono al massimo 2 elettroni.",
+  "passaggi": [
+   "1. In un orbitale n, l, mₗ sono fissati",
+   "2. mₛ può valere solo +½ o −½",
+   "3. Massimo 2 elettroni"
+  ],
+  "concetto": "principio di esclusione di Pauli"
+ },
+ {
+  "id": "CMP-CHI-003",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il sottolivello d può ospitare al massimo ___ elettroni.",
+  "risposta": "10",
+  "accettate": [
+   "10",
+   "dieci"
+  ],
+  "perche": "Il sottolivello d ha numero quantico l = 2, quindi mₗ assume 2l + 1 = 5 valori, cioè 5 orbitali. Ogni orbitale contiene al massimo 2 elettroni: 5 × 2 = 10. Errore tipico: rispondere 5 (contando gli orbitali e non gli elettroni) o 14 (che è il valore del sottolivello f).",
+  "semplice": "Il sottolivello d è formato da 5 orbitali. In ognuno entrano 2 elettroni. Quindi in tutto 10: per questo i metalli di transizione di ogni periodo sono 10.",
+  "passaggi": [
+   "1. Per d: l = 2",
+   "2. Orbitali = 2l + 1 = 5",
+   "3. Elettroni = 5 × 2 = 10"
+  ],
+  "concetto": "capienza dei sottolivelli"
+ },
+ {
+  "id": "CMP-CHI-004",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'ossigeno (Z = 8) ha ___ elettroni di valenza.",
+  "risposta": "6",
+  "accettate": [
+   "6",
+   "sei"
+  ],
+  "perche": "La configurazione dell'ossigeno è 1s² 2s² 2p⁴. Gli elettroni di valenza sono quelli del livello più esterno (n = 2): 2 + 4 = 6. Coerentemente l'ossigeno è nel gruppo 16 e tende ad acquistare 2 elettroni formando O²⁻. Errore tipico: rispondere 4 contando solo gli elettroni 2p, o 8 contando tutti gli elettroni.",
+  "semplice": "L'ossigeno ha 8 elettroni: 2 stanno nel primo livello e 6 nel secondo, quello esterno. Sono questi 6 a formare i legami. Gliene mancano 2 per arrivare a 8, per questo forma due legami, come in H₂O.",
+  "passaggi": [
+   "1. Configurazione: 1s² 2s² 2p⁴",
+   "2. Livello esterno n = 2: 2s² 2p⁴",
+   "3. Elettroni di valenza = 2 + 4 = 6"
+  ],
+  "concetto": "elettroni di valenza"
+ },
+ {
+  "id": "CMP-CHI-005",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il numero quantico che determina la forma dell'orbitale (s, p, d, f) è il numero quantico ___.",
+  "risposta": "secondario",
+  "accettate": [
+   "secondario",
+   "angolare",
+   "azimutale",
+   "l",
+   "secondario (l)",
+   "angolare (l)"
+  ],
+  "perche": "Il numero quantico secondario (o angolare, azimutale) l determina la forma dell'orbitale: l = 0 è s (sferico), l = 1 è p (a due lobi), l = 2 è d, l = 3 è f. Il principale n indica il livello di energia e la dimensione, il magnetico mₗ l'orientazione nello spazio, lo spin il verso di rotazione dell'elettrone. Errore tipico: rispondere «magnetico», che riguarda l'orientazione e non la forma.",
+  "semplice": "Ogni numero quantico risponde a una domanda: n dice «quanto lontano», l dice «che forma», mₗ dice «in che direzione», mₛ dice «spin su o giù». La forma (sfera, lobi…) è data da l, il numero quantico secondario.",
+  "passaggi": [
+   "La domanda chiede quale numero quantico decide la forma dell'orbitale (s, p, d, f).",
+   "Ricorda i ruoli: n dà livello ed energia, l la forma, mₗ l'orientazione, mₛ lo spin.",
+   "A l = 0 corrisponde s (sfera), a l = 1 p (due lobi), a l = 2 d, a l = 3 f.",
+   "Quindi la forma dipende dal numero quantico secondario (angolare)."
+  ],
+  "concetto": "numeri quantici"
+ },
+ {
+  "id": "CMP-CHI-006",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Atomi dello stesso elemento che hanno un diverso numero di neutroni si chiamano ___.",
+  "risposta": "isotopi",
+  "accettate": [
+   "isotopi",
+   "isotopo"
+  ],
+  "perche": "Gli isotopi hanno lo stesso numero atomico Z (stessi protoni, quindi stesso elemento) ma diverso numero di massa A, perché differiscono nel numero di neutroni. Esempi: ¹²C e ¹⁴C, oppure ¹H, ²H (deuterio) e ³H (trizio). Hanno le stesse proprietà chimiche ma massa diversa. Errore tipico: confonderli con gli isobari (stesso A, diverso Z) o con gli allotropi (forme diverse dello stesso elemento, come diamante e grafite).",
+  "semplice": "Il carbonio-12 e il carbonio-14 sono entrambi carbonio, perché hanno 6 protoni. Il secondo però ha 2 neutroni in più, quindi pesa di più. Sono «fratelli» dello stesso elemento: isotopi.",
+  "passaggi": [
+   "Stesso elemento significa stesso numero atomico Z, cioè stessi protoni.",
+   "Cambia solo il numero di neutroni, quindi cambia il numero di massa A.",
+   "Non sono isobari (stesso A, Z diverso) né allotropi (forme diverse dello stesso elemento).",
+   "Atomi con stesso Z e A diverso si chiamano isotopi, come ¹²C e ¹⁴C."
+  ],
+  "concetto": "isotopi"
+ },
+ {
+  "id": "CMP-CHI-007",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'energia necessaria per allontanare un elettrone da un atomo isolato allo stato gassoso si chiama energia di ___.",
+  "risposta": "ionizzazione",
+  "accettate": [
+   "ionizzazione",
+   "prima ionizzazione"
+  ],
+  "perche": "L'energia di ionizzazione è l'energia richiesta per la reazione X(g) → X⁺(g) + e⁻. Aumenta lungo un periodo da sinistra a destra e diminuisce scendendo lungo un gruppo, perché l'elettrone esterno è più lontano dal nucleo. Errore tipico: confonderla con l'affinità elettronica, che è l'energia scambiata quando un atomo acquista un elettrone.",
+  "semplice": "Per strappare un elettrone a un atomo bisogna spendere energia: questa è l'energia di ionizzazione. Per i metalli come il sodio è bassa (lo cedono facilmente), per i gas nobili è altissima.",
+  "passaggi": [
+   "La domanda descrive il processo X(g) → X⁺(g) + e⁻: un elettrone viene tolto.",
+   "L'energia per strappare un elettrone è l'energia di ionizzazione.",
+   "Non è l'affinità elettronica, che riguarda l'acquisto di un elettrone.",
+   "La risposta è ionizzazione."
+  ],
+  "concetto": "energia di ionizzazione"
+ },
+ {
+  "id": "CMP-CHI-008",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'elemento con l'elettronegatività più alta di tutta la tavola periodica è il ___.",
+  "risposta": "fluoro",
+  "accettate": [
+   "fluoro",
+   "F"
+  ],
+  "perche": "L'elettronegatività cresce lungo un periodo verso destra e salendo lungo un gruppo, quindi il valore massimo si trova in alto a destra (escludendo i gas nobili). Il fluoro ha elettronegatività 4,0 nella scala di Pauling, seguito da ossigeno (3,5) e cloro/azoto (circa 3,0). Errore tipico: rispondere ossigeno, che è secondo.",
+  "semplice": "L'elettronegatività è la «forza» con cui un atomo tira a sé gli elettroni di un legame. Il campione assoluto è il fluoro, piccolo e con molti protoni rispetto alla sua dimensione.",
+  "passaggi": [
+   "Ricorda la tendenza: l'elettronegatività cresce verso destra in un periodo e salendo in un gruppo.",
+   "Il massimo si trova quindi in alto a destra, esclusi i gas nobili.",
+   "Lì c'è il fluoro, con 4,0 nella scala di Pauling, davanti all'ossigeno (3,5).",
+   "L'elemento più elettronegativo è il fluoro."
+  ],
+  "concetto": "elettronegatività"
+ },
+ {
+  "id": "CMP-CHI-009",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Scendendo lungo un gruppo della tavola periodica, il raggio atomico ___.",
+  "risposta": "aumenta",
+  "accettate": [
+   "aumenta",
+   "cresce",
+   "aumenta di dimensioni"
+  ],
+  "perche": "Scendendo lungo un gruppo si aggiunge a ogni periodo un nuovo livello elettronico (n aumenta), quindi gli elettroni esterni sono più lontani dal nucleo e l'atomo è più grande. Lungo un periodo, invece, il raggio diminuisce da sinistra a destra perché aumenta la carica nucleare a parità di livello. Errore tipico: invertire le due tendenze.",
+  "semplice": "Il litio ha 2 livelli di elettroni, il sodio 3, il potassio 4: ogni volta che scendi aggiungi uno «strato», come una cipolla. Quindi l'atomo diventa più grande.",
+  "passaggi": [
+   "Scendendo in un gruppo il numero quantico principale n aumenta di uno a ogni periodo.",
+   "Si aggiunge un nuovo livello elettronico, più lontano dal nucleo.",
+   "Gli elettroni esterni stanno quindi più lontani: l'atomo è più grande.",
+   "Il raggio atomico aumenta (lungo un periodo invece diminuisce)."
+  ],
+  "concetto": "andamento del raggio atomico"
+ },
+ {
+  "id": "CMP-CHI-010",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il legame che tiene uniti sodio e cloro nel cloruro di sodio solido (NaCl) è un legame ___.",
+  "risposta": "ionico",
+  "accettate": [
+   "ionico",
+   "ionico (elettrostatico)",
+   "elettrostatico"
+  ],
+  "perche": "Na (elettronegatività 0,9) e Cl (3,0) hanno una differenza di elettronegatività di circa 2,1, superiore a circa 1,9, quindi il sodio cede un elettrone al cloro. Si formano gli ioni Na⁺ e Cl⁻, tenuti insieme dall'attrazione elettrostatica in un reticolo cristallino. Errore tipico: rispondere «covalente polare», che si ha per differenze di elettronegatività intermedie (come in HCl).",
+  "semplice": "Il sodio «regala» un elettrone al cloro. Il sodio diventa positivo, il cloro negativo, e le cariche opposte si attraggono come calamite. Questo è il legame ionico del sale da cucina.",
+  "passaggi": [
+   "Confronta le elettronegatività: Na 0,9 e Cl 3,0.",
+   "La differenza è circa 2,1, sopra la soglia di circa 1,9.",
+   "Il sodio cede un elettrone al cloro: si formano Na⁺ e Cl⁻.",
+   "Gli ioni si attraggono elettrostaticamente in un reticolo: il legame è ionico."
+  ],
+  "concetto": "legame ionico"
+ },
+ {
+  "id": "CMP-CHI-011",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La molecola di metano (CH₄) ha geometria ___.",
+  "risposta": "tetraedrica",
+  "accettate": [
+   "tetraedrica",
+   "tetraedro",
+   "a tetraedro"
+  ],
+  "perche": "Secondo la teoria VSEPR, il carbonio del metano ha 4 coppie di elettroni di legame e nessuna coppia libera; per stare il più lontano possibile, si dispongono ai vertici di un tetraedro (ibridazione sp³). Errore tipico: rispondere «planare quadrata», che si disegna sulla carta ma non corrisponde alla geometria reale.",
+  "semplice": "Prova a legare 4 palloncini insieme per il nodo: si sistemano da soli puntando in 4 direzioni il più lontane possibile. Ottieni una piramide a base triangolare, cioè un tetraedro. Così sono disposti i 4 idrogeni del metano.",
+  "passaggi": [
+   "Conta i domini elettronici attorno al carbonio: 4 legami C–H, nessuna coppia libera.",
+   "Secondo la teoria VSEPR 4 domini si allontanano il più possibile tra loro.",
+   "La disposizione che li separa al massimo è il tetraedro (ibridazione sp³).",
+   "Il metano ha geometria tetraedrica."
+  ],
+  "concetto": "geometria VSEPR"
+ },
+ {
+  "id": "CMP-CHI-012",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella molecola di metano l'angolo di legame H–C–H vale circa ___ gradi.",
+  "risposta": "109,5",
+  "accettate": [
+   "109,5",
+   "109.5",
+   "109,5°",
+   "109.5°",
+   "109°28'",
+   "109"
+  ],
+  "perche": "Il carbonio del metano è ibridato sp³ e i 4 legami puntano ai vertici di un tetraedro regolare, il cui angolo è circa 109,5° (109°28′). Errore tipico: rispondere 90° (pensando a una struttura quadrata) o 104,5°, che è l'angolo dell'acqua, ridotto dalle due coppie di elettroni non condivise dell'ossigeno.",
+  "semplice": "Nel tetraedro i legami sono un po' più aperti di un angolo retto: circa 109,5°. Nell'acqua l'angolo si stringe a 104,5° perché le coppie libere dell'ossigeno «spingono» i legami.",
+  "passaggi": [
+   "Il carbonio del metano è ibridato sp³ con 4 legami e nessuna coppia libera.",
+   "I legami puntano ai vertici di un tetraedro regolare.",
+   "L'angolo del tetraedro regolare è 109,5° (109°28′).",
+   "Non 90° (quadrato) né 104,5° (acqua, con coppie libere): la risposta è 109,5."
+  ],
+  "concetto": "angoli di legame"
+ },
+ {
+  "id": "CMP-CHI-013",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nell'etino (acetilene, HC≡CH) gli atomi di carbonio hanno ibridazione ___.",
+  "risposta": "sp",
+  "accettate": [
+   "sp",
+   "ibridazione sp"
+  ],
+  "perche": "Ogni carbonio dell'etino forma un triplo legame con l'altro carbonio e un legame semplice con l'idrogeno: ha quindi 2 domini elettronici, che richiedono l'ibridazione sp con geometria lineare (180°). I due orbitali p non ibridati formano i due legami π. Errore tipico: rispondere sp² (tipico del doppio legame, come nell'etene) o sp³ (legami semplici, come nell'etano).",
+  "semplice": "Regola pratica: legami solo semplici → sp³; un doppio legame → sp²; un triplo legame → sp. L'etino ha un triplo legame, quindi sp, e la molecola è dritta come un bastoncino.",
+  "passaggi": [
+   "Ogni carbonio dell'etino forma un triplo legame con l'altro C e un legame con H.",
+   "Conta i domini: il triplo legame vale un dominio, il legame C–H un altro, quindi 2 domini.",
+   "Due domini richiedono due orbitali ibridi, disposti a 180° (geometria lineare).",
+   "I due p rimasti formano i legami π: l'ibridazione è sp."
+  ],
+  "concetto": "ibridazione del carbonio"
+ },
+ {
+  "id": "CMP-CHI-014",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il legame intermolecolare responsabile dell'insolitamente alto punto di ebollizione dell'acqua è il legame a ___.",
+  "risposta": "idrogeno",
+  "accettate": [
+   "idrogeno",
+   "ponte di idrogeno",
+   "ponte idrogeno",
+   "legame idrogeno"
+  ],
+  "perche": "Nell'acqua l'idrogeno è legato all'ossigeno, molto elettronegativo, quindi porta una forte carica parziale positiva e viene attratto dalle coppie libere dell'ossigeno di una molecola vicina. Questi legami a idrogeno sono le interazioni intermolecolari più forti tra molecole neutre e spiegano perché H₂O bolle a 100 °C mentre H₂S, più pesante, è un gas. Errore tipico: rispondere «covalente», che è il legame dentro la molecola e non tra molecole.",
+  "semplice": "Le molecole d'acqua si «tengono per mano» con i legami a idrogeno. Per farle bollire bisogna staccarle tutte, e serve molto calore. Per questo l'acqua bolle a 100 °C pur essendo una molecola piccola.",
+  "passaggi": [
+   "La domanda riguarda forze tra molecole diverse (intermolecolari), non il legame dentro la molecola.",
+   "Nell'acqua H è legato a O, molto elettronegativo, e porta una forte carica parziale positiva.",
+   "Questo H è attratto dalle coppie libere dell'ossigeno di una molecola vicina.",
+   "È il legame a idrogeno, che spiega perché H₂O bolle a 100 °C mentre H₂S è un gas."
+  ],
+  "concetto": "legame a idrogeno"
+ },
+ {
+  "id": "CMP-CHI-015",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella molecola di azoto (N₂, N≡N) sono presenti ___ legami π.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "due"
+  ],
+  "perche": "Un triplo legame è formato da un legame σ, per sovrapposizione frontale degli orbitali, e da due legami π, per sovrapposizione laterale degli orbitali p. Quindi N₂ ha 1 legame σ e 2 legami π. Errore tipico: rispondere 3, contando tutti i legami come π.",
+  "semplice": "In ogni legame multiplo il primo legame è sempre σ, gli altri sono π. Doppio legame = 1 σ + 1 π; triplo legame = 1 σ + 2 π. L'azoto ha un triplo legame, quindi 2 legami π.",
+  "passaggi": [
+   "1. N≡N è un triplo legame",
+   "2. Triplo legame = 1 σ + 2 π",
+   "3. Legami π = 3 − 1 = 2"
+  ],
+  "concetto": "legami sigma e pi greco"
+ },
+ {
+  "id": "CMP-CHI-016",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il principio secondo cui in un atomo due elettroni non possono avere tutti e quattro i numeri quantici uguali è il principio di esclusione di ___.",
+  "risposta": "Pauli",
+  "accettate": [
+   "Pauli",
+   "pauli"
+  ],
+  "perche": "Il principio di esclusione di Pauli vieta che due elettroni dello stesso atomo abbiano la stessa quaterna di numeri quantici (n, l, mₗ, mₛ); ne segue che un orbitale contiene al massimo due elettroni con spin opposto. Errore tipico: confonderlo con la regola di Hund (gli elettroni occupano orbitali degeneri prima singolarmente con spin parallelo) o con il principio dell'Aufbau (riempimento in ordine di energia crescente).",
+  "semplice": "Ogni elettrone ha una specie di «codice fiscale» fatto da quattro numeri. Pauli ha scoperto che due elettroni nello stesso atomo non possono avere lo stesso codice. Per questo in un orbitale ne entrano solo due, con spin opposto.",
+  "passaggi": [
+   "La regola vieta a due elettroni dello stesso atomo di avere gli stessi quattro numeri quantici.",
+   "Non è la regola di Hund (riempimento degli orbitali degeneri) né l'Aufbau (ordine di energia).",
+   "Conseguenza: al massimo due elettroni per orbitale, con spin opposto.",
+   "È il principio di esclusione di Pauli."
+  ],
+  "concetto": "principio di Pauli"
+ },
+ {
+  "id": "CMP-CHI-017",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Gli elementi del gruppo 18 (He, Ne, Ar, Kr, Xe, Rn) sono detti gas ___.",
+  "risposta": "nobili",
+  "accettate": [
+   "nobili",
+   "nobile",
+   "inerti",
+   "rari"
+  ],
+  "perche": "I gas nobili hanno il livello di valenza completo (ottetto, o duetto per l'elio), perciò sono molto stabili, poco reattivi e monoatomici. Hanno le energie di ionizzazione più alte del loro periodo. Errore tipico: confonderli con gli alogeni (gruppo 17), che invece sono molto reattivi.",
+  "semplice": "I gas nobili sono gli «aristocratici» della tavola periodica: hanno già tutti gli elettroni che vogliono e non si mescolano con gli altri. Per questo l'elio dei palloncini o il neon delle insegne non reagiscono quasi con niente.",
+  "passaggi": [
+   "Il gruppo 18 è l'ultima colonna della tavola periodica.",
+   "Questi elementi hanno il livello di valenza completo (ottetto, duetto per He).",
+   "Sono quindi stabili, poco reattivi e monoatomici.",
+   "Si chiamano gas nobili (da non confondere con gli alogeni del gruppo 17)."
+  ],
+  "concetto": "gas nobili"
+ },
+ {
+  "id": "CMP-CHI-018",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La molecola di CO₂ contiene legami polari, ma essendo lineare nel complesso è ___.",
+  "risposta": "apolare",
+  "accettate": [
+   "apolare",
+   "non polare"
+  ],
+  "perche": "In O=C=O ciascun legame C=O è polare perché l'ossigeno è più elettronegativo del carbonio. Però la molecola è lineare (180°), quindi i due momenti dipolari sono uguali e opposti e si annullano: il momento dipolare totale è zero. Errore tipico: concludere che basta un legame polare per avere una molecola polare (come accade invece per H₂O, che è angolata).",
+  "semplice": "Immagina due persone che tirano una corda con la stessa forza in direzioni opposte: la corda non si muove. Nella CO₂ i due ossigeni «tirano» gli elettroni in direzioni opposte e l'effetto si annulla. Per questo la molecola è apolare.",
+  "passaggi": [
+   "Ogni legame C=O è polare perché O è più elettronegativo di C.",
+   "La molecola però è lineare: O=C=O con angolo di 180°.",
+   "I due momenti dipolari sono uguali e opposti e si annullano.",
+   "Il momento dipolare totale è zero: la molecola è apolare."
+  ],
+  "concetto": "polarità e geometria molecolare"
+ },
+ {
+  "id": "CMP-CHI-019",
+  "materia": "Chimica",
+  "argomento": "Atomo, tavola periodica e legami",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il numero atomico Z di un elemento indica il numero di ___ presenti nel nucleo.",
+  "risposta": "protoni",
+  "accettate": [
+   "protoni",
+   "protone"
+  ],
+  "perche": "Il numero atomico Z è il numero di protoni nel nucleo e identifica l'elemento: tutti gli atomi con Z = 6 sono carbonio. In un atomo neutro coincide anche con il numero di elettroni, ma non negli ioni. Errore tipico: rispondere «elettroni» (vero solo per l'atomo neutro) o «nucleoni» (quello è il numero di massa A).",
+  "semplice": "Il numero atomico è la «carta d'identità» dell'elemento: conta i protoni. Se un atomo ha 8 protoni è ossigeno, sempre. Gli elettroni invece possono cambiare quando l'atomo diventa ione.",
+  "passaggi": [
+   "Ricorda la definizione: Z è il numero atomico e identifica l'elemento.",
+   "Z conta le particelle positive del nucleo, cioè i protoni.",
+   "Coincide con gli elettroni solo nell'atomo neutro; i nucleoni totali sono invece A.",
+   "Z indica il numero di protoni."
+  ],
+  "concetto": "numero atomico"
+ },
+ {
+  "id": "CMP-CHI-020",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nell'acido solforico (H₂SO₄) il numero di ossidazione dello zolfo è ___.",
+  "risposta": "+6",
+  "accettate": [
+   "+6",
+   "6",
+   "+ 6",
+   "VI"
+  ],
+  "perche": "La somma dei numeri di ossidazione in una molecola neutra è zero. L'idrogeno vale +1 e l'ossigeno −2, quindi 2(+1) + x + 4(−2) = 0, da cui x = +6. Errore tipico: rispondere +4, che è il n.o. dello zolfo nell'acido solforoso H₂SO₃.",
+  "semplice": "Conta le cariche: 2 idrogeni danno +2, 4 ossigeni danno −8. Per arrivare a zero lo zolfo deve valere +6.",
+  "passaggi": [
+   "1. H = +1, O = −2",
+   "2. 2(+1) + x + 4(−2) = 0",
+   "3. 2 + x − 8 = 0 → x = +6"
+  ],
+  "concetto": "numero di ossidazione"
+ },
+ {
+  "id": "CMP-CHI-021",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel permanganato di potassio (KMnO₄) il manganese ha numero di ossidazione ___.",
+  "risposta": "+7",
+  "accettate": [
+   "+7",
+   "7",
+   "+ 7",
+   "VII"
+  ],
+  "perche": "K vale +1 e O vale −2. Imponendo somma zero: +1 + x + 4(−2) = 0, quindi x = +7, il n.o. massimo del manganese. Per questo il permanganato è un forte ossidante. Errore tipico: dimenticare il potassio e ottenere +8.",
+  "semplice": "Il potassio porta +1, i 4 ossigeni portano −8. Il manganese deve bilanciare: +7. È tanto «carico» che ama prendere elettroni, cioè è un ossidante forte.",
+  "passaggi": [
+   "1. K = +1, O = −2",
+   "2. +1 + x + 4(−2) = 0",
+   "3. x = 8 − 1 = +7"
+  ],
+  "concetto": "numero di ossidazione"
+ },
+ {
+  "id": "CMP-CHI-022",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel dicromato di potassio (K₂Cr₂O₇) il numero di ossidazione di ciascun atomo di cromo è ___.",
+  "risposta": "+6",
+  "accettate": [
+   "+6",
+   "6",
+   "+ 6",
+   "VI"
+  ],
+  "perche": "2(+1) + 2x + 7(−2) = 0 → 2 + 2x − 14 = 0 → 2x = 12 → x = +6. Errore tipico: dimenticare che gli atomi di cromo sono due e rispondere +12, oppure ignorare il potassio.",
+  "semplice": "Il potassio porta +2 in tutto, i 7 ossigeni −14. Ai due cromi resta +12, cioè +6 ciascuno.",
+  "passaggi": [
+   "1. K = +1, O = −2",
+   "2. 2(+1) + 2x + 7(−2) = 0",
+   "3. 2x = 14 − 2 = 12",
+   "4. x = +6"
+  ],
+  "concetto": "numero di ossidazione"
+ },
+ {
+  "id": "CMP-CHI-023",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nell'acido nitroso (HNO₂) l'azoto ha numero di ossidazione ___.",
+  "risposta": "+3",
+  "accettate": [
+   "+3",
+   "3",
+   "+ 3",
+   "III"
+  ],
+  "perche": "+1 + x + 2(−2) = 0 → x = +3. Errore tipico: confonderlo con l'acido nitrico HNO₃, in cui l'azoto vale +5. Ricorda: il suffisso -oso indica il n.o. più basso, -ico quello più alto.",
+  "semplice": "Un idrogeno (+1) e due ossigeni (−4): l'azoto deve valere +3 per arrivare a zero. Nell'acido nitrico c'è un ossigeno in più e l'azoto sale a +5.",
+  "passaggi": [
+   "1. H = +1, O = −2",
+   "2. +1 + x − 4 = 0",
+   "3. x = +3"
+  ],
+  "concetto": "numero di ossidazione"
+ },
+ {
+  "id": "CMP-CHI-024",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Negli idruri metallici, come NaH, l'idrogeno ha numero di ossidazione ___.",
+  "risposta": "-1",
+  "accettate": [
+   "-1",
+   "−1",
+   "- 1",
+   "meno 1",
+   "meno uno"
+  ],
+  "perche": "Di solito l'idrogeno vale +1, ma quando è legato a un metallo meno elettronegativo di lui (come Na, Li, Ca) prende l'elettrone e diventa ione idruro H⁻, con n.o. −1. In NaH: Na +1, H −1. Errore tipico: applicare automaticamente la regola «H = +1».",
+  "semplice": "Di solito l'idrogeno è quello che cede l'elettrone. Ma il sodio è ancora più «generoso» e glielo regala, così l'idrogeno diventa negativo: −1.",
+  "passaggi": [
+   "1. NaH è neutro: n.o.(Na) + n.o.(H) = 0",
+   "2. Na (metallo alcalino) = +1",
+   "3. H = −1"
+  ],
+  "concetto": "numero di ossidazione dell'idrogeno"
+ },
+ {
+  "id": "CMP-CHI-025",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nell'acido perclorico (HClO₄) il cloro ha numero di ossidazione ___.",
+  "risposta": "+7",
+  "accettate": [
+   "+7",
+   "7",
+   "+ 7",
+   "VII"
+  ],
+  "perche": "+1 + x + 4(−2) = 0 → x = +7. Il prefisso per- con il suffisso -ico indica il n.o. più alto della serie degli ossiacidi del cloro: HClO (+1, ipocloroso), HClO₂ (+3, cloroso), HClO₃ (+5, clorico), HClO₄ (+7, perclorico). Errore tipico: rispondere +5, che è il valore dell'acido clorico.",
+  "semplice": "Più ossigeni ha l'acido, più alto è il numero di ossidazione del cloro. Con 4 ossigeni siamo al massimo: +7.",
+  "passaggi": [
+   "1. H = +1, O = −2",
+   "2. +1 + x − 8 = 0",
+   "3. x = +7"
+  ],
+  "concetto": "nomenclatura degli ossiacidi"
+ },
+ {
+  "id": "CMP-CHI-026",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'acido HClO, in nomenclatura tradizionale, si chiama acido ___.",
+  "risposta": "ipocloroso",
+  "accettate": [
+   "ipocloroso",
+   "ipocloroso (HClO)"
+  ],
+  "perche": "Nell'HClO il cloro ha n.o. +1, il più basso tra gli ossiacidi del cloro. La nomenclatura tradizionale usa il prefisso ipo- con il suffisso -oso per il n.o. più basso. È l'acido presente nella candeggina (come ipoclorito di sodio). Errore tipico: rispondere «cloroso», che è HClO₂ (n.o. +3).",
+  "semplice": "La scala degli acidi del cloro va dal più «povero» di ossigeno al più ricco: ipocloroso, cloroso, clorico, perclorico. HClO ha un solo ossigeno, quindi è il primo: ipocloroso.",
+  "passaggi": [
+   "Calcola il n.o. del cloro in HClO: +1 + x − 2 = 0, quindi x = +1.",
+   "+1 è il n.o. più basso tra gli ossiacidi del cloro (+1, +3, +5, +7).",
+   "Per il n.o. più basso la nomenclatura tradizionale usa ipo- … -oso.",
+   "HClO è l'acido ipocloroso (HClO₂ è il cloroso)."
+  ],
+  "concetto": "nomenclatura tradizionale"
+ },
+ {
+  "id": "CMP-CHI-027",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il sale Na₂SO₄, in nomenclatura tradizionale, si chiama ___ di sodio.",
+  "risposta": "solfato",
+  "accettate": [
+   "solfato",
+   "solfato (Na₂SO₄)"
+  ],
+  "perche": "Na₂SO₄ deriva dall'acido solforico H₂SO₄ (zolfo +6): nei sali il suffisso -ico dell'acido diventa -ato, quindi solfato. Dall'acido solforoso H₂SO₃ (zolfo +4) derivano invece i solfiti (-oso → -ito). Errore tipico: rispondere «solfito» o «solfuro» (quest'ultimo è Na₂S, senza ossigeno).",
+  "semplice": "Regola mnemonica: «-ico» diventa «-ato», «-oso» diventa «-ito». Acido solforico → solfato. Acido solforoso → solfito.",
+  "passaggi": [
+   "Riconosci l'anione SO₄²⁻: lo zolfo ha n.o. +6.",
+   "Deriva dall'acido solforico H₂SO₄ (suffisso -ico).",
+   "Nei sali -ico diventa -ato, mentre -oso diventa -ito.",
+   "Na₂SO₄ è il solfato di sodio (non solfito né solfuro)."
+  ],
+  "concetto": "nomenclatura dei sali"
+ },
+ {
+  "id": "CMP-CHI-028",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'ossido di un metallo che, reagendo con l'acqua, forma un idrossido si chiama ossido ___.",
+  "risposta": "basico",
+  "accettate": [
+   "basico",
+   "basici"
+  ],
+  "perche": "Gli ossidi dei metalli (es. Na₂O, CaO) reagiscono con l'acqua formando idrossidi: CaO + H₂O → Ca(OH)₂. Per questo sono detti ossidi basici. Gli ossidi dei non metalli (anidridi), invece, con l'acqua formano ossiacidi e sono detti ossidi acidi. Errore tipico: chiamarli «anidridi», termine riservato agli ossidi dei non metalli.",
+  "semplice": "La calce viva (CaO) messa in acqua diventa calce spenta, Ca(OH)₂, che è una base. Gli ossidi dei metalli fanno basi, quelli dei non metalli fanno acidi.",
+  "passaggi": [
+   "Si parla dell'ossido di un metallo, come CaO o Na₂O.",
+   "Con l'acqua forma un idrossido: CaO + H₂O → Ca(OH)₂.",
+   "Gli idrossidi sono basi, quindi l'ossido che li genera è basico.",
+   "Il termine «anidride» è riservato agli ossidi dei non metalli: la risposta è ossido basico."
+  ],
+  "concetto": "ossidi basici"
+ },
+ {
+  "id": "CMP-CHI-029",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un ossido di un non metallo (anidride) che reagisce con l'acqua forma un ___.",
+  "risposta": "ossiacido",
+  "accettate": [
+   "ossiacido",
+   "ossoacido",
+   "acido ossigenato",
+   "acido",
+   "ossiacidi"
+  ],
+  "perche": "Le anidridi (ossidi acidi) reagiscono con l'acqua formando ossiacidi, cioè acidi che contengono ossigeno: SO₃ + H₂O → H₂SO₄; CO₂ + H₂O → H₂CO₃. Errore tipico: rispondere «idracido», che è un acido senza ossigeno (come HCl) e non si forma da un ossido.",
+  "semplice": "L'anidride carbonica sciolta nell'acqua delle bibite forma acido carbonico: ecco perché l'acqua frizzante ha un sapore leggermente acido. Ossido di non metallo + acqua = acido con ossigeno.",
+  "passaggi": [
+   "Le anidridi sono ossidi dei non metalli (ossidi acidi).",
+   "Con l'acqua danno un acido che contiene ossigeno: SO₃ + H₂O → H₂SO₄.",
+   "Un acido senza ossigeno (idracido, come HCl) non può nascere da un ossido.",
+   "Si forma un ossiacido."
+  ],
+  "concetto": "anidridi e ossiacidi"
+ },
+ {
+  "id": "CMP-CHI-030",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Fe₂O₃, in nomenclatura tradizionale, si chiama ossido ___.",
+  "risposta": "ferrico",
+  "accettate": [
+   "ferrico",
+   "ferrico (Fe₂O₃)"
+  ],
+  "perche": "In Fe₂O₃ il ferro ha n.o. +3 (2x + 3(−2) = 0 → x = +3), il più alto dei due possibili (+2 e +3). La nomenclatura tradizionale usa il suffisso -ico per il n.o. maggiore: ossido ferrico. FeO (ferro +2) è l'ossido ferroso. In IUPAC Fe₂O₃ è il triossido di diferro. Errore tipico: rispondere «ferroso».",
+  "semplice": "Il ferro può valere +2 o +3. Con +3, il valore più alto, si usa «-ico»: ferrico. Fe₂O₃ è il componente principale della ruggine rossa.",
+  "passaggi": [
+   "1. 2x + 3(−2) = 0 → x = +3",
+   "2. +3 è il n.o. maggiore del ferro",
+   "3. Suffisso -ico → ossido ferrico"
+  ],
+  "concetto": "nomenclatura tradizionale"
+ },
+ {
+  "id": "CMP-CHI-031",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "NaHCO₃, il comune bicarbonato, in nomenclatura IUPAC si chiama ___ di sodio.",
+  "risposta": "idrogenocarbonato",
+  "accettate": [
+   "idrogenocarbonato",
+   "idrogeno carbonato",
+   "idrogenocarbonato (NaHCO₃)",
+   "carbonato acido"
+  ],
+  "perche": "NaHCO₃ è un sale acido: contiene l'anione HCO₃⁻, derivato dall'acido carbonico H₂CO₃ per perdita di un solo H⁺. La IUPAC indica l'idrogeno rimasto con il prefisso idrogeno-: idrogenocarbonato di sodio. «Bicarbonato» è il nome d'uso comune. Errore tipico: rispondere «carbonato», che è Na₂CO₃.",
+  "semplice": "Il bicarbonato della cucina ha ancora un idrogeno nel suo anione, HCO₃⁻. Per questo il nome ufficiale dice «idrogeno-carbonato». Il carbonato «pieno» (senza H) è Na₂CO₃, la soda.",
+  "passaggi": [
+   "NaHCO₃ contiene l'anione HCO₃⁻, che conserva un idrogeno dell'acido carbonico H₂CO₃.",
+   "È quindi un sale acido, e la IUPAC indica l'H rimasto con il prefisso idrogeno-.",
+   "Il sale dell'acido carbonico è un carbonato; con l'H diventa idrogenocarbonato.",
+   "Na₂CO₃, senza H, sarebbe invece il carbonato di sodio."
+  ],
+  "concetto": "sali acidi"
+ },
+ {
+  "id": "CMP-CHI-032",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La reazione tra un acido e un idrossido che produce un sale e acqua si chiama reazione di ___.",
+  "risposta": "neutralizzazione",
+  "accettate": [
+   "neutralizzazione",
+   "salificazione",
+   "neutralizzazione acido-base"
+  ],
+  "perche": "Acido + base → sale + acqua, ad esempio HCl + NaOH → NaCl + H₂O. Gli ioni H⁺ dell'acido e OH⁻ della base si combinano formando acqua (H⁺ + OH⁻ → H₂O), mentre gli altri ioni costituiscono il sale. Errore tipico: chiamarla «idrolisi», che è invece la reazione di un sale con l'acqua.",
+  "semplice": "Quando prendi un antiacido per il bruciore di stomaco, la base neutralizza l'acido dello stomaco. I due si «annullano» a vicenda formando sale e acqua.",
+  "passaggi": [
+   "La reazione è acido + idrossido → sale + acqua, per esempio HCl + NaOH → NaCl + H₂O.",
+   "H⁺ dell'acido e OH⁻ della base si combinano in H₂O, annullando acidità e basicità.",
+   "Non è un'idrolisi, che è la reazione di un sale con l'acqua.",
+   "Si chiama reazione di neutralizzazione."
+  ],
+  "concetto": "neutralizzazione"
+ },
+ {
+  "id": "CMP-CHI-033",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un acido binario formato da idrogeno e un non metallo, senza ossigeno (come HCl o H₂S), si chiama ___.",
+  "risposta": "idracido",
+  "accettate": [
+   "idracido",
+   "idracidi"
+  ],
+  "perche": "Gli idracidi sono composti binari di idrogeno con un non metallo (alogeni o zolfo) che in acqua si comportano da acidi: HF, HCl, HBr, HI, H₂S. Il nome tradizionale termina in -idrico (acido cloridrico, solfidrico). Errore tipico: rispondere «ossiacido», che invece contiene ossigeno.",
+  "semplice": "L'acido cloridrico (HCl) del nostro stomaco è fatto solo di idrogeno e cloro, niente ossigeno. Questi acidi «senza ossigeno» si chiamano idracidi.",
+  "passaggi": [
+   "L'acido è binario: contiene solo idrogeno e un non metallo, senza ossigeno.",
+   "Gli acidi con ossigeno sono ossiacidi, quindi non è questo il caso.",
+   "Gli acidi binari senza ossigeno (HCl, H₂S, HF) si chiamano idracidi.",
+   "Il loro nome tradizionale termina in -idrico, come acido cloridrico."
+  ],
+  "concetto": "idracidi"
+ },
+ {
+  "id": "CMP-CHI-034",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella reazione Zn + 2 HCl → ZnCl₂ + H₂, il gas che si sviluppa è l'___.",
+  "risposta": "idrogeno",
+  "accettate": [
+   "idrogeno",
+   "H₂",
+   "H2",
+   "idrogeno molecolare",
+   "diidrogeno"
+  ],
+  "perche": "I metalli più riducenti dell'idrogeno (potenziale standard negativo, come zinco, ferro, magnesio) reagiscono con gli acidi: il metallo si ossida (Zn → Zn²⁺) e gli ioni H⁺ si riducono a idrogeno gassoso H₂. Errore tipico: pensare che si sviluppi cloro, che invece resta come ione Cl⁻ nel sale ZnCl₂.",
+  "semplice": "Se metti un pezzetto di zinco in acido cloridrico vedi tante bollicine: è idrogeno gassoso. Lo zinco «ruba il posto» all'idrogeno nell'acido.",
+  "passaggi": [
+   "Lo zinco è più riducente dell'idrogeno, quindi reagisce con l'acido.",
+   "Lo zinco si ossida (Zn → Zn²⁺) e gli ioni H⁺ si riducono.",
+   "Il cloro resta come Cl⁻ in ZnCl₂, non si libera come gas.",
+   "Nei prodotti compare H₂: il gas che si sviluppa è l'idrogeno."
+  ],
+  "concetto": "metalli e acidi"
+ },
+ {
+  "id": "CMP-CHI-035",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Riscaldando il carbonato di calcio si ottiene CaCO₃ → CaO + ___ (scrivi il nome del gas).",
+  "risposta": "anidride carbonica",
+  "accettate": [
+   "anidride carbonica",
+   "CO₂",
+   "CO2",
+   "diossido di carbonio",
+   "biossido di carbonio"
+  ],
+  "perche": "La decomposizione termica dei carbonati libera diossido di carbonio: CaCO₃ → CaO + CO₂. È la reazione con cui si produce la calce viva nelle fornaci. Errore tipico: rispondere «monossido di carbonio» (CO) oppure «ossigeno»: bilanciando gli atomi si vede che servono 1 C e 2 O.",
+  "semplice": "Il calcare riscaldato si trasforma in calce viva e libera un gas: l'anidride carbonica, la stessa che espiriamo. Conta gli atomi: da CaCO₃ togli CaO e restano C e 2 O, cioè CO₂.",
+  "passaggi": [
+   "Bilancia gli atomi: a sinistra Ca, C e 3 O; in CaO ci sono Ca e 1 O.",
+   "Restano da sistemare 1 C e 2 O.",
+   "La specie con 1 C e 2 O è CO₂.",
+   "Il gas è l'anidride carbonica (diossido di carbonio)."
+  ],
+  "concetto": "decomposizione dei carbonati"
+ },
+ {
+  "id": "CMP-CHI-036",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Lo ione NH₄⁺ si chiama ione ___.",
+  "risposta": "ammonio",
+  "accettate": [
+   "ammonio",
+   "ammonio (NH₄⁺)"
+  ],
+  "perche": "Lo ione ammonio si forma quando l'ammoniaca NH₃ accetta un protone usando la sua coppia di elettroni libera: NH₃ + H⁺ → NH₄⁺. È un catione poliatomico, presente in sali come NH₄Cl. Errore tipico: confondere «ammonio» (NH₄⁺) con «ammoniaca» (NH₃) o con «ammide» (NH₂⁻ o il gruppo funzionale organico).",
+  "semplice": "L'ammoniaca (NH₃) prende un H⁺ in più e diventa NH₄⁺, lo ione ammonio. È come l'ammoniaca con un «cappello» positivo.",
+  "passaggi": [
+   "NH₄⁺ si forma quando l'ammoniaca NH₃ accetta un H⁺ con la sua coppia libera.",
+   "È un catione poliatomico, presente per esempio in NH₄Cl.",
+   "Non va confuso con l'ammoniaca (NH₃, molecola neutra).",
+   "Lo ione NH₄⁺ si chiama ammonio."
+  ],
+  "concetto": "ioni poliatomici"
+ },
+ {
+  "id": "CMP-CHI-037",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Lo ione MnO₄⁻ si chiama ione ___.",
+  "risposta": "permanganato",
+  "accettate": [
+   "permanganato",
+   "permanganato (MnO₄⁻)"
+  ],
+  "perche": "MnO₄⁻ contiene manganese con n.o. +7, il più alto; il nome tradizionale usa per- e -ato: permanganato. Lo ione MnO₄²⁻ (Mn +6) è invece il manganato. È un ossidante molto forte, di colore viola intenso. Errore tipico: rispondere «manganato».",
+  "semplice": "Il permanganato di potassio è quella polvere viola che colora l'acqua. Il suo anione MnO₄⁻ ha il manganese al massimo (+7), da qui il prefisso «per-».",
+  "passaggi": [
+   "Calcola il n.o. del manganese: x − 8 = −1, quindi x = +7.",
+   "+7 è il n.o. più alto del manganese negli ossianioni.",
+   "Per il n.o. più alto si usa per- … -ato (MnO₄²⁻, con Mn +6, è il manganato).",
+   "MnO₄⁻ è lo ione permanganato."
+  ],
+  "concetto": "ioni poliatomici"
+ },
+ {
+  "id": "CMP-CHI-038",
+  "materia": "Chimica",
+  "argomento": "Nomenclatura e reazioni inorganiche",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella nomenclatura tradizionale, N₂O₅ è l'anidride ___.",
+  "risposta": "nitrica",
+  "accettate": [
+   "nitrica",
+   "nitrica (N₂O₅)"
+  ],
+  "perche": "In N₂O₅ l'azoto ha n.o. +5 (2x − 10 = 0). Con l'acqua forma l'acido nitrico: N₂O₅ + H₂O → 2 HNO₃. Per questo è l'anidride nitrica; N₂O₃ (azoto +3) è l'anidride nitrosa, da cui deriva HNO₂. Errore tipico: rispondere «nitrosa». In IUPAC N₂O₅ è il pentossido di diazoto.",
+  "semplice": "Anidride + acqua = acido. N₂O₅ con l'acqua dà acido nitrico, quindi si chiama anidride nitrica. Stesso suffisso dell'acido che produce.",
+  "passaggi": [
+   "Calcola il n.o. dell'azoto in N₂O₅: 2x − 10 = 0, quindi x = +5.",
+   "Con l'acqua dà acido nitrico: N₂O₅ + H₂O → 2 HNO₃.",
+   "L'anidride prende il nome dell'acido: -ico per il n.o. più alto (+5), -osa per +3.",
+   "N₂O₅ è l'anidride nitrica."
+  ],
+  "concetto": "nomenclatura delle anidridi"
+ },
+ {
+  "id": "CMP-CHI-039",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La massa molare dell'acqua (H₂O) è ___ g/mol (H = 1, O = 16).",
+  "risposta": "18",
+  "accettate": [
+   "18",
+   "18 g/mol",
+   "18,0",
+   "18.0"
+  ],
+  "perche": "La massa molare si ottiene sommando le masse atomiche di tutti gli atomi della formula: 2 × 1 + 16 = 18 g/mol. Errore tipico: dimenticare che gli idrogeni sono due e rispondere 17.",
+  "semplice": "Una molecola d'acqua ha 2 idrogeni (1 ciascuno) e 1 ossigeno (16). In tutto 18. Quindi una mole d'acqua pesa 18 grammi, più o meno un sorso.",
+  "passaggi": [
+   "1. H: 2 × 1 = 2",
+   "2. O: 1 × 16 = 16",
+   "3. M = 2 + 16 = 18 g/mol"
+  ],
+  "concetto": "massa molare"
+ },
+ {
+  "id": "CMP-CHI-040",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "88 g di CO₂ (M = 44 g/mol) corrispondono a ___ moli.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 mol",
+   "due",
+   "2,0"
+  ],
+  "perche": "Le moli si calcolano come n = m / M = 88 g / 44 g/mol = 2 mol. Errore tipico: moltiplicare invece di dividere (88 × 44) o usare una massa molare sbagliata, come 28 (quella di CO o N₂).",
+  "semplice": "Se una mole di CO₂ pesa 44 g, quante moli ci sono in 88 g? Esattamente due, perché 88 è il doppio di 44.",
+  "passaggi": [
+   "1. n = m / M",
+   "2. n = 88 g / 44 g/mol",
+   "3. n = 2 mol"
+  ],
+  "concetto": "calcolo delle moli"
+ },
+ {
+  "id": "CMP-CHI-041",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per bilanciare la combustione del propano, C₃H₈ + x O₂ → 3 CO₂ + 4 H₂O, il coefficiente dell'ossigeno è x = ___.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "cinque"
+  ],
+  "perche": "A destra gli atomi di ossigeno sono 3 × 2 (nella CO₂) + 4 × 1 (nell'acqua) = 10. A sinistra ogni O₂ porta 2 atomi, quindi servono 10 / 2 = 5 molecole di O₂. Carbonio (3) e idrogeno (8) sono già bilanciati. Errore tipico: contare solo l'ossigeno della CO₂ e rispondere 3.",
+  "semplice": "Conta gli ossigeni a destra: 6 nell'anidride carbonica e 4 nell'acqua, totale 10. Ogni molecola di O₂ ne porta 2, quindi ne servono 5.",
+  "passaggi": [
+   "1. O a destra: 3 × 2 + 4 × 1 = 10",
+   "2. Ogni O₂ contiene 2 atomi di O",
+   "3. x = 10 / 2 = 5"
+  ],
+  "concetto": "bilanciamento delle reazioni"
+ },
+ {
+  "id": "CMP-CHI-042",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella reazione N₂ + 3 H₂ → 2 NH₃, da 6 mol di H₂ (con N₂ in eccesso) si ottengono ___ mol di NH₃.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "4 mol",
+   "quattro"
+  ],
+  "perche": "Il rapporto stechiometrico tra H₂ e NH₃ è 3 : 2. Quindi n(NH₃) = 6 × 2/3 = 4 mol. Errore tipico: usare il rapporto rovesciato (6 × 3/2 = 9) oppure supporre un rapporto 1 : 1 e rispondere 6.",
+  "semplice": "La ricetta dice: 3 molecole di idrogeno danno 2 di ammoniaca. Con 6 di idrogeno (il doppio) ottieni il doppio di ammoniaca: 4.",
+  "passaggi": [
+   "1. Rapporto H₂ : NH₃ = 3 : 2",
+   "2. n(NH₃) = 6 × 2/3",
+   "3. n(NH₃) = 4 mol"
+  ],
+  "concetto": "rapporti stechiometrici"
+ },
+ {
+  "id": "CMP-CHI-043",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella reazione x Al + 3 O₂ → 2 Al₂O₃, per bilanciare l'alluminio x = ___.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "quattro"
+  ],
+  "perche": "A destra ci sono 2 × 2 = 4 atomi di Al, quindi a sinistra servono 4 Al. L'ossigeno è già bilanciato: 3 × 2 = 6 a sinistra e 2 × 3 = 6 a destra. Errore tipico: rispondere 2, guardando solo l'indice di Al₂O₃ senza moltiplicarlo per il coefficiente.",
+  "semplice": "Ogni Al₂O₃ contiene 2 atomi di alluminio e ce ne sono 2: in tutto 4. Quindi a sinistra servono 4 Al.",
+  "passaggi": [
+   "1. Al a destra: 2 × 2 = 4",
+   "2. Al a sinistra: x",
+   "3. x = 4 (O: 6 = 6, già bilanciato)"
+  ],
+  "concetto": "bilanciamento delle reazioni"
+ },
+ {
+  "id": "CMP-CHI-044",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "0,5 mol di NaOH (M = 40 g/mol) hanno una massa di ___ g.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 g",
+   "20,0"
+  ],
+  "perche": "m = n × M = 0,5 mol × 40 g/mol = 20 g. Errore tipico: dividere invece di moltiplicare (0,5 / 40 o 40 / 0,5 = 80).",
+  "semplice": "Una mole di NaOH pesa 40 g. Mezza mole ne pesa la metà: 20 g.",
+  "passaggi": [
+   "1. m = n × M",
+   "2. m = 0,5 mol × 40 g/mol",
+   "3. m = 20 g"
+  ],
+  "concetto": "massa e moli"
+ },
+ {
+  "id": "CMP-CHI-045",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "A condizioni normali (0 °C, 1 atm), 2 mol di un gas ideale occupano ___ L.",
+  "risposta": "44,8",
+  "accettate": [
+   "44,8",
+   "44.8",
+   "44,8 L",
+   "44.8 L",
+   "circa 45"
+  ],
+  "perche": "Il volume molare di un gas ideale a 0 °C e 1 atm è 22,4 L/mol. Quindi V = 2 × 22,4 = 44,8 L. Errore tipico: rispondere 22,4 (il volume di una sola mole) o usare 24,5 L/mol, valido a 25 °C.",
+  "semplice": "A 0 °C e 1 atm una mole di qualsiasi gas occupa circa 22,4 litri, più o meno il volume di un pallone da basket grande. Due moli occupano il doppio: 44,8 litri.",
+  "passaggi": [
+   "1. Volume molare a 0 °C e 1 atm = 22,4 L/mol",
+   "2. V = n × 22,4",
+   "3. V = 2 × 22,4 = 44,8 L"
+  ],
+  "concetto": "volume molare dei gas"
+ },
+ {
+  "id": "CMP-CHI-046",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una formula unità di nitrato di calcio, Ca(NO₃)₂, contiene ___ atomi di ossigeno.",
+  "risposta": "6",
+  "accettate": [
+   "6",
+   "sei"
+  ],
+  "perche": "L'indice 2 fuori dalla parentesi moltiplica tutto ciò che c'è dentro: ci sono 2 gruppi NO₃, ciascuno con 3 ossigeni, quindi 2 × 3 = 6. Errore tipico: rispondere 3, ignorando l'indice esterno alla parentesi.",
+  "semplice": "Ca(NO₃)₂ significa: un calcio e due gruppi nitrato. Ogni nitrato ha 3 ossigeni, due nitrati ne hanno 6.",
+  "passaggi": [
+   "1. Gruppi NO₃ = 2",
+   "2. O per gruppo = 3",
+   "3. O totali = 2 × 3 = 6"
+  ],
+  "concetto": "lettura delle formule"
+ },
+ {
+  "id": "CMP-CHI-047",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La percentuale in massa dell'idrogeno nell'acqua (H = 1, O = 16) è circa ___ %.",
+  "risposta": "11,1",
+  "accettate": [
+   "11,1",
+   "11.1",
+   "11",
+   "11,1 %",
+   "11,11"
+  ],
+  "perche": "% H = (massa di H nella molecola / massa molare) × 100 = (2 / 18) × 100 ≈ 11,1 %. Errore tipico: usare 1 invece di 2 per l'idrogeno (5,6 %) o calcolare il rapporto in numero di atomi (2 su 3, cioè 66,7 %).",
+  "semplice": "In 18 g di acqua l'idrogeno pesa solo 2 g, il resto è ossigeno. 2 su 18 è circa un nono, cioè circa l'11 %.",
+  "passaggi": [
+   "1. Massa di H in H₂O = 2 × 1 = 2",
+   "2. M(H₂O) = 18",
+   "3. % H = 2/18 × 100 ≈ 11,1 %"
+  ],
+  "concetto": "composizione percentuale"
+ },
+ {
+  "id": "CMP-CHI-048",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il reagente che si esaurisce per primo e determina la quantità massima di prodotto si chiama reagente ___.",
+  "risposta": "limitante",
+  "accettate": [
+   "limitante",
+   "limitante (in difetto)",
+   "in difetto"
+  ],
+  "perche": "In una reazione i reagenti si consumano secondo i rapporti stechiometrici; quello che finisce per primo blocca la reazione ed è il reagente limitante. Gli altri sono in eccesso e ne avanza una parte. Errore tipico: pensare che il limitante sia quello presente con la massa minore, mentre bisogna confrontare le moli divise per i coefficienti.",
+  "semplice": "Se per un panino servono 2 fette di pane e 1 fetta di formaggio, e hai 10 fette di pane e 3 di formaggio, fai solo 3 panini: il formaggio è il «reagente limitante».",
+  "passaggi": [
+   "In una reazione i reagenti si consumano nei rapporti dati dai coefficienti.",
+   "Il reagente che finisce per primo blocca la reazione e fissa la quantità massima di prodotto.",
+   "Per trovarlo si confrontano le moli divise per i coefficienti, non le masse.",
+   "Questo reagente si chiama limitante (gli altri sono in eccesso)."
+  ],
+  "concetto": "reagente limitante"
+ },
+ {
+  "id": "CMP-CHI-049",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il numero 6,022 · 10²³, che indica quante particelle sono contenute in una mole, si chiama numero di ___.",
+  "risposta": "Avogadro",
+  "accettate": [
+   "Avogadro",
+   "avogadro",
+   "costante di Avogadro"
+  ],
+  "perche": "Il numero (o costante) di Avogadro, Nₐ ≈ 6,022 · 10²³ mol⁻¹, è il numero di entità elementari (atomi, molecole, ioni) contenute in una mole di sostanza. Errore tipico: confonderlo con la costante dei gas R o con la costante di Faraday.",
+  "semplice": "Come una «dozzina» vuol dire 12, una «mole» vuol dire 6,022 · 10²³ particelle. Questo numero enorme porta il nome del chimico Amedeo Avogadro.",
+  "passaggi": [
+   "Il numero 6,022 · 10²³ indica quante particelle ci sono in una mole.",
+   "Non è la costante dei gas R né la costante di Faraday.",
+   "È la costante che collega moli e numero di particelle: N = n · Nₐ.",
+   "Si chiama numero di Avogadro."
+  ],
+  "concetto": "costante di Avogadro"
+ },
+ {
+  "id": "CMP-CHI-050",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La legge secondo cui in una reazione chimica la massa totale dei reagenti è uguale a quella dei prodotti è detta legge di ___.",
+  "risposta": "Lavoisier",
+  "accettate": [
+   "Lavoisier",
+   "lavoisier",
+   "conservazione della massa"
+  ],
+  "perche": "La legge di conservazione della massa, enunciata da Lavoisier, afferma che in un sistema chiuso la massa non si crea né si distrugge durante una reazione: gli atomi si riorganizzano ma restano gli stessi. È il motivo per cui bisogna bilanciare le equazioni. Errore tipico: attribuirla a Proust, che ha formulato la legge delle proporzioni definite.",
+  "semplice": "Se bruci un pezzo di legno in un contenitore chiuso, la massa totale (legno, ossigeno, fumo e cenere) resta la stessa. «Nulla si crea, nulla si distrugge, tutto si trasforma»: è Lavoisier.",
+  "passaggi": [
+   "L'enunciato riguarda la conservazione della massa in una reazione.",
+   "Gli atomi si riorganizzano ma non si creano né si distruggono.",
+   "Proust riguarda invece le proporzioni definite nei composti.",
+   "È la legge di Lavoisier."
+  ],
+  "concetto": "conservazione della massa"
+ },
+ {
+  "id": "CMP-CHI-051",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La legge secondo cui un composto contiene sempre gli stessi elementi nelle stesse proporzioni in massa è la legge di ___.",
+  "risposta": "Proust",
+  "accettate": [
+   "Proust",
+   "proust",
+   "proporzioni definite",
+   "proporzioni costanti"
+  ],
+  "perche": "La legge delle proporzioni definite (o costanti), di Proust, afferma che in un composto puro il rapporto in massa tra gli elementi è sempre lo stesso, qualunque sia l'origine del campione: nell'acqua il rapporto tra ossigeno e idrogeno è sempre 8 : 1. Errore tipico: confonderla con la legge delle proporzioni multiple di Dalton, che riguarda elementi che formano più composti diversi.",
+  "semplice": "L'acqua del mare, quella del rubinetto e quella della pioggia, se pure, hanno sempre 8 g di ossigeno ogni 1 g di idrogeno. Ogni composto ha la sua «ricetta» fissa: è la legge di Proust.",
+  "passaggi": [
+   "L'enunciato dice che un composto ha sempre lo stesso rapporto in massa tra gli elementi.",
+   "Esempio: nell'acqua ossigeno e idrogeno sono sempre in rapporto 8 : 1.",
+   "Dalton riguarda le proporzioni multiple, Lavoisier la conservazione della massa.",
+   "È la legge delle proporzioni definite, di Proust."
+  ],
+  "concetto": "proporzioni definite"
+ },
+ {
+  "id": "CMP-CHI-052",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La formula che indica solo il rapporto minimo intero tra gli atomi di un composto si chiama formula ___.",
+  "risposta": "minima",
+  "accettate": [
+   "minima",
+   "empirica",
+   "bruta minima"
+  ],
+  "perche": "La formula minima (o empirica) indica il rapporto più semplice tra i numeri di atomi; la formula molecolare ne indica il numero reale. Il glucosio ha formula molecolare C₆H₁₂O₆ e formula minima CH₂O. Errore tipico: rispondere «molecolare» o «di struttura», che danno più informazioni.",
+  "semplice": "La formula minima è come una ricetta ridotta ai minimi termini: per il glucosio dice «1 carbonio, 2 idrogeni, 1 ossigeno», senza dire quanti ce ne sono davvero nella molecola (6, 12, 6).",
+  "passaggi": [
+   "La domanda chiede la formula con il rapporto intero più semplice tra gli atomi.",
+   "La formula molecolare dà invece il numero reale di atomi (glucosio C₆H₁₂O₆).",
+   "Dividendo per il massimo comun divisore si ottiene CH₂O.",
+   "Questa è la formula minima (o empirica)."
+  ],
+  "concetto": "formula minima"
+ },
+ {
+  "id": "CMP-CHI-053",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il rapporto tra la quantità di prodotto ottenuta davvero e quella teorica, moltiplicato per 100, si chiama resa ___.",
+  "risposta": "percentuale",
+  "accettate": [
+   "percentuale",
+   "percentuale di reazione"
+  ],
+  "perche": "Resa percentuale = (resa effettiva / resa teorica) × 100. La resa teorica è calcolata dalla stechiometria a partire dal reagente limitante; quella effettiva è sempre minore o uguale, per reazioni incomplete, reazioni secondarie o perdite. Errore tipico: dividere la resa teorica per quella effettiva, ottenendo valori sopra il 100 %.",
+  "semplice": "Se secondo i calcoli dovresti ottenere 10 g di prodotto ma ne ottieni 8, la resa percentuale è l'80 %. Misura quanto ti sei avvicinato al massimo possibile.",
+  "passaggi": [
+   "Si confronta il prodotto ottenuto davvero con quello teorico calcolato dalla stechiometria.",
+   "Il rapporto è resa effettiva / resa teorica, moltiplicato per 100.",
+   "Il risultato è un valore in percentuale, al massimo 100 %.",
+   "Si chiama resa percentuale."
+  ],
+  "concetto": "resa di reazione"
+ },
+ {
+  "id": "CMP-CHI-054",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'unità di misura della quantità di sostanza nel Sistema Internazionale è la ___.",
+  "risposta": "mole",
+  "accettate": [
+   "mole",
+   "mol",
+   "moli"
+  ],
+  "perche": "La mole (simbolo mol) è una delle sette unità fondamentali del SI e corrisponde a 6,022 · 10²³ entità elementari. Errore tipico: rispondere «grammo» o «chilogrammo», che misurano la massa e non il numero di particelle.",
+  "semplice": "Il chimico conta le particelle a «moli», come il fornaio conta le uova a dozzine. Una mole è un numero fisso e grandissimo di particelle.",
+  "passaggi": [
+   "La quantità di sostanza conta le particelle, non la massa.",
+   "Grammo e chilogrammo misurano la massa, quindi vanno esclusi.",
+   "L'unità SI che corrisponde a 6,022 · 10²³ entità è la mole (mol).",
+   "La risposta è mole."
+  ],
+  "concetto": "la mole"
+ },
+ {
+  "id": "CMP-CHI-055",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La massa di una mole di sostanza, espressa in g/mol, si chiama massa ___.",
+  "risposta": "molare",
+  "accettate": [
+   "molare",
+   "molare (M)"
+  ],
+  "perche": "La massa molare M è la massa di una mole di sostanza e si misura in g/mol; numericamente coincide con la massa molecolare (o atomica) espressa in u. Serve per passare da grammi a moli: n = m/M. Errore tipico: confonderla con la molarità, che è una concentrazione (mol/L).",
+  "semplice": "Per sapere quante moli ci sono in un sacchetto di sale non le conti: pesi il sale e dividi per la massa molare, cioè quanto pesa una mole.",
+  "passaggi": [
+   "La grandezza è la massa di una mole, espressa in g/mol.",
+   "Non è la molarità, che è una concentrazione in mol/L.",
+   "Serve per passare da grammi a moli con n = m/M.",
+   "Si chiama massa molare."
+  ],
+  "concetto": "massa molare"
+ },
+ {
+  "id": "CMP-CHI-056",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo il principio di Avogadro, volumi uguali di gas diversi, alla stessa temperatura e pressione, contengono lo stesso numero di ___.",
+  "risposta": "molecole",
+  "accettate": [
+   "molecole",
+   "particelle",
+   "moli",
+   "molecola"
+  ],
+  "perche": "Il principio di Avogadro afferma che, a parità di temperatura e pressione, volumi uguali di gas contengono lo stesso numero di particelle (molecole), indipendentemente dalla natura del gas. Da qui deriva il volume molare (22,4 L a 0 °C e 1 atm). Errore tipico: rispondere «grammi» o «atomi»: le masse sono diverse, e le molecole possono avere un numero diverso di atomi (H₂ ha 2 atomi, He uno solo).",
+  "semplice": "Un palloncino pieno di elio e uno uguale pieno di aria, alla stessa temperatura e pressione, contengono lo stesso numero di molecole, anche se pesano in modo diverso.",
+  "passaggi": [
+   "Il principio parla di volumi uguali di gas diversi a stessa T e P.",
+   "Le masse sono diverse, perché i gas hanno masse molari diverse.",
+   "Anche il numero di atomi può cambiare (H₂ ha 2 atomi, He uno).",
+   "Ciò che resta uguale è il numero di molecole."
+  ],
+  "concetto": "principio di Avogadro"
+ },
+ {
+  "id": "CMP-CHI-057",
+  "materia": "Chimica",
+  "argomento": "Stechiometria, moli e reazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella reazione 2 H₂ + O₂ → 2 H₂O, partendo da 4 mol di H₂ e 1 mol di O₂, il reagente in eccesso è l'___.",
+  "risposta": "idrogeno",
+  "accettate": [
+   "idrogeno",
+   "H₂",
+   "H2",
+   "idrogeno molecolare"
+  ],
+  "perche": "Dividendo le moli per i coefficienti: H₂ 4/2 = 2; O₂ 1/1 = 1. Il valore minore indica il limitante, cioè O₂. 1 mol di O₂ consuma 2 mol di H₂, quindi avanzano 2 mol di H₂: l'idrogeno è in eccesso. Errore tipico: considerare in eccesso l'O₂ solo perché la reazione «richiede meno ossigeno».",
+  "semplice": "Per ogni ossigeno servono 2 idrogeni. Con 1 ossigeno usi solo 2 dei 4 idrogeni che hai: 2 idrogeni avanzano. L'idrogeno è in eccesso.",
+  "passaggi": [
+   "1. H₂: 4 / 2 = 2; O₂: 1 / 1 = 1",
+   "2. O₂ è il limitante",
+   "3. H₂ consumato = 2 × 1 = 2 mol; avanzano 4 − 2 = 2 mol di H₂"
+  ],
+  "concetto": "reagente in eccesso"
+ },
+ {
+  "id": "CMP-CHI-058",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Sciogliendo 0,5 mol di NaCl in acqua fino a un volume di 250 mL si ottiene una soluzione ___ M.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 M",
+   "2 mol/L",
+   "2,0"
+  ],
+  "perche": "La molarità è M = n / V(L). Il volume va convertito in litri: 250 mL = 0,250 L. M = 0,5 / 0,250 = 2 mol/L. Errore tipico: non convertire i millilitri e ottenere 0,5/250 = 0,002 M.",
+  "semplice": "Mezza mole in un quarto di litro: in un litro intero ce ne starebbero 4 volte tanto, cioè 2 moli. Quindi 2 M.",
+  "passaggi": [
+   "1. V = 250 mL = 0,250 L",
+   "2. M = n / V = 0,5 / 0,250",
+   "3. M = 2 mol/L"
+  ],
+  "concetto": "molarità"
+ },
+ {
+  "id": "CMP-CHI-059",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per preparare 500 mL di NaOH 0,1 M (M = 40 g/mol) servono ___ g di NaOH.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 g",
+   "2,0",
+   "2,0 g"
+  ],
+  "perche": "Moli necessarie: n = M × V = 0,1 mol/L × 0,5 L = 0,05 mol. Massa: m = n × M = 0,05 × 40 = 2 g. Errore tipico: dimenticare di convertire 500 mL in 0,5 L, ottenendo 2000 g.",
+  "semplice": "Un litro di soluzione 0,1 M contiene 0,1 moli, cioè 4 g di NaOH. Mezzo litro ne contiene la metà: 2 g.",
+  "passaggi": [
+   "1. n = 0,1 mol/L × 0,5 L = 0,05 mol",
+   "2. m = n × M = 0,05 × 40",
+   "3. m = 2 g"
+  ],
+  "concetto": "preparazione di soluzioni"
+ },
+ {
+  "id": "CMP-CHI-060",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Diluendo 100 mL di una soluzione 2 M fino a un volume finale di 400 mL, la nuova concentrazione è ___ M.",
+  "risposta": "0,5",
+  "accettate": [
+   "0,5",
+   "0.5",
+   "0,5 M",
+   "0.5 M",
+   "0,50"
+  ],
+  "perche": "Nella diluizione le moli di soluto restano costanti: M₁V₁ = M₂V₂. Quindi M₂ = 2 × 100 / 400 = 0,5 M. Errore tipico: considerare che si aggiungono 400 mL d'acqua (volume finale 500 mL) oppure moltiplicare invece di dividere (8 M).",
+  "semplice": "Il soluto è sempre lo stesso, ma ora è sparso in un volume 4 volte più grande. Quindi la concentrazione diventa 4 volte più piccola: 2 / 4 = 0,5 M.",
+  "passaggi": [
+   "1. M₁V₁ = M₂V₂",
+   "2. M₂ = M₁V₁ / V₂ = 2 × 100 / 400",
+   "3. M₂ = 0,5 M"
+  ],
+  "concetto": "diluizione"
+ },
+ {
+  "id": "CMP-CHI-061",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il cloruro di calcio, CaCl₂, che in acqua si dissocia completamente, ha un coefficiente di van't Hoff i = ___.",
+  "risposta": "3",
+  "accettate": [
+   "3",
+   "tre"
+  ],
+  "perche": "Il coefficiente i indica quante particelle si formano in soluzione da ogni unità di soluto. CaCl₂ → Ca²⁺ + 2 Cl⁻: 1 + 2 = 3 ioni, quindi i = 3. Errore tipico: rispondere 2, contando solo i tipi di ione (calcio e cloruro) e non il loro numero.",
+  "semplice": "Ogni «pezzetto» di CaCl₂ in acqua si spezza in 3 parti: un calcio e due cloruri. Quindi per le proprietà colligative conta 3 volte.",
+  "passaggi": [
+   "1. CaCl₂ → Ca²⁺ + 2 Cl⁻",
+   "2. Particelle = 1 + 2 = 3",
+   "3. i = 3"
+  ],
+  "concetto": "coefficiente di van't Hoff"
+ },
+ {
+  "id": "CMP-CHI-062",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il glucosio, che in acqua non si dissocia, ha un coefficiente di van't Hoff i = ___.",
+  "risposta": "1",
+  "accettate": [
+   "1",
+   "uno"
+  ],
+  "perche": "Il glucosio è un non elettrolita: si scioglie come molecole intere e non forma ioni. Ogni molecola resta una particella, quindi i = 1. Errore tipico: rispondere 6, confondendo i con il numero di atomi di carbonio, o 24, il numero di atomi della molecola.",
+  "semplice": "Lo zucchero si scioglie nell'acqua ma non si spezza: ogni molecola resta intera. Una molecola, una particella: i = 1.",
+  "passaggi": [
+   "1. Glucosio: non elettrolita",
+   "2. 1 molecola → 1 particella",
+   "3. i = 1"
+  ],
+  "concetto": "non elettroliti"
+ },
+ {
+  "id": "CMP-CHI-063",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Sciogliendo 2 mol di soluto in 500 g di acqua si ottiene una soluzione con molalità ___ mol/kg.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "4 m",
+   "4 mol/kg",
+   "4,0"
+  ],
+  "perche": "La molalità è m = moli di soluto / kg di solvente. 500 g = 0,5 kg, quindi m = 2 / 0,5 = 4 mol/kg. Errore tipico: dividere per i grammi (0,004) o confondere molalità (per kg di solvente) e molarità (per litro di soluzione).",
+  "semplice": "Se 2 moli stanno in mezzo chilo d'acqua, in un chilo intero ce ne starebbero 4. Molalità 4.",
+  "passaggi": [
+   "1. Massa del solvente = 500 g = 0,5 kg",
+   "2. m = 2 mol / 0,5 kg",
+   "3. m = 4 mol/kg"
+  ],
+  "concetto": "molalità"
+ },
+ {
+  "id": "CMP-CHI-064",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Sciogliendo 10 g di glucosio in acqua fino a 200 mL di soluzione si ottiene una concentrazione del ___ % m/V.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "5 %",
+   "5%",
+   "5,0"
+  ],
+  "perche": "La percentuale massa/volume indica i grammi di soluto in 100 mL di soluzione: % m/V = (10 g / 200 mL) × 100 = 5 %. È la concentrazione della comune soluzione glucosata isotonica. Errore tipico: dividere per 1000 o non moltiplicare per 100 (0,05).",
+  "semplice": "10 g in 200 mL equivalgono a 5 g in 100 mL. Quindi la soluzione è al 5 %, quella delle flebo di glucosio.",
+  "passaggi": [
+   "1. % m/V = g soluto / mL soluzione × 100",
+   "2. = 10 / 200 × 100",
+   "3. = 5 %"
+  ],
+  "concetto": "percentuale massa/volume"
+ },
+ {
+  "id": "CMP-CHI-065",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le proprietà delle soluzioni che dipendono solo dal numero di particelle di soluto e non dalla loro natura si chiamano proprietà ___.",
+  "risposta": "colligative",
+  "accettate": [
+   "colligative",
+   "colligativa"
+  ],
+  "perche": "Le proprietà colligative sono quattro: abbassamento della tensione di vapore, innalzamento ebullioscopico, abbassamento crioscopico e pressione osmotica. Dipendono dalla concentrazione di particelle (moli × i), non dalla loro identità chimica. Errore tipico: rispondere «intensive» o «estensive», termini che riguardano la dipendenza dalla quantità di materia.",
+  "semplice": "Il sale sparso sulle strade d'inverno fa sciogliere il ghiaccio perché abbassa la temperatura di congelamento. Lo stesso farebbe lo zucchero: conta quante particelle ci sono, non di che tipo sono.",
+  "passaggi": [
+   "Le proprietà descritte dipendono solo da quante particelle di soluto ci sono, non dalla loro natura.",
+   "Esempi: abbassamento crioscopico, innalzamento ebullioscopico, pressione osmotica, tensione di vapore.",
+   "Intensive ed estensive riguardano invece la dipendenza dalla quantità di materia.",
+   "Si chiamano proprietà colligative."
+  ],
+  "concetto": "proprietà colligative"
+ },
+ {
+  "id": "CMP-CHI-066",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La pressione che bisogna applicare a una soluzione per impedire il passaggio di solvente attraverso una membrana semipermeabile si chiama pressione ___.",
+  "risposta": "osmotica",
+  "accettate": [
+   "osmotica",
+   "osmotica (π)"
+  ],
+  "perche": "L'osmosi è il passaggio spontaneo di solvente attraverso una membrana semipermeabile dalla soluzione più diluita a quella più concentrata. La pressione osmotica π è la pressione che arresta questo flusso; vale π = i·M·R·T. Errore tipico: rispondere «parziale» o «di vapore», che sono altre grandezze.",
+  "semplice": "L'acqua tende a entrare dove c'è più soluto, come per «diluirlo». La pressione osmotica è la spinta che serve per fermarla. È per questo che le cellule si gonfiano o si raggrinziscono a seconda dell'ambiente.",
+  "passaggi": [
+   "Il fenomeno è il passaggio di solvente attraverso una membrana semipermeabile: l'osmosi.",
+   "La pressione che arresta questo flusso è la pressione osmotica.",
+   "Si calcola con π = i·M·R·T.",
+   "La risposta è osmotica."
+  ],
+  "concetto": "pressione osmotica"
+ },
+ {
+  "id": "CMP-CHI-067",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un globulo rosso posto in una soluzione ___ si gonfia per l'ingresso di acqua e può andare incontro a emolisi.",
+  "risposta": "ipotonica",
+  "accettate": [
+   "ipotonica",
+   "ipotonico",
+   "ipotoniche"
+  ],
+  "perche": "Una soluzione ipotonica ha pressione osmotica minore di quella del citoplasma; l'acqua entra nella cellula per osmosi, la cellula si gonfia e il globulo rosso può scoppiare (emolisi). In una soluzione ipertonica l'acqua esce e la cellula si raggrinzisce (crenazione). Errore tipico: invertire ipotonica e ipertonica.",
+  "semplice": "Se metti un globulo rosso in acqua distillata (che è ipotonica), l'acqua ci entra dentro finché la cellula scoppia, come un palloncino troppo gonfio. Per questo le flebo devono essere isotoniche, come la fisiologica allo 0,9 %.",
+  "passaggi": [
+   "Il globulo si gonfia: l'acqua entra nella cellula.",
+   "L'acqua va per osmosi verso la zona più concentrata, quindi l'esterno è meno concentrato del citoplasma.",
+   "Una soluzione meno concentrata della cellula si dice ipotonica (in quella ipertonica la cellula si raggrinzisce).",
+   "La risposta è ipotonica."
+  ],
+  "concetto": "tonicità"
+ },
+ {
+  "id": "CMP-CHI-068",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In una soluzione il componente presente in quantità maggiore, che scioglie gli altri, si chiama ___.",
+  "risposta": "solvente",
+  "accettate": [
+   "solvente",
+   "solvente (dissolvente)"
+  ],
+  "perche": "Una soluzione è formata da un solvente (componente principale, spesso acqua) e da uno o più soluti, presenti in quantità minore e dispersi a livello molecolare o ionico. Errore tipico: rispondere «soluto», che è la sostanza disciolta.",
+  "semplice": "Nel caffè zuccherato l'acqua è il solvente e lo zucchero è il soluto. Il solvente è quello che c'è in quantità maggiore e «ospita» gli altri.",
+  "passaggi": [
+   "In una soluzione ci sono il componente che scioglie e quello disciolto.",
+   "Il soluto è la sostanza disciolta, presente in quantità minore.",
+   "Il componente principale, che scioglie gli altri, è il solvente.",
+   "La risposta è solvente."
+  ],
+  "concetto": "solvente e soluto"
+ },
+ {
+  "id": "CMP-CHI-069",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'aggiunta di un soluto non volatile a un solvente fa ___ la temperatura di congelamento della soluzione.",
+  "risposta": "abbassare",
+  "accettate": [
+   "abbassare",
+   "diminuire",
+   "scendere",
+   "calare"
+  ],
+  "perche": "È l'abbassamento crioscopico, una proprietà colligativa: ΔT = i·Kc·m. Le particelle di soluto ostacolano la formazione del reticolo cristallino del solvente, quindi serve una temperatura più bassa per solidificare. Errore tipico: pensare che aumenti, confondendo con l'innalzamento ebullioscopico, che riguarda la temperatura di ebollizione.",
+  "semplice": "L'acqua di mare congela a circa −2 °C invece che a 0 °C, perché contiene sale. Per lo stesso motivo d'inverno si mette il sale sulle strade.",
+  "passaggi": [
+   "Il fenomeno è l'abbassamento crioscopico, una proprietà colligativa: ΔT = i·Kc·m.",
+   "Le particelle di soluto ostacolano la formazione del reticolo del solvente.",
+   "Serve quindi una temperatura più bassa per solidificare.",
+   "Il soluto fa abbassare la temperatura di congelamento."
+  ],
+  "concetto": "abbassamento crioscopico"
+ },
+ {
+  "id": "CMP-CHI-070",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una soluzione che contiene la massima quantità di soluto che può sciogliersi a una data temperatura si dice ___.",
+  "risposta": "satura",
+  "accettate": [
+   "satura",
+   "saturo",
+   "soluzione satura"
+  ],
+  "perche": "In una soluzione satura il soluto disciolto è in equilibrio dinamico con il soluto non disciolto: la concentrazione è uguale alla solubilità a quella temperatura. Se si aggiunge altro soluto, resta sul fondo. Errore tipico: rispondere «concentrata», termine generico che non indica il limite massimo, o «sovrassatura», che è uno stato instabile oltre la solubilità.",
+  "semplice": "Se continui a mettere zucchero nel tè freddo, a un certo punto non si scioglie più e resta sul fondo. Da quel momento la soluzione è satura.",
+  "passaggi": [
+   "La soluzione contiene la massima quantità di soluto che si scioglie a quella temperatura.",
+   "Il soluto disciolto è in equilibrio con quello non disciolto.",
+   "«Concentrata» è generico e «sovrassatura» va oltre il limite in modo instabile.",
+   "La soluzione si dice satura."
+  ],
+  "concetto": "solubilità e saturazione"
+ },
+ {
+  "id": "CMP-CHI-071",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La legge secondo cui la solubilità di un gas in un liquido è proporzionale alla sua pressione parziale sopra il liquido è la legge di ___.",
+  "risposta": "Henry",
+  "accettate": [
+   "Henry",
+   "henry"
+  ],
+  "perche": "La legge di Henry si scrive C = k·P: raddoppiando la pressione parziale del gas, raddoppia la sua concentrazione disciolta. Spiega la CO₂ nelle bibite gassate e la malattia da decompressione dei sub (azoto disciolto ad alta pressione). Errore tipico: rispondere «Raoult», che riguarda la tensione di vapore del solvente.",
+  "semplice": "Una bibita chiusa è sotto pressione e tiene molta CO₂ disciolta. Quando la apri la pressione cala e il gas esce in bollicine. È la legge di Henry.",
+  "passaggi": [
+   "La legge riguarda la solubilità di un gas e la sua pressione parziale.",
+   "La relazione è C = k·P: più pressione, più gas disciolto.",
+   "Raoult riguarda invece la tensione di vapore del solvente.",
+   "È la legge di Henry."
+  ],
+  "concetto": "legge di Henry"
+ },
+ {
+  "id": "CMP-CHI-072",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La legge secondo cui la tensione di vapore di una soluzione è proporzionale alla frazione molare del solvente è la legge di ___.",
+  "risposta": "Raoult",
+  "accettate": [
+   "Raoult",
+   "raoult"
+  ],
+  "perche": "Secondo la legge di Raoult, P = χ(solvente) · P°: aggiungendo un soluto non volatile la frazione molare del solvente diminuisce e quindi diminuisce anche la tensione di vapore. Da questo derivano l'innalzamento ebullioscopico e l'abbassamento crioscopico. Errore tipico: rispondere «Henry», che riguarda la solubilità dei gas.",
+  "semplice": "Le particelle di soluto occupano parte della superficie del liquido e «disturbano» le molecole di solvente che vorrebbero evaporare. Meno solvente in superficie, meno vapore: è la legge di Raoult.",
+  "passaggi": [
+   "La legge collega tensione di vapore della soluzione e frazione molare del solvente.",
+   "Si scrive P = χ(solvente) · P°.",
+   "Henry riguarda invece la solubilità dei gas.",
+   "È la legge di Raoult."
+  ],
+  "concetto": "legge di Raoult"
+ },
+ {
+  "id": "CMP-CHI-073",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le sostanze che in acqua si dissociano in ioni e rendono la soluzione conduttrice di corrente si chiamano ___.",
+  "risposta": "elettroliti",
+  "accettate": [
+   "elettroliti",
+   "elettrolita",
+   "elettroliti forti"
+  ],
+  "perche": "Gli elettroliti (sali, acidi e basi) in soluzione liberano ioni mobili che trasportano la carica elettrica. Gli elettroliti forti si dissociano completamente (NaCl, HCl), quelli deboli solo in parte (CH₃COOH). Errore tipico: definirli «non elettroliti», che invece non formano ioni (glucosio, urea).",
+  "semplice": "L'acqua salata conduce la corrente perché il sale si divide in ioni carichi che si muovono. Lo zucchero non lo fa. Per questo gli integratori sportivi si chiamano «elettroliti»: contengono sali.",
+  "passaggi": [
+   "Le sostanze descritte si dissociano in ioni quando si sciolgono in acqua.",
+   "Gli ioni mobili trasportano la carica, quindi la soluzione conduce corrente.",
+   "Glucosio e urea non formano ioni e sono non elettroliti.",
+   "Queste sostanze si chiamano elettroliti."
+  ],
+  "concetto": "elettroliti"
+ },
+ {
+  "id": "CMP-CHI-074",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La concentrazione espressa in moli di soluto per litro di soluzione si chiama ___.",
+  "risposta": "molarità",
+  "accettate": [
+   "molarità",
+   "concentrazione molare",
+   "molarita"
+  ],
+  "perche": "La molarità (M, mol/L) è il rapporto tra moli di soluto e volume della soluzione in litri. Non va confusa con la molalità (mol per kg di solvente) né con la normalità (equivalenti per litro). Errore tipico: rispondere «molalità», che usa la massa del solvente.",
+  "semplice": "Molarità = quante moli ci sono in un litro di soluzione. Una soluzione 1 M di NaCl ha una mole di sale (58,5 g) in ogni litro.",
+  "passaggi": [
+   "La concentrazione è definita come moli di soluto per litro di soluzione.",
+   "La molalità usa invece i kg di solvente, la normalità gli equivalenti.",
+   "Moli diviso litri di soluzione è M = n/V.",
+   "Si chiama molarità."
+  ],
+  "concetto": "molarità"
+ },
+ {
+  "id": "CMP-CHI-075",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo la regola «il simile scioglie il simile», le sostanze polari si sciolgono bene nei solventi ___.",
+  "risposta": "polari",
+  "accettate": [
+   "polari",
+   "polare"
+  ],
+  "perche": "Un soluto si scioglie bene quando le interazioni soluto–solvente sono simili a quelle già presenti nelle due sostanze: le sostanze polari e ioniche si sciolgono in solventi polari (come l'acqua), quelle apolari in solventi apolari (come l'esano). Errore tipico: rispondere «apolari».",
+  "semplice": "Lo zucchero (polare) si scioglie nell'acqua (polare). L'olio (apolare) no, ma si scioglie nella benzina (apolare). Simile con simile.",
+  "passaggi": [
+   "La regola dice che un soluto si scioglie in un solvente con interazioni simili.",
+   "Le sostanze polari formano interazioni dipolo-dipolo o legami a idrogeno.",
+   "Solo un solvente con interazioni dello stesso tipo può sostituirle.",
+   "Le sostanze polari si sciolgono bene nei solventi polari, come l'acqua."
+  ],
+  "concetto": "solubilità e polarità"
+ },
+ {
+  "id": "CMP-CHI-076",
+  "materia": "Chimica",
+  "argomento": "Concentrazioni e proprietà delle soluzioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per la maggior parte dei gas, all'aumentare della temperatura la solubilità in acqua ___.",
+  "risposta": "diminuisce",
+  "accettate": [
+   "diminuisce",
+   "cala",
+   "si riduce",
+   "decresce"
+  ],
+  "perche": "Lo scioglimento di un gas in acqua è in genere esotermico e le molecole di gas più energetiche sfuggono più facilmente dalla soluzione. Quindi scaldando la solubilità diminuisce. È l'opposto di quanto avviene per molti solidi. Errore tipico: generalizzare il comportamento dei solidi e rispondere «aumenta».",
+  "semplice": "Una bibita gassata calda perde le bollicine molto più in fretta di una fredda. Anche i pesci soffrono quando l'acqua si scalda: c'è meno ossigeno disciolto.",
+  "passaggi": [
+   "Lo scioglimento di un gas in acqua è in genere esotermico.",
+   "Scaldando, le molecole di gas hanno più energia e sfuggono dalla soluzione.",
+   "Il comportamento è opposto a quello di molti solidi.",
+   "La solubilità dei gas diminuisce all'aumentare della temperatura."
+  ],
+  "concetto": "solubilità dei gas"
+ },
+ {
+  "id": "CMP-CHI-077",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una soluzione di HCl 0,01 M ha pH ___.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2,0",
+   "2.0",
+   "pH 2"
+  ],
+  "perche": "HCl è un acido forte, completamente dissociato: [H⁺] = 0,01 M = 10⁻² M. pH = −log[H⁺] = 2. Errore tipico: rispondere 0,01 (la concentrazione) o 12 (che sarebbe il pH di una base forte 0,01 M).",
+  "semplice": "Il pH conta gli zeri: 0,01 = 10⁻², quindi pH 2. Una soluzione molto acida, come il succo di limone.",
+  "passaggi": [
+   "1. HCl acido forte → [H⁺] = 0,01 M",
+   "2. 0,01 = 10⁻²",
+   "3. pH = −log(10⁻²) = 2"
+  ],
+  "concetto": "pH di un acido forte"
+ },
+ {
+  "id": "CMP-CHI-078",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una soluzione di NaOH 0,001 M a 25 °C ha pH ___.",
+  "risposta": "11",
+  "accettate": [
+   "11",
+   "11,0",
+   "11.0",
+   "pH 11"
+  ],
+  "perche": "NaOH è una base forte: [OH⁻] = 10⁻³ M, quindi pOH = 3. A 25 °C pH + pOH = 14, perciò pH = 14 − 3 = 11. Errore tipico: rispondere 3, cioè il pOH, dimenticando di sottrarlo a 14.",
+  "semplice": "Prima trovi il pOH dagli ioni OH⁻ (3 zeri → pOH 3), poi fai 14 − 3 = 11. Soluzione basica, come una soluzione di ammoniaca per la casa.",
+  "passaggi": [
+   "1. [OH⁻] = 10⁻³ M",
+   "2. pOH = 3",
+   "3. pH = 14 − 3 = 11"
+  ],
+  "concetto": "pH di una base forte"
+ },
+ {
+  "id": "CMP-CHI-079",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "A 25 °C, una soluzione con pH 3 ha pOH ___.",
+  "risposta": "11",
+  "accettate": [
+   "11",
+   "11,0",
+   "11.0"
+  ],
+  "perche": "In acqua a 25 °C vale Kw = [H⁺][OH⁻] = 10⁻¹⁴, quindi pH + pOH = 14. pOH = 14 − 3 = 11. Errore tipico: rispondere 3 o pensare che pH e pOH siano uguali.",
+  "semplice": "pH e pOH insieme fanno sempre 14 (a 25 °C). Se il pH è 3, il pOH è 11.",
+  "passaggi": [
+   "1. pH + pOH = 14",
+   "2. pOH = 14 − 3",
+   "3. pOH = 11"
+  ],
+  "concetto": "relazione pH-pOH"
+ },
+ {
+  "id": "CMP-CHI-080",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il prodotto ionico dell'acqua a 25 °C è Kw = 1,0 · 10⁻¹⁴, quindi pKw vale ___.",
+  "risposta": "14",
+  "accettate": [
+   "14",
+   "14,0",
+   "14.0"
+  ],
+  "perche": "pKw = −log Kw = −log(10⁻¹⁴) = 14. Per questo, a 25 °C, pH + pOH = 14 e l'acqua pura ha pH 7. Errore tipico: rispondere 7, che è il pH dell'acqua neutra e non pKw.",
+  "semplice": "Il «p» davanti vuol dire «−log», cioè «conta l'esponente». 10⁻¹⁴ → 14.",
+  "passaggi": [
+   "1. pKw = −log Kw",
+   "2. = −log(10⁻¹⁴)",
+   "3. = 14"
+  ],
+  "concetto": "prodotto ionico dell'acqua"
+ },
+ {
+  "id": "CMP-CHI-081",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un tampone acetato con [CH₃COOH] = [CH₃COO⁻] = 0,1 M (pKa = 4,75) ha pH ___.",
+  "risposta": "4,75",
+  "accettate": [
+   "4,75",
+   "4.75",
+   "circa 4,75",
+   "4,8"
+  ],
+  "perche": "Con l'equazione di Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]). Se le concentrazioni sono uguali il rapporto vale 1 e log 1 = 0, quindi pH = pKa = 4,75. Errore tipico: rispondere 7 pensando che un tampone sia sempre neutro, o usare il valore della concentrazione.",
+  "semplice": "Quando acido e base coniugata sono in quantità uguali, il pH del tampone è proprio uguale al pKa. È anche la situazione in cui il tampone funziona meglio.",
+  "passaggi": [
+   "1. pH = pKa + log([A⁻]/[HA])",
+   "2. [A⁻]/[HA] = 0,1/0,1 = 1; log 1 = 0",
+   "3. pH = 4,75"
+  ],
+  "concetto": "equazione di Henderson-Hasselbalch"
+ },
+ {
+  "id": "CMP-CHI-082",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Diluendo 10 volte con acqua una soluzione di HCl a pH 1, il pH diventa ___.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2,0",
+   "2.0"
+  ],
+  "perche": "Una diluizione di 10 volte riduce [H⁺] di 10 volte: da 10⁻¹ a 10⁻² M. Poiché la scala del pH è logaritmica, il pH aumenta di una unità: da 1 a 2. Errore tipico: pensare che il pH diventi 10 volte più grande (10) o 10 volte più piccolo (0,1).",
+  "semplice": "Ogni unità di pH corrisponde a un fattore 10 nella concentrazione di H⁺. Se diluisci 10 volte, il pH sale di 1: da 1 a 2.",
+  "passaggi": [
+   "1. [H⁺] iniziale = 10⁻¹ M",
+   "2. Dopo diluizione 1:10: [H⁺] = 10⁻² M",
+   "3. pH = 2"
+  ],
+  "concetto": "diluizione e pH"
+ },
+ {
+  "id": "CMP-CHI-083",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una soluzione di H₂SO₄ 0,005 M, supponendo che entrambi i protoni si dissocino completamente, ha pH ___.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2,0",
+   "2.0"
+  ],
+  "perche": "Ogni molecola di H₂SO₄ libera 2 H⁺: [H⁺] = 2 × 0,005 = 0,01 M = 10⁻². pH = 2. Errore tipico: dimenticare che l'acido è diprotico e calcolare −log(0,005) ≈ 2,3.",
+  "semplice": "L'acido solforico ha due idrogeni da cedere. 0,005 moli di acido danno 0,01 moli di H⁺, cioè 10⁻²: pH 2.",
+  "passaggi": [
+   "1. H₂SO₄ → 2 H⁺ + SO₄²⁻",
+   "2. [H⁺] = 2 × 0,005 = 0,01 M",
+   "3. pH = −log(10⁻²) = 2"
+  ],
+  "concetto": "acidi diprotici"
+ },
+ {
+  "id": "CMP-CHI-084",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "A 25 °C l'acqua pura ha pH ___.",
+  "risposta": "7",
+  "accettate": [
+   "7",
+   "7,0",
+   "7.0"
+  ],
+  "perche": "Nell'acqua pura l'autoionizzazione produce H⁺ e OH⁻ in quantità uguali: [H⁺] = [OH⁻] = √(10⁻¹⁴) = 10⁻⁷ M, quindi pH = 7. Il valore 7 è la neutralità solo a 25 °C: a temperature più alte Kw aumenta e il pH neutro scende. Errore tipico: rispondere 14 o 0.",
+  "semplice": "L'acqua pura non è né acida né basica: ha tanti H⁺ quanti OH⁻. A 25 °C questo corrisponde a pH 7, il centro della scala.",
+  "passaggi": [
+   "1. [H⁺] = [OH⁻]",
+   "2. [H⁺]² = 10⁻¹⁴ → [H⁺] = 10⁻⁷ M",
+   "3. pH = 7"
+  ],
+  "concetto": "neutralità"
+ },
+ {
+  "id": "CMP-CHI-085",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo la teoria di Brønsted-Lowry, un acido è una specie chimica che cede ___.",
+  "risposta": "protoni",
+  "accettate": [
+   "protoni",
+   "protone",
+   "ioni H⁺",
+   "H⁺",
+   "ioni idrogeno",
+   "H+"
+  ],
+  "perche": "Per Brønsted-Lowry l'acido è un donatore di protoni (H⁺) e la base è un accettore di protoni. Una reazione acido-base è quindi un trasferimento di protoni. Errore tipico: rispondere «elettroni» o «coppie di elettroni», che appartengono alla definizione di Lewis (dove la base dona una coppia di elettroni).",
+  "semplice": "Nell'HCl in acqua, l'acido «regala» il suo H⁺ all'acqua, che diventa H₃O⁺. Chi regala il protone è l'acido, chi lo riceve è la base.",
+  "passaggi": [
+   "La domanda chiede la definizione di acido secondo Brønsted-Lowry.",
+   "In questa teoria le reazioni acido-base sono trasferimenti di H⁺.",
+   "Elettroni e coppie di elettroni appartengono invece alla teoria di Lewis.",
+   "L'acido è il donatore: cede protoni."
+  ],
+  "concetto": "acidi di Brønsted-Lowry"
+ },
+ {
+  "id": "CMP-CHI-086",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo la teoria di Lewis, una base è una specie che dona una ___ di elettroni.",
+  "risposta": "coppia",
+  "accettate": [
+   "coppia",
+   "coppie",
+   "doppietto",
+   "doppietti",
+   "coppia solitaria"
+  ],
+  "perche": "Una base di Lewis possiede una coppia di elettroni non condivisa (doppietto) che può donare per formare un legame dativo; un acido di Lewis accetta quella coppia. Esempio: NH₃ (base) + BF₃ (acido) → H₃N–BF₃. Errore tipico: rispondere «protoni», che riguarda la teoria di Brønsted-Lowry.",
+  "semplice": "L'ammoniaca ha una coppia di elettroni «libera» sull'azoto e la può offrire a chi ne ha bisogno. Chi offre la coppia è la base di Lewis.",
+  "passaggi": [
+   "Nella teoria di Lewis conta il movimento di elettroni, non di protoni.",
+   "Una base di Lewis ha un doppietto libero, come NH₃.",
+   "Lo dona a un acido di Lewis formando un legame dativo (NH₃ + BF₃).",
+   "La base dona una coppia di elettroni."
+  ],
+  "concetto": "acidi e basi di Lewis"
+ },
+ {
+  "id": "CMP-CHI-087",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La specie che si forma quando un acido cede un protone si chiama base ___ di quell'acido.",
+  "risposta": "coniugata",
+  "accettate": [
+   "coniugata",
+   "coniugato"
+  ],
+  "perche": "Ogni acido di Brønsted, perdendo un H⁺, si trasforma nella sua base coniugata: CH₃COOH → CH₃COO⁻ + H⁺. Acido e base coniugata formano una coppia coniugata, e più l'acido è forte più la sua base coniugata è debole. Errore tipico: rispondere «forte» o «debole», che descrivono la forza e non la relazione tra le due specie.",
+  "semplice": "L'acido acetico che perde il suo H⁺ diventa ione acetato. I due sono «coppia»: uno è l'acido, l'altro la sua base coniugata.",
+  "passaggi": [
+   "Un acido che cede H⁺ si trasforma in una nuova specie: CH₃COOH → CH₃COO⁻ + H⁺.",
+   "Questa specie può riprendere il protone, quindi è una base.",
+   "Le due specie che differiscono per un H⁺ formano una coppia coniugata.",
+   "La specie si chiama base coniugata."
+  ],
+  "concetto": "coppie coniugate"
+ },
+ {
+  "id": "CMP-CHI-088",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il principale sistema tampone del plasma sanguigno è il tampone acido carbonico/___.",
+  "risposta": "bicarbonato",
+  "accettate": [
+   "bicarbonato",
+   "idrogenocarbonato",
+   "HCO₃⁻",
+   "HCO3-",
+   "ione bicarbonato"
+  ],
+  "perche": "Il sistema H₂CO₃/HCO₃⁻ (collegato a CO₂ tramite l'anidrasi carbonica) mantiene il pH del sangue intorno a 7,4. È particolarmente efficace perché la CO₂ viene regolata dai polmoni e il bicarbonato dai reni. Errore tipico: rispondere «fosfato», che è importante soprattutto all'interno delle cellule e nelle urine.",
+  "semplice": "Quando il sangue diventa troppo acido, il bicarbonato cattura gli H⁺ e forma acido carbonico, che si trasforma in CO₂ e viene espirata. Così il pH resta stabile.",
+  "passaggi": [
+   "Il tampone principale del plasma è formato dall'acido carbonico e dalla sua base coniugata.",
+   "H₂CO₃ cedendo un H⁺ diventa HCO₃⁻.",
+   "La CO₂ è regolata dai polmoni e HCO₃⁻ dai reni; il fosfato conta soprattutto nelle cellule.",
+   "La coppia è acido carbonico/bicarbonato."
+  ],
+  "concetto": "tampone del sangue"
+ },
+ {
+  "id": "CMP-CHI-089",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'equazione che lega il pH di un tampone al pKa e al rapporto tra base coniugata e acido è l'equazione di Henderson-___.",
+  "risposta": "Hasselbalch",
+  "accettate": [
+   "Hasselbalch",
+   "hasselbalch"
+  ],
+  "perche": "L'equazione di Henderson-Hasselbalch è pH = pKa + log([A⁻]/[HA]). Permette di calcolare il pH di un tampone o di scegliere il rapporto base/acido per ottenere un pH voluto. Errore tipico: confonderla con l'equazione di Nernst, che riguarda i potenziali elettrochimici.",
+  "semplice": "Questa equazione è la «formula del tampone»: conosci il pKa dell'acido e quanto acido e quanta base hai, e ottieni il pH.",
+  "passaggi": [
+   "L'equazione lega pH, pKa e rapporto base coniugata/acido di un tampone.",
+   "Si scrive pH = pKa + log([A⁻]/[HA]).",
+   "Non è Nernst, che riguarda i potenziali elettrochimici.",
+   "È l'equazione di Henderson-Hasselbalch."
+  ],
+  "concetto": "equazione di Henderson-Hasselbalch"
+ },
+ {
+  "id": "CMP-CHI-090",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una sostanza che può comportarsi sia da acido sia da base, come l'acqua o lo ione HCO₃⁻, si dice ___.",
+  "risposta": "anfotera",
+  "accettate": [
+   "anfotera",
+   "anfotero",
+   "anfiprotica",
+   "anfiprotico",
+   "anfoteri"
+  ],
+  "perche": "Una specie anfotera (o anfiprotica, nel senso di Brønsted) può cedere un protone a una base più forte o accettarlo da un acido più forte. L'acqua forma H₃O⁺ con gli acidi e OH⁻ con le basi; lo ione HCO₃⁻ può diventare H₂CO₃ o CO₃²⁻; gli amminoacidi sono anfoteri. Errore tipico: rispondere «neutra», che indica un pH di 7 e non un doppio comportamento.",
+  "semplice": "L'acqua è un «doppiogiochista»: con un acido fa da base, con una base fa da acido. Le sostanze così si chiamano anfotere.",
+  "passaggi": [
+   "Gli esempi (acqua, HCO₃⁻) possono sia cedere sia accettare un protone.",
+   "L'acqua dà H₃O⁺ con gli acidi e OH⁻ con le basi; HCO₃⁻ può diventare H₂CO₃ o CO₃²⁻.",
+   "«Neutra» indica solo pH 7, non questo doppio comportamento.",
+   "Una tale sostanza si dice anfotera."
+  ],
+  "concetto": "sostanze anfotere"
+ },
+ {
+  "id": "CMP-CHI-091",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In una titolazione, il punto in cui le moli di acido e di base aggiunte sono stechiometricamente equivalenti si chiama punto di ___.",
+  "risposta": "equivalenza",
+  "accettate": [
+   "equivalenza",
+   "equivalenza stechiometrica"
+  ],
+  "perche": "Al punto di equivalenza la quantità di titolante aggiunta corrisponde esattamente a quella necessaria per reagire con l'analita. Il pH in quel punto è 7 solo per acido forte con base forte; con acido debole e base forte è maggiore di 7. Errore tipico: rispondere «neutralità», pensando che il pH sia sempre 7, o confonderlo con il punto finale (viraggio dell'indicatore), che ne è solo una stima.",
+  "semplice": "Nella titolazione aggiungi la base goccia a goccia. Il punto di equivalenza è il momento esatto in cui hai messo tanta base quanto acido c'era.",
+  "passaggi": [
+   "Il punto descritto è quello in cui acido e base aggiunti si equivalgono secondo la stechiometria.",
+   "Non coincide sempre con pH 7 (solo per acido forte e base forte).",
+   "Il punto finale è il viraggio dell'indicatore, che lo stima soltanto.",
+   "Si chiama punto di equivalenza."
+  ],
+  "concetto": "titolazione"
+ },
+ {
+  "id": "CMP-CHI-092",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una soluzione acquosa di cloruro di ammonio (NH₄Cl) ha pH ___ di 7.",
+  "risposta": "minore",
+  "accettate": [
+   "minore",
+   "inferiore",
+   "più basso",
+   "< 7",
+   "minore (acido)"
+  ],
+  "perche": "NH₄Cl deriva da un acido forte (HCl) e da una base debole (NH₃). Il catione NH₄⁺ è l'acido coniugato di una base debole e si idrolizza: NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺, rendendo la soluzione acida. Lo ione Cl⁻ non ha effetto. Errore tipico: pensare che ogni sale sia neutro.",
+  "semplice": "Il sale di un acido forte e di una base debole «ricorda» di più l'acido. L'NH₄⁺ cede un po' di H⁺ all'acqua e la soluzione diventa leggermente acida.",
+  "passaggi": [
+   "NH₄Cl deriva da un acido forte (HCl) e da una base debole (NH₃).",
+   "Cl⁻ non reagisce con l'acqua; NH₄⁺, acido coniugato di una base debole, sì.",
+   "NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺ libera ioni H₃O⁺.",
+   "La soluzione è acida: pH minore di 7."
+  ],
+  "concetto": "idrolisi salina"
+ },
+ {
+  "id": "CMP-CHI-093",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una sostanza che cambia colore a seconda del pH della soluzione, usata nelle titolazioni, si chiama ___.",
+  "risposta": "indicatore",
+  "accettate": [
+   "indicatore",
+   "indicatore acido-base",
+   "indicatori"
+  ],
+  "perche": "Gli indicatori acido-base (come fenolftaleina, metilarancio, tornasole) sono acidi deboli in cui la forma acida HIn e la forma basica In⁻ hanno colori diversi; il cambio di colore (viraggio) avviene intorno al loro pKa. Errore tipico: rispondere «tampone», che invece mantiene costante il pH.",
+  "semplice": "Il cavolo rosso cambia colore se ci aggiungi limone o bicarbonato: è un indicatore naturale. In laboratorio si usano sostanze simili per «vedere» il pH.",
+  "passaggi": [
+   "La sostanza cambia colore a seconda del pH ed è usata nelle titolazioni.",
+   "È un acido debole in cui HIn e In⁻ hanno colori diversi (es. fenolftaleina).",
+   "Il tampone invece mantiene costante il pH, non lo segnala.",
+   "Si chiama indicatore."
+  ],
+  "concetto": "indicatori"
+ },
+ {
+  "id": "CMP-CHI-094",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La reazione di un sale con l'acqua, che può rendere la soluzione acida o basica, si chiama ___ salina.",
+  "risposta": "idrolisi",
+  "accettate": [
+   "idrolisi",
+   "idrolisi salina"
+  ],
+  "perche": "Nell'idrolisi salina gli ioni del sale derivati da acidi o basi deboli reagiscono con l'acqua: ad esempio CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻ rende basica una soluzione di acetato di sodio. Errore tipico: rispondere «neutralizzazione», che è la reazione inversa (acido + base → sale + acqua).",
+  "semplice": "Il bicarbonato sciolto in acqua rende la soluzione un po' basica: è l'idrolisi. Alcuni ioni del sale «prendono» o «danno» H⁺ all'acqua.",
+  "passaggi": [
+   "La reazione è tra un sale e l'acqua.",
+   "Gli ioni derivati da acidi o basi deboli reagiscono con l'acqua: CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻.",
+   "La neutralizzazione è il processo inverso (acido + base → sale + acqua).",
+   "Si chiama idrolisi salina."
+  ],
+  "concetto": "idrolisi salina"
+ },
+ {
+  "id": "CMP-CHI-095",
+  "materia": "Chimica",
+  "argomento": "Acidi, basi, pH e tamponi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Gli acidi che in acqua si dissociano completamente, come HCl, HNO₃ e HClO₄, si chiamano acidi ___.",
+  "risposta": "forti",
+  "accettate": [
+   "forti",
+   "forte"
+  ],
+  "perche": "Un acido forte ha Ka molto grande e in soluzione diluita è dissociato praticamente al 100 %, per cui [H⁺] coincide con la concentrazione dell'acido. Gli acidi deboli (CH₃COOH, HF, H₂CO₃) invece sono dissociati solo in parte. Errore tipico: confondere «forte» con «concentrato»: un acido forte può essere diluito, e uno debole concentrato.",
+  "semplice": "Un acido forte in acqua «si apre» completamente: tutte le molecole liberano il loro H⁺. Uno debole lo fa solo in piccola parte.",
+  "passaggi": [
+   "HCl, HNO₃ e HClO₄ si dissociano completamente in acqua.",
+   "Hanno Ka molto grande: [H⁺] coincide con la concentrazione dell'acido.",
+   "«Forte» riguarda la dissociazione, non la concentrazione.",
+   "Si chiamano acidi forti."
+  ],
+  "concetto": "acidi forti e deboli"
+ },
+ {
+  "id": "CMP-CHI-096",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella semireazione in ambiente acido MnO₄⁻ → Mn²⁺, ogni ione permanganato acquista ___ elettroni.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "cinque",
+   "5 e⁻"
+  ],
+  "perche": "Il manganese passa da +7 (in MnO₄⁻) a +2 (in Mn²⁺): la variazione del numero di ossidazione è 5, quindi acquista 5 elettroni. La semireazione bilanciata è MnO₄⁻ + 8 H⁺ + 5 e⁻ → Mn²⁺ + 4 H₂O. Errore tipico: rispondere 7 o 2, cioè uno dei due numeri di ossidazione invece della loro differenza.",
+  "semplice": "Il manganese scende da +7 a +2: per scendere di 5 «gradini» deve prendere 5 elettroni, perché ogni elettrone porta una carica negativa.",
+  "passaggi": [
+   "1. n.o. Mn in MnO₄⁻ = +7",
+   "2. n.o. Mn in Mn²⁺ = +2",
+   "3. Elettroni acquistati = 7 − 2 = 5"
+  ],
+  "concetto": "semireazioni redox"
+ },
+ {
+  "id": "CMP-CHI-097",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella semireazione Cr₂O₇²⁻ → 2 Cr³⁺, lo ione dicromato acquista in tutto ___ elettroni.",
+  "risposta": "6",
+  "accettate": [
+   "6",
+   "sei",
+   "6 e⁻"
+  ],
+  "perche": "Ogni cromo passa da +6 a +3, acquistando 3 elettroni; gli atomi di cromo sono 2, quindi in totale 2 × 3 = 6 elettroni. Semireazione: Cr₂O₇²⁻ + 14 H⁺ + 6 e⁻ → 2 Cr³⁺ + 7 H₂O. Errore tipico: rispondere 3, dimenticando che i cromi sono due.",
+  "semplice": "Ogni cromo scende di 3, ma i cromi sono due: 3 + 3 = 6 elettroni.",
+  "passaggi": [
+   "1. n.o. Cr: da +6 a +3 → 3 e⁻ per atomo",
+   "2. Atomi di Cr = 2",
+   "3. Elettroni totali = 2 × 3 = 6"
+  ],
+  "concetto": "semireazioni redox"
+ },
+ {
+  "id": "CMP-CHI-098",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nell'ossidazione Fe²⁺ → Fe³⁺, ogni ione ferro cede ___ elettrone/i.",
+  "risposta": "1",
+  "accettate": [
+   "1",
+   "uno",
+   "un"
+  ],
+  "perche": "Il numero di ossidazione passa da +2 a +3, cioè aumenta di 1: lo ione cede un elettrone (Fe²⁺ → Fe³⁺ + e⁻). Errore tipico: rispondere 3, che è la carica finale, o pensare che acquisti l'elettrone: l'aumento del n.o. indica sempre una perdita di elettroni.",
+  "semplice": "Da +2 a +3: la carica sale di 1, quindi il ferro ha perso un elettrone (gli elettroni sono negativi). Questo è un'ossidazione.",
+  "passaggi": [
+   "1. n.o. iniziale = +2",
+   "2. n.o. finale = +3",
+   "3. Elettroni ceduti = 3 − 2 = 1"
+  ],
+  "concetto": "ossidazione"
+ },
+ {
+  "id": "CMP-CHI-099",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel perossido di idrogeno (H₂O₂) l'ossigeno ha numero di ossidazione ___.",
+  "risposta": "-1",
+  "accettate": [
+   "-1",
+   "−1",
+   "- 1",
+   "meno 1",
+   "meno uno"
+  ],
+  "perche": "Nei perossidi c'è un legame O–O, e gli elettroni del legame tra due atomi uguali si dividono a metà. Imponendo la neutralità: 2(+1) + 2x = 0 → x = −1. Errore tipico: applicare automaticamente la regola «O = −2», valida negli ossidi ma non nei perossidi. Proprio questo n.o. intermedio permette a H₂O₂ di comportarsi sia da ossidante sia da riducente.",
+  "semplice": "Nell'acqua ossigenata i due idrogeni portano +2 in tutto. I due ossigeni si dividono −2: ognuno vale −1, non −2 come al solito.",
+  "passaggi": [
+   "1. H = +1",
+   "2. 2(+1) + 2x = 0",
+   "3. x = −1"
+  ],
+  "concetto": "numero di ossidazione nei perossidi"
+ },
+ {
+  "id": "CMP-CHI-100",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una pila Daniell (Zn/Zn²⁺ con E° = −0,76 V; Cu²⁺/Cu con E° = +0,34 V) in condizioni standard ha una forza elettromotrice di ___ V.",
+  "risposta": "1,10",
+  "accettate": [
+   "1,10",
+   "1.10",
+   "1,1",
+   "1.1",
+   "1,10 V",
+   "1.10 V"
+  ],
+  "perche": "La f.e.m. standard è E°(catodo) − E°(anodo). Il rame, con potenziale più alto, si riduce ed è il catodo; lo zinco si ossida ed è l'anodo. E° = +0,34 − (−0,76) = 1,10 V. Errore tipico: sommare algebricamente i due potenziali così come sono (−0,42 V) o invertire catodo e anodo.",
+  "semplice": "Si fa la differenza tra il potenziale più alto e quello più basso: 0,34 − (−0,76). Meno per meno fa più: 0,34 + 0,76 = 1,10 V, circa quanto una piccola batteria.",
+  "passaggi": [
+   "1. Catodo (riduzione): Cu²⁺/Cu, E° = +0,34 V",
+   "2. Anodo (ossidazione): Zn²⁺/Zn, E° = −0,76 V",
+   "3. f.e.m. = 0,34 − (−0,76) = 1,10 V"
+  ],
+  "concetto": "forza elettromotrice"
+ },
+ {
+  "id": "CMP-CHI-101",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La costante di Faraday, cioè la carica di una mole di elettroni, vale circa ___ C/mol.",
+  "risposta": "96485",
+  "accettate": [
+   "96485",
+   "96 485",
+   "96.485",
+   "96500",
+   "96 500",
+   "96.500",
+   "96485 C/mol",
+   "96500 C/mol"
+  ],
+  "perche": "F = Nₐ × e = 6,022 · 10²³ mol⁻¹ × 1,602 · 10⁻¹⁹ C ≈ 96 485 C/mol (spesso arrotondata a 96 500). Serve nelle leggi di Faraday dell'elettrolisi e nella relazione ΔG = −nFE. Errore tipico: confonderla con la costante di Avogadro o con la carica di un singolo elettrone.",
+  "semplice": "Un elettrone ha una carica piccolissima. Una mole di elettroni, cioè 6 · 10²³ elettroni, porta circa 96 500 coulomb: questa è la costante di Faraday.",
+  "passaggi": [
+   "1. F = Nₐ × e",
+   "2. F = 6,022 · 10²³ × 1,602 · 10⁻¹⁹",
+   "3. F ≈ 96 485 C/mol"
+  ],
+  "concetto": "costante di Faraday"
+ },
+ {
+  "id": "CMP-CHI-102",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In una reazione redox la specie che si ossida, cedendo elettroni, è detta agente ___.",
+  "risposta": "riducente",
+  "accettate": [
+   "riducente",
+   "riducente (riduttore)",
+   "riduttore"
+  ],
+  "perche": "La specie che cede elettroni si ossida e, così facendo, provoca la riduzione dell'altra specie: per questo è chiamata riducente. Simmetricamente l'ossidante acquista elettroni e si riduce. Errore tipico: rispondere «ossidante», confondendo ciò che la specie subisce con ciò che provoca.",
+  "semplice": "Chi regala elettroni fa ridurre l'altro, quindi è il «riducente», anche se lui stesso si ossida. È come chi presta soldi: si impoverisce ma fa arricchire l'altro.",
+  "passaggi": [
+   "La specie cede elettroni, quindi si ossida.",
+   "Gli elettroni ceduti fanno ridurre l'altra specie.",
+   "Il nome dell'agente indica ciò che provoca, non ciò che subisce.",
+   "Chi si ossida è l'agente riducente."
+  ],
+  "concetto": "ossidante e riducente"
+ },
+ {
+  "id": "CMP-CHI-103",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una specie che acquista elettroni in una reazione redox si ___.",
+  "risposta": "riduce",
+  "accettate": [
+   "riduce",
+   "riduce (riduzione)",
+   "è ridotta"
+  ],
+  "perche": "La riduzione è l'acquisto di elettroni, con diminuzione del numero di ossidazione; l'ossidazione è la perdita di elettroni, con aumento del n.o. Promemoria: «OIL RIG» (Oxidation Is Loss, Reduction Is Gain). Errore tipico: associare «riduzione» a una perdita, per il significato comune della parola.",
+  "semplice": "Acquistare elettroni, che sono negativi, fa «ridurre» il numero di ossidazione. Per esempio Cu²⁺ che prende 2 elettroni diventa Cu: si è ridotto.",
+  "passaggi": [
+   "Ricorda: OIL RIG, l'ossidazione è perdita di elettroni, la riduzione è acquisto.",
+   "Acquistando elettroni il numero di ossidazione diminuisce.",
+   "Una diminuzione del n.o. è una riduzione.",
+   "La specie si riduce."
+  ],
+  "concetto": "riduzione"
+ },
+ {
+  "id": "CMP-CHI-104",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In una cella galvanica l'elettrodo in cui avviene l'ossidazione si chiama ___.",
+  "risposta": "anodo",
+  "accettate": [
+   "anodo",
+   "l'anodo"
+  ],
+  "perche": "In ogni cella elettrochimica l'anodo è l'elettrodo dove avviene l'ossidazione e il catodo quello della riduzione. Nella pila l'anodo è il polo negativo, perché da lì partono gli elettroni verso il circuito esterno. Errore tipico: rispondere «catodo», oppure ricordare l'anodo come sempre positivo (lo è nell'elettrolisi, non nella pila).",
+  "semplice": "Trucco: «anodo» e «ossidazione» cominciano entrambi per vocale; «catodo» e «riduzione» per consonante. Nella pila Daniell lo zinco si consuma all'anodo.",
+  "passaggi": [
+   "In ogni cella elettrochimica i nomi degli elettrodi dipendono dalla reazione che vi avviene.",
+   "All'anodo avviene l'ossidazione, al catodo la riduzione.",
+   "Nella pila l'anodo è il polo negativo, da cui partono gli elettroni.",
+   "L'elettrodo dell'ossidazione è l'anodo."
+  ],
+  "concetto": "anodo e catodo"
+ },
+ {
+  "id": "CMP-CHI-105",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In una pila la riduzione avviene al ___.",
+  "risposta": "catodo",
+  "accettate": [
+   "catodo",
+   "il catodo"
+  ],
+  "perche": "Al catodo le specie acquistano gli elettroni che arrivano dal circuito esterno e si riducono; nella pila il catodo è il polo positivo. Nella pila Daniell, al catodo Cu²⁺ + 2 e⁻ → Cu e il rame si deposita sull'elettrodo. Errore tipico: rispondere «anodo».",
+  "semplice": "Al catodo arrivano gli elettroni e qualcuno li prende: lì avviene la riduzione. Nella pila Daniell la lamina di rame diventa più spessa perché il rame si deposita.",
+  "passaggi": [
+   "Ricorda la regola valida per ogni cella: ossidazione all'anodo, riduzione al catodo.",
+   "Al catodo arrivano gli elettroni dal circuito esterno e le specie li acquistano.",
+   "Esempio nella pila Daniell: Cu²⁺ + 2 e⁻ → Cu.",
+   "La riduzione avviene al catodo."
+  ],
+  "concetto": "anodo e catodo"
+ },
+ {
+  "id": "CMP-CHI-106",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una cella in cui l'energia elettrica fornita dall'esterno provoca una reazione redox non spontanea si chiama cella ___.",
+  "risposta": "elettrolitica",
+  "accettate": [
+   "elettrolitica",
+   "di elettrolisi",
+   "elettrolitiche"
+  ],
+  "perche": "Nella cella elettrolitica si usa un generatore per forzare una reazione con ΔG > 0 (f.e.m. negativa), come la decomposizione dell'acqua o la produzione di sodio e cloro dal NaCl fuso. È il contrario della cella galvanica (pila), che produce energia elettrica da una reazione spontanea. Errore tipico: rispondere «galvanica».",
+  "semplice": "La pila produce corrente da una reazione che avviene da sola. La cella elettrolitica fa il contrario: usa corrente per far avvenire una reazione che da sola non andrebbe, come ricaricare una batteria.",
+  "passaggi": [
+   "La cella usa energia elettrica esterna per una reazione non spontanea (ΔG > 0).",
+   "La cella galvanica fa il contrario: produce energia da una reazione spontanea.",
+   "Esempi: decomposizione dell'acqua, sodio e cloro dal NaCl fuso.",
+   "È una cella elettrolitica."
+  ],
+  "concetto": "elettrolisi"
+ },
+ {
+  "id": "CMP-CHI-107",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella pila Daniell il collegamento contenente una soluzione salina, che chiude il circuito tra i due semielementi, si chiama ponte ___.",
+  "risposta": "salino",
+  "accettate": [
+   "salino",
+   "salino (ponte salino)"
+  ],
+  "perche": "Il ponte salino contiene un elettrolita inerte (es. KCl o KNO₃) e permette il movimento di ioni tra le due semicelle, mantenendone la neutralità elettrica: senza di esso le cariche si accumulerebbero e la corrente si fermerebbe subito. Errore tipico: pensare che nel ponte passino elettroni, che invece viaggiano solo nel filo esterno.",
+  "semplice": "Gli elettroni corrono nel filo, ma serve anche un «sentiero» per gli ioni tra i due recipienti. Quel sentiero è il ponte salino: un tubo a U pieno di soluzione salina.",
+  "passaggi": [
+   "Il collegamento contiene una soluzione salina inerte, come KCl o KNO₃.",
+   "Permette il passaggio di ioni tra le semicelle mantenendole neutre.",
+   "Gli elettroni invece passano solo nel filo esterno.",
+   "Si chiama ponte salino."
+  ],
+  "concetto": "ponte salino"
+ },
+ {
+  "id": "CMP-CHI-108",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'elettrodo di riferimento al quale si attribuisce per convenzione un potenziale standard di 0 V è l'elettrodo standard a ___.",
+  "risposta": "idrogeno",
+  "accettate": [
+   "idrogeno",
+   "idrogeno (SHE)",
+   "H₂",
+   "idrogeno gassoso"
+  ],
+  "perche": "L'elettrodo standard a idrogeno (2 H⁺ + 2 e⁻ ⇌ H₂, con [H⁺] = 1 M, P(H₂) = 1 atm, 25 °C, platino) ha per definizione E° = 0,00 V. Tutti i potenziali standard di riduzione sono misurati rispetto a esso. Errore tipico: rispondere «calomelano», un elettrodo di riferimento pratico che però ha potenziale diverso da zero.",
+  "semplice": "Per misurare le altezze serve un livello zero, il livello del mare. Per i potenziali elettrochimici lo zero è l'elettrodo a idrogeno.",
+  "passaggi": [
+   "Serve un elettrodo di riferimento con potenziale fissato per convenzione a 0 V.",
+   "È basato sulla coppia 2 H⁺ + 2 e⁻ ⇌ H₂ in condizioni standard su platino.",
+   "Il calomelano è un riferimento pratico ma ha potenziale diverso da zero.",
+   "È l'elettrodo standard a idrogeno."
+  ],
+  "concetto": "potenziali standard"
+ },
+ {
+  "id": "CMP-CHI-109",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una reazione in cui la stessa specie chimica si ossida e si riduce contemporaneamente si chiama ___.",
+  "risposta": "disproporzione",
+  "accettate": [
+   "disproporzione",
+   "dismutazione",
+   "disproporzionamento"
+  ],
+  "perche": "Nella disproporzione (o dismutazione) un elemento con n.o. intermedio si trasforma in parte in uno stato più ossidato e in parte in uno più ridotto. Esempi: 2 H₂O₂ → 2 H₂O + O₂ (O da −1 a −2 e a 0); Cl₂ + 2 OH⁻ → Cl⁻ + ClO⁻ + H₂O. Errore tipico: rispondere «comproporzione», che è il processo inverso.",
+  "semplice": "Nell'acqua ossigenata che si decompone, alcuni ossigeni prendono elettroni e altri li cedono: la stessa sostanza fa sia da ossidante sia da riducente. Questo si chiama disproporzione.",
+  "passaggi": [
+   "La stessa specie si ossida e si riduce insieme.",
+   "Esempio: 2 H₂O₂ → 2 H₂O + O₂, dove O passa da −1 a −2 e a 0.",
+   "La comproporzione è il processo inverso (due n.o. diversi che convergono).",
+   "La reazione si chiama disproporzione (dismutazione)."
+  ],
+  "concetto": "disproporzione"
+ },
+ {
+  "id": "CMP-CHI-110",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'equazione che permette di calcolare il potenziale di un elettrodo in condizioni non standard è l'equazione di ___.",
+  "risposta": "Nernst",
+  "accettate": [
+   "Nernst",
+   "nernst"
+  ],
+  "perche": "L'equazione di Nernst, E = E° − (RT/nF) ln Q (a 25 °C: E = E° − (0,059/n) log Q), corregge il potenziale standard in base alle concentrazioni effettive delle specie. Spiega anche il potenziale di membrana delle cellule. Errore tipico: rispondere «Henderson-Hasselbalch», che riguarda il pH dei tamponi.",
+  "semplice": "I potenziali standard valgono con concentrazioni 1 M. Se le concentrazioni cambiano, il potenziale cambia: l'equazione di Nernst dice di quanto. In fisiologia serve per i potenziali di membrana.",
+  "passaggi": [
+   "Si cerca l'equazione del potenziale di elettrodo fuori dalle condizioni standard.",
+   "Corregge E° con le concentrazioni: E = E° − (0,059/n) log Q a 25 °C.",
+   "Henderson-Hasselbalch riguarda invece il pH dei tamponi.",
+   "È l'equazione di Nernst."
+  ],
+  "concetto": "equazione di Nernst"
+ },
+ {
+  "id": "CMP-CHI-111",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una specie con un potenziale standard di riduzione molto positivo (come F₂) è un forte ___.",
+  "risposta": "ossidante",
+  "accettate": [
+   "ossidante",
+   "agente ossidante",
+   "ossidanti"
+  ],
+  "perche": "Un E° di riduzione molto positivo indica una grande tendenza ad acquistare elettroni, cioè a ridursi: la specie è quindi un forte ossidante. F₂ (E° ≈ +2,87 V) è l'ossidante più forte; i metalli alcalini, con E° molto negativi, sono forti riducenti. Errore tipico: rispondere «riducente».",
+  "semplice": "Più il potenziale di riduzione è alto, più la specie «vuole» elettroni e li strappa agli altri. Chi strappa elettroni è un ossidante.",
+  "passaggi": [
+   "Un E° di riduzione molto positivo indica forte tendenza ad acquistare elettroni.",
+   "Chi acquista elettroni si riduce e fa ossidare l'altra specie.",
+   "Una specie che fa ossidare le altre è un ossidante (F₂, E° ≈ +2,87 V).",
+   "F₂ è un forte ossidante."
+  ],
+  "concetto": "potenziali e forza ossidante"
+ },
+ {
+  "id": "CMP-CHI-112",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nell'elettrolisi del cloruro di sodio fuso, al catodo si forma ___ metallico.",
+  "risposta": "sodio",
+  "accettate": [
+   "sodio",
+   "Na",
+   "sodio (Na)"
+  ],
+  "perche": "Nel NaCl fuso sono presenti solo ioni Na⁺ e Cl⁻. Al catodo avviene la riduzione: Na⁺ + e⁻ → Na (sodio metallico); all'anodo l'ossidazione: 2 Cl⁻ → Cl₂ + 2 e⁻. Errore tipico: rispondere «idrogeno», che si forma al catodo solo nell'elettrolisi di NaCl in soluzione acquosa, dove si riduce l'acqua.",
+  "semplice": "Il catodo regala elettroni agli ioni positivi. Nel sale fuso gli unici ioni positivi sono Na⁺, che diventano sodio metallico. All'altro elettrodo si forma il cloro gassoso.",
+  "passaggi": [
+   "Nel NaCl fuso ci sono solo ioni Na⁺ e Cl⁻, senza acqua.",
+   "Al catodo avviene la riduzione, quindi si riduce il catione: Na⁺ + e⁻ → Na.",
+   "L'idrogeno si forma solo in soluzione acquosa, dove si riduce l'acqua.",
+   "Al catodo si forma sodio metallico."
+  ],
+  "concetto": "elettrolisi del NaCl fuso"
+ },
+ {
+  "id": "CMP-CHI-113",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una reazione redox è spontanea in condizioni standard quando la sua forza elettromotrice ΔE° è ___.",
+  "risposta": "positiva",
+  "accettate": [
+   "positiva",
+   "maggiore di zero",
+   "> 0",
+   "positivo"
+  ],
+  "perche": "Energia libera e f.e.m. sono legate da ΔG° = −nFΔE°. Se ΔE° > 0, allora ΔG° < 0 e la reazione è spontanea; per questo una pila funziona solo se la f.e.m. è positiva. Errore tipico: rispondere «negativa», confondendo il segno di ΔE con quello di ΔG.",
+  "semplice": "Per la f.e.m. vale il contrario dell'energia libera: f.e.m. positiva significa reazione spontanea, quella che fa funzionare le pile.",
+  "passaggi": [
+   "1. ΔG° = −nFΔE°",
+   "2. Spontanea ⇔ ΔG° < 0",
+   "3. Quindi ΔE° > 0"
+  ],
+  "concetto": "spontaneità delle redox"
+ },
+ {
+  "id": "CMP-CHI-114",
+  "materia": "Chimica",
+  "argomento": "Ossidoriduzioni ed elettrochimica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Lo zinco usato per proteggere scafi o tubature di ferro dalla corrosione, ossidandosi al posto del ferro, funziona da anodo ___.",
+  "risposta": "sacrificale",
+  "accettate": [
+   "sacrificale",
+   "sacrificabile",
+   "di sacrificio"
+  ],
+  "perche": "Lo zinco ha un potenziale di riduzione più negativo del ferro (−0,76 V contro −0,44 V), quindi si ossida più facilmente. Collegato al ferro, si ossida al suo posto e fornisce elettroni che mantengono il ferro ridotto: è la protezione catodica con anodo sacrificale. Errore tipico: pensare che lo zinco protegga solo come strato isolante.",
+  "semplice": "Lo zinco è il «bodyguard» del ferro: si fa corrodere al posto suo. Ogni tanto va sostituito, perché si consuma: per questo si chiama anodo sacrificale.",
+  "passaggi": [
+   "Lo zinco (E° = −0,76 V) si ossida più facilmente del ferro (−0,44 V).",
+   "Collegato al ferro si ossida al suo posto e gli cede elettroni.",
+   "Lo zinco si consuma per proteggere il ferro: viene «sacrificato».",
+   "Funziona da anodo sacrificale (protezione catodica)."
+  ],
+  "concetto": "protezione dalla corrosione"
+ },
+ {
+  "id": "CMP-CHI-115",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per una reazione con ΔH = −100 kJ e ΔS = −200 J/K, a 300 K si ha ΔG = ___ kJ.",
+  "risposta": "-40",
+  "accettate": [
+   "-40",
+   "−40",
+   "- 40",
+   "−40 kJ",
+   "-40 kJ"
+  ],
+  "perche": "ΔG = ΔH − TΔS. Bisogna usare unità coerenti: ΔS = −200 J/K = −0,200 kJ/K. ΔG = −100 − 300 × (−0,200) = −100 + 60 = −40 kJ: la reazione è spontanea a questa temperatura. Errore tipico: non convertire i joule in kilojoule (ottenendo +59 900) o sbagliare il segno di −TΔS (−160).",
+  "semplice": "La formula è ΔG = ΔH − TΔS. Il termine TΔS vale 300 × (−0,2) = −60; tolto a −100 dà −100 + 60 = −40. Negativo: la reazione avviene spontaneamente.",
+  "passaggi": [
+   "1. ΔS = −200 J/K = −0,200 kJ/K",
+   "2. TΔS = 300 × (−0,200) = −60 kJ",
+   "3. ΔG = ΔH − TΔS = −100 − (−60) = −40 kJ"
+  ],
+  "concetto": "energia libera di Gibbs"
+ },
+ {
+  "id": "CMP-CHI-116",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una reazione con legge cinetica v = k[A][B]² ha ordine globale ___.",
+  "risposta": "3",
+  "accettate": [
+   "3",
+   "tre",
+   "terzo"
+  ],
+  "perche": "L'ordine globale è la somma degli esponenti delle concentrazioni nella legge cinetica: 1 (per A) + 2 (per B) = 3. Errore tipico: rispondere 2, prendendo solo l'esponente maggiore, oppure ricavare l'ordine dai coefficienti stechiometrici, che in generale non coincidono con gli ordini.",
+  "semplice": "Somma gli esponenti: A ha 1, B ha 2. 1 + 2 = 3, reazione del terzo ordine.",
+  "passaggi": [
+   "1. Ordine rispetto ad A = 1",
+   "2. Ordine rispetto a B = 2",
+   "3. Ordine globale = 1 + 2 = 3"
+  ],
+  "concetto": "ordine di reazione"
+ },
+ {
+  "id": "CMP-CHI-117",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per l'equilibrio A ⇌ B, se all'equilibrio [A] = 0,2 M e [B] = 0,8 M, la costante Kc vale ___.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "4,0",
+   "4.0"
+  ],
+  "perche": "Kc = [prodotti]/[reagenti] = [B]/[A] = 0,8/0,2 = 4. Un valore maggiore di 1 indica che all'equilibrio prevalgono i prodotti. Errore tipico: invertire il rapporto (0,25) o sommare le concentrazioni.",
+  "semplice": "La costante di equilibrio è «prodotti diviso reagenti». 0,8 diviso 0,2 fa 4: all'equilibrio c'è 4 volte più B che A.",
+  "passaggi": [
+   "1. Kc = [B]/[A]",
+   "2. Kc = 0,8 / 0,2",
+   "3. Kc = 4"
+  ],
+  "concetto": "costante di equilibrio"
+ },
+ {
+  "id": "CMP-CHI-118",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In una reazione del secondo ordine rispetto ad A (v = k[A]²), raddoppiando [A] la velocità diventa ___ volte maggiore.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "quattro",
+   "4 volte"
+  ],
+  "perche": "Se [A] raddoppia, la velocità diventa k(2[A])² = 4k[A]², cioè 4 volte maggiore. Errore tipico: rispondere 2, come se la reazione fosse del primo ordine.",
+  "semplice": "La concentrazione è elevata al quadrato: 2 al quadrato fa 4. Raddoppi A e la velocità quadruplica.",
+  "passaggi": [
+   "1. v₁ = k[A]²",
+   "2. v₂ = k(2[A])² = 4k[A]²",
+   "3. v₂/v₁ = 4"
+  ],
+  "concetto": "legge cinetica"
+ },
+ {
+  "id": "CMP-CHI-119",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un processo del primo ordine, dopo 3 tempi di dimezzamento rimane il ___ % della quantità iniziale.",
+  "risposta": "12,5",
+  "accettate": [
+   "12,5",
+   "12.5",
+   "12,5 %",
+   "12.5%",
+   "12,5%"
+  ],
+  "perche": "A ogni tempo di dimezzamento la quantità si dimezza: 100 → 50 → 25 → 12,5 %. In formula: (½)³ = 1/8 = 12,5 %. Errore tipico: rispondere 33 % (dividendo per 3) o 25 % (fermandosi a due emivite).",
+  "semplice": "Metà, metà della metà, metà ancora: 100, 50, 25, 12,5. Dopo tre dimezzamenti resta un ottavo, cioè il 12,5 %.",
+  "passaggi": [
+   "1. Dopo 1 t½: 50 %",
+   "2. Dopo 2 t½: 25 %",
+   "3. Dopo 3 t½: 12,5 % (= (½)³)"
+  ],
+  "concetto": "tempo di dimezzamento"
+ },
+ {
+  "id": "CMP-CHI-120",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una reazione che cede calore all'ambiente (ΔH < 0) si dice ___.",
+  "risposta": "esotermica",
+  "accettate": [
+   "esotermica",
+   "esotermico",
+   "esoergonica"
+  ],
+  "perche": "Nelle reazioni esotermiche l'entalpia dei prodotti è minore di quella dei reagenti e la differenza viene ceduta come calore: ΔH < 0. Esempi: combustioni, neutralizzazioni. Le reazioni endotermiche assorbono calore (ΔH > 0). Errore tipico: rispondere «endotermica», o confondere esotermica (riguarda ΔH) con spontanea (riguarda ΔG).",
+  "semplice": "Il fuoco di un camino scalda la stanza perché la combustione libera calore: è una reazione esotermica. «Eso» vuol dire «fuori»: il calore esce.",
+  "passaggi": [
+   "ΔH < 0 significa che l'entalpia dei prodotti è minore di quella dei reagenti.",
+   "La differenza viene ceduta all'ambiente come calore.",
+   "Le reazioni che assorbono calore (ΔH > 0) sono endotermiche.",
+   "La reazione si dice esotermica."
+  ],
+  "concetto": "reazioni esotermiche"
+ },
+ {
+  "id": "CMP-CHI-121",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La funzione di stato che misura il grado di disordine (o di dispersione dell'energia) di un sistema si chiama ___.",
+  "risposta": "entropia",
+  "accettate": [
+   "entropia",
+   "entropia (S)",
+   "S"
+  ],
+  "perche": "L'entropia S misura il numero di microstati accessibili al sistema, cioè il suo disordine. Aumenta passando da solido a liquido a gas e quando aumenta il numero di particelle. Secondo il secondo principio, l'entropia dell'universo aumenta in ogni processo spontaneo. Errore tipico: rispondere «entalpia», che riguarda il contenuto di calore.",
+  "semplice": "Una stanza in ordine tende, da sola, a diventare disordinata, mai il contrario. L'entropia misura questo disordine, che in natura tende sempre ad aumentare.",
+  "passaggi": [
+   "La funzione di stato richiesta misura il disordine, cioè il numero di microstati.",
+   "Aumenta da solido a liquido a gas.",
+   "L'entalpia riguarda invece il contenuto di calore.",
+   "Si chiama entropia."
+  ],
+  "concetto": "entropia"
+ },
+ {
+  "id": "CMP-CHI-122",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'energia minima che le molecole devono possedere perché un urto porti alla reazione si chiama energia di ___.",
+  "risposta": "attivazione",
+  "accettate": [
+   "attivazione",
+   "attivazione (Ea)"
+  ],
+  "perche": "L'energia di attivazione Ea è la «barriera» energetica tra reagenti e stato di transizione. Più è alta, più la reazione è lenta. I catalizzatori la abbassano offrendo un percorso alternativo. Errore tipico: confonderla con ΔH, che è la differenza di energia tra prodotti e reagenti e non influisce sulla velocità.",
+  "semplice": "Per far rotolare un masso giù da una collina devi prima spingerlo oltre una piccola gobba. Quella spinta iniziale è l'energia di attivazione.",
+  "passaggi": [
+   "Serve un'energia minima perché un urto tra molecole porti alla reazione.",
+   "È la barriera tra reagenti e stato di transizione; i catalizzatori la abbassano.",
+   "Non è ΔH, che è la differenza tra prodotti e reagenti.",
+   "Si chiama energia di attivazione."
+  ],
+  "concetto": "energia di attivazione"
+ },
+ {
+  "id": "CMP-CHI-123",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una sostanza che aumenta la velocità di una reazione senza essere consumata si chiama ___.",
+  "risposta": "catalizzatore",
+  "accettate": [
+   "catalizzatore",
+   "catalizzatori",
+   "catalizzatore (enzima)"
+  ],
+  "perche": "Il catalizzatore offre un meccanismo alternativo con energia di attivazione più bassa e alla fine si ritrova inalterato. Accelera nello stesso modo la reazione diretta e quella inversa, quindi non sposta l'equilibrio e non cambia ΔH né ΔG. Gli enzimi sono catalizzatori biologici. Errore tipico: rispondere «inibitore», che rallenta la reazione.",
+  "semplice": "Un catalizzatore è come una galleria scavata nella montagna: si arriva dall'altra parte molto più in fretta, senza dover salire in cima. Gli enzimi del corpo fanno proprio questo.",
+  "passaggi": [
+   "La sostanza accelera la reazione e alla fine si ritrova inalterata.",
+   "Agisce abbassando l'energia di attivazione con un percorso alternativo.",
+   "L'inibitore invece rallenta.",
+   "Si chiama catalizzatore (gli enzimi sono catalizzatori biologici)."
+  ],
+  "concetto": "catalizzatori"
+ },
+ {
+  "id": "CMP-CHI-124",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il principio secondo cui un sistema all'equilibrio, se perturbato, reagisce in modo da opporsi alla perturbazione è il principio di ___.",
+  "risposta": "Le Châtelier",
+  "accettate": [
+   "Le Châtelier",
+   "Le Chatelier",
+   "le chatelier",
+   "Le Châtelier-Braun",
+   "Le Chatelier-Braun"
+  ],
+  "perche": "Il principio di Le Châtelier permette di prevedere lo spostamento dell'equilibrio quando si modificano concentrazioni, pressione o temperatura: aggiungendo un reagente l'equilibrio si sposta verso i prodotti, aumentando la temperatura si favorisce la reazione endotermica. Errore tipico: attribuirlo a Hess o ad Arrhenius.",
+  "semplice": "Un equilibrio è un po' «testardo»: se lo disturbi, reagisce per annullare il disturbo. Se aggiungi un reagente, il sistema lo consuma producendo più prodotti.",
+  "passaggi": [
+   "Il principio descrive come reagisce un equilibrio perturbato.",
+   "Il sistema si sposta in modo da opporsi alla perturbazione (concentrazione, pressione, temperatura).",
+   "Hess riguarda il ΔH e Arrhenius la velocità.",
+   "È il principio di Le Châtelier."
+  ],
+  "concetto": "principio di Le Châtelier"
+ },
+ {
+  "id": "CMP-CHI-125",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nella sintesi dell'ammoniaca, N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g), un aumento della pressione sposta l'equilibrio verso ___.",
+  "risposta": "destra",
+  "accettate": [
+   "destra",
+   "i prodotti",
+   "prodotti",
+   "l'ammoniaca",
+   "NH₃",
+   "a destra"
+  ],
+  "perche": "A sinistra ci sono 4 moli di gas (1 + 3), a destra solo 2. Aumentando la pressione il sistema, per il principio di Le Châtelier, si sposta dalla parte con meno moli di gas, cioè verso destra, favorendo la formazione di NH₃. Errore tipico: rispondere «sinistra», o pensare che la pressione non influisca mai sugli equilibri.",
+  "semplice": "Se comprimi il recipiente, il sistema cerca di «fare spazio» riducendo il numero di molecole di gas. A destra ce ne sono meno (2 contro 4), quindi si forma più ammoniaca.",
+  "passaggi": [
+   "1. Moli di gas a sinistra: 1 + 3 = 4",
+   "2. Moli di gas a destra: 2",
+   "3. ↑ P favorisce il lato con meno moli → destra"
+  ],
+  "concetto": "effetto della pressione sull'equilibrio"
+ },
+ {
+  "id": "CMP-CHI-126",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un catalizzatore non modifica il valore della costante di ___.",
+  "risposta": "equilibrio",
+  "accettate": [
+   "equilibrio",
+   "equilibrio (K)",
+   "equilibrio K"
+  ],
+  "perche": "Il catalizzatore abbassa allo stesso modo l'energia di attivazione della reazione diretta e di quella inversa: l'equilibrio viene raggiunto prima, ma la sua posizione e il valore di K non cambiano. Cambia invece la costante cinetica k. Errore tipico: rispondere «velocità», che è proprio ciò che il catalizzatore modifica.",
+  "semplice": "Il catalizzatore fa arrivare prima alla meta, ma non sposta la meta. La composizione finale all'equilibrio resta la stessa.",
+  "passaggi": [
+   "Il catalizzatore abbassa allo stesso modo l'energia di attivazione diretta e inversa.",
+   "L'equilibrio si raggiunge prima, ma la sua posizione non cambia.",
+   "Cambia la costante cinetica k, non quella termodinamica.",
+   "Non cambia la costante di equilibrio K."
+  ],
+  "concetto": "catalizzatori ed equilibrio"
+ },
+ {
+  "id": "CMP-CHI-127",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una reazione con ΔG < 0, a temperatura e pressione costanti, si dice ___.",
+  "risposta": "spontanea",
+  "accettate": [
+   "spontanea",
+   "spontaneo",
+   "esoergonica"
+  ],
+  "perche": "Il segno di ΔG indica la spontaneità: ΔG < 0 reazione spontanea (esoergonica), ΔG > 0 non spontanea (endoergonica), ΔG = 0 equilibrio. «Spontanea» non significa «veloce»: la velocità dipende dall'energia di attivazione. Errore tipico: rispondere «esotermica», che riguarda ΔH e non ΔG.",
+  "semplice": "ΔG negativo vuol dire che la reazione può avvenire da sola, come un sasso che rotola in discesa. Ma può essere lentissima: un diamante che diventa grafite è spontaneo ma richiede tempi enormi.",
+  "passaggi": [
+   "Il segno di ΔG indica se una reazione è spontanea a T e P costanti.",
+   "ΔG < 0 spontanea, ΔG > 0 non spontanea, ΔG = 0 equilibrio.",
+   "«Esotermica» riguarda ΔH, non ΔG.",
+   "La reazione si dice spontanea."
+  ],
+  "concetto": "spontaneità"
+ },
+ {
+  "id": "CMP-CHI-128",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il calore scambiato da un sistema a pressione costante corrisponde alla variazione di ___.",
+  "risposta": "entalpia",
+  "accettate": [
+   "entalpia",
+   "entalpia (ΔH)",
+   "ΔH",
+   "H"
+  ],
+  "perche": "Per definizione ΔH = q_p: a pressione costante, la variazione di entalpia è uguale al calore assorbito o ceduto. Per questo nella maggior parte delle reazioni in laboratorio (a pressione atmosferica) si misura ΔH. A volume costante, invece, il calore corrisponde alla variazione di energia interna ΔU. Errore tipico: rispondere «entropia».",
+  "semplice": "In un recipiente aperto (pressione costante) il calore che misuri quando avviene una reazione è la variazione di entalpia, ΔH.",
+  "passaggi": [
+   "Si cerca la grandezza uguale al calore scambiato a pressione costante.",
+   "Per definizione ΔH = q_p.",
+   "A volume costante il calore corrisponde invece a ΔU.",
+   "La risposta è entalpia."
+  ],
+  "concetto": "entalpia"
+ },
+ {
+  "id": "CMP-CHI-129",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La legge secondo cui il ΔH di una reazione non dipende dal percorso seguito ma solo dagli stati iniziale e finale è la legge di ___.",
+  "risposta": "Hess",
+  "accettate": [
+   "Hess",
+   "hess"
+  ],
+  "perche": "La legge di Hess deriva dal fatto che l'entalpia è una funzione di stato: si può calcolare il ΔH di una reazione sommando i ΔH di reazioni intermedie che portano dagli stessi reagenti agli stessi prodotti. Errore tipico: attribuirla a Lavoisier o a Le Châtelier.",
+  "semplice": "Salire in cima a una montagna costa lo stesso dislivello, che tu prenda il sentiero corto o quello lungo. Per l'entalpia vale lo stesso: conta solo dove parti e dove arrivi.",
+  "passaggi": [
+   "La legge dice che il ΔH dipende solo da stato iniziale e finale.",
+   "Vale perché l'entalpia è una funzione di stato.",
+   "Permette di sommare i ΔH di reazioni intermedie.",
+   "È la legge di Hess."
+  ],
+  "concetto": "legge di Hess"
+ },
+ {
+  "id": "CMP-CHI-130",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'equazione che lega la costante cinetica k alla temperatura e all'energia di attivazione è l'equazione di ___.",
+  "risposta": "Arrhenius",
+  "accettate": [
+   "Arrhenius",
+   "arrhenius"
+  ],
+  "perche": "L'equazione di Arrhenius è k = A·e^(−Ea/RT): la costante cinetica cresce esponenzialmente con la temperatura e diminuisce all'aumentare dell'energia di attivazione. Spiega perché un aumento di 10 °C può circa raddoppiare la velocità di molte reazioni. Errore tipico: rispondere «van't Hoff» o «Nernst».",
+  "semplice": "Scaldando, più molecole hanno abbastanza energia per superare la barriera e reagire. L'equazione di Arrhenius dice quanto più veloce diventa la reazione.",
+  "passaggi": [
+   "L'equazione lega k, temperatura ed energia di attivazione.",
+   "Si scrive k = A·e^(−Ea/RT).",
+   "Nernst e van't Hoff riguardano altre grandezze.",
+   "È l'equazione di Arrhenius."
+  ],
+  "concetto": "equazione di Arrhenius"
+ },
+ {
+  "id": "CMP-CHI-131",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La configurazione ad alta energia e instabile che si forma tra reagenti e prodotti, in cima alla barriera di energia, si chiama complesso ___.",
+  "risposta": "attivato",
+  "accettate": [
+   "attivato",
+   "attivato (stato di transizione)"
+  ],
+  "perche": "Il complesso attivato (o stato di transizione) è la disposizione degli atomi di massima energia lungo il percorso di reazione, in cui alcuni legami si stanno rompendo e altri formando. Non è isolabile, a differenza degli intermedi di reazione. Errore tipico: confonderlo con un intermedio, che si trova in un minimo relativo di energia.",
+  "semplice": "Il complesso attivato è come il punto più alto di un passo di montagna: un istante di equilibrio instabile da cui si scende verso i prodotti oppure si torna indietro ai reagenti.",
+  "passaggi": [
+   "La configurazione si trova in cima alla barriera di energia, tra reagenti e prodotti.",
+   "È instabile e non isolabile: alcuni legami si rompono, altri si formano.",
+   "Un intermedio sta invece in un minimo relativo di energia.",
+   "Si chiama complesso attivato (stato di transizione)."
+  ],
+  "concetto": "stato di transizione"
+ },
+ {
+  "id": "CMP-CHI-132",
+  "materia": "Chimica",
+  "argomento": "Termodinamica, cinetica ed equilibrio",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Se il quoziente di reazione Q è minore della costante di equilibrio K, la reazione procede verso la formazione dei ___.",
+  "risposta": "prodotti",
+  "accettate": [
+   "prodotti",
+   "prodotto",
+   "destra"
+  ],
+  "perche": "Q ha la stessa espressione di K ma con le concentrazioni del momento. Se Q < K ci sono «troppo pochi» prodotti rispetto all'equilibrio, quindi la reazione procede verso destra finché Q = K. Se Q > K procede verso i reagenti. Errore tipico: invertire il verso.",
+  "semplice": "Q è la «fotografia» di adesso, K quella dell'arrivo. Se Q è più piccolo, mancano ancora prodotti: la reazione continua a produrne.",
+  "passaggi": [
+   "Q ha la stessa espressione di K ma con le concentrazioni del momento.",
+   "Se Q < K i prodotti sono meno di quelli all'equilibrio.",
+   "La reazione procede verso destra finché Q = K.",
+   "Si formano i prodotti."
+  ],
+  "concetto": "quoziente di reazione"
+ },
+ {
+  "id": "CMP-CHI-133",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una molecola di glucosio (C₆H₁₂O₆) contiene ___ atomi di carbonio.",
+  "risposta": "6",
+  "accettate": [
+   "6",
+   "sei"
+  ],
+  "perche": "Il glucosio è un esoso: la formula molecolare C₆H₁₂O₆ indica 6 carboni, 12 idrogeni e 6 ossigeni. Il prefisso eso- significa proprio sei. Errore tipico: rispondere 5, confondendolo con i pentosi come ribosio e desossiribosio.",
+  "semplice": "Il glucosio è uno zucchero a 6 carboni, detto esoso. Il ribosio dell'RNA invece ne ha 5 ed è un pentoso.",
+  "passaggi": [
+   "1. Formula: C₆H₁₂O₆",
+   "2. Il pedice di C è 6",
+   "3. Atomi di carbonio = 6"
+  ],
+  "concetto": "monosaccaridi"
+ },
+ {
+  "id": "CMP-CHI-134",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il pentano, alcano con 5 atomi di carbonio (formula generale CₙH₂ₙ₊₂), contiene ___ atomi di idrogeno.",
+  "risposta": "12",
+  "accettate": [
+   "12",
+   "dodici"
+  ],
+  "perche": "Per gli alcani aciclici la formula generale è CₙH₂ₙ₊₂; con n = 5 si ha H = 2 × 5 + 2 = 12, quindi C₅H₁₂. Errore tipico: usare la formula degli alcheni CₙH₂ₙ (10) o dimenticare il +2 dei due carboni terminali.",
+  "semplice": "In un alcano ogni carbonio della catena porta 2 idrogeni, più 1 in più a ciascuna estremità. 5 × 2 + 2 = 12.",
+  "passaggi": [
+   "1. Formula alcani: CₙH₂ₙ₊₂",
+   "2. n = 5",
+   "3. H = 2 × 5 + 2 = 12"
+  ],
+  "concetto": "formula degli alcani"
+ },
+ {
+  "id": "CMP-CHI-135",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il 2-butanolo, CH₃–CH(OH)–CH₂–CH₃, contiene ___ atomo/i di carbonio chirale (stereocentro).",
+  "risposta": "1",
+  "accettate": [
+   "1",
+   "uno",
+   "un"
+  ],
+  "perche": "Un carbonio è chirale quando è legato a quattro gruppi diversi. Nel 2-butanolo solo il C2 lo è: porta H, OH, CH₃ e CH₂CH₃. C1 e C4 hanno tre H, C3 ha due H. Quindi c'è un solo stereocentro e la molecola esiste come coppia di enantiomeri. Errore tipico: contare anche C3, che ha due idrogeni uguali.",
+  "semplice": "Cerca un carbonio con 4 «vicini» tutti diversi. Nel 2-butanolo c'è solo il secondo carbonio: idrogeno, OH, metile ed etile. Quindi uno.",
+  "passaggi": [
+   "1. C1 (CH₃) e C4 (CH₃): tre H uguali → no",
+   "2. C3 (CH₂): due H uguali → no",
+   "3. C2: H, OH, CH₃, C₂H₅ diversi → sì; totale = 1"
+  ],
+  "concetto": "chiralità"
+ },
+ {
+  "id": "CMP-CHI-136",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'alcano C₄H₁₀ esiste sotto forma di ___ isomeri strutturali.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "due"
+  ],
+  "perche": "Con 4 atomi di carbonio si possono costruire due scheletri: la catena lineare (n-butano) e la catena ramificata (2-metilpropano, o isobutano). Errore tipico: contare come isomeri diversi le stesse catene disegnate piegate, che invece sono la stessa molecola.",
+  "semplice": "Con 4 carboni puoi fare una fila dritta (butano) oppure una «T» con un carbonio al centro e tre attorno (isobutano). Altre forme sono solo la stessa molecola disegnata diversamente.",
+  "passaggi": [
+   "1. Catena lineare: CH₃CH₂CH₂CH₃ (n-butano)",
+   "2. Catena ramificata: CH₃CH(CH₃)CH₃ (isobutano)",
+   "3. Isomeri = 2"
+  ],
+  "concetto": "isomeria di catena"
+ },
+ {
+  "id": "CMP-CHI-137",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un tripeptide lineare contiene ___ legami peptidici.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "due"
+  ],
+  "perche": "Il legame peptidico si forma tra il gruppo carbossilico di un amminoacido e il gruppo amminico del successivo, con perdita di una molecola d'acqua. In una catena lineare di n amminoacidi ci sono n − 1 legami peptidici: 3 − 1 = 2. Errore tipico: rispondere 3, contando gli amminoacidi invece dei legami.",
+  "semplice": "Pensa a 3 perline in fila: per unirle servono 2 fili. Così 3 amminoacidi sono uniti da 2 legami peptidici.",
+  "passaggi": [
+   "1. Amminoacidi = 3",
+   "2. Legami in catena lineare = n − 1",
+   "3. 3 − 1 = 2"
+  ],
+  "concetto": "legame peptidico"
+ },
+ {
+  "id": "CMP-CHI-138",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il gruppo funzionale –COOH si chiama gruppo ___.",
+  "risposta": "carbossilico",
+  "accettate": [
+   "carbossilico",
+   "carbossile",
+   "carbossilico (–COOH)"
+  ],
+  "perche": "Il gruppo carbossilico è formato da un carbonile (C=O) e un ossidrile (–OH) sullo stesso carbonio; caratterizza gli acidi carbossilici, come l'acido acetico, ed è acido perché può cedere H⁺ formando l'anione carbossilato. Errore tipico: rispondere «carbonilico» (solo C=O, tipico di aldeidi e chetoni) o «ossidrilico» (solo –OH, degli alcoli).",
+  "semplice": "Il –COOH è la «firma» degli acidi organici, come l'acido acetico dell'aceto. Unisce un C=O e un OH sullo stesso carbonio.",
+  "passaggi": [
+   "Il gruppo –COOH unisce un carbonile C=O e un ossidrile –OH sullo stesso carbonio.",
+   "Solo C=O è il carbonilico, solo –OH l'ossidrilico.",
+   "–COOH caratterizza gli acidi carbossilici, come l'acido acetico.",
+   "Si chiama gruppo carbossilico."
+  ],
+  "concetto": "gruppi funzionali"
+ },
+ {
+  "id": "CMP-CHI-139",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Composti che hanno la stessa formula molecolare ma una diversa disposizione degli atomi si chiamano ___.",
+  "risposta": "isomeri",
+  "accettate": [
+   "isomeri",
+   "isomero"
+  ],
+  "perche": "Gli isomeri hanno la stessa formula molecolare ma strutture diverse, e quindi proprietà diverse. Si distinguono in isomeri strutturali (di catena, di posizione, di gruppo funzionale) e stereoisomeri (geometrici ed enantiomeri). Esempio: etanolo e dimetiletere, entrambi C₂H₆O. Errore tipico: confonderli con gli isotopi, che riguardano i nuclei atomici.",
+  "semplice": "Con gli stessi mattoncini LEGO si possono costruire oggetti diversi. Gli isomeri sono molecole fatte con gli stessi atomi ma montati in modo diverso.",
+  "passaggi": [
+   "I composti hanno la stessa formula molecolare ma struttura diversa.",
+   "Esempio: etanolo e dimetiletere, entrambi C₂H₆O.",
+   "Non sono isotopi, che riguardano i nuclei degli atomi.",
+   "Si chiamano isomeri."
+  ],
+  "concetto": "isomeria"
+ },
+ {
+  "id": "CMP-CHI-140",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una molecola che non è sovrapponibile alla propria immagine speculare si dice ___.",
+  "risposta": "chirale",
+  "accettate": [
+   "chirale",
+   "chirali"
+  ],
+  "perche": "Una molecola chirale e la sua immagine speculare sono enantiomeri: hanno le stesse proprietà fisiche ma ruotano in senso opposto il piano della luce polarizzata e possono avere effetti biologici diversi. La causa più comune è un carbonio legato a quattro gruppi diversi. Errore tipico: rispondere «achirale» o «simmetrica».",
+  "semplice": "Le tue mani sono una l'immagine allo specchio dell'altra, ma non riesci a sovrapporle: il guanto destro non va sulla mano sinistra. Le molecole così si chiamano chirali, da «cheir», mano in greco.",
+  "passaggi": [
+   "La molecola non si sovrappone alla sua immagine speculare, come le mani.",
+   "La causa più comune è un carbonio legato a quattro gruppi diversi.",
+   "Molecola e immagine speculare sono enantiomeri.",
+   "La molecola si dice chirale."
+  ],
+  "concetto": "chiralità"
+ },
+ {
+  "id": "CMP-CHI-141",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La reazione tra un acido carbossilico e un alcol, che produce un estere e acqua, si chiama ___.",
+  "risposta": "esterificazione",
+  "accettate": [
+   "esterificazione",
+   "esterificazione di Fischer",
+   "condensazione"
+  ],
+  "perche": "Nell'esterificazione (di Fischer), catalizzata da un acido, il gruppo –COOH reagisce con il gruppo –OH dell'alcol: si forma l'estere R–COO–R′ e si elimina una molecola d'acqua. È una reazione di condensazione all'equilibrio; la reazione inversa è l'idrolisi dell'estere. Errore tipico: rispondere «saponificazione», che è l'idrolisi basica degli esteri.",
+  "semplice": "Acido acetico più etanolo danno acetato di etile, l'odore del solvente per smalto, più acqua. Questa unione acido + alcol si chiama esterificazione.",
+  "passaggi": [
+   "Reagiscono un acido carbossilico e un alcol.",
+   "–COOH e –OH si condensano formando R–COO–R′ ed eliminando acqua.",
+   "La saponificazione è invece l'idrolisi basica degli esteri.",
+   "La reazione è l'esterificazione."
+  ],
+  "concetto": "esteri"
+ },
+ {
+  "id": "CMP-CHI-142",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il legame covalente che unisce due monosaccaridi, ad esempio nel saccarosio, si chiama legame ___.",
+  "risposta": "glicosidico",
+  "accettate": [
+   "glicosidico",
+   "glicosidico (O-glicosidico)",
+   "O-glicosidico",
+   "glucosidico"
+  ],
+  "perche": "Il legame glicosidico si forma per condensazione tra il gruppo –OH anomerico di un monosaccaride e un –OH di un altro zucchero, con eliminazione di acqua. Può essere α o β: l'amido ha legami α(1→4), la cellulosa β(1→4). Errore tipico: rispondere «peptidico» (tra amminoacidi) o «estere».",
+  "semplice": "Il saccarosio, lo zucchero da cucina, è fatto di glucosio e fruttosio uniti da un ponte di ossigeno: il legame glicosidico.",
+  "passaggi": [
+   "Il legame unisce due monosaccaridi, come glucosio e fruttosio nel saccarosio.",
+   "Si forma per condensazione tra l'–OH anomerico e un –OH dell'altro zucchero.",
+   "Il peptidico unisce invece amminoacidi.",
+   "È il legame glicosidico."
+  ],
+  "concetto": "legame glicosidico"
+ },
+ {
+  "id": "CMP-CHI-143",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "A un pH uguale al proprio punto isoelettrico, un amminoacido si trova principalmente nella forma di ione dipolare, detta ___.",
+  "risposta": "zwitterione",
+  "accettate": [
+   "zwitterione",
+   "zwitterion",
+   "ione dipolare",
+   "zwitterioni",
+   "sale interno"
+  ],
+  "perche": "Allo zwitterione il gruppo amminico è protonato (–NH₃⁺) e il carbossilico è deprotonato (–COO⁻): la carica netta è zero, quindi in un campo elettrico l'amminoacido non migra. Errore tipico: pensare che al punto isoelettrico l'amminoacido sia privo di cariche, mentre ne ha due opposte.",
+  "semplice": "Allo zwitterione l'amminoacido ha un «più» da una parte e un «meno» dall'altra, come una calamita. In totale è neutro.",
+  "passaggi": [
+   "Al punto isoelettrico la carica netta dell'amminoacido è zero.",
+   "Il gruppo amminico è protonato (–NH₃⁺) e il carbossilico deprotonato (–COO⁻).",
+   "Ha quindi due cariche opposte: è uno ione dipolare.",
+   "Questa forma si chiama zwitterione."
+  ],
+  "concetto": "amminoacidi e punto isoelettrico"
+ },
+ {
+  "id": "CMP-CHI-144",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'idrolisi basica dei trigliceridi, che produce glicerolo e sali di acidi grassi (saponi), si chiama ___.",
+  "risposta": "saponificazione",
+  "accettate": [
+   "saponificazione",
+   "saponificazione dei grassi"
+  ],
+  "perche": "Trattando un trigliceride con una base forte (NaOH o KOH), i tre legami estere si idrolizzano: si ottengono glicerolo e tre sali di sodio o potassio degli acidi grassi, cioè i saponi. Errore tipico: rispondere «esterificazione», che è la reazione opposta.",
+  "semplice": "Le nonne facevano il sapone bollendo grasso con soda caustica. La soda spezza i grassi e ne fa sapone: la reazione si chiama, appunto, saponificazione.",
+  "passaggi": [
+   "Un trigliceride (estere) viene trattato con una base forte come NaOH.",
+   "I tre legami estere si idrolizzano: si ottengono glicerolo e sali di acidi grassi.",
+   "Quei sali sono i saponi.",
+   "La reazione si chiama saponificazione."
+  ],
+  "concetto": "saponificazione"
+ },
+ {
+  "id": "CMP-CHI-145",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Gli idrocarburi che contengono almeno un doppio legame carbonio-carbonio si chiamano ___.",
+  "risposta": "alcheni",
+  "accettate": [
+   "alcheni",
+   "alchene",
+   "olefine"
+  ],
+  "perche": "Gli alcheni (o olefine) hanno almeno un legame C=C, con carboni ibridati sp², e formula generale CₙH₂ₙ se aciclici con un solo doppio legame. Danno tipicamente reazioni di addizione. Gli alcani hanno solo legami semplici, gli alchini almeno un triplo legame. Errore tipico: rispondere «alchini».",
+  "semplice": "Il nome dice il legame: alc-ANI solo legami semplici, alc-ENI almeno un doppio, alc-INI almeno un triplo. L'etene, il gas che fa maturare la frutta, è un alchene.",
+  "passaggi": [
+   "Gli idrocarburi hanno almeno un doppio legame C=C.",
+   "Alcani hanno solo legami semplici, alchini almeno un triplo.",
+   "Con il doppio legame i carboni sono sp² e la formula è CₙH₂ₙ.",
+   "Si chiamano alcheni."
+  ],
+  "concetto": "idrocarburi insaturi"
+ },
+ {
+  "id": "CMP-CHI-146",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il benzene, con un anello di 6 elettroni π delocalizzati, è il capostipite dei composti ___.",
+  "risposta": "aromatici",
+  "accettate": [
+   "aromatici",
+   "aromatico",
+   "arenici"
+  ],
+  "perche": "Il benzene ha un anello planare di 6 atomi di carbonio sp² con 6 elettroni π delocalizzati (regola di Hückel: 4n + 2 elettroni π). La delocalizzazione lo rende molto stabile, per cui preferisce reazioni di sostituzione elettrofila invece che di addizione. Errore tipico: rispondere «alifatici» o considerarlo un semplice cicloalchene.",
+  "semplice": "Nel benzene gli elettroni dei doppi legami non stanno fermi ma girano su tutto l'anello, come una ciambella di elettroni. Questo lo rende speciale e stabile: è un composto aromatico.",
+  "passaggi": [
+   "Il benzene ha un anello planare con 6 elettroni π delocalizzati.",
+   "Rispetta la regola di Hückel (4n + 2 elettroni π, con n = 1).",
+   "La delocalizzazione lo rende molto stabile: preferisce la sostituzione all'addizione.",
+   "È il capostipite dei composti aromatici."
+  ],
+  "concetto": "aromaticità"
+ },
+ {
+  "id": "CMP-CHI-147",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'ossidazione blanda di un alcol primario produce prima una ___.",
+  "risposta": "aldeide",
+  "accettate": [
+   "aldeide",
+   "aldeidi"
+  ],
+  "perche": "Un alcol primario (R–CH₂OH) si ossida prima ad aldeide (R–CHO) e, se l'ossidazione prosegue, ad acido carbossilico (R–COOH). Ad esempio l'etanolo si ossida ad acetaldeide e poi ad acido acetico. Errore tipico: rispondere «chetone», che si ottiene invece dagli alcoli secondari.",
+  "semplice": "Il vino lasciato all'aria diventa aceto: l'etanolo si ossida ad acetaldeide e poi ad acido acetico. Il primo passaggio dà un'aldeide.",
+  "passaggi": [
+   "Un alcol primario ha l'–OH su un carbonio legato a un solo altro carbonio (R–CH₂OH).",
+   "Ossidandosi perde due H e forma un C=O in fondo alla catena: R–CHO.",
+   "Se l'ossidazione continua si arriva all'acido carbossilico; il chetone viene dagli alcoli secondari.",
+   "Il primo prodotto è un'aldeide."
+  ],
+  "concetto": "ossidazione degli alcoli"
+ },
+ {
+  "id": "CMP-CHI-148",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'ossidazione di un alcol secondario produce un ___.",
+  "risposta": "chetone",
+  "accettate": [
+   "chetone",
+   "chetoni"
+  ],
+  "perche": "In un alcol secondario il carbonio che porta l'–OH è legato a due gruppi alchilici: ossidandosi diventa un gruppo carbonilico interno alla catena, cioè un chetone (R–CO–R′). L'ossidazione si ferma lì, perché quel carbonio non ha altri idrogeni da perdere. Esempio: 2-propanolo → acetone. Errore tipico: rispondere «aldeide» o «acido carbossilico».",
+  "semplice": "L'alcol isopropilico, ossidandosi, diventa acetone, quello dello struccante per le unghie. Gli alcoli secondari danno chetoni.",
+  "passaggi": [
+   "In un alcol secondario il carbonio con l'–OH è legato a due gruppi alchilici.",
+   "Ossidandosi forma un C=O interno alla catena: R–CO–R′.",
+   "Non può proseguire, perché quel carbonio non ha altri H da perdere.",
+   "Si ottiene un chetone (es. 2-propanolo → acetone)."
+  ],
+  "concetto": "ossidazione degli alcoli"
+ },
+ {
+  "id": "CMP-CHI-149",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il polisaccaride di riserva energetica negli animali, accumulato soprattutto nel fegato e nei muscoli, è il ___.",
+  "risposta": "glicogeno",
+  "accettate": [
+   "glicogeno",
+   "glicogeno animale"
+  ],
+  "perche": "Il glicogeno è un polimero di glucosio con legami α(1→4) e ramificazioni α(1→6) molto frequenti, che permettono di liberare rapidamente glucosio. Nei vegetali la riserva è l'amido, mentre la cellulosa ha funzione strutturale. Errore tipico: rispondere «amido».",
+  "semplice": "Il fegato conserva lo zucchero come glicogeno, una specie di «dispensa» di glucosio. Quando non mangi da qualche ora, il fegato lo smonta e rimanda glucosio nel sangue.",
+  "passaggi": [
+   "Si cerca il polisaccaride di riserva negli animali.",
+   "L'amido è la riserva dei vegetali, la cellulosa ha funzione strutturale.",
+   "Negli animali il glucosio è immagazzinato in un polimero molto ramificato nel fegato e nei muscoli.",
+   "È il glicogeno."
+  ],
+  "concetto": "polisaccaridi"
+ },
+ {
+  "id": "CMP-CHI-150",
+  "materia": "Chimica",
+  "argomento": "Chimica organica e biomolecole",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Gli acidi grassi che non contengono doppi legami carbonio-carbonio nella catena si dicono ___.",
+  "risposta": "saturi",
+  "accettate": [
+   "saturi",
+   "saturo"
+  ],
+  "perche": "Negli acidi grassi saturi ogni carbonio della catena è legato al massimo numero di idrogeni; le catene sono dritte e si impacchettano bene, per cui i grassi che li contengono (come il burro) sono solidi a temperatura ambiente. Gli insaturi hanno uno o più doppi legami cis che piegano la catena (oli). Errore tipico: rispondere «insaturi».",
+  "semplice": "Il burro è solido perché i suoi acidi grassi saturi sono «dritti» e si impilano bene. L'olio d'oliva è liquido perché i suoi acidi grassi insaturi sono piegati.",
+  "passaggi": [
+   "La catena non ha doppi legami C=C.",
+   "Ogni carbonio è legato al massimo numero di idrogeni: la catena è «satura» di H.",
+   "Gli insaturi hanno invece uno o più doppi legami.",
+   "Si dicono acidi grassi saturi."
+  ],
+  "concetto": "acidi grassi"
+ }
+]

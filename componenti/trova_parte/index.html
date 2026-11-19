@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{margin:0;background:transparent;color:#e8e8e8;font-family:-apple-system,Segoe UI,sans-serif}
+  #scena{width:100%;height:420px;border-radius:12px;background:radial-gradient(circle,#1d2330,#0f1218);position:relative;touch-action:none}
+  #mv{width:100%;height:420px;border-radius:12px;background:radial-gradient(circle,#1d2330,#0f1218)}
+  .barra{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  button{background:#161b24;color:#e8e8e8;border:1px solid #2B3240;border-radius:8px;padding:9px 12px;font-size:14px;min-height:44px;cursor:pointer}
+  #msg{margin-top:8px;font-size:15px;line-height:1.45}
+  @media (max-width:560px){#scena,#mv{height:340px}}
+</style></head><body>
+<div id="contenitore"></div>
+<div class="barra"><button id="aiuto">🙋 Non lo trovo: mostramelo</button><button id="fronte">↺ Vista iniziale</button></div>
+<div id="msg"></div>
+<script>
+// Un componente Streamlit scritto a mano: riceve il modello e la parte da trovare, rimanda che cosa si è toccato.
+function invia(tipo, dati){ window.parent.postMessage(Object.assign({isStreamlitMessage:true, type:tipo}, dati), "*"); }
+function altezza(){ invia("streamlit:setFrameHeight", {height: document.body.scrollHeight + 8}); }
+let args = null, turno = null, finito = false, mv = null, V = null, atomi = [];
+const msg = document.getElementById("msg");
+function rispondi(toccato, giusto){
+  if (finito) return; finito = true;
+  invia("streamlit:setComponentValue", {value:{turno: turno, toccato: toccato, giusto: giusto}, dataType:"json"});
+}
+// --- Organi (model-viewer) ---
+let colori = new Map();
+function coloraParte(nome, rgba){
+  if (!mv || !mv.model) return;
+  const m = mv.model.materials.find(x => x.name === nome); if (!m) return;
+  m.pbrMetallicRoughness.setBaseColorFactor(rgba); m.setAlphaMode("OPAQUE");
+}
+function organo(){
+  const c = document.getElementById("contenitore");
+  c.innerHTML = `<model-viewer id="mv" src="data:model/gltf-binary;base64,${args.glb}" camera-controls
+     camera-orbit="${args.vista}" environment-image="neutral" exposure="1.0" interaction-prompt="none"
+     min-camera-orbit="auto auto 5%"></model-viewer>`;
+  mv = document.getElementById("mv");
+  let inizio = null;
+  mv.addEventListener("pointerdown", e => { inizio = [e.clientX, e.clientY]; });
+  mv.addEventListener("click", e => {
+    if (finito) return;
+    if (inizio && Math.hypot(e.clientX - inizio[0], e.clientY - inizio[1]) > 8) return;  // ha girato il modello
+    const m = mv.materialFromPoint(e.clientX, e.clientY); if (!m) return;
+    const giusto = m.name === args.bersaglio;
+    coloraParte(args.bersaglio, [0.25, 0.85, 0.35, 1]);
+    if (!giusto) coloraParte(m.name, [0.95, 0.25, 0.2, 1]);
+    msg.innerHTML = giusto ? "✅ <b>Giusto!</b>" : "❌ Hai toccato un'altra parte (in rosso). Quella giusta è in <b style='color:#6BCB77'>verde</b>.";
+    altezza(); rispondi(m.name, giusto);
+  });
+  document.getElementById("aiuto").onclick = () => {
+    if (finito) return; coloraParte(args.bersaglio, [0.25, 0.85, 0.35, 1]);
+    msg.innerHTML = "Eccola, in <b style='color:#6BCB77'>verde</b>."; altezza(); rispondi(null, false);
+  };
+  document.getElementById("fronte").onclick = () => { mv.cameraOrbit = args.vista; mv.cameraTarget = "auto auto auto"; mv.fieldOfView = "auto"; };
+}
+// --- Molecole (3Dmol) ---
+function molecola(){
+  const c = document.getElementById("contenitore");
+  c.innerHTML = '<div id="scena"></div>';
+  V = $3Dmol.createViewer("scena", {backgroundColor:"#0f1218"});
+  V.addModel(args.sdf, "sdf");
+  V.setStyle({}, {stick:{radius:0.16, colorscheme:"Jmol"}, sphere:{scale:0.3, colorscheme:"Jmol"}});
+  V.setClickable({}, true, atomo => {
+    if (finito) return;
+    const giusto = atomo.elem === args.bersaglio;
+    V.setStyle({elem: args.bersaglio}, {stick:{radius:0.16, colorscheme:"Jmol"}, sphere:{scale:0.45, color:"#6BCB77"}});
+    if (!giusto) V.setStyle({serial: atomo.serial}, {stick:{radius:0.16, colorscheme:"Jmol"}, sphere:{scale:0.45, color:"#F04438"}});
+    V.render();
+    msg.innerHTML = giusto ? "✅ <b>Giusto!</b>" : "❌ Hai toccato un atomo di <b>" + atomo.elem + "</b> (in rosso). Quelli giusti sono in <b style='color:#6BCB77'>verde</b>.";
+    altezza(); rispondi(atomo.elem, giusto);
+  });
+  V.zoomTo(); V.render();
+  document.getElementById("aiuto").onclick = () => {
+    if (finito) return;
+    V.setStyle({elem: args.bersaglio}, {stick:{radius:0.16, colorscheme:"Jmol"}, sphere:{scale:0.45, color:"#6BCB77"}}); V.render();
+    msg.innerHTML = "Eccoli, in <b style='color:#6BCB77'>verde</b>."; altezza(); rispondi(null, false);
+  };
+  document.getElementById("fronte").onclick = () => { V.zoomTo(); V.render(); };
+}
+function carica(src, pronto, modulo){
+  if (document.querySelector(`script[src="${src}"]`)) return pronto();
+  const s = document.createElement("script"); s.src = src; if (modulo) s.type = "module"; s.onload = pronto; document.head.appendChild(s);
+}
+window.addEventListener("message", e => {
+  const d = e.data; if (!d || d.type !== "streamlit:render") return;
+  const nuovi = d.args;
+  if (args && nuovi.turno === turno) return;   // stesso turno: niente da rifare
+  args = nuovi; turno = nuovi.turno; finito = false; msg.innerHTML = "";
+  if (args.tipo === "organo") carica(args.libreria, organo, true);
+  else carica(args.libreria, molecola, false);
+  setTimeout(altezza, 50); setTimeout(altezza, 800);
+});
+invia("streamlit:componentReady", {apiVersion: 1});
+altezza();
+</script></body></html>

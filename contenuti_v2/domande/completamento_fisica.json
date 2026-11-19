@@ -1,0 +1,3440 @@
+[
+ {
+  "id": "CMP-FIS-001",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un'automobile viaggia a 72 km/h. Nel Sistema Internazionale la sua velocità vale ___ m/s.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 m/s",
+   "20m/s"
+  ],
+  "perche": "Per passare da km/h a m/s si divide per 3,6, perché 1 km = 1000 m e 1 h = 3600 s. Quindi 72 / 3,6 = 20 m/s. L'errore tipico è moltiplicare per 3,6 (ottenendo 259,2) invece di dividere.",
+  "semplice": "Un'ora ha 3600 secondi e un chilometro 1000 metri. In un'ora l'auto fa 72 000 m: in un secondo fa 72 000 / 3600 = 20 m. Ricorda: da km/h a m/s si divide per 3,6.",
+  "passaggi": [
+   "1. 72 km/h = 72 000 m / 3600 s",
+   "2. 72 000 / 3600 = 20",
+   "3. v = 20 m/s"
+  ],
+  "concetto": "conversione km/h in m/s"
+ },
+ {
+  "id": "CMP-FIS-002",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale l'unità di misura della forza è il ___.",
+  "risposta": "newton",
+  "accettate": [
+   "newton",
+   "N",
+   "Newton",
+   "newton (N)"
+  ],
+  "perche": "Il newton è l'unità derivata della forza: 1 N = 1 kg·m/s², cioè la forza che imprime a 1 kg un'accelerazione di 1 m/s². Non va confuso con il joule (energia) né con il chilogrammo-peso, unità pratica non SI.",
+  "semplice": "Se spingi un oggetto di 1 kg e lo fai accelerare di 1 m/s² ogni secondo, stai usando 1 newton. Una mela piccola (circa 100 g) pesa circa 1 N.",
+  "passaggi": [
+   "La domanda chiede l'unità SI della forza.",
+   "Dal secondo principio F = m·a, quindi l'unità è kg·m/s².",
+   "Il joule misura l'energia e il chilogrammo-peso non è SI.",
+   "1 kg·m/s² si chiama newton."
+  ],
+  "concetto": "unità della forza"
+ },
+ {
+  "id": "CMP-FIS-003",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una sostanza ha densità 2,5 g/cm³. Nel Sistema Internazionale la sua densità vale ___ kg/m³.",
+  "risposta": "2500",
+  "accettate": [
+   "2500",
+   "2500 kg/m³",
+   "2500kg/m³",
+   "2,5·10³",
+   "2,5×10³"
+  ],
+  "perche": "1 g/cm³ = 1000 kg/m³, perché 1 g = 10⁻³ kg e 1 cm³ = 10⁻⁶ m³: il rapporto è 10³. Quindi 2,5 g/cm³ = 2500 kg/m³. L'errore tipico è dividere per 1000 o usare il fattore 100.",
+  "semplice": "L'acqua ha densità 1 g/cm³, cioè 1000 kg/m³: un metro cubo d'acqua pesa una tonnellata. Una sostanza 2,5 volte più densa ha quindi 2500 kg/m³.",
+  "passaggi": [
+   "1. 1 g/cm³ = 10⁻³ kg / 10⁻⁶ m³ = 10³ kg/m³",
+   "2. 2,5 × 10³ = 2500 kg/m³"
+  ],
+  "concetto": "conversione della densità"
+ },
+ {
+  "id": "CMP-FIS-004",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le grandezze che, per essere descritte, richiedono modulo, direzione e verso si chiamano grandezze ___.",
+  "risposta": "vettoriali",
+  "accettate": [
+   "vettoriali",
+   "vettoriale",
+   "vettori"
+  ],
+  "perche": "Una grandezza vettoriale (velocità, forza, accelerazione, spostamento) è definita da modulo, direzione e verso. Le grandezze scalari (massa, temperatura, energia, tempo) bastano un numero e un'unità. Errore tipico: considerare vettoriale l'energia o la pressione, che sono scalari.",
+  "semplice": "Dire «spingo con 10 N» non basta: devi dire anche in che direzione e verso spingi. La temperatura invece è solo un numero: 20 °C e basta.",
+  "passaggi": [
+   "Le grandezze descritte richiedono modulo, direzione e verso.",
+   "Esempi: velocità, forza, accelerazione, spostamento.",
+   "Massa, energia e temperatura bastano un numero: sono scalari.",
+   "Si chiamano grandezze vettoriali."
+  ],
+  "concetto": "grandezze vettoriali e scalari"
+ },
+ {
+  "id": "CMP-FIS-005",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Due forze perpendicolari agiscono sullo stesso punto e hanno modulo 3 N e 4 N. La forza risultante ha modulo ___ N.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "5 N",
+   "5N"
+  ],
+  "perche": "Per vettori perpendicolari il modulo della risultante si ottiene con il teorema di Pitagora: √(3² + 4²) = √25 = 5 N. L'errore tipico è sommare i moduli (7 N), cosa valida solo per vettori paralleli e concordi.",
+  "semplice": "Immagina di camminare 3 passi verso est e 4 verso nord: alla fine sei a 5 passi dal punto di partenza, non a 7. Con i vettori perpendicolari si usa Pitagora.",
+  "passaggi": [
+   "1. R = √(F₁² + F₂²)",
+   "2. R = √(9 + 16) = √25",
+   "3. R = 5 N"
+  ],
+  "concetto": "somma di vettori perpendicolari"
+ },
+ {
+  "id": "CMP-FIS-006",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il prodotto scalare di due vettori perpendicolari tra loro vale ___.",
+  "risposta": "0",
+  "accettate": [
+   "0",
+   "zero",
+   "nullo"
+  ],
+  "perche": "Il prodotto scalare vale a·b·cos θ; per θ = 90° il coseno è zero, quindi il prodotto è nullo qualunque siano i moduli. L'errore tipico è confonderlo con il prodotto vettoriale, che invece è massimo per vettori perpendicolari.",
+  "semplice": "Il prodotto scalare misura quanto un vettore «va nella direzione» dell'altro. Se sono ad angolo retto, uno non ha nessuna parte lungo l'altro: il risultato è zero.",
+  "passaggi": [
+   "1. a·b = |a||b| cos θ",
+   "2. cos 90° = 0",
+   "3. a·b = 0"
+  ],
+  "concetto": "prodotto scalare"
+ },
+ {
+  "id": "CMP-FIS-007",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'unità di misura fondamentale del Sistema Internazionale per l'intensità di corrente elettrica è l'___.",
+  "risposta": "ampere",
+  "accettate": [
+   "ampere",
+   "A",
+   "Ampere",
+   "ampère"
+  ],
+  "perche": "L'ampere è una delle sette unità fondamentali del SI (con metro, chilogrammo, secondo, kelvin, mole e candela). Volt, ohm e coulomb sono invece unità derivate. Errore tipico: credere che il coulomb sia fondamentale, mentre 1 C = 1 A·s.",
+  "semplice": "La corrente dice quanta carica passa in un filo ogni secondo. Il caricabatterie del telefono fornisce di solito 1-2 ampere.",
+  "passaggi": [
+   "Le unità fondamentali del SI sono sette: m, kg, s, A, K, mol, cd.",
+   "Volt, ohm e coulomb sono derivate (1 C = 1 A·s).",
+   "Quella della corrente elettrica è tra le fondamentali.",
+   "È l'ampere."
+  ],
+  "concetto": "unità fondamentali SI"
+ },
+ {
+  "id": "CMP-FIS-008",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "1 kWh (kilowattora) corrisponde a un'energia di ___ MJ.",
+  "risposta": "3,6",
+  "accettate": [
+   "3,6",
+   "3.6",
+   "3,6 MJ",
+   "3,6MJ",
+   "3.6 MJ",
+   "3.6MJ"
+  ],
+  "perche": "1 kWh è l'energia fornita da una potenza di 1000 W per 3600 s: 1000 × 3600 = 3,6 × 10⁶ J = 3,6 MJ. L'errore tipico è pensare che il kWh sia un'unità di potenza.",
+  "semplice": "Una stufetta da 1000 W accesa per un'ora consuma 1 kWh. Ogni secondo consuma 1000 J, e un'ora ha 3600 secondi: in tutto 3 600 000 J.",
+  "passaggi": [
+   "1. 1 kWh = 1000 W × 3600 s",
+   "2. = 3 600 000 J = 3,6 × 10⁶ J",
+   "3. = 3,6 MJ"
+  ],
+  "concetto": "kilowattora e joule"
+ },
+ {
+  "id": "CMP-FIS-009",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le grandezze fondamentali del Sistema Internazionale sono in tutto ___.",
+  "risposta": "7",
+  "accettate": [
+   "7",
+   "sette"
+  ],
+  "perche": "Le grandezze fondamentali del SI sono sette: lunghezza (m), massa (kg), tempo (s), intensità di corrente (A), temperatura (K), quantità di sostanza (mol), intensità luminosa (cd). Tutte le altre sono derivate. Errore tipico: dimenticare la candela o la mole e rispondere 5 o 6.",
+  "semplice": "Con sette «mattoni» (metro, chilogrammo, secondo, ampere, kelvin, mole, candela) si costruiscono tutte le altre unità, come il newton o il joule.",
+  "passaggi": [
+   "Elenca le grandezze fondamentali: lunghezza, massa, tempo, corrente.",
+   "Aggiungi temperatura, quantità di sostanza e intensità luminosa.",
+   "Conta: 4 + 3 = 7.",
+   "Le grandezze fondamentali sono 7."
+  ],
+  "concetto": "grandezze fondamentali SI"
+ },
+ {
+  "id": "CMP-FIS-010",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il prefisso che indica il fattore 10⁻⁹ è ___.",
+  "risposta": "nano",
+  "accettate": [
+   "nano",
+   "n",
+   "nano-"
+  ],
+  "perche": "Nano corrisponde a 10⁻⁹; micro è 10⁻⁶, milli 10⁻³, pico 10⁻¹². Errore tipico: confondere nano con micro. Le lunghezze d'onda della luce visibile si misurano proprio in nanometri.",
+  "semplice": "Un nanometro è un miliardesimo di metro: un capello è spesso circa 80 000 nanometri.",
+  "passaggi": [
+   "Ricorda i prefissi: milli 10⁻³, micro 10⁻⁶, nano 10⁻⁹, pico 10⁻¹².",
+   "Si cerca 10⁻⁹, tre ordini sotto il micro.",
+   "È il prefisso usato per le lunghezze d'onda della luce (nanometri).",
+   "La risposta è nano."
+  ],
+  "concetto": "prefissi SI"
+ },
+ {
+  "id": "CMP-FIS-011",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Due forze di 8 N e 6 N agiscono sullo stesso punto con la stessa direzione ma versi opposti. La risultante ha modulo ___ N.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 N",
+   "2N"
+  ],
+  "perche": "Vettori con la stessa direzione e verso opposto si sottraggono: 8 − 6 = 2 N, con il verso della forza maggiore. L'errore tipico è sommarli (14 N) o usare Pitagora (10 N), che vale solo per vettori perpendicolari.",
+  "semplice": "In un tiro alla fune, se una squadra tira con 8 e l'altra con 6, la corda si sposta verso la squadra più forte con una «forza netta» di 2.",
+  "passaggi": [
+   "1. R = F₁ − F₂ (versi opposti)",
+   "2. R = 8 − 6 = 2 N"
+  ],
+  "concetto": "somma di vettori opposti"
+ },
+ {
+  "id": "CMP-FIS-012",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il prodotto vettoriale di due vettori è un vettore ___ al piano individuato dai due vettori.",
+  "risposta": "perpendicolare",
+  "accettate": [
+   "perpendicolare",
+   "ortogonale",
+   "normale"
+  ],
+  "perche": "Il prodotto vettoriale a × b ha modulo a·b·sen θ ed è diretto perpendicolarmente al piano di a e b, con verso dato dalla regola della mano destra. Errore tipico: pensare che giaccia nel piano dei due vettori o che sia uno scalare.",
+  "semplice": "Se i due vettori stanno sul piano del banco, il loro prodotto vettoriale punta verso il soffitto o verso il pavimento, come una matita piantata in piedi.",
+  "passaggi": [
+   "Il prodotto vettoriale a × b dà un vettore di modulo a·b·sen θ.",
+   "La sua direzione è fissata dalla regola della mano destra.",
+   "Questa direzione è fuori dal piano dei due vettori, ad angolo retto con entrambi.",
+   "Il vettore è perpendicolare al piano."
+  ],
+  "concetto": "prodotto vettoriale"
+ },
+ {
+  "id": "CMP-FIS-013",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una lunghezza di 5 mm, espressa in metri, vale ___ m.",
+  "risposta": "0,005",
+  "accettate": [
+   "0,005",
+   "0.005",
+   "0,005 m",
+   "0,005m",
+   "0.005 m",
+   "0.005m",
+   "5·10⁻³",
+   "5×10⁻³",
+   "5*10^-3",
+   "5e-3"
+  ],
+  "perche": "1 mm = 10⁻³ m, quindi 5 mm = 5 × 10⁻³ m = 0,005 m. L'errore tipico è usare il fattore 10⁻² (quello dei centimetri), ottenendo 0,05 m.",
+  "semplice": "Un metro contiene 1000 millimetri. Cinque millimetri sono quindi cinque millesimi di metro: 0,005 m.",
+  "passaggi": [
+   "1. 1 mm = 10⁻³ m",
+   "2. 5 mm = 5 × 10⁻³ m = 0,005 m"
+  ],
+  "concetto": "conversione di lunghezze"
+ },
+ {
+  "id": "CMP-FIS-014",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La grandezza fisica che ha dimensioni [M][L][T]⁻² è la ___.",
+  "risposta": "forza",
+  "accettate": [
+   "forza",
+   "forza peso",
+   "Forza"
+  ],
+  "perche": "Le dimensioni [M][L][T]⁻² corrispondono a massa × accelerazione, cioè alla forza (F = m·a). L'energia ha dimensioni [M][L]²[T]⁻², la quantità di moto [M][L][T]⁻¹, la pressione [M][L]⁻¹[T]⁻². Errore tipico: confondere forza ed energia.",
+  "semplice": "Massa per accelerazione (metri al secondo quadrato) dà kg·m/s²: è proprio il newton, l'unità della forza.",
+  "passaggi": [
+   "1. F = m·a",
+   "2. [m] = [M]; [a] = [L][T]⁻²",
+   "3. [F] = [M][L][T]⁻²"
+  ],
+  "concetto": "analisi dimensionale"
+ },
+ {
+  "id": "CMP-FIS-015",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una grandezza data dal rapporto di due grandezze omogenee, e quindi priva di unità di misura, si dice ___.",
+  "risposta": "adimensionale",
+  "accettate": [
+   "adimensionale",
+   "adimensionata",
+   "numero puro",
+   "un numero puro"
+  ],
+  "perche": "Il rapporto tra grandezze con le stesse unità dà un numero puro, cioè adimensionale: esempi sono l'indice di rifrazione, il coefficiente d'attrito, il rendimento, la densità relativa. Errore tipico: assegnare un'unità al coefficiente d'attrito.",
+  "semplice": "Se dividi 10 metri per 2 metri ottieni 5, e basta: i metri si semplificano. Quel 5 è adimensionale.",
+  "passaggi": [
+   "Il rapporto è tra due grandezze con la stessa unità di misura.",
+   "Le unità si semplificano e resta un numero puro.",
+   "Esempi: coefficiente d'attrito, indice di rifrazione, rendimento.",
+   "La grandezza si dice adimensionale."
+  ],
+  "concetto": "grandezze adimensionali"
+ },
+ {
+  "id": "CMP-FIS-016",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un vettore di modulo 10 N forma un angolo di 60° con l'asse x. La sua componente lungo x vale ___ N.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "5 N",
+   "5N"
+  ],
+  "perche": "La componente x si calcola con il coseno: Fx = F·cos 60° = 10 × 0,5 = 5 N. L'errore tipico è usare il seno (ottenendo circa 8,7 N), che dà invece la componente y.",
+  "semplice": "La componente lungo x è l'«ombra» del vettore sull'asse x. A 60° il vettore è piuttosto inclinato verso l'alto, quindi l'ombra è metà della sua lunghezza.",
+  "passaggi": [
+   "1. Fx = F cos θ",
+   "2. cos 60° = 0,5",
+   "3. Fx = 10 × 0,5 = 5 N"
+  ],
+  "concetto": "componenti di un vettore"
+ },
+ {
+  "id": "CMP-FIS-017",
+  "materia": "Fisica",
+  "argomento": "Grandezze, unità di misura e vettori",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale la pressione si misura in ___.",
+  "risposta": "pascal",
+  "accettate": [
+   "pascal",
+   "Pa",
+   "Pascal",
+   "N/m²",
+   "N/m^2"
+  ],
+  "perche": "Il pascal è l'unità SI della pressione: 1 Pa = 1 N/m², cioè una forza di 1 newton distribuita su 1 metro quadrato. Atmosfere, bar e mmHg sono unità pratiche non SI. Errore tipico: rispondere «atmosfera» o «bar».",
+  "semplice": "Il pascal è una pressione piccolissima: la pressione dell'aria intorno a noi è circa 100 000 Pa.",
+  "passaggi": [
+   "La pressione è forza diviso superficie: p = F/S.",
+   "In unità SI: N/m².",
+   "Atmosfera, bar e mmHg sono unità pratiche, non SI.",
+   "1 N/m² si chiama pascal."
+  ],
+  "concetto": "unità della pressione"
+ },
+ {
+  "id": "CMP-FIS-018",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un'auto parte da ferma e in 6 s raggiunge la velocità di 30 m/s. La sua accelerazione media vale ___ m/s².",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "5 m/s²",
+   "5m/s²",
+   "5 m/s^2"
+  ],
+  "perche": "L'accelerazione media è la variazione di velocità divisa per il tempo: a = (30 − 0) / 6 = 5 m/s². L'errore tipico è moltiplicare velocità e tempo (180), che non ha significato di accelerazione.",
+  "semplice": "Ogni secondo l'auto guadagna 5 m/s: dopo 1 s va a 5, dopo 2 s a 10, e dopo 6 s a 30 m/s.",
+  "passaggi": [
+   "1. a = Δv / Δt",
+   "2. a = (30 − 0) / 6",
+   "3. a = 5 m/s²"
+  ],
+  "concetto": "accelerazione media"
+ },
+ {
+  "id": "CMP-FIS-019",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un sasso viene lasciato cadere da fermo. Trascurando l'attrito dell'aria e ponendo g = 10 m/s², dopo 3 s la sua velocità vale ___ m/s.",
+  "risposta": "30",
+  "accettate": [
+   "30",
+   "30 m/s",
+   "30m/s"
+  ],
+  "perche": "Nella caduta libera da fermo v = g·t = 10 × 3 = 30 m/s. L'errore tipico è usare la formula dello spazio (½gt² = 45) al posto di quella della velocità.",
+  "semplice": "In caduta libera la velocità cresce di 10 m/s ogni secondo: 10 dopo il primo secondo, 20 dopo il secondo, 30 dopo il terzo.",
+  "passaggi": [
+   "1. v = v₀ + g t, con v₀ = 0",
+   "2. v = 10 × 3",
+   "3. v = 30 m/s"
+  ],
+  "concetto": "caduta libera: velocità"
+ },
+ {
+  "id": "CMP-FIS-020",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un oggetto cade da fermo per 2 s (g = 10 m/s², attrito trascurabile). Lo spazio percorso è ___ m.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 m",
+   "20m"
+  ],
+  "perche": "Nel moto uniformemente accelerato da fermo s = ½·g·t² = ½ × 10 × 4 = 20 m. L'errore tipico è dimenticare il fattore ½ (40 m) o non elevare il tempo al quadrato (10 m).",
+  "semplice": "Nel primo secondo il corpo cade 5 m, nel secondo altri 15 m, perché va sempre più veloce: in tutto 20 m.",
+  "passaggi": [
+   "1. s = ½ g t²",
+   "2. s = ½ × 10 × 2²",
+   "3. s = 5 × 4 = 20 m"
+  ],
+  "concetto": "caduta libera: spazio"
+ },
+ {
+  "id": "CMP-FIS-021",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel moto rettilineo uniforme l'accelerazione è ___.",
+  "risposta": "nulla",
+  "accettate": [
+   "nulla",
+   "zero",
+   "0",
+   "nulla (zero)",
+   "uguale a zero"
+  ],
+  "perche": "Nel moto rettilineo uniforme la velocità è costante in modulo, direzione e verso, quindi la sua variazione è zero e l'accelerazione è nulla. Errore tipico: dire «costante» pensando al moto uniformemente accelerato.",
+  "semplice": "Un treno che viaggia sempre a 100 km/h su un binario dritto non accelera né frena: la sua accelerazione è zero.",
+  "passaggi": [
+   "Nel moto rettilineo uniforme la velocità è costante in modulo, direzione e verso.",
+   "L'accelerazione è la variazione di velocità nel tempo: a = Δv/Δt.",
+   "Se Δv = 0 anche a = 0.",
+   "L'accelerazione è nulla."
+  ],
+  "concetto": "moto rettilineo uniforme"
+ },
+ {
+  "id": "CMP-FIS-022",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un grafico velocità-tempo, l'area compresa tra la curva e l'asse dei tempi rappresenta lo ___.",
+  "risposta": "spostamento",
+  "accettate": [
+   "spostamento",
+   "spazio percorso",
+   "spazio",
+   "spostamento percorso"
+  ],
+  "perche": "Poiché lo spostamento è v·Δt, nel grafico v-t corrisponde all'area sotto la curva. La pendenza dello stesso grafico rappresenta invece l'accelerazione. Errore tipico: scambiare area e pendenza.",
+  "semplice": "Se vai a 10 m/s per 5 s, nel grafico disegni un rettangolo alto 10 e largo 5: la sua area, 50, sono i metri percorsi.",
+  "passaggi": [
+   "Nel grafico v-t un rettangolo sotto la curva ha area v·Δt.",
+   "v·Δt è lo spostamento percorso.",
+   "La pendenza dello stesso grafico è invece l'accelerazione.",
+   "L'area rappresenta lo spostamento."
+  ],
+  "concetto": "grafico velocità-tempo"
+ },
+ {
+  "id": "CMP-FIS-023",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un grafico posizione-tempo, la pendenza della curva rappresenta la ___.",
+  "risposta": "velocità",
+  "accettate": [
+   "velocità",
+   "velocita",
+   "velocità istantanea"
+  ],
+  "perche": "La pendenza del grafico x-t è Δx/Δt, cioè la velocità. Una retta orizzontale indica un corpo fermo; una retta inclinata un moto uniforme. Errore tipico: pensare che rappresenti l'accelerazione, che è invece la pendenza del grafico v-t.",
+  "semplice": "Più la linea sale ripida, più in fretta cambia la posizione, cioè più il corpo è veloce.",
+  "passaggi": [
+   "La pendenza di un grafico è il rapporto tra variazione in verticale e in orizzontale.",
+   "Nel grafico x-t è Δx/Δt.",
+   "Δx/Δt è la definizione di velocità (l'accelerazione è la pendenza del grafico v-t).",
+   "La pendenza rappresenta la velocità."
+  ],
+  "concetto": "grafico posizione-tempo"
+ },
+ {
+  "id": "CMP-FIS-024",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo percorre una circonferenza di raggio 2 m con velocità costante di 4 m/s. La sua accelerazione centripeta vale ___ m/s².",
+  "risposta": "8",
+  "accettate": [
+   "8",
+   "8 m/s²",
+   "8m/s²",
+   "8 m/s^2"
+  ],
+  "perche": "L'accelerazione centripeta è a = v²/r = 16/2 = 8 m/s². L'errore tipico è pensare che nel moto circolare uniforme l'accelerazione sia nulla perché il modulo della velocità non cambia: cambia però la direzione.",
+  "semplice": "Anche se il tachimetro segna sempre lo stesso valore, in curva la direzione cambia di continuo: questo cambiamento è l'accelerazione centripeta, che punta verso il centro.",
+  "passaggi": [
+   "1. a = v² / r",
+   "2. a = 4² / 2 = 16 / 2",
+   "3. a = 8 m/s²"
+  ],
+  "concetto": "accelerazione centripeta"
+ },
+ {
+  "id": "CMP-FIS-025",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un moto periodico ha periodo 0,5 s. La sua frequenza vale ___ Hz.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 Hz",
+   "2Hz"
+  ],
+  "perche": "La frequenza è l'inverso del periodo: f = 1/T = 1/0,5 = 2 Hz, cioè due giri al secondo. L'errore tipico è moltiplicare invece di fare l'inverso (0,5 Hz).",
+  "semplice": "Se un giro dura mezzo secondo, in un secondo ne fai due: la frequenza è 2 giri al secondo, cioè 2 Hz.",
+  "passaggi": [
+   "1. f = 1 / T",
+   "2. f = 1 / 0,5 = 2 Hz"
+  ],
+  "concetto": "periodo e frequenza"
+ },
+ {
+  "id": "CMP-FIS-026",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel moto circolare uniforme l'accelerazione è sempre diretta verso il ___ della circonferenza.",
+  "risposta": "centro",
+  "accettate": [
+   "centro",
+   "centro della circonferenza",
+   "il centro"
+  ],
+  "perche": "Nel moto circolare uniforme l'accelerazione è centripeta: punta sempre verso il centro, perpendicolare alla velocità, che è tangente. Errore tipico: dire che è tangente alla traiettoria o diretta verso l'esterno (confusione con la «forza centrifuga» apparente).",
+  "semplice": "Se fai girare un sasso legato a una corda, la corda tira il sasso verso la tua mano, cioè verso il centro del cerchio.",
+  "passaggi": [
+   "Nel moto circolare uniforme il modulo della velocità è costante, ma la direzione cambia.",
+   "La velocità è tangente; il suo cambiamento di direzione richiede un'accelerazione perpendicolare.",
+   "Questa accelerazione centripeta (a = v²/r) punta verso il centro.",
+   "La risposta è centro."
+  ],
+  "concetto": "accelerazione centripeta"
+ },
+ {
+  "id": "CMP-FIS-027",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un'auto viaggia a 20 m/s e frena con decelerazione costante di 4 m/s². Si ferma dopo aver percorso ___ m.",
+  "risposta": "50",
+  "accettate": [
+   "50",
+   "50 m",
+   "50m"
+  ],
+  "perche": "Senza conoscere il tempo si usa v² = v₀² − 2as: con v = 0 si ha s = v₀²/(2a) = 400/8 = 50 m. L'errore tipico è dimenticare il 2 al denominatore (100 m) o calcolare v₀/a = 5, che è il tempo, non lo spazio.",
+  "semplice": "L'auto impiega 5 s a fermarsi e in media va a 10 m/s (metà tra 20 e 0): 10 × 5 = 50 m.",
+  "passaggi": [
+   "1. v² = v₀² − 2 a s, con v = 0",
+   "2. s = v₀² / (2a) = 20² / (2 × 4)",
+   "3. s = 400 / 8 = 50 m"
+  ],
+  "concetto": "spazio di frenata"
+ },
+ {
+  "id": "CMP-FIS-028",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un proiettile è lanciato orizzontalmente. Trascurando l'attrito dell'aria, la componente orizzontale della sua velocità rimane ___ durante il volo.",
+  "risposta": "costante",
+  "accettate": [
+   "costante",
+   "invariata",
+   "uguale",
+   "la stessa",
+   "costante nel tempo"
+  ],
+  "perche": "Nel moto parabolico l'unica forza è il peso, verticale: in orizzontale non c'è accelerazione, quindi la componente orizzontale della velocità è costante. Cambia solo quella verticale. Errore tipico: pensare che diminuisca man mano che il corpo cade.",
+  "semplice": "Una pallina che rotola giù da un tavolo continua ad avanzare in orizzontale alla stessa velocità mentre cade: la gravità la tira solo verso il basso.",
+  "passaggi": [
+   "Senza attrito l'unica forza sul proiettile è il peso, verticale.",
+   "In orizzontale non agiscono forze, quindi l'accelerazione orizzontale è zero.",
+   "Cambia solo la componente verticale della velocità.",
+   "La componente orizzontale rimane costante."
+  ],
+  "concetto": "moto parabolico"
+ },
+ {
+  "id": "CMP-FIS-029",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una palla viene lanciata verticalmente verso l'alto con velocità 20 m/s (g = 10 m/s², attrito trascurabile). Raggiunge un'altezza massima di ___ m.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 m",
+   "20m"
+  ],
+  "perche": "All'altezza massima la velocità è nulla, quindi h = v₀²/(2g) = 400/20 = 20 m. L'errore tipico è dimenticare il 2 (40 m) o calcolare v₀/g = 2, che è il tempo di salita.",
+  "semplice": "La palla perde 10 m/s ogni secondo: dopo 2 s si ferma. Nel frattempo va in media a 10 m/s, quindi sale 10 × 2 = 20 m.",
+  "passaggi": [
+   "1. v² = v₀² − 2 g h, con v = 0 in cima",
+   "2. h = v₀² / (2g) = 400 / 20",
+   "3. h = 20 m"
+  ],
+  "concetto": "lancio verticale: altezza massima"
+ },
+ {
+  "id": "CMP-FIS-030",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo è lanciato verso l'alto con velocità 15 m/s (g = 10 m/s²). Raggiunge il punto più alto dopo ___ s.",
+  "risposta": "1,5",
+  "accettate": [
+   "1,5",
+   "1.5",
+   "1,5 s",
+   "1,5s",
+   "1.5 s",
+   "1.5s"
+  ],
+  "perche": "Nel punto più alto la velocità si annulla: 0 = v₀ − g·t, quindi t = v₀/g = 15/10 = 1,5 s. L'errore tipico è raddoppiare il tempo (3 s), che è invece il tempo totale di salita e discesa.",
+  "semplice": "La gravità toglie 10 m/s ogni secondo. Partendo da 15 m/s servono un secondo e mezzo per arrivare a zero.",
+  "passaggi": [
+   "1. v = v₀ − g t",
+   "2. 0 = 15 − 10 t",
+   "3. t = 1,5 s"
+  ],
+  "concetto": "lancio verticale: tempo di salita"
+ },
+ {
+  "id": "CMP-FIS-031",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale la velocità angolare si misura in ___ al secondo.",
+  "risposta": "radianti",
+  "accettate": [
+   "radianti",
+   "radiante",
+   "rad"
+  ],
+  "perche": "La velocità angolare ω è l'angolo descritto nell'unità di tempo e si misura in rad/s. Vale ω = 2π/T = 2πf. Errore tipico: rispondere «gradi» o «giri», che non sono unità SI.",
+  "semplice": "Un giro completo corrisponde a 2π radianti (circa 6,28). Se una ruota fa un giro al secondo, la sua velocità angolare è 6,28 rad/s.",
+  "passaggi": [
+   "La velocità angolare è l'angolo descritto nell'unità di tempo: ω = Δθ/Δt.",
+   "Nel SI gli angoli si misurano in radianti, il tempo in secondi.",
+   "Gradi e giri non sono unità SI.",
+   "Si misura in radianti al secondo."
+  ],
+  "concetto": "velocità angolare"
+ },
+ {
+  "id": "CMP-FIS-032",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il moto rettilineo di un corpo con accelerazione costante e diversa da zero si chiama moto rettilineo uniformemente ___.",
+  "risposta": "accelerato",
+  "accettate": [
+   "accelerato",
+   "accelerato o decelerato",
+   "vario"
+  ],
+  "perche": "Il moto rettilineo uniformemente accelerato ha accelerazione costante: la velocità cresce (o diminuisce) linearmente nel tempo e lo spazio cresce con il quadrato del tempo. Errore tipico: confonderlo con il moto rettilineo uniforme, a velocità costante.",
+  "semplice": "Un'auto che ogni secondo aumenta la velocità della stessa quantità, per esempio di 2 m/s, si muove di moto uniformemente accelerato.",
+  "passaggi": [
+   "Il moto è rettilineo con accelerazione costante e diversa da zero.",
+   "La velocità varia linearmente nel tempo: v = v₀ + a·t.",
+   "Non è uniforme (quello ha velocità costante).",
+   "Si chiama moto rettilineo uniformemente accelerato."
+  ],
+  "concetto": "moto uniformemente accelerato"
+ },
+ {
+  "id": "CMP-FIS-033",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un treno percorre 120 km in 1 ora e 30 minuti. La sua velocità media è ___ km/h.",
+  "risposta": "80",
+  "accettate": [
+   "80",
+   "80 km/h",
+   "80km/h"
+  ],
+  "perche": "La velocità media è lo spazio totale diviso il tempo totale: 120 km / 1,5 h = 80 km/h. L'errore tipico è scrivere 1 h 30 min come 1,3 h, ottenendo circa 92 km/h.",
+  "semplice": "Un'ora e mezza si scrive 1,5 h, non 1,3. In un'ora e mezza il treno fa 120 km, quindi in un'ora ne fa 80.",
+  "passaggi": [
+   "1. t = 1 h 30 min = 1,5 h",
+   "2. v = s / t = 120 / 1,5",
+   "3. v = 80 km/h"
+  ],
+  "concetto": "velocità media"
+ },
+ {
+  "id": "CMP-FIS-034",
+  "materia": "Fisica",
+  "argomento": "Cinematica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel moto parabolico di un proiettile, nel punto più alto della traiettoria la componente verticale della velocità è ___.",
+  "risposta": "nulla",
+  "accettate": [
+   "nulla",
+   "zero",
+   "0",
+   "uguale a zero"
+  ],
+  "perche": "Nel punto più alto il corpo smette di salire e inizia a scendere: la componente verticale della velocità passa per lo zero. Resta però la componente orizzontale, quindi la velocità totale non è nulla. Errore tipico: dire che anche la velocità totale o l'accelerazione siano nulle (l'accelerazione resta g).",
+  "semplice": "Quando lanci una palla in avanti e verso l'alto, in cima alla curva per un istante non sale né scende, ma continua ad andare avanti.",
+  "passaggi": [
+   "Nel punto più alto il corpo smette di salire e inizia a scendere.",
+   "La componente verticale della velocità cambia segno, quindi passa per lo zero.",
+   "La componente orizzontale invece resta, e l'accelerazione resta g.",
+   "La componente verticale è nulla."
+  ],
+  "concetto": "moto parabolico: punto più alto"
+ },
+ {
+  "id": "CMP-FIS-035",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo di massa 5 kg subisce un'accelerazione di 3 m/s². La forza risultante che agisce su di esso vale ___ N.",
+  "risposta": "15",
+  "accettate": [
+   "15",
+   "15 N",
+   "15N"
+  ],
+  "perche": "Per il secondo principio della dinamica F = m·a = 5 × 3 = 15 N. L'errore tipico è dividere massa e accelerazione invece di moltiplicarle.",
+  "semplice": "Più è pesante il corpo e più vuoi farlo accelerare, più forte devi spingere: 5 kg per 3 m/s² fa 15 newton.",
+  "passaggi": [
+   "1. F = m a",
+   "2. F = 5 × 3 = 15 N"
+  ],
+  "concetto": "secondo principio della dinamica"
+ },
+ {
+  "id": "CMP-FIS-036",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il primo principio della dinamica è anche detto principio d'___.",
+  "risposta": "inerzia",
+  "accettate": [
+   "inerzia",
+   "inerzia (di Galileo)"
+  ],
+  "perche": "Il primo principio afferma che un corpo non soggetto a forze (o con risultante nulla) resta in quiete o si muove di moto rettilineo uniforme: è il principio d'inerzia di Galileo e Newton. Errore tipico: chiamarlo «principio di azione e reazione», che è il terzo.",
+  "semplice": "Quando l'autobus frena di colpo tu vai in avanti: il tuo corpo «vorrebbe» continuare a muoversi come prima. È l'inerzia.",
+  "passaggi": [
+   "Il primo principio dice che un corpo senza forze risultanti resta fermo o in moto rettilineo uniforme.",
+   "È la tendenza dei corpi a conservare il proprio stato di moto.",
+   "Il terzo principio è quello di azione e reazione.",
+   "Il primo si chiama principio d'inerzia."
+  ],
+  "concetto": "primo principio della dinamica"
+ },
+ {
+  "id": "CMP-FIS-037",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una persona ha massa 70 kg. Con g = 9,8 m/s², il suo peso vale ___ N.",
+  "risposta": "686",
+  "accettate": [
+   "686",
+   "686 N",
+   "686N"
+  ],
+  "perche": "Il peso è la forza di gravità: P = m·g = 70 × 9,8 = 686 N. L'errore tipico è confondere massa e peso, rispondendo 70 (che sono kg, non newton).",
+  "semplice": "La massa (70 kg) è la quantità di materia e non cambia; il peso è la forza con cui la Terra ti attira. Sulla Luna avresti la stessa massa ma un peso circa sei volte minore.",
+  "passaggi": [
+   "1. P = m g",
+   "2. P = 70 × 9,8 = 686 N"
+  ],
+  "concetto": "massa e peso"
+ },
+ {
+  "id": "CMP-FIS-038",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale la quantità di moto si misura in ___.",
+  "risposta": "kg·m/s",
+  "accettate": [
+   "kg·m/s",
+   "kg m/s",
+   "kg*m/s",
+   "kgm/s",
+   "kg·m·s⁻¹",
+   "N·s",
+   "N s",
+   "Ns",
+   "N*s"
+  ],
+  "perche": "La quantità di moto è p = m·v, quindi si misura in kg·m/s, unità equivalente al N·s (l'unità dell'impulso). Errore tipico: rispondere «joule», che è l'unità dell'energia.",
+  "semplice": "Moltiplica la massa (kg) per la velocità (m/s): ottieni kg·m/s. Un camion lento può avere più quantità di moto di una bicicletta veloce.",
+  "passaggi": [
+   "La quantità di moto è p = m·v.",
+   "Unità: kg per m/s.",
+   "Equivale al N·s dell'impulso; il joule è invece energia.",
+   "Si misura in kg·m/s."
+  ],
+  "concetto": "unità della quantità di moto"
+ },
+ {
+  "id": "CMP-FIS-039",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo di massa 2 kg si muove alla velocità di 3 m/s. La sua quantità di moto vale ___ kg·m/s.",
+  "risposta": "6",
+  "accettate": [
+   "6",
+   "6 kg·m/s",
+   "6kg·m/s",
+   "6 N·s",
+   "6 kg m/s"
+  ],
+  "perche": "La quantità di moto è p = m·v = 2 × 3 = 6 kg·m/s. L'errore tipico è usare la formula dell'energia cinetica (½mv² = 9 J).",
+  "semplice": "Basta moltiplicare la massa per la velocità: 2 per 3 fa 6.",
+  "passaggi": [
+   "1. p = m v",
+   "2. p = 2 × 3 = 6 kg·m/s"
+  ],
+  "concetto": "quantità di moto"
+ },
+ {
+  "id": "CMP-FIS-040",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo il terzo principio della dinamica, a ogni azione corrisponde una reazione uguale e ___.",
+  "risposta": "contraria",
+  "accettate": [
+   "contraria",
+   "opposta",
+   "di verso opposto",
+   "contraria (opposta)"
+  ],
+  "perche": "Il terzo principio afferma che se A esercita una forza su B, B esercita su A una forza di uguale modulo e direzione e verso opposto. Le due forze agiscono su corpi diversi, perciò non si annullano. Errore tipico: pensare che azione e reazione si cancellino.",
+  "semplice": "Quando nuoti spingi l'acqua all'indietro, e l'acqua spinge te in avanti con la stessa forza.",
+  "passaggi": [
+   "Il terzo principio riguarda due corpi che interagiscono.",
+   "Le due forze hanno stesso modulo e stessa direzione.",
+   "Hanno però verso opposto e agiscono su corpi diversi.",
+   "La reazione è uguale e contraria."
+  ],
+  "concetto": "terzo principio della dinamica"
+ },
+ {
+  "id": "CMP-FIS-041",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una forza costante di 10 N agisce su un corpo per 0,5 s. L'impulso trasmesso vale ___ N·s.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "5 N·s",
+   "5N·s",
+   "5 N s",
+   "5 Ns",
+   "5 kg·m/s"
+  ],
+  "perche": "L'impulso è I = F·Δt = 10 × 0,5 = 5 N·s, e coincide con la variazione della quantità di moto. L'errore tipico è dividere forza e tempo (20).",
+  "semplice": "Spingere forte per poco tempo o piano per tanto tempo può dare lo stesso effetto: conta il prodotto forza × tempo.",
+  "passaggi": [
+   "1. I = F Δt",
+   "2. I = 10 × 0,5 = 5 N·s"
+  ],
+  "concetto": "impulso"
+ },
+ {
+  "id": "CMP-FIS-042",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un carrello di 2 kg che viaggia a 6 m/s urta un carrello fermo di 1 kg e i due proseguono attaccati. Subito dopo l'urto la loro velocità è ___ m/s.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "4 m/s",
+   "4m/s"
+  ],
+  "perche": "Nell'urto completamente anelastico si conserva la quantità di moto: 2 × 6 = (2 + 1)·v, quindi v = 12/3 = 4 m/s. L'errore tipico è conservare l'energia cinetica, che in questo urto non si conserva.",
+  "semplice": "Prima dell'urto la «spinta» totale è 2 × 6 = 12. Dopo, la stessa spinta deve muovere 3 kg: 12 diviso 3 fa 4 m/s.",
+  "passaggi": [
+   "1. m₁v₁ + m₂v₂ = (m₁ + m₂) v",
+   "2. 2 × 6 + 1 × 0 = 3 v",
+   "3. v = 12 / 3 = 4 m/s"
+  ],
+  "concetto": "urto anelastico"
+ },
+ {
+  "id": "CMP-FIS-043",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un urto ___ si conservano sia la quantità di moto sia l'energia cinetica totale.",
+  "risposta": "elastico",
+  "accettate": [
+   "elastico",
+   "perfettamente elastico",
+   "completamente elastico"
+  ],
+  "perche": "Negli urti elastici si conservano quantità di moto ed energia cinetica; negli urti anelastici si conserva solo la quantità di moto, perché parte dell'energia cinetica diventa calore o deformazione. Errore tipico: credere che la quantità di moto non si conservi negli urti anelastici.",
+  "semplice": "Due palle da biliardo che si scontrano rimbalzano quasi senza perdere energia: è un urto quasi elastico. Due palline di plastilina che si incollano fanno invece un urto anelastico.",
+  "passaggi": [
+   "Negli urti isolati la quantità di moto si conserva sempre.",
+   "L'energia cinetica si conserva solo se non si trasforma in calore o deformazione.",
+   "Negli urti anelastici parte di essa si perde.",
+   "Se si conservano entrambe, l'urto è elastico."
+  ],
+  "concetto": "urto elastico"
+ },
+ {
+  "id": "CMP-FIS-044",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una cassa di 10 kg scivola su un pavimento con coefficiente d'attrito dinamico 0,3 (g = 10 m/s²). La forza d'attrito vale ___ N.",
+  "risposta": "30",
+  "accettate": [
+   "30",
+   "30 N",
+   "30N"
+  ],
+  "perche": "Su un piano orizzontale la forza normale è uguale al peso (100 N); la forza d'attrito è μ·N = 0,3 × 100 = 30 N. L'errore tipico è moltiplicare μ per la massa (3) dimenticando g.",
+  "semplice": "Il pavimento «frena» la cassa con una forza pari al 30% del suo peso: il peso è 100 N, quindi l'attrito è 30 N.",
+  "passaggi": [
+   "1. N = m g = 10 × 10 = 100 N",
+   "2. F_a = μ N = 0,3 × 100",
+   "3. F_a = 30 N"
+  ],
+  "concetto": "forza d'attrito"
+ },
+ {
+  "id": "CMP-FIS-045",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La forza risultante che mantiene un corpo in moto circolare uniforme, diretta verso il centro, si chiama forza ___.",
+  "risposta": "centripeta",
+  "accettate": [
+   "centripeta",
+   "centripeta (verso il centro)"
+  ],
+  "perche": "La forza centripeta, di modulo m·v²/r, è diretta verso il centro e fa curvare la traiettoria. Non è una forza nuova: può essere la tensione di una fune, la gravità, l'attrito delle ruote. Errore tipico: rispondere «centrifuga», che è una forza apparente vista da chi ruota.",
+  "semplice": "Per far girare un secchio legato a una corda devi tirare la corda verso di te: quella tirata verso il centro è la forza centripeta.",
+  "passaggi": [
+   "Per curvare la traiettoria serve una forza risultante verso il centro.",
+   "Vale F = m·v²/r e può essere tensione, gravità o attrito.",
+   "La centrifuga è solo apparente, vista da chi ruota.",
+   "Si chiama forza centripeta."
+  ],
+  "concetto": "forza centripeta"
+ },
+ {
+  "id": "CMP-FIS-046",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una molla di costante elastica 200 N/m viene allungata di 5 cm. La forza elastica vale ___ N.",
+  "risposta": "10",
+  "accettate": [
+   "10",
+   "10 N",
+   "10N"
+  ],
+  "perche": "Per la legge di Hooke F = k·x; bisogna però esprimere x in metri: 5 cm = 0,05 m, quindi F = 200 × 0,05 = 10 N. L'errore tipico è usare x = 5 e ottenere 1000 N.",
+  "semplice": "Ogni centimetro di allungamento richiede 2 N (200 N per un metro intero). Cinque centimetri richiedono 10 N.",
+  "passaggi": [
+   "1. x = 5 cm = 0,05 m",
+   "2. F = k x = 200 × 0,05",
+   "3. F = 10 N"
+  ],
+  "concetto": "legge di Hooke"
+ },
+ {
+  "id": "CMP-FIS-047",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Su un piano inclinato di un angolo θ, la componente del peso parallela al piano vale m·g·sen θ, mentre quella perpendicolare al piano vale m·g·___ θ.",
+  "risposta": "cos",
+  "accettate": [
+   "cos",
+   "coseno",
+   "cos θ",
+   "cosθ"
+  ],
+  "perche": "Scomponendo il peso, la componente parallela al piano (che fa scivolare il corpo) è mg·sen θ e quella perpendicolare (bilanciata dalla reazione normale) è mg·cos θ. Errore tipico: scambiare seno e coseno.",
+  "semplice": "Se il piano è quasi orizzontale (θ piccolo), quasi tutto il peso preme sul piano: infatti cos θ è vicino a 1 e sen θ vicino a 0.",
+  "passaggi": [
+   "Scomponi il peso mg lungo il piano e perpendicolarmente a esso.",
+   "L'angolo tra il peso e la perpendicolare al piano è θ.",
+   "La componente adiacente a θ si ottiene con il coseno, quella opposta con il seno.",
+   "La componente perpendicolare è m·g·cos θ."
+  ],
+  "concetto": "piano inclinato"
+ },
+ {
+  "id": "CMP-FIS-048",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo di massa 4 kg è appoggiato su un piano inclinato di 30° senza attrito (g = 10 m/s²). La componente del peso parallela al piano vale ___ N.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 N",
+   "20N"
+  ],
+  "perche": "La componente parallela è mg·sen 30° = 4 × 10 × 0,5 = 20 N. L'errore tipico è usare il coseno (circa 34,6 N), che dà la componente perpendicolare.",
+  "semplice": "Su una rampa di 30° la parte del peso che tira il corpo giù lungo la rampa è esattamente metà del peso: il peso è 40 N, quindi 20 N.",
+  "passaggi": [
+   "1. P = m g = 4 × 10 = 40 N",
+   "2. P∥ = P sen 30° = 40 × 0,5",
+   "3. P∥ = 20 N"
+  ],
+  "concetto": "piano inclinato: componente parallela"
+ },
+ {
+  "id": "CMP-FIS-049",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il momento di una forza rispetto a un punto è il prodotto del modulo della forza per il suo ___, cioè la distanza tra il punto e la retta d'azione della forza.",
+  "risposta": "braccio",
+  "accettate": [
+   "braccio",
+   "braccio della forza"
+  ],
+  "perche": "Il momento torcente vale M = F·b, dove b è il braccio, distanza perpendicolare tra il polo e la retta d'azione della forza. Se la forza passa per il polo il braccio è nullo e il momento è zero. Errore tipico: usare la distanza dal punto di applicazione anziché quella dalla retta d'azione.",
+  "semplice": "Per aprire una porta è più facile spingere lontano dai cardini: con un braccio più lungo serve meno forza.",
+  "passaggi": [
+   "Il momento di una forza è M = F·b.",
+   "b è la distanza perpendicolare tra il polo e la retta d'azione.",
+   "Questa distanza si chiama braccio.",
+   "La risposta è braccio."
+  ],
+  "concetto": "momento di una forza"
+ },
+ {
+  "id": "CMP-FIS-050",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una forza di 20 N è applicata perpendicolarmente all'estremità di una chiave inglese lunga 0,5 m. Il momento della forza rispetto al bullone vale ___ N·m.",
+  "risposta": "10",
+  "accettate": [
+   "10",
+   "10 N·m",
+   "10N·m",
+   "10 Nm",
+   "10 N m"
+  ],
+  "perche": "Con forza perpendicolare il braccio coincide con la lunghezza della chiave: M = F·b = 20 × 0,5 = 10 N·m. L'errore tipico è dividere la forza per il braccio (40).",
+  "semplice": "Una chiave più lunga moltiplica l'effetto della tua forza: 20 N a mezzo metro fanno 10 N·m.",
+  "passaggi": [
+   "1. M = F b (forza perpendicolare)",
+   "2. M = 20 × 0,5 = 10 N·m"
+  ],
+  "concetto": "momento torcente"
+ },
+ {
+  "id": "CMP-FIS-051",
+  "materia": "Fisica",
+  "argomento": "Dinamica e quantità di moto",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo la legge di gravitazione universale, la forza tra due masse è inversamente proporzionale al ___ della loro distanza.",
+  "risposta": "quadrato",
+  "accettate": [
+   "quadrato",
+   "quadrato della distanza"
+  ],
+  "perche": "F = G·m₁m₂/r²: la forza dipende dall'inverso del quadrato della distanza. Se la distanza raddoppia, la forza diventa un quarto. Errore tipico: pensare a una proporzionalità inversa semplice (forza dimezzata).",
+  "semplice": "Se ti allontani al doppio della distanza da un pianeta, la sua attrazione non si dimezza: diventa quattro volte più debole.",
+  "passaggi": [
+   "Scrivi la legge: F = G·m₁m₂/r².",
+   "La distanza r compare al denominatore elevata alla seconda.",
+   "Raddoppiando r la forza diventa un quarto.",
+   "La forza è inversamente proporzionale al quadrato della distanza."
+  ],
+  "concetto": "legge di gravitazione universale"
+ },
+ {
+  "id": "CMP-FIS-052",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una forza costante di 50 N sposta un corpo di 4 m nella stessa direzione e nello stesso verso della forza. Il lavoro compiuto vale ___ J.",
+  "risposta": "200",
+  "accettate": [
+   "200",
+   "200 J",
+   "200J"
+  ],
+  "perche": "Con forza e spostamento paralleli e concordi L = F·s = 50 × 4 = 200 J. L'errore tipico è dividere (12,5) o dimenticare che il lavoro è uno scalare in joule.",
+  "semplice": "Il lavoro è «forza per strada»: spingere con 50 N per 4 m vale 200 joule.",
+  "passaggi": [
+   "1. L = F s cos 0°",
+   "2. L = 50 × 4 × 1 = 200 J"
+  ],
+  "concetto": "lavoro di una forza"
+ },
+ {
+  "id": "CMP-FIS-053",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il lavoro compiuto da una forza perpendicolare allo spostamento è ___.",
+  "risposta": "nullo",
+  "accettate": [
+   "nullo",
+   "zero",
+   "0",
+   "uguale a zero",
+   "nulla"
+  ],
+  "perche": "Il lavoro è L = F·s·cos θ; per θ = 90° il coseno è zero e il lavoro è nullo. Per questo la forza centripeta e la reazione normale di un piano orizzontale non compiono lavoro. Errore tipico: pensare che ogni forza applicata compia lavoro.",
+  "semplice": "Se porti una valigia camminando in piano, la tua forza verso l'alto non compie lavoro sulla valigia, perché lo spostamento è orizzontale.",
+  "passaggi": [
+   "Il lavoro è L = F·s·cos θ.",
+   "Forza perpendicolare allo spostamento significa θ = 90°.",
+   "cos 90° = 0, quindi L = 0.",
+   "Il lavoro è nullo."
+  ],
+  "concetto": "lavoro nullo"
+ },
+ {
+  "id": "CMP-FIS-054",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo di massa 2 kg si muove alla velocità di 3 m/s. La sua energia cinetica vale ___ J.",
+  "risposta": "9",
+  "accettate": [
+   "9",
+   "9 J",
+   "9J"
+  ],
+  "perche": "L'energia cinetica è K = ½·m·v² = ½ × 2 × 9 = 9 J. L'errore tipico è non elevare al quadrato la velocità (3 J) o dimenticare il ½ (18 J).",
+  "semplice": "Metà della massa (1) per la velocità al quadrato (9) fa 9 joule.",
+  "passaggi": [
+   "1. K = ½ m v²",
+   "2. K = ½ × 2 × 3²",
+   "3. K = 1 × 9 = 9 J"
+  ],
+  "concetto": "energia cinetica"
+ },
+ {
+  "id": "CMP-FIS-055",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo di 5 kg si trova a 10 m di altezza dal suolo (g = 10 m/s²). La sua energia potenziale gravitazionale rispetto al suolo vale ___ J.",
+  "risposta": "500",
+  "accettate": [
+   "500",
+   "500 J",
+   "500J"
+  ],
+  "perche": "U = m·g·h = 5 × 10 × 10 = 500 J. L'energia potenziale dipende dal livello di riferimento scelto, qui il suolo. Errore tipico: dimenticare g e rispondere 50.",
+  "semplice": "Più un oggetto è pesante e più è in alto, più energia «accumula», pronta a trasformarsi in movimento se cade.",
+  "passaggi": [
+   "1. U = m g h",
+   "2. U = 5 × 10 × 10 = 500 J"
+  ],
+  "concetto": "energia potenziale gravitazionale"
+ },
+ {
+  "id": "CMP-FIS-056",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale la potenza si misura in ___.",
+  "risposta": "watt",
+  "accettate": [
+   "watt",
+   "W",
+   "Watt",
+   "J/s"
+  ],
+  "perche": "La potenza è il lavoro compiuto nell'unità di tempo: 1 W = 1 J/s. Il kWh invece è un'unità di energia, non di potenza. Errore tipico: rispondere «joule» o «kilowattora».",
+  "semplice": "Una lampadina da 10 W usa 10 joule di energia ogni secondo.",
+  "passaggi": [
+   "La potenza è lavoro diviso tempo: P = L/t.",
+   "Unità: J/s.",
+   "Il kWh è energia, non potenza.",
+   "1 J/s si chiama watt."
+  ],
+  "concetto": "unità della potenza"
+ },
+ {
+  "id": "CMP-FIS-057",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un motore compie un lavoro di 600 J in 2 minuti. La sua potenza media è ___ W.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "5 W",
+   "5W"
+  ],
+  "perche": "La potenza è P = L/t, con il tempo in secondi: 2 min = 120 s, quindi P = 600/120 = 5 W. L'errore tipico è dividere per 2 (300 W) senza convertire i minuti in secondi.",
+  "semplice": "Due minuti sono 120 secondi. Se in tutto il tempo il motore fa 600 J, ogni secondo ne fa 5: la potenza è 5 W.",
+  "passaggi": [
+   "1. t = 2 min = 120 s",
+   "2. P = L / t = 600 / 120",
+   "3. P = 5 W"
+  ],
+  "concetto": "potenza media"
+ },
+ {
+  "id": "CMP-FIS-058",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un corpo cade da fermo da un'altezza di 5 m (g = 10 m/s², attrito trascurabile). Arriva al suolo con velocità ___ m/s.",
+  "risposta": "10",
+  "accettate": [
+   "10",
+   "10 m/s",
+   "10m/s"
+  ],
+  "perche": "Per la conservazione dell'energia m·g·h = ½·m·v², quindi v = √(2gh) = √100 = 10 m/s; la massa si semplifica. L'errore tipico è dimenticare la radice (100) o il fattore 2 (√50 ≈ 7,1).",
+  "semplice": "Tutta l'energia di posizione diventa energia di movimento. Da 5 m di altezza qualsiasi oggetto, pesante o leggero, arriva a terra a 10 m/s (senza aria).",
+  "passaggi": [
+   "1. m g h = ½ m v²",
+   "2. v = √(2 g h) = √(2 × 10 × 5)",
+   "3. v = √100 = 10 m/s"
+  ],
+  "concetto": "conservazione dell'energia meccanica"
+ },
+ {
+  "id": "CMP-FIS-059",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le forze il cui lavoro dipende solo dalla posizione iniziale e finale, e non dal percorso seguito, si dicono ___.",
+  "risposta": "conservative",
+  "accettate": [
+   "conservative",
+   "conservativa",
+   "forze conservative"
+  ],
+  "perche": "Per le forze conservative (peso, forza elastica, forza elettrostatica) il lavoro non dipende dal percorso ed è nullo lungo un percorso chiuso; a esse si associa un'energia potenziale. L'attrito invece è dissipativo. Errore tipico: considerare conservativo l'attrito.",
+  "semplice": "Che tu salga una collina per la strada dritta o a tornanti, il lavoro del peso è lo stesso: conta solo il dislivello.",
+  "passaggi": [
+   "Il lavoro di queste forze dipende solo dalla posizione iniziale e finale.",
+   "Lungo un percorso chiuso il loro lavoro è nullo e si associa un'energia potenziale.",
+   "Esempi: peso, forza elastica, forza elettrostatica (non l'attrito).",
+   "Si dicono forze conservative."
+  ],
+  "concetto": "forze conservative"
+ },
+ {
+  "id": "CMP-FIS-060",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per il teorema dell'energia cinetica, il lavoro totale compiuto sul corpo è uguale alla variazione della sua energia ___.",
+  "risposta": "cinetica",
+  "accettate": [
+   "cinetica",
+   "cinetica K"
+  ],
+  "perche": "Il teorema dell'energia cinetica (o delle forze vive) afferma L_tot = ΔK = ½mv_f² − ½mv_i². Vale per qualunque forza, conservativa o no. Errore tipico: rispondere «potenziale», che si lega invece al lavoro delle sole forze conservative (L = −ΔU).",
+  "semplice": "Se spingi un carrello e fai lavoro positivo, il carrello accelera: la sua energia di movimento aumenta esattamente di quel lavoro.",
+  "passaggi": [
+   "Il teorema lega il lavoro totale di tutte le forze a una variazione di energia.",
+   "Vale L_tot = ½mv_f² − ½mv_i².",
+   "½mv² è l'energia cinetica; il lavoro delle sole forze conservative è legato invece alla potenziale.",
+   "Il lavoro totale è uguale alla variazione di energia cinetica."
+  ],
+  "concetto": "teorema dell'energia cinetica"
+ },
+ {
+  "id": "CMP-FIS-061",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una molla di costante elastica 400 N/m è compressa di 10 cm. L'energia potenziale elastica immagazzinata vale ___ J.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 J",
+   "2J"
+  ],
+  "perche": "U = ½·k·x², con x in metri: x = 0,1 m, quindi U = ½ × 400 × 0,01 = 2 J. L'errore tipico è usare x = 10 (20 000 J) o dimenticare il quadrato (20 J).",
+  "semplice": "Comprimere una molla dura di 10 cm richiede energia, che resta «immagazzinata» nella molla: qui 2 joule.",
+  "passaggi": [
+   "1. x = 10 cm = 0,1 m",
+   "2. U = ½ k x² = ½ × 400 × 0,1²",
+   "3. U = 200 × 0,01 = 2 J"
+  ],
+  "concetto": "energia elastica"
+ },
+ {
+  "id": "CMP-FIS-062",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un motore assorbe una potenza di 500 W e ne rende utile 400 W. Il suo rendimento è del ___ %.",
+  "risposta": "80",
+  "accettate": [
+   "80",
+   "80 %",
+   "80%",
+   "0,8",
+   "0.8"
+  ],
+  "perche": "Il rendimento è η = P_utile/P_assorbita = 400/500 = 0,8 = 80%. L'errore tipico è invertire il rapporto (125%), impossibile perché il rendimento non supera mai il 100%.",
+  "semplice": "Su 500 W che entrano, 400 escono come lavoro utile e 100 si perdono in calore: il motore sfrutta 4 parti su 5, cioè l'80%.",
+  "passaggi": [
+   "1. η = P_u / P_a = 400 / 500",
+   "2. η = 0,8 = 80%"
+  ],
+  "concetto": "rendimento"
+ },
+ {
+  "id": "CMP-FIS-063",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il kilowattora (kWh) è un'unità di misura dell'___.",
+  "risposta": "energia",
+  "accettate": [
+   "energia",
+   "energia elettrica",
+   "lavoro"
+  ],
+  "perche": "1 kWh = 1000 W × 3600 s = 3,6 × 10⁶ J: è un'unità di energia, usata nelle bollette elettriche. Errore tipico: considerarlo un'unità di potenza perché contiene «watt».",
+  "semplice": "In bolletta paghi i kWh: quanta energia hai usato. 1 kWh è l'energia di un forno da 1000 W acceso per un'ora.",
+  "passaggi": [
+   "Il kWh è il prodotto di una potenza (kW) per un tempo (h).",
+   "Potenza per tempo dà energia: 1 kWh = 1000 W × 3600 s.",
+   "1 kWh = 3,6 × 10⁶ J.",
+   "È un'unità di energia."
+  ],
+  "concetto": "kilowattora"
+ },
+ {
+  "id": "CMP-FIS-064",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Se la velocità di un corpo raddoppia, la sua energia cinetica diventa ___ volte quella iniziale.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "4 volte",
+   "4volte",
+   "quattro"
+  ],
+  "perche": "L'energia cinetica è proporzionale al quadrato della velocità: raddoppiando v, K si moltiplica per 2² = 4. L'errore tipico è rispondere 2, come per la quantità di moto, che è proporzionale a v.",
+  "semplice": "Un'auto a 100 km/h ha quattro volte l'energia di una a 50 km/h: per questo lo spazio di frenata cresce molto con la velocità.",
+  "passaggi": [
+   "1. K = ½ m v²",
+   "2. K' = ½ m (2v)² = 4 × ½ m v²",
+   "3. K' = 4 K"
+  ],
+  "concetto": "energia cinetica e velocità"
+ },
+ {
+  "id": "CMP-FIS-065",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La forza d'attrito è una forza non ___, perché il suo lavoro dipende dal percorso seguito.",
+  "risposta": "conservativa",
+  "accettate": [
+   "conservativa",
+   "conservativa (dissipativa)"
+  ],
+  "perche": "Il lavoro dell'attrito è sempre negativo e cresce con la lunghezza del percorso: trasforma energia meccanica in calore. Per questo l'attrito è dissipativo, cioè non conservativo, e non ha un'energia potenziale associata. Errore tipico: confonderlo con la forza elastica, che è conservativa.",
+  "semplice": "Se trascini una scatola avanti e indietro tornando al punto di partenza, hai comunque perso energia in calore: più strada fai, più energia perdi.",
+  "passaggi": [
+   "Il lavoro dell'attrito è sempre negativo e cresce con la lunghezza del percorso.",
+   "Quindi dipende dal percorso, non solo dai punti iniziale e finale.",
+   "Le forze con lavoro indipendente dal percorso sono le conservative.",
+   "L'attrito è una forza non conservativa."
+  ],
+  "concetto": "forze non conservative"
+ },
+ {
+  "id": "CMP-FIS-066",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un'auto avanza alla velocità costante di 5 m/s spinta da una forza motrice di 200 N. La potenza sviluppata è ___ W.",
+  "risposta": "1000",
+  "accettate": [
+   "1000",
+   "1000 W",
+   "1000W",
+   "1 kW",
+   "1kW"
+  ],
+  "perche": "La potenza si può scrivere P = F·v = 200 × 5 = 1000 W (1 kW). L'errore tipico è dividere forza e velocità (40).",
+  "semplice": "Ogni secondo l'auto avanza di 5 m spinta da 200 N: il lavoro al secondo è 200 × 5 = 1000 J, cioè 1000 W.",
+  "passaggi": [
+   "1. P = F v",
+   "2. P = 200 × 5 = 1000 W"
+  ],
+  "concetto": "potenza e velocità"
+ },
+ {
+  "id": "CMP-FIS-067",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il cavallo vapore (CV) è un'unità di misura, non appartenente al SI, della ___.",
+  "risposta": "potenza",
+  "accettate": [
+   "potenza",
+   "potenza meccanica"
+  ],
+  "perche": "Il cavallo vapore vale circa 735 W ed è usato per la potenza dei motori. Non è un'unità di energia né di forza. Errore tipico: rispondere «energia» o «forza».",
+  "semplice": "Un'auto da 100 CV ha un motore da circa 73 500 W: il CV dice quanto velocemente il motore può compiere lavoro.",
+  "passaggi": [
+   "Il cavallo vapore vale circa 735 W.",
+   "Il watt è l'unità della potenza.",
+   "Si usa infatti per indicare la potenza dei motori.",
+   "Il CV è un'unità di potenza."
+  ],
+  "concetto": "unità di potenza"
+ },
+ {
+  "id": "CMP-FIS-068",
+  "materia": "Fisica",
+  "argomento": "Lavoro, energia e potenza",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il joule si può scrivere come prodotto di unità: 1 J = 1 N · 1 ___.",
+  "risposta": "m",
+  "accettate": [
+   "m",
+   "metro",
+   "metri"
+  ],
+  "perche": "Poiché il lavoro è forza per spostamento, 1 J = 1 N·m. In unità fondamentali 1 J = 1 kg·m²/s². Errore tipico: scrivere N/m o N·s (unità dell'impulso).",
+  "semplice": "Sollevare di un metro un oggetto che pesa 1 N (circa una mela piccola) richiede un joule.",
+  "passaggi": [
+   "Il joule misura il lavoro: L = F·s.",
+   "Forza in newton, spostamento in metri.",
+   "Quindi 1 J = 1 N · 1 m (= 1 kg·m²/s²).",
+   "Manca il metro: m."
+  ],
+  "concetto": "unità del lavoro"
+ },
+ {
+  "id": "CMP-FIS-069",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una forza di 100 N agisce perpendicolarmente su una superficie di 0,5 m². La pressione esercitata vale ___ Pa.",
+  "risposta": "200",
+  "accettate": [
+   "200",
+   "200 Pa",
+   "200Pa"
+  ],
+  "perche": "La pressione è p = F/S = 100/0,5 = 200 Pa. L'errore tipico è moltiplicare forza e superficie (50).",
+  "semplice": "La stessa forza su una superficie più piccola fa più pressione: dividendo 100 N su mezzo metro quadrato, ogni metro quadrato «sente» 200 N.",
+  "passaggi": [
+   "1. p = F / S",
+   "2. p = 100 / 0,5 = 200 Pa"
+  ],
+  "concetto": "definizione di pressione"
+ },
+ {
+  "id": "CMP-FIS-070",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In acqua (densità 1000 kg/m³, g = 10 m/s²), la pressione idrostatica dovuta alla sola colonna d'acqua a 10 m di profondità vale ___ kPa.",
+  "risposta": "100",
+  "accettate": [
+   "100",
+   "100 kPa",
+   "100kPa"
+  ],
+  "perche": "Per la legge di Stevino p = ρ·g·h = 1000 × 10 × 10 = 100 000 Pa = 100 kPa, circa una atmosfera. L'errore tipico è fermarsi ai Pa e scrivere 100 000 al posto dei kPa richiesti.",
+  "semplice": "Ogni 10 metri di acqua sopra la testa aggiungono circa un'atmosfera di pressione: per questo i sub sentono male alle orecchie.",
+  "passaggi": [
+   "1. p = ρ g h",
+   "2. p = 1000 × 10 × 10 = 100 000 Pa",
+   "3. p = 100 kPa"
+  ],
+  "concetto": "legge di Stevino"
+ },
+ {
+  "id": "CMP-FIS-071",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il principio di ___ afferma che un corpo immerso in un fluido riceve una spinta verso l'alto pari al peso del fluido spostato.",
+  "risposta": "Archimede",
+  "accettate": [
+   "Archimede",
+   "archimede"
+  ],
+  "perche": "La spinta di Archimede vale S = ρ_fluido·g·V_immerso ed è diretta verso l'alto. Se supera il peso il corpo sale, se è minore affonda. Errore tipico: attribuire il principio a Pascal o a Stevino.",
+  "semplice": "Quando entri nella vasca da bagno l'acqua sale e ti senti più leggero: l'acqua che sposti ti spinge verso l'alto.",
+  "passaggi": [
+   "Il principio parla della spinta verso l'alto su un corpo immerso.",
+   "La spinta è pari al peso del fluido spostato: S = ρ·g·V.",
+   "Pascal e Stevino riguardano altro (trasmissione della pressione, pressione in profondità).",
+   "È il principio di Archimede."
+  ],
+  "concetto": "spinta di Archimede"
+ },
+ {
+  "id": "CMP-FIS-072",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il principio di ___ afferma che una pressione applicata a un fluido in equilibrio si trasmette inalterata in tutti i punti del fluido.",
+  "risposta": "Pascal",
+  "accettate": [
+   "Pascal",
+   "pascal"
+  ],
+  "perche": "Il principio di Pascal è alla base del torchio idraulico e dei freni delle auto: la pressione si trasmette in ogni punto e in ogni direzione. Errore tipico: confonderlo con il principio di Archimede o con l'equazione di Bernoulli.",
+  "semplice": "Se schiacci un palloncino pieno d'acqua da un lato, si gonfia da tutti gli altri: la pressione arriva ovunque.",
+  "passaggi": [
+   "Il principio riguarda la trasmissione della pressione in un fluido.",
+   "La pressione si trasmette inalterata in ogni punto e direzione.",
+   "È alla base del torchio idraulico e dei freni.",
+   "È il principio di Pascal."
+  ],
+  "concetto": "principio di Pascal"
+ },
+ {
+  "id": "CMP-FIS-073",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un liquido ideale scorre in un tubo. Dove la sezione del tubo si dimezza, la velocità del liquido diventa ___ volte quella iniziale.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 volte",
+   "2volte",
+   "due",
+   "il doppio",
+   "doppia"
+  ],
+  "perche": "Per l'equazione di continuità la portata Q = S·v è costante: se S si dimezza, v raddoppia. L'errore tipico è pensare che la velocità diminuisca dove il tubo si stringe.",
+  "semplice": "Quando stringi con il dito la bocca di un tubo da giardino, l'acqua esce più veloce: la stessa quantità deve passare da un buco più piccolo.",
+  "passaggi": [
+   "1. S₁ v₁ = S₂ v₂",
+   "2. S₂ = S₁ / 2",
+   "3. v₂ = v₁ S₁ / S₂ = 2 v₁"
+  ],
+  "concetto": "equazione di continuità"
+ },
+ {
+  "id": "CMP-FIS-074",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un oggetto di volume 0,002 m³ è completamente immerso in acqua (densità 1000 kg/m³, g = 10 m/s²). La spinta di Archimede che riceve vale ___ N.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 N",
+   "20N"
+  ],
+  "perche": "La spinta è S = ρ·g·V = 1000 × 10 × 0,002 = 20 N, indipendentemente dal materiale dell'oggetto. L'errore tipico è usare la densità dell'oggetto anziché quella del fluido.",
+  "semplice": "0,002 m³ sono 2 litri: due litri d'acqua pesano 2 kg, cioè 20 N. È proprio la spinta che l'oggetto riceve.",
+  "passaggi": [
+   "1. S = ρ_acqua g V",
+   "2. S = 1000 × 10 × 0,002",
+   "3. S = 20 N"
+  ],
+  "concetto": "spinta di Archimede: calcolo"
+ },
+ {
+  "id": "CMP-FIS-075",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'equazione di ___ esprime la conservazione dell'energia per un fluido ideale in moto stazionario: p + ½ρv² + ρgh = costante.",
+  "risposta": "Bernoulli",
+  "accettate": [
+   "Bernoulli",
+   "bernoulli"
+  ],
+  "perche": "L'equazione di Bernoulli lega pressione, velocità e quota lungo una linea di flusso di un fluido ideale (incomprimibile e non viscoso). Errore tipico: confonderla con l'equazione di continuità, che esprime invece la conservazione della massa (S·v = costante).",
+  "semplice": "È il «bilancio energetico» di un fluido: se l'acqua accelera, guadagna energia di movimento e perde pressione.",
+  "passaggi": [
+   "L'equazione è p + ½ρv² + ρgh = costante.",
+   "Esprime la conservazione dell'energia per un fluido ideale.",
+   "L'equazione di continuità (S·v = costante) riguarda invece la massa.",
+   "È l'equazione di Bernoulli."
+  ],
+  "concetto": "equazione di Bernoulli"
+ },
+ {
+  "id": "CMP-FIS-076",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un condotto di sezione 0,01 m² l'acqua scorre alla velocità di 2 m/s. La portata vale ___ m³/s.",
+  "risposta": "0,02",
+  "accettate": [
+   "0,02",
+   "0.02",
+   "0,02 m³/s",
+   "0,02m³/s",
+   "0.02 m³/s",
+   "0.02m³/s",
+   "2·10⁻²",
+   "2×10⁻²",
+   "0,02 m^3/s"
+  ],
+  "perche": "La portata volumetrica è Q = S·v = 0,01 × 2 = 0,02 m³/s, cioè 20 litri al secondo. L'errore tipico è dividere S per v (0,005).",
+  "semplice": "Ogni secondo passa un «cilindro» d'acqua con base 0,01 m² e lungo 2 m: il suo volume è 0,02 m³.",
+  "passaggi": [
+   "1. Q = S v",
+   "2. Q = 0,01 × 2 = 0,02 m³/s"
+  ],
+  "concetto": "portata"
+ },
+ {
+  "id": "CMP-FIS-077",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un tubo orizzontale percorso da un fluido ideale, nel punto in cui la velocità aumenta la pressione ___.",
+  "risposta": "diminuisce",
+  "accettate": [
+   "diminuisce",
+   "cala",
+   "si riduce",
+   "decresce",
+   "diminuisce (si abbassa)",
+   "si abbassa"
+  ],
+  "perche": "Per l'equazione di Bernoulli a quota costante p + ½ρv² è costante: se v aumenta, p diminuisce. È l'effetto Venturi. Errore tipico: pensare che dove il fluido è più veloce «spinga di più» e la pressione cresca.",
+  "semplice": "Se soffi tra due fogli di carta vicini, invece di allontanarsi si avvicinano: l'aria veloce tra i fogli ha pressione più bassa.",
+  "passaggi": [
+   "Il tubo è orizzontale: il termine ρgh è costante.",
+   "Resta p + ½ρv² = costante.",
+   "Se v aumenta, ½ρv² cresce, quindi p deve diminuire.",
+   "La pressione diminuisce (effetto Venturi)."
+  ],
+  "concetto": "effetto Venturi"
+ },
+ {
+  "id": "CMP-FIS-078",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un torchio idraulico il pistone piccolo ha area 1 cm² e quello grande 50 cm². Applicando 10 N sul pistone piccolo, sul grande si ottiene una forza di ___ N.",
+  "risposta": "500",
+  "accettate": [
+   "500",
+   "500 N",
+   "500N"
+  ],
+  "perche": "Per il principio di Pascal la pressione è uguale sui due pistoni: F₁/A₁ = F₂/A₂, quindi F₂ = 10 × 50/1 = 500 N. Le aree si possono lasciare in cm² perché conta solo il rapporto. Errore tipico: dividere invece di moltiplicare (0,2 N).",
+  "semplice": "Il pistone grande ha un'area 50 volte maggiore, quindi riceve una forza 50 volte maggiore: così si sollevano le auto in officina.",
+  "passaggi": [
+   "1. F₁ / A₁ = F₂ / A₂",
+   "2. F₂ = F₁ × A₂ / A₁ = 10 × 50 / 1",
+   "3. F₂ = 500 N"
+  ],
+  "concetto": "torchio idraulico"
+ },
+ {
+  "id": "CMP-FIS-079",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'attrito interno che un fluido oppone allo scorrimento dei suoi strati si chiama ___.",
+  "risposta": "viscosità",
+  "accettate": [
+   "viscosità",
+   "viscosita",
+   "attrito viscoso"
+  ],
+  "perche": "La viscosità misura la resistenza di un fluido allo scorrimento tra strati adiacenti: il miele è molto viscoso, l'acqua poco. Nel SI si misura in Pa·s. Errore tipico: confonderla con la densità o con la tensione superficiale.",
+  "semplice": "Mescolare il miele è più faticoso che mescolare l'acqua: il miele ha una viscosità molto maggiore.",
+  "passaggi": [
+   "Si cerca l'attrito interno tra strati di fluido che scorrono.",
+   "Il miele lo ha alto, l'acqua basso; si misura in Pa·s.",
+   "Non è la densità né la tensione superficiale.",
+   "Si chiama viscosità."
+  ],
+  "concetto": "viscosità"
+ },
+ {
+  "id": "CMP-FIS-080",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo la legge di Poiseuille, la portata di un fluido viscoso in un condotto è proporzionale alla quarta potenza del raggio. Se il raggio si dimezza, a parità di altre condizioni la portata si riduce di ___ volte.",
+  "risposta": "16",
+  "accettate": [
+   "16",
+   "16 volte",
+   "16volte",
+   "sedici"
+  ],
+  "perche": "Q ∝ r⁴: dimezzando il raggio la portata diventa (1/2)⁴ = 1/16 di quella iniziale. È il motivo per cui un piccolo restringimento di un vaso sanguigno riduce molto il flusso. Errore tipico: rispondere 2 o 4.",
+  "semplice": "Se un'arteria si restringe a metà, il sangue che passa non si dimezza: diventa un sedicesimo. Il raggio conta tantissimo.",
+  "passaggi": [
+   "1. Q ∝ r⁴",
+   "2. Q' / Q = (1/2)⁴ = 1/16",
+   "3. la portata si riduce di 16 volte"
+  ],
+  "concetto": "legge di Poiseuille"
+ },
+ {
+  "id": "CMP-FIS-081",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il moto di un fluido in cui gli strati scorrono ordinatamente l'uno sull'altro, senza vortici, si dice ___.",
+  "risposta": "laminare",
+  "accettate": [
+   "laminare",
+   "regime laminare",
+   "flusso laminare"
+  ],
+  "perche": "Nel moto laminare le linee di flusso sono parallele e ordinate; nel moto turbolento si formano vortici. Il passaggio dipende dal numero di Reynolds. Errore tipico: rispondere «turbolento» o «stazionario».",
+  "semplice": "Il filo d'acqua che esce piano da un rubinetto è liscio e trasparente: è laminare. Se apri tutto diventa irregolare e schiumoso: turbolento.",
+  "passaggi": [
+   "Gli strati scorrono ordinati, senza vortici.",
+   "Il moto con vortici si chiama turbolento.",
+   "Il moto a strati paralleli prende il nome dalle «lamine».",
+   "Si dice moto laminare."
+  ],
+  "concetto": "moto laminare"
+ },
+ {
+  "id": "CMP-FIS-082",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La pressione atmosferica normale al livello del mare corrisponde a 760 mm di ___.",
+  "risposta": "mercurio",
+  "accettate": [
+   "mercurio",
+   "Hg",
+   "mercurio (Hg)",
+   "mmHg"
+  ],
+  "perche": "Nell'esperimento di Torricelli la pressione atmosferica sostiene una colonna di mercurio alta 760 mm: 1 atm = 760 mmHg ≈ 1,013 × 10⁵ Pa. Errore tipico: rispondere «acqua», che richiederebbe invece circa 10 m.",
+  "semplice": "La pressione del sangue si misura ancora in millimetri di mercurio, per esempio 120/80 mmHg.",
+  "passaggi": [
+   "Ricorda l'esperimento di Torricelli con un tubo rovesciato.",
+   "La pressione atmosferica sostiene una colonna di 760 mm del liquido usato.",
+   "Con l'acqua servirebbero circa 10 m, perché è molto meno densa.",
+   "Il liquido è il mercurio: 1 atm = 760 mmHg."
+  ],
+  "concetto": "esperimento di Torricelli"
+ },
+ {
+  "id": "CMP-FIS-083",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un blocco di legno di densità 600 kg/m³ galleggia in acqua (1000 kg/m³). La frazione del suo volume che resta immersa è il ___ %.",
+  "risposta": "60",
+  "accettate": [
+   "60",
+   "60 %",
+   "60%",
+   "0,6",
+   "0.6"
+  ],
+  "perche": "All'equilibrio peso = spinta: ρ_legno·V = ρ_acqua·V_imm, quindi V_imm/V = 600/1000 = 0,6 = 60%. L'errore tipico è rispondere 40%, che è la parte emersa.",
+  "semplice": "Un corpo galleggiante affonda quanto basta a spostare un peso d'acqua uguale al proprio peso. Il legno pesa il 60% dell'acqua di pari volume, quindi sta immerso per il 60%.",
+  "passaggi": [
+   "1. ρ_c V g = ρ_f V_imm g",
+   "2. V_imm / V = ρ_c / ρ_f = 600 / 1000",
+   "3. = 0,6 = 60%"
+  ],
+  "concetto": "galleggiamento"
+ },
+ {
+  "id": "CMP-FIS-084",
+  "materia": "Fisica",
+  "argomento": "Meccanica dei fluidi",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Lo strumento che misura la pressione atmosferica si chiama ___.",
+  "risposta": "barometro",
+  "accettate": [
+   "barometro",
+   "barometro a mercurio"
+  ],
+  "perche": "Il barometro misura la pressione atmosferica; il manometro misura la pressione di un fluido in un recipiente, lo sfigmomanometro la pressione arteriosa. Errore tipico: rispondere «manometro».",
+  "semplice": "Il barometro è lo strumento delle previsioni del tempo: se la pressione scende spesso arriva brutto tempo.",
+  "passaggi": [
+   "Lo strumento misura la pressione atmosferica.",
+   "Il manometro misura la pressione di un fluido in un recipiente.",
+   "Lo sfigmomanometro misura la pressione arteriosa.",
+   "Lo strumento è il barometro."
+  ],
+  "concetto": "barometro"
+ },
+ {
+  "id": "CMP-FIS-085",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una temperatura di 27 °C, assumendo 0 °C = 273 K, corrisponde a ___ K.",
+  "risposta": "300",
+  "accettate": [
+   "300",
+   "300 K",
+   "300K"
+  ],
+  "perche": "Per passare dai gradi Celsius ai kelvin si somma 273: T = 27 + 273 = 300 K. Gli intervalli di temperatura sono uguali nelle due scale. Errore tipico: sottrarre 273 (−246) o usare un fattore moltiplicativo come per i Fahrenheit.",
+  "semplice": "Lo zero kelvin è la temperatura più bassa possibile, 273 gradi sotto lo zero Celsius. Quindi basta aggiungere 273 ai gradi Celsius.",
+  "passaggi": [
+   "1. T(K) = t(°C) + 273",
+   "2. T = 27 + 273 = 300 K"
+  ],
+  "concetto": "scala Kelvin"
+ },
+ {
+  "id": "CMP-FIS-086",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per scaldare 2 kg di acqua da 20 °C a 30 °C (calore specifico 4,2 kJ/(kg·°C)) servono ___ kJ.",
+  "risposta": "84",
+  "accettate": [
+   "84",
+   "84 kJ",
+   "84kJ"
+  ],
+  "perche": "Q = m·c·ΔT = 2 × 4,2 × 10 = 84 kJ. L'errore tipico è usare la temperatura finale (30 °C) al posto della variazione (10 °C), ottenendo 252 kJ.",
+  "semplice": "Per alzare di un grado un chilo d'acqua servono 4,2 kJ. Qui i chili sono 2 e i gradi 10: 4,2 × 2 × 10 = 84 kJ.",
+  "passaggi": [
+   "1. ΔT = 30 − 20 = 10 °C",
+   "2. Q = m c ΔT = 2 × 4,2 × 10",
+   "3. Q = 84 kJ"
+  ],
+  "concetto": "calore specifico"
+ },
+ {
+  "id": "CMP-FIS-087",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il passaggio diretto di una sostanza dallo stato solido allo stato gassoso si chiama ___.",
+  "risposta": "sublimazione",
+  "accettate": [
+   "sublimazione",
+   "sublimare"
+  ],
+  "perche": "La sublimazione è il passaggio solido → gas senza passare per il liquido (es. ghiaccio secco, naftalina); il passaggio inverso gas → solido si chiama brinamento. Errore tipico: rispondere «evaporazione», che è liquido → gas.",
+  "semplice": "Il ghiaccio secco usato per gli effetti di fumo non si scioglie in liquido: diventa direttamente gas.",
+  "passaggi": [
+   "Il passaggio va da solido a gas, saltando il liquido.",
+   "Evaporazione è liquido → gas, fusione è solido → liquido.",
+   "Esempi: ghiaccio secco, naftalina; l'inverso si chiama brinamento.",
+   "Si chiama sublimazione."
+  ],
+  "concetto": "passaggi di stato"
+ },
+ {
+  "id": "CMP-FIS-088",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il primo principio della termodinamica si scrive ΔU = Q − ___, dove l'ultimo termine è il lavoro compiuto dal sistema.",
+  "risposta": "L",
+  "accettate": [
+   "L",
+   "lavoro",
+   "W",
+   "il lavoro",
+   "L (lavoro)"
+  ],
+  "perche": "Il primo principio è la conservazione dell'energia: la variazione di energia interna è il calore assorbito meno il lavoro compiuto dal sistema sull'esterno. Errore tipico: sommare il lavoro fatto dal sistema invece di sottrarlo (la forma ΔU = Q + L vale solo se L è il lavoro fatto sul sistema).",
+  "semplice": "Se dai calore a un gas, una parte lo scalda (energia interna) e una parte serve per spingere un pistone (lavoro).",
+  "passaggi": [
+   "Il primo principio è la conservazione dell'energia.",
+   "L'energia interna cresce con il calore assorbito Q.",
+   "Diminuisce del lavoro che il sistema compie verso l'esterno.",
+   "Quindi ΔU = Q − L: il termine mancante è L."
+  ],
+  "concetto": "primo principio della termodinamica"
+ },
+ {
+  "id": "CMP-FIS-089",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una macchina di Carnot lavora tra una sorgente calda a 600 K e una fredda a 300 K. Il suo rendimento è del ___ %.",
+  "risposta": "50",
+  "accettate": [
+   "50",
+   "50 %",
+   "50%",
+   "0,5",
+   "0.5"
+  ],
+  "perche": "Il rendimento di Carnot è η = 1 − T_f/T_c = 1 − 300/600 = 0,5 = 50%, ed è il massimo possibile tra quelle due temperature. Le temperature vanno in kelvin. Errore tipico: usare i gradi Celsius, che darebbe un rendimento sbagliato.",
+  "semplice": "Nessun motore che lavora tra 600 K e 300 K può trasformare in lavoro più della metà del calore che riceve.",
+  "passaggi": [
+   "1. η = 1 − T_f / T_c",
+   "2. η = 1 − 300 / 600 = 1 − 0,5",
+   "3. η = 0,5 = 50%"
+  ],
+  "concetto": "rendimento di Carnot"
+ },
+ {
+  "id": "CMP-FIS-090",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una trasformazione termodinamica che avviene a temperatura costante si chiama ___.",
+  "risposta": "isoterma",
+  "accettate": [
+   "isoterma",
+   "isotermica",
+   "trasformazione isoterma"
+  ],
+  "perche": "Isoterma = temperatura costante; isobara = pressione costante; isocora = volume costante; adiabatica = nessuno scambio di calore. Per un gas perfetto in un'isoterma vale la legge di Boyle (p·V = costante). Errore tipico: confondere isoterma e adiabatica.",
+  "semplice": "«Iso» vuol dire uguale e «terma» calore/temperatura: isoterma è una trasformazione in cui la temperatura resta uguale.",
+  "passaggi": [
+   "La trasformazione avviene a temperatura costante.",
+   "Ricorda i nomi: isobara p costante, isocora V costante, adiabatica Q = 0.",
+   "«Iso-terma» significa stessa temperatura; per un gas perfetto vale p·V = costante.",
+   "Si chiama isoterma."
+  ],
+  "concetto": "trasformazione isoterma"
+ },
+ {
+  "id": "CMP-FIS-091",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una trasformazione in cui il sistema non scambia calore con l'ambiente si chiama ___.",
+  "risposta": "adiabatica",
+  "accettate": [
+   "adiabatica",
+   "adiabatico",
+   "trasformazione adiabatica"
+  ],
+  "perche": "In una trasformazione adiabatica Q = 0, quindi ΔU = −L: se il gas si espande compie lavoro e si raffredda. Errore tipico: confonderla con l'isoterma, nella quale invece il calore viene scambiato e la temperatura resta costante.",
+  "semplice": "Quando sgonfi una bomboletta spray, il gas esce espandendosi rapidamente senza tempo di scambiare calore, e la bomboletta diventa fredda.",
+  "passaggi": [
+   "Il sistema non scambia calore: Q = 0.",
+   "Nell'isoterma invece il calore si scambia per tenere T costante.",
+   "Con Q = 0 vale ΔU = −L.",
+   "La trasformazione si chiama adiabatica."
+  ],
+  "concetto": "trasformazione adiabatica"
+ },
+ {
+  "id": "CMP-FIS-092",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un gas perfetto occupa 6 L alla pressione di 1 atm. Viene compresso a temperatura costante fino a 3 atm. Il nuovo volume è ___ L.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 L",
+   "2L"
+  ],
+  "perche": "A temperatura costante vale la legge di Boyle: p₁V₁ = p₂V₂, quindi V₂ = 1 × 6 / 3 = 2 L. L'errore tipico è pensare che volume e pressione siano direttamente proporzionali (18 L).",
+  "semplice": "Se schiacci il gas triplicando la pressione, il volume diventa un terzo: da 6 litri a 2 litri.",
+  "passaggi": [
+   "1. p₁ V₁ = p₂ V₂",
+   "2. V₂ = p₁ V₁ / p₂ = 1 × 6 / 3",
+   "3. V₂ = 2 L"
+  ],
+  "concetto": "legge di Boyle"
+ },
+ {
+  "id": "CMP-FIS-093",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un gas si espande alla pressione costante di 2 × 10⁵ Pa aumentando il volume di 0,003 m³. Il lavoro compiuto dal gas vale ___ J.",
+  "risposta": "600",
+  "accettate": [
+   "600",
+   "600 J",
+   "600J"
+  ],
+  "perche": "In una trasformazione isobara L = p·ΔV = 2 × 10⁵ × 3 × 10⁻³ = 600 J. L'errore tipico è sbagliare le potenze di 10 (ottenendo 60 o 6000 J).",
+  "semplice": "Il gas spinge con una pressione costante e «guadagna spazio»: il lavoro è pressione per aumento di volume.",
+  "passaggi": [
+   "1. L = p ΔV",
+   "2. L = 2 × 10⁵ × 3 × 10⁻³",
+   "3. L = 6 × 10² = 600 J"
+  ],
+  "concetto": "lavoro in un'isobara"
+ },
+ {
+  "id": "CMP-FIS-094",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il trasferimento di calore attraverso un solido, senza spostamento di materia, avviene per ___.",
+  "risposta": "conduzione",
+  "accettate": [
+   "conduzione",
+   "conduzione termica"
+  ],
+  "perche": "Nella conduzione l'energia passa da particella a particella per urti e vibrazioni, senza trasporto di materia: è tipica dei solidi, soprattutto dei metalli. La convezione richiede invece movimento del fluido e l'irraggiamento avviene tramite onde elettromagnetiche. Errore tipico: confondere conduzione e convezione.",
+  "semplice": "Se tieni in mano un cucchiaino in una tazza di tè caldo, il manico si scalda: il calore viaggia lungo il metallo per conduzione.",
+  "passaggi": [
+   "Il calore passa attraverso un solido senza che la materia si sposti.",
+   "L'energia passa da particella a particella per urti e vibrazioni.",
+   "La convezione richiede moto del fluido, l'irraggiamento onde elettromagnetiche.",
+   "Avviene per conduzione."
+  ],
+  "concetto": "conduzione del calore"
+ },
+ {
+  "id": "CMP-FIS-095",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il trasferimento di calore dovuto a movimenti di massa di un liquido o di un gas si chiama ___.",
+  "risposta": "convezione",
+  "accettate": [
+   "convezione",
+   "convezione termica",
+   "moti convettivi"
+  ],
+  "perche": "Nella convezione il fluido caldo, meno denso, sale e quello freddo scende, creando correnti che trasportano calore. È tipica di liquidi e gas. Errore tipico: rispondere «irraggiamento», che non richiede alcun mezzo materiale.",
+  "semplice": "Il termosifone scalda la stanza perché l'aria calda vicino a esso sale e quella fredda scende verso di lui: si forma un giro continuo.",
+  "passaggi": [
+   "Il calore è trasportato da movimenti di massa di un fluido.",
+   "Il fluido caldo, meno denso, sale e quello freddo scende, creando correnti.",
+   "La conduzione non sposta materia e l'irraggiamento non richiede un mezzo.",
+   "Si chiama convezione."
+  ],
+  "concetto": "convezione"
+ },
+ {
+  "id": "CMP-FIS-096",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una macchina termica assorbe 1000 J da una sorgente calda e ne cede 700 J a quella fredda. Il suo rendimento è del ___ %.",
+  "risposta": "30",
+  "accettate": [
+   "30",
+   "30 %",
+   "30%",
+   "0,3",
+   "0.3"
+  ],
+  "perche": "Il lavoro prodotto è 1000 − 700 = 300 J; il rendimento è η = L/Q_ass = 300/1000 = 30%. L'errore tipico è rispondere 70%, cioè la frazione di calore ceduta.",
+  "semplice": "Dei 1000 J che entrano, 700 escono come calore «sprecato»: solo 300 diventano lavoro, cioè il 30%.",
+  "passaggi": [
+   "1. L = Q_ass − Q_ced = 1000 − 700 = 300 J",
+   "2. η = L / Q_ass = 300 / 1000",
+   "3. η = 0,3 = 30%"
+  ],
+  "concetto": "rendimento di una macchina termica"
+ },
+ {
+  "id": "CMP-FIS-097",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Secondo il secondo principio della termodinamica, l'entropia di un sistema isolato non può ___.",
+  "risposta": "diminuire",
+  "accettate": [
+   "diminuire",
+   "calare",
+   "decrescere",
+   "ridursi"
+  ],
+  "perche": "In un sistema isolato l'entropia aumenta nei processi irreversibili e resta costante in quelli reversibili, ma non diminuisce mai. Errore tipico: rispondere «aumentare» o «variare», ignorando che l'aumento è proprio ciò che accade spontaneamente.",
+  "semplice": "Una stanza lasciata a sé non si riordina da sola: il disordine tende ad aumentare, mai a diminuire spontaneamente.",
+  "passaggi": [
+   "Il secondo principio riguarda l'entropia di un sistema isolato.",
+   "Nei processi irreversibili aumenta, in quelli reversibili resta costante.",
+   "In nessun caso può scendere.",
+   "L'entropia non può diminuire."
+  ],
+  "concetto": "secondo principio ed entropia"
+ },
+ {
+  "id": "CMP-FIS-098",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una sbarra d'acciaio lunga 10 m (coefficiente di dilatazione lineare 1,2 × 10⁻⁵ °C⁻¹) viene scaldata di 50 °C. Si allunga di ___ mm.",
+  "risposta": "6",
+  "accettate": [
+   "6",
+   "6 mm",
+   "6mm"
+  ],
+  "perche": "ΔL = α·L₀·ΔT = 1,2 × 10⁻⁵ × 10 × 50 = 6 × 10⁻³ m = 6 mm. L'errore tipico è lasciare il risultato in metri (0,006) o sbagliare la potenza di 10.",
+  "semplice": "Il metallo scaldato si allunga pochissimo: una sbarra di 10 m, scaldata di 50 gradi, cresce di appena 6 millimetri. Per questo binari e ponti hanno giunti di dilatazione.",
+  "passaggi": [
+   "1. ΔL = α L₀ ΔT",
+   "2. ΔL = 1,2 × 10⁻⁵ × 10 × 50 = 6 × 10⁻³ m",
+   "3. ΔL = 6 mm"
+  ],
+  "concetto": "dilatazione lineare"
+ },
+ {
+  "id": "CMP-FIS-099",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il calore che una sostanza assorbe o cede durante un cambiamento di stato, senza variare la sua temperatura, si chiama calore ___.",
+  "risposta": "latente",
+  "accettate": [
+   "latente",
+   "latente di fusione",
+   "latente di cambiamento di stato"
+  ],
+  "perche": "Durante una transizione di fase il calore serve a rompere (o formare) i legami tra le particelle, non ad aumentare la temperatura: si chiama calore latente, Q = m·λ. Errore tipico: confonderlo con il calore specifico, che invece fa variare la temperatura.",
+  "semplice": "Il ghiaccio che fonde in un bicchiere resta a 0 °C finché non si è sciolto tutto, anche se continua ad assorbire calore.",
+  "passaggi": [
+   "Il calore è scambiato durante un cambiamento di stato a temperatura costante.",
+   "Serve a rompere o formare i legami tra particelle, non ad alzare T.",
+   "Il calore specifico invece fa variare la temperatura.",
+   "Si chiama calore latente (Q = m·λ)."
+  ],
+  "concetto": "calore latente"
+ },
+ {
+  "id": "CMP-FIS-100",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In una trasformazione isocora (a volume costante) il lavoro compiuto dal gas vale ___ J.",
+  "risposta": "0",
+  "accettate": [
+   "0",
+   "0 J",
+   "0J",
+   "zero",
+   "nullo"
+  ],
+  "perche": "Il lavoro di un gas è L = p·ΔV; se il volume non cambia, ΔV = 0 e il lavoro è nullo. Tutto il calore scambiato va in variazione di energia interna (ΔU = Q). Errore tipico: pensare che il gas compia lavoro perché la pressione cambia.",
+  "semplice": "Se il gas è chiuso in una bombola rigida, scaldandolo la pressione sale ma nessun pistone si muove: il gas non compie lavoro.",
+  "passaggi": [
+   "1. L = p ΔV",
+   "2. ΔV = 0",
+   "3. L = 0 J"
+  ],
+  "concetto": "trasformazione isocora"
+ },
+ {
+  "id": "CMP-FIS-101",
+  "materia": "Fisica",
+  "argomento": "Termologia e termodinamica",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un gas perfetto in un recipiente rigido passa da 300 K a 600 K. Se la pressione iniziale era 1 atm, la pressione finale è ___ atm.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 atm",
+   "2atm"
+  ],
+  "perche": "A volume costante vale la legge di Gay-Lussac: p/T = costante, con T in kelvin. Raddoppiando la temperatura assoluta la pressione raddoppia: 2 atm. Errore tipico: ragionare in gradi Celsius.",
+  "semplice": "Scaldare il gas fa muovere più velocemente le molecole, che urtano le pareti più forte: se la temperatura in kelvin raddoppia, raddoppia anche la pressione.",
+  "passaggi": [
+   "1. p₁ / T₁ = p₂ / T₂",
+   "2. p₂ = p₁ × T₂ / T₁ = 1 × 600 / 300",
+   "3. p₂ = 2 atm"
+  ],
+  "concetto": "legge di Gay-Lussac (isocora)"
+ },
+ {
+  "id": "CMP-FIS-102",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Ai capi di un resistore di 4 Ω c'è una differenza di potenziale di 12 V. La corrente che lo attraversa è ___ A.",
+  "risposta": "3",
+  "accettate": [
+   "3",
+   "3 A",
+   "3A"
+  ],
+  "perche": "Per la prima legge di Ohm I = V/R = 12/4 = 3 A. L'errore tipico è moltiplicare V per R (48).",
+  "semplice": "La tensione «spinge» la corrente e la resistenza la ostacola: 12 V divisi per 4 Ω danno 3 ampere.",
+  "passaggi": [
+   "1. I = V / R",
+   "2. I = 12 / 4 = 3 A"
+  ],
+  "concetto": "legge di Ohm"
+ },
+ {
+  "id": "CMP-FIS-103",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Tre resistori da 2 Ω, 3 Ω e 5 Ω sono collegati in serie. La resistenza equivalente è ___ Ω.",
+  "risposta": "10",
+  "accettate": [
+   "10",
+   "10 Ω",
+   "10Ω",
+   "10 ohm"
+  ],
+  "perche": "In serie le resistenze si sommano: R_eq = 2 + 3 + 5 = 10 Ω. L'errore tipico è usare la regola del parallelo (somma degli inversi).",
+  "semplice": "In serie la corrente deve attraversare tutti i resistori uno dopo l'altro: gli ostacoli si sommano.",
+  "passaggi": [
+   "1. R_eq = R₁ + R₂ + R₃",
+   "2. R_eq = 2 + 3 + 5 = 10 Ω"
+  ],
+  "concetto": "resistori in serie"
+ },
+ {
+  "id": "CMP-FIS-104",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Due resistori identici da 6 Ω sono collegati in parallelo. La resistenza equivalente è ___ Ω.",
+  "risposta": "3",
+  "accettate": [
+   "3",
+   "3 Ω",
+   "3Ω",
+   "3 ohm"
+  ],
+  "perche": "In parallelo 1/R_eq = 1/6 + 1/6 = 2/6, quindi R_eq = 3 Ω; per due resistori uguali è la metà di uno. L'errore tipico è sommarli come in serie (12 Ω).",
+  "semplice": "In parallelo la corrente ha due strade invece di una: passa più facilmente, quindi la resistenza totale diminuisce, qui a metà.",
+  "passaggi": [
+   "1. 1/R_eq = 1/R₁ + 1/R₂ = 1/6 + 1/6",
+   "2. 1/R_eq = 1/3",
+   "3. R_eq = 3 Ω"
+  ],
+  "concetto": "resistori in parallelo"
+ },
+ {
+  "id": "CMP-FIS-105",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale la capacità elettrica di un condensatore si misura in ___.",
+  "risposta": "farad",
+  "accettate": [
+   "farad",
+   "F",
+   "Farad",
+   "C/V"
+  ],
+  "perche": "La capacità è C = Q/V, quindi 1 F = 1 C/V. Il farad è un'unità molto grande: nella pratica si usano μF, nF e pF. Errore tipico: rispondere «coulomb», che è l'unità della carica.",
+  "semplice": "La capacità dice quanta carica un condensatore riesce ad accumulare per ogni volt di tensione.",
+  "passaggi": [
+   "La capacità è C = Q/V.",
+   "Unità: coulomb diviso volt.",
+   "Il coulomb da solo è l'unità della carica.",
+   "1 C/V si chiama farad."
+  ],
+  "concetto": "unità della capacità"
+ },
+ {
+  "id": "CMP-FIS-106",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Due cariche puntiformi si attraggono con una certa forza. Se la loro distanza triplica, la forza si riduce di ___ volte.",
+  "risposta": "9",
+  "accettate": [
+   "9",
+   "9 volte",
+   "9volte",
+   "nove"
+  ],
+  "perche": "Per la legge di Coulomb F ∝ 1/r²: triplicando la distanza la forza diventa 1/3² = 1/9. L'errore tipico è rispondere 3, come se la dipendenza fosse 1/r.",
+  "semplice": "La forza elettrica cala molto in fretta con la distanza: a una distanza tripla è nove volte più debole.",
+  "passaggi": [
+   "1. F ∝ 1 / r²",
+   "2. F' / F = 1 / 3² = 1/9",
+   "3. si riduce di 9 volte"
+  ],
+  "concetto": "legge di Coulomb"
+ },
+ {
+  "id": "CMP-FIS-107",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un elettrodomestico alimentato a 220 V assorbe una corrente di 5 A. La potenza elettrica assorbita è ___ W.",
+  "risposta": "1100",
+  "accettate": [
+   "1100",
+   "1100 W",
+   "1100W",
+   "1,1 kW",
+   "1.1 kW"
+  ],
+  "perche": "La potenza elettrica è P = V·I = 220 × 5 = 1100 W. L'errore tipico è dividere tensione e corrente (44, che sono ohm).",
+  "semplice": "Tensione per corrente dà la potenza: un apparecchio da 1100 W è per esempio un ferro da stiro.",
+  "passaggi": [
+   "1. P = V I",
+   "2. P = 220 × 5 = 1100 W"
+  ],
+  "concetto": "potenza elettrica"
+ },
+ {
+  "id": "CMP-FIS-108",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un condensatore da 10 μF è collegato a una differenza di potenziale di 100 V. La carica accumulata su ciascuna armatura è ___ mC.",
+  "risposta": "1",
+  "accettate": [
+   "1",
+   "1 mC",
+   "1mC"
+  ],
+  "perche": "Q = C·V = 10 × 10⁻⁶ × 100 = 10⁻³ C = 1 mC. L'errore tipico è dimenticare il prefisso micro e ottenere 1000 C.",
+  "semplice": "Dieci microfarad per cento volt fanno mille microcoulomb, cioè un millicoulomb.",
+  "passaggi": [
+   "1. Q = C V",
+   "2. Q = 10 × 10⁻⁶ × 100 = 10⁻³ C",
+   "3. Q = 1 mC"
+  ],
+  "concetto": "carica di un condensatore"
+ },
+ {
+  "id": "CMP-FIS-109",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale la resistenza elettrica si misura in ___.",
+  "risposta": "ohm",
+  "accettate": [
+   "ohm",
+   "Ω",
+   "Ohm",
+   "V/A"
+  ],
+  "perche": "L'ohm è l'unità della resistenza: 1 Ω = 1 V/A. La resistività invece si misura in Ω·m. Errore tipico: confondere resistenza e resistività o rispondere «siemens», che è l'unità della conduttanza.",
+  "semplice": "Un resistore da 1 ohm lascia passare 1 ampere quando ai suoi capi c'è 1 volt.",
+  "passaggi": [
+   "Dalla legge di Ohm R = V/I.",
+   "Unità: volt diviso ampere.",
+   "La resistività si misura in Ω·m e la conduttanza in siemens.",
+   "1 V/A si chiama ohm."
+  ],
+  "concetto": "unità della resistenza"
+ },
+ {
+  "id": "CMP-FIS-110",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il campo elettrico si misura in N/C oppure, in modo equivalente, in ___ al metro.",
+  "risposta": "volt",
+  "accettate": [
+   "volt",
+   "V",
+   "Volt"
+  ],
+  "perche": "Poiché E = ΔV/d, il campo elettrico si può esprimere in V/m, unità equivalente a N/C. Errore tipico: rispondere «coulomb» o «newton».",
+  "semplice": "Tra due piastre a 100 V di differenza distanti 1 m il campo è 100 V/m: ogni metro la tensione scende di 100 V.",
+  "passaggi": [
+   "Il campo uniforme si può scrivere E = ΔV/d.",
+   "ΔV è in volt e d in metri.",
+   "Quindi E si misura anche in V/m, equivalente a N/C.",
+   "Mancano i volt: volt al metro."
+  ],
+  "concetto": "unità del campo elettrico"
+ },
+ {
+  "id": "CMP-FIS-111",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una stufa elettrica da 2 kW resta accesa per 3 ore. L'energia consumata è ___ kWh.",
+  "risposta": "6",
+  "accettate": [
+   "6",
+   "6 kWh",
+   "6kWh"
+  ],
+  "perche": "L'energia è E = P·t = 2 kW × 3 h = 6 kWh. L'errore tipico è dividere la potenza per il tempo o convertire inutilmente le ore in secondi.",
+  "semplice": "Ogni ora la stufa consuma 2 kWh; in tre ore ne consuma 6: è quello che paghi in bolletta.",
+  "passaggi": [
+   "1. E = P t",
+   "2. E = 2 kW × 3 h = 6 kWh"
+  ],
+  "concetto": "energia elettrica"
+ },
+ {
+  "id": "CMP-FIS-112",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "I materiali in cui le cariche elettriche non sono libere di muoversi, come vetro e plastica, si chiamano ___.",
+  "risposta": "isolanti",
+  "accettate": [
+   "isolanti",
+   "isolante",
+   "dielettrici",
+   "dielettrico",
+   "isolanti elettrici"
+  ],
+  "perche": "Negli isolanti (o dielettrici) gli elettroni sono legati agli atomi e non possono condurre corrente; nei conduttori, come i metalli, esistono elettroni liberi. Errore tipico: rispondere «semiconduttori», che hanno un comportamento intermedio.",
+  "semplice": "I cavi elettrici sono di rame (conduttore) ricoperto di plastica (isolante): la plastica impedisce alla corrente di arrivare alle tue mani.",
+  "passaggi": [
+   "Nei materiali descritti le cariche non sono libere di muoversi.",
+   "I conduttori, come i metalli, hanno elettroni liberi.",
+   "I semiconduttori hanno un comportamento intermedio.",
+   "Vetro e plastica sono isolanti."
+  ],
+  "concetto": "conduttori e isolanti"
+ },
+ {
+  "id": "CMP-FIS-113",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un filo scorre una corrente costante di 2 A per 10 s. La carica che attraversa una sezione del filo è ___ C.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 C",
+   "20C"
+  ],
+  "perche": "Dalla definizione di intensità di corrente, Q = I·t = 2 × 10 = 20 C. L'errore tipico è dividere (0,2 o 5).",
+  "semplice": "Due coulomb passano ogni secondo; in dieci secondi ne passano venti.",
+  "passaggi": [
+   "1. I = Q / t",
+   "2. Q = I t = 2 × 10 = 20 C"
+  ],
+  "concetto": "intensità di corrente"
+ },
+ {
+  "id": "CMP-FIS-114",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le linee di forza del campo elettrico escono dalle cariche ___ ed entrano in quelle negative.",
+  "risposta": "positive",
+  "accettate": [
+   "positive",
+   "positiva",
+   "positive (+)"
+  ],
+  "perche": "Per convenzione le linee di campo indicano la direzione della forza su una carica di prova positiva: escono dalle cariche positive ed entrano nelle negative. Errore tipico: invertire il verso.",
+  "semplice": "Una carica positiva di prova viene respinta da una carica positiva: per questo le frecce del campo partono dalle cariche positive.",
+  "passaggi": [
+   "Le linee di campo indicano la forza su una carica di prova positiva.",
+   "Una carica positiva è respinta da una positiva e attratta da una negativa.",
+   "Quindi le linee partono dalle positive e finiscono nelle negative.",
+   "Escono dalle cariche positive."
+  ],
+  "concetto": "linee del campo elettrico"
+ },
+ {
+  "id": "CMP-FIS-115",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un resistore da 10 Ω è attraversato da una corrente di 2 A. La potenza dissipata per effetto Joule è ___ W.",
+  "risposta": "40",
+  "accettate": [
+   "40",
+   "40 W",
+   "40W"
+  ],
+  "perche": "P = R·I² = 10 × 4 = 40 W. L'errore tipico è non elevare al quadrato la corrente (20 W).",
+  "semplice": "La corrente che passa nel resistore lo scalda: la potenza dissipata cresce con il quadrato della corrente.",
+  "passaggi": [
+   "1. P = R I²",
+   "2. P = 10 × 2² = 10 × 4",
+   "3. P = 40 W"
+  ],
+  "concetto": "effetto Joule"
+ },
+ {
+  "id": "CMP-FIS-116",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Lo strumento che misura la differenza di potenziale tra due punti di un circuito si chiama ___.",
+  "risposta": "voltmetro",
+  "accettate": [
+   "voltmetro",
+   "voltometro",
+   "tester",
+   "multimetro"
+  ],
+  "perche": "Il voltmetro misura le tensioni e si collega in parallelo; l'amperometro misura le correnti e si collega in serie. Errore tipico: rispondere «amperometro».",
+  "semplice": "Per sapere se una pila è carica appoggi i puntali del voltmetro ai due poli e leggi i volt.",
+  "passaggi": [
+   "Lo strumento misura una differenza di potenziale, cioè una tensione in volt.",
+   "L'amperometro misura invece la corrente.",
+   "Lo strumento delle tensioni prende il nome dal volt.",
+   "È il voltmetro."
+  ],
+  "concetto": "voltmetro"
+ },
+ {
+  "id": "CMP-FIS-117",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Per misurare la differenza di potenziale ai capi di un componente, il voltmetro va collegato in ___ al componente.",
+  "risposta": "parallelo",
+  "accettate": [
+   "parallelo",
+   "derivazione",
+   "in parallelo"
+  ],
+  "perche": "Il voltmetro si collega in parallelo, così ha ai suoi capi la stessa tensione del componente; ha resistenza interna molto alta per non deviare corrente. L'amperometro, al contrario, va in serie. Errore tipico: rispondere «serie».",
+  "semplice": "Il voltmetro deve «guardare» i due estremi del componente, quindi si mette a cavallo di esso, non lungo il filo.",
+  "passaggi": [
+   "Il voltmetro deve avere ai suoi capi la stessa tensione del componente.",
+   "Componenti con la stessa tensione sono collegati in parallelo.",
+   "L'amperometro va invece in serie, per essere attraversato dalla stessa corrente.",
+   "Il voltmetro va collegato in parallelo."
+  ],
+  "concetto": "collegamento del voltmetro"
+ },
+ {
+  "id": "CMP-FIS-118",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale l'intensità del campo magnetico B si misura in ___.",
+  "risposta": "tesla",
+  "accettate": [
+   "tesla",
+   "T",
+   "Tesla"
+  ],
+  "perche": "L'unità SI del campo magnetico è il tesla (1 T = 1 N/(A·m)); il gauss (10⁻⁴ T) è un'unità non SI. Errore tipico: rispondere «weber», che è l'unità del flusso magnetico.",
+  "semplice": "Il campo magnetico terrestre è debole, circa 0,00005 T; una risonanza magnetica in ospedale usa campi di 1,5-3 T.",
+  "passaggi": [
+   "Si chiede l'unità SI del campo magnetico B.",
+   "Il weber misura il flusso, il gauss non è SI (10⁻⁴ T).",
+   "1 N/(A·m) ha un nome proprio.",
+   "È il tesla."
+  ],
+  "concetto": "unità del campo magnetico"
+ },
+ {
+  "id": "CMP-FIS-119",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un filo rettilineo lungo 2 m, percorso da una corrente di 4 A, è immerso perpendicolarmente in un campo magnetico di 0,5 T. La forza sul filo vale ___ N.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "4 N",
+   "4N"
+  ],
+  "perche": "La forza magnetica su un filo è F = B·I·L·sen θ; con θ = 90° vale 0,5 × 4 × 2 = 4 N. L'errore tipico è dividere invece di moltiplicare o dimenticare un fattore.",
+  "semplice": "Un campo magnetico spinge un filo percorso da corrente: più forte il campo, la corrente e più lungo il filo, maggiore la spinta. È il principio dei motori elettrici.",
+  "passaggi": [
+   "1. F = B I L sen 90°",
+   "2. F = 0,5 × 4 × 2 × 1",
+   "3. F = 4 N"
+  ],
+  "concetto": "forza su un filo percorso da corrente"
+ },
+ {
+  "id": "CMP-FIS-120",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una carica di 1 μC si muove a 1000 m/s perpendicolarmente a un campo magnetico di 2 T. La forza di Lorentz su di essa vale ___ mN.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "2 mN",
+   "2mN"
+  ],
+  "perche": "F = q·v·B·sen 90° = 10⁻⁶ × 10³ × 2 = 2 × 10⁻³ N = 2 mN. L'errore tipico è dimenticare il prefisso micro (2000 N) o confondere μ e m.",
+  "semplice": "Una carica in movimento dentro un campo magnetico viene deviata di lato. Qui la forza è piccola: due millesimi di newton.",
+  "passaggi": [
+   "1. F = q v B sen 90°",
+   "2. F = 1 × 10⁻⁶ × 1000 × 2 = 2 × 10⁻³ N",
+   "3. F = 2 mN"
+  ],
+  "concetto": "forza di Lorentz"
+ },
+ {
+  "id": "CMP-FIS-121",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La legge di ___ afferma che la forza elettromotrice indotta in un circuito è uguale alla rapidità di variazione del flusso magnetico concatenato.",
+  "risposta": "Faraday",
+  "accettate": [
+   "Faraday",
+   "Faraday-Neumann",
+   "Faraday-Neumann-Lenz",
+   "faraday",
+   "Faraday Neumann"
+  ],
+  "perche": "La legge di Faraday-Neumann (f.e.m. = −ΔΦ/Δt) descrive l'induzione elettromagnetica, alla base di generatori e trasformatori. Errore tipico: rispondere «Ampère», la cui legge lega invece il campo magnetico alle correnti che lo generano.",
+  "semplice": "Se muovi una calamita dentro una bobina, nella bobina nasce una corrente: più veloce muovi la calamita, più forte è la corrente.",
+  "passaggi": [
+   "La legge riguarda la f.e.m. indotta da un flusso magnetico che varia.",
+   "Si scrive f.e.m. = −ΔΦ/Δt.",
+   "Ampère lega invece il campo magnetico alle correnti.",
+   "È la legge di Faraday(-Neumann)."
+  ],
+  "concetto": "induzione elettromagnetica"
+ },
+ {
+  "id": "CMP-FIS-122",
+  "materia": "Fisica",
+  "argomento": "Elettrostatica e circuiti",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La legge di ___ afferma che la forza tra due cariche puntiformi è proporzionale al prodotto delle cariche e inversamente proporzionale al quadrato della loro distanza.",
+  "risposta": "Coulomb",
+  "accettate": [
+   "Coulomb",
+   "coulomb"
+  ],
+  "perche": "La legge di Coulomb, F = k·q₁q₂/r², descrive la forza elettrostatica, attrattiva tra cariche di segno opposto e repulsiva tra cariche dello stesso segno. Ha la stessa forma della legge di gravitazione di Newton. Errore tipico: rispondere «Ohm», legge che riguarda invece i circuiti.",
+  "semplice": "Due palloncini strofinati sui capelli si respingono: più sono carichi e più sono vicini, più forte si respingono.",
+  "passaggi": [
+   "La forza è tra cariche puntiformi, proporzionale al prodotto delle cariche.",
+   "È inversamente proporzionale al quadrato della distanza: F = k·q₁q₂/r².",
+   "Ohm riguarda invece i circuiti.",
+   "È la legge di Coulomb."
+  ],
+  "concetto": "legge di Coulomb"
+ },
+ {
+  "id": "CMP-FIS-123",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il segno meno nella legge dell'induzione elettromagnetica esprime la legge di ___: la corrente indotta si oppone alla variazione di flusso che l'ha generata.",
+  "risposta": "Lenz",
+  "accettate": [
+   "Lenz",
+   "lenz"
+  ],
+  "perche": "La legge di Lenz stabilisce il verso della corrente indotta: il suo campo magnetico si oppone alla variazione del flusso. È una conseguenza della conservazione dell'energia. Errore tipico: rispondere «Faraday», che dà il valore della f.e.m. ma non il verso.",
+  "semplice": "Se avvicini una calamita a un anello di rame, nell'anello nasce una corrente che crea un piccolo magnete che «respinge» la calamita, opponendosi al suo avvicinamento.",
+  "passaggi": [
+   "Il segno meno in f.e.m. = −ΔΦ/Δt indica il verso della corrente indotta.",
+   "La corrente indotta si oppone alla variazione di flusso che la genera.",
+   "Faraday dà il valore, non il verso.",
+   "È la legge di Lenz."
+  ],
+  "concetto": "legge di Lenz"
+ },
+ {
+  "id": "CMP-FIS-124",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un campo magnetico uniforme di 0,2 T attraversa perpendicolarmente una spira di area 0,5 m². Il flusso magnetico vale ___ Wb.",
+  "risposta": "0,1",
+  "accettate": [
+   "0,1",
+   "0.1",
+   "0,1 Wb",
+   "0,1Wb",
+   "0.1 Wb",
+   "0.1Wb"
+  ],
+  "perche": "Il flusso è Φ = B·S·cos θ; con campo perpendicolare alla superficie θ = 0° e Φ = 0,2 × 0,5 = 0,1 Wb. L'errore tipico è dividere B per S (0,4).",
+  "semplice": "Il flusso conta «quante linee di campo» attraversano la spira: più forte il campo e più grande la spira, maggiore il flusso.",
+  "passaggi": [
+   "1. Φ = B S cos 0°",
+   "2. Φ = 0,2 × 0,5 × 1",
+   "3. Φ = 0,1 Wb"
+  ],
+  "concetto": "flusso magnetico"
+ },
+ {
+  "id": "CMP-FIS-125",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel Sistema Internazionale il flusso del campo magnetico si misura in ___.",
+  "risposta": "weber",
+  "accettate": [
+   "weber",
+   "Wb",
+   "Weber",
+   "T·m²",
+   "T m²"
+  ],
+  "perche": "Il weber è l'unità del flusso magnetico: 1 Wb = 1 T·m². Errore tipico: rispondere «tesla», che è invece l'unità del campo magnetico.",
+  "semplice": "Un campo di 1 tesla che attraversa perpendicolarmente una superficie di 1 metro quadrato dà un flusso di 1 weber.",
+  "passaggi": [
+   "Il flusso magnetico è Φ = B·S.",
+   "Unità: tesla per metro quadrato.",
+   "Il tesla da solo è l'unità del campo.",
+   "1 T·m² si chiama weber."
+  ],
+  "concetto": "unità del flusso magnetico"
+ },
+ {
+  "id": "CMP-FIS-126",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il flusso magnetico attraverso una bobina varia uniformemente di 0,6 Wb in 0,2 s. Il valore assoluto della f.e.m. indotta è ___ V.",
+  "risposta": "3",
+  "accettate": [
+   "3",
+   "3 V",
+   "3V"
+  ],
+  "perche": "Per la legge di Faraday-Neumann |f.e.m.| = ΔΦ/Δt = 0,6/0,2 = 3 V. L'errore tipico è moltiplicare variazione di flusso e tempo (0,12).",
+  "semplice": "Più velocemente cambia il flusso, maggiore è la tensione indotta: 0,6 Wb in 0,2 s equivale a 3 Wb al secondo, cioè 3 V.",
+  "passaggi": [
+   "1. |f.e.m.| = ΔΦ / Δt",
+   "2. = 0,6 / 0,2",
+   "3. = 3 V"
+  ],
+  "concetto": "legge di Faraday-Neumann"
+ },
+ {
+  "id": "CMP-FIS-127",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un trasformatore ideale ha 1000 spire al primario e 100 al secondario. Con 220 V al primario, la tensione al secondario è ___ V.",
+  "risposta": "22",
+  "accettate": [
+   "22",
+   "22 V",
+   "22V"
+  ],
+  "perche": "In un trasformatore ideale V₂/V₁ = N₂/N₁, quindi V₂ = 220 × 100/1000 = 22 V: è un trasformatore abbassatore. L'errore tipico è invertire il rapporto (2200 V).",
+  "semplice": "Il secondario ha dieci volte meno spire del primario, quindi la tensione diventa dieci volte più piccola: da 220 a 22 V.",
+  "passaggi": [
+   "1. V₂ / V₁ = N₂ / N₁",
+   "2. V₂ = 220 × 100 / 1000",
+   "3. V₂ = 22 V"
+  ],
+  "concetto": "trasformatore"
+ },
+ {
+  "id": "CMP-FIS-128",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una carica elettrica che si muove con velocità parallela alle linee di un campo magnetico subisce una forza magnetica ___.",
+  "risposta": "nulla",
+  "accettate": [
+   "nulla",
+   "zero",
+   "0",
+   "uguale a zero",
+   "nessuna"
+  ],
+  "perche": "La forza di Lorentz vale F = q·v·B·sen θ; se la velocità è parallela al campo θ = 0° e sen 0° = 0, quindi la forza è nulla e la carica prosegue in linea retta. Errore tipico: pensare che sia massima, come succede invece per velocità perpendicolare al campo.",
+  "semplice": "Il campo magnetico devia solo le cariche che lo «attraversano» di traverso; se la carica scorre lungo le linee del campo, non succede nulla.",
+  "passaggi": [
+   "La forza di Lorentz vale F = q·v·B·sen θ.",
+   "Velocità parallela al campo significa θ = 0°.",
+   "sen 0° = 0, quindi F = 0.",
+   "La forza magnetica è nulla."
+  ],
+  "concetto": "forza di Lorentz e direzione"
+ },
+ {
+  "id": "CMP-FIS-129",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Materiali come ferro, nichel e cobalto, che si magnetizzano fortemente e possono diventare calamite permanenti, si dicono ___.",
+  "risposta": "ferromagnetici",
+  "accettate": [
+   "ferromagnetici",
+   "ferromagnetico",
+   "ferromagnetiche",
+   "materiali ferromagnetici"
+  ],
+  "perche": "Nei materiali ferromagnetici i momenti magnetici atomici si allineano in domini, dando una magnetizzazione intensa che può persistere. Paramagnetici e diamagnetici sono invece debolmente attratti o respinti. Errore tipico: rispondere «paramagnetici».",
+  "semplice": "Una calamita attacca il frigorifero perché la porta è di ferro, un materiale ferromagnetico; non attacca invece l'alluminio.",
+  "passaggi": [
+   "Ferro, nichel e cobalto si magnetizzano fortemente e diventano calamite permanenti.",
+   "Paramagnetici e diamagnetici sono solo debolmente attratti o respinti.",
+   "La magnetizzazione forte nasce dall'allineamento dei domini.",
+   "Questi materiali si dicono ferromagnetici."
+  ],
+  "concetto": "materiali ferromagnetici"
+ },
+ {
+  "id": "CMP-FIS-130",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un filo rettilineo molto lungo è percorso da una corrente di 10 A. Con μ₀ = 4π × 10⁻⁷ T·m/A, il campo magnetico a 0,1 m dal filo vale ___ μT.",
+  "risposta": "20",
+  "accettate": [
+   "20",
+   "20 μT",
+   "20μT",
+   "20 microtesla"
+  ],
+  "perche": "Per la legge di Biot-Savart B = μ₀I/(2πr) = 4π × 10⁻⁷ × 10 / (2π × 0,1) = 2 × 10⁻⁵ T = 20 μT. L'errore tipico è dimenticare il 2π al denominatore o sbagliare la conversione in μT.",
+  "semplice": "Intorno a un filo con corrente nasce un campo magnetico a cerchi; a 10 cm da un filo con 10 A è poco meno della metà del campo magnetico terrestre.",
+  "passaggi": [
+   "1. B = μ₀ I / (2π r)",
+   "2. B = 4π × 10⁻⁷ × 10 / (2π × 0,1)",
+   "3. B = 2 × 10⁻⁷ × 10 / 0,1 = 2 × 10⁻⁵ T",
+   "4. B = 20 μT"
+  ],
+  "concetto": "legge di Biot-Savart"
+ },
+ {
+  "id": "CMP-FIS-131",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un trasformatore funziona solo se al primario circola corrente ___.",
+  "risposta": "alternata",
+  "accettate": [
+   "alternata",
+   "alternata (AC)",
+   "AC",
+   "variabile"
+  ],
+  "perche": "Il trasformatore si basa sull'induzione elettromagnetica, che richiede un flusso magnetico variabile: serve quindi corrente alternata. Con corrente continua il flusso è costante e al secondario non si induce tensione. Errore tipico: rispondere «continua».",
+  "semplice": "Per «indurre» corrente nel secondario il campo magnetico deve cambiare continuamente, come fa con la corrente di casa, che cambia verso 50 volte al secondo.",
+  "passaggi": [
+   "Il trasformatore funziona per induzione elettromagnetica.",
+   "L'induzione richiede un flusso magnetico variabile.",
+   "Con corrente continua il flusso è costante e al secondario non c'è tensione.",
+   "Serve corrente alternata."
+  ],
+  "concetto": "trasformatore e corrente alternata"
+ },
+ {
+  "id": "CMP-FIS-132",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una particella carica si muove di moto circolare in un campo magnetico uniforme. Se l'intensità del campo raddoppia, a parità di velocità, il raggio della traiettoria si riduce di un fattore ___.",
+  "risposta": "2",
+  "accettate": [
+   "2",
+   "due"
+  ],
+  "perche": "Il raggio è r = m·v/(q·B): è inversamente proporzionale a B, quindi raddoppiando B il raggio si dimezza. È il principio dello spettrometro di massa. Errore tipico: rispondere 4, come se la dipendenza fosse quadratica.",
+  "semplice": "Un campo magnetico più forte curva di più la traiettoria della particella: con il campo doppio, il cerchio diventa grande la metà.",
+  "passaggi": [
+   "1. r = m v / (q B)",
+   "2. B' = 2B ⇒ r' = r / 2",
+   "3. fattore 2"
+  ],
+  "concetto": "raggio nel campo magnetico"
+ },
+ {
+  "id": "CMP-FIS-133",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "L'esistenza delle onde elettromagnetiche fu prevista teoricamente dalle equazioni di ___.",
+  "risposta": "Maxwell",
+  "accettate": [
+   "Maxwell",
+   "maxwell"
+  ],
+  "perche": "Le equazioni di Maxwell unificano elettricità e magnetismo e prevedono onde elettromagnetiche che si propagano nel vuoto alla velocità della luce; Hertz le osservò poi sperimentalmente. Errore tipico: rispondere «Hertz» (che le verificò) o «Faraday».",
+  "semplice": "Maxwell capì che un campo elettrico che cambia crea un campo magnetico e viceversa: i due si «rincorrono» nello spazio formando la luce e le onde radio.",
+  "passaggi": [
+   "Si chiede chi previde teoricamente le onde elettromagnetiche.",
+   "Hertz le osservò poi sperimentalmente.",
+   "Le equazioni che unificano elettricità e magnetismo prevedono onde alla velocità della luce.",
+   "Sono le equazioni di Maxwell."
+  ],
+  "concetto": "equazioni di Maxwell"
+ },
+ {
+  "id": "CMP-FIS-134",
+  "materia": "Fisica",
+  "argomento": "Magnetismo ed elettromagnetismo",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nei pressi del polo nord geografico della Terra si trova un polo magnetico di tipo ___.",
+  "risposta": "sud",
+  "accettate": [
+   "sud",
+   "sud magnetico",
+   "Sud"
+  ],
+  "perche": "L'ago di una bussola, il cui polo nord punta verso il nord geografico, è attratto da un polo magnetico opposto: quindi vicino al nord geografico c'è un polo sud magnetico. Errore tipico: rispondere «nord», confondendo nomi geografici e magnetici.",
+  "semplice": "Poli opposti si attraggono: se il nord della bussola va verso il nord geografico, lì deve esserci un polo sud magnetico.",
+  "passaggi": [
+   "Il polo nord dell'ago della bussola punta verso il nord geografico.",
+   "Poli magnetici opposti si attraggono.",
+   "Quindi vicino al nord geografico c'è un polo magnetico opposto al nord.",
+   "È un polo magnetico sud."
+  ],
+  "concetto": "magnetismo terrestre"
+ },
+ {
+  "id": "CMP-FIS-135",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un'onda sonora ha lunghezza d'onda 2 m e frequenza 170 Hz. La sua velocità di propagazione è ___ m/s.",
+  "risposta": "340",
+  "accettate": [
+   "340",
+   "340 m/s",
+   "340m/s"
+  ],
+  "perche": "Per tutte le onde v = λ·f = 2 × 170 = 340 m/s, la velocità del suono nell'aria. L'errore tipico è dividere (85).",
+  "semplice": "Ogni secondo passano 170 «creste», distanti 2 m l'una dall'altra: in un secondo l'onda avanza di 340 m.",
+  "passaggi": [
+   "1. v = λ f",
+   "2. v = 2 × 170 = 340 m/s"
+  ],
+  "concetto": "relazione v = λf"
+ },
+ {
+  "id": "CMP-FIS-136",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una luce ha lunghezza d'onda 600 nm nel vuoto (c = 3 × 10⁸ m/s). La sua frequenza è ___ × 10¹⁴ Hz.",
+  "risposta": "5",
+  "accettate": [
+   "5",
+   "5 × 10¹⁴ Hz",
+   "5×10¹⁴"
+  ],
+  "perche": "f = c/λ = 3 × 10⁸ / (6 × 10⁻⁷) = 0,5 × 10¹⁵ = 5 × 10¹⁴ Hz. L'errore tipico è sbagliare la conversione dei nanometri (1 nm = 10⁻⁹ m).",
+  "semplice": "La luce oscilla velocissima: questa luce arancione fa 500 000 miliardi di oscillazioni al secondo.",
+  "passaggi": [
+   "1. λ = 600 nm = 6 × 10⁻⁷ m",
+   "2. f = c / λ = 3 × 10⁸ / (6 × 10⁻⁷)",
+   "3. f = 0,5 × 10¹⁵ = 5 × 10¹⁴ Hz"
+  ],
+  "concetto": "frequenza della luce"
+ },
+ {
+  "id": "CMP-FIS-137",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le onde sonore nell'aria, in cui le particelle oscillano nella stessa direzione di propagazione dell'onda, sono onde ___.",
+  "risposta": "longitudinali",
+  "accettate": [
+   "longitudinali",
+   "longitudinale",
+   "di compressione"
+  ],
+  "perche": "Il suono è un'onda meccanica longitudinale: l'aria si comprime e si rarefà lungo la direzione di propagazione. Le onde elettromagnetiche e quelle su una corda sono invece trasversali. Errore tipico: rispondere «trasversali» o «elettromagnetiche».",
+  "semplice": "Una molla Slinky spinta avanti e indietro forma zone compresse e zone dilatate che viaggiano lungo la molla: così viaggia il suono nell'aria.",
+  "passaggi": [
+   "Nel suono le particelle oscillano nella stessa direzione in cui l'onda avanza.",
+   "Si alternano compressioni e rarefazioni dell'aria.",
+   "Nelle onde trasversali l'oscillazione è perpendicolare.",
+   "Le onde sonore sono longitudinali."
+  ],
+  "concetto": "onde longitudinali"
+ },
+ {
+  "id": "CMP-FIS-138",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La luce è un'onda elettromagnetica ___, perché i campi elettrico e magnetico oscillano perpendicolarmente alla direzione di propagazione.",
+  "risposta": "trasversale",
+  "accettate": [
+   "trasversale",
+   "trasversali"
+  ],
+  "perche": "Nelle onde elettromagnetiche i campi E e B sono perpendicolari tra loro e alla direzione di propagazione: sono onde trasversali, e per questo possono essere polarizzate. Errore tipico: rispondere «longitudinale», come il suono.",
+  "semplice": "Gli occhiali polarizzati funzionano proprio perché la luce è un'onda trasversale: lasciano passare solo le oscillazioni in una certa direzione.",
+  "passaggi": [
+   "I campi E e B oscillano perpendicolarmente alla direzione di propagazione.",
+   "Oscillazione perpendicolare alla propagazione definisce un'onda trasversale.",
+   "Per questo la luce si può polarizzare, a differenza del suono.",
+   "La luce è un'onda trasversale."
+  ],
+  "concetto": "onde trasversali"
+ },
+ {
+  "id": "CMP-FIS-139",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "In un materiale trasparente la luce si propaga a 2 × 10⁸ m/s (c = 3 × 10⁸ m/s). L'indice di rifrazione del materiale è ___.",
+  "risposta": "1,5",
+  "accettate": [
+   "1,5",
+   "1.5"
+  ],
+  "perche": "L'indice di rifrazione è n = c/v = 3 × 10⁸ / 2 × 10⁸ = 1,5; è adimensionale e sempre maggiore o uguale a 1. L'errore tipico è fare v/c (0,67), valore impossibile per un indice di rifrazione.",
+  "semplice": "Nel vetro la luce rallenta: va 1,5 volte più piano che nel vuoto. Questo numero è l'indice di rifrazione.",
+  "passaggi": [
+   "1. n = c / v",
+   "2. n = 3 × 10⁸ / (2 × 10⁸)",
+   "3. n = 1,5"
+  ],
+  "concetto": "indice di rifrazione"
+ },
+ {
+  "id": "CMP-FIS-140",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Il fenomeno per cui la luce cambia direzione quando passa da un mezzo trasparente a un altro si chiama ___.",
+  "risposta": "rifrazione",
+  "accettate": [
+   "rifrazione",
+   "rifrazione della luce"
+  ],
+  "perche": "La rifrazione è dovuta alla diversa velocità della luce nei due mezzi ed è descritta dalla legge di Snell (n₁ sen θ₁ = n₂ sen θ₂). Errore tipico: confonderla con la riflessione (la luce torna indietro) o con la diffrazione (aggiramento di ostacoli).",
+  "semplice": "Una cannuccia in un bicchiere d'acqua sembra spezzata: la luce cambia direzione passando dall'acqua all'aria.",
+  "passaggi": [
+   "La luce cambia direzione passando da un mezzo trasparente a un altro.",
+   "Il motivo è la diversa velocità della luce nei due mezzi (legge di Snell).",
+   "La riflessione la rimanda indietro, la diffrazione aggira gli ostacoli.",
+   "Il fenomeno è la rifrazione."
+  ],
+  "concetto": "rifrazione"
+ },
+ {
+  "id": "CMP-FIS-141",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Una lente convergente ha distanza focale 10 cm. Il suo potere diottrico vale ___ diottrie.",
+  "risposta": "10",
+  "accettate": [
+   "10",
+   "10 diottrie",
+   "10diottrie",
+   "10 D",
+   "10 m⁻¹",
+   "10 diottria"
+  ],
+  "perche": "Il potere diottrico è P = 1/f con f in metri: f = 0,1 m, quindi P = 10 D. L'errore tipico è usare f in centimetri, ottenendo 0,1 D.",
+  "semplice": "Più la lente è «forte», più corta è la sua focale e più alto il numero di diottrie. 10 cm sono 0,1 m, e 1 diviso 0,1 fa 10.",
+  "passaggi": [
+   "1. f = 10 cm = 0,1 m",
+   "2. P = 1 / f = 1 / 0,1",
+   "3. P = 10 D"
+  ],
+  "concetto": "potere diottrico"
+ },
+ {
+  "id": "CMP-FIS-142",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La riflessione totale può avvenire quando la luce passa da un mezzo a un altro con indice di rifrazione ___.",
+  "risposta": "minore",
+  "accettate": [
+   "minore",
+   "più basso",
+   "inferiore",
+   "più piccolo"
+  ],
+  "perche": "La riflessione totale avviene se la luce va da un mezzo più rifrangente a uno meno rifrangente (n₁ > n₂) e l'angolo di incidenza supera l'angolo limite. È il principio delle fibre ottiche e degli endoscopi. Errore tipico: rispondere «maggiore».",
+  "semplice": "Nelle fibre ottiche la luce resta intrappolata nel vetro perché, quando prova a uscire verso un materiale con indice minore, rimbalza indietro.",
+  "passaggi": [
+   "Dalla legge di Snell: n₁ sen θ₁ = n₂ sen θ₂.",
+   "Se n₂ < n₁ il raggio rifratto si allontana dalla normale.",
+   "Oltre l'angolo limite sen θ₂ supererebbe 1: la luce viene tutta riflessa.",
+   "Serve passare a un mezzo con indice minore."
+  ],
+  "concetto": "riflessione totale"
+ },
+ {
+  "id": "CMP-FIS-143",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un isotopo radioattivo ha tempo di dimezzamento di 8 giorni. Dopo 24 giorni rimane il ___ % dei nuclei iniziali.",
+  "risposta": "12,5",
+  "accettate": [
+   "12,5",
+   "12.5",
+   "12,5 %",
+   "12,5%",
+   "12.5 %",
+   "12.5%",
+   "1/8"
+  ],
+  "perche": "24 giorni sono 3 tempi di dimezzamento: la quantità si dimezza tre volte, (1/2)³ = 1/8 = 12,5%. L'errore tipico è pensare a un calo lineare e rispondere 0% o 25%.",
+  "semplice": "Dopo 8 giorni ne resta metà (50%), dopo 16 un quarto (25%), dopo 24 un ottavo (12,5%).",
+  "passaggi": [
+   "1. n = 24 / 8 = 3 tempi di dimezzamento",
+   "2. N/N₀ = (1/2)³ = 1/8",
+   "3. 1/8 = 12,5%"
+  ],
+  "concetto": "tempo di dimezzamento"
+ },
+ {
+  "id": "CMP-FIS-144",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Le particelle alfa (α) sono nuclei di ___.",
+  "risposta": "elio",
+  "accettate": [
+   "elio",
+   "elio-4",
+   "He",
+   "⁴He",
+   "elio 4"
+  ],
+  "perche": "La particella alfa è formata da 2 protoni e 2 neutroni, cioè un nucleo di elio-4. È poco penetrante (la ferma un foglio di carta) ma molto ionizzante. Errore tipico: confonderla con un elettrone (radiazione beta) o con un fotone (radiazione gamma).",
+  "semplice": "Quando un nucleo pesante come l'uranio emette una particella alfa, «sputa fuori» un piccolo nucleo di elio.",
+  "passaggi": [
+   "La particella alfa ha 2 protoni e 2 neutroni.",
+   "Z = 2 corrisponde all'elio, A = 4.",
+   "Non è un elettrone (beta) né un fotone (gamma).",
+   "Le particelle alfa sono nuclei di elio."
+  ],
+  "concetto": "radiazione alfa"
+ },
+ {
+  "id": "CMP-FIS-145",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Nel decadimento beta meno (β⁻) il nucleo emette un ___ e un antineutrino.",
+  "risposta": "elettrone",
+  "accettate": [
+   "elettrone",
+   "elettroni",
+   "e⁻",
+   "e-"
+  ],
+  "perche": "Nel decadimento β⁻ un neutrone si trasforma in un protone, emettendo un elettrone e un antineutrino: il numero atomico aumenta di 1 e il numero di massa resta invariato. Errore tipico: rispondere «positrone», che è emesso invece nel decadimento β⁺.",
+  "semplice": "Dentro il nucleo un neutrone «diventa» un protone e butta fuori un elettrone: l'elemento diventa quello successivo nella tavola periodica.",
+  "passaggi": [
+   "Nel β⁻ un neutrone si trasforma in protone.",
+   "Per conservare la carica deve uscire una particella negativa.",
+   "Insieme a essa esce un antineutrino; il positrone è del β⁺.",
+   "Il nucleo emette un elettrone."
+  ],
+  "concetto": "decadimento beta"
+ },
+ {
+  "id": "CMP-FIS-146",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un oggetto si trova a 2 m da uno specchio piano. La distanza tra l'oggetto e la sua immagine è ___ m.",
+  "risposta": "4",
+  "accettate": [
+   "4",
+   "4 m",
+   "4m"
+  ],
+  "perche": "In uno specchio piano l'immagine è virtuale e si forma alla stessa distanza dell'oggetto, ma dietro lo specchio: 2 m davanti + 2 m dietro = 4 m. L'errore tipico è rispondere 2 m, cioè la distanza dell'immagine dallo specchio.",
+  "semplice": "Se stai a 2 m dallo specchio, la tua immagine «sembra» stare 2 m dietro lo specchio: tra te e lei ci sono 4 m.",
+  "passaggi": [
+   "1. distanza immagine-specchio = distanza oggetto-specchio = 2 m",
+   "2. distanza oggetto-immagine = 2 + 2 = 4 m"
+  ],
+  "concetto": "specchio piano"
+ },
+ {
+  "id": "CMP-FIS-147",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "La variazione della frequenza percepita di un'onda dovuta al moto relativo tra sorgente e osservatore si chiama effetto ___.",
+  "risposta": "Doppler",
+  "accettate": [
+   "Doppler",
+   "doppler"
+  ],
+  "perche": "Per l'effetto Doppler, quando sorgente e osservatore si avvicinano la frequenza percepita aumenta, quando si allontanano diminuisce. In medicina è usato nell'ecodoppler per misurare la velocità del sangue. Errore tipico: confonderlo con la risonanza o con l'effetto fotoelettrico.",
+  "semplice": "La sirena di un'ambulanza sembra più acuta mentre si avvicina e più grave quando si allontana.",
+  "passaggi": [
+   "La frequenza percepita cambia per il moto relativo di sorgente e osservatore.",
+   "Avvicinandosi aumenta, allontanandosi diminuisce (la sirena che passa).",
+   "Non è la risonanza né l'effetto fotoelettrico.",
+   "È l'effetto Doppler."
+  ],
+  "concetto": "effetto Doppler"
+ },
+ {
+  "id": "CMP-FIS-148",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un suono di 60 dB ha intensità ___ volte maggiore di un suono di 40 dB.",
+  "risposta": "100",
+  "accettate": [
+   "100",
+   "100 volte",
+   "100volte",
+   "cento"
+  ],
+  "perche": "Ogni 10 dB in più l'intensità si moltiplica per 10: 20 dB di differenza corrispondono a 10² = 100 volte. L'errore tipico è pensare che la scala sia lineare (1,5 volte) o rispondere 20.",
+  "semplice": "I decibel sono una scala «a moltiplicazione»: +10 dB vuol dire 10 volte più intenso, +20 dB vuol dire 100 volte.",
+  "passaggi": [
+   "1. ΔL = 60 − 40 = 20 dB",
+   "2. I₂/I₁ = 10^(ΔL/10) = 10²",
+   "3. I₂/I₁ = 100"
+  ],
+  "concetto": "livello di intensità sonora"
+ },
+ {
+  "id": "CMP-FIS-149",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Tra i colori della luce visibile, quello con la lunghezza d'onda maggiore è il ___.",
+  "risposta": "rosso",
+  "accettate": [
+   "rosso",
+   "rossa"
+  ],
+  "perche": "Lo spettro visibile va da circa 400 nm (violetto) a circa 700 nm (rosso): il rosso ha la lunghezza d'onda maggiore e la frequenza minore, quindi i fotoni meno energetici. Errore tipico: rispondere «violetto», che ha invece la lunghezza d'onda minore.",
+  "semplice": "Nell'arcobaleno il rosso sta da un lato e il violetto dall'altro: il rosso ha le onde più «lunghe», il violetto le più «corte».",
+  "passaggi": [
+   "Lo spettro visibile va da circa 400 nm a circa 700 nm.",
+   "Il violetto sta a 400 nm, la lunghezza d'onda minore.",
+   "All'altro estremo, verso 700 nm, c'è il rosso.",
+   "Il colore con lunghezza d'onda maggiore è il rosso."
+  ],
+  "concetto": "spettro visibile"
+ },
+ {
+  "id": "CMP-FIS-150",
+  "materia": "Fisica",
+  "argomento": "Onde, ottica e radiazioni",
+  "livello": "test",
+  "tipo": "completamento",
+  "domanda": "Un oggetto è posto a 30 cm da una lente convergente con distanza focale 10 cm. L'immagine si forma a ___ cm dalla lente.",
+  "risposta": "15",
+  "accettate": [
+   "15",
+   "15 cm",
+   "15cm"
+  ],
+  "perche": "Per l'equazione delle lenti sottili 1/p + 1/q = 1/f: 1/q = 1/10 − 1/30 = 2/30, quindi q = 15 cm (immagine reale e capovolta). L'errore tipico è sommare gli inversi invece di sottrarli (q = 7,5 cm).",
+  "semplice": "L'oggetto è lontano dalla lente (più del doppio della focale): l'immagine si forma dall'altra parte, più vicina e più piccola, a 15 cm.",
+  "passaggi": [
+   "1. 1/p + 1/q = 1/f",
+   "2. 1/q = 1/10 − 1/30 = 3/30 − 1/30 = 2/30",
+   "3. q = 30/2 = 15 cm"
+  ],
+  "concetto": "equazione delle lenti sottili"
+ }
+]

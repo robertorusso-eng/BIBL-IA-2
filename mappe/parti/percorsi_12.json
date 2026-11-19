@@ -1,0 +1,977 @@
+{
+  "ipersensibilità e allergia": {
+    "titolo": "Allergia (ipersensibilità di tipo I): dalla sensibilizzazione alla reazione",
+    "dove": "Pelle e mucose (naso, bronchi, intestino), linfonodi, mastociti dei tessuti; nell'anafilassi tutto il corpo",
+    "inizio": "allergene",
+    "intro": "L'allergia è una risposta immunitaria esagerata contro sostanze innocue, come polline, acari, alimenti, veleno di imenotteri o farmaci. Al primo contatto il corpo si «sensibilizza»: produce IgE che si attaccano ai mastociti, ma non dà sintomi. Al contatto successivo l'allergene lega le IgE e i mastociti liberano in pochi minuti istamina e altri mediatori. Dopo alcune ore arriva una seconda ondata di infiammazione (fase tardiva).",
+    "fasi": [
+      {"da": 1, "nome": "Sensibilizzazione: primo contatto, nessun sintomo"},
+      {"da": 5, "nome": "Nuovo contatto: reazione immediata (minuti)"},
+      {"da": 7, "nome": "Fase tardiva e infiammazione cronica (ore, poi mesi)"}
+    ],
+    "passaggi": [
+      {
+        "da": ["allergene"],
+        "a": ["linfocita T helper (CD4⁺)"],
+        "enzima": "cellule dendritiche",
+        "entra": [],
+        "esce": [],
+        "nota": "L'allergene supera la mucosa. Le cellule dendritiche lo catturano, lo portano al linfonodo e ne mostrano i frammenti sulle MHC di classe II ai linfociti T helper (CD4⁺) naïve."
+      },
+      {
+        "da": ["linfocita T helper (CD4⁺)"],
+        "a": ["linfocita Th2"],
+        "enzima": "IL-4",
+        "entra": [],
+        "esce": ["IL-5", "IL-13"],
+        "limitante": true,
+        "nota": "In presenza di IL-4 il linfocita diventa Th2. Questo orientamento è più facile nelle persone atopiche (predisposizione familiare). I Th2 producono IL-4, IL-5 e IL-13: è il punto che decide se nascerà un'allergia."
+      },
+      {
+        "da": ["linfocita B"],
+        "a": ["IgE"],
+        "enzima": "linfocita Th2",
+        "entra": ["IL-4", "IL-13"],
+        "esce": [],
+        "nota": "Il linfocita Th2 aiuta il linfocita B che riconosce lo stesso allergene (contatto CD40L-CD40). IL-4 e IL-13 fanno cambiare classe all'anticorpo verso le IgE (scambio di classe). Le plasmacellule producono IgE specifiche per quell'allergene."
+      },
+      {
+        "da": ["IgE"],
+        "a": ["mastociti"],
+        "enzima": "FcεRI",
+        "entra": [],
+        "esce": [],
+        "nota": "Le IgE libere nel sangue durano pochi giorni, ma legate al recettore ad alta affinità FcεRI di mastociti e basofili restano per settimane o mesi. Ora il mastocita è «armato» (sensibilizzato), ma non ci sono ancora sintomi."
+      },
+      {
+        "da": ["mastociti"],
+        "a": ["degranulazione del mastocita"],
+        "enzima": "Syk (tirosin-chinasi)",
+        "entra": ["allergene", "Ca²⁺"],
+        "esce": ["istamina", "triptasi", "leucotrieni"],
+        "nota": "Al nuovo contatto l'allergene lega almeno due IgE vicine e le unisce (cross-linking). Si attivano le chinasi Lyn e Syk, entra Ca²⁺ e i granuli si svuotano in pochi secondi: escono istamina e triptasi. Poco dopo la cellula produce dall'acido arachidonico leucotrieni e prostaglandina D₂."
+      },
+      {
+        "da": ["degranulazione del mastocita"],
+        "a": ["reazione immediata"],
+        "enzima": "recettore H₁",
+        "entra": ["istamina", "leucotrieni"],
+        "esce": [],
+        "nota": "Entro 5-30 minuti: i vasi si dilatano e lasciano uscire liquido (pomfo, gonfiore, naso chiuso), i nervi danno prurito e starnuti, le ghiandole producono muco e la muscolatura liscia dei bronchi si contrae. I leucotrieni sono broncocostrittori molto più potenti dell'istamina."
+      },
+      {
+        "da": ["reazione immediata"],
+        "a": ["fase tardiva"],
+        "enzima": "eosinofili",
+        "entra": ["IL-5"],
+        "esce": [],
+        "nota": "Dopo alcune ore (circa 2-24) arrivano nel tessuto eosinofili, basofili e linfociti Th2 richiamati dai mediatori del mastocita. Gli eosinofili liberano proteine tossiche per le cellule: il gonfiore e l'ostruzione ritornano senza un nuovo contatto."
+      },
+      {
+        "da": ["fase tardiva"],
+        "a": ["infiammazione allergica cronica"],
+        "enzima": "linfocita Th2",
+        "entra": ["IL-13"],
+        "esce": [],
+        "nota": "Con contatti ripetuti l'infiammazione diventa stabile. Nell'asma IL-13 aumenta il muco e l'iperreattività dei bronchi; con gli anni la parete si ispessisce (rimodellamento). Lo stesso meccanismo è alla base di rinite, dermatite atopica ed esofagite eosinofila."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Primo contatto: cellula dendritica → linfocita Th2 → linfocita B → IgE che si fissano ai mastociti (nessun sintomo)",
+      "Nuovo contatto: l'allergene unisce le IgE → il mastocita libera istamina, triptasi e leucotrieni in pochi minuti",
+      "Dopo ore: eosinofili e Th2 tengono acceso il gonfiore (fase tardiva); con contatti ripetuti l'infiammazione diventa cronica",
+      "Se la reazione coinvolge tutto il corpo è anafilassi: il farmaco salvavita è l'adrenalina intramuscolare"
+    ],
+    "dopo": {
+      "titolo": "Quando la reazione coinvolge tutto il corpo",
+      "strade": [
+        {
+          "condizione": "Allergene che arriva nel sangue (farmaci, punture di api e vespe, alimenti come arachidi o crostacei)",
+          "da": "degranulazione del mastocita",
+          "a": "anafilassi",
+          "enzima": "mastociti",
+          "entra": [],
+          "esce": ["istamina", "triptasi"],
+          "nota": "I mastociti di tutto il corpo si svuotano insieme: orticaria e angioedema, broncospasmo, vasodilatazione con perdita di liquido dai vasi e calo della pressione (shock), vomito e diarrea. Può essere mortale in pochi minuti."
+        },
+        {
+          "condizione": "Trattamento dell'anafilassi",
+          "da": "anafilassi",
+          "a": "pressione arteriosa normale",
+          "enzima": "adrenalina",
+          "entra": [],
+          "esce": [],
+          "nota": "Si inietta subito adrenalina per via intramuscolare nella coscia. Sui recettori α₁ restringe i vasi e alza la pressione, sui β₂ dilata i bronchi e frena la liberazione dei mediatori, sui β₁ rinforza il cuore. Antistaminici e cortisonici sono solo di supporto: non sostituiscono l'adrenalina."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "I quattro tipi di ipersensibilità (classificazione di Gell e Coombs)",
+        "voci": [
+          ["Tipo I – immediata, mediata da IgE (rinite, asma allergico, orticaria, anafilassi)", ["IgE", "mastociti", "istamina"]],
+          ["Tipo II – anticorpi contro cellule o tessuti (reazione trasfusionale, anemia emolitica autoimmune, malattia di Basedow)", ["anticorpi", "complemento", "macrofagi"]],
+          ["Tipo III – immunocomplessi che si depositano nei vasi (LES, glomerulonefrite post-streptococcica, malattia da siero)", ["immunocomplessi", "complemento", "neutrofili"]],
+          ["Tipo IV – ritardata, mediata da linfociti T (Mantoux, dermatite da contatto da nichel)", ["linfocita T helper (CD4⁺)", "linfocita T citotossico (CD8⁺)", "macrofagi"]]
+        ]
+      },
+      {
+        "titolo": "I farmaci delle allergie",
+        "voci": [
+          ["Emergenza (anafilassi)", ["adrenalina"]],
+          ["Bloccano l'istamina", ["antistaminici H₁"]],
+          ["Spengono l'infiammazione", ["corticosteroidi"]],
+          ["Farmaci biologici contro le IgE", ["omalizumab"]]
+        ]
+      }
+    ]
+  },
+  "farmacocinetica": {
+    "titolo": "Farmacocinetica: il viaggio di un farmaco nel corpo (ADME)",
+    "dove": "Stomaco e intestino tenue, vena porta e fegato, sangue e tessuti, rene (e bile)",
+    "inizio": "farmaco per bocca",
+    "intro": "La farmacocinetica studia che cosa fa il corpo al farmaco. Si riassume con la sigla ADME: Assorbimento, Distribuzione, Metabolismo ed Eliminazione. Seguiamo una compressa presa per bocca: si scioglie, passa la parete dell'intestino, attraversa il fegato, viaggia nel sangue, raggiunge i tessuti e alla fine viene trasformata ed eliminata. Da queste tappe dipendono quanto farmaco arriva al bersaglio e per quanto tempo.",
+    "fasi": [
+      {"da": 1, "nome": "Assorbimento"},
+      {"da": 4, "nome": "Distribuzione"},
+      {"da": 6, "nome": "Metabolismo (soprattutto nel fegato)"},
+      {"da": 8, "nome": "Eliminazione"}
+    ],
+    "passaggi": [
+      {
+        "da": ["farmaco per bocca"],
+        "a": ["farmaco disciolto"],
+        "enzima": "stomaco",
+        "entra": [],
+        "esce": [],
+        "nota": "La compressa si disgrega e il principio attivo si scioglie nei succhi digestivi. Solo il farmaco disciolto può essere assorbito. Le formulazioni gastroresistenti o a rilascio prolungato cambiano proprio questa tappa."
+      },
+      {
+        "da": ["farmaco disciolto"],
+        "a": ["vena porta"],
+        "enzima": "enterociti",
+        "entra": [],
+        "esce": [],
+        "nota": "L'assorbimento avviene soprattutto nell'intestino tenue, che ha una superficie enorme. Passa meglio la forma non ionizzata e liposolubile, per diffusione passiva (dipende dal pH e dal pKa). La P-glicoproteina degli enterociti può rimandare parte del farmaco nel lume."
+      },
+      {
+        "da": ["vena porta"],
+        "a": ["farmaco nel plasma"],
+        "enzima": "fegato",
+        "entra": [],
+        "esce": [],
+        "limitante": true,
+        "nota": "Prima di arrivare al resto del corpo il sangue dell'intestino attraversa il fegato, che ne trasforma una parte (effetto di primo passaggio). La biodisponibilità (F) è la frazione della dose che arriva immodificata nel circolo: per via endovenosa è il 100%, per bocca può essere molto più bassa."
+      },
+      {
+        "da": ["farmaco nel plasma"],
+        "a": ["farmaco libero"],
+        "enzima": "albumina",
+        "entra": [],
+        "esce": [],
+        "nota": "Nel plasma una parte del farmaco si lega a proteine: l'albumina lega soprattutto i farmaci acidi (per esempio warfarin), l'α₁-glicoproteina acida i basici. Solo la frazione libera passa nei tessuti, agisce sul bersaglio e viene filtrata dal rene."
+      },
+      {
+        "da": ["farmaco libero"],
+        "a": ["farmaco nei tessuti"],
+        "enzima": "endotelio capillare",
+        "entra": [],
+        "esce": [],
+        "nota": "Il farmaco libero esce dai capillari e si distribuisce: prima agli organi molto irrorati (cuore, fegato, rene, cervello), poi a muscolo e grasso. Il volume di distribuzione (Vd = quantità nel corpo / concentrazione plasmatica) è alto per i farmaci liposolubili. La barriera ematoencefalica e la placenta fanno da filtro."
+      },
+      {
+        "da": ["farmaco nei tessuti"],
+        "a": ["metabolita di fase I"],
+        "enzima": "citocromi P450",
+        "entra": ["O₂", "NADPH"],
+        "esce": ["H₂O", "NADP⁺"],
+        "nota": "Quando il sangue lo riporta al fegato, il farmaco viene modificato. Le reazioni di fase I (ossidazione, riduzione, idrolisi) aggiungono o scoprono un gruppo reattivo, per esempio un –OH. I citocromi P450 sono monoossigenasi: un atomo di O₂ va nel farmaco, l'altro forma acqua. Il prodotto può essere inattivo, attivo o perfino tossico."
+      },
+      {
+        "da": ["metabolita di fase I"],
+        "a": ["coniugato idrosolubile"],
+        "enzima": "UDP-glucuronosiltransferasi (UGT)",
+        "entra": ["acido UDP-glucuronico"],
+        "esce": ["UDP"],
+        "nota": "Nella fase II si attacca al farmaco una molecola grande e polare (coniugazione). La più frequente è la glucuronazione; altre sono solfatazione, acetilazione e coniugazione con il glutatione. Il coniugato è idrosolubile, di solito inattivo, e non torna più indietro attraverso le membrane."
+      },
+      {
+        "da": ["coniugato idrosolubile"],
+        "a": ["urina"],
+        "enzima": "rene",
+        "entra": [],
+        "esce": [],
+        "nota": "Il rene elimina i farmaci in tre modi: filtrazione glomerulare (solo la frazione libera), secrezione attiva nel tubulo prossimale (trasportatori OAT, OCT e P-glicoproteina) e riassorbimento passivo delle molecole liposolubili. Per questo i coniugati idrosolubili escono facilmente con l'urina."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "ADME: assorbimento (intestino), distribuzione (sangue e tessuti), metabolismo (fegato: fase I e fase II), eliminazione (rene e bile)",
+      "Biodisponibilità: frazione che arriva immodificata nel sangue; la riduce l'effetto di primo passaggio epatico",
+      "Agisce ed è eliminata solo la frazione libera, non quella legata all'albumina",
+      "Emivita (t½ = 0,693 × Vd / clearance): con dosi ripetute lo stato stazionario si raggiunge in circa 4-5 emivite"
+    ],
+    "dopo": {
+      "titolo": "L'altra via di uscita: la bile",
+      "strade": [
+        {
+          "condizione": "Coniugati grandi (per esempio molti glucuronidi)",
+          "da": "coniugato idrosolubile",
+          "a": "feci",
+          "enzima": "fegato",
+          "entra": ["bile"],
+          "esce": [],
+          "nota": "Il fegato secerne nella bile, con trasportatori attivi, le molecole più grandi e polari. Arrivate nell'intestino, escono con le feci."
+        },
+        {
+          "condizione": "Ciclo enteroepatico",
+          "da": "coniugato idrosolubile",
+          "a": "farmaco libero",
+          "enzima": "microbiota intestinale",
+          "entra": [],
+          "esce": [],
+          "nota": "Nell'intestino i batteri staccano l'acido glucuronico (β-glucuronidasi). Il farmaco torna liposolubile, viene riassorbito e torna al fegato: l'effetto dura più a lungo. Succede per esempio con alcuni estroprogestinici e con il micofenolato."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Chi lavora nel metabolismo e nel trasporto dei farmaci",
+        "voci": [
+          ["Fase I (funzionalizzazione: ossidazione, riduzione, idrolisi)", ["citocromi P450"]],
+          ["Fase II (coniugazione)", ["UDP-glucuronosiltransferasi (UGT)", "glutatione"]],
+          ["Trasportatori che spingono fuori i farmaci", ["P-glicoproteina"]],
+          ["Proteine che legano i farmaci nel plasma", ["albumina"]]
+        ]
+      }
+    ]
+  },
+  "farmacodinamica": {
+    "titolo": "Farmacodinamica: dal legame con il recettore all'effetto",
+    "dove": "Membrana e interno delle cellule bersaglio (qui l'esempio di un recettore β₁ del cuore)",
+    "inizio": "farmaco libero",
+    "intro": "La farmacodinamica studia che cosa fa il farmaco al corpo. Quasi sempre il farmaco agisce legandosi a una proteina bersaglio: un recettore, un enzima, un canale o un trasportatore. Se il legame attiva il recettore il farmaco è un agonista, se lo blocca è un antagonista. Seguiamo un agonista dei recettori β₁ (come la dobutamina) che rinforza la contrazione del cuore, e poi vediamo come si misura l'effetto con la curva dose-risposta.",
+    "fasi": [
+      {"da": 1, "nome": "Legame e attivazione del recettore"},
+      {"da": 3, "nome": "Trasduzione del segnale: il messaggio si amplifica"},
+      {"da": 6, "nome": "Effetto e curva dose-risposta"}
+    ],
+    "passaggi": [
+      {
+        "da": ["farmaco libero"],
+        "a": ["complesso farmaco-recettore"],
+        "enzima": "recettore farmacologico",
+        "entra": [],
+        "esce": [],
+        "nota": "Il farmaco libero si lega al recettore in modo reversibile, secondo la legge d'azione di massa. L'affinità dice quanto saldamente si lega: si misura con la Kd, la concentrazione che occupa metà dei recettori (Kd bassa = alta affinità)."
+      },
+      {
+        "da": ["complesso farmaco-recettore"],
+        "a": ["recettore attivato"],
+        "enzima": "agonista",
+        "entra": [],
+        "esce": [],
+        "limitante": true,
+        "nota": "Legarsi non basta: serve l'efficacia (attività intrinseca), cioè la capacità di cambiare la forma del recettore e attivarlo. Un agonista pieno dà l'effetto massimo, un agonista parziale solo una parte; un antagonista si lega ma non attiva."
+      },
+      {
+        "da": ["recettore attivato"],
+        "a": ["proteina Gs attivata"],
+        "enzima": "recettore accoppiato a proteine G (GPCR)",
+        "entra": ["GTP"],
+        "esce": ["GDP"],
+        "nota": "Il recettore β₁ è un GPCR con 7 eliche nella membrana. Attivato, fa scambiare il GDP con il GTP sulla subunità α della proteina Gs, che si stacca e va ad attivare il suo bersaglio."
+      },
+      {
+        "da": ["proteina Gs attivata"],
+        "a": ["AMP ciclico (cAMP)"],
+        "enzima": "adenilato ciclasi",
+        "entra": ["ATP"],
+        "esce": ["pirofosfato (PPi)"],
+        "nota": "La Gsα attiva l'adenilato ciclasi, che trasforma molte molecole di ATP in AMP ciclico, il secondo messaggero. Un solo recettore produce tantissimo cAMP: il segnale si amplifica."
+      },
+      {
+        "da": ["AMP ciclico (cAMP)"],
+        "a": ["proteine fosforilate"],
+        "enzima": "proteina chinasi A (PKA)",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "nota": "Il cAMP attiva la PKA, che aggiunge fosfati a molte proteine. Nel cuore fosforila i canali del calcio di tipo L, il fosfolambano e la troponina I. Il cAMP viene poi spento dalle fosfodiesterasi."
+      },
+      {
+        "da": ["proteine fosforilate"],
+        "a": ["effetto del farmaco"],
+        "enzima": "canali del Ca²⁺ voltaggio-dipendenti",
+        "entra": ["Ca²⁺"],
+        "esce": [],
+        "nota": "I canali del calcio fosforilati restano aperti più a lungo: entra più Ca²⁺ e la cellula cardiaca si contrae con più forza (effetto inotropo positivo) e aumenta la frequenza. È l'effetto clinico del farmaco."
+      },
+      {
+        "da": ["effetto del farmaco"],
+        "a": ["curva dose-risposta"],
+        "enzima": "agonista",
+        "entra": [],
+        "esce": [],
+        "nota": "Aumentando la concentrazione l'effetto cresce fino a un massimo. In scala logaritmica la curva ha forma a S. L'Emax misura l'efficacia, la EC₅₀ (concentrazione che dà metà dell'effetto massimo) misura la potenza: un farmaco più potente ha la curva più a sinistra."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Affinità = quanto il farmaco si lega (Kd); efficacia = quanto attiva il recettore una volta legato",
+      "Agonista pieno, agonista parziale, antagonista (affinità senza efficacia), agonista inverso",
+      "Il segnale si amplifica: recettore → proteina G → secondo messaggero → chinasi → effetto",
+      "Curva dose-risposta: Emax = efficacia, EC₅₀ = potenza; l'indice terapeutico (DT₅₀/DE₅₀) misura la sicurezza"
+    ],
+    "dopo": {
+      "titolo": "Cosa fanno gli antagonisti e perché l'effetto si riduce nel tempo",
+      "strade": [
+        {
+          "condizione": "Antagonista competitivo (reversibile)",
+          "da": "curva dose-risposta",
+          "a": "curva spostata a destra",
+          "enzima": "antagonista competitivo",
+          "entra": [],
+          "esce": [],
+          "nota": "Occupa lo stesso sito dell'agonista. Aumentando la dose di agonista lo si scalza: l'Emax resta uguale, ma serve più agonista (la EC₅₀ aumenta). Esempi: propranololo sui recettori β, naloxone sui recettori degli oppioidi, atropina sui muscarinici."
+        },
+        {
+          "condizione": "Antagonista non competitivo o irreversibile",
+          "da": "curva dose-risposta",
+          "a": "effetto massimo ridotto",
+          "enzima": "antagonista non competitivo",
+          "entra": [],
+          "esce": [],
+          "nota": "Si lega in modo irreversibile o in un sito diverso (allosterico). Anche con molto agonista l'effetto massimo non si raggiunge più. Esempio: la fenossibenzamina sui recettori α, usata nel feocromocitoma."
+        },
+        {
+          "condizione": "Stimolo prolungato (tolleranza rapida o tachifilassi)",
+          "da": "recettore attivato",
+          "a": "recettore desensibilizzato",
+          "enzima": "GRK e β-arrestina",
+          "entra": ["ATP"],
+          "esce": ["ADP"],
+          "nota": "Le chinasi GRK fosforilano il recettore attivo; la β-arrestina si lega, lo stacca dalla proteina G e lo fa internalizzare. Con l'uso cronico i recettori possono diminuire (down-regulation). Per questo gli agonisti β₂ perdono un po' di effetto con l'uso continuo."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Le quattro famiglie di recettori (dalla più rapida alla più lenta)",
+        "voci": [
+          ["Canali ionici attivati dal ligando (millisecondi)", ["recettore nicotinico dell'acetilcolina", "recettore GABA-A"]],
+          ["Recettori accoppiati a proteine G (secondi)", ["recettore accoppiato a proteine G (GPCR)"]],
+          ["Recettori con attività enzimatica (minuti)", ["recettore dell'insulina"]],
+          ["Recettori nucleari che regolano i geni (ore)", ["recettori nucleari"]]
+        ]
+      },
+      {
+        "titolo": "Come può comportarsi un farmaco sul recettore",
+        "voci": [
+          ["Attivano", ["agonista", "agonista parziale"]],
+          ["Bloccano", ["antagonista competitivo", "antagonista non competitivo"]],
+          ["Riducono l'attività di base del recettore", ["agonista inverso"]]
+        ]
+      }
+    ]
+  },
+  "analgesici e oppioidi": {
+    "titolo": "Dolore e analgesici: dalla ferita al cervello, e dove agiscono i farmaci",
+    "dove": "Tessuto danneggiato, nervi periferici, corno dorsale del midollo spinale, talamo e corteccia; tronco encefalico (vie discendenti)",
+    "inizio": "danno tissutale",
+    "intro": "Il dolore nasce quando un danno attiva i nocicettori, le terminazioni nervose del dolore. Il segnale sale lungo il midollo spinale fino al talamo e alla corteccia, dove diventa una sensazione cosciente. I farmaci agiscono in punti diversi: FANS e paracetamolo riducono la produzione di prostaglandine, gli oppioidi come la morfina bloccano la trasmissione nel midollo e nel cervello e rinforzano i freni naturali del dolore.",
+    "fasi": [
+      {"da": 1, "nome": "Il segnale del dolore nasce nei tessuti"},
+      {"da": 3, "nome": "Il segnale sale al cervello"},
+      {"da": 6, "nome": "Come agiscono gli oppioidi"}
+    ],
+    "passaggi": [
+      {
+        "da": ["danno tissutale"],
+        "a": ["prostaglandine"],
+        "enzima": "cicloossigenasi (COX-1 e COX-2)",
+        "entra": ["acido arachidonico"],
+        "esce": [],
+        "nota": "Le cellule danneggiate liberano acido arachidonico dalle membrane. Le cicloossigenasi lo trasformano in prostaglandine (come la PGE₂). È qui che agiscono i FANS (bloccano COX-1 e COX-2) e, soprattutto nel sistema nervoso centrale, il paracetamolo."
+      },
+      {
+        "da": ["prostaglandine"],
+        "a": ["potenziale d'azione"],
+        "enzima": "nocicettore",
+        "entra": ["bradichinina", "H⁺"],
+        "esce": [],
+        "nota": "Bradichinina, H⁺, K⁺ e calore attivano il nocicettore; le prostaglandine lo rendono più sensibile (iperalgesia). Si aprono canali come TRPV1 e i canali del sodio (Nav1.7) e nasce un potenziale d'azione. Gli anestetici locali bloccano proprio i canali del sodio."
+      },
+      {
+        "da": ["potenziale d'azione"],
+        "a": ["midollo spinale"],
+        "enzima": "fibre Aδ e C",
+        "entra": [],
+        "esce": ["glutammato", "sostanza P"],
+        "nota": "Le fibre Aδ (mielinizzate, veloci) portano il dolore acuto e ben localizzato; le fibre C (amieliniche, lente) il dolore sordo e persistente. Nel corno dorsale del midollo liberano glutammato e sostanza P sul secondo neurone."
+      },
+      {
+        "da": ["midollo spinale"],
+        "a": ["talamo"],
+        "enzima": "tratto spinotalamico",
+        "entra": [],
+        "esce": [],
+        "nota": "Il secondo neurone incrocia subito sul lato opposto del midollo e sale nel tratto spinotalamico fino al talamo. Per questo una lesione di metà midollo toglie la sensibilità dolorifica del lato opposto."
+      },
+      {
+        "da": ["talamo"],
+        "a": ["percezione del dolore"],
+        "enzima": "corteccia somatosensoriale",
+        "entra": [],
+        "esce": [],
+        "nota": "La corteccia somatosensoriale dice dove e quanto fa male. La corteccia cingolata anteriore e l'insula danno la componente emotiva, cioè quanto il dolore è spiacevole."
+      },
+      {
+        "da": ["recettore μ degli oppioidi"],
+        "a": ["proteina Gi/o attivata"],
+        "enzima": "morfina",
+        "entra": ["GTP"],
+        "esce": ["GDP"],
+        "nota": "La morfina, come le endorfine prodotte dal corpo, si lega al recettore μ (MOR), un recettore accoppiato a proteine G inibitorie (Gi/o). Questi recettori si trovano nel corno dorsale, nel tronco encefalico, nel sistema limbico e nell'intestino."
+      },
+      {
+        "da": ["proteina Gi/o attivata"],
+        "a": ["blocco della trasmissione del dolore"],
+        "enzima": "canali del Ca²⁺ voltaggio-dipendenti",
+        "entra": [],
+        "esce": ["K⁺"],
+        "nota": "Sul primo neurone la proteina Gi/o chiude i canali del Ca²⁺: si libera meno glutammato e sostanza P. Sul secondo neurone apre i canali del K⁺ (GIRK): il K⁺ esce e la cellula si iperpolarizza. Inoltre cala il cAMP. Il messaggio del dolore passa molto meno."
+      },
+      {
+        "da": ["blocco della trasmissione del dolore"],
+        "a": ["analgesia"],
+        "enzima": "sostanza grigia periacqueduttale (PAG)",
+        "entra": [],
+        "esce": [],
+        "nota": "Nella PAG del mesencefalo gli oppioidi tolgono un freno GABAergico e attivano le vie discendenti: noradrenalina e serotonina arrivano al corno dorsale e inibiscono il dolore. Nel sistema limbico il dolore diventa meno angosciante: il paziente spesso dice che il dolore c'è ma non lo disturba più."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Danno → prostaglandine (COX) → nocicettore → fibre Aδ e C → corno dorsale → tratto spinotalamico → talamo → corteccia",
+      "FANS e paracetamolo: riducono le prostaglandine; anestetici locali: bloccano i canali del sodio",
+      "Oppioidi: recettore μ → Gi/o → meno neurotrasmettitore e neurone iperpolarizzato; attivano le vie discendenti",
+      "Rischi degli oppioidi: depressione respiratoria, stipsi, tolleranza e dipendenza; antidoto: naloxone"
+    ],
+    "dopo": {
+      "titolo": "Il rischio più grave degli oppioidi e il suo antidoto",
+      "strade": [
+        {
+          "condizione": "Dose eccessiva o paziente fragile (sovradosaggio)",
+          "da": "recettore μ degli oppioidi",
+          "a": "depressione respiratoria",
+          "enzima": "centri respiratori del tronco encefalico",
+          "entra": [],
+          "esce": [],
+          "nota": "Gli oppioidi rendono i centri del respiro meno sensibili alla CO₂: il respiro rallenta fino a fermarsi. Il sovradosaggio si riconosce dalla triade coma, pupille a punta di spillo (miosi) e depressione respiratoria. Alla depressione respiratoria e alla miosi non si sviluppa molta tolleranza, alla stipsi quasi nessuna."
+        },
+        {
+          "condizione": "Antidoto",
+          "da": "depressione respiratoria",
+          "a": "ripresa del respiro",
+          "enzima": "naloxone",
+          "entra": [],
+          "esce": [],
+          "nota": "Il naloxone è un antagonista competitivo puro dei recettori μ: scalza l'oppioide e in pochi minuti fa riprendere il respiro. Dura meno di molti oppioidi, quindi il paziente va sorvegliato e può servire ripeterlo. In chi è dipendente scatena una crisi di astinenza."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "La scala analgesica dell'OMS",
+        "voci": [
+          ["1° gradino – dolore lieve: non oppioidi", ["paracetamolo", "FANS"]],
+          ["2° gradino – dolore moderato: oppioidi deboli", ["codeina", "tramadolo"]],
+          ["3° gradino – dolore forte: oppioidi forti", ["morfina", "ossicodone", "fentanil"]],
+          ["Antagonista per il sovradosaggio", ["naloxone"]]
+        ]
+      },
+      {
+        "titolo": "Gli antidolorifici che il corpo produce da solo",
+        "voci": [
+          ["Oppioidi endogeni", ["endorfine"]]
+        ]
+      }
+    ]
+  },
+  "insulina e antidiabetici": {
+    "titolo": "Insulina: come viene liberata, come agisce e dove agiscono gli antidiabetici",
+    "dove": "Cellule β delle isole di Langerhans del pancreas; poi muscolo, tessuto adiposo e fegato",
+    "inizio": "glucosio",
+    "intro": "Dopo un pasto il glucosio nel sangue sale. Le cellule β del pancreas lo «sentono» e liberano insulina, l'unico ormone che abbassa la glicemia. L'insulina si lega al suo recettore sulle cellule del muscolo, del grasso e del fegato: il glucosio entra nelle cellule e viene messo da parte. Nel diabete questo sistema non funziona (tipo 1: manca l'insulina; tipo 2: le cellule rispondono poco e il pancreas non riesce a compensare). Ogni antidiabetico agisce su un punto diverso di questo percorso.",
+    "fasi": [
+      {"da": 1, "nome": "La cellula β misura il glucosio e libera insulina"},
+      {"da": 6, "nome": "L'insulina agisce sulle cellule bersaglio"}
+    ],
+    "passaggi": [
+      {
+        "da": ["glucosio"],
+        "a": ["glucosio 6-fosfato"],
+        "enzima": "glucochinasi",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "limitante": true,
+        "nota": "Il glucosio entra nella cellula β con i trasportatori GLUT (GLUT1 nell'uomo, GLUT2 nei roditori). La glucochinasi lo fosforila: ha bassa affinità e non è frenata dal prodotto, quindi lavora in proporzione alla glicemia. È il «sensore del glucosio» della cellula β."
+      },
+      {
+        "da": ["glucosio 6-fosfato"],
+        "a": ["ATP"],
+        "enzima": "mitocondrio",
+        "entra": ["O₂"],
+        "esce": ["CO₂"],
+        "nota": "Glicolisi, ciclo di Krebs e catena respiratoria producono ATP. Più glucosio entra, più sale il rapporto ATP/ADP nella cellula: è il segnale che dice «c'è zucchero»."
+      },
+      {
+        "da": ["ATP"],
+        "a": ["depolarizzazione della cellula β"],
+        "enzima": "canale K-ATP (SUR1/Kir6.2)",
+        "entra": [],
+        "esce": [],
+        "nota": "L'ATP chiude i canali del potassio sensibili all'ATP. Il K⁺ non esce più e la membrana si depolarizza. Sulfoniluree e glinidi chiudono questi stessi canali legandosi alla subunità SUR1."
+      },
+      {
+        "da": ["depolarizzazione della cellula β"],
+        "a": ["esocitosi dei granuli di insulina"],
+        "enzima": "canali del Ca²⁺ voltaggio-dipendenti",
+        "entra": ["Ca²⁺"],
+        "esce": [],
+        "nota": "La depolarizzazione apre i canali del calcio. Il Ca²⁺ che entra fa fondere i granuli pieni di insulina con la membrana. La secrezione ha due fasi: un picco rapido (granuli pronti) e una fase lenta e prolungata."
+      },
+      {
+        "da": ["esocitosi dei granuli di insulina"],
+        "a": ["insulina"],
+        "enzima": "cellula β del pancreas",
+        "entra": [],
+        "esce": ["peptide C"],
+        "nota": "Dai granuli escono insulina e peptide C in quantità uguali, perché nascono dalla stessa proinsulina. L'insulina va prima al fegato con la vena porta. L'ormone intestinale GLP-1 potenzia la secrezione, ma solo quando il glucosio è alto."
+      },
+      {
+        "da": ["insulina"],
+        "a": ["IRS-1 fosforilato"],
+        "enzima": "recettore dell'insulina",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "nota": "Il recettore dell'insulina è una tirosin-chinasi. Quando lega l'insulina si fosforila da solo e poi fosforila le proteine IRS (substrati del recettore dell'insulina), che fanno da piattaforma per i segnali successivi."
+      },
+      {
+        "da": ["IRS-1 fosforilato"],
+        "a": ["GLUT4"],
+        "enzima": "Akt (proteina chinasi B)",
+        "entra": [],
+        "esce": [],
+        "nota": "IRS-1 attiva la PI3-chinasi, che attiva Akt. Nel muscolo e nel tessuto adiposo Akt fa spostare in membrana le vescicole con il trasportatore GLUT4. Nell'insulino-resistenza (tipo 2, obesità) questo segnale è debole."
+      },
+      {
+        "da": ["GLUT4"],
+        "a": ["glicogeno"],
+        "enzima": "muscolo scheletrico",
+        "entra": ["glucosio"],
+        "esce": [],
+        "nota": "Il glucosio entra nel muscolo e viene usato o immagazzinato come glicogeno. Intanto nel fegato l'insulina frena la produzione di glucosio (gluconeogenesi e glicogenolisi) e nel tessuto adiposo frena la lipolisi. La glicemia torna normale."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Cellula β: glucosio → glucochinasi → più ATP → chiusura dei canali K-ATP → depolarizzazione → entra Ca²⁺ → esce insulina (e peptide C)",
+      "Cellule bersaglio: recettore tirosin-chinasico → IRS → PI3K/Akt → GLUT4 in membrana → il glucosio entra",
+      "Fegato: meno produzione di glucosio; tessuto adiposo: meno lipolisi; muscolo e fegato: più glicogeno",
+      "Antidiabetici: metformina (fegato), sulfoniluree (canale K-ATP), incretine (GLP-1), gliflozine (rene), insulina"
+    ],
+    "dopo": {
+      "titolo": "Dove agiscono gli antidiabetici",
+      "strade": [
+        {
+          "condizione": "Metformina: prima scelta nel diabete di tipo 2",
+          "da": "fegato",
+          "a": "glicemia normale",
+          "enzima": "metformina",
+          "entra": [],
+          "esce": [],
+          "nota": "Riduce soprattutto la produzione di glucosio da parte del fegato (gluconeogenesi), agendo sul metabolismo energetico del mitocondrio e attivando l'AMPK. Da sola non dà ipoglicemia e non fa ingrassare."
+        },
+        {
+          "condizione": "Sulfoniluree (gliclazide, glimepiride)",
+          "da": "canale K-ATP (SUR1/Kir6.2)",
+          "a": "depolarizzazione della cellula β",
+          "enzima": "sulfoniluree",
+          "entra": [],
+          "esce": [],
+          "nota": "Chiudono il canale K-ATP anche quando la glicemia è bassa: la cellula β libera insulina comunque. Per questo il loro rischio principale è l'ipoglicemia; fanno aumentare di peso."
+        },
+        {
+          "condizione": "Incretine: agonisti del GLP-1 e gliptine",
+          "da": "GLP-1",
+          "a": "esocitosi dei granuli di insulina",
+          "enzima": "agonisti del recettore del GLP-1",
+          "entra": [],
+          "esce": [],
+          "nota": "Imitano il GLP-1: aumentano l'insulina solo se il glucosio è alto, riducono il glucagone, rallentano lo svuotamento dello stomaco e danno sazietà, con calo di peso. Le gliptine (inibitori della DPP-4) agiscono in modo simile ma più debole, perché rallentano la distruzione del GLP-1 naturale."
+        },
+        {
+          "condizione": "Gliflozine (inibitori di SGLT2)",
+          "da": "glucosio",
+          "a": "urina",
+          "enzima": "inibitori di SGLT2 (gliflozine)",
+          "entra": [],
+          "esce": [],
+          "nota": "Bloccano nel tubulo prossimale del rene il trasportatore che riassorbe la maggior parte del glucosio filtrato: lo zucchero in eccesso esce con l'urina. Proteggono cuore e rene."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Gli antidiabetici divisi per meccanismo",
+        "voci": [
+          ["Riducono la produzione di glucosio o l'insulino-resistenza", ["metformina", "pioglitazone"]],
+          ["Fanno liberare più insulina", ["sulfoniluree", "agonisti del recettore del GLP-1", "inibitori della DPP-4"]],
+          ["Fanno perdere glucosio con le urine", ["inibitori di SGLT2 (gliflozine)"]],
+          ["Sostituiscono l'insulina (sempre nel tipo 1)", ["analoghi rapidi dell'insulina", "analoghi basali dell'insulina"]]
+        ]
+      }
+    ]
+  },
+  "ciclo dell'azoto": {
+    "titolo": "Ciclo dell'azoto: dall'aria ai viventi e ritorno",
+    "dove": "Atmosfera, suolo (soprattutto per opera dei batteri), radici e foglie delle piante, animali; anche nelle acque",
+    "inizio": "azoto atmosferico (N₂)",
+    "intro": "L'azoto serve a tutti i viventi per costruire proteine e DNA. L'aria ne contiene moltissimo (circa il 78%), ma come N₂, una molecola con un triplo legame che piante e animali non sanno usare. Solo alcuni batteri riescono a «fissarlo» in ammonio. Altri batteri lo trasformano in nitrato, che le piante assorbono con le radici; gli animali lo ricevono mangiando. Con escrementi e resti l'azoto torna al suolo, e i batteri denitrificanti lo riportano nell'aria.",
+    "fasi": [
+      {"da": 1, "nome": "Fissazione: l'azoto dell'aria entra nel suolo"},
+      {"da": 2, "nome": "Nitrificazione nel suolo"},
+      {"da": 4, "nome": "L'azoto nei viventi e il ritorno al suolo"},
+      {"da": 7, "nome": "Denitrificazione: l'azoto torna nell'aria"}
+    ],
+    "passaggi": [
+      {
+        "da": ["azoto atmosferico (N₂)"],
+        "a": ["ammonio (NH₄⁺)"],
+        "enzima": "batteri azotofissatori",
+        "entra": ["ATP", "H⁺"],
+        "esce": ["ADP"],
+        "irreversibile": true,
+        "limitante": true,
+        "nota": "La nitrogenasi rompe il triplo legame di N₂ e forma ammoniaca, che nel suolo diventa ione ammonio. Costa molta energia: 16 ATP per ogni N₂. Lo fanno batteri liberi (Azotobacter, cianobatteri) e Rhizobium nei noduli delle radici delle leguminose. La nitrogenasi è distrutta dall'ossigeno: nei noduli lo tiene basso la leghemoglobina."
+      },
+      {
+        "da": ["ammonio (NH₄⁺)"],
+        "a": ["nitrito (NO₂⁻)"],
+        "enzima": "batteri nitrosanti (Nitrosomonas)",
+        "entra": ["O₂"],
+        "esce": ["H⁺", "H₂O"],
+        "nota": "Prima tappa della nitrificazione. Batteri che vivono nei suoli aerati ossidano l'ammonio a nitrito e ricavano energia da questa reazione (sono chemioautotrofi). Il suolo diventa un po' più acido."
+      },
+      {
+        "da": ["nitrito (NO₂⁻)"],
+        "a": ["nitrato (NO₃⁻)"],
+        "enzima": "batteri nitricanti (Nitrobacter)",
+        "entra": ["O₂"],
+        "esce": [],
+        "nota": "Seconda tappa della nitrificazione: il nitrito, tossico, viene subito ossidato a nitrato. Il nitrato è la forma di azoto più assorbita dalle piante, ma è molto solubile e viene facilmente portato via dalla pioggia verso falde e fiumi."
+      },
+      {
+        "da": ["nitrato (NO₃⁻)"],
+        "a": ["proteine"],
+        "enzima": "radici delle piante",
+        "entra": [],
+        "esce": [],
+        "nota": "Le piante assorbono nitrato e ammonio con le radici. La nitrato reduttasi e la nitrito reduttasi riportano il nitrato ad ammonio; la glutammina sintetasi lo inserisce negli amminoacidi (glutammina e glutammato), da cui nascono proteine, DNA, RNA e clorofilla (assimilazione)."
+      },
+      {
+        "da": ["proteine"],
+        "a": ["urea"],
+        "enzima": "consumatori",
+        "entra": [],
+        "esce": [],
+        "nota": "Gli animali ricevono l'azoto mangiando piante o altri animali: digeriscono le proteine in amminoacidi e costruiscono le proprie. L'azoto in eccesso viene eliminato come urea (mammiferi), acido urico (uccelli, rettili, insetti) o ammoniaca (molti pesci)."
+      },
+      {
+        "da": ["urea"],
+        "a": ["ammonio (NH₄⁺)"],
+        "enzima": "decompositori",
+        "entra": ["H₂O"],
+        "esce": ["CO₂"],
+        "nota": "Batteri e funghi del suolo demoliscono urea, escrementi, foglie morte e cadaveri e liberano l'azoto come ammonio (ammonificazione). L'urea è scissa dall'enzima ureasi in ammoniaca e CO₂. L'ammonio è di nuovo disponibile: il ciclo si chiude nel suolo."
+      },
+      {
+        "da": ["nitrato (NO₃⁻)"],
+        "a": ["azoto atmosferico (N₂)"],
+        "enzima": "batteri denitrificanti",
+        "entra": [],
+        "esce": ["protossido di azoto (N₂O)"],
+        "nota": "Nei suoli senza ossigeno (inzuppati d'acqua, risaie, sedimenti) alcuni batteri (per esempio Pseudomonas) «respirano» il nitrato al posto dell'O₂: NO₃⁻ → NO₂⁻ → NO → N₂O → N₂. L'azoto torna nell'aria; una parte esce come N₂O, un potente gas serra."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Fissazione: N₂ → ammonio (batteri azotofissatori, nitrogenasi)",
+      "Nitrificazione: ammonio → nitrito → nitrato (batteri del suolo, con ossigeno)",
+      "Assimilazione (piante) → consumatori → urea e resti → ammonificazione (decompositori)",
+      "Denitrificazione: nitrato → N₂ (batteri, senza ossigeno): l'azoto torna nell'aria"
+    ],
+    "dopo": {
+      "titolo": "Altre strade per fissare l'azoto",
+      "strade": [
+        {
+          "condizione": "Fulmini (fissazione naturale non biologica)",
+          "da": "azoto atmosferico (N₂)",
+          "a": "nitrato (NO₃⁻)",
+          "enzima": "fulmini",
+          "entra": ["O₂"],
+          "esce": [],
+          "nota": "L'energia del fulmine fa reagire N₂ e O₂: si formano ossidi di azoto che con la pioggia arrivano al suolo come nitrato. È una quota piccola rispetto alla fissazione batterica."
+        },
+        {
+          "condizione": "Industria dei fertilizzanti",
+          "da": "azoto atmosferico (N₂)",
+          "a": "ammonio (NH₄⁺)",
+          "enzima": "processo Haber-Bosch",
+          "entra": [],
+          "esce": [],
+          "nota": "L'uomo fissa l'azoto con l'idrogeno ad alta pressione e temperatura, con un catalizzatore di ferro. Oggi fissa più azoto di tutti i processi naturali sulla terraferma. L'eccesso di fertilizzanti finisce nelle acque e causa eutrofizzazione."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Le forme dell'azoto nel ciclo",
+        "voci": [
+          ["Gas nell'aria", ["azoto atmosferico (N₂)", "protossido di azoto (N₂O)"]],
+          ["Sali minerali nel suolo e nell'acqua", ["ammonio (NH₄⁺)", "nitrito (NO₂⁻)", "nitrato (NO₃⁻)"]],
+          ["Nei viventi", ["amminoacidi", "proteine", "urea"]]
+        ]
+      },
+      {
+        "titolo": "I microrganismi del ciclo",
+        "voci": [
+          ["Fissano l'azoto", ["batteri azotofissatori"]],
+          ["Fanno la nitrificazione", ["batteri nitrosanti (Nitrosomonas)", "batteri nitricanti (Nitrobacter)"]],
+          ["Riportano l'azoto nell'aria", ["batteri denitrificanti"]],
+          ["Demoliscono i resti", ["decompositori"]]
+        ]
+      }
+    ]
+  },
+  "ciclo del carbonio": {
+    "titolo": "Ciclo del carbonio: dall'aria ai viventi, alle rocce e ritorno",
+    "dove": "Atmosfera, piante e alghe, animali, suolo, oceani, rocce e giacimenti fossili",
+    "inizio": "CO₂",
+    "intro": "Il carbonio è l'atomo base di tutte le molecole della vita. Nel ciclo veloce le piante tolgono CO₂ dall'aria con la fotosintesi e la trasformano in zuccheri; piante, animali e decompositori la restituiscono con la respirazione. Nel ciclo lento il carbonio resta per milioni di anni negli oceani, nelle rocce calcaree e nei combustibili fossili. Bruciando i combustibili fossili l'uomo riporta in pochi decenni nell'aria carbonio rimasto sepolto per milioni di anni.",
+    "fasi": [
+      {"da": 1, "nome": "Ciclo veloce: fotosintesi e respirazione (giorni-anni)"},
+      {"da": 6, "nome": "Ciclo lento: fossili, oceani e rocce (migliaia-milioni di anni)"}
+    ],
+    "passaggi": [
+      {
+        "da": ["CO₂"],
+        "a": ["glucosio"],
+        "enzima": "RuBisCO",
+        "entra": ["H₂O", "luce solare"],
+        "esce": ["O₂"],
+        "irreversibile": true,
+        "nota": "Nei cloroplasti di piante, alghe e cianobatteri l'energia della luce serve a fissare la CO₂ negli zuccheri (ciclo di Calvin). Bilancio della fotosintesi: 6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂. La RuBisCO è l'enzima che attacca la CO₂."
+      },
+      {
+        "da": ["glucosio"],
+        "a": ["biomassa vegetale"],
+        "enzima": "produttori",
+        "entra": [],
+        "esce": [],
+        "nota": "La pianta usa il glucosio per costruire amido (riserva), cellulosa (pareti), grassi e, con l'azoto, proteine. Così il carbonio dell'aria diventa legno, foglie, semi e frutti."
+      },
+      {
+        "da": ["biomassa vegetale"],
+        "a": ["biomassa animale"],
+        "enzima": "consumatori",
+        "entra": [],
+        "esce": [],
+        "nota": "Gli animali mangiano le piante (o altri animali) e usano il carbonio del cibo per costruire il proprio corpo. Solo una piccola parte passa da un livello all'altro: il resto viene «bruciato» per avere energia."
+      },
+      {
+        "da": ["biomassa vegetale", "biomassa animale"],
+        "a": ["CO₂"],
+        "enzima": "mitocondrio",
+        "entra": ["O₂"],
+        "esce": ["H₂O"],
+        "nota": "Con la respirazione cellulare piante e animali ossidano gli zuccheri nei mitocondri e liberano CO₂ nell'aria: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O. È la reazione opposta alla fotosintesi."
+      },
+      {
+        "da": ["resti organici"],
+        "a": ["CO₂"],
+        "enzima": "decompositori",
+        "entra": ["O₂"],
+        "esce": [],
+        "nota": "Foglie cadute, legno morto, feci e cadaveri vengono demoliti da batteri e funghi, che respirano e liberano CO₂. Una parte resta nel suolo come humus, una grande riserva di carbonio."
+      },
+      {
+        "da": ["resti organici"],
+        "a": ["combustibili fossili"],
+        "enzima": "sepoltura nei sedimenti",
+        "entra": [],
+        "esce": [],
+        "nota": "Quando i resti finiscono senza ossigeno (paludi, fondali marini) non si decompongono del tutto. Sepolti per milioni di anni sotto pressione e calore diventano carbone (da foreste antiche), petrolio e gas naturale (soprattutto da plancton marino)."
+      },
+      {
+        "da": ["combustibili fossili"],
+        "a": ["CO₂"],
+        "enzima": "combustione",
+        "entra": ["O₂"],
+        "esce": ["H₂O"],
+        "nota": "Bruciando carbone, petrolio e gas l'uomo libera rapidamente carbonio rimasto sepolto per milioni di anni. La CO₂ nell'aria è passata da circa 280 ppm prima della rivoluzione industriale a oltre 420 ppm oggi: aumenta l'effetto serra."
+      },
+      {
+        "da": ["CO₂"],
+        "a": ["bicarbonato (HCO₃⁻)"],
+        "enzima": "oceani",
+        "entra": ["H₂O"],
+        "esce": ["H⁺"],
+        "nota": "La CO₂ si scioglie nell'acqua del mare e forma acido carbonico, che diventa bicarbonato liberando H⁺. Gli oceani assorbono circa un quarto della CO₂ emessa dall'uomo, ma diventano più acidi (acidificazione degli oceani)."
+      },
+      {
+        "da": ["bicarbonato (HCO₃⁻)"],
+        "a": ["carbonato di calcio (CaCO₃)"],
+        "enzima": "organismi calcificanti",
+        "entra": ["Ca²⁺"],
+        "esce": [],
+        "nota": "Coralli, molluschi e plancton calcareo usano bicarbonato e calcio per costruire gusci e scheletri. Alla loro morte si depositano sul fondo e formano rocce calcaree: il più grande deposito di carbonio della Terra. Torna in circolo solo con l'erosione o con i vulcani."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Fotosintesi (produttori): CO₂ + H₂O + luce → zuccheri + O₂",
+      "Respirazione di produttori, consumatori e decompositori: zuccheri + O₂ → CO₂ + H₂O",
+      "Ciclo lento: combustibili fossili, oceani (bicarbonato) e rocce calcaree trattengono il carbonio per milioni di anni",
+      "Combustibili fossili e deforestazione aumentano la CO₂ nell'aria: effetto serra e acidificazione degli oceani"
+    ],
+    "dopo": {
+      "titolo": "Altre strade del carbonio",
+      "strade": [
+        {
+          "condizione": "Senza ossigeno (paludi, risaie, rumine dei bovini, discariche)",
+          "da": "resti organici",
+          "a": "metano (CH₄)",
+          "enzima": "archei metanogeni",
+          "entra": [],
+          "esce": [],
+          "nota": "Dove manca l'ossigeno, microrganismi chiamati archei metanogeni trasformano la sostanza organica in metano. Il metano è un gas serra molto più potente della CO₂, ma resta meno a lungo nell'aria."
+        },
+        {
+          "condizione": "Deforestazione e incendi",
+          "da": "biomassa vegetale",
+          "a": "CO₂",
+          "enzima": "incendi e deforestazione",
+          "entra": ["O₂"],
+          "esce": [],
+          "nota": "Bruciare o tagliare le foreste libera il carbonio immagazzinato nel legno e nel suolo, e toglie piante che avrebbero assorbito CO₂."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Le grandi riserve di carbonio",
+        "voci": [
+          ["Nell'aria", ["CO₂", "metano (CH₄)"]],
+          ["Nei viventi e nel suolo", ["biomassa vegetale", "biomassa animale", "resti organici"]],
+          ["Negli oceani", ["bicarbonato (HCO₃⁻)"]],
+          ["Nelle rocce e nel sottosuolo", ["carbonato di calcio (CaCO₃)", "combustibili fossili"]]
+        ]
+      }
+    ]
+  },
+  "catene alimentari": {
+    "titolo": "Catene alimentari: l'energia passa, la materia si ricicla",
+    "dove": "Ogni ecosistema: bosco, prato, lago, mare, suolo",
+    "inizio": "luce solare",
+    "intro": "Una catena alimentare mostra chi mangia chi. Comincia sempre dai produttori, che catturano l'energia del Sole, e continua con i consumatori (erbivori, poi carnivori). A ogni passaggio gran parte dell'energia si perde come calore: per questo le catene sono corte. La materia invece non si perde: detritivori e decompositori trasformano i resti in sali minerali che tornano alle piante.",
+    "fasi": [
+      {"da": 1, "nome": "L'energia entra e sale lungo i livelli trofici"},
+      {"da": 5, "nome": "La materia torna al suolo e si ricicla"}
+    ],
+    "passaggi": [
+      {
+        "da": ["luce solare"],
+        "a": ["produttori"],
+        "enzima": "clorofilla",
+        "entra": ["CO₂", "H₂O"],
+        "esce": ["O₂"],
+        "nota": "Piante, alghe e cianobatteri catturano l'energia della luce con la clorofilla e la mettono negli zuccheri (fotosintesi). Sono autotrofi: si fanno il cibo da soli. Usano solo una piccola parte della luce che arriva, in genere intorno all'1%."
+      },
+      {
+        "da": ["produttori"],
+        "a": ["consumatori primari (erbivori)"],
+        "enzima": "microbiota intestinale",
+        "entra": [],
+        "esce": ["calore", "CO₂"],
+        "nota": "Gli erbivori mangiano i produttori. La cellulosa delle piante è difficile da digerire: la scompongono i microrganismi che vivono nel rumine dei bovini o nell'intestino di conigli e cavalli. Gran parte dell'energia mangiata si perde come calore e con le feci."
+      },
+      {
+        "da": ["consumatori primari (erbivori)"],
+        "a": ["consumatori secondari (carnivori)"],
+        "enzima": "predazione",
+        "entra": [],
+        "esce": ["calore", "CO₂"],
+        "nota": "I carnivori mangiano gli erbivori. In media solo circa il 10% dell'energia di un livello passa al livello successivo (regola del 10%): il resto serve a vivere, muoversi e mantenere la temperatura."
+      },
+      {
+        "da": ["consumatori secondari (carnivori)"],
+        "a": ["consumatori terziari (superpredatori)"],
+        "enzima": "predazione",
+        "entra": [],
+        "esce": ["calore", "CO₂"],
+        "nota": "In cima ci sono i superpredatori (aquila, lupo, squalo, orca), che nessuno caccia. Sono pochi perché arriva loro pochissima energia. Le sostanze tossiche che non si eliminano (mercurio, DDT) si concentrano sempre di più salendo la catena (biomagnificazione)."
+      },
+      {
+        "da": ["consumatori terziari (superpredatori)"],
+        "a": ["resti organici"],
+        "enzima": "detritivori",
+        "entra": [],
+        "esce": [],
+        "nota": "Ogni livello lascia resti: foglie cadute, feci, cadaveri; anche i superpredatori alla fine muoiono. Lombrichi, millepiedi, onischi e animali spazzini sminuzzano i resti: è l'inizio della catena del detrito."
+      },
+      {
+        "da": ["resti organici"],
+        "a": ["sali minerali"],
+        "enzima": "decompositori",
+        "entra": ["O₂"],
+        "esce": ["CO₂"],
+        "nota": "Batteri e funghi completano la demolizione: digeriscono i resti fuori dal loro corpo e liberano CO₂ e sali minerali (nitrati, fosfati, potassio). Senza decompositori la materia resterebbe bloccata nei cadaveri."
+      },
+      {
+        "da": ["sali minerali"],
+        "a": ["produttori"],
+        "enzima": "radici delle piante",
+        "entra": ["H₂O"],
+        "esce": [],
+        "nota": "Le radici assorbono acqua e sali minerali e la materia riparte. Così la materia fa un ciclo, mentre l'energia scorre in una sola direzione: entra come luce ed esce come calore."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Produttori → consumatori primari (erbivori) → consumatori secondari (carnivori) → consumatori terziari (superpredatori)",
+      "A ogni passaggio resta circa il 10% dell'energia: il resto si perde come calore (piramide ecologica)",
+      "Detritivori e decompositori riportano la materia al suolo come sali minerali",
+      "L'energia scorre in una direzione sola, la materia si ricicla; le catene si intrecciano in reti alimentari"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "I livelli trofici",
+        "voci": [
+          ["Autotrofi (si fanno il cibo da soli)", ["produttori"]],
+          ["Eterotrofi (mangiano altri viventi)", ["consumatori primari (erbivori)", "consumatori secondari (carnivori)", "consumatori terziari (superpredatori)"]],
+          ["Chi ricicla la materia", ["detritivori", "decompositori"]]
+        ]
+      },
+      {
+        "titolo": "Modelli per descrivere chi mangia chi",
+        "voci": [
+          ["Più catene intrecciate", ["rete alimentare"]],
+          ["Quanta energia o biomassa c'è a ogni livello", ["piramide ecologica"]]
+        ]
+      }
+    ]
+  }
+}

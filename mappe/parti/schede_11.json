@@ -1,0 +1,1006 @@
+{
+ "PAMP": {
+  "tipo": "molecola",
+  "base": "Le «divise» tipiche dei microbi: il corpo le riconosce subito come estranee.",
+  "superiore": "Pathogen-associated molecular patterns: strutture molecolari comuni a molti microbi e assenti nelle cellule umane, riconosciute dall'immunità innata. Esempi: lipopolisaccaride (LPS) dei Gram-negativi, peptidoglicano, flagellina, RNA a doppio filamento, DNA con motivi CpG non metilati.",
+  "universita": "Sono riconosciuti da recettori codificati nel genoma (PRR): TLR4 (LPS, con MD-2 e CD14), TLR2 (lipoproteine, acido lipoteicoico), TLR5 (flagellina), TLR3 (dsRNA), TLR7/8 (ssRNA), TLR9 (CpG), NOD1/NOD2 (frammenti di peptidoglicano), RIG-I/MDA5 (RNA virale nel citoplasma). Sono essenziali per il microbo, quindi mutano poco. I DAMP (HMGB1, ATP extracellulare, acido urico) sono i segnali di danno delle nostre cellule.",
+  "clinica": "L'LPS in circolo è il principale innesco dello shock settico da Gram-negativi. Molti adiuvanti dei vaccini sono agonisti dei TLR (es. MPL, agonista del TLR4, nell'adiuvante AS04)."
+ },
+ "defensine": {
+  "tipo": "molecola",
+  "base": "Piccole sostanze naturali della pelle e dell'intestino che bucano i microbi.",
+  "superiore": "Peptidi antimicrobici cationici prodotti da epiteli e neutrofili: si inseriscono nelle membrane dei microbi (batteri, funghi, alcuni virus con envelope) e le rendono permeabili.",
+  "universita": "Alfa-defensine: nei granuli dei neutrofili e nelle cellule di Paneth dell'intestino tenue. Beta-defensine: epiteli di cute, vie aeree, vie urinarie. La carica positiva le fa legare alle membrane microbiche, ricche di lipidi negativi. Hanno anche azione chemiotattica. Altro peptide antimicrobico: la catelicidina LL-37 (indotta dalla vitamina D).",
+  "clinica": "Ridotta produzione di defensine ileali da parte delle cellule di Paneth è associata alla malattia di Crohn ileale (mutazioni di NOD2)."
+ },
+ "lisozima": {
+  "tipo": "enzima",
+  "base": "Una sostanza delle lacrime e della saliva che «scioglie» la parete di alcuni batteri.",
+  "superiore": "Enzima antibatterico presente in lacrime, saliva, latte, muco e granuli dei neutrofili. Rompe il peptidoglicano della parete batterica, soprattutto nei Gram-positivi.",
+  "universita": "Glicosidasi (muramidasi, EC 3.2.1.17): idrolizza il legame β-1,4 tra acido N-acetilmuramico e N-acetilglucosamina. I Gram-negativi sono più protetti grazie alla membrana esterna. Scoperto da Fleming nel 1922.",
+  "clinica": "Il lisozima sierico e urinario aumenta in alcune leucemie monocitiche e nella sarcoidosi."
+ },
+ "microbo opsonizzato": {
+  "tipo": "struttura",
+  "base": "Un microbo «impanato» di etichette che lo rendono più facile da mangiare per i globuli bianchi.",
+  "superiore": "Microbo ricoperto da opsonine (C3b del complemento, anticorpi IgG, alcune proteine di fase acuta come la PCR). L'opsonizzazione rende molto più efficiente la fagocitosi.",
+  "universita": "I fagociti hanno recettori per le opsonine: CR1 e CR3 per C3b/iC3b, recettori Fcγ per le IgG. I batteri capsulati (pneumococco, Haemophilus, meningococco) sfuggono alla fagocitosi se non sono opsonizzati.",
+  "clinica": "Chi non ha la milza (asplenia) o ha deficit di C3 o di anticorpi è a rischio di sepsi fulminante da batteri capsulati: si vaccina contro pneumococco, meningococco e Haemophilus."
+ },
+ "C3a e C5a": {
+  "tipo": "molecola",
+  "base": "Piccoli pezzi del complemento che fanno da «sirena» e chiamano i globuli bianchi.",
+  "superiore": "Frammenti piccoli che si staccano da C3 e C5 quando il complemento si attiva. Sono anafilotossine: fanno liberare istamina dai mastociti, aumentano la permeabilità dei vasi e richiamano i neutrofili (soprattutto C5a).",
+  "universita": "Agiscono su recettori accoppiati a proteine G (C3aR, C5aR1). C5a è uno dei chemoattrattori più potenti per neutrofili e monociti e attiva il burst respiratorio. Inattivati rapidamente dalle carbossipeptidasi plasmatiche.",
+  "clinica": "Livelli alti di C5a contribuiscono al danno nella sepsi. Avacopan, antagonista del recettore di C5a, è usato nelle vasculiti ANCA-associate."
+ },
+ "recettori Toll-like (TLR)": {
+  "tipo": "molecola",
+  "base": "I «sensori d'allarme» dei globuli bianchi che riconoscono i microbi al primo sguardo.",
+  "superiore": "Famiglia di recettori dell'immunità innata (PRR) che riconoscono i PAMP. Nell'uomo sono 10 (TLR1-10): alcuni stanno sulla membrana (batteri, funghi), altri negli endosomi (acidi nucleici dei virus).",
+  "universita": "Glicoproteine transmembrana con dominio extracellulare ricco di leucine e dominio intracellulare TIR. Segnalano tramite MyD88 (tutti tranne TLR3) e TRIF (TLR3, TLR4): attivano NF-κB (citochine infiammatorie) e IRF3/IRF7 (interferoni di tipo I). Espressi da macrofagi, cellule dendritiche, neutrofili, epiteli.",
+  "clinica": "Deficit di MyD88 o IRAK-4: infezioni piogeniche gravi nell'infanzia (pneumococco, stafilococco) con febbre e PCR poco elevate. L'imiquimod (agonista TLR7) si usa per condilomi e carcinoma basocellulare superficiale."
+ },
+ "NF-κB": {
+  "tipo": "molecola",
+  "base": "Un «interruttore» dentro la cellula che accende i geni dell'allarme.",
+  "superiore": "Fattore di trascrizione che, attivato da recettori come TLR e recettori di TNF e IL-1, entra nel nucleo e accende i geni delle citochine infiammatorie, delle molecole di adesione e delle proteine di sopravvivenza.",
+  "universita": "A riposo è trattenuto nel citoplasma dall'inibitore IκB. Il segnale attiva la chinasi IKK, che fosforila IκB e lo fa degradare dal proteasoma: NF-κB (dimero p50/p65) va nel nucleo. Geni bersaglio: TNF-α, IL-1, IL-6, IL-8, E-selectina, ICAM-1, COX-2.",
+  "clinica": "I cortisonici inibiscono NF-κB (in parte inducendo IκB): è uno dei motivi della loro potente azione antinfiammatoria. Mutazioni di NEMO (subunità di IKK) causano displasia ectodermica con immunodeficienza."
+ },
+ "TNF-α": {
+  "tipo": "molecola",
+  "base": "Un messaggio d'allarme molto potente: chiama i globuli bianchi e fa venire la febbre.",
+  "superiore": "Fattore di necrosi tumorale alfa: citochina infiammatoria prodotta soprattutto dai macrofagi attivati (e da linfociti T e mastociti). Attiva l'endotelio, richiama neutrofili e monociti, causa febbre e induce proteine di fase acuta.",
+  "universita": "Agisce sui recettori TNFR1 e TNFR2, attivando NF-κB o l'apoptosi (via caspasi-8). Ad alte dosi: calo della contrattilità cardiaca, vasodilatazione, trombosi, ipoglicemia (shock settico); nelle infezioni croniche causa cachessia. Essenziale per mantenere i granulomi.",
+  "clinica": "Farmaci anti-TNF (infliximab, adalimumab, etanercept) per artrite reumatoide, spondilite, Crohn, colite ulcerosa, psoriasi. Prima di iniziarli si cerca una tubercolosi latente (IGRA o Mantoux), perché può riattivarsi."
+ },
+ "interleuchina-1 (IL-1)": {
+  "tipo": "molecola",
+  "base": "Un messaggio d'allarme dei globuli bianchi: accende l'infiammazione e la febbre.",
+  "superiore": "Citochina infiammatoria prodotta da macrofagi e cellule dendritiche. Attiva l'endotelio, causa febbre (pirogeno endogeno) e stimola le proteine di fase acuta; esistono IL-1α e IL-1β.",
+  "universita": "L'IL-1β è prodotta come precursore inattivo (pro-IL-1β, indotto da NF-κB) e tagliata dalla caspasi-1, attivata dall'inflammasoma (es. NLRP3, che sente cristalli di urato, ATP extracellulare, tossine). Agisce sul recettore IL-1R1 con via MyD88. Antagonista naturale: IL-1Ra.",
+  "clinica": "Nelle sindromi autoinfiammatorie (CAPS, da mutazioni di NLRP3) e nella gotta (cristalli di urato) c'è troppa IL-1β. Farmaci: anakinra (IL-1Ra ricombinante), canakinumab (anti-IL-1β)."
+ },
+ "interleuchina-6 (IL-6)": {
+  "tipo": "molecola",
+  "base": "Un messaggio che arriva fino al fegato e gli dice di produrre le proteine d'emergenza.",
+  "superiore": "Citochina prodotta da macrofagi, endotelio e fibroblasti. Fa produrre al fegato le proteine di fase acuta (PCR, fibrinogeno), contribuisce alla febbre e aiuta il differenziamento dei linfociti B e dei Th17.",
+  "universita": "Agisce tramite il recettore IL-6R associato a gp130 e la via JAK-STAT3. Induce l'epcidina epatica, che blocca l'uscita del ferro: è la causa dell'anemia delle malattie croniche. Con TGF-β orienta i linfociti T verso Th17.",
+  "clinica": "Tocilizumab e sarilumab (anti-recettore IL-6) per artrite reumatoide, arterite gigantocellulare, sindrome da rilascio di citochine dopo CAR-T e COVID-19 grave. La PCR è in pratica una misura indiretta dell'IL-6."
+ },
+ "chemochine": {
+  "tipo": "molecola",
+  "base": "Messaggi profumati che fanno da scia: i globuli bianchi li seguono per arrivare dove serve.",
+  "superiore": "Piccole citochine chemiotattiche: richiamano i leucociti dal sangue ai tessuti (chemiotassi) e guidano il traffico dei linfociti negli organi linfoidi. Esempio: IL-8 (CXCL8) per i neutrofili.",
+  "universita": "Circa 50 molecole divise in famiglie in base alle cisteine (CC, CXC, CX3C, C), con recettori accoppiati a proteine G. Attivano le integrine dei leucociti (adesione salda). CCL19 e CCL21 attraverso CCR7 portano dendritiche e linfociti T naive nella zona T del linfonodo; CXCL13 (recettore CXCR5) porta i linfociti B nei follicoli.",
+  "clinica": "CCR5 e CXCR4 sono i corecettori dell'HIV: chi ha due copie della delezione CCR5-Δ32 è quasi resistente ai ceppi R5; maraviroc blocca CCR5. Plerixafor (antagonista CXCR4) mobilizza le cellule staminali per il trapianto."
+ },
+ "endotelio attivato": {
+  "tipo": "struttura",
+  "base": "La parete dei vasi che, quando c'è un'infezione, diventa «appiccicosa» e lascia passare liquido e globuli bianchi.",
+  "superiore": "Endotelio delle venule postcapillari stimolato da citochine (TNF-α, IL-1) e da istamina: espone molecole di adesione (selectine, ICAM-1, VCAM-1), presenta chemochine e diventa più permeabile.",
+  "universita": "Attivazione rapida (minuti): l'istamina e la trombina fanno spostare in superficie la P-selectina dai corpi di Weibel-Palade. Attivazione lenta (ore, sintesi di nuove proteine via NF-κB): E-selectina, ICAM-1, VCAM-1. La contrazione delle cellule endoteliali apre spazi intercellulari.",
+  "clinica": "La disfunzione endoteliale diffusa causa l'aumento della permeabilità capillare e l'ipotensione nella sepsi; è anche alla base dell'aterosclerosi."
+ },
+ "fagolisosoma": {
+  "tipo": "struttura",
+  "base": "La «sacca dello stomaco» del globulo bianco, dove il microbo mangiato viene digerito.",
+  "superiore": "Vescicola che si forma quando il fagosoma (contenente il microbo inglobato) si fonde con i lisosomi. Al suo interno il microbo viene ucciso e digerito.",
+  "universita": "Ambiente acido (pH circa 4,5-5, grazie alla pompa V-ATPasi), enzimi idrolitici (proteasi, lipasi, nucleasi), specie reattive dell'ossigeno e dell'azoto, lattoferrina, defensine. Alcuni microbi lo evitano: Mycobacterium tuberculosis blocca la fusione fagosoma-lisosoma; Listeria fugge nel citoplasma.",
+  "clinica": "Nella sindrome di Chédiak-Higashi (mutazione di LYST) la fusione dei lisosomi è difettosa: infezioni piogeniche ricorrenti, albinismo parziale, granuli giganti nei neutrofili."
+ },
+ "lisosomi": {
+  "tipo": "struttura",
+  "base": "Piccoli «sacchetti dei rifiuti» della cellula pieni di sostanze che digeriscono tutto.",
+  "superiore": "Organuli delimitati da membrana contenenti enzimi idrolitici acidi. Digeriscono materiale preso da fuori (fagocitosi, endocitosi) e parti della cellula stessa (autofagia).",
+  "universita": "Contengono oltre 50 idrolasi acide attive a pH circa 5. Gli enzimi sono marcati con mannosio 6-fosfato nel Golgi e indirizzati ai lisosomi. Nei neutrofili i granuli azzurrofili sono lisosomi specializzati (mieloperossidasi, elastasi, defensine).",
+  "clinica": "Malattie da accumulo lisosomiale: Gaucher, Fabry, Tay-Sachs, Pompe, mucopolisaccaridosi; alcune si curano con terapia enzimatica sostitutiva. Nella malattia delle cellule I manca la marcatura con mannosio 6-fosfato."
+ },
+ "NADPH ossidasi": {
+  "tipo": "enzima",
+  "base": "Il «lanciafiamme» dei globuli bianchi: usa l'ossigeno per bruciare i microbi.",
+  "superiore": "Complesso enzimatico della membrana del fagosoma di neutrofili e macrofagi. Trasferisce elettroni dal NADPH all'O₂ formando superossido (O₂⁻): è il burst respiratorio, che produce sostanze che uccidono i microbi.",
+  "universita": "Formato da subunità di membrana (gp91phox/NOX2 e p22phox, il citocromo b558) e citosoliche (p47phox, p67phox, p40phox, Rac). Il superossido diventa H₂O₂ (superossido dismutasi) e poi acido ipocloroso (HOCl) grazie alla mieloperossidasi. Il NADPH viene dalla via dei pentoso fosfati.",
+  "clinica": "Malattia granulomatosa cronica (forma più frequente legata all'X, gp91phox): infezioni ricorrenti da germi catalasi-positivi (S. aureus, Aspergillus, Burkholderia, Serratia, Nocardia) e granulomi. Diagnosi: test DHR (diidrorodamina) in citofluorimetria. Profilassi con cotrimossazolo e itraconazolo, interferone-γ."
+ },
+ "specie reattive dell'ossigeno (ROS)": {
+  "tipo": "piccola",
+  "base": "Molecole «arrabbiate» fatte di ossigeno che distruggono i microbi, ma se sono troppe danneggiano anche noi.",
+  "superiore": "Molecole derivate dall'ossigeno molto reattive: anione superossido (O₂⁻), perossido di idrogeno (H₂O₂), radicale ossidrile (OH·), acido ipocloroso (HOCl). Nei fagociti uccidono i microbi; in eccesso causano stress ossidativo.",
+  "universita": "Prodotte dalla NADPH ossidasi dei fagociti e, in piccola quantità, dalla catena respiratoria mitocondriale. Danneggiano lipidi (perossidazione), proteine e DNA. Difese: superossido dismutasi, catalasi, glutatione perossidasi, vitamine C ed E.",
+  "clinica": "Lo stress ossidativo contribuisce al danno da ischemia-riperfusione, all'aterosclerosi e all'invecchiamento. Nel deficit di G6PD i globuli rossi non si difendono dalle ROS (emolisi da fave e farmaci ossidanti)."
+ },
+ "riparazione del tessuto": {
+  "tipo": "struttura",
+  "base": "Dopo la battaglia, il corpo aggiusta la parte ferita: a volte come nuova, a volte con una cicatrice.",
+  "superiore": "Ripristino del tessuto dopo danno e infiammazione. Rigenerazione: le cellule perse vengono sostituite da cellule uguali. Riparazione con cicatrice: il tessuto viene sostituito da tessuto connettivo fibroso.",
+  "universita": "La rigenerazione è possibile nei tessuti labili (epiteli, midollo) e stabili (fegato, rene) se resta l'impalcatura; non nei tessuti perenni (neuroni, cardiomiociti). Tappe: emostasi, infiammazione, proliferazione (tessuto di granulazione, angiogenesi da VEGF), rimodellamento (collagene III sostituito da collagene I, contrazione da miofibroblasti). I macrofagi (TGF-β, PDGF) guidano il processo.",
+  "clinica": "La guarigione è ritardata da infezione, diabete, malnutrizione, carenza di vitamina C (sintesi del collagene), cortisonici. Eccessi: cheloidi e cicatrici ipertrofiche; fibrosi d'organo (cirrosi, fibrosi polmonare)."
+ },
+ "cellula infettata da virus": {
+  "tipo": "struttura",
+  "base": "Una cellula del nostro corpo in cui è entrato un virus, che la usa per fare copie di sé.",
+  "superiore": "Cellula che contiene un virus in replicazione. Mostra pezzi delle proteine virali sull'MHC di classe I e libera interferoni di tipo I come allarme per le cellule vicine.",
+  "universita": "Riconosce l'RNA virale con RIG-I/MDA5 (citoplasma) e con TLR3/7/8 (endosomi) e il DNA con cGAS-STING: si attivano IRF3/IRF7 e la produzione di IFN-α/β. Viene uccisa dai linfociti T CD8⁺ (riconoscimento del peptide virale su MHC I) e dalle cellule NK (se il virus abbassa l'MHC I, come fanno herpesvirus e citomegalovirus).",
+  "clinica": "Il danno di molte malattie virali (es. epatiti B e C) dipende più dalla risposta dei linfociti T che uccidono le cellule infettate che dal virus stesso."
+ },
+ "interferoni di tipo I": {
+  "tipo": "molecola",
+  "base": "Messaggi che una cellula malata manda alle vicine per dire: «Attenzione, c'è un virus, chiudete le porte!».",
+  "superiore": "Citochine antivirali (IFN-α e IFN-β) prodotte dalle cellule infettate da virus e soprattutto dalle cellule dendritiche plasmacitoidi. Mettono le cellule vicine in uno stato antivirale e attivano le cellule NK.",
+  "universita": "Si legano al recettore IFNAR e attivano la via JAK-STAT (STAT1/STAT2/IRF9): si esprimono centinaia di geni stimolati dall'interferone (ISG), tra cui PKR (blocca la traduzione fosforilando eIF2α), OAS e RNasi L (degrada l'RNA), Mx. Aumentano l'espressione di MHC I. Diversi dall'IFN-γ (tipo II), prodotto da linfociti T e NK.",
+  "clinica": "Interferone-α pegilato usato in passato per l'epatite C, oggi per alcune epatiti B e neoplasie mieloproliferative; interferone-β nella sclerosi multipla. Nel lupus c'è una «firma interferonica» (anifrolumab blocca IFNAR). Effetti collaterali: sindrome simil-influenzale, depressione."
+ },
+ "stato antivirale": {
+  "tipo": "struttura",
+  "base": "Le cellule vicine si «barricano» e non lasciano più che il virus faccia copie dentro di loro.",
+  "superiore": "Condizione delle cellule raggiunte dagli interferoni di tipo I: producono proteine che bloccano la sintesi delle proteine virali e degradano l'RNA virale, così il virus si diffonde meno.",
+  "universita": "Mediato dai geni stimolati dall'interferone: PKR fosforila eIF2α e ferma la traduzione; l'OAS produce 2'-5'-oligoadenilati che attivano la RNasi L; le proteine Mx bloccano i nucleocapsidi; aumenta la presentazione su MHC I. Molti virus hanno proteine che lo bloccano (es. NS1 dell'influenza).",
+  "clinica": "Deficit genetici della via interferonica (es. di IFNAR1, STAT1) o autoanticorpi contro gli interferoni di tipo I predispongono a forme gravi di influenza, COVID-19 e reazioni ai vaccini vivi."
+ },
+ "perforina e granzimi": {
+  "tipo": "molecola",
+  "base": "Le «armi» dei globuli bianchi killer: una apre un buco nella cellula malata, l'altra la fa morire.",
+  "superiore": "Proteine contenute nei granuli dei linfociti T citotossici e delle cellule NK. La perforina forma pori nella membrana della cellula bersaglio; i granzimi (proteasi) entrano e attivano la morte per apoptosi.",
+  "universita": "La perforina, simile al componente C9 del complemento, polimerizza in pori. I granzimi sono serin-proteasi: il granzima B taglia e attiva le caspasi (e la proteina Bid, via mitocondriale). Il rilascio avviene nella sinapsi immunologica, con un'azione mirata sulla sola cellula bersaglio.",
+  "clinica": "Mutazioni della perforina (PRF1) causano la linfoistiocitosi emofagocitica familiare: attivazione incontrollata di linfociti e macrofagi, febbre, citopenie, ferritina molto alta."
+ },
+ "apoptosi": {
+  "tipo": "struttura",
+  "base": "La morte «ordinata» di una cellula: si smonta da sola senza fare danni, come un trasloco ben organizzato.",
+  "superiore": "Morte cellulare programmata: la cellula si restringe, il DNA si frammenta, la membrana forma bolle e la cellula si divide in corpi apoptotici, che vengono mangiati dai macrofagi senza infiammazione.",
+  "universita": "Eseguita dalle caspasi. Via intrinseca (mitocondriale): proteine BCL-2 regolano l'uscita del citocromo c, che attiva la caspasi-9 nell'apoptosoma. Via estrinseca: recettori di morte (Fas, TNFR1) attivano la caspasi-8. Entrambe convergono sulle caspasi esecutrici (3, 6, 7). La fosfatidilserina esposta all'esterno è il segnale «mangiami».",
+  "clinica": "Un difetto dell'apoptosi favorisce tumori (BCL-2 alto nel linfoma follicolare; venetoclax lo inibisce) e autoimmunità (sindrome linfoproliferativa autoimmune da mutazioni di Fas). Troppa apoptosi nelle malattie neurodegenerative e nell'infarto."
+ },
+ "mastociti": {
+  "tipo": "struttura",
+  "base": "Cellule «sentinella» dei tessuti piene di granuli: quando c'è un pericolo li svuotano e fanno partire l'allarme.",
+  "superiore": "Cellule dell'immunità innata dei tessuti connettivi e delle mucose, vicine ai vasi. I loro granuli contengono istamina e altri mediatori: li liberano subito in caso di danno, di attivazione del complemento (C3a, C5a) o di legame dell'IgE con l'allergene.",
+  "universita": "Derivano dal midollo e maturano nei tessuti (fattore di crescita: SCF, recettore c-KIT). Hanno il recettore ad alta affinità per le IgE (FcεRI). Mediatori preformati: istamina, triptasi, eparina, TNF-α; sintetizzati dopo l'attivazione: prostaglandina D₂, leucotrieni C₄/D₄/E₄, citochine (IL-4, IL-5, IL-13).",
+  "clinica": "Protagonisti dell'anafilassi e delle allergie (ipersensibilità di tipo I): la triptasi sierica elevata conferma l'anafilassi. Mastocitosi sistemica (mutazione KIT D816V). Stabilizzatori: cromoglicato; antistaminici e omalizumab (anti-IgE) ne bloccano gli effetti."
+ },
+ "complesso peptide-MHC": {
+  "tipo": "molecola",
+  "base": "Un «cartellino» sulla superficie della cellula che mostra un pezzetto del microbo ai linfociti.",
+  "superiore": "Peptide derivato da una proteina (del microbo o della cellula) legato a una molecola MHC sulla superficie della cellula. È ciò che il recettore dei linfociti T (TCR) riconosce.",
+  "universita": "MHC di classe I (HLA-A, -B, -C, su tutte le cellule nucleate): peptidi di 8-10 amminoacidi, prodotti dal proteasoma e portati nel reticolo endoplasmatico dal trasportatore TAP; riconosciuti dai CD8⁺. MHC di classe II (HLA-DR, -DQ, -DP, su cellule presentanti l'antigene): peptidi di 13-25 amminoacidi da proteine endocitate, caricati grazie alla catena invariante e a HLA-DM; riconosciuti dai CD4⁺. Restrizione MHC: un linfocita T riconosce il peptide solo sull'MHC «suo».",
+  "clinica": "Associazioni HLA-malattie: HLA-B27 (spondilite anchilosante), HLA-DQ2/DQ8 (celiachia), HLA-DR4 (artrite reumatoide). HLA-B*57:01 si cerca prima di dare abacavir (ipersensibilità). La compatibilità HLA è decisiva nei trapianti."
+ },
+ "recettore dei linfociti T (TCR)": {
+  "tipo": "molecola",
+  "base": "L'«antenna» del linfocita T: è fatta per riconoscere un solo pezzetto di microbo.",
+  "superiore": "Recettore di membrana dei linfociti T che riconosce un peptide presentato su una molecola MHC. Ogni linfocita ha un TCR con una sola specificità; l'insieme dei linfociti copre milioni di antigeni diversi.",
+  "universita": "Nella maggior parte dei linfociti T è un eterodimero αβ (minoranza γδ). La diversità nasce dalla ricombinazione V(D)J (enzimi RAG1/RAG2) nel timo. Il TCR non segnala da solo: è associato al complesso CD3 e alla catena ζ, che con le chinasi Lck e ZAP-70 trasmettono il segnale. CD4 e CD8 sono corecettori che legano l'MHC.",
+  "clinica": "Deficit di RAG1/RAG2 o di ZAP-70 causano immunodeficienze combinate gravi (SCID). Anticorpi bispecifici (es. blinatumomab, anti-CD3/CD19) e cellule CAR-T sfruttano il segnale del TCR contro i tumori."
+ },
+ "linfocita T naive": {
+  "tipo": "struttura",
+  "base": "Un linfocita «giovane» che non ha mai incontrato il suo microbo e gira nei linfonodi per cercarlo.",
+  "superiore": "Linfocita T maturo uscito dal timo che non ha ancora incontrato il suo antigene. Circola tra sangue e organi linfoidi secondari (linfonodi, milza), dove può essere attivato da una cellula dendritica.",
+  "universita": "Esprime CD45RA, CCR7 e L-selectina (CD62L), che lo indirizzano nella zona T dei linfonodi attraverso le venule a endotelio alto. Sopravvive grazie a IL-7 e a deboli contatti con self-MHC. Per attivarsi servono segnale 1 (TCR-peptide/MHC), segnale 2 (costimolazione) e segnale 3 (citochine che indirizzano il differenziamento).",
+  "clinica": "Il numero di linfociti T naive cala con l'età (involuzione del timo): ridotta risposta ai vaccini negli anziani. Dopo chemioterapia o trapianto di midollo si ricostituiscono lentamente."
+ },
+ "espansione clonale": {
+  "tipo": "struttura",
+  "base": "Il linfocita giusto si copia tante volte e diventa un piccolo esercito tutto uguale.",
+  "superiore": "Proliferazione rapida dei linfociti che hanno riconosciuto il loro antigene: da poche cellule si ottengono migliaia di cellule identiche (un clone) con la stessa specificità.",
+  "universita": "Guidata soprattutto dall'IL-2 e dal suo recettore ad alta affinità (CD25). I linfociti T possono dividersi ogni 6-8 ore. Nelle infezioni virali acute i T CD8⁺ specifici aumentano anche di oltre 10.000 volte. Dopo l'eliminazione dell'antigene segue la contrazione per apoptosi.",
+  "clinica": "Gli immunosoppressori dei trapianti colpiscono l'espansione clonale: ciclosporina e tacrolimus (calcineurina → IL-2), sirolimus (mTOR), micofenolato (sintesi delle purine), basiliximab (anti-CD25). Un'espansione clonale maligna è un linfoma o una leucemia."
+ },
+ "costimolazione B7-CD28": {
+  "tipo": "molecola",
+  "base": "Il «secondo via libera»: senza di lui il linfocita non si attiva, anche se ha riconosciuto il microbo.",
+  "superiore": "Secondo segnale necessario per attivare un linfocita T naive: le molecole B7 (CD80 e CD86) sulla cellula dendritica attivata si legano al CD28 del linfocita T. Senza questo segnale il linfocita diventa inattivo (anergia).",
+  "universita": "Le B7 compaiono sulle dendritiche solo dopo il contatto con i PAMP: così le risposte partono contro i microbi e non contro antigeni innocui. Il CD28 attiva la via PI3K-Akt e la produzione di IL-2. Freni: CTLA-4 lega B7 con affinità molto maggiore del CD28 e spegne la risposta; PD-1 (con PD-L1) frena i linfociti nei tessuti.",
+  "clinica": "Abatacept (CTLA-4-Ig) blocca le B7 nell'artrite reumatoide. Gli inibitori dei checkpoint (ipilimumab anti-CTLA-4, nivolumab e pembrolizumab anti-PD-1) liberano i freni contro i tumori, ma possono causare effetti autoimmuni (colite, tiroidite, epatite)."
+ },
+ "interleuchina-2 (IL-2)": {
+  "tipo": "molecola",
+  "base": "Un messaggio che i linfociti attivati usano per dire a sé stessi: «moltiplicati!».",
+  "superiore": "Citochina prodotta dai linfociti T attivati: fa proliferare i linfociti T (fattore di crescita delle cellule T) e serve anche alla sopravvivenza dei linfociti T regolatori.",
+  "universita": "Agisce in modo autocrino e paracrino su un recettore a tre catene: CD25 (α), CD122 (β) e la catena γ comune (γc), con via JAK1/JAK3-STAT5. La sua trascrizione dipende da NFAT, attivato dalla calcineurina. I Treg esprimono CD25 costantemente.",
+  "clinica": "Ciclosporina e tacrolimus bloccano la calcineurina e quindi la produzione di IL-2. Mutazioni della catena γc (IL2RG) causano la SCID legata all'X. IL-2 ad alte dosi (aldesleuchina) è stata usata nel melanoma e nel carcinoma renale; a basse dosi si studia per espandere i Treg."
+ },
+ "linfociti T follicolari helper (Tfh)": {
+  "tipo": "struttura",
+  "base": "Linfociti «allenatori» che aiutano i linfociti B a diventare fabbriche di anticorpi migliori.",
+  "superiore": "Sottotipo di linfociti T helper CD4⁺ che migra nei follicoli dei linfonodi e aiuta i linfociti B: senza di loro non si formano i centri germinativi, il cambio di classe e la maturazione dell'affinità degli anticorpi.",
+  "universita": "Esprimono CXCR5 (migrazione verso CXCL13 dei follicoli), il fattore di trascrizione Bcl-6, ICOS, PD-1 e CD40L; producono IL-21 (e IL-4 o IFN-γ, che orientano il cambio di classe). Il contatto CD40L-CD40 è indispensabile per il centro germinativo.",
+  "clinica": "Deficit di CD40L (sindrome da iper-IgM legata all'X): IgM normali o alte, IgG, IgA, IgE bassissime, infezioni ricorrenti e da Pneumocystis. Tfh in eccesso partecipano al lupus. Sono il bersaglio della strategia dei vaccini coniugati."
+ },
+ "risposta primaria": {
+  "tipo": "struttura",
+  "base": "La prima volta che il corpo incontra un microbo: ci mette un po' a imparare a combatterlo.",
+  "superiore": "Risposta immunitaria al primo incontro con un antigene (infezione o prima dose di vaccino). È lenta (circa 1-2 settimane), dominata all'inizio dalle IgM, con anticorpi meno abbondanti e a minore affinità.",
+  "universita": "Fase di latenza di circa 5-10 giorni per gli anticorpi: servono selezione clonale, espansione, aiuto dei Tfh e formazione del centro germinativo. Il picco di IgM precede quello delle IgG. Alla fine restano linfociti della memoria e plasmacellule a lunga vita.",
+  "clinica": "In sierologia IgM specifiche positive con IgG assenti o basse indicano un'infezione recente (es. epatite A, toxoplasmosi, rosolia in gravidanza); un aumento di 4 volte del titolo IgG in due prelievi a 2-3 settimane conferma un'infezione in corso."
+ },
+ "risposta secondaria": {
+  "tipo": "struttura",
+  "base": "La seconda volta il corpo si ricorda del microbo e lo sconfigge in fretta, spesso senza farci ammalare.",
+  "superiore": "Risposta immunitaria a un antigene già incontrato: è più rapida (pochi giorni), più intensa e duratura, fatta soprattutto di IgG (o IgA, IgE) ad alta affinità. È dovuta alle cellule della memoria.",
+  "universita": "Le cellule della memoria sono più numerose dei naive specifici, si attivano con meno costimolazione e hanno già cambiato classe e maturato l'affinità. Latenza di 1-3 giorni, livelli di anticorpi molto più alti. Ogni nuova esposizione può migliorare ancora l'affinità.",
+  "clinica": "È il principio dei richiami vaccinali. La rapidità della risposta secondaria spiega perché la profilassi post-esposizione (es. tetano, rabbia, epatite B) può funzionare anche iniziata dopo il contatto."
+ },
+ "IgM": {
+  "tipo": "molecola",
+  "base": "I primi anticorpi che il corpo produce quando incontra un microbo nuovo: grandi, a forma di stella.",
+  "superiore": "Classe di immunoglobuline prodotta per prima nella risposta primaria. Nel sangue è un pentamero (5 unità a Y unite dalla catena J): ha 10 siti di legame, quindi lega bene antigeni ripetuti, e attiva molto bene il complemento.",
+  "universita": "Peso molecolare circa 900 kDa: non passa la placenta. In forma monomerica è il recettore dei linfociti B naive (insieme alle IgD). Bassa affinità ma alta avidità. Le IgM naturali (dai B-1 e B della zona marginale) proteggono da batteri capsulati. Emivita di circa 5 giorni.",
+  "clinica": "IgM specifiche = infezione recente. IgM nel neonato indicano infezione congenita (la madre non può trasmetterle). Gammopatia monoclonale IgM: macroglobulinemia di Waldenström (iperviscosità). Le agglutinine fredde sono IgM (Mycoplasma)."
+ },
+ "IgG": {
+  "tipo": "molecola",
+  "base": "Gli anticorpi più numerosi nel sangue: proteggono a lungo e passano dalla mamma al bambino.",
+  "superiore": "Classe di immunoglobuline più abbondante nel sangue (circa il 75% delle immunoglobuline). È un monomero; è la classe principale della risposta secondaria. Neutralizza, opsonizza, attiva il complemento e attraversa la placenta.",
+  "universita": "Quattro sottoclassi (IgG1-IgG4) con funzioni diverse (IgG1 e IgG3 attivano meglio complemento e recettori Fcγ). Il recettore FcRn la trasporta attraverso la placenta e la protegge dalla degradazione: emivita lunga, circa 21-23 giorni. Il cambio di classe verso IgG è favorito da IFN-γ.",
+  "clinica": "Le IgG materne proteggono il neonato nei primi mesi (e spiegano la malattia emolitica del neonato da anti-D e il lupus neonatale). IgG specifiche indicano infezione passata o vaccinazione. Immunoglobuline endovena nei deficit anticorpali, nella porpora trombocitopenica immune, nella sindrome di Guillain-Barré e nella malattia di Kawasaki."
+ },
+ "IgA": {
+  "tipo": "molecola",
+  "base": "Gli anticorpi «guardiani» di naso, bocca, intestino e latte materno.",
+  "superiore": "Classe di immunoglobuline delle secrezioni mucose (saliva, lacrime, muco intestinale e respiratorio, latte materno). È la classe prodotta in maggiore quantità ogni giorno; nelle mucose è un dimero e neutralizza i microbi prima che entrino.",
+  "universita": "IgA secretoria: dimero unito dalla catena J, trasportato attraverso l'epitelio dal recettore polimerico per le Ig, il cui frammento (componente secretoria) la protegge dagli enzimi. Il cambio di classe verso IgA è guidato da TGF-β (anche con APRIL e BAFF) nelle placche di Peyer. Due sottoclassi, IgA1 e IgA2.",
+  "clinica": "Il deficit selettivo di IgA è la più comune immunodeficienza primaria: spesso senza sintomi, a volte infezioni respiratorie e intestinali (Giardia), celiachia, rischio di anafilassi alle trasfusioni (anticorpi anti-IgA). Nella celiachia si dosano le IgA anti-transglutaminasi insieme alle IgA totali. Nefropatia a IgA (malattia di Berger)."
+ },
+ "IgE": {
+  "tipo": "molecola",
+  "base": "Gli anticorpi delle allergie: servirebbero contro i vermi, ma a volte reagiscono a polline o cibi.",
+  "superiore": "Classe di immunoglobuline presente nel sangue in quantità minime. Si lega ai mastociti e ai basofili: quando incontra il suo antigene li fa svuotare (istamina). Difende dai parassiti (elminti) ed è responsabile delle allergie immediate.",
+  "universita": "Il cambio di classe verso IgE è indotto da IL-4 e IL-13 (risposta Th2). Si lega al recettore ad alta affinità FcεRI: legata ai mastociti persiste per settimane, mentre in circolo ha un'emivita di circa 2 giorni. Il legame crociato di due IgE da parte dell'allergene fa degranulare la cellula in pochi minuti.",
+  "clinica": "Ipersensibilità di tipo I: rinite allergica, asma allergica, orticaria, allergie alimentari, anafilassi. Si misurano le IgE totali e specifiche (RAST, prick test). Omalizumab (anti-IgE) nell'asma grave e nell'orticaria cronica. IgE molto alte nella sindrome di Job (iper-IgE) e nelle parassitosi."
+ },
+ "IgD": {
+  "tipo": "molecola",
+  "base": "Anticorpi che stanno soprattutto sulla superficie dei linfociti B giovani.",
+  "superiore": "Classe di immunoglobuline presente quasi solo sulla membrana dei linfociti B naive maturi, insieme alle IgM, dove funziona da recettore per l'antigene. Nel sangue è scarsa.",
+  "universita": "IgM e IgD di membrana hanno la stessa regione variabile: nascono dallo stesso trascritto per splicing alternativo, non per cambio di classe. La loro funzione nel siero è poco chiara (forse nelle mucose respiratorie, legandosi ai basofili). Emivita di circa 3 giorni.",
+  "clinica": "Mieloma a IgD: raro, spesso con catene leggere lambda e insufficienza renale. Nella sindrome da iper-IgD (deficit di mevalonato chinasi) le IgD sono alte e c'è febbre periodica."
+ },
+ "immunodeficienze": {
+  "tipo": "struttura",
+  "base": "Malattie in cui le difese del corpo funzionano poco, così ci si ammala più spesso e più gravemente.",
+  "superiore": "Difetti del sistema immunitario che aumentano la frequenza e la gravità delle infezioni (e talvolta tumori e autoimmunità). Primarie: genetiche, di solito dall'infanzia. Secondarie (acquisite): da HIV, chemioterapia, cortisonici, malnutrizione, tumori del sangue, asplenia.",
+  "universita": "Il tipo di infezione suggerisce il difetto. Anticorpi (agammaglobulinemia di Bruton da deficit di BTK, immunodeficienza comune variabile): batteri capsulati, enterovirus, Giardia. Linfociti T (sindrome di DiGeorge, AIDS): virus, funghi, Pneumocystis, micobatteri. Combinate (SCID): tutto, dai primi mesi. Fagociti (malattia granulomatosa cronica): stafilococco, Aspergillus. Complemento terminale: Neisseria.",
+  "clinica": "Esami di base: emocromo con formula, dosaggio delle immunoglobuline, risposta ai vaccini, sottopopolazioni linfocitarie, test HIV. Nelle immunodeficienze gravi i vaccini vivi attenuati sono controindicati. Terapie: immunoglobuline sostitutive, profilassi antibiotica, trapianto di cellule staminali (SCID), terapia genica."
+ },
+ "autoimmunità": {
+  "tipo": "struttura",
+  "base": "Quando le difese sbagliano bersaglio e attaccano parti del proprio corpo.",
+  "superiore": "Risposta immunitaria contro antigeni propri (self) per perdita della tolleranza. Può colpire un solo organo (tiroidite di Hashimoto, diabete di tipo 1) o tutto il corpo (lupus eritematoso sistemico).",
+  "universita": "La tolleranza centrale elimina nel timo i linfociti T autoreattivi (selezione negativa, con AIRE che fa esprimere antigeni dei tessuti); quella periferica usa anergia, apoptosi e linfociti T regolatori (FoxP3, IL-10, TGF-β, CTLA-4). Concorrono suscettibilità genetica (geni HLA, PTPN22) e fattori ambientali (infezioni con mimetismo molecolare, fumo, ormoni). Più frequente nelle donne.",
+  "clinica": "Esami: autoanticorpi (ANA, anti-dsDNA, anti-TPO, anti-CCP, anti-transglutaminasi). Mutazioni di AIRE (APECED) e di FoxP3 (IPEX) causano autoimmunità multipla. Terapie: cortisonici, immunosoppressori, farmaci biologici."
+ },
+ "ipersensibilità (allergia)": {
+  "tipo": "struttura",
+  "base": "Quando le difese reagiscono troppo forte a cose innocue, come polline, polvere o alcuni cibi.",
+  "superiore": "Risposta immunitaria eccessiva o inappropriata che danneggia i tessuti. Si classifica in 4 tipi (Gell e Coombs): I immediata (IgE, allergie), II da anticorpi contro cellule o tessuti, III da immunocomplessi, IV ritardata (linfociti T).",
+  "universita": "Tipo I: IgE sui mastociti, degranulazione in minuti (istamina, leucotrieni), fase tardiva con eosinofili. Tipo II: IgG/IgM contro antigeni di membrana (anemia emolitica autoimmune, Goodpasture, Graves, miastenia). Tipo III: immunocomplessi depositati nei vasi con attivazione del complemento (lupus, malattia da siero, glomerulonefrite post-streptococcica). Tipo IV: Th1 e CTL (dermatite da contatto, test della tubercolina, rigetto).",
+  "clinica": "L'anafilassi si cura subito con adrenalina intramuscolo (0,5 mg nell'adulto, coscia). Diagnosi delle allergie con prick test e IgE specifiche; immunoterapia specifica (desensibilizzazione) per pollini e veleno di imenotteri; patch test per la dermatite da contatto."
+ },
+ "danno tissutale": {
+  "tipo": "struttura",
+  "base": "Quando una parte del corpo si fa male: per un colpo, una scottatura, un taglio o un'infezione.",
+  "superiore": "Lesione delle cellule e della matrice di un tessuto, causata da agenti fisici (traumi, calore, radiazioni), chimici, biologici (microbi, tossine), da mancanza di ossigeno (ischemia) o da reazioni immunitarie. È lo stimolo che fa partire l'infiammazione.",
+  "universita": "Le cellule necrotiche liberano DAMP (HMGB1, ATP, acido urico, DNA mitocondriale), riconosciuti da PRR come TLR e inflammasoma NLRP3: per questo anche un danno sterile (infarto, trauma, ustione) causa infiammazione. La perdita della funzione dell'organo è il quinto segno classico (functio laesa).",
+  "clinica": "L'infiammazione sterile spiega febbre e PCR alta dopo infarto, interventi chirurgici, traumi gravi e pancreatite acuta, anche senza infezione."
+ },
+ "mediatori dell'infiammazione": {
+  "tipo": "molecola",
+  "base": "Le sostanze «messaggero» che fanno partire l'infiammazione: allargano i vasi e chiamano i globuli bianchi.",
+  "superiore": "Molecole che avviano e regolano l'infiammazione. Derivano dalle cellule (istamina, prostaglandine, leucotrieni, citochine, chemochine, ossido nitrico) o dal plasma (complemento, chinine come la bradichinina, sistema della coagulazione).",
+  "universita": "Preformati nei granuli (istamina, serotonina) o sintetizzati al momento (eicosanoidi, citochine, NO, PAF). Hanno vita breve e agiscono vicino al punto di produzione. Effetti: vasodilatazione (istamina, PGI₂, PGE₂, NO), aumento della permeabilità (istamina, bradichinina, leucotrieni C₄/D₄/E₄, C3a e C5a), chemiotassi (C5a, LTB₄, IL-8), febbre (IL-1, TNF, IL-6, PGE₂), dolore (PGE₂, bradichinina).",
+  "clinica": "Ogni classe di mediatori è bersaglio di farmaci: antistaminici (istamina), FANS (prostaglandine), antileucotrieni come montelukast (asma), anti-TNF e anti-IL-6."
+ },
+ "istamina": {
+  "tipo": "piccola",
+  "base": "Una sostanza dei globuli bianchi «sentinella» che fa arrossare, prudere e gonfiare la pelle.",
+  "superiore": "Ammina biologica che si forma dall'amminoacido istidina. È contenuta nei granuli di mastociti e basofili e viene liberata subito in caso di danno o allergia: dilata le arteriole e aumenta la permeabilità delle venule. Nello stomaco stimola la secrezione acida.",
+  "universita": "Prodotta dall'istidina decarbossilasi. Recettori accoppiati a proteine G: H1 (vasodilatazione, permeabilità, contrazione dei bronchi, prurito), H2 (acido gastrico, cuore), H3 (neurotrasmissione), H4 (chemiotassi). Effetto rapido e breve (si degrada in fretta con diammina ossidasi e istamina N-metiltransferasi).",
+  "clinica": "Antistaminici H1 (cetirizina, loratadina; quelli di prima generazione danno sonnolenza) per rinite e orticaria; H2-antagonisti (famotidina) per l'acidità gastrica. Nell'anafilassi gli antistaminici non bastano: serve l'adrenalina. Sindrome sgombroide: intossicazione da istamina nel pesce mal conservato.",
+  "smiles": "NCCc1c[nH]cn1"
+ },
+ "vasodilatazione": {
+  "tipo": "struttura",
+  "base": "I vasi del sangue si allargano e arriva più sangue: la pelle diventa rossa e calda.",
+  "superiore": "Aumento del diametro dei vasi per rilasciamento della muscolatura liscia delle arteriole. Nell'infiammazione aumenta il flusso di sangue nella zona: è la causa del rossore (rubor) e del calore (calor).",
+  "universita": "Mediata da istamina (recettori H1 sull'endotelio → NO), prostaglandine (PGI₂, PGE₂) e ossido nitrico (rilassa il muscolo liscio via cGMP). L'aumento del flusso, insieme alla perdita di liquido, porta poi a rallentamento del sangue (stasi), che favorisce la marginazione dei leucociti.",
+  "clinica": "Una vasodilatazione diffusa causa ipotensione nello shock settico e anafilattico; la terapia comprende liquidi e vasocostrittori (noradrenalina; adrenalina nell'anafilassi)."
+ },
+ "cicloossigenasi (COX)": {
+  "tipo": "enzima",
+  "base": "L'enzima che fabbrica le sostanze del dolore e della febbre: l'aspirina lo blocca.",
+  "superiore": "Enzima che trasforma l'acido arachidonico in prostaglandine e trombossani. Esistono due forme: COX-1, sempre presente (protegge lo stomaco, aiuta le piastrine e il rene), e COX-2, prodotta soprattutto durante l'infiammazione.",
+  "universita": "Prostaglandina-endoperossido sintasi (EC 1.14.99.1): attività ciclossigenasica e perossidasica, produce PGH₂, poi trasformata da sintasi specifiche in PGE₂, PGI₂ (endotelio), PGD₂ (mastociti), PGF₂α, TXA₂ (piastrine). La COX-2 è indotta da citochine (via NF-κB) ed è inibita dai cortisonici. L'aspirina la acetila in modo irreversibile.",
+  "clinica": "Bersaglio dei FANS (non selettivi: ibuprofene, naprossene, diclofenac; selettivi COX-2: celecoxib, etoricoxib) e dell'aspirina a basse dosi come antiaggregante (blocco del TXA₂ delle piastrine). Effetti avversi: ulcera gastrica (COX-1), danno renale, aumento del rischio cardiovascolare (coxib)."
+ },
+ "acido arachidonico": {
+  "tipo": "piccola",
+  "base": "Un grasso delle membrane delle cellule da cui si fabbricano le sostanze dell'infiammazione.",
+  "superiore": "Acido grasso polinsaturo a 20 atomi di carbonio con 4 doppi legami (omega-6). Si trova nei fosfolipidi delle membrane e, una volta liberato, diventa il punto di partenza degli eicosanoidi: prostaglandine, trombossani e leucotrieni.",
+  "universita": "Liberato dai fosfolipidi dalla fosfolipasi A₂ citosolica (attivata da Ca²⁺ e fosforilazione). Vie: cicloossigenasi → prostaglandine e trombossani; 5-lipoossigenasi → leucotrieni (LTB₄, LTC₄, LTD₄, LTE₄); 12/15-lipoossigenasi → lipossine (antinfiammatorie). Si forma dall'acido linoleico della dieta.",
+  "clinica": "I cortisonici inibiscono la liberazione dell'acido arachidonico (attraverso l'annessina-1 e il calo di COX-2). Zileuton blocca la 5-lipoossigenasi, montelukast il recettore dei leucotrieni (asma). Nella malattia respiratoria esacerbata dall'aspirina il blocco delle COX sposta la via verso i leucotrieni.",
+  "smiles": "CCCCC/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O"
+ },
+ "prostaglandine": {
+  "tipo": "molecola",
+  "base": "Sostanze fabbricate al momento che causano dolore, febbre e rossore; le medicine antidolorifiche le bloccano.",
+  "superiore": "Eicosanoidi derivati dall'acido arachidonico attraverso le cicloossigenasi. Nell'infiammazione causano vasodilatazione, dolore (sensibilizzano le terminazioni nervose) e febbre. Hanno anche funzioni normali: proteggono lo stomaco, regolano il rene e l'utero.",
+  "universita": "Agiscono vicino a dove sono prodotte, su recettori accoppiati a proteine G (EP1-4 per PGE₂, IP per PGI₂, DP, FP). PGE₂: vasodilatazione, dolore, febbre (recettore EP3 nell'ipotalamo), protezione gastrica, mantiene pervio il dotto arterioso. PGI₂ (prostaciclina): vasodilatazione e antiaggregazione. PGF₂α: contrazione dell'utero.",
+  "clinica": "FANS e paracetamolo riducono dolore e febbre bloccandone la sintesi. Analoghi: misoprostolo (protezione gastrica, induzione del travaglio, aborto farmacologico), alprostadil (mantiene aperto il dotto arterioso nelle cardiopatie congenite), epoprostenolo (ipertensione polmonare), latanoprost (glaucoma). L'indometacina chiude il dotto arterioso pervio nel prematuro."
+ },
+ "aumento della permeabilità": {
+  "tipo": "struttura",
+  "base": "I vasi diventano «bucherellati»: esce liquido nei tessuti e la parte si gonfia.",
+  "superiore": "Fuoriuscita di liquido e proteine plasmatiche dai vasi verso i tessuti durante l'infiammazione, soprattutto nelle venule postcapillari. Forma l'essudato e causa il gonfiore (tumor).",
+  "universita": "Meccanismi: contrazione delle cellule endoteliali (istamina, bradichinina, leucotrieni; rapida e breve, 15-30 minuti); riorganizzazione del citoscheletro da citochine (TNF, IL-1; più tardiva); danno diretto dell'endotelio (ustioni, tossine; anche capillari e arteriole); transcitosi aumentata (VEGF). La perdita di proteine riduce la pressione oncotica del sangue e aumenta quella interstiziale: il liquido esce.",
+  "clinica": "Nella sindrome da distress respiratorio acuto (ARDS) l'aumento della permeabilità dei capillari polmonari riempie gli alveoli di essudato. L'angioedema da bradichinina (ereditario o da ACE-inibitori) non risponde agli antistaminici."
+ },
+ "essudato": {
+  "tipo": "molecola",
+  "base": "Il liquido che esce dai vasi in una zona infiammata: è ricco di proteine e cellule.",
+  "superiore": "Liquido infiammatorio extravascolare ricco di proteine e spesso di cellule (leucociti). Si forma per aumento della permeabilità dei vasi. Si distingue dal trasudato, povero di proteine, che si forma per squilibrio di pressioni con vasi integri (es. scompenso cardiaco).",
+  "universita": "Contiene fibrinogeno (che forma fibrina), anticorpi, complemento e leucociti. Tipi: sieroso (vesciche da ustione), fibrinoso (pericardite fibrinosa), purulento (pus, con neutrofili e microbi piogeni), emorragico. Porta sul posto anticorpi e complemento e diluisce le tossine; la linfa lo drena verso i linfonodi.",
+  "clinica": "Nel versamento pleurico i criteri di Light distinguono l'essudato (infezioni, tumori, embolia) dal trasudato: rapporto proteine pleura/siero > 0,5 o LDH pleura/siero > 0,6 o LDH pleurica > 2/3 del limite superiore del siero."
+ },
+ "selectine e integrine": {
+  "tipo": "molecola",
+  "base": "Le «ventose» e le «mani» che permettono ai globuli bianchi di attaccarsi alla parete dei vasi e uscire.",
+  "superiore": "Molecole di adesione che fanno uscire i leucociti dai vasi. Le selectine fanno rotolare i leucociti sull'endotelio (legame debole); le integrine dei leucociti, attivate dalle chemochine, li fanno fermare saldamente legandosi a ICAM-1 e VCAM-1 dell'endotelio.",
+  "universita": "Selectine: E-selectina (endotelio, indotta da TNF e IL-1), P-selectina (endotelio e piastrine, dai corpi di Weibel-Palade), L-selectina (leucociti); legano zuccheri sialilati come il sialyl-Lewis X. Integrine: LFA-1 (CD11a/CD18) e Mac-1 (CD11b/CD18) legano ICAM-1; VLA-4 (α4β1) lega VCAM-1. Le chemochine cambiano la forma delle integrine (alta affinità). Poi la diapedesi avviene con PECAM-1 (CD31).",
+  "clinica": "Deficit di adesione leucocitaria di tipo 1 (difetto di CD18): neutrofilia marcata, infezioni senza pus, ritardata caduta del cordone ombelicale. Natalizumab (anti-α4) nella sclerosi multipla e nel Crohn, con rischio di leucoencefalopatia multifocale progressiva (virus JC). Vedolizumab (anti-α4β7) agisce solo sull'intestino."
+ },
+ "risoluzione dell'infiammazione": {
+  "tipo": "struttura",
+  "base": "Il momento in cui l'infiammazione si spegne: il gonfiore passa e il tessuto si calma.",
+  "superiore": "Fase finale dell'infiammazione acuta: tolta la causa, i mediatori si esauriscono, i neutrofili muoiono e vengono rimossi, il liquido viene drenato dai linfatici e il tessuto torna normale. Non è passiva: è guidata da segnali specifici.",
+  "universita": "Meccanismi attivi: breve emivita dei mediatori, apoptosi dei neutrofili ed efferocitosi da parte dei macrofagi, passaggio dei macrofagi a un profilo riparativo (IL-10, TGF-β), passaggio dalla sintesi di prostaglandine e leucotrieni a quella di lipossine, resolvine e protectine (cambio di classe dei mediatori lipidici), drenaggio linfatico.",
+  "clinica": "Una risoluzione difettosa porta a infiammazione cronica e fibrosi. Gli acidi grassi omega-3 sono precursori delle resolvine; l'aspirina favorisce la formazione di lipossine «attivate dall'aspirina»."
+ },
+ "mediatori pro-risolutivi": {
+  "tipo": "molecola",
+  "base": "Sostanze che dicono al corpo: «La battaglia è finita, ora calmatevi».",
+  "superiore": "Mediatori lipidici che spengono attivamente l'infiammazione: lipossine (dall'acido arachidonico), resolvine, protectine e maresine (dagli acidi grassi omega-3 EPA e DHA). Fermano l'arrivo dei neutrofili e stimolano i macrofagi a ripulire.",
+  "universita": "Le lipossine (es. LXA₄) si formano per azione combinata di lipoossigenasi di cellule diverse (biosintesi transcellulare); l'aspirina, acetilando la COX-2, porta a lipossine epimere (ATL). Agiscono su recettori come ALX/FPR2: riducono chemiotassi e permeabilità, aumentano l'efferocitosi e il drenaggio linfatico.",
+  "clinica": ""
+ },
+ "IL-10 e TGF-β": {
+  "tipo": "molecola",
+  "base": "Messaggi «calmanti» che spengono le difese quando non servono più.",
+  "superiore": "Citochine antinfiammatorie e regolatrici prodotte da macrofagi, linfociti T regolatori e altre cellule. Spengono l'attivazione di macrofagi e cellule dendritiche e favoriscono la riparazione dei tessuti.",
+  "universita": "IL-10: riduce la produzione di IL-12, TNF e l'espressione di MHC II e B7 nei macrofagi e nelle dendritiche (via STAT3). TGF-β: inibisce la proliferazione dei linfociti, stimola i fibroblasti a produrre collagene e l'angiogenesi, favorisce il cambio di classe verso IgA e il differenziamento dei Treg (con IL-2) o dei Th17 (con IL-6).",
+  "clinica": "Mutazioni dell'IL-10 o del suo recettore causano colite grave a esordio molto precoce. Un eccesso di TGF-β favorisce la fibrosi (polmone, rene, fegato); mutazioni nella sua via causano la sindrome di Loeys-Dietz e contribuiscono alla sindrome di Marfan."
+ },
+ "fibroblasti": {
+  "tipo": "struttura",
+  "base": "Cellule «muratrici» che costruiscono il tessuto di sostegno e chiudono le ferite con la cicatrice.",
+  "superiore": "Cellule principali del tessuto connettivo: producono collagene, elastina e sostanza fondamentale (matrice extracellulare). Nella riparazione proliferano e depositano la cicatrice.",
+  "universita": "Attivati da TGF-β, PDGF e FGF prodotti da macrofagi e piastrine. Alcuni diventano miofibroblasti (con actina α-muscolare liscia), che contraggono la ferita. Sintesi del collagene: idrossilazione di prolina e lisina che richiede vitamina C. Producono anche metalloproteasi per il rimodellamento.",
+  "clinica": "Attivazione eccessiva: cheloidi, fibrosi polmonare idiopatica (pirfenidone e nintedanib la rallentano), sclerodermia, cirrosi. Nello scorbuto (carenza di vitamina C) le ferite guariscono male."
+ },
+ "tessuto di granulazione": {
+  "tipo": "struttura",
+  "base": "Il tessuto nuovo, rosa e granuloso, che riempie una ferita mentre guarisce.",
+  "superiore": "Tessuto tipico della riparazione: è formato da nuovi capillari (angiogenesi), fibroblasti che proliferano, macrofagi e matrice lassa. Riempie il difetto e col tempo si trasforma in una cicatrice.",
+  "universita": "Compare dopo 3-5 giorni dal danno. Il VEGF stimola i nuovi vasi, che sono permeabili (edema). Il collagene di tipo III, depositato per primo, viene sostituito da collagene di tipo I; la forza della cicatrice arriva a circa il 70-80% di quella della cute normale dopo circa 3 mesi.",
+  "clinica": "Guarigione per prima intenzione (ferite chirurgiche suturate, poco tessuto di granulazione) o per seconda intenzione (ferite ampie o infette, molto tessuto di granulazione e contrazione). Il tessuto di granulazione esuberante va a volte rimosso."
+ },
+ "febbre": {
+  "tipo": "struttura",
+  "base": "La temperatura del corpo sale per aiutare a combattere i microbi.",
+  "superiore": "Aumento della temperatura corporea per innalzamento del «termostato» dell'ipotalamo (set point), causato dai pirogeni. Si distingue dall'ipertermia, in cui il termostato è normale ma il corpo non riesce a disperdere il calore.",
+  "universita": "Pirogeni esogeni (LPS e altri PAMP) fanno produrre pirogeni endogeni (IL-1, IL-6, TNF-α). Questi inducono COX-2 e PGE₂ nell'area preottica dell'ipotalamo (attraverso l'organo vascoloso della lamina terminale): la PGE₂ sul recettore EP3 alza il set point. Il corpo produce calore (brividi) e lo trattiene (vasocostrizione cutanea). La temperatura più alta rallenta alcuni microbi e favorisce le risposte immunitarie.",
+  "clinica": "Paracetamolo e FANS abbassano la febbre bloccando la sintesi di PGE₂. Febbre di origine sconosciuta: > 38,3 °C per oltre 3 settimane senza diagnosi. Nel neutropenico la febbre è un'urgenza (antibiotici entro un'ora)."
+ },
+ "proteine di fase acuta": {
+  "tipo": "molecola",
+  "base": "Proteine d'emergenza che il fegato produce in grande quantità quando c'è un'infiammazione.",
+  "superiore": "Proteine plasmatiche la cui concentrazione cambia di almeno il 25% durante l'infiammazione. Positive (aumentano): proteina C reattiva, fibrinogeno, amiloide sierica A, ferritina, epcidina, aptoglobina. Negative (diminuiscono): albumina, transferrina.",
+  "universita": "Sintesi epatica stimolata soprattutto dall'IL-6 (con IL-1 e TNF). Funzioni: opsonizzazione e attivazione del complemento (PCR, lectina che lega il mannosio), sequestro del ferro ai microbi (epcidina, ferritina), coagulazione e riparazione (fibrinogeno). Il fibrinogeno alto aumenta l'aggregazione dei globuli rossi: per questo cresce la VES.",
+  "clinica": "PCR e VES indicano infiammazione. Una fase acuta che dura a lungo causa anemia da malattia cronica (epcidina) e amiloidosi AA (deposito di amiloide sierica A, es. in artrite reumatoide e febbre mediterranea familiare)."
+ },
+ "proteina C reattiva (PCR)": {
+  "tipo": "molecola",
+  "base": "Un valore del sangue che sale quando nel corpo c'è un'infiammazione o un'infezione.",
+  "superiore": "Proteina di fase acuta prodotta dal fegato (stimolato dall'IL-6). Lega la fosforilcolina dei microbi e delle cellule danneggiate, li opsonizza e attiva il complemento. Si misura nel sangue come indice di infiammazione.",
+  "universita": "Pentrassina formata da 5 subunità uguali. Sale entro 6-8 ore dall'inizio dello stimolo, con picco a circa 48 ore; emivita di circa 19 ore, quindi scende rapidamente quando l'infiammazione si risolve (più veloce della VES). Valori normali di solito sotto 5 mg/L (varia tra laboratori).",
+  "clinica": "Valori molto alti suggeriscono infezioni batteriche, ma la PCR non distingue la causa: per le infezioni batteriche è più specifica la procalcitonina. La PCR ad alta sensibilità (hs-PCR) è usata per stimare il rischio cardiovascolare. Nel lupus attivo la PCR resta spesso bassa (salvo sierosite o infezione)."
+ },
+ "infiammazione cronica": {
+  "tipo": "struttura",
+  "base": "Un'infiammazione che non si spegne e dura mesi o anni, rovinando piano piano il tessuto.",
+  "superiore": "Infiammazione di lunga durata (settimane-anni) in cui coesistono infiammazione attiva, danno del tessuto e tentativi di riparazione (fibrosi). Le cellule tipiche sono macrofagi, linfociti e plasmacellule.",
+  "universita": "Cause: infezioni persistenti (tubercolosi, Treponema, virus delle epatiti, funghi), esposizione prolungata a sostanze irritanti (silice, fumo), autoimmunità. I macrofagi attivati da IFN-γ dei Th1 mantengono il danno. Variante: infiammazione granulomatosa, con macrofagi epitelioidi e cellule giganti (tubercolosi, sarcoidosi, Crohn, corpi estranei).",
+  "clinica": "Alla base di artrite reumatoide, malattie infiammatorie intestinali, epatite cronica e cirrosi, BPCO, aterosclerosi. Aumenta il rischio di tumori (carcinoma epatocellulare nelle epatiti, carcinoma del colon nella colite ulcerosa, carcinoma gastrico da Helicobacter pylori)."
+ },
+ "bradichinina": {
+  "tipo": "molecola",
+  "base": "Una sostanza del sangue che fa male e gonfia i tessuti quando c'è un'infiammazione.",
+  "superiore": "Piccolo peptide (9 amminoacidi) prodotto nel plasma dal sistema delle chinine. Aumenta la permeabilità dei vasi, dilata le arteriole, causa dolore e contrae la muscolatura liscia.",
+  "universita": "Si forma dal chininogeno ad alto peso molecolare per azione della callicreina, attivata dal fattore XII (Hageman) a contatto con superfici danneggiate. Agisce sui recettori B2 (costitutivi) e B1 (indotti dall'infiammazione). Viene degradata rapidamente dall'enzima di conversione dell'angiotensina (ACE, chininasi II).",
+  "clinica": "Gli ACE-inibitori riducono la degradazione della bradichinina: tosse secca e, raramente, angioedema. Nell'angioedema ereditario (deficit di C1-inibitore) c'è eccesso di bradichinina: si cura con concentrato di C1-inibitore, icatibant (antagonista B2) o lanadelumab (anti-callicreina), non con antistaminici."
+ },
+ "FANS": {
+  "tipo": "molecola",
+  "base": "Le medicine più comuni contro dolore, febbre e infiammazione, come l'ibuprofene.",
+  "superiore": "Farmaci antinfiammatori non steroidei: inibiscono le cicloossigenasi (COX) e riducono la sintesi delle prostaglandine. Hanno azione antinfiammatoria, analgesica e antipiretica. Esempi: ibuprofene, naprossene, diclofenac, ketoprofene, aspirina; selettivi COX-2: celecoxib, etoricoxib.",
+  "universita": "Inibizione reversibile e competitiva delle COX (l'aspirina invece acetila in modo irreversibile la serina del sito attivo). Il blocco della COX-1 riduce la protezione gastrica (prostaglandine che stimolano muco e bicarbonato) e la sintesi del trombossano delle piastrine; il blocco della COX-2 vascolare riduce la prostaciclina (rischio trombotico dei coxib). Nel rene le prostaglandine mantengono il flusso quando il volume è basso. Il paracetamolo è analgesico e antipiretico ma quasi senza effetto antinfiammatorio.",
+  "clinica": "Effetti avversi: gastropatia e ulcera (prevenzione con inibitori di pompa protonica nei pazienti a rischio), danno renale acuto (soprattutto con ACE-inibitori o sartani e diuretici: «triplo colpo»), ritenzione di sodio e aumento della pressione, rischio cardiovascolare, broncospasmo nell'asma sensibile all'aspirina. Evitare nel terzo trimestre di gravidanza (chiusura del dotto arterioso). Niente aspirina nei bambini con infezioni virali (sindrome di Reye)."
+ },
+ "cortisonici": {
+  "tipo": "molecola",
+  "base": "Medicine molto potenti che spengono l'infiammazione e le allergie, simili a un ormone del nostro corpo.",
+  "superiore": "Glucocorticoidi di sintesi, derivati dal cortisolo: prednisone, metilprednisolone, desametasone, betametasone, idrocortisone. Hanno forte azione antinfiammatoria e immunosoppressiva. Si usano per bocca, per via endovenosa, per inalazione, sulla pelle, nelle articolazioni.",
+  "universita": "Si legano al recettore dei glucocorticoidi nel citoplasma, che va nel nucleo: spegne i geni infiammatori (bloccando NF-κB e AP-1) e accende geni antinfiammatori (annessina-1, che inibisce la fosfolipasi A₂; IκB; IL-10). Effetti: meno citochine, prostaglandine e leucotrieni (anche via ridotta COX-2), meno molecole di adesione, apoptosi di linfociti ed eosinofili, aumento dei neutrofili in circolo (demarginazione). Effetti metabolici: iperglicemia, catabolismo proteico, riassorbimento osseo.",
+  "clinica": "Usi: asma (inalatori), malattie autoimmuni, allergie gravi, rigetto, edema cerebrale da tumori, alcune leucemie e linfomi. Effetti avversi dell'uso prolungato: Cushing iatrogeno, diabete, osteoporosi, infezioni (anche opportunistiche), cataratta, miopatia, disturbi dell'umore. Dopo terapie lunghe vanno sospesi gradualmente (soppressione dell'asse ipotalamo-ipofisi-surrene: rischio di insufficienza surrenalica)."
+ },
+ "vaccino": {
+  "tipo": "molecola",
+  "base": "Una medicina che insegna al corpo a difendersi da una malattia prima di incontrarla davvero.",
+  "superiore": "Preparato che contiene antigeni di un microbo (o le istruzioni per produrli) e induce un'immunità attiva specifica, con memoria, senza causare la malattia. Tipi: vivi attenuati, inattivati, a subunità o coniugati, anatossine, a mRNA o a vettore virale.",
+  "universita": "Oltre all'antigene può contenere adiuvanti, stabilizzanti e conservanti. Efficacia valutata con studi clinici e correlati di protezione (es. livello di anticorpi anti-HBs ≥ 10 mUI/mL per l'epatite B). Somministrazione per lo più intramuscolare; alcuni per bocca (rotavirus, colera) o intranasali (influenza vivo attenuato).",
+  "clinica": "In Italia 10 vaccinazioni sono obbligatorie fino a 16 anni (legge 119/2017): poliomielite, difterite, tetano, epatite B, pertosse, Haemophilus influenzae b, morbillo, parotite, rosolia, varicella. Controindicazione assoluta: anafilassi a una dose precedente o a un componente. Le reazioni avverse si segnalano alla farmacovigilanza (AIFA)."
+ },
+ "adiuvante": {
+  "tipo": "molecola",
+  "base": "Un «aiutante» aggiunto al vaccino che sveglia le difese, così il vaccino funziona meglio.",
+  "superiore": "Sostanza aggiunta a un vaccino per aumentare e orientare la risposta immunitaria contro l'antigene. Serve soprattutto nei vaccini inattivati e a subunità, che da soli attivano poco l'immunità innata. Il più usato è a base di sali di alluminio.",
+  "universita": "Meccanismi: attivano i PRR e l'inflammasoma delle cellule innate, richiamano cellule dendritiche nel punto dell'iniezione, aumentano l'espressione di B7 e la presentazione dell'antigene, trattengono l'antigene più a lungo (effetto deposito). Esempi: sali di alluminio, emulsioni olio-in-acqua (MF59, AS03), AS04 (alluminio + MPL, agonista del TLR4), AS01 (MPL + saponina QS-21), oligonucleotidi CpG (agonisti del TLR9).",
+  "clinica": "Gli adiuvanti permettono risposte migliori negli anziani (vaccino antinfluenzale adiuvato con MF59, vaccino ricombinante contro l'herpes zoster con AS01) e un risparmio di antigene. Possono dare più reazioni locali (dolore, gonfiore, noduli)."
+ },
+ "richiamo vaccinale": {
+  "tipo": "struttura",
+  "base": "Una nuova dose del vaccino che «rinfresca» la memoria del corpo e allunga la protezione.",
+  "superiore": "Dose di vaccino data dopo il ciclo primario per riattivare le cellule della memoria e ottenere una risposta secondaria: anticorpi più alti, più affini e più duraturi.",
+  "universita": "L'intervallo tra le dosi conta: dosi troppo ravvicinate danno meno tempo alla maturazione dell'affinità nel centro germinativo. Alcuni vaccini danno una protezione molto lunga dopo il ciclo completo (epatite B, morbillo); altri richiedono richiami periodici perché gli anticorpi calano (tetano-difterite-pertosse) o perché il microbo cambia (influenza ogni anno).",
+  "clinica": "Calendario italiano: richiamo di difterite-tetano-pertosse ogni 10 anni nell'adulto; dTpa in ogni gravidanza (27-36 settimane) per proteggere il neonato dalla pertosse. Dopo una ferita a rischio si valuta il richiamo antitetanico (e le immunoglobuline se la vaccinazione è incompleta)."
+ },
+ "immunità di gregge": {
+  "tipo": "struttura",
+  "base": "Se quasi tutti sono vaccinati, il microbo non riesce più a passare da una persona all'altra e protegge anche chi non è vaccinato.",
+  "superiore": "Protezione indiretta di una popolazione: quando una quota abbastanza alta di persone è immune, la catena del contagio si interrompe e anche i non immuni sono protetti. Si chiama anche immunità di comunità o di popolazione.",
+  "universita": "Soglia di immunità di gregge circa 1 − 1/R₀, dove R₀ è il numero di persone contagiate da un caso in una popolazione tutta suscettibile. Morbillo (R₀ circa 12-18): soglia di circa 92-95%; polio e difterite: circa 80-85%. Vale per malattie a trasmissione interumana, non per il tetano (spore nell'ambiente). Contano anche l'efficacia del vaccino e la sua capacità di bloccare la trasmissione.",
+  "clinica": "Protegge neonati troppo piccoli per vaccinarsi, persone immunodepresse (trapiantati, chemioterapia) e chi ha controindicazioni. Il calo della copertura ha causato il ritorno di epidemie di morbillo in Europa. Il vaiolo è stato eradicato nel 1980 grazie alla vaccinazione."
+ },
+ "copertura vaccinale": {
+  "tipo": "struttura",
+  "base": "La percentuale di persone vaccinate: più è alta, più tutti sono protetti.",
+  "superiore": "Percentuale della popolazione bersaglio (es. bambini di 24 mesi) che ha ricevuto le dosi previste di un vaccino. È l'indicatore principale di un programma di vaccinazione.",
+  "universita": "L'OMS indica come obiettivo il 95% per morbillo e per la maggior parte delle vaccinazioni infantili. La copertura reale di protezione è data da copertura × efficacia del vaccino. Coperture disomogenee (sacche di non vaccinati in alcune comunità o scuole) permettono focolai anche se la media nazionale è alta.",
+  "clinica": "In Italia le coperture sono pubblicate dal Ministero della Salute; l'obbligo vaccinale del 2017 ha riportato vicino al 95% quelle contro morbillo e esavalente. L'esitazione vaccinale si affronta con un colloquio rispettoso e informazioni chiare."
+ },
+ "vaccini vivi attenuati": {
+  "tipo": "molecola",
+  "base": "Vaccini fatti con un microbo vivo ma «addormentato», che non fa ammalare ma insegna molto bene al corpo.",
+  "superiore": "Vaccini che contengono microbi vivi indeboliti (attenuati), che si replicano poco senza causare la malattia. Inducono una risposta forte e duratura, anticorpi e linfociti T, spesso con una o due dosi. Esempi: morbillo-parotite-rosolia (MPR), varicella, rotavirus, febbre gialla, BCG (tubercolosi), tifo orale.",
+  "universita": "L'attenuazione si ottiene con passaggi in colture cellulari o in ospiti diversi (es. a basse temperature), che accumulano mutazioni. La replicazione dentro le cellule fa presentare l'antigene anche su MHC di classe I (risposta CD8⁺). Rischio teorico di ritorno alla virulenza (polio orale di Sabin: casi di polio da vaccino, per questo in Italia si usa solo il vaccino inattivato).",
+  "clinica": "Controindicati in gravidanza e nelle immunodeficienze gravi (comprese alte dosi di cortisonici, chemioterapia, farmaci biologici; nell'HIV solo se CD4 adeguati). Se non si somministrano lo stesso giorno, tra due vaccini vivi parenterali servono almeno 4 settimane. Le immunoglobuline e le trasfusioni recenti possono ridurne l'efficacia."
+ },
+ "vaccini inattivati": {
+  "tipo": "molecola",
+  "base": "Vaccini fatti con il microbo ucciso: non può fare ammalare, ma servono più dosi.",
+  "superiore": "Vaccini che contengono microbi interi uccisi con calore o sostanze chimiche (formaldeide). Non si replicano, quindi sono sicuri anche negli immunodepressi, ma inducono una risposta soprattutto anticorpale, che richiede più dosi e richiami. Esempi: poliomielite (Salk, IPV), epatite A, rabbia, encefalite da zecche, alcuni vaccini influenzali.",
+  "universita": "L'antigene resta fuori dalle cellule: viene presentato soprattutto su MHC di classe II (risposta CD4⁺ e anticorpi), con poca risposta CD8⁺. Spesso contengono adiuvanti (sali di alluminio). La risposta cala nel tempo più rapidamente rispetto ai vivi attenuati.",
+  "clinica": "Si possono dare anche in gravidanza e nelle immunodeficienze (con risposta però ridotta). La rabbia si previene anche dopo il morso (profilassi post-esposizione con vaccino ± immunoglobuline), grazie alla lunga incubazione."
+ },
+ "vaccini a subunità e coniugati": {
+  "tipo": "molecola",
+  "base": "Vaccini fatti solo con un pezzetto del microbo, quello che serve per riconoscerlo.",
+  "superiore": "Vaccini che contengono solo alcuni antigeni purificati o prodotti con tecniche di DNA ricombinante: proteine (epatite B, HBsAg; pertosse acellulare), particelle simili al virus (HPV), polisaccaridi della capsula. Nei coniugati il polisaccaride è legato a una proteina portatrice (Haemophilus influenzae b, pneumococco, meningococco).",
+  "universita": "I polisaccaridi da soli attivano i linfociti B senza aiuto dei T (antigeni T-indipendenti): risposta debole, IgM, poca memoria, quasi nulla sotto i 2 anni. Legandoli a una proteina (tossoide tetanico o difterico, CRM197) i linfociti B che riconoscono il polisaccaride presentano i peptidi della proteina ai Tfh: si ottengono IgG, memoria e risposta anche nei lattanti. Riducono anche il portatore nasofaringeo (immunità di gregge).",
+  "clinica": "Vaccini coniugati contro pneumococco, meningococco ACWY e Haemophilus b nel primo anno di vita; meningococco B con proteine ricombinanti. Vaccino HPV (9-valente) per ragazze e ragazzi dagli 11-12 anni: previene il carcinoma della cervice e altri tumori. Asplenici e immunodepressi hanno indicazioni specifiche."
+ },
+ "anatossine (tossoidi)": {
+  "tipo": "molecola",
+  "base": "Vaccini fatti con il «veleno» di un batterio reso innocuo: il corpo impara a neutralizzarlo.",
+  "superiore": "Tossine batteriche inattivate (di solito con formaldeide) che non sono più tossiche ma restano immunogene. Inducono anticorpi neutralizzanti contro la tossina, la vera causa della malattia. Esempi: tossoide tetanico e difterico.",
+  "universita": "Proteggono contro la tossina, non contro l'infezione o il portatore: per questo il tetano (spore nell'ambiente) non dà immunità di gregge. Adsorbite su sali di alluminio. Servono più dosi e richiami ogni 10 anni. La malattia naturale (tetano) non lascia immunità, perché la dose di tossina che uccide è troppo piccola per immunizzare.",
+  "clinica": "Chi è guarito dal tetano va comunque vaccinato. In caso di ferita a rischio in un non vaccinato si danno vaccino e immunoglobuline antitetaniche (immunizzazione attiva e passiva insieme, in sedi diverse). Il tossoide difterico è contenuto nell'esavalente e nei richiami dT/dTpa."
+ },
+ "vaccini a mRNA": {
+  "tipo": "molecola",
+  "base": "Vaccini che portano alle cellule la «ricetta» per costruire un pezzetto innocuo del virus, così il corpo impara a riconoscerlo.",
+  "superiore": "Vaccini che contengono un RNA messaggero che codifica l'antigene (es. la proteina spike di SARS-CoV-2), racchiuso in nanoparticelle lipidiche. Le nostre cellule lo leggono con i ribosomi e producono l'antigene, che attiva anticorpi e linfociti T. L'mRNA non entra nel nucleo e non modifica il DNA; viene degradato in pochi giorni.",
+  "universita": "L'mRNA contiene nucleosidi modificati (N1-metilpseudouridina) che riducono il riconoscimento da parte dei sensori innati (TLR7/8) e ne aumentano la traduzione; le nanoparticelle lipidiche lo proteggono, ne favoriscono l'ingresso e funzionano anche da adiuvante. L'antigene prodotto dentro le cellule viene presentato sia su MHC I sia su MHC II. La sequenza si può aggiornare rapidamente (varianti).",
+  "clinica": "Vaccini a mRNA contro COVID-19 (dal 2020) e contro il virus respiratorio sinciziale; in studio contro influenza, citomegalovirus e tumori (vaccini personalizzati con neoantigeni). Rara miocardite, soprattutto in giovani maschi dopo la seconda dose, in genere lieve."
+ },
+ "immunizzazione passiva": {
+  "tipo": "struttura",
+  "base": "Ricevere anticorpi già pronti, da un'altra persona o da un farmaco: proteggono subito, ma per poco tempo.",
+  "superiore": "Protezione ottenuta trasferendo anticorpi già formati invece di farli produrre al corpo. Naturale: IgG della madre attraverso la placenta e IgA nel latte. Artificiale: immunoglobuline umane specifiche o anticorpi monoclonali. Protegge subito ma per settimane o mesi, senza memoria.",
+  "universita": "Le IgG trasferite hanno un'emivita di circa 3 settimane (più lunga negli anticorpi monoclonali modificati nel frammento Fc, es. nirsevimab: protezione per una stagione). Le immunoglobuline di origine animale (sieri) possono causare malattia da siero.",
+  "clinica": "Esempi: immunoglobuline anti-epatite B al neonato di madre HBsAg-positiva (insieme al vaccino), antitetaniche, antirabbiche, anti-varicella zoster negli esposti a rischio; nirsevimab contro il virus respiratorio sinciziale nei neonati; antitossina botulinica e difterica; antiveleni. Le immunoglobuline possono ridurre l'efficacia dei vaccini vivi dati nei mesi successivi."
+ },
+ "virione": {
+  "tipo": "struttura",
+  "base": "Un virus completo, pronto a entrare in una cellula: è come un pacchetto con dentro le istruzioni.",
+  "superiore": "Particella virale completa e infettante, fuori dalla cellula. È formata da un genoma (DNA o RNA, mai entrambi) chiuso in un capside proteico; alcuni virus hanno anche un envelope, una membrana lipidica presa dalla cellula con proteine virali inserite.",
+  "universita": "Dimensioni da circa 20 nm (parvovirus) a oltre 300 nm (poxvirus). Capside a simmetria icosaedrica o elicoidale (nucleocapside). I virus nudi resistono a essiccamento, acidi e detergenti (trasmissione fecale-orale: norovirus, epatite A, poliovirus); quelli con envelope sono più fragili e si trasmettono per goccioline, sangue, rapporti sessuali (influenza, HIV, herpes).",
+  "clinica": "La resistenza dei virus nudi ai disinfettanti alcolici spiega perché per norovirus e Clostridioides difficile (spore) si raccomanda il lavaggio con acqua e sapone e la disinfezione con ipoclorito."
+ },
+ "cellula ospite": {
+  "tipo": "struttura",
+  "base": "La cellula in cui entra il virus: il virus la usa come una fabbrica per fare copie di sé.",
+  "superiore": "Cellula che un virus infetta e di cui usa ribosomi, energia (ATP) e mattoni (nucleotidi, amminoacidi) per replicarsi. Un virus può infettare solo cellule che hanno il suo recettore e i fattori necessari (cellula permissiva).",
+  "universita": "L'infezione può essere produttiva con morte della cellula (effetto citopatico: lisi, sincizi, corpi inclusi), persistente con produzione continua, latente (genoma silente, es. herpesvirus nei gangli) o trasformante (oncogenesi: HPV, EBV, HBV, HTLV-1). I virus bloccano spesso la sintesi delle proteine cellulari e le difese (interferone, apoptosi).",
+  "clinica": "L'effetto citopatico in coltura e i corpi inclusi nelle biopsie aiutano la diagnosi (es. inclusioni «a occhio di civetta» del citomegalovirus, corpi di Negri della rabbia)."
+ },
+ "proteine di attacco virali": {
+  "tipo": "molecola",
+  "base": "Le «chiavi» del virus che entrano solo in certe «serrature» delle nostre cellule.",
+  "superiore": "Proteine della superficie del virus (sul capside o sull'envelope) che si legano a recettori specifici della cellula. Decidono quali specie e quali tessuti il virus può infettare (tropismo).",
+  "universita": "Esempi: gp120 dell'HIV (lega CD4 e poi il corecettore CCR5 o CXCR4); emoagglutinina dell'influenza (acido sialico; le varianti aviarie preferiscono il legame α2,3, quelle umane α2,6); spike di SARS-CoV-2 (ACE2, attivata dalla proteasi TMPRSS2); gp350 di EBV (CD21); proteina G della rabbia (recettore nicotinico dell'acetilcolina). Sono il bersaglio principale degli anticorpi neutralizzanti.",
+  "clinica": "Le proteine di attacco sono l'antigene di molti vaccini (spike nei vaccini COVID-19, emoagglutinina nei vaccini influenzali). Il cambiamento antigenico dell'emoagglutinina (drift e shift) obbliga ad aggiornare ogni anno il vaccino antinfluenzale."
+ },
+ "recettore cellulare": {
+  "tipo": "molecola",
+  "base": "La «serratura» sulla superficie della cellula a cui si attacca il virus.",
+  "superiore": "Molecola della superficie della cellula (proteina, zucchero o lipide) che il virus usa per attaccarsi ed entrare. Normalmente ha un'altra funzione per la cellula; il virus la «sfrutta».",
+  "universita": "Esempi: CD4 + CCR5/CXCR4 (HIV), acido sialico (influenza), ACE2 (SARS-CoV-2), ICAM-1 (gran parte dei rhinovirus), CD21/CR2 (EBV), recettore nicotinico dell'acetilcolina (rabbia), antigene P dei globuli rossi (parvovirus B19), CD46 (morbillo, ceppi vaccinali) e nectina-4. Spesso servono un recettore primario e un corecettore.",
+  "clinica": "Chi ha due copie della delezione CCR5-Δ32 è quasi resistente all'HIV con tropismo R5 (base dei due casi di guarigione dopo trapianto di midollo). Chi non ha l'antigene P è resistente al parvovirus B19, che nelle persone con anemia emolitica cronica causa crisi aplastica."
+ },
+ "proteine di fusione virali": {
+  "tipo": "molecola",
+  "base": "Le proteine che fanno «sciogliere» la membrana del virus in quella della cellula, come due bolle di sapone che diventano una.",
+  "superiore": "Proteine dell'envelope che fondono la membrana del virus con la membrana della cellula (sulla superficie o dentro l'endosoma), permettendo al genoma di entrare nel citoplasma.",
+  "universita": "Cambiano forma dopo l'attivazione ed espongono un peptide di fusione che si infila nella membrana bersaglio. Alcune agiscono a pH neutro sulla membrana (gp41 dell'HIV, proteina F del virus respiratorio sinciziale e del morbillo, che formano anche sincizi); altre si attivano al pH acido dell'endosoma (subunità HA2 dell'emoagglutinina influenzale). I virus nudi entrano invece formando pori o rompendo l'endosoma.",
+  "clinica": "Enfuvirtide blocca la gp41 dell'HIV. Nirsevimab e palivizumab (contro la proteina F del virus respiratorio sinciziale) proteggono i neonati; i vaccini anti-RSV usano la proteina F stabilizzata nella forma prima della fusione."
+ },
+ "genoma virale": {
+  "tipo": "molecola",
+  "base": "Le istruzioni del virus, scritte in DNA o in RNA, per costruire nuovi virus.",
+  "superiore": "Acido nucleico del virus: può essere DNA o RNA, a filamento singolo o doppio, lineare o circolare, intero o segmentato. Contiene i geni per le proteine del virione e per gli enzimi di replicazione.",
+  "universita": "Classificazione di Baltimore (7 classi) in base a come si ottiene l'mRNA: I DNA a doppio filamento (herpes, adenovirus, poxvirus); II DNA a filamento singolo (parvovirus); III RNA a doppio filamento (rotavirus); IV RNA a filamento singolo positivo (polio, epatite C, coronavirus); V RNA a filamento singolo negativo (influenza, morbillo, rabbia); VI RNA positivo con trascrittasi inversa (retrovirus, HIV); VII DNA a doppio filamento con trascrittasi inversa (epatite B). Il genoma dei virus a RNA positivo è da solo infettante.",
+  "clinica": "La ricerca del genoma (PCR, RT-PCR) è oggi il metodo principale di diagnosi e di monitoraggio (carica virale di HIV, HBV, HCV, CMV). I genomi segmentati (influenza) permettono il riassortimento tra ceppi: origine delle pandemie (shift antigenico)."
+ },
+ "polimerasi virale": {
+  "tipo": "enzima",
+  "base": "La «fotocopiatrice» del virus: copia le istruzioni del virus tante volte.",
+  "superiore": "Enzima del virus che copia il genoma virale o produce l'mRNA virale. Può essere una RNA polimerasi RNA-dipendente (virus a RNA), una DNA polimerasi (molti virus a DNA come gli herpesvirus) o una trascrittasi inversa (retrovirus, epatite B).",
+  "universita": "Le RNA polimerasi RNA-dipendenti non hanno correzione di bozze: circa 1 errore ogni 10⁴-10⁵ basi, quindi in ogni ciclo nascono molti mutanti (quasispecie). Eccezione parziale: i coronavirus hanno un'esonucleasi correttrice (nsp14). I virus a RNA negativo portano la polimerasi nel virione, perché le cellule non sanno leggere l'RNA negativo. Le cellule non hanno RNA polimerasi RNA-dipendenti: bersaglio selettivo.",
+  "clinica": "Farmaci contro le polimerasi virali: sofosbuvir (NS5B dell'epatite C), remdesivir (SARS-CoV-2), aciclovir e ganciclovir (DNA polimerasi degli herpesvirus), foscarnet, analoghi nucleosidici contro HBV e HIV (tenofovir, entecavir). L'alta frequenza di errori spiega la rapida comparsa di resistenze e la necessità di terapie combinate."
+ },
+ "mRNA virale": {
+  "tipo": "molecola",
+  "base": "La copia delle istruzioni del virus che la cellula legge per costruire le parti del virus.",
+  "superiore": "RNA messaggero che porta le istruzioni per le proteine virali e viene letto dai ribosomi della cellula. Nei virus a RNA positivo coincide con il genoma; negli altri è prodotto da una polimerasi virale o dalla RNA polimerasi II della cellula.",
+  "universita": "I virus usano trucchi per farsi tradurre al posto degli mRNA cellulari: il virus influenzale «ruba» il cappuccio agli mRNA della cellula (cap-snatching, con l'endonucleasi PA); i picornavirus usano un sito interno di ingresso del ribosoma (IRES) e tagliano il fattore eIF4G, bloccando la traduzione cellulare.",
+  "clinica": "Baloxavir inibisce l'endonucleasi del cap-snatching dell'influenza (dose singola). I vaccini a mRNA imitano un mRNA virale per far produrre l'antigene alle cellule."
+ },
+ "proteine virali": {
+  "tipo": "molecola",
+  "base": "Tutti i pezzi che il virus fa costruire alla cellula: mattoni del nuovo virus e attrezzi per copiarsi.",
+  "superiore": "Proteine prodotte dai ribosomi della cellula a partire dall'mRNA virale. Si distinguono in non strutturali (enzimi di replicazione, proteasi, proteine che bloccano le difese della cellula) e strutturali (capside, envelope, matrice), che formano il nuovo virione.",
+  "universita": "Spesso c'è un programma temporale: geni precoci (immediati e precoci: regolazione e replicazione) e tardivi (strutturali), come negli herpesvirus. Molti virus a RNA positivo producono una lunga poliproteina tagliata da proteasi virali (HIV: Gag-Pol tagliata dalla proteasi; epatite C: proteasi NS3/4A; SARS-CoV-2: proteasi Mpro). Le glicoproteine dell'envelope maturano nel reticolo endoplasmatico e nel Golgi.",
+  "clinica": "Gli inibitori delle proteasi virali sono farmaci fondamentali: darunavir (HIV), glecaprevir e grazoprevir (epatite C), nirmatrelvir (COVID-19, associato al ritonavir che rallenta il suo metabolismo tramite CYP3A4: attenzione alle interazioni)."
+ },
+ "genomi virali replicati": {
+  "tipo": "molecola",
+  "base": "Le tante copie delle istruzioni del virus, pronte per essere messe nei nuovi virus.",
+  "superiore": "Nuove copie del genoma virale prodotte dalla polimerasi virale (o cellulare) durante il ciclo. Vengono poi chiuse nei capsidi dei nuovi virioni.",
+  "universita": "Sede: nucleo per la maggior parte dei virus a DNA (eccezione: poxvirus nel citoplasma) e per influenza e retrovirus (integrazione); citoplasma per quasi tutti i virus a RNA, spesso in «fabbriche» di membrane ricavate dal reticolo endoplasmatico. I virus a RNA positivo passano attraverso un intermedio negativo. Molte copie sono difettive.",
+  "clinica": "La quantità di genomi nel sangue (carica virale) misura la replicazione: guida la terapia dell'HIV (obiettivo: carica non rilevabile, che non si trasmette per via sessuale) e delle epatiti B e C."
+ },
+ "proteine del capside": {
+  "tipo": "molecola",
+  "base": "I «mattoncini» che formano il guscio del virus attorno alle sue istruzioni.",
+  "superiore": "Proteine strutturali che si uniscono a formare il capside, il guscio che protegge il genoma virale. L'insieme di capside e genoma si chiama nucleocapside.",
+  "universita": "Formate da poche proteine ripetute molte volte (economia genetica), si autoassemblano. Simmetria icosaedrica (20 facce triangolari, es. adenovirus, poliovirus) o elicoidale (proteine attorno all'RNA, es. influenza, rabbia). Un segnale di impacchettamento sul genoma fa entrare il genoma giusto. In alcuni virus (HIV) il capside matura solo dopo l'uscita, quando la proteasi taglia Gag.",
+  "clinica": "Le particelle simili al virus (VLP), fatte solo di proteine del capside senza genoma, sono la base dei vaccini contro HPV ed epatite B (HBsAg forma particelle). Lenacapavir, inibitore del capside dell'HIV, permette una somministrazione ogni 6 mesi."
+ },
+ "nuovi virioni": {
+  "tipo": "struttura",
+  "base": "I nuovi virus appena costruiti, pronti a uscire dalla cellula per infettarne altre.",
+  "superiore": "Particelle virali appena assemblate dentro la cellula, prima o durante l'uscita. Diventano infettanti dopo la maturazione.",
+  "universita": "In alcuni virus la maturazione avviene durante o dopo l'uscita: nell'HIV la proteasi taglia le poliproteine Gag e Gag-Pol nel virione già uscito, senza questo taglio il virione non è infettante. La resa (burst size) varia da decine a molte migliaia per cellula. Molte particelle prodotte non sono infettanti (rapporto particelle/unità infettanti spesso alto).",
+  "clinica": "Gli inibitori della proteasi dell'HIV agiscono proprio qui: i virioni escono ma restano immaturi e non infettanti."
+ },
+ "membrana plasmatica": {
+  "tipo": "struttura",
+  "base": "La «pelle» sottile che avvolge ogni cellula e decide cosa entra e cosa esce.",
+  "superiore": "Membrana che delimita la cellula: doppio strato di fosfolipidi con colesterolo, proteine e zuccheri (glicocalice). È selettivamente permeabile e contiene recettori, canali e trasportatori.",
+  "universita": "Modello a mosaico fluido; spessore circa 7-10 nm. I virus con envelope gemmano da membrane della cellula (plasmatica: HIV, influenza; nucleare: herpesvirus; reticolo endoplasmatico e Golgi: coronavirus, flavivirus) dopo che le loro glicoproteine vi si sono inserite; la proteina di matrice fa da ponte tra envelope e nucleocapside. La gemmazione dell'HIV usa il macchinario ESCRT della cellula.",
+  "clinica": "Il colesterolo delle membrane fungine (ergosterolo) è il bersaglio di amfotericina B e azoli; la membrana esterna dei Gram-negativi quello della colistina. Neuraminidasi dell'influenza e inibitori (oseltamivir) agiscono sul distacco del virus dalla membrana."
+ },
+ "lisi batterica": {
+  "tipo": "struttura",
+  "base": "Il batterio scoppia e muore, liberando tutto quello che c'è dentro.",
+  "superiore": "Rottura della parete e della membrana del batterio con morte della cellula e liberazione del contenuto. Nel ciclo litico dei batteriofagi libera i nuovi fagi; può essere causata anche da antibiotici, lisozima o complemento.",
+  "universita": "I fagi usano in genere due proteine: una olina, che buca la membrana citoplasmatica al momento giusto, e una endolisina, che attraverso il buco raggiunge e degrada il peptidoglicano. La lisi di molti Gram-negativi libera endotossina (LPS).",
+  "clinica": "La reazione di Jarisch-Herxheimer (febbre, brividi, ipotensione nelle prime ore di terapia della sifilide o della leptospirosi) è dovuta alla lisi rapida dei batteri. Le endolisine fagiche si studiano come nuovi antibatterici."
+ },
+ "batteriofago": {
+  "tipo": "struttura",
+  "base": "Un virus che attacca solo i batteri, come un piccolo «mangiabatteri».",
+  "superiore": "Virus che infetta i batteri (fago). Molti hanno una testa icosaedrica con il DNA e una coda con cui si attaccano alla parete e iniettano il genoma. Possono fare il ciclo litico (fagi virulenti) o anche il ciclo lisogeno (fagi temperati).",
+  "universita": "Esempi classici: T4 (virulento, Escherichia coli) e lambda (temperato). Trasferiscono geni tra batteri (trasduzione generalizzata o specializzata). Sono gli organismi biologici più numerosi sulla Terra. Molti batteri si difendono dai fagi con il sistema CRISPR-Cas, da cui deriva la tecnica di modifica del genoma.",
+  "clinica": "Tossine codificate da fagi (conversione lisogenica): tossina difterica, tossina colerica, tossine Shiga dell'Escherichia coli enteroemorragica, tossine eritrogeniche dello streptococco (scarlattina), alcune tossine botuliniche. La terapia con fagi si usa in casi selezionati di infezioni da batteri multiresistenti."
+ },
+ "profago": {
+  "tipo": "struttura",
+  "base": "Il virus del batterio che si nasconde dentro il DNA del batterio e aspetta, senza fare danni.",
+  "superiore": "DNA di un batteriofago temperato integrato nel cromosoma del batterio (o mantenuto come plasmide). Viene copiato insieme al DNA del batterio a ogni divisione, senza produrre nuovi fagi: il batterio si dice lisogeno.",
+  "universita": "Nel fago lambda l'integrasi inserisce il DNA in un sito specifico (attB) per ricombinazione sito-specifica; il repressore cI blocca i geni litici e rende il batterio immune a nuove infezioni dello stesso fago. Un danno al DNA attiva la risposta SOS: RecA favorisce il taglio di cI e il profago si stacca (induzione) e avvia il ciclo litico.",
+  "clinica": "La conversione lisogenica rende patogeni batteri altrimenti innocui: Corynebacterium diphtheriae produce la tossina solo se porta il fago β. Alcuni antibiotici (es. chinoloni) inducono i profagi delle tossine Shiga: per questo sono sconsigliati nella diarrea da Escherichia coli enteroemorragica (rischio di sindrome emolitico-uremica)."
+ },
+ "integrasi": {
+  "tipo": "enzima",
+  "base": "L'enzima che «incolla» le istruzioni del virus dentro il DNA della cellula.",
+  "superiore": "Enzima virale che inserisce il DNA del virus nel DNA della cellula ospite. Si trova nei retrovirus (HIV), dove forma il provirus, e nei batteriofagi temperati, dove forma il profago.",
+  "universita": "Nell'HIV l'integrasi taglia due nucleotidi dalle estremità 3' del DNA virale (processamento 3'), entra nel nucleo con il complesso di preintegrazione e trasferisce il DNA nel cromosoma (trasferimento del filamento), di preferenza in geni attivi; le cellule riparano gli spazi. Richiede Mg²⁺. Nel fago lambda è una ricombinasi sito-specifica (tirosina ricombinasi).",
+  "clinica": "Inibitori dell'integrasi (INSTI: dolutegravir, bictegravir, raltegravir, cabotegravir) sono oggi alla base delle terapie di prima linea per l'HIV; il cabotegravir esiste anche in iniezione a lunga durata (terapia e profilassi). Possibili aumento di peso e interazioni con antiacidi contenenti cationi (Mg²⁺, Al³⁺, Ca²⁺)."
+ },
+ "trascrittasi inversa": {
+  "tipo": "enzima",
+  "base": "L'enzima speciale dei retrovirus che trasforma le istruzioni scritte in RNA in istruzioni scritte in DNA.",
+  "superiore": "DNA polimerasi RNA-dipendente: copia un RNA in DNA, al contrario del normale flusso dell'informazione genetica. È tipica dei retrovirus (HIV) e del virus dell'epatite B; nelle nostre cellule una trascrittasi inversa è la telomerasi.",
+  "universita": "Nell'HIV ha tre attività: sintesi di DNA su stampo di RNA, degradazione dell'RNA dell'ibrido (RNasi H) e sintesi di DNA su stampo di DNA; il risultato è un DNA a doppio filamento con le LTR alle estremità. Usa come innesco un tRNA della cellula. Non corregge gli errori (circa 1 errore per genoma per ciclo): l'HIV muta molto. Usata in laboratorio per la RT-PCR.",
+  "clinica": "Inibitori: analoghi nucleosidici e nucleotidici (NRTI: tenofovir, emtricitabina, lamivudina, abacavir; terminano la catena) e non nucleosidici (NNRTI: efavirenz, rilpivirina, doravirina; si legano a una tasca allosterica). Tenofovir, entecavir e lamivudina si usano anche contro l'epatite B. La mutazione M184V riduce la sensibilità a lamivudina ed emtricitabina."
+ },
+ "provirus": {
+  "tipo": "molecola",
+  "base": "Le istruzioni del virus HIV nascoste dentro il DNA della cellula: restano lì per tutta la vita della cellula.",
+  "superiore": "DNA di un retrovirus integrato nel genoma della cellula ospite. Si comporta come un gene della cellula: viene trascritto dalla RNA polimerasi II e trasmesso alle cellule figlie a ogni divisione.",
+  "universita": "Le LTR alle due estremità contengono promotore e potenziatori; nell'HIV la proteina Tat aumenta molto la trascrizione e Rev fa uscire dal nucleo gli RNA non tagliati. Nei linfociti T CD4⁺ della memoria a riposo il provirus può restare silente per anni (serbatoio latente), invisibile al sistema immunitario e ai farmaci. Circa l'8% del genoma umano è fatto da antichi retrovirus endogeni.",
+  "clinica": "Il serbatoio latente spiega perché la terapia antiretrovirale controlla ma non elimina l'HIV: se si interrompe, la carica virale risale. Le strategie di guarigione cercano di risvegliare o bloccare per sempre il provirus. HTLV-1, altro retrovirus, causa la leucemia/linfoma a cellule T dell'adulto."
+ },
+ "HIV e antiretrovirali": {
+  "tipo": "struttura",
+  "base": "Un virus che attacca i globuli bianchi capi delle difese; le medicine moderne lo tengono sotto controllo per tutta la vita.",
+  "superiore": "Il virus dell'immunodeficienza umana (HIV-1 e HIV-2) è un retrovirus (genere Lentivirus) che infetta soprattutto i linfociti T CD4⁺ e i macrofagi. Senza terapia i CD4⁺ calano negli anni fino all'AIDS, con infezioni opportunistiche e tumori. Gli antiretrovirali bloccano diverse tappe del ciclo del virus e si usano sempre in combinazione.",
+  "universita": "Trasmissione sessuale, con sangue e dalla madre al figlio. Ciclo: gp120 lega CD4 e CCR5/CXCR4 → fusione (gp41) → trascrittasi inversa → integrasi → provirus → trascrizione (Tat, Rev) → assemblaggio e gemmazione → maturazione (proteasi). Classi di farmaci: NRTI, NNRTI, inibitori dell'integrasi (INSTI), inibitori della proteasi (potenziati con ritonavir o cobicistat), inibitori dell'ingresso (maraviroc anti-CCR5, enfuvirtide anti-gp41, fostemsavir anti-gp120), inibitori del capside (lenacapavir). Regime tipico: 2 NRTI + 1 INSTI, oppure 1 NRTI + dolutegravir.",
+  "clinica": "AIDS: CD4⁺ < 200/µL o malattia indicativa (polmonite da Pneumocystis jirovecii, toxoplasmosi cerebrale, sarcoma di Kaposi, candidosi esofagea, CMV). La terapia si inizia subito dopo la diagnosi; con carica non rilevabile il virus non si trasmette per via sessuale (U = U). Profilassi pre-esposizione (PrEP con tenofovir/emtricitabina) e post-esposizione (PEP entro 72 ore). Test HLA-B*57:01 prima dell'abacavir. Profilassi con cotrimossazolo se CD4⁺ < 200/µL."
+ },
+ "aciclovir": {
+  "tipo": "molecola",
+  "base": "Una medicina contro i virus dell'herpes, come quello della «febbre» sul labbro e del fuoco di Sant'Antonio.",
+  "superiore": "Antivirale analogo della guanosina, attivo contro herpes simplex 1 e 2 e virus varicella-zoster. Blocca la DNA polimerasi del virus solo nelle cellule infettate. Il valaciclovir è il suo profarmaco orale, meglio assorbito.",
+  "universita": "Viene fosforilato prima dalla timidina chinasi virale (per questo agisce solo nelle cellule infettate) e poi da chinasi cellulari ad aciclovir trifosfato, che inibisce la DNA polimerasi virale e termina la catena (manca il gruppo 3'-OH). Non elimina il virus latente nei gangli. Resistenza soprattutto per mutazioni della timidina chinasi virale (negli immunodepressi): si usa il foscarnet, che non richiede attivazione.",
+  "clinica": "Indicazioni: herpes labiale e genitale, varicella e herpes zoster (soprattutto entro 72 ore dall'esordio del rash), encefalite erpetica (aciclovir endovena da iniziare subito al sospetto). Ad alte dosi endovena può precipitare nei tubuli renali: idratare e adattare la dose alla funzione renale. Per il citomegalovirus si usano ganciclovir e valganciclovir.",
+  "smiles": "Nc1nc2c(ncn2COCCO)c(=O)[nH]1"
+ },
+ "oseltamivir": {
+  "tipo": "molecola",
+  "base": "Una medicina contro l'influenza: impedisce ai nuovi virus di staccarsi dalle cellule e diffondersi.",
+  "superiore": "Antivirale inibitore della neuraminidasi, attivo contro i virus influenzali A e B. Impedisce ai nuovi virioni di staccarsi dalla cellula infettata, così il virus si diffonde meno. Si prende per bocca; lo zanamivir ha lo stesso meccanismo ma si inala.",
+  "universita": "La neuraminidasi taglia l'acido sialico dalla superficie della cellula e dei virioni, a cui l'emoagglutinina resterebbe attaccata; inibendola i virioni restano aggregati sulla membrana. Profarmaco (oseltamivir fosfato) attivato dalle esterasi del fegato ad oseltamivir carbossilato. Funziona meglio se iniziato entro 48 ore dai sintomi; accorcia la malattia di circa un giorno nelle forme lievi. Altri antinfluenzali: baloxavir (endonucleasi), amantadina (canale M2, oggi inutile per resistenze diffuse).",
+  "clinica": "Raccomandato nei pazienti ricoverati con influenza e in quelli a rischio di complicanze (anziani, gravidanza, malattie croniche, immunodepressi), anche oltre le 48 ore; usato anche come profilassi dopo esposizione. Effetti avversi: nausea e vomito. Non sostituisce la vaccinazione antinfluenzale annuale."
+ },
+ "cellula batterica": {
+  "tipo": "struttura",
+  "base": "Un batterio: un essere vivente piccolissimo fatto di una sola cellula, senza nucleo.",
+  "superiore": "Cellula procariotica: non ha nucleo né organuli con membrana. Ha un cromosoma circolare nel citoplasma (nucleoide), spesso plasmidi, ribosomi 70S, una membrana citoplasmatica e quasi sempre una parete di peptidoglicano. Può avere capsula, flagelli e pili.",
+  "universita": "Dimensioni di circa 1-5 µm. La colorazione di Gram distingue i Gram-positivi (parete spessa di peptidoglicano con acidi teicoici; colore viola) dai Gram-negativi (parete sottile e membrana esterna con lipopolisaccaride e porine; colore rosa). Micobatteri: parete ricca di acidi micolici (alcol-acido resistenti, colorazione di Ziehl-Neelsen). Forme: cocchi, bacilli, spirilli.",
+  "clinica": "La colorazione di Gram è il primo esame rapido su un campione (es. liquor nella meningite) e orienta la terapia antibiotica empirica, perché le differenze di parete spiegano le diverse sensibilità agli antibiotici."
+ },
+ "DNA polimerasi III": {
+  "tipo": "enzima",
+  "base": "La «fotocopiatrice» principale dei batteri: copia tutto il DNA prima che il batterio si divida.",
+  "superiore": "Principale DNA polimerasi della replicazione nei batteri (es. Escherichia coli): allunga i nuovi filamenti di DNA in direzione 5'→3' e corregge i propri errori. Lavora insieme a elicasi, primasi, DNA girasi e DNA polimerasi I.",
+  "universita": "Oloenzima con nucleo catalitico (α polimerasi, ε esonucleasi 3'→5' di correzione, θ), pinza scorrevole β che la tiene sul DNA (alta processività) e caricatore della pinza. La replicazione parte da oriC, riconosciuta da DnaA; l'elicasi DnaB apre la doppia elica, la primasi DnaG fa gli inneschi di RNA, la DNA polimerasi I li rimuove e la ligasi unisce i frammenti di Okazaki. Due forche procedono in direzioni opposte fino alla regione ter.",
+  "clinica": "Le DNA polimerasi batteriche non sono bersaglio di antibiotici in uso, ma lo sono le topoisomerasi che lavorano con loro (DNA girasi e topoisomerasi IV, colpite dai fluorochinoloni)."
+ },
+ "cromosoma batterico duplicato": {
+  "tipo": "molecola",
+  "base": "Le istruzioni del batterio copiate due volte, una per ogni batterio figlio.",
+  "superiore": "Le due copie del cromosoma circolare del batterio dopo la replicazione. Si separano verso le due metà della cellula prima della divisione, così ogni cellula figlia riceve un cromosoma completo.",
+  "universita": "Replicazione semiconservativa e bidirezionale da oriC fino alla regione ter. La segregazione è attiva (sistemi ParABS, condensina MukBEF) e legata alla crescita. Le due copie unite possono restare concatenate: la topoisomerasi IV le separa. Nei batteri a crescita rapida una nuova replicazione può iniziare prima della fine della precedente (replicazione multiforcella), così il tempo di generazione può essere più breve del tempo di replicazione.",
+  "clinica": ""
+ },
+ "cellula allungata": {
+  "tipo": "struttura",
+  "base": "Il batterio cresce e diventa più lungo, pronto per dividersi in due.",
+  "superiore": "Fase della scissione binaria in cui il batterio raddoppia componenti e dimensioni, sintetizza nuova parete e membrana e separa le due copie del cromosoma verso le due metà.",
+  "universita": "Nei bacilli l'allungamento è guidato dalla proteina MreB (simile all'actina) che dirige le PBP e le altre sintetasi del peptidoglicano lungo la parete laterale; poi la sintesi si concentra al centro con FtsZ. I cocchi crescono soprattutto al setto. Sotto antibiotici beta-lattamici alcune specie formano filamenti (blocco della divisione) o sferoplasti fragili.",
+  "clinica": ""
+ },
+ "proteine leganti la penicillina (PBP)": {
+  "tipo": "enzima",
+  "base": "Le «muratrici» del batterio che costruiscono la sua parete; la penicillina le blocca.",
+  "superiore": "Enzimi della membrana batterica che completano la sintesi del peptidoglicano della parete, soprattutto collegando tra loro le catene (transpeptidazione). Si chiamano così perché sono il bersaglio della penicillina e degli altri beta-lattamici.",
+  "universita": "Transpeptidasi (e in alcuni casi transglicosilasi e carbossipeptidasi): legano il dipeptide terminale D-Ala-D-Ala di un peptide e lo uniscono al peptide di una catena vicina. I beta-lattamici imitano il D-Ala-D-Ala e acilano in modo stabile la serina del sito attivo: la parete si indebolisce, le autolisine continuano a lavorare e il batterio va in lisi (effetto battericida sulle cellule in crescita). Ogni specie ha più PBP con sensibilità diverse.",
+  "clinica": "Resistenza per PBP modificate: PBP2a (gene mecA) nell'MRSA; PBP a mosaico nel pneumococco resistente alla penicillina e nel gonococco. La ceftarolina lega anche la PBP2a ed è attiva contro l'MRSA."
+ },
+ "peptidoglicano": {
+  "tipo": "molecola",
+  "base": "La «rete» robusta che forma la parete dei batteri e impedisce che scoppino.",
+  "superiore": "Polimero che forma la parete batterica: lunghe catene di zuccheri alternati (N-acetilglucosammina e acido N-acetilmuramico) unite trasversalmente da brevi peptidi. Forma una rete che dà forma e resistenza alla pressione osmotica. Le cellule umane non lo hanno.",
+  "universita": "Sintesi in tre fasi: nel citoplasma (precursori UDP-NAM-pentapeptide; bersaglio della fosfomicina), sulla membrana (trasporto con il bactoprenolo; bersaglio della bacitracina) e fuori (polimerizzazione e transpeptidazione da parte delle PBP; bersaglio di vancomicina, che lega il D-Ala-D-Ala, e beta-lattamici). Spesso nei Gram-positivi (20-80 nm, molti strati), sottile nei Gram-negativi. Micoplasmi senza parete.",
+  "clinica": "Il peptidoglicano è riconosciuto da NOD1/NOD2 e TLR2 ed è demolito dal lisozima. I micoplasmi e le clamidie (quasi senza peptidoglicano) non rispondono ai beta-lattamici: si usano macrolidi o tetracicline."
+ },
+ "FtsZ": {
+  "tipo": "molecola",
+  "base": "Una proteina che forma un «anello» al centro del batterio e lo strozza per dividerlo in due.",
+  "superiore": "Proteina del citoscheletro batterico, parente della tubulina, che polimerizza formando un anello (anello Z) al centro della cellula. Organizza la divisione: richiama le proteine che costruiscono il setto (divisoma).",
+  "universita": "GTPasi: i suoi filamenti si muovono lungo l'anello (treadmilling) idrolizzando GTP e guidano dove viene depositato il nuovo peptidoglicano. La posizione centrale è decisa dal sistema Min (che oscilla tra i poli e impedisce l'anello alle estremità) e dall'occlusione da nucleoide. Si ancora alla membrana con FtsA e ZipA. Presente anche nei cloroplasti.",
+  "clinica": "FtsZ è studiata come bersaglio per nuovi antibiotici, perché è essenziale e diversa dalla tubulina umana."
+ },
+ "setto di divisione": {
+  "tipo": "struttura",
+  "base": "La «parete divisoria» che si forma al centro del batterio e lo taglia in due.",
+  "superiore": "Parete trasversale di membrana e peptidoglicano che si forma al centro della cellula durante la scissione binaria, dividendo il citoplasma in due compartimenti.",
+  "universita": "Costruita dal divisoma (FtsZ, FtsA, FtsW, FtsI = PBP3 e altre proteine). La sintesi del peptidoglicano del setto si accompagna all'invaginazione della membrana; nei Gram-negativi anche la membrana esterna si invagina insieme (costrizione). Nei cocchi Gram-positivi il piano del setto determina la disposizione: catene (streptococchi), grappoli (stafilococchi), coppie (diplococchi).",
+  "clinica": "La PBP3 è il bersaglio preferito di alcuni beta-lattamici (es. aztreonam, ceftazidime): i bacilli Gram-negativi esposti formano lunghi filamenti invece di dividersi."
+ },
+ "autolisine": {
+  "tipo": "enzima",
+  "base": "Le «forbici» del batterio che tagliano la sua parete nei punti giusti per farlo crescere e separare.",
+  "superiore": "Enzimi prodotti dal batterio che idrolizzano il proprio peptidoglicano. Servono a inserire nuovo materiale nella parete, a separare le cellule figlie dopo il setto e, quando sono fuori controllo, causano la lisi del batterio.",
+  "universita": "Comprendono amidasi (tagliano tra NAM e peptide), glicosidasi e endopeptidasi; sono strettamente regolate. Contribuiscono all'effetto battericida dei beta-lattamici: se la sintesi della parete si blocca e le autolisine continuano a tagliare, la cellula scoppia. Nella fase di morte contribuiscono alla lisi.",
+  "clinica": "Batteri «tolleranti» con autolisine poco attive (alcuni ceppi di streptococchi ed enterococchi) sono inibiti ma non uccisi dai beta-lattamici: nelle endocarditi da enterococco si associa un aminoglicoside (o ceftriaxone) per ottenere l'effetto battericida. L'autolisina LytA del pneumococco è responsabile della sua solubilità nella bile (test diagnostico)."
+ },
+ "due batteri figli": {
+  "tipo": "struttura",
+  "base": "I due batteri nuovi, uguali tra loro, che nascono quando un batterio si divide.",
+  "superiore": "Le due cellule identiche prodotte dalla scissione binaria: ognuna ha una copia del cromosoma e metà del citoplasma, e può a sua volta crescere e dividersi.",
+  "universita": "Sono geneticamente identiche (un clone), salvo rare mutazioni. In una popolazione, dopo n generazioni N = N₀ · 2ⁿ; il tempo di generazione g = t/n. Esempi: Escherichia coli circa 20 minuti in condizioni ideali; Staphylococcus aureus circa 30 minuti; Mycobacterium tuberculosis circa 15-20 ore; Mycobacterium leprae circa 2 settimane (non coltivabile in terreni artificiali).",
+  "clinica": "La crescita lenta del bacillo tubercolare spiega perché le colture richiedono settimane e la terapia dura almeno 6 mesi; quella rapida di stafilococchi e streptococchi spiega le infezioni che peggiorano in poche ore (sepsi, fascite)."
+ },
+ "terreno di coltura": {
+  "tipo": "struttura",
+  "base": "Il «cibo» preparato in laboratorio, liquido o in gelatina, dove i batteri vengono fatti crescere.",
+  "superiore": "Preparazione con nutrienti (fonti di carbonio, azoto, sali, vitamine) e acqua, liquida (brodo) o solidificata con agar, usata per far crescere i microrganismi. Esistono terreni generici, arricchiti, selettivi e differenziali.",
+  "universita": "Esempi: agar sangue (emolisi α, β, γ degli streptococchi), agar cioccolato (Haemophilus, Neisseria: fattori X e V), MacConkey (selettivo per Gram-negativi, differenziale per la fermentazione del lattosio), Löwenstein-Jensen (micobatteri), Sabouraud (funghi), Thayer-Martin (gonococco). In una coltura chiusa (batch) i nutrienti non vengono rinnovati: si ottiene la curva di crescita; in una coltura continua (chemostato) la fase esponenziale si mantiene.",
+  "clinica": "Emocolture (due set prima degli antibiotici), urinocoltura, coltura dell'espettorato e del liquor permettono di isolare il batterio e fare l'antibiogramma. Alcuni batteri non crescono nei terreni comuni (Treponema, Chlamydia, Mycobacterium leprae): diagnosi con sierologia o PCR."
+ },
+ "nutrienti": {
+  "tipo": "molecola",
+  "base": "Il cibo dei batteri: zuccheri, sali e altre sostanze che servono per crescere.",
+  "superiore": "Sostanze necessarie alla crescita: fonte di carbonio ed energia (es. glucosio), azoto, fosforo, zolfo, sali minerali, ferro, a volte vitamine e fattori di crescita. Quando finiscono la crescita si ferma.",
+  "universita": "Batteri autotrofi (CO₂ come fonte di carbonio) ed eterotrofi (sostanze organiche: tutti i patogeni umani). Il ferro è spesso limitante: i batteri producono siderofori per catturarlo, e l'ospite lo nasconde (transferrina, lattoferrina, epcidina: immunità nutrizionale). In presenza di più zuccheri usano prima il glucosio (repressione da catabolita, operone lac) con una crescita a due fasi (diauxia).",
+  "clinica": "Il sovraccarico di ferro (emocromatosi, terapia con deferoxamina) favorisce infezioni da Vibrio vulnificus, Yersinia e mucormicosi."
+ },
+ "fase di latenza (lag)": {
+  "tipo": "struttura",
+  "base": "All'inizio i batteri non si moltiplicano: si «sistemano» nel nuovo cibo, come quando si arriva in una casa nuova.",
+  "superiore": "Prima fase della curva di crescita: dopo il trasferimento in un terreno fresco il numero di cellule resta quasi costante. Le cellule sono metabolicamente attive e si preparano alla divisione.",
+  "universita": "Le cellule riparano i danni, sintetizzano ribosomi, enzimi per i nuovi nutrienti e ATP e aumentano di volume. La durata dipende dallo stato delle cellule (più lunga se vengono da una fase stazionaria o da un terreno diverso; quasi nulla se vengono da fase esponenziale nello stesso terreno) e dalle condizioni (temperatura).",
+  "clinica": "La conservazione degli alimenti in frigorifero allunga la fase di latenza e rallenta la crescita; Listeria monocytogenes però cresce anche a 4 °C."
+ },
+ "fase esponenziale (log)": {
+  "tipo": "struttura",
+  "base": "I batteri si moltiplicano al massimo: raddoppiano a ogni giro, 1, 2, 4, 8, 16…",
+  "superiore": "Fase della curva in cui le cellule si dividono a velocità costante e massima per quelle condizioni: il numero raddoppia a ogni tempo di generazione. In un grafico con il logaritmo del numero di cellule la crescita è una retta.",
+  "universita": "N = N₀ · 2ⁿ, con n = t/g. La popolazione è omogenea e in equilibrio (crescita bilanciata), quindi è usata per gli esperimenti di fisiologia e per preparare inoculi. Le cellule sono più sensibili agli antibiotici che agiscono sulla sintesi della parete, delle proteine e degli acidi nucleici.",
+  "clinica": "L'antibiogramma standardizza l'inoculo (es. 0,5 McFarland). Nelle infezioni con molti batteri in fase stazionaria (ascessi, biofilm, endocarditi) i beta-lattamici funzionano meno: servono drenaggio, terapie lunghe e associazioni."
+ },
+ "fase stazionaria": {
+  "tipo": "struttura",
+  "base": "I batteri smettono di aumentare: il cibo sta finendo e i rifiuti si accumulano.",
+  "superiore": "Fase della curva in cui il numero di cellule vive resta costante: le nuove cellule sono pari a quelle che muoiono, oppure la divisione si ferma. È causata dall'esaurimento dei nutrienti, dall'accumulo di prodotti tossici e, negli aerobi, dalla mancanza di O₂.",
+  "universita": "Cambia l'espressione genica (fattore sigma alternativo RpoS in Escherichia coli, risposta stringente con ppGpp): cellule più piccole e più resistenti allo stress. Si producono metaboliti secondari (molti antibiotici naturali dei funghi e di Streptomyces), tossine, biofilm, endospore nei generi Bacillus e Clostridium.",
+  "clinica": "I batteri in fase stazionaria nei biofilm (cateteri, protesi, valvole) tollerano molto gli antibiotici: spesso bisogna rimuovere il dispositivo infetto."
+ },
+ "quorum sensing": {
+  "tipo": "struttura",
+  "base": "Il modo in cui i batteri «si contano» con messaggi chimici e decidono insieme cosa fare quando sono tanti.",
+  "superiore": "Sistema di comunicazione tra batteri basato su piccole molecole segnale (autoinduttori). Quando la densità di cellule supera una soglia, la concentrazione del segnale fa cambiare l'espressione di molti geni in tutta la popolazione.",
+  "universita": "Gram-negativi: acil-omoserina lattoni (sistema LuxI/LuxR, scoperto nel batterio luminoso Vibrio fischeri; in Pseudomonas aeruginosa sistemi Las e Rhl). Gram-positivi: peptidi autoinduttori (sistema agr di Staphylococcus aureus). Autoinduttore-2 comune a molte specie. Regola tossine, enzimi di virulenza, biofilm, competenza alla trasformazione, bioluminescenza.",
+  "clinica": "Pseudomonas aeruginosa nelle vie aeree dei pazienti con fibrosi cistica usa il quorum sensing per formare biofilm e produrre fattori di virulenza; l'inibizione del quorum sensing è studiata come terapia anti-virulenza."
+ },
+ "endospore": {
+  "tipo": "struttura",
+  "base": "Una specie di «seme» corazzato che alcuni batteri formano per sopravvivere anni senza cibo, al caldo e al freddo.",
+  "superiore": "Forme di resistenza, non riproduttive, formate dentro la cellula da alcuni batteri Gram-positivi (generi Bacillus e Clostridium, Clostridioides) quando i nutrienti finiscono. Resistono a calore, essiccamento, radiazioni e disinfettanti; in condizioni favorevoli germinano e tornano batteri attivi.",
+  "universita": "Una cellula forma una sola spora (non è riproduzione). Struttura: nucleo disidratato con DNA protetto da piccole proteine (SASP) e dipicolinato di calcio, corteccia di peptidoglicano speciale, tuniche proteiche. Metabolismo quasi assente. Si distruggono con il calore umido sotto pressione (autoclave, 121 °C per almeno 15 minuti) o con sterilizzanti chimici.",
+  "clinica": "Malattie da spore: tetano (Clostridium tetani nelle ferite), botulismo (alimenti in scatola o sottolio mal preparati), gangrena gassosa (Clostridium perfringens), carbonchio (Bacillus anthracis), diarrea da Clostridioides difficile (le spore resistono all'alcol: lavare le mani con acqua e sapone). Le intossicazioni da Bacillus cereus vengono dal riso cotto lasciato a temperatura ambiente."
+ },
+ "fase di morte (declino)": {
+  "tipo": "struttura",
+  "base": "Alla fine, senza cibo, i batteri muoiono uno dopo l'altro e il loro numero cala.",
+  "superiore": "Ultima fase della curva di crescita: il numero di cellule vive diminuisce, di solito in modo esponenziale, per esaurimento dell'energia e accumulo di prodotti tossici. Spesso le cellule morte vanno in lisi.",
+  "universita": "La morte è definita come perdita irreversibile della capacità di dividersi. Sopravvivono a lungo alcune cellule (fase stazionaria prolungata) con varianti più adatte, o cellule «persistenti» dormienti. Alcune specie entrano in uno stato vitale ma non coltivabile (Vibrio cholerae), che le colture non rilevano.",
+  "clinica": "Il concetto di morte esponenziale è alla base della sterilizzazione e della disinfezione: si misura il tempo di riduzione decimale (valore D), cioè il tempo necessario per uccidere il 90% dei microbi a una data temperatura."
+ },
+ "DNA girasi": {
+  "tipo": "enzima",
+  "base": "L'enzima che scioglie i «nodi» del DNA del batterio mentre viene copiato; alcuni antibiotici lo bloccano.",
+  "superiore": "Topoisomerasi di tipo II dei batteri: taglia entrambi i filamenti del DNA, fa passare un tratto attraverso il taglio e lo richiude, introducendo superavvolgimenti negativi. Elimina le tensioni che si formano davanti alla forca di replicazione.",
+  "universita": "Tetramero GyrA₂GyrB₂ (GyrB idrolizza ATP). Lavora con la topoisomerasi IV (ParC, ParE), che separa i cromosomi concatenati dopo la replicazione. I fluorochinoloni stabilizzano il complesso DNA-enzima tagliato: si accumulano rotture del DNA a doppio filamento e il batterio muore. Nei Gram-negativi il bersaglio principale è la girasi, nei Gram-positivi la topoisomerasi IV. Le topoisomerasi umane sono diverse (bersaglio di alcuni chemioterapici, es. etoposide).",
+  "clinica": "Resistenza ai fluorochinoloni soprattutto per mutazioni di gyrA e parC (regione QRDR), oltre a pompe di efflusso e geni plasmidici qnr. La novobiocina (non più usata) bloccava GyrB."
+ },
+ "antibiotico": {
+  "tipo": "molecola",
+  "base": "Una medicina che uccide i batteri o ne ferma la crescita; non funziona contro i virus.",
+  "superiore": "Sostanza naturale (prodotta da funghi o batteri, come la penicillina) o di sintesi che uccide i batteri (battericida) o ne blocca la crescita (batteriostatico), agendo su strutture tipiche dei batteri: parete, ribosoma 70S, DNA, sintesi dell'acido folico, membrana.",
+  "universita": "Si classificano per bersaglio, spettro (stretto o ampio) e farmacodinamica: tempo-dipendenti (beta-lattamici: conta il tempo sopra la MIC), concentrazione-dipendenti (aminoglicosidi, fluorochinoloni: conta il picco). La selettività deriva dalle differenze tra cellule batteriche e umane; quando sono minori (ribosomi mitocondriali) compaiono effetti tossici. Ogni uso altera anche il microbiota.",
+  "clinica": "Regole: fare le colture prima di iniziare, scegliere la terapia empirica in base alla sede e all'epidemiologia locale, poi adattarla all'antibiogramma (de-escalation), dare la durata minima efficace. Effetti avversi frequenti: allergie, diarrea e colite da Clostridioides difficile, interazioni."
+ },
+ "porine": {
+  "tipo": "molecola",
+  "base": "Piccole «porte» nella membrana esterna di alcuni batteri, da cui entrano nutrienti e antibiotici.",
+  "superiore": "Proteine canale della membrana esterna dei batteri Gram-negativi (e dei mitocondri). Lasciano passare piccole molecole idrofile, compresi molti antibiotici (beta-lattamici, alcuni fluorochinoloni).",
+  "universita": "Trimeri di proteine a barile β. In Escherichia coli OmpF e OmpC; in Pseudomonas aeruginosa OprD (canale specifico usato da imipenem). La membrana esterna con l'LPS è una barriera per molecole grandi o idrofobe: per questo vancomicina e macrolidi sono poco attivi sui Gram-negativi. La perdita o la mutazione di porine riduce l'ingresso del farmaco; da sola dà resistenza modesta, ma insieme a beta-lattamasi o pompe di efflusso diventa importante.",
+  "clinica": "Pseudomonas aeruginosa con perdita di OprD è resistente all'imipenem pur restando spesso sensibile ad altri carbapenemi o beta-lattamici. Enterobatteri con ESBL o AmpC e porine ridotte possono diventare resistenti ai carbapenemi senza carbapenemasi."
+ },
+ "bersaglio batterico": {
+  "tipo": "struttura",
+  "base": "Il «punto debole» del batterio che l'antibiotico colpisce.",
+  "superiore": "Struttura o enzima del batterio su cui agisce un antibiotico. Principali bersagli: parete (PBP, precursori del peptidoglicano), ribosoma 70S (subunità 30S e 50S), DNA girasi e topoisomerasi IV, RNA polimerasi, enzimi della sintesi dell'acido folico, membrana.",
+  "universita": "Parete: beta-lattamici (PBP), vancomicina (D-Ala-D-Ala), fosfomicina (MurA). Ribosoma 30S: aminoglicosidi, tetracicline; 50S: macrolidi, clindamicina, linezolid, cloramfenicolo. DNA: fluorochinoloni (girasi, topoisomerasi IV), metronidazolo (danno diretto in anaerobi). RNA polimerasi: rifampicina. Acido folico: sulfamidici (diidropteroato sintasi), trimetoprim (diidrofolato reduttasi). Membrana: colistina (LPS), daptomicina (Gram-positivi).",
+  "clinica": "Associare antibiotici con bersagli diversi serve a ridurre la comparsa di resistenze (tubercolosi, HIV con gli antivirali) o ad avere un effetto sinergico (beta-lattamico + aminoglicoside nell'endocardite da enterococco)."
+ },
+ "mutazione spontanea": {
+  "tipo": "struttura",
+  "base": "Un piccolo «errore di copia» nelle istruzioni del batterio, che a volte per caso lo rende resistente.",
+  "superiore": "Cambiamento casuale della sequenza del DNA che avviene durante la replicazione o per danni, indipendentemente dalla presenza dell'antibiotico. Raramente può modificare il bersaglio di un antibiotico, un regolatore o un trasportatore e dare resistenza.",
+  "universita": "La casualità delle mutazioni fu dimostrata dal test di fluttuazione di Luria e Delbrück (1943). Frequenze di mutanti resistenti di circa 1 su 10⁶-10⁹ cellule a seconda del farmaco; con miliardi di batteri in un'infezione, qualche mutante è quasi sempre già presente. Esempi: gyrA/parC (fluorochinoloni), rpoB (rifampicina), katG e inhA (isoniazide), rRNA 23S (macrolidi, linezolid). Lo stress e la risposta SOS (polimerasi soggette a errore) aumentano la frequenza.",
+  "clinica": "Per questo non si usa mai la rifampicina da sola e la tubercolosi si cura con più farmaci insieme: la probabilità che un bacillo sia resistente a tutti è minima. La tubercolosi multiresistente (MDR-TB) è resistente almeno a isoniazide e rifampicina."
+ },
+ "geni di resistenza": {
+  "tipo": "molecola",
+  "base": "Le «istruzioni» che insegnano al batterio come difendersi da un antibiotico.",
+  "superiore": "Geni che rendono il batterio resistente a uno o più antibiotici. Possono nascere per mutazione nel cromosoma oppure essere acquisiti da altri batteri su elementi mobili (plasmidi, trasposoni, integroni).",
+  "universita": "Esempi: blaZ (penicillinasi stafilococcica), bla CTX-M (ESBL), bla KPC, bla NDM, bla OXA-48 (carbapenemasi), mecA (PBP2a, MRSA), vanA e vanB (vancomicina), erm (metilazione del ribosoma: macrolidi, lincosamidi), tet (efflusso o protezione del ribosoma), mcr-1 (colistina, su plasmide). Molti derivano da batteri ambientali produttori di antibiotici, che li usavano per proteggersi (resistoma).",
+  "clinica": "I test molecolari rapidi (PCR per mecA, per i geni delle carbapenemasi, per rpoB nella tubercolosi) danno informazioni sulla resistenza in poche ore, prima dell'antibiogramma tradizionale."
+ },
+ "trasposoni e integroni": {
+  "tipo": "molecola",
+  "base": "Pezzi di DNA che «saltano» da un punto all'altro e possono portare con sé i trucchi contro gli antibiotici.",
+  "superiore": "Elementi genetici mobili. I trasposoni («geni che saltano») si spostano da una posizione all'altra del DNA, anche tra cromosoma e plasmidi, grazie a una trasposasi. Gli integroni catturano e accumulano geni di resistenza sotto forma di cassette.",
+  "universita": "Trasposoni semplici (sequenze di inserzione IS) e composti (due IS che fiancheggiano geni di resistenza, es. Tn10 per le tetracicline); Tn1546 porta vanA. Gli integroni hanno un gene per un'integrasi (IntI), un sito di ricombinazione (attI) e un promotore che esprime le cassette inserite; possono contenere molte cassette di resistenza in fila. Gli integroni non si muovono da soli: viaggiano su trasposoni e plasmidi.",
+  "clinica": "Spiegano perché i batteri multiresistenti accumulano velocemente nuove resistenze e perché un singolo evento di trasferimento può rendere un batterio resistente a più classi di antibiotici."
+ },
+ "plasmidi di resistenza": {
+  "tipo": "molecola",
+  "base": "Piccoli anelli di DNA, separati dal resto, che portano i trucchi contro gli antibiotici e passano da un batterio all'altro.",
+  "superiore": "Plasmidi (piccole molecole di DNA circolare extracromosomico, che si replicano da sole) che portano uno o più geni di resistenza agli antibiotici (plasmidi R). Molti possono trasferirsi ad altri batteri per coniugazione, anche di specie diverse.",
+  "universita": "Un plasmide coniugativo contiene i geni tra (pilo sessuale e apparato di trasferimento) e spesso più geni di resistenza su trasposoni e integroni, oltre a geni di virulenza e sistemi di mantenimento (tossina-antitossina). Le resistenze a più antibiotici sullo stesso plasmide si selezionano insieme (co-selezione), anche da metalli pesanti o disinfettanti.",
+  "clinica": "Le carbapenemasi KPC, NDM e OXA-48 e le ESBL CTX-M si diffondono soprattutto su plasmidi tra enterobatteri (Klebsiella pneumoniae, Escherichia coli). La diffusione del plasmide mcr-1 (colistina), legata all'uso in zootecnia, ha minacciato l'ultimo antibiotico rimasto contro alcuni Gram-negativi."
+ },
+ "coniugazione": {
+  "tipo": "struttura",
+  "base": "Due batteri si «danno la mano» attraverso un tubicino e si passano un pezzo di DNA.",
+  "superiore": "Trasferimento di DNA da un batterio donatore a un ricevente attraverso un contatto diretto (pilo sessuale o apparato di secrezione). È il principale meccanismo di diffusione dei plasmidi di resistenza. Insieme a trasduzione (con un fago) e trasformazione (DNA libero) è un modo di trasferimento genico orizzontale.",
+  "universita": "Il donatore ha un plasmide coniugativo (prototipo: fattore F di Escherichia coli). Il pilo avvicina le cellule, un enzima (relaxasi) taglia un filamento del plasmide in oriT e lo trasferisce come singolo filamento attraverso un sistema di secrezione di tipo IV; entrambe le cellule sintetizzano il filamento complementare e il ricevente diventa donatore. Se il plasmide è integrato nel cromosoma (ceppi Hfr) si trasferiscono anche geni cromosomici.",
+  "clinica": "La coniugazione avviene facilmente nell'intestino, ricco di batteri: il microbiota diventa un serbatoio di geni di resistenza che possono passare ai patogeni, soprattutto durante una terapia antibiotica."
+ },
+ "batterio resistente": {
+  "tipo": "struttura",
+  "base": "Un batterio che sopravvive all'antibiotico che dovrebbe ucciderlo.",
+  "superiore": "Batterio che cresce in presenza di un antibiotico a concentrazioni che si possono raggiungere nel paziente, cioè con una MIC (concentrazione minima inibente) superiore al valore soglia (breakpoint). La resistenza può essere intrinseca (di tutta la specie) o acquisita (per mutazione o per geni da altri batteri).",
+  "universita": "Quattro meccanismi principali: inattivazione enzimatica del farmaco (beta-lattamasi, enzimi che modificano gli aminoglicosidi), modifica del bersaglio (PBP2a, D-Ala-D-Lac, metilazione dell'rRNA, mutazioni di girasi), efflusso attivo (pompe), ridotta permeabilità (perdita di porine). Resistenza intrinseca: enterococchi alle cefalosporine, Gram-negativi alla vancomicina, anaerobi agli aminoglicosidi (il trasporto richiede ossigeno), micoplasmi ai beta-lattamici. Diversa dalla tolleranza (sopravvivenza senza aumento della MIC, es. persistenti, biofilm).",
+  "clinica": "L'antibiogramma classifica il batterio come sensibile, sensibile ad alta esposizione o resistente (criteri EUCAST). Una resistenza intrinseca va conosciuta: non serve aspettare l'antibiogramma per evitare un farmaco inutile."
+ },
+ "selezione dei resistenti": {
+  "tipo": "struttura",
+  "base": "L'antibiotico uccide i batteri deboli e lascia vivi quelli resistenti, che poi si moltiplicano.",
+  "superiore": "Processo per cui l'esposizione agli antibiotici elimina i batteri sensibili e favorisce la crescita dei resistenti già presenti (selezione naturale darwiniana). Più si usano gli antibiotici, più la quota di batteri resistenti aumenta.",
+  "universita": "La selezione avviene sia nel patogeno sia nella flora normale (intestino, cute, faringe), anche a basse concentrazioni di antibiotico. La finestra di selezione dei mutanti è l'intervallo di concentrazioni tra la MIC dei sensibili e quella dei mutanti: dosi insufficienti la favoriscono. La resistenza ha spesso un costo per il batterio, ma mutazioni compensatorie lo riducono, per cui non scompare facilmente.",
+  "clinica": "Fattori evitabili: antibiotici per infezioni virali (raffreddore, influenza, la maggior parte delle faringiti e delle bronchiti acute), spettro più ampio del necessario, durata inutilmente lunga, profilassi chirurgica prolungata oltre le 24 ore, uso negli allevamenti per favorire la crescita (vietato nell'Unione Europea)."
+ },
+ "batteri multiresistenti": {
+  "tipo": "struttura",
+  "base": "Batteri che resistono a tanti antibiotici diversi e sono molto difficili da curare.",
+  "superiore": "Batteri resistenti ad almeno un farmaco in tre o più classi di antibiotici a cui sarebbero normalmente sensibili (MDR, multidrug-resistant). Esistono anche le forme estensivamente resistenti (XDR, sensibili solo a una o due classi) e panresistenti (PDR, resistenti a tutto).",
+  "universita": "I patogeni più importanti nelle infezioni ospedaliere sono riassunti nell'acronimo ESKAPE: Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, Enterobacter. L'OMS considera prioritari soprattutto Acinetobacter baumannii, Enterobacterales e Pseudomonas resistenti ai carbapenemi.",
+  "clinica": "L'Italia è tra i paesi europei con le maggiori resistenze (Klebsiella pneumoniae resistente ai carbapenemi, Acinetobacter). I pazienti colonizzati vanno identificati (tamponi rettali di sorveglianza) e messi in isolamento da contatto. Farmaci recenti di riserva: ceftazidime-avibactam, meropenem-vaborbactam, cefiderocol, colistina."
+ },
+ "trasmissione crociata": {
+  "tipo": "struttura",
+  "base": "Quando i batteri passano da un malato all'altro, per esempio con le mani o con gli oggetti.",
+  "superiore": "Passaggio di microrganismi da un paziente a un altro, direttamente o indirettamente, attraverso le mani degli operatori sanitari, superfici, strumenti e dispositivi medici. È la via principale di diffusione dei batteri multiresistenti negli ospedali.",
+  "universita": "Le mani si contaminano toccando il paziente o l'ambiente vicino; alcuni batteri sopravvivono a lungo sulle superfici (Acinetobacter, enterococchi, spore di Clostridioides difficile). I fattori di rischio per l'infezione sono dispositivi invasivi (catetere venoso centrale, catetere vescicale, ventilazione meccanica), interventi chirurgici, terapia intensiva, lunga degenza e antibiotici recenti.",
+  "clinica": "Le infezioni correlate all'assistenza si prevengono con l'igiene delle mani (frizione alcolica nei «5 momenti» dell'OMS; acqua e sapone per le spore), precauzioni da contatto (guanti e camice, stanza singola), pulizia ambientale, gestione corretta dei dispositivi (bundle) e sorveglianza."
+ },
+ "diffusione della resistenza": {
+  "tipo": "struttura",
+  "base": "I batteri resistenti viaggiano da una persona all'altra, da un ospedale all'altro e anche tra paesi diversi.",
+  "superiore": "Propagazione dei batteri resistenti e dei loro geni nella popolazione: tra pazienti in ospedale, nella comunità, tra animali e persone (alimenti), attraverso l'ambiente (acque reflue) e i viaggi internazionali.",
+  "universita": "La resistenza agli antibiotici è un problema «One Health»: salute umana, animale e ambientale sono collegate. Si diffondono sia i cloni batterici di successo (es. Klebsiella pneumoniae ST258 con KPC, Escherichia coli ST131 con CTX-M) sia i plasmidi tra specie diverse. L'OMS la considera una delle principali minacce per la salute globale.",
+  "clinica": "Si stima che ogni anno nell'Unione Europea muoiano oltre 30.000 persone per infezioni da batteri resistenti. In Italia il Piano Nazionale di Contrasto all'Antibiotico-Resistenza (PNCAR) coordina sorveglianza, prevenzione e uso appropriato."
+ },
+ "antibiogramma": {
+  "tipo": "struttura",
+  "base": "Un esame di laboratorio che dice quali antibiotici funzionano contro il batterio che ha causato l'infezione.",
+  "superiore": "Test di sensibilità agli antibiotici: si fa crescere il batterio isolato dal paziente in presenza di diversi antibiotici e si valuta quali ne bloccano la crescita. Il risultato per ogni farmaco è sensibile (S), sensibile ad alta esposizione (I) o resistente (R).",
+  "universita": "Metodi: diffusione in agar con dischetti (Kirby-Bauer: si misura l'alone di inibizione), microdiluizione in brodo e strisce a gradiente (si misura la MIC, la concentrazione minima inibente), sistemi automatici. I valori si confrontano con i breakpoint EUCAST (in Europa). Tempo: di solito 18-24 ore dopo l'isolamento; i test molecolari rapidi cercano geni specifici (mecA, carbapenemasi).",
+  "clinica": "Permette di passare dalla terapia empirica a una terapia mirata, possibilmente a spettro più stretto (de-escalation). Le colture vanno raccolte prima della prima dose di antibiotico. I dati cumulativi dell'ospedale (antibiogrammi cumulativi) guidano la scelta empirica."
+ },
+ "controllo della resistenza": {
+  "tipo": "struttura",
+  "base": "Le regole per fermare i batteri resistenti: usare bene gli antibiotici, lavarsi le mani e vaccinarsi.",
+  "superiore": "Insieme delle strategie per limitare la nascita e la diffusione della resistenza: uso appropriato degli antibiotici (antimicrobial stewardship), prevenzione delle infezioni (igiene delle mani, isolamento, vaccinazioni), sorveglianza, ricerca di nuovi farmaci e approccio One Health.",
+  "universita": "Antimicrobial stewardship: programmi ospedalieri che verificano indicazione, scelta, dose, via e durata degli antibiotici, promuovono la de-escalation e il passaggio dalla via endovenosa a quella orale. Diagnostica rapida (procalcitonina, test molecolari) per evitare terapie inutili. I vaccini (pneumococco, Haemophilus, influenza) riducono infezioni e prescrizioni.",
+  "clinica": "Nella pratica: niente antibiotici per infezioni virali, coltura prima di iniziare, rivalutazione a 48-72 ore, durata breve quando le prove la sostengono (es. 5 giorni per la polmonite comunitaria non complicata), profilassi chirurgica di una sola dose o comunque entro 24 ore."
+ },
+ "beta-lattamasi": {
+  "tipo": "enzima",
+  "base": "Le «forbici» che alcuni batteri usano per rompere la penicillina e altri antibiotici simili, così non funzionano più.",
+  "superiore": "Enzimi batterici che idrolizzano l'anello beta-lattamico di penicilline, cefalosporine, monobattami e carbapenemi, rendendoli inattivi. Sono il meccanismo di resistenza più importante dei Gram-negativi ai beta-lattamici.",
+  "universita": "Idrolasi (EC 3.5.2.6). Classificazione di Ambler: classi A, C e D con serina nel sito attivo, classe B metallo-beta-lattamasi con zinco (NDM, VIM, IMP). Esempi: penicillinasi dello stafilococco (classe A), TEM e SHV, ESBL (CTX-M: idrolizzano le cefalosporine di terza generazione), AmpC (inducibili in Enterobacter e Citrobacter), carbapenemasi KPC (A) e OXA-48 (D). Gli inibitori (acido clavulanico, sulbactam, tazobactam, avibactam, vaborbactam, relebactam) proteggono il beta-lattamico associato.",
+  "clinica": "Associazioni: amoxicillina-clavulanato, piperacillina-tazobactam, ceftazidime-avibactam (attivo contro KPC e OXA-48 ma non contro le metallo-beta-lattamasi), meropenem-vaborbactam. Contro NDM: aztreonam associato a ceftazidime-avibactam, o cefiderocol. Le metallo-beta-lattamasi non sono bloccate dagli inibitori classici."
+ },
+ "PBP2a": {
+  "tipo": "enzima",
+  "base": "Una «muratrice» modificata che lo stafilococco MRSA usa per costruire la parete anche quando c'è la penicillina.",
+  "superiore": "Proteina legante la penicillina alternativa, codificata dal gene mecA, con bassa affinità per quasi tutti i beta-lattamici. Continua a costruire la parete quando le altre PBP sono bloccate: rende lo stafilococco resistente alla meticillina (MRSA).",
+  "universita": "Transpeptidasi con sito attivo poco accessibile ai beta-lattamici. mecA si trova sull'elemento genetico mobile SCCmec (cassetta cromosomica stafilococcica), di origine probabilmente da stafilococchi coagulasi-negativi. Esiste un omologo, mecC. La ceftarolina e il ceftobiprolo legano la PBP2a e sono attivi contro l'MRSA.",
+  "clinica": "La PCR per mecA e i test rapidi per la proteina PBP2a identificano l'MRSA in poche ore. La resistenza alla oxacillina (o cefoxitina) nell'antibiogramma indica la presenza di mecA e quindi resistenza a quasi tutti i beta-lattamici."
+ },
+ "pompe di efflusso": {
+  "tipo": "molecola",
+  "base": "Piccole «pompe» nella membrana del batterio che buttano fuori l'antibiotico prima che faccia effetto.",
+  "superiore": "Proteine di trasporto della membrana batterica che espellono attivamente antibiotici e altre sostanze tossiche, riducendone la concentrazione dentro la cellula. Alcune sono specifiche per un farmaco, altre espellono molte classi diverse (multiresistenza).",
+  "universita": "Famiglie: RND (nei Gram-negativi, attraversano entrambe le membrane, es. AcrAB-TolC di Escherichia coli, MexAB-OprM di Pseudomonas aeruginosa), MFS (es. pompe Tet per le tetracicline, NorA di Staphylococcus aureus per i fluorochinoloni, Mef per i macrolidi), ABC, SMR, MATE. Usano il gradiente di protoni o l'ATP. La loro iperespressione per mutazioni dei regolatori aumenta la resistenza a più farmaci insieme.",
+  "clinica": "Insieme alla perdita di porine spiegano la resistenza intrinseca di Pseudomonas aeruginosa e Acinetobacter a molti antibiotici. La resistenza ai macrolidi dello Streptococcus pyogenes e del pneumococco può essere da efflusso (mef, di basso livello) o da metilazione del ribosoma (erm, di alto livello)."
+ },
+ "beta-lattamici": {
+  "tipo": "molecola",
+  "base": "La famiglia di antibiotici più usata, a cui appartiene la penicillina: rompe la parete dei batteri.",
+  "superiore": "Antibiotici che contengono l'anello beta-lattamico: penicilline (penicillina G, amoxicillina, oxacillina, piperacillina), cefalosporine (dalla prima alla quinta generazione, es. cefazolina, ceftriaxone, ceftazidime, cefepime, ceftarolina), carbapenemi (meropenem, imipenem, ertapenem) e monobattami (aztreonam). Inibiscono la sintesi della parete legandosi alle PBP.",
+  "universita": "Battericidi sulle cellule in crescita, tempo-dipendenti (conta il tempo in cui la concentrazione resta sopra la MIC: infusioni prolungate o frequenti). Non agiscono su batteri senza parete (micoplasmi) o intracellulari (clamidie, legionella). Resistenze: beta-lattamasi, PBP modificate, porine, efflusso. Eliminazione per lo più renale. L'aztreonam non ha allergia crociata con le penicilline (salvo la ceftazidime, con la stessa catena laterale).",
+  "clinica": "L'allergia alla penicillina è spesso riferita ma vera solo in una minoranza dei casi: la valutazione allergologica permette di riutilizzare questi farmaci. Effetti avversi: reazioni allergiche (anafilassi, esantemi, sindromi gravi come Stevens-Johnson), diarrea e colite da Clostridioides difficile, convulsioni ad alte dosi (imipenem, cefepime nell'insufficienza renale). Il ceftriaxone può dare fango biliare."
+ },
+ "vancomicina": {
+  "tipo": "molecola",
+  "base": "Un antibiotico forte, usato in ospedale contro batteri difficili come lo stafilococco resistente (MRSA).",
+  "superiore": "Antibiotico glicopeptide attivo solo contro i batteri Gram-positivi. Si lega all'estremità D-alanil-D-alanina dei precursori del peptidoglicano e ne impedisce l'inserimento nella parete. Si usa per via endovenosa per le infezioni gravi (MRSA) e per bocca per la colite da Clostridioides difficile, perché per bocca non viene assorbita.",
+  "universita": "Molecola grande: non attraversa la membrana esterna dei Gram-negativi (resistenza intrinseca). Battericida lenta. Resistenza negli enterococchi (VRE) per sostituzione del D-Ala-D-Ala con D-Ala-D-Lac (geni vanA, vanB), con affinità circa 1000 volte inferiore; negli stafilococchi rari ceppi VISA (parete ispessita) e VRSA (vanA). Eliminazione renale; dosaggio guidato dai livelli plasmatici (AUC/MIC o concentrazione di valle).",
+  "clinica": "Effetti avversi: nefrotossicità (soprattutto con piperacillina-tazobactam o aminoglicosidi), ototossicità, reazione da infusione rapida con arrossamento del collo e del tronco (sindrome dell'uomo rosso, da rilascio di istamina: si rallenta l'infusione). Alternative contro l'MRSA: linezolid, daptomicina, ceftarolina."
+ },
+ "aminoglicosidi": {
+  "tipo": "molecola",
+  "base": "Antibiotici potenti contro molti batteri del sangue e delle urine, da usare con attenzione per reni e udito.",
+  "superiore": "Antibiotici che si legano alla subunità 30S del ribosoma batterico e causano errori di lettura dell'mRNA (proteine sbagliate). Sono battericidi e attivi soprattutto sui Gram-negativi aerobi. Esempi: gentamicina, amikacina, tobramicina, streptomicina.",
+  "universita": "Concentrazione-dipendenti, con effetto post-antibiotico: si danno in una sola dose giornaliera. L'ingresso nella cellula richiede un trasporto dipendente dall'ossigeno: inattivi contro gli anaerobi e poco attivi in ambiente acido (ascessi). Sinergici con i beta-lattamici, che danneggiando la parete ne facilitano l'ingresso (endocardite da enterococco). Resistenza soprattutto per enzimi che li modificano (acetiltransferasi, fosfotransferasi, adeniltransferasi), anche su plasmidi, e per metilasi dell'rRNA 16S.",
+  "clinica": "Tossicità: renale (necrosi tubulare acuta, di solito reversibile), uditiva e vestibolare (spesso irreversibile; maggiore rischio nei portatori della mutazione mitocondriale m.1555A>G), blocco neuromuscolare (attenzione nella miastenia). Si monitorano i livelli plasmatici e la funzione renale. Usati per via inalatoria (tobramicina) nella fibrosi cistica."
+ },
+ "macrolidi": {
+  "tipo": "molecola",
+  "base": "Antibiotici usati spesso per le infezioni respiratorie, anche in chi è allergico alla penicillina.",
+  "superiore": "Antibiotici che si legano alla subunità 50S del ribosoma batterico e bloccano l'uscita della catena proteica in crescita. Sono in genere batteriostatici. Esempi: eritromicina, claritromicina, azitromicina. Attivi contro molti Gram-positivi e contro i batteri «atipici» (Mycoplasma, Chlamydia, Legionella).",
+  "universita": "Si legano all'rRNA 23S nel tunnel di uscita. Si concentrano nelle cellule (utili per i patogeni intracellulari); l'azitromicina ha emivita lunga (cicli brevi). Resistenza: metilazione dell'rRNA 23S (geni erm, con resistenza crociata a clindamicina e streptogramine B), pompe di efflusso (mef), mutazioni dell'rRNA (Mycoplasma genitalium, Helicobacter pylori). Eritromicina e claritromicina inibiscono il CYP3A4.",
+  "clinica": "Usi: polmonite comunitaria (atipici), pertosse, clamidia, Helicobacter pylori (claritromicina, ma con resistenze elevate in Italia), profilassi nelle bronchiectasie. Effetti avversi: allungamento del QT e aritmie, disturbi gastrointestinali (l'eritromicina stimola i recettori della motilina: usata come procinetico), interazioni (statine, anticoagulanti). Nei neonati l'eritromicina è associata a stenosi pilorica."
+ },
+ "tetracicline": {
+  "tipo": "molecola",
+  "base": "Antibiotici ad ampio spettro, usati per esempio per l'acne e per le malattie trasmesse dalle zecche.",
+  "superiore": "Antibiotici che si legano alla subunità 30S del ribosoma batterico e impediscono l'ingresso dell'amminoacil-tRNA nel sito A. Sono batteriostatici e ad ampio spettro (anche Rickettsia, Chlamydia, Mycoplasma, Borrelia). Esempi: doxiciclina, minociclina, tetraciclina; derivato più recente: tigeciclina.",
+  "universita": "Entrano nei batteri con trasporto attivo; si legano ai cationi bivalenti e trivalenti (Ca²⁺, Mg²⁺, Fe²⁺, Al³⁺): latte, antiacidi e ferro ne riducono l'assorbimento. La doxiciclina non richiede aggiustamento per l'insufficienza renale. Resistenza per pompe di efflusso (geni tet) e proteine che proteggono il ribosoma; la tigeciclina sfugge a molte di queste.",
+  "clinica": "Usi: malattia di Lyme, rickettsiosi, clamidia, acne, profilassi della malaria, brucellosi (con altri farmaci). Controindicate in gravidanza e sotto gli 8 anni (si depositano in denti e ossa: colorazione permanente dei denti), salvo indicazioni particolari. Effetti avversi: fotosensibilità, esofagite (assumere con molta acqua, in piedi), ipertensione endocranica benigna."
+ },
+ "fluorochinoloni": {
+  "tipo": "molecola",
+  "base": "Antibiotici molto potenti che bloccano la copia del DNA del batterio; si usano con attenzione per gli effetti collaterali.",
+  "superiore": "Antibiotici di sintesi che inibiscono la DNA girasi e la topoisomerasi IV batteriche, causando rotture del DNA. Sono battericidi e ad ampio spettro. Esempi: ciprofloxacina (soprattutto Gram-negativi, anche Pseudomonas), levofloxacina e moxifloxacina (attive anche su pneumococco e atipici).",
+  "universita": "Concentrazione-dipendenti. Ottimo assorbimento orale (biodisponibilità simile alla via endovenosa), buona penetrazione nei tessuti (prostata, ossa). Assorbimento ridotto da cationi (antiacidi, ferro, calcio). Resistenza per mutazioni di gyrA e parC, pompe di efflusso, perdita di porine e geni plasmidici qnr; si sviluppa facilmente in Escherichia coli, Pseudomonas, gonococco.",
+  "clinica": "Per il rischio di effetti avversi gravi e duraturi le agenzie regolatorie (EMA, AIFA) ne limitano l'uso alle infezioni in cui non ci sono alternative: tendinite e rottura del tendine d'Achille (più negli anziani e con cortisonici), neuropatia periferica, effetti psichiatrici, aneurisma e dissezione aortica, allungamento del QT, disglicemie, colite da Clostridioides difficile. Sconsigliati in gravidanza e nei bambini (danno alla cartilagine negli animali giovani)."
+ },
+ "sulfamidici e trimetoprim": {
+  "tipo": "molecola",
+  "base": "Due antibiotici che, insieme, tolgono ai batteri una vitamina di cui hanno bisogno per crescere.",
+  "superiore": "Antibiotici che bloccano due tappe successive della sintesi dell'acido folico batterico, necessario per produrre i nucleotidi. Spesso sono associati: sulfametossazolo + trimetoprim (cotrimossazolo). Le cellule umane prendono l'acido folico dalla dieta, quindi non dipendono dalla prima tappa.",
+  "universita": "I sulfamidici sono analoghi dell'acido para-amminobenzoico (PABA) e inibiscono la diidropteroato sintasi; il trimetoprim inibisce la diidrofolato reduttasi batterica (molto più affine per quella batterica che per quella umana). Da soli batteriostatici, insieme sinergici e spesso battericidi. Resistenza per enzimi bersaglio alternativi, codificati da plasmidi (geni sul e dfr).",
+  "clinica": "Usi del cotrimossazolo: infezioni urinarie, polmonite da Pneumocystis jirovecii (terapia e profilassi nell'HIV e nei trapiantati), toxoplasmosi (profilassi), alcune infezioni da MRSA comunitario, Stenotrophomonas, Nocardia. Effetti avversi: reazioni cutanee gravi (Stevens-Johnson), iperkaliemia (il trimetoprim agisce come l'amiloride), aumento della creatinina, emolisi nel deficit di G6PD, mielosoppressione, kernittero nel neonato (evitare a fine gravidanza)."
+ },
+ "MRSA": {
+  "tipo": "struttura",
+  "base": "Uno stafilococco «super-resistente» che non muore con la penicillina e con molti antibiotici simili.",
+  "superiore": "Staphylococcus aureus resistente alla meticillina: ceppo di stafilococco aureo che porta il gene mecA (PBP2a) ed è resistente a quasi tutti i beta-lattamici (penicilline, cefalosporine tranne ceftarolina e ceftobiprolo, carbapenemi). Causa infezioni della pelle, delle ferite, del sangue, dei polmoni, delle ossa e delle protesi.",
+  "universita": "Due grandi gruppi: MRSA associato all'assistenza (HA-MRSA, spesso multiresistente, in ospedali e residenze) e MRSA comunitario (CA-MRSA, in giovani sani, sport di contatto, spesso con la tossina leucocidina di Panton-Valentine: ascessi, foruncolosi, polmonite necrotizzante). Il 20-30% circa delle persone è portatore nasale di S. aureus (non necessariamente MRSA).",
+  "clinica": "Terapia delle infezioni gravi: vancomicina, daptomicina (non nella polmonite, perché inattivata dal surfattante), linezolid, ceftarolina; per infezioni cutanee lievi drenaggio e cotrimossazolo, doxiciclina o clindamicina. Screening con tampone nasale prima di alcuni interventi; decolonizzazione con mupirocina nasale e lavaggi con clorexidina. Isolamento da contatto in ospedale."
+ },
+ "enterococchi resistenti alla vancomicina (VRE)": {
+  "tipo": "struttura",
+  "base": "Batteri dell'intestino che sono diventati resistenti anche a un antibiotico molto forte, la vancomicina.",
+  "superiore": "Enterococchi (soprattutto Enterococcus faecium) resistenti alla vancomicina per i geni vanA o vanB. Colonizzano l'intestino di pazienti ospedalizzati e causano infezioni urinarie, del sangue, delle ferite e endocarditi, soprattutto in pazienti fragili.",
+  "universita": "Gli enterococchi hanno già resistenze intrinseche (cefalosporine, basso livello agli aminoglicosidi). vanA (su trasposone Tn1546, spesso plasmidico) fa costruire precursori del peptidoglicano che terminano in D-Ala-D-Lac invece di D-Ala-D-Ala: la vancomicina lega circa 1000 volte meno. vanA dà resistenza anche alla teicoplanina, vanB no. Enterococcus faecium è spesso anche resistente all'ampicillina.",
+  "clinica": "Fattori di rischio: lunga degenza, terapia intensiva, ematologia e trapianti, uso di vancomicina e cefalosporine. Terapia: linezolid o daptomicina (ad alte dosi). Il trasferimento di vanA allo Staphylococcus aureus ha prodotto rari casi di VRSA. Isolamento da contatto e pulizia ambientale (sopravvivono a lungo sulle superfici)."
+ },
+ "enterobatteri produttori di ESBL": {
+  "tipo": "struttura",
+  "base": "Batteri dell'intestino che producono un enzima capace di distruggere molti antibiotici comuni.",
+  "superiore": "Enterobatteri (soprattutto Escherichia coli e Klebsiella pneumoniae) che producono beta-lattamasi a spettro esteso (ESBL): enzimi che idrolizzano penicilline, cefalosporine di terza e quarta generazione (ceftriaxone, cefotaxime, ceftazidime, cefepime) e aztreonam. Restano in genere sensibili ai carbapenemi.",
+  "universita": "Le ESBL più diffuse sono di tipo CTX-M (classe A), su plasmidi che spesso portano anche resistenze ad aminoglicosidi, fluorochinoloni e cotrimossazolo. Sono inibite dall'acido clavulanico e dal tazobactam (base dei test di conferma). Diffuse non solo in ospedale ma anche nella comunità (infezioni urinarie, portatori intestinali, viaggi).",
+  "clinica": "Le infezioni gravi (batteriemia) si trattano con un carbapenemico (meropenem), che ha dato risultati migliori della piperacillina-tazobactam; per le cistiti si possono usare fosfomicina, nitrofurantoina o, se sensibili, altri farmaci orali. L'uso dei carbapenemi favorisce però la selezione di batteri resistenti ai carbapenemi."
+ },
+ "enterobatteri resistenti ai carbapenemi (CRE)": {
+  "tipo": "struttura",
+  "base": "Batteri dell'intestino resistenti anche agli antibiotici «di riserva» più forti: sono tra i più pericolosi negli ospedali.",
+  "superiore": "Enterobatteri (soprattutto Klebsiella pneumoniae) resistenti ai carbapenemi, in genere perché producono carbapenemasi (CPE): KPC, NDM, VIM, OXA-48. Sono di solito resistenti a quasi tutti i beta-lattamici e spesso ad altre classi; causano infezioni gravi con mortalità elevata.",
+  "universita": "Carbapenemasi di classe A (KPC, serina), B (metallo-beta-lattamasi NDM, VIM, IMP, con zinco) e D (OXA-48). Più raramente la resistenza deriva da ESBL o AmpC associate a perdita di porine. I geni sono su plasmidi e si diffondono tra specie. Per individuarli si usano test fenotipici e molecolari che riconoscono il tipo di enzima: la terapia dipende da questo.",
+  "clinica": "L'Italia ha una delle più alte prevalenze in Europa di Klebsiella pneumoniae KPC. Terapie: ceftazidime-avibactam (KPC, OXA-48), meropenem-vaborbactam e imipenem-relebactam (KPC), aztreonam + ceftazidime-avibactam o cefiderocol (metallo-beta-lattamasi); colistina e aminoglicosidi in associazione come alternative. Sono soggetti a sorveglianza nazionale obbligatoria per le batteriemie; isolamento da contatto e screening rettale dei pazienti a rischio."
+ }
+}

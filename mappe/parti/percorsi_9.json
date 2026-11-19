@@ -1,0 +1,941 @@
+{
+ "potenziale d'azione": {
+  "titolo": "Potenziale d'azione: come nasce e si spegne l'impulso nervoso",
+  "dove": "Membrana dei neuroni (segmento iniziale dell'assone, assone, nodi di Ranvier) e delle fibre muscolari",
+  "inizio": "gradienti di Na⁺ e K⁺",
+  "intro": "A riposo l'interno del neurone è negativo, circa −70 mV, perché fuori c'è molto Na⁺ e dentro molto K⁺. Se uno stimolo porta la membrana alla soglia (circa −55 mV), si aprono di colpo i canali del Na⁺: il sodio entra e l'interno diventa positivo per un attimo. Poi i canali del K⁺ fanno uscire il potassio e la membrana torna negativa. Tutto dura circa 1-2 millisecondi ed è «tutto o nulla»: o parte completo, o non parte.",
+  "fasi": [
+   {"da": 1, "nome": "Riposo: la membrana è carica come una piccola pila"},
+   {"da": 2, "nome": "Innesco: lo stimolo porta la membrana alla soglia"},
+   {"da": 4, "nome": "Salita: entra Na⁺ (depolarizzazione)"},
+   {"da": 5, "nome": "Discesa e ritorno: esce K⁺ (ripolarizzazione)"}
+  ],
+  "passaggi": [
+   {
+    "da": ["gradienti di Na⁺ e K⁺"],
+    "a": ["potenziale di riposo"],
+    "enzima": "canali di fuga del K⁺",
+    "entra": [],
+    "esce": ["K⁺"],
+    "nota": "La pompa Na⁺/K⁺ tiene il K⁺ alto dentro e il Na⁺ alto fuori. A riposo la membrana lascia passare soprattutto il K⁺: un po' di K⁺ esce e lascia dentro cariche negative. Si arriva a circa −70 mV nel neurone (circa −90 mV nel muscolo scheletrico)."
+   },
+   {
+    "da": ["potenziale di riposo"],
+    "a": ["potenziale graduato"],
+    "enzima": "recettori ionotropi",
+    "entra": ["Na⁺"],
+    "esce": [],
+    "nota": "Uno stimolo o un neurotrasmettitore apre alcuni canali e fa entrare un po' di Na⁺: nasce una piccola depolarizzazione locale. È graduata (più stimolo, più grande) e si spegne allontanandosi dal punto di partenza."
+   },
+   {
+    "da": ["potenziale graduato"],
+    "a": ["soglia"],
+    "enzima": "segmento iniziale dell'assone",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "I potenziali graduati si sommano nel segmento iniziale dell'assone, dove ci sono moltissimi canali del Na⁺. Se la membrana arriva alla soglia (circa −55 mV) parte il potenziale d'azione; se non ci arriva, non succede nulla. Qui si decide se il neurone «spara»."
+   },
+   {
+    "da": ["soglia"],
+    "a": ["depolarizzazione"],
+    "enzima": "canali del sodio voltaggio-dipendenti",
+    "entra": ["Na⁺"],
+    "esce": [],
+    "nota": "Alla soglia i canali del Na⁺ si aprono in massa. Il Na⁺ che entra depolarizza ancora e apre altri canali (feedback positivo): l'interno sale fino a circa +30 mV. È la legge del «tutto o nulla»."
+   },
+   {
+    "da": ["depolarizzazione"],
+    "a": ["ripolarizzazione"],
+    "enzima": "canali del potassio voltaggio-dipendenti",
+    "entra": [],
+    "esce": ["K⁺"],
+    "nota": "Al picco i canali del Na⁺ si chiudono con la loro porta di inattivazione, mentre si aprono, più lenti, i canali del K⁺. Il K⁺ esce e l'interno torna negativo. Finché i canali del Na⁺ sono inattivati nessuno stimolo può far partire un nuovo impulso (periodo refrattario assoluto)."
+   },
+   {
+    "da": ["ripolarizzazione"],
+    "a": ["iperpolarizzazione postuma"],
+    "enzima": "canali del potassio voltaggio-dipendenti",
+    "entra": [],
+    "esce": ["K⁺"],
+    "nota": "I canali del K⁺ si chiudono lentamente: per un attimo esce più K⁺ del necessario e la membrana scende sotto il riposo, verso circa −90 mV. In questa fase serve uno stimolo più forte del solito (periodo refrattario relativo)."
+   },
+   {
+    "da": ["iperpolarizzazione postuma"],
+    "a": ["potenziale di riposo"],
+    "enzima": "Na⁺/K⁺-ATPasi",
+    "entra": ["K⁺", "ATP"],
+    "esce": ["Na⁺", "ADP"],
+    "nota": "Chiusi i canali del K⁺, la membrana torna a circa −70 mV. Un singolo impulso sposta pochissimi ioni; la pompa Na⁺/K⁺ (3 Na⁺ fuori e 2 K⁺ dentro per ogni ATP) mantiene i gradienti anche dopo migliaia di impulsi."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Riposo circa −70 mV: dentro K⁺, fuori Na⁺; la membrana lascia passare soprattutto il K⁺",
+   "Soglia circa −55 mV → si aprono i canali del Na⁺ → il Na⁺ entra → picco circa +30 mV",
+   "Canali del Na⁺ inattivati e canali del K⁺ aperti → il K⁺ esce → la membrana torna negativa",
+   "Tutto o nulla; l'intensità dello stimolo è codificata dalla frequenza degli impulsi"
+  ],
+  "dopo": {
+   "titolo": "Come l'impulso viaggia lungo l'assone",
+   "strade": [
+    {
+     "condizione": "Fibra senza mielina",
+     "da": "potenziale d'azione",
+     "a": "conduzione continua",
+     "enzima": "canali del sodio voltaggio-dipendenti",
+     "entra": ["Na⁺"],
+     "esce": [],
+     "nota": "La corrente che entra in un punto depolarizza il tratto vicino, che a sua volta raggiunge la soglia. L'impulso avanza tratto per tratto ed è lento (circa 0,5-2 m/s). Non torna indietro perché il tratto appena attivato è refrattario."
+    },
+    {
+     "condizione": "Fibra con mielina",
+     "da": "potenziale d'azione",
+     "a": "conduzione saltatoria",
+     "enzima": "nodi di Ranvier",
+     "entra": ["Na⁺"],
+     "esce": [],
+     "nota": "La mielina isola l'assone e i canali del Na⁺ stanno quasi solo nei nodi di Ranvier: l'impulso «salta» da un nodo all'altro. È molto più veloce (fino a circa 100 m/s) e consuma meno energia."
+    },
+    {
+     "condizione": "Arrivo alla fine dell'assone",
+     "da": "potenziale d'azione",
+     "a": "terminale presinaptico",
+     "enzima": "assone",
+     "entra": [],
+     "esce": [],
+     "nota": "L'impulso arriva al terminale dell'assone e lì il segnale elettrico diventa chimico: si apre la sinapsi.",
+     "prossimo": "trasmissione sinaptica"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "I canali e la pompa che fanno il potenziale d'azione",
+    "voci": [
+     ["Tengono il riposo", ["canali di fuga del K⁺", "Na⁺/K⁺-ATPasi"]],
+     ["Fanno salire il potenziale", ["canali del sodio voltaggio-dipendenti"]],
+     ["Lo fanno scendere", ["canali del potassio voltaggio-dipendenti"]]
+    ]
+   },
+   {
+    "titolo": "Quando il segnale si blocca o rallenta",
+    "voci": [
+     ["Il tempo in cui il neurone non risponde", ["periodo refrattario assoluto", "periodo refrattario relativo"]],
+     ["Farmaci che bloccano i canali del Na⁺", ["anestetici locali"]],
+     ["Malattia che danneggia la mielina", ["sclerosi multipla"]]
+    ]
+   }
+  ]
+ },
+ "trasmissione sinaptica": {
+  "titolo": "Trasmissione sinaptica: il passaggio del segnale da un neurone all'altro",
+  "dove": "Sinapsi chimiche: terminale presinaptico, fessura sinaptica e membrana postsinaptica (tra neuroni, o tra neurone e muscolo o ghiandola)",
+  "inizio": "potenziale d'azione",
+  "intro": "I neuroni non si toccano: tra loro c'è una fessura sottilissima. Quando l'impulso elettrico arriva alla fine dell'assone fa entrare Ca²⁺, e il Ca²⁺ fa liberare un messaggero chimico, il neurotrasmettitore. Il neurotrasmettitore attraversa la fessura e si lega ai recettori del neurone successivo, eccitandolo o inibendolo. Poi viene subito rimosso, così il segnale è breve e preciso.",
+  "fasi": [
+   {"da": 1, "nome": "Nel neurone presinaptico: il segnale elettrico diventa chimico"},
+   {"da": 4, "nome": "Nel neurone postsinaptico: il segnale chimico ridiventa elettrico"}
+  ],
+  "passaggi": [
+   {
+    "da": ["potenziale d'azione"],
+    "a": ["terminale presinaptico"],
+    "enzima": "assone",
+    "entra": [],
+    "esce": [],
+    "nota": "L'impulso corre lungo l'assone fino ai bottoni terminali. Qui il neurotrasmettitore è già pronto, chiuso in piccole vescicole."
+   },
+   {
+    "da": ["terminale presinaptico"],
+    "a": ["vescicole sinaptiche"],
+    "enzima": "canali del calcio voltaggio-dipendenti",
+    "entra": ["Ca²⁺"],
+    "esce": [],
+    "limitante": true,
+    "nota": "La depolarizzazione apre i canali del Ca²⁺. Il Ca²⁺ che entra è il segnale per le vescicole: più Ca²⁺ entra, più neurotrasmettitore viene liberato. È la tappa che regola quanto è forte la sinapsi."
+   },
+   {
+    "da": ["vescicole sinaptiche"],
+    "a": ["fessura sinaptica"],
+    "enzima": "proteine SNARE",
+    "entra": [],
+    "esce": ["neurotrasmettitore"],
+    "nota": "Il Ca²⁺ si lega alla sinaptotagmina e le proteine SNARE fanno fondere le vescicole con la membrana: il neurotrasmettitore esce nella fessura (esocitosi). Dall'arrivo dell'impulso passa circa mezzo millisecondo (ritardo sinaptico)."
+   },
+   {
+    "da": ["fessura sinaptica"],
+    "a": ["potenziale postsinaptico eccitatorio (PPSE)"],
+    "enzima": "recettori ionotropi",
+    "entra": ["neurotrasmettitore", "Na⁺"],
+    "esce": [],
+    "nota": "Il neurotrasmettitore attraversa la fessura per diffusione e apre canali sulla membrana postsinaptica. Con il glutammato (recettori AMPA) o l'acetilcolina (recettori nicotinici) entra Na⁺: la membrana si depolarizza un poco."
+   },
+   {
+    "da": ["fessura sinaptica"],
+    "a": ["potenziale postsinaptico inibitorio (PPSI)"],
+    "enzima": "recettore GABA-A",
+    "entra": ["GABA", "Cl⁻"],
+    "esce": [],
+    "nota": "Altre sinapsi usano GABA (nel cervello) o glicina (nel midollo spinale). Il recettore apre un canale per il Cl⁻: la membrana resta più negativa e si allontana dalla soglia."
+   },
+   {
+    "da": ["potenziale postsinaptico eccitatorio (PPSE)", "potenziale postsinaptico inibitorio (PPSI)"],
+    "a": ["sommazione"],
+    "enzima": "segmento iniziale dell'assone",
+    "entra": [],
+    "esce": [],
+    "nota": "Un neurone riceve migliaia di sinapsi. I PPSE e i PPSI si sommano nello spazio (da sinapsi diverse) e nel tempo (impulsi ravvicinati). Un solo PPSE di solito non basta: serve la somma di molti."
+   },
+   {
+    "da": ["sommazione"],
+    "a": ["potenziale d'azione"],
+    "enzima": "canali del sodio voltaggio-dipendenti",
+    "entra": ["Na⁺"],
+    "esce": [],
+    "nota": "Se la somma porta il segmento iniziale dell'assone alla soglia, nasce un nuovo potenziale d'azione nel neurone postsinaptico e il segnale prosegue."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Impulso nel terminale → entra Ca²⁺ → le vescicole liberano il neurotrasmettitore (esocitosi)",
+   "Il neurotrasmettitore si lega ai recettori postsinaptici: PPSE (entra Na⁺) o PPSI (entra Cl⁻)",
+   "I potenziali si sommano: se si arriva alla soglia parte un nuovo potenziale d'azione",
+   "Il neurotrasmettitore viene subito tolto: degradato da enzimi o ripreso dal terminale"
+  ],
+  "dopo": {
+   "titolo": "Risposte lente e spegnimento del segnale",
+   "strade": [
+    {
+     "condizione": "Recettori accoppiati a proteine G (risposta lenta e duratura)",
+     "da": "fessura sinaptica",
+     "a": "secondi messaggeri",
+     "enzima": "recettori metabotropi",
+     "entra": ["neurotrasmettitore"],
+     "esce": [],
+     "nota": "Il recettore non è un canale: attiva una proteina G, che produce secondi messaggeri (per esempio cAMP). L'effetto arriva in centinaia di millisecondi o più e può durare a lungo. Esempi: recettori muscarinici, adrenergici, dopaminergici."
+    },
+    {
+     "condizione": "Spegnimento con un enzima",
+     "da": "acetilcolina",
+     "a": "colina",
+     "enzima": "acetilcolinesterasi",
+     "entra": ["H₂O"],
+     "esce": ["acetato"],
+     "nota": "L'acetilcolina viene spezzata nella fessura in pochi millisecondi. La colina torna nel terminale e serve a fare nuova acetilcolina."
+    },
+    {
+     "condizione": "Spegnimento per ricaptazione",
+     "da": "fessura sinaptica",
+     "a": "terminale presinaptico",
+     "enzima": "trasportatori di ricaptazione",
+     "entra": ["neurotrasmettitore"],
+     "esce": [],
+     "nota": "Noradrenalina, dopamina, serotonina, glutammato e GABA vengono ripresi da trasportatori del terminale o delle cellule gliali e riusati. Molti farmaci (antidepressivi) e droghe (cocaina) bloccano proprio questi trasportatori."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "I principali neurotrasmettitori",
+    "voci": [
+     ["Eccitatori", ["glutammato", "acetilcolina"]],
+     ["Inibitori", ["GABA", "glicina"]],
+     ["Monoamine (umore, movimento, allerta)", ["dopamina", "noradrenalina"]]
+    ]
+   },
+   {
+    "titolo": "Farmaci e tossine che agiscono sulla sinapsi",
+    "voci": [
+     ["Bloccano la liberazione del neurotrasmettitore", ["tossina botulinica"]],
+     ["Bloccano la ricaptazione", ["inibitori selettivi della ricaptazione della serotonina (SSRI)"]],
+     ["Potenziano il GABA", ["benzodiazepine"]]
+    ]
+   }
+  ]
+ },
+ "contrazione muscolare": {
+  "titolo": "Contrazione muscolare: dalla placca motrice ai ponti trasversali e al rilasciamento",
+  "dove": "Muscolo scheletrico: placca motrice, sarcolemma e tubuli T, reticolo sarcoplasmatico, sarcomeri",
+  "inizio": "motoneurone",
+  "intro": "Il motoneurone libera acetilcolina sulla fibra muscolare e fa partire un potenziale d'azione. L'impulso scende nei tubuli T e fa uscire Ca²⁺ dal reticolo sarcoplasmatico (accoppiamento eccitazione-contrazione). Il Ca²⁺ scopre i siti dell'actina e le teste della miosina la tirano usando ATP: i filamenti scorrono e il sarcomero si accorcia. Quando il nervo smette, il Ca²⁺ viene ripompato nel reticolo e il muscolo si rilascia.",
+  "fasi": [
+   {"da": 1, "nome": "Placca motrice: dal nervo al muscolo"},
+   {"da": 3, "nome": "Accoppiamento eccitazione-contrazione: l'impulso libera il Ca²⁺"},
+   {"da": 6, "nome": "Ciclo dei ponti trasversali: i filamenti scorrono"},
+   {"da": 10, "nome": "Rilasciamento"}
+  ],
+  "passaggi": [
+   {
+    "da": ["motoneurone"],
+    "a": ["placca motrice"],
+    "enzima": "canali del calcio voltaggio-dipendenti",
+    "entra": ["Ca²⁺"],
+    "esce": ["acetilcolina"],
+    "nota": "Il potenziale d'azione arriva al terminale del motoneurone e apre i canali del Ca²⁺. Il Ca²⁺ fa liberare l'acetilcolina nella fessura della placca motrice."
+   },
+   {
+    "da": ["placca motrice"],
+    "a": ["potenziale di placca"],
+    "enzima": "recettore nicotinico dell'acetilcolina",
+    "entra": ["acetilcolina", "Na⁺"],
+    "esce": [],
+    "nota": "L'acetilcolina apre i recettori nicotinici, che sono canali: entra soprattutto Na⁺ e la membrana della fibra si depolarizza. Il potenziale di placca è molto più grande del necessario, quindi in condizioni normali ogni impulso del nervo fa contrarre la fibra."
+   },
+   {
+    "da": ["potenziale di placca"],
+    "a": ["tubulo T"],
+    "enzima": "canali del sodio voltaggio-dipendenti",
+    "entra": ["Na⁺"],
+    "esce": [],
+    "nota": "Ai lati della placca nasce un potenziale d'azione muscolare che corre su tutto il sarcolemma e scende nei tubuli T, in profondità nella fibra. Intanto l'acetilcolinesterasi distrugge l'acetilcolina."
+   },
+   {
+    "da": ["tubulo T"],
+    "a": ["reticolo sarcoplasmatico"],
+    "enzima": "recettore delle diidropiridine (DHPR)",
+    "entra": [],
+    "esce": [],
+    "nota": "Nel tubulo T il recettore delle diidropiridine sente la depolarizzazione e cambia forma. Nel muscolo scheletrico è unito meccanicamente al recettore della rianodina del reticolo che gli sta di fronte (triade)."
+   },
+   {
+    "da": ["reticolo sarcoplasmatico"],
+    "a": ["Ca²⁺"],
+    "enzima": "recettore della rianodina (RyR1)",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "Il recettore della rianodina si apre e il Ca²⁺ esce dal reticolo nel citoplasma della fibra. La quantità di Ca²⁺ liberata decide se e quanto il muscolo si contrae."
+   },
+   {
+    "da": ["Ca²⁺"],
+    "a": ["siti dell'actina scoperti"],
+    "enzima": "troponina e tropomiosina",
+    "entra": [],
+    "esce": [],
+    "nota": "Il Ca²⁺ si lega alla troponina C. La troponina cambia forma e sposta la tropomiosina, che copriva i punti di aggancio dell'actina: ora la miosina può legarsi."
+   },
+   {
+    "da": ["siti dell'actina scoperti"],
+    "a": ["ponte actina-miosina"],
+    "enzima": "miosina",
+    "entra": [],
+    "esce": ["fosfato (Pi)"],
+    "nota": "La testa della miosina, già «caricata» con ADP e fosfato, si attacca all'actina e forma un ponte trasversale. Il distacco del fosfato fa partire il colpo di forza."
+   },
+   {
+    "da": ["ponte actina-miosina"],
+    "a": ["colpo di forza"],
+    "enzima": "miosina",
+    "entra": [],
+    "esce": ["ADP"],
+    "nota": "La testa ruota e trascina il filamento di actina verso il centro del sarcomero; poi l'ADP si stacca. I filamenti non si accorciano: scorrono uno sull'altro, le bande I e la zona H si restringono, la banda A resta uguale."
+   },
+   {
+    "da": ["colpo di forza"],
+    "a": ["testa della miosina carica"],
+    "enzima": "miosina",
+    "entra": ["ATP"],
+    "esce": [],
+    "nota": "Un nuovo ATP si lega alla testa e la stacca dall'actina (senza ATP la testa resta attaccata: rigor mortis). La miosina scinde l'ATP in ADP e fosfato, che restano legati, e la testa torna in posizione carica. Il ciclo si ripete finché ci sono Ca²⁺ e ATP."
+   },
+   {
+    "da": ["Ca²⁺"],
+    "a": ["rilasciamento muscolare"],
+    "enzima": "pompa SERCA",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "Quando il motoneurone smette di inviare impulsi, la pompa SERCA riporta il Ca²⁺ nel reticolo usando ATP. Il Ca²⁺ si stacca dalla troponina, la tropomiosina ricopre l'actina e il muscolo si rilascia: anche il rilasciamento consuma energia."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Nervo → acetilcolina → recettori nicotinici → potenziale d'azione della fibra → tubuli T",
+   "Recettore delle diidropiridine → recettore della rianodina → il Ca²⁺ esce dal reticolo",
+   "Ca²⁺ + troponina → actina scoperta → ciclo dei ponti trasversali (1 ATP per ogni ciclo di ogni testa)",
+   "Rilasciamento: pompa SERCA (ATP) riporta il Ca²⁺ nel reticolo"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "Le parti del muscolo, dal grande al piccolo",
+    "voci": [
+     ["Organo e cellula", ["muscolo scheletrico", "fibra muscolare"]],
+     ["Unità che si accorcia", ["sarcomero"]],
+     ["Filamento sottile e filamento spesso", ["actina", "miosina"]]
+    ]
+   },
+   {
+    "titolo": "Quando la contrazione non funziona",
+    "voci": [
+     ["Anticorpi contro i recettori della placca", ["miastenia gravis"]],
+     ["Farmaci che bloccano la placca (anestesia)", ["bloccanti neuromuscolari"]],
+     ["Troppo Ca²⁺ liberato dal reticolo", ["ipertermia maligna"]],
+     ["Manca l'ATP per staccare i ponti", ["rigor mortis"]]
+    ]
+   },
+   {
+    "titolo": "Le scorte di energia del muscolo",
+    "voci": [
+     ["Pronto subito (pochi secondi)", ["fosfocreatina"]],
+     ["Zucchero di riserva nel muscolo", ["glicogeno"]],
+     ["Dove si fa più ATP (con ossigeno)", ["mitocondrio"]]
+    ]
+   }
+  ]
+ },
+ "ciclo cardiaco": {
+  "titolo": "Ciclo cardiaco: sistole e diastole in un battito",
+  "dove": "Cuore: atri, ventricoli, valvole atrioventricolari (mitrale e tricuspide) e semilunari (aortica e polmonare), sistema di conduzione",
+  "inizio": "sistole atriale",
+  "intro": "Il ciclo cardiaco è ciò che succede in un battito: la contrazione (sistole) e il rilasciamento (diastole). A 75 battiti al minuto dura circa 0,8 secondi, e la diastole occupa circa due terzi del tempo. Le valvole si aprono e si chiudono solo per differenza di pressione: così il sangue va in un solo verso. Il cuore destro e il sinistro fanno lo stesso ciclo insieme; qui seguiamo il sinistro.",
+  "fasi": [
+   {"da": 1, "nome": "Fine della diastole: gli atri si contraggono e l'impulso arriva ai ventricoli"},
+   {"da": 3, "nome": "Sistole ventricolare: i ventricoli si contraggono e si svuotano"},
+   {"da": 6, "nome": "Diastole ventricolare: i ventricoli si rilasciano e si riempiono"}
+  ],
+  "passaggi": [
+   {
+    "da": ["sistole atriale"],
+    "a": ["eccitazione dei ventricoli"],
+    "enzima": "nodo atrioventricolare",
+    "entra": [],
+    "esce": [],
+    "nota": "Gli atri si contraggono (onda P dell'ECG) e completano il riempimento dei ventricoli. Il nodo atrioventricolare ritarda l'impulso di circa un decimo di secondo: così i ventricoli si contraggono solo dopo essersi riempiti."
+   },
+   {
+    "da": ["eccitazione dei ventricoli"],
+    "a": ["contrazione isovolumetrica"],
+    "enzima": "fascio di His e fibre di Purkinje",
+    "entra": [],
+    "esce": [],
+    "nota": "Il fascio di His e le fibre di Purkinje portano l'impulso a tutti i ventricoli (complesso QRS). I ventricoli iniziano a contrarsi: la pressione supera quella degli atri e le valvole mitrale e tricuspide si chiudono. È il primo tono cardiaco."
+   },
+   {
+    "da": ["contrazione isovolumetrica"],
+    "a": ["eiezione rapida"],
+    "enzima": "ventricolo sinistro",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "Tutte le valvole sono chiuse: la pressione sale molto ma il volume non cambia (circa 110-120 mL, volume telediastolico). Quando la pressione del ventricolo sinistro supera quella dell'aorta (circa 80 mmHg) la valvola aortica si apre. La forza di questa contrazione decide quanto sangue uscirà."
+   },
+   {
+    "da": ["eiezione rapida"],
+    "a": ["eiezione lenta"],
+    "enzima": "aorta",
+    "entra": [],
+    "esce": [],
+    "nota": "Il sangue esce velocemente: la pressione nel ventricolo e nell'aorta arriva a circa 120 mmHg. Nel primo terzo dell'eiezione esce la maggior parte della gittata. L'aorta elastica si dilata e accumula una parte del sangue."
+   },
+   {
+    "da": ["eiezione lenta"],
+    "a": ["rilasciamento isovolumetrico"],
+    "enzima": "valvola aortica",
+    "entra": [],
+    "esce": [],
+    "nota": "I ventricoli si ripolarizzano (onda T) e la spinta cala. Quando la pressione del ventricolo scende sotto quella dell'aorta, la valvola aortica (e la polmonare) si chiude: è il secondo tono. Sono usciti circa 70 mL (gittata sistolica) e ne restano circa 40-50 mL (volume telesistolico)."
+   },
+   {
+    "da": ["rilasciamento isovolumetrico"],
+    "a": ["riempimento rapido"],
+    "enzima": "valvola mitrale",
+    "entra": [],
+    "esce": [],
+    "nota": "Tutte le valvole sono di nuovo chiuse e la pressione del ventricolo crolla senza che cambi il volume. Quando scende sotto quella dell'atrio, la mitrale (e la tricuspide) si apre."
+   },
+   {
+    "da": ["riempimento rapido"],
+    "a": ["diastasi"],
+    "enzima": "ritorno venoso",
+    "entra": [],
+    "esce": [],
+    "nota": "Il sangue accumulato negli atri entra di colpo nei ventricoli: nel primo terzo della diastole avviene gran parte del riempimento. Poi il flusso rallenta (diastasi) e arriva solo il sangue che torna dalle vene."
+   },
+   {
+    "da": ["diastasi"],
+    "a": ["sistole atriale"],
+    "enzima": "nodo senoatriale",
+    "entra": [],
+    "esce": [],
+    "nota": "Il nodo senoatriale fa partire un nuovo impulso e gli atri si contraggono: aggiungono circa il 20% del riempimento a riposo, di più quando il cuore batte veloce. Il ciclo ricomincia."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Sistole: contrazione isovolumetrica (tutte le valvole chiuse) → eiezione (aortica e polmonare aperte)",
+   "Diastole: rilasciamento isovolumetrico (tutte chiuse) → riempimento (mitrale e tricuspide aperte)",
+   "Primo tono = chiusura di mitrale e tricuspide; secondo tono = chiusura di aortica e polmonare",
+   "Gittata sistolica circa 70 mL; gittata cardiaca = gittata sistolica × frequenza (circa 5 L/min a riposo)"
+  ],
+  "dopo": {
+   "titolo": "Come il cuore cambia quanto pompa",
+   "strade": [
+    {
+     "condizione": "Torna più sangue al cuore",
+     "da": "ritorno venoso",
+     "a": "gittata sistolica",
+     "enzima": "legge di Frank-Starling",
+     "entra": [],
+     "esce": [],
+     "nota": "Più il ventricolo si riempie, più le sue fibre vengono stirate e più forte si contraggono: il cuore pompa tutto il sangue che riceve."
+    },
+    {
+     "condizione": "Simpatico attivo (sforzo, paura, emorragia)",
+     "da": "noradrenalina",
+     "a": "frequenza cardiaca",
+     "enzima": "recettori β1",
+     "entra": [],
+     "esce": [],
+     "nota": "La noradrenalina sui recettori β1 accelera il nodo senoatriale, velocizza la conduzione e rende la contrazione più forte. A frequenze alte si accorcia soprattutto la diastole."
+    },
+    {
+     "condizione": "Parasimpatico attivo (riposo)",
+     "da": "acetilcolina",
+     "a": "frequenza cardiaca",
+     "enzima": "nervo vago",
+     "entra": [],
+     "esce": [],
+     "nota": "Il nervo vago libera acetilcolina sui recettori muscarinici M2 del nodo senoatriale e del nodo atrioventricolare: il cuore rallenta. A riposo prevale il tono del vago."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Ascoltare e registrare il ciclo cardiaco",
+    "voci": [
+     ["I toni del cuore (fonendoscopio)", ["primo tono cardiaco", "secondo tono cardiaco"]],
+     ["Rumori da valvole malate", ["soffi cardiaci"]],
+     ["Il tracciato elettrico", ["elettrocardiogramma (ECG)"]],
+     ["Farmaci per i disturbi del ritmo", ["antiaritmici"]]
+    ]
+   }
+  ]
+ },
+ "regolazione della pressione arteriosa": {
+  "titolo": "Regolazione della pressione arteriosa: barocettori, sistema nervoso autonomo e ormoni",
+  "dove": "Barocettori (seno carotideo e arco aortico), bulbo (tronco encefalico), cuore, arteriole, surrene e reni",
+  "inizio": "pressione arteriosa bassa",
+  "intro": "La pressione arteriosa dipende da quanto sangue pompa il cuore (gittata cardiaca) e da quanto sono strette le arteriole (resistenze periferiche): PA = GC × RPT. Se la pressione cala, per esempio quando ci alziamo in piedi di colpo, i barocettori lo segnalano al bulbo in pochi secondi. Il simpatico allora accelera il cuore e stringe i vasi. In minuti e ore intervengono gli ormoni (renina-angiotensina-aldosterone, ADH), mentre a lungo termine è il rene a decidere, regolando sale e acqua.",
+  "fasi": [
+   {"da": 1, "nome": "Il sensore: i barocettori sentono il calo"},
+   {"da": 2, "nome": "Il centro di controllo: il bulbo"},
+   {"da": 4, "nome": "Risposta rapida (secondi): simpatico su cuore e vasi"},
+   {"da": 7, "nome": "Risposta lenta (minuti-giorni): ormoni e rene"},
+   {"da": 10, "nome": "Ritorno all'equilibrio"}
+  ],
+  "passaggi": [
+   {
+    "da": ["pressione arteriosa bassa"],
+    "a": ["segnali dei barocettori"],
+    "enzima": "barocettori",
+    "entra": [],
+    "esce": [],
+    "nota": "I barocettori sono terminazioni nervose nella parete del seno carotideo e dell'arco aortico che sentono lo stiramento. Se la pressione cala la parete si stira meno e i barocettori mandano meno impulsi."
+   },
+   {
+    "da": ["segnali dei barocettori"],
+    "a": ["centro cardiovascolare del bulbo"],
+    "enzima": "nucleo del tratto solitario",
+    "entra": [],
+    "esce": [],
+    "nota": "Gli impulsi viaggiano nel nervo glossofaringeo (dal seno carotideo) e nel vago (dall'arco aortico) fino al nucleo del tratto solitario nel bulbo, che li confronta con il valore normale."
+   },
+   {
+    "da": ["centro cardiovascolare del bulbo"],
+    "a": ["attivazione del simpatico"],
+    "enzima": "sistema nervoso autonomo",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "Con meno impulsi dai barocettori il bulbo riduce il tono del vago e aumenta quello del simpatico. È il riflesso barocettivo: agisce in pochi secondi ed è il regolatore più rapido della pressione."
+   },
+   {
+    "da": ["attivazione del simpatico"],
+    "a": ["aumento della gittata cardiaca"],
+    "enzima": "recettori β1",
+    "entra": ["noradrenalina"],
+    "esce": [],
+    "nota": "La noradrenalina sui recettori β1 del cuore fa aumentare la frequenza e la forza della contrazione: il cuore pompa più sangue al minuto."
+   },
+   {
+    "da": ["attivazione del simpatico"],
+    "a": ["vasocostrizione"],
+    "enzima": "recettori α1",
+    "entra": ["noradrenalina"],
+    "esce": [],
+    "nota": "Sui recettori α1 della muscolatura liscia la noradrenalina stringe le arteriole (aumentano le resistenze periferiche) e le vene (torna più sangue al cuore)."
+   },
+   {
+    "da": ["attivazione del simpatico"],
+    "a": ["adrenalina"],
+    "enzima": "midollare del surrene",
+    "entra": [],
+    "esce": [],
+    "nota": "Il simpatico stimola la midollare del surrene a liberare nel sangue adrenalina (e un po' di noradrenalina), che rinforza gli effetti su cuore e vasi."
+   },
+   {
+    "da": ["attivazione del simpatico"],
+    "a": ["renina"],
+    "enzima": "cellule iuxtaglomerulari",
+    "entra": [],
+    "esce": [],
+    "nota": "Il simpatico (recettori β1) e la pressione bassa nell'arteriola afferente fanno liberare renina dal rene: parte il sistema renina-angiotensina, che agisce in minuti e ore."
+   },
+   {
+    "da": ["renina"],
+    "a": ["angiotensina II"],
+    "enzima": "enzima di conversione dell'angiotensina (ACE)",
+    "entra": [],
+    "esce": [],
+    "nota": "La renina trasforma l'angiotensinogeno in angiotensina I, che l'ACE trasforma in angiotensina II. L'angiotensina II stringe i vasi, fa produrre aldosterone e ADH e fa venire sete."
+   },
+   {
+    "da": ["angiotensina II"],
+    "a": ["aumento del volume del sangue"],
+    "enzima": "rene",
+    "entra": [],
+    "esce": [],
+    "nota": "Aldosterone e ADH fanno trattenere al rene sodio e acqua, e la sete fa bere: il volume del sangue aumenta. È il controllo a lungo termine: il rene elimina più o meno sale e acqua finché la pressione non torna normale."
+   },
+   {
+    "da": ["aumento della gittata cardiaca", "vasocostrizione", "aumento del volume del sangue"],
+    "a": ["pressione arteriosa normale"],
+    "enzima": "feedback negativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Più gittata, più resistenze e più volume riportano la pressione alla norma. I barocettori tornano a scaricare come prima e il simpatico si calma."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Pressione arteriosa = gittata cardiaca × resistenze periferiche",
+   "Secondi: barocettori → bulbo → simpatico (cuore più veloce e forte, vasi più stretti) e meno vago",
+   "Minuti-ore: renina-angiotensina-aldosterone e ADH trattengono sodio e acqua e stringono i vasi",
+   "Giorni: il rene regola il volume del sangue; quando la pressione è alta elimina più sale e acqua"
+  ],
+  "dopo": {
+   "titolo": "Quando la pressione sale e i collegamenti con il rene",
+   "strade": [
+    {
+     "condizione": "Pressione alta",
+     "da": "pressione arteriosa alta",
+     "a": "pressione arteriosa normale",
+     "enzima": "barocettori",
+     "entra": [],
+     "esce": [],
+     "nota": "I barocettori stirati mandano più impulsi: il bulbo aumenta il tono del vago (il cuore rallenta) e riduce il simpatico (i vasi si allargano). La pressione scende."
+    },
+    {
+     "condizione": "Troppo volume di sangue (atri distesi)",
+     "da": "distensione degli atri",
+     "a": "eliminazione di sodio e acqua",
+     "enzima": "peptide natriuretico atriale (ANP)",
+     "entra": [],
+     "esce": [],
+     "nota": "Le cellule degli atri stirate liberano ANP, che fa eliminare sodio e acqua con l'urina, allarga i vasi e frena renina e aldosterone."
+    },
+    {
+     "condizione": "La cascata ormonale nei dettagli",
+     "da": "angiotensina II",
+     "a": "aldosterone",
+     "enzima": "zona glomerulosa della corteccia surrenale",
+     "entra": [],
+     "esce": [],
+     "nota": "L'aldosterone fa riassorbire sodio e acqua nel rene ed eliminare potassio.",
+     "prossimo": "sistema renina-angiotensina"
+    },
+    {
+     "condizione": "Controllo a lungo termine: il rene",
+     "da": "pressione arteriosa alta",
+     "a": "urina",
+     "enzima": "rene",
+     "entra": [],
+     "esce": [],
+     "nota": "Con la pressione alta il rene elimina più sodio e acqua (natriuresi da pressione): il volume cala e la pressione scende.",
+     "prossimo": "formazione dell'urina"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Farmaci contro la pressione alta",
+    "voci": [
+     ["Bloccano il sistema renina-angiotensina", ["ACE-inibitori", "sartani"]],
+     ["Fanno eliminare sale e acqua", ["diuretici"]],
+     ["Rilasciano la muscolatura dei vasi", ["calcio-antagonisti"]],
+     ["Frenano il cuore (recettori β1)", ["beta-bloccanti"]]
+    ]
+   },
+   {
+    "titolo": "Quando la regolazione non basta",
+    "voci": [
+     ["Pressione alta per anni", ["ipertensione arteriosa"]],
+     ["Calo di pressione quando ci si alza", ["ipotensione ortostatica"]]
+    ]
+   }
+  ]
+ },
+ "termoregolazione": {
+  "titolo": "Termoregolazione: come il corpo tiene la temperatura a circa 37 °C",
+  "dove": "Termocettori della pelle e dell'ipotalamo, ipotalamo (centro di controllo), vasi della pelle, ghiandole sudoripare, muscoli scheletrici, grasso bruno, tiroide",
+  "inizio": "variazione della temperatura",
+  "intro": "La temperatura interna del corpo resta vicina a 37 °C anche se fuori fa freddo o caldo. L'ipotalamo funziona come un termostato: riceve le informazioni dai sensori della temperatura, le confronta con il valore desiderato (set point) e comanda le risposte. Con il freddo il corpo conserva e produce calore; con il caldo lo disperde, soprattutto con la pelle e il sudore.",
+  "fasi": [
+   {"da": 1, "nome": "Sensori e termostato"},
+   {"da": 3, "nome": "Se fa freddo: conservare e produrre calore"},
+   {"da": 7, "nome": "Se fa caldo: disperdere calore"},
+   {"da": 9, "nome": "Ritorno all'equilibrio"}
+  ],
+  "passaggi": [
+   {
+    "da": ["variazione della temperatura"],
+    "a": ["segnali dei termocettori"],
+    "enzima": "termocettori",
+    "entra": [],
+    "esce": [],
+    "nota": "I termocettori della pelle sentono il freddo e il caldo dell'ambiente; neuroni sensibili alla temperatura nell'ipotalamo sentono la temperatura del sangue, cioè quella interna."
+   },
+   {
+    "da": ["segnali dei termocettori"],
+    "a": ["punto di regolazione (set point)"],
+    "enzima": "ipotalamo",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "L'area preottica dell'ipotalamo confronta la temperatura con il set point (circa 37 °C) e decide le risposte: le attiva in proporzione a quanto la temperatura si allontana dal valore desiderato."
+   },
+   {
+    "da": ["punto di regolazione (set point)"],
+    "a": ["vasocostrizione cutanea"],
+    "enzima": "sistema nervoso autonomo",
+    "entra": [],
+    "esce": [],
+    "nota": "Con il freddo il simpatico stringe i vasi della pelle: arriva meno sangue caldo in superficie e si perde meno calore. La pelle diventa pallida e fredda, mentre l'interno resta caldo."
+   },
+   {
+    "da": ["punto di regolazione (set point)"],
+    "a": ["brivido"],
+    "enzima": "muscolo scheletrico",
+    "entra": ["ATP"],
+    "esce": ["calore"],
+    "nota": "Se non basta, l'ipotalamo fa contrarre i muscoli in modo involontario e ritmico: è il brivido. Il lavoro muscolare non produce movimento utile ma tanto calore, e può aumentare di alcune volte la produzione di calore."
+   },
+   {
+    "da": ["punto di regolazione (set point)"],
+    "a": ["termogenesi senza brivido"],
+    "enzima": "termogenina (UCP1)",
+    "entra": ["noradrenalina"],
+    "esce": ["calore"],
+    "nota": "La noradrenalina del simpatico attiva il grasso bruno: la termogenina fa rientrare i protoni nel mitocondrio senza fare ATP e l'energia diventa calore. È molto importante nel neonato."
+   },
+   {
+    "da": ["punto di regolazione (set point)"],
+    "a": ["tiroxina (T4)"],
+    "enzima": "tiroide",
+    "entra": [],
+    "esce": [],
+    "nota": "Con un freddo che dura a lungo l'ipotalamo libera più TRH e la tiroide più ormoni: il metabolismo di tutte le cellule accelera e produce più calore. È una risposta lenta (settimane)."
+   },
+   {
+    "da": ["punto di regolazione (set point)"],
+    "a": ["vasodilatazione cutanea"],
+    "enzima": "sistema nervoso autonomo",
+    "entra": [],
+    "esce": ["calore"],
+    "nota": "Con il caldo il simpatico smette di stringere i vasi della pelle: arriva più sangue caldo in superficie e il calore passa all'ambiente per irraggiamento, conduzione e convezione. La pelle diventa rossa e calda."
+   },
+   {
+    "da": ["punto di regolazione (set point)"],
+    "a": ["sudorazione"],
+    "enzima": "ghiandola sudoripara",
+    "entra": ["H₂O"],
+    "esce": ["calore"],
+    "nota": "Le ghiandole sudoripare eccrine sono comandate da fibre simpatiche che liberano acetilcolina. Il sudore evapora e porta via calore (circa 0,58 kcal per ogni grammo d'acqua). Quando fuori fa più caldo che sulla pelle, è l'unico modo per perdere calore."
+   },
+   {
+    "da": ["vasocostrizione cutanea", "brivido", "termogenesi senza brivido", "vasodilatazione cutanea", "sudorazione"],
+    "a": ["temperatura corporea normale"],
+    "enzima": "feedback negativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Quando la temperatura torna vicina al set point, l'ipotalamo spegne le risposte. Anche il comportamento aiuta molto: coprirsi, cercare l'ombra, bere, muoversi meno o di più."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Sensori (pelle e ipotalamo) → ipotalamo (set point circa 37 °C) → risposte",
+   "Freddo: vasocostrizione della pelle, brivido, grasso bruno, ormoni tiroidei",
+   "Caldo: vasodilatazione della pelle e sudore (evaporazione)",
+   "Febbre: il set point viene alzato; ipertermia: il set point è normale ma il calore non riesce a uscire"
+  ],
+  "dopo": {
+   "titolo": "Quando il termostato viene spostato o non basta",
+   "strade": [
+    {
+     "condizione": "Infezione o infiammazione",
+     "da": "pirogeni",
+     "a": "febbre",
+     "enzima": "prostaglandina E₂",
+     "entra": [],
+     "esce": [],
+     "nota": "Le citochine (IL-1, IL-6, TNF-α) fanno produrre prostaglandina E₂ vicino all'ipotalamo, e il set point sale. Il corpo «sente freddo» rispetto al nuovo valore: brividi e vasocostrizione finché la temperatura non lo raggiunge. Gli antipiretici bloccano la produzione di prostaglandine."
+    },
+    {
+     "condizione": "Caldo estremo, umidità alta o sforzo intenso",
+     "da": "temperatura corporea alta",
+     "a": "colpo di calore",
+     "enzima": "evaporazione",
+     "entra": [],
+     "esce": [],
+     "nota": "Con l'aria molto umida il sudore non evapora e il calore non esce. Il set point è normale, ma la temperatura sale oltre i 40 °C e il cervello comincia a soffrire: è un'emergenza."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Come il corpo perde calore",
+    "voci": [
+     ["Raggi infrarossi verso l'ambiente", ["irraggiamento"]],
+     ["Contatto con oggetti, aria o acqua", ["conduzione e convezione"]],
+     ["Il sudore che evapora", ["evaporazione"]]
+    ]
+   },
+   {
+    "titolo": "Febbre e farmaci",
+    "voci": [
+     ["Chi alza il termostato", ["pirogeni", "prostaglandina E₂"]],
+     ["Farmaci che lo riabbassano", ["antipiretici"]]
+    ]
+   }
+  ]
+ },
+ "formazione dell'urina": {
+  "titolo": "Formazione dell'urina: filtrazione, riassorbimento e secrezione nel nefrone",
+  "dove": "Rene: glomerulo e capsula di Bowman, tubulo prossimale, ansa di Henle, tubulo distale, tubulo e dotto collettore",
+  "inizio": "arteriola afferente",
+  "intro": "L'urina si forma con tre processi. La filtrazione: il glomerulo fa passare nel nefrone acqua e piccole molecole del plasma (circa 180 litri al giorno). Il riassorbimento: i tubuli riportano nel sangue quasi tutto (oltre il 99% dell'acqua). La secrezione: i tubuli aggiungono H⁺, K⁺ e farmaci da eliminare. Escrezione = filtrazione − riassorbimento + secrezione. Alla fine restano 1-2 litri di urina al giorno, più o meno concentrata a seconda dell'ADH.",
+  "fasi": [
+   {"da": 1, "nome": "Filtrazione: dal sangue al filtrato"},
+   {"da": 3, "nome": "Riassorbimento e secrezione in serie"},
+   {"da": 7, "nome": "Regolazione finale: aldosterone e ADH"}
+  ],
+  "passaggi": [
+   {
+    "da": ["arteriola afferente"],
+    "a": ["glomerulo"],
+    "enzima": "autoregolazione renale",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "I reni ricevono circa un quinto della gittata cardiaca. L'arteriola afferente si stringe quando la pressione sale (risposta miogena) e quando la macula densa sente troppo NaCl (feedback tubulo-glomerulare): così la filtrazione resta quasi costante."
+   },
+   {
+    "da": ["glomerulo"],
+    "a": ["filtrato glomerulare"],
+    "enzima": "barriera di filtrazione glomerulare",
+    "entra": ["H₂O", "Na⁺", "K⁺", "glucosio", "amminoacidi", "urea"],
+    "esce": [],
+    "nota": "La pressione nei capillari del glomerulo spinge il plasma nella capsula di Bowman; la pressione nella capsula e quella oncotica delle proteine si oppongono. Passano acqua e piccole molecole, non le cellule né quasi le proteine. Si filtrano circa 125 mL al minuto (VFG)."
+   },
+   {
+    "da": ["filtrato glomerulare"],
+    "a": ["filtrato isosmotico"],
+    "enzima": "tubulo contorto prossimale",
+    "entra": ["H⁺", "anioni e cationi organici"],
+    "esce": ["Na⁺", "H₂O", "glucosio", "amminoacidi", "bicarbonato (HCO₃⁻)"],
+    "nota": "Il tubulo prossimale riassorbe circa due terzi di sodio e acqua e normalmente tutto il glucosio (con l'SGLT2) e gli amminoacidi. L'acqua segue il sale, quindi il filtrato resta isosmotico al plasma. Secerne H⁺ e molti farmaci (anioni e cationi organici)."
+   },
+   {
+    "da": ["filtrato isosmotico"],
+    "a": ["filtrato concentrato"],
+    "enzima": "acquaporina 1",
+    "entra": [],
+    "esce": ["H₂O"],
+    "nota": "Il ramo discendente dell'ansa di Henle lascia passare l'acqua ma poco sale. Scendendo nella midollare, sempre più salata, l'acqua esce e il filtrato diventa concentrato."
+   },
+   {
+    "da": ["filtrato concentrato"],
+    "a": ["filtrato diluito"],
+    "enzima": "cotrasportatore Na⁺-K⁺-2Cl⁻ (NKCC2)",
+    "entra": [],
+    "esce": ["Na⁺", "K⁺", "Cl⁻"],
+    "nota": "Il ramo ascendente spesso pompa fuori sale (circa un quarto del sodio filtrato) ma è impermeabile all'acqua. Il sale rende salata la midollare (moltiplicatore in controcorrente) e il filtrato che risale diventa diluito."
+   },
+   {
+    "da": ["filtrato diluito"],
+    "a": ["tubulo collettore"],
+    "enzima": "cotrasportatore Na⁺-Cl⁻ (NCC)",
+    "entra": [],
+    "esce": ["Na⁺", "Cl⁻", "Ca²⁺"],
+    "nota": "Il tubulo contorto distale riassorbe un'altra piccola parte di NaCl e, sotto il controllo del paratormone, il calcio. Anche questo tratto è poco permeabile all'acqua."
+   },
+   {
+    "da": ["tubulo collettore"],
+    "a": ["dotto collettore"],
+    "enzima": "aldosterone",
+    "entra": ["K⁺", "H⁺"],
+    "esce": ["Na⁺"],
+    "nota": "Nelle cellule principali l'aldosterone aumenta i canali del sodio (ENaC) e la pompa Na⁺/K⁺: il Na⁺ viene riassorbito e il K⁺ secreto. Le cellule intercalate secernono H⁺ e aiutano a regolare l'equilibrio acido-base."
+   },
+   {
+    "da": ["dotto collettore"],
+    "a": ["urina"],
+    "enzima": "ADH (vasopressina)",
+    "entra": [],
+    "esce": ["H₂O", "urea"],
+    "nota": "Con l'ADH il dotto collettore inserisce acquaporine 2 e l'acqua esce verso la midollare salata: l'urina diventa scarsa e concentrata (fino a circa 1200 mOsm/L). Senza ADH l'acqua resta nel dotto e l'urina è abbondante e diluita (fino a circa 50 mOsm/L)."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Filtrazione: circa 125 mL/min, 180 litri al giorno di filtrato senza cellule né proteine",
+   "Riassorbimento: prossimale circa 2/3 di Na⁺ e acqua e tutto il glucosio; ansa circa 1/4 del Na⁺; distale e collettore il resto",
+   "Secrezione: H⁺, K⁺, farmaci e acidi organici passano dal sangue al tubulo",
+   "Aldosterone (sodio e potassio) e ADH (acqua) decidono la composizione finale: 1-2 litri di urina al giorno"
+  ],
+  "dopo": {
+   "titolo": "Collegamenti con gli altri percorsi",
+   "strade": [
+    {
+     "condizione": "Pressione bassa o poco sodio",
+     "da": "pressione arteriosa bassa",
+     "a": "renina",
+     "enzima": "cellule iuxtaglomerulari",
+     "entra": [],
+     "esce": [],
+     "nota": "Quando la macula densa sente poco NaCl o la pressione nell'arteriola afferente cala, il rene libera renina e trattiene sodio e acqua.",
+     "prossimo": "sistema renina-angiotensina"
+    },
+    {
+     "condizione": "Dopo il rene",
+     "da": "urina",
+     "a": "vescica",
+     "enzima": "ureteri",
+     "entra": [],
+     "esce": [],
+     "nota": "L'urina si raccoglie nella pelvi renale e scende lungo gli ureteri fino alla vescica.",
+     "prossimo": "apparato urinario"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Diuretici: dove agiscono nel nefrone",
+    "voci": [
+     ["Tubulo prossimale (eliminano glucosio e un po' di sodio)", ["inibitori dell'SGLT2 (gliflozine)"]],
+     ["Ansa di Henle (i più potenti)", ["diuretici dell'ansa"]],
+     ["Tubulo distale", ["tiazidici"]],
+     ["Dotto collettore (risparmiano il potassio)", ["spironolattone"]]
+    ]
+   },
+   {
+    "titolo": "Misurare il lavoro dei reni",
+    "voci": [
+     ["Quanto filtrano i glomeruli", ["velocità di filtrazione glomerulare (VFG)"]],
+     ["L'esame del sangue più usato", ["creatinina"]],
+     ["Quanto plasma viene «ripulito» di una sostanza", ["clearance renale"]]
+    ]
+   }
+  ]
+ }
+}

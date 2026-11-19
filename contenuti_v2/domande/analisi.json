@@ -1,0 +1,2566 @@
+[
+ {
+  "id": "ANA-001",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim x→2 di (x² − 4)/(x − 2)?",
+  "opzioni": {
+   "A": "0",
+   "B": "2",
+   "C": "4",
+   "D": "+∞",
+   "E": "Il limite non esiste"
+  },
+  "giusta": "C",
+  "perche": "Sostituendo direttamente x = 2 si ottiene la forma indeterminata 0/0, che non è un risultato ma un segnale: bisogna semplificare. Il numeratore è una differenza di quadrati, x² − 4 = (x − 2)(x + 2), quindi la frazione vale x + 2 per ogni x ≠ 2. Il limite è perciò 2 + 2 = 4. La trappola tipica è scrivere 0/0 = 0 oppure concludere che il limite non esiste solo perché la funzione non è definita in 2.",
+  "semplice": "Il limite guarda dove «va» la funzione avvicinandosi a 2, non che cosa succede esattamente in 2. Per esempio in x = 1,99 la frazione vale 3,99 e in x = 2,01 vale 4,01: si avvicina a 4.",
+  "passaggi": [
+   "1. Sostituzione: (4 − 4)/(2 − 2) = 0/0, forma indeterminata",
+   "2. Scomposizione: x² − 4 = (x − 2)(x + 2)",
+   "3. Semplificazione per x ≠ 2: la frazione diventa x + 2",
+   "4. Limite: 2 + 2 = 4"
+  ],
+  "concetto": "forma indeterminata 0/0"
+ },
+ {
+  "id": "ANA-002",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale il limite notevole lim x→0 di sin(x)/x (x in radianti)?",
+  "opzioni": {
+   "A": "1",
+   "B": "0",
+   "C": "+∞",
+   "D": "π",
+   "E": "Il limite non esiste"
+  },
+  "giusta": "A",
+  "perche": "È il limite notevole fondamentale delle funzioni goniometriche: per x vicino a 0, misurato in radianti, sin x è quasi uguale a x, quindi il rapporto tende a 1. Si dimostra con il teorema del confronto, confrontando le aree di un triangolo, di un settore circolare e di un secondo triangolo. La trappola è pensare che, essendo sin 0 = 0, il limite valga 0: in realtà si ha la forma 0/0. Se l'angolo fosse in gradi il limite sarebbe π/180, per questo si usano i radianti.",
+  "semplice": "Con la calcolatrice in radianti: sin(0,01) ≈ 0,0099998. Diviso per 0,01 dà quasi esattamente 1. Più x è piccolo, più il seno «somiglia» all'angolo stesso.",
+  "passaggi": [
+   "Sostituendo x = 0 si ottiene sin 0 / 0 = 0/0: è una forma indeterminata, non vale 0.",
+   "Ricorda che, in radianti, per x vicino a 0 si ha sin x ≈ x.",
+   "Quindi il rapporto sin x / x si avvicina a x/x = 1.",
+   "Il risultato si dimostra con il teorema del confronto (aree di triangoli e settore circolare).",
+   "Il limite notevole vale 1."
+  ],
+  "concetto": "limite notevole del seno"
+ },
+ {
+  "id": "ANA-003",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim x→+∞ di (3x² + 1)/(2x² − x)?",
+  "opzioni": {
+   "A": "0",
+   "B": "3/2",
+   "C": "+∞",
+   "D": "3",
+   "E": "1"
+  },
+  "giusta": "B",
+  "perche": "Numeratore e denominatore sono polinomi dello stesso grado (2), quindi il limite all'infinito è il rapporto dei coefficienti dei termini di grado massimo: 3/2. Lo si vede raccogliendo x² sopra e sotto: (3 + 1/x²)/(2 − 1/x), che tende a 3/2. La trappola è guardare solo il numeratore e rispondere +∞, oppure dimenticare il coefficiente del denominatore e rispondere 3.",
+  "semplice": "Per x molto grande i termini «piccoli» (+1 e −x) non contano quasi nulla. Con x = 1000 la frazione vale circa 3 000 001/1 999 000 ≈ 1,5008.",
+  "passaggi": [
+   "1. Forma ∞/∞",
+   "2. Raccolgo x²: (3 + 1/x²)/(2 − 1/x)",
+   "3. 1/x² → 0 e 1/x → 0",
+   "4. Limite = 3/2"
+  ],
+  "concetto": "limite di funzioni razionali"
+ },
+ {
+  "id": "ANA-004",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "test",
+  "domanda": "Quanto vale lim x→0 di (1 − cos x)/x²?",
+  "opzioni": {
+   "A": "0",
+   "B": "1",
+   "C": "2",
+   "D": "1/2",
+   "E": "+∞"
+  },
+  "giusta": "D",
+  "perche": "È un limite notevole: vicino a 0 si ha 1 − cos x ≈ x²/2, quindi il rapporto tende a 1/2. Si può ricavare moltiplicando sopra e sotto per (1 + cos x): si ottiene sin²x / [x²(1 + cos x)], cioè (sin x/x)² · 1/(1 + cos x) → 1 · 1/2. La trappola è confonderlo con lim (1 − cos x)/x, che vale 0, oppure dimenticare il fattore 1/2.",
+  "semplice": "Con x = 0,1: cos(0,1) ≈ 0,995004, quindi 1 − cos x ≈ 0,004996 e diviso per 0,01 dà circa 0,4996, cioè quasi 0,5.",
+  "passaggi": [
+   "1. Moltiplico per (1 + cos x)/(1 + cos x)",
+   "2. Ottengo sin²x / [x²(1 + cos x)]",
+   "3. (sin x / x)² → 1 e 1/(1 + cos x) → 1/2",
+   "4. Limite = 1/2"
+  ],
+  "concetto": "limite notevole del coseno"
+ },
+ {
+  "id": "ANA-005",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim x→+∞ di (1 + 1/x)^x?",
+  "opzioni": {
+   "A": "1",
+   "B": "+∞",
+   "C": "e ≈ 2,718",
+   "D": "0",
+   "E": "e²"
+  },
+  "giusta": "C",
+  "perche": "Questo limite definisce il numero di Nepero e ≈ 2,718. È una forma indeterminata del tipo 1^∞: la base tende a 1 ma l'esponente cresce senza limite, e le due tendenze si bilanciano. La trappola è pensare che «1 elevato a qualsiasi cosa fa 1»: questo vale solo se la base è esattamente 1, non se tende a 1.",
+  "semplice": "È l'idea dell'interesse composto: con un tasso del 100% diviso in x rate sempre più piccole, il capitale non diventa infinito ma si moltiplica al massimo per e. Con x = 1000 si ottiene già circa 2,7169.",
+  "passaggi": [
+   "Riconosci la forma: la base 1 + 1/x tende a 1, l'esponente x tende a +∞.",
+   "È la forma indeterminata 1^∞: «1 alla qualsiasi fa 1» vale solo se la base è esattamente 1.",
+   "Questo limite è proprio la definizione del numero di Nepero.",
+   "Il limite vale e ≈ 2,718."
+  ],
+  "concetto": "numero di Nepero"
+ },
+ {
+  "id": "ANA-006",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "test",
+  "domanda": "Quanto vale lim x→+∞ di (1 + 3/x)^x?",
+  "opzioni": {
+   "A": "e",
+   "B": "e³",
+   "C": "3",
+   "D": "e^(1/3)",
+   "E": "1"
+  },
+  "giusta": "B",
+  "perche": "Si riconduce al limite notevole di e ponendo t = x/3: l'espressione diventa [(1 + 1/t)^t]³, che tende a e³. In generale lim (1 + a/x)^x = e^a. La trappola più comune è rispondere e (ignorando il 3) oppure 1, pensando che la base tenda a 1 e quindi tutto valga 1.",
+  "semplice": "Il numero al denominatore della frazione finisce all'esponente di e. Per esempio (1 + 2/x)^x → e² e (1 − 1/x)^x → e^(−1).",
+  "passaggi": [
+   "1. Pongo t = x/3, quindi x = 3t",
+   "2. (1 + 3/x)^x = (1 + 1/t)^(3t) = [(1 + 1/t)^t]³",
+   "3. (1 + 1/t)^t → e",
+   "4. Limite = e³"
+  ],
+  "concetto": "limite notevole generalizzato"
+ },
+ {
+  "id": "ANA-007",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim x→0 di (eˣ − 1)/x?",
+  "opzioni": {
+   "A": "0",
+   "B": "e",
+   "C": "+∞",
+   "D": "1/e",
+   "E": "1"
+  },
+  "giusta": "E",
+  "perche": "È un limite notevole legato all'esponenziale: vicino a 0 si ha eˣ ≈ 1 + x, quindi eˣ − 1 ≈ x e il rapporto tende a 1. Equivale a dire che la derivata di eˣ in 0 vale e⁰ = 1. La trappola è sostituire e scrivere 0/0 = 0, oppure rispondere e perché nel testo compare la base e.",
+  "semplice": "Con x = 0,001: e^0,001 ≈ 1,0010005, quindi (eˣ − 1)/x ≈ 1,0005. La curva y = eˣ in 0 ha esattamente pendenza 1.",
+  "passaggi": [
+   "Sostituendo x = 0: (e⁰ − 1)/0 = 0/0, forma indeterminata.",
+   "Vicino a 0 vale eˣ ≈ 1 + x, quindi eˣ − 1 ≈ x.",
+   "Il rapporto diventa circa x/x = 1.",
+   "Equivale alla derivata di eˣ in 0: e⁰ = 1.",
+   "Il limite vale 1."
+  ],
+  "concetto": "limite notevole dell'esponenziale"
+ },
+ {
+  "id": "ANA-008",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "università",
+  "domanda": "Quanto vale lim x→+∞ di (√(x² + x) − x)?",
+  "opzioni": {
+   "A": "0",
+   "B": "1",
+   "C": "+∞",
+   "D": "1/2",
+   "E": "−1/2"
+  },
+  "giusta": "D",
+  "perche": "È una forma ∞ − ∞, che si risolve razionalizzando: si moltiplica e si divide per √(x² + x) + x. Al numeratore resta (x² + x) − x² = x, al denominatore √(x² + x) + x ≈ 2x, quindi il limite è 1/2. La trappola è pensare che √(x² + x) e x siano «uguali all'infinito» e concludere 0: la loro differenza resta finita ma non nulla.",
+  "semplice": "Con x = 10 000: √(100 010 000) ≈ 10 000,49999, e sottraendo 10 000 resta circa 0,5. I due termini crescono insieme, ma il primo resta sempre mezzo passo avanti.",
+  "passaggi": [
+   "1. Forma ∞ − ∞",
+   "2. Moltiplico e divido per √(x² + x) + x",
+   "3. Numeratore: (x² + x) − x² = x",
+   "4. Denominatore: x(√(1 + 1/x) + 1) → x · 2",
+   "5. Limite = 1/2"
+  ],
+  "concetto": "razionalizzazione ∞ − ∞"
+ },
+ {
+  "id": "ANA-009",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Che tipo di discontinuità ha in x = 0 la funzione f(x) = sin(x)/x?",
+  "opzioni": {
+   "A": "Discontinuità di salto (prima specie)",
+   "B": "Discontinuità di seconda specie",
+   "C": "Nessuna: f è continua in 0",
+   "D": "Asintoto verticale in x = 0",
+   "E": "Discontinuità eliminabile (terza specie)"
+  },
+  "giusta": "E",
+  "perche": "La funzione non è definita in 0, ma il limite per x → 0 esiste finito e vale 1 sia da destra sia da sinistra. Quando il limite esiste finito ma la funzione non c'è (o ha un valore diverso), la discontinuità è eliminabile: basta porre f(0) = 1 per renderla continua. La trappola è dire che f è continua in 0: non può esserlo, perché 0 non appartiene al dominio. Non c'è nemmeno un asintoto verticale, dato che il limite è finito.",
+  "semplice": "È come un grafico con un solo puntino mancante: la curva arriva a quota 1 da entrambi i lati, manca solo il punto. Si «tappa il buco» definendo f(0) = 1.",
+  "passaggi": [
+   "In x = 0 la funzione sin x / x non è definita: non può essere continua lì.",
+   "Il limite per x → 0 (da destra e da sinistra) esiste finito e vale 1.",
+   "Limite finito ma funzione non definita (o con valore diverso): discontinuità eliminabile.",
+   "Non c'è asintoto verticale, perché il limite è finito; ponendo f(0) = 1 la funzione diventa continua.",
+   "È una discontinuità eliminabile (terza specie)."
+  ],
+  "concetto": "discontinuità eliminabile"
+ },
+ {
+  "id": "ANA-010",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Che tipo di discontinuità ha in x = 0 la funzione f(x) = x/|x|?",
+  "opzioni": {
+   "A": "Discontinuità di salto (prima specie)",
+   "B": "Discontinuità eliminabile",
+   "C": "Discontinuità di seconda specie con asintoto verticale",
+   "D": "Nessuna discontinuità",
+   "E": "Punto angoloso"
+  },
+  "giusta": "A",
+  "perche": "Per x > 0 la funzione vale 1, per x < 0 vale −1. I limiti destro e sinistro in 0 esistono finiti ma sono diversi (1 e −1): è la definizione di discontinuità di prima specie, con un salto di ampiezza 2. La trappola è confonderla con un punto angoloso: il punto angoloso riguarda le derivate di una funzione continua, mentre qui è la funzione stessa a fare un salto.",
+  "semplice": "È la funzione «segno»: dice solo se un numero è positivo o negativo. Il grafico è un gradino: a sinistra di 0 sta a −1, a destra salta a +1.",
+  "passaggi": [
+   "Studia il segno: per x > 0, x/|x| = x/x = 1; per x < 0, x/|x| = x/(−x) = −1.",
+   "Limite destro in 0: 1; limite sinistro: −1.",
+   "I limiti laterali esistono finiti ma sono diversi: salto di ampiezza 1 − (−1) = 2.",
+   "Non è un punto angoloso: quello riguarda le derivate di una funzione continua.",
+   "È una discontinuità di salto (prima specie)."
+  ],
+  "concetto": "discontinuità di salto"
+ },
+ {
+  "id": "ANA-011",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "test",
+  "domanda": "Per quale valore di k la funzione f(x) = x² + k se x < 1, f(x) = 2x + 3 se x ≥ 1 è continua in tutto ℝ?",
+  "opzioni": {
+   "A": "k = 5",
+   "B": "k = 3",
+   "C": "k = 1",
+   "D": "k = −4",
+   "E": "k = 4"
+  },
+  "giusta": "E",
+  "perche": "I due pezzi sono polinomi, quindi continui; l'unico punto da controllare è x = 1. Il limite da sinistra vale 1 + k, il valore e il limite da destra valgono 2 · 1 + 3 = 5. La continuità richiede 1 + k = 5, cioè k = 4. La trappola è uguagliare k direttamente a 5 dimenticando il termine x² = 1, oppure sbagliare il segno risolvendo l'equazione.",
+  "semplice": "I due pezzi del grafico devono «incontrarsi» nello stesso punto, senza scalini. In x = 1 il secondo pezzo è a quota 5, quindi anche il primo deve arrivare a 5: 1 + k = 5.",
+  "passaggi": [
+   "1. Limite sinistro in 1: 1² + k = 1 + k",
+   "2. Valore e limite destro: 2 · 1 + 3 = 5",
+   "3. Continuità: 1 + k = 5",
+   "4. k = 4"
+  ],
+  "concetto": "continuità di funzione a tratti"
+ },
+ {
+  "id": "ANA-012",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "università",
+  "domanda": "Quanto vale lim x→0⁺ di x · ln x?",
+  "opzioni": {
+   "A": "0",
+   "B": "−∞",
+   "C": "1",
+   "D": "+∞",
+   "E": "Il limite non esiste"
+  },
+  "giusta": "A",
+  "perche": "È una forma 0 · (−∞). Scrivendola come ln x / (1/x) diventa −∞/+∞ e con de l'Hôpital si ottiene (1/x)/(−1/x²) = −x → 0. In termini di gerarchia degli infiniti, il logaritmo va all'infinito più lentamente di qualsiasi potenza, quindi il fattore x «vince». La trappola è pensare che −∞ prevalga sempre e rispondere −∞.",
+  "semplice": "Con x = 0,001: ln x ≈ −6,9, e moltiplicato per 0,001 dà circa −0,0069. Il logaritmo scende, ma troppo piano rispetto a quanto rapidamente x va a zero.",
+  "passaggi": [
+   "1. Forma 0 · (−∞)",
+   "2. Riscrivo: ln x / (1/x), forma −∞/∞",
+   "3. de l'Hôpital: (1/x) / (−1/x²) = −x",
+   "4. −x → 0"
+  ],
+  "concetto": "gerarchia degli infiniti"
+ },
+ {
+  "id": "ANA-013",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "test",
+  "domanda": "Per quale delle seguenti equazioni il teorema degli zeri garantisce almeno una soluzione nell'intervallo [0, 1]?",
+  "opzioni": {
+   "A": "x² + 1 = 0",
+   "B": "x³ + x − 1 = 0",
+   "C": "eˣ = 0",
+   "D": "x² + x + 1 = 0",
+   "E": "x³ + 2 = 0"
+  },
+  "giusta": "B",
+  "perche": "Il teorema degli zeri dice che se f è continua su [a, b] e f(a), f(b) hanno segni opposti, allora f si annulla almeno una volta in (a, b). Per f(x) = x³ + x − 1 si ha f(0) = −1 < 0 e f(1) = 1 > 0, quindi c'è una radice tra 0 e 1. Le altre funzioni hanno lo stesso segno agli estremi (sono positive su tutto [0, 1]), e il teorema non garantisce nulla. La trappola è credere che il teorema valga anche «al contrario»: segni uguali agli estremi non escludono radici in generale, ma qui non ce ne sono.",
+  "semplice": "Se a mezzanotte la temperatura è −1 °C e a mezzogiorno è +1 °C, in qualche momento è stata esattamente 0 °C: una funzione continua non può saltare lo zero.",
+  "passaggi": [
+   "1. f(x) = x³ + x − 1 è continua (polinomio)",
+   "2. f(0) = −1",
+   "3. f(1) = 1",
+   "4. Segni opposti ⇒ esiste c in (0, 1) con f(c) = 0"
+  ],
+  "concetto": "teorema degli zeri"
+ },
+ {
+  "id": "ANA-014",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "università",
+  "domanda": "Che cosa garantisce il teorema di Weierstrass?",
+  "opzioni": {
+   "A": "Una funzione continua su un intervallo aperto (a, b) ha massimo e minimo assoluti",
+   "B": "Una funzione che ha massimo e minimo su [a, b] è continua",
+   "C": "Una funzione continua su [a, b] è anche derivabile",
+   "D": "Una funzione continua su un intervallo chiuso e limitato [a, b] ha massimo e minimo assoluti",
+   "E": "Una funzione continua su tutto ℝ ha massimo e minimo assoluti"
+  },
+  "giusta": "D",
+  "perche": "Il teorema richiede due ipotesi insieme: continuità e intervallo chiuso e limitato (compatto). Se manca una delle due, il massimo o il minimo possono non esistere: 1/x su (0, 1] non ha massimo, x su ℝ non ha né massimo né minimo. La trappola è invertire il teorema: una funzione può avere massimo e minimo anche senza essere continua. Inoltre continuità non implica derivabilità.",
+  "semplice": "Se percorri un sentiero di montagna dall'inizio alla fine senza salti, ci sarà un punto più alto e uno più basso del percorso. Se il sentiero non ha fine, potresti salire per sempre.",
+  "passaggi": [
+   "Il teorema di Weierstrass ha due ipotesi: f continua e intervallo chiuso e limitato [a, b].",
+   "Con l'intervallo aperto la tesi può cadere: 1/x su (0, 1] non ha massimo.",
+   "Su tutto ℝ può cadere: f(x) = x non ha né massimo né minimo.",
+   "Il teorema non si inverte e non parla di derivabilità.",
+   "Tesi: f continua su [a, b] ha massimo e minimo assoluti."
+  ],
+  "concetto": "teorema di Weierstrass"
+ },
+ {
+  "id": "ANA-015",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "test",
+  "domanda": "Quanto vale lim x→+∞ di ln(x)/x?",
+  "opzioni": {
+   "A": "+∞",
+   "B": "1",
+   "C": "e",
+   "D": "0",
+   "E": "Il limite non esiste"
+  },
+  "giusta": "D",
+  "perche": "Numeratore e denominatore tendono entrambi a +∞, ma x cresce molto più in fretta di ln x: nella gerarchia degli infiniti il logaritmo è più lento di qualsiasi potenza positiva. Perciò il rapporto tende a 0. Lo conferma de l'Hôpital: (1/x)/1 → 0. La trappola è dire +∞ perché il numeratore diverge, o 1 perché «infinito diviso infinito fa 1».",
+  "semplice": "Con x = 1 000 000 si ha ln x ≈ 13,8: il rapporto è circa 0,0000138. Il logaritmo cresce, ma pochissimo.",
+  "passaggi": [
+   "Numeratore e denominatore tendono a +∞: forma ∞/∞.",
+   "Gerarchia degli infiniti: il logaritmo cresce più lentamente di qualsiasi potenza positiva di x.",
+   "Controllo con de l'Hôpital: (ln x)' / (x)' = (1/x)/1 = 1/x → 0.",
+   "Il limite vale 0."
+  ],
+  "concetto": "gerarchia degli infiniti"
+ },
+ {
+  "id": "ANA-016",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Qual è l'asintoto obliquo della funzione f(x) = (2x² + 1)/(x − 1)?",
+  "opzioni": {
+   "A": "y = 2x",
+   "B": "y = 2x − 2",
+   "C": "y = 2x + 2",
+   "D": "y = 2",
+   "E": "x = 1"
+  },
+  "giusta": "C",
+  "perche": "Il numeratore ha grado una unità più del denominatore, quindi c'è un asintoto obliquo y = mx + q. Si trova m = lim f(x)/x = 2 e q = lim (f(x) − 2x) = lim (2x + 1)/(x − 1) = 2. Equivalentemente, dividendo i polinomi: 2x² + 1 = (x − 1)(2x + 2) + 3. La trappola è fermarsi a m e scrivere y = 2x, oppure confondere l'asintoto obliquo con quello verticale x = 1.",
+  "semplice": "Per x molto grandi la curva si comporta quasi come la retta y = 2x + 2: la differenza vale 3/(x − 1), che diventa piccolissima.",
+  "passaggi": [
+   "1. m = lim f(x)/x = lim (2x² + 1)/(x² − x) = 2",
+   "2. q = lim [f(x) − 2x] = lim (2x + 1)/(x − 1) = 2",
+   "3. Asintoto: y = 2x + 2"
+  ],
+  "concetto": "asintoto obliquo"
+ },
+ {
+  "id": "ANA-017",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "università",
+  "domanda": "Quale scrittura corrisponde alla definizione di lim x→x₀ f(x) = L?",
+  "opzioni": {
+   "A": "Esiste ε > 0 tale che per ogni δ > 0, 0 < |x − x₀| < δ implica |f(x) − L| < ε",
+   "B": "Per ogni ε > 0 esiste δ > 0 tale che 0 < |x − x₀| < δ implica |f(x) − L| < ε",
+   "C": "Per ogni δ > 0 esiste ε > 0 tale che 0 < |x − x₀| < δ implica |f(x) − L| < ε",
+   "D": "f(x₀) = L",
+   "E": "Per ogni ε > 0 esiste δ > 0 tale che |f(x) − L| < δ implica |x − x₀| < ε"
+  },
+  "giusta": "B",
+  "perche": "La definizione dice che, per quanto piccola sia la tolleranza ε richiesta sul valore, si trova un intorno di x₀ (di raggio δ) in cui f(x) dista da L meno di ε. L'ordine dei quantificatori è essenziale: «per ogni ε» viene prima, δ dipende da ε. La trappola è scambiare i quantificatori o i ruoli di x e f(x), oppure credere che il limite coincida con il valore f(x₀): il punto x₀ è escluso (0 < |x − x₀|) e f può anche non essere definita lì.",
+  "semplice": "È una sfida: tu scegli quanto vicino a L vuoi stare (ε), io ti rispondo con quanto vicino a x₀ devi prendere x (δ). Se vinco sempre io, qualunque ε tu scelga, il limite è L.",
+  "passaggi": [
+   "Il limite descrive una tolleranza ε sul valore f(x) scelta per prima, a piacere.",
+   "Per ogni ε > 0 deve esistere un raggio δ > 0 attorno a x₀ (δ dipende da ε).",
+   "Per gli x con 0 < |x − x₀| < δ deve valere |f(x) − L| < ε; il punto x₀ è escluso.",
+   "Scartare le opzioni con i quantificatori invertiti, con i ruoli di x e f(x) scambiati, o con f(x₀) = L.",
+   "Resta la B: per ogni ε > 0 esiste δ > 0 tale che 0 < |x − x₀| < δ implica |f(x) − L| < ε."
+  ],
+  "concetto": "definizione ε-δ di limite"
+ },
+ {
+  "id": "ANA-018",
+  "materia": "Analisi matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "università",
+  "domanda": "Quanto vale lim x→0 di sin(3x)/tan(5x)?",
+  "opzioni": {
+   "A": "5/3",
+   "B": "1",
+   "C": "3/5",
+   "D": "0",
+   "E": "15"
+  },
+  "giusta": "C",
+  "perche": "Vicino a 0 valgono le equivalenze sin(3x) ~ 3x e tan(5x) ~ 5x, che derivano dai limiti notevoli sin t/t → 1 e tan t/t → 1. Il rapporto si comporta quindi come 3x/5x = 3/5. La trappola è semplificare «seno con tangente» e rispondere 1, oppure invertire il rapporto.",
+  "semplice": "Per angoli piccoli seno e tangente sono quasi uguali all'angolo. Con x = 0,001: sin(0,003)/tan(0,005) ≈ 0,003/0,005 = 0,6.",
+  "passaggi": [
+   "1. sin(3x) / tan(5x) = [sin(3x)/(3x)] · [(5x)/tan(5x)] · (3x)/(5x)",
+   "2. I primi due fattori tendono a 1",
+   "3. (3x)/(5x) = 3/5",
+   "4. Limite = 3/5"
+  ],
+  "concetto": "infinitesimi equivalenti"
+ },
+ {
+  "id": "ANA-019",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = x³ · sin x?",
+  "opzioni": {
+   "A": "3x² sin x + x³ cos x",
+   "B": "3x² cos x",
+   "C": "3x² sin x − x³ cos x",
+   "D": "x³ cos x",
+   "E": "3x² sin x"
+  },
+  "giusta": "A",
+  "perche": "Si usa la regola del prodotto: (f · g)' = f' · g + f · g'. Con f = x³ e g = sin x si ottiene 3x² · sin x + x³ · cos x. La trappola più comune è derivare i due fattori separatamente e moltiplicare le derivate (3x² cos x), che è sbagliato: la derivata di un prodotto non è il prodotto delle derivate.",
+  "semplice": "Ogni fattore «prende il suo turno» per essere derivato mentre l'altro resta fermo, poi si sommano i due risultati. Per esempio (x · eˣ)' = eˣ + x eˣ.",
+  "passaggi": [
+   "1. Regola del prodotto: (fg)' = f'g + fg'",
+   "2. f = x³, f' = 3x²",
+   "3. g = sin x, g' = cos x",
+   "4. Risultato: 3x² sin x + x³ cos x"
+  ],
+  "concetto": "regola del prodotto"
+ },
+ {
+  "id": "ANA-020",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = e^(2x)?",
+  "opzioni": {
+   "A": "e^(2x)",
+   "B": "2x · e^(2x − 1)",
+   "C": "e^(2x)/2",
+   "D": "2eˣ",
+   "E": "2e^(2x)"
+  },
+  "giusta": "E",
+  "perche": "È una funzione composta: esponenziale di 2x. Per la regola della catena si deriva l'esterna (l'esponenziale resta uguale) e si moltiplica per la derivata dell'interna, che è 2. Il risultato è 2e^(2x). La trappola è trattare e^(2x) come una potenza e usare la regola di xⁿ (abbassando l'esponente), oppure dimenticare il fattore 2.",
+  "semplice": "L'esponenziale «si deriva in sé stesso», ma bisogna sempre moltiplicare per la derivata di quello che sta all'esponente. Per esempio (e^(5x))' = 5e^(5x).",
+  "passaggi": [
+   "1. Esterna: eᵘ, derivata eᵘ",
+   "2. Interna: u = 2x, derivata 2",
+   "3. Catena: e^(2x) · 2 = 2e^(2x)"
+  ],
+  "concetto": "regola della catena"
+ },
+ {
+  "id": "ANA-021",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = ln(x² + 1)?",
+  "opzioni": {
+   "A": "1/(x² + 1)",
+   "B": "2x · ln(x² + 1)",
+   "C": "1/(2x)",
+   "D": "2x/(x² + 1)²",
+   "E": "2x/(x² + 1)"
+  },
+  "giusta": "E",
+  "perche": "La derivata di ln u è u'/u. Qui u = x² + 1 e u' = 2x, quindi la derivata è 2x/(x² + 1). La trappola tipica è dimenticare la derivata dell'argomento e scrivere solo 1/(x² + 1), oppure confondere la regola con quella del quoziente e mettere il denominatore al quadrato.",
+  "semplice": "Per il logaritmo di qualcosa: «derivata di quel qualcosa, diviso quel qualcosa». Per esempio (ln(3x))' = 3/(3x) = 1/x.",
+  "passaggi": [
+   "1. u = x² + 1, u' = 2x",
+   "2. (ln u)' = u'/u",
+   "3. Risultato: 2x/(x² + 1)"
+  ],
+  "concetto": "derivata del logaritmo"
+ },
+ {
+  "id": "ANA-022",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = x/(x + 1)?",
+  "opzioni": {
+   "A": "−1/(x + 1)²",
+   "B": "1",
+   "C": "x/(x + 1)²",
+   "D": "1/(x + 1)²",
+   "E": "(2x + 1)/(x + 1)²"
+  },
+  "giusta": "D",
+  "perche": "Con la regola del quoziente: (f/g)' = (f'g − fg')/g². Qui f' = 1 e g' = 1, quindi il numeratore è 1 · (x + 1) − x · 1 = 1 e la derivata è 1/(x + 1)². La trappola è invertire l'ordine al numeratore (fg' − f'g), che cambia il segno, oppure sommare invece di sottrarre.",
+  "semplice": "Nel quoziente conta l'ordine: «derivata di sopra per sotto, meno sopra per derivata di sotto, tutto fratto sotto al quadrato». Qui il risultato è sempre positivo: la funzione cresce.",
+  "passaggi": [
+   "1. f = x, f' = 1; g = x + 1, g' = 1",
+   "2. Numeratore: 1 · (x + 1) − x · 1 = 1",
+   "3. Denominatore: (x + 1)²",
+   "4. Risultato: 1/(x + 1)²"
+  ],
+  "concetto": "regola del quoziente"
+ },
+ {
+  "id": "ANA-023",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Qual è l'equazione della retta tangente al grafico di y = x² nel punto di ascissa x = 3?",
+  "opzioni": {
+   "A": "y = 6x + 9",
+   "B": "y = 3x",
+   "C": "y = 2x − 3",
+   "D": "y = 6x − 3",
+   "E": "y = 6x − 9"
+  },
+  "giusta": "E",
+  "perche": "La retta tangente in x₀ ha equazione y = f(x₀) + f'(x₀)(x − x₀). Qui f(3) = 9 e f'(x) = 2x, quindi f'(3) = 6. Si ottiene y = 9 + 6(x − 3) = 6x − 9. La trappola è usare come pendenza il valore della funzione (9) o l'ascissa (3) invece della derivata, oppure sbagliare il segno nello sviluppo.",
+  "semplice": "La derivata dà la pendenza, il punto dà il passaggio. La retta y = 6x − 9 tocca la parabola in (3, 9): infatti 6 · 3 − 9 = 9.",
+  "passaggi": [
+   "1. f(3) = 9",
+   "2. f'(x) = 2x, f'(3) = 6",
+   "3. y − 9 = 6(x − 3)",
+   "4. y = 6x − 9"
+  ],
+  "concetto": "retta tangente"
+ },
+ {
+  "id": "ANA-024",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Qual è il significato geometrico della derivata f'(x₀)?",
+  "opzioni": {
+   "A": "L'area sotto il grafico di f tra 0 e x₀",
+   "B": "Il valore della funzione nel punto x₀",
+   "C": "Il coefficiente angolare della retta tangente al grafico di f nel punto di ascissa x₀",
+   "D": "L'ordinata del punto in cui la tangente incontra l'asse y",
+   "E": "La distanza del punto (x₀, f(x₀)) dall'origine"
+  },
+  "giusta": "C",
+  "perche": "La derivata è il limite del rapporto incrementale [f(x₀ + h) − f(x₀)]/h, che è la pendenza della retta secante. Quando h → 0 la secante diventa la tangente, quindi f'(x₀) è la sua pendenza. La trappola è confondere la derivata con l'integrale (area) o con il valore f(x₀): la derivata misura quanto rapidamente la funzione cambia, non quanto vale.",
+  "semplice": "Se il grafico è una strada vista di lato, la derivata è la pendenza della strada in quel punto. Derivata 0 vuol dire tratto in piano, derivata grande vuol dire salita ripida.",
+  "passaggi": [
+   "La derivata è il limite del rapporto incrementale [f(x₀ + h) − f(x₀)]/h.",
+   "Quel rapporto è la pendenza della retta secante tra x₀ e x₀ + h.",
+   "Per h → 0 la secante diventa la tangente al grafico in x₀.",
+   "Non è un'area (quella è l'integrale) né il valore f(x₀).",
+   "f'(x₀) è il coefficiente angolare della retta tangente nel punto di ascissa x₀."
+  ],
+  "concetto": "interpretazione geometrica"
+ },
+ {
+  "id": "ANA-025",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "test",
+  "domanda": "Quanto vale la derivata di f(x) = √x nel punto x = 4?",
+  "opzioni": {
+   "A": "1/2",
+   "B": "1/4",
+   "C": "2",
+   "D": "1/8",
+   "E": "4"
+  },
+  "giusta": "B",
+  "perche": "Scrivendo √x = x^(1/2), la derivata è (1/2)x^(−1/2) = 1/(2√x). In x = 4 si ha 1/(2 · 2) = 1/4. La trappola è fermarsi a 1/2 dimenticando la radice al denominatore, oppure calcolare √4 = 2 e derivare quel numero.",
+  "semplice": "La radice cresce sempre più piano: in x = 4 la sua pendenza è solo 1/4, in x = 100 sarebbe 1/20.",
+  "passaggi": [
+   "1. √x = x^(1/2)",
+   "2. f'(x) = (1/2) x^(−1/2) = 1/(2√x)",
+   "3. f'(4) = 1/(2 · 2) = 1/4"
+  ],
+  "concetto": "derivata della radice"
+ },
+ {
+  "id": "ANA-026",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "test",
+  "domanda": "Qual è la derivata di f(x) = sin²x?",
+  "opzioni": {
+   "A": "2 sin x",
+   "B": "cos²x",
+   "C": "2 sin x cos x",
+   "D": "2 cos x",
+   "E": "−2 sin x cos x"
+  },
+  "giusta": "C",
+  "perche": "sin²x significa (sin x)², quindi è una composta: potenza esterna e seno interno. La regola della catena dà 2 · sin x · (sin x)' = 2 sin x cos x, che si può scrivere anche sin(2x). La trappola è derivare solo la potenza (2 sin x) dimenticando la derivata del seno, oppure elevare al quadrato la derivata (cos²x).",
+  "semplice": "Si deriva «da fuori verso dentro»: prima il quadrato, poi il seno. È lo stesso schema di (3x + 1)², la cui derivata è 2(3x + 1) · 3.",
+  "passaggi": [
+   "1. Esterna: u², derivata 2u",
+   "2. Interna: u = sin x, derivata cos x",
+   "3. Risultato: 2 sin x cos x = sin 2x"
+  ],
+  "concetto": "regola della catena"
+ },
+ {
+  "id": "ANA-027",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "test",
+  "domanda": "Un punto si muove con legge oraria s(t) = 2t³ − 3t² (s in metri, t in secondi). Qual è la sua velocità all'istante t = 2 s?",
+  "opzioni": {
+   "A": "4 m/s",
+   "B": "12 m/s",
+   "C": "8 m/s",
+   "D": "18 m/s",
+   "E": "24 m/s"
+  },
+  "giusta": "B",
+  "perche": "La velocità istantanea è la derivata della posizione rispetto al tempo: v(t) = s'(t) = 6t² − 6t. In t = 2 si ha v = 24 − 12 = 12 m/s. La trappola è calcolare la posizione s(2) = 16 − 12 = 4 m e scambiarla per la velocità, oppure usare la velocità media s(2)/2.",
+  "semplice": "La derivata della posizione dice quanto in fretta cambia la posizione: è il tachimetro. Allo stesso modo la derivata della velocità è l'accelerazione.",
+  "passaggi": [
+   "1. v(t) = s'(t) = 6t² − 6t",
+   "2. v(2) = 6 · 4 − 6 · 2",
+   "3. v(2) = 24 − 12 = 12 m/s"
+  ],
+  "concetto": "derivata come velocità"
+ },
+ {
+  "id": "ANA-028",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Che cosa si può dire della funzione f(x) = |x| nel punto x = 0?",
+  "opzioni": {
+   "A": "È continua e derivabile, con derivata 0",
+   "B": "È continua ma non derivabile: ha un punto angoloso",
+   "C": "Non è continua",
+   "D": "È derivabile ma non continua",
+   "E": "Ha una cuspide con tangente verticale"
+  },
+  "giusta": "B",
+  "perche": "Il limite di |x| per x → 0 vale 0 = f(0), quindi la funzione è continua. La derivata destra vale +1 e quella sinistra −1: sono finite ma diverse, perciò la derivata in 0 non esiste e il punto si chiama angoloso. La trappola è pensare che, essendo 0 un minimo, la derivata debba valere 0: ciò vale solo per funzioni derivabili. Inoltre una funzione derivabile è sempre continua, quindi «derivabile ma non continua» è impossibile.",
+  "semplice": "Il grafico di |x| è una «V»: nel vertice non si può appoggiare un'unica retta tangente, perché a sinistra la pendenza è −1 e a destra +1.",
+  "passaggi": [
+   "Continuità: lim x→0 |x| = 0 = f(0), quindi |x| è continua in 0.",
+   "Derivata destra: per x > 0, |x| = x, derivata +1.",
+   "Derivata sinistra: per x < 0, |x| = −x, derivata −1.",
+   "Derivate laterali finite ma diverse: la derivata in 0 non esiste, il punto è angoloso.",
+   "Risposta: continua ma non derivabile, con punto angoloso."
+  ],
+  "concetto": "punto angoloso"
+ },
+ {
+  "id": "ANA-029",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "università",
+  "domanda": "Quale delle seguenti affermazioni è sempre vera?",
+  "opzioni": {
+   "A": "Se f è derivabile in x₀, allora è continua in x₀",
+   "B": "Se f è continua in x₀, allora è derivabile in x₀",
+   "C": "Se f'(x₀) = 0, allora x₀ è un punto di massimo o di minimo",
+   "D": "Se f non è derivabile in x₀, allora non è continua in x₀",
+   "E": "Se f è continua su [a, b], allora è derivabile su (a, b)"
+  },
+  "giusta": "A",
+  "perche": "La derivabilità implica la continuità: f(x₀ + h) − f(x₀) = h · [rapporto incrementale], che tende a 0 · f'(x₀) = 0. Il viceversa è falso: |x| è continua ma non derivabile in 0. Anche f'(x₀) = 0 non basta per un estremo: x³ ha derivata nulla in 0 ma lì ha un flesso. La trappola è invertire l'implicazione o confondere la condizione necessaria con quella sufficiente.",
+  "semplice": "Per avere una tangente ben definita il grafico deve almeno essere «tutto attaccato». Ma un grafico attaccato può avere spigoli: continuità non basta per la derivata.",
+  "passaggi": [
+   "Scrivi f(x₀ + h) − f(x₀) = h · [f(x₀ + h) − f(x₀)]/h.",
+   "Se f è derivabile, per h → 0 questo tende a 0 · f'(x₀) = 0: f è continua in x₀.",
+   "Il viceversa è falso: |x| è continua ma non derivabile in 0 (esclude B, D, E).",
+   "f'(x₀) = 0 non basta per un estremo: x³ ha f'(0) = 0 ma in 0 ha un flesso (esclude C).",
+   "Sempre vera: se f è derivabile in x₀, allora è continua in x₀."
+  ],
+  "concetto": "derivabilità e continuità"
+ },
+ {
+  "id": "ANA-030",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "università",
+  "domanda": "Quanto vale lim x→0 di (eˣ − 1 − x)/x²?",
+  "opzioni": {
+   "A": "0",
+   "B": "1",
+   "C": "+∞",
+   "D": "2",
+   "E": "1/2"
+  },
+  "giusta": "E",
+  "perche": "Si ha la forma 0/0. Applicando de l'Hôpital una volta si ottiene (eˣ − 1)/(2x), ancora 0/0; una seconda volta dà eˣ/2 → 1/2. Lo stesso risultato si legge dallo sviluppo di Taylor eˣ = 1 + x + x²/2 + o(x²). La trappola è fermarsi dopo la prima applicazione credendo che il limite sia 0, o dimenticare il 2 che nasce derivando x².",
+  "semplice": "Togliendo a eˣ la sua parte «lineare» 1 + x resta circa x²/2: diviso per x² fa 1/2. Con x = 0,01 il rapporto vale circa 0,5017.",
+  "passaggi": [
+   "1. Forma 0/0",
+   "2. de l'Hôpital: (eˣ − 1)/(2x), ancora 0/0",
+   "3. de l'Hôpital: eˣ/2",
+   "4. In x = 0: 1/2"
+  ],
+  "concetto": "teorema di de l'Hôpital"
+ },
+ {
+  "id": "ANA-031",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "test",
+  "domanda": "Per la funzione f(x) = x² sull'intervallo [1, 3], in quale punto c è verificata la tesi del teorema di Lagrange?",
+  "opzioni": {
+   "A": "c = 1",
+   "B": "c = 3",
+   "C": "c = 4",
+   "D": "c = 2",
+   "E": "c = √5"
+  },
+  "giusta": "D",
+  "perche": "Lagrange garantisce un c in (a, b) con f'(c) = [f(b) − f(a)]/(b − a). Qui il rapporto vale (9 − 1)/2 = 4 e f'(c) = 2c, quindi 2c = 4 e c = 2. La trappola è scegliere 4, che è il valore della pendenza e non il punto, oppure gli estremi 1 o 3, che sono esclusi dalla tesi.",
+  "semplice": "Se in 2 ore percorri 160 km, la media è 80 km/h: in almeno un istante il tachimetro ha segnato esattamente 80 km/h. Qui la pendenza media è 4 e la pendenza istantanea vale 4 in x = 2.",
+  "passaggi": [
+   "1. Pendenza media: (f(3) − f(1))/(3 − 1) = (9 − 1)/2 = 4",
+   "2. f'(x) = 2x",
+   "3. 2c = 4 ⇒ c = 2",
+   "4. c = 2 è interno a (1, 3)"
+  ],
+  "concetto": "teorema di Lagrange"
+ },
+ {
+  "id": "ANA-032",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "università",
+  "domanda": "Qual è la derivata di f(x) = arctan x?",
+  "opzioni": {
+   "A": "1/(1 + x²)",
+   "B": "1/√(1 − x²)",
+   "C": "−1/(1 + x²)",
+   "D": "1/cos²x",
+   "E": "1 + x²"
+  },
+  "giusta": "A",
+  "perche": "Con la regola della funzione inversa: se y = arctan x, allora x = tan y e dx/dy = 1 + tan²y = 1 + x², quindi dy/dx = 1/(1 + x²). La trappola è confonderla con la derivata di arcsin x, che è 1/√(1 − x²), oppure con quella di tan x, che è 1/cos²x.",
+  "semplice": "L'arcotangente cresce sempre ma sempre più piano: in 0 ha pendenza 1, in x = 3 ha pendenza 1/10.",
+  "passaggi": [
+   "Poni y = arctan x, quindi x = tan y.",
+   "Deriva rispetto a y: dx/dy = 1 + tan²y = 1 + x².",
+   "Regola della funzione inversa: dy/dx = 1/(dx/dy) = 1/(1 + x²).",
+   "Non confondere con la derivata di arcsin x (1/√(1 − x²)) o di tan x (1/cos²x).",
+   "La derivata è 1/(1 + x²)."
+  ],
+  "concetto": "derivata delle inverse goniometriche"
+ },
+ {
+  "id": "ANA-033",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "università",
+  "domanda": "Qual è la derivata di f(x) = xˣ (per x > 0)?",
+  "opzioni": {
+   "A": "xˣ(ln x + 1)",
+   "B": "x · x^(x − 1)",
+   "C": "xˣ",
+   "D": "xˣ ln x",
+   "E": "x^(x − 1)"
+  },
+  "giusta": "A",
+  "perche": "Qui la variabile compare sia alla base sia all'esponente, quindi non valgono né la regola di xⁿ né quella di aˣ. Si scrive xˣ = e^(x ln x) e si deriva con la catena: e^(x ln x) · (ln x + 1) = xˣ(ln x + 1). La trappola è usare la regola delle potenze (risposta x · x^(x − 1) = xˣ) o quella dell'esponenziale (xˣ ln x), ognuna delle quali coglie solo metà del risultato.",
+  "semplice": "Il trucco è «portare tutto all'esponente» con e e logaritmo. In x = 1 la derivata vale 1 · (0 + 1) = 1.",
+  "passaggi": [
+   "1. xˣ = e^(x ln x)",
+   "2. (x ln x)' = ln x + 1",
+   "3. Derivata: e^(x ln x) · (ln x + 1) = xˣ(ln x + 1)"
+  ],
+  "concetto": "derivazione logaritmica"
+ },
+ {
+  "id": "ANA-034",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "università",
+  "domanda": "Quali sono le ipotesi del teorema di Rolle?",
+  "opzioni": {
+   "A": "f derivabile su [a, b] e f'(a) = f'(b)",
+   "B": "f continua su [a, b] e f(a) · f(b) < 0",
+   "C": "f continua su (a, b) e f(a) = f(b)",
+   "D": "f continua su [a, b], derivabile su (a, b) e f(a) = f(b)",
+   "E": "f derivabile su (a, b) e f(a) = 0"
+  },
+  "giusta": "D",
+  "perche": "Se f è continua sull'intervallo chiuso, derivabile all'interno e assume lo stesso valore agli estremi, allora esiste almeno un c in (a, b) con f'(c) = 0. La trappola è confonderlo con il teorema degli zeri, che richiede segni opposti agli estremi e dà uno zero di f, non della derivata. Togliere la derivabilità fa cadere la tesi: |x| su [−1, 1] ha valori uguali agli estremi ma nessun punto a derivata nulla.",
+  "semplice": "Se parti e arrivi alla stessa quota percorrendo un sentiero senza spigoli, in almeno un punto il sentiero è in piano: in cima a una salita o in fondo a una discesa.",
+  "passaggi": [
+   "Il teorema di Rolle ha tre ipotesi: f continua su [a, b] chiuso.",
+   "f derivabile all'interno, su (a, b).",
+   "Stesso valore agli estremi: f(a) = f(b).",
+   "f(a) · f(b) < 0 è invece l'ipotesi del teorema degli zeri; senza derivabilità la tesi cade (|x| su [−1, 1]).",
+   "Le ipotesi corrette sono quelle della D; la tesi è che esiste c in (a, b) con f'(c) = 0."
+  ],
+  "concetto": "teorema di Rolle"
+ },
+ {
+  "id": "ANA-035",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "superiori",
+  "domanda": "Quanto vale la derivata seconda di f(x) = x⁴ − 2x² nel punto x = 1?",
+  "opzioni": {
+   "A": "0",
+   "B": "8",
+   "C": "12",
+   "D": "4",
+   "E": "10"
+  },
+  "giusta": "B",
+  "perche": "La derivata prima è f'(x) = 4x³ − 4x, la seconda f''(x) = 12x² − 4. In x = 1 si ha 12 − 4 = 8. La trappola è calcolare la derivata prima in 1, che vale 0, e fermarsi lì, oppure dimenticare il termine −4 che nasce da −2x².",
+  "semplice": "La derivata seconda è la derivata della derivata: misura come cambia la pendenza. Un valore positivo come 8 dice che in quel punto il grafico è curvato verso l'alto.",
+  "passaggi": [
+   "1. f'(x) = 4x³ − 4x",
+   "2. f''(x) = 12x² − 4",
+   "3. f''(1) = 12 − 4 = 8"
+  ],
+  "concetto": "derivata seconda"
+ },
+ {
+  "id": "ANA-036",
+  "materia": "Analisi matematica",
+  "argomento": "Derivate",
+  "livello": "università",
+  "domanda": "Sia f(x) = x³ + x, che è invertibile. Quanto vale la derivata della funzione inversa f⁻¹ nel punto y = 2?",
+  "opzioni": {
+   "A": "4",
+   "B": "1/13",
+   "C": "13",
+   "D": "1/4",
+   "E": "1/2"
+  },
+  "giusta": "D",
+  "perche": "Per la derivata dell'inversa vale (f⁻¹)'(y) = 1/f'(x), dove x è il punto con f(x) = y. Poiché f(1) = 1 + 1 = 2, si usa x = 1: f'(x) = 3x² + 1, quindi f'(1) = 4 e (f⁻¹)'(2) = 1/4. La trappola è calcolare la derivata in x = 2 (che dà 13 e quindi 1/13) invece che nel punto corrispondente x = 1.",
+  "semplice": "Il grafico dell'inversa è il simmetrico rispetto alla bisettrice y = x, quindi le pendenze si scambiano con il loro reciproco. Se f sale di 4 per ogni passo, f⁻¹ sale di 1/4.",
+  "passaggi": [
+   "1. Cerco x con f(x) = 2: x³ + x = 2 ⇒ x = 1",
+   "2. f'(x) = 3x² + 1, f'(1) = 4",
+   "3. (f⁻¹)'(2) = 1/f'(1) = 1/4"
+  ],
+  "concetto": "derivata della funzione inversa"
+ },
+ {
+  "id": "ANA-037",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è il dominio della funzione f(x) = ln(x − 2)/(x − 5)?",
+  "opzioni": {
+   "A": "x > 2",
+   "B": "x ≥ 2 con x ≠ 5",
+   "C": "x > 2 con x ≠ 5",
+   "D": "x ≠ 5",
+   "E": "x > 5"
+  },
+  "giusta": "C",
+  "perche": "Bisogna imporre due condizioni insieme: l'argomento del logaritmo deve essere strettamente positivo (x − 2 > 0, cioè x > 2) e il denominatore deve essere diverso da zero (x ≠ 5). Mettendole a sistema si ottiene x > 2 con x ≠ 5. La trappola è dimenticare una delle due condizioni, oppure scrivere x ≥ 2, ma ln 0 non esiste.",
+  "semplice": "Il dominio è l'insieme dei numeri che si possono «mettere dentro» la funzione senza fare operazioni vietate. Qui le operazioni vietate sono due: logaritmo di un numero non positivo e divisione per zero.",
+  "passaggi": [
+   "1. Logaritmo: x − 2 > 0 ⇒ x > 2",
+   "2. Denominatore: x − 5 ≠ 0 ⇒ x ≠ 5",
+   "3. Intersezione: x > 2 e x ≠ 5, cioè (2, 5) ∪ (5, +∞)"
+  ],
+  "concetto": "dominio di una funzione"
+ },
+ {
+  "id": "ANA-038",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è il dominio della funzione f(x) = √(4 − x²)?",
+  "opzioni": {
+   "A": "(−2, 2)",
+   "B": "x ≥ 2",
+   "C": "[−2, 2]",
+   "D": "Tutto ℝ",
+   "E": "x ≤ 2"
+  },
+  "giusta": "C",
+  "perche": "La radice quadrata richiede un argomento maggiore o uguale a zero: 4 − x² ≥ 0, cioè x² ≤ 4, che dà −2 ≤ x ≤ 2. Gli estremi sono inclusi perché √0 = 0 esiste. La trappola è escludere gli estremi, come se ci fosse un denominatore, oppure risolvere solo x ≤ 2 dimenticando la parte negativa.",
+  "semplice": "Il grafico di questa funzione è una semicirconferenza di raggio 2 centrata nell'origine: esiste solo tra −2 e 2, estremi compresi.",
+  "passaggi": [
+   "1. Condizione: 4 − x² ≥ 0",
+   "2. x² ≤ 4",
+   "3. −2 ≤ x ≤ 2"
+  ],
+  "concetto": "dominio con radice"
+ },
+ {
+  "id": "ANA-039",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "La funzione f(x) = x³ − x è:",
+  "opzioni": {
+   "A": "Pari",
+   "B": "Dispari",
+   "C": "Né pari né dispari",
+   "D": "Periodica",
+   "E": "Sia pari sia dispari"
+  },
+  "giusta": "B",
+  "perche": "Si calcola f(−x) = (−x)³ − (−x) = −x³ + x = −(x³ − x) = −f(x): è la definizione di funzione dispari, e il grafico è simmetrico rispetto all'origine. La trappola è pensare che serva un esponente pari per avere simmetria, o confondere f(−x) = f(x) (pari) con f(−x) = −f(x). L'unica funzione sia pari sia dispari è quella identicamente nulla.",
+  "semplice": "Un polinomio con solo potenze dispari di x è dispari, uno con solo potenze pari è pari. Per esempio f(2) = 6 e f(−2) = −6.",
+  "passaggi": [
+   "1. f(−x) = (−x)³ − (−x)",
+   "2. = −x³ + x",
+   "3. = −(x³ − x) = −f(x) ⇒ dispari"
+  ],
+  "concetto": "simmetrie"
+ },
+ {
+  "id": "ANA-040",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è il punto di massimo relativo della funzione f(x) = x³ − 3x?",
+  "opzioni": {
+   "A": "(1, −2)",
+   "B": "(0, 0)",
+   "C": "(−1, 2)",
+   "D": "(−1, −2)",
+   "E": "(√3, 0)"
+  },
+  "giusta": "C",
+  "perche": "La derivata è f'(x) = 3x² − 3, che si annulla in x = ±1. Studiando il segno: f' > 0 per x < −1, f' < 0 tra −1 e 1, f' > 0 per x > 1. Quindi in x = −1 la funzione passa da crescente a decrescente (massimo) e f(−1) = −1 + 3 = 2. La trappola è scambiare massimo e minimo, oppure sbagliare il calcolo dell'ordinata.",
+  "semplice": "Un massimo relativo è la cima di una collinetta del grafico: prima si sale, poi si scende. Qui la collinetta è in x = −1 a quota 2, mentre in x = 1 c'è una «valle» a quota −2.",
+  "passaggi": [
+   "1. f'(x) = 3x² − 3 = 3(x − 1)(x + 1)",
+   "2. f'(x) = 0 per x = −1 e x = 1",
+   "3. Segno: + per x < −1, − tra −1 e 1, + per x > 1",
+   "4. Massimo in x = −1, f(−1) = −1 + 3 = 2"
+  ],
+  "concetto": "massimi e minimi relativi"
+ },
+ {
+  "id": "ANA-041",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "In quale ascissa si trova il punto di flesso della funzione f(x) = x³ − 6x² + 1?",
+  "opzioni": {
+   "A": "x = 0",
+   "B": "x = 2",
+   "C": "x = 4",
+   "D": "x = 6",
+   "E": "x = 1"
+  },
+  "giusta": "B",
+  "perche": "I flessi si cercano dove la derivata seconda cambia segno. f'(x) = 3x² − 12x e f''(x) = 6x − 12, che si annulla in x = 2 e cambia segno (negativa prima, positiva dopo). La trappola è cercare il flesso dove si annulla la derivata prima: x = 0 e x = 4 sono il massimo e il minimo relativi.",
+  "semplice": "Il flesso è il punto in cui la curva cambia il verso della curvatura, da «tetto» a «coppa». Per una cubica è sempre a metà strada tra massimo e minimo: qui tra 0 e 4.",
+  "passaggi": [
+   "1. f'(x) = 3x² − 12x",
+   "2. f''(x) = 6x − 12",
+   "3. f''(x) = 0 ⇒ x = 2",
+   "4. f'' cambia segno in 2 ⇒ flesso"
+  ],
+  "concetto": "punti di flesso"
+ },
+ {
+  "id": "ANA-042",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "Quali sono gli asintoti verticali della funzione f(x) = (x + 1)/(x² − 4)?",
+  "opzioni": {
+   "A": "x = 2 e x = −2",
+   "B": "Solo x = 2",
+   "C": "x = −1",
+   "D": "y = 0",
+   "E": "Nessuno"
+  },
+  "giusta": "A",
+  "perche": "Gli asintoti verticali si cercano nei punti esclusi dal dominio dove la funzione tende all'infinito. Il denominatore x² − 4 si annulla in x = 2 e x = −2, mentre il numeratore lì vale 3 e −1, non zero: in entrambi i punti il limite è infinito. La trappola è considerare lo zero del numeratore (x = −1), che è un'intersezione con l'asse x, oppure confondere con l'asintoto orizzontale y = 0.",
+  "semplice": "Un asintoto verticale è una «parete» verso cui il grafico schizza in alto o in basso. Qui ce ne sono due, perché il denominatore ha due zeri non cancellati dal numeratore.",
+  "passaggi": [
+   "1. Denominatore: x² − 4 = 0 ⇒ x = ±2",
+   "2. Numeratore in 2: 3 ≠ 0; in −2: −1 ≠ 0",
+   "3. In entrambi i punti il limite è ∞ ⇒ asintoti x = 2 e x = −2"
+  ],
+  "concetto": "asintoti verticali"
+ },
+ {
+  "id": "ANA-043",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "test",
+  "domanda": "Qual è l'asintoto orizzontale della funzione f(x) = (3x − 1)/(x + 2)?",
+  "opzioni": {
+   "A": "y = −1/2",
+   "B": "x = −2",
+   "C": "y = 0",
+   "D": "y = 3x",
+   "E": "y = 3"
+  },
+  "giusta": "E",
+  "perche": "Per x → ±∞ numeratore e denominatore hanno lo stesso grado, quindi il limite è il rapporto dei coefficienti direttivi: 3/1 = 3. L'asintoto orizzontale è la retta y = 3. La trappola è usare i termini noti (−1/2, che è invece f(0)) oppure indicare l'asintoto verticale x = −2.",
+  "semplice": "Per x enormi il −1 e il +2 non contano quasi più: la frazione si comporta come 3x/x = 3. Con x = 1000 vale circa 2,993.",
+  "passaggi": [
+   "1. Gradi uguali (1 e 1)",
+   "2. lim x→±∞ = 3/1 = 3",
+   "3. Asintoto orizzontale y = 3"
+  ],
+  "concetto": "asintoti orizzontali"
+ },
+ {
+  "id": "ANA-044",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "test",
+  "domanda": "In quale intervallo la funzione f(x) = x · e^(−x) è crescente?",
+  "opzioni": {
+   "A": "(1, +∞)",
+   "B": "(0, +∞)",
+   "C": "Tutto ℝ",
+   "D": "(−∞, 1)",
+   "E": "(−1, 1)"
+  },
+  "giusta": "D",
+  "perche": "La derivata è f'(x) = e^(−x) − x e^(−x) = e^(−x)(1 − x). Poiché e^(−x) è sempre positivo, il segno dipende solo da 1 − x, che è positivo per x < 1. Quindi f cresce su (−∞, 1) e decresce su (1, +∞), con un massimo in x = 1. La trappola è dimenticare il segno meno nella derivata di e^(−x) e concludere che f cresce sempre.",
+  "semplice": "Il fattore x spinge in su, il fattore e^(−x) schiaccia verso zero. Fino a x = 1 vince x, dopo vince l'esponenziale e la funzione cala.",
+  "passaggi": [
+   "1. f'(x) = e^(−x) + x · (−e^(−x))",
+   "2. f'(x) = e^(−x)(1 − x)",
+   "3. e^(−x) > 0 sempre",
+   "4. f' > 0 ⇔ 1 − x > 0 ⇔ x < 1"
+  ],
+  "concetto": "intervalli di monotonia"
+ },
+ {
+  "id": "ANA-045",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "test",
+  "domanda": "Come è rivolta la concavità della funzione f(x) = ln x nel suo dominio?",
+  "opzioni": {
+   "A": "Verso l'alto in tutto il dominio",
+   "B": "Verso l'alto per x < 1 e verso il basso per x > 1",
+   "C": "Verso il basso per x < 1 e verso l'alto per x > 1",
+   "D": "Non si può stabilire",
+   "E": "Verso il basso in tutto il dominio"
+  },
+  "giusta": "E",
+  "perche": "La concavità dipende dal segno della derivata seconda. f'(x) = 1/x e f''(x) = −1/x², che è negativa per ogni x > 0. Quindi il grafico volge sempre la concavità verso il basso e non ha flessi. La trappola è pensare che in x = 1, dove ln x cambia segno, cambi anche la concavità: il segno di f non c'entra con la curvatura.",
+  "semplice": "Il logaritmo sale sempre, ma sempre più piano: è il tipico andamento di una curva «a cupola», con la concavità verso il basso.",
+  "passaggi": [
+   "1. f'(x) = 1/x",
+   "2. f''(x) = −1/x²",
+   "3. f''(x) < 0 per ogni x > 0 ⇒ concavità verso il basso"
+  ],
+  "concetto": "concavità"
+ },
+ {
+  "id": "ANA-046",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "test",
+  "domanda": "Per quali x la funzione f(x) = (x − 1)/(x + 3) è positiva?",
+  "opzioni": {
+   "A": "x < −3 oppure x > 1",
+   "B": "−3 < x < 1",
+   "C": "x > 1",
+   "D": "x > −3",
+   "E": "x < 1"
+  },
+  "giusta": "A",
+  "perche": "Il segno di una frazione si studia separando numeratore e denominatore. Numeratore positivo per x > 1, denominatore positivo per x > −3. La frazione è positiva dove i due hanno lo stesso segno: entrambi positivi (x > 1) o entrambi negativi (x < −3). La trappola è risolvere come se fosse un'equazione di primo grado ottenendo solo x > 1, oppure prendere l'intervallo interno, dove i segni sono discordi.",
+  "semplice": "Si disegna una tabella dei segni con due righe e si applica la regola dei segni. Per esempio in x = −5 si ha (−6)/(−2) = 3 > 0, in x = 0 si ha −1/3 < 0.",
+  "passaggi": [
+   "1. N > 0 ⇔ x > 1",
+   "2. D > 0 ⇔ x > −3",
+   "3. Tabella dei segni: + per x < −3, − tra −3 e 1, + per x > 1",
+   "4. f > 0 per x < −3 o x > 1"
+  ],
+  "concetto": "studio del segno"
+ },
+ {
+  "id": "ANA-047",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "test",
+  "domanda": "Qual è il massimo assoluto della funzione f(x) = x² − 4x + 1 sull'intervallo [0, 5]?",
+  "opzioni": {
+   "A": "1, raggiunto in x = 0",
+   "B": "−3, raggiunto in x = 2",
+   "C": "2, raggiunto in x = 2",
+   "D": "6, raggiunto in x = 5",
+   "E": "5, raggiunto in x = 5"
+  },
+  "giusta": "D",
+  "perche": "Su un intervallo chiuso il massimo assoluto va cercato tra i punti stazionari interni e gli estremi. f'(x) = 2x − 4 si annulla in x = 2, dove f(2) = −3 (è il minimo). Agli estremi f(0) = 1 e f(5) = 25 − 20 + 1 = 6. Il massimo è quindi 6, in x = 5. La trappola è guardare solo il punto in cui la derivata si annulla, dimenticando gli estremi dell'intervallo.",
+  "semplice": "La parabola ha la forma di una coppa con il fondo in x = 2: il punto più alto su [0, 5] è per forza a uno dei bordi, quello più lontano dal fondo.",
+  "passaggi": [
+   "1. f'(x) = 2x − 4 = 0 ⇒ x = 2, f(2) = −3",
+   "2. f(0) = 1",
+   "3. f(5) = 6",
+   "4. Massimo assoluto: 6 in x = 5"
+  ],
+  "concetto": "massimo assoluto su intervallo"
+ },
+ {
+  "id": "ANA-048",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "Tra tutti i rettangoli con perimetro 20 cm, quale area ha quello di area massima?",
+  "opzioni": {
+   "A": "25 cm²",
+   "B": "20 cm²",
+   "C": "24 cm²",
+   "D": "50 cm²",
+   "E": "100 cm²"
+  },
+  "giusta": "A",
+  "perche": "Se un lato è x, l'altro è 10 − x, e l'area è A(x) = x(10 − x) = 10x − x². La derivata A'(x) = 10 − 2x si annulla in x = 5, che è un massimo. Il rettangolo ottimo è il quadrato di lato 5, con area 25 cm². La trappola è usare 20 come semiperimetro (ottenendo 100) oppure fermarsi a una coppia qualsiasi come 4 × 6 = 24.",
+  "semplice": "A parità di contorno, la figura più «tonda» racchiude più spazio: tra i rettangoli vince il quadrato. 6 × 4 = 24, 7 × 3 = 21, ma 5 × 5 = 25.",
+  "passaggi": [
+   "1. Lati: x e 10 − x (semiperimetro 10)",
+   "2. A(x) = 10x − x²",
+   "3. A'(x) = 10 − 2x = 0 ⇒ x = 5",
+   "4. A(5) = 25 cm²"
+  ],
+  "concetto": "problema di ottimizzazione"
+ },
+ {
+  "id": "ANA-049",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "università",
+  "domanda": "Che cosa rappresenta il punto x = 0 per la funzione f(x) = x³?",
+  "opzioni": {
+   "A": "Un punto di minimo relativo",
+   "B": "Un punto di massimo relativo",
+   "C": "Un punto angoloso",
+   "D": "Un punto stazionario che è un flesso a tangente orizzontale",
+   "E": "Un punto in cui f non è derivabile"
+  },
+  "giusta": "D",
+  "perche": "La derivata f'(x) = 3x² si annulla in 0, quindi il punto è stazionario. Però f' è positiva sia prima sia dopo: la funzione cresce sempre e non c'è un estremo. La derivata seconda 6x cambia segno in 0, quindi è un flesso con tangente orizzontale. La trappola è credere che f'(x₀) = 0 implichi sempre un massimo o un minimo: è una condizione necessaria, non sufficiente.",
+  "semplice": "Il grafico arriva in 0 «schiacciato» sull'asse x e poi riparte verso l'alto: si ferma un attimo in piano ma non torna indietro, quindi non c'è né cima né valle.",
+  "passaggi": [
+   "Calcola la derivata: f'(x) = 3x², che in 0 vale 0: punto stazionario.",
+   "Segno di f': 3x² > 0 sia prima sia dopo 0, quindi f cresce sempre: nessun massimo né minimo.",
+   "Derivata seconda: f''(x) = 6x, che cambia segno in 0: cambio di concavità.",
+   "È un punto stazionario che è un flesso a tangente orizzontale."
+  ],
+  "concetto": "punto stazionario di flesso"
+ },
+ {
+  "id": "ANA-050",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "università",
+  "domanda": "Se f'(x₀) = 0 e f''(x₀) > 0, che cosa si può concludere?",
+  "opzioni": {
+   "A": "x₀ è un punto di massimo relativo",
+   "B": "x₀ è un punto di minimo relativo",
+   "C": "x₀ è un punto di flesso",
+   "D": "Non si può concludere nulla",
+   "E": "x₀ è un punto di massimo assoluto"
+  },
+  "giusta": "B",
+  "perche": "È il criterio della derivata seconda: se in x₀ la tangente è orizzontale e la concavità è verso l'alto, il grafico sta sopra la tangente vicino a x₀, quindi x₀ è un minimo relativo. Con f''(x₀) < 0 sarebbe un massimo. La trappola è associare «seconda positiva» a «massimo» perché il numero è positivo, oppure confondere relativo con assoluto.",
+  "semplice": "Tangente in piano più curva a coppa: è il fondo di una valle. Per esempio f(x) = x² ha f'(0) = 0 e f''(0) = 2 > 0, e in 0 c'è il minimo.",
+  "passaggi": [
+   "f'(x₀) = 0: in x₀ la tangente è orizzontale.",
+   "f''(x₀) > 0: concavità verso l'alto, il grafico vicino a x₀ sta sopra la tangente.",
+   "Un grafico sopra la tangente orizzontale ha in x₀ il valore più basso nei dintorni.",
+   "Il criterio dà un estremo relativo, non assoluto (con f'' < 0 sarebbe un massimo).",
+   "x₀ è un punto di minimo relativo."
+  ],
+  "concetto": "criterio della derivata seconda"
+ },
+ {
+  "id": "ANA-051",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "università",
+  "domanda": "Quante soluzioni reali ha l'equazione x³ − 3x + 1 = 0?",
+  "opzioni": {
+   "A": "1",
+   "B": "3",
+   "C": "2",
+   "D": "0",
+   "E": "Infinite"
+  },
+  "giusta": "B",
+  "perche": "Si studia f(x) = x³ − 3x + 1. f'(x) = 3x² − 3 si annulla in ±1: il massimo relativo vale f(−1) = 3 > 0 e il minimo relativo vale f(1) = −1 < 0. Poiché f va da −∞ a +∞ e il massimo è sopra l'asse mentre il minimo è sotto, il grafico taglia l'asse x tre volte. La trappola è pensare che una cubica abbia sempre una sola radice reale, oppure contare solo gli estremi.",
+  "semplice": "Il grafico sale, scende sotto l'asse e risale: ogni passaggio attraverso l'asse x è una soluzione. Un controllo veloce: f(−2) = −1, f(0) = 1, f(1) = −1, f(2) = 3: il segno cambia tre volte, quindi ci sono tre attraversamenti.",
+  "passaggi": [
+   "1. f'(x) = 3x² − 3 = 0 ⇒ x = ±1",
+   "2. f(−1) = 3 (massimo), f(1) = −1 (minimo)",
+   "3. Massimo > 0 e minimo < 0",
+   "4. Con i limiti −∞ e +∞ agli estremi: 3 intersezioni con l'asse x"
+  ],
+  "concetto": "numero di soluzioni di un'equazione"
+ },
+ {
+  "id": "ANA-052",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "università",
+  "domanda": "In quale ascissa la funzione f(x) = x² · e^(−x) ha un massimo relativo?",
+  "opzioni": {
+   "A": "x = 2",
+   "B": "x = 0",
+   "C": "x = 1",
+   "D": "x = −2",
+   "E": "Non ha massimi relativi"
+  },
+  "giusta": "A",
+  "perche": "La derivata è f'(x) = 2x e^(−x) − x² e^(−x) = x(2 − x) e^(−x). Si annulla in x = 0 e x = 2. Il segno di x(2 − x) è negativo prima di 0, positivo tra 0 e 2, negativo dopo 2: in 0 c'è un minimo, in 2 un massimo, con f(2) = 4/e². La trappola è scambiare i due punti stazionari, o dimenticare il segno meno nella derivata di e^(−x).",
+  "semplice": "La funzione vale 0 in 0, sale fino a x = 2 e poi l'esponenziale la «spegne» verso 0. Il valore massimo è circa 0,54.",
+  "passaggi": [
+   "1. f'(x) = 2x e^(−x) − x² e^(−x) = x(2 − x)e^(−x)",
+   "2. f'(x) = 0 per x = 0 e x = 2",
+   "3. Segno: − per x < 0, + tra 0 e 2, − per x > 2",
+   "4. Massimo relativo in x = 2"
+  ],
+  "concetto": "estremi relativi"
+ },
+ {
+  "id": "ANA-053",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "università",
+  "domanda": "Qual è l'asintoto obliquo per x → +∞ della funzione f(x) = √(x² + 2x)?",
+  "opzioni": {
+   "A": "y = x",
+   "B": "y = x + 2",
+   "C": "y = 2x",
+   "D": "y = x − 1",
+   "E": "y = x + 1"
+  },
+  "giusta": "E",
+  "perche": "Si ha m = lim f(x)/x = lim √(1 + 2/x) = 1. Poi q = lim (√(x² + 2x) − x): razionalizzando si ottiene 2x/(√(x² + 2x) + x), che tende a 2x/(2x) = 1. L'asintoto è y = x + 1. La trappola è fermarsi a y = x, pensando che il termine 2x sotto radice diventi trascurabile: lo è rispetto a x², ma lascia uno scarto finito.",
+  "semplice": "Si può anche pensare che x² + 2x = (x + 1)² − 1: per x grandi la radice è quasi x + 1. Con x = 100: √10 200 ≈ 100,995.",
+  "passaggi": [
+   "1. m = lim √(x² + 2x)/x = 1",
+   "2. q = lim (√(x² + 2x) − x)",
+   "3. Razionalizzo: 2x/(√(x² + 2x) + x) → 1",
+   "4. Asintoto: y = x + 1"
+  ],
+  "concetto": "asintoto obliquo"
+ },
+ {
+  "id": "ANA-054",
+  "materia": "Analisi matematica",
+  "argomento": "Studio di funzione",
+  "livello": "superiori",
+  "domanda": "Se f'(x) < 0 per ogni x di un intervallo, che cosa si può dire di f in quell'intervallo?",
+  "opzioni": {
+   "A": "È negativa",
+   "B": "Ha la concavità verso il basso",
+   "C": "È strettamente crescente",
+   "D": "È strettamente decrescente",
+   "E": "Ha un minimo all'interno dell'intervallo"
+  },
+  "giusta": "D",
+  "perche": "Il segno della derivata prima decide la monotonia: derivata negativa significa che ogni tangente scende, quindi la funzione decresce. La trappola è confondere il segno della derivata con il segno della funzione (f può essere positiva e decrescente, come 1/x per x > 0) o con la concavità, che dipende dalla derivata seconda.",
+  "semplice": "Derivata negativa vuol dire «strada in discesa». Ma una strada in discesa può stare a 2000 metri di quota: la funzione non è per forza negativa.",
+  "passaggi": [
+   "Il segno della derivata prima decide la monotonia.",
+   "f'(x) < 0 in ogni punto: tutte le tangenti scendono.",
+   "Il segno di f' non dice il segno di f (1/x è positiva e decrescente) e la concavità dipende da f''.",
+   "f è strettamente decrescente nell'intervallo."
+  ],
+  "concetto": "monotonia e segno della derivata"
+ },
+ {
+  "id": "ANA-055",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale l'integrale indefinito ∫ x³ dx?",
+  "opzioni": {
+   "A": "x⁴/4 + C",
+   "B": "3x² + C",
+   "C": "x⁴ + C",
+   "D": "x³/3 + C",
+   "E": "4x⁴ + C"
+  },
+  "giusta": "A",
+  "perche": "L'integrale di xⁿ (con n ≠ −1) è x^(n+1)/(n + 1) + C: si aumenta l'esponente di uno e si divide per il nuovo esponente. Con n = 3 si ottiene x⁴/4 + C. La trappola è derivare invece di integrare (3x²) oppure dimenticare di dividere per 4. La costante C ricorda che le primitive sono infinite.",
+  "semplice": "Integrare è il contrario di derivare: si cerca una funzione la cui derivata sia x³. Controllo: la derivata di x⁴/4 è 4x³/4 = x³.",
+  "passaggi": [
+   "1. Regola: ∫ xⁿ dx = x^(n+1)/(n + 1) + C",
+   "2. n = 3 ⇒ x⁴/4 + C",
+   "3. Verifica: (x⁴/4)' = x³"
+  ],
+  "concetto": "integrale di una potenza"
+ },
+ {
+  "id": "ANA-056",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale l'integrale definito ∫₀² 3x² dx?",
+  "opzioni": {
+   "A": "8",
+   "B": "12",
+   "C": "6",
+   "D": "4",
+   "E": "24"
+  },
+  "giusta": "A",
+  "perche": "Una primitiva di 3x² è x³. Per il teorema fondamentale del calcolo l'integrale definito è F(2) − F(0) = 8 − 0 = 8. La trappola è calcolare la funzione integranda in 2 (3 · 4 = 12) invece della primitiva, oppure dimenticare di sottrarre il valore all'estremo inferiore.",
+  "semplice": "L'integrale definito misura l'area sotto il grafico tra 0 e 2. Si calcola con la primitiva: valore in alto meno valore in basso.",
+  "passaggi": [
+   "1. Primitiva: F(x) = x³",
+   "2. F(2) = 8, F(0) = 0",
+   "3. ∫₀² 3x² dx = 8 − 0 = 8"
+  ],
+  "concetto": "teorema fondamentale del calcolo"
+ },
+ {
+  "id": "ANA-057",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale ∫ cos x dx?",
+  "opzioni": {
+   "A": "−sin x + C",
+   "B": "cos x + C",
+   "C": "−cos x + C",
+   "D": "sin x + C",
+   "E": "sin²x/2 + C"
+  },
+  "giusta": "D",
+  "perche": "Si cerca una funzione la cui derivata sia cos x: è sin x, perché (sin x)' = cos x. Quindi ∫ cos x dx = sin x + C. La trappola è confondere i segni: è l'integrale del seno a dare −cos x + C, perché (−cos x)' = sin x.",
+  "semplice": "Per controllare un integrale basta derivare il risultato: se torna la funzione di partenza, è giusto. (sin x + C)' = cos x.",
+  "passaggi": [
+   "Cerca una funzione la cui derivata sia cos x.",
+   "(sin x)' = cos x.",
+   "Attenzione ai segni: (−cos x)' = sin x, che serve per integrare il seno, non il coseno.",
+   "∫ cos x dx = sin x + C."
+  ],
+  "concetto": "integrali goniometrici"
+ },
+ {
+  "id": "ANA-058",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale ∫ (1/x) dx?",
+  "opzioni": {
+   "A": "1/x + C",
+   "B": "ln|x| + C",
+   "C": "−1/x² + C",
+   "D": "1/x² + C",
+   "E": "ln x² + C"
+  },
+  "giusta": "B",
+  "perche": "È il caso escluso dalla regola delle potenze (n = −1), che darebbe una divisione per zero. Poiché la derivata di ln|x| è 1/x per ogni x ≠ 0, la primitiva è ln|x| + C. Il valore assoluto serve a includere anche le x negative. La trappola è applicare comunque la regola delle potenze o confondere integrale e derivata (−1/x²).",
+  "semplice": "Il logaritmo «nasce» proprio come primitiva di 1/x. Per esempio ∫₁ᵉ (1/x) dx = ln e − ln 1 = 1.",
+  "passaggi": [
+   "La regola delle potenze xⁿ⁺¹/(n + 1) con n = −1 darebbe una divisione per zero: non si usa.",
+   "Ricorda che (ln|x|)' = 1/x per ogni x ≠ 0.",
+   "Il valore assoluto serve a includere anche le x negative.",
+   "∫ (1/x) dx = ln|x| + C."
+  ],
+  "concetto": "integrale di 1/x"
+ },
+ {
+  "id": "ANA-059",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "test",
+  "domanda": "Quanto vale l'area della regione compresa tra le curve y = x e y = x² per x tra 0 e 1?",
+  "opzioni": {
+   "A": "1/2",
+   "B": "1/3",
+   "C": "1/12",
+   "D": "5/6",
+   "E": "1/6"
+  },
+  "giusta": "E",
+  "perche": "Tra 0 e 1 la retta y = x sta sopra la parabola y = x². L'area è ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6. La trappola è calcolare solo l'area sotto una delle due curve (1/2 o 1/3), oppure sottrarre nell'ordine sbagliato e ottenere un risultato negativo.",
+  "semplice": "L'area tra due curve è «area sotto quella in alto meno area sotto quella in basso». Qui 1/2 − 1/3 = 1/6, una sottile «lunetta».",
+  "passaggi": [
+   "1. Tra 0 e 1: x ≥ x²",
+   "2. Area = ∫₀¹ (x − x²) dx",
+   "3. = [x²/2 − x³/3]₀¹",
+   "4. = 1/2 − 1/3 = 1/6"
+  ],
+  "concetto": "area tra due curve"
+ },
+ {
+  "id": "ANA-060",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "test",
+  "domanda": "Quanto vale ∫₁ᵉ (1/x) dx?",
+  "opzioni": {
+   "A": "1",
+   "B": "e",
+   "C": "0",
+   "D": "e − 1",
+   "E": "1/e"
+  },
+  "giusta": "A",
+  "perche": "Una primitiva di 1/x è ln x (per x > 0). L'integrale vale ln e − ln 1 = 1 − 0 = 1. La trappola è sottrarre gli estremi (e − 1) senza passare per la primitiva, oppure ricordare male che ln e = 1 e ln 1 = 0.",
+  "semplice": "L'area sotto l'iperbole y = 1/x da 1 fino a e vale esattamente 1: è un modo per definire il numero e.",
+  "passaggi": [
+   "1. Primitiva: ln x",
+   "2. ln e − ln 1",
+   "3. = 1 − 0 = 1"
+  ],
+  "concetto": "integrale definito del logaritmo"
+ },
+ {
+  "id": "ANA-061",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "test",
+  "domanda": "Quanto vale ∫ x eˣ dx?",
+  "opzioni": {
+   "A": "x eˣ + C",
+   "B": "(x + 1)eˣ + C",
+   "C": "x²eˣ/2 + C",
+   "D": "(x − 1)eˣ + C",
+   "E": "eˣ + C"
+  },
+  "giusta": "D",
+  "perche": "Si integra per parti: ∫ f g' dx = f g − ∫ f' g dx, con f = x e g' = eˣ. Si ottiene x eˣ − ∫ eˣ dx = x eˣ − eˣ + C = (x − 1)eˣ + C. La trappola è integrare i due fattori separatamente (x²/2 · eˣ) oppure sbagliare il segno e scrivere (x + 1)eˣ.",
+  "semplice": "Nell'integrazione per parti si sceglie da derivare il fattore che «si semplifica» (qui x diventa 1). Controllo: [(x − 1)eˣ]' = eˣ + (x − 1)eˣ = x eˣ.",
+  "passaggi": [
+   "1. f = x, f' = 1; g' = eˣ, g = eˣ",
+   "2. ∫ x eˣ dx = x eˣ − ∫ eˣ dx",
+   "3. = x eˣ − eˣ + C",
+   "4. = (x − 1)eˣ + C"
+  ],
+  "concetto": "integrazione per parti"
+ },
+ {
+  "id": "ANA-062",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale ∫ 2x/(x² + 1) dx?",
+  "opzioni": {
+   "A": "x²/(x³/3 + x) + C",
+   "B": "2 arctan x + C",
+   "C": "ln(x² + 1) + C",
+   "D": "ln|2x| + C",
+   "E": "1/(x² + 1)² + C"
+  },
+  "giusta": "C",
+  "perche": "Il numeratore 2x è esattamente la derivata del denominatore x² + 1: è un integrale del tipo ∫ f'(x)/f(x) dx = ln|f(x)| + C. Poiché x² + 1 è sempre positivo, si scrive ln(x² + 1) + C. Si può vedere anche con la sostituzione t = x² + 1. La trappola è integrare numeratore e denominatore separatamente, oppure confonderlo con ∫ 1/(x² + 1) dx = arctan x + C.",
+  "semplice": "Quando sopra c'è la derivata di quello che sta sotto, il risultato è un logaritmo. Controllo: [ln(x² + 1)]' = 2x/(x² + 1).",
+  "passaggi": [
+   "1. t = x² + 1, dt = 2x dx",
+   "2. ∫ dt/t = ln|t| + C",
+   "3. = ln(x² + 1) + C"
+  ],
+  "concetto": "integrazione per sostituzione"
+ },
+ {
+  "id": "ANA-063",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "università",
+  "domanda": "Sia F(x) = ∫₀ˣ sin(t²) dt. Quanto vale F'(x)?",
+  "opzioni": {
+   "A": "cos(x²)",
+   "B": "2x cos(x²)",
+   "C": "sin(x²) − sin 0",
+   "D": "−cos(x²)/(2x)",
+   "E": "sin(x²)"
+  },
+  "giusta": "E",
+  "perche": "Per il teorema fondamentale del calcolo integrale, se f è continua la funzione integrale F(x) = ∫ₐˣ f(t) dt è derivabile e F'(x) = f(x). Qui f(t) = sin(t²), quindi F'(x) = sin(x²), anche se sin(t²) non ha una primitiva elementare. La trappola è tentare di calcolare prima l'integrale, oppure derivare l'integranda ottenendo 2x cos(x²).",
+  "semplice": "Derivare una funzione integrale «annulla» l'integrale: si sostituisce x al posto di t nell'integranda e basta. Lo stesso vale con ∫₀ˣ e^(t²) dt, la cui derivata è e^(x²).",
+  "passaggi": [
+   "Riconosci una funzione integrale F(x) = ∫₀ˣ f(t) dt con f(t) = sin(t²), continua.",
+   "Teorema fondamentale del calcolo integrale: F'(x) = f(x).",
+   "Non serve calcolare l'integrale (sin(t²) non ha primitiva elementare) né derivare l'integranda.",
+   "Basta sostituire t con x: F'(x) = sin(x²)."
+  ],
+  "concetto": "funzione integrale"
+ },
+ {
+  "id": "ANA-064",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale ∫₀^π sin x dx?",
+  "opzioni": {
+   "A": "0",
+   "B": "2",
+   "C": "1",
+   "D": "π",
+   "E": "−2"
+  },
+  "giusta": "B",
+  "perche": "Una primitiva di sin x è −cos x. L'integrale vale −cos π − (−cos 0) = 1 + 1 = 2. Tra 0 e π il seno è positivo, quindi il risultato deve essere positivo. La trappola è pensare che sia 0 confondendo con l'integrale su un periodo intero [0, 2π], oppure sbagliare il segno della primitiva e ottenere −2.",
+  "semplice": "L'arco del seno tra 0 e π racchiude un'area esattamente uguale a 2. Su [0, 2π] invece la parte sotto l'asse compensa quella sopra e l'integrale vale 0.",
+  "passaggi": [
+   "1. Primitiva: −cos x",
+   "2. −cos π = 1, −cos 0 = −1",
+   "3. 1 − (−1) = 2"
+  ],
+  "concetto": "integrale definito"
+ },
+ {
+  "id": "ANA-065",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "test",
+  "domanda": "Quanto vale ∫₋₂² x³ dx?",
+  "opzioni": {
+   "A": "8",
+   "B": "4",
+   "C": "0",
+   "D": "16",
+   "E": "−8"
+  },
+  "giusta": "C",
+  "perche": "La funzione x³ è dispari e l'intervallo [−2, 2] è simmetrico rispetto a 0: le aree sopra e sotto l'asse si compensano e l'integrale è 0. Con la primitiva: x⁴/4 vale 4 in entrambi gli estremi e la differenza è 0. La trappola è confondere l'integrale con l'area geometrica, che sarebbe 8, sommando i valori assoluti.",
+  "semplice": "L'integrale «conta con il segno»: le parti sotto l'asse x valgono negativo. Una funzione dispari su un intervallo simmetrico dà sempre 0.",
+  "passaggi": [
+   "1. x³ è dispari, intervallo simmetrico",
+   "2. Primitiva x⁴/4: (16/4) − (16/4) = 0"
+  ],
+  "concetto": "integrali di funzioni dispari"
+ },
+ {
+  "id": "ANA-066",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "test",
+  "domanda": "Qual è il valore medio della funzione f(x) = x² sull'intervallo [0, 3]?",
+  "opzioni": {
+   "A": "9",
+   "B": "3",
+   "C": "4,5",
+   "D": "1,5",
+   "E": "27"
+  },
+  "giusta": "B",
+  "perche": "Il valore medio di f su [a, b] è (1/(b − a)) · ∫ₐᵇ f(x) dx. Qui ∫₀³ x² dx = 27/3 = 9, e dividendo per la lunghezza 3 si ottiene 3. La trappola è fermarsi all'integrale (9), oppure fare la media dei valori agli estremi, (0 + 9)/2 = 4,5, che vale solo per funzioni lineari.",
+  "semplice": "Il valore medio è l'altezza del rettangolo con la stessa base e la stessa area della regione sotto la curva. Qui un rettangolo di base 3 e altezza 3 ha area 9.",
+  "passaggi": [
+   "1. ∫₀³ x² dx = [x³/3]₀³ = 9",
+   "2. Lunghezza intervallo: 3",
+   "3. Valore medio = 9/3 = 3"
+  ],
+  "concetto": "teorema della media integrale"
+ },
+ {
+  "id": "ANA-067",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "università",
+  "domanda": "Quanto vale l'integrale improprio ∫₁^∞ (1/x²) dx?",
+  "opzioni": {
+   "A": "+∞",
+   "B": "0",
+   "C": "1",
+   "D": "1/2",
+   "E": "2"
+  },
+  "giusta": "C",
+  "perche": "Si calcola come limite: ∫₁ᵇ x^(−2) dx = [−1/x]₁ᵇ = 1 − 1/b, che per b → +∞ tende a 1. L'integrale converge. La trappola è pensare che un'area su un intervallo illimitato sia per forza infinita: lo è per 1/x, ma 1/x² va a zero abbastanza in fretta.",
+  "semplice": "Una regione infinitamente lunga può avere area finita, se diventa sottile abbastanza in fretta. In generale ∫₁^∞ 1/xᵖ dx converge se e solo se p > 1.",
+  "passaggi": [
+   "1. ∫₁ᵇ x^(−2) dx = [−1/x]₁ᵇ",
+   "2. = −1/b + 1",
+   "3. b → +∞: 1"
+  ],
+  "concetto": "integrali impropri"
+ },
+ {
+  "id": "ANA-068",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "università",
+  "domanda": "Che cosa si può dire dell'integrale improprio ∫₁^∞ (1/x) dx?",
+  "opzioni": {
+   "A": "Converge a 1",
+   "B": "Converge a 0",
+   "C": "Diverge a +∞",
+   "D": "Converge a e",
+   "E": "È indeterminato e oscilla"
+  },
+  "giusta": "C",
+  "perche": "Si ha ∫₁ᵇ (1/x) dx = ln b, che tende a +∞ per b → +∞. Quindi l'integrale diverge. È il caso limite p = 1 del criterio ∫₁^∞ 1/xᵖ dx, che converge solo per p > 1. La trappola è pensare che, siccome 1/x tende a 0, l'area debba essere finita: tendere a zero non basta.",
+  "semplice": "Il logaritmo cresce lentissimo ma senza limite: ln(1000) ≈ 6,9, ln(1 000 000) ≈ 13,8. Allo stesso modo l'area sotto 1/x continua a crescere.",
+  "passaggi": [
+   "1. ∫₁ᵇ (1/x) dx = ln b",
+   "2. lim b→+∞ ln b = +∞",
+   "3. L'integrale diverge"
+  ],
+  "concetto": "integrali impropri divergenti"
+ },
+ {
+  "id": "ANA-069",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "università",
+  "domanda": "Qual è il volume del solido ottenuto ruotando attorno all'asse x il grafico di y = √x per x tra 0 e 4?",
+  "opzioni": {
+   "A": "16π",
+   "B": "4π",
+   "C": "8",
+   "D": "8π",
+   "E": "(16/3)π"
+  },
+  "giusta": "D",
+  "perche": "Il volume di rotazione attorno all'asse x è V = π ∫ₐᵇ [f(x)]² dx. Qui [f(x)]² = x, quindi V = π ∫₀⁴ x dx = π · 16/2 = 8π. La trappola è dimenticare il fattore π oppure non elevare al quadrato la funzione, integrando √x e ottenendo (16/3)π.",
+  "semplice": "Si taglia il solido a fettine sottilissime: ognuna è un dischetto di raggio √x e area πx. Sommando tutte le fettine, cioè integrando, si ottiene il volume.",
+  "passaggi": [
+   "1. V = π ∫₀⁴ (√x)² dx",
+   "2. = π ∫₀⁴ x dx",
+   "3. = π [x²/2]₀⁴ = π · 8 = 8π"
+  ],
+  "concetto": "volume di rotazione"
+ },
+ {
+  "id": "ANA-070",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "università",
+  "domanda": "Quanto vale ∫ 1/(x² − 1) dx?",
+  "opzioni": {
+   "A": "ln|x² − 1| + C",
+   "B": "arctan x + C",
+   "C": "(1/2) ln|(x + 1)/(x − 1)| + C",
+   "D": "−1/(x² − 1) + C",
+   "E": "(1/2) ln|(x − 1)/(x + 1)| + C"
+  },
+  "giusta": "E",
+  "perche": "Si scompone in fratti semplici: 1/(x² − 1) = (1/2)[1/(x − 1) − 1/(x + 1)]. Integrando ogni termine si ottiene (1/2)(ln|x − 1| − ln|x + 1|) + C = (1/2) ln|(x − 1)/(x + 1)| + C. La trappola è usare la regola f'/f senza che il numeratore sia la derivata del denominatore (ln|x² − 1|), oppure invertire la frazione dentro il logaritmo, che cambia il segno.",
+  "semplice": "Una frazione con denominatore scomponibile si spezza in frazioni più semplici, ognuna con un logaritmo come primitiva. Controllo: derivando il risultato si torna a 1/(x² − 1).",
+  "passaggi": [
+   "1. x² − 1 = (x − 1)(x + 1)",
+   "2. 1/(x² − 1) = A/(x − 1) + B/(x + 1), con A = 1/2 e B = −1/2",
+   "3. Integro: (1/2) ln|x − 1| − (1/2) ln|x + 1| + C",
+   "4. = (1/2) ln|(x − 1)/(x + 1)| + C"
+  ],
+  "concetto": "fratti semplici"
+ },
+ {
+  "id": "ANA-071",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "test",
+  "domanda": "Quanto vale ∫ ln x dx?",
+  "opzioni": {
+   "A": "1/x + C",
+   "B": "x ln x − x + C",
+   "C": "x ln x + C",
+   "D": "(ln x)²/2 + C",
+   "E": "ln x/x + C"
+  },
+  "giusta": "B",
+  "perche": "Si integra per parti scrivendo ln x = 1 · ln x: si deriva ln x (ottenendo 1/x) e si integra 1 (ottenendo x). Risulta x ln x − ∫ x · (1/x) dx = x ln x − x + C. La trappola è scambiare integrale e derivata (1/x) oppure dimenticare il termine −x che nasce dal secondo integrale.",
+  "semplice": "Il trucco è vedere un fattore 1 nascosto. Controllo: (x ln x − x)' = ln x + 1 − 1 = ln x.",
+  "passaggi": [
+   "1. f = ln x, f' = 1/x; g' = 1, g = x",
+   "2. ∫ ln x dx = x ln x − ∫ x · (1/x) dx",
+   "3. = x ln x − x + C"
+  ],
+  "concetto": "integrazione per parti"
+ },
+ {
+  "id": "ANA-072",
+  "materia": "Analisi matematica",
+  "argomento": "Integrali",
+  "livello": "università",
+  "domanda": "Quanto vale la derivata rispetto a x di G(x) = ∫₀^(x²) eᵗ dt?",
+  "opzioni": {
+   "A": "e^(x²)",
+   "B": "eˣ",
+   "C": "2x · eˣ",
+   "D": "2x · e^(x²)",
+   "E": "e^(x²) − 1"
+  },
+  "giusta": "D",
+  "perche": "Quando l'estremo superiore è una funzione g(x), si combina il teorema fondamentale con la regola della catena: G'(x) = f(g(x)) · g'(x). Qui f(t) = eᵗ e g(x) = x², quindi G'(x) = e^(x²) · 2x. La trappola è dimenticare il fattore g'(x) = 2x. Si può verificare calcolando G(x) = e^(x²) − 1 e derivando.",
+  "semplice": "Si sostituisce l'estremo al posto di t e poi si moltiplica per la derivata dell'estremo, come in ogni funzione composta.",
+  "passaggi": [
+   "1. G(x) = F(x²) con F(u) = ∫₀ᵘ eᵗ dt",
+   "2. F'(u) = eᵘ",
+   "3. G'(x) = e^(x²) · 2x"
+  ],
+  "concetto": "derivata di funzione integrale"
+ },
+ {
+  "id": "ANA-073",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "superiori",
+  "domanda": "Quanto vale il limite della successione aₙ = (2n + 1)/(n + 3) per n → ∞?",
+  "opzioni": {
+   "A": "1/3",
+   "B": "2",
+   "C": "0",
+   "D": "+∞",
+   "E": "1"
+  },
+  "giusta": "B",
+  "perche": "Numeratore e denominatore sono di primo grado in n, quindi il limite è il rapporto dei coefficienti di n: 2/1 = 2. Lo si vede dividendo sopra e sotto per n: (2 + 1/n)/(1 + 3/n) → 2. La trappola è usare i termini noti (1/3, che è il valore per n = 0) o pensare che il numeratore, essendo «più grande», faccia divergere la successione.",
+  "semplice": "Per n grandi i numeri 1 e 3 non contano quasi più: a₁₀₀₀ = 2001/1003 ≈ 1,995, sempre più vicino a 2.",
+  "passaggi": [
+   "1. Divido per n: (2 + 1/n)/(1 + 3/n)",
+   "2. 1/n → 0 e 3/n → 0",
+   "3. Limite = 2"
+  ],
+  "concetto": "limite di una successione"
+ },
+ {
+  "id": "ANA-074",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "superiori",
+  "domanda": "Quanto vale la somma infinita 1 + 1/2 + 1/4 + 1/8 + …?",
+  "opzioni": {
+   "A": "+∞",
+   "B": "1",
+   "C": "3/2",
+   "D": "4",
+   "E": "2"
+  },
+  "giusta": "E",
+  "perche": "È una serie geometrica con primo termine 1 e ragione q = 1/2. Poiché |q| < 1 converge, e la somma è 1/(1 − q) = 1/(1/2) = 2. La trappola è pensare che sommando infiniti numeri positivi si ottenga sempre infinito: se i termini diminuiscono abbastanza in fretta, la somma resta finita.",
+  "semplice": "Immagina di percorrere 2 metri facendo ogni volta metà della strada che resta: 1 m, poi 0,5, poi 0,25… Ti avvicini sempre di più ai 2 metri senza superarli.",
+  "passaggi": [
+   "1. Serie geometrica: a = 1, q = 1/2",
+   "2. |q| < 1 ⇒ converge",
+   "3. S = a/(1 − q) = 1/(1/2) = 2"
+  ],
+  "concetto": "serie geometrica"
+ },
+ {
+  "id": "ANA-075",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "superiori",
+  "domanda": "Per quali valori della ragione q la serie geometrica Σ qⁿ (n da 0 a ∞) converge?",
+  "opzioni": {
+   "A": "Per ogni q > 0",
+   "B": "Per q < 1",
+   "C": "Per q ≥ 1",
+   "D": "Per ogni q reale",
+   "E": "Per −1 < q < 1"
+  },
+  "giusta": "E",
+  "perche": "La somma parziale è (1 − q^(n+1))/(1 − q), e qⁿ tende a 0 solo se |q| < 1: in quel caso la serie converge a 1/(1 − q). Per q ≥ 1 diverge a +∞, per q ≤ −1 è indeterminata (oscilla). La trappola è scrivere solo q < 1, dimenticando che per q molto negativi, come −2, i termini crescono in valore assoluto.",
+  "semplice": "Con q = 0,5 i termini si dimezzano e la somma resta finita. Con q = −2 i termini sono 1, −2, 4, −8…: oscillano sempre più forte e la serie non converge.",
+  "passaggi": [
+   "Somma parziale: Sₙ = (1 − q^(n+1))/(1 − q) per q ≠ 1.",
+   "Sₙ ha limite finito solo se q^(n+1) → 0, cioè se |q| < 1; allora la somma è 1/(1 − q).",
+   "Per q ≥ 1 la serie diverge a +∞; per q ≤ −1 oscilla (per q = −2 i termini crescono in valore assoluto).",
+   "Converge per −1 < q < 1."
+  ],
+  "concetto": "convergenza della serie geometrica"
+ },
+ {
+  "id": "ANA-076",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "test",
+  "domanda": "Che comportamento ha la serie armonica Σ 1/n (n da 1 a ∞)?",
+  "opzioni": {
+   "A": "Converge a 1",
+   "B": "Converge a 2",
+   "C": "Converge a e",
+   "D": "È indeterminata",
+   "E": "Diverge a +∞"
+  },
+  "giusta": "E",
+  "perche": "Anche se i termini 1/n tendono a 0, la serie armonica diverge. Raggruppando i termini (1/3 + 1/4 > 1/2, 1/5 + … + 1/8 > 1/2, e così via) si ottengono infiniti blocchi ognuno maggiore di 1/2. La trappola è credere che basti aₙ → 0 per la convergenza: è una condizione necessaria, non sufficiente.",
+  "semplice": "La somma cresce lentissimamente: servono circa 12 000 termini per superare 10. Però, aspettando abbastanza, supera qualsiasi numero.",
+  "passaggi": [
+   "I termini 1/n tendono a 0, ma questa è solo una condizione necessaria.",
+   "Raggruppa: 1/3 + 1/4 > 1/4 + 1/4 = 1/2; 1/5 + … + 1/8 > 4 · 1/8 = 1/2; e così via.",
+   "Si ottengono infiniti blocchi ciascuno maggiore di 1/2: la somma supera ogni numero.",
+   "La serie armonica diverge a +∞."
+  ],
+  "concetto": "serie armonica"
+ },
+ {
+  "id": "ANA-077",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "test",
+  "domanda": "Quale delle seguenti serie converge?",
+  "opzioni": {
+   "A": "Σ 1/n",
+   "B": "Σ 1/√n",
+   "C": "Σ 1/n²",
+   "D": "Σ n/(n + 1)",
+   "E": "Σ 1"
+  },
+  "giusta": "C",
+  "perche": "Le serie armoniche generalizzate Σ 1/nᵖ convergono se e solo se p > 1. Σ 1/n² ha p = 2 e converge (la somma vale π²/6). Σ 1/n ha p = 1 e Σ 1/√n ha p = 1/2: divergono. Σ n/(n + 1) e Σ 1 hanno termini che non tendono a 0, quindi divergono di sicuro. La trappola è pensare che tutte le serie con termini decrescenti convergano.",
+  "semplice": "Conta quanto in fretta i termini diventano piccoli. 1/n² scende molto più veloce di 1/n: al centesimo termine vale 0,0001 invece di 0,01.",
+  "passaggi": [
+   "Ricorda: Σ 1/nᵖ converge se e solo se p > 1.",
+   "Σ 1/n ha p = 1, Σ 1/√n ha p = 1/2: divergono.",
+   "Σ n/(n + 1) e Σ 1 hanno termini che tendono a 1, non a 0: divergono.",
+   "Σ 1/n² ha p = 2 > 1: converge (a π²/6)."
+  ],
+  "concetto": "serie armonica generalizzata"
+ },
+ {
+  "id": "ANA-078",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "università",
+  "domanda": "Se la serie Σ aₙ converge, che cosa si può concludere con certezza?",
+  "opzioni": {
+   "A": "Anche Σ |aₙ| converge",
+   "B": "aₙ è definitivamente decrescente",
+   "C": "aₙ → 0 per n → ∞",
+   "D": "Se aₙ → 0 allora Σ aₙ converge",
+   "E": "La somma è positiva"
+  },
+  "giusta": "C",
+  "perche": "È la condizione necessaria di convergenza: se Σ aₙ converge a S, allora aₙ = Sₙ − Sₙ₋₁ → S − S = 0. Non vale il viceversa (la serie armonica ha termini che tendono a 0 ma diverge) e la convergenza non implica quella assoluta (la serie di Leibniz Σ (−1)ⁿ⁺¹/n converge ma Σ 1/n no). La trappola è usare la condizione necessaria come se fosse sufficiente.",
+  "semplice": "Se una somma infinita si «assesta» su un valore, i pezzi che si aggiungono devono diventare piccolissimi. Ma pezzi piccolissimi da soli non bastano a far assestare la somma.",
+  "passaggi": [
+   "Se Σ aₙ converge a S, le somme parziali Sₙ e Sₙ₋₁ tendono entrambe a S.",
+   "aₙ = Sₙ − Sₙ₋₁ → S − S = 0.",
+   "Il viceversa (D) è falso: la serie armonica ha 1/n → 0 ma diverge.",
+   "La convergenza assoluta (A) non è garantita: Σ (−1)ⁿ⁺¹/n converge ma Σ 1/n no.",
+   "Con certezza: aₙ → 0."
+  ],
+  "concetto": "condizione necessaria di convergenza"
+ },
+ {
+  "id": "ANA-079",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "test",
+  "domanda": "Quanto vale la somma della serie Σ (2/3)ⁿ per n da 0 a ∞?",
+  "opzioni": {
+   "A": "2",
+   "B": "2/3",
+   "C": "3/2",
+   "D": "+∞",
+   "E": "3"
+  },
+  "giusta": "E",
+  "perche": "È una serie geometrica con ragione q = 2/3 e primo termine (n = 0) uguale a 1. Converge perché |q| < 1 e la somma è 1/(1 − 2/3) = 1/(1/3) = 3. La trappola è partire da n = 1 e ottenere 2 (cioè dimenticare il termine iniziale 1), oppure calcolare q/(1 − q) quando la serie parte da 0.",
+  "semplice": "I primi termini sono 1 + 0,667 + 0,444 + 0,296 + …: la somma cresce sempre meno e si avvicina a 3.",
+  "passaggi": [
+   "1. q = 2/3, primo termine (n = 0) = 1",
+   "2. |q| < 1 ⇒ converge",
+   "3. S = 1/(1 − 2/3) = 3"
+  ],
+  "concetto": "somma di serie geometrica"
+ },
+ {
+  "id": "ANA-080",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "superiori",
+  "domanda": "Come si comporta la successione aₙ = (−1)ⁿ?",
+  "opzioni": {
+   "A": "Converge a 0",
+   "B": "Converge a 1",
+   "C": "Diverge a +∞",
+   "D": "È irregolare (oscilla tra −1 e 1 senza limite)",
+   "E": "Converge a −1"
+  },
+  "giusta": "D",
+  "perche": "I termini valgono alternativamente −1, 1, −1, 1…: la sottosuccessione dei pari vale sempre 1 e quella dei dispari sempre −1. Poiché due sottosuccessioni hanno limiti diversi, la successione non ha limite. È limitata, quindi non diverge: si dice irregolare o oscillante. La trappola è fare la «media» e rispondere 0.",
+  "semplice": "È come un interruttore che si accende e si spegne per sempre: non si stabilizza mai su un valore.",
+  "passaggi": [
+   "Scrivi i termini: −1, 1, −1, 1, …",
+   "I termini di indice pari valgono sempre 1, quelli di indice dispari sempre −1.",
+   "Due sottosuccessioni con limiti diversi: la successione non ha limite.",
+   "È limitata, quindi non diverge; e non si fa la «media» 0.",
+   "La successione è irregolare: oscilla tra −1 e 1."
+  ],
+  "concetto": "successioni irregolari"
+ },
+ {
+  "id": "ANA-081",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "superiori",
+  "domanda": "Quanto vale il limite della successione (1 + 1/n)ⁿ per n → ∞?",
+  "opzioni": {
+   "A": "1",
+   "B": "+∞",
+   "C": "2",
+   "D": "e",
+   "E": "0"
+  },
+  "giusta": "D",
+  "perche": "È la successione che definisce il numero di Nepero e ≈ 2,718. È crescente e limitata superiormente (per esempio da 3), quindi converge. La trappola è pensare che, siccome la base tende a 1, il risultato sia 1: la forma 1^∞ è indeterminata.",
+  "semplice": "Calcolando: n = 1 dà 2, n = 10 dà circa 2,594, n = 1000 dà circa 2,717. I valori salgono sempre meno e si avvicinano a 2,71828…",
+  "passaggi": [
+   "La base 1 + 1/n tende a 1 e l'esponente n a +∞: forma indeterminata 1^∞.",
+   "La successione è crescente e limitata superiormente (per esempio da 3), quindi converge.",
+   "Il suo limite è per definizione il numero di Nepero.",
+   "Il limite vale e ≈ 2,718."
+  ],
+  "concetto": "numero di Nepero"
+ },
+ {
+  "id": "ANA-082",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "università",
+  "domanda": "Applicando il criterio del rapporto alla serie Σ n/2ⁿ, che cosa si ottiene?",
+  "opzioni": {
+   "A": "Il rapporto tende a 2, quindi la serie diverge",
+   "B": "Il rapporto tende a 1/2, quindi la serie converge",
+   "C": "Il rapporto tende a 1, quindi il criterio non decide",
+   "D": "Il rapporto tende a 0, quindi la serie diverge",
+   "E": "Il criterio non si può applicare perché i termini sono positivi"
+  },
+  "giusta": "B",
+  "perche": "Il criterio del rapporto calcola lim aₙ₊₁/aₙ. Qui [(n + 1)/2ⁿ⁺¹] · [2ⁿ/n] = (n + 1)/(2n) → 1/2. Poiché il limite è minore di 1, la serie converge (la sua somma vale 2). La trappola è invertire il rapporto (ottenendo 2) o dimenticare che il criterio richiede proprio termini positivi.",
+  "semplice": "Da un certo punto in poi ogni termine è circa la metà del precedente, come in una serie geometrica di ragione 1/2: per questo converge.",
+  "passaggi": [
+   "1. aₙ = n/2ⁿ",
+   "2. aₙ₊₁/aₙ = (n + 1)/2ⁿ⁺¹ · 2ⁿ/n = (n + 1)/(2n)",
+   "3. Limite: 1/2 < 1",
+   "4. La serie converge"
+  ],
+  "concetto": "criterio del rapporto"
+ },
+ {
+  "id": "ANA-083",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "università",
+  "domanda": "Quanto vale la somma della serie Σ 1/(n(n + 1)) per n da 1 a ∞?",
+  "opzioni": {
+   "A": "1",
+   "B": "1/2",
+   "C": "2",
+   "D": "+∞",
+   "E": "π²/6"
+  },
+  "giusta": "A",
+  "perche": "È una serie telescopica: 1/(n(n + 1)) = 1/n − 1/(n + 1). Nella somma parziale i termini intermedi si cancellano e resta Sₙ = 1 − 1/(n + 1), che tende a 1. La trappola è confonderla con Σ 1/n², che ha somma π²/6, oppure pensare che diverga perché assomiglia alla serie armonica.",
+  "semplice": "Come un cannocchiale che si richiude: (1 − 1/2) + (1/2 − 1/3) + (1/3 − 1/4) + … Rimane solo il primo pezzo, 1, meno un resto che sparisce.",
+  "passaggi": [
+   "1. Scompongo: 1/(n(n + 1)) = 1/n − 1/(n + 1)",
+   "2. Sₙ = 1 − 1/(n + 1)",
+   "3. lim Sₙ = 1"
+  ],
+  "concetto": "serie telescopica"
+ },
+ {
+  "id": "ANA-084",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "università",
+  "domanda": "Che cosa si può dire della serie Σ (−1)ⁿ⁺¹/n (n da 1 a ∞)?",
+  "opzioni": {
+   "A": "Converge, ma non converge assolutamente",
+   "B": "Converge assolutamente",
+   "C": "Diverge a +∞",
+   "D": "È indeterminata",
+   "E": "Converge a 0"
+  },
+  "giusta": "A",
+  "perche": "Per il criterio di Leibniz, una serie a segni alterni con termini in valore assoluto decrescenti e tendenti a 0 converge: qui 1/n soddisfa le ipotesi (la somma vale ln 2). La serie dei valori assoluti però è la serie armonica, che diverge: la convergenza è solo semplice. La trappola è dedurre la divergenza dalla serie armonica, oppure credere che la convergenza sia assoluta.",
+  "semplice": "I termini +1, −1/2, +1/3, −1/4… si compensano a vicenda: la somma oscilla con oscillazioni sempre più piccole e si assesta intorno a 0,693.",
+  "passaggi": [
+   "È una serie a segni alterni con |aₙ| = 1/n.",
+   "Criterio di Leibniz: 1/n è decrescente e tende a 0, quindi la serie converge (a ln 2).",
+   "Serie dei valori assoluti: Σ 1/n, la serie armonica, che diverge.",
+   "Quindi la convergenza non è assoluta.",
+   "La serie converge, ma non converge assolutamente."
+  ],
+  "concetto": "criterio di Leibniz"
+ },
+ {
+  "id": "ANA-085",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "università",
+  "domanda": "Qual è il raggio di convergenza della serie di potenze Σ xⁿ/n (n da 1 a ∞)?",
+  "opzioni": {
+   "A": "R = 0",
+   "B": "R = 1",
+   "C": "R = +∞",
+   "D": "R = 1/2",
+   "E": "R = e"
+  },
+  "giusta": "B",
+  "perche": "Con il criterio del rapporto sui coefficienti: |aₙ₊₁/aₙ| = n/(n + 1) → 1, quindi R = 1/1 = 1. La serie converge per |x| < 1 e diverge per |x| > 1. Agli estremi si studia a parte: in x = 1 è la serie armonica (diverge), in x = −1 è una serie di Leibniz (converge). La trappola è pensare che il fattore 1/n cambi il raggio: lo cambia solo agli estremi.",
+  "semplice": "Questa serie è legata a −ln(1 − x): funziona finché |x| < 1, come la serie geometrica da cui deriva.",
+  "passaggi": [
+   "1. aₙ = 1/n",
+   "2. |aₙ₊₁/aₙ| = n/(n + 1) → 1",
+   "3. R = 1"
+  ],
+  "concetto": "raggio di convergenza"
+ },
+ {
+  "id": "ANA-086",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "test",
+  "domanda": "Nello sviluppo di Taylor (MacLaurin) di eˣ, qual è il coefficiente di x³?",
+  "opzioni": {
+   "A": "1/3",
+   "B": "1",
+   "C": "1/6",
+   "D": "3",
+   "E": "1/9"
+  },
+  "giusta": "C",
+  "perche": "Lo sviluppo è eˣ = Σ xⁿ/n! = 1 + x + x²/2! + x³/3! + … Il coefficiente di x³ è 1/3! = 1/6. In generale il coefficiente di xⁿ è f⁽ⁿ⁾(0)/n!, e per eˣ tutte le derivate in 0 valgono 1. La trappola è dividere per n invece che per n fattoriale, ottenendo 1/3.",
+  "semplice": "Il fattoriale cresce in fretta (3! = 6, 5! = 120): per questo i termini diventano presto piccoli e pochi termini bastano a calcolare eˣ con buona precisione.",
+  "passaggi": [
+   "1. Coefficiente di xⁿ: f⁽ⁿ⁾(0)/n!",
+   "2. Per eˣ: f⁽ⁿ⁾(0) = 1",
+   "3. n = 3: 1/3! = 1/6"
+  ],
+  "concetto": "serie di Taylor"
+ },
+ {
+  "id": "ANA-087",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "superiori",
+  "domanda": "Quanto vale la somma dei primi 100 numeri naturali, 1 + 2 + 3 + … + 100?",
+  "opzioni": {
+   "A": "5000",
+   "B": "10 100",
+   "C": "5050",
+   "D": "4950",
+   "E": "10 000"
+  },
+  "giusta": "C",
+  "perche": "È la somma di una progressione aritmetica: n(primo + ultimo)/2 = 100 · 101/2 = 5050. L'idea, attribuita a Gauss da ragazzo, è sommare il primo con l'ultimo, il secondo con il penultimo e così via: si ottengono 50 coppie da 101. La trappola è dimenticare di dividere per 2 (10 100) oppure sommare fino a 99 (4950).",
+  "semplice": "1 + 100 = 101, 2 + 99 = 101, 3 + 98 = 101… Ci sono 50 coppie così, quindi 50 · 101 = 5050.",
+  "passaggi": [
+   "1. Progressione aritmetica: a₁ = 1, a₁₀₀ = 100",
+   "2. S = n(a₁ + aₙ)/2",
+   "3. S = 100 · 101/2 = 5050"
+  ],
+  "concetto": "progressione aritmetica"
+ },
+ {
+  "id": "ANA-088",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "test",
+  "domanda": "Quanto vale il limite della successione n/2ⁿ per n → ∞?",
+  "opzioni": {
+   "A": "0",
+   "B": "+∞",
+   "C": "1",
+   "D": "1/2",
+   "E": "Il limite non esiste"
+  },
+  "giusta": "A",
+  "perche": "Numeratore e denominatore divergono, ma l'esponenziale 2ⁿ cresce molto più in fretta di qualsiasi potenza di n: nella gerarchia degli infiniti l'esponenziale «vince». Quindi il rapporto tende a 0. La trappola è rispondere +∞ guardando solo il numeratore, o 1 pensando a «infinito diviso infinito».",
+  "semplice": "Con n = 10 si ha 10/1024 ≈ 0,0098; con n = 20 si ha 20/1 048 576 ≈ 0,000019. Il denominatore scappa via.",
+  "passaggi": [
+   "Numeratore e denominatore tendono a +∞: forma ∞/∞.",
+   "Gerarchia degli infiniti: l'esponenziale 2ⁿ cresce più in fretta di qualsiasi potenza di n.",
+   "Controllo numerico: n = 10 dà 10/1024 ≈ 0,01; n = 20 dà 20/1048576 ≈ 0,00002.",
+   "Il limite vale 0."
+  ],
+  "concetto": "gerarchia degli infiniti"
+ },
+ {
+  "id": "ANA-089",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "università",
+  "domanda": "Quale teorema garantisce che una successione crescente e limitata superiormente converge?",
+  "opzioni": {
+   "A": "Il teorema delle successioni monotone",
+   "B": "Il teorema di Rolle",
+   "C": "Il teorema degli zeri",
+   "D": "Il teorema di de l'Hôpital",
+   "E": "Il criterio di Leibniz"
+  },
+  "giusta": "A",
+  "perche": "Il teorema delle successioni monotone afferma che ogni successione monotona e limitata ha limite finito: se crescente, converge all'estremo superiore dei suoi valori. Si basa sulla completezza dei numeri reali. La trappola è credere che basti la monotonia (aₙ = n è crescente ma diverge) o che basti la limitatezza ((−1)ⁿ è limitata ma oscilla).",
+  "semplice": "Se sali una scala che ha un soffitto, non puoi salire per sempre né tornare indietro: devi fermarti sempre più vicino a una certa quota.",
+  "passaggi": [
+   "Le ipotesi sono due: successione monotona (crescente) e limitata.",
+   "Il teorema delle successioni monotone dice che allora il limite esiste finito (l'estremo superiore).",
+   "Rolle, zeri e de l'Hôpital riguardano funzioni; Leibniz riguarda serie a segni alterni.",
+   "È il teorema delle successioni monotone."
+  ],
+  "concetto": "successioni monotone"
+ },
+ {
+  "id": "ANA-090",
+  "materia": "Analisi matematica",
+  "argomento": "Successioni e serie",
+  "livello": "superiori",
+  "domanda": "Quanto vale la somma della serie Σ 1/3ⁿ per n da 1 a ∞?",
+  "opzioni": {
+   "A": "3/2",
+   "B": "1/3",
+   "C": "1",
+   "D": "1/2",
+   "E": "3"
+  },
+  "giusta": "D",
+  "perche": "È una serie geometrica di ragione q = 1/3 che parte da n = 1, quindi il primo termine è 1/3. La somma è primo termine/(1 − q) = (1/3)/(2/3) = 1/2. La trappola è usare la formula 1/(1 − q) = 3/2, valida solo quando si parte da n = 0, cioè quando il primo termine è 1.",
+  "semplice": "1/3 + 1/9 + 1/27 + … = 0,333 + 0,111 + 0,037 + … e si avvicina a 0,5.",
+  "passaggi": [
+   "1. Primo termine: 1/3, ragione 1/3",
+   "2. S = (1/3)/(1 − 1/3)",
+   "3. S = (1/3)/(2/3) = 1/2"
+  ],
+  "concetto": "serie geometrica"
+ },
+ {
+  "id": "ANA-091",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Quale funzione è soluzione dell'equazione differenziale y' = 3y?",
+  "opzioni": {
+   "A": "y = 3x",
+   "B": "y = C · e^(3x)",
+   "C": "y = e^(x/3)",
+   "D": "y = 3eˣ",
+   "E": "y = x³"
+  },
+  "giusta": "B",
+  "perche": "Derivando y = C e^(3x) si ottiene y' = 3C e^(3x) = 3y: l'equazione è soddisfatta per ogni costante C. In generale y' = ky ha soluzioni y = C e^(kx). La trappola è scegliere funzioni che contengono il numero 3 in altro modo: 3eˣ ha derivata 3eˣ = y, non 3y, e x³ ha derivata 3x², che non è 3x³.",
+  "semplice": "L'equazione dice che la velocità di crescita è proporzionale alla quantità stessa: è la legge della crescita esponenziale, come un capitale con interesse composto continuo.",
+  "passaggi": [
+   "1. y = C e^(3x)",
+   "2. y' = 3C e^(3x)",
+   "3. y' = 3y ✓"
+  ],
+  "concetto": "crescita esponenziale"
+ },
+ {
+  "id": "ANA-092",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Di che ordine è l'equazione differenziale y'' + 3y' = x?",
+  "opzioni": {
+   "A": "Del primo ordine",
+   "B": "Del terzo ordine",
+   "C": "Del secondo ordine",
+   "D": "Di ordine zero",
+   "E": "Del quarto ordine"
+  },
+  "giusta": "C",
+  "perche": "L'ordine di un'equazione differenziale è l'ordine più alto della derivata che vi compare. Qui la derivata più alta è y'', quindi l'ordine è 2. La trappola è sommare gli ordini delle derivate presenti (2 + 1 = 3) oppure guardare il coefficiente 3.",
+  "semplice": "Come per il grado di un polinomio si guarda la potenza più alta, per l'ordine si guarda la derivata «con più apici». L'equazione del moto F = ma è del secondo ordine perché a è la derivata seconda della posizione.",
+  "passaggi": [
+   "L'ordine è quello della derivata più alta presente.",
+   "In y'' + 3y' = x compaiono y'' e y': la più alta è y''.",
+   "Non si sommano gli ordini e il coefficiente 3 non conta.",
+   "L'equazione è del secondo ordine."
+  ],
+  "concetto": "ordine di un'equazione"
+ },
+ {
+  "id": "ANA-093",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è la soluzione del problema di Cauchy y' = 2x con y(0) = 5?",
+  "opzioni": {
+   "A": "y = x²",
+   "B": "y = x² + 5",
+   "C": "y = 2x + 5",
+   "D": "y = x² − 5",
+   "E": "y = 5x²"
+  },
+  "giusta": "B",
+  "perche": "Integrando y' = 2x si ottiene l'integrale generale y = x² + C. La condizione iniziale y(0) = 5 dà 0 + C = 5, quindi C = 5 e y = x² + 5. La trappola è dimenticare la costante (y = x²) oppure scambiare la derivata con la funzione e scrivere y = 2x + 5.",
+  "semplice": "L'equazione dà la pendenza in ogni punto; la condizione iniziale dice da dove partire. Tra tutte le parabole y = x² + C si sceglie quella che passa per (0, 5).",
+  "passaggi": [
+   "1. y = ∫ 2x dx = x² + C",
+   "2. y(0) = C = 5",
+   "3. y = x² + 5"
+  ],
+  "concetto": "problema di Cauchy"
+ },
+ {
+  "id": "ANA-094",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "test",
+  "domanda": "Qual è la soluzione del problema y' = −2y con y(0) = 4?",
+  "opzioni": {
+   "A": "y = −2e^(4x)",
+   "B": "y = 4e^(2x)",
+   "C": "y = 4 − 2x",
+   "D": "y = −8x + 4",
+   "E": "y = 4e^(−2x)"
+  },
+  "giusta": "E",
+  "perche": "L'equazione y' = ky ha soluzione generale y = C e^(kx); con k = −2 si ha y = C e^(−2x). Imponendo y(0) = 4 si trova C = 4. La trappola è perdere il segno meno (crescita invece di decadimento) oppure scambiare il ruolo di k e del valore iniziale.",
+  "semplice": "È un decadimento esponenziale: la quantità diminuisce tanto più in fretta quanto più è grande. Parte da 4 e si avvicina a 0 senza mai raggiungerlo.",
+  "passaggi": [
+   "1. Soluzione generale: y = C e^(−2x)",
+   "2. y(0) = C = 4",
+   "3. y = 4e^(−2x)"
+  ],
+  "concetto": "decadimento esponenziale"
+ },
+ {
+  "id": "ANA-095",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "test",
+  "domanda": "Qual è l'integrale generale dell'equazione a variabili separabili y' = x · y?",
+  "opzioni": {
+   "A": "y = C · eˣ",
+   "B": "y = C · e^(x²/2)",
+   "C": "y = x²/2 + C",
+   "D": "y = C · x · eˣ",
+   "E": "y = C · e^(x²)"
+  },
+  "giusta": "B",
+  "perche": "Si separano le variabili: dy/y = x dx. Integrando, ln|y| = x²/2 + k, quindi y = C e^(x²/2) (con C che include anche la soluzione y = 0). La trappola è integrare male x (ottenendo x² invece di x²/2) oppure trattare y come costante e integrare solo il lato destro.",
+  "semplice": "Separare le variabili significa mettere tutte le y da una parte e tutte le x dall'altra, poi integrare entrambi i lati. Verifica: derivando C e^(x²/2) si ottiene x · C e^(x²/2) = x y.",
+  "passaggi": [
+   "1. dy/y = x dx",
+   "2. ln|y| = x²/2 + k",
+   "3. |y| = eᵏ · e^(x²/2)",
+   "4. y = C e^(x²/2)"
+  ],
+  "concetto": "variabili separabili"
+ },
+ {
+  "id": "ANA-096",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "università",
+  "domanda": "Qual è l'integrale generale dell'equazione y'' + y = 0?",
+  "opzioni": {
+   "A": "y = A eˣ + B e^(−x)",
+   "B": "y = (A + Bx) eˣ",
+   "C": "y = A cos x",
+   "D": "y = A cos x + B sin x",
+   "E": "y = A x + B"
+  },
+  "giusta": "D",
+  "perche": "L'equazione caratteristica è r² + 1 = 0, con radici complesse r = ±i. In questo caso le soluzioni reali sono cos x e sin x, e l'integrale generale è y = A cos x + B sin x. La trappola è confonderla con y'' − y = 0, che ha radici ±1 e soluzioni esponenziali, oppure dimenticare una delle due soluzioni indipendenti: un'equazione del secondo ordine ha due costanti.",
+  "semplice": "È l'equazione dell'oscillatore armonico, come una molla senza attrito: la soluzione oscilla per sempre come seno e coseno.",
+  "passaggi": [
+   "1. Equazione caratteristica: r² + 1 = 0",
+   "2. r = ±i",
+   "3. y = A cos x + B sin x"
+  ],
+  "concetto": "oscillatore armonico"
+ },
+ {
+  "id": "ANA-097",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "università",
+  "domanda": "Qual è l'integrale generale dell'equazione y'' − 5y' + 6y = 0?",
+  "opzioni": {
+   "A": "y = C₁e^(2x) + C₂e^(3x)",
+   "B": "y = C₁e^(−2x) + C₂e^(−3x)",
+   "C": "y = C₁e^(5x) + C₂e^(6x)",
+   "D": "y = (C₁ + C₂x)e^(2x)",
+   "E": "y = C₁cos 2x + C₂sin 3x"
+  },
+  "giusta": "A",
+  "perche": "L'equazione caratteristica è r² − 5r + 6 = 0, con radici reali distinte r = 2 e r = 3. L'integrale generale è quindi C₁e^(2x) + C₂e^(3x). La trappola è sbagliare i segni delle radici (r² − 5r + 6 = (r − 2)(r − 3)) oppure usare i coefficienti dell'equazione come esponenti.",
+  "semplice": "Per le equazioni lineari a coefficienti costanti si «prova» y = e^(rx): sostituendo si trova un'equazione di secondo grado in r. Due radici reali diverse danno due esponenziali.",
+  "passaggi": [
+   "1. Caratteristica: r² − 5r + 6 = 0",
+   "2. (r − 2)(r − 3) = 0 ⇒ r = 2, r = 3",
+   "3. y = C₁e^(2x) + C₂e^(3x)"
+  ],
+  "concetto": "equazione caratteristica"
+ },
+ {
+  "id": "ANA-098",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "università",
+  "domanda": "Qual è l'integrale generale dell'equazione y'' − 4y' + 4y = 0?",
+  "opzioni": {
+   "A": "y = C₁e^(2x) + C₂e^(−2x)",
+   "B": "y = C₁e^(2x)",
+   "C": "y = (C₁ + C₂x)e^(2x)",
+   "D": "y = C₁e^(4x) + C₂",
+   "E": "y = C₁cos 2x + C₂sin 2x"
+  },
+  "giusta": "C",
+  "perche": "L'equazione caratteristica r² − 4r + 4 = (r − 2)² = 0 ha la radice doppia r = 2. In questo caso una sola esponenziale non basta: la seconda soluzione indipendente è x e^(2x), e l'integrale generale è (C₁ + C₂x)e^(2x). La trappola è scrivere solo C₁e^(2x), che ha una sola costante, oppure inventare una seconda radice −2.",
+  "semplice": "Con radice doppia serve «un'altra» soluzione, e si ottiene moltiplicando l'esponenziale per x. È il caso dello smorzamento critico di una molla.",
+  "passaggi": [
+   "1. Caratteristica: r² − 4r + 4 = 0",
+   "2. (r − 2)² = 0 ⇒ r = 2 doppia",
+   "3. y = (C₁ + C₂x)e^(2x)"
+  ],
+  "concetto": "radice doppia"
+ },
+ {
+  "id": "ANA-099",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "test",
+  "domanda": "Qual è la soluzione del problema y' + y = 1 con y(0) = 0?",
+  "opzioni": {
+   "A": "y = e^(−x)",
+   "B": "y = 1 + e^(−x)",
+   "C": "y = 1 − e^(−x)",
+   "D": "y = x",
+   "E": "y = 1 − eˣ"
+  },
+  "giusta": "C",
+  "perche": "È un'equazione lineare del primo ordine. La soluzione dell'omogenea è C e^(−x) e una soluzione particolare costante è y = 1; quindi y = 1 + C e^(−x). Da y(0) = 0 si ottiene C = −1, cioè y = 1 − e^(−x). La trappola è dimenticare la soluzione particolare oppure sbagliare il segno dell'esponente.",
+  "semplice": "È il modello di un condensatore che si carica o di una tazza che si scalda: parte da 0 e si avvicina a 1 sempre più lentamente.",
+  "passaggi": [
+   "1. Omogenea: y' = −y ⇒ C e^(−x)",
+   "2. Particolare: y = 1 (infatti 0 + 1 = 1)",
+   "3. y = 1 + C e^(−x)",
+   "4. y(0) = 1 + C = 0 ⇒ C = −1",
+   "5. y = 1 − e^(−x)"
+  ],
+  "concetto": "equazione lineare del primo ordine"
+ },
+ {
+  "id": "ANA-100",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "test",
+  "domanda": "Una sostanza radioattiva segue la legge N'(t) = −k · N(t) con k > 0. Qual è il suo tempo di dimezzamento?",
+  "opzioni": {
+   "A": "k / ln 2",
+   "B": "1/(2k)",
+   "C": "2/k",
+   "D": "k · ln 2",
+   "E": "ln 2 / k"
+  },
+  "giusta": "E",
+  "perche": "La soluzione è N(t) = N₀ e^(−kt). Il dimezzamento si ha quando N(T) = N₀/2, cioè e^(−kT) = 1/2, quindi −kT = ln(1/2) = −ln 2 e T = ln 2/k. La trappola è invertire la formula (k/ln 2) o pensare che il dimezzamento sia semplicemente 1/(2k).",
+  "semplice": "Il tempo di dimezzamento non dipende da quanta sostanza c'è all'inizio: ogni T si dimezza ciò che resta. Con k = 0,1 all'anno, T ≈ 6,9 anni.",
+  "passaggi": [
+   "1. N(t) = N₀ e^(−kt)",
+   "2. N₀ e^(−kT) = N₀/2",
+   "3. −kT = −ln 2",
+   "4. T = ln 2/k"
+  ],
+  "concetto": "tempo di dimezzamento"
+ },
+ {
+  "id": "ANA-101",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Una popolazione di batteri cresce in modo esponenziale e raddoppia ogni 3 ore. Di quanto si è moltiplicata dopo 9 ore?",
+  "opzioni": {
+   "A": "Di 8 volte",
+   "B": "Di 3 volte",
+   "C": "Di 6 volte",
+   "D": "Di 9 volte",
+   "E": "Di 27 volte"
+  },
+  "giusta": "A",
+  "perche": "In 9 ore ci sono 9/3 = 3 periodi di raddoppio, quindi la popolazione si moltiplica per 2³ = 8. Nella crescita esponenziale i fattori si moltiplicano, non si sommano. La trappola è ragionare in modo lineare (2 · 3 = 6) oppure usare il numero di ore come esponente o come base.",
+  "semplice": "100 batteri diventano 200 dopo 3 ore, 400 dopo 6 ore e 800 dopo 9 ore.",
+  "passaggi": [
+   "1. Numero di raddoppi: 9/3 = 3",
+   "2. Fattore: 2³ = 8"
+  ],
+  "concetto": "crescita esponenziale"
+ },
+ {
+  "id": "ANA-102",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale generale dell'equazione y' = cos x?",
+  "opzioni": {
+   "A": "y = −sin x + C",
+   "B": "y = cos x + C",
+   "C": "y = −cos x + C",
+   "D": "y = sin x",
+   "E": "y = sin x + C"
+  },
+  "giusta": "E",
+  "perche": "Quando la derivata dipende solo da x, basta integrare: y = ∫ cos x dx = sin x + C. La costante arbitraria C è essenziale, perché indica che le soluzioni sono infinite (tutte traslate verticalmente). La trappola è dimenticare C, oppure sbagliare il segno della primitiva.",
+  "semplice": "Ogni valore di C dà una curva soluzione diversa: sono tutte sinusoidi uguali spostate in alto o in basso.",
+  "passaggi": [
+   "1. y = ∫ cos x dx",
+   "2. y = sin x + C"
+  ],
+  "concetto": "integrale generale"
+ },
+ {
+  "id": "ANA-103",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "università",
+  "domanda": "Per risolvere l'equazione lineare y' + P(x) · y = Q(x), per quale fattore si moltiplicano entrambi i membri?",
+  "opzioni": {
+   "A": "e^(−∫P(x) dx)",
+   "B": "e^(∫Q(x) dx)",
+   "C": "1/P(x)",
+   "D": "e^(∫P(x) dx)",
+   "E": "P(x) · Q(x)"
+  },
+  "giusta": "D",
+  "perche": "Moltiplicando per μ(x) = e^(∫P dx) il primo membro diventa la derivata di un prodotto: (μ y)' = μ y' + μ P y. Così l'equazione si scrive (μ y)' = μ Q e si risolve integrando. La trappola è sbagliare il segno all'esponente o usare Q invece di P: il fattore dipende solo dal coefficiente di y.",
+  "semplice": "Il fattore integrante è un «trucco» che trasforma il lato sinistro in una derivata già pronta. Per y' + y = 1 il fattore è eˣ, e si ottiene (eˣ y)' = eˣ.",
+  "passaggi": [
+   "Scegli μ(x) = e^(∫P(x) dx); la sua derivata è μ' = μ · P.",
+   "Moltiplicando: μ y' + μ P y = μ Q.",
+   "Il primo membro è la derivata del prodotto: (μ y)' = μ y' + μ' y.",
+   "Quindi (μ y)' = μ Q, che si risolve integrando.",
+   "Il fattore integrante è e^(∫P(x) dx)."
+  ],
+  "concetto": "fattore integrante"
+ },
+ {
+  "id": "ANA-104",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Quante costanti arbitrarie contiene l'integrale generale di un'equazione differenziale ordinaria di ordine n?",
+  "opzioni": {
+   "A": "1",
+   "B": "n",
+   "C": "n − 1",
+   "D": "n + 1",
+   "E": "2n"
+  },
+  "giusta": "B",
+  "perche": "Per risolvere un'equazione di ordine n bisogna, in sostanza, integrare n volte, e ogni integrazione introduce una costante. Per questo l'integrale generale contiene n costanti, e per fissare una soluzione servono n condizioni iniziali. La trappola è pensare che ci sia sempre una sola costante C, come negli integrali indefiniti.",
+  "semplice": "y'' = 0 ha soluzioni y = Ax + B: due costanti, perché l'equazione è del secondo ordine. Per sceglierne una servono la posizione e la pendenza iniziali.",
+  "passaggi": [
+   "Risolvere un'equazione di ordine n equivale, in sostanza, a integrare n volte.",
+   "Ogni integrazione introduce una costante arbitraria.",
+   "Per questo servono anche n condizioni iniziali per fissare una soluzione.",
+   "L'integrale generale contiene n costanti."
+  ],
+  "concetto": "costanti arbitrarie"
+ },
+ {
+  "id": "ANA-105",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "test",
+  "domanda": "Qual è la soluzione del problema y'' = 6x con y(0) = 1 e y'(0) = 2?",
+  "opzioni": {
+   "A": "y = x³ + 2x + 1",
+   "B": "y = 3x² + 2x + 1",
+   "C": "y = x³ + x + 2",
+   "D": "y = 6x + 1",
+   "E": "y = x³ + 1"
+  },
+  "giusta": "A",
+  "perche": "Integrando una volta: y' = 3x² + C₁, e y'(0) = 2 dà C₁ = 2. Integrando di nuovo: y = x³ + 2x + C₂, e y(0) = 1 dà C₂ = 1. La trappola è integrare una volta sola (3x² + …) oppure scambiare le due condizioni iniziali tra loro.",
+  "semplice": "È come ricostruire la posizione di un corpo conoscendone l'accelerazione: servono la posizione iniziale (1) e la velocità iniziale (2).",
+  "passaggi": [
+   "1. y' = 3x² + C₁",
+   "2. y'(0) = C₁ = 2",
+   "3. y = x³ + 2x + C₂",
+   "4. y(0) = C₂ = 1",
+   "5. y = x³ + 2x + 1"
+  ],
+  "concetto": "equazioni del secondo ordine"
+ },
+ {
+  "id": "ANA-106",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "test",
+  "domanda": "Qual è una soluzione particolare dell'equazione y'' − y = 2?",
+  "opzioni": {
+   "A": "y = 2",
+   "B": "y = 2x",
+   "C": "y = eˣ",
+   "D": "y = −2",
+   "E": "y = x²"
+  },
+  "giusta": "D",
+  "perche": "Poiché il termine noto è costante, si cerca una soluzione costante y = k: allora y'' = 0 e l'equazione diventa −k = 2, cioè k = −2. La trappola è scegliere y = 2 copiando il termine noto senza sostituire, oppure scegliere eˣ, che risolve l'omogenea y'' − y = 0 ma dà 0, non 2.",
+  "semplice": "Per trovare una soluzione particolare si «indovina» una funzione dello stesso tipo del termine noto e si aggiustano i coefficienti. Verifica: 0 − (−2) = 2.",
+  "passaggi": [
+   "1. Provo y = k costante",
+   "2. y'' = 0 ⇒ 0 − k = 2",
+   "3. k = −2"
+  ],
+  "concetto": "soluzione particolare"
+ },
+ {
+  "id": "ANA-107",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "università",
+  "domanda": "Qual è l'integrale generale dell'equazione y'' + 2y' + 5y = 0?",
+  "opzioni": {
+   "A": "y = e^(−x)(A cos 2x + B sin 2x)",
+   "B": "y = e^(x)(A cos 2x + B sin 2x)",
+   "C": "y = e^(−2x)(A cos x + B sin x)",
+   "D": "y = A e^(−x) + B e^(2x)",
+   "E": "y = A cos(√5 x) + B sin(√5 x)"
+  },
+  "giusta": "A",
+  "perche": "L'equazione caratteristica r² + 2r + 5 = 0 ha discriminante 4 − 20 = −16 < 0 e radici r = −1 ± 2i. La parte reale −1 dà l'esponenziale e^(−x), la parte immaginaria 2 dà la frequenza delle oscillazioni. La trappola è scambiare parte reale e parte immaginaria, oppure sbagliare il segno della parte reale.",
+  "semplice": "È un'oscillazione smorzata, come una molla con attrito: oscilla con «ritmo» 2 mentre l'ampiezza si riduce come e^(−x).",
+  "passaggi": [
+   "1. Caratteristica: r² + 2r + 5 = 0",
+   "2. Δ = 4 − 20 = −16",
+   "3. r = (−2 ± 4i)/2 = −1 ± 2i",
+   "4. y = e^(−x)(A cos 2x + B sin 2x)"
+  ],
+  "concetto": "radici complesse coniugate"
+ },
+ {
+  "id": "ANA-108",
+  "materia": "Analisi matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "università",
+  "domanda": "Per l'equazione logistica y' = y(2 − y), quali sono le soluzioni di equilibrio e quale è stabile?",
+  "opzioni": {
+   "A": "y = 0 e y = 2; stabile y = 0",
+   "B": "Solo y = 2, che è instabile",
+   "C": "y = 1 e y = 2; stabile y = 1",
+   "D": "y = 0 e y = 2; stabile y = 2",
+   "E": "y = 0 e y = −2; stabile y = −2"
+  },
+  "giusta": "D",
+  "perche": "Gli equilibri sono i valori costanti che annullano y': y(2 − y) = 0, cioè y = 0 e y = 2. Per 0 < y < 2 si ha y' > 0 (cresce verso 2), per y > 2 si ha y' < 0 (scende verso 2): le soluzioni vicine sono attratte da 2, che è stabile. Vicino a 0, invece, le soluzioni positive se ne allontanano: 0 è instabile. La trappola è ritenere stabile lo zero solo perché è «il punto di partenza».",
+  "semplice": "È il modello di una popolazione con risorse limitate: cresce finché non raggiunge la capacità dell'ambiente (qui 2) e poi resta lì.",
+  "passaggi": [
+   "1. Equilibri: y(2 − y) = 0 ⇒ y = 0, y = 2",
+   "2. Segno di y': + per 0 < y < 2, − per y > 2",
+   "3. Le soluzioni vicine convergono a 2 ⇒ stabile",
+   "4. Si allontanano da 0 ⇒ instabile"
+  ],
+  "concetto": "equazione logistica"
+ }
+]

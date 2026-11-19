@@ -1,0 +1,306 @@
+{
+"Equazioni di Maxwell": {
+"superiore": {
+"spiegazione": [
+"Le equazioni di Maxwell sono quattro leggi che, insieme alla forza di Lorentz, descrivono tutti i fenomeni elettrici e magnetici. Maxwell le riunì intorno al 1864, aggiungendo un termine nuovo che portò alla scoperta delle onde elettromagnetiche. Si possono enunciare usando due idee: il flusso di un campo attraverso una superficie chiusa (quanto campo «esce» dalla superficie) e la circuitazione di un campo lungo una linea chiusa (quanto il campo «gira» lungo il percorso).",
+"Prima equazione, teorema di Gauss per il campo elettrico: il flusso di E attraverso una superficie chiusa è uguale alla carica totale interna divisa per ε₀: Φ(E) = Q_int/ε₀, con ε₀ = 8,85·10⁻¹² C²/(N·m²). Le cariche sono quindi sorgenti (positive) o pozzi (negative) delle linee del campo elettrico. Esempio: una superficie che racchiude una carica di 1,0 μC ha flusso 1,0·10⁻⁶/8,85·10⁻¹² ≈ 1,13·10⁵ N·m²/C, qualunque sia la sua forma. Seconda equazione, teorema di Gauss per il campo magnetico: il flusso di B attraverso qualunque superficie chiusa è zero, Φ(B) = 0. Significa che non esistono «cariche magnetiche» isolate: le linee del campo magnetico sono sempre chiuse e spezzando una calamita si ottengono due calamite, ciascuna con il suo polo nord e sud.",
+"Terza equazione, legge di Faraday-Neumann-Lenz: la circuitazione del campo elettrico lungo una linea chiusa è uguale all'opposto della rapidità di variazione del flusso magnetico concatenato, Γ(E) = −ΔΦ(B)/Δt. Un campo magnetico variabile genera quindi un campo elettrico, che ha linee chiuse ed è diverso da quello delle cariche ferme. Quarta equazione, legge di Ampère-Maxwell: la circuitazione di B è Γ(B) = μ₀·(I + i_s), dove I è la corrente concatenata e i_s = ε₀·ΔΦ(E)/Δt è la corrente di spostamento introdotta da Maxwell. Esempio: per un filo con I = 10 A, a 5,0 cm di distanza B = μ₀I/(2πr) = 2·10⁻⁷·10/0,050 = 4,0·10⁻⁵ T.",
+"Perché serviva la corrente di spostamento? Si pensi a un condensatore che si sta caricando: nei fili passa corrente, ma tra le armature non passa nessuna carica. Se si applicasse la legge di Ampère a una superficie che passa tra le armature si troverebbe B = 0, mentre attorno al filo B c'è: una contraddizione. Tra le armature però il campo elettrico sta aumentando, e la corrente di spostamento ε₀·ΔΦ(E)/Δt risulta esattamente uguale alla corrente nei fili. Esempio: con armature di 0,010 m² e un campo che cresce di 10¹² V/m al secondo, i_s = 8,85·10⁻¹²·0,010·10¹² ≈ 0,089 A.",
+"La conseguenza più importante è la simmetria: un campo magnetico variabile genera un campo elettrico (Faraday) e un campo elettrico variabile genera un campo magnetico (Ampère-Maxwell). I due campi possono quindi autosostenersi e propagarsi nel vuoto come onda elettromagnetica, senza bisogno di cariche o correnti. Dalle equazioni Maxwell ricavò la velocità dell'onda, c = 1/√(ε₀μ₀) = 1/√(8,854·10⁻¹²·1,257·10⁻⁶) ≈ 3,00·10⁸ m/s, uguale alla velocità della luce misurata: concluse che la luce è un'onda elettromagnetica. In assenza di cariche e correnti le equazioni sono quasi simmetriche tra E e B; l'asimmetria rimanente nasce dal fatto che non esistono monopoli magnetici."
+],
+"metodo": [
+"Scrivi le quattro equazioni su un foglio in colonna, accanto a ciascuna il nome, il significato fisico in una frase e un esempio.",
+"Disegna le linee di campo per ogni caso: carica puntiforme (Gauss E), calamita (Gauss B), magnete che si avvicina a una spira (Faraday), filo percorso da corrente (Ampère).",
+"Ripassa prima flusso e circuitazione come concetti geometrici, poi applicali ai campi.",
+"Rifai il ragionamento del condensatore in carica fino a convincerti della necessità della corrente di spostamento.",
+"Calcola c con i valori di ε₀ e μ₀ per verificare il risultato di Maxwell.",
+"Confronta le equazioni con e senza cariche e correnti, evidenziando la simmetria tra E e B."
+],
+"ricorda": [
+"Gauss E: le cariche sono le sorgenti; Gauss B: niente monopoli.",
+"Faraday: B che cambia crea E; Ampère-Maxwell: E che cambia crea B.",
+"Condensatore in carica: la corrente di spostamento fa da ponte tra le armature.",
+"ε₀ e μ₀ insieme danno la velocità della luce."
+],
+"errori": [
+"Pensare che flusso nullo di B significhi campo nullo: significa solo che quanto entra in una superficie chiusa ne esce.",
+"Credere che la corrente di spostamento sia un movimento di cariche: è un campo elettrico variabile.",
+"Applicare Gauss a superfici aperte: il teorema vale per superfici chiuse.",
+"Pensare che il campo elettrico indotto abbia le stesse proprietà di quello elettrostatico: ha circuitazione diversa da zero.",
+"Dimenticare che ogni equazione vale in qualsiasi situazione, non solo nei casi simmetrici in cui la usiamo per calcolare il campo."
+],
+"domande": [
+{"domanda": "Che cosa afferma il teorema di Gauss per il campo magnetico?", "risposta": "Che il flusso di B attraverso qualsiasi superficie chiusa è nullo, cioè non esistono monopoli magnetici e le linee di B sono chiuse."},
+{"domanda": "Che cos'è la corrente di spostamento?", "risposta": "Il termine i_s = ε₀·ΔΦ(E)/Δt aggiunto da Maxwell alla legge di Ampère: un campo elettrico variabile genera un campo magnetico come una corrente."},
+{"domanda": "Calcola il flusso del campo elettrico attraverso una sfera che racchiude cariche di +5 nC e −2 nC.", "risposta": "Φ = Q/ε₀ = 3·10⁻⁹/8,85·10⁻¹² ≈ 339 N·m²/C."},
+{"domanda": "Quale conseguenza fondamentale ricavò Maxwell dalle sue equazioni?", "risposta": "L'esistenza di onde elettromagnetiche che si propagano nel vuoto alla velocità c = 1/√(ε₀μ₀), uguale alla velocità della luce."},
+{"domanda": "Quanto vale il campo magnetico a 2,0 cm da un filo percorso da 5,0 A?", "risposta": "B = μ₀I/(2πr) = 2·10⁻⁷·5,0/0,020 = 5,0·10⁻⁵ T."}
+]
+},
+"universita": {
+"spiegazione": [
+"Nel vuoto, in presenza di cariche e correnti, le equazioni di Maxwell in forma integrale sono: ∮ E·dA = Q_int/ε₀; ∮ B·dA = 0; ∮ E·dl = −d/dt ∫ B·dA; ∮ B·dl = μ₀I_conc + μ₀ε₀ d/dt ∫ E·dA. Con il teorema della divergenza (∮ F·dA = ∫ ∇·F dV) e quello di Stokes (∮ F·dl = ∫ (∇×F)·dA) si passa alla forma differenziale, valida punto per punto: ∇·E = ρ/ε₀; ∇·B = 0; ∇×E = −∂B/∂t; ∇×B = μ₀J + μ₀ε₀ ∂E/∂t. Insieme alla forza di Lorentz F = q(E + v × B) descrivono l'intero elettromagnetismo classico.",
+"Il termine di Maxwell è imposto dalla conservazione della carica. Prendendo la divergenza della legge di Ampère senza correzione, ∇×B = μ₀J, si otterrebbe ∇·J = 0 (la divergenza di un rotore è nulla), che contraddice l'equazione di continuità ∇·J + ∂ρ/∂t = 0 quando la densità di carica varia. Aggiungendo μ₀ε₀ ∂E/∂t e usando ∇·E = ρ/ε₀ si ottiene ∇·J + ε₀ ∂(∇·E)/∂t = ∇·J + ∂ρ/∂t = 0: la continuità è rispettata. La densità di corrente di spostamento è J_s = ε₀ ∂E/∂t. Nei conduttori a bassa frequenza è trascurabile rispetto a J (regime quasi-stazionario), ma diventa essenziale per i fenomeni ondulatori.",
+"Nel vuoto senza sorgenti (ρ = 0, J = 0) si prende il rotore della terza equazione: ∇×(∇×E) = −∂(∇×B)/∂t = −μ₀ε₀ ∂²E/∂t². Con l'identità ∇×(∇×E) = ∇(∇·E) − ∇²E e ∇·E = 0 si ottiene ∇²E = μ₀ε₀ ∂²E/∂t², e lo stesso per B: equazioni delle onde con velocità c = 1/√(μ₀ε₀). Le soluzioni piane E = E₀ cos(k·r − ωt) hanno ω = c|k|; dalle equazioni di divergenza segue che E e B sono perpendicolari a k (onde trasversali), dalla legge di Faraday che B = (k̂ × E)/c. Per un'onda con E₀ = 100 V/m: B₀ ≈ 3,3·10⁻⁷ T e intensità media ½cε₀E₀² ≈ 13 W/m².",
+"I campi si possono scrivere tramite potenziali. Poiché ∇·B = 0, esiste A con B = ∇×A; sostituendo nella legge di Faraday, ∇×(E + ∂A/∂t) = 0, quindi E = −∇φ − ∂A/∂t. I potenziali non sono unici: la trasformazione di gauge A → A + ∇χ, φ → φ − ∂χ/∂t lascia invariati E e B. Nel gauge di Lorenz (∇·A + μ₀ε₀ ∂φ/∂t = 0) le equazioni diventano equazioni delle onde con sorgenti: □φ = −ρ/ε₀ e □A = −μ₀J, con □ = ∇² − μ₀ε₀ ∂²/∂t². Le soluzioni sono i potenziali ritardati: l'effetto di una sorgente arriva con un ritardo r/c, il che descrive l'irraggiamento delle cariche accelerate.",
+"Le equazioni contengono la conservazione dell'energia: il teorema di Poynting dice che −∂u/∂t = ∇·S + J·E, con densità di energia u = ½ε₀E² + B²/(2μ₀) e vettore di Poynting S = E × B/μ₀. L'energia che diminuisce in un volume esce come flusso di S o viene ceduta alle cariche (J·E, effetto Joule). Nei materiali si introducono i campi ausiliari D = ε₀E + P e H = B/μ₀ − M, e le equazioni diventano ∇·D = ρ_libera e ∇×H = J_libera + ∂D/∂t; nei mezzi lineari D = εE e B = μH, e la velocità delle onde diventa v = 1/√(εμ) = c/n. Infine, le equazioni di Maxwell sono invarianti per trasformazioni di Lorentz, non di Galileo: fu proprio questo a guidare Einstein verso la relatività ristretta."
+],
+"metodo": [
+"Ripassa divergenza, rotore, teorema della divergenza e teorema di Stokes prima di affrontare la forma differenziale.",
+"Ricava da solo la forma differenziale da quella integrale, un'equazione alla volta.",
+"Rifai la derivazione dell'equazione delle onde e della necessità del termine di spostamento: sono le due dimostrazioni chiave.",
+"Verifica che un'onda piana soddisfi tutte e quattro le equazioni, ricavando le condizioni di trasversalità e B₀ = E₀/c.",
+"Esercitati con il teorema di Poynting su un filo resistivo: verifica che l'energia dissipata entri dalla superficie laterale del filo.",
+"Costruisci una tabella vuoto/materiali con E, B, D, H, ε, μ."
+],
+"ricorda": [
+"Divergenze: cariche sì, monopoli no. Rotori: Faraday e Ampère-Maxwell.",
+"La divergenza di un rotore è zero: ecco perché serve il termine di Maxwell.",
+"B = ∇×A e E = −∇φ − ∂A/∂t, a meno di una gauge.",
+"Poynting: l'energia scorre lungo E × B."
+],
+"errori": [
+"Confondere i segni nella legge di Faraday: ∇×E = −∂B/∂t, con il segno meno (legge di Lenz).",
+"Dimenticare che le equazioni nei materiali usano le cariche e correnti libere, non quelle totali.",
+"Pensare che il potenziale scalare basti anche con campi variabili: serve anche il potenziale vettore.",
+"Considerare la corrente di spostamento sempre trascurabile: è decisiva ad alte frequenze e nel vuoto.",
+"Applicare la forma differenziale nei punti di discontinuità (superfici cariche): lì servono le condizioni al contorno ricavate dalla forma integrale."
+],
+"domande": [
+{"domanda": "Scrivi le quattro equazioni di Maxwell in forma differenziale nel vuoto.", "risposta": "∇·E = ρ/ε₀; ∇·B = 0; ∇×E = −∂B/∂t; ∇×B = μ₀J + μ₀ε₀ ∂E/∂t."},
+{"domanda": "Mostra perché la legge di Ampère senza correzione è incompatibile con la conservazione della carica.", "risposta": "Prendendo la divergenza di ∇×B = μ₀J si ottiene ∇·J = 0, mentre l'equazione di continuità richiede ∇·J = −∂ρ/∂t, diverso da zero se la carica varia."},
+{"domanda": "Che cosa esprime il teorema di Poynting?", "risposta": "La conservazione dell'energia elettromagnetica: la diminuzione dell'energia nei campi in un volume è uguale al flusso uscente del vettore di Poynting più il lavoro fatto sulle cariche (J·E)."},
+{"domanda": "Che cos'è una trasformazione di gauge?", "risposta": "Il cambiamento A → A + ∇χ, φ → φ − ∂χ/∂t dei potenziali, che lascia invariati i campi fisici E e B."},
+{"domanda": "Quanto vale la velocità delle onde elettromagnetiche in un mezzo con εᵣ = 4 e μᵣ = 1?", "risposta": "v = c/√(εᵣμᵣ) = c/2 = 1,5·10⁸ m/s, con indice di rifrazione n = 2."}
+]
+}
+},
+"Logica e insiemi": {
+"superiore": {
+"spiegazione": [
+"In logica una proposizione è un'affermazione di cui si può dire con certezza se è vera o falsa: «7 è un numero primo» è vera, «4 è dispari» è falsa, mentre «che bel tempo!» non è una proposizione. Le proposizioni si combinano con i connettivi: la negazione ¬p (vera quando p è falsa), la congiunzione p ∧ q («e», vera solo se entrambe sono vere), la disgiunzione p ∨ q («o» inclusivo, falsa solo se entrambe sono false), l'implicazione p → q («se p allora q», falsa solo quando p è vera e q falsa) e la doppia implicazione p ↔ q (vera quando p e q hanno lo stesso valore). Il valore di verità di una proposizione composta si trova con la tavola di verità: con n proposizioni elementari servono 2ⁿ righe.",
+"Una tautologia è una proposizione sempre vera, come p ∨ ¬p (terzo escluso); una contraddizione è sempre falsa, come p ∧ ¬p. Le leggi di De Morgan dicono come negare congiunzioni e disgiunzioni: ¬(p ∧ q) equivale a ¬p ∨ ¬q, e ¬(p ∨ q) equivale a ¬p ∧ ¬q. Esempio: la negazione di «studio e passo l'esame» è «non studio oppure non passo l'esame». L'implicazione p → q è equivalente alla sua contronominale ¬q → ¬p, ma non alla sua inversa q → p. Se p → q è vera, si dice che p è condizione sufficiente per q e q è condizione necessaria per p: «essere divisibile per 4» è sufficiente per «essere pari», ma non necessario (6 è pari ma non divisibile per 4).",
+"I quantificatori servono per le proposizioni che dipendono da una variabile: ∀ («per ogni») ed ∃ («esiste almeno un»). La negazione scambia i quantificatori: ¬(∀x, P(x)) equivale a ∃x, ¬P(x). Per smentire «tutti i numeri primi sono dispari» basta un controesempio, il 2. Invece ¬(∃x, P(x)) equivale a ∀x, ¬P(x): negare «esiste un numero reale con x² = −1» significa dire che per ogni x reale x² ≠ −1.",
+"Un insieme è una collezione di oggetti ben definita. Si descrive per elencazione, A = {1, 2, 3, 4}, o con una proprietà caratteristica, A = {x ∈ ℕ | 1 ≤ x ≤ 4}. B è sottoinsieme di A (B ⊆ A) se ogni elemento di B appartiene ad A. Le operazioni principali sono l'unione A ∪ B (elementi di A o di B), l'intersezione A ∩ B (elementi comuni), la differenza A \\ B (elementi di A non in B), il complementare rispetto a un universo, e il prodotto cartesiano A × B, l'insieme delle coppie ordinate (a, b). Se A ha n elementi, l'insieme delle parti P(A) (tutti i sottoinsiemi, compresi ∅ e A) ha 2ⁿ elementi: {a, b, c} ha 8 sottoinsiemi. C'è un parallelo preciso con la logica: ∪ corrisponde a ∨, ∩ a ∧, il complementare a ¬, e le leggi di De Morgan valgono anche per gli insiemi.",
+"Per contare gli elementi si usa il principio di inclusione-esclusione: |A ∪ B| = |A| + |B| − |A ∩ B|. Esempio: in una classe di 30 studenti, 18 studiano inglese, 12 francese e 5 entrambe le lingue. Quelli che ne studiano almeno una sono 18 + 12 − 5 = 25, quindi 5 non ne studiano nessuna; solo inglese 18 − 5 = 13, solo francese 12 − 5 = 7. Problemi di questo tipo si risolvono bene con un diagramma di Eulero-Venn, riempiendo per prima la zona dell'intersezione. Il prodotto cartesiano di un insieme di 3 elementi con uno di 4 ha 3·4 = 12 coppie."
+],
+"metodo": [
+"Costruisci a mano le tavole di verità di ∧, ∨, → e ↔ finché non le sai scrivere senza pensarci.",
+"Per verificare un'equivalenza (per esempio De Morgan o la contronominale) fai la tavola di verità di entrambe le proposizioni e confronta le colonne.",
+"Esercitati a negare frasi della lingua comune con i quantificatori: «tutti gli studenti hanno superato l'esame», «c'è un giorno in cui piove».",
+"Nei problemi di conteggio disegna sempre il diagramma di Venn e parti dall'intersezione.",
+"Traduci in simboli enunciati matematici (definizioni, teoremi) e viceversa.",
+"Ripassa con esempi le espressioni «condizione necessaria», «sufficiente», «necessaria e sufficiente»."
+],
+"ricorda": [
+"L'implicazione è falsa solo nel caso «vero → falso».",
+"De Morgan: negando, «e» diventa «o» e viceversa.",
+"Per smentire un «per ogni» basta un controesempio.",
+"n elementi, 2ⁿ sottoinsiemi: ogni elemento sceglie se entrare o no."
+],
+"errori": [
+"Considerare falsa l'implicazione quando la premessa è falsa: «se 2 + 2 = 5 allora piove» è vera.",
+"Confondere un'implicazione con la sua inversa: da «se piove la strada è bagnata» non segue «se la strada è bagnata piove».",
+"Negare «tutti sono promossi» con «nessuno è promosso»: la negazione corretta è «almeno uno non è promosso».",
+"Dimenticare di sottrarre l'intersezione nel contare gli elementi dell'unione.",
+"Confondere ∈ (appartenenza di un elemento) e ⊆ (inclusione di un insieme)."
+],
+"domande": [
+{"domanda": "Scrivi la negazione di «ogni numero pari è divisibile per 4».", "risposta": "«Esiste un numero pari che non è divisibile per 4» (per esempio 6)."},
+{"domanda": "Quando è falsa l'implicazione p → q?", "risposta": "Solo quando p è vera e q è falsa."},
+{"domanda": "Quanti sottoinsiemi ha un insieme di 5 elementi?", "risposta": "2⁵ = 32, compresi l'insieme vuoto e l'insieme stesso."},
+{"domanda": "In un gruppo di 40 persone, 25 hanno un cane, 15 un gatto e 8 entrambi. Quante non hanno né cane né gatto?", "risposta": "Con almeno un animale: 25 + 15 − 8 = 32; senza animali 40 − 32 = 8."},
+{"domanda": "Qual è la contronominale di «se un quadrilatero è un quadrato allora ha 4 angoli retti»?", "risposta": "«Se un quadrilatero non ha 4 angoli retti allora non è un quadrato», equivalente all'originale."}
+]
+},
+"universita": {
+"spiegazione": [
+"La logica proposizionale studia le formule costruite con variabili e connettivi. Due formule sono logicamente equivalenti se hanno la stessa tavola di verità; una formula è soddisfacibile se è vera per almeno un'assegnazione, valida (tautologia) se è vera per tutte. Ogni formula è equivalente a una in forma normale congiuntiva (congiunzione di disgiunzioni di letterali) e a una in forma normale disgiuntiva; per esempio p → q equivale a ¬p ∨ q, e p ↔ q a (¬p ∨ q) ∧ (p ∨ ¬q). L'insieme {¬, ∧} è funzionalmente completo, e così anche il solo connettivo NAND, su cui si basano i circuiti digitali. Le regole di deduzione più usate sono il modus ponens (da p e p → q segue q) e il modus tollens (da ¬q e p → q segue ¬p).",
+"Nella logica dei predicati compaiono variabili, predicati e quantificatori. L'ordine dei quantificatori conta: ∀x ∃y (y > x) è vera nei naturali (dopo ogni numero ce n'è uno più grande), mentre ∃y ∀x (y > x) è falsa (non esiste un numero più grande di tutti). La definizione di limite, ∀ε > 0 ∃δ > 0 ∀x (0 < |x − x₀| < δ → |f(x) − L| < ε), si nega meccanicamente: ∃ε > 0 ∀δ > 0 ∃x (0 < |x − x₀| < δ ∧ |f(x) − L| ≥ ε). Saper negare formule con più quantificatori è indispensabile per le dimostrazioni per assurdo, come quella classica dell'irrazionalità di √2: se fosse √2 = p/q ai minimi termini, allora p² = 2q², p pari, p = 2k, quindi q² = 2k² e anche q pari, contro l'ipotesi.",
+"Le principali tecniche di dimostrazione sono: diretta, per contronominale (si prova ¬q → ¬p), per assurdo, per casi, per controesempio (per smentire un enunciato universale) e per induzione. Il principio di induzione dice che se P(0) è vera e P(n) → P(n + 1) per ogni n, allora P(n) è vera per ogni naturale. Esempio: 1 + 2 + … + n = n(n + 1)/2. Base: n = 1, 1 = 1·2/2. Passo: se vale per n, allora 1 + … + n + (n + 1) = n(n + 1)/2 + (n + 1) = (n + 1)(n + 2)/2, che è la formula per n + 1.",
+"Una relazione su A è un sottoinsieme di A × A. È di equivalenza se è riflessiva, simmetrica e transitiva: le sue classi formano una partizione di A (per esempio la congruenza modulo 3 divide ℤ in tre classi: resti 0, 1, 2). È d'ordine se è riflessiva, antisimmetrica e transitiva (≤ sui reali, l'inclusione tra insiemi, la divisibilità sui naturali). Una funzione f: A → B associa a ogni elemento di A esattamente un elemento di B; è iniettiva se elementi diversi hanno immagini diverse, suriettiva se ogni elemento di B è immagine, biiettiva se entrambe, e solo allora è invertibile. Per insiemi finiti con |A| = m e |B| = n le funzioni da A a B sono nᵐ, quelle iniettive n!/(n − m)! (se m ≤ n).",
+"Due insiemi hanno la stessa cardinalità se esiste una biiezione tra loro. ℕ, ℤ e ℚ sono numerabili (si possono mettere in fila); Cantor dimostrò con l'argomento diagonale che ℝ non lo è: data una qualsiasi lista di reali in (0, 1) si costruisce un numero che differisce dall'n-esimo nella n-esima cifra, e che quindi manca dalla lista. Più in generale |P(A)| > |A| per ogni insieme. Il principio di inclusione-esclusione si estende: |A ∪ B ∪ C| = |A| + |B| + |C| − |A ∩ B| − |A ∩ C| − |B ∩ C| + |A ∩ B ∩ C|. Esempio: tra 1 e 100 i numeri divisibili per 2, 3 o 5 sono 50 + 33 + 20 − 16 − 10 − 6 + 3 = 74."
+],
+"metodo": [
+"Esercitati a trasformare formule in forma normale congiuntiva e disgiuntiva usando le equivalenze, poi controlla con la tavola di verità.",
+"Prendi le definizioni dell'analisi (limite, continuità, successione limitata) e scrivine la negazione formale.",
+"Per ogni tecnica di dimostrazione impara un esempio modello: √2 irrazionale, infinità dei primi, somme con l'induzione.",
+"Per le relazioni verifica le proprietà una per una su esempi e controesempi concreti.",
+"Disegna diagrammi a frecce per capire iniettività e suriettività su insiemi piccoli.",
+"Ripeti l'argomento diagonale di Cantor scrivendo una lista concreta di numeri."
+],
+"ricorda": [
+"p → q è lo stesso di ¬p ∨ q.",
+"Scambiare ∀ e ∃ cambia il significato: «per ogni x esiste y» non è «esiste y per ogni x».",
+"Equivalenza = riflessiva, simmetrica, transitiva → partizione in classi.",
+"I reali sono «più» dei naturali: lo dice la diagonale di Cantor."
+],
+"errori": [
+"Invertire l'ordine dei quantificatori traducendo una frase in simboli.",
+"Nel passo induttivo usare la tesi per n + 1 invece di dedurla dall'ipotesi per n.",
+"Pensare che una relazione simmetrica e transitiva sia automaticamente riflessiva: serve che ogni elemento sia in relazione con qualcosa.",
+"Credere che un insieme infinito sottoinsieme proprio di un altro abbia cardinalità minore: i pari sono tanti quanti i naturali.",
+"Dimostrare un enunciato universale con un esempio: gli esempi servono solo a smentire, non a dimostrare."
+],
+"domande": [
+{"domanda": "Scrivi p → q usando solo ¬ e ∨.", "risposta": "¬p ∨ q."},
+{"domanda": "Nega la formula ∀x ∃y (x + y = 0).", "risposta": "∃x ∀y (x + y ≠ 0)."},
+{"domanda": "Quante funzioni iniettive ci sono da un insieme di 3 elementi a uno di 5?", "risposta": "5·4·3 = 60."},
+{"domanda": "Dimostra per induzione che 2ⁿ ≥ n + 1 per ogni n ≥ 0.", "risposta": "Base: 2⁰ = 1 ≥ 1. Passo: se 2ⁿ ≥ n + 1, allora 2ⁿ⁺¹ = 2·2ⁿ ≥ 2n + 2 ≥ n + 2."},
+{"domanda": "Perché ℚ è numerabile?", "risposta": "Perché le frazioni p/q si possono disporre in una tabella e percorrere lungo le diagonali, saltando le ripetizioni: si ottiene una biiezione con ℕ."}
+]
+}
+},
+"Calcolo combinatorio": {
+"superiore": {
+"spiegazione": [
+"Il calcolo combinatorio insegna a contare i modi in cui si possono scegliere o ordinare degli oggetti senza elencarli tutti. Il punto di partenza è il principio moltiplicativo: se una scelta si fa in n₁ modi e, per ciascuno, una seconda in n₂ modi, le scelte complessive sono n₁·n₂. Esempio: con 3 magliette e 4 pantaloni si formano 3·4 = 12 abbinamenti. Un PIN di 4 cifre ha 10·10·10·10 = 10⁴ = 10 000 possibilità. Per ogni problema bisogna chiedersi due cose: l'ordine conta? Gli elementi si possono ripetere?",
+"Le disposizioni semplici di n oggetti a k a k contano le sequenze ordinate di k oggetti diversi presi tra n: D(n, k) = n·(n − 1)·…·(n − k + 1) = n!/(n − k)!. Esempio: i modi di assegnare oro, argento e bronzo fra 10 atleti sono 10·9·8 = 720. Le disposizioni con ripetizione, quando lo stesso oggetto può essere riusato, sono nᵏ: le parole di 3 lettere con un alfabeto di 26 lettere sono 26³ = 17 576. Il fattoriale n! = n·(n − 1)·…·2·1 (con 0! = 1) cresce molto in fretta: 5! = 120, 10! = 3 628 800.",
+"Le permutazioni sono i modi di ordinare tutti gli n oggetti: P(n) = n!. Le 5 persone in fila davanti a uno sportello possono disporsi in 5! = 120 modi. Se alcuni oggetti sono uguali si divide per le permutazioni di quelli uguali: P = n!/(k₁!·k₂!·…). Esempio: gli anagrammi della parola MAMMA (3 M e 2 A) sono 5!/(3!·2!) = 120/12 = 10; quelli di ANANAS (3 A, 2 N, 1 S) sono 6!/(3!·2!) = 60. Le permutazioni circolari (persone attorno a un tavolo rotondo, dove conta solo la posizione relativa) sono (n − 1)!.",
+"Le combinazioni semplici contano i gruppi di k oggetti scelti tra n quando l'ordine non conta: C(n, k) = n!/(k!·(n − k)!), indicato anche con il coefficiente binomiale «n su k». Rispetto alle disposizioni si divide per k! perché ogni gruppo può essere ordinato in k! modi. Esempio: i modi di eleggere 3 rappresentanti (senza ruoli) in una classe di 25 sono C(25, 3) = 25·24·23/6 = 2300; se invece i ruoli sono distinti (presidente, vice, segretario) sono D(25, 3) = 13 800. Le strette di mano tra 8 persone sono C(8, 2) = 28. Proprietà utili: C(n, k) = C(n, n − k) e C(n, 0) = C(n, n) = 1.",
+"I coefficienti binomiali formano il triangolo di Tartaglia, in cui ogni numero è la somma dei due sopra: C(n, k) = C(n − 1, k − 1) + C(n − 1, k). Compaiono nella formula del binomio di Newton: (a + b)ⁿ = Σ C(n, k)·aⁿ⁻ᵏ·bᵏ per k da 0 a n. Per esempio (a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴. Ponendo a = b = 1 si ottiene Σ C(n, k) = 2ⁿ: il numero totale di sottoinsiemi di un insieme di n elementi. Il calcolo combinatorio è la base della probabilità classica: la probabilità di fare 6 al SuperEnalotto con una giocata è 1/C(90, 6) = 1/622 614 630."
+],
+"metodo": [
+"Per ogni problema fatti sempre le due domande: conta l'ordine? Si possono ripetere gli elementi? La risposta ti dice quale formula usare.",
+"Prepara uno schema a quattro caselle: disposizioni semplici, disposizioni con ripetizione, permutazioni, combinazioni.",
+"Verifica le formule su casi piccoli elencando a mano tutte le possibilità (per esempio le disposizioni di 3 lettere a 2 a 2).",
+"Semplifica i fattoriali prima di moltiplicare: 10!/7! = 10·9·8.",
+"Costruisci il triangolo di Tartaglia fino alla riga 8 e usalo per sviluppare potenze di binomi.",
+"Esercitati con problemi misti (comitati con vincoli, anagrammi con lettere ripetute, carte da gioco)."
+],
+"ricorda": [
+"Ordine conta → disposizioni; ordine non conta → combinazioni.",
+"Combinazioni = disposizioni diviso k!.",
+"Lettere uguali negli anagrammi: dividi per i loro fattoriali.",
+"Tavolo rotondo: (n − 1)!, perché girare tutti non cambia nulla."
+],
+"errori": [
+"Usare le disposizioni quando l'ordine non conta, contando più volte lo stesso gruppo.",
+"Dimenticare che 0! = 1.",
+"Sommare invece di moltiplicare quando le scelte sono in successione (principio moltiplicativo).",
+"Negli anagrammi con lettere ripetute usare n! senza dividere.",
+"Calcolare i fattoriali grandi per intero invece di semplificarli, con il rischio di errori o numeri enormi."
+],
+"domande": [
+{"domanda": "In quanti modi 6 libri diversi si possono mettere in fila su uno scaffale?", "risposta": "6! = 720."},
+{"domanda": "Quante squadre di 5 giocatori si possono formare con 9 persone?", "risposta": "C(9, 5) = 126."},
+{"domanda": "Quanti sono gli anagrammi della parola LETTERE?", "risposta": "7 lettere con E ripetuta 3 volte e T 2 volte: 7!/(3!·2!) = 5040/12 = 420."},
+{"domanda": "Quante targhe si possono fare con 2 lettere (su 22) seguite da 3 cifre?", "risposta": "22²·10³ = 484 000."},
+{"domanda": "Scrivi lo sviluppo di (x + 1)³.", "risposta": "x³ + 3x² + 3x + 1."}
+]
+},
+"universita": {
+"spiegazione": [
+"Oltre ai casi di base, il conteggio si costruisce con alcuni principi. Principio additivo: se un insieme è unione disgiunta di parti, la sua cardinalità è la somma. Principio moltiplicativo: per scelte successive si moltiplica. Principio di biiezione: due insiemi in corrispondenza biunivoca hanno lo stesso numero di elementi, e spesso si conta un insieme scomodo trovandone uno equivalente più semplice. Principio dei cassetti (pigeonhole): se n + 1 oggetti vanno in n cassetti, almeno un cassetto ne contiene due; per esempio tra 367 persone due compiono gli anni nello stesso giorno. Il doppio conteggio, cioè contare la stessa cosa in due modi, dà identità come Σ C(n, k) = 2ⁿ.",
+"Le combinazioni con ripetizione contano i modi di scegliere k oggetti da n tipi, potendo prendere più copie dello stesso tipo: C(n + k − 1, k). Si dimostrano con il metodo «stelle e barre»: k stelle (gli oggetti) e n − 1 barre (i separatori tra i tipi) si dispongono in C(n + k − 1, k) modi. Esempio: distribuire 10 caramelle identiche fra 3 bambini si può fare in C(12, 2) = 66 modi; se ogni bambino deve riceverne almeno una, si danno prima 3 caramelle e si distribuiscono le altre 7: C(9, 2) = 36 modi. Il coefficiente multinomiale n!/(k₁!·…·k_r!) conta le parole con ripetizioni e compare nello sviluppo di (x₁ + … + x_r)ⁿ.",
+"I coefficienti binomiali soddisfano molte identità. Pascal: C(n, k) = C(n − 1, k − 1) + C(n − 1, k), che si dimostra osservando se un elemento fissato è scelto o no. Vandermonde: C(m + n, k) = Σ C(m, j)·C(n, k − j). Somma alternata: Σ (−1)ᵏ C(n, k) = 0 per n ≥ 1. Dal binomio di Newton si leggono anche i coefficienti di potenze come (2x − 1)⁵: il termine in x³ è C(5, 3)·(2x)³·(−1)² = 10·8x³ = 80x³. La formula si estende a esponenti reali con la serie binomiale (1 + x)^α = Σ C(α, k)xᵏ per |x| < 1, con C(α, k) = α(α − 1)…(α − k + 1)/k!.",
+"Il principio di inclusione-esclusione, |A₁ ∪ … ∪ A_n| = Σ|A_i| − Σ|A_i ∩ A_j| + Σ|A_i ∩ A_j ∩ A_k| − …, risolve problemi in cui si devono evitare proprietà. Il caso classico sono le dismutazioni (permutazioni senza punti fissi, come n lettere messe tutte nella busta sbagliata): D_n = n!·Σ (−1)ᵏ/k! per k da 0 a n. Per n = 4: 24·(1 − 1 + ½ − ⅙ + 1/24) = 12 − 4 + 1 = 9. Per n grande D_n/n! → 1/e ≈ 0,368: la probabilità che nessuno ritrovi il proprio cappello è quasi indipendente dal numero di persone. Allo stesso modo le funzioni suriettive da un insieme di m elementi a uno di n sono Σ (−1)ʲ C(n, j)(n − j)ᵐ; da 4 a 3 elementi: 81 − 3·16 + 3·1 − 0 = 36.",
+"Molti problemi si risolvono con relazioni di ricorrenza o funzioni generatrici. I sottoinsiemi di {1, …, n} senza due numeri consecutivi soddisfano a_n = a_(n−1) + a_(n−2) (numeri di Fibonacci). I numeri di Catalan C_n = C(2n, n)/(n + 1) (1, 1, 2, 5, 14, 42, …) contano le parentesizzazioni corrette, le triangolazioni di un poligono e i cammini che non scendono sotto la diagonale. La formula di Stirling, n! ≈ √(2πn)·(n/e)ⁿ, stima i fattoriali grandi: per n = 10 dà circa 3 598 696 contro il valore esatto 3 628 800 (errore 0,8%). Il calcolo combinatorio è la base della probabilità discreta, della statistica e dell'analisi degli algoritmi."
+],
+"metodo": [
+"Per ogni problema cerca prima una biiezione con un modello noto (stelle e barre, parole, cammini su griglia).",
+"Dimostra le identità sui binomiali sia algebricamente sia con un argomento di doppio conteggio.",
+"Applica inclusione-esclusione scrivendo con ordine le intersezioni di ogni ordine e controlla il risultato su casi piccoli.",
+"Verifica le formule con un piccolo programma che enumera i casi per n piccolo.",
+"Impara a impostare ricorrenze: guarda cosa succede all'ultimo elemento e riduci il problema.",
+"Confronta la formula di Stirling con i fattoriali esatti per diversi n."
+],
+"ricorda": [
+"Stelle e barre: k oggetti, n − 1 separatori, C(n + k − 1, k).",
+"Dismutazioni: circa n!/e, cioè il 37% delle permutazioni.",
+"Pigeonhole: più piccioni che buchi, qualcuno divide il buco.",
+"Pascal: un elemento o è dentro o è fuori."
+],
+"errori": [
+"Usare C(n, k) per scelte con ripetizione invece di C(n + k − 1, k).",
+"Confondere oggetti distinguibili e indistinguibili nella distribuzione in scatole.",
+"Fermare l'inclusione-esclusione al secondo termine quando gli insiemi sono più di due.",
+"Contare due volte configurazioni simmetriche (ad esempio collane che si possono capovolgere) senza dividere per le simmetrie.",
+"Applicare il principio dei cassetti senza individuare chiaramente quali sono i cassetti."
+],
+"domande": [
+{"domanda": "In quanti modi si possono scegliere 4 gelati da 6 gusti, potendo ripetere i gusti?", "risposta": "C(6 + 4 − 1, 4) = C(9, 4) = 126."},
+{"domanda": "Quante sono le dismutazioni di 5 oggetti?", "risposta": "D₅ = 120·(1 − 1 + 1/2 − 1/6 + 1/24 − 1/120) = 60 − 20 + 5 − 1 = 44."},
+{"domanda": "Qual è il coefficiente di x²y³ in (x + y)⁵?", "risposta": "C(5, 2) = 10."},
+{"domanda": "Dimostra con il doppio conteggio che Σ C(n, k) = 2ⁿ.", "risposta": "Entrambi i membri contano i sottoinsiemi di un insieme di n elementi: a sinistra raggruppati per numero k di elementi, a destra decidendo per ognuno dei n elementi se entra o no."},
+{"domanda": "Quanti cammini minimi ci sono su una griglia da (0, 0) a (4, 3) con passi a destra e in alto?", "risposta": "Bisogna scegliere quali 3 dei 7 passi sono verso l'alto: C(7, 3) = 35."}
+]
+}
+},
+"Successioni e progressioni": {
+"superiore": {
+"spiegazione": [
+"Una successione è una lista ordinata e infinita di numeri a₁, a₂, a₃, …, cioè una funzione che associa a ogni numero naturale n un numero reale aₙ. Si può definire con una formula esplicita, come aₙ = 2n + 1 (3, 5, 7, 9, …), oppure per ricorrenza, dando il primo termine e la regola per passare da un termine al successivo: a₁ = 1, aₙ₊₁ = 2aₙ (1, 2, 4, 8, …). Una successione è crescente se ogni termine è maggiore del precedente, decrescente se è minore, limitata se tutti i termini stanno tra due numeri fissi.",
+"Una progressione aritmetica è una successione in cui la differenza tra un termine e il precedente è costante, la ragione d: aₙ = a₁ + (n − 1)·d. Esempio: 5, 8, 11, 14, … ha d = 3 e il 20° termine vale 5 + 19·3 = 62. La somma dei primi n termini è Sₙ = n·(a₁ + aₙ)/2: si ottiene accoppiando il primo con l'ultimo, il secondo con il penultimo, e così via, coppie che hanno tutte la stessa somma. È il trucco del giovane Gauss: 1 + 2 + … + 100 = 100·101/2 = 5050. Nella progressione aritmetica ogni termine è la media aritmetica del precedente e del successivo.",
+"Una progressione geometrica è una successione in cui il rapporto tra un termine e il precedente è costante, la ragione q: aₙ = a₁·qⁿ⁻¹. Esempio: 3, 6, 12, 24, … ha q = 2 e il 10° termine è 3·2⁹ = 1536. La somma dei primi n termini, per q ≠ 1, è Sₙ = a₁·(1 − qⁿ)/(1 − q): per la stessa progressione S₁₀ = 3·(1 − 1024)/(1 − 2) = 3069. Ogni termine è la media geometrica del precedente e del successivo. Le progressioni geometriche descrivono la crescita esponenziale: un capitale di 1000 € investito al 3% annuo con interesse composto dopo 10 anni diventa 1000·1,03¹⁰ ≈ 1343,92 €.",
+"Se 0 < |q| < 1 i termini di una progressione geometrica diventano sempre più piccoli e la somma di infiniti termini ha un valore finito: S = a₁/(1 − q). Esempio: 1 + ½ + ¼ + ⅛ + … = 1/(1 − ½) = 2. Così si spiega perché 0,333… = 3/10 + 3/100 + … = (3/10)/(1 − 1/10) = 1/3, e anche perché 0,999… = 1. È anche la risposta al paradosso di Achille e la tartaruga: infiniti tratti sempre più brevi possono richiedere un tempo totale finito.",
+"Il limite di una successione descrive il suo comportamento per n che cresce all'infinito. La successione aₙ = 1/n converge a 0; aₙ = (n + 1)/n converge a 1; aₙ = n² diverge a +∞; aₙ = (−1)ⁿ oscilla tra −1 e 1 e non ha limite. Una progressione aritmetica con d ≠ 0 diverge sempre; una geometrica converge a 0 se |q| < 1, è costante se q = 1, diverge se q > 1 e non ha limite se q ≤ −1. Un limite molto importante è quello di (1 + 1/n)ⁿ, che cresce e tende al numero di Nepero e ≈ 2,71828: per n = 10 vale circa 2,594, per n = 1000 circa 2,717."
+],
+"metodo": [
+"Per ogni successione calcola a mano i primi 5-6 termini: spesso basta per capire se è aritmetica, geometrica o di altro tipo.",
+"Impara a ricavare d o q da due termini qualsiasi: aₘ − aₙ = (m − n)·d e aₘ/aₙ = qᵐ⁻ⁿ.",
+"Ricostruisci la dimostrazione della somma aritmetica (alla Gauss) e di quella geometrica (moltiplicando Sₙ per q e sottraendo).",
+"Esercitati con problemi concreti: interessi composti, crescita di una popolazione, file di mattoni, rimbalzi di una palla.",
+"Usa la calcolatrice per osservare numericamente il comportamento di successioni come (1 + 1/n)ⁿ o n/2ⁿ.",
+"Disegna i termini sul piano cartesiano (n, aₙ): i punti di una progressione aritmetica stanno su una retta."
+],
+"ricorda": [
+"Aritmetica: si somma sempre lo stesso numero; geometrica: si moltiplica sempre per lo stesso numero.",
+"Somma aritmetica = numero dei termini per la media tra primo e ultimo.",
+"Serie geometrica infinita: a₁/(1 − q), solo se |q| < 1.",
+"Interesse composto = progressione geometrica di ragione (1 + tasso)."
+],
+"errori": [
+"Usare aₙ = a₁ + n·d invece di a₁ + (n − 1)·d, sbagliando di un termine.",
+"Applicare la formula della somma infinita con |q| ≥ 1, dove la somma non esiste.",
+"Confondere l'interesse semplice (progressione aritmetica) con quello composto (geometrica).",
+"Pensare che una successione limitata sia sempre convergente: (−1)ⁿ è limitata ma non converge.",
+"Scrivere 0,999… < 1: i due numeri sono uguali."
+],
+"domande": [
+{"domanda": "In una progressione aritmetica a₃ = 10 e a₇ = 22. Trova d e a₁.", "risposta": "4d = 22 − 10 = 12, d = 3; a₁ = 10 − 2·3 = 4."},
+{"domanda": "Calcola la somma dei numeri dispari da 1 a 99.", "risposta": "Sono 50 termini: S = 50·(1 + 99)/2 = 2500."},
+{"domanda": "Quanto vale 2 + 2/3 + 2/9 + 2/27 + …?", "risposta": "Serie geometrica con a₁ = 2 e q = 1/3: S = 2/(1 − 1/3) = 3."},
+{"domanda": "Una popolazione di batteri raddoppia ogni ora partendo da 100. Quanti sono dopo 8 ore?", "risposta": "100·2⁸ = 25 600."},
+{"domanda": "La successione aₙ = (−1)ⁿ/n converge? A quanto?", "risposta": "Sì, converge a 0, perché |aₙ| = 1/n tende a 0."}
+]
+},
+"universita": {
+"spiegazione": [
+"Una successione reale (aₙ) converge a L se ∀ε > 0 ∃N tale che |aₙ − L| < ε per ogni n > N; diverge a +∞ se ∀M ∃N tale che aₙ > M per n > N. Il limite, se esiste, è unico, e ogni successione convergente è limitata (non vale il viceversa). Valgono l'algebra dei limiti (somma, prodotto, quoziente con denominatore non nullo) e il teorema del confronto: se aₙ ≤ bₙ ≤ cₙ e aₙ, cₙ → L, anche bₙ → L. Esempio: sin(n)/n → 0 perché −1/n ≤ sin(n)/n ≤ 1/n. Per le forme indeterminate si usano le gerarchie degli infiniti: per n → ∞, log n ≪ nᵃ ≪ bⁿ ≪ n! ≪ nⁿ (a > 0, b > 1); quindi n¹⁰⁰/2ⁿ → 0.",
+"Il teorema delle successioni monotone afferma che ogni successione monotona e limitata converge (al suo estremo superiore se crescente): è una conseguenza della completezza di ℝ. Si applica a (1 + 1/n)ⁿ, che è crescente e limitata da 3 e definisce e. Il criterio di Cauchy caratterizza la convergenza senza conoscere il limite: (aₙ) converge se e solo se ∀ε ∃N tale che |aₙ − aₘ| < ε per n, m > N. Il teorema di Bolzano-Weierstrass garantisce che ogni successione limitata ha una sottosuccessione convergente: per esempio (−1)ⁿ ha le sottosuccessioni dei termini pari (→ 1) e dispari (→ −1).",
+"Le successioni per ricorrenza xₙ₊₁ = f(xₙ) si studiano con i punti fissi: se xₙ → L e f è continua, allora L = f(L). Il metodo di Erone per √2 usa xₙ₊₁ = (xₙ + 2/xₙ)/2: partendo da x₁ = 1 si ottiene 1,5; 1,41667; 1,414216, con il numero di cifre esatte che circa raddoppia a ogni passo (è il metodo di Newton). La convergenza verso un punto fisso è garantita localmente se |f'(L)| < 1. Le ricorrenze lineari si risolvono con l'equazione caratteristica: per Fibonacci, Fₙ₊₂ = Fₙ₊₁ + Fₙ, le radici di r² = r + 1 sono φ = (1 + √5)/2 ≈ 1,618 e ψ = (1 − √5)/2, e vale la formula di Binet Fₙ = (φⁿ − ψⁿ)/√5. Il rapporto Fₙ₊₁/Fₙ tende quindi alla sezione aurea φ.",
+"Una serie Σaₙ è la successione delle somme parziali Sₙ = a₁ + … + aₙ; converge se Sₙ ha limite finito. Condizione necessaria è aₙ → 0, ma non sufficiente: la serie armonica Σ1/n diverge (raggruppando i termini: 1/3 + 1/4 > 1/2, 1/5 + … + 1/8 > 1/2, ecc.), mentre Σ1/n² converge a π²/6 (Eulero). In generale Σ1/nᵖ converge se e solo se p > 1. Per le serie a termini positivi si usano i criteri del confronto, del rapporto (se aₙ₊₁/aₙ → l < 1 converge, se l > 1 diverge) e della radice. Esempio: Σ n/2ⁿ ha rapporto (n + 1)/(2n) → ½ < 1, quindi converge (la somma vale 2). La serie di Leibniz Σ(−1)ⁿ⁺¹/n converge a ln 2 per il criterio delle serie a segni alterni, pur non convergendo assolutamente.",
+"Somme finite notevoli: Σk = n(n + 1)/2, Σk² = n(n + 1)(2n + 1)/6, Σk³ = [n(n + 1)/2]², tutte dimostrabili per induzione; per esempio 1² + … + 10² = 10·11·21/6 = 385. Le somme telescopiche si calcolano perché i termini si cancellano: Σ 1/(k(k + 1)) = Σ (1/k − 1/(k + 1)) = 1 − 1/(n + 1) → 1. Le progressioni aritmetiche e geometriche sono i casi più semplici di successioni definite da ricorrenze lineari del primo ordine, aₙ₊₁ = q·aₙ + d, la cui soluzione generale si ottiene sommando la soluzione dell'omogenea e il punto fisso d/(1 − q): è il modello di un mutuo con rata costante o di un farmaco assunto a dosi regolari."
+],
+"metodo": [
+"Dimostra con la definizione ε-N almeno tre limiti semplici (1/n, (n + 1)/n, 1/2ⁿ) per padroneggiare il linguaggio.",
+"Per le forme indeterminate scrivi sempre il termine dominante e raccoglilo.",
+"Studia le ricorrenze in tre passi: punti fissi, monotonia (per induzione), limitatezza; poi applica il teorema delle successioni monotone.",
+"Per le serie decidi prima il tipo (termini positivi, segni alterni, geometrica, telescopica) e poi scegli il criterio.",
+"Calcola numericamente le somme parziali con un foglio di calcolo per vedere la velocità di convergenza.",
+"Collega le serie geometriche alla matematica finanziaria: rendite, mutui, ammortamenti."
+],
+"ricorda": [
+"Monotona e limitata ⇒ convergente.",
+"aₙ → 0 è necessario ma non sufficiente: guarda la serie armonica.",
+"Σ1/nᵖ converge solo per p > 1.",
+"Fibonacci cresce come φⁿ/√5."
+],
+"errori": [
+"Concludere che una serie converge solo perché il termine generale tende a 0.",
+"Applicare il criterio del rapporto quando il limite è 1: il criterio non dice nulla.",
+"Cercare il punto fisso di una ricorrenza senza prima dimostrare che il limite esiste.",
+"Riordinare i termini di una serie convergente ma non assolutamente convergente: la somma può cambiare.",
+"Confondere la convergenza della successione aₙ con quella della serie Σaₙ."
+],
+"domande": [
+{"domanda": "Calcola il limite di (3n² + n)/(5n² − 2).", "risposta": "Raccogliendo n²: (3 + 1/n)/(5 − 2/n²) → 3/5."},
+{"domanda": "La serie Σ 1/√n converge?", "risposta": "No: è una serie armonica generalizzata con p = ½ ≤ 1, quindi diverge."},
+{"domanda": "Studia la ricorrenza x₁ = 1, xₙ₊₁ = √(2 + xₙ).", "risposta": "È crescente e limitata da 2 (per induzione), quindi converge; il limite soddisfa L = √(2 + L), cioè L² − L − 2 = 0, L = 2."},
+{"domanda": "Calcola Σ_{k=1}^{∞} 1/(k(k + 1)).", "risposta": "È telescopica: 1/k − 1/(k + 1); le somme parziali valgono 1 − 1/(n + 1) e la serie converge a 1."},
+{"domanda": "Usa il criterio del rapporto per Σ 3ⁿ/n!.", "risposta": "aₙ₊₁/aₙ = 3/(n + 1) → 0 < 1, quindi la serie converge (la somma è e³ − 1 partendo da n = 1)."}
+]
+}
+}
+}

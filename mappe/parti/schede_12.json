@@ -1,0 +1,1057 @@
+{
+  "allergene": {
+    "tipo": "molecola",
+    "base": "Una cosa innocua, come il polline o la polvere, che in alcune persone fa partire un'allergia.",
+    "superiore": "Antigene, di solito una proteina, che in persone predisposte induce la produzione di IgE e una reazione allergica. Esempi: pollini, acari della polvere, peli di animali, alimenti, veleno di imenotteri, farmaci.",
+    "universita": "Molti allergeni sono piccole proteine solubili, stabili, che arrivano a basse dosi sulle mucose; alcuni hanno attività enzimatica (per esempio la proteasi Der p 1 degli acari, che apre le giunzioni dell'epitelio). I farmaci a basso peso molecolare agiscono come apteni legandosi a proteine. La diagnostica molecolare distingue gli allergeni maggiori dalle proteine cross-reattive (per esempio profiline, LTP).",
+    "clinica": "Diagnosi: prick test cutanei e dosaggio delle IgE specifiche; il test di provocazione è il riferimento per alimenti e farmaci. La terapia di base è evitare l'allergene; l'immunoterapia specifica (desensibilizzazione) è indicata per pollini, acari e veleno di imenotteri."
+  },
+  "linfocita Th2": {
+    "tipo": "struttura",
+    "base": "Un tipo di globulo bianco «regista» che, quando sbaglia bersaglio, organizza le allergie.",
+    "superiore": "Sottotipo di linfocita T helper (CD4⁺) che produce le citochine IL-4, IL-5 e IL-13. Normalmente difende dai vermi parassiti; nelle persone allergiche risponde a sostanze innocue.",
+    "universita": "Differenziazione guidata da IL-4 tramite STAT6 e il fattore di trascrizione GATA3. Citochine: IL-4 (scambio di classe a IgE, ulteriore polarizzazione Th2), IL-5 (eosinofili), IL-13 (muco, iperreattività bronchiale, scambio a IgE). Allarmine dell'epitelio (TSLP, IL-33, IL-25) e cellule linfoidi innate di tipo 2 (ILC2) favoriscono la risposta.",
+    "clinica": "Bersaglio dei farmaci biologici per asma grave e dermatite atopica: dupilumab (blocca il recettore IL-4Rα, quindi IL-4 e IL-13), mepolizumab (anti-IL-5), tezepelumab (anti-TSLP)."
+  },
+  "IL-4": {
+    "tipo": "molecola",
+    "base": "Un «messaggio» tra globuli bianchi che spinge il corpo a produrre gli anticorpi delle allergie.",
+    "superiore": "Interleuchina 4: citochina prodotta soprattutto dai linfociti Th2, dai mastociti e dai basofili. Fa diventare Th2 altri linfociti T e fa produrre IgE ai linfociti B.",
+    "universita": "Si lega al recettore IL-4Rα (tipo I con γc, tipo II con IL-13Rα1) e attiva JAK1/JAK3-STAT6. Induce lo scambio di classe verso IgE (e IgG4 nell'uomo), aumenta l'espressione di MHC II e CD23 sui linfociti B, promuove l'attivazione alternativa (M2) dei macrofagi.",
+    "clinica": "Dupilumab (anti-IL-4Rα) blocca insieme IL-4 e IL-13: dermatite atopica, asma eosinofilico, rinosinusite cronica con poliposi, esofagite eosinofila."
+  },
+  "IL-5": {
+    "tipo": "molecola",
+    "base": "Un «messaggio» che fa nascere e chiama sul posto i globuli bianchi delle allergie (eosinofili).",
+    "superiore": "Interleuchina 5: citochina dei linfociti Th2 e delle ILC2. Fa produrre eosinofili nel midollo osseo, li attiva e li fa vivere più a lungo.",
+    "universita": "Recettore IL-5Rα con catena βc, espresso soprattutto su eosinofili e basofili. Stimola eosinopoiesi, rilascio dal midollo, sopravvivenza (inibisce l'apoptosi) e attivazione degli eosinofili.",
+    "clinica": "Asma grave eosinofilico: mepolizumab e reslizumab (anti-IL-5), benralizumab (anti-IL-5Rα, elimina gli eosinofili). Mepolizumab è usato anche nella granulomatosi eosinofila con poliangioite e nella sindrome ipereosinofila."
+  },
+  "IL-13": {
+    "tipo": "molecola",
+    "base": "Un «messaggio» delle allergie che fa produrre tanto muco e rende i bronchi irritabili.",
+    "superiore": "Interleuchina 13: citochina dei linfociti Th2 e delle ILC2, simile all'IL-4. Nei bronchi aumenta il muco e la contrazione dei muscoli; aiuta la produzione di IgE.",
+    "universita": "Agisce sul recettore di tipo II (IL-4Rα + IL-13Rα1) con segnale STAT6. Effetti: metaplasia delle cellule caliciformi e ipersecrezione di muco, iperreattività bronchiale, fibrosi e rimodellamento, induzione di eotassine che richiamano eosinofili.",
+    "clinica": "Bersaglio di dupilumab (insieme a IL-4) e di tralokinumab e lebrikizumab (anti-IL-13) nella dermatite atopica."
+  },
+  "IgE": {
+    "tipo": "molecola",
+    "base": "Gli anticorpi delle allergie: si attaccano a cellule speciali e le fanno «scoppiare» quando incontrano l'allergene.",
+    "superiore": "Immunoglobuline E: la classe di anticorpi presente in minore quantità nel sangue. Si legano ai mastociti e ai basofili; servono contro i vermi parassiti e sono responsabili delle allergie immediate (tipo I).",
+    "universita": "Catena pesante ε con 4 domini costanti; emivita nel siero di circa 2-3 giorni, ma legate al recettore FcεRI restano sui mastociti per settimane-mesi. Prodotte dopo scambio di classe indotto da IL-4/IL-13 e CD40L. Recettore a bassa affinità: CD23 (FcεRII).",
+    "clinica": "IgE totali aumentate in atopia, parassitosi, aspergillosi broncopolmonare allergica e sindrome da iper-IgE. Le IgE specifiche confermano una sensibilizzazione, ma da sole non dimostrano l'allergia clinica. Omalizumab (anti-IgE) nell'asma allergico grave e nell'orticaria cronica spontanea."
+  },
+  "FcεRI": {
+    "tipo": "molecola",
+    "base": "Il «gancio» sulla superficie delle cellule delle allergie a cui si attaccano gli anticorpi IgE.",
+    "superiore": "Recettore ad alta affinità per la parte costante delle IgE, presente su mastociti e basofili. Tiene le IgE sulla cellula; quando l'allergene le unisce, la cellula si attiva.",
+    "universita": "Tetramero αβγ₂ (sui mastociti); la catena α lega le IgE, le catene β e γ portano motivi ITAM. Il cross-linking da parte di un allergene multivalente attiva Lyn, che fosforila gli ITAM e recluta Syk; seguono LAT, PLCγ, IP₃ con aumento di Ca²⁺ e PKC, quindi degranulazione e sintesi di eicosanoidi e citochine. L'espressione di FcεRI aumenta con i livelli di IgE.",
+    "clinica": "Omalizumab, togliendo le IgE libere, riduce anche l'espressione di FcεRI su mastociti e basofili. Nell'orticaria cronica spontanea possono esserci autoanticorpi IgG contro FcεRI."
+  },
+  "mastociti": {
+    "tipo": "struttura",
+    "base": "Cellule di difesa che stanno nella pelle, nel naso e nei bronchi, piene di «sacchetti» di sostanze che fanno gonfiare e prudere.",
+    "superiore": "Cellule del sistema immunitario presenti nei tessuti, soprattutto vicino ai vasi e sotto le mucose. I loro granuli contengono istamina e altre sostanze. Con le IgE sono i protagonisti delle allergie immediate.",
+    "universita": "Derivano dal midollo osseo e maturano nei tessuti (fattore di crescita: stem cell factor, recettore KIT). Due tipi nell'uomo: MC_T (solo triptasi, mucose) e MC_TC (triptasi e chimasi, cute e sottomucosa). Mediatori preformati: istamina, triptasi, chimasi, eparina, TNF; neoformati: leucotrieni C₄/D₄/E₄, prostaglandina D₂, PAF; citochine IL-4, IL-5, IL-13. Si attivano anche senza IgE: complemento (C3a, C5a), farmaci (oppioidi, mezzi di contrasto, vancomicina; recettore MRGPRX2), fattori fisici.",
+    "clinica": "Mastocitosi sistemica (mutazione KIT D816V, triptasi basale elevata). Nella sindrome da attivazione mastocitaria episodi ricorrenti di sintomi con aumento della triptasi. Stabilizzatori dei mastociti: sodio cromoglicato."
+  },
+  "degranulazione del mastocita": {
+    "tipo": "struttura",
+    "base": "Il momento in cui la cellula delle allergie si svuota di colpo e libera le sostanze che danno i sintomi.",
+    "superiore": "Liberazione, in pochi secondi o minuti, del contenuto dei granuli del mastocita (istamina, triptasi) per esocitosi, seguita dalla produzione di leucotrieni e prostaglandine.",
+    "universita": "Innescata dal cross-linking di IgE legate a FcεRI. L'aumento di Ca²⁺ citosolico (rilascio dal reticolo tramite IP₃ e ingresso dall'esterno tramite canali CRAC) causa la fusione dei granuli con la membrana (proteine SNARE). Contemporaneamente la fosfolipasi A₂ citosolica libera acido arachidonico: via 5-lipossigenasi → leucotrieni; via COX → prostaglandina D₂. In ore la cellula trascrive citochine.",
+    "clinica": "La triptasi sierica sale nell'anafilassi: prelievo ideale circa 1-2 ore dopo l'inizio dei sintomi, da confrontare con un valore basale. Utile per confermare a posteriori un episodio anafilattico (per esempio in anestesia)."
+  },
+  "Syk (tirosin-chinasi)": {
+    "tipo": "enzima",
+    "base": "Un «interruttore» dentro la cellula delle allergie che, quando si accende, la fa svuotare.",
+    "superiore": "Enzima (tirosin-chinasi) che si attiva quando le IgE sul mastocita vengono unite dall'allergene. Trasmette il segnale che porta alla liberazione di istamina.",
+    "universita": "Spleen tyrosine kinase: tirosin-chinasi non recettoriale (classe EC 2.7.10.2) con due domini SH2 che si legano agli ITAM fosforilati da Lyn sulle catene β e γ di FcεRI. Fosforila LAT e SLP-76, attivando PLCγ, PI3K e la via delle MAP chinasi. Ha un ruolo analogo nel segnale del recettore dei linfociti B (BCR).",
+    "clinica": "Fostamatinib, inibitore di Syk, è approvato per la trombocitopenia immune cronica, dove riduce la distruzione delle piastrine da parte dei macrofagi."
+  },
+  "istamina": {
+    "tipo": "piccola",
+    "smiles": "NCCc1c[nH]cn1",
+    "base": "La sostanza che fa prudere, gonfiare la pelle e colare il naso durante un'allergia.",
+    "superiore": "Ammina biogena prodotta dall'amminoacido istidina. Si trova nei granuli di mastociti e basofili; liberata durante l'allergia dilata i vasi, li rende permeabili, dà prurito e contrae la muscolatura dei bronchi. Nello stomaco stimola la produzione di acido.",
+    "universita": "Sintetizzata dall'istidina decarbossilasi (cofattore piridossal-fosfato). Quattro recettori accoppiati a proteine G: H₁ (Gq: vasodilatazione mediata da NO, aumento della permeabilità, prurito, broncocostrizione), H₂ (Gs: secrezione acida gastrica, effetto cronotropo), H₃ (presinaptico nel SNC), H₄ (cellule immunitarie, chemiotassi). Degradata da diammino-ossidasi e istamina N-metiltransferasi.",
+    "clinica": "Antistaminici H₁ per rinite e orticaria; antagonisti H₂ (famotidina) per ridurre l'acidità gastrica. La sindrome sgombroide (pesce mal conservato ricco di istamina) imita un'allergia."
+  },
+  "triptasi": {
+    "tipo": "enzima",
+    "base": "Una sostanza che esce dalle cellule delle allergie e che il medico misura nel sangue per capire se c'è stata una reazione grave.",
+    "superiore": "Enzima che taglia le proteine (proteasi), contenuto quasi solo nei granuli dei mastociti. Viene liberato insieme all'istamina durante la reazione allergica.",
+    "universita": "Serin-proteasi (EC 3.4.21.59) tetramerica, immagazzinata in forma attiva legata all'eparina. La β-triptasi viene liberata con la degranulazione; l'α-triptasi è secreta di continuo e determina gran parte del valore basale. Attiva i recettori PAR-2 e degrada il fibrinogeno.",
+    "clinica": "Marcatore di attivazione mastocitaria: aumento rispetto al basale (criterio 20% + 2 ng/mL) conferma l'anafilassi. Triptasi basale persistentemente elevata (oltre 20 ng/mL): criterio minore di mastocitosi sistemica; valori un po' alti si trovano anche nell'α-triptasemia ereditaria."
+  },
+  "leucotrieni": {
+    "tipo": "molecola",
+    "base": "Sostanze prodotte durante l'allergia che chiudono i bronchi e rendono difficile respirare.",
+    "superiore": "Molecole lipidiche (eicosanoidi) prodotte dall'acido arachidonico tramite l'enzima 5-lipossigenasi. I leucotrieni C₄, D₄ ed E₄ (cisteinil-leucotrieni) contraggono fortemente i bronchi e aumentano il muco; il leucotriene B₄ richiama i neutrofili.",
+    "universita": "Via: acido arachidonico → (5-lipossigenasi con FLAP) → LTA₄ → LTB₄ (LTA₄ idrolasi) oppure LTC₄ (LTC₄ sintasi, coniugazione con glutatione) → LTD₄ → LTE₄. I cisteinil-leucotrieni agiscono sul recettore CysLT1 e sono broncocostrittori circa 1000 volte più potenti dell'istamina. Prodotti da mastociti, eosinofili, basofili e macrofagi.",
+    "clinica": "Montelukast (antagonista del recettore CysLT1) nell'asma e nella rinite allergica; zileuton inibisce la 5-lipossigenasi. Nella malattia respiratoria esacerbata da aspirina il blocco della COX devia l'acido arachidonico verso i leucotrieni."
+  },
+  "recettore H₁": {
+    "tipo": "molecola",
+    "base": "La «serratura» su cui agisce l'istamina per far prudere e gonfiare: gli antistaminici la bloccano.",
+    "superiore": "Recettore dell'istamina presente su vasi, muscolatura liscia dei bronchi e dell'intestino, terminazioni nervose e cervello. Media prurito, gonfiore, starnuti e broncocostrizione.",
+    "universita": "Recettore accoppiato a proteine Gq/11: attiva fosfolipasi C → IP₃ e diacilglicerolo → aumento di Ca²⁺. Nell'endotelio fa produrre NO e prostaciclina (vasodilatazione) e contrarre le cellule endoteliali (permeabilità); nel SNC mantiene la veglia. Gli antistaminici H₁ sono in realtà agonisti inversi.",
+    "clinica": "Gli antistaminici di prima generazione (difenidramina, clorfenamina) passano la barriera ematoencefalica: sonnolenza ed effetti anticolinergici. Quelli di seconda generazione (cetirizina, loratadina, fexofenadina) sedano poco."
+  },
+  "reazione immediata": {
+    "tipo": "struttura",
+    "base": "I sintomi dell'allergia che arrivano subito: starnuti, prurito, bolle sulla pelle, fiato corto.",
+    "superiore": "Fase precoce della reazione allergica di tipo I: compare entro pochi minuti dal contatto con l'allergene ed è dovuta all'istamina e agli altri mediatori dei mastociti.",
+    "universita": "Inizia entro 5-30 minuti e si risolve in circa 1 ora. Vasodilatazione e aumento della permeabilità (pomfo ed eritema: «triplice risposta» di Lewis), stimolazione dei nervi sensitivi (prurito, starnuti), ipersecrezione delle ghiandole, contrazione della muscolatura liscia. Mediata da istamina, leucotrieni, prostaglandina D₂ e PAF.",
+    "clinica": "Nel prick test la lettura si fa dopo circa 15-20 minuti (pomfo). I broncodilatatori β₂-agonisti a breve durata d'azione risolvono la componente di broncospasmo acuto."
+  },
+  "eosinofili": {
+    "tipo": "struttura",
+    "base": "Globuli bianchi con granuli rossi, specialisti contro i vermi, che si moltiplicano nelle allergie.",
+    "superiore": "Granulociti con granuli che si colorano di rosso con l'eosina. Sono l'1-4% circa dei globuli bianchi. Combattono i parassiti e partecipano alla fase tardiva e cronica delle allergie, soprattutto dell'asma.",
+    "universita": "Nascita e attivazione dipendono da IL-5; richiamati nei tessuti da eotassine (recettore CCR3) e IL-13. Granuli con proteina basica maggiore, proteina cationica eosinofila, perossidasi e neurotossina eosinofila, tossiche per parassiti ed epitelio. Producono leucotrieni C₄.",
+    "clinica": "Eosinofilia (oltre 500/μL): allergie, parassitosi, reazioni a farmaci (sindrome DRESS), malattie ematologiche. Asma eosinofilico: anti-IL-5 e anti-IL-5Rα. Esofagite eosinofila: oltre 15 eosinofili per campo ad alto ingrandimento nella biopsia."
+  },
+  "fase tardiva": {
+    "tipo": "struttura",
+    "base": "La seconda ondata di sintomi dell'allergia, che torna dopo alcune ore anche senza un nuovo contatto.",
+    "superiore": "Fase della reazione allergica che compare alcune ore dopo la reazione immediata. È dovuta all'arrivo nel tessuto di altri globuli bianchi (eosinofili, basofili, linfociti Th2).",
+    "universita": "Inizia dopo 2-6 ore, con massimo intorno alle 6-12 ore. Le citochine e chemochine del mastocita (TNF, IL-4, IL-5, IL-13) aumentano le molecole di adesione dell'endotelio e richiamano eosinofili, basofili, neutrofili e linfociti Th2. Nell'asma provoca una seconda ostruzione bronchiale più duratura, con iperreattività.",
+    "clinica": "I corticosteroidi prevengono soprattutto la fase tardiva, non quella immediata. Nell'anafilassi una ricomparsa dei sintomi dopo la risoluzione (anafilassi bifasica) giustifica un periodo di osservazione dopo il trattamento."
+  },
+  "infiammazione allergica cronica": {
+    "tipo": "struttura",
+    "base": "Quando l'allergia dura a lungo, il naso, i bronchi o la pelle restano sempre un po' infiammati.",
+    "superiore": "Infiammazione persistente dovuta all'esposizione ripetuta all'allergene. È la base dell'asma allergico, della rinite persistente e della dermatite atopica.",
+    "universita": "Caratterizzata da infiltrato di eosinofili, linfociti Th2, mastociti e ILC2; aumento delle cellule caliciformi e del muco, ispessimento della membrana basale, ipertrofia della muscolatura liscia e nuovi vasi (rimodellamento delle vie aeree). Le allarmine epiteliali (TSLP, IL-33) mantengono la risposta.",
+    "clinica": "Asma: i corticosteroidi inalatori sono la base della terapia di mantenimento; nell'asma grave si aggiungono farmaci biologici (anti-IgE, anti-IL-5, anti-IL-4Rα, anti-TSLP). La «marcia atopica» descrive il passaggio frequente da dermatite atopica e allergia alimentare a rinite e asma."
+  },
+  "anafilassi": {
+    "tipo": "struttura",
+    "base": "Una reazione allergica gravissima che colpisce tutto il corpo in pochi minuti: serve subito l'adrenalina e il 118.",
+    "superiore": "Reazione allergica sistemica, rapida e potenzialmente mortale. Si possono avere orticaria e gonfiore di labbra e gola, difficoltà a respirare, calo della pressione (shock) e vomito. Le cause più frequenti sono alimenti, farmaci e punture di imenotteri.",
+    "universita": "Liberazione massiva di mediatori da mastociti e basofili, di solito mediata da IgE, ma anche non IgE-mediata (attivazione diretta dei mastociti, complemento). Vasodilatazione e aumento della permeabilità con spostamento rapido di plasma nei tessuti (shock distributivo), broncospasmo, edema delle vie aeree superiori. Diagnosi clinica: esordio acuto con interessamento di cute/mucose e di respiro o pressione, oppure ipotensione o broncospasmo dopo esposizione a un allergene noto.",
+    "clinica": "Primo farmaco: adrenalina intramuscolare nella faccia anterolaterale della coscia, ripetibile; paziente sdraiato con gambe sollevate (o seduto se respira male), ossigeno e liquidi endovena. Antistaminici e corticosteroidi solo come aggiunta. Chi ha avuto un'anafilassi deve avere con sé un autoiniettore di adrenalina. I β-bloccanti possono rendere la reazione più resistente all'adrenalina (si usa glucagone)."
+  },
+  "immunocomplessi": {
+    "tipo": "molecola",
+    "base": "Piccoli «grumi» di anticorpi attaccati ai microbi o ad altre sostanze, che se si fermano nei vasi li infiammano.",
+    "superiore": "Complessi formati da anticorpi legati al loro antigene. Di solito vengono eliminati; se sono troppi si depositano nei piccoli vasi, nei reni e nelle articolazioni e causano infiammazione (ipersensibilità di tipo III).",
+    "universita": "I complessi più patogeni sono di dimensioni intermedie, con lieve eccesso di antigene. Depositati nelle pareti vasali, attivano il complemento per la via classica (consumo di C3 e C4; C5a richiama i neutrofili) e i recettori Fcγ: vasculite, glomerulonefrite, artrite. Normalmente sono trasportati dai globuli rossi (recettore CR1) a fegato e milza.",
+    "clinica": "Esempi: lupus eritematoso sistemico (C3 e C4 bassi), glomerulonefrite post-streptococcica, crioglobulinemia da epatite C, malattia da siero, reazione di Arthus. All'immunofluorescenza renale: depositi granulari."
+  },
+  "antistaminici H₁": {
+    "tipo": "molecola",
+    "base": "Medicine contro l'allergia che bloccano l'istamina: tolgono prurito, starnuti e naso che cola.",
+    "superiore": "Farmaci che bloccano il recettore H₁ dell'istamina. Prima generazione (difenidramina, clorfenamina, idroxizina): danno sonnolenza. Seconda generazione (cetirizina, loratadina, desloratadina, fexofenadina, bilastina): sedano poco.",
+    "universita": "Sono agonisti inversi del recettore H₁ (stabilizzano la forma inattiva). Quelli di prima generazione sono lipofili, passano la barriera ematoencefalica e bloccano anche recettori muscarinici, α-adrenergici e serotoninergici. Quelli di seconda generazione sono substrati della P-glicoproteina e restano fuori dal cervello.",
+    "clinica": "Indicati in rinite allergica, congiuntivite e orticaria. Nell'anafilassi agiscono solo su prurito e orticaria e non trattano shock né broncospasmo. Prima generazione: attenzione a guida, anziani (confusione, ritenzione urinaria) e glaucoma ad angolo chiuso."
+  },
+  "corticosteroidi": {
+    "tipo": "molecola",
+    "base": "Medicine «cortisoniche» che spengono l'infiammazione, per esempio nell'asma e nelle allergie forti.",
+    "superiore": "Farmaci simili al cortisolo (glucocorticoidi), come prednisone, metilprednisolone, desametasone, budesonide e fluticasone. Riducono infiammazione e risposta immunitaria. Si usano per bocca, per via endovenosa, inalatoria, nasale o sulla pelle.",
+    "universita": "Si legano al recettore dei glucocorticoidi nel citoplasma, che entra nel nucleo: reprime geni dell'infiammazione (inibizione di NF-κB e AP-1: meno citochine, COX-2, molecole di adesione) e attiva geni antinfiammatori (lipocortina/annessina-1). Riducono eosinofili, mastociti delle mucose e linfociti Th2. Effetto che richiede ore: utili soprattutto sulla fase tardiva.",
+    "clinica": "Base della terapia dell'asma persistente (inalatori) e della rinite (spray nasali). Uso sistemico prolungato: iperglicemia, osteoporosi, ipertensione, infezioni, cataratta, soppressione dell'asse ipotalamo-ipofisi-surrene (non sospendere bruscamente)."
+  },
+  "omalizumab": {
+    "tipo": "molecola",
+    "base": "Una medicina moderna, fatta di anticorpi, che toglie dal sangue gli anticorpi delle allergie.",
+    "superiore": "Anticorpo monoclonale umanizzato contro le IgE. Si lega alle IgE libere e impedisce che si attacchino ai mastociti. Si somministra con iniezioni sottocutanee.",
+    "universita": "IgG1 umanizzata che lega la regione Cε3 delle IgE libere, cioè il sito che si lega a FcεRI; non lega le IgE già fissate sulle cellule, quindi non provoca degranulazione. Riduce le IgE libere e, di conseguenza, l'espressione di FcεRI su mastociti e basofili. La dose dipende da IgE totali e peso.",
+    "clinica": "Indicazioni: asma allergico grave non controllato, orticaria cronica spontanea, rinosinusite cronica con polipi nasali e, in alcuni Paesi, allergia alimentare IgE-mediata. Raro rischio di anafilassi: le prime somministrazioni si fanno sotto osservazione."
+  },
+  "farmaco per bocca": {
+    "tipo": "molecola",
+    "base": "Una medicina presa con la bocca, come una compressa o uno sciroppo.",
+    "superiore": "Farmaco somministrato per via orale (enterale): è la via più comoda e più usata. Prima di agire deve sciogliersi, essere assorbito dall'intestino e superare il fegato.",
+    "universita": "Formulazioni: compresse, capsule, soluzioni, sospensioni; a rilascio immediato, modificato (prolungato o ritardato) o gastroresistente. L'assorbimento dipende da solubilità, permeabilità (classificazione biofarmaceutica BCS), svuotamento gastrico, pH, cibo, trasportatori e metabolismo intestinale (CYP3A4 degli enterociti). Alternative: endovenosa (F = 100%), intramuscolare, sottocutanea, sublinguale, transdermica, inalatoria, rettale.",
+    "clinica": "Le vie sublinguale e transdermica evitano il primo passaggio epatico (nitroglicerina sublinguale, fentanil transdermico). Il cibo può aumentare o ridurre l'assorbimento; gli antiacidi e i sali di calcio o ferro riducono quello di tetracicline e fluorochinoloni."
+  },
+  "farmaco disciolto": {
+    "tipo": "molecola",
+    "base": "La medicina che si è sciolta nei succhi dello stomaco e dell'intestino ed è pronta a entrare nel corpo.",
+    "superiore": "Il principio attivo sciolto nei liquidi del tubo digerente. Solo in questa forma può attraversare la parete intestinale; i farmaci poco solubili vengono assorbiti lentamente o in modo incompleto.",
+    "universita": "La velocità di dissoluzione dipende da solubilità, dimensione delle particelle e pH. Gli acidi deboli sono meno ionizzati a pH acido e i basi deboli a pH più alto (equazione di Henderson-Hasselbalch), ma l'assorbimento avviene soprattutto nell'intestino tenue per la superficie enorme. Le formulazioni a rilascio modificato controllano proprio la dissoluzione.",
+    "clinica": "Gli inibitori di pompa protonica, alzando il pH gastrico, riducono la dissoluzione di farmaci come ketoconazolo, itraconazolo (capsule) e alcuni inibitori delle tirosin-chinasi. Le compresse a rilascio prolungato non vanno frantumate."
+  },
+  "vena porta": {
+    "tipo": "struttura",
+    "base": "La grossa vena che porta al fegato il sangue che viene dall'intestino, carico di quello che abbiamo mangiato.",
+    "superiore": "Vena formata dall'unione della vena mesenterica superiore e della vena splenica. Porta al fegato il sangue di stomaco, intestino, pancreas e milza, così il fegato controlla e lavora le sostanze assorbite prima che arrivino al resto del corpo.",
+    "universita": "Fornisce circa il 75% del flusso di sangue al fegato (il resto viene dall'arteria epatica). Nel fegato si ramifica fino ai sinusoidi, dove il sangue scorre accanto agli epatociti e poi drena nelle vene sovraepatiche e nella vena cava inferiore. Pressione normale bassa (circa 5-10 mmHg).",
+    "clinica": "Ipertensione portale (cirrosi, trombosi portale): varici esofagee, splenomegalia, ascite. Il primo passaggio epatico riguarda le sostanze assorbite dallo stomaco all'intestino crasso prossimale; il retto inferiore drena in parte direttamente nella circolazione sistemica."
+  },
+  "farmaco nel plasma": {
+    "tipo": "molecola",
+    "base": "La medicina arrivata nel sangue, pronta a viaggiare in tutto il corpo.",
+    "superiore": "Il farmaco presente nella circolazione sistemica. La sua concentrazione nel tempo descrive la farmacocinetica: sale durante l'assorbimento e poi scende per distribuzione ed eliminazione.",
+    "universita": "Parametri della curva concentrazione-tempo: Cmax, tmax e area sotto la curva (AUC); la biodisponibilità F = AUC orale / AUC endovenosa (a dosi uguali). Clearance (CL) = dose × F / AUC. Nella cinetica di primo ordine si elimina una frazione costante per unità di tempo; nella cinetica di ordine zero (etanolo, fenitoina e aspirina ad alte dosi) una quantità costante.",
+    "clinica": "Il monitoraggio delle concentrazioni plasmatiche (TDM) è utile per farmaci a basso indice terapeutico: digossina, litio, aminoglicosidi, vancomicina, antiepilettici, ciclosporina e tacrolimus."
+  },
+  "albumina": {
+    "tipo": "molecola",
+    "base": "La proteina più abbondante del sangue: trattiene l'acqua nei vasi e trasporta tante sostanze, anche le medicine.",
+    "superiore": "Proteina prodotta dal fegato, la più abbondante del plasma (circa 3,5-5 g/dL). Mantiene la pressione oncotica e trasporta acidi grassi, bilirubina, ormoni, calcio e farmaci.",
+    "universita": "Proteina di 585 amminoacidi (circa 66 kDa), emivita di circa 3 settimane. Ha siti di legame per farmaci acidi e neutri (siti di Sudlow I e II: warfarin, fenitoina, FANS, sulfamidici, diazepam). I farmaci basici si legano soprattutto all'α₁-glicoproteina acida. Il legame è reversibile e saturabile.",
+    "clinica": "Nell'ipoalbuminemia (cirrosi, sindrome nefrosica, malnutrizione) aumenta la frazione libera dei farmaci molto legati: per la fenitoina si corregge la concentrazione totale misurata. Nel neonato i sulfamidici spiazzano la bilirubina dall'albumina (rischio di ittero nucleare)."
+  },
+  "farmaco libero": {
+    "tipo": "molecola",
+    "base": "La parte della medicina che nel sangue non è attaccata alle proteine: è l'unica che può lavorare.",
+    "superiore": "La frazione di farmaco non legata alle proteine plasmatiche. Solo questa attraversa le pareti dei capillari, raggiunge il bersaglio, viene metabolizzata e filtrata dal rene.",
+    "universita": "Esiste un equilibrio rapido tra frazione legata e libera (fu = frazione non legata). L'effetto dipende dalla concentrazione libera. Lo spiazzamento da parte di un altro farmaco aumenta solo transitoriamente la frazione libera, perché aumenta anche la sua eliminazione; conta clinicamente soprattutto per farmaci molto legati, a basso indice terapeutico e con eliminazione ridotta.",
+    "clinica": "Nelle ipoalbuminemie e nell'uremia (che riduce il legame dei farmaci acidi) la concentrazione totale può sottostimare quella libera, per esempio per fenitoina e acido valproico."
+  },
+  "farmaco nei tessuti": {
+    "tipo": "molecola",
+    "base": "La medicina che è uscita dal sangue ed è arrivata dentro gli organi, dove può lavorare.",
+    "superiore": "Il farmaco distribuito negli organi e nei tessuti. Arriva prima negli organi molto irrorati, poi in muscoli e grasso. Alcune barriere (ematoencefalica, placentare) limitano il passaggio.",
+    "universita": "Volume di distribuzione apparente Vd = quantità di farmaco nell'organismo / concentrazione plasmatica: è basso (vicino al volume del plasma, circa 3 L) per i farmaci molto legati all'albumina o molto polari (eparina, warfarin), altissimo per quelli che si accumulano nei tessuti (amiodarone, clorochina, digossina). Ridistribuzione: il tiopental agisce poco perché passa dal cervello al muscolo e al grasso.",
+    "clinica": "La dose di carico dipende dal Vd (dose di carico = concentrazione desiderata × Vd / F). Nell'obesità i farmaci lipofili hanno Vd maggiore. I farmaci con Vd molto alto non si rimuovono bene con la dialisi."
+  },
+  "citocromi P450": {
+    "tipo": "enzima",
+    "base": "Gli «operai» del fegato che trasformano le medicine per poterle eliminare.",
+    "superiore": "Famiglia di enzimi contenenti ferro (emoproteine), soprattutto nel reticolo endoplasmatico liscio del fegato e dell'intestino. Ossidano farmaci e altre sostanze estranee nelle reazioni di fase I.",
+    "universita": "Monoossigenasi (EC 1.14.14.1) con gruppo eme: RH + O₂ + NADPH + H⁺ → ROH + H₂O + NADP⁺; gli elettroni arrivano dalla NADPH-citocromo P450 reduttasi. Nell'uomo le isoforme più importanti per i farmaci sono CYP3A4/5 (circa metà dei farmaci), CYP2D6, CYP2C9, CYP2C19, CYP1A2, CYP2E1. Possono essere inibiti o indotti (induzione tramite i recettori nucleari PXR e CAR) e presentano polimorfismi genetici (metabolizzatori lenti, intermedi, rapidi, ultrarapidi).",
+    "clinica": "Interazioni: gli inibitori del CYP3A4 (claritromicina, ketoconazolo e itraconazolo, ritonavir, succo di pompelmo) aumentano i livelli di simvastatina, tacrolimus, ciclosporina; gli induttori (rifampicina, carbamazepina, fenitoina, iperico) li riducono, per esempio rendendo inefficaci contraccettivi orali e immunosoppressori. CYP2D6: i metabolizzatori ultrarapidi trasformano molta codeina in morfina; CYP2C19: i lenti attivano poco il clopidogrel; CYP2C9 e VKORC1 condizionano la dose di warfarin."
+  },
+  "NADPH": {
+    "tipo": "coenzima",
+    "base": "Una piccola molecola che porta «energia di riserva» per costruire e trasformare sostanze nella cellula.",
+    "superiore": "Nicotinammide adenina dinucleotide fosfato in forma ridotta. È il trasportatore di elettroni usato nelle reazioni di sintesi (acidi grassi, colesterolo) e nella difesa dai radicali liberi. La forma ossidata si chiama NADP⁺.",
+    "universita": "Prodotto soprattutto dalla via dei pentoso fosfati (glucosio 6-fosfato deidrogenasi), dall'enzima malico e dall'isocitrato deidrogenasi NADP-dipendente. Cede elettroni a: citocromo P450 reduttasi, glutatione reduttasi (mantiene il glutatione ridotto), NADPH ossidasi dei fagociti, HMG-CoA reduttasi, acido grasso sintasi.",
+    "clinica": "Nel deficit di G6PD i globuli rossi producono poco NADPH: farmaci ossidanti (primachina, dapsone, rasburicase) e fave causano emolisi. Nella malattia granulomatosa cronica manca la NADPH ossidasi dei fagociti."
+  },
+  "NADP⁺": {
+    "tipo": "coenzima",
+    "base": "La forma «scarica» della molecola che porta energia per le costruzioni della cellula.",
+    "superiore": "Forma ossidata del NADPH: accetta elettroni e diventa NADPH. Differisce dal NAD⁺ per un gruppo fosfato in più sul ribosio dell'adenosina.",
+    "universita": "Nella cellula il rapporto NADPH/NADP⁺ è mantenuto alto (ambiente riducente), al contrario del rapporto NAD⁺/NADH, alto a favore della forma ossidata. Il fosfato in più permette agli enzimi di distinguere i due coenzimi: NAD⁺ per il catabolismo, NADPH per le biosintesi riduttive.",
+    "clinica": ""
+  },
+  "metabolita di fase I": {
+    "tipo": "molecola",
+    "base": "La medicina dopo il primo «ritocco» fatto dal fegato: le è stato attaccato un piccolo gancio.",
+    "superiore": "Prodotto delle reazioni di fase I (ossidazione, riduzione, idrolisi), che introducono o scoprono un gruppo polare come –OH, –NH₂ o –COOH. Può essere inattivo, ancora attivo o più attivo del farmaco di partenza.",
+    "universita": "Reazioni: idrossilazione, N- e O-dealchilazione, S-ossidazione, epossidazione (CYP); ossidazioni da FMO, MAO, alcol e aldeide deidrogenasi; idrolisi da esterasi e amidasi. I profarmaci si attivano proprio in questa fase (enalapril → enalaprilat, clopidogrel, codeina → morfina). Alcuni metaboliti sono reattivi e tossici.",
+    "clinica": "Paracetamolo: a dosi tossiche si forma molto NAPQI (via CYP2E1 e CYP3A4), che esaurisce il glutatione e danneggia il fegato; antidoto N-acetilcisteina. Metaboliti attivi che si accumulano nell'insufficienza renale: morfina-6-glucuronide, norpetidina."
+  },
+  "UDP-glucuronosiltransferasi (UGT)": {
+    "tipo": "enzima",
+    "base": "L'«operaio» del fegato che attacca alle medicine uno zucchero speciale per farle sciogliere nell'acqua ed eliminarle.",
+    "superiore": "Enzimi di fase II che uniscono l'acido glucuronico a farmaci, bilirubina e ormoni (glucuronazione). Il prodotto (glucuronide) è più solubile in acqua e si elimina con urina o bile.",
+    "universita": "Transferasi (EC 2.4.1.17) del reticolo endoplasmatico; donatore: acido UDP-glucuronico. Famiglie UGT1A e UGT2B; UGT1A1 coniuga la bilirubina. Substrati: paracetamolo, morfina (morfina-3- e morfina-6-glucuronide), lamotrigina, irinotecano (metabolita SN-38), estrogeni. Sono inducibili (rifampicina, fenobarbital).",
+    "clinica": "Sindrome di Gilbert (ridotta attività UGT1A1): lieve iperbilirubinemia non coniugata e maggiore tossicità dell'irinotecano. Sindrome di Crigler-Najjar: deficit grave o totale. Nel neonato l'attività è bassa: il cloramfenicolo causava la «sindrome grigia»."
+  },
+  "acido UDP-glucuronico": {
+    "tipo": "molecola",
+    "base": "Lo «zucchero speciale» che il fegato attacca alle medicine per eliminarle.",
+    "superiore": "Forma attivata dell'acido glucuronico, legata all'UDP. È il donatore di acido glucuronico nelle reazioni di glucuronazione.",
+    "universita": "Si forma dal glucosio: glucosio 6-fosfato → glucosio 1-fosfato → UDP-glucosio → (UDP-glucosio deidrogenasi, 2 NAD⁺) → acido UDP-glucuronico. Serve anche alla sintesi di glicosaminoglicani (acido ialuronico, condroitin solfato, eparan solfato).",
+    "clinica": ""
+  },
+  "UDP": {
+    "tipo": "molecola",
+    "base": "Il «manico» che resta libero dopo che lo zucchero speciale è stato attaccato alla medicina.",
+    "superiore": "Uridina difosfato: nucleotide formato da uracile, ribosio e due fosfati. Fa da trasportatore di zuccheri attivati (UDP-glucosio, acido UDP-glucuronico) e viene liberato quando lo zucchero è trasferito.",
+    "universita": "Rigenerato a UTP dalla nucleoside difosfato chinasi (con ATP). L'UDP-glucosio è il donatore di glucosio per la sintesi del glicogeno; l'UDP-galattosio serve al metabolismo del galattosio e alla sintesi del lattosio.",
+    "clinica": ""
+  },
+  "coniugato idrosolubile": {
+    "tipo": "molecola",
+    "base": "La medicina «impacchettata» dal fegato in modo che si sciolga nell'acqua e possa uscire con la pipì.",
+    "superiore": "Prodotto delle reazioni di fase II: il farmaco (o il suo metabolita) è unito a una molecola polare come acido glucuronico, solfato, glutatione o un gruppo acetile. Di solito è inattivo e facile da eliminare.",
+    "universita": "Coniugazioni: glucuronazione (UGT), solfatazione (sulfotransferasi, donatore PAPS), acetilazione (N-acetiltransferasi NAT2, con acetil-CoA), coniugazione con glutatione (glutatione S-transferasi), metilazione (COMT, TPMT, con S-adenosilmetionina), coniugazione con amminoacidi. I coniugati sono spesso acidi forti, ionizzati, eliminati con secrezione tubulare attiva o nella bile. Eccezione: la morfina-6-glucuronide è più potente della morfina.",
+    "clinica": "Acetilatori lenti (polimorfismo NAT2): più rischio di neuropatia da isoniazide e di lupus da idralazina e procainamide. Deficit di TPMT: tossicità midollare grave da azatioprina e mercaptopurina (si dosa l'attività o il genotipo prima della terapia)."
+  },
+  "feci": {
+    "tipo": "struttura",
+    "base": "Gli scarti del cibo che escono dall'intestino quando andiamo in bagno.",
+    "superiore": "Materiale eliminato dal retto: acqua, fibre non digerite, batteri, cellule di sfaldamento e sostanze escrete con la bile (come i pigmenti biliari e alcuni farmaci).",
+    "universita": "Composte per circa il 75% da acqua; la parte solida è soprattutto massa batterica e fibre. Il colore deriva dalla stercobilina (dalla bilirubina). Per i farmaci l'eliminazione fecale comprende la quota non assorbita e quella escreta con la bile.",
+    "clinica": "Farmaci a eliminazione soprattutto biliare-fecale (per esempio ceftriaxone in parte, doxiciclina, linagliptin) non richiedono in genere aggiustamenti nell'insufficienza renale."
+  },
+  "glutatione": {
+    "tipo": "molecola",
+    "smiles": "N[C@@H](CCC(=O)N[C@@H](CS)C(=O)NCC(=O)O)C(=O)O",
+    "base": "Lo «scudo» della cellula: una piccola molecola che cattura le sostanze tossiche e le rende innocue.",
+    "superiore": "Tripeptide (glutammato, cisteina, glicina) presente in tutte le cellule. Protegge dai radicali liberi e dalle sostanze reattive, unendosi a loro grazie al gruppo –SH della cisteina.",
+    "universita": "γ-glutamil-cisteinil-glicina: legame γ insolito tra glutammato e cisteina. Sintesi in due tappe con ATP (γ-glutamilcisteina sintetasi, limitante; glutatione sintetasi). Forma ridotta GSH, ossidata GSSG; la glutatione reduttasi la rigenera con NADPH. Le glutatione S-transferasi lo coniugano a elettrofili (fase II); i coniugati diventano acidi mercapturici escreti nelle urine.",
+    "clinica": "Nell'intossicazione da paracetamolo il glutatione si esaurisce e il NAPQI danneggia gli epatociti: la N-acetilcisteina fornisce cisteina per rigenerarlo. Il digiuno e l'alcolismo cronico riducono le scorte."
+  },
+  "P-glicoproteina": {
+    "tipo": "molecola",
+    "base": "Una «pompa» sulla superficie di alcune cellule che butta fuori le medicine, come un buttafuori.",
+    "superiore": "Proteina di trasporto di membrana che usa l'energia dell'ATP per espellere molti farmaci fuori dalla cellula. Si trova nell'intestino, nel fegato, nel rene, nella barriera ematoencefalica e nella placenta.",
+    "universita": "Trasportatore ABC (ABCB1, gene MDR1), ATP-dipendente. Riduce l'assorbimento intestinale, aumenta l'escrezione biliare e renale e protegge il cervello. Substrati: digossina, dabigatran, ciclosporina, tacrolimus, loperamide, molti antitumorali. Inibitori: verapamil, amiodarone, claritromicina, chinidina; induttori: rifampicina, iperico. Molti substrati sono anche substrati del CYP3A4.",
+    "clinica": "Gli inibitori della P-gp aumentano i livelli di digossina (tossicità) e di dabigatran. La loperamide non dà effetti centrali perché la P-gp la tiene fuori dal cervello. Le cellule tumorali che esprimono molta P-gp diventano resistenti a più chemioterapici (multidrug resistance)."
+  },
+  "recettore farmacologico": {
+    "tipo": "molecola",
+    "base": "La «serratura» della cellula in cui entra la medicina-chiave per dare il suo effetto.",
+    "superiore": "Macromolecola, di solito una proteina, alla quale un farmaco si lega in modo specifico per produrre un effetto. I bersagli dei farmaci sono recettori, enzimi, canali ionici e trasportatori.",
+    "universita": "Il legame segue la legge d'azione di massa: frazione di recettori occupati = [F]/([F] + Kd). L'effetto dipende da affinità, efficacia, numero di recettori e amplificazione a valle. Selettività: un farmaco preferisce un sottotipo di recettore, ma a dosi alte ne lega anche altri (per esempio i β₁-selettivi bloccano anche i β₂). Recettori di riserva: l'effetto massimo si ottiene occupando solo una parte dei recettori.",
+    "clinica": "La perdita di selettività alle dosi alte spiega molti effetti collaterali: per esempio i β-bloccanti «cardioselettivi» possono comunque causare broncospasmo negli asmatici."
+  },
+  "complesso farmaco-recettore": {
+    "tipo": "molecola",
+    "base": "La medicina-chiave infilata nella serratura giusta.",
+    "superiore": "Il farmaco legato al suo recettore. Il legame è di solito reversibile (legami deboli: idrogeno, ionici, van der Waals); più raramente è covalente e irreversibile.",
+    "universita": "Equilibrio F + R ⇌ FR con costante di dissociazione Kd = k_off/k_on. Tempo di permanenza sul recettore (1/k_off) importante per la durata d'azione. I legami covalenti rendono l'effetto irreversibile fino alla sintesi di nuove proteine (aspirina sulla COX piastrinica, omeprazolo sulla pompa protonica, fenossibenzamina sui recettori α).",
+    "clinica": "Gli effetti di un farmaco irreversibile durano più della sua presenza nel sangue: l'aspirina inibisce le piastrine per tutta la loro vita (circa 7-10 giorni), per questo va sospesa con anticipo prima di alcuni interventi."
+  },
+  "agonista": {
+    "tipo": "molecola",
+    "base": "Una medicina che «accende» la serratura della cellula, come farebbe la sostanza naturale del corpo.",
+    "superiore": "Farmaco che si lega al recettore e lo attiva, producendo un effetto. Ha affinità ed efficacia. Esempi: salbutamolo (recettori β₂), morfina (recettori μ), dobutamina (recettori β₁).",
+    "universita": "Agonista pieno: efficacia massima (Emax del sistema). Agonista parziale: efficacia intermedia anche occupando tutti i recettori. Agonista inverso: riduce l'attività costitutiva del recettore. Agonista distorto (biased): attiva preferenzialmente una via (proteina G o β-arrestina). La potenza (EC₅₀) dipende da affinità, efficacia e recettori di riserva.",
+    "clinica": "L'uso prolungato degli agonisti porta a desensibilizzazione e tolleranza (nitrati, oppioidi, β₂-agonisti); per i nitrati si prevede un intervallo libero da farmaco nelle 24 ore."
+  },
+  "recettore attivato": {
+    "tipo": "molecola",
+    "base": "La serratura che si è aperta: ora la cellula riceve il messaggio.",
+    "superiore": "Il recettore che, legato all'agonista, ha cambiato forma e può trasmettere il segnale all'interno della cellula.",
+    "universita": "Modello a due stati: il recettore oscilla tra forma inattiva (R) e attiva (R*); l'agonista stabilizza R*, l'agonista inverso R, l'antagonista neutro non cambia l'equilibrio. Nei GPCR l'attivazione sposta le eliche transmembrana 5 e 6 e apre una tasca per la proteina G.",
+    "clinica": "Alcune mutazioni rendono i recettori sempre attivi (attivazione costitutiva): per esempio il recettore del TSH negli adenomi tiroidei tossici e il recettore dell'LH nella pubertà precoce familiare maschile."
+  },
+  "recettore accoppiato a proteine G (GPCR)": {
+    "tipo": "molecola",
+    "base": "Un tipo di «serratura» molto comune: quando si apre, passa il messaggio a una proteina interna che lo amplifica.",
+    "superiore": "Recettore di membrana formato da una sola catena che attraversa la membrana 7 volte. Quando lega l'agonista attiva una proteina G all'interno della cellula. È la famiglia più numerosa di bersagli dei farmaci.",
+    "universita": "Proteine G eterotrimeriche (α, βγ): Gs attiva l'adenilato ciclasi (↑cAMP); Gi la inibisce (↓cAMP) e con βγ apre canali K⁺ GIRK e chiude canali Ca²⁺; Gq attiva la fosfolipasi C (IP₃ → Ca²⁺, DAG → PKC). Esempi: adrenergici (β₁, β₂: Gs; α₂: Gi; α₁: Gq), muscarinici, oppioidi, istaminici, dopaminergici, angiotensina AT1. Circa un terzo dei farmaci approvati agisce su GPCR.",
+    "clinica": "La tossina colerica blocca Gs attiva (diarrea secretoria), la tossina della pertosse blocca Gi. Esempi di farmaci: β-bloccanti, sartani, antistaminici, oppioidi, antipsicotici, triptani, agonisti del GLP-1."
+  },
+  "proteina Gs attivata": {
+    "tipo": "molecola",
+    "base": "La «staffetta» che prende il messaggio dal recettore e lo porta all'enzima che lo amplifica.",
+    "superiore": "Proteina G stimolatoria nella forma attiva: la subunità α ha legato GTP al posto del GDP, si stacca dalle subunità βγ e attiva l'adenilato ciclasi.",
+    "universita": "Gαs-GTP è attiva finché la sua attività GTPasica intrinseca non idrolizza il GTP a GDP (accelerata dalle proteine RGS). La tossina colerica ADP-ribosila Gαs bloccandone l'attività GTPasica: la proteina resta sempre attiva.",
+    "clinica": "Mutazioni attivanti di GNAS (gene di Gαs) nella sindrome di McCune-Albright e in alcuni adenomi ipofisari GH-secernenti; mutazioni inattivanti nello pseudoipoparatiroidismo (osteodistrofia ereditaria di Albright)."
+  },
+  "adenilato ciclasi": {
+    "tipo": "enzima",
+    "base": "L'enzima che, quando riceve il messaggio, produce tante piccole molecole-messaggero dentro la cellula.",
+    "superiore": "Enzima della membrana che trasforma l'ATP in AMP ciclico (cAMP). È attivato dalla proteina Gs e inibito dalla proteina Gi.",
+    "universita": "Liasi (EC 4.6.1.1): ATP → cAMP + PPi. Nove isoforme di membrana (AC1-9) più una solubile (AC10). Attivata dalla forskolina (sperimentale); alcune isoforme regolate da Ca²⁺/calmodulina. Ogni Gαs attiva produce molte molecole di cAMP: amplificazione del segnale.",
+    "clinica": "Le tossine del carbonchio (fattore edema) e della pertosse (adenilato ciclasi batterica) aumentano il cAMP nelle cellule dell'ospite e ne alterano le difese."
+  },
+  "AMP ciclico (cAMP)": {
+    "tipo": "piccola",
+    "base": "Un piccolo messaggero dentro la cellula: porta l'ordine arrivato da fuori a tante proteine diverse.",
+    "superiore": "Adenosina monofosfato ciclico: secondo messaggero prodotto dall'ATP. Trasmette dentro la cellula il segnale di ormoni e farmaci come adrenalina e glucagone, soprattutto attivando la proteina chinasi A.",
+    "universita": "Bersagli: proteina chinasi A, EPAC, canali attivati da nucleotidi ciclici (HCN, CNG). Degradato ad AMP dalle fosfodiesterasi (PDE). Nel cuore aumenta frequenza e contrattilità; nella muscolatura liscia bronchiale e vasale provoca rilasciamento; nel fegato stimola glicogenolisi e gluconeogenesi.",
+    "clinica": "Gli inibitori delle fosfodiesterasi aumentano il cAMP: milrinone (PDE3, insufficienza cardiaca acuta), roflumilast (PDE4, BPCO), teofillina (non selettiva). Il sildenafil inibisce invece la PDE5, che degrada il cGMP."
+  },
+  "proteina chinasi A (PKA)": {
+    "tipo": "enzima",
+    "base": "L'enzima che, acceso dal messaggero, mette «etichette» di fosfato su tante proteine e le fa lavorare in modo diverso.",
+    "superiore": "Chinasi attivata dal cAMP. Trasferisce gruppi fosfato dall'ATP a molte proteine (fosforilazione), cambiandone l'attività.",
+    "universita": "Serin/treonin chinasi (EC 2.7.11.11), tetramero di 2 subunità regolatrici e 2 catalitiche; il legame di 4 cAMP libera le subunità catalitiche. Bersagli: nel cuore canali Ca²⁺ di tipo L, fosfolambano, troponina I e recettore della rianodina; nel fegato glicogeno fosforilasi chinasi (attiva) e glicogeno sintasi (inibita); nel nucleo il fattore di trascrizione CREB. Proteine AKAP la ancorano in punti precisi della cellula.",
+    "clinica": "Mutazioni della subunità regolatrice PRKAR1A causano il complesso di Carney (mixomi cardiaci, lentiggini, tumori endocrini)."
+  },
+  "proteine fosforilate": {
+    "tipo": "molecola",
+    "base": "Proteine a cui è stata attaccata un'«etichetta» di fosfato che le accende o le spegne.",
+    "superiore": "Proteine che hanno ricevuto un gruppo fosfato su un amminoacido (serina, treonina o tirosina). La fosforilazione cambia la loro forma e quindi la loro attività: è uno dei modi principali con cui la cellula regola le proteine.",
+    "universita": "Reazione reversibile: le chinasi aggiungono il fosfato (dall'ATP), le fosfatasi lo tolgono. La carica negativa del fosfato modifica conformazione e interazioni. Nel cardiomiocita la fosforilazione da PKA dei canali Ca²⁺ di tipo L aumenta l'ingresso di Ca²⁺, quella del fosfolambano accelera la ricaptazione nel reticolo (rilasciamento più rapido).",
+    "clinica": ""
+  },
+  "effetto del farmaco": {
+    "tipo": "struttura",
+    "base": "Quello che la medicina fa davvero al corpo: per esempio il cuore che batte più forte.",
+    "superiore": "La risposta dell'organismo al farmaco, misurabile (per esempio frequenza cardiaca, pressione, glicemia). Dipende dalla concentrazione del farmaco vicino al recettore.",
+    "universita": "Relazione concentrazione-effetto descritta dal modello Emax: E = Emax × C / (EC₅₀ + C). Effetti graduati (misurabili su scala continua) e quantali (presente o assente, per esempio guarigione o morte). L'effetto può comparire in ritardo rispetto alla concentrazione (isteresi) o durare oltre il farmaco.",
+    "clinica": "Nell'insufficienza cardiaca acuta la dobutamina (agonista β₁) aumenta la contrattilità; l'effetto si riduce con l'uso continuato per desensibilizzazione dei recettori."
+  },
+  "curva dose-risposta": {
+    "tipo": "struttura",
+    "base": "Un grafico che mostra come cresce l'effetto di una medicina aumentando la dose, fino a un massimo.",
+    "superiore": "Grafico che mette in relazione la dose (o la concentrazione) di un farmaco con l'intensità dell'effetto. Con la dose in scala logaritmica ha forma a S (sigmoide). Permette di confrontare potenza ed efficacia dei farmaci.",
+    "universita": "Emax = efficacia massima; EC₅₀ (o DE₅₀) = concentrazione o dose che dà il 50% dell'effetto massimo, indice di potenza; la pendenza indica quanto rapidamente l'effetto cresce. Curva quantale: percentuale di individui che rispondono a ogni dose; da essa si ricavano DE₅₀, DT₅₀ e DL₅₀ e l'indice terapeutico (DT₅₀/DE₅₀). Gli antagonisti competitivi spostano la curva a destra; i non competitivi abbassano l'Emax.",
+    "clinica": "Un farmaco più potente non è necessariamente migliore: conta l'efficacia massima e la finestra terapeutica. Farmaci a basso indice terapeutico (digossina, litio, warfarin, aminoglicosidi) richiedono monitoraggio."
+  },
+  "curva spostata a destra": {
+    "tipo": "struttura",
+    "base": "Con un bloccante «che fa a gara» con la medicina serve più medicina per avere lo stesso effetto, ma alla fine l'effetto si raggiunge.",
+    "superiore": "Effetto di un antagonista competitivo sulla curva dose-risposta dell'agonista: serve una concentrazione più alta di agonista (la EC₅₀ aumenta), ma l'effetto massimo è uguale (antagonismo sormontabile).",
+    "universita": "Il rapporto tra le EC₅₀ con e senza antagonista (dose ratio) è 1 + [A]/K_A (equazione di Schild). Il grafico di Schild permette di calcolare l'affinità dell'antagonista (pA₂). Lo spostamento è parallelo.",
+    "clinica": "Nel sovradosaggio di oppioidi il naloxone sposta a destra la curva della morfina; nell'intossicazione da β-bloccanti servono dosi molto alte di agonisti β o, in alternativa, glucagone."
+  },
+  "antagonista competitivo": {
+    "tipo": "molecola",
+    "base": "Una medicina che occupa la serratura senza aprirla, e così impedisce alla chiave giusta di entrare.",
+    "superiore": "Farmaco che si lega allo stesso sito dell'agonista senza attivare il recettore (affinità senza efficacia). Il blocco è reversibile e si supera aumentando la dose di agonista.",
+    "universita": "Sposta a destra in modo parallelo la curva dose-risposta dell'agonista senza ridurre l'Emax. L'effetto dipende dalla concentrazione di agonista endogeno (tono): per esempio il propranololo rallenta poco il cuore a riposo ma molto durante lo sforzo. Esempi: propranololo, atropina, naloxone, losartan, antistaminici (in realtà agonisti inversi).",
+    "clinica": "Atropina nell'intossicazione da organofosfati, naloxone nel sovradosaggio di oppioidi, flumazenil per le benzodiazepine. Dopo la sospensione di un antagonista cronico (per esempio un β-bloccante) i recettori aumentati possono dare un effetto rimbalzo."
+  },
+  "effetto massimo ridotto": {
+    "tipo": "struttura",
+    "base": "Con certi bloccanti, anche aumentando molto la medicina, l'effetto non arriva più al massimo.",
+    "superiore": "Effetto di un antagonista non competitivo o irreversibile: l'Emax dell'agonista diminuisce e non si recupera aumentando la dose (antagonismo non sormontabile).",
+    "universita": "Se ci sono recettori di riserva, l'antagonista irreversibile all'inizio sposta la curva a destra e solo quando la riserva è esaurita abbassa l'Emax. Il recupero richiede la sintesi di nuovi recettori.",
+    "clinica": ""
+  },
+  "antagonista non competitivo": {
+    "tipo": "molecola",
+    "base": "Un bloccante che rompe o incastra la serratura: anche con tanta medicina-chiave non si riesce più ad aprirla del tutto.",
+    "superiore": "Farmaco che riduce l'effetto dell'agonista legandosi in modo irreversibile al sito attivo oppure in un sito diverso (allosterico). Il blocco non si supera aumentando l'agonista.",
+    "universita": "Irreversibili: legame covalente (fenossibenzamina sui recettori α). Allosterici negativi: si legano a un sito diverso e riducono affinità o efficacia dell'agonista. Diversi dai bloccanti di canale «incompetitivi», che agiscono solo sul recettore aperto (ketamina e memantina sul recettore NMDA).",
+    "clinica": "Fenossibenzamina: preparazione all'intervento per feocromocitoma, perché un blocco α non sormontabile protegge dalle grandi scariche di catecolamine."
+  },
+  "recettore desensibilizzato": {
+    "tipo": "molecola",
+    "base": "Una serratura «stanca»: dopo essere stata aperta troppe volte risponde meno.",
+    "superiore": "Recettore che risponde meno dopo una stimolazione prolungata o ripetuta. È una delle cause della tolleranza ai farmaci.",
+    "universita": "Desensibilizzazione rapida (minuti): fosforilazione da GRK, legame della β-arrestina, disaccoppiamento dalla proteina G. Internalizzazione in vescicole rivestite di clatrina (minuti-ore), poi riciclo in membrana o degradazione nei lisosomi. Down-regulation (ore-giorni): meno recettori. Il fenomeno opposto (up-regulation) segue l'uso cronico di antagonisti.",
+    "clinica": "Tolleranza a nitrati, oppioidi e β₂-agonisti; tachifilassi della efedrina (per esaurimento del mediatore). Up-regulation dei recettori β dopo β-bloccanti cronici: non sospenderli bruscamente (tachicardia, angina)."
+  },
+  "GRK e β-arrestina": {
+    "tipo": "enzima",
+    "base": "Due proteine che «spengono» la serratura quando è stata usata troppo.",
+    "superiore": "Le chinasi dei recettori accoppiati a proteine G (GRK) fosforilano il recettore attivo; la β-arrestina si attacca al recettore fosforilato, lo stacca dalla proteina G e lo porta dentro la cellula.",
+    "universita": "GRK (EC 2.7.11.16): serin/treonin chinasi che riconoscono solo il recettore nella forma attiva (desensibilizzazione omologa); GRK2 è reclutata dalle subunità βγ. Le β-arrestine (1 e 2) bloccano l'accoppiamento con la proteina G, collegano il recettore alla clatrina per l'endocitosi e avviano segnali propri (per esempio MAP chinasi). Gli agonisti «biased» sfruttano la differenza tra via G e via arrestina.",
+    "clinica": "Nello scompenso cardiaco GRK2 è aumentata e contribuisce alla ridotta risposta dei recettori β₁. Si è cercato di sviluppare oppioidi che attivano poco la via della β-arrestina (oliceridina) per ridurre gli effetti collaterali."
+  },
+  "recettore GABA-A": {
+    "tipo": "molecola",
+    "base": "Una porta sui neuroni che, quando si apre, calma il cervello: su di lei agiscono molti tranquillanti.",
+    "superiore": "Recettore-canale per lo ione cloruro (Cl⁻) attivato dal GABA, il principale neurotrasmettitore inibitorio del cervello. Il Cl⁻ che entra rende il neurone meno eccitabile.",
+    "universita": "Canale ionico pentamerico (di solito 2α, 2β, 1γ). Siti allosterici: benzodiazepine (tra α e γ: aumentano la frequenza di apertura), barbiturici (aumentano la durata; ad alte dosi lo aprono da soli), neurosteroidi, anestetici generali (propofol, etomidato), etanolo. Lo zolpidem preferisce le subunità α1.",
+    "clinica": "Benzodiazepine: ansia, insonnia, crisi epilettiche, astinenza da alcol; con oppioidi o alcol aumenta il rischio di depressione respiratoria. Antidoto delle benzodiazepine: flumazenil (antagonista)."
+  },
+  "recettore dell'insulina": {
+    "tipo": "molecola",
+    "base": "La «serratura» sulle cellule a cui si attacca l'insulina per far entrare lo zucchero.",
+    "superiore": "Recettore di membrana con attività enzimatica (tirosin-chinasi). Quando lega l'insulina si attiva e trasmette all'interno della cellula il segnale che fa entrare il glucosio e fa costruire glicogeno, grassi e proteine.",
+    "universita": "Dimero (αβ)₂ legato da ponti disolfuro, presente già in forma dimerica senza ligando; le subunità α extracellulari legano l'insulina, le β hanno il dominio tirosin-chinasico. Autofosforilazione e fosforilazione dei substrati IRS → PI3K → Akt (effetti metabolici: GLUT4, glicogeno sintasi) e via Ras-MAP chinasi (effetti sulla crescita). Spento da fosfatasi (PTP1B) e internalizzazione.",
+    "clinica": "Insulino-resistenza: obesità, diabete di tipo 2, sindrome dell'ovaio policistico (spesso con acanthosis nigricans). Mutazioni del recettore: sindromi rare di grave insulino-resistenza (leprecaunismo, sindrome di Rabson-Mendenhall)."
+  },
+  "recettori nucleari": {
+    "tipo": "molecola",
+    "base": "Serrature che stanno dentro la cellula, vicino al DNA: quando si aprono accendono o spengono dei geni.",
+    "superiore": "Recettori presenti nel citoplasma o nel nucleo, attivati da sostanze che attraversano la membrana (ormoni steroidei, ormoni tiroidei, vitamina D, acido retinoico). Funzionano come fattori di trascrizione: regolano quali geni vengono letti.",
+    "universita": "Struttura: dominio di legame al ligando, dominio di legame al DNA con «dita di zinco», domini di attivazione. Si legano a sequenze di risposta sul DNA, spesso come omodimeri (recettori steroidei) o eterodimeri con RXR (tiroideo, vitamina D, PPAR, PXR). Effetti lenti (ore) perché richiedono sintesi di proteine.",
+    "clinica": "Farmaci che agiscono su recettori nucleari: corticosteroidi, tamoxifene (estrogeni), enzalutamide (androgeni), pioglitazone (PPARγ), fibrati (PPARα), levotiroxina. Il PXR media l'induzione dei citocromi P450 da parte di rifampicina e iperico."
+  },
+  "agonista parziale": {
+    "tipo": "molecola",
+    "base": "Una medicina che apre la serratura solo a metà: dà un effetto più piccolo e, insieme, blocca la chiave più forte.",
+    "superiore": "Farmaco che attiva il recettore ma, anche occupando tutti i recettori, non raggiunge l'effetto massimo di un agonista pieno. In presenza di un agonista pieno si comporta come antagonista.",
+    "universita": "Efficacia intrinseca intermedia. L'effetto osservato dipende dal tessuto: con molti recettori di riserva può sembrare un agonista pieno, con pochi recettori un antagonista. Esempi: buprenorfina (μ), vareniclina (nicotinico α4β2), aripiprazolo (D₂), pindololo (β, attività simpaticomimetica intrinseca).",
+    "clinica": "La buprenorfina ha un «effetto tetto» sulla depressione respiratoria (più sicura nella terapia della dipendenza), ma può scatenare astinenza in chi assume altri oppioidi e il naloxone la scalza con difficoltà per la sua alta affinità."
+  },
+  "agonista inverso": {
+    "tipo": "molecola",
+    "base": "Una medicina che non solo blocca la serratura, ma la spinge a funzionare meno di quanto faccia da sola.",
+    "superiore": "Farmaco che si lega al recettore e ne riduce l'attività spontanea (costitutiva), cioè l'attività che il recettore ha anche senza agonista. Produce l'effetto opposto a quello dell'agonista.",
+    "universita": "Nel modello a due stati stabilizza la forma inattiva R. È osservabile solo per recettori con attività costitutiva. Molti farmaci classificati come antagonisti sono in realtà agonisti inversi: antistaminici H₁ e H₂, alcuni β-bloccanti, molti antipsicotici sui recettori 5-HT₂A e D₂. Esempio storico: le β-carboline sul recettore delle benzodiazepine (effetto ansiogeno).",
+    "clinica": ""
+  },
+  "danno tissutale": {
+    "tipo": "struttura",
+    "base": "Una ferita, un colpo, una scottatura o un'infiammazione: qualcosa che rovina le cellule e fa male.",
+    "superiore": "Lesione dei tessuti (trauma, ustione, infezione, ischemia, intervento chirurgico). Le cellule danneggiate liberano sostanze che attivano i nocicettori e provocano infiammazione.",
+    "universita": "Sostanze liberate o prodotte: K⁺ e ATP dalle cellule rotte, H⁺ (acidosi tissutale), bradichinina (dal chininogeno), prostaglandine (dall'acido arachidonico via fosfolipasi A₂ e COX), istamina e serotonina (mastociti, piastrine), NGF, citochine. Le fibre nocicettive stesse liberano sostanza P e CGRP (infiammazione neurogena).",
+    "clinica": "Dolore nocicettivo (da danno dei tessuti) e dolore neuropatico (da lesione del sistema nervoso) rispondono a farmaci diversi: il neuropatico risponde poco ai FANS e meglio a gabapentinoidi, antidepressivi triciclici e duloxetina."
+  },
+  "cicloossigenasi (COX-1 e COX-2)": {
+    "tipo": "enzima",
+    "base": "Gli enzimi che producono le sostanze del dolore e della febbre: le medicine come l'ibuprofene li bloccano.",
+    "superiore": "Enzimi che trasformano l'acido arachidonico in prostaglandine e trombossano. La COX-1 è sempre presente (protegge lo stomaco, fa funzionare le piastrine); la COX-2 aumenta nell'infiammazione.",
+    "universita": "Prostaglandina H sintasi (EC 1.14.99.1), con attività ciclossigenasica e perossidasica: acido arachidonico → PGG₂ → PGH₂, poi sintasi specifiche danno PGE₂, PGI₂ (endotelio), TXA₂ (piastrine), PGD₂, PGF₂α. COX-1 costitutiva; COX-2 inducibile da citochine, ma costitutiva anche in rene e SNC. L'aspirina acetila in modo irreversibile la serina del sito attivo.",
+    "clinica": "FANS non selettivi (ibuprofene, naprossene, diclofenac, ketoprofene): rischio di ulcera ed emorragia gastrointestinale, danno renale, ritenzione idrica. Coxib (celecoxib, etoricoxib): meno danno gastrico, ma rischio cardiovascolare trombotico. Aspirina a basse dosi: antiaggregante per blocco del TXA₂ piastrinico."
+  },
+  "acido arachidonico": {
+    "tipo": "molecola",
+    "smiles": "CCCCC/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O",
+    "base": "Un grasso delle membrane delle cellule da cui il corpo produce le sostanze dell'infiammazione.",
+    "superiore": "Acido grasso polinsaturo omega-6 con 20 atomi di carbonio e 4 doppi legami. È legato ai fosfolipidi delle membrane; quando viene liberato si trasforma in prostaglandine, trombossani e leucotrieni (eicosanoidi).",
+    "universita": "C20:4 ω-6 (doppi legami cis in 5, 8, 11, 14). Liberato dalla fosfolipasi A₂ citosolica (attivata da Ca²⁺ e MAP chinasi). Vie: cicloossigenasi → prostanoidi; 5-lipossigenasi → leucotrieni; citocromi P450 → acidi epossieicosatrienoici. Deriva dall'acido linoleico della dieta.",
+    "clinica": "I corticosteroidi riducono la liberazione di acido arachidonico (inibiscono indirettamente la fosfolipasi A₂ e l'espressione della COX-2); i FANS bloccano solo la via della COX."
+  },
+  "prostaglandine": {
+    "tipo": "molecola",
+    "base": "Sostanze prodotte dove c'è una ferita o un'infiammazione: rendono i nervi più sensibili al dolore e fanno venire la febbre.",
+    "superiore": "Molecole lipidiche (eicosanoidi) prodotte dall'acido arachidonico tramite la cicloossigenasi. Agiscono vicino a dove sono prodotte: causano dolore, febbre, vasodilatazione; proteggono anche la mucosa dello stomaco e regolano il flusso di sangue nel rene.",
+    "universita": "PGE₂: sensibilizza i nocicettori (recettori EP, aumento di cAMP che modifica i canali TRPV1 e Nav1.8), febbre (ipotalamo), vasodilatazione, protezione gastrica (meno acido, più muco e bicarbonato). PGI₂ (prostaciclina): vasodilatazione, inibisce le piastrine. PGF₂α: contrazione uterina. Emivita brevissima.",
+    "clinica": "Analoghi delle prostaglandine: misoprostolo (protezione gastrica, uso ostetrico), latanoprost (glaucoma), alprostadil (mantenere pervio il dotto arterioso). I FANS, al contrario, favoriscono la chiusura del dotto arterioso: si usano nel neonato pretermine (indometacina, ibuprofene) e sono controindicati nel terzo trimestre di gravidanza."
+  },
+  "nocicettore": {
+    "tipo": "struttura",
+    "base": "Le terminazioni dei nervi che sentono il dolore: sono gli «allarmi» del corpo.",
+    "superiore": "Terminazioni nervose libere che si attivano con stimoli dannosi o potenzialmente dannosi: calore o freddo intensi, pressione forte, sostanze chimiche. Il loro corpo cellulare si trova nei gangli delle radici dorsali.",
+    "universita": "Recettori molecolari: TRPV1 (calore oltre circa 43 °C, capsaicina, H⁺), TRPA1 (irritanti), TRPM8 (freddo), ASIC (acidi), P2X3 (ATP), canali meccanosensibili (Piezo2 per il tatto, meccanocettori ad alta soglia). Generazione del potenziale tramite canali Nav1.7, Nav1.8, Nav1.9. Sensibilizzazione periferica da prostaglandine, bradichinina, NGF (iperalgesia, allodinia).",
+    "clinica": "Mutazioni con perdita di funzione di Nav1.7 (gene SCN9A): insensibilità congenita al dolore; con guadagno di funzione: eritromelalgia. Capsaicina topica ad alta concentrazione (desensibilizza TRPV1) nel dolore neuropatico localizzato."
+  },
+  "bradichinina": {
+    "tipo": "molecola",
+    "base": "Una piccola sostanza che si forma nelle ferite e fa sentire dolore e gonfiare i tessuti.",
+    "superiore": "Peptide di 9 amminoacidi prodotto nel sangue e nei tessuti durante l'infiammazione. Attiva i nocicettori (dolore), dilata i vasi e li rende permeabili.",
+    "universita": "Prodotta dal chininogeno ad alto peso molecolare per azione della callicreina plasmatica. Recettori B₂ (costitutivo) e B₁ (inducibile nell'infiammazione), accoppiati a Gq. Stimola la produzione di prostaglandine e NO. Degradata dall'enzima di conversione dell'angiotensina (ACE, chininasi II) e dalla neprilisina.",
+    "clinica": "Gli ACE-inibitori aumentano la bradichinina: tosse secca e angioedema. Angioedema ereditario (deficit di C1-inibitore): eccesso di bradichinina; si tratta con icatibant (antagonista B₂) o concentrato di C1-inibitore, non con antistaminici o adrenalina."
+  },
+  "fibre Aδ e C": {
+    "tipo": "struttura",
+    "base": "I «fili» dei nervi che portano il dolore: alcuni veloci (la fitta), altri lenti (il dolore che resta).",
+    "superiore": "Fibre nervose sensitive del dolore. Le fibre Aδ sono sottili e mielinizzate: portano velocemente il primo dolore, pungente e ben localizzato. Le fibre C sono amieliniche e lente: portano il secondo dolore, sordo, bruciante e diffuso.",
+    "universita": "Aδ: diametro circa 1-5 μm, velocità circa 5-30 m/s. C: diametro inferiore a 1 μm, velocità inferiore a 2 m/s; la maggior parte sono polimodali. Terminano nelle lamine I, II (sostanza gelatinosa) e V del corno dorsale. Neurotrasmettitori: glutammato (risposta rapida, recettori AMPA) e neuropeptidi come sostanza P e CGRP (fibre C).",
+    "clinica": "Gli anestetici locali bloccano prima le fibre piccole: il dolore scompare prima del tatto e della forza. La teoria del cancello (Melzack e Wall): la stimolazione delle fibre Aβ del tatto riduce il dolore, base del sollievo dello sfregamento e della TENS."
+  },
+  "sostanza P": {
+    "tipo": "molecola",
+    "base": "Un piccolo messaggero che i nervi del dolore usano per passare il segnale al midollo spinale.",
+    "superiore": "Neuropeptide di 11 amminoacidi (tachichinina) liberato dalle fibre C nel midollo spinale e nei tessuti. Trasmette il dolore e causa infiammazione neurogena (vasodilatazione, gonfiore).",
+    "universita": "Agisce sul recettore NK1 (accoppiato a Gq). Nel corno dorsale contribuisce alla sensibilizzazione centrale insieme al glutammato sui recettori NMDA. Nei centri del vomito (area postrema e nucleo del tratto solitario) media nausea e vomito.",
+    "clinica": "Antagonisti del recettore NK1 (aprepitant, fosaprepitant) prevengono il vomito da chemioterapia. Gli oppioidi riducono la liberazione di sostanza P dalle fibre C."
+  },
+  "tratto spinotalamico": {
+    "tipo": "struttura",
+    "base": "La «strada» dentro il midollo spinale che porta al cervello i messaggi di dolore e di caldo e freddo.",
+    "superiore": "Via ascendente del midollo spinale (sistema anterolaterale) che porta al talamo le informazioni di dolore, temperatura e tatto grossolano. Le fibre incrociano sul lato opposto già nel midollo.",
+    "universita": "Primo neurone nel ganglio della radice dorsale; secondo neurone nel corno dorsale (lamine I e V), con assone che incrocia nella commissura bianca anteriore e sale nel cordone anterolaterale; terzo neurone nel nucleo ventrale postero-laterale del talamo, che proietta alla corteccia somatosensoriale. Vie parallele: spinoreticolare e spinomesencefalica (componenti di allerta ed emotive).",
+    "clinica": "Sindrome di Brown-Séquard (emisezione del midollo): perdita di dolore e temperatura dal lato opposto e di tatto fine, propriocezione e forza dallo stesso lato. Siringomielia: perdita «a mantellina» di dolore e temperatura per lesione delle fibre che incrociano. La cordotomia è un intervento storico per il dolore oncologico."
+  },
+  "corteccia somatosensoriale": {
+    "tipo": "struttura",
+    "base": "La parte del cervello che capisce dove ci stanno toccando o dove ci fa male.",
+    "superiore": "Area della corteccia cerebrale nel giro postcentrale del lobo parietale. Riceve dal talamo tatto, dolore, temperatura e posizione, ordinati come una mappa del corpo (homunculus sensitivo).",
+    "universita": "Corteccia somatosensoriale primaria S1 (aree di Brodmann 3, 1, 2) e secondaria S2: localizzazione e intensità del dolore. La componente affettiva (quanto è spiacevole) dipende da corteccia cingolata anteriore e insula; la corteccia prefrontale modula attenzione e aspettativa. La rete di aree attivate dal dolore è spesso chiamata «pain matrix».",
+    "clinica": "Le lesioni di S1 alterano la localizzazione del dolore senza abolirlo. Il dolore centrale (sindrome talamica di Dejerine-Roussy, dopo ictus) è un dolore neuropatico difficile da trattare."
+  },
+  "percezione del dolore": {
+    "tipo": "struttura",
+    "base": "Il momento in cui il cervello ci fa sentire «ahi!»: il dolore diventa una sensazione.",
+    "superiore": "Il dolore è un'esperienza sensoriale ed emotiva spiacevole, associata a un danno reale o potenziale. Nasce nel cervello: la nocicezione (il segnale nei nervi) diventa dolore solo quando arriva alla corteccia.",
+    "universita": "Componenti: sensoriale-discriminativa (S1, S2), affettivo-motivazionale (cingolo anteriore, insula, amigdala), cognitiva (prefrontale). Il dolore è modulato da attenzione, emozioni, aspettative (effetto placebo, mediato in parte da oppioidi endogeni) e dalle vie discendenti. Dolore acuto (allarme utile) e cronico (oltre 3 mesi, spesso con sensibilizzazione centrale).",
+    "clinica": "Il dolore si misura con scale di autovalutazione (NRS da 0 a 10, VAS, scale con volti per i bambini; scale osservazionali per chi non comunica). Nel dolore cronico conta un approccio multimodale (farmaci, fisioterapia, supporto psicologico)."
+  },
+  "recettore μ degli oppioidi": {
+    "tipo": "molecola",
+    "base": "La «serratura» nel cervello e nel midollo su cui agiscono la morfina e gli antidolorifici naturali del corpo.",
+    "superiore": "Recettore degli oppioidi (MOR) presente nel sistema nervoso e nell'intestino. Quando è attivato riduce il dolore, ma provoca anche euforia, sonnolenza, rallentamento del respiro e stitichezza. Gli altri recettori degli oppioidi sono δ e κ.",
+    "universita": "GPCR accoppiato a Gi/o (gene OPRM1). Sedi: corno dorsale, PAG, midollo allungato rostroventromediale, talamo, sistema limbico, centri respiratori del tronco encefalico, plesso mienterico. Effetti: analgesia, euforia e gratificazione (disinibizione dei neuroni dopaminergici dell'area tegmentale ventrale), depressione respiratoria, miosi (nucleo di Edinger-Westphal), nausea (area postrema), stipsi, prurito, ritenzione urinaria. κ: analgesia spinale, disforia, diuresi.",
+    "clinica": "Antagonisti periferici dei recettori μ (metilnaltrexone, naloxegol) trattano la stipsi da oppioidi senza togliere l'analgesia. Il naltrexone orale si usa nella dipendenza da alcol e da oppioidi."
+  },
+  "morfina": {
+    "tipo": "molecola",
+    "base": "Una medicina molto forte contro il dolore, ricavata dal papavero da oppio. Si usa solo con la ricetta del medico.",
+    "superiore": "Alcaloide dell'oppio, capostipite degli analgesici oppioidi. Agonista pieno dei recettori μ: toglie il dolore forte (post-operatorio, oncologico, infarto), ma può causare sonnolenza, nausea, stitichezza, depressione respiratoria, tolleranza e dipendenza.",
+    "universita": "Biodisponibilità orale bassa per il primo passaggio epatico. Metabolismo per glucuronazione (UGT2B7): morfina-3-glucuronide (non analgesica, possibile neuroeccitazione) e morfina-6-glucuronide (più potente della morfina), eliminate dal rene. Libera istamina (prurito, vasodilatazione). Vie: orale, endovenosa, sottocutanea, spinale. Riferimento per confrontare la potenza degli altri oppioidi.",
+    "clinica": "Nell'insufficienza renale si accumula la morfina-6-glucuronide: rischio di sedazione e depressione respiratoria; preferire oppioidi diversi o ridurre e distanziare le dosi. Associare sempre un lassativo nella terapia cronica. In Italia è un farmaco stupefacente soggetto a ricetta speciale."
+  },
+  "proteina Gi/o attivata": {
+    "tipo": "molecola",
+    "base": "La «staffetta» che, accesa dalla morfina, abbassa il volume del segnale del dolore nei neuroni.",
+    "superiore": "Proteina G inibitoria nella forma attiva. La subunità α inibisce l'adenilato ciclasi (meno cAMP); le subunità βγ chiudono i canali del calcio e aprono quelli del potassio.",
+    "universita": "Attivata da recettori μ, δ, κ, α₂-adrenergici, GABA-B, D₂, muscarinici M₂, cannabinoidi CB1. Gβγ: inibizione dei canali Ca²⁺ voltaggio-dipendenti di tipo N e P/Q (meno esocitosi) e apertura dei canali K⁺ GIRK (iperpolarizzazione). È bersaglio della tossina della pertosse, che ADP-ribosila Gαi e la blocca.",
+    "clinica": "Con l'uso cronico di oppioidi la cellula aumenta la produzione di cAMP (superattivazione dell'adenilato ciclasi): alla sospensione il cAMP «rimbalza» e contribuisce ai sintomi di astinenza."
+  },
+  "blocco della trasmissione del dolore": {
+    "tipo": "struttura",
+    "base": "Il segnale del dolore non riesce più a passare bene da un nervo all'altro nel midollo.",
+    "superiore": "Gli oppioidi riducono il passaggio del messaggio di dolore nelle sinapsi del corno dorsale del midollo: meno neurotrasmettitore liberato dalla fibra in arrivo e neurone successivo meno eccitabile.",
+    "universita": "Azione presinaptica: chiusura dei canali Ca²⁺ delle fibre C con minore liberazione di glutammato, sostanza P e CGRP. Azione postsinaptica: apertura dei canali GIRK e iperpolarizzazione del neurone di proiezione. Base dell'analgesia spinale (morfina intratecale o epidurale, efficace a dosi molto più basse che per via sistemica).",
+    "clinica": "Morfina e fentanil per via spinale (intratecale, epidurale) nel parto e nel post-operatorio: rischio di depressione respiratoria tardiva per la diffusione rostrale della morfina, che è idrofila."
+  },
+  "sostanza grigia periacqueduttale (PAG)": {
+    "tipo": "struttura",
+    "base": "Una piccola zona del cervello che funziona da «freno» del dolore, per esempio quando siamo in pericolo e non sentiamo una ferita.",
+    "superiore": "Zona di sostanza grigia del mesencefalo intorno all'acquedotto di Silvio. È il centro principale del sistema discendente che controlla il dolore; è ricca di recettori per gli oppioidi.",
+    "universita": "Riceve da corteccia prefrontale, amigdala e ipotalamo. Proietta al midollo allungato rostroventromediale (nucleo del rafe magno, serotonina) e al locus coeruleus (noradrenalina), che inibiscono i neuroni del corno dorsale. Gli oppioidi inibiscono gli interneuroni GABAergici della PAG (disinibizione). La sua stimolazione elettrica produce analgesia profonda.",
+    "clinica": "Le vie discendenti noradrenergiche e serotoninergiche spiegano l'effetto analgesico di antidepressivi (amitriptilina, duloxetina) e del tramadolo (che inibisce la ricaptazione di noradrenalina e serotonina)."
+  },
+  "analgesia": {
+    "tipo": "struttura",
+    "base": "Quando il dolore se ne va o diventa molto più leggero.",
+    "superiore": "Riduzione o abolizione della sensazione di dolore senza perdita di coscienza. Diversa dall'anestesia, che toglie tutte le sensazioni (locale) o la coscienza (generale).",
+    "universita": "Gli oppioidi agiscono a più livelli: periferico (soprattutto nei tessuti infiammati), spinale (corno dorsale) e sopraspinale (PAG, midollo rostroventromediale, talamo, sistema limbico). Riducono più il dolore sordo e continuo che il dolore acuto e trafittivo. Analgesia multimodale: combinare farmaci con meccanismi diversi per ridurre le dosi di oppioidi.",
+    "clinica": "Nel dolore oncologico si somministrano analgesici a orari fissi, con dosi aggiuntive per il dolore episodico intenso (breakthrough pain). Il paracetamolo associato ai FANS riduce il consumo di oppioidi dopo un intervento."
+  },
+  "depressione respiratoria": {
+    "tipo": "struttura",
+    "base": "Quando il respiro diventa troppo lento e debole: è il pericolo più grave delle medicine come la morfina.",
+    "superiore": "Riduzione della frequenza e della profondità del respiro causata dagli oppioidi (e anche da benzodiazepine, barbiturici, alcol). Il sangue accumula CO₂ e perde ossigeno; nei casi gravi il respiro si ferma.",
+    "universita": "Gli oppioidi agiscono sui recettori μ del complesso pre-Bötzinger e del ponte: rallentano il ritmo e riducono la risposta dei chemocettori all'aumento di CO₂ e alla carenza di O₂. Respiro lento e profondo poi irregolare, fino all'apnea; ipercapnia e acidosi respiratoria. Il rischio aumenta con altri depressori del SNC, nell'anziano, nelle apnee notturne e all'inizio della terapia.",
+    "clinica": "Sedazione crescente precede di solito la depressione respiratoria: va monitorata. Trattamento: stimolare il paziente, ventilare con pallone e maschera, ossigeno e naloxone. L'associazione oppioidi + benzodiazepine aumenta molto il rischio di morte per overdose."
+  },
+  "ripresa del respiro": {
+    "tipo": "struttura",
+    "base": "Il respiro torna normale perché l'antidoto ha tolto la morfina dalle sue serrature.",
+    "superiore": "Ritorno di una respirazione efficace dopo un'intossicazione da oppioidi, grazie al naloxone e al supporto della ventilazione.",
+    "universita": "Il naloxone spiazza l'oppioide dai recettori μ dei centri respiratori: in pochi minuti aumentano frequenza e volume del respiro. L'obiettivo è una ventilazione adeguata, non il risveglio completo, per evitare un'astinenza brusca. Oppioidi a lunga durata (metadone, formulazioni a rilascio prolungato) o molto potenti (fentanil e derivati) possono richiedere dosi ripetute o un'infusione continua.",
+    "clinica": "Dopo la ripresa il paziente va osservato per alcune ore: quando l'effetto del naloxone finisce la depressione respiratoria può tornare (risedazione)."
+  },
+  "naloxone": {
+    "tipo": "molecola",
+    "base": "L'antidoto della morfina e delle droghe come l'eroina: in pochi minuti fa ripartire il respiro.",
+    "superiore": "Antagonista competitivo dei recettori degli oppioidi, soprattutto μ. Scalza l'oppioide dal recettore e annulla i suoi effetti, in particolare la depressione respiratoria. Si somministra per via endovenosa, intramuscolare, sottocutanea o spray nasale.",
+    "universita": "Antagonista puro (senza attività agonista) ad alta affinità. Agisce in 1-2 minuti per via endovenosa; durata d'azione breve, inferiore a quella di molti oppioidi. Biodisponibilità orale molto bassa per il primo passaggio epatico: per questo è aggiunto per bocca a buprenorfina od ossicodone per scoraggiarne l'uso endovenoso. Il naltrexone è un antagonista simile ma attivo per bocca e di lunga durata.",
+    "clinica": "Si titola a piccole dosi ripetute fino a ottenere un respiro adeguato, soprattutto nei pazienti dipendenti o in terapia cronica, in cui una dose piena scatena un'astinenza acuta (agitazione, vomito, dolore). Osservare il paziente per il rischio di risedazione. Lo spray nasale può essere usato anche da non sanitari."
+  },
+  "paracetamolo": {
+    "tipo": "piccola",
+    "smiles": "CC(=O)Nc1ccc(O)cc1",
+    "base": "Una medicina molto comune contro febbre e mal di testa, che di solito non disturba lo stomaco.",
+    "superiore": "Analgesico e antipiretico (acetaminofene). Riduce dolore e febbre ma ha scarso effetto antinfiammatorio. Ben tollerato dallo stomaco e dai reni; è pericoloso per il fegato se si supera la dose massima.",
+    "universita": "Inibisce debolmente le COX, soprattutto nel SNC, dove i perossidi sono bassi; contribuiscono anche il metabolita AM404 (sistema endocannabinoide e TRPV1) e le vie serotoninergiche discendenti. Metabolismo: glucuronazione e solfatazione; una piccola quota via CYP2E1 forma NAPQI, neutralizzato dal glutatione.",
+    "clinica": "Intossicazione: danno epatico che compare dopo 24-72 ore, anche se il paziente all'inizio sta bene; si valuta il rischio con il nomogramma di Rumack-Matthew e si somministra N-acetilcisteina. Rischio maggiore con alcolismo, digiuno, malnutrizione e farmaci induttori."
+  },
+  "FANS": {
+    "tipo": "molecola",
+    "base": "Medicine contro dolore, febbre e infiammazione, come l'ibuprofene e l'aspirina.",
+    "superiore": "Farmaci antinfiammatori non steroidei: bloccano le cicloossigenasi e riducono le prostaglandine. Hanno effetto analgesico, antipiretico e antinfiammatorio. Esempi: ibuprofene, naprossene, diclofenac, ketoprofene, aspirina, celecoxib.",
+    "universita": "Inibitori reversibili e competitivi delle COX (l'aspirina è irreversibile). Non selettivi (COX-1 e COX-2) o COX-2 selettivi (coxib). Molto legati all'albumina. Effetti collaterali da blocco della COX-1 (stomaco, piastrine) e delle prostaglandine renali (ritenzione di sodio e acqua, riduzione del filtrato, iperkaliemia). Effetto tetto sull'analgesia.",
+    "clinica": "Evitare o usare con cautela in: ulcera o sanguinamento gastrointestinale, insufficienza renale, scompenso cardiaco, terzo trimestre di gravidanza, terapia con anticoagulanti. Con ACE-inibitori o sartani e diuretici aumentano il rischio di danno renale acuto («triple whammy»). Gastroprotezione con inibitori di pompa nei pazienti a rischio."
+  },
+  "codeina": {
+    "tipo": "molecola",
+    "base": "Un antidolorifico oppioide leggero che il fegato trasforma in parte in morfina.",
+    "superiore": "Oppioide debole, alcaloide dell'oppio. È un profarmaco: agisce soprattutto perché il fegato ne trasforma una piccola parte in morfina. Si usa per il dolore moderato (spesso con paracetamolo) e come sedativo della tosse.",
+    "universita": "O-demetilazione a morfina tramite CYP2D6; la parte maggiore è glucuronata o trasformata da CYP3A4 in norcodeina. Affinità per i recettori μ molto bassa. Effetto variabile per il polimorfismo genetico di CYP2D6: i metabolizzatori lenti hanno poca analgesia, gli ultrarapidi molta morfina.",
+    "clinica": "Controindicata sotto i 12 anni e nelle madri che allattano: casi di depressione respiratoria mortale nei metabolizzatori ultrarapidi. Gli inibitori di CYP2D6 (fluoxetina, paroxetina, bupropione) ne riducono l'effetto."
+  },
+  "tramadolo": {
+    "tipo": "molecola",
+    "base": "Un antidolorifico di forza media, in parte oppioide.",
+    "superiore": "Analgesico per dolore moderato con doppio meccanismo: debole agonista dei recettori μ (soprattutto grazie al suo metabolita) e inibitore della ricaptazione di noradrenalina e serotonina.",
+    "universita": "Miscela racemica: un enantiomero inibisce la ricaptazione della serotonina, l'altro della noradrenalina; il metabolita O-desmetiltramadolo, prodotto da CYP2D6, è molto più affine ai recettori μ. Effetto in parte antagonizzato dal naloxone.",
+    "clinica": "Abbassa la soglia convulsiva; con antidepressivi SSRI, SNRI, IMAO o triptani rischio di sindrome serotoninergica; può dare ipoglicemia e iponatriemia. Nausea e vertigini frequenti. Effetto variabile con il genotipo CYP2D6."
+  },
+  "fentanil": {
+    "tipo": "molecola",
+    "base": "Un oppioide sintetico potentissimo, usato in anestesia e per il dolore forte; molto pericoloso se usato come droga.",
+    "superiore": "Oppioide sintetico agonista pieno dei recettori μ, circa 50-100 volte più potente della morfina. Molto liposolubile: agisce rapidamente. Si usa in anestesia, per il dolore oncologico (cerotti transdermici) e per gli accessi di dolore (formulazioni nasali e transmucosali).",
+    "universita": "Derivato fenilpiperidinico. L'alta liposolubilità permette passaggio rapido della barriera ematoencefalica e assorbimento attraverso la cute e le mucose. Metabolismo epatico da CYP3A4 a norfentanil inattivo: utile nell'insufficienza renale. Dopo infusioni prolungate la durata aumenta (accumulo nei tessuti, emivita sensibile al contesto). Ad alte dosi rapide endovena: rigidità della parete toracica.",
+    "clinica": "Gli inibitori del CYP3A4 (claritromicina, azoli, ritonavir) aumentano i livelli con rischio di depressione respiratoria. Il calore sul cerotto aumenta l'assorbimento. Il fentanil illecito e i suoi analoghi sono oggi una causa principale di morte per overdose in Nord America: possono servire più dosi di naloxone."
+  },
+  "ossicodone": {
+    "tipo": "molecola",
+    "base": "Un antidolorifico oppioide forte, che si prende per bocca.",
+    "superiore": "Oppioide semisintetico agonista dei recettori μ, per il dolore forte. Per bocca ha una biodisponibilità più alta della morfina. Esiste anche in formulazioni a rilascio prolungato e in associazione con naloxone o paracetamolo.",
+    "universita": "Metabolizzato soprattutto da CYP3A4 (noroxicodone) e in minor parte da CYP2D6 (ossimorfone, attivo). Biodisponibilità orale circa 60-87%. L'associazione con naloxone a rilascio prolungato riduce la stipsi, perché il naloxone per bocca blocca i recettori intestinali ma è quasi tutto eliminato al primo passaggio epatico.",
+    "clinica": "Interazioni con inibitori e induttori del CYP3A4. Le formulazioni a rilascio prolungato non vanno frantumate o masticate (liberazione rapida di tutta la dose). È stato uno dei farmaci centrali nella crisi degli oppioidi negli Stati Uniti."
+  },
+  "endorfine": {
+    "tipo": "molecola",
+    "base": "Gli «antidolorifici naturali» che il nostro corpo produce, per esempio durante lo sport o quando siamo spaventati.",
+    "superiore": "Peptidi oppioidi endogeni prodotti dal sistema nervoso e dall'ipofisi. Si legano agli stessi recettori della morfina e riducono il dolore. Fanno parte di una famiglia con encefaline e dinorfine.",
+    "universita": "β-endorfina: deriva dalla proopiomelanocortina (POMC), come l'ACTH; agisce soprattutto sui recettori μ. Encefaline (da proencefalina, recettori δ e μ) e dinorfine (da prodinorfina, recettori κ). Liberate da stress, dolore ed esercizio intenso; modulano dolore, gratificazione e risposta allo stress. Degradate rapidamente dalle peptidasi.",
+    "clinica": "L'analgesia da stress e una parte dell'effetto placebo sono ridotte dal naloxone. Il racecadotril (antidiarroico) inibisce l'encefalinasi e aumenta le encefaline intestinali."
+  },
+  "glucochinasi": {
+    "tipo": "enzima",
+    "base": "L'enzima che fa da «sensore dello zucchero» nel pancreas e nel fegato.",
+    "superiore": "Forma di esochinasi (esochinasi IV) presente nelle cellule β del pancreas e nel fegato. Fosforila il glucosio a glucosio 6-fosfato con velocità proporzionale alla glicemia.",
+    "universita": "Transferasi (EC 2.7.1.2). Bassa affinità per il glucosio (S₀,₅ circa 8 mM, nel range della glicemia), cinetica sigmoide, non inibita dal glucosio 6-fosfato. Nel fegato è trattenuta nel nucleo dalla proteina regolatrice GKRP a digiuno e si sposta nel citoplasma dopo il pasto; l'insulina ne aumenta la sintesi. Nella cellula β determina la soglia di glicemia per la secrezione di insulina.",
+    "clinica": "Mutazioni eterozigoti inattivanti (gene GCK): MODY 2, iperglicemia a digiuno lieve e stabile, di solito senza bisogno di terapia. Mutazioni omozigoti: diabete neonatale permanente. Mutazioni attivanti: iperinsulinismo congenito con ipoglicemia."
+  },
+  "canale K-ATP (SUR1/Kir6.2)": {
+    "tipo": "molecola",
+    "base": "Una piccola porta della cellula del pancreas che si chiude quando c'è tanto zucchero e così fa uscire l'insulina.",
+    "superiore": "Canale del potassio sensibile all'ATP nella membrana della cellula β. Quando l'ATP aumenta si chiude: il potassio non esce, la cellula si depolarizza e libera insulina. È il bersaglio delle sulfoniluree.",
+    "universita": "Ottamero formato da 4 subunità Kir6.2 (poro, chiuso dall'ATP) e 4 subunità SUR1 (recettore delle sulfoniluree, trasportatore ABC regolatore, attivato da Mg-ADP). Le sulfoniluree e le glinidi si legano a SUR1 e lo chiudono; il diazossido lo apre. In cuore e muscolo liscio esistono isoforme diverse (SUR2A, SUR2B).",
+    "clinica": "Mutazioni attivanti di KCNJ11 o ABCC8: diabete neonatale, trattabile spesso con sulfoniluree al posto dell'insulina. Mutazioni inattivanti: iperinsulinismo congenito (ipoglicemie gravi nel neonato), trattato con diazossido."
+  },
+  "depolarizzazione della cellula β": {
+    "tipo": "energia",
+    "base": "Il cambiamento elettrico nella cellula del pancreas che dà il via all'uscita dell'insulina.",
+    "superiore": "Riduzione della differenza di potenziale ai lati della membrana della cellula β, dovuta alla chiusura dei canali K-ATP. Apre i canali del calcio e fa partire la secrezione di insulina.",
+    "universita": "A riposo il potenziale è circa −70 mV, mantenuto dal K⁺ in uscita attraverso i canali K-ATP. Con la glicemia alta i canali si chiudono e la membrana si depolarizza; partono scariche di potenziali d'azione dovuti al Ca²⁺. L'acetilcolina (vagale) e il GLP-1 (via cAMP) amplificano la risposta.",
+    "clinica": "Le sulfoniluree depolarizzano la cellula β anche con glicemia bassa: rischio di ipoglicemia, specie negli anziani, in caso di pasti saltati o insufficienza renale."
+  },
+  "esocitosi dei granuli di insulina": {
+    "tipo": "struttura",
+    "base": "Il momento in cui i «pacchetti» di insulina si aprono e la versano nel sangue.",
+    "superiore": "Fusione dei granuli di secrezione con la membrana della cellula β e liberazione del loro contenuto (insulina, peptide C) nel sangue. È scatenata dall'ingresso di ioni calcio.",
+    "universita": "Il Ca²⁺ attiva le proteine SNARE (sinaptotagmina come sensore). Secrezione bifasica: prima fase rapida (circa 10 minuti, granuli già pronti vicino alla membrana) e seconda fase prolungata (reclutamento di nuovi granuli, vie di amplificazione). Gli ormoni incretinici GLP-1 e GIP la potenziano tramite cAMP, PKA ed EPAC. Le catecolamine (recettori α₂) e la somatostatina la inibiscono.",
+    "clinica": "Nel diabete di tipo 2 la prima fase è tra le prime a ridursi. L'effetto incretinico (più insulina dopo glucosio per bocca che endovena) è ridotto nel diabete di tipo 2."
+  },
+  "cellula β del pancreas": {
+    "tipo": "struttura",
+    "base": "Le cellule del pancreas che producono l'insulina.",
+    "superiore": "Cellule endocrine delle isole di Langerhans del pancreas, circa il 60-70% delle cellule dell'isola. Producono insulina (e amilina). Le altre cellule dell'isola producono glucagone (α), somatostatina (δ) e polipeptide pancreatico.",
+    "universita": "Sintesi della preproinsulina nel reticolo endoplasmatico rugoso; nel Golgi e nei granuli le proormone convertasi tagliano la proinsulina in insulina e peptide C. Il glucosio entra con GLUT1 (uomo) e attiva la secrezione tramite glucochinasi, aumento di ATP, chiusura dei canali K-ATP e ingresso di Ca²⁺. Ricca di recettori per GLP-1.",
+    "clinica": "Diabete di tipo 1: distruzione autoimmune (autoanticorpi anti-GAD, anti-IA2, anti-insulina, anti-ZnT8). Diabete di tipo 2: progressivo calo di funzione e massa delle cellule β su un fondo di insulino-resistenza. Insulinoma: tumore delle cellule β con ipoglicemie a digiuno."
+  },
+  "peptide C": {
+    "tipo": "molecola",
+    "base": "Un pezzetto che si stacca quando il pancreas prepara l'insulina: misurarlo dice quanta insulina produce davvero il corpo.",
+    "superiore": "Peptide di collegamento tra le catene A e B nella proinsulina. Viene liberato nel sangue insieme all'insulina, in quantità uguali.",
+    "universita": "31 amminoacidi. Non viene estratto dal fegato (a differenza dell'insulina, in gran parte rimossa al primo passaggio) e ha emivita più lunga: riflette meglio la secrezione endogena. Eliminato dal rene.",
+    "clinica": "Peptide C basso con insulina alta: insulina iniettata dall'esterno (ipoglicemia fittizia). Peptide C alto con ipoglicemia: insulinoma o assunzione di sulfoniluree. Peptide C molto basso: suggerisce diabete di tipo 1 o deficit avanzato delle cellule β."
+  },
+  "IRS-1 fosforilato": {
+    "tipo": "molecola",
+    "base": "Una proteina che, accesa dal recettore dell'insulina, passa il messaggio alle altre proteine della cellula.",
+    "superiore": "Substrato 1 del recettore dell'insulina, fosforilato su residui di tirosina. Fa da piattaforma che richiama e attiva altre proteine del segnale, in particolare la PI3-chinasi.",
+    "universita": "Proteina adattatrice con dominio PH e PTB e molti siti di fosforilazione su tirosina, riconosciuti dai domini SH2 della subunità regolatrice p85 della PI3K e di Grb2 (via Ras-MAPK). IRS-1 è prevalente nel muscolo, IRS-2 nel fegato e nella cellula β. La fosforilazione su serina (da chinasi attivate da TNF-α, acidi grassi e mTOR/S6K) lo inibisce: meccanismo molecolare dell'insulino-resistenza.",
+    "clinica": "Nell'obesità l'infiammazione del tessuto adiposo e l'eccesso di acidi grassi aumentano la fosforilazione inibitoria su serina di IRS-1, riducendo la risposta all'insulina."
+  },
+  "Akt (proteina chinasi B)": {
+    "tipo": "enzima",
+    "base": "L'enzima che, acceso dall'insulina, porta le «porte per lo zucchero» sulla superficie della cellula.",
+    "superiore": "Chinasi attivata dalla via dell'insulina (PI3-chinasi). Fa spostare il trasportatore GLUT4 in membrana, stimola la sintesi di glicogeno e proteine e favorisce la sopravvivenza della cellula.",
+    "universita": "Serin/treonin chinasi (EC 2.7.11.1) reclutata in membrana dal PIP₃ prodotto dalla PI3K, attivata dalla fosforilazione da PDK1 e mTORC2. Bersagli: AS160 (TBC1D4), che libera la traslocazione di GLUT4; GSK-3, inibita (glicogeno sintasi attiva); FOXO1, esclusa dal nucleo (meno geni della gluconeogenesi); mTORC1 (sintesi proteica). La fosfatasi PTEN si oppone alla via.",
+    "clinica": "La via PI3K-Akt-mTOR è spesso iperattiva nei tumori (mutazioni di PIK3CA, perdita di PTEN): bersaglio di farmaci come alpelisib, capivasertib ed everolimus, che possono causare iperglicemia."
+  },
+  "GLUT4": {
+    "tipo": "molecola",
+    "base": "Le «porte per lo zucchero» dei muscoli e del grasso, che si aprono quando arriva l'insulina.",
+    "superiore": "Trasportatore del glucosio insulino-dipendente, presente nel muscolo scheletrico, nel cuore e nel tessuto adiposo. Senza insulina sta in vescicole dentro la cellula; con l'insulina va in membrana e fa entrare il glucosio per diffusione facilitata.",
+    "universita": "Gene SLC2A4, 12 segmenti transmembrana; trasporto passivo secondo gradiente. Traslocazione stimolata dall'insulina (via Akt-AS160) e, in modo indipendente, dalla contrazione muscolare (via AMPK e Ca²⁺). Gli altri GLUT: GLUT1 (globuli rossi, barriera ematoencefalica), GLUT2 (fegato, intestino, rene), GLUT3 (neuroni), GLUT5 (fruttosio).",
+    "clinica": "L'esercizio fisico fa entrare glucosio nel muscolo anche senza insulina: per questo riduce la glicemia e migliora l'insulino-resistenza. Nel diabete di tipo 2 la traslocazione di GLUT4 stimolata dall'insulina è ridotta."
+  },
+  "glicemia normale": {
+    "tipo": "struttura",
+    "base": "Il livello giusto di zucchero nel sangue, né troppo alto né troppo basso.",
+    "superiore": "Concentrazione di glucosio nel sangue entro i valori normali. A digiuno è inferiore a 100 mg/dL; si mantiene grazie all'equilibrio tra insulina (la abbassa) e ormoni che la alzano (glucagone, adrenalina, cortisolo, GH).",
+    "universita": "Criteri diagnostici: diabete con glicemia a digiuno ≥ 126 mg/dL (confermata), HbA1c ≥ 6,5% (48 mmol/mol), glicemia ≥ 200 mg/dL a 2 ore dal carico orale di 75 g di glucosio o glicemia casuale ≥ 200 mg/dL con sintomi; alterata glicemia a digiuno 100-125 mg/dL. A digiuno il fegato produce glucosio (glicogenolisi, poi gluconeogenesi); dopo i pasti l'insulina ne favorisce l'ingresso e il deposito.",
+    "clinica": "Gli obiettivi di glicemia ed emoglobina glicata vanno personalizzati: più stretti nei giovani, meno negli anziani fragili. L'ipoglicemia (in genere sotto 70 mg/dL) è il principale rischio di insulina e sulfoniluree."
+  },
+  "metformina": {
+    "tipo": "piccola",
+    "smiles": "CN(C)C(=N)NC(=N)N",
+    "base": "La medicina più usata per il diabete di tipo 2: aiuta il fegato a produrre meno zucchero.",
+    "superiore": "Antidiabetico orale della classe delle biguanidi. È il farmaco di prima scelta nel diabete di tipo 2: riduce la produzione di glucosio da parte del fegato e migliora la sensibilità all'insulina. Da sola non causa ipoglicemia e non fa aumentare di peso.",
+    "universita": "Entra negli epatociti tramite il trasportatore OCT1; inibisce in modo lieve il complesso I della catena respiratoria (e la glicerolfosfato deidrogenasi mitocondriale), aumenta il rapporto AMP/ATP, attiva l'AMPK e riduce la gluconeogenesi. Agisce anche nell'intestino (aumento di GLP-1, modifiche del microbiota). Non metabolizzata, eliminata immodificata dal rene con secrezione tubulare (OCT2, MATE).",
+    "clinica": "Effetti collaterali: disturbi gastrointestinali (ridotti con l'aumento graduale e le formulazioni a rilascio prolungato), carenza di vitamina B₁₂ nell'uso lungo. Acidosi lattica rara, favorita da insufficienza renale grave, ipossia, sepsi, shock: controindicata con eGFR sotto 30 mL/min; sospenderla temporaneamente in caso di disidratazione e intorno alla somministrazione di mezzo di contrasto iodato nei pazienti a rischio."
+  },
+  "sulfoniluree": {
+    "tipo": "molecola",
+    "base": "Medicine per il diabete che spingono il pancreas a produrre più insulina.",
+    "superiore": "Antidiabetici orali (secretagoghi) che stimolano la secrezione di insulina chiudendo i canali K-ATP della cellula β. Esempi attuali: gliclazide, glimepiride, glibenclamide. Funzionano solo se il pancreas produce ancora insulina.",
+    "universita": "Si legano alla subunità SUR1 del canale K-ATP: depolarizzazione, ingresso di Ca²⁺ ed esocitosi indipendente dalla glicemia. Molto legate all'albumina, metabolizzate dal fegato (CYP2C9). Le glinidi (repaglinide) agiscono sullo stesso canale, con azione più rapida e breve.",
+    "clinica": "Rischio principale: ipoglicemia, anche prolungata (soprattutto glibenclamide, negli anziani e nell'insufficienza renale), e aumento di peso. Nel diabete monogenico da mutazioni dei canali K-ATP o di HNF1A (MODY 3) sono molto efficaci."
+  },
+  "GLP-1": {
+    "tipo": "molecola",
+    "base": "Un ormone prodotto dall'intestino dopo il pasto che dice al pancreas di preparare l'insulina e al cervello che siamo sazi.",
+    "superiore": "Glucagon-like peptide-1: ormone incretinico prodotto dalle cellule L dell'ileo e del colon dopo i pasti. Aumenta l'insulina solo se la glicemia è alta, riduce il glucagone, rallenta lo svuotamento dello stomaco e dà sazietà.",
+    "universita": "Deriva dal proglucagone per taglio da parte della proormone convertasi 1/3 (nel pancreas lo stesso precursore dà glucagone). Recettore GLP-1R accoppiato a Gs (aumento di cAMP nella cellula β). Emivita di 1-2 minuti: degradato dalla dipeptidil peptidasi-4 (DPP-4). L'altro ormone incretinico è il GIP.",
+    "clinica": "Base dei farmaci incretinici: agonisti del recettore del GLP-1 (resistenti alla DPP-4) e inibitori della DPP-4 (gliptine). Dopo bypass gastrico il GLP-1 aumenta molto: contribuisce al miglioramento del diabete e talvolta a ipoglicemie dopo i pasti."
+  },
+  "agonisti del recettore del GLP-1": {
+    "tipo": "molecola",
+    "base": "Medicine per il diabete, in iniezione o compresse, che imitano un ormone dell'intestino e aiutano anche a dimagrire.",
+    "superiore": "Farmaci che attivano il recettore del GLP-1 e resistono alla degradazione. Aumentano l'insulina in modo dipendente dal glucosio, riducono il glucagone e l'appetito, fanno perdere peso. Esempi: liraglutide, dulaglutide, semaglutide (anche per bocca); la tirzepatide agisce anche sul recettore del GIP.",
+    "universita": "Modifiche della molecola (sostituzioni di amminoacidi, legame all'albumina tramite catene di acido grasso, fusione con frammenti di anticorpo) prolungano l'emivita fino a una somministrazione settimanale. Agiscono su cellula β, cellula α, stomaco e centri ipotalamici e del tronco encefalico che regolano la fame. Da soli non causano ipoglicemia.",
+    "clinica": "Riducono gli eventi cardiovascolari nei pazienti diabetici con malattia cardiovascolare; indicati anche per l'obesità. Effetti collaterali: nausea, vomito, diarrea (all'inizio), calcoli della colecisti; rari casi di pancreatite. Controindicati con storia personale o familiare di carcinoma midollare della tiroide o MEN2."
+  },
+  "inibitori della DPP-4": {
+    "tipo": "molecola",
+    "base": "Medicine per il diabete in compresse che fanno durare di più l'ormone dell'intestino che aiuta l'insulina.",
+    "superiore": "Antidiabetici orali (gliptine: sitagliptin, vildagliptin, saxagliptin, linagliptin, alogliptin) che bloccano l'enzima DPP-4. Il GLP-1 naturale dura di più e aumenta l'insulina dopo i pasti.",
+    "universita": "Inibiscono la dipeptidil peptidasi-4, una serin-proteasi che taglia GLP-1 e GIP. Aumentano di circa 2-3 volte i livelli di incretine attive. Effetto più modesto degli agonisti del GLP-1; neutri sul peso; non danno ipoglicemia da soli. Linagliptin è eliminato soprattutto con bile e feci.",
+    "clinica": "Ben tollerati, utili negli anziani. Rari: pancreatite, pemfigoide bolloso, dolori articolari; saxagliptin è stato associato a più ricoveri per scompenso cardiaco. Non associarli agli agonisti del GLP-1 (meccanismo sovrapposto)."
+  },
+  "inibitori di SGLT2 (gliflozine)": {
+    "tipo": "molecola",
+    "base": "Medicine per il diabete che fanno uscire lo zucchero in eccesso con la pipì e proteggono cuore e reni.",
+    "superiore": "Antidiabetici orali (dapagliflozin, empagliflozin, canagliflozin) che bloccano il trasportatore SGLT2 del tubulo renale: il glucosio filtrato non viene riassorbito ed esce con le urine. Abbassano la glicemia, il peso e un po' la pressione.",
+    "universita": "SGLT2 è un cotrasportatore Na⁺-glucosio del segmento S1-S2 del tubulo prossimale e riassorbe circa il 90% del glucosio filtrato (il resto SGLT1). Effetto indipendente dall'insulina, minore se il filtrato glomerulare è ridotto. Lieve diuresi osmotica e natriuresi; ripristinano il feedback tubulo-glomerulare riducendo l'iperfiltrazione.",
+    "clinica": "Riducono ospedalizzazioni per scompenso cardiaco e progressione della malattia renale cronica, anche nei non diabetici. Effetti collaterali: infezioni genitali da funghi, disidratazione, chetoacidosi euglicemica (sospenderle prima di interventi chirurgici e in malattie acute), rara fascite necrotizzante del perineo (gangrena di Fournier)."
+  },
+  "pioglitazone": {
+    "tipo": "molecola",
+    "base": "Una medicina per il diabete che rende le cellule più sensibili all'insulina.",
+    "superiore": "Antidiabetico orale della classe dei tiazolidinedioni (glitazoni). Riduce l'insulino-resistenza agendo soprattutto sul tessuto adiposo, sul muscolo e sul fegato.",
+    "universita": "Agonista del recettore nucleare PPARγ: modifica l'espressione di geni del metabolismo dei lipidi e del glucosio, favorisce la differenziazione degli adipociti sottocutanei, sposta gli acidi grassi dal fegato e dal muscolo al tessuto adiposo, aumenta l'adiponectina. Effetto lento (settimane).",
+    "clinica": "Effetti collaterali: aumento di peso, ritenzione idrica ed edema (controindicato nello scompenso cardiaco), fratture ossee, possibile lieve aumento del rischio di cancro della vescica. Migliora la steatoepatite non alcolica."
+  },
+  "analoghi rapidi dell'insulina": {
+    "tipo": "molecola",
+    "base": "Insuline che agiscono in fretta, da fare prima dei pasti.",
+    "superiore": "Insuline modificate (lispro, aspart, glulisina) che vengono assorbite più velocemente dell'insulina umana regolare. Si iniettano sotto la pelle subito prima dei pasti per coprire l'aumento di glicemia dopo mangiato (insulina prandiale).",
+    "universita": "Piccole modifiche degli amminoacidi della catena B (per esempio inversione di prolina e lisina in B28-B29 nella lispro) riducono la formazione di esameri: assorbimento rapido, inizio in circa 10-15 minuti, picco a 1-2 ore, durata 3-5 ore. Usate anche nei microinfusori.",
+    "clinica": "Insieme a un'insulina basale formano lo schema basal-bolus del diabete di tipo 1. Rischio principale: ipoglicemia. L'insulina regolare per via endovenosa è usata nella chetoacidosi diabetica e nell'iperkaliemia (con glucosio)."
+  },
+  "analoghi basali dell'insulina": {
+    "tipo": "molecola",
+    "base": "Insuline che agiscono piano piano per tutto il giorno, come una piccola quantità sempre presente.",
+    "superiore": "Insuline modificate a lunga durata d'azione (glargine, detemir, degludec) che imitano la piccola secrezione continua del pancreas tra i pasti e di notte. Si iniettano una volta (a volte due) al giorno.",
+    "universita": "Meccanismi di prolungamento: la glargine precipita in microcristalli al pH del sottocute; detemir e degludec hanno una catena di acido grasso che li lega all'albumina (la degludec forma anche multiesameri nel sottocute). Profilo quasi piatto, senza picco, durata circa 24 ore (oltre 40 ore per la degludec). L'insulina NPH è un'insulina umana intermedia, con picco.",
+    "clinica": "Nel diabete di tipo 2 si aggiunge spesso un'insulina basale serale alla terapia orale quando l'emoglobina glicata non è controllata. Rispetto alla NPH danno meno ipoglicemie notturne."
+  },
+  "azoto atmosferico (N₂)": {
+    "tipo": "piccola",
+    "smiles": "N#N",
+    "base": "Il gas più abbondante dell'aria che respiriamo; ci serve, ma da solo non riusciamo a usarlo.",
+    "superiore": "Azoto molecolare: gas incolore che forma circa il 78% dell'atmosfera. I due atomi sono uniti da un triplo legame molto stabile; solo alcuni batteri, i fulmini e l'industria riescono a romperlo per renderlo utilizzabile dai viventi.",
+    "universita": "Energia del triplo legame circa 945 kJ/mol: la reazione con H₂ è termodinamicamente favorevole ma lentissima senza catalizzatore. L'atmosfera è la riserva principale di azoto del pianeta; la quantità di azoto «reattivo» (non N₂) disponibile per i viventi limita la produttività di molti ecosistemi.",
+    "clinica": "Nella malattia da decompressione dei subacquei l'azoto sciolto nei tessuti forma bolle durante una risalita troppo veloce; ad alte pressioni l'azoto ha anche effetto narcotico (narcosi da azoto)."
+  },
+  "batteri azotofissatori": {
+    "tipo": "struttura",
+    "base": "Piccoli batteri, alcuni dei quali vivono nelle radici dei fagioli e dei piselli, che riescono a prendere l'azoto dall'aria e a trasformarlo in cibo per le piante.",
+    "superiore": "Microrganismi che trasformano l'azoto atmosferico (N₂) in ammoniaca grazie all'enzima nitrogenasi. Alcuni vivono liberi nel suolo o nell'acqua (Azotobacter, cianobatteri come Anabaena), altri in simbiosi con le radici delle leguminose (Rhizobium) nei noduli radicali.",
+    "universita": "Nitrogenasi: complesso ferro-proteina e molibdeno-ferro-proteina (cofattore FeMo); N₂ + 8 H⁺ + 8 e⁻ + 16 ATP → 2 NH₃ + H₂ + 16 ADP + 16 Pi. Irreversibilmente inattivata da O₂: protezione con leghemoglobina nei noduli (lega O₂ e lo fornisce per la respirazione dei batteroidi), eterocisti nei cianobatteri, respirazione molto intensa in Azotobacter. Simbiosi: la pianta fornisce zuccheri, il batterio ammonio. Anche Frankia (attinomiceti) con l'ontano.",
+    "clinica": ""
+  },
+  "ammonio (NH₄⁺)": {
+    "tipo": "piccola",
+    "smiles": "[NH4+]",
+    "base": "Una forma di azoto sciolta nel terreno che le piante possono usare come nutrimento.",
+    "superiore": "Ione positivo formato dall'ammoniaca (NH₃) che lega un H⁺. Nel suolo deriva dalla fissazione dell'azoto e dalla decomposizione dei resti organici; le piante lo assorbono e lo usano per produrre amminoacidi. Si lega facilmente alle argille del suolo.",
+    "universita": "Equilibrio NH₃ + H⁺ ⇌ NH₄⁺ (pKa circa 9,25): a pH fisiologico e del suolo prevale NH₄⁺. Assimilato con la glutammina sintetasi (glutammato + NH₄⁺ + ATP → glutammina) e la glutammato sintasi (ciclo GS-GOGAT). Nei suoli aerati viene ossidato rapidamente a nitrato.",
+    "clinica": "Nell'uomo l'ammoniaca è tossica per il cervello: nell'insufficienza epatica e nei difetti del ciclo dell'urea l'iperammoniemia causa encefalopatia. Lattulosio e rifaximina riducono la produzione e l'assorbimento intestinale di ammoniaca."
+  },
+  "batteri nitrosanti (Nitrosomonas)": {
+    "tipo": "struttura",
+    "base": "Batteri del terreno che trasformano l'ammonio in un'altra forma di azoto (nitrito), usando l'ossigeno.",
+    "superiore": "Batteri chemioautotrofi del suolo e delle acque che ossidano l'ammonio a nitrito: è la prima tappa della nitrificazione. Ricavano energia da questa ossidazione e fissano la CO₂ per crescere.",
+    "universita": "Enzimi: ammoniaca monoossigenasi (NH₃ → idrossilammina) e idrossilammina ossidoriduttasi (→ NO₂⁻). Generi: Nitrosomonas, Nitrosospira; nei suoli acidi e negli oceani sono molto importanti gli archei ammonio-ossidanti (Nitrososphaera). Aerobi obbligati; liberano piccole quantità di N₂O. Alcuni batteri (Nitrospira «comammox») fanno entrambe le tappe della nitrificazione.",
+    "clinica": ""
+  },
+  "nitrito (NO₂⁻)": {
+    "tipo": "piccola",
+    "smiles": "[O-]N=O",
+    "base": "Una forma intermedia di azoto nel terreno, che i batteri trasformano subito in nitrato.",
+    "superiore": "Ione dell'acido nitroso, intermedio della nitrificazione e della denitrificazione. Nel suolo non si accumula perché viene rapidamente ossidato a nitrato. È tossico per molti organismi.",
+    "universita": "Lo stato di ossidazione dell'azoto è +3 (ammonio −3, nitrato +5). Nella denitrificazione è ridotto a NO dalla nitrito reduttasi. Nell'organismo umano si forma anche dalla riduzione del nitrato da parte dei batteri della bocca e può generare NO.",
+    "clinica": "I nitriti ossidano il ferro dell'emoglobina: metaemoglobinemia (cianosi con saturimetria inaffidabile), trattata con blu di metilene. Il nitrito di sodio è usato come conservante delle carni e, in medicina, come antidoto del cianuro. Nitriti nelle urine (test con striscia): segno di infezione urinaria da batteri che riducono il nitrato, come E. coli."
+  },
+  "batteri nitricanti (Nitrobacter)": {
+    "tipo": "struttura",
+    "base": "Batteri del terreno che finiscono il lavoro: trasformano il nitrito in nitrato, il cibo preferito delle piante.",
+    "superiore": "Batteri chemioautotrofi che ossidano il nitrito a nitrato: è la seconda tappa della nitrificazione. Come i nitrosanti, sono aerobi e ricavano energia dall'ossidazione.",
+    "universita": "Enzima: nitrito ossidoriduttasi (NO₂⁻ + H₂O → NO₃⁻ + 2 H⁺ + 2 e⁻). Generi: Nitrobacter, Nitrospira (prevalente in molti suoli e negli impianti di depurazione). Lavorano in coppia con i nitrosanti, così il nitrito non si accumula.",
+    "clinica": ""
+  },
+  "nitrato (NO₃⁻)": {
+    "tipo": "piccola",
+    "smiles": "[O-][N+](=O)[O-]",
+    "base": "La forma di azoto che le piante preferiscono assorbire dal terreno; è il principale ingrediente di molti concimi.",
+    "superiore": "Ione dell'acido nitrico, prodotto finale della nitrificazione. È la principale fonte di azoto per la maggior parte delle piante. Essendo molto solubile e con carica negativa non viene trattenuto dal suolo e la pioggia lo porta nelle falde e nei fiumi.",
+    "universita": "Assorbito dalle radici con trasportatori NRT (simporto con H⁺); ridotto a nitrito dalla nitrato reduttasi (citoplasma, con NAD(P)H) e ad ammonio dalla nitrito reduttasi (cloroplasto, con ferredossina). È anche accettore di elettroni nella denitrificazione. L'eccesso nelle acque causa eutrofizzazione (crescita eccessiva di alghe, poi carenza di ossigeno).",
+    "clinica": "Acqua di pozzo ricca di nitrati: rischio di metaemoglobinemia nei lattanti (sindrome del «bambino blu»). I nitrati organici (nitroglicerina, isosorbide) sono farmaci diversi: liberano NO e dilatano i vasi nell'angina."
+  },
+  "radici delle piante": {
+    "tipo": "struttura",
+    "base": "La parte sotto terra della pianta: tiene ferma la pianta e beve acqua e sali minerali dal terreno.",
+    "superiore": "Organo della pianta che la ancora al suolo e assorbe acqua e sali minerali (nitrati, fosfati, potassio). La superficie di assorbimento è aumentata dai peli radicali e spesso dalle micorrize (simbiosi con funghi).",
+    "universita": "L'acqua segue le vie apoplastica e simplastica fino alla banda del Caspary dell'endoderma, che obbliga i soluti a passare attraverso le membrane (assorbimento selettivo). I minerali entrano con trasportatori attivi alimentati dal gradiente di H⁺ (H⁺-ATPasi). Le leguminose formano noduli con Rhizobium; le micorrize arbuscolari migliorano soprattutto l'assorbimento del fosfato.",
+    "clinica": ""
+  },
+  "consumatori": {
+    "tipo": "struttura",
+    "base": "Gli animali (e altri esseri viventi) che non sanno fabbricarsi il cibo e lo prendono mangiando piante o altri animali.",
+    "superiore": "Organismi eterotrofi che ottengono energia e materia nutrendosi di altri organismi. Si dividono in consumatori primari (erbivori), secondari (carnivori che mangiano erbivori) e terziari; gli onnivori mangiano a più livelli.",
+    "universita": "Solo una parte dell'energia ingerita diventa nuova biomassa (produzione secondaria): il resto è perso con feci e urina o respirato. L'efficienza di trasferimento tra livelli trofici è in media intorno al 10% (varia circa dal 5 al 20%). Gli endotermi (mammiferi, uccelli) spendono in respirazione molta più energia degli ectotermi.",
+    "clinica": ""
+  },
+  "decompositori": {
+    "tipo": "struttura",
+    "base": "Batteri e funghi che «mangiano» foglie secche, animali morti e rifiuti e li trasformano di nuovo in terra fertile.",
+    "superiore": "Organismi (soprattutto batteri e funghi) che demoliscono la sostanza organica morta e la trasformano in sostanze inorganiche: CO₂, acqua, ammonio e altri sali minerali. Chiudono i cicli della materia.",
+    "universita": "Digestione extracellulare con enzimi secreti (cellulasi, ligninasi dei funghi basidiomiceti, proteasi, ureasi); assorbimento dei prodotti. Mineralizzazione dell'azoto (ammonificazione), del fosforo e dello zolfo. La velocità dipende da temperatura, umidità, ossigeno e rapporto carbonio/azoto dei resti. In assenza di O₂ la decomposizione è incompleta (torbiere, sedimenti).",
+    "clinica": ""
+  },
+  "batteri denitrificanti": {
+    "tipo": "struttura",
+    "base": "Batteri dei terreni bagnati e senza aria che rimandano l'azoto nell'atmosfera.",
+    "superiore": "Batteri anaerobi facoltativi (per esempio Pseudomonas e Paracoccus) che, in assenza di ossigeno, usano il nitrato per la respirazione e lo trasformano in azoto gassoso (N₂). Riportano l'azoto nell'atmosfera e lo tolgono al suolo.",
+    "universita": "Respirazione anaerobica con nitrato come accettore finale di elettroni: NO₃⁻ → NO₂⁻ → NO → N₂O → N₂ (nitrato, nitrito, ossido nitrico e protossido di azoto reduttasi). Favorita da suoli saturi d'acqua, ricchi di sostanza organica e di nitrato. Un'altra via di perdita di azoto è l'anammox (ammonio + nitrito → N₂), importante negli oceani. Sfruttata negli impianti di depurazione per togliere l'azoto dalle acque.",
+    "clinica": ""
+  },
+  "protossido di azoto (N₂O)": {
+    "tipo": "piccola",
+    "smiles": "[N-]=[N+]=O",
+    "base": "Un gas che esce dai terreni concimati e contribuisce a scaldare il pianeta; in medicina si usa come «gas esilarante».",
+    "superiore": "Ossido di azoto gassoso prodotto da denitrificazione e nitrificazione, soprattutto in suoli molto concimati. È un potente gas serra e danneggia lo strato di ozono.",
+    "universita": "Potenziale di riscaldamento globale circa 270-300 volte quello della CO₂ su 100 anni; vita media in atmosfera di oltre un secolo. Le attività agricole (fertilizzanti azotati, letame) sono la principale fonte umana. Oggi è la principale sostanza emessa che riduce l'ozono stratosferico.",
+    "clinica": "In medicina è un anestetico inalatorio debole e analgesico (antagonista NMDA), usato in miscela con ossigeno, per esempio nel parto e in odontoiatria. L'uso ripetuto o ricreativo inattiva la vitamina B₁₂: mielopatia (degenerazione combinata subacuta) e anemia megaloblastica."
+  },
+  "processo Haber-Bosch": {
+    "tipo": "struttura",
+    "base": "Il modo in cui le fabbriche producono concimi prendendo l'azoto dall'aria.",
+    "superiore": "Processo industriale che sintetizza ammoniaca da azoto atmosferico e idrogeno: N₂ + 3 H₂ → 2 NH₃. Avviene ad alta pressione e alta temperatura con un catalizzatore a base di ferro. Da esso derivano quasi tutti i fertilizzanti azotati.",
+    "universita": "Condizioni tipiche: circa 150-300 bar e 400-500 °C. L'idrogeno è ricavato soprattutto dal gas naturale (steam reforming), con grandi consumi di energia ed emissioni di CO₂. Ha permesso di aumentare enormemente la produzione di cibo: una parte rilevante dell'azoto nelle proteine dell'umanità proviene da questo processo. L'eccesso di azoto reattivo causa eutrofizzazione, emissioni di N₂O e inquinamento da nitrati.",
+    "clinica": ""
+  },
+  "fulmini": {
+    "tipo": "energia",
+    "base": "Le scariche elettriche dei temporali: la loro energia unisce l'azoto e l'ossigeno dell'aria e così concima un po' il terreno.",
+    "superiore": "Scariche elettriche atmosferiche. L'altissima temperatura del canale del fulmine fa reagire N₂ e O₂, formando ossidi di azoto che, sciolti nella pioggia, arrivano al suolo come nitrati.",
+    "universita": "N₂ + O₂ → 2 NO, poi NO → NO₂ → HNO₃ in atmosfera. Contributo alla fissazione globale piccolo rispetto alla fissazione biologica e industriale. Lo stesso tipo di reazione avviene nei motori a combustione e nelle centrali termiche (ossidi di azoto inquinanti, piogge acide).",
+    "clinica": ""
+  },
+  "RuBisCO": {
+    "tipo": "enzima",
+    "base": "L'enzima delle foglie che cattura l'anidride carbonica dell'aria per fabbricare zuccheri. È la proteina più abbondante della Terra.",
+    "superiore": "Ribulosio-1,5-bisfosfato carbossilasi/ossigenasi: enzima dello stroma dei cloroplasti che fissa la CO₂ nel ciclo di Calvin, unendola al ribulosio 1,5-bisfosfato.",
+    "universita": "Liasi (EC 4.1.1.39): RuBP + CO₂ + H₂O → 2 3-fosfoglicerato. Enzima lento (pochi cicli al secondo) e poco selettivo: reagisce anche con O₂ (fotorespirazione), soprattutto a temperatura alta. Le piante C₄ (mais, canna da zucchero) e CAM (cactus) concentrano la CO₂ intorno alla RuBisCO per ridurre la fotorespirazione. Attivata dalla luce (Mg²⁺, pH alcalino dello stroma, RuBisCO attivasi).",
+    "clinica": ""
+  },
+  "luce solare": {
+    "tipo": "energia",
+    "base": "La luce del Sole: è la fonte di energia di quasi tutti gli esseri viventi, perché fa crescere le piante.",
+    "superiore": "Energia elettromagnetica emessa dal Sole. Le piante usano soprattutto la luce visibile (rossa e blu) per la fotosintesi; quasi tutta l'energia degli ecosistemi deriva da essa.",
+    "universita": "La fotosintesi usa la radiazione fotosinteticamente attiva (400-700 nm). Solo una piccola frazione dell'energia solare che raggiunge le piante viene fissata come produzione primaria lorda (in genere intorno all'1-2%). Eccezioni: gli ecosistemi delle sorgenti idrotermali profonde, basati su batteri chemiosintetici.",
+    "clinica": "La radiazione ultravioletta (UVB) della luce solare serve a produrre la vitamina D nella pelle, ma causa anche scottature, invecchiamento cutaneo e tumori della pelle."
+  },
+  "biomassa vegetale": {
+    "tipo": "struttura",
+    "base": "Tutto il «materiale» di cui sono fatte le piante: foglie, legno, radici, frutti e semi.",
+    "superiore": "Quantità di sostanza organica prodotta e contenuta nelle piante. Costituisce la base di energia e materia per tutti gli altri viventi dell'ecosistema.",
+    "universita": "Produzione primaria lorda (carbonio fissato con la fotosintesi) meno respirazione delle piante = produzione primaria netta, disponibile per consumatori e decompositori. Composizione: soprattutto cellulosa, emicellulose e lignina (circa il 50% del peso secco è carbonio). Le foreste contengono la maggior parte del carbonio della vegetazione terrestre.",
+    "clinica": ""
+  },
+  "produttori": {
+    "tipo": "struttura",
+    "base": "Le piante e le alghe: sono i «cuochi» della natura, perché fabbricano da sole il proprio cibo usando la luce del Sole.",
+    "superiore": "Organismi autotrofi che producono sostanza organica a partire da sostanze inorganiche (CO₂, acqua, sali minerali), di solito con la fotosintesi. Sono il primo livello di ogni catena alimentare: piante, alghe, cianobatteri; nelle profondità marine anche batteri chemiosintetici.",
+    "universita": "Fotoautotrofi (energia dalla luce) e chemioautotrofi (energia dall'ossidazione di sostanze inorganiche come H₂S, NH₄⁺, Fe²⁺). Negli oceani il fitoplancton produce circa metà della produzione primaria globale pur avendo una biomassa piccola, perché si rinnova rapidamente. La produzione primaria è limitata da luce, acqua, temperatura e nutrienti (spesso azoto o fosforo).",
+    "clinica": ""
+  },
+  "biomassa animale": {
+    "tipo": "struttura",
+    "base": "Tutto il «materiale» di cui sono fatti gli animali.",
+    "superiore": "Sostanza organica contenuta negli animali, ottenuta mangiando piante o altri animali. A ogni livello della catena alimentare la biomassa in genere diminuisce.",
+    "universita": "Produzione secondaria: la frazione dell'energia assimilata dai consumatori che diventa nuovo tessuto. Sulla Terra la biomassa animale è molto più piccola di quella vegetale (le piante sono la grande maggioranza del carbonio dei viventi). Negli ecosistemi acquatici la piramide della biomassa può essere rovesciata (poco fitoplancton che si rinnova molto in fretta).",
+    "clinica": ""
+  },
+  "resti organici": {
+    "tipo": "struttura",
+    "base": "Foglie secche, rami, animali morti ed escrementi: tutto ciò che resta dei viventi.",
+    "superiore": "Materia organica morta (detrito o necromassa): foglie cadute, legno, cadaveri, feci. È il cibo di detritivori e decompositori, che la trasformano in humus e sali minerali.",
+    "universita": "Negli ecosistemi terrestri la maggior parte della produzione primaria non viene mangiata da erbivori ma entra direttamente nella catena del detrito. Una parte resistente (lignina, composti umici) si accumula come sostanza organica del suolo; in condizioni anaerobiche può formare torba e, su tempi geologici, combustibili fossili.",
+    "clinica": ""
+  },
+  "combustibili fossili": {
+    "tipo": "molecola",
+    "base": "Carbone, petrolio e gas: resti di piante e animali di milioni di anni fa che oggi bruciamo per avere energia.",
+    "superiore": "Sostanze ricche di carbonio formate in milioni di anni dalla trasformazione di resti organici sepolti senza ossigeno: carbone (da vegetali terrestri), petrolio e gas naturale (soprattutto da plancton marino). Bruciando liberano energia e CO₂.",
+    "universita": "Formazione: accumulo di sostanza organica in ambienti anossici, seppellimento, aumento di temperatura e pressione (diagenesi, catagenesi). Sono una riserva del ciclo lento del carbonio: il loro uso trasferisce in atmosfera in pochi secoli carbonio sottratto per milioni di anni. La combustione libera anche ossidi di zolfo e di azoto e particolato.",
+    "clinica": "L'inquinamento atmosferico da combustione (particolato fine PM2,5, ossidi di azoto, ozono) aumenta mortalità cardiovascolare e respiratoria, asma e tumore del polmone."
+  },
+  "sepoltura nei sedimenti": {
+    "tipo": "struttura",
+    "base": "I resti di piante e animali finiscono sotto strati di fango e sabbia e, in milioni di anni, si trasformano.",
+    "superiore": "Processo geologico in cui i resti organici vengono ricoperti da sedimenti in ambienti poveri di ossigeno (paludi, fondali, lagune). Sotto il peso degli strati e con il calore si trasformano lentamente in torba, carbone, petrolio e gas.",
+    "universita": "Solo una piccolissima frazione della produzione primaria sfugge alla decomposizione e viene sepolta. Su scale di milioni di anni la sepoltura di carbonio organico (insieme alla formazione di rocce carbonatiche) ha sottratto CO₂ all'atmosfera e permesso l'accumulo di O₂.",
+    "clinica": ""
+  },
+  "combustione": {
+    "tipo": "energia",
+    "base": "Bruciare qualcosa: il fuoco usa l'ossigeno e libera calore e anidride carbonica.",
+    "superiore": "Reazione rapida di una sostanza con l'ossigeno che libera energia sotto forma di calore e luce. Bruciando sostanze con carbonio (legna, carbone, petrolio, gas) si formano CO₂ e acqua; se l'ossigeno è scarso si forma anche monossido di carbonio (CO).",
+    "universita": "Esempio: CH₄ + 2 O₂ → CO₂ + 2 H₂O. Chimicamente è la stessa ossidazione della respirazione cellulare, ma avviene in un solo passaggio e libera l'energia come calore invece di conservarla in ATP. La combustione dei combustibili fossili e il cambiamento d'uso del suolo sono le principali fonti umane di CO₂.",
+    "clinica": "La combustione incompleta (stufe, caldaie, braceri in ambienti chiusi) produce monossido di carbonio: intossicazione con cefalea, confusione, coma; la saturimetria è falsamente normale; si tratta con ossigeno ad alto flusso o iperbarico."
+  },
+  "oceani": {
+    "tipo": "struttura",
+    "base": "I mari della Terra: assorbono tanta anidride carbonica dall'aria.",
+    "superiore": "Le grandi masse d'acqua salata che coprono circa il 71% della superficie terrestre. Scambiano continuamente CO₂ con l'atmosfera e contengono molto più carbonio dell'aria, soprattutto come bicarbonato.",
+    "universita": "Equilibri: CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻ ⇌ 2 H⁺ + CO₃²⁻. «Pompa di solubilità» (le acque fredde e dense portano la CO₂ in profondità) e «pompa biologica» (il plancton fissa CO₂ e i suoi resti affondano). L'assorbimento di CO₂ antropica ha già ridotto il pH superficiale di circa 0,1 unità rispetto all'epoca preindustriale, con meno ioni carbonato disponibili.",
+    "clinica": ""
+  },
+  "carbonato di calcio (CaCO₃)": {
+    "tipo": "piccola",
+    "smiles": "[Ca+2].[O-]C([O-])=O",
+    "base": "Il materiale bianco di conchiglie, coralli, gusci d'uovo e rocce come il marmo e il calcare.",
+    "superiore": "Sale formato da ioni calcio e carbonato. Costituisce gusci e scheletri di molti organismi marini e le rocce calcaree (calcare, marmo), che sono la più grande riserva di carbonio della Terra.",
+    "universita": "Ca²⁺ + 2 HCO₃⁻ → CaCO₃ + CO₂ + H₂O. Forme cristalline calcite e aragonite. La sua solubilità aumenta con l'acidità e con la pressione: l'acidificazione degli oceani rende più difficile la calcificazione. Il carbonio delle rocce torna in atmosfera con il vulcanismo e l'erosione su tempi geologici.",
+    "clinica": "In medicina il carbonato di calcio si usa come integratore di calcio, antiacido e chelante del fosfato nell'insufficienza renale. L'eccesso di calcio con alcali assorbibili può causare la sindrome latte-alcali."
+  },
+  "organismi calcificanti": {
+    "tipo": "struttura",
+    "base": "Coralli, conchiglie, ricci di mare e piccolissime alghe che si costruiscono una «casa» di calcare.",
+    "superiore": "Organismi che costruiscono gusci o scheletri di carbonato di calcio: coralli, molluschi, echinodermi, foraminiferi e alghe del plancton come i coccolitofori. Alla loro morte i resti si accumulano sul fondo e formano rocce calcaree.",
+    "universita": "La calcificazione richiede acqua sovrassatura di ioni carbonato. Con l'acidificazione oceanica la saturazione cala: gusci più sottili, crescita più lenta; nei coralli si aggiunge lo sbiancamento da aumento della temperatura (perdita delle alghe simbionti zooxantelle). Le scogliere coralline ospitano una grande parte della biodiversità marina.",
+    "clinica": ""
+  },
+  "metano (CH₄)": {
+    "tipo": "piccola",
+    "smiles": "C",
+    "base": "Un gas che si forma nelle paludi e nella pancia delle mucche; è il principale componente del gas da cucina e scalda molto il pianeta.",
+    "superiore": "Il più semplice idrocarburo. Componente principale del gas naturale. Si forma dalla decomposizione senza ossigeno della sostanza organica (paludi, risaie, rumine, discariche). È un gas serra molto più potente della CO₂.",
+    "universita": "Potenziale di riscaldamento globale circa 28-30 volte quello della CO₂ su 100 anni (oltre 80 volte su 20 anni); vita media in atmosfera circa 10-12 anni, rimosso soprattutto dai radicali ossidrile. Fonti: zone umide, allevamenti di ruminanti, risaie, discariche, perdite nell'estrazione di combustibili fossili.",
+    "clinica": "Non è tossico in sé, ma ad alta concentrazione toglie ossigeno all'aria (asfissia) ed è esplosivo. Il metano nell'espirato (con l'idrogeno) si misura nei breath test per la sovracrescita batterica intestinale."
+  },
+  "archei metanogeni": {
+    "tipo": "struttura",
+    "base": "Microrganismi antichissimi che vivono dove non c'è aria e producono metano.",
+    "superiore": "Microrganismi del dominio degli archei, anaerobi stretti, che producono metano. Vivono nei sedimenti delle paludi, nelle risaie, nel rumine dei bovini, nell'intestino umano e negli impianti di biogas.",
+    "universita": "Usano come substrati CO₂ + H₂ (idrogenotrofi), acetato (acetoclastici) o composti metilati; sfruttano i prodotti finali delle fermentazioni batteriche. Coenzimi esclusivi (coenzima M, F₄₂₀, metanofurano); l'enzima finale è la metil-coenzima M reduttasi. Sono l'ultimo anello della decomposizione anaerobica.",
+    "clinica": "Methanobrevibacter smithii è il principale metanogeno dell'intestino umano; la produzione di metano è associata a transito rallentato e stipsi (sovracrescita metanogenica intestinale)."
+  },
+  "incendi e deforestazione": {
+    "tipo": "struttura",
+    "base": "Quando si bruciano o si tagliano i boschi, il carbonio del legno torna nell'aria come anidride carbonica.",
+    "superiore": "Distruzione delle foreste per incendi, agricoltura, allevamento o legname. Libera il carbonio immagazzinato nelle piante e nel suolo e riduce la capacità degli ecosistemi di assorbire CO₂.",
+    "universita": "Il cambiamento d'uso del suolo contribuisce a una quota rilevante (circa un decimo) delle emissioni antropiche di CO₂. Le foreste tropicali e le torbiere sono grandi serbatoi di carbonio; il loro degrado può trasformarle da serbatoi in sorgenti. Effetti anche sul ciclo dell'acqua e sulla biodiversità.",
+    "clinica": "Il fumo degli incendi (particolato fine) peggiora asma e BPCO e aumenta i ricoveri per malattie cardiorespiratorie anche a grande distanza."
+  },
+  "clorofilla": {
+    "tipo": "molecola",
+    "base": "Il colore verde delle foglie: cattura la luce del Sole per fabbricare il cibo della pianta.",
+    "superiore": "Pigmento verde dei cloroplasti che assorbe la luce (soprattutto rossa e blu) e ne usa l'energia per la fotosintesi. Riflette il verde, per questo le foglie sono verdi.",
+    "universita": "Anello porfirinico (clorina) con un atomo di Mg²⁺ al centro e una lunga coda idrofoba di fitolo che la ancora alle membrane dei tilacoidi. Clorofilla a (centri di reazione P680 e P700) e b (antenne). Simile all'eme dell'emoglobina, che ha ferro al posto del magnesio. Sintesi richiede azoto e magnesio: la loro carenza fa ingiallire le foglie (clorosi).",
+    "clinica": ""
+  },
+  "consumatori primari (erbivori)": {
+    "tipo": "struttura",
+    "base": "Gli animali che mangiano le piante, come mucche, conigli, cavallette e bruchi.",
+    "superiore": "Organismi che si nutrono direttamente dei produttori: erbivori terrestri, insetti fitofagi, zooplancton che mangia il fitoplancton. Sono il secondo livello trofico.",
+    "universita": "Adattamenti per digerire la cellulosa grazie a microrganismi simbionti: ruminanti (fermentazione nel rumine prima dello stomaco vero) e fermentatori intestinali (cavallo, coniglio: cieco e colon; il coniglio pratica la ciecotrofia). Efficienza di assimilazione più bassa dei carnivori, perché il cibo vegetale è ricco di fibre poco digeribili.",
+    "clinica": ""
+  },
+  "predazione": {
+    "tipo": "struttura",
+    "base": "Quando un animale caccia e mangia un altro animale.",
+    "superiore": "Rapporto tra specie in cui un organismo (predatore) cattura e mangia un altro (preda). Regola il numero delle popolazioni ed è il modo in cui energia e materia passano ai livelli trofici più alti.",
+    "universita": "Le popolazioni di prede e predatori possono oscillare in cicli sfasati (modello di Lotka-Volterra; esempio classico lince e lepre artica). I superpredatori possono controllare l'intero ecosistema dall'alto (cascata trofica: la reintroduzione dei lupi a Yellowstone ha ridotto il pascolo dei cervi e favorito la vegetazione).",
+    "clinica": ""
+  },
+  "consumatori secondari (carnivori)": {
+    "tipo": "struttura",
+    "base": "Gli animali che mangiano gli erbivori, come rane, volpi, ragni e uccelli che mangiano insetti.",
+    "superiore": "Organismi che si nutrono di consumatori primari. Sono il terzo livello trofico. Molti animali sono onnivori e possono stare su più livelli.",
+    "universita": "Il cibo animale è più digeribile: efficienza di assimilazione maggiore rispetto agli erbivori. Gran parte dell'energia assimilata è però spesa in respirazione (movimento, caccia, termoregolazione negli endotermi), per cui la produzione resta circa un decimo di quella del livello inferiore.",
+    "clinica": ""
+  },
+  "consumatori terziari (superpredatori)": {
+    "tipo": "struttura",
+    "base": "Gli animali in cima alla catena, che non vengono mangiati da nessun altro: aquile, lupi, squali, orche.",
+    "superiore": "Predatori che si nutrono di altri carnivori e si trovano all'apice della catena alimentare. Sono pochi e hanno bisogno di territori ampi, perché arriva loro pochissima energia.",
+    "universita": "Le catene alimentari raramente superano 4-5 livelli per la perdita di energia a ogni passaggio. I superpredatori sono particolarmente esposti alla biomagnificazione di sostanze persistenti e liposolubili (mercurio come metilmercurio, DDT, PCB): la concentrazione cresce a ogni livello. Il DDT ha assottigliato i gusci delle uova dei rapaci.",
+    "clinica": "Per il metilmercurio, che si concentra nei grandi pesci predatori (pesce spada, tonno, squalo), si raccomanda alle donne in gravidanza e ai bambini di limitarne il consumo: è tossico per il sistema nervoso in sviluppo."
+  },
+  "detritivori": {
+    "tipo": "struttura",
+    "base": "Piccoli animali come i lombrichi e i millepiedi che mangiano foglie morte e resti, e li sminuzzano.",
+    "superiore": "Organismi che si nutrono di detrito (resti organici morti): lombrichi, millepiedi, onischi, alcuni insetti e crostacei; tra i vertebrati gli animali spazzini come gli avvoltoi. Sminuzzano i resti e facilitano il lavoro dei decompositori.",
+    "universita": "La frammentazione aumenta la superficie esposta a batteri e funghi; i lombrichi rimescolano e aerano il suolo e formano aggregati ricchi di sostanza organica. Distinti dai decompositori (batteri e funghi), che digeriscono all'esterno e mineralizzano. La catena del detrito trasporta la maggior parte dell'energia in molti ecosistemi terrestri.",
+    "clinica": ""
+  },
+  "sali minerali": {
+    "tipo": "piccola",
+    "base": "Piccole sostanze sciolte nel terreno e nell'acqua, come il ferro o il potassio, che servono alle piante per crescere.",
+    "superiore": "Sostanze inorganiche (ioni) disciolte nel suolo e nell'acqua: nitrati, ammonio, fosfati, potassio, calcio, magnesio, ferro e altri. Le piante le assorbono con le radici; derivano dalle rocce e dalla decomposizione dei resti.",
+    "universita": "Macronutrienti delle piante: N, P, K, Ca, Mg, S; micronutrienti: Fe, Mn, Zn, Cu, B, Mo, Cl, Ni. Azoto e fosforo sono spesso i nutrienti limitanti (legge del minimo di Liebig). I concimi NPK forniscono azoto, fosforo e potassio; il loro eccesso nelle acque causa eutrofizzazione.",
+    "clinica": ""
+  },
+  "calore": {
+    "tipo": "energia",
+    "base": "L'energia che si disperde come «caldo» ogni volta che un essere vivente si muove o vive, e che non si può più riusare.",
+    "superiore": "Forma di energia trasferita per differenza di temperatura. In ogni trasformazione di energia, compresa la respirazione cellulare, una parte si disperde come calore: per questo l'energia negli ecosistemi non si ricicla.",
+    "universita": "Secondo principio della termodinamica: ogni trasformazione aumenta l'entropia e degrada parte dell'energia in calore. Nella respirazione cellulare solo circa il 30-40% dell'energia del glucosio è conservata in ATP. Gli endotermi usano questo calore per mantenere costante la temperatura corporea (e la termogenina del tessuto adiposo bruno lo produce apposta).",
+    "clinica": ""
+  },
+  "rete alimentare": {
+    "tipo": "struttura",
+    "base": "Tante catene alimentari intrecciate: ogni animale mangia più cose ed è mangiato da più animali.",
+    "superiore": "Insieme delle catene alimentari collegate tra loro in un ecosistema. Descrive meglio la realtà di una singola catena, perché quasi tutti gli organismi hanno più prede e più predatori.",
+    "universita": "Le reti più ricche di collegamenti tendono a essere più stabili: la scomparsa di una specie può essere compensata. Le specie chiave (keystone species) hanno un effetto sproporzionato rispetto alla loro abbondanza (per esempio la stella marina Pisaster, la lontra marina che controlla i ricci di mare).",
+    "clinica": ""
+  },
+  "piramide ecologica": {
+    "tipo": "struttura",
+    "base": "Un disegno a gradini che mostra che in basso ci sono tantissime piante e in alto pochissimi predatori.",
+    "superiore": "Rappresentazione dei livelli trofici come gradini sovrapposti. Può indicare numero di individui, biomassa o energia. La piramide dell'energia è sempre più larga alla base, perché a ogni passaggio resta circa il 10% dell'energia.",
+    "universita": "Piramide dei numeri (può essere rovesciata: un albero ospita migliaia di insetti), della biomassa (può essere rovesciata negli ecosistemi acquatici) e dell'energia o produttività (mai rovesciata). Implicazione: nutrirsi a un livello trofico più basso richiede meno superficie coltivata per la stessa energia.",
+    "clinica": ""
+  }
+}

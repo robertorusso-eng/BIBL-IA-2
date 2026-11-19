@@ -1,0 +1,962 @@
+[
+ {
+  "id": "NFMA-161",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim (x→2) (x² − 4)/(x − 2)?",
+  "opzioni": {
+   "A": "4",
+   "B": "0",
+   "C": "La forma 0/0, quindi il limite non esiste",
+   "D": "2",
+   "E": "+∞"
+  },
+  "giusta": "A",
+  "perche": "Sostituendo x = 2 si ottiene la forma indeterminata 0/0, che non significa che il limite non esista. Scomponendo il numeratore, (x² − 4)/(x − 2) = (x − 2)(x + 2)/(x − 2) = x + 2 per x ≠ 2, e il limite vale 2 + 2 = 4. Chi risponde 0 si ferma al numeratore.",
+  "semplice": "La frazione non si può calcolare proprio in x = 2, ma avvicinandosi a 2 dà numeri sempre più vicini a 4. Semplificando si vede subito.",
+  "passaggi": [
+   "Sostituisci x = 2: ottieni 0/0, forma indeterminata",
+   "Scomponi: x² − 4 = (x − 2)(x + 2)",
+   "Semplifica per x ≠ 2: rimane x + 2",
+   "Calcola: lim (x→2) (x + 2) = 4"
+  ],
+  "concetto": "forma indeterminata 0/0"
+ },
+ {
+  "id": "NFMA-162",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim (x→0) sin(3x)/x?",
+  "opzioni": {
+   "A": "1",
+   "B": "3",
+   "C": "0",
+   "D": "1/3",
+   "E": "Non esiste"
+  },
+  "giusta": "B",
+  "perche": "Si usa il limite notevole lim (t→0) sin t / t = 1. Scrivendo sin(3x)/x = 3 · sin(3x)/(3x) e ponendo t = 3x, che tende a 0, il limite vale 3 · 1 = 3. Chi risponde 1 applica il limite notevole senza adattare il denominatore.",
+  "semplice": "Per x molto piccolo sin(3x) è quasi uguale a 3x, quindi la frazione è quasi 3x/x = 3.",
+  "passaggi": [
+   "Ricorda il limite notevole: sin t / t → 1 per t → 0",
+   "Riscrivi: sin(3x)/x = 3 · sin(3x)/(3x)",
+   "Con t = 3x → 0, sin(3x)/(3x) → 1",
+   "Risultato: 3 · 1 = 3"
+  ],
+  "concetto": "limite notevole del seno"
+ },
+ {
+  "id": "NFMA-163",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim (x→+∞) (3x² + 1)/(2x² − x)?",
+  "opzioni": {
+   "A": "+∞",
+   "B": "0",
+   "C": "3/2",
+   "D": "3",
+   "E": "−1"
+  },
+  "giusta": "C",
+  "perche": "Numeratore e denominatore sono polinomi dello stesso grado: il limite all'infinito è il rapporto dei coefficienti dei termini di grado massimo, 3/2. Dividendo tutto per x² si ottiene (3 + 1/x²)/(2 − 1/x), che tende a 3/2. Si ha +∞ solo se il grado del numeratore è maggiore, 0 se è minore.",
+  "semplice": "Quando x è enorme contano solo i termini più grandi: 3x² sopra e 2x² sotto. Il rapporto si avvicina a 3/2.",
+  "passaggi": [
+   "Riconosci la forma ∞/∞ con polinomi dello stesso grado",
+   "Dividi numeratore e denominatore per x²",
+   "Ottieni (3 + 1/x²)/(2 − 1/x)",
+   "I termini con x al denominatore tendono a 0: il limite è 3/2"
+  ],
+  "concetto": "limite di funzioni razionali all'infinito"
+ },
+ {
+  "id": "NFMA-164",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim (x→+∞) (1 + 1/x)ˣ?",
+  "opzioni": {
+   "A": "1",
+   "B": "+∞",
+   "C": "0",
+   "D": "e",
+   "E": "1/e"
+  },
+  "giusta": "D",
+  "perche": "È il limite notevole che definisce il numero di Nepero, e ≈ 2,718. Si presenta nella forma indeterminata 1^∞: la base tende a 1 ma l'esponente cresce senza limite, e i due effetti si bilanciano. Rispondere 1 significa considerare solo la base, ignorando l'esponente.",
+  "semplice": "È come un capitale con interesse del 100% capitalizzato sempre più spesso: non cresce all'infinito, ma si avvicina a circa 2,718 volte il capitale iniziale.",
+  "passaggi": [
+   "Riconosci la forma indeterminata 1^∞",
+   "Ricorda il limite notevole lim (1 + 1/x)ˣ = e",
+   "Escludi 1: considera solo la base",
+   "Resta la D"
+  ],
+  "concetto": "limite notevole del numero e"
+ },
+ {
+  "id": "NFMA-165",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim (x→0) (1 − cos x)/x²?",
+  "opzioni": {
+   "A": "0",
+   "B": "1",
+   "C": "2",
+   "D": "+∞",
+   "E": "1/2"
+  },
+  "giusta": "E",
+  "perche": "È un limite notevole: (1 − cos x)/x² → 1/2. Si può verificare moltiplicando per (1 + cos x): si ottiene sin²x/(x²·(1 + cos x)), dove sin²x/x² → 1 e 1/(1 + cos x) → 1/2. Il valore 0 deriva dal limite (1 − cos x)/x, che ha x al primo grado.",
+  "semplice": "Vicino a zero il coseno vale circa 1 − x²/2, quindi 1 − cos x è circa x²/2: diviso x² fa 1/2.",
+  "passaggi": [
+   "Riconosci la forma 0/0",
+   "Moltiplica e dividi per (1 + cos x): ottieni sin²x/(x²(1 + cos x))",
+   "sin²x/x² → 1 e 1/(1 + cos x) → 1/2",
+   "Risultato: 1/2"
+  ],
+  "concetto": "limite notevole del coseno"
+ },
+ {
+  "id": "NFMA-166",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quando una funzione f è continua in un punto x₀ del suo dominio?",
+  "opzioni": {
+   "A": "Quando lim (x→x₀) f(x) esiste finito ed è uguale a f(x₀)",
+   "B": "Quando f(x₀) esiste",
+   "C": "Quando il limite destro e quello sinistro esistono",
+   "D": "Quando f è derivabile in un intorno di x₀ escluso x₀",
+   "E": "Quando f(x₀) = 0"
+  },
+  "giusta": "A",
+  "perche": "La definizione richiede tre cose: che f sia definita in x₀, che il limite per x → x₀ esista finito e che coincida con f(x₀). Non basta che f(x₀) esista (la funzione segno è definita in 0 ma non continua), né che esistano i limiti destro e sinistro se sono diversi tra loro.",
+  "semplice": "Una funzione è continua in un punto se il suo grafico passa da lì senza salti o buchi: si può disegnare senza staccare la penna.",
+  "passaggi": [
+   "Ricorda la definizione di continuità",
+   "Servono: f(x₀) definita, limite finito, limite uguale a f(x₀)",
+   "Escludi C: limiti destro e sinistro possono essere diversi (salto)",
+   "Resta la A"
+  ],
+  "concetto": "definizione di continuità"
+ },
+ {
+  "id": "NFMA-167",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Che tipo di discontinuità presenta in x = 1 la funzione f(x) = (x² − 1)/(x − 1)?",
+  "opzioni": {
+   "A": "Di prima specie (salto)",
+   "B": "Eliminabile",
+   "C": "Di seconda specie",
+   "D": "Nessuna: la funzione è continua in x = 1",
+   "E": "Asintoto verticale"
+  },
+  "giusta": "B",
+  "perche": "La funzione non è definita in x = 1, ma per x ≠ 1 coincide con x + 1, quindi il limite per x → 1 esiste finito e vale 2. Una discontinuità con limite finito, in un punto escluso dal dominio o dove il valore è diverso dal limite, si dice eliminabile: ponendo f(1) = 2 si ottiene una funzione continua. Non c'è asintoto perché il limite non è infinito.",
+  "semplice": "Il grafico è la retta y = x + 1 con un solo «buchino» nel punto (1, 2). Basta riempire il buco e la funzione diventa continua.",
+  "passaggi": [
+   "Osserva che f non è definita in x = 1",
+   "Semplifica: per x ≠ 1, f(x) = x + 1",
+   "Il limite per x → 1 vale 2, finito",
+   "Discontinuità eliminabile: resta la B"
+  ],
+  "concetto": "discontinuità eliminabile"
+ },
+ {
+  "id": "NFMA-168",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "La funzione f(x) = x³ + x − 1 vale −1 in x = 0 e 1 in x = 1. Quale teorema garantisce che esiste almeno un punto dell'intervallo (0, 1) in cui f si annulla?",
+  "opzioni": {
+   "A": "Il teorema di Lagrange",
+   "B": "Il teorema di Rolle",
+   "C": "Il teorema degli zeri (di Bolzano)",
+   "D": "Il teorema di De l'Hôpital",
+   "E": "Il teorema di Fermat"
+  },
+  "giusta": "C",
+  "perche": "Il teorema degli zeri afferma che una funzione continua su un intervallo chiuso [a, b], che assume valori di segno opposto agli estremi, si annulla in almeno un punto interno. Qui f è un polinomio, quindi continua, e f(0)·f(1) < 0. Rolle e Lagrange riguardano la derivata, non gli zeri della funzione.",
+  "semplice": "Se una strada continua parte sotto il livello del mare e arriva sopra, deve per forza passare almeno una volta esattamente per il livello zero.",
+  "passaggi": [
+   "Verifica la continuità: f è un polinomio",
+   "Verifica i segni agli estremi: f(0) = −1 < 0, f(1) = 1 > 0",
+   "Il teorema degli zeri garantisce uno zero interno",
+   "Escludi A e B, che riguardano la derivata: resta la C"
+  ],
+  "concetto": "teorema degli zeri"
+ },
+ {
+  "id": "NFMA-169",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quanto vale lim (x→+∞) (√(x² + x) − x)?",
+  "opzioni": {
+   "A": "0",
+   "B": "+∞",
+   "C": "1",
+   "D": "1/2",
+   "E": "−1/2"
+  },
+  "giusta": "D",
+  "perche": "È una forma indeterminata ∞ − ∞. Moltiplicando e dividendo per √(x² + x) + x si ottiene x/(√(x² + x) + x); dividendo per x si ha 1/(√(1 + 1/x) + 1), che tende a 1/(1 + 1) = 1/2. Rispondere 0 significa trascurare il termine x sotto radice, che invece conta.",
+  "semplice": "Per x grandissimo √(x² + x) è circa x + 1/2, quindi la differenza con x si avvicina a un mezzo, non a zero.",
+  "passaggi": [
+   "Riconosci la forma ∞ − ∞",
+   "Razionalizza: (x² + x − x²)/(√(x² + x) + x) = x/(√(x² + x) + x)",
+   "Dividi per x: 1/(√(1 + 1/x) + 1)",
+   "Per x → +∞: 1/(1 + 1) = 1/2"
+  ],
+  "concetto": "forma indeterminata ∞ − ∞"
+ },
+ {
+  "id": "NFMA-170",
+  "materia": "Matematica",
+  "argomento": "Limiti e continuità",
+  "livello": "superiori",
+  "domanda": "Quali asintoti ha la funzione f(x) = (2x + 1)/(x − 3)?",
+  "opzioni": {
+   "A": "Solo l'asintoto verticale x = 3",
+   "B": "Asintoto verticale x = −1/2 e orizzontale y = 3",
+   "C": "Asintoto obliquo y = 2x + 1",
+   "D": "Asintoto verticale x = 2 e orizzontale y = 3",
+   "E": "Asintoto verticale x = 3 e orizzontale y = 2"
+  },
+  "giusta": "E",
+  "perche": "Il denominatore si annulla in x = 3 mentre il numeratore vale 7, quindi lim (x→3) f(x) = ±∞: x = 3 è asintoto verticale. Per x → ±∞ il rapporto dei termini di grado massimo dà 2x/x = 2, quindi y = 2 è asintoto orizzontale. x = −1/2 è lo zero della funzione, non un asintoto.",
+  "semplice": "Vicino a x = 3 il denominatore diventa piccolissimo e la funzione «esplode»; molto lontano la funzione si comporta come 2x/x, cioè quasi 2.",
+  "passaggi": [
+   "Cerca gli zeri del denominatore: x = 3, dove il numeratore vale 7 ≠ 0",
+   "Quindi x = 3 è asintoto verticale",
+   "Calcola il limite all'infinito: 2x/x → 2, asintoto orizzontale y = 2",
+   "Resta la E"
+  ],
+  "concetto": "asintoti di una funzione razionale"
+ },
+ {
+  "id": "NFMA-171",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = x³ − 5x² + 2?",
+  "opzioni": {
+   "A": "3x² − 10x",
+   "B": "3x² − 10x + 2",
+   "C": "x² − 5x",
+   "D": "3x³ − 10x²",
+   "E": "3x − 10"
+  },
+  "giusta": "A",
+  "perche": "Si deriva termine per termine con la regola D(xⁿ) = n·xⁿ⁻¹: D(x³) = 3x², D(−5x²) = −10x e la derivata della costante 2 è 0. Quindi f'(x) = 3x² − 10x. La B dimentica che la derivata di una costante è nulla.",
+  "semplice": "Per derivare una potenza si porta l'esponente davanti e lo si abbassa di uno. Le costanti spariscono, perché non cambiano.",
+  "passaggi": [
+   "Applica la linearità della derivata: termine per termine",
+   "D(x³) = 3x² e D(−5x²) = −10x",
+   "D(2) = 0",
+   "Risultato: f'(x) = 3x² − 10x"
+  ],
+  "concetto": "derivata di un polinomio"
+ },
+ {
+  "id": "NFMA-172",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = x·eˣ?",
+  "opzioni": {
+   "A": "eˣ",
+   "B": "eˣ·(1 + x)",
+   "C": "x·eˣ",
+   "D": "eˣ⁻¹",
+   "E": "2x·eˣ"
+  },
+  "giusta": "B",
+  "perche": "Per la regola del prodotto (f·g)' = f'·g + f·g', con f = x e g = eˣ: (x·eˣ)' = 1·eˣ + x·eˣ = eˣ·(1 + x). L'errore tipico è derivare solo uno dei due fattori (risposte A e C).",
+  "semplice": "Quando due funzioni sono moltiplicate, si deriva una alla volta lasciando ferma l'altra, e si sommano i due pezzi.",
+  "passaggi": [
+   "Riconosci un prodotto: f = x, g = eˣ",
+   "Regola del prodotto: (f·g)' = f'·g + f·g'",
+   "Calcolo: 1·eˣ + x·eˣ",
+   "Raccogli: eˣ·(1 + x)"
+  ],
+  "concetto": "regola del prodotto"
+ },
+ {
+  "id": "NFMA-173",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = sin(x²)?",
+  "opzioni": {
+   "A": "cos(x²)",
+   "B": "cos(2x)",
+   "C": "2x·cos(x²)",
+   "D": "2x·sin(x²)",
+   "E": "−2x·cos(x²)"
+  },
+  "giusta": "C",
+  "perche": "È una funzione composta: per la regola della catena si deriva la funzione esterna nel punto interno e si moltiplica per la derivata della funzione interna. D[sin(u)] = cos(u)·u', con u = x² e u' = 2x, quindi f'(x) = 2x·cos(x²). La A dimentica il fattore 2x.",
+  "semplice": "Prima derivi «il guscio» (il seno diventa coseno, lasciando dentro x²) e poi moltiplichi per la derivata di quello che c'è dentro (2x).",
+  "passaggi": [
+   "Riconosci una funzione composta: esterna sin u, interna u = x²",
+   "Regola della catena: f'(x) = cos(u)·u'",
+   "u' = 2x",
+   "Risultato: f'(x) = 2x·cos(x²)"
+  ],
+  "concetto": "derivata della funzione composta"
+ },
+ {
+  "id": "NFMA-174",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è l'equazione della retta tangente al grafico di y = x² nel punto di ascissa x = 3?",
+  "opzioni": {
+   "A": "y = 6x",
+   "B": "y = 2x + 3",
+   "C": "y = 6x + 9",
+   "D": "y = 6x − 9",
+   "E": "y = 3x"
+  },
+  "giusta": "D",
+  "perche": "Il punto di tangenza è (3, 9) e la pendenza è la derivata in x = 3: y' = 2x, quindi m = 6. La retta è y − 9 = 6·(x − 3), cioè y = 6x − 9. La C sbaglia il segno del termine noto; la A passa per l'origine e non per (3, 9).",
+  "semplice": "La tangente tocca la parabola in (3, 9) con la stessa pendenza della curva in quel punto. La pendenza la dà la derivata.",
+  "passaggi": [
+   "Punto di tangenza: x₀ = 3, y₀ = 9",
+   "Pendenza: f'(x) = 2x, f'(3) = 6",
+   "Formula: y − y₀ = m·(x − x₀)",
+   "Calcolo: y − 9 = 6(x − 3), cioè y = 6x − 9"
+  ],
+  "concetto": "retta tangente"
+ },
+ {
+  "id": "NFMA-175",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "In quale punto la funzione f(x) = x³ − 3x ha un massimo relativo?",
+  "opzioni": {
+   "A": "x = 1, con f(1) = −2",
+   "B": "x = 0, con f(0) = 0",
+   "C": "x = √3, con f(√3) = 0",
+   "D": "Non ha massimi relativi",
+   "E": "x = −1, con f(−1) = 2"
+  },
+  "giusta": "E",
+  "perche": "La derivata f'(x) = 3x² − 3 si annulla in x = ±1. La derivata seconda f''(x) = 6x vale −6 in x = −1 (concavità verso il basso, massimo) e +6 in x = 1 (minimo). Quindi il massimo relativo è in x = −1 con f(−1) = −1 + 3 = 2; x = 1 è il minimo relativo.",
+  "semplice": "Il grafico sale, si ferma in cima a una collinetta in x = −1, scende fino a una valle in x = 1 e poi risale.",
+  "passaggi": [
+   "Calcola la derivata: f'(x) = 3x² − 3",
+   "Punti stazionari: x = −1 e x = 1",
+   "Derivata seconda: f''(−1) = −6 < 0 (massimo), f''(1) = 6 > 0 (minimo)",
+   "Valore: f(−1) = −1 + 3 = 2"
+  ],
+  "concetto": "massimi e minimi relativi"
+ },
+ {
+  "id": "NFMA-176",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = ln(x² + 1)?",
+  "opzioni": {
+   "A": "2x/(x² + 1)",
+   "B": "1/(x² + 1)",
+   "C": "2x·ln(x² + 1)",
+   "D": "1/(2x)",
+   "E": "(x² + 1)/(2x)"
+  },
+  "giusta": "A",
+  "perche": "Per la regola della catena D[ln u] = u'/u, con u = x² + 1 e u' = 2x: f'(x) = 2x/(x² + 1). La B dimentica di moltiplicare per la derivata dell'argomento, che è l'errore più comune con le funzioni composte.",
+  "semplice": "La derivata del logaritmo è «la derivata di quello che c'è dentro, divisa per quello che c'è dentro».",
+  "passaggi": [
+   "Riconosci la composta ln u con u = x² + 1",
+   "Regola: D(ln u) = u'/u",
+   "u' = 2x",
+   "Risultato: f'(x) = 2x/(x² + 1)"
+  ],
+  "concetto": "derivata del logaritmo di una funzione"
+ },
+ {
+  "id": "NFMA-177",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Per la funzione f(x) = x² sull'intervallo [1, 3], quale punto c soddisfa la tesi del teorema di Lagrange?",
+  "opzioni": {
+   "A": "c = 1",
+   "B": "c = 2",
+   "C": "c = 4",
+   "D": "c = √5",
+   "E": "c = 3"
+  },
+  "giusta": "B",
+  "perche": "Il teorema di Lagrange garantisce un punto c interno in cui f'(c) = (f(b) − f(a))/(b − a). Qui (9 − 1)/(3 − 1) = 4 e f'(c) = 2c, quindi 2c = 4 e c = 2. Il valore 4 è la pendenza media, non il punto; c = 1 e c = 3 sono estremi dell'intervallo, esclusi dalla tesi.",
+  "semplice": "Se in un viaggio la velocità media è 4, in almeno un istante il tachimetro ha segnato esattamente 4. Qui quell'istante è c = 2.",
+  "passaggi": [
+   "Calcola la pendenza media: (f(3) − f(1))/(3 − 1) = (9 − 1)/2 = 4",
+   "Calcola la derivata: f'(x) = 2x",
+   "Imponi f'(c) = 4: 2c = 4",
+   "Risultato: c = 2, interno a (1, 3)"
+  ],
+  "concetto": "teorema di Lagrange"
+ },
+ {
+  "id": "NFMA-178",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "In quale punto la funzione f(x) = x³ − 6x² + 1 ha un flesso?",
+  "opzioni": {
+   "A": "x = 0",
+   "B": "x = 4",
+   "C": "x = 2",
+   "D": "x = 6",
+   "E": "Non ha flessi"
+  },
+  "giusta": "C",
+  "perche": "I flessi si cercano dove la derivata seconda si annulla e cambia segno. f'(x) = 3x² − 12x e f''(x) = 6x − 12, che si annulla in x = 2 ed è negativa a sinistra e positiva a destra: la concavità cambia, quindi x = 2 è un flesso. x = 0 e x = 4 sono gli zeri della derivata prima, cioè punti di massimo e minimo.",
+  "semplice": "Il flesso è il punto in cui la curva smette di piegare verso il basso e comincia a piegare verso l'alto, come una strada che passa da una curva a sinistra a una a destra.",
+  "passaggi": [
+   "Calcola f'(x) = 3x² − 12x",
+   "Calcola f''(x) = 6x − 12",
+   "f''(x) = 0 per x = 2, con cambio di segno",
+   "Escludi A e B: sono punti stazionari. Resta la C"
+  ],
+  "concetto": "punti di flesso"
+ },
+ {
+  "id": "NFMA-179",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sul legame tra derivabilità e continuità è corretta?",
+  "opzioni": {
+   "A": "Ogni funzione continua è derivabile",
+   "B": "Una funzione derivabile può essere discontinua",
+   "C": "Continuità e derivabilità sono equivalenti",
+   "D": "Se f è derivabile in x₀ allora è continua in x₀, ma non vale il viceversa",
+   "E": "Una funzione con un punto angoloso non è continua in quel punto"
+  },
+  "giusta": "D",
+  "perche": "La derivabilità in un punto implica la continuità nello stesso punto. Il viceversa è falso: f(x) = |x| è continua in 0 ma non derivabile, perché la derivata sinistra vale −1 e quella destra +1 (punto angoloso). Per questo anche la E è falsa: nei punti angolosi la funzione è continua.",
+  "semplice": "Una curva liscia è sempre anche tutta d'un pezzo, ma una curva tutta d'un pezzo può avere degli spigoli, dove la pendenza non è definita.",
+  "passaggi": [
+   "Ricorda il teorema: derivabile ⇒ continua",
+   "Cerca un controesempio al viceversa: |x| in 0",
+   "|x| è continua in 0 ma ha un punto angoloso",
+   "Resta la D"
+  ],
+  "concetto": "derivabilità e continuità"
+ },
+ {
+  "id": "NFMA-180",
+  "materia": "Matematica",
+  "argomento": "Derivate e studio di funzione",
+  "livello": "superiori",
+  "domanda": "Qual è la derivata di f(x) = x/(x + 1)?",
+  "opzioni": {
+   "A": "1",
+   "B": "(2x + 1)/(x + 1)²",
+   "C": "−1/(x + 1)²",
+   "D": "x/(x + 1)²",
+   "E": "1/(x + 1)²"
+  },
+  "giusta": "E",
+  "perche": "Per la regola del quoziente (f/g)' = (f'·g − f·g')/g²: [1·(x + 1) − x·1]/(x + 1)² = 1/(x + 1)². La C sbaglia l'ordine della sottrazione al numeratore; la A deriva separatamente numeratore e denominatore (1/1), che è un errore frequente.",
+  "semplice": "Per derivare una frazione: derivata di sopra per quello di sotto, meno quello di sopra per la derivata di sotto, tutto diviso il quadrato di sotto.",
+  "passaggi": [
+   "Riconosci un quoziente: f = x, g = x + 1",
+   "Regola: (f'g − fg')/g²",
+   "Numeratore: 1·(x + 1) − x·1 = 1",
+   "Risultato: f'(x) = 1/(x + 1)²"
+  ],
+  "concetto": "regola del quoziente"
+ },
+ {
+  "id": "NFMA-181",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale indefinito ∫ 3x² dx?",
+  "opzioni": {
+   "A": "x³ + C",
+   "B": "6x + C",
+   "C": "3x³ + C",
+   "D": "x³/3 + C",
+   "E": "3x² + C"
+  },
+  "giusta": "A",
+  "perche": "Per la regola ∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C si ottiene ∫ 3x² dx = 3·x³/3 + C = x³ + C. Si verifica derivando: (x³)' = 3x². La B è la derivata di 3x², non la primitiva; la C dimentica di dividere per il nuovo esponente.",
+  "semplice": "Integrare è l'operazione inversa del derivare: si cerca la funzione che, derivata, dà 3x². Questa funzione è x³, più una costante qualsiasi.",
+  "passaggi": [
+   "Applica ∫ xⁿ dx = xⁿ⁺¹/(n + 1)",
+   "Calcolo: 3 · x³/3 = x³",
+   "Aggiungi la costante C",
+   "Verifica: D(x³) = 3x²"
+  ],
+  "concetto": "integrale delle potenze"
+ },
+ {
+  "id": "NFMA-182",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale l'integrale definito ∫₀² (2x + 1) dx?",
+  "opzioni": {
+   "A": "4",
+   "B": "6",
+   "C": "5",
+   "D": "2",
+   "E": "8"
+  },
+  "giusta": "B",
+  "perche": "Una primitiva di 2x + 1 è x² + x. Per il teorema fondamentale del calcolo ∫₀² (2x + 1) dx = [x² + x]₀² = (4 + 2) − 0 = 6. Il valore 4 dimentica il termine x, cioè l'integrale della costante 1 su un intervallo di lunghezza 2.",
+  "semplice": "L'integrale misura l'area sotto la retta y = 2x + 1 tra 0 e 2: è un trapezio con basi 1 e 5 e altezza 2, area (1 + 5)·2/2 = 6.",
+  "passaggi": [
+   "Trova una primitiva: F(x) = x² + x",
+   "Calcola F(2) = 4 + 2 = 6",
+   "Calcola F(0) = 0",
+   "Risultato: 6 − 0 = 6"
+  ],
+  "concetto": "integrale definito"
+ },
+ {
+  "id": "NFMA-183",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Qual è l'area della regione compresa tra il grafico di y = x², l'asse x e le rette x = 0 e x = 3?",
+  "opzioni": {
+   "A": "27",
+   "B": "3",
+   "C": "9",
+   "D": "6",
+   "E": "18"
+  },
+  "giusta": "C",
+  "perche": "L'area è ∫₀³ x² dx = [x³/3]₀³ = 27/3 − 0 = 9. Il valore 27 dimentica di dividere per 3; 6 si ottiene confondendo la primitiva con la derivata (2x valutata in 3).",
+  "semplice": "Sotto la parabola tra 0 e 3 c'è esattamente un terzo del rettangolo 3 × 9 che la contiene: 27 diviso 3 fa 9.",
+  "passaggi": [
+   "Imposta l'integrale: A = ∫₀³ x² dx",
+   "Primitiva: x³/3",
+   "Calcolo: 3³/3 − 0 = 27/3",
+   "Risultato: A = 9"
+  ],
+  "concetto": "area sotto una curva"
+ },
+ {
+  "id": "NFMA-184",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale indefinito ∫ x·eˣ dx?",
+  "opzioni": {
+   "A": "x·eˣ + C",
+   "B": "x²·eˣ/2 + C",
+   "C": "eˣ + C",
+   "D": "(x − 1)·eˣ + C",
+   "E": "(x + 1)·eˣ + C"
+  },
+  "giusta": "D",
+  "perche": "Si integra per parti, ∫ f·g' dx = f·g − ∫ f'·g dx, con f = x e g' = eˣ: ∫ x·eˣ dx = x·eˣ − ∫ eˣ dx = x·eˣ − eˣ + C = (x − 1)·eˣ + C. Verifica: [(x − 1)eˣ]' = eˣ + (x − 1)eˣ = x·eˣ. La E ha il segno sbagliato: la sua derivata è (x + 2)eˣ.",
+  "semplice": "Quando si integra un prodotto si può «spostare» la derivata da un fattore all'altro. Scegliendo di derivare x, che diventa 1, l'integrale si semplifica.",
+  "passaggi": [
+   "Scegli f = x (si semplifica derivando) e g' = eˣ",
+   "Formula per parti: ∫ f·g' = f·g − ∫ f'·g",
+   "Calcolo: x·eˣ − ∫ eˣ dx = x·eˣ − eˣ",
+   "Risultato: (x − 1)·eˣ + C; verifica derivando"
+  ],
+  "concetto": "integrazione per parti"
+ },
+ {
+  "id": "NFMA-185",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Quanto vale ∫₀^π sin x dx?",
+  "opzioni": {
+   "A": "0",
+   "B": "1",
+   "C": "π",
+   "D": "−2",
+   "E": "2"
+  },
+  "giusta": "E",
+  "perche": "Una primitiva di sin x è −cos x, quindi ∫₀^π sin x dx = [−cos x]₀^π = −cos π − (−cos 0) = 1 + 1 = 2. Il valore 0 sarebbe l'integrale su [0, 2π], dove le aree sopra e sotto l'asse si compensano; −2 deriva dall'uso di cos x come primitiva.",
+  "semplice": "Tra 0 e π la curva del seno forma un'unica «gobba» sopra l'asse x, e l'area di questa gobba vale esattamente 2.",
+  "passaggi": [
+   "Trova una primitiva: F(x) = −cos x",
+   "F(π) = −cos π = 1",
+   "F(0) = −cos 0 = −1",
+   "Risultato: 1 − (−1) = 2"
+  ],
+  "concetto": "integrale delle funzioni goniometriche"
+ },
+ {
+  "id": "NFMA-186",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Sia f continua e F(x) = ∫ₐˣ f(t) dt. Che cosa afferma il teorema fondamentale del calcolo integrale su F?",
+  "opzioni": {
+   "A": "F è derivabile e F'(x) = f(x)",
+   "B": "F(x) = f(x) per ogni x",
+   "C": "F'(x) = f'(x)",
+   "D": "F è sempre costante",
+   "E": "F'(x) = f(a)"
+  },
+  "giusta": "A",
+  "perche": "Il teorema fondamentale afferma che, se f è continua, la funzione integrale F è derivabile e la sua derivata è la funzione integranda: F'(x) = f(x). Quindi F è una primitiva di f, e da qui discende la formula ∫ₐᵇ f(x) dx = G(b) − G(a) per qualsiasi primitiva G. Derivazione e integrazione sono operazioni inverse.",
+  "semplice": "Se misuri l'area sotto una curva man mano che ti sposti verso destra, la velocità con cui l'area cresce è proprio l'altezza della curva in quel punto.",
+  "passaggi": [
+   "Riconosci la funzione integrale F(x) = ∫ₐˣ f(t) dt",
+   "Ricorda l'enunciato: F'(x) = f(x)",
+   "Quindi F è una primitiva di f",
+   "Resta la A"
+  ],
+  "concetto": "teorema fondamentale del calcolo integrale"
+ },
+ {
+  "id": "NFMA-187",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale indefinito ∫ (1/x) dx, per x ≠ 0?",
+  "opzioni": {
+   "A": "x⁰/0 + C",
+   "B": "ln|x| + C",
+   "C": "−1/x² + C",
+   "D": "eˣ + C",
+   "E": "1/x² + C"
+  },
+  "giusta": "B",
+  "perche": "La regola delle potenze ∫ xⁿ dx = xⁿ⁺¹/(n + 1) non vale per n = −1, perché si dividerebbe per zero. La primitiva di 1/x è ln|x| + C: per x > 0 la derivata di ln x è 1/x, e il valore assoluto estende il risultato a x < 0. La C è la derivata di 1/x, non la primitiva.",
+  "semplice": "Per 1/x la solita regola delle potenze non funziona; la funzione che, derivata, dà 1/x è il logaritmo naturale.",
+  "passaggi": [
+   "Osserva che la regola delle potenze fallisce per n = −1",
+   "Ricorda che D(ln x) = 1/x per x > 0",
+   "Il valore assoluto copre anche x < 0",
+   "Resta la B"
+  ],
+  "concetto": "integrale di 1/x"
+ },
+ {
+  "id": "NFMA-188",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Qual è l'area della regione compresa tra la retta y = x e la parabola y = x² per x compreso tra 0 e 1?",
+  "opzioni": {
+   "A": "1/2",
+   "B": "1/3",
+   "C": "1/6",
+   "D": "5/6",
+   "E": "1"
+  },
+  "giusta": "C",
+  "perche": "Nell'intervallo [0, 1] la retta sta sopra la parabola (per esempio in x = 1/2: 0,5 > 0,25). L'area è ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6. Il valore 1/2 è la sola area sotto la retta; 5/6 somma le due aree invece di sottrarle.",
+  "semplice": "L'area tra due curve è l'area sotto quella più alta meno l'area sotto quella più bassa: 1/2 − 1/3 = 1/6.",
+  "passaggi": [
+   "Trova le intersezioni: x = x², quindi x = 0 e x = 1",
+   "In [0, 1] la retta sta sopra: integra (x − x²)",
+   "Primitiva: x²/2 − x³/3",
+   "Calcolo: 1/2 − 1/3 = 1/6"
+  ],
+  "concetto": "area tra due curve"
+ },
+ {
+  "id": "NFMA-189",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Qual è il valor medio della funzione f(x) = x² sull'intervallo [0, 3]?",
+  "opzioni": {
+   "A": "9",
+   "B": "4,5",
+   "C": "1",
+   "D": "3",
+   "E": "27"
+  },
+  "giusta": "D",
+  "perche": "Il valor medio integrale è (1/(b − a))·∫ₐᵇ f(x) dx = (1/3)·∫₀³ x² dx = (1/3)·9 = 3. Il valore 4,5 è la media aritmetica di f(0) = 0 e f(3) = 9, che non tiene conto della forma della curva; 9 è l'integrale non diviso per la lunghezza dell'intervallo.",
+  "semplice": "Il valor medio è l'altezza del rettangolo che, sulla stessa base, ha la stessa area della regione sotto la curva: qui area 9 e base 3, altezza 3.",
+  "passaggi": [
+   "Formula: valor medio = (1/(b − a))·∫ₐᵇ f(x) dx",
+   "Calcola l'integrale: ∫₀³ x² dx = 9",
+   "Dividi per la lunghezza: 9/3",
+   "Risultato: 3"
+  ],
+  "concetto": "valor medio integrale"
+ },
+ {
+  "id": "NFMA-190",
+  "materia": "Matematica",
+  "argomento": "Integrali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale indefinito ∫ 2x·cos(x²) dx?",
+  "opzioni": {
+   "A": "cos(x²) + C",
+   "B": "x²·sin(x²) + C",
+   "C": "−sin(x²) + C",
+   "D": "2·sin(x²) + C",
+   "E": "sin(x²) + C"
+  },
+  "giusta": "E",
+  "perche": "Con la sostituzione u = x² si ha du = 2x dx, quindi l'integrale diventa ∫ cos u du = sin u + C = sin(x²) + C. Verifica: D[sin(x²)] = cos(x²)·2x. La C ha il segno sbagliato (la primitiva del coseno è il seno, non il suo opposto).",
+  "semplice": "Il fattore 2x è proprio la derivata di x²: è il segnale che conviene sostituire x² con una nuova variabile, e l'integrale diventa quello del semplice coseno.",
+  "passaggi": [
+   "Osserva che 2x è la derivata di x²",
+   "Sostituisci u = x², du = 2x dx",
+   "Integra: ∫ cos u du = sin u + C",
+   "Torna a x: sin(x²) + C"
+  ],
+  "concetto": "integrazione per sostituzione"
+ },
+ {
+  "id": "NFMA-191",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è la soluzione del problema di Cauchy y' = 3y, y(0) = 2?",
+  "opzioni": {
+   "A": "y = 2e³ˣ",
+   "B": "y = 3e²ˣ",
+   "C": "y = e³ˣ + 1",
+   "D": "y = 2 + 3x",
+   "E": "y = 6x"
+  },
+  "giusta": "A",
+  "perche": "L'equazione y' = k·y ha integrale generale y = C·eᵏˣ; con k = 3 si ha y = C·e³ˣ. La condizione y(0) = 2 dà C·e⁰ = C = 2, quindi y = 2e³ˣ. Verifica: y' = 6e³ˣ = 3·(2e³ˣ). La C soddisfa y(0) = 2 ma non l'equazione.",
+  "semplice": "Se una quantità cresce in proporzione a sé stessa, come una popolazione di batteri, l'andamento è esponenziale. Il valore iniziale fissa da dove si parte.",
+  "passaggi": [
+   "Riconosci l'equazione y' = k·y con k = 3",
+   "Integrale generale: y = C·e³ˣ",
+   "Imponi y(0) = 2: C = 2",
+   "Soluzione: y = 2e³ˣ; verifica y' = 6e³ˣ = 3y"
+  ],
+  "concetto": "equazione differenziale esponenziale"
+ },
+ {
+  "id": "NFMA-192",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale generale dell'equazione y'' + 4y = 0?",
+  "opzioni": {
+   "A": "y = c₁e²ˣ + c₂e⁻²ˣ",
+   "B": "y = c₁cos(2x) + c₂sin(2x)",
+   "C": "y = c₁cos(4x) + c₂sin(4x)",
+   "D": "y = c₁e⁻⁴ˣ",
+   "E": "y = (c₁ + c₂x)e²ˣ"
+  },
+  "giusta": "B",
+  "perche": "L'equazione caratteristica r² + 4 = 0 ha radici complesse r = ±2i, a cui corrispondono le soluzioni cos(2x) e sin(2x): y = c₁cos(2x) + c₂sin(2x). È l'equazione del moto armonico con ω = 2. La A sarebbe la soluzione di y'' − 4y = 0 (radici reali ±2); la C usa ω = 4 invece di √4.",
+  "semplice": "Una molla ideale oscilla avanti e indietro senza fermarsi: la sua equazione ha come soluzioni seni e coseni.",
+  "passaggi": [
+   "Scrivi l'equazione caratteristica: r² + 4 = 0",
+   "Radici: r = ±2i (complesse coniugate, parte reale nulla)",
+   "Soluzioni fondamentali: cos(2x) e sin(2x)",
+   "Integrale generale: y = c₁cos(2x) + c₂sin(2x)"
+  ],
+  "concetto": "equazioni lineari del secondo ordine con radici complesse"
+ },
+ {
+  "id": "NFMA-193",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti funzioni è soluzione dell'equazione differenziale y' = 2x·y?",
+  "opzioni": {
+   "A": "y = eˣ",
+   "B": "y = x²",
+   "C": "y = e^(x²)",
+   "D": "y = 2x",
+   "E": "y = e²ˣ"
+  },
+  "giusta": "C",
+  "perche": "Basta sostituire: per y = e^(x²) si ha y' = 2x·e^(x²) = 2x·y, quindi l'equazione è soddisfatta. Per y = e²ˣ invece y' = 2e²ˣ = 2y, che non è uguale a 2x·y. Lo stesso risultato si ottiene separando le variabili: dy/y = 2x dx, ln|y| = x² + C.",
+  "semplice": "Per controllare se una funzione risolve un'equazione differenziale basta derivarla e vedere se l'uguaglianza torna, come quando si verifica la soluzione di un'equazione sostituendo il numero.",
+  "passaggi": [
+   "Deriva ciascuna candidata",
+   "Per y = e^(x²): y' = 2x·e^(x²)",
+   "Confronta con 2x·y = 2x·e^(x²): coincide",
+   "Escludi E: y' = 2y, non 2x·y. Resta la C"
+  ],
+  "concetto": "verifica di una soluzione"
+ },
+ {
+  "id": "NFMA-194",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Una sostanza decade secondo l'equazione N'(t) = −k·N(t) con k = 0,10 s⁻¹. Qual è il suo tempo di dimezzamento?",
+  "opzioni": {
+   "A": "5,0 s",
+   "B": "10 s",
+   "C": "0,069 s",
+   "D": "6,9 s",
+   "E": "0,10 s"
+  },
+  "giusta": "D",
+  "perche": "La soluzione è N(t) = N₀·e^(−kt). Imponendo N(T) = N₀/2 si ottiene e^(−kT) = 1/2, quindi T = ln 2/k = 0,693/0,10 s ≈ 6,9 s. Il valore 10 s è 1/k, la vita media, non il tempo di dimezzamento; 5,0 s deriva dall'usare 1/2 al posto di ln 2.",
+  "semplice": "Nel decadimento ogni secondo sparisce una frazione fissa della sostanza. Il tempo in cui ne sparisce metà dipende solo da questa frazione, non da quanta sostanza c'è.",
+  "passaggi": [
+   "Soluzione dell'equazione: N(t) = N₀·e^(−kt)",
+   "Condizione di dimezzamento: e^(−kT) = 1/2",
+   "Ricava: T = ln 2/k",
+   "Calcolo: 0,693/0,10 s⁻¹ ≈ 6,9 s"
+  ],
+  "concetto": "decadimento esponenziale"
+ },
+ {
+  "id": "NFMA-195",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale generale dell'equazione y'' − 5y' + 6y = 0?",
+  "opzioni": {
+   "A": "y = c₁e⁻²ˣ + c₂e⁻³ˣ",
+   "B": "y = c₁cos(2x) + c₂sin(3x)",
+   "C": "y = c₁e⁵ˣ + c₂e⁶ˣ",
+   "D": "y = (c₁ + c₂x)e⁵ˣ",
+   "E": "y = c₁e²ˣ + c₂e³ˣ"
+  },
+  "giusta": "E",
+  "perche": "L'equazione caratteristica r² − 5r + 6 = 0 ha radici reali distinte r = 2 e r = 3 (somma 5, prodotto 6). L'integrale generale è quindi y = c₁e²ˣ + c₂e³ˣ. La A ha i segni sbagliati delle radici; la C usa i coefficienti dell'equazione al posto delle radici.",
+  "semplice": "Si cerca una soluzione del tipo e^(rx): sostituendo si ottiene un'equazione di secondo grado per r. Le sue due radici danno le due soluzioni di base.",
+  "passaggi": [
+   "Scrivi l'equazione caratteristica: r² − 5r + 6 = 0",
+   "Risolvi: r = (5 ± √(25 − 24))/2, cioè r = 2 e r = 3",
+   "Radici reali distinte: soluzioni e²ˣ ed e³ˣ",
+   "Integrale generale: y = c₁e²ˣ + c₂e³ˣ"
+  ],
+  "concetto": "equazioni lineari del secondo ordine con radici reali distinte"
+ },
+ {
+  "id": "NFMA-196",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è la soluzione del problema di Cauchy y' = x/y, y(0) = 1 (con y > 0)?",
+  "opzioni": {
+   "A": "y = √(x² + 1)",
+   "B": "y = x + 1",
+   "C": "y = x²/2 + 1",
+   "D": "y = eˣ",
+   "E": "y = √(x² − 1)"
+  },
+  "giusta": "A",
+  "perche": "Separando le variabili: y dy = x dx, e integrando y²/2 = x²/2 + C. La condizione y(0) = 1 dà C = 1/2, quindi y² = x² + 1 e, con y > 0, y = √(x² + 1). Verifica: y' = x/√(x² + 1) = x/y. La E non soddisfa y(0) = 1 (non è nemmeno definita in 0).",
+  "semplice": "Si mettono tutte le y da una parte e tutte le x dall'altra, poi si integra ciascun lato. Il dato iniziale serve a trovare la costante.",
+  "passaggi": [
+   "Separa le variabili: y dy = x dx",
+   "Integra: y²/2 = x²/2 + C",
+   "Imponi y(0) = 1: 1/2 = C",
+   "Ricava y² = x² + 1, quindi y = √(x² + 1)"
+  ],
+  "concetto": "equazioni a variabili separabili"
+ },
+ {
+  "id": "NFMA-197",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è la soluzione del problema di Cauchy y' = 4, y(1) = 3?",
+  "opzioni": {
+   "A": "y = 4x + 3",
+   "B": "y = 4x − 1",
+   "C": "y = 3x + 4",
+   "D": "y = 4x",
+   "E": "y = 4x + 1"
+  },
+  "giusta": "B",
+  "perche": "Integrando y' = 4 si ottiene y = 4x + C. Imponendo y(1) = 3: 4 + C = 3, quindi C = −1 e y = 4x − 1. La A usa come costante il valore 3 senza tenere conto che la condizione è data in x = 1 e non in x = 0: è l'errore più frequente.",
+  "semplice": "Se una grandezza cresce sempre di 4 per ogni unità di x, il grafico è una retta di pendenza 4; il dato iniziale dice per quale punto passa.",
+  "passaggi": [
+   "Integra: y = 4x + C",
+   "Imponi la condizione in x = 1: 4·1 + C = 3",
+   "Ricava C = −1",
+   "Soluzione: y = 4x − 1 (verifica: y(1) = 3)"
+  ],
+  "concetto": "problema di Cauchy"
+ },
+ {
+  "id": "NFMA-198",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Quante costanti arbitrarie compaiono nell'integrale generale di un'equazione differenziale lineare di ordine n?",
+  "opzioni": {
+   "A": "Una sola, qualunque sia n",
+   "B": "Nessuna",
+   "C": "n",
+   "D": "n + 1",
+   "E": "2n"
+  },
+  "giusta": "C",
+  "perche": "L'integrale generale di un'equazione di ordine n dipende da n costanti arbitrarie, perché per ricavare y occorrono, in un certo senso, n integrazioni. Per questo un problema di Cauchy di ordine n richiede n condizioni iniziali: y(x₀), y'(x₀), …, y⁽ⁿ⁻¹⁾(x₀). Per esempio y'' + 4y = 0 ha due costanti.",
+  "semplice": "Ogni integrazione «fa nascere» una costante. Un'equazione con la derivata seconda ne richiede due, come un moto in cui bisogna conoscere posizione e velocità iniziali.",
+  "passaggi": [
+   "Ricorda che ogni integrazione introduce una costante",
+   "Un'equazione di ordine n richiede n integrazioni",
+   "Verifica su y'' + 4y = 0: due costanti c₁ e c₂",
+   "Resta la C"
+  ],
+  "concetto": "integrale generale e condizioni iniziali"
+ },
+ {
+  "id": "NFMA-199",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è l'integrale generale dell'equazione y'' + 2y' + y = 0?",
+  "opzioni": {
+   "A": "y = c₁eˣ + c₂e⁻ˣ",
+   "B": "y = c₁e⁻ˣ",
+   "C": "y = c₁cos x + c₂sin x",
+   "D": "y = (c₁ + c₂x)·e⁻ˣ",
+   "E": "y = (c₁ + c₂x)·eˣ"
+  },
+  "giusta": "D",
+  "perche": "L'equazione caratteristica r² + 2r + 1 = (r + 1)² = 0 ha la radice doppia r = −1. In questo caso le soluzioni fondamentali sono e⁻ˣ e x·e⁻ˣ, quindi y = (c₁ + c₂x)·e⁻ˣ. La B contiene una sola costante, insufficiente per un'equazione del secondo ordine; la E ha il segno sbagliato della radice.",
+  "semplice": "Quando l'equazione caratteristica ha una sola radice ripetuta, una soluzione è l'esponenziale; la seconda si ottiene moltiplicandola per x.",
+  "passaggi": [
+   "Equazione caratteristica: r² + 2r + 1 = 0",
+   "Fattorizza: (r + 1)² = 0, radice doppia r = −1",
+   "Soluzioni fondamentali: e⁻ˣ e x·e⁻ˣ",
+   "Integrale generale: y = (c₁ + c₂x)·e⁻ˣ"
+  ],
+  "concetto": "radice doppia dell'equazione caratteristica"
+ },
+ {
+  "id": "NFMA-200",
+  "materia": "Matematica",
+  "argomento": "Equazioni differenziali",
+  "livello": "superiori",
+  "domanda": "Qual è la soluzione del problema y'' = 6x con y(0) = 0 e y'(0) = 1?",
+  "opzioni": {
+   "A": "y = x³",
+   "B": "y = 3x² + 1",
+   "C": "y = 6x³ + x",
+   "D": "y = x³ + 1",
+   "E": "y = x³ + x"
+  },
+  "giusta": "E",
+  "perche": "Integrando una volta y' = 3x² + c₁, e da y'(0) = 1 si ottiene c₁ = 1. Integrando di nuovo y = x³ + x + c₂, e da y(0) = 0 si ottiene c₂ = 0. Quindi y = x³ + x. La B è y', non y; la D soddisfa y'(0) = 0 invece di 1 e y(0) = 1 invece di 0.",
+  "semplice": "Si integra due volte, come per passare dall'accelerazione alla velocità e poi alla posizione; a ogni passo un dato iniziale fissa la costante.",
+  "passaggi": [
+   "Prima integrazione: y' = 3x² + c₁",
+   "Da y'(0) = 1: c₁ = 1",
+   "Seconda integrazione: y = x³ + x + c₂",
+   "Da y(0) = 0: c₂ = 0, quindi y = x³ + x"
+  ],
+  "concetto": "integrazione diretta di un'equazione del secondo ordine"
+ }
+]

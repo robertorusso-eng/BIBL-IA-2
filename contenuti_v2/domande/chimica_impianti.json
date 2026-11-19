@@ -1,0 +1,3036 @@
+[
+ {
+  "id": "IMP-001",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Si mescolano 100 kg/h di una soluzione acquosa al 20% in massa di NaCl con 50 kg/h di una soluzione al 50%. Qual è la frazione in massa di NaCl nella corrente uscente dal miscelatore?",
+  "opzioni": {
+   "A": "35%",
+   "B": "25%",
+   "C": "40%",
+   "D": "30%",
+   "E": "70%"
+  },
+  "giusta": "D",
+  "perche": "In un miscelatore a regime la massa totale e la massa di ogni componente si conservano: si sommano i kg/h di sale e si dividono per la portata totale. Il sale entrante è 20 + 25 = 45 kg/h su 150 kg/h totali, cioè il 30%. La trappola tipica è fare la media semplice delle percentuali (35%), che sarebbe giusta solo con portate uguali. Le percentuali vanno sempre pesate con le portate.",
+  "semplice": "Se versi un bicchiere grande di acqua poco salata e un bicchiere piccolo di acqua molto salata, il risultato assomiglia di più al bicchiere grande. Per questo il 30% è più vicino al 20% che al 50%.",
+  "passaggi": [
+   "Sale nella prima corrente: 100 · 0,20 = 20 kg/h",
+   "Sale nella seconda corrente: 50 · 0,50 = 25 kg/h",
+   "Portata uscente: 100 + 50 = 150 kg/h",
+   "Frazione di sale: 45 / 150 = 0,30 → 30%"
+  ],
+  "concetto": "bilancio di miscelazione"
+ },
+ {
+  "id": "IMP-002",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Qual è la forma generale del bilancio di materia per un sistema aperto?",
+  "opzioni": {
+   "A": "Entrata = Uscita in ogni caso, anche con reazione chimica",
+   "B": "Accumulo = Entrata + Uscita − Generazione",
+   "C": "Uscita = Entrata · Generazione",
+   "D": "Generazione = Accumulo + Consumo − Entrata − Uscita",
+   "E": "Accumulo = Entrata − Uscita + Generazione − Consumo"
+  },
+  "giusta": "E",
+  "perche": "L'equazione generale dice che quello che si accumula nel sistema è la differenza tra ciò che entra e ciò che esce, più ciò che si forma per reazione e meno ciò che si consuma. A regime l'accumulo è zero e senza reazioni i termini di generazione e consumo spariscono, per cui resta Entrata = Uscita. La trappola è usare sempre Entrata = Uscita anche per una singola specie che reagisce: vale per la massa totale, non per le moli di un reagente.",
+  "semplice": "Pensa al tuo conto in banca: il saldo cresce (accumulo) di quanto entra meno quanto esce, più gli interessi (generazione) meno le commissioni (consumo).",
+  "passaggi": [
+   "Considera un sistema aperto: la materia entra, esce, può formarsi o consumarsi per reazione e accumularsi.",
+   "Quello che si accumula è ciò che entra meno ciò che esce.",
+   "A questo si aggiunge ciò che si forma per reazione e si toglie ciò che si consuma.",
+   "Entrata = Uscita è solo il caso particolare a regime e senza reazioni (o per la massa totale).",
+   "Forma generale: Accumulo = Entrata − Uscita + Generazione − Consumo."
+  ],
+  "concetto": "equazione generale di bilancio"
+ },
+ {
+  "id": "IMP-003",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Cosa significa che un impianto funziona «a regime» (stato stazionario)?",
+  "opzioni": {
+   "A": "Tutte le correnti hanno la stessa temperatura",
+   "B": "Non avvengono reazioni chimiche",
+   "C": "Le grandezze in ogni punto non cambiano nel tempo, quindi l'accumulo è nullo",
+   "D": "La portata in uscita è sempre zero",
+   "E": "L'impianto funziona a ciclo chiuso senza scambi con l'esterno"
+  },
+  "giusta": "C",
+  "perche": "A regime portate, composizioni, temperature e pressioni in un certo punto restano costanti nel tempo, anche se cambiano da un punto all'altro dell'impianto. Di conseguenza nel bilancio il termine di accumulo è zero. L'errore tipico è confondere «stazionario» con «uniforme» (stessa temperatura dappertutto) o con «senza reazioni». Un reattore continuo a regime ha reazioni in corso ma composizione costante nel tempo.",
+  "semplice": "Una vasca con il rubinetto aperto e lo scarico aperto, in cui il livello resta fermo, è a regime: l'acqua scorre, ma la quantità nella vasca non cambia.",
+  "passaggi": [
+   "«A regime» significa che in un dato punto le grandezze non cambiano nel tempo.",
+   "Possono però essere diverse da un punto all'altro: stazionario non vuol dire uniforme.",
+   "Le reazioni possono avvenire, e le portate in uscita non sono nulle.",
+   "Se nulla cambia nel tempo, nel bilancio il termine di accumulo è zero.",
+   "Risposta: le grandezze non cambiano nel tempo, accumulo nullo."
+  ],
+  "concetto": "stato stazionario"
+ },
+ {
+  "id": "IMP-004",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Un essiccatore riceve 200 kg di solido umido con il 60% in massa di acqua e lo porta al 10% di acqua. Quanta acqua viene eliminata (circa)?",
+  "opzioni": {
+   "A": "100 kg",
+   "B": "120 kg",
+   "C": "88,9 kg",
+   "D": "111 kg",
+   "E": "60 kg"
+  },
+  "giusta": "D",
+  "perche": "Il componente che non cambia è il solido secco: si chiama componente di legame ed è la chiave del calcolo. Il secco è il 40% di 200 kg, cioè 80 kg; nel prodotto rappresenta il 90%, quindi il prodotto pesa 80/0,9 ≈ 88,9 kg. L'acqua tolta è la differenza 200 − 88,9 ≈ 111 kg. La trappola è sottrarre le percentuali (60% − 10% = 50% di 200 = 100 kg), che non tiene conto che la massa totale cambia.",
+  "semplice": "Se fai seccare dei funghi, il «funghi senza acqua» resta uguale prima e dopo: è lui il punto fermo per capire quanta acqua è evaporata.",
+  "passaggi": [
+   "Solido secco: 200 · 0,40 = 80 kg",
+   "Nel prodotto il secco è il 90%: m = 80 / 0,90 = 88,9 kg",
+   "Acqua eliminata: 200 − 88,9 = 111,1 kg"
+  ],
+  "concetto": "componente di legame"
+ },
+ {
+  "id": "IMP-005",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Un evaporatore concentra 1000 kg/h di soluzione zuccherina dal 10% al 40% in massa. Quanta acqua evapora?",
+  "opzioni": {
+   "A": "750 kg/h",
+   "B": "300 kg/h",
+   "C": "250 kg/h",
+   "D": "400 kg/h",
+   "E": "600 kg/h"
+  },
+  "giusta": "A",
+  "perche": "Lo zucchero non evapora, quindi la sua portata è la stessa in ingresso e in uscita: 100 kg/h. Al 40% la soluzione concentrata pesa 100/0,40 = 250 kg/h. L'acqua evaporata è 1000 − 250 = 750 kg/h. La trappola è scegliere 250 kg/h, che è la portata del concentrato e non del vapore.",
+  "semplice": "Per far diventare un succo quattro volte più concentrato devi togliere tre quarti del liquido: da 1000 kg ne restano 250.",
+  "passaggi": [
+   "Zucchero: 1000 · 0,10 = 100 kg/h",
+   "Concentrato: 100 / 0,40 = 250 kg/h",
+   "Acqua evaporata: 1000 − 250 = 750 kg/h"
+  ],
+  "concetto": "bilancio sul soluto"
+ },
+ {
+  "id": "IMP-006",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Quanto calore serve per scaldare 500 kg/h di acqua da 20 °C a 80 °C (cp = 4,186 kJ/(kg·K))?",
+  "opzioni": {
+   "A": "Circa 34,9 kW",
+   "B": "Circa 125,6 kW",
+   "C": "Circa 2,1 kW",
+   "D": "Circa 41,9 kW",
+   "E": "Circa 3,49 kW"
+  },
+  "giusta": "A",
+  "perche": "Il calore sensibile si calcola con Q = m · cp · ΔT. Si ottiene 500 · 4,186 · 60 = 125 580 kJ/h, che diviso per 3600 s/h dà circa 34,9 kJ/s, cioè 34,9 kW. La trappola è leggere 125 580 kJ/h come se fossero kW, dimenticando la conversione delle ore in secondi.",
+  "semplice": "Scaldare l'acqua di una vasca da bagno (circa 150 kg) di 25 gradi richiede circa 16 000 kJ: tanta energia, ed è per questo che lo scaldabagno consuma molto.",
+  "passaggi": [
+   "ΔT = 80 − 20 = 60 K",
+   "Q = 500 · 4,186 · 60 = 125 580 kJ/h",
+   "Q = 125 580 / 3600 = 34,9 kW"
+  ],
+  "concetto": "calore sensibile"
+ },
+ {
+  "id": "IMP-007",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Per fornire 125 580 kJ/h si usa vapore saturo che condensa cedendo il calore latente r = 2257 kJ/kg. Quale portata di vapore serve?",
+  "opzioni": {
+   "A": "Circa 2257 kg/h",
+   "B": "Circa 18 kg/h",
+   "C": "Circa 55,6 kg/h",
+   "D": "Circa 125,6 kg/h",
+   "E": "Circa 5,6 kg/h"
+  },
+  "giusta": "C",
+  "perche": "Quando il vapore condensa a temperatura costante cede il suo calore latente: Q = m · r. Quindi m = Q / r = 125 580 / 2257 ≈ 55,6 kg/h. Il vapore è un mezzo riscaldante molto efficace proprio perché il calore latente è grande rispetto al calore sensibile dell'acqua. La trappola è usare cp · ΔT anche per il vapore che condensa, dove la temperatura non cambia.",
+  "semplice": "Una piccola quantità di vapore che condensa sulla pelle scotta molto più dell'acqua calda alla stessa temperatura: libera tantissima energia nel passaggio a liquido.",
+  "passaggi": [
+   "Q = m · r",
+   "m = 125 580 / 2257",
+   "m ≈ 55,6 kg/h"
+  ],
+  "concetto": "calore latente"
+ },
+ {
+  "id": "IMP-008",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "test",
+  "domanda": "In un processo con riciclo, a cosa serve la corrente di spurgo (purge)?",
+  "opzioni": {
+   "A": "Ad aumentare la conversione per passaggio nel reattore",
+   "B": "A evitare che gli inerti o i sottoprodotti si accumulino nel ciclo",
+   "C": "A raffreddare il reattore",
+   "D": "A recuperare il catalizzatore esausto",
+   "E": "A diluire l'alimentazione fresca"
+  },
+  "giusta": "B",
+  "perche": "Se nell'alimentazione c'è una sostanza che non reagisce e non viene separata con il prodotto, a ogni giro nel riciclo la sua quantità cresce senza limite. Lo spurgo toglie una piccola parte del riciclo, in modo che l'inerte esca alla stessa velocità con cui entra. Il prezzo da pagare è la perdita di un po' di reagente. La trappola è pensare che lo spurgo serva a migliorare la reazione: serve a tenere l'impianto a regime.",
+  "semplice": "Nella sintesi dell'ammoniaca l'argon dell'aria non reagisce mai: senza spurgo il gas che gira nel reattore diventerebbe pian piano tutto argon.",
+  "passaggi": [
+   "In un riciclo, un inerte che non reagisce e non esce con il prodotto torna indietro a ogni giro.",
+   "Senza un'uscita la sua quantità nel ciclo crescerebbe senza limite.",
+   "Lo spurgo toglie una piccola parte del riciclo, così l'inerte esce con la stessa velocità con cui entra.",
+   "Il prezzo è la perdita di un po' di reagente; lo spurgo non migliora la reazione né raffredda.",
+   "Serve a evitare l'accumulo di inerti o sottoprodotti nel ciclo."
+  ],
+  "concetto": "riciclo e spurgo"
+ },
+ {
+  "id": "IMP-009",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "università",
+  "domanda": "Un reattore ha conversione per passaggio del 25%. Il reagente non convertito viene separato completamente e riciclato, così la conversione globale è circa 100%. Con 100 mol/h di alimentazione fresca, quanto vale la portata riciclata?",
+  "opzioni": {
+   "A": "75 mol/h",
+   "B": "400 mol/h",
+   "C": "100 mol/h",
+   "D": "300 mol/h",
+   "E": "25 mol/h"
+  },
+  "giusta": "D",
+  "perche": "Con conversione globale totale, a regime il reattore deve convertire 100 mol/h, cioè quanto entra fresco. Se per passaggio converte il 25%, la sua alimentazione deve essere 100/0,25 = 400 mol/h. Di queste 100 sono fresche, quindi il riciclo è 300 mol/h. La trappola è rispondere 400 mol/h, che è l'alimentazione totale al reattore e non il solo riciclo.",
+  "semplice": "È come un cassiere lento che serve solo 1 cliente su 4 a ogni giro: se arrivano 100 clienti nuovi all'ora, in coda devono girare 400 persone, di cui 300 rimandate indietro.",
+  "passaggi": [
+   "Moli convertite a regime = moli fresche = 100 mol/h",
+   "Alimentazione al reattore: 100 / 0,25 = 400 mol/h",
+   "Riciclo: 400 − 100 = 300 mol/h"
+  ],
+  "concetto": "conversione per passaggio"
+ },
+ {
+  "id": "IMP-010",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Si bruciano 10 mol di metano (CH₄ + 2 O₂ → CO₂ + 2 H₂O) con il 20% di aria in eccesso. Quante moli di aria (21% O₂) si alimentano?",
+  "opzioni": {
+   "A": "Circa 114 mol",
+   "B": "Circa 95 mol",
+   "C": "24 mol",
+   "D": "Circa 57 mol",
+   "E": "Circa 143 mol"
+  },
+  "giusta": "A",
+  "perche": "L'ossigeno stechiometrico è 2 mol per mole di metano, quindi 20 mol. Con il 20% di eccesso si alimentano 24 mol di O₂. L'aria contiene il 21% di ossigeno, perciò servono 24/0,21 ≈ 114 mol di aria. La trappola è fermarsi alle 24 mol, cioè all'ossigeno, oppure applicare l'eccesso all'aria stechiometrica in modo sbagliato.",
+  "semplice": "Per accendere bene un camino si lascia entrare un po' più aria del necessario, così tutto il combustibile trova ossigeno. Ma l'aria è per quattro quinti azoto, che entra ed esce senza bruciare.",
+  "passaggi": [
+   "O₂ stechiometrico: 10 · 2 = 20 mol",
+   "O₂ alimentato: 20 · 1,20 = 24 mol",
+   "Aria: 24 / 0,21 = 114,3 mol"
+  ],
+  "concetto": "aria in eccesso"
+ },
+ {
+  "id": "IMP-011",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Si mescolano senza perdite 2 kg di acqua a 80 °C e 3 kg di acqua a 20 °C. Qual è la temperatura finale?",
+  "opzioni": {
+   "A": "44 °C",
+   "B": "50 °C",
+   "C": "56 °C",
+   "D": "40 °C",
+   "E": "36 °C"
+  },
+  "giusta": "A",
+  "perche": "Senza scambi con l'esterno, il calore ceduto dall'acqua calda è uguale a quello acquistato dall'acqua fredda; con lo stesso cp la temperatura finale è la media pesata sulle masse. Si ottiene (2·80 + 3·20)/5 = 44 °C. La trappola è fare la media semplice (50 °C), che ignora la massa maggiore dell'acqua fredda.",
+  "semplice": "Se apri un rubinetto caldo poco e uno freddo tanto, l'acqua della doccia sarà più vicina al freddo: pesa di più la corrente più abbondante.",
+  "passaggi": [
+   "Bilancio: 2 · cp · (80 − T) = 3 · cp · (T − 20)",
+   "160 − 2T = 3T − 60",
+   "5T = 220 → T = 44 °C"
+  ],
+  "concetto": "bilancio entalpico"
+ },
+ {
+  "id": "IMP-012",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "test",
+  "domanda": "Nella reazione N₂ + 3 H₂ → 2 NH₃ si fanno reagire completamente 1 mol di N₂ e 3 mol di H₂. Cosa si conserva tra ingresso e uscita?",
+  "opzioni": {
+   "A": "Il numero totale di moli, ma non la massa",
+   "B": "La massa totale, ma non il numero totale di moli",
+   "C": "Sia la massa sia il numero di moli",
+   "D": "Né la massa né il numero di moli",
+   "E": "Solo il numero di moli di azoto molecolare"
+  },
+  "giusta": "B",
+  "perche": "Nelle reazioni chimiche la massa totale si conserva sempre (legge di Lavoisier), e si conservano anche gli atomi di ogni elemento. Le moli invece cambiano: qui 4 mol di reagenti diventano 2 mol di prodotto. Per questo i bilanci con reazione si impostano sulla massa totale, sugli atomi oppure sulle singole specie con i termini di generazione e consumo. La trappola è scrivere moli in ingresso = moli in uscita.",
+  "semplice": "Smontare due set di costruzioni da 4 pezzi e rimontarli in un unico modello: il numero di oggetti cambia, ma il peso dei mattoncini è lo stesso.",
+  "passaggi": [
+   "Ingresso: 1 mol N₂ + 3 mol H₂ = 4 mol; uscita: 2 mol NH₃.",
+   "Le moli totali cambiano: 4 → 2, quindi non si conservano.",
+   "Massa ingresso: 1 · 28 g + 3 · 2 g = 34 g; massa uscita: 2 · 17 g = 34 g.",
+   "La massa si conserva (legge di Lavoisier), come gli atomi di ogni elemento.",
+   "Si conserva la massa totale, non il numero totale di moli."
+  ],
+  "concetto": "conservazione della massa"
+ },
+ {
+  "id": "IMP-013",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "superiori",
+  "domanda": "Un ripartitore (splitter) divide una corrente in due rami. Quale affermazione è corretta?",
+  "opzioni": {
+   "A": "La corrente con portata maggiore è più concentrata",
+   "B": "Le correnti in uscita hanno la stessa composizione e temperatura della corrente in ingresso",
+   "C": "Il ripartitore separa i componenti più volatili",
+   "D": "Le correnti in uscita hanno composizioni diverse",
+   "E": "La somma delle portate uscenti è minore di quella entrante"
+  },
+  "giusta": "B",
+  "perche": "Un ripartitore divide soltanto la portata: non separa i componenti, quindi ogni ramo ha la stessa composizione e le stesse condizioni della corrente di partenza. Per questo il bilancio di uno splitter dà un solo dato nuovo, cioè il rapporto di ripartizione. La trappola è confonderlo con un separatore (come una colonna o un filtro), che invece cambia la composizione.",
+  "semplice": "Se versi un'aranciata da una bottiglia in due bicchieri, in entrambi c'è la stessa aranciata: cambia solo quanta ne metti.",
+  "passaggi": [
+   "Un ripartitore divide soltanto la portata, senza separare i componenti.",
+   "Quindi ogni ramo ha la stessa composizione e le stesse condizioni (temperatura) della corrente d'ingresso.",
+   "La somma delle portate in uscita è uguale a quella in ingresso.",
+   "Separare i volatili è il compito di un separatore, come una colonna.",
+   "Risposta: uscite con stessa composizione e temperatura dell'ingresso."
+  ],
+  "concetto": "ripartitore"
+ },
+ {
+  "id": "IMP-014",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "test",
+  "domanda": "Perché nei bilanci di materia conviene scegliere una «base di calcolo» (per esempio 100 kg o 100 mol di alimentazione)?",
+  "opzioni": {
+   "A": "Perché la legge di conservazione vale solo per 100 unità",
+   "B": "Perché così le moli si conservano anche con reazione",
+   "C": "Perché i rapporti tra le correnti non dipendono dalla quantità scelta e i conti diventano più semplici",
+   "D": "Perché impone che l'impianto lavori a regime",
+   "E": "Perché elimina la necessità di conoscere le composizioni"
+  },
+  "giusta": "C",
+  "perche": "Le frazioni e i rapporti tra correnti restano gli stessi qualunque sia la quantità di partenza: scegliere una base comoda rende i numeri puliti. Alla fine i risultati si scalano sulla portata reale con una proporzione. La trappola è pensare che la base cambi la fisica del problema: è solo un trucco di calcolo.",
+  "semplice": "Per una ricetta si ragiona su «4 persone» e poi si raddoppia o si dimezza: le proporzioni tra gli ingredienti restano uguali.",
+  "passaggi": [
+   "Nei bilanci contano frazioni e rapporti tra le correnti.",
+   "Questi rapporti non dipendono dalla quantità di partenza scelta.",
+   "Con una base comoda (100 kg o 100 mol) i numeri vengono puliti.",
+   "Alla fine si scala sulla portata reale con una proporzione: la base non cambia la fisica del problema.",
+   "Conviene perché i rapporti non cambiano e i conti si semplificano."
+  ],
+  "concetto": "base di calcolo"
+ },
+ {
+  "id": "IMP-015",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "università",
+  "domanda": "Che cosa indica il numero di gradi di libertà nell'analisi di un'unità di processo?",
+  "opzioni": {
+   "A": "Il numero di correnti in ingresso all'unità",
+   "B": "Il numero di componenti chimici moltiplicato per le fasi",
+   "C": "La differenza tra le incognite e le equazioni indipendenti: se è zero il problema è risolubile",
+   "D": "Il numero di reazioni che avvengono nell'unità",
+   "E": "Il numero di variabili che si possono trascurare"
+  },
+  "giusta": "C",
+  "perche": "Si contano le variabili incognite e si sottraggono le equazioni indipendenti disponibili (bilanci, specifiche, relazioni di equilibrio). Con zero gradi di libertà il problema è determinato; se sono positivi servono altri dati, se negativi i dati sono sovrabbondanti e magari contraddittori. L'analisi aiuta a scegliere da quale unità partire in un impianto complesso. La trappola è confonderlo con la regola delle fasi di Gibbs, che ha un significato diverso.",
+  "semplice": "Se hai due numeri sconosciuti ma una sola informazione («la somma fa 10»), non puoi trovarli: ti manca un'informazione, hai un grado di libertà.",
+  "passaggi": [
+   "Conta le variabili incognite dell'unità.",
+   "Conta le equazioni indipendenti disponibili: bilanci, specifiche, relazioni di equilibrio.",
+   "Gradi di libertà = incognite − equazioni indipendenti.",
+   "Se è zero il problema è determinato; se positivo mancano dati; se negativo i dati sono troppi.",
+   "Risposta: la differenza tra incognite ed equazioni; zero significa risolubile."
+  ],
+  "concetto": "gradi di libertà"
+ },
+ {
+  "id": "IMP-016",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "università",
+  "domanda": "In un reattore adiabatico entra una soluzione con 2 mol/L di reagente; ΔH di reazione = −50 kJ/mol, ρ·cp = 4 kJ/(L·K). Se la conversione è dell'80%, qual è l'aumento di temperatura?",
+  "opzioni": {
+   "A": "25 K",
+   "B": "20 K",
+   "C": "10 K",
+   "D": "16 K",
+   "E": "40 K"
+  },
+  "giusta": "B",
+  "perche": "In un reattore adiabatico il calore di reazione resta tutto nel fluido: ΔT = (−ΔH) · C₀ · X / (ρ·cp). Si ottiene 50 · 2 · 0,8 / 4 = 20 K. Con conversione completa l'aumento sarebbe 25 K, che è il ΔT adiabatico massimo. La trappola è dimenticare la conversione e rispondere 25 K.",
+  "semplice": "Una borsa del ghiaccio istantanea fa il contrario: la reazione assorbe calore e, non potendolo prendere dall'esterno, raffredda il proprio contenuto.",
+  "passaggi": [
+   "Calore liberato per litro: 50 · 2 · 0,8 = 80 kJ/L",
+   "ΔT = 80 / 4 = 20 K"
+  ],
+  "concetto": "aumento adiabatico di temperatura"
+ },
+ {
+  "id": "IMP-017",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "università",
+  "domanda": "In un ciclo con riciclo entrano 100 mol/h di alimentazione fresca con l'1% di inerte. L'inerte esce solo con lo spurgo, che ha la composizione del riciclo, con il 5% di inerte. Quanto vale la portata di spurgo?",
+  "opzioni": {
+   "A": "5 mol/h",
+   "B": "1 mol/h",
+   "C": "50 mol/h",
+   "D": "10 mol/h",
+   "E": "20 mol/h"
+  },
+  "giusta": "E",
+  "perche": "A regime l'inerte che entra deve uscire tutto: entra 1 mol/h e l'unica uscita è lo spurgo. Se lo spurgo contiene il 5% di inerte, la sua portata è 1/0,05 = 20 mol/h. Più si accetta un'alta concentrazione di inerte nel ciclo, più piccolo è lo spurgo e quindi minore la perdita di reagente, ma il reattore lavora più diluito. La trappola è impostare il bilancio sulla portata totale invece che sull'inerte.",
+  "semplice": "È come una stanza con fumatori: se il fumo non può uscire che dalla finestra, a regime ne esce quanto ne entra; più fumo tolleri nella stanza, meno devi aprire la finestra.",
+  "passaggi": [
+   "Inerte in ingresso: 100 · 0,01 = 1 mol/h",
+   "Bilancio sull'inerte: 1 = P · 0,05",
+   "P = 20 mol/h"
+  ],
+  "concetto": "dimensionamento dello spurgo"
+ },
+ {
+  "id": "IMP-018",
+  "materia": "Chimica degli impianti",
+  "argomento": "Bilanci di materia e di energia",
+  "livello": "università",
+  "domanda": "Nel bilancio di energia per un sistema aperto a regime, trascurando energia cinetica e potenziale, quale relazione è corretta?",
+  "opzioni": {
+   "A": "Q = W per qualunque apparecchiatura",
+   "B": "Q − W = variazione di energia interna delle correnti",
+   "C": "Q + W = Σ (portata · cp) in ingresso",
+   "D": "Q − W = 0 quando avvengono reazioni",
+   "E": "Q − W = Σ (portata · entalpia) in uscita − Σ (portata · entalpia) in ingresso"
+  },
+  "giusta": "E",
+  "perche": "Per i sistemi con flusso si usa l'entalpia, che comprende l'energia interna e il lavoro necessario per spingere il fluido dentro e fuori (lavoro di pulsione). Il bilancio diventa Q − W = ΔH delle correnti, dove W è il lavoro utile all'albero, come quello di una pompa o di una turbina. Per uno scambiatore W = 0 e Q = ΔH. La trappola è usare l'energia interna, corretta solo per i sistemi chiusi.",
+  "semplice": "In una caldaia il calore che arriva dalla fiamma finisce tutto nell'aumento di entalpia dell'acqua che diventa vapore.",
+  "passaggi": [
+   "Sistema aperto a regime: per le correnti che entrano ed escono si usa l'entalpia.",
+   "L'entalpia include l'energia interna e il lavoro di pulsione per spingere il fluido dentro e fuori.",
+   "W è solo il lavoro utile all'albero (pompe, turbine); per uno scambiatore W = 0.",
+   "Bilancio: Q − W = Σ(portata · entalpia) in uscita − Σ(portata · entalpia) in ingresso.",
+   "L'energia interna va bene solo per sistemi chiusi: resta la E."
+  ],
+  "concetto": "bilancio di energia aperto"
+ },
+ {
+  "id": "IMP-019",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "Su quale proprietà si basa la separazione per distillazione?",
+  "opzioni": {
+   "A": "La diversa densità dei componenti",
+   "B": "La diversa solubilità in un solvente aggiunto",
+   "C": "La diversa volatilità dei componenti della miscela",
+   "D": "La diversa dimensione delle molecole",
+   "E": "La diversa carica elettrica delle molecole"
+  },
+  "giusta": "C",
+  "perche": "Quando una miscela liquida bolle, il vapore che si forma è più ricco del componente più volatile, cioè quello con tensione di vapore maggiore. Ripetendo molte volte evaporazione e condensazione, in testa alla colonna si raccoglie il più volatile e in coda il meno volatile. La trappola è confondere la distillazione con la decantazione, che sfrutta la densità, o con l'estrazione, che usa un solvente.",
+  "semplice": "Se scaldi vino, il primo vapore che esce ha odore di alcol: l'etanolo è più volatile dell'acqua e passa per primo nel vapore.",
+  "passaggi": [
+   "Quando una miscela bolle, il vapore è più ricco del componente con tensione di vapore maggiore.",
+   "Ripetendo evaporazione e condensazione, in testa si concentra il più volatile e in coda il meno volatile.",
+   "Densità (decantazione), solubilità in un solvente (estrazione), dimensione o carica non sono il principio.",
+   "La distillazione si basa sulla diversa volatilità dei componenti."
+  ],
+  "concetto": "volatilità"
+ },
+ {
+  "id": "IMP-020",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "In equilibrio liquido-vapore un componente ha x = 0,4 nel liquido e y = 0,6 nel vapore; l'altro ha x = 0,6 e y = 0,4. Quanto vale la volatilità relativa α?",
+  "opzioni": {
+   "A": "1,5",
+   "B": "0,44",
+   "C": "2,25",
+   "D": "1,0",
+   "E": "3,0"
+  },
+  "giusta": "C",
+  "perche": "La volatilità relativa è il rapporto tra i coefficienti di ripartizione dei due componenti: α = (y₁/x₁)/(y₂/x₂). Qui (0,6/0,4)/(0,4/0,6) = 1,5/0,667 = 2,25. Più α è lontano da 1, più è facile separare con la distillazione; con α = 1 è impossibile. La trappola è calcolare solo y₁/x₁ = 1,5 dimenticando il secondo componente.",
+  "semplice": "Se in una gara due corridori partono pari ma uno arriva nel vapore con «vantaggio 2,25 volte», separarli è facile; se α vale 1,05 sono quasi appaiati.",
+  "passaggi": [
+   "y₁/x₁ = 0,6/0,4 = 1,5",
+   "y₂/x₂ = 0,4/0,6 = 0,667",
+   "α = 1,5 / 0,667 = 2,25"
+  ],
+  "concetto": "volatilità relativa"
+ },
+ {
+  "id": "IMP-021",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "Una miscela ideale benzene-toluene con x(benzene) = 0,5 si trova a una temperatura in cui P°(benzene) = 100 kPa e P°(toluene) = 40 kPa. Qual è la frazione molare di benzene nel vapore in equilibrio?",
+  "opzioni": {
+   "A": "Circa 0,71",
+   "B": "0,50",
+   "C": "Circa 0,29",
+   "D": "0,70",
+   "E": "Circa 0,86"
+  },
+  "giusta": "A",
+  "perche": "Per la legge di Raoult la pressione parziale di ogni componente è x · P°: benzene 0,5 · 100 = 50 kPa, toluene 0,5 · 40 = 20 kPa. La pressione totale è 70 kPa e la frazione di benzene nel vapore è 50/70 ≈ 0,71. Il vapore è più ricco nel componente più volatile, che è il principio della distillazione. La trappola è rispondere 0,70 leggendo la pressione totale (70 kPa) come se fosse una frazione, oppure 0,50 pensando che il vapore abbia la stessa composizione del liquido.",
+  "semplice": "Metà benzene e metà toluene nel liquido diventano circa 7 parti di benzene su 10 nel vapore: il benzene «scappa» più facilmente.",
+  "passaggi": [
+   "p(benzene) = 0,5 · 100 = 50 kPa",
+   "p(toluene) = 0,5 · 40 = 20 kPa",
+   "P = 70 kPa",
+   "y = 50 / 70 = 0,714"
+  ],
+  "concetto": "legge di Raoult"
+ },
+ {
+  "id": "IMP-022",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "Una colonna riceve F = 100 kmol/h con z = 0,40 del più volatile; il distillato ha x_D = 0,95 e il residuo x_W = 0,05. Quanto vale la portata di distillato D?",
+  "opzioni": {
+   "A": "40 kmol/h",
+   "B": "Circa 61,1 kmol/h",
+   "C": "Circa 42,1 kmol/h",
+   "D": "Circa 38,9 kmol/h",
+   "E": "35 kmol/h"
+  },
+  "giusta": "D",
+  "perche": "Si scrivono il bilancio globale F = D + W e quello sul componente leggero F·z = D·x_D + W·x_W. Risolvendo, D = F·(z − x_W)/(x_D − x_W) = 100 · 0,35/0,90 ≈ 38,9 kmol/h e W ≈ 61,1 kmol/h. La trappola è pensare che D sia 40 kmol/h perché l'alimentazione ha il 40% di leggero: parte del leggero esce nel residuo e il distillato non è puro.",
+  "semplice": "Se in un sacco di 100 biglie 40 sono rosse, non potrai mai riempire un sacchetto di 40 biglie tutte rosse se un po' di rosse finiscono per forza nell'altro sacchetto.",
+  "passaggi": [
+   "F = D + W",
+   "F·z = D·x_D + W·x_W",
+   "D = 100 · (0,40 − 0,05) / (0,95 − 0,05)",
+   "D = 35 / 0,90 = 38,9 kmol/h; W = 61,1 kmol/h"
+  ],
+  "concetto": "bilancio della colonna"
+ },
+ {
+  "id": "IMP-023",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "In testa a una colonna il liquido rimandato in colonna è L = 150 kmol/h e il distillato è D = 50 kmol/h. Quanto valgono il rapporto di riflusso R e la portata di vapore V che sale al condensatore?",
+  "opzioni": {
+   "A": "R = 3 e V = 150 kmol/h",
+   "B": "R = 0,33 e V = 200 kmol/h",
+   "C": "R = 3 e V = 200 kmol/h",
+   "D": "R = 3 e V = 100 kmol/h",
+   "E": "R = 0,75 e V = 200 kmol/h"
+  },
+  "giusta": "C",
+  "perche": "Il rapporto di riflusso è R = L/D = 150/50 = 3. Con un condensatore totale tutto il vapore che arriva in testa diventa liquido e si divide tra riflusso e distillato, quindi V = L + D = 200 kmol/h. La trappola è calcolare R come L/V (0,75), che invece è la pendenza della retta di lavoro di arricchimento.",
+  "semplice": "Su 4 litri di condensato, 3 tornano in colonna a «lavare» il vapore e 1 esce come prodotto: R vale 3.",
+  "passaggi": [
+   "R = L / D = 150 / 50 = 3",
+   "V = L + D = 150 + 50 = 200 kmol/h"
+  ],
+  "concetto": "rapporto di riflusso"
+ },
+ {
+  "id": "IMP-024",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "università",
+  "domanda": "Con il metodo di McCabe-Thiele, R = 3 e x_D = 0,95, qual è l'equazione della retta di lavoro della zona di arricchimento?",
+  "opzioni": {
+   "A": "y = 3 x + 0,95",
+   "B": "y = 0,75 x + 0,2375",
+   "C": "y = 0,25 x + 0,7125",
+   "D": "y = 0,75 x + 0,95",
+   "E": "y = 1,33 x − 0,32"
+  },
+  "giusta": "B",
+  "perche": "La retta di arricchimento è y = R/(R+1) · x + x_D/(R+1). Con R = 3 la pendenza è 3/4 = 0,75 e l'intercetta 0,95/4 = 0,2375. La retta passa per il punto (x_D, x_D) sulla diagonale, e si può controllare: 0,75 · 0,95 + 0,2375 = 0,95. La trappola è usare x_D come intercetta senza dividerlo per R + 1.",
+  "semplice": "La retta collega cosa sale (vapore) e cosa scende (liquido) tra due piatti vicini: più riflusso si usa, più la retta si avvicina alla diagonale e meno piatti servono.",
+  "passaggi": [
+   "Pendenza: R/(R+1) = 3/4 = 0,75",
+   "Intercetta: x_D/(R+1) = 0,95/4 = 0,2375",
+   "Controllo: per x = 0,95, y = 0,7125 + 0,2375 = 0,95"
+  ],
+  "concetto": "retta di lavoro"
+ },
+ {
+  "id": "IMP-025",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "Che cosa succede quando una colonna lavora al riflusso minimo?",
+  "opzioni": {
+   "A": "Servirebbe un numero infinito di stadi per ottenere la separazione richiesta",
+   "B": "Serve il numero minimo di stadi",
+   "C": "Il consumo di vapore al ribollitore è massimo",
+   "D": "Non si produce distillato",
+   "E": "La separazione diventa impossibile a qualunque numero di stadi"
+  },
+  "giusta": "A",
+  "perche": "Al riflusso minimo la retta di lavoro tocca la curva di equilibrio e nel punto di contatto la forza motrice si annulla: i gradini diventano infinitamente piccoli e gli stadi necessari infiniti. All'opposto, il riflusso totale (nessun prodotto estratto) dà il numero minimo di stadi. La trappola è scambiare le due condizioni limite.",
+  "semplice": "È come voler salire una scala con gradini sempre più bassi: arrivi in cima solo con infiniti gradini.",
+  "passaggi": [
+   "Al riflusso minimo la retta di lavoro tocca la curva di equilibrio.",
+   "Nel punto di contatto la forza motrice (distanza dall'equilibrio) si annulla.",
+   "I gradini nel diagramma diventano infinitamente piccoli: servono infiniti stadi.",
+   "Il numero minimo di stadi si ha invece al riflusso totale.",
+   "Al riflusso minimo servirebbe un numero infinito di stadi."
+  ],
+  "concetto": "riflusso minimo"
+ },
+ {
+  "id": "IMP-026",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "test",
+  "domanda": "In pratica, quale valore del rapporto di riflusso si sceglie di solito nel progetto di una colonna?",
+  "opzioni": {
+   "A": "Esattamente il riflusso minimo",
+   "B": "Il riflusso totale",
+   "C": "Circa 1,2-1,5 volte il riflusso minimo",
+   "D": "Circa 10 volte il riflusso minimo",
+   "E": "Un valore minore del riflusso minimo per risparmiare energia"
+  },
+  "giusta": "C",
+  "perche": "Aumentando il riflusso servono meno piatti (minor costo della colonna) ma più vapore al ribollitore e più acqua al condensatore (maggior costo di esercizio). Il costo totale ha un minimo che cade di solito tra 1,2 e 1,5 volte il riflusso minimo. Sotto il minimo la separazione non è possibile. La trappola è pensare che convenga sempre più riflusso perché la separazione migliora.",
+  "semplice": "Comprare un'auto che consuma pochissimo ma costa moltissimo non sempre conviene: si cerca il punto di equilibrio tra prezzo e consumo.",
+  "passaggi": [
+   "Più riflusso = meno piatti (colonna più economica) ma più vapore al ribollitore e acqua al condensatore.",
+   "Il costo totale (impianto + esercizio) ha quindi un minimo.",
+   "Sotto il riflusso minimo la separazione è impossibile; il riflusso totale non produce distillato.",
+   "Il minimo di costo cade di solito tra 1,2 e 1,5 volte il riflusso minimo.",
+   "Si sceglie circa 1,2-1,5 volte il riflusso minimo."
+  ],
+  "concetto": "riflusso ottimale"
+ },
+ {
+  "id": "IMP-027",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "università",
+  "domanda": "Con α = 2,5, x_D = 0,95 e x_W = 0,05, quanti stadi teorici minimi (riflusso totale) prevede l'equazione di Fenske?",
+  "opzioni": {
+   "A": "Circa 3,2",
+   "B": "Circa 9,5",
+   "C": "Circa 2,6",
+   "D": "Circa 12,8",
+   "E": "Circa 6,4"
+  },
+  "giusta": "E",
+  "perche": "L'equazione di Fenske è N_min = ln[(x_D/(1 − x_D)) · ((1 − x_W)/x_W)] / ln α. Qui l'argomento è 19 · 19 = 361, ln 361 ≈ 5,89 e ln 2,5 ≈ 0,916, quindi N_min ≈ 6,4 stadi teorici (ribollitore compreso). La trappola è usare il logaritmo decimale in un solo dei due termini: va usato lo stesso logaritmo sopra e sotto.",
+  "semplice": "Fenske dice quanti gradini servono almeno, anche con riflusso infinito: con componenti più simili (α più vicino a 1) i gradini crescono molto.",
+  "passaggi": [
+   "x_D/(1 − x_D) = 0,95/0,05 = 19",
+   "(1 − x_W)/x_W = 0,95/0,05 = 19",
+   "ln(361) = 5,89; ln(2,5) = 0,916",
+   "N_min = 5,89/0,916 ≈ 6,4"
+  ],
+  "concetto": "equazione di Fenske"
+ },
+ {
+  "id": "IMP-028",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "Perché con una normale distillazione non si può ottenere etanolo puro da una miscela acqua-etanolo?",
+  "opzioni": {
+   "A": "Perché l'etanolo si decompone all'ebollizione",
+   "B": "Perché si forma un azeotropo (circa 95,6% in massa di etanolo) che bolle come un liquido puro",
+   "C": "Perché l'acqua è più volatile dell'etanolo",
+   "D": "Perché etanolo e acqua sono immiscibili",
+   "E": "Perché l'etanolo ha una tensione di vapore nulla"
+  },
+  "giusta": "B",
+  "perche": "Un azeotropo è una miscela in cui liquido e vapore all'equilibrio hanno la stessa composizione: lì la volatilità relativa vale 1 e la distillazione non separa più. Per l'acqua-etanolo l'azeotropo a pressione ambiente è circa al 95,6% in massa. Per superarlo si usano distillazione azeotropica con un terzo componente, setacci molecolari o membrane. La trappola è pensare che basti aggiungere piatti.",
+  "semplice": "L'alcol «a 96 gradi» che si compra è proprio vicino all'azeotropo: distillarlo ancora non lo rende più forte.",
+  "passaggi": [
+   "La distillazione separa solo se vapore e liquido hanno composizioni diverse.",
+   "Acqua ed etanolo formano un azeotropo: liquido e vapore hanno la stessa composizione.",
+   "Lì la volatilità relativa vale 1 e aggiungere piatti non serve.",
+   "A pressione ambiente l'azeotropo è a circa 95,6% in massa di etanolo; i due liquidi sono miscibili.",
+   "Il motivo è l'azeotropo, che bolle come un liquido puro."
+  ],
+  "concetto": "azeotropo"
+ },
+ {
+  "id": "IMP-029",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "Un calcolo dà 12 stadi teorici e l'efficienza globale dei piatti è del 60%. Quanti piatti reali servono?",
+  "opzioni": {
+   "A": "7",
+   "B": "12",
+   "C": "18",
+   "D": "72",
+   "E": "20"
+  },
+  "giusta": "E",
+  "perche": "Un piatto reale non raggiunge l'equilibrio completo, quindi ne servono di più di quelli teorici: N_reali = N_teorici / efficienza = 12/0,6 = 20. La trappola è moltiplicare per l'efficienza (12 · 0,6 ≈ 7), che darebbe meno piatti di quelli ideali, il che è impossibile.",
+  "semplice": "Se ogni operaio lavora al 60% della velocità ideale, per fare il lavoro di 12 persone «perfette» te ne servono 20.",
+  "passaggi": [
+   "N_reali = N_teorici / E",
+   "N_reali = 12 / 0,6 = 20"
+  ],
+  "concetto": "efficienza dei piatti"
+ },
+ {
+  "id": "IMP-030",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "test",
+  "domanda": "In una colonna a piatti, che cosa si intende per ingolfamento (flooding)?",
+  "opzioni": {
+   "A": "Il vapore non riesce a salire perché il liquido è troppo poco",
+   "B": "I piatti si svuotano completamente di liquido",
+   "C": "Il condensatore non riesce a condensare tutto il vapore",
+   "D": "Il liquido non riesce a scendere perché la portata di vapore è troppo alta e si accumula sui piatti",
+   "E": "Il ribollitore si riempie di incrostazioni"
+  },
+  "giusta": "D",
+  "perche": "Se il vapore sale troppo veloce trascina il liquido verso l'alto: il liquido si accumula, la perdita di carico cresce e la colonna smette di separare. L'ingolfamento fissa la velocità massima del vapore e quindi il diametro minimo della colonna. Il problema opposto, a portate troppo basse, è il gocciolamento (weeping) del liquido attraverso i fori. La trappola è confondere i due fenomeni.",
+  "semplice": "Se soffi forte in una cannuccia mentre bevi, il liquido non scende più: è un piccolo ingolfamento.",
+  "passaggi": [
+   "Nel normale funzionamento il vapore sale e il liquido scende di piatto in piatto.",
+   "Se la portata di vapore è troppo alta, trascina il liquido verso l'alto.",
+   "Il liquido non riesce più a scendere, si accumula sui piatti e la perdita di carico cresce.",
+   "Il problema opposto, a portate basse, è il gocciolamento (weeping).",
+   "L'ingolfamento è descritto dalla D."
+  ],
+  "concetto": "ingolfamento"
+ },
+ {
+  "id": "IMP-031",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "In una colonna di distillazione quale apparecchio fornisce il vapore che sale lungo la colonna?",
+  "opzioni": {
+   "A": "Il condensatore in testa",
+   "B": "Il piatto di alimentazione",
+   "C": "L'accumulatore del riflusso",
+   "D": "Il ribollitore in fondo alla colonna",
+   "E": "La pompa di riflusso"
+  },
+  "giusta": "D",
+  "perche": "Il ribollitore vaporizza parte del liquido che arriva in fondo, generando il vapore che risale e si arricchisce nel componente leggero. Il condensatore in testa fa il contrario: condensa il vapore, e una parte torna in colonna come riflusso. In un calcolo a stadi il ribollitore parziale conta come uno stadio di equilibrio. La trappola è pensare che il vapore venga dall'alimentazione: l'alimentazione può essere anche tutta liquida.",
+  "semplice": "È come una pentola in fondo e un coperchio freddo in alto: la pentola fa il vapore, il coperchio lo fa ricadere in gocce.",
+  "passaggi": [
+   "Il vapore nella colonna deve nascere in basso e salire.",
+   "Il ribollitore in fondo vaporizza parte del liquido che arriva in coda.",
+   "Il condensatore in testa fa l'opposto: condensa il vapore e rimanda il riflusso.",
+   "L'alimentazione può essere tutta liquida, quindi non è la fonte del vapore.",
+   "Il vapore lo fornisce il ribollitore in fondo alla colonna."
+  ],
+  "concetto": "ribollitore e condensatore"
+ },
+ {
+  "id": "IMP-032",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "università",
+  "domanda": "L'alimentazione di una colonna è liquido saturo (al punto di bolla). Come appare la retta q nel diagramma di McCabe-Thiele?",
+  "opzioni": {
+   "A": "Verticale (q = 1)",
+   "B": "Orizzontale (q = 0)",
+   "C": "Inclinata a 45° coincidente con la diagonale",
+   "D": "Con pendenza negativa (q > 1)",
+   "E": "Con pendenza positiva tra 0 e 1"
+  },
+  "giusta": "A",
+  "perche": "Il parametro q è la frazione di alimentazione che si aggiunge al liquido che scende. Per liquido saturo q = 1 e la retta q, di pendenza q/(q − 1), diventa verticale e passa per x = z. Vapore saturo dà q = 0 (retta orizzontale), liquido sottoraffreddato q > 1 e miscela bifase 0 < q < 1. La trappola è associare q = 1 al vapore.",
+  "semplice": "Se l'alimentazione è tutta liquida e già al punto di ebollizione, si unisce interamente al liquido che scende: per questo q vale 1.",
+  "passaggi": [
+   "q è la frazione di alimentazione che si aggiunge al liquido che scende.",
+   "Liquido saturo: tutto va nel liquido, quindi q = 1.",
+   "La pendenza della retta q è q/(q − 1): con q = 1 il denominatore è 0, la pendenza è infinita.",
+   "La retta è verticale e passa per x = z (vapore saturo darebbe q = 0, retta orizzontale).",
+   "Risposta: verticale (q = 1)."
+  ],
+  "concetto": "condizione termica dell'alimentazione"
+ },
+ {
+  "id": "IMP-033",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "università",
+  "domanda": "Una colonna a riempimento deve realizzare 10 stadi teorici e il riempimento ha un'altezza equivalente a uno stadio teorico (HETP) di 0,5 m. Quale altezza di riempimento serve?",
+  "opzioni": {
+   "A": "5 m",
+   "B": "20 m",
+   "C": "0,05 m",
+   "D": "10,5 m",
+   "E": "2 m"
+  },
+  "giusta": "A",
+  "perche": "Nelle colonne a riempimento il contatto è continuo e non ci sono piatti: si usa l'HETP, cioè l'altezza di riempimento che produce la stessa separazione di uno stadio teorico. L'altezza è Z = N · HETP = 10 · 0,5 = 5 m. A questa si aggiungono poi spazi per distributori e supporti. La trappola è dividere invece di moltiplicare.",
+  "semplice": "Se ogni mezzo metro di riempimento vale «un piatto», per 10 piatti servono 5 metri.",
+  "passaggi": [
+   "Z = N · HETP",
+   "Z = 10 · 0,5 = 5 m"
+  ],
+  "concetto": "HETP"
+ },
+ {
+  "id": "IMP-034",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "test",
+  "domanda": "In una distillazione in corrente di vapore di un olio essenziale immiscibile con l'acqua, come si comporta la pressione totale?",
+  "opzioni": {
+   "A": "È uguale alla sola tensione di vapore dell'acqua",
+   "B": "È la media pesata delle due tensioni di vapore secondo Raoult",
+   "C": "Dipende dalla quantità di olio presente",
+   "D": "È sempre maggiore di 1 atm",
+   "E": "È la somma delle tensioni di vapore dei due liquidi puri, quindi l'ebollizione avviene sotto i 100 °C"
+  },
+  "giusta": "E",
+  "perche": "Due liquidi immiscibili evaporano ciascuno come se l'altro non ci fosse: ognuno esercita la propria tensione di vapore piena e la pressione totale è la somma. Così la miscela bolle quando la somma arriva a 1 atm, cioè sotto i 100 °C, e sostanze delicate si distillano senza decomporsi. La trappola è applicare Raoult con le frazioni molari, valido solo per liquidi miscibili.",
+  "semplice": "Le essenze di lavanda si ottengono facendo passare vapore tra i fiori: l'olio esce con il vapore a meno di 100 °C e poi si separa dall'acqua in un vaso.",
+  "passaggi": [
+   "L'olio essenziale e l'acqua sono immiscibili: Raoult con le frazioni molari non si applica.",
+   "Ciascun liquido esercita la propria tensione di vapore piena, come se l'altro non ci fosse.",
+   "Pressione totale = P°acqua + P°olio.",
+   "La miscela bolle quando la somma raggiunge 1 atm: P°acqua < 1 atm, quindi sotto i 100 °C.",
+   "Risposta: è la somma delle tensioni di vapore, ebollizione sotto i 100 °C."
+  ],
+  "concetto": "distillazione in corrente di vapore"
+ },
+ {
+  "id": "IMP-035",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "superiori",
+  "domanda": "Nella distillazione frazionata del petrolio grezzo (topping), dove si raccolgono le frazioni più leggere come GPL e benzine?",
+  "opzioni": {
+   "A": "In fondo alla colonna, dove la temperatura è più alta",
+   "B": "In testa alla colonna, dove la temperatura è più bassa",
+   "C": "A metà colonna, nel piatto di alimentazione",
+   "D": "Nel residuo insieme al bitume",
+   "E": "Nel forno prima della colonna"
+  },
+  "giusta": "B",
+  "perche": "Lungo la colonna la temperatura cala dal fondo alla testa: i componenti con temperatura di ebollizione bassa salgono più in alto prima di condensare. In testa escono gas e benzine, ai lati cherosene e gasoli, in fondo il residuo atmosferico. La trappola è pensare che le frazioni leggere stiano in basso perché «più importanti»: la posizione dipende solo dalla volatilità.",
+  "semplice": "In una torre di raffineria, più una frazione è leggera e più sale in alto, come le bollicine in una bottiglia.",
+  "passaggi": [
+   "Lungo la colonna la temperatura cala dal fondo alla testa.",
+   "I componenti con temperatura di ebollizione bassa salgono più in alto prima di condensare.",
+   "Ai lati escono cherosene e gasoli, in fondo il residuo con le parti pesanti.",
+   "GPL e benzine si raccolgono in testa, dove la temperatura è più bassa."
+  ],
+  "concetto": "frazionamento del grezzo"
+ },
+ {
+  "id": "IMP-036",
+  "materia": "Chimica degli impianti",
+  "argomento": "Distillazione",
+  "livello": "università",
+  "domanda": "Perché a volte si distilla sotto vuoto?",
+  "opzioni": {
+   "A": "Per aumentare la volatilità relativa di qualunque miscela",
+   "B": "Per abbassare le temperature di ebollizione e non decomporre sostanze sensibili al calore",
+   "C": "Per eliminare la necessità del condensatore",
+   "D": "Per far bollire i componenti a temperature più alte",
+   "E": "Per rompere sempre gli azeotropi"
+  },
+  "giusta": "B",
+  "perche": "Riducendo la pressione si abbassano tutte le temperature di ebollizione: così si distillano composti pesanti o termolabili, come il residuo atmosferico del petrolio o alcuni prodotti farmaceutici, senza craccarli o degradarli. Il prezzo è un volume di vapore molto maggiore, quindi colonne di diametro più grande, e un condensatore più freddo. La trappola è credere che il vuoto rompa sempre gli azeotropi: talvolta ne sposta la composizione, ma non è una regola.",
+  "semplice": "In montagna l'acqua bolle sotto i 100 °C perché la pressione è più bassa: in una colonna sotto vuoto succede la stessa cosa.",
+  "passaggi": [
+   "Abbassando la pressione si abbassano tutte le temperature di ebollizione.",
+   "Così composti pesanti o termolabili si distillano senza craccarsi o degradarsi.",
+   "Il vuoto non elimina il condensatore e non rompe sempre gli azeotropi.",
+   "Si distilla sotto vuoto per abbassare le temperature di ebollizione e non decomporre le sostanze."
+  ],
+  "concetto": "distillazione sotto vuoto"
+ },
+ {
+  "id": "IMP-037",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Che cosa avviene nell'assorbimento gas-liquido?",
+  "opzioni": {
+   "A": "Un componente di una miscela gassosa passa in un liquido in cui è solubile",
+   "B": "Un liquido evapora dentro un gas inerte",
+   "C": "Un solido trattiene sulla superficie le molecole di un gas",
+   "D": "Due liquidi immiscibili si scambiano un soluto",
+   "E": "Un gas viene condensato raffreddandolo"
+  },
+  "giusta": "A",
+  "perche": "Nell'assorbimento una miscela gassosa viene messa a contatto con un liquido (il solvente) che scioglie selettivamente uno dei componenti, per esempio CO₂ o SO₃. L'operazione inversa, in cui il gas disciolto viene liberato dal liquido, si chiama desorbimento o stripping. La trappola è confondere assorbimento e adsorbimento: nel secondo le molecole si fermano sulla superficie di un solido, come nei carboni attivi.",
+  "semplice": "Quando si fa l'acqua gassata, l'anidride carbonica sotto pressione viene sciolta nell'acqua: è un assorbimento.",
+  "passaggi": [
+   "Nell'assorbimento una miscela gassosa è messa a contatto con un liquido solvente.",
+   "Il liquido scioglie selettivamente uno dei componenti del gas (per esempio CO₂).",
+   "Non è adsorbimento (molecole sulla superficie di un solido) né estrazione liquido-liquido.",
+   "Un componente del gas passa nel liquido in cui è solubile."
+  ],
+  "concetto": "assorbimento"
+ },
+ {
+  "id": "IMP-038",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Per un gas poco solubile vale la legge di Henry p = H · x. Se la pressione parziale del gas è 10 kPa e H = 400 kPa, qual è la frazione molare del gas disciolto all'equilibrio?",
+  "opzioni": {
+   "A": "40",
+   "B": "0,25",
+   "C": "4000",
+   "D": "0,025",
+   "E": "0,0025"
+  },
+  "giusta": "D",
+  "perche": "Dalla legge di Henry x = p/H = 10/400 = 0,025. Più è grande la costante H, meno il gas è solubile. La trappola è moltiplicare p · H, ottenendo un numero senza senso fisico, oppure sbagliare la virgola.",
+  "semplice": "Raddoppiando la pressione del gas sopra il liquido, raddoppia anche la quantità di gas disciolto: è per questo che le bibite si gassano sotto pressione.",
+  "passaggi": [
+   "x = p / H",
+   "x = 10 / 400 = 0,025"
+  ],
+  "concetto": "legge di Henry"
+ },
+ {
+  "id": "IMP-039",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Quali condizioni favoriscono l'assorbimento di un gas in un liquido?",
+  "opzioni": {
+   "A": "Bassa pressione e alta temperatura",
+   "B": "Alta pressione e alta temperatura",
+   "C": "Alta pressione e bassa temperatura",
+   "D": "Bassa pressione e bassa temperatura",
+   "E": "Solo la presenza di un catalizzatore"
+  },
+  "giusta": "C",
+  "perche": "La solubilità di un gas cresce con la sua pressione parziale (legge di Henry) e cala quando la temperatura sale, perché le molecole hanno più energia per tornare nel gas. Per questo gli assorbitori lavorano freddi e in pressione, mentre il desorbimento si fa scaldando o abbassando la pressione. La trappola è pensare che il calore aiuti a sciogliere un gas come aiuta a sciogliere lo zucchero.",
+  "semplice": "Una bibita gassata calda e aperta perde subito le bollicine; fredda e chiusa le conserva.",
+  "passaggi": [
+   "Legge di Henry: la solubilità di un gas cresce con la sua pressione parziale.",
+   "Al crescere della temperatura la solubilità di un gas cala: le molecole tornano più facilmente nel gas.",
+   "Quindi conviene alta pressione e bassa temperatura.",
+   "Il desorbimento, al contrario, si fa scaldando o abbassando la pressione.",
+   "Favoriscono l'assorbimento alta pressione e bassa temperatura."
+  ],
+  "concetto": "condizioni di assorbimento"
+ },
+ {
+  "id": "IMP-040",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Un assorbitore tratta G = 100 kmol/h di gas inerte; il rapporto molare del soluto scende da Y = 0,05 a Y = 0,005. Il solvente puro entra con L = 150 kmol/h. Qual è il rapporto molare X del soluto nel liquido uscente?",
+  "opzioni": {
+   "A": "0,045",
+   "B": "0,03",
+   "C": "0,0333",
+   "D": "0,0045",
+   "E": "0,3"
+  },
+  "giusta": "B",
+  "perche": "Lavorando con i rapporti molari (moli di soluto per mole di gas inerte o di solvente puro) le portate G e L restano costanti. Il soluto tolto al gas è 100 · (0,05 − 0,005) = 4,5 kmol/h e finisce nel liquido: X = 4,5/150 = 0,03. La trappola è dimenticare che il gas non viene ripulito del tutto e usare 0,05 invece della differenza.",
+  "semplice": "È come trasferire biglie da un sacco all'altro: quante ne togli dal gas, tante ne trovi nel liquido.",
+  "passaggi": [
+   "Soluto trasferito: 100 · (0,05 − 0,005) = 4,5 kmol/h",
+   "X_uscita = 4,5 / 150 = 0,03"
+  ],
+  "concetto": "bilancio dell'assorbitore"
+ },
+ {
+  "id": "IMP-041",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "test",
+  "domanda": "Il rapporto minimo liquido/gas calcolato per un assorbitore è 2. Quale valore si usa tipicamente nel progetto?",
+  "opzioni": {
+   "A": "Circa 3 (1,5 volte il minimo)",
+   "B": "Esattamente 2",
+   "C": "1",
+   "D": "20",
+   "E": "0,5"
+  },
+  "giusta": "A",
+  "perche": "Al rapporto minimo la retta di lavoro tocca la curva di equilibrio e servirebbe una colonna infinitamente alta. Si lavora quindi con un rapporto maggiore, di solito 1,2-2 volte il minimo, scegliendo il compromesso tra altezza della colonna e costo del solvente da rigenerare. Con 1,5 volte si ottiene 3. La trappola è pensare che il minimo sia il valore ottimale perché consuma meno solvente.",
+  "semplice": "Usare pochissimo detersivo basterebbe in teoria, ma ci vorrebbe un lavaggio lunghissimo: se ne mette un po' di più per finire in tempo.",
+  "passaggi": [
+   "(L/G)_reale = 1,5 · (L/G)_min",
+   "(L/G)_reale = 1,5 · 2 = 3"
+  ],
+  "concetto": "rapporto liquido/gas"
+ },
+ {
+  "id": "IMP-042",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Nell'estrazione liquido-liquido, come si chiama la fase che, dopo il contatto con il solvente, ha perso il soluto?",
+  "opzioni": {
+   "A": "Estratto",
+   "B": "Distillato",
+   "C": "Raffinato",
+   "D": "Concentrato",
+   "E": "Residuo di fondo"
+  },
+  "giusta": "C",
+  "perche": "Nell'estrazione l'alimentazione viene messa a contatto con un solvente immiscibile o poco miscibile. La fase ricca di solvente che ha preso il soluto si chiama estratto, mentre la fase di partenza impoverita si chiama raffinato. Le due fasi si separano per differenza di densità in decantatori o colonne. La trappola è invertire i due nomi.",
+  "semplice": "Quando prepari il tè, l'acqua calda (solvente) diventa l'estratto colorato e le foglie che restano nella bustina sono il raffinato.",
+  "passaggi": [
+   "Nell'estrazione l'alimentazione è messa a contatto con un solvente poco miscibile.",
+   "La fase ricca di solvente che prende il soluto si chiama estratto.",
+   "La fase di partenza impoverita di soluto si chiama raffinato.",
+   "La fase che ha perso il soluto è il raffinato."
+  ],
+  "concetto": "estratto e raffinato"
+ },
+ {
+  "id": "IMP-043",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "In una estrazione a singolo stadio il coefficiente di ripartizione è K = 4 e si usa un volume di solvente uguale a quello della soluzione. Quale frazione di soluto resta nella fase di partenza?",
+  "opzioni": {
+   "A": "25%",
+   "B": "80%",
+   "C": "4%",
+   "D": "50%",
+   "E": "20%"
+  },
+  "giusta": "E",
+  "perche": "Con K = C(solvente)/C(soluzione) e volumi uguali, all'equilibrio il soluto si divide in parti 4 a 1 tra solvente e soluzione. La frazione che resta è 1/(1 + K · V_s/V_f) = 1/5 = 20%. La trappola è calcolare 1/K = 25%, che confonde il rapporto tra concentrazioni con la frazione rimasta.",
+  "semplice": "Se ogni 5 molecole di soluto 4 preferiscono il solvente e 1 resta dov'era, dopo l'agitazione nella soluzione ne trovi 1 su 5.",
+  "passaggi": [
+   "Frazione rimasta: 1 / (1 + K · V_s/V_f)",
+   "= 1 / (1 + 4 · 1) = 1/5",
+   "= 0,20 → 20%"
+  ],
+  "concetto": "coefficiente di ripartizione"
+ },
+ {
+  "id": "IMP-044",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "università",
+  "domanda": "Con K = 4 si dispone di un volume di solvente pari a quello della soluzione. Conviene usarlo tutto in un'estrazione oppure in due estrazioni successive con metà volume ciascuna?",
+  "opzioni": {
+   "A": "Una estrazione: resta il 20% contro il 33% con due",
+   "B": "È indifferente: in entrambi i casi resta il 20%",
+   "C": "Due estrazioni: resta il 4% del soluto",
+   "D": "Due estrazioni: resta circa l'11% del soluto contro il 20% con una sola",
+   "E": "Una estrazione: resta circa l'11% contro il 20% con due"
+  },
+  "giusta": "D",
+  "perche": "Con metà volume per volta ogni estrazione lascia 1/(1 + 4 · 0,5) = 1/3 del soluto; dopo due stadi resta (1/3)² ≈ 11%. Con una sola estrazione resta 1/5 = 20%. Frazionare il solvente in più stadi è sempre più efficace, ed è il principio dell'estrazione in controcorrente a più stadi. La trappola è pensare che conti solo il volume totale di solvente.",
+  "semplice": "Sciacquare un bicchiere due volte con poca acqua lo pulisce meglio che sciacquarlo una volta con tutta l'acqua.",
+  "passaggi": [
+   "Un'estrazione: 1/(1 + 4·1) = 0,20",
+   "Ogni mezza estrazione: 1/(1 + 4·0,5) = 1/3",
+   "Due mezze estrazioni: (1/3)² = 0,111",
+   "0,111 < 0,20: conviene frazionare"
+  ],
+  "concetto": "estrazione a più stadi"
+ },
+ {
+  "id": "IMP-045",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "test",
+  "domanda": "Quale caratteristica NON è desiderabile in un solvente di estrazione?",
+  "opzioni": {
+   "A": "Sciogliere bene il soluto (alta selettività)",
+   "B": "Essere facile da recuperare, per esempio per distillazione",
+   "C": "Essere completamente miscibile con la soluzione da trattare",
+   "D": "Avere densità diversa dalla fase da trattare",
+   "E": "Essere poco tossico e poco costoso"
+  },
+  "giusta": "C",
+  "perche": "Per avere due fasi da separare, il solvente deve essere immiscibile o poco miscibile con la soluzione di partenza: se fosse completamente miscibile non si formerebbero due strati. Deve poi sciogliere bene il soluto, separarsi facilmente per densità ed essere recuperabile per riutilizzarlo. La trappola è pensare che «più si mescola meglio è»: serve contatto intimo, ma poi le fasi devono separarsi.",
+  "semplice": "Per togliere lo iodio dall'acqua si usa un solvente organico che non si mescola con l'acqua: si formano due strati e quello colorato contiene lo iodio.",
+  "passaggi": [
+   "La domanda chiede la caratteristica NON desiderabile.",
+   "Per estrarre servono due fasi da separare dopo il contatto.",
+   "Un solvente completamente miscibile con la soluzione non formerebbe due strati.",
+   "Selettività, facile recupero, densità diversa, bassa tossicità e costo sono invece qualità utili.",
+   "Non desiderabile: essere completamente miscibile con la soluzione."
+  ],
+  "concetto": "scelta del solvente"
+ },
+ {
+  "id": "IMP-046",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Un evaporatore concentra 5000 kg/h di una soluzione dal 5% al 25% in massa di soluto. Quanto vapore produce?",
+  "opzioni": {
+   "A": "1000 kg/h",
+   "B": "4000 kg/h",
+   "C": "1250 kg/h",
+   "D": "3750 kg/h",
+   "E": "4750 kg/h"
+  },
+  "giusta": "B",
+  "perche": "Il soluto non evapora: entra con 5000 · 0,05 = 250 kg/h e deve uscire tutto nel concentrato. Al 25% il concentrato pesa 250/0,25 = 1000 kg/h. Il vapore prodotto è 5000 − 1000 = 4000 kg/h. La trappola è rispondere 1000 kg/h, che è il concentrato.",
+  "semplice": "Per portare un brodo da 5 litri a 1 litro, quasi tutta l'acqua deve andarsene in vapore.",
+  "passaggi": [
+   "Soluto: 5000 · 0,05 = 250 kg/h",
+   "Concentrato: 250 / 0,25 = 1000 kg/h",
+   "Vapore: 5000 − 1000 = 4000 kg/h"
+  ],
+  "concetto": "bilancio dell'evaporatore"
+ },
+ {
+  "id": "IMP-047",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "università",
+  "domanda": "Un evaporatore a singolo effetto produce 4000 kg/h di vapore (calore latente 2260 kJ/kg) da una soluzione alimentata già alla temperatura di ebollizione. Il vapore di riscaldamento ha calore latente 2200 kJ/kg. Quanto vapore di riscaldamento serve?",
+  "opzioni": {
+   "A": "4000 kg/h",
+   "B": "Circa 3890 kg/h",
+   "C": "Circa 4110 kg/h",
+   "D": "Circa 2000 kg/h",
+   "E": "Circa 8000 kg/h"
+  },
+  "giusta": "C",
+  "perche": "Con alimentazione già all'ebollizione tutto il calore serve a vaporizzare: Q = 4000 · 2260 = 9,04 · 10⁶ kJ/h. Il vapore di riscaldamento lo fornisce condensando: m = Q/2200 ≈ 4110 kg/h. L'economia è quindi circa 0,97 kg di vapore prodotto per kg di vapore usato, tipico di un singolo effetto. La trappola è invertire il rapporto tra i calori latenti e ottenere un valore minore di 4000.",
+  "semplice": "In un singolo effetto, per far bollire un chilo d'acqua serve circa un chilo di vapore: per questo si inventano i multipli effetti.",
+  "passaggi": [
+   "Q = 4000 · 2260 = 9 040 000 kJ/h",
+   "m_vapore = 9 040 000 / 2200 = 4109 kg/h"
+  ],
+  "concetto": "consumo di vapore"
+ },
+ {
+  "id": "IMP-048",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "test",
+  "domanda": "Perché si usano evaporatori a multiplo effetto?",
+  "opzioni": {
+   "A": "Perché aumentano la temperatura di ebollizione della soluzione",
+   "B": "Perché eliminano la necessità del condensatore finale",
+   "C": "Perché lavorano tutti alla stessa pressione",
+   "D": "Perché aumentano la differenza di temperatura in ogni effetto",
+   "E": "Perché il vapore prodotto in un effetto riscalda quello successivo, riducendo il consumo di vapore fresco"
+  },
+  "giusta": "E",
+  "perche": "Nel multiplo effetto il vapore prodotto nel primo effetto diventa il mezzo riscaldante del secondo, che lavora a pressione più bassa e quindi bolle a temperatura minore, e così via. Con n effetti si evaporano circa n kg di acqua per kg di vapore fresco (un po' meno in pratica). Il costo è un'apparecchiatura più grande, perché il salto di temperatura totale è diviso tra gli effetti. La trappola è pensare che tutti gli effetti lavorino alla stessa pressione.",
+  "semplice": "È come usare l'acqua calda della pasta per scaldare il piatto: riutilizzi l'energia invece di buttarla.",
+  "passaggi": [
+   "Nel multiplo effetto il vapore prodotto in un effetto riscalda l'effetto successivo.",
+   "Ogni effetto lavora a pressione più bassa, quindi bolle a temperatura minore e può usare quel vapore.",
+   "Con n effetti si evaporano circa n kg d'acqua per kg di vapore fresco.",
+   "Le pressioni non sono uguali e il ΔT totale viene diviso tra gli effetti, non aumentato.",
+   "Si usano per ridurre il consumo di vapore fresco."
+  ],
+  "concetto": "multiplo effetto"
+ },
+ {
+  "id": "IMP-049",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "università",
+  "domanda": "Perché l'innalzamento ebullioscopico riduce le prestazioni di un evaporatore?",
+  "opzioni": {
+   "A": "Perché la soluzione bolle a temperatura più alta dell'acqua pura e la differenza utile di temperatura diminuisce",
+   "B": "Perché la soluzione bolle a temperatura più bassa e il vapore è più freddo",
+   "C": "Perché aumenta il calore latente del vapore di riscaldamento",
+   "D": "Perché impedisce la formazione di incrostazioni",
+   "E": "Perché fa diminuire la concentrazione del prodotto"
+  },
+  "giusta": "A",
+  "perche": "Un soluto disciolto alza la temperatura di ebollizione della soluzione rispetto all'acqua pura alla stessa pressione. Il vapore di riscaldamento ha una temperatura fissata, quindi il ΔT disponibile per lo scambio termico si riduce e serve più superficie. L'effetto cresce con la concentrazione, per cui pesa soprattutto negli ultimi effetti. La trappola è confondere l'innalzamento ebullioscopico con l'abbassamento crioscopico.",
+  "semplice": "L'acqua molto salata della pasta bolle a qualche decimo di grado in più: in un evaporatore industriale, con soluzioni concentrate, la differenza diventa di diversi gradi.",
+  "passaggi": [
+   "Un soluto disciolto alza la temperatura di ebollizione della soluzione rispetto all'acqua pura.",
+   "Il vapore di riscaldamento ha temperatura fissata.",
+   "ΔT utile = T vapore − T ebollizione soluzione: se la seconda sale, il ΔT diminuisce.",
+   "Con meno ΔT serve più superficie di scambio per lo stesso calore.",
+   "Risposta: la soluzione bolle a temperatura più alta e la differenza utile diminuisce."
+  ],
+  "concetto": "innalzamento ebullioscopico"
+ },
+ {
+  "id": "IMP-050",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Perché succhi di frutta e latte si concentrano in evaporatori sotto vuoto?",
+  "opzioni": {
+   "A": "Per aumentare la loro temperatura di ebollizione",
+   "B": "Per farli bollire a bassa temperatura e non alterarne gusto, colore e vitamine",
+   "C": "Per sterilizzarli con il calore",
+   "D": "Perché sotto vuoto il calore latente si annulla",
+   "E": "Per ridurre la quantità d'acqua da evaporare"
+  },
+  "giusta": "B",
+  "perche": "Abbassando la pressione l'acqua bolle a 40-70 °C invece che a 100 °C, e i prodotti termosensibili non si degradano. Inoltre aumenta la differenza di temperatura con il vapore di riscaldamento. La quantità d'acqua da togliere però non cambia: dipende solo dalle concentrazioni. La trappola è credere che il vuoto riduca l'acqua da evaporare.",
+  "semplice": "Il latte condensato ha un sapore di latte e non di bruciato proprio perché viene concentrato a bassa temperatura sotto vuoto.",
+  "passaggi": [
+   "Abbassando la pressione l'acqua bolle a 40-70 °C invece che a 100 °C.",
+   "Succhi e latte sono termosensibili: a bassa temperatura gusto, colore e vitamine si conservano.",
+   "La quantità d'acqua da togliere dipende solo dalle concentrazioni e non cambia.",
+   "Il calore latente non si annulla e lo scopo non è sterilizzare.",
+   "Si concentrano sotto vuoto per farli bollire a bassa temperatura senza alterarli."
+  ],
+  "concetto": "evaporazione sotto vuoto"
+ },
+ {
+  "id": "IMP-051",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "università",
+  "domanda": "Cosa si fa nella ricompressione meccanica del vapore (MVR) applicata a un evaporatore?",
+  "opzioni": {
+   "A": "Si comprime la soluzione per farla bollire a temperatura più alta",
+   "B": "Si scarica il vapore prodotto direttamente nell'atmosfera",
+   "C": "Si usa un compressore per creare il vuoto nell'alimentazione",
+   "D": "Si comprime il vapore prodotto per alzarne la temperatura e usarlo come mezzo riscaldante dello stesso evaporatore",
+   "E": "Si condensa il vapore e si rimanda l'acqua in alimentazione"
+  },
+  "giusta": "D",
+  "perche": "Il vapore prodotto ha una temperatura troppo bassa per riscaldare la soluzione da cui proviene. Un compressore ne aumenta pressione e temperatura di condensazione, e così il vapore torna nella camera di riscaldamento dello stesso evaporatore. Si consuma energia elettrica per il compressore, ma si risparmia quasi tutto il vapore fresco. La trappola è pensare che si comprima il liquido.",
+  "semplice": "È lo stesso principio della pompa di calore: si spende un po' di energia per riportare il calore «in salita» e riusarlo.",
+  "passaggi": [
+   "Il vapore prodotto da un evaporatore è troppo freddo per riscaldare la sua stessa soluzione.",
+   "Un compressore ne aumenta pressione e quindi temperatura di condensazione.",
+   "Il vapore compresso torna nella camera di riscaldamento dello stesso evaporatore.",
+   "Si spende energia elettrica ma si risparmia quasi tutto il vapore fresco; non si comprime il liquido.",
+   "Risposta: la D."
+  ],
+  "concetto": "ricompressione del vapore"
+ },
+ {
+  "id": "IMP-052",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "università",
+  "domanda": "Nell'assorbimento in controcorrente si definisce il fattore di assorbimento A = L/(m·G), dove m è la pendenza della retta di equilibrio. Cosa indica A > 1?",
+  "opzioni": {
+   "A": "Che il liquido può portare via il soluto più velocemente di quanto l'equilibrio lo limiti: con abbastanza stadi l'assorbimento può essere quasi completo",
+   "B": "Che l'assorbimento è impossibile",
+   "C": "Che il gas è più solubile a temperatura alta",
+   "D": "Che serve un solo stadio teorico in ogni caso",
+   "E": "Che la colonna è ingolfata"
+  },
+  "giusta": "A",
+  "perche": "A confronta la pendenza della retta di lavoro (L/G) con quella della retta di equilibrio (m). Se A > 1 le due rette divergono verso la testa della colonna e aumentando gli stadi si può togliere quasi tutto il soluto dal gas. Se A < 1 si raggiunge un limite che non si supera neanche con infiniti stadi. Valori di progetto tipici sono tra 1,2 e 2. La trappola è pensare che A > 1 significhi un solo stadio.",
+  "semplice": "Se il secchio (liquido) porta via l'acqua più in fretta di quanto entri dal tetto (gas), con abbastanza secchi la stanza si asciuga; altrimenti non basta mai.",
+  "passaggi": [
+   "A = L/(m·G) confronta la pendenza della retta di lavoro (L/G) con quella di equilibrio (m).",
+   "A > 1: la retta di lavoro è più ripida e le due rette si allontanano verso la testa.",
+   "Aumentando gli stadi il gas può essere impoverito quasi completamente di soluto.",
+   "Con A < 1 c'è un limite che non si supera nemmeno con infiniti stadi.",
+   "A > 1: con abbastanza stadi l'assorbimento può essere quasi completo."
+  ],
+  "concetto": "fattore di assorbimento"
+ },
+ {
+  "id": "IMP-053",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "test",
+  "domanda": "Qual è la differenza principale tra assorbimento e stripping (desorbimento)?",
+  "opzioni": {
+   "A": "Nell'assorbimento si usa un solido, nello stripping un liquido",
+   "B": "Nell'assorbimento il soluto passa dal gas al liquido, nello stripping dal liquido al gas",
+   "C": "Lo stripping lavora ad alta pressione e bassa temperatura",
+   "D": "Sono la stessa operazione con nomi diversi",
+   "E": "Nello stripping il soluto passa da un liquido a un altro liquido"
+  },
+  "giusta": "B",
+  "perche": "Le due operazioni sono speculari: l'assorbimento toglie un componente da un gas usando un liquido, lo stripping lo libera dal liquido usando un gas (aria, vapore) o scaldando. Spesso lavorano in coppia: il solvente carico esce dall'assorbitore, viene rigenerato nello stripper e torna all'assorbitore. Le condizioni sono opposte: lo stripping preferisce alta temperatura e bassa pressione. La trappola è pensare che siano la stessa cosa.",
+  "semplice": "Nella cattura della CO₂ dai fumi un'ammina la assorbe a freddo; poi, scaldandola, la CO₂ si libera e l'ammina si riusa.",
+  "passaggi": [
+   "Assorbimento: il soluto passa dal gas al liquido.",
+   "Stripping: il soluto passa dal liquido al gas (aria, vapore) o si libera scaldando.",
+   "Sono operazioni speculari, spesso in coppia per rigenerare il solvente.",
+   "Lo stripping preferisce alta temperatura e bassa pressione, l'opposto dell'assorbimento.",
+   "La differenza è il verso del passaggio del soluto (B)."
+  ],
+  "concetto": "stripping"
+ },
+ {
+  "id": "IMP-054",
+  "materia": "Chimica degli impianti",
+  "argomento": "Assorbimento, estrazione ed evaporazione",
+  "livello": "superiori",
+  "domanda": "Che cosa si ottiene da un evaporatore?",
+  "opzioni": {
+   "A": "Il solvente puro e il soluto solido secco",
+   "B": "Due fasi liquide immiscibili",
+   "C": "Un gas assorbito in un liquido",
+   "D": "Un distillato ricco del componente meno volatile",
+   "E": "Una soluzione più concentrata e vapore del solvente"
+  },
+  "giusta": "E",
+  "perche": "L'evaporazione toglie parte del solvente, quasi sempre acqua, sotto forma di vapore, e lascia una soluzione più concentrata. Se si continua fino a far precipitare il soluto si parla di cristallizzazione, e se si toglie tutta l'acqua di essiccamento. A differenza della distillazione, il soluto è praticamente non volatile e non interessa la composizione del vapore. La trappola è pensare che un evaporatore produca sempre un solido secco.",
+  "semplice": "Fare la marmellata è un'evaporazione: la frutta perde acqua e diventa più densa e concentrata.",
+  "passaggi": [
+   "L'evaporatore toglie parte del solvente, quasi sempre acqua, come vapore.",
+   "Il soluto è praticamente non volatile e resta nel liquido.",
+   "Non si arriva al solido secco: quello è cristallizzazione o essiccamento.",
+   "Si ottengono una soluzione più concentrata e vapore del solvente."
+  ],
+  "concetto": "evaporazione"
+ },
+ {
+  "id": "IMP-055",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "Quali sono i tre meccanismi di trasmissione del calore?",
+  "opzioni": {
+   "A": "Conduzione, evaporazione e condensazione",
+   "B": "Convezione, diffusione e filtrazione",
+   "C": "Conduzione, convezione e irraggiamento",
+   "D": "Irraggiamento, compressione ed espansione",
+   "E": "Conduzione, fusione e solidificazione"
+  },
+  "giusta": "C",
+  "perche": "Nella conduzione il calore passa da molecola a molecola in un corpo senza movimento di materia, come in una parete metallica. Nella convezione è il fluido in movimento a trasportarlo, e negli scambiatori è il meccanismo tra fluido e parete. L'irraggiamento avviene tramite onde elettromagnetiche anche nel vuoto ed è importante ad alta temperatura, come nei forni. La trappola è inserire i cambiamenti di stato, che sono fenomeni e non meccanismi di trasmissione.",
+  "semplice": "Il manico di un cucchiaio nel tè si scalda per conduzione, il termosifone scalda l'aria della stanza per convezione e il Sole ci scalda per irraggiamento.",
+  "passaggi": [
+   "Conduzione: il calore passa da molecola a molecola senza movimento di materia.",
+   "Convezione: il calore è trasportato da un fluido in movimento.",
+   "Irraggiamento: onde elettromagnetiche, anche nel vuoto.",
+   "Evaporazione, fusione e simili sono cambiamenti di stato, non meccanismi di trasmissione.",
+   "I tre meccanismi sono conduzione, convezione e irraggiamento."
+  ],
+  "concetto": "meccanismi di trasmissione"
+ },
+ {
+  "id": "IMP-056",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "Una lastra di acciaio (k = 50 W/(m·K)) spessa 5 mm e di area 2 m² ha una differenza di temperatura di 10 K tra le facce. Quale potenza termica passa per conduzione?",
+  "opzioni": {
+   "A": "200 kW",
+   "B": "2 kW",
+   "C": "20 kW",
+   "D": "0,2 kW",
+   "E": "2000 kW"
+  },
+  "giusta": "A",
+  "perche": "La legge di Fourier per una parete piana è Q = k · A · ΔT / s. Con lo spessore in metri (0,005 m): Q = 50 · 2 · 10/0,005 = 200 000 W = 200 kW. La trappola tipica è lasciare lo spessore in millimetri, ottenendo un risultato mille volte più piccolo.",
+  "semplice": "Il metallo è un ottimo conduttore: per questo una pentola d'acciaio sottile trasmette subito il calore della fiamma all'acqua.",
+  "passaggi": [
+   "s = 5 mm = 0,005 m",
+   "Q = 50 · 2 · 10 / 0,005",
+   "Q = 200 000 W = 200 kW"
+  ],
+  "concetto": "legge di Fourier"
+ },
+ {
+  "id": "IMP-057",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "Uno scambiatore ha U = 500 W/(m²·K), superficie A = 10 m² e differenza media logaritmica ΔT_ml = 30 K. Quale potenza scambia?",
+  "opzioni": {
+   "A": "15 kW",
+   "B": "1,5 kW",
+   "C": "150 W",
+   "D": "16,7 kW",
+   "E": "150 kW"
+  },
+  "giusta": "E",
+  "perche": "L'equazione di progetto degli scambiatori è Q = U · A · ΔT_ml. Si ottiene 500 · 10 · 30 = 150 000 W, cioè 150 kW. La trappola è dimenticare che U è in W e non in kW, sbagliando di un fattore mille.",
+  "semplice": "Raddoppiando la superficie o la differenza di temperatura, a parità di U, raddoppia il calore scambiato: è come aprire due finestre invece di una.",
+  "passaggi": [
+   "Q = U · A · ΔT_ml",
+   "Q = 500 · 10 · 30 = 150 000 W = 150 kW"
+  ],
+  "concetto": "equazione di progetto"
+ },
+ {
+  "id": "IMP-058",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "università",
+  "domanda": "In uno scambiatore in controcorrente il fluido caldo passa da 150 °C a 90 °C e quello freddo da 30 °C a 70 °C. Quanto vale la ΔT media logaritmica?",
+  "opzioni": {
+   "A": "70 K",
+   "B": "60 K",
+   "C": "80 K",
+   "D": "Circa 69,5 K",
+   "E": "Circa 55,8 K"
+  },
+  "giusta": "D",
+  "perche": "In controcorrente le differenze agli estremi sono 150 − 70 = 80 K e 90 − 30 = 60 K. La media logaritmica è (80 − 60)/ln(80/60) = 20/0,288 ≈ 69,5 K, poco meno della media aritmetica di 70 K. La trappola è accoppiare le temperature come in equicorrente (150 − 30 e 90 − 70), che darebbe circa 55,8 K.",
+  "semplice": "La media logaritmica è sempre un po' più piccola della media normale: tiene conto che la differenza di temperatura cambia lungo lo scambiatore.",
+  "passaggi": [
+   "ΔT₁ = 150 − 70 = 80 K",
+   "ΔT₂ = 90 − 30 = 60 K",
+   "ΔT_ml = (80 − 60) / ln(80/60)",
+   "ΔT_ml = 20 / 0,2877 = 69,5 K"
+  ],
+  "concetto": "media logaritmica"
+ },
+ {
+  "id": "IMP-059",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "Quale vantaggio ha uno scambiatore in controcorrente rispetto a uno in equicorrente?",
+  "opzioni": {
+   "A": "Ha una ΔT media maggiore e il fluido freddo può uscire più caldo del fluido caldo in uscita",
+   "B": "Ha sempre un coefficiente U più alto",
+   "C": "Non ha perdite di carico",
+   "D": "Il fluido freddo esce sempre più caldo del fluido caldo in ingresso",
+   "E": "Non richiede il calcolo della media logaritmica"
+  },
+  "giusta": "A",
+  "perche": "In controcorrente i fluidi scorrono in versi opposti e la differenza di temperatura resta più uniforme lungo l'apparecchio; ne risulta una ΔT media maggiore e quindi meno superficie a parità di calore. Inoltre il fluido freddo può superare la temperatura di uscita del caldo, cosa impossibile in equicorrente. Non può però superare la temperatura di ingresso del caldo. La trappola è pensare che cambi il coefficiente U: cambia la forza motrice.",
+  "semplice": "Passandosi un secchio di acqua calda in una fila di persone che va in direzione opposta all'acqua fredda, ognuno trova sempre qualcuno più caldo da cui prendere calore.",
+  "passaggi": [
+   "In controcorrente i fluidi scorrono in versi opposti.",
+   "La differenza di temperatura resta più uniforme lungo l'apparecchio: la ΔT media è maggiore.",
+   "A parità di calore serve meno superficie.",
+   "Il freddo può uscire più caldo dell'uscita del caldo, ma mai più caldo del suo ingresso; U non cambia.",
+   "Il vantaggio è quello della A."
+  ],
+  "concetto": "controcorrente"
+ },
+ {
+  "id": "IMP-060",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "In uno scambiatore a fascio tubiero, quale fluido si fa passare di solito dentro i tubi?",
+  "opzioni": {
+   "A": "Sempre il fluido più freddo",
+   "B": "Il fluido con la portata più grande",
+   "C": "Il vapore che condensa, in ogni caso",
+   "D": "Il fluido più sporcante, corrosivo o ad alta pressione",
+   "E": "Il fluido meno viscoso, in ogni caso"
+  },
+  "giusta": "D",
+  "perche": "I tubi sono più facili da pulire meccanicamente del mantello, resistono meglio alla pressione grazie al piccolo diametro e, se il fluido è corrosivo, basta fare in lega pregiata solo i tubi invece di tutto il mantello. Per questo lato tubi si mandano i fluidi sporchi, aggressivi o in pressione. Il vapore che condensa invece va spesso lato mantello. La trappola è pensare che la scelta dipenda solo dalla temperatura.",
+  "semplice": "È più facile pulire l'interno di tanti tubi dritti con uno scovolo che tutto lo spazio intricato intorno a loro.",
+  "passaggi": [
+   "I tubi si puliscono meccanicamente più facilmente del mantello.",
+   "Il piccolo diametro dei tubi resiste meglio alla pressione.",
+   "Con un fluido corrosivo basta fare in lega pregiata solo i tubi.",
+   "Il vapore che condensa va spesso lato mantello; la scelta non dipende solo dalla temperatura.",
+   "Nei tubi va il fluido più sporcante, corrosivo o ad alta pressione."
+  ],
+  "concetto": "fascio tubiero"
+ },
+ {
+  "id": "IMP-061",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "A cosa servono i diaframmi (setti) nel mantello di uno scambiatore a fascio tubiero?",
+  "opzioni": {
+   "A": "A separare il fluido caldo da quello freddo",
+   "B": "A ridurre le perdite di carico lato mantello",
+   "C": "A raccogliere le incrostazioni",
+   "D": "A deviare il fluido lato mantello, aumentando la turbolenza e lo scambio, e a sostenere i tubi",
+   "E": "A trasformare lo scambiatore da controcorrente a equicorrente"
+  },
+  "giusta": "D",
+  "perche": "I diaframmi costringono il fluido del mantello a un percorso a zig-zag che attraversa più volte il fascio: aumenta la velocità, cresce la turbolenza e quindi il coefficiente di scambio. Servono anche a sostenere i tubi e a ridurne le vibrazioni. Il prezzo è un aumento delle perdite di carico. La trappola è pensare che riducano la perdita di carico.",
+  "semplice": "Se agiti un cucchiaino nel caffè il calore si distribuisce più in fretta: i diaframmi «mescolano» il fluido nello stesso modo.",
+  "passaggi": [
+   "I diaframmi costringono il fluido lato mantello a un percorso a zig-zag attraverso il fascio.",
+   "Aumentano velocità e turbolenza, quindi il coefficiente di scambio.",
+   "Sostengono anche i tubi e ne riducono le vibrazioni.",
+   "Il prezzo è un aumento delle perdite di carico, non una riduzione.",
+   "Risposta: la D."
+  ],
+  "concetto": "diaframmi"
+ },
+ {
+  "id": "IMP-062",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "test",
+  "domanda": "Che effetto ha lo sporcamento (fouling) delle superfici di uno scambiatore?",
+  "opzioni": {
+   "A": "Aggiunge una resistenza termica e riduce il coefficiente globale U",
+   "B": "Aumenta il coefficiente U migliorando lo scambio",
+   "C": "Non influenza lo scambio, solo le perdite di carico",
+   "D": "Aumenta la ΔT media logaritmica",
+   "E": "Riduce la temperatura di ingresso del fluido caldo"
+  },
+  "giusta": "A",
+  "perche": "Incrostazioni, depositi biologici e prodotti di corrosione formano uno strato che conduce male il calore. Nel calcolo si aggiunge come resistenza di sporcamento in serie alle altre, quindi U diminuisce. Per questo in progetto si sovradimensiona la superficie e si programmano pulizie periodiche. La trappola è considerare solo l'effetto sulle perdite di carico.",
+  "semplice": "Il calcare nel bollitore fa allungare i tempi per far bollire l'acqua e aumenta il consumo di elettricità.",
+  "passaggi": [
+   "Lo sporcamento forma uno strato (incrostazioni, depositi) che conduce male il calore.",
+   "Nel calcolo si aggiunge una resistenza di sporcamento in serie alle altre.",
+   "Più resistenza totale significa U più basso, quindi meno calore scambiato.",
+   "Aggiunge una resistenza termica e riduce il coefficiente globale U."
+  ],
+  "concetto": "sporcamento"
+ },
+ {
+  "id": "IMP-063",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "università",
+  "domanda": "I coefficienti di scambio dei due fluidi sono h₁ = 1000 e h₂ = 2000 W/(m²·K); la parete è sottile e molto conduttiva (resistenza trascurabile). Quanto vale U?",
+  "opzioni": {
+   "A": "1500 W/(m²·K)",
+   "B": "3000 W/(m²·K)",
+   "C": "Circa 667 W/(m²·K)",
+   "D": "1000 W/(m²·K)",
+   "E": "2000 W/(m²·K)"
+  },
+  "giusta": "C",
+  "perche": "Le resistenze termiche in serie si sommano: 1/U = 1/h₁ + s/k + 1/h₂. Trascurando la parete, 1/U = 0,001 + 0,0005 = 0,0015, quindi U ≈ 667 W/(m²·K). U è sempre minore del più piccolo dei coefficienti: il lato peggiore comanda. La trappola è fare la media dei coefficienti (1500) invece di sommare le resistenze.",
+  "semplice": "In una catena di montaggio la velocità totale è limitata dalla postazione più lenta: allo stesso modo il lato con il coefficiente minore limita lo scambio.",
+  "passaggi": [
+   "1/U = 1/1000 + 1/2000",
+   "1/U = 0,0010 + 0,0005 = 0,0015",
+   "U = 1 / 0,0015 = 667 W/(m²·K)"
+  ],
+  "concetto": "resistenze in serie"
+ },
+ {
+  "id": "IMP-064",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "Uno scambiatore deve trasferire 200 kW con U = 800 W/(m²·K) e ΔT_ml = 50 K. Quale superficie serve?",
+  "opzioni": {
+   "A": "0,5 m²",
+   "B": "5 m²",
+   "C": "50 m²",
+   "D": "8 m²",
+   "E": "20 m²"
+  },
+  "giusta": "B",
+  "perche": "Dall'equazione Q = U · A · ΔT_ml si ricava A = Q/(U · ΔT_ml) = 200 000/(800 · 50) = 5 m². Bisogna mettere la potenza in watt per essere coerenti con U. La trappola è lasciare 200 in kW e ottenere un valore mille volte più piccolo.",
+  "semplice": "Se ogni metro quadro di tubo passa 40 kW (800 · 50 W), per 200 kW servono 5 metri quadri.",
+  "passaggi": [
+   "Q = 200 kW = 200 000 W",
+   "A = Q / (U · ΔT_ml) = 200 000 / (800 · 50)",
+   "A = 5 m²"
+  ],
+  "concetto": "calcolo della superficie"
+ },
+ {
+  "id": "IMP-065",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "Un olio (2 kg/s, cp = 2,0 kJ/(kg·K)) si raffredda da 150 °C a 100 °C cedendo calore ad acqua (cp = 4,18 kJ/(kg·K)) che si scalda da 20 °C a 40 °C. Quale portata di acqua serve?",
+  "opzioni": {
+   "A": "Circa 2,4 kg/s",
+   "B": "Circa 4,8 kg/s",
+   "C": "2 kg/s",
+   "D": "Circa 1,2 kg/s",
+   "E": "Circa 0,96 kg/s"
+  },
+  "giusta": "A",
+  "perche": "Il calore ceduto dall'olio è Q = 2 · 2,0 · 50 = 200 kW. Tutto passa all'acqua: m = Q/(cp · ΔT) = 200/(4,18 · 20) ≈ 2,39 kg/s. La trappola è pensare che servano portate uguali: contano anche il calore specifico e il salto di temperatura di ogni fluido.",
+  "semplice": "L'acqua ha un calore specifico alto: assorbe molto calore scaldandosi poco, per questo è il fluido refrigerante più usato.",
+  "passaggi": [
+   "Q = 2 · 2,0 · (150 − 100) = 200 kW",
+   "m_acqua = 200 / (4,18 · (40 − 20))",
+   "m_acqua = 200 / 83,6 = 2,39 kg/s"
+  ],
+  "concetto": "bilancio termico dello scambiatore"
+ },
+ {
+  "id": "IMP-066",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "test",
+  "domanda": "Quali sono i vantaggi tipici degli scambiatori a piastre rispetto a quelli a fascio tubiero?",
+  "opzioni": {
+   "A": "Possono lavorare a pressioni e temperature altissime",
+   "B": "Coefficienti di scambio alti, ingombro ridotto e facilità di smontaggio e pulizia",
+   "C": "Non hanno guarnizioni",
+   "D": "Hanno perdite di carico sempre trascurabili",
+   "E": "Sono adatti solo ai gas"
+  },
+  "giusta": "B",
+  "perche": "Le piastre corrugate creano canali stretti e molto turbolenti: il coefficiente U è alto e la superficie per unità di volume grande. Il pacco si apre e le piastre si puliscono una per una, per questo sono diffusi nelle industrie alimentari. I limiti sono le guarnizioni, che non tollerano pressioni e temperature elevate, e le perdite di carico maggiori. La trappola è considerarli adatti a qualsiasi pressione.",
+  "semplice": "Il pastorizzatore del latte è quasi sempre a piastre: compatto, efficiente e facile da lavare ogni giorno.",
+  "passaggi": [
+   "Le piastre corrugate creano canali stretti e molto turbolenti: U alto.",
+   "La superficie per unità di volume è grande: ingombro ridotto.",
+   "Il pacco si apre e le piastre si puliscono una per una.",
+   "Limiti: guarnizioni che non tollerano alte pressioni e temperature, perdite di carico maggiori.",
+   "Vantaggi: coefficienti alti, ingombro ridotto, facile smontaggio e pulizia."
+  ],
+  "concetto": "scambiatori a piastre"
+ },
+ {
+  "id": "IMP-067",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "università",
+  "domanda": "Uno dei due fluidi è vapore che condensa a temperatura costante. Come cambia la ΔT_ml tra disposizione in controcorrente e in equicorrente?",
+  "opzioni": {
+   "A": "È maggiore in controcorrente",
+   "B": "È la stessa, perché un fluido ha temperatura costante",
+   "C": "È maggiore in equicorrente",
+   "D": "È nulla in equicorrente",
+   "E": "Non si può calcolare con un fluido isotermo"
+  },
+  "giusta": "B",
+  "perche": "Se un fluido resta a temperatura costante lungo tutto lo scambiatore, le differenze di temperatura agli estremi sono le stesse qualunque sia il verso dell'altro fluido. Quindi la media logaritmica coincide e il vantaggio della controcorrente sparisce. È il caso di condensatori e ribollitori. La trappola è ripetere a memoria che la controcorrente è sempre migliore.",
+  "semplice": "Se un lato del muro è sempre a 120 °C, poco importa da che parte entra l'acqua fredda: incontrerà sempre la stessa temperatura dall'altra parte.",
+  "passaggi": [
+   "Il vapore condensa a temperatura costante Tv lungo tutto lo scambiatore.",
+   "Le ΔT agli estremi sono Tv − T ingresso freddo e Tv − T uscita freddo.",
+   "Invertendo il verso del fluido freddo le due ΔT si scambiano di posto ma restano le stesse.",
+   "La media logaritmica è quindi uguale nelle due disposizioni.",
+   "È la stessa, perché un fluido ha temperatura costante."
+  ],
+  "concetto": "fluido isotermo"
+ },
+ {
+  "id": "IMP-068",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "superiori",
+  "domanda": "Secondo la legge di Stefan-Boltzmann, se la temperatura assoluta di un corpo raddoppia, la potenza emessa per irraggiamento:",
+  "opzioni": {
+   "A": "Raddoppia",
+   "B": "Aumenta di 4 volte",
+   "C": "Aumenta di 8 volte",
+   "D": "Resta uguale",
+   "E": "Aumenta di 16 volte"
+  },
+  "giusta": "E",
+  "perche": "La potenza emessa è proporzionale alla quarta potenza della temperatura assoluta: P = ε · σ · A · T⁴. Raddoppiando T si ottiene 2⁴ = 16 volte. Per questo l'irraggiamento domina nei forni e nelle caldaie, mentre a temperatura ambiente è spesso poco importante. La trappola è usare i gradi Celsius invece dei kelvin, o pensare a una dipendenza lineare.",
+  "semplice": "Una resistenza della stufa appena accesa scalda poco, ma quando diventa rossa il calore che senti sul viso cresce moltissimo.",
+  "passaggi": [
+   "P ∝ T⁴",
+   "(2T)⁴ / T⁴ = 2⁴ = 16"
+  ],
+  "concetto": "irraggiamento"
+ },
+ {
+  "id": "IMP-069",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "università",
+  "domanda": "Negli scambiatori con più passaggi lato tubi (per esempio 1-2) si usa un fattore di correzione F della ΔT_ml. Cosa indica un valore di F sotto 0,75?",
+  "opzioni": {
+   "A": "Che lo scambiatore lavora in controcorrente perfetta",
+   "B": "Che U è troppo alto",
+   "C": "Che la disposizione è poco efficiente e conviene cambiare configurazione, per esempio aggiungendo passaggi lato mantello",
+   "D": "Che lo scambiatore è sovradimensionato",
+   "E": "Che non serve correggere la ΔT_ml"
+  },
+  "giusta": "C",
+  "perche": "Con più passaggi il flusso è in parte in controcorrente e in parte in equicorrente: la forza motrice è minore di quella in controcorrente pura e si moltiplica la ΔT_ml per F ≤ 1. Quando F scende sotto circa 0,75 la curva diventa molto ripida, piccoli errori sulle temperature cambiano molto il risultato e si rischia un incrocio di temperature. In quel caso si usano più gusci in serie. La trappola è pensare che F possa superare 1.",
+  "semplice": "F è come un voto di efficienza della disposizione: 1 è la controcorrente perfetta; sotto 0,75 conviene ripensare lo schema.",
+  "passaggi": [
+   "Con più passaggi il flusso è in parte controcorrente e in parte equicorrente.",
+   "La forza motrice è minore della controcorrente pura: si usa ΔT_ml · F con F ≤ 1.",
+   "Sotto circa 0,75 la curva di F è molto ripida e c'è rischio di incrocio di temperature.",
+   "In quel caso conviene cambiare configurazione, per esempio più gusci in serie.",
+   "F < 0,75 indica una disposizione poco efficiente da cambiare."
+  ],
+  "concetto": "fattore di correzione F"
+ },
+ {
+  "id": "IMP-070",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "università",
+  "domanda": "In uno scambiatore la capacità termica minima è C_min = 4 kW/K; il fluido caldo entra a 120 °C, il freddo a 20 °C. Se si scambiano 300 kW, qual è l'efficienza ε?",
+  "opzioni": {
+   "A": "0,25",
+   "B": "0,60",
+   "C": "0,75",
+   "D": "0,83",
+   "E": "1,33"
+  },
+  "giusta": "C",
+  "perche": "Il calore massimo scambiabile è quello che porterebbe il fluido con C minore a coprire tutto il salto disponibile: Q_max = C_min · (T_c,in − T_f,in) = 4 · 100 = 400 kW. L'efficienza è ε = Q/Q_max = 300/400 = 0,75. Il metodo ε-NTU è comodo quando non si conoscono le temperature di uscita. La trappola è usare C_max nel calcolo di Q_max.",
+  "semplice": "Se al massimo potresti travasare 400 litri e ne travasi 300, la tua efficienza è il 75%.",
+  "passaggi": [
+   "Q_max = C_min · (120 − 20) = 4 · 100 = 400 kW",
+   "ε = 300 / 400 = 0,75"
+  ],
+  "concetto": "efficienza ε-NTU"
+ },
+ {
+  "id": "IMP-071",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "università",
+  "domanda": "Che cosa rappresenta il numero di Nusselt, Nu = h·D/k?",
+  "opzioni": {
+   "A": "Il rapporto tra forze d'inerzia e forze viscose",
+   "B": "Il rapporto tra il calore scambiato per convezione e quello che passerebbe per sola conduzione nel fluido",
+   "C": "Il rapporto tra diffusività della quantità di moto e del calore",
+   "D": "La resistenza termica della parete",
+   "E": "Il rapporto tra calore latente e calore sensibile"
+  },
+  "giusta": "B",
+  "perche": "Nu misura quanto il moto del fluido migliora lo scambio rispetto alla sola conduzione in uno strato fermo. Si ricava da correlazioni come quella di Dittus-Boelter, Nu = 0,023 Re⁰·⁸ Pr⁰·⁴ per moto turbolento nei tubi, da cui si ottiene h. Il rapporto tra forze d'inerzia e viscose è invece il numero di Reynolds, e quello tra diffusività il numero di Prandtl. La trappola è confondere i tre numeri adimensionali.",
+  "semplice": "Soffiare sul cucchiaio di minestra la raffredda molto più in fretta che lasciarla ferma: Nu dice quante volte il movimento aiuta.",
+  "passaggi": [
+   "Nu = h·D/k confronta lo scambio convettivo (h) con la sola conduzione nel fluido (k/D).",
+   "Il rapporto inerzia/viscosità è il numero di Reynolds.",
+   "Il rapporto tra diffusività di quantità di moto e calore è il numero di Prandtl.",
+   "Nu indica il rapporto tra calore per convezione e per sola conduzione nel fluido."
+  ],
+  "concetto": "numero di Nusselt"
+ },
+ {
+  "id": "IMP-072",
+  "materia": "Chimica degli impianti",
+  "argomento": "Scambio termico e scambiatori",
+  "livello": "test",
+  "domanda": "Aggiungendo uno strato di isolante su una tubazione di vapore, che cosa succede di norma?",
+  "opzioni": {
+   "A": "Diminuisce la resistenza termica e aumentano le perdite",
+   "B": "Aumenta la temperatura della superficie esterna",
+   "C": "Aumenta il coefficiente U della tubazione",
+   "D": "Non cambia nulla perché il calore passa comunque",
+   "E": "Aumenta la resistenza termica totale e diminuiscono le perdite di calore"
+  },
+  "giusta": "E",
+  "perche": "L'isolante ha una conducibilità molto bassa e si aggiunge come resistenza in serie: il flusso di calore verso l'ambiente cala e la superficie esterna diventa più fredda e meno pericolosa. Solo per tubi molto piccoli e spessori sottili esiste un raggio critico sotto il quale l'isolante può perfino aumentare le perdite, ma nelle tubazioni industriali questo caso è raro. La trappola è pensare che l'isolante «blocchi» completamente il calore.",
+  "semplice": "Il thermos funziona perché le pareti oppongono una grande resistenza al passaggio del calore: il tè resta caldo a lungo, ma non per sempre.",
+  "passaggi": [
+   "L'isolante ha conducibilità molto bassa e si aggiunge come resistenza in serie.",
+   "Resistenza totale più alta significa U più basso e meno calore perso.",
+   "La superficie esterna diventa più fredda, non più calda.",
+   "Il caso del raggio critico riguarda solo tubi molto piccoli ed è raro negli impianti.",
+   "Aumenta la resistenza termica totale e diminuiscono le perdite."
+  ],
+  "concetto": "isolamento termico"
+ },
+ {
+  "id": "IMP-073",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "Quali sono i tre reattori ideali di base studiati in ingegneria chimica?",
+  "opzioni": {
+   "A": "Reattore a letto fisso, a letto fluido e a membrana",
+   "B": "Reattore nucleare, termico ed elettrochimico",
+   "C": "Reattore adiabatico, isotermo e isobaro",
+   "D": "Reattore discontinuo (batch), reattore continuo agitato (CSTR) e reattore tubolare con flusso a pistone (PFR)",
+   "E": "Reattore omogeneo, eterogeneo e catalitico"
+  },
+  "giusta": "D",
+  "perche": "Il batch si carica, si lascia reagire e si scarica: la composizione cambia nel tempo. Il CSTR è un serbatoio continuo perfettamente miscelato, con composizione uniforme uguale a quella in uscita. Il PFR è un tubo in cui il fluido avanza a strati senza mescolarsi in senso assiale, e la composizione cambia lungo il tubo. Le altre classificazioni descrivono caratteristiche (fasi, calore, catalizzatore), non i modelli ideali di flusso.",
+  "semplice": "Una pentola di ragù è un batch, una vasca con un mescolatore e un tubo di ingresso e uscita è un CSTR, un lungo tubo dove il fluido scorre ordinato è un PFR.",
+  "passaggi": [
+   "Si cercano i modelli ideali di flusso, non classificazioni per fasi, calore o catalizzatore.",
+   "Batch: si carica, reagisce, si scarica; la composizione cambia nel tempo.",
+   "CSTR: continuo, perfettamente miscelato, composizione uniforme uguale all'uscita.",
+   "PFR: tubo con flusso a pistone, la composizione cambia lungo il tubo.",
+   "I tre reattori ideali sono batch, CSTR e PFR."
+  ],
+  "concetto": "reattori ideali"
+ },
+ {
+  "id": "IMP-074",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "In un reattore si caricano 10 mol di reagente A e alla fine ne restano 2 mol. Qual è la conversione di A?",
+  "opzioni": {
+   "A": "20%",
+   "B": "8%",
+   "C": "50%",
+   "D": "12,5%",
+   "E": "80%"
+  },
+  "giusta": "E",
+  "perche": "La conversione è la frazione di reagente che ha reagito: X = (n₀ − n)/n₀ = (10 − 2)/10 = 0,8. La trappola è calcolare la frazione rimasta (20%) invece di quella reagita.",
+  "semplice": "Se su 10 biscotti ne restano 2, ne hai mangiati l'80%.",
+  "passaggi": [
+   "X = (n₀ − n) / n₀",
+   "X = (10 − 2) / 10 = 0,80"
+  ],
+  "concetto": "conversione"
+ },
+ {
+  "id": "IMP-075",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "Un reattore continuo ha volume V = 2 m³ ed è attraversato da Q = 0,5 m³/h. Quanto vale il tempo di permanenza τ?",
+  "opzioni": {
+   "A": "1 h",
+   "B": "0,25 h",
+   "C": "2,5 h",
+   "D": "1,5 h",
+   "E": "4 h"
+  },
+  "giusta": "E",
+  "perche": "Il tempo di permanenza (o tempo spaziale) è τ = V/Q = 2/0,5 = 4 h: è il tempo medio che il fluido passa nel reattore. Più τ è lungo, più la reazione ha tempo di procedere. La trappola è fare Q/V, che dà la velocità spaziale e non il tempo.",
+  "semplice": "Se una stanza da 100 persone si svuota e si riempie al ritmo di 25 persone l'ora, ognuno ci resta in media 4 ore.",
+  "passaggi": [
+   "τ = V / Q",
+   "τ = 2 / 0,5 = 4 h"
+  ],
+  "concetto": "tempo di permanenza"
+ },
+ {
+  "id": "IMP-076",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "università",
+  "domanda": "In un CSTR avviene una reazione del primo ordine con k = 0,5 h⁻¹ e τ = 4 h. Qual è la conversione?",
+  "opzioni": {
+   "A": "Circa 86%",
+   "B": "50%",
+   "C": "100%",
+   "D": "Circa 67%",
+   "E": "Circa 33%"
+  },
+  "giusta": "D",
+  "perche": "Per un CSTR con cinetica del primo ordine il bilancio dà X = kτ/(1 + kτ). Con kτ = 2 si ottiene 2/3 ≈ 67%. Il valore 86% corrisponde invece al PFR, con X = 1 − e^(−kτ). La trappola è usare la formula del reattore tubolare o quella del batch.",
+  "semplice": "Nel CSTR il reagente appena entrato si diluisce subito nella vasca già povera di reagente: la reazione va più lenta che in un tubo.",
+  "passaggi": [
+   "kτ = 0,5 · 4 = 2",
+   "X = kτ / (1 + kτ) = 2 / 3",
+   "X ≈ 0,667"
+  ],
+  "concetto": "CSTR del primo ordine"
+ },
+ {
+  "id": "IMP-077",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "università",
+  "domanda": "In un PFR avviene una reazione del primo ordine con k = 0,5 h⁻¹ e τ = 4 h. Qual è la conversione?",
+  "opzioni": {
+   "A": "Circa 67%",
+   "B": "Circa 14%",
+   "C": "100%",
+   "D": "Circa 86%",
+   "E": "Circa 98%"
+  },
+  "giusta": "D",
+  "perche": "Nel PFR ogni elemento di fluido si comporta come un piccolo batch che dura τ: per il primo ordine X = 1 − e^(−kτ) = 1 − e^(−2) ≈ 0,865. È più alta del CSTR con lo stesso volume perché nel tubo la concentrazione del reagente resta alta all'inizio e la velocità media di reazione è maggiore. La trappola è usare la formula del CSTR.",
+  "semplice": "In un tubo il reagente non si mescola con il prodotto già formato, quindi lavora a concentrazione più alta e reagisce prima.",
+  "passaggi": [
+   "kτ = 2",
+   "X = 1 − e^(−2)",
+   "X = 1 − 0,135 = 0,865"
+  ],
+  "concetto": "PFR del primo ordine"
+ },
+ {
+  "id": "IMP-078",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "test",
+  "domanda": "Per una reazione di ordine positivo e la stessa conversione, quale reattore richiede il volume minore?",
+  "opzioni": {
+   "A": "Il CSTR",
+   "B": "Sono sempre uguali",
+   "C": "Dipende solo dalla temperatura e non dal tipo di reattore",
+   "D": "Il CSTR se la reazione è del primo ordine",
+   "E": "Il reattore tubolare (PFR)"
+  },
+  "giusta": "E",
+  "perche": "Con ordine positivo la velocità cresce con la concentrazione. Nel CSTR tutto il volume lavora alla concentrazione di uscita, la più bassa; nel PFR la concentrazione cala gradualmente e la velocità media è più alta. Quindi il PFR richiede meno volume, e la differenza cresce con la conversione. Per ordine zero i volumi sono uguali, per ordine negativo vince il CSTR. La trappola è pensare che il miscelamento aiuti sempre.",
+  "semplice": "Un CSTR è come una festa dove gli ospiti nuovi si mescolano subito a quelli stanchi; nel tubo arrivano tutti freschi e vanno avanti insieme.",
+  "passaggi": [
+   "Ordine positivo: la velocità di reazione cresce con la concentrazione del reagente.",
+   "Nel CSTR tutto il volume lavora alla concentrazione di uscita, la più bassa: velocità bassa ovunque.",
+   "Nel PFR la concentrazione cala gradualmente lungo il tubo: la velocità media è più alta.",
+   "Velocità media più alta significa meno volume per la stessa conversione (per ordine zero i volumi sarebbero uguali).",
+   "Richiede il volume minore il reattore tubolare (PFR)."
+  ],
+  "concetto": "confronto CSTR e PFR"
+ },
+ {
+  "id": "IMP-079",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "Che cosa caratterizza un CSTR ideale a regime?",
+  "opzioni": {
+   "A": "La composizione è uguale in ogni punto del reattore e coincide con quella in uscita",
+   "B": "La composizione varia dall'ingresso all'uscita",
+   "C": "Il reagente non viene mai convertito",
+   "D": "La temperatura cambia nel tempo",
+   "E": "Il volume del liquido diminuisce continuamente"
+  },
+  "giusta": "A",
+  "perche": "Nel CSTR ideale l'agitazione è perfetta: ciò che entra si mescola istantaneamente con tutto il contenuto, per cui la composizione è uniforme e uguale a quella della corrente uscente. A regime, inoltre, non cambia nel tempo. La trappola è immaginare un gradiente di concentrazione come nel tubo.",
+  "semplice": "Se versi una goccia di colorante in una vasca molto agitata, in un attimo tutta la vasca ha lo stesso colore, compreso lo scarico.",
+  "passaggi": [
+   "Nel CSTR ideale l'agitazione è perfetta.",
+   "Ciò che entra si mescola istantaneamente con tutto il contenuto: composizione uniforme.",
+   "La corrente uscente è prelevata dal contenuto, quindi ha la stessa composizione.",
+   "A regime nulla cambia nel tempo; il gradiente lungo il percorso è tipico del PFR.",
+   "Composizione uguale in ogni punto e uguale a quella in uscita."
+  ],
+  "concetto": "miscelazione perfetta"
+ },
+ {
+  "id": "IMP-080",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "università",
+  "domanda": "Con un'energia di attivazione di 50 kJ/mol, di quanto aumenta circa la costante cinetica passando da 300 K a 310 K (R = 8,314 J/(mol·K))?",
+  "opzioni": {
+   "A": "Di circa 1,03 volte",
+   "B": "Di circa 1,9 volte",
+   "C": "Di 10 volte",
+   "D": "Di circa 3,3 volte",
+   "E": "Resta uguale"
+  },
+  "giusta": "B",
+  "perche": "Dall'equazione di Arrhenius, k₂/k₁ = exp[(Ea/R)·(1/T₁ − 1/T₂)]. Qui Ea/R ≈ 6014 K e (1/300 − 1/310) ≈ 1,075·10⁻⁴ K⁻¹, quindi l'esponente vale circa 0,647 e il rapporto circa 1,9. Ecco l'origine della regola «ogni 10 gradi la velocità circa raddoppia». La trappola è fare il rapporto delle temperature (310/300 ≈ 1,03).",
+  "semplice": "Il latte va a male molto più in fretta fuori dal frigo: pochi gradi in più accelerano molto le reazioni.",
+  "passaggi": [
+   "Ea/R = 50 000 / 8,314 = 6014 K",
+   "1/300 − 1/310 = 1,075 · 10⁻⁴ K⁻¹",
+   "Esponente: 6014 · 1,075 · 10⁻⁴ = 0,647",
+   "k₂/k₁ = e^0,647 ≈ 1,91"
+  ],
+  "concetto": "equazione di Arrhenius"
+ },
+ {
+  "id": "IMP-081",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "In un reattore batch avviene una reazione del primo ordine con k = 0,23 min⁻¹. Quanto tempo serve per raggiungere il 90% di conversione?",
+  "opzioni": {
+   "A": "Circa 10 min",
+   "B": "Circa 3,9 min",
+   "C": "Circa 0,46 min",
+   "D": "Circa 23 min",
+   "E": "Circa 4,6 min"
+  },
+  "giusta": "A",
+  "perche": "Per il primo ordine nel batch t = ln[1/(1 − X)]/k. Con X = 0,9, ln 10 ≈ 2,303 e t = 2,303/0,23 ≈ 10 min. La trappola è usare 1 − X = 0,9 invece di 0,1, ottenendo un tempo molto più corto.",
+  "semplice": "Per il primo ordine il tempo per arrivare al 90% è lo stesso qualunque sia la concentrazione di partenza: dipende solo da k.",
+  "passaggi": [
+   "t = ln[1 / (1 − X)] / k",
+   "1 − X = 0,1 → ln 10 = 2,303",
+   "t = 2,303 / 0,23 ≈ 10 min"
+  ],
+  "concetto": "reattore batch"
+ },
+ {
+  "id": "IMP-082",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "Una reazione ha conversione del 80% e selettività verso il prodotto desiderato del 90%. Qual è la resa?",
+  "opzioni": {
+   "A": "90%",
+   "B": "80%",
+   "C": "72%",
+   "D": "170%",
+   "E": "10%"
+  },
+  "giusta": "C",
+  "perche": "La selettività dice quale parte del reagente convertito diventa il prodotto voluto; la resa riferisce il prodotto voluto al reagente alimentato. Quindi resa = conversione · selettività = 0,8 · 0,9 = 0,72. La trappola è confondere la resa con la selettività o sommarle.",
+  "semplice": "Se di 100 olive ne raccogli 80 (conversione) e di queste 90 su 100 sono buone (selettività), alla fine hai 72 olive buone.",
+  "passaggi": [
+   "Resa = X · S",
+   "Resa = 0,80 · 0,90 = 0,72"
+  ],
+  "concetto": "resa e selettività"
+ },
+ {
+  "id": "IMP-083",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "università",
+  "domanda": "Due CSTR uguali in serie trattano una reazione del primo ordine; in ciascuno kτ = 1. Qual è la conversione globale?",
+  "opzioni": {
+   "A": "50%",
+   "B": "100%",
+   "C": "75%",
+   "D": "Circa 86%",
+   "E": "Circa 67%"
+  },
+  "giusta": "C",
+  "perche": "In ogni CSTR del primo ordine la frazione non convertita è 1/(1 + kτ) = 1/2. Dopo due reattori resta (1/2)² = 1/4, quindi la conversione è 75%. Un solo CSTR con volume doppio (kτ = 2) darebbe 67%: dividere il volume in più stadi avvicina il comportamento a quello del PFR (86%). La trappola è sommare le conversioni dei due stadi.",
+  "semplice": "Ogni stadio dimezza il reagente: metà della metà resta un quarto.",
+  "passaggi": [
+   "Frazione rimasta per stadio: 1/(1 + 1) = 0,5",
+   "Dopo due stadi: 0,5² = 0,25",
+   "X = 1 − 0,25 = 0,75"
+  ],
+  "concetto": "CSTR in serie"
+ },
+ {
+  "id": "IMP-084",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "Che effetto ha un catalizzatore su una reazione di equilibrio?",
+  "opzioni": {
+   "A": "Sposta l'equilibrio verso i prodotti",
+   "B": "Aumenta la velocità di reazione abbassando l'energia di attivazione, ma non sposta l'equilibrio",
+   "C": "Aumenta il calore di reazione",
+   "D": "Si consuma durante la reazione come un reagente",
+   "E": "Rallenta la reazione inversa ma non quella diretta"
+  },
+  "giusta": "B",
+  "perche": "Il catalizzatore apre un cammino di reazione con energia di attivazione più bassa e accelera allo stesso modo la reazione diretta e quella inversa. Così l'equilibrio si raggiunge prima, ma la sua posizione resta la stessa, fissata dalla termodinamica. Il catalizzatore non si consuma, anche se può disattivarsi nel tempo. La trappola è pensare che faccia ottenere più prodotto all'equilibrio.",
+  "semplice": "È come scavare una galleria sotto una montagna: si arriva prima dall'altra parte, ma il paese di arrivo è lo stesso.",
+  "passaggi": [
+   "Il catalizzatore apre un cammino di reazione con energia di attivazione più bassa.",
+   "Accelera allo stesso modo la reazione diretta e quella inversa.",
+   "L'equilibrio si raggiunge prima, ma la sua posizione (fissata dalla termodinamica) non cambia.",
+   "Non si consuma e non cambia il calore di reazione.",
+   "Aumenta la velocità ma non sposta l'equilibrio."
+  ],
+  "concetto": "catalizzatore"
+ },
+ {
+  "id": "IMP-085",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "test",
+  "domanda": "Quale vantaggio principale ha un reattore a letto fluido rispetto a uno a letto fisso?",
+  "opzioni": {
+   "A": "Il catalizzatore non si consuma per attrito",
+   "B": "Il flusso del gas è perfettamente a pistone",
+   "C": "La temperatura è molto uniforme e il calore si scambia facilmente",
+   "D": "Non serve separare le particelle dal gas in uscita",
+   "E": "Le perdite di carico crescono sempre con la portata"
+  },
+  "giusta": "C",
+  "perche": "Nel letto fluido le particelle sono sospese dal gas e si muovono come un liquido: si mescolano intensamente e la temperatura diventa quasi uniforme, evitando punti caldi. È ideale per reazioni molto esotermiche e per rigenerare il catalizzatore in continuo, come nel cracking catalitico. Gli svantaggi sono l'erosione delle particelle, la necessità di cicloni e un flusso lontano dal pistone. La trappola è attribuirgli il flusso a pistone tipico del letto fisso.",
+  "semplice": "La sabbia attraversata da un forte getto d'aria «bolle» come un liquido: tutto si mescola e si scalda in modo uniforme.",
+  "passaggi": [
+   "Nel letto fluido le particelle sono sospese dal gas e si muovono come un liquido.",
+   "Il mescolamento intenso rende la temperatura quasi uniforme ed evita punti caldi.",
+   "Il calore si scambia facilmente: utile per reazioni molto esotermiche.",
+   "Svantaggi: erosione delle particelle, cicloni per separarle, flusso lontano dal pistone.",
+   "Vantaggio principale: temperatura uniforme e scambio termico facile."
+  ],
+  "concetto": "letto fluido"
+ },
+ {
+  "id": "IMP-086",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "università",
+  "domanda": "Per una reazione esotermica reversibile (come l'ossidazione di SO₂), perché si usano letti catalitici in serie con raffreddamento intermedio?",
+  "opzioni": {
+   "A": "Perché ad alta temperatura la reazione è veloce ma l'equilibrio è sfavorevole: raffreddando tra i letti si recupera conversione",
+   "B": "Perché il catalizzatore funziona solo a temperatura ambiente",
+   "C": "Perché la reazione è endotermica e serve calore tra i letti",
+   "D": "Per aumentare la pressione tra un letto e l'altro",
+   "E": "Perché la conversione di equilibrio cresce con la temperatura"
+  },
+  "giusta": "A",
+  "perche": "In una reazione esotermica reversibile la conversione di equilibrio cala con la temperatura, mentre la velocità cresce. In un letto adiabatico la temperatura sale finché ci si avvicina all'equilibrio; raffreddando il gas prima del letto successivo si sposta l'equilibrio e la reazione riparte. Il profilo segue così la curva della velocità massima. La trappola è dire che l'equilibrio migliora scaldando, vero solo per le reazioni endotermiche.",
+  "semplice": "È come fare una salita a tappe: ti fermi a riprendere fiato (raffreddare) e poi riparti per arrivare più in alto.",
+  "passaggi": [
+   "Reazione esotermica reversibile: la velocità cresce con T, ma la conversione di equilibrio cala con T.",
+   "In un letto adiabatico la temperatura sale mentre la reazione procede, avvicinandosi all'equilibrio.",
+   "Raffreddando il gas prima del letto successivo l'equilibrio torna favorevole e la reazione riparte.",
+   "Scaldare migliorerebbe l'equilibrio solo per reazioni endotermiche.",
+   "Risposta: la A."
+  ],
+  "concetto": "raffreddamento intermedio"
+ },
+ {
+  "id": "IMP-087",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "test",
+  "domanda": "Un reattore catalitico ha volume di catalizzatore 2 m³ e tratta 1000 m³/h di gas. Quanto vale la velocità spaziale?",
+  "opzioni": {
+   "A": "0,002 h⁻¹",
+   "B": "500 h⁻¹",
+   "C": "2000 h⁻¹",
+   "D": "1000 h⁻¹",
+   "E": "50 h⁻¹"
+  },
+  "giusta": "B",
+  "perche": "La velocità spaziale è il rapporto tra portata volumetrica e volume del reattore: SV = Q/V = 1000/2 = 500 h⁻¹. È l'inverso del tempo spaziale: qui τ = 1/500 h ≈ 7,2 s. La trappola è fare V/Q, che dà il tempo e non la velocità spaziale.",
+  "semplice": "Una velocità spaziale di 500 l'ora vuol dire che in un'ora passa nel reattore un volume di gas pari a 500 volte il volume del reattore.",
+  "passaggi": [
+   "SV = Q / V",
+   "SV = 1000 / 2 = 500 h⁻¹"
+  ],
+  "concetto": "velocità spaziale"
+ },
+ {
+  "id": "IMP-088",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "università",
+  "domanda": "Un CSTR riceve F_A0 = 10 mol/s di reagente; si vuole X = 0,5 e la velocità di reazione nelle condizioni di uscita è −r_A = 0,02 mol/(L·s). Quale volume serve?",
+  "opzioni": {
+   "A": "500 L",
+   "B": "125 L",
+   "C": "250 L",
+   "D": "25 L",
+   "E": "1000 L"
+  },
+  "giusta": "C",
+  "perche": "L'equazione di progetto del CSTR è V = F_A0 · X/(−r_A), con la velocità calcolata alle condizioni di uscita, perché sono quelle di tutto il reattore. Quindi V = 10 · 0,5/0,02 = 250 L. La trappola è dimenticare la conversione e calcolare 10/0,02 = 500 L.",
+  "semplice": "Il reattore deve «consumare» 5 mol/s di A; se ogni litro ne consuma 0,02 al secondo, servono 250 litri.",
+  "passaggi": [
+   "Moli da convertire: 10 · 0,5 = 5 mol/s",
+   "V = 5 / 0,02 = 250 L"
+  ],
+  "concetto": "equazione di progetto del CSTR"
+ },
+ {
+  "id": "IMP-089",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "università",
+  "domanda": "Perché un CSTR in cui avviene una reazione esotermica può avere più stati stazionari?",
+  "opzioni": {
+   "A": "Perché la reazione è del primo ordine",
+   "B": "Perché il calore generato cresce con la temperatura in modo non lineare (a S) mentre il calore rimosso cresce in modo lineare, e le due curve possono intersecarsi in più punti",
+   "C": "Perché il volume del reattore cambia con la temperatura",
+   "D": "Perché la conversione non dipende dalla temperatura",
+   "E": "Perché il calore rimosso è sempre maggiore di quello generato"
+  },
+  "giusta": "B",
+  "perche": "Il calore generato dalla reazione, in funzione della temperatura, ha un andamento a S: basso a freddo, poi cresce rapidamente (Arrhenius) e infine si appiattisce quando la conversione è vicina al 100%. Il calore rimosso, per alimentazione e raffreddamento, è una retta. Le intersezioni sono gli stati stazionari: tipicamente uno basso e uno alto stabili, e uno intermedio instabile. La trappola è pensare che a parità di alimentazione il reattore abbia sempre un solo punto di lavoro.",
+  "semplice": "È come un fuoco di legna umida: può restare spento o ardere vivacemente con la stessa legna; nel mezzo è instabile e va da una parte o dall'altra.",
+  "passaggi": [
+   "Calore generato in funzione di T: curva a S (basso a freddo, sale con Arrhenius, si appiattisce a conversione quasi completa).",
+   "Calore rimosso (alimentazione + raffreddamento): cresce in modo lineare con T, è una retta.",
+   "Gli stati stazionari sono le intersezioni tra la curva a S e la retta.",
+   "Una S e una retta possono incrociarsi in tre punti: due stabili e uno intermedio instabile.",
+   "La spiegazione è la B."
+  ],
+  "concetto": "stati stazionari multipli"
+ },
+ {
+  "id": "IMP-090",
+  "materia": "Chimica degli impianti",
+  "argomento": "Reattori chimici",
+  "livello": "superiori",
+  "domanda": "Che cosa indica la «resa» di un processo chimico?",
+  "opzioni": {
+   "A": "La quantità di prodotto voluto ottenuto rispetto a quella teorica massima ottenibile dal reagente alimentato",
+   "B": "La quantità di reagente rimasto non convertito",
+   "C": "Il rapporto tra prodotti secondari e prodotto voluto",
+   "D": "La velocità con cui si forma il prodotto",
+   "E": "Il calore prodotto dalla reazione per mole"
+  },
+  "giusta": "A",
+  "perche": "La resa confronta il prodotto realmente ottenuto con quello che si otterrebbe se tutto il reagente alimentato diventasse prodotto voluto. Tiene quindi conto sia della conversione incompleta sia delle reazioni secondarie. È un indice economico chiave, perché dice quanta materia prima si trasforma davvero in prodotto vendibile. La trappola è confonderla con la conversione, che non considera i sottoprodotti.",
+  "semplice": "Se una ricetta promette 20 biscotti e te ne vengono 15 buoni, la resa è del 75%.",
+  "passaggi": [
+   "La resa confronta il prodotto voluto ottenuto davvero con quello teorico massimo.",
+   "Il massimo teorico è quello che si avrebbe se tutto il reagente alimentato diventasse prodotto voluto.",
+   "Tiene conto sia della conversione incompleta sia delle reazioni secondarie.",
+   "La conversione invece misura solo il reagente consumato, senza guardare i sottoprodotti.",
+   "Resa = prodotto voluto ottenuto / massimo teorico dal reagente alimentato."
+  ],
+  "concetto": "resa"
+ },
+ {
+  "id": "IMP-091",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Quali sono le condizioni tipiche della sintesi industriale dell'ammoniaca (processo Haber-Bosch)?",
+  "opzioni": {
+   "A": "Pressione atmosferica, 25 °C e catalizzatore al platino",
+   "B": "Circa 1 bar, 900 °C e catalizzatore al nichel",
+   "C": "Circa 1000 bar, 100 °C senza catalizzatore",
+   "D": "Circa 150-300 bar, 400-500 °C e catalizzatore a base di ferro",
+   "E": "Circa 10 bar, 450 °C e pentossido di vanadio"
+  },
+  "giusta": "D",
+  "perche": "La reazione N₂ + 3 H₂ ⇌ 2 NH₃ è esotermica e diminuisce il numero di moli di gas, per cui sarebbe favorita da alta pressione e bassa temperatura. A bassa temperatura però la velocità è troppo piccola anche con il catalizzatore di ferro promosso: si lavora a 400-500 °C come compromesso e a 150-300 bar per recuperare conversione. Il pentossido di vanadio è il catalizzatore dell'acido solforico, il platino quello dell'acido nitrico. La trappola è scambiare i catalizzatori dei tre processi.",
+  "semplice": "Pressione alta perché da 4 molecole di gas se ne fanno 2; temperatura media perché a freddo la reazione è troppo lenta.",
+  "passaggi": [
+   "N₂ + 3 H₂ ⇌ 2 NH₃ è esotermica e riduce le moli di gas (4 → 2).",
+   "L'alta pressione favorisce la conversione: si lavora a 150-300 bar.",
+   "La bassa temperatura favorirebbe l'equilibrio, ma la velocità sarebbe troppo bassa: compromesso 400-500 °C.",
+   "Catalizzatori: ferro promosso per l'ammoniaca; V₂O₅ è dell'acido solforico, platino dell'acido nitrico.",
+   "Condizioni tipiche: 150-300 bar, 400-500 °C, catalizzatore a base di ferro."
+  ],
+  "concetto": "condizioni Haber-Bosch"
+ },
+ {
+  "id": "IMP-092",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Perché la sintesi dell'ammoniaca si conduce ad alta pressione?",
+  "opzioni": {
+   "A": "Perché il catalizzatore funziona solo ad alta pressione",
+   "B": "Perché la reazione è endotermica",
+   "C": "Perché la reazione riduce il numero di moli gassose e l'alta pressione sposta l'equilibrio verso l'ammoniaca",
+   "D": "Perché l'alta pressione abbassa l'energia di attivazione",
+   "E": "Per evitare che l'ammoniaca si condensi"
+  },
+  "giusta": "C",
+  "perche": "Da 1 mol di N₂ e 3 di H₂ si ottengono 2 mol di NH₃: per il principio di Le Châtelier un aumento di pressione favorisce il lato con meno moli di gas. L'alta pressione aiuta anche la separazione, perché l'ammoniaca condensa più facilmente quando si raffredda il gas. La trappola è attribuire alla pressione un effetto sull'energia di attivazione, che invece dipende dal catalizzatore.",
+  "semplice": "Stringere le molecole in poco spazio le spinge a unirsi in un numero minore di molecole più grandi.",
+  "passaggi": [
+   "Conta le moli gassose: 1 N₂ + 3 H₂ = 4 mol → 2 mol NH₃.",
+   "Le Châtelier: aumentando la pressione l'equilibrio si sposta verso il lato con meno moli di gas.",
+   "Quindi l'alta pressione favorisce la formazione di ammoniaca.",
+   "La pressione non abbassa l'energia di attivazione (lo fa il catalizzatore) e la reazione è esotermica.",
+   "Risposta: la C."
+  ],
+  "concetto": "principio di Le Châtelier"
+ },
+ {
+  "id": "IMP-093",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "test",
+  "domanda": "Perché nella sintesi dell'ammoniaca non si lavora a bassa temperatura, anche se l'equilibrio sarebbe più favorevole?",
+  "opzioni": {
+   "A": "Perché a bassa temperatura la reazione diventa endotermica",
+   "B": "Perché a bassa temperatura il catalizzatore si scioglie",
+   "C": "Perché la velocità di reazione sarebbe troppo bassa e servirebbero reattori enormi",
+   "D": "Perché a bassa temperatura l'azoto diventa liquido",
+   "E": "Perché a bassa temperatura l'equilibrio è sfavorevole"
+  },
+  "giusta": "C",
+  "perche": "La reazione è esotermica: abbassando la temperatura la conversione di equilibrio aumenta. Però la molecola di N₂ è molto stabile e, anche con il catalizzatore, a bassa temperatura reagisce troppo lentamente. Si sceglie quindi un compromesso tra termodinamica e cinetica, intorno ai 400-500 °C. La trappola è credere che l'equilibrio peggiori a bassa temperatura.",
+  "semplice": "È come scegliere tra un lavoro fatto perfettamente in un anno o abbastanza bene in un giorno: l'industria ha bisogno di produrre in fretta.",
+  "passaggi": [
+   "La reazione è esotermica: a bassa temperatura l'equilibrio è più favorevole, non meno.",
+   "N₂ ha un triplo legame molto stabile: reagisce con difficoltà.",
+   "A bassa temperatura, anche con il catalizzatore, la velocità sarebbe troppo bassa.",
+   "Servirebbero reattori enormi: si sceglie il compromesso di 400-500 °C.",
+   "Il motivo è la velocità di reazione troppo bassa."
+  ],
+  "concetto": "compromesso cinetica-equilibrio"
+ },
+ {
+  "id": "IMP-094",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Nel ciclo di sintesi dell'ammoniaca la conversione per passaggio è solo del 15-25%. Come si ottiene un'alta conversione globale?",
+  "opzioni": {
+   "A": "Si aumenta la temperatura fino a 1000 °C",
+   "B": "Si condensa l'ammoniaca raffreddando il gas e si ricicla al reattore il gas non reagito",
+   "C": "Si elimina il catalizzatore",
+   "D": "Si scarica nell'atmosfera il gas non reagito",
+   "E": "Si aggiunge acqua per sciogliere l'azoto"
+  },
+  "giusta": "B",
+  "perche": "Il gas uscente dal reattore viene raffreddato: l'ammoniaca condensa e si separa come liquido, mentre azoto e idrogeno non reagiti tornano al reattore con un compressore di riciclo. Così quasi tutto il gas di sintesi finisce in ammoniaca, anche se ogni passaggio ne converte poco. Uno spurgo elimina gli inerti come argon e metano. La trappola è pensare che la conversione per passaggio debba essere alta.",
+  "semplice": "È come una giostra: chi non è sceso al primo giro fa un altro giro, finché tutti scendono.",
+  "passaggi": [
+   "Ogni passaggio nel reattore converte solo il 15-25% del gas.",
+   "Il gas uscente si raffredda: l'ammoniaca condensa e si separa come liquido.",
+   "Azoto e idrogeno non reagiti tornano al reattore con un compressore di riciclo.",
+   "Uno spurgo toglie gli inerti (argon, metano); scaricare il gas o scaldare a 1000 °C sarebbe dannoso.",
+   "Risposta: condensare NH₃ e riciclare il gas non reagito."
+  ],
+  "concetto": "ciclo di sintesi"
+ },
+ {
+  "id": "IMP-095",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "università",
+  "domanda": "Da dove proviene, nella maggior parte degli impianti, l'idrogeno per la sintesi dell'ammoniaca?",
+  "opzioni": {
+   "A": "Dallo steam reforming del metano seguito dalla reazione di shift CO + H₂O → CO₂ + H₂",
+   "B": "Dall'elettrolisi dell'acqua di mare in tutti gli impianti",
+   "C": "Dalla decomposizione dell'ammoniaca già prodotta",
+   "D": "Dalla distillazione dell'aria liquida",
+   "E": "Dalla combustione completa del metano"
+  },
+  "giusta": "A",
+  "perche": "Nel reforming primario il metano reagisce con vapore su catalizzatore al nichel: CH₄ + H₂O → CO + 3 H₂, reazione endotermica a 800-900 °C. Nel reforming secondario si aggiunge aria, che fornisce l'azoto per la sintesi. La reazione di shift trasforma il CO in altro idrogeno, la CO₂ si rimuove per assorbimento e le ultime tracce di ossidi di carbonio si eliminano per metanazione, perché avvelenano il catalizzatore. L'idrogeno elettrolitico («verde») è in crescita ma ancora minoritario. La trappola è pensare che l'azoto venga dal metano.",
+  "semplice": "Il metano è la «miniera» di idrogeno; l'aria fornisce l'azoto. Unendo i due si prepara la miscela per l'ammoniaca.",
+  "passaggi": [
+   "Reforming primario: CH₄ + H₂O → CO + 3 H₂, su nichel a 800-900 °C.",
+   "Reforming secondario con aria: fornisce anche l'azoto per la sintesi.",
+   "Shift: CO + H₂O → CO₂ + H₂ produce altro idrogeno.",
+   "CO₂ si toglie per assorbimento, le tracce di ossidi di carbonio per metanazione; l'elettrolisi è ancora minoritaria.",
+   "L'idrogeno viene dallo steam reforming del metano con la reazione di shift."
+  ],
+  "concetto": "gas di sintesi"
+ },
+ {
+  "id": "IMP-096",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "università",
+  "domanda": "Quanti kg di idrogeno servono, in teoria, per produrre 1 t di ammoniaca (M(NH₃) = 17,03 g/mol, M(H₂) = 2,016 g/mol)?",
+  "opzioni": {
+   "A": "Circa 118 kg",
+   "B": "Circa 178 kg",
+   "C": "Circa 356 kg",
+   "D": "Circa 59 kg",
+   "E": "Circa 824 kg"
+  },
+  "giusta": "B",
+  "perche": "Una tonnellata di NH₃ corrisponde a 1 000 000/17,03 ≈ 58 720 mol. Dalla stechiometria servono 3 mol di H₂ ogni 2 mol di NH₃, cioè 1,5 · 58 720 ≈ 88 080 mol di H₂, pari a circa 178 kg. La trappola è usare un rapporto 1:1 o 3:1 tra H₂ e NH₃ dimenticando che si formano 2 molecole di ammoniaca.",
+  "semplice": "In ogni molecola di ammoniaca ci sono 3 atomi di idrogeno che pesano poco: l'idrogeno è circa un sesto della massa dell'ammoniaca.",
+  "passaggi": [
+   "n(NH₃) = 1 000 000 / 17,03 = 58 720 mol",
+   "n(H₂) = 58 720 · 3/2 = 88 080 mol",
+   "m(H₂) = 88 080 · 2,016 = 177 600 g ≈ 178 kg"
+  ],
+  "concetto": "stechiometria dell'ammoniaca"
+ },
+ {
+  "id": "IMP-097",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Nel processo per contatto, quale catalizzatore si usa per ossidare SO₂ a SO₃?",
+  "opzioni": {
+   "A": "Ferro promosso",
+   "B": "Pentossido di vanadio (V₂O₅)",
+   "C": "Lega platino-rodio",
+   "D": "Nichel su allumina",
+   "E": "Ossido di rame"
+  },
+  "giusta": "B",
+  "perche": "L'ossidazione 2 SO₂ + O₂ ⇌ 2 SO₃ avviene su catalizzatori a base di pentossido di vanadio, attivi intorno ai 400-600 °C. Il platino, usato storicamente, è stato abbandonato perché costoso e facilmente avvelenato. Il ferro è il catalizzatore dell'ammoniaca e la lega Pt-Rh quello dell'ossidazione dell'ammoniaca. La trappola è scambiare i catalizzatori tra i processi.",
+  "semplice": "Ogni processo ha il suo «aiutante»: ferro per l'ammoniaca, vanadio per l'acido solforico, platino-rodio per l'acido nitrico.",
+  "passaggi": [
+   "Reazione da catalizzare: 2 SO₂ + O₂ ⇌ 2 SO₃, nel processo per contatto.",
+   "Si usano catalizzatori a base di pentossido di vanadio, attivi a 400-600 °C.",
+   "Ferro promosso è dell'ammoniaca, Pt-Rh dell'ossidazione dell'ammoniaca, nichel del reforming.",
+   "Il catalizzatore è il pentossido di vanadio (V₂O₅)."
+  ],
+  "concetto": "catalizzatore del processo per contatto"
+ },
+ {
+  "id": "IMP-098",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Perché l'SO₃ si assorbe in acido solforico al 98% e non direttamente in acqua?",
+  "opzioni": {
+   "A": "Perché con l'acqua forma una nebbia di goccioline di acido difficile da trattenere",
+   "B": "Perché SO₃ è insolubile in acqua",
+   "C": "Perché con l'acqua la reazione è endotermica",
+   "D": "Perché l'acido al 98% è più economico dell'acqua",
+   "E": "Perché l'acqua scioglierebbe il catalizzatore"
+  },
+  "giusta": "A",
+  "perche": "La reazione SO₃ + H₂O → H₂SO₄ è molto esotermica: a contatto con l'acqua il calore vaporizza parte del liquido e si forma una nebbia finissima di acido che attraversa le colonne senza essere trattenuta. Nell'acido al 98% invece l'SO₃ si assorbe bene e si forma oleum o acido più concentrato, che poi si diluisce con acqua in modo controllato. La trappola è pensare che l'SO₃ non si sciolga in acqua.",
+  "semplice": "Versare acqua sull'acido concentrato è pericoloso perché si scalda violentemente; lo stesso succede con l'SO₃, che fa una nebbia corrosiva.",
+  "passaggi": [
+   "La reazione SO₃ + H₂O → H₂SO₄ è molto esotermica.",
+   "A contatto diretto con l'acqua il calore vaporizza parte del liquido.",
+   "Si forma una nebbia finissima di acido che attraversa le colonne senza essere trattenuta.",
+   "Nell'acido al 98% l'SO₃ si assorbe bene; poi si diluisce con acqua in modo controllato.",
+   "Il motivo è la nebbia di goccioline difficile da trattenere."
+  ],
+  "concetto": "assorbimento di SO₃"
+ },
+ {
+  "id": "IMP-099",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "università",
+  "domanda": "Che cosa si ottiene con il sistema a doppio contatto e doppio assorbimento negli impianti di acido solforico?",
+  "opzioni": {
+   "A": "L'eliminazione del catalizzatore",
+   "B": "La produzione diretta di acido nitrico",
+   "C": "Una conversione complessiva di SO₂ superiore al 99,7% e minori emissioni",
+   "D": "Una conversione limitata al 90% ma con meno energia",
+   "E": "La trasformazione di SO₃ in zolfo elementare"
+  },
+  "giusta": "C",
+  "perche": "Dopo i primi letti catalitici il gas passa in un assorbitore intermedio che toglie l'SO₃. Eliminare il prodotto sposta l'equilibrio, e negli ultimi letti l'SO₂ residua si converte quasi tutta. Il secondo assorbimento cattura l'SO₃ finale. Così la conversione supera il 99,7% e le emissioni di SO₂ rientrano nei limiti di legge. La trappola è pensare che servano solo più letti catalitici senza assorbimento intermedio.",
+  "semplice": "Togliendo a metà strada il prodotto già fatto, la reazione «non vede» più l'SO₃ e continua verso i prodotti.",
+  "passaggi": [
+   "Dopo i primi letti catalitici un assorbitore intermedio toglie l'SO₃ prodotto.",
+   "Togliere il prodotto sposta l'equilibrio verso destra.",
+   "Negli ultimi letti l'SO₂ residua si converte quasi tutta; il secondo assorbimento cattura l'SO₃ finale.",
+   "La conversione complessiva supera il 99,7% e le emissioni di SO₂ calano.",
+   "Risposta: la C."
+  ],
+  "concetto": "doppio contatto"
+ },
+ {
+  "id": "IMP-100",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Quanto acido solforico si ottiene, al massimo, da 1 t di zolfo (M(S) = 32,06 g/mol, M(H₂SO₄) = 98,08 g/mol)?",
+  "opzioni": {
+   "A": "1 t",
+   "B": "Circa 0,33 t",
+   "C": "Circa 2,0 t",
+   "D": "Circa 6,1 t",
+   "E": "Circa 3,06 t"
+  },
+  "giusta": "E",
+  "perche": "Ogni atomo di zolfo finisce in una molecola di H₂SO₄, quindi le moli si conservano: 1 t di S sono circa 31 190 mol e danno altrettante moli di acido. In massa il rapporto è 98,08/32,06 ≈ 3,06, cioè circa 3,06 t di acido. La trappola è pensare che la massa resti uguale: si aggiungono ossigeno e idrogeno.",
+  "semplice": "Lo zolfo pesa solo un terzo della molecola di acido solforico: il resto lo portano gli atomi di ossigeno e di idrogeno.",
+  "passaggi": [
+   "S → SO₂ → SO₃ → H₂SO₄: 1 mol S dà 1 mol H₂SO₄",
+   "Rapporto in massa: 98,08 / 32,06 = 3,06",
+   "m(H₂SO₄) = 1 t · 3,06 ≈ 3,06 t"
+  ],
+  "concetto": "stechiometria dell'acido solforico"
+ },
+ {
+  "id": "IMP-101",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "test",
+  "domanda": "Perché un impianto di acido solforico da zolfo produce più energia di quanta ne consuma?",
+  "opzioni": {
+   "A": "Perché la combustione dello zolfo, l'ossidazione di SO₂ e l'assorbimento di SO₃ sono tutte esotermiche e il calore si recupera producendo vapore",
+   "B": "Perché il catalizzatore genera elettricità",
+   "C": "Perché l'acido solforico si decompone liberando energia",
+   "D": "Perché il processo funziona a temperatura ambiente",
+   "E": "Perché non servono pompe né compressori"
+  },
+  "giusta": "A",
+  "perche": "Le tre reazioni principali liberano molto calore. Caldaie a recupero e scambiatori lo trasformano in vapore ad alta pressione, che muove turbine per l'elettricità o si vende ad altri impianti. Per questo molti stabilimenti integrano la produzione di acido solforico con altri processi che consumano vapore. La trappola è pensare che serva fornire calore dall'esterno.",
+  "semplice": "Bruciare lo zolfo è come accendere una stufa: il calore non si spreca, ma si usa per fare vapore.",
+  "passaggi": [
+   "Combustione dello zolfo (S + O₂ → SO₂): esotermica.",
+   "Ossidazione 2 SO₂ + O₂ → 2 SO₃: esotermica.",
+   "Assorbimento di SO₃ con formazione di H₂SO₄: esotermico.",
+   "Il calore si recupera producendo vapore ad alta pressione per turbine o altri impianti.",
+   "Produce energia perché tutte le reazioni principali sono esotermiche e il calore si recupera."
+  ],
+  "concetto": "recupero energetico"
+ },
+ {
+  "id": "IMP-102",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Nel processo Ostwald, come si ossida l'ammoniaca a monossido di azoto?",
+  "opzioni": {
+   "A": "Su pentossido di vanadio a 450 °C in reattori a più letti",
+   "B": "Su ferro promosso a 200 bar",
+   "C": "In soluzione acquosa a temperatura ambiente",
+   "D": "Su nichel a 300 °C con lunghi tempi di contatto",
+   "E": "Su reti di platino-rodio a circa 850-900 °C con tempi di contatto brevissimi"
+  },
+  "giusta": "E",
+  "perche": "La reazione 4 NH₃ + 5 O₂ → 4 NO + 6 H₂O avviene su reti di platino-rodio in pochi millisecondi. Il tempo di contatto deve essere brevissimo perché, se il gas resta troppo a lungo sul catalizzatore, si formano N₂ e N₂O invece di NO, e la selettività crolla. La reazione è molto esotermica e mantiene da sola la rete incandescente. La trappola è applicare le condizioni del processo per contatto.",
+  "semplice": "La rete di platino-rodio sembra una tela da setaccio rovente: il gas la attraversa in un lampo e cambia natura.",
+  "passaggi": [
+   "Reazione: 4 NH₃ + 5 O₂ → 4 NO + 6 H₂O.",
+   "Avviene su reti di platino-rodio a circa 850-900 °C.",
+   "Il tempo di contatto è di pochi millisecondi: se fosse più lungo si formerebbero N₂ e N₂O invece di NO.",
+   "V₂O₅ e ferro promosso appartengono agli altri due processi.",
+   "Risposta: reti di platino-rodio, 850-900 °C, contatto brevissimo."
+  ],
+  "concetto": "ossidazione dell'ammoniaca"
+ },
+ {
+  "id": "IMP-103",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "università",
+  "domanda": "Nel processo Ostwald, perché l'ossidazione 2 NO + O₂ → 2 NO₂ si favorisce raffreddando il gas?",
+  "opzioni": {
+   "A": "Perché è endotermica",
+   "B": "Perché a bassa temperatura il platino è più attivo",
+   "C": "Perché è esotermica e, caso insolito, è più veloce a bassa temperatura",
+   "D": "Perché a bassa temperatura l'NO2 si decompone",
+   "E": "Perché raffreddando si evita la formazione di acqua"
+  },
+  "giusta": "C",
+  "perche": "L'ossidazione di NO a NO₂ è esotermica, quindi l'equilibrio è più favorevole a bassa temperatura. In più ha un comportamento cinetico anomalo: la sua velocità diminuisce quando la temperatura sale. Per questo il gas uscente dal reattore si raffredda e si comprime prima delle colonne di assorbimento, dove 3 NO₂ + H₂O → 2 HNO₃ + NO. La trappola è applicare la regola generale secondo cui scaldare accelera sempre.",
+  "semplice": "È una delle poche reazioni che va più in fretta al freddo: per questo il gas si raffredda prima di trasformarlo in acido.",
+  "passaggi": [
+   "2 NO + O₂ → 2 NO₂ è esotermica: l'equilibrio è più favorevole a bassa temperatura.",
+   "Ha in più un comportamento cinetico anomalo: la sua velocità diminuisce quando T sale.",
+   "Quindi raffreddando si migliorano sia l'equilibrio sia la velocità.",
+   "Per questo il gas si raffredda e si comprime prima delle colonne di assorbimento.",
+   "Risposta: esotermica e, caso insolito, più veloce a bassa temperatura."
+  ],
+  "concetto": "ossidazione di NO"
+ },
+ {
+  "id": "IMP-104",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "superiori",
+  "domanda": "Nell'assorbimento di NO₂ in acqua (3 NO₂ + H₂O → 2 HNO₃ + NO), che cosa succede al monossido di azoto prodotto?",
+  "opzioni": {
+   "A": "Viene scaricato nell'atmosfera senza trattamenti",
+   "B": "Si scioglie in acqua formando acido nitroso stabile",
+   "C": "Viene riconvertito in ammoniaca",
+   "D": "Viene riossidato con aria a NO₂ e riassorbito nelle colonne",
+   "E": "Si deposita sul catalizzatore"
+  },
+  "giusta": "D",
+  "perche": "In ogni passaggio un terzo dell'azoto torna in forma di NO. Grazie all'aria secondaria, lungo le colonne di assorbimento l'NO si riossida in NO₂ e viene di nuovo assorbito, finché quasi tutto l'azoto diventa acido nitrico. I gas di coda contengono comunque un po' di NOx, che si abbattono prima dello scarico. La trappola è pensare che l'NO sia uno scarto inevitabile.",
+  "semplice": "È come un pallone che rimbalza fuori dal canestro: lo riprendi e lo tiri di nuovo finché entra.",
+  "passaggi": [
+   "Da 3 NO₂ + H₂O → 2 HNO₃ + NO: un terzo dell'azoto torna come NO.",
+   "Con aria secondaria, lungo le colonne, l'NO si riossida a NO₂.",
+   "L'NO₂ viene di nuovo assorbito, e il ciclo si ripete.",
+   "Alla fine quasi tutto l'azoto diventa acido nitrico; i pochi NOx residui si abbattono prima dello scarico.",
+   "L'NO viene riossidato a NO₂ e riassorbito."
+  ],
+  "concetto": "assorbimento dei gas nitrosi"
+ },
+ {
+  "id": "IMP-105",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "università",
+  "domanda": "Considerando la reazione complessiva NH₃ + 2 O₂ → HNO₃ + H₂O e una resa del 100%, quanta ammoniaca serve per 1 t di HNO₃ (M(NH₃) = 17,03; M(HNO₃) = 63,01 g/mol)?",
+  "opzioni": {
+   "A": "Circa 3,7 t",
+   "B": "1 t",
+   "C": "Circa 0,54 t",
+   "D": "Circa 0,135 t",
+   "E": "Circa 0,27 t"
+  },
+  "giusta": "E",
+  "perche": "Ogni mole di NH₃ fornisce un atomo di azoto, cioè una mole di HNO₃. Il rapporto in massa è 17,03/63,01 ≈ 0,270, quindi servono circa 0,27 t di ammoniaca per tonnellata di acido. Nella realtà la resa è del 93-98%, per cui il consumo è un po' più alto. La trappola è invertire il rapporto e ottenere 3,7 t.",
+  "semplice": "L'ammoniaca è leggera e l'acido nitrico pesante: con poco più di un quarto di tonnellata di ammoniaca si fa una tonnellata di acido.",
+  "passaggi": [
+   "1 mol NH₃ → 1 mol HNO₃",
+   "m(NH₃)/m(HNO₃) = 17,03/63,01 = 0,270",
+   "Per 1 t di HNO₃: 0,27 t di NH₃"
+  ],
+  "concetto": "stechiometria dell'acido nitrico"
+ },
+ {
+  "id": "IMP-106",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "università",
+  "domanda": "Perché con la sola distillazione non si supera una concentrazione di circa il 68% in massa di HNO₃?",
+  "opzioni": {
+   "A": "Perché acqua e acido nitrico formano un azeotropo di massimo; per concentrare oltre si usano agenti disidratanti come H₂SO₄ o Mg(NO₃)₂",
+   "B": "Perché l'acido nitrico è meno volatile dell'acqua in ogni condizione",
+   "C": "Perché oltre il 68% l'acido si trasforma in ammoniaca",
+   "D": "Perché le colonne non resistono alla corrosione",
+   "E": "Perché l'NO₂ non è più solubile oltre questa concentrazione"
+  },
+  "giusta": "A",
+  "perche": "La miscela acqua-acido nitrico ha un azeotropo di massima temperatura di ebollizione intorno al 68%: a quella composizione liquido e vapore sono uguali e la distillazione si blocca. Per ottenere acido concentrato si aggiunge un agente che trattiene l'acqua, come l'acido solforico concentrato o il nitrato di magnesio (distillazione estrattiva). In alternativa esistono processi diretti per acido concentrato. La trappola è pensare che basti aggiungere piatti alla colonna.",
+  "semplice": "È lo stesso muro che si incontra con l'alcol a circa il 96%: oltre un certo punto la distillazione non basta più.",
+  "passaggi": [
+   "Acqua e acido nitrico formano un azeotropo di massima temperatura di ebollizione a circa il 68%.",
+   "A quella composizione liquido e vapore sono uguali: la distillazione non separa più.",
+   "Aggiungere piatti non serve.",
+   "Per andare oltre si aggiunge un agente che trattiene l'acqua: H₂SO₄ concentrato o Mg(NO₃)₂.",
+   "Risposta: la A."
+  ],
+  "concetto": "azeotropo dell'acido nitrico"
+ },
+ {
+  "id": "IMP-107",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "test",
+  "domanda": "Come si riducono le emissioni di NOx dai gas di coda di un impianto di acido nitrico?",
+  "opzioni": {
+   "A": "Diluendo i gas con aria prima dello scarico",
+   "B": "Assorbendoli in olio minerale",
+   "C": "Riscaldandoli per trasformarli in ossigeno e azoto senza catalizzatore",
+   "D": "Con la riduzione catalitica selettiva (SCR), facendo reagire gli NOx con ammoniaca per formare azoto e acqua",
+   "E": "Facendoli reagire con zolfo"
+  },
+  "giusta": "D",
+  "perche": "Nella SCR i gas passano su un catalizzatore insieme a una piccola quantità di ammoniaca, che riduce NO e NO₂ ad azoto e acqua. Il protossido di azoto (N₂O), potente gas serra, si abbatte con catalizzatori dedicati, spesso subito sotto le reti di platino. Diluire i gas non riduce le quantità emesse, abbassa solo la concentrazione. La trappola è considerare la diluizione una tecnica di abbattimento.",
+  "semplice": "È lo stesso principio dell'AdBlue nei camion diesel: un composto dell'ammoniaca trasforma gli ossidi di azoto in azoto innocuo.",
+  "passaggi": [
+   "Bisogna trasformare gli NOx in sostanze innocue, non solo diluirli.",
+   "Diluire con aria abbassa la concentrazione ma non riduce la quantità emessa.",
+   "Nella SCR i gas passano su un catalizzatore con un po' di ammoniaca.",
+   "L'ammoniaca riduce NO e NO₂ ad azoto e acqua.",
+   "Si usa la riduzione catalitica selettiva (SCR) con ammoniaca."
+  ],
+  "concetto": "abbattimento NOx"
+ },
+ {
+  "id": "IMP-108",
+  "materia": "Chimica degli impianti",
+  "argomento": "Processi industriali: ammoniaca, acido solforico, acido nitrico",
+  "livello": "test",
+  "domanda": "Quale caratteristica accomuna le reazioni principali dei processi dell'ammoniaca, dell'acido solforico e dell'acido nitrico?",
+  "opzioni": {
+   "A": "Sono tutte endotermiche e richiedono forni",
+   "B": "Sono esotermiche e richiedono catalizzatori e un buon recupero del calore",
+   "C": "Avvengono tutte in fase liquida a temperatura ambiente",
+   "D": "Usano tutte lo stesso catalizzatore",
+   "E": "Avvengono tutte senza riciclo né separazione"
+  },
+  "giusta": "B",
+  "perche": "La sintesi dell'ammoniaca, l'ossidazione di SO₂ e l'ossidazione dell'ammoniaca sono reazioni esotermiche in fase gassosa su catalizzatori solidi, rispettivamente ferro, pentossido di vanadio e platino-rodio. Il calore liberato si recupera per produrre vapore e preriscaldare i reagenti. In tutti e tre i casi la scelta della temperatura è un compromesso tra velocità e conversione o selettività. La trappola è pensare che usino lo stesso catalizzatore.",
+  "semplice": "I tre processi sono come tre cuochi che usano fornelli diversi ma tutti cucinano «a fiamma viva» e riusano il calore avanzato.",
+  "passaggi": [
+   "Ammoniaca: sintesi esotermica su ferro.",
+   "Acido solforico: ossidazione di SO₂ esotermica su V₂O₅.",
+   "Acido nitrico: ossidazione di NH₃ esotermica su Pt-Rh.",
+   "Tutte in fase gassosa, con catalizzatori diversi e recupero del calore per produrre vapore.",
+   "In comune: esotermiche, catalizzate, con buon recupero del calore."
+  ],
+  "concetto": "confronto tra processi"
+ },
+ {
+  "id": "IMP-109",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Quali sono gli elementi essenziali di un anello di regolazione in retroazione (feedback)?",
+  "opzioni": {
+   "A": "Solo una valvola manuale",
+   "B": "Un serbatoio, una pompa e uno scambiatore",
+   "C": "Un allarme acustico e un operatore",
+   "D": "Un disco di rottura e una valvola di sicurezza",
+   "E": "Sensore-trasmettitore, regolatore e organo di regolazione (di solito una valvola)"
+  },
+  "giusta": "E",
+  "perche": "Il sensore misura la variabile controllata (per esempio la temperatura) e il trasmettitore invia il segnale al regolatore. Il regolatore confronta la misura con il valore desiderato (set point) e calcola l'azione da compiere. L'organo di regolazione, quasi sempre una valvola, modifica la variabile manipolata, come la portata di vapore. La trappola è confondere i dispositivi di sicurezza con quelli di regolazione.",
+  "semplice": "Quando fai la doccia: la pelle sente la temperatura (sensore), il cervello decide (regolatore) e la mano gira il miscelatore (valvola).",
+  "passaggi": [
+   "Un anello di retroazione deve misurare, decidere e agire.",
+   "Misura: sensore-trasmettitore della variabile controllata.",
+   "Decisione: regolatore, che confronta la misura con il set point.",
+   "Azione: organo di regolazione, di solito una valvola, sulla variabile manipolata.",
+   "Dischi di rottura e allarmi sono sicurezza, non regolazione: resta la E."
+  ],
+  "concetto": "anello di regolazione"
+ },
+ {
+  "id": "IMP-110",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "In uno schema P&ID, che cosa indica la sigla TIC?",
+  "opzioni": {
+   "A": "Un trasmettitore di pressione",
+   "B": "Un totalizzatore di portata",
+   "C": "Un controllo di livello",
+   "D": "Una valvola di intercettazione",
+   "E": "Un regolatore-indicatore di temperatura"
+  },
+  "giusta": "E",
+  "perche": "Nella simbologia degli strumenti la prima lettera indica la grandezza misurata (T temperatura, P pressione, F portata, L livello) e le lettere successive la funzione (I indicatore, C regolatore, T trasmettitore). Quindi TIC è un regolatore di temperatura con indicazione, FT un trasmettitore di portata, LIC un regolatore-indicatore di livello. La trappola è leggere la T finale come «temperatura» invece che come «trasmettitore».",
+  "semplice": "È come una targa: la prima lettera dice «cosa misuro», le altre «cosa faccio con la misura».",
+  "passaggi": [
+   "Nella sigla la prima lettera indica la grandezza misurata: T = temperatura.",
+   "Le lettere successive indicano la funzione: I = indicatore, C = regolatore.",
+   "Una T in seconda o terza posizione significherebbe trasmettitore.",
+   "TIC è un regolatore-indicatore di temperatura."
+  ],
+  "concetto": "sigle degli strumenti"
+ },
+ {
+  "id": "IMP-111",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Con un regolatore solo proporzionale (P), che cosa succede dopo un disturbo permanente?",
+  "opzioni": {
+   "A": "La variabile torna esattamente al set point",
+   "B": "Il sistema diventa sempre instabile",
+   "C": "La valvola si chiude completamente",
+   "D": "Resta uno scostamento permanente tra misura e set point (offset)",
+   "E": "Il regolatore si spegne"
+  },
+  "giusta": "D",
+  "perche": "L'azione proporzionale produce un'uscita proporzionale all'errore: per mantenere la valvola in una nuova posizione serve un errore diverso da zero. Quindi dopo un disturbo permanente rimane un offset. Per eliminarlo si aggiunge l'azione integrale, che continua a modificare l'uscita finché l'errore non è nullo. La trappola è pensare che l'azione P porti sempre a errore zero.",
+  "semplice": "Se per tenere la doccia calda devi tenere il miscelatore un po' più a destra, ma la tua mano si muove solo quando senti freddo, resterà sempre un po' di freddo.",
+  "passaggi": [
+   "Il regolatore P dà un'uscita proporzionale all'errore: uscita = Kp · errore.",
+   "Dopo un disturbo permanente la valvola deve stare in una nuova posizione.",
+   "Per tenere un'uscita diversa serve un errore diverso da zero.",
+   "Rimane quindi uno scostamento permanente (offset), eliminabile con l'azione integrale.",
+   "Risposta: resta un offset tra misura e set point."
+  ],
+  "concetto": "offset"
+ },
+ {
+  "id": "IMP-112",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "test",
+  "domanda": "Qual è il compito dell'azione integrale (I) in un regolatore PID?",
+  "opzioni": {
+   "A": "Anticipare l'andamento dell'errore",
+   "B": "Eliminare l'errore a regime, sommando l'errore nel tempo",
+   "C": "Rendere il sistema più veloce senza effetti collaterali",
+   "D": "Misurare la variabile controllata",
+   "E": "Aprire la valvola di sicurezza"
+  },
+  "giusta": "B",
+  "perche": "L'azione integrale accumula l'errore nel tempo e continua a variare l'uscita finché l'errore resta diverso da zero: così elimina l'offset. Se è troppo forte, però, rende il sistema oscillante. L'azione derivativa invece reagisce alla velocità di variazione dell'errore e anticipa le tendenze. La trappola è confondere l'integrale con la derivativa.",
+  "semplice": "L'integrale è come un genitore che «si ricorda» di tutte le volte in cui sei arrivato in ritardo e alla fine ti fa uscire di casa prima, finché non arrivi puntuale.",
+  "passaggi": [
+   "L'azione integrale somma l'errore nel tempo.",
+   "Finché l'errore resta diverso da zero, l'uscita continua a cambiare.",
+   "Si ferma solo con errore nullo: così elimina l'offset a regime.",
+   "Anticipare l'andamento dell'errore è compito dell'azione derivativa.",
+   "Compito: eliminare l'errore a regime sommando l'errore nel tempo."
+  ],
+  "concetto": "azione integrale"
+ },
+ {
+  "id": "IMP-113",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Un regolatore proporzionale ha guadagno Kc = 2. Se l'errore è del 5%, di quanto varia l'uscita del regolatore?",
+  "opzioni": {
+   "A": "Del 2,5%",
+   "B": "Del 7%",
+   "C": "Del 10%",
+   "D": "Del 3%",
+   "E": "Del 25%"
+  },
+  "giusta": "C",
+  "perche": "Nel regolatore proporzionale la variazione dell'uscita è Δu = Kc · e. Con Kc = 2 ed errore del 5% l'uscita cambia del 10%. Un guadagno maggiore rende la risposta più energica ma può far oscillare il sistema. La trappola è dividere per il guadagno invece di moltiplicare.",
+  "semplice": "Con guadagno 2, a ogni grado di errore la valvola si muove il doppio: reagisce in modo deciso.",
+  "passaggi": [
+   "Δu = Kc · e",
+   "Δu = 2 · 5% = 10%"
+  ],
+  "concetto": "guadagno proporzionale"
+ },
+ {
+  "id": "IMP-114",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "università",
+  "domanda": "Che cosa distingue la regolazione in avanti (feedforward) da quella in retroazione?",
+  "opzioni": {
+   "A": "Il feedforward misura la variabile controllata e corregge dopo l'errore",
+   "B": "Il feedforward non usa nessuna misura",
+   "C": "Il feedforward funziona solo con regolatori proporzionali",
+   "D": "Il feedforward misura il disturbo e agisce prima che la variabile controllata si scosti dal set point",
+   "E": "Il feedforward è sempre più preciso e non richiede retroazione"
+  },
+  "giusta": "D",
+  "perche": "La retroazione corregge dopo aver visto l'errore, quindi agisce sempre in ritardo. Il feedforward misura il disturbo, per esempio una variazione della portata di alimentazione, e grazie a un modello del processo calcola subito la correzione. Poiché il modello non è mai perfetto e non tutti i disturbi si misurano, di solito si combina con una retroazione. La trappola è pensare che possa sostituirla del tutto.",
+  "semplice": "Se vedi una curva sulla strada giri il volante prima di uscire di corsia: è feedforward. Correggere dopo aver toccato la riga è feedback.",
+  "passaggi": [
+   "La retroazione misura la variabile controllata e corregge dopo aver visto l'errore.",
+   "Il feedforward misura il disturbo (per esempio la portata di alimentazione).",
+   "Con un modello del processo calcola la correzione prima che la variabile si scosti.",
+   "Il modello non è mai perfetto: di solito si combina con la retroazione.",
+   "Il feedforward misura il disturbo e agisce prima dello scostamento."
+  ],
+  "concetto": "feedforward"
+ },
+ {
+  "id": "IMP-115",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "università",
+  "domanda": "In una regolazione in cascata della temperatura di un reattore, come sono organizzati i due regolatori?",
+  "opzioni": {
+   "A": "Il regolatore principale di temperatura del reattore fornisce il set point al regolatore secondario, per esempio di temperatura o portata del fluido di raffreddamento",
+   "B": "I due regolatori agiscono su due valvole diverse in modo indipendente",
+   "C": "Il regolatore secondario fornisce il set point a quello principale",
+   "D": "Uno dei due regolatori serve solo di riserva",
+   "E": "I due regolatori misurano la stessa variabile"
+  },
+  "giusta": "A",
+  "perche": "Nella cascata l'anello interno (secondario), veloce, regola una variabile intermedia come la temperatura della camicia, e corregge subito i suoi disturbi. L'anello esterno (principale), più lento, regola la variabile che interessa davvero e decide il set point del secondario. Così i disturbi sul fluido di servizio vengono eliminati prima di arrivare al reattore. La trappola è invertire la gerarchia.",
+  "semplice": "Il capo (regolatore principale) dice al caposquadra quale obiettivo raggiungere; il caposquadra (secondario) si occupa dei problemi quotidiani prima che arrivino al capo.",
+  "passaggi": [
+   "Nella cascata ci sono due anelli annidati.",
+   "L'anello esterno (principale) regola la variabile che interessa: la temperatura del reattore.",
+   "La sua uscita diventa il set point dell'anello interno (secondario).",
+   "L'anello interno, veloce, regola la variabile intermedia, come la temperatura o la portata del fluido di raffreddamento.",
+   "Risposta: il principale fornisce il set point al secondario."
+  ],
+  "concetto": "regolazione in cascata"
+ },
+ {
+  "id": "IMP-116",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Una valvola che alimenta il combustibile a un forno deve essere «aria per aprire» (si chiude in mancanza di aria). Perché?",
+  "opzioni": {
+   "A": "Perché così si risparmia aria compressa",
+   "B": "Perché in caso di guasto dell'aria strumenti la valvola va in posizione di sicurezza, cioè chiusa, e il forno non riceve combustibile",
+   "C": "Perché le valvole chiuse si usurano meno",
+   "D": "Perché in caso di guasto il forno deve funzionare al massimo",
+   "E": "Perché è l'unico tipo di valvola esistente"
+  },
+  "giusta": "B",
+  "perche": "Per ogni valvola si decide la posizione che deve assumere se manca l'energia di azionamento (fail-safe). Per il combustibile di un forno la posizione sicura è chiusa, per evitare surriscaldamenti o esplosioni. Per l'acqua di raffreddamento di un reattore esotermico, al contrario, la posizione sicura è aperta. La trappola è pensare che tutte le valvole debbano chiudersi in caso di guasto.",
+  "semplice": "Il fornello a gas di casa ha una termocoppia: se la fiamma si spegne la valvola si chiude da sola. La posizione sicura è «chiusa».",
+  "passaggi": [
+   "Per ogni valvola si sceglie la posizione da assumere se manca l'aria strumenti (fail-safe).",
+   "Per il combustibile di un forno la posizione sicura è chiusa: niente surriscaldamenti o esplosioni.",
+   "«Aria per aprire» significa che senza aria la molla la chiude.",
+   "Non vale per tutte: l'acqua di raffreddamento di un reattore esotermico deve restare aperta.",
+   "Risposta: la B."
+  ],
+  "concetto": "posizione di sicurezza delle valvole"
+ },
+ {
+  "id": "IMP-117",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Qual è la funzione di una valvola di sicurezza (PSV) su un recipiente in pressione?",
+  "opzioni": {
+   "A": "Aprirsi automaticamente quando la pressione supera un valore prefissato, scaricando il fluido",
+   "B": "Regolare la portata di alimentazione al recipiente",
+   "C": "Misurare la pressione e mostrarla all'operatore",
+   "D": "Mantenere costante la temperatura del recipiente",
+   "E": "Chiudere il recipiente in caso di incendio"
+  },
+  "giusta": "A",
+  "perche": "La PSV è un dispositivo autonomo, a molla, che si apre quando la pressione supera la taratura e si richiude quando torna sotto. Protegge il recipiente dallo scoppio anche se tutti gli altri sistemi falliscono. Il disco di rottura svolge una funzione simile ma si rompe e va sostituito. La trappola è confonderla con una valvola di regolazione.",
+  "semplice": "La pentola a pressione ha una valvolina che fischia e sfiata vapore quando la pressione è troppo alta: è una valvola di sicurezza.",
+  "passaggi": [
+   "La PSV è un dispositivo autonomo, a molla, che non dipende dalla regolazione.",
+   "Si apre quando la pressione supera il valore di taratura e scarica il fluido.",
+   "Si richiude quando la pressione torna sotto il valore.",
+   "Non regola portate, non misura e non controlla la temperatura.",
+   "Funzione: aprirsi oltre la pressione prefissata scaricando il fluido."
+  ],
+  "concetto": "valvola di sicurezza"
+ },
+ {
+  "id": "IMP-118",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "test",
+  "domanda": "Nell'analisi HAZOP, a che cosa servono le «parole guida» come NO, PIÙ, MENO, INVERSO?",
+  "opzioni": {
+   "A": "A classificare le sostanze per tossicità",
+   "B": "A dare istruzioni agli operatori in emergenza",
+   "C": "A generare in modo sistematico possibili deviazioni dei parametri di processo e analizzarne cause e conseguenze",
+   "D": "A calcolare la probabilità esatta di un incidente",
+   "E": "A scegliere i materiali di costruzione"
+  },
+  "giusta": "C",
+  "perche": "L'HAZOP esamina l'impianto nodo per nodo combinando una parola guida con un parametro: «nessuna portata», «più pressione», «flusso inverso». Per ogni deviazione credibile il gruppo di lavoro cerca le cause, valuta le conseguenze, verifica le protezioni esistenti e propone azioni. È un metodo qualitativo e sistematico, non un calcolo di probabilità. La trappola è pensare che dia numeri precisi di rischio.",
+  "semplice": "È come chiedersi, davanti a un rubinetto: e se non esce acqua? e se ne esce troppa? e se torna indietro? Per ogni domanda si cerca il perché e il rimedio.",
+  "passaggi": [
+   "L'HAZOP esamina l'impianto nodo per nodo.",
+   "Si combina una parola guida con un parametro: «nessuna portata», «più pressione», «flusso inverso».",
+   "Per ogni deviazione si cercano cause, conseguenze, protezioni e azioni.",
+   "È un metodo qualitativo: non calcola probabilità esatte.",
+   "Le parole guida servono a generare sistematicamente le deviazioni."
+  ],
+  "concetto": "HAZOP"
+ },
+ {
+  "id": "IMP-119",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "università",
+  "domanda": "Perché in un reattore esotermico può verificarsi una reazione fuggitiva (runaway)?",
+  "opzioni": {
+   "A": "Perché il calore rimosso cresce più velocemente di quello generato",
+   "B": "Perché la reazione diventa endotermica ad alta temperatura",
+   "C": "Perché il catalizzatore si disattiva",
+   "D": "Perché il calore generato cresce in modo esponenziale con la temperatura, mentre il calore rimosso cresce solo in modo lineare",
+   "E": "Perché l'agitatore aumenta sempre la velocità"
+  },
+  "giusta": "D",
+  "perche": "La velocità di reazione, e quindi il calore generato, segue la legge di Arrhenius e aumenta esponenzialmente con la temperatura. Il sistema di raffreddamento rimuove calore in modo circa proporzionale alla differenza di temperatura. Se la temperatura supera un punto critico la generazione vince, la temperatura sale sempre più veloce e possono seguire sovrapressioni, decomposizioni ed esplosioni. Una perdita di raffreddamento o di agitazione, o un dosaggio troppo rapido, sono cause tipiche. La trappola è pensare che basti un po' più di raffreddamento quando il fenomeno è già partito.",
+  "semplice": "È come una valanga: all'inizio scivola poca neve, ma più scende più ne trascina, finché non si può più fermare.",
+  "passaggi": [
+   "Il calore generato segue Arrhenius: cresce in modo esponenziale con la temperatura.",
+   "Il calore rimosso dal raffreddamento è circa proporzionale alla differenza di temperatura: cresce in modo lineare.",
+   "Oltre un punto critico la generazione supera la rimozione.",
+   "La temperatura sale sempre più in fretta: reazione fuggitiva.",
+   "Risposta: la D."
+  ],
+  "concetto": "reazione fuggitiva"
+ },
+ {
+  "id": "IMP-120",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Il metano ha limiti di infiammabilità in aria di circa 5% e 15% in volume. Cosa significa?",
+  "opzioni": {
+   "A": "Il metano brucia solo sopra il 15%",
+   "B": "La miscela può bruciare solo se il metano è tra il 5% e il 15%: sotto è troppo povera, sopra troppo ricca",
+   "C": "Il metano non brucia mai sotto il 15%",
+   "D": "Il metano brucia a qualunque concentrazione",
+   "E": "Il 5% è la concentrazione tossica e il 15% quella letale"
+  },
+  "giusta": "B",
+  "perche": "Il limite inferiore (LFL) è la concentrazione minima di combustibile per la propagazione della fiamma; il limite superiore (UFL) è quella massima, oltre la quale manca l'ossigeno. Fuori da questo intervallo la miscela non si accende anche con un innesco. Per sicurezza si tengono gli ambienti sotto una frazione del LFL, spesso il 25%, con rilevatori di gas. La trappola è pensare che una miscela molto ricca sia sicura: diluendosi con aria passa per forza nel campo infiammabile.",
+  "semplice": "Il motore di un'auto non parte se la miscela è troppo povera di benzina, ma neanche se è «ingolfato», cioè troppo ricco.",
+  "passaggi": [
+   "Il 5% è il limite inferiore di infiammabilità (LFL): sotto la miscela è troppo povera di combustibile.",
+   "Il 15% è il limite superiore (UFL): sopra manca ossigeno, miscela troppo ricca.",
+   "Solo tra 5% e 15% la fiamma si propaga con un innesco.",
+   "Non sono soglie tossiche.",
+   "Risposta: la miscela brucia solo tra il 5% e il 15%."
+  ],
+  "concetto": "limiti di infiammabilità"
+ },
+ {
+  "id": "IMP-121",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "università",
+  "domanda": "Una miscela contiene 50% di metano (LFL = 5%) e 50% di propano (LFL = 2,1%) nel combustibile. Con la regola di Le Chatelier, qual è circa il LFL della miscela?",
+  "opzioni": {
+   "A": "3,55%",
+   "B": "2,1%",
+   "C": "5%",
+   "D": "Circa 7,1%",
+   "E": "Circa 3,0%"
+  },
+  "giusta": "E",
+  "perche": "La regola di Le Chatelier per i limiti di infiammabilità è LFL_mix = 1/Σ(yᵢ/LFLᵢ), con yᵢ frazioni nel combustibile. Si ottiene 1/(0,5/5 + 0,5/2,1) = 1/(0,100 + 0,238) ≈ 2,96%. La media aritmetica (3,55%) sovrastima il limite, cioè sottovaluta il pericolo. La trappola è fare la media semplice o prendere uno dei due valori.",
+  "semplice": "Il componente con limite più basso «pesa» di più: basta poco propano per rendere la miscela più facile da accendere.",
+  "passaggi": [
+   "LFL_mix = 1 / (y₁/LFL₁ + y₂/LFL₂)",
+   "= 1 / (0,5/5 + 0,5/2,1)",
+   "= 1 / (0,100 + 0,238) = 1 / 0,338",
+   "≈ 2,96%"
+  ],
+  "concetto": "regola di Le Chatelier"
+ },
+ {
+  "id": "IMP-122",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Quale normativa europea, recepita in Italia con il D.Lgs. 105/2015, riguarda il controllo dei pericoli di incidenti rilevanti con sostanze pericolose?",
+  "opzioni": {
+   "A": "La direttiva Macchine",
+   "B": "Il regolamento REACH sulla registrazione delle sostanze",
+   "C": "La direttiva Seveso",
+   "D": "La direttiva sulle emissioni dei veicoli",
+   "E": "La direttiva sui dispositivi di protezione individuale"
+  },
+  "giusta": "C",
+  "perche": "La direttiva Seveso, nata dopo l'incidente di Seveso del 1976 (fuoriuscita di diossina), impone agli stabilimenti che detengono grandi quantità di sostanze pericolose una politica di prevenzione, un sistema di gestione della sicurezza, rapporti di sicurezza, piani di emergenza e informazione alla popolazione. La versione in vigore è la Seveso III, recepita in Italia con il D.Lgs. 105/2015. Il REACH riguarda invece la registrazione e valutazione delle sostanze chimiche. La trappola è confondere le due norme.",
+  "semplice": "Il nome ricorda un incidente vero in un paese lombardo: da allora le fabbriche più pericolose devono avere piani di emergenza anche per i cittadini vicini.",
+  "passaggi": [
+   "Cerca la norma sugli incidenti rilevanti con grandi quantità di sostanze pericolose.",
+   "Nasce dopo l'incidente di Seveso del 1976 (diossina).",
+   "La versione in vigore, Seveso III, è recepita in Italia con il D.Lgs. 105/2015.",
+   "REACH riguarda la registrazione delle sostanze, la direttiva Macchine le macchine.",
+   "È la direttiva Seveso."
+  ],
+  "concetto": "direttiva Seveso"
+ },
+ {
+  "id": "IMP-123",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "test",
+  "domanda": "Come si definisce in genere il rischio in ambito industriale?",
+  "opzioni": {
+   "A": "La somma delle sostanze pericolose presenti",
+   "B": "Il prodotto tra la probabilità (o frequenza) di un evento e la gravità delle sue conseguenze",
+   "C": "La sola gravità del danno possibile",
+   "D": "La sola probabilità che avvenga un guasto",
+   "E": "Il numero di dispositivi di sicurezza installati"
+  },
+  "giusta": "B",
+  "perche": "Il rischio combina quanto spesso un evento può accadere e quanto gravi sono le conseguenze: R = P · M. Un evento frequente con danni piccoli può avere un rischio simile a uno raro ma catastrofico. Per ridurre il rischio si può agire sulla prevenzione (abbassare P) o sulla protezione (ridurre M). La trappola è confondere il pericolo, cioè la proprietà intrinseca di una sostanza, con il rischio.",
+  "semplice": "La benzina è pericolosa (può bruciare), ma il rischio di tenerla in un serbatoio ben chiuso e lontano da fiamme è basso.",
+  "passaggi": [
+   "Il rischio combina quanto spesso un evento accade e quanto è grave.",
+   "Formula: R = P · M (probabilità o frequenza per magnitudo del danno).",
+   "Solo la gravità o solo la probabilità non bastano; il pericolo è la proprietà intrinseca della sostanza.",
+   "Il rischio è il prodotto tra probabilità e gravità delle conseguenze."
+  ],
+  "concetto": "rischio"
+ },
+ {
+  "id": "IMP-124",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "superiori",
+  "domanda": "Perché si usa l'azoto per «inertizzare» serbatoi e apparecchiature contenenti liquidi infiammabili?",
+  "opzioni": {
+   "A": "Per raffreddare il liquido sotto zero",
+   "B": "Per aumentare la pressione e far evaporare il liquido",
+   "C": "Per ridurre l'ossigeno sotto il valore necessario alla combustione",
+   "D": "Per reagire con il liquido e renderlo non infiammabile",
+   "E": "Per eliminare l'elettricità statica dal metallo"
+  },
+  "giusta": "C",
+  "perche": "Il triangolo del fuoco richiede combustibile, comburente (ossigeno) e innesco. Riempiendo lo spazio vuoto sopra il liquido con azoto si porta l'ossigeno sotto la concentrazione limite, e anche in presenza di vapori e scintille la combustione non può avvenire. L'azoto è economico e chimicamente inerte. La trappola è pensare che reagisca con il combustibile. Bisogna però ricordare che l'azoto può causare asfissia a chi entra nell'apparecchiatura.",
+  "semplice": "Se copri una candela con un bicchiere si spegne quando finisce l'ossigeno: l'azoto fa lo stesso, ma prima che il fuoco si accenda.",
+  "passaggi": [
+   "Triangolo del fuoco: combustibile, comburente (ossigeno), innesco.",
+   "Riempiendo lo spazio sopra il liquido con azoto, l'ossigeno scende sotto la concentrazione limite.",
+   "Senza abbastanza ossigeno, anche con vapori e scintille, la combustione non può avvenire.",
+   "L'azoto è inerte: non reagisce con il liquido.",
+   "Si usa per ridurre l'ossigeno sotto il valore necessario alla combustione."
+  ],
+  "concetto": "inertizzazione"
+ },
+ {
+  "id": "IMP-125",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "università",
+  "domanda": "Che cosa si intende per «strati di protezione» (layers of protection) in un impianto di processo?",
+  "opzioni": {
+   "A": "Barriere indipendenti in serie (regolazione, allarmi, sistemi strumentati di sicurezza, valvole di sicurezza, contenimento, emergenza) che riducono ciascuna la frequenza di un incidente",
+   "B": "Gli strati di vernice anticorrosione delle apparecchiature",
+   "C": "Gli strati di isolante termico sulle tubazioni",
+   "D": "Le diverse pressioni a cui lavorano i reparti",
+   "E": "I livelli gerarchici della direzione aziendale"
+  },
+  "giusta": "A",
+  "perche": "L'idea è che nessuna protezione sia perfetta: si mettono più barriere indipendenti, e l'incidente avviene solo se falliscono tutte. Il sistema strumentato di sicurezza (SIS) deve essere indipendente dalla regolazione di base, con sensori e valvole propri. Il metodo LOPA stima la frequenza dell'evento moltiplicando la frequenza della causa per la probabilità di guasto di ogni strato. La trappola è considerare indipendenti due strati che usano lo stesso sensore.",
+  "semplice": "È come il formaggio svizzero: ogni fetta ha dei buchi, ma mettendone molte in fila è difficile che i buchi si allineino tutti.",
+  "passaggi": [
+   "Nessuna protezione è perfetta: si mettono più barriere indipendenti in serie.",
+   "Esempi: regolazione, allarmi, sistema strumentato di sicurezza, valvole di sicurezza, contenimento, emergenza.",
+   "L'incidente avviene solo se falliscono tutte; ognuna riduce la frequenza dell'evento.",
+   "Vernici, isolanti o livelli aziendali non sono strati di protezione in questo senso.",
+   "Risposta: la A."
+  ],
+  "concetto": "strati di protezione"
+ },
+ {
+  "id": "IMP-126",
+  "materia": "Chimica degli impianti",
+  "argomento": "Sicurezza e controllo dei processi",
+  "livello": "test",
+  "domanda": "Quali sono i tre elementi del triangolo del fuoco?",
+  "opzioni": {
+   "A": "Combustibile, comburente e fonte di innesco",
+   "B": "Combustibile, acqua e anidride carbonica",
+   "C": "Ossigeno, azoto e idrogeno",
+   "D": "Calore, pressione e volume",
+   "E": "Fiamma, fumo e cenere"
+  },
+  "giusta": "A",
+  "perche": "Per avere una combustione servono contemporaneamente un combustibile, un comburente (di solito l'ossigeno dell'aria) e un innesco che fornisca l'energia di attivazione (scintilla, superficie calda, fiamma). Togliendo uno qualsiasi dei tre il fuoco non parte o si spegne: si raffredda con l'acqua, si soffoca con schiuma o CO₂, si allontana il combustibile chiudendo le valvole. La trappola è inserire nel triangolo i prodotti della combustione.",
+  "semplice": "Un fiammifero ha il combustibile (legno e capocchia), l'aria intorno e lo sfregamento come innesco: se lo bagni manca l'energia per accenderlo.",
+  "passaggi": [
+   "Una combustione richiede tre elementi insieme.",
+   "Il combustibile che brucia.",
+   "Il comburente, di solito l'ossigeno dell'aria.",
+   "La fonte di innesco che dà l'energia di attivazione (scintilla, superficie calda).",
+   "Il triangolo è combustibile, comburente e innesco."
+  ],
+  "concetto": "triangolo del fuoco"
+ }
+]

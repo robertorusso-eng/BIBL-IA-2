@@ -1,0 +1,622 @@
+{
+ "Errori di misura e trattamento dei dati": {
+  "superiore": {
+   "spiegazione": [
+    "Ogni misura in laboratorio è accompagnata da un errore: non esiste un risultato «perfetto», ma un risultato con la sua incertezza. Gli errori si dividono in due grandi famiglie. L'errore sistematico sposta tutte le misure nella stessa direzione: una bilancia che segna sempre 0,02 g in più, una pipetta tarata male, un reattivo impuro. L'errore casuale invece fa oscillare i risultati un po' sopra e un po' sotto il valore medio, per esempio per piccole differenze nella lettura del menisco. Esiste anche l'errore grossolano, cioè lo sbaglio vero e proprio, come un travaso con perdita di liquido, che rende la misura da scartare.",
+    "Per giudicare la qualità dei dati si usano due parole che nel linguaggio comune sembrano sinonimi ma in chimica analitica non lo sono. L'accuratezza indica quanto la media dei risultati è vicina al valore vero; la precisione indica quanto i risultati ripetuti sono vicini tra loro. Con l'immagine del tiro al bersaglio: freccette raggruppate ma lontane dal centro sono precise e poco accurate; freccette sparse intorno al centro sono accurate in media ma poco precise. Gli errori sistematici peggiorano l'accuratezza, quelli casuali la precisione.",
+    "L'errore assoluto è la differenza tra il valore misurato e quello vero, con il suo segno: se trovo 49,5 mg su 50,0 mg l'errore assoluto è −0,5 mg. L'errore relativo divide questa differenza per il valore vero e si esprime spesso in percentuale: −0,5/50,0 · 100 = −1,0%. L'errore relativo è più utile perché permette di confrontare misure di grandezza diversa: mezzo milligrammo su 50 mg è un errore piccolo, su 2 mg sarebbe enorme. Per questo nei rapporti di analisi si riporta quasi sempre l'errore relativo o l'incertezza percentuale.",
+    "Quando si ripete una misura più volte si riassumono i dati con la media aritmetica x̄ e con la deviazione standard s, che indica la dispersione dei dati intorno alla media. Si calcola sommando i quadrati degli scarti dalla media, dividendo per n − 1 e facendo la radice. Il coefficiente di variazione CV% = s/x̄ · 100 esprime la precisione in percentuale. Per esempio con tre misure di 2,50, 2,54 e 2,46 mg/L la media è 2,50, la deviazione standard 0,040 e il CV l'1,6%.",
+    "I risultati vanno scritti con il giusto numero di cifre significative, cioè le cifre certe più la prima incerta. Gli zeri iniziali non contano (0,0045 ha due cifre significative), quelli finali dopo la virgola sì (4,50 ne ha tre). Nelle moltiplicazioni e divisioni il risultato ha tante cifre significative quante il dato meno preciso; nelle somme e sottrazioni si guarda al numero di decimali. Infine, nelle analisi strumentali si costruisce una retta di taratura con standard a concentrazione nota: dal segnale del campione si ricava la concentrazione con C = (segnale − intercetta) / pendenza."
+   ],
+   "metodo": [
+    "Costruisci una tabella con due colonne, errori sistematici ed errori casuali, e per ciascuno scrivi tre esempi presi dalle esperienze di laboratorio che hai fatto.",
+    "Calcola a mano almeno una volta media, deviazione standard e CV% di una serie di 4-5 dati, poi controlla il risultato con la calcolatrice o un foglio di calcolo.",
+    "Esercitati a contare le cifre significative trasformando ogni numero in notazione scientifica.",
+    "Quando leggi un risultato chiediti sempre: è accurato, è preciso, e come potrei verificarlo (standard, repliche, bianco)?",
+    "Disegna una retta di taratura su carta millimetrata con cinque standard e ricava graficamente la concentrazione di un campione."
+   ],
+   "ricorda": [
+    "«Sistematico = sempre dallo stesso lato, casuale = un po' di qua e un po' di là».",
+    "Accuratezza guarda il centro del bersaglio, precisione guarda quanto sono vicine le freccette.",
+    "Deviazione standard: si divide per n − 1, non per n.",
+    "Moltiplicazioni: conta le cifre significative; somme: conta i decimali."
+   ],
+   "errori": [
+    "Pensare che ripetere tante volte una misura corregga un errore sistematico: le repliche riducono solo l'effetto degli errori casuali.",
+    "Usare «preciso» e «accurato» come se fossero la stessa cosa.",
+    "Riportare tutte le cifre della calcolatrice invece di arrotondare alle cifre significative.",
+    "Dimenticare il segno dell'errore assoluto o dividere per il valore misurato invece che per quello vero."
+   ],
+   "domande": [
+    {
+     "domanda": "Che differenza c'è tra errore sistematico e casuale?",
+     "risposta": "Il sistematico sposta tutte le misure nella stessa direzione e si corregge con la taratura; il casuale le fa oscillare intorno alla media e si riduce con le repliche."
+    },
+    {
+     "domanda": "Quante cifre significative ha 0,0250?",
+     "risposta": "Tre: 2, 5 e lo zero finale."
+    },
+    {
+     "domanda": "Trovi 9,8 g su un valore vero di 10,0 g. Qual è l'errore relativo?",
+     "risposta": "−2,0%: (9,8 − 10,0) / 10,0 · 100."
+    },
+    {
+     "domanda": "A che cosa serve il coefficiente di variazione?",
+     "risposta": "A esprimere la precisione in percentuale rispetto alla media, così da confrontare serie di dati diverse."
+    },
+    {
+     "domanda": "Una taratura è A = 0,10·C + 0,02. Se A = 0,52, quanto vale C?",
+     "risposta": "5,0: (0,52 − 0,02) / 0,10."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Il trattamento statistico dei dati analitici parte dall'ipotesi che gli errori casuali seguano una distribuzione normale (gaussiana), centrata sulla media della popolazione μ e con dispersione σ. In pratica si dispone di pochi dati e si stimano μ e σ con la media campionaria x̄ e la deviazione standard s, calcolata con n − 1 gradi di libertà perché un grado si «consuma» per stimare la media. La media di n misure ha una deviazione standard ridotta di √n: con quattro repliche l'incertezza della media si dimezza rispetto alla singola misura. Questa è la ragione per cui si eseguono più repliche, ma il guadagno cresce lentamente.",
+    "Per dare un intervallo entro cui si trova con una certa probabilità il valore vero si usa l'intervallo di confidenza x̄ ± t · s/√n, dove t è il valore di Student per il livello di confidenza scelto e i gradi di libertà n − 1. Con pochi dati t è grande (con 5 dati al 95% vale 2,776), e l'intervallo si allarga per compensare la scarsa conoscenza di σ. Per esempio con media 5,10 mg/L, s = 0,038 e n = 5 l'intervallo al 95% è 5,10 ± 0,047 mg/L. Va ricordato che l'intervallo descrive solo l'incertezza casuale: un errore sistematico non viene rivelato da questo calcolo.",
+    "I test di significatività permettono di decidere se una differenza osservata è reale o dovuta al caso. Il test t confronta una media con un valore di riferimento, t = |x̄ − μ|·√n/s, oppure due medie tra loro; il test F confronta due precisioni con il rapporto delle varianze, mettendo la maggiore al numeratore; il test Q di Dixon o il test di Grubbs valutano se un dato sospetto è anomalo. In tutti i casi si confronta il valore calcolato con un valore critico tabulato: se lo supera, la differenza è significativa a quel livello di confidenza. Un test t positivo nel confronto con un materiale certificato è il segnale di un errore sistematico del metodo.",
+    "Quando un risultato si calcola da più grandezze misurate, le incertezze si propagano. Per somme e differenze si combinano in quadratura le incertezze assolute, s = √(s₁² + s₂²); per prodotti e quozienti si combinano in quadratura le incertezze relative. Così il volume erogato da una buretta, differenza di due letture con s di 0,02 e 0,03 mL, ha incertezza 0,036 mL, e una concentrazione m/V con incertezze relative dello 0,40% e 0,50% ha incertezza 0,64%. La regola mostra che conviene migliorare per prima la misura con l'incertezza relativa maggiore.",
+    "Nelle analisi strumentali la taratura si costruisce con il metodo dei minimi quadrati, che fornisce pendenza (sensibilità), intercetta e coefficiente di correlazione; un r vicino a 1 non garantisce da solo la linearità, che va controllata con il grafico dei residui. Dalla deviazione standard del bianco si ottengono il limite di rivelabilità LOD = 3s/m e il limite di quantificazione LOQ = 10s/m. La validazione di un metodo comprende inoltre esattezza (con materiali certificati o prove di recupero), ripetibilità, riproducibilità, selettività e robustezza. Il recupero di un'aggiunta nota, per esempio 96% su 10 mg/L aggiunti, rivela eventuali effetti della matrice."
+   ],
+   "metodo": [
+    "Per ogni test statistico scrivi in una scheda: domanda a cui risponde, formula, gradi di libertà, regola di decisione e un esempio numerico svolto.",
+    "Rifai al foglio di calcolo una regressione lineare completa, con pendenza, intercetta, r e grafico dei residui, e confrontala con il calcolo manuale.",
+    "Allenati sulla propagazione degli errori partendo da formule reali di laboratorio (concentrazione da una titolazione, diluizioni in serie).",
+    "Quando leggi un risultato con intervallo di confidenza, prova a ricostruire s e n e a chiederti come cambierebbe con il doppio delle repliche.",
+    "Collega questo capitolo a tutti gli altri: per ogni tecnica (titolazione, spettrofotometria, cromatografia) individua le principali fonti di errore sistematico e casuale."
+   ],
+   "ricorda": [
+    "La media migliora come 1/√n: per dimezzare l'incertezza servono quattro volte le repliche.",
+    "Test t: medie; test F: varianze; test Q o Grubbs: dati anomali.",
+    "Somme: incertezze assolute in quadratura; prodotti: incertezze relative in quadratura.",
+    "LOD = 3s/m, LOQ = 10s/m."
+   ],
+   "errori": [
+    "Scartare un dato «perché non piace» senza un test statistico o una causa documentata.",
+    "Dimenticare √n nell'intervallo di confidenza o nel test t.",
+    "Fare nel test F il rapporto tra deviazioni standard invece che tra varianze.",
+    "Considerare un r = 0,999 come prova sufficiente di linearità senza guardare i residui.",
+    "Sommare linearmente incertezze indipendenti, sovrastimando l'errore finale."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché nella deviazione standard campionaria si divide per n − 1?",
+     "risposta": "Perché un grado di libertà è stato usato per stimare la media dai dati stessi."
+    },
+    {
+     "domanda": "Come cambia l'intervallo di confidenza se le repliche passano da 4 a 16?",
+     "risposta": "Si restringe di circa la metà (per il fattore √n), e anche t diminuisce."
+    },
+    {
+     "domanda": "Che cosa indica un test t significativo nel confronto con un materiale certificato?",
+     "risposta": "Un probabile errore sistematico del metodo."
+    },
+    {
+     "domanda": "Come si calcola l'incertezza relativa di C = m/V?",
+     "risposta": "Combinando in quadratura le incertezze relative di m e di V."
+    },
+    {
+     "domanda": "Che differenza c'è tra LOD e LOQ?",
+     "risposta": "Il LOD (3s/m) è la minima quantità rivelabile, il LOQ (10s/m) la minima quantificabile con precisione accettabile."
+    }
+   ]
+  }
+ },
+ "Equilibri in soluzione": {
+  "superiore": {
+   "spiegazione": [
+    "In chimica analitica quasi tutte le reazioni avvengono in soluzione acquosa e raggiungono un equilibrio, descritto da una costante. Le famiglie principali sono quattro: equilibri acido-base, di solubilità, di formazione di complessi e di ossidoriduzione. Conoscere la costante permette di prevedere quanto una reazione è completa, informazione essenziale per scegliere un metodo di analisi. Per esempio una titolazione funziona bene solo se la reazione tra analita e titolante è praticamente completa.",
+    "L'acidità di una soluzione si esprime con il pH = −log[H₃O⁺]. L'acqua stessa si dissocia leggermente e a 25 °C vale Kw = [H₃O⁺][OH⁻] = 10⁻¹⁴, da cui pH + pOH = 14. Gli acidi e le basi forti, come HCl e NaOH, sono completamente dissociati: in HCl 0,010 mol/L [H₃O⁺] = 0,010 e il pH è 2. Per una base forte si calcola prima il pOH e poi il pH: NaOH 0,0050 mol/L dà pOH 2,30 e pH 11,70.",
+    "Gli acidi e le basi deboli si dissociano solo in parte e sono caratterizzati da Ka e Kb: più la costante è piccola, più l'acido è debole. Se la dissociazione è modesta si usa l'approssimazione [H₃O⁺] ≈ √(Ka · C): l'acido acetico 0,10 mol/L, con Ka = 1,8 · 10⁻⁵, ha pH circa 2,87, molto meno acido di HCl alla stessa concentrazione. Acido e base coniugata sono legati da Ka · Kb = Kw. Anche i sali possono modificare il pH: l'acetato di sodio dà soluzioni leggermente basiche, il cloruro d'ammonio leggermente acide.",
+    "Una soluzione tampone contiene un acido debole e la sua base coniugata in quantità confrontabili, per esempio acido acetico e acetato di sodio. Il suo pH si calcola con l'equazione di Henderson-Hasselbalch, pH = pKa + log([A⁻]/[HA]), e varia poco se si aggiungono piccole quantità di acido o di base o se si diluisce. Il tampone funziona meglio quando pH = pKa, cioè con acido e base in parti uguali, ed è efficace circa entro una unità di pH dal pKa. Nel sangue, per esempio, il sistema bicarbonato mantiene il pH vicino a 7,4.",
+    "I sali poco solubili sono descritti dal prodotto di solubilità Ks. Per AgCl, Ks = [Ag⁺][Cl⁻] = 1,8 · 10⁻¹⁰, da cui la solubilità s = √Ks ≈ 1,3 · 10⁻⁵ mol/L. Se in soluzione c'è già uno degli ioni (ione comune), la solubilità diminuisce molto, come previsto dal principio di Le Châtelier. Per sapere se un sale precipita si calcola il prodotto ionico Q con le concentrazioni presenti: se Q supera Ks si forma il precipitato."
+   ],
+   "metodo": [
+    "Prepara una scheda con le formule del pH per i quattro casi base: acido forte, base forte, acido debole, base debole, ognuna con un esempio numerico.",
+    "Prima di ogni calcolo chiediti: la sostanza è forte o debole? È un acido, una base, un sale o un tampone?",
+    "Controlla sempre il buon senso del risultato: un acido deve dare pH minore di 7, una base maggiore di 7.",
+    "Esercitati con l'equazione di Henderson-Hasselbalch variando il rapporto base/acido (1, 2, 10, 0,1) e osserva come cambia il pH.",
+    "Per la solubilità scrivi sempre la reazione di dissociazione e l'espressione di Ks prima di risolvere."
+   ],
+   "ricorda": [
+    "pH + pOH = 14 a 25 °C.",
+    "Acido debole: radice di Ka per C.",
+    "Tampone: pH = pKa quando acido e base sono uguali; log 2 = 0,30.",
+    "Ione comune = solubilità più bassa; Q > Ks = precipita."
+   ],
+   "errori": [
+    "Trattare un acido debole come se fosse forte, ponendo [H₃O⁺] uguale alla concentrazione.",
+    "Fermarsi al pOH e riportarlo come pH nel caso delle basi.",
+    "Invertire il rapporto nell'equazione di Henderson-Hasselbalch.",
+    "Pensare che la Ks cambi aggiungendo uno ione comune: cambia la solubilità, non la costante."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è il pH di HNO₃ 0,0010 mol/L?",
+     "risposta": "3,00, perché è un acido forte."
+    },
+    {
+     "domanda": "Qual è il pH di KOH 0,010 mol/L?",
+     "risposta": "12,00: pOH 2, pH 14 − 2."
+    },
+    {
+     "domanda": "Un tampone ha pKa 4,74 e uguali concentrazioni di acido e base. Qual è il pH?",
+     "risposta": "4,74."
+    },
+    {
+     "domanda": "Perché AgCl è meno solubile in una soluzione di NaCl?",
+     "risposta": "Per l'effetto dello ione comune: il cloruro sposta l'equilibrio verso il solido."
+    },
+    {
+     "domanda": "Che cosa indica una Ka piccola?",
+     "risposta": "Un acido debole, poco dissociato."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La trattazione rigorosa degli equilibri in soluzione si basa sulle attività, non sulle concentrazioni: a = γ · c, dove il coefficiente di attività γ dipende dalla forza ionica I = ½ Σ cᵢ zᵢ². In soluzioni diluite γ ≈ 1 e si possono usare le concentrazioni, ma già a I = 0,1 gli ioni a carica doppia hanno γ sensibilmente minore di 1. Per esempio una soluzione di MgCl₂ 0,10 mol/L ha forza ionica 0,30 mol/L, perché la carica entra al quadrato. L'equazione di Debye-Hückel stima γ e spiega l'effetto sale, cioè l'aumento di solubilità dei sali poco solubili in presenza di elettroliti estranei.",
+    "Il calcolo del pH si imposta con un sistema di equazioni: costanti di equilibrio, bilancio di massa e bilancio di carica (elettroneutralità). Le formule approssimate, come [H₃O⁺] ≈ √(Ka·C), nascono da ipotesi da verificare a posteriori: la dissociazione deve essere minore del 5% circa e il contributo dell'acqua trascurabile. Per l'acido acetico 0,10 mol/L il grado di dissociazione è circa 1,3%, quindi l'approssimazione regge; per soluzioni molto diluite o acidi più forti serve l'equazione di secondo grado. Per i sali si calcola la costante di idrolisi: l'acetato ha Kb = Kw/Ka = 5,6 · 10⁻¹⁰ e una soluzione 0,10 mol/L ha pH 8,87.",
+    "Gli acidi poliprotici, come H₃PO₄ o H₂CO₃, hanno una costante per ogni protone, con Ka1 > Ka2 > Ka3. Le frazioni molari delle varie specie in funzione del pH (diagrammi di distribuzione) mostrano che a ciascun pKa coesistono in quantità uguali due specie adiacenti. Per preparare un tampone si sceglie la coppia con pKa più vicino al pH desiderato: per pH 7,2 si usa H₂PO₄⁻/HPO₄²⁻ (pKa2 = 7,21). La specie anfiprotica intermedia, come NaHCO₃, ha pH circa (pKa1 + pKa2)/2.",
+    "Gli equilibri di solubilità vanno trattati tenendo conto della stechiometria. Per un sale A₂B, come Ag₂CrO₄, Ks = (2s)²·s = 4s³, quindi le Ks si confrontano direttamente solo tra sali dello stesso tipo: Ag₂CrO₄ ha Ks più piccola di AgCl ma è più solubile. La solubilità dipende anche dal pH quando l'anione è una base (carbonati, solfuri, fosfati) e dalla presenza di leganti che formano complessi con il catione. La precipitazione frazionata sfrutta differenze di Ks per separare ioni, ed è la base del metodo di Mohr.",
+    "Gli equilibri di complessazione sono descritti dalle costanti di formazione Kf. L'EDTA, legante esadentato, forma complessi 1:1 molto stabili con quasi tutti i cationi metallici; poiché è un acido poliprotico, la frazione completamente deprotonata Y⁴⁻ cresce con il pH. Si definisce perciò una costante condizionale K'f = αY⁴⁻ · Kf, che tiene conto del pH di lavoro ed eventualmente di leganti ausiliari come l'ammoniaca. Questa costante decide se una titolazione complessometrica è fattibile a un certo pH: per Ca²⁺ e Mg²⁺ si lavora a pH 10."
+   ],
+   "metodo": [
+    "Per ogni esercizio scrivi esplicitamente bilancio di massa, bilancio di carica e costanti, poi decidi quali approssimazioni introdurre e verificale alla fine.",
+    "Disegna a mano i diagrammi di distribuzione delle specie di acido acetico e acido fosforico in funzione del pH.",
+    "Confronta sempre la solubilità in acqua pura, con ione comune e con complessante, sullo stesso sale.",
+    "Allenati a calcolare la forza ionica di miscele di elettroliti e a stimare i coefficienti di attività.",
+    "Collega gli equilibri alle tecniche: acido-base per le titolazioni, Kf per la complessometria, Ks per la gravimetria e l'argentometria."
+   ],
+   "ricorda": [
+    "Bilancio di massa + bilancio di carica + costanti = sistema risolvibile.",
+    "Approssimazione valida se la frazione dissociata è sotto il 5%.",
+    "A ogni pKa due specie adiacenti sono in uguale quantità.",
+    "Ks si confrontano solo tra sali con la stessa stechiometria.",
+    "Costante condizionale: K'f = αY⁴⁻ · Kf."
+   ],
+   "errori": [
+    "Applicare √(Ka·C) senza verificare che la dissociazione sia trascurabile.",
+    "Dimenticare il quadrato della carica nella forza ionica.",
+    "Mescolare specie non coniugate per preparare un tampone di un acido poliprotico.",
+    "Confrontare direttamente le Ks di sali con stechiometria diversa per dire quale è più solubile."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la forza ionica di Na₂SO₄ 0,010 mol/L?",
+     "risposta": "0,030 mol/L: ½(0,020·1 + 0,010·4)."
+    },
+    {
+     "domanda": "Qual è la solubilità di un sale AB₂ in funzione di Ks?",
+     "risposta": "s = ∛(Ks/4)."
+    },
+    {
+     "domanda": "Quale coppia si usa per un tampone a pH 10,3 con il sistema carbonato (pKa2 = 10,33)?",
+     "risposta": "HCO₃⁻ / CO₃²⁻."
+    },
+    {
+     "domanda": "Perché la stabilità dei complessi con EDTA dipende dal pH?",
+     "risposta": "Perché solo la forma deprotonata Y⁴⁻ complessa efficacemente e la sua frazione cresce con il pH."
+    },
+    {
+     "domanda": "Che cos'è l'effetto sale?",
+     "risposta": "L'aumento di solubilità di un sale poco solubile in presenza di elettroliti estranei, dovuto alla diminuzione dei coefficienti di attività."
+    }
+   ]
+  }
+ },
+ "Titolazioni": {
+  "superiore": {
+   "spiegazione": [
+    "La titolazione è un'analisi volumetrica: si aggiunge con una buretta una soluzione a concentrazione nota (il titolante) a un volume misurato di campione, finché la reazione è completa. Il momento in cui le moli di titolante aggiunte corrispondono esattamente, secondo la stechiometria, alle moli di analita si chiama punto di equivalenza. Sperimentalmente lo si riconosce dal punto finale, per esempio il cambio di colore di un indicatore. Una buona titolazione richiede una reazione rapida, completa, con stechiometria nota e un modo chiaro per vedere la fine.",
+    "Il calcolo si basa sempre sulle moli: n = C · V. Se la reazione è 1:1, come HCl + NaOH, all'equivalenza C₁V₁ = C₂V₂. Per esempio, se 25,00 mL di HCl richiedono 20,00 mL di NaOH 0,1000 mol/L, le moli di base sono 2,000 · 10⁻³ e la concentrazione dell'acido è 0,0800 mol/L. Se la stechiometria non è 1:1, come con l'acido solforico che ha due protoni, bisogna moltiplicare per il rapporto corretto.",
+    "Il titolante deve avere una concentrazione nota con precisione. Alcune sostanze, dette standard primari, si possono pesare e sciogliere direttamente: devono essere pure, stabili, non igroscopiche e con massa molare elevata. Il ftalato acido di potassio è lo standard primario per le basi, il carbonato di sodio per gli acidi. L'idrossido di sodio invece assorbe acqua e anidride carbonica dall'aria, quindi le sue soluzioni vanno standardizzate titolando uno standard primario.",
+    "Nelle titolazioni acido-base la curva di titolazione riporta il pH in funzione del volume aggiunto e mostra un salto brusco intorno all'equivalenza. L'indicatore va scelto in modo che il suo intervallo di viraggio cada all'interno del salto. Con acido forte e base forte l'equivalenza è a pH 7 e vanno bene molti indicatori; con acido debole e base forte è sopra 7 e si usa la fenolftaleina; con base debole e acido forte è sotto 7 e si usa il metilarancio o il rosso metile. In generale un indicatore cambia colore in un intervallo di circa due unità di pH intorno al proprio pKa.",
+    "Oltre a quelle acido-base esistono altre titolazioni. Nelle redox si usano ossidanti come il permanganato, che fa da autoindicatore con il suo colore viola, o lo iodio con il tiosolfato e la salda d'amido. Nelle complessometriche si usa l'EDTA per determinare i metalli, per esempio la durezza dell'acqua con il nero eriocromo T a pH 10. Nelle titolazioni di precipitazione, o argentometriche, si usa il nitrato d'argento per i cloruri, con il cromato come indicatore nel metodo di Mohr."
+   ],
+   "metodo": [
+    "Imposta ogni esercizio in quattro righe: reazione bilanciata, moli di titolante, moli di analita con il rapporto stechiometrico, concentrazione o massa finale.",
+    "Disegna le curve di titolazione acido forte-base forte e acido debole-base forte una sopra l'altra e segna il punto di equivalenza e il viraggio degli indicatori.",
+    "Prepara una tabella dei tipi di titolazione con titolante, indicatore e un'applicazione reale per ognuno.",
+    "In laboratorio annota sempre lettura iniziale e finale della buretta con due decimali e fai almeno tre titolazioni concordanti.",
+    "Ripassa la conversione mL → L prima di ogni calcolo: è la fonte di errore più comune."
+   ],
+   "ricorda": [
+    "Equivalenza = moli giuste; punto finale = colore che cambia.",
+    "Acido debole con base forte: fenolftaleina.",
+    "Permanganato e ferro: 1 a 5. Iodio e tiosolfato: 1 a 2.",
+    "Durezza: 1 grado francese = 10 mg/L di CaCO₃."
+   ],
+   "errori": [
+    "Usare C₁V₁ = C₂V₂ anche quando la reazione non è 1:1.",
+    "Scegliere un indicatore che vira lontano dal punto di equivalenza.",
+    "Pensare che all'equivalenza il pH sia sempre 7.",
+    "Considerare NaOH solido uno standard primario."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cos'è uno standard primario?",
+     "risposta": "Una sostanza pura, stabile e non igroscopica che si pesa per preparare soluzioni a concentrazione esattamente nota o per standardizzarle."
+    },
+    {
+     "domanda": "10,00 mL di NaOH richiedono 12,50 mL di HCl 0,1000 mol/L. Qual è la concentrazione di NaOH?",
+     "risposta": "0,1250 mol/L."
+    },
+    {
+     "domanda": "Quale indicatore si usa per titolare l'ammoniaca con HCl?",
+     "risposta": "Metilarancio o rosso metile, perché l'equivalenza è a pH acido."
+    },
+    {
+     "domanda": "Che titolante si usa per misurare la durezza dell'acqua?",
+     "risposta": "L'EDTA."
+    },
+    {
+     "domanda": "Perché il permanganato non ha bisogno di indicatore?",
+     "risposta": "Perché è viola e il primo eccesso colora di rosa la soluzione."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La curva di titolazione si calcola in quattro zone: punto iniziale, regione prima dell'equivalenza, equivalenza, eccesso di titolante. Per un acido forte titolato con una base forte prima dell'equivalenza il pH dipende dall'acido residuo diluito nel volume totale: 25,00 mL di HCl 0,100 mol/L dopo 10,00 mL di NaOH 0,100 mol/L hanno pH 1,37. Per un acido debole la regione prima dell'equivalenza è un tampone e a metà titolazione pH = pKa; all'equivalenza resta la base coniugata, diluita dal titolante, e per l'acido acetico 0,100 mol/L il pH è 8,72. L'ampiezza del salto dipende dalla costante di acidità e dalle concentrazioni: acidi con Ka·C minore di circa 10⁻⁸ non danno un punto finale netto.",
+    "L'errore di titolazione è la differenza tra punto finale e punto di equivalenza e dipende dalla scelta dell'indicatore e dalla pendenza della curva. Per basi o acidi poliprotici, come il carbonato, si hanno più punti di equivalenza: con la fenolftaleina si titola il primo protone (CO₃²⁻ → HCO₃⁻), con il metilarancio entrambi. Questo permette, con il metodo di Warder, di analizzare miscele di idrossido e carbonato. Si deve anche considerare la CO₂ atmosferica, che contamina le soluzioni di NaOH e altera i risultati con gli indicatori basici.",
+    "Le titolazioni redox si basano sulla differenza dei potenziali delle coppie coinvolte: il potenziale all'equivalenza è una media pesata dei potenziali standard sul numero di elettroni. La permanganometria in ambiente solforico (MnO₄⁻ + 5Fe²⁺ + 8H⁺) consente di determinare ferro, ossalati, acqua ossigenata; la dicromatometria usa un ossidante più stabile; la iodometria titola con tiosolfato lo iodio liberato da un ossidante su ioduro in eccesso, mentre la iodimetria usa lo iodio come titolante diretto. Il calcolo richiede di contare gli elettroni scambiati: 20,00 mL di KMnO₄ 0,0200 mol/L corrispondono a 2,00 · 10⁻³ mol di Fe²⁺. Le soluzioni di permanganato e di tiosolfato non sono stabili nel tempo e vanno standardizzate periodicamente, per esempio con ossalato di sodio o con iodato di potassio.",
+    "Nelle titolazioni complessometriche con EDTA la fattibilità dipende dalla costante condizionale, quindi dal pH. Gli indicatori metallocromici, come nero eriocromo T o muresside, formano con il metallo un complesso di colore diverso e meno stabile di quello con l'EDTA: al punto finale l'EDTA sottrae il metallo all'indicatore e il colore cambia. Oltre alla titolazione diretta si usano la retrotitolazione e la titolazione per spostamento, per metalli che reagiscono lentamente o bloccano l'indicatore. Il mascheramento con leganti selettivi permette di titolare un metallo in presenza di altri.",
+    "Le titolazioni argentometriche determinano alogenuri e tiocianati. Il metodo di Mohr usa il cromato come indicatore e richiede pH tra 6,5 e 10; il metodo di Volhard è una retrotitolazione in ambiente nitrico: si aggiunge AgNO₃ in eccesso e si titola l'argento rimasto con SCN⁻, usando Fe³⁺ come indicatore; il metodo di Fajans usa indicatori di adsorbimento come la fluoresceina. Per esempio con 25,00 mL di AgNO₃ 0,1000 mol/L e 8,00 mL di KSCN 0,1000 mol/L di ritorno si trovano 1,700 mmol di cloruro, cioè 60,3 mg. In tutte le titolazioni strumentali, potenziometriche o conduttimetriche, il punto finale si ricava dalla curva invece che da un indicatore."
+   ],
+   "metodo": [
+    "Calcola per esteso, anche al foglio di calcolo, la curva di titolazione di un acido debole con almeno dieci punti e confrontala con quella di un acido forte.",
+    "Per le redox bilancia sempre la semireazione e conta gli elettroni prima di impostare la stechiometria.",
+    "Costruisci uno schema delle retrotitolazioni: eccesso noto, quantità residua titolata, differenza.",
+    "Associa a ogni indicatore il suo meccanismo (acido-base, redox, metallocromico, di precipitazione o di adsorbimento).",
+    "Rivedi i criteri di fattibilità: Ka·C per gli acidi, K'f per l'EDTA, differenza di potenziali per le redox."
+   ],
+   "ricorda": [
+    "Metà equivalenza: pH = pKa.",
+    "All'equivalenza ricorda la diluizione dovuta al titolante.",
+    "Iodometria: ossidante + I⁻ in eccesso, poi tiosolfato; iodimetria: I₂ come titolante.",
+    "Mohr: cromato, pH neutro; Volhard: SCN⁻ e Fe³⁺, ambiente acido.",
+    "Retrotitolazione: analita = eccesso aggiunto − residuo titolato."
+   ],
+   "errori": [
+    "Dimenticare la diluizione nel calcolo del pH all'equivalenza.",
+    "Usare il rapporto 1:1 per il carbonato titolato fino al metilarancio.",
+    "Confondere iodometria e iodimetria.",
+    "Aggiungere la salda d'amido all'inizio della titolazione iodometrica, quando c'è molto iodio che si lega in modo poco reversibile.",
+    "Lavorare con il metodo di Mohr in ambiente acido."
+   ],
+   "domande": [
+    {
+     "domanda": "Che pH ha una soluzione di acido acetico a metà titolazione (Ka = 1,8 · 10⁻⁵)?",
+     "risposta": "4,74, cioè il pKa."
+    },
+    {
+     "domanda": "Perché nel metodo di Volhard si lavora in ambiente nitrico?",
+     "risposta": "Per evitare l'idrolisi di Fe³⁺ e la precipitazione di sali d'argento di anioni basici."
+    },
+    {
+     "domanda": "Come si analizza una miscela di NaOH e Na₂CO₃?",
+     "risposta": "Con due indicatori (fenolftaleina e metilarancio) e due volumi successivi, metodo di Warder."
+    },
+    {
+     "domanda": "Qual è il criterio approssimato per titolare un acido debole con un punto finale netto?",
+     "risposta": "Ka · C maggiore di circa 10⁻⁸."
+    },
+    {
+     "domanda": "Che cos'è il mascheramento in complessometria?",
+     "risposta": "L'aggiunta di un legante che blocca un metallo interferente, così che non reagisca con l'EDTA."
+    }
+   ]
+  }
+ },
+ "Spettrofotometria": {
+  "superiore": {
+   "spiegazione": [
+    "La spettrofotometria studia come la materia assorbe la luce e usa questo assorbimento per riconoscere e misurare le sostanze. La luce è radiazione elettromagnetica: ogni fotone ha un'energia E = h · c / λ, quindi lunghezze d'onda corte (ultravioletto) corrispondono a energie alte, lunghezze d'onda lunghe (infrarosso) a energie basse. Nell'UV e nel visibile le molecole assorbono promuovendo elettroni a livelli più alti, nell'infrarosso fanno vibrare i legami. La regione visibile va circa da 400 nm (violetto) a 700 nm (rosso).",
+    "Quando un fascio di luce di intensità I₀ attraversa una soluzione, ne esce con intensità I minore. La trasmittanza è T = I/I₀ e l'assorbanza è A = −log T. La relazione è logaritmica: A = 1 significa che passa il 10% della luce, A = 2 l'1%, A = 0,30 circa il 50%. Le misure più affidabili si fanno di solito con assorbanze tra circa 0,1 e 1.",
+    "La legge di Lambert-Beer lega l'assorbanza alla concentrazione: A = ε · b · c, dove ε è il coefficiente di assorbimento molare (caratteristico della sostanza e della lunghezza d'onda), b il cammino ottico in cm e c la concentrazione in mol/L. Per esempio con ε = 1,2 · 10⁴ L·mol⁻¹·cm⁻¹, b = 1 cm e c = 5,0 · 10⁻⁵ mol/L si ottiene A = 0,60. La legge vale bene per soluzioni diluite e luce monocromatica; a concentrazioni alte la retta si piega. Se si raddoppia il cammino ottico, a parità di concentrazione, l'assorbanza raddoppia.",
+    "Lo spettrofotometro è formato da una sorgente (lampada al tungsteno per il visibile, al deuterio per l'UV), un monocromatore che seleziona la lunghezza d'onda, una cuvetta con il campione e un rivelatore che trasforma la luce in segnale elettrico. Le cuvette per l'UV devono essere di quarzo, perché il vetro e la plastica assorbono queste radiazioni. Prima delle misure si azzera lo strumento con un bianco, che contiene solvente e reattivi ma non l'analita. In questo modo l'assorbanza letta è dovuta solo alla sostanza da misurare.",
+    "Nell'analisi quantitativa si misura alla lunghezza d'onda di massimo assorbimento (λmax), dove la sensibilità è maggiore e piccoli errori di lunghezza d'onda pesano poco. Si prepara una serie di standard, si costruisce la retta di taratura A in funzione di C e si ricava la concentrazione del campione. Il colore di una soluzione è complementare a quello assorbito: una soluzione di solfato di rame appare azzurra perché assorbe nell'arancio-rosso. Se un campione assorbe troppo lo si diluisce, ricordando poi di moltiplicare per il fattore di diluizione."
+   ],
+   "metodo": [
+    "Disegna lo schema a blocchi dello spettrofotometro e descrivi a voce il percorso della luce dalla sorgente al rivelatore.",
+    "Costruisci una tabella di conversione tra T% e A (100%, 50%, 10%, 1%) e imparala a memoria.",
+    "Svolgi esercizi con la legge di Lambert-Beer ricavando a turno A, ε, b e c.",
+    "Disegna la ruota dei colori complementari e prova a prevedere la λ di misura di alcune soluzioni colorate di laboratorio.",
+    "Durante le esercitazioni annota sempre come hai preparato bianco e standard e controlla che la retta passi vicino all'origine."
+   ],
+   "ricorda": [
+    "A = −log T; A = 1 vuol dire che passa un decimo della luce.",
+    "A = ε · b · c: «epsilon, cammino, concentrazione».",
+    "UV? Cuvetta di quarzo.",
+    "Vedi il colore che passa, non quello assorbito."
+   ],
+   "errori": [
+    "Pensare che assorbanza e trasmittanza si sommino a 100%.",
+    "Misurare alla lunghezza d'onda del colore che si vede invece che a λmax.",
+    "Dimenticare il bianco o usare acqua quando i reattivi assorbono.",
+    "Non moltiplicare per il fattore di diluizione il risultato di un campione diluito."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale A se T = 1%?",
+     "risposta": "2."
+    },
+    {
+     "domanda": "Una soluzione ha A = 0,50 con ε = 5000 L·mol⁻¹·cm⁻¹ e b = 1 cm. Qual è la concentrazione?",
+     "risposta": "1,0 · 10⁻⁴ mol/L."
+    },
+    {
+     "domanda": "Perché si misura a λmax?",
+     "risposta": "Perché la sensibilità è massima e la misura è meno influenzata da piccoli errori di lunghezza d'onda."
+    },
+    {
+     "domanda": "A che cosa serve il monocromatore?",
+     "risposta": "A selezionare una banda stretta di lunghezze d'onda."
+    },
+    {
+     "domanda": "Perché una soluzione appare rossa?",
+     "risposta": "Perché assorbe soprattutto il colore complementare (verde-azzurro) e trasmette il rosso."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La legge di Lambert-Beer si ricava considerando che ogni strato sottile di soluzione assorbe una frazione costante della luce che lo attraversa, e che il numero di centri assorbenti è proporzionale alla concentrazione. Le deviazioni sono di tre tipi: reali, dovute a interazioni tra molecole e a variazioni dell'indice di rifrazione a concentrazioni elevate; chimiche, quando la specie assorbente partecipa a equilibri come dimerizzazione o dissociazione acido-base; strumentali, dovute a luce non monocromatica e a luce diffusa, che appiattiscono la curva ad assorbanze alte. Per questo si lavora in un intervallo lineare verificato sperimentalmente. Le assorbanze di specie indipendenti sono additive, il che permette di analizzare miscele a più lunghezze d'onda risolvendo un sistema di equazioni.",
+    "Nell'UV-visibile molecolare le bande derivano da transizioni elettroniche, soprattutto π→π* nei sistemi coniugati e n→π* nei gruppi con doppietti liberi come il carbonile. Aumentando la coniugazione il massimo si sposta verso lunghezze d'onda maggiori (effetto batocromo) e ε cresce. Le bande in soluzione sono larghe perché alle transizioni elettroniche si sovrappongono livelli vibrazionali e rotazionali. Un ε dell'ordine di 10⁴ L·mol⁻¹·cm⁻¹ indica transizioni permesse e intense, valori di 10-100 transizioni proibite come quelle d-d dei complessi.",
+    "Gli strumenti possono essere a singolo raggio, a doppio raggio, che compensa le derive di sorgente e rivelatore misurando in continuo il riferimento, o a serie di diodi, che acquisiscono l'intero spettro in un istante. I rivelatori più comuni sono fotomoltiplicatori e fotodiodi. La luce diffusa e la larghezza della banda passante del monocromatore limitano l'accuratezza ad assorbanze elevate. In analisi quantitativa si possono usare taratura esterna, aggiunte standard (quando la matrice altera la sensibilità) e derivate dello spettro per separare bande sovrapposte.",
+    "La spettroscopia infrarossa studia le vibrazioni dei legami e usa il numero d'onda ṽ = 1/λ in cm⁻¹, proporzionale all'energia: 2000 cm⁻¹ corrispondono a 5,0 µm. Le bande caratteristiche permettono di riconoscere i gruppi funzionali: O–H largo tra 3200 e 3600 cm⁻¹, C–H intorno a 2900, C≡N intorno a 2250, C=O intenso intorno a 1700 cm⁻¹. La zona sotto 1500 cm⁻¹ è la regione delle «impronte digitali», tipica di ciascuna molecola. Gli strumenti moderni sono a trasformata di Fourier (FTIR), basati su un interferometro.",
+    "Le tecniche atomiche determinano gli elementi, soprattutto i metalli. Nell'assorbimento atomico il campione è atomizzato in fiamma o in fornetto di grafite e si misura l'assorbimento della luce emessa da una lampada a catodo cavo dello stesso elemento, che fornisce righe strette coincidenti con quelle degli atomi. Nell'emissione atomica con plasma ad accoppiamento induttivo (ICP) gli atomi vengono eccitati ad altissima temperatura e si misura la luce che emettono, con possibilità di analisi multielementare. La fluorescenza molecolare, infine, misura l'emissione a lunghezza d'onda maggiore di quella di eccitazione (spostamento di Stokes) ed è molto più sensibile dell'assorbimento perché si misura un segnale su fondo quasi nullo."
+   ],
+   "metodo": [
+    "Per ogni tipo di deviazione dalla legge di Lambert-Beer scrivi la causa, l'effetto sulla retta e il rimedio.",
+    "Costruisci una tabella delle principali bande IR e allenati a interpretare spettri semplici (alcol, chetone, acido carbossilico, nitrile).",
+    "Confronta in uno schema strumentale UV-visibile, IR, assorbimento atomico e fluorescenza: sorgente, selettore, campione, rivelatore.",
+    "Risolvi un problema di miscela a due componenti misurando a due lunghezze d'onda.",
+    "Esercitati sul metodo delle aggiunte standard e confrontalo con la taratura esterna."
+   ],
+   "ricorda": [
+    "Deviazioni: reali, chimiche, strumentali.",
+    "Più coniugazione: λmax più lunga e ε più grande.",
+    "C=O ≈ 1700 cm⁻¹; O–H largo sopra 3200 cm⁻¹.",
+    "Assorbimento atomico: una lampada a catodo cavo per ogni elemento.",
+    "Fluorescenza: emissione a λ maggiore, più sensibile."
+   ],
+   "errori": [
+    "Usare una taratura lineare oltre l'intervallo verificato.",
+    "Confondere numero d'onda e lunghezza d'onda nelle conversioni.",
+    "Pensare che l'assorbimento atomico usi una sorgente continua come l'UV-visibile molecolare.",
+    "Ignorare l'effetto matrice quando campioni e standard hanno composizioni molto diverse."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa provoca la luce diffusa nelle misure ad alta assorbanza?",
+     "risposta": "Una deviazione negativa: l'assorbanza misurata è minore di quella vera."
+    },
+    {
+     "domanda": "A quale lunghezza d'onda corrisponde 1000 cm⁻¹?",
+     "risposta": "10 µm."
+    },
+    {
+     "domanda": "Perché la fluorescenza è più sensibile dell'assorbimento?",
+     "risposta": "Perché si misura un segnale emesso su un fondo quasi nullo invece di una piccola differenza tra due intensità grandi."
+    },
+    {
+     "domanda": "Quando conviene il metodo delle aggiunte standard?",
+     "risposta": "Quando la matrice del campione modifica la sensibilità rispetto agli standard."
+    },
+    {
+     "domanda": "Che effetto ha l'aumento della coniugazione sullo spettro UV?",
+     "risposta": "Sposta λmax verso lunghezze d'onda maggiori e aumenta ε."
+    }
+   ]
+  }
+ },
+ "Cromatografia": {
+  "superiore": {
+   "spiegazione": [
+    "La cromatografia è una famiglia di tecniche che separano i componenti di una miscela facendoli passare attraverso due fasi: una fase stazionaria, ferma, e una fase mobile che scorre. Ogni componente si distribuisce tra le due fasi in modo diverso: chi è trattenuto di più dalla fase stazionaria avanza più lentamente, chi preferisce la fase mobile arriva prima. Il nome deriva dai primi esperimenti sui pigmenti vegetali colorati, ma oggi si separano sostanze di ogni tipo, anche incolori. Un esempio domestico è una macchia di pennarello su carta che si apre in più colori quando sale l'acqua.",
+    "Nella cromatografia su strato sottile (TLC) la fase stazionaria è uno strato di gel di silice su una lastrina e la fase mobile è un solvente che sale per capillarità. Dopo la corsa si misura il fattore di ritardo Rf = distanza percorsa dalla macchia / distanza percorsa dal fronte del solvente, sempre compreso tra 0 e 1. Per esempio una macchia a 3,2 cm con il fronte a 8,0 cm ha Rf = 0,40. La silice è polare, quindi trattiene i composti polari: quelli apolari hanno Rf più alto.",
+    "Nella gascromatografia (GC) la fase mobile è un gas inerte, come elio o azoto, e la fase stazionaria è un liquido o un polimero all'interno di una colonna lunga e sottile posta in un forno. Il campione deve essere volatile. All'uscita un rivelatore, come il rivelatore a ionizzazione di fiamma (FID), produce un segnale quando passa un composto. Nella cromatografia liquida ad alta prestazione (HPLC) la fase mobile è un liquido spinto ad alta pressione attraverso una colonna impaccata con particelle molto fini, e il rivelatore più comune è uno spettrofotometro UV.",
+    "Il risultato di una GC o HPLC è il cromatogramma, un grafico del segnale in funzione del tempo con un picco per ogni componente. Il tempo di ritenzione, cioè il tempo dall'iniezione al massimo del picco, serve a identificare il composto confrontandolo con uno standard nelle stesse condizioni. L'area del picco è proporzionale alla quantità del composto e serve per l'analisi quantitativa. Con il metodo di normalizzazione delle aree, se tutti i componenti rispondono in modo simile, la percentuale di ciascuno è la sua area divisa per la somma delle aree.",
+    "In HPLC la modalità più usata è la fase inversa: la colonna contiene catene idrocarburiche C18, apolari, e la fase mobile è una miscela di acqua e un solvente organico come metanolo o acetonitrile. In questo caso i composti polari escono per primi e quelli apolari più tardi, l'opposto della TLC su silice. Aumentando la parte organica della fase mobile i composti escono prima. La cromatografia si usa ovunque: controllo di farmaci, analisi di pesticidi negli alimenti, test antidoping, analisi ambientali."
+   ],
+   "metodo": [
+    "Esegui o osserva una TLC di inchiostri o pigmenti e calcola gli Rf di tutte le macchie.",
+    "Prepara uno schema che confronti TLC, GC e HPLC: fase mobile, fase stazionaria, tipo di campione, rivelatore.",
+    "Disegna un cromatogramma con tre picchi e indica tempo morto, tempi di ritenzione, larghezze e aree.",
+    "Allenati a prevedere l'ordine di uscita di composti con polarità diversa in fase normale e in fase inversa.",
+    "Collega il capitolo alla spettrofotometria: il rivelatore UV dell'HPLC funziona con la legge di Lambert-Beer."
+   ],
+   "ricorda": [
+    "Rf = macchia / fronte, sempre tra 0 e 1.",
+    "Tempo di ritenzione = chi è; area del picco = quanto.",
+    "Silice polare trattiene i polari; C18 apolare trattiene gli apolari.",
+    "GC: gas e campioni volatili; HPLC: liquido e alta pressione."
+   ],
+   "errori": [
+    "Calcolare Rf dividendo il fronte per la macchia, ottenendo valori maggiori di 1.",
+    "Pensare che la cromatografia funzioni solo per sostanze colorate.",
+    "Confondere l'ordine di eluizione della fase normale con quello della fase inversa.",
+    "Usare l'altezza del picco al posto dell'area senza verificarne la validità."
+   ],
+   "domande": [
+    {
+     "domanda": "Una macchia percorre 2,4 cm e il fronte 6,0 cm. Qual è Rf?",
+     "risposta": "0,40."
+    },
+    {
+     "domanda": "Quale gas non si usa come carrier in GC e perché?",
+     "risposta": "L'ossigeno, perché ossiderebbe i campioni e danneggerebbe la colonna."
+    },
+    {
+     "domanda": "A che cosa serve l'area di un picco?",
+     "risposta": "A determinare la quantità del componente."
+    },
+    {
+     "domanda": "In fase inversa esce prima un composto polare o uno apolare?",
+     "risposta": "Il polare."
+    },
+    {
+     "domanda": "Che cosa rileva un FID?",
+     "risposta": "I composti organici bruciati in una fiamma idrogeno-aria."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La ritenzione di un composto è descritta dal coefficiente di distribuzione K = Cs/Cm tra fase stazionaria e mobile e, in pratica, dal fattore di ritenzione k = (tR − tM)/tM, dove tM è il tempo morto. k esprime il rapporto tra il tempo trascorso nella fase stazionaria e quello nella fase mobile: con tM = 1,5 min e tR = 6,0 min si ha k = 3,0. Valori ottimali di k sono tra circa 1 e 10: troppo bassi non danno separazione, troppo alti allungano l'analisi e allargano i picchi. La selettività α = k₂/k₁ descrive quanto la colonna distingue due composti e dipende dalla chimica delle fasi.",
+    "L'efficienza della colonna si misura con il numero di piatti teorici N = 16(tR/w)², oppure 5,54(tR/w½)² con la larghezza a metà altezza, e con l'altezza equivalente H = L/N. Una colonna di 15 cm con 6000 piatti ha H = 25 µm. L'equazione di van Deemter H = A + B/u + C·u descrive l'allargamento dei picchi in funzione della velocità lineare u: A rappresenta i percorsi multipli, B la diffusione longitudinale, C la resistenza al trasferimento di massa. Il minimo della curva indica la velocità ottimale; particelle più piccole riducono A e C e permettono analisi più veloci, come nella UHPLC.",
+    "La risoluzione Rs = 2(tR2 − tR1)/(w₁ + w₂) misura la separazione effettiva tra due picchi: con Rs ≥ 1,5 i picchi sono separati alla linea di base. L'equazione di Purnell lega la risoluzione ai tre parametri fondamentali: Rs = (√N/4)·((α − 1)/α)·(k/(1 + k)). Ne derivano le strategie di ottimizzazione: aumentare N (colonne più lunghe o particelle più fini), aumentare k (fase mobile più debole), oppure, più efficace, aumentare α cambiando fase stazionaria, solvente organico, pH o temperatura. Quando i componenti hanno ritenzioni molto diverse si usa il gradiente di eluizione in HPLC o la programmata di temperatura in GC.",
+    "Per l'analisi quantitativa si usano taratura esterna, standard interno e aggiunte standard. Lo standard interno è un composto simile all'analita, assente nel campione e ben separato, aggiunto in quantità nota: si lavora con il rapporto delle aree, che compensa le variazioni del volume iniettato e della risposta. Si calcola un fattore di risposta relativo con soluzioni a concentrazione nota e lo si applica al campione. La normalizzazione delle aree è corretta solo se tutti i componenti eluiscono e i fattori di risposta sono uguali o corretti.",
+    "Esistono diversi meccanismi di separazione: adsorbimento (fase normale su silice), ripartizione (fase inversa), scambio ionico (resine con gruppi carichi, per ioni inorganici e amminoacidi), esclusione dimensionale (gel porosi, in cui le molecole grandi escono per prime) e affinità (interazioni biologiche specifiche). I rivelatori vanno scelti in base all'analita: in GC FID, conducibilità termica, cattura di elettroni per composti alogenati e spettrometria di massa; in HPLC UV-visibile a serie di diodi, fluorescenza, indice di rifrazione, conducibilità e massa. L'accoppiamento con la spettrometria di massa (GC-MS, LC-MS) unisce separazione e identificazione strutturale. Così un picco non è più riconosciuto solo dal tempo di ritenzione, ma anche dal suo spettro di massa."
+   ],
+   "metodo": [
+    "Ricava da un cromatogramma reale o simulato tM, tR, k, α, N e Rs per una coppia di picchi.",
+    "Studia l'equazione di Purnell chiedendoti quale termine conviene modificare in tre situazioni diverse (k basso, α vicino a 1, N basso).",
+    "Disegna la curva di van Deemter e indica quale termine prevale a basse e ad alte velocità.",
+    "Svolgi un calcolo completo con standard interno, dal fattore di risposta alla concentrazione nel campione.",
+    "Prepara una tabella dei rivelatori con selettività, sensibilità e campioni tipici."
+   ],
+   "ricorda": [
+    "k = (tR − tM)/tM; α = k₂/k₁; Rs ≥ 1,5 per la separazione alla base.",
+    "N = 16(tR/w)², H = L/N: H piccolo = colonna efficiente.",
+    "Van Deemter: A percorsi, B diffusione, C trasferimento di massa.",
+    "Per migliorare Rs la leva più forte è α.",
+    "Esclusione dimensionale: le grandi escono prima."
+   ],
+   "errori": [
+    "Calcolare k senza sottrarre il tempo morto.",
+    "Pensare che aumentare sempre il flusso migliori la separazione.",
+    "Dimenticare il fattore 2 nella formula della risoluzione con le larghezze alla base.",
+    "Usare la normalizzazione delle aree con rivelatori che rispondono in modo molto diverso ai componenti."
+   ],
+   "domande": [
+    {
+     "domanda": "Con tM = 2,0 min e k = 4,0, qual è tR?",
+     "risposta": "10,0 min."
+    },
+    {
+     "domanda": "Due picchi hanno α = 1,00. Si possono separare aumentando N?",
+     "risposta": "No: con α = 1 i composti coeluiscono qualunque sia l'efficienza."
+    },
+    {
+     "domanda": "Perché si usa uno standard interno?",
+     "risposta": "Per compensare variazioni del volume iniettato e della risposta strumentale."
+    },
+    {
+     "domanda": "Quale termine della van Deemter prevale a basse velocità?",
+     "risposta": "Il termine B/u, la diffusione longitudinale."
+    },
+    {
+     "domanda": "Quale rivelatore GC è molto sensibile ai composti alogenati?",
+     "risposta": "Il rivelatore a cattura di elettroni (ECD)."
+    }
+   ]
+  }
+ },
+ "Elettrochimica analitica": {
+  "superiore": {
+   "spiegazione": [
+    "L'elettrochimica analitica ricava informazioni su una soluzione misurando grandezze elettriche: potenziale, corrente, conducibilità o carica. Alla base ci sono le reazioni di ossidoriduzione, in cui una specie cede elettroni (si ossida) e un'altra li acquista (si riduce). In una pila le due semireazioni avvengono in comparti separati collegati da un filo esterno, in cui passano gli elettroni, e da un ponte salino, in cui si muovono gli ioni. All'anodo avviene l'ossidazione, al catodo la riduzione.",
+    "Ogni semireazione ha un potenziale standard E°, misurato rispetto all'elettrodo standard a idrogeno. La forza elettromotrice di una pila è E°catodo − E°anodo: nella pila Daniell, con rame (+0,34 V) e zinco (−0,76 V), vale 1,10 V. Se le concentrazioni non sono 1 mol/L il potenziale cambia secondo l'equazione di Nernst, che a 25 °C si scrive E = E° + (0,0592/n) · log([ox]/[red]). Per esempio un elettrodo di rame in Cu²⁺ 0,010 mol/L ha potenziale 0,34 − 0,059 = 0,28 V.",
+    "La potenziometria misura la differenza di potenziale tra un elettrodo indicatore, che risponde all'analita, e un elettrodo di riferimento, che ha un potenziale costante, come l'elettrodo ad argento-cloruro d'argento. L'applicazione più comune è la misura del pH con l'elettrodo a vetro, la cui membrana risponde agli ioni H⁺ con circa 59 mV per unità di pH a 25 °C. Il pH-metro va tarato con almeno due soluzioni tampone, per esempio a pH 7 e pH 4. Esistono anche elettrodi ionoselettivi per altri ioni, come il fluoruro o il nitrato.",
+    "Nelle titolazioni potenziometriche si segue il potenziale durante l'aggiunta del titolante, invece di usare un indicatore colorato. La curva ha un tratto molto ripido all'equivalenza, che si individua dove la variazione ΔE/ΔV è massima. Il metodo funziona anche con soluzioni colorate o torbide, in cui un indicatore non si vedrebbe. Si usa per titolazioni acido-base, redox e di precipitazione.",
+    "La conduttimetria misura la capacità di una soluzione di condurre la corrente, che dipende dal numero, dalla carica e dalla mobilità degli ioni. Lo strumento misura la conduttanza e, con la costante di cella, la trasforma in conducibilità specifica in S/cm o µS/cm. Si usa per controllare la purezza dell'acqua distillata o la salinità delle acque. Nelle titolazioni conduttimetriche, per esempio HCl con NaOH, la conducibilità scende perché gli ioni H⁺, molto mobili, sono sostituiti da Na⁺, poi risale con l'eccesso di base: l'equivalenza è all'incrocio delle due rette."
+   ],
+   "metodo": [
+    "Disegna una pila Daniell indicando anodo, catodo, verso degli elettroni nel filo e degli ioni nel ponte salino.",
+    "Esercitati con l'equazione di Nernst cambiando la concentrazione di dieci in dieci e osserva di quanto varia il potenziale per n = 1 e n = 2.",
+    "In laboratorio annota la procedura di taratura del pH-metro e verifica la pendenza indicata dallo strumento.",
+    "Confronta in una tabella potenziometria e conduttimetria: che cosa misurano, quali elettrodi usano, come si trova l'equivalenza.",
+    "Collega questo capitolo alle titolazioni: rifai una curva di titolazione acido-base leggendo il pH con il pH-metro."
+   ],
+   "ricorda": [
+    "«Anodo ossida, catodo riduce» (vocale con vocale, consonante con consonante).",
+    "Nernst a 25 °C: 0,0592/n per ogni fattore dieci di concentrazione.",
+    "Elettrodo a vetro: circa 59 mV per unità di pH.",
+    "Conduttimetria HCl + NaOH: curva a V."
+   ],
+   "errori": [
+    "Pensare che nel ponte salino passino elettroni.",
+    "Dimenticare di dividere per il numero di elettroni n nell'equazione di Nernst.",
+    "Tarare il pH-metro con acqua distillata o con un solo tampone.",
+    "Credere che aggiungere ioni faccia sempre aumentare la conducibilità."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la f.e.m. standard di una pila con E°catodo = +0,80 V ed E°anodo = +0,34 V?",
+     "risposta": "0,46 V."
+    },
+    {
+     "domanda": "Di quanto cambia il potenziale di un elettrodo Ag/Ag⁺ se [Ag⁺] diventa dieci volte più piccola?",
+     "risposta": "Diminuisce di circa 59 mV."
+    },
+    {
+     "domanda": "Che funzione ha l'elettrodo di riferimento?",
+     "risposta": "Fornire un potenziale costante rispetto a cui misurare l'elettrodo indicatore."
+    },
+    {
+     "domanda": "Come si trova l'equivalenza in una titolazione potenziometrica?",
+     "risposta": "Nel punto di massima pendenza della curva, dove ΔE/ΔV è massimo."
+    },
+    {
+     "domanda": "Perché l'acqua distillata conduce pochissimo?",
+     "risposta": "Perché contiene pochissimi ioni."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "L'equazione di Nernst deriva dalla relazione termodinamica ΔG = ΔG° + RT ln Q e da ΔG = −nFE: E = E° − (RT/nF) ln Q, che a 25 °C diventa E = E° − (0,0592/n) log Q. Da essa si ricava ΔG° = −nFE° e la costante di equilibrio, log K = nE°/0,0592: per la pila Daniell ΔG° = −212 kJ/mol, segno di una reazione fortemente spontanea. Rigorosamente nell'equazione compaiono le attività; nelle misure pratiche si usa spesso il potenziale formale, che incorpora coefficienti di attività ed effetti del mezzo. Le pile di concentrazione, con due elettrodi uguali in soluzioni diverse, hanno f.e.m. dovuta solo al rapporto delle concentrazioni: per Cu²⁺ 0,10 e 0,0010 mol/L vale 0,059 V.",
+    "In potenziometria la misura avviene a corrente praticamente nulla, così che le concentrazioni non vengano alterate. Gli elettrodi indicatori si classificano in metallici di prima specie (metallo nei suoi ioni, come Ag/Ag⁺), di seconda specie (metallo ricoperto da un suo sale poco solubile, come Ag/AgCl, usati come riferimento), redox inerti (platino) e a membrana. Questi ultimi comprendono l'elettrodo a vetro, gli elettrodi a membrana cristallina come LaF₃ per il fluoruro, a membrana liquida con scambiatori o ionofori e gli elettrodi a gas. Il potenziale di membrana segue l'equazione di Nikolsky-Eisenman, che include il coefficiente di selettività verso gli ioni interferenti.",
+    "L'elettrodo a vetro ha una pendenza teorica di 59,16 mV per unità di pH a 25 °C, che varia con la temperatura (da cui la compensazione automatica nei pH-metri). Ha due limiti: l'errore alcalino, a pH molto alto, quando la membrana risponde anche a Na⁺ e il pH letto risulta più basso del vero, e l'errore acido, a pH molto basso, con letture troppo alte. Altre fonti di errore sono il potenziale di giunzione liquida al setto del riferimento e l'invecchiamento della membrana. Gli elettrodi ionoselettivi misurano attività, per cui si aggiungono tamponi di forza ionica come il TISAB nella determinazione del fluoruro.",
+    "Le tecniche a corrente non nulla sfruttano l'elettrolisi. Le leggi di Faraday legano la carica alla quantità di sostanza trasformata: n = Q/(zF), con Q = I · t. Con 0,500 A per 965 s passano 5,00 · 10⁻³ mol di elettroni e si depositano 0,159 g di rame. L'elettrogravimetria pesa il metallo depositato sul catodo, mentre la coulometria misura la carica necessaria e non richiede standard di taratura, perché la costante di Faraday fa da riferimento assoluto; la titolazione coulometrica di Karl Fischer per l'acqua ne è un'applicazione diffusa.",
+    "Nella voltammetria si applica all'elettrodo di lavoro un potenziale variabile e si misura la corrente in una cella a tre elettrodi (lavoro, riferimento, controelettrodo). Quando il potenziale raggiunge il valore di riduzione o ossidazione dell'analita la corrente cresce fino a un valore limite controllato dalla diffusione, proporzionale alla concentrazione; il potenziale di semionda identifica la specie. Le tecniche impulsive (differenziale a impulsi, onda quadra) migliorano il rapporto segnale/rumore, e la voltammetria di ridissoluzione anodica preconcentra i metalli sull'elettrodo, arrivando a tracce di microgrammi per litro. La conduttimetria completa il quadro: la conducibilità molare dipende dalle mobilità ioniche, il che spiega l'andamento a V della titolazione di un acido forte con una base forte."
+   ],
+   "metodo": [
+    "Ricava da solo l'equazione di Nernst partendo da ΔG = ΔG° + RT ln Q e calcola il fattore 0,0592 a 25 °C.",
+    "Prepara una classificazione degli elettrodi con un esempio, la semireazione e l'equazione del potenziale per ciascuno.",
+    "Svolgi esercizi con le leggi di Faraday collegando corrente, tempo, carica e massa depositata.",
+    "Disegna un voltammogramma e indica corrente limite, corrente residua e potenziale di semionda.",
+    "Confronta le tecniche (potenziometria, coulometria, voltammetria, conduttimetria) per grandezza misurata, sensibilità e applicazioni."
+   ],
+   "ricorda": [
+    "ΔG° = −nFE°; log K = nE°/0,0592 a 25 °C.",
+    "Prima specie: metallo/ione; seconda specie: metallo/sale poco solubile.",
+    "Errore alcalino: pH letto più basso; errore acido: pH letto più alto.",
+    "Faraday: n = I·t/(zF).",
+    "Voltammetria: altezza dell'onda = quanto; posizione = chi."
+   ],
+   "errori": [
+    "Dimenticare il segno meno in ΔG° = −nFE°.",
+    "Confondere l'elettrodo di seconda specie (riferimento) con un elettrodo indicatore dell'analita.",
+    "Ignorare la dipendenza della pendenza nernstiana dalla temperatura.",
+    "Usare i minuti invece dei secondi nel calcolo della carica.",
+    "Pensare che un elettrodo ionoselettivo misuri la concentrazione e non l'attività."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale log K per una reazione con n = 2 ed E° = 0,59 V a 25 °C?",
+     "risposta": "Circa 20, quindi K ≈ 10²⁰."
+    },
+    {
+     "domanda": "Perché la coulometria non richiede una taratura con standard?",
+     "risposta": "Perché la quantità di sostanza si ricava dalla carica tramite la costante di Faraday."
+    },
+    {
+     "domanda": "Che cosa descrive il coefficiente di selettività di un elettrodo ionoselettivo?",
+     "risposta": "Quanto l'elettrodo risponde a uno ione interferente rispetto all'analita."
+    },
+    {
+     "domanda": "A che cosa serve il TISAB nella misura del fluoruro?",
+     "risposta": "A fissare forza ionica e pH e a liberare il fluoruro complessato."
+    },
+    {
+     "domanda": "Perché la voltammetria di ridissoluzione è così sensibile?",
+     "risposta": "Perché preconcentra l'analita sull'elettrodo prima di misurarlo."
+    }
+   ]
+  }
+ }
+}

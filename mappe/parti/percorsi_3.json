@@ -1,0 +1,808 @@
+{
+ "sistema nervoso": {
+  "titolo": "Sistema nervoso: il percorso dell'impulso, dallo stimolo al muscolo",
+  "dove": "Recettori di senso, nervi periferici, midollo spinale, encefalo, placca motrice e muscolo scheletrico",
+  "inizio": "stimolo",
+  "intro": "Un esempio: tocchi una pentola calda e ritiri la mano. Lo stimolo viene trasformato in un segnale elettrico (potenziale d'azione) che viaggia lungo un neurone sensitivo fino al midollo spinale e all'encefalo. La risposta torna indietro lungo un neurone motorio e, alla sinapsi con il muscolo, il segnale elettrico diventa chimico (acetilcolina) e poi di nuovo elettrico nella fibra muscolare, che si contrae.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Ingresso: lo stimolo diventa segnale elettrico"
+   },
+   {
+    "da": 3,
+    "nome": "Elaborazione: midollo spinale ed encefalo"
+   },
+   {
+    "da": 6,
+    "nome": "Uscita: dal neurone motorio al muscolo"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "stimolo"
+    ],
+    "a": [
+     "potenziale di recettore"
+    ],
+    "enzima": "recettore sensoriale",
+    "entra": [],
+    "esce": [],
+    "nota": "Il recettore trasforma lo stimolo (calore, pressione, luce, suoni) in una piccola variazione di voltaggio della membrana. È graduata: più forte è lo stimolo, più grande è la variazione."
+   },
+   {
+    "da": [
+     "potenziale di recettore"
+    ],
+    "a": [
+     "potenziale d'azione"
+    ],
+    "enzima": "canali del sodio voltaggio-dipendenti",
+    "entra": [
+     "Na⁺"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "Se la depolarizzazione raggiunge la soglia (circa −55 mV) si aprono i canali del Na⁺ e nasce il potenziale d'azione: è «tutto o nulla». L'intensità dello stimolo è codificata dalla frequenza degli impulsi, non dalla loro altezza."
+   },
+   {
+    "da": [
+     "potenziale d'azione"
+    ],
+    "a": [
+     "midollo spinale"
+    ],
+    "enzima": "neurone sensitivo",
+    "entra": [
+     "Na⁺"
+    ],
+    "esce": [
+     "K⁺"
+    ],
+    "nota": "L'impulso corre lungo l'assone: il Na⁺ entra (depolarizzazione), poi il K⁺ esce (ripolarizzazione). Nelle fibre con mielina salta da un nodo di Ranvier all'altro ed è molto più veloce. Entra nel midollo dalla radice posteriore (dorsale); il corpo del neurone sta nel ganglio spinale."
+   },
+   {
+    "da": [
+     "midollo spinale"
+    ],
+    "a": [
+     "encefalo"
+    ],
+    "enzima": "talamo",
+    "entra": [],
+    "esce": [],
+    "nota": "Le vie ascendenti portano l'informazione al talamo, che la smista alla corteccia somatosensitiva: solo qui lo stimolo diventa una sensazione cosciente (sento caldo, dove e quanto)."
+   },
+   {
+    "da": [
+     "encefalo"
+    ],
+    "a": [
+     "neurone motorio"
+    ],
+    "enzima": "corteccia motoria",
+    "entra": [],
+    "esce": [],
+    "nota": "La corteccia motoria decide il movimento volontario. Il comando scende lungo la via corticospinale (piramidale), che si incrocia nel bulbo, fino ai motoneuroni del corno anteriore del midollo, che escono dalla radice anteriore."
+   },
+   {
+    "da": [
+     "neurone motorio"
+    ],
+    "a": [
+     "placca motrice"
+    ],
+    "enzima": "canali del calcio voltaggio-dipendenti",
+    "entra": [
+     "Ca²⁺"
+    ],
+    "esce": [
+     "acetilcolina"
+    ],
+    "nota": "Quando il potenziale d'azione arriva al terminale dell'assone si aprono i canali del Ca²⁺. Il calcio che entra fa fondere le vescicole con la membrana e libera l'acetilcolina nella fessura sinaptica (esocitosi)."
+   },
+   {
+    "da": [
+     "placca motrice"
+    ],
+    "a": [
+     "fibra muscolare"
+    ],
+    "enzima": "recettore nicotinico",
+    "entra": [
+     "acetilcolina",
+     "Na⁺"
+    ],
+    "esce": [],
+    "nota": "L'acetilcolina si lega al recettore nicotinico, che è un canale: entra Na⁺ e la membrana della fibra si depolarizza (potenziale di placca). Il segnale chimico ridiventa elettrico e nasce un potenziale d'azione muscolare."
+   },
+   {
+    "da": [
+     "fibra muscolare"
+    ],
+    "a": [
+     "contrazione muscolare"
+    ],
+    "enzima": "reticolo sarcoplasmatico",
+    "entra": [
+     "Ca²⁺",
+     "ATP"
+    ],
+    "esce": [
+     "ADP"
+    ],
+    "nota": "Il potenziale d'azione scende nei tubuli T e fa liberare Ca²⁺ dal reticolo sarcoplasmatico. Il Ca²⁺ si lega alla troponina, libera i siti dell'actina e le teste di miosina tirano i filamenti usando ATP."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Stimolo → recettore → neurone sensitivo → midollo spinale/encefalo → neurone motorio → placca motrice → muscolo",
+   "Lungo i neuroni il segnale è elettrico (potenziale d'azione: entra Na⁺, esce K⁺)",
+   "Alla sinapsi diventa chimico: il Ca²⁺ fa liberare il neurotrasmettitore (acetilcolina al muscolo)",
+   "Nel muscolo il Ca²⁺ del reticolo sarcoplasmatico avvia la contrazione, che consuma ATP"
+  ],
+  "dopo": {
+   "titolo": "Scorciatoie e spegnimento del segnale",
+   "strade": [
+    {
+     "condizione": "Riflesso spinale (risposta automatica, senza passare dalla corteccia)",
+     "da": "midollo spinale",
+     "a": "neurone motorio",
+     "enzima": "interneurone",
+     "entra": [],
+     "esce": [],
+     "nota": "Nel midollo il neurone sensitivo attiva subito, tramite interneuroni, il neurone motorio: la mano si ritira prima ancora di sentire il dolore. Nel riflesso patellare (da stiramento) il collegamento è diretto, con una sola sinapsi."
+    },
+    {
+     "condizione": "Fine del segnale alla placca motrice",
+     "da": "acetilcolina",
+     "a": "colina",
+     "enzima": "acetilcolinesterasi",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [
+      "acetato"
+     ],
+     "nota": "L'acetilcolinesterasi spezza l'acetilcolina in pochi millisecondi: il muscolo si rilassa se non arrivano nuovi impulsi. La colina torna nel terminale e viene riusata."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Le parti del sistema nervoso",
+    "voci": [
+     [
+      "Sistema nervoso centrale (SNC)",
+      [
+       "encefalo",
+       "midollo spinale"
+      ]
+     ],
+     [
+      "Sistema nervoso periferico: i neuroni",
+      [
+       "neurone sensitivo",
+       "interneurone",
+       "neurone motorio"
+      ]
+     ],
+     [
+      "L'isolante delle fibre nervose",
+      [
+       "guaina mielinica"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "I principali neurotrasmettitori",
+    "voci": [
+     [
+      "Eccitatori",
+      [
+       "glutammato",
+       "acetilcolina"
+      ]
+     ],
+     [
+      "Inibitori",
+      [
+       "GABA"
+      ]
+     ],
+     [
+      "Monoamine (umore, movimento, allerta)",
+      [
+       "dopamina",
+       "noradrenalina"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "sistema endocrino": {
+  "titolo": "Sistema endocrino: l'asse ipotalamo-ipofisi-tiroide",
+  "dove": "Ipotalamo e ipofisi (alla base del cranio), tiroide (nel collo), poi tutte le cellule del corpo raggiunte dal sangue",
+  "inizio": "ipotalamo",
+  "intro": "Gli ormoni sono messaggeri chimici che viaggiano nel sangue e agiscono solo sulle cellule che hanno il recettore giusto. Molte ghiandole lavorano «a cascata»: l'ipotalamo comanda l'ipofisi, l'ipofisi comanda la ghiandola, la ghiandola agisce sugli organi bersaglio. Prendiamo come esempio la tiroide: TRH → TSH → T4 e T3. Quando gli ormoni finali sono abbastanza, frenano chi li ha comandati (feedback negativo), come un termostato.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Il comando: ipotalamo e ipofisi"
+   },
+   {
+    "da": 4,
+    "nome": "La ghiandola: la tiroide produce gli ormoni"
+   },
+   {
+    "da": 7,
+    "nome": "L'effetto e il controllo (feedback negativo)"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "ipotalamo"
+    ],
+    "a": [
+     "TRH"
+    ],
+    "enzima": "nucleo paraventricolare",
+    "entra": [],
+    "esce": [],
+    "nota": "Quando gli ormoni tiroidei sono bassi (o, soprattutto nel neonato, con il freddo) i neuroni dell'ipotalamo liberano il TRH, l'ormone di rilascio della tireotropina."
+   },
+   {
+    "da": [
+     "TRH"
+    ],
+    "a": [
+     "adenoipofisi"
+    ],
+    "enzima": "sistema portale ipotalamo-ipofisario",
+    "entra": [],
+    "esce": [],
+    "nota": "Il TRH non va in tutto il corpo: scende con un sistema di piccoli vasi «privati» direttamente all'ipofisi anteriore, dove arriva molto concentrato."
+   },
+   {
+    "da": [
+     "adenoipofisi"
+    ],
+    "a": [
+     "TSH"
+    ],
+    "enzima": "cellule tireotrope",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "Le cellule tireotrope dell'ipofisi anteriore rispondono al TRH liberando nel sangue il TSH (ormone tireostimolante, o tireotropina)."
+   },
+   {
+    "da": [
+     "TSH"
+    ],
+    "a": [
+     "tiroide"
+    ],
+    "enzima": "recettore del TSH",
+    "entra": [],
+    "esce": [],
+    "nota": "Il TSH arriva con il sangue alla tiroide e si lega al suo recettore sulle cellule follicolari: stimola la captazione di iodio, la produzione e la liberazione degli ormoni e la crescita della ghiandola."
+   },
+   {
+    "da": [
+     "tiroide"
+    ],
+    "a": [
+     "tiroxina (T4)"
+    ],
+    "enzima": "tireoperossidasi (TPO)",
+    "entra": [
+     "iodio (I⁻)",
+     "tireoglobulina"
+    ],
+    "esce": [],
+    "nota": "La TPO lega lo iodio alle tirosine della tireoglobulina e unisce due tirosine iodate. La tiroide libera soprattutto T4 (circa il 90%) e una piccola quota di T3."
+   },
+   {
+    "da": [
+     "tiroxina (T4)"
+    ],
+    "a": [
+     "triiodotironina (T3)"
+    ],
+    "enzima": "desiodasi",
+    "entra": [],
+    "esce": [
+     "iodio (I⁻)"
+    ],
+    "nota": "Nei tessuti (fegato, rene, muscolo, cervello) le desiodasi tolgono uno iodio alla T4 e la trasformano in T3, la forma attiva: la T4 è soprattutto una riserva."
+   },
+   {
+    "da": [
+     "triiodotironina (T3)"
+    ],
+    "a": [
+     "organi bersaglio"
+    ],
+    "enzima": "recettore degli ormoni tiroidei",
+    "entra": [],
+    "esce": [],
+    "nota": "La T3 entra nelle cellule e si lega a un recettore nel nucleo che accende o spegne geni: aumentano il metabolismo basale, il calore prodotto, la frequenza cardiaca; nel bambino servono per lo sviluppo del cervello e la crescita."
+   },
+   {
+    "da": [
+     "organi bersaglio"
+    ],
+    "a": [
+     "ipotalamo",
+     "adenoipofisi"
+    ],
+    "enzima": "feedback negativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Quando T3 e T4 nel sangue sono sufficienti frenano l'ipotalamo (meno TRH) e soprattutto l'ipofisi (meno TSH). Se calano, il freno si allenta e il TSH risale: così il livello resta stabile."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Ipotalamo (TRH) → ipofisi anteriore (TSH) → tiroide (T4, poca T3) → tessuti (T4 → T3) → organi bersaglio",
+   "Gli ormoni finali frenano ipotalamo e ipofisi (feedback negativo)",
+   "Per fare gli ormoni tiroidei serve lo iodio della dieta",
+   "Lo stesso schema vale per surrene (CRH → ACTH → cortisolo) e gonadi (GnRH → LH e FSH → ormoni sessuali)"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "Altri assi con lo stesso schema a cascata",
+    "voci": [
+     [
+      "Asse del surrene (stress)",
+      [
+       "CRH",
+       "ACTH",
+       "cortisolo"
+      ]
+     ],
+     [
+      "Asse delle gonadi (riproduzione)",
+      [
+       "GnRH",
+       "LH e FSH"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Ormoni che non dipendono dall'ipofisi",
+    "voci": [
+     [
+      "Pancreas (zucchero nel sangue)",
+      [
+       "insulina",
+       "glucagone"
+      ]
+     ],
+     [
+      "Surrene (emergenza e sali)",
+      [
+       "adrenalina",
+       "aldosterone"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "sistema linfatico e immunitario": {
+  "titolo": "Sistema immunitario: dalla barriera alla memoria",
+  "dove": "Pelle e mucose, tessuto infetto, vasi linfatici e linfonodi, poi sangue e tutto il corpo",
+  "inizio": "agente patogeno",
+  "intro": "Il corpo si difende su più livelli. Prima ci sono le barriere (pelle e mucose). Se un microbo le supera interviene l'immunità innata: è immediata ma uguale per tutti i microbi. In alcuni giorni parte l'immunità adattativa: linfociti T e B specifici per quel microbo, attivati nei linfonodi, producono anticorpi e lasciano cellule della memoria, che ci proteggono la volta successiva (è il principio dei vaccini).",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Immunità innata: subito, uguale per tutti i microbi"
+   },
+   {
+    "da": 3,
+    "nome": "Immunità adattativa: specifica, servono alcuni giorni"
+   },
+   {
+    "da": 9,
+    "nome": "La memoria immunitaria"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "agente patogeno"
+    ],
+    "a": [
+     "immunità innata"
+    ],
+    "enzima": "barriere di pelle e mucose",
+    "entra": [],
+    "esce": [],
+    "nota": "Pelle, muco, ciglia, acidità dello stomaco e sostanze antimicrobiche (come il lisozima) fermano la maggior parte dei microbi. Se la barriera si rompe, per esempio con una ferita, entra in gioco l'immunità innata."
+   },
+   {
+    "da": [
+     "immunità innata"
+    ],
+    "a": [
+     "infiammazione"
+    ],
+    "enzima": "macrofagi",
+    "entra": [],
+    "esce": [
+     "citochine"
+    ],
+    "nota": "Macrofagi e neutrofili riconoscono strutture tipiche dei microbi con recettori come i Toll-like, li inglobano (fagocitosi) e liberano citochine. I vasi si dilatano e diventano permeabili: rossore, calore, gonfiore e dolore. Collabora anche il complemento."
+   },
+   {
+    "da": [
+     "infiammazione"
+    ],
+    "a": [
+     "linfonodo"
+    ],
+    "enzima": "cellule dendritiche",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "nota": "Le cellule dendritiche catturano pezzi del microbo (antigene), si attivano e viaggiano con la linfa nei vasi linfatici fino al linfonodo più vicino: sono il ponte tra immunità innata e adattativa."
+   },
+   {
+    "da": [
+     "linfonodo"
+    ],
+    "a": [
+     "linfocita T helper (CD4⁺)"
+    ],
+    "enzima": "MHC di classe II",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "Nel linfonodo la cellula dendritica mostra frammenti dell'antigene sulle molecole MHC di classe II. Solo il raro linfocita T CD4⁺ con il recettore (TCR) adatto lo riconosce; con un secondo segnale di conferma si attiva e si moltiplica (espansione clonale)."
+   },
+   {
+    "da": [
+     "linfocita T helper (CD4⁺)"
+    ],
+    "a": [
+     "linfocita B"
+    ],
+    "enzima": "citochine",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "nota": "Il linfocita B che ha legato lo stesso antigene con il suo recettore riceve l'aiuto del T helper (contatto CD40L-CD40 e citochine) e si attiva."
+   },
+   {
+    "da": [
+     "linfocita B"
+    ],
+    "a": [
+     "plasmacellula"
+    ],
+    "enzima": "centro germinativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Nel centro germinativo del linfonodo i linfociti B si moltiplicano, migliorano la precisione del loro anticorpo (maturazione dell'affinità) e cambiano classe (da IgM a IgG, IgA o IgE). Poi diventano plasmacellule o cellule della memoria."
+   },
+   {
+    "da": [
+     "plasmacellula"
+    ],
+    "a": [
+     "anticorpi"
+    ],
+    "enzima": "reticolo endoplasmatico rugoso",
+    "entra": [],
+    "esce": [],
+    "nota": "La plasmacellula è una «fabbrica» di anticorpi, tutti uguali e diretti contro quell'antigene. Nella risposta primaria compaiono prima le IgM, poi le IgG."
+   },
+   {
+    "da": [
+     "anticorpi"
+    ],
+    "a": [
+     "eliminazione del patogeno"
+    ],
+    "enzima": "complemento",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "nota": "Gli anticorpi neutralizzano i microbi e le tossine, li ricoprono per farli mangiare più facilmente dai fagociti (opsonizzazione) e attivano il complemento, che può bucare la membrana dei batteri."
+   },
+   {
+    "da": [
+     "eliminazione del patogeno"
+    ],
+    "a": [
+     "memoria immunitaria"
+    ],
+    "enzima": "cellule della memoria",
+    "entra": [],
+    "esce": [],
+    "nota": "Finita l'infezione, la maggior parte dei linfociti attivati muore, ma restano linfociti B e T della memoria. A un secondo incontro la risposta è più rapida, più forte e fatta soprattutto di IgG: spesso non ci ammaliamo."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Barriere → immunità innata (fagociti, infiammazione) → cellule dendritiche → linfonodo",
+   "Nel linfonodo: linfociti T helper attivati → aiutano i linfociti B → plasmacellule → anticorpi",
+   "Gli anticorpi neutralizzano, opsonizzano e attivano il complemento",
+   "Restano cellule della memoria: la seconda risposta è più rapida e forte (vaccini)"
+  ],
+  "dopo": {
+   "titolo": "Quando il nemico è dentro le cellule",
+   "strade": [
+    {
+     "condizione": "Virus e cellule tumorali (immunità cellulare)",
+     "da": "linfocita T helper (CD4⁺)",
+     "a": "linfocita T citotossico (CD8⁺)",
+     "enzima": "MHC di classe I",
+     "entra": [
+      "antigene"
+     ],
+     "esce": [],
+     "nota": "Ogni cellula mostra sulle MHC di classe I pezzi delle proteine che produce. Il linfocita T CD8⁺, attivato con l'aiuto dei T helper, riconosce le cellule infettate e le uccide con perforine e granzimi."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Gli organi del sistema linfatico",
+    "voci": [
+     [
+      "Organi primari (dove nascono e maturano i linfociti)",
+      [
+       "midollo osseo",
+       "timo"
+      ]
+     ],
+     [
+      "Organi secondari (dove i linfociti incontrano l'antigene)",
+      [
+       "linfonodo",
+       "milza"
+      ]
+     ],
+     [
+      "Le vie della linfa",
+      [
+       "vasi linfatici"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Le cellule della difesa",
+    "voci": [
+     [
+      "Immunità innata",
+      [
+       "neutrofili",
+       "macrofagi",
+       "cellule dendritiche",
+       "cellule NK"
+      ]
+     ],
+     [
+      "Immunità adattativa",
+      [
+       "linfocita T helper (CD4⁺)",
+       "linfocita T citotossico (CD8⁺)",
+       "linfocita B",
+       "plasmacellula"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "sistema renina-angiotensina": {
+  "titolo": "Sistema renina-angiotensina-aldosterone: come il corpo rialza la pressione",
+  "dove": "Rene (apparato iuxtaglomerulare), sangue (angiotensinogeno dal fegato, ACE soprattutto nei capillari dei polmoni), vasi, surrene, ipotalamo e ipofisi",
+  "inizio": "pressione arteriosa bassa",
+  "intro": "Quando la pressione o il volume del sangue calano (emorragia, disidratazione, poco sale), il rene libera la renina. Parte una cascata nel sangue: angiotensinogeno → angiotensina I → angiotensina II. L'angiotensina II rialza la pressione in quattro modi: stringe le arteriole, fa trattenere sodio e acqua con l'aldosterone, fa trattenere acqua con l'ADH e fa venire sete. Quando la pressione torna normale la renina cala (feedback negativo).",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "L'allarme: il rene sente la pressione bassa"
+   },
+   {
+    "da": 2,
+    "nome": "La cascata nel sangue"
+   },
+   {
+    "da": 4,
+    "nome": "Gli effetti dell'angiotensina II"
+   },
+   {
+    "da": 10,
+    "nome": "Ritorno all'equilibrio"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "pressione arteriosa bassa"
+    ],
+    "a": [
+     "renina"
+    ],
+    "enzima": "cellule iuxtaglomerulari",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "Le cellule iuxtaglomerulari dell'arteriola afferente liberano renina quando la pressione nell'arteriola cala, quando la macula densa sente arrivare poco NaCl e quando il simpatico le stimola (recettori β1)."
+   },
+   {
+    "da": [
+     "angiotensinogeno"
+    ],
+    "a": [
+     "angiotensina I"
+    ],
+    "enzima": "renina",
+    "entra": [],
+    "esce": [],
+    "nota": "L'angiotensinogeno è una proteina prodotta dal fegato e sempre presente nel sangue. La renina ne taglia un pezzo di 10 aminoacidi: l'angiotensina I, quasi inattiva. È la tappa che regola tutta la cascata."
+   },
+   {
+    "da": [
+     "angiotensina I"
+    ],
+    "a": [
+     "angiotensina II"
+    ],
+    "enzima": "enzima di conversione dell'angiotensina (ACE)",
+    "entra": [],
+    "esce": [],
+    "nota": "L'ACE, sulla parete dei capillari (soprattutto nei polmoni), stacca altri 2 aminoacidi: si forma l'angiotensina II (8 aminoacidi), l'ormone attivo. Lo stesso enzima degrada la bradichinina, che dilata i vasi."
+   },
+   {
+    "da": [
+     "angiotensina II"
+    ],
+    "a": [
+     "vasocostrizione"
+    ],
+    "enzima": "recettore AT1",
+    "entra": [],
+    "esce": [],
+    "nota": "Legandosi al recettore AT1 della muscolatura liscia, l'angiotensina II stringe le arteriole: aumentano le resistenze periferiche e quindi la pressione. Nel rene stringe di più l'arteriola efferente e così protegge la filtrazione."
+   },
+   {
+    "da": [
+     "angiotensina II"
+    ],
+    "a": [
+     "aldosterone"
+    ],
+    "enzima": "zona glomerulosa della corteccia surrenale",
+    "entra": [],
+    "esce": [],
+    "nota": "L'angiotensina II stimola la parte più esterna della corteccia del surrene a produrre aldosterone. Anche il potassio alto nel sangue lo stimola."
+   },
+   {
+    "da": [
+     "aldosterone"
+    ],
+    "a": [
+     "riassorbimento di sodio e acqua"
+    ],
+    "enzima": "tubulo collettore",
+    "entra": [
+     "Na⁺",
+     "H₂O"
+    ],
+    "esce": [
+     "K⁺"
+    ],
+    "nota": "Nel tubulo distale e nel dotto collettore l'aldosterone fa aumentare i canali del sodio (ENaC) e la pompa Na⁺/K⁺: il sodio torna nel sangue e l'acqua lo segue, mentre K⁺ e H⁺ vengono eliminati con l'urina."
+   },
+   {
+    "da": [
+     "angiotensina II"
+    ],
+    "a": [
+     "ADH (vasopressina)"
+    ],
+    "enzima": "neuroipofisi",
+    "entra": [],
+    "esce": [],
+    "nota": "L'angiotensina II stimola l'ipotalamo, e la neuroipofisi libera più ADH (vasopressina). Lo stimolo più forte per l'ADH resta comunque l'aumento della concentrazione del plasma."
+   },
+   {
+    "da": [
+     "ADH (vasopressina)"
+    ],
+    "a": [
+     "riassorbimento di acqua"
+    ],
+    "enzima": "acquaporina 2",
+    "entra": [
+     "H₂O"
+    ],
+    "esce": [],
+    "nota": "L'ADH fa inserire le acquaporine 2 nella membrana delle cellule del dotto collettore: l'acqua viene ripresa e l'urina diventa più concentrata e scarsa."
+   },
+   {
+    "da": [
+     "angiotensina II"
+    ],
+    "a": [
+     "sete"
+    ],
+    "enzima": "ipotalamo",
+    "entra": [],
+    "esce": [],
+    "nota": "L'angiotensina II agisce su zone del cervello senza barriera ematoencefalica (organo subfornicale) collegate all'ipotalamo: viene sete e si beve, aumentando il volume del sangue."
+   },
+   {
+    "da": [
+     "vasocostrizione",
+     "riassorbimento di sodio e acqua",
+     "riassorbimento di acqua",
+     "sete"
+    ],
+    "a": [
+     "pressione arteriosa normale"
+    ],
+    "enzima": "feedback negativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Più volume e vasi più stretti riportano la pressione alla norma. Il rene allora libera meno renina; l'angiotensina II stessa frena direttamente le cellule iuxtaglomerulari."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Pressione bassa → renina (rene) → angiotensinogeno (fegato) → angiotensina I → angiotensina II (ACE)",
+   "Effetti dell'angiotensina II: vasocostrizione, aldosterone (trattiene Na⁺ e acqua, elimina K⁺), ADH (trattiene acqua), sete",
+   "Risultato: più volume e più resistenza nei vasi → la pressione risale",
+   "Pressione normale → meno renina (feedback negativo)"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "Farmaci che bloccano il sistema (contro ipertensione e scompenso cardiaco)",
+    "voci": [
+     [
+      "Bloccano la renina",
+      [
+       "aliskiren"
+      ]
+     ],
+     [
+      "Bloccano l'ACE",
+      [
+       "ACE-inibitori"
+      ]
+     ],
+     [
+      "Bloccano il recettore AT1",
+      [
+       "sartani"
+      ]
+     ],
+     [
+      "Bloccano il recettore dell'aldosterone",
+      [
+       "spironolattone"
+      ]
+     ]
+    ]
+   }
+  ]
+ }
+}

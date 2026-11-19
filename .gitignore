@@ -1,0 +1,44 @@
+# Ambiente Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.tmp
+
+# Password, account ed email: restano solo su questo computer
+.streamlit/accesso.txt
+.streamlit/accesso_gestione.txt
+.streamlit/*.json
+account_v2.json
+*.rotto*
+
+# Dati degli studenti e delle classi: restano solo su questo computer
+profilo_v2.json
+profili_v2/
+classi_v2.json
+domande_biblioteca_v2.json
+gradimento_v2.json
+pareri_lezioni_v2.json
+segnalazioni_v2.json
+spiegazioni_v2.json
+ragionamenti_v2.json
+ricerche_v2.json
+risposte_pronte_v2.json
+risposte_pronte.json
+traduzioni.json
+prove/*_prove.json
+
+# Prove ufficiali degli anni passati: non si pubblicano
+contenuti_v2/banca_ufficiale.json
+prove_passate/
+
+# Indici di ricerca: si ricreano da soli alla prima domanda
+*.npy
+*.pkl
+
+# Lezioni e verifiche caricate dai professori
+contenuti_v2/docenti_lezioni.json
+contenuti_v2/docenti_verifiche.json
+contenuti_v2/domande/docenti.json
+prove/*_prove.tmp

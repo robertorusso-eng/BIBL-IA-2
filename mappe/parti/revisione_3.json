@@ -1,0 +1,5435 @@
+{
+ "percorsi": {
+  "riparazione del dna": {
+   "titolo": "Riparazione del DNA: una squadra per ogni tipo di danno",
+   "dove": "Nucleo di tutte le cellule (anche il DNA dei mitocondri ha una riparazione più semplice)",
+   "inizio": "base danneggiata",
+   "intro": "Ogni giorno il DNA di ogni cellula subisce migliaia di danni: basi ossidate o deaminate, legami creati dai raggi UV, rotture dei filamenti, errori di copia. Per ogni tipo di danno c'è un sistema dedicato. Quasi tutti usano lo stesso trucco: tolgono il pezzo rovinato e lo ricopiano usando come stampo il filamento sano. I quattro gruppi di passaggi qui sotto sono quattro sistemi diversi.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Escissione di basi (BER): una sola base rovinata"
+    },
+    {
+     "da": 4,
+     "nome": "Escissione di nucleotidi (NER): un tratto deformato, per esempio dai raggi UV"
+    },
+    {
+     "da": 8,
+     "nome": "Riparazione dei mismatch (MMR): un errore di copia"
+    },
+    {
+     "da": 10,
+     "nome": "Rottura dei due filamenti: unione diretta (NHEJ) o ricombinazione omologa (HR)"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "base danneggiata"
+     ],
+     "a": [
+      "sito abasico (AP)"
+     ],
+     "enzima": "DNA glicosilasi",
+     "entra": [],
+     "esce": [],
+     "nota": "Una glicosilasi specifica scorre sul DNA, fa uscire la base rovinata dall'elica e la stacca dallo zucchero. Per esempio l'uracile (da deaminazione della citosina) è tolto da UNG, l'8-ossoguanina da OGG1. Resta uno zucchero senza base."
+    },
+    {
+     "da": [
+      "sito abasico (AP)"
+     ],
+     "a": [
+      "DNA con un nucleotide mancante"
+     ],
+     "enzima": "AP endonucleasi (APE1)",
+     "entra": [],
+     "esce": [],
+     "nota": "APE1 taglia lo scheletro di zucchero-fosfato accanto al sito senza base: il filamento si interrompe e resta un buco di un nucleotide."
+    },
+    {
+     "da": [
+      "DNA con un nucleotide mancante"
+     ],
+     "a": [
+      "DNA riparato"
+     ],
+     "enzima": "DNA polimerasi β",
+     "entra": [
+      "desossiribonucleotidi (dNTP)",
+      "ATP"
+     ],
+     "esce": [
+      "pirofosfato (PPi)",
+      "AMP"
+     ],
+     "nota": "La pol β toglie il resto dello zucchero e inserisce il nucleotide giusto copiando il filamento opposto. La DNA ligasi III (con XRCC1) chiude il filamento usando ATP."
+    },
+    {
+     "da": [
+      "dimero di timina"
+     ],
+     "a": [
+      "lesione riconosciuta"
+     ],
+     "enzima": "XPC (riconoscimento della lesione)",
+     "entra": [],
+     "esce": [],
+     "nota": "I raggi UV uniscono due pirimidine vicine (dimeri di timina e fotoprodotti 6-4) e deformano l'elica. XPC riconosce la deformazione in tutto il genoma; nei geni che si stanno trascrivendo il segnale è invece la RNA polimerasi II bloccata, con CSA e CSB."
+    },
+    {
+     "da": [
+      "lesione riconosciuta"
+     ],
+     "a": [
+      "DNA aperto attorno alla lesione"
+     ],
+     "enzima": "TFIIH",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "Lo stesso TFIIH della trascrizione apre la doppia elica con le sue elicasi XPB e XPD. XPA e RPA controllano che ci sia davvero una lesione e tengono aperto il DNA."
+    },
+    {
+     "da": [
+      "DNA aperto attorno alla lesione"
+     ],
+     "a": [
+      "varco di circa 30 nucleotidi"
+     ],
+     "enzima": "endonucleasi XPF-ERCC1 e XPG",
+     "entra": [],
+     "esce": [
+      "oligonucleotide con la lesione"
+     ],
+     "nota": "Due tagli sullo stesso filamento: XPF-ERCC1 dal lato 5' e XPG dal lato 3' della lesione. Esce un pezzetto di circa 30 nucleotidi che contiene il danno."
+    },
+    {
+     "da": [
+      "varco di circa 30 nucleotidi"
+     ],
+     "a": [
+      "DNA riparato"
+     ],
+     "enzima": "DNA polimerasi",
+     "entra": [
+      "desossiribonucleotidi (dNTP)",
+      "PCNA (pinza scorrevole)",
+      "ATP"
+     ],
+     "esce": [
+      "pirofosfato (PPi)",
+      "AMP"
+     ],
+     "nota": "Una DNA polimerasi (δ, ε o κ) con la pinza PCNA ricopia il tratto usando il filamento sano come stampo; una DNA ligasi chiude l'ultima interruzione."
+    },
+    {
+     "da": [
+      "appaiamento sbagliato (mismatch)"
+     ],
+     "a": [
+      "tratto del filamento nuovo rimosso"
+     ],
+     "enzima": "MutSα e MutLα (MSH2-MSH6, MLH1-PMS2)",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "MutSα riconosce la base sbagliata (o un piccolo anello di inserzione) lasciata dalla polimerasi. MutLα riconosce il filamento nuovo, che ha ancora interruzioni, e lo taglia; l'esonucleasi EXO1 rimuove il tratto con l'errore."
+    },
+    {
+     "da": [
+      "tratto del filamento nuovo rimosso"
+     ],
+     "a": [
+      "DNA riparato"
+     ],
+     "enzima": "DNA polimerasi δ",
+     "entra": [
+      "desossiribonucleotidi (dNTP)",
+      "ATP"
+     ],
+     "esce": [
+      "pirofosfato (PPi)",
+      "AMP"
+     ],
+     "nota": "La pol δ ricopia il tratto, questa volta correttamente, e la ligasi chiude. Senza questo sistema gli errori di replicazione sarebbero da 100 a 1000 volte più frequenti."
+    },
+    {
+     "da": [
+      "rottura a doppio filamento"
+     ],
+     "a": [
+      "rottura segnalata (γH2AX)"
+     ],
+     "enzima": "chinasi ATM e ATR",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "Il complesso MRN riconosce le estremità rotte e richiama ATM, che fosforila l'istone H2AX (γH2AX) su un ampio tratto attorno alla rottura e attiva Chk2 e p53: il ciclo cellulare si ferma mentre si ripara."
+    },
+    {
+     "da": [
+      "rottura segnalata (γH2AX)"
+     ],
+     "a": [
+      "estremità riunite (NHEJ)"
+     ],
+     "enzima": "Ku70/80, DNA-PKcs e DNA ligasi IV",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "AMP",
+      "pirofosfato (PPi)"
+     ],
+     "nota": "Unione diretta (NHEJ): Ku afferra le due estremità, DNA-PKcs le tiene vicine, le estremità vengono ripulite e la ligasi IV le salda. È veloce e funziona in ogni fase, soprattutto in G1, ma spesso perde o aggiunge qualche nucleotide."
+    },
+    {
+     "da": [
+      "rottura segnalata (γH2AX)"
+     ],
+     "a": [
+      "DNA riparato"
+     ],
+     "enzima": "BRCA1, BRCA2 e RAD51",
+     "entra": [
+      "cromatidi fratelli",
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "Ricombinazione omologa (HR), solo in fase S e G2: le estremità vengono accorciate fino a lasciare code singole 3'. BRCA2 vi carica RAD51, che cerca la sequenza uguale sul cromatidio fratello e la usa come stampo. La riparazione è senza errori."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "base singola rovinata → BER; tratto deformato (UV, cisplatino) → NER; errore di copia → MMR; rottura dei due filamenti → NHEJ o HR",
+    "quasi sempre: riconoscere il danno → tagliare → ricopiare dal filamento sano → saldare con la ligasi",
+    "se il danno è troppo grave la cellula si ferma (p53) o muore per apoptosi",
+    "difetti della riparazione: più mutazioni e più tumori (xeroderma pigmentoso, sindrome di Lynch, BRCA)"
+   ],
+   "dopo": {
+    "titolo": "Se il danno non si ripara in tempo",
+    "strade": [
+     {
+      "condizione": "Se il danno è troppo grave",
+      "da": "rottura segnalata (γH2AX)",
+      "a": "p53 stabilizzata",
+      "enzima": "chinasi ATM e ATR",
+      "entra": [],
+      "esce": [],
+      "nota": "p53 ferma il ciclo cellulare per dare tempo alla riparazione; se non basta, avvia l'apoptosi.",
+      "prossimo": "apoptosi"
+     },
+     {
+      "condizione": "Se la forcella di replicazione arriva su una lesione non ancora riparata",
+      "da": "dimero di timina",
+      "a": "lesione superata",
+      "enzima": "DNA polimerasi η (translesione)",
+      "entra": [
+       "desossiribonucleotidi (dNTP)"
+      ],
+      "esce": [
+       "pirofosfato (PPi)"
+      ],
+      "nota": "Polimerasi speciali «scavalcano» la lesione. La pol η mette due A davanti a un dimero di timina, quindi in modo corretto; altre polimerasi translesione sbagliano più spesso e lasciano mutazioni.",
+      "prossimo": "mutazioni genetiche"
+     },
+     {
+      "condizione": "Se l'errore nasce mentre il DNA viene copiato",
+      "da": "appaiamento sbagliato (mismatch)",
+      "a": "DNA riparato",
+      "enzima": "DNA polimerasi δ",
+      "entra": [],
+      "esce": [],
+      "nota": "La polimerasi controlla ogni base appena inserita: se è sbagliata torna indietro di un passo e la toglie con la sua attività esonucleasica 3'→5' (correzione di bozze). Gli errori che sfuggono passano alla riparazione dei mismatch.",
+      "prossimo": "replicazione del dna"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "Che cosa danneggia il DNA",
+     "voci": [
+      [
+       "Dall'esterno",
+       [
+        "raggi UVB",
+        "radiazioni ionizzanti"
+       ]
+      ],
+      [
+       "Dall'interno della cellula",
+       [
+        "specie reattive dell'ossigeno (ROS)"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Il guardiano del genoma",
+     "voci": [
+      [
+       "Ferma il ciclo o fa morire la cellula",
+       [
+        "p53"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "mutazioni genetiche": {
+   "titolo": "Mutazioni genetiche: da un errore nel DNA a una proteina diversa",
+   "dove": "Nel DNA di qualunque cellula (nucleo e mitocondri); trasmesse ai figli solo se sono nelle cellule germinali",
+   "inizio": "gene (DNA)",
+   "intro": "Una mutazione è un cambiamento permanente della sequenza del DNA. Nasce da un errore di copia o da un danno non riparato prima della replicazione. Può non avere effetti, cambiare un amminoacido, interrompere la proteina o alterarne la quantità. Le mutazioni sono la causa delle malattie genetiche e dei tumori, ma anche la fonte della variabilità su cui agisce l'evoluzione.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Come nasce una mutazione"
+    },
+    {
+     "da": 3,
+     "nome": "Dal gene mutato alla proteina"
+    },
+    {
+     "da": 5,
+     "nome": "Che cosa cambia nella proteina"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "gene (DNA)"
+     ],
+     "a": [
+      "lesione del DNA"
+     ],
+     "enzima": "agenti mutageni",
+     "entra": [
+      "raggi UVB",
+      "radiazioni ionizzanti",
+      "specie reattive dell'ossigeno (ROS)"
+     ],
+     "esce": [],
+     "nota": "Il danno può venire da fuori (raggi UV, radiazioni, fumo di tabacco, aflatossina) o da dentro (ossigeno reattivo, perdita spontanea di basi, deaminazione della citosina). Anche la DNA polimerasi a volte sbaglia: in questo caso l'errore è già un appaiamento sbagliato."
+    },
+    {
+     "da": [
+      "lesione del DNA"
+     ],
+     "a": [
+      "mutazione fissata nei due filamenti"
+     ],
+     "enzima": "DNA polimerasi",
+     "entra": [
+      "desossiribonucleotidi (dNTP)"
+     ],
+     "esce": [
+      "pirofosfato (PPi)"
+     ],
+     "irreversibile": true,
+     "nota": "Finché il danno è su un solo filamento si può ancora riparare. Se arriva prima la replicazione, la polimerasi mette la base sbagliata di fronte alla lesione; alla copia successiva l'errore è su entrambi i filamenti e diventa una mutazione permanente. Esempio: la 8-ossoguanina si appaia con A, e una coppia G-C diventa T-A."
+    },
+    {
+     "da": [
+      "mutazione fissata nei due filamenti"
+     ],
+     "a": [
+      "mRNA alterato"
+     ],
+     "enzima": "RNA polimerasi II",
+     "entra": [
+      "ribonucleotidi (NTP)"
+     ],
+     "esce": [
+      "pirofosfato (PPi)"
+     ],
+     "nota": "Se la mutazione cade in un esone viene copiata nell'mRNA. Se cade in un sito di splicing l'mRNA perde un esone o tiene un pezzo di introne (per esempio in molte β-talassemie). Se cade nel promotore cambia la quantità di mRNA."
+    },
+    {
+     "da": [
+      "mRNA alterato"
+     ],
+     "a": [
+      "proteina alterata"
+     ],
+     "enzima": "ribosoma completo (80S)",
+     "entra": [
+      "amminoacil-tRNA"
+     ],
+     "esce": [],
+     "nota": "Il ribosoma legge i codoni come sono scritti. Una sostituzione può non cambiare nulla (silente), cambiare un amminoacido (missenso) o creare uno stop (nonsenso). Un'inserzione o una delezione non multipla di 3 sposta la cornice di lettura (frameshift) e cambia tutto ciò che segue."
+    },
+    {
+     "da": [
+      "proteina alterata"
+     ],
+     "a": [
+      "perdita di funzione"
+     ],
+     "enzima": "proteasoma",
+     "entra": [],
+     "esce": [],
+     "nota": "Spesso la proteina mutata si ripiega male e viene distrutta dal proteasoma, oppure funziona meno. Di solito basta la copia sana dell'altro cromosoma: queste mutazioni sono in genere recessive (fibrosi cistica, molte malattie metaboliche)."
+    },
+    {
+     "da": [
+      "proteina alterata"
+     ],
+     "a": [
+      "guadagno di funzione"
+     ],
+     "enzima": "proteina alterata",
+     "entra": [],
+     "esce": [],
+     "nota": "A volte la proteina mutata è sempre accesa o fa un lavoro nuovo e dannoso: queste mutazioni sono di solito dominanti. Esempi: RAS mutata che manda il segnale di crescita senza sosta, il recettore FGFR3 sempre attivo nell'acondroplasia."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "danno o errore di copia → (se non riparato) mutazione permanente → mRNA → proteina diversa",
+    "puntiformi (silenti, missenso, nonsenso), inserzioni e delezioni (frameshift), espansioni di triplette, grandi mutazioni dei cromosomi",
+    "somatiche: solo nella persona (tumori); germinali: passano ai figli",
+    "perdita di funzione → di solito recessiva; guadagno di funzione → di solito dominante"
+   ],
+   "dopo": {
+    "titolo": "Che fine fa la mutazione",
+    "strade": [
+     {
+      "condizione": "Se il danno viene riparato prima della replicazione",
+      "da": "lesione del DNA",
+      "a": "DNA riparato",
+      "enzima": "sistemi di riparazione del DNA",
+      "entra": [],
+      "esce": [],
+      "nota": "La grande maggioranza dei danni viene corretta e non diventa mai una mutazione.",
+      "prossimo": "riparazione del dna"
+     },
+     {
+      "condizione": "Se è in una cellula del corpo (mutazione somatica)",
+      "da": "mutazione fissata nei due filamenti",
+      "a": "clone di cellule mutate",
+      "enzima": "divisione cellulare (mitosi)",
+      "entra": [],
+      "esce": [],
+      "nota": "La mutazione passa solo alle cellule figlie di quella cellula. Se colpisce oncogeni e geni oncosoppressori, e se ne accumulano diverse, può nascere un tumore.",
+      "prossimo": "ciclo cellulare"
+     },
+     {
+      "condizione": "Se è in una cellula germinale (uovo o spermatozoo)",
+      "da": "mutazione fissata nei due filamenti",
+      "a": "mutazione ereditaria",
+      "enzima": "fecondazione",
+      "entra": [],
+      "esce": [],
+      "nota": "Il figlio la riceve in tutte le cellule del corpo e la può trasmettere a sua volta.",
+      "prossimo": "meiosi"
+     },
+     {
+      "condizione": "Come si trasmette ai figli una mutazione ereditaria",
+      "da": "mutazione ereditaria",
+      "a": "eredità autosomica recessiva",
+      "enzima": "gameti",
+      "entra": [],
+      "esce": [],
+      "nota": "Il figlio riceve un allele da ciascun genitore. Una mutazione con perdita di funzione di solito si vede solo se gli alleli mutati sono due (recessiva); una con guadagno di funzione basta in una sola copia (dominante). Le proporzioni nei figli seguono le leggi di Mendel.",
+      "prossimo": "ereditarietà mendeliana"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "Le mutazioni puntiformi (una sola base)",
+     "voci": [
+      [
+       "Stesso amminoacido, amminoacido diverso, stop",
+       [
+        "mutazione silente",
+        "mutazione missenso",
+        "mutazione nonsenso"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Inserzioni, delezioni e ripetizioni",
+     "voci": [
+      [
+       "Si sposta la cornice di lettura",
+       [
+        "mutazione frameshift"
+       ]
+      ],
+      [
+       "Una tripletta ripetuta troppe volte",
+       [
+        "espansione di triplette"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Mutazioni dei cromosomi e del loro numero",
+     "voci": [
+      [
+       "Un cromosoma in più o in meno",
+       [
+        "non-disgiunzione",
+        "gamete aneuploide (n+1 o n−1)"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Mutazioni e tumori",
+     "voci": [
+      [
+       "Acceleratore bloccato e freno rotto",
+       [
+        "oncogene",
+        "gene oncosoppressore"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "trasporto di membrana": {
+   "titolo": "Trasporto di membrana: come le sostanze entrano ed escono dalla cellula",
+   "dove": "Membrana plasmatica di tutte le cellule (e membrane degli organuli)",
+   "inizio": "membrana plasmatica",
+   "intro": "La membrana plasmatica è un doppio strato di fosfolipidi: lascia passare da sola solo le molecole piccole e senza carica. Ioni, zuccheri e amminoacidi hanno bisogno di proteine: canali, trasportatori e pompe. Il trasporto passivo segue il gradiente (da dove c'è più concentrazione a dove ce n'è meno) e non costa energia. Il trasporto attivo va contro gradiente e usa ATP, direttamente (primario) o sfruttando il gradiente del Na⁺ (secondario).",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Trasporto passivo: secondo gradiente, senza spendere energia"
+    },
+    {
+     "da": 5,
+     "nome": "Trasporto attivo primario: contro gradiente, con ATP"
+    },
+    {
+     "da": 7,
+     "nome": "Trasporto attivo secondario: sfrutta il gradiente del Na⁺"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "membrana plasmatica"
+     ],
+     "a": [
+      "diffusione semplice"
+     ],
+     "enzima": "doppio strato fosfolipidico",
+     "entra": [
+      "O₂"
+     ],
+     "esce": [
+      "CO₂"
+     ],
+     "nota": "Le molecole piccole e apolari (O₂, CO₂, ormoni steroidei) attraversano direttamente i fosfolipidi, dal lato più concentrato a quello meno concentrato. La velocità cresce con il gradiente e con la superficie (legge di Fick)."
+    },
+    {
+     "da": [
+      "diffusione semplice"
+     ],
+     "a": [
+      "osmosi"
+     ],
+     "enzima": "acquaporine",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [],
+     "nota": "L'acqua si sposta verso il lato dove ci sono più particelle disciolte (osmolarità più alta). Passa un po' tra i fosfolipidi, ma soprattutto attraverso le acquaporine. Un globulo rosso in acqua pura si gonfia e scoppia (emolisi)."
+    },
+    {
+     "da": [
+      "osmosi"
+     ],
+     "a": [
+      "diffusione attraverso canali"
+     ],
+     "enzima": "canali ionici",
+     "entra": [
+      "Na⁺"
+     ],
+     "esce": [
+      "K⁺"
+     ],
+     "nota": "Gli ioni passano in tunnel pieni d'acqua, selettivi per uno ione. I canali si aprono con il voltaggio, con un ligando o con uno stimolo meccanico. Sono velocissimi. I canali del K⁺ sempre aperti fanno uscire K⁺ e creano il potenziale di riposo, negativo all'interno."
+    },
+    {
+     "da": [
+      "diffusione attraverso canali"
+     ],
+     "a": [
+      "diffusione facilitata"
+     ],
+     "enzima": "GLUT",
+     "entra": [
+      "glucosio"
+     ],
+     "esce": [],
+     "nota": "Il trasportatore lega la molecola da un lato, cambia forma e la libera dall'altro. Segue il gradiente, ma si può saturare come un enzima (velocità massima, Km). Così il glucosio entra in quasi tutte le cellule."
+    },
+    {
+     "da": [
+      "diffusione facilitata"
+     ],
+     "a": [
+      "trasporto attivo primario"
+     ],
+     "enzima": "Na⁺/K⁺-ATPasi",
+     "entra": [
+      "ATP",
+      "K⁺"
+     ],
+     "esce": [
+      "ADP",
+      "fosfato (Pi)",
+      "Na⁺"
+     ],
+     "nota": "Per ogni ATP la pompa porta 3 Na⁺ fuori e 2 K⁺ dentro, contro gradiente. Mantiene il Na⁺ basso e il K⁺ alto dentro la cellula. Consuma una grande parte dell'ATP a riposo, soprattutto nel cervello e nel rene."
+    },
+    {
+     "da": [
+      "trasporto attivo primario"
+     ],
+     "a": [
+      "pompe ABC"
+     ],
+     "enzima": "glicoproteina P (MDR1)",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP",
+      "fosfato (Pi)"
+     ],
+     "nota": "I trasportatori ABC usano l'ATP legato ai loro due domini per spingere fuori molecole diverse, anche farmaci. La glicoproteina P, molto espressa nelle cellule tumorali, butta fuori i chemioterapici (multiresistenza)."
+    },
+    {
+     "da": [
+      "pompe ABC"
+     ],
+     "a": [
+      "simporto"
+     ],
+     "enzima": "SGLT1",
+     "entra": [
+      "Na⁺",
+      "glucosio"
+     ],
+     "esce": [],
+     "nota": "Il Na⁺ rientra nella cellula seguendo il gradiente creato dalla pompa e «trascina» con sé il glucosio, anche contro gradiente: entrambi vanno nella stessa direzione (simporto). Nell'intestino SGLT1 porta dentro 2 Na⁺ per ogni glucosio."
+    },
+    {
+     "da": [
+      "simporto"
+     ],
+     "a": [
+      "antiporto"
+     ],
+     "enzima": "scambiatore Na⁺/Ca²⁺ (NCX)",
+     "entra": [
+      "Na⁺"
+     ],
+     "esce": [
+      "Ca²⁺"
+     ],
+     "nota": "Qui le due sostanze vanno in direzioni opposte (antiporto): 3 Na⁺ entrano e 1 Ca²⁺ esce. Così le cellule del cuore tolgono il calcio dopo ogni battito."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "trasporto passivo (diffusione semplice, osmosi, canali, trasportatori): segue il gradiente, senza energia",
+    "trasporto attivo primario (pompe): contro gradiente, usa direttamente l'ATP",
+    "trasporto attivo secondario (simporto e antiporto): usa il gradiente del Na⁺ creato dalla Na⁺/K⁺-ATPasi",
+    "molecole grandi e particelle: trasporto con vescicole (endocitosi ed esocitosi)"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Canali e pompe legati a malattie e farmaci",
+     "voci": [
+      [
+       "Canale del cloro dei polmoni, del pancreas e del sudore",
+       [
+        "CFTR"
+       ]
+      ],
+      [
+       "Canale dell'acqua del rene, comandato dall'ADH",
+       [
+        "acquaporina 2"
+       ]
+      ],
+      [
+       "Pompa del calcio del reticolo del muscolo",
+       [
+        "pompa SERCA"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Dove servono questi trasporti",
+    "strade": [
+     {
+      "condizione": "Molecole grandi e particelle",
+      "da": "membrana plasmatica",
+      "a": "vescicola endocitica",
+      "enzima": "clatrina",
+      "entra": [
+       "LDL"
+      ],
+      "esce": [],
+      "nota": "Proteine, LDL e batteri sono troppo grandi per canali e trasportatori: entrano chiusi in vescicole (endocitosi) ed escono allo stesso modo (esocitosi).",
+      "prossimo": "trasporto vescicolare"
+     },
+     {
+      "condizione": "Nei neuroni e nei muscoli",
+      "da": "trasporto attivo primario",
+      "a": "potenziale di riposo",
+      "enzima": "canali di fuga del K⁺",
+      "entra": [],
+      "esce": [
+       "K⁺"
+      ],
+      "nota": "I gradienti creati dalla pompa Na⁺/K⁺ e i canali del K⁺ aperti a riposo rendono l'interno negativo. Aprendo e chiudendo i canali del Na⁺ e del K⁺ nasce l'impulso nervoso.",
+      "prossimo": "potenziale d'azione"
+     },
+     {
+      "condizione": "Nel rene",
+      "da": "simporto",
+      "a": "filtrato isosmotico",
+      "enzima": "tubulo contorto prossimale",
+      "entra": [],
+      "esce": [
+       "Na⁺",
+       "glucosio",
+       "H₂O"
+      ],
+      "nota": "Il tubulo prossimale riassorbe il glucosio con SGLT2 e SGLT1 (simporto con il Na⁺), secerne H⁺ con lo scambiatore Na⁺/H⁺ (antiporto), e l'acqua segue per osmosi attraverso le acquaporine.",
+      "prossimo": "formazione dell'urina"
+     }
+    ]
+   }
+  },
+  "trasporto vescicolare": {
+   "titolo": "Trasporto vescicolare: dal reticolo al Golgi, fuori dalla cellula e ritorno",
+   "dove": "Citoplasma: reticolo endoplasmatico rugoso, apparato di Golgi, vescicole, membrana plasmatica, endosomi e lisosomi",
+   "inizio": "mRNA nel citoplasma",
+   "intro": "Le proteine da mandare fuori dalla cellula o da mettere nelle membrane nascono sul reticolo endoplasmatico rugoso. Viaggiano chiuse in vescicole: dal reticolo al Golgi, dove vengono rifinite e smistate, e poi verso la membrana, dove escono (esocitosi). La strada inversa, dall'esterno verso l'interno, è l'endocitosi, che porta il materiale agli endosomi e ai lisosomi. Seguiamo l'insulina in uscita e il colesterolo LDL in entrata.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Nel reticolo endoplasmatico rugoso"
+    },
+    {
+     "da": 3,
+     "nome": "Dal reticolo al Golgi"
+    },
+    {
+     "da": 5,
+     "nome": "Nel Golgi e verso l'esterno (secrezione regolata)"
+    },
+    {
+     "da": 8,
+     "nome": "Endocitosi: il viaggio verso l'interno"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "mRNA nel citoplasma"
+     ],
+     "a": [
+      "proteina nel lume del RE"
+     ],
+     "enzima": "particella di riconoscimento del segnale (SRP)",
+     "entra": [
+      "GTP"
+     ],
+     "esce": [
+      "GDP"
+     ],
+     "nota": "Le prime decine di amminoacidi formano il peptide segnale. La SRP lo riconosce, rallenta la traduzione e porta il ribosoma sul reticolo. La catena passa nel lume attraverso il canale Sec61 e il peptide segnale viene tagliato."
+    },
+    {
+     "da": [
+      "proteina nel lume del RE"
+     ],
+     "a": [
+      "glicoproteina ripiegata"
+     ],
+     "enzima": "oligosaccariltransferasi",
+     "entra": [],
+     "esce": [],
+     "nota": "Un blocco già pronto di 14 zuccheri viene attaccato a un'asparagina della proteina (N-glicosilazione). Chaperoni (BiP, calnexina) e ponti disolfuro aiutano il ripiegamento. Le proteine ripiegate male vengono rimandate nel citoplasma e distrutte dal proteasoma."
+    },
+    {
+     "da": [
+      "glicoproteina ripiegata"
+     ],
+     "a": [
+      "vescicola COPII"
+     ],
+     "enzima": "rivestimento COPII",
+     "entra": [
+      "GTP"
+     ],
+     "esce": [
+      "GDP"
+     ],
+     "nota": "La piccola proteina Sar1, quando lega GTP, si attacca alla membrana del reticolo e richiama le proteine del rivestimento COPII, che curvano la membrana e formano una vescicola carica. Solo le proteine ripiegate bene possono partire."
+    },
+    {
+     "da": [
+      "vescicola COPII"
+     ],
+     "a": [
+      "apparato di Golgi (cis)"
+     ],
+     "enzima": "proteine SNARE",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "Il rivestimento si stacca. La v-SNARE della vescicola si avvolge alla t-SNARE della membrana bersaglio e le due membrane si fondono. Dopo la fusione l'ATPasi NSF usa ATP per separare le SNARE e riutilizzarle."
+    },
+    {
+     "da": [
+      "apparato di Golgi (cis)"
+     ],
+     "a": [
+      "rete trans del Golgi"
+     ],
+     "enzima": "glicosiltransferasi del Golgi",
+     "entra": [],
+     "esce": [],
+     "nota": "Attraversando le cisterne (cis → mediale → trans) le proteine vengono rifinite: gli zuccheri vengono tagliati e aggiunti, si forma l'O-glicosilazione. Nel cis-Golgi gli enzimi destinati ai lisosomi ricevono l'etichetta mannosio 6-fosfato."
+    },
+    {
+     "da": [
+      "rete trans del Golgi"
+     ],
+     "a": [
+      "granuli di secrezione"
+     ],
+     "enzima": "proconvertasi",
+     "entra": [
+      "proinsulina"
+     ],
+     "esce": [
+      "peptide C"
+     ],
+     "nota": "La rete trans smista le proteine: ai lisosomi, alla membrana (secrezione continua) o in granuli che aspettano un segnale (secrezione regolata). Nei granuli della cellula β le proconvertasi tagliano la proinsulina in insulina e peptide C."
+    },
+    {
+     "da": [
+      "granuli di secrezione"
+     ],
+     "a": [
+      "insulina"
+     ],
+     "enzima": "proteine SNARE",
+     "entra": [
+      "Ca²⁺"
+     ],
+     "esce": [],
+     "irreversibile": true,
+     "nota": "Esocitosi: quando entra Ca²⁺ nella cellula, il sensore sinaptotagmina fa scattare la fusione completa delle SNARE e il granulo svuota insulina e peptide C fuori dalla cellula. Allo stesso modo i neuroni liberano i neurotrasmettitori."
+    },
+    {
+     "da": [
+      "LDL"
+     ],
+     "a": [
+      "fossetta rivestita di clatrina"
+     ],
+     "enzima": "clatrina",
+     "entra": [],
+     "esce": [],
+     "nota": "Endocitosi mediata da recettore: le LDL si legano al loro recettore sulla membrana. La proteina adattatrice AP2 aggancia i recettori e la clatrina, che forma un cestello e curva la membrana verso l'interno."
+    },
+    {
+     "da": [
+      "fossetta rivestita di clatrina"
+     ],
+     "a": [
+      "vescicola endocitica"
+     ],
+     "enzima": "dinamina",
+     "entra": [
+      "GTP"
+     ],
+     "esce": [
+      "GDP"
+     ],
+     "nota": "La dinamina forma un anello attorno al collo della fossetta e, idrolizzando GTP, la strozza: la vescicola si stacca dalla membrana. Poi la clatrina si stacca e viene riutilizzata."
+    },
+    {
+     "da": [
+      "vescicola endocitica"
+     ],
+     "a": [
+      "endosoma"
+     ],
+     "enzima": "V-ATPasi (pompa protonica)",
+     "entra": [
+      "ATP",
+      "H⁺"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "La vescicola si fonde con l'endosoma precoce, che la pompa protonica rende acido. Con l'acidità le LDL si staccano dal recettore: il recettore torna in membrana (riciclo), le LDL proseguono."
+    },
+    {
+     "da": [
+      "endosoma"
+     ],
+     "a": [
+      "lisosoma"
+     ],
+     "enzima": "idrolasi acide",
+     "entra": [],
+     "esce": [
+      "colesterolo"
+     ],
+     "nota": "L'endosoma matura e si fonde con il lisosoma, ancora più acido. Gli enzimi digestivi del lisosoma smontano le LDL: il colesterolo libero esce nel citoplasma e frena la sintesi di nuovo colesterolo e di nuovi recettori."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "via secretiva: reticolo rugoso → vescicole COPII → Golgi (cis → trans) → granuli o vescicole → esocitosi",
+    "il viaggio indietro dal Golgi al reticolo usa vescicole COPI",
+    "endocitosi: fossetta di clatrina → vescicola → endosoma (riciclo dei recettori) → lisosoma",
+    "ogni vescicola trova la sua meta grazie a proteine Rab e SNARE"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Gli organuli del viaggio",
+     "voci": [
+      [
+       "Dove nascono le proteine da esportare",
+       [
+        "reticolo endoplasmatico rugoso"
+       ]
+      ],
+      [
+       "Dove vengono rifinite e smistate",
+       [
+        "apparato di Golgi (cis)",
+        "rete trans del Golgi"
+       ]
+      ],
+      [
+       "Dove vengono digerite",
+       [
+        "endosoma",
+        "lisosoma"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Dove porta il traffico delle vescicole",
+    "strade": [
+     {
+      "condizione": "Nei neuroni: la secrezione più rapida",
+      "da": "vescicole sinaptiche",
+      "a": "fessura sinaptica",
+      "enzima": "proteine SNARE",
+      "entra": [
+       "Ca²⁺"
+      ],
+      "esce": [
+       "neurotrasmettitore"
+      ],
+      "nota": "Le vescicole sinaptiche sono già agganciate alla membrana: quando entra Ca²⁺ si fondono in meno di un millisecondo. Poi la membrana viene ripresa per endocitosi e le vescicole si riempiono di nuovo.",
+      "prossimo": "trasmissione sinaptica"
+     },
+     {
+      "condizione": "Il colesterolo entrato frena quello prodotto",
+      "da": "HMG-CoA",
+      "a": "colesterolo",
+      "enzima": "HMG-CoA reduttasi",
+      "entra": [
+       "NADPH"
+      ],
+      "esce": [
+       "NADP⁺"
+      ],
+      "nota": "Quando dalle LDL arriva colesterolo, la cellula produce meno HMG-CoA reduttasi e meno recettori delle LDL (via SREBP-2). Le statine bloccano questo enzima: la cellula espone più recettori e toglie più LDL dal sangue.",
+      "prossimo": "sintesi del colesterolo"
+     },
+     {
+      "condizione": "L'insulina uscita dalla cellula β",
+      "da": "insulina",
+      "a": "recettore tirosin-chinasico fosforilato",
+      "enzima": "recettore dell'insulina",
+      "entra": [
+       "ATP"
+      ],
+      "esce": [
+       "ADP"
+      ],
+      "nota": "Nel sangue l'insulina si lega al suo recettore su fegato, muscolo e tessuto adiposo. Nel muscolo e nell'adipe le vescicole con GLUT4 si fondono con la membrana e il glucosio entra.",
+      "prossimo": "regolazione della glicemia"
+     }
+    ]
+   }
+  },
+  "trasduzione del segnale": {
+   "titolo": "Trasduzione del segnale: dall'ormone fuori dalla cellula alla risposta dentro",
+   "dove": "Membrana plasmatica e citoplasma delle cellule bersaglio (es. fegato e muscolo per l'adrenalina)",
+   "inizio": "adrenalina",
+   "intro": "Molti ormoni e neurotrasmettitori non entrano nella cellula: si legano a un recettore sulla membrana, che passa il messaggio all'interno. Seguiamo l'adrenalina: il recettore accende una proteina G, che fa produrre AMP ciclico (secondo messaggero), che accende la proteina chinasi A. A ogni tappa il segnale si moltiplica (amplificazione). Alla fine il segnale viene spento. Gli ormoni come l'insulina usano invece recettori tirosin-chinasici.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Ricezione del segnale"
+    },
+    {
+     "da": 2,
+     "nome": "Trasduzione e amplificazione"
+    },
+    {
+     "da": 5,
+     "nome": "Risposta della cellula"
+    },
+    {
+     "da": 7,
+     "nome": "Spegnimento del segnale"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "adrenalina"
+     ],
+     "a": [
+      "complesso ormone-recettore"
+     ],
+     "enzima": "recettore accoppiato a proteine G (GPCR)",
+     "entra": [],
+     "esce": [],
+     "nota": "L'adrenalina (primo messaggero) si lega al recettore β-adrenergico, una proteina che attraversa la membrana 7 volte. Il legame cambia la forma del recettore dal lato interno."
+    },
+    {
+     "da": [
+      "complesso ormone-recettore"
+     ],
+     "a": [
+      "Gαs-GTP"
+     ],
+     "enzima": "proteina Gs",
+     "entra": [
+      "GTP"
+     ],
+     "esce": [
+      "GDP"
+     ],
+     "nota": "Il recettore attivato fa staccare il GDP dalla subunità α della proteina G, che lega GTP. La Gα con GTP si separa dalla coppia βγ ed è «accesa». Un solo recettore accende molte proteine G."
+    },
+    {
+     "da": [
+      "Gαs-GTP"
+     ],
+     "a": [
+      "AMP ciclico (cAMP)"
+     ],
+     "enzima": "adenilato ciclasi",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "pirofosfato (PPi)"
+     ],
+     "nota": "La Gαs accende l'adenilato ciclasi, un enzima di membrana che trasforma l'ATP in AMP ciclico. Ogni enzima produce molte molecole di cAMP: il segnale si amplifica."
+    },
+    {
+     "da": [
+      "AMP ciclico (cAMP)"
+     ],
+     "a": [
+      "PKA attiva"
+     ],
+     "enzima": "proteina chinasi A (PKA)",
+     "entra": [],
+     "esce": [],
+     "nota": "A riposo la PKA è formata da 2 subunità regolatrici che bloccano 2 subunità catalitiche. Il cAMP si lega alle regolatrici (2 cAMP ciascuna) e libera le catalitiche, ora attive."
+    },
+    {
+     "da": [
+      "PKA attiva"
+     ],
+     "a": [
+      "proteine bersaglio fosforilate"
+     ],
+     "enzima": "proteina chinasi A (PKA)",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "La PKA attacca fosfati su serine e treonine di molte proteine. Nel fegato e nel muscolo accende la fosforilasi chinasi e spegne la glicogeno sintasi. Nel nucleo fosforila CREB, che accende geni."
+    },
+    {
+     "da": [
+      "proteine bersaglio fosforilate"
+     ],
+     "a": [
+      "risposta della cellula"
+     ],
+     "enzima": "glicogeno fosforilasi",
+     "entra": [
+      "glicogeno",
+      "fosfato (Pi)"
+     ],
+     "esce": [
+      "glucosio 1-fosfato"
+     ],
+     "nota": "La fosforilasi chinasi accende la glicogeno fosforilasi, che stacca glucosio dal glicogeno. Il muscolo lo usa per contrarsi; il fegato lo libera nel sangue (la glicemia sale). Da un pugno di molecole di adrenalina si mobilitano grandi quantità di glucosio."
+    },
+    {
+     "da": [
+      "risposta della cellula"
+     ],
+     "a": [
+      "segnale spento"
+     ],
+     "enzima": "fosfodiesterasi",
+     "entra": [
+      "AMP ciclico (cAMP)",
+      "H₂O"
+     ],
+     "esce": [
+      "AMP"
+     ],
+     "nota": "Il segnale si spegne in più punti: la Gα idrolizza da sola il suo GTP e torna inattiva; la fosfodiesterasi trasforma il cAMP in AMP; le fosfatasi tolgono i fosfati messi dalla PKA."
+    },
+    {
+     "da": [
+      "segnale spento"
+     ],
+     "a": [
+      "recettore desensibilizzato"
+     ],
+     "enzima": "chinasi dei recettori accoppiati a proteine G (GRK)",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "Se lo stimolo dura a lungo, la GRK fosforila il recettore occupato e la β-arrestina vi si lega: il recettore non accende più la proteina G e viene portato dentro la cellula per endocitosi. È la desensibilizzazione."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "primo messaggero (ormone) → recettore → proteina G → enzima → secondo messaggero → chinasi → risposta",
+    "ogni tappa moltiplica il segnale (amplificazione a cascata)",
+    "Gs accende e Gi spegne l'adenilato ciclasi; Gq accende la fosfolipasi C (IP₃ e Ca²⁺, DAG e PKC)",
+    "i recettori tirosin-chinasici (insulina, fattori di crescita) fosforilano tirosine e accendono PI3K-Akt e Ras-MAP chinasi"
+   ],
+   "dopo": {
+    "titolo": "Le altre grandi vie del segnale",
+    "strade": [
+     {
+      "condizione": "Recettori accoppiati a Gq (es. α₁-adrenergico, recettore AT1, muscarinico M₃)",
+      "da": "Gαq-GTP",
+      "a": "IP₃ e DAG",
+      "enzima": "fosfolipasi C-β",
+      "entra": [
+       "PIP₂"
+      ],
+      "esce": [
+       "Ca²⁺"
+      ],
+      "nota": "La fosfolipasi C taglia il PIP₂ della membrana in IP₃ e DAG. L'IP₃ apre i canali del reticolo e libera Ca²⁺; il DAG, insieme al Ca²⁺, accende la proteina chinasi C. Così si contrae, ad esempio, la muscolatura liscia dei vasi.",
+      "prossimo": "sistema renina-angiotensina"
+     },
+     {
+      "condizione": "Recettori tirosin-chinasici: il recettore dell'insulina",
+      "da": "insulina",
+      "a": "recettore tirosin-chinasico fosforilato",
+      "enzima": "recettore dell'insulina",
+      "entra": [
+       "ATP"
+      ],
+      "esce": [
+       "ADP"
+      ],
+      "nota": "L'insulina fa avvicinare le due metà del recettore, che si fosforilano a vicenda sulle tirosine. Le proteine IRS si agganciano e accendono la via PI3K-Akt: GLUT4 va in membrana e si forma glicogeno.",
+      "prossimo": "regolazione della glicemia"
+     },
+     {
+      "condizione": "Fattori di crescita: la via di Ras e delle MAP chinasi",
+      "da": "recettore tirosin-chinasico fosforilato",
+      "a": "proliferazione cellulare",
+      "enzima": "Ras",
+      "entra": [
+       "GTP"
+      ],
+      "esce": [
+       "GDP"
+      ],
+      "nota": "Le tirosine fosforilate richiamano Grb2 e SOS, che fanno legare GTP a Ras. Ras accende la cascata Raf → MEK → ERK, che entra nel nucleo e accende i geni della divisione cellulare.",
+      "prossimo": "ciclo cellulare"
+     },
+     {
+      "condizione": "Che fine fa il glucosio 1-fosfato",
+      "da": "glucosio 1-fosfato",
+      "a": "glucosio 6-fosfato",
+      "enzima": "fosfoglucomutasi",
+      "entra": [],
+      "esce": [],
+      "nota": "Il glucosio 1-fosfato diventa glucosio 6-fosfato. Nel muscolo entra nella glicolisi e dà energia per la contrazione; nel fegato la glucosio 6-fosfatasi lo trasforma in glucosio libero, che va nel sangue.",
+      "prossimo": "metabolismo del glicogeno"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "I secondi messaggeri",
+     "voci": [
+      [
+       "Prodotti dentro la cellula dopo il segnale",
+       [
+        "AMP ciclico (cAMP)",
+        "IP₃ e DAG",
+        "Ca²⁺"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Tossine e farmaci che agiscono sulla via del cAMP",
+     "voci": [
+      [
+       "Tengono accesa la via (più cAMP)",
+       [
+        "tossina colerica",
+        "tossina della pertosse"
+       ]
+      ],
+      [
+       "Bloccano la fosfodiesterasi",
+       [
+        "caffeina"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "ereditarietà mendeliana": {
+   "titolo": "Ereditarietà mendeliana: come si trasmettono i caratteri",
+   "dove": "Nelle cellule che formano i gameti (meiosi) e nella fecondazione; studiata da Mendel sulle piante di pisello",
+   "inizio": "gene (DNA)",
+   "intro": "Ogni carattere dipende da un gene, che esiste in varianti chiamate alleli. Ognuno di noi ha due alleli per ogni gene, uno dalla madre e uno dal padre. Mendel, incrociando piante di pisello, scoprì che gli alleli si separano nei gameti e si riuniscono a caso con la fecondazione. Per questo i caratteri ricompaiono nei figli in proporzioni prevedibili.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Le parole della genetica"
+    },
+    {
+     "da": 4,
+     "nome": "Un carattere: uniformità della F1 e segregazione"
+    },
+    {
+     "da": 8,
+     "nome": "Due caratteri: assortimento indipendente"
+    },
+    {
+     "da": 10,
+     "nome": "Quando Mendel non basta: i geni associati"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "gene (DNA)"
+     ],
+     "a": [
+      "alleli"
+     ],
+     "enzima": "cromosomi omologhi",
+     "entra": [],
+     "esce": [],
+     "nota": "Un gene occupa un posto preciso (locus) su un cromosoma. Le cellule del corpo hanno i cromosomi a coppie (omologhi), quindi ogni gene c'è due volte: le due copie possono essere uguali o diverse (alleli diversi)."
+    },
+    {
+     "da": [
+      "alleli"
+     ],
+     "a": [
+      "genotipo"
+     ],
+     "enzima": "fecondazione",
+     "entra": [],
+     "esce": [],
+     "nota": "Il genotipo è la coppia di alleli di un individuo. Due alleli uguali: omozigote (AA o aa). Due alleli diversi: eterozigote (Aa)."
+    },
+    {
+     "da": [
+      "genotipo"
+     ],
+     "a": [
+      "fenotipo"
+     ],
+     "enzima": "allele dominante",
+     "entra": [],
+     "esce": [],
+     "nota": "Il fenotipo è il carattere che si vede (o si misura). Nell'eterozigote Aa si vede solo l'allele dominante A; il recessivo a si vede solo in chi è aa. Il fenotipo dipende anche dall'ambiente."
+    },
+    {
+     "da": [
+      "generazione P (linee pure)"
+     ],
+     "a": [
+      "generazione F1"
+     ],
+     "enzima": "fecondazione",
+     "entra": [],
+     "esce": [],
+     "nota": "Mendel incrociò piante di linea pura: semi gialli (AA) × semi verdi (aa). Tutti i figli (F1) sono Aa e hanno semi gialli: legge della dominanza o dell'uniformità della F1."
+    },
+    {
+     "da": [
+      "generazione F1"
+     ],
+     "a": [
+      "gameti"
+     ],
+     "enzima": "omologhi separati (anafase I)",
+     "entra": [],
+     "esce": [],
+     "nota": "Nella meiosi i due omologhi si separano, quindi ogni gamete riceve un solo allele: metà dei gameti porta A, metà porta a. È la legge della segregazione."
+    },
+    {
+     "da": [
+      "gameti"
+     ],
+     "a": [
+      "generazione F2"
+     ],
+     "enzima": "fecondazione",
+     "entra": [],
+     "esce": [],
+     "nota": "Incrociando due F1 (Aa × Aa) i gameti si uniscono a caso (quadrato di Punnett): genotipi 1 AA : 2 Aa : 1 aa, fenotipi 3 gialli : 1 verde. Il carattere recessivo, sparito nella F1, ricompare."
+    },
+    {
+     "da": [
+      "generazione F2"
+     ],
+     "a": [
+      "reincrocio (testcross)"
+     ],
+     "enzima": "omozigote recessivo",
+     "entra": [],
+     "esce": [],
+     "nota": "Una pianta gialla della F2 può essere AA o Aa. Per saperlo la si incrocia con una aa: se tutti i figli sono gialli era AA; se metà sono verdi era Aa (rapporto 1:1)."
+    },
+    {
+     "da": [
+      "diibrido (AaBb)"
+     ],
+     "a": [
+      "gameti AB, Ab, aB, ab"
+     ],
+     "enzima": "omologhi sulla piastra (metafase I)",
+     "entra": [],
+     "esce": [],
+     "nota": "Con due geni su cromosomi diversi, ogni coppia di omologhi si orienta a caso in metafase I. Un diibrido forma 4 tipi di gameti in uguale proporzione: legge dell'assortimento indipendente."
+    },
+    {
+     "da": [
+      "gameti AB, Ab, aB, ab"
+     ],
+     "a": [
+      "F2 diibrida (9:3:3:1)"
+     ],
+     "enzima": "fecondazione",
+     "entra": [],
+     "esce": [],
+     "nota": "Dall'incrocio AaBb × AaBb nascono 16 combinazioni: 9 con entrambi i caratteri dominanti, 3 + 3 con un solo dominante, 1 con entrambi recessivi. Ogni carattere, preso da solo, resta 3:1."
+    },
+    {
+     "da": [
+      "F2 diibrida (9:3:3:1)"
+     ],
+     "a": [
+      "geni associati"
+     ],
+     "enzima": "cromatidi ricombinati (chiasmi)",
+     "entra": [],
+     "esce": [],
+     "nota": "Se due geni sono vicini sullo stesso cromosoma tendono a passare insieme e il 9:3:3:1 non si osserva. Solo il crossing-over li separa: più sono lontani, più spesso si ricombinano. Su questo si costruiscono le mappe genetiche."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "un carattere: F1 tutta uguale; F2 3:1 nei fenotipi e 1:2:1 nei genotipi",
+    "due caratteri su cromosomi diversi: F2 9:3:3:1",
+    "reincrocio con l'omozigote recessivo: 1:1 se l'individuo è eterozigote",
+    "le leggi di Mendel si spiegano con il comportamento dei cromosomi nella meiosi"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Come si trasmettono le malattie di un solo gene",
+     "voci": [
+      [
+       "Servono due alleli malati (es. fibrosi cistica)",
+       [
+        "eredità autosomica recessiva"
+       ]
+      ],
+      [
+       "Basta un allele malato (es. corea di Huntington)",
+       [
+        "eredità autosomica dominante"
+       ]
+      ],
+      [
+       "Il gene sta sul cromosoma X (es. emofilia)",
+       [
+        "eredità legata all'X"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Oltre la dominanza completa",
+     "voci": [
+      [
+       "L'eterozigote è una via di mezzo",
+       [
+        "dominanza incompleta"
+       ]
+      ],
+      [
+       "Nell'eterozigote si vedono entrambi gli alleli (gruppo AB)",
+       [
+        "codominanza"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Le basi delle leggi di Mendel",
+    "strade": [
+     {
+      "condizione": "Perché gli alleli si separano: la meiosi",
+      "da": "cromosomi omologhi",
+      "a": "gameti",
+      "enzima": "omologhi separati (anafase I)",
+      "entra": [],
+      "esce": [],
+      "nota": "Gli alleli stanno sui cromosomi omologhi, che in anafase I vanno in cellule diverse. Il comportamento dei cromosomi nella meiosi spiega la segregazione e l'assortimento indipendente (teoria cromosomica dell'ereditarietà).",
+      "prossimo": "meiosi"
+     },
+     {
+      "condizione": "Da dove vengono gli alleli nuovi",
+      "da": "gene (DNA)",
+      "a": "mutazione ereditaria",
+      "enzima": "agenti mutageni",
+      "entra": [],
+      "esce": [],
+      "nota": "Un allele nuovo nasce da una mutazione in una cellula germinale. Da quel momento si trasmette ai discendenti secondo le leggi di Mendel.",
+      "prossimo": "mutazioni genetiche"
+     }
+    ]
+   }
+  },
+  "ossidoriduzioni": {
+   "titolo": "Ossidoriduzioni: chi cede e chi acquista elettroni",
+   "dove": "In ogni reazione con scambio di elettroni: pile, elettrolisi, corrosione, combustione, respirazione cellulare",
+   "inizio": "numero di ossidazione",
+   "intro": "Un'ossidoriduzione (reazione redox) è una reazione in cui degli elettroni passano da una specie a un'altra. Chi perde elettroni si ossida, chi li acquista si riduce: le due cose avvengono sempre insieme. Per seguire gli elettroni si usa il numero di ossidazione. Se la reazione è spontanea può produrre corrente (pila); se non lo è, la si può forzare con la corrente (elettrolisi).",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Chi perde e chi acquista elettroni"
+    },
+    {
+     "da": 3,
+     "nome": "Scrivere e bilanciare la reazione"
+    },
+    {
+     "da": 4,
+     "nome": "Elettrochimica: pile, potenziali, elettrolisi"
+    },
+    {
+     "da": 8,
+     "nome": "Le ossidoriduzioni nella cellula"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "numero di ossidazione"
+     ],
+     "a": [
+      "ossidazione"
+     ],
+     "enzima": "riducente",
+     "entra": [],
+     "esce": [
+      "elettroni (e⁻)"
+     ],
+     "nota": "Ossidazione = perdita di elettroni: il numero di ossidazione aumenta. Esempio: Zn → Zn²⁺ + 2 e⁻. La specie che si ossida è il riducente, perché con i suoi elettroni riduce l'altra."
+    },
+    {
+     "da": [
+      "ossidazione"
+     ],
+     "a": [
+      "riduzione"
+     ],
+     "enzima": "ossidante",
+     "entra": [
+      "elettroni (e⁻)"
+     ],
+     "esce": [],
+     "nota": "Riduzione = acquisto di elettroni: il numero di ossidazione diminuisce. Esempio: Cu²⁺ + 2 e⁻ → Cu. Gli elettroni ceduti devono essere uguali a quelli acquistati: Zn + Cu²⁺ → Zn²⁺ + Cu."
+    },
+    {
+     "da": [
+      "riduzione"
+     ],
+     "a": [
+      "semireazioni bilanciate"
+     ],
+     "enzima": "metodo ionico-elettronico",
+     "entra": [
+      "H⁺",
+      "H₂O"
+     ],
+     "esce": [],
+     "nota": "Si scrivono separate le due semireazioni; si bilanciano gli atomi, l'ossigeno con H₂O, l'idrogeno con H⁺ (in ambiente acido), le cariche con gli elettroni. Poi si moltiplicano perché gli elettroni siano uguali e si sommano. Es.: MnO₄⁻ + 8 H⁺ + 5 e⁻ → Mn²⁺ + 4 H₂O."
+    },
+    {
+     "da": [
+      "semireazioni bilanciate"
+     ],
+     "a": [
+      "pila (cella galvanica)"
+     ],
+     "enzima": "ponte salino",
+     "entra": [],
+     "esce": [
+      "elettroni (e⁻)"
+     ],
+     "nota": "Se le due semireazioni avvengono in recipienti separati, gli elettroni passano in un filo esterno: è corrente. Nella pila Daniell lo zinco si ossida all'anodo (polo −) e il rame si riduce al catodo (polo +); il ponte salino chiude il circuito con i suoi ioni."
+    },
+    {
+     "da": [
+      "pila (cella galvanica)"
+     ],
+     "a": [
+      "potenziale standard di riduzione (E°)"
+     ],
+     "enzima": "elettrodo standard a idrogeno",
+     "entra": [],
+     "esce": [],
+     "nota": "Ogni coppia redox ha un potenziale di riduzione, misurato rispetto all'elettrodo a idrogeno (0 V). Più E° è alto, più la specie è ossidante (F₂ +2,87 V); più è basso, più è riducente (Li −3,04 V). La pila Daniell dà 0,34 − (−0,76) = 1,10 V."
+    },
+    {
+     "da": [
+      "potenziale standard di riduzione (E°)"
+     ],
+     "a": [
+      "reazione spontanea"
+     ],
+     "enzima": "equazione di Nernst",
+     "entra": [],
+     "esce": [],
+     "nota": "Una redox è spontanea se la differenza di potenziale (E catodo − E anodo) è positiva, perché ΔG = −nFE. L'equazione di Nernst calcola il potenziale quando le concentrazioni non sono standard."
+    },
+    {
+     "da": [
+      "reazione spontanea"
+     ],
+     "a": [
+      "elettrolisi"
+     ],
+     "enzima": "generatore di corrente continua",
+     "entra": [
+      "elettroni (e⁻)"
+     ],
+     "esce": [],
+     "nota": "Con un generatore si forza la reazione non spontanea. Anche qui l'ossidazione avviene all'anodo e la riduzione al catodo, ma ora l'anodo è il polo +. Esempi: NaCl fuso → Na + Cl₂; si usa per cromature e per produrre alluminio."
+    },
+    {
+     "da": [
+      "reazione spontanea"
+     ],
+     "a": [
+      "ossidoriduzioni nella cellula"
+     ],
+     "enzima": "deidrogenasi",
+     "entra": [
+      "NAD⁺"
+     ],
+     "esce": [
+      "NADH + H⁺"
+     ],
+     "nota": "Nella cellula ossidare spesso significa togliere idrogeni (elettroni + H⁺) a una molecola. Le deidrogenasi li passano al NAD⁺ o al FAD. Gli elettroni del NADH scendono poi lungo la catena respiratoria fino all'O₂, che ha un potenziale molto più alto."
+    },
+    {
+     "da": [
+      "ossidoriduzioni nella cellula"
+     ],
+     "a": [
+      "dismutazione"
+     ],
+     "enzima": "superossido dismutasi (SOD)",
+     "entra": [
+      "anione superossido (O₂•⁻)",
+      "H⁺"
+     ],
+     "esce": [
+      "perossido di idrogeno (H₂O₂)",
+      "O₂"
+     ],
+     "nota": "Un caso speciale: la stessa specie in parte si ossida e in parte si riduce (dismutazione). 2 O₂•⁻ + 2 H⁺ → H₂O₂ + O₂. Così la cellula elimina il superossido, un radicale prodotto in piccola quantità dalla respirazione."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "ossidazione = perdita di elettroni (n.o. aumenta); riduzione = acquisto di elettroni (n.o. diminuisce)",
+    "il riducente si ossida, l'ossidante si riduce; gli elettroni ceduti = elettroni acquistati",
+    "all'anodo c'è sempre ossidazione, al catodo sempre riduzione",
+    "E° positivo della pila ↔ ΔG negativo ↔ reazione spontanea (ΔG° = −nFE°)"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Le coppie redox della respirazione cellulare",
+     "voci": [
+      [
+       "Trasportatori di elettroni",
+       [
+        "NAD⁺",
+        "NADH + H⁺",
+        "FAD",
+        "FADH₂"
+       ]
+      ],
+      [
+       "L'accettore finale degli elettroni",
+       [
+        "O₂",
+        "H₂O"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Le grandi ossidoriduzioni dei viventi",
+    "strade": [
+     {
+      "condizione": "Nel mitocondrio: gli elettroni del cibo arrivano all'ossigeno",
+      "da": "NADH + H⁺",
+      "a": "H₂O",
+      "enzima": "catena respiratoria e ATP sintasi",
+      "entra": [
+       "O₂",
+       "ADP"
+      ],
+      "esce": [
+       "NAD⁺",
+       "ATP"
+      ],
+      "nota": "Gli elettroni passano da coppie con E°' basso (NAD⁺/NADH −0,32 V) a coppie con E°' alto (O₂/H₂O +0,82 V). L'energia liberata serve a pompare protoni, e il loro ritorno produce ATP.",
+      "prossimo": "fosforilazione ossidativa"
+     },
+     {
+      "condizione": "Nelle piante: la luce spinge gli elettroni in salita",
+      "da": "H₂O",
+      "a": "NADPH",
+      "enzima": "fotosistema II",
+      "entra": [
+       "NADP⁺"
+      ],
+      "esce": [
+       "O₂"
+      ],
+      "nota": "Con l'energia della luce gli elettroni vengono tolti all'acqua, che si ossida a O₂, e portati fino al NADP⁺, che si riduce. Da sola questa redox non sarebbe spontanea: la luce fornisce l'energia, un po' come il generatore nell'elettrolisi.",
+      "prossimo": "fotosintesi"
+     }
+    ]
+   }
+  },
+  "sostituzione nucleofila": {
+   "titolo": "Sostituzione nucleofila: SN2 e SN1",
+   "dove": "Reazioni della chimica organica su un carbonio sp³ legato a un buon gruppo uscente (alogenuri alchilici, alcoli attivati); anche negli enzimi delle cellule",
+   "inizio": "alogenuro alchilico",
+   "intro": "In una sostituzione nucleofila un nucleofilo (una specie ricca di elettroni) prende il posto di un gruppo uscente legato a un carbonio: Nu⁻ + R–X → R–Nu + X⁻. Ci sono due meccanismi. Nella SN2 tutto avviene in un solo passaggio. Nella SN1 prima esce il gruppo uscente e si forma un carbocatione, poi arriva il nucleofilo. Quale prevale dipende dal substrato, dal nucleofilo e dal solvente.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Gli attori della reazione"
+    },
+    {
+     "da": 3,
+     "nome": "SN2: un solo passaggio (bimolecolare)"
+    },
+    {
+     "da": 5,
+     "nome": "SN1: due passaggi, con carbocatione (unimolecolare)"
+    },
+    {
+     "da": 8,
+     "nome": "La reazione concorrente e le sostituzioni nella cellula"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "alogenuro alchilico"
+     ],
+     "a": [
+      "carbonio elettrofilo (δ+)"
+     ],
+     "enzima": "gruppo uscente",
+     "entra": [],
+     "esce": [],
+     "nota": "L'alogeno è più elettronegativo del carbonio e tira a sé gli elettroni del legame C–X: il carbonio resta parzialmente positivo (δ+) e attira i nucleofili. Un buon gruppo uscente è una base debole: I⁻ > Br⁻ > Cl⁻ ≫ F⁻."
+    },
+    {
+     "da": [
+      "carbonio elettrofilo (δ+)"
+     ],
+     "a": [
+      "meccanismo SN2 o SN1"
+     ],
+     "enzima": "nucleofilo",
+     "entra": [],
+     "esce": [],
+     "nota": "Il nucleofilo ha un doppietto libero o una carica negativa (OH⁻, CN⁻, NH₃, H₂O). Substrati metilici e primari e nucleofili forti favoriscono la SN2; substrati terziari, nucleofili deboli e solventi protici favoriscono la SN1."
+    },
+    {
+     "da": [
+      "bromometano"
+     ],
+     "a": [
+      "stato di transizione SN2"
+     ],
+     "enzima": "nucleofilo",
+     "entra": [
+      "ione idrossido (OH⁻)"
+     ],
+     "esce": [],
+     "nota": "Il nucleofilo attacca il carbonio dal lato opposto al gruppo uscente (attacco da dietro, a 180°). Nello stato di transizione il carbonio è legato a metà sia a OH sia a Br, con i tre idrogeni su un piano."
+    },
+    {
+     "da": [
+      "stato di transizione SN2"
+     ],
+     "a": [
+      "metanolo"
+     ],
+     "enzima": "gruppo uscente",
+     "entra": [],
+     "esce": [
+      "ione bromuro (Br⁻)"
+     ],
+     "irreversibile": true,
+     "nota": "Mentre si forma il legame C–O si rompe il legame C–Br: un solo passaggio (reazione concertata). La velocità dipende da entrambi: v = k[RX][Nu]. Se il carbonio è chirale la configurazione si inverte (inversione di Walden)."
+    },
+    {
+     "da": [
+      "2-bromo-2-metilpropano"
+     ],
+     "a": [
+      "carbocatione terziario"
+     ],
+     "enzima": "solvente polare protico",
+     "entra": [],
+     "esce": [
+      "ione bromuro (Br⁻)"
+     ],
+     "limitante": true,
+     "nota": "Il carbonio terziario è troppo affollato per l'attacco da dietro. Il legame C–Br si rompe da solo, aiutato dal solvente (acqua, alcoli) che avvolge gli ioni. È il passaggio lento: v = k[RX], non dipende dal nucleofilo."
+    },
+    {
+     "da": [
+      "carbocatione terziario"
+     ],
+     "a": [
+      "alcol protonato"
+     ],
+     "enzima": "nucleofilo",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [],
+     "nota": "Il carbocatione è piatto (carbonio sp²): l'acqua lo attacca velocemente da una faccia o dall'altra. Se il carbonio era chirale si ottiene una miscela dei due enantiomeri (racemizzazione, spesso con un piccolo eccesso di inversione)."
+    },
+    {
+     "da": [
+      "alcol protonato"
+     ],
+     "a": [
+      "2-metil-2-propanolo (terz-butanolo)"
+     ],
+     "enzima": "H₂O",
+     "entra": [],
+     "esce": [
+      "H⁺"
+     ],
+     "nota": "Un'altra molecola d'acqua strappa il protone in più e si ottiene l'alcol neutro. Quando il nucleofilo è il solvente stesso la reazione si chiama solvolisi."
+    },
+    {
+     "da": [
+      "carbocatione terziario"
+     ],
+     "a": [
+      "2-metilpropene"
+     ],
+     "enzima": "solvente polare protico",
+     "entra": [],
+     "esce": [
+      "H⁺"
+     ],
+     "nota": "Il carbocatione può anche perdere un H⁺ dal carbonio vicino e formare un alchene: è l'eliminazione E1, che compete con la SN1 e aumenta scaldando. Con basi forti e ingombranti prevale l'eliminazione E2."
+    },
+    {
+     "da": [
+      "S-adenosilmetionina (SAM)"
+     ],
+     "a": [
+      "adrenalina"
+     ],
+     "enzima": "feniletanolamina N-metiltransferasi (PNMT)",
+     "entra": [
+      "noradrenalina"
+     ],
+     "esce": [
+      "S-adenosilomocisteina"
+     ],
+     "nota": "Anche gli enzimi fanno sostituzioni nucleofile. Nella midollare del surrene l'azoto della noradrenalina (nucleofilo) attacca il metile della SAM con un meccanismo SN2; il gruppo uscente è lo zolfo, che diventa S-adenosilomocisteina."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "SN2: un passaggio, v = k[RX][Nu], inversione di configurazione; CH₃X > primari > secondari, i terziari no",
+    "SN1: due passaggi con carbocatione, v = k[RX], racemizzazione; terziari > secondari, metilici e primari no",
+    "SN2 favorita da nucleofili forti e solventi polari aprotici (acetone, DMSO); SN1 da solventi polari protici (acqua, alcoli)",
+    "buon gruppo uscente = base debole (I⁻, Br⁻, Cl⁻, H₂O)"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Le molecole degli esempi",
+     "voci": [
+      [
+       "SN2 su un substrato metilico",
+       [
+        "bromometano",
+        "ione idrossido (OH⁻)",
+        "metanolo"
+       ]
+      ],
+      [
+       "SN1 su un substrato terziario",
+       [
+        "2-bromo-2-metilpropano",
+        "carbocatione terziario",
+        "2-metil-2-propanolo (terz-butanolo)"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "La reazione concorrente e le sostituzioni sul DNA",
+    "strade": [
+     {
+      "condizione": "Con una base forte, soprattutto scaldando",
+      "da": "2-bromo-2-metilpropano",
+      "a": "2-metilpropene",
+      "enzima": "ione idrossido (OH⁻)",
+      "entra": [],
+      "esce": [
+       "ione bromuro (Br⁻)",
+       "H₂O"
+      ],
+      "nota": "La base toglie un H⁺ dal carbonio vicino mentre esce il bromuro, tutto in un solo passaggio: è l'eliminazione E2, con v = k[RX][base]. Con i substrati terziari e le basi forti prevale sulla sostituzione."
+     },
+     {
+      "condizione": "Agenti alchilanti sul DNA",
+      "da": "guanina",
+      "a": "base danneggiata",
+      "enzima": "agenti mutageni",
+      "entra": [],
+      "esce": [],
+      "nota": "L'azoto N7 della guanina fa da nucleofilo e attacca il carbonio di un agente alchilante (mostarde azotate, ciclofosfamide, metaboliti delle nitrosammine). La base alchilata va riparata, altrimenti può diventare una mutazione.",
+      "prossimo": "riparazione del dna"
+     }
+    ]
+   }
+  },
+  "fotosintesi": {
+   "titolo": "Fotosintesi: dalla luce allo zucchero in due fasi",
+   "dove": "Cloroplasti delle cellule verdi delle piante e delle alghe: membrana dei tilacoidi (fase luminosa) e stroma (ciclo di Calvin)",
+   "inizio": "luce solare",
+   "intro": "Con la fotosintesi le piante usano l'energia della luce per costruire zuccheri a partire da CO₂ e acqua, liberando ossigeno. Nella fase luminosa, sulle membrane dei tilacoidi, la luce spezza l'acqua e produce ATP e NADPH. Nel ciclo di Calvin, nello stroma, ATP e NADPH servono a fissare la CO₂ e a formare zuccheri. L'ossigeno che respiriamo viene dall'acqua.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Fase luminosa (membrana dei tilacoidi)"
+    },
+    {
+     "da": 7,
+     "nome": "Ciclo di Calvin: fissazione della CO₂ (stroma)"
+    },
+    {
+     "da": 8,
+     "nome": "Ciclo di Calvin: riduzione"
+    },
+    {
+     "da": 10,
+     "nome": "Ciclo di Calvin: rigenerazione del RuBP"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "luce solare"
+     ],
+     "a": [
+      "P680 eccitato"
+     ],
+     "enzima": "fotosistema II",
+     "entra": [],
+     "esce": [],
+     "nota": "Clorofille e carotenoidi dell'antenna assorbono la luce e passano l'energia al centro di reazione del fotosistema II, una coppia speciale di clorofille a (P680). P680 si eccita e cede un elettrone."
+    },
+    {
+     "da": [
+      "P680 eccitato"
+     ],
+     "a": [
+      "plastochinolo (PQH₂)"
+     ],
+     "enzima": "fotosistema II",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [
+      "O₂",
+      "H⁺"
+     ],
+     "nota": "Il P680 riprende gli elettroni dall'acqua: il complesso che libera ossigeno (con manganese) spezza 2 H₂O in O₂, 4 H⁺ (nel lume) e 4 e⁻ (fotolisi dell'acqua). Gli elettroni passano al plastochinone, che prende H⁺ dallo stroma."
+    },
+    {
+     "da": [
+      "plastochinolo (PQH₂)"
+     ],
+     "a": [
+      "plastocianina ridotta"
+     ],
+     "enzima": "complesso citocromo b₆f",
+     "entra": [],
+     "esce": [
+      "H⁺"
+     ],
+     "nota": "Il plastochinolo cede gli elettroni al complesso citocromo b₆f, che li passa alla plastocianina (una piccola proteina con rame) e intanto pompa altri H⁺ nel lume del tilacoide."
+    },
+    {
+     "da": [
+      "plastocianina ridotta"
+     ],
+     "a": [
+      "ferredossina ridotta"
+     ],
+     "enzima": "fotosistema I",
+     "entra": [],
+     "esce": [],
+     "nota": "Una seconda luce eccita il centro di reazione del fotosistema I (P700), che spinge gli elettroni fino alla ferredossina, una proteina ferro-zolfo dal lato dello stroma. La plastocianina rimpiazza l'elettrone perso da P700."
+    },
+    {
+     "da": [
+      "ferredossina ridotta"
+     ],
+     "a": [
+      "NADPH"
+     ],
+     "enzima": "ferredossina-NADP⁺ reduttasi",
+     "entra": [
+      "NADP⁺",
+      "H⁺"
+     ],
+     "esce": [],
+     "nota": "Due elettroni della ferredossina riducono il NADP⁺ a NADPH. Il viaggio degli elettroni dall'acqua al NADPH è lo «schema Z»: servono due fotoni per ogni elettrone."
+    },
+    {
+     "da": [
+      "H⁺ nel lume del tilacoide"
+     ],
+     "a": [
+      "ATP"
+     ],
+     "enzima": "ATP sintasi del cloroplasto (CF₀CF₁)",
+     "entra": [
+      "ADP",
+      "fosfato (Pi)"
+     ],
+     "esce": [],
+     "nota": "Gli H⁺ accumulati nel lume (da acqua e citocromo b₆f) tornano nello stroma attraverso l'ATP sintasi, che li usa per fare ATP: fotofosforilazione, con lo stesso principio chemiosmotico del mitocondrio."
+    },
+    {
+     "da": [
+      "ribulosio 1,5-bisfosfato (RuBP)"
+     ],
+     "a": [
+      "3-fosfoglicerato"
+     ],
+     "enzima": "RuBisCO",
+     "entra": [
+      "CO₂",
+      "H₂O"
+     ],
+     "esce": [],
+     "irreversibile": true,
+     "limitante": true,
+     "nota": "La RuBisCO attacca la CO₂ al RuBP (5 C): la molecola a 6 C che si forma si spezza subito in 2 molecole di 3-fosfoglicerato (3 C). È la fissazione del carbonio. La RuBisCO è lenta e a volte lega O₂ al posto della CO₂ (fotorespirazione)."
+    },
+    {
+     "da": [
+      "3-fosfoglicerato"
+     ],
+     "a": [
+      "1,3-bisfosfoglicerato"
+     ],
+     "enzima": "fosfoglicerato chinasi",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "Si spende ATP della fase luminosa per attaccare un secondo fosfato: è la stessa reazione della glicolisi, al contrario."
+    },
+    {
+     "da": [
+      "1,3-bisfosfoglicerato"
+     ],
+     "a": [
+      "gliceraldeide 3-fosfato"
+     ],
+     "enzima": "gliceraldeide 3-fosfato deidrogenasi del cloroplasto",
+     "entra": [
+      "NADPH"
+     ],
+     "esce": [
+      "NADP⁺",
+      "fosfato (Pi)"
+     ],
+     "nota": "Il NADPH riduce la molecola a gliceraldeide 3-fosfato, uno zucchero a 3 C. Ogni 3 CO₂ fissate si formano 6 gliceraldeide 3-fosfato: 1 è il guadagno, 5 servono a ricostruire il RuBP."
+    },
+    {
+     "da": [
+      "gliceraldeide 3-fosfato"
+     ],
+     "a": [
+      "ribulosio 1,5-bisfosfato (RuBP)"
+     ],
+     "enzima": "fosforibulochinasi",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "5 gliceraldeide 3-fosfato (15 C) vengono rimescolate da più enzimi in 3 ribulosio 5-fosfato (15 C), che la fosforibulochinasi trasforma in RuBP spendendo ATP. Il ciclo ricomincia."
+    }
+   ],
+   "titolo_bilancio": "Bilancio",
+   "bilancio": [
+    "6 CO₂ + 6 H₂O + luce → C₆H₁₂O₆ + 6 O₂",
+    "fase luminosa: H₂O → O₂; produce ATP e NADPH",
+    "ciclo di Calvin: per ogni CO₂ fissata servono 3 ATP e 2 NADPH",
+    "per 1 gliceraldeide 3-fosfato in uscita: 3 CO₂, 9 ATP, 6 NADPH"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Dove e con che cosa",
+     "voci": [
+      [
+       "L'organello della fotosintesi",
+       [
+        "cloroplasto"
+       ]
+      ],
+      [
+       "I pigmenti che catturano la luce",
+       [
+        "clorofilla",
+        "carotenoidi"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Che cosa diventa lo zucchero prodotto",
+     "voci": [
+      [
+       "Riserva nella foglia, di giorno",
+       [
+        "amido"
+       ]
+      ],
+      [
+       "Zucchero che viaggia nella pianta",
+       [
+        "saccarosio"
+       ]
+      ],
+      [
+       "Parete delle cellule vegetali",
+       [
+        "cellulosa"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Dove va lo zucchero e quando la fotosintesi rende meno",
+    "strade": [
+     {
+      "condizione": "Di notte, nelle radici e in chi mangia la pianta",
+      "da": "glucosio",
+      "a": "CO₂",
+      "enzima": "mitocondrio",
+      "entra": [
+       "O₂"
+      ],
+      "esce": [
+       "ATP",
+       "H₂O"
+      ],
+      "nota": "Lo zucchero prodotto viene ossidato con l'ossigeno dalla respirazione cellulare, che fa all'incirca il contrario della fotosintesi. Anche le piante respirano, giorno e notte.",
+      "prossimo": "respirazione cellulare"
+     },
+     {
+      "condizione": "Con caldo, siccità e stomi chiusi (fotorespirazione)",
+      "da": "ribulosio 1,5-bisfosfato (RuBP)",
+      "a": "2-fosfoglicolato",
+      "enzima": "RuBisCO",
+      "entra": [
+       "O₂"
+      ],
+      "esce": [
+       "3-fosfoglicerato"
+      ],
+      "nota": "Quando nella foglia c'è poca CO₂ e molto O₂, la RuBisCO lega l'O₂: si forma un solo 3-fosfoglicerato e un 2-fosfoglicolato, che va recuperato spendendo energia e perdendo CO₂. Le piante C4 (mais) e CAM (cactus) concentrano la CO₂ e riducono questa perdita."
+     },
+     {
+      "condizione": "Nel ciclo del carbonio del pianeta",
+      "da": "CO₂",
+      "a": "glucosio",
+      "enzima": "RuBisCO",
+      "entra": [
+       "luce solare"
+      ],
+      "esce": [
+       "O₂"
+      ],
+      "nota": "La fotosintesi toglie CO₂ dall'atmosfera e la trasforma in materia organica, che entra nelle catene alimentari. Respirazione, decomposizione e combustioni la rimettono nell'aria.",
+      "prossimo": "ciclo del carbonio"
+     }
+    ]
+   }
+  },
+  "potenziale d'azione": {
+   "titolo": "Potenziale d'azione: come nasce e si spegne l'impulso nervoso",
+   "dove": "Membrana dei neuroni (segmento iniziale dell'assone, assone, nodi di Ranvier) e delle fibre muscolari",
+   "inizio": "gradienti di Na⁺ e K⁺",
+   "intro": "A riposo l'interno del neurone è negativo, circa −70 mV, perché fuori c'è molto Na⁺ e dentro molto K⁺. Se uno stimolo porta la membrana alla soglia (circa −55 mV), si aprono di colpo i canali del Na⁺: il sodio entra e l'interno diventa positivo per un attimo. Poi i canali del K⁺ fanno uscire il potassio e la membrana torna negativa. Tutto dura circa 1-2 millisecondi ed è «tutto o nulla»: o parte completo, o non parte.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Riposo: la membrana è carica come una piccola pila"
+    },
+    {
+     "da": 2,
+     "nome": "Innesco: lo stimolo porta la membrana alla soglia"
+    },
+    {
+     "da": 4,
+     "nome": "Salita: entra Na⁺ (depolarizzazione)"
+    },
+    {
+     "da": 5,
+     "nome": "Discesa e ritorno: esce K⁺ (ripolarizzazione)"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "gradienti di Na⁺ e K⁺"
+     ],
+     "a": [
+      "potenziale di riposo"
+     ],
+     "enzima": "canali di fuga del K⁺",
+     "entra": [],
+     "esce": [
+      "K⁺"
+     ],
+     "nota": "La pompa Na⁺/K⁺ tiene il K⁺ alto dentro e il Na⁺ alto fuori. A riposo la membrana lascia passare soprattutto il K⁺: un po' di K⁺ esce e lascia dentro cariche negative. Si arriva a circa −70 mV nel neurone (circa −90 mV nel muscolo scheletrico)."
+    },
+    {
+     "da": [
+      "potenziale di riposo"
+     ],
+     "a": [
+      "potenziale graduato"
+     ],
+     "enzima": "recettori ionotropi",
+     "entra": [
+      "Na⁺"
+     ],
+     "esce": [],
+     "nota": "Uno stimolo o un neurotrasmettitore apre alcuni canali e fa entrare un po' di Na⁺: nasce una piccola depolarizzazione locale. È graduata (più stimolo, più grande) e si spegne allontanandosi dal punto di partenza."
+    },
+    {
+     "da": [
+      "potenziale graduato"
+     ],
+     "a": [
+      "soglia"
+     ],
+     "enzima": "segmento iniziale dell'assone",
+     "entra": [],
+     "esce": [],
+     "limitante": true,
+     "nota": "I potenziali graduati si sommano nel segmento iniziale dell'assone, dove ci sono moltissimi canali del Na⁺. Se la membrana arriva alla soglia (circa −55 mV) parte il potenziale d'azione; se non ci arriva, non succede nulla. Qui si decide se il neurone «spara»."
+    },
+    {
+     "da": [
+      "soglia"
+     ],
+     "a": [
+      "depolarizzazione"
+     ],
+     "enzima": "canali del sodio voltaggio-dipendenti",
+     "entra": [
+      "Na⁺"
+     ],
+     "esce": [],
+     "nota": "Alla soglia i canali del Na⁺ si aprono in massa. Il Na⁺ che entra depolarizza ancora e apre altri canali (feedback positivo): l'interno sale fino a circa +30 mV. È la legge del «tutto o nulla»."
+    },
+    {
+     "da": [
+      "depolarizzazione"
+     ],
+     "a": [
+      "ripolarizzazione"
+     ],
+     "enzima": "canali del potassio voltaggio-dipendenti",
+     "entra": [],
+     "esce": [
+      "K⁺"
+     ],
+     "nota": "Al picco i canali del Na⁺ si chiudono con la loro porta di inattivazione, mentre si aprono, più lenti, i canali del K⁺. Il K⁺ esce e l'interno torna negativo. Finché i canali del Na⁺ sono inattivati nessuno stimolo può far partire un nuovo impulso (periodo refrattario assoluto)."
+    },
+    {
+     "da": [
+      "ripolarizzazione"
+     ],
+     "a": [
+      "iperpolarizzazione postuma"
+     ],
+     "enzima": "canali del potassio voltaggio-dipendenti",
+     "entra": [],
+     "esce": [
+      "K⁺"
+     ],
+     "nota": "I canali del K⁺ si chiudono lentamente: per un attimo esce più K⁺ del necessario e la membrana scende sotto il riposo, verso circa −90 mV. In questa fase serve uno stimolo più forte del solito (periodo refrattario relativo)."
+    },
+    {
+     "da": [
+      "iperpolarizzazione postuma"
+     ],
+     "a": [
+      "potenziale di riposo"
+     ],
+     "enzima": "Na⁺/K⁺-ATPasi",
+     "entra": [
+      "K⁺",
+      "ATP"
+     ],
+     "esce": [
+      "Na⁺",
+      "ADP"
+     ],
+     "nota": "Chiusi i canali del K⁺, la membrana torna a circa −70 mV. Un singolo impulso sposta pochissimi ioni; la pompa Na⁺/K⁺ (3 Na⁺ fuori e 2 K⁺ dentro per ogni ATP) mantiene i gradienti anche dopo migliaia di impulsi."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Riposo circa −70 mV: dentro K⁺, fuori Na⁺; la membrana lascia passare soprattutto il K⁺",
+    "Soglia circa −55 mV → si aprono i canali del Na⁺ → il Na⁺ entra → picco circa +30 mV",
+    "Canali del Na⁺ inattivati e canali del K⁺ aperti → il K⁺ esce → la membrana torna negativa",
+    "Tutto o nulla; l'intensità dello stimolo è codificata dalla frequenza degli impulsi"
+   ],
+   "dopo": {
+    "titolo": "Come l'impulso viaggia lungo l'assone",
+    "strade": [
+     {
+      "condizione": "Fibra senza mielina",
+      "da": "potenziale d'azione",
+      "a": "conduzione continua",
+      "enzima": "canali del sodio voltaggio-dipendenti",
+      "entra": [
+       "Na⁺"
+      ],
+      "esce": [],
+      "nota": "La corrente che entra in un punto depolarizza il tratto vicino, che a sua volta raggiunge la soglia. L'impulso avanza tratto per tratto ed è lento (circa 0,5-2 m/s). Non torna indietro perché il tratto appena attivato è refrattario."
+     },
+     {
+      "condizione": "Fibra con mielina",
+      "da": "potenziale d'azione",
+      "a": "conduzione saltatoria",
+      "enzima": "nodi di Ranvier",
+      "entra": [
+       "Na⁺"
+      ],
+      "esce": [],
+      "nota": "La mielina isola l'assone e i canali del Na⁺ stanno quasi solo nei nodi di Ranvier: l'impulso «salta» da un nodo all'altro. È molto più veloce (fino a circa 100 m/s) e consuma meno energia."
+     },
+     {
+      "condizione": "Arrivo alla fine dell'assone",
+      "da": "potenziale d'azione",
+      "a": "terminale presinaptico",
+      "enzima": "assone",
+      "entra": [],
+      "esce": [],
+      "nota": "L'impulso arriva al terminale dell'assone e lì il segnale elettrico diventa chimico: si apre la sinapsi.",
+      "prossimo": "trasmissione sinaptica"
+     },
+     {
+      "condizione": "Nella fibra muscolare scheletrica",
+      "da": "potenziale d'azione",
+      "a": "tubulo T",
+      "enzima": "canali del sodio voltaggio-dipendenti",
+      "entra": [
+       "Na⁺"
+      ],
+      "esce": [],
+      "nota": "Alla placca motrice l'acetilcolina fa partire un potenziale d'azione sulla membrana della fibra; l'impulso scende nei tubuli T e fa liberare il Ca²⁺ che avvia la contrazione.",
+      "prossimo": "contrazione muscolare"
+     },
+     {
+      "condizione": "Nel cuore",
+      "da": "nodo senoatriale",
+      "a": "eccitazione dei ventricoli",
+      "enzima": "fascio di His e fibre di Purkinje",
+      "entra": [
+       "Ca²⁺"
+      ],
+      "esce": [],
+      "nota": "Le cellule del nodo senoatriale si depolarizzano da sole fino alla soglia (pacemaker). Nei ventricoli, dopo la salita rapida dovuta al Na⁺, i canali del Ca²⁺ di tipo L mantengono un lungo plateau: per questo il cuore non può andare in tetano.",
+      "prossimo": "ciclo cardiaco"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "I canali e la pompa che fanno il potenziale d'azione",
+     "voci": [
+      [
+       "Tengono il riposo",
+       [
+        "canali di fuga del K⁺",
+        "Na⁺/K⁺-ATPasi"
+       ]
+      ],
+      [
+       "Fanno salire il potenziale",
+       [
+        "canali del sodio voltaggio-dipendenti"
+       ]
+      ],
+      [
+       "Lo fanno scendere",
+       [
+        "canali del potassio voltaggio-dipendenti"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Quando il segnale si blocca o rallenta",
+     "voci": [
+      [
+       "Il tempo in cui il neurone non risponde",
+       [
+        "periodo refrattario assoluto",
+        "periodo refrattario relativo"
+       ]
+      ],
+      [
+       "Farmaci che bloccano i canali del Na⁺",
+       [
+        "anestetici locali"
+       ]
+      ],
+      [
+       "Malattia che danneggia la mielina",
+       [
+        "sclerosi multipla"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "trasmissione sinaptica": {
+   "titolo": "Trasmissione sinaptica: il passaggio del segnale da un neurone all'altro",
+   "dove": "Sinapsi chimiche: terminale presinaptico, fessura sinaptica e membrana postsinaptica (tra neuroni, o tra neurone e muscolo o ghiandola)",
+   "inizio": "potenziale d'azione",
+   "intro": "I neuroni non si toccano: tra loro c'è una fessura sottilissima. Quando l'impulso elettrico arriva alla fine dell'assone fa entrare Ca²⁺, e il Ca²⁺ fa liberare un messaggero chimico, il neurotrasmettitore. Il neurotrasmettitore attraversa la fessura e si lega ai recettori del neurone successivo, eccitandolo o inibendolo. Poi viene subito rimosso, così il segnale è breve e preciso.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Nel neurone presinaptico: il segnale elettrico diventa chimico"
+    },
+    {
+     "da": 4,
+     "nome": "Nel neurone postsinaptico: il segnale chimico ridiventa elettrico"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "potenziale d'azione"
+     ],
+     "a": [
+      "terminale presinaptico"
+     ],
+     "enzima": "assone",
+     "entra": [],
+     "esce": [],
+     "nota": "L'impulso corre lungo l'assone fino ai bottoni terminali. Qui il neurotrasmettitore è già pronto, chiuso in piccole vescicole."
+    },
+    {
+     "da": [
+      "terminale presinaptico"
+     ],
+     "a": [
+      "vescicole sinaptiche"
+     ],
+     "enzima": "canali del calcio voltaggio-dipendenti",
+     "entra": [
+      "Ca²⁺"
+     ],
+     "esce": [],
+     "limitante": true,
+     "nota": "La depolarizzazione apre i canali del Ca²⁺. Il Ca²⁺ che entra è il segnale per le vescicole: più Ca²⁺ entra, più neurotrasmettitore viene liberato. È la tappa che regola quanto è forte la sinapsi."
+    },
+    {
+     "da": [
+      "vescicole sinaptiche"
+     ],
+     "a": [
+      "fessura sinaptica"
+     ],
+     "enzima": "proteine SNARE",
+     "entra": [],
+     "esce": [
+      "neurotrasmettitore"
+     ],
+     "nota": "Il Ca²⁺ si lega alla sinaptotagmina e le proteine SNARE fanno fondere le vescicole con la membrana: il neurotrasmettitore esce nella fessura (esocitosi). Dall'arrivo dell'impulso passa circa mezzo millisecondo (ritardo sinaptico)."
+    },
+    {
+     "da": [
+      "fessura sinaptica"
+     ],
+     "a": [
+      "potenziale postsinaptico eccitatorio (PPSE)"
+     ],
+     "enzima": "recettori ionotropi",
+     "entra": [
+      "neurotrasmettitore",
+      "Na⁺"
+     ],
+     "esce": [],
+     "nota": "Il neurotrasmettitore attraversa la fessura per diffusione e apre canali sulla membrana postsinaptica. Con il glutammato (recettori AMPA) o l'acetilcolina (recettori nicotinici) entra Na⁺: la membrana si depolarizza un poco."
+    },
+    {
+     "da": [
+      "fessura sinaptica"
+     ],
+     "a": [
+      "potenziale postsinaptico inibitorio (PPSI)"
+     ],
+     "enzima": "recettore GABA-A",
+     "entra": [
+      "GABA",
+      "Cl⁻"
+     ],
+     "esce": [],
+     "nota": "Altre sinapsi usano GABA (nel cervello) o glicina (nel midollo spinale). Il recettore apre un canale per il Cl⁻: la membrana resta più negativa e si allontana dalla soglia."
+    },
+    {
+     "da": [
+      "potenziale postsinaptico eccitatorio (PPSE)",
+      "potenziale postsinaptico inibitorio (PPSI)"
+     ],
+     "a": [
+      "sommazione"
+     ],
+     "enzima": "segmento iniziale dell'assone",
+     "entra": [],
+     "esce": [],
+     "nota": "Un neurone riceve migliaia di sinapsi. I PPSE e i PPSI si sommano nello spazio (da sinapsi diverse) e nel tempo (impulsi ravvicinati). Un solo PPSE di solito non basta: serve la somma di molti."
+    },
+    {
+     "da": [
+      "sommazione"
+     ],
+     "a": [
+      "potenziale d'azione"
+     ],
+     "enzima": "canali del sodio voltaggio-dipendenti",
+     "entra": [
+      "Na⁺"
+     ],
+     "esce": [],
+     "nota": "Se la somma porta il segmento iniziale dell'assone alla soglia, nasce un nuovo potenziale d'azione nel neurone postsinaptico e il segnale prosegue."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Impulso nel terminale → entra Ca²⁺ → le vescicole liberano il neurotrasmettitore (esocitosi)",
+    "Il neurotrasmettitore si lega ai recettori postsinaptici: PPSE (entra Na⁺) o PPSI (entra Cl⁻)",
+    "I potenziali si sommano: se si arriva alla soglia parte un nuovo potenziale d'azione",
+    "Il neurotrasmettitore viene subito tolto: degradato da enzimi o ripreso dal terminale"
+   ],
+   "dopo": {
+    "titolo": "Risposte lente e spegnimento del segnale",
+    "strade": [
+     {
+      "condizione": "Recettori accoppiati a proteine G (risposta lenta e duratura)",
+      "da": "fessura sinaptica",
+      "a": "secondi messaggeri",
+      "enzima": "recettori metabotropi",
+      "entra": [
+       "neurotrasmettitore"
+      ],
+      "esce": [],
+      "nota": "Il recettore non è un canale: attiva una proteina G, che produce secondi messaggeri (per esempio cAMP). L'effetto arriva in centinaia di millisecondi o più e può durare a lungo. Esempi: recettori muscarinici, adrenergici, dopaminergici.",
+      "prossimo": "trasduzione del segnale"
+     },
+     {
+      "condizione": "Spegnimento con un enzima",
+      "da": "acetilcolina",
+      "a": "colina",
+      "enzima": "acetilcolinesterasi",
+      "entra": [
+       "H₂O"
+      ],
+      "esce": [
+       "acetato"
+      ],
+      "nota": "L'acetilcolina viene spezzata nella fessura in pochi millisecondi. La colina torna nel terminale e serve a fare nuova acetilcolina."
+     },
+     {
+      "condizione": "Spegnimento per ricaptazione",
+      "da": "fessura sinaptica",
+      "a": "terminale presinaptico",
+      "enzima": "trasportatori di ricaptazione",
+      "entra": [
+       "neurotrasmettitore"
+      ],
+      "esce": [],
+      "nota": "Noradrenalina, dopamina, serotonina, glutammato e GABA vengono ripresi da trasportatori del terminale o delle cellule gliali e riusati. Molti farmaci (antidepressivi) e droghe (cocaina) bloccano proprio questi trasportatori.",
+      "prossimo": "farmacodinamica"
+     },
+     {
+      "condizione": "Tra motoneurone e muscolo (placca motrice)",
+      "da": "terminale presinaptico",
+      "a": "placca motrice",
+      "enzima": "recettore nicotinico dell'acetilcolina",
+      "entra": [
+       "acetilcolina",
+       "Na⁺"
+      ],
+      "esce": [],
+      "nota": "Alla giunzione neuromuscolare ogni impulso libera abbastanza acetilcolina da far partire sempre un potenziale d'azione nella fibra muscolare: qui non serve la sommazione.",
+      "prossimo": "contrazione muscolare"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "I principali neurotrasmettitori",
+     "voci": [
+      [
+       "Eccitatori",
+       [
+        "glutammato",
+        "acetilcolina"
+       ]
+      ],
+      [
+       "Inibitori",
+       [
+        "GABA",
+        "glicina"
+       ]
+      ],
+      [
+       "Monoamine (umore, movimento, allerta)",
+       [
+        "dopamina",
+        "noradrenalina"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Farmaci e tossine che agiscono sulla sinapsi",
+     "voci": [
+      [
+       "Bloccano la liberazione del neurotrasmettitore",
+       [
+        "tossina botulinica"
+       ]
+      ],
+      [
+       "Bloccano la ricaptazione",
+       [
+        "inibitori selettivi della ricaptazione della serotonina (SSRI)"
+       ]
+      ],
+      [
+       "Potenziano il GABA",
+       [
+        "benzodiazepine"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "contrazione muscolare": {
+   "titolo": "Contrazione muscolare: dalla placca motrice ai ponti trasversali e al rilasciamento",
+   "dove": "Muscolo scheletrico: placca motrice, sarcolemma e tubuli T, reticolo sarcoplasmatico, sarcomeri",
+   "inizio": "motoneurone",
+   "intro": "Il motoneurone libera acetilcolina sulla fibra muscolare e fa partire un potenziale d'azione. L'impulso scende nei tubuli T e fa uscire Ca²⁺ dal reticolo sarcoplasmatico (accoppiamento eccitazione-contrazione). Il Ca²⁺ scopre i siti dell'actina e le teste della miosina la tirano usando ATP: i filamenti scorrono e il sarcomero si accorcia. Quando il nervo smette, il Ca²⁺ viene ripompato nel reticolo e il muscolo si rilascia.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Placca motrice: dal nervo al muscolo"
+    },
+    {
+     "da": 3,
+     "nome": "Accoppiamento eccitazione-contrazione: l'impulso libera il Ca²⁺"
+    },
+    {
+     "da": 6,
+     "nome": "Ciclo dei ponti trasversali: i filamenti scorrono"
+    },
+    {
+     "da": 10,
+     "nome": "Rilasciamento"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "motoneurone"
+     ],
+     "a": [
+      "placca motrice"
+     ],
+     "enzima": "canali del calcio voltaggio-dipendenti",
+     "entra": [
+      "Ca²⁺"
+     ],
+     "esce": [
+      "acetilcolina"
+     ],
+     "nota": "Il potenziale d'azione arriva al terminale del motoneurone e apre i canali del Ca²⁺. Il Ca²⁺ fa liberare l'acetilcolina nella fessura della placca motrice."
+    },
+    {
+     "da": [
+      "placca motrice"
+     ],
+     "a": [
+      "potenziale di placca"
+     ],
+     "enzima": "recettore nicotinico dell'acetilcolina",
+     "entra": [
+      "acetilcolina",
+      "Na⁺"
+     ],
+     "esce": [],
+     "nota": "L'acetilcolina apre i recettori nicotinici, che sono canali: entra soprattutto Na⁺ e la membrana della fibra si depolarizza. Il potenziale di placca è molto più grande del necessario, quindi in condizioni normali ogni impulso del nervo fa contrarre la fibra."
+    },
+    {
+     "da": [
+      "potenziale di placca"
+     ],
+     "a": [
+      "tubulo T"
+     ],
+     "enzima": "canali del sodio voltaggio-dipendenti",
+     "entra": [
+      "Na⁺"
+     ],
+     "esce": [],
+     "nota": "Ai lati della placca nasce un potenziale d'azione muscolare che corre su tutto il sarcolemma e scende nei tubuli T, in profondità nella fibra. Intanto l'acetilcolinesterasi distrugge l'acetilcolina."
+    },
+    {
+     "da": [
+      "tubulo T"
+     ],
+     "a": [
+      "reticolo sarcoplasmatico"
+     ],
+     "enzima": "recettore delle diidropiridine (DHPR)",
+     "entra": [],
+     "esce": [],
+     "nota": "Nel tubulo T il recettore delle diidropiridine sente la depolarizzazione e cambia forma. Nel muscolo scheletrico è unito meccanicamente al recettore della rianodina del reticolo che gli sta di fronte (triade)."
+    },
+    {
+     "da": [
+      "reticolo sarcoplasmatico"
+     ],
+     "a": [
+      "Ca²⁺"
+     ],
+     "enzima": "recettore della rianodina (RyR1)",
+     "entra": [],
+     "esce": [],
+     "limitante": true,
+     "nota": "Il recettore della rianodina si apre e il Ca²⁺ esce dal reticolo nel citoplasma della fibra. La quantità di Ca²⁺ liberata decide se e quanto il muscolo si contrae."
+    },
+    {
+     "da": [
+      "Ca²⁺"
+     ],
+     "a": [
+      "siti dell'actina scoperti"
+     ],
+     "enzima": "troponina e tropomiosina",
+     "entra": [],
+     "esce": [],
+     "nota": "Il Ca²⁺ si lega alla troponina C. La troponina cambia forma e sposta la tropomiosina, che copriva i punti di aggancio dell'actina: ora la miosina può legarsi."
+    },
+    {
+     "da": [
+      "siti dell'actina scoperti"
+     ],
+     "a": [
+      "ponte actina-miosina"
+     ],
+     "enzima": "miosina",
+     "entra": [],
+     "esce": [
+      "fosfato (Pi)"
+     ],
+     "nota": "La testa della miosina, già «caricata» con ADP e fosfato, si attacca all'actina e forma un ponte trasversale. Il distacco del fosfato fa partire il colpo di forza."
+    },
+    {
+     "da": [
+      "ponte actina-miosina"
+     ],
+     "a": [
+      "colpo di forza"
+     ],
+     "enzima": "miosina",
+     "entra": [],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "La testa ruota e trascina il filamento di actina verso il centro del sarcomero; poi l'ADP si stacca. I filamenti non si accorciano: scorrono uno sull'altro, le bande I e la zona H si restringono, la banda A resta uguale."
+    },
+    {
+     "da": [
+      "colpo di forza"
+     ],
+     "a": [
+      "testa della miosina carica"
+     ],
+     "enzima": "miosina",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [],
+     "nota": "Un nuovo ATP si lega alla testa e la stacca dall'actina (senza ATP la testa resta attaccata: rigor mortis). La miosina scinde l'ATP in ADP e fosfato, che restano legati, e la testa torna in posizione carica. Il ciclo si ripete finché ci sono Ca²⁺ e ATP."
+    },
+    {
+     "da": [
+      "Ca²⁺"
+     ],
+     "a": [
+      "rilasciamento muscolare"
+     ],
+     "enzima": "pompa SERCA",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "ADP"
+     ],
+     "nota": "Quando il motoneurone smette di inviare impulsi, la pompa SERCA riporta il Ca²⁺ nel reticolo usando ATP. Il Ca²⁺ si stacca dalla troponina, la tropomiosina ricopre l'actina e il muscolo si rilascia: anche il rilasciamento consuma energia."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Nervo → acetilcolina → recettori nicotinici → potenziale d'azione della fibra → tubuli T",
+    "Recettore delle diidropiridine → recettore della rianodina → il Ca²⁺ esce dal reticolo",
+    "Ca²⁺ + troponina → actina scoperta → ciclo dei ponti trasversali (1 ATP per ogni ciclo di ogni testa)",
+    "Rilasciamento: pompa SERCA (ATP) riporta il Ca²⁺ nel reticolo"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Le parti del muscolo, dal grande al piccolo",
+     "voci": [
+      [
+       "Organo e cellula",
+       [
+        "muscolo scheletrico",
+        "fibra muscolare"
+       ]
+      ],
+      [
+       "Unità che si accorcia",
+       [
+        "sarcomero"
+       ]
+      ],
+      [
+       "Filamento sottile e filamento spesso",
+       [
+        "actina",
+        "miosina"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Quando la contrazione non funziona",
+     "voci": [
+      [
+       "Anticorpi contro i recettori della placca",
+       [
+        "miastenia gravis"
+       ]
+      ],
+      [
+       "Farmaci che bloccano la placca (anestesia)",
+       [
+        "bloccanti neuromuscolari"
+       ]
+      ],
+      [
+       "Troppo Ca²⁺ liberato dal reticolo",
+       [
+        "ipertermia maligna"
+       ]
+      ],
+      [
+       "Manca l'ATP per staccare i ponti",
+       [
+        "rigor mortis"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Le scorte di energia del muscolo",
+     "voci": [
+      [
+       "Pronto subito (pochi secondi)",
+       [
+        "fosfocreatina"
+       ]
+      ],
+      [
+       "Zucchero di riserva nel muscolo",
+       [
+        "glicogeno"
+       ]
+      ],
+      [
+       "Dove si fa più ATP (con ossigeno)",
+       [
+        "mitocondrio"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Da dove viene l'ATP e i collegamenti con gli altri percorsi",
+    "strade": [
+     {
+      "condizione": "Sforzo massimo dei primi secondi",
+      "da": "fosfocreatina",
+      "a": "ATP",
+      "enzima": "creatina chinasi",
+      "entra": [
+       "ADP"
+      ],
+      "esce": [],
+      "nota": "La fosfocreatina cede subito il suo fosfato all'ADP: è la riserva più rapida, ma basta solo per pochi secondi di sforzo intenso."
+     },
+     {
+      "condizione": "Sforzo intenso con poco ossigeno",
+      "da": "glicogeno",
+      "a": "lattato",
+      "enzima": "lattato deidrogenasi",
+      "entra": [],
+      "esce": [
+       "ATP"
+      ],
+      "nota": "Il glicogeno del muscolo viene spezzato e il glucosio passa nella glicolisi; senza abbastanza ossigeno il piruvato diventa lattato. Si fa ATP in fretta, ma poco per ogni glucosio.",
+      "prossimo": "fermentazione lattica e alcolica"
+     },
+     {
+      "condizione": "Sforzo lungo con ossigeno",
+      "da": "glucosio",
+      "a": "CO₂",
+      "enzima": "mitocondrio",
+      "entra": [
+       "O₂"
+      ],
+      "esce": [
+       "ATP",
+       "H₂O"
+      ],
+      "nota": "Nello sforzo prolungato glucosio e acidi grassi vengono ossidati completamente nei mitocondri: si produce molto più ATP. Le fibre lente (tipo I) sono ricche di mitocondri e di mioglobina.",
+      "prossimo": "respirazione cellulare"
+     },
+     {
+      "condizione": "Nel muscolo del cuore",
+      "da": "tubulo T",
+      "a": "reticolo sarcoplasmatico",
+      "enzima": "recettore delle diidropiridine (DHPR)",
+      "entra": [
+       "Ca²⁺"
+      ],
+      "esce": [],
+      "nota": "Nel cuore il DHPR fa entrare un po' di Ca²⁺, che apre il recettore della rianodina (RyR2) del reticolo: liberazione di Ca²⁺ indotta dal Ca²⁺. Senza Ca²⁺ esterno il cuore non si contrae.",
+      "prossimo": "ciclo cardiaco"
+     },
+     {
+      "condizione": "Il muscolo che lavora scalda",
+      "da": "muscolo scheletrico",
+      "a": "calore",
+      "enzima": "brivido",
+      "entra": [
+       "ATP"
+      ],
+      "esce": [],
+      "nota": "Solo una parte dell'energia dell'ATP diventa lavoro; il resto diventa calore. Con il freddo l'ipotalamo sfrutta proprio questo con il brivido.",
+      "prossimo": "termoregolazione"
+     }
+    ]
+   }
+  },
+  "ciclo cardiaco": {
+   "titolo": "Ciclo cardiaco: sistole e diastole in un battito",
+   "dove": "Cuore: atri, ventricoli, valvole atrioventricolari (mitrale e tricuspide) e semilunari (aortica e polmonare), sistema di conduzione",
+   "inizio": "sistole atriale",
+   "intro": "Il ciclo cardiaco è ciò che succede in un battito: la contrazione (sistole) e il rilasciamento (diastole). A 75 battiti al minuto dura circa 0,8 secondi, e la diastole occupa circa due terzi del tempo. Le valvole si aprono e si chiudono solo per differenza di pressione: così il sangue va in un solo verso. Il cuore destro e il sinistro fanno lo stesso ciclo insieme; qui seguiamo il sinistro.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Fine della diastole: gli atri si contraggono e l'impulso arriva ai ventricoli"
+    },
+    {
+     "da": 3,
+     "nome": "Sistole ventricolare: i ventricoli si contraggono e si svuotano"
+    },
+    {
+     "da": 6,
+     "nome": "Diastole ventricolare: i ventricoli si rilasciano e si riempiono"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "sistole atriale"
+     ],
+     "a": [
+      "eccitazione dei ventricoli"
+     ],
+     "enzima": "nodo atrioventricolare",
+     "entra": [],
+     "esce": [],
+     "nota": "Gli atri si contraggono (onda P dell'ECG) e completano il riempimento dei ventricoli. Il nodo atrioventricolare ritarda l'impulso di circa un decimo di secondo: così i ventricoli si contraggono solo dopo essersi riempiti."
+    },
+    {
+     "da": [
+      "eccitazione dei ventricoli"
+     ],
+     "a": [
+      "contrazione isovolumetrica"
+     ],
+     "enzima": "fascio di His e fibre di Purkinje",
+     "entra": [],
+     "esce": [],
+     "nota": "Il fascio di His e le fibre di Purkinje portano l'impulso a tutti i ventricoli (complesso QRS). I ventricoli iniziano a contrarsi: la pressione supera quella degli atri e le valvole mitrale e tricuspide si chiudono. È il primo tono cardiaco."
+    },
+    {
+     "da": [
+      "contrazione isovolumetrica"
+     ],
+     "a": [
+      "eiezione rapida"
+     ],
+     "enzima": "ventricolo sinistro",
+     "entra": [],
+     "esce": [],
+     "limitante": true,
+     "nota": "Tutte le valvole sono chiuse: la pressione sale molto ma il volume non cambia (circa 110-120 mL, volume telediastolico). Quando la pressione del ventricolo sinistro supera quella dell'aorta (circa 80 mmHg) la valvola aortica si apre. La forza di questa contrazione decide quanto sangue uscirà."
+    },
+    {
+     "da": [
+      "eiezione rapida"
+     ],
+     "a": [
+      "eiezione lenta"
+     ],
+     "enzima": "aorta",
+     "entra": [],
+     "esce": [],
+     "nota": "Il sangue esce velocemente: la pressione nel ventricolo e nell'aorta arriva a circa 120 mmHg. Nel primo terzo dell'eiezione esce la maggior parte della gittata. L'aorta elastica si dilata e accumula una parte del sangue."
+    },
+    {
+     "da": [
+      "eiezione lenta"
+     ],
+     "a": [
+      "rilasciamento isovolumetrico"
+     ],
+     "enzima": "valvola aortica",
+     "entra": [],
+     "esce": [],
+     "nota": "I ventricoli si ripolarizzano (onda T) e la spinta cala. Quando la pressione del ventricolo scende sotto quella dell'aorta, la valvola aortica (e la polmonare) si chiude: è il secondo tono. Sono usciti circa 70 mL (gittata sistolica) e ne restano circa 40-50 mL (volume telesistolico)."
+    },
+    {
+     "da": [
+      "rilasciamento isovolumetrico"
+     ],
+     "a": [
+      "riempimento rapido"
+     ],
+     "enzima": "valvola mitrale",
+     "entra": [],
+     "esce": [],
+     "nota": "Tutte le valvole sono di nuovo chiuse e la pressione del ventricolo crolla senza che cambi il volume. Quando scende sotto quella dell'atrio, la mitrale (e la tricuspide) si apre."
+    },
+    {
+     "da": [
+      "riempimento rapido"
+     ],
+     "a": [
+      "diastasi"
+     ],
+     "enzima": "ritorno venoso",
+     "entra": [],
+     "esce": [],
+     "nota": "Il sangue accumulato negli atri entra di colpo nei ventricoli: nel primo terzo della diastole avviene gran parte del riempimento. Poi il flusso rallenta (diastasi) e arriva solo il sangue che torna dalle vene."
+    },
+    {
+     "da": [
+      "diastasi"
+     ],
+     "a": [
+      "sistole atriale"
+     ],
+     "enzima": "nodo senoatriale",
+     "entra": [],
+     "esce": [],
+     "nota": "Il nodo senoatriale fa partire un nuovo impulso e gli atri si contraggono: aggiungono circa il 20% del riempimento a riposo, di più quando il cuore batte veloce. Il ciclo ricomincia."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Sistole: contrazione isovolumetrica (tutte le valvole chiuse) → eiezione (aortica e polmonare aperte)",
+    "Diastole: rilasciamento isovolumetrico (tutte chiuse) → riempimento (mitrale e tricuspide aperte)",
+    "Primo tono = chiusura di mitrale e tricuspide; secondo tono = chiusura di aortica e polmonare",
+    "Gittata sistolica circa 70 mL; gittata cardiaca = gittata sistolica × frequenza (circa 5 L/min a riposo)"
+   ],
+   "dopo": {
+    "titolo": "Come il cuore cambia quanto pompa",
+    "strade": [
+     {
+      "condizione": "Torna più sangue al cuore",
+      "da": "ritorno venoso",
+      "a": "gittata sistolica",
+      "enzima": "legge di Frank-Starling",
+      "entra": [],
+      "esce": [],
+      "nota": "Più il ventricolo si riempie, più le sue fibre vengono stirate e più forte si contraggono: il cuore pompa tutto il sangue che riceve.",
+      "prossimo": "apparato cardiovascolare"
+     },
+     {
+      "condizione": "Simpatico attivo (sforzo, paura, emorragia)",
+      "da": "noradrenalina",
+      "a": "frequenza cardiaca",
+      "enzima": "recettori β1",
+      "entra": [],
+      "esce": [],
+      "nota": "La noradrenalina sui recettori β1 accelera il nodo senoatriale, velocizza la conduzione e rende la contrazione più forte. A frequenze alte si accorcia soprattutto la diastole.",
+      "prossimo": "regolazione della pressione arteriosa"
+     },
+     {
+      "condizione": "Parasimpatico attivo (riposo)",
+      "da": "acetilcolina",
+      "a": "frequenza cardiaca",
+      "enzima": "nervo vago",
+      "entra": [],
+      "esce": [],
+      "nota": "Il nervo vago libera acetilcolina sui recettori muscarinici M2 del nodo senoatriale e del nodo atrioventricolare: il cuore rallenta. A riposo prevale il tono del vago."
+     },
+     {
+      "condizione": "Da dove parte il segnale di ogni battito",
+      "da": "nodo senoatriale",
+      "a": "eccitazione dei ventricoli",
+      "enzima": "nodo atrioventricolare",
+      "entra": [],
+      "esce": [],
+      "nota": "Le cellule del nodo senoatriale si depolarizzano da sole fino alla soglia e fanno partire un potenziale d'azione, che si diffonde agli atri, rallenta nel nodo atrioventricolare e poi corre nei ventricoli.",
+      "prossimo": "potenziale d'azione"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "Ascoltare e registrare il ciclo cardiaco",
+     "voci": [
+      [
+       "I toni del cuore (fonendoscopio)",
+       [
+        "primo tono cardiaco",
+        "secondo tono cardiaco"
+       ]
+      ],
+      [
+       "Rumori da valvole malate",
+       [
+        "soffi cardiaci"
+       ]
+      ],
+      [
+       "Il tracciato elettrico",
+       [
+        "elettrocardiogramma (ECG)"
+       ]
+      ],
+      [
+       "Farmaci per i disturbi del ritmo",
+       [
+        "antiaritmici"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "termoregolazione": {
+   "titolo": "Termoregolazione: come il corpo tiene la temperatura a circa 37 °C",
+   "dove": "Termocettori della pelle e dell'ipotalamo, ipotalamo (centro di controllo), vasi della pelle, ghiandole sudoripare, muscoli scheletrici, grasso bruno, tiroide",
+   "inizio": "variazione della temperatura",
+   "intro": "La temperatura interna del corpo resta vicina a 37 °C anche se fuori fa freddo o caldo. L'ipotalamo funziona come un termostato: riceve le informazioni dai sensori della temperatura, le confronta con il valore desiderato (set point) e comanda le risposte. Con il freddo il corpo conserva e produce calore; con il caldo lo disperde, soprattutto con la pelle e il sudore.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Sensori e termostato"
+    },
+    {
+     "da": 3,
+     "nome": "Se fa freddo: conservare e produrre calore"
+    },
+    {
+     "da": 7,
+     "nome": "Se fa caldo: disperdere calore"
+    },
+    {
+     "da": 9,
+     "nome": "Ritorno all'equilibrio"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "variazione della temperatura"
+     ],
+     "a": [
+      "segnali dei termocettori"
+     ],
+     "enzima": "termocettori",
+     "entra": [],
+     "esce": [],
+     "nota": "I termocettori della pelle sentono il freddo e il caldo dell'ambiente; neuroni sensibili alla temperatura nell'ipotalamo sentono la temperatura del sangue, cioè quella interna."
+    },
+    {
+     "da": [
+      "segnali dei termocettori"
+     ],
+     "a": [
+      "punto di regolazione (set point)"
+     ],
+     "enzima": "ipotalamo",
+     "entra": [],
+     "esce": [],
+     "limitante": true,
+     "nota": "L'area preottica dell'ipotalamo confronta la temperatura con il set point (circa 37 °C) e decide le risposte: le attiva in proporzione a quanto la temperatura si allontana dal valore desiderato."
+    },
+    {
+     "da": [
+      "punto di regolazione (set point)"
+     ],
+     "a": [
+      "vasocostrizione cutanea"
+     ],
+     "enzima": "sistema nervoso autonomo",
+     "entra": [],
+     "esce": [],
+     "nota": "Con il freddo il simpatico stringe i vasi della pelle: arriva meno sangue caldo in superficie e si perde meno calore. La pelle diventa pallida e fredda, mentre l'interno resta caldo."
+    },
+    {
+     "da": [
+      "punto di regolazione (set point)"
+     ],
+     "a": [
+      "brivido"
+     ],
+     "enzima": "muscolo scheletrico",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "calore"
+     ],
+     "nota": "Se non basta, l'ipotalamo fa contrarre i muscoli in modo involontario e ritmico: è il brivido. Il lavoro muscolare non produce movimento utile ma tanto calore, e può aumentare di alcune volte la produzione di calore."
+    },
+    {
+     "da": [
+      "punto di regolazione (set point)"
+     ],
+     "a": [
+      "termogenesi senza brivido"
+     ],
+     "enzima": "termogenina (UCP1)",
+     "entra": [
+      "noradrenalina"
+     ],
+     "esce": [
+      "calore"
+     ],
+     "nota": "La noradrenalina del simpatico attiva il grasso bruno: la termogenina fa rientrare i protoni nel mitocondrio senza fare ATP e l'energia diventa calore. È molto importante nel neonato."
+    },
+    {
+     "da": [
+      "punto di regolazione (set point)"
+     ],
+     "a": [
+      "tiroxina (T4)"
+     ],
+     "enzima": "tiroide",
+     "entra": [],
+     "esce": [],
+     "nota": "Con un freddo che dura a lungo l'ipotalamo libera più TRH e la tiroide più ormoni: il metabolismo di tutte le cellule accelera e produce più calore. È una risposta lenta (settimane)."
+    },
+    {
+     "da": [
+      "punto di regolazione (set point)"
+     ],
+     "a": [
+      "vasodilatazione cutanea"
+     ],
+     "enzima": "sistema nervoso autonomo",
+     "entra": [],
+     "esce": [
+      "calore"
+     ],
+     "nota": "Con il caldo il simpatico smette di stringere i vasi della pelle e, in gran parte della pelle, fibre simpatiche colinergiche li dilatano attivamente. Arriva più sangue caldo in superficie e il calore passa all'ambiente per irraggiamento, conduzione e convezione. La pelle diventa rossa e calda."
+    },
+    {
+     "da": [
+      "punto di regolazione (set point)"
+     ],
+     "a": [
+      "sudorazione"
+     ],
+     "enzima": "ghiandola sudoripara",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [
+      "calore"
+     ],
+     "nota": "Le ghiandole sudoripare eccrine sono comandate da fibre simpatiche che liberano acetilcolina. Il sudore evapora e porta via calore (circa 0,58 kcal per ogni grammo d'acqua). Quando fuori fa più caldo che sulla pelle, è l'unico modo per perdere calore."
+    },
+    {
+     "da": [
+      "vasocostrizione cutanea",
+      "brivido",
+      "termogenesi senza brivido",
+      "vasodilatazione cutanea",
+      "sudorazione"
+     ],
+     "a": [
+      "temperatura corporea normale"
+     ],
+     "enzima": "feedback negativo",
+     "entra": [],
+     "esce": [],
+     "nota": "Quando la temperatura torna vicina al set point, l'ipotalamo spegne le risposte. Anche il comportamento aiuta molto: coprirsi, cercare l'ombra, bere, muoversi meno o di più."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Sensori (pelle e ipotalamo) → ipotalamo (set point circa 37 °C) → risposte",
+    "Freddo: vasocostrizione della pelle, brivido, grasso bruno, ormoni tiroidei",
+    "Caldo: vasodilatazione della pelle e sudore (evaporazione)",
+    "Febbre: il set point viene alzato; ipertermia: il set point è normale ma il calore non riesce a uscire"
+   ],
+   "dopo": {
+    "titolo": "Quando il termostato viene spostato o non basta",
+    "strade": [
+     {
+      "condizione": "Infezione o infiammazione",
+      "da": "pirogeni",
+      "a": "febbre",
+      "enzima": "prostaglandina E₂",
+      "entra": [],
+      "esce": [],
+      "nota": "Le citochine (IL-1, IL-6, TNF-α) fanno produrre prostaglandina E₂ vicino all'ipotalamo, e il set point sale. Il corpo «sente freddo» rispetto al nuovo valore: brividi e vasocostrizione finché la temperatura non lo raggiunge. Gli antipiretici bloccano la produzione di prostaglandine.",
+      "prossimo": "infiammazione acuta"
+     },
+     {
+      "condizione": "Caldo estremo, umidità alta o sforzo intenso",
+      "da": "temperatura corporea alta",
+      "a": "colpo di calore",
+      "enzima": "evaporazione",
+      "entra": [],
+      "esce": [],
+      "nota": "Con l'aria molto umida il sudore non evapora e il calore non esce. Il set point è normale, ma la temperatura sale oltre i 40 °C e il cervello comincia a soffrire: è un'emergenza."
+     },
+     {
+      "condizione": "La pelle: l'organo che scambia calore",
+      "da": "vasodilatazione cutanea",
+      "a": "sudorazione",
+      "enzima": "ghiandola sudoripara",
+      "entra": [
+       "H₂O"
+      ],
+      "esce": [
+       "calore"
+      ],
+      "nota": "Vasi della pelle, ghiandole sudoripare e grasso sotto la pelle sono gli strumenti principali della termoregolazione; nella pelle ci sono anche i termocettori.",
+      "prossimo": "apparato tegumentario"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "Come il corpo perde calore",
+     "voci": [
+      [
+       "Raggi infrarossi verso l'ambiente",
+       [
+        "irraggiamento"
+       ]
+      ],
+      [
+       "Contatto con oggetti, aria o acqua",
+       [
+        "conduzione e convezione"
+       ]
+      ],
+      [
+       "Il sudore che evapora",
+       [
+        "evaporazione"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Febbre e farmaci",
+     "voci": [
+      [
+       "Chi alza il termostato",
+       [
+        "pirogeni",
+        "prostaglandina E₂"
+       ]
+      ],
+      [
+       "Farmaci che lo riabbassano",
+       [
+        "antipiretici"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "formazione dell'urina": {
+   "titolo": "Formazione dell'urina: filtrazione, riassorbimento e secrezione nel nefrone",
+   "dove": "Rene: glomerulo e capsula di Bowman, tubulo prossimale, ansa di Henle, tubulo distale, tubulo e dotto collettore",
+   "inizio": "arteriola afferente",
+   "intro": "L'urina si forma con tre processi. La filtrazione: il glomerulo fa passare nel nefrone acqua e piccole molecole del plasma (circa 180 litri al giorno). Il riassorbimento: i tubuli riportano nel sangue quasi tutto (oltre il 99% dell'acqua). La secrezione: i tubuli aggiungono H⁺, K⁺ e farmaci da eliminare. Escrezione = filtrazione − riassorbimento + secrezione. Alla fine restano 1-2 litri di urina al giorno, più o meno concentrata a seconda dell'ADH.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Filtrazione: dal sangue al filtrato"
+    },
+    {
+     "da": 3,
+     "nome": "Riassorbimento e secrezione in serie"
+    },
+    {
+     "da": 7,
+     "nome": "Regolazione finale: aldosterone e ADH"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "arteriola afferente"
+     ],
+     "a": [
+      "glomerulo"
+     ],
+     "enzima": "autoregolazione renale",
+     "entra": [],
+     "esce": [],
+     "limitante": true,
+     "nota": "I reni ricevono circa un quinto della gittata cardiaca. L'arteriola afferente si stringe quando la pressione sale (risposta miogena) e quando la macula densa sente troppo NaCl (feedback tubulo-glomerulare): così la filtrazione resta quasi costante."
+    },
+    {
+     "da": [
+      "glomerulo"
+     ],
+     "a": [
+      "filtrato glomerulare"
+     ],
+     "enzima": "barriera di filtrazione glomerulare",
+     "entra": [
+      "H₂O",
+      "Na⁺",
+      "K⁺",
+      "glucosio",
+      "amminoacidi",
+      "urea"
+     ],
+     "esce": [],
+     "nota": "La pressione nei capillari del glomerulo spinge il plasma nella capsula di Bowman; la pressione nella capsula e quella oncotica delle proteine si oppongono. Passano acqua e piccole molecole, non le cellule né quasi le proteine. Si filtrano circa 125 mL al minuto (VFG)."
+    },
+    {
+     "da": [
+      "filtrato glomerulare"
+     ],
+     "a": [
+      "filtrato isosmotico"
+     ],
+     "enzima": "tubulo contorto prossimale",
+     "entra": [
+      "H⁺",
+      "anioni e cationi organici"
+     ],
+     "esce": [
+      "Na⁺",
+      "H₂O",
+      "glucosio",
+      "amminoacidi",
+      "bicarbonato (HCO₃⁻)"
+     ],
+     "nota": "Il tubulo prossimale riassorbe circa due terzi di sodio e acqua e normalmente tutto il glucosio (con l'SGLT2) e gli amminoacidi. L'acqua segue il sale, quindi il filtrato resta isosmotico al plasma. Secerne H⁺ e molti farmaci (anioni e cationi organici)."
+    },
+    {
+     "da": [
+      "filtrato isosmotico"
+     ],
+     "a": [
+      "filtrato concentrato"
+     ],
+     "enzima": "acquaporina 1",
+     "entra": [],
+     "esce": [
+      "H₂O"
+     ],
+     "nota": "Il ramo discendente dell'ansa di Henle lascia passare l'acqua ma poco sale. Scendendo nella midollare, sempre più salata, l'acqua esce e il filtrato diventa concentrato."
+    },
+    {
+     "da": [
+      "filtrato concentrato"
+     ],
+     "a": [
+      "filtrato diluito"
+     ],
+     "enzima": "cotrasportatore Na⁺-K⁺-2Cl⁻ (NKCC2)",
+     "entra": [],
+     "esce": [
+      "Na⁺",
+      "K⁺",
+      "Cl⁻"
+     ],
+     "nota": "Il ramo ascendente spesso pompa fuori sale (circa un quarto del sodio filtrato) ma è impermeabile all'acqua. Il sale rende salata la midollare (moltiplicatore in controcorrente) e il filtrato che risale diventa diluito."
+    },
+    {
+     "da": [
+      "filtrato diluito"
+     ],
+     "a": [
+      "tubulo collettore"
+     ],
+     "enzima": "cotrasportatore Na⁺-Cl⁻ (NCC)",
+     "entra": [],
+     "esce": [
+      "Na⁺",
+      "Cl⁻",
+      "Ca²⁺"
+     ],
+     "nota": "Il tubulo contorto distale riassorbe un'altra piccola parte di NaCl e, sotto il controllo del paratormone, il calcio. Anche questo tratto è poco permeabile all'acqua."
+    },
+    {
+     "da": [
+      "tubulo collettore"
+     ],
+     "a": [
+      "dotto collettore"
+     ],
+     "enzima": "aldosterone",
+     "entra": [
+      "K⁺",
+      "H⁺"
+     ],
+     "esce": [
+      "Na⁺"
+     ],
+     "nota": "Nelle cellule principali l'aldosterone aumenta i canali del sodio (ENaC) e la pompa Na⁺/K⁺: il Na⁺ viene riassorbito e il K⁺ secreto. Le cellule intercalate secernono H⁺ e aiutano a regolare l'equilibrio acido-base."
+    },
+    {
+     "da": [
+      "dotto collettore"
+     ],
+     "a": [
+      "urina"
+     ],
+     "enzima": "ADH (vasopressina)",
+     "entra": [],
+     "esce": [
+      "H₂O",
+      "urea"
+     ],
+     "nota": "Con l'ADH il dotto collettore inserisce acquaporine 2 e l'acqua esce verso la midollare salata: l'urina diventa scarsa e concentrata (fino a circa 1200 mOsm/L). Senza ADH l'acqua resta nel dotto e l'urina è abbondante e diluita (fino a circa 50 mOsm/L)."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Filtrazione: circa 125 mL/min, 180 litri al giorno di filtrato senza cellule né proteine",
+    "Riassorbimento: prossimale circa 2/3 di Na⁺ e acqua e tutto il glucosio; ansa circa 1/4 del Na⁺; distale e collettore il resto",
+    "Secrezione: H⁺, K⁺, farmaci e acidi organici passano dal sangue al tubulo",
+    "Aldosterone (sodio e potassio) e ADH (acqua) decidono la composizione finale: 1-2 litri di urina al giorno"
+   ],
+   "dopo": {
+    "titolo": "Collegamenti con gli altri percorsi",
+    "strade": [
+     {
+      "condizione": "Pressione bassa o poco sodio",
+      "da": "pressione arteriosa bassa",
+      "a": "renina",
+      "enzima": "cellule iuxtaglomerulari",
+      "entra": [],
+      "esce": [],
+      "nota": "Quando la macula densa sente poco NaCl o la pressione nell'arteriola afferente cala, il rene libera renina e trattiene sodio e acqua.",
+      "prossimo": "sistema renina-angiotensina"
+     },
+     {
+      "condizione": "Dopo il rene",
+      "da": "urina",
+      "a": "vescica",
+      "enzima": "ureteri",
+      "entra": [],
+      "esce": [],
+      "nota": "L'urina si raccoglie nella pelvi renale e scende lungo gli ureteri fino alla vescica.",
+      "prossimo": "apparato urinario"
+     },
+     {
+      "condizione": "Il rene regola anche il pH del sangue",
+      "da": "H⁺",
+      "a": "urina",
+      "enzima": "dotto collettore",
+      "entra": [],
+      "esce": [
+       "bicarbonato (HCO₃⁻)"
+      ],
+      "nota": "Il tubulo prossimale recupera quasi tutto il bicarbonato filtrato; le cellule intercalate del dotto collettore secernono H⁺, che escono legati all'ammoniaca (NH₄⁺) e ai fosfati, mentre nuovo bicarbonato torna nel sangue.",
+      "prossimo": "equilibrio acido-base"
+     },
+     {
+      "condizione": "Quando la pressione sale",
+      "da": "pressione arteriosa alta",
+      "a": "eliminazione di sodio e acqua",
+      "enzima": "rene",
+      "entra": [],
+      "esce": [],
+      "nota": "Con la pressione alta il rene riassorbe meno sodio (natriuresi da pressione) e calano renina e aldosterone: il volume del sangue scende e la pressione torna normale.",
+      "prossimo": "regolazione della pressione arteriosa"
+     },
+     {
+      "condizione": "Farmaci eliminati dal rene",
+      "da": "anioni e cationi organici",
+      "a": "urina",
+      "enzima": "tubulo contorto prossimale",
+      "entra": [],
+      "esce": [],
+      "nota": "Molti farmaci sono filtrati e secreti dal tubulo prossimale. Se la filtrazione glomerulare cala si accumulano e la dose va ridotta.",
+      "prossimo": "farmacocinetica"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "Diuretici: dove agiscono nel nefrone",
+     "voci": [
+      [
+       "Tubulo prossimale (eliminano glucosio e un po' di sodio)",
+       [
+        "inibitori dell'SGLT2 (gliflozine)"
+       ]
+      ],
+      [
+       "Ansa di Henle (i più potenti)",
+       [
+        "diuretici dell'ansa"
+       ]
+      ],
+      [
+       "Tubulo distale",
+       [
+        "tiazidici"
+       ]
+      ],
+      [
+       "Dotto collettore (risparmiano il potassio)",
+       [
+        "spironolattone"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Misurare il lavoro dei reni",
+     "voci": [
+      [
+       "Quanto filtrano i glomeruli",
+       [
+        "velocità di filtrazione glomerulare (VFG)"
+       ]
+      ],
+      [
+       "L'esame del sangue più usato",
+       [
+        "creatinina"
+       ]
+      ],
+      [
+       "Quanto plasma viene «ripulito» di una sostanza",
+       [
+        "clearance renale"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "coagulazione del sangue": {
+   "titolo": "Coagulazione del sangue: dal vaso rotto al coagulo, e poi alla sua rimozione",
+   "dove": "Nel punto in cui un vaso sanguigno si rompe: parete del vaso, piastrine e proteine del plasma (quasi tutte prodotte dal fegato)",
+   "inizio": "vaso sanguigno lesionato",
+   "intro": "Quando un vaso si rompe, il corpo ferma il sangue in tre tempi. Prima il vaso si stringe e le piastrine formano un tappo (emostasi primaria). Poi una catena di proteine del plasma, i fattori della coagulazione, si attivano l'una con l'altra e producono la trombina, che trasforma il fibrinogeno in una rete di fibrina: il tappo diventa un coagulo solido. Quando il vaso è riparato, la plasmina scioglie il coagulo (fibrinolisi).",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Emostasi primaria: vaso che si stringe e tappo di piastrine"
+    },
+    {
+     "da": 4,
+     "nome": "Coagulazione: la cascata dei fattori produce trombina e fibrina"
+    },
+    {
+     "da": 10,
+     "nome": "Fibrinolisi: il coagulo viene sciolto"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "vaso sanguigno lesionato"
+     ],
+     "a": [
+      "collagene sottoendoteliale"
+     ],
+     "enzima": "spasmo vascolare",
+     "entra": [],
+     "esce": [],
+     "nota": "Subito dopo la lesione il muscolo liscio della parete si contrae e il vaso si stringe: esce meno sangue. Dove l'endotelio manca restano scoperti il collagene e il fattore tissutale, che danno il via a tutto il resto."
+    },
+    {
+     "da": [
+      "collagene sottoendoteliale"
+     ],
+     "a": [
+      "piastrine attivate"
+     ],
+     "enzima": "fattore di von Willebrand",
+     "entra": [
+      "piastrine"
+     ],
+     "esce": [
+      "ADP",
+      "trombossano A₂ (TXA₂)"
+     ],
+     "nota": "Il fattore di von Willebrand fa da ponte tra il collagene e il recettore GPIb delle piastrine: le piastrine si attaccano (adesione). Poi cambiano forma, emettono prolungamenti e liberano i loro granuli con ADP, trombossano A₂, serotonina e Ca²⁺."
+    },
+    {
+     "da": [
+      "piastrine attivate"
+     ],
+     "a": [
+      "tappo piastrinico"
+     ],
+     "enzima": "glicoproteina IIb/IIIa",
+     "entra": [
+      "fibrinogeno"
+     ],
+     "esce": [],
+     "nota": "ADP e trombossano A₂ richiamano e attivano altre piastrine. Sulla loro superficie si accende il recettore GPIIb/IIIa, che lega il fibrinogeno e unisce le piastrine tra loro (aggregazione). Il tappo chiude i piccoli buchi, ma da solo è fragile."
+    },
+    {
+     "da": [
+      "fattore tissutale"
+     ],
+     "a": [
+      "fattore Xa"
+     ],
+     "enzima": "fattore VIIa",
+     "entra": [
+      "fattore X",
+      "Ca²⁺"
+     ],
+     "esce": [],
+     "nota": "Innesco (la vecchia «via estrinseca»): il fattore tissutale, esposto dalla lesione, lega il fattore VII e lo attiva. Il complesso fattore tissutale-VIIa attiva il fattore X (e anche il IX). Serve il Ca²⁺, che lega i fattori ai fosfolipidi delle membrane."
+    },
+    {
+     "da": [
+      "fattore Xa"
+     ],
+     "a": [
+      "trombina"
+     ],
+     "enzima": "protrombinasi (Xa-Va)",
+     "entra": [
+      "protrombina (fattore II)",
+      "Ca²⁺"
+     ],
+     "esce": [],
+     "nota": "Il fattore Xa, insieme al fattore Va, taglia la protrombina e forma la trombina. All'inizio se ne forma poca, ma basta per accendere l'amplificazione."
+    },
+    {
+     "da": [
+      "trombina"
+     ],
+     "a": [
+      "tenasi intrinseca (IXa-VIIIa)"
+     ],
+     "enzima": "piastrine attivate",
+     "entra": [
+      "fattore VIII",
+      "fattore IX"
+     ],
+     "esce": [],
+     "nota": "Amplificazione: la poca trombina attiva le piastrine e i fattori V, VIII e XI. Sulla membrana delle piastrine attivate il fattore IXa si unisce al VIIIa: è la tenasi intrinseca. Qui mancano il fattore VIII nell'emofilia A e il IX nell'emofilia B."
+    },
+    {
+     "da": [
+      "tenasi intrinseca (IXa-VIIIa)"
+     ],
+     "a": [
+      "trombina"
+     ],
+     "enzima": "protrombinasi (Xa-Va)",
+     "entra": [
+      "fattore X",
+      "protrombina (fattore II)"
+     ],
+     "esce": [],
+     "limitante": true,
+     "nota": "Propagazione: la tenasi intrinseca attiva moltissimo fattore X, e la protrombinasi sulla superficie delle piastrine produce un'esplosione di trombina. È la tappa che decide quanto coagulo si forma: la frenano l'antitrombina e il sistema della proteina C."
+    },
+    {
+     "da": [
+      "fibrinogeno"
+     ],
+     "a": [
+      "fibrina"
+     ],
+     "enzima": "trombina",
+     "entra": [],
+     "esce": [],
+     "nota": "La trombina taglia il fibrinogeno (una proteina solubile del plasma) in monomeri di fibrina, che si attaccano tra loro in lunghi fili e formano una rete intorno alle piastrine e ai globuli rossi."
+    },
+    {
+     "da": [
+      "fibrina"
+     ],
+     "a": [
+      "coagulo stabile"
+     ],
+     "enzima": "fattore XIIIa",
+     "entra": [
+      "Ca²⁺"
+     ],
+     "esce": [],
+     "irreversibile": true,
+     "nota": "Il fattore XIIIa, attivato anch'esso dalla trombina, lega i fili di fibrina tra loro con legami covalenti: la rete diventa solida e resistente. Poi le piastrine si contraggono e il coagulo si ritira (retrazione), spremendo fuori il siero e avvicinando i bordi della ferita."
+    },
+    {
+     "da": [
+      "plasminogeno"
+     ],
+     "a": [
+      "plasmina"
+     ],
+     "enzima": "attivatore tissutale del plasminogeno (tPA)",
+     "entra": [],
+     "esce": [],
+     "nota": "Mentre il vaso guarisce, l'endotelio libera il tPA. Il tPA lavora soprattutto sul plasminogeno già legato alla fibrina, così la plasmina si forma proprio dentro il coagulo e non in tutto il sangue."
+    },
+    {
+     "da": [
+      "coagulo stabile"
+     ],
+     "a": [
+      "D-dimero"
+     ],
+     "enzima": "plasmina",
+     "entra": [],
+     "esce": [],
+     "nota": "La plasmina taglia la fibrina in frammenti (prodotti di degradazione della fibrina). Il D-dimero nasce solo dalla fibrina già stabilizzata dal fattore XIII: se è nel sangue, da qualche parte si è formato e si sta sciogliendo un coagulo."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Emostasi primaria: vaso che si stringe + tappo di piastrine (fattore di von Willebrand, GPIIb/IIIa)",
+    "Coagulazione: fattore tissutale-VIIa → Xa → trombina → fibrinogeno diventa fibrina (stabilizzata dal XIIIa)",
+    "Freni naturali: antitrombina, proteina C e S, endotelio sano",
+    "Fibrinolisi: tPA → plasmina → la fibrina si scioglie (D-dimero)"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "I freni naturali della coagulazione",
+     "voci": [
+      [
+       "Bloccano trombina e Xa",
+       [
+        "antitrombina"
+       ]
+      ],
+      [
+       "Spengono i fattori Va e VIIIa",
+       [
+        "proteina C e proteina S"
+       ]
+      ],
+      [
+       "Serve per produrre i fattori II, VII, IX e X",
+       [
+        "vitamina K"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Farmaci e malattie da conoscere",
+     "voci": [
+      [
+       "Antiaggreganti (frenano le piastrine)",
+       [
+        "acido acetilsalicilico (aspirina)"
+       ]
+      ],
+      [
+       "Anticoagulanti",
+       [
+        "eparina",
+        "warfarin"
+       ]
+      ],
+      [
+       "Si sanguina troppo",
+       [
+        "emofilia"
+       ]
+      ],
+      [
+       "Si coagula troppo",
+       [
+        "trombosi venosa profonda"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Da dove vengono le piastrine e quando il coagulo è un problema",
+    "strade": [
+     {
+      "condizione": "Le piastrine nascono nel midollo osseo",
+      "da": "progenitore mieloide comune",
+      "a": "piastrine",
+      "enzima": "trombopoietina (TPO)",
+      "entra": [],
+      "esce": [],
+      "nota": "I megacariociti del midollo si frammentano in migliaia di piastrine, che vivono circa 8-10 giorni. Se le piastrine sono poche si sanguina da pelle e mucose.",
+      "prossimo": "emopoiesi"
+     },
+     {
+      "condizione": "Coagulo in un vaso intatto (trombosi)",
+      "da": "coagulo stabile",
+      "a": "trombosi venosa profonda",
+      "enzima": "trombina",
+      "entra": [],
+      "esce": [
+       "D-dimero"
+      ],
+      "nota": "Sangue fermo, parete danneggiata e sangue che coagula troppo (triade di Virchow) fanno formare un trombo. Se un pezzo si stacca può chiudere un'arteria del polmone (embolia polmonare).",
+      "prossimo": "apparato cardiovascolare"
+     }
+    ]
+   }
+  },
+  "emopoiesi": {
+   "titolo": "Emopoiesi: dalla cellula staminale ai globuli rossi",
+   "dove": "Midollo osseo rosso: nell'adulto soprattutto vertebre, sterno, coste, bacino e parte alta di femore e omero (nel feto anche fegato e milza)",
+   "inizio": "cellula staminale ematopoietica",
+   "intro": "Tutte le cellule del sangue nascono nel midollo osseo da un'unica cellula madre, la cellula staminale ematopoietica. Questa si rinnova e intanto produce progenitori sempre più specializzati: globuli rossi, piastrine e globuli bianchi. Seguiamo la strada dei globuli rossi, la più abbondante: è comandata dall'eritropoietina del rene e ha bisogno di ferro, vitamina B₁₂ e acido folico.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Dalla staminale al progenitore: la scelta della linea"
+    },
+    {
+     "da": 3,
+     "nome": "Maturazione nel midollo: si fa l'emoglobina e si perde il nucleo"
+    },
+    {
+     "da": 6,
+     "nome": "Nel sangue: vita e fine del globulo rosso"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "cellula staminale ematopoietica"
+     ],
+     "a": [
+      "progenitore mieloide comune"
+     ],
+     "enzima": "citochine",
+     "entra": [],
+     "esce": [],
+     "nota": "La staminale si divide: una figlia resta staminale (autorinnovamento), l'altra si specializza. Le citochine del midollo decidono la strada: progenitore linfoide (linfociti) o progenitore mieloide (globuli rossi, piastrine, granulociti, monociti)."
+    },
+    {
+     "da": [
+      "progenitore mieloide comune"
+     ],
+     "a": [
+      "proeritroblasto"
+     ],
+     "enzima": "eritropoietina (EPO)",
+     "entra": [],
+     "esce": [],
+     "limitante": true,
+     "nota": "Quando nei tessuti arriva poco ossigeno, il rene libera eritropoietina. L'EPO salva dalla morte i progenitori eritroidi e li fa moltiplicare e maturare: più EPO, più globuli rossi. È la tappa che regola tutta la produzione."
+    },
+    {
+     "da": [
+      "proeritroblasto"
+     ],
+     "a": [
+      "eritroblasti"
+     ],
+     "enzima": "divisione cellulare (mitosi)",
+     "entra": [
+      "vitamina B₁₂",
+      "acido folico"
+     ],
+     "esce": [],
+     "nota": "Il proeritroblasto si divide più volte. Per copiare il DNA servono vitamina B₁₂ e acido folico: se mancano, le cellule crescono ma non riescono a dividersi e restano grandi (anemia megaloblastica)."
+    },
+    {
+     "da": [
+      "eritroblasti"
+     ],
+     "a": [
+      "eritroblasto ortocromatico"
+     ],
+     "enzima": "ALA sintasi",
+     "entra": [
+      "ferro",
+      "succinil-CoA",
+      "glicina"
+     ],
+     "esce": [
+      "emoglobina"
+     ],
+     "nota": "Gli eritroblasti riempiono il citoplasma di emoglobina. La sintesi dell'eme comincia nel mitocondrio, dove la ALA sintasi unisce succinil-CoA e glicina; alla fine si inserisce il ferro. Intanto il nucleo diventa sempre più piccolo e scuro."
+    },
+    {
+     "da": [
+      "eritroblasto ortocromatico"
+     ],
+     "a": [
+      "reticolocito"
+     ],
+     "enzima": "macrofagi",
+     "entra": [],
+     "esce": [],
+     "irreversibile": true,
+     "nota": "La cellula espelle il nucleo, che viene mangiato da un macrofago al centro dell'«isola» di eritroblasti. Resta il reticolocito, senza nucleo ma ancora con un po' di ribosomi."
+    },
+    {
+     "da": [
+      "reticolocito"
+     ],
+     "a": [
+      "globuli rossi"
+     ],
+     "enzima": "midollo osseo",
+     "entra": [],
+     "esce": [],
+     "nota": "Il reticolocito attraversa la parete dei sinusoidi del midollo ed entra nel sangue. In 1-2 giorni perde i ribosomi e diventa un globulo rosso maturo: un disco biconcavo, flessibile, pieno di emoglobina, senza nucleo e senza mitocondri (vive di glicolisi)."
+    },
+    {
+     "da": [
+      "globuli rossi"
+     ],
+     "a": [
+      "bilirubina"
+     ],
+     "enzima": "milza",
+     "entra": [],
+     "esce": [
+      "ferro",
+      "amminoacidi"
+     ],
+     "nota": "Dopo circa 120 giorni il globulo rosso è vecchio e rigido. I macrofagi della milza (e del fegato) lo distruggono: le globine diventano amminoacidi, il ferro torna al midollo legato alla transferrina, l'eme diventa bilirubina, che il fegato elimina con la bile."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "Cellula staminale → progenitore mieloide → proeritroblasto → eritroblasti → reticolocito → globulo rosso",
+    "Comando: poco O₂ nei tessuti → il rene libera eritropoietina → più globuli rossi (feedback negativo)",
+    "Materie prime: ferro (emoglobina), vitamina B₁₂ e acido folico (DNA)",
+    "Il globulo rosso vive circa 120 giorni; la milza lo elimina e ricicla il ferro"
+   ],
+   "dopo": {
+    "titolo": "Le altre cellule del sangue",
+    "strade": [
+     {
+      "condizione": "Linea delle piastrine",
+      "da": "progenitore mieloide comune",
+      "a": "piastrine",
+      "enzima": "trombopoietina (TPO)",
+      "entra": [],
+      "esce": [],
+      "nota": "Il progenitore diventa megacariocita, una cellula gigante con molti nuclei, che si frammenta in migliaia di piastrine. La trombopoietina, prodotta soprattutto dal fegato, ne comanda la produzione.",
+      "prossimo": "coagulazione del sangue"
+     },
+     {
+      "condizione": "Linea dei granulociti e dei monociti",
+      "da": "progenitore mieloide comune",
+      "a": "neutrofili",
+      "enzima": "G-CSF",
+      "entra": [],
+      "esce": [],
+      "nota": "Dallo stesso progenitore nascono neutrofili, eosinofili, basofili e monociti (che nei tessuti diventano macrofagi). Il G-CSF fa produrre e liberare i neutrofili; nelle infezioni la loro produzione aumenta molto.",
+      "prossimo": "risposta immunitaria innata"
+     },
+     {
+      "condizione": "Linea linfoide",
+      "da": "cellula staminale ematopoietica",
+      "a": "linfocita B",
+      "enzima": "midollo osseo",
+      "entra": [],
+      "esce": [],
+      "nota": "Il progenitore linfoide dà i linfociti B (maturano nel midollo), i linfociti T (maturano nel timo) e le cellule NK.",
+      "prossimo": "sistema linfatico e immunitario"
+     },
+     {
+      "condizione": "Il lavoro del globulo rosso",
+      "da": "globuli rossi",
+      "a": "ossiemoglobina",
+      "enzima": "emoglobina",
+      "entra": [
+       "O₂"
+      ],
+      "esce": [],
+      "nota": "Il globulo rosso maturo è quasi solo un contenitore di emoglobina: nei polmoni lega l'O₂, nei tessuti lo cede e aiuta a riportare la CO₂ ai polmoni.",
+      "prossimo": "trasporto dei gas nel sangue"
+     },
+     {
+      "condizione": "Come si costruisce l'eme",
+      "da": "succinil-CoA",
+      "a": "eme",
+      "enzima": "ALA sintasi",
+      "entra": [
+       "glicina"
+      ],
+      "esce": [
+       "CO₂"
+      ],
+      "nota": "Otto enzimi, tra mitocondrio e citoplasma, costruiscono l'anello dell'eme; l'ultimo, la ferrochelatasi, inserisce il Fe²⁺. Il piombo blocca alcuni di questi enzimi.",
+      "prossimo": "sintesi dell'eme"
+     }
+    ]
+   },
+   "da_sapere": [
+    {
+     "titolo": "Cosa serve per fare i globuli rossi",
+     "voci": [
+      [
+       "Il segnale",
+       [
+        "eritropoietina (EPO)"
+       ]
+      ],
+      [
+       "Per l'emoglobina",
+       [
+        "ferro"
+       ]
+      ],
+      [
+       "Per dividersi (sintesi del DNA)",
+       [
+        "vitamina B₁₂",
+        "acido folico"
+       ]
+      ]
+     ]
+    },
+    {
+     "titolo": "Quando i globuli rossi sono pochi: le anemie",
+     "voci": [
+      [
+       "Che cos'è",
+       [
+        "anemia"
+       ]
+      ],
+      [
+       "Globuli rossi piccoli e pallidi",
+       [
+        "anemia sideropenica"
+       ]
+      ],
+      [
+       "Globuli rossi grandi",
+       [
+        "anemia megaloblastica"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "trasporto dei gas nel sangue": {
+   "titolo": "Trasporto dei gas nel sangue: l'ossigeno ai tessuti, la CO₂ ai polmoni",
+   "dove": "Sangue: plasma e globuli rossi, tra i capillari polmonari e i capillari dei tessuti",
+   "inizio": "alveoli",
+   "intro": "L'ossigeno si scioglie poco in acqua: per questo quasi tutto viaggia legato all'emoglobina dei globuli rossi. Nei tessuti l'emoglobina lo cede, tanto più facilmente quanto più il tessuto lavora (effetto Bohr). La CO₂ fa la strada inversa, soprattutto trasformata in bicarbonato. Questo percorso approfondisce la parte finale dell'apparato respiratorio.",
+   "fasi": [
+    {
+     "da": 1,
+     "nome": "Ossigeno: dai polmoni ai tessuti"
+    },
+    {
+     "da": 5,
+     "nome": "Anidride carbonica: dai tessuti ai polmoni"
+    }
+   ],
+   "passaggi": [
+    {
+     "da": [
+      "alveoli"
+     ],
+     "a": [
+      "O₂ disciolto nel plasma"
+     ],
+     "enzima": "membrana alveolo-capillare",
+     "entra": [
+      "O₂"
+     ],
+     "esce": [
+      "CO₂"
+     ],
+     "nota": "L'O₂ passa per diffusione dall'alveolo (pressione parziale circa 100 mmHg) al sangue venoso (circa 40 mmHg). Sciolto nel plasma ce n'è pochissimo, circa 0,3 mL ogni 100 mL di sangue: troppo poco per vivere."
+    },
+    {
+     "da": [
+      "O₂ disciolto nel plasma"
+     ],
+     "a": [
+      "ossiemoglobina"
+     ],
+     "enzima": "emoglobina",
+     "entra": [
+      "O₂"
+     ],
+     "esce": [],
+     "nota": "L'O₂ entra nei globuli rossi e si lega al ferro dell'eme. Il legame è cooperativo: ogni O₂ legato facilita il successivo, perciò la curva di saturazione ha la forma a S. A 100 mmHg l'emoglobina è satura per circa il 97-98%. Ogni grammo di emoglobina porta circa 1,34 mL di O₂: con 15 g/dL fanno circa 20 mL ogni 100 mL di sangue."
+    },
+    {
+     "da": [
+      "ossiemoglobina"
+     ],
+     "a": [
+      "capillari sistemici"
+     ],
+     "enzima": "cuore",
+     "entra": [],
+     "esce": [],
+     "nota": "Il cuore spinge il sangue arterioso in tutto il corpo. A riposo i tessuti ne prendono solo un quarto circa: il sangue venoso torna al cuore ancora saturo per circa il 75%, una riserva pronta per lo sforzo."
+    },
+    {
+     "da": [
+      "capillari sistemici"
+     ],
+     "a": [
+      "deossiemoglobina"
+     ],
+     "enzima": "effetto Bohr",
+     "entra": [
+      "2,3-bisfosfoglicerato (2,3-BPG)"
+     ],
+     "esce": [
+      "O₂"
+     ],
+     "limitante": true,
+     "nota": "Nei tessuti la PO₂ è bassa (circa 40 mmHg) e l'emoglobina cede O₂. Dove il tessuto lavora di più ci sono più CO₂, più H⁺ e più calore: la curva si sposta a destra e l'emoglobina cede ancora più O₂ (effetto Bohr). Anche il 2,3-BPG dei globuli rossi sposta la curva a destra. È la tappa che adatta la consegna di O₂ al bisogno."
+    },
+    {
+     "da": [
+      "CO₂"
+     ],
+     "a": [
+      "bicarbonato (HCO₃⁻)"
+     ],
+     "enzima": "anidrasi carbonica",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [
+      "H⁺"
+     ],
+     "nota": "La CO₂ prodotta dalle cellule entra nei globuli rossi. L'anidrasi carbonica la unisce all'acqua: si forma acido carbonico, che si divide subito in bicarbonato e H⁺. Così viaggia circa il 70% della CO₂; circa il 7% resta sciolta nel plasma."
+    },
+    {
+     "da": [
+      "deossiemoglobina"
+     ],
+     "a": [
+      "carbamminoemoglobina"
+     ],
+     "enzima": "effetto Haldane",
+     "entra": [
+      "CO₂",
+      "H⁺"
+     ],
+     "esce": [],
+     "nota": "L'emoglobina che ha ceduto l'O₂ lega meglio gli H⁺ (fa da tampone e il pH cambia poco) e lega la CO₂ ai suoi gruppi amminici: carbamminoemoglobina, circa il 20-30% della CO₂. Meno O₂ legato, più CO₂ trasportata: è l'effetto Haldane."
+    },
+    {
+     "da": [
+      "bicarbonato (HCO₃⁻)"
+     ],
+     "a": [
+      "plasma"
+     ],
+     "enzima": "scambiatore Cl⁻/HCO₃⁻ (banda 3)",
+     "entra": [
+      "Cl⁻"
+     ],
+     "esce": [],
+     "nota": "Il bicarbonato esce dal globulo rosso nel plasma e al suo posto entra uno ione cloruro (spostamento dei cloruri). Così il globulo rosso può continuare a produrre bicarbonato, e il plasma trasporta gran parte della CO₂."
+    },
+    {
+     "da": [
+      "plasma"
+     ],
+     "a": [
+      "alveoli"
+     ],
+     "enzima": "anidrasi carbonica",
+     "entra": [
+      "H⁺"
+     ],
+     "esce": [
+      "CO₂",
+      "H₂O"
+     ],
+     "nota": "Nei capillari polmonari tutto va al contrario. L'O₂ si lega all'emoglobina, che libera H⁺ e CO₂; il bicarbonato rientra nel globulo rosso (esce il Cl⁻) e torna CO₂ e acqua. La CO₂ passa negli alveoli ed esce con l'espirazione."
+    }
+   ],
+   "titolo_bilancio": "In sintesi",
+   "bilancio": [
+    "O₂: circa 98% legato all'emoglobina, circa 2% sciolto nel plasma",
+    "CO₂: circa 70% come bicarbonato, circa 20-30% legata all'emoglobina, circa 7% sciolta",
+    "Effetto Bohr: più CO₂, H⁺, calore e 2,3-BPG → l'emoglobina cede più O₂",
+    "Effetto Haldane: l'emoglobina senza O₂ trasporta più CO₂ e più H⁺"
+   ],
+   "da_sapere": [
+    {
+     "titolo": "Cosa cambia la presa dell'emoglobina sull'ossigeno",
+     "voci": [
+      [
+       "La curva si sposta a destra: l'O₂ viene ceduto di più",
+       [
+        "H⁺",
+        "CO₂",
+        "2,3-bisfosfoglicerato (2,3-BPG)"
+       ]
+      ],
+      [
+       "Legano l'O₂ più forte dell'emoglobina dell'adulto",
+       [
+        "emoglobina fetale (HbF)",
+        "mioglobina"
+       ]
+      ],
+      [
+       "Bloccano il trasporto dell'O₂",
+       [
+        "monossido di carbonio (CO)",
+        "metaemoglobina"
+       ]
+      ]
+     ]
+    }
+   ],
+   "dopo": {
+    "titolo": "Collegamenti con gli altri percorsi",
+    "strade": [
+     {
+      "condizione": "Poco ossigeno per giorni o settimane (altitudine, anemia, malattie dei polmoni)",
+      "da": "deossiemoglobina",
+      "a": "eritropoietina (EPO)",
+      "enzima": "rene",
+      "entra": [],
+      "esce": [],
+      "nota": "Il rene sente il calo di O₂ nei tessuti e libera eritropoietina: il midollo produce più globuli rossi. Intanto nei globuli rossi aumenta il 2,3-BPG, che fa cedere più O₂ ai tessuti.",
+      "prossimo": "emopoiesi"
+     },
+     {
+      "condizione": "Il bicarbonato è anche il tampone del sangue",
+      "da": "bicarbonato (HCO₃⁻)",
+      "a": "CO₂",
+      "enzima": "anidrasi carbonica",
+      "entra": [
+       "H⁺"
+      ],
+      "esce": [
+       "H₂O"
+      ],
+      "nota": "CO₂ + H₂O ⇄ H₂CO₃ ⇄ H⁺ + HCO₃⁻. I polmoni regolano la CO₂, i reni il bicarbonato: insieme tengono il pH del sangue vicino a 7,4.",
+      "prossimo": "equilibrio acido-base"
+     },
+     {
+      "condizione": "Il percorso dell'aria",
+      "da": "CO₂",
+      "a": "alveoli",
+      "enzima": "membrana alveolo-capillare",
+      "entra": [],
+      "esce": [],
+      "nota": "Lo scambio dei gas dipende dalla ventilazione degli alveoli, dal flusso di sangue nei capillari e dalla sottigliezza della membrana che li separa.",
+      "prossimo": "apparato respiratorio"
+     }
+    ]
+   }
+  }
+ },
+ "schede": {
+  "calore": {
+   "tipo": "energia",
+   "base": "Il caldo che il corpo produce usando il cibo, come una piccola stufa sempre accesa. Anche in natura una parte dell'energia del cibo si perde sempre come calore.",
+   "superiore": "Energia termica: passa sempre dal corpo più caldo a quello più freddo. Nel corpo deriva dal metabolismo: gran parte dell'energia del cibo non diventa ATP o lavoro ma calore, che mantiene la temperatura corporea. Nelle catene alimentari, a ogni passaggio, gran parte dell'energia si perde come calore.",
+   "universita": "A riposo i maggiori produttori di calore sono fegato, cuore, cervello e reni; durante l'esercizio i muscoli. L'efficienza del lavoro muscolare è circa il 20-25%: il resto dell'energia diventa calore. Si perde per irraggiamento, conduzione, convezione ed evaporazione. In ecologia la perdita di calore a ogni livello trofico spiega perché solo circa il 10% dell'energia passa al livello successivo e perché le catene alimentari sono corte.",
+   "clinica": "Quando il calore prodotto o assorbito supera quello che si riesce a disperdere (caldo umido, sforzo, farmaci anticolinergici) la temperatura sale senza che cambi il set point: colpo di calore, un'emergenza da raffreddare subito."
+  },
+  "glicina": {
+   "tipo": "molecola",
+   "smiles": "NCC(=O)O",
+   "base": "Il mattoncino delle proteine più piccolo di tutti. Serve a costruire la parte rossa del sangue e, nel midollo spinale, fa da messaggero che calma i nervi.",
+   "superiore": "Il più semplice degli amminoacidi: la catena laterale è un solo atomo di idrogeno, quindi non è chirale. Con il succinil-CoA è il punto di partenza dell'eme. È anche un neurotrasmettitore inibitorio del midollo spinale e del tronco encefalico.",
+   "universita": "Abbondante nel collagene (un residuo ogni tre: Gly-X-Y). Precursore di eme, purine, creatina e glutatione; coniuga gli acidi biliari (glicocolato). Neurotrasmettitore inibitorio nel midollo spinale (recettore con canale per il Cl⁻) e co-agonista del recettore NMDA.",
+   "clinica": "La stricnina blocca il recettore della glicina: spasmi e convulsioni. Iperglicinemia non chetotica (difetto del sistema di scissione della glicina): encefalopatia neonatale."
+  },
+  "specie reattive dell'ossigeno (ROS)": {
+   "tipo": "piccola",
+   "base": "Piccole particelle «arrabbiate» che si formano usando l'ossigeno: possono rovinare il DNA, ma le cellule di difesa le usano anche come armi contro i microbi.",
+   "superiore": "Molecole derivate dall'ossigeno molto reattive: anione superossido (O₂⁻·), perossido di idrogeno (H₂O₂), radicale ossidrile (·OH). Si formano normalmente nei mitocondri e possono ossidare DNA, proteine e lipidi.",
+   "universita": "Prodotte soprattutto dai complessi I e III della catena respiratoria, dalla NADPH ossidasi dei fagociti, da radiazioni e infiammazione. Il ·OH (reazione di Fenton con Fe²⁺) è il più dannoso. Difese: superossido dismutasi, catalasi, glutatione perossidasi. Lesione tipica del DNA: 8-ossoguanina, che si appaia con A (transversioni G:C→T:A).",
+   "clinica": "Lo stress ossidativo contribuisce a invecchiamento, aterosclerosi e tumori. La NADPH ossidasi usa le ROS per uccidere i batteri: se manca, malattia granulomatosa cronica."
+  },
+  "creatina chinasi": {
+   "tipo": "enzima",
+   "base": "L'aiutante del muscolo che ricarica subito l'energia, prendendola da una piccola scorta pronta all'uso.",
+   "superiore": "Enzima che trasferisce un fosfato dalla fosfocreatina all'ADP e forma ATP. Nei primi secondi di uno sforzo intenso mantiene costante l'ATP del muscolo.",
+   "universita": "Transferasi (EC 2.7.3.2): fosfocreatina + ADP ⇄ creatina + ATP, reazione reversibile. A riposo carica la fosfocreatina, durante lo sforzo la scarica. Isoenzimi: CK-MM (muscolo scheletrico), CK-MB (miocardio), CK-BB (cervello) e una forma mitocondriale che trasporta l'energia dal mitocondrio alle miofibrille (navetta della fosfocreatina).",
+   "clinica": "La CK nel sangue è alta in rabdomiolisi (traumi, sforzi estremi, statine), distrofie muscolari e miositi. La CK-MB era usata per l'infarto, oggi sostituita dalla troponina cardiaca."
+  },
+  "2-fosfoglicolato": {
+   "tipo": "molecola",
+   "base": "Una molecola di scarto che la foglia forma quando, invece dell'anidride carbonica, cattura per sbaglio l'ossigeno.",
+   "superiore": "Composto a 2 atomi di carbonio con un fosfato. Si forma quando la RuBisCO lega l'O₂ invece della CO₂ (fotorespirazione), insieme a una sola molecola di 3-fosfoglicerato.",
+   "universita": "Inibisce alcuni enzimi del ciclo di Calvin e va smaltito: la via di recupero passa per cloroplasto, perossisoma e mitocondrio (glicolato → gliossilato → glicina → serina) e restituisce 3 atomi di carbonio su 4, liberando CO₂ e NH₃. Consuma ATP e potere riducente.",
+   "clinica": ""
+  }
+ },
+ "pronte": {
+  "regolazione della pressione arteriosa": {
+   "argomento": "regolazione della pressione arteriosa",
+   "categoria": "Fisiologia",
+   "parole": [
+    "regolazione della pressione arteriosa",
+    "pressione arteriosa",
+    "blood pressure regulation",
+    "barocettori",
+    "baroreceptors",
+    "riflesso barocettivo",
+    "baroreflex",
+    "resistenze periferiche",
+    "gittata cardiaca",
+    "ipertensione",
+    "ANP"
+   ],
+   "relazioni": [
+    {
+     "da": "pressione arteriosa",
+     "relazione": "è uguale a",
+     "a": "gittata cardiaca × resistenze periferiche"
+    },
+    {
+     "da": "barocettori",
+     "relazione": "si trovano nel",
+     "a": "seno carotideo e arco aortico"
+    },
+    {
+     "da": "barocettori",
+     "relazione": "inviano segnali al",
+     "a": "centro cardiovascolare del bulbo"
+    },
+    {
+     "da": "centro cardiovascolare del bulbo",
+     "relazione": "comanda il",
+     "a": "sistema nervoso autonomo"
+    },
+    {
+     "da": "simpatico",
+     "relazione": "aumenta la",
+     "a": "gittata cardiaca"
+    },
+    {
+     "da": "simpatico",
+     "relazione": "causa",
+     "a": "vasocostrizione"
+    },
+    {
+     "da": "parasimpatico (vago)",
+     "relazione": "rallenta il",
+     "a": "cuore"
+    },
+    {
+     "da": "riflesso barocettivo",
+     "relazione": "corregge la pressione in",
+     "a": "pochi secondi"
+    },
+    {
+     "da": "simpatico",
+     "relazione": "stimola la liberazione di",
+     "a": "renina"
+    },
+    {
+     "da": "angiotensina II",
+     "relazione": "fa parte del",
+     "a": "sistema renina-angiotensina"
+    },
+    {
+     "da": "aldosterone e ADH",
+     "relazione": "aumentano il",
+     "a": "volume del sangue"
+    },
+    {
+     "da": "rene",
+     "relazione": "regola la pressione a",
+     "a": "lungo termine"
+    },
+    {
+     "da": "peptide natriuretico atriale (ANP)",
+     "relazione": "abbassa la",
+     "a": "pressione arteriosa"
+    },
+    {
+     "da": "arteriole",
+     "relazione": "sono la sede principale delle",
+     "a": "resistenze periferiche"
+    },
+    {
+     "da": "ipertensione arteriosa",
+     "relazione": "si cura con",
+     "a": "ACE-inibitori, sartani, calcio-antagonisti, diuretici"
+    },
+    {
+     "da": "beta-bloccanti",
+     "relazione": "bloccano i",
+     "a": "recettori β1"
+    },
+    {
+     "da": "ipotensione ortostatica",
+     "relazione": "compare quando non basta il",
+     "a": "riflesso barocettivo"
+    },
+    {
+     "da": "rene",
+     "relazione": "regola la pressione a lungo termine con la",
+     "a": "formazione dell'urina"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  },
+  "trasmissione sinaptica": {
+   "argomento": "trasmissione sinaptica",
+   "categoria": "Fisiologia",
+   "parole": [
+    "trasmissione sinaptica",
+    "sinapsi",
+    "synapse",
+    "synaptic transmission",
+    "neurotrasmettitore",
+    "neurotransmitter",
+    "esocitosi",
+    "PPSE",
+    "PPSI",
+    "EPSP",
+    "IPSP",
+    "ricaptazione"
+   ],
+   "relazioni": [
+    {
+     "da": "sinapsi chimica",
+     "relazione": "collega",
+     "a": "due neuroni (o neurone e muscolo)"
+    },
+    {
+     "da": "potenziale d'azione",
+     "relazione": "arriva al",
+     "a": "terminale presinaptico"
+    },
+    {
+     "da": "canali del calcio voltaggio-dipendenti",
+     "relazione": "fanno entrare",
+     "a": "Ca²⁺"
+    },
+    {
+     "da": "Ca²⁺",
+     "relazione": "fa fondere le",
+     "a": "vescicole sinaptiche"
+    },
+    {
+     "da": "proteine SNARE",
+     "relazione": "permettono l'",
+     "a": "esocitosi"
+    },
+    {
+     "da": "vescicole sinaptiche",
+     "relazione": "liberano il",
+     "a": "neurotrasmettitore"
+    },
+    {
+     "da": "neurotrasmettitore",
+     "relazione": "attraversa la",
+     "a": "fessura sinaptica"
+    },
+    {
+     "da": "recettori ionotropi",
+     "relazione": "danno risposte",
+     "a": "rapide (millisecondi)"
+    },
+    {
+     "da": "recettori metabotropi",
+     "relazione": "attivano",
+     "a": "proteine G e secondi messaggeri"
+    },
+    {
+     "da": "glutammato",
+     "relazione": "produce un",
+     "a": "PPSE (eccitatorio)"
+    },
+    {
+     "da": "GABA",
+     "relazione": "produce un",
+     "a": "PPSI (inibitorio)"
+    },
+    {
+     "da": "PPSE e PPSI",
+     "relazione": "si sommano nel",
+     "a": "segmento iniziale dell'assone"
+    },
+    {
+     "da": "sommazione",
+     "relazione": "se raggiunge la soglia fa partire un nuovo",
+     "a": "potenziale d'azione"
+    },
+    {
+     "da": "acetilcolinesterasi",
+     "relazione": "degrada l'",
+     "a": "acetilcolina"
+    },
+    {
+     "da": "trasportatori di ricaptazione",
+     "relazione": "riportano nel terminale",
+     "a": "monoamine, glutammato e GABA"
+    },
+    {
+     "da": "tossina botulinica",
+     "relazione": "taglia le",
+     "a": "proteine SNARE"
+    },
+    {
+     "da": "SSRI",
+     "relazione": "bloccano la ricaptazione della",
+     "a": "serotonina"
+    },
+    {
+     "da": "benzodiazepine",
+     "relazione": "potenziano il",
+     "a": "recettore GABA-A"
+    },
+    {
+     "da": "acetilcolina alla placca motrice",
+     "relazione": "avvia la",
+     "a": "contrazione muscolare"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  },
+  "contrazione muscolare": {
+   "argomento": "contrazione muscolare",
+   "categoria": "Fisiologia",
+   "parole": [
+    "contrazione muscolare",
+    "muscle contraction",
+    "placca motrice",
+    "giunzione neuromuscolare",
+    "neuromuscular junction",
+    "accoppiamento eccitazione-contrazione",
+    "ponti trasversali",
+    "cross-bridge cycle",
+    "filamenti scorrevoli",
+    "sliding filament",
+    "sarcomero",
+    "actina",
+    "miosina"
+   ],
+   "relazioni": [
+    {
+     "da": "motoneurone",
+     "relazione": "libera",
+     "a": "acetilcolina"
+    },
+    {
+     "da": "acetilcolina",
+     "relazione": "apre il",
+     "a": "recettore nicotinico dell'acetilcolina"
+    },
+    {
+     "da": "placca motrice",
+     "relazione": "genera il",
+     "a": "potenziale d'azione muscolare"
+    },
+    {
+     "da": "potenziale d'azione muscolare",
+     "relazione": "scende nei",
+     "a": "tubuli T"
+    },
+    {
+     "da": "recettore delle diidropiridine (DHPR)",
+     "relazione": "apre il",
+     "a": "recettore della rianodina (RyR1)"
+    },
+    {
+     "da": "reticolo sarcoplasmatico",
+     "relazione": "libera",
+     "a": "Ca²⁺"
+    },
+    {
+     "da": "Ca²⁺",
+     "relazione": "si lega alla",
+     "a": "troponina C"
+    },
+    {
+     "da": "tropomiosina",
+     "relazione": "si sposta e scopre i siti dell'",
+     "a": "actina"
+    },
+    {
+     "da": "miosina",
+     "relazione": "forma ponti trasversali con l'",
+     "a": "actina"
+    },
+    {
+     "da": "colpo di forza",
+     "relazione": "fa scorrere i filamenti nel",
+     "a": "sarcomero"
+    },
+    {
+     "da": "ATP",
+     "relazione": "stacca la testa della",
+     "a": "miosina"
+    },
+    {
+     "da": "pompa SERCA",
+     "relazione": "riporta il Ca²⁺ nel",
+     "a": "reticolo sarcoplasmatico"
+    },
+    {
+     "da": "rilasciamento",
+     "relazione": "consuma anche lui",
+     "a": "ATP"
+    },
+    {
+     "da": "fosfocreatina",
+     "relazione": "rigenera subito l'",
+     "a": "ATP"
+    },
+    {
+     "da": "miastenia gravis",
+     "relazione": "distrugge i",
+     "a": "recettori nicotinici della placca"
+    },
+    {
+     "da": "bloccanti neuromuscolari",
+     "relazione": "paralizzano la",
+     "a": "placca motrice"
+    },
+    {
+     "da": "ipertermia maligna",
+     "relazione": "è dovuta a mutazioni del",
+     "a": "recettore della rianodina (RyR1)"
+    },
+    {
+     "da": "mancanza di ATP",
+     "relazione": "causa il",
+     "a": "rigor mortis"
+    },
+    {
+     "da": "placca motrice",
+     "relazione": "è una sinapsi che segue le regole della",
+     "a": "trasmissione sinaptica"
+    },
+    {
+     "da": "muscolo che lavora",
+     "relazione": "produce",
+     "a": "calore"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  },
+  "potenziale d'azione": {
+   "argomento": "potenziale d'azione",
+   "categoria": "Fisiologia",
+   "parole": [
+    "potenziale d'azione",
+    "action potential",
+    "impulso nervoso",
+    "nerve impulse",
+    "potenziale di membrana",
+    "potenziale di riposo",
+    "resting potential",
+    "depolarizzazione",
+    "ripolarizzazione",
+    "periodo refrattario",
+    "conduzione saltatoria"
+   ],
+   "relazioni": [
+    {
+     "da": "potenziale d'azione",
+     "relazione": "avviene nella membrana di",
+     "a": "neuroni e fibre muscolari"
+    },
+    {
+     "da": "Na⁺/K⁺-ATPasi",
+     "relazione": "mantiene i",
+     "a": "gradienti di Na⁺ e K⁺"
+    },
+    {
+     "da": "canali di fuga del K⁺",
+     "relazione": "creano il",
+     "a": "potenziale di riposo (circa −70 mV)"
+    },
+    {
+     "da": "potenziale graduato",
+     "relazione": "se raggiunge la",
+     "a": "soglia (circa −55 mV)"
+    },
+    {
+     "da": "soglia",
+     "relazione": "fa partire il",
+     "a": "potenziale d'azione"
+    },
+    {
+     "da": "potenziale d'azione",
+     "relazione": "segue la legge del",
+     "a": "tutto o nulla"
+    },
+    {
+     "da": "canali del sodio voltaggio-dipendenti",
+     "relazione": "causano la",
+     "a": "depolarizzazione"
+    },
+    {
+     "da": "depolarizzazione",
+     "relazione": "porta l'interno a circa",
+     "a": "+30 mV"
+    },
+    {
+     "da": "canali del potassio voltaggio-dipendenti",
+     "relazione": "causano la",
+     "a": "ripolarizzazione"
+    },
+    {
+     "da": "ripolarizzazione",
+     "relazione": "è seguita dalla",
+     "a": "iperpolarizzazione postuma"
+    },
+    {
+     "da": "inattivazione dei canali del Na⁺",
+     "relazione": "causa il",
+     "a": "periodo refrattario assoluto"
+    },
+    {
+     "da": "periodo refrattario",
+     "relazione": "fa viaggiare l'impulso in",
+     "a": "una sola direzione"
+    },
+    {
+     "da": "guaina mielinica",
+     "relazione": "permette la",
+     "a": "conduzione saltatoria"
+    },
+    {
+     "da": "conduzione saltatoria",
+     "relazione": "avviene tra i",
+     "a": "nodi di Ranvier"
+    },
+    {
+     "da": "intensità dello stimolo",
+     "relazione": "è codificata dalla",
+     "a": "frequenza degli impulsi"
+    },
+    {
+     "da": "anestetici locali",
+     "relazione": "bloccano i",
+     "a": "canali del sodio voltaggio-dipendenti"
+    },
+    {
+     "da": "sclerosi multipla",
+     "relazione": "danneggia la",
+     "a": "guaina mielinica"
+    },
+    {
+     "da": "potenziale d'azione",
+     "relazione": "arriva alla",
+     "a": "trasmissione sinaptica"
+    },
+    {
+     "da": "potenziale d'azione della fibra muscolare",
+     "relazione": "avvia la",
+     "a": "contrazione muscolare"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  },
+  "emopoiesi": {
+   "argomento": "emopoiesi",
+   "categoria": "Fisiologia",
+   "parole": [
+    "emopoiesi",
+    "ematopoiesi",
+    "eritropoiesi",
+    "produzione dei globuli rossi",
+    "cellule del sangue",
+    "hematopoiesis",
+    "haematopoiesis",
+    "erythropoiesis"
+   ],
+   "relazioni": [
+    {
+     "da": "emopoiesi",
+     "relazione": "avviene nel",
+     "a": "midollo osseo"
+    },
+    {
+     "da": "emopoiesi",
+     "relazione": "parte dalla",
+     "a": "cellula staminale ematopoietica"
+    },
+    {
+     "da": "cellula staminale ematopoietica",
+     "relazione": "si rinnova e forma il",
+     "a": "progenitore mieloide comune"
+    },
+    {
+     "da": "cellula staminale ematopoietica",
+     "relazione": "forma il",
+     "a": "progenitore linfoide"
+    },
+    {
+     "da": "progenitore linfoide",
+     "relazione": "dà origine ai",
+     "a": "linfociti"
+    },
+    {
+     "da": "progenitore mieloide comune",
+     "relazione": "dà origine ai",
+     "a": "globuli rossi"
+    },
+    {
+     "da": "progenitore mieloide comune",
+     "relazione": "dà origine alle",
+     "a": "piastrine"
+    },
+    {
+     "da": "progenitore mieloide comune",
+     "relazione": "dà origine ai",
+     "a": "neutrofili"
+    },
+    {
+     "da": "rene",
+     "relazione": "con poco ossigeno libera",
+     "a": "eritropoietina (EPO)"
+    },
+    {
+     "da": "eritropoietina (EPO)",
+     "relazione": "stimola la produzione di",
+     "a": "globuli rossi"
+    },
+    {
+     "da": "trombopoietina (TPO)",
+     "relazione": "stimola la produzione di",
+     "a": "piastrine"
+    },
+    {
+     "da": "G-CSF",
+     "relazione": "stimola la produzione di",
+     "a": "neutrofili"
+    },
+    {
+     "da": "proeritroblasto",
+     "relazione": "matura in",
+     "a": "eritroblasti"
+    },
+    {
+     "da": "eritroblasti",
+     "relazione": "producono",
+     "a": "emoglobina"
+    },
+    {
+     "da": "ferro",
+     "relazione": "serve per fare l'",
+     "a": "emoglobina"
+    },
+    {
+     "da": "vitamina B₁₂",
+     "relazione": "serve per copiare il",
+     "a": "DNA"
+    },
+    {
+     "da": "acido folico",
+     "relazione": "serve per copiare il",
+     "a": "DNA"
+    },
+    {
+     "da": "reticolocito",
+     "relazione": "diventa",
+     "a": "globuli rossi"
+    },
+    {
+     "da": "globuli rossi",
+     "relazione": "vivono circa",
+     "a": "120 giorni"
+    },
+    {
+     "da": "milza",
+     "relazione": "elimina i globuli rossi vecchi e produce",
+     "a": "bilirubina"
+    },
+    {
+     "da": "anemia sideropenica",
+     "relazione": "è causata dalla mancanza di",
+     "a": "ferro"
+    },
+    {
+     "da": "anemia megaloblastica",
+     "relazione": "è causata dalla mancanza di",
+     "a": "vitamina B₁₂ o acido folico"
+    },
+    {
+     "da": "globuli rossi",
+     "relazione": "servono al",
+     "a": "trasporto dei gas nel sangue"
+    },
+    {
+     "da": "piastrine",
+     "relazione": "servono alla",
+     "a": "coagulazione del sangue"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  },
+  "trasporto dei gas nel sangue": {
+   "argomento": "trasporto dei gas nel sangue",
+   "categoria": "Fisiologia",
+   "parole": [
+    "trasporto dei gas",
+    "trasporto dell'ossigeno",
+    "trasporto della CO2",
+    "curva di dissociazione",
+    "effetto Bohr",
+    "effetto Haldane",
+    "ossiemoglobina",
+    "gas transport",
+    "oxygen transport",
+    "Bohr effect"
+   ],
+   "relazioni": [
+    {
+     "da": "trasporto dei gas nel sangue",
+     "relazione": "avviene nei",
+     "a": "globuli rossi"
+    },
+    {
+     "da": "O₂",
+     "relazione": "passa dagli alveoli al",
+     "a": "plasma"
+    },
+    {
+     "da": "emoglobina",
+     "relazione": "lega fino a 4",
+     "a": "O₂"
+    },
+    {
+     "da": "emoglobina",
+     "relazione": "carica di ossigeno diventa",
+     "a": "ossiemoglobina"
+    },
+    {
+     "da": "ossiemoglobina",
+     "relazione": "trasporta circa il 98% dell'",
+     "a": "O₂"
+    },
+    {
+     "da": "curva di dissociazione dell'emoglobina",
+     "relazione": "ha forma a",
+     "a": "S (sigmoide)"
+    },
+    {
+     "da": "effetto Bohr",
+     "relazione": "fa cedere più O₂ con più",
+     "a": "CO₂ e H⁺"
+    },
+    {
+     "da": "2,3-bisfosfoglicerato (2,3-BPG)",
+     "relazione": "sposta a destra la",
+     "a": "curva di dissociazione dell'emoglobina"
+    },
+    {
+     "da": "tessuti",
+     "relazione": "ricevono O₂ e liberano",
+     "a": "CO₂"
+    },
+    {
+     "da": "anidrasi carbonica",
+     "relazione": "trasforma la CO₂ in",
+     "a": "bicarbonato (HCO₃⁻)"
+    },
+    {
+     "da": "bicarbonato (HCO₃⁻)",
+     "relazione": "trasporta circa il 70% della",
+     "a": "CO₂"
+    },
+    {
+     "da": "scambiatore Cl⁻/HCO₃⁻ (banda 3)",
+     "relazione": "porta il bicarbonato nel",
+     "a": "plasma"
+    },
+    {
+     "da": "deossiemoglobina",
+     "relazione": "lega",
+     "a": "CO₂ e H⁺"
+    },
+    {
+     "da": "effetto Haldane",
+     "relazione": "aumenta il trasporto di",
+     "a": "CO₂"
+    },
+    {
+     "da": "carbamminoemoglobina",
+     "relazione": "è emoglobina legata alla",
+     "a": "CO₂"
+    },
+    {
+     "da": "polmoni",
+     "relazione": "eliminano la",
+     "a": "CO₂"
+    },
+    {
+     "da": "emoglobina fetale (HbF)",
+     "relazione": "lega l'O₂ più forte dell'",
+     "a": "emoglobina"
+    },
+    {
+     "da": "monossido di carbonio (CO)",
+     "relazione": "prende il posto dell'O₂ sull'",
+     "a": "emoglobina"
+    },
+    {
+     "da": "trasporto dei gas nel sangue",
+     "relazione": "fa parte dell'",
+     "a": "apparato respiratorio"
+    },
+    {
+     "da": "poco ossigeno nei tessuti",
+     "relazione": "fa liberare dal rene",
+     "a": "eritropoietina (EPO)"
+    },
+    {
+     "da": "eritropoietina (EPO)",
+     "relazione": "aumenta i globuli rossi con l'",
+     "a": "emopoiesi"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  },
+  "coagulazione del sangue": {
+   "argomento": "coagulazione del sangue",
+   "categoria": "Fisiologia",
+   "parole": [
+    "coagulazione",
+    "emostasi",
+    "coagulo",
+    "cascata della coagulazione",
+    "fibrinolisi",
+    "piastrine",
+    "trombina",
+    "fibrina",
+    "blood clotting",
+    "coagulation",
+    "hemostasis",
+    "haemostasis"
+   ],
+   "relazioni": [
+    {
+     "da": "emostasi",
+     "relazione": "comprende",
+     "a": "spasmo vascolare"
+    },
+    {
+     "da": "emostasi",
+     "relazione": "comprende",
+     "a": "tappo piastrinico"
+    },
+    {
+     "da": "emostasi",
+     "relazione": "comprende",
+     "a": "coagulazione del sangue"
+    },
+    {
+     "da": "vaso sanguigno lesionato",
+     "relazione": "espone",
+     "a": "collagene sottoendoteliale"
+    },
+    {
+     "da": "fattore di von Willebrand",
+     "relazione": "attacca le piastrine al",
+     "a": "collagene sottoendoteliale"
+    },
+    {
+     "da": "piastrine attivate",
+     "relazione": "liberano",
+     "a": "trombossano A₂ (TXA₂)"
+    },
+    {
+     "da": "glicoproteina IIb/IIIa",
+     "relazione": "unisce le piastrine con il",
+     "a": "fibrinogeno"
+    },
+    {
+     "da": "fattore tissutale",
+     "relazione": "insieme al fattore VIIa attiva il",
+     "a": "fattore X"
+    },
+    {
+     "da": "tenasi intrinseca (IXa-VIIIa)",
+     "relazione": "attiva in grande quantità il",
+     "a": "fattore X"
+    },
+    {
+     "da": "protrombinasi (Xa-Va)",
+     "relazione": "trasforma la protrombina in",
+     "a": "trombina"
+    },
+    {
+     "da": "trombina",
+     "relazione": "trasforma il fibrinogeno in",
+     "a": "fibrina"
+    },
+    {
+     "da": "trombina",
+     "relazione": "amplifica (feedback positivo)",
+     "a": "coagulazione del sangue"
+    },
+    {
+     "da": "fattore XIIIa",
+     "relazione": "stabilizza la",
+     "a": "fibrina"
+    },
+    {
+     "da": "vitamina K",
+     "relazione": "serve per produrre i fattori",
+     "a": "II, VII, IX e X"
+    },
+    {
+     "da": "fegato",
+     "relazione": "produce",
+     "a": "fattori della coagulazione"
+    },
+    {
+     "da": "antitrombina",
+     "relazione": "blocca",
+     "a": "trombina"
+    },
+    {
+     "da": "proteina C e proteina S",
+     "relazione": "spengono i fattori",
+     "a": "Va e VIIIa"
+    },
+    {
+     "da": "plasmina",
+     "relazione": "scioglie la",
+     "a": "fibrina"
+    },
+    {
+     "da": "fibrinolisi",
+     "relazione": "produce",
+     "a": "D-dimero"
+    },
+    {
+     "da": "emofilia",
+     "relazione": "è la mancanza del",
+     "a": "fattore VIII o IX"
+    },
+    {
+     "da": "eparina",
+     "relazione": "potenzia l'",
+     "a": "antitrombina"
+    },
+    {
+     "da": "warfarin",
+     "relazione": "blocca la",
+     "a": "vitamina K"
+    },
+    {
+     "da": "acido acetilsalicilico (aspirina)",
+     "relazione": "frena le",
+     "a": "piastrine"
+    },
+    {
+     "da": "piastrine",
+     "relazione": "nascono nel midollo osseo con l'",
+     "a": "emopoiesi"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  },
+  "termoregolazione": {
+   "argomento": "termoregolazione",
+   "categoria": "Fisiologia",
+   "parole": [
+    "termoregolazione",
+    "thermoregulation",
+    "temperatura corporea",
+    "body temperature",
+    "set point",
+    "febbre",
+    "fever",
+    "brivido",
+    "shivering",
+    "sudorazione",
+    "ipertermia",
+    "ipotermia",
+    "colpo di calore"
+   ],
+   "relazioni": [
+    {
+     "da": "termoregolazione",
+     "relazione": "mantiene la temperatura interna a circa",
+     "a": "37 °C"
+    },
+    {
+     "da": "ipotalamo",
+     "relazione": "funziona come un",
+     "a": "termostato"
+    },
+    {
+     "da": "termocettori",
+     "relazione": "informano l'",
+     "a": "ipotalamo"
+    },
+    {
+     "da": "ipotalamo",
+     "relazione": "confronta la temperatura con il",
+     "a": "set point"
+    },
+    {
+     "da": "freddo",
+     "relazione": "provoca",
+     "a": "vasocostrizione cutanea"
+    },
+    {
+     "da": "freddo",
+     "relazione": "provoca il",
+     "a": "brivido"
+    },
+    {
+     "da": "grasso bruno",
+     "relazione": "produce calore con la",
+     "a": "termogenina (UCP1)"
+    },
+    {
+     "da": "ormoni tiroidei",
+     "relazione": "aumentano il",
+     "a": "metabolismo e il calore"
+    },
+    {
+     "da": "caldo",
+     "relazione": "provoca",
+     "a": "vasodilatazione cutanea"
+    },
+    {
+     "da": "caldo",
+     "relazione": "provoca la",
+     "a": "sudorazione"
+    },
+    {
+     "da": "evaporazione del sudore",
+     "relazione": "sottrae",
+     "a": "calore"
+    },
+    {
+     "da": "corpo",
+     "relazione": "perde calore per",
+     "a": "irraggiamento, conduzione, convezione ed evaporazione"
+    },
+    {
+     "da": "pirogeni",
+     "relazione": "fanno produrre",
+     "a": "prostaglandina E₂"
+    },
+    {
+     "da": "prostaglandina E₂",
+     "relazione": "alza il",
+     "a": "set point"
+    },
+    {
+     "da": "set point alzato",
+     "relazione": "causa la",
+     "a": "febbre"
+    },
+    {
+     "da": "antipiretici",
+     "relazione": "bloccano la sintesi delle",
+     "a": "prostaglandine"
+    },
+    {
+     "da": "colpo di calore",
+     "relazione": "è un'ipertermia con",
+     "a": "set point normale"
+    },
+    {
+     "da": "neonato",
+     "relazione": "dipende dal",
+     "a": "grasso bruno"
+    },
+    {
+     "da": "febbre",
+     "relazione": "fa parte dell'",
+     "a": "infiammazione acuta"
+    }
+   ],
+   "fonti": [
+    "Mappa pronta BIBL-IA"
+   ]
+  }
+ },
+ "base": {}
+}

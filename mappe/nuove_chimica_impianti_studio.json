@@ -1,0 +1,731 @@
+{
+  "Bilanci di materia e di energia": {
+    "superiore": {
+      "spiegazione": [
+        "I bilanci di materia e di energia sono lo strumento base di chi lavora negli impianti chimici. Si fondano su un'idea semplice: la materia e l'energia non si creano e non si distruggono, ma si spostano e si trasformano. L'equazione generale dice che l'accumulo in un sistema è uguale a ciò che entra, meno ciò che esce, più ciò che si genera, meno ciò che si consuma. Se l'impianto lavora a regime l'accumulo è zero, e se non ci sono reazioni restano solo entrata e uscita. Per esempio, in un miscelatore che riceve due correnti, la portata uscente è la somma delle due.",
+        "Prima di fare i conti conviene disegnare uno schema a blocchi: ogni apparecchio è un rettangolo, ogni corrente una freccia con portata e composizione. Poi si sceglie una base di calcolo, per esempio 100 kg di alimentazione, perché i rapporti tra le correnti non dipendono dalla quantità. Si cerca anche un componente di legame, cioè una sostanza che passa senza cambiare: il solido secco in un essiccatore o il sale in un evaporatore. Con quel componente spesso il problema si risolve in due righe.",
+        "Le unità più semplici sono il miscelatore, il ripartitore e il separatore. Il miscelatore unisce correnti, e la composizione in uscita è una media pesata sulle portate: mescolando 100 kg/h al 20% con 50 kg/h al 50% si ottiene il 30%, non il 35%. Il ripartitore divide una corrente in rami con la stessa composizione. Il separatore invece, come una colonna o un filtro, produce correnti con composizioni diverse.",
+        "Quando c'è una reazione chimica la massa totale si conserva, ma le moli no: nella sintesi dell'ammoniaca 4 moli di gas diventano 2. Si conservano anche gli atomi di ogni elemento, e su questi si possono scrivere bilanci comodi. Molti impianti usano il riciclo: il reagente non convertito viene separato e rimandato al reattore. Se nell'alimentazione c'è un inerte, serve uno spurgo, cioè una piccola uscita che impedisce all'inerte di accumularsi nel ciclo.",
+        "Il bilancio di energia segue la stessa logica. Per scaldare un fluido senza cambiarne lo stato si usa il calore sensibile Q = m·cp·ΔT: 500 kg/h di acqua scaldati di 60 °C richiedono circa 35 kW. Quando un fluido cambia stato si usa il calore latente Q = m·r: il vapore che condensa cede circa 2250 kJ/kg ed è per questo il riscaldante più usato. Mescolando due correnti di acqua senza scambi con l'esterno, la temperatura finale è la media pesata sulle masse."
+      ],
+      "metodo": [
+        "Disegna sempre lo schema a blocchi con tutte le correnti e scrivi sopra ogni freccia i dati noti e le incognite.",
+        "Scegli una base di calcolo comoda e cerca subito il componente di legame.",
+        "Scrivi prima il bilancio globale, poi quello sui singoli componenti, e conta se hai abbastanza equazioni.",
+        "Controlla le unità di misura: kg/h e kW non si mescolano senza convertire le ore in secondi.",
+        "Verifica il risultato con un bilancio che non hai usato, per esempio sull'altro componente.",
+        "Svolgi esercizi di essiccamento, evaporazione e miscelazione finché diventano automatici."
+      ],
+      "ricorda": [
+        "«Ciò che non cambia è la chiave»: il componente di legame risolve metà dei problemi.",
+        "Le percentuali si sommano solo pesate con le portate.",
+        "Con reazione si conservano massa e atomi, non le moli.",
+        "Calore latente del vapore ≈ 2250 kJ/kg, cp dell'acqua ≈ 4,18 kJ/(kg·K)."
+      ],
+      "errori": [
+        "Fare la media semplice delle concentrazioni quando le portate sono diverse.",
+        "Sottrarre le percentuali di umidità invece di usare il solido secco.",
+        "Scrivere moli in ingresso uguali a moli in uscita in presenza di reazione.",
+        "Dimenticare di dividere per 3600 passando da kJ/h a kW.",
+        "Confondere il ripartitore, che non cambia la composizione, con un separatore."
+      ],
+      "domande": [
+        {
+          "domanda": "Si concentrano 1000 kg/h di soluzione dal 10% al 40%: quanta acqua evapora?",
+          "risposta": "750 kg/h: il soluto (100 kg/h) diventa il 40% di 250 kg/h."
+        },
+        {
+          "domanda": "Che cosa significa che un impianto è a regime?",
+          "risposta": "Le grandezze in ogni punto non cambiano nel tempo e l'accumulo è nullo."
+        },
+        {
+          "domanda": "A cosa serve lo spurgo in un ciclo con riciclo?",
+          "risposta": "A evitare che gli inerti si accumulino nel ciclo."
+        },
+        {
+          "domanda": "Quanto calore serve per scaldare 1 kg di acqua di 10 °C?",
+          "risposta": "Circa 41,8 kJ: 1 · 4,18 · 10."
+        },
+        {
+          "domanda": "Mescolando 2 kg di acqua a 80 °C e 3 kg a 20 °C, che temperatura si ottiene?",
+          "risposta": "44 °C, media pesata sulle masse."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "I bilanci partono dall'equazione generale di conservazione, Accumulo = Entrata − Uscita + Generazione − Consumo, scritta per la massa totale, per ogni specie o per ogni elemento. In regime stazionario si ottengono equazioni algebriche; nei transitori, come il riempimento di un serbatoio o un reattore batch, si ottengono equazioni differenziali del tipo dm/dt = ṁ_in − ṁ_out. Prima di risolvere conviene fare l'analisi dei gradi di libertà: incognite meno equazioni indipendenti. Se il risultato è zero il problema è determinato; se è positivo mancano specifiche.",
+        "Con reazioni chimiche il modo più pulito è usare il grado di avanzamento ξ: nᵢ = nᵢ₀ + νᵢ·ξ, con coefficienti stechiometrici negativi per i reagenti. Per più reazioni si introduce un ξ per ciascuna. Si definiscono poi conversione del reagente limitante, selettività verso il prodotto voluto e resa, legate da resa = conversione · selettività quando la selettività è riferita al reagente convertito. In alternativa si possono scrivere bilanci sugli atomi, che non contengono termini di generazione.",
+        "Negli schemi con riciclo si distinguono conversione per passaggio e conversione globale. Per esempio, con il 25% per passaggio e separazione completa del reagente, il reattore deve ricevere 4 volte l'alimentazione fresca e il riciclo è 3 volte. Gli inerti si accumulano e richiedono uno spurgo: a regime la portata di spurgo è uguale all'inerte entrante diviso la frazione di inerte nel riciclo. Più si tollera inerte nel ciclo, minore è lo spurgo ma più diluito lavora il reattore. Gli schemi complessi si risolvono scegliendo una corrente di taglio e iterando, come fanno i simulatori di processo.",
+        "Il bilancio di energia per un sistema aperto a regime è Q − W = Σṁ·h in uscita − Σṁ·h in ingresso, più eventuali variazioni di energia cinetica e potenziale, spesso trascurabili. Si usa l'entalpia perché include il lavoro di pulsione delle correnti; W è il lavoro all'albero di pompe, compressori e turbine. Le entalpie si calcolano rispetto a uno stato di riferimento, di solito 25 °C e 1 atm, sommando calore sensibile (∫cp dT), calori latenti e, se c'è reazione, il calore di reazione ricavato dalle entalpie di formazione con la legge di Hess. Per uno scambiatore W = 0 e il bilancio si riduce a Q = ΔH, mentre per una turbina adiabatica Q = 0 e il lavoro prodotto è uguale alla diminuzione di entalpia.",
+        "Due casi notevoli sono la combustione e il reattore adiabatico. Nella combustione si calcolano ossigeno teorico, aria in eccesso e composizione dei fumi: 10 mol di metano con il 20% di eccesso richiedono 24 mol di O₂, cioè circa 114 mol di aria. Nel reattore adiabatico tutto il calore di reazione resta nel fluido e la temperatura cresce linearmente con la conversione: ΔT = (−ΔH)·C₀·X/(ρ·cp). Questa retta adiabatica è fondamentale per la progettazione e la sicurezza dei reattori."
+      ],
+      "metodo": [
+        "Per ogni problema fai l'analisi dei gradi di libertà su ogni unità e sul sistema globale prima di iniziare.",
+        "Usa il grado di avanzamento per i sistemi con reazione: evita errori di segno e di stechiometria.",
+        "Negli schemi con riciclo parti dal bilancio globale (che non vede il riciclo) e poi passa al reattore.",
+        "Per il bilancio di energia fissa esplicitamente lo stato di riferimento e tabella le entalpie di ogni corrente.",
+        "Imposta i bilanci in un foglio di calcolo per poter cambiare i dati e vedere come reagisce il processo.",
+        "Confronta i risultati con un simulatore o con il bilancio sugli elementi come controllo indipendente."
+      ],
+      "ricorda": [
+        "Gradi di libertà = incognite − equazioni indipendenti.",
+        "nᵢ = nᵢ₀ + νᵢ·ξ: un ξ per ogni reazione indipendente.",
+        "Spurgo = inerte entrante / frazione di inerte nel ciclo.",
+        "Q − W = ΔH: per uno scambiatore W = 0, per una turbina adiabatica Q = 0."
+      ],
+      "errori": [
+        "Contare equazioni non indipendenti (per esempio la somma delle frazioni insieme a tutti i bilanci di componente).",
+        "Confondere la conversione per passaggio con quella globale negli schemi con riciclo.",
+        "Usare l'energia interna al posto dell'entalpia nei sistemi aperti.",
+        "Mescolare stati di riferimento diversi nello stesso bilancio entalpico.",
+        "Applicare l'eccesso d'aria all'aria invece che all'ossigeno stechiometrico in modo incoerente."
+      ],
+      "domande": [
+        {
+          "domanda": "Con conversione per passaggio del 25% e riciclo totale del non convertito, quanto vale il riciclo per 100 mol/h di alimentazione fresca?",
+          "risposta": "300 mol/h: il reattore riceve 400 mol/h."
+        },
+        {
+          "domanda": "Entra 1 mol/h di inerte; il ciclo ne contiene il 5%. Quanto è lo spurgo?",
+          "risposta": "20 mol/h."
+        },
+        {
+          "domanda": "Qual è il ΔT adiabatico con C₀ = 2 mol/L, ΔH = −50 kJ/mol, ρcp = 4 kJ/(L·K) e X = 0,8?",
+          "risposta": "20 K."
+        },
+        {
+          "domanda": "Perché nei sistemi aperti si usa l'entalpia?",
+          "risposta": "Perché comprende il lavoro di pulsione necessario a far entrare e uscire le correnti."
+        },
+        {
+          "domanda": "Che cosa indica un numero di gradi di libertà negativo?",
+          "risposta": "Che i dati sono sovrabbondanti e potenzialmente incoerenti."
+        }
+      ]
+    }
+  },
+  "Distillazione": {
+    "superiore": {
+      "spiegazione": [
+        "La distillazione separa i componenti di una miscela liquida sfruttando la loro diversa volatilità. Quando la miscela bolle, il vapore è più ricco del componente che evapora più facilmente, cioè quello con la tensione di vapore maggiore. Condensando quel vapore e facendolo bollire di nuovo, si arricchisce sempre di più. Una colonna di distillazione ripete questo processo decine di volte in un solo apparecchio. È l'operazione di separazione più usata nell'industria chimica e nelle raffinerie.",
+        "Per le miscele ideali vale la legge di Raoult: la pressione parziale di ogni componente è p = x·P°, dove x è la frazione molare nel liquido e P° la tensione di vapore del componente puro. Con benzene e toluene al 50%, se P° vale 100 e 40 kPa, la pressione totale è 70 kPa e il vapore contiene il 71% di benzene. La facilità di separazione si misura con la volatilità relativa α: più è grande, più è facile separare. Se α vale 1 la distillazione non funziona: è il caso degli azeotropi, come acqua-etanolo al 95,6%.",
+        "Una colonna ha in fondo un ribollitore, che produce il vapore, e in testa un condensatore. Parte del condensato torna in colonna come riflusso e il resto esce come distillato. Il rapporto di riflusso R = L/D è la variabile più importante: più riflusso migliora la separazione ma consuma più vapore e più acqua di raffreddamento. Con riflusso totale serve il numero minimo di piatti, con il riflusso minimo ne servirebbero infiniti; in pratica si usa 1,2-1,5 volte il minimo.",
+        "I bilanci della colonna sono due: F = D + W per la portata e F·z = D·x_D + W·x_W per il componente leggero. Con F = 100 kmol/h al 40%, distillato al 95% e residuo al 5%, si ottengono circa 38,9 kmol/h di distillato. Il numero di stadi teorici si trova con il metodo grafico di McCabe-Thiele, disegnando gradini tra la curva di equilibrio e le rette di lavoro. Poiché i piatti reali non raggiungono l'equilibrio, si divide per l'efficienza: 12 stadi teorici con efficienza 0,6 diventano 20 piatti reali.",
+        "Le colonne possono essere a piatti oppure a riempimento, dove al posto dei piatti ci sono anelli o reti metalliche e si usa l'altezza equivalente a uno stadio (HETP). Se il vapore sale troppo veloce la colonna si ingolfa e il liquido non scende più. Per sostanze che si decompongono con il calore si distilla sotto vuoto, abbassando le temperature di ebollizione, oppure in corrente di vapore. Esempi industriali sono il frazionamento del petrolio, la produzione di alcol e la separazione dell'aria liquida in ossigeno e azoto."
+      ],
+      "metodo": [
+        "Ripassa la legge di Raoult con un esempio numerico e calcola la composizione del vapore.",
+        "Disegna una colonna con ribollitore, condensatore, riflusso e correnti F, D, W, e scrivi i due bilanci.",
+        "Esercitati sul metodo di McCabe-Thiele su carta millimetrata con dati semplici.",
+        "Costruisci una tabella: riflusso alto/basso, numero di piatti, consumo di vapore.",
+        "Collega la distillazione agli esempi reali: raffineria, distilleria, aria liquida."
+      ],
+      "ricorda": [
+        "«Il leggero sale, il pesante scende».",
+        "R = L/D e V = L + D con condensatore totale.",
+        "Riflusso totale → piatti minimi; riflusso minimo → piatti infiniti.",
+        "Piatti reali = stadi teorici / efficienza."
+      ],
+      "errori": [
+        "Confondere R = L/D con il rapporto L/V.",
+        "Pensare che il distillato abbia portata uguale alla quantità di leggero in alimentazione.",
+        "Moltiplicare per l'efficienza invece di dividere per trovare i piatti reali.",
+        "Credere che aggiungendo piatti si possa superare un azeotropo."
+      ],
+      "domande": [
+        {
+          "domanda": "Su che cosa si basa la distillazione?",
+          "risposta": "Sulla diversa volatilità dei componenti."
+        },
+        {
+          "domanda": "Con L = 150 e D = 50 kmol/h, quanto vale R?",
+          "risposta": "3."
+        },
+        {
+          "domanda": "Che cosa produce il ribollitore?",
+          "risposta": "Il vapore che sale lungo la colonna."
+        },
+        {
+          "domanda": "Perché non si ottiene etanolo puro per semplice distillazione?",
+          "risposta": "Per l'azeotropo acqua-etanolo intorno al 95,6% in massa."
+        },
+        {
+          "domanda": "12 stadi teorici con efficienza 0,6: quanti piatti reali?",
+          "risposta": "20."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Il progetto di una colonna parte dall'equilibrio liquido-vapore. Per miscele ideali si usa la legge di Raoult con tensioni di vapore dall'equazione di Antoine; per miscele reali si introducono i coefficienti di attività γ, calcolati con modelli come NRTL o UNIQUAC. Con volatilità relativa α costante la curva di equilibrio è y = αx/[1 + (α − 1)x]. Forti deviazioni dall'idealità producono azeotropi, che si superano con distillazione azeotropica (aggiunta di un terzo componente), estrattiva (solvente pesante che cambia α) o a pressione variabile, sfruttando lo spostamento della composizione azeotropica.",
+        "Il metodo di McCabe-Thiele assume flusso molare costante, cioè calori latenti molari simili e calori di mescolamento trascurabili. La retta di arricchimento è y = R/(R+1)·x + x_D/(R+1) e passa per (x_D, x_D); quella di esaurimento passa per (x_W, x_W). La condizione dell'alimentazione è descritta dal parametro q e dalla retta q di pendenza q/(q − 1): verticale per liquido saturo, orizzontale per vapore saturo. Gli stadi si contano a gradini tra equilibrio e rette di lavoro, cambiando retta in corrispondenza del piatto ottimale di alimentazione.",
+        "I casi limite danno informazioni utili. A riflusso totale le rette coincidono con la diagonale e il numero di stadi è minimo: con α costante si calcola con l'equazione di Fenske, per esempio circa 6,4 stadi per α = 2,5 e purezze del 95% e 5%. Il riflusso minimo si ha quando una retta di lavoro tocca la curva di equilibrio (pinch); per sistemi multicomponente si stima con le equazioni di Underwood. La correlazione di Gilliland lega stadi e riflusso tra i due limiti e permette una stima rapida.",
+        "La scelta del riflusso è un'ottimizzazione economica: all'aumentare di R diminuiscono gli stadi, quindi il costo di investimento, ma aumentano i costi di esercizio di ribollitore e condensatore. L'ottimo cade di solito tra 1,2 e 1,5 R_min. Il diametro si calcola dalla velocità di ingolfamento del vapore, con un margine (tipicamente il 70-85%); a portate troppo basse si ha gocciolamento. Le efficienze dei piatti si esprimono come efficienza di Murphree, riferita a un singolo piatto, o come efficienza globale.",
+        "Nelle colonne a riempimento il contatto è continuo e l'altezza si calcola come Z = N·HETP oppure con il metodo HTU-NTU. I riempimenti strutturati hanno basse perdite di carico e sono preferiti nella distillazione sotto vuoto. Nei sistemi multicomponente si scelgono un componente chiave leggero e uno pesante, e la separazione si specifica sul loro recupero. La distillazione consuma molta energia: integrazione termica tra colonne, pompe di calore e colonne a parete divisa riducono i consumi in modo significativo."
+      ],
+      "metodo": [
+        "Costruisci la curva di equilibrio da dati di Antoine per una coppia reale e confrontala con quella ad α costante.",
+        "Svolgi un McCabe-Thiele completo con alimentazione bifase, individuando il piatto ottimale.",
+        "Calcola N_min con Fenske, R_min dal pinch e stima N con Gilliland; confronta con il metodo grafico.",
+        "Studia un diagramma costo totale-riflusso e spiega da dove nasce il minimo.",
+        "Ripassa i metodi per gli azeotropi con un esempio concreto per ciascuno (etanolo-acqua, acido nitrico-acqua)."
+      ],
+      "ricorda": [
+        "Retta di arricchimento: pendenza R/(R+1), intercetta x_D/(R+1).",
+        "q = 1 liquido saturo (verticale), q = 0 vapore saturo (orizzontale).",
+        "Fenske: N_min = ln[(x_D/(1−x_D))·((1−x_W)/x_W)] / ln α.",
+        "R ottimale ≈ 1,2-1,5 R_min."
+      ],
+      "errori": [
+        "Dimenticare che il ribollitore parziale conta come uno stadio teorico.",
+        "Usare McCabe-Thiele quando i calori latenti molari sono molto diversi.",
+        "Calcolare il diametro sulla portata di liquido invece che su quella di vapore.",
+        "Confondere l'efficienza di Murphree con quella globale.",
+        "Credere che il vuoto elimini sempre gli azeotropi."
+      ],
+      "domande": [
+        {
+          "domanda": "Scrivi la retta di arricchimento per R = 3 e x_D = 0,95.",
+          "risposta": "y = 0,75x + 0,2375."
+        },
+        {
+          "domanda": "Quanti stadi minimi dà Fenske con α = 2,5, x_D = 0,95, x_W = 0,05?",
+          "risposta": "Circa 6,4."
+        },
+        {
+          "domanda": "Com'è la retta q per vapore saturo?",
+          "risposta": "Orizzontale (q = 0)."
+        },
+        {
+          "domanda": "Che cosa limita il diametro di una colonna?",
+          "risposta": "La velocità di ingolfamento del vapore."
+        },
+        {
+          "domanda": "Quale altezza serve per 10 stadi con HETP = 0,5 m?",
+          "risposta": "5 m."
+        }
+      ]
+    }
+  },
+  "Assorbimento, estrazione ed evaporazione": {
+    "superiore": {
+      "spiegazione": [
+        "Assorbimento, estrazione ed evaporazione sono operazioni che separano sostanze trasferendo materia da una fase all'altra o togliendo un solvente. Nell'assorbimento un gas viene messo a contatto con un liquido che ne scioglie un componente: per esempio l'anidride carbonica dei fumi viene assorbita in una soluzione di ammine. L'equilibrio dei gas poco solubili segue la legge di Henry, p = H·x: più alta è la pressione parziale, più gas si scioglie. Con p = 10 kPa e H = 400 kPa, la frazione molare disciolta è 0,025.",
+        "L'assorbimento è favorito da alta pressione e bassa temperatura; l'operazione inversa, lo stripping, libera il gas scaldando o abbassando la pressione. Gli assorbitori sono di solito colonne a riempimento: il gas sale, il liquido scende, e in controcorrente lo scambio è più efficace. Si usa un rapporto liquido/gas maggiore del minimo, di solito 1,2-2 volte, perché al minimo servirebbe una colonna infinitamente alta. Il bilancio del soluto è semplice: quanto ne perde il gas, tanto ne guadagna il liquido.",
+        "Nell'estrazione liquido-liquido una soluzione viene agitata con un solvente immiscibile che scioglie meglio il soluto. Dopo la separazione per densità si ottengono l'estratto, ricco di solvente e soluto, e il raffinato, cioè la soluzione impoverita. L'equilibrio è descritto dal coefficiente di ripartizione K. Con K = 4 e volumi uguali, in uno stadio resta il 20% del soluto; dividendo lo stesso solvente in due estrazioni ne resta solo l'11%.",
+        "L'evaporazione concentra una soluzione facendo bollire parte del solvente, quasi sempre acqua. Il bilancio si fa sul soluto, che non evapora: concentrando 5000 kg/h dal 5% al 25% si ottengono 1000 kg/h di concentrato e 4000 kg/h di vapore. Il calore viene dal vapore di riscaldamento che condensa, e in un singolo effetto serve circa 1 kg di vapore per ogni kg di acqua evaporata. Per risparmiare si usano evaporatori a multiplo effetto, dove il vapore prodotto in un effetto riscalda il successivo.",
+        "I prodotti alimentari delicati, come succhi e latte, si concentrano sotto vuoto, a 40-70 °C, per non alterarne gusto e vitamine. Un problema degli evaporatori è l'innalzamento ebullioscopico: la soluzione bolle a temperatura più alta dell'acqua pura e il salto di temperatura utile diminuisce. Altri problemi sono le incrostazioni e la schiuma. Queste tre operazioni si trovano ovunque: nei lavaggi dei fumi, nella produzione di zucchero, di caffè solubile e di farmaci."
+      ],
+      "metodo": [
+        "Per ogni operazione scrivi in una tabella: fasi coinvolte, cosa si trasferisce, equilibrio, apparecchio.",
+        "Esercitati con la legge di Henry cambiando pressione e temperatura.",
+        "Confronta numericamente un'estrazione singola con due estrazioni frazionate.",
+        "Fai i bilanci dell'evaporatore partendo sempre dal soluto.",
+        "Collega gli esempi quotidiani: acqua gassata, tè, marmellata."
+      ],
+      "ricorda": [
+        "Assorbire: freddo e pressione; strippare: caldo e vuoto.",
+        "Estratto = con il solvente; raffinato = ciò che resta.",
+        "Meglio tante estrazioni piccole che una grande.",
+        "Evaporatore: il soluto non vola via."
+      ],
+      "errori": [
+        "Confondere assorbimento (nel liquido) e adsorbimento (sulla superficie di un solido).",
+        "Pensare che il calore aiuti a sciogliere un gas.",
+        "Rispondere con la portata del concentrato quando si chiede il vapore prodotto.",
+        "Credere che il vuoto riduca l'acqua da evaporare.",
+        "Scambiare estratto e raffinato."
+      ],
+      "domande": [
+        {
+          "domanda": "Quali condizioni favoriscono l'assorbimento?",
+          "risposta": "Alta pressione e bassa temperatura."
+        },
+        {
+          "domanda": "Con K = 4 e volumi uguali, quanto soluto resta dopo un'estrazione?",
+          "risposta": "Il 20%."
+        },
+        {
+          "domanda": "Come si chiama la fase impoverita nell'estrazione?",
+          "risposta": "Raffinato."
+        },
+        {
+          "domanda": "5000 kg/h dal 5% al 25%: quanto vapore?",
+          "risposta": "4000 kg/h."
+        },
+        {
+          "domanda": "Perché il latte si concentra sotto vuoto?",
+          "risposta": "Per farlo bollire a bassa temperatura senza alterarlo."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Le operazioni di trasferimento di materia si descrivono con due ingredienti: l'equilibrio tra le fasi e la velocità con cui ci si avvicina. La forza motrice è la distanza dall'equilibrio, per esempio y − y*. Il modello del doppio film immagina due strati sottili ai lati dell'interfaccia, ciascuno con il suo coefficiente; combinandoli si ottiene un coefficiente globale K, e il flusso per unità di volume è K·a·(y − y*), con a area interfacciale specifica. Se il gas è molto solubile la resistenza è soprattutto nel film gassoso, se è poco solubile in quello liquido.",
+        "Nell'assorbimento conviene lavorare con rapporti molari riferiti al gas inerte (Y) e al solvente puro (X), perché G e L restano costanti lungo la colonna. Il bilancio G·(Y₁ − Y₂) = L·(X₁ − X₂) dà una retta di lavoro. Il rapporto L/G minimo si ha quando la retta tocca la curva di equilibrio. Il fattore di assorbimento A = L/(m·G) confronta le pendenze: con A > 1 si può arrivare a un assorbimento quasi completo, e l'equazione di Kremser dà gli stadi teorici. Per le colonne a riempimento l'altezza è Z = HTU·NTU.",
+        "L'assorbimento chimico, per esempio di CO₂ e H₂S in soluzioni di ammine, sfrutta una reazione nel liquido che aumenta la capacità e la velocità. Il solvente carico va in uno stripper con ribollitore, dove a temperatura più alta il gas si libera e il solvente si rigenera. Il consumo di vapore per la rigenerazione è il costo principale di questi impianti, ed è un tema centrale nella cattura della CO₂. La scelta dell'ammina (primaria, terziaria, impedita) è un compromesso tra velocità di assorbimento, capacità e calore necessario per la rigenerazione.",
+        "L'estrazione liquido-liquido si rappresenta con il diagramma triangolare, che contiene la curva binodale (confine della zona bifase) e le linee coniugate tra fasi in equilibrio. Per un singolo stadio con solventi immiscibili, la frazione residua è 1/(1 + K·Vs/Vf). In controcorrente a più stadi si ottiene lo stesso recupero con molto meno solvente, e il calcolo è analogo a Kremser con un fattore di estrazione. Gli apparecchi vanno dai mixer-settler alle colonne agitate e agli estrattori centrifughi.",
+        "Nell'evaporazione si scrivono un bilancio di materia sul soluto e uno di entalpia: il calore ceduto dal vapore di riscaldamento serve a portare l'alimentazione all'ebollizione e a vaporizzare il solvente. L'economia è il rapporto tra vapore prodotto e vapore consumato: circa 1 per un singolo effetto, quasi n per n effetti. L'innalzamento ebullioscopico, stimato con la regola di Dühring, riduce il ΔT utile e pesa negli effetti finali. La ricompressione meccanica del vapore usa un compressore elettrico per riportare il vapore prodotto a una temperatura utile, con risparmi energetici elevati."
+      ],
+      "metodo": [
+        "Ricava da solo la retta di lavoro dell'assorbitore in rapporti molari e disegnala con la curva di Henry.",
+        "Calcola il numero di stadi con Kremser per diversi valori di A e osserva il limite per A < 1.",
+        "Costruisci un diagramma ternario semplice e traccia un'estrazione a singolo stadio con la regola della leva.",
+        "Imposta i bilanci di un evaporatore a doppio effetto in un foglio di calcolo.",
+        "Confronta i consumi energetici di multiplo effetto e MVR per lo stesso servizio."
+      ],
+      "ricorda": [
+        "Lavorare in rapporti molari rende G e L costanti.",
+        "A = L/(mG) > 1 per assorbire bene; tipico 1,2-2.",
+        "Z = HTU · NTU.",
+        "Economia ≈ numero di effetti."
+      ],
+      "errori": [
+        "Usare frazioni molari con portate totali che cambiano lungo la colonna.",
+        "Pensare che più stadi compensino sempre un A < 1.",
+        "Trascurare il calore di assorbimento, che riscalda il liquido e riduce la solubilità.",
+        "Ignorare l'innalzamento ebullioscopico nel calcolo del ΔT.",
+        "Confondere economia del vapore e capacità dell'evaporatore."
+      ],
+      "domande": [
+        {
+          "domanda": "Con G = 100 kmol/h, Y da 0,05 a 0,005 e L = 150 kmol/h di solvente puro, quanto vale X in uscita?",
+          "risposta": "0,03."
+        },
+        {
+          "domanda": "Che cosa indica A > 1?",
+          "risposta": "Che è possibile un assorbimento quasi completo con abbastanza stadi."
+        },
+        {
+          "domanda": "Due estrazioni con metà solvente, K = 4: frazione residua?",
+          "risposta": "(1/3)² ≈ 11%."
+        },
+        {
+          "domanda": "Quanto vapore serve per evaporare 4000 kg/h (r = 2260) con vapore a r = 2200 kJ/kg?",
+          "risposta": "Circa 4110 kg/h."
+        },
+        {
+          "domanda": "Che cosa fa la ricompressione meccanica del vapore?",
+          "risposta": "Comprime il vapore prodotto per usarlo come riscaldante nello stesso evaporatore."
+        }
+      ]
+    }
+  },
+  "Scambio termico e scambiatori": {
+    "superiore": {
+      "spiegazione": [
+        "Lo scambio termico è presente in quasi ogni impianto: si scaldano reagenti, si raffreddano prodotti, si condensano vapori. Il calore passa in tre modi. Nella conduzione si trasmette attraverso un materiale fermo, come la parete di un tubo, secondo la legge di Fourier Q = k·A·ΔT/s. Nella convezione è un fluido in movimento a trasportarlo, con Q = h·A·ΔT. Nell'irraggiamento viaggia come onda elettromagnetica e cresce con la quarta potenza della temperatura assoluta: raddoppiando i kelvin, la potenza emessa diventa 16 volte maggiore.",
+        "In uno scambiatore il calore va dal fluido caldo alla parete per convezione, attraversa la parete per conduzione e arriva al fluido freddo di nuovo per convezione. Queste resistenze sono in serie, quindi si sommano: 1/U = 1/h₁ + s/k + 1/h₂. Il coefficiente globale U è sempre minore del più piccolo coefficiente h: con h₁ = 1000 e h₂ = 2000 W/(m²·K) si ottiene U ≈ 667. Lo sporcamento delle superfici aggiunge un'altra resistenza e fa calare U nel tempo.",
+        "L'equazione di progetto è Q = U·A·ΔT_ml, dove ΔT_ml è la differenza media logaritmica di temperatura, calcolata dalle differenze agli estremi: (ΔT₁ − ΔT₂)/ln(ΔT₁/ΔT₂). Per esempio con ΔT di 80 e 60 K si ottiene circa 69,5 K. Il calore si calcola anche con il bilancio termico dei fluidi: quello ceduto dal caldo, m·cp·ΔT, è uguale a quello acquistato dal freddo. Con questi due strumenti si trovano la superficie necessaria o la portata di fluido di servizio.",
+        "I fluidi possono scorrere in controcorrente o in equicorrente. La controcorrente dà una differenza media maggiore, quindi serve meno superficie, e permette al fluido freddo di uscire più caldo del fluido caldo in uscita. Se uno dei fluidi condensa a temperatura costante, invece, le due disposizioni sono equivalenti. Per questo quasi tutti gli scambiatori industriali, quando possibile, lavorano in controcorrente.",
+        "Lo scambiatore più diffuso è quello a fascio tubiero: un mantello cilindrico contiene molti tubi, e dei diaframmi deviano il fluido esterno per renderlo turbolento. Dentro i tubi si mandano di solito i fluidi sporchi, corrosivi o ad alta pressione. Gli scambiatori a piastre sono compatti, efficienti e facili da pulire, ma non sopportano pressioni e temperature troppo alte. Infine l'isolamento termico delle tubazioni riduce le perdite e protegge gli operatori dalle superfici calde."
+      ],
+      "metodo": [
+        "Disegna uno scambiatore con le quattro temperature e calcola ΔT₁ e ΔT₂ sia in controcorrente sia in equicorrente.",
+        "Allenati con esercizi in tre passaggi: bilancio termico, ΔT_ml, superficie A.",
+        "Ripeti le unità: W per Q, W/(m²·K) per U, m² per A, K per ΔT.",
+        "Costruisci una tabella di confronto tra fascio tubiero e piastre.",
+        "Collega gli esempi di casa: termosifone, radiatore dell'auto, scaldabagno."
+      ],
+      "ricorda": [
+        "Q = U·A·ΔT_ml: la formula regina.",
+        "Resistenze in serie: si sommano gli inversi.",
+        "Controcorrente = più ΔT = meno superficie.",
+        "Irraggiamento ∝ T⁴ in kelvin."
+      ],
+      "errori": [
+        "Lasciare lo spessore in millimetri nella legge di Fourier.",
+        "Usare la media aritmetica al posto di quella logaritmica senza controllare.",
+        "Fare la media dei coefficienti h invece di sommare le resistenze.",
+        "Confondere kW e W nel calcolo della superficie.",
+        "Usare i gradi Celsius nella legge di Stefan-Boltzmann."
+      ],
+      "domande": [
+        {
+          "domanda": "Quali sono i tre meccanismi di trasmissione del calore?",
+          "risposta": "Conduzione, convezione e irraggiamento."
+        },
+        {
+          "domanda": "Q con U = 500, A = 10 m² e ΔT_ml = 30 K?",
+          "risposta": "150 kW."
+        },
+        {
+          "domanda": "Quale superficie serve per 200 kW con U = 800 e ΔT_ml = 50 K?",
+          "risposta": "5 m²."
+        },
+        {
+          "domanda": "Che effetto ha lo sporcamento?",
+          "risposta": "Riduce U aggiungendo una resistenza termica."
+        },
+        {
+          "domanda": "Perché si preferisce la controcorrente?",
+          "risposta": "Dà una ΔT media maggiore e richiede meno superficie."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "La conduzione è descritta dalla legge di Fourier; per una parete cilindrica, come un tubo, la potenza è Q = 2πkL·ΔT/ln(r₂/r₁), e le resistenze di strati diversi (tubo, isolante) si sommano. La convezione si caratterizza con il coefficiente h, ricavato da correlazioni tra numeri adimensionali: Nusselt (h·D/k), Reynolds (regime di moto) e Prandtl (proprietà del fluido). Per il moto turbolento nei tubi la classica correlazione di Dittus-Boelter è Nu = 0,023·Re⁰·⁸·Pr⁰·⁴. L'irraggiamento tra superfici segue Stefan-Boltzmann, q = ε·σ·(T₁⁴ − T₂⁴), corretto con fattori di vista.",
+        "Il coefficiente globale U si riferisce a un'area di riferimento, di solito quella esterna dei tubi, e comprende le resistenze convettive, quella della parete e le resistenze di sporcamento lato interno ed esterno. In progetto si usano valori di sporcamento tabellati, che aumentano la superficie richiesta anche del 20-30%. Nei cambiamenti di fase i coefficienti sono molto alti: la condensazione a film si descrive con la teoria di Nusselt, l'ebollizione nucleata con correlazioni specifiche, e bisogna evitare di superare il flusso termico critico. Per questo nei ribollitori si controlla la differenza di temperatura tra parete e liquido, che non deve essere troppo grande.",
+        "L'equazione di progetto è Q = U·A·F·ΔT_ml. Il fattore F corregge la ΔT_ml in controcorrente per scambiatori con più passaggi, come il tipo 1-2, ed è funzione di due rapporti adimensionali di temperatura. Se F scende sotto circa 0,75 la configurazione è poco efficiente e sensibile agli errori: si passa a più gusci in serie. Quando un fluido è isotermo, come il vapore che condensa, F vale 1 e la disposizione non conta.",
+        "Quando le temperature di uscita non sono note si usa il metodo ε-NTU. L'efficienza è ε = Q/Q_max, con Q_max = C_min·(T_c,in − T_f,in), e il numero di unità di trasferimento è NTU = U·A/C_min. Per ogni configurazione esiste una relazione ε(NTU, C_min/C_max): così si verificano scambiatori esistenti senza iterare. Per esempio con C_min = 4 kW/K e 100 K disponibili, Q_max è 400 kW e scambiandone 300 l'efficienza è 0,75.",
+        "Le norme TEMA classificano i fasci tubieri in base a testate e mantello: a piastra tubiera fissa (economici ma con problemi di dilatazione), a testa flottante e a tubi a U (che permettono dilatazioni e pulizia). Il progetto è un compromesso tra superficie e perdite di carico: velocità più alte aumentano h ma anche le perdite e i costi di pompaggio. A livello di impianto, l'integrazione termica con la pinch analysis individua il recupero massimo di calore tra correnti calde e fredde e riduce i consumi di vapore e acqua di raffreddamento. Una buona integrazione può ridurre i consumi energetici di un impianto anche del 20-40%."
+      ],
+      "metodo": [
+        "Ricava la formula della ΔT_ml dal bilancio differenziale su un tratto di scambiatore.",
+        "Calcola h con Dittus-Boelter per acqua in un tubo e confronta con valori tipici.",
+        "Svolgi lo stesso problema con il metodo ΔT_ml e con ε-NTU e verifica che coincidano.",
+        "Studia un grafico del fattore F e prova a leggerlo per un caso 1-2.",
+        "Fai un esercizio di pinch analysis con quattro correnti per capire il concetto di recupero massimo."
+      ],
+      "ricorda": [
+        "Nu = hD/k; Re per il regime; Pr per il fluido.",
+        "F ≥ 0,75, altrimenti più gusci.",
+        "ε = Q/[C_min·(T_c,in − T_f,in)], NTU = UA/C_min.",
+        "Fluido isotermo: co- e controcorrente equivalenti."
+      ],
+      "errori": [
+        "Riferire U a un'area e poi usare l'altra nel calcolo di A.",
+        "Usare F maggiore di 1.",
+        "Calcolare Q_max con C_max invece di C_min.",
+        "Trascurare lo sporcamento nel dimensionamento.",
+        "Confondere i numeri di Nusselt, Reynolds e Prandtl."
+      ],
+      "domande": [
+        {
+          "domanda": "Calcola la ΔT_ml in controcorrente per caldo 150→90 °C e freddo 30→70 °C.",
+          "risposta": "Circa 69,5 K."
+        },
+        {
+          "domanda": "U con h₁ = 1000, h₂ = 2000 W/(m²K) e parete trascurabile?",
+          "risposta": "Circa 667 W/(m²K)."
+        },
+        {
+          "domanda": "Che cosa rappresenta il numero di Nusselt?",
+          "risposta": "Il rapporto tra scambio convettivo e conduttivo nel fluido."
+        },
+        {
+          "domanda": "Quando si preferisce il metodo ε-NTU?",
+          "risposta": "Quando le temperature di uscita non sono note, per esempio nella verifica."
+        },
+        {
+          "domanda": "Che cosa indica F < 0,75?",
+          "risposta": "Una configurazione poco efficiente: conviene usare più gusci."
+        }
+      ]
+    }
+  },
+  "Reattori chimici": {
+    "superiore": {
+      "spiegazione": [
+        "Il reattore è il cuore dell'impianto chimico: lì i reagenti diventano prodotti. Esistono tre modelli ideali. Il reattore discontinuo (batch) si carica, si fa reagire e si scarica, e la composizione cambia nel tempo, come in una pentola. Il reattore continuo agitato (CSTR) è un serbatoio sempre alimentato e perfettamente mescolato: la composizione è uguale ovunque e coincide con quella in uscita. Il reattore tubolare (PFR) è un tubo dove il fluido avanza ordinato e la composizione cambia lungo il percorso.",
+        "Le grandezze principali sono la conversione, cioè la frazione di reagente che ha reagito, e il tempo di permanenza τ = V/Q, il tempo medio che il fluido passa nel reattore. Con 10 mol di reagente iniziale e 2 finali la conversione è dell'80%; con un reattore da 2 m³ e 0,5 m³/h il tempo di permanenza è 4 ore. Si usano anche la selettività, che dice quanto del reagente convertito diventa prodotto voluto, e la resa, che è il prodotto tra conversione e selettività. Per esempio, se si convertono 80 mol su 100 e 72 diventano il prodotto voluto, la selettività è il 90% e la resa il 72%.",
+        "Per una reazione del primo ordine, a parità di kτ, il CSTR dà X = kτ/(1 + kτ) e il PFR dà X = 1 − e^(−kτ). Con kτ = 2 il CSTR converte il 67% e il PFR l'86%. Il tubo è più efficiente perché il reagente non si diluisce subito nel prodotto: lavora a concentrazione più alta e reagisce più in fretta. Mettendo più CSTR in serie ci si avvicina al comportamento del tubo.",
+        "La temperatura influenza moltissimo la velocità di reazione, secondo l'equazione di Arrhenius: in molti casi 10 °C in più circa raddoppiano la velocità. I catalizzatori abbassano l'energia di attivazione e accelerano la reazione senza consumarsi e senza spostare l'equilibrio. Nei reattori a letto fisso il catalizzatore è in granuli fermi; nei letti fluidi le particelle sono sospese dal gas e la temperatura è molto uniforme. Il catalizzatore però può perdere attività nel tempo per avvelenamento, sinterizzazione o depositi di carbone, e va rigenerato o sostituito.",
+        "Molte reazioni industriali sono esotermiche e il calore va tolto con camicie, serpentini o scambiatori, altrimenti la temperatura sale e la reazione può diventare incontrollabile. Per reazioni esotermiche reversibili, come l'ossidazione di SO₂, si usano più letti con raffreddamento intermedio. La scelta del reattore dipende da velocità della reazione, produzione richiesta, fasi presenti e sicurezza. Il batch è tipico di farmaci e prodotti fini, i reattori continui dei grandi impianti."
+      ],
+      "metodo": [
+        "Disegna i tre reattori ideali e indica per ognuno come varia la concentrazione (nel tempo o nello spazio).",
+        "Impara a memoria le definizioni di conversione, selettività, resa e tempo di permanenza con un esempio numerico.",
+        "Calcola X per CSTR e PFR con lo stesso kτ e confronta i risultati.",
+        "Prova a cambiare la temperatura in un esercizio con Arrhenius e osserva quanto cambia k.",
+        "Collega i reattori ai processi industriali che conosci."
+      ],
+      "ricorda": [
+        "τ = V/Q.",
+        "Resa = conversione · selettività.",
+        "Primo ordine: CSTR kτ/(1 + kτ), PFR 1 − e^(−kτ).",
+        "Il catalizzatore accelera ma non sposta l'equilibrio."
+      ],
+      "errori": [
+        "Calcolare la frazione rimasta invece della conversione.",
+        "Fare Q/V per il tempo di permanenza.",
+        "Usare la formula del PFR per un CSTR o viceversa.",
+        "Pensare che il catalizzatore faccia ottenere più prodotto all'equilibrio.",
+        "Confondere resa e selettività."
+      ],
+      "domande": [
+        {
+          "domanda": "Qual è la conversione con 10 mol iniziali e 2 finali?",
+          "risposta": "80%."
+        },
+        {
+          "domanda": "τ per V = 2 m³ e Q = 0,5 m³/h?",
+          "risposta": "4 h."
+        },
+        {
+          "domanda": "Con kτ = 2, quanto converte un CSTR del primo ordine?",
+          "risposta": "Circa il 67%."
+        },
+        {
+          "domanda": "Perché il PFR converte più del CSTR?",
+          "risposta": "Perché lavora a concentrazione media del reagente più alta."
+        },
+        {
+          "domanda": "Resa con X = 0,8 e S = 0,9?",
+          "risposta": "72%."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Il progetto dei reattori ideali parte dal bilancio di materia sul reagente limitante. Per il batch, t = N_A0 ∫ dX/(−r_A·V); per il CSTR, V = F_A0·X/(−r_A) con la velocità valutata alle condizioni di uscita; per il PFR, V = F_A0 ∫ dX/(−r_A). Il diagramma di Levenspiel, 1/(−r_A) in funzione di X, rende visibile il confronto: il volume del CSTR è un rettangolo, quello del PFR l'area sotto la curva. Per ordini positivi il PFR richiede meno volume, e N CSTR in serie tendono al PFR per N grande.",
+        "La cinetica si esprime come −r_A = k(T)·C_Aⁿ, con k che segue Arrhenius, k = k₀·e^(−Ea/RT). Con Ea = 50 kJ/mol, passando da 300 a 310 K la costante aumenta di circa 1,9 volte. Per reazioni reversibili la conversione è limitata dall'equilibrio, X_eq(T): per quelle esotermiche X_eq diminuisce con T, e il profilo di temperatura ottimale scende lungo il reattore. Industrialmente lo si approssima con letti adiabatici in serie e raffreddamento intermedio o quench.",
+        "Con reazioni multiple contano selettività e resa. Per reazioni in parallelo la scelta di temperatura e concentrazione dipende dagli ordini e dalle energie di attivazione delle reazioni concorrenti: concentrazioni alte favoriscono la reazione di ordine maggiore, temperature alte quella con Ea maggiore. Per reazioni in serie A → R → S esiste un tempo di permanenza ottimale che massimizza l'intermedio R, e il PFR dà rese in R maggiori del CSTR. In questi casi il criterio di scelta non è la conversione massima, ma il profitto legato alla resa nel prodotto voluto.",
+        "Il bilancio di energia accoppia temperatura e conversione. In un reattore adiabatico T = T₀ + ΔT_ad·X, una retta nel piano X-T. In un CSTR esotermico la curva del calore generato in funzione di T ha forma a S, mentre il calore rimosso è una retta: le intersezioni sono gli stati stazionari, che possono essere tre, di cui quello intermedio instabile. Il criterio di stabilità richiede che la pendenza del calore rimosso superi quella del calore generato. Questi concetti sono alla base della prevenzione delle reazioni fuggitive.",
+        "I reattori reali si discostano dagli ideali per zone morte, cortocircuiti e dispersione assiale; si studiano con la distribuzione dei tempi di residenza (RTD), misurata con traccianti, e modelli come la dispersione assiale o i CSTR in serie. Nei reattori catalitici eterogenei la velocità osservata può essere limitata dal trasporto esterno o dalla diffusione nei pori, descritta dal fattore di efficacia. Nel passaggio di scala (scale-up) il rapporto superficie/volume diminuisce, lo scambio termico diventa più difficile e le reazioni esotermiche richiedono particolare attenzione. Per questo molti processi si sviluppano prima in laboratorio e in impianto pilota, misurando calore di reazione e coefficienti di scambio."
+      ],
+      "metodo": [
+        "Ricava da solo le equazioni di progetto dei tre reattori partendo dal bilancio generale.",
+        "Disegna un diagramma di Levenspiel per una cinetica data e confronta graficamente i volumi.",
+        "Risolvi il caso di N CSTR in serie e verifica numericamente la convergenza al PFR.",
+        "Studia un esempio di reazioni in serie trovando il τ ottimale per l'intermedio.",
+        "Traccia le curve calore generato-calore rimosso di un CSTR e individua gli stati stazionari."
+      ],
+      "ricorda": [
+        "CSTR: velocità alle condizioni di uscita.",
+        "1 − X = 1/(1 + kτᵢ)^N per N CSTR uguali del primo ordine.",
+        "Esotermiche reversibili: raffreddare tra i letti.",
+        "Stabilità: pendenza del calore rimosso > pendenza del calore generato."
+      ],
+      "errori": [
+        "Valutare la velocità del CSTR alle condizioni di ingresso.",
+        "Confondere velocità spaziale e tempo spaziale.",
+        "Pensare che il miscelamento migliori sempre la resa.",
+        "Ignorare l'equilibrio quando si aumenta la temperatura di una reazione esotermica.",
+        "Trascurare la diffusione nei pori nei catalizzatori di grandi dimensioni."
+      ],
+      "domande": [
+        {
+          "domanda": "V di un CSTR con F_A0 = 10 mol/s, X = 0,5, −r_A = 0,02 mol/(L·s)?",
+          "risposta": "250 L."
+        },
+        {
+          "domanda": "Conversione di due CSTR del primo ordine in serie con kτ = 1 ciascuno?",
+          "risposta": "75%."
+        },
+        {
+          "domanda": "Quanto aumenta k da 300 a 310 K con Ea = 50 kJ/mol?",
+          "risposta": "Circa 1,9 volte."
+        },
+        {
+          "domanda": "Perché un CSTR esotermico può avere più stati stazionari?",
+          "risposta": "Perché il calore generato ha andamento a S in T mentre quello rimosso è lineare."
+        },
+        {
+          "domanda": "A cosa serve la RTD?",
+          "risposta": "A descrivere quanto il flusso reale si discosta dai modelli ideali."
+        }
+      ]
+    }
+  },
+  "Processi industriali: ammoniaca, acido solforico, acido nitrico": {
+    "superiore": {
+      "spiegazione": [
+        "Ammoniaca, acido solforico e acido nitrico sono tra i prodotti chimici più fabbricati al mondo e servono soprattutto per fertilizzanti, ma anche per esplosivi, plastiche e farmaci. I loro processi sono ottimi esempi di come si applicano equilibrio chimico, cinetica e catalisi. In tutti e tre le reazioni chiave sono esotermiche, avvengono in fase gassosa su catalizzatori solidi e richiedono un compromesso tra conversione e velocità. Il calore liberato viene recuperato producendo vapore.",
+        "L'ammoniaca si produce con il processo Haber-Bosch: N₂ + 3 H₂ ⇌ 2 NH₃. La reazione è esotermica e riduce le moli di gas, quindi per Le Châtelier è favorita da alta pressione e bassa temperatura. A bassa temperatura però è troppo lenta, e si lavora a 400-500 °C con catalizzatore di ferro e a 150-300 bar. Ogni passaggio converte solo il 15-25%: l'ammoniaca si separa condensandola e il gas non reagito si ricicla, con uno spurgo per gli inerti. L'idrogeno viene di solito dal metano con lo steam reforming.",
+        "L'acido solforico si produce con il processo per contatto. Si brucia lo zolfo a SO₂, poi si ossida l'SO₂ a SO₃ su catalizzatore di pentossido di vanadio a 400-600 °C, in più letti con raffreddamento intermedio. L'SO₃ si assorbe in acido solforico al 98%, non in acqua, perché con l'acqua formerebbe una nebbia corrosiva. Con il doppio contatto e doppio assorbimento la conversione supera il 99,7% e le emissioni di SO₂ diventano molto basse. Da 1 t di zolfo si ottengono circa 3 t di acido.",
+        "L'acido nitrico si produce con il processo Ostwald, a partire dall'ammoniaca. Prima l'ammoniaca si ossida a NO su reti di platino-rodio a circa 900 °C, con un contatto di pochi millesimi di secondo. Poi l'NO si ossida a NO₂ raffreddando il gas, e infine l'NO₂ si assorbe in acqua formando acido nitrico e di nuovo un po' di NO, che si riossida. I gas di coda vengono depurati dagli ossidi di azoto con la riduzione catalitica selettiva.",
+        "Questi processi sono collegati tra loro: l'ammoniaca serve per l'acido nitrico, e ammoniaca e acido nitrico insieme danno il nitrato d'ammonio, un fertilizzante. L'acido solforico serve per produrre fertilizzanti fosfatici e in moltissimi altri processi. Oggi la sfida è ridurre l'impatto ambientale: idrogeno prodotto con elettricità rinnovabile, cattura della CO₂, abbattimento di NOx e N₂O e recupero di tutto il calore possibile. Studiare questi processi aiuta a capire come la chimica di laboratorio diventa produzione su scala di milioni di tonnellate."
+      ],
+      "metodo": [
+        "Prepara per ogni processo una scheda con reazioni, catalizzatore, temperatura, pressione e ciclo.",
+        "Spiega con Le Châtelier ogni scelta delle condizioni operative.",
+        "Disegna uno schema a blocchi semplificato dei tre processi.",
+        "Fai i calcoli stechiometrici: H₂ per l'ammoniaca, acido da zolfo, ammoniaca per l'acido nitrico.",
+        "Collega i processi tra loro e ai prodotti finali (fertilizzanti, esplosivi)."
+      ],
+      "ricorda": [
+        "Catalizzatori: Fe (NH₃), V₂O₅ (H₂SO₄), Pt-Rh (HNO₃).",
+        "SO₃ in acido al 98%, mai in acqua.",
+        "Bassa conversione per passaggio → riciclo.",
+        "1 t S → circa 3 t H₂SO₄."
+      ],
+      "errori": [
+        "Scambiare i catalizzatori dei tre processi.",
+        "Pensare che a bassa temperatura l'equilibrio dell'ammoniaca sia sfavorevole.",
+        "Credere che l'SO₃ non sia solubile in acqua.",
+        "Dimenticare lo spurgo nel ciclo dell'ammoniaca.",
+        "Considerare l'NO prodotto nell'assorbimento come uno scarto."
+      ],
+      "domande": [
+        {
+          "domanda": "Perché la sintesi dell'ammoniaca si fa ad alta pressione?",
+          "risposta": "Perché diminuiscono le moli di gas e l'equilibrio si sposta verso NH₃."
+        },
+        {
+          "domanda": "Quale catalizzatore si usa per ossidare SO₂?",
+          "risposta": "Pentossido di vanadio."
+        },
+        {
+          "domanda": "Perché l'SO₃ si assorbe in acido al 98%?",
+          "risposta": "Per evitare la nebbia di acido che si forma con l'acqua."
+        },
+        {
+          "domanda": "Su che cosa si ossida l'ammoniaca nel processo Ostwald?",
+          "risposta": "Su reti di platino-rodio a circa 900 °C."
+        },
+        {
+          "domanda": "Quante tonnellate di acido solforico si ottengono da 1 t di zolfo?",
+          "risposta": "Circa 3,06 t."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "La sintesi dell'ammoniaca, N₂ + 3 H₂ ⇌ 2 NH₃ con ΔH ≈ −92 kJ per 2 moli di NH₃, è limitata dall'equilibrio. Il catalizzatore è magnetite ridotta a ferro, promossa con K₂O, Al₂O₃ e CaO, e viene avvelenato da ossigenati e composti dello zolfo. Il convertitore ha più letti adiabatici con raffreddamento intermedio per quench di gas freddo o con scambiatori, così da seguire la curva della velocità massima. Il ciclo comprende raffreddamento, condensazione dell'ammoniaca, riciclo con compressore e spurgo di argon e metano, da cui si recupera spesso l'idrogeno.",
+        "Il gas di sintesi nasce dal reforming primario del metano con vapore su nichel a 800-900 °C, reazione fortemente endotermica condotta in tubi riscaldati in un forno. Nel reforming secondario si aggiunge aria: la combustione parziale fornisce calore e l'azoto nel rapporto giusto. Seguono la conversione del CO con la reazione di shift ad alta e bassa temperatura, la rimozione della CO₂ per assorbimento e la metanazione delle tracce di ossidi di carbonio. Il consumo teorico è di circa 178 kg di H₂ per tonnellata di NH₃.",
+        "Nel processo per contatto l'ossidazione 2 SO₂ + O₂ ⇌ 2 SO₃ è esotermica e reversibile, catalizzata da V₂O₅ con promotori alcalini, attivo tra circa 400 e 600 °C. Nel diagramma conversione-temperatura ogni letto adiabatico segue una retta che si avvicina alla curva di equilibrio; il raffreddamento tra i letti riporta il gas lontano dall'equilibrio. Con il doppio assorbimento l'SO₃ viene tolto dopo il terzo letto, l'equilibrio si sposta e la conversione globale supera il 99,7%. Il calore recuperato rende l'impianto esportatore netto di vapore ed energia elettrica.",
+        "Nel processo Ostwald la reazione 4 NH₃ + 5 O₂ → 4 NO + 6 H₂O su Pt-Rh è controllata dal trasporto di materia e avviene in millisecondi; tempi più lunghi o temperature non adatte favoriscono N₂ e N₂O. Le perdite di platino per volatilizzazione si recuperano in parte con reti di palladio. L'ossidazione di NO a NO₂ ha una velocità che diminuisce con la temperatura, perciò il gas si raffredda e si comprime; negli impianti a doppia pressione l'assorbimento si fa a pressione più alta per migliorare la resa. L'acido prodotto ha circa il 60-68% di HNO₃.",
+        "La concentrazione oltre il 68% è impedita dall'azeotropo di massimo con l'acqua, e si supera con distillazione estrattiva usando acido solforico o nitrato di magnesio. Le emissioni più importanti sono NOx, abbattuti con la riduzione catalitica selettiva a NH₃, e N₂O, gas serra molto potente, eliminato con catalizzatori di decomposizione. I tre processi si integrano nei complessi per fertilizzanti: ammoniaca, acido nitrico, nitrato d'ammonio, urea e fosfati. La transizione energetica spinge verso idrogeno elettrolitico e cattura della CO₂ dai reformer."
+      ],
+      "metodo": [
+        "Costruisci il diagramma conversione-temperatura dell'SO₂ con rette adiabatiche e curva di equilibrio.",
+        "Calcola la conversione di equilibrio dell'ammoniaca a due pressioni diverse usando una costante di equilibrio tabellata.",
+        "Fai il bilancio di materia di un ciclo di sintesi con riciclo e spurgo.",
+        "Disegna lo schema a blocchi completo dal metano al nitrato d'ammonio.",
+        "Confronta i tre processi in una tabella: termodinamica, catalisi, reattore, recupero energetico, emissioni."
+      ],
+      "ricorda": [
+        "Fe promosso / V₂O₅ / Pt-Rh.",
+        "DCDA → conversione > 99,7%.",
+        "NO + O₂ più veloce a freddo.",
+        "Azeotropo HNO₃-acqua ≈ 68%."
+      ],
+      "errori": [
+        "Dimenticare la metanazione: gli ossigenati avvelenano il catalizzatore dell'ammoniaca.",
+        "Prolungare il tempo di contatto sulle reti di platino pensando di aumentare la resa.",
+        "Pensare che più letti senza assorbimento intermedio bastino a superare il 99,7%.",
+        "Usare il rapporto H₂/NH₃ = 3 invece di 1,5.",
+        "Trascurare l'N₂O tra le emissioni dell'acido nitrico."
+      ],
+      "domande": [
+        {
+          "domanda": "Quanti kg di H₂ servono per 1 t di NH₃?",
+          "risposta": "Circa 178 kg."
+        },
+        {
+          "domanda": "A cosa serve il reforming secondario?",
+          "risposta": "A fornire calore e l'azoto per la sintesi, tramite combustione parziale con aria."
+        },
+        {
+          "domanda": "Perché il doppio assorbimento aumenta la conversione?",
+          "risposta": "Togliendo SO₃ si sposta l'equilibrio verso i prodotti nei letti finali."
+        },
+        {
+          "domanda": "Quanta NH₃ serve per 1 t di HNO₃ con resa del 100%?",
+          "risposta": "Circa 0,27 t."
+        },
+        {
+          "domanda": "Come si supera l'azeotropo dell'acido nitrico?",
+          "risposta": "Con distillazione estrattiva con H₂SO₄ o Mg(NO₃)₂."
+        }
+      ]
+    }
+  },
+  "Sicurezza e controllo dei processi": {
+    "superiore": {
+      "spiegazione": [
+        "Un impianto chimico deve funzionare in modo stabile e sicuro, anche quando cambiano le condizioni esterne. Il controllo automatico mantiene le variabili importanti, come temperatura, pressione, livello e portata, vicino al valore desiderato, il set point. L'anello di retroazione è formato da un sensore con trasmettitore, che misura, da un regolatore, che confronta la misura con il set point, e da un organo di regolazione, quasi sempre una valvola. Negli schemi P&ID ogni strumento ha una sigla: TIC è un regolatore-indicatore di temperatura, LIC di livello, FIC di portata.",
+        "Il regolatore più diffuso è il PID. L'azione proporzionale reagisce in modo proporzionale all'errore: con guadagno 2 e un errore del 5%, l'uscita cambia del 10%. Da sola lascia però un piccolo errore permanente, l'offset. L'azione integrale lo elimina, perché continua a correggere finché l'errore non è zero. L'azione derivativa anticipa, reagendo alla velocità con cui l'errore cambia.",
+        "La sicurezza si basa su più protezioni. Ogni valvola ha una posizione di sicurezza in caso di guasto: quella del combustibile di un forno si chiude, quella dell'acqua di raffreddamento di un reattore si apre. I recipienti in pressione hanno valvole di sicurezza o dischi di rottura che scaricano il fluido se la pressione supera il limite. Gli impianti più pericolosi rientrano nella direttiva Seveso, recepita in Italia con il D.Lgs. 105/2015, che impone piani di sicurezza e di emergenza.",
+        "Per prevenire incendi ed esplosioni si ricorda il triangolo del fuoco: combustibile, comburente e innesco. Ogni gas infiammabile ha un intervallo di infiammabilità: il metano brucia in aria solo tra il 5% e il 15% circa. Per eliminare l'ossigeno si inertizzano i serbatoi con azoto, e si controllano le fonti di innesco, comprese le scariche elettrostatiche. Nei reattori esotermici il pericolo principale è la reazione fuggitiva: se il raffreddamento non basta, la temperatura sale sempre più in fretta.",
+        "I pericoli si analizzano in modo sistematico. Nell'HAZOP un gruppo di esperti esamina l'impianto parte per parte combinando parole guida (nessuno, più, meno, inverso) con i parametri di processo, e per ogni deviazione cerca cause, conseguenze e rimedi. Il rischio si valuta come probabilità per gravità del danno, e si riduce con la prevenzione e con la protezione. Anche le persone fanno parte della sicurezza: formazione, procedure e dispositivi di protezione individuale sono indispensabili."
+      ],
+      "metodo": [
+        "Disegna un anello di regolazione di temperatura e scrivi accanto a ogni elemento la sua funzione.",
+        "Impara le lettere delle sigle degli strumenti (T, P, F, L e I, C, T).",
+        "Prepara una tabella con le azioni P, I, D: cosa fanno, vantaggi, problemi.",
+        "Per alcune valvole di un impianto scegli la posizione di sicurezza e motivala.",
+        "Prova a fare un piccolo HAZOP su un serbatoio con pompa usando le parole guida."
+      ],
+      "ricorda": [
+        "Solo P → offset; I lo elimina; D anticipa.",
+        "Prima lettera = grandezza, lettere successive = funzione.",
+        "Triangolo del fuoco: togli un lato e il fuoco non c'è.",
+        "Rischio = probabilità · gravità."
+      ],
+      "errori": [
+        "Confondere valvole di regolazione e valvole di sicurezza.",
+        "Pensare che tutte le valvole debbano chiudersi in caso di guasto.",
+        "Credere che una miscela troppo ricca di combustibile sia sicura.",
+        "Confondere pericolo (proprietà della sostanza) e rischio.",
+        "Dimenticare che l'azoto può causare asfissia."
+      ],
+      "domande": [
+        {
+          "domanda": "Che cosa indica la sigla LIC?",
+          "risposta": "Un regolatore-indicatore di livello."
+        },
+        {
+          "domanda": "Che cosa lascia un regolatore solo proporzionale?",
+          "risposta": "Un errore permanente, l'offset."
+        },
+        {
+          "domanda": "In quale posizione va la valvola del combustibile di un forno in caso di guasto?",
+          "risposta": "Chiusa."
+        },
+        {
+          "domanda": "Tra quali concentrazioni il metano è infiammabile in aria?",
+          "risposta": "Circa tra il 5% e il 15%."
+        },
+        {
+          "domanda": "Quali sono i lati del triangolo del fuoco?",
+          "risposta": "Combustibile, comburente e innesco."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "La dinamica dei processi si descrive spesso con modelli semplici, come il primo ordine con ritardo puro (FOPDT), caratterizzati da guadagno, costante di tempo e tempo morto. Il PID ha la legge u = Kc·[e + (1/τI)∫e dt + τD·de/dt]: il guadagno determina la prontezza, il tempo integrale l'eliminazione dell'offset, il tempo derivativo l'anticipo. La taratura si fa con metodi classici come Ziegler-Nichols o con regole basate sul modello, come IMC. Problemi pratici sono il rumore sulla derivata, la saturazione dell'integrale quando la valvola arriva a fondo corsa e le oscillazioni dovute a guadagni troppo alti.",
+        "Gli schemi avanzati migliorano la retroazione semplice. Nella cascata un anello interno veloce, per esempio sulla temperatura della camicia, riceve il set point da un anello esterno lento sulla temperatura del reattore, e corregge i disturbi prima che arrivino al processo. Il feedforward misura un disturbo e lo compensa con un modello, di solito insieme alla retroazione. Esistono poi controlli di rapporto, override e, per sistemi con molte variabili interagenti, il controllo predittivo basato su modello (MPC), molto usato nelle raffinerie.",
+        "La sicurezza si organizza in strati di protezione indipendenti: progetto intrinsecamente sicuro, regolazione di base, allarmi e intervento dell'operatore, sistema strumentato di sicurezza (SIS), dispositivi meccanici come valvole di sicurezza e dischi di rottura, contenimento e piani di emergenza. Il SIS deve avere sensori, logica e attuatori separati dalla regolazione, e la sua affidabilità si esprime con il livello di integrità (SIL). Il metodo LOPA stima la frequenza di uno scenario moltiplicando la frequenza dell'evento iniziatore per le probabilità di guasto di ciascuno strato. Se per esempio l'evento iniziatore ha frequenza 0,1 all'anno e due strati hanno probabilità di guasto 0,1 e 0,01, la frequenza dello scenario scende a 10⁻⁴ all'anno.",
+        "L'identificazione dei pericoli usa HAZOP, What-if e FMEA; le frequenze si stimano con alberi dei guasti e alberi degli eventi; le conseguenze con modelli di dispersione, incendio ed esplosione, come i getti incendiati, le esplosioni di nubi di vapore (VCE) e il BLEVE dei recipienti di gas liquefatti. Il rischio, frequenza per conseguenze, si confronta con criteri di accettabilità. Per l'infiammabilità si considerano LFL, UFL, temperatura di infiammabilità e di autoaccensione; per le miscele si usa la regola di Le Chatelier, che per 50% metano e 50% propano dà un LFL di circa il 3%. La media aritmetica dei due limiti darebbe invece 3,55% e sottovaluterebbe il pericolo.",
+        "Le reazioni fuggitive si studiano con il diagramma di Semenov, che confronta calore generato e rimosso, e con prove calorimetriche (calorimetro di reazione, ARC) che misurano calore di reazione, aumento adiabatico di temperatura e tempo alla massima velocità. I sistemi di sfogo si dimensionano anche per flussi bifase. Il principio della sicurezza intrinseca suggerisce di ridurre le quantità pericolose, sostituire le sostanze, attenuare le condizioni e semplificare l'impianto. Il quadro normativo europeo comprende Seveso III, ATEX per le atmosfere esplosive e il regolamento CLP per la classificazione delle sostanze."
+      ],
+      "metodo": [
+        "Simula in un foglio di calcolo un processo del primo ordine con regolatore PI e osserva l'effetto di Kc e τI.",
+        "Disegna un P&ID con una cascata e un feedforward su un reattore incamiciato.",
+        "Svolgi un esercizio LOPA con tre strati di protezione e confronta la frequenza con un criterio di accettabilità.",
+        "Calcola il LFL di alcune miscele con la regola di Le Chatelier.",
+        "Ripassa i principi della sicurezza intrinseca con un esempio per ciascuno."
+      ],
+      "ricorda": [
+        "Cascata: interno veloce, esterno lento.",
+        "Feedforward + feedback, mai feedforward da solo.",
+        "SIS indipendente dalla regolazione di base.",
+        "Le Chatelier: LFL_mix = 1/Σ(yᵢ/LFLᵢ)."
+      ],
+      "errori": [
+        "Considerare indipendenti due strati che condividono lo stesso sensore.",
+        "Usare l'azione derivativa su una misura molto rumorosa.",
+        "Tarare il PID senza tenere conto del tempo morto.",
+        "Fare la media aritmetica dei limiti di infiammabilità.",
+        "Dimensionare lo sfogo per solo vapore quando il flusso è bifase."
+      ],
+      "domande": [
+        {
+          "domanda": "In una cascata chi fornisce il set point a chi?",
+          "risposta": "Il regolatore principale (esterno) a quello secondario (interno)."
+        },
+        {
+          "domanda": "Che cosa misura il feedforward?",
+          "risposta": "Il disturbo, prima che modifichi la variabile controllata."
+        },
+        {
+          "domanda": "LFL di una miscela 50% metano (5%) e 50% propano (2,1%)?",
+          "risposta": "Circa 3,0%."
+        },
+        {
+          "domanda": "Che cos'è il SIL?",
+          "risposta": "Il livello di integrità di sicurezza di una funzione strumentata."
+        },
+        {
+          "domanda": "Perché un CSTR esotermico può andare in runaway?",
+          "risposta": "Perché il calore generato cresce esponenzialmente con T e quello rimosso solo linearmente."
+        }
+      ]
+    }
+  }
+}

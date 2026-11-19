@@ -1,0 +1,1474 @@
+{
+  "Rappresentazione dei dati e sistema binario": {
+    "superiore": [
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "unità minima:",
+        "a": "Bit (0 o 1)"
+      },
+      {
+        "da": "Bit (0 o 1)",
+        "relazione": "8 bit formano un",
+        "a": "Byte"
+      },
+      {
+        "da": "Byte",
+        "relazione": "multipli SI:",
+        "a": "kB = 10³ B, MB = 10⁶ B"
+      },
+      {
+        "da": "Byte",
+        "relazione": "multipli binari:",
+        "a": "KiB = 2¹⁰ = 1024 B"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "i numeri si scrivono in",
+        "a": "Sistemi di numerazione posizionali"
+      },
+      {
+        "da": "Sistemi di numerazione posizionali",
+        "relazione": "base 2:",
+        "a": "Binario (cifre 0 e 1)"
+      },
+      {
+        "da": "Sistemi di numerazione posizionali",
+        "relazione": "base 16:",
+        "a": "Esadecimale (0-9, A-F)"
+      },
+      {
+        "da": "Binario (cifre 0 e 1)",
+        "relazione": "da decimale:",
+        "a": "Divisioni successive per 2, resti letti dal basso"
+      },
+      {
+        "da": "Binario (cifre 0 e 1)",
+        "relazione": "a decimale:",
+        "a": "Somma delle potenze di 2 dove c'è 1"
+      },
+      {
+        "da": "Esadecimale (0-9, A-F)",
+        "relazione": "1 cifra =",
+        "a": "4 bit"
+      },
+      {
+        "da": "Bit (0 o 1)",
+        "relazione": "n bit danno",
+        "a": "2ⁿ combinazioni"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "i negativi in",
+        "a": "Complemento a due"
+      },
+      {
+        "da": "Complemento a due",
+        "relazione": "ricetta:",
+        "a": "Inverti i bit e aggiungi 1"
+      },
+      {
+        "da": "Complemento a due",
+        "relazione": "con 8 bit:",
+        "a": "da -128 a +127"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "il testo con",
+        "a": "Codifiche ASCII e UTF-8"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "immagini e suoni come",
+        "a": "Pixel e campioni numerici"
+      }
+    ],
+    "universita": [
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "si fonda su",
+        "a": "Notazione posizionale in base b"
+      },
+      {
+        "da": "Notazione posizionale in base b",
+        "relazione": "valore:",
+        "a": "Σ cᵢ · bⁱ"
+      },
+      {
+        "da": "Notazione posizionale in base b",
+        "relazione": "basi usate:",
+        "a": "2, 8, 16"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "interi senza segno con n bit:",
+        "a": "da 0 a 2ⁿ - 1"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "interi con segno:",
+        "a": "Complemento a due"
+      },
+      {
+        "da": "Complemento a due",
+        "relazione": "intervallo:",
+        "a": "da -2ⁿ⁻¹ a 2ⁿ⁻¹ - 1"
+      },
+      {
+        "da": "Complemento a due",
+        "relazione": "vantaggio:",
+        "a": "Stesso circuito per somma e sottrazione"
+      },
+      {
+        "da": "Complemento a due",
+        "relazione": "errore se risultato fuori intervallo:",
+        "a": "Overflow"
+      },
+      {
+        "da": "Overflow",
+        "relazione": "senza segno:",
+        "a": "Aritmetica modulo 2ⁿ"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "operazioni sui bit:",
+        "a": "AND, OR, XOR, NOT, shift"
+      },
+      {
+        "da": "AND, OR, XOR, NOT, shift",
+        "relazione": "shift a sinistra di k =",
+        "a": "Moltiplicare per 2ᵏ"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "numeri reali con",
+        "a": "Virgola mobile IEEE 754"
+      },
+      {
+        "da": "Virgola mobile IEEE 754",
+        "relazione": "campi:",
+        "a": "Segno, esponente, mantissa"
+      },
+      {
+        "da": "Virgola mobile IEEE 754",
+        "relazione": "doppia precisione:",
+        "a": "64 bit (1 + 11 + 52)"
+      },
+      {
+        "da": "Virgola mobile IEEE 754",
+        "relazione": "conseguenza:",
+        "a": "Errori di arrotondamento (0.1 + 0.2 ≠ 0.3)"
+      },
+      {
+        "da": "Errori di arrotondamento (0.1 + 0.2 ≠ 0.3)",
+        "relazione": "si confronta con",
+        "a": "Tolleranza: abs(a - b) < ε"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "caratteri con",
+        "a": "Unicode"
+      },
+      {
+        "da": "Unicode",
+        "relazione": "codifica a lunghezza variabile:",
+        "a": "UTF-8 (da 1 a 4 byte)"
+      },
+      {
+        "da": "UTF-8 (da 1 a 4 byte)",
+        "relazione": "compatibile con",
+        "a": "ASCII (7 bit)"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "rilevazione errori:",
+        "a": "Bit di parità e CRC"
+      },
+      {
+        "da": "Bit di parità e CRC",
+        "relazione": "correzione:",
+        "a": "Codici di Hamming"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "segnali analogici con",
+        "a": "Campionamento e quantizzazione"
+      },
+      {
+        "da": "Campionamento e quantizzazione",
+        "relazione": "regola:",
+        "a": "Teorema di Nyquist (f ≥ 2·f_max)"
+      },
+      {
+        "da": "Rappresentazione dei dati e sistema binario",
+        "relazione": "per ridurre lo spazio:",
+        "a": "Compressione"
+      },
+      {
+        "da": "Compressione",
+        "relazione": "senza perdita:",
+        "a": "ZIP, PNG"
+      },
+      {
+        "da": "Compressione",
+        "relazione": "con perdita:",
+        "a": "JPEG, MP3"
+      }
+    ]
+  },
+  "Algoritmi e diagrammi di flusso": {
+    "superiore": [
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "algoritmo =",
+        "a": "Sequenza finita di passi non ambigui"
+      },
+      {
+        "da": "Sequenza finita di passi non ambigui",
+        "relazione": "proprietà:",
+        "a": "Finitezza, eseguibilità, determinismo"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "si descrive con",
+        "a": "Pseudocodice o diagramma di flusso"
+      },
+      {
+        "da": "Pseudocodice o diagramma di flusso",
+        "relazione": "inizio e fine:",
+        "a": "Ovale"
+      },
+      {
+        "da": "Pseudocodice o diagramma di flusso",
+        "relazione": "input/output:",
+        "a": "Parallelogramma"
+      },
+      {
+        "da": "Pseudocodice o diagramma di flusso",
+        "relazione": "calcolo:",
+        "a": "Rettangolo"
+      },
+      {
+        "da": "Pseudocodice o diagramma di flusso",
+        "relazione": "condizione:",
+        "a": "Rombo (vero/falso)"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "strutture di controllo:",
+        "a": "Sequenza, selezione, iterazione"
+      },
+      {
+        "da": "Sequenza, selezione, iterazione",
+        "relazione": "bastano per tutto:",
+        "a": "Teorema di Böhm-Jacopini"
+      },
+      {
+        "da": "Sequenza, selezione, iterazione",
+        "relazione": "iterazione:",
+        "a": "Ciclo con contatore o con condizione"
+      },
+      {
+        "da": "Ciclo con contatore o con condizione",
+        "relazione": "rischio:",
+        "a": "Ciclo infinito"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "algoritmi classici:",
+        "a": "Ricerca e ordinamento"
+      },
+      {
+        "da": "Ricerca e ordinamento",
+        "relazione": "ricerca lineare:",
+        "a": "Controlla tutti gli elementi"
+      },
+      {
+        "da": "Ricerca e ordinamento",
+        "relazione": "ricerca binaria:",
+        "a": "Dimezza una lista ordinata"
+      },
+      {
+        "da": "Ricerca e ordinamento",
+        "relazione": "ordinamenti semplici:",
+        "a": "Bubble sort, selection sort"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "si controlla con",
+        "a": "Tabella di traccia delle variabili"
+      }
+    ],
+    "universita": [
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "si valuta con",
+        "a": "Complessità computazionale"
+      },
+      {
+        "da": "Complessità computazionale",
+        "relazione": "notazione:",
+        "a": "O grande (caso peggiore)"
+      },
+      {
+        "da": "O grande (caso peggiore)",
+        "relazione": "costante:",
+        "a": "O(1)"
+      },
+      {
+        "da": "O grande (caso peggiore)",
+        "relazione": "logaritmica:",
+        "a": "O(log n), ricerca binaria"
+      },
+      {
+        "da": "O grande (caso peggiore)",
+        "relazione": "lineare:",
+        "a": "O(n), ricerca sequenziale"
+      },
+      {
+        "da": "O grande (caso peggiore)",
+        "relazione": "quasi lineare:",
+        "a": "O(n log n), merge sort"
+      },
+      {
+        "da": "O grande (caso peggiore)",
+        "relazione": "quadratica:",
+        "a": "O(n²), bubble e insertion sort"
+      },
+      {
+        "da": "O grande (caso peggiore)",
+        "relazione": "esponenziale:",
+        "a": "O(2ⁿ), sottoinsiemi"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "tecniche di progetto:",
+        "a": "Divide et impera"
+      },
+      {
+        "da": "Divide et impera",
+        "relazione": "esempi:",
+        "a": "Merge sort, quicksort, ricerca binaria"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "tecnica:",
+        "a": "Ricorsione"
+      },
+      {
+        "da": "Ricorsione",
+        "relazione": "richiede:",
+        "a": "Caso base + passo ricorsivo"
+      },
+      {
+        "da": "Ricorsione",
+        "relazione": "costo stimato con",
+        "a": "Equazioni di ricorrenza"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "tecnica:",
+        "a": "Programmazione dinamica"
+      },
+      {
+        "da": "Programmazione dinamica",
+        "relazione": "evita ricalcoli con",
+        "a": "Memoizzazione"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "tecnica:",
+        "a": "Algoritmi greedy"
+      },
+      {
+        "da": "Algoritmi greedy",
+        "relazione": "scelgono",
+        "a": "Il passo migliore al momento"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "correttezza con",
+        "a": "Invarianti di ciclo"
+      },
+      {
+        "da": "Invarianti di ciclo",
+        "relazione": "provano anche",
+        "a": "La terminazione (funzione che decresce)"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "limite per i confronti:",
+        "a": "Ordinamento Ω(n log n)"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "limiti teorici:",
+        "a": "Calcolabilità"
+      },
+      {
+        "da": "Calcolabilità",
+        "relazione": "modello:",
+        "a": "Macchina di Turing"
+      },
+      {
+        "da": "Calcolabilità",
+        "relazione": "problema indecidibile:",
+        "a": "Problema della fermata"
+      },
+      {
+        "da": "Algoritmi e diagrammi di flusso",
+        "relazione": "classi di problemi:",
+        "a": "P e NP"
+      },
+      {
+        "da": "P e NP",
+        "relazione": "domanda aperta:",
+        "a": "P = NP?"
+      }
+    ]
+  },
+  "Programmazione (Python)": {
+    "superiore": [
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "lavora con",
+        "a": "Variabili e tipi di dato"
+      },
+      {
+        "da": "Variabili e tipi di dato",
+        "relazione": "tipi base:",
+        "a": "int, float, str, bool"
+      },
+      {
+        "da": "Variabili e tipi di dato",
+        "relazione": "conversione:",
+        "a": "int(), float(), str()"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "operatori:",
+        "a": "Aritmetici, di confronto, logici"
+      },
+      {
+        "da": "Aritmetici, di confronto, logici",
+        "relazione": "divisione intera e resto:",
+        "a": "// e %"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "input e output:",
+        "a": "input() e print()"
+      },
+      {
+        "da": "input() e print()",
+        "relazione": "input() restituisce",
+        "a": "Sempre una stringa"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "selezione:",
+        "a": "if / elif / else"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "iterazione:",
+        "a": "for e while"
+      },
+      {
+        "da": "for e while",
+        "relazione": "for con",
+        "a": "range(inizio, fine, passo)"
+      },
+      {
+        "da": "range(inizio, fine, passo)",
+        "relazione": "la fine è",
+        "a": "Esclusa"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "blocchi definiti da",
+        "a": "Indentazione"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "sequenze:",
+        "a": "Stringhe e liste"
+      },
+      {
+        "da": "Stringhe e liste",
+        "relazione": "indici da 0, fette:",
+        "a": "s[a:b]"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "riuso del codice:",
+        "a": "Funzioni (def, return)"
+      },
+      {
+        "da": "Funzioni (def, return)",
+        "relazione": "variabili interne:",
+        "a": "Locali"
+      }
+    ],
+    "universita": [
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "è un linguaggio",
+        "a": "Interpretato, tipizzazione dinamica"
+      },
+      {
+        "da": "Interpretato, tipizzazione dinamica",
+        "relazione": "il tipo appartiene",
+        "a": "All'oggetto, non alla variabile"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "modello dei dati:",
+        "a": "Nomi che riferiscono oggetti"
+      },
+      {
+        "da": "Nomi che riferiscono oggetti",
+        "relazione": "oggetti mutabili:",
+        "a": "list, dict, set"
+      },
+      {
+        "da": "Nomi che riferiscono oggetti",
+        "relazione": "oggetti immutabili:",
+        "a": "int, float, str, tuple"
+      },
+      {
+        "da": "Nomi che riferiscono oggetti",
+        "relazione": "b = a",
+        "a": "Non copia: stesso oggetto"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "funzioni:",
+        "a": "Parametri e valori di ritorno"
+      },
+      {
+        "da": "Parametri e valori di ritorno",
+        "relazione": "passaggio:",
+        "a": "Per riferimento all'oggetto"
+      },
+      {
+        "da": "Parametri e valori di ritorno",
+        "relazione": "trappola:",
+        "a": "Default mutabile (l=[])"
+      },
+      {
+        "da": "Parametri e valori di ritorno",
+        "relazione": "visibilità:",
+        "a": "Regola LEGB"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "costrutti compatti:",
+        "a": "Comprehension"
+      },
+      {
+        "da": "Comprehension",
+        "relazione": "esempio:",
+        "a": "[x*x for x in v if x > 0]"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "iterazione su",
+        "a": "Iterabili e generatori (yield)"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "errori gestiti con",
+        "a": "Eccezioni (try / except)"
+      },
+      {
+        "da": "Eccezioni (try / except)",
+        "relazione": "esempi:",
+        "a": "ValueError, TypeError, KeyError"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "paradigma a oggetti:",
+        "a": "Classi e oggetti"
+      },
+      {
+        "da": "Classi e oggetti",
+        "relazione": "definiti da",
+        "a": "Attributi e metodi (self)"
+      },
+      {
+        "da": "Classi e oggetti",
+        "relazione": "riuso:",
+        "a": "Ereditarietà"
+      },
+      {
+        "da": "Classi e oggetti",
+        "relazione": "metodi speciali:",
+        "a": "__init__, __str__, __eq__"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "organizzazione:",
+        "a": "Moduli e pacchetti (import)"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "libreria standard:",
+        "a": "math, random, collections"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "qualità:",
+        "a": "Test (assert, unittest)"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "file:",
+        "a": "open() con with"
+      },
+      {
+        "da": "Programmazione (Python)",
+        "relazione": "numeri reali:",
+        "a": "float IEEE 754"
+      }
+    ]
+  },
+  "Strutture dati": {
+    "superiore": [
+      {
+        "da": "Strutture dati",
+        "relazione": "organizzano",
+        "a": "Insiemi di dati in memoria"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "sequenza indicizzata:",
+        "a": "Array / lista"
+      },
+      {
+        "da": "Array / lista",
+        "relazione": "accesso per indice:",
+        "a": "Immediato, O(1)"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "ultimo entrato, primo uscito:",
+        "a": "Pila (LIFO)"
+      },
+      {
+        "da": "Pila (LIFO)",
+        "relazione": "operazioni:",
+        "a": "push e pop"
+      },
+      {
+        "da": "Pila (LIFO)",
+        "relazione": "usi:",
+        "a": "Annulla, parentesi, chiamate di funzione"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "primo entrato, primo uscito:",
+        "a": "Coda (FIFO)"
+      },
+      {
+        "da": "Coda (FIFO)",
+        "relazione": "operazioni:",
+        "a": "enqueue e dequeue"
+      },
+      {
+        "da": "Coda (FIFO)",
+        "relazione": "usi:",
+        "a": "Stampa, code di attesa"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "coppie chiave-valore:",
+        "a": "Dizionario"
+      },
+      {
+        "da": "Dizionario",
+        "relazione": "chiavi",
+        "a": "Uniche e immutabili"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "senza duplicati:",
+        "a": "Insieme (set)"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "non modificabile:",
+        "a": "Tupla"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "tabella di righe e colonne:",
+        "a": "Matrice (lista di liste)"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "struttura gerarchica:",
+        "a": "Albero"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "nodi e collegamenti:",
+        "a": "Grafo"
+      }
+    ],
+    "universita": [
+      {
+        "da": "Strutture dati",
+        "relazione": "si definiscono come",
+        "a": "Tipi di dato astratti (ADT)"
+      },
+      {
+        "da": "Tipi di dato astratti (ADT)",
+        "relazione": "separano",
+        "a": "Interfaccia e implementazione"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "sequenze:",
+        "a": "Array e liste concatenate"
+      },
+      {
+        "da": "Array e liste concatenate",
+        "relazione": "array:",
+        "a": "Accesso O(1), inserimento O(n)"
+      },
+      {
+        "da": "Array e liste concatenate",
+        "relazione": "lista concatenata:",
+        "a": "Inserimento in testa O(1), accesso O(n)"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "ADT lineari:",
+        "a": "Pila, coda, deque"
+      },
+      {
+        "da": "Pila, coda, deque",
+        "relazione": "in Python:",
+        "a": "list, collections.deque"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "accesso per chiave:",
+        "a": "Tabella hash"
+      },
+      {
+        "da": "Tabella hash",
+        "relazione": "ricerca media:",
+        "a": "O(1)"
+      },
+      {
+        "da": "Tabella hash",
+        "relazione": "problema:",
+        "a": "Collisioni (liste o indirizzamento aperto)"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "gerarchiche:",
+        "a": "Alberi"
+      },
+      {
+        "da": "Alberi",
+        "relazione": "caso importante:",
+        "a": "Albero binario di ricerca (BST)"
+      },
+      {
+        "da": "Albero binario di ricerca (BST)",
+        "relazione": "operazioni:",
+        "a": "O(altezza)"
+      },
+      {
+        "da": "Albero binario di ricerca (BST)",
+        "relazione": "se bilanciato (AVL, rosso-nero):",
+        "a": "O(log n)"
+      },
+      {
+        "da": "Albero binario di ricerca (BST)",
+        "relazione": "in-order dà",
+        "a": "Chiavi in ordine crescente"
+      },
+      {
+        "da": "Alberi",
+        "relazione": "visite in profondità:",
+        "a": "Pre-ordine, in-ordine, post-ordine"
+      },
+      {
+        "da": "Alberi",
+        "relazione": "variante:",
+        "a": "Heap"
+      },
+      {
+        "da": "Heap",
+        "relazione": "realizza",
+        "a": "Coda con priorità"
+      },
+      {
+        "da": "Heap",
+        "relazione": "inserimento ed estrazione:",
+        "a": "O(log n)"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "relazioni generiche:",
+        "a": "Grafi"
+      },
+      {
+        "da": "Grafi",
+        "relazione": "rappresentazioni:",
+        "a": "Liste o matrice di adiacenza"
+      },
+      {
+        "da": "Grafi",
+        "relazione": "visite:",
+        "a": "BFS (coda) e DFS (pila)"
+      },
+      {
+        "da": "Grafi",
+        "relazione": "cammini minimi pesati:",
+        "a": "Algoritmo di Dijkstra"
+      },
+      {
+        "da": "Strutture dati",
+        "relazione": "scelta guidata da",
+        "a": "Costo delle operazioni frequenti"
+      }
+    ]
+  },
+  "Basi di dati e SQL": {
+    "superiore": [
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "database =",
+        "a": "Raccolta organizzata di dati"
+      },
+      {
+        "da": "Raccolta organizzata di dati",
+        "relazione": "gestita da un",
+        "a": "DBMS"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "modello relazionale:",
+        "a": "Tabelle (relazioni)"
+      },
+      {
+        "da": "Tabelle (relazioni)",
+        "relazione": "righe =",
+        "a": "Record (tuple)"
+      },
+      {
+        "da": "Tabelle (relazioni)",
+        "relazione": "colonne =",
+        "a": "Campi (attributi)"
+      },
+      {
+        "da": "Tabelle (relazioni)",
+        "relazione": "identifica ogni riga:",
+        "a": "Chiave primaria"
+      },
+      {
+        "da": "Tabelle (relazioni)",
+        "relazione": "collega le tabelle:",
+        "a": "Chiave esterna"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "si progetta con",
+        "a": "Modello E-R"
+      },
+      {
+        "da": "Modello E-R",
+        "relazione": "elementi:",
+        "a": "Entità, attributi, associazioni"
+      },
+      {
+        "da": "Modello E-R",
+        "relazione": "cardinalità:",
+        "a": "1:1, 1:N, N:N"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "linguaggio:",
+        "a": "SQL"
+      },
+      {
+        "da": "SQL",
+        "relazione": "interrogazione:",
+        "a": "SELECT ... FROM ... WHERE"
+      },
+      {
+        "da": "SQL",
+        "relazione": "ordinamento:",
+        "a": "ORDER BY (ASC / DESC)"
+      },
+      {
+        "da": "SQL",
+        "relazione": "funzioni di aggregazione:",
+        "a": "COUNT, SUM, AVG, MIN, MAX"
+      },
+      {
+        "da": "SQL",
+        "relazione": "modifica dei dati:",
+        "a": "INSERT, UPDATE, DELETE"
+      },
+      {
+        "da": "SQL",
+        "relazione": "unire tabelle:",
+        "a": "JOIN"
+      }
+    ],
+    "universita": [
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "progettazione:",
+        "a": "Concettuale, logica, fisica"
+      },
+      {
+        "da": "Concettuale, logica, fisica",
+        "relazione": "concettuale:",
+        "a": "Schema E-R"
+      },
+      {
+        "da": "Concettuale, logica, fisica",
+        "relazione": "logica:",
+        "a": "Schema relazionale"
+      },
+      {
+        "da": "Schema relazionale",
+        "relazione": "relazione N:N diventa",
+        "a": "Tabella di collegamento"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "vincoli di integrità:",
+        "a": "Chiavi, NOT NULL, UNIQUE, CHECK"
+      },
+      {
+        "da": "Chiavi, NOT NULL, UNIQUE, CHECK",
+        "relazione": "chiave esterna garantisce",
+        "a": "Integrità referenziale"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "qualità dello schema:",
+        "a": "Normalizzazione"
+      },
+      {
+        "da": "Normalizzazione",
+        "relazione": "1FN:",
+        "a": "Valori atomici"
+      },
+      {
+        "da": "Normalizzazione",
+        "relazione": "2FN:",
+        "a": "Niente dipendenze parziali dalla chiave"
+      },
+      {
+        "da": "Normalizzazione",
+        "relazione": "3FN:",
+        "a": "Niente dipendenze transitive"
+      },
+      {
+        "da": "Normalizzazione",
+        "relazione": "evita",
+        "a": "Ridondanza e anomalie"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "fondamento teorico:",
+        "a": "Algebra relazionale"
+      },
+      {
+        "da": "Algebra relazionale",
+        "relazione": "operatori:",
+        "a": "Selezione, proiezione, join"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "SQL DDL:",
+        "a": "CREATE, ALTER, DROP"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "SQL DML:",
+        "a": "SELECT, INSERT, UPDATE, DELETE"
+      },
+      {
+        "da": "SELECT, INSERT, UPDATE, DELETE",
+        "relazione": "raggruppamento:",
+        "a": "GROUP BY + HAVING"
+      },
+      {
+        "da": "SELECT, INSERT, UPDATE, DELETE",
+        "relazione": "join:",
+        "a": "INNER, LEFT, RIGHT, FULL"
+      },
+      {
+        "da": "SELECT, INSERT, UPDATE, DELETE",
+        "relazione": "annidamento:",
+        "a": "Sottoquery"
+      },
+      {
+        "da": "SELECT, INSERT, UPDATE, DELETE",
+        "relazione": "valori mancanti:",
+        "a": "NULL (IS NULL)"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "transazioni:",
+        "a": "Proprietà ACID"
+      },
+      {
+        "da": "Proprietà ACID",
+        "relazione": "significano:",
+        "a": "Atomicità, Coerenza, Isolamento, Durabilità"
+      },
+      {
+        "da": "Proprietà ACID",
+        "relazione": "comandi:",
+        "a": "COMMIT e ROLLBACK"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "prestazioni:",
+        "a": "Indici (B-tree)"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "sicurezza:",
+        "a": "Permessi (GRANT) e prevenzione SQL injection"
+      },
+      {
+        "da": "Basi di dati e SQL",
+        "relazione": "alternative:",
+        "a": "Database NoSQL"
+      }
+    ]
+  },
+  "Reti e Internet": {
+    "superiore": [
+      {
+        "da": "Reti e Internet",
+        "relazione": "rete =",
+        "a": "Dispositivi collegati che scambiano dati"
+      },
+      {
+        "da": "Dispositivi collegati che scambiano dati",
+        "relazione": "per estensione:",
+        "a": "LAN, MAN, WAN"
+      },
+      {
+        "da": "Dispositivi collegati che scambiano dati",
+        "relazione": "forme:",
+        "a": "Topologie (stella, bus, anello, maglia)"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "dispositivi:",
+        "a": "Switch e router"
+      },
+      {
+        "da": "Switch e router",
+        "relazione": "switch:",
+        "a": "Collega dispositivi nella LAN (MAC)"
+      },
+      {
+        "da": "Switch e router",
+        "relazione": "router:",
+        "a": "Instrada tra reti diverse (IP)"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "regole di comunicazione:",
+        "a": "Protocolli"
+      },
+      {
+        "da": "Protocolli",
+        "relazione": "organizzati in",
+        "a": "Livelli (modello TCP/IP)"
+      },
+      {
+        "da": "Livelli (modello TCP/IP)",
+        "relazione": "rete:",
+        "a": "IP"
+      },
+      {
+        "da": "Livelli (modello TCP/IP)",
+        "relazione": "trasporto:",
+        "a": "TCP (affidabile) e UDP (veloce)"
+      },
+      {
+        "da": "Livelli (modello TCP/IP)",
+        "relazione": "applicazione:",
+        "a": "HTTP, DNS, SMTP"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "ogni dispositivo ha un",
+        "a": "Indirizzo IP"
+      },
+      {
+        "da": "Indirizzo IP",
+        "relazione": "IPv4:",
+        "a": "32 bit (es. 192.168.1.10)"
+      },
+      {
+        "da": "Indirizzo IP",
+        "relazione": "assegnato da",
+        "a": "DHCP"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "i nomi diventano IP con",
+        "a": "DNS"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "navigazione sicura:",
+        "a": "HTTPS (cifratura TLS)"
+      }
+    ],
+    "universita": [
+      {
+        "da": "Reti e Internet",
+        "relazione": "architettura a livelli:",
+        "a": "Modello ISO/OSI (7 livelli)"
+      },
+      {
+        "da": "Modello ISO/OSI (7 livelli)",
+        "relazione": "corrisponde a",
+        "a": "Modello TCP/IP (4 livelli)"
+      },
+      {
+        "da": "Modello ISO/OSI (7 livelli)",
+        "relazione": "dati incapsulati in",
+        "a": "Bit, frame, pacchetto, segmento"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "livello collegamento:",
+        "a": "Ethernet e Wi-Fi"
+      },
+      {
+        "da": "Ethernet e Wi-Fi",
+        "relazione": "indirizzo:",
+        "a": "MAC (48 bit)"
+      },
+      {
+        "da": "Ethernet e Wi-Fi",
+        "relazione": "da IP a MAC con",
+        "a": "ARP"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "livello rete:",
+        "a": "IP"
+      },
+      {
+        "da": "IP",
+        "relazione": "IPv4 a 32 bit, IPv6 a",
+        "a": "128 bit"
+      },
+      {
+        "da": "IP",
+        "relazione": "suddivisione:",
+        "a": "Subnetting e CIDR (/n)"
+      },
+      {
+        "da": "Subnetting e CIDR (/n)",
+        "relazione": "host per sottorete:",
+        "a": "2^(32-n) - 2"
+      },
+      {
+        "da": "Subnetting e CIDR (/n)",
+        "relazione": "indirizzo di rete =",
+        "a": "IP AND maschera"
+      },
+      {
+        "da": "IP",
+        "relazione": "indirizzi privati:",
+        "a": "10/8, 172.16/12, 192.168/16"
+      },
+      {
+        "da": "10/8, 172.16/12, 192.168/16",
+        "relazione": "escono su Internet con",
+        "a": "NAT"
+      },
+      {
+        "da": "IP",
+        "relazione": "percorso scelto da",
+        "a": "Instradamento (routing)"
+      },
+      {
+        "da": "IP",
+        "relazione": "messaggi di controllo:",
+        "a": "ICMP (ping)"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "livello trasporto:",
+        "a": "TCP e UDP"
+      },
+      {
+        "da": "TCP e UDP",
+        "relazione": "identificano i servizi con",
+        "a": "Porte (16 bit)"
+      },
+      {
+        "da": "TCP e UDP",
+        "relazione": "TCP:",
+        "a": "Connessione, conferme, controllo di flusso"
+      },
+      {
+        "da": "TCP e UDP",
+        "relazione": "UDP:",
+        "a": "Senza connessione, bassa latenza"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "livello applicazione:",
+        "a": "HTTP, DNS, DHCP, SMTP"
+      },
+      {
+        "da": "HTTP, DNS, DHCP, SMTP",
+        "relazione": "HTTP:",
+        "a": "Richieste (GET, POST) e codici di stato"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "prestazioni:",
+        "a": "Banda, latenza, throughput"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "sicurezza:",
+        "a": "Crittografia simmetrica e asimmetrica"
+      },
+      {
+        "da": "Crittografia simmetrica e asimmetrica",
+        "relazione": "applicata in",
+        "a": "TLS, firma digitale, certificati"
+      },
+      {
+        "da": "Reti e Internet",
+        "relazione": "protezione perimetrale:",
+        "a": "Firewall"
+      }
+    ]
+  },
+  "Architettura del computer e sistemi operativi": {
+    "superiore": [
+      {
+        "da": "Architettura del computer e sistemi operativi",
+        "relazione": "modello di base:",
+        "a": "Architettura di von Neumann"
+      },
+      {
+        "da": "Architettura di von Neumann",
+        "relazione": "componenti:",
+        "a": "CPU, memoria, I/O, bus"
+      },
+      {
+        "da": "Architettura di von Neumann",
+        "relazione": "idea chiave:",
+        "a": "Programma e dati nella stessa memoria"
+      },
+      {
+        "da": "CPU, memoria, I/O, bus",
+        "relazione": "CPU:",
+        "a": "Unità di controllo + ALU + registri"
+      },
+      {
+        "da": "Unità di controllo + ALU + registri",
+        "relazione": "prossima istruzione:",
+        "a": "Program Counter"
+      },
+      {
+        "da": "CPU, memoria, I/O, bus",
+        "relazione": "la CPU lavora a ciclo:",
+        "a": "Fetch, decode, execute"
+      },
+      {
+        "da": "CPU, memoria, I/O, bus",
+        "relazione": "ritmo dato dal",
+        "a": "Clock (GHz)"
+      },
+      {
+        "da": "CPU, memoria, I/O, bus",
+        "relazione": "memoria centrale:",
+        "a": "RAM (volatile)"
+      },
+      {
+        "da": "CPU, memoria, I/O, bus",
+        "relazione": "firmware di avvio:",
+        "a": "ROM / flash (non volatile)"
+      },
+      {
+        "da": "CPU, memoria, I/O, bus",
+        "relazione": "memoria di massa:",
+        "a": "HDD e SSD"
+      },
+      {
+        "da": "Architettura del computer e sistemi operativi",
+        "relazione": "le memorie formano una",
+        "a": "Gerarchia (registri, cache, RAM, disco)"
+      },
+      {
+        "da": "Architettura del computer e sistemi operativi",
+        "relazione": "software di base:",
+        "a": "Sistema operativo"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "gestisce",
+        "a": "Processi, memoria, file, periferiche"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "esempi:",
+        "a": "Windows, Linux, macOS, Android"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "i programmi in esecuzione sono",
+        "a": "Processi"
+      },
+      {
+        "da": "Architettura del computer e sistemi operativi",
+        "relazione": "traduzione del codice:",
+        "a": "Compilatore o interprete"
+      }
+    ],
+    "universita": [
+      {
+        "da": "Architettura del computer e sistemi operativi",
+        "relazione": "livello hardware:",
+        "a": "CPU, memoria, bus, I/O"
+      },
+      {
+        "da": "CPU, memoria, bus, I/O",
+        "relazione": "la CPU esegue",
+        "a": "Istruzioni del linguaggio macchina (ISA)"
+      },
+      {
+        "da": "Istruzioni del linguaggio macchina (ISA)",
+        "relazione": "due filosofie:",
+        "a": "RISC e CISC"
+      },
+      {
+        "da": "CPU, memoria, bus, I/O",
+        "relazione": "prestazioni con",
+        "a": "Pipeline e più core"
+      },
+      {
+        "da": "Pipeline e più core",
+        "relazione": "limite del parallelismo:",
+        "a": "Legge di Amdahl"
+      },
+      {
+        "da": "CPU, memoria, bus, I/O",
+        "relazione": "bus indirizzi di n bit:",
+        "a": "2ⁿ celle indirizzabili"
+      },
+      {
+        "da": "CPU, memoria, bus, I/O",
+        "relazione": "memoria veloce vicino alla CPU:",
+        "a": "Cache"
+      },
+      {
+        "da": "Cache",
+        "relazione": "funziona grazie alla",
+        "a": "Località temporale e spaziale"
+      },
+      {
+        "da": "CPU, memoria, bus, I/O",
+        "relazione": "eventi asincroni:",
+        "a": "Interrupt"
+      },
+      {
+        "da": "CPU, memoria, bus, I/O",
+        "relazione": "trasferimenti senza CPU:",
+        "a": "DMA"
+      },
+      {
+        "da": "Architettura del computer e sistemi operativi",
+        "relazione": "livello software:",
+        "a": "Sistema operativo"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "nucleo:",
+        "a": "Kernel (modalità privilegiata)"
+      },
+      {
+        "da": "Kernel (modalità privilegiata)",
+        "relazione": "i programmi lo chiamano con",
+        "a": "Chiamate di sistema"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "gestione della CPU:",
+        "a": "Processi e thread"
+      },
+      {
+        "da": "Processi e thread",
+        "relazione": "stati:",
+        "a": "Nuovo, pronto, in esecuzione, bloccato, terminato"
+      },
+      {
+        "da": "Processi e thread",
+        "relazione": "chi va in CPU:",
+        "a": "Scheduling (FCFS, SJF, round robin)"
+      },
+      {
+        "da": "Processi e thread",
+        "relazione": "dati condivisi:",
+        "a": "Sincronizzazione (mutex, semafori)"
+      },
+      {
+        "da": "Sincronizzazione (mutex, semafori)",
+        "relazione": "rischio:",
+        "a": "Deadlock"
+      },
+      {
+        "da": "Deadlock",
+        "relazione": "condizioni di Coffman:",
+        "a": "Mutua esclusione, possesso e attesa, no prelazione, attesa circolare"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "gestione della memoria:",
+        "a": "Memoria virtuale"
+      },
+      {
+        "da": "Memoria virtuale",
+        "relazione": "realizzata con",
+        "a": "Paginazione e tabella delle pagine"
+      },
+      {
+        "da": "Memoria virtuale",
+        "relazione": "se le pagine mancano spesso:",
+        "a": "Thrashing"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "gestione dei dati:",
+        "a": "File system"
+      },
+      {
+        "da": "File system",
+        "relazione": "protezione:",
+        "a": "Permessi (rwx, chmod)"
+      },
+      {
+        "da": "Sistema operativo",
+        "relazione": "gestione delle periferiche:",
+        "a": "Driver"
+      }
+    ]
+  }
+}

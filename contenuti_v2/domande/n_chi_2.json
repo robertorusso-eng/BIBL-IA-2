@@ -1,0 +1,962 @@
+[
+ {
+  "id": "NCHI-041",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Nella reazione bilanciata con i coefficienti interi più piccoli C₃H₈ + O₂ → CO₂ + H₂O, qual è il coefficiente dell'ossigeno?",
+  "opzioni": {
+   "A": "3",
+   "B": "5",
+   "C": "4",
+   "D": "7",
+   "E": "10"
+  },
+  "giusta": "B",
+  "perche": "Si bilancia prima il carbonio (3 CO₂), poi l'idrogeno (8 H → 4 H₂O) e per ultimo l'ossigeno: a destra ci sono 3 × 2 + 4 × 1 = 10 atomi di O, quindi servono 5 O₂. L'equazione è C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Il valore 10 nasce dal confondere atomi di ossigeno con molecole di O₂.",
+  "semplice": "Quando il gas della bombola (propano) brucia, ogni sua molecola ha bisogno di 5 molecole di ossigeno per trasformarsi in anidride carbonica e acqua.",
+  "passaggi": [
+   "Bilancia C: 3 CO₂",
+   "Bilancia H: 8 atomi → 4 H₂O",
+   "Conta O a destra: 3 × 2 + 4 = 10 atomi",
+   "Servono 10/2 = 5 molecole di O₂"
+  ],
+  "concetto": "Bilanciamento delle combustioni"
+ },
+ {
+  "id": "NCHI-042",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Bilanciando con i coefficienti interi più piccoli la reazione Al + O₂ → Al₂O₃, quanto vale la somma di tutti i coefficienti?",
+  "opzioni": {
+   "A": "6",
+   "B": "9",
+   "C": "5",
+   "D": "7",
+   "E": "12"
+  },
+  "giusta": "B",
+  "perche": "L'equazione bilanciata è 4 Al + 3 O₂ → 2 Al₂O₃: l'ossigeno è 6 atomi per parte (3 × 2 = 2 × 3) e l'alluminio 4 per parte. La somma dei coefficienti è 4 + 3 + 2 = 9. Una soluzione frequente ma sbagliata è 2 Al + 3 O₂ → Al₂O₃, che bilancia l'alluminio ma lascia 6 atomi di ossigeno a sinistra e 3 a destra.",
+  "semplice": "Bisogna trovare un numero di atomi di ossigeno che vada bene sia per O₂ (a coppie) sia per Al₂O₃ (a gruppi di tre): il primo è 6. Da lì si ricavano 3 O₂, 2 Al₂O₃ e 4 Al.",
+  "passaggi": [
+   "Trova il minimo comune multiplo degli O: mcm(2, 3) = 6",
+   "6 O → 3 O₂ e 2 Al₂O₃",
+   "2 Al₂O₃ contengono 4 Al → 4 Al",
+   "Somma: 4 + 3 + 2 = 9"
+  ],
+  "concetto": "Bilanciamento con il minimo comune multiplo"
+ },
+ {
+  "id": "NCHI-043",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Quanti grammi di acqua si ottengono facendo reagire completamente 4,0 g di H₂ con ossigeno in eccesso (2 H₂ + O₂ → 2 H₂O)? (H = 1, O = 16)",
+  "opzioni": {
+   "A": "18 g",
+   "B": "36 g",
+   "C": "4,0 g",
+   "D": "72 g",
+   "E": "32 g"
+  },
+  "giusta": "B",
+  "perche": "Le moli di H₂ sono 4,0 g / 2,0 g/mol = 2,0 mol. Dal rapporto stechiometrico 2:2 si ottengono 2,0 mol di H₂O, che pesano 2,0 × 18 g/mol = 36 g. Il valore 18 g si ottiene usando la massa atomica di H (1 g/mol) invece di quella molecolare di H₂ e sbagliando il numero di moli.",
+  "semplice": "Due grammi di idrogeno formano 18 g di acqua; con il doppio di idrogeno (4 g) si forma il doppio di acqua: 36 g. L'ossigeno, essendo in eccesso, non manca mai.",
+  "passaggi": [
+   "Moli di H₂: 4,0 g / 2,0 g/mol = 2,0 mol",
+   "Rapporto H₂ : H₂O = 2 : 2 = 1 : 1",
+   "Moli di H₂O = 2,0 mol",
+   "Massa = 2,0 mol × 18 g/mol = 36 g"
+  ],
+  "concetto": "Calcoli stechiometrici con le moli"
+ },
+ {
+  "id": "NCHI-044",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Si fanno reagire 2,0 mol di N₂ e 3,0 mol di H₂ secondo N₂ + 3 H₂ → 2 NH₃. Quante moli di NH₃ si formano al massimo?",
+  "opzioni": {
+   "A": "4,0 mol",
+   "B": "3,0 mol",
+   "C": "2,0 mol",
+   "D": "6,0 mol",
+   "E": "1,0 mol"
+  },
+  "giusta": "C",
+  "perche": "Per consumare 2,0 mol di N₂ servirebbero 6,0 mol di H₂, ma ce ne sono solo 3,0: l'idrogeno è il reagente limitante. Con 3,0 mol di H₂ reagisce 1,0 mol di N₂ e si formano 2,0 mol di NH₃. Calcolare il prodotto a partire dall'azoto, solo perché le sue moli sono meno numerose, porta all'errore 4,0 mol: il limitante si sceglie confrontando le moli con i coefficienti.",
+  "semplice": "È come fare panini: ogni panino richiede 1 fetta di formaggio e 3 di pane. Con 2 fette di formaggio e solo 3 di pane fai un solo «gruppo» di reazione. Qui ogni gruppo dà 2 molecole di ammoniaca.",
+  "passaggi": [
+   "Calcola H₂ necessario per 2,0 mol N₂: 6,0 mol",
+   "H₂ disponibile 3,0 mol: H₂ è limitante",
+   "3,0 mol H₂ × (2 NH₃ / 3 H₂)",
+   "NH₃ formato = 2,0 mol"
+  ],
+  "concetto": "Reagente limitante"
+ },
+ {
+  "id": "NCHI-045",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "La reazione Zn + CuSO₄ → ZnSO₄ + Cu è un esempio di:",
+  "opzioni": {
+   "A": "Reazione di doppio scambio senza variazione dei numeri di ossidazione",
+   "B": "Reazione di sintesi",
+   "C": "Reazione di decomposizione",
+   "D": "Neutralizzazione acido-base",
+   "E": "Reazione di scambio semplice, che è anche una ossidoriduzione"
+  },
+  "giusta": "E",
+  "perche": "Lo zinco prende il posto del rame nel sale: è uno scambio semplice (o spostamento). Contemporaneamente Zn passa da 0 a +2 (si ossida) e Cu da +2 a 0 (si riduce), quindi è una redox. Nel doppio scambio, come una precipitazione, due composti si scambiano gli ioni senza che cambino i numeri di ossidazione.",
+  "semplice": "Se immergi una lamina di zinco in una soluzione blu di solfato di rame, sulla lamina si deposita rame rossiccio e la soluzione si scolora: lo zinco ha «scacciato» il rame dal suo posto.",
+  "passaggi": [
+   "Osserva: un elemento sostituisce un altro in un composto",
+   "È uno scambio semplice",
+   "Calcola i numeri di ossidazione: Zn 0 → +2, Cu +2 → 0",
+   "Variano: è anche una redox"
+  ],
+  "concetto": "Scambio semplice e redox"
+ },
+ {
+  "id": "NCHI-046",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Qual è il numero di ossidazione del manganese nel permanganato di potassio, KMnO₄?",
+  "opzioni": {
+   "A": "+4",
+   "B": "+2",
+   "C": "+6",
+   "D": "+7",
+   "E": "−1"
+  },
+  "giusta": "D",
+  "perche": "Nel composto neutro la somma dei numeri di ossidazione è zero: K vale +1 e ogni O vale −2, quindi +1 + x + 4 × (−2) = 0, da cui x = +7. Lo stesso risultato si ottiene dallo ione MnO₄⁻: x − 8 = −1. Il valore +6 è quello del manganese nel manganato (MnO₄²⁻) e si ottiene sbagliando la carica dello ione.",
+  "semplice": "Gli ossigeni «tirano» 8 cariche negative, il potassio ne dà una positiva: al manganese restano 7 cariche positive per pareggiare il conto e arrivare a zero.",
+  "passaggi": [
+   "Ricorda: K = +1, O = −2, somma totale = 0",
+   "Imposta: +1 + x + 4(−2) = 0",
+   "Risolvi: x = 8 − 1",
+   "Risultato: Mn = +7"
+  ],
+  "concetto": "Calcolo dei numeri di ossidazione"
+ },
+ {
+  "id": "NCHI-047",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Nella reazione Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s), quale specie è l'agente ossidante?",
+  "opzioni": {
+   "A": "Zn",
+   "B": "Zn²⁺",
+   "C": "Cu",
+   "D": "Gli ioni solfato spettatori",
+   "E": "Cu²⁺"
+  },
+  "giusta": "E",
+  "perche": "L'agente ossidante è la specie che ossida un'altra acquistando elettroni, e quindi si riduce. Cu²⁺ acquista 2 elettroni e diventa Cu: si riduce ed è l'ossidante. Lo zinco perde elettroni, si ossida ed è il riducente. Scegliere Zn perché «si ossida» è l'errore tipico: la specie che si ossida è il riducente.",
+  "semplice": "L'ossidante è come chi «ruba» elettroni a un altro: lo ione rame li prende allo zinco. Chi ruba si riduce, chi viene derubato si ossida.",
+  "passaggi": [
+   "Individua chi acquista elettroni: Cu²⁺ → Cu",
+   "Chi acquista elettroni si riduce",
+   "Chi si riduce è l'agente ossidante",
+   "Risposta: Cu²⁺"
+  ],
+  "concetto": "Ossidante e riducente"
+ },
+ {
+  "id": "NCHI-048",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "In una sintesi la resa teorica del prodotto è 50,0 g, ma in laboratorio se ne ottengono 40,0 g. Qual è la resa percentuale?",
+  "opzioni": {
+   "A": "125%",
+   "B": "80,0%",
+   "C": "20,0%",
+   "D": "40,0%",
+   "E": "90,0%"
+  },
+  "giusta": "B",
+  "perche": "La resa percentuale è il rapporto tra resa reale e resa teorica, per 100: 40,0/50,0 × 100 = 80,0%. Invertendo il rapporto si ottiene 125%, valore impossibile perché la resa reale non può superare quella teorica; 20% è invece la parte mancante.",
+  "semplice": "Se una ricetta dovrebbe dare 50 biscotti e ne escono 40, perché un po' di impasto resta nella ciotola, hai ottenuto l'80% di quello che speravi.",
+  "passaggi": [
+   "Dati: resa reale 40,0 g, resa teorica 50,0 g",
+   "Formula: resa % = reale / teorica × 100",
+   "40,0 / 50,0 = 0,800",
+   "Risultato: 80,0%"
+  ],
+  "concetto": "Resa percentuale"
+ },
+ {
+  "id": "NCHI-049",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Nella reazione in ambiente acido MnO₄⁻ + Fe²⁺ + H⁺ → Mn²⁺ + Fe³⁺ + H₂O, bilanciata correttamente, quante moli di Fe²⁺ reagiscono con 1 mole di MnO₄⁻?",
+  "opzioni": {
+   "A": "1",
+   "B": "2",
+   "C": "5",
+   "D": "3",
+   "E": "8"
+  },
+  "giusta": "C",
+  "perche": "Il manganese passa da +7 a +2 acquistando 5 elettroni, mentre ogni ione Fe²⁺ ne cede uno passando a Fe³⁺. Per uguagliare gli elettroni scambiati servono 5 Fe²⁺ per ogni MnO₄⁻: MnO₄⁻ + 5 Fe²⁺ + 8 H⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O. Il valore 8 è il coefficiente di H⁺, non del ferro.",
+  "semplice": "Il permanganato è molto «affamato»: ogni sua unità prende 5 elettroni, mentre ogni ione ferro ne può dare solo uno. Servono quindi 5 ioni ferro per accontentarlo.",
+  "passaggi": [
+   "Mn: da +7 a +2, acquista 5 e⁻",
+   "Fe: da +2 a +3, cede 1 e⁻",
+   "Uguaglia gli elettroni: 1 MnO₄⁻ con 5 Fe²⁺",
+   "Completa con 8 H⁺ e 4 H₂O: rapporto 1 : 5"
+  ],
+  "concetto": "Bilanciamento redox con gli elettroni"
+ },
+ {
+  "id": "NCHI-050",
+  "materia": "Chimica",
+  "argomento": "Reazioni chimiche e bilanciamento",
+  "livello": "superiori",
+  "domanda": "Riscaldando 10,0 g di CaCO₃ si ottengono 5,6 g di CaO e anidride carbonica. Quanti grammi di CO₂ si formano?",
+  "opzioni": {
+   "A": "4,4 g",
+   "B": "5,6 g",
+   "C": "15,6 g",
+   "D": "10,0 g",
+   "E": "2,2 g"
+  },
+  "giusta": "A",
+  "perche": "Per la legge di conservazione della massa (Lavoisier), la massa dei reagenti è uguale a quella dei prodotti: 10,0 g = 5,6 g + m(CO₂), quindi m(CO₂) = 4,4 g. Il gas che si libera non fa sparire la massa: la massa del solido diminuisce solo perché la CO₂ se ne va nell'aria.",
+  "semplice": "Se smonti un giocattolo da 10 g e un pezzo pesa 5,6 g, l'altro pezzo deve pesare 4,4 g. Nella reazione succede lo stesso: niente si crea e niente si distrugge.",
+  "passaggi": [
+   "Ricorda la legge di Lavoisier: massa reagenti = massa prodotti",
+   "10,0 g = 5,6 g + m(CO₂)",
+   "m(CO₂) = 10,0 − 5,6",
+   "Risultato: 4,4 g"
+  ],
+  "concetto": "Conservazione della massa"
+ },
+ {
+  "id": "NCHI-051",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Secondo la teoria VSEPR, quale geometria ha la molecola di ammoniaca (NH₃)?",
+  "opzioni": {
+   "A": "Piramidale trigonale",
+   "B": "Trigonale planare",
+   "C": "Tetraedrica",
+   "D": "Piegata (angolare)",
+   "E": "Lineare"
+  },
+  "giusta": "A",
+  "perche": "L'azoto ha quattro coppie elettroniche attorno a sé: tre di legame e una non condivisa. Le quattro coppie si dispongono verso i vertici di un tetraedro, ma la geometria della molecola considera solo gli atomi: i tre H formano con N una piramide a base triangolare, con angoli di circa 107°. Dire «tetraedrica» confonde la disposizione delle coppie con la forma della molecola.",
+  "semplice": "Immagina un treppiede: l'azoto è in cima e i tre idrogeni sono le gambe. Sopra l'azoto c'è una coppia di elettroni invisibile che spinge le gambe verso il basso.",
+  "passaggi": [
+   "Conta le coppie su N: 3 di legame + 1 libera = 4",
+   "Disposizione delle coppie: tetraedrica",
+   "La coppia libera non conta nella forma della molecola",
+   "Forma: piramidale trigonale (~107°)"
+  ],
+  "concetto": "Coppie libere e geometria molecolare"
+ },
+ {
+  "id": "NCHI-052",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "La molecola di CO₂ contiene legami C=O polari, ma è apolare. Perché?",
+  "opzioni": {
+   "A": "Perché il carbonio e l'ossigeno hanno la stessa elettronegatività",
+   "B": "Perché è lineare e i due dipoli di legame, uguali e opposti, si annullano",
+   "C": "Perché i doppi legami non sono mai polari",
+   "D": "Perché è piegata come l'acqua",
+   "E": "Perché non ha elettroni di valenza liberi sull'ossigeno"
+  },
+  "giusta": "B",
+  "perche": "La polarità di una molecola dipende sia dalla polarità dei legami sia dalla geometria. In CO₂ l'ossigeno è più elettronegativo del carbonio, quindi ogni legame è polare, ma la molecola è lineare (O=C=O, 180°) e i due momenti dipolari hanno verso opposto e si annullano. Pensare che l'apolarità derivi da elettronegatività uguali è l'errore tipico.",
+  "semplice": "È come due persone uguali che tirano una corda in direzioni opposte con la stessa forza: la corda non si muove. I due ossigeni tirano gli elettroni da parti opposte e l'effetto totale è nullo.",
+  "passaggi": [
+   "Verifica i legami: C=O è polare (O più elettronegativo)",
+   "Determina la geometria: due domini su C, lineare",
+   "Somma i dipoli: uguali e opposti",
+   "Momento dipolare totale nullo: molecola apolare"
+  ],
+  "concetto": "Polarità di legame e di molecola"
+ },
+ {
+  "id": "NCHI-053",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Qual è il valore approssimativo dell'angolo di legame H–O–H nella molecola d'acqua?",
+  "opzioni": {
+   "A": "180°",
+   "B": "120°",
+   "C": "109,5°",
+   "D": "90°",
+   "E": "104,5°"
+  },
+  "giusta": "E",
+  "perche": "L'ossigeno ha quattro coppie elettroniche (due di legame e due libere) disposte all'incirca come in un tetraedro. Le coppie libere occupano più spazio e respingono le coppie di legame più di quanto queste si respingano tra loro, quindi l'angolo si chiude da 109,5° a circa 104,5°. Il valore 109,5° è quello del tetraedro regolare, come nel metano.",
+  "semplice": "La molecola d'acqua è piegata come un boomerang. Le due coppie di elettroni libere sull'ossigeno spingono i due idrogeni un po' più vicini tra loro di quanto sarebbero in un tetraedro perfetto.",
+  "passaggi": [
+   "Conta le coppie su O: 2 di legame + 2 libere",
+   "Disposizione di base: tetraedrica, 109,5°",
+   "Le coppie libere respingono di più",
+   "L'angolo si riduce a circa 104,5°"
+  ],
+  "concetto": "Effetto delle coppie libere sugli angoli"
+ },
+ {
+  "id": "NCHI-054",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Quale geometria e quale angolo di legame prevede la teoria VSEPR per il trifluoruro di boro (BF₃)?",
+  "opzioni": {
+   "A": "Piramidale trigonale, 107°",
+   "B": "Tetraedrica, 109,5°",
+   "C": "Trigonale planare, 120°",
+   "D": "Lineare, 180°",
+   "E": "A forma di T, 90°"
+  },
+  "giusta": "C",
+  "perche": "Il boro ha tre elettroni di valenza, tutti impegnati nei legami con i fluori, e nessuna coppia libera. Tre domini elettronici si dispongono il più lontano possibile su un piano, a 120°. La geometria piramidale come in NH₃ richiederebbe una coppia libera sull'atomo centrale, che nel boro manca.",
+  "semplice": "Tre coppie di elettroni che si respingono si mettono come le lancette di un orologio alle 12, alle 4 e alle 8: tutte sullo stesso piano, a 120° l'una dall'altra.",
+  "passaggi": [
+   "Conta gli elettroni di valenza di B: 3",
+   "Tre legami, nessuna coppia libera: 3 domini",
+   "Tre domini si dispongono su un piano",
+   "Geometria trigonale planare, 120°"
+  ],
+  "concetto": "Geometria a tre domini"
+ },
+ {
+  "id": "NCHI-055",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Quale geometria assume la molecola di PCl₅?",
+  "opzioni": {
+   "A": "Ottaedrica",
+   "B": "Planare quadrata",
+   "C": "Tetraedrica",
+   "D": "Bipiramidale trigonale",
+   "E": "Piramidale a base quadrata"
+  },
+  "giusta": "D",
+  "perche": "Il fosforo forma cinque legami con il cloro e non ha coppie libere: cinque domini elettronici si dispongono ai vertici di una bipiramide a base triangolare, con tre cloruri equatoriali a 120° e due assiali a 90° rispetto al piano. La geometria ottaedrica richiede sei domini, come in SF₆.",
+  "semplice": "Pensa a due piramidi a base triangolare incollate per la base: tre cloruri stanno intorno «all'equatore» e due sono ai «poli», uno sopra e uno sotto.",
+  "passaggi": [
+   "Conta i domini su P: 5 legami, 0 coppie libere",
+   "Cinque domini → bipiramide trigonale",
+   "Tre posizioni equatoriali a 120°, due assiali a 90°",
+   "Escludi l'ottaedro: servirebbero 6 domini"
+  ],
+  "concetto": "Geometria a cinque domini"
+ },
+ {
+  "id": "NCHI-056",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Il metano (CH₄) ha la geometria tetraedrica. Quale angolo formano due legami C–H?",
+  "opzioni": {
+   "A": "90°",
+   "B": "120°",
+   "C": "104,5°",
+   "D": "109,5°",
+   "E": "180°"
+  },
+  "giusta": "D",
+  "perche": "Il carbonio forma quattro legami con gli idrogeni e non ha coppie libere: quattro domini uguali si respingono al massimo disponendosi verso i vertici di un tetraedro regolare, con angoli di 109,5°. Il valore 90° deriva dal disegnare la molecola piatta su un foglio, a croce, ma nello spazio i legami possono allontanarsi di più.",
+  "semplice": "Se leghi quattro palloncini uguali per il nodo, si sistemano da soli come un tetraedro: ogni palloncino è il più lontano possibile dagli altri, a circa 109,5°.",
+  "passaggi": [
+   "Conta i domini su C: 4 legami, 0 coppie libere",
+   "Quattro domini uguali → tetraedro regolare",
+   "L'angolo tetraedrico è 109,5°",
+   "Escludi 90°: è la forma disegnata sul piano, non reale"
+  ],
+  "concetto": "Geometria tetraedrica"
+ },
+ {
+  "id": "NCHI-057",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Perché l'acqua (H₂O) bolle a 100 °C mentre l'acido solfidrico (H₂S), più pesante, bolle a circa −60 °C?",
+  "opzioni": {
+   "A": "Perché i legami covalenti O–H si rompono a 100 °C",
+   "B": "Perché H₂S è apolare",
+   "C": "Perché l'acqua ha una massa molare maggiore",
+   "D": "Perché lo zolfo è più elettronegativo dell'ossigeno",
+   "E": "Perché tra le molecole d'acqua si formano legami a idrogeno, molto più intensi delle interazioni tra molecole di H₂S"
+  },
+  "giusta": "E",
+  "perche": "L'ossigeno è piccolo e molto elettronegativo: gli idrogeni legati a esso sono fortemente positivi e si legano alle coppie libere degli ossigeni vicini, formando legami a idrogeno. Lo zolfo è meno elettronegativo e più grande, quindi in H₂S le interazioni sono solo dipolo-dipolo e di London. Nell'ebollizione si separano le molecole, non si rompono i legami covalenti O–H.",
+  "semplice": "Le molecole d'acqua si tengono per mano con i legami a idrogeno, come persone in un girotondo: per separarle serve molta energia. Quelle di H₂S si sfiorano appena e si separano facilmente.",
+  "passaggi": [
+   "Confronta: H₂S ha massa maggiore ma bolle molto più in basso",
+   "Cerca un'interazione speciale nell'acqua: legame a idrogeno",
+   "Richiede H legato a N, O o F",
+   "Escludi la rottura dei legami covalenti: l'ebollizione separa molecole intere"
+  ],
+  "concetto": "Legame a idrogeno"
+ },
+ {
+  "id": "NCHI-058",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Quale ordine delle temperature di ebollizione degli alogeni è corretto, e per quale motivo?",
+  "opzioni": {
+   "A": "F₂ < Cl₂ < Br₂ < I₂, perché le forze di London crescono con il numero di elettroni e la polarizzabilità",
+   "B": "F₂ > Cl₂ > Br₂ > I₂, perché il fluoro è il più elettronegativo",
+   "C": "Sono tutte uguali, perché le molecole sono tutte apolari",
+   "D": "F₂ < Cl₂ < Br₂ < I₂, perché crescono i legami a idrogeno",
+   "E": "I₂ < Br₂ < Cl₂ < F₂, perché le molecole più piccole si attraggono di più"
+  },
+  "giusta": "A",
+  "perche": "Le molecole degli alogeni sono apolari e interagiscono solo con forze di dispersione di London, che aumentano con le dimensioni della nuvola elettronica perché questa diventa più facilmente polarizzabile. Per questo a temperatura ambiente F₂ e Cl₂ sono gas, Br₂ liquido e I₂ solido. L'elettronegatività non conta, perché i due atomi uguali formano un legame apolare.",
+  "semplice": "Più una molecola è grande, più la sua nuvola di elettroni è «morbida» e si deforma, creando attrazioni temporanee con le vicine. Lo iodio è grande e infatti è un solido, il fluoro piccolo è un gas.",
+  "passaggi": [
+   "Riconosci che le molecole X₂ sono apolari",
+   "L'unica forza intermolecolare è quella di London",
+   "London cresce con il numero di elettroni (polarizzabilità)",
+   "Ordine crescente: F₂ < Cl₂ < Br₂ < I₂"
+  ],
+  "concetto": "Forze di dispersione di London"
+ },
+ {
+  "id": "NCHI-059",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti molecole è polare?",
+  "opzioni": {
+   "A": "CHCl₃",
+   "B": "CCl₄",
+   "C": "CO₂",
+   "D": "BF₃",
+   "E": "CH₄"
+  },
+  "giusta": "A",
+  "perche": "CHCl₃ ha forma tetraedrica, ma i quattro sostituenti non sono uguali: tre cloruri molto elettronegativi e un idrogeno. I dipoli di legame non si compensano e la molecola ha un momento dipolare. In CCl₄, CH₄, CO₂ e BF₃ i legami uguali sono disposti in modo simmetrico e i dipoli si annullano.",
+  "semplice": "Una molecola è polare se è «sbilanciata». Il cloroformio ha tre cloruri da una parte e un idrogeno dall'altra: è come una bilancia con pesi diversi sui due piatti.",
+  "passaggi": [
+   "Ricorda: polarità = legami polari + geometria non simmetrica",
+   "CCl₄ e CH₄: tetraedri con 4 sostituenti uguali, dipoli annullati",
+   "CO₂ lineare e BF₃ planare: simmetrici",
+   "CHCl₃: sostituenti diversi, dipolo netto"
+  ],
+  "concetto": "Simmetria e polarità molecolare"
+ },
+ {
+  "id": "NCHI-060",
+  "materia": "Chimica",
+  "argomento": "Forma delle molecole (VSEPR) e legami intermolecolari",
+  "livello": "superiori",
+  "domanda": "Quale interazione rende possibile lo scioglimento del cloruro di sodio in acqua?",
+  "opzioni": {
+   "A": "L'interazione ione-dipolo tra gli ioni Na⁺ e Cl⁻ e le molecole d'acqua polari",
+   "B": "La formazione di legami covalenti tra Na e O",
+   "C": "Le forze di London tra NaCl e acqua",
+   "D": "Il legame a idrogeno tra Cl e gli H dell'acqua come unica interazione",
+   "E": "La reazione del sodio con l'acqua che libera idrogeno"
+  },
+  "giusta": "A",
+  "perche": "Le molecole d'acqua sono dipoli: orientano l'ossigeno parzialmente negativo verso i cationi Na⁺ e gli idrogeni parzialmente positivi verso gli anioni Cl⁻. Queste interazioni ione-dipolo liberano energia sufficiente a staccare gli ioni dal reticolo e circondarli (solvatazione). Non si forma idrogeno: quella è la reazione del sodio metallico, non dello ione Na⁺.",
+  "semplice": "Le molecole d'acqua sono come piccole calamite: girano la parte negativa verso il sodio e quella positiva verso il cloro, li circondano e li portano via dal cristallo uno per uno.",
+  "passaggi": [
+   "Riconosci che NaCl è ionico e l'acqua è polare",
+   "Gli ioni attirano le estremità di carica opposta dell'acqua",
+   "Questa è l'interazione ione-dipolo",
+   "Gli ioni vengono circondati e passano in soluzione"
+  ],
+  "concetto": "Interazione ione-dipolo e solvatazione"
+ },
+ {
+  "id": "NCHI-061",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Da che cosa dipendono le proprietà colligative di una soluzione?",
+  "opzioni": {
+   "A": "Dalla massa molare del soluto",
+   "B": "Dal colore e dall'odore del soluto",
+   "C": "Dalla reattività chimica del soluto con il solvente",
+   "D": "Dal numero di particelle di soluto disciolte, non dalla loro natura chimica",
+   "E": "Dal tipo di legame presente nel soluto, indipendentemente dalla quantità"
+  },
+  "giusta": "D",
+  "perche": "Abbassamento crioscopico, innalzamento ebullioscopico, abbassamento della pressione di vapore e pressione osmotica dipendono solo da quante particelle di soluto ci sono in una certa quantità di solvente. Per questo gli elettroliti, che si dissociano in più ioni, hanno effetti maggiori dei non elettroliti alla stessa concentrazione. La massa molare non conta direttamente: conta il numero di moli di particelle.",
+  "semplice": "Per il solvente non importa chi gli sta in mezzo, ma quanti sono. Una mole di zucchero e una mole di urea abbassano il punto di congelamento dell'acqua allo stesso modo.",
+  "passaggi": [
+   "Ricorda il significato di «colligativo»: legato all'insieme",
+   "Elenca le quattro proprietà colligative",
+   "Tutte dipendono dalla concentrazione di particelle",
+   "Concludi: conta il numero, non la natura"
+  ],
+  "concetto": "Proprietà colligative"
+ },
+ {
+  "id": "NCHI-062",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Si sciolgono 0,50 mol di glucosio in 500 g di acqua. A quale temperatura congela la soluzione? (K_cr dell'acqua = 1,86 °C·kg/mol)",
+  "opzioni": {
+   "A": "−0,93 °C",
+   "B": "−3,72 °C",
+   "C": "+1,86 °C",
+   "D": "−0,47 °C",
+   "E": "−1,86 °C"
+  },
+  "giusta": "E",
+  "perche": "La molalità è 0,50 mol / 0,500 kg = 1,0 mol/kg. Il glucosio non si dissocia (i = 1), quindi ΔT = K_cr · m = 1,86 × 1,0 = 1,86 °C e la soluzione congela a −1,86 °C. Chi dimentica di convertire 500 g in 0,500 kg, usando 0,50 mol come molalità, ottiene −0,93 °C.",
+  "semplice": "Lo zucchero sciolto rende più difficile all'acqua diventare ghiaccio: bisogna scendere sotto zero. Con una mole di zucchero per chilo d'acqua si congela a circa −1,9 °C.",
+  "passaggi": [
+   "Molalità: 0,50 mol / 0,500 kg = 1,0 mol/kg",
+   "Glucosio non elettrolita: i = 1",
+   "ΔT = K_cr · m · i = 1,86 × 1,0 × 1",
+   "T di congelamento = 0 − 1,86 = −1,86 °C"
+  ],
+  "concetto": "Abbassamento crioscopico"
+ },
+ {
+  "id": "NCHI-063",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti soluzioni acquose ha la temperatura di congelamento più bassa?",
+  "opzioni": {
+   "A": "NaCl 0,10 mol/kg",
+   "B": "Glucosio 0,15 mol/kg",
+   "C": "KNO₃ 0,10 mol/kg",
+   "D": "CaCl₂ 0,10 mol/kg",
+   "E": "Urea 0,25 mol/kg"
+  },
+  "giusta": "D",
+  "perche": "Conta la concentrazione totale di particelle, cioè i · m. CaCl₂ si dissocia in 3 ioni: 3 × 0,10 = 0,30. NaCl e KNO₃ danno 2 ioni: 0,20. Glucosio e urea non si dissociano: 0,15 e 0,25. Il valore più alto è quello di CaCl₂, che ha quindi l'abbassamento crioscopico maggiore; l'urea, con la molalità più alta, inganna perché non si dissocia.",
+  "semplice": "Un cloruro di calcio «vale tre» perché si spezza in tre pezzi in acqua. Per questo sulle strade ghiacciate si usa anche il cloruro di calcio: è più efficace del sale da cucina a parità di quantità.",
+  "passaggi": [
+   "Calcola le particelle effettive i · m per ogni soluzione",
+   "CaCl₂: 3 × 0,10 = 0,30; NaCl e KNO₃: 0,20",
+   "Glucosio 0,15; urea 0,25",
+   "Il massimo è CaCl₂: congela più in basso"
+  ],
+  "concetto": "Coefficiente di van't Hoff"
+ },
+ {
+  "id": "NCHI-064",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Qual è la pressione osmotica a 300 K di una soluzione acquosa 0,100 mol/L di glucosio? (R = 0,0821 L·atm/(mol·K))",
+  "opzioni": {
+   "A": "0,246 atm",
+   "B": "4,93 atm",
+   "C": "24,6 atm",
+   "D": "2,46 atm",
+   "E": "8,21 atm"
+  },
+  "giusta": "D",
+  "perche": "La pressione osmotica si calcola con π = i · M · R · T. Per il glucosio i = 1, quindi π = 0,100 × 0,0821 × 300 = 2,46 atm. Il valore 4,93 atm si ottiene usando per errore i = 2, come se il glucosio fosse un sale che si dissocia.",
+  "semplice": "La pressione osmotica è la «spinta» con cui l'acqua cerca di entrare in una soluzione attraverso una membrana. Anche una soluzione zuccherina diluita genera una spinta di più di due atmosfere.",
+  "passaggi": [
+   "Dati: M = 0,100 mol/L, T = 300 K, i = 1",
+   "Formula: π = i · M · R · T",
+   "π = 0,100 × 0,0821 × 300",
+   "Risultato: 2,46 atm"
+  ],
+  "concetto": "Pressione osmotica"
+ },
+ {
+  "id": "NCHI-065",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Si sciolgono 0,50 mol di urea (non elettrolita) in 500 g di acqua. A quale temperatura bolle la soluzione a 1 atm? (K_eb dell'acqua = 0,52 °C·kg/mol)",
+  "opzioni": {
+   "A": "100,26 °C",
+   "B": "100,52 °C",
+   "C": "99,48 °C",
+   "D": "101,04 °C",
+   "E": "100,00 °C"
+  },
+  "giusta": "B",
+  "perche": "La molalità è 0,50 mol / 0,500 kg = 1,0 mol/kg e l'urea non si dissocia. L'innalzamento ebullioscopico vale ΔT = K_eb · m = 0,52 °C, quindi la soluzione bolle a 100,52 °C. 99,48 °C deriva dal sottrarre invece di aggiungere: un soluto non volatile alza la temperatura di ebollizione.",
+  "semplice": "Un soluto che non evapora «trattiene» le molecole d'acqua: per farla bollire serve un po' più di calore. L'effetto però è piccolo: mezzo grado per una mole per chilo.",
+  "passaggi": [
+   "Molalità: 0,50 / 0,500 = 1,0 mol/kg",
+   "i = 1 (urea non elettrolita)",
+   "ΔT = 0,52 × 1,0 = 0,52 °C",
+   "T di ebollizione = 100 + 0,52 = 100,52 °C"
+  ],
+  "concetto": "Innalzamento ebullioscopico"
+ },
+ {
+  "id": "NCHI-066",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "In una soluzione di un soluto non volatile la frazione molare del solvente è 0,900. Se la pressione di vapore del solvente puro è 24,0 mmHg, quanto vale quella della soluzione?",
+  "opzioni": {
+   "A": "2,40 mmHg",
+   "B": "26,7 mmHg",
+   "C": "21,6 mmHg",
+   "D": "24,0 mmHg",
+   "E": "26,4 mmHg"
+  },
+  "giusta": "C",
+  "perche": "Per la legge di Raoult la pressione di vapore del solvente in soluzione è P = x(solvente) · P°: 0,900 × 24,0 = 21,6 mmHg. Il valore 2,40 mmHg è l'abbassamento della pressione (x del soluto × P°), non la pressione della soluzione; i valori maggiori di 24,0 mmHg sono impossibili, perché un soluto non volatile abbassa la pressione di vapore.",
+  "semplice": "Le particelle di soluto occupano una parte della superficie del liquido e lasciano evaporare meno molecole di solvente. Se il solvente è il 90% delle particelle, la pressione di vapore scende al 90%.",
+  "passaggi": [
+   "Dati: x(solvente) = 0,900, P° = 24,0 mmHg",
+   "Legge di Raoult: P = x · P°",
+   "P = 0,900 × 24,0",
+   "Risultato: 21,6 mmHg"
+  ],
+  "concetto": "Legge di Raoult"
+ },
+ {
+  "id": "NCHI-067",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Che cosa succede ai globuli rossi immersi in acqua distillata?",
+  "opzioni": {
+   "A": "Si raggrinziscono perché perdono acqua",
+   "B": "Non cambiano, perché l'acqua distillata è isotonica",
+   "C": "Si gonfiano fino a scoppiare (emolisi), perché l'acqua entra per osmosi",
+   "D": "Si dividono più velocemente",
+   "E": "Perdono emoglobina senza variare di volume"
+  },
+  "giusta": "C",
+  "perche": "L'acqua distillata è ipotonica rispetto al citoplasma dei globuli rossi: la concentrazione di soluti è più alta dentro la cellula, quindi l'acqua attraversa la membrana verso l'interno. La cellula si gonfia e la membrana si rompe (emolisi). Il raggrinzimento (crenazione) avviene invece in una soluzione ipertonica, come acqua molto salata.",
+  "semplice": "L'acqua si sposta sempre verso dove ci sono più cose disciolte. Dentro il globulo rosso ci sono molti sali e proteine, fuori nell'acqua distillata niente: l'acqua entra finché il globulo scoppia come un palloncino troppo pieno.",
+  "passaggi": [
+   "Confronta: soluti dentro la cellula > soluti nell'acqua distillata",
+   "L'acqua distillata è ipotonica",
+   "L'acqua entra per osmosi",
+   "Il globulo si gonfia e va incontro a emolisi"
+  ],
+  "concetto": "Osmosi e tonicità"
+ },
+ {
+  "id": "NCHI-068",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Si sciolgono 9,0 g di una sostanza non elettrolita in 100 g di acqua e la soluzione congela a −0,93 °C. Qual è la massa molare della sostanza? (K_cr = 1,86 °C·kg/mol)",
+  "opzioni": {
+   "A": "18 g/mol",
+   "B": "90 g/mol",
+   "C": "360 g/mol",
+   "D": "1800 g/mol",
+   "E": "180 g/mol"
+  },
+  "giusta": "E",
+  "perche": "Da ΔT = K_cr · m si ricava la molalità: m = 0,93/1,86 = 0,50 mol/kg. In 0,100 kg di acqua ci sono quindi 0,50 × 0,100 = 0,050 mol di soluto. La massa molare è 9,0 g / 0,050 mol = 180 g/mol (compatibile con il glucosio). Se si dimentica di moltiplicare per 0,100 kg, si ottiene 18 g/mol.",
+  "semplice": "Dal termometro capisci quante particelle hai sciolto; conoscendo quanti grammi hai messo, scopri quanto pesa ciascuna mole. È un modo per «pesare» le molecole con un termometro.",
+  "passaggi": [
+   "Molalità: m = ΔT / K_cr = 0,93 / 1,86 = 0,50 mol/kg",
+   "Moli di soluto: 0,50 mol/kg × 0,100 kg = 0,050 mol",
+   "Massa molare: 9,0 g / 0,050 mol",
+   "Risultato: 180 g/mol"
+  ],
+  "concetto": "Massa molare dalla crioscopia"
+ },
+ {
+  "id": "NCHI-069",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Perché d'inverno si sparge sale sulle strade?",
+  "opzioni": {
+   "A": "Perché il sale sciolto abbassa la temperatura di congelamento dell'acqua, che resta liquida anche sotto 0 °C",
+   "B": "Perché il sale reagisce con il ghiaccio producendo calore",
+   "C": "Perché il sale alza la temperatura di congelamento dell'acqua",
+   "D": "Perché il sale assorbe l'acqua come una spugna",
+   "E": "Perché il sale rende il ghiaccio più ruvido senza fonderlo"
+  },
+  "giusta": "A",
+  "perche": "Il sale si scioglie nel velo d'acqua sul ghiaccio e forma una soluzione con temperatura di congelamento più bassa di 0 °C (abbassamento crioscopico). Finché la temperatura dell'aria non scende troppo, la soluzione resta liquida e il ghiaccio si scioglie. Non c'è una reazione chimica che produce calore: anzi, la fusione assorbe calore dall'ambiente.",
+  "semplice": "L'acqua salata congela più difficilmente dell'acqua normale: per questo il mare ghiaccia molto meno dei laghi. Spargendo sale si ottiene la stessa cosa sulla strada.",
+  "passaggi": [
+   "Riconosci la proprietà colligativa coinvolta: abbassamento crioscopico",
+   "Il sale forma una soluzione con l'acqua sul ghiaccio",
+   "La soluzione congela sotto 0 °C",
+   "Escludi una reazione che scalda: non c'è"
+  ],
+  "concetto": "Abbassamento crioscopico nella vita quotidiana"
+ },
+ {
+  "id": "NCHI-070",
+  "materia": "Chimica",
+  "argomento": "Proprietà colligative",
+  "livello": "superiori",
+  "domanda": "Quanto vale il coefficiente di van't Hoff ideale del solfato di alluminio, Al₂(SO₄)₃, completamente dissociato in acqua?",
+  "opzioni": {
+   "A": "2",
+   "B": "3",
+   "C": "5",
+   "D": "17",
+   "E": "1"
+  },
+  "giusta": "C",
+  "perche": "In acqua il sale si dissocia in 2 ioni Al³⁺ e 3 ioni SO₄²⁻: Al₂(SO₄)₃ → 2 Al³⁺ + 3 SO₄²⁻, per un totale di 5 particelle per unità di formula. Contare gli atomi (2 + 3 × 5 = 17) è un errore: gli ioni solfato restano interi e ognuno conta come una sola particella.",
+  "semplice": "Quando il sale si scioglie, si rompe nei suoi ioni, ma lo ione solfato resta tutto intero come un pezzo unico. Si ottengono 2 pezzi di alluminio e 3 pezzi di solfato: 5 in tutto.",
+  "passaggi": [
+   "Scrivi la dissociazione: Al₂(SO₄)₃ → 2 Al³⁺ + 3 SO₄²⁻",
+   "Ricorda che lo ione poliatomico non si spezza",
+   "Conta le particelle: 2 + 3",
+   "i = 5"
+  ],
+  "concetto": "Dissociazione degli elettroliti"
+ },
+ {
+  "id": "NCHI-071",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Quale effetto ha un catalizzatore su una reazione chimica?",
+  "opzioni": {
+   "A": "Aumenta la costante di equilibrio, spostando l'equilibrio verso i prodotti",
+   "B": "Rende esotermica una reazione endotermica",
+   "C": "Viene consumato man mano che la reazione procede",
+   "D": "Aumenta l'energia cinetica delle molecole come un riscaldamento",
+   "E": "Abbassa l'energia di attivazione, aumentando la velocità sia della reazione diretta sia di quella inversa"
+  },
+  "giusta": "E",
+  "perche": "Il catalizzatore offre un meccanismo alternativo con energia di attivazione più bassa, quindi aumenta il numero di urti efficaci. Abbassa la barriera per entrambi i versi della reazione, per cui non cambia la costante di equilibrio né il ΔH: si raggiunge solo più in fretta lo stesso equilibrio. Al termine il catalizzatore si ritrova inalterato.",
+  "semplice": "Il catalizzatore è come una galleria in una montagna: arrivi dall'altra parte più in fretta, ma il punto di partenza e quello di arrivo restano gli stessi. E la galleria resta lì per chi passa dopo.",
+  "passaggi": [
+   "Ricorda: il catalizzatore cambia il percorso della reazione",
+   "Abbassa l'energia di attivazione",
+   "Lo fa per la reazione diretta e per l'inversa",
+   "Non cambia K né ΔH e non si consuma"
+  ],
+  "concetto": "Azione del catalizzatore"
+ },
+ {
+  "id": "NCHI-072",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Perché lo zucchero a velo si scioglie nell'acqua più in fretta dello zucchero in zollette?",
+  "opzioni": {
+   "A": "Perché è una sostanza chimica diversa",
+   "B": "Perché ha un'energia di attivazione più alta",
+   "C": "Perché la reazione diventa esotermica",
+   "D": "Perché contiene un catalizzatore",
+   "E": "Perché ha una superficie di contatto molto maggiore con il solvente"
+  },
+  "giusta": "E",
+  "perche": "Suddividere un solido in particelle fini aumenta l'area esposta: più molecole sono a contatto con il solvente o con l'altro reagente nello stesso istante, quindi gli urti sono più frequenti e il processo è più rapido. La sostanza resta la stessa (saccarosio) e non cambia l'energia di attivazione.",
+  "semplice": "La legna sminuzzata brucia molto più in fretta di un tronco intero, e la polvere di farina può persino esplodere. Più piccoli sono i pezzi, più superficie è esposta.",
+  "passaggi": [
+   "Nota che la sostanza è la stessa, cambia solo la forma",
+   "La polvere ha più superficie esposta",
+   "Più superficie significa più urti al secondo",
+   "Quindi la velocità aumenta"
+  ],
+  "concetto": "Superficie di contatto e velocità"
+ },
+ {
+  "id": "NCHI-073",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "La legge cinetica di una reazione è v = k[A]²[B]. Se si raddoppiano sia [A] sia [B], come cambia la velocità?",
+  "opzioni": {
+   "A": "Diventa 8 volte più grande",
+   "B": "Raddoppia",
+   "C": "Diventa 4 volte più grande",
+   "D": "Diventa 6 volte più grande",
+   "E": "Diventa 16 volte più grande"
+  },
+  "giusta": "A",
+  "perche": "Raddoppiando [A], il termine [A]² diventa 2² = 4 volte più grande; raddoppiando [B], il termine [B] raddoppia. Gli effetti si moltiplicano: 4 × 2 = 8. Il valore 4 nasce dal considerare solo A, 6 dal sommare gli effetti invece di moltiplicarli.",
+  "semplice": "È come un'area: se raddoppi la lunghezza e la larghezza di un tavolo, l'area non raddoppia, ma diventa quattro volte più grande. Qui A conta «al quadrato» e B si aggiunge come altro fattore 2.",
+  "passaggi": [
+   "Effetto di A: (2)² = 4",
+   "Effetto di B: (2)¹ = 2",
+   "Gli effetti si moltiplicano: 4 × 2",
+   "La velocità diventa 8 volte più grande"
+  ],
+  "concetto": "Legge cinetica e ordini di reazione"
+ },
+ {
+  "id": "NCHI-074",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Quali sono le unità di misura della costante cinetica k per una reazione di secondo ordine complessivo?",
+  "opzioni": {
+   "A": "s⁻¹",
+   "B": "mol·L⁻¹·s⁻¹",
+   "C": "L·mol⁻¹·s⁻¹ (cioè M⁻¹·s⁻¹)",
+   "D": "L²·mol⁻²·s⁻¹",
+   "E": "mol·L⁻¹"
+  },
+  "giusta": "C",
+  "perche": "La velocità si misura in mol·L⁻¹·s⁻¹; per un secondo ordine v = k[A]², quindi k = v/[A]² ha unità (mol·L⁻¹·s⁻¹)/(mol·L⁻¹)² = L·mol⁻¹·s⁻¹. Le unità s⁻¹ sono quelle del primo ordine e mol·L⁻¹·s⁻¹ quelle dell'ordine zero, cioè le stesse della velocità.",
+  "semplice": "Le unità di k «aggiustano» la formula perché alla fine venga una velocità. Nel secondo ordine si moltiplicano due concentrazioni, quindi k deve toglierne una: per questo ha L/mol al numeratore.",
+  "passaggi": [
+   "Unità della velocità: mol·L⁻¹·s⁻¹",
+   "Secondo ordine: v = k[A]²",
+   "k = v / [A]² = (mol·L⁻¹·s⁻¹) / (mol·L⁻¹)²",
+   "Risultato: L·mol⁻¹·s⁻¹"
+  ],
+  "concetto": "Unità della costante cinetica"
+ },
+ {
+  "id": "NCHI-075",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Una reazione di primo ordine ha costante cinetica k = 0,0231 min⁻¹. Qual è il suo tempo di dimezzamento?",
+  "opzioni": {
+   "A": "43,3 min",
+   "B": "0,016 min",
+   "C": "30,0 min",
+   "D": "15,0 min",
+   "E": "60,0 min"
+  },
+  "giusta": "C",
+  "perche": "Per il primo ordine il tempo di dimezzamento è indipendente dalla concentrazione iniziale e vale t½ = ln2/k = 0,693/0,0231 min⁻¹ = 30,0 min. Il valore 43,3 min si ottiene facendo 1/k senza ln2, mentre 0,016 deriva dal moltiplicare invece di dividere.",
+  "semplice": "Ogni 30 minuti metà del reagente sparisce, qualunque sia la quantità iniziale: se ne hai 100 g, dopo mezz'ora ne restano 50, dopo un'ora 25.",
+  "passaggi": [
+   "Primo ordine: t½ = ln2 / k",
+   "ln2 = 0,693",
+   "t½ = 0,693 / 0,0231 min⁻¹",
+   "Risultato: 30,0 min"
+  ],
+  "concetto": "Tempo di dimezzamento del primo ordine"
+ },
+ {
+  "id": "NCHI-076",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "In una reazione di primo ordine, quale frazione del reagente iniziale rimane dopo tre tempi di dimezzamento?",
+  "opzioni": {
+   "A": "33,3%",
+   "B": "12,5%",
+   "C": "25,0%",
+   "D": "6,25%",
+   "E": "0%"
+  },
+  "giusta": "B",
+  "perche": "A ogni tempo di dimezzamento la quantità si dimezza: 100% → 50% → 25% → 12,5%. Quindi dopo tre emivite resta (1/2)³ = 1/8 = 12,5%. Pensare che la quantità diminuisca di un terzo per volta, arrivando a zero, è un errore: la diminuzione è esponenziale.",
+  "semplice": "Se ogni giorno mangi metà della torta rimasta, dopo tre giorni ti resta un ottavo della torta iniziale, non zero.",
+  "passaggi": [
+   "Dopo 1 t½: 50%",
+   "Dopo 2 t½: 25%",
+   "Dopo 3 t½: 12,5%",
+   "In generale resta (1/2)ⁿ"
+  ],
+  "concetto": "Decadimento esponenziale"
+ },
+ {
+  "id": "NCHI-077",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Secondo la teoria degli urti, quali condizioni devono essere soddisfatte perché un urto tra molecole porti alla reazione?",
+  "opzioni": {
+   "A": "Basta che le molecole si urtino, in qualsiasi modo",
+   "B": "Le molecole devono avere la stessa massa",
+   "C": "Le molecole devono essere ioni di carica opposta",
+   "D": "Le molecole devono urtarsi con energia almeno pari all'energia di attivazione e con un orientamento favorevole",
+   "E": "L'urto deve avvenire in presenza di un catalizzatore"
+  },
+  "giusta": "D",
+  "perche": "Solo una piccola frazione degli urti è efficace: serve energia sufficiente a superare la barriera (energia di attivazione) e serve che le parti reattive delle molecole siano rivolte l'una verso l'altra. Per questo aumentare la temperatura, che accresce la frazione di molecole veloci, accelera molto le reazioni. Pensare che basti l'urto è l'errore più comune.",
+  "semplice": "Per aprire una porta con una spallata devi spingere abbastanza forte e colpire nel punto giusto. Se spingi piano, o colpisci il muro accanto, non succede niente.",
+  "passaggi": [
+   "Ricorda che non tutti gli urti producono una reazione",
+   "Prima condizione: energia ≥ energia di attivazione",
+   "Seconda condizione: orientamento corretto",
+   "Escludi le altre opzioni: non sono requisiti generali"
+  ],
+  "concetto": "Teoria degli urti"
+ },
+ {
+  "id": "NCHI-078",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Per la reazione A → prodotti si osserva che, raddoppiando la concentrazione di A, la velocità iniziale diventa quattro volte più grande. Qual è l'ordine di reazione rispetto ad A?",
+  "opzioni": {
+   "A": "1",
+   "B": "2",
+   "C": "4",
+   "D": "0",
+   "E": "1/2"
+  },
+  "giusta": "B",
+  "perche": "Se v = k[A]ⁿ, raddoppiando [A] la velocità si moltiplica per 2ⁿ. Poiché aumenta di 4 volte, 2ⁿ = 4 e quindi n = 2. Scegliere 4 confonde il fattore di aumento della velocità con l'esponente.",
+  "semplice": "Se raddoppiando una cosa l'effetto quadruplica, la relazione è «al quadrato», come per l'area di un quadrato quando ne raddoppi il lato.",
+  "passaggi": [
+   "Scrivi la legge: v = k[A]ⁿ",
+   "Raddoppiando [A]: v cresce di 2ⁿ",
+   "Imposta 2ⁿ = 4",
+   "Risultato: n = 2"
+  ],
+  "concetto": "Ordine di reazione dai dati sperimentali"
+ },
+ {
+  "id": "NCHI-079",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sugli enzimi è corretta?",
+  "opzioni": {
+   "A": "Sono catalizzatori biologici, di solito proteine, molto specifici per il loro substrato",
+   "B": "Vengono consumati nella reazione che catalizzano",
+   "C": "Spostano l'equilibrio di una reazione verso i prodotti",
+   "D": "Funzionano meglio a temperature sempre più alte, senza limite",
+   "E": "Aumentano l'energia di attivazione delle reazioni cellulari"
+  },
+  "giusta": "A",
+  "perche": "Gli enzimi accelerano le reazioni abbassando l'energia di attivazione grazie al sito attivo, che riconosce in modo specifico il substrato. Come tutti i catalizzatori non si consumano e non modificano l'equilibrio. A temperature troppo alte si denaturano e perdono attività, quindi hanno una temperatura ottimale e non crescono di attività senza limite.",
+  "semplice": "Un enzima è come una chiave che apre una sola serratura: lavora solo con la sua molecola, la trasforma e torna libero per la successiva. Ma se scaldi troppo, la chiave si deforma e non apre più niente.",
+  "passaggi": [
+   "Ricorda che gli enzimi sono catalizzatori",
+   "Escludi «consumati» e «spostano l'equilibrio»: non vale per i catalizzatori",
+   "Escludi la temperatura senza limite: si denaturano",
+   "Resta: catalizzatori proteici specifici"
+  ],
+  "concetto": "Enzimi come catalizzatori"
+ },
+ {
+  "id": "NCHI-080",
+  "materia": "Chimica",
+  "argomento": "Cinetica chimica e catalizzatori",
+  "livello": "superiori",
+  "domanda": "Nella marmitta catalitica delle automobili, metalli come platino, palladio e rodio favoriscono la trasformazione di CO e ossidi di azoto in sostanze meno dannose. Che tipo di catalisi è?",
+  "opzioni": {
+   "A": "Catalisi omogenea, perché tutto è nella stessa fase",
+   "B": "Catalisi enzimatica",
+   "C": "Autocatalisi, perché i prodotti catalizzano la reazione",
+   "D": "Catalisi eterogenea, perché il catalizzatore è solido e i reagenti sono gassosi",
+   "E": "Non è catalisi, perché i metalli si consumano"
+  },
+  "giusta": "D",
+  "perche": "Si parla di catalisi eterogenea quando catalizzatore e reagenti sono in fasi diverse: i gas di scarico si adsorbono sulla superficie dei metalli solidi, dove reagiscono più facilmente, e i prodotti poi si staccano. Nella catalisi omogenea il catalizzatore è nella stessa fase dei reagenti, per esempio tutti disciolti in soluzione.",
+  "semplice": "I gas di scarico «atterrano» sulla superficie del metallo, lì reagiscono e ripartono trasformati. Il metallo è solido e il gas è gas: due fasi diverse, quindi catalisi eterogenea.",
+  "passaggi": [
+   "Individua la fase del catalizzatore: solido",
+   "Individua la fase dei reagenti: gas",
+   "Fasi diverse = catalisi eterogenea",
+   "Escludi il consumo: i metalli restano inalterati"
+  ],
+  "concetto": "Catalisi omogenea ed eterogenea"
+ }
+]

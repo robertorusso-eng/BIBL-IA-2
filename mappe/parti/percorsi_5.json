@@ -1,0 +1,1508 @@
+{
+ "ciclo dell'urea": {
+  "titolo": "Ciclo dell'urea: come il fegato elimina l'azoto",
+  "dove": "Fegato: prima il mitocondrio, poi il citoplasma",
+  "inizio": "amminoacidi",
+  "intro": "Quando gli amminoacidi vengono usati come energia, il loro azoto diventa ammoniaca, che è tossica per il cervello. Il fegato la trasforma in urea, una molecola innocua che il rene elimina con l'urina. Ogni urea contiene due atomi di azoto: uno arriva dall'ammoniaca, l'altro dall'aspartato. Il ciclo comincia nel mitocondrio e finisce nel citoplasma; l'ornitina è la molecola che si ricicla a ogni giro.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "L'azoto degli amminoacidi si raccoglie e si libera come ammoniaca"
+   },
+   {
+    "da": 3,
+    "nome": "Nel mitocondrio: entra il primo azoto"
+   },
+   {
+    "da": 5,
+    "nome": "Nel citoplasma: entra il secondo azoto ed esce l'urea"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "amminoacidi"
+    ],
+    "a": [
+     "glutammato"
+    ],
+    "enzima": "transaminasi (ALT e AST)",
+    "entra": [
+     "α-chetoglutarato"
+    ],
+    "esce": [
+     "α-chetoacidi"
+    ],
+    "nota": "Il gruppo amminico (–NH₂) passa dall'amminoacido all'α-chetoglutarato, che diventa glutammato. Le transaminasi usano la vitamina B6 (piridossal fosfato)."
+   },
+   {
+    "da": [
+     "glutammato"
+    ],
+    "a": [
+     "ione ammonio (NH₄⁺)"
+    ],
+    "enzima": "glutammato deidrogenasi",
+    "entra": [
+     "NAD⁺",
+     "H₂O"
+    ],
+    "esce": [
+     "NADH + H⁺",
+     "α-chetoglutarato"
+    ],
+    "nota": "Nel mitocondrio del fegato il glutammato perde il gruppo amminico come ione ammonio (deaminazione ossidativa). L'α-chetoglutarato torna libero per raccogliere altro azoto."
+   },
+   {
+    "da": [
+     "ione ammonio (NH₄⁺)"
+    ],
+    "a": [
+     "carbamil fosfato"
+    ],
+    "enzima": "carbamil fosfato sintetasi I (CPS I)",
+    "entra": [
+     "bicarbonato (HCO₃⁻)",
+     "ATP"
+    ],
+    "esce": [
+     "ADP",
+     "fosfato (Pi)"
+    ],
+    "irreversibile": true,
+    "limitante": true,
+    "nota": "Ammoniaca e bicarbonato si uniscono spendendo 2 ATP. È la tappa che regola il ciclo: funziona solo se c'è N-acetilglutammato, che aumenta quando arrivano molti amminoacidi."
+   },
+   {
+    "da": [
+     "carbamil fosfato"
+    ],
+    "a": [
+     "citrullina"
+    ],
+    "enzima": "ornitina transcarbamilasi (OTC)",
+    "entra": [
+     "ornitina"
+    ],
+    "esce": [
+     "fosfato (Pi)"
+    ],
+    "nota": "Il gruppo carbamile passa all'ornitina, che diventa citrullina. La citrullina esce dal mitocondrio verso il citoplasma."
+   },
+   {
+    "da": [
+     "citrullina"
+    ],
+    "a": [
+     "argininosuccinato"
+    ],
+    "enzima": "argininosuccinato sintetasi",
+    "entra": [
+     "aspartato",
+     "ATP"
+    ],
+    "esce": [
+     "AMP",
+     "pirofosfato (PPi)"
+    ],
+    "nota": "L'aspartato porta il secondo atomo di azoto. L'ATP diventa AMP: si spendono 2 legami ricchi di energia."
+   },
+   {
+    "da": [
+     "argininosuccinato"
+    ],
+    "a": [
+     "arginina"
+    ],
+    "enzima": "argininosuccinato liasi",
+    "entra": [],
+    "esce": [
+     "fumarato"
+    ],
+    "nota": "La molecola si spezza: resta l'arginina, che contiene i due azoti, e si libera il fumarato, lo scheletro di carbonio dell'aspartato."
+   },
+   {
+    "da": [
+     "arginina"
+    ],
+    "a": [
+     "urea",
+     "ornitina"
+    ],
+    "enzima": "arginasi",
+    "entra": [
+     "H₂O"
+    ],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "L'acqua stacca l'urea dall'arginina. L'ornitina rientra nel mitocondrio e il ciclo ricomincia; l'urea va nel sangue e poi al rene."
+   }
+  ],
+  "bilancio": [
+   "NH₄⁺ + HCO₃⁻ + aspartato + 3 ATP → urea + fumarato + 2 ADP + AMP + 2 Pi + PPi",
+   "4 legami fosfato ricchi di energia spesi per ogni molecola di urea",
+   "un azoto dall'ammoniaca, l'altro dall'aspartato; il carbonio dal bicarbonato",
+   "l'ornitina non si consuma: si rigenera a ogni giro"
+  ],
+  "dopo": {
+   "titolo": "Dove vanno l'urea e il fumarato",
+   "strade": [
+    {
+     "condizione": "L'urea (con il sangue fino al rene)",
+     "da": "urea",
+     "a": "urina",
+     "enzima": "rene",
+     "entra": [],
+     "esce": [],
+     "nota": "L'urea è filtrata dal glomerulo ed eliminata con l'urina. Nell'insufficienza renale si accumula nel sangue (azotemia alta)."
+    },
+    {
+     "condizione": "Il fumarato (bicicletta di Krebs)",
+     "da": "fumarato",
+     "a": "malato",
+     "enzima": "fumarasi",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [],
+     "nota": "Il malato diventa ossalacetato, che con una transaminasi torna aspartato: così il ciclo dell'urea e il ciclo di Krebs sono collegati.",
+     "prossimo": "ciclo di Krebs"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Come arriva l'azoto al fegato senza intossicare il sangue",
+    "voci": [
+     [
+      "Dal muscolo (ciclo glucosio-alanina)",
+      [
+       "alanina"
+      ]
+     ],
+     [
+      "Dagli altri tessuti, cervello compreso",
+      [
+       "glutammina"
+      ]
+     ],
+     [
+      "La forma tossica, da tenere bassa nel sangue",
+      [
+       "ione ammonio (NH₄⁺)"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "metabolismo del glicogeno": {
+  "titolo": "Glicogeno: come si costruisce e come si demolisce la scorta di zucchero",
+  "dove": "Citoplasma delle cellule del fegato e del muscolo",
+  "inizio": "glucosio",
+  "intro": "Il glicogeno è la scorta di glucosio degli animali: una catena lunga e ramificata. Dopo un pasto l'insulina fa costruire glicogeno (glicogenosintesi); nel digiuno e durante lo sforzo glucagone e adrenalina lo fanno demolire (glicogenolisi). Le due strade usano enzimi diversi e sono regolate in modo opposto, così non lavorano insieme. Il fegato usa il glicogeno per tenere costante la glicemia, il muscolo solo per sé.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Glicogenosintesi: dopo il pasto (insulina)"
+   },
+   {
+    "da": 6,
+    "nome": "Glicogenolisi: nel digiuno e sotto sforzo (glucagone, adrenalina)"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "glucosio"
+    ],
+    "a": [
+     "glucosio 6-fosfato"
+    ],
+    "enzima": "esochinasi",
+    "entra": [
+     "ATP"
+    ],
+    "esce": [
+     "ADP"
+    ],
+    "irreversibile": true,
+    "nota": "Il glucosio riceve un fosfato e resta nella cellula. Nel fegato lavora la glucochinasi, che si attiva solo quando la glicemia è alta."
+   },
+   {
+    "da": [
+     "glucosio 6-fosfato"
+    ],
+    "a": [
+     "glucosio 1-fosfato"
+    ],
+    "enzima": "fosfoglucomutasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Il fosfato si sposta dal carbonio 6 al carbonio 1. La reazione è reversibile e serve anche alla demolizione."
+   },
+   {
+    "da": [
+     "glucosio 1-fosfato"
+    ],
+    "a": [
+     "UDP-glucosio"
+    ],
+    "enzima": "UDP-glucosio pirofosforilasi",
+    "entra": [
+     "UTP"
+    ],
+    "esce": [
+     "pirofosfato (PPi)"
+    ],
+    "irreversibile": true,
+    "nota": "Il glucosio viene «attivato» legandolo all'UDP. Il pirofosfato viene subito spezzato in 2 fosfati: per questo la reazione va in una sola direzione."
+   },
+   {
+    "da": [
+     "UDP-glucosio"
+    ],
+    "a": [
+     "glicogeno"
+    ],
+    "enzima": "glicogeno sintasi",
+    "entra": [],
+    "esce": [
+     "UDP"
+    ],
+    "irreversibile": true,
+    "limitante": true,
+    "nota": "Il glucosio si aggiunge alla punta della catena con un legame α(1→4). È la tappa regolata della sintesi: l'insulina la attiva, glucagone e adrenalina la spengono. Per partire serve un piccolo innesco, la proteina glicogenina."
+   },
+   {
+    "da": [
+     "glicogeno"
+    ],
+    "a": [
+     "glicogeno"
+    ],
+    "enzima": "enzima ramificante",
+    "entra": [],
+    "esce": [],
+    "nota": "Un pezzo di catena viene spostato e attaccato di lato con un legame α(1→6). Le ramificazioni rendono il glicogeno più solubile e danno tante punte da cui aggiungere o togliere glucosio in fretta."
+   },
+   {
+    "da": [
+     "glicogeno"
+    ],
+    "a": [
+     "glucosio 1-fosfato"
+    ],
+    "enzima": "glicogeno fosforilasi",
+    "entra": [
+     "fosfato (Pi)"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "Un fosfato stacca un glucosio alla volta dalle punte (fosforolisi), senza spendere ATP. È la tappa regolata della demolizione: glucagone (fegato) e adrenalina (fegato e muscolo) la attivano. Si ferma a 4 glucosi da ogni ramificazione."
+   },
+   {
+    "da": [
+     "glucosio 1-fosfato"
+    ],
+    "a": [
+     "glucosio 6-fosfato"
+    ],
+    "enzima": "fosfoglucomutasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Lo stesso enzima della sintesi, al contrario: il fosfato torna sul carbonio 6."
+   },
+   {
+    "da": [
+     "glucosio 6-fosfato"
+    ],
+    "a": [
+     "glucosio"
+    ],
+    "enzima": "glucosio 6-fosfatasi",
+    "entra": [
+     "H₂O"
+    ],
+    "esce": [
+     "fosfato (Pi)"
+    ],
+    "irreversibile": true,
+    "nota": "Solo nel fegato (e nel rene), nel reticolo endoplasmatico: il glucosio libero esce nel sangue e mantiene la glicemia. Il muscolo non ha questo enzima e usa il glucosio 6-fosfato per la propria glicolisi."
+   }
+  ],
+  "titolo_bilancio": "Bilancio",
+  "bilancio": [
+   "aggiungere 1 glucosio al glicogeno costa 2 legami ricchi di energia (1 ATP + 1 UTP)",
+   "la fosforilasi stacca glucosio 1-fosfato senza spendere ATP: il muscolo guadagna 1 ATP in più nella glicolisi",
+   "fegato: il glicogeno serve alla glicemia; muscolo: serve solo al muscolo",
+   "insulina → sintesi; glucagone e adrenalina → demolizione (tramite AMP ciclico e fosforilazione degli enzimi)"
+  ],
+  "dopo": {
+   "titolo": "Ramificazioni e uso nel muscolo",
+   "strade": [
+    {
+     "condizione": "Ai punti di ramificazione",
+     "da": "glicogeno",
+     "a": "glucosio",
+     "enzima": "enzima deramificante",
+     "entra": [
+      "H₂O"
+     ],
+     "esce": [],
+     "nota": "Sposta 3 dei 4 glucosi rimasti su un'altra catena e stacca l'ultimo, quello legato con α(1→6), come glucosio libero. Poi la fosforilasi può continuare."
+    },
+    {
+     "condizione": "Nel muscolo che lavora",
+     "da": "glucosio 6-fosfato",
+     "a": "piruvato",
+     "enzima": "enzimi della glicolisi",
+     "entra": [
+      "ADP"
+     ],
+     "esce": [
+      "ATP"
+     ],
+     "nota": "Il glucosio del glicogeno muscolare dà energia subito alla fibra che si contrae; il Ca²⁺ e l'AMP attivano la fosforilasi muscolare.",
+     "prossimo": "glicolisi"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Chi accende e chi spegne",
+    "voci": [
+     [
+      "Accende la sintesi",
+      [
+       "insulina"
+      ]
+     ],
+     [
+      "Accendono la demolizione",
+      [
+       "glucagone",
+       "adrenalina"
+      ]
+     ],
+     [
+      "Dove si tiene la scorta",
+      [
+       "fegato",
+       "muscolo scheletrico"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "via dei pentoso fosfati": {
+  "titolo": "Via dei pentoso fosfati: NADPH e ribosio dal glucosio",
+  "dove": "Citoplasma, soprattutto di fegato, tessuto adiposo, ghiandola surrenale, ghiandola mammaria e globuli rossi",
+  "inizio": "glucosio 6-fosfato",
+  "intro": "È una strada alternativa alla glicolisi che non produce ATP. Serve a fare due cose: il NADPH, che dà gli elettroni per costruire grassi e colesterolo e per difendere la cellula dall'ossidazione, e il ribosio 5-fosfato, lo zucchero dei nucleotidi (DNA e RNA). Ha una fase ossidativa, a senso unico, e una fase non ossidativa, reversibile, che rimescola gli zuccheri.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Fase ossidativa: si producono 2 NADPH e si perde 1 CO₂"
+   },
+   {
+    "da": 4,
+    "nome": "Fase non ossidativa: gli zuccheri si rimescolano (reversibile)"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "glucosio 6-fosfato"
+    ],
+    "a": [
+     "6-fosfoglucono-δ-lattone"
+    ],
+    "enzima": "glucosio 6-fosfato deidrogenasi (G6PD)",
+    "entra": [
+     "NADP⁺"
+    ],
+    "esce": [
+     "NADPH"
+    ],
+    "irreversibile": true,
+    "limitante": true,
+    "nota": "Primo NADPH. È la tappa che regola tutta la via: il NADP⁺ la accelera, il NADPH la frena. Quando la cellula consuma NADPH, la via parte."
+   },
+   {
+    "da": [
+     "6-fosfoglucono-δ-lattone"
+    ],
+    "a": [
+     "6-fosfogluconato"
+    ],
+    "enzima": "lattonasi",
+    "entra": [
+     "H₂O"
+    ],
+    "esce": [],
+    "nota": "L'acqua apre l'anello del lattone: si forma un acido."
+   },
+   {
+    "da": [
+     "6-fosfogluconato"
+    ],
+    "a": [
+     "ribulosio 5-fosfato"
+    ],
+    "enzima": "6-fosfogluconato deidrogenasi",
+    "entra": [
+     "NADP⁺"
+    ],
+    "esce": [
+     "NADPH",
+     "CO₂"
+    ],
+    "irreversibile": true,
+    "nota": "Secondo NADPH. La molecola perde un carbonio come CO₂: da 6 a 5 atomi di carbonio (decarbossilazione ossidativa)."
+   },
+   {
+    "da": [
+     "ribulosio 5-fosfato"
+    ],
+    "a": [
+     "ribosio 5-fosfato"
+    ],
+    "enzima": "ribosio 5-fosfato isomerasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Da chetoso ad aldoso. Il ribosio 5-fosfato serve a fare i nucleotidi: nelle cellule che si dividono la via può fermarsi qui."
+   },
+   {
+    "da": [
+     "ribulosio 5-fosfato"
+    ],
+    "a": [
+     "xilulosio 5-fosfato"
+    ],
+    "enzima": "ribulosio 5-fosfato 3-epimerasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Un altro ribulosio 5-fosfato cambia solo l'orientamento di un gruppo sul carbonio 3 (epimero)."
+   },
+   {
+    "da": [
+     "xilulosio 5-fosfato",
+     "ribosio 5-fosfato"
+    ],
+    "a": [
+     "sedoeptulosio 7-fosfato",
+     "gliceraldeide 3-fosfato"
+    ],
+    "enzima": "transchetolasi",
+    "entra": [],
+    "esce": [],
+    "nota": "La transchetolasi sposta un pezzo di 2 atomi di carbonio: 5 + 5 diventa 7 + 3. Usa la tiamina pirofosfato (vitamina B1)."
+   },
+   {
+    "da": [
+     "sedoeptulosio 7-fosfato",
+     "gliceraldeide 3-fosfato"
+    ],
+    "a": [
+     "fruttosio 6-fosfato",
+     "eritrosio 4-fosfato"
+    ],
+    "enzima": "transaldolasi",
+    "entra": [],
+    "esce": [],
+    "nota": "La transaldolasi sposta un pezzo di 3 atomi di carbonio: 7 + 3 diventa 6 + 4. Il fruttosio 6-fosfato può entrare nella glicolisi."
+   },
+   {
+    "da": [
+     "eritrosio 4-fosfato",
+     "xilulosio 5-fosfato"
+    ],
+    "a": [
+     "fruttosio 6-fosfato",
+     "gliceraldeide 3-fosfato"
+    ],
+    "enzima": "transchetolasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Ancora 2 atomi di carbonio spostati: 4 + 5 diventa 6 + 3. Alla fine tutti i pentosi tornano zuccheri della glicolisi."
+   }
+  ],
+  "bilancio": [
+   "fase ossidativa: glucosio 6-fosfato + 2 NADP⁺ + H₂O → ribulosio 5-fosfato + 2 NADPH + CO₂",
+   "via completa: 3 glucosio 6-fosfato → 6 NADPH + 3 CO₂ + 2 fruttosio 6-fosfato + 1 gliceraldeide 3-fosfato",
+   "nessun ATP prodotto né consumato",
+   "se serve più ribosio che NADPH, la fase non ossidativa lavora al contrario partendo da zuccheri della glicolisi"
+  ],
+  "dopo": {
+   "titolo": "A cosa servono i prodotti",
+   "strade": [
+    {
+     "condizione": "Difesa dall'ossidazione (soprattutto nei globuli rossi)",
+     "da": "glutatione ossidato (GSSG)",
+     "a": "glutatione ridotto (GSH)",
+     "enzima": "glutatione reduttasi",
+     "entra": [
+      "NADPH"
+     ],
+     "esce": [
+      "NADP⁺"
+     ],
+     "nota": "Il glutatione ridotto elimina l'acqua ossigenata e protegge emoglobina e membrana. Nel globulo rosso questa è l'unica fonte di NADPH."
+    },
+    {
+     "condizione": "Sintesi dei nucleotidi (cellule che si dividono)",
+     "da": "ribosio 5-fosfato",
+     "a": "PRPP",
+     "enzima": "PRPP sintetasi",
+     "entra": [
+      "ATP"
+     ],
+     "esce": [
+      "AMP"
+     ],
+     "nota": "Il PRPP è lo zucchero attivato su cui si costruiscono i nucleotidi di DNA e RNA."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Dove si usa il NADPH",
+    "voci": [
+     [
+      "Per costruire molecole (sintesi riduttive)",
+      [
+       "acido grasso",
+       "colesterolo"
+      ]
+     ],
+     [
+      "Per difendersi dall'ossidazione",
+      [
+       "glutatione ridotto (GSH)"
+      ]
+     ],
+     [
+      "NADH e NADPH: simili ma con compiti diversi",
+      [
+       "NADH + H⁺",
+       "NADPH"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "sintesi degli acidi grassi": {
+  "titolo": "Sintesi degli acidi grassi: dall'acetil-CoA al palmitato",
+  "dove": "Citoplasma, soprattutto del fegato, del tessuto adiposo e della ghiandola mammaria",
+  "inizio": "acetil-CoA",
+  "intro": "Quando si mangia più di quanto serve, gli zuccheri in eccesso diventano grassi. L'acetil-CoA prodotto nel mitocondrio viene portato nel citoplasma, attivato a malonil-CoA e allungato di 2 atomi di carbonio alla volta dall'acido grasso sintasi, un grande complesso con tutte le attività in una sola proteina. Dopo 7 giri si ottiene il palmitato (16 atomi di carbonio). Non è la β-ossidazione al contrario: cambiano luogo, enzimi, trasportatore (ACP invece del CoA) e coenzima (NADPH invece di NAD⁺ e FAD).",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "L'acetil-CoA esce dal mitocondrio come citrato"
+   },
+   {
+    "da": 3,
+    "nome": "Attivazione: si forma il malonil-CoA (tappa regolata)"
+   },
+   {
+    "da": 4,
+    "nome": "Acido grasso sintasi: 4 reazioni ripetute 7 volte (×7)"
+   },
+   {
+    "da": 8,
+    "nome": "Liberazione del palmitato"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "acetil-CoA"
+    ],
+    "a": [
+     "citrato"
+    ],
+    "enzima": "citrato sintasi",
+    "entra": [
+     "ossalacetato"
+    ],
+    "esce": [
+     "coenzima A"
+    ],
+    "nota": "L'acetil-CoA non attraversa la membrana del mitocondrio. Si unisce all'ossalacetato e diventa citrato, che invece esce con un trasportatore."
+   },
+   {
+    "da": [
+     "citrato"
+    ],
+    "a": [
+     "acetil-CoA"
+    ],
+    "enzima": "ATP-citrato liasi",
+    "entra": [
+     "ATP",
+     "coenzima A"
+    ],
+    "esce": [
+     "ossalacetato",
+     "ADP",
+     "fosfato (Pi)"
+    ],
+    "nota": "Nel citoplasma il citrato si spezza e torna acetil-CoA. L'ossalacetato diventa malato e poi piruvato con l'enzima malico, che produce altro NADPH."
+   },
+   {
+    "da": [
+     "acetil-CoA"
+    ],
+    "a": [
+     "malonil-CoA"
+    ],
+    "enzima": "acetil-CoA carbossilasi (ACC)",
+    "entra": [
+     "ATP",
+     "bicarbonato (HCO₃⁻)"
+    ],
+    "esce": [
+     "ADP",
+     "fosfato (Pi)"
+    ],
+    "irreversibile": true,
+    "limitante": true,
+    "nota": "Si aggiunge un carbonio con la biotina. È la tappa che decide: insulina e citrato la attivano; glucagone, adrenalina e AMPK la spengono, e il palmitoil-CoA la frena. Il malonil-CoA blocca anche l'ingresso dei grassi nel mitocondrio (CPT1)."
+   },
+   {
+    "da": [
+     "malonil-CoA"
+    ],
+    "a": [
+     "β-chetoacil-ACP"
+    ],
+    "enzima": "β-chetoacil-ACP sintasi",
+    "entra": [],
+    "esce": [
+     "CO₂"
+    ],
+    "volte": 7,
+    "nota": "Il malonile, legato all'ACP, si unisce alla catena già presente: al primo giro è l'acetile di un acetil-CoA, poi la catena in crescita. Esce come CO₂ lo stesso carbonio aggiunto dall'ACC: la sua perdita spinge la reazione."
+   },
+   {
+    "da": [
+     "β-chetoacil-ACP"
+    ],
+    "a": [
+     "β-idrossiacil-ACP"
+    ],
+    "enzima": "β-chetoacil-ACP reduttasi",
+    "entra": [
+     "NADPH"
+    ],
+    "esce": [
+     "NADP⁺"
+    ],
+    "volte": 7,
+    "nota": "Prima riduzione: il gruppo chetonico diventa un gruppo ossidrile (isomero D). Gli elettroni arrivano dal NADPH."
+   },
+   {
+    "da": [
+     "β-idrossiacil-ACP"
+    ],
+    "a": [
+     "trans-Δ²-enoil-ACP"
+    ],
+    "enzima": "β-idrossiacil-ACP deidratasi",
+    "entra": [],
+    "esce": [
+     "H₂O"
+    ],
+    "volte": 7,
+    "nota": "Si toglie una molecola d'acqua: si forma un doppio legame tra i carboni 2 e 3."
+   },
+   {
+    "da": [
+     "trans-Δ²-enoil-ACP"
+    ],
+    "a": [
+     "acil-ACP (catena allungata)"
+    ],
+    "enzima": "enoil-ACP reduttasi",
+    "entra": [
+     "NADPH"
+    ],
+    "esce": [
+     "NADP⁺"
+    ],
+    "volte": 7,
+    "nota": "Seconda riduzione: il doppio legame sparisce. La catena è cresciuta di 2 atomi di carbonio e riparte dal passaggio 4, finché arriva a 16."
+   },
+   {
+    "da": [
+     "acil-ACP (catena allungata)"
+    ],
+    "a": [
+     "palmitato"
+    ],
+    "enzima": "tioesterasi",
+    "entra": [
+     "H₂O"
+    ],
+    "esce": [],
+    "nota": "Quando la catena ha 16 atomi di carbonio, la tioesterasi la stacca dall'ACP: si libera il palmitato, acido grasso saturo."
+   }
+  ],
+  "bilancio": [
+   "8 acetil-CoA + 7 ATP + 14 NADPH + 14 H⁺ → palmitato + 8 CoA + 7 ADP + 7 Pi + 14 NADP⁺ + 6 H₂O",
+   "7 ATP per fare 7 malonil-CoA, più 1 ATP per ogni acetil-CoA portato fuori dal mitocondrio come citrato",
+   "il NADPH arriva dalla via dei pentoso fosfati e dall'enzima malico",
+   "per ogni giro: +2 atomi di carbonio, 2 NADPH spesi, 1 CO₂ liberata"
+  ],
+  "dopo": {
+   "titolo": "Dove va il palmitato",
+   "strade": [
+    {
+     "condizione": "Allungamento e doppi legami (reticolo endoplasmatico)",
+     "da": "palmitato",
+     "a": "acido grasso",
+     "enzima": "elongasi e desaturasi",
+     "entra": [
+      "malonil-CoA",
+      "NADPH",
+      "O₂"
+     ],
+     "esce": [
+      "CO₂",
+      "H₂O"
+     ],
+     "nota": "Le elongasi allungano la catena (per esempio a stearato, 18 C); le desaturasi inseriscono doppi legami (stearato → oleato). L'uomo non sa inserirli oltre il carbonio 9: linoleico e α-linolenico sono essenziali."
+    },
+    {
+     "condizione": "Deposito (fegato e tessuto adiposo)",
+     "da": "palmitato",
+     "a": "trigliceridi",
+     "enzima": "glicerolo 3-fosfato aciltransferasi",
+     "entra": [
+      "ATP",
+      "coenzima A"
+     ],
+     "esce": [
+      "AMP",
+      "pirofosfato (PPi)"
+     ],
+     "nota": "Gli acidi grassi, attivati come acil-CoA, si legano al glicerolo 3-fosfato. Il fegato manda i trigliceridi nel sangue nelle VLDL; l'adipocita li tiene come scorta."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Sintesi e β-ossidazione a confronto",
+    "voci": [
+     [
+      "Sintesi: citoplasma, trasportatore ACP, coenzima",
+      [
+       "NADPH"
+      ]
+     ],
+     [
+      "β-ossidazione: mitocondrio, trasportatore CoA, coenzimi",
+      [
+       "NAD⁺",
+       "FAD"
+      ]
+     ],
+     [
+      "La molecola che impedisce di fare le due cose insieme",
+      [
+       "malonil-CoA"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "chetogenesi": {
+  "titolo": "Chetogenesi: i corpi chetonici, carburante del digiuno",
+  "dove": "Mitocondrio del fegato (sintesi); mitocondrio di cervello, cuore, muscolo e rene (utilizzo)",
+  "inizio": "acetil-CoA",
+  "intro": "Nel digiuno lungo, nelle diete povere di carboidrati e nel diabete tipo 1 scompensato il fegato demolisce molti acidi grassi e produce più acetil-CoA di quanto il ciclo di Krebs possa usare, anche perché l'ossalacetato va alla gluconeogenesi. L'acetil-CoA in eccesso diventa corpi chetonici: acetoacetato e β-idrossibutirrato, solubili in acqua, che viaggiano nel sangue senza trasportatori. Cervello, cuore e muscolo li ritrasformano in acetil-CoA. Il fegato li produce ma non li può usare.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Nel fegato: sintesi dei corpi chetonici"
+   },
+   {
+    "da": 5,
+    "nome": "Nei tessuti che li usano: ritorno ad acetil-CoA (chetolisi)"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "acetil-CoA"
+    ],
+    "a": [
+     "acetoacetil-CoA"
+    ],
+    "enzima": "tiolasi",
+    "entra": [
+     "acetil-CoA"
+    ],
+    "esce": [
+     "coenzima A"
+    ],
+    "nota": "Due acetil-CoA si uniscono: è l'ultimo passaggio della β-ossidazione fatto al contrario."
+   },
+   {
+    "da": [
+     "acetoacetil-CoA"
+    ],
+    "a": [
+     "HMG-CoA"
+    ],
+    "enzima": "HMG-CoA sintasi",
+    "entra": [
+     "acetil-CoA",
+     "H₂O"
+    ],
+    "esce": [
+     "coenzima A"
+    ],
+    "limitante": true,
+    "nota": "Si aggiunge un terzo acetil-CoA. È la tappa che regola la chetogenesi: la forma mitocondriale dell'enzima aumenta con glucagone e digiuno e cala con l'insulina."
+   },
+   {
+    "da": [
+     "HMG-CoA"
+    ],
+    "a": [
+     "acetoacetato"
+    ],
+    "enzima": "HMG-CoA liasi",
+    "entra": [],
+    "esce": [
+     "acetil-CoA"
+    ],
+    "nota": "L'HMG-CoA si spezza: si forma il primo corpo chetonico e si libera di nuovo un acetil-CoA."
+   },
+   {
+    "da": [
+     "acetoacetato"
+    ],
+    "a": [
+     "β-idrossibutirrato"
+    ],
+    "enzima": "β-idrossibutirrato deidrogenasi",
+    "entra": [
+     "NADH + H⁺"
+    ],
+    "esce": [
+     "NAD⁺"
+    ],
+    "nota": "Gran parte dell'acetoacetato viene ridotto. Più NADH c'è nel mitocondrio (come nel digiuno), più si forma β-idrossibutirrato, che nel sangue diventa il corpo chetonico più abbondante."
+   },
+   {
+    "da": [
+     "β-idrossibutirrato"
+    ],
+    "a": [
+     "acetoacetato"
+    ],
+    "enzima": "β-idrossibutirrato deidrogenasi",
+    "entra": [
+     "NAD⁺"
+    ],
+    "esce": [
+     "NADH + H⁺"
+    ],
+    "nota": "Arrivato con il sangue nel cervello, nel cuore o nel muscolo, il β-idrossibutirrato torna acetoacetato. Il NADH che si forma va alla catena respiratoria."
+   },
+   {
+    "da": [
+     "acetoacetato"
+    ],
+    "a": [
+     "acetoacetil-CoA"
+    ],
+    "enzima": "succinil-CoA:acetoacetato CoA transferasi (SCOT)",
+    "entra": [
+     "succinil-CoA"
+    ],
+    "esce": [
+     "succinato"
+    ],
+    "nota": "Il coenzima A passa dal succinil-CoA all'acetoacetato. Il fegato non ha questo enzima: per questo i corpi chetonici che produce vanno tutti agli altri organi."
+   },
+   {
+    "da": [
+     "acetoacetil-CoA"
+    ],
+    "a": [
+     "acetil-CoA"
+    ],
+    "enzima": "tiolasi",
+    "entra": [
+     "coenzima A"
+    ],
+    "esce": [],
+    "nota": "L'acetoacetil-CoA si spezza in 2 acetil-CoA, che entrano nel ciclo di Krebs del tessuto e danno energia."
+   }
+  ],
+  "bilancio": [
+   "nel fegato: 2 acetil-CoA + H₂O → acetoacetato + 2 CoA (il terzo acetil-CoA si recupera)",
+   "nei tessuti: 1 acetoacetato → 2 acetil-CoA, al costo di 1 succinil-CoA",
+   "corpi chetonici: acetoacetato, β-idrossibutirrato e acetone (che non si usa e si elimina con il respiro)",
+   "accendono la chetogenesi: insulina bassa e glucagone alto, molti acidi grassi in arrivo al fegato"
+  ],
+  "dopo": {
+   "titolo": "Dove va l'acetil-CoA nei tessuti",
+   "strade": [
+    {
+     "condizione": "Nel mitocondrio di cervello, cuore e muscolo",
+     "da": "acetil-CoA",
+     "a": "citrato",
+     "enzima": "citrato sintasi",
+     "entra": [
+      "ossalacetato"
+     ],
+     "esce": [
+      "coenzima A"
+     ],
+     "nota": "Entra nel ciclo di Krebs. Dopo alcuni giorni di digiuno il cervello ricava dai corpi chetonici una parte importante della sua energia e risparmia glucosio.",
+     "prossimo": "ciclo di Krebs"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "I tre corpi chetonici",
+    "voci": [
+     [
+      "Usati come carburante",
+      [
+       "acetoacetato",
+       "β-idrossibutirrato"
+      ]
+     ],
+     [
+      "Prodotto di scarto (alito «di frutta»)",
+      [
+       "acetone"
+      ]
+     ],
+     [
+      "Da dove arrivano gli acetil-CoA",
+      [
+       "acido grasso",
+       "acetil-CoA"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "sintesi del colesterolo": {
+  "titolo": "Sintesi del colesterolo: da 2 a 27 atomi di carbonio",
+  "dove": "Soprattutto fegato (ma quasi tutte le cellule): citoplasma e reticolo endoplasmatico",
+  "inizio": "acetil-CoA",
+  "intro": "Il colesterolo è costruito tutto a partire dall'acetil-CoA. Prima si forma il mevalonato (tappa regolata, bersaglio delle statine), poi le unità isopreniche a 5 atomi di carbonio, che si uniscono fino allo squalene (30 C). Lo squalene si chiude ad anelli formando il lanosterolo, che con circa venti reazioni diventa colesterolo (27 C). Servono molto ATP e molto NADPH.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Dall'acetil-CoA al mevalonato (tappa regolata)"
+   },
+   {
+    "da": 4,
+    "nome": "Le unità isopreniche (5 C)"
+   },
+   {
+    "da": 6,
+    "nome": "Le unità si uniscono: 10, 15, poi 30 atomi di carbonio"
+   },
+   {
+    "da": 9,
+    "nome": "Gli anelli e la rifinitura (reticolo endoplasmatico)"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "acetil-CoA"
+    ],
+    "a": [
+     "acetoacetil-CoA"
+    ],
+    "enzima": "tiolasi",
+    "entra": [
+     "acetil-CoA"
+    ],
+    "esce": [
+     "coenzima A"
+    ],
+    "nota": "Due acetil-CoA si uniscono nel citoplasma (tiolasi citosolica)."
+   },
+   {
+    "da": [
+     "acetoacetil-CoA"
+    ],
+    "a": [
+     "HMG-CoA"
+    ],
+    "enzima": "HMG-CoA sintasi",
+    "entra": [
+     "acetil-CoA",
+     "H₂O"
+    ],
+    "esce": [
+     "coenzima A"
+    ],
+    "nota": "Si aggiunge un terzo acetil-CoA. Lo stesso intermedio della chetogenesi, ma qui con la forma citosolica dell'enzima."
+   },
+   {
+    "da": [
+     "HMG-CoA"
+    ],
+    "a": [
+     "mevalonato"
+    ],
+    "enzima": "HMG-CoA reduttasi",
+    "entra": [
+     "NADPH"
+    ],
+    "esce": [
+     "NADP⁺",
+     "coenzima A"
+    ],
+    "irreversibile": true,
+    "limitante": true,
+    "nota": "Si usano 2 NADPH. È la tappa che decide la sintesi del colesterolo: la bloccano le statine; quando c'è molto colesterolo l'enzima viene degradato e il suo gene si spegne (SREBP-2); l'insulina la attiva, glucagone e AMPK la spengono."
+   },
+   {
+    "da": [
+     "mevalonato"
+    ],
+    "a": [
+     "isopentenil pirofosfato (IPP)"
+    ],
+    "enzima": "chinasi del mevalonato e decarbossilasi",
+    "entra": [
+     "ATP"
+    ],
+    "esce": [
+     "ADP",
+     "fosfato (Pi)",
+     "CO₂"
+    ],
+    "irreversibile": true,
+    "nota": "Due fosforilazioni e una decarbossilazione, con 3 ATP in tutto: il mevalonato (6 C) diventa la prima unità isoprenica attivata (5 C)."
+   },
+   {
+    "da": [
+     "isopentenil pirofosfato (IPP)"
+    ],
+    "a": [
+     "dimetilallil pirofosfato (DMAPP)"
+    ],
+    "enzima": "isopentenil pirofosfato isomerasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Il doppio legame si sposta: si ottiene la seconda forma dell'unità isoprenica. Servono tutte e due per unirle."
+   },
+   {
+    "da": [
+     "dimetilallil pirofosfato (DMAPP)"
+    ],
+    "a": [
+     "geranil pirofosfato (GPP)"
+    ],
+    "enzima": "farnesil pirofosfato sintasi",
+    "entra": [
+     "isopentenil pirofosfato (IPP)"
+    ],
+    "esce": [
+     "pirofosfato (PPi)"
+    ],
+    "nota": "Due unità a 5 atomi di carbonio si uniscono testa-coda: 5 + 5 = 10."
+   },
+   {
+    "da": [
+     "geranil pirofosfato (GPP)"
+    ],
+    "a": [
+     "farnesil pirofosfato (FPP)"
+    ],
+    "enzima": "farnesil pirofosfato sintasi",
+    "entra": [
+     "isopentenil pirofosfato (IPP)"
+    ],
+    "esce": [
+     "pirofosfato (PPi)"
+    ],
+    "nota": "Si aggiunge un'altra unità: 10 + 5 = 15. Il farnesil pirofosfato serve anche a fare ubichinone, dolicolo e ad ancorare proteine alla membrana (prenilazione)."
+   },
+   {
+    "da": [
+     "farnesil pirofosfato (FPP)"
+    ],
+    "a": [
+     "squalene"
+    ],
+    "enzima": "squalene sintasi",
+    "entra": [
+     "NADPH"
+    ],
+    "esce": [
+     "NADP⁺",
+     "pirofosfato (PPi)"
+    ],
+    "nota": "Due farnesil pirofosfato si uniscono testa-testa: 15 + 15 = 30 atomi di carbonio. Lo squalene è una lunga catena senza anelli."
+   },
+   {
+    "da": [
+     "squalene"
+    ],
+    "a": [
+     "2,3-ossidosqualene"
+    ],
+    "enzima": "squalene epossidasi",
+    "entra": [
+     "O₂",
+     "NADPH"
+    ],
+    "esce": [
+     "NADP⁺",
+     "H₂O"
+    ],
+    "nota": "Un atomo di ossigeno si aggiunge a un'estremità della catena: sarà il gruppo –OH del colesterolo."
+   },
+   {
+    "da": [
+     "2,3-ossidosqualene"
+    ],
+    "a": [
+     "lanosterolo"
+    ],
+    "enzima": "ossidosqualene ciclasi (lanosterolo sintasi)",
+    "entra": [],
+    "esce": [],
+    "nota": "Con un'unica reazione a catena la molecola si chiude e forma i 4 anelli tipici degli steroidi."
+   },
+   {
+    "da": [
+     "lanosterolo"
+    ],
+    "a": [
+     "7-deidrocolesterolo"
+    ],
+    "enzima": "lanosterolo 14α-demetilasi (CYP51) e altri enzimi",
+    "entra": [
+     "O₂",
+     "NADPH"
+    ],
+    "esce": [
+     "NADP⁺"
+    ],
+    "nota": "Circa venti reazioni nel reticolo endoplasmatico: si tolgono 3 gruppi metilici (da 30 a 27 atomi di carbonio) e si spostano i doppi legami. Una delle due strade finali passa per il 7-deidrocolesterolo, l'altra per il desmosterolo."
+   },
+   {
+    "da": [
+     "7-deidrocolesterolo"
+    ],
+    "a": [
+     "colesterolo"
+    ],
+    "enzima": "7-deidrocolesterolo reduttasi (DHCR7)",
+    "entra": [
+     "NADPH"
+    ],
+    "esce": [
+     "NADP⁺"
+    ],
+    "nota": "Ultimo passaggio: si toglie il doppio legame tra i carboni 7 e 8. Nella pelle, invece, il 7-deidrocolesterolo colpito dagli UVB diventa vitamina D."
+   }
+  ],
+  "bilancio": [
+   "18 acetil-CoA → 1 colesterolo (27 atomi di carbonio)",
+   "6 unità isopreniche (6 × 5 C = 30 C nello squalene), poi si tolgono 3 carboni",
+   "18 ATP (3 per ogni unità isoprenica) e molto NADPH (dalla via dei pentoso fosfati)",
+   "tappa regolata: HMG-CoA reduttasi (statine, colesterolo, insulina, glucagone)"
+  ],
+  "dopo": {
+   "titolo": "Che cosa diventa il colesterolo",
+   "strade": [
+    {
+     "condizione": "Nel fegato: la via di eliminazione",
+     "da": "colesterolo",
+     "a": "acidi biliari",
+     "enzima": "colesterolo 7α-idrossilasi (CYP7A1)",
+     "entra": [
+      "O₂",
+      "NADPH"
+     ],
+     "esce": [
+      "NADP⁺",
+      "H₂O"
+     ],
+     "nota": "È la tappa che regola la sintesi degli acidi biliari, che con la bile aiutano a digerire i grassi. È l'unica strada importante per eliminare il colesterolo."
+    },
+    {
+     "condizione": "Nelle ghiandole endocrine (surrene, gonadi, placenta)",
+     "da": "colesterolo",
+     "a": "pregnenolone",
+     "enzima": "enzima di taglio della catena laterale (CYP11A1)",
+     "entra": [
+      "O₂",
+      "NADPH"
+     ],
+     "esce": [
+      "NADP⁺"
+     ],
+     "nota": "Nel mitocondrio la catena laterale si accorcia: il pregnenolone è il punto di partenza di tutti gli ormoni steroidei (cortisolo, aldosterone, testosterone, estrogeni, progesterone)."
+    },
+    {
+     "condizione": "Nella pelle, con il sole",
+     "da": "7-deidrocolesterolo",
+     "a": "vitamina D₃ (colecalciferolo)",
+     "enzima": "raggi UVB",
+     "entra": [],
+     "esce": [],
+     "nota": "Gli UVB aprono un anello del 7-deidrocolesterolo: si forma la vitamina D₃, poi attivata da fegato e rene."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Che cosa si fa con il colesterolo",
+    "voci": [
+     [
+      "Ormoni steroidei",
+      [
+       "cortisolo",
+       "aldosterone",
+       "testosterone",
+       "estrogeni",
+       "progesterone"
+      ]
+     ],
+     [
+      "Digestione dei grassi",
+      [
+       "acidi biliari",
+       "bile"
+      ]
+     ],
+     [
+      "Vitamina",
+      [
+       "vitamina D₃ (colecalciferolo)"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "fermentazione lattica e alcolica": {
+  "titolo": "Fermentazione lattica e alcolica: energia senza ossigeno",
+  "dove": "Citoplasma: muscolo sotto sforzo e globuli rossi (lattica); lieviti (alcolica)",
+  "inizio": "glucosio",
+  "intro": "Senza ossigeno la cellula ricava energia solo dalla glicolisi, che però trasforma il NAD⁺ in NADH. Se il NAD⁺ finisse, la glicolisi si fermerebbe. La fermentazione serve a riossidare il NADH: il piruvato riceve gli elettroni e diventa lattato (fermentazione lattica, nell'uomo e nei lattobacilli) oppure, nei lieviti, prima perde CO₂ e poi diventa etanolo (fermentazione alcolica). Il guadagno è di soli 2 ATP per glucosio.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Glicolisi: 1 glucosio → 2 piruvato, con 2 ATP e 2 NADH (dal passaggio 2 tutto avviene 2 volte)"
+   },
+   {
+    "da": 4,
+    "nome": "Fermentazione lattica (muscolo, globuli rossi, lattobacilli)"
+   },
+   {
+    "da": 5,
+    "nome": "Fermentazione alcolica (lieviti)"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "glucosio"
+    ],
+    "a": [
+     "gliceraldeide 3-fosfato"
+    ],
+    "enzima": "enzimi della glicolisi",
+    "entra": [
+     "ATP"
+    ],
+    "esce": [
+     "ADP"
+    ],
+    "nota": "I primi 5 passaggi della glicolisi: si spendono 2 ATP e il glucosio (6 C) si divide in 2 gliceraldeide 3-fosfato (3 C)."
+   },
+   {
+    "da": [
+     "gliceraldeide 3-fosfato"
+    ],
+    "a": [
+     "1,3-bisfosfoglicerato"
+    ],
+    "enzima": "gliceraldeide 3-fosfato deidrogenasi",
+    "entra": [
+     "NAD⁺",
+     "fosfato (Pi)"
+    ],
+    "esce": [
+     "NADH + H⁺"
+    ],
+    "volte": 2,
+    "nota": "Il passaggio che consuma NAD⁺: senza ossigeno il NADH non può andare alla catena respiratoria, e va riossidato in altro modo."
+   },
+   {
+    "da": [
+     "1,3-bisfosfoglicerato"
+    ],
+    "a": [
+     "piruvato"
+    ],
+    "enzima": "enzimi della glicolisi",
+    "entra": [
+     "ADP"
+    ],
+    "esce": [
+     "ATP",
+     "H₂O"
+    ],
+    "volte": 2,
+    "nota": "Gli ultimi 4 passaggi della glicolisi: si formano 4 ATP in tutto (2 per ogni metà), cioè 2 netti per glucosio."
+   },
+   {
+    "da": [
+     "piruvato"
+    ],
+    "a": [
+     "lattato"
+    ],
+    "enzima": "lattato deidrogenasi",
+    "entra": [
+     "NADH + H⁺"
+    ],
+    "esce": [
+     "NAD⁺"
+    ],
+    "volte": 2,
+    "nota": "Fermentazione lattica: il piruvato prende gli elettroni del NADH e diventa lattato. Il NAD⁺ torna alla gliceraldeide 3-fosfato deidrogenasi e la glicolisi continua. Non si libera CO₂."
+   },
+   {
+    "da": [
+     "piruvato"
+    ],
+    "a": [
+     "acetaldeide"
+    ],
+    "enzima": "piruvato decarbossilasi",
+    "entra": [],
+    "esce": [
+     "CO₂"
+    ],
+    "volte": 2,
+    "irreversibile": true,
+    "nota": "Fermentazione alcolica, solo nei lieviti e in alcuni batteri: il piruvato perde un carbonio come CO₂ (è il gas che fa lievitare il pane). Usa la tiamina pirofosfato (vitamina B1). L'uomo non ha questo enzima."
+   },
+   {
+    "da": [
+     "acetaldeide"
+    ],
+    "a": [
+     "etanolo"
+    ],
+    "enzima": "alcol deidrogenasi",
+    "entra": [
+     "NADH + H⁺"
+    ],
+    "esce": [
+     "NAD⁺"
+    ],
+    "volte": 2,
+    "nota": "L'acetaldeide prende gli elettroni del NADH e diventa etanolo. Come nella fermentazione lattica, il NAD⁺ si rigenera."
+   }
+  ],
+  "bilancio": [
+   "lattica: glucosio + 2 ADP + 2 Pi → 2 lattato + 2 ATP + 2 H₂O",
+   "alcolica: glucosio + 2 ADP + 2 Pi → 2 etanolo + 2 CO₂ + 2 ATP + 2 H₂O",
+   "il NAD⁺ non si consuma: quello ridotto nella glicolisi si riossida nella fermentazione",
+   "2 ATP per glucosio, contro circa 30-32 con l'ossigeno"
+  ],
+  "dopo": {
+   "titolo": "Che fine fanno lattato ed etanolo nell'uomo",
+   "strade": [
+    {
+     "condizione": "Il lattato va al fegato (ciclo di Cori)",
+     "da": "lattato",
+     "a": "glucosio",
+     "enzima": "fegato",
+     "entra": [
+      "ATP",
+      "GTP"
+     ],
+     "esce": [
+      "ADP",
+      "GDP"
+     ],
+     "nota": "Il fegato ritrasforma il lattato in piruvato e poi in glucosio con la gluconeogenesi; il glucosio torna al muscolo. Anche cuore e muscoli ossidativi usano il lattato come carburante.",
+     "prossimo": "gluconeogenesi"
+    },
+    {
+     "condizione": "L'etanolo bevuto (fegato)",
+     "da": "etanolo",
+     "a": "acetaldeide",
+     "enzima": "alcol deidrogenasi",
+     "entra": [
+      "NAD⁺"
+     ],
+     "esce": [
+      "NADH + H⁺"
+     ],
+     "nota": "Nel fegato la reazione va al contrario: l'etanolo torna acetaldeide, tossica, che l'aldeide deidrogenasi trasforma in acetato."
+    },
+    {
+     "condizione": "L'acetaldeide (mitocondrio del fegato)",
+     "da": "acetaldeide",
+     "a": "acetato",
+     "enzima": "aldeide deidrogenasi (ALDH2)",
+     "entra": [
+      "NAD⁺",
+      "H₂O"
+     ],
+     "esce": [
+      "NADH + H⁺"
+     ],
+     "nota": "L'acetato diventa acetil-CoA. Se l'enzima funziona poco (variante genetica frequente in Asia orientale, o farmaco disulfiram) l'acetaldeide si accumula: rossore, nausea, palpitazioni."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Chi fa quale fermentazione",
+    "voci": [
+     [
+      "Lattica nel corpo umano",
+      [
+       "muscolo scheletrico",
+       "globuli rossi"
+      ]
+     ],
+     [
+      "Lattica nei batteri (yogurt, formaggi, crauti)",
+      [
+       "lattobacilli"
+      ]
+     ],
+     [
+      "Alcolica (pane, vino, birra)",
+      [
+       "lieviti (Saccharomyces)"
+      ]
+     ]
+    ]
+   }
+  ]
+ }
+}

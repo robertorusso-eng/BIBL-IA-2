@@ -1,0 +1,868 @@
+{
+  "respirazione cellulare": {
+    "titolo": "Respirazione cellulare: dal glucosio a CO₂, acqua e ATP",
+    "dove": "Citoplasma (glicolisi), matrice del mitocondrio (piruvato deidrogenasi e ciclo di Krebs), membrana interna del mitocondrio (catena respiratoria e ATP sintasi)",
+    "inizio": "glucosio",
+    "intro": "La respirazione cellulare ossida completamente il glucosio fino a CO₂ e acqua e conserva l'energia liberata come ATP. Ha tre tappe in fila: la glicolisi nel citoplasma, l'ossidazione del piruvato e il ciclo di Krebs nella matrice, la catena respiratoria con l'ATP sintasi nella membrana interna del mitocondrio. Le prime tappe staccano elettroni e li caricano su NAD⁺ e FAD; l'ultima li consegna all'ossigeno e usa la loro energia per fare la maggior parte dell'ATP. Senza ossigeno funziona solo la glicolisi.",
+    "fasi": [
+      {"da": 1, "nome": "Glicolisi (citoplasma)"},
+      {"da": 2, "nome": "Ossidazione del piruvato (matrice)"},
+      {"da": 3, "nome": "Ciclo di Krebs (matrice): 2 giri per ogni glucosio"},
+      {"da": 5, "nome": "Catena respiratoria (membrana interna)"},
+      {"da": 9, "nome": "Sintesi di ATP: fosforilazione ossidativa"}
+    ],
+    "passaggi": [
+      {
+        "da": ["glucosio"],
+        "a": ["piruvato"],
+        "enzima": "enzimi della glicolisi",
+        "entra": ["ADP", "NAD⁺"],
+        "esce": ["ATP", "NADH + H⁺"],
+        "nota": "In 10 passaggi il glucosio (6 C) diventa 2 piruvato (3 C). Guadagno netto: 2 ATP e 2 NADH. Non serve ossigeno."
+      },
+      {
+        "da": ["piruvato"],
+        "a": ["acetil-CoA"],
+        "enzima": "complesso della piruvato deidrogenasi",
+        "entra": ["NAD⁺", "coenzima A"],
+        "esce": ["NADH + H⁺", "CO₂"],
+        "volte": 2,
+        "irreversibile": true,
+        "nota": "Il piruvato entra nel mitocondrio, perde un carbonio come CO₂ e il resto si lega al coenzima A. È il ponte tra glicolisi e ciclo di Krebs: l'acetil-CoA non può più tornare glucosio."
+      },
+      {
+        "da": ["acetil-CoA", "ossalacetato"],
+        "a": ["citrato"],
+        "enzima": "citrato sintasi",
+        "entra": ["H₂O"],
+        "esce": ["coenzima A"],
+        "volte": 2,
+        "irreversibile": true,
+        "nota": "Inizia il ciclo di Krebs: i 2 carboni dell'acetile si uniscono all'ossalacetato (4 C) e nasce il citrato (6 C)."
+      },
+      {
+        "da": ["citrato"],
+        "a": ["ossalacetato"],
+        "enzima": "enzimi del ciclo di Krebs",
+        "entra": ["NAD⁺", "FAD", "GDP"],
+        "esce": ["NADH + H⁺", "FADH₂", "GTP", "CO₂"],
+        "volte": 2,
+        "limitante": true,
+        "nota": "In altri 7 passaggi il citrato torna ossalacetato. Per ogni giro escono 2 CO₂, 3 NADH, 1 FADH₂ e 1 GTP. La tappa più regolata è l'isocitrato deidrogenasi."
+      },
+      {
+        "da": ["NADH + H⁺", "ubichinone (Q)"],
+        "a": ["NAD⁺", "ubichinolo (QH₂)"],
+        "enzima": "complesso I",
+        "entra": [],
+        "esce": ["4 H⁺ pompati"],
+        "nota": "Il NADH cede 2 elettroni al complesso I, che li passa all'ubichinone e pompa 4 protoni fuori dalla matrice. Il NAD⁺ torna libero per glicolisi e ciclo di Krebs."
+      },
+      {
+        "da": ["FADH₂"],
+        "a": ["ubichinolo (QH₂)"],
+        "enzima": "complesso II",
+        "entra": ["ubichinone (Q)"],
+        "esce": [],
+        "nota": "Il FADH₂ della succinato deidrogenasi cede gli elettroni direttamente all'ubichinone. Il complesso II non pompa protoni: il FADH₂ rende meno ATP del NADH."
+      },
+      {
+        "da": ["ubichinolo (QH₂)", "citocromo c ossidato"],
+        "a": ["ubichinone (Q)", "citocromo c ridotto"],
+        "enzima": "complesso III",
+        "entra": [],
+        "esce": ["4 H⁺ pompati"],
+        "nota": "L'ubichinolo passa gli elettroni, uno alla volta, al citocromo c (ciclo Q). Altri 4 protoni escono nello spazio intermembrana."
+      },
+      {
+        "da": ["citocromo c ridotto", "O₂"],
+        "a": ["H₂O"],
+        "enzima": "complesso IV",
+        "entra": ["H⁺ della matrice"],
+        "esce": ["2 H⁺ pompati"],
+        "irreversibile": true,
+        "nota": "Il complesso IV consegna gli elettroni all'ossigeno, l'accettore finale: O₂ + 4 e⁻ + 4 H⁺ → 2 H₂O. Per questo la respirazione cellulare ha bisogno dell'ossigeno che respiriamo."
+      },
+      {
+        "da": ["ADP", "fosfato (Pi)"],
+        "a": ["ATP"],
+        "enzima": "ATP sintasi",
+        "entra": ["H⁺ che rientrano"],
+        "esce": [],
+        "nota": "I protoni pompati fuori rientrano nella matrice attraverso l'ATP sintasi e la fanno girare come una turbina: ADP e fosfato diventano ATP. È l'accoppiamento chemiosmotico di Mitchell."
+      }
+    ],
+    "bilancio": [
+      "C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O",
+      "per ogni glucosio: 10 NADH (2 glicolisi, 2 piruvato deidrogenasi, 6 Krebs) e 2 FADH₂",
+      "ATP: 2 dalla glicolisi + 2 (come GTP) dal Krebs + circa 26-28 dalla fosforilazione ossidativa",
+      "totale: circa 30-32 ATP per glucosio (dipende dalla navetta che porta il NADH nel mitocondrio)"
+    ],
+    "dopo": {
+      "titolo": "Se manca l'ossigeno",
+      "strade": [
+        {
+          "condizione": "Senza ossigeno (muscolo sotto sforzo intenso, globuli rossi)",
+          "da": "piruvato",
+          "a": "lattato",
+          "enzima": "lattato deidrogenasi",
+          "entra": ["NADH + H⁺"],
+          "esce": ["NAD⁺"],
+          "nota": "La catena respiratoria si ferma e il NADH non si riossida. Il piruvato diventa lattato per rigenerare il NAD⁺: la glicolisi continua, ma rende solo 2 ATP per glucosio.",
+          "prossimo": "ciclo di cori"
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Come entra nel mitocondrio il NADH della glicolisi",
+        "voci": [
+          ["Fegato, cuore, rene: circa 2,5 ATP per NADH", ["navetta malato-aspartato"]],
+          ["Muscolo scheletrico e cervello: circa 1,5 ATP per NADH", ["navetta del glicerolo 3-fosfato"]]
+        ]
+      },
+      {
+        "titolo": "Chi entra e chi esce",
+        "voci": [
+          ["Combustibile e comburente", ["glucosio", "O₂"]],
+          ["Trasportatori di elettroni", ["NADH + H⁺", "FADH₂"]],
+          ["Prodotti", ["ATP", "CO₂", "H₂O"]]
+        ]
+      }
+    ]
+  },
+
+  "metabolismo degli amminoacidi": {
+    "titolo": "Metabolismo degli amminoacidi: dove va l'azoto e dove va lo scheletro",
+    "dove": "Tutti i tessuti (transaminazione); fegato: mitocondrio (deaminazione ossidativa, primi due passaggi del ciclo dell'urea) e citoplasma (ultimi tre passaggi)",
+    "inizio": "proteine",
+    "intro": "Gli amminoacidi in eccesso non si possono conservare: vengono demoliti. Prima si toglie il gruppo amminico: la transaminazione lo passa all'α-chetoglutarato, che diventa glutammato; nel fegato il glutammato lo libera come ione ammonio (deaminazione ossidativa). L'ammonio è tossico e il fegato lo trasforma in urea con il ciclo dell'urea. Lo scheletro di carbonio che resta (α-chetoacido) diventa glucosio, corpi chetonici o energia.",
+    "fasi": [
+      {"da": 1, "nome": "Gli amminoacidi si liberano dalle proteine"},
+      {"da": 2, "nome": "Transaminazione: l'azoto passa al glutammato"},
+      {"da": 3, "nome": "Deaminazione ossidativa: si libera l'ammonio"},
+      {"da": 4, "nome": "Ciclo dell'urea (fegato): l'ammonio diventa urea"}
+    ],
+    "passaggi": [
+      {
+        "da": ["proteine"],
+        "a": ["amminoacidi"],
+        "enzima": "proteasoma",
+        "entra": ["ATP"],
+        "esce": [],
+        "nota": "Le proteine vecchie o difettose, marcate con ubiquitina, sono tagliate in peptidi dal proteasoma; le peptidasi liberano gli amminoacidi. Altri amminoacidi arrivano dalla digestione o dalle proteine demolite nei lisosomi."
+      },
+      {
+        "da": ["amminoacido", "α-chetoglutarato"],
+        "a": ["α-chetoacido", "glutammato"],
+        "enzima": "transaminasi (aminotransferasi)",
+        "entra": [],
+        "esce": [],
+        "nota": "Il gruppo amminico passa dall'amminoacido all'α-chetoglutarato, che diventa glutammato. L'amminoacido perde l'azoto e diventa un α-chetoacido. La reazione è reversibile e usa il piridossal fosfato (vitamina B6)."
+      },
+      {
+        "da": ["glutammato"],
+        "a": ["α-chetoglutarato", "ione ammonio (NH₄⁺)"],
+        "enzima": "glutammato deidrogenasi",
+        "entra": ["NAD⁺", "H₂O"],
+        "esce": ["NADH + H⁺"],
+        "nota": "Nel mitocondrio del fegato il glutammato perde il gruppo amminico come ione ammonio e torna α-chetoglutarato, pronto per un'altra transaminazione. L'ADP accelera l'enzima, il GTP lo frena."
+      },
+      {
+        "da": ["ione ammonio (NH₄⁺)", "bicarbonato (HCO₃⁻)"],
+        "a": ["carbamil fosfato"],
+        "enzima": "carbamil fosfato sintetasi I",
+        "entra": ["ATP"],
+        "esce": ["ADP", "fosfato (Pi)"],
+        "irreversibile": true,
+        "limitante": true,
+        "nota": "Primo passaggio del ciclo dell'urea, nella matrice del mitocondrio. Costa 2 ATP. È la tappa che regola: senza N-acetilglutammato, che la attiva, l'enzima non lavora."
+      },
+      {
+        "da": ["carbamil fosfato", "ornitina"],
+        "a": ["citrullina"],
+        "enzima": "ornitina transcarbamilasi",
+        "entra": [],
+        "esce": ["fosfato (Pi)"],
+        "nota": "Il gruppo carbamilico passa all'ornitina e si forma citrullina, ancora nel mitocondrio. La citrullina esce nel citoplasma."
+      },
+      {
+        "da": ["citrullina", "aspartato"],
+        "a": ["argininosuccinato"],
+        "enzima": "argininosuccinato sintetasi",
+        "entra": ["ATP"],
+        "esce": ["AMP", "pirofosfato (PPi)"],
+        "nota": "Nel citoplasma entra il secondo atomo di azoto, portato dall'aspartato. L'ATP perde due fosfati: questo passaggio costa come 2 ATP."
+      },
+      {
+        "da": ["argininosuccinato"],
+        "a": ["arginina", "fumarato"],
+        "enzima": "argininosuccinato liasi",
+        "entra": [],
+        "esce": [],
+        "nota": "La molecola si spezza in arginina e fumarato. Il fumarato torna ossalacetato e poi aspartato: è il legame con il ciclo di Krebs («bicicletta di Krebs»)."
+      },
+      {
+        "da": ["arginina"],
+        "a": ["urea", "ornitina"],
+        "enzima": "arginasi",
+        "entra": ["H₂O"],
+        "esce": [],
+        "irreversibile": true,
+        "nota": "L'arginina è tagliata dall'acqua: si libera l'urea, che va nel sangue e poi nelle urine, e torna l'ornitina, che rientra nel mitocondrio per un nuovo giro."
+      }
+    ],
+    "bilancio": [
+      "ciclo dell'urea: NH₄⁺ + HCO₃⁻ + aspartato + 3 ATP → urea + fumarato + 2 ADP + AMP + PPi + 2 Pi",
+      "ogni urea porta via 2 atomi di azoto: uno dall'ammonio, uno dall'aspartato",
+      "costo: 3 ATP, cioè 4 legami fosfato ad alta energia",
+      "lo scheletro carbonioso diventa glucosio, corpi chetonici o energia nel ciclo di Krebs"
+    ],
+    "dopo": {
+      "titolo": "Dove va lo scheletro di carbonio (α-chetoacido)",
+      "strade": [
+        {
+          "condizione": "Amminoacidi glucogenici (quasi tutti; utili nel digiuno)",
+          "da": "α-chetoacido",
+          "a": "ossalacetato",
+          "enzima": "fegato",
+          "entra": [],
+          "esce": [],
+          "nota": "Lo scheletro diventa piruvato o un intermedio del ciclo di Krebs (α-chetoglutarato, succinil-CoA, fumarato, ossalacetato). Dall'ossalacetato si può rifare glucosio.",
+          "prossimo": "gluconeogenesi"
+        },
+        {
+          "condizione": "Amminoacidi chetogenici (solo leucina e lisina; in parte altri cinque)",
+          "da": "α-chetoacido",
+          "a": "acetil-CoA",
+          "enzima": "fegato",
+          "entra": [],
+          "esce": ["corpi chetonici"],
+          "nota": "Lo scheletro diventa acetil-CoA o acetoacetil-CoA: può dare corpi chetonici o grassi, ma non glucosio. Isoleucina, fenilalanina, tirosina, triptofano e treonina sono sia glucogenici sia chetogenici.",
+          "prossimo": "ciclo di Krebs"
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Come viaggia l'azoto dai tessuti al fegato senza intossicare",
+        "voci": [
+          ["Da quasi tutti i tessuti e dal cervello", ["glutammina"]],
+          ["Dal muscolo (ciclo glucosio-alanina)", ["alanina"]],
+          ["Coenzima di tutte le transaminasi (vitamina B6)", ["piridossal fosfato (PLP)"]]
+        ]
+      }
+    ]
+  },
+
+  "sintesi dell'eme": {
+    "titolo": "Sintesi dell'eme: da succinil-CoA e glicina all'eme in 8 passaggi",
+    "dove": "Soprattutto eritroblasti del midollo osseo e fegato. Primo e ultimi tre passaggi nel mitocondrio, gli altri nel citoplasma",
+    "inizio": "succinil-CoA",
+    "intro": "L'eme è un anello di porfirina con un atomo di ferro al centro. È il gruppo che lega l'ossigeno nell'emoglobina e nella mioglobina e trasporta elettroni nei citocromi. Si costruisce da due pezzi semplici, succinil-CoA e glicina: si fa una piccola molecola (ALA), se ne uniscono 8 in 4 anelli pirrolici, si chiude l'anello grande e alla fine si inserisce il ferro. La tappa che regola è la prima.",
+    "fasi": [
+      {"da": 1, "nome": "Nel mitocondrio: si forma l'ALA"},
+      {"da": 2, "nome": "Nel citoplasma: si costruisce l'anello"},
+      {"da": 6, "nome": "Di nuovo nel mitocondrio: si rifinisce l'anello e si inserisce il ferro"}
+    ],
+    "passaggi": [
+      {
+        "da": ["succinil-CoA", "glicina"],
+        "a": ["δ-aminolevulinato (ALA)"],
+        "enzima": "ALA sintasi (ALAS)",
+        "entra": [],
+        "esce": ["coenzima A", "CO₂"],
+        "irreversibile": true,
+        "limitante": true,
+        "nota": "Il succinil-CoA viene dal ciclo di Krebs. L'enzima usa il piridossal fosfato (vitamina B6). È la tappa che regola: l'eme frena la forma epatica (ALAS1)."
+      },
+      {
+        "da": ["δ-aminolevulinato (ALA)"],
+        "a": ["porfobilinogeno (PBG)"],
+        "enzima": "ALA deidratasi",
+        "entra": [],
+        "esce": ["H₂O"],
+        "nota": "Due molecole di ALA si uniscono e formano il primo anello, il pirrolo porfobilinogeno. L'enzima contiene zinco ed è molto sensibile al piombo."
+      },
+      {
+        "da": ["porfobilinogeno (PBG)"],
+        "a": ["idrossimetilbilano"],
+        "enzima": "porfobilinogeno deaminasi",
+        "entra": [],
+        "esce": ["ione ammonio (NH₄⁺)"],
+        "nota": "Quattro porfobilinogeni si uniscono testa-coda in una catena lineare (tetrapirrolo). Escono 4 gruppi amminici. Il difetto di questo enzima causa la porfiria acuta intermittente."
+      },
+      {
+        "da": ["idrossimetilbilano"],
+        "a": ["uroporfirinogeno III"],
+        "enzima": "uroporfirinogeno III sintasi",
+        "entra": [],
+        "esce": ["H₂O"],
+        "nota": "La catena si chiude ad anello. L'enzima gira l'ultimo pirrolo: si forma l'isomero III, l'unico utile. Senza enzima la catena si chiude da sola nell'isomero I, inutile."
+      },
+      {
+        "da": ["uroporfirinogeno III"],
+        "a": ["coproporfirinogeno III"],
+        "enzima": "uroporfirinogeno decarbossilasi",
+        "entra": [],
+        "esce": ["CO₂"],
+        "nota": "Le 4 catene laterali acetato perdono ciascuna un CO₂ e diventano gruppi metile. Il difetto di questo enzima causa la porfiria cutanea tarda, la porfiria più frequente."
+      },
+      {
+        "da": ["coproporfirinogeno III"],
+        "a": ["protoporfirinogeno IX"],
+        "enzima": "coproporfirinogeno ossidasi",
+        "entra": ["O₂"],
+        "esce": ["CO₂"],
+        "nota": "Si torna nel mitocondrio. Due catene propionato perdono un CO₂ e diventano gruppi vinile."
+      },
+      {
+        "da": ["protoporfirinogeno IX"],
+        "a": ["protoporfirina IX"],
+        "enzima": "protoporfirinogeno ossidasi",
+        "entra": ["O₂"],
+        "esce": [],
+        "nota": "L'anello viene ossidato: si formano i doppi legami coniugati che rendono la porfirina colorata e capace di assorbire la luce."
+      },
+      {
+        "da": ["protoporfirina IX", "ferro (Fe²⁺)"],
+        "a": ["eme"],
+        "enzima": "ferrochelatasi",
+        "entra": [],
+        "esce": ["H⁺"],
+        "irreversibile": true,
+        "nota": "Il ferro ferroso entra al centro dell'anello: l'eme è pronto. Anche la ferrochelatasi è inibita dal piombo; se manca il ferro, al suo posto entra lo zinco (zinco-protoporfirina)."
+      }
+    ],
+    "bilancio": [
+      "8 succinil-CoA + 8 glicina + 1 Fe²⁺ → 1 eme",
+      "escono 14 CO₂ (8 dall'ALA sintasi, 4 dalla decarbossilasi, 2 dalla coproporfirinogeno ossidasi) e 4 NH₄⁺",
+      "tappa che regola: ALA sintasi, frenata dall'eme nel fegato e legata alla disponibilità di ferro negli eritroblasti"
+    ],
+    "dopo": {
+      "titolo": "Dove va l'eme",
+      "strade": [
+        {
+          "condizione": "Negli eritroblasti del midollo osseo",
+          "da": "eme",
+          "a": "emoglobina",
+          "enzima": "midollo osseo",
+          "entra": [],
+          "esce": [],
+          "nota": "Ogni catena di globina lega un eme: un'emoglobina ne contiene 4. Nel fegato l'eme serve soprattutto ai citocromi P450."
+        },
+        {
+          "condizione": "Quando i globuli rossi vecchi vengono demoliti (milza, fegato)",
+          "da": "eme",
+          "a": "bilirubina",
+          "enzima": "eme ossigenasi",
+          "entra": ["O₂"],
+          "esce": ["monossido di carbonio (CO)", "ferro (Fe²⁺)"],
+          "nota": "L'eme ossigenasi apre l'anello e dà biliverdina (verde), CO e ferro, che viene riutilizzato. La biliverdina reduttasi forma la bilirubina (gialla), che il fegato coniuga ed elimina con la bile."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Quando un enzima non funziona: porfirie e altre malattie",
+        "voci": [
+          ["Porfiria acuta intermittente: crisi di dolore addominale e sintomi neurologici", ["porfobilinogeno deaminasi"]],
+          ["Porfiria cutanea tarda: bolle sulla pelle esposta al sole", ["uroporfirinogeno decarbossilasi"]],
+          ["Intossicazione da piombo: anemia, ALA alto nelle urine", ["ALA deidratasi", "ferrochelatasi"]],
+          ["Anemia sideroblastica (carenza di vitamina B6 o mutazione ALAS2)", ["ALA sintasi (ALAS)"]]
+        ]
+      }
+    ]
+  },
+
+  "catabolismo delle purine": {
+    "titolo": "Catabolismo delle purine: da AMP e GMP all'acido urico",
+    "dove": "Citoplasma di tutte le cellule; la xantina ossidasi è abbondante soprattutto nel fegato e nell'intestino",
+    "inizio": "AMP",
+    "intro": "I nucleotidi purinici (AMP e GMP) che vengono da DNA, RNA e ATP demoliti perdono il fosfato e lo zucchero e lasciano le basi libere. Le basi adenina e guanina perdono il gruppo amminico e arrivano entrambe alla xantina. La xantina ossidasi trasforma la xantina in acido urico. Nell'uomo l'acido urico è il prodotto finale e si elimina soprattutto con le urine. Gran parte delle basi però non viene demolita: è riciclata (via di recupero).",
+    "fasi": [
+      {"da": 1, "nome": "Dall'AMP alla xantina"},
+      {"da": 5, "nome": "Dal GMP alla xantina"},
+      {"da": 8, "nome": "Dalla xantina all'acido urico"}
+    ],
+    "passaggi": [
+      {
+        "da": ["AMP"],
+        "a": ["adenosina"],
+        "enzima": "5'-nucleotidasi",
+        "entra": ["H₂O"],
+        "esce": ["fosfato (Pi)"],
+        "nota": "Il nucleotide perde il fosfato e diventa un nucleoside (base + zucchero). In alternativa, soprattutto nel muscolo, l'AMP perde prima il gruppo amminico (AMP deaminasi) e diventa IMP."
+      },
+      {
+        "da": ["adenosina"],
+        "a": ["inosina"],
+        "enzima": "adenosina deaminasi (ADA)",
+        "entra": ["H₂O"],
+        "esce": ["ione ammonio (NH₄⁺)"],
+        "nota": "L'adenina perde il gruppo amminico e diventa ipoxantina, ancora legata allo zucchero. Il difetto di ADA causa un'immunodeficienza grave (SCID)."
+      },
+      {
+        "da": ["inosina"],
+        "a": ["ipoxantina"],
+        "enzima": "purina nucleoside fosforilasi (PNP)",
+        "entra": ["fosfato (Pi)"],
+        "esce": ["ribosio 1-fosfato"],
+        "nota": "Il fosfato stacca lo zucchero dalla base (fosforolisi): restano la base libera ipoxantina e il ribosio 1-fosfato, che viene riutilizzato."
+      },
+      {
+        "da": ["ipoxantina"],
+        "a": ["xantina"],
+        "enzima": "xantina ossidasi",
+        "entra": ["O₂", "H₂O"],
+        "esce": ["perossido di idrogeno (H₂O₂)"],
+        "nota": "Prima ossidazione: l'ipoxantina diventa xantina. È qui che agisce anche l'allopurinolo, che blocca l'enzima."
+      },
+      {
+        "da": ["GMP"],
+        "a": ["guanosina"],
+        "enzima": "5'-nucleotidasi",
+        "entra": ["H₂O"],
+        "esce": ["fosfato (Pi)"],
+        "nota": "La stessa nucleotidasi toglie il fosfato anche al GMP: si forma il nucleoside guanosina."
+      },
+      {
+        "da": ["guanosina"],
+        "a": ["guanina"],
+        "enzima": "purina nucleoside fosforilasi (PNP)",
+        "entra": ["fosfato (Pi)"],
+        "esce": ["ribosio 1-fosfato"],
+        "nota": "Anche qui il fosfato stacca il ribosio: resta la base libera guanina."
+      },
+      {
+        "da": ["guanina"],
+        "a": ["xantina"],
+        "enzima": "guanina deaminasi",
+        "entra": ["H₂O"],
+        "esce": ["ione ammonio (NH₄⁺)"],
+        "nota": "La guanina perde il gruppo amminico e diventa xantina: le due strade, quella dell'adenina e quella della guanina, si incontrano."
+      },
+      {
+        "da": ["xantina"],
+        "a": ["acido urico"],
+        "enzima": "xantina ossidasi",
+        "entra": ["O₂", "H₂O"],
+        "esce": ["perossido di idrogeno (H₂O₂)"],
+        "irreversibile": true,
+        "nota": "Seconda ossidazione: si forma l'acido urico. Nell'uomo la via finisce qui, perché manca l'uricasi che negli altri mammiferi lo trasforma in allantoina, molto più solubile."
+      }
+    ],
+    "bilancio": [
+      "AMP e GMP → acido urico",
+      "si liberano fosfato, ribosio 1-fosfato e 2 NH₄⁺ (uno dall'adenina, uno dalla guanina)",
+      "l'anello purinico non si rompe: esce intero come acido urico, eliminato soprattutto con le urine"
+    ],
+    "dopo": {
+      "titolo": "Dove vanno le basi e l'acido urico",
+      "strade": [
+        {
+          "condizione": "Via di recupero: la base viene riciclata invece di essere demolita",
+          "da": "ipoxantina",
+          "a": "IMP (inosina monofosfato)",
+          "enzima": "ipoxantina-guanina fosforibosiltransferasi (HGPRT)",
+          "entra": ["PRPP (5-fosforibosil-1-pirofosfato)"],
+          "esce": ["pirofosfato (PPi)"],
+          "nota": "La base si riattacca al ribosio fosfato preso dal PRPP e torna nucleotide (lo stesso fa la guanina, che diventa GMP). Costa molto meno che costruire le purine da capo. Se l'enzima manca: sindrome di Lesch-Nyhan."
+        },
+        {
+          "condizione": "Eliminazione normale",
+          "da": "acido urico",
+          "a": "urina",
+          "enzima": "rene",
+          "entra": [],
+          "esce": [],
+          "nota": "Circa due terzi dell'acido urico escono con le urine, il resto con l'intestino. Nel tubulo prossimale gran parte dell'urato filtrato viene riassorbita (trasportatore URAT1)."
+        },
+        {
+          "condizione": "Troppo acido urico nel sangue (iperuricemia)",
+          "da": "acido urico",
+          "a": "cristalli di urato monosodico",
+          "enzima": "articolazione sinoviale",
+          "entra": [],
+          "esce": [],
+          "nota": "Oltre circa 6,8 mg/dL l'urato è poco solubile e può precipitare in aghi nelle articolazioni (gotta), nei tessuti (tofi) e nelle vie urinarie (calcoli)."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Farmaci che agiscono sull'acido urico",
+        "voci": [
+          ["Bloccano la xantina ossidasi (ne fanno produrre meno)", ["allopurinolo", "febuxostat"]],
+          ["Aumentano l'eliminazione con le urine", ["probenecid"]],
+          ["Trasformano l'acido urico in allantoina (lisi tumorale)", ["rasburicase"]]
+        ]
+      }
+    ]
+  },
+
+  "ciclo di cori": {
+    "titolo": "Ciclo di Cori: il lattato del muscolo torna glucosio nel fegato",
+    "dove": "Muscolo scheletrico e globuli rossi (glicolisi fino al lattato), sangue (trasporto), fegato (gluconeogenesi)",
+    "inizio": "glucosio",
+    "intro": "Quando il muscolo lavora intensamente e l'ossigeno non basta, o nei globuli rossi che non hanno mitocondri, il glucosio viene trasformato in lattato per avere ATP in fretta. Il lattato passa nel sangue e arriva al fegato, che lo trasforma di nuovo in glucosio con la gluconeogenesi. Il glucosio torna al muscolo con il sangue: il cerchio si chiude. Il fegato paga in ATP il lavoro fatto dal muscolo.",
+    "fasi": [
+      {"da": 1, "nome": "Nel muscolo che lavora senza abbastanza ossigeno"},
+      {"da": 3, "nome": "Nel fegato: il lattato torna piruvato"},
+      {"da": 4, "nome": "Nel fegato: gluconeogenesi fino al glucosio, che torna al muscolo"}
+    ],
+    "passaggi": [
+      {
+        "da": ["glucosio"],
+        "a": ["piruvato"],
+        "enzima": "enzimi della glicolisi",
+        "entra": ["ADP", "NAD⁺"],
+        "esce": ["ATP", "NADH + H⁺"],
+        "nota": "Nel muscolo il glucosio (dal sangue o dal glicogeno) diventa 2 piruvato. Guadagno netto: 2 ATP e 2 NADH."
+      },
+      {
+        "da": ["piruvato"],
+        "a": ["lattato"],
+        "enzima": "lattato deidrogenasi",
+        "entra": ["NADH + H⁺"],
+        "esce": ["NAD⁺"],
+        "volte": 2,
+        "nota": "Senza abbastanza ossigeno il NADH non va alla catena respiratoria: lo usa la lattato deidrogenasi. Così torna NAD⁺ e la glicolisi può continuare. Il lattato esce dalla cellula con i trasportatori MCT e va nel sangue."
+      },
+      {
+        "da": ["lattato"],
+        "a": ["piruvato"],
+        "enzima": "lattato deidrogenasi",
+        "entra": ["NAD⁺"],
+        "esce": ["NADH + H⁺"],
+        "volte": 2,
+        "nota": "Nel fegato la stessa reazione va al contrario. Il NADH che si forma servirà più avanti, alla gliceraldeide 3-fosfato deidrogenasi."
+      },
+      {
+        "da": ["piruvato"],
+        "a": ["ossalacetato"],
+        "enzima": "piruvato carbossilasi",
+        "entra": ["ATP", "CO₂"],
+        "esce": ["ADP", "fosfato (Pi)"],
+        "volte": 2,
+        "irreversibile": true,
+        "nota": "Nel mitocondrio il piruvato riceve un CO₂ (enzima con biotina). L'acetil-CoA, abbondante nel digiuno, attiva l'enzima."
+      },
+      {
+        "da": ["ossalacetato"],
+        "a": ["fosfoenolpiruvato (PEP)"],
+        "enzima": "PEP carbossichinasi",
+        "entra": ["GTP"],
+        "esce": ["GDP", "CO₂"],
+        "volte": 2,
+        "irreversibile": true,
+        "nota": "Il CO₂ appena aggiunto viene tolto: l'energia della decarbossilazione serve a fare il PEP. Partendo dal lattato il NADH è già nel citoplasma, quindi l'ossalacetato può diventare PEP direttamente nel mitocondrio (PEPCK mitocondriale)."
+      },
+      {
+        "da": ["fosfoenolpiruvato (PEP)"],
+        "a": ["fruttosio 1,6-bisfosfato"],
+        "enzima": "enzimi della glicolisi",
+        "entra": ["ATP", "NADH + H⁺"],
+        "esce": ["ADP", "NAD⁺", "fosfato (Pi)"],
+        "nota": "Sei enzimi reversibili della glicolisi lavorano al contrario: 2 PEP diventano 1 fruttosio 1,6-bisfosfato. Si spendono 2 ATP (fosfoglicerato chinasi) e i 2 NADH prodotti nel passaggio 3."
+      },
+      {
+        "da": ["fruttosio 1,6-bisfosfato"],
+        "a": ["fruttosio 6-fosfato"],
+        "enzima": "fruttosio 1,6-bisfosfatasi",
+        "entra": ["H₂O"],
+        "esce": ["fosfato (Pi)"],
+        "irreversibile": true,
+        "limitante": true,
+        "nota": "Tappa che regola la gluconeogenesi: l'AMP e il fruttosio 2,6-bisfosfato la frenano. Il glucagone, abbassando il fruttosio 2,6-bisfosfato, la accelera."
+      },
+      {
+        "da": ["fruttosio 6-fosfato"],
+        "a": ["glucosio 6-fosfato"],
+        "enzima": "fosfoglucosio isomerasi",
+        "entra": [],
+        "esce": [],
+        "nota": "Lo stesso enzima della glicolisi, che lavora al contrario: da chetoso ad aldoso."
+      },
+      {
+        "da": ["glucosio 6-fosfato"],
+        "a": ["glucosio"],
+        "enzima": "glucosio 6-fosfatasi",
+        "entra": ["H₂O"],
+        "esce": ["fosfato (Pi)"],
+        "irreversibile": true,
+        "nota": "Nel reticolo endoplasmatico dell'epatocita si toglie il fosfato: il glucosio libero esce nel sangue e torna al muscolo. Il muscolo non ha questo enzima e non può cedere glucosio al sangue."
+      }
+    ],
+    "bilancio": [
+      "muscolo: glucosio → 2 lattato, guadagno 2 ATP",
+      "fegato: 2 lattato → glucosio, costo 6 ATP (4 ATP + 2 GTP)",
+      "ogni giro del ciclo costa 4 ATP: li paga il fegato, con l'energia della beta-ossidazione",
+      "il NADH è in pareggio: quello formato dalla lattato deidrogenasi nel fegato serve alla gluconeogenesi"
+    ],
+    "dopo": {
+      "titolo": "Un ciclo gemello: il ciclo glucosio-alanina",
+      "strade": [
+        {
+          "condizione": "Muscolo che demolisce proteine (digiuno, esercizio prolungato)",
+          "da": "alanina",
+          "a": "piruvato",
+          "enzima": "alanina aminotransferasi (ALT)",
+          "entra": ["α-chetoglutarato"],
+          "esce": ["glutammato"],
+          "nota": "Il muscolo manda al fegato alanina invece di lattato: porta insieme scheletro di carbonio e azoto. Nel fegato l'alanina torna piruvato (che diventa glucosio) e l'azoto va al ciclo dell'urea.",
+          "prossimo": "metabolismo degli amminoacidi"
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Chi produce e chi consuma il lattato",
+        "voci": [
+          ["Lo producono sempre (non hanno mitocondri)", ["globuli rossi"]],
+          ["Lo producono sotto sforzo intenso", ["muscolo scheletrico"]],
+          ["Lo trasformano in glucosio", ["fegato", "rene"]]
+        ]
+      }
+    ]
+  },
+
+  "cinetica enzimatica": {
+    "titolo": "Cinetica enzimatica: come lavora un enzima, quanto è veloce, come si blocca",
+    "dove": "In ogni cellula e in laboratorio (si misura la velocità di una reazione catalizzata)",
+    "inizio": "enzima (E)",
+    "intro": "Un enzima accelera una reazione legando il substrato nel sito attivo e abbassando l'energia di attivazione; alla fine esce invariato. La cinetica studia quanto è veloce la reazione e come cambia con la quantità di substrato: l'equazione di Michaelis-Menten la descrive con due numeri, Vmax e Km. Gli inibitori rallentano l'enzima in modi diversi, che si riconoscono da come cambiano Km e Vmax. Molti farmaci sono inibitori enzimatici.",
+    "fasi": [
+      {"da": 1, "nome": "Come lavora un enzima"},
+      {"da": 4, "nome": "Michaelis-Menten: velocità e substrato"},
+      {"da": 8, "nome": "Inibizione enzimatica"}
+    ],
+    "passaggi": [
+      {
+        "da": ["enzima (E)", "substrato (S)"],
+        "a": ["complesso enzima-substrato (ES)"],
+        "enzima": "sito attivo",
+        "entra": [],
+        "esce": [],
+        "nota": "Il substrato entra nel sito attivo e si lega con legami deboli. Il legame è reversibile: E + S ⇄ ES (costanti k₁ e k₋₁). Spesso l'enzima cambia un po' forma attorno al substrato (adattamento indotto)."
+      },
+      {
+        "da": ["complesso enzima-substrato (ES)"],
+        "a": ["stato di transizione"],
+        "enzima": "sito attivo",
+        "entra": [],
+        "esce": [],
+        "nota": "Il sito attivo stabilizza lo stato di transizione e così abbassa l'energia di attivazione. L'enzima non cambia il ΔG della reazione né l'equilibrio: lo fa solo raggiungere prima."
+      },
+      {
+        "da": ["stato di transizione"],
+        "a": ["enzima (E)", "prodotto (P)"],
+        "enzima": "sito attivo",
+        "entra": [],
+        "esce": [],
+        "nota": "Si forma il prodotto e l'enzima torna libero, pronto per un altro giro. La costante k₂ (kcat, numero di turnover) dice quante molecole di substrato trasforma ogni sito attivo al secondo, quando è saturo."
+      },
+      {
+        "da": ["concentrazione di substrato [S]"],
+        "a": ["velocità iniziale (v₀)"],
+        "enzima": "equazione di Michaelis-Menten",
+        "entra": [],
+        "esce": [],
+        "nota": "v₀ = Vmax·[S] / (Km + [S]). Con poco substrato la velocità cresce quasi in proporzione a [S]; poi cresce sempre meno: la curva è un'iperbole. Vale misurando la velocità iniziale e assumendo che [ES] resti costante (stato stazionario)."
+      },
+      {
+        "da": ["velocità iniziale (v₀)"],
+        "a": ["velocità massima (Vmax)"],
+        "enzima": "equazione di Michaelis-Menten",
+        "entra": [],
+        "esce": [],
+        "nota": "Con moltissimo substrato tutti gli enzimi sono occupati (saturazione): la velocità non sale più. Vmax = kcat·[E]totale, quindi dipende da quanto enzima c'è."
+      },
+      {
+        "da": ["velocità massima (Vmax)"],
+        "a": ["costante di Michaelis (Km)"],
+        "enzima": "equazione di Michaelis-Menten",
+        "entra": [],
+        "esce": [],
+        "nota": "La Km è la concentrazione di substrato a cui la velocità è metà della Vmax. Km = (k₋₁ + k₂)/k₁. Quando k₂ è piccola rispetto a k₋₁, una Km bassa indica alta affinità dell'enzima per il substrato."
+      },
+      {
+        "da": ["costante di Michaelis (Km)", "velocità massima (Vmax)"],
+        "a": ["grafico di Lineweaver-Burk"],
+        "enzima": "equazione di Michaelis-Menten",
+        "entra": [],
+        "esce": [],
+        "nota": "Prendendo i reciproci: 1/v₀ = (Km/Vmax)·(1/[S]) + 1/Vmax. È una retta: taglia l'asse y in 1/Vmax e l'asse x in −1/Km. Serve a leggere Km e Vmax e a riconoscere il tipo di inibizione."
+      },
+      {
+        "da": ["enzima (E)"],
+        "a": ["complesso enzima-inibitore (EI)"],
+        "enzima": "inibitore competitivo",
+        "entra": [],
+        "esce": [],
+        "nota": "L'inibitore somiglia al substrato e occupa il sito attivo. La Km apparente aumenta, la Vmax resta uguale: aggiungendo molto substrato l'inibizione si supera. Nel grafico dei doppi reciproci le rette si incrociano sull'asse y."
+      },
+      {
+        "da": ["enzima (E)", "complesso enzima-substrato (ES)"],
+        "a": ["complesso enzima-inibitore (EI)", "complesso enzima-substrato-inibitore (ESI)"],
+        "enzima": "inibitore non competitivo",
+        "entra": [],
+        "esce": [],
+        "nota": "L'inibitore si lega in un sito diverso dal sito attivo, sia all'enzima libero sia al complesso ES. La Vmax diminuisce, la Km resta uguale: più substrato non aiuta. Le rette si incrociano sull'asse x."
+      },
+      {
+        "da": ["complesso enzima-substrato (ES)"],
+        "a": ["complesso enzima-substrato-inibitore (ESI)"],
+        "enzima": "inibitore incompetitivo",
+        "entra": [],
+        "esce": [],
+        "nota": "L'inibitore si lega solo al complesso ES, già formato. Vmax e Km diminuiscono dello stesso fattore: nel grafico dei doppi reciproci le rette sono parallele."
+      },
+      {
+        "da": ["enzima (E)"],
+        "a": ["enzima inattivato"],
+        "enzima": "inibitore irreversibile",
+        "entra": [],
+        "esce": [],
+        "irreversibile": true,
+        "nota": "L'inibitore si lega con un legame covalente, spesso a un amminoacido del sito attivo. È come togliere enzima: la Vmax cala e l'attività torna solo quando la cellula produce enzima nuovo."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "v₀ = Vmax·[S] / (Km + [S]); Km = [S] a cui v₀ è metà della Vmax",
+      "Vmax dipende dalla quantità di enzima; Km bassa = enzima che lavora bene anche con poco substrato",
+      "competitivo: Km ↑, Vmax uguale · non competitivo: Km uguale, Vmax ↓ · incompetitivo: Km ↓ e Vmax ↓",
+      "irreversibile: l'enzima è perso finché la cellula non ne fa di nuovo"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Inibitori enzimatici usati come farmaci",
+        "voci": [
+          ["Competitivi", ["statine", "metotrexato"]],
+          ["Irreversibili", ["aspirina"]]
+        ]
+      },
+      {
+        "titolo": "Enzimi che non seguono Michaelis-Menten (allosterici, curva sigmoide)",
+        "voci": [
+          ["Regolano le vie metaboliche", ["fosfofruttochinasi-1 (PFK-1)", "isocitrato deidrogenasi"]]
+        ]
+      }
+    ]
+  },
+
+  "reazioni acido-base": {
+    "titolo": "Reazioni acido-base: protoni, pH e tamponi",
+    "dove": "In ogni soluzione acquosa: in laboratorio e nel corpo (sangue, stomaco, urine, dentro le cellule)",
+    "inizio": "acido (HA)",
+    "intro": "Secondo Brønsted e Lowry un acido è una sostanza che cede un protone (H⁺) e una base è una sostanza che lo accetta. Ogni reazione acido-base è quindi un passaggio di protoni da un acido a una base. Il pH misura quanti ioni idronio ci sono in soluzione. Un tampone, formato da un acido debole e dalla sua base coniugata, impedisce al pH di cambiare troppo: nel sangue il più importante è il tampone bicarbonato.",
+    "fasi": [
+      {"da": 1, "nome": "Chi è acido e chi è base (Brønsted-Lowry)"},
+      {"da": 4, "nome": "L'acqua e il pH"},
+      {"da": 6, "nome": "Neutralizzazione"},
+      {"da": 7, "nome": "Tamponi"},
+      {"da": 10, "nome": "Il tampone del sangue"}
+    ],
+    "passaggi": [
+      {
+        "da": ["acido (HA)"],
+        "a": ["base coniugata (A⁻)", "ione idronio (H₃O⁺)"],
+        "enzima": "H₂O",
+        "entra": [],
+        "esce": [],
+        "nota": "HA + H₂O ⇄ A⁻ + H₃O⁺. L'acido cede il protone all'acqua, che fa da base. Ciò che resta dell'acido (A⁻) può riprendersi il protone: è la sua base coniugata."
+      },
+      {
+        "da": ["base (B)"],
+        "a": ["acido coniugato (BH⁺)", "ione idrossido (OH⁻)"],
+        "enzima": "H₂O",
+        "entra": [],
+        "esce": [],
+        "nota": "B + H₂O ⇄ BH⁺ + OH⁻. Qui l'acqua cede un protone e fa da acido: per esempio NH₃ + H₂O ⇄ NH₄⁺ + OH⁻. L'acqua è anfotera: può fare sia da acido sia da base."
+      },
+      {
+        "da": ["acido (HA)"],
+        "a": ["acido forte", "acido debole"],
+        "enzima": "costante di acidità (Ka)",
+        "entra": [],
+        "esce": [],
+        "nota": "Ka = [A⁻][H₃O⁺] / [HA]. Un acido forte (HCl) cede quasi tutti i protoni; un acido debole (acido acetico, pKa 4,76) solo una piccola parte. pKa = −log Ka: più è basso, più l'acido è forte."
+      },
+      {
+        "da": ["H₂O"],
+        "a": ["ione idronio (H₃O⁺)", "ione idrossido (OH⁻)"],
+        "enzima": "H₂O",
+        "entra": [],
+        "esce": [],
+        "nota": "Autoionizzazione: 2 H₂O ⇄ H₃O⁺ + OH⁻. Il prodotto ionico dell'acqua è Kw = [H₃O⁺][OH⁻] = 1,0 × 10⁻¹⁴ a 25 °C. Nell'acqua pura [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/L."
+      },
+      {
+        "da": ["ione idronio (H₃O⁺)"],
+        "a": ["pH"],
+        "enzima": "pH-metro",
+        "entra": [],
+        "esce": [],
+        "nota": "pH = −log[H₃O⁺]. A 25 °C: pH 7 neutro, sotto 7 acido, sopra 7 basico; pH + pOH = 14. Un'unità di pH in meno vuol dire 10 volte più ioni idronio."
+      },
+      {
+        "da": ["ione idronio (H₃O⁺)", "ione idrossido (OH⁻)"],
+        "a": ["H₂O"],
+        "enzima": "titolazione acido-base",
+        "entra": [],
+        "esce": ["sale"],
+        "nota": "Neutralizzazione: acido + base → sale + acqua (HCl + NaOH → NaCl + H₂O). Al punto di equivalenza le moli di acido e di base sono uguali; il pH è 7 solo se acido e base sono entrambi forti."
+      },
+      {
+        "da": ["acido (HA)", "base coniugata (A⁻)"],
+        "a": ["soluzione tampone"],
+        "enzima": "equazione di Henderson-Hasselbalch",
+        "entra": [],
+        "esce": [],
+        "nota": "Un tampone è un acido debole insieme alla sua base coniugata, in quantità simili. pH = pKa + log([A⁻]/[HA]). Funziona meglio quando il pH è vicino al pKa (circa pKa ± 1)."
+      },
+      {
+        "da": ["base coniugata (A⁻)", "ione idronio (H₃O⁺)"],
+        "a": ["acido (HA)", "H₂O"],
+        "enzima": "soluzione tampone",
+        "entra": [],
+        "esce": [],
+        "nota": "Se si aggiunge un acido, la base coniugata del tampone cattura gli ioni idronio e diventa acido debole. Il rapporto [A⁻]/[HA] cambia poco, e il pH quasi non si muove."
+      },
+      {
+        "da": ["acido (HA)", "ione idrossido (OH⁻)"],
+        "a": ["base coniugata (A⁻)", "H₂O"],
+        "enzima": "soluzione tampone",
+        "entra": [],
+        "esce": [],
+        "nota": "Se si aggiunge una base, l'acido debole del tampone cede protoni agli ioni idrossido e li trasforma in acqua. Anche qui il pH cambia pochissimo."
+      },
+      {
+        "da": ["CO₂", "H₂O"],
+        "a": ["bicarbonato (HCO₃⁻)", "H⁺"],
+        "enzima": "anidrasi carbonica",
+        "entra": [],
+        "esce": [],
+        "nota": "CO₂ + H₂O ⇄ H₂CO₃ ⇄ HCO₃⁻ + H⁺. pH = 6,1 + log([HCO₃⁻] / (0,03 × PCO₂)). È un tampone aperto: i polmoni regolano la CO₂ e i reni il bicarbonato, così il pH del sangue resta 7,35-7,45."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "acido = cede H⁺; base = accetta H⁺; ogni acido ha la sua base coniugata",
+      "pH = −log[H₃O⁺]; a 25 °C neutro = 7 e pH + pOH = 14",
+      "tampone = acido debole + base coniugata; pH = pKa + log([A⁻]/[HA])",
+      "sangue: pH 7,35-7,45, mantenuto soprattutto dal tampone bicarbonato con polmoni e reni"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Esempi da ricordare",
+        "voci": [
+          ["Acido forte", ["acido cloridrico (HCl)"]],
+          ["Acidi deboli", ["acido acetico (CH₃COOH)", "acido carbonico (H₂CO₃)"]],
+          ["Basi", ["idrossido di sodio (NaOH)", "ammoniaca (NH₃)"]],
+          ["Tamponi del sangue", ["bicarbonato (HCO₃⁻)", "emoglobina"]]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1426 @@
+{
+  "trasporto di membrana": {
+    "titolo": "Trasporto di membrana: come le sostanze entrano ed escono dalla cellula",
+    "dove": "Membrana plasmatica di tutte le cellule (e membrane degli organuli)",
+    "inizio": "membrana plasmatica",
+    "intro": "La membrana plasmatica è un doppio strato di fosfolipidi: lascia passare da sola solo le molecole piccole e senza carica. Ioni, zuccheri e amminoacidi hanno bisogno di proteine: canali, trasportatori e pompe. Il trasporto passivo segue il gradiente (da dove c'è più concentrazione a dove ce n'è meno) e non costa energia. Il trasporto attivo va contro gradiente e usa ATP, direttamente (primario) o sfruttando il gradiente del Na⁺ (secondario).",
+    "fasi": [
+      {
+        "da": 1,
+        "nome": "Trasporto passivo: secondo gradiente, senza spendere energia"
+      },
+      {
+        "da": 5,
+        "nome": "Trasporto attivo primario: contro gradiente, con ATP"
+      },
+      {
+        "da": 7,
+        "nome": "Trasporto attivo secondario: sfrutta il gradiente del Na⁺"
+      }
+    ],
+    "passaggi": [
+      {
+        "da": [
+          "membrana plasmatica"
+        ],
+        "a": [
+          "diffusione semplice"
+        ],
+        "enzima": "doppio strato fosfolipidico",
+        "entra": [
+          "O₂"
+        ],
+        "esce": [
+          "CO₂"
+        ],
+        "nota": "Le molecole piccole e apolari (O₂, CO₂, ormoni steroidei) attraversano direttamente i fosfolipidi, dal lato più concentrato a quello meno concentrato. La velocità cresce con il gradiente e con la superficie (legge di Fick)."
+      },
+      {
+        "da": [
+          "diffusione semplice"
+        ],
+        "a": [
+          "osmosi"
+        ],
+        "enzima": "acquaporine",
+        "entra": [
+          "H₂O"
+        ],
+        "esce": [],
+        "nota": "L'acqua si sposta verso il lato dove ci sono più particelle disciolte (osmolarità più alta). Passa un po' tra i fosfolipidi, ma soprattutto attraverso le acquaporine. Un globulo rosso in acqua pura si gonfia e scoppia (emolisi)."
+      },
+      {
+        "da": [
+          "osmosi"
+        ],
+        "a": [
+          "diffusione attraverso canali"
+        ],
+        "enzima": "canali ionici",
+        "entra": [
+          "Na⁺"
+        ],
+        "esce": [
+          "K⁺"
+        ],
+        "nota": "Gli ioni passano in tunnel pieni d'acqua, selettivi per uno ione. I canali si aprono con il voltaggio, con un ligando o con uno stimolo meccanico. Sono velocissimi. I canali del K⁺ sempre aperti fanno uscire K⁺ e creano il potenziale di riposo, negativo all'interno."
+      },
+      {
+        "da": [
+          "diffusione attraverso canali"
+        ],
+        "a": [
+          "diffusione facilitata"
+        ],
+        "enzima": "GLUT",
+        "entra": [
+          "glucosio"
+        ],
+        "esce": [],
+        "nota": "Il trasportatore lega la molecola da un lato, cambia forma e la libera dall'altro. Segue il gradiente, ma si può saturare come un enzima (velocità massima, Km). Così il glucosio entra in quasi tutte le cellule."
+      },
+      {
+        "da": [
+          "diffusione facilitata"
+        ],
+        "a": [
+          "trasporto attivo primario"
+        ],
+        "enzima": "Na⁺/K⁺-ATPasi",
+        "entra": [
+          "ATP",
+          "K⁺"
+        ],
+        "esce": [
+          "ADP",
+          "fosfato (Pi)",
+          "Na⁺"
+        ],
+        "nota": "Per ogni ATP la pompa porta 3 Na⁺ fuori e 2 K⁺ dentro, contro gradiente. Mantiene il Na⁺ basso e il K⁺ alto dentro la cellula. Consuma una grande parte dell'ATP a riposo, soprattutto nel cervello e nel rene."
+      },
+      {
+        "da": [
+          "trasporto attivo primario"
+        ],
+        "a": [
+          "pompe ABC"
+        ],
+        "enzima": "glicoproteina P (MDR1)",
+        "entra": [
+          "ATP"
+        ],
+        "esce": [
+          "ADP",
+          "fosfato (Pi)"
+        ],
+        "nota": "I trasportatori ABC usano l'ATP legato ai loro due domini per spingere fuori molecole diverse, anche farmaci. La glicoproteina P, molto espressa nelle cellule tumorali, butta fuori i chemioterapici (multiresistenza)."
+      },
+      {
+        "da": [
+          "pompe ABC"
+        ],
+        "a": [
+          "simporto"
+        ],
+        "enzima": "SGLT1",
+        "entra": [
+          "Na⁺",
+          "glucosio"
+        ],
+        "esce": [],
+        "nota": "Il Na⁺ rientra nella cellula seguendo il gradiente creato dalla pompa e «trascina» con sé il glucosio, anche contro gradiente: entrambi vanno nella stessa direzione (simporto). Nell'intestino SGLT1 porta dentro 2 Na⁺ per ogni glucosio."
+      },
+      {
+        "da": [
+          "simporto"
+        ],
+        "a": [
+          "antiporto"
+        ],
+        "enzima": "scambiatore Na⁺/Ca²⁺ (NCX)",
+        "entra": [
+          "Na⁺"
+        ],
+        "esce": [
+          "Ca²⁺"
+        ],
+        "nota": "Qui le due sostanze vanno in direzioni opposte (antiporto): 3 Na⁺ entrano e 1 Ca²⁺ esce. Così le cellule del cuore tolgono il calcio dopo ogni battito."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "trasporto passivo (diffusione semplice, osmosi, canali, trasportatori): segue il gradiente, senza energia",
+      "trasporto attivo primario (pompe): contro gradiente, usa direttamente l'ATP",
+      "trasporto attivo secondario (simporto e antiporto): usa il gradiente del Na⁺ creato dalla Na⁺/K⁺-ATPasi",
+      "molecole grandi e particelle: trasporto con vescicole (endocitosi ed esocitosi)"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Canali e pompe legati a malattie e farmaci",
+        "voci": [
+          [
+            "Canale del cloro dei polmoni, del pancreas e del sudore",
+            [
+              "CFTR"
+            ]
+          ],
+          [
+            "Canale dell'acqua del rene, comandato dall'ADH",
+            [
+              "acquaporina 2"
+            ]
+          ],
+          [
+            "Pompa del calcio del reticolo del muscolo",
+            [
+              "pompa SERCA"
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "trasporto vescicolare": {
+    "titolo": "Trasporto vescicolare: dal reticolo al Golgi, fuori dalla cellula e ritorno",
+    "dove": "Citoplasma: reticolo endoplasmatico rugoso, apparato di Golgi, vescicole, membrana plasmatica, endosomi e lisosomi",
+    "inizio": "mRNA nel citoplasma",
+    "intro": "Le proteine da mandare fuori dalla cellula o da mettere nelle membrane nascono sul reticolo endoplasmatico rugoso. Viaggiano chiuse in vescicole: dal reticolo al Golgi, dove vengono rifinite e smistate, e poi verso la membrana, dove escono (esocitosi). La strada inversa, dall'esterno verso l'interno, è l'endocitosi, che porta il materiale agli endosomi e ai lisosomi. Seguiamo l'insulina in uscita e il colesterolo LDL in entrata.",
+    "fasi": [
+      {
+        "da": 1,
+        "nome": "Nel reticolo endoplasmatico rugoso"
+      },
+      {
+        "da": 3,
+        "nome": "Dal reticolo al Golgi"
+      },
+      {
+        "da": 5,
+        "nome": "Nel Golgi e verso l'esterno (secrezione regolata)"
+      },
+      {
+        "da": 8,
+        "nome": "Endocitosi: il viaggio verso l'interno"
+      }
+    ],
+    "passaggi": [
+      {
+        "da": [
+          "mRNA nel citoplasma"
+        ],
+        "a": [
+          "proteina nel lume del RE"
+        ],
+        "enzima": "particella di riconoscimento del segnale (SRP)",
+        "entra": [
+          "GTP"
+        ],
+        "esce": [
+          "GDP"
+        ],
+        "nota": "Le prime decine di amminoacidi formano il peptide segnale. La SRP lo riconosce, rallenta la traduzione e porta il ribosoma sul reticolo. La catena passa nel lume attraverso il canale Sec61 e il peptide segnale viene tagliato."
+      },
+      {
+        "da": [
+          "proteina nel lume del RE"
+        ],
+        "a": [
+          "glicoproteina ripiegata"
+        ],
+        "enzima": "oligosaccariltransferasi",
+        "entra": [],
+        "esce": [],
+        "nota": "Un blocco già pronto di 14 zuccheri viene attaccato a un'asparagina della proteina (N-glicosilazione). Chaperoni (BiP, calnexina) e ponti disolfuro aiutano il ripiegamento. Le proteine ripiegate male vengono rimandate nel citoplasma e distrutte dal proteasoma."
+      },
+      {
+        "da": [
+          "glicoproteina ripiegata"
+        ],
+        "a": [
+          "vescicola COPII"
+        ],
+        "enzima": "rivestimento COPII",
+        "entra": [
+          "GTP"
+        ],
+        "esce": [
+          "GDP"
+        ],
+        "nota": "La piccola proteina Sar1, quando lega GTP, si attacca alla membrana del reticolo e richiama le proteine del rivestimento COPII, che curvano la membrana e formano una vescicola carica. Solo le proteine ripiegate bene possono partire."
+      },
+      {
+        "da": [
+          "vescicola COPII"
+        ],
+        "a": [
+          "apparato di Golgi (cis)"
+        ],
+        "enzima": "proteine SNARE",
+        "entra": [
+          "ATP"
+        ],
+        "esce": [
+          "ADP"
+        ],
+        "nota": "Il rivestimento si stacca. La v-SNARE della vescicola si avvolge alla t-SNARE della membrana bersaglio e le due membrane si fondono. Dopo la fusione l'ATPasi NSF usa ATP per separare le SNARE e riutilizzarle."
+      },
+      {
+        "da": [
+          "apparato di Golgi (cis)"
+        ],
+        "a": [
+          "rete trans del Golgi"
+        ],
+        "enzima": "glicosiltransferasi del Golgi",
+        "entra": [],
+        "esce": [],
+        "nota": "Attraversando le cisterne (cis → mediale → trans) le proteine vengono rifinite: gli zuccheri vengono tagliati e aggiunti, si forma l'O-glicosilazione. Nel cis-Golgi gli enzimi destinati ai lisosomi ricevono l'etichetta mannosio 6-fosfato."
+      },
+      {
+        "da": [
+          "rete trans del Golgi"
+        ],
+        "a": [
+          "granuli di secrezione"
+        ],
+        "enzima": "proconvertasi",
+        "entra": [
+          "proinsulina"
+        ],
+        "esce": [
+          "peptide C"
+        ],
+        "nota": "La rete trans smista le proteine: ai lisosomi, alla membrana (secrezione continua) o in granuli che aspettano un segnale (secrezione regolata). Nei granuli della cellula β le proconvertasi tagliano la proinsulina in insulina e peptide C."
+      },
+      {
+        "da": [
+          "granuli di secrezione"
+        ],
+        "a": [
+          "insulina"
+        ],
+        "enzima": "proteine SNARE",
+        "entra": [
+          "Ca²⁺"
+        ],
+        "esce": [],
+        "irreversibile": true,
+        "nota": "Esocitosi: quando entra Ca²⁺ nella cellula, il sensore sinaptotagmina fa scattare la fusione completa delle SNARE e il granulo svuota insulina e peptide C fuori dalla cellula. Allo stesso modo i neuroni liberano i neurotrasmettitori."
+      },
+      {
+        "da": [
+          "LDL"
+        ],
+        "a": [
+          "fossetta rivestita di clatrina"
+        ],
+        "enzima": "clatrina",
+        "entra": [],
+        "esce": [],
+        "nota": "Endocitosi mediata da recettore: le LDL si legano al loro recettore sulla membrana. La proteina adattatrice AP2 aggancia i recettori e la clatrina, che forma un cestello e curva la membrana verso l'interno."
+      },
+      {
+        "da": [
+          "fossetta rivestita di clatrina"
+        ],
+        "a": [
+          "vescicola endocitica"
+        ],
+        "enzima": "dinamina",
+        "entra": [
+          "GTP"
+        ],
+        "esce": [
+          "GDP"
+        ],
+        "nota": "La dinamina forma un anello attorno al collo della fossetta e, idrolizzando GTP, la strozza: la vescicola si stacca dalla membrana. Poi la clatrina si stacca e viene riutilizzata."
+      },
+      {
+        "da": [
+          "vescicola endocitica"
+        ],
+        "a": [
+          "endosoma"
+        ],
+        "enzima": "V-ATPasi (pompa protonica)",
+        "entra": [
+          "ATP",
+          "H⁺"
+        ],
+        "esce": [
+          "ADP"
+        ],
+        "nota": "La vescicola si fonde con l'endosoma precoce, che la pompa protonica rende acido. Con l'acidità le LDL si staccano dal recettore: il recettore torna in membrana (riciclo), le LDL proseguono."
+      },
+      {
+        "da": [
+          "endosoma"
+        ],
+        "a": [
+          "lisosoma"
+        ],
+        "enzima": "idrolasi acide",
+        "entra": [],
+        "esce": [
+          "colesterolo"
+        ],
+        "nota": "L'endosoma matura e si fonde con il lisosoma, ancora più acido. Gli enzimi digestivi del lisosoma smontano le LDL: il colesterolo libero esce nel citoplasma e frena la sintesi di nuovo colesterolo e di nuovi recettori."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "via secretiva: reticolo rugoso → vescicole COPII → Golgi (cis → trans) → granuli o vescicole → esocitosi",
+      "il viaggio indietro dal Golgi al reticolo usa vescicole COPI",
+      "endocitosi: fossetta di clatrina → vescicola → endosoma (riciclo dei recettori) → lisosoma",
+      "ogni vescicola trova la sua meta grazie a proteine Rab e SNARE"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Gli organuli del viaggio",
+        "voci": [
+          [
+            "Dove nascono le proteine da esportare",
+            [
+              "reticolo endoplasmatico rugoso"
+            ]
+          ],
+          [
+            "Dove vengono rifinite e smistate",
+            [
+              "apparato di Golgi (cis)",
+              "rete trans del Golgi"
+            ]
+          ],
+          [
+            "Dove vengono digerite",
+            [
+              "endosoma",
+              "lisosoma"
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "trasduzione del segnale": {
+    "titolo": "Trasduzione del segnale: dall'ormone fuori dalla cellula alla risposta dentro",
+    "dove": "Membrana plasmatica e citoplasma delle cellule bersaglio (es. fegato e muscolo per l'adrenalina)",
+    "inizio": "adrenalina",
+    "intro": "Molti ormoni e neurotrasmettitori non entrano nella cellula: si legano a un recettore sulla membrana, che passa il messaggio all'interno. Seguiamo l'adrenalina: il recettore accende una proteina G, che fa produrre AMP ciclico (secondo messaggero), che accende la proteina chinasi A. A ogni tappa il segnale si moltiplica (amplificazione). Alla fine il segnale viene spento. Gli ormoni come l'insulina usano invece recettori tirosin-chinasici.",
+    "fasi": [
+      {
+        "da": 1,
+        "nome": "Ricezione del segnale"
+      },
+      {
+        "da": 2,
+        "nome": "Trasduzione e amplificazione"
+      },
+      {
+        "da": 5,
+        "nome": "Risposta della cellula"
+      },
+      {
+        "da": 7,
+        "nome": "Spegnimento del segnale"
+      }
+    ],
+    "passaggi": [
+      {
+        "da": [
+          "adrenalina"
+        ],
+        "a": [
+          "complesso ormone-recettore"
+        ],
+        "enzima": "recettore accoppiato a proteine G (GPCR)",
+        "entra": [],
+        "esce": [],
+        "nota": "L'adrenalina (primo messaggero) si lega al recettore β-adrenergico, una proteina che attraversa la membrana 7 volte. Il legame cambia la forma del recettore dal lato interno."
+      },
+      {
+        "da": [
+          "complesso ormone-recettore"
+        ],
+        "a": [
+          "Gαs-GTP"
+        ],
+        "enzima": "proteina Gs",
+        "entra": [
+          "GTP"
+        ],
+        "esce": [
+          "GDP"
+        ],
+        "nota": "Il recettore attivato fa staccare il GDP dalla subunità α della proteina G, che lega GTP. La Gα con GTP si separa dalla coppia βγ ed è «accesa». Un solo recettore accende molte proteine G."
+      },
+      {
+        "da": [
+          "Gαs-GTP"
+        ],
+        "a": [
+          "AMP ciclico (cAMP)"
+        ],
+        "enzima": "adenilato ciclasi",
+        "entra": [
+          "ATP"
+        ],
+        "esce": [
+          "pirofosfato (PPi)"
+        ],
+        "nota": "La Gαs accende l'adenilato ciclasi, un enzima di membrana che trasforma l'ATP in AMP ciclico. Ogni enzima produce molte molecole di cAMP: il segnale si amplifica."
+      },
+      {
+        "da": [
+          "AMP ciclico (cAMP)"
+        ],
+        "a": [
+          "PKA attiva"
+        ],
+        "enzima": "proteina chinasi A (PKA)",
+        "entra": [],
+        "esce": [],
+        "nota": "A riposo la PKA è formata da 2 subunità regolatrici che bloccano 2 subunità catalitiche. Il cAMP si lega alle regolatrici (2 cAMP ciascuna) e libera le catalitiche, ora attive."
+      },
+      {
+        "da": [
+          "PKA attiva"
+        ],
+        "a": [
+          "proteine bersaglio fosforilate"
+        ],
+        "enzima": "proteina chinasi A (PKA)",
+        "entra": [
+          "ATP"
+        ],
+        "esce": [
+          "ADP"
+        ],
+        "nota": "La PKA attacca fosfati su serine e treonine di molte proteine. Nel fegato e nel muscolo accende la fosforilasi chinasi e spegne la glicogeno sintasi. Nel nucleo fosforila CREB, che accende geni."
+      },
+      {
+        "da": [
+          "proteine bersaglio fosforilate"
+        ],
+        "a": [
+          "risposta della cellula"
+        ],
+        "enzima": "glicogeno fosforilasi",
+        "entra": [
+          "glicogeno",
+          "fosfato (Pi)"
+        ],
+        "esce": [
+          "glucosio 1-fosfato"
+        ],
+        "nota": "La fosforilasi chinasi accende la glicogeno fosforilasi, che stacca glucosio dal glicogeno. Il muscolo lo usa per contrarsi; il fegato lo libera nel sangue (la glicemia sale). Da un pugno di molecole di adrenalina si mobilitano grandi quantità di glucosio."
+      },
+      {
+        "da": [
+          "risposta della cellula"
+        ],
+        "a": [
+          "segnale spento"
+        ],
+        "enzima": "fosfodiesterasi",
+        "entra": [
+          "AMP ciclico (cAMP)",
+          "H₂O"
+        ],
+        "esce": [
+          "AMP"
+        ],
+        "nota": "Il segnale si spegne in più punti: la Gα idrolizza da sola il suo GTP e torna inattiva; la fosfodiesterasi trasforma il cAMP in AMP; le fosfatasi tolgono i fosfati messi dalla PKA."
+      },
+      {
+        "da": [
+          "segnale spento"
+        ],
+        "a": [
+          "recettore desensibilizzato"
+        ],
+        "enzima": "chinasi dei recettori accoppiati a proteine G (GRK)",
+        "entra": [
+          "ATP"
+        ],
+        "esce": [
+          "ADP"
+        ],
+        "nota": "Se lo stimolo dura a lungo, la GRK fosforila il recettore occupato e la β-arrestina vi si lega: il recettore non accende più la proteina G e viene portato dentro la cellula per endocitosi. È la desensibilizzazione."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "primo messaggero (ormone) → recettore → proteina G → enzima → secondo messaggero → chinasi → risposta",
+      "ogni tappa moltiplica il segnale (amplificazione a cascata)",
+      "Gs accende e Gi spegne l'adenilato ciclasi; Gq accende la fosfolipasi C (IP₃ e Ca²⁺, DAG e PKC)",
+      "i recettori tirosin-chinasici (insulina, fattori di crescita) fosforilano tirosine e accendono PI3K-Akt e Ras-MAP chinasi"
+    ],
+    "dopo": {
+      "titolo": "Le altre grandi vie del segnale",
+      "strade": [
+        {
+          "condizione": "Recettori accoppiati a Gq (es. α₁-adrenergico, recettore AT1, muscarinico M₃)",
+          "da": "Gαq-GTP",
+          "a": "IP₃ e DAG",
+          "enzima": "fosfolipasi C-β",
+          "entra": [
+            "PIP₂"
+          ],
+          "esce": [
+            "Ca²⁺"
+          ],
+          "nota": "La fosfolipasi C taglia il PIP₂ della membrana in IP₃ e DAG. L'IP₃ apre i canali del reticolo e libera Ca²⁺; il DAG, insieme al Ca²⁺, accende la proteina chinasi C. Così si contrae, ad esempio, la muscolatura liscia dei vasi."
+        },
+        {
+          "condizione": "Recettori tirosin-chinasici: il recettore dell'insulina",
+          "da": "insulina",
+          "a": "recettore tirosin-chinasico fosforilato",
+          "enzima": "recettore dell'insulina",
+          "entra": [
+            "ATP"
+          ],
+          "esce": [
+            "ADP"
+          ],
+          "nota": "L'insulina fa avvicinare le due metà del recettore, che si fosforilano a vicenda sulle tirosine. Le proteine IRS si agganciano e accendono la via PI3K-Akt: GLUT4 va in membrana e si forma glicogeno."
+        },
+        {
+          "condizione": "Fattori di crescita: la via di Ras e delle MAP chinasi",
+          "da": "recettore tirosin-chinasico fosforilato",
+          "a": "proliferazione cellulare",
+          "enzima": "Ras",
+          "entra": [
+            "GTP"
+          ],
+          "esce": [
+            "GDP"
+          ],
+          "nota": "Le tirosine fosforilate richiamano Grb2 e SOS, che fanno legare GTP a Ras. Ras accende la cascata Raf → MEK → ERK, che entra nel nucleo e accende i geni della divisione cellulare."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "I secondi messaggeri",
+        "voci": [
+          [
+            "Prodotti dentro la cellula dopo il segnale",
+            [
+              "AMP ciclico (cAMP)",
+              "IP₃ e DAG",
+              "Ca²⁺"
+            ]
+          ]
+        ]
+      },
+      {
+        "titolo": "Tossine e farmaci che agiscono sulla via del cAMP",
+        "voci": [
+          [
+            "Tengono accesa la via (più cAMP)",
+            [
+              "tossina colerica",
+              "tossina della pertosse"
+            ]
+          ],
+          [
+            "Bloccano la fosfodiesterasi",
+            [
+              "caffeina"
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "ereditarietà mendeliana": {
+    "titolo": "Ereditarietà mendeliana: come si trasmettono i caratteri",
+    "dove": "Nelle cellule che formano i gameti (meiosi) e nella fecondazione; studiata da Mendel sulle piante di pisello",
+    "inizio": "gene (DNA)",
+    "intro": "Ogni carattere dipende da un gene, che esiste in varianti chiamate alleli. Ognuno di noi ha due alleli per ogni gene, uno dalla madre e uno dal padre. Mendel, incrociando piante di pisello, scoprì che gli alleli si separano nei gameti e si riuniscono a caso con la fecondazione. Per questo i caratteri ricompaiono nei figli in proporzioni prevedibili.",
+    "fasi": [
+      {
+        "da": 1,
+        "nome": "Le parole della genetica"
+      },
+      {
+        "da": 4,
+        "nome": "Un carattere: uniformità della F1 e segregazione"
+      },
+      {
+        "da": 8,
+        "nome": "Due caratteri: assortimento indipendente"
+      },
+      {
+        "da": 10,
+        "nome": "Quando Mendel non basta: i geni associati"
+      }
+    ],
+    "passaggi": [
+      {
+        "da": [
+          "gene (DNA)"
+        ],
+        "a": [
+          "alleli"
+        ],
+        "enzima": "cromosomi omologhi",
+        "entra": [],
+        "esce": [],
+        "nota": "Un gene occupa un posto preciso (locus) su un cromosoma. Le cellule del corpo hanno i cromosomi a coppie (omologhi), quindi ogni gene c'è due volte: le due copie possono essere uguali o diverse (alleli diversi)."
+      },
+      {
+        "da": [
+          "alleli"
+        ],
+        "a": [
+          "genotipo"
+        ],
+        "enzima": "fecondazione",
+        "entra": [],
+        "esce": [],
+        "nota": "Il genotipo è la coppia di alleli di un individuo. Due alleli uguali: omozigote (AA o aa). Due alleli diversi: eterozigote (Aa)."
+      },
+      {
+        "da": [
+          "genotipo"
+        ],
+        "a": [
+          "fenotipo"
+        ],
+        "enzima": "allele dominante",
+        "entra": [],
+        "esce": [],
+        "nota": "Il fenotipo è il carattere che si vede (o si misura). Nell'eterozigote Aa si vede solo l'allele dominante A; il recessivo a si vede solo in chi è aa. Il fenotipo dipende anche dall'ambiente."
+      },
+      {
+        "da": [
+          "generazione P (linee pure)"
+        ],
+        "a": [
+          "generazione F1"
+        ],
+        "enzima": "fecondazione",
+        "entra": [],
+        "esce": [],
+        "nota": "Mendel incrociò piante di linea pura: semi gialli (AA) × semi verdi (aa). Tutti i figli (F1) sono Aa e hanno semi gialli: legge della dominanza o dell'uniformità della F1."
+      },
+      {
+        "da": [
+          "generazione F1"
+        ],
+        "a": [
+          "gameti"
+        ],
+        "enzima": "omologhi separati (anafase I)",
+        "entra": [],
+        "esce": [],
+        "nota": "Nella meiosi i due omologhi si separano, quindi ogni gamete riceve un solo allele: metà dei gameti porta A, metà porta a. È la legge della segregazione."
+      },
+      {
+        "da": [
+          "gameti"
+        ],
+        "a": [
+          "generazione F2"
+        ],
+        "enzima": "fecondazione",
+        "entra": [],
+        "esce": [],
+        "nota": "Incrociando due F1 (Aa × Aa) i gameti si uniscono a caso (quadrato di Punnett): genotipi 1 AA : 2 Aa : 1 aa, fenotipi 3 gialli : 1 verde. Il carattere recessivo, sparito nella F1, ricompare."
+      },
+      {
+        "da": [
+          "generazione F2"
+        ],
+        "a": [
+          "reincrocio (testcross)"
+        ],
+        "enzima": "omozigote recessivo",
+        "entra": [],
+        "esce": [],
+        "nota": "Una pianta gialla della F2 può essere AA o Aa. Per saperlo la si incrocia con una aa: se tutti i figli sono gialli era AA; se metà sono verdi era Aa (rapporto 1:1)."
+      },
+      {
+        "da": [
+          "diibrido (AaBb)"
+        ],
+        "a": [
+          "gameti AB, Ab, aB, ab"
+        ],
+        "enzima": "omologhi sulla piastra (metafase I)",
+        "entra": [],
+        "esce": [],
+        "nota": "Con due geni su cromosomi diversi, ogni coppia di omologhi si orienta a caso in metafase I. Un diibrido forma 4 tipi di gameti in uguale proporzione: legge dell'assortimento indipendente."
+      },
+      {
+        "da": [
+          "gameti AB, Ab, aB, ab"
+        ],
+        "a": [
+          "F2 diibrida (9:3:3:1)"
+        ],
+        "enzima": "fecondazione",
+        "entra": [],
+        "esce": [],
+        "nota": "Dall'incrocio AaBb × AaBb nascono 16 combinazioni: 9 con entrambi i caratteri dominanti, 3 + 3 con un solo dominante, 1 con entrambi recessivi. Ogni carattere, preso da solo, resta 3:1."
+      },
+      {
+        "da": [
+          "F2 diibrida (9:3:3:1)"
+        ],
+        "a": [
+          "geni associati"
+        ],
+        "enzima": "cromatidi ricombinati (chiasmi)",
+        "entra": [],
+        "esce": [],
+        "nota": "Se due geni sono vicini sullo stesso cromosoma tendono a passare insieme e il 9:3:3:1 non si osserva. Solo il crossing-over li separa: più sono lontani, più spesso si ricombinano. Su questo si costruiscono le mappe genetiche."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "un carattere: F1 tutta uguale; F2 3:1 nei fenotipi e 1:2:1 nei genotipi",
+      "due caratteri su cromosomi diversi: F2 9:3:3:1",
+      "reincrocio con l'omozigote recessivo: 1:1 se l'individuo è eterozigote",
+      "le leggi di Mendel si spiegano con il comportamento dei cromosomi nella meiosi"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Come si trasmettono le malattie di un solo gene",
+        "voci": [
+          [
+            "Servono due alleli malati (es. fibrosi cistica)",
+            [
+              "eredità autosomica recessiva"
+            ]
+          ],
+          [
+            "Basta un allele malato (es. corea di Huntington)",
+            [
+              "eredità autosomica dominante"
+            ]
+          ],
+          [
+            "Il gene sta sul cromosoma X (es. emofilia)",
+            [
+              "eredità legata all'X"
+            ]
+          ]
+        ]
+      },
+      {
+        "titolo": "Oltre la dominanza completa",
+        "voci": [
+          [
+            "L'eterozigote è una via di mezzo",
+            [
+              "dominanza incompleta"
+            ]
+          ],
+          [
+            "Nell'eterozigote si vedono entrambi gli alleli (gruppo AB)",
+            [
+              "codominanza"
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "ossidoriduzioni": {
+    "titolo": "Ossidoriduzioni: chi cede e chi acquista elettroni",
+    "dove": "In ogni reazione con scambio di elettroni: pile, elettrolisi, corrosione, combustione, respirazione cellulare",
+    "inizio": "numero di ossidazione",
+    "intro": "Un'ossidoriduzione (reazione redox) è una reazione in cui degli elettroni passano da una specie a un'altra. Chi perde elettroni si ossida, chi li acquista si riduce: le due cose avvengono sempre insieme. Per seguire gli elettroni si usa il numero di ossidazione. Se la reazione è spontanea può produrre corrente (pila); se non lo è, la si può forzare con la corrente (elettrolisi).",
+    "fasi": [
+      {
+        "da": 1,
+        "nome": "Chi perde e chi acquista elettroni"
+      },
+      {
+        "da": 3,
+        "nome": "Scrivere e bilanciare la reazione"
+      },
+      {
+        "da": 4,
+        "nome": "Elettrochimica: pile, potenziali, elettrolisi"
+      },
+      {
+        "da": 8,
+        "nome": "Le ossidoriduzioni nella cellula"
+      }
+    ],
+    "passaggi": [
+      {
+        "da": [
+          "numero di ossidazione"
+        ],
+        "a": [
+          "ossidazione"
+        ],
+        "enzima": "riducente",
+        "entra": [],
+        "esce": [
+          "elettroni (e⁻)"
+        ],
+        "nota": "Ossidazione = perdita di elettroni: il numero di ossidazione aumenta. Esempio: Zn → Zn²⁺ + 2 e⁻. La specie che si ossida è il riducente, perché con i suoi elettroni riduce l'altra."
+      },
+      {
+        "da": [
+          "ossidazione"
+        ],
+        "a": [
+          "riduzione"
+        ],
+        "enzima": "ossidante",
+        "entra": [
+          "elettroni (e⁻)"
+        ],
+        "esce": [],
+        "nota": "Riduzione = acquisto di elettroni: il numero di ossidazione diminuisce. Esempio: Cu²⁺ + 2 e⁻ → Cu. Gli elettroni ceduti devono essere uguali a quelli acquistati: Zn + Cu²⁺ → Zn²⁺ + Cu."
+      },
+      {
+        "da": [
+          "riduzione"
+        ],
+        "a": [
+          "semireazioni bilanciate"
+        ],
+        "enzima": "metodo ionico-elettronico",
+        "entra": [
+          "H⁺",
+          "H₂O"
+        ],
+        "esce": [],
+        "nota": "Si scrivono separate le due semireazioni; si bilanciano gli atomi, l'ossigeno con H₂O, l'idrogeno con H⁺ (in ambiente acido), le cariche con gli elettroni. Poi si moltiplicano perché gli elettroni siano uguali e si sommano. Es.: MnO₄⁻ + 8 H⁺ + 5 e⁻ → Mn²⁺ + 4 H₂O."
+      },
+      {
+        "da": [
+          "semireazioni bilanciate"
+        ],
+        "a": [
+          "pila (cella galvanica)"
+        ],
+        "enzima": "ponte salino",
+        "entra": [],
+        "esce": [
+          "elettroni (e⁻)"
+        ],
+        "nota": "Se le due semireazioni avvengono in recipienti separati, gli elettroni passano in un filo esterno: è corrente. Nella pila Daniell lo zinco si ossida all'anodo (polo −) e il rame si riduce al catodo (polo +); il ponte salino chiude il circuito con i suoi ioni."
+      },
+      {
+        "da": [
+          "pila (cella galvanica)"
+        ],
+        "a": [
+          "potenziale standard di riduzione (E°)"
+        ],
+        "enzima": "elettrodo standard a idrogeno",
+        "entra": [],
+        "esce": [],
+        "nota": "Ogni coppia redox ha un potenziale di riduzione, misurato rispetto all'elettrodo a idrogeno (0 V). Più E° è alto, più la specie è ossidante (F₂ +2,87 V); più è basso, più è riducente (Li −3,04 V). La pila Daniell dà 0,34 − (−0,76) = 1,10 V."
+      },
+      {
+        "da": [
+          "potenziale standard di riduzione (E°)"
+        ],
+        "a": [
+          "reazione spontanea"
+        ],
+        "enzima": "equazione di Nernst",
+        "entra": [],
+        "esce": [],
+        "nota": "Una redox è spontanea se la differenza di potenziale (E catodo − E anodo) è positiva, perché ΔG = −nFE. L'equazione di Nernst calcola il potenziale quando le concentrazioni non sono standard."
+      },
+      {
+        "da": [
+          "reazione spontanea"
+        ],
+        "a": [
+          "elettrolisi"
+        ],
+        "enzima": "generatore di corrente continua",
+        "entra": [
+          "elettroni (e⁻)"
+        ],
+        "esce": [],
+        "nota": "Con un generatore si forza la reazione non spontanea. Anche qui l'ossidazione avviene all'anodo e la riduzione al catodo, ma ora l'anodo è il polo +. Esempi: NaCl fuso → Na + Cl₂; si usa per cromature e per produrre alluminio."
+      },
+      {
+        "da": [
+          "reazione spontanea"
+        ],
+        "a": [
+          "ossidoriduzioni nella cellula"
+        ],
+        "enzima": "deidrogenasi",
+        "entra": [
+          "NAD⁺"
+        ],
+        "esce": [
+          "NADH + H⁺"
+        ],
+        "nota": "Nella cellula ossidare spesso significa togliere idrogeni (elettroni + H⁺) a una molecola. Le deidrogenasi li passano al NAD⁺ o al FAD. Gli elettroni del NADH scendono poi lungo la catena respiratoria fino all'O₂, che ha un potenziale molto più alto."
+      },
+      {
+        "da": [
+          "ossidoriduzioni nella cellula"
+        ],
+        "a": [
+          "dismutazione"
+        ],
+        "enzima": "superossido dismutasi (SOD)",
+        "entra": [
+          "anione superossido (O₂•⁻)",
+          "H⁺"
+        ],
+        "esce": [
+          "perossido di idrogeno (H₂O₂)",
+          "O₂"
+        ],
+        "nota": "Un caso speciale: la stessa specie in parte si ossida e in parte si riduce (dismutazione). 2 O₂•⁻ + 2 H⁺ → H₂O₂ + O₂. Così la cellula elimina il superossido, un radicale prodotto in piccola quantità dalla respirazione."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "ossidazione = perdita di elettroni (n.o. aumenta); riduzione = acquisto di elettroni (n.o. diminuisce)",
+      "il riducente si ossida, l'ossidante si riduce; gli elettroni ceduti = elettroni acquistati",
+      "all'anodo c'è sempre ossidazione, al catodo sempre riduzione",
+      "E° positivo della pila ↔ ΔG negativo ↔ reazione spontanea (ΔG° = −nFE°)"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Le coppie redox della respirazione cellulare",
+        "voci": [
+          [
+            "Trasportatori di elettroni",
+            [
+              "NAD⁺",
+              "NADH + H⁺",
+              "FAD",
+              "FADH₂"
+            ]
+          ],
+          [
+            "L'accettore finale degli elettroni",
+            [
+              "O₂",
+              "H₂O"
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "sostituzione nucleofila": {
+    "titolo": "Sostituzione nucleofila: SN2 e SN1",
+    "dove": "Reazioni della chimica organica su un carbonio sp³ legato a un buon gruppo uscente (alogenuri alchilici, alcoli attivati); anche negli enzimi delle cellule",
+    "inizio": "alogenuro alchilico",
+    "intro": "In una sostituzione nucleofila un nucleofilo (una specie ricca di elettroni) prende il posto di un gruppo uscente legato a un carbonio: Nu⁻ + R–X → R–Nu + X⁻. Ci sono due meccanismi. Nella SN2 tutto avviene in un solo passaggio. Nella SN1 prima esce il gruppo uscente e si forma un carbocatione, poi arriva il nucleofilo. Quale prevale dipende dal substrato, dal nucleofilo e dal solvente.",
+    "fasi": [
+      {
+        "da": 1,
+        "nome": "Gli attori della reazione"
+      },
+      {
+        "da": 3,
+        "nome": "SN2: un solo passaggio (bimolecolare)"
+      },
+      {
+        "da": 5,
+        "nome": "SN1: due passaggi, con carbocatione (unimolecolare)"
+      },
+      {
+        "da": 8,
+        "nome": "La reazione concorrente e le sostituzioni nella cellula"
+      }
+    ],
+    "passaggi": [
+      {
+        "da": [
+          "alogenuro alchilico"
+        ],
+        "a": [
+          "carbonio elettrofilo (δ+)"
+        ],
+        "enzima": "gruppo uscente",
+        "entra": [],
+        "esce": [],
+        "nota": "L'alogeno è più elettronegativo del carbonio e tira a sé gli elettroni del legame C–X: il carbonio resta parzialmente positivo (δ+) e attira i nucleofili. Un buon gruppo uscente è una base debole: I⁻ > Br⁻ > Cl⁻ ≫ F⁻."
+      },
+      {
+        "da": [
+          "carbonio elettrofilo (δ+)"
+        ],
+        "a": [
+          "meccanismo SN2 o SN1"
+        ],
+        "enzima": "nucleofilo",
+        "entra": [],
+        "esce": [],
+        "nota": "Il nucleofilo ha un doppietto libero o una carica negativa (OH⁻, CN⁻, NH₃, H₂O). Substrati metilici e primari e nucleofili forti favoriscono la SN2; substrati terziari, nucleofili deboli e solventi protici favoriscono la SN1."
+      },
+      {
+        "da": [
+          "bromometano"
+        ],
+        "a": [
+          "stato di transizione SN2"
+        ],
+        "enzima": "nucleofilo",
+        "entra": [
+          "ione idrossido (OH⁻)"
+        ],
+        "esce": [],
+        "nota": "Il nucleofilo attacca il carbonio dal lato opposto al gruppo uscente (attacco da dietro, a 180°). Nello stato di transizione il carbonio è legato a metà sia a OH sia a Br, con i tre idrogeni su un piano."
+      },
+      {
+        "da": [
+          "stato di transizione SN2"
+        ],
+        "a": [
+          "metanolo"
+        ],
+        "enzima": "gruppo uscente",
+        "entra": [],
+        "esce": [
+          "ione bromuro (Br⁻)"
+        ],
+        "irreversibile": true,
+        "nota": "Mentre si forma il legame C–O si rompe il legame C–Br: un solo passaggio (reazione concertata). La velocità dipende da entrambi: v = k[RX][Nu]. Se il carbonio è chirale la configurazione si inverte (inversione di Walden)."
+      },
+      {
+        "da": [
+          "2-bromo-2-metilpropano"
+        ],
+        "a": [
+          "carbocatione terziario"
+        ],
+        "enzima": "solvente polare protico",
+        "entra": [],
+        "esce": [
+          "ione bromuro (Br⁻)"
+        ],
+        "limitante": true,
+        "nota": "Il carbonio terziario è troppo affollato per l'attacco da dietro. Il legame C–Br si rompe da solo, aiutato dal solvente (acqua, alcoli) che avvolge gli ioni. È il passaggio lento: v = k[RX], non dipende dal nucleofilo."
+      },
+      {
+        "da": [
+          "carbocatione terziario"
+        ],
+        "a": [
+          "alcol protonato"
+        ],
+        "enzima": "nucleofilo",
+        "entra": [
+          "H₂O"
+        ],
+        "esce": [],
+        "nota": "Il carbocatione è piatto (carbonio sp²): l'acqua lo attacca velocemente da una faccia o dall'altra. Se il carbonio era chirale si ottiene una miscela dei due enantiomeri (racemizzazione, spesso con un piccolo eccesso di inversione)."
+      },
+      {
+        "da": [
+          "alcol protonato"
+        ],
+        "a": [
+          "2-metil-2-propanolo (terz-butanolo)"
+        ],
+        "enzima": "H₂O",
+        "entra": [],
+        "esce": [
+          "H⁺"
+        ],
+        "nota": "Un'altra molecola d'acqua strappa il protone in più e si ottiene l'alcol neutro. Quando il nucleofilo è il solvente stesso la reazione si chiama solvolisi."
+      },
+      {
+        "da": [
+          "carbocatione terziario"
+        ],
+        "a": [
+          "2-metilpropene"
+        ],
+        "enzima": "solvente polare protico",
+        "entra": [],
+        "esce": [
+          "H⁺"
+        ],
+        "nota": "Il carbocatione può anche perdere un H⁺ dal carbonio vicino e formare un alchene: è l'eliminazione E1, che compete con la SN1 e aumenta scaldando. Con basi forti e ingombranti prevale l'eliminazione E2."
+      },
+      {
+        "da": [
+          "S-adenosilmetionina (SAM)"
+        ],
+        "a": [
+          "adrenalina"
+        ],
+        "enzima": "feniletanolamina N-metiltransferasi (PNMT)",
+        "entra": [
+          "noradrenalina"
+        ],
+        "esce": [
+          "S-adenosilomocisteina"
+        ],
+        "nota": "Anche gli enzimi fanno sostituzioni nucleofile. Nella midollare del surrene l'azoto della noradrenalina (nucleofilo) attacca il metile della SAM con un meccanismo SN2; il gruppo uscente è lo zolfo, che diventa S-adenosilomocisteina."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "SN2: un passaggio, v = k[RX][Nu], inversione di configurazione; CH₃X > primari > secondari, i terziari no",
+      "SN1: due passaggi con carbocatione, v = k[RX], racemizzazione; terziari > secondari, metilici e primari no",
+      "SN2 favorita da nucleofili forti e solventi polari aprotici (acetone, DMSO); SN1 da solventi polari protici (acqua, alcoli)",
+      "buon gruppo uscente = base debole (I⁻, Br⁻, Cl⁻, H₂O)"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Le molecole degli esempi",
+        "voci": [
+          [
+            "SN2 su un substrato metilico",
+            [
+              "bromometano",
+              "ione idrossido (OH⁻)",
+              "metanolo"
+            ]
+          ],
+          [
+            "SN1 su un substrato terziario",
+            [
+              "2-bromo-2-metilpropano",
+              "carbocatione terziario",
+              "2-metil-2-propanolo (terz-butanolo)"
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "fotosintesi": {
+    "titolo": "Fotosintesi: dalla luce allo zucchero in due fasi",
+    "dove": "Cloroplasti delle cellule verdi delle piante e delle alghe: membrana dei tilacoidi (fase luminosa) e stroma (ciclo di Calvin)",
+    "inizio": "luce solare",
+    "intro": "Con la fotosintesi le piante usano l'energia della luce per costruire zuccheri a partire da CO₂ e acqua, liberando ossigeno. Nella fase luminosa, sulle membrane dei tilacoidi, la luce spezza l'acqua e produce ATP e NADPH. Nel ciclo di Calvin, nello stroma, ATP e NADPH servono a fissare la CO₂ e a formare zuccheri. L'ossigeno che respiriamo viene dall'acqua.",
+    "fasi": [
+      {
+        "da": 1,
+        "nome": "Fase luminosa (membrana dei tilacoidi)"
+      },
+      {
+        "da": 7,
+        "nome": "Ciclo di Calvin: fissazione della CO₂ (stroma)"
+      },
+      {
+        "da": 8,
+        "nome": "Ciclo di Calvin: riduzione"
+      },
+      {
+        "da": 10,
+        "nome": "Ciclo di Calvin: rigenerazione del RuBP"
+      }
+    ],
+    "passaggi": [
+      {
+        "da": [
+          "luce solare"
+        ],
+        "a": [
+          "P680 eccitato"
+        ],
+        "enzima": "fotosistema II",
+        "entra": [],
+        "esce": [],
+        "nota": "Clorofille e carotenoidi dell'antenna assorbono la luce e passano l'energia al centro di reazione del fotosistema II, una coppia speciale di clorofille a (P680). P680 si eccita e cede un elettrone."
+      },
+      {
+        "da": [
+          "P680 eccitato"
+        ],
+        "a": [
+          "plastochinolo (PQH₂)"
+        ],
+        "enzima": "fotosistema II",
+        "entra": [
+          "H₂O"
+        ],
+        "esce": [
+          "O₂",
+          "H⁺"
+        ],
+        "nota": "Il P680 riprende gli elettroni dall'acqua: il complesso che libera ossigeno (con manganese) spezza 2 H₂O in O₂, 4 H⁺ (nel lume) e 4 e⁻ (fotolisi dell'acqua). Gli elettroni passano al plastochinone, che prende H⁺ dallo stroma."
+      },
+      {
+        "da": [
+          "plastochinolo (PQH₂)"
+        ],
+        "a": [
+          "plastocianina ridotta"
+        ],
+        "enzima": "complesso citocromo b₆f",
+        "entra": [],
+        "esce": [
+          "H⁺"
+        ],
+        "nota": "Il plastochinolo cede gli elettroni al complesso citocromo b₆f, che li passa alla plastocianina (una piccola proteina con rame) e intanto pompa altri H⁺ nel lume del tilacoide."
+      },
+      {
+        "da": [
+          "plastocianina ridotta"
+        ],
+        "a": [
+          "ferredossina ridotta"
+        ],
+        "enzima": "fotosistema I",
+        "entra": [],
+        "esce": [],
+        "nota": "Una seconda luce eccita il centro di reazione del fotosistema I (P700), che spinge gli elettroni fino alla ferredossina, una proteina ferro-zolfo dal lato dello stroma. La plastocianina rimpiazza l'elettrone perso da P700."
+      },
+      {
+        "da": [
+          "ferredossina ridotta"
+        ],
+        "a": [
+          "NADPH"
+        ],
+        "enzima": "ferredossina-NADP⁺ reduttasi",
+        "entra": [
+          "NADP⁺",
+          "H⁺"
+        ],
+        "esce": [],
+        "nota": "Due elettroni della ferredossina riducono il NADP⁺ a NADPH. Il viaggio degli elettroni dall'acqua al NADPH è lo «schema Z»: servono due fotoni per ogni elettrone."
+      },
+      {
+        "da": [
+          "H⁺ nel lume del tilacoide"
+        ],
+        "a": [
+          "ATP"
+        ],
+        "enzima": "ATP sintasi del cloroplasto (CF₀CF₁)",
+        "entra": [
+          "ADP",
+          "fosfato (Pi)"
+        ],
+        "esce": [],
+        "nota": "Gli H⁺ accumulati nel lume (da acqua e citocromo b₆f) tornano nello stroma attraverso l'ATP sintasi, che li usa per fare ATP: fotofosforilazione, con lo stesso principio chemiosmotico del mitocondrio."
+      },
+      {
+        "da": [
+          "ribulosio 1,5-bisfosfato (RuBP)"
+        ],
+        "a": [
+          "3-fosfoglicerato"
+        ],
+        "enzima": "RuBisCO",
+        "entra": [
+          "CO₂",
+          "H₂O"
+        ],
+        "esce": [],
+        "irreversibile": true,
+        "limitante": true,
+        "nota": "La RuBisCO attacca la CO₂ al RuBP (5 C): la molecola a 6 C che si forma si spezza subito in 2 molecole di 3-fosfoglicerato (3 C). È la fissazione del carbonio. La RuBisCO è lenta e a volte lega O₂ al posto della CO₂ (fotorespirazione)."
+      },
+      {
+        "da": [
+          "3-fosfoglicerato"
+        ],
+        "a": [
+          "1,3-bisfosfoglicerato"
+        ],
+        "enzima": "fosfoglicerato chinasi",
+        "entra": [
+          "ATP"
+        ],
+        "esce": [
+          "ADP"
+        ],
+        "nota": "Si spende ATP della fase luminosa per attaccare un secondo fosfato: è la stessa reazione della glicolisi, al contrario."
+      },
+      {
+        "da": [
+          "1,3-bisfosfoglicerato"
+        ],
+        "a": [
+          "gliceraldeide 3-fosfato"
+        ],
+        "enzima": "gliceraldeide 3-fosfato deidrogenasi del cloroplasto",
+        "entra": [
+          "NADPH"
+        ],
+        "esce": [
+          "NADP⁺",
+          "fosfato (Pi)"
+        ],
+        "nota": "Il NADPH riduce la molecola a gliceraldeide 3-fosfato, uno zucchero a 3 C. Ogni 3 CO₂ fissate si formano 6 gliceraldeide 3-fosfato: 1 è il guadagno, 5 servono a ricostruire il RuBP."
+      },
+      {
+        "da": [
+          "gliceraldeide 3-fosfato"
+        ],
+        "a": [
+          "ribulosio 1,5-bisfosfato (RuBP)"
+        ],
+        "enzima": "fosforibulochinasi",
+        "entra": [
+          "ATP"
+        ],
+        "esce": [
+          "ADP"
+        ],
+        "nota": "5 gliceraldeide 3-fosfato (15 C) vengono rimescolate da più enzimi in 3 ribulosio 5-fosfato (15 C), che la fosforibulochinasi trasforma in RuBP spendendo ATP. Il ciclo ricomincia."
+      }
+    ],
+    "titolo_bilancio": "Bilancio",
+    "bilancio": [
+      "6 CO₂ + 6 H₂O + luce → C₆H₁₂O₆ + 6 O₂",
+      "fase luminosa: H₂O → O₂; produce ATP e NADPH",
+      "ciclo di Calvin: per ogni CO₂ fissata servono 3 ATP e 2 NADPH",
+      "per 1 gliceraldeide 3-fosfato in uscita: 3 CO₂, 9 ATP, 6 NADPH"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Dove e con che cosa",
+        "voci": [
+          [
+            "L'organello della fotosintesi",
+            [
+              "cloroplasto"
+            ]
+          ],
+          [
+            "I pigmenti che catturano la luce",
+            [
+              "clorofilla",
+              "carotenoidi"
+            ]
+          ]
+        ]
+      },
+      {
+        "titolo": "Che cosa diventa lo zucchero prodotto",
+        "voci": [
+          [
+            "Riserva nella foglia, di giorno",
+            [
+              "amido"
+            ]
+          ],
+          [
+            "Zucchero che viaggia nella pianta",
+            [
+              "saccarosio"
+            ]
+          ],
+          [
+            "Parete delle cellule vegetali",
+            [
+              "cellulosa"
+            ]
+          ]
+        ]
+      }
+    ]
+  }
+}

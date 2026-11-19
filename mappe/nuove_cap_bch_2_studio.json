@@ -1,0 +1,377 @@
+{
+"Enzimi: cinetica e regolazione": {
+"superiore": {
+"spiegazione": [
+"Gli enzimi sono catalizzatori biologici, quasi sempre proteine (alcuni sono RNA, i ribozimi). Accelerano le reazioni anche di milioni di volte abbassando l'energia di attivazione, cioè la «salita» che i reagenti devono superare per trasformarsi in prodotti. Non vengono consumati, non cambiano il ΔG della reazione e non spostano l'equilibrio: fanno solo arrivare prima la reazione allo stesso punto finale. Sono molto specifici: ognuno riconosce uno o pochi substrati.",
+"Il substrato si lega a una piccola zona dell'enzima, il sito attivo, formando il complesso enzima-substrato (ES). Il vecchio modello «chiave e serratura» immaginava un sito rigido; il modello dell'adattamento indotto, più corretto, dice che il sito attivo cambia leggermente forma quando il substrato si lega, avvolgendolo. Molti enzimi hanno bisogno di aiutanti non proteici: ioni metallici (Mg²⁺, Zn²⁺, Fe²⁺) o coenzimi derivati dalle vitamine.",
+"La velocità di una reazione enzimatica dipende dalla concentrazione del substrato. A basse concentrazioni la velocità cresce quasi in proporzione; poi la crescita rallenta finché raggiunge un valore massimo, Vmax, quando tutti gli enzimi sono occupati (saturazione). Il grafico ha la forma di un'iperbole. La costante di Michaelis, Km, è la concentrazione di substrato a cui la velocità è metà della massima: un Km piccolo significa che l'enzima lavora bene anche con poco substrato, cioè ha alta affinità. L'equazione di Michaelis-Menten riassume tutto: v = Vmax · [S] / (Km + [S]).",
+"Anche temperatura e pH influenzano gli enzimi. La velocità aumenta con la temperatura fino a un optimum (circa 37 °C per i nostri enzimi), poi crolla perché la proteina si denatura. Ogni enzima ha un pH ottimale: la pepsina dello stomaco lavora a pH circa 2, la tripsina dell'intestino intorno a 8. Gli inibitori riducono l'attività: quelli competitivi assomigliano al substrato e occupano il sito attivo (si superano aumentando il substrato); quelli non competitivi si legano altrove e cambiano la forma dell'enzima. Molti farmaci sono inibitori enzimatici: l'aspirina blocca la cicloossigenasi, le statine bloccano un enzima della sintesi del colesterolo.",
+"La cellula regola gli enzimi in diversi modi. Gli enzimi allosterici hanno siti di regolazione diversi dal sito attivo, dove si legano attivatori o inibitori; spesso il prodotto finale di una via inibisce il primo enzima (inibizione a feedback), come un termostato. Altri enzimi sono accesi o spenti dall'aggiunta di un gruppo fosfato (fosforilazione), controllata dagli ormoni. Alcuni vengono prodotti in forma inattiva (zimogeni, come il tripsinogeno) e attivati solo dove servono. Infine la cellula può cambiare la quantità di enzima, producendone di più o di meno."
+],
+"metodo": [
+"Disegna il grafico velocità/substrato e segna Vmax e Km; poi rispondi a voce a che cosa succede a velocità bassa e alta.",
+"Esercitati con l'equazione di Michaelis-Menten: verifica che con [S] = Km si ottiene v = Vmax/2 e con [S] = 9 Km si ottiene il 90% di Vmax.",
+"Disegna il profilo energetico di una reazione con e senza enzima, mostrando che solo la «collina» cambia.",
+"Costruisci una tabella degli inibitori: dove si legano, che cosa cambia, come si superano, un esempio di farmaco.",
+"Elenca i modi di regolazione (allosterica, covalente, zimogeni, quantità) con un esempio ciascuno.",
+"Rivedi gli effetti di temperatura e pH con i grafici a campana."
+],
+"ricorda": [
+"Km piccolo = enzima «goloso»: lavora bene anche con poco substrato.",
+"L'enzima abbassa la collina, non cambia l'altezza di partenza e di arrivo.",
+"Competitivo = compete per la stessa sedia; più substrato lo scaccia.",
+"Feedback: il prodotto finale spegne il primo rubinetto."
+],
+"errori": [
+"Dire che gli enzimi spostano l'equilibrio o rendono spontanea una reazione: cambiano solo la velocità.",
+"Pensare che Km sia una velocità: è una concentrazione di substrato.",
+"Credere che oltre la temperatura ottimale l'enzima lavori solo un po' più lentamente: si denatura e può perdere l'attività in modo irreversibile.",
+"Confondere inibizione competitiva e non competitiva sul modo di superarla: solo la competitiva si vince aumentando il substrato."
+],
+"domande": [
+{"domanda": "Che cos'è la Km?", "risposta": "La concentrazione di substrato alla quale la velocità della reazione è metà della velocità massima; un valore basso indica alta affinità."},
+{"domanda": "Che cosa succede a Vmax con un inibitore competitivo?", "risposta": "Non cambia: aumentando abbastanza il substrato si raggiunge la stessa velocità massima, ma serve più substrato (Km apparente maggiore)."},
+{"domanda": "Che cos'è l'inibizione a feedback?", "risposta": "Il prodotto finale di una via metabolica inibisce un enzima iniziale della stessa via, evitando di produrne troppo."},
+{"domanda": "Che cosa sono gli zimogeni?", "risposta": "Forme inattive di enzimi, come il tripsinogeno, che vengono attivate tagliando una parte della catena solo nel luogo in cui devono agire."},
+{"domanda": "Perché un enzima perde attività a temperature troppo alte?", "risposta": "Perché la proteina si denatura: si rompono i legami deboli che mantengono la struttura del sito attivo."}
+]
+},
+"universita": {
+"spiegazione": [
+"Gli enzimi catalizzano stabilizzando lo stato di transizione più del substrato: l'energia di legame tra enzima e stato di transizione è la principale fonte di accelerazione. I meccanismi chimici sono la catalisi acido-base generale (residui di istidina, glutammato, aspartato che donano o accettano protoni), la catalisi covalente (un nucleofilo dell'enzima forma un intermedio, come la serina delle serina proteasi), la catalisi da ioni metallici e gli effetti di prossimità e orientamento. Nella chimotripsina la triade catalitica Ser195–His57–Asp102 rende la serina un nucleofilo forte e il «buco dell'ossianione» stabilizza l'intermedio tetraedrico. Gli analoghi dello stato di transizione sono inibitori potentissimi e base della progettazione di farmaci.",
+"Il modello di Michaelis-Menten assume E + S ⇌ ES → E + P, con stato stazionario di [ES] e [S] ≫ [E]. Ne deriva v₀ = Vmax[S]/(Km + [S]), con Km = (k₋₁ + k₂)/k₁ e Vmax = k₂[E]ₜ = kcat[E]ₜ. Il kcat (numero di turnover) indica quante molecole di substrato un sito attivo converte al secondo (da circa 1 s⁻¹ fino a 10⁶ s⁻¹ per l'anidrasi carbonica e la catalasi). Il rapporto kcat/Km è la costante di specificità: misura l'efficienza a basse concentrazioni di substrato ed ha un limite superiore fissato dalla diffusione, circa 10⁸–10⁹ M⁻¹s⁻¹ (enzimi «perfetti» come la triosofosfato isomerasi). Km coincide con la costante di dissociazione di ES solo se k₂ ≪ k₋₁.",
+"La linearizzazione di Lineweaver-Burk, 1/v₀ = (Km/Vmax)(1/[S]) + 1/Vmax, interseca l'asse y in 1/Vmax e l'asse x in −1/Km, ed è utile per riconoscere il tipo di inibizione (anche se amplifica gli errori a basse [S]). Un inibitore competitivo aumenta la Km apparente di un fattore α = 1 + [I]/Kᵢ senza cambiare Vmax (rette che si incrociano sull'asse y); un inibitore incompetitivo, che si lega solo a ES, riduce sia Vmax sia Km dello stesso fattore (rette parallele); un inibitore misto riduce Vmax e altera Km, e il caso particolare in cui l'affinità per E ed ES è uguale è il non competitivo puro (rette che si incrociano sull'asse x, Km invariata). Gli inibitori irreversibili modificano covalentemente l'enzima: l'aspirina acetila una serina della cicloossigenasi, gli organofosfati la serina dell'acetilcolinesterasi; gli inibitori suicidi vengono attivati dall'enzima stesso.",
+"Gli enzimi allosterici, di solito oligomerici, non seguono Michaelis-Menten: mostrano curve sigmoidi dovute alla cooperatività tra subunità, descritte dal modello concertato (Monod-Wyman-Changeux, stati T e R in equilibrio) o sequenziale (Koshland). La sigmoide rende l'enzima molto sensibile a variazioni di substrato in un intervallo stretto; gli effettori allosterici spostano la curva (gli attivatori verso sinistra, gli inibitori verso destra). Esempi: l'aspartato transcarbamilasi, inibita dal CTP e attivata dall'ATP, e la fosfofruttochinasi-1, inibita da ATP e citrato e attivata da AMP e fruttosio-2,6-bisfosfato.",
+"La regolazione covalente reversibile più diffusa è la fosforilazione di serina, treonina o tirosina da parte di chinasi, revertita dalle fosfatasi; la glicogeno fosforilasi è attivata e la glicogeno sintasi inattivata dalla fosforilazione in risposta al glucagone e all'adrenalina. Le cascate amplificano il segnale: ogni enzima attivato ne attiva molti a valle. La proteolisi limitata attiva irreversibilmente zimogeni digestivi (l'enteropeptidasi attiva il tripsinogeno, la tripsina attiva gli altri) e i fattori della coagulazione; l'inibitore pancreatico della tripsina previene l'autodigestione del pancreas. Nel lungo periodo si regola la quantità di enzima (induzione e repressione genica, velocità di degradazione), e la compartimentazione separa vie opposte. Gli isoenzimi, come esochinasi e glucochinasi o le isoforme della lattato deidrogenasi, catalizzano la stessa reazione con parametri cinetici diversi adatti a ciascun tessuto."
+],
+"metodo": [
+"Ricava l'equazione di Michaelis-Menten dall'ipotesi dello stato stazionario almeno una volta per conto tuo.",
+"Esercitati con dati numerici: da una tabella di [S] e v₀ ricava Km e Vmax con il grafico dei doppi reciproci.",
+"Disegna i tre grafici di Lineweaver-Burk per inibizione competitiva, incompetitiva e mista e annota che cosa cambia in Km e Vmax.",
+"Studia la chimotripsina come caso modello di meccanismo catalitico e spiega a voce il ruolo di ogni residuo della triade.",
+"Confronta su uno stesso grafico una curva iperbolica e una sigmoide con la stessa Vmax, poi aggiungi un attivatore e un inibitore allosterico.",
+"Raccogli in una tabella esempi di enzimi regolati per ogni meccanismo (allosterico, fosforilazione, proteolisi, induzione, isoenzimi)."
+],
+"ricorda": [
+"kcat/Km è il «voto di efficienza»: il massimo è la velocità di diffusione.",
+"Competitivo: stessa Vmax, Km sale. Incompetitivo: rette parallele.",
+"Sigmoide = interruttore: piccolo cambiamento di substrato, grande cambiamento di velocità.",
+"Lo stato di transizione è il vero partner dell'enzima."
+],
+"errori": [
+"Considerare Km sempre come misura diretta dell'affinità: lo è solo quando k₂ ≪ k₋₁.",
+"Usare Michaelis-Menten per enzimi allosterici cooperativi: la loro curva è sigmoide e servono modelli diversi (per esempio l'equazione di Hill).",
+"Confondere non competitivo e incompetitivo: il primo si lega a E ed ES, il secondo solo a ES.",
+"Pensare che kcat da solo dica quale enzima è più efficiente: a basse concentrazioni di substrato conta kcat/Km.",
+"Credere che la fosforilazione attivi sempre gli enzimi: può attivare o inibire a seconda dell'enzima."
+],
+"domande": [
+{"domanda": "Che cosa rappresenta kcat/Km?", "risposta": "La costante di specificità: la velocità di reazione a basse [S] diviso [E][S]; misura l'efficienza catalitica, con limite superiore dato dalla diffusione (10⁸–10⁹ M⁻¹s⁻¹)."},
+{"domanda": "Con un inibitore competitivo con [I] = Kᵢ, come cambia la Km apparente?", "risposta": "Raddoppia, perché α = 1 + [I]/Kᵢ = 2; Vmax non cambia."},
+{"domanda": "Come appaiono nel grafico di Lineweaver-Burk le rette di un'inibizione incompetitiva?", "risposta": "Parallele: Vmax e Km diminuiscono dello stesso fattore, quindi la pendenza Km/Vmax non cambia."},
+{"domanda": "Qual è il ruolo dell'istidina nella triade catalitica della chimotripsina?", "risposta": "Fa da base generale: accetta il protone della serina rendendola un nucleofilo forte, poi lo cede al gruppo uscente (catalisi acido-base)."},
+{"domanda": "Perché la curva sigmoide è vantaggiosa per un enzima regolatore?", "risposta": "Perché in un intervallo stretto di concentrazione l'attività passa da bassa ad alta, permettendo una risposta tipo interruttore, modulabile dagli effettori allosterici."}
+]
+}
+},
+"Gluconeogenesi": {
+"superiore": {
+"spiegazione": [
+"La gluconeogenesi è la via con cui l'organismo costruisce glucosio nuovo a partire da molecole che non sono zuccheri. Serve perché alcuni tessuti dipendono dal glucosio: il cervello ne consuma circa 120 g al giorno, i globuli rossi non hanno mitocondri e possono usare solo glucosio. Le riserve di glicogeno del fegato bastano solo per circa 12–24 ore di digiuno; dopo, il glucosio del sangue deve essere prodotto ex novo. La gluconeogenesi avviene soprattutto nel fegato e, in misura minore, nel rene (che diventa importante nel digiuno prolungato).",
+"I precursori principali sono tre. Il lattato, prodotto dai muscoli che lavorano in carenza di ossigeno e dai globuli rossi, torna al fegato e viene trasformato di nuovo in glucosio: è il ciclo di Cori. L'alanina e gli altri amminoacidi glucogenici derivano dalla demolizione delle proteine muscolari. Il glicerolo deriva dalla scissione dei trigliceridi del tessuto adiposo. Gli acidi grassi a numero pari di carboni invece non possono diventare glucosio, perché danno acetil-CoA.",
+"La gluconeogenesi assomiglia alla glicolisi percorsa al contrario, ma non è identica. Sette reazioni della glicolisi sono reversibili e vengono usate in entrambe le direzioni; tre invece sono irreversibili (quelle di esochinasi, fosfofruttochinasi-1 e piruvato chinasi) e devono essere aggirate da enzimi diversi. Il piruvato diventa prima ossalacetato nel mitocondrio (piruvato carbossilasi) e poi fosfoenolpiruvato (PEP carbossichinasi); il fruttosio-1,6-bisfosfato perde un fosfato grazie alla fruttosio-1,6-bisfosfatasi; il glucosio-6-fosfato perde il fosfato grazie alla glucosio-6-fosfatasi, presente nel fegato e nel rene ma non nel muscolo.",
+"Costruire glucosio costa: da due piruvati a un glucosio servono 4 ATP, 2 GTP e 2 NADH, cioè 6 legami ad alta energia, mentre la glicolisi ne produce solo 2 ATP. La differenza è il prezzo che si paga per rendere entrambe le vie irreversibili nella loro direzione.",
+"Glicolisi e gluconeogenesi sono regolate in modo opposto, per evitare che funzionino insieme sprecando energia (un ciclo futile). Dopo un pasto l'insulina favorisce la glicolisi; nel digiuno il glucagone e il cortisolo attivano la gluconeogenesi. Una molecola chiave è il fruttosio-2,6-bisfosfato: quando è alto attiva la glicolisi e blocca la gluconeogenesi; il glucagone ne abbassa la concentrazione nel fegato. Anche l'acetil-CoA, abbondante quando si bruciano grassi, attiva la piruvato carbossilasi spingendo verso la produzione di glucosio. L'alcol in eccesso inibisce la gluconeogenesi e per questo può causare ipoglicemia a digiuno."
+],
+"metodo": [
+"Scrivi la glicolisi su due colonne e, accanto, la gluconeogenesi: evidenzia in colore le tre tappe irreversibili e gli enzimi che le aggirano.",
+"Disegna il ciclo di Cori tra muscolo e fegato, con lattato e glucosio che viaggiano nel sangue.",
+"Fai una lista dei precursori glucogenici e, a parte, di quelli che non lo sono (acetil-CoA, acidi grassi pari).",
+"Calcola il costo energetico confrontandolo con il guadagno della glicolisi.",
+"Prepara uno schema della regolazione: insulina contro glucagone, fruttosio-2,6-bisfosfato, acetil-CoA.",
+"Ripeti perché il muscolo non può rilasciare glucosio nel sangue (manca la glucosio-6-fosfatasi)."
+],
+"ricorda": [
+"Tre «salti» irreversibili, quattro enzimi per aggirarli: piruvato carbossilasi, PEP carbossichinasi, fruttosio-1,6-bisfosfatasi, glucosio-6-fosfatasi.",
+"Lattato, alanina, glicerolo: i tre mattoni del glucosio nuovo.",
+"Gli acidi grassi pari non diventano zucchero.",
+"Fruttosio-2,6-bisfosfato alto = si brucia; basso = si costruisce."
+],
+"errori": [
+"Dire che la gluconeogenesi è esattamente la glicolisi al contrario: tre tappe sono diverse, con enzimi propri.",
+"Pensare che il muscolo possa liberare glucosio nel sangue: non ha la glucosio-6-fosfatasi, il suo glicogeno serve solo a sé stesso.",
+"Credere che i grassi si trasformino in glucosio: solo il glicerolo (e la piccola parte dei grassi dispari) può farlo.",
+"Considerare la gluconeogenesi a costo zero: spende 6 legami ad alta energia per glucosio."
+],
+"domande": [
+{"domanda": "Quali sono i principali precursori della gluconeogenesi?", "risposta": "Lattato, alanina e altri amminoacidi glucogenici, glicerolo."},
+{"domanda": "Quali enzimi aggirano le tappe irreversibili della glicolisi?", "risposta": "Piruvato carbossilasi e PEP carbossichinasi (al posto della piruvato chinasi), fruttosio-1,6-bisfosfatasi (al posto della PFK-1) e glucosio-6-fosfatasi (al posto dell'esochinasi)."},
+{"domanda": "Che cos'è il ciclo di Cori?", "risposta": "Il lattato prodotto da muscoli e globuli rossi va al fegato, che lo trasforma in glucosio; il glucosio torna nel sangue ai tessuti."},
+{"domanda": "Quanto costa sintetizzare un glucosio da due piruvati?", "risposta": "4 ATP, 2 GTP e 2 NADH."},
+{"domanda": "Perché gli acidi grassi a numero pari di carboni non possono diventare glucosio?", "risposta": "Perché danno solo acetil-CoA, che non può tornare piruvato e nel ciclo di Krebs non produce un guadagno netto di ossalacetato."}
+]
+},
+"universita": {
+"spiegazione": [
+"Il primo bypass richiede due enzimi e due compartimenti. La piruvato carbossilasi mitocondriale (biotina-dipendente) catalizza piruvato + HCO₃⁻ + ATP → ossalacetato + ADP + Pᵢ ed è attivata allostericamente in modo obbligato dall'acetil-CoA: quando la β-ossidazione è attiva il piruvato è dirottato verso la gluconeogenesi, mentre lo stesso acetil-CoA inibisce (tramite la chinasi della PDH) la piruvato deidrogenasi. La PEP carbossichinasi (PEPCK) decarbossila e fosforila l'ossalacetato: ossalacetato + GTP → PEP + CO₂ + GDP. La CO₂ aggiunta e poi tolta serve ad «attivare» la molecola, come accade anche nella sintesi degli acidi grassi.",
+"L'ossalacetato non attraversa la membrana mitocondriale interna, e la scelta del percorso dipende dal precursore. Se si parte dal piruvato (o dall'alanina), l'ossalacetato viene ridotto a malato, che esce nel citosol e viene riossidato producendo il NADH citosolico necessario alla gliceraldeide-3-fosfato deidrogenasi. Se si parte dal lattato, il NADH si forma già nel citosol dalla lattato deidrogenasi; allora l'ossalacetato viene convertito in PEP direttamente nel mitocondrio dalla PEPCK mitocondriale, oppure esce come aspartato. Il glicerolo entra come diidrossiacetone fosfato tramite glicerolo chinasi (presente nel fegato, non nel tessuto adiposo) e glicerolo-3-fosfato deidrogenasi.",
+"Gli altri due bypass sono idrolisi semplici. La fruttosio-1,6-bisfosfatasi (FBPasi-1) è inibita da AMP e fruttosio-2,6-bisfosfato; la glucosio-6-fosfatasi si trova nel lume del reticolo endoplasmatico, dove il glucosio-6-fosfato entra tramite un trasportatore (G6PT); il deficit di uno dei due causa la glicogenosi di tipo I (von Gierke), con ipoglicemia grave a digiuno, acidosi lattica, iperuricemia e iperlipidemia. Il bilancio complessivo è 2 piruvato + 4 ATP + 2 GTP + 2 NADH + 2 H⁺ + 4 H₂O → glucosio + 4 ADP + 2 GDP + 6 Pᵢ + 2 NAD⁺, con un ΔG°' complessivo negativo, mentre la semplice inversione della glicolisi sarebbe fortemente sfavorita (ΔG°' positivo di diverse decine di kJ/mol).",
+"La regolazione reciproca avviene a più livelli. Il fruttosio-2,6-bisfosfato è prodotto e degradato dall'enzima bifunzionale PFK-2/FBPasi-2: nel fegato il glucagone, tramite cAMP e PKA, fosforila l'enzima attivando la funzione fosfatasica, il F-2,6-BP cala, la PFK-1 rallenta e la FBPasi-1 si libera dall'inibizione. La PKA fosforila e inattiva anche la piruvato chinasi epatica (isoforma L), evitando che il PEP appena formato torni piruvato. A livello trascrizionale glucagone (CREB e il coattivatore PGC-1α) e glucocorticoidi inducono PEPCK e glucosio-6-fosfatasi, mentre l'insulina li reprime tramite Akt e l'esclusione di FOXO1 dal nucleo. L'AMP alto (energia bassa) inibisce la FBPasi-1 e attiva la PFK-1.",
+"La gluconeogenesi va inquadrata nella fisiologia del digiuno. Nelle prime ore il glucosio deriva soprattutto dalla glicogenolisi epatica; dopo circa 24 ore la gluconeogenesi è quasi l'unica fonte, alimentata da amminoacidi muscolari (alanina dal ciclo glucosio-alanina, glutammina per il rene), lattato e glicerolo. Il costo energetico è sostenuto dalla β-ossidazione epatica, che fornisce ATP e NADH. Con il digiuno prolungato il cervello passa in parte ai corpi chetonici e la gluconeogenesi da proteine diminuisce, risparmiando massa muscolare. L'etanolo inibisce la via perché la sua ossidazione aumenta il rapporto NADH/NAD⁺ nel citosol, spostando piruvato → lattato e ossalacetato → malato e sottraendo substrati: per questo l'alcol a digiuno può provocare ipoglicemia, specialmente in chi ha poche riserve di glicogeno."
+],
+"metodo": [
+"Disegna mitocondrio e citosol con i due percorsi dell'ossalacetato (via malato per il piruvato, via PEPCK mitocondriale o aspartato per il lattato) e verifica il bilancio del NADH.",
+"Scrivi e controlla la stechiometria complessiva, contando ATP, GTP, NADH e acqua.",
+"Costruisci lo schema dell'enzima bifunzionale PFK-2/FBPasi-2 con le frecce di glucagone, cAMP, PKA e insulina.",
+"Fai una tabella degli effettori: acetil-CoA, AMP, F-2,6-BP, ATP, alanina e i loro bersagli in glicolisi e gluconeogenesi.",
+"Ripercorri le fasi del digiuno (ore, 1 giorno, settimane) indicando la fonte principale di glucosio per ciascuna.",
+"Studia la malattia di von Gierke collegando ogni sintomo al metabolita che si accumula."
+],
+"ricorda": [
+"L'acetil-CoA dice al piruvato: «non bruciarti, diventa glucosio».",
+"Il malato fa da navetta e porta con sé il NADH.",
+"Glucagone → PKA → spegne la piruvato chinasi e abbassa il F-2,6-BP.",
+"Alcol a digiuno = troppo NADH = poco glucosio."
+],
+"errori": [
+"Dimenticare che la glucosio-6-fosfatasi si trova nel lume del reticolo endoplasmatico e non nel citosol.",
+"Pensare che la piruvato carbossilasi sia citosolica: è mitocondriale, e questo obbliga a usare navette.",
+"Confondere l'effetto del fruttosio-2,6-bisfosfato: attiva la PFK-1 e inibisce la FBPasi-1, non il contrario.",
+"Scrivere che il glicerolo entra come gliceraldeide: entra come glicerolo-3-fosfato e poi diidrossiacetone fosfato.",
+"Ritenere che la regolazione sia solo allosterica: nel digiuno conta molto l'induzione genica di PEPCK e glucosio-6-fosfatasi."
+],
+"domande": [
+{"domanda": "Perché la piruvato carbossilasi è attivata dall'acetil-CoA?", "risposta": "Perché acetil-CoA abbondante segnala che l'energia arriva dagli acidi grassi: il piruvato può essere usato per sintetizzare glucosio (e rifornire l'ossalacetato) invece di essere ossidato."},
+{"domanda": "Come cambia il percorso dell'ossalacetato se il precursore è il lattato?", "risposta": "Il NADH citosolico è già fornito dalla lattato deidrogenasi, quindi l'ossalacetato è convertito in PEP nel mitocondrio dalla PEPCK mitocondriale (o esce come aspartato) senza passare per il malato."},
+{"domanda": "Come agisce il glucagone sulla piruvato chinasi epatica?", "risposta": "Tramite cAMP e PKA la fosforila e la inattiva, impedendo che il PEP formato dalla gluconeogenesi venga riconvertito in piruvato."},
+{"domanda": "Perché l'etanolo può causare ipoglicemia?", "risposta": "Perché la sua ossidazione aumenta il NADH citosolico, spostando piruvato verso lattato e ossalacetato verso malato e togliendo substrati alla gluconeogenesi."},
+{"domanda": "Quali sono i sintomi della glicogenosi di tipo I e perché?", "risposta": "Ipoglicemia a digiuno (né glicogenolisi né gluconeogenesi possono liberare glucosio), acidosi lattica, iperuricemia e iperlipidemia, per l'accumulo di glucosio-6-fosfato dirottato verso altre vie."}
+]
+}
+},
+"Metabolismo del glicogeno": {
+"superiore": {
+"spiegazione": [
+"Il glicogeno è la forma in cui gli animali immagazzinano il glucosio. È un polimero ramificato: lunghe catene di glucosio unite da legami α-1,4 glicosidici, con una ramificazione legata α-1,6 circa ogni 8–12 unità. Le ramificazioni lo rendono più solubile e soprattutto creano molte estremità libere, da cui gli enzimi possono staccare o aggiungere glucosio molto rapidamente. Si trova soprattutto nel fegato (circa 100 g, fino al 10% del peso del fegato) e nei muscoli (circa 400 g in totale, ma solo l'1–2% della massa muscolare).",
+"Fegato e muscolo usano il glicogeno in modo diverso. Il fegato lo usa per mantenere costante la glicemia di tutto il corpo: tra un pasto e l'altro lo demolisce e libera glucosio nel sangue. Il muscolo invece lo usa solo per sé, come carburante durante la contrazione, perché non possiede la glucosio-6-fosfatasi e non può liberare glucosio libero.",
+"La sintesi (glicogenosintesi) avviene dopo i pasti. Il glucosio entra nella cellula, viene fosforilato a glucosio-6-fosfato, convertito in glucosio-1-fosfato e poi attivato con UTP, formando UDP-glucosio, la forma «carica» che viene aggiunta alla catena. L'enzima glicogeno sintasi allunga le catene con legami α-1,4; un enzima ramificante crea i legami α-1,6. Serve un innesco, la proteina glicogenina, che attacca i primi glucosi a sé stessa.",
+"La demolizione (glicogenolisi) è catalizzata dalla glicogeno fosforilasi, che stacca un glucosio alla volta dalle estremità usando fosfato inorganico (fosforolisi) e produce glucosio-1-fosfato, senza spendere ATP. L'enzima deramificante si occupa dei punti di ramificazione, dove la fosforilasi si ferma. Il glucosio-1-fosfato diventa glucosio-6-fosfato: nel muscolo entra nella glicolisi, nel fegato viene defosforilato e il glucosio esce nel sangue.",
+"La regolazione è ormonale e coordinata: sintesi e demolizione non devono funzionare insieme. L'insulina, alta dopo il pasto, stimola la sintesi; il glucagone (sul fegato, durante il digiuno) e l'adrenalina (su fegato e muscolo, nello stress e nell'esercizio) stimolano la demolizione. Questi ormoni agiscono aggiungendo gruppi fosfato agli enzimi: la fosforilazione attiva la fosforilasi e spegne la glicogeno sintasi. Nel muscolo che si contrae, anche il calcio e l'AMP attivano la fosforilasi. Esistono malattie da accumulo di glicogeno (glicogenosi), come la malattia di McArdle, in cui manca la fosforilasi muscolare e si hanno crampi durante l'esercizio."
+],
+"metodo": [
+"Disegna un pezzo di glicogeno con catene α-1,4 e un ramo α-1,6, e indica le estremità non riducenti dove lavorano gli enzimi.",
+"Scrivi le tappe della sintesi in fila (glucosio → G6P → G1P → UDP-glucosio → glicogeno) e quelle della demolizione al contrario.",
+"Fai una tabella fegato/muscolo: scopo del glicogeno, presenza della glucosio-6-fosfatasi, ormoni che agiscono.",
+"Colloca su una giornata tipo (colazione, digiuno notturno, corsa) l'ormone dominante e la direzione del metabolismo del glicogeno.",
+"Ricorda la regola «fosforilato: fosforilasi accesa, sintasi spenta» ripetendola su esempi.",
+"Associa ogni glicogenosi principale all'enzima mancante e all'organo colpito."
+],
+"ricorda": [
+"Il glicogeno è un albero pieno di rami: più rami, più punti dove prendere glucosio in fretta.",
+"Il fegato lavora per tutti, il muscolo solo per sé.",
+"Fosfato aggiunto = si demolisce (fosforilasi accesa, sintasi spenta).",
+"UDP-glucosio è il glucosio «con il biglietto» per entrare nella catena."
+],
+"errori": [
+"Pensare che il glicogeno muscolare possa alzare la glicemia: il muscolo non ha la glucosio-6-fosfatasi.",
+"Dire che la fosforilasi idrolizza il glicogeno con acqua: usa fosfato inorganico e produce glucosio-1-fosfato.",
+"Credere che il glucagone agisca sul muscolo: il muscolo non ha recettori per il glucagone; risponde all'adrenalina.",
+"Confondere glicogeno (animale, molto ramificato) e amido (vegetale, amilosio e amilopectina meno ramificata)."
+],
+"domande": [
+{"domanda": "Quali legami ci sono nel glicogeno?", "risposta": "Legami α-1,4 glicosidici nelle catene e α-1,6 nei punti di ramificazione."},
+{"domanda": "Perché il glicogeno del fegato e quello del muscolo hanno funzioni diverse?", "risposta": "Il fegato ha la glucosio-6-fosfatasi e libera glucosio nel sangue per mantenere la glicemia; il muscolo non la ha e usa il glicogeno solo per la propria contrazione."},
+{"domanda": "Qual è la forma attivata del glucosio nella sintesi del glicogeno?", "risposta": "L'UDP-glucosio."},
+{"domanda": "Che cosa produce la glicogeno fosforilasi?", "risposta": "Glucosio-1-fosfato, staccando i glucosi dalle estremità con fosfato inorganico."},
+{"domanda": "Quali ormoni stimolano la demolizione del glicogeno?", "risposta": "Il glucagone nel fegato e l'adrenalina nel fegato e nel muscolo."}
+]
+},
+"universita": {
+"spiegazione": [
+"La glicogeno fosforilasi, con piridossal fosfato come cofattore (il cui fosfato agisce da catalizzatore acido-base), catalizza (glucosio)ₙ + Pᵢ → (glucosio)ₙ₋₁ + glucosio-1-fosfato. La fosforolisi conserva l'energia del legame glicosidico: il prodotto è già fosforilato e non può uscire dalla cellula, e nel muscolo la glicolisi a partire dal glicogeno rende 3 ATP per glucosio invece di 2. La fosforilasi si ferma a quattro residui da un ramo; l'enzima deramificante, bifunzionale, trasferisce tre di quei residui su un'altra catena (attività transferasica α-1,4 → α-1,4) e idrolizza l'ultimo legame α-1,6 (attività glucosidasica), liberando glucosio libero, circa il 10% del totale. La fosfoglucomutasi converte il G1P in G6P passando per glucosio-1,6-bisfosfato. Una piccola quota di glicogeno è degradata nei lisosomi dalla α-1,4-glucosidasi acida, il cui deficit causa la malattia di Pompe (tipo II).",
+"Nella sintesi, l'UDP-glucosio pirofosforilasi catalizza G1P + UTP → UDP-glucosio + PPᵢ, e l'idrolisi del pirofosfato rende la reazione irreversibile. La glicogenina, una glicosiltransferasi, aggiunge a una propria tirosina circa otto glucosi; la glicogeno sintasi allunga poi la catena dalle estremità non riducenti. L'enzima ramificante (amilo-(1,4→1,6)-transglicosilasi) stacca un frammento di circa 7 residui da una catena di almeno 11 e lo riattacca con legame α-1,6 ad almeno 4 residui da un ramo esistente. Il costo è di circa un legame ad alta energia (UTP) per glucosio immagazzinato, che si aggiunge all'ATP dell'esochinasi: un prezzo basso, perché il glucosio recuperato come G1P risparmia un ATP.",
+"La fosforilasi esiste nelle forme b (defosforilata, in genere inattiva, stato T) e a (fosforilata su Ser14, attiva, stato R). Nel muscolo la forma b è attivata allostericamente da AMP e inibita da ATP e glucosio-6-fosfato, così l'esercizio intenso la accende anche senza ormoni; il Ca²⁺ della contrazione attiva la fosforilasi chinasi tramite la sua subunità calmodulina. Nel fegato la forma a è inibita dal glucosio, che la rende un buon substrato per la proteina fosfatasi 1 (PP1): il fegato agisce così da sensore della glicemia. La glicogeno sintasi ha regolazione opposta: la forma fosforilata (b) è poco attiva e dipende dal glucosio-6-fosfato come attivatore allosterico, quella defosforilata (a) è attiva.",
+"La cascata ormonale amplifica il segnale di molti ordini di grandezza. Glucagone (recettore epatico) o adrenalina (recettori β-adrenergici) → proteina Gs → adenilato ciclasi → cAMP → PKA, che fosforila e attiva la fosforilasi chinasi, la quale fosforila la fosforilasi b in a; la PKA fosforila anche la glicogeno sintasi (insieme alla GSK3 e ad altre chinasi), inattivandola. Nel fegato l'adrenalina agisce anche tramite recettori α₁ (Gq, IP₃, Ca²⁺). L'insulina capovolge il quadro: tramite PI3K e Akt inattiva la GSK3, attiva la PP1 (anche legata al glicogeno tramite subunità bersaglio) e la fosfodiesterasi che degrada il cAMP; inoltre nel muscolo aumenta l'ingresso di glucosio con i trasportatori GLUT4 e nel fegato induce la glucochinasi.",
+"Le glicogenosi illustrano bene la logica del sistema. Tipo I (von Gierke, glucosio-6-fosfatasi): fegato ingrossato, ipoglicemia grave, acidosi lattica. Tipo II (Pompe, glucosidasi acida lisosomiale): accumulo nei lisosomi, cardiomiopatia nella forma infantile, trattata con terapia enzimatica sostitutiva. Tipo III (Cori, enzima deramificante): glicogeno con rami corti esterni anomali, ipoglicemia più lieve perché la gluconeogenesi è intatta. Tipo IV (Andersen, enzima ramificante): glicogeno con rami lunghi poco solubile, cirrosi. Tipo V (McArdle, fosforilasi muscolare): intolleranza all'esercizio con crampi e mioglobinuria, senza il normale aumento del lattato dopo esercizio ischemico e con il fenomeno del «secondo respiro» quando subentrano gli acidi grassi. Tipo VI (Hers, fosforilasi epatica): epatomegalia e ipoglicemia lieve."
+],
+"metodo": [
+"Disegna la cascata del cAMP dal recettore alla fosforilasi a e affianca la via dell'insulina che la spegne; segna su ogni enzima se è fosforilato o no.",
+"Prepara una tabella degli effettori allosterici della fosforilasi e della sintasi distinguendo fegato e muscolo.",
+"Spiega a voce perché il glucosio inibisce la fosforilasi epatica e perché l'AMP attiva quella muscolare: fai capire la logica tessuto-specifica.",
+"Esercitati sul lavoro dell'enzima deramificante con un disegno a residui numerati.",
+"Calcola la resa energetica del glucosio dal glicogeno rispetto a quello libero, sia in anaerobiosi sia in aerobiosi.",
+"Studia le glicogenosi come casi clinici: enzima, organo, sintomi, perché."
+],
+"ricorda": [
+"Fosforilasi a = attiva, fosforilata; sintasi a = attiva, defosforilata.",
+"Il glucosio nel fegato fa da freno alla fosforilasi: il fegato «sente» la glicemia.",
+"Nel muscolo il Ca²⁺ della contrazione è già il segnale per demolire.",
+"McArdle: crampi sotto sforzo e lattato che non sale."
+],
+"errori": [
+"Pensare che lo stesso ormone agisca sugli stessi bersagli in fegato e muscolo: il muscolo non risponde al glucagone e i suoi isoenzimi sono regolati diversamente.",
+"Dimenticare che l'enzima deramificante libera glucosio libero e non glucosio-1-fosfato nell'ultimo passaggio.",
+"Confondere la nomenclatura a/b della fosforilasi con quella della sintasi: per la sintasi la forma fosforilata è la meno attiva.",
+"Trascurare l'effetto amplificante della cascata: pochi ormoni mobilitano enormi quantità di glucosio in secondi.",
+"Attribuire la malattia di Pompe a un enzima citosolico: è un difetto lisosomiale."
+],
+"domande": [
+{"domanda": "Perché la fosforolisi è più vantaggiosa dell'idrolisi per il glicogeno?", "risposta": "Perché produce glucosio-1-fosfato senza spendere ATP: nel muscolo la glicolisi dal glicogeno rende 3 ATP invece di 2, e il glucosio fosforilato resta nella cellula."},
+{"domanda": "Come viene regolata la fosforilasi muscolare durante l'esercizio?", "risposta": "Dall'AMP che attiva allostericamente la forma b, dal Ca²⁺ che attiva la fosforilasi chinasi e dall'adrenalina tramite cAMP e PKA."},
+{"domanda": "Che cosa fa l'enzima deramificante?", "risposta": "Trasferisce tre dei quattro residui rimasti vicino a un ramo su un'altra catena e idrolizza il legame α-1,6 dell'ultimo, liberando glucosio libero."},
+{"domanda": "Come agisce l'insulina sulla glicogeno sintasi?", "risposta": "Tramite Akt inattiva la GSK3 e favorisce la PP1, che defosforila e attiva la sintasi; aumenta anche l'ingresso di glucosio nel muscolo con GLUT4."},
+{"domanda": "Perché nella glicogenosi di tipo III l'ipoglicemia è meno grave che nel tipo I?", "risposta": "Perché la glucosio-6-fosfatasi funziona: la gluconeogenesi può ancora liberare glucosio, e la fosforilasi lavora sulle catene esterne fino ai rami."}
+]
+}
+},
+"Via dei pentoso fosfati": {
+"superiore": {
+"spiegazione": [
+"La via dei pentoso fosfati (detta anche shunt dell'esoso monofosfato) è una via alternativa del glucosio che si svolge nel citosol. Il suo scopo non è produrre ATP: serve a fornire alla cellula due prodotti preziosi, il NADPH e il ribosio-5-fosfato. Parte dal glucosio-6-fosfato, lo stesso punto di partenza della glicolisi, e per questo il glucosio-6-fosfato è un incrocio da cui il glucosio può prendere strade diverse.",
+"La via ha due fasi. La fase ossidativa è irreversibile: il glucosio-6-fosfato viene ossidato e decarbossilato, liberando una CO₂ e producendo 2 NADPH e uno zucchero a cinque atomi di carbonio, il ribulosio-5-fosfato, che diventa ribosio-5-fosfato. L'enzima della prima tappa, la glucosio-6-fosfato deidrogenasi (G6PD), è il punto di controllo della via. La fase non ossidativa è reversibile: una serie di enzimi (transchetolasi e transaldolasi) rimescola gli zuccheri a 3, 4, 5, 6 e 7 atomi di carbonio, permettendo di trasformare pentosi in intermedi della glicolisi e viceversa.",
+"Il NADPH serve come «potere riducente» per costruire molecole: acidi grassi, colesterolo, ormoni steroidei. Serve anche alla difesa contro i danni ossidativi, perché mantiene il glutatione nella forma ridotta, capace di neutralizzare l'acqua ossigenata e altre specie reattive dell'ossigeno. Il ribosio-5-fosfato invece è il mattone per costruire nucleotidi, e quindi DNA, RNA, ATP e coenzimi come NAD e FAD.",
+"Per questo la via è molto attiva nei tessuti che sintetizzano lipidi (fegato, tessuto adiposo, ghiandola mammaria durante l'allattamento, surrene, gonadi), nelle cellule che si dividono rapidamente e nei globuli rossi, che hanno bisogno di difendersi dall'ossigeno che trasportano. Nel muscolo scheletrico è invece poco attiva.",
+"Il deficit di G6PD è la carenza enzimatica più diffusa al mondo, frequente nell'area mediterranea (in Sardegna in particolare) e in Africa, ed è legata al cromosoma X. I globuli rossi di queste persone producono poco NADPH e, se esposti a forti stress ossidativi, si rompono: è il favismo, un'anemia emolitica scatenata dalle fave o da alcuni farmaci (come certi antimalarici). La diffusione del deficit si spiega anche perché offre una certa protezione contro la malaria."
+],
+"metodo": [
+"Disegna il glucosio-6-fosfato al centro e da lì fai partire le frecce verso glicolisi, sintesi del glicogeno e via dei pentoso fosfati.",
+"Scrivi la fase ossidativa con i suoi prodotti: 1 G6P → 1 pentoso fosfato + 1 CO₂ + 2 NADPH.",
+"Fai una lista degli usi del NADPH e degli usi del ribosio-5-fosfato.",
+"Associa ai tessuti la richiesta prevalente (NADPH per fegato e adipe, ribosio per cellule che si dividono, difesa per globuli rossi).",
+"Studia il favismo come un piccolo caso: gene, enzima, mancanza di NADPH, glutatione ossidato, emolisi.",
+"Confronta NADH e NADPH in una tabella: via di origine, uso, rapporto con la forma ossidata."
+],
+"ricorda": [
+"Pentoso fosfati = la via che «non fa ATP ma fa attrezzi»: NADPH e ribosio.",
+"NADPH costruisce e protegge; NADH brucia e produce energia.",
+"G6PD è il cancello: se si chiude, i globuli rossi restano senza scudo.",
+"Fave + deficit di G6PD = favismo."
+],
+"errori": [
+"Pensare che la via produca ATP: il suo scopo è NADPH e ribosio-5-fosfato.",
+"Confondere NADPH con NADH: hanno funzioni diverse e la cellula li tiene separati.",
+"Dire che la via avviene nei mitocondri: avviene nel citosol.",
+"Credere che il favismo sia un'allergia alle fave: è un'anemia emolitica dovuta a un difetto enzimatico."
+],
+"domande": [
+{"domanda": "Quali sono i due prodotti principali della via dei pentoso fosfati?", "risposta": "NADPH e ribosio-5-fosfato."},
+{"domanda": "Qual è l'enzima regolatore della via?", "risposta": "La glucosio-6-fosfato deidrogenasi (G6PD), che catalizza la prima tappa della fase ossidativa."},
+{"domanda": "A che cosa serve il NADPH nei globuli rossi?", "risposta": "A mantenere ridotto il glutatione, che neutralizza i perossidi e protegge la membrana e l'emoglobina dai danni ossidativi."},
+{"domanda": "Che cos'è il favismo?", "risposta": "Un'anemia emolitica che colpisce persone con deficit di G6PD dopo l'ingestione di fave o di alcuni farmaci ossidanti."},
+{"domanda": "In quali tessuti la via è particolarmente attiva?", "risposta": "Fegato, tessuto adiposo, ghiandola mammaria in allattamento, surrene, gonadi, globuli rossi e cellule in rapida divisione."}
+]
+},
+"universita": {
+"spiegazione": [
+"La fase ossidativa comprende tre reazioni. La glucosio-6-fosfato deidrogenasi ossida il G6P a 6-fosfoglucono-δ-lattone riducendo NADP⁺ (ΔG molto negativo, tappa limitante); la lattonasi idrolizza il lattone a 6-fosfogluconato; la 6-fosfogluconato deidrogenasi esegue una decarbossilazione ossidativa producendo ribulosio-5-fosfato, CO₂ e il secondo NADPH. La fosfopentosio isomerasi forma ribosio-5-fosfato (tramite un enediolo), la fosfopentosio epimerasi forma xilulosio-5-fosfato. La G6PD è controllata soprattutto dal rapporto NADP⁺/NADPH: il NADPH è un forte inibitore competitivo, e nel citosol epatico il rapporto NADP⁺/NADPH è circa 0,01, per cui la via accelera appena la cellula consuma NADPH. L'insulina e le diete ricche di carboidrati inducono la G6PD.",
+"La fase non ossidativa usa due enzimi di trasferimento. La transchetolasi (cofattore tiamina pirofosfato) trasferisce un'unità a due carboni da un chetosio donatore a un aldoso accettore; la transaldolasi trasferisce un'unità a tre carboni attraverso una base di Schiff con una lisina. Il risultato netto è 3 pentoso-5-fosfato ⇌ 2 fruttosio-6-fosfato + 1 gliceraldeide-3-fosfato (15 carboni = 6 + 6 + 3), tramite sedoeptulosio-7-fosfato ed eritrosio-4-fosfato. Poiché le reazioni sono vicine all'equilibrio, il flusso dipende dalla domanda di prodotti. La misura dell'attività della transchetolasi eritrocitaria, con e senza TPP aggiunta, è un test della carenza di tiamina.",
+"La flessibilità della via si capisce con quattro modalità. Se serve più ribosio che NADPH (cellule in proliferazione), il fruttosio-6-fosfato e la gliceraldeide-3-fosfato della glicolisi vengono convertiti in ribosio-5-fosfato dalla fase non ossidativa al contrario, senza passare dalla fase ossidativa. Se servono ugualmente NADPH e ribosio, prevale la fase ossidativa. Se serve molto più NADPH (sintesi di acidi grassi negli adipociti), i pentosi vengono riciclati in glucosio-6-fosfato tramite fase non ossidativa e gluconeogenesi, e il ciclo ripetuto ossida completamente il glucosio a CO₂: 6 G6P + 12 NADP⁺ → 5 G6P + 6 CO₂ + 12 NADPH. Se servono NADPH e ATP, i pentosi vengono avviati alla glicolisi fino al piruvato.",
+"Il NADPH ha diversi ruoli oltre alla sintesi dei lipidi. La glutatione reduttasi (FAD) riduce il glutatione disolfuro (GSSG) a 2 GSH; la glutatione perossidasi (selenio-dipendente) usa GSH per ridurre H₂O₂ e i perossidi lipidici. La NADPH ossidasi dei neutrofili produce superossido per il burst respiratorio (il suo difetto causa la malattia granulomatosa cronica); le ossido nitrico sintasi, i citocromi P450 per la detossificazione e la steroidogenesi, la diidrofolato reduttasi e la ribonucleotide reduttasi (tramite tioredossina) dipendono tutti dal NADPH. Altre fonti di NADPH citosolico sono l'enzima malico e l'isocitrato deidrogenasi NADP-dipendente.",
+"Nel deficit di G6PD (oltre 400 varianti, ereditarietà X-linked) l'eritrocita, che non ha mitocondri né altre fonti di NADPH, non riesce a rigenerare GSH quando lo stress ossidativo aumenta: farmaci come primachina, sulfamidici, nitrofurantoina, la fava (che contiene vicina e convicina), infezioni o chetoacidosi provocano ossidazione dell'emoglobina, che precipita nei corpi di Heinz, danno di membrana ed emolisi intravascolare ed extravascolare. Nella variante mediterranea l'enzima è poco attivo in tutti i globuli rossi; nella variante africana A⁻ è instabile e si perde negli eritrociti vecchi, perciò l'emolisi è più autolimitata. Il vantaggio selettivo è la ridotta sopravvivenza del Plasmodium falciparum in eritrociti sotto stress ossidativo."
+],
+"metodo": [
+"Scrivi le tre reazioni della fase ossidativa con strutture, cofattori e prodotti, poi isomerasi ed epimerasi.",
+"Fai il bilancio dei carboni della fase non ossidativa (5 + 5 → 7 + 3; 7 + 3 → 6 + 4; 5 + 4 → 6 + 3) finché ti torna senza aiuto.",
+"Disegna le quattro modalità della via, ciascuna con le frecce che collegano glicolisi, gluconeogenesi e fase ossidativa.",
+"Prepara una mappa degli enzimi che usano NADPH, divisa tra biosintesi, difesa antiossidante e funzioni speciali.",
+"Studia il deficit di G6PD dal gene ai corpi di Heinz, passando per il ciclo del glutatione.",
+"Confronta la regolazione della G6PD (rapporto NADP⁺/NADPH) con quella degli enzimi glicolitici."
+],
+"ricorda": [
+"Transchetolasi porta due carboni e usa la TPP; transaldolasi ne porta tre.",
+"Il NADPH frena la G6PD: appena la cellula ne consuma, la via riparte.",
+"Tre pentosi = due esosi + un trioso: 15 carboni che si riorganizzano.",
+"Corpi di Heinz = emoglobina ossidata che precipita."
+],
+"errori": [
+"Pensare che il ribosio-5-fosfato possa formarsi solo nella fase ossidativa: la fase non ossidativa al contrario lo produce da intermedi glicolitici.",
+"Dimenticare che la transchetolasi richiede tiamina pirofosfato.",
+"Credere che la regolazione principale della G6PD sia la fosforilazione: è il rapporto NADP⁺/NADPH.",
+"Considerare la glutatione perossidasi NADPH-dipendente in modo diretto: usa GSH; il NADPH serve alla glutatione reduttasi.",
+"Pensare che il deficit di G6PD dia anemia continua in tutti: di solito l'emolisi compare solo dopo uno stimolo ossidativo."
+],
+"domande": [
+{"domanda": "Qual è il fattore principale che regola la glucosio-6-fosfato deidrogenasi?", "risposta": "Il rapporto NADP⁺/NADPH: il NADPH la inibisce, quindi il consumo di NADPH ne aumenta l'attività."},
+{"domanda": "Come si può produrre ribosio-5-fosfato senza produrre NADPH?", "risposta": "Facendo funzionare la fase non ossidativa al contrario: fruttosio-6-fosfato e gliceraldeide-3-fosfato vengono convertiti in pentoso fosfati da transchetolasi e transaldolasi."},
+{"domanda": "Qual è il bilancio quando la cellula ha bisogno soprattutto di NADPH?", "risposta": "I pentosi vengono riciclati a G6P: 6 G6P + 12 NADP⁺ → 5 G6P + 6 CO₂ + 12 NADPH, ossidazione completa di un glucosio."},
+{"domanda": "Perché l'eritrocita è particolarmente vulnerabile al deficit di G6PD?", "risposta": "Non ha mitocondri né enzimi alternativi per produrre NADPH, quindi dipende dalla G6PD per rigenerare il glutatione ridotto."},
+{"domanda": "Quale cofattore richiede la transchetolasi e che uso clinico ha?", "risposta": "La tiamina pirofosfato; l'attività della transchetolasi eritrocitaria, con e senza TPP aggiunta, si usa per valutare la carenza di tiamina."}
+]
+}
+},
+"Sintesi degli acidi grassi e del colesterolo": {
+"superiore": {
+"spiegazione": [
+"Quando mangiamo più carboidrati e proteine di quanti ne servano, il corpo trasforma l'eccesso in grasso di riserva. La sintesi degli acidi grassi (lipogenesi) avviene soprattutto nel fegato e nel tessuto adiposo, nel citosol, e parte dall'acetil-CoA che deriva in gran parte dal glucosio. È il contrario della β-ossidazione, ma non usa le stesse reazioni al contrario: avviene in un altro compartimento, usa enzimi diversi e un trasportatore di elettroni diverso, il NADPH.",
+"L'acetil-CoA si forma nel mitocondrio, ma non può uscirne direttamente: esce sotto forma di citrato, che nel citosol viene di nuovo scisso in acetil-CoA e ossalacetato. Il primo passaggio vero della sintesi è la carbossilazione dell'acetil-CoA a malonil-CoA, catalizzata dall'acetil-CoA carbossilasi con la biotina e spesa di ATP. È la tappa regolata: l'insulina la attiva, il glucagone e l'adrenalina la spengono, e il citrato abbondante la stimola.",
+"La sintasi degli acidi grassi, un grande complesso enzimatico, allunga la catena di due atomi di carbonio alla volta. A ogni giro un malonil-CoA cede due carboni (e perde una CO₂), poi una serie di reazioni (riduzione, disidratazione, seconda riduzione) trasforma il gruppo chetonico in una catena satura, consumando 2 NADPH. Dopo sette giri si ottiene il palmitato, un acido grasso saturo a 16 carboni. Altri enzimi nel reticolo endoplasmatico allungano la catena o inseriscono doppi legami. L'uomo non sa inserire doppi legami oltre il carbonio 9: per questo l'acido linoleico (omega-6) e l'α-linolenico (omega-3) sono essenziali e vanno presi con la dieta.",
+"Il colesterolo è un lipide con quattro anelli fusi, componente delle membrane cellulari e precursore degli ormoni steroidei, degli acidi biliari e della vitamina D. Anche il colesterolo si costruisce a partire dall'acetil-CoA, nel citosol e nel reticolo endoplasmatico, soprattutto nel fegato. Tre acetil-CoA formano l'HMG-CoA, che l'enzima HMG-CoA reduttasi trasforma in mevalonato. Questa tappa è il punto di controllo della via ed è il bersaglio dei farmaci più usati per abbassare il colesterolo, le statine. Dal mevalonato si formano unità a cinque carboni (isopreni), che si uniscono fino a formare lo squalene, a 30 carboni, il quale si chiude ad anelli e diventa lanosterolo e infine colesterolo (27 carboni).",
+"La sintesi del colesterolo è regolata dalla quantità di colesterolo nella cellula: quando ce n'è molto, la produzione di HMG-CoA reduttasi diminuisce e l'enzima viene degradato più in fretta; l'insulina la stimola, il glucagone la inibisce. Circa due terzi del colesterolo del corpo sono prodotti dall'organismo stesso, il resto viene dalla dieta. Un eccesso di colesterolo nel sangue favorisce l'aterosclerosi, cioè la formazione di placche nelle arterie."
+],
+"metodo": [
+"Confronta in una tabella sintesi e β-ossidazione: compartimento, trasportatore di acili, coenzima redox, molecola donatrice, regolazione.",
+"Disegna il percorso dell'acetil-CoA dal mitocondrio al citosol attraverso il citrato.",
+"Conta il fabbisogno per il palmitato: 8 acetil-CoA, 7 ATP (per 7 malonil-CoA), 14 NADPH.",
+"Scrivi la sequenza del colesterolo per tappe principali: acetil-CoA → HMG-CoA → mevalonato → isopreni → squalene → lanosterolo → colesterolo.",
+"Collega le statine all'HMG-CoA reduttasi e spiega a voce perché abbassano il colesterolo nel sangue.",
+"Ripassa le funzioni del colesterolo con un elenco di quattro voci."
+],
+"ricorda": [
+"Costruire grassi = citosol e NADPH; bruciare grassi = mitocondrio e NAD⁺/FAD.",
+"Il malonil-CoA è il mattone da tre carboni che ne lascia due.",
+"Statine = freno all'HMG-CoA reduttasi.",
+"Il colesterolo nasce da pezzi da cinque carboni, come una costruzione di mattoncini."
+],
+"errori": [
+"Dire che la sintesi degli acidi grassi è la β-ossidazione al contrario: compartimenti, enzimi e coenzimi sono diversi.",
+"Pensare che il colesterolo sia solo dannoso: è essenziale per membrane, ormoni steroidei, acidi biliari e vitamina D.",
+"Credere che l'acetil-CoA attraversi da solo la membrana mitocondriale: esce come citrato.",
+"Sostenere che l'uomo produce tutti gli acidi grassi di cui ha bisogno: omega-3 e omega-6 sono essenziali."
+],
+"domande": [
+{"domanda": "Qual è la tappa regolata della sintesi degli acidi grassi?", "risposta": "La carbossilazione dell'acetil-CoA a malonil-CoA da parte dell'acetil-CoA carbossilasi."},
+{"domanda": "Da dove viene il NADPH necessario alla lipogenesi?", "risposta": "Soprattutto dalla via dei pentoso fosfati e dall'enzima malico."},
+{"domanda": "Qual è l'acido grasso prodotto dalla sintasi degli acidi grassi?", "risposta": "Il palmitato, un acido grasso saturo a 16 carboni."},
+{"domanda": "Su quale enzima agiscono le statine?", "risposta": "Sull'HMG-CoA reduttasi, che trasforma l'HMG-CoA in mevalonato, tappa limitante della sintesi del colesterolo."},
+{"domanda": "Perché gli acidi linoleico e α-linolenico sono essenziali?", "risposta": "Perché l'uomo non possiede gli enzimi per inserire doppi legami oltre il carbonio 9 della catena."}
+]
+},
+"universita": {
+"spiegazione": [
+"L'acetil-CoA mitocondriale, prodotto dalla piruvato deidrogenasi nello stato nutrito, esce come citrato (la citrato sintasi lavora quando l'isocitrato deidrogenasi è inibita da ATP e NADH alti) e viene scisso nel citosol dalla ATP-citrato liasi: citrato + ATP + CoA → acetil-CoA + ossalacetato + ADP + Pᵢ. L'ossalacetato è ridotto a malato e poi decarbossilato dall'enzima malico producendo piruvato e NADPH, che contribuisce (insieme alla via dei pentoso fosfati) al potere riducente richiesto. L'acetil-CoA carbossilasi (ACC) lavora in due semireazioni: la biotina carbossilasi forma carbossibiotina con ATP e HCO₃⁻, poi la carbossiltransferasi trasferisce il carbossile all'acetil-CoA. La regolazione dell'ACC è sia allosterica (attivata dal citrato, che ne favorisce la polimerizzazione, e inibita dal palmitoil-CoA) sia covalente: la AMPK (energia bassa) e la PKA la fosforilano inattivandola, l'insulina favorisce la defosforilazione. A lungo termine SREBP-1c e ChREBP inducono gli enzimi lipogenici.",
+"La sintasi degli acidi grassi dei mammiferi (FAS I) è un omodimero multifunzionale: ogni catena contiene sette attività e la proteina trasportatrice di acili (ACP), con un braccio fosfopanteteinico che porta gli intermedi tra i siti attivi. Il ciclo: caricamento dell'acetile sulla cisteina della β-chetoacil sintasi e del malonile sull'ACP; condensazione con decarbossilazione (la perdita di CO₂ rende la reazione favorevole); riduzione a D-3-idrossiacile (NADPH), disidratazione a trans-Δ²-enoile, riduzione ad acile saturo (NADPH). Dopo sette cicli la tioesterasi libera il palmitato. Bilancio: 8 acetil-CoA + 7 ATP + 14 NADPH + 14 H⁺ → palmitato + 8 CoA + 7 ADP + 7 Pᵢ + 14 NADP⁺ + 6 H₂O. A questo si aggiunge il costo del trasporto citrato (1 ATP per acetil-CoA nella liasi).",
+"L'allungamento oltre C16 avviene nel reticolo endoplasmatico con le elongasi, usando malonil-CoA e NADPH. Le desaturasi (Δ⁹, Δ⁶, Δ⁵) sono ossidasi a funzione mista che usano O₂, NADH, citocromo b₅ e citocromo b₅ reduttasi; la stearoil-CoA desaturasi (Δ⁹) converte lo stearato in oleato. L'assenza di desaturasi oltre Δ⁹ rende essenziali linoleato (18:2 ω-6) e α-linolenato (18:3 ω-3), da cui derivano arachidonato (precursore di prostaglandine, trombossani e leucotrieni), EPA e DHA. I trigliceridi si formano dal glicerolo-3-fosfato (dalla glicolisi tramite il diidrossiacetone fosfato, o dalla glicerolo chinasi nel fegato) con due acilazioni, l'acido fosfatidico, la defosforilazione a diacilglicerolo e una terza acilazione.",
+"La sintesi del colesterolo procede in quattro fasi. (1) Tre acetil-CoA → HMG-CoA (tiolasi e HMG-CoA sintasi citosolica) → mevalonato (HMG-CoA reduttasi del reticolo endoplasmatico, 2 NADPH, tappa irreversibile e limitante). (2) Il mevalonato è fosforilato tre volte e decarbossilato a isopentenil pirofosfato (IPP), in equilibrio con il dimetilallil pirofosfato. (3) Condensazioni testa-coda danno geranil pirofosfato (C10) e farnesil pirofosfato (C15); due farnesili si uniscono testa-testa nello squalene (C30, squalene sintasi, NADPH). (4) La squalene monoossigenasi forma lo squalene 2,3-epossido, che la ciclasi chiude in lanosterolo; circa 19 tappe successive, con perdita di tre carboni, portano al colesterolo (C27). Il farnesil pirofosfato serve anche a prenilare proteine (Ras), al dolicolo, all'ubichinone e all'eme A.",
+"La regolazione principale del colesterolo avviene tramite SREBP-2: quando il colesterolo del reticolo endoplasmatico è basso, la proteina SCAP accompagna SREBP all'apparato di Golgi, dove due proteasi liberano il dominio che entra nel nucleo e attiva i geni dell'HMG-CoA reduttasi e del recettore LDL; quando il colesterolo è alto, SCAP è trattenuta dalle proteine INSIG. Il colesterolo e i lanosteroli favoriscono inoltre l'ubiquitinazione e la degradazione della reduttasi tramite INSIG. La reduttasi è anche fosforilata e inattivata dall'AMPK; l'insulina e gli ormoni tiroidei ne aumentano l'espressione. Le statine, analoghi competitivi dell'HMG-CoA, abbassano il colesterolo intracellulare epatico e attivano così SREBP-2, che aumenta i recettori LDL e quindi la rimozione delle LDL dal plasma: l'effetto ipocolesterolemizzante dipende soprattutto da questo. Il colesterolo in eccesso viene esterificato dall'ACAT o convertito in acidi biliari (7α-idrossilasi, tappa limitante) per l'escrezione."
+],
+"metodo": [
+"Ricostruisci il ciclo della sintasi degli acidi grassi disegnando l'ACP che porta l'acile tra i siti, con le quattro reazioni e i cofattori.",
+"Fai il bilancio completo del palmitato, includendo il costo dell'ATP-citrato liasi e le fonti di NADPH (enzima malico e pentoso fosfati).",
+"Disegna una mappa della regolazione dell'ACC: citrato, palmitoil-CoA, AMPK, PKA, insulina, SREBP-1c e ChREBP.",
+"Scrivi la via del colesterolo con il conteggio dei carboni (C2 → C6 → C5 → C10 → C15 → C30 → C27).",
+"Spiega a voce il meccanismo SREBP-2/SCAP/INSIG e perché le statine aumentano i recettori LDL.",
+"Confronta HMG-CoA citosolico (colesterolo) e mitocondriale (corpi chetonici) in una tabella."
+],
+"ricorda": [
+"Il citrato è il passaporto dell'acetil-CoA e anche l'attivatore dell'ACC.",
+"Ogni giro: condensa, riduci, disidrata, riduci; 2 NADPH per giro.",
+"Isopreni a 5 carboni: 2 fanno 10, 3 fanno 15, 2 da 15 fanno lo squalene.",
+"Statina → meno colesterolo in cellula → SREBP-2 accende più recettori LDL."
+],
+"errori": [
+"Dimenticare il costo del trasporto dell'acetil-CoA nel bilancio energetico della lipogenesi.",
+"Pensare che il malonil-CoA ceda tre carboni: due entrano nella catena e uno si perde come CO₂.",
+"Confondere l'intermedio D-3-idrossiacile della sintesi con l'L-3-idrossiacile della β-ossidazione.",
+"Credere che le statine agiscano soprattutto riducendo il colesterolo assorbito con la dieta: agiscono sulla sintesi epatica e sull'aumento dei recettori LDL.",
+"Attribuire all'HMG-CoA sintasi il ruolo di tappa limitante del colesterolo: la tappa limitante è l'HMG-CoA reduttasi."
+],
+"domande": [
+{"domanda": "Scrivi il bilancio della sintesi del palmitato a partire da acetil-CoA.", "risposta": "8 acetil-CoA + 7 ATP + 14 NADPH + 14 H⁺ → palmitato + 8 CoA + 7 ADP + 7 Pᵢ + 14 NADP⁺ + 6 H₂O."},
+{"domanda": "Come viene regolata l'acetil-CoA carbossilasi?", "risposta": "Allostericamente (attivata dal citrato, inibita dal palmitoil-CoA), covalentemente (fosforilata e inattivata da AMPK e PKA, defosforilata con l'insulina) e a livello genico (SREBP-1c, ChREBP)."},
+{"domanda": "Perché la condensazione con il malonil-ACP è favorevole?", "risposta": "Perché è accoppiata alla decarbossilazione del malonile: la perdita di CO₂ fornisce la spinta termodinamica."},
+{"domanda": "Che cosa fa SREBP-2?", "risposta": "Quando il colesterolo cellulare è basso viene attivato per proteolisi nel Golgi, entra nel nucleo e induce i geni dell'HMG-CoA reduttasi e del recettore LDL."},
+{"domanda": "Quali molecole derivano dal farnesil pirofosfato oltre al colesterolo?", "risposta": "Dolicolo, ubichinone, eme A e i gruppi farnesile e geranilgeranile usati per prenilare proteine come Ras."}
+]
+}
+}
+}

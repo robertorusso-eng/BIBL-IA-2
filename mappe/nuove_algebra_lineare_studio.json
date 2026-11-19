@@ -1,0 +1,716 @@
+{
+ "Vettori": {
+  "superiore": {
+   "spiegazione": [
+    "Un vettore è una freccia che ha un modulo (la lunghezza), una direzione (la retta su cui giace) e un verso (da che parte punta). Si usa per descrivere grandezze come spostamenti, velocità e forze, che non sono determinate da un solo numero. Nel piano un vettore si scrive con due componenti, v = (x, y), e nello spazio con tre, v = (x, y, z). Per esempio lo spostamento «3 passi a destra e 4 in alto» è il vettore (3, 4).",
+    "Il modulo di un vettore si calcola con il teorema di Pitagora: nel piano |v| = √(x² + y²), nello spazio |v| = √(x² + y² + z²). Il vettore (3, 4) ha modulo 5, il vettore (1, 2, 2) ha modulo 3. Dividendo un vettore per il suo modulo si ottiene il versore, che ha lunghezza 1 e conserva direzione e verso: il versore di (3, 4) è (3/5, 4/5). I versori degli assi si indicano con i, j, k.",
+    "La somma di due vettori si fa componente per componente: (1, 2) + (3, −1) = (4, 1). Graficamente si usa la regola del parallelogramma, oppure si mette la coda del secondo vettore sulla punta del primo. Moltiplicare un vettore per un numero k significa moltiplicare tutte le componenti per k: il vettore si allunga se |k| > 1, si accorcia se |k| < 1 e cambia verso se k è negativo. Per esempio −2·(1, 3) = (−2, −6).",
+    "Il prodotto scalare di due vettori è un numero: u·v = u₁v₁ + u₂v₂ + u₃v₃. Ha anche un significato geometrico, u·v = |u||v| cos θ, dove θ è l'angolo tra i vettori. Da qui si ricava l'angolo e si scopre una regola fondamentale: due vettori non nulli sono perpendicolari se e solo se il loro prodotto scalare è zero. Per esempio (2, 1)·(−1, 2) = −2 + 2 = 0, quindi questi due vettori formano un angolo retto.",
+    "Nello spazio esiste anche il prodotto vettoriale u × v, che dà un vettore perpendicolare sia a u sia a v, con verso dato dalla regola della mano destra. Il suo modulo è |u||v| sin θ ed è uguale all'area del parallelogramma costruito sui due vettori. Per i versori degli assi vale i × j = k, ma j × i = −k: l'ordine conta. Se i vettori sono paralleli il prodotto vettoriale è il vettore nullo. In fisica serve per esempio a calcolare il momento di una forza."
+   ],
+   "metodo": [
+    "Disegna sempre i vettori su un foglio a quadretti prima di fare i calcoli: aiuta a capire se il risultato ha senso.",
+    "Scrivi in una tabella le tre operazioni (somma, prodotto scalare, prodotto vettoriale) con che cosa danno come risultato: vettore, numero, vettore.",
+    "Fai 10 esercizi sul modulo e sul versore controllando ogni volta che il versore abbia davvero lunghezza 1.",
+    "Per verificare un prodotto vettoriale controlla che il risultato sia perpendicolare ai due vettori (prodotto scalare nullo).",
+    "Collega i vettori alla fisica: spostamenti, velocità e forze sono tutti vettori e si sommano con la stessa regola."
+   ],
+   "ricorda": [
+    "«Scalare dà uno scalare, vettoriale dà un vettore».",
+    "Prodotto scalare zero = perpendicolari; prodotto vettoriale nullo = paralleli.",
+    "Mano destra: indice su u, medio su v, il pollice indica u × v."
+   ],
+   "errori": [
+    "Calcolare il modulo sommando le componenti invece di usare Pitagora: |(3, 4)| è 5, non 7.",
+    "Scrivere il prodotto scalare come vettore delle componenti moltiplicate, dimenticando di sommarle.",
+    "Scambiare l'ordine nel prodotto vettoriale: u × v e v × u sono opposti.",
+    "Dimenticare i segni quando una componente è negativa."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale il modulo di (6, 8)?",
+     "risposta": "10, perché √(36 + 64) = √100."
+    },
+    {
+     "domanda": "Quanto vale (1, −2) + (4, 5)?",
+     "risposta": "(5, 3)."
+    },
+    {
+     "domanda": "I vettori (3, 1) e (−1, 3) sono perpendicolari?",
+     "risposta": "Sì: il prodotto scalare è −3 + 3 = 0."
+    },
+    {
+     "domanda": "Qual è il versore di (0, 0, 7)?",
+     "risposta": "(0, 0, 1), cioè il versore k."
+    },
+    {
+     "domanda": "Quanto vale j × i?",
+     "risposta": "−k, cioè (0, 0, −1)."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Un vettore di Rⁿ è una n-upla ordinata di numeri reali, con somma e prodotto per scalari definiti componente per componente. Queste operazioni rendono Rⁿ uno spazio vettoriale: la somma è commutativa e associativa, esiste il vettore nullo, ogni vettore ha l'opposto e valgono le proprietà distributive. Geometricamente in R² e R³ un vettore si identifica con una classe di segmenti orientati equipollenti, cioè con stessa lunghezza, direzione e verso. Il vettore applicato in un punto P descrive uno spostamento a partire da P.",
+    "Il prodotto scalare standard u·v = Σ uᵢvᵢ è bilineare, simmetrico e definito positivo (v·v > 0 per v ≠ 0). Induce la norma |v| = √(v·v) e l'angolo tramite cos θ = u·v / (|u||v|). La disuguaglianza di Cauchy–Schwarz |u·v| ≤ |u||v| garantisce che questo coseno stia tra −1 e 1, con uguaglianza solo per vettori paralleli. Da essa segue la disuguaglianza triangolare |u + v| ≤ |u| + |v|. Per esempio per (1, 1, 0) e (1, 0, 1) si ha cos θ = 1/2, cioè θ = 60°.",
+    "La proiezione ortogonale di u sulla direzione di v è proj_v(u) = (u·v / v·v)·v, e il vettore u − proj_v(u) è perpendicolare a v. Questa scomposizione è alla base del procedimento di Gram–Schmidt e del metodo dei minimi quadrati. Per esempio la proiezione di (2, 3) su (1, 1) è (5/2, 5/2), e la parte ortogonale è (−1/2, 1/2). In fisica la componente di una forza lungo uno spostamento dà il lavoro, W = F·s.",
+    "In R³ il prodotto vettoriale u × v = (u₂v₃ − u₃v₂, u₃v₁ − u₁v₃, u₁v₂ − u₂v₁) si ricorda come determinante simbolico con i, j, k nella prima riga. È bilineare e anticommutativo, si annulla esattamente quando i vettori sono paralleli e il suo modulo |u||v| sin θ è l'area del parallelogramma. Non è associativo: (i × i) × j = 0, mentre i × (i × j) = −j. Vale invece l'identità del doppio prodotto u × (v × w) = (u·w)v − (u·v)w.",
+    "Il prodotto misto u·(v × w) coincide con il determinante della matrice che ha u, v, w come righe. Il suo valore assoluto è il volume del parallelepipedo costruito sui tre vettori, e il segno indica l'orientazione della terna (destrorsa se positivo). Il prodotto misto è nullo se e solo se i tre vettori sono complanari, cioè linearmente dipendenti. Per esempio (1, 0, 1), (0, 1, 1) e (1, 1, k) sono complanari solo per k = 2. Il volume del tetraedro corrispondente è un sesto di quello del parallelepipedo."
+   ],
+   "metodo": [
+    "Dimostra da solo la disuguaglianza di Cauchy–Schwarz studiando il segno del polinomio |u + tv|² in t.",
+    "Verifica ogni prodotto vettoriale con due prodotti scalari di controllo (devono essere nulli).",
+    "Prepara una scheda con le formule di area (|u × v|), volume (|u·(v × w)|) e proiezione, con un esempio numerico ciascuna.",
+    "Collega il prodotto misto al determinante 3×3 e alla dipendenza lineare: è il ponte con i capitoli successivi.",
+    "Risolvi problemi di fisica (lavoro, momento torcente, flusso) traducendoli in prodotti scalari e vettoriali."
+   ],
+   "ricorda": [
+    "Proiezione: dividi per |v|², non per |v|.",
+    "Prodotto misto = determinante = volume con segno.",
+    "Doppio prodotto: «BAC − CAB», cioè a × (b × c) = b(a·c) − c(a·b).",
+    "Cauchy–Schwarz è un'uguaglianza solo per vettori paralleli."
+   ],
+   "errori": [
+    "Applicare la proprietà associativa al prodotto vettoriale.",
+    "Dividere per il modulo invece che per il quadrato del modulo nella proiezione ortogonale.",
+    "Confondere il volume del parallelepipedo con quello del tetraedro (fattore 1/6).",
+    "Usare il prodotto vettoriale in R² o in Rⁿ con n ≠ 3, dove non è definito nello stesso modo.",
+    "Dimenticare il valore assoluto quando si calcolano aree e volumi."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale l'angolo tra (1, 0, 1) e (0, 1, 1)?",
+     "risposta": "60°, perché cos θ = 1/(√2·√2) = 1/2."
+    },
+    {
+     "domanda": "Qual è l'area del triangolo di vertici O, (1, 2, 0) e (3, 1, 0)?",
+     "risposta": "5/2, metà del modulo di (0, 0, −5)."
+    },
+    {
+     "domanda": "Quando vale l'uguaglianza in Cauchy–Schwarz?",
+     "risposta": "Quando i due vettori sono paralleli (linearmente dipendenti)."
+    },
+    {
+     "domanda": "Che cosa significa geometricamente u·(v × w) = 0?",
+     "risposta": "Che i tre vettori sono complanari e il parallelepipedo ha volume nullo."
+    },
+    {
+     "domanda": "Calcola la proiezione di (2, 3) su (1, 1).",
+     "risposta": "(5/2, 5/2)."
+    }
+   ]
+  }
+ },
+ "Matrici e determinanti": {
+  "superiore": {
+   "spiegazione": [
+    "Una matrice è una tabella di numeri disposti in righe e colonne; una matrice con m righe e n colonne si dice m × n. Se il numero di righe è uguale a quello delle colonne la matrice è quadrata. Per esempio [[1, 2], [3, 4]] è una matrice quadrata 2×2, mentre [[1, 2, 3], [4, 5, 6]] è 2×3. Le matrici servono a organizzare dati e soprattutto a scrivere in modo compatto i sistemi lineari e le trasformazioni geometriche.",
+    "Due matrici delle stesse dimensioni si sommano elemento per elemento, e moltiplicare una matrice per un numero significa moltiplicare ogni elemento. La trasposta Aᵀ si ottiene scambiando righe e colonne: la trasposta di [[1, 2, 3], [4, 5, 6]] è [[1, 4], [2, 5], [3, 6]]. La matrice identità I ha 1 sulla diagonale e 0 altrove, e si comporta come il numero 1 nella moltiplicazione. Per esempio [[1, 2], [3, 4]] + [[0, −1], [2, 5]] = [[1, 1], [5, 9]].",
+    "Il prodotto righe per colonne A·B si può fare solo se le colonne di A sono tante quante le righe di B. Ogni elemento del risultato è il prodotto scalare tra una riga di A e una colonna di B. Per esempio [[1, 2], [0, 1]]·[[3, 0], [1, 2]] = [[5, 4], [1, 2]]. Attenzione: in generale A·B ≠ B·A, e nell'esempio B·A = [[3, 6], [1, 4]].",
+    "A ogni matrice quadrata si associa un numero, il determinante. Per una matrice 2×2 vale det [[a, b], [c, d]] = ad − bc: per esempio det [[3, 1], [2, 4]] = 12 − 2 = 10. Per una 3×3 si usa la regola di Sarrus oppure lo sviluppo di Laplace lungo una riga, che riduce il calcolo a tre determinanti 2×2. Il determinante è zero quando due righe sono uguali o proporzionali, o quando c'è una riga di zeri.",
+    "Se il determinante è diverso da zero la matrice ha un'inversa A⁻¹, tale che A·A⁻¹ = I. Per una 2×2 l'inversa si ottiene scambiando gli elementi della diagonale principale, cambiando segno agli altri due e dividendo per il determinante. Per esempio l'inversa di [[2, 1], [5, 3]], che ha determinante 1, è [[3, −1], [−5, 2]]. Se il determinante è zero l'inversa non esiste, così come non esiste il reciproco di 0."
+   ],
+   "metodo": [
+    "Prima di ogni prodotto scrivi le dimensioni delle matrici, per esempio (2×3)(3×4), e controlla che i numeri interni coincidano.",
+    "Calcola il prodotto «a mano» indicando con il dito la riga di A e la colonna di B.",
+    "Esercitati con 10 determinanti 2×2 e 5 determinanti 3×3, scegliendo per Laplace la riga con più zeri.",
+    "Verifica sempre l'inversa moltiplicandola per la matrice di partenza: devi ottenere I.",
+    "Prova con un esempio concreto che AB ≠ BA, così non lo dimentichi più."
+   ],
+   "ricorda": [
+    "Determinante 2×2: «diagonale principale meno diagonale secondaria».",
+    "Righe uguali o proporzionali → determinante zero → niente inversa.",
+    "Le dimensioni del prodotto: (m × n)(n × p) = m × p."
+   ],
+   "errori": [
+    "Moltiplicare le matrici elemento per elemento invece che righe per colonne.",
+    "Dare per scontato che AB = BA.",
+    "Invertire una matrice invertendo i singoli elementi.",
+    "Dimenticare i segni alternati nello sviluppo di Laplace."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale det [[2, 5], [1, 3]]?",
+     "risposta": "1, perché 6 − 5 = 1."
+    },
+    {
+     "domanda": "Si può moltiplicare una matrice 2×3 per una 2×3?",
+     "risposta": "No: le colonne della prima (3) non coincidono con le righe della seconda (2)."
+    },
+    {
+     "domanda": "Qual è la trasposta di [[1, 2], [3, 4]]?",
+     "risposta": "[[1, 3], [2, 4]]."
+    },
+    {
+     "domanda": "La matrice [[2, 4], [1, 2]] è invertibile?",
+     "risposta": "No, il determinante è 4 − 4 = 0."
+    },
+    {
+     "domanda": "Quanto vale I·A?",
+     "risposta": "A: l'identità non cambia la matrice."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Le matrici m × n a coefficienti reali formano uno spazio vettoriale di dimensione m·n, e ciascuna rappresenta un'applicazione lineare da Rⁿ a Rᵐ. Il prodotto righe per colonne corrisponde alla composizione di applicazioni: per questo è associativo e distributivo ma non commutativo. Esistono divisori dello zero, come N = [[0, 1], [0, 0]] con N² = 0, e quindi non vale la legge di annullamento del prodotto. Per la trasposta vale (AB)ᵀ = BᵀAᵀ, con l'ordine invertito.",
+    "Il determinante è l'unica funzione delle righe di una matrice quadrata che sia multilineare, alternante e valga 1 sull'identità. Da queste proprietà seguono le regole operative: scambiare due righe cambia il segno, moltiplicare una riga per k moltiplica il determinante per k, sommare a una riga un multiplo di un'altra non lo cambia. Di conseguenza det(kA) = kⁿ det A per una matrice n×n, e una matrice con righe dipendenti ha determinante nullo. Il metodo più efficiente per matrici grandi è ridurre a scala e moltiplicare i pivot, tenendo conto degli scambi.",
+    "Lo sviluppo di Laplace esprime il determinante come Σ (−1)^(i+j) aᵢⱼ Mᵢⱼ lungo una riga o colonna, dove Mᵢⱼ è il minore complementare. Conviene sceglierla con molti zeri: per esempio det [[2, 0, 1], [1, 3, 2], [0, 1, 4]] = 2·10 + 1·1 = 21. Per una matrice triangolare il determinante è il prodotto della diagonale. Vale inoltre det Aᵀ = det A, quindi tutto ciò che vale per le righe vale anche per le colonne.",
+    "Il teorema di Binet afferma che det(AB) = det A · det B. Ne seguono det(A⁻¹) = 1/det A, il fatto che det(AB) = det(BA) anche quando AB ≠ BA, e che una matrice ortogonale (QᵀQ = I) ha determinante ±1. Geometricamente |det A| è il fattore con cui l'applicazione moltiplica aree o volumi, e il segno indica se l'orientazione si conserva. Una matrice è invertibile se e solo se det A ≠ 0; l'inversa si calcola con la formula A⁻¹ = adj(A)/det A oppure con Gauss–Jordan su [A | I].",
+    "Il rango di una matrice è il numero massimo di righe linearmente indipendenti, che coincide con il numero massimo di colonne indipendenti. Si calcola contando i pivot dopo la riduzione a scala, oppure con il teorema di Kronecker come ordine massimo di un minore non nullo. Per esempio [[1, 2, 3], [2, 4, 6], [1, 0, 1]] ha rango 2, perché la seconda riga è il doppio della prima ma il minore [[1, 2], [1, 0]] è non nullo. Per una matrice quadrata n×n il rango è n se e solo se il determinante è diverso da zero."
+   ],
+   "metodo": [
+    "Impara le tre regole delle operazioni elementari sul determinante e applicale per calcolare determinanti 4×4 riducendo a scala.",
+    "Dimostra con Binet che det(A⁻¹) = 1/det A e che det Q = ±1 per una matrice ortogonale.",
+    "Per il rango usa la riduzione a scala come metodo standard e i minori come controllo.",
+    "Costruisci un controesempio per ogni proprietà falsa: AB ≠ BA, AB = 0 con A e B non nulle, det(A + B) ≠ det A + det B.",
+    "Collega il determinante al volume: disegna l'immagine del quadrato unitario tramite una matrice 2×2."
+   ],
+   "ricorda": [
+    "det(kA) = kⁿ det A: il fattore k va elevato alla dimensione.",
+    "Binet vale per il prodotto, non per la somma.",
+    "(AB)ᵀ = BᵀAᵀ e (AB)⁻¹ = B⁻¹A⁻¹: l'ordine si inverte.",
+    "Rango massimo ⇔ det ≠ 0 ⇔ invertibile (per matrici quadrate)."
+   ],
+   "errori": [
+    "Scrivere det(2A) = 2 det A per matrici n×n con n > 1.",
+    "Dimenticare il cambio di segno quando si scambiano righe durante la riduzione a scala.",
+    "Concludere che A = 0 da A² = 0.",
+    "Calcolare il rango contando le righe non nulle prima di aver ridotto a scala.",
+    "Pensare che ortogonale significhi determinante 1: le riflessioni hanno determinante −1."
+   ],
+   "domande": [
+    {
+     "domanda": "Se A è 4×4 con det A = 2, quanto vale det(3A)?",
+     "risposta": "3⁴·2 = 162."
+    },
+    {
+     "domanda": "Quanto vale det(A⁻¹Aᵀ)?",
+     "risposta": "1, perché det(A⁻¹)·det(Aᵀ) = (1/det A)·det A."
+    },
+    {
+     "domanda": "Dai un esempio di matrici non nulle con AB = 0.",
+     "risposta": "A = B = [[0, 1], [0, 0]]."
+    },
+    {
+     "domanda": "Qual è il rango di [[1, 1], [2, 2], [3, 3]]?",
+     "risposta": "1: tutte le righe sono multiple di (1, 1)."
+    },
+    {
+     "domanda": "Che significato ha |det A| per una matrice 2×2?",
+     "risposta": "È il fattore con cui l'applicazione lineare moltiplica le aree."
+    }
+   ]
+  }
+ },
+ "Sistemi lineari": {
+  "superiore": {
+   "spiegazione": [
+    "Un sistema lineare è un insieme di equazioni di primo grado che devono essere vere contemporaneamente. La soluzione è un insieme di valori delle incognite che soddisfa tutte le equazioni: per esempio x + y = 5 e x − y = 1 hanno come soluzione la coppia (3, 2). Un sistema può essere determinato (una sola soluzione), indeterminato (infinite soluzioni) o impossibile (nessuna soluzione). Non può mai avere esattamente due soluzioni.",
+    "Per i sistemi di due equazioni in due incognite si usano i metodi di sostituzione, confronto e riduzione. Con la sostituzione si ricava un'incognita da un'equazione e la si mette nell'altra; con la riduzione si sommano o sottraggono le equazioni, opportunamente moltiplicate, per eliminare un'incognita. Per esempio da x + 2y = 4 e 3x + 5y = 11, sottraendo tre volte la prima dalla seconda, si ottiene −y = −1. Alla fine conviene sempre controllare la soluzione in tutte le equazioni.",
+    "Ogni equazione lineare in x e y rappresenta una retta nel piano, quindi risolvere il sistema significa trovare i punti comuni a due rette. Se le rette sono incidenti c'è un solo punto comune; se sono parallele e distinte, nessuno; se coincidono, infiniti. Per esempio x + 2y = 3 e 2x + 4y = 7 sono parallele: moltiplicando la prima per 2 si ottiene 2x + 4y = 6, che contraddice la seconda. Disegnare le rette aiuta a capire il risultato.",
+    "La regola di Cramer risolve i sistemi quadrati con determinante non nullo. Si calcola il determinante D dei coefficienti; poi, per trovare x, si sostituisce la colonna dei coefficienti di x con i termini noti e si calcola Dₓ: si ha x = Dₓ/D, e allo stesso modo per le altre incognite. Per 3x + y = 7 e x + 2y = 4 si ha D = 5 e Dₓ = 10, quindi x = 2. Se D = 0 la regola non si può usare e il sistema è indeterminato o impossibile.",
+    "Per sistemi con tre o più incognite il metodo più efficiente è l'eliminazione di Gauss. Si scrive il sistema in forma di tabella (matrice completa) e si combinano le righe fino ad avere una forma «a scala», in cui ogni equazione ha un'incognita in meno della precedente. Poi si risolve dal basso verso l'alto. Per esempio da x + y + z = 6, y + z = 5, z = 3 si ricava z = 3, y = 2, x = 1."
+   ],
+   "metodo": [
+    "Prima di risolvere, guarda se un'equazione è multipla di un'altra: capisci subito se il sistema è indeterminato o impossibile.",
+    "Scegli il metodo in base ai numeri: sostituzione se un'incognita ha coefficiente 1, riduzione se i coefficienti si eliminano facilmente.",
+    "Controlla sempre la soluzione sostituendola in tutte le equazioni.",
+    "Per i sistemi 2×2 disegna le due rette con GeoGebra o su carta e verifica il punto di incontro.",
+    "Allenati con Gauss su 5 sistemi 3×3, scrivendo ogni passaggio come operazione tra righe (R₂ − 3R₁)."
+   ],
+   "ricorda": [
+    "Una, nessuna o infinite: un sistema lineare non ha mai «due» soluzioni.",
+    "Cramer: x = Dₓ/D, funziona solo se D ≠ 0.",
+    "Rette parallele = impossibile, rette coincidenti = indeterminato."
+   ],
+   "errori": [
+    "Dimenticare di moltiplicare tutti i termini, compreso il termine noto, quando si moltiplica un'equazione.",
+    "Scrivere la soluzione con le incognite nell'ordine sbagliato.",
+    "Trovare una soluzione di un sistema indeterminato e pensare che sia l'unica.",
+    "Usare Cramer quando il determinante è zero."
+   ],
+   "domande": [
+    {
+     "domanda": "Risolvi x + y = 10, x − y = 4.",
+     "risposta": "x = 7, y = 3."
+    },
+    {
+     "domanda": "Il sistema x + y = 2, 2x + 2y = 5 ha soluzioni?",
+     "risposta": "No: è impossibile, le rette sono parallele e distinte."
+    },
+    {
+     "domanda": "Quante soluzioni ha x − y = 1, 3x − 3y = 3?",
+     "risposta": "Infinite: la seconda equazione è il triplo della prima."
+    },
+    {
+     "domanda": "Con Cramer, quanto vale y in 3x + y = 7, x + 2y = 4?",
+     "risposta": "y = D_y/D = (12 − 7)/5 = 1."
+    },
+    {
+     "domanda": "Che cos'è la forma a scala?",
+     "risposta": "Una forma in cui ogni equazione ha meno incognite della precedente, così si risolve dal basso."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Un sistema lineare di m equazioni in n incognite si scrive AX = b, con A matrice m × n dei coefficienti, X vettore delle incognite e b vettore dei termini noti; la matrice completa è [A | b]. Il teorema di Rouché–Capelli dice che il sistema è compatibile se e solo se rango A = rango [A | b]. In tal caso, detto r il rango comune, le soluzioni dipendono da n − r parametri liberi: sono ∞^(n − r). La soluzione è unica esattamente quando r = n.",
+    "L'eliminazione di Gauss usa tre operazioni elementari sulle righe (scambio, moltiplicazione per una costante non nulla, somma di un multiplo di un'altra riga), che non cambiano l'insieme delle soluzioni. Si ottiene una matrice a scala in cui il numero di pivot è il rango. Le colonne senza pivot corrispondono alle variabili libere, che diventano i parametri della soluzione. Se compare una riga del tipo (0 … 0 | c) con c ≠ 0, il sistema è impossibile. Con Gauss–Jordan si arriva alla forma ridotta, da cui la soluzione si legge direttamente.",
+    "Un sistema omogeneo AX = 0 è sempre compatibile, perché ammette la soluzione nulla. Le sue soluzioni formano un sottospazio, il nucleo di A, di dimensione n − rango A. In particolare un sistema omogeneo con più incognite che equazioni ha sempre soluzioni non nulle. Per una matrice quadrata, la soluzione nulla è l'unica se e solo se det A ≠ 0.",
+    "La soluzione generale di AX = b, quando esiste, è x₀ + ker A, dove x₀ è una qualunque soluzione particolare. Infatti la differenza di due soluzioni risolve l'omogeneo associato. Geometricamente l'insieme delle soluzioni è un sottospazio affine: per esempio una retta o un piano che non passano necessariamente per l'origine. Questa struttura «particolare + omogenea» ritorna identica nelle equazioni differenziali lineari.",
+    "Nei sistemi con parametro si cercano prima i valori che fanno cadere il rango, di solito annullando il determinante dei coefficienti, e poi si studiano a parte quei casi. Per esempio per x + y + z = 1, x + 2y + 3z = 2, 2x + 3y + kz = 3 il determinante è k − 4: per k ≠ 4 c'è una sola soluzione. Per k = 4 la terza equazione è la somma delle prime due anche nei termini noti, quindi i ranghi valgono 2 e le soluzioni sono ∞¹. Se invece il termine noto della terza equazione fosse stato diverso da 3, per k = 4 il sistema sarebbe stato impossibile."
+   ],
+   "metodo": [
+    "Usa sempre lo stesso schema: matrice completa, riduzione a scala, confronto dei ranghi, conteggio dei parametri, soluzione.",
+    "Nei sistemi parametrici fai una tabella con i casi (valori critici e valori generici) e la conclusione per ciascuno.",
+    "Scrivi la soluzione nella forma vettoriale x₀ + t·v₁ + s·v₂: evidenzia la soluzione particolare e la base del nucleo.",
+    "Interpreta geometricamente i sistemi in 3 incognite come intersezioni di piani.",
+    "Controlla le soluzioni sostituendole nella matrice: Ax₀ deve dare b e Av deve dare 0 per ogni vettore del nucleo."
+   ],
+   "ricorda": [
+    "Rouché–Capelli: ranghi uguali → compatibile; soluzioni ∞^(n − r).",
+    "Parametri liberi = incognite − rango = colonne senza pivot.",
+    "Soluzione generale = particolare + nucleo.",
+    "Omogeneo: mai impossibile."
+   ],
+   "errori": [
+    "Concludere che det = 0 implichi sistema impossibile, senza controllare i ranghi.",
+    "Sottrarre il rango dal numero di equazioni invece che dal numero di incognite.",
+    "Pensare che con più equazioni che incognite il sistema sia sempre impossibile.",
+    "Sommare due soluzioni di AX = b e credere di ottenerne un'altra.",
+    "Dimenticare di applicare le operazioni anche alla colonna dei termini noti."
+   ],
+   "domande": [
+    {
+     "domanda": "Un sistema 3×4 ha rango dei coefficienti 3. È sempre compatibile?",
+     "risposta": "Sì: la matrice completa è 3×5 e non può avere rango maggiore di 3."
+    },
+    {
+     "domanda": "Quante soluzioni ha un sistema compatibile in 5 incognite con rango 2?",
+     "risposta": "∞³."
+    },
+    {
+     "domanda": "Che cosa indica una riga (0 0 0 | 4) dopo la riduzione?",
+     "risposta": "Che il sistema è impossibile (0 = 4)."
+    },
+    {
+     "domanda": "L'insieme delle soluzioni di AX = b con b ≠ 0 è un sottospazio?",
+     "risposta": "No: non contiene il vettore nullo; è un sottospazio traslato."
+    },
+    {
+     "domanda": "Per quali k il sistema kx + y = 1, x + ky = 1 ha soluzione unica?",
+     "risposta": "Per k ≠ 1 e k ≠ −1."
+    }
+   ]
+  }
+ },
+ "Spazi vettoriali e basi": {
+  "superiore": {
+   "spiegazione": [
+    "Uno spazio vettoriale è un insieme di oggetti che si possono sommare tra loro e moltiplicare per numeri, rispettando le regole che conosciamo per i vettori. Gli esempi più familiari sono R² (i vettori del piano) e R³ (i vettori dello spazio). Ma anche i polinomi e le matrici si sommano e si moltiplicano per numeri, quindi sono spazi vettoriali. Questa idea permette di usare gli stessi strumenti in situazioni molto diverse.",
+    "Una combinazione lineare di vettori è una somma di loro multipli, come 3·(1, 1) + 2·(1, 2) = (5, 7). Dei vettori sono linearmente indipendenti se nessuno di essi si può ottenere come combinazione degli altri. Due vettori sono dipendenti quando uno è multiplo dell'altro: (1, 2, 3) e (2, 4, 6) sono dipendenti. Nel piano due vettori sono indipendenti se e solo se il determinante della matrice che li contiene è diverso da zero.",
+    "Un insieme di vettori genera uno spazio se ogni vettore dello spazio è una loro combinazione lineare. Una base è un insieme di vettori indipendenti che genera tutto lo spazio. La base canonica di R² è formata da (1, 0) e (0, 1), ma anche (1, 1) e (1, −1) sono una base. Rispetto a una base, i coefficienti che servono per scrivere un vettore si chiamano coordinate: il vettore (3, 1) ha coordinate (2, 1) rispetto alla base {(1, 1), (1, −1)}.",
+    "Tutte le basi di uno stesso spazio hanno lo stesso numero di vettori: questo numero è la dimensione. R² ha dimensione 2, R³ ha dimensione 3. I polinomi di grado al massimo 2 hanno dimensione 3, con base {1, x, x²}. In uno spazio di dimensione 3 non ci possono essere più di 3 vettori indipendenti, quindi 4 vettori di R³ sono sempre dipendenti.",
+    "Un sottospazio è una parte di uno spazio vettoriale che è a sua volta uno spazio vettoriale: contiene il vettore nullo e resta «chiusa» rispetto a somme e multipli. Nel piano i sottospazi sono l'origine, le rette per l'origine e tutto il piano. La retta y = 2x è un sottospazio, mentre y = 2x + 1 no, perché non passa per l'origine. Nello spazio, un piano per l'origine come x + y + z = 0 è un sottospazio di dimensione 2."
+   ],
+   "metodo": [
+    "Per verificare se dei vettori sono una base di R² o R³, metti i vettori in una matrice e calcola il determinante.",
+    "Per trovare le coordinate rispetto a una base, imposta un sistema lineare con incognite i coefficienti.",
+    "Controlla un sottospazio con il test rapido: contiene lo zero? È chiuso rispetto a somma e multipli?",
+    "Elenca esempi di spazi vettoriali diversi da Rⁿ (polinomi, matrici) e scrivi per ciascuno una base.",
+    "Disegna i sottospazi di R² e R³: punti, rette e piani per l'origine."
+   ],
+   "ricorda": [
+    "Base = indipendenti + generatori.",
+    "Dimensione = numero di vettori di una base qualsiasi.",
+    "Niente zero, niente sottospazio."
+   ],
+   "errori": [
+    "Pensare che due vettori diversi siano sempre indipendenti.",
+    "Confondere le coordinate rispetto alla base canonica con quelle rispetto a un'altra base.",
+    "Considerare sottospazio una retta che non passa per l'origine.",
+    "Dimenticare il termine costante contando la dimensione dei polinomi."
+   ],
+   "domande": [
+    {
+     "domanda": "(1, 3) e (2, 6) sono una base di R²?",
+     "risposta": "No: (2, 6) è il doppio di (1, 3)."
+    },
+    {
+     "domanda": "Qual è la dimensione di R⁴?",
+     "risposta": "4."
+    },
+    {
+     "domanda": "Scrivi (4, 6) come combinazione di (1, 0) e (0, 1).",
+     "risposta": "4·(1, 0) + 6·(0, 1)."
+    },
+    {
+     "domanda": "L'insieme {(x, y): x = 0} è un sottospazio di R²?",
+     "risposta": "Sì, è l'asse y, una retta per l'origine."
+    },
+    {
+     "domanda": "Quanti vettori servono per una base dei polinomi di grado al massimo 3?",
+     "risposta": "4: 1, x, x², x³."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Uno spazio vettoriale reale è un insieme V con una somma e un prodotto per scalari che soddisfano otto assiomi: associatività e commutatività della somma, esistenza dello zero e dell'opposto, compatibilità e distributività del prodotto per scalari e 1·v = v. Esempi fondamentali sono Rⁿ, lo spazio R[x]≤n dei polinomi di grado al massimo n, lo spazio delle matrici M(m × n) e gli spazi di funzioni continue. Un sottoinsieme non vuoto chiuso rispetto alle operazioni è un sottospazio; nuclei e immagini di applicazioni lineari e soluzioni di sistemi omogenei sono sottospazi. Al contrario, l'insieme delle soluzioni di un sistema non omogeneo non lo è, perché non contiene lo zero.",
+    "Dei vettori v₁, …, vₖ sono linearmente indipendenti se a₁v₁ + … + aₖvₖ = 0 implica a₁ = … = aₖ = 0. Lo span è l'insieme di tutte le loro combinazioni lineari, il più piccolo sottospazio che li contiene. In pratica, per vettori di Rⁿ, la dimensione dello span è il rango della matrice che li ha come righe o colonne. Per esempio (1, 0, 1), (0, 1, 1) e (1, 1, 2) generano un piano, perché il terzo è la somma dei primi due.",
+    "Una base è un insieme di vettori indipendenti che genera V; ogni vettore si scrive allora in modo unico come combinazione della base, e i coefficienti sono le sue coordinate. Il teorema di scambio di Steinitz garantisce che tutte le basi hanno lo stesso numero di elementi, la dimensione. Ogni insieme indipendente si può completare a una base e da ogni insieme di generatori se ne può estrarre una. In dimensione n, n vettori indipendenti (oppure n generatori) formano già una base. Per esempio dim M(2 × 3) = 6 e lo spazio delle matrici simmetriche 3×3 ha dimensione 6.",
+    "Dati due sottospazi U e W, l'intersezione U ∩ W è sempre un sottospazio, mentre l'unione in generale non lo è. La somma U + W è il più piccolo sottospazio che li contiene, e la formula di Grassmann dice che dim(U + W) = dim U + dim W − dim(U ∩ W). Se U ∩ W = {0} la somma è diretta, U ⊕ W, e ogni vettore si scompone in modo unico. Per esempio due piani distinti per l'origine in R³ si intersecano in una retta: 2 + 2 − 1 = 3.",
+    "Se in V c'è un prodotto scalare, le basi più comode sono quelle ortonormali, in cui le coordinate si ottengono con semplici prodotti scalari: vᵢ = v·eᵢ. Il procedimento di Gram–Schmidt trasforma una base qualsiasi in una ortonormale, togliendo a ogni vettore le proiezioni sui precedenti e normalizzando. Ogni sottospazio U ha un complemento ortogonale U⊥, e V = U ⊕ U⊥. Quando si cambia base, le coordinate si trasformano con la matrice di cambio di base, le cui colonne sono i vettori della nuova base espressi nella vecchia."
+   ],
+   "metodo": [
+    "Per decidere indipendenza e dimensione usa sempre il rango della matrice dei vettori.",
+    "Per una base di un sottospazio definito da equazioni, risolvi il sistema omogeneo e scrivi la soluzione in forma parametrica.",
+    "Per U ∩ W metti a sistema le equazioni cartesiane; per U + W unisci i generatori e calcola il rango; poi verifica con Grassmann.",
+    "Esegui Gram–Schmidt su due o tre vettori controllando l'ortogonalità a ogni passo.",
+    "Tieni una tabella delle dimensioni notevoli: Rⁿ, R[x]≤n, M(m × n), matrici simmetriche e antisimmetriche."
+   ],
+   "ricorda": [
+    "Grassmann: dim(U + W) = dim U + dim W − dim(U ∩ W).",
+    "Intersezione sì, unione no.",
+    "Matrici simmetriche n×n: dimensione n(n + 1)/2.",
+    "In dimensione n bastano n vettori indipendenti per avere una base."
+   ],
+   "errori": [
+    "Usare la somma delle dimensioni senza sottrarre l'intersezione.",
+    "Considerare U ∪ W come sottospazio.",
+    "Dire che una somma è diretta solo perché U + W = V, senza controllare che U ∩ W = {0}.",
+    "Confondere il numero di vettori del sottospazio (infiniti) con la sua dimensione.",
+    "Dividere per la norma invece che per il quadrato della norma nelle proiezioni di Gram–Schmidt."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è una base del sottospazio x + y + z = 0 di R³?",
+     "risposta": "Per esempio (−1, 1, 0) e (−1, 0, 1)."
+    },
+    {
+     "domanda": "Due piani distinti per l'origine in R³: che dimensione ha l'intersezione?",
+     "risposta": "1, per Grassmann: 2 + 2 − 3."
+    },
+    {
+     "domanda": "Qual è la dimensione delle matrici antisimmetriche 3×3?",
+     "risposta": "3, cioè n(n − 1)/2."
+    },
+    {
+     "domanda": "Quali sono le coordinate di x² nella base {1, x − 1, (x − 1)²}?",
+     "risposta": "(1, 2, 1)."
+    },
+    {
+     "domanda": "Che cosa produce Gram–Schmidt?",
+     "risposta": "Una base ortonormale che genera gli stessi sottospazi della base di partenza."
+    }
+   ]
+  }
+ },
+ "Applicazioni lineari": {
+  "superiore": {
+   "spiegazione": [
+    "Un'applicazione lineare è una funzione che trasforma vettori in vettori rispettando somme e multipli: f(u + v) = f(u) + f(v) e f(k·v) = k·f(v). Di conseguenza manda sempre il vettore nullo nel vettore nullo. Per esempio f(x, y) = (2x, 3y) è lineare, mentre f(x, y) = (x + 1, y) non lo è, perché sposta l'origine. Anche tra le funzioni da R in R, solo quelle del tipo f(x) = mx sono lineari in questo senso.",
+    "Ogni applicazione lineare del piano si rappresenta con una matrice 2×2, e applicarla a un vettore significa moltiplicare la matrice per il vettore. Le colonne della matrice sono le immagini dei vettori della base: la prima colonna è f(1, 0), la seconda è f(0, 1). Per esempio, se f(1, 0) = (2, 1) e f(0, 1) = (−1, 3), la matrice è [[2, −1], [1, 3]]. Conoscere dove vanno i vettori della base basta per sapere dove va ogni vettore.",
+    "Molte trasformazioni geometriche sono applicazioni lineari. La rotazione di 90° in senso antiorario ha matrice [[0, −1], [1, 0]] e porta (1, 0) in (0, 1). La simmetria rispetto all'asse x ha matrice [[1, 0], [0, −1]], la dilatazione di fattore k ha matrice [[k, 0], [0, k]] e la proiezione sull'asse x ha matrice [[1, 0], [0, 0]]. Le traslazioni, invece, non sono lineari.",
+    "Il determinante della matrice dice di quanto cambiano le aree. La dilatazione [[2, 0], [0, 2]] ha determinante 4 e infatti quadruplica le aree; una rotazione ha determinante 1 e non le cambia. Se il determinante è negativo la figura viene anche ribaltata, come in uno specchio. Se è zero il piano viene schiacciato su una retta o su un punto e la trasformazione non si può invertire.",
+    "I vettori che l'applicazione manda nel vettore nullo formano il nucleo; i vettori che si ottengono come risultato formano l'immagine. Per la proiezione sull'asse x il nucleo è l'asse y e l'immagine è l'asse x. Applicare una trasformazione dopo l'altra si chiama composizione e corrisponde al prodotto delle matrici, nell'ordine giusto: g ∘ f ha matrice B·A se A è la matrice di f e B quella di g. Per questo l'ordine delle trasformazioni conta."
+   ],
+   "metodo": [
+    "Per trovare la matrice di una trasformazione, calcola dove vanno (1, 0) e (0, 1) e mettili come colonne.",
+    "Disegna l'immagine del quadrato unitario per ogni trasformazione che studi: capirai subito rotazioni, simmetrie e dilatazioni.",
+    "Controlla la linearità con il test f(0) = 0 e poi con le due proprietà.",
+    "Prova a comporre una rotazione e una simmetria nei due ordini e confronta i risultati.",
+    "Collega il determinante all'area: calcola l'area del parallelogramma immagine del quadrato unitario."
+   ],
+   "ricorda": [
+    "Colonne della matrice = immagini dei vettori della base.",
+    "Lineare ⇒ l'origine resta ferma.",
+    "|det| = fattore delle aree; det < 0 = ribaltamento."
+   ],
+   "errori": [
+    "Considerare lineari le traslazioni o le funzioni del tipo mx + q con q ≠ 0.",
+    "Scrivere le immagini dei vettori di base come righe invece che come colonne.",
+    "Comporre le trasformazioni nell'ordine sbagliato.",
+    "Confondere la simmetria rispetto all'asse x con quella rispetto all'asse y."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la matrice della rotazione di 180°?",
+     "risposta": "[[−1, 0], [0, −1]]."
+    },
+    {
+     "domanda": "f(x, y) = (x + y, 2) è lineare?",
+     "risposta": "No: f(0, 0) = (0, 2) ≠ (0, 0)."
+    },
+    {
+     "domanda": "Dove manda (2, 3) la simmetria rispetto all'asse y?",
+     "risposta": "In (−2, 3)."
+    },
+    {
+     "domanda": "Di quanto cambia l'area con la matrice [[3, 0], [0, 2]]?",
+     "risposta": "Viene moltiplicata per 6."
+    },
+    {
+     "domanda": "Qual è il nucleo della proiezione sull'asse x?",
+     "risposta": "L'asse y."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Un'applicazione lineare f: V → W tra spazi vettoriali soddisfa f(au + bv) = a f(u) + b f(v). È univocamente determinata dai valori assunti su una base di V, che si possono scegliere arbitrariamente. Fissate una base di V (dimensione n) e una di W (dimensione m), f è rappresentata da una matrice m × n la cui colonna j contiene le coordinate di f(vⱼ) nella base di arrivo. La composizione di applicazioni corrisponde al prodotto delle matrici associate.",
+    "Il nucleo ker f = {v : f(v) = 0} è un sottospazio di V, e f è iniettiva se e solo se ker f = {0}. L'immagine Im f è un sottospazio di W generato dalle immagini di una base, cioè dalle colonne della matrice: la sua dimensione è il rango. Il teorema della dimensione afferma che dim ker f + dim Im f = dim V. Per esempio una f: R⁵ → R³ suriettiva ha nucleo di dimensione 2, e nessuna f: R² → R³ può essere suriettiva.",
+    "Per un endomorfismo f: V → V in dimensione finita, il teorema della dimensione implica che iniettiva, suriettiva e biiettiva sono equivalenti, e questo accade se e solo se det A ≠ 0. Un'applicazione lineare biiettiva è un isomorfismo, e la sua inversa è ancora lineare. Due spazi vettoriali reali di dimensione finita sono isomorfi se e solo se hanno la stessa dimensione: M(2 × 2) è isomorfo a R⁴ e R[x]≤3 è isomorfo a R⁴. Scegliere una base equivale a scegliere un isomorfismo con Rⁿ.",
+    "Cambiando base, la matrice di un endomorfismo cambia secondo B = P⁻¹AP, dove P ha come colonne i vettori della nuova base. Matrici legate in questo modo si dicono simili e rappresentano la stessa applicazione: hanno lo stesso determinante, la stessa traccia, lo stesso rango e lo stesso polinomio caratteristico. Scegliere bene la base semplifica molto la matrice. Per esempio la simmetria rispetto alla retta y = x, che nella base canonica è [[0, 1], [1, 0]], nella base {(1, 1), (1, −1)} diventa [[1, 0], [0, −1]].",
+    "Alcune classi di endomorfismi sono particolarmente importanti. Le proiezioni soddisfano P² = P e scompongono lo spazio come Im P ⊕ ker P; la proiezione ortogonale di R³ sul piano z = 0 ha nucleo l'asse z. Le isometrie conservano le lunghezze e in una base ortonormale hanno matrice ortogonale; in R² sono rotazioni (det = 1) o riflessioni (det = −1). Anche la derivata è un'applicazione lineare sullo spazio dei polinomi, con nucleo formato dalle costanti. Lo studio delle direzioni lasciate invariate conduce ad autovalori e autovettori."
+   ],
+   "metodo": [
+    "Per la matrice associata rispetto a basi non canoniche: calcola f dei vettori della base di partenza, esprimili nella base di arrivo, mettili in colonna.",
+    "Per nucleo e immagine: riduci a scala la matrice, conta i pivot (rango = dim Im) e risolvi il sistema omogeneo (base del nucleo).",
+    "Controlla sempre il teorema della dimensione: dim ker + dim Im deve dare la dimensione di partenza.",
+    "Esercitati con i cambi di base verificando che B = P⁻¹AP abbia stessa traccia e stesso determinante di A.",
+    "Studia la matrice della derivata su R[x]≤3 come esempio di endomorfismo non invertibile."
+   ],
+   "ricorda": [
+    "dim ker + dim Im = dim dello spazio di partenza.",
+    "Endomorfismo: iniettivo ⇔ suriettivo ⇔ det ≠ 0.",
+    "Matrici simili: stesso det, traccia, rango, polinomio caratteristico.",
+    "Isomorfi ⇔ stessa dimensione."
+   ],
+   "errori": [
+    "Usare la dimensione dello spazio di arrivo nel teorema della dimensione.",
+    "Dimenticare di esprimere le immagini nella base di arrivo quando non è canonica.",
+    "Scrivere P⁻¹AP con P che ha i nuovi vettori in riga.",
+    "Pensare che una funzione suriettiva sia sempre iniettiva anche tra spazi di dimensioni diverse.",
+    "Confondere nucleo e immagine nelle proiezioni."
+   ],
+   "domande": [
+    {
+     "domanda": "f: R⁴ → R⁴ ha nucleo di dimensione 1. Qual è il rango?",
+     "risposta": "3."
+    },
+    {
+     "domanda": "Esiste un'applicazione lineare iniettiva da R³ a R²?",
+     "risposta": "No: il nucleo avrebbe dimensione almeno 1."
+    },
+    {
+     "domanda": "Qual è il nucleo della derivata su R[x]≤3?",
+     "risposta": "I polinomi costanti, di dimensione 1."
+    },
+    {
+     "domanda": "Se f(1, 0) = (2, 1) e f(0, 1) = (−1, 3), quanto vale f(3, 2)?",
+     "risposta": "(4, 9)."
+    },
+    {
+     "domanda": "Che proprietà caratterizza le proiezioni?",
+     "risposta": "P² = P."
+    }
+   ]
+  }
+ },
+ "Autovalori e autovettori": {
+  "superiore": {
+   "spiegazione": [
+    "Quando una matrice trasforma i vettori, quasi tutti cambiano direzione. Alcuni però restano sulla propria retta e vengono solo allungati, accorciati o ribaltati: sono gli autovettori. In formule, v è un autovettore se v ≠ 0 e Av = λv; il numero λ è il corrispondente autovalore. Per esempio con A = [[4, 1], [2, 3]] si ha A·(1, 1) = (5, 5) = 5·(1, 1), quindi (1, 1) è un autovettore con autovalore 5.",
+    "Per trovare gli autovalori si risolve l'equazione caratteristica det(A − λI) = 0, dove λI è la matrice con λ sulla diagonale. Per una matrice 2×2 l'equazione diventa λ² − (traccia)λ + det = 0, dove la traccia è la somma degli elementi diagonali. Per [[5, 2], [1, 4]] si ha traccia 9 e determinante 18, quindi λ² − 9λ + 18 = 0, con soluzioni 3 e 6. Per le matrici diagonali o triangolari gli autovalori sono semplicemente gli elementi della diagonale.",
+    "Trovato un autovalore λ, gli autovettori si ottengono risolvendo il sistema (A − λI)v = 0. Per A = [[2, 1], [1, 2]] e λ = 3, il sistema è −x + y = 0, quindi gli autovettori sono i multipli di (1, 1). Un autovettore non è unico: ogni suo multiplo non nullo è ancora un autovettore. Per questo si parla di «direzione» dell'autovettore.",
+    "Gli autovalori hanno un legame semplice con traccia e determinante: la loro somma è la traccia e il loro prodotto è il determinante. Se 0 è un autovalore, il determinante è zero e la matrice non è invertibile. Un autovalore negativo indica che quella direzione viene ribaltata. Non tutte le matrici hanno autovalori reali: la rotazione di 90° fa girare ogni vettore, e infatti la sua equazione caratteristica λ² + 1 = 0 non ha soluzioni reali.",
+    "Se una matrice n×n ha n autovettori indipendenti, si può scrivere come A = PDP⁻¹, con D diagonale contenente gli autovalori e P con gli autovettori in colonna: si dice diagonalizzabile. Questo rende facile calcolare le potenze, perché Aⁿ = PDⁿP⁻¹ e le potenze di una matrice diagonale si calcolano elevando gli elementi della diagonale. Gli autovalori compaiono in molti campi: le frequenze di vibrazione di una struttura, la crescita di una popolazione divisa in fasce d'età, l'ordinamento delle pagine nei motori di ricerca. Non tutte le matrici sono diagonalizzabili: [[1, 1], [0, 1]] ha un solo autovalore e una sola direzione di autovettori."
+   ],
+   "metodo": [
+    "Segui sempre lo stesso ordine: equazione caratteristica, autovalori, sistema (A − λI)v = 0 per ogni autovalore.",
+    "Controlla gli autovalori con traccia (somma) e determinante (prodotto).",
+    "Verifica ogni autovettore moltiplicandolo per la matrice.",
+    "Disegna l'effetto di una matrice su qualche vettore e individua a occhio le direzioni che non ruotano.",
+    "Esercitati su 8 matrici 2×2, comprese una triangolare, una simmetrica e una rotazione."
+   ],
+   "ricorda": [
+    "Av = λv: stessa direzione, lunghezza moltiplicata per λ.",
+    "Somma degli autovalori = traccia, prodotto = determinante.",
+    "Matrice triangolare: autovalori sulla diagonale."
+   ],
+   "errori": [
+    "Sottrarre λ a tutti gli elementi della matrice invece che solo sulla diagonale.",
+    "Accettare v = 0 come autovettore.",
+    "Leggere gli autovalori sulla diagonale di una matrice che non è triangolare.",
+    "Dimenticare che gli autovettori sono definiti a meno di un multiplo."
+   ],
+   "domande": [
+    {
+     "domanda": "Quali sono gli autovalori di [[7, 0], [0, −1]]?",
+     "risposta": "7 e −1."
+    },
+    {
+     "domanda": "Una matrice 2×2 ha traccia 7 e determinante 10. Quali sono gli autovalori?",
+     "risposta": "2 e 5, soluzioni di λ² − 7λ + 10 = 0."
+    },
+    {
+     "domanda": "(1, −1) è un autovettore di [[2, 1], [1, 2]]?",
+     "risposta": "Sì, con autovalore 1: A(1, −1) = (1, −1)."
+    },
+    {
+     "domanda": "Se una matrice ha autovalore 0, è invertibile?",
+     "risposta": "No: il determinante è zero."
+    },
+    {
+     "domanda": "Perché la rotazione di 90° non ha autovettori reali?",
+     "risposta": "Perché cambia la direzione di ogni vettore non nullo."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Dato un endomorfismo f di V con matrice A, un autovalore è un numero λ tale che esiste v ≠ 0 con Av = λv; l'autospazio V_λ = ker(A − λI) raccoglie tutti gli autovettori relativi a λ insieme al vettore nullo. Gli autovalori sono le radici del polinomio caratteristico p(λ) = det(A − λI), di grado n, che è invariante per similitudine: dipende dall'endomorfismo e non dalla base. I suoi coefficienti contengono la traccia (somma degli autovalori) e il determinante (prodotto degli autovalori). Su R gli autovalori possono non esistere, come per le rotazioni; su C esistono sempre.",
+    "Per ogni autovalore si distinguono la molteplicità algebrica ma(λ), cioè la molteplicità come radice di p, e la molteplicità geometrica mg(λ) = dim V_λ = n − rango(A − λI). Vale sempre 1 ≤ mg(λ) ≤ ma(λ). Per esempio [[3, 1, 0], [0, 3, 0], [0, 0, 3]] ha ma(3) = 3 ma mg(3) = 2. Autovettori relativi ad autovalori distinti sono sempre linearmente indipendenti.",
+    "Una matrice è diagonalizzabile se esiste una base di autovettori, cioè se A = PDP⁻¹ con D diagonale. Il criterio è: tutte le radici di p(λ) sono reali e per ciascun autovalore mg = ma. Una condizione sufficiente è avere n autovalori distinti. La matrice [[1, 1], [0, 1]] non è diagonalizzabile, perché l'autovalore 1 ha ma = 2 e mg = 1. La diagonalizzazione permette di calcolare Aᵏ = PDᵏP⁻¹: per A = [[2, 1], [1, 2]] si ottiene A³ = [[14, 13], [13, 14]].",
+    "Il teorema spettrale afferma che ogni matrice reale simmetrica ha autovalori reali ed è diagonalizzabile con una matrice ortogonale: A = QDQᵀ. Autovettori di autovalori distinti sono automaticamente ortogonali, e all'interno di un autospazio si può scegliere una base ortonormale con Gram–Schmidt. Questo teorema è lo strumento per classificare forme quadratiche, coniche e quadriche, e per stabilire se una matrice è definita positiva (tutti gli autovalori positivi). È anche alla base dell'analisi delle componenti principali in statistica.",
+    "Altri risultati utili: se Av = λv allora Aᵏv = λᵏv e, se A è invertibile, A⁻¹v = (1/λ)v. Il teorema di Cayley–Hamilton afferma che ogni matrice annulla il proprio polinomio caratteristico: per una 2×2, A² − (tr A)A + (det A)I = 0. Ne segue per esempio che A⁻¹ = (tr A·I − A)/det A per le matrici 2×2 invertibili. Gli autovalori governano i sistemi dinamici: in xₖ₊₁ = Axₖ la crescita è dominata dall'autovalore di modulo massimo, e nei sistemi di equazioni differenziali x' = Ax compaiono le esponenziali e^(λt)."
+   ],
+   "metodo": [
+    "Per ogni autovalore calcola sia ma sia mg: è l'unico modo sicuro per decidere la diagonalizzabilità.",
+    "Costruisci P mettendo in colonna gli autovettori nello stesso ordine degli autovalori in D, e verifica AP = PD.",
+    "Per matrici simmetriche normalizza gli autovettori e controlla che Q sia ortogonale.",
+    "Usa Cayley–Hamilton per calcolare potenze e inverse di matrici 2×2 senza diagonalizzare.",
+    "Applica gli autovalori a un esempio concreto, come una successione per ricorrenza tipo Fibonacci."
+   ],
+   "ricorda": [
+    "1 ≤ mg ≤ ma; diagonalizzabile ⇔ mg = ma per ogni autovalore (e radici reali).",
+    "n autovalori distinti ⇒ diagonalizzabile.",
+    "Simmetrica reale ⇒ diagonalizzabile con matrice ortogonale.",
+    "Autovalori di Aᵏ: λᵏ; di A⁻¹: 1/λ."
+   ],
+   "errori": [
+    "Dedurre la diagonalizzabilità solo dal fatto che gli autovalori sono reali.",
+    "Confondere molteplicità algebrica e geometrica.",
+    "Mettere gli autovettori in riga invece che in colonna nella matrice P.",
+    "Pensare che una matrice triangolare sia sempre diagonalizzabile.",
+    "Sbagliare i segni nella relazione di Cayley–Hamilton."
+   ],
+   "domande": [
+    {
+     "domanda": "[[2, 0], [0, 2]] e [[2, 1], [0, 2]] sono diagonalizzabili?",
+     "risposta": "La prima sì (è già diagonale), la seconda no (mg = 1 < ma = 2)."
+    },
+    {
+     "domanda": "Una matrice 3×3 ha autovalori 1, 2, 3. Quanto valgono traccia e determinante?",
+     "risposta": "Traccia 6, determinante 6."
+    },
+    {
+     "domanda": "Che cosa garantisce il teorema spettrale?",
+     "risposta": "Autovalori reali e una base ortonormale di autovettori per ogni matrice reale simmetrica."
+    },
+    {
+     "domanda": "Se A ha traccia 5 e det 6, come si esprime A²?",
+     "risposta": "A² = 5A − 6I."
+    },
+    {
+     "domanda": "Come si calcola mg(λ)?",
+     "risposta": "n − rango(A − λI)."
+    }
+   ]
+  }
+ },
+ "Geometria analitica nello spazio": {
+  "superiore": {
+   "spiegazione": [
+    "Nello spazio ogni punto è individuato da tre coordinate (x, y, z) rispetto a tre assi perpendicolari. La distanza tra due punti si calcola con Pitagora esteso: AB = √((x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²). Per esempio tra (1, 2, 3) e (4, 6, 3) la distanza è 5. Il punto medio di un segmento ha come coordinate le medie delle coordinate degli estremi.",
+    "Un'equazione di primo grado ax + by + cz + d = 0 rappresenta un piano. Il vettore (a, b, c) è perpendicolare al piano e si chiama vettore normale. Il piano che passa per P₀ con normale (a, b, c) ha equazione a(x − x₀) + b(y − y₀) + c(z − z₀) = 0. Per esempio il piano per (1, 2, −1) con normale (3, 0, 2) è 3x + 2z − 1 = 0. I piani coordinati hanno equazioni x = 0, y = 0 e z = 0.",
+    "Una retta nello spazio si descrive in forma parametrica: si parte da un punto P₀ e ci si muove lungo un vettore direzione d, ottenendo P = P₀ + t·d. Per esempio la retta per (1, 0, 2) con direzione (3, −1, 1) ha equazioni x = 1 + 3t, y = −t, z = 2 + t. Una retta si può anche scrivere come intersezione di due piani non paralleli. Per trovare dove una retta incontra un piano si sostituiscono le equazioni parametriche nell'equazione del piano.",
+    "Due piani possono essere paralleli (normali proporzionali), coincidenti o incidenti lungo una retta. Due rette nello spazio possono essere incidenti, parallele oppure sghembe: le rette sghembe non si incontrano ma non sono parallele, come un binario al suolo e una trave del soffitto in direzione diversa. Nel piano le rette sghembe non esistono. Una retta e un piano possono essere incidenti in un punto, paralleli, oppure la retta può essere contenuta nel piano.",
+    "La distanza di un punto P(x₀, y₀, z₀) dal piano ax + by + cz + d = 0 è |ax₀ + by₀ + cz₀ + d| / √(a² + b² + c²). Per esempio la distanza di (1, 2, 3) dal piano 2x + y − 2z + 4 = 0 è 2/3. La sfera di centro (x_C, y_C, z_C) e raggio r ha equazione (x − x_C)² + (y − y_C)² + (z − z_C)² = r². Partendo da un'equazione sviluppata si ritrovano centro e raggio completando i quadrati."
+   ],
+   "metodo": [
+    "Costruisci un modellino degli assi con tre matite per visualizzare punti, piani e rette.",
+    "Per ogni piano scrivi accanto il vettore normale; per ogni retta il punto e il vettore direzione.",
+    "Verifica sempre i risultati sostituendo punti noti nelle equazioni trovate.",
+    "Prepara una scheda con le formule: distanza tra punti, punto-piano, equazione del piano per un punto, sfera.",
+    "Esercitati a riconoscere le posizioni reciproche confrontando vettori normali e direzioni."
+   ],
+   "ricorda": [
+    "I coefficienti di x, y, z del piano formano il vettore normale.",
+    "Retta = punto + t·direzione.",
+    "Nello spazio due rette che non si incontrano possono essere sghembe, non per forza parallele."
+   ],
+   "errori": [
+    "Pensare che nello spazio un'equazione come z = 0 sia una retta: è un piano.",
+    "Includere il termine noto nel vettore normale.",
+    "Dimenticare la radice al denominatore nella distanza punto-piano.",
+    "Prendere il centro della sfera con i segni sbagliati."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la distanza tra (0, 0, 0) e (2, 3, 6)?",
+     "risposta": "7, perché √(4 + 9 + 36) = 7."
+    },
+    {
+     "domanda": "Qual è il vettore normale del piano x − 4y + z = 2?",
+     "risposta": "(1, −4, 1)."
+    },
+    {
+     "domanda": "Scrivi la retta per l'origine con direzione (1, 2, 3).",
+     "risposta": "x = t, y = 2t, z = 3t."
+    },
+    {
+     "domanda": "I piani x + y = 1 e 2x + 2y = 5 come sono?",
+     "risposta": "Paralleli e distinti."
+    },
+    {
+     "domanda": "Qual è il raggio della sfera x² + y² + z² = 16?",
+     "risposta": "4, con centro nell'origine."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Lo spazio della geometria analitica è lo spazio affine euclideo R³: i punti si individuano con coordinate e le differenze di punti sono vettori, ai quali si applicano prodotto scalare, vettoriale e misto. Un piano ha equazione cartesiana ax + by + cz + d = 0 con normale n = (a, b, c), oppure forma parametrica P₀ + s·u + t·v con u, v indipendenti e n = u × v. Il piano per tre punti non allineati P₁, P₂, P₃ si ottiene imponendo che il prodotto misto (P − P₁)·((P₂ − P₁) × (P₃ − P₁)) sia nullo. Se il piano taglia gli assi in a, b, c la forma segmentaria è x/a + y/b + z/c = 1.",
+    "Una retta si scrive in forma parametrica P₀ + t·d oppure come intersezione di due piani non paralleli; in questo secondo caso la direzione è d = n₁ × n₂. Le combinazioni λ(a₁x + b₁y + c₁z + d₁) + μ(a₂x + b₂y + c₂z + d₂) = 0 descrivono il fascio di piani che contengono la retta. Per esempio l'intersezione di x + y + z = 1 e x − y = 0 ha direzione (1, 1, −2). Il passaggio tra forma cartesiana e parametrica è la risoluzione di un sistema lineare con un parametro libero.",
+    "Le posizioni reciproche si studiano con i vettori caratteristici. Una retta è parallela a un piano (o contenuta in esso) se d·n = 0, perpendicolare se d è parallelo a n. Due rette con direzioni d₁, d₂ e punti P₁, P₂ sono complanari se e solo se (P₂ − P₁)·(d₁ × d₂) = 0; se non sono complanari sono sghembe. Per due piani basta confrontare le normali e, se proporzionali, i termini noti. In tutti i casi il problema si traduce nel calcolo del rango di un sistema lineare.",
+    "Le distanze si esprimono con formule vettoriali. Distanza punto-piano: |n·P₀ + d| / |n|. Distanza punto-retta: |(P − P₀) × d| / |d|; per esempio (1, 1, 1) dista √2 dall'asse x. Distanza tra rette sghembe: |(P₂ − P₁)·(d₁ × d₂)| / |d₁ × d₂|, che è la lunghezza della perpendicolare comune. Gli angoli si ricavano dai prodotti scalari: tra due piani è l'angolo tra le normali, tra retta e piano si usa sin φ = |d·n| / (|d||n|).",
+    "Le superfici di equazione di secondo grado si chiamano quadriche: sfere, ellissoidi, coni, cilindri, paraboloidi (ellittici e iperbolici) e iperboloidi (a una e due falde). Si riconoscono studiando le sezioni con piani paralleli a quelli coordinati: x² + y² = z² ha sezioni orizzontali circolari di raggio |z| ed è un cono, mentre x² + y² = z ha sezioni di raggio √z ed è un paraboloide. La classificazione generale scrive la parte quadratica come forma xᵀAx con A simmetrica e usa il teorema spettrale: i segni degli autovalori di A determinano il tipo. Le rototraslazioni, composte da una matrice ortogonale e da una traslazione, portano ogni quadrica in forma canonica."
+   ],
+   "metodo": [
+    "Traduci ogni problema in vettori: punto e direzione per le rette, punto e normale per i piani.",
+    "Per le posizioni reciproche imposta il sistema lineare e usa Rouché–Capelli; usa il prodotto misto per la complanarità.",
+    "Impara le tre formule delle distanze (punto-piano, punto-retta, rette sghembe) e ricavale da proiezioni e prodotti vettoriali.",
+    "Per le quadriche disegna almeno tre sezioni (orizzontale e due verticali) prima di dare un nome alla superficie.",
+    "Collega il capitolo agli autovalori: diagonalizza la matrice di una quadrica semplice con il teorema spettrale."
+   ],
+   "ricorda": [
+    "Direzione di una retta data da due piani: n₁ × n₂.",
+    "d·n = 0: retta parallela al piano (o contenuta).",
+    "Complanari ⇔ (P₂ − P₁)·(d₁ × d₂) = 0.",
+    "Quadriche: si riconoscono dalle sezioni e dai segni degli autovalori."
+   ],
+   "errori": [
+    "Scambiare parallelismo e perpendicolarità tra retta e piano quando d·n = 0.",
+    "Dire che due rette che non si incontrano sono parallele senza controllare le direzioni.",
+    "Usare la normale di un piano come direzione di una retta contenuta in esso.",
+    "Confondere cono, paraboloide e iperboloide per la mancanza o presenza del termine noto.",
+    "Dimenticare di dividere per |n| o |d| nelle formule delle distanze."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la distanza tra le rette (t, 0, 0) e (0, u, 1)?",
+     "risposta": "1: sono sghembe e la perpendicolare comune è sull'asse z."
+    },
+    {
+     "domanda": "Qual è la direzione della retta x + y + z = 1, x − y = 0?",
+     "risposta": "(1, 1, −2), cioè (1, 1, 1) × (1, −1, 0)."
+    },
+    {
+     "domanda": "Che angolo formano i piani x + y = 0 e y + z = 0?",
+     "risposta": "60°."
+    },
+    {
+     "domanda": "Che superficie è x² + y² − z² = 1?",
+     "risposta": "Un iperboloide a una falda."
+    },
+    {
+     "domanda": "La retta (t, 2t, −t) e il piano x + y + 3z = 5 come sono?",
+     "risposta": "Paralleli senza punti in comune: d·n = 0 e l'origine non sta nel piano."
+    }
+   ]
+  }
+ }
+}

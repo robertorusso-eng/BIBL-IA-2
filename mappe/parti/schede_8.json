@@ -1,0 +1,1042 @@
+{
+  "membrana plasmatica": {
+    "tipo": "struttura",
+    "base": "La «pelle» sottilissima che avvolge ogni cellula: tiene dentro quello che serve e decide che cosa entra e che cosa esce.",
+    "superiore": "Membrana che delimita la cellula: doppio strato di fosfolipidi con proteine immerse, colesterolo e, verso l'esterno, catene di zuccheri (glicocalice). Modello a mosaico fluido. È a permeabilità selettiva.",
+    "universita": "Spessore circa 7-10 nm. Asimmetrica: fosfatidilserina sul foglietto interno (la sua esposizione all'esterno segnala l'apoptosi). Le proteine sono integrali (transmembrana) o periferiche; zattere lipidiche ricche di colesterolo e sfingolipidi. Separa ioni a concentrazioni diverse e genera il potenziale di membrana.",
+    "clinica": "La sferocitosi ereditaria (difetti di spettrina e anchirina) rende i globuli rossi sferici e fragili: anemia emolitica e splenomegalia."
+  },
+  "diffusione semplice": {
+    "tipo": "struttura",
+    "base": "Come una goccia di profumo che si sparge in una stanza: le sostanze vanno da sole da dove sono tante a dove sono poche.",
+    "superiore": "Trasporto passivo di molecole piccole e apolari (O₂, CO₂, N₂, ormoni steroidei) direttamente attraverso il doppio strato lipidico, secondo gradiente di concentrazione, senza proteine e senza energia.",
+    "universita": "Legge di Fick: flusso = D · A · ΔC / spessore (D cresce con la liposolubilità e cala con le dimensioni). Non è saturabile: la velocità cresce in modo lineare con il gradiente. I gas diffondono così attraverso la membrana alveolo-capillare.",
+    "clinica": "Nella fibrosi polmonare la membrana alveolo-capillare si ispessisce e la diffusione dei gas si riduce (DLCO bassa)."
+  },
+  "doppio strato fosfolipidico": {
+    "tipo": "struttura",
+    "base": "Due file di piccoli «spilli» con la testa che ama l'acqua e la coda che la odia: le teste guardano fuori, le code si nascondono in mezzo.",
+    "superiore": "Struttura base delle membrane: i fosfolipidi sono anfipatici (testa idrofila, code idrofobe) e in acqua si dispongono in due strati con le code all'interno. Il centro idrofobo blocca ioni e molecole polari.",
+    "universita": "Principali fosfolipidi: fosfatidilcolina, fosfatidiletanolammina, fosfatidilserina, sfingomielina. La fluidità aumenta con gli acidi grassi insaturi e corti; il colesterolo la tampona. Movimenti laterali rapidi; il passaggio da un foglietto all'altro (flip-flop) è lento e richiede flippasi e scramblasi.",
+    "clinica": ""
+  },
+  "osmosi": {
+    "tipo": "struttura",
+    "base": "L'acqua si sposta da sola verso dove c'è più sale o zucchero: per questo l'insalata condita troppo presto si affloscia.",
+    "superiore": "Diffusione dell'acqua attraverso una membrana semipermeabile, dalla soluzione meno concentrata (ipotonica) a quella più concentrata (ipertonica). In soluzione ipotonica le cellule animali si gonfiano, in ipertonica raggrinziscono; in isotonica restano uguali.",
+    "universita": "Pressione osmotica π = i·M·R·T (van 't Hoff). L'osmolalità plasmatica normale è circa 285-295 mOsm/kg. La tonicità dipende solo dai soluti che non attraversano la membrana (Na⁺, glucosio senza insulina); l'urea è osmotica ma poco «tonica».",
+    "clinica": "Le soluzioni infusionali isotoniche sono la fisiologica (NaCl 0,9%) e il glucosio 5%. Correggere troppo in fretta un'iponatriemia cronica può causare la mielinolisi pontina (sindrome da demielinizzazione osmotica)."
+  },
+  "acquaporine": {
+    "tipo": "enzima",
+    "base": "Piccoli tubicini nella membrana che fanno passare solo l'acqua, una goccia dopo l'altra.",
+    "superiore": "Proteine canale specifiche per l'acqua. Rendono molto più veloce l'osmosi in cellule come i globuli rossi e le cellule del rene.",
+    "universita": "Tetrameri; ogni monomero (6 eliche transmembrana) forma un poro stretto che fa passare le molecole d'acqua in fila singola ma esclude i protoni. AQP1: globuli rossi, tubulo prossimale, ansa discendente; AQP2: dotto collettore, regolata dall'ADH; AQP3 e AQP4: lato basolaterale; AQP4 anche negli astrociti. Scoperte da Peter Agre (Nobel 2003).",
+    "clinica": "Gli anticorpi anti-AQP4 causano la neuromielite ottica. Mutazioni di AQP2 danno il diabete insipido nefrogenico."
+  },
+  "diffusione attraverso canali": {
+    "tipo": "struttura",
+    "base": "Gli ioni passano da piccole porte che si aprono e si chiudono, sempre andando da dove sono tanti a dove sono pochi.",
+    "superiore": "Trasporto passivo di ioni attraverso proteine canale. La direzione dipende dal gradiente elettrochimico (concentrazione + carica elettrica). È il meccanismo dei segnali elettrici di nervi e muscoli.",
+    "universita": "Il potenziale di equilibrio di ogni ione si calcola con l'equazione di Nernst (K⁺ circa −90 mV, Na⁺ circa +60 mV); il potenziale di riposo, con l'equazione di Goldman, è vicino a quello del K⁺ perché a riposo la membrana è più permeabile al K⁺. Il flusso non è saturabile come quello dei trasportatori.",
+    "clinica": "L'iperkaliemia riduce il gradiente del K⁺, depolarizza le cellule cardiache e può dare aritmie gravi."
+  },
+  "canali ionici": {
+    "tipo": "enzima",
+    "base": "Porte nella membrana che lasciano passare un solo tipo di ione, come una porta con la chiave giusta.",
+    "superiore": "Proteine di membrana che formano un poro idrofilo selettivo per uno ione (Na⁺, K⁺, Ca²⁺, Cl⁻). Possono essere sempre aperti oppure aprirsi con il voltaggio, con un ligando (es. acetilcolina) o con uno stimolo meccanico.",
+    "universita": "Il filtro di selettività sceglie lo ione in base a dimensioni e guscio di idratazione (nei canali del K⁺ la sequenza TVGYG). Velocità fino a milioni di ioni al secondo per canale. Canali voltaggio-dipendenti (Nav, Kv, Cav), ligando-dipendenti (nicotinico, GABA-A, NMDA), canali di perdita (K2P), meccanosensibili (Piezo).",
+    "clinica": "Canalopatie: sindrome del QT lungo (canali K⁺ e Na⁺ cardiaci), alcune epilessie, paralisi periodiche, fibrosi cistica (CFTR). Molti farmaci sono bloccanti di canali: calcio-antagonisti, anestetici locali, sulfoniluree (canali K-ATP)."
+  },
+  "diffusione facilitata": {
+    "tipo": "struttura",
+    "base": "Una molecola troppo grande per passare da sola viene «accompagnata» dentro da un aiutante, sempre in discesa, senza spendere energia.",
+    "superiore": "Trasporto passivo, secondo gradiente, di molecole polari (glucosio, amminoacidi) mediato da proteine trasportatrici (carrier) specifiche. Non consuma energia ma si può saturare.",
+    "universita": "Il trasportatore alterna due conformazioni (aperta verso l'esterno e verso l'interno). Cinetica tipo Michaelis-Menten: Vmax (numero di trasportatori) e Km (affinità); può essere inibito in modo competitivo da molecole simili. Esempi: GLUT, trasportatori degli amminoacidi, urea (UT-A).",
+    "clinica": ""
+  },
+  "GLUT": {
+    "tipo": "enzima",
+    "base": "Le porticine che fanno entrare lo zucchero nelle cellule.",
+    "superiore": "Famiglia di trasportatori del glucosio per diffusione facilitata. GLUT4, nel muscolo e nel tessuto adiposo, va in membrana solo con l'insulina.",
+    "universita": "Famiglia SLC2, 12 eliche transmembrana. GLUT1: globuli rossi e barriera emato-encefalica (Km bassa); GLUT2: fegato, cellule β, lato basolaterale di enterociti e tubulo renale (Km alta, bidirezionale); GLUT3: neuroni; GLUT4: muscolo e adipe, insulino-dipendente (anche l'esercizio lo porta in membrana); GLUT5: fruttosio, intestino.",
+    "clinica": "Deficit di GLUT1 (sindrome di De Vivo): glucosio basso nel liquor, epilessia; si cura con dieta chetogenica. Sindrome di Fanconi-Bickel: deficit di GLUT2."
+  },
+  "trasporto attivo primario": {
+    "tipo": "struttura",
+    "base": "Come pedalare in salita: per portare le sostanze dove ce ne sono già tante, la cellula spende energia (ATP).",
+    "superiore": "Trasporto contro gradiente che usa direttamente l'energia dell'idrolisi dell'ATP. È svolto da pompe: Na⁺/K⁺-ATPasi, pompe del Ca²⁺, pompa protonica dello stomaco.",
+    "universita": "Le ATPasi di tipo P si fosforilano su un aspartato durante il ciclo (Na⁺/K⁺, Ca²⁺ SERCA e PMCA, H⁺/K⁺ gastrica); quelle di tipo V acidificano gli organuli; quelle di tipo F (ATP sintasi) lavorano al contrario; i trasportatori ABC sono un'altra famiglia.",
+    "clinica": "Gli inibitori della pompa protonica (omeprazolo) bloccano la H⁺/K⁺-ATPasi delle cellule parietali e riducono l'acidità gastrica."
+  },
+  "pompe ABC": {
+    "tipo": "struttura",
+    "base": "Pompe che buttano fuori dalla cellula sostanze diverse, anche medicine, usando energia.",
+    "superiore": "Trasportatori ABC (ATP-Binding Cassette): grande famiglia di proteine che usano l'ATP per spostare molecole attraverso le membrane (farmaci, lipidi, bilirubina, peptidi).",
+    "universita": "Due domini transmembrana e due domini che legano ATP (NBD); il legame e l'idrolisi dell'ATP fanno cambiare la proteina tra apertura interna ed esterna. Esempi: ABCB1 (glicoproteina P), ABCA1 (colesterolo verso le HDL), ABCG5/G8 (steroli nella bile), ABCC2 (MRP2, bilirubina coniugata). CFTR (ABCC7) è un'eccezione: è un canale.",
+    "clinica": "Mutazioni ABCA1: malattia di Tangier (HDL quasi assenti). ABCC2: sindrome di Dubin-Johnson. CFTR: fibrosi cistica."
+  },
+  "glicoproteina P (MDR1)": {
+    "tipo": "enzima",
+    "base": "Una pompa che caccia fuori dalla cellula molte medicine: utile per difendersi, ma un problema quando un tumore la usa contro la chemioterapia.",
+    "superiore": "Trasportatore ABC che espelle dalla cellula molti farmaci usando ATP. Nelle cellule tumorali può causare resistenza a più chemioterapici insieme (multiresistenza, MDR).",
+    "universita": "ABCB1, gene MDR1. Presente in intestino (riduce l'assorbimento), fegato e rene (escrezione), barriera emato-encefalica e placenta (protezione). Substrati: digossina, alcaloidi della vinca, antracicline, taxani, ciclosporina e molti altri.",
+    "clinica": "Interazioni: inibitori della P-gp (verapamil, amiodarone, claritromicina) aumentano i livelli di digossina e di alcuni anticoagulanti orali (dabigatran); induttori come la rifampicina li riducono."
+  },
+  "simporto": {
+    "tipo": "struttura",
+    "base": "Due sostanze entrano insieme come in un tandem: il sodio, che entra «in discesa», si porta dietro lo zucchero.",
+    "superiore": "Trasporto attivo secondario in cui due sostanze attraversano la membrana nella stessa direzione. L'energia viene dal gradiente del Na⁺ creato dalla Na⁺/K⁺-ATPasi.",
+    "universita": "Esempi: SGLT1 e SGLT2 (Na⁺-glucosio), NKCC2 (Na⁺-K⁺-2Cl⁻, ansa di Henle), NCC (Na⁺-Cl⁻, tubulo distale), trasportatori Na⁺-amminoacidi, Na⁺-fosfato, NIS (Na⁺-iodio, tiroide). Se la pompa si ferma, il simporto si ferma.",
+    "clinica": "Diuretici dell'ansa (furosemide) bloccano NKCC2; tiazidici bloccano NCC; gliflozine bloccano SGLT2."
+  },
+  "SGLT1": {
+    "tipo": "enzima",
+    "base": "La porta dell'intestino che fa entrare lo zucchero insieme al sale.",
+    "superiore": "Cotrasportatore sodio-glucosio dell'intestino tenue: porta dentro gli enterociti glucosio e galattosio insieme al Na⁺, anche contro gradiente.",
+    "universita": "Gene SLC5A1. Stechiometria 2 Na⁺ : 1 glucosio, alta affinità. Presente sulla membrana apicale degli enterociti e nell'ultimo tratto del tubulo prossimale. Il glucosio esce poi verso il sangue con GLUT2. SGLT2 (1 Na⁺ : 1 glucosio) riassorbe la maggior parte del glucosio filtrato nel primo tratto del prossimale.",
+    "clinica": "Su SGLT1 si basa la soluzione reidratante orale (sale + glucosio) nelle diarree, colera compreso. Il malassorbimento glucosio-galattosio è dovuto a mutazioni di SGLT1."
+  },
+  "antiporto": {
+    "tipo": "struttura",
+    "base": "Uno scambio: una sostanza entra e un'altra esce nello stesso momento, come in una porta girevole.",
+    "superiore": "Trasporto attivo secondario in cui due sostanze si muovono in direzioni opposte. Esempi: scambiatore Na⁺/Ca²⁺, scambiatore Na⁺/H⁺, scambiatore Cl⁻/HCO₃⁻.",
+    "universita": "NHE (Na⁺/H⁺) regola il pH intracellulare e nel tubulo prossimale riassorbe Na⁺ e secerne H⁺ (NHE3). Lo scambiatore Cl⁻/HCO₃⁻ (banda 3, AE1) del globulo rosso fa lo «spostamento dei cloruri». Altri antiporti non usano il Na⁺, come lo scambiatore ADP/ATP del mitocondrio.",
+    "clinica": ""
+  },
+  "scambiatore Na⁺/Ca²⁺ (NCX)": {
+    "tipo": "enzima",
+    "base": "Una porta girevole che fa entrare il sodio e intanto butta fuori il calcio, così il cuore si rilassa dopo ogni battito.",
+    "superiore": "Antiporto della membrana plasmatica: fa entrare 3 Na⁺ e uscire 1 Ca²⁺. Nelle cellule del cuore toglie il calcio entrato a ogni battito.",
+    "universita": "Elettrogenico (una carica positiva netta entra per ciclo); dipende dal gradiente del Na⁺ e dal potenziale di membrana e può invertirsi quando la cellula è molto depolarizzata o carica di Na⁺. Lavora insieme alla PMCA e alla SERCA per abbassare il Ca²⁺ citoplasmatico.",
+    "clinica": "La digossina inibisce la Na⁺/K⁺-ATPasi: il Na⁺ dentro sale, NCX espelle meno Ca²⁺ e la contrazione cardiaca diventa più forte (effetto inotropo positivo)."
+  },
+  "CFTR": {
+    "tipo": "enzima",
+    "base": "Una porta per il sale nelle cellule dei polmoni, del pancreas e della pelle. Se non funziona il muco diventa denso e appiccicoso.",
+    "superiore": "Canale per il cloruro (e il bicarbonato) delle cellule epiteliali di vie aeree, pancreas, intestino e ghiandole sudoripare. Le sue mutazioni causano la fibrosi cistica, malattia autosomica recessiva.",
+    "universita": "Gene CFTR (cromosoma 7), famiglia ABC (ABCC7). Si apre quando la PKA (via cAMP) fosforila il dominio regolatore R e l'ATP si lega ai due domini NBD. Mutazione più frequente: F508del, che fa ripiegare male la proteina, trattenuta nel reticolo e distrutta. Nel sudore il CFTR serve a riassorbire Cl⁻, quindi nel malato il sudore è salato.",
+    "clinica": "Fibrosi cistica: infezioni polmonari ricorrenti (Pseudomonas), insufficienza pancreatica, ileo da meconio, infertilità maschile (assenza dei deferenti). Diagnosi con test del sudore (Cl⁻ ≥ 60 mmol/L) e screening neonatale. Terapia con modulatori del CFTR (elexacaftor/tezacaftor/ivacaftor). Nel colera la tossina iperattiva il CFTR intestinale."
+  },
+  "proteina nel lume del RE": {
+    "tipo": "molecola",
+    "base": "La proteina appena costruita, entrata nella rete di sacchetti dove viene preparata per il viaggio.",
+    "superiore": "Catena polipeptidica che, durante la traduzione, è passata nel lume del reticolo endoplasmatico rugoso grazie al peptide segnale. È destinata alla secrezione, alla membrana plasmatica o ai lisosomi.",
+    "universita": "Traslocazione co-traduzionale attraverso il traslocone Sec61. La peptidasi del segnale taglia il peptide segnale. Le proteine di membrana restano ancorate grazie a segmenti idrofobi (sequenze di stop del trasferimento). Le proteine che devono restare nel reticolo portano la sequenza KDEL.",
+    "clinica": ""
+  },
+  "particella di riconoscimento del segnale (SRP)": {
+    "tipo": "enzima",
+    "base": "Un «vigile» che riconosce le proteine da spedire fuori e porta il ribosoma sulla rete di sacchetti giusta.",
+    "superiore": "Complesso di RNA e proteine che riconosce il peptide segnale di una proteina in costruzione e porta il ribosoma sulla membrana del reticolo endoplasmatico rugoso.",
+    "universita": "Ribonucleoproteina (RNA 7SL + 6 proteine). La subunità SRP54 lega il peptide segnale idrofobo e rallenta l'allungamento; SRP e il suo recettore sul reticolo sono GTPasi: dopo il trasferimento del ribosoma al traslocone Sec61 l'idrolisi del GTP le separa.",
+    "clinica": "Gli anticorpi anti-SRP si trovano in una miopatia infiammatoria necrotizzante."
+  },
+  "glicoproteina ripiegata": {
+    "tipo": "molecola",
+    "base": "La proteina ha preso la sua forma giusta e ha ricevuto le sue «decorazioni» di zucchero: è pronta a partire.",
+    "superiore": "Proteina ripiegata correttamente nel reticolo e con catene di zuccheri attaccate (glicoproteina). Solo le proteine ripiegate bene escono verso il Golgi (controllo di qualità).",
+    "universita": "Ciclo calnexina/calreticolina: la glucosidasi II toglie l'ultimo glucosio; se la proteina è ancora mal ripiegata, la UGGT la riglucosila e la rimanda alla calnexina. Le proteine irrecuperabili vanno alla degradazione associata al reticolo (ERAD): retrotraslocazione, ubiquitinazione e proteasoma. L'accumulo di proteine mal ripiegate attiva la risposta UPR.",
+    "clinica": "Malattie da ripiegamento errato trattenuto nel reticolo: fibrosi cistica (F508del), deficit di α1-antitripsina (variante Z: si accumula negli epatociti, enfisema e cirrosi)."
+  },
+  "oligosaccariltransferasi": {
+    "tipo": "enzima",
+    "base": "L'aiutante che attacca alle proteine una piccola «antenna» di zuccheri.",
+    "superiore": "Enzima del reticolo endoplasmatico che trasferisce un blocco di zuccheri già pronto sulle proteine in entrata: è l'inizio della N-glicosilazione.",
+    "universita": "Complesso di membrana che trasferisce l'oligosaccaride Glc₃Man₉GlcNAc₂ (14 zuccheri) dal dolicolo pirofosfato all'azoto dell'asparagina nella sequenza Asn-X-Ser/Thr (X ≠ prolina), mentre la catena entra nel lume.",
+    "clinica": "Difetti della glicosilazione: malattie congenite della glicosilazione (CDG), con ritardo dello sviluppo e coinvolgimento di più organi; screening con la transferrina carboidrato-carente."
+  },
+  "vescicola COPII": {
+    "tipo": "struttura",
+    "base": "Una piccola bolla che porta le proteine dalla rete di sacchetti all'«ufficio spedizioni» (Golgi).",
+    "superiore": "Vescicola rivestita dalle proteine COPII che trasporta le proteine dal reticolo endoplasmatico all'apparato di Golgi (trasporto anterogrado).",
+    "universita": "Si forma in siti di uscita del reticolo (ERES). Prima di arrivare al cis-Golgi le vescicole si fondono in un compartimento intermedio (ERGIC). Le proteine del reticolo partite per errore tornano indietro in vescicole COPI, grazie al recettore KDEL.",
+    "clinica": ""
+  },
+  "rivestimento COPII": {
+    "tipo": "enzima",
+    "base": "Un «guscio» di proteine che piega la membrana e la stacca come una bolla.",
+    "superiore": "Insieme di proteine (Sar1, Sec23/24, Sec13/31) che si assemblano sulla membrana del reticolo, scelgono il carico e formano le vescicole dirette al Golgi.",
+    "universita": "Sar1 è una piccola GTPasi: attivata dal fattore di scambio Sec12 (GTP), inserisce un'elica nella membrana e recluta Sec23/24 (che legano i segnali del carico) e poi Sec13/31 (gabbia esterna). Sec23 stimola l'idrolisi del GTP da parte di Sar1 e il rivestimento si smonta.",
+    "clinica": "Mutazioni di SEC23A: displasia cranio-lenticolo-suturale; mutazioni di SEC23B: anemia diseritropoietica congenita di tipo II."
+  },
+  "apparato di Golgi (cis)": {
+    "tipo": "struttura",
+    "base": "Una pila di sacchetti appiattiti, come un ufficio postale, dove le proteine arrivano dal lato d'ingresso.",
+    "superiore": "Organulo formato da cisterne impilate. Il lato cis riceve le vescicole dal reticolo; le proteine attraversano le cisterne (cis, mediale, trans) e vengono modificate e smistate.",
+    "universita": "Le cisterne maturano spostandosi da cis a trans (modello della maturazione delle cisterne); gli enzimi residenti tornano indietro con vescicole COPI. Nel cis-Golgi la GlcNAc-fosfotransferasi aggiunge il mannosio 6-fosfato agli enzimi lisosomiali; si completano le N-glicosilazioni e avviene la O-glicosilazione (su serina e treonina).",
+    "clinica": "Deficit della GlcNAc-fosfotransferasi: malattia a cellule I (mucolipidosi II). Gli enzimi lisosomiali non ricevono l'etichetta, finiscono nel sangue e i lisosomi si riempiono di materiale non digerito."
+  },
+  "proteine SNARE": {
+    "tipo": "enzima",
+    "base": "Delle «cerniere» di proteine: una sulla bolla e una sulla membrana di arrivo si chiudono insieme e le due membrane si uniscono.",
+    "superiore": "Proteine che permettono la fusione delle vescicole con la membrana giusta. La v-SNARE della vescicola si appaia alla t-SNARE della membrana bersaglio.",
+    "universita": "Sinaptobrevina (VAMP) sulla vescicola, sintaxina e SNAP-25 sulla membrana: le quattro eliche si avvolgono (complesso trans-SNARE) e forzano la fusione. Le proteine Rab (GTPasi) danno l'indirizzo; la sinaptotagmina è il sensore del Ca²⁺ nell'esocitosi regolata. Dopo la fusione l'ATPasi NSF con α-SNAP smonta il complesso.",
+    "clinica": "La tossina botulinica taglia SNAP-25, VAMP o sintaxina alla placca motrice: paralisi flaccida (usata anche in terapia per distonie e spasticità). La tossina tetanica taglia VAMP negli interneuroni inibitori: paralisi spastica."
+  },
+  "rete trans del Golgi": {
+    "tipo": "struttura",
+    "base": "L'uscita dell'ufficio postale: qui ogni pacco riceve l'indirizzo giusto e parte.",
+    "superiore": "Lato di uscita del Golgi (TGN): smista le proteine verso i lisosomi, la membrana plasmatica (secrezione continua) o i granuli di secrezione (secrezione regolata).",
+    "universita": "Gli enzimi con mannosio 6-fosfato si legano al recettore M6P e partono in vescicole di clatrina (adattatore AP-1) verso gli endosomi. Le proteine della secrezione regolata si aggregano in granuli immaturi. Nelle cellule epiteliali la TGN separa anche il carico apicale da quello basolaterale.",
+    "clinica": ""
+  },
+  "glicosiltransferasi del Golgi": {
+    "tipo": "enzima",
+    "base": "Aiutanti che ritoccano e completano le «decorazioni» di zucchero delle proteine.",
+    "superiore": "Enzimi del Golgi che aggiungono zuccheri alle proteine e ai lipidi: completano le N-glicosilazioni iniziate nel reticolo e svolgono la O-glicosilazione.",
+    "universita": "Ogni cisterna ha i suoi enzimi (mannosidasi, N-acetilglucosaminiltransferasi, galattosiltransferasi, sialiltransferasi), che usano zuccheri attivati come nucleotidi (UDP-galattosio, CMP-acido sialico). Le glicosiltransferasi A e B formano gli antigeni dei gruppi sanguigni AB0.",
+    "clinica": "Gli antigeni A e B del sistema AB0 sono prodotti da glicosiltransferasi: l'allele 0 codifica un enzima non funzionante."
+  },
+  "granuli di secrezione": {
+    "tipo": "struttura",
+    "base": "Piccole «scatole» piene di prodotto pronte vicino alla membrana: aspettano il segnale per svuotarsi fuori.",
+    "superiore": "Vescicole che conservano ormoni, enzimi o neurotrasmettitori in forma concentrata e li liberano solo dopo uno stimolo (secrezione regolata), come le cellule β del pancreas con l'insulina.",
+    "universita": "Nascono dalla TGN come granuli immaturi, che maturano acidificandosi e concentrando il carico; qui avvengono tagli proteolitici dei precursori. Il segnale più comune per la fusione è l'aumento del Ca²⁺ citoplasmatico. Esempi: granuli di zimogeno del pancreas esocrino, granuli dei mastociti, vescicole sinaptiche.",
+    "clinica": ""
+  },
+  "proconvertasi": {
+    "tipo": "enzima",
+    "base": "Le «forbici» che tagliano il pezzo in più dell'ormone e lo rendono pronto all'uso.",
+    "superiore": "Enzimi che tagliano i precursori inattivi degli ormoni (proormoni) nei granuli di secrezione, ad esempio la proinsulina in insulina e peptide C.",
+    "universita": "Proteasi a serina della famiglia delle subtilisine (PC1/3, PC2; la furina lavora nella TGN), tagliano dopo coppie di amminoacidi basici (Lys-Arg, Arg-Arg). Poi la carbossipeptidasi E rifinisce le estremità. Lavorano anche su proopiomelanocortina (ACTH), proglucagone e altri.",
+    "clinica": "Deficit congenito di PC1/3: obesità grave, diarrea da malassorbimento, ipoglicemie e proinsulina alta."
+  },
+  "proinsulina": {
+    "tipo": "molecola",
+    "base": "L'insulina «da finire»: ha un pezzo in più che va tagliato.",
+    "superiore": "Precursore dell'insulina: un'unica catena formata da catena B, peptide C e catena A. Nei granuli il peptide C viene tagliato e restano le catene A e B unite da ponti disolfuro.",
+    "universita": "Nasce dalla preproinsulina dopo la rimozione del peptide segnale nel reticolo, dove si formano i 3 ponti disolfuro. Insulina e peptide C vengono liberati in quantità equimolari; una piccola parte di proinsulina è secreta intatta.",
+    "clinica": "Proinsulina alta rispetto all'insulina si osserva nell'insulinoma e nel diabete tipo 2 con cellule β sotto stress."
+  },
+  "peptide C": {
+    "tipo": "molecola",
+    "base": "Il pezzetto tagliato via quando si forma l'insulina: esce insieme a lei.",
+    "superiore": "Peptide di collegamento che si stacca dalla proinsulina. Viene secreto nella stessa quantità dell'insulina, quindi misura quanta insulina produce il pancreas.",
+    "universita": "Circa 31 amminoacidi. A differenza dell'insulina non è rimosso in modo importante dal fegato (primo passaggio) e ha un'emivita più lunga: è un indice più stabile della secrezione. È eliminato dal rene.",
+    "clinica": "Peptide C basso: diabete tipo 1 o insulina iniettata dall'esterno (ipoglicemia fittizia). Peptide C alto con ipoglicemia: insulinoma o sulfoniluree."
+  },
+  "LDL": {
+    "tipo": "molecola",
+    "base": "Piccoli «camion» nel sangue che portano il colesterolo alle cellule. Quando sono troppi sporcano le arterie.",
+    "superiore": "Lipoproteine a bassa densità: particelle che trasportano il colesterolo nel sangue verso i tessuti. Il «colesterolo cattivo», perché in eccesso si deposita nelle arterie (aterosclerosi).",
+    "universita": "Derivano dalle VLDL (via IDL). Nucleo di esteri del colesterolo, una sola apolipoproteina B-100, riconosciuta dal recettore delle LDL. Entrano nelle cellule per endocitosi mediata da recettore (Brown e Goldstein, Nobel 1985). Il colesterolo liberato inibisce SREBP-2: cala la sintesi di HMG-CoA reduttasi e di recettori.",
+    "clinica": "Ipercolesterolemia familiare (mutazioni del recettore LDL, di ApoB o con guadagno di funzione di PCSK9): LDL molto alte, xantomi, infarto precoce. Terapia: statine, ezetimibe, inibitori di PCSK9."
+  },
+  "fossetta rivestita di clatrina": {
+    "tipo": "struttura",
+    "base": "Un piccolo avvallamento nella membrana che raccoglie le sostanze da portare dentro.",
+    "superiore": "Zona della membrana plasmatica rivestita all'interno da clatrina, dove si concentrano i recettori carichi: si incurva verso l'interno e diventa una vescicola.",
+    "universita": "I recettori portano segnali nella coda citoplasmatica (es. NPxY nel recettore LDL) riconosciuti dall'adattatore AP2, che lega anche il PIP₂ della membrana e la clatrina. La gabbia di trischeli di clatrina si chiude in un cestello di esagoni e pentagoni.",
+    "clinica": ""
+  },
+  "clatrina": {
+    "tipo": "enzima",
+    "base": "Una proteina a forma di tre gambe che si incastra con le altre e forma un cestello attorno alla bolla.",
+    "superiore": "Proteina che riveste le vescicole dell'endocitosi e quelle che vanno dal Golgi agli endosomi. Forma una gabbia che incurva la membrana.",
+    "universita": "Unità di base: il trischele (3 catene pesanti + 3 leggere). Non lega direttamente la membrana né il carico: serve un adattatore (AP2 in membrana plasmatica, AP-1 nella TGN). Dopo il distacco, Hsc70 e auxilina smontano la gabbia usando ATP.",
+    "clinica": ""
+  },
+  "vescicola endocitica": {
+    "tipo": "struttura",
+    "base": "La bolla che si è staccata dalla membrana e porta dentro la cellula quello che ha raccolto.",
+    "superiore": "Vescicola formata per endocitosi: contiene il materiale preso dall'esterno con i suoi recettori. Perde il rivestimento e si fonde con un endosoma.",
+    "universita": "Endocitosi mediata da clatrina; altre vie: caveole (caveolina), macropinocitosi e fagocitosi (particelle grandi, batteri, actina-dipendente). Molti virus e tossine entrano nella cellula sfruttando queste vie.",
+    "clinica": ""
+  },
+  "dinamina": {
+    "tipo": "enzima",
+    "base": "Un «laccio» che stringe il collo della bolla finché si stacca dalla membrana.",
+    "superiore": "GTPasi che si avvolge a spirale attorno al collo delle vescicole in formazione e, usando GTP, le stacca dalla membrana.",
+    "universita": "Grande GTPasi; si polimerizza in elica sul collo della fossetta e l'idrolisi del GTP produce un cambio di forma che restringe e taglia la membrana (fissione). Dinamina 1 nei neuroni, essenziale per il riciclo delle vescicole sinaptiche.",
+    "clinica": "Mutazioni di DNM2: miopatia centronucleare e una forma di neuropatia di Charcot-Marie-Tooth."
+  },
+  "endosoma": {
+    "tipo": "struttura",
+    "base": "Una stazione di smistamento dentro la cellula: alcune cose tornano indietro alla membrana, altre vanno al «riciclo» per essere distrutte.",
+    "superiore": "Organulo che riceve le vescicole dell'endocitosi. L'ambiente acido stacca le sostanze dai recettori: i recettori tornano alla membrana, il resto va ai lisosomi.",
+    "universita": "Endosoma precoce (pH circa 6, Rab5), endosoma di riciclo (Rab11), endosoma tardivo o corpo multivescicolare (pH più basso, Rab7), che si fonde con i lisosomi. Nella stessa via entrano molte tossine e virus (es. tossina difterica, virus influenzale), attivati dall'acidità.",
+    "clinica": "La clorochina, base debole, si accumula negli endosomi e nei lisosomi e ne riduce l'acidità."
+  },
+  "V-ATPasi (pompa protonica)": {
+    "tipo": "enzima",
+    "base": "Una pompa che riempie di acido gli organuli della cellula usando energia.",
+    "superiore": "Pompa che usa l'ATP per portare H⁺ dentro endosomi, lisosomi, granuli e vescicole sinaptiche, rendendoli acidi.",
+    "universita": "ATPasi di tipo V, struttura rotatoria simile all'ATP sintasi (V₁ citoplasmatico, V₀ in membrana). Si trova anche sulla membrana plasmatica degli osteoclasti (riassorbimento dell'osso) e delle cellule intercalate α del dotto collettore (secrezione di H⁺).",
+    "clinica": "Mutazioni della V-ATPasi: acidosi tubulare renale distale; osteopetrosi (gli osteoclasti non riassorbono l'osso)."
+  },
+  "lisosoma": {
+    "tipo": "struttura",
+    "base": "Lo «stomaco» della cellula: un sacchetto pieno di enzimi che digerisce i rifiuti e le cose vecchie.",
+    "superiore": "Organulo con membrana, acido (pH circa 5), pieno di enzimi digestivi (idrolasi acide). Digerisce il materiale portato con l'endocitosi e con l'autofagia.",
+    "universita": "Le proteine della sua membrana sono molto glicosilate (LAMP) e lo proteggono dai suoi stessi enzimi. Gli enzimi arrivano dal Golgi grazie al mannosio 6-fosfato. I prodotti della digestione (amminoacidi, zuccheri, colesterolo tramite NPC1/NPC2) escono nel citoplasma.",
+    "clinica": "Malattie da accumulo lisosomiale: Tay-Sachs, Gaucher, Fabry, Pompe, Niemann-Pick (tipo C: il colesterolo resta intrappolato). Alcune si curano con la terapia enzimatica sostitutiva."
+  },
+  "idrolasi acide": {
+    "tipo": "enzima",
+    "base": "Le «forbici» digestive del lisosoma: funzionano solo nell'acido.",
+    "superiore": "Enzimi del lisosoma (proteasi, lipasi, glicosidasi, nucleasi, fosfatasi) che spezzano le grandi molecole con l'acqua e lavorano bene solo a pH acido.",
+    "universita": "Esempi: catepsine (proteine), lipasi acida lisosomiale (esteri del colesterolo e trigliceridi delle LDL), β-glucocerebrosidasi, esosaminidasi A, α-glucosidasi acida. Il pH ottimale acido protegge la cellula: se escono nel citoplasma (pH circa 7,2) lavorano poco.",
+    "clinica": "Deficit di lipasi acida lisosomiale: malattia di Wolman e malattia da accumulo di esteri del colesterolo. Deficit di β-glucocerebrosidasi: malattia di Gaucher."
+  },
+  "colesterolo": {
+    "tipo": "molecola",
+    "base": "Un grasso che serve a costruire le membrane delle cellule e alcuni ormoni. Troppo nel sangue fa male alle arterie.",
+    "superiore": "Sterolo a 27 atomi di carbonio. Componente delle membrane animali (ne regola la fluidità), precursore di ormoni steroidei, acidi biliari e vitamina D. Lo produce il fegato e arriva con i cibi animali.",
+    "universita": "Sintesi da acetil-CoA; tappa limitante: HMG-CoA reduttasi (inibita dalle statine, regolata da SREBP-2). Trasportato nel sangue come esteri nelle lipoproteine (LDL, HDL). Eliminato con la bile, come tale o come acidi biliari.",
+    "clinica": "LDL-colesterolo alto è un fattore di rischio maggiore per aterosclerosi, infarto e ictus; gli obiettivi di LDL dipendono dal rischio cardiovascolare."
+  },
+  "complesso ormone-recettore": {
+    "tipo": "molecola",
+    "base": "L'ormone si è infilato nella sua «serratura» sulla cellula: il messaggio è arrivato.",
+    "superiore": "Unione tra l'ormone (ligando) e il suo recettore. Il legame è specifico e reversibile e cambia la forma del recettore, che così passa il segnale all'interno.",
+    "universita": "Il legame segue la legge di azione di massa (costante di dissociazione Kd). Agonisti stabilizzano la conformazione attiva, antagonisti occupano il recettore senza attivarlo, agonisti inversi riducono l'attività di base.",
+    "clinica": "I β-bloccanti (metoprololo, bisoprololo) sono antagonisti dei recettori β-adrenergici: rallentano il cuore e abbassano la pressione."
+  },
+  "recettore accoppiato a proteine G (GPCR)": {
+    "tipo": "enzima",
+    "base": "Un'antenna sulla superficie della cellula: riceve il messaggio fuori e accende un interruttore dentro.",
+    "superiore": "Recettore di membrana formato da una catena che attraversa la membrana 7 volte. Quando lega l'ormone attiva una proteina G all'interno della cellula. Esempi: recettori adrenergici, muscarinici, degli oppioidi, della luce (rodopsina).",
+    "universita": "È la famiglia di recettori più grande dell'uomo e il bersaglio di circa un terzo dei farmaci in commercio. Agisce come fattore di scambio (GEF) per la Gα. Accoppiamenti tipici: β₁, β₂, D₁, V₂, H₂ → Gs; α₂, M₂, D₂, μ → Gi; α₁, M₁, M₃, AT1, H₁ → Gq.",
+    "clinica": "Bersaglio di β-bloccanti, β₂-agonisti (salbutamolo), antistaminici, oppioidi, antipsicotici (antagonisti D₂), sartani (AT1)."
+  },
+  "Gαs-GTP": {
+    "tipo": "molecola",
+    "base": "L'interruttore acceso: porta il messaggio all'enzima che produce il secondo messaggero.",
+    "superiore": "Subunità α della proteina Gs legata al GTP: è la forma attiva, che si stacca da βγ e attiva l'adenilato ciclasi.",
+    "universita": "Resta attiva finché non idrolizza il GTP con la sua attività GTPasica intrinseca (accelerata dalle proteine RGS e dall'adenilato ciclasi stessa). Il GTP idrolizzato a GDP la fa tornare a riassociarsi con βγ.",
+    "clinica": "Mutazioni attivanti di GNAS (gene di Gαs) in mosaico: sindrome di McCune-Albright (displasia fibrosa, macchie caffellatte, pubertà precoce). Mutazioni GNAS si trovano in alcuni adenomi ipofisari che producono GH (acromegalia)."
+  },
+  "proteina Gs": {
+    "tipo": "enzima",
+    "base": "Un interruttore dentro la cellula: si accende quando l'antenna riceve il messaggio.",
+    "superiore": "Proteina G stimolatoria, formata da tre subunità (α, β, γ). Attivata dal recettore, scambia GDP con GTP e accende l'adenilato ciclasi.",
+    "universita": "Proteina G eterotrimerica ancorata alla membrana con lipidi. Le famiglie principali sono Gs (stimola l'adenilato ciclasi), Gi/o (la inibisce; βγ apre canali K⁺ GIRK), Gq/11 (attiva la fosfolipasi C-β), G12/13 (Rho). Il complesso βγ ha anche effetti propri.",
+    "clinica": "Tossina colerica: blocca Gs nella forma attiva. Pseudoipoparatiroidismo tipo 1a (osteodistrofia di Albright): mutazione inattivante di GNAS con resistenza al PTH."
+  },
+  "AMP ciclico (cAMP)": {
+    "tipo": "molecola",
+    "smiles": "Nc1ncnc2c1ncn2C1OC2COP(=O)(O)OC2C1O",
+    "base": "Un piccolo messaggero dentro la cellula: porta l'ordine dell'ormone a tutti i reparti.",
+    "superiore": "Adenosina monofosfato ciclico: secondo messaggero prodotto dall'ATP dall'adenilato ciclasi. Attiva la proteina chinasi A.",
+    "universita": "Il fosfato forma un anello con gli ossidrili 3' e 5' del ribosio. Bersagli: PKA, proteine EPAC, canali attivati da nucleotidi ciclici (CNG). È degradato dalle fosfodiesterasi a 5'-AMP. Lo usano adrenalina (β), glucagone, ADH (V₂), PTH, TSH, ACTH, FSH, LH.",
+    "clinica": "Il cAMP alto negli enterociti causa la diarrea del colera e dell'Escherichia coli enterotossigeno (tossina termolabile)."
+  },
+  "adenilato ciclasi": {
+    "tipo": "enzima",
+    "base": "La «fabbrica» di messaggeri: quando è accesa produce tante copie del messaggio dentro la cellula.",
+    "superiore": "Enzima della membrana che trasforma l'ATP in AMP ciclico. È attivato dalla proteina Gs e inibito dalla proteina Gi.",
+    "universita": "Liasi (EC 4.6.1.1): ATP → cAMP + PPi. Nove isoforme di membrana (12 eliche transmembrana, due domini catalitici citoplasmatici) più una solubile (sAC, sensibile al bicarbonato). Attivata in modo diretto dalla forskolina.",
+    "clinica": "La tossina dell'antrace (fattore dell'edema) e quella della pertosse (Bordetella, adenilato ciclasi-emolisina) sono esse stesse adenilato ciclasi che entrano nelle cellule."
+  },
+  "PKA attiva": {
+    "tipo": "enzima",
+    "base": "L'enzima ormai sveglio: va in giro ad «accendere» le altre proteine.",
+    "superiore": "Subunità catalitiche della proteina chinasi A liberate dal cAMP: fosforilano le proteine bersaglio.",
+    "universita": "Le subunità catalitiche libere sono localizzate in punti precisi della cellula dalle proteine AKAP. Una parte entra nel nucleo e fosforila CREB (serina 133), che accende geni con elementi CRE (es. PEPCK nella gluconeogenesi).",
+    "clinica": "Mutazioni di PRKAR1A (subunità regolatrice): complesso di Carney (mixomi cardiaci, lentigginosi, iperplasia surrenalica)."
+  },
+  "proteina chinasi A (PKA)": {
+    "tipo": "enzima",
+    "base": "Un aiutante che attacca dei «bollini» (fosfati) alle altre proteine per accenderle o spegnerle.",
+    "superiore": "Chinasi dipendente dal cAMP: a riposo è inattiva; il cAMP la attiva e lei trasferisce fosfati dall'ATP a serine e treonine di molte proteine.",
+    "universita": "Transferasi (EC 2.7.11.11). Tetramero R₂C₂: ogni subunità regolatrice R lega 2 cAMP e libera una subunità catalitica C. Bersagli: fosforilasi chinasi, glicogeno sintasi (inibita), lipasi ormono-sensibile, PFK-2/FBPasi-2 epatica, canali del Ca²⁺ di tipo L e fosfolambano nel cuore, CFTR, CREB.",
+    "clinica": "Nel cuore la PKA spiega gli effetti dei β-agonisti: più forza (canali del Ca²⁺) e rilassamento più rapido (fosfolambano)."
+  },
+  "proteine bersaglio fosforilate": {
+    "tipo": "molecola",
+    "base": "Le proteine che hanno ricevuto il «bollino» e ora cambiano lavoro.",
+    "superiore": "Proteine a cui la chinasi ha attaccato un fosfato: la fosforilazione cambia la loro forma e quindi la loro attività (alcune si accendono, altre si spengono).",
+    "universita": "La fosforilazione reversibile è il principale interruttore della cellula. Nel fegato con glucagone o adrenalina: fosforilasi chinasi e glicogeno fosforilasi attive, glicogeno sintasi inattiva, PFK-2 spenta (meno fruttosio 2,6-bisfosfato: meno glicolisi, più gluconeogenesi). Le fosfatasi (es. PP1) annullano l'effetto.",
+    "clinica": ""
+  },
+  "risposta della cellula": {
+    "tipo": "struttura",
+    "base": "Quello che la cellula fa dopo aver ricevuto il messaggio: per esempio liberare zucchero per avere energia.",
+    "superiore": "Effetto finale del segnale. Con l'adrenalina: nel fegato si libera glucosio nel sangue, nel muscolo si usa glucosio per contrarsi, nel tessuto adiposo si liberano acidi grassi, il cuore batte più forte.",
+    "universita": "Risposte rapide (minuti): modifica di enzimi e canali per fosforilazione. Risposte lente (ore): cambiamento dell'espressione genica (CREB). Lo stesso secondo messaggero dà risposte diverse in cellule diverse perché cambiano i bersagli presenti.",
+    "clinica": ""
+  },
+  "glicogeno fosforilasi": {
+    "tipo": "enzima",
+    "base": "L'aiutante che stacca pezzetti di zucchero dalla scorta (glicogeno) quando serve energia.",
+    "superiore": "Enzima che stacca una molecola di glucosio alla volta dalle estremità del glicogeno usando un fosfato: si forma glucosio 1-fosfato. È attivato da adrenalina e glucagone.",
+    "universita": "Transferasi (EC 2.4.1.1), fosforolisi dei legami α(1→4); cofattore piridossal fosfato (vitamina B6). Forma b (meno attiva) e forma a (fosforilata dalla fosforilasi chinasi). Nel muscolo è attivata anche da AMP e Ca²⁺; nel fegato è inibita dal glucosio. Si ferma a 4 residui da una ramificazione: serve l'enzima deramificante.",
+    "clinica": "Deficit della forma muscolare: malattia di McArdle (glicogenosi V), crampi e mioglobinuria sotto sforzo, senza aumento del lattato. Deficit epatico: malattia di Hers (glicogenosi VI)."
+  },
+  "glucosio 1-fosfato": {
+    "tipo": "zucchero",
+    "base": "Lo zucchero appena staccato dalla scorta, con un'etichetta attaccata.",
+    "superiore": "Glucosio con un fosfato sul carbonio 1: si forma dalla demolizione del glicogeno e si trasforma in glucosio 6-fosfato.",
+    "universita": "Convertito in glucosio 6-fosfato dalla fosfoglucomutasi (reversibile). Nella sintesi del glicogeno reagisce con UTP e forma UDP-glucosio. Nel fegato il glucosio 6-fosfato diventa glucosio libero (glucosio 6-fosfatasi); nel muscolo, che non ha la fosfatasi, entra nella glicolisi.",
+    "clinica": ""
+  },
+  "segnale spento": {
+    "tipo": "struttura",
+    "base": "Il messaggio è finito: gli interruttori tornano spenti e la cellula è pronta per un nuovo segnale.",
+    "superiore": "Fine della risposta: l'ormone si stacca, la proteina G torna inattiva, il cAMP viene distrutto e i fosfati vengono tolti dalle fosfatasi.",
+    "universita": "Spegnimento a più livelli: dissociazione del ligando; idrolisi del GTP di Gα (accelerata dalle RGS); fosfodiesterasi; proteine fosfatasi (PP1, PP2A); desensibilizzazione del recettore (GRK, arrestine). Senza spegnimento la cellula resterebbe sempre accesa.",
+    "clinica": ""
+  },
+  "fosfodiesterasi": {
+    "tipo": "enzima",
+    "base": "L'aiutante che distrugge il messaggero (cAMP) quando il messaggio è finito.",
+    "superiore": "Enzima che rompe l'anello dell'AMP ciclico (o del GMP ciclico) e lo trasforma in AMP: spegne il segnale.",
+    "universita": "Idrolasi (EC 3.1.4.17 per i nucleotidi ciclici), 11 famiglie (PDE1-11). PDE3 (cuore, piastrine, adipociti; attivata dall'insulina), PDE4 (cellule infiammatorie, cAMP), PDE5 (muscolo liscio dei corpi cavernosi e del polmone, cGMP). Le metilxantine (caffeina, teofillina) sono inibitori non selettivi.",
+    "clinica": "Inibitori: sildenafil e tadalafil (PDE5: disfunzione erettile, ipertensione polmonare), milrinone (PDE3: scompenso acuto), roflumilast (PDE4: BPCO), teofillina (asma)."
+  },
+  "recettore desensibilizzato": {
+    "tipo": "molecola",
+    "base": "L'antenna, stanca di ricevere sempre lo stesso messaggio, si spegne o viene ritirata dalla superficie.",
+    "superiore": "Recettore che risponde meno dopo una stimolazione lunga o intensa. La cellula così non resta accesa per sempre.",
+    "universita": "Desensibilizzazione omologa (GRK + β-arrestina: solo il recettore stimolato) ed eterologa (PKA o PKC fosforilano anche recettori non occupati). Le arrestine portano il recettore nelle fossette di clatrina: dagli endosomi può tornare in membrana (risensibilizzazione) o essere degradato nei lisosomi (down-regulation).",
+    "clinica": "Tachifilassi: l'uso eccessivo di β₂-agonisti nell'asma ne riduce l'effetto; la tolleranza agli oppioidi ha in parte lo stesso meccanismo."
+  },
+  "chinasi dei recettori accoppiati a proteine G (GRK)": {
+    "tipo": "enzima",
+    "base": "Un aiutante che mette un «cartello di chiuso» sull'antenna quando lavora troppo.",
+    "superiore": "Chinasi che fosforilano i recettori accoppiati a proteine G quando sono occupati dall'ormone. Il recettore fosforilato lega la β-arrestina e smette di attivare la proteina G.",
+    "universita": "Sette GRK (GRK2, detta anche βARK1, è richiamata in membrana dalle subunità βγ). Le β-arrestine bloccano l'accoppiamento con la proteina G, portano all'endocitosi del recettore e possono avviare vie di segnale proprie (es. MAP chinasi).",
+    "clinica": "Nello scompenso cardiaco GRK2 aumenta e i recettori β₁ sono desensibilizzati e ridotti: il cuore risponde meno alle catecolamine."
+  },
+  "Gαq-GTP": {
+    "tipo": "molecola",
+    "base": "Un altro interruttore acceso: fa liberare calcio dentro la cellula.",
+    "superiore": "Subunità α della proteina Gq legata al GTP: attiva la fosfolipasi C-β.",
+    "universita": "Recettori accoppiati a Gq: α₁-adrenergici, muscarinici M₁, M₃, M₅, AT1 dell'angiotensina II, V₁ della vasopressina, H₁ dell'istamina, recettori dell'endotelina, del TRH e del GnRH.",
+    "clinica": "Mutazioni attivanti di GNAQ: sindrome di Sturge-Weber e macchie color vino; si trovano anche nel melanoma uveale."
+  },
+  "IP₃ e DAG": {
+    "tipo": "molecola",
+    "base": "Due messaggeri nati dallo stesso pezzo di membrana: uno libera calcio, l'altro accende un aiutante.",
+    "superiore": "Inositolo 1,4,5-trisfosfato (IP₃) e diacilglicerolo (DAG): secondi messaggeri prodotti dalla fosfolipasi C. L'IP₃ fa uscire Ca²⁺ dal reticolo endoplasmatico; il DAG resta in membrana e attiva la proteina chinasi C.",
+    "universita": "L'IP₃ è solubile e si lega ai recettori-canale IP₃R del reticolo. Il DAG, con Ca²⁺ e fosfatidilserina, attiva le PKC classiche; può essere trasformato in acido fosfatidico o liberare acido arachidonico. L'IP₃ viene defosforilato fino a inositolo.",
+    "clinica": "Il litio inibisce l'inositolo monofosfatasi e riduce il riciclo dell'inositolo: è una delle ipotesi sul suo effetto nel disturbo bipolare. Gli esteri del forbolo, promotori tumorali, imitano il DAG."
+  },
+  "fosfolipasi C-β": {
+    "tipo": "enzima",
+    "base": "Le «forbici» che tagliano un pezzo della membrana in due messaggeri.",
+    "superiore": "Enzima attivato dalla proteina Gq che taglia il PIP₂ della membrana in IP₃ e DAG.",
+    "universita": "Idrolasi (EC 3.1.4.11), dipendente dal Ca²⁺. Le isoforme PLC-β sono attivate da Gαq (e da βγ); le PLC-γ sono attivate dai recettori tirosin-chinasici, che le fosforilano.",
+    "clinica": ""
+  },
+  "PIP₂": {
+    "tipo": "molecola",
+    "base": "Un piccolo grasso della membrana che, tagliato, diventa due messaggeri.",
+    "superiore": "Fosfatidilinositolo 4,5-bisfosfato: fosfolipide del foglietto interno della membrana plasmatica, presente in piccola quantità; dal suo taglio nascono IP₃ e DAG.",
+    "universita": "Regola direttamente molti canali e l'actina. È anche il substrato della PI3K, che lo fosforila a PIP₃ (fosfatidilinositolo 3,4,5-trisfosfato), il segnale che richiama Akt nella via dell'insulina. PTEN riporta PIP₃ a PIP₂.",
+    "clinica": "PTEN è un oncosoppressore: le sue mutazioni (sindrome di Cowden e molti tumori) lasciano la via PI3K-Akt sempre accesa."
+  },
+  "recettore tirosin-chinasico fosforilato": {
+    "tipo": "enzima",
+    "base": "L'antenna accesa che si è attaccata da sola dei «bollini» e ora richiama tanti aiutanti.",
+    "superiore": "Recettore che è anche un enzima: legato l'ormone o il fattore di crescita, fosforila le proprie tirosine. Le tirosine fosforilate fanno da punti di aggancio per altre proteine.",
+    "universita": "Un solo passaggio in membrana, dominio chinasi citoplasmatico. Il ligando fa dimerizzare il recettore (EGFR, PDGFR, VEGFR) o riorienta un dimero già formato (recettore dell'insulina e dell'IGF-1), e i due monomeri si fosforilano a vicenda (transfosforilazione). Le proteine con domini SH2 o PTB riconoscono le fosfotirosine.",
+    "clinica": "Bersaglio di molti farmaci antitumorali: anticorpi (trastuzumab su HER2, cetuximab su EGFR) e inibitori di tirosin-chinasi (gefitinib, osimertinib su EGFR mutato)."
+  },
+  "recettore dell'insulina": {
+    "tipo": "enzima",
+    "base": "La «serratura» dell'insulina sulle cellule: quando la chiave entra, la cellula apre le porte allo zucchero.",
+    "superiore": "Recettore tirosin-chinasico formato da due subunità α (fuori, legano l'insulina) e due β (attraversano la membrana, sono chinasi). Attivato, fa entrare il glucosio in muscolo e adipe e favorisce l'accumulo di energia.",
+    "universita": "Eterotetramero (αβ)₂ unito da ponti disolfuro. Fosforila IRS-1 e IRS-2 → PI3K → PIP₃ → PDK1 e Akt (PKB) → traslocazione di GLUT4, inibizione di GSK3 (glicogeno sintasi attiva), mTOR (sintesi proteica). Via Grb2-SOS-Ras accende anche le MAP chinasi (crescita).",
+    "clinica": "Insulino-resistenza (difetti a valle del recettore) nel diabete tipo 2 e nella sindrome metabolica. Mutazioni del recettore: leprecaunismo (sindrome di Donohue), sindrome di Rabson-Mendenhall; acanthosis nigricans come segno cutaneo."
+  },
+  "proliferazione cellulare": {
+    "tipo": "struttura",
+    "base": "Le cellule si dividono e diventano di più: serve per crescere e riparare, ma senza freni nasce un tumore.",
+    "superiore": "Aumento del numero di cellule per divisione cellulare. È stimolata dai fattori di crescita e controllata da freni (oncosoppressori). Quando i segnali di crescita restano sempre accesi si può sviluppare un tumore.",
+    "universita": "ERK attivato fosforila fattori di trascrizione (Elk-1, c-Fos, c-Myc) che aumentano la ciclina D: CDK4/6 fosforilano Rb, si libera E2F e la cellula supera il punto di restrizione in G1.",
+    "clinica": "Gli inibitori di CDK4/6 (palbociclib) si usano nel tumore della mammella con recettori ormonali positivi."
+  },
+  "Ras": {
+    "tipo": "enzima",
+    "base": "Un interruttore della crescita: quando è acceso dice alla cellula di dividersi. Se si inceppa acceso, può nascere un tumore.",
+    "superiore": "Piccola proteina G (GTPasi monomerica) attaccata alla membrana. Con GTP è accesa e attiva la cascata delle MAP chinasi; quando idrolizza il GTP si spegne.",
+    "universita": "Isoforme H-, K- e N-Ras. SOS (fattore di scambio, GEF) la accende; le GAP (es. neurofibromina, NF1) accelerano l'idrolisi del GTP e la spengono. Effettori: Raf → MEK → ERK, e anche PI3K. Le mutazioni oncogene (spesso ai codoni 12, 13, 61) impediscono l'idrolisi del GTP: Ras resta accesa.",
+    "clinica": "KRAS mutato è frequentissimo nel carcinoma del pancreas e comune in colon e polmone; nel colon-retto predice la mancata risposta agli anti-EGFR. Esistono inibitori di KRAS G12C (sotorasib). Neurofibromatosi tipo 1: perdita della GAP neurofibromina."
+  },
+  "tossina colerica": {
+    "tipo": "molecola",
+    "base": "Il veleno del batterio del colera: blocca un interruttore dell'intestino in posizione «acceso» e fa perdere tantissima acqua.",
+    "superiore": "Tossina di Vibrio cholerae. Entra nelle cellule dell'intestino e tiene sempre attiva la proteina Gs: il cAMP sale, si apre il CFTR, escono Cl⁻ e acqua e compare una diarrea acquosa abbondante.",
+    "universita": "Tossina AB₅: le 5 subunità B legano il ganglioside GM1; la subunità A1 ADP-ribosila Gαs (arginina 201) usando NAD⁺ e ne blocca l'attività GTPasica. Il cAMP alto attiva PKA → CFTR (secrezione di Cl⁻) e riduce l'assorbimento di NaCl. La tossina termolabile di E. coli enterotossigeno agisce allo stesso modo.",
+    "clinica": "Colera: diarrea ad «acqua di riso», disidratazione e shock in poche ore. Terapia: reidratazione orale (sfrutta SGLT1, che resta funzionante) o endovenosa; antibiotici di supporto. Esiste un vaccino orale."
+  },
+  "tossina della pertosse": {
+    "tipo": "molecola",
+    "base": "Il veleno del batterio della pertosse: toglie a un interruttore la capacità di spegnere, così il messaggio resta acceso.",
+    "superiore": "Tossina di Bordetella pertussis. Blocca la proteina Gi, che normalmente frena l'adenilato ciclasi: il cAMP nelle cellule aumenta.",
+    "universita": "Tossina AB₅: la subunità S1 ADP-ribosila la Gαi (cisteina vicino all'estremità C-terminale), che resta legata al GDP e non può più essere attivata dal recettore. Si perde il freno sull'adenilato ciclasi. In laboratorio si usa per riconoscere le vie che passano da Gi/o.",
+    "clinica": "Pertosse: tosse parossistica con «urlo» inspiratorio, pericolosa nei lattanti (apnee). Linfocitosi marcata e talvolta ipoglicemia (più secrezione di insulina). Prevenzione: vaccino acellulare (contiene tossina inattivata), anche in gravidanza; terapia: macrolidi."
+  },
+  "caffeina": {
+    "tipo": "molecola",
+    "smiles": "Cn1cnc2c1c(=O)n(C)c(=O)n2C",
+    "base": "La sostanza del caffè che tiene svegli.",
+    "superiore": "Alcaloide del gruppo delle metilxantine (1,3,7-trimetilxantina), presente in caffè, tè, cacao e bevande energetiche. Stimola il sistema nervoso.",
+    "universita": "Alle dosi abituali agisce soprattutto bloccando i recettori dell'adenosina (A₁ e A₂A); a concentrazioni più alte inibisce le fosfodiesterasi e aumenta il cAMP. Metabolizzata dal CYP1A2 del fegato (inibito dalla fluvoxamina e dai chinoloni, indotto dal fumo).",
+    "clinica": "Citrato di caffeina per le apnee del prematuro. Intossicazione: tachicardia, aritmie, tremori, convulsioni, ipokaliemia. La teofillina, parente stretta, ha un margine terapeutico ristretto."
+  },
+  "alleli": {
+    "tipo": "struttura",
+    "base": "Versioni diverse della stessa istruzione: per esempio la «ricetta» del colore degli occhi può essere per occhi chiari o scuri.",
+    "superiore": "Forme alternative di uno stesso gene, che occupano lo stesso locus sui cromosomi omologhi. Ogni individuo diploide ne ha due per ogni gene (uno materno e uno paterno).",
+    "universita": "Differiscono per variazioni di sequenza (sostituzioni, piccole inserzioni o delezioni, ripetizioni). In una popolazione un gene può avere molti alleli (alleli multipli: es. I^A, I^B, i del sistema AB0; centinaia per il gene CFTR). L'allele più comune è detto selvatico (wild type).",
+    "clinica": ""
+  },
+  "genotipo": {
+    "tipo": "struttura",
+    "base": "La coppia di «ricette» che ciascuno ha per un carattere, una dalla mamma e una dal papà.",
+    "superiore": "Insieme degli alleli di un individuo per un gene (o per tutti i geni). Omozigote dominante AA, eterozigote Aa, omozigote recessivo aa.",
+    "universita": "Per i geni del cromosoma X i maschi sono emizigoti (un solo allele). Il genotipo si determina con test molecolari o si ricava dagli incroci e dagli alberi genealogici. Frequenze dei genotipi in una popolazione: legge di Hardy-Weinberg (p² + 2pq + q² = 1).",
+    "clinica": "Con Hardy-Weinberg si stima la frequenza dei portatori di una malattia recessiva a partire da quella dei malati."
+  },
+  "fenotipo": {
+    "tipo": "struttura",
+    "base": "Come siamo fatti davvero, quello che si vede: colore dei capelli, altezza, gruppo sanguigno.",
+    "superiore": "Insieme dei caratteri osservabili o misurabili di un individuo. Dipende dal genotipo e dall'ambiente.",
+    "universita": "Lo stesso genotipo può dare fenotipi diversi: penetranza incompleta (non tutti i portatori mostrano il carattere) ed espressività variabile (intensità diversa). Genotipi diversi possono dare lo stesso fenotipo (AA e Aa; eterogeneità genetica).",
+    "clinica": "Nella fenilchetonuria il fenotipo dipende dalla dieta: con poca fenilalanina dalla nascita si evita il danno neurologico."
+  },
+  "allele dominante": {
+    "tipo": "struttura",
+    "base": "La «ricetta» più forte: se c'è anche una sola copia, è lei che si vede.",
+    "superiore": "Allele che si manifesta nel fenotipo anche in una sola copia (eterozigote). L'allele che si vede solo in doppia copia è recessivo. Si indicano con lettera maiuscola (A) e minuscola (a).",
+    "universita": "A livello molecolare il recessivo è spesso una perdita di funzione compensata dall'altro allele (aplosufficienza). Il dominante può essere un guadagno di funzione, un effetto dominante negativo (proteina difettosa che blocca quella normale) o una aploinsufficienza.",
+    "clinica": "Esempi di malattie dominanti: corea di Huntington (guadagno di funzione), osteogenesi imperfetta (dominante negativo sul collagene), ipercolesterolemia familiare (aploinsufficienza del recettore LDL)."
+  },
+  "generazione P (linee pure)": {
+    "tipo": "struttura",
+    "base": "I «nonni» dell'esperimento: piante che da sempre fanno figli tutti uguali a loro.",
+    "superiore": "Generazione parentale: individui di linea pura (omozigoti) per un carattere, che incrociati fra loro danno sempre figli con lo stesso carattere. Mendel la otteneva con molte generazioni di autoimpollinazione.",
+    "universita": "Mendel scelse il pisello (Pisum sativum) perché ha caratteri ben distinti, si autoimpollina e si può impollinare a mano. Studiò 7 caratteri (es. forma e colore del seme, colore del fiore, altezza della pianta) e contò migliaia di semi: approccio quantitativo. Pubblicò i risultati nel 1866.",
+    "clinica": ""
+  },
+  "generazione F1": {
+    "tipo": "struttura",
+    "base": "I figli: sono tutti uguali e mostrano solo il carattere «più forte».",
+    "superiore": "Prima generazione filiale, nata dall'incrocio di due linee pure diverse. Tutti gli individui sono eterozigoti (Aa) e hanno il fenotipo dominante: legge della dominanza (o dell'uniformità).",
+    "universita": "L'uniformità vale anche quando la dominanza non è completa: la F1 è tutta uguale, ma intermedia (dominanza incompleta) o con entrambi i caratteri (codominanza). Gli incroci reciproci (maschio AA × femmina aa e viceversa) danno lo stesso risultato se il gene non è sui cromosomi sessuali.",
+    "clinica": ""
+  },
+  "gameti": {
+    "tipo": "struttura",
+    "base": "Le cellule speciali per fare un figlio (cellula uovo e spermatozoo): portano metà delle istruzioni di ciascun genitore.",
+    "superiore": "Cellule riproduttive aploidi (n) prodotte dalla meiosi. Portano un solo allele per ogni gene; un eterozigote Aa produce metà gameti A e metà gameti a (legge della segregazione).",
+    "universita": "La segregazione corrisponde alla separazione degli omologhi in anafase I (o dei cromatidi in anafase II, per i tratti scambiati dal crossing-over). Mendel la dedusse senza conoscere i cromosomi; la teoria cromosomica dell'ereditarietà (Sutton e Boveri, inizio Novecento) ne diede la spiegazione.",
+    "clinica": ""
+  },
+  "generazione F2": {
+    "tipo": "struttura",
+    "base": "I nipoti: qui ricompare anche il carattere che nei figli si era nascosto, in circa 1 caso su 4.",
+    "superiore": "Seconda generazione filiale, dall'incrocio di due F1 (Aa × Aa). Genotipi 1 AA : 2 Aa : 1 aa; fenotipi 3 dominanti : 1 recessivo.",
+    "universita": "I rapporti sono probabilità: si osservano bene solo con molti figli; lo scarto dai valori attesi si valuta con il test del chi quadrato. Mendel ottenne, ad esempio, circa 3 semi gialli per ogni seme verde.",
+    "clinica": "Due genitori portatori sani di una malattia autosomica recessiva: a ogni gravidanza 1/4 di probabilità di figlio malato, 1/2 portatore, 1/4 non portatore; un figlio sano ha 2/3 di probabilità di essere portatore."
+  },
+  "reincrocio (testcross)": {
+    "tipo": "struttura",
+    "base": "Un esperimento per scoprire se una pianta che sembra «dominante» nasconde anche la ricetta recessiva.",
+    "superiore": "Incrocio di un individuo con fenotipo dominante (AA o Aa) con un omozigote recessivo (aa). Se tutti i figli sono dominanti l'individuo era AA; se metà sono recessivi era Aa (1:1).",
+    "universita": "Il reincrocio rende visibili nei figli i gameti prodotti dall'individuo in esame, perché l'omozigote recessivo dà solo gameti a. Con due geni (AaBb × aabb) mostra direttamente le proporzioni dei 4 tipi di gameti: 1:1:1:1 se indipendenti, con prevalenza dei parentali se associati.",
+    "clinica": ""
+  },
+  "omozigote recessivo": {
+    "tipo": "struttura",
+    "base": "Un individuo che ha due copie della ricetta «debole»: è l'unico che la mostra.",
+    "superiore": "Individuo con due alleli recessivi uguali (aa): mostra il fenotipo recessivo e produce solo gameti a. Per questo si usa nel reincrocio.",
+    "universita": "Nelle malattie autosomiche recessive i malati sono omozigoti (o eterozigoti composti, con due alleli malati diversi). La consanguineità dei genitori aumenta la probabilità di omozigosi.",
+    "clinica": ""
+  },
+  "diibrido (AaBb)": {
+    "tipo": "struttura",
+    "base": "Una pianta che ha due caratteri «mescolati» insieme, per esempio colore e forma del seme.",
+    "superiore": "Individuo eterozigote per due geni diversi (AaBb), ottenuto incrociando due linee pure che differiscono per due caratteri (es. AABB semi gialli e lisci × aabb semi verdi e rugosi).",
+    "universita": "Un diibrido può avere gli alleli in fase di accoppiamento (AB/ab, cis) o di repulsione (Ab/aB, trans): la differenza conta solo se i geni sono associati.",
+    "clinica": ""
+  },
+  "gameti AB, Ab, aB, ab": {
+    "tipo": "struttura",
+    "base": "Le quattro combinazioni possibili che un genitore può passare quando i due caratteri si mescolano a caso.",
+    "superiore": "I quattro tipi di gameti di un diibrido. Se i due geni stanno su cromosomi diversi si formano in uguale proporzione (1/4 ciascuno): legge dell'assortimento indipendente.",
+    "universita": "Con n coppie di geni indipendenti i tipi di gameti sono 2ⁿ: con 23 coppie di cromosomi l'uomo può formare 2²³ (oltre 8 milioni) combinazioni solo per l'assortimento degli omologhi, prima ancora del crossing-over.",
+    "clinica": ""
+  },
+  "F2 diibrida (9:3:3:1)": {
+    "tipo": "struttura",
+    "base": "Mescolando due caratteri nascono quattro tipi di piante, in proporzioni sempre uguali.",
+    "superiore": "Discendenza di AaBb × AaBb: 16 combinazioni nel quadrato di Punnett, con fenotipi 9 A_B_ : 3 A_bb : 3 aaB_ : 1 aabb. Compaiono anche combinazioni nuove (ricombinanti) assenti nei genitori P.",
+    "universita": "Il 9:3:3:1 è il prodotto di due 3:1 indipendenti ((3:1) × (3:1)). Rapporti modificati (9:7, 9:3:4, 12:3:1, 15:1) indicano interazioni fra geni (epistasi).",
+    "clinica": ""
+  },
+  "geni associati": {
+    "tipo": "struttura",
+    "base": "Due istruzioni scritte vicine sullo stesso cromosoma: di solito vengono passate ai figli insieme.",
+    "superiore": "Geni che si trovano sullo stesso cromosoma vicini fra loro: non si assortiscono in modo indipendente. Si separano solo quando avviene un crossing-over fra di loro.",
+    "universita": "Frequenza di ricombinazione = ricombinanti / totale; 1% = 1 centiMorgan (Morgan e Sturtevant, Drosophila). Non supera il 50%: geni molto lontani sembrano indipendenti. Su questo principio si basano le mappe genetiche e gli studi di linkage.",
+    "clinica": "Gli studi di linkage nelle famiglie hanno permesso di localizzare i geni di molte malattie (es. corea di Huntington, fibrosi cistica) prima di conoscerne la sequenza."
+  },
+  "eredità autosomica recessiva": {
+    "tipo": "struttura",
+    "base": "Una malattia che compare solo se si ricevono due copie difettose, una da ciascun genitore; i genitori di solito stanno bene.",
+    "superiore": "Il gene è su un autosoma e servono due alleli malati. I genitori sono di solito portatori sani; il rischio a ogni gravidanza è 1/4; maschi e femmine sono colpiti allo stesso modo; la malattia può «saltare» generazioni.",
+    "universita": "Spesso difetti enzimatici (perdita di funzione). Più frequente nei figli di consanguinei e in popolazioni isolate. Esempi: fibrosi cistica, fenilchetonuria, anemia falciforme, β-talassemia, emocromatosi ereditaria, atrofia muscolare spinale.",
+    "clinica": "Fibrosi cistica: in Europa circa 1 persona su 25-30 è portatrice. Screening dei portatori e diagnosi prenatale nelle coppie a rischio; screening neonatale per molte malattie metaboliche."
+  },
+  "eredità autosomica dominante": {
+    "tipo": "struttura",
+    "base": "Una malattia che compare anche con una sola copia difettosa: chi è malato ha un genitore malato.",
+    "superiore": "Il gene è su un autosoma e basta un allele malato. Ogni figlio di un malato ha 1/2 di probabilità di ereditarla; compare in ogni generazione; colpisce maschi e femmine; c'è trasmissione da padre a figlio maschio.",
+    "universita": "Spesso coinvolge proteine strutturali o recettori. Fenomeni tipici: penetranza incompleta, espressività variabile, mutazioni nuove (de novo, es. acondroplasia), anticipazione nelle malattie da espansione di triplette. Esempi: Huntington, ipercolesterolemia familiare, sindrome di Marfan, rene policistico dell'adulto, neurofibromatosi tipo 1.",
+    "clinica": "Corea di Huntington: espansione CAG nel gene HTT, esordio di solito in età adulta; il test predittivo richiede consulenza genetica."
+  },
+  "eredità legata all'X": {
+    "tipo": "struttura",
+    "base": "Una malattia scritta sul cromosoma X: colpisce soprattutto i maschi, perché hanno un solo X.",
+    "superiore": "Il gene è sul cromosoma X. Nella forma recessiva i maschi (XY) sono malati con un solo allele; le femmine di solito sono portatrici. Una madre portatrice ha 1/2 di probabilità di figli maschi malati e 1/2 di figlie portatrici; non c'è trasmissione padre-figlio.",
+    "universita": "Tutte le figlie di un padre malato sono portatrici obbligate. Nelle femmine l'inattivazione casuale di un X (lyonizzazione) può rendere sintomatiche alcune portatrici. Esempi recessivi: emofilia A e B, distrofia muscolare di Duchenne, deficit di G6PD, daltonismo. Esistono forme dominanti legate all'X (rachitismo ipofosfatemico, sindrome di Rett).",
+    "clinica": "Emofilia A (deficit di fattore VIII): emartri e sanguinamenti, aPTT allungato con PT normale; terapia con fattore VIII o emicizumab."
+  },
+  "dominanza incompleta": {
+    "tipo": "struttura",
+    "base": "Quando nessuna ricetta vince: un fiore rosso e uno bianco danno figli rosa.",
+    "superiore": "L'eterozigote ha un fenotipo intermedio fra i due omozigoti. Esempio: bocca di leone rossa × bianca → F1 rosa; nella F2 fenotipi e genotipi coincidono (1 rosso : 2 rosa : 1 bianco).",
+    "universita": "Si spiega con l'effetto dose: un solo allele funzionante produce metà del prodotto (es. pigmento). In medicina molte malattie «dominanti» sono più gravi negli omozigoti, che quindi hanno un fenotipo diverso dagli eterozigoti.",
+    "clinica": "Ipercolesterolemia familiare: gli eterozigoti hanno LDL alte e infarto in età adulta; gli omozigoti, molto più rari, hanno LDL altissime e malattia coronarica già nell'infanzia."
+  },
+  "codominanza": {
+    "tipo": "struttura",
+    "base": "Quando le due ricette si vedono tutte e due insieme, come nel gruppo sanguigno AB.",
+    "superiore": "Nell'eterozigote si manifestano entrambi gli alleli. Esempio: gruppi AB0, dove A e B sono codominanti (gruppo AB) e 0 è recessivo rispetto a entrambi.",
+    "universita": "Nel sistema AB0 ci sono tre alleli (alleli multipli): I^A e I^B codificano glicosiltransferasi diverse, i non codifica un enzima attivo. Genotipi: AA o A0 → gruppo A; BB o B0 → gruppo B; AB → AB; 00 → 0. Codominanti sono anche i gruppi MN e gli alleli HLA.",
+    "clinica": "Esclusione di paternità e compatibilità trasfusionale si basano sulla codominanza AB0; due genitori di gruppo 0 non possono avere un figlio di gruppo A o B (salvo rarissime eccezioni come il fenotipo Bombay)."
+  },
+  "numero di ossidazione": {
+    "tipo": "struttura",
+    "base": "Un numero che dice quanti «pezzettini di carica» un atomo ha dato o preso in una molecola.",
+    "superiore": "Carica che un atomo avrebbe se tutti i suoi legami fossero ionici (gli elettroni assegnati all'atomo più elettronegativo). Serve a capire chi si ossida e chi si riduce.",
+    "universita": "Regole: elementi allo stato elementare 0; ioni monoatomici = carica; F sempre −1; O di solito −2 (−1 nei perossidi, +2 in OF₂); H di solito +1 (−1 negli idruri metallici); la somma è 0 nelle molecole neutre e pari alla carica negli ioni. Esempio: in MnO₄⁻ il Mn ha +7; nel Cr₂O₇²⁻ il Cr ha +6.",
+    "clinica": ""
+  },
+  "ossidazione": {
+    "tipo": "struttura",
+    "base": "Quando una sostanza perde elettroni: succede quando il ferro arrugginisce o quando bruciamo il cibo per avere energia.",
+    "superiore": "Perdita di elettroni da parte di una specie chimica: il suo numero di ossidazione aumenta. In chimica organica corrisponde spesso a guadagno di ossigeno o perdita di idrogeno (alcol → aldeide → acido carbossilico).",
+    "universita": "Non avviene mai da sola: è sempre accoppiata a una riduzione. La combustione e la respirazione cellulare sono ossidazioni del carbonio fino a CO₂ (n.o. +4). La corrosione del ferro: Fe → Fe²⁺ + 2 e⁻, con O₂ come ossidante.",
+    "clinica": "Metaemoglobinemia: il ferro dell'emoglobina si ossida da Fe²⁺ a Fe³⁺ (nitriti, dapsone, anestetici locali come la benzocaina) e non lega più l'O₂; si cura con il blu di metilene, che la riduce."
+  },
+  "riducente": {
+    "tipo": "molecola",
+    "base": "La sostanza che regala elettroni a un'altra.",
+    "superiore": "Specie che cede elettroni e quindi riduce l'altra; nel farlo si ossida. Buoni riducenti sono i metalli alcalini, lo zinco, l'idrogeno, il carbonio, gli ioduri.",
+    "universita": "È tanto più forte quanto più basso (negativo) è il potenziale di riduzione della sua coppia (Li⁺/Li −3,04 V). Nella cellula i riducenti principali sono NADH (catabolismo), NADPH (sintesi e difese antiossidanti) e il glutatione ridotto.",
+    "clinica": "Antiossidanti come la vitamina C (acido ascorbico) e il glutatione sono riducenti; la N-acetilcisteina ricostituisce il glutatione nell'intossicazione da paracetamolo."
+  },
+  "elettroni (e⁻)": {
+    "tipo": "piccola",
+    "base": "Particelle piccolissime, con carica negativa, che girano attorno al nucleo degli atomi. Quando si muovono in un filo fanno la corrente elettrica.",
+    "superiore": "Particelle subatomiche con carica −1. Nelle ossidoriduzioni passano dal riducente all'ossidante; in una pila passano nel circuito esterno dall'anodo al catodo.",
+    "universita": "La carica di una mole di elettroni è la costante di Faraday, F ≈ 96 485 C/mol. In biologia gli elettroni viaggiano spesso con un protone (atomi di H) o come ione idruro (H⁻, NAD⁺/NADH), e lungo le catene di trasporto passano da un centro redox all'altro (Fe-S, eme, chinoni, rame).",
+    "clinica": ""
+  },
+  "riduzione": {
+    "tipo": "struttura",
+    "base": "Quando una sostanza acquista elettroni: è il contrario dell'ossidazione e avviene sempre insieme a lei.",
+    "superiore": "Acquisto di elettroni da parte di una specie chimica: il suo numero di ossidazione diminuisce. In chimica organica corrisponde spesso a guadagno di idrogeno o perdita di ossigeno (chetone → alcol secondario).",
+    "universita": "In biochimica le riduzioni delle vie di sintesi (acidi grassi, colesterolo, ciclo di Calvin) usano NADPH. Esempio: l'O₂ si riduce ad acqua nel complesso IV (O₂ + 4 e⁻ + 4 H⁺ → 2 H₂O).",
+    "clinica": "L'alcol aumenta il rapporto NADH/NAD⁺ nel fegato: il piruvato viene ridotto a lattato e la gluconeogenesi rallenta (ipoglicemia e acidosi lattica dell'alcolista)."
+  },
+  "ossidante": {
+    "tipo": "molecola",
+    "base": "La sostanza che «ruba» elettroni a un'altra.",
+    "superiore": "Specie che acquista elettroni e quindi ossida l'altra; nel farlo si riduce. Buoni ossidanti: O₂, alogeni (F₂, Cl₂), permanganato (MnO₄⁻), dicromato (Cr₂O₇²⁻), acqua ossigenata.",
+    "universita": "È tanto più forte quanto più alto è il potenziale di riduzione della sua coppia (F₂/F⁻ +2,87 V). Il potere ossidante di MnO₄⁻ e Cr₂O₇²⁻ dipende dal pH (servono H⁺ nella semireazione).",
+    "clinica": "Disinfettanti ossidanti: ipoclorito (candeggina), acqua ossigenata, iodio (iodopovidone). I neutrofili uccidono i batteri con ossidanti prodotti dalla NADPH ossidasi e dalla mieloperossidasi (ipoclorito)."
+  },
+  "semireazioni bilanciate": {
+    "tipo": "struttura",
+    "base": "Si scrive a parte chi dà gli elettroni e chi li prende, e si controlla che i conti tornino.",
+    "superiore": "Le due metà di una redox scritte separatamente (ossidazione e riduzione), con atomi e cariche bilanciati. Sommate, con lo stesso numero di elettroni, danno la reazione completa bilanciata.",
+    "universita": "Esempio in ambiente acido: 5 Fe²⁺ + MnO₄⁻ + 8 H⁺ → 5 Fe³⁺ + Mn²⁺ + 4 H₂O. In ambiente basico si bilancia con OH⁻ e H₂O. La carica totale deve essere uguale a sinistra e a destra (qui +17).",
+    "clinica": ""
+  },
+  "metodo ionico-elettronico": {
+    "tipo": "struttura",
+    "base": "Una ricetta passo passo per scrivere bene le reazioni in cui si scambiano elettroni.",
+    "superiore": "Metodo per bilanciare le redox: 1) separare le semireazioni; 2) bilanciare gli atomi diversi da O e H; 3) bilanciare O con H₂O; 4) bilanciare H con H⁺; 5) bilanciare le cariche con e⁻; 6) moltiplicare per uguagliare gli elettroni; 7) sommare e semplificare.",
+    "universita": "In ambiente basico si procede come in acido e poi si aggiungono OH⁻ da entrambi i lati per neutralizzare gli H⁺. In alternativa si usa il metodo della variazione del numero di ossidazione, utile per le reazioni scritte in forma molecolare.",
+    "clinica": ""
+  },
+  "pila (cella galvanica)": {
+    "tipo": "struttura",
+    "base": "Un oggetto che produce corrente elettrica grazie a una reazione chimica, come le batterie del telecomando.",
+    "superiore": "Dispositivo che trasforma l'energia di una redox spontanea in energia elettrica. Anodo: ossidazione (polo negativo); catodo: riduzione (polo positivo). Esempio: pila Daniell zinco-rame, 1,10 V in condizioni standard.",
+    "universita": "Notazione: Zn | Zn²⁺ ‖ Cu²⁺ | Cu (anodo a sinistra). La forza elettromotrice è E = E(catodo) − E(anodo). Una pila a concentrazione usa lo stesso elettrodo con concentrazioni diverse: genera tensione finché le concentrazioni non si uguagliano, come le membrane cellulari con gli ioni.",
+    "clinica": "Il potenziale di membrana delle cellule nasce, come in una pila a concentrazione, dalla diversa concentrazione degli ioni ai due lati (equazione di Nernst)."
+  },
+  "ponte salino": {
+    "tipo": "struttura",
+    "base": "Un tubicino pieno di sale che collega i due recipienti di una pila e permette alla corrente di continuare.",
+    "superiore": "Tubo a U con una soluzione di un sale (es. KCl o KNO₃) che collega le due semicelle. I suoi ioni si spostano e mantengono neutre le soluzioni; senza ponte la corrente si ferma subito.",
+    "universita": "Gli anioni migrano verso l'anodo (dove si formano cationi) e i cationi verso il catodo. Si usano sali con ioni di mobilità simile (K⁺ e Cl⁻) per ridurre il potenziale di giunzione liquida. In alternativa si usa un setto poroso.",
+    "clinica": ""
+  },
+  "potenziale standard di riduzione (E°)": {
+    "tipo": "energia",
+    "base": "Un numero che dice quanto una sostanza ha «voglia» di prendere elettroni.",
+    "superiore": "Potenziale di una semicella in condizioni standard (1 M, 1 atm, 25 °C) misurato rispetto all'elettrodo standard a idrogeno. Le coppie sono elencate nella serie elettrochimica: in alto gli ossidanti forti, in basso i riducenti forti.",
+    "universita": "Una coppia con E° più alto ossida spontaneamente la forma ridotta di una coppia con E° più basso. In biochimica si usa E°' a pH 7: NAD⁺/NADH −0,32 V, O₂/H₂O +0,82 V. Per il passaggio di 2 elettroni dal NADH all'O₂, ΔG°' = −nFΔE°' ≈ −220 kJ/mol.",
+    "clinica": ""
+  },
+  "elettrodo standard a idrogeno": {
+    "tipo": "struttura",
+    "base": "Il «metro» di riferimento con cui si misurano tutte le altre pile.",
+    "superiore": "Elettrodo di platino immerso in una soluzione con H⁺ 1 M, in cui gorgoglia idrogeno gassoso a 1 atm. Per convenzione il suo potenziale è 0 V: 2 H⁺ + 2 e⁻ ⇌ H₂.",
+    "universita": "È scomodo da usare: nella pratica si impiegano elettrodi di riferimento secondari (calomelano saturo, Ag/AgCl). Il pH-metro funziona con un elettrodo a vetro sensibile agli H⁺ accoppiato a un elettrodo di riferimento.",
+    "clinica": "Gli emogasanalizzatori misurano pH, pCO₂ e pO₂ con elettrodi elettrochimici."
+  },
+  "reazione spontanea": {
+    "tipo": "struttura",
+    "base": "Una reazione che va avanti da sola, senza bisogno di essere spinta.",
+    "superiore": "Reazione con variazione di energia libera negativa (ΔG < 0). Per le redox è spontanea quando la forza elettromotrice E è positiva: ΔG = −nFE.",
+    "universita": "ΔG° = −nFE° = −RT ln K: da E° si ricava la costante di equilibrio. Spontanea non vuol dire veloce: può servire un catalizzatore (es. ossidazione del glucosio, spontanea ma lentissima senza enzimi). Cambiando le concentrazioni (Nernst) una reazione può invertire il verso.",
+    "clinica": ""
+  },
+  "equazione di Nernst": {
+    "tipo": "struttura",
+    "base": "Una formula per calcolare quanta «spinta elettrica» c'è quando le concentrazioni cambiano.",
+    "superiore": "Equazione che calcola il potenziale di un elettrodo o di una pila in condizioni non standard: E = E° − (RT/nF) ln Q; a 25 °C: E = E° − (0,0592/n) log Q.",
+    "universita": "Applicata a uno ione ai due lati di una membrana dà il potenziale di equilibrio: E = (61,5/z) log(C esterna/C interna) mV a 37 °C. Per il K⁺ (circa 4 mM fuori, 140 mM dentro) circa −95 mV.",
+    "clinica": "Spiega perché l'ipokaliemia iperpolarizza e l'iperkaliemia depolarizza le cellule muscolari e cardiache."
+  },
+  "elettrolisi": {
+    "tipo": "struttura",
+    "base": "Usare la corrente elettrica per costringere una reazione ad avvenire, per esempio per ricoprire un oggetto di metallo.",
+    "superiore": "Processo in cui la corrente di un generatore provoca una redox non spontanea. Al catodo (−) avviene la riduzione, all'anodo (+) l'ossidazione. Esempi: NaCl fuso → Na + Cl₂; acqua → H₂ + O₂; galvanostegia (cromatura, argentatura).",
+    "universita": "Leggi di Faraday: la quantità di sostanza trasformata è proporzionale alla carica passata (n = Q/(z·F)). Serve una tensione almeno uguale alla f.e.m. della reazione inversa, più una sovratensione. Industrialmente: alluminio (processo Hall-Héroult), cloro e soda, raffinazione del rame.",
+    "clinica": "In medicina la ionoforesi usa una corrente per far penetrare farmaci ionizzati nella pelle; il test del sudore usa la ionoforesi con pilocarpina."
+  },
+  "generatore di corrente continua": {
+    "tipo": "struttura",
+    "base": "La «batteria esterna» che spinge gli elettroni nella direzione voluta.",
+    "superiore": "Sorgente di tensione che, nell'elettrolisi, toglie elettroni all'anodo e li fornisce al catodo, forzando la reazione non spontanea.",
+    "universita": "La tensione applicata deve superare la differenza di potenziale di decomposizione (f.e.m. della reazione inversa + sovratensioni + caduta ohmica nella soluzione). L'energia elettrica spesa diventa energia chimica dei prodotti: così si ricaricano gli accumulatori (batterie al piombo, al litio).",
+    "clinica": ""
+  },
+  "ossidoriduzioni nella cellula": {
+    "tipo": "struttura",
+    "base": "Anche il nostro corpo «brucia» il cibo passando elettroni da una molecola all'altra, ma piano piano, per non sprecare energia.",
+    "superiore": "Nel metabolismo le ossidazioni dei nutrienti cedono elettroni (con H⁺) ai coenzimi NAD⁺ e FAD; i coenzimi ridotti li portano alla catena respiratoria, dove l'accettore finale è l'O₂. L'energia liberata serve a produrre ATP.",
+    "universita": "Il NAD⁺ accetta uno ione idruro (2 e⁻ + 1 H⁺); il FAD accetta 2 e⁻ + 2 H⁺. Il rapporto NAD⁺/NADH alto nel citosol favorisce le ossidazioni; il rapporto NADPH/NADP⁺ alto favorisce le riduzioni delle sintesi. Gli elettroni scendono lungo la catena da E°' più bassi a più alti.",
+    "clinica": "Il cianuro blocca il complesso IV: le ossidoriduzioni della catena si fermano e compare acidosi lattica."
+  },
+  "deidrogenasi": {
+    "tipo": "enzima",
+    "base": "Aiutanti che tolgono pezzettini di idrogeno (con il loro elettrone) alle molecole del cibo.",
+    "superiore": "Enzimi della classe delle ossidoreduttasi che ossidano un substrato togliendogli atomi di idrogeno e li passano a un coenzima (NAD⁺, NADP⁺ o FAD).",
+    "universita": "Classe EC 1. Esempi: lattato deidrogenasi, gliceraldeide 3-fosfato deidrogenasi, isocitrato e malato deidrogenasi (NAD⁺), succinato deidrogenasi (FAD), glucosio 6-fosfato deidrogenasi (NADP⁺). Spesso la reazione è reversibile e la direzione dipende dal rapporto tra coenzima ossidato e ridotto.",
+    "clinica": "LDH alta nel sangue indica danno cellulare (emolisi, infarto, linfomi). Deficit di G6PD: crisi emolitiche con fave e farmaci ossidanti."
+  },
+  "dismutazione": {
+    "tipo": "struttura",
+    "base": "Una reazione strana: la stessa sostanza in parte dà elettroni e in parte li prende.",
+    "superiore": "Redox in cui una stessa specie si ossida e si riduce contemporaneamente (disproporzione). Esempi: 2 H₂O₂ → 2 H₂O + O₂; Cl₂ + 2 OH⁻ → Cl⁻ + ClO⁻ + H₂O.",
+    "universita": "Nell'anione superossido l'ossigeno ha n.o. −½: nella dismutazione diventa −1 (H₂O₂) e 0 (O₂). Anche la decomposizione dell'acqua ossigenata (catalasi) è una dismutazione: l'ossigeno passa da −1 a −2 (H₂O) e a 0 (O₂).",
+    "clinica": ""
+  },
+  "superossido dismutasi (SOD)": {
+    "tipo": "enzima",
+    "base": "Un «pompiere» della cellula che spegne una sostanza dannosa prodotta mentre si usa l'ossigeno.",
+    "superiore": "Enzima antiossidante che trasforma l'anione superossido in acqua ossigenata e ossigeno. L'acqua ossigenata viene poi eliminata da catalasi e glutatione perossidasi.",
+    "universita": "Ossidoreduttasi (EC 1.15.1.1), una delle più veloci conosciute (limitata dalla diffusione). SOD1 con rame e zinco nel citoplasma, SOD2 con manganese nella matrice mitocondriale, SOD3 extracellulare. Il metallo si alterna tra forma ossidata e ridotta.",
+    "clinica": "Mutazioni di SOD1 causano una parte delle forme familiari di sclerosi laterale amiotrofica (SLA); il tofersen, oligonucleotide antisenso, è stato approvato per la SLA da SOD1."
+  },
+  "anione superossido (O₂•⁻)": {
+    "tipo": "piccola",
+    "base": "Un pezzetto di ossigeno «arrabbiato» che può danneggiare la cellula se non viene eliminato subito.",
+    "superiore": "Radicale libero: molecola di ossigeno che ha acquistato un elettrone in più. È una specie reattiva dell'ossigeno (ROS).",
+    "universita": "Si forma soprattutto per perdita di elettroni dai complessi I e III della catena respiratoria e dalla NADPH ossidasi dei fagociti. Reagisce con l'ossido nitrico formando perossinitrito; in presenza di Fe²⁺ (reazione di Fenton, dall'H₂O₂) porta al radicale idrossile, molto dannoso.",
+    "clinica": "Malattia granulomatosa cronica: deficit della NADPH ossidasi, i fagociti non producono superossido e non uccidono alcuni batteri e funghi (infezioni da Staphylococcus aureus, Aspergillus)."
+  },
+  "perossido di idrogeno (H₂O₂)": {
+    "tipo": "piccola",
+    "smiles": "OO",
+    "base": "L'acqua ossigenata: si usa per disinfettare le ferite e fa la schiuma.",
+    "superiore": "Composto con un legame O–O, in cui l'ossigeno ha n.o. −1. Può fare da ossidante e da riducente; si decompone in acqua e ossigeno (la schiuma sulla ferita è dovuta alla catalasi).",
+    "universita": "Prodotto dalla SOD e da varie ossidasi (nei perossisomi). Eliminato dalla catalasi (2 H₂O₂ → 2 H₂O + O₂) e dalla glutatione perossidasi (con selenio e glutatione ridotto). È anche un messaggero cellulare a basse concentrazioni.",
+    "clinica": "La mieloperossidasi dei neutrofili usa H₂O₂ per produrre ipoclorito battericida. In soluzione al 3% si usa come disinfettante."
+  },
+  "alogenuro alchilico": {
+    "tipo": "molecola",
+    "base": "Una molecola di carbonio e idrogeno a cui è attaccato un atomo come il cloro o il bromo, che si può staccare e lasciare il posto a un altro.",
+    "superiore": "Composto organico in cui un alogeno (F, Cl, Br, I) è legato a un carbonio sp³: R–X. Si classifica in primario, secondario o terziario in base a quanti carboni sono legati al carbonio che porta l'alogeno.",
+    "universita": "Il legame C–X è polare e diventa più lungo e debole scendendo nel gruppo (C–F il più forte, C–I il più debole). Reazioni tipiche: sostituzione nucleofila (SN1, SN2) ed eliminazione (E1, E2); con il magnesio formano i reattivi di Grignard.",
+    "clinica": "Gli agenti alchilanti antitumorali (mostarde azotate come ciclofosfamide e clorambucile) contengono legami C–Cl: formano uno ione aziridinio che alchila il DNA (N7 della guanina) con una sostituzione nucleofila. Molti anestetici inalatori sono composti alogenati (sevoflurano)."
+  },
+  "carbonio elettrofilo (δ+)": {
+    "tipo": "struttura",
+    "base": "Un atomo di carbonio un po' «povero» di elettroni, che attira le molecole che ne hanno in più.",
+    "superiore": "Carbonio con una parziale carica positiva perché è legato a un atomo più elettronegativo. È il punto della molecola che viene attaccato dai nucleofili.",
+    "universita": "L'orbitale vuoto di antilegame σ* C–X, dietro al carbonio dal lato opposto all'alogeno, è quello che riceve il doppietto del nucleofilo nella SN2: per questo l'attacco avviene da dietro. Sono carboni elettrofili anche quelli dei carbonili (C=O), attaccati nelle addizioni nucleofile.",
+    "clinica": ""
+  },
+  "gruppo uscente": {
+    "tipo": "piccola",
+    "base": "Il pezzo che si stacca dalla molecola per fare spazio al nuovo arrivato.",
+    "superiore": "Atomo o gruppo che si stacca portando con sé la coppia di elettroni del legame. Un buon gruppo uscente è stabile da solo, cioè una base debole: I⁻ > Br⁻ > Cl⁻ ≫ F⁻.",
+    "universita": "Più forte è l'acido coniugato, migliore è il gruppo uscente. OH⁻ è un pessimo gruppo uscente: gli alcoli reagiscono solo se l'OH viene protonato (esce H₂O) o trasformato in tosilato, mesilato o fosfato. Nella cellula si usano fosfati e pirofosfati come gruppi uscenti.",
+    "clinica": ""
+  },
+  "meccanismo SN2 o SN1": {
+    "tipo": "struttura",
+    "base": "La reazione può avvenire in due modi: tutto in un colpo solo, oppure in due tempi.",
+    "superiore": "SN2: un passaggio, il nucleofilo entra mentre il gruppo uscente esce. SN1: due passaggi, prima esce il gruppo uscente (carbocatione), poi entra il nucleofilo. Dipende soprattutto da quanto è ingombro il carbonio.",
+    "universita": "Fattori: substrato (metilico e primario → SN2; terziario, allilico, benzilico → SN1; secondario → entrambe), nucleofilo (forte e carico → SN2; debole e neutro → SN1), solvente (polare aprotico come acetone, DMSO, DMF → SN2; polare protico come acqua e alcoli → SN1), gruppo uscente (buono per entrambe).",
+    "clinica": ""
+  },
+  "nucleofilo": {
+    "tipo": "molecola",
+    "base": "Una molecola ricca di elettroni che va a cercare un atomo che ne ha pochi per legarsi a lui.",
+    "superiore": "Specie con un doppietto elettronico libero o una carica negativa che forma un nuovo legame con un atomo povero di elettroni (elettrofilo). Esempi: OH⁻, CN⁻, I⁻, NH₃, H₂O, ammine, tioli.",
+    "universita": "La nucleofilicità (velocità) è diversa dalla basicità (equilibrio). Una carica negativa la aumenta (OH⁻ > H₂O); nei solventi protici cresce scendendo nel gruppo (I⁻ > Br⁻ > Cl⁻ > F⁻) perché gli ioni piccoli sono più solvatati; nei solventi aprotici l'ordine si inverte. L'ingombro sterico la riduce.",
+    "clinica": "Nel sito attivo di molti enzimi un residuo nucleofilo (serina delle proteasi e dell'acetilcolinesterasi, cisteina) attacca il substrato. Gli organofosfati bloccano proprio la serina nucleofila dell'acetilcolinesterasi."
+  },
+  "bromometano": {
+    "tipo": "molecola",
+    "smiles": "CBr",
+    "base": "Una piccola molecola con un carbonio e un bromo; un tempo si usava per disinfestare i terreni.",
+    "superiore": "CH₃Br, alogenuro metilico: il carbonio non ha gruppi ingombranti attorno, quindi reagisce molto bene per SN2.",
+    "universita": "Gas a temperatura ambiente. È un agente metilante: trasferisce il metile a nucleofili biologici (gruppi –SH e azoti del DNA). Usato come fumigante, ne è stato quasi del tutto vietato l'uso perché danneggia lo strato di ozono (protocollo di Montréal).",
+    "clinica": "Tossico: l'esposizione professionale può dare danni neurologici e polmonari."
+  },
+  "stato di transizione SN2": {
+    "tipo": "struttura",
+    "base": "Il momento a metà strada: il nuovo pezzo si sta attaccando mentre il vecchio si sta staccando.",
+    "superiore": "Struttura di massima energia della SN2: il carbonio è legato parzialmente sia al nucleofilo sia al gruppo uscente, che stanno da parti opposte; gli altri tre sostituenti sono su un piano.",
+    "universita": "Geometria di bipiramide trigonale con carbonio pentacoordinato; non è un intermedio isolabile. Sostituenti ingombranti alzano molto la sua energia (ingombro sterico): velocità relative CH₃X > primario > secondario ≫ terziario (praticamente nulla). Come un ombrello che si rovescia nel vento, i sostituenti passano dall'altra parte (inversione).",
+    "clinica": ""
+  },
+  "ione idrossido (OH⁻)": {
+    "tipo": "piccola",
+    "smiles": "[OH-]",
+    "base": "Un pezzetto d'acqua con carica negativa: rende le soluzioni basiche, come il sapone.",
+    "superiore": "Anione OH⁻: base forte e buon nucleofilo. Si ottiene sciogliendo idrossidi come NaOH o KOH in acqua.",
+    "universita": "Nella SN2 con alogenuri primari dà alcoli; con substrati secondari e terziari, e scaldando, tende a fare da base e favorisce l'eliminazione E2. pOH = −log[OH⁻]; pH + pOH = 14 a 25 °C.",
+    "clinica": "Le soluzioni di idrossido di sodio causano ustioni chimiche profonde (necrosi colliquativa), più gravi di quelle da acidi."
+  },
+  "metanolo": {
+    "tipo": "molecola",
+    "smiles": "CO",
+    "base": "L'alcol più semplice. È velenoso: non si deve mai bere.",
+    "superiore": "CH₃OH, alcol metilico: il prodotto della SN2 tra bromometano e OH⁻. Solvente e materia prima industriale.",
+    "universita": "Nel fegato l'alcol deidrogenasi lo ossida a formaldeide e poi ad acido formico, responsabile della tossicità (acidosi metabolica e danno al nervo ottico).",
+    "clinica": "Intossicazione da metanolo (alcol adulterato): acidosi metabolica con gap anionico e gap osmolare aumentati, disturbi visivi fino alla cecità. Terapia: fomepizolo o etanolo (bloccano l'alcol deidrogenasi), emodialisi."
+  },
+  "ione bromuro (Br⁻)": {
+    "tipo": "piccola",
+    "smiles": "[Br-]",
+    "base": "Il bromo che si è staccato con un elettrone in più.",
+    "superiore": "Anione Br⁻: buon gruppo uscente perché è una base molto debole (il suo acido, HBr, è un acido forte).",
+    "universita": "Grande e polarizzabile: è anche un buon nucleofilo nei solventi protici. Gli alogenuri liberati si possono riconoscere con il nitrato d'argento (precipitato di AgBr giallo chiaro).",
+    "clinica": "I bromuri sono stati tra i primi sedativi e antiepilettici; l'accumulo (bromismo) dà sintomi neurologici e una falsa ipercloremia in alcuni analizzatori."
+  },
+  "2-bromo-2-metilpropano": {
+    "tipo": "molecola",
+    "smiles": "CC(C)(C)Br",
+    "base": "Una molecola con il bromo attaccato a un carbonio circondato da altri tre carboni: troppo affollato per essere attaccato da dietro.",
+    "superiore": "Bromuro di terz-butile, (CH₃)₃CBr: alogenuro terziario. Non fa SN2 per l'ingombro, ma fa facilmente SN1 perché forma un carbocatione terziario stabile.",
+    "universita": "Esempio classico di solvolisi SN1: in acqua o in alcoli la velocità dipende solo dalla sua concentrazione. Insieme all'alcol si forma anche 2-metilpropene (E1), di più ad alta temperatura.",
+    "clinica": ""
+  },
+  "carbocatione terziario": {
+    "tipo": "molecola",
+    "smiles": "C[C+](C)C",
+    "base": "Una molecola rimasta con un carbonio «a corto» di elettroni: è instabile e reagisce subito.",
+    "superiore": "Ione con un carbonio positivo legato ad altri tre carboni. È piatto (sp², orbitale p vuoto) ed è l'intermedio della SN1 e della E1. Stabilità: terziario > secondario > primario > metilico.",
+    "universita": "I gruppi alchilici lo stabilizzano per effetto induttivo e iperconiugazione; risonanza con doppi legami o anelli aromatici stabilizza i carbocationi allilici e benzilici. I carbocationi possono riarrangiarsi (spostamenti di idruro o di metile) verso forme più stabili. Postulato di Hammond: lo stato di transizione del primo passaggio somiglia al carbocatione.",
+    "clinica": ""
+  },
+  "solvente polare protico": {
+    "tipo": "molecola",
+    "base": "Un liquido, come l'acqua, che circonda e «coccola» gli ioni aiutandoli a separarsi.",
+    "superiore": "Solvente polare con idrogeni legati a O o N, capace di legami a idrogeno: acqua, alcoli, acido acetico. Favorisce la SN1 perché stabilizza il carbocatione e il gruppo uscente.",
+    "universita": "Solvata fortemente gli anioni con legami a idrogeno e ne riduce la nucleofilicità (sfavorisce la SN2). La costante dielettrica alta abbassa l'energia della separazione di carica nello stato di transizione della ionizzazione. Spesso fa anche da nucleofilo (solvolisi).",
+    "clinica": ""
+  },
+  "alcol protonato": {
+    "tipo": "molecola",
+    "base": "L'alcol appena formato, che ha ancora un pezzettino in più da togliere.",
+    "superiore": "Ione ossonio R–OH₂⁺: si forma quando l'acqua attacca il carbocatione. Perdendo un H⁺ diventa l'alcol neutro.",
+    "universita": "È anche l'intermedio della reazione inversa: in acido forte gli alcoli si protonano, l'OH diventa H₂O (buon gruppo uscente) e possono dare SN1 con HBr o HCl o disidratarsi ad alcheni (E1).",
+    "clinica": ""
+  },
+  "2-metil-2-propanolo (terz-butanolo)": {
+    "tipo": "molecola",
+    "smiles": "CC(C)(C)O",
+    "base": "Un alcol che si forma quando l'acqua prende il posto del bromo.",
+    "superiore": "(CH₃)₃COH, alcol terziario: prodotto della solvolisi SN1 del bromuro di terz-butile in acqua.",
+    "universita": "Gli alcoli terziari non si ossidano facilmente (il carbonio con l'OH non ha idrogeni). Con HCl concentrato riformano rapidamente l'alogenuro per SN1 (base del saggio di Lucas, che distingue alcoli primari, secondari e terziari).",
+    "clinica": ""
+  },
+  "2-metilpropene": {
+    "tipo": "molecola",
+    "smiles": "C=C(C)C",
+    "base": "Una molecola con un doppio legame, che si forma quando il carbocatione perde un idrogeno invece di legare l'acqua.",
+    "superiore": "Isobutene, (CH₃)₂C=CH₂: alchene prodotto dall'eliminazione E1 che compete con la SN1.",
+    "universita": "Nella E1 il carbocatione perde un H⁺ da un carbonio adiacente; si forma di preferenza l'alchene più sostituito (regola di Zaitsev). Temperature alte favoriscono l'eliminazione perché aumenta l'entropia (si formano più molecole).",
+    "clinica": ""
+  },
+  "feniletanolamina N-metiltransferasi (PNMT)": {
+    "tipo": "enzima",
+    "base": "L'aiutante della ghiandola surrenale che trasforma la noradrenalina in adrenalina aggiungendo un pezzetto.",
+    "superiore": "Enzima della midollare del surrene che trasferisce un gruppo metile dalla S-adenosilmetionina all'azoto della noradrenalina: si forma adrenalina.",
+    "universita": "Metiltransferasi (EC 2.1.1.28), citoplasmatica. Meccanismo SN2: l'azoto amminico attacca il metile legato allo zolfo positivo della SAM. È indotta dal cortisolo, che arriva molto concentrato alla midollare attraverso il circolo portale dalla corticale.",
+    "clinica": "Nei feocromocitomi extrasurrenalici (paragangliomi) spesso manca la PNMT: producono soprattutto noradrenalina."
+  },
+  "S-adenosilomocisteina": {
+    "tipo": "molecola",
+    "base": "Quello che resta della molecola «regalo» dopo aver ceduto il suo pezzetto.",
+    "superiore": "Prodotto delle metilazioni con SAM: la SAM, dopo aver ceduto il metile, diventa S-adenosilomocisteina (SAH).",
+    "universita": "È un forte inibitore delle metiltransferasi, quindi va eliminata subito: la SAH idrolasi la scinde in adenosina e omocisteina. L'omocisteina torna metionina (metionina sintasi con vitamina B12 e folato) o va verso la cisteina (cistationina β-sintasi, vitamina B6).",
+    "clinica": "Omocisteina alta nel sangue: carenza di vitamina B12 o folati, omocistinuria; associata a trombosi e malattia vascolare."
+  },
+  "luce solare": {
+    "tipo": "energia",
+    "base": "La luce del Sole: è l'energia che le piante usano per fare il loro cibo.",
+    "superiore": "Radiazione elettromagnetica, trasportata da fotoni. Per la fotosintesi si usa la luce visibile, soprattutto blu e rossa; la verde viene in gran parte riflessa (per questo le foglie sono verdi).",
+    "universita": "Energia di un fotone E = h·c/λ: la luce blu ha più energia della rossa. La radiazione fotosinteticamente attiva va circa da 400 a 700 nm. Un fotone assorbito porta un elettrone del pigmento in uno stato eccitato.",
+    "clinica": "La luce blu della fototerapia trasforma la bilirubina della pelle del neonato in isomeri solubili, eliminati senza coniugazione (ittero neonatale)."
+  },
+  "P680 eccitato": {
+    "tipo": "molecola",
+    "base": "Il «cuore» del primo pannello solare della pianta, appena colpito dalla luce e carico di energia.",
+    "superiore": "Coppia speciale di clorofille a del centro di reazione del fotosistema II (assorbe al massimo a 680 nm). Eccitata dalla luce cede un elettrone e diventa P680⁺.",
+    "universita": "P680⁺ è l'ossidante biologico più forte conosciuto (potenziale molto positivo, circa +1,2 V): solo così può strappare elettroni all'acqua, attraverso una tirosina (Yz) e il cluster Mn₄CaO₅. L'elettrone passa a feofitina, QA e QB.",
+    "clinica": ""
+  },
+  "fotosistema II": {
+    "tipo": "enzima",
+    "base": "Il primo «pannello solare» della foglia: cattura la luce e spacca l'acqua, liberando l'ossigeno che respiriamo.",
+    "superiore": "Complesso di proteine e pigmenti della membrana dei tilacoidi. Con l'energia della luce toglie elettroni all'acqua, libera O₂ e H⁺ e passa gli elettroni al plastochinone.",
+    "universita": "Plastochinone-acqua ossidoreduttasi. Antenna (LHCII) + centro di reazione (D1, D2, P680, feofitina, QA, QB) + complesso che evolve ossigeno (Mn₄CaO₅). Servono 4 fotoni (ciclo degli stati S di Kok) per liberare 1 O₂ da 2 H₂O. D1 viene danneggiata dalla luce e sostituita di continuo.",
+    "clinica": "Molti erbicidi (atrazina, diuron) bloccano il sito QB del fotosistema II; il paraquat devia gli elettroni del fotosistema I ed è molto tossico anche per l'uomo (fibrosi polmonare)."
+  },
+  "plastochinolo (PQH₂)": {
+    "tipo": "coenzima",
+    "base": "Un piccolo «furgoncino» che porta gli elettroni dentro la membrana della foglia.",
+    "superiore": "Forma ridotta del plastochinone, trasportatore mobile di elettroni e protoni nella membrana del tilacoide, simile all'ubichinone del mitocondrio.",
+    "universita": "Il plastochinone in QB accetta 2 elettroni e prende 2 H⁺ dallo stroma; il plastochinolo si stacca e diffonde nel doppio strato fino al complesso citocromo b₆f, dove rilascia gli H⁺ nel lume.",
+    "clinica": ""
+  },
+  "plastocianina ridotta": {
+    "tipo": "molecola",
+    "base": "Un piccolo «postino» che porta un elettrone alla volta da una parte all'altra.",
+    "superiore": "Piccola proteina con un atomo di rame che trasporta un elettrone alla volta, nel lume del tilacoide, dal complesso citocromo b₆f al fotosistema I.",
+    "universita": "Il rame passa da Cu²⁺ (ossidato) a Cu⁺ (ridotto). È solubile nel lume, come il citocromo c nello spazio intermembrana del mitocondrio. In alcune alghe e cianobatteri, con poco rame, la sostituisce il citocromo c₆.",
+    "clinica": ""
+  },
+  "complesso citocromo b₆f": {
+    "tipo": "enzima",
+    "base": "Una pompa che, mentre passa gli elettroni, riempie l'interno della membrana di protoni (H⁺).",
+    "superiore": "Complesso della membrana dei tilacoidi che trasferisce elettroni dal plastochinolo alla plastocianina e pompa H⁺ nel lume. Collega i due fotosistemi.",
+    "universita": "Plastochinolo-plastocianina reduttasi, simile al complesso III mitocondriale: citocromi b₆ e f, proteina ferro-zolfo di Rieske. Il ciclo Q porta 4 H⁺ nel lume per ogni 2 elettroni. È la tappa più lenta della catena e un punto di controllo.",
+    "clinica": ""
+  },
+  "ferredossina ridotta": {
+    "tipo": "molecola",
+    "base": "Un altro «postino» degli elettroni, carico di energia dopo il secondo colpo di luce.",
+    "superiore": "Piccola proteina ferro-zolfo dello stroma che riceve gli elettroni dal fotosistema I e li cede alla ferredossina-NADP⁺ reduttasi.",
+    "universita": "Centro [2Fe-2S], potenziale molto negativo (circa −0,4 V): è un riducente forte. Oltre al NADP⁺ fornisce elettroni ad altri enzimi (nitrito reduttasi, tioredossina, che accende di giorno gli enzimi del ciclo di Calvin) e, nel flusso ciclico, li riporta al citocromo b₆f.",
+    "clinica": ""
+  },
+  "fotosistema I": {
+    "tipo": "enzima",
+    "base": "Il secondo «pannello solare» della foglia: dà agli elettroni una nuova spinta per caricare le «pile» delle piante.",
+    "superiore": "Complesso di proteine e pigmenti dei tilacoidi con centro di reazione P700. Eccitato dalla luce, spinge gli elettroni dalla plastocianina alla ferredossina.",
+    "universita": "Plastocianina-ferredossina ossidoreduttasi. Catena interna: P700 → A0 (clorofilla) → A1 (fillochinone) → centri ferro-zolfo FX, FA, FB → ferredossina. Nel flusso ciclico gli elettroni tornano al citocromo b₆f: si produce solo ATP, senza NADPH e senza O₂.",
+    "clinica": ""
+  },
+  "NADPH": {
+    "tipo": "coenzima",
+    "base": "La «pila» carica che serve a costruire: le piante la usano per fare lo zucchero, noi per fare grassi e difenderci dai danni.",
+    "superiore": "Nicotinammide adenin dinucleotide fosfato ridotto. È il riducente delle vie di sintesi (fotosintesi, sintesi di acidi grassi e colesterolo) e delle difese antiossidanti.",
+    "universita": "Si distingue dal NADH per un fosfato sul 2' del ribosio dell'adenosina: gli enzimi riconoscono l'uno o l'altro. Negli animali si forma soprattutto nella via dei pentoso fosfati (glucosio 6-fosfato deidrogenasi), dall'enzima malico e dall'isocitrato deidrogenasi NADP-dipendente.",
+    "clinica": "Deficit di G6PD: poco NADPH nei globuli rossi, il glutatione non si rigenera e i farmaci ossidanti o le fave causano emolisi. La NADPH ossidasi dei fagociti usa NADPH per uccidere i batteri."
+  },
+  "ferredossina-NADP⁺ reduttasi": {
+    "tipo": "enzima",
+    "base": "L'aiutante che carica le «pile» NADPH con gli elettroni portati dalla luce.",
+    "superiore": "Enzima con FAD, sul lato stromale della membrana dei tilacoidi, che prende 2 elettroni da 2 ferredossine e riduce il NADP⁺ a NADPH.",
+    "universita": "FNR (EC 1.18.1.2). Il FAD accetta gli elettroni uno alla volta (passando per il semichinone) e li cede insieme come ione idruro al NADP⁺. Consuma un H⁺ dello stroma, contribuendo al gradiente.",
+    "clinica": ""
+  },
+  "NADP⁺": {
+    "tipo": "coenzima",
+    "base": "La «pila» scarica che aspetta di essere ricaricata.",
+    "superiore": "Forma ossidata del nicotinammide adenin dinucleotide fosfato. Accetta 2 elettroni e un H⁺ e diventa NADPH.",
+    "universita": "Si forma dal NAD⁺ per fosforilazione (NAD chinasi). Nelle cellule è tenuto soprattutto in forma ridotta (rapporto NADPH/NADP⁺ alto), al contrario del NAD⁺, così da favorire le riduzioni delle vie di sintesi.",
+    "clinica": "Come il NAD⁺, deriva dalla niacina (vitamina B3): la carenza causa la pellagra."
+  },
+  "H⁺ nel lume del tilacoide": {
+    "tipo": "piccola",
+    "base": "Tanti protoni ammassati dentro un sacchetto della foglia: come acqua dietro una diga, spingono per uscire.",
+    "superiore": "Protoni accumulati nel lume del tilacoide dalla fotolisi dell'acqua e dal complesso citocromo b₆f. Il loro gradiente fa funzionare l'ATP sintasi (chemiosmosi).",
+    "universita": "Il lume diventa acido, lo stroma più basico (differenza di pH di circa 3 unità alla luce). Nel cloroplasto il gradiente è quasi tutto di pH, con poco potenziale elettrico, perché ioni come Cl⁻ e Mg²⁺ si spostano e compensano le cariche.",
+    "clinica": ""
+  },
+  "ATP sintasi del cloroplasto (CF₀CF₁)": {
+    "tipo": "enzima",
+    "base": "La «turbina» della foglia: i protoni che passano la fanno girare e lei produce ATP.",
+    "superiore": "Enzima della membrana dei tilacoidi che usa il flusso di H⁺ dal lume allo stroma per produrre ATP da ADP e fosfato (fotofosforilazione).",
+    "universita": "Struttura e meccanismo come l'ATP sintasi mitocondriale (rotore CF₀ in membrana, testa catalitica CF₁ verso lo stroma). È regolata dalla luce: al buio la tioredossina ossidata la spegne, per non consumare ATP. La teoria chemiosmotica di Mitchell fu confermata anche sui cloroplasti (esperimento di Jagendorf con salto di pH).",
+    "clinica": ""
+  },
+  "ribulosio 1,5-bisfosfato (RuBP)": {
+    "tipo": "zucchero",
+    "base": "Lo zucchero «calamita» che cattura l'anidride carbonica dell'aria dentro la foglia.",
+    "superiore": "Zucchero a 5 atomi di carbonio (chetopentoso) con due fosfati. È l'accettore della CO₂ nel ciclo di Calvin e viene rigenerato a ogni giro.",
+    "universita": "Si forma dal ribulosio 5-fosfato con la fosforibulochinasi. Il legame con la CO₂ passa per un intermedio enediolico; il β-chetoacido a 6 C che si forma viene subito idrolizzato in 2 molecole di 3-fosfoglicerato.",
+    "clinica": ""
+  },
+  "RuBisCO": {
+    "tipo": "enzima",
+    "base": "L'aiutante che cattura l'anidride carbonica dell'aria e la mette dentro lo zucchero. È la proteina più abbondante sulla Terra.",
+    "superiore": "Ribulosio 1,5-bisfosfato carbossilasi/ossigenasi: enzima dello stroma che lega la CO₂ al RuBP formando 2 molecole di 3-fosfoglicerato. È la porta d'ingresso di quasi tutto il carbonio organico.",
+    "universita": "Liasi (EC 4.1.1.39), 8 subunità grandi + 8 piccole. Lenta (pochi cicli al secondo), quindi le foglie ne contengono moltissima. Si attiva alla luce: pH alto e Mg²⁺ nello stroma, carbamilazione di una lisina, aiuto della RuBisCO attivasi. Può legare O₂ invece di CO₂ (fotorespirazione: spreca carbonio ed energia, aumenta con il caldo). Le piante C4 (mais) e CAM (cactus) concentrano la CO₂ per limitarla.",
+    "clinica": ""
+  },
+  "gliceraldeide 3-fosfato deidrogenasi del cloroplasto": {
+    "tipo": "enzima",
+    "base": "L'aiutante che usa le «pile» NADPH per trasformare la molecola in zucchero.",
+    "superiore": "Enzima del ciclo di Calvin che riduce l'1,3-bisfosfoglicerato a gliceraldeide 3-fosfato usando NADPH. Fa la reazione inversa della glicolisi.",
+    "universita": "Isoforma NADP-dipendente (EC 1.2.1.13), diversa da quella glicolitica che usa NAD⁺. È attivata alla luce dal sistema ferredossina-tioredossina (riduzione di ponti disolfuro), come la fosforibulochinasi e altre tappe del ciclo.",
+    "clinica": ""
+  },
+  "fosforibulochinasi": {
+    "tipo": "enzima",
+    "base": "L'aiutante che ricarica lo zucchero «calamita», così può catturare altra anidride carbonica.",
+    "superiore": "Chinasi del ciclo di Calvin che attacca un fosfato preso dall'ATP al ribulosio 5-fosfato: si forma ribulosio 1,5-bisfosfato.",
+    "universita": "EC 2.7.1.19. Reazione irreversibile, presente solo negli organismi che usano il ciclo di Calvin. Regolata dalla luce (tioredossina) e dal complesso con la proteina CP12 e la GAPDH, che la tiene spenta al buio.",
+    "clinica": ""
+  },
+  "cloroplasto": {
+    "tipo": "struttura",
+    "base": "Il «laboratorio verde» delle cellule delle foglie: lì la luce diventa zucchero.",
+    "superiore": "Organulo delle cellule vegetali, con doppia membrana, dove avviene la fotosintesi. Contiene i tilacoidi (sacchetti impilati in grana, con la clorofilla) immersi nello stroma, un liquido con gli enzimi del ciclo di Calvin.",
+    "universita": "Deriva da un cianobatterio inglobato (teoria endosimbiontica): ha DNA circolare proprio e ribosomi 70S, come il mitocondrio. La RuBisCO ha la subunità grande codificata dal DNA del cloroplasto e la piccola dal nucleo.",
+    "clinica": ""
+  },
+  "clorofilla": {
+    "tipo": "molecola",
+    "base": "Il colore verde delle foglie: è la sostanza che cattura la luce del Sole.",
+    "superiore": "Pigmento verde con un anello (porfirina) che contiene magnesio al centro. Assorbe luce blu e rossa e riflette il verde. La clorofilla a è nei centri di reazione; la clorofilla b aiuta nelle antenne.",
+    "universita": "Anello tetrapirrolico simile all'eme dell'emoglobina, ma con Mg²⁺ al posto del Fe²⁺ e con una lunga coda di fitolo che la ancora alle membrane. Nelle antenne passa l'energia per risonanza alle molecole vicine fino al centro di reazione.",
+    "clinica": ""
+  },
+  "carotenoidi": {
+    "tipo": "molecola",
+    "base": "I pigmenti gialli, arancioni e rossi di carote, pomodori e foglie in autunno.",
+    "superiore": "Pigmenti accessori (caroteni e xantofille) che assorbono luce blu-verde e passano l'energia alla clorofilla. Proteggono anche dai danni della luce troppo forte.",
+    "universita": "Lunghe catene di doppi legami coniugati (tetraterpeni, 40 C). Spengono la clorofilla in stato di tripletto e l'ossigeno singoletto, specie molto dannose. Il ciclo delle xantofille dissipa come calore l'energia in eccesso.",
+    "clinica": "Il β-carotene è precursore della vitamina A (retinolo), necessaria alla vista; l'eccesso nella dieta colora la pelle di giallo (carotenodermia) senza colorare le sclere, a differenza dell'ittero."
+  }
+}

@@ -1,0 +1,2992 @@
+[
+ {
+  "id": "STA-001",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "Qual è la media aritmetica dei valori 4, 7, 9, 10, 15?",
+  "opzioni": {
+   "A": "8",
+   "B": "10",
+   "C": "9,5",
+   "D": "45",
+   "E": "9"
+  },
+  "giusta": "E",
+  "perche": "La media aritmetica si ottiene sommando tutti i valori e dividendo per quanti sono: 45 diviso 5 fa 9. La trappola tipica è fermarsi alla somma (45) dimenticando di dividere, oppure confondere la media con il valore centrale della lista ordinata, che qui è 9 per coincidenza ma in generale è un'altra cosa. Un controllo veloce: la media deve sempre stare tra il valore più piccolo e il più grande.",
+  "semplice": "Se cinque amici hanno 4, 7, 9, 10 e 15 euro e mettono tutto in comune, raccolgono 45 euro. Dividendo in parti uguali, ognuno riceve 9 euro: questa è la media.",
+  "passaggi": [
+   "Somma: 4 + 7 + 9 + 10 + 15 = 45",
+   "Numero di valori: n = 5",
+   "Media = 45 / 5 = 9"
+  ],
+  "concetto": "media aritmetica"
+ },
+ {
+  "id": "STA-002",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "Qual è la mediana dei dati 3, 8, 1, 12, 6, 10?",
+  "opzioni": {
+   "A": "6",
+   "B": "8",
+   "C": "7",
+   "D": "6,67",
+   "E": "9"
+  },
+  "giusta": "C",
+  "perche": "Per trovare la mediana bisogna prima ordinare i dati: 1, 3, 6, 8, 10, 12. Con un numero pari di valori la mediana è la media dei due centrali, cioè (6 + 8) / 2 = 7. L'errore più comune è prendere il valore centrale della lista non ordinata, oppure scegliere uno solo dei due valori centrali. Il valore 6,67 è invece la media aritmetica, un indice diverso.",
+  "semplice": "Metti in fila sei compagni dal più basso al più alto: la mediana è l'altezza «a metà fila». Con sei persone a metà non c'è nessuno, quindi si fa la media tra il terzo e il quarto.",
+  "passaggi": [
+   "Ordina: 1, 3, 6, 8, 10, 12",
+   "n = 6 è pari: i valori centrali sono il 3° e il 4° (6 e 8)",
+   "Mediana = (6 + 8) / 2 = 7"
+  ],
+  "concetto": "mediana"
+ },
+ {
+  "id": "STA-003",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "Nei dati 2, 3, 3, 5, 5, 5, 7 qual è la moda?",
+  "opzioni": {
+   "A": "3",
+   "B": "4,29",
+   "C": "7",
+   "D": "Non esiste",
+   "E": "5"
+  },
+  "giusta": "E",
+  "perche": "La moda è il valore che compare più spesso: il 5 compare tre volte, più di ogni altro valore. Non va confusa con la media (circa 4,29) né con la mediana (che qui è anch'essa 5, ma per un motivo diverso: è il quarto valore su sette). Una distribuzione può avere più mode o nessuna, ma in questo caso la moda è unica.",
+  "semplice": "In un negozio di scarpe la taglia più venduta è la moda: è quella da tenere sempre in magazzino. Se la 42 viene comprata più spesso di tutte, la moda è 42.",
+  "passaggi": [
+   "La moda è il valore che compare più spesso.",
+   "Conta le frequenze: 2 → 1 volta, 3 → 2 volte, 5 → 3 volte, 7 → 1 volta.",
+   "Il 5 ha la frequenza più alta (3).",
+   "Non confondere con la media: (2 + 3 + 3 + 5 + 5 + 5 + 7)/7 = 30/7 ≈ 4,29.",
+   "La moda è 5."
+  ],
+  "concetto": "moda"
+ },
+ {
+  "id": "STA-004",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "Il gruppo sanguigno (A, B, AB, 0) è una variabile:",
+  "opzioni": {
+   "A": "qualitativa ordinale",
+   "B": "qualitativa nominale",
+   "C": "quantitativa discreta",
+   "D": "quantitativa continua",
+   "E": "quantitativa ordinale"
+  },
+  "giusta": "B",
+  "perche": "Il gruppo sanguigno si esprime con categorie (etichette), quindi è una variabile qualitativa. Tra le categorie non esiste un ordine naturale: il gruppo A non è «più» o «meno» del gruppo B, per cui la variabile è nominale. La trappola è lasciarsi ingannare dallo «0», che sembra un numero ma è solo un nome. Con una variabile nominale si possono calcolare frequenze e moda, ma non media o mediana.",
+  "semplice": "Le variabili nominali sono come i colori delle magliette di una squadra: puoi contare quante sono rosse o blu, ma non ha senso mettere i colori in classifica.",
+  "passaggi": [
+   "Il gruppo sanguigno si esprime con etichette (A, B, AB, 0): variabile qualitativa.",
+   "Tra le categorie non c'è un ordine naturale: A non è «più» di B.",
+   "Lo «0» è un nome, non un numero.",
+   "Qualitativa senza ordine: nominale."
+  ],
+  "concetto": "tipi di variabili"
+ },
+ {
+  "id": "STA-005",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "Il titolo di studio (licenza media, diploma, laurea, dottorato) è una variabile:",
+  "opzioni": {
+   "A": "qualitativa nominale",
+   "B": "quantitativa continua",
+   "C": "qualitativa ordinale",
+   "D": "quantitativa discreta",
+   "E": "di tipo misto, non classificabile"
+  },
+  "giusta": "C",
+  "perche": "Il titolo di studio si esprime con parole, quindi è qualitativo, ma le sue categorie hanno un ordine naturale: il diploma viene dopo la licenza media e prima della laurea. Per questo è una variabile ordinale. La trappola è considerarla nominale perché non è un numero: conta invece la presenza dell'ordine. Per le variabili ordinali ha senso la mediana, mentre la media non ha significato.",
+  "semplice": "Le taglie S, M, L, XL non sono numeri, ma si possono mettere in fila dalla più piccola alla più grande: sono un esempio di variabile ordinale, proprio come i titoli di studio.",
+  "passaggi": [
+   "Il titolo di studio si esprime con parole: variabile qualitativa.",
+   "Le categorie hanno un ordine naturale: licenza media < diploma < laurea < dottorato.",
+   "Qualitativa con ordine: ordinale (ha senso la mediana, non la media).",
+   "Risposta: qualitativa ordinale."
+  ],
+  "concetto": "scala ordinale"
+ },
+ {
+  "id": "STA-006",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "test",
+  "domanda": "Qual è il campo di variazione (range) dei dati 12, 18, 7, 25, 14?",
+  "opzioni": {
+   "A": "13",
+   "B": "18",
+   "C": "25",
+   "D": "15,2",
+   "E": "11"
+  },
+  "giusta": "B",
+  "perche": "Il campo di variazione è la differenza tra il valore massimo e il valore minimo: 25 − 7 = 18. È l'indice di dispersione più semplice, ma dipende solo dai due estremi e quindi è molto sensibile ai valori anomali. La trappola è riportare il valore massimo o la media (15,2) invece della differenza tra gli estremi.",
+  "semplice": "Se in una settimana la temperatura va da 7 °C a 25 °C, l'escursione è 18 gradi: è il campo di variazione delle temperature.",
+  "passaggi": [
+   "Massimo = 25, minimo = 7",
+   "Range = 25 − 7 = 18"
+  ],
+  "concetto": "campo di variazione"
+ },
+ {
+  "id": "STA-007",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "università",
+  "domanda": "Dati 2, 4, 4, 4, 5, 5, 7, 9 (considerati come intera popolazione), quanto vale la deviazione standard calcolata dividendo per n?",
+  "opzioni": {
+   "A": "4",
+   "B": "2",
+   "C": "2,14",
+   "D": "1,5",
+   "E": "32"
+  },
+  "giusta": "B",
+  "perche": "La media è 40/8 = 5; gli scarti al quadrato sono 9, 1, 1, 1, 0, 0, 4, 16 con somma 32. Dividendo per n = 8 si ottiene la varianza 4, la cui radice è la deviazione standard 2. La trappola principale è fermarsi alla varianza (4) senza estrarre la radice; un'altra è dividere per n − 1 (si otterrebbe circa 2,14, la deviazione standard campionaria), che non è ciò che chiede la domanda.",
+  "semplice": "La deviazione standard dice di quanto, in media, i dati si allontanano dalla media. Qui la media è 5 e i dati se ne discostano tipicamente di 2 unità.",
+  "passaggi": [
+   "Media = (2+4+4+4+5+5+7+9)/8 = 40/8 = 5",
+   "Scarti: −3, −1, −1, −1, 0, 0, 2, 4",
+   "Quadrati: 9, 1, 1, 1, 0, 0, 4, 16 → somma 32",
+   "Varianza = 32/8 = 4",
+   "Deviazione standard = √4 = 2"
+  ],
+  "concetto": "deviazione standard"
+ },
+ {
+  "id": "STA-008",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "università",
+  "domanda": "Perché nella varianza campionaria s² si divide per n − 1 invece che per n?",
+  "opzioni": {
+   "A": "Per rendere la varianza sempre più piccola",
+   "B": "Perché il primo dato non va contato",
+   "C": "Per eliminare l'effetto dei valori anomali",
+   "D": "Per ottenere uno stimatore non distorto della varianza della popolazione",
+   "E": "Solo per convenzione storica, senza effetti sul risultato"
+  },
+  "giusta": "D",
+  "perche": "Gli scarti vengono calcolati dalla media del campione, che è «avvicinata» ai dati per costruzione: per questo la somma degli scarti al quadrato tende a sottostimare la variabilità vera. Dividendo per n − 1 (correzione di Bessel) si compensa questa sottostima e il valore atteso di s² coincide con la varianza della popolazione. La trappola è pensare che serva a ridurre la varianza: in realtà la rende leggermente più grande. Con n − 1 si indicano anche i gradi di libertà, perché uno dei vincoli è già «speso» per stimare la media.",
+  "semplice": "Se misuri l'altezza di 5 compagni e calcoli la loro media, quei 5 sono più vicini alla loro media che alla media vera di tutta la scuola. Dividendo per 4 invece che per 5 si corregge un po' questa illusione di poca variabilità.",
+  "passaggi": [
+   "Gli scarti si calcolano dalla media del campione, non da quella vera.",
+   "La media campionaria è la più vicina possibile ai dati: la somma degli scarti al quadrato sottostima la variabilità vera.",
+   "Dividendo per n − 1 invece che per n il risultato diventa un po' più grande e compensa la sottostima.",
+   "Così il valore atteso di s² è la varianza della popolazione (correzione di Bessel).",
+   "Si divide per n − 1 per avere uno stimatore non distorto."
+  ],
+  "concetto": "correzione di Bessel"
+ },
+ {
+  "id": "STA-009",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "In un'azienda nove dipendenti guadagnano 1500 € al mese e il direttore 15 000 €. Quale indice descrive meglio lo stipendio «tipico»?",
+  "opzioni": {
+   "A": "La media aritmetica",
+   "B": "Il campo di variazione",
+   "C": "La varianza",
+   "D": "La mediana",
+   "E": "Il valore massimo"
+  },
+  "giusta": "D",
+  "perche": "La media è 28 500/10 = 2850 €, una cifra a cui nessun dipendente si avvicina: è trascinata in alto da un solo valore anomalo. La mediana, invece, vale 1500 € e rappresenta bene la situazione tipica, perché dipende solo dalla posizione centrale e non dall'entità dei valori estremi. Si dice che la mediana è un indice robusto. La trappola è usare sempre la media come «valore tipico» anche in distribuzioni molto asimmetriche come i redditi.",
+  "semplice": "Se in una stanza con nove studenti entra un miliardario, la media dei patrimoni diventa altissima, ma lo studente «a metà classifica» resta uno studente: per questo la mediana non cambia quasi.",
+  "passaggi": [
+   "Media = (9 · 1500 + 15 000) / 10 = 28 500 / 10 = 2850 €",
+   "Mediana: 5° e 6° valore ordinati sono 1500 → 1500 €"
+  ],
+  "concetto": "robustezza della mediana"
+ },
+ {
+  "id": "STA-010",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "test",
+  "domanda": "In una distribuzione con asimmetria positiva (coda lunga a destra), di solito vale che:",
+  "opzioni": {
+   "A": "media > mediana > moda",
+   "B": "media = mediana = moda",
+   "C": "moda > mediana > media",
+   "D": "mediana > media > moda",
+   "E": "media < moda < mediana"
+  },
+  "giusta": "A",
+  "perche": "Nella coda a destra si trovano pochi valori molto grandi, che spostano la media verso destra; la mediana, più robusta, resta più indietro; la moda corrisponde al picco della distribuzione, che sta a sinistra. Si ottiene così l'ordine media > mediana > moda. La trappola è invertire l'ordine pensando che «positiva» si riferisca al picco: l'asimmetria prende il nome dal lato della coda. L'uguaglianza dei tre indici vale invece per le distribuzioni simmetriche come la normale.",
+  "semplice": "I tempi di attesa al pronto soccorso sono quasi sempre brevi, ma qualche volta lunghissimi. Quei pochi casi lunghi alzano la media, che risulta maggiore dell'attesa più frequente.",
+  "passaggi": [
+   "Asimmetria positiva: coda lunga a destra, con pochi valori molto grandi.",
+   "Quei valori grandi spostano la media verso destra.",
+   "La mediana, più robusta, resta più indietro; la moda è al picco, a sinistra.",
+   "Ordine: media > mediana > moda."
+  ],
+  "concetto": "asimmetria"
+ },
+ {
+  "id": "STA-011",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "università",
+  "domanda": "Il peso di un gruppo ha media 60 kg e deviazione standard 6 kg; l'altezza dello stesso gruppo ha media 170 cm e deviazione standard 8,5 cm. Quale affermazione è corretta?",
+  "opzioni": {
+   "A": "Il peso è relativamente più variabile: coefficiente di variazione 10% contro 5%",
+   "B": "L'altezza è più variabile perché 8,5 è maggiore di 6",
+   "C": "Le due variabili non si possono confrontare in alcun modo",
+   "D": "Hanno la stessa variabilità relativa",
+   "E": "Il peso è più variabile perché ha media più bassa"
+  },
+  "giusta": "A",
+  "perche": "Per confrontare la variabilità di grandezze con unità diverse (kg e cm) si usa il coefficiente di variazione, CV = deviazione standard / media. Per il peso CV = 6/60 = 0,10 (10%), per l'altezza CV = 8,5/170 = 0,05 (5%). La trappola è confrontare direttamente le deviazioni standard, che hanno unità di misura diverse e quindi non sono confrontabili. Il CV è un numero puro e permette il confronto.",
+  "semplice": "Sbagliare di 1 euro su un caffè è tanto, sbagliare di 1 euro sul prezzo di una casa non è niente: conta la variabilità rispetto alla grandezza media, ed è proprio ciò che misura il coefficiente di variazione.",
+  "passaggi": [
+   "CV peso = 6 / 60 = 0,10 = 10%",
+   "CV altezza = 8,5 / 170 = 0,05 = 5%",
+   "10% > 5%: il peso è relativamente più variabile"
+  ],
+  "concetto": "coefficiente di variazione"
+ },
+ {
+  "id": "STA-012",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "In una classe di 48 studenti, 12 vanno a scuola in bicicletta. Qual è la frequenza relativa percentuale?",
+  "opzioni": {
+   "A": "12%",
+   "B": "4%",
+   "C": "36%",
+   "D": "25%",
+   "E": "48%"
+  },
+  "giusta": "D",
+  "perche": "La frequenza relativa è il rapporto tra frequenza assoluta e totale: 12/48 = 0,25, cioè il 25%. La trappola è scambiare la frequenza assoluta (12) per una percentuale, oppure dividere al contrario (48/12 = 4). Le frequenze relative di tutte le modalità sommano sempre a 1, cioè al 100%.",
+  "semplice": "Se una pizza è tagliata in 48 spicchi e ne mangi 12, hai mangiato un quarto della pizza, cioè il 25%.",
+  "passaggi": [
+   "Frequenza relativa = 12 / 48 = 0,25",
+   "In percentuale: 0,25 · 100 = 25%"
+  ],
+  "concetto": "frequenza relativa"
+ },
+ {
+  "id": "STA-013",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "test",
+  "domanda": "In un insieme di dati il primo quartile è Q1 = 20 e il terzo quartile è Q3 = 35. Secondo la regola di Tukey, oltre quale valore un dato è considerato anomalo verso l'alto?",
+  "opzioni": {
+   "A": "50",
+   "B": "57,5",
+   "C": "35",
+   "D": "52,5",
+   "E": "70"
+  },
+  "giusta": "B",
+  "perche": "La distanza interquartile è IQR = Q3 − Q1 = 15. La regola di Tukey considera anomali i valori oltre Q3 + 1,5 · IQR = 35 + 22,5 = 57,5 (e sotto Q1 − 1,5 · IQR = −2,5). La trappola è sommare 1,5 · IQR alla mediana o a Q1, oppure usare l'IQR senza il fattore 1,5. Sono questi i «baffi» del box plot oltre i quali i punti si disegnano separati.",
+  "semplice": "Immagina la «scatola» dei voti centrali: si concede un margine di una volta e mezza la sua larghezza da ogni lato. Chi sta ancora più in là è un caso insolito da guardare con attenzione.",
+  "passaggi": [
+   "IQR = 35 − 20 = 15",
+   "1,5 · IQR = 22,5",
+   "Limite superiore = 35 + 22,5 = 57,5"
+  ],
+  "concetto": "valori anomali (Tukey)"
+ },
+ {
+  "id": "STA-014",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "superiori",
+  "domanda": "Per rappresentare le altezze di 200 studenti raggruppate in classi (150-160 cm, 160-170 cm, …) quale grafico è più adatto?",
+  "opzioni": {
+   "A": "L'istogramma",
+   "B": "Il diagramma a torta",
+   "C": "Il diagramma a barre separate",
+   "D": "Il pittogramma",
+   "E": "Il cartogramma"
+  },
+  "giusta": "A",
+  "perche": "L'altezza è una variabile quantitativa continua: raggruppata in classi contigue si rappresenta con l'istogramma, in cui i rettangoli sono uno accanto all'altro e l'area di ciascuno è proporzionale alla frequenza della classe. Il diagramma a barre separate è invece pensato per variabili qualitative o discrete, e la torta per mostrare parti di un totale con poche categorie. La trappola è considerare istogramma e diagramma a barre come la stessa cosa: le barre attaccate indicano proprio la continuità dei valori.",
+  "semplice": "Con l'istogramma le altezze si vedono come una «montagnetta»: le classi più frequenti, intorno a 170 cm, formano il picco, e le altezze rare stanno ai lati.",
+  "passaggi": [
+   "L'altezza è una variabile quantitativa continua.",
+   "Raggruppata in classi contigue (150-160, 160-170, …) si rappresenta con rettangoli attaccati.",
+   "Questo grafico è l'istogramma, con area proporzionale alla frequenza.",
+   "Barre separate e torta servono per variabili qualitative o discrete.",
+   "Il grafico adatto è l'istogramma."
+  ],
+  "concetto": "istogramma"
+ },
+ {
+  "id": "STA-015",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "università",
+  "domanda": "Uno studente ha preso 28 in un esame da 6 CFU, 24 in uno da 9 CFU e 30 in uno da 12 CFU. Qual è la media ponderata sui crediti?",
+  "opzioni": {
+   "A": "27,33",
+   "B": "27",
+   "C": "27,56",
+   "D": "28",
+   "E": "26,80"
+  },
+  "giusta": "C",
+  "perche": "Nella media ponderata ogni voto pesa in proporzione ai crediti: (28·6 + 24·9 + 30·12) / (6 + 9 + 12) = 744 / 27 ≈ 27,56. La trappola è calcolare la media semplice dei tre voti (82/3 ≈ 27,33), che dà lo stesso peso a esami di dimensioni molto diverse. Qui il 30 pesa di più perché vale il doppio dei crediti del 28, e questo alza la media.",
+  "semplice": "Se in una ricetta metti 2 kg di farina a 1 €/kg e 1 kg di zucchero a 4 €/kg, il prezzo medio al kg non è 2,5 € ma 2 €: la farina pesa di più. Con i voti e i crediti funziona allo stesso modo.",
+  "passaggi": [
+   "Prodotti: 28·6 = 168; 24·9 = 216; 30·12 = 360",
+   "Somma dei prodotti = 744",
+   "Somma dei pesi = 6 + 9 + 12 = 27",
+   "Media ponderata = 744 / 27 ≈ 27,56"
+  ],
+  "concetto": "media ponderata"
+ },
+ {
+  "id": "STA-016",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "test",
+  "domanda": "Se a tutti i valori di un insieme di dati si aggiunge 5, cosa succede a media e deviazione standard?",
+  "opzioni": {
+   "A": "Entrambe aumentano di 5",
+   "B": "La media non cambia, la deviazione standard aumenta di 5",
+   "C": "La media aumenta di 5, la deviazione standard non cambia",
+   "D": "La media aumenta di 5, la deviazione standard aumenta di 25",
+   "E": "Entrambe restano invariate"
+  },
+  "giusta": "C",
+  "perche": "Aggiungere una costante sposta tutti i dati della stessa quantità: la media si sposta con loro, ma le distanze tra i dati e dalla media restano identiche. Per questo la deviazione standard (e la varianza) non cambiano. La trappola è pensare che ogni trasformazione dei dati modifichi tutti gli indici: le traslazioni toccano solo gli indici di posizione.",
+  "semplice": "Se tutti gli studenti salgono su un gradino alto 5 cm, l'altezza media aumenta di 5 cm, ma le differenze tra uno studente e l'altro restano esattamente le stesse.",
+  "passaggi": [
+   "Aggiungere 5 sposta ogni dato di 5: xᵢ' = xᵢ + 5.",
+   "La media si sposta allo stesso modo: x̄' = x̄ + 5.",
+   "Gli scarti dalla media non cambiano: xᵢ' − x̄' = xᵢ − x̄.",
+   "Con gli stessi scarti, varianza e deviazione standard restano uguali.",
+   "La media aumenta di 5, la deviazione standard non cambia."
+  ],
+  "concetto": "trasformazioni lineari"
+ },
+ {
+  "id": "STA-017",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "università",
+  "domanda": "Una variabile X ha varianza 9. Quanto vale la varianza di Y = 2X?",
+  "opzioni": {
+   "A": "18",
+   "B": "9",
+   "C": "11",
+   "D": "81",
+   "E": "36"
+  },
+  "giusta": "E",
+  "perche": "Moltiplicando i dati per una costante a, tutti gli scarti dalla media vengono moltiplicati per a e i loro quadrati per a². Quindi Var(aX) = a² · Var(X) = 4 · 9 = 36, mentre la deviazione standard passa da 3 a 6. La trappola è moltiplicare la varianza solo per 2 (18), confondendo il comportamento della varianza con quello della deviazione standard.",
+  "semplice": "Se trasformi un'altezza da metri a centimetri moltiplichi per 100: la deviazione standard diventa 100 volte più grande, la varianza 10 000 volte, perché è un quadrato.",
+  "passaggi": [
+   "Var(aX) = a² · Var(X)",
+   "a = 2 → a² = 4",
+   "Var(Y) = 4 · 9 = 36"
+  ],
+  "concetto": "varianza e scala"
+ },
+ {
+  "id": "STA-018",
+  "materia": "Statistica",
+  "argomento": "Statistica descrittiva",
+  "livello": "test",
+  "domanda": "In un box plot (diagramma a scatola), che cosa rappresenta la scatola centrale?",
+  "opzioni": {
+   "A": "Il 50% centrale dei dati, da Q1 a Q3, con la mediana segnata all'interno",
+   "B": "L'intervallo tra il minimo e il massimo",
+   "C": "L'intervallo media ± una deviazione standard",
+   "D": "Il 95% dei dati",
+   "E": "Solo i valori anomali"
+  },
+  "giusta": "A",
+  "perche": "Il bordo inferiore della scatola è il primo quartile, quello superiore il terzo quartile: dentro cade quindi la metà centrale delle osservazioni. La linea interna indica la mediana, e i baffi si estendono fino ai dati più lontani non anomali. La trappola è credere che la scatola sia costruita con media e deviazione standard: il box plot usa solo indici di posizione e per questo è robusto.",
+  "semplice": "Pensa a una gara: la scatola contiene i corridori arrivati tra il 25° e il 75° posto su 100. La linea al centro è chi è arrivato 50°.",
+  "passaggi": [
+   "Il bordo inferiore della scatola è il primo quartile Q1.",
+   "Il bordo superiore è il terzo quartile Q3: dentro sta il 50% centrale dei dati.",
+   "La linea interna è la mediana; i baffi arrivano ai dati più lontani non anomali.",
+   "Il box plot non usa media e deviazione standard.",
+   "Risposta: la A."
+  ],
+  "concetto": "box plot"
+ },
+ {
+  "id": "STA-019",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "superiori",
+  "domanda": "Lanciando un dado regolare a sei facce, qual è la probabilità di ottenere un numero pari?",
+  "opzioni": {
+   "A": "1/6",
+   "B": "1/3",
+   "C": "2/3",
+   "D": "3/36",
+   "E": "1/2"
+  },
+  "giusta": "E",
+  "perche": "I casi favorevoli sono 2, 4 e 6, cioè 3 su 6 casi possibili ugualmente probabili: la probabilità è 3/6 = 1/2. La trappola è contare un solo numero pari (1/6) oppure confondere i casi favorevoli con quelli sfavorevoli. Nella definizione classica la probabilità è sempre casi favorevoli diviso casi possibili, purché i casi siano equiprobabili.",
+  "semplice": "Su sei facce, metà sono pari e metà dispari: è come lanciare una moneta, una possibilità su due.",
+  "passaggi": [
+   "Casi possibili: 6",
+   "Casi favorevoli (2, 4, 6): 3",
+   "P = 3/6 = 1/2"
+  ],
+  "concetto": "definizione classica"
+ },
+ {
+  "id": "STA-020",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "superiori",
+  "domanda": "Lanciando due dadi regolari, qual è la probabilità che la somma sia 7?",
+  "opzioni": {
+   "A": "1/12",
+   "B": "7/36",
+   "C": "1/6",
+   "D": "1/11",
+   "E": "1/36"
+  },
+  "giusta": "C",
+  "perche": "Le coppie ordinate possibili sono 6 · 6 = 36, tutte equiprobabili. La somma 7 si ottiene con (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): 6 casi, quindi 6/36 = 1/6. La trappola è considerare le somme da 2 a 12 come equiprobabili (1/11) o contare solo le coppie non ordinate: (1,6) e (6,1) sono esiti diversi perché i dadi sono distinti.",
+  "semplice": "Immagina un dado rosso e uno blu: «rosso 1 e blu 6» è diverso da «rosso 6 e blu 1». Il 7 è la somma più facile da ottenere proprio perché ha più combinazioni di tutte.",
+  "passaggi": [
+   "Casi possibili: 6 · 6 = 36",
+   "Casi favorevoli: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6",
+   "P = 6/36 = 1/6"
+  ],
+  "concetto": "spazio campionario"
+ },
+ {
+  "id": "STA-021",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "test",
+  "domanda": "Un'urna contiene 3 palline rosse, 5 blu e 2 verdi. Se ne estraggono due senza reinserimento, qual è la probabilità che siano entrambe rosse?",
+  "opzioni": {
+   "A": "9/100",
+   "B": "1/15",
+   "C": "3/10",
+   "D": "1/10",
+   "E": "6/45"
+  },
+  "giusta": "B",
+  "perche": "Alla prima estrazione la probabilità di rossa è 3/10; poiché la pallina non viene rimessa, alla seconda restano 2 rosse su 9 palline. Per la regola del prodotto: 3/10 · 2/9 = 6/90 = 1/15. La trappola è usare 3/10 · 3/10 = 9/100, che vale solo con reinserimento, cioè quando le estrazioni sono indipendenti. Senza reinserimento la seconda probabilità è condizionata dalla prima.",
+  "semplice": "Se in un sacchetto ci sono 10 caramelle di cui 3 alla fragola e ne mangi una alla fragola, nel sacchetto ne restano 9 con sole 2 alla fragola: le probabilità cambiano a ogni estrazione.",
+  "passaggi": [
+   "P(1ª rossa) = 3/10",
+   "P(2ª rossa | 1ª rossa) = 2/9",
+   "P = 3/10 · 2/9 = 6/90 = 1/15"
+  ],
+  "concetto": "estrazioni senza reinserimento"
+ },
+ {
+  "id": "STA-022",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "superiori",
+  "domanda": "Lanciando tre volte una moneta regolare, qual è la probabilità di ottenere almeno una testa?",
+  "opzioni": {
+   "A": "7/8",
+   "B": "1/8",
+   "C": "3/8",
+   "D": "1/2",
+   "E": "3/4"
+  },
+  "giusta": "A",
+  "perche": "Conviene passare all'evento complementare: «nessuna testa» significa tre croci, con probabilità (1/2)³ = 1/8. Quindi P(almeno una testa) = 1 − 1/8 = 7/8. La trappola è sommare le probabilità dei singoli lanci (1/2 + 1/2 + 1/2 = 3/2, impossibile perché supera 1) oppure calcolare la probabilità di esattamente una testa (3/8).",
+  "semplice": "«Almeno una» è il contrario di «nessuna». Fallire tre lanci di fila capita solo una volta su otto, quindi nelle altre sette almeno una testa esce.",
+  "passaggi": [
+   "Evento complementare: CCC",
+   "P(CCC) = (1/2)³ = 1/8",
+   "P(almeno una testa) = 1 − 1/8 = 7/8"
+  ],
+  "concetto": "evento complementare"
+ },
+ {
+  "id": "STA-023",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "test",
+  "domanda": "Due eventi A e B sono incompatibili, con P(A) = 0,3 e P(B) = 0,4. Quanto vale P(A ∪ B)?",
+  "opzioni": {
+   "A": "0,12",
+   "B": "0,58",
+   "C": "0,7",
+   "D": "0,1",
+   "E": "1"
+  },
+  "giusta": "C",
+  "perche": "Eventi incompatibili non possono verificarsi insieme, quindi P(A ∩ B) = 0 e la probabilità dell'unione è la semplice somma: 0,3 + 0,4 = 0,7. La trappola è confondere incompatibili e indipendenti: per eventi indipendenti si moltiplicherebbe per l'intersezione (0,12) e l'unione sarebbe 0,7 − 0,12 = 0,58. Le due proprietà sono quasi opposte: eventi incompatibili con probabilità positiva non sono mai indipendenti.",
+  "semplice": "Estrai uno studente a caso: «è nato a gennaio» e «è nato a febbraio» non possono capitare insieme. La probabilità che sia nato in uno dei due mesi è la somma delle due.",
+  "passaggi": [
+   "Incompatibili → P(A ∩ B) = 0",
+   "P(A ∪ B) = P(A) + P(B) = 0,3 + 0,4 = 0,7"
+  ],
+  "concetto": "eventi incompatibili"
+ },
+ {
+  "id": "STA-024",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "test",
+  "domanda": "Se P(A) = 0,5, P(B) = 0,4 e P(A ∩ B) = 0,2, quanto vale P(A ∪ B)?",
+  "opzioni": {
+   "A": "0,9",
+   "B": "0,2",
+   "C": "0,7",
+   "D": "0,5",
+   "E": "0,6"
+  },
+  "giusta": "C",
+  "perche": "Per la regola dell'addizione generale P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 0,5 + 0,4 − 0,2 = 0,7. Si sottrae l'intersezione perché altrimenti i casi in cui avvengono entrambi gli eventi verrebbero contati due volte. La trappola è sommare e basta (0,9), cosa lecita solo per eventi incompatibili.",
+  "semplice": "Se metà della classe gioca a calcio, il 40% suona uno strumento e il 20% fa entrambe le cose, chi fa almeno una delle due attività è il 50 + 40 − 20 = 70%: i «doppi» non vanno contati due volte.",
+  "passaggi": [
+   "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)",
+   "= 0,5 + 0,4 − 0,2 = 0,7"
+  ],
+  "concetto": "regola dell'addizione"
+ },
+ {
+  "id": "STA-025",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "università",
+  "domanda": "Se P(A) = 0,3, P(B) = 0,5 e P(A ∩ B) = 0,15, quale affermazione è corretta?",
+  "opzioni": {
+   "A": "A e B sono incompatibili",
+   "B": "B è contenuto in A",
+   "C": "P(A | B) = 0,5",
+   "D": "A e B sono indipendenti",
+   "E": "A e B sono dipendenti perché l'intersezione non è nulla"
+  },
+  "giusta": "D",
+  "perche": "Due eventi sono indipendenti se P(A ∩ B) = P(A) · P(B): qui 0,3 · 0,5 = 0,15, che coincide con l'intersezione data. Di conseguenza P(A | B) = 0,15/0,5 = 0,3 = P(A): sapere che B è avvenuto non cambia la probabilità di A. La trappola è pensare che un'intersezione non nulla implichi dipendenza, o confondere l'indipendenza con l'incompatibilità, che richiederebbe intersezione nulla.",
+  "semplice": "Il colore della maglia che indossi e il risultato di un dado sono indipendenti: la probabilità di fare 6 resta 1/6 qualunque maglia tu abbia, e la probabilità congiunta è il prodotto delle due.",
+  "passaggi": [
+   "P(A) · P(B) = 0,3 · 0,5 = 0,15",
+   "Coincide con P(A ∩ B) = 0,15 → indipendenti",
+   "Verifica: P(A | B) = 0,15/0,5 = 0,3 = P(A)"
+  ],
+  "concetto": "indipendenza"
+ },
+ {
+  "id": "STA-026",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "università",
+  "domanda": "Una malattia ha prevalenza 1%. Un test ha sensibilità 90% e specificità 95%. Se una persona risulta positiva, qual è circa la probabilità che sia malata?",
+  "opzioni": {
+   "A": "Circa 90%",
+   "B": "Circa 15%",
+   "C": "Circa 95%",
+   "D": "Circa 1%",
+   "E": "Circa 50%"
+  },
+  "giusta": "B",
+  "perche": "Per il teorema di Bayes servono veri positivi e falsi positivi. Su 10 000 persone, 100 sono malate e 90 risultano positive; delle 9900 sane, il 5% (495) risulta comunque positivo. I positivi totali sono 585, di cui solo 90 malati: 90/585 ≈ 0,154, circa 15%. La trappola, molto comune anche tra i medici, è confondere la sensibilità P(positivo | malato) con il valore predittivo positivo P(malato | positivo): quando la malattia è rara, i falsi positivi superano di molto i veri positivi.",
+  "semplice": "Se cerchi un ago in un pagliaio con un metal detector un po' impreciso, molte volte suonerà per un chiodo qualunque: c'è così tanta paglia (persone sane) che anche pochi errori pesano più dell'unico ago.",
+  "passaggi": [
+   "Su 10 000 persone: 100 malati, 9900 sani",
+   "Veri positivi = 0,90 · 100 = 90",
+   "Falsi positivi = 0,05 · 9900 = 495",
+   "P(malato | positivo) = 90 / (90 + 495) = 90/585 ≈ 0,154"
+  ],
+  "concetto": "teorema di Bayes"
+ },
+ {
+  "id": "STA-027",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "università",
+  "domanda": "In un corso ci sono 120 studentesse, di cui 30 mancine, e 80 studenti, di cui 20 mancini. Scelta a caso una persona mancina, qual è la probabilità che sia una studentessa?",
+  "opzioni": {
+   "A": "0,6",
+   "B": "0,25",
+   "C": "0,15",
+   "D": "0,4",
+   "E": "0,5"
+  },
+  "giusta": "A",
+  "perche": "Si tratta di una probabilità condizionata: l'evento condizionante è «mancino», che comprende 30 + 20 = 50 persone. Tra queste, le studentesse sono 30, quindi P(studentessa | mancino) = 30/50 = 0,6. La trappola è calcolare P(mancino | studentessa) = 30/120 = 0,25, cioè invertire il condizionamento, oppure dividere per il totale di 200 persone (0,15).",
+  "semplice": "Se entri in una stanza dove ci sono solo i mancini del corso, conti 50 persone: 30 sono ragazze. Restringere il gruppo a chi soddisfa la condizione è il cuore della probabilità condizionata.",
+  "passaggi": [
+   "Mancini totali = 30 + 20 = 50",
+   "Studentesse mancine = 30",
+   "P(studentessa | mancino) = 30/50 = 0,6"
+  ],
+  "concetto": "probabilità condizionata"
+ },
+ {
+  "id": "STA-028",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "test",
+  "domanda": "In quanti modi diversi si possono scegliere 3 rappresentanti in un gruppo di 10 studenti (l'ordine non conta)?",
+  "opzioni": {
+   "A": "720",
+   "B": "30",
+   "C": "1000",
+   "D": "60",
+   "E": "120"
+  },
+  "giusta": "E",
+  "perche": "Poiché l'ordine non conta si usano le combinazioni: C(10,3) = 10! / (3! · 7!) = (10 · 9 · 8) / (3 · 2 · 1) = 720 / 6 = 120. La trappola è fermarsi alle disposizioni (720), che contano come diversi i gruppi con le stesse persone in ordine diverso. Ogni terna di persone compare infatti 3! = 6 volte nelle disposizioni.",
+  "semplice": "Scegliere Anna, Bruno e Carla è lo stesso che scegliere Carla, Anna e Bruno: il gruppo è identico. Per questo si divide per i 6 modi di mettere in fila tre persone.",
+  "passaggi": [
+   "Disposizioni: 10 · 9 · 8 = 720",
+   "Ogni gruppo è contato 3! = 6 volte",
+   "Combinazioni: 720 / 6 = 120"
+  ],
+  "concetto": "combinazioni"
+ },
+ {
+  "id": "STA-029",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "test",
+  "domanda": "Quanti anagrammi (anche senza senso) si possono formare con le lettere della parola ROMA?",
+  "opzioni": {
+   "A": "24",
+   "B": "16",
+   "C": "12",
+   "D": "4",
+   "E": "256"
+  },
+  "giusta": "A",
+  "perche": "Le lettere sono quattro e tutte diverse, quindi gli anagrammi sono le permutazioni di 4 oggetti: 4! = 4 · 3 · 2 · 1 = 24. La trappola è calcolare 4² o 4⁴, che permetterebbero di ripetere le lettere. Se ci fossero lettere ripetute bisognerebbe dividere per i fattoriali delle ripetizioni.",
+  "semplice": "Per la prima posizione hai 4 lettere tra cui scegliere, per la seconda ne restano 3, poi 2, poi 1: 4 · 3 · 2 · 1 = 24 parole possibili, da ROMA ad AMOR.",
+  "passaggi": [
+   "Lettere distinte: 4",
+   "Permutazioni: 4! = 4 · 3 · 2 · 1 = 24"
+  ],
+  "concetto": "permutazioni"
+ },
+ {
+  "id": "STA-030",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "superiori",
+  "domanda": "Una moneta viene lanciata 10 000 volte e testa esce 5021 volte. Quale principio spiega perché la frequenza relativa è vicina a 0,5?",
+  "opzioni": {
+   "A": "Il teorema di Bayes",
+   "B": "La regola del prodotto",
+   "C": "Il principio di indifferenza",
+   "D": "La legge dei grandi numeri",
+   "E": "La fallacia del giocatore"
+  },
+  "giusta": "D",
+  "perche": "La legge dei grandi numeri afferma che, ripetendo molte volte un esperimento nelle stesse condizioni, la frequenza relativa di un evento tende ad avvicinarsi alla sua probabilità. Su 10 000 lanci la frequenza 0,5021 è infatti molto vicina a 0,5. La trappola è pensare che la legge garantisca un numero esatto di teste o che «compensi» le uscite passate: è la frequenza relativa ad avvicinarsi, non la differenza assoluta tra teste e croci ad annullarsi.",
+  "semplice": "Con 10 lanci puoi ottenere anche 7 teste, ma con 10 000 lanci la percentuale di teste sarà quasi sempre vicinissima al 50%. Più provi, più la frequenza si stabilizza.",
+  "passaggi": [
+   "Dati: 5021 teste su 10 000 lanci, frequenza relativa 5021/10 000 = 0,5021.",
+   "La probabilità teorica di testa è 0,5.",
+   "La legge dei grandi numeri dice che, con molte ripetizioni, la frequenza relativa si avvicina alla probabilità.",
+   "Non garantisce un numero esatto di teste né una «compensazione».",
+   "Il principio è la legge dei grandi numeri."
+  ],
+  "concetto": "legge dei grandi numeri"
+ },
+ {
+  "id": "STA-031",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "università",
+  "domanda": "In una gara con 8 atleti, quanti sono i possibili podi diversi (oro, argento, bronzo)?",
+  "opzioni": {
+   "A": "336",
+   "B": "56",
+   "C": "512",
+   "D": "24",
+   "E": "40 320"
+  },
+  "giusta": "A",
+  "perche": "Qui l'ordine conta, perché arrivare primo o terzo è diverso: si usano le disposizioni semplici D(8,3) = 8 · 7 · 6 = 336. La trappola è usare le combinazioni C(8,3) = 56, che contano solo quali atleti salgono sul podio senza distinguere le posizioni. Si può controllare il legame: 56 · 3! = 336.",
+  "semplice": "Per l'oro ci sono 8 candidati, per l'argento ne restano 7, per il bronzo 6. Moltiplicando si ottengono tutte le classifiche possibili dei primi tre.",
+  "passaggi": [
+   "Oro: 8 possibilità",
+   "Argento: 7",
+   "Bronzo: 6",
+   "D(8,3) = 8 · 7 · 6 = 336"
+  ],
+  "concetto": "disposizioni"
+ },
+ {
+  "id": "STA-032",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti affermazioni sulla probabilità di un evento è corretta?",
+  "opzioni": {
+   "A": "Può essere negativa se l'evento è sfavorevole",
+   "B": "Può superare 1 per eventi molto probabili",
+   "C": "Vale 1 solo per eventi che si sono già verificati",
+   "D": "È sempre 1/2 se gli esiti possibili sono due",
+   "E": "È un numero compreso tra 0 e 1, dove 0 indica l'evento impossibile"
+  },
+  "giusta": "E",
+  "perche": "Per definizione la probabilità di un evento è un numero tra 0 e 1: vale 0 per l'evento impossibile e 1 per l'evento certo. La trappola più insidiosa è credere che due esiti possibili siano sempre equiprobabili: «domani piove o non piove» non significa che la probabilità sia 1/2. Una probabilità negativa o maggiore di 1 è sempre segno di un errore di calcolo.",
+  "semplice": "Estrarre un numero da 1 a 90 dal sacchetto della tombola è certo (probabilità 1); estrarre il 91 è impossibile (probabilità 0). Tutto il resto sta in mezzo.",
+  "passaggi": [
+   "Per definizione 0 ≤ P(evento) ≤ 1.",
+   "P = 0 per l'evento impossibile, P = 1 per l'evento certo.",
+   "Probabilità negative o maggiori di 1 sono errori; P = 1 non richiede che l'evento sia già avvenuto.",
+   "Due esiti possibili non sono per forza equiprobabili.",
+   "Risposta: la E."
+  ],
+  "concetto": "assiomi della probabilità"
+ },
+ {
+  "id": "STA-033",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "test",
+  "domanda": "Lanciando quattro volte una moneta regolare, qual è la probabilità di ottenere esattamente due teste?",
+  "opzioni": {
+   "A": "1/2",
+   "B": "3/8",
+   "C": "1/4",
+   "D": "1/16",
+   "E": "5/16"
+  },
+  "giusta": "B",
+  "perche": "Ogni sequenza di 4 lanci ha probabilità (1/2)⁴ = 1/16. Le sequenze con esattamente due teste sono C(4,2) = 6 (TTCC, TCTC, TCCT, CTTC, CTCT, CCTT), quindi la probabilità è 6/16 = 3/8. La trappola è pensare che «metà teste» sia il risultato più ovvio con probabilità 1/2: è il risultato più probabile, ma ha comunque solo il 37,5% di probabilità.",
+  "semplice": "Prova a scrivere tutte le 16 sequenze possibili di quattro lanci: solo 6 contengono esattamente due T. Le altre 10 hanno più o meno teste.",
+  "passaggi": [
+   "Sequenze possibili: 2⁴ = 16",
+   "Sequenze con 2 teste: C(4,2) = 6",
+   "P = 6/16 = 3/8"
+  ],
+  "concetto": "probabilità binomiale"
+ },
+ {
+  "id": "STA-034",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "università",
+  "domanda": "Una moneta regolare ha dato testa nei cinque lanci precedenti. Qual è la probabilità che al sesto lancio esca testa?",
+  "opzioni": {
+   "A": "1/64",
+   "B": "1/2",
+   "C": "1/32",
+   "D": "Meno di 1/2, perché ora deve uscire croce",
+   "E": "Più di 1/2, perché la moneta è «in serie»"
+  },
+  "giusta": "B",
+  "perche": "I lanci di una moneta regolare sono indipendenti: la moneta non ha memoria dei risultati passati, quindi la probabilità di testa al sesto lancio resta 1/2. Credere che dopo una serie di teste «debba» uscire croce è la cosiddetta fallacia del giocatore. Il valore 1/64 è la probabilità, calcolata prima di iniziare, di avere sei teste consecutive, che è un'altra domanda.",
+  "semplice": "Al lotto, un numero «ritardatario» che non esce da mesi ha esattamente la stessa probabilità di uscire degli altri: le palline non sanno da quanto tempo sono rimaste nell'urna.",
+  "passaggi": [
+   "I lanci di una moneta regolare sono indipendenti: la moneta non ha memoria.",
+   "Quindi i cinque lanci precedenti non cambiano il sesto.",
+   "P(testa al sesto lancio) = 1/2.",
+   "1/64 = (1/2)⁶ è la probabilità, calcolata all'inizio, di sei teste di fila: un'altra domanda.",
+   "La probabilità è 1/2."
+  ],
+  "concetto": "fallacia del giocatore"
+ },
+ {
+  "id": "STA-035",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "test",
+  "domanda": "Da un mazzo di 40 carte italiane (4 semi da 10 carte, un asso per seme) si estrae una carta. Qual è la probabilità che sia un asso oppure una carta di denari?",
+  "opzioni": {
+   "A": "14/40",
+   "B": "1/40",
+   "C": "4/40",
+   "D": "13/40",
+   "E": "10/40"
+  },
+  "giusta": "D",
+  "perche": "Gli assi sono 4 e le carte di denari 10, ma l'asso di denari appartiene a entrambi i gruppi. Per la regola dell'addizione: 4/40 + 10/40 − 1/40 = 13/40. La trappola è sommare direttamente 4 + 10 = 14, contando due volte l'asso di denari: i due eventi non sono incompatibili.",
+  "semplice": "Se conti gli assi e poi le carte di denari, l'asso di denari lo tocchi due volte. Togliendo il doppio conteggio le carte che vanno bene sono 13.",
+  "passaggi": [
+   "P(asso) = 4/40",
+   "P(denari) = 10/40",
+   "P(asso di denari) = 1/40",
+   "P = 4/40 + 10/40 − 1/40 = 13/40"
+  ],
+  "concetto": "eventi compatibili"
+ },
+ {
+  "id": "STA-036",
+  "materia": "Statistica",
+  "argomento": "Probabilità",
+  "livello": "università",
+  "domanda": "In una classe di 23 persone, qual è circa la probabilità che almeno due compiano gli anni lo stesso giorno (anni di 365 giorni, nascite uniformi)?",
+  "opzioni": {
+   "A": "Circa 6%",
+   "B": "Circa 1%",
+   "C": "Circa 50%",
+   "D": "Circa 23%",
+   "E": "Circa 95%"
+  },
+  "giusta": "C",
+  "perche": "Si calcola il complementare: la probabilità che i 23 compleanni siano tutti diversi è (365/365) · (364/365) · … · (343/365) ≈ 0,493. Quindi la probabilità che almeno due coincidano è circa 1 − 0,493 = 0,507, poco più del 50%. La trappola è ragionare su una sola persona (23/365 ≈ 6%), dimenticando che le coppie da confrontare sono ben 253. È il cosiddetto paradosso del compleanno, che mostra come l'intuito sottovaluti le coincidenze.",
+  "semplice": "Non serve che qualcuno sia nato nel tuo stesso giorno: basta che una qualsiasi coppia coincida. Con 23 persone le coppie possibili sono 253, e così una coincidenza diventa probabile quanto lanciare una moneta.",
+  "passaggi": [
+   "P(tutti diversi) = 365/365 · 364/365 · … · 343/365",
+   "Calcolo: ≈ 0,493",
+   "P(almeno una coincidenza) = 1 − 0,493 ≈ 0,507"
+  ],
+  "concetto": "paradosso del compleanno"
+ },
+ {
+  "id": "STA-037",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti è una variabile casuale discreta?",
+  "opzioni": {
+   "A": "L'altezza di uno studente scelto a caso",
+   "B": "Il tempo di attesa alla fermata dell'autobus",
+   "C": "Il numero di figli di una famiglia scelta a caso",
+   "D": "La temperatura corporea di un paziente",
+   "E": "Il peso di un neonato"
+  },
+  "giusta": "C",
+  "perche": "Una variabile casuale è discreta quando può assumere un insieme finito o numerabile di valori, separati tra loro: il numero di figli può essere 0, 1, 2, 3… ma non 1,7. Altezza, tempo, temperatura e peso sono invece grandezze misurate su una scala continua, che in teoria possono assumere qualunque valore in un intervallo. La trappola è pensare che una grandezza diventi discreta solo perché la si arrotonda: il peso registrato in grammi resta una variabile continua.",
+  "semplice": "Le variabili discrete si contano (quanti gol, quanti figli, quante teste), quelle continue si misurano con un righello, una bilancia o un cronometro.",
+  "passaggi": [
+   "Discreta: valori separati, in numero finito o numerabile.",
+   "Il numero di figli può essere 0, 1, 2, 3… ma non 1,7.",
+   "Altezza, tempo, temperatura e peso si misurano su scala continua (anche se arrotondati).",
+   "La variabile discreta è il numero di figli."
+  ],
+  "concetto": "variabile discreta"
+ },
+ {
+  "id": "STA-038",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "superiori",
+  "domanda": "Qual è il valore atteso del risultato del lancio di un dado regolare a sei facce?",
+  "opzioni": {
+   "A": "3",
+   "B": "6",
+   "C": "21",
+   "D": "1/6",
+   "E": "3,5"
+  },
+  "giusta": "E",
+  "perche": "Il valore atteso si calcola moltiplicando ogni valore per la sua probabilità e sommando: (1 + 2 + 3 + 4 + 5 + 6) · 1/6 = 21/6 = 3,5. La trappola è pensare che il valore atteso debba essere un risultato possibile del dado: 3,5 non uscirà mai, ma è la media dei risultati su moltissimi lanci. Il valore 21 è soltanto la somma delle facce, prima della divisione.",
+  "semplice": "Se lanci un dado 600 volte e fai la media dei risultati, otterrai un numero molto vicino a 3,5. È il «baricentro» dei possibili risultati.",
+  "passaggi": [
+   "E[X] = Σ x · P(x)",
+   "= (1 + 2 + 3 + 4 + 5 + 6) · 1/6",
+   "= 21/6 = 3,5"
+  ],
+  "concetto": "valore atteso"
+ },
+ {
+  "id": "STA-039",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "test",
+  "domanda": "In un gioco si vincono 10 € con probabilità 0,2 e si perdono 3 € altrimenti. Qual è il guadagno atteso per partita?",
+  "opzioni": {
+   "A": "+0,40 €",
+   "B": "−0,40 €",
+   "C": "+2,00 €",
+   "D": "+7,00 €",
+   "E": "−2,40 €"
+  },
+  "giusta": "B",
+  "perche": "Il guadagno atteso è 10 · 0,2 + (−3) · 0,8 = 2 − 2,4 = −0,4 €. In media, quindi, a ogni partita si perdono 40 centesimi, anche se la vincita sembra molto più grande della perdita. La trappola è confrontare solo gli importi (10 contro 3) senza pesarli con le probabilità, oppure dimenticare il segno negativo della perdita. Un gioco è equo solo quando il guadagno atteso è zero.",
+  "semplice": "Su 10 partite ne vinci in media 2 (incassi 20 €) e ne perdi 8 (paghi 24 €): alla fine sei sotto di 4 €, cioè 40 centesimi a partita.",
+  "passaggi": [
+   "E[G] = 10 · 0,2 + (−3) · 0,8",
+   "= 2 − 2,4",
+   "= −0,4 €"
+  ],
+  "concetto": "gioco equo"
+ },
+ {
+  "id": "STA-040",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "Una variabile X assume i valori 0, 1, 2 con probabilità 0,25, 0,5 e 0,25. Quanto vale la sua varianza?",
+  "opzioni": {
+   "A": "1",
+   "B": "1,5",
+   "C": "0,5",
+   "D": "0,25",
+   "E": "0,71"
+  },
+  "giusta": "C",
+  "perche": "Il valore atteso è E[X] = 0 · 0,25 + 1 · 0,5 + 2 · 0,25 = 1. Poi E[X²] = 0 · 0,25 + 1 · 0,5 + 4 · 0,25 = 1,5, e la varianza è E[X²] − (E[X])² = 1,5 − 1 = 0,5. La trappola è fermarsi a E[X²] (1,5) dimenticando di sottrarre il quadrato della media, oppure riportare la deviazione standard (circa 0,71) al posto della varianza.",
+  "semplice": "È la distribuzione del numero di teste in due lanci di moneta: in media esce una testa, e il risultato si discosta di poco da questo valore.",
+  "passaggi": [
+   "E[X] = 0 · 0,25 + 1 · 0,5 + 2 · 0,25 = 1",
+   "E[X²] = 0 · 0,25 + 1 · 0,5 + 4 · 0,25 = 1,5",
+   "Var(X) = E[X²] − (E[X])² = 1,5 − 1 = 0,5"
+  ],
+  "concetto": "varianza di una variabile casuale"
+ },
+ {
+  "id": "STA-041",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "test",
+  "domanda": "Una moneta regolare viene lanciata 5 volte. Qual è la probabilità di ottenere esattamente 3 teste?",
+  "opzioni": {
+   "A": "0,6",
+   "B": "0,3125",
+   "C": "0,5",
+   "D": "0,125",
+   "E": "0,15625"
+  },
+  "giusta": "B",
+  "perche": "Il numero di teste segue una binomiale con n = 5 e p = 0,5: P(X = 3) = C(5,3) · 0,5³ · 0,5² = 10 · 1/32 = 10/32 = 0,3125. La trappola è dimenticare il coefficiente binomiale, che conta in quante posizioni diverse possono cadere le tre teste: senza di esso si ottiene 1/32. Un'altra trappola è usare la proporzione 3/5 = 0,6 come se fosse una probabilità.",
+  "semplice": "Le tre teste possono comparire in 10 ordini diversi (TTTCC, TTCTC, …). Ognuno ha probabilità 1/32, e quindi in totale la probabilità è 10/32.",
+  "passaggi": [
+   "X ~ Binomiale(n = 5, p = 0,5)",
+   "C(5,3) = 10",
+   "P(X = 3) = 10 · 0,5⁵ = 10/32 = 0,3125"
+  ],
+  "concetto": "distribuzione binomiale"
+ },
+ {
+  "id": "STA-042",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "Una binomiale ha n = 100 e p = 0,2. Quanto vale la sua deviazione standard?",
+  "opzioni": {
+   "A": "16",
+   "B": "20",
+   "C": "4",
+   "D": "2",
+   "E": "0,4"
+  },
+  "giusta": "C",
+  "perche": "Per una binomiale la media è np = 20 e la varianza np(1 − p) = 100 · 0,2 · 0,8 = 16. La deviazione standard è la radice della varianza: √16 = 4. La trappola è riportare la varianza (16) o la media (20) al posto della deviazione standard, oppure dimenticare il fattore (1 − p).",
+  "semplice": "Se il 20% degli studenti è mancino, in una classe di 100 ci si aspettano circa 20 mancini, con oscillazioni tipiche di ± 4 da una classe all'altra.",
+  "passaggi": [
+   "μ = np = 100 · 0,2 = 20",
+   "σ² = np(1 − p) = 100 · 0,2 · 0,8 = 16",
+   "σ = √16 = 4"
+  ],
+  "concetto": "media e varianza della binomiale"
+ },
+ {
+  "id": "STA-043",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "test",
+  "domanda": "Quale condizione NON è richiesta perché il numero di successi segua una distribuzione binomiale?",
+  "opzioni": {
+   "A": "Che la probabilità di successo sia 0,5",
+   "B": "Che il numero di prove sia fissato in anticipo",
+   "C": "Che le prove siano indipendenti",
+   "D": "Che ogni prova abbia solo due esiti possibili",
+   "E": "Che la probabilità di successo sia la stessa in ogni prova"
+  },
+  "giusta": "A",
+  "perche": "Il modello binomiale richiede un numero fissato di prove indipendenti, ciascuna con due soli esiti (successo o insuccesso) e con la stessa probabilità di successo p. Il valore di p, però, può essere qualunque numero tra 0 e 1, non necessariamente 0,5. La trappola è associare la binomiale solo alla moneta: anche il numero di pazienti che guariscono su 20, con p = 0,7, è binomiale.",
+  "semplice": "Tirare 10 rigori, ciascuno segnato con probabilità 0,8 indipendentemente dagli altri, dà un numero di gol binomiale, anche se 0,8 è molto diverso da 0,5.",
+  "passaggi": [
+   "La domanda chiede la condizione NON richiesta.",
+   "La binomiale richiede: numero di prove fissato, prove indipendenti, due esiti per prova, stessa p in ogni prova.",
+   "Il valore di p può essere qualsiasi numero tra 0 e 1 (per esempio 0,7).",
+   "Non è richiesto che p = 0,5."
+  ],
+  "concetto": "condizioni della binomiale"
+ },
+ {
+  "id": "STA-044",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "Il numero di chiamate che arrivano a un centralino in un minuto segue una Poisson con λ = 2. Qual è la probabilità che in un minuto non arrivi nessuna chiamata?",
+  "opzioni": {
+   "A": "Circa 0,135",
+   "B": "0",
+   "C": "0,5",
+   "D": "Circa 0,271",
+   "E": "Circa 0,865"
+  },
+  "giusta": "A",
+  "perche": "Per la Poisson P(X = k) = e^(−λ) λ^k / k!; con k = 0 si ottiene semplicemente e^(−2) ≈ 0,135. La trappola è pensare che, avendo in media 2 chiamate, sia impossibile riceverne zero, oppure calcolare P(X = 1) = 2e^(−2) ≈ 0,271. Il valore 0,865 è invece la probabilità del complementare, cioè di almeno una chiamata.",
+  "semplice": "Anche se in media arrivano 2 chiamate al minuto, circa un minuto su sette passa senza che il telefono squilli.",
+  "passaggi": [
+   "P(X = k) = e^(−λ) · λ^k / k!",
+   "k = 0: P = e^(−2) · 2⁰ / 0! = e^(−2)",
+   "e^(−2) ≈ 0,135"
+  ],
+  "concetto": "distribuzione di Poisson"
+ },
+ {
+  "id": "STA-045",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "Per una variabile casuale di Poisson con parametro λ, quale relazione vale?",
+  "opzioni": {
+   "A": "La media è λ e la varianza è λ²",
+   "B": "Media e varianza sono entrambe uguali a λ",
+   "C": "La media è λ e la varianza è √λ",
+   "D": "La media è 1/λ e la varianza è 1/λ²",
+   "E": "La media è λ/2 e la varianza è λ"
+  },
+  "giusta": "B",
+  "perche": "Una proprietà caratteristica della Poisson è che media e varianza coincidono, entrambe uguali a λ. Per questo, osservando conteggi con varianza molto maggiore della media (sovradispersione), si capisce che il modello di Poisson non è adatto. La trappola è confondere la Poisson con l'esponenziale, per cui la media è 1/λ e la varianza 1/λ².",
+  "semplice": "Se in un reparto nascono in media 4 bambini al giorno e il fenomeno è di Poisson, anche la varianza giornaliera è 4: le oscillazioni tipiche sono di circa ± 2 nascite.",
+  "passaggi": [
+   "La variabile di Poisson ha un solo parametro λ.",
+   "La sua media è λ.",
+   "La sua varianza è anch'essa λ: media e varianza coincidono.",
+   "1/λ e 1/λ² sono media e varianza dell'esponenziale.",
+   "Risposta: media e varianza uguali a λ."
+  ],
+  "concetto": "proprietà della Poisson"
+ },
+ {
+  "id": "STA-046",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "superiori",
+  "domanda": "Una variabile casuale assume i valori 1, 2, 3, 4 con probabilità 0,1, 0,3, k e 0,2. Quanto vale k?",
+  "opzioni": {
+   "A": "0,4",
+   "B": "0,6",
+   "C": "0,2",
+   "D": "0,3",
+   "E": "1"
+  },
+  "giusta": "A",
+  "perche": "In una distribuzione di probabilità le probabilità di tutti i valori devono sommare a 1. Qui 0,1 + 0,3 + 0,2 = 0,6, quindi k = 1 − 0,6 = 0,4. La trappola è riportare la somma delle probabilità note (0,6) o pensare che le probabilità debbano essere uguali. Una distribuzione con somma diversa da 1 non è valida.",
+  "semplice": "È come dividere una torta: se tre persone hanno preso il 10%, il 30% e il 20%, alla quarta resta il 40%.",
+  "passaggi": [
+   "Somma delle probabilità note: 0,1 + 0,3 + 0,2 = 0,6",
+   "k = 1 − 0,6 = 0,4"
+  ],
+  "concetto": "distribuzione di probabilità"
+ },
+ {
+  "id": "STA-047",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "test",
+  "domanda": "Una variabile X assume i valori 0, 1, 2, 3 con probabilità 0,2, 0,35, 0,3 e 0,15. Quanto vale la funzione di ripartizione F(1) = P(X ≤ 1)?",
+  "opzioni": {
+   "A": "0,35",
+   "B": "0,55",
+   "C": "0,2",
+   "D": "0,85",
+   "E": "0,45"
+  },
+  "giusta": "B",
+  "perche": "La funzione di ripartizione somma le probabilità di tutti i valori minori o uguali al punto considerato: F(1) = P(X = 0) + P(X = 1) = 0,2 + 0,35 = 0,55. La trappola è riportare solo P(X = 1) = 0,35, oppure P(X < 1) = 0,2, dimenticando che il simbolo ≤ include il valore stesso. Il valore 0,45 è invece la probabilità complementare P(X > 1).",
+  "semplice": "Se F(1) = 0,55 significa che nel 55% dei casi X vale al massimo 1: è una frequenza «cumulata», come contare quanti studenti hanno preso al massimo un certo voto.",
+  "passaggi": [
+   "F(1) = P(X = 0) + P(X = 1)",
+   "= 0,2 + 0,35 = 0,55"
+  ],
+  "concetto": "funzione di ripartizione"
+ },
+ {
+  "id": "STA-048",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "Se X è una variabile casuale continua, quanto vale P(X = a) per un singolo valore a?",
+  "opzioni": {
+   "A": "Il valore della densità f(a)",
+   "B": "1",
+   "C": "0",
+   "D": "Dipende dalla distribuzione, ma è sempre positiva",
+   "E": "F(a)"
+  },
+  "giusta": "C",
+  "perche": "Per una variabile continua la probabilità è data dall'area sotto la curva di densità su un intervallo; un singolo punto ha ampiezza nulla, quindi area nulla e probabilità 0. Per questo P(X ≤ a) e P(X < a) coincidono. La trappola è confondere la densità f(a), che può essere anche maggiore di 1, con una probabilità: la densità indica quanto è «addensata» la probabilità vicino ad a, non la probabilità del punto.",
+  "semplice": "La probabilità che un neonato pesi esattamente 3,2500000… kg, con infinite cifre esatte, è zero. Ha senso invece chiedersi la probabilità che pesi tra 3,2 e 3,3 kg.",
+  "passaggi": [
+   "Per una variabile continua la probabilità è l'area sotto la densità su un intervallo.",
+   "Un singolo punto a è un intervallo di ampiezza zero.",
+   "Area di ampiezza zero = 0, quindi P(X = a) = 0.",
+   "La densità f(a) non è una probabilità (può anche superare 1).",
+   "P(X = a) = 0."
+  ],
+  "concetto": "variabile continua"
+ },
+ {
+  "id": "STA-049",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "X è uniforme continua sull'intervallo [2, 10]. Quanto vale P(4 ≤ X ≤ 7)?",
+  "opzioni": {
+   "A": "0,375",
+   "B": "0,3",
+   "C": "0,5",
+   "D": "0,125",
+   "E": "0,7"
+  },
+  "giusta": "A",
+  "perche": "Nella distribuzione uniforme la densità è costante, f(x) = 1/(10 − 2) = 1/8, e la probabilità di un sotto-intervallo è proporzionale alla sua ampiezza: (7 − 4)/8 = 3/8 = 0,375. La trappola è dividere per 10, cioè l'estremo superiore, invece che per la lunghezza dell'intervallo (8). La media di questa uniforme è (2 + 10)/2 = 6.",
+  "semplice": "Se un autobus passa in un momento a caso tra 2 e 10 minuti, la probabilità che arrivi tra il 4° e il 7° minuto è la frazione di tempo coperta: 3 minuti su 8.",
+  "passaggi": [
+   "Densità f(x) = 1/(10 − 2) = 1/8",
+   "Ampiezza dell'intervallo richiesto: 7 − 4 = 3",
+   "P = 3 · 1/8 = 0,375"
+  ],
+  "concetto": "distribuzione uniforme"
+ },
+ {
+  "id": "STA-050",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "test",
+  "domanda": "Una variabile X ha media 5 e varianza 4. Quanto vale la varianza di Y = 3X − 2?",
+  "opzioni": {
+   "A": "10",
+   "B": "12",
+   "C": "34",
+   "D": "36",
+   "E": "13"
+  },
+  "giusta": "D",
+  "perche": "Per le trasformazioni lineari vale Var(aX + b) = a² · Var(X): la costante b sposta la distribuzione ma non ne cambia la dispersione. Quindi Var(Y) = 9 · 4 = 36. La media diventa invece E[Y] = 3 · 5 − 2 = 13. La trappola è sottrarre 2 anche dalla varianza (34) o moltiplicare la varianza per 3 invece che per 9 (12).",
+  "semplice": "Se tutti i voti vengono triplicati e poi abbassati di 2 punti, le differenze tra uno studente e l'altro diventano tre volte più grandi; la varianza, che è un quadrato, diventa nove volte più grande.",
+  "passaggi": [
+   "Var(aX + b) = a² · Var(X)",
+   "a = 3 → a² = 9",
+   "Var(Y) = 9 · 4 = 36",
+   "(Per controllo: E[Y] = 3 · 5 − 2 = 13)"
+  ],
+  "concetto": "proprietà di media e varianza"
+ },
+ {
+  "id": "STA-051",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "X e Y sono indipendenti con Var(X) = 9 e Var(Y) = 16. Quanto vale la deviazione standard di X − Y?",
+  "opzioni": {
+   "A": "1",
+   "B": "7",
+   "C": "25",
+   "D": "5",
+   "E": "√7"
+  },
+  "giusta": "D",
+  "perche": "Per variabili indipendenti le varianze si sommano sia per la somma sia per la differenza: Var(X − Y) = Var(X) + Var(Y) = 25, quindi la deviazione standard è 5. La trappola è sottrarre le varianze (16 − 9 = 7) oppure sommare le deviazioni standard (3 + 4 = 7). La differenza tra due quantità incerte è più incerta di ciascuna delle due, mai meno.",
+  "semplice": "Se pesi un oggetto con una bilancia imprecisa e poi togli la tara pesata con un'altra bilancia imprecisa, gli errori delle due misure si accumulano, non si annullano.",
+  "passaggi": [
+   "Indipendenza → Var(X − Y) = Var(X) + Var(Y)",
+   "= 9 + 16 = 25",
+   "σ = √25 = 5"
+  ],
+  "concetto": "varianza di una differenza"
+ },
+ {
+  "id": "STA-052",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "superiori",
+  "domanda": "Supponendo che maschi e femmine nascano con la stessa probabilità, qual è la probabilità che una famiglia con tre figli abbia tre femmine?",
+  "opzioni": {
+   "A": "1/3",
+   "B": "1/2",
+   "C": "3/8",
+   "D": "1/6",
+   "E": "1/8"
+  },
+  "giusta": "E",
+  "perche": "Le nascite sono considerate indipendenti, ognuna con probabilità 1/2 di essere femmina: la probabilità che siano tutte femmine è (1/2)³ = 1/8. La trappola è pensare che i casi possibili siano solo quattro (0, 1, 2 o 3 femmine) e quindi rispondere 1/4, oppure dividere per il numero di figli (1/3). Il numero di femmine segue una binomiale con n = 3 e p = 1/2.",
+  "semplice": "Le sequenze possibili di tre figli sono otto (MMM, MMF, MFM, …, FFF): una sola è composta da tre femmine.",
+  "passaggi": [
+   "Nascite indipendenti, P(F) = 1/2",
+   "P(FFF) = 1/2 · 1/2 · 1/2 = 1/8"
+  ],
+  "concetto": "prove indipendenti"
+ },
+ {
+  "id": "STA-053",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "università",
+  "domanda": "Un tiratore colpisce il bersaglio con probabilità 0,2 a ogni tiro, indipendentemente dagli altri. Qual è la probabilità che il primo centro arrivi esattamente al terzo tiro?",
+  "opzioni": {
+   "A": "0,2",
+   "B": "0,008",
+   "C": "0,6",
+   "D": "0,128",
+   "E": "0,488"
+  },
+  "giusta": "D",
+  "perche": "Il primo successo al terzo tentativo richiede due insuccessi seguiti da un successo: 0,8 · 0,8 · 0,2 = 0,128. È la distribuzione geometrica, P(X = k) = (1 − p)^(k − 1) · p. La trappola è calcolare 0,2³ = 0,008 (tre centri di fila) o ignorare i due errori iniziali. Il valore 0,488 è invece la probabilità di almeno un centro nei primi tre tiri, 1 − 0,8³.",
+  "semplice": "Per segnare il primo canestro proprio al terzo tiro devi sbagliare i primi due e poi segnare: moltiplichi le tre probabilità in ordine.",
+  "passaggi": [
+   "Servono due insuccessi e poi un successo",
+   "P = (1 − 0,2)² · 0,2",
+   "= 0,64 · 0,2 = 0,128"
+  ],
+  "concetto": "distribuzione geometrica"
+ },
+ {
+  "id": "STA-054",
+  "materia": "Statistica",
+  "argomento": "Variabili casuali e distribuzioni",
+  "livello": "test",
+  "domanda": "Per una variabile casuale continua, quanto vale l'area totale sotto la curva della funzione di densità?",
+  "opzioni": {
+   "A": "0",
+   "B": "Dipende dalla media",
+   "C": "Dipende dalla varianza",
+   "D": "Infinita",
+   "E": "1"
+  },
+  "giusta": "E",
+  "perche": "L'area sotto la densità su un intervallo è la probabilità che la variabile cada in quell'intervallo; considerando tutti i valori possibili si ottiene l'evento certo, quindi l'area totale vale 1. Questa è la condizione di normalizzazione, insieme alla richiesta che la densità non sia mai negativa. La trappola è pensare che curve più larghe abbiano più area: diventano più basse proprio per mantenere l'area pari a 1.",
+  "semplice": "Immagina di stendere sempre la stessa quantità di sabbia su un tavolo: puoi fare un mucchio alto e stretto o uno basso e largo, ma la sabbia totale resta la stessa.",
+  "passaggi": [
+   "L'area sotto la densità su un intervallo è la probabilità di cadere in quell'intervallo.",
+   "Su tutti i valori possibili l'evento è certo.",
+   "Quindi l'area totale vale 1 (condizione di normalizzazione), qualunque siano media e varianza.",
+   "L'area totale è 1."
+  ],
+  "concetto": "normalizzazione della densità"
+ },
+ {
+  "id": "STA-055",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "superiori",
+  "domanda": "Quale caratteristica possiede la distribuzione normale (gaussiana)?",
+  "opzioni": {
+   "A": "È asimmetrica con una lunga coda a destra",
+   "B": "È simmetrica a campana e media, mediana e moda coincidono",
+   "C": "Ha media sempre uguale a zero",
+   "D": "Assume solo valori positivi",
+   "E": "Ha la moda maggiore della media"
+  },
+  "giusta": "B",
+  "perche": "La curva normale ha la forma di una campana simmetrica rispetto alla media: per questo media, mediana e moda cadono nello stesso punto, il vertice della campana. Solo la normale standard ha media 0; una normale generica può avere qualunque media e qualunque deviazione standard positiva. La trappola è pensare che tutte le distribuzioni «naturali» siano normali: redditi e tempi di attesa, per esempio, sono asimmetrici.",
+  "semplice": "Se misuri l'altezza di migliaia di ragazzi della stessa età, i valori si accumulano intorno a quello medio e diventano sempre più rari allontanandosi, in modo uguale verso l'alto e verso il basso: è la forma a campana.",
+  "passaggi": [
+   "La normale ha forma a campana simmetrica rispetto alla media.",
+   "Per la simmetria media, mediana e moda cadono nello stesso punto, il vertice.",
+   "Non è asimmetrica, può avere qualsiasi media (0 solo la standard) e assume anche valori negativi.",
+   "Risposta: la B."
+  ],
+  "concetto": "forma della normale"
+ },
+ {
+  "id": "STA-056",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "superiori",
+  "domanda": "In una distribuzione normale, circa quale percentuale dei dati cade entro una deviazione standard dalla media?",
+  "opzioni": {
+   "A": "50%",
+   "B": "68%",
+   "C": "95%",
+   "D": "99,7%",
+   "E": "34%"
+  },
+  "giusta": "B",
+  "perche": "La regola empirica (68-95-99,7) dice che entro ±1σ dalla media cade circa il 68% dei dati, entro ±2σ circa il 95% ed entro ±3σ circa il 99,7%. La trappola è confondere i tre valori, oppure considerare un solo lato della media (34%). Questa regola vale solo per distribuzioni normali o quasi normali.",
+  "semplice": "Se l'altezza dei ragazzi di 16 anni ha media 175 cm e deviazione standard 7 cm, circa due ragazzi su tre sono alti tra 168 e 182 cm.",
+  "passaggi": [
+   "Regola empirica 68-95-99,7 per la normale.",
+   "Entro ±1σ: circa 68%; entro ±2σ: 95%; entro ±3σ: 99,7%.",
+   "Il 34% è solo un lato (da μ a μ + σ).",
+   "Entro una deviazione standard cade circa il 68%."
+  ],
+  "concetto": "regola 68-95-99,7"
+ },
+ {
+  "id": "STA-057",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "test",
+  "domanda": "Il quoziente intellettivo ha distribuzione normale con media 100 e deviazione standard 15. Circa quale percentuale della popolazione ha un QI superiore a 130?",
+  "opzioni": {
+   "A": "Circa 5%",
+   "B": "Circa 2,3%",
+   "C": "Circa 16%",
+   "D": "Circa 0,15%",
+   "E": "Circa 34%"
+  },
+  "giusta": "B",
+  "perche": "Il valore 130 si trova a due deviazioni standard sopra la media: z = (130 − 100)/15 = 2. Fuori da ±2σ cade circa il 4,6% dei dati, diviso equamente tra le due code, quindi sopra 130 c'è circa il 2,3% (spesso arrotondato al 2,5% con la regola empirica). La trappola è prendere tutto il 5% senza dividerlo tra le due code, oppure usare il valore relativo a una sola deviazione standard (16%).",
+  "semplice": "Su 1000 persone, circa 23 hanno un QI sopra 130 e altrettante sotto 70: le due code della campana sono uguali.",
+  "passaggi": [
+   "z = (130 − 100) / 15 = 2",
+   "P(Z > 2) = 1 − Φ(2) = 1 − 0,9772",
+   "≈ 0,023 = 2,3%"
+  ],
+  "concetto": "code della normale"
+ },
+ {
+  "id": "STA-058",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "test",
+  "domanda": "In una classe l'altezza media è 170 cm con deviazione standard 8 cm. Qual è il punteggio z di uno studente alto 182 cm?",
+  "opzioni": {
+   "A": "12",
+   "B": "0,67",
+   "C": "1,5",
+   "D": "2",
+   "E": "−1,5"
+  },
+  "giusta": "C",
+  "perche": "Il punteggio z indica di quante deviazioni standard un valore si allontana dalla media: z = (x − μ)/σ = (182 − 170)/8 = 12/8 = 1,5. La trappola è fermarsi alla differenza (12 cm) senza dividere per la deviazione standard, oppure dividere al contrario (8/12 ≈ 0,67). Un punteggio z positivo indica un valore sopra la media.",
+  "semplice": "Il punteggio z è un «metro universale»: 1,5 significa che lo studente supera la media di una volta e mezza la variabilità tipica della classe.",
+  "passaggi": [
+   "z = (x − μ) / σ",
+   "= (182 − 170) / 8",
+   "= 12 / 8 = 1,5"
+  ],
+  "concetto": "punteggio z"
+ },
+ {
+  "id": "STA-059",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "Se Z è una normale standard, quanto vale P(Z < 1,96)?",
+  "opzioni": {
+   "A": "0,95",
+   "B": "0,05",
+   "C": "0,025",
+   "D": "0,975",
+   "E": "0,99"
+  },
+  "giusta": "D",
+  "perche": "Il valore 1,96 è il quantile della normale standard che lascia a destra il 2,5% dell'area: quindi P(Z < 1,96) = 0,975. Tra −1,96 e +1,96 cade il 95% centrale, ed è per questo che 1,96 compare negli intervalli di confidenza al 95%. La trappola è rispondere 0,95, confondendo la probabilità a una coda con quella dell'intervallo centrale simmetrico.",
+  "semplice": "Immagina la campana divisa in tre parti: 2,5% nella coda sinistra, 95% al centro, 2,5% nella coda destra. Tutto ciò che sta a sinistra di 1,96 è 2,5% + 95% = 97,5%.",
+  "passaggi": [
+   "P(−1,96 < Z < 1,96) = 0,95",
+   "Ogni coda vale (1 − 0,95)/2 = 0,025",
+   "P(Z < 1,96) = 1 − 0,025 = 0,975"
+  ],
+  "concetto": "quantili della normale"
+ },
+ {
+  "id": "STA-060",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "Se Z è una normale standard, quanto vale circa P(−1 < Z < 2)?",
+  "opzioni": {
+   "A": "0,682",
+   "B": "0,954",
+   "C": "0,819",
+   "D": "0,841",
+   "E": "0,500"
+  },
+  "giusta": "C",
+  "perche": "Si calcola come differenza tra i valori della funzione di ripartizione: Φ(2) − Φ(−1) = 0,9772 − 0,1587 = 0,8185. In alternativa, si sommano metà dell'area entro ±1σ (circa 0,341) e metà dell'area entro ±2σ (circa 0,477). La trappola è usare direttamente uno dei valori della regola empirica (68% o 95%), che valgono solo per intervalli simmetrici rispetto alla media.",
+  "semplice": "È come sommare due pezzi della campana: il tratto da −1 a 0 (circa 34%) e quello da 0 a 2 (circa 48%).",
+  "passaggi": [
+   "Φ(2) ≈ 0,9772",
+   "Φ(−1) = 1 − Φ(1) ≈ 1 − 0,8413 = 0,1587",
+   "P = 0,9772 − 0,1587 ≈ 0,819"
+  ],
+  "concetto": "uso della tavola della normale"
+ },
+ {
+  "id": "STA-061",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "I punteggi di un test di ammissione hanno distribuzione normale con media 500 e deviazione standard 100. Quale punteggio corrisponde circa al 90° percentile?",
+  "opzioni": {
+   "A": "628",
+   "B": "600",
+   "C": "590",
+   "D": "690",
+   "E": "560"
+  },
+  "giusta": "A",
+  "perche": "Il 90° percentile della normale standard è z ≈ 1,28. Tornando alla scala originale: x = μ + z·σ = 500 + 1,28 · 100 ≈ 628. La trappola è usare z = 1, che corrisponde all'84° percentile (600), oppure aggiungere 90 alla media confondendo percentile e punti. Per trovare un percentile si fa il percorso inverso della standardizzazione.",
+  "semplice": "Per essere tra il 10% migliore non basta superare la media di una deviazione standard: bisogna superarla di circa 1,28 volte.",
+  "passaggi": [
+   "Quantile z al 90%: z ≈ 1,2816",
+   "x = μ + z · σ",
+   "= 500 + 1,2816 · 100 ≈ 628"
+  ],
+  "concetto": "percentili della normale"
+ },
+ {
+  "id": "STA-062",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "superiori",
+  "domanda": "Marco prende 75 in una prova con media 65 e deviazione standard 5; Luca prende 80 in una prova con media 70 e deviazione standard 10. Chi è andato relativamente meglio rispetto alla propria classe?",
+  "opzioni": {
+   "A": "Luca, perché ha un voto più alto",
+   "B": "Marco, con punteggio z pari a 2 contro 1",
+   "C": "Sono andati ugualmente bene, perché entrambi superano la media di 10",
+   "D": "Luca, perché la sua prova aveva media più alta",
+   "E": "Non si può dire senza conoscere il numero di studenti"
+  },
+  "giusta": "B",
+  "perche": "Per confrontare risultati di prove diverse si usano i punteggi z: Marco ha z = (75 − 65)/5 = 2, Luca z = (80 − 70)/10 = 1. Entrambi superano la media di 10 punti, ma nella classe di Marco i voti sono meno dispersi, quindi quei 10 punti valgono di più. La trappola è confrontare i voti grezzi o le distanze dalla media senza tenere conto della variabilità.",
+  "semplice": "Arrivare 10 secondi prima della media in una gara in cui tutti arrivano vicinissimi è un'impresa; farlo in una gara in cui i tempi sono molto sparsi è meno eccezionale.",
+  "passaggi": [
+   "z Marco = (75 − 65) / 5 = 2",
+   "z Luca = (80 − 70) / 10 = 1",
+   "2 > 1: Marco è andato relativamente meglio"
+  ],
+  "concetto": "confronto con i punteggi z"
+ },
+ {
+  "id": "STA-063",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "test",
+  "domanda": "Quali sono i parametri della distribuzione normale standard?",
+  "opzioni": {
+   "A": "Media 1 e deviazione standard 0",
+   "B": "Media 0 e deviazione standard 0",
+   "C": "Media 0 e deviazione standard 1",
+   "D": "Media 100 e deviazione standard 15",
+   "E": "Media 0,5 e deviazione standard 1"
+  },
+  "giusta": "C",
+  "perche": "La normale standard, indicata con Z, ha media 0 e deviazione standard 1: è la distribuzione che si ottiene standardizzando qualunque normale con z = (x − μ)/σ. Le sue probabilità sono tabulate una volta per tutte, ed è per questo che ogni problema sulla normale si riconduce a essa. La trappola è pensare a una deviazione standard nulla, che significherebbe nessuna variabilità.",
+  "semplice": "Standardizzare è come convertire tutte le valute in euro: dopo la conversione basta una sola tabella per confrontare tutto.",
+  "passaggi": [
+   "La normale standard Z si ottiene con z = (x − μ)/σ.",
+   "Sottraendo μ la media diventa 0.",
+   "Dividendo per σ la deviazione standard diventa 1.",
+   "Media 0 e deviazione standard 1."
+  ],
+  "concetto": "normale standard"
+ },
+ {
+  "id": "STA-064",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "Per una variabile normale, circa quale probabilità c'è di osservare un valore maggiore di μ + σ?",
+  "opzioni": {
+   "A": "Circa 32%",
+   "B": "Circa 34%",
+   "C": "Circa 2,5%",
+   "D": "Circa 16%",
+   "E": "Circa 50%"
+  },
+  "giusta": "D",
+  "perche": "Entro ±1σ cade circa il 68,3% dei valori, quindi fuori ne resta circa il 31,7%, diviso tra le due code: sopra μ + σ c'è circa il 15,9%. In termini di tavola, P(Z > 1) = 1 − Φ(1) ≈ 1 − 0,8413 = 0,1587. La trappola è non dividere tra le due code (32%) o prendere l'area tra μ e μ + σ (34%).",
+  "semplice": "In una classe di 100 studenti con voti normali, circa 16 superano la media di più di una deviazione standard e circa 16 restano sotto di più di una.",
+  "passaggi": [
+   "P(−1 < Z < 1) ≈ 0,683",
+   "Code totali ≈ 1 − 0,683 = 0,317",
+   "Coda destra ≈ 0,317 / 2 ≈ 0,159"
+  ],
+  "concetto": "probabilità di coda"
+ },
+ {
+  "id": "STA-065",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "test",
+  "domanda": "Il peso alla nascita ha media 3300 g e deviazione standard 500 g, con distribuzione approssimativamente normale. Circa quale percentuale di neonati pesa tra 2800 e 3800 g?",
+  "opzioni": {
+   "A": "Circa 95%",
+   "B": "Circa 50%",
+   "C": "Circa 34%",
+   "D": "Circa 99,7%",
+   "E": "Circa 68%"
+  },
+  "giusta": "E",
+  "perche": "Gli estremi 2800 e 3800 g distano esattamente 500 g, cioè una deviazione standard, dalla media: corrispondono a z = −1 e z = +1. Per la regola empirica in questo intervallo cade circa il 68% dei neonati. La trappola è usare il 95%, che corrisponde a ±2σ (da 2300 a 4300 g), oppure solo metà dell'intervallo (34%).",
+  "semplice": "Circa due neonati su tre pesano tra 2,8 e 3,8 kg; gli altri si dividono equamente tra i più leggeri e i più pesanti.",
+  "passaggi": [
+   "z₁ = (2800 − 3300) / 500 = −1",
+   "z₂ = (3800 − 3300) / 500 = +1",
+   "P(−1 < Z < 1) ≈ 68%"
+  ],
+  "concetto": "regola empirica"
+ },
+ {
+  "id": "STA-066",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "X e Y sono indipendenti, con X ~ N(10, 3²) e Y ~ N(20, 4²). Come è distribuita X + Y?",
+  "opzioni": {
+   "A": "Normale con media 30 e deviazione standard 5",
+   "B": "Normale con media 30 e deviazione standard 7",
+   "C": "Normale con media 30 e deviazione standard 25",
+   "D": "Non normale, perché le medie sono diverse",
+   "E": "Normale con media 15 e deviazione standard 3,5"
+  },
+  "giusta": "A",
+  "perche": "La somma di normali indipendenti è ancora normale: le medie si sommano (10 + 20 = 30) e anche le varianze (9 + 16 = 25), quindi la deviazione standard è √25 = 5. La trappola è sommare le deviazioni standard (3 + 4 = 7) o confondere la varianza con la deviazione standard. Questa proprietà di stabilità è una delle ragioni per cui la normale è così usata.",
+  "semplice": "Se il tempo per andare a scuola a piedi e quello per l'autobus sono normali e indipendenti, anche il tempo totale lo è, con un'incertezza che cresce meno della somma delle due.",
+  "passaggi": [
+   "Media: 10 + 20 = 30",
+   "Varianza: 3² + 4² = 9 + 16 = 25",
+   "Deviazione standard: √25 = 5"
+  ],
+  "concetto": "somma di normali"
+ },
+ {
+  "id": "STA-067",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "Che cosa afferma il teorema del limite centrale?",
+  "opzioni": {
+   "A": "Ogni popolazione abbastanza grande ha distribuzione normale",
+   "B": "Le singole osservazioni di un campione grande sono distribuite normalmente",
+   "C": "La media campionaria coincide sempre con la media della popolazione",
+   "D": "La varianza della media campionaria cresce con n",
+   "E": "La media di un campione grande ha distribuzione approssimativamente normale, qualunque sia la distribuzione della popolazione (con varianza finita)"
+  },
+  "giusta": "E",
+  "perche": "Il teorema del limite centrale riguarda la distribuzione della media (o della somma) di n osservazioni indipendenti: al crescere di n essa si avvicina a una normale con media μ e deviazione standard σ/√n, anche se la popolazione di partenza non è normale. Non dice che i dati diventano normali: un campione grande di redditi resta asimmetrico, ma la media di tanti campioni si distribuisce a campana. La trappola è proprio confondere la distribuzione dei dati con quella della media.",
+  "semplice": "Lanciando un dado i risultati sono uniformi, non a campana. Ma se fai la media di 30 lanci e ripeti tante volte, le medie si accumulano intorno a 3,5 formando una campana.",
+  "passaggi": [
+   "Il teorema riguarda la media (o la somma) di n osservazioni indipendenti.",
+   "Al crescere di n la media campionaria si avvicina a una normale con media μ e deviazione standard σ/√n.",
+   "Vale qualunque sia la distribuzione della popolazione, purché con varianza finita.",
+   "Non rende normali i singoli dati; la varianza della media scende con n.",
+   "Risposta: la E."
+  ],
+  "concetto": "teorema del limite centrale"
+ },
+ {
+  "id": "STA-068",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "Si approssima con una normale una binomiale con n = 100 e p = 0,5. Quali sono media e deviazione standard della normale da usare?",
+  "opzioni": {
+   "A": "Media 50 e deviazione standard 25",
+   "B": "Media 0,5 e deviazione standard 0,05",
+   "C": "Media 100 e deviazione standard 10",
+   "D": "Media 50 e deviazione standard 50",
+   "E": "Media 50 e deviazione standard 5"
+  },
+  "giusta": "E",
+  "perche": "La normale che approssima la binomiale ha la stessa media e la stessa varianza: μ = np = 50 e σ² = np(1 − p) = 25, quindi σ = 5. L'approssimazione è buona quando np e n(1 − p) sono entrambi abbastanza grandi (di solito almeno 5 o 10). La trappola è usare la varianza (25) come deviazione standard. Per calcoli precisi si applica anche la correzione di continuità di ±0,5.",
+  "semplice": "Con 100 lanci di moneta ci si aspettano 50 teste, con oscillazioni tipiche di ± 5: avere tra 45 e 55 teste è molto comune.",
+  "passaggi": [
+   "μ = np = 100 · 0,5 = 50",
+   "σ² = np(1 − p) = 100 · 0,5 · 0,5 = 25",
+   "σ = √25 = 5"
+  ],
+  "concetto": "approssimazione normale della binomiale"
+ },
+ {
+  "id": "STA-069",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "superiori",
+  "domanda": "Due distribuzioni normali hanno la stessa media ma la seconda ha deviazione standard doppia. Com'è la curva della seconda rispetto alla prima?",
+  "opzioni": {
+   "A": "Più stretta e più alta",
+   "B": "Spostata verso destra",
+   "C": "Più larga e più bassa, centrata nello stesso punto",
+   "D": "Identica, perché la media è la stessa",
+   "E": "Più larga e più alta"
+  },
+  "giusta": "C",
+  "perche": "La media decide dove è centrata la campana, la deviazione standard quanto è larga. Raddoppiando la deviazione standard la curva si allarga; poiché l'area totale deve restare uguale a 1, la campana diventa anche più bassa. La trappola è pensare che la curva si sposti (questo accade cambiando la media) oppure che possa diventare sia più larga sia più alta.",
+  "semplice": "È come allargare un mucchio di sabbia: se lo spalmi su una superficie più ampia, inevitabilmente si abbassa.",
+  "passaggi": [
+   "La media decide dove è centrata la campana: è la stessa, quindi stesso centro.",
+   "La deviazione standard decide la larghezza: raddoppiandola la curva si allarga.",
+   "L'area totale deve restare 1: se si allarga, si abbassa (il picco si dimezza).",
+   "Più larga e più bassa, centrata nello stesso punto."
+  ],
+  "concetto": "ruolo di μ e σ"
+ },
+ {
+  "id": "STA-070",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "test",
+  "domanda": "Se Z è una normale standard, quanto vale P(Z > 0)?",
+  "opzioni": {
+   "A": "0,5",
+   "B": "0",
+   "C": "1",
+   "D": "0,68",
+   "E": "0,34"
+  },
+  "giusta": "A",
+  "perche": "La normale standard è simmetrica rispetto allo zero, che è la sua media: metà dell'area sta a destra e metà a sinistra. Quindi P(Z > 0) = 0,5. La trappola è pensare che la probabilità di un valore positivo sia legata alla regola del 68%, oppure che valga zero perché la media è zero.",
+  "semplice": "Lanciando una freccetta su una campana simmetrica, è ugualmente probabile finire a destra o a sinistra del centro: come testa o croce.",
+  "passaggi": [
+   "La normale standard è simmetrica rispetto a 0, la sua media.",
+   "Metà dell'area sta a destra di 0 e metà a sinistra.",
+   "P(Z > 0) = 1/2 = 0,5."
+  ],
+  "concetto": "simmetria della normale"
+ },
+ {
+  "id": "STA-071",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "università",
+  "domanda": "Quale tra questi strumenti si usa per verificare se un insieme di dati segue una distribuzione normale?",
+  "opzioni": {
+   "A": "Il coefficiente di correlazione di Pearson",
+   "B": "Il diagramma a torta",
+   "C": "Il calcolo della moda",
+   "D": "Il grafico quantile-quantile (Q-Q plot) o il test di Shapiro-Wilk",
+   "E": "Il test chi-quadrato di indipendenza"
+  },
+  "giusta": "D",
+  "perche": "Nel Q-Q plot i quantili osservati sono confrontati con quelli teorici di una normale: se i punti si dispongono su una retta, l'ipotesi di normalità è plausibile. Il test di Shapiro-Wilk fornisce invece un p-value per l'ipotesi nulla di normalità. La trappola è affidarsi solo a media e deviazione standard, che non dicono nulla sulla forma. Con campioni molto grandi anche piccole deviazioni risultano significative, quindi conviene guardare sempre anche il grafico.",
+  "semplice": "Il Q-Q plot è come mettere i tuoi dati accanto a dei dati «perfettamente normali»: se si allineano su una retta, si somigliano.",
+  "passaggi": [
+   "Serve uno strumento che verifichi la forma della distribuzione.",
+   "Nel Q-Q plot i quantili osservati si confrontano con quelli di una normale: punti su una retta = normalità plausibile.",
+   "Il test di Shapiro-Wilk dà un p-value per l'ipotesi nulla di normalità.",
+   "Correlazione, torta, moda e chi-quadrato di indipendenza non verificano la normalità.",
+   "Risposta: la D."
+  ],
+  "concetto": "verifica della normalità"
+ },
+ {
+  "id": "STA-072",
+  "materia": "Statistica",
+  "argomento": "Distribuzione normale",
+  "livello": "test",
+  "domanda": "Una macchina produce pezzi lunghi in media 50 mm, con deviazione standard 0,2 mm e distribuzione normale. Si scartano i pezzi fuori dall'intervallo 49,6-50,4 mm. Circa quale percentuale viene scartata?",
+  "opzioni": {
+   "A": "Circa 5%",
+   "B": "Circa 32%",
+   "C": "Circa 0,3%",
+   "D": "Circa 2,5%",
+   "E": "Circa 95%"
+  },
+  "giusta": "A",
+  "perche": "I limiti 49,6 e 50,4 distano 0,4 mm dalla media, cioè due deviazioni standard. Entro ±2σ cade circa il 95% dei pezzi, quindi si scarta circa il 5% (più precisamente il 4,6%). La trappola è riportare la percentuale dei pezzi accettati (95%) o una sola coda (2,5%), mentre i pezzi si scartano sia perché troppo corti sia perché troppo lunghi.",
+  "semplice": "Su 1000 pezzi prodotti, circa 950 vanno bene e circa 50 finiscono tra gli scarti, metà troppo corti e metà troppo lunghi.",
+  "passaggi": [
+   "Distanza dei limiti dalla media: 0,4 mm",
+   "In deviazioni standard: 0,4 / 0,2 = 2",
+   "Fuori da ±2σ: circa 1 − 0,954 ≈ 4,6% ≈ 5%"
+  ],
+  "concetto": "controllo di qualità"
+ },
+ {
+  "id": "STA-073",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "superiori",
+  "domanda": "Un ricercatore vuole conoscere le ore di sonno degli studenti italiani delle superiori e ne intervista 800. In questo studio, gli 800 studenti intervistati costituiscono:",
+  "opzioni": {
+   "A": "la popolazione",
+   "B": "il parametro",
+   "C": "la variabile",
+   "D": "l'intervallo di confidenza",
+   "E": "il campione"
+  },
+  "giusta": "E",
+  "perche": "La popolazione è l'insieme di tutte le unità che interessano, cioè tutti gli studenti delle superiori italiani; il campione è il sottoinsieme effettivamente osservato, qui gli 800 intervistati. Dal campione si calcolano statistiche, come la media delle ore di sonno, che servono a stimare i parametri della popolazione. La trappola è chiamare «popolazione» il gruppo intervistato solo perché è numeroso.",
+  "semplice": "Per sapere se una pentola di minestra è salata non la bevi tutta: ne assaggi un cucchiaio. La pentola è la popolazione, il cucchiaio è il campione.",
+  "passaggi": [
+   "Popolazione: tutti gli studenti delle superiori italiani, l'insieme che interessa.",
+   "Gli 800 intervistati sono il sottoinsieme effettivamente osservato.",
+   "Il sottoinsieme osservato si chiama campione.",
+   "Risposta: il campione."
+  ],
+  "concetto": "popolazione e campione"
+ },
+ {
+  "id": "STA-074",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "superiori",
+  "domanda": "Che cosa caratterizza un campione casuale semplice?",
+  "opzioni": {
+   "A": "Ogni unità della popolazione ha la stessa probabilità di essere scelta",
+   "B": "Si scelgono le unità più facili da raggiungere",
+   "C": "Si scelgono le persone che si offrono volontarie",
+   "D": "Si scelgono solo le unità ritenute più rappresentative dal ricercatore",
+   "E": "Si sceglie una unità ogni dieci partendo dalla prima"
+  },
+  "giusta": "A",
+  "perche": "In un campione casuale semplice ogni unità, e anzi ogni possibile gruppo di n unità, ha la stessa probabilità di essere estratto, per esempio tramite un sorteggio da una lista completa. È questa casualità che permette di calcolare l'errore di campionamento e di generalizzare i risultati. La trappola è credere che un campione scelto «con giudizio» dal ricercatore sia più rappresentativo: introduce invece distorsioni difficili da controllare.",
+  "semplice": "È come estrarre i nomi da un'urna in cui ci sono i bigliettini di tutti gli studenti della scuola: nessuno è avvantaggiato o svantaggiato.",
+  "passaggi": [
+   "Nel campione casuale semplice la scelta avviene per sorteggio.",
+   "Ogni unità (e ogni gruppo di n unità) ha la stessa probabilità di essere estratta.",
+   "Comodità, volontari o scelta «con giudizio» introducono distorsioni; una ogni dieci è il sistematico.",
+   "Risposta: la A."
+  ],
+  "concetto": "campione casuale semplice"
+ },
+ {
+  "id": "STA-075",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "test",
+  "domanda": "Una ricerca vuole intervistare gli studenti di un ateneo garantendo che ogni facoltà sia rappresentata in proporzione al numero dei suoi iscritti, estraendo a caso all'interno di ciascuna. Di che tipo di campionamento si tratta?",
+  "opzioni": {
+   "A": "Casuale semplice",
+   "B": "Stratificato",
+   "C": "A grappoli",
+   "D": "Di convenienza",
+   "E": "Sistematico"
+  },
+  "giusta": "B",
+  "perche": "Nel campionamento stratificato la popolazione viene divisa in gruppi omogenei (strati), qui le facoltà, e si estrae un campione casuale da ciascuno, spesso in proporzione alla sua dimensione. Così si garantisce che tutti i sottogruppi importanti siano rappresentati e si riduce l'errore di stima. La trappola è confonderlo con il campionamento a grappoli, in cui si estraggono a caso interi gruppi e si osservano tutte le loro unità.",
+  "semplice": "Se in una scuola ci sono 600 studenti al liceo e 400 al tecnico e vuoi un campione di 100, ne sorteggi 60 tra i primi e 40 tra i secondi.",
+  "passaggi": [
+   "La popolazione è divisa in gruppi omogenei: le facoltà.",
+   "Da ciascun gruppo si estrae a caso un campione, in proporzione agli iscritti.",
+   "Gruppi omogenei con estrazione dentro ciascuno = campionamento stratificato.",
+   "Nei grappoli si estraggono interi gruppi e si osservano tutte le loro unità.",
+   "Si tratta di campionamento stratificato."
+  ],
+  "concetto": "campionamento stratificato"
+ },
+ {
+  "id": "STA-076",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "Una popolazione ha deviazione standard σ = 12. Qual è l'errore standard della media per campioni di n = 36 unità?",
+  "opzioni": {
+   "A": "2",
+   "B": "12",
+   "C": "0,33",
+   "D": "6",
+   "E": "432"
+  },
+  "giusta": "A",
+  "perche": "L'errore standard della media è la deviazione standard della distribuzione delle medie campionarie: SE = σ/√n = 12/√36 = 12/6 = 2. La trappola è dividere per n invece che per √n (12/36 ≈ 0,33), oppure confondere l'errore standard con la deviazione standard dei dati (12). L'errore standard misura quanto varia la media da un campione all'altro, non quanto variano i singoli dati.",
+  "semplice": "I singoli studenti possono differire molto, ma la media di 36 studenti cambia poco da una classe all'altra: le differenze individuali in parte si compensano.",
+  "passaggi": [
+   "SE = σ / √n",
+   "√36 = 6",
+   "SE = 12 / 6 = 2"
+  ],
+  "concetto": "errore standard"
+ },
+ {
+  "id": "STA-077",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "Su un campione di 25 pazienti la pressione sistolica media è 120 mmHg; la deviazione standard della popolazione è nota, σ = 15 mmHg. Qual è l'intervallo di confidenza al 95% per la media?",
+  "opzioni": {
+   "A": "Da 90,6 a 149,4 mmHg",
+   "B": "Da 117,0 a 123,0 mmHg",
+   "C": "Da 115,1 a 124,9 mmHg",
+   "D": "Da 105,0 a 135,0 mmHg",
+   "E": "Da 114,1 a 125,9 mmHg"
+  },
+  "giusta": "E",
+  "perche": "Con σ nota l'intervallo è x̄ ± 1,96 · σ/√n. L'errore standard è 15/5 = 3 e il margine di errore 1,96 · 3 ≈ 5,88, quindi l'intervallo va da circa 114,1 a 125,9 mmHg. La trappola è usare σ invece dell'errore standard (si otterrebbe l'intervallo enorme 90,6-149,4), oppure dimenticare il fattore 1,96 (117-123). Il valore 1,645 darebbe invece un intervallo al 90% (115,1-124,9).",
+  "semplice": "L'intervallo è come una rete lanciata intorno alla media osservata: la larghezza della rete dipende da quanto variano i dati, da quanti pazienti hai misurato e da quanto vuoi essere sicuro di catturare la media vera.",
+  "passaggi": [
+   "SE = σ / √n = 15 / √25 = 3",
+   "Margine = 1,96 · 3 = 5,88",
+   "IC 95% = 120 ± 5,88 = [114,12; 125,88]"
+  ],
+  "concetto": "intervallo di confidenza per la media"
+ },
+ {
+  "id": "STA-078",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "test",
+  "domanda": "A parità di livello di confidenza e di variabilità, cosa bisogna fare per dimezzare l'ampiezza di un intervallo di confidenza per la media?",
+  "opzioni": {
+   "A": "Raddoppiare la dimensione del campione",
+   "B": "Dimezzare la dimensione del campione",
+   "C": "Quadruplicare la dimensione del campione",
+   "D": "Raddoppiare il livello di confidenza",
+   "E": "Elevare al quadrato la media"
+  },
+  "giusta": "C",
+  "perche": "L'ampiezza dell'intervallo è proporzionale all'errore standard σ/√n, quindi a 1/√n. Per dimezzarla √n deve raddoppiare, cioè n deve diventare quattro volte più grande. La trappola è pensare che raddoppiare il campione basti: così l'ampiezza si riduce solo di un fattore √2, cioè di circa il 29%. Ecco perché aumentare la precisione di uno studio diventa rapidamente costoso.",
+  "semplice": "Se con 100 persone hai un margine di ± 4, per scendere a ± 2 non bastano 200 persone: te ne servono 400.",
+  "passaggi": [
+   "Ampiezza ∝ 1 / √n",
+   "Per avere ampiezza / 2 serve √n · 2",
+   "Quindi n · 4"
+  ],
+  "concetto": "precisione e dimensione campionaria"
+ },
+ {
+  "id": "STA-079",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "Un intervallo di confidenza al 95% per una media è [12,4; 15,8]. Quale interpretazione è corretta?",
+  "opzioni": {
+   "A": "C'è il 95% di probabilità che la vera media cambi entro questo intervallo",
+   "B": "Il 95% degli intervalli costruiti con questo metodo su campioni ripetuti contiene la vera media",
+   "C": "Il 95% dei dati del campione è compreso tra 12,4 e 15,8",
+   "D": "Il 95% dei dati della popolazione è compreso tra 12,4 e 15,8",
+   "E": "La media del campione ha il 95% di probabilità di essere tra 12,4 e 15,8"
+  },
+  "giusta": "B",
+  "perche": "Nell'impostazione frequentista la vera media è un numero fisso e sconosciuto: è l'intervallo a essere casuale, perché cambia da campione a campione. Il 95% si riferisce al metodo: ripetendo lo studio molte volte, circa il 95% degli intervalli costruiti conterrebbe la vera media. La trappola più frequente è confondere l'intervallo di confidenza con l'intervallo che contiene il 95% dei dati, che è molto più largo. Anche la media campionaria non è incerta: si trova sempre esattamente al centro dell'intervallo.",
+  "semplice": "Immagina di lanciare cento volte un anello verso un paletto fisso: se il tuo lancio funziona nel 95% dei casi, circa 95 anelli lo prendono. Il paletto non si muove, sono gli anelli a cambiare posizione.",
+  "passaggi": [
+   "La vera media è un numero fisso e sconosciuto: non «cambia» né ha probabilità.",
+   "È l'intervallo a essere casuale, perché varia da campione a campione.",
+   "Il 95% si riferisce al metodo: circa il 95% degli intervalli costruiti così contiene la vera media.",
+   "Non indica il 95% dei dati; la media campionaria sta sempre al centro dell'intervallo.",
+   "Risposta: la B."
+  ],
+  "concetto": "interpretazione dell'intervallo di confidenza"
+ },
+ {
+  "id": "STA-080",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "In un sondaggio su 400 persone scelte a caso, 160 sono favorevoli a una proposta. Qual è circa l'intervallo di confidenza al 95% per la proporzione di favorevoli nella popolazione?",
+  "opzioni": {
+   "A": "Dal 35,2% al 44,8%",
+   "B": "Dal 38,8% al 41,2%",
+   "C": "Dal 30% al 50%",
+   "D": "Dal 36,0% al 44,0%",
+   "E": "Dal 39,5% al 40,5%"
+  },
+  "giusta": "A",
+  "perche": "La proporzione campionaria è p̂ = 160/400 = 0,40. L'errore standard è √(p̂(1 − p̂)/n) = √(0,24/400) ≈ 0,0245 e il margine al 95% è 1,96 · 0,0245 ≈ 0,048. L'intervallo è quindi 0,40 ± 0,048, cioè dal 35,2% al 44,8%. La trappola è dimenticare la radice quadrata, oppure usare un margine «a occhio» come ± 10%.",
+  "semplice": "Se in un sondaggio il 40% dice sì, nella popolazione la percentuale vera potrebbe essere un po' più alta o un po' più bassa: con 400 intervistati l'oscillazione plausibile è di circa 5 punti in ciascuna direzione.",
+  "passaggi": [
+   "p̂ = 160 / 400 = 0,40",
+   "SE = √(0,40 · 0,60 / 400) = √0,0006 ≈ 0,0245",
+   "Margine = 1,96 · 0,0245 ≈ 0,048",
+   "IC 95% ≈ [0,352; 0,448]"
+  ],
+  "concetto": "intervallo per una proporzione"
+ },
+ {
+  "id": "STA-081",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "In quale situazione si usa la distribuzione t di Student invece della normale standard per l'intervallo di confidenza di una media?",
+  "opzioni": {
+   "A": "Quando la deviazione standard della popolazione è nota",
+   "B": "Quando il campione è molto grande e la varianza è nota",
+   "C": "Quando si stima una proporzione",
+   "D": "Quando la deviazione standard della popolazione è ignota e si stima con quella campionaria",
+   "E": "Quando i dati sono qualitativi"
+  },
+  "giusta": "D",
+  "perche": "Se σ è ignota la si sostituisce con s, stimata dal campione; questo aggiunge incertezza, e la statistica (x̄ − μ)/(s/√n) segue una t di Student con n − 1 gradi di libertà anziché una normale. La t ha code più pesanti, che producono intervalli più larghi, soprattutto per campioni piccoli; al crescere di n si avvicina alla normale. La trappola è credere che la t serva solo per «campioni piccoli»: il criterio corretto è che σ sia ignota, e i dati devono essere approssimativamente normali.",
+  "semplice": "La t è come la normale «più prudente»: siccome non conosci la variabilità vera e la devi stimare, allarghi un po' l'intervallo per sicurezza.",
+  "passaggi": [
+   "Se σ della popolazione è nota si usa la normale standard.",
+   "Se σ è ignota la si sostituisce con s stimata dal campione.",
+   "Allora (x̄ − μ)/(s/√n) segue una t di Student con n − 1 gradi di libertà.",
+   "Il criterio è σ ignota, non solo «campione piccolo».",
+   "Risposta: la D."
+  ],
+  "concetto": "t di Student"
+ },
+ {
+  "id": "STA-082",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "test",
+  "domanda": "Passando da un intervallo di confidenza al 95% a uno al 99%, a parità di dati, l'intervallo:",
+  "opzioni": {
+   "A": "diventa più stretto",
+   "B": "resta uguale",
+   "C": "diventa più ampio",
+   "D": "si sposta verso destra",
+   "E": "diventa più ampio solo se il campione è piccolo"
+  },
+  "giusta": "C",
+  "perche": "Per essere più sicuri di contenere il valore vero bisogna allargare la rete: il valore critico passa da 1,96 a 2,576 e il margine di errore aumenta di circa il 31%. Esiste quindi un compromesso tra fiducia e precisione. La trappola è pensare che un livello di confidenza più alto renda la stima più precisa: diventa più sicura ma meno precisa.",
+  "semplice": "Se ti chiedono quanti anni ha una persona, dire «tra 30 e 40» è abbastanza sicuro; per essere quasi certo devi dire «tra 20 e 50», che è più sicuro ma meno utile.",
+  "passaggi": [
+   "Margine di errore = valore critico × errore standard.",
+   "Valore critico: 1,96 al 95%, 2,576 al 99%.",
+   "Rapporto: 2,576 / 1,96 ≈ 1,31: il margine cresce di circa il 31%.",
+   "Più fiducia significa meno precisione.",
+   "L'intervallo diventa più ampio."
+  ],
+  "concetto": "livello di confidenza"
+ },
+ {
+  "id": "STA-083",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "superiori",
+  "domanda": "Un sito di notizie pubblica un sondaggio online: «Sei favorevole alla settimana corta?». Rispondono 50 000 lettori, il 78% sì. Qual è il problema principale di questo risultato?",
+  "opzioni": {
+   "A": "Il campione è troppo piccolo",
+   "B": "Il 78% è un valore troppo alto per essere vero",
+   "C": "Il campione è autoselezionato e non rappresentativo della popolazione",
+   "D": "Non si può calcolare una percentuale con 50 000 risposte",
+   "E": "Le risposte online sono sempre false"
+  },
+  "giusta": "C",
+  "perche": "Chi risponde a un sondaggio online volontario sceglie da solo di partecipare: in genere sono lettori di quel sito e persone con opinioni forti sull'argomento. Questo crea una distorsione da selezione che nessun aumento della numerosità può correggere. La trappola è pensare che 50 000 risposte garantiscano l'affidabilità: un campione grande ma distorto produce una stima precisa di un valore sbagliato.",
+  "semplice": "Se chiedi «ti piace il calcio?» solo ai tifosi fuori da uno stadio, otterrai quasi tutti sì, anche intervistandone diecimila.",
+  "passaggi": [
+   "Chi risponde a un sondaggio online sceglie da solo di partecipare: campione autoselezionato.",
+   "Rispondono lettori di quel sito e persone con opinioni forti sul tema: non rappresentano la popolazione.",
+   "È una distorsione da selezione, che aumentare le risposte non corregge.",
+   "50 000 risposte non sono poche: il problema non è la dimensione.",
+   "Il problema è il campione autoselezionato e non rappresentativo."
+  ],
+  "concetto": "distorsione da selezione"
+ },
+ {
+  "id": "STA-084",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "Quante persone bisogna intervistare per stimare una proporzione con un margine di errore del 3% al 95% di confidenza, nel caso più sfavorevole (p = 0,5)?",
+  "opzioni": {
+   "A": "1068",
+   "B": "33",
+   "C": "556",
+   "D": "1000",
+   "E": "2401"
+  },
+  "giusta": "A",
+  "perche": "La formula per la dimensione campionaria è n = z² · p(1 − p)/E² = 1,96² · 0,25/0,03² ≈ 1067,1. Si arrotonda sempre per eccesso, quindi servono 1068 persone. Si usa p = 0,5 perché rende massimo p(1 − p) e quindi garantisce il margine richiesto qualunque sia la proporzione vera. La trappola è arrotondare per difetto o dimenticare di elevare al quadrato il margine.",
+  "semplice": "Per questo molti sondaggi nazionali intervistano circa mille persone: è il numero che garantisce un margine di errore di circa 3 punti percentuali.",
+  "passaggi": [
+   "n = z² · p(1 − p) / E²",
+   "= 1,96² · 0,5 · 0,5 / 0,03²",
+   "= 3,8416 · 0,25 / 0,0009 ≈ 1067,1",
+   "Arrotondando per eccesso: n = 1068"
+  ],
+  "concetto": "dimensione del campione"
+ },
+ {
+  "id": "STA-085",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "test",
+  "domanda": "Quale delle seguenti coppie è formata da un parametro e dalla statistica che lo stima?",
+  "opzioni": {
+   "A": "Media campionaria x̄ e deviazione standard campionaria s",
+   "B": "Media della popolazione μ e media campionaria x̄",
+   "C": "Media della popolazione μ e deviazione standard della popolazione σ",
+   "D": "Dimensione del campione n e livello di confidenza",
+   "E": "Proporzione campionaria p̂ e media campionaria x̄"
+  },
+  "giusta": "B",
+  "perche": "Un parametro è un valore che descrive la popolazione, fisso ma in genere sconosciuto, come μ o σ; una statistica è un valore calcolato dal campione, che cambia da campione a campione e serve a stimare il parametro, come x̄ o s. La coppia corretta abbina un parametro alla statistica che lo stima: μ e x̄. La trappola è confondere le notazioni: per convenzione le lettere greche indicano i parametri e quelle latine le statistiche.",
+  "semplice": "La percentuale vera di italiani che vota un partito è un parametro: nessuno la conosce esattamente fino alle elezioni. La percentuale trovata in un sondaggio è una statistica che prova a stimarla.",
+  "passaggi": [
+   "Parametro: descrive la popolazione, fisso e sconosciuto (lettere greche: μ, σ).",
+   "Statistica: calcolata dal campione, serve a stimare il parametro (lettere latine: x̄, s).",
+   "Si cerca un parametro abbinato alla statistica che lo stima.",
+   "La media della popolazione μ si stima con la media campionaria x̄.",
+   "Risposta: la B."
+  ],
+  "concetto": "parametro e statistica"
+ },
+ {
+  "id": "STA-086",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "Per costruire un intervallo di confidenza con la t di Student su un campione di 16 osservazioni, quanti gradi di libertà si usano?",
+  "opzioni": {
+   "A": "16",
+   "B": "15",
+   "C": "14",
+   "D": "4",
+   "E": "17"
+  },
+  "giusta": "B",
+  "perche": "Per l'intervallo su una singola media i gradi di libertà sono n − 1 = 15: uno è «speso» per stimare la media campionaria, da cui si calcolano gli scarti per s. La trappola è usare n (16) oppure √n (4). Con 15 gradi di libertà il valore critico al 95% è circa 2,131, più grande dell'1,96 della normale.",
+  "semplice": "Se sai che la media di 16 numeri è 10 e ne conosci 15, l'ultimo è obbligato: solo 15 numeri sono «liberi» di variare.",
+  "passaggi": [
+   "Gradi di libertà = n − 1",
+   "= 16 − 1 = 15"
+  ],
+  "concetto": "gradi di libertà"
+ },
+ {
+  "id": "STA-087",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "Un campione di 16 misure, approssimativamente normali, ha media 50 e deviazione standard s = 8. Con t(0,975; 15) = 2,131, qual è l'intervallo di confidenza al 95% per la media?",
+  "opzioni": {
+   "A": "Da 46,08 a 53,92",
+   "B": "Da 32,95 a 67,05",
+   "C": "Da 48,00 a 52,00",
+   "D": "Da 45,74 a 54,26",
+   "E": "Da 47,87 a 52,13"
+  },
+  "giusta": "D",
+  "perche": "L'errore standard stimato è s/√n = 8/4 = 2; il margine è 2,131 · 2 = 4,262; l'intervallo è 50 ± 4,262, cioè da 45,74 a 54,26. La trappola è usare 1,96 invece del valore t (si otterrebbe 46,08-53,92, un intervallo troppo stretto), oppure moltiplicare il t per s invece che per l'errore standard (32,95-67,05). Si usa la t perché σ è ignota e viene stimata con s su un campione piccolo.",
+  "semplice": "Con poche misure e una variabilità stimata, l'intervallo deve essere un po' più largo di quello che daresti con la normale: la t fa proprio questo.",
+  "passaggi": [
+   "SE = s / √n = 8 / √16 = 2",
+   "Margine = t · SE = 2,131 · 2 = 4,262",
+   "IC 95% = 50 ± 4,262 = [45,74; 54,26]"
+  ],
+  "concetto": "intervallo con la t"
+ },
+ {
+  "id": "STA-088",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "superiori",
+  "domanda": "Aumentando la dimensione del campione, cosa succede all'errore standard della media?",
+  "opzioni": {
+   "A": "Aumenta",
+   "B": "Resta invariato",
+   "C": "Diventa uguale alla deviazione standard dei dati",
+   "D": "Diminuisce",
+   "E": "Diventa negativo"
+  },
+  "giusta": "D",
+  "perche": "L'errore standard è σ/√n: al crescere di n il denominatore aumenta e l'errore standard diminuisce. Questo significa che la media di campioni grandi varia meno da un campione all'altro ed è quindi una stima più precisa. La trappola è confonderlo con la deviazione standard dei dati, che non diminuisce con n perché descrive la variabilità tra le singole unità.",
+  "semplice": "Chiedere l'età a 3 persone a caso dà medie molto diverse da un gruppo all'altro; chiederla a 300 persone dà medie quasi sempre simili.",
+  "passaggi": [
+   "Errore standard della media: ES = σ/√n.",
+   "Se n cresce, √n cresce e il rapporto diminuisce.",
+   "Esempio: passando da n = 25 a n = 100, ES passa da σ/5 a σ/10, si dimezza.",
+   "La deviazione standard dei dati invece non diminuisce con n.",
+   "L'errore standard diminuisce."
+  ],
+  "concetto": "errore standard e numerosità"
+ },
+ {
+  "id": "STA-089",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "test",
+  "domanda": "Una popolazione ha media μ e deviazione standard σ. Quali sono la media e la deviazione standard della distribuzione campionaria della media x̄ per campioni casuali di dimensione n?",
+  "opzioni": {
+   "A": "Media μ/n e deviazione standard σ",
+   "B": "Media μ e deviazione standard σ",
+   "C": "Media μ e deviazione standard σ/√n",
+   "D": "Media μ e deviazione standard σ/n",
+   "E": "Media μ/√n e deviazione standard σ/√n"
+  },
+  "giusta": "C",
+  "perche": "La media campionaria è uno stimatore non distorto, quindi la sua distribuzione è centrata sulla vera media μ. La sua variabilità è minore di quella dei singoli dati: la deviazione standard, chiamata errore standard, vale σ/√n. La trappola è dividere per n invece che per √n, oppure pensare che le medie campionarie siano tanto disperse quanto i dati.",
+  "semplice": "Se lanci un dado molte volte a gruppi di 4 e fai la media di ogni gruppo, le medie restano centrate su 3,5 ma sono molto meno disperse dei singoli lanci.",
+  "passaggi": [
+   "La media campionaria è uno stimatore non distorto: la sua distribuzione è centrata su μ.",
+   "Le medie variano meno dei singoli dati.",
+   "La deviazione standard della media (errore standard) è σ/√n, non σ/n.",
+   "Media μ e deviazione standard σ/√n."
+  ],
+  "concetto": "distribuzione campionaria della media"
+ },
+ {
+  "id": "STA-090",
+  "materia": "Statistica",
+  "argomento": "Campionamento e intervalli di confidenza",
+  "livello": "università",
+  "domanda": "Per studiare il consumo di frutta dei bambini delle elementari di una regione, si estraggono a caso 20 scuole e si intervistano tutti i loro alunni. Di quale tipo di campionamento si tratta?",
+  "opzioni": {
+   "A": "Stratificato",
+   "B": "Casuale semplice",
+   "C": "Sistematico",
+   "D": "Per quote",
+   "E": "A grappoli"
+  },
+  "giusta": "E",
+  "perche": "Nel campionamento a grappoli (cluster) la popolazione è divisa in gruppi naturali, qui le scuole, se ne estraggono a caso alcuni e si osservano tutte le unità al loro interno. È pratico ed economico, ma in genere meno preciso di un campione casuale semplice della stessa dimensione, perché gli alunni della stessa scuola tendono a somigliarsi. La trappola è confonderlo con lo stratificato, in cui si campiona dentro ogni gruppo invece di estrarre gruppi interi.",
+  "semplice": "Invece di cercare 500 bambini sparsi in tutta la regione, scegli a caso alcune scuole e intervisti tutti i bambini che ci trovi: risparmi tempo e viaggi.",
+  "passaggi": [
+   "La popolazione è divisa in gruppi naturali: le scuole.",
+   "Si estraggono a caso 20 scuole intere.",
+   "Si osservano tutti gli alunni di quelle scuole.",
+   "Estrarre gruppi interi e osservarli tutti è il campionamento a grappoli (nello stratificato si campiona dentro ogni gruppo).",
+   "Si tratta di campionamento a grappoli."
+  ],
+  "concetto": "campionamento a grappoli"
+ },
+ {
+  "id": "STA-091",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "superiori",
+  "domanda": "In uno studio si vuole verificare se un nuovo farmaco riduce la pressione più del placebo. Qual è l'ipotesi nulla H₀?",
+  "opzioni": {
+   "A": "Il farmaco riduce la pressione più del placebo",
+   "B": "Il farmaco aumenta la pressione",
+   "C": "Il placebo è più efficace del farmaco",
+   "D": "Il farmaco non produce differenze rispetto al placebo",
+   "E": "Il farmaco è efficace nel 95% dei pazienti"
+  },
+  "giusta": "D",
+  "perche": "L'ipotesi nulla rappresenta la posizione «di partenza» di assenza di effetto o di differenza: qui, che farmaco e placebo abbiano lo stesso effetto medio. Il test valuta se i dati sono abbastanza incompatibili con H₀ da poterla rifiutare a favore dell'ipotesi alternativa H₁, che contiene l'effetto che il ricercatore spera di dimostrare. La trappola è scrivere come ipotesi nulla ciò che si vuole dimostrare: la logica del test è invece cercare prove contro H₀.",
+  "semplice": "In un processo l'imputato è considerato innocente finché le prove non dimostrano il contrario: l'innocenza è l'ipotesi nulla, la colpevolezza l'alternativa.",
+  "passaggi": [
+   "L'ipotesi nulla rappresenta l'assenza di effetto o di differenza.",
+   "Qui: farmaco e placebo hanno lo stesso effetto medio sulla pressione.",
+   "L'effetto che il ricercatore spera di dimostrare va nell'ipotesi alternativa H₁.",
+   "H₀: il farmaco non produce differenze rispetto al placebo."
+  ],
+  "concetto": "ipotesi nulla"
+ },
+ {
+  "id": "STA-092",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "test",
+  "domanda": "Che cosa indica il p-value di un test statistico?",
+  "opzioni": {
+   "A": "La probabilità che l'ipotesi nulla sia vera",
+   "B": "La probabilità che l'ipotesi alternativa sia vera",
+   "C": "La probabilità di aver commesso un errore di II tipo",
+   "D": "La percentuale di dati che confermano l'ipotesi",
+   "E": "La probabilità di ottenere un risultato almeno così estremo come quello osservato, supponendo vera l'ipotesi nulla"
+  },
+  "giusta": "E",
+  "perche": "Il p-value si calcola assumendo che H₀ sia vera e misura quanto i dati osservati sarebbero sorprendenti in quel caso: più è piccolo, più i dati sono in contrasto con H₀. Non è la probabilità che H₀ sia vera, che nell'impostazione frequentista non è nemmeno definita. Questa confusione è l'errore di interpretazione più diffuso nella letteratura scientifica. Un p-value di 0,03 dice che, se non ci fosse alcun effetto, risultati così estremi capiterebbero solo nel 3% degli studi.",
+  "semplice": "Se un amico dice di avere una moneta normale e ottiene 9 teste su 10, ti chiedi: «Con una moneta normale, quanto è raro un risultato del genere?». Quella rarità è il p-value.",
+  "passaggi": [
+   "Il p-value si calcola supponendo vera H₀.",
+   "Misura la probabilità di un risultato almeno così estremo come quello osservato.",
+   "Non è la probabilità che H₀ o H₁ siano vere.",
+   "Esempio: p = 0,03 significa che senza effetto risultati così estremi capiterebbero nel 3% dei casi.",
+   "Risposta: la E."
+  ],
+  "concetto": "p-value"
+ },
+ {
+  "id": "STA-093",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "test",
+  "domanda": "In un test delle ipotesi, che cosa si intende per errore di I tipo?",
+  "opzioni": {
+   "A": "Non rifiutare l'ipotesi nulla quando in realtà è falsa",
+   "B": "Rifiutare l'ipotesi nulla quando in realtà è vera",
+   "C": "Sbagliare un calcolo nella statistica test",
+   "D": "Scegliere un campione troppo piccolo",
+   "E": "Accettare l'ipotesi alternativa quando è vera"
+  },
+  "giusta": "B",
+  "perche": "L'errore di I tipo è un «falso positivo»: si conclude che c'è un effetto quando in realtà non c'è. La sua probabilità massima è il livello di significatività α, fissato prima del test (spesso 0,05). L'errore di II tipo è invece il «falso negativo», cioè non rilevare un effetto che esiste. La trappola è invertire i due errori: per ricordarli conviene pensare all'ordine «prima si rifiuta a torto, poi si accetta a torto».",
+  "semplice": "Un allarme antincendio che suona senza fuoco commette un errore di I tipo; un allarme che resta muto durante un incendio commette un errore di II tipo.",
+  "passaggi": [
+   "Errore di I tipo: falso positivo.",
+   "Si conclude che c'è un effetto (si rifiuta H₀) quando H₀ è vera.",
+   "La sua probabilità massima è α, per esempio 0,05.",
+   "Non rifiutare H₀ quando è falsa è l'errore di II tipo.",
+   "Risposta: rifiutare H₀ quando è vera."
+  ],
+  "concetto": "errore di I tipo"
+ },
+ {
+  "id": "STA-094",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Se la probabilità di errore di II tipo di un test è β = 0,2, quanto vale la potenza del test?",
+  "opzioni": {
+   "A": "0,2",
+   "B": "0,05",
+   "C": "0,8",
+   "D": "0,95",
+   "E": "1,2"
+  },
+  "giusta": "C",
+  "perche": "La potenza è la probabilità di rifiutare correttamente H₀ quando è falsa, cioè di rilevare un effetto che esiste davvero: vale 1 − β = 1 − 0,2 = 0,8. Molti studi vengono progettati proprio per avere una potenza dell'80%. La trappola è confondere la potenza con 1 − α (0,95), che è invece la probabilità di non rifiutare H₀ quando è vera.",
+  "semplice": "Se un metal detector trova l'oggetto nascosto 8 volte su 10, la sua potenza è 0,8; nelle altre 2 volte commette un errore di II tipo.",
+  "passaggi": [
+   "Potenza = 1 − β",
+   "= 1 − 0,2 = 0,8"
+  ],
+  "concetto": "potenza del test"
+ },
+ {
+  "id": "STA-095",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Una popolazione ha σ = 10. Un campione di 25 unità ha media 104. Si verifica H₀: μ = 100 contro H₁: μ ≠ 100 con α = 0,05. Qual è la conclusione?",
+  "opzioni": {
+   "A": "z = 0,4, non si rifiuta H₀",
+   "B": "z = 2, non si rifiuta H₀ perché 2 < 2,58",
+   "C": "z = 10, si rifiuta H₀",
+   "D": "z = 2, si rifiuta H₀ (p ≈ 0,046)",
+   "E": "z = 0,08, non si rifiuta H₀"
+  },
+  "giusta": "D",
+  "perche": "La statistica test è z = (x̄ − μ₀)/(σ/√n) = (104 − 100)/(10/5) = 4/2 = 2. Il test è bilaterale con α = 0,05, quindi il valore critico è 1,96: poiché 2 > 1,96 si rifiuta H₀, e il p-value è circa 0,046. La trappola è dividere per σ invece che per l'errore standard (z = 0,4), oppure usare il valore critico 2,58, che corrisponde ad α = 0,01.",
+  "semplice": "La media osservata dista 4 unità da quella ipotizzata, e l'oscillazione tipica della media di 25 dati è 2: essere lontani due «oscillazioni» è abbastanza raro da far dubitare dell'ipotesi.",
+  "passaggi": [
+   "SE = σ / √n = 10 / 5 = 2",
+   "z = (104 − 100) / 2 = 2",
+   "Valore critico bilaterale al 5%: 1,96",
+   "|z| = 2 > 1,96 → si rifiuta H₀; p = 2 · (1 − Φ(2)) ≈ 0,046"
+  ],
+  "concetto": "test z per la media"
+ },
+ {
+  "id": "STA-096",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Un test produce p = 0,03. Il livello di significatività fissato prima dello studio è α = 0,01. Qual è la decisione corretta?",
+  "opzioni": {
+   "A": "Si rifiuta H₀",
+   "B": "Non si rifiuta H₀",
+   "C": "Si accetta H₁ con probabilità 97%",
+   "D": "Si cambia α a 0,05 per rifiutare H₀",
+   "E": "Il test non è valido"
+  },
+  "giusta": "B",
+  "perche": "Si rifiuta H₀ solo se il p-value è minore o uguale al livello α scelto in anticipo: qui 0,03 > 0,01, quindi H₀ non si rifiuta. Lo stesso risultato sarebbe stato significativo con α = 0,05, ma cambiare α dopo aver visto i dati è una pratica scorretta che aumenta i falsi positivi. La trappola è considerare «significativo» qualunque p minore di 0,05, indipendentemente dalla soglia dichiarata.",
+  "semplice": "Se prima della gara decidi che serve un salto di 2 metri per qualificarsi, un salto di 1,90 non basta, anche se in un'altra gara sarebbe bastato.",
+  "passaggi": [
+   "Regola: si rifiuta H₀ se p ≤ α",
+   "0,03 > 0,01 → non si rifiuta H₀"
+  ],
+  "concetto": "livello di significatività"
+ },
+ {
+  "id": "STA-097",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "test",
+  "domanda": "Quando è appropriato un test a una coda (unilaterale)?",
+  "opzioni": {
+   "A": "Quando, prima di vedere i dati, l'ipotesi alternativa prevede una sola direzione dell'effetto",
+   "B": "Quando il test a due code non risulta significativo",
+   "C": "Quando il campione è molto piccolo",
+   "D": "Sempre, perché è più potente",
+   "E": "Quando la varianza è ignota"
+  },
+  "giusta": "A",
+  "perche": "Il test unilaterale concentra tutto α in una sola coda e quindi è più potente in quella direzione, ma è giustificato solo se l'altra direzione è esclusa o irrilevante per motivi stabiliti in anticipo. Scegliere la coda dopo aver visto i dati, o passare a un test a una coda perché quello a due code non è significativo, raddoppia di fatto il rischio di errore di I tipo. Per questo in medicina si usano di solito test bilaterali.",
+  "semplice": "Se verifichi che un'acqua minerale non superi un limite di sodio, ti interessa solo se il valore è troppo alto: un test a una coda è sensato, ed è deciso prima della misura.",
+  "passaggi": [
+   "Il test unilaterale mette tutto α in una sola coda.",
+   "È giustificato solo se l'altra direzione è esclusa per motivi decisi prima di vedere i dati.",
+   "Scegliere la coda dopo i dati o dopo un risultato non significativo raddoppia di fatto l'errore di I tipo.",
+   "Dimensione del campione e varianza ignota non c'entrano.",
+   "Risposta: la A."
+  ],
+  "concetto": "test unilaterale e bilaterale"
+ },
+ {
+  "id": "STA-098",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Si lancia un dado 60 volte per verificare se è regolare con un test chi-quadrato di bontà dell'adattamento. Quanti gradi di libertà ha la statistica?",
+  "opzioni": {
+   "A": "6",
+   "B": "59",
+   "C": "5",
+   "D": "60",
+   "E": "1"
+  },
+  "giusta": "C",
+  "perche": "Nel test di bontà dell'adattamento i gradi di libertà sono il numero di categorie meno uno (meno eventuali parametri stimati dai dati): con 6 facce sono 6 − 1 = 5. Si sottrae 1 perché, fissato il totale dei lanci, l'ultima frequenza è determinata dalle altre. La trappola è usare il numero di categorie (6) o il numero di osservazioni meno uno (59).",
+  "semplice": "Se sai che su 60 lanci sono usciti dieci 1, dodici 2, nove 3, undici 4 e otto 5, il numero di 6 è già determinato: 60 − 50 = 10. Solo cinque frequenze sono libere.",
+  "passaggi": [
+   "Categorie k = 6",
+   "Gradi di libertà = k − 1 = 5"
+  ],
+  "concetto": "chi-quadrato di bontà dell'adattamento"
+ },
+ {
+  "id": "STA-099",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "In un test chi-quadrato di indipendenza su una tabella di contingenza con 3 righe e 4 colonne, quanti sono i gradi di libertà?",
+  "opzioni": {
+   "A": "6",
+   "B": "12",
+   "C": "7",
+   "D": "11",
+   "E": "5"
+  },
+  "giusta": "A",
+  "perche": "Per il test di indipendenza i gradi di libertà sono (righe − 1) · (colonne − 1) = 2 · 3 = 6. Il motivo è che, fissati i totali di riga e di colonna, basta conoscere 6 celle per ricavare tutte le altre. La trappola è moltiplicare righe e colonne (12) o sommarle, oppure usare il numero di celle meno uno (11).",
+  "semplice": "In una tabella con tre gruppi di età e quattro tipi di sport preferito, una volta noti i totali, solo 6 caselle possono essere scelte liberamente.",
+  "passaggi": [
+   "gl = (r − 1) · (c − 1)",
+   "= (3 − 1) · (4 − 1)",
+   "= 2 · 3 = 6"
+  ],
+  "concetto": "chi-quadrato di indipendenza"
+ },
+ {
+  "id": "STA-100",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Si misura il colesterolo di 30 pazienti prima e dopo una dieta di tre mesi. Quale test è più adatto per verificare se la dieta ha modificato il valore medio?",
+  "opzioni": {
+   "A": "Il test t per due campioni indipendenti",
+   "B": "Il test t per dati appaiati",
+   "C": "Il test chi-quadrato di indipendenza",
+   "D": "Il test esatto di Fisher",
+   "E": "L'ANOVA a una via con tre gruppi"
+  },
+  "giusta": "B",
+  "perche": "Le due misure sono fatte sugli stessi pazienti, quindi i dati sono appaiati: si calcolano le differenze dopo − prima per ogni paziente e si verifica se la loro media è zero con un test t a un campione. Questo elimina la variabilità tra persone e rende il test molto più potente. La trappola è trattare le due serie come gruppi indipendenti, ignorando che ogni coppia di valori appartiene alla stessa persona.",
+  "semplice": "Per sapere se una dieta funziona, confronti ogni persona con sé stessa prima e dopo: è molto più chiaro che confrontare un gruppo di persone con un altro gruppo diverso.",
+  "passaggi": [
+   "Le misure prima e dopo sono fatte sugli stessi 30 pazienti: dati appaiati.",
+   "Per ogni paziente si calcola la differenza dopo − prima.",
+   "Si verifica se la media delle differenze è zero con un test t (a un campione sulle differenze).",
+   "Il test per campioni indipendenti ignorerebbe l'appaiamento; chi-quadrato e Fisher sono per dati categoriali.",
+   "Il test adatto è il t per dati appaiati."
+  ],
+  "concetto": "test t appaiato"
+ },
+ {
+  "id": "STA-101",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "test",
+  "domanda": "Uno studio su 200 000 persone trova una differenza di pressione media di 0,3 mmHg tra due gruppi, con p < 0,001. Quale conclusione è più corretta?",
+  "opzioni": {
+   "A": "La differenza è statisticamente significativa ma probabilmente irrilevante dal punto di vista clinico",
+   "B": "La differenza è sicuramente importante per la salute",
+   "C": "Il risultato è un errore perché il p-value è troppo piccolo",
+   "D": "La differenza è di 0,3 mmHg con probabilità 99,9%",
+   "E": "Lo studio dimostra che l'ipotesi nulla è falsa con certezza"
+  },
+  "giusta": "A",
+  "perche": "Con campioni molto grandi l'errore standard diventa piccolissimo, e anche differenze minuscole risultano statisticamente significative. La significatività dice solo che la differenza difficilmente è dovuta al caso, non che sia grande o importante. Una differenza di 0,3 mmHg non ha in genere alcuna rilevanza clinica. La trappola è leggere un p-value piccolo come prova di un effetto forte: per valutare l'importanza bisogna guardare la dimensione dell'effetto e il suo intervallo di confidenza.",
+  "semplice": "Con una bilancia precisissima puoi dimostrare che due mele differiscono di un grammo, ma per fare una torta quella differenza non conta nulla.",
+  "passaggi": [
+   "Con 200 000 persone l'errore standard è piccolissimo.",
+   "Anche una differenza minuscola (0,3 mmHg) diventa statisticamente significativa (p < 0,001).",
+   "Significativa vuol dire solo «difficilmente dovuta al caso», non «grande» o «importante».",
+   "0,3 mmHg non ha in genere rilevanza clinica.",
+   "Risposta: la A."
+  ],
+  "concetto": "significatività statistica e rilevanza pratica"
+ },
+ {
+  "id": "STA-102",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Un ricercatore esegue 20 test indipendenti, ciascuno con α = 0,05, e in tutti l'ipotesi nulla è vera. Qual è circa la probabilità di ottenere almeno un risultato falsamente significativo?",
+  "opzioni": {
+   "A": "Circa 5%",
+   "B": "Circa 100%",
+   "C": "Circa 64%",
+   "D": "Circa 25%",
+   "E": "Circa 0,25%"
+  },
+  "giusta": "C",
+  "perche": "La probabilità di non commettere errori in un singolo test è 0,95; in 20 test indipendenti è 0,95²⁰ ≈ 0,358. Quindi la probabilità di almeno un falso positivo è 1 − 0,358 ≈ 0,64. Questo è il problema dei confronti multipli, che si affronta per esempio con la correzione di Bonferroni (α/20 = 0,0025 per ciascun test). La trappola è pensare che il rischio resti al 5% qualunque sia il numero di test.",
+  "semplice": "Se compri 20 biglietti di una lotteria in cui ciascuno vince con probabilità 5%, è più probabile vincere almeno una volta che non vincere mai. Con i test, «vincere» significa trovare un falso positivo.",
+  "passaggi": [
+   "P(nessun errore in un test) = 0,95",
+   "P(nessun errore in 20 test) = 0,95²⁰ ≈ 0,358",
+   "P(almeno un falso positivo) = 1 − 0,358 ≈ 0,64"
+  ],
+  "concetto": "confronti multipli"
+ },
+ {
+  "id": "STA-103",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "superiori",
+  "domanda": "Un test statistico non rifiuta l'ipotesi nulla. Che cosa si può concludere?",
+  "opzioni": {
+   "A": "L'ipotesi nulla è dimostrata vera",
+   "B": "L'ipotesi alternativa è falsa con certezza",
+   "C": "Lo studio è stato condotto male",
+   "D": "Il campione era troppo grande",
+   "E": "I dati non forniscono prove sufficienti contro l'ipotesi nulla"
+  },
+  "giusta": "E",
+  "perche": "Non rifiutare H₀ significa solo che i dati sono compatibili con essa, non che l'abbiano dimostrata: magari l'effetto esiste ma il campione era troppo piccolo per rilevarlo. Per questo si dice «non si rifiuta H₀» invece di «si accetta H₀». La trappola è interpretare un risultato non significativo come prova di assenza dell'effetto: «assenza di prove non è prova di assenza».",
+  "semplice": "Se un tribunale assolve un imputato per insufficienza di prove, non ha dimostrato che è innocente: ha solo concluso che le prove non bastano per condannarlo.",
+  "passaggi": [
+   "Non rifiutare H₀ significa che i dati sono compatibili con H₀.",
+   "Non dimostra H₀: l'effetto potrebbe esistere ma essere sfuggito (campione piccolo).",
+   "Per questo si dice «non si rifiuta» e non «si accetta».",
+   "Conclusione: i dati non forniscono prove sufficienti contro H₀."
+  ],
+  "concetto": "interpretazione del non rifiuto"
+ },
+ {
+  "id": "STA-104",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Si vuole confrontare il tempo medio di guarigione con quattro trattamenti diversi. Quale tecnica è più adatta per verificare se almeno una media differisce dalle altre?",
+  "opzioni": {
+   "A": "Sei test t separati senza correzioni",
+   "B": "L'analisi della varianza (ANOVA) a una via",
+   "C": "Il test chi-quadrato di bontà dell'adattamento",
+   "D": "La regressione logistica",
+   "E": "Il coefficiente di correlazione di Pearson"
+  },
+  "giusta": "B",
+  "perche": "L'ANOVA confronta contemporaneamente le medie di tre o più gruppi, scomponendo la variabilità totale in variabilità tra i gruppi e dentro i gruppi; la statistica F è il rapporto tra le due. Eseguire tutti i possibili test t a coppie (sei, con quattro gruppi) senza correzione gonfierebbe il rischio di errore di I tipo. Se l'ANOVA è significativa, si individuano poi i gruppi diversi con test post hoc come quello di Tukey.",
+  "semplice": "Invece di confrontare i quattro trattamenti a coppie, uno per uno, l'ANOVA si chiede prima di tutto se le differenze tra i gruppi sono grandi rispetto alle differenze tra pazienti dello stesso gruppo.",
+  "passaggi": [
+   "Si confrontano le medie di quattro gruppi.",
+   "Con quattro gruppi le coppie sono 4 · 3 / 2 = 6: sei test t gonfierebbero l'errore di I tipo.",
+   "L'ANOVA a una via confronta tutte le medie insieme con la statistica F (variabilità tra / dentro i gruppi).",
+   "Se è significativa, si usano poi test post hoc (Tukey).",
+   "La tecnica adatta è l'ANOVA a una via."
+  ],
+  "concetto": "ANOVA"
+ },
+ {
+  "id": "STA-105",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Si confrontano i punteggi di ansia (fortemente asimmetrici, campioni piccoli) di due gruppi indipendenti di pazienti. Quale test non parametrico è un'alternativa appropriata al test t?",
+  "opzioni": {
+   "A": "Il test t per dati appaiati",
+   "B": "Il test z per una proporzione",
+   "C": "Il test di Shapiro-Wilk",
+   "D": "Il test di Mann-Whitney (Wilcoxon per ranghi)",
+   "E": "Il test F di Fisher per le varianze"
+  },
+  "giusta": "D",
+  "perche": "Quando l'ipotesi di normalità non è sostenibile e i campioni sono piccoli, il test di Mann-Whitney confronta due gruppi indipendenti usando i ranghi delle osservazioni invece dei valori, ed è quindi robusto rispetto agli anomali e all'asimmetria. Per dati appaiati l'equivalente non parametrico è il test di Wilcoxon dei ranghi con segno. La trappola è confonderlo con il test di Shapiro-Wilk, che non confronta gruppi ma verifica la normalità.",
+  "semplice": "Invece di sommare i punteggi, metti tutti i pazienti in classifica dal meno al più ansioso e guardi se quelli di un gruppo tendono a occupare le posizioni alte.",
+  "passaggi": [
+   "Dati fortemente asimmetrici e campioni piccoli: la normalità non è sostenibile.",
+   "I gruppi sono indipendenti, non appaiati.",
+   "Il test di Mann-Whitney confronta due gruppi indipendenti usando i ranghi.",
+   "Shapiro-Wilk verifica la normalità, non confronta gruppi.",
+   "L'alternativa non parametrica è Mann-Whitney."
+  ],
+  "concetto": "test non parametrici"
+ },
+ {
+  "id": "STA-106",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "test",
+  "domanda": "A parità di livello di significatività, quale scelta aumenta la potenza di un test?",
+  "opzioni": {
+   "A": "Diminuire la dimensione del campione",
+   "B": "Aumentare la variabilità delle misure",
+   "C": "Aumentare la dimensione del campione",
+   "D": "Usare un livello α più piccolo",
+   "E": "Cercare un effetto più piccolo"
+  },
+  "giusta": "C",
+  "perche": "La potenza cresce quando l'errore standard diminuisce, e il modo più diretto per ridurlo è aumentare n. La potenza aumenta anche con effetti più grandi, misure meno variabili e livelli α meno severi. La trappola è pensare che ridurre α renda il test «migliore» in tutto: riduce i falsi positivi ma aumenta i falsi negativi, e quindi diminuisce la potenza.",
+  "semplice": "Per sentire un sussurro in una stanza rumorosa serve avvicinarsi o ascoltare più a lungo: con più dati il «segnale» emerge meglio dal rumore.",
+  "passaggi": [
+   "La potenza aumenta quando l'errore standard σ/√n diminuisce.",
+   "Il modo più diretto è aumentare n.",
+   "Ridurre n, aumentare la variabilità o cercare effetti più piccoli abbassa la potenza.",
+   "Un α più piccolo riduce i falsi positivi ma abbassa la potenza.",
+   "Aumenta la potenza aumentare la dimensione del campione."
+  ],
+  "concetto": "fattori che influenzano la potenza"
+ },
+ {
+  "id": "STA-107",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "università",
+  "domanda": "Una moneta viene lanciata 100 volte ed escono 60 teste. Quanto vale la statistica chi-quadrato per verificare che la moneta sia regolare?",
+  "opzioni": {
+   "A": "2",
+   "B": "0,4",
+   "C": "10",
+   "D": "20",
+   "E": "4"
+  },
+  "giusta": "E",
+  "perche": "Le frequenze attese con moneta regolare sono 50 teste e 50 croci. La statistica è χ² = Σ (O − A)²/A = (60 − 50)²/50 + (40 − 50)²/50 = 2 + 2 = 4. Con 1 grado di libertà il valore critico al 5% è 3,84, quindi si rifiuta l'ipotesi di moneta regolare. La trappola è considerare solo la categoria «teste» (2) o dimenticare di elevare al quadrato le differenze.",
+  "semplice": "Ti aspettavi 50 e 50, hai visto 60 e 40: il chi-quadrato misura quanto questa distanza è grande rispetto a quello che ti aspettavi.",
+  "passaggi": [
+   "Attese: 50 teste, 50 croci",
+   "Teste: (60 − 50)² / 50 = 2",
+   "Croci: (40 − 50)² / 50 = 2",
+   "χ² = 2 + 2 = 4 (gl = 1; 4 > 3,84)"
+  ],
+  "concetto": "statistica chi-quadrato"
+ },
+ {
+  "id": "STA-108",
+  "materia": "Statistica",
+  "argomento": "Test delle ipotesi",
+  "livello": "test",
+  "domanda": "L'intervallo di confidenza al 95% per la differenza tra le medie di due gruppi è [2; 8]. Che cosa si può dire del test bilaterale di H₀: «differenza = 0» con α = 0,05?",
+  "opzioni": {
+   "A": "H₀ viene rifiutata, perché lo zero non è compreso nell'intervallo",
+   "B": "H₀ non viene rifiutata, perché l'intervallo è ampio",
+   "C": "Non si può dire nulla senza il p-value",
+   "D": "H₀ viene rifiutata solo se l'intervallo contiene lo zero",
+   "E": "La differenza vera è sicuramente 5"
+  },
+  "giusta": "A",
+  "perche": "Esiste una corrispondenza diretta tra intervalli di confidenza e test: un IC al 95% contiene tutti i valori del parametro che un test bilaterale al 5% non rifiuterebbe. Poiché lo zero è fuori dall'intervallo [2; 8], l'ipotesi di differenza nulla viene rifiutata. La trappola è pensare che servano sempre i p-value: l'intervallo dà la stessa informazione e in più indica quanto può essere grande l'effetto.",
+  "semplice": "Se tutti i valori plausibili della differenza sono tra 2 e 8, lo zero non è plausibile: i due gruppi sono davvero diversi.",
+  "passaggi": [
+   "Un IC al 95% contiene i valori che un test bilaterale al 5% non rifiuterebbe.",
+   "H₀ dice: differenza = 0.",
+   "L'intervallo [2; 8] non contiene 0.",
+   "Quindi 0 viene rifiutato: H₀ è rifiutata.",
+   "Risposta: la A."
+  ],
+  "concetto": "relazione tra test e intervallo di confidenza"
+ },
+ {
+  "id": "STA-109",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti coppie di variabili mostra tipicamente una correlazione positiva?",
+  "opzioni": {
+   "A": "Velocità di un'auto e tempo per percorrere 100 km",
+   "B": "Altitudine e temperatura dell'aria",
+   "C": "Ore di studio e voto all'esame",
+   "D": "Numero di sigarette fumate e aspettativa di vita",
+   "E": "Prezzo di un prodotto e quantità venduta"
+  },
+  "giusta": "C",
+  "perche": "Si ha correlazione positiva quando, al crescere di una variabile, anche l'altra tende a crescere: in media chi studia più ore ottiene voti più alti. Le altre coppie mostrano invece una relazione inversa, cioè correlazione negativa: più velocità significa meno tempo, più altitudine meno temperatura. La trappola è pensare che «positiva» significhi «buona»: indica soltanto che le due variabili variano nello stesso verso.",
+  "semplice": "In un grafico con le ore di studio sull'asse orizzontale e i voti su quello verticale, i punti formano una nuvola che sale da sinistra verso destra.",
+  "passaggi": [
+   "Correlazione positiva: le due variabili crescono insieme.",
+   "Più velocità meno tempo, più altitudine meno temperatura, più sigarette meno aspettativa di vita, più prezzo meno vendite: tutte inverse.",
+   "Più ore di studio tendono a dare voti più alti.",
+   "La correlazione positiva è tra ore di studio e voto."
+  ],
+  "concetto": "correlazione positiva"
+ },
+ {
+  "id": "STA-110",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "superiori",
+  "domanda": "Entro quali valori è compreso il coefficiente di correlazione lineare di Pearson r?",
+  "opzioni": {
+   "A": "Tra 0 e 1",
+   "B": "Tra 0 e 100",
+   "C": "Tra −∞ e +∞",
+   "D": "Tra −1 e +1",
+   "E": "Tra −100 e +100"
+  },
+  "giusta": "D",
+  "perche": "Il coefficiente r è un numero puro compreso tra −1 e +1: vale +1 se i punti stanno esattamente su una retta crescente, −1 se stanno su una retta decrescente, e vicino a 0 se non c'è relazione lineare. Il segno indica la direzione, il valore assoluto la forza della relazione. La trappola è confonderlo con r², che è sempre tra 0 e 1, o con una percentuale.",
+  "semplice": "Pensa a r come a un termometro dell'allineamento: +1 è un allineamento perfetto in salita, −1 in discesa, 0 una nuvola senza direzione.",
+  "passaggi": [
+   "Il coefficiente r di Pearson è un numero puro.",
+   "r = +1: punti su una retta crescente; r = −1: su una retta decrescente.",
+   "r vicino a 0: nessuna relazione lineare.",
+   "Non va confuso con r², che sta tra 0 e 1.",
+   "r è compreso tra −1 e +1."
+  ],
+  "concetto": "coefficiente di correlazione"
+ },
+ {
+  "id": "STA-111",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "test",
+  "domanda": "Il coefficiente di correlazione tra due variabili vale r = −0,9. Come si descrive la relazione?",
+  "opzioni": {
+   "A": "Lineare forte e inversa",
+   "B": "Debole e diretta",
+   "C": "Forte e diretta",
+   "D": "Quasi assente",
+   "E": "Perfetta, con relazione di causa ed effetto"
+  },
+  "giusta": "A",
+  "perche": "Il valore assoluto 0,9 è vicino a 1, quindi la relazione lineare è forte; il segno meno indica che al crescere di una variabile l'altra tende a diminuire. La trappola è pensare che un valore negativo indichi una relazione debole: il segno indica solo la direzione. Inoltre, nemmeno una correlazione molto forte dimostra un rapporto di causa ed effetto.",
+  "semplice": "Più ore passi a guardare lo schermo la sera, meno ore dormi: due grandezze che vanno in direzioni opposte in modo molto regolare hanno un r vicino a −1.",
+  "passaggi": [
+   "Guarda il valore assoluto: |−0,9| = 0,9, vicino a 1: relazione lineare forte.",
+   "Guarda il segno: negativo, quindi quando una cresce l'altra diminuisce: inversa.",
+   "Anche una correlazione forte non prova causa ed effetto.",
+   "La relazione è lineare forte e inversa."
+  ],
+  "concetto": "interpretazione di r"
+ },
+ {
+  "id": "STA-112",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "test",
+  "domanda": "In una città si osserva che nei mesi in cui si vendono più gelati ci sono anche più annegamenti. Quale spiegazione è più probabile?",
+  "opzioni": {
+   "A": "Mangiare gelati provoca annegamenti",
+   "B": "Gli annegamenti fanno aumentare la vendita di gelati",
+   "C": "La correlazione è certamente dovuta a un errore di calcolo",
+   "D": "Entrambi i fenomeni dipendono da una terza variabile, la temperatura estiva",
+   "E": "I due fenomeni non sono correlati"
+  },
+  "giusta": "D",
+  "perche": "I due fenomeni crescono insieme perché entrambi aumentano con il caldo: d'estate si mangiano più gelati e si va di più al mare. La temperatura è una variabile confondente che produce una correlazione senza alcun legame causale diretto tra gelati e annegamenti. La trappola, frequentissima anche nelle notizie, è dedurre una causa da una semplice correlazione: per stabilire un rapporto causale servono esperimenti controllati o analisi che tengano conto dei confondenti.",
+  "semplice": "Il numero di vigili del fuoco presenti a un incendio è correlato con i danni prodotti, ma non sono i pompieri a causare i danni: è la grandezza dell'incendio a determinare entrambi.",
+  "passaggi": [
+   "Gelati e annegamenti crescono negli stessi mesi.",
+   "Entrambi aumentano con il caldo: d'estate si mangiano più gelati e si fa più bagno.",
+   "La temperatura è una variabile confondente che crea la correlazione.",
+   "Non c'è un legame causale diretto tra gelati e annegamenti.",
+   "Risposta: la D."
+  ],
+  "concetto": "correlazione e causalità"
+ },
+ {
+  "id": "STA-113",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "Tra due variabili si ha r = 0,8. Quale percentuale della variabilità di y è spiegata dalla regressione lineare su x?",
+  "opzioni": {
+   "A": "80%",
+   "B": "64%",
+   "C": "40%",
+   "D": "89%",
+   "E": "20%"
+  },
+  "giusta": "B",
+  "perche": "Il coefficiente di determinazione r² indica la frazione della variabilità totale di y spiegata dalla retta di regressione: 0,8² = 0,64, cioè il 64%. Il restante 36% è dovuto ad altri fattori o alla variabilità casuale. La trappola è leggere r direttamente come percentuale (80%): una correlazione che sembra alta corrisponde a una quota spiegata meno impressionante.",
+  "semplice": "Se l'altezza dei figli è correlata con r = 0,8 a quella dei genitori, conoscere i genitori spiega circa due terzi delle differenze di altezza tra i figli; il resto dipende da altri fattori.",
+  "passaggi": [
+   "r² = 0,8² = 0,64",
+   "In percentuale: 64%"
+  ],
+  "concetto": "coefficiente di determinazione"
+ },
+ {
+  "id": "STA-114",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "La retta di regressione che lega il voto finale y alle ore di studio settimanali x è ŷ = 2 + 0,5x. Quale voto prevede per uno studente che studia 10 ore a settimana?",
+  "opzioni": {
+   "A": "7",
+   "B": "5",
+   "C": "12",
+   "D": "2,5",
+   "E": "25"
+  },
+  "giusta": "A",
+  "perche": "Basta sostituire x = 10 nell'equazione: ŷ = 2 + 0,5 · 10 = 2 + 5 = 7. La trappola è dimenticare l'intercetta e considerare solo 0,5 · 10 = 5, oppure sommare i coefficienti invece di moltiplicare la pendenza per x. Il valore ottenuto è una previsione media: studenti diversi con 10 ore di studio otterranno voti diversi intorno a 7.",
+  "semplice": "La retta funziona come una ricetta: si parte da 2 punti e se ne aggiunge mezzo per ogni ora di studio.",
+  "passaggi": [
+   "ŷ = 2 + 0,5 · x",
+   "x = 10 → ŷ = 2 + 0,5 · 10",
+   "ŷ = 2 + 5 = 7"
+  ],
+  "concetto": "previsione con la retta di regressione"
+ },
+ {
+  "id": "STA-115",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "Nella retta di regressione ŷ = 30 + 0,5x, dove x è l'età in anni e y la pressione sistolica in mmHg, come si interpreta il coefficiente 0,5?",
+  "opzioni": {
+   "A": "La pressione a 0 anni è 0,5 mmHg",
+   "B": "Metà dei pazienti ha la pressione alta",
+   "C": "In media, a ogni anno di età in più corrisponde un aumento di 0,5 mmHg della pressione prevista",
+   "D": "La correlazione tra età e pressione è 0,5",
+   "E": "Ogni paziente aumenta la sua pressione di 0,5 mmHg all'anno"
+  },
+  "giusta": "C",
+  "perche": "La pendenza b indica di quanto cambia in media il valore previsto di y quando x aumenta di un'unità: qui 0,5 mmHg per ogni anno di età. Non è il coefficiente di correlazione, che è un numero puro e non dipende dalle unità di misura. La trappola è interpretarla come una legge valida per ogni individuo: descrive un andamento medio, e se i dati provengono da persone diverse (studio trasversale) non descrive come cambia nel tempo una singola persona.",
+  "semplice": "È come un listino prezzi: la pendenza dice «quanto costa» in mmHg ogni anno in più, mentre l'intercetta è il punto di partenza.",
+  "passaggi": [
+   "Nella retta ŷ = a + b·x il coefficiente di x è la pendenza b.",
+   "Qui b = 0,5: se x aumenta di 1 anno, ŷ aumenta di 0,5 mmHg.",
+   "Esempio: a 40 anni ŷ = 30 + 0,5 · 40 = 50; a 41 anni ŷ = 50,5.",
+   "È un andamento medio, non una legge per ogni individuo, e non è la correlazione.",
+   "Risposta: la C."
+  ],
+  "concetto": "interpretazione della pendenza"
+ },
+ {
+  "id": "STA-116",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "Due variabili hanno correlazione r = 0,6, deviazioni standard s_x = 4 e s_y = 10, medie x̄ = 20 e ȳ = 50. Qual è la retta di regressione di y su x?",
+  "opzioni": {
+   "A": "ŷ = 50 + 0,6x",
+   "B": "ŷ = 38 + 0,6x",
+   "C": "ŷ = 20 + 0,24x",
+   "D": "ŷ = 45,2 + 0,24x",
+   "E": "ŷ = 20 + 1,5x"
+  },
+  "giusta": "E",
+  "perche": "La pendenza si ottiene da b = r · s_y/s_x = 0,6 · 10/4 = 1,5; l'intercetta da a = ȳ − b · x̄ = 50 − 1,5 · 20 = 20. Quindi ŷ = 20 + 1,5x, una retta che passa sempre per il punto delle medie (20; 50). La trappola è usare r direttamente come pendenza, oppure invertire il rapporto delle deviazioni standard (s_x/s_y), che dà 0,24.",
+  "semplice": "La retta di regressione passa sempre per il «baricentro» dei dati: se la sostituisci con x = 20 devi ottenere 50, ed è un ottimo controllo.",
+  "passaggi": [
+   "b = r · s_y / s_x = 0,6 · 10 / 4 = 1,5",
+   "a = ȳ − b · x̄ = 50 − 1,5 · 20 = 20",
+   "ŷ = 20 + 1,5x",
+   "Controllo: x = 20 → ŷ = 50"
+  ],
+  "concetto": "calcolo della retta dei minimi quadrati"
+ },
+ {
+  "id": "STA-117",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "Per i dati x = 1, 2, 3, 4, 5 e y = 2, 4, 5, 4, 5, qual è la retta di regressione dei minimi quadrati?",
+  "opzioni": {
+   "A": "ŷ = 2 + 0,8x",
+   "B": "ŷ = 1,5 + 0,5x",
+   "C": "ŷ = 3 + 0,4x",
+   "D": "ŷ = 2,2 + 0,6x",
+   "E": "ŷ = 2,2 + 0,77x"
+  },
+  "giusta": "D",
+  "perche": "Le medie sono x̄ = 3 e ȳ = 4. La somma dei prodotti degli scarti è S_xy = 6 e la somma dei quadrati degli scarti di x è S_xx = 10, quindi b = S_xy/S_xx = 0,6 e a = ȳ − b · x̄ = 4 − 1,8 = 2,2. La trappola è usare come pendenza il coefficiente di correlazione (r ≈ 0,77), che per questi dati è un numero diverso.",
+  "semplice": "Dalla retta si legge che, in media, ogni unità in più di x porta 0,6 unità in più di y, partendo da 2,2.",
+  "passaggi": [
+   "x̄ = 3, ȳ = 4",
+   "Scarti x: −2, −1, 0, 1, 2; scarti y: −2, 0, 1, 0, 1",
+   "S_xy = 4 + 0 + 0 + 0 + 2 = 6; S_xx = 4 + 1 + 0 + 1 + 4 = 10",
+   "b = 6/10 = 0,6; a = 4 − 0,6 · 3 = 2,2"
+  ],
+  "concetto": "metodo dei minimi quadrati"
+ },
+ {
+  "id": "STA-118",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "test",
+  "domanda": "Il coefficiente di correlazione lineare tra due variabili è r = 0. Che cosa si può concludere?",
+  "opzioni": {
+   "A": "Le variabili sono certamente indipendenti",
+   "B": "Non c'è relazione lineare, ma potrebbe esserci una relazione di altro tipo",
+   "C": "Le due variabili hanno la stessa media",
+   "D": "La retta di regressione ha pendenza 1",
+   "E": "I dati sono stati raccolti in modo sbagliato"
+  },
+  "giusta": "B",
+  "perche": "Il coefficiente di Pearson misura solo la forza della relazione lineare. Se i punti formano una parabola simmetrica, per esempio, r può essere zero anche se y dipende in modo perfetto da x. La trappola è confondere «correlazione nulla» con «indipendenza»: l'indipendenza implica r = 0, ma non vale il contrario. Per questo bisogna sempre guardare il diagramma di dispersione.",
+  "semplice": "Il rendimento in un compito cresce con l'agitazione fino a un certo punto e poi cala: la relazione è a forma di arco, e una retta non riesce a descriverla.",
+  "passaggi": [
+   "Pearson misura solo la relazione lineare.",
+   "Una relazione curva, come una parabola simmetrica, può dare r = 0 anche se y dipende da x.",
+   "Indipendenza implica r = 0, ma r = 0 non implica indipendenza.",
+   "Conclusione: nessuna relazione lineare, ma potrebbe essercene un'altra."
+  ],
+  "concetto": "limiti di r"
+ },
+ {
+  "id": "STA-119",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "La retta di regressione è ŷ = 2 + 0,5x. Per un'osservazione con x = 10 e y = 9, quanto vale il residuo?",
+  "opzioni": {
+   "A": "−2",
+   "B": "7",
+   "C": "2",
+   "D": "9",
+   "E": "0,5"
+  },
+  "giusta": "C",
+  "perche": "Il residuo è la differenza tra valore osservato e valore previsto: e = y − ŷ. Il valore previsto è 2 + 0,5 · 10 = 7, quindi il residuo è 9 − 7 = 2. Un residuo positivo indica che il punto sta sopra la retta. La trappola è calcolare ŷ − y, ottenendo −2, cioè invertendo il segno.",
+  "semplice": "Se la retta prevede 7 e il valore vero è 9, la retta ha «sbagliato per difetto» di 2: il residuo è proprio questo scarto.",
+  "passaggi": [
+   "ŷ = 2 + 0,5 · 10 = 7",
+   "e = y − ŷ = 9 − 7 = 2"
+  ],
+  "concetto": "residui"
+ },
+ {
+  "id": "STA-120",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "Che cosa minimizza il metodo dei minimi quadrati per stimare la retta di regressione?",
+  "opzioni": {
+   "A": "La somma dei residui",
+   "B": "La somma dei quadrati dei residui verticali",
+   "C": "La somma delle distanze perpendicolari alla retta",
+   "D": "Il numero di punti che non stanno sulla retta",
+   "E": "La varianza della variabile x"
+  },
+  "giusta": "B",
+  "perche": "Il metodo dei minimi quadrati sceglie intercetta e pendenza in modo da rendere minima la somma Σ(y − ŷ)², cioè dei quadrati delle distanze verticali tra i punti e la retta. La somma dei residui semplici, invece, è sempre zero per la retta dei minimi quadrati e non può essere usata come criterio. La trappola è pensare alle distanze perpendicolari, che riguardano un altro metodo (la regressione ortogonale).",
+  "semplice": "Immagina che ogni punto sia collegato alla retta da una molla verticale: la retta dei minimi quadrati è quella in cui le molle, nel complesso, sono meno tese.",
+  "passaggi": [
+   "Per ogni punto il residuo è la distanza verticale y − ŷ dalla retta.",
+   "La somma dei residui semplici vale sempre 0 per la retta stimata: non è un criterio.",
+   "Si elevano al quadrato i residui e si minimizza Σ(y − ŷ)².",
+   "Le distanze perpendicolari riguardano un altro metodo.",
+   "Si minimizza la somma dei quadrati dei residui verticali."
+  ],
+  "concetto": "minimi quadrati"
+ },
+ {
+  "id": "STA-121",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "test",
+  "domanda": "Una retta di regressione stima il peso dei bambini dall'età, usando dati di bambini tra 2 e 10 anni. Perché è rischioso usarla per prevedere il peso di una persona di 40 anni?",
+  "opzioni": {
+   "A": "Perché la retta vale solo per x interi",
+   "B": "Perché la pendenza di una retta cambia con x",
+   "C": "Perché a 40 anni la varianza è nulla",
+   "D": "Perché la regressione non si può usare per fare previsioni",
+   "E": "Perché si tratta di un'estrapolazione fuori dall'intervallo dei dati osservati"
+  },
+  "giusta": "E",
+  "perche": "La retta descrive bene la relazione solo nell'intervallo in cui sono stati raccolti i dati. Fuori da questo intervallo, cioè in estrapolazione, la relazione può cambiare completamente: la crescita si ferma nell'adolescenza, e la retta prevederebbe per un adulto un peso assurdo. La trappola è fidarsi della formula come se fosse una legge universale.",
+  "semplice": "Se un bambino cresce di 6 cm all'anno, non puoi concludere che a 40 anni sarà alto più di 3 metri: la crescita a un certo punto si ferma.",
+  "passaggi": [
+   "I dati vanno da 2 a 10 anni: la retta descrive la relazione solo lì.",
+   "40 anni è molto fuori dall'intervallo: si tratta di estrapolazione.",
+   "La crescita si ferma nell'adolescenza, quindi la retta darebbe un peso assurdo.",
+   "Il rischio è l'estrapolazione fuori dall'intervallo dei dati."
+  ],
+  "concetto": "estrapolazione"
+ },
+ {
+  "id": "STA-122",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "Si vuole misurare l'associazione tra la posizione in classifica di 10 squadre e il loro budget, sapendo che la relazione è monotona ma non lineare. Quale indice è più adatto?",
+  "opzioni": {
+   "A": "Il coefficiente di Pearson",
+   "B": "La covarianza",
+   "C": "Il coefficiente di correlazione per ranghi di Spearman",
+   "D": "Il coefficiente di variazione",
+   "E": "L'indice chi-quadrato di bontà dell'adattamento"
+  },
+  "giusta": "C",
+  "perche": "Il coefficiente di Spearman è il coefficiente di Pearson calcolato sui ranghi delle osservazioni invece che sui valori. Misura quindi l'associazione monotona, anche se non lineare, ed è adatto a dati ordinali come una posizione in classifica; è inoltre robusto rispetto ai valori anomali. La trappola è usare Pearson su dati ordinali o su relazioni chiaramente curve, dove sottostima l'associazione.",
+  "semplice": "Se la squadra più ricca è prima, la seconda più ricca è seconda e così via, Spearman vale 1, anche se le differenze di budget sono enormi e irregolari.",
+  "passaggi": [
+   "La posizione in classifica è un dato ordinale.",
+   "La relazione è monotona ma non lineare: Pearson la sottostimerebbe.",
+   "Spearman è Pearson calcolato sui ranghi: misura l'associazione monotona.",
+   "Covarianza, coefficiente di variazione e chi-quadrato di bontà non servono a questo.",
+   "L'indice adatto è il coefficiente di Spearman."
+  ],
+  "concetto": "correlazione di Spearman"
+ },
+ {
+  "id": "STA-123",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "superiori",
+  "domanda": "Quale grafico si usa per rappresentare la relazione tra due variabili quantitative misurate sugli stessi individui?",
+  "opzioni": {
+   "A": "Il diagramma di dispersione",
+   "B": "L'istogramma",
+   "C": "Il diagramma a torta",
+   "D": "Il box plot",
+   "E": "Il diagramma a barre"
+  },
+  "giusta": "A",
+  "perche": "Nel diagramma di dispersione ogni individuo è un punto con coordinate (x, y): la forma della nuvola mostra subito se la relazione è crescente, decrescente, lineare, curva o assente, e rivela eventuali valori anomali. L'istogramma e il box plot descrivono invece una sola variabile alla volta. La trappola è calcolare la correlazione senza aver mai guardato il grafico.",
+  "semplice": "Se segni per ogni compagno un punto con l'altezza in orizzontale e il numero di scarpe in verticale, vedrai una nuvola che sale: quella è una relazione positiva.",
+  "passaggi": [
+   "Si vuole vedere la relazione tra due variabili quantitative sugli stessi individui.",
+   "Ogni individuo diventa un punto (x, y).",
+   "Istogramma e box plot descrivono una variabile alla volta; torta e barre sono per categorie.",
+   "Il grafico è il diagramma di dispersione."
+  ],
+  "concetto": "diagramma di dispersione"
+ },
+ {
+  "id": "STA-124",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "In un insieme di 10 punti senza particolare relazione (r ≈ 0,1) si aggiunge un singolo punto molto lontano dagli altri in alto a destra. Cosa può succedere al coefficiente di correlazione?",
+  "opzioni": {
+   "A": "Non cambia, perché un punto su 11 è trascurabile",
+   "B": "Diventa sicuramente negativo",
+   "C": "Diventa esattamente 0",
+   "D": "Si dimezza",
+   "E": "Può aumentare molto, perché r è sensibile ai valori anomali"
+  },
+  "giusta": "E",
+  "perche": "Il coefficiente di Pearson si basa su medie e scarti, che sono molto sensibili ai valori estremi: un solo punto lontano può far apparire una forte correlazione dove non ce n'è, o nasconderne una esistente. Per questo si parla di punti influenti. La trappola è pensare che un singolo dato conti poco in mezzo a molti altri. Guardare il grafico e, se serve, usare indici robusti come Spearman aiuta a evitare conclusioni sbagliate.",
+  "semplice": "È come se in una classe tutti avessero altezze e voti mescolati a caso, ma arrivasse un gigante con 10 in tutto: da solo trascinerebbe la retta verso l'alto.",
+  "passaggi": [
+   "Pearson si basa su medie e scarti, sensibili ai valori estremi.",
+   "Un punto molto lontano in alto a destra ha scarti grandi e positivi sia in x sia in y.",
+   "Il suo prodotto degli scarti domina la somma e spinge r verso valori alti.",
+   "Un solo punto influente può far apparire una correlazione forte.",
+   "Risposta: la E."
+  ],
+  "concetto": "punti influenti"
+ },
+ {
+  "id": "STA-125",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "università",
+  "domanda": "Se si scambiano i ruoli delle variabili, regredendo x su y invece di y su x, cosa succede?",
+  "opzioni": {
+   "A": "Il coefficiente r resta lo stesso, ma la retta di regressione in generale cambia",
+   "B": "Cambiano sia r sia la retta",
+   "C": "Non cambia nulla",
+   "D": "Il coefficiente r cambia segno",
+   "E": "La nuova pendenza è sempre l'inverso della precedente"
+  },
+  "giusta": "A",
+  "perche": "La correlazione è simmetrica: r tra x e y è uguale a r tra y e x. Le rette di regressione, invece, minimizzano errori in direzioni diverse (verticali nella prima, orizzontali nella seconda), quindi coincidono solo se |r| = 1. La pendenza di x su y è r · s_x/s_y, che non è l'inverso di r · s_y/s_x a meno che r² = 1. La trappola è pensare che basti «invertire la formula» della prima retta.",
+  "semplice": "Prevedere il peso dall'altezza e prevedere l'altezza dal peso sono due domande diverse: le due rette si incrociano nel punto delle medie ma hanno pendenze diverse.",
+  "passaggi": [
+   "r è simmetrico: r(x, y) = r(y, x).",
+   "Pendenza di y su x: r · s_y/s_x; pendenza di x su y: r · s_x/s_y.",
+   "Il prodotto delle due pendenze è r²: sono una l'inversa dell'altra solo se r² = 1.",
+   "Quindi le due rette in generale non coincidono.",
+   "r resta lo stesso, ma la retta cambia."
+  ],
+  "concetto": "simmetria della correlazione"
+ },
+ {
+  "id": "STA-126",
+  "materia": "Statistica",
+  "argomento": "Regressione e correlazione",
+  "livello": "test",
+  "domanda": "Si calcola la correlazione tra altezza e peso misurando l'altezza in centimetri. Se si ripete il calcolo esprimendo l'altezza in metri, il coefficiente r:",
+  "opzioni": {
+   "A": "diventa 100 volte più piccolo",
+   "B": "resta invariato",
+   "C": "diventa 100 volte più grande",
+   "D": "cambia segno",
+   "E": "diventa 0"
+  },
+  "giusta": "B",
+  "perche": "Il coefficiente di correlazione è un numero puro: si ottiene dividendo la covarianza per il prodotto delle deviazioni standard, e così l'effetto delle unità di misura si annulla. Cambiare scala (moltiplicando per una costante positiva) o spostare l'origine non modifica r. La trappola è confonderlo con la covarianza o con la pendenza della retta, che invece dipendono dalle unità.",
+  "semplice": "Che tu misuri le altezze in centimetri, in metri o in pollici, i compagni più alti restano gli stessi e la nuvola dei punti ha la stessa forma: per questo r non cambia.",
+  "passaggi": [
+   "r = covarianza / (s_x · s_y).",
+   "Passare da cm a m divide le altezze per 100: la covarianza si divide per 100 e anche s_x.",
+   "Nel rapporto il fattore 100 si semplifica.",
+   "r è un numero puro, indipendente dalle unità.",
+   "Il coefficiente r resta invariato."
+  ],
+  "concetto": "invarianza di r"
+ }
+]

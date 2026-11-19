@@ -1,0 +1,2603 @@
+[
+ {
+  "id": "CAN-001",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "superiori",
+  "domanda": "Un gruppo di studenti misura quattro volte la stessa massa ottenendo valori molto vicini tra loro ma tutti lontani dal valore vero. Come si descrivono queste misure?",
+  "opzioni": {
+   "A": "Precise ma poco accurate",
+   "B": "Accurate e precise",
+   "C": "Accurate ma poco precise",
+   "D": "Né accurate né precise",
+   "E": "Affette solo da errore casuale"
+  },
+  "giusta": "A",
+  "perche": "La precisione indica quanto i risultati ripetuti sono vicini tra loro, l'accuratezza quanto la loro media è vicina al valore vero. Valori raggruppati ma spostati rispetto al valore vero sono precisi e poco accurati. Lo spostamento comune a tutte le misure è il segno di un errore sistematico, per esempio una bilancia non tarata. La trappola tipica è usare «preciso» e «accurato» come sinonimi, come si fa nel linguaggio di tutti i giorni.",
+  "semplice": "Immagina di tirare freccette: se tutte finiscono vicine tra loro ma in un angolo del bersaglio, sei preciso ma non accurato. Se invece sono sparse ma attorno al centro, sei accurato in media ma poco preciso.",
+  "passaggi": [
+   "Distingui i due termini: precisione = misure vicine tra loro; accuratezza = media vicina al valore vero.",
+   "Le quattro misure sono molto vicine tra loro: sono precise.",
+   "Sono tutte lontane dal valore vero: sono poco accurate.",
+   "Lo spostamento comune a tutte indica un errore sistematico, non solo casuale.",
+   "Le misure sono precise ma poco accurate."
+  ],
+  "concetto": "accuratezza e precisione"
+ },
+ {
+  "id": "CAN-002",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti è un esempio di errore sistematico?",
+  "opzioni": {
+   "A": "Piccole fluttuazioni nella lettura del menisco da una prova all'altra",
+   "B": "Una pipetta tarata male che eroga sempre 0,05 mL in meno del valore nominale",
+   "C": "Variazioni casuali della temperatura del laboratorio durante la giornata",
+   "D": "Il rumore elettronico di uno strumento",
+   "E": "Le differenze di lettura tra due operatori che stimano l'ultima cifra a caso"
+  },
+  "giusta": "B",
+  "perche": "Un errore sistematico agisce sempre nella stessa direzione e con un'entità simile: una pipetta che eroga sempre meno del dichiarato sposta tutti i risultati dallo stesso lato. Si corregge tarando lo strumento o applicando una correzione, non ripetendo le misure. Fluttuazioni, rumore e stime a caso sono invece errori casuali, che si distribuiscono sopra e sotto il valore medio. La trappola è pensare che fare più repliche elimini anche l'errore sistematico.",
+  "semplice": "Un righello a cui manca il primo centimetro dà sempre un centimetro in più: è un errore sistematico. Misurare dieci volte con lo stesso righello non lo corregge.",
+  "passaggi": [
+   "Ricorda: un errore sistematico sposta tutte le misure sempre nella stessa direzione e di una quantità simile.",
+   "Fluttuazioni del menisco, variazioni casuali di temperatura, rumore elettronico e stime a caso vanno sopra e sotto la media: sono casuali.",
+   "Una pipetta che eroga sempre 0,05 mL in meno sposta ogni risultato dallo stesso lato.",
+   "Si corregge tarando lo strumento, non ripetendo le misure.",
+   "L'errore sistematico è quello della pipetta tarata male."
+  ],
+  "concetto": "errore sistematico"
+ },
+ {
+  "id": "CAN-003",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "superiori",
+  "domanda": "Quante cifre significative ha il numero 0,004050?",
+  "opzioni": {
+   "A": "Sette",
+   "B": "Sei",
+   "C": "Quattro",
+   "D": "Tre",
+   "E": "Due"
+  },
+  "giusta": "C",
+  "perche": "Gli zeri iniziali servono solo a collocare la virgola e non sono significativi. Contano invece le cifre 4, 0, 5 e lo zero finale dopo la virgola, che indica che la misura è nota fino a quella posizione: in tutto quattro cifre. Scrivendolo in notazione scientifica, 4,050 · 10⁻³, il conteggio diventa evidente. La trappola è contare anche gli zeri iniziali oppure scartare lo zero finale.",
+  "semplice": "Scrivi il numero in notazione scientifica: 4,050 · 10⁻³. Le cifre che restano davanti alla potenza di dieci sono quelle significative: 4, 0, 5, 0.",
+  "passaggi": [
+   "Scrivi in notazione scientifica: 0,004050 = 4,050 · 10⁻³",
+   "Gli zeri iniziali non contano",
+   "Contano 4, 0 (intermedio), 5, 0 (finale dopo la virgola)",
+   "Totale: 4 cifre significative"
+  ],
+  "concetto": "cifre significative"
+ },
+ {
+  "id": "CAN-004",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "superiori",
+  "domanda": "Quattro titolazioni danno volumi di 10,12 mL, 10,15 mL, 10,09 mL e 10,16 mL. Qual è il valore medio da riportare?",
+  "opzioni": {
+   "A": "10,15 mL",
+   "B": "10,12 mL",
+   "C": "10,1 mL",
+   "D": "10,13 mL",
+   "E": "40,52 mL"
+  },
+  "giusta": "D",
+  "perche": "La media aritmetica è la somma dei valori divisa per il loro numero: 40,52 mL / 4 = 10,13 mL. Il risultato si riporta con lo stesso numero di decimali delle singole letture, cioè al centesimo di millilitro. La trappola è fermarsi alla somma o scegliere il valore centrale «a occhio» invece di calcolare.",
+  "semplice": "Sommi i quattro volumi e dividi per quattro, come per la media dei voti. 10,12 + 10,15 + 10,09 + 10,16 = 40,52; diviso 4 fa 10,13 mL.",
+  "passaggi": [
+   "Somma: 10,12 + 10,15 + 10,09 + 10,16 = 40,52 mL",
+   "Dividi per il numero di misure: 40,52 / 4 = 10,13 mL",
+   "Riporta con due decimali, come le letture della buretta"
+  ],
+  "concetto": "media aritmetica"
+ },
+ {
+  "id": "CAN-005",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "test",
+  "domanda": "Tre misure di concentrazione valgono 2,50, 2,54 e 2,46 mg/L. Quanto vale la deviazione standard campionaria?",
+  "opzioni": {
+   "A": "0,08 mg/L",
+   "B": "0,0016 mg/L",
+   "C": "0,033 mg/L",
+   "D": "0,020 mg/L",
+   "E": "0,040 mg/L"
+  },
+  "giusta": "E",
+  "perche": "La deviazione standard campionaria è s = √[Σ(xᵢ − x̄)² / (n − 1)]. La media è 2,50; gli scarti sono 0, +0,04 e −0,04; la somma dei quadrati vale 0,0032 e va divisa per n − 1 = 2, dando 0,0016, la cui radice è 0,040 mg/L. La trappola tipica è fermarsi alla varianza (0,0016) o dividere per n invece che per n − 1, ottenendo circa 0,033.",
+  "semplice": "La deviazione standard dice di quanto, in media, le misure si allontanano dalla loro media. Qui due misure sono 0,04 sopra e sotto e una è esattamente sulla media: s viene 0,040 mg/L.",
+  "passaggi": [
+   "Media: (2,50 + 2,54 + 2,46) / 3 = 2,50 mg/L",
+   "Scarti: 0; +0,04; −0,04",
+   "Somma dei quadrati: 0 + 0,0016 + 0,0016 = 0,0032",
+   "Dividi per n − 1 = 2: 0,0016",
+   "Radice quadrata: s = 0,040 mg/L"
+  ],
+  "concetto": "deviazione standard"
+ },
+ {
+  "id": "CAN-006",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "test",
+  "domanda": "Per una serie di misure la media è 2,50 mg/L e la deviazione standard 0,040 mg/L. Quanto vale il coefficiente di variazione (deviazione standard relativa percentuale)?",
+  "opzioni": {
+   "A": "1,6%",
+   "B": "0,016%",
+   "C": "16%",
+   "D": "62,5%",
+   "E": "0,040%"
+  },
+  "giusta": "A",
+  "perche": "Il coefficiente di variazione è CV% = s / x̄ · 100 = 0,040 / 2,50 · 100 = 1,6%. Serve a confrontare la precisione di serie con valori di grandezza diversa, perché è un numero puro. La trappola è dividere al contrario (media su deviazione) oppure dimenticare di moltiplicare per cento.",
+  "semplice": "Il CV dice quanto è grande l'incertezza rispetto al valore misurato. Un errore di 0,04 su 2,50 è l'1,6%: una precisione buona per un'analisi di routine.",
+  "passaggi": [
+   "CV% = s / x̄ · 100",
+   "0,040 / 2,50 = 0,016",
+   "0,016 · 100 = 1,6%"
+  ],
+  "concetto": "coefficiente di variazione"
+ },
+ {
+  "id": "CAN-007",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "superiori",
+  "domanda": "Un campione certificato contiene 50,0 mg di analita; l'analisi ne trova 49,5 mg. Qual è l'errore relativo percentuale?",
+  "opzioni": {
+   "A": "+1,0%",
+   "B": "−1,0%",
+   "C": "−0,5%",
+   "D": "−0,99%",
+   "E": "+0,5%"
+  },
+  "giusta": "B",
+  "perche": "L'errore assoluto è il valore misurato meno il valore vero: 49,5 − 50,0 = −0,5 mg. L'errore relativo si ottiene dividendo per il valore vero: −0,5 / 50,0 · 100 = −1,0%. Il segno negativo indica che il risultato è per difetto. Le trappole tipiche sono dimenticare il segno, riportare l'errore assoluto come percentuale o dividere per il valore misurato invece che per quello vero.",
+  "semplice": "Hai trovato mezzo milligrammo in meno su cinquanta: è l'1% in meno. Il meno davanti ricorda che hai sottostimato.",
+  "passaggi": [
+   "Errore assoluto: 49,5 − 50,0 = −0,5 mg",
+   "Errore relativo: −0,5 / 50,0 = −0,010",
+   "In percentuale: −1,0%"
+  ],
+  "concetto": "errore relativo"
+ },
+ {
+  "id": "CAN-008",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "università",
+  "domanda": "Cinque repliche danno 20,15; 20,18; 20,21; 20,24; 20,55. Con il test Q di Dixon (Q critico al 95% per n = 5 uguale a 0,710), che cosa si conclude sul valore 20,55?",
+  "opzioni": {
+   "A": "Q = 0,775: il valore va mantenuto perché Q supera il critico",
+   "B": "Q = 0,225: il valore va mantenuto",
+   "C": "Q = 0,775: il valore si può scartare",
+   "D": "Q = 0,31: il valore va mantenuto",
+   "E": "Il test Q non si applica a cinque valori"
+  },
+  "giusta": "C",
+  "perche": "Q è il rapporto tra la distanza del valore sospetto dal più vicino e l'intervallo totale: (20,55 − 20,24) / (20,55 − 20,15) = 0,31 / 0,40 = 0,775. Poiché 0,775 supera il valore critico 0,710, il dato può essere considerato anomalo e scartato al livello di confidenza del 95%. La trappola è invertire la regola di decisione: si scarta quando Q calcolato è maggiore di Q critico. Un'altra trappola è usare come denominatore la distanza dalla media invece dell'intervallo totale.",
+  "semplice": "Il test Q misura quanto il dato sospetto è «staccato» dagli altri rispetto alla larghezza di tutto il gruppo. Qui il salto (0,31) è quasi tutto l'intervallo (0,40): il dato è troppo isolato e si può eliminare.",
+  "passaggi": [
+   "Ordina i dati e individua il sospetto: 20,55",
+   "Gap: 20,55 − 20,24 = 0,31",
+   "Intervallo: 20,55 − 20,15 = 0,40",
+   "Q = 0,31 / 0,40 = 0,775",
+   "0,775 > 0,710: il dato si scarta"
+  ],
+  "concetto": "test Q di Dixon"
+ },
+ {
+  "id": "CAN-009",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "università",
+  "domanda": "Cinque repliche hanno media 5,10 mg/L e deviazione standard 0,038 mg/L. Con t = 2,776 (95%, 4 gradi di libertà), qual è l'intervallo di confidenza della media?",
+  "opzioni": {
+   "A": "5,10 ± 0,038 mg/L",
+   "B": "5,10 ± 0,105 mg/L",
+   "C": "5,10 ± 0,021 mg/L",
+   "D": "5,10 ± 0,047 mg/L",
+   "E": "5,10 ± 0,017 mg/L"
+  },
+  "giusta": "D",
+  "perche": "L'intervallo di confidenza della media è x̄ ± t · s / √n = 5,10 ± 2,776 · 0,038 / √5 = 5,10 ± 0,047 mg/L. Il fattore √n riflette il fatto che la media è più affidabile della singola misura. La trappola tipica è dimenticare la divisione per √n, ottenendo ±0,105, oppure omettere il t di Student.",
+  "semplice": "Con cinque misure non conosci esattamente la media vera, ma puoi dire in quale fascia si trova con il 95% di fiducia. Più misure fai, più la fascia si stringe, perché dividi per la radice di n.",
+  "passaggi": [
+   "Formula: x̄ ± t · s / √n",
+   "√5 = 2,236",
+   "2,776 · 0,038 = 0,1055",
+   "0,1055 / 2,236 = 0,047",
+   "Intervallo: 5,10 ± 0,047 mg/L"
+  ],
+  "concetto": "intervallo di confidenza"
+ },
+ {
+  "id": "CAN-010",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "test",
+  "domanda": "Una retta di taratura ha equazione A = 0,0750 · C + 0,010 (C in mg/L). Un campione dà A = 0,385. Qual è la concentrazione?",
+  "opzioni": {
+   "A": "5,13 mg/L",
+   "B": "0,0289 mg/L",
+   "C": "4,87 mg/L",
+   "D": "0,385 mg/L",
+   "E": "5,00 mg/L"
+  },
+  "giusta": "E",
+  "perche": "Dalla retta si ricava C = (A − intercetta) / pendenza = (0,385 − 0,010) / 0,0750 = 5,00 mg/L. L'intercetta rappresenta il segnale del bianco e va sottratta prima di dividere. La trappola è dividere direttamente l'assorbanza per la pendenza, ottenendo 5,13, oppure sommare l'intercetta invece di sottrarla.",
+  "semplice": "La retta di taratura è come un righello che trasforma il segnale in concentrazione. Togli prima la «base» del segnale (0,010), poi dividi per quanto cresce il segnale per ogni mg/L.",
+  "passaggi": [
+   "C = (A − q) / m",
+   "0,385 − 0,010 = 0,375",
+   "0,375 / 0,0750 = 5,00 mg/L"
+  ],
+  "concetto": "retta di taratura"
+ },
+ {
+  "id": "CAN-011",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "università",
+  "domanda": "La deviazione standard del bianco è 0,002 unità di assorbanza e la sensibilità del metodo (pendenza della taratura) è 0,0450 L/mg. Usando il criterio 3s, qual è il limite di rivelabilità?",
+  "opzioni": {
+   "A": "0,13 mg/L",
+   "B": "0,044 mg/L",
+   "C": "0,0060 mg/L",
+   "D": "0,44 mg/L",
+   "E": "0,27 mg/L"
+  },
+  "giusta": "A",
+  "perche": "Il limite di rivelabilità (LOD) è la concentrazione che produce un segnale pari a tre volte la deviazione standard del bianco: LOD = 3s / m = 3 · 0,002 / 0,0450 = 0,13 mg/L. La divisione per la pendenza trasforma un segnale in una concentrazione. La trappola tipica è fermarsi a 3s (0,006, che è un'assorbanza) oppure confondere il LOD con il limite di quantificazione, che si calcola con 10s.",
+  "semplice": "Sotto una certa concentrazione il segnale del campione si confonde con il rumore del bianco. Il LOD è la soglia in cui il segnale supera di tre volte quel rumore.",
+  "passaggi": [
+   "LOD = 3 · s_bianco / m",
+   "3 · 0,002 = 0,006",
+   "0,006 / 0,0450 = 0,133 mg/L ≈ 0,13 mg/L"
+  ],
+  "concetto": "limite di rivelabilità"
+ },
+ {
+  "id": "CAN-012",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "università",
+  "domanda": "Un volume si ottiene come differenza di due letture di buretta, ciascuna con deviazione standard 0,02 mL e 0,03 mL. Qual è la deviazione standard del volume erogato?",
+  "opzioni": {
+   "A": "0,05 mL",
+   "B": "0,036 mL",
+   "C": "0,025 mL",
+   "D": "0,0013 mL",
+   "E": "0,01 mL"
+  },
+  "giusta": "B",
+  "perche": "Per somme e differenze si sommano in quadratura le deviazioni standard assolute: s = √(0,02² + 0,03²) = √0,0013 = 0,036 mL. Gli errori casuali possono compensarsi in parte, quindi non si sommano semplicemente. La trappola è sommare (0,05) o sottrarre (0,01) le incertezze, oppure riportare la varianza invece della sua radice.",
+  "semplice": "Due piccole incertezze indipendenti non si sommano per intero, perché a volte una va in su e l'altra in giù. Si fa come con il teorema di Pitagora: radice della somma dei quadrati.",
+  "passaggi": [
+   "s = √(s₁² + s₂²)",
+   "0,02² + 0,03² = 0,0004 + 0,0009 = 0,0013",
+   "√0,0013 = 0,036 mL"
+  ],
+  "concetto": "propagazione degli errori"
+ },
+ {
+  "id": "CAN-013",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "università",
+  "domanda": "Una concentrazione si calcola come C = m / V con m = 50,0 ± 0,2 mg e V = 2,00 ± 0,01 L. Qual è l'incertezza relativa percentuale su C?",
+  "opzioni": {
+   "A": "0,90%",
+   "B": "0,40%",
+   "C": "0,64%",
+   "D": "0,50%",
+   "E": "0,10%"
+  },
+  "giusta": "C",
+  "perche": "Per prodotti e quozienti si combinano in quadratura le incertezze relative: 0,2/50,0 = 0,40% e 0,01/2,00 = 0,50%, quindi √(0,40² + 0,50²) = 0,64%. La trappola è sommare le incertezze relative (0,90%), che sovrastima l'errore, oppure combinare le incertezze assolute di grandezze con unità diverse.",
+  "semplice": "Quando dividi due misure incerte, conta quanto è grande ciascun errore in percentuale. Le due percentuali si combinano con la radice della somma dei quadrati.",
+  "passaggi": [
+   "Incertezza relativa di m: 0,2 / 50,0 = 0,40%",
+   "Incertezza relativa di V: 0,01 / 2,00 = 0,50%",
+   "Combinazione: √(0,40² + 0,50²) = √0,41",
+   "Risultato: 0,64%"
+  ],
+  "concetto": "incertezza relativa"
+ },
+ {
+  "id": "CAN-014",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "superiori",
+  "domanda": "Quale risultato del prodotto 2,345 × 1,2 è scritto con il corretto numero di cifre significative?",
+  "opzioni": {
+   "A": "2,814",
+   "B": "2,81",
+   "C": "3",
+   "D": "2,8",
+   "E": "2,8140"
+  },
+  "giusta": "D",
+  "perche": "Nelle moltiplicazioni e divisioni il risultato deve avere tante cifre significative quante ne ha il fattore meno preciso. Il numero 1,2 ne ha due, quindi 2,814 si arrotonda a 2,8. La trappola è usare la regola delle somme, che guarda ai decimali, oppure lasciare tutte le cifre che dà la calcolatrice.",
+  "semplice": "Una catena è forte quanto il suo anello più debole: se un dato ha solo due cifre sicure, anche il risultato ne avrà due.",
+  "passaggi": [
+   "Prodotto: 2,345 × 1,2 = 2,814",
+   "Fattore meno preciso: 1,2 (2 cifre significative)",
+   "Arrotonda a 2 cifre: 2,8"
+  ],
+  "concetto": "arrotondamento"
+ },
+ {
+  "id": "CAN-015",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "superiori",
+  "domanda": "Qual è l'effetto principale dell'aumento del numero di repliche di una misura?",
+  "opzioni": {
+   "A": "Elimina gli errori sistematici",
+   "B": "Rende inutile il bianco",
+   "C": "Aumenta l'accuratezza di uno strumento non tarato",
+   "D": "Aumenta la deviazione standard delle singole misure",
+   "E": "Rende la media meno influenzata dagli errori casuali"
+  },
+  "giusta": "E",
+  "perche": "Gli errori casuali si distribuiscono sopra e sotto il valore medio, per cui facendo più repliche tendono a compensarsi e la media diventa più affidabile: l'incertezza della media diminuisce come s/√n. Gli errori sistematici invece spostano tutte le misure dalla stessa parte e non si riducono ripetendo. La trappola tipica è credere che tante repliche rendano corretto anche un metodo con uno strumento starato.",
+  "semplice": "Se lanci una moneta 4 volte puoi ottenere 3 teste, ma su 1000 lanci la percentuale si avvicina al 50%. Allo stesso modo la media di molte misure risente meno delle oscillazioni casuali.",
+  "passaggi": [
+   "Gli errori casuali cadono sopra e sotto il valore medio e, sommandosi, tendono a compensarsi.",
+   "L'incertezza della media diminuisce come s/√n: più repliche, media più affidabile.",
+   "Gli errori sistematici spostano tutte le misure dallo stesso lato e non si riducono ripetendo.",
+   "Ripetere non cambia la deviazione standard delle singole misure né rende inutile il bianco.",
+   "Effetto principale: la media è meno influenzata dagli errori casuali."
+  ],
+  "concetto": "errori casuali e repliche"
+ },
+ {
+  "id": "CAN-016",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "università",
+  "domanda": "Un materiale di riferimento certificato contiene 10,00% di analita. Quattro analisi danno media 10,08% con s = 0,05%. Calcolato t, e sapendo che t critico (95%, 3 gradi di libertà) vale 3,18, che cosa si conclude?",
+  "opzioni": {
+   "A": "t = 3,2: la differenza è significativa, c'è un probabile errore sistematico",
+   "B": "t = 0,8: il metodo è accurato",
+   "C": "t = 1,6: nessuna differenza significativa",
+   "D": "t = 3,2: la differenza è dovuta solo al caso",
+   "E": "t = 6,4: il test non è applicabile"
+  },
+  "giusta": "A",
+  "perche": "Il test t per il confronto con un valore noto usa t = |x̄ − μ| · √n / s = 0,08 · 2 / 0,05 = 3,2. Poiché 3,2 supera 3,18, la differenza tra media e valore certificato è statisticamente significativa al 95%: il metodo mostra un probabile errore sistematico. La trappola è dimenticare √n, ottenendo 1,6, oppure considerare non significativa ogni differenza «piccola» in valore assoluto.",
+  "semplice": "Il test t chiede: la distanza tra la mia media e il valore vero è più grande di quanto il caso possa spiegare? Qui di poco, ma sì: c'è probabilmente qualcosa che sposta i risultati verso l'alto.",
+  "passaggi": [
+   "t = |x̄ − μ| · √n / s",
+   "|10,08 − 10,00| = 0,08",
+   "√4 = 2; 0,08 · 2 = 0,16",
+   "0,16 / 0,05 = 3,2",
+   "3,2 > 3,18: differenza significativa"
+  ],
+  "concetto": "test t di Student"
+ },
+ {
+  "id": "CAN-017",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "università",
+  "domanda": "Due metodi hanno deviazioni standard 0,12 e 0,08 (stesso numero di repliche). Quale test statistico si usa per stabilire se le precisioni differiscono significativamente, e quanto vale la statistica?",
+  "opzioni": {
+   "A": "Test t, con t = 1,5",
+   "B": "Test F, con F = 2,25",
+   "C": "Test F, con F = 1,5",
+   "D": "Test Q, con Q = 0,67",
+   "E": "Test di Grubbs, con G = 2,25"
+  },
+  "giusta": "B",
+  "perche": "Il confronto tra due precisioni si fa con il test F di Fisher, che è il rapporto tra le varianze, mettendo la maggiore al numeratore: F = 0,12² / 0,08² = 0,0144 / 0,0064 = 2,25. Il valore si confronta poi con F critico tabulato per i gradi di libertà. La trappola è fare il rapporto tra le deviazioni standard (1,5) invece che tra le varianze, oppure usare il test t, che confronta medie e non dispersioni.",
+  "semplice": "Per capire se un metodo è davvero più «costante» dell'altro si confrontano i quadrati delle loro dispersioni. Se il rapporto supera il valore della tabella, la differenza di precisione è reale.",
+  "passaggi": [
+   "Varianze: 0,12² = 0,0144; 0,08² = 0,0064",
+   "F = varianza maggiore / varianza minore",
+   "F = 0,0144 / 0,0064 = 2,25",
+   "Confronta con F critico tabulato"
+  ],
+  "concetto": "test F"
+ },
+ {
+  "id": "CAN-018",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Errori di misura e trattamento dei dati",
+  "livello": "test",
+  "domanda": "Un campione contiene 5,0 mg/L di analita. Si aggiungono 10,0 mg/L di standard (spike) e si misurano 14,6 mg/L. Qual è il recupero percentuale?",
+  "opzioni": {
+   "A": "146%",
+   "B": "104%",
+   "C": "96%",
+   "D": "97,3%",
+   "E": "68%"
+  },
+  "giusta": "C",
+  "perche": "Il recupero confronta la quantità ritrovata dell'aggiunta con quella effettivamente aggiunta: (14,6 − 5,0) / 10,0 · 100 = 96%. Bisogna sottrarre il contenuto originale del campione prima di dividere. La trappola è dividere il totale misurato per il totale atteso (14,6/15,0 = 97,3%) o dimenticare la sottrazione.",
+  "semplice": "Hai messo 10 mg/L in più e ne ritrovi 9,6 in più: il metodo «recupera» il 96% di ciò che hai aggiunto. Un recupero vicino al 100% indica che la matrice non disturba molto.",
+  "passaggi": [
+   "Quantità ritrovata dell'aggiunta: 14,6 − 5,0 = 9,6 mg/L",
+   "Recupero = 9,6 / 10,0 · 100",
+   "Recupero = 96%"
+  ],
+  "concetto": "recupero percentuale"
+ },
+ {
+  "id": "CAN-019",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "superiori",
+  "domanda": "Qual è il pH di una soluzione di HCl 0,010 mol/L a 25 °C?",
+  "opzioni": {
+   "A": "12,00",
+   "B": "1,00",
+   "C": "0,010",
+   "D": "2,00",
+   "E": "7,00"
+  },
+  "giusta": "D",
+  "perche": "HCl è un acido forte e si dissocia completamente, quindi [H₃O⁺] = 0,010 mol/L = 10⁻² mol/L. Il pH è −log[H₃O⁺] = 2,00. La trappola è confondere la concentrazione con il pH stesso o calcolare il pOH invece del pH.",
+  "semplice": "Per un acido forte basta guardare l'esponente: 0,010 = 10⁻², quindi pH 2. Un succo di limone ha un pH simile.",
+  "passaggi": [
+   "HCl acido forte: [H₃O⁺] = 0,010 mol/L",
+   "pH = −log(0,010)",
+   "pH = 2,00"
+  ],
+  "concetto": "pH di acido forte"
+ },
+ {
+  "id": "CAN-020",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "superiori",
+  "domanda": "Qual è il pH di una soluzione di NaOH 0,0050 mol/L a 25 °C?",
+  "opzioni": {
+   "A": "2,30",
+   "B": "11,00",
+   "C": "9,70",
+   "D": "12,30",
+   "E": "11,70"
+  },
+  "giusta": "E",
+  "perche": "NaOH è una base forte: [OH⁻] = 0,0050 mol/L, quindi pOH = −log(0,0050) = 2,30. A 25 °C pH + pOH = 14,00, per cui pH = 11,70. La trappola tipica è fermarsi al pOH (2,30) e scambiarlo per il pH, cosa che darebbe una soluzione acida a partire da una base.",
+  "semplice": "Con le basi calcoli prima il pOH, poi lo sottrai da 14. Una base deve sempre dare pH sopra 7: se ti viene 2,30 hai dimenticato un passaggio.",
+  "passaggi": [
+   "[OH⁻] = 0,0050 mol/L",
+   "pOH = −log(0,0050) = 2,30",
+   "pH = 14,00 − 2,30 = 11,70"
+  ],
+  "concetto": "pH di base forte"
+ },
+ {
+  "id": "CAN-021",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "test",
+  "domanda": "Qual è il pH approssimato di una soluzione di acido acetico 0,10 mol/L (Ka = 1,8 · 10⁻⁵)?",
+  "opzioni": {
+   "A": "2,87",
+   "B": "4,74",
+   "C": "5,74",
+   "D": "1,00",
+   "E": "3,87"
+  },
+  "giusta": "A",
+  "perche": "Per un acido debole poco dissociato si usa [H₃O⁺] ≈ √(Ka · C) = √(1,8 · 10⁻⁶) = 1,34 · 10⁻³ mol/L, da cui pH ≈ 2,87. L'approssimazione è valida perché la frazione dissociata è circa l'1%. La trappola è trattarlo come acido forte (pH 1) oppure confondere il pH con il pKa (4,74), che vale solo in un tampone con acido e base coniugata in uguale quantità.",
+  "semplice": "L'aceto contiene acido acetico, che rilascia pochi H⁺: per questo, a parità di concentrazione, è molto meno acido dell'acido cloridrico. Il pH si stima con la radice di Ka per C.",
+  "passaggi": [
+   "[H₃O⁺] ≈ √(Ka · C)",
+   "Ka · C = 1,8 · 10⁻⁵ · 0,10 = 1,8 · 10⁻⁶",
+   "√(1,8 · 10⁻⁶) = 1,34 · 10⁻³ mol/L",
+   "pH = −log(1,34 · 10⁻³) = 2,87"
+  ],
+  "concetto": "pH di acido debole"
+ },
+ {
+  "id": "CAN-022",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "test",
+  "domanda": "Qual è il pH approssimato di una soluzione di ammoniaca 0,10 mol/L (Kb = 1,8 · 10⁻⁵)?",
+  "opzioni": {
+   "A": "2,87",
+   "B": "11,13",
+   "C": "13,00",
+   "D": "9,26",
+   "E": "10,13"
+  },
+  "giusta": "B",
+  "perche": "Per una base debole [OH⁻] ≈ √(Kb · C) = 1,34 · 10⁻³ mol/L, quindi pOH = 2,87 e pH = 14,00 − 2,87 = 11,13. La trappola è fermarsi al pOH oppure usare il pKa dello ione ammonio (9,26), che darebbe il pH di un tampone NH₃/NH₄⁺ equimolare, non della sola ammoniaca.",
+  "semplice": "L'ammoniaca dei detersivi è una base debole: libera pochi OH⁻, ma abbastanza da portare il pH intorno a 11. Si calcola come per un acido debole, poi si passa dal pOH al pH.",
+  "passaggi": [
+   "[OH⁻] ≈ √(Kb · C) = √(1,8 · 10⁻⁶) = 1,34 · 10⁻³ mol/L",
+   "pOH = 2,87",
+   "pH = 14,00 − 2,87 = 11,13"
+  ],
+  "concetto": "pH di base debole"
+ },
+ {
+  "id": "CAN-023",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "test",
+  "domanda": "Un tampone contiene acido acetico 0,10 mol/L e acetato di sodio 0,20 mol/L (pKa = 4,74). Qual è il pH?",
+  "opzioni": {
+   "A": "4,44",
+   "B": "4,74",
+   "C": "5,04",
+   "D": "2,87",
+   "E": "9,26"
+  },
+  "giusta": "C",
+  "perche": "Con l'equazione di Henderson-Hasselbalch pH = pKa + log([A⁻]/[HA]) = 4,74 + log(0,20/0,10) = 4,74 + 0,30 = 5,04. Più base coniugata che acido porta il pH sopra il pKa. La trappola è invertire il rapporto (ottenendo 4,44) o dimenticare il logaritmo.",
+  "semplice": "Un tampone ha un pH vicino al pKa dell'acido. Se c'è il doppio di forma basica, il pH sale di 0,30 unità: log 2 = 0,30.",
+  "passaggi": [
+   "pH = pKa + log([A⁻]/[HA])",
+   "[A⁻]/[HA] = 0,20 / 0,10 = 2",
+   "log 2 = 0,30",
+   "pH = 4,74 + 0,30 = 5,04"
+  ],
+  "concetto": "Henderson-Hasselbalch"
+ },
+ {
+  "id": "CAN-024",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "università",
+  "domanda": "Qual è il pH di una soluzione di acetato di sodio 0,10 mol/L (Ka dell'acido acetico = 1,8 · 10⁻⁵)?",
+  "opzioni": {
+   "A": "7,00",
+   "B": "11,13",
+   "C": "5,13",
+   "D": "8,87",
+   "E": "9,26"
+  },
+  "giusta": "D",
+  "perche": "L'acetato è la base coniugata di un acido debole e idrolizza: Kb = Kw/Ka = 5,6 · 10⁻¹⁰. Quindi [OH⁻] ≈ √(Kb · C) = 7,5 · 10⁻⁶ mol/L, pOH = 5,13 e pH = 8,87. La trappola è pensare che ogni sale dia una soluzione neutra, oppure usare la Kb dell'ammoniaca invece di calcolarla da Ka.",
+  "semplice": "Un sale di acido debole e base forte dà soluzioni leggermente basiche: lo ione acetato «ruba» un po' di H⁺ all'acqua. Per questo una soluzione di acetato ha pH vicino a 9.",
+  "passaggi": [
+   "Kb = Kw / Ka = 10⁻¹⁴ / 1,8 · 10⁻⁵ = 5,6 · 10⁻¹⁰",
+   "[OH⁻] ≈ √(5,6 · 10⁻¹⁰ · 0,10) = 7,5 · 10⁻⁶ mol/L",
+   "pOH = 5,13",
+   "pH = 14,00 − 5,13 = 8,87"
+  ],
+  "concetto": "idrolisi salina"
+ },
+ {
+  "id": "CAN-025",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "superiori",
+  "domanda": "La Ks del cloruro d'argento è 1,8 · 10⁻¹⁰. Qual è la sua solubilità molare in acqua pura?",
+  "opzioni": {
+   "A": "1,8 · 10⁻¹⁰ mol/L",
+   "B": "9,0 · 10⁻¹¹ mol/L",
+   "C": "6,5 · 10⁻⁵ mol/L",
+   "D": "3,6 · 10⁻¹⁰ mol/L",
+   "E": "1,3 · 10⁻⁵ mol/L"
+  },
+  "giusta": "E",
+  "perche": "Per AgCl ⇌ Ag⁺ + Cl⁻ si ha Ks = s · s = s², quindi s = √Ks = √(1,8 · 10⁻¹⁰) = 1,3 · 10⁻⁵ mol/L. La trappola è prendere la Ks come se fosse già la solubilità, oppure dividerla per due.",
+  "semplice": "Per un sale che si scioglie in due ioni uno a uno, la solubilità è la radice quadrata della Ks. AgCl si scioglie pochissimo: circa un centomillesimo di mole per litro.",
+  "passaggi": [
+   "AgCl ⇌ Ag⁺ + Cl⁻: [Ag⁺] = [Cl⁻] = s",
+   "Ks = s²",
+   "s = √(1,8 · 10⁻¹⁰) = 1,3 · 10⁻⁵ mol/L"
+  ],
+  "concetto": "prodotto di solubilità"
+ },
+ {
+  "id": "CAN-026",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "test",
+  "domanda": "Qual è la solubilità di AgCl (Ks = 1,8 · 10⁻¹⁰) in una soluzione di NaCl 0,010 mol/L?",
+  "opzioni": {
+   "A": "1,8 · 10⁻⁸ mol/L",
+   "B": "1,8 · 10⁻¹² mol/L",
+   "C": "1,8 · 10⁻¹⁰ mol/L",
+   "D": "1,3 · 10⁻⁵ mol/L",
+   "E": "1,3 · 10⁻⁴ mol/L"
+  },
+  "giusta": "A",
+  "perche": "Lo ione cloruro già presente sposta l'equilibrio verso il solido (effetto dello ione comune). Con [Cl⁻] ≈ 0,010 mol/L si ha s = Ks/[Cl⁻] = 1,8 · 10⁻⁸ mol/L, circa mille volte meno che in acqua pura. La trappola è usare ancora s = √Ks, ignorando il cloruro aggiunto.",
+  "semplice": "Se nell'acqua c'è già molto cloruro, il cloruro d'argento fa ancora più fatica a sciogliersi. È il principio usato per far precipitare completamente un sale aggiungendo un eccesso di reattivo.",
+  "passaggi": [
+   "[Cl⁻] ≈ 0,010 mol/L (dal NaCl)",
+   "Ks = [Ag⁺][Cl⁻] = s · 0,010",
+   "s = 1,8 · 10⁻¹⁰ / 0,010 = 1,8 · 10⁻⁸ mol/L"
+  ],
+  "concetto": "effetto dello ione comune"
+ },
+ {
+  "id": "CAN-027",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "università",
+  "domanda": "Qual è la solubilità molare del cromato d'argento Ag₂CrO₄ (Ks = 1,1 · 10⁻¹²)?",
+  "opzioni": {
+   "A": "1,0 · 10⁻⁶ mol/L",
+   "B": "6,5 · 10⁻⁵ mol/L",
+   "C": "5,2 · 10⁻⁷ mol/L",
+   "D": "1,0 · 10⁻⁴ mol/L",
+   "E": "2,8 · 10⁻¹³ mol/L"
+  },
+  "giusta": "B",
+  "perche": "Da Ag₂CrO₄ ⇌ 2Ag⁺ + CrO₄²⁻ si ha [Ag⁺] = 2s e [CrO₄²⁻] = s, quindi Ks = (2s)² · s = 4s³. Ne segue s = ∛(Ks/4) = ∛(2,75 · 10⁻¹³) = 6,5 · 10⁻⁵ mol/L. La trappola è usare √Ks come per un sale 1:1, che dà circa 1,0 · 10⁻⁶. Interessante notare che, pur avendo Ks più piccola, il cromato d'argento è più solubile di AgCl: le Ks si confrontano direttamente solo tra sali con la stessa stechiometria.",
+  "semplice": "Quando un sale libera più ioni dello stesso tipo, nella Ks compaiono potenze. Qui due argenti e un cromato danno 4s³: si risolve con la radice cubica.",
+  "passaggi": [
+   "Ag₂CrO₄ ⇌ 2Ag⁺ + CrO₄²⁻",
+   "Ks = (2s)² · s = 4s³",
+   "s³ = 1,1 · 10⁻¹² / 4 = 2,75 · 10⁻¹³",
+   "s = ∛(2,75 · 10⁻¹³) = 6,5 · 10⁻⁵ mol/L"
+  ],
+  "concetto": "solubilità e stechiometria"
+ },
+ {
+  "id": "CAN-028",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "università",
+  "domanda": "In una soluzione [Pb²⁺] = 1,0 · 10⁻³ mol/L e [I⁻] = 2,0 · 10⁻³ mol/L. Sapendo che Ks(PbI₂) = 9,8 · 10⁻⁹, che cosa accade?",
+  "opzioni": {
+   "A": "Precipita PbI₂ perché Q = 2,0 · 10⁻⁶ supera Ks",
+   "B": "Precipita PbI₂ perché Q = 4,0 · 10⁻⁹ supera Ks",
+   "C": "Non precipita: Q = 4,0 · 10⁻⁹ è minore di Ks",
+   "D": "Il sistema è esattamente all'equilibrio di saturazione",
+   "E": "Non si può dire senza conoscere il volume"
+  },
+  "giusta": "C",
+  "perche": "Il quoziente di reazione ionico è Q = [Pb²⁺][I⁻]² = 1,0 · 10⁻³ · (2,0 · 10⁻³)² = 4,0 · 10⁻⁹. Poiché Q è minore di Ks, la soluzione non è satura e non si forma precipitato. La trappola tipica è dimenticare l'esponente 2 dello ioduro, ottenendo Q = 2,0 · 10⁻⁶ e concludendo erroneamente che precipita.",
+  "semplice": "Per sapere se un sale precipita si calcola Q con le concentrazioni presenti e lo si confronta con Ks. Se Q è più piccolo, c'è ancora «posto» in soluzione per altri ioni.",
+  "passaggi": [
+   "Q = [Pb²⁺][I⁻]²",
+   "(2,0 · 10⁻³)² = 4,0 · 10⁻⁶",
+   "Q = 1,0 · 10⁻³ · 4,0 · 10⁻⁶ = 4,0 · 10⁻⁹",
+   "Q < Ks (9,8 · 10⁻⁹): nessun precipitato"
+  ],
+  "concetto": "previsione di precipitazione"
+ },
+ {
+  "id": "CAN-029",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "superiori",
+  "domanda": "In una soluzione acquosa a 25 °C il pOH vale 4,5. Quanto vale il pH?",
+  "opzioni": {
+   "A": "4,5",
+   "B": "10,5",
+   "C": "18,5",
+   "D": "9,5",
+   "E": "3,5"
+  },
+  "giusta": "D",
+  "perche": "A 25 °C il prodotto ionico dell'acqua è Kw = 1,0 · 10⁻¹⁴, da cui pH + pOH = 14. Quindi pH = 14 − 4,5 = 9,5: la soluzione è basica. La trappola è sommare invece di sottrarre o pensare che pH e pOH coincidano.",
+  "semplice": "pH e pOH sono come due pezzi che insieme fanno sempre 14 a temperatura ambiente. Se uno è 4,5 l'altro è 9,5.",
+  "passaggi": [
+   "pH + pOH = 14,00",
+   "pH = 14,00 − 4,5 = 9,5"
+  ],
+  "concetto": "prodotto ionico dell'acqua"
+ },
+ {
+  "id": "CAN-030",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "superiori",
+  "domanda": "In una soluzione satura di CaF₂ in equilibrio con il solido si aggiunge del fluoruro di sodio. Che cosa succede?",
+  "opzioni": {
+   "A": "Altro CaF₂ si scioglie",
+   "B": "La Ks di CaF₂ aumenta",
+   "C": "La Ks di CaF₂ diminuisce",
+   "D": "Non succede nulla perché NaF è un sale diverso",
+   "E": "Precipita altro CaF₂ e [Ca²⁺] diminuisce"
+  },
+  "giusta": "E",
+  "perche": "L'aggiunta di F⁻, ione comune all'equilibrio CaF₂ ⇌ Ca²⁺ + 2F⁻, sposta l'equilibrio verso sinistra secondo il principio di Le Châtelier. Una parte del calcio precipita come CaF₂ e la sua concentrazione in soluzione cala. La Ks invece non cambia, perché dipende solo dalla temperatura. La trappola è pensare che aggiungere un sale cambi il valore della costante.",
+  "semplice": "Se aggiungi uno degli ioni del sale, il sistema reagisce togliendone un po' di entrambi: si forma altro solido. La costante resta la stessa, cambiano le concentrazioni.",
+  "passaggi": [
+   "Scrivi l'equilibrio: CaF₂(s) ⇌ Ca²⁺ + 2F⁻.",
+   "NaF porta in soluzione F⁻, lo ione comune.",
+   "Per il principio di Le Châtelier l'equilibrio si sposta a sinistra: precipita altro CaF₂.",
+   "Ks dipende solo dalla temperatura e non cambia; con [F⁻] più alta, [Ca²⁺] deve diminuire.",
+   "Risposta: precipita altro CaF₂ e [Ca²⁺] diminuisce."
+  ],
+  "concetto": "principio di Le Châtelier"
+ },
+ {
+  "id": "CAN-031",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "superiori",
+  "domanda": "Con quale rapporto stechiometrico l'EDTA si lega alla maggior parte degli ioni metallici?",
+  "opzioni": {
+   "A": "1:1",
+   "B": "2:1",
+   "C": "1:2",
+   "D": "1:3",
+   "E": "Dipende dalla carica dello ione, uguale a 1:carica"
+  },
+  "giusta": "A",
+  "perche": "L'EDTA è un legante esadentato che avvolge lo ione metallico con sei punti di attacco (due azoti e quattro carbossilati), formando un complesso 1:1 indipendentemente dalla carica dello ione. Questa stechiometria semplice rende comodissimi i calcoli delle titolazioni complessometriche. La trappola è pensare che ioni con carica maggiore leghino più molecole di EDTA.",
+  "semplice": "Una molecola di EDTA abbraccia uno ione metallico come una pinza a sei dita. Per Ca²⁺, Mg²⁺ o Fe³⁺ vale sempre: una mole di EDTA per una mole di metallo.",
+  "passaggi": [
+   "L'EDTA è un legante esadentato: ha sei punti di attacco (2 azoti e 4 carbossilati).",
+   "Una sola molecola di EDTA avvolge completamente lo ione metallico.",
+   "Questo vale indipendentemente dalla carica dello ione (2+, 3+ o 4+).",
+   "Il rapporto EDTA : metallo è 1:1."
+  ],
+  "concetto": "complessi con EDTA"
+ },
+ {
+  "id": "CAN-032",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "test",
+  "domanda": "Qual è il grado di dissociazione dell'acido acetico in una soluzione 0,10 mol/L (Ka = 1,8 · 10⁻⁵)?",
+  "opzioni": {
+   "A": "0,018%",
+   "B": "1,3%",
+   "C": "0,13%",
+   "D": "18%",
+   "E": "13%"
+  },
+  "giusta": "B",
+  "perche": "Per un acido debole poco dissociato il grado di dissociazione è α ≈ √(Ka/C) = √(1,8 · 10⁻⁴) = 0,0134, cioè circa 1,3%. Significa che solo poco più di una molecola su cento cede il suo protone. Diluendo la soluzione α aumenta (legge di diluizione di Ostwald). La trappola è calcolare √(Ka · C), che dà la concentrazione di H₃O⁺ e non la frazione dissociata.",
+  "semplice": "In una soluzione di acido acetico quasi tutte le molecole restano intere: solo una su settantacinque circa si dissocia. Per questo è un acido debole.",
+  "passaggi": [
+   "α ≈ √(Ka / C)",
+   "Ka / C = 1,8 · 10⁻⁵ / 0,10 = 1,8 · 10⁻⁴",
+   "√(1,8 · 10⁻⁴) = 0,0134",
+   "α ≈ 1,3%"
+  ],
+  "concetto": "grado di dissociazione"
+ },
+ {
+  "id": "CAN-033",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "test",
+  "domanda": "In quale condizione un tampone formato da un acido debole e dalla sua base coniugata ha il massimo potere tampone?",
+  "opzioni": {
+   "A": "Quando c'è solo l'acido debole",
+   "B": "Quando il pH è 7",
+   "C": "Quando il pH è uguale al pKa dell'acido",
+   "D": "Quando la base coniugata è dieci volte l'acido",
+   "E": "Quando la soluzione è molto diluita"
+  },
+  "giusta": "C",
+  "perche": "Il potere tampone è massimo quando acido e base coniugata sono presenti in quantità uguali, cioè quando pH = pKa: in quel punto il sistema può neutralizzare sia aggiunte di acido sia di base nella stessa misura. Un tampone è efficace in genere entro pKa ± 1. La trappola è pensare che il tampone migliore sia sempre a pH 7 o che la diluizione lo renda più efficace (al contrario, lo indebolisce).",
+  "semplice": "Un tampone è come una squadra con difensori su due lati: funziona meglio quando ha tanti giocatori da una parte quanti dall'altra, cioè tanto acido quanta base.",
+  "passaggi": [
+   "Equazione di Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]).",
+   "Il potere tampone è massimo quando acido e base coniugata sono in quantità uguali: [A⁻] = [HA].",
+   "Allora log(1) = 0 e pH = pKa.",
+   "Il pH 7 non ha nulla di speciale e la diluizione indebolisce il tampone.",
+   "Massimo potere tampone quando pH = pKa."
+  ],
+  "concetto": "capacità tampone"
+ },
+ {
+  "id": "CAN-034",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "università",
+  "domanda": "Per preparare un tampone a pH 7,2 a partire da acido fosforico (pKa1 = 2,15; pKa2 = 7,21; pKa3 = 12,32), quale coppia si usa?",
+  "opzioni": {
+   "A": "H₃PO₄ / H₂PO₄⁻",
+   "B": "HPO₄²⁻ / PO₄³⁻",
+   "C": "H₃PO₄ / PO₄³⁻",
+   "D": "H₂PO₄⁻ / HPO₄²⁻",
+   "E": "H₃PO₄ / HPO₄²⁻"
+  },
+  "giusta": "D",
+  "perche": "Si sceglie la coppia acido-base coniugata il cui pKa è più vicino al pH voluto: pKa2 = 7,21 corrisponde all'equilibrio H₂PO₄⁻ ⇌ HPO₄²⁻ + H⁺. Mescolando quantità simili di diidrogenofosfato e idrogenofosfato si ottiene pH ≈ 7,2. La trappola è combinare specie non coniugate (che differiscono per due protoni) o scegliere la coppia del primo equilibrio solo perché H₃PO₄ è l'acido di partenza.",
+  "semplice": "Un acido con tre protoni ha tre «zone tampone», una per ogni pKa. Per il pH 7,2, tipico dei liquidi biologici, serve la coppia del secondo protone: è il tampone fosfato usato in biologia.",
+  "passaggi": [
+   "Regola: si sceglie la coppia coniugata con pKa più vicino al pH voluto (7,2).",
+   "Confronta: pKa1 = 2,15, pKa2 = 7,21, pKa3 = 12,32: il più vicino è pKa2.",
+   "pKa2 corrisponde all'equilibrio H₂PO₄⁻ ⇌ HPO₄²⁻ + H⁺.",
+   "Scarta le coppie non coniugate (che differiscono di due protoni) come H₃PO₄ / HPO₄²⁻.",
+   "La coppia è H₂PO₄⁻ / HPO₄²⁻."
+  ],
+  "concetto": "acidi poliprotici"
+ },
+ {
+  "id": "CAN-035",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "università",
+  "domanda": "Qual è la forza ionica di una soluzione di MgCl₂ 0,10 mol/L?",
+  "opzioni": {
+   "A": "0,10 mol/L",
+   "B": "0,20 mol/L",
+   "C": "0,15 mol/L",
+   "D": "0,60 mol/L",
+   "E": "0,30 mol/L"
+  },
+  "giusta": "E",
+  "perche": "La forza ionica è I = ½ Σ cᵢ zᵢ². Con Mg²⁺ 0,10 mol/L (z = 2) e Cl⁻ 0,20 mol/L (z = 1) si ha I = ½ (0,10 · 4 + 0,20 · 1) = 0,30 mol/L. Gli ioni a carica doppia pesano quattro volte di più. La trappola è dimenticare il quadrato della carica, o che il cloruro è presente in quantità doppia, oppure il fattore ½.",
+  "semplice": "La forza ionica misura quanto «affollata di cariche» è una soluzione. Gli ioni con carica 2 contano molto di più, perché la carica entra al quadrato.",
+  "passaggi": [
+   "I = ½ Σ cᵢ zᵢ²",
+   "Mg²⁺: 0,10 · 2² = 0,40",
+   "Cl⁻: 0,20 · 1² = 0,20",
+   "I = ½ (0,40 + 0,20) = 0,30 mol/L"
+  ],
+  "concetto": "forza ionica"
+ },
+ {
+  "id": "CAN-036",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Equilibri in soluzione",
+  "livello": "superiori",
+  "domanda": "Un tampone acetico viene diluito con acqua fino a dieci volte il volume iniziale. Che cosa succede al pH, in prima approssimazione?",
+  "opzioni": {
+   "A": "Resta praticamente invariato",
+   "B": "Diminuisce di una unità",
+   "C": "Diventa 7",
+   "D": "Aumenta di una unità",
+   "E": "Diventa uguale al pKa"
+  },
+  "giusta": "A",
+  "perche": "Il pH di un tampone dipende dal rapporto tra le concentrazioni di base coniugata e acido (Henderson-Hasselbalch). Diluendo, entrambe diminuiscono dello stesso fattore e il rapporto non cambia, quindi il pH resta praticamente lo stesso. Cala però la capacità tampone, cioè la quantità di acido o base che il sistema riesce a neutralizzare. La trappola è applicare al tampone la regola degli acidi forti, per cui diluire dieci volte cambia il pH di un'unità.",
+  "semplice": "Se dimezzi sia il numeratore sia il denominatore di una frazione, la frazione non cambia. Lo stesso succede al rapporto base/acido quando diluisci un tampone.",
+  "passaggi": [
+   "Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]).",
+   "Diluendo 10 volte, [A⁻] e [HA] diventano entrambe un decimo.",
+   "Il rapporto [A⁻]/[HA] resta uguale, quindi il pH non cambia.",
+   "Diminuisce invece la capacità tampone; la regola «±1 unità ogni diluizione per 10» vale per acidi forti.",
+   "Il pH resta praticamente invariato."
+  ],
+  "concetto": "diluizione di un tampone"
+ },
+ {
+  "id": "CAN-037",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "superiori",
+  "domanda": "25,00 mL di HCl vengono titolati con NaOH 0,1000 mol/L e il punto di equivalenza si raggiunge con 20,00 mL. Qual è la concentrazione dell'acido?",
+  "opzioni": {
+   "A": "0,1250 mol/L",
+   "B": "0,0800 mol/L",
+   "C": "0,1000 mol/L",
+   "D": "0,0200 mol/L",
+   "E": "0,0080 mol/L"
+  },
+  "giusta": "B",
+  "perche": "La reazione HCl + NaOH → NaCl + H₂O è 1:1, quindi al punto di equivalenza le moli di acido uguagliano quelle di base. Moli di NaOH = 0,1000 · 0,02000 = 2,000 · 10⁻³ mol; dividendo per 0,02500 L si ottiene 0,0800 mol/L. La trappola è invertire i volumi nella formula C₁V₁ = C₂V₂, ottenendo 0,1250 mol/L.",
+  "semplice": "All'equivalenza hai aggiunto esattamente tante moli di base quante erano le moli di acido. Siccome ti è servito meno volume di base che di acido, l'acido è meno concentrato della base.",
+  "passaggi": [
+   "Moli NaOH = 0,1000 mol/L · 0,02000 L = 2,000 · 10⁻³ mol",
+   "Rapporto 1:1: moli HCl = 2,000 · 10⁻³ mol",
+   "C(HCl) = 2,000 · 10⁻³ / 0,02500 L = 0,0800 mol/L"
+  ],
+  "concetto": "calcolo della concentrazione"
+ },
+ {
+  "id": "CAN-038",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "superiori",
+  "domanda": "Quale indicatore è più adatto per titolare l'acido acetico con NaOH?",
+  "opzioni": {
+   "A": "Metilarancio (viraggio 3,1-4,4)",
+   "B": "Rosso metile (viraggio 4,4-6,2)",
+   "C": "Fenolftaleina (viraggio 8,2-10)",
+   "D": "Eriocromo nero T",
+   "E": "Amido"
+  },
+  "giusta": "C",
+  "perche": "Al punto di equivalenza della titolazione di un acido debole con una base forte è presente solo la base coniugata (acetato), che rende la soluzione basica, con pH intorno a 8,7. Serve quindi un indicatore che viri in zona basica, come la fenolftaleina. La trappola è scegliere un indicatore che vira in zona acida, che cambierebbe colore troppo presto, prima dell'equivalenza.",
+  "semplice": "L'indicatore deve cambiare colore proprio dove la curva di titolazione fa il «salto». Con acido debole e base forte il salto è sopra pH 7, ed è lì che la fenolftaleina diventa rosa.",
+  "passaggi": [
+   "Acido debole (acetico) titolato con base forte (NaOH).",
+   "All'equivalenza resta solo l'acetato, una base debole: il pH è basico, circa 8,7.",
+   "Serve un indicatore che vira in zona basica, attorno a quel pH.",
+   "Metilarancio e rosso metile virano in zona acida (troppo presto); eriocromo nero T e amido servono ad altre titolazioni.",
+   "L'indicatore adatto è la fenolftaleina (8,2-10)."
+  ],
+  "concetto": "scelta dell'indicatore"
+ },
+ {
+  "id": "CAN-039",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "test",
+  "domanda": "25,00 mL di acido acetico 0,100 mol/L vengono titolati con NaOH 0,100 mol/L. Qual è il pH al punto di equivalenza (Ka = 1,8 · 10⁻⁵)?",
+  "opzioni": {
+   "A": "7,00",
+   "B": "4,74",
+   "C": "8,87",
+   "D": "8,72",
+   "E": "11,13"
+  },
+  "giusta": "D",
+  "perche": "All'equivalenza tutto l'acido è diventato acetato. Il volume totale è 50,00 mL, quindi [CH₃COO⁻] = 2,50 mmol / 50,00 mL = 0,0500 mol/L. Con Kb = 5,6 · 10⁻¹⁰ si ottiene [OH⁻] = √(Kb · C) = 5,3 · 10⁻⁶ mol/L, pOH = 5,28 e pH = 8,72. La trappola è dimenticare la diluizione dovuta al titolante, usando 0,100 mol/L e ottenendo 8,87, oppure pensare che all'equivalenza il pH sia sempre 7.",
+  "semplice": "Quando neutralizzi un acido debole con una base forte ti resta in soluzione un sale «leggermente basico». Il volume raddoppia, quindi la concentrazione del sale si dimezza.",
+  "passaggi": [
+   "Moli di acido = 0,100 · 0,02500 = 2,50 · 10⁻³ mol",
+   "Volume all'equivalenza = 25,00 + 25,00 = 50,00 mL",
+   "[CH₃COO⁻] = 2,50 · 10⁻³ / 0,05000 = 0,0500 mol/L",
+   "Kb = 10⁻¹⁴ / 1,8 · 10⁻⁵ = 5,6 · 10⁻¹⁰",
+   "[OH⁻] = √(5,6 · 10⁻¹⁰ · 0,0500) = 5,3 · 10⁻⁶; pOH = 5,28",
+   "pH = 14,00 − 5,28 = 8,72"
+  ],
+  "concetto": "pH all'equivalenza"
+ },
+ {
+  "id": "CAN-040",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "test",
+  "domanda": "Nella titolazione di un acido debole con una base forte, a quale punto della curva il pH è uguale al pKa?",
+  "opzioni": {
+   "A": "All'inizio, prima di aggiungere la base",
+   "B": "Quando il pH vale 7",
+   "C": "Al punto di equivalenza",
+   "D": "Al doppio del volume di equivalenza",
+   "E": "A metà del volume di equivalenza"
+  },
+  "giusta": "E",
+  "perche": "A metà titolazione metà dell'acido è stato trasformato nella sua base coniugata, quindi [A⁻] = [HA] e, dall'equazione di Henderson-Hasselbalch, pH = pKa. Per questo dalla curva sperimentale si ricava il pKa leggendo il pH a metà del volume equivalente. La trappola è collocare questo punto all'equivalenza, dove invece è presente solo la base coniugata.",
+  "semplice": "A metà strada hai trasformato metà acido in sale: hai un tampone perfetto con quantità uguali. In quel punto il pH coincide con il pKa.",
+  "passaggi": [
+   "Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]).",
+   "pH = pKa quando [A⁻] = [HA].",
+   "Questo accade quando metà dell'acido è stato neutralizzato dalla base.",
+   "All'equivalenza c'è solo A⁻, all'inizio solo HA: non sono quei punti.",
+   "Il pH è uguale al pKa a metà del volume di equivalenza."
+  ],
+  "concetto": "semiequivalenza"
+ },
+ {
+  "id": "CAN-041",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "superiori",
+  "domanda": "Quale sostanza si usa comunemente come standard primario per standardizzare una soluzione di NaOH?",
+  "opzioni": {
+   "A": "Ftalato acido di potassio",
+   "B": "Acido cloridrico concentrato",
+   "C": "Acido acetico glaciale",
+   "D": "Cloruro di sodio",
+   "E": "Idrossido di sodio solido"
+  },
+  "giusta": "A",
+  "perche": "Uno standard primario deve essere puro, stabile, non igroscopico, con massa molare elevata e reagire in modo noto e completo. Il ftalato acido di potassio (KHC₈H₄O₄) ha tutte queste caratteristiche ed è un acido monoprotico. L'NaOH solido invece non è uno standard primario, perché assorbe acqua e anidride carbonica dall'aria: proprio per questo va standardizzato. La trappola è pensare che basti pesare con cura l'NaOH per conoscerne la concentrazione.",
+  "semplice": "Per tarare una soluzione serve un riferimento «affidabile» che si pesa con precisione e non cambia nel tempo. Il ftalato acido di potassio è come il metro campione delle titolazioni acido-base.",
+  "passaggi": [
+   "Uno standard primario deve essere puro, stabile, non igroscopico, con massa molare elevata e reazione nota.",
+   "NaOH solido assorbe acqua e CO₂: non è uno standard primario (per questo va standardizzato).",
+   "HCl concentrato e acido acetico glaciale non hanno titolo esatto e stabile; NaCl non reagisce con NaOH.",
+   "Il ftalato acido di potassio (KHC₈H₄O₄) è un acido monoprotico solido, puro e stabile.",
+   "Si usa il ftalato acido di potassio."
+  ],
+  "concetto": "standard primario"
+ },
+ {
+  "id": "CAN-042",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "test",
+  "domanda": "0,5105 g di ftalato acido di potassio (M = 204,22 g/mol, monoprotico) richiedono 25,00 mL di NaOH per la neutralizzazione. Qual è la concentrazione di NaOH?",
+  "opzioni": {
+   "A": "0,0500 mol/L",
+   "B": "0,1000 mol/L",
+   "C": "0,2042 mol/L",
+   "D": "0,0250 mol/L",
+   "E": "0,0204 mol/L"
+  },
+  "giusta": "B",
+  "perche": "Le moli di ftalato sono 0,5105 / 204,22 = 2,500 · 10⁻³ mol. La reazione con NaOH è 1:1, quindi le stesse moli di NaOH sono contenute in 25,00 mL: C = 2,500 · 10⁻³ / 0,02500 = 0,1000 mol/L. La trappola è dimenticare di convertire i millilitri in litri o dividere la massa per il volume senza passare dalle moli.",
+  "semplice": "Dalla massa pesata ricavi le moli di standard; il rapporto 1:1 ti dice che sono anche le moli di NaOH; dividendo per il volume usato ottieni la concentrazione.",
+  "passaggi": [
+   "n(KHP) = 0,5105 / 204,22 = 2,500 · 10⁻³ mol",
+   "Rapporto 1:1: n(NaOH) = 2,500 · 10⁻³ mol",
+   "C = 2,500 · 10⁻³ / 0,02500 L = 0,1000 mol/L"
+  ],
+  "concetto": "standardizzazione"
+ },
+ {
+  "id": "CAN-043",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "università",
+  "domanda": "Un campione di Fe²⁺ in ambiente acido richiede 20,00 mL di KMnO₄ 0,0200 mol/L. Quanti grammi di ferro contiene (M(Fe) = 55,85 g/mol)?",
+  "opzioni": {
+   "A": "0,0223 g",
+   "B": "0,0447 g",
+   "C": "0,1117 g",
+   "D": "0,5585 g",
+   "E": "0,2234 g"
+  },
+  "giusta": "C",
+  "perche": "Nella reazione MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O ogni permanganato accetta 5 elettroni e ossida 5 ioni Fe²⁺. Moli di MnO₄⁻ = 0,0200 · 0,02000 = 4,00 · 10⁻⁴; moli di Fe = 5 · 4,00 · 10⁻⁴ = 2,00 · 10⁻³; massa = 2,00 · 10⁻³ · 55,85 = 0,1117 g. La trappola è usare un rapporto 1:1, ottenendo un quinto del valore corretto.",
+  "semplice": "Nelle redox bisogna contare gli elettroni: il manganese passa da +7 a +2 e ne prende 5, ciascun ferro ne cede 1. Quindi un permanganato «vale» cinque ferri.",
+  "passaggi": [
+   "n(MnO₄⁻) = 0,0200 · 0,02000 = 4,00 · 10⁻⁴ mol",
+   "Rapporto MnO₄⁻ : Fe²⁺ = 1 : 5",
+   "n(Fe) = 5 · 4,00 · 10⁻⁴ = 2,00 · 10⁻³ mol",
+   "m(Fe) = 2,00 · 10⁻³ · 55,85 = 0,1117 g"
+  ],
+  "concetto": "permanganometria"
+ },
+ {
+  "id": "CAN-044",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "test",
+  "domanda": "In una titolazione iodometrica lo iodio liberato viene titolato con tiosolfato di sodio. Qual è il rapporto molare e quale indicatore si usa?",
+  "opzioni": {
+   "A": "I₂ : S₂O₃²⁻ = 1 : 1, fenolftaleina",
+   "B": "I₂ : S₂O₃²⁻ = 2 : 1, amido",
+   "C": "I₂ : S₂O₃²⁻ = 1 : 2, metilarancio",
+   "D": "I₂ : S₂O₃²⁻ = 1 : 2, salda d'amido",
+   "E": "I₂ : S₂O₃²⁻ = 1 : 5, autoindicatore"
+  },
+  "giusta": "D",
+  "perche": "La reazione è I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻: ogni mole di iodio consuma due moli di tiosolfato. Come indicatore si usa la salda d'amido, che forma con lo iodio un complesso blu intenso che scompare al punto finale; va aggiunta verso la fine, quando la soluzione è giallo pallido. La trappola è invertire il rapporto o usare un indicatore acido-base, che non risponde alle reazioni redox.",
+  "semplice": "Lo iodio con l'amido diventa blu scuro, come quando una goccia di tintura di iodio cade su una patata. Quando tutto lo iodio è stato consumato dal tiosolfato, il blu sparisce.",
+  "passaggi": [
+   "Scrivi la reazione: I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻.",
+   "Una mole di I₂ consuma due moli di tiosolfato: rapporto 1 : 2.",
+   "È una reazione redox: gli indicatori acido-base (fenolftaleina, metilarancio) non servono.",
+   "Si usa la salda d'amido, blu con lo iodio, aggiunta verso la fine quando la soluzione è giallo pallido.",
+   "Risposta: I₂ : S₂O₃²⁻ = 1 : 2, salda d'amido."
+  ],
+  "concetto": "iodometria"
+ },
+ {
+  "id": "CAN-045",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "test",
+  "domanda": "50,00 mL di acqua richiedono 12,50 mL di EDTA 0,0100 mol/L a pH 10. Qual è la durezza totale espressa come CaCO₃ (M = 100,09 g/mol)?",
+  "opzioni": {
+   "A": "25 mg/L",
+   "B": "125 mg/L",
+   "C": "500 mg/L",
+   "D": "2,5 mg/L",
+   "E": "250 mg/L"
+  },
+  "giusta": "E",
+  "perche": "Le moli di EDTA sono 0,0100 · 0,01250 = 1,25 · 10⁻⁴ mol e, per la stechiometria 1:1, corrispondono alle moli di Ca²⁺ + Mg²⁺. In un litro sarebbero 1,25 · 10⁻⁴ / 0,05000 = 2,50 · 10⁻³ mol/L, cioè 2,50 · 10⁻³ · 100,09 · 1000 = 250 mg/L di CaCO₃, pari a 25 gradi francesi. La trappola è confondere i mg/L con i gradi francesi (1 °f = 10 mg/L di CaCO₃) o dimenticare di riportare al litro.",
+  "semplice": "L'EDTA conta tutti gli ioni calcio e magnesio dell'acqua. Il risultato si esprime come se fossero tutti carbonato di calcio, il «calcare» che si vede nei bollitori.",
+  "passaggi": [
+   "n(EDTA) = 0,0100 · 0,01250 = 1,25 · 10⁻⁴ mol = n(Ca + Mg)",
+   "Concentrazione: 1,25 · 10⁻⁴ / 0,05000 L = 2,50 · 10⁻³ mol/L",
+   "Come CaCO₃: 2,50 · 10⁻³ · 100,09 = 0,250 g/L = 250 mg/L",
+   "Equivale a 25 °f"
+  ],
+  "concetto": "durezza dell'acqua"
+ },
+ {
+  "id": "CAN-046",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "università",
+  "domanda": "Nel metodo di Mohr per la determinazione dei cloruri con AgNO₃, che cosa segnala il punto finale e perché il pH deve essere circa neutro?",
+  "opzioni": {
+   "A": "Compare un precipitato rosso-bruno di Ag₂CrO₄; in ambiente acido il cromato si trasforma in dicromato, in ambiente basico precipita l'ossido d'argento",
+   "B": "Scompare il colore blu dell'amido; il pH non ha importanza",
+   "C": "Si forma un complesso rosso con Fe³⁺; serve ambiente fortemente acido",
+   "D": "La soluzione diventa incolore; il pH neutro evita la formazione di AgCl",
+   "E": "Compare un precipitato bianco di AgCl; il pH neutro serve a scioglierlo"
+  },
+  "giusta": "A",
+  "perche": "Nel metodo di Mohr AgCl, meno solubile, precipita per primo; appena il cloruro è finito, il primo eccesso di Ag⁺ forma con il cromato un precipitato rosso-bruno di Ag₂CrO₄. In ambiente acido il cromato passa a dicromato e l'indicatore non funziona, in ambiente troppo basico l'argento precipita come ossido: per questo si lavora tra pH 6,5 e 10 circa. La trappola è confondere il metodo di Mohr con quello di Volhard, che usa invece Fe³⁺ e tiocianato in ambiente acido.",
+  "semplice": "Mentre c'è cloruro, l'argento forma un solido bianco. Quando il cloruro finisce, l'argento in più reagisce con il cromato giallo e compare un colore rosso mattone: è il segnale di stop.",
+  "passaggi": [
+   "Nel metodo di Mohr si titola Cl⁻ con Ag⁺ usando cromato come indicatore.",
+   "AgCl, meno solubile, precipita per primo (bianco).",
+   "Finito il cloruro, il primo eccesso di Ag⁺ forma Ag₂CrO₄ rosso-bruno: è il punto finale.",
+   "In ambiente acido il cromato diventa dicromato; in ambiente basico l'argento precipita come ossido: serve pH circa neutro.",
+   "Il complesso rosso con Fe³⁺ è del metodo di Volhard: resta la A."
+  ],
+  "concetto": "metodo di Mohr"
+ },
+ {
+  "id": "CAN-047",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "università",
+  "domanda": "0,1060 g di Na₂CO₃ (M = 105,99 g/mol) vengono titolati con HCl fino al viraggio del metilarancio, consumando 20,00 mL. Qual è la concentrazione di HCl?",
+  "opzioni": {
+   "A": "0,0500 mol/L",
+   "B": "0,1000 mol/L",
+   "C": "0,2000 mol/L",
+   "D": "0,0250 mol/L",
+   "E": "0,0100 mol/L"
+  },
+  "giusta": "B",
+  "perche": "Con il metilarancio si raggiunge il secondo punto di equivalenza, in cui il carbonato è trasformato completamente in acido carbonico: CO₃²⁻ + 2H⁺ → H₂CO₃. Le moli di Na₂CO₃ sono 1,000 · 10⁻³, quindi servono 2,000 · 10⁻³ mol di HCl, in 0,02000 L: C = 0,1000 mol/L. La trappola è usare il rapporto 1:1, valido solo per il primo punto di equivalenza visibile con la fenolftaleina.",
+  "semplice": "Il carbonato è una base che può accettare due protoni. Con il metilarancio, che vira in zona acida, li hai aggiunti entrambi: ogni carbonato ha consumato due HCl.",
+  "passaggi": [
+   "n(Na₂CO₃) = 0,1060 / 105,99 = 1,000 · 10⁻³ mol",
+   "Al viraggio del metilarancio: rapporto 1 : 2",
+   "n(HCl) = 2,000 · 10⁻³ mol",
+   "C(HCl) = 2,000 · 10⁻³ / 0,02000 = 0,1000 mol/L"
+  ],
+  "concetto": "titolazione del carbonato"
+ },
+ {
+  "id": "CAN-048",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "superiori",
+  "domanda": "Che differenza c'è tra punto di equivalenza e punto finale di una titolazione?",
+  "opzioni": {
+   "A": "Sono la stessa cosa",
+   "B": "Il punto finale è teorico, quello di equivalenza è osservato",
+   "C": "Il punto di equivalenza è teorico, il punto finale è quello osservato con l'indicatore",
+   "D": "Il punto finale si ha sempre a pH 7",
+   "E": "Il punto di equivalenza si raggiunge solo nelle titolazioni redox"
+  },
+  "giusta": "C",
+  "perche": "Il punto di equivalenza è il momento teorico in cui le moli di titolante aggiunte corrispondono stechiometricamente all'analita. Il punto finale è quello che si osserva sperimentalmente, per esempio il viraggio dell'indicatore. La differenza tra i due è l'errore di titolazione, che si riduce scegliendo bene l'indicatore. La trappola è usare i due termini come sinonimi.",
+  "semplice": "Il punto di equivalenza è dove «dovresti» fermarti, il punto finale è dove ti fermi davvero perché vedi cambiare il colore. Un buon indicatore li fa quasi coincidere.",
+  "passaggi": [
+   "Punto di equivalenza: momento teorico in cui le moli di titolante corrispondono stechiometricamente all'analita.",
+   "Punto finale: quello osservato sperimentalmente, per esempio il viraggio dell'indicatore.",
+   "La differenza tra i due è l'errore di titolazione.",
+   "Il punto finale non è sempre a pH 7 e l'equivalenza esiste in ogni titolazione.",
+   "Equivalenza teorica, punto finale osservato con l'indicatore."
+  ],
+  "concetto": "punto finale"
+ },
+ {
+  "id": "CAN-049",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "superiori",
+  "domanda": "In che cosa consiste una retrotitolazione?",
+  "opzioni": {
+   "A": "Si titola due volte lo stesso campione con lo stesso titolante",
+   "B": "Si titola senza indicatore",
+   "C": "Si titola il titolante con il campione",
+   "D": "Si aggiunge all'analita un eccesso noto di reattivo e se ne titola la parte rimasta",
+   "E": "Si ripete la titolazione invertendo l'ordine dei reagenti per controllo"
+  },
+  "giusta": "D",
+  "perche": "Nella retrotitolazione si aggiunge un eccesso esattamente noto di reattivo, si lascia reagire completamente l'analita e poi si titola l'eccesso non consumato con un secondo titolante. La quantità di analita si ricava per differenza. È utile quando la reazione diretta è lenta, il punto finale è poco visibile o l'analita è insolubile, come un carbonato solido. La trappola è pensare che sia semplicemente una titolazione ripetuta.",
+  "semplice": "È come sapere quante caramelle hai mangiato contando quelle rimaste nel sacchetto: conosci quante ce n'erano all'inizio e, sottraendo il resto, trovi quelle consumate.",
+  "passaggi": [
+   "Si aggiunge all'analita un eccesso esattamente noto di reattivo.",
+   "Si lascia reagire completamente l'analita.",
+   "Si titola la parte di reattivo rimasta con un secondo titolante.",
+   "L'analita si ricava per differenza: moli aggiunte − moli rimaste.",
+   "È la D: non è una semplice titolazione ripetuta."
+  ],
+  "concetto": "retrotitolazione"
+ },
+ {
+  "id": "CAN-050",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "test",
+  "domanda": "25,00 mL di HCl 0,100 mol/L vengono titolati con NaOH 0,100 mol/L. Qual è il pH dopo l'aggiunta di 10,00 mL di base?",
+  "opzioni": {
+   "A": "1,00",
+   "B": "1,22",
+   "C": "1,85",
+   "D": "7,00",
+   "E": "1,37"
+  },
+  "giusta": "E",
+  "perche": "Prima dell'equivalenza resta acido forte in eccesso: 2,50 mmol − 1,00 mmol = 1,50 mmol in un volume totale di 35,00 mL. Quindi [H₃O⁺] = 1,50 / 35,00 = 0,0429 mol/L e pH = 1,37. La trappola è dimenticare la diluizione e dividere per 25,00 mL (pH 1,22) oppure ignorare la base aggiunta.",
+  "semplice": "La base aggiunta ha neutralizzato una parte dell'acido; quello che resta è distribuito nel volume complessivo, che nel frattempo è aumentato.",
+  "passaggi": [
+   "n(HCl) iniziali = 0,100 · 25,00 = 2,50 mmol",
+   "n(NaOH) aggiunte = 0,100 · 10,00 = 1,00 mmol",
+   "HCl residuo = 1,50 mmol",
+   "Volume totale = 35,00 mL",
+   "[H₃O⁺] = 1,50 / 35,00 = 0,0429 mol/L; pH = 1,37"
+  ],
+  "concetto": "curva di titolazione"
+ },
+ {
+  "id": "CAN-051",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "test",
+  "domanda": "Quanti mL di NaOH 0,100 mol/L servono per neutralizzare completamente 20,00 mL di H₂SO₄ 0,0500 mol/L?",
+  "opzioni": {
+   "A": "20,00 mL",
+   "B": "10,00 mL",
+   "C": "40,00 mL",
+   "D": "5,00 mL",
+   "E": "30,00 mL"
+  },
+  "giusta": "A",
+  "perche": "L'acido solforico è diprotico: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. Le moli di acido sono 1,00 mmol, quindi servono 2,00 mmol di NaOH, contenute in 20,00 mL di soluzione 0,100 mol/L. La trappola è usare il rapporto 1:1, che porta a 10,00 mL.",
+  "semplice": "Ogni molecola di acido solforico ha due protoni da cedere, quindi serve il doppio delle moli di base. Qui la base è concentrata il doppio dell'acido, e i due effetti si compensano: stesso volume.",
+  "passaggi": [
+   "n(H₂SO₄) = 0,0500 · 20,00 = 1,00 mmol",
+   "Rapporto 1 : 2: n(NaOH) = 2,00 mmol",
+   "V = 2,00 mmol / 0,100 mol/L = 20,00 mL"
+  ],
+  "concetto": "acidi diprotici"
+ },
+ {
+  "id": "CAN-052",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "università",
+  "domanda": "Perché nella titolazione complessometrica di Ca²⁺ e Mg²⁺ con EDTA e nero eriocromo T si lavora a pH 10 con un tampone ammoniacale?",
+  "opzioni": {
+   "A": "Perché a pH 10 l'EDTA è protonato e più reattivo",
+   "B": "Perché a pH 10 l'EDTA è in gran parte deprotonato e forma complessi stabili, e l'indicatore libero ha un colore diverso dal complesso con il metallo",
+   "C": "Perché l'indicatore funziona solo in ambiente acido",
+   "D": "Per far precipitare il magnesio come idrossido",
+   "E": "Per ossidare il calcio"
+  },
+  "giusta": "B",
+  "perche": "L'EDTA è un acido poliprotico e la forma che complessa meglio è quella completamente deprotonata, la cui frazione aumenta con il pH: a pH 10 i complessi con Ca²⁺ e Mg²⁺ sono abbastanza stabili. Inoltre il nero eriocromo T libero è blu a quel pH, mentre il suo complesso con il magnesio è rosso vinaccia, e il viraggio è netto. Il pH non deve però essere troppo alto, per evitare la precipitazione di Mg(OH)₂. La trappola è pensare che il tampone serva solo a «mantenere costante» il pH senza un motivo chimico preciso.",
+  "semplice": "L'EDTA lavora bene solo se ha perso i suoi protoni, cosa che avviene in ambiente basico. A pH 10 l'indicatore passa da rosso a blu quando l'EDTA ha catturato tutti i metalli.",
+  "passaggi": [
+   "L'EDTA è un acido poliprotico: complessa meglio nella forma completamente deprotonata, che cresce con il pH.",
+   "A pH 10 i complessi con Ca²⁺ e Mg²⁺ sono abbastanza stabili.",
+   "A pH 10 il nero eriocromo T libero è blu, il suo complesso con il magnesio è rosso vinaccia: viraggio netto.",
+   "Il pH non va oltre per non far precipitare Mg(OH)₂; l'EDTA protonato è meno reattivo, non di più.",
+   "Risposta: la B."
+  ],
+  "concetto": "complessometria"
+ },
+ {
+  "id": "CAN-053",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "università",
+  "domanda": "Nel metodo di Volhard a un campione di cloruro si aggiungono 25,00 mL di AgNO₃ 0,1000 mol/L; l'eccesso di argento richiede 8,00 mL di KSCN 0,1000 mol/L. Quanti mg di cloruro contiene il campione (M(Cl) = 35,45 g/mol)?",
+  "opzioni": {
+   "A": "28,4 mg",
+   "B": "88,6 mg",
+   "C": "60,3 mg",
+   "D": "117 mg",
+   "E": "6,03 mg"
+  },
+  "giusta": "C",
+  "perche": "È una retrotitolazione: Ag⁺ aggiunto = 2,500 mmol, Ag⁺ in eccesso titolato con tiocianato = 0,800 mmol, quindi Ag⁺ consumato dal cloruro = 1,700 mmol. Moltiplicando per 35,45 mg/mmol si ottengono 60,3 mg di cloruro. L'indicatore è lo ione Fe³⁺, che dà un complesso rosso con il primo eccesso di SCN⁻ in ambiente acido per acido nitrico. La trappola è usare direttamente i mmol di tiocianato o quelli di argento senza fare la differenza.",
+  "semplice": "Metti più argento del necessario, poi conti quanto ne avanza. La differenza è l'argento che ha reagito con il cloruro, mole per mole.",
+  "passaggi": [
+   "Ag⁺ aggiunto = 0,1000 · 25,00 = 2,500 mmol",
+   "Ag⁺ in eccesso = 0,1000 · 8,00 = 0,800 mmol",
+   "Ag⁺ reagito con Cl⁻ = 1,700 mmol = n(Cl⁻)",
+   "Massa = 1,700 · 35,45 = 60,3 mg"
+  ],
+  "concetto": "metodo di Volhard"
+ },
+ {
+  "id": "CAN-054",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Titolazioni",
+  "livello": "superiori",
+  "domanda": "Qual è il pH iniziale, prima di aggiungere titolante, di 25,00 mL di HCl 0,100 mol/L?",
+  "opzioni": {
+   "A": "0,100",
+   "B": "7,00",
+   "C": "13,00",
+   "D": "1,00",
+   "E": "2,50"
+  },
+  "giusta": "D",
+  "perche": "All'inizio della titolazione c'è solo l'acido forte, completamente dissociato: [H₃O⁺] = 0,100 mol/L e pH = 1,00. Il volume del campione non influisce sul pH, che dipende dalla concentrazione. La trappola è usare il volume nel calcolo del pH o scambiare la concentrazione per il pH.",
+  "semplice": "La curva di titolazione di un acido forte parte molto in basso, da pH 1 per una soluzione 0,1 mol/L. Sale lentamente e poi fa un salto netto all'equivalenza.",
+  "passaggi": [
+   "[H₃O⁺] = 0,100 mol/L (acido forte)",
+   "pH = −log(0,100) = 1,00"
+  ],
+  "concetto": "punto iniziale della curva"
+ },
+ {
+  "id": "CAN-055",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "Una soluzione ha concentrazione 5,0 · 10⁻⁵ mol/L, coefficiente di assorbimento molare ε = 1,2 · 10⁴ L·mol⁻¹·cm⁻¹ ed è misurata in una cuvetta da 1,00 cm. Quanto vale l'assorbanza?",
+  "opzioni": {
+   "A": "0,060",
+   "B": "6,0",
+   "C": "0,24",
+   "D": "2,4",
+   "E": "0,60"
+  },
+  "giusta": "E",
+  "perche": "La legge di Lambert-Beer è A = ε · b · c = 1,2 · 10⁴ · 1,00 · 5,0 · 10⁻⁵ = 0,60. L'assorbanza è adimensionale perché le unità di ε, cammino ottico e concentrazione si semplificano. La trappola tipica è sbagliare la potenza di dieci nel prodotto, ottenendo 0,060 o 6,0.",
+  "semplice": "L'assorbanza cresce con tre fattori: quanto la sostanza «ama» assorbire quella luce (ε), quanto è lunga la cuvetta (b) e quanto è concentrata la soluzione (c). Basta moltiplicarli.",
+  "passaggi": [
+   "A = ε · b · c",
+   "1,2 · 10⁴ · 1,00 = 1,2 · 10⁴",
+   "1,2 · 10⁴ · 5,0 · 10⁻⁵ = 0,60"
+  ],
+  "concetto": "legge di Lambert-Beer"
+ },
+ {
+  "id": "CAN-056",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "Una soluzione lascia passare il 10% della luce incidente. Quanto vale la sua assorbanza?",
+  "opzioni": {
+   "A": "1,0",
+   "B": "0,10",
+   "C": "10",
+   "D": "0,90",
+   "E": "2,0"
+  },
+  "giusta": "A",
+  "perche": "Assorbanza e trasmittanza sono legate da A = −log T. Con T = 0,10 si ha A = −log 0,10 = 1,0. La relazione è logaritmica, non lineare: se la trasmittanza scende all'1% l'assorbanza diventa 2. La trappola è pensare che l'assorbanza sia la frazione di luce assorbita (0,90) o usare la percentuale direttamente nel logaritmo.",
+  "semplice": "Ogni volta che l'assorbanza aumenta di 1, la luce che passa diventa dieci volte meno. A = 1 significa che passa solo un decimo della luce.",
+  "passaggi": [
+   "T = 10% = 0,10",
+   "A = −log T = −log 0,10",
+   "A = 1,0"
+  ],
+  "concetto": "trasmittanza e assorbanza"
+ },
+ {
+  "id": "CAN-057",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "test",
+  "domanda": "Una soluzione ha assorbanza 0,30. Qual è la sua trasmittanza percentuale?",
+  "opzioni": {
+   "A": "30%",
+   "B": "50%",
+   "C": "70%",
+   "D": "0,50%",
+   "E": "3,0%"
+  },
+  "giusta": "B",
+  "perche": "Da A = −log T si ricava T = 10⁻ᴬ = 10^(−0,30) = 0,501, cioè circa 50%. Il risultato si ricorda bene perché log 2 ≈ 0,30: un'assorbanza di 0,30 dimezza la luce. La trappola è pensare che trasmittanza e assorbanza si sommino a 100% o che A = 0,30 voglia dire «30% assorbito».",
+  "semplice": "Un'assorbanza di 0,3 lascia passare metà della luce: è come un paio di occhiali da sole leggeri.",
+  "passaggi": [
+   "T = 10⁻ᴬ",
+   "T = 10^(−0,30) = 0,501",
+   "T% ≈ 50%"
+  ],
+  "concetto": "conversione A-T"
+ },
+ {
+  "id": "CAN-058",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "Una retta di taratura passante per l'origine ha pendenza 0,0904 L/mg. Un campione dà assorbanza 0,452. Qual è la concentrazione?",
+  "opzioni": {
+   "A": "0,0409 mg/L",
+   "B": "0,200 mg/L",
+   "C": "5,00 mg/L",
+   "D": "50,0 mg/L",
+   "E": "4,09 mg/L"
+  },
+  "giusta": "C",
+  "perche": "Con una retta del tipo A = m · C la concentrazione è C = A / m = 0,452 / 0,0904 = 5,00 mg/L. La pendenza rappresenta la sensibilità del metodo, cioè l'aumento di assorbanza per ogni mg/L. La trappola è moltiplicare invece di dividere, ottenendo 0,0409.",
+  "semplice": "Se ogni mg/L fa salire l'assorbanza di circa 0,09, un'assorbanza di 0,45 corrisponde a circa cinque volte tanto, cioè 5 mg/L.",
+  "passaggi": [
+   "C = A / m",
+   "C = 0,452 / 0,0904",
+   "C = 5,00 mg/L"
+  ],
+  "concetto": "taratura spettrofotometrica"
+ },
+ {
+  "id": "CAN-059",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "test",
+  "domanda": "In quale situazione si osservano tipicamente deviazioni dalla legge di Lambert-Beer?",
+  "opzioni": {
+   "A": "Con soluzioni molto diluite e luce monocromatica",
+   "B": "Quando l'assorbanza è compresa tra 0,2 e 0,8",
+   "C": "Solo con cuvette di quarzo",
+   "D": "Con concentrazioni elevate, luce non monocromatica o equilibri chimici che cambiano la specie assorbente",
+   "E": "Solo nel visibile e mai nell'ultravioletto"
+  },
+  "giusta": "D",
+  "perche": "La legge vale bene per soluzioni diluite, con luce monocromatica e se la specie che assorbe non cambia. A concentrazioni elevate le molecole interagiscono tra loro e varia l'indice di rifrazione; con luce policromatica ε non è unico; se la specie partecipa a equilibri (dimerizzazione, dissociazione acido-base) la sua concentrazione effettiva cambia. In tutti questi casi la retta di taratura si incurva. La trappola è pensare che la legge valga per qualsiasi concentrazione.",
+  "semplice": "La legge di Lambert-Beer è come una regola che funziona bene «a piccole dosi». Se la soluzione è troppo concentrata, la retta di taratura comincia a piegarsi e i risultati diventano inaffidabili.",
+  "passaggi": [
+   "Lambert-Beer (A = ε·b·c) vale per soluzioni diluite, luce monocromatica e specie assorbente che non cambia.",
+   "Ad alte concentrazioni le molecole interagiscono e cambia l'indice di rifrazione.",
+   "Con luce non monocromatica ε non ha un valore unico.",
+   "Se la specie partecipa a equilibri (dimerizzazione, dissociazione) la sua concentrazione effettiva cambia.",
+   "Le deviazioni compaiono nei casi elencati nella D."
+  ],
+  "concetto": "limiti di Lambert-Beer"
+ },
+ {
+  "id": "CAN-060",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "A quale lunghezza d'onda conviene di solito eseguire una misura quantitativa in spettrofotometria UV-visibile?",
+  "opzioni": {
+   "A": "Alla lunghezza d'onda del colore della soluzione",
+   "B": "Al minimo di assorbimento",
+   "C": "A una lunghezza d'onda in cui la sostanza non assorbe",
+   "D": "Sempre a 500 nm",
+   "E": "Al massimo di assorbimento (λmax) della sostanza"
+  },
+  "giusta": "E",
+  "perche": "Al massimo di assorbimento la sensibilità è più alta e lo spettro è piatto, quindi piccoli errori nella lunghezza d'onda impostata cambiano poco l'assorbanza. Questo rende la misura più sensibile e più riproducibile. La trappola è scegliere la lunghezza d'onda del colore che si vede: una soluzione appare del colore che trasmette, non di quello che assorbe.",
+  "semplice": "Si misura dove la sostanza assorbe di più, cioè in cima al picco dello spettro. Lì il segnale è più forte e anche se lo strumento sbaglia di poco la lunghezza d'onda il valore cambia appena.",
+  "passaggi": [
+   "Si cerca la lunghezza d'onda con sensibilità più alta e misura più riproducibile.",
+   "Al massimo di assorbimento l'assorbanza per unità di concentrazione è la più alta.",
+   "Lì lo spettro è piatto: piccoli errori nella λ impostata cambiano poco l'assorbanza.",
+   "Il colore visibile della soluzione è quello trasmesso, non quello assorbito.",
+   "Si misura al massimo di assorbimento (λmax)."
+  ],
+  "concetto": "scelta di λmax"
+ },
+ {
+  "id": "CAN-061",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "Una soluzione di solfato di rame appare azzurra. Quale colore della luce assorbe principalmente?",
+  "opzioni": {
+   "A": "Arancione-rosso",
+   "B": "Verde",
+   "C": "Violetto",
+   "D": "Azzurro",
+   "E": "Nessuno: trasmette tutta la luce"
+  },
+  "giusta": "A",
+  "perche": "Una soluzione appare del colore complementare a quello che assorbe. Il solfato di rame assorbe nella zona rosso-arancione dello spettro e trasmette la luce azzurra che arriva al nostro occhio. Per questo la misura si fa a una lunghezza d'onda nel rosso-arancio, non nel blu. La trappola è pensare che una soluzione blu assorba il blu.",
+  "semplice": "Il colore che vedi è quello che «avanza» dopo l'assorbimento. Se il rame si «mangia» il rosso-arancio, ciò che resta ai tuoi occhi è l'azzurro.",
+  "passaggi": [
+   "Una soluzione appare del colore che trasmette, complementare a quello che assorbe.",
+   "La soluzione di solfato di rame trasmette l'azzurro.",
+   "Il complementare dell'azzurro è nella zona arancione-rossa.",
+   "Il solfato di rame assorbe principalmente l'arancione-rosso."
+  ],
+  "concetto": "colori complementari"
+ },
+ {
+  "id": "CAN-062",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "Quale relazione lega energia e lunghezza d'onda di un fotone?",
+  "opzioni": {
+   "A": "Più è lunga la lunghezza d'onda, più è alta l'energia",
+   "B": "Più è corta la lunghezza d'onda, più è alta l'energia",
+   "C": "L'energia non dipende dalla lunghezza d'onda",
+   "D": "L'energia è proporzionale al quadrato della lunghezza d'onda",
+   "E": "L'energia dipende solo dall'intensità della luce"
+  },
+  "giusta": "B",
+  "perche": "L'energia di un fotone è E = h · c / λ: è inversamente proporzionale alla lunghezza d'onda. La radiazione UV, con λ corta, ha energia sufficiente per promuovere elettroni, mentre l'infrarosso, con λ lunga, eccita solo vibrazioni dei legami. La trappola è confondere l'energia del singolo fotone con l'intensità del fascio, che dipende dal numero di fotoni.",
+  "semplice": "I raggi UV, che hanno lunghezza d'onda corta, sono abbastanza energetici da scottare la pelle; la luce rossa, più lunga, no. Più l'onda è «stretta», più ogni fotone è energetico.",
+  "passaggi": [
+   "Energia di un fotone: E = h · c / λ.",
+   "h e c sono costanti: E è inversamente proporzionale a λ.",
+   "λ più corta (UV) significa energia più alta; λ più lunga (IR) energia più bassa.",
+   "L'intensità dipende dal numero di fotoni, non dall'energia di ciascuno.",
+   "Più è corta la lunghezza d'onda, più è alta l'energia."
+  ],
+  "concetto": "energia del fotone"
+ },
+ {
+  "id": "CAN-063",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "Qual è la funzione del monocromatore in uno spettrofotometro?",
+  "opzioni": {
+   "A": "Rivelare la luce trasmessa",
+   "B": "Contenere il campione",
+   "C": "Selezionare una banda stretta di lunghezze d'onda dalla luce emessa dalla sorgente",
+   "D": "Amplificare il segnale elettrico",
+   "E": "Produrre luce di una sola lunghezza d'onda senza bisogno di sorgente"
+  },
+  "giusta": "C",
+  "perche": "La sorgente emette luce in un ampio intervallo di lunghezze d'onda; il monocromatore, con un reticolo di diffrazione o un prisma e delle fenditure, ne isola una banda stretta da inviare al campione. Lo schema tipico è sorgente, monocromatore, cuvetta, rivelatore. La trappola è confonderlo con il rivelatore, che invece trasforma la luce in segnale elettrico.",
+  "semplice": "Il monocromatore funziona come un prisma che apre la luce bianca in un arcobaleno e poi lascia passare solo un colore attraverso una fessura.",
+  "passaggi": [
+   "Schema dello strumento: sorgente → monocromatore → cuvetta → rivelatore.",
+   "La sorgente emette in un ampio intervallo di lunghezze d'onda.",
+   "Il monocromatore (reticolo o prisma con fenditure) ne isola una banda stretta.",
+   "Rivelare la luce e amplificare il segnale sono compiti del rivelatore e dell'elettronica.",
+   "Il monocromatore seleziona una banda stretta di lunghezze d'onda."
+  ],
+  "concetto": "componenti dello spettrofotometro"
+ },
+ {
+  "id": "CAN-064",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "test",
+  "domanda": "Nella spettroscopia di assorbimento atomico, quale sorgente si usa tipicamente per determinare un singolo elemento?",
+  "opzioni": {
+   "A": "Lampada al tungsteno",
+   "B": "Lampada al deuterio",
+   "C": "Laser a CO₂",
+   "D": "Lampada a catodo cavo dell'elemento da analizzare",
+   "E": "Filamento di Nernst"
+  },
+  "giusta": "D",
+  "perche": "Gli atomi assorbono righe molto strette, quindi serve una sorgente che emetta proprio quelle righe: la lampada a catodo cavo, con il catodo fatto dell'elemento da analizzare. Così la luce emessa corrisponde esattamente alle transizioni degli atomi nel campione. La trappola è pensare di usare una sorgente continua come nell'UV-visibile molecolare: la sensibilità sarebbe molto bassa.",
+  "semplice": "Per misurare il piombo si usa una lampada fatta di piombo, che emette la «firma luminosa» del piombo. Gli atomi di piombo nella fiamma assorbono proprio quella luce.",
+  "passaggi": [
+   "Gli atomi assorbono righe spettrali molto strette.",
+   "Serve una sorgente che emetta proprio quelle righe dell'elemento cercato.",
+   "La lampada a catodo cavo ha il catodo fatto dell'elemento da analizzare.",
+   "Tungsteno e deuterio sono sorgenti continue (UV-visibile molecolare); filamento di Nernst e laser a CO₂ sono per l'IR.",
+   "Si usa la lampada a catodo cavo dell'elemento."
+  ],
+  "concetto": "assorbimento atomico"
+ },
+ {
+  "id": "CAN-065",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "test",
+  "domanda": "In uno spettro IR, una banda intensa intorno a 1700 cm⁻¹ è tipica di quale gruppo?",
+  "opzioni": {
+   "A": "O–H alcolico",
+   "B": "Anello aromatico C=C",
+   "C": "C–H alifatico",
+   "D": "Triplo legame C≡N",
+   "E": "Carbonile C=O"
+  },
+  "giusta": "E",
+  "perche": "Lo stiramento del legame C=O di chetoni, aldeidi, acidi carbossilici ed esteri produce una banda intensa tra circa 1650 e 1800 cm⁻¹, con molti composti vicino a 1700 cm⁻¹. L'O–H assorbe invece tra 3200 e 3600 cm⁻¹, il C–H intorno a 2850-3000 cm⁻¹, il C≡N intorno a 2250 cm⁻¹. La trappola è confondere il carbonile con il doppio legame C=C, che dà bande più deboli a numero d'onda più basso.",
+  "semplice": "Nello spettro IR ogni tipo di legame «vibra» a una sua frequenza. Il picco forte a 1700 è il segnale classico del gruppo C=O, come nell'acetone.",
+  "passaggi": [
+   "Ricorda le zone tipiche dell'IR per i vari gruppi.",
+   "O–H: 3200-3600 cm⁻¹; C–H alifatico: 2850-3000 cm⁻¹; C≡N: circa 2250 cm⁻¹.",
+   "C=C aromatico: bande più deboli a numeri d'onda più bassi.",
+   "Lo stiramento C=O dà una banda intensa tra 1650 e 1800 cm⁻¹, spesso vicino a 1700.",
+   "La banda a 1700 cm⁻¹ è del carbonile C=O."
+  ],
+  "concetto": "spettroscopia IR"
+ },
+ {
+  "id": "CAN-066",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "superiori",
+  "domanda": "Per misure nell'ultravioletto sotto i 300 nm, di che materiale deve essere la cuvetta?",
+  "opzioni": {
+   "A": "Quarzo",
+   "B": "Plastica (polistirene)",
+   "C": "Vetro comune",
+   "D": "Cloruro di sodio",
+   "E": "Qualsiasi materiale trasparente alla vista"
+  },
+  "giusta": "A",
+  "perche": "Il vetro e la plastica comuni assorbono la radiazione UV e falserebbero la misura; il quarzo invece è trasparente fino a circa 190 nm. Per il visibile vanno bene anche cuvette di vetro o plastica; per l'IR si usano finestre di sali come NaCl o KBr. La trappola è pensare che basti che la cuvetta sembri trasparente all'occhio.",
+  "semplice": "Il vetro delle finestre ferma gran parte dei raggi UV (per questo dietro un vetro non ci si abbronza). Per misurare nell'UV serve quindi il quarzo.",
+  "passaggi": [
+   "Sotto i 300 nm la cuvetta deve essere trasparente all'UV.",
+   "Vetro comune e plastica assorbono l'UV e falserebbero la misura.",
+   "NaCl si usa per finestre IR; la trasparenza all'occhio non basta.",
+   "Il quarzo è trasparente fino a circa 190 nm.",
+   "Serve una cuvetta di quarzo."
+  ],
+  "concetto": "materiale delle cuvette"
+ },
+ {
+  "id": "CAN-067",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "test",
+  "domanda": "Perché prima di misurare i campioni si azzera lo spettrofotometro con un «bianco»?",
+  "opzioni": {
+   "A": "Per scaldare la lampada",
+   "B": "Per sottrarre l'assorbimento di solvente, reattivi e cuvetta",
+   "C": "Per misurare la concentrazione dell'analita",
+   "D": "Per tarare la lunghezza d'onda",
+   "E": "Per eliminare gli errori casuali"
+  },
+  "giusta": "B",
+  "perche": "Il bianco contiene tutto tranne l'analita (solvente, reattivi, stessa cuvetta): azzerando su di esso, l'assorbanza misurata nei campioni è dovuta solo alla sostanza da determinare. Senza bianco si sovrastimerebbe la concentrazione. La trappola è usare come bianco l'acqua distillata quando i reattivi stessi assorbono alla lunghezza d'onda di misura.",
+  "semplice": "È come fare la tara sulla bilancia prima di pesare: togli tutto ciò che non ti interessa, così il numero che leggi riguarda solo ciò che vuoi misurare.",
+  "passaggi": [
+   "Il bianco contiene tutto tranne l'analita: solvente, reattivi, stessa cuvetta.",
+   "Azzerando su di esso si sottrae l'assorbimento di questi componenti.",
+   "Così l'assorbanza dei campioni è dovuta solo all'analita.",
+   "Il bianco non scalda la lampada, non tara la λ e non elimina errori casuali.",
+   "Serve a sottrarre l'assorbimento di solvente, reattivi e cuvetta."
+  ],
+  "concetto": "bianco reattivi"
+ },
+ {
+  "id": "CAN-068",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "test",
+  "domanda": "Un campione ha assorbanza troppo alta e viene diluito 1:5. La soluzione diluita dà A = 0,360 con una taratura A = 0,0900 · C (C in mg/L). Qual è la concentrazione del campione originale?",
+  "opzioni": {
+   "A": "4,00 mg/L",
+   "B": "0,800 mg/L",
+   "C": "20,0 mg/L",
+   "D": "1,62 mg/L",
+   "E": "8,00 mg/L"
+  },
+  "giusta": "C",
+  "perche": "La concentrazione della soluzione diluita è 0,360 / 0,0900 = 4,00 mg/L. Poiché il campione è stato diluito cinque volte, quello originale è 4,00 · 5 = 20,0 mg/L. La trappola tipica è dimenticare di moltiplicare per il fattore di diluizione, riportando 4,00 mg/L, oppure dividere invece di moltiplicare.",
+  "semplice": "Prima trovi la concentrazione della soluzione che hai effettivamente misurato, poi «annulli» la diluizione moltiplicando per quante volte hai diluito.",
+  "passaggi": [
+   "C(diluito) = 0,360 / 0,0900 = 4,00 mg/L",
+   "Fattore di diluizione = 5",
+   "C(originale) = 4,00 · 5 = 20,0 mg/L"
+  ],
+  "concetto": "fattore di diluizione"
+ },
+ {
+  "id": "CAN-069",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "università",
+  "domanda": "Una soluzione 2,5 · 10⁻⁵ mol/L, in cuvetta da 1,00 cm, ha assorbanza 0,75. Qual è il coefficiente di assorbimento molare?",
+  "opzioni": {
+   "A": "1,9 · 10⁻⁵ L·mol⁻¹·cm⁻¹",
+   "B": "3,3 · 10⁻⁵ L·mol⁻¹·cm⁻¹",
+   "C": "3,0 · 10³ L·mol⁻¹·cm⁻¹",
+   "D": "3,0 · 10⁴ L·mol⁻¹·cm⁻¹",
+   "E": "7,5 · 10⁴ L·mol⁻¹·cm⁻¹"
+  },
+  "giusta": "D",
+  "perche": "Dalla legge di Lambert-Beer ε = A / (b · c) = 0,75 / (1,00 · 2,5 · 10⁻⁵) = 3,0 · 10⁴ L·mol⁻¹·cm⁻¹. Valori di questo ordine indicano un assorbimento intenso, tipico di transizioni permesse. La trappola è moltiplicare A per c, ottenendo un numero piccolissimo privo di senso fisico.",
+  "semplice": "ε dice quanto fortemente una sostanza assorbe. Si ricava dividendo l'assorbanza misurata per il cammino ottico e per la concentrazione.",
+  "passaggi": [
+   "ε = A / (b · c)",
+   "b · c = 1,00 · 2,5 · 10⁻⁵ = 2,5 · 10⁻⁵",
+   "ε = 0,75 / 2,5 · 10⁻⁵ = 3,0 · 10⁴ L·mol⁻¹·cm⁻¹"
+  ],
+  "concetto": "coefficiente di assorbimento molare"
+ },
+ {
+  "id": "CAN-070",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "università",
+  "domanda": "Una banda IR si trova a 2000 cm⁻¹. A quale lunghezza d'onda corrisponde?",
+  "opzioni": {
+   "A": "0,5 µm",
+   "B": "2,0 µm",
+   "C": "500 nm",
+   "D": "20 µm",
+   "E": "5,0 µm"
+  },
+  "giusta": "E",
+  "perche": "Il numero d'onda è l'inverso della lunghezza d'onda: λ = 1 / ṽ = 1 / 2000 cm⁻¹ = 5,0 · 10⁻⁴ cm = 5,0 µm. In spettroscopia IR si usa il numero d'onda perché è proporzionale all'energia. La trappola è dimenticare la conversione da centimetri a micrometri (1 cm = 10⁴ µm).",
+  "semplice": "Il numero d'onda dice quante onde stanno in un centimetro. Se ce ne stanno 2000, ognuna è lunga un duemillesimo di centimetro, cioè 5 micrometri.",
+  "passaggi": [
+   "λ = 1 / ṽ",
+   "λ = 1 / 2000 cm⁻¹ = 5,0 · 10⁻⁴ cm",
+   "5,0 · 10⁻⁴ cm · 10⁴ µm/cm = 5,0 µm"
+  ],
+  "concetto": "numero d'onda"
+ },
+ {
+  "id": "CAN-071",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "università",
+  "domanda": "Perché in fluorescenza molecolare la luce emessa ha lunghezza d'onda maggiore di quella assorbita?",
+  "opzioni": {
+   "A": "Perché parte dell'energia si perde per rilassamento vibrazionale prima dell'emissione",
+   "B": "Perché l'emissione avviene sempre nell'infrarosso",
+   "C": "Perché il fotone emesso ha più energia di quello assorbito",
+   "D": "Perché il campione riflette la luce incidente",
+   "E": "Perché la molecola acquista energia dal solvente"
+  },
+  "giusta": "A",
+  "perche": "Dopo l'assorbimento la molecola si trova in livelli vibrazionali eccitati dello stato elettronico superiore e cede rapidamente energia all'ambiente scendendo al livello vibrazionale più basso. Solo allora emette, con un fotone di energia minore e quindi lunghezza d'onda maggiore: è lo spostamento di Stokes. La trappola è pensare che la molecola restituisca esattamente l'energia assorbita.",
+  "semplice": "Un evidenziatore illuminato con luce UV brilla di verde o giallo: assorbe luce più energetica e ne restituisce una meno energetica, perché un po' di energia se ne va in calore.",
+  "passaggi": [
+   "Dopo l'assorbimento la molecola è in livelli vibrazionali eccitati dello stato elettronico superiore.",
+   "Cede rapidamente energia all'ambiente (rilassamento vibrazionale) scendendo al livello vibrazionale più basso.",
+   "Solo allora emette: il fotone emesso ha energia minore di quello assorbito.",
+   "Energia minore significa, da E = hc/λ, lunghezza d'onda maggiore (spostamento di Stokes).",
+   "Causa: perdita di energia per rilassamento vibrazionale prima dell'emissione."
+  ],
+  "concetto": "spostamento di Stokes"
+ },
+ {
+  "id": "CAN-072",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Spettrofotometria",
+  "livello": "università",
+  "domanda": "Due specie che non interagiscono sono nella stessa soluzione. Alla lunghezza d'onda di misura la prima, da sola, darebbe A = 0,25 e la seconda A = 0,40. Che assorbanza si misura?",
+  "opzioni": {
+   "A": "0,15",
+   "B": "0,65",
+   "C": "0,325",
+   "D": "0,10",
+   "E": "0,40"
+  },
+  "giusta": "B",
+  "perche": "Le assorbanze di specie indipendenti sono additive: A totale = Σ εᵢ · b · cᵢ = 0,25 + 0,40 = 0,65. Su questa proprietà si basa l'analisi di miscele misurando a più lunghezze d'onda e risolvendo un sistema di equazioni. La trappola è sommare le trasmittanze o fare la media delle assorbanze.",
+  "semplice": "Ogni sostanza «toglie» la sua parte di luce. In scala di assorbanza i contributi si sommano semplicemente, come i pesi di due oggetti messi sullo stesso piatto.",
+  "passaggi": [
+   "A totale = A₁ + A₂",
+   "A = 0,25 + 0,40 = 0,65"
+  ],
+  "concetto": "additività delle assorbanze"
+ },
+ {
+  "id": "CAN-073",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "superiori",
+  "domanda": "In una cromatografia su strato sottile il fronte del solvente percorre 8,0 cm e la macchia di un composto 3,2 cm dal punto di semina. Quanto vale Rf?",
+  "opzioni": {
+   "A": "2,5",
+   "B": "4,8",
+   "C": "0,40",
+   "D": "0,25",
+   "E": "0,60"
+  },
+  "giusta": "C",
+  "perche": "Il fattore di ritardo è Rf = distanza percorsa dalla sostanza / distanza percorsa dal fronte del solvente = 3,2 / 8,0 = 0,40. È sempre un numero compreso tra 0 e 1, perché la sostanza non può superare il solvente. La trappola è invertire il rapporto, ottenendo 2,5, che è impossibile per un Rf.",
+  "semplice": "L'Rf dice quale frazione del percorso del solvente ha fatto la macchia. Qui la macchia ha fatto i quattro decimi della strada.",
+  "passaggi": [
+   "Rf = distanza macchia / distanza fronte",
+   "Rf = 3,2 cm / 8,0 cm",
+   "Rf = 0,40"
+  ],
+  "concetto": "fattore di ritardo Rf"
+ },
+ {
+  "id": "CAN-074",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "superiori",
+  "domanda": "Su che cosa si basa la separazione in ogni tecnica cromatografica?",
+  "opzioni": {
+   "A": "Sulla diversa massa delle molecole, che cadono a velocità diverse",
+   "B": "Sulla diversa carica elettrica in un campo magnetico",
+   "C": "Solo sulla diversa temperatura di ebollizione",
+   "D": "Sulla diversa distribuzione dei componenti tra una fase stazionaria e una fase mobile",
+   "E": "Sul diverso colore dei componenti"
+  },
+  "giusta": "D",
+  "perche": "In cromatografia una fase mobile (liquido o gas) trascina la miscela attraverso una fase stazionaria. Ogni componente si ripartisce tra le due fasi in modo diverso: chi interagisce di più con la fase stazionaria avanza più lentamente. Il colore e la massa non sono il principio della separazione: il colore dà solo il nome storico alla tecnica. La trappola è pensare che la cromatografia funzioni solo con sostanze colorate.",
+  "semplice": "Immagina un gruppo di persone che attraversa un mercato: chi si ferma spesso alle bancarelle (fase stazionaria) arriva tardi, chi segue la folla (fase mobile) arriva prima. Così i componenti si separano.",
+  "passaggi": [
+   "In ogni cromatografia c'è una fase mobile che trascina la miscela attraverso una fase stazionaria.",
+   "Ogni componente si ripartisce tra le due fasi in modo diverso.",
+   "Chi interagisce di più con la fase stazionaria avanza più lentamente.",
+   "Colore, massa e carica non sono il principio generale (il colore dà solo il nome storico).",
+   "La separazione si basa sulla diversa distribuzione tra fase stazionaria e fase mobile."
+  ],
+  "concetto": "principio della cromatografia"
+ },
+ {
+  "id": "CAN-075",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "superiori",
+  "domanda": "In una TLC su gel di silice (polare) con un eluente poco polare, quale composto avrà l'Rf più alto?",
+  "opzioni": {
+   "A": "Il più polare",
+   "B": "Quello con più gruppi –OH",
+   "C": "Tutti hanno lo stesso Rf",
+   "D": "Un sale ionico",
+   "E": "Il meno polare"
+  },
+  "giusta": "E",
+  "perche": "La silice è polare e trattiene i composti polari con legami a idrogeno e interazioni dipolari. Il composto meno polare interagisce poco con la fase stazionaria, viene trascinato dall'eluente e percorre più strada, quindi ha l'Rf più alto. La trappola è ragionare al contrario o dimenticare che aumentando la polarità dell'eluente tutti gli Rf crescono.",
+  "semplice": "Il simile attira il simile: la silice polare «trattiene» le molecole polari. Quelle apolari scivolano via con il solvente e salgono più in alto sulla lastrina.",
+  "passaggi": [
+   "La silice è polare e trattiene i composti polari (legami a idrogeno, interazioni dipolari).",
+   "L'eluente poco polare trascina bene i composti poco polari.",
+   "Il composto meno polare interagisce poco con la silice e percorre più strada.",
+   "Rf = distanza del composto / distanza del fronte: più strada significa Rf più alto.",
+   "Ha l'Rf più alto il composto meno polare."
+  ],
+  "concetto": "polarità e ritenzione"
+ },
+ {
+  "id": "CAN-076",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "superiori",
+  "domanda": "Che cos'è il tempo di ritenzione in gascromatografia o HPLC?",
+  "opzioni": {
+   "A": "Il tempo che passa tra l'iniezione del campione e il massimo del picco di un componente",
+   "B": "La larghezza del picco",
+   "C": "Il tempo di vita dell'analita nel campione",
+   "D": "Il tempo che impiega lo strumento a scaldarsi",
+   "E": "Il tempo necessario a preparare la fase mobile"
+  },
+  "giusta": "A",
+  "perche": "Il tempo di ritenzione tR è il tempo che intercorre tra l'iniezione e l'uscita del massimo del picco di un componente al rivelatore. In condizioni fisse è caratteristico di ogni sostanza e serve per riconoscerla confrontandolo con uno standard. La trappola è usarlo come prova assoluta di identità: due sostanze diverse possono avere lo stesso tR.",
+  "semplice": "È come il tempo di arrivo di un corridore al traguardo: se le condizioni della gara sono sempre le stesse, ogni corridore arriva più o meno sempre allo stesso tempo.",
+  "passaggi": [
+   "Il tempo di ritenzione tR si misura dall'iniezione del campione.",
+   "Termina quando il massimo del picco del componente arriva al rivelatore.",
+   "In condizioni fisse è caratteristico di ogni sostanza e serve a riconoscerla rispetto a uno standard.",
+   "Non è la larghezza del picco né un tempo dello strumento.",
+   "È il tempo tra l'iniezione e il massimo del picco."
+  ],
+  "concetto": "tempo di ritenzione"
+ },
+ {
+  "id": "CAN-077",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "test",
+  "domanda": "In una colonna il tempo morto è 1,5 min e un composto ha tempo di ritenzione 6,0 min. Qual è il fattore di ritenzione k?",
+  "opzioni": {
+   "A": "4,0",
+   "B": "3,0",
+   "C": "4,5",
+   "D": "0,25",
+   "E": "0,33"
+  },
+  "giusta": "B",
+  "perche": "Il fattore di ritenzione è k = (tR − tM) / tM = (6,0 − 1,5) / 1,5 = 3,0. Indica quanto tempo il composto passa nella fase stazionaria rispetto alla fase mobile: qui tre volte tanto. La trappola è dividere tR per tM senza sottrarre il tempo morto, ottenendo 4,0.",
+  "semplice": "Tutti i composti impiegano almeno il tempo morto per attraversare la colonna. Ciò che li distingue è il tempo «extra» passato attaccati alla fase stazionaria, confrontato con il tempo morto.",
+  "passaggi": [
+   "Tempo ridotto: tR − tM = 6,0 − 1,5 = 4,5 min",
+   "k = 4,5 / 1,5",
+   "k = 3,0"
+  ],
+  "concetto": "fattore di ritenzione"
+ },
+ {
+  "id": "CAN-078",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "test",
+  "domanda": "Due composti hanno fattori di ritenzione k₁ = 3,0 e k₂ = 3,6. Quanto vale il fattore di selettività α?",
+  "opzioni": {
+   "A": "0,60",
+   "B": "0,83",
+   "C": "1,2",
+   "D": "6,6",
+   "E": "10,8"
+  },
+  "giusta": "C",
+  "perche": "La selettività è il rapporto tra i fattori di ritenzione, con il composto più trattenuto al numeratore: α = k₂ / k₁ = 3,6 / 3,0 = 1,2. Valori maggiori di 1 indicano che la colonna distingue i due composti; α = 1 significa che coeluiscono. La trappola è fare la differenza tra i k o mettere il valore minore al numeratore.",
+  "semplice": "α misura quanto la colonna «preferisce» trattenere un composto rispetto all'altro. Se vale 1,2, il secondo è trattenuto il 20% in più.",
+  "passaggi": [
+   "α = k₂ / k₁ (k₂ > k₁)",
+   "α = 3,6 / 3,0 = 1,2"
+  ],
+  "concetto": "selettività"
+ },
+ {
+  "id": "CAN-079",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "università",
+  "domanda": "Due picchi hanno tempi di ritenzione 6,0 e 7,0 min e larghezze di base 0,40 e 0,45 min. Quanto vale la risoluzione e i picchi sono separati alla linea di base?",
+  "opzioni": {
+   "A": "Rs = 1,18, separazione incompleta",
+   "B": "Rs = 0,85, picchi sovrapposti",
+   "C": "Rs = 1,00, separazione appena sufficiente",
+   "D": "Rs = 2,35, picchi separati alla linea di base",
+   "E": "Rs = 4,7, separazione eccessiva"
+  },
+  "giusta": "D",
+  "perche": "La risoluzione è Rs = 2(tR2 − tR1) / (w₁ + w₂) = 2 · 1,0 / 0,85 = 2,35. Una risoluzione di almeno 1,5 garantisce la separazione alla linea di base, quindi i picchi sono ben separati. La trappola è dimenticare il fattore 2 al numeratore, ottenendo 1,18, oppure usare le larghezze a metà altezza con la formula delle larghezze di base.",
+  "semplice": "La risoluzione confronta la distanza tra due picchi con la loro larghezza. Se la distanza è molto più grande delle larghezze, i picchi non si toccano.",
+  "passaggi": [
+   "Rs = 2 (tR2 − tR1) / (w₁ + w₂)",
+   "tR2 − tR1 = 1,0 min",
+   "w₁ + w₂ = 0,85 min",
+   "Rs = 2,0 / 0,85 = 2,35",
+   "Rs > 1,5: separazione alla linea di base"
+  ],
+  "concetto": "risoluzione"
+ },
+ {
+  "id": "CAN-080",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "università",
+  "domanda": "Un picco ha tempo di ritenzione 5,0 min e larghezza di base 0,25 min. Quanti piatti teorici ha la colonna?",
+  "opzioni": {
+   "A": "20",
+   "B": "400",
+   "C": "1600",
+   "D": "320",
+   "E": "6400"
+  },
+  "giusta": "E",
+  "perche": "Con la larghezza alla base il numero di piatti teorici è N = 16 (tR / w)² = 16 · (5,0 / 0,25)² = 16 · 400 = 6400. Più N è grande, più i picchi sono stretti e la colonna è efficiente. La trappola è dimenticare il fattore 16 o il quadrato, ottenendo 400 o 20.",
+  "semplice": "Il numero di piatti teorici misura quanto la colonna mantiene stretti i picchi. Un picco sottile rispetto al suo tempo di uscita significa una colonna molto efficiente.",
+  "passaggi": [
+   "N = 16 (tR / w)²",
+   "tR / w = 5,0 / 0,25 = 20",
+   "20² = 400",
+   "N = 16 · 400 = 6400"
+  ],
+  "concetto": "piatti teorici"
+ },
+ {
+  "id": "CAN-081",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "università",
+  "domanda": "Una colonna lunga 15 cm ha 6000 piatti teorici. Qual è l'altezza equivalente a un piatto teorico (HETP)?",
+  "opzioni": {
+   "A": "25 µm",
+   "B": "2,5 µm",
+   "C": "400 µm",
+   "D": "0,25 mm",
+   "E": "40 µm"
+  },
+  "giusta": "A",
+  "perche": "L'altezza equivalente a un piatto teorico è H = L / N = 150 mm / 6000 = 0,025 mm = 25 µm. Un valore di H piccolo indica una colonna efficiente, e permette di confrontare colonne di lunghezza diversa. La trappola è dimenticare di convertire i centimetri in millimetri o micrometri, o invertire il rapporto.",
+  "semplice": "Dividi la colonna in tante «fette» quanti sono i piatti: l'altezza di ogni fetta è H. Più le fette sono sottili, più la colonna separa bene.",
+  "passaggi": [
+   "L = 15 cm = 150 mm",
+   "H = L / N = 150 / 6000 = 0,025 mm",
+   "0,025 mm = 25 µm"
+  ],
+  "concetto": "altezza del piatto"
+ },
+ {
+  "id": "CAN-082",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "test",
+  "domanda": "Quale rivelatore gascromatografico è particolarmente adatto e molto usato per i composti organici?",
+  "opzioni": {
+   "A": "Elettrodo a vetro",
+   "B": "Rivelatore a ionizzazione di fiamma (FID)",
+   "C": "Lampada a catodo cavo",
+   "D": "Fotomoltiplicatore UV-visibile",
+   "E": "Conduttimetro"
+  },
+  "giusta": "B",
+  "perche": "Il FID brucia in una fiamma idrogeno-aria i composti in uscita dalla colonna; i composti organici producono ioni e quindi una corrente proporzionale alla quantità di carbonio. È sensibile, ha un ampio intervallo lineare e risponde poco ad acqua e gas permanenti. La trappola è pensare che risponda a tutto: non vede ad esempio acqua, CO₂ e gas nobili, per i quali si usa il rivelatore a conducibilità termica.",
+  "semplice": "Il FID è come un piccolo bruciatore: quando nella fiamma arriva una sostanza organica, si formano ioni e lo strumento registra un picco.",
+  "passaggi": [
+   "Elettrodo a vetro e conduttimetro sono per soluzioni; catodo cavo e fotomoltiplicatore UV-visibile per spettroscopia.",
+   "Il FID brucia in una fiamma idrogeno-aria i composti in uscita dalla colonna.",
+   "I composti organici producono ioni: si misura una corrente proporzionale al carbonio.",
+   "È sensibile e lineare su un ampio intervallo, ma non vede acqua, CO₂ e gas nobili.",
+   "Il rivelatore è il FID (ionizzazione di fiamma)."
+  ],
+  "concetto": "rivelatori GC"
+ },
+ {
+  "id": "CAN-083",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "test",
+  "domanda": "In HPLC a fase inversa con colonna C18 e fase mobile acqua-metanolo, quale composto esce per primo?",
+  "opzioni": {
+   "A": "Il più apolare",
+   "B": "Il più pesante",
+   "C": "Il più polare",
+   "D": "Quello con la catena idrocarburica più lunga",
+   "E": "Escono tutti insieme"
+  },
+  "giusta": "C",
+  "perche": "In fase inversa la fase stazionaria (catene C18) è apolare e la fase mobile è polare. I composti polari preferiscono la fase mobile e vengono eluiti per primi, quelli apolari sono trattenuti più a lungo. Aumentando la percentuale di metanolo o acetonitrile la fase mobile diventa meno polare e i tempi di ritenzione diminuiscono. La trappola è applicare la logica della fase normale, in cui l'ordine è opposto.",
+  "semplice": "La colonna C18 è come una spugna «oleosa»: trattiene le molecole oleose e lascia scappare quelle che amano l'acqua.",
+  "passaggi": [
+   "Fase inversa: fase stazionaria apolare (catene C18), fase mobile polare (acqua-metanolo).",
+   "I composti polari preferiscono la fase mobile e vengono trascinati via presto.",
+   "I composti apolari (catene lunghe) restano trattenuti dalla C18 più a lungo.",
+   "In fase normale l'ordine sarebbe opposto.",
+   "Esce per primo il composto più polare."
+  ],
+  "concetto": "HPLC a fase inversa"
+ },
+ {
+  "id": "CAN-084",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "università",
+  "domanda": "Qual è lo scopo dell'eluizione a gradiente in HPLC?",
+  "opzioni": {
+   "A": "Aumentare la temperatura della colonna",
+   "B": "Mantenere costante la composizione della fase mobile",
+   "C": "Ridurre il numero di piatti teorici",
+   "D": "Variare durante l'analisi la composizione della fase mobile per eluire in tempi ragionevoli composti con ritenzioni molto diverse",
+   "E": "Separare i componenti in base alla massa"
+  },
+  "giusta": "D",
+  "perche": "Con una miscela di composti molto diversi, una fase mobile fissa o eluisce male i primi o trattiene troppo gli ultimi, che escono tardi e con picchi larghi. Il gradiente aumenta progressivamente la forza eluente (per esempio la percentuale di solvente organico in fase inversa), così tutti i picchi escono stretti in un tempo ragionevole. È l'analogo della programmata di temperatura in gascromatografia. La trappola è confonderlo con un gradiente di temperatura.",
+  "semplice": "All'inizio si usa un eluente «debole» per separare bene i composti poco trattenuti, poi lo si rende via via più «forte» per spingere fuori anche quelli più attaccati alla colonna.",
+  "passaggi": [
+   "Con composti molto diversi, una fase mobile fissa eluisce male i primi o trattiene troppo gli ultimi.",
+   "Gli ultimi uscirebbero tardi e con picchi larghi.",
+   "Il gradiente aumenta via via la forza eluente (per esempio più solvente organico in fase inversa).",
+   "Non riguarda temperatura né massa: è l'analogo della programmata di temperatura in GC.",
+   "Scopo: variare la composizione della fase mobile per eluire tutto in tempi ragionevoli."
+  ],
+  "concetto": "eluizione a gradiente"
+ },
+ {
+  "id": "CAN-085",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "università",
+  "domanda": "Con uno standard interno, una soluzione di taratura con analita 2,0 mg/L e standard interno 2,0 mg/L dà aree 500 e 400. Un campione con standard interno 2,0 mg/L dà aree 450 (analita) e 400 (standard). Qual è la concentrazione dell'analita?",
+  "opzioni": {
+   "A": "2,25 mg/L",
+   "B": "2,0 mg/L",
+   "C": "1,6 mg/L",
+   "D": "2,8 mg/L",
+   "E": "1,8 mg/L"
+  },
+  "giusta": "E",
+  "perche": "Il fattore di risposta relativo è F = (Aₓ/Aₛ) / (Cₓ/Cₛ) = (500/400) / (2,0/2,0) = 1,25. Nel campione Cₓ = (Aₓ/Aₛ) / F · Cₛ = (450/400) / 1,25 · 2,0 = 1,8 mg/L. Lo standard interno compensa variazioni nel volume iniettato e nella risposta dello strumento. La trappola è ignorare il fattore di risposta e usare direttamente il rapporto delle aree, ottenendo 2,25 mg/L.",
+  "semplice": "Lo standard interno è un «compagno di viaggio» aggiunto in quantità nota: se l'iniezione è un po' più piccola, calano entrambe le aree e il loro rapporto resta affidabile.",
+  "passaggi": [
+   "F = (500 / 400) / (2,0 / 2,0) = 1,25",
+   "Rapporto aree nel campione: 450 / 400 = 1,125",
+   "Cₓ / Cₛ = 1,125 / 1,25 = 0,90",
+   "Cₓ = 0,90 · 2,0 = 1,8 mg/L"
+  ],
+  "concetto": "standard interno"
+ },
+ {
+  "id": "CAN-086",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "università",
+  "domanda": "Che cosa descrive l'equazione di van Deemter H = A + B/u + C·u?",
+  "opzioni": {
+   "A": "La dipendenza dell'altezza del piatto teorico dalla velocità della fase mobile, con un valore ottimale di velocità",
+   "B": "La relazione tra assorbanza e concentrazione",
+   "C": "Il legame tra tempo di ritenzione e temperatura",
+   "D": "La relazione lineare tra area del picco e massa iniettata",
+   "E": "La variazione del pH della fase mobile"
+  },
+  "giusta": "A",
+  "perche": "L'equazione di van Deemter somma tre contributi all'allargamento dei picchi: i percorsi multipli (termine costante), la diffusione longitudinale che pesa a basse velocità (B/u) e la resistenza al trasferimento di massa che pesa ad alte velocità (C·u). La curva H in funzione di u ha un minimo: è la velocità ottimale, in cui la colonna è più efficiente. La trappola è pensare che aumentare sempre il flusso migliori la separazione.",
+  "semplice": "Se la fase mobile va troppo piano, le molecole hanno tempo di diffondere e i picchi si allargano; se va troppo veloce, non fanno in tempo a scambiarsi tra le fasi. Esiste una velocità «giusta» nel mezzo.",
+  "passaggi": [
+   "H è l'altezza del piatto teorico (più piccola = colonna più efficiente), u la velocità della fase mobile.",
+   "A: percorsi multipli, costante.",
+   "B/u: diffusione longitudinale, pesa a basse velocità; C·u: trasferimento di massa, pesa ad alte velocità.",
+   "La somma ha un minimo: esiste una velocità ottimale.",
+   "Descrive la dipendenza di H dalla velocità, con un valore ottimale."
+  ],
+  "concetto": "equazione di van Deemter"
+ },
+ {
+  "id": "CAN-087",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "superiori",
+  "domanda": "Quale gas si usa comunemente come gas di trasporto (carrier) in gascromatografia?",
+  "opzioni": {
+   "A": "Ossigeno",
+   "B": "Elio o azoto",
+   "C": "Cloro",
+   "D": "Anidride carbonica",
+   "E": "Vapore acqueo"
+  },
+  "giusta": "B",
+  "perche": "Il gas di trasporto deve essere inerte, cioè non reagire con i campioni né con la fase stazionaria, ed essere puro. Elio, azoto e idrogeno sono i più usati. L'ossigeno è escluso perché ossiderebbe i campioni e degraderebbe la colonna calda. La trappola è pensare che in GC il gas partecipi alla separazione interagendo con i campioni: in realtà li trasporta soltanto.",
+  "semplice": "Il carrier è come un nastro trasportatore: porta le molecole attraverso la colonna senza toccarle chimicamente.",
+  "passaggi": [
+   "Il gas di trasporto deve essere inerte e puro: trasporta soltanto i campioni.",
+   "Ossigeno e cloro sono reattivi: ossiderebbero i campioni e la colonna calda.",
+   "CO₂ e vapore acqueo non sono adatti come carrier.",
+   "I più usati sono elio, azoto (e idrogeno).",
+   "Risposta: elio o azoto."
+  ],
+  "concetto": "gas di trasporto"
+ },
+ {
+  "id": "CAN-088",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "test",
+  "domanda": "Un cromatogramma di una miscela mostra tre picchi con aree 120, 300 e 580 (fattori di risposta uguali). Qual è la percentuale del terzo componente con il metodo di normalizzazione delle aree?",
+  "opzioni": {
+   "A": "48%",
+   "B": "30%",
+   "C": "58%",
+   "D": "65%",
+   "E": "12%"
+  },
+  "giusta": "C",
+  "perche": "Con la normalizzazione si divide l'area di ciascun picco per la somma di tutte le aree: 580 / (120 + 300 + 580) = 580 / 1000 = 58%. Il metodo è corretto solo se tutti i componenti danno un picco e hanno la stessa risposta al rivelatore, altrimenti servono fattori di correzione. La trappola è confrontare l'area con quella del picco più grande o dimenticare uno dei picchi nella somma.",
+  "semplice": "Come per una torta divisa in fette: la fetta del terzo componente è 580 su un totale di 1000, cioè più della metà.",
+  "passaggi": [
+   "Area totale = 120 + 300 + 580 = 1000",
+   "Percentuale = 580 / 1000 · 100",
+   "Risultato: 58%"
+  ],
+  "concetto": "normalizzazione delle aree"
+ },
+ {
+  "id": "CAN-089",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "università",
+  "domanda": "In cromatografia di esclusione dimensionale (gel filtration), quali molecole escono per prime?",
+  "opzioni": {
+   "A": "Le più piccole",
+   "B": "Le più polari",
+   "C": "Quelle con carica positiva",
+   "D": "Le più grandi",
+   "E": "Quelle con punto di ebollizione più basso"
+  },
+  "giusta": "D",
+  "perche": "La fase stazionaria è un gel con pori di dimensione controllata. Le molecole piccole entrano nei pori e percorrono un cammino più lungo, mentre quelle grandi, escluse dai pori, scorrono negli spazi tra i granuli ed escono prima. Per questo la tecnica si usa per separare proteine o polimeri in base alla massa molecolare. La trappola è pensare che le molecole piccole, «più agili», escano per prime.",
+  "semplice": "Immagina una corsa in un bosco pieno di tane: i bambini piccoli entrano in ogni tana e perdono tempo, gli adulti non ci entrano e arrivano prima al traguardo.",
+  "passaggi": [
+   "La fase stazionaria è un gel con pori di dimensione controllata.",
+   "Le molecole piccole entrano nei pori e percorrono un cammino più lungo.",
+   "Le molecole grandi, escluse dai pori, passano tra i granuli e arrivano prima.",
+   "Polarità, carica ed ebollizione non contano in questa tecnica.",
+   "Escono per prime le molecole più grandi."
+  ],
+  "concetto": "esclusione dimensionale"
+ },
+ {
+  "id": "CAN-090",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Cromatografia",
+  "livello": "test",
+  "domanda": "In una colonna il tempo morto è 2,0 min. Un composto ha fattore di ritenzione k = 4,0. Qual è il suo tempo di ritenzione?",
+  "opzioni": {
+   "A": "8,0 min",
+   "B": "6,0 min",
+   "C": "2,5 min",
+   "D": "0,50 min",
+   "E": "10,0 min"
+  },
+  "giusta": "E",
+  "perche": "Da k = (tR − tM) / tM si ricava tR = tM (1 + k) = 2,0 · (1 + 4,0) = 10,0 min. Il composto passa 8 minuti nella fase stazionaria, oltre ai 2 minuti necessari ad attraversare la colonna con la fase mobile. La trappola è calcolare solo k · tM = 8,0 min, dimenticando il tempo morto.",
+  "semplice": "Ogni composto deve prima di tutto attraversare la colonna (2 minuti), poi resta «fermo» sulla fase stazionaria per un tempo pari a k volte il tempo morto.",
+  "passaggi": [
+   "tR = tM (1 + k)",
+   "1 + 4,0 = 5,0",
+   "tR = 2,0 · 5,0 = 10,0 min"
+  ],
+  "concetto": "tempo di ritenzione e k"
+ },
+ {
+  "id": "CAN-091",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "test",
+  "domanda": "Qual è il potenziale di un elettrodo di rame immerso in una soluzione di Cu²⁺ 0,010 mol/L a 25 °C (E° = +0,34 V)?",
+  "opzioni": {
+   "A": "+0,28 V",
+   "B": "+0,22 V",
+   "C": "+0,34 V",
+   "D": "+0,40 V",
+   "E": "+0,31 V"
+  },
+  "giusta": "A",
+  "perche": "Per Cu²⁺ + 2e⁻ → Cu l'equazione di Nernst a 25 °C è E = E° + (0,0592/2) · log[Cu²⁺] = 0,34 + 0,0296 · (−2) = 0,28 V. Diluendo lo ione ossidato il potenziale diminuisce. La trappola tipica è dimenticare di dividere per il numero di elettroni scambiati (n = 2), ottenendo 0,22 V, oppure sbagliare il segno del logaritmo.",
+  "semplice": "L'equazione di Nernst corregge il potenziale standard in base alla concentrazione. Ogni volta che la concentrazione di Cu²⁺ diventa dieci volte più piccola, il potenziale scende di circa 30 mV, perché il rame scambia due elettroni.",
+  "passaggi": [
+   "E = E° + (0,0592 / n) · log[Cu²⁺]",
+   "n = 2: 0,0592 / 2 = 0,0296 V",
+   "log(0,010) = −2",
+   "E = 0,34 + 0,0296 · (−2) = 0,34 − 0,059 = 0,28 V"
+  ],
+  "concetto": "equazione di Nernst"
+ },
+ {
+  "id": "CAN-092",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "superiori",
+  "domanda": "Quale elettrodo si usa normalmente per misurare il pH con un pH-metro?",
+  "opzioni": {
+   "A": "Elettrodo di platino",
+   "B": "Elettrodo a vetro (spesso combinato con un riferimento)",
+   "C": "Elettrodo di rame",
+   "D": "Elettrodo a goccia di mercurio",
+   "E": "Elettrodo di zinco"
+  },
+  "giusta": "B",
+  "perche": "L'elettrodo a vetro ha una sottile membrana di vetro speciale il cui potenziale dipende dall'attività degli ioni H⁺ in soluzione. Nei pH-metri moderni è spesso combinato in un unico corpo con l'elettrodo di riferimento. È selettivo per H⁺ e funziona in un ampio intervallo di pH. La trappola è pensare che il pH-metro misuri direttamente una concentrazione: misura una differenza di potenziale.",
+  "semplice": "La punta a bulbo del pH-metro è di vetro speciale: gli ioni H⁺ della soluzione creano una piccola tensione ai suoi lati, che lo strumento trasforma in un valore di pH.",
+  "passaggi": [
+   "Il pH-metro misura una differenza di potenziale legata all'attività di H⁺.",
+   "Serve un elettrodo selettivo per gli ioni H⁺.",
+   "La membrana sottile di vetro speciale ha un potenziale che dipende dall'attività di H⁺.",
+   "Platino, rame, zinco e mercurio non sono selettivi per H⁺.",
+   "Si usa l'elettrodo a vetro, spesso combinato con il riferimento."
+  ],
+  "concetto": "elettrodo a vetro"
+ },
+ {
+  "id": "CAN-093",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "superiori",
+  "domanda": "Quale caratteristica deve avere un elettrodo di riferimento?",
+  "opzioni": {
+   "A": "Il suo potenziale deve variare con il pH",
+   "B": "Deve reagire con l'analita",
+   "C": "Deve avere un potenziale stabile e noto, indipendente dalla composizione del campione",
+   "D": "Deve essere sempre di platino",
+   "E": "Deve essere immerso direttamente nell'analita senza giunzione"
+  },
+  "giusta": "C",
+  "perche": "L'elettrodo di riferimento fornisce un potenziale costante rispetto al quale si misura quello dell'elettrodo indicatore. Esempi comuni sono l'elettrodo Ag/AgCl e quello a calomelano saturo, che comunicano con il campione tramite un setto poroso. La trappola è confondere riferimento e indicatore: è l'indicatore, non il riferimento, che risponde all'analita.",
+  "semplice": "Per misurare un'altezza serve un punto zero fisso, come il livello del mare. L'elettrodo di riferimento è il «livello del mare» delle misure di potenziale.",
+  "passaggi": [
+   "Il potenziale si misura come differenza tra elettrodo indicatore ed elettrodo di riferimento.",
+   "L'indicatore risponde all'analita; il riferimento deve restare fisso.",
+   "Quindi il riferimento deve avere potenziale stabile e noto, indipendente dal campione.",
+   "Esempi: Ag/AgCl, calomelano saturo, collegati tramite setto poroso.",
+   "Risposta: potenziale stabile e noto, indipendente dalla composizione del campione."
+  ],
+  "concetto": "elettrodo di riferimento"
+ },
+ {
+  "id": "CAN-094",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "test",
+  "domanda": "Di quanto varia idealmente il potenziale di un elettrodo a vetro a 25 °C quando il pH passa da 4 a 7?",
+  "opzioni": {
+   "A": "59 mV",
+   "B": "3 mV",
+   "C": "0,59 V",
+   "D": "177 mV",
+   "E": "118 mV"
+  },
+  "giusta": "D",
+  "perche": "Un elettrodo a vetro ideale ha una risposta nernstiana di 59,2 mV per unità di pH a 25 °C. Una variazione di 3 unità corrisponde quindi a circa 3 · 59,2 = 177 mV. La trappola è usare la pendenza per unità di pH senza moltiplicare per il numero di unità, oppure confondere millivolt e volt.",
+  "semplice": "Ogni unità di pH cambia la tensione di circa 59 millivolt. Tre unità di pH valgono quindi circa 177 mV.",
+  "passaggi": [
+   "Pendenza a 25 °C: 59,2 mV per unità di pH",
+   "ΔpH = 7 − 4 = 3",
+   "ΔE = 3 · 59,2 = 177 mV"
+  ],
+  "concetto": "pendenza nernstiana"
+ },
+ {
+  "id": "CAN-095",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "superiori",
+  "domanda": "Come si effettua correttamente la taratura di un pH-metro?",
+  "opzioni": {
+   "A": "Con acqua distillata soltanto",
+   "B": "Con il campione stesso",
+   "C": "Con una soluzione di HCl concentrato",
+   "D": "Non serve tarare, il pH-metro è sempre esatto",
+   "E": "Con almeno due soluzioni tampone a pH noto che comprendano l'intervallo di misura"
+  },
+  "giusta": "E",
+  "perche": "La taratura si fa con soluzioni tampone certificate, di solito pH 7 e pH 4 o 10, scelte in modo da comprendere i valori attesi. Il primo tampone fissa lo zero, il secondo la pendenza della risposta. L'acqua distillata non va bene perché ha pH instabile e conducibilità bassissima. La trappola è tarare con un solo tampone, che corregge lo zero ma non la pendenza.",
+  "semplice": "Tarare un pH-metro è come regolare un orologio con due punti di riferimento sicuri. I tamponi hanno un pH noto e stabile, perfetti per questo scopo.",
+  "passaggi": [
+   "Servono soluzioni a pH noto e stabile: tamponi certificati.",
+   "Il primo tampone (di solito pH 7) fissa lo zero.",
+   "Il secondo (pH 4 o 10) fissa la pendenza; insieme devono comprendere i valori attesi.",
+   "L'acqua distillata ha pH instabile, il campione ha pH ignoto, HCl concentrato non è un tampone.",
+   "Si tara con almeno due tamponi a pH noto."
+  ],
+  "concetto": "taratura del pH-metro"
+ },
+ {
+  "id": "CAN-096",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "università",
+  "domanda": "In una titolazione conduttimetrica di HCl con NaOH, come varia la conducibilità prima dell'equivalenza?",
+  "opzioni": {
+   "A": "Diminuisce, perché gli ioni H⁺ molto mobili sono sostituiti da ioni Na⁺ meno mobili",
+   "B": "Resta costante",
+   "C": "Aumenta, perché si aggiungono ioni",
+   "D": "Diminuisce fino a zero",
+   "E": "Oscilla senza andamento"
+  },
+  "giusta": "A",
+  "perche": "Prima dell'equivalenza ogni OH⁻ aggiunto neutralizza un H⁺ e al suo posto rimane un Na⁺. Lo ione H⁺ ha una conducibilità ionica molto più alta di Na⁺, quindi la conducibilità scende. Dopo l'equivalenza si accumulano Na⁺ e OH⁻ in eccesso e la conducibilità risale: l'incrocio delle due rette indica il punto di equivalenza. La trappola è pensare che aggiungere ioni faccia sempre crescere la conducibilità.",
+  "semplice": "Gli ioni H⁺ sono i «velocisti» della conducibilità. Quando vengono sostituiti da ioni sodio, più lenti, la soluzione conduce meno, finché la base in eccesso fa di nuovo salire la curva a forma di V.",
+  "passaggi": [
+   "Reazione: H⁺ + Cl⁻ + Na⁺ + OH⁻ → H₂O + Na⁺ + Cl⁻.",
+   "Prima dell'equivalenza ogni OH⁻ toglie un H⁺ e al suo posto resta un Na⁺.",
+   "H⁺ ha conducibilità ionica molto più alta di Na⁺.",
+   "Il numero di ioni resta simile ma la loro mobilità cala: la conducibilità scende (risale solo dopo l'equivalenza).",
+   "Diminuisce, perché H⁺ molto mobili sono sostituiti da Na⁺ meno mobili."
+  ],
+  "concetto": "titolazione conduttimetrica"
+ },
+ {
+  "id": "CAN-097",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "test",
+  "domanda": "In una titolazione potenziometrica, come si individua con precisione il punto di equivalenza dai dati E-V?",
+  "opzioni": {
+   "A": "Dove il potenziale vale zero",
+   "B": "Nel punto in cui la pendenza ΔE/ΔV è massima (flesso della curva)",
+   "C": "Dove il potenziale è minimo",
+   "D": "All'inizio della curva",
+   "E": "Dopo aver aggiunto metà del titolante"
+  },
+  "giusta": "B",
+  "perche": "Al punto di equivalenza il potenziale cambia bruscamente per piccole aggiunte di titolante: è il punto di flesso della curva sigmoide. Calcolando la derivata prima ΔE/ΔV si ottiene un massimo proprio all'equivalenza, mentre la derivata seconda passa per lo zero. La trappola è cercare il punto in cui E = 0, che non ha nessun significato particolare.",
+  "semplice": "Sulla curva della titolazione c'è un tratto quasi verticale: lì si trova l'equivalenza. Il punto più ripido si trova facendo il rapporto tra quanto cambia la tensione e quanto titolante hai aggiunto.",
+  "passaggi": [
+   "La curva E-V di una titolazione potenziometrica ha forma a S (sigmoide).",
+   "All'equivalenza il potenziale cambia bruscamente per piccole aggiunte: è il flesso.",
+   "La derivata prima ΔE/ΔV ha lì il suo massimo (la derivata seconda passa per zero).",
+   "Il valore E = 0 o il minimo di E non hanno significato particolare.",
+   "L'equivalenza è dove ΔE/ΔV è massima."
+  ],
+  "concetto": "titolazione potenziometrica"
+ },
+ {
+  "id": "CAN-098",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "test",
+  "domanda": "Qual è il potenziale di un elettrodo di platino in una soluzione con [Fe³⁺]/[Fe²⁺] = 10 a 25 °C (E° = +0,77 V)?",
+  "opzioni": {
+   "A": "+0,71 V",
+   "B": "+0,77 V",
+   "C": "+0,83 V",
+   "D": "+1,36 V",
+   "E": "+0,80 V"
+  },
+  "giusta": "C",
+  "perche": "Per Fe³⁺ + e⁻ → Fe²⁺ (n = 1) l'equazione di Nernst è E = E° + 0,0592 · log([Fe³⁺]/[Fe²⁺]) = 0,77 + 0,0592 · 1 = 0,83 V. La forma ossidata sta al numeratore del logaritmo: se prevale, il potenziale aumenta. La trappola è invertire il rapporto, ottenendo 0,71 V.",
+  "semplice": "Il platino non reagisce, ma «sente» il rapporto tra ferro ossidato e ridotto. Più ferro(III) c'è, più il potenziale sale: con un rapporto 10 aumenta di circa 59 mV.",
+  "passaggi": [
+   "E = E° + (0,0592 / 1) · log([Fe³⁺]/[Fe²⁺])",
+   "log 10 = 1",
+   "E = 0,77 + 0,059 = 0,83 V"
+  ],
+  "concetto": "coppie redox"
+ },
+ {
+  "id": "CAN-099",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "università",
+  "domanda": "Una corrente di 0,500 A attraversa per 965 s una soluzione di Cu²⁺. Quanti grammi di rame si depositano (F = 96485 C/mol, M(Cu) = 63,55 g/mol)?",
+  "opzioni": {
+   "A": "0,318 g",
+   "B": "0,0795 g",
+   "C": "1,59 g",
+   "D": "0,159 g",
+   "E": "0,636 g"
+  },
+  "giusta": "D",
+  "perche": "La carica è Q = I · t = 0,500 · 965 = 482,5 C, pari a 482,5 / 96485 = 5,00 · 10⁻³ mol di elettroni. Ogni Cu²⁺ ne richiede 2, quindi si depositano 2,50 · 10⁻³ mol di rame, cioè 0,159 g. La trappola è dimenticare la divisione per 2 (ottenendo 0,318 g) o usare i minuti invece dei secondi.",
+  "semplice": "Contando gli elettroni che passano nel circuito si contano gli atomi depositati. Siccome ogni ione rame ne vuole due, gli atomi di rame sono la metà degli elettroni.",
+  "passaggi": [
+   "Q = I · t = 0,500 A · 965 s = 482,5 C",
+   "n(e⁻) = 482,5 / 96485 = 5,00 · 10⁻³ mol",
+   "n(Cu) = 5,00 · 10⁻³ / 2 = 2,50 · 10⁻³ mol",
+   "m = 2,50 · 10⁻³ · 63,55 = 0,159 g"
+  ],
+  "concetto": "leggi di Faraday"
+ },
+ {
+  "id": "CAN-100",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "superiori",
+  "domanda": "Qual è la forza elettromotrice standard della pila Daniell Zn | Zn²⁺ || Cu²⁺ | Cu (E°Cu = +0,34 V; E°Zn = −0,76 V)?",
+  "opzioni": {
+   "A": "−0,42 V",
+   "B": "+0,42 V",
+   "C": "+0,34 V",
+   "D": "−1,10 V",
+   "E": "+1,10 V"
+  },
+  "giusta": "E",
+  "perche": "La f.e.m. si calcola come E°catodo − E°anodo. Il rame, con potenziale più alto, si riduce al catodo; lo zinco si ossida all'anodo. Quindi f.e.m. = 0,34 − (−0,76) = 1,10 V. La trappola è sommare algebricamente i potenziali senza sottrarre, ottenendo 0,42 V, o mettere lo zinco al catodo e ottenere un valore negativo.",
+  "semplice": "In una pila gli elettroni vanno dal metallo che li cede più volentieri (lo zinco) a quello che li accetta meglio (il rame). La differenza tra i due potenziali dà la tensione: 1,10 V.",
+  "passaggi": [
+   "f.e.m. = E°catodo − E°anodo",
+   "Catodo: Cu (+0,34 V); anodo: Zn (−0,76 V)",
+   "f.e.m. = 0,34 − (−0,76) = 1,10 V"
+  ],
+  "concetto": "forza elettromotrice"
+ },
+ {
+  "id": "CAN-101",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "test",
+  "domanda": "L'elettrodo ionoselettivo per il fluoruro usa una membrana di quale materiale?",
+  "opzioni": {
+   "A": "Cristallo di LaF₃ drogato con europio",
+   "B": "Vetro al silicato di sodio",
+   "C": "Platino lucido",
+   "D": "Argento metallico",
+   "E": "Carta da filtro imbevuta di KCl"
+  },
+  "giusta": "A",
+  "perche": "L'elettrodo per fluoruro ha una membrana cristallina di fluoruro di lantanio LaF₃, drogata con EuF₂ per aumentarne la conducibilità. Il potenziale della membrana dipende dall'attività dello ione F⁻ secondo l'equazione di Nernst. Si usa per esempio per il fluoro nelle acque e nei dentifrici, con un tampone (TISAB) che fissa forza ionica e pH. La trappola è credere che tutti gli elettrodi a membrana siano di vetro.",
+  "semplice": "Ogni elettrodo ionoselettivo ha una «porta» che lascia passare solo un tipo di ione. Per il fluoruro questa porta è un cristallo di fluoruro di lantanio.",
+  "passaggi": [
+   "Serve una membrana selettiva per lo ione fluoruro F⁻.",
+   "Si usa un cristallo di fluoruro di lantanio, LaF₃.",
+   "Il drogaggio con europio (EuF₂) ne aumenta la conducibilità.",
+   "Il vetro è la membrana dell'elettrodo per il pH, non per il fluoruro.",
+   "La membrana è un cristallo di LaF₃ drogato con europio."
+  ],
+  "concetto": "elettrodi ionoselettivi"
+ },
+ {
+  "id": "CAN-102",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "università",
+  "domanda": "In voltammetria, quale grandezza è proporzionale alla concentrazione dell'analita?",
+  "opzioni": {
+   "A": "Il potenziale di semionda",
+   "B": "La corrente limite (o di picco)",
+   "C": "La temperatura della soluzione",
+   "D": "La resistenza della cella",
+   "E": "Il tempo di gocciolamento"
+  },
+  "giusta": "B",
+  "perche": "In voltammetria la corrente limite di diffusione, o la corrente di picco nelle tecniche impulsive, è proporzionale alla concentrazione della specie elettroattiva, ed è la base delle misure quantitative. Il potenziale di semionda dipende invece dalla natura della specie e serve per l'identificazione qualitativa. La trappola è scambiare le due informazioni.",
+  "semplice": "Nel grafico corrente-potenziale l'«altezza» dell'onda dice quanto analita c'è, la «posizione» dice quale analita è.",
+  "passaggi": [
+   "In voltammetria si registra la corrente in funzione del potenziale applicato.",
+   "Il potenziale di semionda dipende dalla natura della specie: serve a identificarla.",
+   "La corrente limite di diffusione (o di picco) cresce con la concentrazione della specie elettroattiva.",
+   "È proporzionale alla concentrazione la corrente limite (o di picco)."
+  ],
+  "concetto": "voltammetria"
+ },
+ {
+  "id": "CAN-103",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "università",
+  "domanda": "Una pila di concentrazione è formata da due elettrodi di rame immersi in Cu²⁺ 0,10 mol/L e 0,0010 mol/L. Qual è la f.e.m. a 25 °C?",
+  "opzioni": {
+   "A": "0,030 V",
+   "B": "0,118 V",
+   "C": "0,059 V",
+   "D": "0 V",
+   "E": "0,34 V"
+  },
+  "giusta": "C",
+  "perche": "In una pila di concentrazione i due semielementi hanno lo stesso E°, che quindi si elide. La f.e.m. è E = (0,0592/n) · log(C₁/C₂) = (0,0592/2) · log 100 = 0,0296 · 2 = 0,059 V. La trappola è dimenticare n = 2, ottenendo 0,118 V, oppure pensare che con due elettrodi uguali la tensione sia nulla.",
+  "semplice": "Anche due elettrodi identici producono corrente se sono immersi in soluzioni di concentrazione diversa: il sistema tende a uguagliare le concentrazioni.",
+  "passaggi": [
+   "E = (0,0592 / n) · log(C₁ / C₂)",
+   "C₁ / C₂ = 0,10 / 0,0010 = 100; log 100 = 2",
+   "n = 2: 0,0296 · 2 = 0,059 V"
+  ],
+  "concetto": "pila di concentrazione"
+ },
+ {
+  "id": "CAN-104",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "superiori",
+  "domanda": "A che cosa serve la costante di cella di un conduttimetro?",
+  "opzioni": {
+   "A": "A correggere la temperatura",
+   "B": "A determinare il potenziale standard",
+   "C": "A misurare il pH",
+   "D": "A passare dalla conduttanza misurata alla conducibilità specifica della soluzione",
+   "E": "A calcolare la massa molare"
+  },
+  "giusta": "D",
+  "perche": "Lo strumento misura la conduttanza G (in siemens), che dipende anche dalla geometria degli elettrodi. Moltiplicando per la costante di cella K = l/A (distanza su superficie) si ottiene la conducibilità specifica κ = G · K, in S/cm, che è una proprietà della sola soluzione. La costante si determina con soluzioni standard di KCl. La trappola è confondere la conduttanza con la conducibilità specifica.",
+  "semplice": "Due elettrodi più grandi o più vicini fanno passare più corrente anche nella stessa acqua. La costante di cella elimina questo effetto, così puoi confrontare soluzioni misurate con celle diverse.",
+  "passaggi": [
+   "Il conduttimetro misura la conduttanza G, in siemens, che dipende anche dalla geometria degli elettrodi.",
+   "La costante di cella è K = l/A (distanza tra elettrodi / superficie).",
+   "κ = G · K dà la conducibilità specifica in S/cm, proprietà della sola soluzione.",
+   "K si determina con soluzioni standard di KCl.",
+   "Serve a passare dalla conduttanza alla conducibilità specifica."
+  ],
+  "concetto": "conducibilità specifica"
+ },
+ {
+  "id": "CAN-105",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "superiori",
+  "domanda": "Qual è la funzione del ponte salino in una pila?",
+  "opzioni": {
+   "A": "Fornire elettroni al catodo",
+   "B": "Aumentare la tensione della pila",
+   "C": "Far mescolare le due soluzioni",
+   "D": "Impedire il passaggio di corrente",
+   "E": "Mantenere l'elettroneutralità delle due soluzioni chiudendo il circuito interno con il movimento di ioni"
+  },
+  "giusta": "E",
+  "perche": "Durante il funzionamento della pila in un comparto si formano cationi e nell'altro si consumano: senza compensazione le soluzioni si caricherebbero e la corrente si fermerebbe. Il ponte salino, contenente un elettrolita come KCl o KNO₃, cede ioni che neutralizzano le cariche, chiudendo il circuito senza mescolare le soluzioni. La trappola è pensare che nel ponte salino viaggino elettroni: gli elettroni passano solo nel filo esterno.",
+  "semplice": "Il ponte salino è come una valvola di sfogo per le cariche: senza di esso le due metà della pila si «bloccano» in pochi istanti.",
+  "passaggi": [
+   "In un comparto si formano cationi, nell'altro si consumano: le soluzioni tenderebbero a caricarsi.",
+   "Senza compensazione la corrente si fermerebbe.",
+   "Il ponte salino (KCl o KNO₃) cede ioni che neutralizzano le cariche, senza mescolare le soluzioni.",
+   "Gli elettroni passano solo nel filo esterno, non nel ponte.",
+   "Funzione: mantenere l'elettroneutralità chiudendo il circuito interno con il movimento di ioni."
+  ],
+  "concetto": "ponte salino"
+ },
+ {
+  "id": "CAN-106",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "università",
+  "domanda": "Qual è la variazione di energia libera standard della pila Daniell (n = 2, E° = 1,10 V, F = 96485 C/mol)?",
+  "opzioni": {
+   "A": "−212 kJ/mol",
+   "B": "−106 kJ/mol",
+   "C": "−212 J/mol",
+   "D": "+106 kJ/mol",
+   "E": "+212 kJ/mol"
+  },
+  "giusta": "A",
+  "perche": "La relazione tra energia libera e f.e.m. è ΔG° = −nFE° = −2 · 96485 · 1,10 = −212 267 J/mol, cioè circa −212 kJ/mol. Il segno negativo conferma che la reazione è spontanea, in accordo con la f.e.m. positiva. La trappola è dimenticare il segno meno, il fattore n oppure la conversione da joule a kilojoule.",
+  "semplice": "Una pila che dà tensione positiva fa avvenire una reazione spontanea: l'energia libera cala. Moltiplicando elettroni scambiati, costante di Faraday e tensione si ottiene quanta energia si può ricavare.",
+  "passaggi": [
+   "ΔG° = −n F E°",
+   "−2 · 96485 · 1,10 = −212 267 J/mol",
+   "ΔG° ≈ −212 kJ/mol"
+  ],
+  "concetto": "energia libera e f.e.m."
+ },
+ {
+  "id": "CAN-107",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "università",
+  "domanda": "Che cos'è l'errore alcalino dell'elettrodo a vetro?",
+  "opzioni": {
+   "A": "A pH molto bassi l'elettrodo legge valori troppo alti",
+   "B": "A pH molto alti l'elettrodo risponde anche agli ioni alcalini come Na⁺ e il pH letto è più basso di quello reale",
+   "C": "Un errore dovuto alla taratura con tamponi alcalini",
+   "D": "Un errore causato dalla rottura del bulbo",
+   "E": "Un errore che si verifica solo in soluzioni prive di sodio"
+  },
+  "giusta": "B",
+  "perche": "A pH molto elevati, con pochissimi ioni H⁺ e molti ioni Na⁺, la membrana di vetro comincia a rispondere anche al sodio, come se fosse idrogeno. Lo strumento «vede» più cationi di quanti H⁺ ci siano e indica un pH più basso del vero. Per misure in quella zona si usano vetri speciali al litio. La trappola è confonderlo con l'errore acido, che si verifica invece a pH molto bassi e dà letture troppo alte.",
+  "semplice": "In una soluzione molto basica ci sono pochissimi H⁺ e tanti ioni sodio: l'elettrodo si «confonde» e scambia un po' di sodio per idrogeno.",
+  "passaggi": [
+   "A pH molto alto ci sono pochissimi H⁺ e, spesso, molti Na⁺.",
+   "La membrana di vetro comincia a rispondere anche al Na⁺ come se fosse H⁺.",
+   "Lo strumento «vede» più cationi H⁺ del reale, quindi indica un pH più basso del vero.",
+   "L'errore acido è un'altra cosa: a pH molto bassi dà letture troppo alte.",
+   "Risposta: la B (si rimedia con vetri speciali al litio)."
+  ],
+  "concetto": "errore alcalino"
+ },
+ {
+  "id": "CAN-108",
+  "materia": "Chimica analitica e strumentale",
+  "argomento": "Elettrochimica analitica",
+  "livello": "superiori",
+  "domanda": "In una soluzione a 25 °C con [Ag⁺] = 1,0 · 10⁻³ mol/L, quale potenziale assume un elettrodo d'argento (E° = +0,80 V)?",
+  "opzioni": {
+   "A": "+0,80 V",
+   "B": "+0,98 V",
+   "C": "+0,62 V",
+   "D": "+0,74 V",
+   "E": "+0,71 V"
+  },
+  "giusta": "C",
+  "perche": "Per Ag⁺ + e⁻ → Ag (n = 1) vale E = 0,80 + 0,0592 · log(1,0 · 10⁻³) = 0,80 − 0,178 = 0,62 V. Ogni diminuzione di dieci volte della concentrazione abbassa il potenziale di circa 59 mV. La trappola è sbagliare il segno del logaritmo, ottenendo 0,98 V.",
+  "semplice": "Meno ioni argento ci sono in soluzione, più basso è il potenziale dell'elettrodo. Tre ordini di grandezza in meno valgono circa 0,18 V in meno.",
+  "passaggi": [
+   "E = E° + 0,0592 · log[Ag⁺]",
+   "log(1,0 · 10⁻³) = −3",
+   "0,0592 · (−3) = −0,178 V",
+   "E = 0,80 − 0,178 = 0,62 V"
+  ],
+  "concetto": "elettrodo di prima specie"
+ }
+]

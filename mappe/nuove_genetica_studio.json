@@ -1,0 +1,729 @@
+{
+ "Leggi di Mendel": {
+  "superiore": {
+   "spiegazione": [
+    "Gregor Mendel, un monaco che lavorava a Brno a metà Ottocento, studiò l'eredità incrociando piante di pisello. Scelse caratteri con due forme nette, come seme giallo o verde, liscio o rugoso, e partì da linee pure, che per autofecondazione davano sempre lo stesso carattere. Soprattutto contò i figli di ogni incrocio, trattando l'eredità come un problema di numeri. Da questi conteggi dedusse che i caratteri sono controllati da «fattori» che oggi chiamiamo geni. Ogni gene può presentarsi in forme diverse, gli alleli.",
+    "Ogni individuo possiede due alleli per ogni gene, uno ricevuto dalla madre e uno dal padre. Se i due alleli sono uguali l'individuo è omozigote (AA o aa), se sono diversi è eterozigote (Aa). L'allele dominante (lettera maiuscola) si manifesta anche in una sola copia, quello recessivo (minuscola) solo se in doppia copia. La combinazione di alleli è il genotipo; il carattere osservabile è il fenotipo. Per esempio AA e Aa hanno lo stesso fenotipo dominante pur avendo genotipi diversi.",
+    "Incrociando due linee pure diverse (AA × aa), Mendel ottenne una prima generazione, la F1, tutta uguale e con il carattere dominante: è la legge della dominanza. Facendo autofecondare la F1 (Aa × Aa), nella F2 ricomparve il carattere recessivo in circa un quarto delle piante. La spiegazione è la legge della segregazione: i due alleli si separano nella formazione dei gameti e ogni gamete ne porta uno solo. Il quadrato di Punnett mostra le combinazioni: 1 AA, 2 Aa, 1 aa, cioè un rapporto fenotipico 3:1.",
+    "Studiando due caratteri insieme, per esempio colore e forma del seme, Mendel scoprì che si ereditano l'uno indipendentemente dall'altro: è la legge dell'assortimento indipendente. Un doppio eterozigote AaBb produce quattro tipi di gameti in parti uguali (AB, Ab, aB, ab). Incrociando due doppi eterozigoti si ottiene il rapporto 9:3:3:1. Invece di disegnare un Punnett di 16 caselle conviene usare la regola del prodotto: la probabilità di aabb è 1/4 × 1/4 = 1/16.",
+    "Per sapere se un individuo con fenotipo dominante è AA o Aa si fa il testcross, incrociandolo con un omozigote recessivo. Se compaiono figli recessivi, l'individuo era eterozigote. Non tutti i caratteri seguono la dominanza completa: nella dominanza incompleta l'eterozigote è intermedio (bocca di leone rosa da rossa e bianca) e il rapporto in F2 diventa 1:2:1. Nella codominanza si esprimono entrambi gli alleli, come nel gruppo sanguigno AB, che dipende da tre alleli (IA, IB, i) presenti nella popolazione."
+   ],
+   "metodo": [
+    "Impara il vocabolario con una scheda: gene, allele, omozigote, eterozigote, dominante, recessivo, genotipo, fenotipo, ciascuno con un esempio.",
+    "Per ogni esercizio segui sempre lo stesso schema: genotipi dei genitori, gameti, Punnett o regola del prodotto, rapporto finale.",
+    "Distingui sempre se la domanda chiede genotipi o fenotipi prima di scrivere il risultato.",
+    "Svolgi almeno 10 incroci: monoibridi, diibridi, testcross, dominanza incompleta e gruppi sanguigni.",
+    "Per i diibridi esercitati a calcolare con le probabilità invece di disegnare tutte le 16 caselle."
+   ],
+   "ricorda": [
+    "«Tre a uno si vede, uno-due-uno si scrive»: 3:1 fenotipi, 1:2:1 genotipi.",
+    "Diibrido 9:3:3:1: la somma fa 16, cioè 4 × 4 gameti.",
+    "Geni indipendenti: le probabilità si moltiplicano («e» = per).",
+    "Testcross: si incrocia sempre con il «tutto minuscolo»."
+   ],
+   "errori": [
+    "Confondere rapporto genotipico e fenotipico.",
+    "Pensare che dominante significhi «più frequente» o «migliore».",
+    "Scrivere i gameti con due alleli dello stesso gene (Aa) invece di uno solo.",
+    "Credere che, dopo un figlio malato, il successivo sia per forza sano: ogni figlio è un evento indipendente."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché nella F1 di Mendel scompare il carattere recessivo?",
+     "risposta": "Perché tutti gli individui F1 sono eterozigoti Aa e l'allele dominante maschera quello recessivo, che però è ancora presente."
+    },
+    {
+     "domanda": "Che rapporto fenotipico dà Aa × Aa?",
+     "risposta": "3 dominanti : 1 recessivo; il rapporto genotipico è 1 AA : 2 Aa : 1 aa."
+    },
+    {
+     "domanda": "Quanti tipi di gameti produce AaBb?",
+     "risposta": "Quattro: AB, Ab, aB e ab, ciascuno con probabilità 1/4."
+    },
+    {
+     "domanda": "Che cos'è il testcross?",
+     "risposta": "L'incrocio di un individuo a fenotipo dominante con un omozigote recessivo per scoprire se è omozigote o eterozigote."
+    },
+    {
+     "domanda": "Che differenza c'è tra dominanza incompleta e codominanza?",
+     "risposta": "Nella dominanza incompleta l'eterozigote ha un fenotipo intermedio; nella codominanza mostra entrambi i caratteri, come il gruppo AB."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Le leggi di Mendel trovano la loro base fisica nella meiosi. La segregazione corrisponde alla separazione dei cromosomi omologhi in anafase I: ogni gamete riceve uno solo dei due alleli di un locus. L'assortimento indipendente dipende dall'orientamento casuale delle coppie di omologhi sulla piastra metafasica, per cui geni su cromosomi diversi si combinano liberamente. Questa corrispondenza fu proposta da Sutton e Boveri all'inizio del Novecento (teoria cromosomica dell'ereditarietà) e confermata da Morgan. Ne segue che l'assortimento indipendente vale per geni su cromosomi diversi o molto distanti sullo stesso cromosoma.",
+    "Gli incroci si risolvono in modo efficiente con il calcolo delle probabilità. La regola del prodotto si applica a eventi indipendenti (geni diversi, figli diversi), la regola della somma a eventi mutuamente esclusivi (modi diversi di ottenere lo stesso risultato). Un individuo eterozigote per n geni indipendenti produce 2ⁿ tipi di gameti. Quando si conosce già un'informazione, si usa la probabilità condizionata: un figlio a fenotipo dominante di Aa × Aa è eterozigote con probabilità 2/3. Per famiglie con più figli e ordini diversi si ricorre alla distribuzione binomiale: la probabilità di esattamente 2 affetti su 4 figli da Aa × Aa è 6 × (1/4)² × (3/4)².",
+    "I rapporti osservati non coincidono mai esattamente con quelli attesi, e il test del χ² valuta se lo scarto è compatibile con il caso. Si calcola Σ (O − A)² / A sulle frequenze assolute e si confronta con il valore critico per (classi − 1) gradi di libertà, tipicamente al livello di significatività 0,05. Per un 3:1 con 1 grado di libertà il valore critico è 3,84. Un χ² superiore porta a rifiutare l'ipotesi; uno inferiore non la dimostra, ma la rende compatibile con i dati. È un errore usare le percentuali al posto dei numeri assoluti.",
+    "Le relazioni tra alleli dello stesso gene vanno oltre la dominanza completa. Nella dominanza incompleta e nella codominanza il rapporto fenotipico coincide con quello genotipico (1:2:1). Gli alleli multipli, come IA, IB e i nel sistema AB0, ampliano il numero di genotipi possibili nella popolazione. Gli alleli letali in omozigosi alterano i rapporti: nei topi l'allele giallo AY, letale in omozigosi, dà 2 gialli : 1 non giallo. Penetranza ed espressività descrivono quanto spesso e quanto intensamente un genotipo si manifesta, e il fenotipo dipende anche dall'ambiente (norma di reazione).",
+    "Anche geni diversi interagiscono. Nell'epistasi un gene maschera l'effetto di un altro: l'epistasi recessiva produce 9:3:4 (colore nei labrador), quella dominante 12:3:1, la complementazione tra due geni della stessa via biosintetica 9:7. Riconoscere questi rapporti modificati, che sommano sempre a 16, permette di dedurre il tipo di interazione. La pleiotropia indica un gene che influenza più caratteri (fibrillina nella sindrome di Marfan), mentre l'eredità poligenica descrive caratteri quantitativi controllati da molti geni con effetto additivo, che producono distribuzioni continue come la statura.",
+    "Quando due geni stanno vicini sullo stesso cromosoma sono associati e tendono a essere ereditati insieme, violando l'assortimento indipendente. Il crossing-over in profase I genera gameti ricombinanti con una frequenza che cresce con la distanza tra i loci. La frequenza di ricombinazione, ricavata dal reincrocio come rapporto ricombinanti/totale, definisce le distanze di mappa: 1% corrisponde a 1 centimorgan. Il valore massimo osservabile è 50%, indistinguibile dall'assortimento indipendente. Con incroci a tre punti si ordinano i geni e si stimano i doppi crossing-over, individuati come classi meno frequenti."
+   ],
+   "metodo": [
+    "Collega ogni legge a una fase precisa della meiosi disegnando due coppie di omologhi con alleli diversi.",
+    "Risolvi ogni incrocio con le probabilità (prodotto, somma, condizionata, binomiale) e verifica il risultato con un Punnett ridotto.",
+    "Prepara una tabella dei rapporti modificati (1:2:1, 2:1, 9:3:4, 12:3:1, 9:7, 15:1) con il meccanismo e un esempio per ciascuno.",
+    "Esercitati col χ²: attesi, scarti, gradi di libertà, confronto con la tabella e conclusione formulata correttamente.",
+    "Per l'associazione calcola distanze da reincroci a due e a tre punti, individuando parentali e doppi ricombinanti."
+   ],
+   "ricorda": [
+    "I rapporti modificati del diibrido sommano sempre a 16: 9:3:4, 12:3:1, 9:7, 15:1.",
+    "Letale in omozigosi → 2:1 al posto di 3:1.",
+    "χ²: dividi per l'atteso, gdl = classi − 1, 3,84 per 1 gdl.",
+    "Ricombinazione massima 50%: oltre non si distingue dall'indipendenza.",
+    "Penetranza = sì/no; espressività = quanto."
+   ],
+   "errori": [
+    "Applicare l'assortimento indipendente a geni associati.",
+    "Calcolare il χ² sulle percentuali invece che sui numeri assoluti.",
+    "Concludere che un χ² basso «dimostri» l'ipotesi: la rende solo compatibile con i dati.",
+    "Confondere pleiotropia (un gene, più caratteri) ed eredità poligenica (più geni, un carattere).",
+    "Dimenticare il coefficiente binomiale quando l'ordine dei figli non è specificato."
+   ],
+   "domande": [
+    {
+     "domanda": "Quale evento meiotico spiega l'assortimento indipendente?",
+     "risposta": "L'orientamento casuale delle coppie di omologhi in metafase I, che distribuisce indipendentemente i cromosomi materni e paterni."
+    },
+    {
+     "domanda": "Che rapporto dà l'epistasi recessiva in un diibrido?",
+     "risposta": "9:3:4, perché le classi B_ee e bbee mostrano lo stesso fenotipo."
+    },
+    {
+     "domanda": "Qual è la probabilità di avere esattamente 1 figlio malato su 3 da Aa × Aa?",
+     "risposta": "3 × (1/4) × (3/4)² = 27/64, circa 0,42."
+    },
+    {
+     "domanda": "Che cosa misura un centimorgan?",
+     "risposta": "Una distanza di mappa corrispondente all'1% di gameti ricombinanti tra due loci."
+    },
+    {
+     "domanda": "Perché un allele letale recessivo dà un rapporto 2:1?",
+     "risposta": "Perché gli omozigoti muoiono prima della nascita e restano solo 1 omozigote normale e 2 eterozigoti, che hanno il fenotipo diverso."
+    }
+   ]
+  }
+ },
+ "Eredità legata al sesso e alberi genealogici": {
+  "superiore": {
+   "spiegazione": [
+    "Nella specie umana ci sono 22 coppie di autosomi e una coppia di cromosomi sessuali: le femmine sono XX, i maschi XY. La cellula uovo porta sempre un X, mentre lo spermatozoo può portare X oppure Y; per questo è il padre a determinare il sesso genetico del figlio. Sul cromosoma Y si trova il gene SRY, che avvia lo sviluppo dei testicoli. Il cromosoma X è grande e porta molti geni che non hanno niente a che fare con il sesso, come quelli per la visione dei colori o la coagulazione del sangue. La Y invece porta pochi geni.",
+    "I geni che si trovano sull'X seguono un'eredità particolare, detta legata all'X. La femmina ha due copie di ogni gene dell'X, il maschio una sola: si dice che è emizigote. Se un allele recessivo si trova sull'unico X di un maschio, il carattere si manifesta sempre. Una femmina, invece, deve averne due copie per mostrarlo; con una sola è portatrice sana. Ecco perché daltonismo ed emofilia sono molto più frequenti negli uomini.",
+    "Per risolvere gli esercizi si scrivono i cromosomi sessuali con l'allele in apice, per esempio XᴰXᵈ per una donna portatrice e XᵈY per un uomo daltonico. Poi si costruisce il quadrato di Punnett come al solito. Bisogna ricordare due regole: il padre passa il suo X a tutte le figlie e la Y a tutti i figli maschi; la madre passa uno dei suoi due X a ogni figlio. Così, da madre portatrice e padre sano, metà dei figli maschi sono daltonici e metà delle figlie sono portatrici.",
+    "L'albero genealogico è il disegno di una famiglia su più generazioni, con simboli standard: quadrato per i maschi, cerchio per le femmine, simbolo pieno per chi ha il carattere. Una linea orizzontale unisce i genitori e una verticale scende verso i figli; le generazioni si numerano con numeri romani. Leggendo l'albero si capisce come si eredita un carattere. Se salta le generazioni ed è presente in figli di genitori sani è recessivo; se compare in ogni generazione e ogni affetto ha un genitore affetto è probabilmente dominante.",
+    "Alcuni indizi aiutano a scegliere tra eredità autosomica e legata all'X. Se due genitori sani hanno una figlia affetta, il carattere è autosomico recessivo, perché un padre sano non può dare un X mutato. Se sono affetti quasi solo maschi, figli di madri sane, si pensa a un carattere recessivo legato all'X. I caratteri sul cromosoma Y passano da padre a tutti i figli maschi. Le malattie del DNA dei mitocondri passano invece dalla madre a tutti i figli, perché i mitocondri arrivano con l'ovulo."
+   ],
+   "metodo": [
+    "Scrivi sempre i genotipi completi con X e Y, mai solo le lettere degli alleli.",
+    "Prima di calcolare, chiediti se la domanda riguarda «un figlio maschio», «una figlia» o «un figlio qualsiasi»: cambia il risultato.",
+    "Impara a memoria i simboli degli alberi genealogici disegnandone uno della tua famiglia (per esempio per il colore degli occhi).",
+    "Per ogni albero prova le modalità una alla volta (autosomica dominante, recessiva, X-recessiva) e scarta quelle incompatibili.",
+    "Svolgi esercizi su daltonismo ed emofilia con tutte le combinazioni di genitori."
+   ],
+   "ricorda": [
+    "«Il papà dà l'X alle figlie e la Y ai figli».",
+    "Maschio daltonico? L'allele l'ha preso dalla mamma.",
+    "Salta le generazioni = recessivo; c'è sempre = dominante.",
+    "Genitori sani e figlia malata = autosomica recessiva."
+   ],
+   "errori": [
+    "Pensare che un padre possa trasmettere un carattere legato all'X a un figlio maschio.",
+    "Confondere la probabilità «tra i maschi» (1/2) con quella su tutti i figli (1/4).",
+    "Credere che le femmine non possano mai avere malattie legate all'X.",
+    "Invertire i simboli dei sessi negli alberi genealogici."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché il daltonismo è più frequente nei maschi?",
+     "risposta": "Perché hanno un solo X: basta un allele recessivo perché il carattere compaia."
+    },
+    {
+     "domanda": "Chi determina il sesso del figlio nell'uomo?",
+     "risposta": "Lo spermatozoo, che può portare un cromosoma X o un cromosoma Y."
+    },
+    {
+     "domanda": "Madre portatrice e padre sano: che probabilità ha un figlio maschio di essere emofilico?",
+     "risposta": "1/2, perché riceve dalla madre l'X mutato una volta su due."
+    },
+    {
+     "domanda": "Come si riconosce nell'albero un'eredità dominante?",
+     "risposta": "Il carattere è presente in ogni generazione e ogni affetto ha almeno un genitore affetto."
+    },
+    {
+     "domanda": "Come si trasmette un carattere del DNA mitocondriale?",
+     "risposta": "Dalla madre a tutti i figli, maschi e femmine; il padre non lo trasmette."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La prova che i geni stanno sui cromosomi venne da Thomas Morgan, che nel 1910 trovò un maschio di drosofila con occhi bianchi. Incrociandolo con femmine a occhi rossi ottenne una F1 tutta rossa, ma in F2 gli occhi bianchi comparivano solo nei maschi; l'incrocio reciproco dava risultati diversi. Solo collocando il gene sul cromosoma X i dati tornavano: era la conferma della teoria cromosomica di Sutton e Boveri. I risultati diversi negli incroci reciproci restano il segnale classico di un gene legato al sesso. Nell'uomo l'eredità legata all'X segue le stesse regole.",
+    "I sistemi di determinazione del sesso sono vari. Nei mammiferi il sistema è XY e il sesso maschile dipende dal gene SRY, che codifica un fattore di trascrizione che avvia la differenziazione della gonade in testicolo; individui XX con traslocazione di SRY sono maschi. Negli uccelli il sistema è ZW e la femmina è eterogametica; in molti insetti è X0; in tartarughe e coccodrilli dipende dalla temperatura di incubazione. X e Y condividono piccole regioni pseudoautosomiche che si appaiano e ricombinano in meiosi, garantendo la corretta segregazione. Nel resto della Y non c'è ricombinazione, per cui essa si trasmette come un blocco.",
+    "Poiché le femmine hanno due X e i maschi uno, serve una compensazione del dosaggio. Nei mammiferi uno dei due X viene inattivato in modo casuale nelle prime fasi dello sviluppo embrionale, per azione dell'RNA non codificante XIST che riveste il cromosoma e ne promuove l'eterocromatinizzazione. L'X inattivo è visibile nel nucleo come corpo di Barr, e il numero di corpi di Barr è il numero di X meno uno. Le femmine sono quindi mosaici funzionali: nelle gatte calico, eterozigoti per un gene del colore sull'X, le chiazze riflettono cloni cellulari diversi. Alcuni geni sfuggono all'inattivazione, il che spiega in parte i fenotipi delle aneuploidie dei cromosomi sessuali.",
+    "Nell'analisi degli alberi genealogici si confrontano le modalità possibili ed escludono quelle incompatibili. L'autosomica recessiva salta generazioni, colpisce i due sessi e viene favorita dalla consanguineità; l'autosomica dominante è verticale e ogni affetto ha un genitore affetto, salvo mutazioni de novo o penetranza incompleta. La recessiva legata all'X colpisce soprattutto maschi imparentati attraverso donne e non mostra mai trasmissione padre-figlio. La dominante legata all'X fa sì che un padre affetto abbia tutte le figlie affette e nessun figlio; l'eredità mitocondriale passa da madri a tutti i figli, con gravità variabile per l'eteroplasmia. Un solo caso di trasmissione da padre a figlio maschio basta a escludere le forme legate all'X.",
+    "La consulenza genetica richiede di combinare probabilità lungo l'albero. Un fratello sano di un malato autosomico recessivo è portatore con probabilità 2/3; il rischio per i suoi figli si ottiene moltiplicando la probabilità che ciascun partner sia portatore per 1/4. Per i caratteri legati all'X si considerano separatamente il sesso del figlio e l'X ricevuto dalla madre. Approcci più raffinati usano il teorema di Bayes, aggiornando la probabilità di essere portatrice in base al numero di figli sani già nati. I caratteri influenzati dal sesso (calvizie) e limitati al sesso (produzione di latte) sono invece autosomici con espressione dipendente dall'ambiente ormonale."
+   ],
+   "metodo": [
+    "Ricostruisci l'esperimento di Morgan con gli incroci reciproci e spiega perché i risultati differiscono.",
+    "Prepara una tabella delle modalità di trasmissione con i segni distintivi e gli indizi che escludono ciascuna.",
+    "Per ogni albero annota i genotipi certi, poi quelli probabili, e solo alla fine calcola i rischi.",
+    "Esercitati con calcoli di rischio a più passaggi (portatore 2/3, figli di consanguinei) e con un esempio bayesiano.",
+    "Collega l'inattivazione dell'X alle aneuploidie dei cromosomi sessuali del capitolo sulle mutazioni."
+   ],
+   "ricorda": [
+    "Trasmissione padre → figlio maschio: esclude tutte le forme legate all'X.",
+    "Corpi di Barr = numero di X − 1.",
+    "X-dominante: padre affetto → tutte le figlie affette.",
+    "Mitocondriale: tutte le madri affette trasmettono, nessun padre."
+   ],
+   "errori": [
+    "Dimenticare la probabilità condizionata 2/3 per i fratelli sani di un affetto recessivo.",
+    "Considerare equivalenti incroci reciproci per geni legati all'X.",
+    "Interpretare il mosaicismo da inattivazione dell'X come codominanza.",
+    "Attribuire una modalità all'albero senza aver escluso le alternative.",
+    "Confondere caratteri influenzati dal sesso con caratteri legati all'X."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa dimostrò Morgan con la drosofila dagli occhi bianchi?",
+     "risposta": "Che il gene del colore degli occhi sta sul cromosoma X, confermando la teoria cromosomica dell'ereditarietà."
+    },
+    {
+     "domanda": "Quale molecola avvia l'inattivazione dell'X?",
+     "risposta": "L'RNA non codificante XIST, che riveste il cromosoma da inattivare."
+    },
+    {
+     "domanda": "Quanti corpi di Barr ha una persona 47,XXY?",
+     "risposta": "Uno, perché ha due cromosomi X."
+    },
+    {
+     "domanda": "Quale segno di un albero esclude l'eredità legata all'X?",
+     "risposta": "La trasmissione del carattere da un padre affetto a un figlio maschio."
+    },
+    {
+     "domanda": "Che cos'è l'eteroplasmia?",
+     "risposta": "La presenza nella stessa cellula di mitocondri con DNA normale e mutato in proporzioni variabili."
+    }
+   ]
+  }
+ },
+ "Struttura e replicazione del DNA": {
+  "superiore": {
+   "spiegazione": [
+    "Il DNA (acido desossiribonucleico) è la molecola che conserva le informazioni ereditarie. È un lungo polimero formato da unità chiamate nucleotidi, ciascuno composto da un gruppo fosfato, uno zucchero a cinque atomi di carbonio (il desossiribosio) e una base azotata. Le basi sono quattro: adenina (A), guanina (G), citosina (C) e timina (T). Adenina e guanina, con due anelli, sono purine; citosina e timina, con un anello, sono pirimidine. L'ordine delle basi lungo la molecola è il messaggio genetico, come le lettere di un testo.",
+    "Nel 1953 James Watson e Francis Crick proposero il modello a doppia elica, usando le immagini ai raggi X di Rosalind Franklin e le regole di Erwin Chargaff. Il DNA è formato da due filamenti avvolti uno sull'altro come una scala a chiocciola: i corrimano sono catene di zucchero e fosfato, i gradini sono coppie di basi. Le basi si appaiano sempre allo stesso modo: A con T (due legami a idrogeno) e G con C (tre legami a idrogeno). Per questo in ogni DNA a doppio filamento A = T e G = C. Se l'adenina è il 30%, la timina è il 30% e guanina e citosina sono il 20% ciascuna.",
+    "I due filamenti sono antiparalleli: uno va in direzione 5' → 3' e l'altro in direzione opposta. I numeri si riferiscono agli atomi di carbonio del desossiribosio: a un'estremità c'è un fosfato legato al carbonio 5', all'altra un gruppo OH sul carbonio 3'. Poiché le basi sono complementari, conoscendo un filamento si può scrivere l'altro. Per esempio il complementare di 5'-ATGC-3' è 3'-TACG-5', cioè 5'-GCAT-3' se letto nel verso convenzionale.",
+    "Prima di ogni divisione cellulare il DNA viene duplicato con la replicazione. Il meccanismo è semiconservativo: i due filamenti si separano e ciascuno fa da stampo per un filamento nuovo, così ogni molecola figlia contiene un filamento vecchio e uno nuovo. Lo dimostrarono Meselson e Stahl nel 1958 con batteri cresciuti in azoto pesante e poi trasferiti in azoto leggero. Dopo una generazione tutto il DNA era ibrido; dopo due, metà ibrido e metà leggero. La replicazione parte da punti precisi chiamati origini.",
+    "La replicazione richiede diversi enzimi che lavorano insieme alla forcella di replicazione. L'elicasi apre la doppia elica, la primasi produce un breve innesco di RNA e la DNA polimerasi aggiunge nucleotidi complementari, ma solo in direzione 5' → 3'. Uno dei due filamenti nuovi (leading) viene quindi sintetizzato in modo continuo; l'altro (lagging) a pezzi chiamati frammenti di Okazaki, poi uniti dalla DNA ligasi. La DNA polimerasi corregge anche i propri errori. Negli eucarioti il DNA è avvolto attorno a proteine chiamate istoni, formando la cromatina."
+   ],
+   "metodo": [
+    "Disegna un tratto di doppia elica con quattro coppie di basi, indicando 5', 3', legami a idrogeno e tipo di base.",
+    "Esercitati a scrivere filamenti complementari in direzione 5' → 3' e a calcolare percentuali con la regola di Chargaff.",
+    "Ricostruisci l'esperimento di Meselson e Stahl disegnando le molecole generazione per generazione.",
+    "Prepara una tabella degli enzimi della replicazione con funzione e un'immagine per ricordarli.",
+    "Ripeti a voce le fasi della replicazione come se le spiegassi a un compagno."
+   ],
+   "ricorda": [
+    "«Puri AG»: le purine sono A e G.",
+    "A-T due legami, G-C tre: «più G-C, più forte».",
+    "La polimerasi scrive sempre 5' → 3'.",
+    "Semiconservativa = mezzo vecchio, mezzo nuovo."
+   ],
+   "errori": [
+    "Mettere l'uracile o il ribosio nel DNA.",
+    "Scrivere il filamento complementare senza invertirne l'orientamento.",
+    "Dire che la DNA polimerasi apre la doppia elica (lo fa l'elicasi).",
+    "Pensare che le coppie di basi siano unite da legami covalenti."
+   ],
+   "domande": [
+    {
+     "domanda": "Quali sono i tre componenti di un nucleotide del DNA?",
+     "risposta": "Un gruppo fosfato, il desossiribosio e una base azotata."
+    },
+    {
+     "domanda": "Se la citosina è il 15% di un DNA, quanto vale l'adenina?",
+     "risposta": "35%: G = C = 15%, quindi A + T = 70% e A = 35%."
+    },
+    {
+     "domanda": "Che cosa significa replicazione semiconservativa?",
+     "risposta": "Che ogni nuova molecola di DNA contiene un filamento originale e uno appena sintetizzato."
+    },
+    {
+     "domanda": "Che cosa sono i frammenti di Okazaki?",
+     "risposta": "Brevi tratti di DNA sintetizzati sul filamento lagging, poi uniti dalla DNA ligasi."
+    },
+    {
+     "domanda": "Perché serve la primasi?",
+     "risposta": "Perché la DNA polimerasi non può iniziare un filamento da zero e ha bisogno di un innesco con un'estremità 3'."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Che il DNA fosse il materiale genetico fu dimostrato da una serie di esperimenti: Griffith osservò la trasformazione di pneumococchi non virulenti in virulenti, Avery, MacLeod e McCarty identificarono nel DNA il principio trasformante, e Hershey e Chase mostrarono con fagi marcati che nel batterio entra il DNA e non la proteina. Chimicamente, i nucleotidi sono uniti da legami fosfodiesterici tra il carbonio 3' di uno zucchero e il 5' del successivo, il che conferisce polarità alla catena. Le basi sono legate al carbonio 1' tramite legame N-glicosidico. Il numero di possibili sequenze di n basi è 4ⁿ, il che spiega l'enorme capacità informativa del DNA.",
+    "La forma fisiologica prevalente è il DNA-B, un'elica destrorsa con circa 10,5 coppie di basi per giro, passo di circa 3,4 nm e diametro di 2 nm. L'asimmetria del legame tra basi e zucchero crea un solco maggiore e un solco minore; nel solco maggiore i gruppi chimici delle basi sono più esposti e le proteine regolatrici possono riconoscere sequenze specifiche senza aprire l'elica. La stabilità della doppia elica dipende dai legami a idrogeno ma soprattutto dalle interazioni di impilamento tra basi adiacenti. La temperatura di fusione cresce con il contenuto in G-C e con la forza ionica. Esistono anche forme A (più compatta, tipica degli ibridi DNA-RNA) e Z (sinistrorsa, in sequenze alternate purina-pirimidina).",
+    "La replicazione è semiconservativa e bidirezionale. Nei batteri parte da un'unica origine (oriC) riconosciuta dalla proteina DnaA; negli eucarioti da migliaia di origini legate dal complesso ORC e attivate una sola volta per ciclo cellulare grazie al caricamento regolato dell'elicasi MCM in fase G1. Alla forcella l'elicasi separa i filamenti, le proteine SSB li stabilizzano e le topoisomerasi eliminano i superavvolgimenti positivi che si accumulano davanti. La primasi sintetizza primer di RNA. Il cromosoma di E. coli (4,6 Mb) viene replicato da due forcelle a circa 1000 nt/s in circa 40 minuti.",
+    "La sintesi è affidata a DNA polimerasi processive: la Pol III nei batteri, le polimerasi δ ed ε negli eucarioti, mantenute sul DNA da una pinza scorrevole (subunità β o PCNA). Poiché la sintesi procede solo in direzione 5' → 3', il filamento leading è sintetizzato in continuo e il lagging in frammenti di Okazaki (1000-2000 nt nei batteri, 100-200 negli eucarioti). I primer vengono rimossi dalla Pol I (attività 5' → 3' esonucleasica) o dalla RNasi H e da FEN1, e la ligasi chiude le interruzioni. L'attività esonucleasica 3' → 5' di correzione di bozze e il sistema di riparazione dei mismatch portano la frequenza d'errore a circa uno su un miliardo di nucleotidi. Nei batteri il filamento nuovo è riconosciuto perché temporaneamente non metilato.",
+    "I cromosomi lineari eucariotici presentano il problema delle estremità: dopo la rimozione dell'ultimo primer il filamento lagging non può essere completato e il cromosoma si accorcerebbe a ogni ciclo. I telomeri, ripetizioni TTAGGG nell'uomo, proteggono le estremità e vengono allungati dalla telomerasi, una ribonucleoproteina con attività di trascrittasi inversa che usa il proprio RNA come stampo. Nelle cellule somatiche la telomerasi è poco attiva e i telomeri si accorciano con le divisioni, contribuendo alla senescenza replicativa; molte cellule tumorali la riattivano. Il DNA è infine compattato nella cromatina: 147 coppie di basi avvolte attorno a un ottamero di istoni formano il nucleosoma, che si organizza in livelli superiori fino al cromosoma metafasico."
+   ],
+   "metodo": [
+    "Ricostruisci gli esperimenti storici (Griffith, Avery, Hershey-Chase, Meselson-Stahl) con ipotesi, risultato e conclusione.",
+    "Disegna la forcella con tutti gli enzimi e le proteine, indicando per ciascuno la direzione di lavoro.",
+    "Confronta in una tabella la replicazione nei procarioti e negli eucarioti (origini, polimerasi, pinza, telomeri, velocità).",
+    "Esegui calcoli di lunghezza del DNA, numero di giri, tempo di replicazione e percentuali di basi.",
+    "Collega la correzione di bozze e la riparazione dei mismatch al capitolo sulle mutazioni."
+   ],
+   "ricorda": [
+    "Pol III sintetizza, Pol I rimuove i primer, ligasi chiude.",
+    "Esonucleasi 3'→5' = correzione; 5'→3' = rimozione dei primer.",
+    "Telomerasi = trascrittasi inversa con RNA proprio.",
+    "Solco maggiore = dove le proteine «leggono» la sequenza.",
+    "DNA-B: circa 10 bp per giro, 0,34 nm per coppia."
+   ],
+   "errori": [
+    "Confondere direzione di lettura dello stampo (3'→5') e direzione di sintesi (5'→3').",
+    "Pensare che il filamento lagging venga replicato dopo il leading.",
+    "Attribuire la stabilità della doppia elica solo ai legami a idrogeno, trascurando l'impilamento.",
+    "Dimenticare che le forcelle per origine sono due nel calcolo dei tempi.",
+    "Credere che la telomerasi sia attiva in tutte le cellule somatiche."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché il DNA ricco di G-C ha una Tm più alta?",
+     "risposta": "Perché le coppie G-C formano tre legami a idrogeno e interazioni di impilamento più forti."
+    },
+    {
+     "domanda": "Qual è la funzione della pinza scorrevole?",
+     "risposta": "Mantenere la DNA polimerasi agganciata al DNA, aumentandone la processività."
+    },
+    {
+     "domanda": "Come si evita che un'origine eucariotica si attivi due volte nello stesso ciclo?",
+     "risposta": "L'elicasi MCM viene caricata sulle origini solo in G1 e attivata in S, senza poter essere ricaricata fino al ciclo successivo."
+    },
+    {
+     "domanda": "Che cosa fa l'esonucleasi 3'→5' della DNA polimerasi?",
+     "risposta": "Rimuove il nucleotide appena inserito se è appaiato in modo errato (correzione di bozze)."
+    },
+    {
+     "domanda": "Perché i batteri non hanno bisogno della telomerasi?",
+     "risposta": "Perché il loro cromosoma è circolare e non ha estremità da accorciare."
+    }
+   ]
+  }
+ },
+ "Trascrizione e traduzione": {
+  "superiore": {
+   "spiegazione": [
+    "Le informazioni contenute nel DNA servono a costruire le proteine, ma il DNA non partecipa direttamente alla loro sintesi. Il percorso, chiamato dogma centrale, avviene in due tappe: la trascrizione, in cui un tratto di DNA (un gene) viene copiato in RNA, e la traduzione, in cui la sequenza dell'RNA viene convertita in una sequenza di amminoacidi. L'RNA differisce dal DNA perché ha il ribosio, ha l'uracile al posto della timina ed è di solito a filamento singolo. Esistono tre tipi principali di RNA: l'RNA messaggero (mRNA), che porta la copia del gene; l'RNA transfer (tRNA), che porta gli amminoacidi; l'RNA ribosomiale (rRNA), che forma i ribosomi.",
+    "Nella trascrizione l'enzima RNA polimerasi si lega a una regione del DNA chiamata promotore, apre la doppia elica e usa uno dei due filamenti come stampo. Costruisce l'RNA in direzione 5' → 3', appaiando le basi: A dello stampo con U, T con A, G con C e C con G. Quando incontra un segnale di terminazione si stacca. Per esempio da uno stampo 3'-TACGGA-5' si ottiene l'mRNA 5'-AUGCCU-3'. Negli eucarioti la trascrizione avviene nel nucleo.",
+    "Negli eucarioti l'RNA appena trascritto (pre-mRNA) viene modificato prima di uscire dal nucleo. All'estremità 5' riceve un cappuccio, all'estremità 3' una coda di adenine (poli-A): entrambi lo proteggono. Con lo splicing vengono tagliati via gli introni, tratti che non codificano, e gli esoni vengono uniti. Con lo splicing alternativo uno stesso gene può produrre proteine diverse combinando gli esoni in modi diversi. Nei batteri queste modifiche non avvengono e la traduzione può iniziare mentre la trascrizione è ancora in corso.",
+    "Il codice genetico è la regola che collega l'mRNA agli amminoacidi. Si legge a gruppi di tre basi, i codoni: con quattro basi ci sono 64 codoni, di cui 61 indicano amminoacidi e 3 sono segnali di stop (UAA, UAG, UGA). Il codone AUG indica la metionina e segna l'inizio della traduzione. Il codice è degenerato, perché più codoni indicano lo stesso amminoacido, ma non ambiguo, perché ogni codone ne indica uno solo. È inoltre quasi universale: lo stesso codone ha lo stesso significato nei batteri, nelle piante e nell'uomo.",
+    "La traduzione avviene nei ribosomi, nel citoplasma. Ogni tRNA porta un amminoacido specifico e ha un anticodone, tre basi complementari a un codone dell'mRNA. Nell'inizio il ribosoma si monta sull'mRNA e il primo tRNA, con la metionina, si appaia all'AUG. Nell'allungamento i tRNA arrivano uno dopo l'altro e il ribosoma lega ogni nuovo amminoacido alla catena con un legame peptidico, spostandosi di un codone alla volta. Nella terminazione il ribosoma incontra un codone di stop e la proteina viene rilasciata; poi si ripiegherà nella sua forma tridimensionale."
+   ],
+   "metodo": [
+    "Disegna uno schema a due riquadri (nucleo e citoplasma) e colloca ogni fase nel suo riquadro.",
+    "Esercitati a passare da stampo di DNA a mRNA e da mRNA ad amminoacidi usando la tabella del codice genetico.",
+    "Prepara una tabella con i tre tipi di RNA, la loro forma e la loro funzione.",
+    "Racconta la traduzione come una catena di montaggio: chi porta i pezzi, chi li unisce, dove si ferma.",
+    "Conta codoni e amminoacidi negli esercizi ricordando che il codone di stop non aggiunge amminoacidi."
+   ],
+   "ricorda": [
+    "Trascrizione = copiare (stessa lingua, DNA → RNA); traduzione = cambiare lingua (RNA → proteina).",
+    "AUG = «Avvia Una Grande» proteina con la metionina.",
+    "Stop: UAA, UAG, UGA.",
+    "Gli esoni «escono» dal nucleo, gli introni restano dentro."
+   ],
+   "errori": [
+    "Scrivere la timina nell'mRNA.",
+    "Contare il codone di stop come un amminoacido.",
+    "Dire che la traduzione avviene nel nucleo.",
+    "Confondere codone (sull'mRNA) e anticodone (sul tRNA)."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa produce la trascrizione?",
+     "risposta": "Una molecola di RNA complementare al filamento stampo di un gene."
+    },
+    {
+     "domanda": "Che cosa sono gli introni?",
+     "risposta": "Tratti del pre-mRNA eucariotico che non codificano e vengono rimossi con lo splicing."
+    },
+    {
+     "domanda": "Perché il codice genetico si dice degenerato?",
+     "risposta": "Perché più codoni diversi codificano lo stesso amminoacido."
+    },
+    {
+     "domanda": "Qual è il ruolo del tRNA?",
+     "risposta": "Portare al ribosoma l'amminoacido corrispondente al codone riconosciuto dal suo anticodone."
+    },
+    {
+     "domanda": "Che cosa succede quando il ribosoma incontra UAG?",
+     "risposta": "La traduzione termina e la catena polipeptidica viene rilasciata."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Nei batteri un'unica RNA polimerasi trascrive tutti i geni. Il fattore σ le permette di riconoscere i promotori, caratterizzati dalle sequenze consenso a −10 (TATAAT) e −35. Dopo l'apertura dell'elica e la sintesi dei primi nucleotidi il fattore σ si stacca e il nucleo enzimatico prosegue l'allungamento. La terminazione può essere Rho-indipendente, quando nell'RNA si forma una forcina ricca di G-C seguita da una serie di U, oppure Rho-dipendente, mediata da un'elicasi che raggiunge la polimerasi. Gli mRNA batterici sono spesso policistronici e vengono tradotti mentre sono ancora in sintesi.",
+    "Gli eucarioti hanno tre RNA polimerasi nucleari: la I per i grandi rRNA, la II per i pre-mRNA e molti piccoli RNA, la III per tRNA e rRNA 5S. La polimerasi II non riconosce da sola il promotore: servono fattori generali di trascrizione, a partire da TFIID, la cui subunità TBP lega la TATA box, fino a TFIIH, che apre il DNA e fosforila il dominio carbossiterminale (CTD) della polimerasi. La CTD fosforilata recluta gli enzimi del cappuccio, lo spliceosoma e il complesso di taglio e poliadenilazione, così la maturazione avviene durante la trascrizione. L'espressione è poi modulata da attivatori, enhancer e Mediatore, trattati nella regolazione genica.",
+    "La maturazione del pre-mRNA comprende tre processi. Il cappuccio di 7-metilguanosina, legato con ponte 5'-5' trifosfato, protegge dall'azione delle esonucleasi e serve per l'inizio della traduzione. La poliadenilazione avviene dopo il taglio a valle del segnale AAUAAA, con l'aggiunta di circa 200 adenine. Lo splicing è catalizzato dallo spliceosoma, i cui snRNA riconoscono il sito donatore al 5' (GU), il punto di ramificazione con un'adenina e il sito accettore al 3' (AG); due transesterificazioni rimuovono l'introne come struttura a cappio (lariat). Lo splicing alternativo permette a circa 20 000 geni umani di produrre un numero molto maggiore di proteine.",
+    "Il codice genetico è a triplette, non sovrapposto, privo di punteggiatura interna, degenerato e quasi universale; le eccezioni riguardano soprattutto i mitocondri, dove per esempio UGA codifica triptofano. La fedeltà della traduzione dipende in primo luogo dalle aminoacil-tRNA sintetasi, che con consumo di ATP legano l'amminoacido corretto al tRNA e spesso correggono gli errori. La degenerazione è resa possibile dal vacillamento: la terza base del codone ammette appaiamenti non canonici, come G-U o quelli dell'inosina, per cui bastano circa 40 tRNA. Una mutazione nella terza posizione è perciò spesso silente.",
+    "Il ribosoma (70S nei batteri, 80S negli eucarioti) ha tre siti per i tRNA: A per l'aminoacil-tRNA in arrivo, P per il peptidil-tRNA, E per l'uscita. Nei batteri l'inizio avviene per appaiamento tra la sequenza di Shine-Dalgarno e l'rRNA 16S, con un fMet-tRNA iniziatore; negli eucarioti la subunità minore si lega al cappuccio e scorre lungo l'mRNA fino al primo AUG in un contesto favorevole (sequenza di Kozak). Nell'allungamento EF-Tu porta gli aminoacil-tRNA al sito A, l'rRNA della subunità maggiore catalizza il legame peptidico e EF-G sposta il ribosoma di un codone, con consumo di GTP. I fattori di rilascio riconoscono i codoni di stop e provocano l'idrolisi del legame tra peptide e tRNA. Le proteine destinate alla secrezione hanno un peptide segnale che indirizza il ribosoma al reticolo endoplasmatico."
+   ],
+   "metodo": [
+    "Confronta in una tabella trascrizione procariotica ed eucariotica (polimerasi, promotori, fattori, terminazione, maturazione).",
+    "Disegna lo splicing con siti GU, AG, punto di ramificazione e struttura a cappio.",
+    "Ripeti un ciclo di allungamento seguendo un tRNA dai siti A a P a E e indicando il consumo di GTP.",
+    "Risolvi esercizi che partono da una sequenza di DNA e chiedono mRNA, peptide ed effetto di una mutazione.",
+    "Collega i fattori di trascrizione e lo splicing alternativo al capitolo sulla regolazione genica."
+   ],
+   "ricorda": [
+    "RNA pol I = rRNA, II = mRNA, III = tRNA e 5S.",
+    "Introne: inizia con GU e finisce con AG.",
+    "Siti del ribosoma nell'ordine di passaggio: A, P, E.",
+    "La vera traduzione del codice la fanno le sintetasi."
+   ],
+   "errori": [
+    "Pensare che la RNA polimerasi II riconosca il promotore senza fattori generali.",
+    "Attribuire la catalisi del legame peptidico a una proteina ribosomiale.",
+    "Ritenere il codice perfettamente universale, ignorando le varianti mitocondriali.",
+    "Dimenticare che negli eucarioti la maturazione è cotrascrizionale.",
+    "Confondere la sequenza di Shine-Dalgarno con la TATA box."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la funzione del fattore σ?",
+     "risposta": "Permettere alla RNA polimerasi batterica di riconoscere e legare specificamente i promotori."
+    },
+    {
+     "domanda": "Che cosa fa TFIIH?",
+     "risposta": "Apre il DNA al promotore e fosforila la CTD della RNA polimerasi II, permettendo l'avvio dell'allungamento."
+    },
+    {
+     "domanda": "Perché il ribosoma è considerato un ribozima?",
+     "risposta": "Perché il legame peptidico è catalizzato dall'rRNA della subunità maggiore."
+    },
+    {
+     "domanda": "Come viene scelto l'AUG di inizio negli eucarioti?",
+     "risposta": "La subunità minore scorre dal cappuccio fino al primo AUG in un contesto di Kozak favorevole."
+    },
+    {
+     "domanda": "Che cosa consente lo splicing alternativo?",
+     "risposta": "Di ottenere più mRNA, e quindi più proteine, da un singolo gene combinando gli esoni in modi diversi."
+    }
+   ]
+  }
+ },
+ "Regolazione genica": {
+  "superiore": {
+   "spiegazione": [
+    "Ogni cellula possiede tutto il genoma, ma in ogni momento utilizza solo una parte dei suoi geni. La regolazione genica è l'insieme dei meccanismi che decidono quali geni esprimere, quando e in che quantità. Per un batterio è una questione di risparmio: produrre proteine costa energia, e non ha senso fabbricare enzimi per un nutriente che non c'è. Per un organismo pluricellulare è anche la base del differenziamento: una cellula del fegato e un neurone hanno lo stesso DNA, ma esprimono geni diversi. Senza regolazione, tutte le cellule sarebbero uguali.",
+    "Nei batteri molti geni sono raggruppati in operoni, cioè insiemi di geni trascritti insieme e controllati da un promotore (dove si lega la RNA polimerasi) e da un operatore (dove si lega un repressore). Il modello più noto è l'operone lac di E. coli, studiato da Jacob e Monod. Contiene i geni per gli enzimi che servono a usare il lattosio. In assenza di lattosio un repressore è legato all'operatore e la RNA polimerasi non può trascrivere i geni; quando arriva il lattosio, una sua forma si lega al repressore e lo stacca, e l'operone si accende. Per questo l'operone lac si dice inducibile.",
+    "L'operone lac risponde anche al glucosio, la fonte di energia preferita. Quando il glucosio scarseggia nella cellula aumenta una molecola chiamata cAMP, che si lega alla proteina CAP; il complesso cAMP-CAP si attacca vicino al promotore e aiuta la RNA polimerasi. Così l'operone lavora al massimo solo se c'è lattosio e manca il glucosio. L'operone trp funziona al contrario: è normalmente acceso e produce gli enzimi per fabbricare il triptofano. Quando il triptofano è abbondante si lega al repressore e lo attiva, e l'operone si spegne: è un operone reprimibile.",
+    "Negli eucarioti la regolazione è più complessa e avviene a più livelli. Il primo è la cromatina: il DNA molto compatto (eterocromatina) non viene letto, quello più rilassato (eucromatina) sì. Il secondo è la trascrizione, controllata da proteine chiamate fattori di trascrizione, che si legano al promotore e a sequenze anche lontane, gli enhancer, che aumentano l'attività del gene. Poi ci sono la maturazione dell'RNA, con lo splicing alternativo, la stabilità dell'mRNA e la traduzione. Anche dopo la sintesi una proteina può essere attivata, spenta o degradata.",
+    "L'epigenetica studia le modifiche che cambiano l'espressione dei geni senza cambiare la sequenza del DNA e che possono passare alle cellule figlie. La metilazione del DNA, cioè l'aggiunta di gruppi metile alle citosine, di solito spegne un gene. L'acetilazione degli istoni allenta la cromatina e accende i geni. Queste modifiche possono essere influenzate da ambiente, dieta e stile di vita: per questo gemelli identici possono diventare un po' diversi con gli anni. Nello sviluppo dell'embrione, i geni omeotici (Hox) stabiliscono quale parte del corpo si formerà in ogni segmento."
+   ],
+   "metodo": [
+    "Disegna l'operone lac in quattro situazioni (con o senza lattosio, con o senza glucosio) e indica se è acceso.",
+    "Confronta in una tabella operone lac (inducibile) e operone trp (reprimibile).",
+    "Fai un elenco dei livelli di regolazione eucariotica dal DNA alla proteina, con un esempio per ciascuno.",
+    "Spiega con parole tue la differenza tra mutazione ed epigenetica usando l'esempio dei gemelli.",
+    "Collega il capitolo a «Trascrizione e traduzione»: ogni livello di regolazione agisce su una tappa precisa."
+   ],
+   "ricorda": [
+    "Lac = «Lo Accendo Col lattosio»; trp = si spegne quando il prodotto c'è già.",
+    "Repressore = freno; cAMP-CAP = acceleratore.",
+    "Metilazione del DNA spegne, acetilazione degli istoni accende.",
+    "Stesso DNA, geni accesi diversi = cellule diverse."
+   ],
+   "errori": [
+    "Pensare che il lattosio blocchi l'operone lac (in realtà lo attiva).",
+    "Credere che le cellule differenziate perdano i geni che non usano.",
+    "Confondere le modifiche epigenetiche con le mutazioni.",
+    "Dire che il glucosio si lega al repressore lac."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cos'è un operone?",
+     "risposta": "Un gruppo di geni batterici trascritti insieme, controllati da un promotore e un operatore comuni."
+    },
+    {
+     "domanda": "Che cosa succede all'operone lac quando arriva il lattosio?",
+     "risposta": "Una forma del lattosio si lega al repressore, lo stacca dall'operatore e i geni vengono trascritti."
+    },
+    {
+     "domanda": "Perché l'operone trp si dice reprimibile?",
+     "risposta": "Perché è normalmente attivo e si spegne quando il triptofano è abbondante."
+    },
+    {
+     "domanda": "Che cosa sono gli enhancer?",
+     "risposta": "Sequenze di DNA, anche lontane dal gene, che legano proteine attivatrici e aumentano la trascrizione."
+    },
+    {
+     "domanda": "Che cosa fa la metilazione del DNA?",
+     "risposta": "Di solito spegne i geni, senza modificare la sequenza delle basi."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Il modello dell'operone di Jacob e Monod nacque dallo studio genetico di mutanti dell'operone lac. Il repressore, prodotto dal gene lacI, è un tetramero che lega l'operatore e impedisce l'avanzamento della RNA polimerasi; l'induttore fisiologico, l'allolattosio, o quello sintetico IPTG, provoca un cambiamento allosterico che riduce l'affinità per il DNA. Con diploidi parziali (F') si distinsero elementi che agiscono in trans, cioè prodotti diffusibili come il repressore, da elementi che agiscono in cis, cioè sequenze come l'operatore. Un mutante lacI⁻ è costitutivo ma recessivo, perché un repressore normale in trans ripristina la regolazione; un mutante Oᶜ è costitutivo e dominante in cis. I mutanti lacIˢ, il cui repressore non lega l'induttore, sono invece non inducibili e dominanti.",
+    "Al controllo negativo si aggiunge quello positivo: con poco glucosio l'adenilato ciclasi è più attiva, il cAMP sale e il complesso cAMP-CAP lega un sito a monte del promotore, piegando il DNA e stabilizzando la RNA polimerasi. Il fenomeno della repressione da catabolita spiega la crescita diauxica: il batterio consuma prima il glucosio e solo dopo il lattosio. L'operone trp mostra invece un repressore attivato dal corepressore triptofano e un secondo livello di controllo, l'attenuazione. Questa sfrutta l'accoppiamento tra trascrizione e traduzione: la velocità del ribosoma sui codoni trp della regione leader determina quale struttura secondaria si forma nell'RNA e quindi se la trascrizione termina in anticipo.",
+    "Negli eucarioti la cromatina è il primo livello di controllo. Le code degli istoni portano modifiche covalenti (acetilazione, metilazione, fosforilazione, ubiquitinazione) che costituiscono un «codice» letto da proteine con domini specifici. L'acetilazione da parte delle istone acetiltransferasi neutralizza le lisine e si associa all'attivazione, mentre le deacetilasi la rimuovono; la trimetilazione di H3K4 marca promotori attivi, quelle di H3K9 e H3K27 l'eterocromatina. Complessi di rimodellamento ATP-dipendenti spostano i nucleosomi e rendono accessibili i siti di legame. La metilazione delle citosine nelle isole CpG, mantenuta dalla DNMT1 a ogni replicazione, stabilizza il silenziamento ed è alla base dell'imprinting genomico e dell'inattivazione dell'X.",
+    "Il livello trascrizionale si basa sull'assemblaggio sul promotore basale dei fattori generali, a partire da TFIID, e della RNA polimerasi II. L'intensità della trascrizione dipende da attivatori e repressori specifici, proteine modulari con un dominio di legame al DNA (dita di zinco, elica-giro-elica, cerniere di leucina) e un dominio di attivazione. Essi si legano a enhancer e silencer, anche molto distanti, e comunicano con la polimerasi tramite il complesso Mediatore e il ripiegamento del DNA in anse; gli isolatori legati da CTCF delimitano i domini di influenza. Il controllo combinatorio, cioè la combinazione di pochi fattori in contesti diversi, permette una grande varietà di programmi di espressione. I recettori degli ormoni steroidei sono esempi di fattori che legano il DNA dopo aver legato l'ormone.",
+    "Dopo la trascrizione restano molti punti di controllo. Lo splicing alternativo, regolato da proteine SR e hnRNP, genera isoforme diverse; la stabilità dell'mRNA dipende da sequenze nella regione 3' non tradotta e dalla lunghezza della coda di poli-A. I microRNA, caricati nel complesso RISC con proteine Argonauta, riducono traduzione e stabilità degli mRNA bersaglio, mentre i siRNA ne causano il taglio. La traduzione può essere regolata a livello di inizio, per esempio tramite la fosforilazione di eIF2 in condizioni di stress, e le proteine possono essere attivate per fosforilazione o eliminate con l'ubiquitina e il proteasoma. Nello sviluppo cascate di fattori di trascrizione, come i geni Hox disposti con collinearità, stabiliscono l'identità delle regioni del corpo."
+   ],
+   "metodo": [
+    "Costruisci una tabella dei mutanti lac (lacI⁻, lacIˢ, Oᶜ, lacZ⁻) prevedendo l'espressione con e senza induttore, anche in diploidi parziali.",
+    "Disegna l'attenuazione trp con le regioni 1-2-3-4 della sequenza leader nelle due condizioni.",
+    "Prepara una mappa dei livelli di regolazione eucariotica, collegando ciascuno a enzimi e modifiche specifiche.",
+    "Studia un caso integrato, come un gene regolato da un ormone steroideo, seguendo il segnale fino alla proteina.",
+    "Collega imprinting e inattivazione dell'X ai capitoli di genetica mendeliana e di eredità legata al sesso."
+   ],
+   "ricorda": [
+    "Sequenze = cis; proteine diffusibili = trans.",
+    "lacIˢ: super-repressore, non inducibile e dominante.",
+    "HAT accende, HDAC spegne; H3K4me3 attivo, H3K27me3 silente.",
+    "Attenuazione solo dove trascrizione e traduzione sono accoppiate (procarioti).",
+    "Enhancer: distanza e orientamento non contano."
+   ],
+   "errori": [
+    "Considerare dominante una mutazione lacI⁻ in un diploide parziale.",
+    "Pensare che il cAMP agisca sul repressore lac.",
+    "Generalizzare l'effetto della metilazione istonica come sempre repressivo.",
+    "Confondere miRNA (repressione parziale) e siRNA (taglio dell'mRNA).",
+    "Ritenere che la regolazione eucariotica avvenga solo al promotore."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché un mutante Oᶜ è dominante solo in cis?",
+     "risposta": "Perché l'operatore è una sequenza di DNA e controlla solo i geni adiacenti sulla stessa molecola."
+    },
+    {
+     "domanda": "Che cos'è la crescita diauxica?",
+     "risposta": "La crescita in due fasi di un batterio che usa prima il glucosio e solo dopo il lattosio, per la repressione da catabolita."
+    },
+    {
+     "domanda": "Qual è la funzione del complesso Mediatore?",
+     "risposta": "Trasmettere i segnali degli attivatori legati agli enhancer alla RNA polimerasi II al promotore."
+    },
+    {
+     "domanda": "Come viene mantenuta la metilazione del DNA dopo la replicazione?",
+     "risposta": "La DNMT1 riconosce i siti CpG emimetilati e metila il nuovo filamento."
+    },
+    {
+     "domanda": "Che cosa significa controllo combinatorio?",
+     "risposta": "Che l'espressione di un gene dipende dalla combinazione di più fattori di trascrizione presenti in una cellula."
+    }
+   ]
+  }
+ },
+ "Mutazioni e malattie genetiche": {
+  "superiore": {
+   "spiegazione": [
+    "Una mutazione è un cambiamento della sequenza del DNA. Può nascere spontaneamente, per errori durante la replicazione, oppure essere causata da agenti mutageni: radiazioni come i raggi UV e i raggi X, e sostanze chimiche come alcuni componenti del fumo di sigaretta. Le mutazioni somatiche avvengono nelle cellule del corpo e non passano ai figli, anche se possono causare tumori. Le mutazioni germinali avvengono nelle cellule che formano i gameti e possono essere ereditate. Non tutte le mutazioni sono dannose: molte sono neutre, e alcune utili sono il motore dell'evoluzione.",
+    "Le mutazioni geniche, o puntiformi, riguardano una o poche basi. Una sostituzione può essere silente, se il nuovo codone indica lo stesso amminoacido; missenso, se cambia l'amminoacido, come nell'anemia falciforme; non senso, se crea un codone di stop e tronca la proteina. Le inserzioni o delezioni di una o due basi spostano la fase di lettura (frameshift) e cambiano tutti gli amminoacidi successivi. Se invece si aggiungono o tolgono tre basi, si aggiunge o si perde un solo amminoacido, come nella mutazione più comune della fibrosi cistica.",
+    "Le mutazioni cromosomiche modificano la struttura di un cromosoma: un tratto può andare perso (delezione), essere copiato due volte (duplicazione), essere capovolto (inversione) o spostarsi su un altro cromosoma (traslocazione). Le mutazioni genomiche cambiano invece il numero dei cromosomi. Sono dovute in genere alla non disgiunzione, cioè alla mancata separazione dei cromosomi durante la meiosi. Esempi sono la sindrome di Down (trisomia del 21), la sindrome di Turner (45,X) e quella di Klinefelter (47,XXY). Si studiano con il cariotipo, l'immagine ordinata dei cromosomi di una cellula.",
+    "Molte malattie genetiche dipendono da un singolo gene e seguono le leggi di Mendel. Sono autosomiche recessive la fibrosi cistica, la fenilchetonuria e la talassemia: si ammalano solo gli omozigoti, mentre gli eterozigoti sono portatori sani. Sono autosomiche dominanti la corea di Huntington e l'acondroplasia, che si manifestano anche con una sola copia del gene mutato. L'emofilia e la distrofia muscolare di Duchenne sono recessive legate all'X e colpiscono soprattutto i maschi. Alcune malattie, come la fenilchetonuria, si possono controllare con diagnosi precoce e terapia, qui una dieta speciale.",
+    "La cellula dispone di sistemi per correggere i danni al DNA: la DNA polimerasi corregge i propri errori, e altri enzimi tagliano e sostituiscono le parti danneggiate, per esempio i dimeri di timina prodotti dai raggi UV. Quando questi sistemi non funzionano le mutazioni si accumulano e aumenta il rischio di tumori, come nello xeroderma pigmentoso. I tumori nascono infatti da più mutazioni che colpiscono geni che controllano la divisione cellulare: gli oncogeni, che spingono a dividersi, e gli oncosoppressori, che la frenano. Proteggersi dal sole e non fumare riduce i danni al DNA."
+   ],
+   "metodo": [
+    "Prendi una breve sequenza di mRNA e applica ogni tipo di mutazione, traducendo il risultato con la tabella del codice.",
+    "Prepara una tabella delle sindromi cromosomiche con cariotipo, causa e caratteristiche principali.",
+    "Classifica le malattie studiate in autosomiche recessive, dominanti e legate all'X, con un esempio ciascuna.",
+    "Disegna la non disgiunzione in meiosi e conta i cromosomi dei gameti ottenuti.",
+    "Collega il capitolo a «Leggi di Mendel» ed «Eredità legata al sesso» per i calcoli di probabilità."
+   ],
+   "ricorda": [
+    "Silente = stesso amminoacido; missenso = amminoacido diverso; non senso = stop.",
+    "Frameshift solo se le basi aggiunte o tolte non sono multiplo di 3.",
+    "Down 47,+21; Turner 45,X; Klinefelter 47,XXY.",
+    "Somatica resta nella persona, germinale passa ai figli."
+   ],
+   "errori": [
+    "Pensare che tutte le mutazioni siano dannose.",
+    "Credere che una mutazione somatica si trasmetta ai figli.",
+    "Confondere Turner (femmina, 45,X) e Klinefelter (maschio, 47,XXY).",
+    "Pensare che ogni delezione provochi un frameshift."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cos'è una mutazione non senso?",
+     "risposta": "Una sostituzione che trasforma un codone in un codone di stop, producendo una proteina troncata."
+    },
+    {
+     "domanda": "Che cosa causa la sindrome di Down?",
+     "risposta": "Nella maggior parte dei casi una trisomia del cromosoma 21 dovuta a non disgiunzione meiotica."
+    },
+    {
+     "domanda": "Perché un'inserzione di una base è più grave di una sostituzione?",
+     "risposta": "Perché sposta la fase di lettura e cambia tutti i codoni successivi."
+    },
+    {
+     "domanda": "Qual è il danno tipico dei raggi UV?",
+     "risposta": "La formazione di dimeri di timina tra basi adiacenti dello stesso filamento."
+    },
+    {
+     "domanda": "Che differenza c'è tra oncogeni e oncosoppressori?",
+     "risposta": "Gli oncogeni promuovono la divisione cellulare quando sono iperattivi, gli oncosoppressori la frenano e causano tumori quando sono inattivati."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Le mutazioni spontanee derivano da errori di replicazione non corretti, da forme tautomeriche rare delle basi che si appaiano in modo errato, da slittamento della polimerasi in sequenze ripetute e da danni chimici spontanei come la deaminazione della citosina a uracile o la depurinazione. Le mutazioni indotte sono causate da analoghi di basi (5-bromouracile), agenti alchilanti, intercalanti come l'etidio, che provocano frameshift, e radiazioni: gli UV formano dimeri di pirimidine, le radiazioni ionizzanti rompono i filamenti. Le sostituzioni si classificano in transizioni (purina con purina o pirimidina con pirimidina) e transversioni. Il test di Ames usa ceppi di Salmonella auxotrofi per valutare il potere mutageno di una sostanza.",
+    "Le conseguenze funzionali delle mutazioni si descrivono in termini di perdita o guadagno di funzione. Le mutazioni con perdita di funzione sono spesso recessive, perché una copia normale basta; fanno eccezione i casi di aploinsufficienza, in cui il 50% del prodotto non è sufficiente. Le mutazioni con guadagno di funzione e quelle dominanti negative, in cui la proteina mutata interferisce con quella normale (per esempio in proteine multimeriche come il collagene), sono dominanti. Le mutazioni non senso attivano spesso il decadimento dell'mRNA mediato da non senso. Le mutazioni dinamiche da espansione di triplette spiegano l'anticipazione nella corea di Huntington, nella distrofia miotonica e nella sindrome dell'X fragile.",
+    "Le anomalie cromosomiche di struttura comprendono delezioni (come la delezione 5p del cri du chat), duplicazioni, inversioni pericentriche e paracentriche, e traslocazioni reciproche o robertsoniane. Un portatore di traslocazione bilanciata è in genere sano, ma produce gameti sbilanciati con aumentato rischio di aborti o figli affetti; una traslocazione robertsoniana 14;21 causa la sindrome di Down familiare. Le traslocazioni somatiche possono creare geni di fusione oncogeni, come BCR-ABL nel cromosoma Philadelphia. Le aneuploidie nascono da non disgiunzione in meiosi I o II, con frequenza crescente con l'età materna. Le tecniche diagnostiche vanno dal cariotipo con bandeggio alla FISH, all'array-CGH e al sequenziamento.",
+    "La stabilità del genoma è garantita da più sistemi di riparazione. Alcuni danni vengono invertiti direttamente (fotoliasi, O⁶-metilguanina metiltransferasi); la riparazione per escissione di basi (BER) rimuove basi danneggiate singole tramite DNA glicosilasi; quella per escissione di nucleotidi (NER) elimina lesioni voluminose come i dimeri di pirimidine; il sistema mismatch corregge gli errori sfuggiti alla correzione di bozze. Le rotture a doppio filamento sono riparate dalla ricombinazione omologa, precisa e attiva dopo la replicazione, o dalla giunzione non omologa delle estremità (NHEJ), più rapida ma soggetta a errori. Difetti ereditari di questi sistemi causano predisposizione ai tumori: xeroderma pigmentoso (NER), sindrome di Lynch (mismatch), BRCA1 e BRCA2 (ricombinazione omologa).",
+    "Il cancro è una malattia genetica delle cellule somatiche, che accumula mutazioni in oncogeni e oncosoppressori. I proto-oncogeni diventano oncogeni per mutazione puntiforme (RAS), amplificazione (MYC) o traslocazione, e agiscono in modo dominante a livello cellulare. Gli oncosoppressori, come RB1 e TP53, devono essere inattivati in entrambe le copie (ipotesi dei due colpi di Knudson), spesso con perdita di eterozigosità. A livello di popolazione la frequenza degli alleli patologici si stima con l'equilibrio di Hardy-Weinberg (p² + 2pq + q² = 1), che vale in assenza di selezione, mutazione, migrazione, deriva e accoppiamento non casuale. Per le malattie recessive rare la maggior parte degli alleli si trova negli eterozigoti, e in alcuni casi, come l'anemia falciforme nelle zone malariche, l'eterozigote è favorito dalla selezione."
+   ],
+   "metodo": [
+    "Prepara una tabella dei mutageni con il meccanismo d'azione e il tipo di mutazione prodotta.",
+    "Associa ogni sistema di riparazione al danno che corregge e alla malattia causata dal suo difetto.",
+    "Disegna la segregazione in meiosi di una traslocazione reciproca bilanciata e individua i gameti sbilanciati.",
+    "Esercitati con calcoli di Hardy-Weinberg partendo dalla frequenza degli affetti, degli alleli o dei portatori.",
+    "Costruisci per un tumore a scelta la sequenza di mutazioni (oncogeni e oncosoppressori) che porta alla trasformazione."
+   ],
+   "ricorda": [
+    "Transizione: stessa classe di base; transversione: classe diversa.",
+    "Dominante negativa = la proteina mutata «avvelena» quella normale.",
+    "Oncogene: un colpo basta; oncosoppressore: ne servono due.",
+    "NER → xeroderma; mismatch → Lynch; ricombinazione omologa → BRCA.",
+    "Recessiva rara: portatori ≈ 2q."
+   ],
+   "errori": [
+    "Assumere che tutte le mutazioni con perdita di funzione siano recessive, dimenticando l'aploinsufficienza.",
+    "Confondere la dominanza ereditaria della predisposizione con la recessività cellulare degli oncosoppressori.",
+    "Usare q invece di 2pq per la frequenza dei portatori.",
+    "Considerare innocue le traslocazioni bilanciate per la discendenza.",
+    "Applicare Hardy-Weinberg a popolazioni con forte consanguineità o selezione."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa misura il test di Ames?",
+     "risposta": "Il potere mutageno di una sostanza, dalla frequenza di reversione di ceppi di Salmonella auxotrofi per l'istidina."
+    },
+    {
+     "domanda": "Che cos'è una mutazione dominante negativa?",
+     "risposta": "Una mutazione la cui proteina alterata interferisce con il funzionamento della proteina normale prodotta dall'altro allele."
+    },
+    {
+     "domanda": "Perché la NHEJ è soggetta a errori?",
+     "risposta": "Perché unisce direttamente le estremità rotte senza usare uno stampo omologo, perdendo o aggiungendo spesso alcune basi."
+    },
+    {
+     "domanda": "Che cos'è la perdita di eterozigosità?",
+     "risposta": "La perdita della copia normale residua di un oncosoppressore in una cellula che ne aveva già una mutata."
+    },
+    {
+     "domanda": "Se q² = 1/10 000, quale è la frequenza dei portatori?",
+     "risposta": "q = 0,01 e 2pq ≈ 0,0198, cioè circa 1 su 50."
+    }
+   ]
+  }
+ },
+ "Biotecnologie e DNA ricombinante": {
+  "superiore": {
+   "spiegazione": [
+    "Le biotecnologie usano organismi viventi o loro componenti per ottenere prodotti utili. Quelle moderne si basano sulla tecnologia del DNA ricombinante, cioè sulla possibilità di tagliare un gene da un organismo e inserirlo in un altro. Gli strumenti principali vengono dai batteri. Gli enzimi di restrizione tagliano il DNA in sequenze specifiche, spesso palindromiche come GAATTC per l'enzima EcoRI. Molti lasciano estremità a filamento singolo, dette coesive, che si appaiano con altre estremità tagliate dallo stesso enzima; la DNA ligasi le salda.",
+    "Per trasferire un gene si usa un vettore, di solito un plasmide, piccolo DNA circolare dei batteri. Il plasmide e il gene vengono tagliati con lo stesso enzima di restrizione, mescolati e uniti con la ligasi: si ottiene un plasmide ricombinante. Questo viene introdotto nei batteri con la trasformazione, e solo le cellule che lo hanno ricevuto crescono in presenza di un antibiotico, grazie a un gene di resistenza contenuto nel plasmide. Moltiplicandosi, i batteri copiano il gene e possono produrre la proteina corrispondente. Così si producono insulina umana, ormone della crescita e vaccini.",
+    "La PCR (reazione a catena della polimerasi) permette di ottenere moltissime copie di un tratto di DNA partendo da pochissimo materiale. Si usano due primer che delimitano il tratto, nucleotidi e una DNA polimerasi resistente al calore, la Taq polimerasi. Ogni ciclo ha tre fasi: denaturazione a circa 95 °C, appaiamento dei primer a circa 55 °C ed estensione a 72 °C. A ogni ciclo le copie raddoppiano: dopo 30 cicli sono circa un miliardo. La PCR si usa nella diagnosi delle infezioni, nelle indagini forensi e nella ricerca.",
+    "Per analizzare i frammenti di DNA si usa l'elettroforesi su gel. Il DNA, carico negativamente, migra verso il polo positivo, e i frammenti più corti attraversano il gel più velocemente. Confrontando le bande con un marcatore di lunghezze note si capisce quanto sono lunghi i frammenti. L'impronta genetica sfrutta tratti di DNA chiamati STR, brevi sequenze ripetute un numero di volte diverso da persona a persona. Analizzando molti STR si ottiene un profilo quasi unico, utile nelle indagini e nei test di paternità.",
+    "Le applicazioni delle biotecnologie sono molte. In agricoltura si ottengono piante geneticamente modificate (OGM), per esempio resistenti agli insetti. In medicina, oltre ai farmaci ricombinanti, la terapia genica cerca di curare le malattie ereditarie portando nelle cellule una copia sana del gene. La tecnica CRISPR-Cas9 permette di modificare con precisione un punto scelto del DNA, guidata da un RNA. La clonazione della pecora Dolly, nel 1996, ha mostrato che il nucleo di una cellula adulta può dare origine a un intero organismo. Queste tecniche pongono anche domande etiche su sicurezza, ambiente e limiti dell'intervento sull'uomo."
+   ],
+   "metodo": [
+    "Disegna a fumetto le tappe del clonaggio: taglio, unione, trasformazione, selezione, produzione della proteina.",
+    "Prepara una tabella degli «attrezzi» (enzimi di restrizione, ligasi, Taq polimerasi, plasmide) con funzione e origine.",
+    "Ripeti le tre fasi della PCR con le temperature e calcola le copie dopo 10, 20 e 30 cicli.",
+    "Esercitati a leggere un gel di elettroforesi: ordina i frammenti per lunghezza e confrontali con il marcatore.",
+    "Scegli un'applicazione (insulina, OGM, CRISPR) e preparane una scheda con vantaggi e problemi."
+   ],
+   "ricorda": [
+    "Restrizione taglia, ligasi incolla, PCR copia, elettroforesi separa.",
+    "PCR: 95-55-72 °C, e le copie raddoppiano a ogni ciclo.",
+    "Nel gel il DNA «corre al rosso» (polo positivo) e i piccoli corrono di più.",
+    "Plasmide = furgoncino del gene."
+   ],
+   "errori": [
+    "Pensare che il DNA migri verso il polo negativo.",
+    "Credere che la PCR copi tutto il genoma invece del solo tratto tra i primer.",
+    "Confondere enzimi di restrizione e ligasi.",
+    "Pensare che la clonazione produca un individuo identico anche nel DNA mitocondriale."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa sono le estremità coesive?",
+     "risposta": "Brevi tratti a filamento singolo lasciati da alcuni enzimi di restrizione, che si appaiano con estremità complementari."
+    },
+    {
+     "domanda": "Perché si usa la Taq polimerasi nella PCR?",
+     "risposta": "Perché resiste alle alte temperature della denaturazione senza perdere attività."
+    },
+    {
+     "domanda": "Come si selezionano i batteri che hanno ricevuto il plasmide?",
+     "risposta": "Facendoli crescere con un antibiotico: sopravvivono solo quelli con il gene di resistenza portato dal plasmide."
+    },
+    {
+     "domanda": "A che cosa servono gli STR?",
+     "risposta": "A ottenere un profilo genetico quasi unico, usato nelle indagini forensi e nei test di paternità."
+    },
+    {
+     "domanda": "Che cosa permette di fare CRISPR-Cas9?",
+     "risposta": "Di tagliare e modificare il DNA in un punto preciso scelto con un RNA guida."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Il clonaggio molecolare si basa su un insieme di enzimi. Gli enzimi di restrizione di tipo II tagliano all'interno di siti di riconoscimento palindromici, producendo estremità coesive sporgenti al 5' o al 3', oppure estremità piatte; in un DNA casuale un sito di n coppie di basi ricorre in media ogni 4ⁿ coppie. La DNA ligasi del fago T4 unisce estremità coesive o piatte. La trascrittasi inversa sintetizza cDNA dall'mRNA, permettendo di clonare la sola sequenza codificante. La fosfatasi alcalina, rimuovendo i 5'-fosfati del vettore, ne impedisce la richiusura su sé stesso.",
+    "I vettori si scelgono in base alla dimensione dell'inserto e allo scopo: plasmidi per pochi kb, fagi e cosmidi per decine di kb, cromosomi artificiali batterici (BAC) per centinaia di kb, vettori virali per le cellule eucariotiche. Un plasmide di clonaggio contiene un'origine di replicazione, un marcatore di selezione e un sito di clonaggio multiplo; spesso il sito si trova in lacZα, così che l'inserzione dia colonie bianche su X-gal. I vettori di espressione aggiungono un promotore regolabile e un sito di legame al ribosoma compatibili con l'ospite. L'espressione di proteine umane complesse richiede talvolta cellule eucariotiche, perché i batteri non eseguono glicosilazioni e altre modifiche post-traduzionali.",
+    "La PCR amplifica in modo esponenziale una regione definita da due primer, con cicli di denaturazione, appaiamento ed estensione; la temperatura di appaiamento dipende dalla Tm dei primer. Con l'RT-PCR si parte dall'RNA, convertito prima in cDNA. La PCR quantitativa misura in tempo reale la fluorescenza: il ciclo soglia Ct è inversamente correlato al logaritmo della quantità iniziale, e con efficienza ottimale una differenza di un ciclo corrisponde a un fattore 2. Le tecniche di ibridazione su membrana, Southern per il DNA e Northern per l'RNA, insieme al Western blot per le proteine, completano l'analisi. La PCR è alla base di diagnosi infettive, genotipizzazione e profili STR forensi.",
+    "Il sequenziamento Sanger usa dideossinucleotidi marcati che terminano la sintesi, e i frammenti separati per elettroforesi capillare permettono di leggere fino a circa 1000 basi con grande precisione. Il sequenziamento di nuova generazione esegue milioni di reazioni in parallelo su frammenti brevi, poi riassemblati o allineati a un genoma di riferimento; quello di terza generazione legge singole molecole lunghe. Queste tecnologie hanno reso possibili la genomica clinica, lo studio dell'espressione genica con l'RNA-seq e la metagenomica. L'analisi dei dati richiede strumenti bioinformatici e attenzione alla protezione dei dati personali.",
+    "CRISPR-Cas9, derivato da un sistema immunitario batterico, permette l'editing del genoma: l'RNA guida porta Cas9 su un bersaglio adiacente a un PAM, dove produce una rottura a doppio filamento. La riparazione per NHEJ crea inserzioni o delezioni che inattivano il gene (knock-out), mentre l'HDR con uno stampo donatore introduce modifiche precise (knock-in); varianti come i «base editor» cambiano una singola base senza rompere la doppia elica. Gli organismi transgenici si ottengono nelle piante tramite il plasmide Ti di Agrobacterium tumefaciens e negli animali con microiniezione o editing degli embrioni. La terapia genica può essere ex vivo, modificando cellule del paziente poi reinfuse, o in vivo con vettori AAV o lentivirali. Il trasferimento nucleare (Dolly) e le cellule staminali pluripotenti indotte (iPS) mostrano la riprogrammabilità del nucleo, mentre l'editing della linea germinale umana resta oggetto di forti limiti etici e normativi."
+   ],
+   "metodo": [
+    "Pianifica per esercizio un esperimento completo di clonaggio: scelta degli enzimi, vettore, selezione, verifica dell'inserto.",
+    "Risolvi problemi di mappe di restrizione con molecole lineari e circolari e digestioni singole e doppie.",
+    "Calcola numeri di copie in PCR, frequenze di siti di restrizione e rapporti di espressione da valori di Ct.",
+    "Confronta in una tabella Sanger, NGS e sequenziamento a lettura lunga (lunghezza delle letture, precisione, usi).",
+    "Prepara uno schema di CRISPR-Cas9 con i due esiti di riparazione e un esempio di applicazione terapeutica."
+   ],
+   "ricorda": [
+    "Molecola circolare: n tagli = n frammenti; lineare: n + 1.",
+    "Sito di n bp: uno ogni 4ⁿ bp.",
+    "ΔCt = 1 → 2 volte; ΔCt = 3 → 8 volte.",
+    "NHEJ = knock-out; HDR = knock-in.",
+    "Southern DNA, Northern RNA, Western proteine."
+   ],
+   "errori": [
+    "Usare il DNA genomico eucariotico per esprimere proteine nei batteri, dimenticando gli introni.",
+    "Interpretare un Ct alto come segno di maggiore abbondanza del bersaglio.",
+    "Applicare la regola delle molecole lineari ai plasmidi circolari.",
+    "Pensare che Cas9 riconosca il bersaglio senza RNA guida e PAM.",
+    "Dimenticare che i batteri non eseguono le modifiche post-traduzionali eucariotiche."
+   ],
+   "domande": [
+    {
+     "domanda": "A che cosa serve trattare il vettore con fosfatasi alcalina?",
+     "risposta": "A impedire che il vettore tagliato si richiuda su sé stesso senza inserto."
+    },
+    {
+     "domanda": "Perché le colonie bianche su X-gal contengono l'inserto?",
+     "risposta": "Perché l'inserto interrompe lacZα e impedisce la formazione della β-galattosidasi, che renderebbe blu la colonia."
+    },
+    {
+     "domanda": "Che differenza c'è tra terapia genica ex vivo e in vivo?",
+     "risposta": "Nella prima le cellule vengono modificate fuori dal corpo e reinfuse, nella seconda il vettore viene somministrato direttamente al paziente."
+    },
+    {
+     "domanda": "Qual è il ruolo del PAM in CRISPR-Cas9?",
+     "risposta": "È un breve motivo adiacente al bersaglio, necessario perché Cas9 riconosca e tagli il DNA."
+    },
+    {
+     "domanda": "Perché il sequenziamento NGS richiede la bioinformatica?",
+     "risposta": "Perché produce milioni di letture brevi che devono essere allineate o assemblate per ricostruire le sequenze."
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,3684 @@
+[
+ {
+  "id": "LOG-001",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Tutti i medici sono laureati. Nessun laureato è analfabeta.» Quale conclusione segue necessariamente dalle premesse?",
+  "opzioni": {
+   "A": "Tutti i laureati sono medici",
+   "B": "Alcuni analfabeti sono medici",
+   "C": "Alcuni medici sono analfabeti",
+   "D": "Nessun medico è analfabeta",
+   "E": "Tutti i non medici sono analfabeti"
+  },
+  "giusta": "D",
+  "perche": "L'insieme dei medici è contenuto in quello dei laureati, che non ha elementi in comune con quello degli analfabeti: quindi nessun medico può essere analfabeta. L'opzione A inverte la prima premessa (errore di conversione); B e C contraddicono la conclusione corretta; E non ha alcun fondamento nelle premesse.",
+  "semplice": "Disegna tre cerchi: quello dei medici sta tutto dentro quello dei laureati, e il cerchio degli analfabeti è completamente separato dai laureati. Allora il cerchio dei medici non può toccare quello degli analfabeti.",
+  "passaggi": [
+   "1. Medici ⊂ Laureati",
+   "2. Laureati ∩ Analfabeti = ∅",
+   "3. Quindi Medici ∩ Analfabeti = ∅: nessun medico è analfabeta"
+  ],
+  "concetto": "sillogismo categorico"
+ },
+ {
+  "id": "LOG-002",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Qual è la negazione logica della frase «Tutti gli studenti hanno superato l'esame»?",
+  "opzioni": {
+   "A": "Nessuno studente ha superato l'esame",
+   "B": "Tutti gli studenti non hanno superato l'esame",
+   "C": "Alcuni studenti hanno superato l'esame",
+   "D": "Esattamente uno studente non ha superato l'esame",
+   "E": "Almeno uno studente non ha superato l'esame"
+  },
+  "giusta": "E",
+  "perche": "Per rendere falsa un'affermazione universale («tutti») basta un solo controesempio: la negazione di «tutti sono P» è «almeno uno non è P». Le opzioni A e B sono la trappola più comune: affermano il contrario universale, che è molto più forte della semplice negazione. D è troppo specifica, C è compatibile con la frase originale.",
+  "semplice": "Se il professore dice «tutti hanno superato l'esame» e tu vuoi dimostrare che sbaglia, ti basta trovare un solo studente bocciato. Non serve che siano stati bocciati tutti.",
+  "passaggi": [
+   "1. Frase: ∀ studente, superato",
+   "2. Negazione: ∃ studente, non superato",
+   "3. «Almeno uno studente non ha superato l'esame»"
+  ],
+  "concetto": "negazione dell'universale"
+ },
+ {
+  "id": "LOG-003",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Qual è la negazione logica della frase «Nessun gatto è nero»?",
+  "opzioni": {
+   "A": "Tutti i gatti sono neri",
+   "B": "Almeno un gatto è nero",
+   "C": "Nessun gatto è bianco",
+   "D": "Alcuni gatti non sono neri",
+   "E": "Tutti i gatti non sono neri"
+  },
+  "giusta": "B",
+  "perche": "«Nessun gatto è nero» significa che non esiste un gatto nero; la negazione è quindi che esiste almeno un gatto nero. L'opzione A è il contrario, non la negazione (è troppo forte); E ripete in altre parole la frase di partenza; D è compatibile con la frase originale e quindi non la nega.",
+  "semplice": "Per smentire chi dice «non esistono gatti neri» basta mostrargli un gatto nero. Non serve che tutti i gatti siano neri: ne basta uno.",
+  "passaggi": [
+   "1. Frase: non esiste x gatto e nero",
+   "2. Negazione: esiste x gatto e nero",
+   "3. «Almeno un gatto è nero»"
+  ],
+  "concetto": "negazione di «nessuno»"
+ },
+ {
+  "id": "LOG-004",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Se piove, Marco prende l'ombrello.» Oggi Marco non ha preso l'ombrello. Che cosa si può concludere con certezza?",
+  "opzioni": {
+   "A": "Oggi piove",
+   "B": "Marco ha dimenticato l'ombrello",
+   "C": "Oggi non piove",
+   "D": "Non si può concludere nulla sul tempo",
+   "E": "Oggi è nuvoloso"
+  },
+  "giusta": "C",
+  "perche": "Dalla regola «se P allora Q» e dal fatto «non Q» segue «non P» (modus tollens): se piovesse, Marco avrebbe l'ombrello; non ce l'ha, quindi non piove. L'opzione D è la trappola di chi confonde questo caso con la fallacia dell'affermazione del conseguente; B e E introducono informazioni non presenti nelle premesse.",
+  "semplice": "La regola dice che la pioggia porta sempre Marco a prendere l'ombrello. Se lo vedi senza ombrello, la pioggia non può esserci: altrimenti la regola sarebbe violata.",
+  "passaggi": [
+   "1. Premessa: P → Q (piove → ombrello)",
+   "2. Fatto: non Q (niente ombrello)",
+   "3. Modus tollens: non P ⇒ non piove"
+  ],
+  "concetto": "modus tollens"
+ },
+ {
+  "id": "LOG-005",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Se piove, la strada è bagnata.» Si osserva che la strada è bagnata. Quale delle seguenti affermazioni è corretta?",
+  "opzioni": {
+   "A": "Non si può stabilire con certezza se piova",
+   "B": "Piove sicuramente",
+   "C": "Sicuramente non piove",
+   "D": "La regola è falsa",
+   "E": "Ha piovuto anche ieri"
+  },
+  "giusta": "A",
+  "perche": "La regola dice che la pioggia è sufficiente a bagnare la strada, non che sia l'unica causa: la strada potrebbe essere bagnata per un idrante o per la pulizia. Concludere «piove» dall'effetto è la fallacia dell'affermazione del conseguente (opzione B). C e D non sono deducibili; E è un'informazione estranea.",
+  "semplice": "Se vedi la strada bagnata potrebbe aver piovuto, ma potrebbe anche essere passata l'autobotte che lava le strade. La regola funziona solo in una direzione: dalla pioggia alla strada bagnata, non viceversa.",
+  "passaggi": [
+   "1. Premessa: P → Q",
+   "2. Fatto: Q",
+   "3. Da Q non segue P (fallacia del conseguente): P resta incerto"
+  ],
+  "concetto": "fallacia dell'affermazione del conseguente"
+ },
+ {
+  "id": "LOG-006",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Quale delle seguenti frasi è logicamente equivalente a «Se un numero è divisibile per 6, allora è pari»?",
+  "opzioni": {
+   "A": "Se un numero è pari, allora è divisibile per 6",
+   "B": "Se un numero non è divisibile per 6, allora non è pari",
+   "C": "Un numero è pari solo se è divisibile per 6",
+   "D": "Se un numero non è pari, allora non è divisibile per 6",
+   "E": "Nessun numero pari è divisibile per 6"
+  },
+  "giusta": "D",
+  "perche": "Un'implicazione P → Q è equivalente alla sua contronominale non Q → non P. L'opzione A è l'inversa (Q → P), falsa: 4 è pari ma non divisibile per 6. B è la contraria (non P → non Q), anch'essa falsa per lo stesso esempio. C riformula l'inversa; E è chiaramente falsa (12).",
+  "semplice": "Se essere divisibile per 6 garantisce di essere pari, allora un numero dispari non può essere divisibile per 6. È lo stesso fatto letto 'al contrario e negato'. Invece «pari ⇒ divisibile per 6» è falso: basta pensare al 4.",
+  "passaggi": [
+   "1. P → Q: divisibile per 6 → pari",
+   "2. Contronominale: non Q → non P",
+   "3. Non pari → non divisibile per 6"
+  ],
+  "concetto": "contronominale"
+ },
+ {
+  "id": "LOG-007",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Qual è la negazione della frase «Se studio, supero l'esame»?",
+  "opzioni": {
+   "A": "Se non studio, non supero l'esame",
+   "B": "Studio e non supero l'esame",
+   "C": "Non studio e supero l'esame",
+   "D": "Se studio, non supero l'esame",
+   "E": "Non studio e non supero l'esame"
+  },
+  "giusta": "B",
+  "perche": "Un'implicazione «se P allora Q» è falsa solo quando P è vera e Q è falsa; perciò la sua negazione è «P e non Q». L'opzione A è la contraria, che non nega l'implicazione; D è un'altra implicazione, non una negazione; C e E sono casi in cui l'implicazione originale resta vera (premessa falsa).",
+  "semplice": "Quando la frase «se studio, supero l'esame» si rivelerebbe una bugia? Solo se studi davvero e poi vieni bocciato. Se non studi, la frase non viene messa alla prova.",
+  "passaggi": [
+   "1. P → Q è falsa solo se P vera e Q falsa",
+   "2. ¬(P → Q) ≡ P ∧ ¬Q",
+   "3. «Studio e non supero l'esame»"
+  ],
+  "concetto": "negazione dell'implicazione"
+ },
+ {
+  "id": "LOG-008",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Luca va al cinema solo se ha finito i compiti.» Sapendo che Luca è andato al cinema, che cosa si può concludere?",
+  "opzioni": {
+   "A": "Luca non ha finito i compiti",
+   "B": "Luca va al cinema ogni volta che finisce i compiti",
+   "C": "Luca andrà al cinema anche domani",
+   "D": "Non si può dire nulla sui compiti",
+   "E": "Luca ha finito i compiti"
+  },
+  "giusta": "E",
+  "perche": "«P solo se Q» significa «se P allora Q»: Q è condizione necessaria per P. Poiché Luca è andato al cinema (P), deve aver finito i compiti (Q). L'opzione B è l'inversa: finire i compiti non garantisce il cinema. D è la trappola di chi legge «solo se» come un semplice «se».",
+  "semplice": "«Solo se» indica un requisito obbligatorio: senza compiti finiti niente cinema. Se Luca è al cinema, vuol dire che il requisito era soddisfatto. Non è detto però che, finiti i compiti, vada sempre al cinema.",
+  "passaggi": [
+   "1. «P solo se Q» ≡ P → Q",
+   "2. P: Luca è andato al cinema",
+   "3. Modus ponens ⇒ Q: ha finito i compiti"
+  ],
+  "concetto": "«solo se» e condizione necessaria"
+ },
+ {
+  "id": "LOG-009",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Avere almeno 18 anni è condizione necessaria per votare alle elezioni politiche.» Quale affermazione ne segue?",
+  "opzioni": {
+   "A": "Chi ha almeno 18 anni vota sicuramente",
+   "B": "Basta avere 18 anni per votare",
+   "C": "Chi non ha almeno 18 anni non può votare",
+   "D": "Chi non vota ha meno di 18 anni",
+   "E": "Tutti i maggiorenni hanno già votato"
+  },
+  "giusta": "C",
+  "perche": "Se A è necessaria per B, allora B → A, e per contronominale non A → non B: senza 18 anni non si vota. Le opzioni A e B trattano la condizione come sufficiente, cosa che il testo non dice (possono servire altri requisiti, come la cittadinanza). D è l'inversa della contronominale, non deducibile.",
+  "semplice": "Una condizione necessaria è un 'biglietto d'ingresso' obbligatorio, ma non sempre basta da solo. Senza 18 anni non entri; con 18 anni potresti comunque dover avere altri requisiti.",
+  "passaggi": [
+   "1. Necessaria: Vota → ≥ 18 anni",
+   "2. Contronominale: < 18 anni → non vota",
+   "3. «Chi non ha almeno 18 anni non può votare»"
+  ],
+  "concetto": "condizione necessaria"
+ },
+ {
+  "id": "LOG-010",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Anna è più alta di Bea. Carla è più bassa di Bea. Dario è più alto di Anna. Chi è il più basso dei quattro?",
+  "opzioni": {
+   "A": "Carla",
+   "B": "Bea",
+   "C": "Anna",
+   "D": "Dario",
+   "E": "Non è possibile stabilirlo"
+  },
+  "giusta": "A",
+  "perche": "Mettendo in ordine: Dario > Anna > Bea > Carla. Le relazioni concatenano tutti e quattro, quindi la più bassa è Carla. L'opzione B trascura la frase su Carla; E è la trappola di chi pensa che manchino informazioni, ma qui la catena è completa.",
+  "semplice": "Costruisci una scala: Dario sopra Anna, Anna sopra Bea, Bea sopra Carla. Carla è sull'ultimo gradino.",
+  "passaggi": [
+   "1. A > B; C < B; D > A",
+   "2. Catena: D > A > B > C",
+   "3. Il più basso è C (Carla)"
+  ],
+  "concetto": "relazioni d'ordine"
+ },
+ {
+  "id": "LOG-011",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Andrea è più veloce di Bruno e di Ciro. Davide è più lento di Ciro. Quale delle seguenti affermazioni è certamente vera?",
+  "opzioni": {
+   "A": "Bruno è più veloce di Ciro",
+   "B": "Davide è il più lento dei quattro",
+   "C": "Bruno è più veloce di Davide",
+   "D": "Andrea è più veloce di Davide",
+   "E": "Ciro è il secondo più veloce"
+  },
+  "giusta": "D",
+  "perche": "Dalle premesse: A > B, A > C e C > D, quindi A > C > D, cioè Andrea è più veloce di Davide. La posizione di Bruno rispetto a Ciro e Davide non è determinata: per questo A, C e E possono essere false, e anche B non è certa (Bruno potrebbe essere più lento di Davide).",
+  "semplice": "Sappiamo che Andrea batte Ciro e Ciro batte Davide: quindi Andrea batte anche Davide. Di Bruno sappiamo solo che perde contro Andrea: potrebbe stare in qualunque altra posizione.",
+  "passaggi": [
+   "1. A > B, A > C, C > D",
+   "2. Da A > C e C > D segue A > D",
+   "3. B non è confrontabile con C e D"
+  ],
+  "concetto": "ordinamenti parziali"
+ },
+ {
+  "id": "LOG-012",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Su un'isola ogni abitante è un cavaliere (dice sempre la verità) o un furfante (mente sempre). A dice: «B è un furfante». B dice: «A e io siamo dello stesso tipo». Che cosa sono A e B?",
+  "opzioni": {
+   "A": "A è un cavaliere e B è un furfante",
+   "B": "Sono entrambi cavalieri",
+   "C": "Sono entrambi furfanti",
+   "D": "A è un furfante e B è un cavaliere",
+   "E": "Non è possibile stabilirlo"
+  },
+  "giusta": "A",
+  "perche": "Se B fosse cavaliere, A sarebbe del suo stesso tipo (cavaliere) e direbbe il vero: ma A dice che B è furfante, contraddizione. Quindi B è furfante e la sua frase è falsa: A è di tipo diverso, cioè cavaliere. Controllo: A, cavaliere, dice correttamente che B è furfante. Le altre combinazioni (B, C, D) portano a contraddizioni.",
+  "semplice": "Prova le ipotesi una alla volta. Se B dicesse il vero, anche A sarebbe sincero, ma A accusa B di mentire: impossibile. Quindi B mente, e allora A e B sono diversi: A è il sincero.",
+  "passaggi": [
+   "1. Ipotesi B cavaliere ⇒ A cavaliere ⇒ «B furfante» vera: contraddizione",
+   "2. Quindi B furfante ⇒ la sua frase è falsa ⇒ A e B di tipo diverso",
+   "3. A cavaliere; verifica: «B è furfante» è vera ✓"
+  ],
+  "concetto": "cavalieri e furfanti"
+ },
+ {
+  "id": "LOG-013",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Alcuni artisti sono vegetariani. Tutti i vegetariani sono salutisti.» Quale conclusione segue necessariamente?",
+  "opzioni": {
+   "A": "Tutti gli artisti sono salutisti",
+   "B": "Tutti i salutisti sono vegetariani",
+   "C": "Nessun artista è salutista",
+   "D": "Alcuni salutisti non sono artisti",
+   "E": "Alcuni artisti sono salutisti"
+  },
+  "giusta": "E",
+  "perche": "Gli artisti vegetariani (che esistono per la prima premessa) sono anche salutisti per la seconda: quindi almeno alcuni artisti sono salutisti. L'opzione A generalizza indebitamente da «alcuni» a «tutti»; B inverte la seconda premessa; D potrebbe essere vera ma non è deducibile.",
+  "semplice": "Prendi un artista vegetariano: siccome tutti i vegetariani sono salutisti, quell'artista è salutista. Quindi almeno qualche artista è salutista. Degli altri artisti non sappiamo nulla.",
+  "passaggi": [
+   "1. ∃ x: artista e vegetariano",
+   "2. Vegetariani ⊂ Salutisti ⇒ quell'x è salutista",
+   "3. Alcuni artisti sono salutisti"
+  ],
+  "concetto": "sillogismo con «alcuni»"
+ },
+ {
+  "id": "LOG-014",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Nessun pesce è un mammifero. Alcuni animali acquatici sono mammiferi.» Quale conclusione è necessariamente vera?",
+  "opzioni": {
+   "A": "Alcuni pesci non sono animali acquatici",
+   "B": "Nessun animale acquatico è un pesce",
+   "C": "Alcuni animali acquatici non sono pesci",
+   "D": "Tutti i mammiferi sono acquatici",
+   "E": "Alcuni mammiferi sono pesci"
+  },
+  "giusta": "C",
+  "perche": "Gli animali acquatici che sono mammiferi (come i delfini) non possono essere pesci, perché nessun mammifero è pesce: quindi alcuni acquatici non sono pesci. L'opzione B generalizza troppo; A non è deducibile dalle premesse; E contraddice la prima premessa; D non è deducibile.",
+  "semplice": "Pensa ai delfini: sono animali acquatici e sono mammiferi. Siccome nessun mammifero è un pesce, i delfini non sono pesci. Quindi esistono animali acquatici che non sono pesci.",
+  "passaggi": [
+   "1. Pesci ∩ Mammiferi = ∅",
+   "2. ∃ x acquatico e mammifero",
+   "3. Quell'x non è pesce ⇒ alcuni acquatici non sono pesci"
+  ],
+  "concetto": "sillogismo con premessa negativa"
+ },
+ {
+  "id": "LOG-015",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Ogni volta che Giulia va in palestra, il giorno dopo è stanca.» Oggi Giulia non è stanca. Che cosa si può concludere con certezza?",
+  "opzioni": {
+   "A": "Oggi Giulia andrà in palestra",
+   "B": "Ieri Giulia non è andata in palestra",
+   "C": "Ieri Giulia è andata in palestra",
+   "D": "Domani Giulia sarà stanca",
+   "E": "Giulia non va mai in palestra"
+  },
+  "giusta": "B",
+  "perche": "La regola è «palestra ieri → stanca oggi». Dal fatto che oggi Giulia non è stanca, per modus tollens, ieri non è andata in palestra. L'opzione C contraddice la regola; A e D riguardano il futuro, su cui le premesse non dicono nulla; E generalizza indebitamente da un solo giorno.",
+  "semplice": "La palestra stanca sempre Giulia il giorno dopo. Se oggi è riposata, ieri non può essere andata in palestra, altrimenti sarebbe stanca. Del resto della settimana non sappiamo niente.",
+  "passaggi": [
+   "1. Palestra(ieri) → Stanca(oggi)",
+   "2. Non stanca oggi",
+   "3. Modus tollens ⇒ non palestra ieri"
+  ],
+  "concetto": "modus tollens nel tempo"
+ },
+ {
+  "id": "LOG-016",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Quale dei seguenti ragionamenti è logicamente valido?",
+  "opzioni": {
+   "A": "Tutti i rettili sono vertebrati; nessun vertebrato è un insetto; quindi nessun rettile è un insetto",
+   "B": "Tutti i cani sono mammiferi; Fido è un mammifero; quindi Fido è un cane",
+   "C": "Alcuni studenti sono pigri; alcuni pigri sono atleti; quindi alcuni studenti sono atleti",
+   "D": "Se piove la strada è bagnata; non piove; quindi la strada non è bagnata",
+   "E": "Tutti i gatti sono felini; alcuni felini sono grandi; quindi alcuni gatti sono grandi"
+  },
+  "giusta": "A",
+  "perche": "Nel ragionamento giusto i rettili sono contenuti nei vertebrati, che sono disgiunti dagli insetti: la conclusione segue necessariamente. B afferma il conseguente (Fido potrebbe essere un gatto); C e E usano un termine medio non distribuito (i pigri o i felini 'giusti' potrebbero essere altri); D nega l'antecedente.",
+  "semplice": "Un ragionamento è valido se, accettate le premesse, la conclusione non può essere falsa. Rettili dentro vertebrati, vertebrati lontani dagli insetti: i rettili non possono essere insetti. Negli altri casi si può trovare un esempio che rende vere le premesse e falsa la conclusione.",
+  "passaggi": [
+   "1. Rettili ⊂ Vertebrati",
+   "2. Vertebrati ∩ Insetti = ∅",
+   "3. ⇒ Rettili ∩ Insetti = ∅ (valido)"
+  ],
+  "concetto": "validità di un ragionamento"
+ },
+ {
+  "id": "LOG-017",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Uno tra Aldo, Bruno, Carlo e Dino ha mangiato la torta. Aldo dice: «È stato Bruno». Bruno dice: «È stato Dino». Carlo dice: «Non sono stato io». Dino dice: «Bruno mente». Sapendo che uno solo dice la verità, chi ha mangiato la torta?",
+  "opzioni": {
+   "A": "Aldo",
+   "B": "Bruno",
+   "C": "Dino",
+   "D": "Carlo",
+   "E": "Non è possibile stabilirlo"
+  },
+  "giusta": "D",
+  "perche": "Si prova ogni colpevole contando le frasi vere. Se fosse Aldo: vere le frasi di Carlo e Dino (2). Se fosse Bruno: vere quelle di Aldo, Carlo e Dino (3). Se fosse Dino: vere quelle di Bruno e Carlo (2). Se fosse Carlo: Aldo falso, Bruno falso, Carlo falso, Dino vero (Bruno mente davvero): una sola verità. Quindi è stato Carlo.",
+  "semplice": "Prova a mettere al posto del colpevole ciascuno dei quattro e conta quanti dicono il vero. Solo con Carlo colpevole c'è un'unica persona sincera, cioè Dino.",
+  "passaggi": [
+   "1. Colpevole Aldo ⇒ vere: Carlo, Dino (2) ✗",
+   "2. Colpevole Bruno ⇒ vere: Aldo, Carlo, Dino (3) ✗; colpevole Dino ⇒ vere: Bruno, Carlo (2) ✗",
+   "3. Colpevole Carlo ⇒ vera solo Dino (1) ✓"
+  ],
+  "concetto": "problemi di verità e menzogna"
+ },
+ {
+  "id": "LOG-018",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Qual è la negazione della frase «Marco è alto e biondo»?",
+  "opzioni": {
+   "A": "Marco non è alto e non è biondo",
+   "B": "Marco è basso e moro",
+   "C": "Marco è alto ma non biondo",
+   "D": "Marco non è né alto né biondo",
+   "E": "Marco non è alto oppure non è biondo"
+  },
+  "giusta": "E",
+  "perche": "Per le leggi di De Morgan la negazione di «P e Q» è «non P oppure non Q»: basta che manchi una delle due caratteristiche. Le opzioni A e D (equivalenti tra loro) richiedono che manchino entrambe e sono troppo forti; C è solo uno dei casi possibili; B aggiunge caratteristiche non contenute nella frase.",
+  "semplice": "La frase «alto e biondo» è falsa appena una delle due cose non è vera. Marco potrebbe essere alto ma castano, oppure basso e biondo, oppure basso e castano: in tutti questi casi la frase è falsa.",
+  "passaggi": [
+   "1. Frase: P ∧ Q",
+   "2. De Morgan: ¬(P ∧ Q) ≡ ¬P ∨ ¬Q",
+   "3. «Marco non è alto oppure non è biondo»"
+  ],
+  "concetto": "leggi di De Morgan"
+ },
+ {
+  "id": "LOG-019",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Il negozio è aperto se e solo se è un giorno feriale.» Oggi il negozio è chiuso. Che cosa si può concludere?",
+  "opzioni": {
+   "A": "Oggi è un giorno feriale",
+   "B": "Oggi è domenica",
+   "C": "Oggi non è un giorno feriale",
+   "D": "Il negozio è chiuso per ferie",
+   "E": "Non si può dire nulla sul giorno"
+  },
+  "giusta": "C",
+  "perche": "Il «se e solo se» stabilisce un'equivalenza: aperto ⇔ feriale, e quindi anche chiuso ⇔ non feriale. Dato che il negozio è chiuso, oggi non è feriale. L'opzione A contraddice l'equivalenza; B è troppo specifica (potrebbe essere un altro giorno festivo); D introduce una causa estranea che l'equivalenza esclude; E ignora che il «se e solo se» vale in entrambe le direzioni.",
+  "semplice": "Con «se e solo se» le due cose vanno sempre insieme: negozio aperto e giorno feriale, oppure negozio chiuso e giorno festivo. Se è chiuso, il giorno è festivo, ma non sappiamo quale festivo.",
+  "passaggi": [
+   "1. Aperto ⇔ Feriale",
+   "2. ⇒ Chiuso ⇔ non Feriale",
+   "3. Chiuso ⇒ oggi non è feriale"
+  ],
+  "concetto": "doppia implicazione"
+ },
+ {
+  "id": "LOG-020",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "La frase «Non è vero che nessuno studente ha copiato» è equivalente a:",
+  "opzioni": {
+   "A": "Nessuno studente ha copiato",
+   "B": "Almeno uno studente ha copiato",
+   "C": "Tutti gli studenti hanno copiato",
+   "D": "Almeno uno studente non ha copiato",
+   "E": "Al massimo uno studente ha copiato"
+  },
+  "giusta": "B",
+  "perche": "Negare «nessuno ha copiato» significa affermare che esiste almeno uno studente che ha copiato. L'opzione A ignora la negazione; C è troppo forte; D confonde la negazione di «nessuno» con quella di «tutti»; E introduce un limite che la frase non contiene.",
+  "semplice": "Due negazioni si annullano: «non è vero che nessuno» vuol dire «qualcuno sì». Quindi almeno uno studente ha copiato, forse uno, forse molti.",
+  "passaggi": [
+   "1. «Nessuno ha copiato» = non esiste chi ha copiato",
+   "2. Negazione: esiste chi ha copiato",
+   "3. «Almeno uno studente ha copiato»"
+  ],
+  "concetto": "doppia negazione con quantificatori"
+ },
+ {
+  "id": "LOG-021",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Tutti i pittori sono creativi. Alcuni creativi sono disordinati.» Quale delle seguenti affermazioni è compatibile con le premesse, cioè può essere vera?",
+  "opzioni": {
+   "A": "Alcuni pittori non sono creativi",
+   "B": "Nessun creativo è disordinato",
+   "C": "Nessun pittore è disordinato",
+   "D": "Tutti i creativi sono ordinati",
+   "E": "Esiste un pittore che non è creativo"
+  },
+  "giusta": "C",
+  "perche": "Le premesse non dicono se i creativi disordinati siano pittori o no: è quindi possibile che nessun pittore sia disordinato (ma anche che alcuni lo siano). Le opzioni A e E contraddicono la prima premessa; B e D contraddicono la seconda. È un caso tipico di termine medio non distribuito: da queste premesse non si può dedurre «alcuni pittori sono disordinati».",
+  "semplice": "Immagina il cerchio dei pittori tutto dentro quello dei creativi. Il gruppetto dei disordinati tocca il cerchio dei creativi, ma potrebbe stare in una parte lontana dai pittori. Quindi può darsi che nessun pittore sia disordinato.",
+  "passaggi": [
+   "1. Pittori ⊂ Creativi",
+   "2. Creativi ∩ Disordinati ≠ ∅, ma la parte comune può essere fuori dai pittori",
+   "3. «Nessun pittore è disordinato» è possibile; le altre opzioni contraddicono una premessa"
+  ],
+  "concetto": "compatibilità con le premesse"
+ },
+ {
+  "id": "LOG-022",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Cinque persone sono in fila: Gino è il primo e Ivo è l'ultimo. Elena è immediatamente dietro Franco, e Franco non è il secondo. L'altra persona è Ugo. Chi è il secondo della fila?",
+  "opzioni": {
+   "A": "Franco",
+   "B": "Elena",
+   "C": "Ivo",
+   "D": "Ugo",
+   "E": "Non è possibile stabilirlo"
+  },
+  "giusta": "D",
+  "perche": "Le posizioni libere sono 2, 3 e 4. Franco ed Elena devono essere consecutivi (Franco davanti); Franco non può essere secondo, quindi Franco è terzo ed Elena quarta. Al secondo posto resta Ugo. L'opzione A è esclusa dal testo; B sarebbe possibile solo con Franco primo; E trascura che i vincoli bastano a determinare la fila.",
+  "semplice": "Scrivi la fila: 1 Gino, 5 Ivo. Franco ed Elena devono stare attaccati. Se Franco non è secondo, l'unica coppia possibile è 3-4. Il posto 2 tocca a Ugo.",
+  "passaggi": [
+   "1. Posti liberi: 2, 3, 4",
+   "2. Coppia Franco–Elena consecutiva, Franco ≠ 2 ⇒ Franco 3, Elena 4",
+   "3. Ugo al posto 2"
+  ],
+  "concetto": "problemi di disposizione"
+ },
+ {
+  "id": "LOG-023",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Sono vere le seguenti regole: «Se A, allora B» e «Se B, allora C». Si sa che C è falsa. Che cosa si può concludere?",
+  "opzioni": {
+   "A": "A è vera e B è falsa",
+   "B": "B è vera",
+   "C": "A è vera",
+   "D": "Non si può dire nulla su A",
+   "E": "A e B sono entrambe false"
+  },
+  "giusta": "E",
+  "perche": "Dalla catena A → B → C segue A → C. Poiché C è falsa, per modus tollens B è falsa (da B → C) e quindi anche A è falsa (da A → B). L'opzione A viola A → B; B e C violano la catena; D trascura la transitività dell'implicazione.",
+  "semplice": "Pensa a una fila di tessere del domino: se cade A cade B, se cade B cade C. Se C è rimasta in piedi, non può essere caduta B, e quindi neanche A.",
+  "passaggi": [
+   "1. B → C e C falsa ⇒ B falsa",
+   "2. A → B e B falsa ⇒ A falsa",
+   "3. A e B sono false"
+  ],
+  "concetto": "catene di implicazioni"
+ },
+ {
+  "id": "LOG-024",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Chi ha il biglietto può entrare. Chi entra riceve un gadget.» Sara non ha ricevuto il gadget. Che cosa si può concludere con certezza?",
+  "opzioni": {
+   "A": "Sara non è entrata",
+   "B": "Sara non ha il biglietto",
+   "C": "Sara ha il biglietto ma ha perso il gadget",
+   "D": "Sara è entrata senza biglietto",
+   "E": "Sara riceverà il gadget più tardi"
+  },
+  "giusta": "A",
+  "perche": "Dalla seconda regola (entra → gadget) e dal fatto che Sara non ha il gadget, per modus tollens Sara non è entrata. Non si può però concludere che non abbia il biglietto (opzione B): la prima regola dice che chi ha il biglietto PUÒ entrare, non che entra di sicuro. C, D e E aggiungono informazioni non deducibili.",
+  "semplice": "Chiunque entri riceve un gadget: se Sara non ce l'ha, non è entrata. Però avere il biglietto dà solo il permesso di entrare: Sara potrebbe averlo in tasca e aver deciso di restare fuori.",
+  "passaggi": [
+   "1. Entra → Gadget",
+   "2. Sara: non Gadget ⇒ non Entra (modus tollens)",
+   "3. «Può entrare» non implica «entra»: sul biglietto nulla di certo"
+  ],
+  "concetto": "modus tollens e possibilità"
+ },
+ {
+  "id": "LOG-025",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Su un'isola ogni abitante è un cavaliere (dice sempre la verità) o un furfante (mente sempre). A dice: «Siamo entrambi furfanti», riferendosi a sé e a B. Che cosa sono A e B?",
+  "opzioni": {
+   "A": "Sono entrambi furfanti",
+   "B": "A è un furfante e B è un cavaliere",
+   "C": "Sono entrambi cavalieri",
+   "D": "A è un cavaliere e B è un furfante",
+   "E": "Non è possibile stabilirlo"
+  },
+  "giusta": "B",
+  "perche": "Se A fosse cavaliere, la sua frase sarebbe vera e A sarebbe un furfante: contraddizione. Quindi A è un furfante e la sua frase è falsa: non è vero che entrambi sono furfanti, quindi B è un cavaliere. L'opzione A è la trappola di chi prende alla lettera la frase di un bugiardo.",
+  "semplice": "Un cavaliere non potrebbe mai dire «sono un furfante», perché sarebbe una bugia. Quindi A mente. Se mente, la frase «siamo entrambi furfanti» è falsa: allora B non è furfante, è un cavaliere.",
+  "passaggi": [
+   "1. A cavaliere ⇒ «A furfante» vera: contraddizione",
+   "2. A furfante ⇒ frase falsa ⇒ non entrambi furfanti",
+   "3. B cavaliere"
+  ],
+  "concetto": "cavalieri e furfanti"
+ },
+ {
+  "id": "LOG-026",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Aldo, Bruno e Carlo possiedono ciascuno un animale diverso tra cane, gatto e pesce. Aldo non ha il cane. Bruno ha il gatto. Chi ha il cane?",
+  "opzioni": {
+   "A": "Aldo",
+   "B": "Bruno",
+   "C": "Nessuno dei tre",
+   "D": "Carlo",
+   "E": "Non è possibile stabilirlo"
+  },
+  "giusta": "D",
+  "perche": "Bruno ha il gatto; Aldo non ha il cane e non può avere il gatto, quindi ha il pesce; a Carlo resta il cane. L'opzione A contraddice il testo; B è esclusa perché Bruno ha il gatto; C è impossibile perché i tre animali sono tutti assegnati; E ignora che i vincoli determinano univocamente l'assegnazione.",
+  "semplice": "Togli subito il gatto, che è di Bruno. Ad Aldo restano cane o pesce, ma il cane non ce l'ha: quindi ha il pesce. L'ultimo animale, il cane, va a Carlo.",
+  "passaggi": [
+   "1. Bruno → gatto",
+   "2. Aldo: non cane, non gatto ⇒ pesce",
+   "3. Carlo → cane"
+  ],
+  "concetto": "tabelle di corrispondenza"
+ },
+ {
+  "id": "LOG-027",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Essere un quadrato è, rispetto all'essere un rettangolo, una condizione:",
+  "opzioni": {
+   "A": "necessaria ma non sufficiente",
+   "B": "necessaria e sufficiente",
+   "C": "sufficiente ma non necessaria",
+   "D": "né necessaria né sufficiente",
+   "E": "impossibile"
+  },
+  "giusta": "C",
+  "perche": "Ogni quadrato è un rettangolo (quadrato → rettangolo), quindi essere quadrato basta per essere rettangolo: è sufficiente. Non è necessaria perché esistono rettangoli che non sono quadrati (per esempio 2 × 5). L'opzione A inverte i ruoli; B varrebbe solo se le due figure coincidessero.",
+  "semplice": "Se una figura è un quadrato, sei sicuro che è anche un rettangolo: basta questo. Ma un rettangolo non deve per forza essere un quadrato: un foglio A4 è un rettangolo e non è un quadrato.",
+  "passaggi": [
+   "1. Quadrato → Rettangolo: vero ⇒ sufficiente",
+   "2. Rettangolo → Quadrato: falso (2 × 5) ⇒ non necessaria",
+   "3. Sufficiente ma non necessaria"
+  ],
+  "concetto": "condizione necessaria e sufficiente"
+ },
+ {
+  "id": "LOG-028",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Qual è la negazione della frase «Qualche volta Paolo arriva in ritardo»?",
+  "opzioni": {
+   "A": "Paolo arriva sempre in ritardo",
+   "B": "Qualche volta Paolo arriva in orario",
+   "C": "Paolo arriva spesso in ritardo",
+   "D": "Paolo non arriva sempre in ritardo",
+   "E": "Paolo non arriva mai in ritardo"
+  },
+  "giusta": "E",
+  "perche": "«Qualche volta» equivale ad «almeno una volta»; la sua negazione è «nessuna volta», cioè «mai». L'opzione A è un'affermazione più forte che non nega la frase; B e D sono compatibili con la frase originale (Paolo può essere sia in ritardo sia in orario in giorni diversi); C la rafforza.",
+  "semplice": "Per smentire chi dice «Paolo qualche volta arriva in ritardo» devi dimostrare che non è mai successo, neanche una volta. Quindi la negazione è «Paolo non arriva mai in ritardo».",
+  "passaggi": [
+   "1. «Qualche volta P» = esiste un caso con P",
+   "2. Negazione: in nessun caso P",
+   "3. «Paolo non arriva mai in ritardo»"
+  ],
+  "concetto": "negazione di «qualche volta»"
+ },
+ {
+  "id": "LOG-029",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "La frase «Non è vero che Luca è italiano o francese» è equivalente a:",
+  "opzioni": {
+   "A": "Luca non è italiano oppure non è francese",
+   "B": "Luca non è italiano e non è francese",
+   "C": "Luca è italiano ma non francese",
+   "D": "Luca è sia italiano sia francese",
+   "E": "Luca è italiano o francese, ma non entrambi"
+  },
+  "giusta": "B",
+  "perche": "Per la legge di De Morgan ¬(P ∨ Q) ≡ ¬P ∧ ¬Q: se è falso che valga almeno una delle due, allora non vale nessuna. L'opzione A è la negazione di «P e Q», non di «P o Q»: è la trappola principale. C, D e E contraddicono la frase.",
+  "semplice": "Se qualcuno dice «non è vero che Luca sia italiano o francese», sta escludendo entrambe le possibilità: Luca non è né italiano né francese. È come dire «non ha né la cittadinanza italiana né quella francese».",
+  "passaggi": [
+   "1. Frase: ¬(P ∨ Q)",
+   "2. De Morgan: ¬P ∧ ¬Q",
+   "3. «Luca non è italiano e non è francese»"
+  ],
+  "concetto": "De Morgan con la disgiunzione"
+ },
+ {
+  "id": "LOG-030",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Tutti gli studenti di latino studiano anche greco. Alcuni studenti di greco studiano filosofia. Nessuno studente di filosofia studia latino.» Quale affermazione è necessariamente vera?",
+  "opzioni": {
+   "A": "Alcuni studenti di greco non studiano latino",
+   "B": "Nessuno studente di latino studia greco",
+   "C": "Tutti gli studenti di greco studiano latino",
+   "D": "Alcuni studenti di latino studiano filosofia",
+   "E": "Tutti gli studenti di filosofia studiano greco"
+  },
+  "giusta": "A",
+  "perche": "Esistono studenti di greco che studiano filosofia (seconda premessa); questi, per la terza premessa, non studiano latino. Quindi alcuni studenti di greco non studiano latino. L'opzione B contraddice la prima premessa; C ne è l'inversa ed è smentita proprio da quegli studenti; D contraddice la terza; E non è deducibile.",
+  "semplice": "Prendi uno studente che fa greco e filosofia. Siccome nessuno di filosofia fa latino, lui non fa latino. Ecco quindi uno studente di greco che non studia latino.",
+  "passaggi": [
+   "1. ∃ x: greco e filosofia",
+   "2. Filosofia ∩ Latino = ∅ ⇒ x non studia latino",
+   "3. Alcuni studenti di greco non studiano latino"
+  ],
+  "concetto": "sillogismi con tre premesse"
+ },
+ {
+  "id": "LOG-031",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Se Maria vince alla lotteria, compra una casa.» Maria non ha vinto alla lotteria. Che cosa si può concludere?",
+  "opzioni": {
+   "A": "Maria potrebbe comunque comprare una casa",
+   "B": "Maria non compra una casa",
+   "C": "Maria compra sicuramente una casa",
+   "D": "Maria vincerà alla prossima estrazione",
+   "E": "La regola è falsa"
+  },
+  "giusta": "A",
+  "perche": "La regola dice soltanto che la vincita è sufficiente per l'acquisto; se Maria non vince, la regola non dice nulla sulla casa, che potrebbe comprare con un mutuo. Concludere «non compra una casa» (opzione B) è la fallacia della negazione dell'antecedente. C e E non sono deducibili; D è un'informazione estranea.",
+  "semplice": "La lotteria è un modo per comprare casa, ma non l'unico. Se Maria non vince, potrebbe comunque comprarla risparmiando o chiedendo un mutuo. La regola non lo vieta.",
+  "passaggi": [
+   "1. Premessa: P → Q",
+   "2. Fatto: non P",
+   "3. Da non P non segue non Q (negazione dell'antecedente): Q resta possibile"
+  ],
+  "concetto": "fallacia della negazione dell'antecedente"
+ },
+ {
+  "id": "LOG-032",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Tre scatole sono etichettate «mele», «pere» e «mele e pere», ma tutte le etichette sono sbagliate. Dalla scatola etichettata «mele e pere» si estrae un frutto: è una mela. Che cosa contiene la scatola etichettata «pere»?",
+  "opzioni": {
+   "A": "Solo mele",
+   "B": "Mele e pere",
+   "C": "Solo pere",
+   "D": "È vuota",
+   "E": "Non è possibile stabilirlo"
+  },
+  "giusta": "B",
+  "perche": "La scatola etichettata «mele e pere» non può contenere il misto (etichetta sbagliata) e contiene una mela: quindi contiene solo mele. La scatola etichettata «pere» non può contenere pere (etichetta sbagliata) né solo mele (già assegnate): contiene il misto. Alla scatola «mele» restano le pere. L'opzione C viola il vincolo dell'etichetta sbagliata; A assegnerebbe le mele a due scatole.",
+  "semplice": "Tutte le etichette mentono. La scatola «mele e pere» quindi ha un solo tipo di frutto: visto che esce una mela, ha solo mele. La scatola «pere» non può avere pere, e le mele sono già prese: ha il misto.",
+  "passaggi": [
+   "1. «Mele e pere» (sbagliata) + esce mela ⇒ solo mele",
+   "2. «Pere» (sbagliata): non pere, non solo mele ⇒ mele e pere",
+   "3. «Mele» ⇒ solo pere"
+  ],
+  "concetto": "deduzione con vincoli"
+ },
+ {
+  "id": "LOG-033",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Tutti i cigni del lago sono bianchi. Nessun animale bianco del lago è aggressivo.» Quale conclusione segue necessariamente?",
+  "opzioni": {
+   "A": "Tutti gli animali bianchi del lago sono cigni",
+   "B": "Alcuni cigni del lago sono aggressivi",
+   "C": "Nessun cigno del lago è aggressivo",
+   "D": "Tutti gli animali non aggressivi del lago sono cigni",
+   "E": "Alcuni animali aggressivi del lago sono bianchi"
+  },
+  "giusta": "C",
+  "perche": "I cigni sono contenuti negli animali bianchi, e questi non hanno elementi in comune con gli aggressivi: quindi nessun cigno è aggressivo. L'opzione A inverte la prima premessa; E contraddice la seconda; B contraddice la conclusione; D non è deducibile.",
+  "semplice": "Ogni cigno del lago fa parte del gruppo dei bianchi, e nel gruppo dei bianchi non ci sono aggressivi. Quindi i cigni non possono essere aggressivi.",
+  "passaggi": [
+   "1. Cigni ⊂ Bianchi",
+   "2. Bianchi ∩ Aggressivi = ∅",
+   "3. Cigni ∩ Aggressivi = ∅"
+  ],
+  "concetto": "sillogismo in Celarent"
+ },
+ {
+  "id": "LOG-034",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "La frase «Se non studi, non superi l'esame» è logicamente equivalente a:",
+  "opzioni": {
+   "A": "Se studi, superi l'esame",
+   "B": "Se non superi l'esame, non hai studiato",
+   "C": "Studi e superi l'esame",
+   "D": "Se studi, non superi l'esame",
+   "E": "Se superi l'esame, hai studiato"
+  },
+  "giusta": "E",
+  "perche": "La contronominale di «non S → non E» è «E → S»: se hai superato l'esame, allora hai studiato. L'opzione A è la contraria («S → E»), non equivalente: studiare potrebbe non bastare. B è l'inversa («non E → non S»), anch'essa non equivalente. C e D non sono implicazioni equivalenti.",
+  "semplice": "La frase dice che studiare è indispensabile. Quindi chi ha superato l'esame deve aver studiato. Non dice però che studiare basti: si può studiare ed essere bocciati comunque.",
+  "passaggi": [
+   "1. Frase: ¬S → ¬E",
+   "2. Contronominale: E → S",
+   "3. «Se superi l'esame, hai studiato»"
+  ],
+  "concetto": "contronominale"
+ },
+ {
+  "id": "LOG-035",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Tutti i membri del gruppo sono vegetariani. Ettore è un membro del gruppo. Ettore non beve caffè.» Quale delle seguenti affermazioni NON è deducibile dalle premesse?",
+  "opzioni": {
+   "A": "Ettore è vegetariano",
+   "B": "Almeno un vegetariano non beve caffè",
+   "C": "Almeno un membro del gruppo non beve caffè",
+   "D": "Nessun vegetariano beve caffè",
+   "E": "Non tutti i membri del gruppo bevono caffè"
+  },
+  "giusta": "D",
+  "perche": "Le opzioni A, B, C e E seguono dalle premesse: Ettore è vegetariano perché membro del gruppo, ed è un esempio di vegetariano e di membro che non beve caffè. Invece «nessun vegetariano beve caffè» è una generalizzazione indebita: da un solo caso (Ettore) non si può dedurre una regola che valga per tutti.",
+  "semplice": "Sappiamo tutto di Ettore: è vegetariano e non beve caffè. Ma sugli altri vegetariani non sappiamo niente: alcuni potrebbero bere litri di caffè. Un caso solo non basta per una regola generale.",
+  "passaggi": [
+   "1. Ettore ∈ Gruppo ⊂ Vegetariani ⇒ Ettore vegetariano",
+   "2. Ettore non beve caffè ⇒ esempi per le opzioni esistenziali",
+   "3. «Nessun vegetariano beve caffè» è una generalizzazione non deducibile"
+  ],
+  "concetto": "generalizzazione indebita"
+ },
+ {
+  "id": "LOG-036",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Su un'isola ogni abitante è un cavaliere (dice sempre la verità) o un furfante (mente sempre). A dice: «B è un cavaliere». B dice: «A e io siamo di tipo diverso». Che cosa sono A e B?",
+  "opzioni": {
+   "A": "Sono entrambi cavalieri",
+   "B": "A è un cavaliere e B è un furfante",
+   "C": "A è un furfante e B è un cavaliere",
+   "D": "Non è possibile stabilirlo",
+   "E": "Sono entrambi furfanti"
+  },
+  "giusta": "E",
+  "perche": "Se A fosse cavaliere, B sarebbe cavaliere e direbbe il vero; ma allora A e B sarebbero di tipo diverso, contraddizione. Quindi A è furfante e mente: B è un furfante. Verifica: B, furfante, dice «siamo di tipo diverso», frase falsa perché sono entrambi furfanti ✓. Le combinazioni A, B e C portano a contraddizioni.",
+  "semplice": "Prova a fidarti di A: allora B è sincero, ma B dice che lui e A sono diversi, e non è così. Quindi A mente, e B non è un cavaliere. Anche B mente: infatti dice che sono diversi, mentre sono uguali.",
+  "passaggi": [
+   "1. A cavaliere ⇒ B cavaliere ⇒ «diversi» vera: contraddizione",
+   "2. A furfante ⇒ «B cavaliere» falsa ⇒ B furfante",
+   "3. Verifica: «siamo diversi» detta da B è falsa ✓"
+  ],
+  "concetto": "cavalieri e furfanti"
+ },
+ {
+  "id": "LOG-037",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Qual è la negazione della frase «Ogni giorno almeno un dipendente arriva in ritardo»?",
+  "opzioni": {
+   "A": "C'è almeno un giorno in cui nessun dipendente arriva in ritardo",
+   "B": "Ogni giorno nessun dipendente arriva in ritardo",
+   "C": "C'è almeno un giorno in cui almeno un dipendente arriva puntuale",
+   "D": "Ogni giorno tutti i dipendenti arrivano puntuali",
+   "E": "Almeno un dipendente arriva sempre in ritardo"
+  },
+  "giusta": "A",
+  "perche": "La frase ha due quantificatori: «per ogni giorno, esiste un dipendente in ritardo». Negando si scambiano i quantificatori: «esiste un giorno in cui, per ogni dipendente, non è in ritardo». Le opzioni B e D sono troppo forti (valgono per tutti i giorni); C è compatibile con la frase originale; E cambia l'ordine dei quantificatori.",
+  "semplice": "Per smentire chi dice «ogni giorno qualcuno arriva tardi» basta trovare un giorno in cui tutti sono arrivati puntuali. Non serve che succeda tutti i giorni.",
+  "passaggi": [
+   "1. Frase: ∀ giorno ∃ dipendente in ritardo",
+   "2. Negazione: ∃ giorno ∀ dipendente non in ritardo",
+   "3. «C'è almeno un giorno in cui nessun dipendente arriva in ritardo»"
+  ],
+  "concetto": "negazione con più quantificatori"
+ },
+ {
+  "id": "LOG-038",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Se Ada viene alla festa, viene anche Bice. Se Bice viene alla festa, non viene Carla.» Si sa che Carla viene alla festa. Che cosa si può concludere?",
+  "opzioni": {
+   "A": "Ada viene e Bice no",
+   "B": "Bice viene e Ada no",
+   "C": "Vengono sia Ada sia Bice",
+   "D": "Né Ada né Bice vengono alla festa",
+   "E": "Su Ada non si può dire nulla"
+  },
+  "giusta": "D",
+  "perche": "Da «Bice → non Carla» e «Carla viene», per modus tollens Bice non viene. Da «Ada → Bice» e «Bice non viene», sempre per modus tollens, Ada non viene. L'opzione A viola la prima regola; B e C violano la seconda; E dimentica di applicare il modus tollens alla prima regola.",
+  "semplice": "Se fosse venuta Bice, Carla sarebbe rimasta a casa. Ma Carla c'è: quindi Bice non c'è. E se fosse venuta Ada, sarebbe venuta anche Bice. Bice non c'è: quindi neanche Ada.",
+  "passaggi": [
+   "1. Bice → ¬Carla; Carla vera ⇒ ¬Bice",
+   "2. Ada → Bice; ¬Bice ⇒ ¬Ada",
+   "3. Non vengono né Ada né Bice"
+  ],
+  "concetto": "catene di modus tollens"
+ },
+ {
+  "id": "LOG-039",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "«Tutti i quadrati sono rombi.» Sapendo che i quadrati esistono, quale delle seguenti affermazioni è necessariamente vera?",
+  "opzioni": {
+   "A": "Tutti i rombi sono quadrati",
+   "B": "Nessun rombo è un quadrato",
+   "C": "Alcuni rombi sono quadrati",
+   "D": "Alcuni quadrati non sono rombi",
+   "E": "Tutti i non quadrati sono rombi"
+  },
+  "giusta": "C",
+  "perche": "Se tutti i quadrati (che esistono) sono rombi, allora esiste almeno un rombo che è un quadrato: «alcuni rombi sono quadrati». L'opzione A è la conversione indebita della premessa (un rombo con angoli non retti non è quadrato); B e D contraddicono la premessa; E non ha fondamento.",
+  "semplice": "Ogni quadrato è anche un rombo, perché ha quattro lati uguali. Quindi tra i rombi ci sono sicuramente dei quadrati. Ma non tutti i rombi sono quadrati: un rombo 'schiacciato' non ha angoli retti.",
+  "passaggi": [
+   "1. Quadrati ⊂ Rombi, Quadrati ≠ ∅",
+   "2. Un quadrato è un rombo ⇒ ∃ rombo quadrato",
+   "3. «Alcuni rombi sono quadrati»"
+  ],
+  "concetto": "conversione per accidente"
+ },
+ {
+  "id": "LOG-040",
+  "materia": "Ragionamento logico",
+  "argomento": "Deduzioni e sillogismi",
+  "livello": "test",
+  "domanda": "Un codice è formato da tre cifre tutte diverse. La prima cifra è il doppio dell'ultima, la somma delle tre cifre è 12 e la cifra centrale è dispari. Qual è il codice?",
+  "opzioni": {
+   "A": "693",
+   "B": "291",
+   "C": "482",
+   "D": "633",
+   "E": "816"
+  },
+  "giusta": "B",
+  "perche": "Se l'ultima cifra è x, la prima è 2x (quindi x ≤ 4) e la centrale è 12 − 3x. x = 1 dà centrale 9 (dispari): 291 ✓. x = 2 dà 6 (pari) ✗; x = 3 dà 3, ma il codice 633 (opzione D) ha cifre ripetute ✗; x = 4 dà 0 (pari) ✗. L'opzione A ha somma 18; C ha la centrale pari; E ha somma 15.",
+  "semplice": "Chiama x l'ultima cifra: la prima è 2x e la centrale si trova per differenza da 12. Prova x = 1, 2, 3, 4: solo con x = 1 la cifra centrale (9) è dispari e tutte le cifre sono diverse. Il codice è 291.",
+  "passaggi": [
+   "1. Codice 2x, c, x con 2x + c + x = 12 ⇒ c = 12 − 3x, x ≤ 4",
+   "2. x = 1 ⇒ c = 9 (dispari, cifre diverse) ✓; x = 2 ⇒ c = 6 ✗; x = 3 ⇒ 633 (ripetute) ✗; x = 4 ⇒ c = 0 ✗",
+   "3. Codice: 291"
+  ],
+  "concetto": "deduzione numerica con vincoli"
+ },
+ {
+  "id": "LOG-041",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 3, 7, 11, 15, …?",
+  "opzioni": {
+   "A": "18",
+   "B": "20",
+   "C": "21",
+   "D": "17",
+   "E": "19"
+  },
+  "giusta": "E",
+  "perche": "Ogni termine si ottiene aggiungendo 4 al precedente (progressione aritmetica di ragione 4): 15 + 4 = 19. Le opzioni A e D nascono da un errore di conteggio della differenza; B e C applicano differenze di 5 o 6.",
+  "semplice": "Guarda di quanto cresce la sequenza a ogni passo: da 3 a 7 sono 4, da 7 a 11 ancora 4. Quindi dopo 15 viene 15 + 4 = 19.",
+  "passaggi": [
+   "1. Differenze: 7 − 3 = 4; 11 − 7 = 4; 15 − 11 = 4",
+   "2. Regola: +4",
+   "3. 15 + 4 = 19"
+  ],
+  "concetto": "progressione aritmetica"
+ },
+ {
+  "id": "LOG-042",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 2, 6, 18, 54, …?",
+  "opzioni": {
+   "A": "108",
+   "B": "72",
+   "C": "158",
+   "D": "162",
+   "E": "216"
+  },
+  "giusta": "D",
+  "perche": "Ogni termine è il triplo del precedente (progressione geometrica di ragione 3): 54 · 3 = 162. L'opzione A raddoppia invece di triplicare; B applica le differenze (+18) come se la sequenza fosse aritmetica; E moltiplica per 4.",
+  "semplice": "Da 2 a 6 si moltiplica per 3, da 6 a 18 ancora per 3, da 18 a 54 ancora per 3. Quindi il prossimo è 54 × 3 = 162.",
+  "passaggi": [
+   "1. Rapporti: 6/2 = 18/6 = 54/18 = 3",
+   "2. Regola: × 3",
+   "3. 54 × 3 = 162"
+  ],
+  "concetto": "progressione geometrica"
+ },
+ {
+  "id": "LOG-043",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 4, 9, 16, 25, …?",
+  "opzioni": {
+   "A": "30",
+   "B": "34",
+   "C": "36",
+   "D": "49",
+   "E": "32"
+  },
+  "giusta": "C",
+  "perche": "I termini sono i quadrati dei numeri naturali: 1², 2², 3², 4², 5², quindi il successivo è 6² = 36. In alternativa, le differenze sono i numeri dispari 3, 5, 7, 9, e la prossima è 11: 25 + 11 = 36. L'opzione A aggiunge 5; D salta un termine (7²); B aggiunge 9 come la differenza precedente; E aggiunge 7.",
+  "semplice": "Sono i quadrati: 1×1, 2×2, 3×3, 4×4, 5×5. Il prossimo è 6×6 = 36.",
+  "passaggi": [
+   "1. 1 = 1², 4 = 2², 9 = 3², 16 = 4², 25 = 5²",
+   "2. Termine successivo: 6²",
+   "3. 6² = 36"
+  ],
+  "concetto": "successione dei quadrati"
+ },
+ {
+  "id": "LOG-044",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 1, 2, 3, 5, 8, …?",
+  "opzioni": {
+   "A": "13",
+   "B": "11",
+   "C": "12",
+   "D": "16",
+   "E": "10"
+  },
+  "giusta": "A",
+  "perche": "È la successione di Fibonacci: ogni termine è la somma dei due precedenti, quindi 5 + 8 = 13. L'opzione D raddoppia l'ultimo termine; B e C applicano differenze costanti o crescenti di 1; E somma 8 e 2.",
+  "semplice": "Somma sempre gli ultimi due numeri: 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8, e quindi 5 + 8 = 13.",
+  "passaggi": [
+   "1. 1 + 1 = 2; 1 + 2 = 3; 2 + 3 = 5; 3 + 5 = 8",
+   "2. Regola: aₙ = aₙ₋₁ + aₙ₋₂",
+   "3. 5 + 8 = 13"
+  ],
+  "concetto": "successione di Fibonacci"
+ },
+ {
+  "id": "LOG-045",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 2, 3, 5, 7, 11, …?",
+  "opzioni": {
+   "A": "15",
+   "B": "13",
+   "C": "12",
+   "D": "14",
+   "E": "17"
+  },
+  "giusta": "B",
+  "perche": "La sequenza è quella dei numeri primi in ordine crescente: dopo 11 il primo successivo è 13. L'opzione A è dispari ma divisibile per 3 e 5; C e D sono pari; E è primo ma salta il 13.",
+  "semplice": "Sono i numeri che si dividono solo per 1 e per se stessi: 2, 3, 5, 7, 11. Il 12 è pari, quindi il primo successivo è 13.",
+  "passaggi": [
+   "1. 2, 3, 5, 7, 11 sono numeri primi consecutivi",
+   "2. 12 non è primo (12 = 2 · 6)",
+   "3. Il successivo è 13"
+  ],
+  "concetto": "numeri primi"
+ },
+ {
+  "id": "LOG-046",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 8, 27, 64, …?",
+  "opzioni": {
+   "A": "125",
+   "B": "100",
+   "C": "81",
+   "D": "128",
+   "E": "216"
+  },
+  "giusta": "A",
+  "perche": "I termini sono i cubi dei numeri naturali: 1³, 2³, 3³, 4³, quindi il successivo è 5³ = 125. L'opzione B è 10²; C è 9² (o 3⁴); D è 2⁷, che potrebbe sembrare il 'raddoppio' di 64; E è 6³ e salta un termine.",
+  "semplice": "Sono i cubi: 1×1×1, 2×2×2 = 8, 3×3×3 = 27, 4×4×4 = 64. Il prossimo è 5×5×5 = 125.",
+  "passaggi": [
+   "1. 1 = 1³, 8 = 2³, 27 = 3³, 64 = 4³",
+   "2. Termine successivo: 5³",
+   "3. 5³ = 125"
+  ],
+  "concetto": "successione dei cubi"
+ },
+ {
+  "id": "LOG-047",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 5, 7, 11, 17, 25, …?",
+  "opzioni": {
+   "A": "33",
+   "B": "37",
+   "C": "34",
+   "D": "35",
+   "E": "31"
+  },
+  "giusta": "D",
+  "perche": "Le differenze tra termini consecutivi sono 2, 4, 6, 8: crescono di 2 ogni volta. La prossima differenza è 10, quindi 25 + 10 = 35. L'opzione A aggiunge di nuovo 8; B aggiunge 12, saltando un passo; C aggiunge 9; E aggiunge 6.",
+  "semplice": "Scrivi sotto la sequenza le differenze: +2, +4, +6, +8. Il prossimo salto è +10: 25 + 10 = 35.",
+  "passaggi": [
+   "1. Differenze: 2, 4, 6, 8",
+   "2. Prossima differenza: 10",
+   "3. 25 + 10 = 35"
+  ],
+  "concetto": "differenze crescenti"
+ },
+ {
+  "id": "LOG-048",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 2, 5, 11, 23, 47, …?",
+  "opzioni": {
+   "A": "94",
+   "B": "95",
+   "C": "71",
+   "D": "93",
+   "E": "96"
+  },
+  "giusta": "B",
+  "perche": "Ogni termine è il doppio del precedente più 1: 2·2 + 1 = 5, 5·2 + 1 = 11, … 47·2 + 1 = 95. L'opzione A raddoppia senza aggiungere 1; C aggiunge 24 (differenza precedente); D raddoppia e sottrae 1; E raddoppia e aggiunge 2.",
+  "semplice": "Prova a raddoppiare: 2 × 2 = 4 e poi +1 fa 5; 5 × 2 = 10 e +1 fa 11. Con 47: 94 + 1 = 95.",
+  "passaggi": [
+   "1. 5 = 2·2 + 1; 11 = 5·2 + 1; 23 = 11·2 + 1; 47 = 23·2 + 1",
+   "2. Regola: × 2 + 1",
+   "3. 47 · 2 + 1 = 95"
+  ],
+  "concetto": "regola ricorsiva"
+ },
+ {
+  "id": "LOG-049",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 100, 50, 25, 12,5, …?",
+  "opzioni": {
+   "A": "6,5",
+   "B": "0",
+   "C": "6,25",
+   "D": "7,5",
+   "E": "2,5"
+  },
+  "giusta": "C",
+  "perche": "Ogni termine è la metà del precedente: 12,5 / 2 = 6,25. L'opzione A arrotonda in modo scorretto; B sottrae 12,5 come differenza costante; D sottrae 5; E divide per 5.",
+  "semplice": "Ogni numero si divide per 2: 100, poi 50, poi 25, poi 12,5. La metà di 12,5 è 6,25.",
+  "passaggi": [
+   "1. Rapporti: 50/100 = 25/50 = 12,5/25 = ½",
+   "2. Regola: ÷ 2",
+   "3. 12,5 / 2 = 6,25"
+  ],
+  "concetto": "progressione geometrica decrescente"
+ },
+ {
+  "id": "LOG-050",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 3, 5, 9, 17, 33, …?",
+  "opzioni": {
+   "A": "49",
+   "B": "66",
+   "C": "64",
+   "D": "67",
+   "E": "65"
+  },
+  "giusta": "E",
+  "perche": "Ogni termine è il doppio del precedente meno 1: 3·2 − 1 = 5, 5·2 − 1 = 9, … 33·2 − 1 = 65. Equivalentemente le differenze raddoppiano (2, 4, 8, 16, poi 32). L'opzione A aggiunge 16 come la differenza precedente; B raddoppia senza sottrarre; D raddoppia e sottrae 2.",
+  "semplice": "Guarda le differenze: +2, +4, +8, +16. Ogni volta raddoppiano, quindi la prossima è +32: 33 + 32 = 65.",
+  "passaggi": [
+   "1. Differenze: 2, 4, 8, 16 (raddoppiano)",
+   "2. Prossima differenza: 32",
+   "3. 33 + 32 = 65"
+  ],
+  "concetto": "differenze in progressione geometrica"
+ },
+ {
+  "id": "LOG-051",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 2, 6, 24, 120, …?",
+  "opzioni": {
+   "A": "240",
+   "B": "600",
+   "C": "144",
+   "D": "840",
+   "E": "720"
+  },
+  "giusta": "E",
+  "perche": "I termini sono i fattoriali: 1!, 2!, 3!, 4!, 5!; il successivo è 6! = 720. In altre parole si moltiplica per 2, poi per 3, per 4, per 5 e quindi per 6. L'opzione A moltiplica per 2; B moltiplica di nuovo per 5; C aggiunge 24; D moltiplica per 7.",
+  "semplice": "Il moltiplicatore cresce di uno a ogni passo: ×2, ×3, ×4, ×5. Il prossimo è ×6: 120 × 6 = 720.",
+  "passaggi": [
+   "1. 2 = 1·2; 6 = 2·3; 24 = 6·4; 120 = 24·5",
+   "2. Prossimo moltiplicatore: 6",
+   "3. 120 · 6 = 720"
+  ],
+  "concetto": "fattoriali"
+ },
+ {
+  "id": "LOG-052",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 2, 10, 4, 20, 8, 40, …?",
+  "opzioni": {
+   "A": "80",
+   "B": "16",
+   "C": "12",
+   "D": "48",
+   "E": "10"
+  },
+  "giusta": "B",
+  "perche": "La sequenza è formata da due successioni alternate: nei posti dispari 2, 4, 8 (× 2) e nei posti pari 10, 20, 40 (× 2). Il termine richiesto è il settimo, cioè in posizione dispari: 8 · 2 = 16. L'opzione A continua la successione sbagliata (quella dei posti pari); C aggiunge 4; D somma 8 e 40.",
+  "semplice": "Separa i numeri in due file: quelli in prima, terza, quinta posizione (2, 4, 8) e gli altri (10, 20, 40). Il prossimo numero tocca alla prima fila: dopo 8 viene 16.",
+  "passaggi": [
+   "1. Posti dispari: 2, 4, 8 (× 2)",
+   "2. Posti pari: 10, 20, 40 (× 2)",
+   "3. Settimo termine (dispari): 8 · 2 = 16"
+  ],
+  "concetto": "sequenze alternate"
+ },
+ {
+  "id": "LOG-053",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 81, 27, 9, 3, …?",
+  "opzioni": {
+   "A": "1",
+   "B": "0",
+   "C": "−3",
+   "D": "1/3",
+   "E": "6"
+  },
+  "giusta": "A",
+  "perche": "Ogni termine è un terzo del precedente: 3 / 3 = 1. L'opzione B sottrae 3; C prosegue con differenze costanti; D divide per 9 o salta un termine; E raddoppia.",
+  "semplice": "Ogni numero si divide per 3: 81 → 27 → 9 → 3 → 1. Sono le potenze di 3 al contrario: 3⁴, 3³, 3², 3¹, 3⁰.",
+  "passaggi": [
+   "1. Rapporti: 27/81 = 9/27 = 3/9 = ⅓",
+   "2. Regola: ÷ 3",
+   "3. 3 / 3 = 1 (= 3⁰)"
+  ],
+  "concetto": "potenze decrescenti"
+ },
+ {
+  "id": "LOG-054",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 3, 6, 10, 15, …?",
+  "opzioni": {
+   "A": "20",
+   "B": "25",
+   "C": "18",
+   "D": "21",
+   "E": "30"
+  },
+  "giusta": "D",
+  "perche": "Sono i numeri triangolari: le differenze sono 2, 3, 4, 5 e la prossima è 6, quindi 15 + 6 = 21 (= 6·7/2). L'opzione A aggiunge 5 come la differenza precedente; B confonde con i quadrati; E raddoppia l'ultimo termine.",
+  "semplice": "Si aggiunge ogni volta un numero in più: +2, +3, +4, +5, poi +6. 15 + 6 = 21. Sono i numeri di palline che servono per fare triangoli sempre più grandi.",
+  "passaggi": [
+   "1. Differenze: 2, 3, 4, 5",
+   "2. Prossima differenza: 6",
+   "3. 15 + 6 = 21"
+  ],
+  "concetto": "numeri triangolari"
+ },
+ {
+  "id": "LOG-055",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 7, 10, 8, 11, 9, 12, …?",
+  "opzioni": {
+   "A": "13",
+   "B": "15",
+   "C": "10",
+   "D": "11",
+   "E": "14"
+  },
+  "giusta": "C",
+  "perche": "Lo schema alterna +3 e −2: 7 +3 = 10, −2 = 8, +3 = 11, −2 = 9, +3 = 12, quindi il prossimo passo è −2: 12 − 2 = 10. L'opzione A prosegue con +1 (o con la sola successione dei posti pari); B ripete +3; D confonde le due sottosuccessioni.",
+  "semplice": "Il numero sale di 3 e scende di 2, sempre a turno. Dopo 12 tocca scendere di 2: 10. Puoi anche vedere due file: 7, 8, 9, 10 e 10, 11, 12.",
+  "passaggi": [
+   "1. Passi: +3, −2, +3, −2, +3",
+   "2. Prossimo passo: −2",
+   "3. 12 − 2 = 10"
+  ],
+  "concetto": "schemi alternati"
+ },
+ {
+  "id": "LOG-056",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 2, 4, 7, 11, 16, …?",
+  "opzioni": {
+   "A": "21",
+   "B": "23",
+   "C": "22",
+   "D": "32",
+   "E": "20"
+  },
+  "giusta": "C",
+  "perche": "Le differenze sono 1, 2, 3, 4, 5: crescono di 1 a ogni passo. La prossima è 6, quindi 16 + 6 = 22. L'opzione A aggiunge di nuovo 5; D raddoppia; B aggiunge 7, saltando un passo; E aggiunge 4.",
+  "semplice": "Si aggiunge ogni volta un'unità in più: +1, +2, +3, +4, +5. Quindi ora +6: 16 + 6 = 22.",
+  "passaggi": [
+   "1. Differenze: 1, 2, 3, 4, 5",
+   "2. Prossima differenza: 6",
+   "3. 16 + 6 = 22"
+  ],
+  "concetto": "differenze crescenti"
+ },
+ {
+  "id": "LOG-057",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 2, 12, 30, 56, 90, …?",
+  "opzioni": {
+   "A": "124",
+   "B": "126",
+   "C": "120",
+   "D": "144",
+   "E": "132"
+  },
+  "giusta": "E",
+  "perche": "Ogni termine è il prodotto di due numeri consecutivi: 1·2, 3·4, 5·6, 7·8, 9·10, quindi il successivo è 11·12 = 132. Si può verificare con le differenze: 10, 18, 26, 34 crescono di 8, la prossima è 42 e 90 + 42 = 132. L'opzione A aggiunge 34 come la differenza precedente; B è 9·14; C usa 10·12; D è 12², il quadrato.",
+  "semplice": "Scomponi ogni numero: 2 = 1×2, 12 = 3×4, 30 = 5×6, 56 = 7×8, 90 = 9×10. Il prossimo è 11×12 = 132.",
+  "passaggi": [
+   "1. 2 = 1·2; 12 = 3·4; 30 = 5·6; 56 = 7·8; 90 = 9·10",
+   "2. Termine successivo: 11·12",
+   "3. 11 · 12 = 132 (differenze 10, 18, 26, 34, 42)"
+  ],
+  "concetto": "prodotti di consecutivi"
+ },
+ {
+  "id": "LOG-058",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero manca nella sequenza 3, 9, …, 81, 243?",
+  "opzioni": {
+   "A": "27",
+   "B": "45",
+   "C": "36",
+   "D": "18",
+   "E": "54"
+  },
+  "giusta": "A",
+  "perche": "Ogni termine è il triplo del precedente: 3, 9, 27, 81, 243 (potenze di 3). L'opzione B è la media aritmetica tra 9 e 81; D è il doppio di 9; C e E non rispettano il rapporto costante.",
+  "semplice": "Da 3 a 9 si moltiplica per 3, da 81 a 243 anche. Quindi il numero mancante è 9 × 3 = 27, e infatti 27 × 3 = 81.",
+  "passaggi": [
+   "1. 9/3 = 3; 243/81 = 3",
+   "2. Termine mancante: 9 · 3 = 27",
+   "3. Verifica: 27 · 3 = 81 ✓"
+  ],
+  "concetto": "termine mancante"
+ },
+ {
+  "id": "LOG-059",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 4, 13, 40, 121, …?",
+  "opzioni": {
+   "A": "363",
+   "B": "242",
+   "C": "365",
+   "D": "364",
+   "E": "202"
+  },
+  "giusta": "D",
+  "perche": "Ogni termine è il triplo del precedente più 1: 1·3 + 1 = 4, 4·3 + 1 = 13, 13·3 + 1 = 40, 40·3 + 1 = 121, 121·3 + 1 = 364. Le differenze (3, 9, 27, 81, 243) sono potenze di 3. L'opzione A triplica senza aggiungere 1; B raddoppia; C aggiunge 2; E aggiunge 81.",
+  "semplice": "Moltiplica per 3 e aggiungi 1: 121 × 3 = 363, più 1 fa 364. In alternativa: i salti sono 3, 9, 27, 81, quindi il prossimo è 243, e 121 + 243 = 364.",
+  "passaggi": [
+   "1. Regola: × 3 + 1",
+   "2. 121 · 3 = 363",
+   "3. 363 + 1 = 364"
+  ],
+  "concetto": "regola ricorsiva"
+ },
+ {
+  "id": "LOG-060",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 6, 11, 21, 36, 56, …?",
+  "opzioni": {
+   "A": "76",
+   "B": "81",
+   "C": "86",
+   "D": "71",
+   "E": "112"
+  },
+  "giusta": "B",
+  "perche": "Le differenze sono 5, 10, 15, 20: multipli di 5 crescenti. La prossima è 25, quindi 56 + 25 = 81. L'opzione A aggiunge 20; C aggiunge 30; D aggiunge 15; E raddoppia l'ultimo termine.",
+  "semplice": "I salti sono +5, +10, +15, +20: ogni volta 5 in più. Il prossimo salto è +25: 56 + 25 = 81.",
+  "passaggi": [
+   "1. Differenze: 5, 10, 15, 20",
+   "2. Prossima differenza: 25",
+   "3. 56 + 25 = 81"
+  ],
+  "concetto": "differenze in progressione aritmetica"
+ },
+ {
+  "id": "LOG-061",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 0, 3, 8, 15, 24, …?",
+  "opzioni": {
+   "A": "33",
+   "B": "36",
+   "C": "32",
+   "D": "35",
+   "E": "48"
+  },
+  "giusta": "D",
+  "perche": "Ogni termine è un quadrato perfetto meno 1: 1² − 1, 2² − 1, 3² − 1, 4² − 1, 5² − 1; il successivo è 6² − 1 = 35. Equivalentemente le differenze sono 3, 5, 7, 9 e la prossima è 11. L'opzione B è 6² (dimentica il −1); A aggiunge 9; C aggiunge 8; E raddoppia.",
+  "semplice": "Aggiungi 1 a ogni numero: ottieni 1, 4, 9, 16, 25, cioè i quadrati. Il prossimo quadrato è 36, e togliendo 1 si ottiene 35.",
+  "passaggi": [
+   "1. 0 = 1² − 1; 3 = 2² − 1; 8 = 3² − 1; 15 = 4² − 1; 24 = 5² − 1",
+   "2. Termine successivo: 6² − 1",
+   "3. 36 − 1 = 35"
+  ],
+  "concetto": "quadrati meno uno"
+ },
+ {
+  "id": "LOG-062",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 128, 64, 96, 48, 72, …?",
+  "opzioni": {
+   "A": "36",
+   "B": "108",
+   "C": "144",
+   "D": "24",
+   "E": "56"
+  },
+  "giusta": "A",
+  "perche": "Le operazioni si alternano: ÷ 2, × 1,5, ÷ 2, × 1,5. 128 ÷ 2 = 64, 64 × 1,5 = 96, 96 ÷ 2 = 48, 48 × 1,5 = 72; il passo successivo è ÷ 2: 72 ÷ 2 = 36. L'opzione B applica × 1,5 due volte di seguito; C raddoppia; D sottrae 48; E sottrae 16.",
+  "semplice": "Il numero si dimezza, poi aumenta della metà, poi si dimezza di nuovo, e così via. Dopo 72 tocca dimezzare: 36.",
+  "passaggi": [
+   "1. 128 → 64 (÷2) → 96 (×1,5) → 48 (÷2) → 72 (×1,5)",
+   "2. Prossima operazione: ÷ 2",
+   "3. 72 ÷ 2 = 36"
+  ],
+  "concetto": "operazioni alternate"
+ },
+ {
+  "id": "LOG-063",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 2, 4, 12, 48, 240, …?",
+  "opzioni": {
+   "A": "480",
+   "B": "1440",
+   "C": "1200",
+   "D": "960",
+   "E": "288"
+  },
+  "giusta": "B",
+  "perche": "Il moltiplicatore cresce di 1 a ogni passo: × 2, × 3, × 4, × 5; il prossimo è × 6: 240 · 6 = 1440. L'opzione A moltiplica per 2; C moltiplica ancora per 5; D moltiplica per 4; E aggiunge 48.",
+  "semplice": "Guarda per quanto si moltiplica: 2 → 4 (×2), 4 → 12 (×3), 12 → 48 (×4), 48 → 240 (×5). Il prossimo è ×6: 240 × 6 = 1440.",
+  "passaggi": [
+   "1. Moltiplicatori: 2, 3, 4, 5",
+   "2. Prossimo moltiplicatore: 6",
+   "3. 240 · 6 = 1440"
+  ],
+  "concetto": "moltiplicatori crescenti"
+ },
+ {
+  "id": "LOG-064",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero NON appartiene alla sequenza 2, 4, 8, 16, 30, 64?",
+  "opzioni": {
+   "A": "2",
+   "B": "8",
+   "C": "30",
+   "D": "16",
+   "E": "64"
+  },
+  "giusta": "C",
+  "perche": "La sequenza è formata dalle potenze di 2: 2, 4, 8, 16, 32, 64. Il quinto termine dovrebbe essere 32, non 30: quindi 30 è l'intruso. Tutti gli altri numeri (A, B, D, E) sono potenze di 2 nella posizione giusta.",
+  "semplice": "Ogni numero dovrebbe essere il doppio del precedente: 2, 4, 8, 16, poi 32, poi 64. Al posto di 32 c'è 30: è il numero sbagliato.",
+  "passaggi": [
+   "1. Regola: × 2 (potenze di 2)",
+   "2. Dopo 16 dovrebbe esserci 32",
+   "3. 30 è l'intruso"
+  ],
+  "concetto": "individuare l'intruso"
+ },
+ {
+  "id": "LOG-065",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale lettera completa la sequenza A, C, E, G, …?",
+  "opzioni": {
+   "A": "H",
+   "B": "L",
+   "C": "J",
+   "D": "F",
+   "E": "I"
+  },
+  "giusta": "E",
+  "perche": "Si salta una lettera ogni volta: A (b) C (d) E (f) G (h) I. Il risultato è lo stesso nell'alfabeto italiano e in quello inglese, perché fino alla I coincidono. L'opzione A non salta la lettera; B salta due lettere nell'alfabeto italiano; C sarebbe la lettera successiva alla I nell'alfabeto inglese; D torna indietro.",
+  "semplice": "Scrivi l'alfabeto e cerchia una lettera sì e una no: A, C, E, G, I. Dopo la G, saltando la H, arrivi alla I.",
+  "passaggi": [
+   "1. Posizioni: A = 1, C = 3, E = 5, G = 7",
+   "2. Regola: +2",
+   "3. Posizione 9 = I"
+  ],
+  "concetto": "sequenze di lettere"
+ },
+ {
+  "id": "LOG-066",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Utilizzando l'alfabeto italiano di 21 lettere, quale lettera completa la sequenza B, E, H, M, …?",
+  "opzioni": {
+   "A": "N",
+   "B": "O",
+   "C": "P",
+   "D": "Q",
+   "E": "L"
+  },
+  "giusta": "C",
+  "perche": "Nell'alfabeto italiano (A B C D E F G H I L M N O P Q R S T U V Z) le posizioni sono B = 2, E = 5, H = 8, M = 11: si avanza di 3. La prossima posizione è 14, cioè P. L'opzione A è la trappola di chi usa l'alfabeto inglese, dove la quattordicesima lettera è N; B avanza di 2; D avanza di 4.",
+  "semplice": "Conta le lettere nell'alfabeto italiano, che non ha J, K, W, X, Y. Tra H e M ci sono I e L: si salta due lettere ogni volta. Dopo M saltando N e O si arriva a P.",
+  "passaggi": [
+   "1. Alfabeto italiano: B = 2, E = 5, H = 8, M = 11",
+   "2. Regola: +3",
+   "3. Posizione 14 = P"
+  ],
+  "concetto": "alfabeto italiano"
+ },
+ {
+  "id": "LOG-067",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Utilizzando l'alfabeto italiano di 21 lettere, quale lettera completa la sequenza Z, T, Q, N, …?",
+  "opzioni": {
+   "A": "L",
+   "B": "H",
+   "C": "M",
+   "D": "G",
+   "E": "I"
+  },
+  "giusta": "E",
+  "perche": "Nell'alfabeto italiano Z = 21, T = 18, Q = 15, N = 12: si torna indietro di 3 posizioni ogni volta. La prossima è la posizione 9, cioè I. L'opzione A torna indietro di 2; B di 4; C di 1; D di 5. Con l'alfabeto inglese la sequenza non sarebbe nemmeno regolare.",
+  "semplice": "La sequenza va all'indietro, saltando due lettere ogni volta. Da N, saltando M e L, si arriva a I.",
+  "passaggi": [
+   "1. Alfabeto italiano: Z = 21, T = 18, Q = 15, N = 12",
+   "2. Regola: −3",
+   "3. Posizione 9 = I"
+  ],
+  "concetto": "sequenze di lettere a ritroso"
+ },
+ {
+  "id": "LOG-068",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale coppia completa la sequenza A1, C3, E5, G7, …?",
+  "opzioni": {
+   "A": "H8",
+   "B": "I8",
+   "C": "L9",
+   "D": "I9",
+   "E": "H9"
+  },
+  "giusta": "D",
+  "perche": "Le lettere avanzano di due posizioni (A, C, E, G, I) e i numeri indicano proprio la posizione della lettera nell'alfabeto (1, 3, 5, 7, 9). L'opzione A non salta la lettera; B sbaglia il numero; C salta una lettera di troppo (nell'alfabeto italiano dopo la I viene la L) e sbaglia il numero; E abbina la H al numero 9.",
+  "semplice": "Ogni lettera è accompagnata dal suo numero di posizione nell'alfabeto, e se ne salta una ogni volta. Dopo G7 viene I9.",
+  "passaggi": [
+   "1. Lettere: A, C, E, G (+2)",
+   "2. Numeri: posizione della lettera (1, 3, 5, 7)",
+   "3. Termine successivo: I9"
+  ],
+  "concetto": "sequenze miste lettere-numeri"
+ },
+ {
+  "id": "LOG-069",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Utilizzando l'alfabeto italiano di 21 lettere, quale lettera completa la sequenza A, Z, B, V, C, U, …?",
+  "opzioni": {
+   "A": "D",
+   "B": "T",
+   "C": "E",
+   "D": "S",
+   "E": "Y"
+  },
+  "giusta": "A",
+  "perche": "Si alternano due successioni: nei posti dispari l'alfabeto in avanti (A, B, C) e nei posti pari l'alfabeto all'indietro dall'ultima lettera (Z, V, U). Il settimo termine appartiene alla prima successione: D. L'opzione B continua la successione all'indietro (sarebbe l'ottavo termine); C salta una lettera; E non esiste nell'alfabeto italiano.",
+  "semplice": "Separa le lettere in due file: A, B, C e Z, V, U. La prima va avanti, la seconda indietro. Il prossimo termine tocca alla prima fila: dopo C viene D.",
+  "passaggi": [
+   "1. Posti dispari: A, B, C (avanti)",
+   "2. Posti pari: Z, V, U (indietro, alfabeto italiano)",
+   "3. Settimo termine: D"
+  ],
+  "concetto": "sequenze alternate di lettere"
+ },
+ {
+  "id": "LOG-070",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Utilizzando l'alfabeto italiano di 21 lettere, quale coppia completa la sequenza AB, DE, GH, …?",
+  "opzioni": {
+   "A": "JK",
+   "B": "LM",
+   "C": "IL",
+   "D": "MN",
+   "E": "HI"
+  },
+  "giusta": "B",
+  "perche": "Ogni coppia è formata da due lettere consecutive e tra una coppia e l'altra se ne salta una: AB (c) DE (f) GH (i) LM. Nell'alfabeto italiano dopo la I vengono L e M. L'opzione A è la risposta corretta per l'alfabeto inglese, ma J e K non esistono in quello italiano; C non salta la lettera; D ne salta due.",
+  "semplice": "Scrivi l'alfabeto italiano: A B C D E F G H I L M. Prendi due lettere, saltane una, prendine due: AB, DE, GH, poi salti la I e prendi LM.",
+  "passaggi": [
+   "1. Posizioni: AB = 1-2, DE = 4-5, GH = 7-8",
+   "2. Prossima coppia: posizioni 10-11",
+   "3. Alfabeto italiano: 10 = L, 11 = M ⇒ LM"
+  ],
+  "concetto": "coppie di lettere"
+ },
+ {
+  "id": "LOG-071",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Utilizzando l'alfabeto inglese di 26 lettere, quale lettera completa la sequenza C, F, I, L, O, …?",
+  "opzioni": {
+   "A": "Q",
+   "B": "R",
+   "C": "S",
+   "D": "P",
+   "E": "U"
+  },
+  "giusta": "B",
+  "perche": "Nell'alfabeto inglese C = 3, F = 6, I = 9, L = 12, O = 15: sono i multipli di 3. La prossima posizione è 18, cioè R. L'opzione A avanza di 2; C avanza di 4; D di 1; E di 6.",
+  "semplice": "Nell'alfabeto inglese ogni lettera della sequenza occupa un posto multiplo di 3: 3, 6, 9, 12, 15. Il prossimo è il 18° posto: R.",
+  "passaggi": [
+   "1. Alfabeto inglese: C = 3, F = 6, I = 9, L = 12, O = 15",
+   "2. Regola: +3",
+   "3. Posizione 18 = R"
+  ],
+  "concetto": "alfabeto inglese"
+ },
+ {
+  "id": "LOG-072",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Utilizzando l'alfabeto italiano di 21 lettere, quale lettera completa la sequenza A, B, D, G, …?",
+  "opzioni": {
+   "A": "M",
+   "B": "L",
+   "C": "K",
+   "D": "N",
+   "E": "H"
+  },
+  "giusta": "A",
+  "perche": "Nell'alfabeto italiano le posizioni sono 1, 2, 4, 7: gli intervalli crescono di 1 (+1, +2, +3). Il prossimo passo è +4: posizione 11, cioè M. L'opzione C è la trappola dell'alfabeto inglese (11ª lettera = K); B avanza di 3; D avanza di 5; E di 1.",
+  "semplice": "I salti aumentano ogni volta: da A a B uno, da B a D due, da D a G tre. Ora quattro: da G, contando H, I, L, M, si arriva a M.",
+  "passaggi": [
+   "1. Posizioni: 1, 2, 4, 7",
+   "2. Intervalli: +1, +2, +3 ⇒ prossimo +4",
+   "3. Posizione 11 (alfabeto italiano) = M"
+  ],
+  "concetto": "intervalli crescenti tra lettere"
+ },
+ {
+  "id": "LOG-073",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale lettera completa la sequenza L, M, M, G, V, …?",
+  "opzioni": {
+   "A": "D",
+   "B": "L",
+   "C": "V",
+   "D": "T",
+   "E": "S"
+  },
+  "giusta": "E",
+  "perche": "Sono le iniziali dei giorni della settimana: Lunedì, Martedì, Mercoledì, Giovedì, Venerdì; segue Sabato, quindi S. L'opzione A è l'iniziale di Domenica, che viene dopo; B ricomincia la settimana; C ripete l'ultima lettera; D cerca una regola alfabetica che non esiste.",
+  "semplice": "Leggi le lettere ad alta voce pensando ai giorni: Lunedì, Martedì, Mercoledì, Giovedì, Venerdì… e poi Sabato.",
+  "passaggi": [
+   "1. L, M, M, G, V = Lunedì, Martedì, Mercoledì, Giovedì, Venerdì",
+   "2. Giorno successivo: Sabato",
+   "3. Lettera: S"
+  ],
+  "concetto": "sequenze di iniziali"
+ },
+ {
+  "id": "LOG-074",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale lettera completa la sequenza G, F, M, A, M, G, L, …?",
+  "opzioni": {
+   "A": "S",
+   "B": "O",
+   "C": "A",
+   "D": "G",
+   "E": "L"
+  },
+  "giusta": "C",
+  "perche": "Sono le iniziali dei mesi dell'anno: Gennaio, Febbraio, Marzo, Aprile, Maggio, Giugno, Luglio; segue Agosto, quindi A. L'opzione A è l'iniziale di Settembre, che viene dopo Agosto; B è quella di Ottobre; D e E ripetono lettere già usate.",
+  "semplice": "Pensa ai mesi: gennaio, febbraio, marzo, aprile, maggio, giugno, luglio… e poi agosto. L'iniziale è A.",
+  "passaggi": [
+   "1. G, F, M, A, M, G, L = gennaio … luglio",
+   "2. Mese successivo: agosto",
+   "3. Lettera: A"
+  ],
+  "concetto": "sequenze di iniziali"
+ },
+ {
+  "id": "LOG-075",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 2, 3, 5, 9, 17, …?",
+  "opzioni": {
+   "A": "25",
+   "B": "34",
+   "C": "31",
+   "D": "33",
+   "E": "32"
+  },
+  "giusta": "D",
+  "perche": "Le differenze sono 1, 2, 4, 8: raddoppiano a ogni passo. La prossima è 16, quindi 17 + 16 = 33 (equivalentemente: ogni termine è il doppio del precedente meno 1). L'opzione A aggiunge 8; B raddoppia senza sottrarre 1; C aggiunge 14; E aggiunge 15.",
+  "semplice": "I salti sono +1, +2, +4, +8: ogni volta il doppio. Il prossimo salto è +16: 17 + 16 = 33.",
+  "passaggi": [
+   "1. Differenze: 1, 2, 4, 8",
+   "2. Prossima differenza: 16",
+   "3. 17 + 16 = 33"
+  ],
+  "concetto": "differenze che raddoppiano"
+ },
+ {
+  "id": "LOG-076",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 10, 3, 9, 5, 8, …?",
+  "opzioni": {
+   "A": "6",
+   "B": "9",
+   "C": "4",
+   "D": "7",
+   "E": "11"
+  },
+  "giusta": "D",
+  "perche": "Ci sono due successioni intrecciate: nei posti dispari 1, 3, 5 (+2) e nei posti pari 10, 9, 8 (−1). Il settimo termine appartiene ai posti dispari: 5 + 2 = 7. L'opzione A sottrae 2 dall'ultimo termine (8 − 2); B è nella successione sbagliata; C sottrae 4; E somma 3 e 8.",
+  "semplice": "Separa i numeri: 1, 3, 5 (salgono di 2) e 10, 9, 8 (scendono di 1). Il prossimo tocca alla prima fila: dopo 5 viene 7.",
+  "passaggi": [
+   "1. Posti dispari: 1, 3, 5 (+2)",
+   "2. Posti pari: 10, 9, 8 (−1)",
+   "3. Settimo termine: 5 + 2 = 7"
+  ],
+  "concetto": "successioni intrecciate"
+ },
+ {
+  "id": "LOG-077",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "In una sequenza ogni termine è la somma dei due precedenti: 3, 4, 7, 11, 18, … Qual è il termine successivo?",
+  "opzioni": {
+   "A": "25",
+   "B": "36",
+   "C": "29",
+   "D": "28",
+   "E": "32"
+  },
+  "giusta": "C",
+  "perche": "Applicando la regola: 3 + 4 = 7, 4 + 7 = 11, 7 + 11 = 18, quindi 11 + 18 = 29. L'opzione A aggiunge 7 (la differenza precedente); B raddoppia l'ultimo termine; D e E sono errori di calcolo nella somma.",
+  "semplice": "Come nella successione di Fibonacci, si sommano sempre gli ultimi due numeri: 11 + 18 = 29.",
+  "passaggi": [
+   "1. 3 + 4 = 7; 4 + 7 = 11; 7 + 11 = 18",
+   "2. Regola: aₙ = aₙ₋₁ + aₙ₋₂",
+   "3. 11 + 18 = 29"
+  ],
+  "concetto": "successioni di tipo Fibonacci"
+ },
+ {
+  "id": "LOG-078",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, −2, 4, −8, 16, …?",
+  "opzioni": {
+   "A": "−32",
+   "B": "32",
+   "C": "−24",
+   "D": "24",
+   "E": "−16"
+  },
+  "giusta": "A",
+  "perche": "Ogni termine si ottiene moltiplicando il precedente per −2: 16 · (−2) = −32. L'opzione B ignora l'alternanza dei segni; C e D aggiungono o sottraggono 8 invece di moltiplicare; E cambia solo il segno senza moltiplicare.",
+  "semplice": "Il numero raddoppia e cambia segno ogni volta: 1, −2, 4, −8, 16. Dopo un positivo viene un negativo: −32.",
+  "passaggi": [
+   "1. Rapporti: −2/1 = 4/(−2) = −8/4 = 16/(−8) = −2",
+   "2. Regola: × (−2)",
+   "3. 16 · (−2) = −32"
+  ],
+  "concetto": "progressione geometrica a segni alterni"
+ },
+ {
+  "id": "LOG-079",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Utilizzando l'alfabeto italiano di 21 lettere, quale coppia completa la sequenza AZ, BV, CU, …?",
+  "opzioni": {
+   "A": "DS",
+   "B": "EU",
+   "C": "DW",
+   "D": "ET",
+   "E": "DT"
+  },
+  "giusta": "E",
+  "perche": "La prima lettera avanza nell'alfabeto (A, B, C, D) e la seconda arretra a partire dalla fine (Z, V, U, T). La coppia successiva è DT. L'opzione C è la trappola dell'alfabeto inglese (dove dopo Z, Y, X viene W, che però non esiste in italiano); A arretra di due lettere; B e D fanno avanzare la prima lettera di due posti.",
+  "semplice": "La prima lettera va avanti di una (A, B, C, D), la seconda va indietro di una partendo dalla Z (Z, V, U, T). Unendo: DT.",
+  "passaggi": [
+   "1. Prime lettere: A, B, C → D",
+   "2. Seconde lettere (alfabeto italiano, a ritroso): Z, V, U → T",
+   "3. Coppia successiva: DT"
+  ],
+  "concetto": "coppie di lettere speculari"
+ },
+ {
+  "id": "LOG-080",
+  "materia": "Ragionamento logico",
+  "argomento": "Sequenze numeriche e di lettere",
+  "livello": "test",
+  "domanda": "Quale numero completa la sequenza 1, 2, 3, 6, 11, 20, …?",
+  "opzioni": {
+   "A": "31",
+   "B": "37",
+   "C": "40",
+   "D": "34",
+   "E": "39"
+  },
+  "giusta": "B",
+  "perche": "Ogni termine è la somma dei tre precedenti: 1 + 2 + 3 = 6, 2 + 3 + 6 = 11, 3 + 6 + 11 = 20, quindi 6 + 11 + 20 = 37. L'opzione A somma solo gli ultimi due (11 + 20); C raddoppia l'ultimo termine; D aggiunge 14; E aggiunge 19.",
+  "semplice": "Prova a sommare gli ultimi tre numeri: 1 + 2 + 3 = 6, 2 + 3 + 6 = 11, 3 + 6 + 11 = 20. Ora: 6 + 11 + 20 = 37.",
+  "passaggi": [
+   "1. 6 = 1 + 2 + 3; 11 = 2 + 3 + 6; 20 = 3 + 6 + 11",
+   "2. Regola: somma dei tre termini precedenti",
+   "3. 6 + 11 + 20 = 37"
+  ],
+  "concetto": "somma dei tre precedenti"
+ },
+ {
+  "id": "LOG-081",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un capo costa 200 €. Viene scontato del 20% e il prezzo scontato viene ulteriormente ridotto del 10%. Qual è il prezzo finale?",
+  "opzioni": {
+   "A": "140 €",
+   "B": "160 €",
+   "C": "150 €",
+   "D": "144 €",
+   "E": "156 €"
+  },
+  "giusta": "D",
+  "perche": "Gli sconti successivi si applicano uno dopo l'altro: 200 · 0,8 = 160 €, poi 160 · 0,9 = 144 €. Lo sconto complessivo è del 28%, non del 30%. L'opzione A somma le percentuali (30% di 200); B applica solo il primo sconto; C toglie un 25% complessivo; E sottrae a 160 € il 10% di 40 € invece del 10% di 160 €.",
+  "semplice": "Il secondo sconto si fa sul prezzo già ridotto. Prima: 200 − 40 = 160 €. Poi il 10% di 160 è 16 €: 160 − 16 = 144 €. Per questo due sconti del 20% e del 10% non fanno un 30%.",
+  "passaggi": [
+   "1. Primo sconto: 200 · (1 − 0,20) = 160 €",
+   "2. Secondo sconto: 160 · (1 − 0,10) = 144 €",
+   "3. Prezzo finale = 144 € (sconto totale 28%)"
+  ],
+  "concetto": "sconti successivi"
+ },
+ {
+  "id": "LOG-082",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Il prezzo di un oggetto aumenta del 25% e successivamente il nuovo prezzo diminuisce del 20%. Rispetto al prezzo iniziale, il prezzo finale:",
+  "opzioni": {
+   "A": "è aumentato del 5%",
+   "B": "è diminuito del 5%",
+   "C": "è aumentato del 45%",
+   "D": "è diminuito del 20%",
+   "E": "è invariato"
+  },
+  "giusta": "E",
+  "perche": "I fattori moltiplicativi sono 1,25 e 0,80: il loro prodotto è 1,25 · 0,80 = 1, quindi il prezzo torna esattamente quello iniziale. L'opzione A sottrae le percentuali (25 − 20 = 5), errore tipico perché le due percentuali si riferiscono a basi diverse; C le somma; D considera solo la seconda variazione.",
+  "semplice": "Prova con 100 €: +25% porta a 125 €. Il 20% di 125 è 25 €, quindi si torna a 100 €. Le percentuali non si sommano né si sottraggono quando cambiano la base.",
+  "passaggi": [
+   "1. Fattore aumento: 1,25; fattore diminuzione: 0,80",
+   "2. 1,25 · 0,80 = 1",
+   "3. Prezzo finale = prezzo iniziale"
+  ],
+  "concetto": "variazioni percentuali successive"
+ },
+ {
+  "id": "LOG-083",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un rubinetto riempie una vasca in 6 ore, un secondo rubinetto la riempie in 3 ore. Aprendoli contemporaneamente, in quanto tempo si riempie la vasca?",
+  "opzioni": {
+   "A": "4,5 ore",
+   "B": "2 ore",
+   "C": "9 ore",
+   "D": "1,5 ore",
+   "E": "3 ore"
+  },
+  "giusta": "B",
+  "perche": "Si sommano le velocità di riempimento: 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2 di vasca all'ora, quindi servono 2 ore. L'opzione A è la media dei tempi; C è la somma; D dimezza il tempo minore; E ignora il contributo del primo rubinetto.",
+  "semplice": "In un'ora il primo rubinetto riempie 1/6 della vasca e il secondo 1/3, cioè 2/6. Insieme fanno 3/6 = metà vasca all'ora. Quindi la vasca intera si riempie in 2 ore.",
+  "passaggi": [
+   "1. Velocità: 1/6 + 1/3 vasche all'ora",
+   "2. 1/6 + 2/6 = 1/2 vasca all'ora",
+   "3. Tempo = 1 ÷ 1/2 = 2 ore"
+  ],
+  "concetto": "problemi di lavoro congiunto"
+ },
+ {
+  "id": "LOG-084",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un padre ha 40 anni e il figlio 10. Fra quanti anni l'età del padre sarà il doppio di quella del figlio?",
+  "opzioni": {
+   "A": "20",
+   "B": "10",
+   "C": "15",
+   "D": "30",
+   "E": "5"
+  },
+  "giusta": "A",
+  "perche": "Fra x anni: 40 + x = 2(10 + x) ⇒ 40 + x = 20 + 2x ⇒ x = 20. Verifica: tra 20 anni avranno 60 e 30 anni. L'opzione B porta a 50 e 20 anni (rapporto 2,5); C a 55 e 25; D risolve male l'equazione; E a 45 e 15 (rapporto 3).",
+  "semplice": "La differenza d'età resta sempre 30 anni. Il padre avrà il doppio dell'età del figlio quando il figlio avrà proprio 30 anni (e il padre 60). Il figlio ne ha 10, quindi mancano 20 anni.",
+  "passaggi": [
+   "1. 40 + x = 2 (10 + x)",
+   "2. 40 + x = 20 + 2x ⇒ x = 20",
+   "3. Verifica: 60 = 2 · 30 ✓"
+  ],
+  "concetto": "problemi sulle età"
+ },
+ {
+  "id": "LOG-085",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "La media di 5 voti è 7. Aggiungendo un sesto voto pari a 9, la nuova media diventa circa:",
+  "opzioni": {
+   "A": "8",
+   "B": "7,5",
+   "C": "7,33",
+   "D": "7,2",
+   "E": "7,4"
+  },
+  "giusta": "C",
+  "perche": "La somma dei primi 5 voti è 5 · 7 = 35; aggiungendo 9 si ottiene 44, che diviso per 6 dà 7,33. L'opzione A fa la media tra 7 e 9, ignorando che il 7 vale per cinque voti; B aggiunge mezzo punto senza calcolo; D e E sono errori di approssimazione.",
+  "semplice": "Una media di 7 su 5 voti vuol dire 35 punti in totale. Con il 9 si arriva a 44 punti su 6 voti: 44 / 6 ≈ 7,33. Un solo voto alto alza la media, ma di poco.",
+  "passaggi": [
+   "1. Somma iniziale = 5 · 7 = 35",
+   "2. Nuova somma = 35 + 9 = 44",
+   "3. Nuova media = 44 / 6 ≈ 7,33"
+  ],
+  "concetto": "media aritmetica"
+ },
+ {
+  "id": "LOG-086",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un'auto va da A a B alla velocità media di 60 km/h e torna da B ad A alla velocità media di 40 km/h. La velocità media sull'intero percorso di andata e ritorno è:",
+  "opzioni": {
+   "A": "50 km/h",
+   "B": "45 km/h",
+   "C": "100 km/h",
+   "D": "52 km/h",
+   "E": "48 km/h"
+  },
+  "giusta": "E",
+  "perche": "Con distanza d: tempo totale = d/60 + d/40 = (2d + 3d)/120 = 5d/120 = d/24; velocità media = 2d ÷ (d/24) = 48 km/h (media armonica). L'opzione A è la media aritmetica delle velocità, errore classico; C è la somma; B e D sono valori non calcolati.",
+  "semplice": "Supponi che A e B distino 120 km. All'andata servono 2 ore, al ritorno 3 ore. In tutto 240 km in 5 ore: 48 km/h. Il tratto lento pesa di più perché dura di più.",
+  "passaggi": [
+   "1. Sia d = 120 km: t₁ = 120/60 = 2 h; t₂ = 120/40 = 3 h",
+   "2. Spazio totale 240 km, tempo totale 5 h",
+   "3. v_media = 240 / 5 = 48 km/h"
+  ],
+  "concetto": "velocità media (media armonica)"
+ },
+ {
+  "id": "LOG-087",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Si lanciano due dadi a sei facce non truccati. Qual è la probabilità che la somma dei due risultati sia 7?",
+  "opzioni": {
+   "A": "1/6",
+   "B": "1/12",
+   "C": "7/36",
+   "D": "1/36",
+   "E": "1/11"
+  },
+  "giusta": "A",
+  "perche": "I casi possibili sono 6 · 6 = 36. I casi favorevoli con somma 7 sono (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): sono 6. La probabilità è 6/36 = 1/6. L'opzione B conta le coppie senza ordine (3 su 36); D conta un solo caso; C prende il 7 come numero di casi favorevoli; E considera equiprobabili le 11 somme possibili, che invece non lo sono.",
+  "semplice": "Elenca le coppie che fanno 7: 1+6, 2+5, 3+4, 4+3, 5+2, 6+1. Sono 6 su 36 combinazioni possibili, cioè 1 su 6. Il 7 è la somma più probabile con due dadi.",
+  "passaggi": [
+   "1. Casi possibili: 6 · 6 = 36",
+   "2. Casi favorevoli: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6",
+   "3. P = 6/36 = 1/6"
+  ],
+  "concetto": "probabilità con due dadi"
+ },
+ {
+  "id": "LOG-088",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un'urna contiene 3 palline rosse e 2 blu. Se ne estraggono due, una dopo l'altra, senza rimettere la prima nell'urna. Qual è la probabilità che siano entrambe rosse?",
+  "opzioni": {
+   "A": "9/25",
+   "B": "3/10",
+   "C": "6/25",
+   "D": "1/5",
+   "E": "2/5"
+  },
+  "giusta": "B",
+  "perche": "P = 3/5 (prima rossa) · 2/4 (seconda rossa, rimaste 2 rosse su 4) = 6/20 = 3/10. L'opzione A è il risultato con reimmissione (3/5 · 3/5); C usa 2/5 per la seconda estrazione; D e E sono stime senza calcolo.",
+  "semplice": "La prima volta hai 3 rosse su 5 palline. Se esce rossa, ne restano 2 rosse su 4. Si moltiplicano le due probabilità: 3/5 × 2/4 = 6/20 = 3/10.",
+  "passaggi": [
+   "1. P(1ª rossa) = 3/5",
+   "2. P(2ª rossa | 1ª rossa) = 2/4",
+   "3. P = 3/5 · 2/4 = 6/20 = 3/10"
+  ],
+  "concetto": "probabilità senza reimmissione"
+ },
+ {
+  "id": "LOG-089",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Quanti sono gli anagrammi (anche privi di significato) della parola ROMA?",
+  "opzioni": {
+   "A": "16",
+   "B": "12",
+   "C": "4",
+   "D": "24",
+   "E": "256"
+  },
+  "giusta": "D",
+  "perche": "Le 4 lettere sono tutte diverse, quindi gli anagrammi sono le permutazioni di 4 elementi: 4! = 4 · 3 · 2 · 1 = 24. L'opzione A è 4²; E è 4⁴ (permette ripetizioni); B divide per 2 come se ci fosse una lettera doppia; C conta solo le lettere.",
+  "semplice": "Per la prima posizione hai 4 lettere tra cui scegliere, per la seconda 3, per la terza 2, per l'ultima 1. 4 × 3 × 2 × 1 = 24.",
+  "passaggi": [
+   "1. 4 lettere distinte",
+   "2. Permutazioni: 4! = 4 · 3 · 2 · 1",
+   "3. 4! = 24"
+  ],
+  "concetto": "permutazioni semplici"
+ },
+ {
+  "id": "LOG-090",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "In quanti modi diversi si può formare un gruppo di 2 persone scelte tra 6?",
+  "opzioni": {
+   "A": "30",
+   "B": "12",
+   "C": "15",
+   "D": "36",
+   "E": "21"
+  },
+  "giusta": "C",
+  "perche": "Conta il gruppo, non l'ordine: si usano le combinazioni C(6,2) = 6 · 5 / 2 = 15. L'opzione A conta le coppie ordinate (disposizioni 6 · 5), contando due volte ogni gruppo; D è 6²; B è 6 · 2; E è C(7,2).",
+  "semplice": "Se scegli Anna e Bruno, è lo stesso gruppo di Bruno e Anna. Le coppie ordinate sono 6 × 5 = 30, ma ognuna è contata due volte: 30 / 2 = 15.",
+  "passaggi": [
+   "1. Coppie ordinate: 6 · 5 = 30",
+   "2. Ogni gruppo è contato 2 volte",
+   "3. C(6,2) = 30 / 2 = 15"
+  ],
+  "concetto": "combinazioni"
+ },
+ {
+  "id": "LOG-091",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "A una riunione partecipano 10 persone e ognuna stringe la mano a tutte le altre una sola volta. Quante strette di mano ci sono in tutto?",
+  "opzioni": {
+   "A": "90",
+   "B": "100",
+   "C": "50",
+   "D": "45",
+   "E": "20"
+  },
+  "giusta": "D",
+  "perche": "Ogni stretta coinvolge 2 persone: il numero è C(10,2) = 10 · 9 / 2 = 45. L'opzione A conta 10 · 9 senza dividere per 2, contando ogni stretta due volte; B è 10²; C è 10 · 10 / 2; E è 10 · 2.",
+  "semplice": "Ognuno stringe 9 mani: 10 × 9 = 90. Ma così ogni stretta è contata due volte (una per ciascuna delle due persone). Quindi le strette sono 90 / 2 = 45.",
+  "passaggi": [
+   "1. Ogni persona stringe 9 mani: 10 · 9 = 90",
+   "2. Ogni stretta è contata 2 volte",
+   "3. 90 / 2 = 45"
+  ],
+  "concetto": "combinazioni di coppie"
+ },
+ {
+  "id": "LOG-092",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Oggi è martedì. Che giorno della settimana sarà fra 100 giorni?",
+  "opzioni": {
+   "A": "Mercoledì",
+   "B": "Venerdì",
+   "C": "Giovedì",
+   "D": "Lunedì",
+   "E": "Martedì"
+  },
+  "giusta": "C",
+  "perche": "I giorni della settimana si ripetono ogni 7: 100 = 7 · 14 + 2, quindi fra 100 giorni il giorno sarà lo stesso di fra 2 giorni, cioè martedì + 2 = giovedì. L'opzione A aggiunge un solo giorno; B ne aggiunge 3; E pensa che 100 sia multiplo di 7.",
+  "semplice": "Ogni 7 giorni si torna allo stesso giorno. In 100 giorni ci sono 14 settimane intere (98 giorni) e avanzano 2 giorni. Da martedì, 2 giorni dopo è giovedì.",
+  "passaggi": [
+   "1. 100 ÷ 7 = 14 resto 2",
+   "2. Dopo 98 giorni è ancora martedì",
+   "3. Martedì + 2 giorni = giovedì"
+  ],
+  "concetto": "calcolo dei giorni (resto della divisione)"
+ },
+ {
+  "id": "LOG-093",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Qual è l'angolo minore formato dalle lancette di un orologio analogico alle 3:30?",
+  "opzioni": {
+   "A": "90°",
+   "B": "60°",
+   "C": "105°",
+   "D": "80°",
+   "E": "75°"
+  },
+  "giusta": "E",
+  "perche": "La lancetta dei minuti a 30 minuti è a 180°. Quella delle ore si muove di 30° ogni ora e di 0,5° ogni minuto: alle 3:30 è a 3 · 30 + 30 · 0,5 = 105°. L'angolo è 180 − 105 = 75°. L'opzione A è la trappola di chi lascia la lancetta delle ore ferma sul 3 (180 − 90); C è la posizione della lancetta delle ore.",
+  "semplice": "Alle 3:30 la lancetta dei minuti è sul 6, ma quella delle ore non è più sul 3: è a metà tra il 3 e il 4. Tra il 3 e il 6 ci sono 90°, ma la lancetta delle ore si è già avvicinata di 15°: restano 75°.",
+  "passaggi": [
+   "1. Minuti: 30 · 6° = 180°",
+   "2. Ore: 3 · 30° + 30 · 0,5° = 105°",
+   "3. Angolo = 180° − 105° = 75°"
+  ],
+  "concetto": "angolo tra le lancette"
+ },
+ {
+  "id": "LOG-094",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "5 operai costruiscono un muro in 12 giorni. Lavorando allo stesso ritmo, in quanti giorni lo costruirebbero 6 operai?",
+  "opzioni": {
+   "A": "10",
+   "B": "14,4",
+   "C": "13",
+   "D": "8",
+   "E": "11"
+  },
+  "giusta": "A",
+  "perche": "È una proporzionalità inversa: il lavoro totale è 5 · 12 = 60 giorni-operaio, quindi con 6 operai servono 60/6 = 10 giorni. L'opzione B applica una proporzione diretta (12 · 6/5); C aggiunge un giorno per l'operaio in più; D e E sono stime senza calcolo.",
+  "semplice": "Il muro richiede 60 'giornate di lavoro' in tutto (5 operai per 12 giorni). Se gli operai sono 6, le 60 giornate si dividono tra loro: 60 / 6 = 10 giorni. Più operai, meno giorni.",
+  "passaggi": [
+   "1. Lavoro totale = 5 · 12 = 60 giorni-operaio",
+   "2. Con 6 operai: 60 / 6",
+   "3. = 10 giorni"
+  ],
+  "concetto": "proporzionalità inversa"
+ },
+ {
+  "id": "LOG-095",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Quanto vale il 30% del 40% di 500?",
+  "opzioni": {
+   "A": "350",
+   "B": "60",
+   "C": "70",
+   "D": "120",
+   "E": "6"
+  },
+  "giusta": "B",
+  "perche": "Si moltiplicano le percentuali: 0,30 · 0,40 · 500 = 0,12 · 500 = 60. L'opzione A somma le percentuali e calcola il 70% di 500; C somma i numeri 30 + 40; D raddoppia il risultato (24% invece di 12%); E sbaglia di un fattore 10.",
+  "semplice": "Prima il 40% di 500: 200. Poi il 30% di 200: 60. Il 30% del 40% equivale al 12% del totale.",
+  "passaggi": [
+   "1. 40% di 500 = 200",
+   "2. 30% di 200 = 60",
+   "3. (Equivale al 12% di 500 = 60)"
+  ],
+  "concetto": "percentuali di percentuali"
+ },
+ {
+  "id": "LOG-096",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Si mescolano 2 L di una soluzione con concentrazione 10% e 3 L di una soluzione con concentrazione 20% dello stesso soluto. La concentrazione della miscela è:",
+  "opzioni": {
+   "A": "15%",
+   "B": "30%",
+   "C": "12%",
+   "D": "16%",
+   "E": "18%"
+  },
+  "giusta": "D",
+  "perche": "Il soluto totale è 0,10 · 2 + 0,20 · 3 = 0,2 + 0,6 = 0,8 L su 5 L di miscela: 0,8/5 = 16%. È una media pesata sui volumi. L'opzione A è la media semplice delle due concentrazioni; B le somma; C e E pesano i volumi in modo sbagliato.",
+  "semplice": "Conta il soluto: nella prima soluzione ce ne sono 0,2 L, nella seconda 0,6 L, in tutto 0,8 L. La miscela è di 5 L: 0,8 su 5 è il 16%. Siccome c'è più soluzione al 20%, la miscela è più vicina al 20 che al 10.",
+  "passaggi": [
+   "1. Soluto = 0,10 · 2 + 0,20 · 3 = 0,8 L",
+   "2. Volume totale = 5 L",
+   "3. Concentrazione = 0,8 / 5 = 0,16 = 16%"
+  ],
+  "concetto": "miscele e media ponderata"
+ },
+ {
+  "id": "LOG-097",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "La somma di tre numeri interi consecutivi è 72. Qual è il maggiore dei tre?",
+  "opzioni": {
+   "A": "24",
+   "B": "25",
+   "C": "23",
+   "D": "26",
+   "E": "36"
+  },
+  "giusta": "B",
+  "perche": "Se il numero centrale è n, la somma è (n − 1) + n + (n + 1) = 3n = 72, quindi n = 24 e i numeri sono 23, 24, 25. Il maggiore è 25. L'opzione A è il numero centrale; C il minore; E divide 72 per 2.",
+  "semplice": "Tre numeri consecutivi hanno come media quello in mezzo. 72 / 3 = 24 è il numero in mezzo, quindi i tre numeri sono 23, 24 e 25.",
+  "passaggi": [
+   "1. (n − 1) + n + (n + 1) = 3n = 72",
+   "2. n = 24 ⇒ numeri 23, 24, 25",
+   "3. Il maggiore è 25"
+  ],
+  "concetto": "equazioni con numeri consecutivi"
+ },
+ {
+  "id": "LOG-098",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "In una classe di 24 studenti il rapporto tra maschi e femmine è 3 : 5. Quanti sono i maschi?",
+  "opzioni": {
+   "A": "9",
+   "B": "15",
+   "C": "8",
+   "D": "12",
+   "E": "3"
+  },
+  "giusta": "A",
+  "perche": "Il rapporto 3 : 5 divide la classe in 3 + 5 = 8 parti uguali da 24/8 = 3 studenti ciascuna. I maschi sono 3 parti: 3 · 3 = 9. L'opzione B è il numero di femmine; C è il numero delle parti; D divide a metà; E è il valore di una sola parte.",
+  "semplice": "Immagina di dividere la classe in 8 gruppetti uguali: 3 di maschi e 5 di femmine. Ogni gruppetto ha 24 / 8 = 3 studenti. I maschi sono 3 gruppetti, cioè 9.",
+  "passaggi": [
+   "1. Parti totali: 3 + 5 = 8",
+   "2. Una parte = 24 / 8 = 3",
+   "3. Maschi = 3 · 3 = 9"
+  ],
+  "concetto": "ripartizione in parti proporzionali"
+ },
+ {
+  "id": "LOG-099",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "3 stampanti identiche stampano 300 pagine in 5 minuti. Quante pagine stampano 5 stampanti in 10 minuti?",
+  "opzioni": {
+   "A": "500",
+   "B": "600",
+   "C": "900",
+   "D": "1500",
+   "E": "1000"
+  },
+  "giusta": "E",
+  "perche": "Ogni stampante stampa 300/(3 · 5) = 20 pagine al minuto. 5 stampanti per 10 minuti: 5 · 10 · 20 = 1000 pagine. L'opzione A considera solo l'aumento delle stampanti; B solo il raddoppio del tempo; D moltiplica per entrambi i fattori ma partendo da un errore (300 · 5); C è un errore di proporzione.",
+  "semplice": "Prima trova quanto fa una stampante in un minuto: 300 pagine / 3 stampanti / 5 minuti = 20 pagine. Poi moltiplica: 20 × 5 stampanti × 10 minuti = 1000 pagine.",
+  "passaggi": [
+   "1. Resa = 300 / (3 · 5) = 20 pagine/min per stampante",
+   "2. Nuovo caso: 5 stampanti · 10 min",
+   "3. 20 · 5 · 10 = 1000 pagine"
+  ],
+  "concetto": "proporzionalità composta"
+ },
+ {
+  "id": "LOG-100",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "In un salvadanaio ci sono 20 monete, alcune da 1 € e altre da 2 €, per un totale di 32 €. Quante sono le monete da 2 €?",
+  "opzioni": {
+   "A": "8",
+   "B": "10",
+   "C": "12",
+   "D": "16",
+   "E": "6"
+  },
+  "giusta": "C",
+  "perche": "Con x monete da 1 € e y da 2 €: x + y = 20 e x + 2y = 32. Sottraendo: y = 12 (e x = 8). Verifica: 8 + 24 = 32 ✓. L'opzione A è il numero di monete da 1 €; B divide a metà; D è 32/2; E è un errore di sottrazione.",
+  "semplice": "Se fossero tutte da 1 € ci sarebbero 20 €. Ci sono 12 € in più: ogni moneta da 2 € aggiunge 1 € rispetto a una da 1 €. Quindi le monete da 2 € sono 12.",
+  "passaggi": [
+   "1. x + y = 20; x + 2y = 32",
+   "2. Sottraendo: y = 12",
+   "3. x = 8; verifica 8 · 1 + 12 · 2 = 32 ✓"
+  ],
+  "concetto": "sistemi lineari"
+ },
+ {
+  "id": "LOG-101",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Due treni partono contemporaneamente da due città distanti 300 km e si muovono l'uno verso l'altro, alle velocità costanti di 70 km/h e 80 km/h. Dopo quanto tempo si incontrano?",
+  "opzioni": {
+   "A": "2 ore",
+   "B": "4,3 ore",
+   "C": "3,75 ore",
+   "D": "1,5 ore",
+   "E": "2,5 ore"
+  },
+  "giusta": "A",
+  "perche": "Muovendosi l'uno verso l'altro, la distanza tra i treni diminuisce alla velocità relativa 70 + 80 = 150 km/h: t = 300/150 = 2 h. L'opzione B usa solo la velocità del treno più lento (300/70); C usa solo quella del più veloce (300/80); D e E sono errori nella divisione.",
+  "semplice": "Ogni ora i due treni si avvicinano di 70 + 80 = 150 km. Per coprire 300 km servono 2 ore. In quel momento il primo ha fatto 140 km e il secondo 160 km.",
+  "passaggi": [
+   "1. Velocità di avvicinamento = 70 + 80 = 150 km/h",
+   "2. t = 300 / 150",
+   "3. t = 2 h (verifica: 140 + 160 = 300 km)"
+  ],
+  "concetto": "moto di avvicinamento"
+ },
+ {
+  "id": "LOG-102",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Si lanciano tre monete non truccate. Qual è la probabilità di ottenere almeno una testa?",
+  "opzioni": {
+   "A": "1/8",
+   "B": "7/8",
+   "C": "3/8",
+   "D": "1/2",
+   "E": "3/4"
+  },
+  "giusta": "B",
+  "perche": "Conviene passare all'evento contrario: «nessuna testa» significa tre croci, con probabilità (1/2)³ = 1/8. Quindi P(almeno una testa) = 1 − 1/8 = 7/8. L'opzione A è la probabilità dell'evento contrario; C è la probabilità di esattamente una testa; D e E sono stime intuitive.",
+  "semplice": "Gli esiti possibili con tre monete sono 8. Solo uno non contiene teste: croce-croce-croce. Gli altri 7 hanno almeno una testa. Quindi la probabilità è 7 su 8.",
+  "passaggi": [
+   "1. P(nessuna testa) = (1/2)³ = 1/8",
+   "2. P(almeno una testa) = 1 − P(nessuna testa)",
+   "3. = 1 − 1/8 = 7/8"
+  ],
+  "concetto": "evento complementare"
+ },
+ {
+  "id": "LOG-103",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Quanti sono gli anagrammi (anche privi di significato) della parola MAMMA?",
+  "opzioni": {
+   "A": "120",
+   "B": "20",
+   "C": "60",
+   "D": "10",
+   "E": "30"
+  },
+  "giusta": "D",
+  "perche": "Le 5 lettere sono M (3 volte) e A (2 volte): si divide il numero di permutazioni per quelle delle lettere ripetute, 5!/(3! · 2!) = 120/12 = 10. L'opzione A tratta le lettere come tutte diverse; B divide solo per 3!; C divide solo per 2!; E è 5!/(2!·2!).",
+  "semplice": "Basta scegliere dove mettere le due A tra i 5 posti: le M vanno negli altri. I modi di scegliere 2 posti su 5 sono 10. Per esempio AAMMM, AMAMM, …, MMMAA.",
+  "passaggi": [
+   "1. Lettere: M × 3, A × 2",
+   "2. Permutazioni con ripetizione: 5! / (3! · 2!)",
+   "3. 120 / (6 · 2) = 10"
+  ],
+  "concetto": "permutazioni con ripetizione"
+ },
+ {
+  "id": "LOG-104",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "A una gara partecipano 8 atleti. In quanti modi diversi possono essere assegnate le medaglie d'oro, d'argento e di bronzo?",
+  "opzioni": {
+   "A": "56",
+   "B": "512",
+   "C": "24",
+   "D": "6720",
+   "E": "336"
+  },
+  "giusta": "E",
+  "perche": "L'ordine conta (oro, argento e bronzo sono diversi), quindi si contano le disposizioni semplici: 8 · 7 · 6 = 336. L'opzione A è il numero di combinazioni C(8,3), che ignora l'ordine; B è 8³, che permetterebbe allo stesso atleta più medaglie; C è 4!; D è 8 · 7 · 6 · 5 · 4.",
+  "semplice": "L'oro può andare a 8 atleti. Assegnato l'oro, l'argento può andare a 7, e il bronzo a 6. 8 × 7 × 6 = 336 podi diversi.",
+  "passaggi": [
+   "1. Oro: 8 scelte; argento: 7; bronzo: 6",
+   "2. Principio moltiplicativo: 8 · 7 · 6",
+   "3. = 336"
+  ],
+  "concetto": "disposizioni semplici"
+ },
+ {
+  "id": "LOG-105",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Dopo uno sconto del 25%, un paio di scarpe costa 60 €. Qual era il prezzo prima dello sconto?",
+  "opzioni": {
+   "A": "75 €",
+   "B": "85 €",
+   "C": "80 €",
+   "D": "45 €",
+   "E": "90 €"
+  },
+  "giusta": "C",
+  "perche": "Il prezzo scontato è il 75% di quello originale: 0,75 · P = 60 ⇒ P = 80 €. L'opzione A aggiunge a 60 il 25% di 60 (15 €), errore classico: lo sconto si calcola sul prezzo iniziale, non su quello finale. D applica di nuovo lo sconto; B e E sono stime.",
+  "semplice": "Pagare 60 € vuol dire pagare tre quarti del prezzo. Se tre quarti valgono 60 €, un quarto vale 20 € e il prezzo intero era 80 €. Verifica: il 25% di 80 è 20, e 80 − 20 = 60.",
+  "passaggi": [
+   "1. Prezzo scontato = 75% del prezzo iniziale",
+   "2. 0,75 · P = 60 ⇒ P = 60 / 0,75",
+   "3. P = 80 €"
+  ],
+  "concetto": "percentuale inversa"
+ },
+ {
+  "id": "LOG-106",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un prodotto costa 122 €, IVA al 22% inclusa. Qual è il prezzo al netto dell'IVA?",
+  "opzioni": {
+   "A": "95,16 €",
+   "B": "22 €",
+   "C": "148,84 €",
+   "D": "110 €",
+   "E": "100 €"
+  },
+  "giusta": "E",
+  "perche": "Il prezzo con IVA è il 122% del prezzo netto: 1,22 · N = 122 ⇒ N = 100 €. L'opzione A toglie il 22% da 122 € (122 · 0,78), errore tipico; B confonde l'IVA in percentuale con l'importo; C aggiunge di nuovo l'IVA.",
+  "semplice": "Il prezzo netto è la base, e l'IVA si aggiunge sopra: netto + 22% = 122 €. Quindi il netto è 122 / 1,22 = 100 €, e l'IVA è 22 €. Togliere il 22% da 122 dà un risultato sbagliato perché cambia la base.",
+  "passaggi": [
+   "1. Prezzo lordo = N · (1 + 0,22)",
+   "2. N = 122 / 1,22",
+   "3. N = 100 €"
+  ],
+  "concetto": "scorporo dell'IVA"
+ },
+ {
+  "id": "LOG-107",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "La somma delle età di una madre e di sua figlia è 50 anni. Cinque anni fa la madre aveva il quadruplo degli anni della figlia. Quanti anni ha oggi la figlia?",
+  "opzioni": {
+   "A": "10",
+   "B": "12",
+   "C": "15",
+   "D": "13",
+   "E": "8"
+  },
+  "giusta": "D",
+  "perche": "Sia F l'età della figlia e M quella della madre: M + F = 50 e M − 5 = 4(F − 5) ⇒ M = 4F − 15. Sostituendo: 4F − 15 + F = 50 ⇒ 5F = 65 ⇒ F = 13 (e M = 37). Verifica: 5 anni fa 32 = 4 · 8 ✓. L'opzione A trascura i cinque anni (M = 4F); E è l'età della figlia cinque anni fa.",
+  "semplice": "Oggi la figlia ha 13 anni e la madre 37: insieme fanno 50. Cinque anni fa avevano 8 e 32 anni, e 32 è proprio quattro volte 8.",
+  "passaggi": [
+   "1. M + F = 50; M − 5 = 4 (F − 5)",
+   "2. M = 4F − 15 ⇒ 5F − 15 = 50 ⇒ F = 13",
+   "3. Verifica: M = 37; 32 = 4 · 8 ✓"
+  ],
+  "concetto": "problemi sulle età"
+ },
+ {
+  "id": "LOG-108",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un orologio perde 3 minuti ogni ora. Viene regolato esattamente a mezzogiorno. Che ora segna quando sono realmente le 20:00 dello stesso giorno?",
+  "opzioni": {
+   "A": "19:57",
+   "B": "19:36",
+   "C": "19:24",
+   "D": "20:24",
+   "E": "19:40"
+  },
+  "giusta": "B",
+  "perche": "Dalle 12:00 alle 20:00 passano 8 ore: l'orologio perde 8 · 3 = 24 minuti, quindi segna 20:00 − 0:24 = 19:36. L'opzione A considera la perdita di una sola ora; C conta 12 ore invece di 8 (36 minuti); D aggiunge i minuti invece di toglierli; E sbaglia il conteggio del ritardo (20 minuti).",
+  "semplice": "In 8 ore l'orologio rimane indietro di 3 minuti ogni ora: 8 × 3 = 24 minuti. Alle 20:00 vere segnerà 24 minuti in meno, cioè 19:36.",
+  "passaggi": [
+   "1. Tempo trascorso: 8 h",
+   "2. Ritardo: 8 · 3 = 24 min",
+   "3. Ora segnata: 20:00 − 0:24 = 19:36"
+  ],
+  "concetto": "orologi che ritardano"
+ },
+ {
+  "id": "LOG-109",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "La popolazione di un paese passa da 2500 a 2000 abitanti. Di quanto è diminuita in percentuale?",
+  "opzioni": {
+   "A": "25%",
+   "B": "50%",
+   "C": "20%",
+   "D": "500%",
+   "E": "80%"
+  },
+  "giusta": "C",
+  "perche": "La variazione percentuale si calcola rispetto al valore iniziale: (2500 − 2000)/2500 = 500/2500 = 0,20 = 20%. L'opzione A divide per il valore finale (500/2000), errore molto comune; B confonde la differenza con una percentuale; E è il rapporto 2000/2500, cioè la popolazione rimasta.",
+  "semplice": "Si sono persi 500 abitanti su 2500 iniziali. 500 su 2500 è un quinto, cioè il 20%. Attenzione: se la popolazione tornasse da 2000 a 2500 l'aumento sarebbe del 25%, perché la base è diversa.",
+  "passaggi": [
+   "1. Diminuzione assoluta = 2500 − 2000 = 500",
+   "2. Variazione relativa = 500 / 2500 = 0,20",
+   "3. Diminuzione = 20%"
+  ],
+  "concetto": "variazione percentuale"
+ },
+ {
+  "id": "LOG-110",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un esame prevede tre prove con pesi 1, 1 e 2. Uno studente ottiene 24, 27 e 30. Qual è la sua media ponderata?",
+  "opzioni": {
+   "A": "27,75",
+   "B": "27",
+   "C": "28,5",
+   "D": "27,5",
+   "E": "26,25"
+  },
+  "giusta": "A",
+  "perche": "La media ponderata è (24 · 1 + 27 · 1 + 30 · 2)/(1 + 1 + 2) = (24 + 27 + 60)/4 = 111/4 = 27,75. L'opzione B è la media semplice (81/3); C è la media dei soli due voti più alti; D e E sono errori nei pesi.",
+  "semplice": "La terza prova conta il doppio, quindi è come se il 30 comparisse due volte: 24, 27, 30, 30. La media di questi quattro numeri è 111 / 4 = 27,75.",
+  "passaggi": [
+   "1. Somma pesata = 24 · 1 + 27 · 1 + 30 · 2 = 111",
+   "2. Somma dei pesi = 4",
+   "3. Media = 111 / 4 = 27,75"
+  ],
+  "concetto": "media ponderata"
+ },
+ {
+  "id": "LOG-111",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Quanti numeri interi da 1 a 100 (estremi inclusi) sono divisibili per 3 oppure per 5?",
+  "opzioni": {
+   "A": "47",
+   "B": "53",
+   "C": "41",
+   "D": "33",
+   "E": "20"
+  },
+  "giusta": "A",
+  "perche": "I multipli di 3 sono 33, quelli di 5 sono 20, ma i multipli di 15 (6) sono contati due volte: 33 + 20 − 6 = 47 (principio di inclusione-esclusione). L'opzione B somma senza togliere i multipli comuni; C li toglie due volte; D conta solo i multipli di 3; E solo quelli di 5.",
+  "semplice": "Conta i multipli di 3 (33) e quelli di 5 (20). Ma numeri come 15, 30, 45… sono sia multipli di 3 sia di 5 e li hai contati due volte: sono 6. Quindi 33 + 20 − 6 = 47.",
+  "passaggi": [
+   "1. Multipli di 3: ⌊100/3⌋ = 33; multipli di 5: ⌊100/5⌋ = 20",
+   "2. Multipli di 15: ⌊100/15⌋ = 6",
+   "3. 33 + 20 − 6 = 47"
+  ],
+  "concetto": "inclusione-esclusione"
+ },
+ {
+  "id": "LOG-112",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Due autobus partono insieme dal capolinea: il primo riparte ogni 12 minuti, il secondo ogni 18 minuti. Dopo quanti minuti ripartiranno di nuovo insieme per la prima volta?",
+  "opzioni": {
+   "A": "6",
+   "B": "30",
+   "C": "216",
+   "D": "72",
+   "E": "36"
+  },
+  "giusta": "E",
+  "perche": "I due autobus ripartono insieme dopo un tempo multiplo sia di 12 sia di 18: il primo di questi è il minimo comune multiplo, mcm(12, 18) = 36. L'opzione A è il massimo comun divisore; B è la somma; C è il prodotto (multiplo comune ma non minimo); D è il secondo multiplo comune.",
+  "semplice": "Elenca le partenze: il primo a 12, 24, 36, 48…; il secondo a 18, 36, 54… Il primo numero in comune è 36.",
+  "passaggi": [
+   "1. 12 = 2² · 3; 18 = 2 · 3²",
+   "2. mcm = 2² · 3² = 36",
+   "3. Ripartono insieme dopo 36 minuti"
+  ],
+  "concetto": "minimo comune multiplo"
+ },
+ {
+  "id": "LOG-113",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un fioraio ha 48 rose e 36 tulipani e vuole comporre il maggior numero possibile di mazzi identici, usando tutti i fiori. Quanti mazzi può comporre?",
+  "opzioni": {
+   "A": "6",
+   "B": "4",
+   "C": "144",
+   "D": "12",
+   "E": "3"
+  },
+  "giusta": "D",
+  "perche": "Il numero di mazzi deve dividere sia 48 sia 36; il più grande divisore comune è MCD(48, 36) = 12. Ogni mazzo avrà 4 rose e 3 tulipani. L'opzione A è un divisore comune ma non il massimo; B e E sono il numero di rose o di tulipani in ciascun mazzo; C è il mcm.",
+  "semplice": "Cerca il numero più grande che divide sia 48 sia 36: è 12. Con 12 mazzi, ognuno ha 48/12 = 4 rose e 36/12 = 3 tulipani, e non avanza nessun fiore.",
+  "passaggi": [
+   "1. 48 = 2⁴ · 3; 36 = 2² · 3²",
+   "2. MCD = 2² · 3 = 12",
+   "3. 12 mazzi da 4 rose e 3 tulipani"
+  ],
+  "concetto": "massimo comun divisore"
+ },
+ {
+  "id": "LOG-114",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Quanto tempo serve per percorrere 120 km alla velocità costante di 80 km/h?",
+  "opzioni": {
+   "A": "1 ora e 20 minuti",
+   "B": "1 ora e 30 minuti",
+   "C": "1 ora e 40 minuti",
+   "D": "1 ora e 50 minuti",
+   "E": "2 ore"
+  },
+  "giusta": "B",
+  "perche": "t = s/v = 120/80 = 1,5 h, cioè 1 ora e mezza = 1 ora e 30 minuti. L'opzione D è la trappola di chi legge 1,5 h come «1 ora e 50 minuti»: la parte decimale va moltiplicata per 60 (0,5 · 60 = 30 min). A e C sono errori di calcolo; E arrotonda per eccesso.",
+  "semplice": "In un'ora si fanno 80 km, ne mancano 40, che sono metà di 80: serve mezz'ora. In tutto 1 ora e 30 minuti. Ricorda che 0,5 ore sono 30 minuti, non 50.",
+  "passaggi": [
+   "1. t = s / v = 120 / 80 = 1,5 h",
+   "2. 0,5 h = 0,5 · 60 min = 30 min",
+   "3. t = 1 h 30 min"
+  ],
+  "concetto": "conversione di ore decimali"
+ },
+ {
+  "id": "LOG-115",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Da un mazzo di 40 carte napoletane (4 semi da 10 carte, con un asso per seme) si pesca una carta. Qual è la probabilità che sia un asso oppure una carta di coppe?",
+  "opzioni": {
+   "A": "14/40",
+   "B": "1/40",
+   "C": "13/40",
+   "D": "1/4",
+   "E": "1/10"
+  },
+  "giusta": "C",
+  "perche": "P(asso o coppe) = P(asso) + P(coppe) − P(asso di coppe) = 4/40 + 10/40 − 1/40 = 13/40. L'opzione A somma senza togliere l'asso di coppe, contato due volte; B è la probabilità dell'asso di coppe; D è la probabilità delle sole coppe; E quella dei soli assi.",
+  "semplice": "Le carte di coppe sono 10. Gli assi sono 4, ma uno di questi (l'asso di coppe) è già tra le coppe. Le carte buone sono 10 + 3 = 13 su 40.",
+  "passaggi": [
+   "1. P(asso) = 4/40; P(coppe) = 10/40",
+   "2. P(asso di coppe) = 1/40 (contato due volte)",
+   "3. P = 4/40 + 10/40 − 1/40 = 13/40"
+  ],
+  "concetto": "probabilità dell'unione"
+ },
+ {
+  "id": "LOG-116",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Un numero sommato al proprio triplo dà 48. Qual è il numero?",
+  "opzioni": {
+   "A": "16",
+   "B": "12",
+   "C": "36",
+   "D": "24",
+   "E": "9,6"
+  },
+  "giusta": "B",
+  "perche": "Indicando il numero con x: x + 3x = 48 ⇒ 4x = 48 ⇒ x = 12. L'opzione A risolve 3x = 48 dimenticando il numero stesso; C è il triplo di 12; D risolve 2x = 48; E risolve 5x = 48.",
+  "semplice": "Un numero più il suo triplo fa quattro volte il numero. Se quattro volte il numero è 48, il numero è 48 / 4 = 12. Verifica: 12 + 36 = 48.",
+  "passaggi": [
+   "1. x + 3x = 48",
+   "2. 4x = 48",
+   "3. x = 12 (verifica: 12 + 36 = 48)"
+  ],
+  "concetto": "equazioni di primo grado"
+ },
+ {
+  "id": "LOG-117",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Se il lato di un quadrato aumenta del 10%, di quanto aumenta in percentuale la sua area?",
+  "opzioni": {
+   "A": "21%",
+   "B": "10%",
+   "C": "20%",
+   "D": "11%",
+   "E": "100%"
+  },
+  "giusta": "A",
+  "perche": "L'area dipende dal quadrato del lato: (1,10 · l)² = 1,21 · l², quindi l'area aumenta del 21%. L'opzione B pensa che l'area cresca come il lato; C raddoppia la percentuale dimenticando il termine 0,1² = 0,01; D e E sono errori di calcolo.",
+  "semplice": "Prendi un quadrato di lato 10: area 100. Aumentando il lato del 10% diventa 11, e l'area diventa 121. Da 100 a 121 l'aumento è del 21%.",
+  "passaggi": [
+   "1. Nuovo lato = 1,10 · l",
+   "2. Nuova area = (1,10)² · l² = 1,21 · l²",
+   "3. Aumento = 21%"
+  ],
+  "concetto": "variazioni percentuali e aree"
+ },
+ {
+  "id": "LOG-118",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Una vasca ha un volume di 2,4 m³ e viene riempita con un rubinetto che eroga 20 litri al minuto. Quanti minuti servono per riempirla completamente?",
+  "opzioni": {
+   "A": "12",
+   "B": "1200",
+   "C": "120",
+   "D": "48",
+   "E": "240"
+  },
+  "giusta": "C",
+  "perche": "1 m³ = 1000 L, quindi 2,4 m³ = 2400 L; il tempo è 2400/20 = 120 minuti (2 ore). L'opzione A usa 1 m³ = 100 L; B usa 1 m³ = 10 000 L; D moltiplica 2,4 per 20; E divide per 10 L/min.",
+  "semplice": "Prima converti: un metro cubo contiene 1000 litri, quindi la vasca contiene 2400 litri. Il rubinetto ne mette 20 al minuto: 2400 / 20 = 120 minuti, cioè due ore.",
+  "passaggi": [
+   "1. 2,4 m³ = 2400 L",
+   "2. t = 2400 L / 20 L/min",
+   "3. t = 120 min"
+  ],
+  "concetto": "conversioni di volume"
+ },
+ {
+  "id": "LOG-119",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Marco svolge un lavoro da solo in 4 ore, Luca svolge lo stesso lavoro da solo in 12 ore. Lavorando insieme, in quanto tempo lo completano?",
+  "opzioni": {
+   "A": "8 ore",
+   "B": "16 ore",
+   "C": "6 ore",
+   "D": "3 ore",
+   "E": "2 ore"
+  },
+  "giusta": "D",
+  "perche": "In un'ora Marco svolge 1/4 del lavoro e Luca 1/12: insieme 1/4 + 1/12 = 3/12 + 1/12 = 4/12 = 1/3 all'ora, quindi servono 3 ore. L'opzione A è la media dei tempi; B la somma; C è un valore intermedio senza calcolo; E sottovaluta il tempo.",
+  "semplice": "Marco in un'ora fa un quarto del lavoro, Luca un dodicesimo. Insieme fanno 3/12 + 1/12 = 4/12, cioè un terzo del lavoro ogni ora. Per finirlo servono 3 ore.",
+  "passaggi": [
+   "1. Velocità: 1/4 + 1/12 lavori all'ora",
+   "2. = 4/12 = 1/3 di lavoro all'ora",
+   "3. Tempo = 3 ore"
+  ],
+  "concetto": "lavoro congiunto"
+ },
+ {
+  "id": "LOG-120",
+  "materia": "Ragionamento logico",
+  "argomento": "Problemi e calcolo",
+  "livello": "test",
+  "domanda": "Quanti numeri di tre cifre, tutte diverse tra loro, si possono formare usando le cifre 1, 2, 3, 4, 5?",
+  "opzioni": {
+   "A": "125",
+   "B": "10",
+   "C": "15",
+   "D": "120",
+   "E": "60"
+  },
+  "giusta": "E",
+  "perche": "Per la prima cifra ci sono 5 scelte, per la seconda 4, per la terza 3: 5 · 4 · 3 = 60 (disposizioni semplici di 5 elementi a 3 a 3). L'opzione A è 5³ e ammette ripetizioni; B è C(5,3), che ignora l'ordine delle cifre; D è 5!, che usa tutte e cinque le cifre.",
+  "semplice": "Scegli la cifra delle centinaia (5 modi), poi quella delle decine tra le 4 rimaste, poi quella delle unità tra le 3 rimaste. 5 × 4 × 3 = 60 numeri diversi.",
+  "passaggi": [
+   "1. Centinaia: 5 scelte; decine: 4; unità: 3",
+   "2. Principio moltiplicativo: 5 · 4 · 3",
+   "3. = 60"
+  ],
+  "concetto": "disposizioni semplici"
+ },
+ {
+  "id": "LOG-121",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Dati gli insiemi A = {1, 2, 3, 4, 5} e B = {4, 5, 6, 7}, l'intersezione A ∩ B è:",
+  "opzioni": {
+   "A": "{4, 5}",
+   "B": "{1, 2, 3, 4, 5, 6, 7}",
+   "C": "{1, 2, 3}",
+   "D": "{6, 7}",
+   "E": "{1, 2, 3, 6, 7}"
+  },
+  "giusta": "A",
+  "perche": "L'intersezione contiene gli elementi che appartengono a entrambi gli insiemi: solo 4 e 5. L'opzione B è l'unione A ∪ B; C è la differenza A \\ B; D è B \\ A; E è la differenza simmetrica (elementi che stanno in uno solo dei due insiemi).",
+  "semplice": "L'intersezione è la parte 'in comune'. Guarda quali numeri compaiono in tutte e due le liste: solo 4 e 5.",
+  "passaggi": [
+   "1. Elementi di A: 1, 2, 3, 4, 5",
+   "2. Elementi di B presenti anche in A: 4, 5",
+   "3. A ∩ B = {4, 5}"
+  ],
+  "concetto": "intersezione"
+ },
+ {
+  "id": "LOG-122",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Dati gli insiemi A = {1, 2, 3, 4, 5} e B = {4, 5, 6, 7}, quanti elementi ha l'unione A ∪ B?",
+  "opzioni": {
+   "A": "9",
+   "B": "2",
+   "C": "5",
+   "D": "7",
+   "E": "4"
+  },
+  "giusta": "D",
+  "perche": "L'unione contiene gli elementi che appartengono ad almeno uno dei due insiemi, contati una sola volta: {1, 2, 3, 4, 5, 6, 7}, cioè 7 elementi. Con la formula: |A| + |B| − |A ∩ B| = 5 + 4 − 2 = 7. L'opzione A somma le cardinalità contando due volte 4 e 5; B è la cardinalità dell'intersezione; C e E sono le cardinalità di A e di B.",
+  "semplice": "Metti insieme le due liste senza ripetere i numeri uguali: 1, 2, 3, 4, 5, 6, 7. Sono 7 numeri. Il 4 e il 5 compaiono in entrambe le liste ma si contano una volta sola.",
+  "passaggi": [
+   "1. |A| = 5; |B| = 4; |A ∩ B| = 2",
+   "2. |A ∪ B| = 5 + 4 − 2",
+   "3. |A ∪ B| = 7"
+  ],
+  "concetto": "cardinalità dell'unione"
+ },
+ {
+  "id": "LOG-123",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Dati gli insiemi A = {1, 2, 3, 4, 5} e B = {4, 5, 6, 7}, la differenza A \\ B è:",
+  "opzioni": {
+   "A": "{6, 7}",
+   "B": "{4, 5}",
+   "C": "{1, 2, 3}",
+   "D": "{1, 2, 3, 6, 7}",
+   "E": "{1, 2, 3, 4, 5}"
+  },
+  "giusta": "C",
+  "perche": "A \\ B contiene gli elementi di A che non appartengono a B: tolti 4 e 5, restano 1, 2, 3. L'opzione A è B \\ A (la differenza non è commutativa); B è l'intersezione; D è la differenza simmetrica; E è A stesso.",
+  "semplice": "Parti da A e cancella tutto quello che compare anche in B. Togli il 4 e il 5: restano 1, 2 e 3.",
+  "passaggi": [
+   "1. A = {1, 2, 3, 4, 5}",
+   "2. Elementi di A che stanno in B: 4, 5",
+   "3. A \\ B = {1, 2, 3}"
+  ],
+  "concetto": "differenza tra insiemi"
+ },
+ {
+  "id": "LOG-124",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In una classe di 30 studenti, 18 giocano a calcio, 15 giocano a tennis e 7 praticano entrambi gli sport. Quanti studenti non praticano nessuno dei due sport?",
+  "opzioni": {
+   "A": "0",
+   "B": "3",
+   "C": "11",
+   "D": "26",
+   "E": "4"
+  },
+  "giusta": "E",
+  "perche": "Gli studenti che praticano almeno uno sport sono 18 + 15 − 7 = 26 (i 7 sono contati due volte e vanno tolti una volta). Quelli che non ne praticano nessuno sono 30 − 26 = 4. L'opzione A somma 18 + 15 = 33 > 30 e conclude che tutti fanno sport; D è il numero di chi fa almeno uno sport; C è il numero di chi gioca solo a calcio.",
+  "semplice": "Disegna due cerchi che si sovrappongono. Nella parte comune metti 7. Solo calcio: 18 − 7 = 11. Solo tennis: 15 − 7 = 8. In tutto 11 + 7 + 8 = 26 studenti fanno sport, quindi 30 − 26 = 4 non ne fanno.",
+  "passaggi": [
+   "1. |C ∪ T| = 18 + 15 − 7 = 26",
+   "2. Nessuno sport = 30 − 26",
+   "3. = 4"
+  ],
+  "concetto": "principio di inclusione-esclusione"
+ },
+ {
+  "id": "LOG-125",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Su 40 persone, 25 leggono quotidiani, 20 leggono riviste e 10 leggono sia quotidiani sia riviste. Quante persone leggono solo riviste?",
+  "opzioni": {
+   "A": "20",
+   "B": "10",
+   "C": "15",
+   "D": "5",
+   "E": "30"
+  },
+  "giusta": "B",
+  "perche": "Chi legge solo riviste sono i lettori di riviste meno quelli che leggono anche quotidiani: 20 − 10 = 10. L'opzione A è il totale dei lettori di riviste; C è il numero di chi legge solo quotidiani (25 − 10); D è il numero di chi non legge nulla (40 − 35); E è un errore di somma.",
+  "semplice": "Nel cerchio delle riviste ci sono 20 persone, ma 10 stanno anche nel cerchio dei quotidiani. Quelle che stanno 'solo' nel cerchio delle riviste sono 20 − 10 = 10.",
+  "passaggi": [
+   "1. |R| = 20; |R ∩ Q| = 10",
+   "2. Solo riviste = |R| − |R ∩ Q|",
+   "3. = 20 − 10 = 10"
+  ],
+  "concetto": "regioni di un diagramma di Venn"
+ },
+ {
+  "id": "LOG-126",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quanti sottoinsiemi (compresi l'insieme vuoto e l'insieme stesso) ha un insieme di 4 elementi?",
+  "opzioni": {
+   "A": "8",
+   "B": "4",
+   "C": "16",
+   "D": "24",
+   "E": "15"
+  },
+  "giusta": "C",
+  "perche": "Per ogni elemento ci sono due possibilità (stare o non stare nel sottoinsieme), quindi i sottoinsiemi sono 2⁴ = 16. L'opzione A è 2³; B conta solo i sottoinsiemi con un elemento; D è 4!, che conta gli ordinamenti; E esclude l'insieme vuoto.",
+  "semplice": "Per costruire un sottoinsieme decidi, elemento per elemento, se prenderlo o no: 2 scelte per ognuno dei 4 elementi. 2 × 2 × 2 × 2 = 16.",
+  "passaggi": [
+   "1. Ogni elemento: dentro o fuori (2 scelte)",
+   "2. Sottoinsiemi = 2ⁿ con n = 4",
+   "3. 2⁴ = 16"
+  ],
+  "concetto": "insieme delle parti"
+ },
+ {
+  "id": "LOG-127",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quanti sottoinsiemi con esattamente 2 elementi ha l'insieme {a, b, c}?",
+  "opzioni": {
+   "A": "3",
+   "B": "6",
+   "C": "8",
+   "D": "2",
+   "E": "4"
+  },
+  "giusta": "A",
+  "perche": "I sottoinsiemi con 2 elementi sono {a, b}, {a, c}, {b, c}: in tutto C(3,2) = 3. L'opzione B conta le coppie ordinate, ma in un insieme l'ordine non conta ({a, b} = {b, a}); C è il numero di tutti i sottoinsiemi (2³); E confonde con un altro conteggio.",
+  "semplice": "Scegli 2 lettere su 3: ab, ac, bc. Non contare 'ba' perché è lo stesso insieme di 'ab'. Sono 3.",
+  "passaggi": [
+   "1. Sottoinsiemi di 2 elementi: {a, b}, {a, c}, {b, c}",
+   "2. C(3,2) = 3",
+   "3. L'ordine non conta"
+  ],
+  "concetto": "sottoinsiemi di cardinalità data"
+ },
+ {
+  "id": "LOG-128",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Se l'insieme A ha 3 elementi e l'insieme B ha 4 elementi, quanti elementi ha il prodotto cartesiano A × B?",
+  "opzioni": {
+   "A": "7",
+   "B": "81",
+   "C": "64",
+   "D": "12",
+   "E": "1"
+  },
+  "giusta": "D",
+  "perche": "Il prodotto cartesiano A × B è formato da tutte le coppie ordinate (a, b) con a ∈ A e b ∈ B: sono 3 · 4 = 12. L'opzione A somma le cardinalità (sarebbe l'unione di insiemi disgiunti); B è 3⁴; C è 4³.",
+  "semplice": "Ogni elemento di A va accoppiato con ciascuno dei 4 elementi di B. Con 3 elementi in A si ottengono 3 × 4 = 12 coppie, come le caselle di una tabella con 3 righe e 4 colonne.",
+  "passaggi": [
+   "1. |A × B| = |A| · |B|",
+   "2. = 3 · 4",
+   "3. = 12"
+  ],
+  "concetto": "prodotto cartesiano"
+ },
+ {
+  "id": "LOG-129",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In una scuola di 100 studenti, 50 studiano inglese, 30 francese e 20 tedesco; 10 studiano inglese e francese, 8 inglese e tedesco, 6 francese e tedesco, e 3 studiano tutte e tre le lingue. Quanti studenti non studiano nessuna delle tre lingue?",
+  "opzioni": {
+   "A": "0",
+   "B": "21",
+   "C": "24",
+   "D": "3",
+   "E": "79"
+  },
+  "giusta": "B",
+  "perche": "Per il principio di inclusione-esclusione con tre insiemi: |I ∪ F ∪ T| = 50 + 30 + 20 − 10 − 8 − 6 + 3 = 79. Quelli che non studiano nessuna lingua sono 100 − 79 = 21. L'opzione C dimentica di aggiungere i 3 dell'intersezione tripla (100 − 76); E è il numero di chi studia almeno una lingua; A somma soltanto 50 + 30 + 20.",
+  "semplice": "Sommando 50 + 30 + 20 si contano due volte quelli con due lingue: si tolgono 10, 8 e 6. Ma così chi studia tutte e tre è stato tolto troppe volte: si riaggiunge 3. Risultato: 79 studenti con almeno una lingua, quindi 21 senza.",
+  "passaggi": [
+   "1. |I ∪ F ∪ T| = 50 + 30 + 20 − 10 − 8 − 6 + 3",
+   "2. = 79",
+   "3. Nessuna lingua = 100 − 79 = 21"
+  ],
+  "concetto": "inclusione-esclusione con tre insiemi"
+ },
+ {
+  "id": "LOG-130",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quale descrizione rappresenta correttamente, con un diagramma di Eulero-Venn, le relazioni tra gli insiemi «mammiferi», «cani» e «animali marini»?",
+  "opzioni": {
+   "A": "Tre cerchi concentrici: animali marini, mammiferi, cani",
+   "B": "Tre cerchi disgiunti",
+   "C": "Il cerchio dei cani interseca quello degli animali marini; i mammiferi sono esterni a entrambi",
+   "D": "Il cerchio dei mammiferi è interno a quello dei cani; gli animali marini sono disgiunti da entrambi",
+   "E": "Il cerchio dei cani è interno a quello dei mammiferi; il cerchio degli animali marini interseca quello dei mammiferi ma non quello dei cani"
+  },
+  "giusta": "E",
+  "perche": "Tutti i cani sono mammiferi (inclusione); alcuni mammiferi sono marini (balene, delfini), quindi c'è un'intersezione tra mammiferi e animali marini; nessun cane è un animale marino, quindi i cerchi di cani e animali marini sono disgiunti. L'opzione A implicherebbe che tutti i mammiferi siano marini; B ignora l'inclusione dei cani nei mammiferi; D inverte l'inclusione.",
+  "semplice": "Metti il cerchio dei cani dentro quello dei mammiferi. Poi disegna il cerchio degli animali marini in modo che tocchi i mammiferi (per i delfini e le balene) ma resti lontano dai cani.",
+  "passaggi": [
+   "1. Cani ⊂ Mammiferi",
+   "2. Mammiferi ∩ Marini ≠ ∅ (delfini, balene)",
+   "3. Cani ∩ Marini = ∅"
+  ],
+  "concetto": "diagrammi di Eulero-Venn"
+ },
+ {
+  "id": "LOG-131",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quale descrizione rappresenta correttamente le relazioni tra gli insiemi «europei», «italiani» e «abitanti di Roma» (intesi come cittadini italiani residenti a Roma)?",
+  "opzioni": {
+   "A": "Tre cerchi disgiunti",
+   "B": "Il cerchio degli italiani interseca quello degli europei, senza esservi contenuto",
+   "C": "Il cerchio degli europei è contenuto in quello degli italiani",
+   "D": "Tre cerchi uno dentro l'altro: abitanti di Roma dentro italiani, italiani dentro europei",
+   "E": "I cerchi di abitanti di Roma ed europei sono disgiunti"
+  },
+  "giusta": "D",
+  "perche": "Ogni cittadino italiano residente a Roma è italiano, e ogni italiano è europeo: gli insiemi sono annidati (inclusioni successive). L'opzione C inverte l'inclusione; B supporrebbe italiani non europei; A ignora ogni inclusione; E contraddice il fatto che chi abita a Roma è anche europeo.",
+  "semplice": "Pensa a tre scatole una dentro l'altra: la più piccola sono i romani, poi gli italiani, poi la più grande gli europei. Chi sta nella scatola più piccola sta automaticamente anche nelle altre.",
+  "passaggi": [
+   "1. Romani ⊂ Italiani",
+   "2. Italiani ⊂ Europei",
+   "3. Cerchi concentrici (annidati)"
+  ],
+  "concetto": "inclusioni successive"
+ },
+ {
+  "id": "LOG-132",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quale descrizione rappresenta correttamente le relazioni tra gli insiemi «medici», «chirurghi» e «donne»?",
+  "opzioni": {
+   "A": "Tre cerchi disgiunti",
+   "B": "Il cerchio dei medici è interno a quello dei chirurghi; le donne sono disgiunte da entrambi",
+   "C": "Il cerchio delle donne è interno a quello dei chirurghi",
+   "D": "Tre cerchi concentrici: donne, medici, chirurghi",
+   "E": "Il cerchio dei chirurghi è interno a quello dei medici; il cerchio delle donne interseca sia quello dei medici sia quello dei chirurghi"
+  },
+  "giusta": "E",
+  "perche": "Tutti i chirurghi sono medici (inclusione); esistono donne medico e donne chirurgo, ma anche donne che non sono medici e medici che non sono donne: il cerchio delle donne interseca entrambi senza contenerli né esservi contenuto. L'opzione B inverte l'inclusione; C implicherebbe che tutte le donne siano chirurghi; D implicherebbe che tutti i medici siano donne.",
+  "semplice": "Metti i chirurghi dentro i medici. Poi il cerchio delle donne deve 'tagliare' entrambi: ci sono donne chirurgo, donne medico non chirurgo e donne che fanno altri lavori.",
+  "passaggi": [
+   "1. Chirurghi ⊂ Medici",
+   "2. Donne ∩ Chirurghi ≠ ∅ e Donne ⊄ Medici",
+   "3. Donne interseca entrambi i cerchi"
+  ],
+  "concetto": "diagrammi con intersezioni parziali"
+ },
+ {
+  "id": "LOG-133",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Siano A l'insieme dei numeri pari compresi tra 1 e 20 (estremi inclusi) e B l'insieme dei multipli di 3 compresi tra 1 e 20. Quanti elementi ha A ∪ B?",
+  "opzioni": {
+   "A": "16",
+   "B": "13",
+   "C": "10",
+   "D": "3",
+   "E": "7"
+  },
+  "giusta": "B",
+  "perche": "A = {2, 4, …, 20} ha 10 elementi; B = {3, 6, 9, 12, 15, 18} ne ha 6; A ∩ B = {6, 12, 18} ne ha 3. Quindi |A ∪ B| = 10 + 6 − 3 = 13. L'opzione A non toglie i multipli di 6 contati due volte; C è la cardinalità di A; D è quella dell'intersezione; E è il numero dei pari che non sono multipli di 3.",
+  "semplice": "I pari tra 1 e 20 sono 10, i multipli di 3 sono 6. Ma 6, 12 e 18 sono in entrambe le liste: li togli una volta. 10 + 6 − 3 = 13.",
+  "passaggi": [
+   "1. |A| = 10; |B| = 6",
+   "2. A ∩ B = multipli di 6 = {6, 12, 18} ⇒ 3",
+   "3. |A ∪ B| = 10 + 6 − 3 = 13"
+  ],
+  "concetto": "unione di insiemi numerici"
+ },
+ {
+  "id": "LOG-134",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Nell'universo U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, sia A = {2, 4, 6, 8, 10}. Il complementare di A rispetto a U è:",
+  "opzioni": {
+   "A": "{2, 4, 6, 8, 10}",
+   "B": "∅",
+   "C": "{1, 3, 5, 7, 9}",
+   "D": "{1, 2, 3, 4, 5}",
+   "E": "{1, 3, 5, 7, 9, 10}"
+  },
+  "giusta": "C",
+  "perche": "Il complementare di A contiene gli elementi di U che non appartengono ad A, cioè i numeri dispari da 1 a 9. L'opzione A è A stesso; B è il complementare di U; D è la prima metà di U; E include erroneamente il 10.",
+  "semplice": "Parti dall'universo, i numeri da 1 a 10, e togli quelli di A, cioè i pari. Restano i dispari: 1, 3, 5, 7, 9.",
+  "passaggi": [
+   "1. U = {1, …, 10}",
+   "2. Ā = U \\ A",
+   "3. Ā = {1, 3, 5, 7, 9}"
+  ],
+  "concetto": "insieme complementare"
+ },
+ {
+  "id": "LOG-135",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Se A ⊆ B, allora l'unione A ∪ B è uguale a:",
+  "opzioni": {
+   "A": "B",
+   "B": "A",
+   "C": "∅",
+   "D": "A ∩ B",
+   "E": "B \\ A"
+  },
+  "giusta": "A",
+  "perche": "Se ogni elemento di A appartiene già a B, unire A a B non aggiunge nulla: A ∪ B = B. L'opzione B è il risultato dell'intersezione (A ∩ B = A quando A ⊆ B); D è uguale ad A e ha lo stesso errore; E toglie gli elementi di A invece di aggiungerli.",
+  "semplice": "Se A è una scatola dentro la scatola B, metterle insieme dà semplicemente la scatola grande B. Invece la parte in comune è la scatola piccola A.",
+  "passaggi": [
+   "1. A ⊆ B ⇒ ogni elemento di A è in B",
+   "2. A ∪ B non aggiunge elementi a B",
+   "3. A ∪ B = B (mentre A ∩ B = A)"
+  ],
+  "concetto": "unione e inclusione"
+ },
+ {
+  "id": "LOG-136",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Per le leggi di De Morgan, il complementare dell'unione di due insiemi A e B è uguale a:",
+  "opzioni": {
+   "A": "l'intersezione dei complementari di A e di B",
+   "B": "l'unione dei complementari di A e di B",
+   "C": "l'intersezione di A e B",
+   "D": "il complementare dell'intersezione di A e B",
+   "E": "l'insieme vuoto"
+  },
+  "giusta": "A",
+  "perche": "La legge di De Morgan afferma che il complementare di (A ∪ B) è uguale al complementare di A intersecato il complementare di B: un elemento non sta nell'unione se e solo se non sta né in A né in B. L'opzione B è la formula per il complementare dell'intersezione; D equivale alla stessa formula; C non ha relazione con il complementare.",
+  "semplice": "Essere fuori da «A oppure B» significa essere fuori da A e anche fuori da B. Per esempio, chi non parla «inglese o francese» non parla l'inglese e non parla il francese.",
+  "passaggi": [
+   "1. x ∉ A ∪ B ⇔ x ∉ A e x ∉ B",
+   "2. ⇔ x ∈ Ā e x ∈ B̄",
+   "3. complementare di (A ∪ B) = Ā ∩ B̄"
+  ],
+  "concetto": "leggi di De Morgan per gli insiemi"
+ },
+ {
+  "id": "LOG-137",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In un gruppo di persone, il 70% beve caffè e il 60% beve tè. Qual è la percentuale minima di persone che bevono sia caffè sia tè?",
+  "opzioni": {
+   "A": "10%",
+   "B": "0%",
+   "C": "60%",
+   "D": "42%",
+   "E": "30%"
+  },
+  "giusta": "E",
+  "perche": "Le due percentuali sommano 130%, ma il totale delle persone è 100%: almeno il 30% deve essere contato in entrambi i gruppi. Formalmente |C ∩ T| ≥ |C| + |T| − 100% = 30%. L'opzione B ignora che la somma supera il 100%; C è il valore massimo possibile; D è il prodotto 0,7 · 0,6, valido solo se le abitudini fossero indipendenti; A è la differenza tra le percentuali.",
+  "semplice": "Se il 70% beve caffè, solo il 30% non lo beve. Anche se tutti questi bevessero tè, servirebbe un altro 30% di bevitori di tè per arrivare al 60%: questi devono essere tra chi beve caffè.",
+  "passaggi": [
+   "1. |C| + |T| = 70% + 60% = 130%",
+   "2. |C ∪ T| ≤ 100%",
+   "3. |C ∩ T| = |C| + |T| − |C ∪ T| ≥ 130% − 100% = 30%"
+  ],
+  "concetto": "sovrapposizione minima"
+ },
+ {
+  "id": "LOG-138",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Su 50 persone, 45 parlano inglese e 30 parlano spagnolo. Qual è il numero massimo di persone che parlano solo inglese (e non spagnolo)?",
+  "opzioni": {
+   "A": "45",
+   "B": "15",
+   "C": "20",
+   "D": "30",
+   "E": "25"
+  },
+  "giusta": "C",
+  "perche": "Chi parla solo inglese = 45 − (chi parla entrambe). Il numero minimo di chi parla entrambe è 45 + 30 − 50 = 25, quindi il massimo di chi parla solo inglese è 45 − 25 = 20. L'opzione A ignora che tutti i 30 ispanofoni devono stare da qualche parte nel gruppo; E è il minimo di chi parla entrambe le lingue; B è 45 − 30; D è il numero di chi parla spagnolo.",
+  "semplice": "Per avere più persone possibile che parlano solo inglese, la sovrapposizione deve essere la più piccola possibile. Ma 45 + 30 = 75 supera 50: almeno 25 persone parlano entrambe le lingue. Quindi al massimo 45 − 25 = 20 parlano solo inglese.",
+  "passaggi": [
+   "1. Sovrapposizione minima = 45 + 30 − 50 = 25",
+   "2. Solo inglese = 45 − sovrapposizione",
+   "3. Massimo = 45 − 25 = 20"
+  ],
+  "concetto": "massimi e minimi nelle intersezioni"
+ },
+ {
+  "id": "LOG-139",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Gli insiemi A e B hanno rispettivamente 12 e 8 elementi, e la loro unione ha 15 elementi. Quanti elementi ha A ∩ B?",
+  "opzioni": {
+   "A": "20",
+   "B": "4",
+   "C": "3",
+   "D": "5",
+   "E": "7"
+  },
+  "giusta": "D",
+  "perche": "Dalla formula |A ∪ B| = |A| + |B| − |A ∩ B| si ricava |A ∩ B| = 12 + 8 − 15 = 5. L'opzione A somma le cardinalità; B è la differenza 12 − 8; C è 15 − 12; E è 15 − 8.",
+  "semplice": "Se A e B fossero separati, l'unione avrebbe 12 + 8 = 20 elementi. Ne ha solo 15: vuol dire che 5 elementi sono stati contati due volte, cioè stanno in entrambi.",
+  "passaggi": [
+   "1. |A ∪ B| = |A| + |B| − |A ∩ B|",
+   "2. 15 = 12 + 8 − |A ∩ B|",
+   "3. |A ∩ B| = 5"
+  ],
+  "concetto": "cardinalità dell'intersezione"
+ },
+ {
+  "id": "LOG-140",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quanti sono i sottoinsiemi non vuoti dell'insieme {1, 2, 3}?",
+  "opzioni": {
+   "A": "8",
+   "B": "7",
+   "C": "6",
+   "D": "3",
+   "E": "9"
+  },
+  "giusta": "B",
+  "perche": "L'insieme ha 2³ = 8 sottoinsiemi in tutto; escludendo l'insieme vuoto ne restano 7: i tre singoletti (con 1, con 2, con 3), le tre coppie {1, 2}, {1, 3}, {2, 3} e l'insieme {1, 2, 3}. L'opzione A include il vuoto; C esclude anche l'insieme stesso (sottoinsiemi propri non vuoti); D conta solo i singoletti; E è 3².",
+  "semplice": "Elencali: tre con un elemento, tre con due elementi, uno con tutti e tre. In totale 7. Se contassi anche l'insieme vuoto sarebbero 8.",
+  "passaggi": [
+   "1. Sottoinsiemi totali = 2³ = 8",
+   "2. Si esclude ∅",
+   "3. 8 − 1 = 7"
+  ],
+  "concetto": "sottoinsiemi non vuoti"
+ },
+ {
+  "id": "LOG-141",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In un gruppo di 60 ragazzi, 30 praticano nuoto, 25 corsa e 20 bicicletta; 10 praticano nuoto e corsa, 8 nuoto e bicicletta, 7 corsa e bicicletta, e 4 praticano tutti e tre gli sport. Quanti ragazzi praticano esattamente due sport?",
+  "opzioni": {
+   "A": "25",
+   "B": "21",
+   "C": "4",
+   "D": "13",
+   "E": "17"
+  },
+  "giusta": "D",
+  "perche": "I numeri 10, 8 e 7 includono anche i 4 ragazzi che fanno tutti e tre gli sport. Chi ne fa esattamente due: (10 − 4) + (8 − 4) + (7 − 4) = 6 + 4 + 3 = 13. L'opzione A somma le intersezioni a coppie senza togliere i 4; B toglie i 4 una volta sola (25 − 4); C è il numero di chi fa tutti e tre gli sport; E aggiunge i 4 al risultato.",
+  "semplice": "In un diagramma con tre cerchi, la zona centrale (tutti e tre gli sport) contiene 4 ragazzi. Ogni zona 'a due' contiene il numero della coppia meno quei 4: 6, 4 e 3. Sommati fanno 13.",
+  "passaggi": [
+   "1. Solo nuoto e corsa: 10 − 4 = 6",
+   "2. Solo nuoto e bici: 8 − 4 = 4; solo corsa e bici: 7 − 4 = 3",
+   "3. Esattamente due sport: 6 + 4 + 3 = 13"
+  ],
+  "concetto": "regioni di un diagramma a tre insiemi"
+ },
+ {
+  "id": "LOG-142",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In un gruppo di 60 ragazzi, 30 praticano nuoto, 25 corsa e 20 bicicletta; 10 praticano nuoto e corsa, 8 nuoto e bicicletta, 7 corsa e bicicletta, e 4 praticano tutti e tre gli sport. Quanti ragazzi praticano solo nuoto?",
+  "opzioni": {
+   "A": "30",
+   "B": "16",
+   "C": "12",
+   "D": "20",
+   "E": "8"
+  },
+  "giusta": "B",
+  "perche": "Dai 30 nuotatori si tolgono quelli che fanno anche corsa (10) e anche bicicletta (8); così però i 4 che fanno tutti e tre sono stati tolti due volte e vanno riaggiunti una volta: 30 − 10 − 8 + 4 = 16. L'opzione A è il totale dei nuotatori; C dimentica di riaggiungere i 4; D toglie solo 10; E toglie anche i 4 in più.",
+  "semplice": "Nel cerchio del nuoto la zona centrale ha 4 ragazzi, la zona nuoto-corsa (senza bici) 6 e la zona nuoto-bici (senza corsa) 4. Restano per il solo nuoto 30 − 4 − 6 − 4 = 16.",
+  "passaggi": [
+   "1. Nuoto e corsa, non bici: 10 − 4 = 6; nuoto e bici, non corsa: 8 − 4 = 4",
+   "2. Tutti e tre: 4",
+   "3. Solo nuoto = 30 − 6 − 4 − 4 = 16"
+  ],
+  "concetto": "regioni di un diagramma a tre insiemi"
+ },
+ {
+  "id": "LOG-143",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Considerando gli insiemi «numeri primi», «numeri pari» e «multipli di 4» (tutti tra gli interi positivi), quale affermazione è corretta?",
+  "opzioni": {
+   "A": "Primi e pari hanno in comune un solo elemento, mentre primi e multipli di 4 sono disgiunti",
+   "B": "I multipli di 4 contengono i numeri pari",
+   "C": "Primi e pari sono insiemi disgiunti",
+   "D": "I multipli di 4 e i numeri primi hanno in comune il 2",
+   "E": "I numeri pari sono contenuti nei numeri primi"
+  },
+  "giusta": "A",
+  "perche": "L'unico numero primo pari è 2, quindi l'intersezione tra primi e pari contiene soltanto il numero 2. I multipli di 4 sono tutti pari (inclusione) e nessuno di essi è primo, perché divisibile per 2 e per 4: quindi sono disgiunti dai primi. L'opzione B inverte l'inclusione; C dimentica il 2; D è falsa perché 2 non è multiplo di 4.",
+  "semplice": "Il 2 è un caso speciale: è l'unico primo pari. I multipli di 4 (4, 8, 12…) sono tutti pari ma nessuno è primo, perché si possono dividere per 2. Quindi il cerchio dei multipli di 4 sta dentro quello dei pari e non tocca quello dei primi.",
+  "passaggi": [
+   "1. Primi ∩ Pari = insieme formato dal solo 2",
+   "2. Multipli di 4 ⊂ Pari",
+   "3. Multipli di 4 ∩ Primi = ∅"
+  ],
+  "concetto": "relazioni tra insiemi numerici"
+ },
+ {
+  "id": "LOG-144",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quale delle seguenti terne di categorie può essere rappresentata da tre insiemi disgiunti (senza elementi in comune)?",
+  "opzioni": {
+   "A": "Rettangoli, quadrati, rombi",
+   "B": "Numeri pari, multipli di 3, numeri primi",
+   "C": "Triangoli, quadrati, pentagoni",
+   "D": "Medici, donne, italiani",
+   "E": "Mammiferi, felini, gatti"
+  },
+  "giusta": "C",
+  "perche": "Un poligono ha un numero ben definito di lati, quindi non può essere contemporaneamente un triangolo, un quadrato e un pentagono: i tre insiemi sono disgiunti. Nell'opzione A i quadrati sono contenuti sia nei rettangoli sia nei rombi; in B il 6 è pari e multiplo di 3, il 2 è pari e primo; in D ci sono intersezioni (donne medico italiane); in E gli insiemi sono annidati.",
+  "semplice": "Chiediti se una cosa può appartenere a due gruppi contemporaneamente. Una figura con 3 lati non può averne anche 4: triangoli, quadrati e pentagoni sono gruppi separati. Invece un quadrato è anche un rettangolo e un rombo.",
+  "passaggi": [
+   "Insiemi disgiunti vuol dire che nessun elemento può stare in due insiemi contemporaneamente: per ogni opzione cerca un elemento comune.",
+   "A: un quadrato è anche un rettangolo e un rombo, quindi gli insiemi si sovrappongono.",
+   "B: il 6 è pari e multiplo di 3, il 2 è pari e primo: ci sono intersezioni.",
+   "D: una donna italiana può essere medico; E: i gatti sono felini e i felini mammiferi (insiemi uno dentro l'altro).",
+   "C: un poligono ha un numero preciso di lati (3, 4 o 5), quindi triangoli, quadrati e pentagoni non hanno elementi in comune: la risposta è C."
+  ],
+  "concetto": "insiemi disgiunti"
+ },
+ {
+  "id": "LOG-145",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quale delle seguenti terne di categorie è rappresentata da tre insiemi ciascuno contenuto nel successivo (dal più piccolo al più grande)?",
+  "opzioni": {
+   "A": "Studenti, sportivi, musicisti",
+   "B": "Frutta, verdura, cereali",
+   "C": "Pediatri, medici, infermieri",
+   "D": "Numeri primi, numeri dispari, numeri pari",
+   "E": "Rettili, vertebrati, animali"
+  },
+  "giusta": "E",
+  "perche": "Ogni rettile è un vertebrato e ogni vertebrato è un animale: rettili ⊂ vertebrati ⊂ animali. L'opzione A descrive insiemi che si intersecano parzialmente; B tre insiemi (sostanzialmente) disgiunti; in C i pediatri sono contenuti nei medici, ma i medici non sono contenuti negli infermieri; in D il 2 è primo ma non dispari, e pari e dispari sono disgiunti.",
+  "semplice": "Cerca le 'scatole cinesi': una categoria dentro l'altra. Tutti i rettili sono vertebrati, e tutti i vertebrati sono animali. Nelle altre terne almeno un passaggio non funziona.",
+  "passaggi": [
+   "1. Rettili ⊂ Vertebrati",
+   "2. Vertebrati ⊂ Animali",
+   "3. Inclusioni successive"
+  ],
+  "concetto": "insiemi annidati"
+ },
+ {
+  "id": "LOG-146",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Siano A = {1, 2} e B = {a, b, c}. Quale delle seguenti coppie NON appartiene al prodotto cartesiano A × B?",
+  "opzioni": {
+   "A": "(1, a)",
+   "B": "(a, 1)",
+   "C": "(2, c)",
+   "D": "(1, b)",
+   "E": "(2, a)"
+  },
+  "giusta": "B",
+  "perche": "A × B è l'insieme delle coppie ordinate (x, y) con x ∈ A e y ∈ B: il primo elemento deve essere 1 o 2, il secondo una lettera. La coppia (a, 1) ha l'ordine invertito e appartiene a B × A, non ad A × B. Le opzioni A, C, D e E rispettano l'ordine richiesto.",
+  "semplice": "Nel prodotto cartesiano l'ordine conta: prima un elemento di A (un numero), poi uno di B (una lettera). (a, 1) comincia con una lettera, quindi non va bene.",
+  "passaggi": [
+   "1. A × B = {(x, y) : x ∈ A, y ∈ B}",
+   "2. Primo elemento: 1 o 2; secondo: a, b o c",
+   "3. (a, 1) ∉ A × B (sta in B × A)"
+  ],
+  "concetto": "coppie ordinate"
+ },
+ {
+  "id": "LOG-147",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Siano A = {x ∈ ℕ | x < 6} e B = {x ∈ ℕ | x è dispari}, dove ℕ = {0, 1, 2, 3, …}. L'insieme A ∩ B è:",
+  "opzioni": {
+   "A": "{0, 1, 2, 3, 4, 5}",
+   "B": "{1, 3, 5, 7}",
+   "C": "{1, 3, 5}",
+   "D": "{0, 2, 4}",
+   "E": "{1, 3}"
+  },
+  "giusta": "C",
+  "perche": "A = {0, 1, 2, 3, 4, 5}; gli elementi di A che sono dispari sono 1, 3, 5. L'opzione A è A stesso; B include il 7, che non è minore di 6; D sono i pari di A, cioè A \\ B; E dimentica il 5.",
+  "semplice": "Prendi i numeri naturali più piccoli di 6, da 0 a 5, e tieni solo i dispari: 1, 3, 5.",
+  "passaggi": [
+   "1. A = {0, 1, 2, 3, 4, 5}",
+   "2. Dispari in A: 1, 3, 5",
+   "3. A ∩ B = {1, 3, 5}"
+  ],
+  "concetto": "insiemi definiti per proprietà"
+ },
+ {
+  "id": "LOG-148",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Dati A = {1, 2, 3, 4} e B = {3, 4, 5, 6}, la differenza simmetrica A Δ B (elementi che appartengono a uno solo dei due insiemi) è:",
+  "opzioni": {
+   "A": "{3, 4}",
+   "B": "{1, 2, 3, 4, 5, 6}",
+   "C": "{1, 2}",
+   "D": "{5, 6}",
+   "E": "{1, 2, 5, 6}"
+  },
+  "giusta": "E",
+  "perche": "A Δ B = (A \\ B) ∪ (B \\ A) = {1, 2} ∪ {5, 6} = {1, 2, 5, 6}: equivale all'unione meno l'intersezione. L'opzione A è l'intersezione; B è l'unione; C è solo A \\ B; D è solo B \\ A.",
+  "semplice": "Tieni gli elementi che stanno in un insieme ma non nell'altro. 3 e 4 sono in comune: scartali. Restano 1, 2 (solo in A) e 5, 6 (solo in B).",
+  "passaggi": [
+   "1. A \\ B = {1, 2}",
+   "2. B \\ A = {5, 6}",
+   "3. A Δ B = {1, 2, 5, 6}"
+  ],
+  "concetto": "differenza simmetrica"
+ },
+ {
+  "id": "LOG-149",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In un'azienda l'80% dei dipendenti ha la patente dell'auto, il 30% quella della moto e il 20% le ha entrambe. Quale percentuale di dipendenti non ha nessuna delle due patenti?",
+  "opzioni": {
+   "A": "10%",
+   "B": "0%",
+   "C": "30%",
+   "D": "90%",
+   "E": "20%"
+  },
+  "giusta": "A",
+  "perche": "La percentuale di chi ha almeno una patente è 80% + 30% − 20% = 90%; chi non ne ha nessuna è il 100% − 90% = 10%. L'opzione B somma 80 + 30 > 100 e conclude che tutti hanno una patente; E è la percentuale di chi ne ha almeno una; C e D confondono i dati.",
+  "semplice": "Somma chi ha la patente auto e chi ha quella moto: 110%. Ma chi le ha entrambe (20%) è contato due volte: 110 − 20 = 90%. Il resto, il 10%, non ha patenti.",
+  "passaggi": [
+   "1. |Auto ∪ Moto| = 80% + 30% − 20% = 90%",
+   "2. Nessuna patente = 100% − 90%",
+   "3. = 10%"
+  ],
+  "concetto": "inclusione-esclusione con percentuali"
+ },
+ {
+  "id": "LOG-150",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In un condominio di 40 famiglie, 25 hanno un cane, 18 hanno un gatto e 6 non hanno né cani né gatti. Quante famiglie hanno sia un cane sia un gatto?",
+  "opzioni": {
+   "A": "3",
+   "B": "7",
+   "C": "12",
+   "D": "9",
+   "E": "15"
+  },
+  "giusta": "D",
+  "perche": "Le famiglie con almeno un animale sono 40 − 6 = 34. Da |C ∪ G| = |C| + |G| − |C ∩ G| si ottiene |C ∩ G| = 25 + 18 − 34 = 9. Le opzioni A e B derivano da errori nel conteggio delle famiglie senza animali; C e E non tengono conto che le famiglie con almeno un animale sono 34 (per esempio 15 = 40 − 25).",
+  "semplice": "Le famiglie con almeno un animale sono 34. Se sommi chi ha il cane (25) e chi ha il gatto (18) ottieni 43: le 9 in più sono quelle contate due volte, cioè con entrambi gli animali.",
+  "passaggi": [
+   "1. |C ∪ G| = 40 − 6 = 34",
+   "2. |C ∩ G| = |C| + |G| − |C ∪ G|",
+   "3. = 25 + 18 − 34 = 9"
+  ],
+  "concetto": "intersezione da dati di unione"
+ },
+ {
+  "id": "LOG-151",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Quale dei seguenti insiemi è vuoto? (ℕ indica i numeri naturali, ℤ gli interi, ℝ i reali)",
+  "opzioni": {
+   "A": "{x ∈ ℕ | x < 0}",
+   "B": "{x ∈ ℤ | x² = 4}",
+   "C": "{x ∈ ℕ | x è pari e primo}",
+   "D": "{x ∈ ℝ | x² = 2}",
+   "E": "{x ∈ ℕ | x < 1}"
+  },
+  "giusta": "A",
+  "perche": "Nessun numero naturale è negativo, quindi {x ∈ ℕ | x < 0} = ∅. Gli altri insiemi non sono vuoti: B contiene −2 e 2; C contiene il 2; D contiene −√2 e √2; E contiene lo 0, ed è la trappola di chi dimentica che lo zero è un numero naturale (o che un insieme con un solo elemento non è vuoto).",
+  "semplice": "Un insieme è vuoto se nessun elemento soddisfa la condizione. Nei naturali (0, 1, 2, …) non c'è nessun numero minore di zero. Negli altri casi c'è almeno un numero che va bene: per esempio 2 è pari e primo.",
+  "passaggi": [
+   "1. ℕ = {0, 1, 2, …}: nessun elemento è < 0",
+   "2. Gli altri insiemi contengono almeno un elemento (±2; 2; ±√2; 0)",
+   "3. Unico insieme vuoto: {x ∈ ℕ | x < 0}"
+  ],
+  "concetto": "insieme vuoto"
+ },
+ {
+  "id": "LOG-152",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "L'insieme delle parti di un insieme A (cioè l'insieme di tutti i suoi sottoinsiemi) ha 64 elementi. Quanti elementi ha A?",
+  "opzioni": {
+   "A": "8",
+   "B": "32",
+   "C": "5",
+   "D": "6",
+   "E": "7"
+  },
+  "giusta": "D",
+  "perche": "Un insieme con n elementi ha 2ⁿ sottoinsiemi: 2ⁿ = 64 ⇒ n = 6. L'opzione A è √64, errore di chi pensa a n²; B è 64/2; C e E sbagliano l'esponente di una unità.",
+  "semplice": "Ogni elemento in più raddoppia il numero di sottoinsiemi: 1 elemento → 2, 2 → 4, 3 → 8, 4 → 16, 5 → 32, 6 → 64. Quindi A ha 6 elementi.",
+  "passaggi": [
+   "1. |P(A)| = 2ⁿ",
+   "2. 2ⁿ = 64 = 2⁶",
+   "3. n = 6"
+  ],
+  "concetto": "cardinalità dell'insieme delle parti"
+ },
+ {
+  "id": "LOG-153",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "L'insieme A è contenuto nell'insieme B; A ha 7 elementi e B ne ha 12. Quanti elementi ha B \\ A?",
+  "opzioni": {
+   "A": "7",
+   "B": "12",
+   "C": "5",
+   "D": "19",
+   "E": "0"
+  },
+  "giusta": "C",
+  "perche": "Poiché A ⊆ B, tutti i 7 elementi di A sono in B: togliendoli, restano 12 − 7 = 5 elementi. L'opzione A è la cardinalità di A; B quella di B; D somma le cardinalità; E è la cardinalità di A \\ B, che è vuoto proprio perché A ⊆ B.",
+  "semplice": "A è una scatola piccola dentro una scatola più grande B. Se togli da B tutto ciò che sta in A, restano 12 − 7 = 5 elementi.",
+  "passaggi": [
+   "1. A ⊆ B ⇒ A ∩ B = A, con 7 elementi",
+   "2. |B \\ A| = |B| − |A|",
+   "3. = 12 − 7 = 5"
+  ],
+  "concetto": "differenza e inclusione"
+ },
+ {
+  "id": "LOG-154",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Le premesse «Tutti gli X sono Y» e «Nessun Y è Z» sono rappresentate correttamente dal diagramma in cui:",
+  "opzioni": {
+   "A": "il cerchio Y è interno al cerchio X, e Z interseca X",
+   "B": "il cerchio X è interno al cerchio Y, e il cerchio Z è esterno a Y",
+   "C": "i cerchi X e Z si intersecano, entrambi interni a Y",
+   "D": "il cerchio X interseca Y, e Z è interno a Y",
+   "E": "i tre cerchi si intersecano tutti a due a due"
+  },
+  "giusta": "B",
+  "perche": "«Tutti gli X sono Y» significa X ⊆ Y (X dentro Y); «Nessun Y è Z» significa che Y e Z sono disgiunti. Di conseguenza anche X e Z sono disgiunti. L'opzione A inverte la prima inclusione; C e D mettono Z (o parte di Z) dentro Y, contro la seconda premessa; E non rappresenta nessuna inclusione.",
+  "semplice": "Metti il cerchio X dentro il cerchio Y. Poi disegna Z da un'altra parte, senza toccare Y. Automaticamente Z non tocca neanche X.",
+  "passaggi": [
+   "1. «Tutti gli X sono Y» ⇒ X ⊆ Y",
+   "2. «Nessun Y è Z» ⇒ Y ∩ Z = ∅",
+   "3. X dentro Y; Z fuori da Y"
+  ],
+  "concetto": "dalle premesse al diagramma"
+ },
+ {
+  "id": "LOG-155",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Le premesse «Alcuni A sono B» e «Tutti i B sono C» sono rappresentate correttamente dal diagramma in cui:",
+  "opzioni": {
+   "A": "il cerchio C è interno a B, e A è esterno a B",
+   "B": "il cerchio A è interno a B, e B è esterno a C",
+   "C": "i tre cerchi sono disgiunti",
+   "D": "il cerchio B è interno ad A, e C è esterno ad A",
+   "E": "il cerchio B è interno al cerchio C, e il cerchio A interseca B"
+  },
+  "giusta": "E",
+  "perche": "«Tutti i B sono C» significa B ⊆ C; «Alcuni A sono B» significa che A e B hanno almeno un elemento in comune, quindi i loro cerchi si intersecano. Ne segue che A interseca anche C. L'opzione A inverte l'inclusione e separa A da B; B contraddice la seconda premessa; C le contraddice entrambe; D separa C da B, che invece vi è contenuto.",
+  "semplice": "Disegna B dentro C. Poi disegna A in modo che tocchi almeno in parte B. Così alcuni A stanno in B, e quindi anche in C.",
+  "passaggi": [
+   "1. «Tutti i B sono C» ⇒ B ⊆ C",
+   "2. «Alcuni A sono B» ⇒ A ∩ B ≠ ∅",
+   "3. B dentro C; A interseca B (e quindi C)"
+  ],
+  "concetto": "dalle premesse al diagramma"
+ },
+ {
+  "id": "LOG-156",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In una scuola di 120 studenti, 70 frequentano il laboratorio di teatro, 50 quello di musica e 30 frequentano entrambi. Quanti studenti frequentano esattamente un laboratorio?",
+  "opzioni": {
+   "A": "90",
+   "B": "60",
+   "C": "120",
+   "D": "30",
+   "E": "20"
+  },
+  "giusta": "B",
+  "perche": "Solo teatro: 70 − 30 = 40; solo musica: 50 − 30 = 20; esattamente un laboratorio: 40 + 20 = 60. L'opzione A è il numero di chi frequenta almeno un laboratorio (70 + 50 − 30); C somma 70 + 50; D è il numero di chi li frequenta entrambi; E è il numero di chi frequenta solo musica.",
+  "semplice": "Nel diagramma di Venn la parte comune ha 30 studenti. La parte solo teatro ha 40, quella solo musica 20. Esattamente un laboratorio vuol dire una delle due parti 'esterne': 40 + 20 = 60.",
+  "passaggi": [
+   "1. Solo teatro = 70 − 30 = 40",
+   "2. Solo musica = 50 − 30 = 20",
+   "3. Esattamente uno = 40 + 20 = 60"
+  ],
+  "concetto": "regioni esclusive"
+ },
+ {
+  "id": "LOG-157",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Dati gli intervalli di numeri reali A = [2; 7) e B = (5; 10], l'intersezione A ∩ B è:",
+  "opzioni": {
+   "A": "[5; 7]",
+   "B": "(2; 10]",
+   "C": "(5; 7)",
+   "D": "[2; 5]",
+   "E": "(5; 7]"
+  },
+  "giusta": "C",
+  "perche": "L'intersezione contiene i numeri che stanno in entrambi gli intervalli: devono essere maggiori di 5 (estremo escluso in B) e minori di 7 (estremo escluso in A), quindi (5; 7). L'opzione A include erroneamente 5 e 7; B è l'unione A ∪ B; D è la differenza A \\ B; E include il 7, che non appartiene ad A.",
+  "semplice": "Disegna i due intervalli su una retta: A va da 2 (compreso) a 7 (escluso), B da 5 (escluso) a 10 (compreso). La parte in cui si sovrappongono va da 5 a 7, con entrambi gli estremi esclusi.",
+  "passaggi": [
+   "1. A: 2 ≤ x < 7; B: 5 < x ≤ 10",
+   "2. Entrambe: 5 < x < 7",
+   "3. A ∩ B = (5; 7)"
+  ],
+  "concetto": "intersezione di intervalli"
+ },
+ {
+  "id": "LOG-158",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "Ricordando che ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ, quale delle seguenti affermazioni è FALSA?",
+  "opzioni": {
+   "A": "Ogni numero naturale è un numero intero",
+   "B": "√2 è un numero reale ma non razionale",
+   "C": "−3 è un numero intero ma non naturale",
+   "D": "Ogni numero razionale è un numero intero",
+   "E": "0,5 è un numero razionale"
+  },
+  "giusta": "D",
+  "perche": "L'inclusione ℤ ⊂ ℚ dice che ogni intero è razionale, non il contrario: 0,5 = 1/2 è razionale ma non intero. Le altre affermazioni sono vere: A segue da ℕ ⊂ ℤ; B perché √2 è irrazionale; C perché i naturali non comprendono i negativi; E perché 0,5 = 1/2.",
+  "semplice": "Gli insiemi numerici sono come scatole una dentro l'altra: naturali dentro interi, interi dentro razionali, razionali dentro reali. Si può andare 'verso l'esterno', non verso l'interno: un razionale come 1/2 non è un intero.",
+  "passaggi": [
+   "1. ℤ ⊂ ℚ: ogni intero è razionale",
+   "2. Il viceversa è falso: 1/2 ∈ ℚ, 1/2 ∉ ℤ",
+   "3. L'affermazione falsa è «ogni razionale è intero»"
+  ],
+  "concetto": "insiemi numerici"
+ },
+ {
+  "id": "LOG-159",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In un gruppo di 10 studenti, 8 hanno letto il libro A, 7 il libro B e 9 il libro C. Qual è il numero minimo di studenti che hanno letto tutti e tre i libri?",
+  "opzioni": {
+   "A": "4",
+   "B": "0",
+   "C": "6",
+   "D": "7",
+   "E": "2"
+  },
+  "giusta": "A",
+  "perche": "Chi non ha letto A sono 2, chi non ha letto B 3, chi non ha letto C 1: in tutto al massimo 2 + 3 + 1 = 6 studenti 'mancano' almeno un libro. Quindi almeno 10 − 6 = 4 studenti hanno letto tutti e tre. L'opzione B ignora il vincolo del totale; C è il massimo numero di chi non li ha letti tutti; D è il minimo tra 8, 7 e 9, cioè il massimo possibile, non il minimo; E è un errore di calcolo.",
+  "semplice": "Conta chi 'manca' qualche libro: 2 non hanno letto A, 3 non hanno letto B, 1 non ha letto C. Anche se fossero tutte persone diverse, sarebbero solo 6. Gli altri 4 hanno letto per forza tutti i libri.",
+  "passaggi": [
+   "1. Non lettori: A → 2; B → 3; C → 1",
+   "2. Al massimo 2 + 3 + 1 = 6 studenti non hanno letto tutti i libri",
+   "3. Minimo con tutti e tre = 10 − 6 = 4"
+  ],
+  "concetto": "intersezione minima di tre insiemi"
+ },
+ {
+  "id": "LOG-160",
+  "materia": "Ragionamento logico",
+  "argomento": "Insiemi e diagrammi",
+  "livello": "test",
+  "domanda": "In un universo U di 50 elementi, l'insieme A ha 20 elementi, l'insieme B ne ha 25 e A ∩ B ne ha 10. Quanti elementi di U non appartengono né ad A né a B?",
+  "opzioni": {
+   "A": "5",
+   "B": "25",
+   "C": "35",
+   "D": "10",
+   "E": "15"
+  },
+  "giusta": "E",
+  "perche": "|A ∪ B| = 20 + 25 − 10 = 35, quindi gli elementi fuori da entrambi sono 50 − 35 = 15 (il complementare dell'unione). L'opzione A è 50 − 45, cioè dimentica di togliere l'intersezione; C è |A ∪ B|; B e D confondono i dati.",
+  "semplice": "Somma A e B: 45, ma 10 elementi sono contati due volte, quindi l'unione ne ha 35. Nell'universo di 50 ne restano fuori 15.",
+  "passaggi": [
+   "1. |A ∪ B| = 20 + 25 − 10 = 35",
+   "2. Complementare dell'unione = |U| − |A ∪ B|",
+   "3. = 50 − 35 = 15"
+  ],
+  "concetto": "complementare dell'unione"
+ }
+]

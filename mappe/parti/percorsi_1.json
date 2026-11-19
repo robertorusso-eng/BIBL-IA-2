@@ -1,0 +1,383 @@
+{
+  "sintesi proteica": {
+    "titolo": "Sintesi proteica: dal gene alla proteina in 12 passaggi",
+    "dove": "Nucleo (trascrizione e maturazione dell'mRNA) e citoplasma, sui ribosomi liberi o sul reticolo endoplasmatico ruvido (traduzione)",
+    "inizio": "gene (DNA)",
+    "intro": "Un gene è un tratto di DNA che contiene le istruzioni per costruire una proteina. Nel nucleo il gene viene copiato in RNA (trascrizione); l'RNA viene rifinito e mandato nel citoplasma come mRNA. Lì il ribosoma legge l'mRNA tre lettere alla volta (codoni) e unisce gli amminoacidi portati dai tRNA nell'ordine giusto (traduzione). Alla fine la catena si ripiega e diventa una proteina che funziona.",
+    "fasi": [
+      {"da": 1, "nome": "Trascrizione (nel nucleo)"},
+      {"da": 2, "nome": "Maturazione dell'mRNA (nel nucleo)"},
+      {"da": 5, "nome": "Uscita dal nucleo"},
+      {"da": 6, "nome": "Traduzione: inizio"},
+      {"da": 8, "nome": "Traduzione: allungamento (i passaggi 8-10 si ripetono per ogni amminoacido)"},
+      {"da": 11, "nome": "Traduzione: terminazione"},
+      {"da": 12, "nome": "Ripiegamento della proteina"}
+    ],
+    "passaggi": [
+      {
+        "da": ["gene (DNA)"],
+        "a": ["pre-mRNA"],
+        "enzima": "RNA polimerasi II",
+        "entra": ["ribonucleotidi (NTP)"],
+        "esce": ["pirofosfato (PPi)"],
+        "limitante": true,
+        "nota": "La RNA polimerasi II si lega al promotore del gene con i fattori di trascrizione, apre la doppia elica e legge il filamento stampo: costruisce l'RNA in direzione 5'→3', con U al posto di T. La quantità di trascrizione è il principale punto in cui la cellula decide quanta proteina fare."
+      },
+      {
+        "da": ["pre-mRNA"],
+        "a": ["pre-mRNA con cappuccio"],
+        "enzima": "enzimi del capping",
+        "entra": ["GTP", "S-adenosilmetionina (SAM)"],
+        "esce": ["pirofosfato (PPi)"],
+        "nota": "Quando l'RNA è lungo appena 20-30 nucleotidi, all'estremità 5' si aggiunge un «cappuccio» di 7-metilguanosina con un legame 5'-5'. Il cappuccio protegge l'mRNA dalla degradazione e servirà al ribosoma per riconoscerlo."
+      },
+      {
+        "da": ["pre-mRNA con cappuccio"],
+        "a": ["pre-mRNA con cappuccio e coda poli(A)"],
+        "enzima": "poli(A) polimerasi",
+        "entra": ["ATP"],
+        "esce": ["pirofosfato (PPi)"],
+        "nota": "L'RNA viene tagliato poco dopo il segnale AAUAAA e all'estremità 3' si aggiunge una coda di circa 200 adenine (poli(A)). La coda protegge l'mRNA e ne aiuta l'uscita dal nucleo e la traduzione."
+      },
+      {
+        "da": ["pre-mRNA con cappuccio e coda poli(A)"],
+        "a": ["mRNA maturo"],
+        "enzima": "spliceosoma",
+        "entra": [],
+        "esce": ["introni"],
+        "nota": "Lo splicing taglia via gli introni (parti che non codificano) e unisce gli esoni. Unendo gli esoni in modi diversi (splicing alternativo) un solo gene può dare più proteine. In realtà cappuccio, splicing e coda avvengono in gran parte mentre la trascrizione è ancora in corso."
+      },
+      {
+        "da": ["mRNA maturo"],
+        "a": ["mRNA nel citoplasma"],
+        "enzima": "complesso del poro nucleare",
+        "entra": [],
+        "esce": [],
+        "nota": "Solo l'mRNA maturo, accompagnato da proteine di trasporto, passa attraverso i pori dell'involucro nucleare. Gli RNA difettosi restano nel nucleo e vengono distrutti."
+      },
+      {
+        "da": ["mRNA nel citoplasma"],
+        "a": ["complesso di inizio"],
+        "enzima": "fattori di inizio (eIF)",
+        "entra": ["subunità minore del ribosoma (40S)", "tRNA iniziatore (Met-tRNAi)", "GTP"],
+        "esce": ["GDP"],
+        "nota": "La subunità minore, con il tRNA iniziatore che porta la metionina, si aggancia al cappuccio e scorre lungo l'mRNA finché trova il codone di inizio AUG. Riconosciuto l'AUG, il GTP legato al fattore eIF2 viene idrolizzato."
+      },
+      {
+        "da": ["complesso di inizio"],
+        "a": ["ribosoma completo (80S)"],
+        "enzima": "fattori di inizio (eIF)",
+        "entra": ["subunità maggiore del ribosoma (60S)", "GTP"],
+        "esce": ["GDP"],
+        "nota": "Arriva la subunità maggiore e il ribosoma è completo: il tRNA iniziatore si trova nel sito P, mentre il sito A è libero e pronto a ricevere il secondo amminoacido."
+      },
+      {
+        "da": ["ribosoma completo (80S)"],
+        "a": ["amminoacil-tRNA nel sito A"],
+        "enzima": "eEF1A (fattore di allungamento)",
+        "entra": ["amminoacil-tRNA", "GTP"],
+        "esce": ["GDP", "fosfato (Pi)"],
+        "nota": "Nel sito A entra il tRNA il cui anticodone si appaia al codone dell'mRNA. Se l'appaiamento è giusto il GTP viene idrolizzato e il tRNA resta; se è sbagliato, il tRNA se ne va (controllo di qualità)."
+      },
+      {
+        "da": ["amminoacil-tRNA nel sito A"],
+        "a": ["peptidil-tRNA nel sito A"],
+        "enzima": "peptidil transferasi (rRNA)",
+        "entra": [],
+        "esce": [],
+        "nota": "Si forma il legame peptidico: la catena già costruita passa dal tRNA del sito P all'amminoacido del tRNA nel sito A. A fare il lavoro è l'RNA ribosomiale della subunità maggiore (un ribozima), non una proteina."
+      },
+      {
+        "da": ["peptidil-tRNA nel sito A"],
+        "a": ["catena polipeptidica in crescita"],
+        "enzima": "eEF2 (traslocasi)",
+        "entra": ["GTP"],
+        "esce": ["GDP", "fosfato (Pi)", "tRNA scarico"],
+        "nota": "Il ribosoma avanza di un codone (3 nucleotidi): il tRNA con la catena passa nel sito P, quello vuoto passa nel sito E ed esce. Il sito A torna libero e il ciclo dei passaggi 8-10 ricomincia."
+      },
+      {
+        "da": ["catena polipeptidica in crescita"],
+        "a": ["catena polipeptidica liberata"],
+        "enzima": "fattori di rilascio (eRF1, eRF3)",
+        "entra": ["H₂O", "GTP"],
+        "esce": ["GDP"],
+        "irreversibile": true,
+        "nota": "Quando nel sito A arriva un codone di stop (UAA, UAG o UGA) non entra nessun tRNA ma il fattore di rilascio: il legame tra catena e tRNA viene idrolizzato, la proteina si stacca e il ribosoma si divide nelle due subunità."
+      },
+      {
+        "da": ["catena polipeptidica liberata"],
+        "a": ["proteina funzionante"],
+        "enzima": "chaperoni molecolari",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "nota": "La catena si ripiega nella sua forma tridimensionale (struttura secondaria, terziaria ed eventualmente quaternaria), aiutata dagli chaperoni. Spesso seguono modifiche (tagli, fosfati, zuccheri); le proteine ripiegate male vengono distrutte dal proteasoma."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "DNA → (trascrizione) → mRNA → (traduzione) → proteina",
+      "ogni amminoacido aggiunto costa 4 legami ad alta energia: 2 dall'ATP (attivazione sul tRNA, ATP → AMP + PPi) e 2 GTP (eEF1A ed eEF2)",
+      "un mRNA viene letto da più ribosomi insieme (poliribosoma)"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Chi porta gli amminoacidi al ribosoma",
+        "voci": [
+          ["I mattoni e il loro «furgoncino»", ["amminoacido", "tRNA"]],
+          ["L'enzima che carica il tRNA (usa ATP e libera AMP)", ["amminoacil-tRNA sintetasi", "amminoacil-tRNA", "AMP"]]
+        ]
+      },
+      {
+        "titolo": "Il codice genetico",
+        "voci": [
+          ["Le «parole» di tre lettere", ["codone", "anticodone"]],
+          ["Dove si comincia e dove si finisce", ["codone di inizio (AUG)", "codoni di stop"]]
+        ]
+      },
+      {
+        "titolo": "Il ribosoma dei batteri: bersaglio degli antibiotici",
+        "voci": [
+          ["Diverso dal nostro (70S invece di 80S)", ["ribosoma batterico (70S)"]]
+        ]
+      }
+    ]
+  },
+  "mitosi": {
+    "titolo": "Mitosi: da una cellula a due cellule identiche",
+    "dove": "Nucleo e citoplasma delle cellule somatiche che si dividono (pelle, midollo osseo, intestino, tessuti in crescita)",
+    "inizio": "cellula in interfase (G1)",
+    "intro": "Con la mitosi una cellula diploide (2n) si divide in due cellule figlie con gli stessi cromosomi della madre. Prima la cellula copia il suo DNA (fase S dell'interfase); poi, nella mitosi vera e propria (profase, prometafase, metafase, anafase, telofase), le due copie di ogni cromosoma vengono separate con precisione. Alla fine la citocinesi divide il citoplasma. Serve a crescere, a riparare i tessuti e a sostituire le cellule vecchie.",
+    "fasi": [
+      {"da": 1, "nome": "Interfase: la cellula si prepara"},
+      {"da": 3, "nome": "Mitosi: divisione del nucleo"},
+      {"da": 8, "nome": "Citocinesi: divisione del citoplasma"}
+    ],
+    "passaggi": [
+      {
+        "da": ["cellula in interfase (G1)"],
+        "a": ["cromosomi duplicati (fase S)"],
+        "enzima": "DNA polimerasi",
+        "entra": ["desossiribonucleotidi (dNTP)"],
+        "esce": ["pirofosfato (PPi)"],
+        "nota": "Nella fase S tutto il DNA viene copiato una sola volta (replicazione semiconservativa): ogni cromosoma è ora fatto di due cromatidi fratelli identici, tenuti insieme dalla coesina. Nella stessa fase si duplica anche il centrosoma."
+      },
+      {
+        "da": ["cromosomi duplicati (fase S)"],
+        "a": ["cellula pronta (G2)"],
+        "enzima": "CDK1-ciclina B (MPF)",
+        "entra": [],
+        "esce": [],
+        "limitante": true,
+        "nota": "In G2 la cellula controlla che il DNA sia copiato tutto e senza danni (punto di controllo G2/M). Se è tutto a posto si attiva il complesso CDK1-ciclina B, che dà il via alla mitosi."
+      },
+      {
+        "da": ["cellula pronta (G2)"],
+        "a": ["cromosomi condensati (profase)"],
+        "enzima": "condensine",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "nota": "Profase: la cromatina si compatta e i cromosomi diventano visibili al microscopio, ognuno con due cromatidi uniti al centromero. Il nucleolo scompare e i due centrosomi si allontanano iniziando a costruire il fuso."
+      },
+      {
+        "da": ["cromosomi condensati (profase)"],
+        "a": ["cromosomi agganciati al fuso (prometafase)"],
+        "enzima": "fuso mitotico",
+        "entra": [],
+        "esce": [],
+        "nota": "Prometafase: l'involucro nucleare si frammenta (la CDK1 fosforila le lamine). I microtubuli del fuso catturano i cromosomi agganciandosi ai cinetocori: il cinetocore di un cromatidio va verso un polo, quello del fratello verso il polo opposto."
+      },
+      {
+        "da": ["cromosomi agganciati al fuso (prometafase)"],
+        "a": ["piastra metafasica (metafase)"],
+        "enzima": "fuso mitotico",
+        "entra": [],
+        "esce": [],
+        "nota": "Metafase: tutti i cromosomi si allineano al centro della cellula (piastra metafasica). Il punto di controllo del fuso blocca la cellula finché ogni cromosoma non è agganciato correttamente a entrambi i poli. È la fase in cui si studia il cariotipo."
+      },
+      {
+        "da": ["piastra metafasica (metafase)"],
+        "a": ["cromatidi separati (anafase)"],
+        "enzima": "separasi",
+        "entra": [],
+        "esce": [],
+        "irreversibile": true,
+        "nota": "Anafase: il complesso APC/C fa distruggere la securina e la ciclina B; la separasi, ora libera, taglia la coesina e i cromatidi fratelli si separano. I microtubuli li tirano verso i poli opposti: da qui ogni cromatidio è un cromosoma."
+      },
+      {
+        "da": ["cromatidi separati (anafase)"],
+        "a": ["due nuclei (telofase)"],
+        "enzima": "fosfatasi mitotiche (PP1, PP2A)",
+        "entra": [],
+        "esce": [],
+        "nota": "Telofase: ai due poli si riforma un involucro nucleare attorno a ogni gruppo di cromosomi, che si decondensano; ricompaiono i nucleoli. Lo guidano il calo dell'attività di CDK1 e le fosfatasi che tolgono i fosfati messi in mitosi."
+      },
+      {
+        "da": ["due nuclei (telofase)"],
+        "a": ["due cellule figlie"],
+        "enzima": "anello contrattile (actina e miosina II)",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "nota": "Citocinesi: nelle cellule animali un anello di actina e miosina stringe la cellula al centro (solco di divisione) fino a dividerla in due. Nelle cellule vegetali, che hanno la parete, si forma invece una piastra cellulare al centro."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "1 cellula diploide (2n) → 2 cellule figlie diploidi (2n), geneticamente identiche alla madre",
+      "nell'uomo: 46 cromosomi prima e 46 cromosomi in ciascuna cellula figlia",
+      "il DNA si duplica una volta (fase S) e si divide una volta (anafase)"
+    ],
+    "da_sapere": [
+      {
+        "titolo": "Com'è fatto un cromosoma in mitosi",
+        "voci": [
+          ["Il cromosoma e le sue due copie", ["cromosoma", "cromatidi fratelli"]],
+          ["Il punto in cui sono uniti e la «colla»", ["centromero", "cinetocore", "coesina"]]
+        ]
+      },
+      {
+        "titolo": "Il fuso che separa i cromosomi",
+        "voci": [
+          ["Da dove parte e di cosa è fatto", ["centrosoma", "microtubuli", "fuso mitotico"]]
+        ]
+      },
+      {
+        "titolo": "I controlli del ciclo cellulare",
+        "voci": [
+          ["Chi dà il via e chi controlla", ["CDK1-ciclina B (MPF)", "punto di controllo del fuso (SAC)", "complesso promotore dell'anafase (APC/C)"]]
+        ]
+      }
+    ]
+  },
+  "meiosi": {
+    "titolo": "Meiosi: dalla cellula diploide a quattro gameti aploidi",
+    "dove": "Gonadi: testicoli (spermatogenesi) e ovaie (ovogenesi)",
+    "inizio": "cellula germinale diploide (2n)",
+    "intro": "La meiosi produce i gameti (spermatozoi e cellule uovo). Il DNA si copia una volta sola ma la cellula si divide due volte: da una cellula diploide (2n) nascono quattro cellule aploidi (n), con metà dei cromosomi. Nella meiosi I si separano i cromosomi omologhi (divisione riduzionale), nella meiosi II si separano i cromatidi fratelli (divisione equazionale). Il crossing-over e l'assortimento indipendente rendono ogni gamete diverso dagli altri.",
+    "fasi": [
+      {"da": 1, "nome": "Prima della meiosi: copia del DNA"},
+      {"da": 2, "nome": "Meiosi I: si separano gli omologhi (2n → n)"},
+      {"da": 7, "nome": "Meiosi II: si separano i cromatidi fratelli"}
+    ],
+    "passaggi": [
+      {
+        "da": ["cellula germinale diploide (2n)"],
+        "a": ["cromosomi duplicati (fase S)"],
+        "enzima": "DNA polimerasi",
+        "entra": ["desossiribonucleotidi (dNTP)"],
+        "esce": ["pirofosfato (PPi)"],
+        "nota": "Come prima della mitosi, il DNA viene copiato una volta: ogni cromosoma ha due cromatidi fratelli. Nella meiosi i cromatidi sono tenuti insieme da una coesina speciale (con la subunità REC8)."
+      },
+      {
+        "da": ["cromosomi duplicati (fase S)"],
+        "a": ["tetradi (cromosomi omologhi appaiati)"],
+        "enzima": "complesso sinaptonemale",
+        "entra": [],
+        "esce": [],
+        "nota": "Profase I: i due cromosomi omologhi (uno della madre e uno del padre) si cercano e si appaiano per tutta la lunghezza (sinapsi). Ogni coppia, con i suoi 4 cromatidi, forma una tetrade (o bivalente). Questo appaiamento non avviene mai nella mitosi."
+      },
+      {
+        "da": ["tetradi (cromosomi omologhi appaiati)"],
+        "a": ["cromatidi ricombinati (chiasmi)"],
+        "enzima": "Spo11 e ricombinasi (RAD51, DMC1)",
+        "entra": [],
+        "esce": [],
+        "nota": "Crossing-over (ancora in profase I): cromatidi non fratelli di due omologhi si scambiano pezzi corrispondenti di DNA. I punti di scambio, visibili come chiasmi, tengono uniti gli omologhi fino all'anafase I; ogni coppia ne ha almeno uno."
+      },
+      {
+        "da": ["cromatidi ricombinati (chiasmi)"],
+        "a": ["omologhi sulla piastra (metafase I)"],
+        "enzima": "fuso meiotico",
+        "entra": [],
+        "esce": [],
+        "nota": "Metafase I: si allineano al centro le coppie di omologhi, non i singoli cromosomi. Ogni coppia si orienta a caso (assortimento indipendente): nell'uomo sono possibili 2²³, cioè circa 8,4 milioni di combinazioni."
+      },
+      {
+        "da": ["omologhi sulla piastra (metafase I)"],
+        "a": ["omologhi separati (anafase I)"],
+        "enzima": "separasi",
+        "entra": [],
+        "esce": [],
+        "irreversibile": true,
+        "nota": "Anafase I: la separasi taglia la coesina lungo i bracci, ma quella al centromero resta protetta dalla shugoshina. Così gli omologhi vanno ai poli opposti mentre i cromatidi fratelli restano uniti."
+      },
+      {
+        "da": ["omologhi separati (anafase I)"],
+        "a": ["due cellule aploidi (n, cromosomi doppi)"],
+        "enzima": "anello contrattile (actina e miosina II)",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "nota": "Telofase I e citocinesi: nascono due cellule aploidi (n), ma ogni cromosoma ha ancora due cromatidi. Fra meiosi I e II non c'è fase S. Nella donna la divisione è diseguale: ovocita secondario e primo globulo polare."
+      },
+      {
+        "da": ["due cellule aploidi (n, cromosomi doppi)"],
+        "a": ["cromosomi sulla piastra (metafase II)"],
+        "enzima": "fuso meiotico",
+        "entra": [],
+        "esce": [],
+        "nota": "Profase II e metafase II: in ciascuna cellula si forma un nuovo fuso e i cromosomi si allineano come in una mitosi, con i due cromatidi rivolti a poli opposti. L'ovocita secondario si ferma in metafase II fino alla fecondazione."
+      },
+      {
+        "da": ["cromosomi sulla piastra (metafase II)"],
+        "a": ["cromatidi separati (anafase II)"],
+        "enzima": "separasi",
+        "entra": [],
+        "esce": [],
+        "irreversibile": true,
+        "nota": "Anafase II: ora la shugoshina non protegge più il centromero; la separasi taglia la coesina rimasta e i cromatidi fratelli vanno ai poli opposti."
+      },
+      {
+        "da": ["cromatidi separati (anafase II)"],
+        "a": ["quattro gameti aploidi (n)"],
+        "enzima": "anello contrattile (actina e miosina II)",
+        "entra": ["ATP"],
+        "esce": ["ADP"],
+        "nota": "Telofase II e citocinesi: nell'uomo si formano 4 spermatidi, che maturano in spermatozoi. Nella donna si forma una sola cellula uovo grande più i globuli polari, che degenerano."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "1 cellula diploide (2n) → 4 cellule aploidi (n), tutte geneticamente diverse",
+      "nell'uomo: da 46 cromosomi a 23 per gamete",
+      "1 copia del DNA, 2 divisioni: meiosi I riduzionale (separa gli omologhi), meiosi II equazionale (separa i cromatidi)",
+      "variabilità da crossing-over, assortimento indipendente e poi fecondazione"
+    ],
+    "dopo": {
+      "titolo": "Che cosa succede dopo",
+      "strade": [
+        {
+          "condizione": "Tutto regolare: fecondazione",
+          "da": "quattro gameti aploidi (n)",
+          "a": "zigote (2n)",
+          "enzima": "fecondazione",
+          "entra": [],
+          "esce": [],
+          "nota": "Uno spermatozoo (n) e una cellula uovo (n) si uniscono: lo zigote torna diploide (2n, 46 cromosomi) e da lì, con tante mitosi, si forma l'embrione."
+        },
+        {
+          "condizione": "Errore: i cromosomi non si separano",
+          "da": "omologhi sulla piastra (metafase I)",
+          "a": "gamete aneuploide (n+1 o n−1)",
+          "enzima": "non-disgiunzione",
+          "entra": [],
+          "esce": [],
+          "nota": "Se due omologhi (anafase I) o due cromatidi (anafase II) vanno allo stesso polo, un gamete ha un cromosoma in più e un altro uno in meno. Fecondato, dà una trisomia (es. trisomia 21, sindrome di Down) o una monosomia (es. 45,X, sindrome di Turner)."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Parole chiave",
+        "voci": [
+          ["Le due copie di un cromosoma: omologhi e cromatidi", ["cromosomi omologhi", "cromatidi fratelli", "centromero"]],
+          ["La «colla» e chi la protegge", ["coesina", "shugoshina"]]
+        ]
+      },
+      {
+        "titolo": "Meiosi nell'uomo e nella donna",
+        "voci": [
+          ["Due modi di fare i gameti", ["spermatogenesi", "ovogenesi", "globuli polari"]]
+        ]
+      }
+    ]
+  }
+}

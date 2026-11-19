@@ -1,0 +1,765 @@
+{
+ "stimolo": {
+  "tipo": "struttura",
+  "base": "Qualcosa che il corpo sente: il caldo di una pentola, una luce, un suono, una puntura.",
+  "superiore": "Variazione dell'ambiente esterno o interno (meccanica, termica, chimica, luminosa) capace di eccitare un recettore sensoriale.",
+  "universita": "Ogni recettore ha uno stimolo «adeguato» a cui è più sensibile (legge delle energie specifiche). L'intensità è codificata dalla frequenza dei potenziali d'azione e dal numero di recettori reclutati; con stimoli costanti molti recettori si adattano (fasici rapidamente, tonici lentamente).",
+  "clinica": ""
+ },
+ "recettore sensoriale": {
+  "tipo": "struttura",
+  "base": "Un piccolo «sensore» nella pelle, negli occhi, nelle orecchie, che si accorge di quello che succede.",
+  "superiore": "Cellula o terminazione nervosa specializzata che trasforma uno stimolo in un segnale elettrico (trasduzione). Tipi: meccanocettori, termocettori, nocicettori (dolore), chemocettori, fotocettori.",
+  "universita": "La trasduzione avviene tramite canali ionici attivati direttamente (meccanocettori, es. canali Piezo; termocettori TRPV1 per il calore nocivo) o tramite secondi messaggeri (fotocettori, recettori olfattivi). Il risultato è il potenziale di recettore; il campo recettivo determina la discriminazione spaziale.",
+  "clinica": "La capsaicina attiva il TRPV1 (sensazione di bruciore); i cerotti di capsaicina ad alta dose si usano nel dolore neuropatico."
+ },
+ "potenziale di recettore": {
+  "tipo": "struttura",
+  "base": "Il primo piccolo «segnale elettrico» che nasce nel sensore quando sente qualcosa.",
+  "superiore": "Variazione locale e graduata del potenziale di membrana del recettore: più intenso è lo stimolo, più ampia è la variazione. Non si propaga a distanza.",
+  "universita": "Potenziale graduato (generatore), di solito depolarizzante, che decresce con la distanza. Se nella zona trigger supera la soglia genera potenziali d'azione con frequenza proporzionale alla sua ampiezza.",
+  "clinica": ""
+ },
+ "canali del sodio voltaggio-dipendenti": {
+  "tipo": "enzima",
+  "base": "Piccole porte nella membrana del neurone che si aprono di colpo e fanno entrare il sodio: così parte l'impulso.",
+  "superiore": "Proteine canale che si aprono quando la membrana si depolarizza fino alla soglia: l'ingresso di Na⁺ produce la fase di salita del potenziale d'azione. Poi si inattivano.",
+  "universita": "Subunità α (Nav1.1-1.9) con 4 domini da 6 segmenti; S4 è il sensore di voltaggio. Attivazione rapida e inattivazione (porta del «tappo» IFM) in circa 1 ms: responsabili del periodo refrattario assoluto. Concentrati nel segmento iniziale dell'assone e nei nodi di Ranvier.",
+  "clinica": "Bloccati dagli anestetici locali (lidocaina), da antiepilettici (carbamazepina, fenitoina) e dalla tetrodotossina del pesce palla. Mutazioni di SCN1A: sindrome di Dravet."
+ },
+ "Na⁺": {
+  "tipo": "piccola",
+  "smiles": "[Na+]",
+  "base": "Il sodio, quello del sale da cucina. Fuori dalle cellule ce n'è tanto.",
+  "superiore": "Ione sodio, catione monovalente. È il principale ione fuori dalle cellule: la differenza di concentrazione con l'interno è usata per i segnali nervosi e per trasportare altre sostanze.",
+  "universita": "Concentrazioni circa 145 mM nel liquido extracellulare e circa 12 mM nel citoplasma, mantenute dalla Na⁺/K⁺-ATPasi (3 Na⁺ fuori, 2 K⁺ dentro per ATP). Potenziale di equilibrio circa +60 mV. Natriemia normale 135-145 mmol/L.",
+  "clinica": "Iponatriemia (es. SIADH, diuretici tiazidici): confusione e convulsioni; va corretta lentamente per evitare la mielinolisi pontina."
+ },
+ "potenziale d'azione": {
+  "tipo": "energia",
+  "base": "Il «messaggio elettrico» che corre lungo i nervi, come una scintilla che passa da un punto all'altro.",
+  "superiore": "Rapida inversione del potenziale di membrana (da circa −70 mV a circa +30 mV) che si propaga lungo l'assone senza perdere ampiezza. Segue la legge del «tutto o nulla».",
+  "universita": "Fasi: depolarizzazione (apertura dei canali Na⁺), ripolarizzazione (inattivazione Na⁺ e apertura dei canali K⁺ ritardati), iperpolarizzazione postuma. Periodo refrattario assoluto e relativo impediscono il ritorno indietro. Velocità: da circa 0,5-2 m/s (fibre C amieliniche) fino a circa 120 m/s (fibre Aα mielinizzate).",
+  "clinica": "Elettromiografia ed elettroneurografia misurano velocità e ampiezza di conduzione: distinguono neuropatie demielinizzanti (velocità ridotta) da assonali (ampiezza ridotta)."
+ },
+ "neurone sensitivo": {
+  "tipo": "struttura",
+  "base": "Il «filo» del sistema nervoso che porta le notizie dai sensori al midollo spinale e al cervello.",
+  "superiore": "Neurone afferente: porta l'impulso dalla periferia al sistema nervoso centrale. Il corpo cellulare si trova nei gangli delle radici dorsali (o dei nervi cranici).",
+  "universita": "Neurone pseudounipolare: un solo prolungamento che si divide in un ramo periferico e uno centrale, che entra nel corno posteriore del midollo. Classi di fibre: Aα/Aβ (propriocezione, tatto, mielinizzate), Aδ (dolore rapido, freddo), C (dolore lento, caldo, amieliniche).",
+  "clinica": "Neuropatia periferica diabetica: perdita della sensibilità «a calza e guanto», rischio di piede diabetico."
+ },
+ "K⁺": {
+  "tipo": "piccola",
+  "smiles": "[K+]",
+  "base": "Il potassio, che si trova soprattutto dentro le cellule (ce n'è molto nelle banane).",
+  "superiore": "Ione potassio, catione monovalente. È il principale ione dentro le cellule; la sua uscita riporta la membrana a riposo dopo l'impulso.",
+  "universita": "Circa 140 mM nel citoplasma e circa 4 mM nel liquido extracellulare. La membrana a riposo è soprattutto permeabile al K⁺: il potenziale di riposo (circa −70 mV) è vicino al suo potenziale di equilibrio (circa −90 mV). Kaliemia normale 3,5-5,0 mmol/L.",
+  "clinica": "Iperkaliemia (insufficienza renale, ACE-inibitori, sartani, spironolattone) e ipokaliemia (diuretici, vomito) causano aritmie anche gravi: si controllano all'ECG."
+ },
+ "midollo spinale": {
+  "tipo": "struttura",
+  "base": "Il grande «cavo» nervoso dentro la colonna vertebrale che collega il cervello al resto del corpo.",
+  "superiore": "Parte del sistema nervoso centrale contenuta nel canale vertebrale. Al centro la sostanza grigia (corpi dei neuroni, a forma di farfalla), all'esterno la sostanza bianca (fasci di fibre). Da esso escono 31 paia di nervi spinali.",
+  "universita": "Corna posteriori: sensitive; corna anteriori: motoneuroni α e γ; corna laterali (T1-L2): simpatico. Vie ascendenti: cordoni posteriori (tatto fine, propriocezione) e spinotalamica (dolore, temperatura); vie discendenti: corticospinale laterale. Nell'adulto termina a livello L1-L2 (cono midollare).",
+  "clinica": "Lesioni midollari: livello sensitivo e motorio; sindrome di Brown-Séquard (emisezione). Puntura lombare sotto L2-L3 per non toccare il midollo."
+ },
+ "talamo": {
+  "tipo": "struttura",
+  "base": "Una «stazione di smistamento» al centro del cervello che manda le informazioni dei sensi nel posto giusto.",
+  "superiore": "Struttura di sostanza grigia del diencefalo. Quasi tutte le vie sensitive (tranne l'olfatto) fanno sosta nel talamo prima di arrivare alla corteccia.",
+  "universita": "Nuclei di relè specifici: ventrale posterolaterale (sensibilità del corpo), ventrale posteromediale (volto), genicolato laterale (vista) e mediale (udito); nuclei motori (ventrale laterale e anteriore) collegati a cervelletto e gangli della base. Partecipa alla regolazione di veglia e attenzione.",
+  "clinica": "Ictus talamico: perdita di sensibilità controlaterale; talvolta dolore centrale post-ictale (sindrome di Dejerine-Roussy)."
+ },
+ "encefalo": {
+  "tipo": "struttura",
+  "base": "La parte del sistema nervoso dentro la testa: il cervello, il cervelletto e il tronco che lo collega al midollo.",
+  "superiore": "Parte del sistema nervoso centrale contenuta nel cranio: cervello (emisferi e diencefalo), cervelletto e tronco encefalico (mesencefalo, ponte, bulbo). Elabora le informazioni e comanda le risposte.",
+  "universita": "Contiene circa 86 miliardi di neuroni. Corteccia organizzata in aree: somatosensitiva primaria (giro postcentrale), motoria primaria (giro precentrale), associative. Protetto da meningi, liquor e barriera ematoencefalica; consuma circa il 20% dell'ossigeno a riposo.",
+  "clinica": "Ictus ischemico ed emorragico: deficit focali; la finestra per la trombolisi è di poche ore dall'esordio, perciò la diagnosi rapida (TC) è decisiva."
+ },
+ "corteccia motoria": {
+  "tipo": "struttura",
+  "base": "La zona del cervello che decide e comanda i movimenti volontari.",
+  "superiore": "Area della corteccia cerebrale nel lobo frontale (giro precentrale) che comanda i movimenti volontari della metà opposta del corpo.",
+  "universita": "Area 4 di Brodmann, con mappa somatotopica (homunculus motorio). Contiene i motoneuroni superiori (cellule piramidali, comprese le cellule di Betz) i cui assoni formano il fascio corticospinale, che per circa il 90% si incrocia nella decussazione delle piramidi del bulbo. Aree premotorie e supplementari programmano il movimento.",
+  "clinica": "Lesione del motoneurone superiore (ictus): paralisi spastica controlaterale, iperreflessia, segno di Babinski."
+ },
+ "neurone motorio": {
+  "tipo": "struttura",
+  "base": "Il «filo» che porta l'ordine dal midollo spinale ai muscoli per farli muovere.",
+  "superiore": "Motoneurone: neurone efferente che porta l'impulso dal sistema nervoso centrale ai muscoli. Il motoneurone inferiore ha il corpo nel corno anteriore del midollo (o nei nuclei dei nervi cranici).",
+  "universita": "Motoneuroni α (fibre muscolari extrafusali) e γ (fusi neuromuscolari). Un motoneurone con tutte le fibre che innerva forma l'unità motoria (poche fibre nei muscoli dell'occhio, molte centinaia nei grandi muscoli degli arti). Assoni mielinizzati Aα.",
+  "clinica": "Lesione del motoneurone inferiore: paralisi flaccida, ipotrofia, fascicolazioni, riflessi ridotti. La SLA colpisce sia il motoneurone superiore sia l'inferiore."
+ },
+ "canali del calcio voltaggio-dipendenti": {
+  "tipo": "enzima",
+  "base": "Porte nella punta del neurone che, quando arriva l'impulso, fanno entrare il calcio: è il segnale per liberare il messaggero chimico.",
+  "superiore": "Canali che si aprono con la depolarizzazione e fanno entrare Ca²⁺. Nel terminale presinaptico il Ca²⁺ fa fondere le vescicole con la membrana e libera il neurotrasmettitore.",
+  "universita": "Al terminale della placca motrice prevalgono i canali di tipo P/Q (Cav2.1). Il Ca²⁺ si lega alla sinaptotagmina e attiva il complesso SNARE (sinaptobrevina, sintaxina, SNAP-25), che fonde le vescicole. Nel cuore e nel muscolo liscio prevalgono i canali di tipo L (Cav1.2).",
+  "clinica": "Sindrome di Lambert-Eaton: autoanticorpi contro i canali P/Q (spesso con microcitoma polmonare). La tossina botulinica taglia le proteine SNARE e blocca il rilascio di acetilcolina. I calcioantagonisti (amlodipina, verapamil) bloccano i canali di tipo L."
+ },
+ "Ca²⁺": {
+  "tipo": "piccola",
+  "smiles": "[Ca+2]",
+  "base": "Il calcio, quello che rende forti le ossa. Serve anche a far partire i messaggi tra i nervi e a far contrarre i muscoli.",
+  "superiore": "Ione calcio, catione bivalente. Oltre a formare le ossa, è un segnale dentro le cellule: libera i neurotrasmettitori, avvia la contrazione muscolare, partecipa alla coagulazione.",
+  "universita": "Circa 1-2 mM nel liquido extracellulare contro circa 0,1 µM nel citoplasma a riposo: un piccolo ingresso cambia molto la concentrazione interna. Calcemia totale normale circa 8,5-10,5 mg/dL; regolata da paratormone, vitamina D e calcitonina.",
+  "clinica": "Ipocalcemia: tetania, segni di Chvostek e Trousseau, QT lungo. Ipercalcemia (iperparatiroidismo, tumori): poliuria, stipsi, confusione, QT corto."
+ },
+ "acetilcolina": {
+  "tipo": "molecola",
+  "smiles": "CC(=O)OCC[N+](C)(C)C",
+  "base": "Il messaggero chimico che il nervo usa per dire al muscolo: «contrai!».",
+  "superiore": "Neurotrasmettitore formato da colina e acido acetico (estere). È usato alla placca motrice, nei gangli del sistema autonomo, dalle fibre parasimpatiche e in molte vie del cervello.",
+  "universita": "Sintetizzata dalla colina acetiltrasferasi (colina + acetil-CoA) e caricata nelle vescicole. Recettori nicotinici (canali ionici: placca motrice, gangli) e muscarinici (accoppiati a proteine G, M1-M5: cuore, ghiandole, muscolo liscio). Degradata dall'acetilcolinesterasi.",
+  "clinica": "Atropina blocca i muscarinici (bradicardia); nella malattia di Alzheimer calano i neuroni colinergici e si usano inibitori della colinesterasi (donepezil)."
+ },
+ "placca motrice": {
+  "tipo": "struttura",
+  "base": "Il punto di contatto tra il nervo e il muscolo, dove il nervo «passa il messaggio».",
+  "superiore": "Giunzione neuromuscolare: sinapsi chimica tra il terminale del motoneurone e la fibra muscolare scheletrica. Il neurotrasmettitore è l'acetilcolina.",
+  "universita": "La membrana postsinaptica forma pieghe giunzionali ricche di recettori nicotinici; nella fessura c'è l'acetilcolinesterasi. Ogni impulso libera molte vescicole (quanti): il potenziale di placca supera ampiamente la soglia (alto «fattore di sicurezza»), quindi la trasmissione è 1:1. Ogni fibra ha di norma una sola placca.",
+  "clinica": "Miastenia gravis: faticabilità dei muscoli (ptosi, diplopia), si studia con l'elettromiografia a stimolazione ripetitiva (decremento)."
+ },
+ "recettore nicotinico": {
+  "tipo": "enzima",
+  "base": "La «serratura» sul muscolo in cui entra l'acetilcolina: quando si apre, il muscolo riceve il segnale.",
+  "superiore": "Recettore dell'acetilcolina che è anche un canale ionico (recettore ionotropo). Si chiama così perché è attivato anche dalla nicotina. Fa entrare Na⁺ e depolarizza la membrana.",
+  "universita": "Pentamero; nel muscolo adulto (α1)₂β1δε, con due siti per l'acetilcolina sulle subunità α. Canale cationico non selettivo (entra Na⁺, esce un po' di K⁺). Nei gangli e nel SNC esistono forme neuronali con subunità diverse.",
+  "clinica": "Miastenia gravis: autoanticorpi contro il recettore. Curari (rocuronio) lo bloccano in anestesia; la succinilcolina lo attiva in modo persistente (blocco depolarizzante)."
+ },
+ "fibra muscolare": {
+  "tipo": "struttura",
+  "base": "Una cellula lunga e sottile del muscolo, che si accorcia per far muovere il corpo.",
+  "superiore": "Cellula del muscolo scheletrico: lunga, con molti nuclei, piena di miofibrille formate da sarcomeri (filamenti di actina e miosina) che le danno l'aspetto striato.",
+  "universita": "Sincizio derivato dalla fusione di mioblasti. Fibre di tipo I (lente, ossidative, resistenti alla fatica) e di tipo II (rapide, glicolitiche). La membrana (sarcolemma) si invagina nei tubuli T, a stretto contatto con il reticolo sarcoplasmatico (triade).",
+  "clinica": "Rabdomiolisi (traumi, sforzi estremi, statine): CK molto alta e mioglobina nelle urine, rischio di insufficienza renale acuta. Distrofia di Duchenne: manca la distrofina."
+ },
+ "reticolo sarcoplasmatico": {
+  "tipo": "struttura",
+  "base": "Un «magazzino» dentro la cellula del muscolo che conserva il calcio e lo libera quando arriva l'ordine di contrarsi.",
+  "superiore": "Reticolo endoplasmatico liscio della fibra muscolare, specializzato per accumulare e liberare Ca²⁺.",
+  "universita": "Accoppiamento eccitazione-contrazione: il recettore diidropiridinico (Cav1.1) dei tubuli T sente la depolarizzazione e apre meccanicamente il recettore della rianodina (RyR1) del reticolo. Il rilassamento richiede che la pompa SERCA riporti il Ca²⁺ nel reticolo consumando ATP.",
+  "clinica": "Ipertermia maligna: mutazioni di RyR1, crisi scatenata da anestetici alogenati e succinilcolina; si cura con dantrolene."
+ },
+ "contrazione muscolare": {
+  "tipo": "energia",
+  "base": "Il muscolo si accorcia e tira l'osso: così pieghi il braccio o ritiri la mano.",
+  "superiore": "Accorciamento dei sarcomeri per scorrimento dei filamenti di actina su quelli di miosina, avviato dal Ca²⁺ e alimentato dall'ATP.",
+  "universita": "Il Ca²⁺ si lega alla troponina C, la tropomiosina si sposta e scopre i siti dell'actina. Ciclo dei ponti trasversali: la miosina idrolizza ATP, si lega all'actina, compie il colpo di forza liberando Pi e ADP; un nuovo ATP serve per staccarla. Senza ATP i ponti restano bloccati (rigor mortis).",
+  "clinica": ""
+ },
+ "interneurone": {
+  "tipo": "struttura",
+  "base": "Un neurone «di collegamento» nel midollo spinale e nel cervello, che passa il messaggio da un neurone all'altro.",
+  "superiore": "Neurone che si trova tutto dentro il sistema nervoso centrale e collega neuroni sensitivi e motori. Può essere eccitatorio o inibitorio. È la grande maggioranza dei neuroni.",
+  "universita": "Nel riflesso flessorio (di ritiro) interneuroni eccitatori attivano i flessori e interneuroni inibitori rilasciano gli estensori (innervazione reciproca); il riflesso crociato estensorio sostiene l'arto opposto. Interneuroni inibitori (cellule di Renshaw) usano glicina; altri usano GABA.",
+  "clinica": "Tetano: la tossina tetanica blocca il rilascio di glicina e GABA dagli interneuroni inibitori, con spasmi e rigidità (trisma). Si previene con il vaccino."
+ },
+ "acetilcolinesterasi": {
+  "tipo": "enzima",
+  "base": "Un «spazzino» che, appena il messaggio è arrivato, rompe l'acetilcolina così il muscolo può rilassarsi.",
+  "superiore": "Idrolasi che scinde l'acetilcolina in colina e acetato nella fessura sinaptica, terminando il segnale in pochi millisecondi.",
+  "universita": "Idrolasi (EC 3.1.1.7), serina-esterasi con triade catalitica Ser-His-Glu; tra gli enzimi più veloci conosciuti. Ancorata alla lamina basale della placca motrice. Nel plasma c'è una diversa butirrilcolinesterasi (pseudocolinesterasi).",
+  "clinica": "Inibitori reversibili: neostigmina e piridostigmina (miastenia, risveglio dal curaro), donepezil (Alzheimer). Organofosfati (insetticidi, gas nervini) la inibiscono in modo irreversibile: crisi colinergica, si tratta con atropina e pralidossima."
+ },
+ "colina": {
+  "tipo": "piccola",
+  "smiles": "C[N+](C)(C)CCO",
+  "base": "Un pezzetto dell'acetilcolina che viene recuperato e riusato per fare nuovo messaggero.",
+  "superiore": "Ammina quaternaria (sale di ammonio) presente negli alimenti; serve per sintetizzare l'acetilcolina e i fosfolipidi delle membrane (fosfatidilcolina).",
+  "universita": "Dopo l'idrolisi dell'acetilcolina viene ricaptata dal terminale presinaptico tramite un trasportatore ad alta affinità dipendente dal Na⁺ (passaggio limitante per la sintesi di acetilcolina), inibito dall'emicolinio.",
+  "clinica": ""
+ },
+ "acetato": {
+  "tipo": "piccola",
+  "smiles": "CC(=O)[O-]",
+  "base": "Un pezzetto piccolo, parente dell'aceto, che resta quando l'acetilcolina viene rotta.",
+  "superiore": "Anione dell'acido acetico (CH₃COO⁻), con 2 atomi di carbonio.",
+  "universita": "Prodotto dell'idrolisi dell'acetilcolina; può essere attivato ad acetil-CoA dall'acetil-CoA sintetasi ed entrare nel metabolismo.",
+  "clinica": ""
+ },
+ "guaina mielinica": {
+  "tipo": "struttura",
+  "base": "Un rivestimento grasso attorno ai nervi, come la plastica attorno ai fili elettrici: fa viaggiare il messaggio più veloce.",
+  "superiore": "Strato isolante formato da membrane ricche di lipidi avvolte attorno all'assone; è interrotto a intervalli regolari dai nodi di Ranvier, dove l'impulso «salta» (conduzione saltatoria).",
+  "universita": "Prodotta dagli oligodendrociti nel SNC (uno ne mielinizza molti assoni) e dalle cellule di Schwann nel SNP (una per internodo). Riduce la capacità della membrana e la dispersione di corrente; i canali Na⁺ sono concentrati nei nodi.",
+  "clinica": "Sclerosi multipla: malattia autoimmune che distrugge la mielina del SNC (placche alla RM, bande oligoclonali nel liquor). Sindrome di Guillain-Barré: demielinizzazione acuta del SNP."
+ },
+ "glutammato": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCC(=O)O)C(=O)O",
+  "base": "Il messaggero più comune del cervello: dice ai neuroni «accenditi!».",
+  "superiore": "Aminoacido che è anche il principale neurotrasmettitore eccitatorio del sistema nervoso centrale.",
+  "universita": "Recettori ionotropi AMPA, kainato e NMDA (quest'ultimo permeabile al Ca²⁺, bloccato dal Mg²⁺ a riposo, importante per la memoria: potenziamento a lungo termine) e recettori metabotropi (mGluR). Rimosso dalla fessura dai trasportatori degli astrociti e convertito in glutammina.",
+  "clinica": "Eccitotossicità (ictus, trauma): troppo glutammato fa entrare troppo Ca²⁺ e uccide i neuroni. Memantina (Alzheimer) e ketamina bloccano il recettore NMDA."
+ },
+ "GABA": {
+  "tipo": "molecola",
+  "smiles": "NCCCC(=O)O",
+  "base": "Il messaggero che «calma» i neuroni e li frena.",
+  "superiore": "Acido γ-amminobutirrico: principale neurotrasmettitore inibitorio del cervello. Si forma dal glutammato.",
+  "universita": "Sintetizzato dalla glutammato decarbossilasi (cofattore piridossal-fosfato). Recettori GABA-A (canali per il Cl⁻, iperpolarizzano) e GABA-B (accoppiati a proteine G). Nel midollo spinale l'inibizione usa anche la glicina.",
+  "clinica": "Benzodiazepine e barbiturici potenziano il GABA-A (ansia, convulsioni, sedazione); il baclofene attiva il GABA-B (spasticità). Il flumazenil antagonizza le benzodiazepine."
+ },
+ "dopamina": {
+  "tipo": "molecola",
+  "smiles": "NCCc1ccc(O)c(O)c1",
+  "base": "Un messaggero del cervello che serve a muoversi bene e a sentire piacere e motivazione.",
+  "superiore": "Catecolamina, neurotrasmettitore che deriva dall'aminoacido tirosina. È anche il precursore di noradrenalina e adrenalina.",
+  "universita": "Sintesi: tirosina → L-DOPA (tirosina idrossilasi, tappa limitante) → dopamina (DOPA decarbossilasi). Vie principali: nigrostriatale (movimento), mesolimbica e mesocorticale (ricompensa), tuberoinfundibolare (inibisce la prolattina). Recettori D1-D5 accoppiati a proteine G. Degradata da MAO e COMT.",
+  "clinica": "Parkinson: perdita dei neuroni dopaminergici della substantia nigra, si cura con levodopa. Gli antipsicotici bloccano i D2 (effetti extrapiramidali, iperprolattinemia)."
+ },
+ "noradrenalina": {
+  "tipo": "molecola",
+  "smiles": "NC[C@H](O)c1ccc(O)c(O)c1",
+  "base": "Un messaggero che prepara il corpo all'azione: fa battere il cuore e stringe i vasi.",
+  "superiore": "Catecolamina: neurotrasmettitore delle fibre simpatiche post-gangliari e di neuroni del tronco encefalico (locus coeruleus); è anche un ormone della midollare del surrene.",
+  "universita": "Si forma dalla dopamina con la dopamina β-idrossilasi. Agisce sui recettori adrenergici α1 (vasocostrizione), α2 (inibizione presinaptica) e β1 (cuore). Ricaptata dal terminale (NET) e degradata da MAO e COMT.",
+  "clinica": "Farmaco vasopressore di prima scelta nello shock settico. Gli antidepressivi SNRI e triciclici ne bloccano la ricaptazione."
+ },
+ "ipotalamo": {
+  "tipo": "struttura",
+  "base": "Una piccola parte del cervello che fa da «centro di comando»: controlla la fame, la sete, la temperatura e molte ghiandole.",
+  "superiore": "Regione del diencefalo sotto il talamo. Collega il sistema nervoso al sistema endocrino: produce ormoni che comandano l'ipofisi e regola temperatura, fame, sete e ritmo sonno-veglia.",
+  "universita": "Neuroni parvicellulari secernono ormoni di rilascio e di inibizione (TRH, CRH, GnRH, GHRH, somatostatina, dopamina) nel sistema portale verso l'adenoipofisi. Neuroni magnocellulari (nuclei sopraottico e paraventricolare) producono ADH e ossitocina che scendono lungo gli assoni alla neuroipofisi. Contiene osmocettori e centri della sete.",
+  "clinica": "Lesioni ipotalamo-ipofisarie (craniofaringioma, traumi, chirurgia): diabete insipido centrale e deficit ormonali multipli."
+ },
+ "nucleo paraventricolare": {
+  "tipo": "struttura",
+  "base": "Un gruppetto di cellule nervose dell'ipotalamo che manda i primi ordini alle ghiandole.",
+  "superiore": "Nucleo dell'ipotalamo vicino al terzo ventricolo. I suoi neuroni producono il TRH e il CRH; altri neuroni producono ossitocina e ADH.",
+  "universita": "Componente parvicellulare: TRH e CRH, rilasciati nell'eminenza mediana. Componente magnocellulare: ossitocina e ADH verso la neuroipofisi. I neuroni del TRH ricevono il feedback degli ormoni tiroidei (la T3 si forma localmente grazie alla desiodasi di tipo 2 dei taniciti) e segnali di leptina e freddo.",
+  "clinica": ""
+ },
+ "TRH": {
+  "tipo": "molecola",
+  "base": "Il primo messaggio chimico dell'ipotalamo che dice all'ipofisi: «sveglia la tiroide».",
+  "superiore": "Ormone di rilascio della tireotropina: piccolo ormone formato da 3 aminoacidi (tripeptide), prodotto dall'ipotalamo.",
+  "universita": "Struttura piroglutammil-istidil-prolinammide. Agisce su un recettore accoppiato a Gq nelle cellule tireotrope (stimola sintesi e rilascio di TSH) e stimola anche la secrezione di prolattina.",
+  "clinica": "Nell'ipotiroidismo primario il TRH alto stimola anche la prolattina: può comparire iperprolattinemia."
+ },
+ "sistema portale ipotalamo-ipofisario": {
+  "tipo": "struttura",
+  "base": "Una piccola rete di vasi «privati» che porta i messaggi dall'ipotalamo all'ipofisi.",
+  "superiore": "Sistema di vasi che collega due reti di capillari: dall'eminenza mediana dell'ipotalamo all'adenoipofisi. Porta gli ormoni ipotalamici direttamente all'ipofisi anteriore senza diluirli nella circolazione generale.",
+  "universita": "Le arterie ipofisarie superiori formano il plesso capillare primario nell'eminenza mediana; le vene portali lunghe scendono lungo il peduncolo e formano il plesso secondario nell'adenoipofisi. La neuroipofisi non dipende da questo sistema.",
+  "clinica": "Sindrome di Sheehan: necrosi ipofisaria dopo grave emorragia del parto (ipofisi ingrandita in gravidanza). Lesioni del peduncolo interrompono il sistema portale: calano quasi tutti gli ormoni ipofisari ma sale la prolattina (manca l'inibizione dopaminergica)."
+ },
+ "adenoipofisi": {
+  "tipo": "struttura",
+  "base": "La parte davanti dell'ipofisi, una ghiandola piccola come un pisello sotto il cervello, che comanda altre ghiandole.",
+  "superiore": "Ipofisi anteriore: ghiandola endocrina situata nella sella turcica. Produce TSH, ACTH, FSH, LH, GH (ormone della crescita) e prolattina, sotto il controllo dell'ipotalamo.",
+  "universita": "Di origine ectodermica (tasca di Rathke). Tipi cellulari: somatotrope (GH, le più numerose), lattotrope (PRL), corticotrope (ACTH), tireotrope (TSH), gonadotrope (LH, FSH). Riceve il sangue dal sistema portale ipotalamo-ipofisario.",
+  "clinica": "Adenomi ipofisari: prolattinoma (il più frequente, si cura con cabergolina), acromegalia (GH), malattia di Cushing (ACTH); i macroadenomi comprimono il chiasma ottico (emianopsia bitemporale)."
+ },
+ "cellule tireotrope": {
+  "tipo": "struttura",
+  "base": "Cellule dell'ipofisi che, quando ricevono l'ordine, mandano il messaggio alla tiroide.",
+  "superiore": "Cellule basofile dell'adenoipofisi che producono il TSH, stimolate dal TRH e frenate dagli ormoni tiroidei.",
+  "universita": "Sono una piccola quota delle cellule dell'adenoipofisi. Il TRH agisce via Gq (aumento di Ca²⁺); la T3, formata localmente dalla T4 grazie alla desiodasi di tipo 2, riduce la trascrizione dei geni del TSH. Anche somatostatina, dopamina e glucocorticoidi riducono il TSH.",
+  "clinica": ""
+ },
+ "TSH": {
+  "tipo": "molecola",
+  "base": "Il messaggio dell'ipofisi che dice alla tiroide: «lavora di più».",
+  "superiore": "Ormone tireostimolante (tireotropina): ormone glicoproteico dell'ipofisi anteriore che stimola la tiroide a produrre T4 e T3 e a crescere.",
+  "universita": "Glicoproteina formata da una subunità α (comune a LH, FSH e hCG) e una β specifica. Lega il recettore del TSH (accoppiato a Gs → cAMP). Secrezione pulsatile con picco notturno. Per il feedback negativo il TSH varia molto anche per piccole variazioni di FT4.",
+  "clinica": "Il TSH è il primo esame per la funzione tiroidea: alto nell'ipotiroidismo primario (Hashimoto), soppresso nell'ipertiroidismo (Graves). Nell'ipotiroidismo centrale il TSH può essere normale o basso con FT4 basso: lì va guardato l'FT4."
+ },
+ "recettore del TSH": {
+  "tipo": "enzima",
+  "base": "La «serratura» sulle cellule della tiroide in cui entra il messaggio dell'ipofisi.",
+  "superiore": "Recettore di membrana delle cellule follicolari tiroidee che lega il TSH e attiva la produzione degli ormoni tiroidei e la crescita della ghiandola.",
+  "universita": "Recettore a 7 domini transmembrana accoppiato a proteine G (soprattutto Gs → cAMP, anche Gq). Stimola il simportatore Na⁺/I⁻ (NIS), la tireoperossidasi, la sintesi di tireoglobulina, l'endocitosi della colloide e la proliferazione.",
+  "clinica": "Malattia di Graves: autoanticorpi che stimolano il recettore (TRAb) → ipertiroidismo, gozzo diffuso, oftalmopatia. Mutazioni attivanti: adenomi tossici."
+ },
+ "tiroide": {
+  "tipo": "struttura",
+  "base": "Una ghiandola a forma di farfalla nel collo che fa gli ormoni che decidono quanto «veloce» lavora il corpo.",
+  "superiore": "Ghiandola endocrina davanti alla trachea, formata da follicoli pieni di colloide (tireoglobulina). Produce gli ormoni tiroidei (T4 e T3) e, con le cellule parafollicolari C, la calcitonina.",
+  "universita": "Follicoli rivestiti da tireociti; il NIS capta lo iodio dal sangue, la pendrina lo porta nella colloide. Sintesi sulla tireoglobulina (iodazione e accoppiamento), poi endocitosi e proteolisi nei lisosomi con rilascio di T4 e T3. Peso nell'adulto di circa 15-25 g.",
+  "clinica": "Ipotiroidismo (stanchezza, freddo, aumento di peso, bradicardia), ipertiroidismo (calo di peso, tachicardia, tremori), noduli (ecografia e agoaspirato). Lo screening neonatale cerca l'ipotiroidismo congenito per prevenire il ritardo mentale."
+ },
+ "tireoperossidasi (TPO)": {
+  "tipo": "enzima",
+  "base": "Un aiutante della tiroide che attacca lo iodio ai mattoni degli ormoni.",
+  "superiore": "Enzima delle cellule tiroidee che ossida lo iodio e lo lega alle tirosine della tireoglobulina; poi unisce due tirosine iodate per formare T4 o T3.",
+  "universita": "Ossidoreduttasi contenente eme (EC 1.11.1.8) sulla membrana apicale del tireocita; usa H₂O₂ prodotta dalle ossidasi DUOX. Catalizza ossidazione di I⁻, organificazione (formazione di MIT e DIT) e accoppiamento (DIT + DIT = T4; MIT + DIT = T3).",
+  "clinica": "Gli anticorpi anti-TPO sono il marcatore della tiroidite di Hashimoto. I farmaci tionamidici (metimazolo, propiltiouracile) inibiscono la TPO e curano l'ipertiroidismo."
+ },
+ "iodio (I⁻)": {
+  "tipo": "piccola",
+  "smiles": "[I-]",
+  "base": "Un elemento presente nel sale iodato e nel pesce: senza, la tiroide non riesce a fare i suoi ormoni.",
+  "superiore": "Ione ioduro, la forma in cui lo iodio della dieta viene assorbito. È un componente indispensabile degli ormoni tiroidei (4 atomi nella T4, 3 nella T3).",
+  "universita": "Captato dal tireocita contro gradiente dal simportatore Na⁺/I⁻ (NIS), che usa il gradiente del Na⁺. Fabbisogno dell'adulto circa 150 µg al giorno, maggiore in gravidanza e allattamento. Lo iodio liberato dalle desiodasi viene riciclato.",
+  "clinica": "La carenza di iodio causa gozzo e, in gravidanza, danni al cervello del feto (cretinismo): per questo si usa il sale iodato. Lo iodio radioattivo (¹³¹I) si usa per curare ipertiroidismo e carcinomi differenziati della tiroide."
+ },
+ "tireoglobulina": {
+  "tipo": "molecola",
+  "base": "Una grande proteina della tiroide su cui vengono costruiti gli ormoni, come uno scaffale dove si montano i pezzi.",
+  "superiore": "Grande glicoproteina prodotta dalle cellule follicolari e accumulata nella colloide; sulle sue tirosine si formano T4 e T3.",
+  "universita": "Dimero di circa 660 kDa ricco di residui di tirosina; solo alcuni vengono iodati e accoppiati. Gli ormoni vengono liberati quando la tireoglobulina viene digerita nei lisosomi dopo l'endocitosi.",
+  "clinica": "Dopo tiroidectomia totale per carcinoma differenziato la tireoglobulina nel sangue è un marcatore di recidiva."
+ },
+ "tiroxina (T4)": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(=O)O",
+  "base": "Il principale ormone della tiroide: aiuta il corpo a usare l'energia e a crescere.",
+  "superiore": "Tetraiodotironina (T4): ormone tiroideo con 4 atomi di iodio, derivato da due tirosine. È la forma prodotta in maggior quantità, ma è soprattutto un pro-ormone che i tessuti trasformano in T3.",
+  "universita": "Nel plasma è legata quasi tutta a TBG, transtiretina e albumina; solo una piccola frazione è libera (FT4) e attiva. Emivita di circa 7 giorni. Le desiodasi D1 e D2 la convertono in T3 (attiva), la D3 in T3 inversa (rT3, inattiva).",
+  "clinica": "Levotiroxina: terapia sostitutiva dell'ipotiroidismo, presa a digiuno, con dose regolata sul TSH. In gravidanza il fabbisogno aumenta."
+ },
+ "desiodasi": {
+  "tipo": "enzima",
+  "base": "Aiutanti che tolgono un pezzetto di iodio alla T4 per farla diventare la forma che funziona davvero.",
+  "superiore": "Enzimi che rimuovono atomi di iodio dagli ormoni tiroidei: attivano la T4 trasformandola in T3 oppure la inattivano.",
+  "universita": "Selenoproteine (contengono selenocisteina). D1 (fegato, rene, tiroide) e D2 (cervello, ipofisi, muscolo, grasso bruno) tolgono lo iodio dall'anello esterno → T3; D3 toglie quello dell'anello interno → rT3 e T2 inattive. La D2 garantisce la T3 all'ipofisi e all'ipotalamo per il feedback.",
+  "clinica": "Nelle malattie gravi e nel digiuno cala la conversione in T3 e sale la rT3 (sindrome da T3 bassa, «euthyroid sick»). Propiltiouracile, amiodarone, glucocorticoidi e β-bloccanti ad alte dosi riducono la conversione."
+ },
+ "triiodotironina (T3)": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](Cc1cc(I)c(Oc2ccc(O)c(I)c2)c(I)c1)C(=O)O",
+  "base": "La forma «attiva» dell'ormone della tiroide, quella che fa davvero lavorare le cellule.",
+  "superiore": "Triiodotironina (T3): ormone tiroideo con 3 atomi di iodio. È la forma attiva: si lega ai recettori nel nucleo con affinità molto maggiore della T4. Gran parte deriva dalla T4 nei tessuti.",
+  "universita": "Circa l'80% della T3 circolante proviene dalla desiodazione periferica della T4. Emivita di circa 1 giorno. Entra nella cellula tramite trasportatori (es. MCT8) e lega i recettori nucleari TRα/TRβ.",
+  "clinica": "Nell'ipertiroidismo da T3 (T3-tossicosi) la T4 può essere normale. Mutazioni di MCT8: sindrome di Allan-Herndon-Dudley."
+ },
+ "recettore degli ormoni tiroidei": {
+  "tipo": "enzima",
+  "base": "Una «serratura» dentro il centro di comando della cellula: quando arriva l'ormone, cambia quali istruzioni la cellula usa.",
+  "superiore": "Recettore nucleare che, legando la T3, accende o spegne la trascrizione di specifici geni.",
+  "universita": "Isoforme TRα (cuore, osso, cervello) e TRβ (fegato, ipofisi, ipotalamo). Formano eterodimeri con RXR e si legano agli elementi di risposta (TRE) sul DNA; senza ormone reprimono con corepressori, con la T3 reclutano coattivatori. Effetti: Na⁺/K⁺-ATPasi, catena miosinica α cardiaca, recettori β1, enzimi della lipolisi e della termogenesi.",
+  "clinica": "Resistenza agli ormoni tiroidei (mutazioni TRβ): T4 e T3 alte con TSH non soppresso."
+ },
+ "organi bersaglio": {
+  "tipo": "struttura",
+  "base": "Le parti del corpo che «ascoltano» un ormone, perché hanno la serratura giusta.",
+  "superiore": "Organi o cellule che possiedono il recettore specifico per un ormone e quindi rispondono a esso. Per gli ormoni tiroidei sono quasi tutte le cellule del corpo.",
+  "universita": "Effetti della T3: aumento del metabolismo basale e del consumo di O₂, termogenesi, aumento di frequenza e contrattilità cardiaca (anche più recettori β1), stimolo della lipolisi e della degradazione del colesterolo LDL, maturazione del SNC e crescita ossea nel bambino.",
+  "clinica": "Ipotiroidismo: bradicardia, ipercolesterolemia, mixedema; ipertiroidismo: fibrillazione atriale e osteoporosi. I β-bloccanti controllano i sintomi adrenergici dell'ipertiroidismo."
+ },
+ "feedback negativo": {
+  "tipo": "struttura",
+  "base": "Un sistema di controllo come il termostato di casa: quando c'è abbastanza, si spegne; quando manca, si riaccende.",
+  "superiore": "Meccanismo di regolazione in cui il prodotto finale di un processo ne frena l'inizio, mantenendo costante una grandezza (omeostasi).",
+  "universita": "Negli assi endocrini l'ormone periferico inibisce sia l'ipotalamo sia l'ipofisi (ansa lunga); esistono anche anse corte (l'ormone ipofisario frena l'ipotalamo). Lo stesso principio regola pressione arteriosa, glicemia, calcemia. Il feedback positivo, più raro, amplifica il segnale (picco di LH, parto).",
+  "clinica": "Base della diagnosi endocrina: si dosano insieme l'ormone ipofisario e quello periferico. Ormone periferico basso con ipofisario alto = danno della ghiandola (primario); entrambi bassi = danno ipofisario o ipotalamico (centrale)."
+ },
+ "CRH": {
+  "tipo": "molecola",
+  "base": "Il messaggio dell'ipotalamo che, in caso di stress, sveglia l'ipofisi.",
+  "superiore": "Ormone di rilascio della corticotropina: peptide dell'ipotalamo che stimola l'ipofisi anteriore a liberare ACTH.",
+  "universita": "Peptide di 41 aminoacidi prodotto dal nucleo paraventricolare; potenziato dall'ADH. Secrezione con ritmo circadiano (massima al mattino presto) e aumentata da stress, ipoglicemia, infiammazione. Frenato dal cortisolo.",
+  "clinica": ""
+ },
+ "ACTH": {
+  "tipo": "molecola",
+  "base": "Il messaggio dell'ipofisi che dice al surrene di produrre l'ormone dello stress.",
+  "superiore": "Ormone adrenocorticotropo (corticotropina): ormone peptidico dell'ipofisi anteriore che stimola la corteccia surrenale a produrre cortisolo.",
+  "universita": "Peptide di 39 aminoacidi derivato dalla pro-opiomelanocortina (POMC), da cui deriva anche l'MSH. Agisce sul recettore MC2R (Gs → cAMP) della zona fascicolata. Stimola solo in parte l'aldosterone.",
+  "clinica": "Morbo di Addison (insufficienza surrenalica primaria): ACTH alto e iperpigmentazione cutanea. Malattia di Cushing: adenoma ipofisario che produce ACTH. Test di stimolo con ACTH sintetico."
+ },
+ "cortisolo": {
+  "tipo": "molecola",
+  "base": "L'ormone dello stress: aiuta il corpo ad avere zucchero e a calmare le infiammazioni.",
+  "superiore": "Ormone steroideo (glucocorticoide) della corteccia surrenale. Alza la glicemia, favorisce la degradazione di proteine e grassi, riduce l'infiammazione e la risposta immunitaria.",
+  "universita": "Prodotto dalla zona fascicolata a partire dal colesterolo. Nel plasma è legato soprattutto alla transcortina. Agisce su un recettore nucleare (GR). Stimola la gluconeogenesi; ha ritmo circadiano con picco al risveglio. Il rene lo protegge dal recettore mineralcorticoide con l'11β-idrossisteroide deidrogenasi di tipo 2.",
+  "clinica": "Sindrome di Cushing (obesità centrale, strie rubre, ipertensione, diabete); insufficienza surrenalica e crisi addisoniana (si tratta con idrocortisone). I corticosteroidi sospesi bruscamente dopo terapia lunga possono causare insufficienza surrenalica."
+ },
+ "GnRH": {
+  "tipo": "molecola",
+  "base": "Il messaggio dell'ipotalamo che fa partire la pubertà e controlla gli organi della riproduzione.",
+  "superiore": "Ormone di rilascio delle gonadotropine: decapeptide dell'ipotalamo che stimola l'ipofisi a liberare LH e FSH.",
+  "universita": "Secreto in modo pulsatile: impulsi a intervalli regolari stimolano LH e FSH, mentre una somministrazione continua desensibilizza il recettore e li spegne. Neuroni GnRH regolati dalla kisspeptina.",
+  "clinica": "Gli agonisti del GnRH in somministrazione continua (leuprorelina) spengono gli ormoni sessuali: carcinoma prostatico, endometriosi, pubertà precoce. Sindrome di Kallmann: deficit di GnRH con anosmia."
+ },
+ "LH e FSH": {
+  "tipo": "molecola",
+  "base": "Due messaggi dell'ipofisi che comandano le ovaie e i testicoli.",
+  "superiore": "Gonadotropine: ormone luteinizzante (LH) e ormone follicolo-stimolante (FSH), glicoproteine dell'ipofisi anteriore che regolano ovaie e testicoli.",
+  "universita": "Nella donna: FSH fa crescere i follicoli, il picco di LH (feedback positivo degli estrogeni) provoca l'ovulazione e forma il corpo luteo. Nell'uomo: LH stimola le cellule di Leydig (testosterone), FSH le cellule di Sertoli (spermatogenesi, inibina).",
+  "clinica": "FSH alto con estrogeni bassi indica menopausa o insufficienza ovarica; LH/FSH bassi indicano ipogonadismo centrale. Si usano nella stimolazione ovarica per la procreazione assistita."
+ },
+ "insulina": {
+  "tipo": "molecola",
+  "base": "L'ormone che fa entrare lo zucchero del sangue nelle cellule, dopo i pasti.",
+  "superiore": "Ormone proteico prodotto dalle cellule β delle isole di Langerhans del pancreas. Abbassa la glicemia e favorisce l'accumulo di energia (glicogeno, grassi, proteine).",
+  "universita": "Due catene (A di 21 e B di 30 aminoacidi) unite da ponti disolfuro; deriva dalla proinsulina con liberazione del peptide C. Recettore tirosin-chinasico; nel muscolo e nel tessuto adiposo fa spostare in membrana il trasportatore GLUT4. Secreta quando il glucosio entra nella cellula β (GLUT2, glucochinasi, chiusura dei canali K-ATP).",
+  "clinica": "Diabete tipo 1 (distruzione autoimmune delle cellule β, serve insulina) e tipo 2 (insulino-resistenza). Il peptide C distingue l'insulina prodotta dall'organismo da quella iniettata."
+ },
+ "glucagone": {
+  "tipo": "molecola",
+  "base": "L'ormone che fa salire lo zucchero nel sangue quando siamo a digiuno.",
+  "superiore": "Ormone peptidico delle cellule α del pancreas: alza la glicemia stimolando la demolizione del glicogeno e la gluconeogenesi nel fegato.",
+  "universita": "Peptide di 29 aminoacidi; recettore accoppiato a Gs (cAMP, PKA) soprattutto nel fegato. Stimola glicogenolisi, gluconeogenesi e chetogenesi, inibisce la glicolisi (riduce il fruttosio 2,6-bisfosfato). Liberato con ipoglicemia e pasti proteici, inibito da insulina e glucosio.",
+  "clinica": "Glucagone intramuscolare o spray nasale per l'ipoglicemia grave nel diabetico; si usa anche nell'intossicazione da β-bloccanti."
+ },
+ "adrenalina": {
+  "tipo": "molecola",
+  "smiles": "CNC[C@H](O)c1ccc(O)c(O)c1",
+  "base": "L'ormone della paura e dell'emergenza: fa battere forte il cuore e dà energia in un attimo.",
+  "superiore": "Catecolamina prodotta dalla midollare del surrene, chiamata anche epinefrina. Prepara il corpo alla reazione «attacco o fuga»: aumenta frequenza cardiaca, pressione e glicemia, dilata i bronchi.",
+  "universita": "Sintetizzata dalla noradrenalina con la feniletanolamina N-metiltransferasi (PNMT), indotta dal cortisolo. Agisce su recettori α e β adrenergici (β2: broncodilatazione, glicogenolisi). Degradata da COMT e MAO (metanefrine).",
+  "clinica": "Farmaco salvavita nell'anafilassi (0,5 mg intramuscolo nell'adulto, autoiniettore) e nell'arresto cardiaco. Il feocromocitoma produce catecolamine in eccesso: si cercano le metanefrine plasmatiche o urinarie."
+ },
+ "aldosterone": {
+  "tipo": "molecola",
+  "base": "Un ormone che fa trattenere il sale e l'acqua al rene, così la pressione non scende troppo.",
+  "superiore": "Ormone steroideo (mineralcorticoide) della corteccia surrenale. Fa riassorbire sodio (e quindi acqua) e far eliminare potassio dal rene.",
+  "universita": "Prodotto dalla zona glomerulosa (aldosterone sintasi, CYP11B2). Stimoli principali: angiotensina II e iperkaliemia; l'ACTH ha un ruolo minore. Lega il recettore mineralcorticoide nel tubulo distale e collettore: aumentano ENaC, Na⁺/K⁺-ATPasi e secrezione di K⁺ e H⁺.",
+  "clinica": "Iperaldosteronismo primario (sindrome di Conn): ipertensione con ipokaliemia; screening con il rapporto aldosterone/renina. Ipoaldosteronismo: iperkaliemia e acidosi."
+ },
+ "agente patogeno": {
+  "tipo": "struttura",
+  "base": "Un microbo che può farci ammalare: un batterio, un virus, un fungo o un parassita.",
+  "superiore": "Microrganismo o agente capace di causare malattia: batteri, virus, funghi, protozoi, vermi. Porta sulla sua superficie molecole estranee (antigeni) che il sistema immunitario riconosce.",
+  "universita": "Presenta strutture conservate (PAMP: lipopolisaccaride, peptidoglicano, flagellina, RNA a doppio filamento) riconosciute dai recettori dell'immunità innata. Microbi extracellulari sono contrastati soprattutto da anticorpi e complemento, quelli intracellulari dai linfociti T citotossici e dai macrofagi attivati.",
+  "clinica": "Il tipo di patogeno guida esami (colture, PCR, sierologia) e terapia (antibiotici, antivirali, antifungini)."
+ },
+ "barriere di pelle e mucose": {
+  "tipo": "struttura",
+  "base": "Il «muro» che protegge il corpo: la pelle, il muco del naso, le lacrime e l'acido dello stomaco.",
+  "superiore": "Prima linea di difesa: barriere fisiche (epiteli uniti da giunzioni strette, strato corneo), chimiche (acidità gastrica e cutanea, lisozima, defensine) e biologiche (flora batterica normale).",
+  "universita": "Muco e ciglia dell'apparato respiratorio (clearance mucociliare); IgA secretorie sulle mucose; peptidi antimicrobici (defensine, catelicidine); il microbiota compete con i patogeni per spazio e nutrienti.",
+  "clinica": "Ustioni estese, cateteri e ferite chirurgiche aprono la barriera: alto rischio di infezioni. Fibrosi cistica: muco denso e infezioni respiratorie ricorrenti. Gli antibiotici alterano la flora e favoriscono il Clostridioides difficile."
+ },
+ "immunità innata": {
+  "tipo": "struttura",
+  "base": "La difesa «pronta subito»: attacca qualsiasi microbo allo stesso modo, senza bisogno di conoscerlo.",
+  "superiore": "Difesa aspecifica, presente dalla nascita e attiva in minuti o ore. Comprende barriere, cellule fagocitiche (neutrofili, macrofagi), cellule NK, complemento e infiammazione. Non lascia memoria.",
+  "universita": "Riconosce i PAMP e i segnali di danno (DAMP) con recettori codificati nel genoma (PRR: Toll-like, NOD-like, RIG-I). Attiva l'infiammazione e, tramite le cellule dendritiche, avvia e indirizza la risposta adattativa.",
+  "clinica": "Deficit dell'immunità innata: malattia granulomatosa cronica (i fagociti non producono radicali dell'ossigeno), deficit di adesione leucocitaria, deficit del complemento."
+ },
+ "infiammazione": {
+  "tipo": "struttura",
+  "base": "Quando una parte del corpo diventa rossa, calda, gonfia e fa male perché le difese stanno combattendo.",
+  "superiore": "Risposta dei tessuti a infezione o danno: i vasi si dilatano e diventano permeabili, arrivano globuli bianchi e proteine. Segni classici: rossore, calore, gonfiore, dolore e perdita della funzione.",
+  "universita": "Mediatori: istamina, prostaglandine, leucotrieni, bradichinina, citochine (IL-1, IL-6, TNF-α). I neutrofili escono dai vasi con rotolamento (selectine), adesione (integrine) e diapedesi. L'IL-6 fa produrre al fegato le proteine di fase acuta (PCR, fibrinogeno); IL-1 e prostaglandine causano la febbre.",
+  "clinica": "La PCR e la VES misurano l'infiammazione. FANS (inibiscono le COX) e corticosteroidi la riducono. L'infiammazione cronica è alla base di aterosclerosi e malattie autoimmuni."
+ },
+ "macrofagi": {
+  "tipo": "struttura",
+  "base": "Grandi globuli bianchi «mangiatori» che inghiottono i microbi e puliscono i tessuti.",
+  "superiore": "Fagociti derivati dai monociti del sangue che si trovano nei tessuti. Inglobano e distruggono microbi e cellule morte, producono citochine e presentano l'antigene ai linfociti T.",
+  "universita": "Nomi diversi a seconda del tessuto: cellule di Kupffer (fegato), microglia (SNC), macrofagi alveolari, osteoclasti (derivano dalla stessa linea). Attivazione classica (M1, da IFN-γ: uccisione dei microbi) o alternativa (M2: riparazione). Esprimono MHC di classe II.",
+  "clinica": "Nella tubercolosi i macrofagi attivati formano granulomi; la sindrome da attivazione macrofagica è una complicanza grave di infezioni e malattie reumatologiche."
+ },
+ "citochine": {
+  "tipo": "molecola",
+  "base": "Piccoli «messaggi» che le cellule di difesa si scambiano per chiamare rinforzi e coordinarsi.",
+  "superiore": "Piccole proteine segnale prodotte dalle cellule immunitarie (e non solo) che regolano infiammazione e risposta immunitaria: interleuchine, interferoni, TNF, chemochine.",
+  "universita": "Agiscono su recettori specifici, spesso in modo autocrino o paracrino. IL-1, IL-6, TNF-α: infiammazione e febbre; IL-2: proliferazione dei linfociti T; IFN-γ: attiva i macrofagi; IL-4: aiuto ai linfociti B e scambio verso IgE; chemochine: richiamano i leucociti.",
+  "clinica": "Farmaci biologici anti-TNF (infliximab, adalimumab) e anti-IL-6 (tocilizumab) per artrite reumatoide e malattie infiammatorie intestinali; la tempesta citochinica è una complicanza grave (sepsi, COVID-19, terapie CAR-T)."
+ },
+ "cellule dendritiche": {
+  "tipo": "struttura",
+  "base": "Cellule «sentinella» con tanti rametti: catturano un pezzo di microbo e corrono a mostrarlo ai linfociti.",
+  "superiore": "Cellule presentanti l'antigene professionali: catturano l'antigene nei tessuti, migrano ai linfonodi e lo presentano ai linfociti T, attivandoli. Collegano immunità innata e adattativa.",
+  "universita": "Immature nei tessuti (es. cellule di Langerhans della cute) catturano l'antigene; i segnali di pericolo le fanno maturare: aumentano MHC e molecole costimolatorie (B7 = CD80/CD86) e il recettore CCR7, che le guida al linfonodo. Sono le uniche in grado di attivare linfociti T naive; possono presentare antigeni esterni anche su MHC I (cross-presentazione).",
+  "clinica": "Sono la base di alcuni vaccini terapeutici antitumorali; gli adiuvanti dei vaccini agiscono attivando le cellule dendritiche."
+ },
+ "antigene": {
+  "tipo": "molecola",
+  "base": "Un «pezzetto di riconoscimento» del microbo, come il volto di una persona, che il sistema immunitario impara a riconoscere.",
+  "superiore": "Molecola (di solito proteina o polisaccaride) riconosciuta in modo specifico da anticorpi o linfociti. La piccola parte che viene effettivamente riconosciuta si chiama epitopo (determinante antigenico).",
+  "universita": "I linfociti B e gli anticorpi riconoscono epitopi nella forma nativa (anche non proteici). I linfociti T riconoscono solo peptidi presentati su MHC: di classe I (proteine interne, a CD8⁺) o di classe II (proteine esterne inglobate, a CD4⁺). Gli antigeni polisaccaridici attivano i B senza aiuto dei T (risposta debole nei bambini piccoli).",
+  "clinica": "I vaccini coniugati legano un polisaccaride a una proteina per ottenere l'aiuto dei T helper (pneumococco, Haemophilus, meningococco). Antigeni tumorali e immunoterapia."
+ },
+ "linfonodo": {
+  "tipo": "struttura",
+  "base": "Piccoli «fagioli» lungo i vasi della linfa (collo, ascelle, inguine) dove le difese si incontrano e si organizzano. Si gonfiano quando abbiamo un'infezione.",
+  "superiore": "Organo linfatico secondario lungo i vasi linfatici. Filtra la linfa; qui le cellule presentanti l'antigene incontrano i linfociti T e B e parte la risposta adattativa.",
+  "universita": "Capsula, seni linfatici, corticale (follicoli di linfociti B, con centri germinativi quando attivati), paracorticale (linfociti T e cellule dendritiche), midollare (plasmacellule). I linfociti entrano dal sangue attraverso le venule a endotelio alto.",
+  "clinica": "Linfoadenopatia: reattiva (infezioni) o neoplastica (linfomi, metastasi). Linfonodo sentinella in oncologia (mammella, melanoma). Biopsia escissionale per la diagnosi di linfoma."
+ },
+ "MHC di classe II": {
+  "tipo": "molecola",
+  "base": "Una specie di «vassoio» sulla cellula sentinella su cui viene mostrato il pezzetto di microbo ai linfociti.",
+  "superiore": "Molecole di membrana del complesso maggiore di istocompatibilità che presentano peptidi derivati da antigeni esterni ai linfociti T helper (CD4⁺). Nell'uomo si chiamano HLA-DR, -DP, -DQ.",
+  "universita": "Eterodimeri α/β espressi dalle cellule presentanti l'antigene professionali (dendritiche, macrofagi, linfociti B). Il peptide (circa 13-25 aminoacidi) deriva da proteine degradate negli endosomi; la catena invariante protegge il sito di legame fino al caricamento. Il CD4 si lega al dominio β2.",
+  "clinica": "Alcuni alleli HLA di classe II predispongono a malattie autoimmuni (HLA-DQ2/DQ8 e celiachia, DR3/DR4 e diabete tipo 1). Tipizzazione HLA per i trapianti."
+ },
+ "linfocita T helper (CD4⁺)": {
+  "tipo": "struttura",
+  "base": "Il «direttore d'orchestra» delle difese: riconosce il nemico e dà il via agli altri globuli bianchi.",
+  "superiore": "Linfocita T con il marcatore CD4: riconosce l'antigene presentato su MHC di classe II e, attivato, coordina la risposta producendo citochine che aiutano linfociti B, linfociti T citotossici e macrofagi.",
+  "universita": "Matura nel timo. L'attivazione richiede il segnale 1 (TCR + peptide-MHC II) e il segnale 2 (CD28 + B7); produce IL-2 e prolifera. Si differenzia in sottotipi: Th1 (IFN-γ, macrofagi, patogeni intracellulari), Th2 (IL-4, IL-5, IL-13: parassiti, allergia), Th17 (IL-17: neutrofili), T follicolari helper (aiuto ai B nel centro germinativo), T regolatori (Treg, FOXP3).",
+  "clinica": "L'HIV infetta i CD4⁺: sotto 200 cellule/µL compaiono le infezioni opportunistiche (AIDS). Il conteggio dei CD4 guida profilassi e monitoraggio."
+ },
+ "linfocita B": {
+  "tipo": "struttura",
+  "base": "Un globulo bianco che, quando riconosce un microbo, si trasforma in una fabbrica di anticorpi.",
+  "superiore": "Linfocita che riconosce l'antigene con il suo recettore di membrana (BCR, un anticorpo legato alla membrana) e, attivato, diventa plasmacellula (produce anticorpi) o cellula della memoria. Nasce e matura nel midollo osseo.",
+  "universita": "Ogni linfocita B ha un BCR unico prodotto dal riarrangiamento V(D)J. Marcatori CD19, CD20. Per gli antigeni proteici serve l'aiuto dei T follicolari helper (CD40L-CD40, IL-21) per scambio di classe (enzima AID) e ipermutazione somatica. È anche cellula presentante l'antigene.",
+  "clinica": "Rituximab (anti-CD20) elimina i linfociti B: linfomi, artrite reumatoide, sclerosi multipla (ocrelizumab). Agammaglobulinemia di Bruton (mutazione BTK): mancano i linfociti B."
+ },
+ "centro germinativo": {
+  "tipo": "struttura",
+  "base": "Una «palestra» dentro il linfonodo dove i linfociti B si allenano per riconoscere il microbo sempre meglio.",
+  "superiore": "Struttura che si forma nei follicoli dei linfonodi e della milza durante la risposta immunitaria: i linfociti B proliferano, diventano più precisi e cambiano classe di anticorpo.",
+  "universita": "Zona scura: proliferazione e ipermutazione somatica (AID). Zona chiara: selezione dei B con BCR a più alta affinità sull'antigene trattenuto dalle cellule dendritiche follicolari, con l'aiuto dei T follicolari helper. Escono plasmacellule a lunga vita e B della memoria (maturazione dell'affinità).",
+  "clinica": "Molti linfomi a cellule B (follicolare, diffuso a grandi cellule B, Burkitt) derivano da cellule del centro germinativo."
+ },
+ "plasmacellula": {
+  "tipo": "struttura",
+  "base": "La «fabbrica» degli anticorpi: un linfocita B diventato grande e specializzato.",
+  "superiore": "Cellula derivata dal linfocita B attivato, specializzata nella produzione e secrezione di grandi quantità di anticorpi di un'unica specificità.",
+  "universita": "Nucleo eccentrico con cromatina «a ruota di carro», abbondante reticolo endoplasmatico rugoso e Golgi evidente. Perde il BCR di membrana e gran parte di MHC II; esprime CD138. Le plasmacellule a lunga vita risiedono nel midollo osseo e mantengono per anni i livelli di anticorpi.",
+  "clinica": "Mieloma multiplo: proliferazione di un clone di plasmacellule con componente monoclonale (picco M all'elettroforesi), lesioni ossee, anemia, insufficienza renale, ipercalcemia."
+ },
+ "reticolo endoplasmatico rugoso": {
+  "tipo": "struttura",
+  "base": "Una rete di sacchetti dentro la cellula, coperta di ribosomi, dove si costruiscono le proteine da mandare fuori.",
+  "superiore": "Organulo formato da cisterne membranose con ribosomi sulla superficie: sintetizza le proteine destinate alla secrezione o alle membrane, che poi passano all'apparato di Golgi.",
+  "universita": "Le proteine entrano nel lume durante la traduzione (peptide segnale, SRP); qui si ripiegano con l'aiuto di chaperoni (BiP), formano ponti disolfuro e iniziano la N-glicosilazione. Nelle plasmacellule è molto sviluppato per assemblare le catene pesanti e leggere degli anticorpi.",
+  "clinica": "Lo stress del reticolo (risposta UPR) rende le cellule del mieloma sensibili agli inibitori del proteasoma (bortezomib)."
+ },
+ "anticorpi": {
+  "tipo": "molecola",
+  "base": "Proteine a forma di Y che si attaccano ai microbi come etichette, per bloccarli e farli distruggere.",
+  "superiore": "Immunoglobuline: glicoproteine prodotte dalle plasmacellule che legano in modo specifico un antigene. Classi: IgM (prime a comparire), IgG (le più abbondanti, passano la placenta), IgA (sulle mucose e nel latte), IgE (allergie e parassiti), IgD.",
+  "universita": "Due catene pesanti e due leggere unite da ponti disolfuro; la porzione Fab lega l'antigene (regioni variabili), la porzione Fc decide la funzione (complemento, recettori Fc dei fagociti). IgM pentamerica; IgA secretoria dimerica. L'emivita delle IgG è di circa 3 settimane.",
+  "clinica": "Sierologia: IgM indicano infezione recente, IgG infezione passata o vaccinazione. Anticorpi monoclonali in terapia (oncologia, autoimmunità). Immunoglobuline endovena nei deficit e in alcune malattie autoimmuni."
+ },
+ "complemento": {
+  "tipo": "enzima",
+  "base": "Un gruppo di proteine del sangue che aiutano gli anticorpi: segnano i microbi e li bucano.",
+  "superiore": "Insieme di proteine plasmatiche che si attivano a cascata. Funzioni: opsonizzazione (C3b), richiamo e attivazione dei leucociti (C3a, C5a) e lisi dei microbi con il complesso di attacco alla membrana (C5b-C9).",
+  "universita": "Tre vie di attivazione: classica (complessi antigene-anticorpo, C1q), lectinica (lectina che lega il mannosio) e alternativa (attivazione spontanea di C3 sulle superfici microbiche). Tutte convergono sulla C3 convertasi. Regolato da proteine come C1-inibitore, fattore H, DAF (CD55), CD59.",
+  "clinica": "Deficit di C5-C9: infezioni ricorrenti da Neisseria (vaccinare). Deficit di C1-inibitore: angioedema ereditario. C3 e C4 bassi nel lupus attivo. Eculizumab (anti-C5) nell'emoglobinuria parossistica notturna."
+ },
+ "eliminazione del patogeno": {
+  "tipo": "struttura",
+  "base": "Il momento in cui le difese hanno vinto e il microbo è stato eliminato: si guarisce.",
+  "superiore": "Distruzione del microbo grazie alla collaborazione di anticorpi, complemento, fagociti e linfociti T. Dopo, la risposta si spegne per non danneggiare i tessuti.",
+  "universita": "Meccanismi effettori: neutralizzazione, opsonizzazione e fagocitosi, lisi da complemento, citotossicità cellulo-mediata dipendente da anticorpi (cellule NK), uccisione da parte dei T CD8⁺. Lo spegnimento avviene per riduzione dell'antigene, apoptosi dei linfociti effettori e azione dei Treg (IL-10, TGF-β).",
+  "clinica": ""
+ },
+ "memoria immunitaria": {
+  "tipo": "struttura",
+  "base": "Il corpo si «ricorda» di un microbo già incontrato e la volta dopo lo batte subito, spesso senza farci ammalare.",
+  "superiore": "Capacità del sistema immunitario adattativo di rispondere più velocemente e più intensamente a un antigene già incontrato (risposta secondaria). È la base dell'immunità acquisita dopo una malattia o un vaccino.",
+  "universita": "La risposta primaria richiede circa 1-2 settimane ed è dominata dalle IgM; la secondaria parte in pochi giorni, con IgG (o IgA) ad alta affinità e livelli molto più alti. Garantita da B della memoria, plasmacellule a lunga vita e T della memoria (centrali ed effettori).",
+  "clinica": "Vaccini (vivi attenuati, inattivati, a subunità, a mRNA) e richiami; immunità passiva (immunoglobuline, anticorpi materni) protegge subito ma senza memoria."
+ },
+ "cellule della memoria": {
+  "tipo": "struttura",
+  "base": "Globuli bianchi «veterani» che si ricordano del microbo per anni e sono pronti a riconoscerlo subito.",
+  "superiore": "Linfociti B e T a lunga vita che restano dopo una risposta immunitaria e si attivano rapidamente al nuovo incontro con lo stesso antigene.",
+  "universita": "Più numerose dei linfociti naive specifici per lo stesso antigene e con soglia di attivazione più bassa. B della memoria: hanno già fatto scambio di classe e maturazione dell'affinità. T della memoria centrali (nei linfonodi, CCR7⁺) ed effettori/residenti nei tessuti.",
+  "clinica": "Il morbillo può cancellare parte delle cellule della memoria («amnesia immunitaria»): un motivo in più per vaccinare."
+ },
+ "MHC di classe I": {
+  "tipo": "molecola",
+  "base": "Un «cartellino» che ogni cellula mostra fuori per dire cosa sta producendo dentro: se è un virus, i difensori se ne accorgono.",
+  "superiore": "Molecole di membrana presenti su quasi tutte le cellule nucleate che presentano peptidi di proteine prodotte nella cellula (anche virali o tumorali) ai linfociti T citotossici (CD8⁺). Nell'uomo: HLA-A, -B, -C.",
+  "universita": "Catena pesante α associata alla β2-microglobulina. I peptidi (circa 8-10 aminoacidi) nascono dalla degradazione nel proteasoma e entrano nel reticolo tramite il trasportatore TAP. Le cellule NK uccidono le cellule che hanno perso l'MHC I (manca il segnale «io sono del corpo»).",
+  "clinica": "HLA-B27 associato a spondilite anchilosante; HLA-B*57:01 predice l'ipersensibilità all'abacavir (test obbligatorio prima della terapia). Molti virus e tumori riducono l'MHC I per sfuggire ai CD8⁺."
+ },
+ "linfocita T citotossico (CD8⁺)": {
+  "tipo": "struttura",
+  "base": "Un globulo bianco «killer» che riconosce le cellule infettate da un virus e le distrugge.",
+  "superiore": "Linfocita T con il marcatore CD8: riconosce l'antigene su MHC di classe I e uccide le cellule infettate da virus o tumorali.",
+  "universita": "Uccide liberando perforina (forma pori) e granzimi (attivano le caspasi e l'apoptosi) o tramite Fas ligando. L'attivazione completa del T CD8⁺ naive richiede di solito l'aiuto dei CD4⁺ e cellule dendritiche che presentano l'antigene (anche per cross-presentazione).",
+  "clinica": "Inibitori dei checkpoint (anti-PD-1, anti-CTLA-4) e cellule CAR-T potenziano i linfociti T contro i tumori; i CD8⁺ partecipano anche al rigetto dei trapianti."
+ },
+ "midollo osseo": {
+  "tipo": "struttura",
+  "base": "La parte morbida dentro le ossa dove nascono tutte le cellule del sangue, anche i globuli bianchi.",
+  "superiore": "Organo linfatico primario e sede dell'emopoiesi: dalle cellule staminali nascono globuli rossi, piastrine e globuli bianchi. Nel midollo maturano i linfociti B.",
+  "universita": "Midollo rosso (emopoietico) nell'adulto soprattutto in ossa piatte, vertebre, bacino ed epifisi prossimali delle ossa lunghe; il resto diventa midollo giallo (adiposo). La cellula staminale ematopoietica è CD34⁺. Ospita anche le plasmacellule a lunga vita.",
+  "clinica": "Aspirato e biopsia osteomidollare (cresta iliaca) per leucemie, mielomi e citopenie. Trapianto di cellule staminali ematopoietiche (autologo o allogenico)."
+ },
+ "timo": {
+  "tipo": "struttura",
+  "base": "Una ghiandola nel petto, più grande nei bambini, dove i linfociti T vanno «a scuola» per imparare a non attaccare il proprio corpo.",
+  "superiore": "Organo linfatico primario nel mediastino anteriore, dietro lo sterno. Qui maturano i linfociti T; è grande nell'infanzia e dopo la pubertà va incontro a involuzione adiposa.",
+  "universita": "Corticale: selezione positiva (sopravvivono i timociti che riconoscono le MHC del proprio corpo). Midollare: selezione negativa (eliminati quelli troppo reattivi contro antigeni propri, espressi grazie ad AIRE) e formazione dei Treg. Corpuscoli di Hassall nella midollare.",
+  "clinica": "Sindrome di DiGeorge (delezione 22q11): timo assente o piccolo, deficit di linfociti T. Timoma associato a miastenia gravis. Mutazioni di AIRE: sindrome poliendocrina autoimmune di tipo 1."
+ },
+ "milza": {
+  "tipo": "struttura",
+  "base": "Un organo a sinistra nella pancia che filtra il sangue, toglie i globuli rossi vecchi e aiuta a combattere i microbi.",
+  "superiore": "Organo linfatico secondario nell'ipocondrio sinistro. Filtra il sangue (non la linfa): la polpa rossa elimina i globuli rossi vecchi, la polpa bianca (linfociti) organizza la risposta immunitaria contro i microbi del sangue.",
+  "universita": "Polpa bianca: guaine linfatiche periarteriolari (linfociti T) e follicoli (linfociti B); zona marginale con linfociti B che rispondono rapidamente agli antigeni polisaccaridici. Polpa rossa: cordoni di Billroth e sinusoidi, dove i macrofagi rimuovono gli eritrociti senescenti.",
+  "clinica": "Dopo splenectomia (o con asplenia funzionale, es. anemia falciforme) rischio di sepsi fulminante da batteri capsulati: vaccinare contro pneumococco, meningococco e Haemophilus. Splenomegalia in mononucleosi (rischio di rottura), ipertensione portale, malattie ematologiche."
+ },
+ "vasi linfatici": {
+  "tipo": "struttura",
+  "base": "Piccoli tubi, simili alle vene, che raccolgono il liquido in più dei tessuti (la linfa) e lo riportano nel sangue, passando per i linfonodi.",
+  "superiore": "Rete di vasi che raccoglie il liquido interstiziale in eccesso (linfa), con proteine, grassi assorbiti dall'intestino e cellule immunitarie, e lo riporta nella circolazione venosa attraverso i linfonodi.",
+  "universita": "I capillari linfatici, a fondo cieco e molto permeabili, confluiscono in collettori con valvole; la linfa avanza grazie alla contrazione dei muscoli e delle pareti dei vasi. Il dotto toracico si svuota nell'angolo tra vena succlavia e giugulare interna di sinistra. Ogni giorno riportano al sangue alcuni litri di liquido.",
+  "clinica": "Linfedema (dopo svuotamento linfonodale ascellare o per filariosi); le metastasi di molti carcinomi viaggiano per via linfatica; chilotorace da lesione del dotto toracico."
+ },
+ "neutrofili": {
+  "tipo": "struttura",
+  "base": "I globuli bianchi più numerosi: arrivano per primi dove c'è un'infezione e mangiano i batteri. Il pus è fatto soprattutto di loro.",
+  "superiore": "Granulociti neutrofili: leucociti con nucleo diviso in lobi, i più abbondanti nel sangue. Fagociti che arrivano per primi nei tessuti infiammati e uccidono soprattutto i batteri.",
+  "universita": "Circa 40-70% dei leucociti; vivono poche ore nel sangue. Uccidono con radicali dell'ossigeno (NADPH ossidasi, mieloperossidasi), enzimi dei granuli e trappole extracellulari di DNA (NET). Richiamati da IL-8 e C5a.",
+  "clinica": "Neutropenia (chemioterapia): neutropenia febbrile, urgenza da trattare con antibiotici ad ampio spettro. Neutrofilia nelle infezioni batteriche."
+ },
+ "cellule NK": {
+  "tipo": "struttura",
+  "base": "Globuli bianchi «killer naturali» che uccidono subito le cellule malate, senza bisogno di averle conosciute prima.",
+  "superiore": "Cellule natural killer: linfociti dell'immunità innata che uccidono le cellule infettate da virus e quelle tumorali, senza un recettore specifico per l'antigene.",
+  "universita": "Integrano segnali attivanti (es. NKG2D, che riconosce molecole di stress) e inibitori (recettori KIR che riconoscono l'MHC di classe I): uccidono le cellule che hanno perso l'MHC I. Usano perforina e granzimi; con il recettore Fc (CD16) uccidono le cellule ricoperte di anticorpi (ADCC). Producono IFN-γ.",
+  "clinica": "I deficit di cellule NK predispongono a infezioni gravi da herpesvirus. L'ADCC è uno dei meccanismi degli anticorpi monoclonali antitumorali (es. rituximab)."
+ },
+ "pressione arteriosa bassa": {
+  "tipo": "struttura",
+  "base": "Quando il sangue spinge poco sulle pareti dei vasi, per esempio dopo aver perso sangue o con molta sete: ci si può sentire deboli e girare la testa.",
+  "superiore": "Riduzione della pressione arteriosa o del volume di sangue efficace (emorragia, disidratazione, dieta povera di sodio, scompenso cardiaco). È lo stimolo che attiva il sistema renina-angiotensina-aldosterone.",
+  "universita": "Il rene la percepisce in tre modi: barocettore dell'arteriola afferente (minore stiramento), macula densa (minor carico di NaCl nel tubulo distale, segnale mediato da prostaglandine) e aumento del tono simpatico (recettori β1). Anche se il volume totale è alto, un basso volume «efficace» (scompenso, cirrosi) attiva il sistema.",
+  "clinica": "Ipotensione ortostatica, shock ipovolemico. Nella stenosi dell'arteria renale il rene «sente» pressione bassa anche se quella sistemica è alta: ipertensione nefrovascolare con renina elevata."
+ },
+ "cellule iuxtaglomerulari": {
+  "tipo": "struttura",
+  "base": "Cellule speciali del rene che si accorgono quando la pressione scende e mandano l'allarme.",
+  "superiore": "Cellule muscolari lisce modificate della parete dell'arteriola afferente del glomerulo, che producono, conservano in granuli e liberano la renina. Fanno parte dell'apparato iuxtaglomerulare insieme alla macula densa.",
+  "universita": "Rilasciano renina quando diminuisce la pressione di perfusione, quando la macula densa segnala poco NaCl e per stimolo simpatico β1 (cAMP). Sono inibite da angiotensina II (feedback corto), da ADH, da peptidi natriuretici e dall'aumento del Ca²⁺ intracellulare.",
+  "clinica": "I β-bloccanti riducono la liberazione di renina. Tumore a cellule iuxtaglomerulari (reninoma): raro, ipertensione con ipokaliemia e renina alta."
+ },
+ "renina": {
+  "tipo": "enzima",
+  "base": "Un aiutante liberato dal rene che dà il via a tutta la catena che rialza la pressione.",
+  "superiore": "Enzima prodotto dal rene (cellule iuxtaglomerulari) che taglia l'angiotensinogeno e forma l'angiotensina I. È la tappa che regola tutto il sistema.",
+  "universita": "Proteasi aspartica (EC 3.4.23.15), molto specifica per l'angiotensinogeno; deriva dalla prorenina. Il suo rilascio è il passaggio limitante del sistema, perché l'angiotensinogeno è presente in grande quantità. Si misura come attività reninica plasmatica o come concentrazione di renina.",
+  "clinica": "Il rapporto aldosterone/renina è lo screening dell'iperaldosteronismo primario (aldosterone alto, renina soppressa). L'aliskiren inibisce direttamente la renina. ACE-inibitori, sartani e diuretici aumentano la renina perché tolgono il feedback."
+ },
+ "angiotensinogeno": {
+  "tipo": "molecola",
+  "base": "Una proteina del sangue fatta dal fegato: è la «materia prima» da cui si ottiene l'angiotensina.",
+  "superiore": "Proteina plasmatica (globulina) prodotta soprattutto dal fegato; è il precursore inattivo di tutte le angiotensine.",
+  "universita": "Glicoproteina della famiglia delle serpine (senza attività inibitoria). La renina stacca i primi 10 aminoacidi dell'estremità N-terminale, formando l'angiotensina I. La sintesi è aumentata da glucocorticoidi, estrogeni, ormoni tiroidei e angiotensina II.",
+  "clinica": "Estrogeni (pillola contraccettiva, gravidanza) aumentano l'angiotensinogeno e possono alzare la pressione. Nell'insufficienza epatica grave l'angiotensinogeno cala."
+ },
+ "angiotensina I": {
+  "tipo": "molecola",
+  "base": "Un pezzetto staccato dalla proteina del fegato: ancora «addormentato», deve essere trasformato per funzionare.",
+  "superiore": "Peptide di 10 aminoacidi (decapeptide) formato dalla renina a partire dall'angiotensinogeno; è quasi privo di attività e serve da precursore dell'angiotensina II.",
+  "universita": "Convertita in angiotensina II dall'ACE (rimozione del dipeptide C-terminale His-Leu). Può essere convertita anche da altre proteasi, come la chimasi dei mastociti (via indipendente dall'ACE, importante nel cuore).",
+  "clinica": "Con gli ACE-inibitori l'angiotensina I si accumula; la via della chimasi spiega perché l'angiotensina II può risalire in parte nel tempo («escape»)."
+ },
+ "enzima di conversione dell'angiotensina (ACE)": {
+  "tipo": "enzima",
+  "base": "Un aiutante sulle pareti dei vasi, soprattutto nei polmoni, che «sveglia» l'angiotensina trasformandola nella forma attiva.",
+  "superiore": "Enzima legato alla superficie dell'endotelio (soprattutto dei capillari polmonari) che trasforma l'angiotensina I in angiotensina II staccando 2 aminoacidi. Degrada anche la bradichinina, una sostanza che dilata i vasi.",
+  "universita": "Dipeptidil carbossipeptidasi zinco-dipendente (EC 3.4.15.1), identica alla chininasi II. Agisce sia aumentando un vasocostrittore (angiotensina II) sia eliminando un vasodilatatore (bradichinina). L'omologo ACE2 trasforma l'angiotensina II in angiotensina 1-7 (vasodilatatrice) ed è il recettore usato dal SARS-CoV-2.",
+  "clinica": "ACE-inibitori (ramipril, enalapril): ipertensione, scompenso, nefropatia diabetica. L'accumulo di bradichinina spiega la tosse secca e il raro angioedema. L'ACE sierico è elevato nella sarcoidosi."
+ },
+ "angiotensina II": {
+  "tipo": "molecola",
+  "base": "L'ormone che alza la pressione: stringe i vasi, fa trattenere sale e acqua e fa venire sete.",
+  "superiore": "Peptide di 8 aminoacidi (octapeptide) formato dall'ACE: è l'ormone attivo del sistema. Alza la pressione con vasocostrizione, liberazione di aldosterone e ADH, sete e riassorbimento di sodio nel tubulo prossimale.",
+  "universita": "Emivita nel plasma molto breve (1-2 minuti). Agisce soprattutto sul recettore AT1; il recettore AT2 ha effetti in gran parte opposti. Altri effetti: stimola il simpatico, la crescita e la fibrosi di cuore e vasi (rimodellamento), stringe l'arteriola efferente mantenendo la filtrazione glomerulare. È degradata dalle angiotensinasi e dall'ACE2.",
+  "clinica": "L'angiotensina II sintetica si usa nello shock vasodilatatorio refrattario. Gli effetti fibrotici spiegano il beneficio di ACE-inibitori e sartani nello scompenso e nella nefropatia."
+ },
+ "vasocostrizione": {
+  "tipo": "struttura",
+  "base": "I vasi sanguigni si stringono, come quando si stringe un tubo dell'acqua: la pressione sale.",
+  "superiore": "Restringimento del lume dei vasi per contrazione della muscolatura liscia della parete, soprattutto delle arteriole. Aumenta le resistenze periferiche e quindi la pressione arteriosa (pressione = gittata cardiaca × resistenze).",
+  "universita": "Per la legge di Poiseuille la resistenza è inversamente proporzionale alla quarta potenza del raggio: piccole variazioni del calibro delle arteriole cambiano molto la resistenza. Mediatori: angiotensina II (AT1), noradrenalina (α1), ADH (V1), endotelina; si oppongono NO, prostaciclina e peptidi natriuretici.",
+  "clinica": ""
+ },
+ "recettore AT1": {
+  "tipo": "enzima",
+  "base": "La «serratura» su cui si attacca l'angiotensina II per far stringere i vasi e far partire gli altri effetti.",
+  "superiore": "Recettore di tipo 1 dell'angiotensina II: media quasi tutti gli effetti noti dell'ormone (vasocostrizione, aldosterone, sete, ADH, crescita cellulare).",
+  "universita": "Recettore a 7 domini transmembrana accoppiato a Gq: fosfolipasi C → IP₃ e Ca²⁺ intracellulare (contrazione) e DAG/PKC. Presente in vasi, surrene, rene, cuore, cervello. Stimola anche vie di crescita e la NADPH ossidasi (stress ossidativo, fibrosi).",
+  "clinica": "I sartani (losartan, valsartan, irbesartan) bloccano in modo selettivo il recettore AT1."
+ },
+ "zona glomerulosa della corteccia surrenale": {
+  "tipo": "struttura",
+  "base": "La parte più esterna del surrene, piccola ghiandola sopra il rene, che produce l'ormone che fa trattenere il sale.",
+  "superiore": "Strato più esterno della corteccia surrenale, subito sotto la capsula. Produce i mineralcorticoidi, soprattutto l'aldosterone.",
+  "universita": "È l'unica zona che esprime l'aldosterone sintasi (CYP11B2) e non ha la 17α-idrossilasi, quindi non produce cortisolo né androgeni. Stimoli: angiotensina II (via AT1) e aumento del K⁺ (depolarizzazione e ingresso di Ca²⁺); l'ACTH ha un ruolo minore e transitorio.",
+  "clinica": "Adenoma surrenalico secernente aldosterone o iperplasia bilaterale: iperaldosteronismo primario, la causa più frequente di ipertensione secondaria. Deficit di 21-idrossilasi: forma con perdita di sali nel neonato."
+ },
+ "riassorbimento di sodio e acqua": {
+  "tipo": "struttura",
+  "base": "Il rene «riprende» sale e acqua invece di farli uscire con la pipì: così nel sangue c'è più liquido.",
+  "superiore": "Ritorno nel sangue del Na⁺ filtrato dal glomerulo; l'acqua segue il sodio per osmosi. Aumenta il volume del sangue e quindi la pressione. L'aldosterone agisce sulla parte finale del nefrone.",
+  "universita": "Nella cellula principale del dotto collettore l'aldosterone lega il recettore mineralcorticoide e induce (anche tramite SGK1) ENaC apicali e Na⁺/K⁺-ATPasi basolaterali; il lume diventa negativo e favorisce la secrezione di K⁺ (ROMK) e, nelle cellule intercalate, di H⁺. L'aldosterone agisce sul piccolo ma regolabile ultimo tratto del sodio filtrato.",
+  "clinica": "Diuretici risparmiatori di K⁺: amiloride (blocca ENaC) e spironolattone (blocca il recettore). Sindrome di Liddle (ENaC sempre attivo): ipertensione con ipokaliemia e aldosterone basso."
+ },
+ "tubulo collettore": {
+  "tipo": "struttura",
+  "base": "L'ultima parte dei tubicini del rene, dove si decide quanta acqua e quanto sale tenere prima di fare la pipì.",
+  "superiore": "Parte terminale del nefrone (tubulo connettore e dotto collettore). Regola in modo fine il riassorbimento di Na⁺ e acqua e la secrezione di K⁺ e H⁺, sotto il controllo di aldosterone e ADH.",
+  "universita": "Cellule principali: ENaC, ROMK, acquaporine 2 (regolate dall'ADH) e 3-4 basolaterali. Cellule intercalate di tipo A (secernono H⁺ con la H⁺-ATPasi) e di tipo B (secernono HCO₃⁻). Attraversa la midollare iperosmotica, che permette di concentrare l'urina.",
+  "clinica": "Bersaglio di diuretici (amiloride, spironolattone), di farmaci per l'iponatriemia (tolvaptan, antagonista V2) e sede del danno da litio (diabete insipido nefrogenico)."
+ },
+ "ADH (vasopressina)": {
+  "tipo": "molecola",
+  "base": "L'ormone che dice ai reni di risparmiare acqua: la pipì diventa più scura e scarsa.",
+  "superiore": "Ormone antidiuretico (vasopressina): peptide prodotto dall'ipotalamo e liberato dalla neuroipofisi. Fa riassorbire acqua nel dotto collettore e, ad alte concentrazioni, stringe i vasi.",
+  "universita": "Nonapeptide sintetizzato dai neuroni dei nuclei sopraottico e paraventricolare. Stimoli: aumento dell'osmolarità plasmatica (il più sensibile, bastano variazioni di circa l'1-2%), calo marcato del volume o della pressione, angiotensina II, nausea, dolore. Recettori V2 (rene, Gs → cAMP → acquaporina 2) e V1 (vasi, Gq).",
+  "clinica": "Diabete insipido centrale (manca ADH; si cura con desmopressina) o nefrogenico (il rene non risponde). SIADH: troppo ADH, iponatriemia con urine concentrate. La vasopressina si usa anche nello shock settico."
+ },
+ "neuroipofisi": {
+  "tipo": "struttura",
+  "base": "La parte dietro dell'ipofisi, che conserva e libera nel sangue gli ormoni fatti dal cervello.",
+  "superiore": "Ipofisi posteriore: è formata dalle terminazioni degli assoni dei neuroni ipotalamici. Non produce ormoni, ma conserva e libera ADH e ossitocina.",
+  "universita": "Di origine neuroectodermica. ADH e ossitocina, legati alle neurofisine, scendono lungo il fascio ipotalamo-ipofisario e si accumulano nelle terminazioni (corpi di Herring); vengono liberati per esocitosi quando arrivano potenziali d'azione. Alla RM in T1 appare come una «macchia brillante» che si perde nel diabete insipido centrale.",
+  "clinica": "Diabete insipido centrale dopo chirurgia ipofisaria, traumi cranici, tumori o malattie infiltrative."
+ },
+ "riassorbimento di acqua": {
+  "tipo": "struttura",
+  "base": "Il rene «recupera» acqua invece di buttarla nella pipì.",
+  "superiore": "Passaggio di acqua dal lume dei tubuli renali al sangue per osmosi. Nel dotto collettore è regolato dall'ADH: con ADH l'urina è concentrata, senza ADH è diluita.",
+  "universita": "Circa due terzi dell'acqua filtrata è riassorbita nel tubulo prossimale in modo non regolato (acquaporina 1); nel dotto collettore il riassorbimento dipende dall'ADH e dal gradiente osmotico della midollare (moltiplicatore controcorrente, urea). L'urina può variare da circa 50 a 1200 mOsm/kg.",
+  "clinica": "L'osmolarità urinaria e la risposta alla desmopressina distinguono diabete insipido centrale, nefrogenico e polidipsia primaria."
+ },
+ "acquaporina 2": {
+  "tipo": "enzima",
+  "base": "Piccoli «tubicini» per l'acqua che il rene inserisce nelle sue cellule quando deve risparmiare acqua.",
+  "superiore": "Proteina canale per l'acqua presente nelle cellule principali del dotto collettore. L'ADH la fa inserire nella membrana dal lato dell'urina e così l'acqua può tornare nel sangue.",
+  "universita": "Il recettore V2 (Gs → cAMP → PKA) fa fosforilare l'AQP2 e ne provoca il trasferimento da vescicole intracellulari alla membrana apicale; a lungo termine ne aumenta anche la sintesi. L'acqua esce poi dal lato del sangue tramite AQP3 e AQP4. È un canale per l'acqua, non un enzima.",
+  "clinica": "Mutazioni di AQP2 o del recettore V2: diabete insipido nefrogenico congenito. Il litio riduce l'AQP2 (diabete insipido nefrogenico acquisito)."
+ },
+ "sete": {
+  "tipo": "struttura",
+  "base": "Il bisogno di bere: il cervello ci avvisa che nel corpo manca acqua.",
+  "superiore": "Sensazione cosciente che spinge a bere. È stimolata dall'aumento della concentrazione del plasma, dal calo del volume del sangue e dall'angiotensina II; i centri sono nell'ipotalamo.",
+  "universita": "Osmocettori nell'organo vascoloso della lamina terminale e nell'organo subfornicale (zone senza barriera ematoencefalica) rispondono all'osmolarità; l'organo subfornicale ha recettori AT1 e risponde all'angiotensina II. Bere spegne la sete in fretta, prima che l'acqua sia assorbita (segnali dall'orofaringe).",
+  "clinica": "Negli anziani la sete è ridotta: rischio di disidratazione e ipernatriemia. Polidipsia psicogena: si beve troppo, con rischio di iponatriemia."
+ },
+ "pressione arteriosa normale": {
+  "tipo": "struttura",
+  "base": "La «spinta» giusta del sangue nei vasi, che porta sangue a tutti gli organi senza rovinarli.",
+  "superiore": "Pressione del sangue nelle arterie nei valori considerati normali; nell'adulto la pressione ottimale è inferiore a 120/80 mmHg. Dipende da quanto sangue pompa il cuore e da quanto sono strette le arteriole.",
+  "universita": "Pressione arteriosa media = gittata cardiaca × resistenze periferiche totali. Regolazione rapida (secondi): riflesso barocettivo; intermedia (minuti-ore): sistema renina-angiotensina, ADH; lunga (giorni): bilancio del sodio da parte del rene (natriuresi pressoria), peptidi natriuretici.",
+  "clinica": "Ipertensione arteriosa: valori di 140/90 mmHg o più in ambulatorio, confermati con misurazioni ripetute o monitoraggio delle 24 ore. Nei pazienti trattati si cerca un valore più basso secondo il rischio cardiovascolare."
+ },
+ "ACE-inibitori": {
+  "tipo": "molecola",
+  "base": "Medicine per la pressione alta che bloccano l'aiutante che «sveglia» l'ormone che stringe i vasi.",
+  "superiore": "Farmaci che inibiscono l'enzima di conversione dell'angiotensina (ACE): meno angiotensina II e più bradichinina. Esempi: ramipril, enalapril, lisinopril, captopril.",
+  "universita": "Riducono vasocostrizione, aldosterone (quindi trattengono K⁺) e rimodellamento cardiaco e vascolare; dilatano l'arteriola efferente riducendo la pressione nel glomerulo e la proteinuria. L'accumulo di bradichinina spiega tosse e angioedema. Molti sono profarmaci attivati dal fegato (enalapril → enalaprilato).",
+  "clinica": "Indicati in ipertensione, scompenso con frazione d'eiezione ridotta, dopo infarto e nella nefropatia diabetica con albuminuria. Controindicati in gravidanza e nella stenosi bilaterale dell'arteria renale; controllare creatinina e potassio dopo l'inizio. Non associarli ai sartani."
+ },
+ "sartani": {
+  "tipo": "molecola",
+  "base": "Medicine per la pressione alta che impediscono all'ormone che stringe i vasi di attaccarsi alla sua «serratura».",
+  "superiore": "Antagonisti del recettore AT1 dell'angiotensina II (ARB). Esempi: losartan, valsartan, irbesartan, candesartan, telmisartan.",
+  "universita": "Bloccano gli effetti dell'angiotensina II sul recettore AT1 qualunque sia la via che l'ha prodotta (ACE o chimasi); non aumentano la bradichinina. L'angiotensina II in eccesso stimola il recettore AT2. Il sacubitril/valsartan associa un sartano a un inibitore della neprilisina (più peptidi natriuretici).",
+  "clinica": "Stesse indicazioni degli ACE-inibitori, alternativa in chi ha tosse da ACE-inibitore. Stesse precauzioni: iperkaliemia, peggioramento della funzione renale, controindicati in gravidanza. Sacubitril/valsartan nello scompenso a frazione d'eiezione ridotta."
+ },
+ "spironolattone": {
+  "tipo": "molecola",
+  "base": "Una medicina che blocca l'ormone che fa trattenere il sale: si elimina più acqua e si conserva il potassio.",
+  "superiore": "Antagonista del recettore dei mineralcorticoidi (antialdosteronico); è un diuretico risparmiatore di potassio.",
+  "universita": "Steroide che compete con l'aldosterone per il recettore mineralcorticoide nel dotto collettore (e in cuore e vasi, riducendo la fibrosi). Blocca anche i recettori degli androgeni e del progesterone. L'eplerenone è più selettivo.",
+  "clinica": "Usato in scompenso cardiaco, ascite da cirrosi, iperaldosteronismo primario e ipertensione resistente. Effetti collaterali: iperkaliemia (soprattutto con ACE-inibitori o sartani e insufficienza renale), ginecomastia."
+ },
+ "aliskiren": {
+  "tipo": "molecola",
+  "base": "Una medicina per la pressione che blocca il primo aiutante della catena, quello del rene.",
+  "superiore": "Inibitore diretto della renina: impedisce la trasformazione dell'angiotensinogeno in angiotensina I.",
+  "universita": "Blocca il sito attivo della renina: calano angiotensina I, angiotensina II e aldosterone, e cala l'attività reninica plasmatica (anche se la concentrazione di renina aumenta). Bassa biodisponibilità orale.",
+  "clinica": "Antipertensivo poco usato. Non va associato ad ACE-inibitori o sartani nei diabetici o con insufficienza renale (più eventi avversi senza beneficio). Controindicato in gravidanza."
+ }
+}

@@ -1,0 +1,482 @@
+[
+ {
+  "id": "NFMA-201",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Si lancia tre volte una moneta equilibrata. Qual è la probabilità di ottenere esattamente due teste?",
+  "opzioni": {
+   "A": "3/8",
+   "B": "1/8",
+   "C": "1/2",
+   "D": "2/3",
+   "E": "1/4"
+  },
+  "giusta": "A",
+  "perche": "Il numero di teste segue una distribuzione binomiale con n = 3 e p = 1/2: P(X = 2) = C(3, 2)·(1/2)²·(1/2)¹ = 3 · 1/8 = 3/8. Le sequenze favorevoli sono TTC, TCT e CTT, su 8 equiprobabili. Il valore 1/8 considera una sola sequenza, dimenticando il coefficiente binomiale.",
+  "semplice": "Su 8 risultati possibili ugualmente probabili, quelli con due teste sono 3: due teste e una croce, con la croce al primo, al secondo o al terzo posto.",
+  "passaggi": [
+   "Riconosci una binomiale: n = 3, p = 1/2, k = 2",
+   "Formula: P(X = k) = C(n, k)·pᵏ·(1 − p)ⁿ⁻ᵏ",
+   "Calcolo: C(3, 2) = 3 e (1/2)³ = 1/8",
+   "Risultato: 3 · 1/8 = 3/8"
+  ],
+  "concetto": "distribuzione binomiale"
+ },
+ {
+  "id": "NFMA-202",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Qual è il valore atteso del punteggio ottenuto lanciando un dado equilibrato a sei facce?",
+  "opzioni": {
+   "A": "3",
+   "B": "3,5",
+   "C": "6",
+   "D": "21",
+   "E": "1/6"
+  },
+  "giusta": "B",
+  "perche": "Il valore atteso è la somma dei valori pesati con le loro probabilità: E(X) = (1 + 2 + 3 + 4 + 5 + 6)·1/6 = 21/6 = 3,5. Non è un valore che il dado può effettivamente mostrare, ma la media su moltissimi lanci. 21 è la somma delle facce non divisa per 6.",
+  "semplice": "Se lanci un dado tantissime volte e fai la media dei risultati, ottieni circa 3,5, anche se nessuna faccia riporta quel numero.",
+  "passaggi": [
+   "Elenca i valori possibili: da 1 a 6, ciascuno con probabilità 1/6",
+   "Formula: E(X) = Σ xᵢ·pᵢ",
+   "Calcolo: 21 · 1/6",
+   "Risultato: E(X) = 3,5"
+  ],
+  "concetto": "valore atteso"
+ },
+ {
+  "id": "NFMA-203",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Una variabile aleatoria X ha distribuzione binomiale con n = 10 e p = 0,2. Quanto vale la sua varianza?",
+  "opzioni": {
+   "A": "2",
+   "B": "0,16",
+   "C": "1,6",
+   "D": "1,26",
+   "E": "8"
+  },
+  "giusta": "C",
+  "perche": "Per una binomiale la varianza è Var(X) = n·p·(1 − p) = 10 · 0,2 · 0,8 = 1,6, mentre il valore atteso è n·p = 2. Il valore 2 è la media, non la varianza; 1,26 è circa la deviazione standard √1,6.",
+  "semplice": "In 10 tentativi con il 20% di successo ci si aspetta in media 2 successi; la varianza misura quanto i risultati reali si allontanano di solito da questo valore.",
+  "passaggi": [
+   "Dati: n = 10, p = 0,2",
+   "Formula: Var(X) = n·p·(1 − p)",
+   "Calcolo: 10 · 0,2 · 0,8",
+   "Risultato: Var(X) = 1,6 (e σ ≈ 1,26)"
+  ],
+  "concetto": "varianza della binomiale"
+ },
+ {
+  "id": "NFMA-204",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Per una variabile con distribuzione normale di media μ e deviazione standard σ, qual è circa la probabilità che un valore cada tra μ − σ e μ + σ?",
+  "opzioni": {
+   "A": "50%",
+   "B": "95%",
+   "C": "99,7%",
+   "D": "68%",
+   "E": "34%"
+  },
+  "giusta": "D",
+  "perche": "Per la distribuzione normale vale la regola empirica 68-95-99,7: circa il 68% dei valori cade entro una deviazione standard dalla media, il 95% entro due e il 99,7% entro tre. Il valore 34% è la probabilità di un solo lato (tra μ e μ + σ); il 95% riguarda l'intervallo μ ± 2σ.",
+  "semplice": "Nelle misure che seguono una curva a campana, circa due valori su tre stanno vicini alla media, entro una deviazione standard.",
+  "passaggi": [
+   "Ricorda la regola empirica della normale",
+   "Entro ±1σ: circa 68%",
+   "Entro ±2σ: circa 95%; entro ±3σ: circa 99,7%",
+   "Resta la D"
+  ],
+  "concetto": "regola 68-95-99,7"
+ },
+ {
+  "id": "NFMA-205",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "In un centralino arrivano in media 2 telefonate al minuto, secondo una distribuzione di Poisson. Qual è circa la probabilità che in un dato minuto non arrivi nessuna telefonata?",
+  "opzioni": {
+   "A": "0",
+   "B": "0,50",
+   "C": "0,27",
+   "D": "0,018",
+   "E": "0,14"
+  },
+  "giusta": "E",
+  "perche": "Per una distribuzione di Poisson di parametro λ, P(X = k) = λᵏ·e^(−λ)/k!. Per k = 0 si ottiene P(X = 0) = e^(−2) ≈ 0,135, circa il 14%. Il valore 0,27 è P(X = 1) = 2·e^(−2); pensare che la probabilità sia nulla perché la media è 2 è un errore di interpretazione.",
+  "semplice": "Anche se in media arrivano due chiamate al minuto, capita abbastanza spesso, circa una volta su sette, che in un minuto non chiami nessuno.",
+  "passaggi": [
+   "Dati: λ = 2, k = 0",
+   "Formula: P(X = k) = λᵏ·e^(−λ)/k!",
+   "Calcolo: 2⁰·e^(−2)/0! = e^(−2)",
+   "Risultato: ≈ 0,135, cioè circa 0,14"
+  ],
+  "concetto": "distribuzione di Poisson"
+ },
+ {
+  "id": "NFMA-206",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "L'altezza dei ragazzi di una scuola ha distribuzione normale con media 170 cm e deviazione standard 10 cm. Qual è il punteggio standardizzato z di un ragazzo alto 190 cm?",
+  "opzioni": {
+   "A": "2",
+   "B": "20",
+   "C": "1,9",
+   "D": "0,5",
+   "E": "−2"
+  },
+  "giusta": "A",
+  "perche": "La standardizzazione è z = (x − μ)/σ = (190 − 170)/10 = 2: il ragazzo è due deviazioni standard sopra la media. Il valore 20 è lo scarto in centimetri non diviso per σ; −2 ha il segno invertito.",
+  "semplice": "Il punteggio z dice di quante «unità di variabilità» un valore si allontana dalla media. Qui lo scarto è 20 cm e ogni unità vale 10 cm, quindi z = 2.",
+  "passaggi": [
+   "Dati: x = 190 cm, μ = 170 cm, σ = 10 cm",
+   "Formula: z = (x − μ)/σ",
+   "Calcolo: (190 − 170)/10",
+   "Risultato: z = 2"
+  ],
+  "concetto": "standardizzazione"
+ },
+ {
+  "id": "NFMA-207",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Una variabile aleatoria X è distribuita uniformemente sull'intervallo [0, 10]. Qual è la probabilità che 2 < X < 5?",
+  "opzioni": {
+   "A": "0,5",
+   "B": "0,3",
+   "C": "0,2",
+   "D": "3",
+   "E": "0,7"
+  },
+  "giusta": "B",
+  "perche": "Nella distribuzione uniforme continua la densità è costante, 1/(b − a) = 1/10, e la probabilità di un intervallo è proporzionale alla sua lunghezza: P(2 < X < 5) = (5 − 2)/10 = 0,3. Il valore 3 è la lunghezza dell'intervallo non divisa per la lunghezza totale e non può essere una probabilità.",
+  "semplice": "Se tutti i punti tra 0 e 10 sono ugualmente probabili, la probabilità di cadere in un tratto lungo 3 è 3 su 10.",
+  "passaggi": [
+   "Dati: X uniforme su [0, 10]",
+   "Densità: f(x) = 1/10",
+   "Formula: P(c < X < d) = (d − c)/(b − a)",
+   "Calcolo: (5 − 2)/10 = 0,3"
+  ],
+  "concetto": "distribuzione uniforme continua"
+ },
+ {
+  "id": "NFMA-208",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Si lancia quattro volte un dado equilibrato. Qual è circa la probabilità di ottenere almeno un 6?",
+  "opzioni": {
+   "A": "4/6 ≈ 0,67",
+   "B": "1/6 ≈ 0,17",
+   "C": "≈ 0,52",
+   "D": "≈ 0,48",
+   "E": "1/1296"
+  },
+  "giusta": "C",
+  "perche": "Conviene passare all'evento complementare: la probabilità di non ottenere mai 6 in 4 lanci indipendenti è (5/6)⁴ = 625/1296 ≈ 0,482. Quindi P(almeno un 6) = 1 − 0,482 ≈ 0,518. Il valore 4/6 somma le probabilità dei singoli lanci, contando più volte i casi con più di un 6; 0,48 è il complementare.",
+  "semplice": "È più facile contare quando le cose vanno «male»: nessun 6 in quattro lanci capita poco meno della metà delle volte, quindi almeno un 6 capita poco più della metà.",
+  "passaggi": [
+   "Passa al complementare: «nessun 6»",
+   "P(nessun 6) = (5/6)⁴ = 625/1296 ≈ 0,482",
+   "P(almeno un 6) = 1 − 0,482",
+   "Risultato: ≈ 0,518"
+  ],
+  "concetto": "evento complementare e prove ripetute"
+ },
+ {
+  "id": "NFMA-209",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Una variabile aleatoria X assume i valori 0, 1 e 2 con probabilità 0,25, 0,50 e 0,25. Quanto vale la sua varianza?",
+  "opzioni": {
+   "A": "1",
+   "B": "1,5",
+   "C": "0,25",
+   "D": "0,5",
+   "E": "0,71"
+  },
+  "giusta": "D",
+  "perche": "Il valore atteso è E(X) = 0 · 0,25 + 1 · 0,5 + 2 · 0,25 = 1. Poi E(X²) = 0 + 1 · 0,5 + 4 · 0,25 = 1,5, quindi Var(X) = E(X²) − [E(X)]² = 1,5 − 1 = 0,5. Il valore 1,5 è E(X²), dimenticando di sottrarre il quadrato della media; 0,71 è la deviazione standard.",
+  "semplice": "La varianza misura quanto i valori si allontanano dalla media. Qui la media è 1: metà delle volte esce proprio 1 (scarto zero), l'altra metà esce 0 o 2 (scarto 1).",
+  "passaggi": [
+   "Calcola E(X) = 0 · 0,25 + 1 · 0,5 + 2 · 0,25 = 1",
+   "Calcola E(X²) = 0 · 0,25 + 1 · 0,5 + 4 · 0,25 = 1,5",
+   "Formula: Var(X) = E(X²) − [E(X)]²",
+   "Risultato: 1,5 − 1 = 0,5"
+  ],
+  "concetto": "varianza di una variabile discreta"
+ },
+ {
+  "id": "NFMA-210",
+  "materia": "Matematica",
+  "argomento": "Distribuzioni di probabilità",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sulla distribuzione normale è corretta?",
+  "opzioni": {
+   "A": "È definita solo per valori positivi",
+   "B": "La sua media è sempre zero",
+   "C": "È asimmetrica a destra",
+   "D": "La probabilità che X assuma esattamente il valore μ è massima e vale 1",
+   "E": "È simmetrica rispetto alla media, e media, mediana e moda coincidono"
+  },
+  "giusta": "E",
+  "perche": "La curva normale (gaussiana) è a campana, simmetrica rispetto a μ, che è contemporaneamente media, mediana e moda; è definita su tutti i numeri reali. Solo la normale standardizzata ha media 0. Per una variabile continua la probabilità di un singolo valore è sempre nulla: la densità è massima in μ, ma non la probabilità.",
+  "semplice": "La curva a campana è uguale a destra e a sinistra del centro: il valore più frequente, quello di mezzo e la media sono lo stesso punto.",
+  "passaggi": [
+   "Ricorda la forma a campana simmetrica",
+   "Escludi B: vale solo per la normale standard",
+   "Escludi D: per variabili continue P(X = valore) = 0",
+   "Resta la E"
+  ],
+  "concetto": "proprietà della distribuzione normale"
+ },
+ {
+  "id": "NFMA-211",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«Negli ultimi decenni il numero di api domestiche e selvatiche è diminuito in molte regioni. La perdita non riguarda solo la produzione di miele: circa tre quarti delle colture alimentari più diffuse dipendono almeno in parte dagli insetti impollinatori. Senza di essi molte piante produrrebbero meno frutti e semi, con effetti sulla varietà della nostra alimentazione. Proteggere gli impollinatori significa quindi proteggere anche la nostra tavola.»\nQual è la tesi principale del brano?",
+  "opzioni": {
+   "A": "La tutela degli impollinatori è importante perché da essi dipende buona parte della produzione alimentare",
+   "B": "La produzione di miele è in crisi in tutto il mondo",
+   "C": "Le api selvatiche sono più utili di quelle domestiche",
+   "D": "Tre quarti delle piante non possono vivere senza insetti",
+   "E": "La varietà dell'alimentazione dipende solo dalle api"
+  },
+  "giusta": "A",
+  "perche": "La frase conclusiva («Proteggere gli impollinatori significa quindi proteggere anche la nostra tavola») esprime la tesi, sostenuta dal dato sulle colture che dipendono dagli impollinatori. La B riprende un dettaglio che il brano dichiara secondario; la D deforma il dato, che riguarda le colture alimentari più diffuse e una dipendenza «almeno in parte»; la E esagera con «solo».",
+  "semplice": "La tesi è l'idea che l'autore vuole dimostrare, di solito annunciata da parole come «quindi». Qui l'idea è: se spariscono le api, si impoverisce anche quello che mangiamo.",
+  "passaggi": [
+   "Cerca la frase che trae una conclusione: è introdotta da «quindi»",
+   "Verifica che le altre frasi la sostengano: calo delle api e dipendenza delle colture",
+   "Escludi D ed E: deformano o esagerano i dati del brano",
+   "Resta la A"
+  ],
+  "concetto": "individuare la tesi"
+ },
+ {
+  "id": "NFMA-212",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«In un esperimento, due gruppi di studenti hanno letto lo stesso articolo: il primo su carta, il secondo su tablet. Nel test successivo i due gruppi hanno ricordato in modo simile le informazioni principali, ma chi aveva letto su carta ha ricostruito con maggiore precisione l'ordine degli eventi narrati. I ricercatori ipotizzano che la posizione fisica delle parole sulla pagina aiuti a costruire una mappa mentale di ciò che si legge.»\nQuale affermazione è coerente con il brano?",
+  "opzioni": {
+   "A": "Leggere su tablet peggiora la memoria in generale",
+   "B": "Il supporto di lettura sembra influire soprattutto sul ricordo della sequenza degli eventi",
+   "C": "Gli studenti che leggono su carta capiscono meglio le idee principali",
+   "D": "I ricercatori hanno dimostrato che la mappa mentale è l'unica causa della differenza",
+   "E": "Il tablet non dovrebbe mai essere usato a scuola"
+  },
+  "giusta": "B",
+  "perche": "Il brano riporta che i due gruppi ricordano in modo simile le informazioni principali e differiscono nella ricostruzione dell'ordine degli eventi: la B riassume esattamente questo risultato. La C contraddice il brano; la D trasforma un'ipotesi («ipotizzano») in una dimostrazione; A ed E sono generalizzazioni non sostenute.",
+  "semplice": "Il risultato dell'esperimento è preciso: i due gruppi ricordano allo stesso modo le cose importanti, ma chi legge su carta ricorda meglio l'ordine dei fatti. Non si può dire di più.",
+  "passaggi": [
+   "Individua il risultato: informazioni principali simili, ordine degli eventi migliore su carta",
+   "Nota che la spiegazione è solo un'ipotesi dei ricercatori: escludi D",
+   "Escludi C, che contraddice il brano, e A ed E, troppo generali",
+   "Resta la B"
+  ],
+  "concetto": "distinguere dati, ipotesi e generalizzazioni"
+ },
+ {
+  "id": "NFMA-213",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«Per secoli i cartografi hanno riempito gli spazi vuoti delle mappe con mostri marini, isole immaginarie e terre favolose. Non si trattava solo di decorazione: quei disegni segnalavano ai naviganti i limiti delle conoscenze dell'epoca. Con il progredire delle esplorazioni le figure fantastiche sono scomparse, sostituite da coste misurate e da coordinate sempre più precise.»\nQuale titolo è più adatto al brano?",
+  "opzioni": {
+   "A": "Le grandi esplorazioni geografiche",
+   "B": "I mostri marini nella mitologia antica",
+   "C": "Dalle figure fantastiche alle coordinate: come le mappe raccontano ciò che si conosce",
+   "D": "L'arte della decorazione nel Rinascimento",
+   "E": "Come si calcolano le coordinate geografiche"
+  },
+  "giusta": "C",
+  "perche": "Il brano descrive come le figure fantastiche delle mappe indicassero i limiti delle conoscenze e come siano state sostituite da dati misurati con il progredire delle esplorazioni: il titolo C coglie sia il tema (le mappe) sia lo sviluppo (dal fantastico al misurato). A e B sono troppo generici o fuori tema; D riduce i disegni a decorazione, cosa che il brano nega esplicitamente.",
+  "semplice": "Un buon titolo riassume tutto il brano in poche parole, non solo un dettaglio. Qui il filo conduttore è come le mappe sono cambiate insieme a quello che si sapeva del mondo.",
+  "passaggi": [
+   "Individua l'argomento centrale: le mappe e i limiti delle conoscenze",
+   "Individua lo sviluppo: dal fantastico al misurato",
+   "Escludi D: il brano dice «non si trattava solo di decorazione»",
+   "Escludi A, B ed E, troppo generici o marginali: resta la C"
+  ],
+  "concetto": "scegliere il titolo"
+ },
+ {
+  "id": "NFMA-214",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«Il nuovo regolamento del condominio è stato accolto con favore dalla maggior parte dei residenti, ma alcuni lo considerano farraginoso: le procedure per prenotare la sala comune richiedono tre moduli diversi, due firme e un preavviso di dieci giorni.»\nNel contesto, che cosa significa «farraginoso»?",
+  "opzioni": {
+   "A": "Ingiusto verso alcuni residenti",
+   "B": "Troppo permissivo",
+   "C": "Costoso da applicare",
+   "D": "Complicato e confuso, pieno di passaggi superflui",
+   "E": "Scritto in una lingua antiquata"
+  },
+  "giusta": "D",
+  "perche": "Il significato si ricava dal contesto: subito dopo i due punti il brano spiega il giudizio elencando tre moduli, due firme e dieci giorni di preavviso, cioè procedure complicate e appesantite. «Farraginoso» significa infatti confuso, disordinato, ingombro di elementi inutili. Nessuna parte del brano parla di costi, ingiustizie o linguaggio antiquato.",
+  "semplice": "Quando non conosci una parola, guarda cosa viene detto subito dopo: qui i due punti introducono un elenco di passaggi complicati, che spiega proprio il significato della parola.",
+  "passaggi": [
+   "Individua la parola e la frase che la segue",
+   "Nota che i due punti introducono una spiegazione",
+   "La spiegazione elenca procedure lunghe e complicate",
+   "Resta la D"
+  ],
+  "concetto": "significato di una parola dal contesto"
+ },
+ {
+  "id": "NFMA-215",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«La città ha introdotto una zona a traffico limitato nel centro storico. Nei sei mesi successivi le concentrazioni di biossido di azoto nelle vie interne sono diminuite del 18%, mentre nelle strade di circonvallazione sono rimaste pressoché invariate. Il numero di visitatori dei negozi del centro, temuto in calo, è invece leggermente aumentato.»\nQuale affermazione NON è sostenuta dal brano?",
+  "opzioni": {
+   "A": "Dopo l'introduzione della zona a traffico limitato l'inquinamento da biossido di azoto nelle vie interne è diminuito",
+   "B": "Si temeva che la zona a traffico limitato riducesse le visite ai negozi",
+   "C": "Nelle strade di circonvallazione il biossido di azoto non è cambiato in modo significativo",
+   "D": "I visitatori dei negozi del centro non sono diminuiti",
+   "E": "Il traffico si è spostato sulle strade di circonvallazione, aumentandone l'inquinamento"
+  },
+  "giusta": "E",
+  "perche": "Il brano afferma che sulle strade di circonvallazione le concentrazioni sono «rimaste pressoché invariate», quindi non sostiene un aumento dell'inquinamento in quelle zone; inoltre non fornisce dati sullo spostamento del traffico. Le altre affermazioni riformulano fedelmente informazioni presenti nel brano.",
+  "semplice": "Per trovare l'affermazione non sostenuta, confronta ciascuna con il brano: quella giusta dice qualcosa che il brano non dice, o addirittura contraddice.",
+  "passaggi": [
+   "Confronta ogni opzione con il brano",
+   "A, B, C e D riprendono dati presenti nel brano",
+   "La E parla di aumento dell'inquinamento in circonvallazione",
+   "Il brano dice invece «pressoché invariate»: la E non è sostenuta"
+  ],
+  "concetto": "verificare le affermazioni sul brano"
+ },
+ {
+  "id": "NFMA-216",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«Le biblioteche di quartiere dovrebbero restare aperte anche la sera. Molti lavoratori e studenti universitari, infatti, sono impegnati durante il giorno e potrebbero frequentarle solo dopo le 19.»\nSu quale presupposto implicito si basa l'argomentazione?",
+  "opzioni": {
+   "A": "Che lavoratori e studenti desiderino effettivamente frequentare la biblioteca se ne avessero la possibilità",
+   "B": "Che le biblioteche siano troppo costose da mantenere",
+   "C": "Che di sera le biblioteche siano meno sicure",
+   "D": "Che i libri digitali abbiano sostituito quelli di carta",
+   "E": "Che gli studenti delle superiori non usino la biblioteca"
+  },
+  "giusta": "A",
+  "perche": "L'argomento passa dal fatto che lavoratori e studenti sono liberi solo di sera alla conclusione che le biblioteche dovrebbero aprire la sera. Perché il ragionamento regga, bisogna dare per scontato che queste persone vogliano davvero andarci: se non fossero interessate, l'orario serale non avrebbe senso. Le altre opzioni introducono temi estranei o contrari all'argomento.",
+  "semplice": "Un presupposto è qualcosa che l'autore non dice ma che deve essere vero perché il suo ragionamento funzioni. Qui si dà per scontato che le persone libere la sera abbiano voglia di andare in biblioteca.",
+  "passaggi": [
+   "Individua la conclusione: aprire la sera",
+   "Individua la ragione: alcune persone sono libere solo la sera",
+   "Chiediti cosa manca tra le due: che queste persone vogliano andarci",
+   "Resta la A"
+  ],
+  "concetto": "presupposto implicito"
+ },
+ {
+  "id": "NFMA-217",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«Secondo l'amministrazione, il nuovo parcheggio vicino alla stazione ridurrà il traffico in centro, perché i pendolari lasceranno l'auto e proseguiranno in treno invece di entrare in città.»\nQuale dei seguenti fatti, se vero, indebolirebbe maggiormente questa previsione?",
+  "opzioni": {
+   "A": "Il parcheggio sarà illuminato anche di notte",
+   "B": "La maggior parte del traffico in centro è dovuta a residenti che si spostano all'interno della città, non a pendolari",
+   "C": "Il treno per il centro parte ogni dieci minuti",
+   "D": "Il parcheggio avrà 500 posti",
+   "E": "Molti pendolari hanno dichiarato di essere favorevoli al progetto"
+  },
+  "giusta": "B",
+  "perche": "La previsione presuppone che il traffico del centro sia causato in buona parte dai pendolari. Se invece è dovuto soprattutto ai residenti, che non useranno il parcheggio della stazione, l'effetto sarà modesto: la B attacca proprio questo presupposto. C ed E, al contrario, rafforzano la previsione; A e D sono irrilevanti o neutre.",
+  "semplice": "Per indebolire un ragionamento si cerca un fatto che colpisca il suo punto debole. Se in centro le auto sono quasi tutte dei residenti, un parcheggio per pendolari serve a poco.",
+  "passaggi": [
+   "Individua la previsione e la sua ragione: i pendolari lasceranno l'auto",
+   "Individua il presupposto: il traffico in centro dipende dai pendolari",
+   "Cerca il fatto che nega il presupposto: la B",
+   "Escludi C ed E, che rafforzano l'argomento"
+  ],
+  "concetto": "indebolire un'argomentazione"
+ },
+ {
+  "id": "NFMA-218",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«Ogni anno, puntuale come le rondini, arriva la notizia che i giovani non leggono più. Peccato che le indagini sulla lettura mostrino da tempo che i ragazzi tra gli 11 e i 17 anni leggono più degli adulti. Forse, prima di lamentarci dei giovani, dovremmo guardare nelle nostre librerie di casa.»\nQual è il tono dell'autore?",
+  "opzioni": {
+   "A": "Neutro e puramente informativo",
+   "B": "Nostalgico e malinconico",
+   "C": "Ironico e polemico verso un luogo comune",
+   "D": "Entusiasta e celebrativo verso i giovani",
+   "E": "Preoccupato per il calo della lettura"
+  },
+  "giusta": "C",
+  "perche": "Il paragone «puntuale come le rondini» prende in giro la ripetitività della notizia, «peccato che» introduce un dato che la smentisce e la frase finale rivolge la critica agli adulti: il tono è ironico e polemico verso il luogo comune. Non è neutro, perché esprime un giudizio, e non è preoccupato per un calo che il brano stesso nega.",
+  "semplice": "L'autore scherza sul fatto che ogni anno si ripete la stessa lamentela, poi mostra che è sbagliata e rimprovera gli adulti: è un tono ironico, come quando si dice «ma guarda un po'» a chi si sbaglia sempre.",
+  "passaggi": [
+   "Nota l'espressione «puntuale come le rondini»: ironia sulla ripetitività",
+   "Nota «peccato che»: introduce una smentita",
+   "La conclusione critica gli adulti: tono polemico",
+   "Escludi A ed E: resta la C"
+  ],
+  "concetto": "riconoscere il tono"
+ },
+ {
+  "id": "NFMA-219",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«In una scuola di 600 studenti, un terzo partecipa ad almeno un'attività sportiva pomeridiana. Tra questi, la metà gioca a pallavolo. Gli altri sport sono calcio, basket e nuoto, e nessuno studente pratica più di uno sport.»\nQuanti studenti della scuola praticano calcio, basket o nuoto?",
+  "opzioni": {
+   "A": "300",
+   "B": "200",
+   "C": "50",
+   "D": "100",
+   "E": "400"
+  },
+  "giusta": "D",
+  "perche": "Gli studenti che praticano sport sono 600/3 = 200. Di questi la metà, cioè 100, gioca a pallavolo; poiché nessuno pratica più di uno sport, gli altri 100 si dividono tra calcio, basket e nuoto. Il valore 200 è il totale degli sportivi; 400 è il numero di chi non pratica sport.",
+  "semplice": "Prima trovi quanti fanno sport (un terzo di 600 è 200), poi togli la metà che gioca a pallavolo: restano 100.",
+  "passaggi": [
+   "Calcola gli sportivi: 600 · 1/3 = 200",
+   "Calcola i pallavolisti: 200 · 1/2 = 100",
+   "Usa il dato «nessuno pratica più di uno sport»",
+   "Altri sport: 200 − 100 = 100"
+  ],
+  "concetto": "ricavare dati numerici da un brano"
+ },
+ {
+  "id": "NFMA-220",
+  "materia": "Ragionamento logico",
+  "argomento": "Comprensione e analisi del testo",
+  "livello": "superiori",
+  "domanda": "Leggi il brano.\n«Il ghiacciaio ha perso quasi metà del suo spessore negli ultimi quarant'anni. (…) gli escursionisti che lo visitano oggi trovano, al posto dei crepacci di un tempo, ampie distese di detriti.»\nQuale connettivo è più adatto a collegare le due frasi al posto dei puntini?",
+  "opzioni": {
+   "A": "Tuttavia",
+   "B": "Ciononostante",
+   "C": "Al contrario",
+   "D": "In primo luogo",
+   "E": "Di conseguenza"
+  },
+  "giusta": "E",
+  "perche": "La seconda frase descrive un effetto della prima: la perdita di spessore del ghiacciaio ha fatto comparire i detriti al posto dei crepacci. Serve quindi un connettivo consecutivo come «di conseguenza». «Tuttavia», «ciononostante» e «al contrario» introducono un'opposizione che nel brano non c'è; «in primo luogo» apre un elenco.",
+  "semplice": "Tra le due frasi c'è un legame di causa ed effetto: il ghiacciaio si è assottigliato e per questo oggi si vedono detriti. La parola giusta deve esprimere proprio questo «per questo».",
+  "passaggi": [
+   "Individua il rapporto tra le frasi: causa (perdita di spessore) ed effetto (detriti)",
+   "Serve un connettivo consecutivo",
+   "Escludi A, B e C, che esprimono contrasto",
+   "Escludi D, che introduce un elenco: resta la E"
+  ],
+  "concetto": "connettivi e rapporti logici"
+ }
+]

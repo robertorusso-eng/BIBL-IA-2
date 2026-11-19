@@ -1,0 +1,306 @@
+{
+"Induzione elettromagnetica e onde elettromagnetiche": {
+"superiore": {
+"spiegazione": [
+"Nel 1831 Faraday scoprì che un campo magnetico variabile genera corrente in un circuito: è l'induzione elettromagnetica. La grandezza chiave è il flusso del campo magnetico attraverso una superficie: Φ(B) = B·S·cos θ, dove θ è l'angolo tra il campo e la normale alla superficie; si misura in weber (1 Wb = 1 T·m²). Il flusso cambia se cambia l'intensità del campo, l'area del circuito o il suo orientamento. Esempio: una spira di 0,02 m² perpendicolare a un campo di 0,5 T ha flusso 0,01 Wb; ruotata di 60° il flusso diventa 0,01·cos 60° = 0,005 Wb.",
+"La legge di Faraday-Neumann-Lenz dice che la forza elettromotrice indotta è uguale alla rapidità con cui varia il flusso, cambiata di segno: ε = −ΔΦ/Δt (per una bobina di N spire, ε = −N·ΔΦ/Δt). Esempio: una bobina di 100 spire con area 0,010 m² è immersa in un campo di 0,50 T che si annulla in 0,10 s. ΔΦ per spira = 0,50·0,010 = 0,0050 Wb, quindi ε = 100·0,0050/0,10 = 5,0 V. Il segno meno esprime la legge di Lenz: la corrente indotta ha un verso tale da opporsi alla variazione di flusso che l'ha generata. Se avvicini un magnete a una spira, la spira lo respinge; se lo allontani, lo attira.",
+"Un caso semplice è una barretta conduttrice di lunghezza L che scorre con velocità v su due binari in un campo B perpendicolare: l'area del circuito cresce e si induce ε = B·L·v. Con B = 0,20 T, L = 0,50 m e v = 4,0 m/s si ottiene ε = 0,40 V. Le applicazioni sono ovunque: l'alternatore (una bobina che ruota in un campo magnetico produce una tensione sinusoidale, quella delle centrali elettriche), la dinamo della bicicletta, i piani a induzione, i caricabatterie wireless, i metal detector.",
+"Il trasformatore usa l'induzione per cambiare la tensione alternata: due bobine avvolte sullo stesso nucleo di ferro. La corrente alternata nel primario crea un flusso variabile che induce tensione nel secondario, con rapporto V₂/V₁ = N₂/N₁. Esempio: con 230 V, 1000 spire nel primario e 50 nel secondario si ottiene V₂ = 230·50/1000 = 11,5 V. In un trasformatore ideale la potenza si conserva, quindi se la tensione scende la corrente sale nello stesso rapporto. Per trasportare energia a grande distanza si alza la tensione (centinaia di kV) per ridurre la corrente e le perdite per effetto Joule, proporzionali a R·I².",
+"Maxwell capì che anche un campo elettrico variabile genera un campo magnetico. I due campi possono allora sostenersi a vicenda e propagarsi nello spazio vuoto come onda elettromagnetica: E e B oscillano perpendicolari tra loro e alla direzione di propagazione (onda trasversale), con E = c·B. La velocità è c = 1/√(ε₀μ₀) ≈ 3,00·10⁸ m/s: Maxwell la calcolò e scoprì che la luce è un'onda elettromagnetica. Vale c = λ·f: una radio FM a 100 MHz ha λ = 3,0·10⁸/10⁸ = 3,0 m. Lo spettro va, dalle frequenze basse alle alte, da onde radio, microonde, infrarosso, visibile (circa 400-700 nm), ultravioletto, raggi X, raggi gamma. Le onde EM furono prodotte in laboratorio da Hertz nel 1887."
+],
+"metodo": [
+"Per ogni esercizio individua cosa fa variare il flusso: campo, area o angolo. Scrivi Φ iniziale e finale prima di applicare Faraday.",
+"Per il verso della corrente indotta usa Lenz in tre passi: il flusso aumenta o diminuisce? Il campo indotto deve opporsi; la regola della mano destra dà il verso della corrente.",
+"Fai esercizi sui trasformatori calcolando tensioni, correnti e potenze di primario e secondario.",
+"Memorizza l'ordine dello spettro elettromagnetico con frequenze e lunghezze d'onda indicative.",
+"Esercitati con c = λf su esempi reali: radio, Wi-Fi (2,4 GHz), luce visibile, raggi X.",
+"Disegna un'onda EM con E e B perpendicolari e la direzione di propagazione."
+],
+"ricorda": [
+"Conta la variazione del flusso, non il flusso: un campo fortissimo ma costante non induce nulla.",
+"Lenz = bastian contrario: la corrente indotta si oppone sempre alla variazione.",
+"Trasformatore: le tensioni stanno come le spire.",
+"La luce è un'onda elettromagnetica come la radio: cambia solo la frequenza."
+],
+"errori": [
+"Credere che un magnete fermo vicino a una spira induca corrente: serve una variazione di flusso.",
+"Usare θ come angolo tra il campo e il piano della spira: nella formula è l'angolo con la normale.",
+"Pensare che un trasformatore funzioni in corrente continua: senza variazione di flusso non c'è induzione.",
+"Dimenticare il numero di spire N nella forza elettromotrice di una bobina.",
+"Credere che le onde elettromagnetiche abbiano bisogno di un mezzo: si propagano anche nel vuoto."
+],
+"domande": [
+{"domanda": "Enuncia la legge di Faraday-Neumann-Lenz.", "risposta": "La forza elettromotrice indotta in un circuito è uguale all'opposto della rapidità di variazione del flusso magnetico concatenato: ε = −ΔΦ/Δt."},
+{"domanda": "Un trasformatore ha 500 spire nel primario e 2500 nel secondario. Con 230 V in ingresso, che tensione dà?", "risposta": "V₂ = 230·2500/500 = 1150 V."},
+{"domanda": "Calcola la lunghezza d'onda di un'onda a 2,4 GHz.", "risposta": "λ = c/f = 3,0·10⁸/2,4·10⁹ = 0,125 m = 12,5 cm."},
+{"domanda": "Una sbarretta lunga 0,30 m si muove a 5,0 m/s perpendicolarmente a un campo di 0,40 T. Quanto vale la forza elettromotrice?", "risposta": "ε = B·L·v = 0,40·0,30·5,0 = 0,60 V."},
+{"domanda": "Perché le linee elettriche lavorano ad alta tensione?", "risposta": "A parità di potenza trasportata una tensione alta richiede una corrente bassa, e le perdite per effetto Joule (R·I²) diminuiscono con il quadrato della corrente."}
+]
+},
+"universita": {
+"spiegazione": [
+"In forma integrale la legge di Faraday si scrive ∮ E·dl = −dΦ_B/dt, con Φ_B = ∫ B·dS calcolato su una superficie che ha come bordo il circuito. Contiene due fenomeni: se il circuito si muove in un campo B, la forza di Lorentz q·v × B sulle cariche spiega la forza elettromotrice di movimento (ε = ∮ (v × B)·dl); se il campo B varia nel tempo, nasce un campo elettrico indotto, anche in assenza di conduttori. Questo campo ha circuitazione non nulla: non è conservativo e non si può descrivere con un potenziale scalare. In un conduttore massiccio esso genera correnti parassite (di Foucault), che dissipano energia e frenano i moti: per questo i nuclei dei trasformatori sono lamellati e i freni elettromagnetici dei treni funzionano senza contatto.",
+"Un circuito percorso da corrente concatena il proprio flusso: Φ = L·I, con L induttanza in henry. Per un solenoide lungo di N spire, sezione S e lunghezza l, L = μ₀·N²·S/l. Esempio: N = 500, S = 10 cm² = 1,0·10⁻³ m², l = 0,20 m: L = 4π·10⁻⁷·2,5·10⁵·1,0·10⁻³/0,20 ≈ 1,57 mH. La forza elettromotrice autoindotta è ε = −L·dI/dt e si oppone alle variazioni di corrente. In un circuito RL la corrente cresce come I(t) = (ε/R)·(1 − e^(−t/τ)) con τ = L/R (con R = 10 Ω, τ ≈ 0,16 ms). L'energia immagazzinata è U = ½L·I², distribuita nel campo con densità u_B = B²/(2μ₀). Tra due circuiti si definisce la mutua induttanza M, base del trasformatore.",
+"Una spira di area S che ruota con velocità angolare ω in un campo uniforme ha flusso Φ = B·S·cos ωt e quindi ε(t) = B·S·ω·sin ωt: è il principio dell'alternatore. Per le grandezze alternate si usano i valori efficaci, V_eff = V₀/√2, definiti in modo che la potenza media su una resistenza sia V_eff²/R. La rete domestica a 230 V efficaci ha quindi un picco di circa 325 V, a 50 Hz. Nei circuiti in corrente alternata induttori e condensatori hanno reattanze X_L = ωL e X_C = 1/(ωC), e un circuito RLC serie ha impedenza Z = √(R² + (X_L − X_C)²), minima alla risonanza ω₀ = 1/√(LC).",
+"Le equazioni di Maxwell nel vuoto ammettono soluzioni ondulatorie: ogni componente dei campi obbedisce a ∂²E/∂x² = μ₀ε₀·∂²E/∂t², un'equazione delle onde con velocità c = 1/√(μ₀ε₀) = 2,998·10⁸ m/s. Per un'onda piana armonica E = E₀ cos(kx − ωt) ŷ e B = B₀ cos(kx − ωt) ẑ, con ω = c·k, B₀ = E₀/c, e E, B, direzione di propagazione formano una terna destrorsa. L'onda trasporta energia: il vettore di Poynting S = E × B/μ₀ dà il flusso di energia, e la sua media temporale è l'intensità I = ½·c·ε₀·E₀². Trasporta anche quantità di moto, e quindi esercita una pressione di radiazione p = I/c su una superficie assorbente (2I/c se riflettente).",
+"Esempio numerico: la luce solare fuori dall'atmosfera ha intensità I ≈ 1360 W/m². L'ampiezza del campo elettrico è E₀ = √(2I/(c·ε₀)) = √(2·1360/(3,0·10⁸·8,85·10⁻¹²)) ≈ 1,0·10³ V/m, e quella del campo magnetico B₀ = E₀/c ≈ 3,4 μT. La pressione di radiazione su un pannello assorbente è 1360/3,0·10⁸ ≈ 4,5·10⁻⁶ Pa: minuscola, ma su una vela solare di 1000 m² dà una forza di qualche millinewton, sufficiente a spingere una sonda leggera per mesi. Le onde EM sono prodotte da cariche accelerate: un'antenna a dipolo irraggia con intensità proporzionale a sin²θ, nulla lungo l'asse dell'antenna."
+],
+"metodo": [
+"Distingui sempre i due casi della legge di Faraday: circuito in moto (forza di Lorentz) e campo variabile (campo elettrico indotto).",
+"Ricava l'induttanza del solenoide e del toroide partendo dal campo calcolato con Ampère.",
+"Risolvi l'equazione differenziale del circuito RL e confrontala con quella del circuito RC.",
+"Per le onde verifica sempre che E, B e la direzione di propagazione formino una terna destrorsa con S = E × B/μ₀.",
+"Fai calcoli di ordine di grandezza su intensità, campi e pressione di radiazione per sole, laser e antenne.",
+"Usa i fasori per i circuiti in corrente alternata e disegna il triangolo delle impedenze."
+],
+"ricorda": [
+"Campo elettrico indotto: circuitazione diversa da zero, niente potenziale.",
+"Induttanza = inerzia della corrente: si oppone ai cambiamenti.",
+"Onda EM: E/B = c e E × B indica dove va l'energia.",
+"230 V efficaci = circa 325 V di picco."
+],
+"errori": [
+"Attribuire un potenziale elettrico al campo indotto: non è conservativo.",
+"Confondere il valore efficace con quello di picco nei calcoli di potenza.",
+"Dimenticare il fattore ½ nell'intensità media di un'onda armonica.",
+"Usare p = I/c per una superficie riflettente: la pressione è doppia, 2I/c.",
+"Pensare che i campi E e B di un'onda piana siano sfasati di 90°: nel vuoto oscillano in fase."
+],
+"domande": [
+{"domanda": "Ricava l'induttanza di un solenoide lungo.", "risposta": "Il campo interno è B = μ₀NI/l, il flusso concatenato N·B·S = μ₀N²SI/l, quindi L = Φ/I = μ₀N²S/l."},
+{"domanda": "Una spira di 0,05 m² ruota a 50 giri al secondo in un campo di 0,2 T. Qual è la forza elettromotrice massima?", "risposta": "ε₀ = B·S·ω = 0,2·0,05·2π·50 ≈ 3,1 V."},
+{"domanda": "Scrivi l'intensità media di un'onda EM in funzione di E₀.", "risposta": "I = ½·c·ε₀·E₀², che è la media temporale del modulo del vettore di Poynting."},
+{"domanda": "Quanta energia è immagazzinata in un induttore da 1,57 mH percorso da 2,0 A?", "risposta": "U = ½·L·I² = 0,5·1,57·10⁻³·4,0 ≈ 3,1 mJ."},
+{"domanda": "Perché i nuclei dei trasformatori sono lamellati?", "risposta": "Per ridurre le correnti di Foucault: le lamine isolate interrompono i percorsi chiusi delle correnti indotte nel ferro e riducono le perdite per effetto Joule."}
+]
+}
+},
+"Fisica quantistica": {
+"superiore": {
+"spiegazione": [
+"Alla fine dell'Ottocento la fisica classica non riusciva a spiegare lo spettro della radiazione emessa da un corpo nero (un oggetto che assorbe tutta la radiazione e la riemette secondo la sua temperatura). Nel 1900 Planck risolse il problema supponendo che l'energia fosse scambiata a pacchetti, i quanti, di valore E = h·f, con h = 6,63·10⁻³⁴ J·s costante di Planck e f frequenza. Per la luce verde (f ≈ 5,6·10¹⁴ Hz) un quanto vale circa 3,7·10⁻¹⁹ J: piccolissimo, ed è per questo che nella vita quotidiana l'energia sembra continua. Un'unità comoda è l'elettronvolt: 1 eV = 1,60·10⁻¹⁹ J.",
+"Nel 1905 Einstein spiegò l'effetto fotoelettrico: un metallo illuminato emette elettroni solo se la frequenza della luce supera una soglia, indipendentemente dall'intensità. Secondo Einstein la luce è fatta di fotoni di energia h·f; ogni fotone cede tutta la sua energia a un elettrone, che per uscire deve spendere il lavoro di estrazione W. L'energia cinetica massima degli elettroni è K_max = h·f − W. Esempio: luce viola di 400 nm ha fotoni di E = h·c/λ = 6,63·10⁻³⁴·3,0·10⁸/4,0·10⁻⁷ ≈ 4,97·10⁻¹⁹ J ≈ 3,1 eV; sul sodio (W ≈ 2,3 eV) gli elettroni escono con al massimo 0,8 eV. Con luce rossa di 700 nm (1,8 eV) non esce nessun elettrone, per quanto intensa sia la luce. L'intensità cambia il numero di fotoni, quindi il numero di elettroni, non la loro energia.",
+"Nel 1913 Bohr propose un modello dell'atomo di idrogeno in cui l'elettrone può stare solo su certe orbite, di energia E_n = −13,6 eV/n² (n = 1, 2, 3...). Passando da un livello alto a uno più basso l'atomo emette un fotone di energia uguale alla differenza: da n = 3 a n = 2, ΔE = 13,6·(1/4 − 1/9) = 1,89 eV, che corrisponde a λ = h·c/ΔE ≈ 656 nm, la riga rossa dell'idrogeno. Questo spiega perché i gas emettono spettri a righe e non continui. L'energia di ionizzazione dell'idrogeno, cioè quella per portare l'elettrone da n = 1 all'infinito, è 13,6 eV.",
+"Nel 1924 de Broglie ipotizzò che anche le particelle abbiano un comportamento ondulatorio, con lunghezza d'onda λ = h/p, dove p = m·v è la quantità di moto. Un elettrone a 1,0·10⁶ m/s ha λ = 6,63·10⁻³⁴/(9,11·10⁻³¹·1,0·10⁶) ≈ 7,3·10⁻¹⁰ m = 0,73 nm, confrontabile con le distanze tra gli atomi: gli elettroni infatti danno diffrazione sui cristalli, ed è il principio del microscopio elettronico. Una palla da tennis di 0,06 kg a 50 m/s ha λ ≈ 2·10⁻³⁴ m, del tutto inosservabile. Luce e materia hanno quindi una doppia natura, ondulatoria e corpuscolare (dualismo onda-particella).",
+"Il principio di indeterminazione di Heisenberg afferma che non si possono conoscere con precisione arbitraria e contemporaneamente posizione e quantità di moto di una particella: Δx·Δp ≥ h/(4π) = ħ/2, con ħ = h/(2π) ≈ 1,05·10⁻³⁴ J·s. Non è un limite degli strumenti ma una proprietà della natura. Nella meccanica quantistica lo stato di una particella è descritto da una funzione d'onda ψ, e |ψ|² dà la probabilità di trovarla in un punto: gli orbitali atomici sono regioni dove questa probabilità è alta, non traiettorie. Anche l'effetto Compton (i raggi X diffusi dagli elettroni escono con lunghezza d'onda maggiore) conferma che i fotoni hanno quantità di moto p = h/λ."
+],
+"metodo": [
+"Studia gli esperimenti in ordine storico (corpo nero, fotoelettrico, spettri atomici, de Broglie): ognuno risolve un problema del precedente.",
+"Impara a passare velocemente tra joule ed elettronvolt e usa la scorciatoia E(eV) ≈ 1240/λ(nm).",
+"Disegna il grafico K_max in funzione di f per l'effetto fotoelettrico: retta di pendenza h che taglia l'asse delle f alla frequenza di soglia.",
+"Costruisci il diagramma dei livelli dell'idrogeno e calcola le righe della serie di Balmer (arrivo in n = 2).",
+"Confronta le lunghezze d'onda di de Broglie di un elettrone, di un protone e di un oggetto macroscopico.",
+"Ripeti a voce, senza formule, che cosa significa il dualismo onda-particella."
+],
+"ricorda": [
+"E = h·f: più alta la frequenza, più energetico il fotone.",
+"Fotoelettrico: il colore decide se escono gli elettroni, l'intensità quanti ne escono.",
+"1240 diviso i nanometri = elettronvolt del fotone.",
+"Heisenberg: se sai bene dov'è, non sai bene dove va."
+],
+"errori": [
+"Pensare che aumentando l'intensità della luce si aumenti l'energia degli elettroni emessi: aumenta solo il loro numero.",
+"Dimenticare il segno negativo dei livelli energetici dell'idrogeno (gli stati legati hanno energia negativa).",
+"Confondere frequenza e lunghezza d'onda in E = hf: se si ha λ bisogna usare E = hc/λ.",
+"Interpretare l'indeterminazione come imprecisione degli strumenti: è un limite fondamentale.",
+"Immaginare gli orbitali come orbite percorse dall'elettrone: sono distribuzioni di probabilità."
+],
+"domande": [
+{"domanda": "Calcola l'energia in eV di un fotone di 620 nm.", "risposta": "E ≈ 1240/620 = 2,0 eV."},
+{"domanda": "Un metallo ha lavoro di estrazione 4,5 eV. Qual è la lunghezza d'onda di soglia?", "risposta": "λ₀ = 1240/4,5 ≈ 276 nm: serve luce ultravioletta."},
+{"domanda": "Che energia ha il fotone emesso dall'idrogeno nella transizione da n = 2 a n = 1?", "risposta": "ΔE = 13,6·(1 − 1/4) = 10,2 eV (riga ultravioletta di Lyman, circa 122 nm)."},
+{"domanda": "Scrivi la relazione di de Broglie e spiega perché non vediamo la natura ondulatoria di una palla.", "risposta": "λ = h/p; per oggetti macroscopici p è enorme rispetto ad h e λ risulta molto più piccola di qualsiasi struttura, quindi non si osservano effetti ondulatori."},
+{"domanda": "Che cosa affermava l'ipotesi di Planck?", "risposta": "Che l'energia della radiazione è scambiata solo in quantità discrete, multipli di h·f."}
+]
+},
+"universita": {
+"spiegazione": [
+"La radiazione di corpo nero segue la legge di Planck, la cui densità spettrale u(f, T) = (8πh f³/c³)/(e^(hf/kT) − 1) riproduce i dati a tutte le frequenze ed evita la «catastrofe ultravioletta» della teoria classica (Rayleigh-Jeans, che prevedeva energia infinita). Ne discendono la legge di Wien λ_max·T = 2,898·10⁻³ m·K e quella di Stefan-Boltzmann per la potenza emessa per unità di area, σT⁴ con σ = 5,67·10⁻⁸ W/(m²·K⁴). Per il Sole (T ≈ 5800 K) λ_max ≈ 500 nm, nel verde; per il corpo umano (310 K) λ_max ≈ 9,3 μm, nell'infrarosso, ed è ciò che vedono le termocamere.",
+"La natura corpuscolare della luce è confermata dall'effetto Compton: un fotone di lunghezza d'onda λ urta un elettrone libero e ne esce con λ' = λ + (h/(m_e c))·(1 − cos θ), dove h/(m_e c) = 2,43 pm è la lunghezza d'onda Compton dell'elettrone. A θ = 90° lo spostamento è 2,43 pm, a 180° è il doppio. La formula si ricava conservando energia e quantità di moto relativistiche, trattando il fotone come una particella con E = hf e p = h/λ. Lo spostamento è apprezzabile solo per raggi X e gamma, con λ di pochi picometri. Il quadro complessivo è il dualismo: interferenza e diffrazione richiedono onde, scambi di energia e quantità di moto richiedono quanti.",
+"In meccanica quantistica lo stato è una funzione d'onda ψ(x, t), complessa, che obbedisce all'equazione di Schrödinger iħ ∂ψ/∂t = −(ħ²/2m) ∂²ψ/∂x² + V(x)ψ. Per stati di energia definita ψ(x, t) = φ(x)·e^(−iEt/ħ) e φ soddisfa l'equazione stazionaria −(ħ²/2m)φ'' + Vφ = Eφ. Secondo l'interpretazione di Born |ψ|²dx è la probabilità di trovare la particella in dx, e ψ va normalizzata (∫|ψ|²dx = 1). Le grandezze osservabili sono associate a operatori (p → −iħ ∂/∂x) e i risultati possibili di una misura sono i loro autovalori. Esempio classico: una particella in una buca infinita di larghezza L ha φ_n = √(2/L)·sin(nπx/L) e energie E_n = n²h²/(8mL²). Per un elettrone con L = 1,0 nm: E₁ = (6,63·10⁻³⁴)²/(8·9,11·10⁻³¹·10⁻¹⁸) ≈ 6,0·10⁻²⁰ J ≈ 0,38 eV, e i livelli successivi valgono 4E₁, 9E₁...",
+"Il principio di indeterminazione Δx·Δp ≥ ħ/2 deriva dal fatto che posizione e quantità di moto sono operatori che non commutano, [x, p] = iħ. Esempio: un elettrone confinato in Δx = 0,10 nm (dimensione di un atomo) ha Δp ≥ 1,055·10⁻³⁴/(2·10⁻¹⁰) ≈ 5,3·10⁻²⁵ kg·m/s, cioè un'energia cinetica dell'ordine di (Δp)²/(2m) ≈ 1 eV: è questo che impedisce all'elettrone di cadere sul nucleo. Esiste anche una relazione energia-tempo ΔE·Δt ≳ ħ/2, che lega la vita media di uno stato eccitato alla larghezza della riga emessa. Un effetto puramente quantistico è il tunnel: una particella può attraversare una barriera di energia maggiore della propria, con probabilità ≈ e^(−2κd), κ = √(2m(V − E))/ħ; spiega il decadimento α e il microscopio a effetto tunnel.",
+"Nell'atomo di idrogeno l'equazione di Schrödinger in tre dimensioni dà gli stessi livelli di Bohr, E_n = −13,6 eV/n², ma con stati descritti da tre numeri quantici: n principale, l = 0...n−1 (momento angolare orbitale, |L| = ħ√(l(l+1))), m_l = −l...+l (proiezione L_z = m_l·ħ). A questi si aggiunge lo spin dell'elettrone, momento angolare intrinseco con m_s = ±½, scoperto con l'esperimento di Stern e Gerlach. Il principio di esclusione di Pauli (due elettroni non possono avere tutti e quattro i numeri quantici uguali) spiega il riempimento degli orbitali e quindi la struttura della tavola periodica. La degenerazione del livello n, contando lo spin, è 2n²: 2, 8, 18 elettroni."
+],
+"metodo": [
+"Ricava le leggi di Wien e Stefan-Boltzmann dalla legge di Planck (derivata e integrale): è un ottimo esercizio di analisi.",
+"Rifai la derivazione dello spostamento Compton con la conservazione relativistica di energia e quantità di moto.",
+"Risolvi la buca infinita e quella finita, disegnando le funzioni d'onda e |ψ|² dei primi tre livelli.",
+"Esercitati con i calcoli di ordine di grandezza usando ħc ≈ 197 eV·nm e m_e c² ≈ 511 keV.",
+"Per ogni numero quantico scrivi a che grandezza fisica corrisponde e quali valori può assumere.",
+"Collega sempre i risultati agli esperimenti: spettri, diffrazione di elettroni, Stern-Gerlach, microscopio a tunnel."
+],
+"ricorda": [
+"Buca infinita: E_n cresce come n², e più la buca è stretta, più l'energia è alta.",
+"Compton: lunghezza d'onda Compton dell'elettrone 2,43 pm.",
+"x e p non commutano: ecco perché non si misurano insieme con precisione.",
+"Livello n dell'idrogeno: 2n² posti con lo spin."
+],
+"errori": [
+"Interpretare ψ come una grandezza fisica misurabile: è |ψ|² ad avere significato di densità di probabilità.",
+"Dimenticare la normalizzazione della funzione d'onda prima di calcolare probabilità e valori medi.",
+"Pensare che lo spin sia una vera rotazione dell'elettrone su se stesso: è un momento angolare intrinseco senza analogo classico.",
+"Usare la meccanica quantistica non relativistica per elettroni con energie vicine a 511 keV.",
+"Credere che il modello di Bohr sia corretto: dà le energie giuste dell'idrogeno ma sbaglia il momento angolare dello stato fondamentale (l = 0, non ħ)."
+],
+"domande": [
+{"domanda": "Calcola lo spostamento Compton per un fotone diffuso a 60°.", "risposta": "Δλ = 2,43 pm·(1 − cos 60°) = 1,215 pm."},
+{"domanda": "Qual è la lunghezza d'onda di massima emissione di una stella a 10 000 K?", "risposta": "λ_max = 2,898·10⁻³/10⁴ ≈ 290 nm, nell'ultravioletto."},
+{"domanda": "Come cambia l'energia dello stato fondamentale nella buca infinita se la larghezza si dimezza?", "risposta": "Quadruplica, perché E₁ è proporzionale a 1/L²."},
+{"domanda": "Che cosa rappresenta |ψ(x)|²?", "risposta": "La densità di probabilità di trovare la particella nel punto x: la probabilità di trovarla in un intervallo dx è |ψ|²dx."},
+{"domanda": "Quali sono i numeri quantici di un elettrone nell'atomo di idrogeno e i loro valori permessi?", "risposta": "n = 1, 2, 3...; l = 0...n−1; m_l = −l...+l; m_s = ±½."}
+]
+}
+},
+"Fisica nucleare e radioattività": {
+"superiore": {
+"spiegazione": [
+"Il nucleo dell'atomo è formato da protoni e neutroni (nucleoni). Si indica con il simbolo dell'elemento preceduto dal numero di massa A (numero di nucleoni) e dal numero atomico Z (numero di protoni); il numero di neutroni è N = A − Z. Per esempio ²³⁸U ha 92 protoni e 146 neutroni. Gli isotopi sono nuclei con lo stesso Z e diverso N: carbonio-12, carbonio-13 e carbonio-14 hanno tutti 6 protoni. Il nucleo è piccolissimo, con raggio circa r ≈ 1,2·10⁻¹⁵ m·A^(1/3), centomila volte meno dell'atomo, ma contiene quasi tutta la massa.",
+"I protoni si respingono per la forza elettrica, eppure il nucleo sta insieme grazie alla forza nucleare forte, molto intensa ma a cortissimo raggio (circa 10⁻¹⁵ m). La massa di un nucleo è minore della somma delle masse dei nucleoni separati: la differenza, il difetto di massa Δm, corrisponde all'energia di legame E = Δm·c², con 1 u = 931,5 MeV/c². Esempio per l'elio-4: 2 atomi di idrogeno (2·1,007825 u) più 2 neutroni (2·1,008665 u) danno 4,032980 u, mentre l'atomo di elio-4 ha 4,002603 u. Δm = 0,030377 u, E ≈ 28,3 MeV, cioè circa 7,1 MeV per nucleone. L'energia di legame per nucleone è massima, circa 8,8 MeV, per i nuclei vicini al ferro.",
+"I nuclei instabili si trasformano spontaneamente emettendo radiazioni: è la radioattività, scoperta da Becquerel e studiata dai coniugi Curie. Nel decadimento α il nucleo emette un nucleo di elio (2 protoni e 2 neutroni): A diminuisce di 4 e Z di 2, per esempio ²³⁸U → ²³⁴Th + ⁴He. Nel decadimento β⁻ un neutrone si trasforma in protone emettendo un elettrone e un antineutrino: Z aumenta di 1 e A resta uguale, come in ¹⁴C → ¹⁴N + e⁻ + ν̄. Nel β⁺ un protone diventa neutrone emettendo un positrone. Il decadimento γ è l'emissione di un fotone energetico da un nucleo eccitato, senza cambiare Z e A. Le particelle α sono fermate da un foglio di carta, le β da qualche millimetro di alluminio, i γ richiedono centimetri di piombo o metri di cemento.",
+"Il decadimento è un processo casuale per il singolo nucleo, ma per un grande numero di nuclei segue una legge precisa: dopo ogni tempo di dimezzamento T½ il numero di nuclei rimasti si dimezza, N = N₀·(1/2)^(t/T½). Esempio: lo iodio-131 usato in medicina ha T½ = 8 giorni; partendo da 80 mg, dopo 24 giorni (3 dimezzamenti) ne restano 80/8 = 10 mg. Il carbonio-14 (T½ = 5730 anni) serve per datare i resti organici: se un osso contiene un quarto del C-14 di un organismo vivo, sono passati 2 dimezzamenti, circa 11 460 anni. L'attività (decadimenti al secondo) si misura in becquerel (Bq), l'effetto biologico della dose in sievert (Sv).",
+"Nella fissione un nucleo pesante, come l'uranio-235 colpito da un neutrone lento, si spezza in due nuclei medi liberando circa 200 MeV e 2-3 neutroni, che possono provocare altre fissioni: è la reazione a catena, controllata nei reattori nucleari con barre che assorbono neutroni. Nella fusione due nuclei leggeri si uniscono: nel Sole quattro protoni diventano un nucleo di elio liberando circa 26,7 MeV. In entrambi i casi l'energia viene dal fatto che i prodotti hanno un'energia di legame per nucleone maggiore dei reagenti, quindi una massa totale minore. La fusione richiede temperature di milioni di gradi per vincere la repulsione elettrica tra i nuclei."
+],
+"metodo": [
+"Per ogni decadimento scrivi l'equazione e controlla che si conservino la somma dei numeri di massa e la somma delle cariche.",
+"Costruisci una tabella con α, β⁻, β⁺, γ: cosa viene emesso, come cambiano A e Z, quanto sono penetranti.",
+"Esercitati con il calcolo del difetto di massa usando sempre le masse atomiche, per non sbagliare con gli elettroni.",
+"Per il tempo di dimezzamento parti con esercizi a numero intero di dimezzamenti, poi passa ai casi generali con i logaritmi.",
+"Disegna la curva dell'energia di legame per nucleone e segna dove conviene la fissione e dove la fusione.",
+"Collega gli argomenti alle applicazioni: datazione, medicina nucleare, centrali, Sole."
+],
+"ricorda": [
+"α: −4 nella massa, −2 nel numero atomico.",
+"β⁻: un neutrone diventa protone, l'elemento sale di una casella.",
+"Ogni T½ la metà: 1/2, 1/4, 1/8, 1/16...",
+"Ferro in cima alla montagna: i leggeri salgono fondendo, i pesanti scendono fissionando."
+],
+"errori": [
+"Pensare che dopo due tempi di dimezzamento la sostanza sia sparita: ne resta un quarto.",
+"Credere che il decadimento β emetta un elettrone che era nel guscio atomico: nasce nel nucleo dalla trasformazione di un neutrone.",
+"Confondere numero di massa A e numero atomico Z nelle equazioni nucleari.",
+"Pensare che l'energia di legame sia energia contenuta nel nucleo da liberare: è l'energia che servirebbe per separarlo.",
+"Credere che un nucleo con lunga vita decadrà più tardi con certezza: il decadimento di un singolo nucleo è casuale."
+],
+"domande": [
+{"domanda": "Completa il decadimento α del radio-226 (Z = 88).", "risposta": "²²⁶Ra → ²²²Rn + ⁴He: il prodotto ha A = 222 e Z = 86 (radon)."},
+{"domanda": "Un campione di 64 g di un isotopo con T½ = 5 anni: quanto ne resta dopo 20 anni?", "risposta": "20 anni sono 4 dimezzamenti: 64/16 = 4 g."},
+{"domanda": "Che cosa tiene insieme il nucleo nonostante la repulsione tra protoni?", "risposta": "La forza nucleare forte, attrattiva tra nucleoni, molto intensa ma con raggio d'azione di circa 10⁻¹⁵ m."},
+{"domanda": "Come cambiano A e Z in un decadimento β⁻?", "risposta": "A resta uguale, Z aumenta di 1 (un neutrone si trasforma in protone)."},
+{"domanda": "Perché sia la fissione sia la fusione liberano energia?", "risposta": "Perché in entrambi i casi i prodotti hanno energia di legame per nucleone maggiore dei reagenti (più vicina al massimo del ferro), quindi massa minore; la differenza si libera come energia secondo E = Δm·c²."}
+]
+},
+"universita": {
+"spiegazione": [
+"La legge del decadimento nasce dall'ipotesi che ogni nucleo abbia una probabilità costante λ di decadere per unità di tempo: dN/dt = −λN, quindi N(t) = N₀·e^(−λt). La costante di decadimento è legata al tempo di dimezzamento da T½ = ln 2/λ e alla vita media da τ = 1/λ = T½/ln 2 ≈ 1,44·T½. L'attività è A = λN. Esempio: 1,00 g di radio-226 (T½ = 1600 anni = 5,05·10¹⁰ s) contiene N = 6,022·10²³/226 ≈ 2,67·10²¹ nuclei; λ = 0,693/5,05·10¹⁰ ≈ 1,37·10⁻¹¹ s⁻¹; A ≈ 3,66·10¹⁰ Bq, cioè circa 1 curie (la vecchia unità fu definita proprio così). Per datare: t = (T½/ln 2)·ln(N₀/N); un campione con il 30% del C-14 originale ha t = 8267·ln(3,33) ≈ 9950 anni.",
+"L'energia di legame dei nuclei è descritta dalla formula semiempirica di Weizsäcker, che tratta il nucleo come una goccia di liquido: B(A, Z) = a_v·A − a_s·A^(2/3) − a_c·Z(Z−1)/A^(1/3) − a_a·(A − 2Z)²/A ± δ. Il termine di volume (a_v ≈ 15,8 MeV) riflette la saturazione delle forze nucleari, il termine di superficie corregge per i nucleoni in superficie, quello coulombiano per la repulsione tra protoni, quello di asimmetria per l'eccesso di neutroni (principio di Pauli), quello di accoppiamento favorisce Z e N pari. La formula spiega la curva B/A con massimo attorno a ⁵⁶Fe-⁶²Ni (circa 8,8 MeV), la valle di stabilità che per nuclei pesanti richiede N > Z, e il fatto che oltre Z ≈ 82 i nuclei siano tutti instabili. I numeri magici (2, 8, 20, 28, 50, 82, 126) richiedono invece il modello a shell.",
+"Il bilancio energetico di una reazione o di un decadimento è il valore Q = (Σm_iniziali − Σm_finali)·c²: se Q > 0 la reazione è esoergica. Nel decadimento α Q si divide tra particella α e nucleo figlio secondo la conservazione della quantità di moto, e l'α ha un'energia ben definita (spettro a righe). Nel decadimento β invece lo spettro degli elettroni è continuo: per questo Pauli ipotizzò il neutrino, una terza particella che si porta via parte dell'energia, e Fermi costruì la teoria dell'interazione debole. Il decadimento α è spiegato da Gamow come effetto tunnel attraverso la barriera coulombiana: questo giustifica la relazione di Geiger-Nuttall, per cui piccole differenze di energia cambiano i tempi di dimezzamento di molti ordini di grandezza.",
+"Nella fissione dell'uranio-235 si liberano circa 200 MeV per nucleo. Un chilogrammo di U-235 contiene 1000/235·6,022·10²³ ≈ 2,56·10²⁴ nuclei e può liberare 2,56·10²⁴·200 MeV·1,60·10⁻¹³ J/MeV ≈ 8,2·10¹³ J, quanto bruciando circa 2700 tonnellate di carbone. Il reattore funziona se il fattore di moltiplicazione dei neutroni k vale 1 (regime critico); servono un moderatore che rallenti i neutroni (acqua, grafite) e barre di controllo. Il controllo è possibile grazie ai neutroni ritardati, emessi dai prodotti di fissione con secondi di ritardo. Nella fusione deuterio-trizio, ²H + ³H → ⁴He + n + 17,6 MeV, l'energia per nucleone è circa quattro volte quella della fissione; il criterio di Lawson fissa il prodotto densità × tempo di confinamento necessario.",
+"La radiazione interagisce con la materia in modi diversi. Particelle cariche pesanti (α) perdono energia per ionizzazione con un percorso definito (range) e un picco di deposizione alla fine (picco di Bragg, sfruttato nella protonterapia). I fotoni γ vengono attenuati esponenzialmente, I = I₀·e^(−μx), attraverso effetto fotoelettrico, Compton e produzione di coppie; per esempio con μ = 0,8 cm⁻¹ uno schermo di 2 cm lascia passare e^(−1,6) ≈ 20% dei fotoni. La dose assorbita si misura in gray (1 Gy = 1 J/kg); la dose equivalente in sievert tiene conto del tipo di radiazione con un fattore di peso (1 per γ e β, 20 per α). Nelle catene radioattive, se il genitore vive molto più del figlio, si arriva all'equilibrio secolare, in cui le attività dei due sono uguali."
+],
+"metodo": [
+"Ricava la legge esponenziale dall'equazione differenziale e collega T½, λ e τ.",
+"Calcola l'attività di campioni reali (1 g di radio, 1 μg di cobalto-60) per fissare gli ordini di grandezza.",
+"Usa la formula di Weizsäcker in un foglio di calcolo per riprodurre la curva B/A e trovare lo Z più stabile per un dato A.",
+"Per ogni reazione calcola il Q con le masse atomiche e verifica la conservazione di carica e numero di nucleoni.",
+"Confronta le energie per unità di massa di combustione, fissione e fusione.",
+"Collega i fenomeni alle applicazioni mediche: PET (β⁺), radioterapia, protonterapia, dosimetria."
+],
+"ricorda": [
+"τ = 1,44·T½: la vita media è più lunga del tempo di dimezzamento.",
+"Goccia di liquido: volume, superficie, Coulomb, asimmetria, accoppiamento.",
+"α a righe, β continuo: da lì nasce il neutrino.",
+"1 Bq = un decadimento al secondo, 1 Ci = 3,7·10¹⁰ Bq."
+],
+"errori": [
+"Usare unità di tempo diverse per λ e t nell'esponenziale: λt deve essere un numero puro.",
+"Calcolare il Q di un decadimento β⁺ con le masse atomiche senza sottrarre 2m_e c².",
+"Confondere attività (Bq) con dose (Gy o Sv).",
+"Pensare che la fusione sia facile perché libera molta energia: la barriera coulombiana richiede temperature elevatissime.",
+"Ritenere che un fattore k > 1 sia necessario per il funzionamento normale di un reattore: in regime stazionario k = 1."
+],
+"domande": [
+{"domanda": "Ricava la relazione tra tempo di dimezzamento e costante di decadimento.", "risposta": "Da N₀/2 = N₀e^(−λT½) si ottiene λT½ = ln 2, quindi T½ = ln 2/λ ≈ 0,693/λ."},
+{"domanda": "Un reperto ha un'attività di C-14 pari al 12,5% di quella di un organismo vivo. Quanti anni ha?", "risposta": "Il 12,5% è 1/8, cioè tre dimezzamenti: 3·5730 ≈ 17 200 anni."},
+{"domanda": "Perché lo spettro degli elettroni del decadimento β è continuo?", "risposta": "Perché l'energia Q si divide fra tre corpi (nucleo figlio, elettrone e antineutrino) in proporzioni variabili."},
+{"domanda": "Che cosa rappresenta il termine coulombiano nella formula di Weizsäcker?", "risposta": "La riduzione dell'energia di legame dovuta alla repulsione elettrica tra i protoni, proporzionale a Z(Z−1)/A^(1/3)."},
+{"domanda": "Quanta energia libera la fissione completa di 1 g di U-235?", "risposta": "Circa 8,2·10¹⁰ J (2,56·10²¹ nuclei per 200 MeV ciascuno)."}
+]
+}
+},
+"Meccanica del corpo rigido e momento angolare": {
+"superiore": {
+"spiegazione": [
+"Un corpo rigido è un corpo che non si deforma: le distanze tra i suoi punti restano costanti. Il suo moto più generale è la combinazione di una traslazione (tutti i punti si spostano allo stesso modo) e di una rotazione attorno a un asse. Per la rotazione si usano grandezze angolari: l'angolo θ in radianti, la velocità angolare ω = Δθ/Δt in rad/s e l'accelerazione angolare α = Δω/Δt in rad/s². Un punto a distanza r dall'asse ha velocità v = ω·r: in una ruota che gira, i punti sul bordo vanno più veloci di quelli vicini al mozzo, pur avendo tutti la stessa ω.",
+"Quello che fa ruotare un corpo è il momento della forza M = F·b (b braccio). L'analogo della massa per la rotazione è il momento d'inerzia I = Σ mᵢ·rᵢ², che dipende non solo dalla massa ma da come è distribuita rispetto all'asse. Per un anello sottile I = M·R², per un disco pieno I = ½M·R², per una sfera piena I = ⅖M·R², per un'asta che ruota attorno al centro I = ML²/12. La seconda legge della dinamica per le rotazioni è M = I·α. Esempio: un disco di 2,0 kg e raggio 0,10 m ha I = ½·2,0·0,010 = 0,010 kg·m²; un momento di 0,050 N·m gli dà α = 0,050/0,010 = 5,0 rad/s².",
+"Un corpo che ruota possiede energia cinetica di rotazione K = ½I·ω². Il disco precedente a 30 rad/s ha K = ½·0,010·900 = 4,5 J. Un corpo che rotola senza strisciare ha v = ω·R per il centro e possiede sia energia di traslazione sia di rotazione: K = ½Mv² + ½Iω². Per questo su un piano inclinato una sfera che rotola arriva in fondo più lenta di un corpo che scivola senza attrito: dall'altezza h = 1,0 m la sfera piena arriva a v = √(10gh/7) ≈ 3,7 m/s, il corpo che scivola a √(2gh) ≈ 4,4 m/s, perché parte dell'energia potenziale va in rotazione. Un cilindro cavo, con più momento d'inerzia, è ancora più lento.",
+"Il momento angolare di un corpo che ruota attorno a un asse fisso è L = I·ω (per un punto materiale L = m·v·r quando v è perpendicolare a r). Vale una legge di conservazione: se il momento delle forze esterne è nullo, L resta costante. La pattinatrice che ruota con le braccia aperte (I = 4,0 kg·m², ω = 2,0 rad/s) e poi le chiude (I = 1,6 kg·m²) aumenta la velocità angolare: ω' = 4,0·2,0/1,6 = 5,0 rad/s. L'energia cinetica passa da ½·4,0·4,0 = 8,0 J a ½·1,6·25 = 20 J: l'aumento viene dal lavoro dei muscoli che tirano le braccia verso l'asse.",
+"La conservazione del momento angolare spiega molti fenomeni: i tuffatori si raggomitolano per fare più capriole, il gatto riesce a girarsi in aria, una trottola o una bicicletta in movimento resistono al ribaltamento perché cambiare la direzione di L richiede un momento. Le stelle che collassano in stelle di neutroni, riducendo il raggio da centinaia di migliaia di chilometri a una decina, arrivano a ruotare centinaia di volte al secondo. La tabella delle analogie aiuta: spostamento ↔ angolo, velocità ↔ ω, accelerazione ↔ α, massa ↔ I, forza ↔ momento M, quantità di moto ↔ momento angolare L."
+],
+"metodo": [
+"Scrivi una tabella a due colonne con le grandezze lineari e quelle angolari corrispondenti e le formule analoghe.",
+"Impara i momenti d'inerzia di anello, disco, sfera e asta e confrontali: capisci perché l'anello ha I maggiore a parità di massa.",
+"Negli esercizi di rotolamento usa la conservazione dell'energia includendo sempre il termine ½Iω² con ω = v/R.",
+"Per la conservazione del momento angolare individua lo stato prima e dopo e verifica che non ci siano momenti esterni.",
+"Prova con una sedia girevole e due bottiglie: aprendo e chiudendo le braccia senti la variazione di ω.",
+"Controlla sempre di usare gli angoli in radianti nelle formule v = ωr e K = ½Iω²."
+],
+"ricorda": [
+"Massa lontana dall'asse = più inerzia di rotazione.",
+"Pattinatrice: braccia chiuse, giri più veloci.",
+"Rotolare costa energia: una parte va a far girare il corpo.",
+"M = I·α è la F = m·a delle rotazioni."
+],
+"errori": [
+"Usare la velocità angolare in giri al minuto o in gradi al secondo nelle formule: va convertita in rad/s.",
+"Credere che il momento d'inerzia dipenda solo dalla massa: dipende dalla distribuzione rispetto all'asse.",
+"Dimenticare l'energia di rotazione nei problemi di rotolamento.",
+"Pensare che conservando il momento angolare si conservi anche l'energia cinetica: nella pattinatrice l'energia aumenta.",
+"Confondere il momento della forza (causa della rotazione) con il momento angolare (quantità di moto rotazionale)."
+],
+"domande": [
+{"domanda": "Calcola il momento d'inerzia di una sfera piena di 5,0 kg e raggio 0,20 m.", "risposta": "I = ⅖MR² = 0,4·5,0·0,040 = 0,080 kg·m²."},
+{"domanda": "Una ruota con I = 0,50 kg·m² gira a 20 rad/s. Quanta energia cinetica ha?", "risposta": "K = ½Iω² = 0,5·0,50·400 = 100 J."},
+{"domanda": "Perché un tuffatore si raggomitola per fare le capriole?", "risposta": "Riducendo il momento d'inerzia, a momento angolare costante, aumenta la velocità angolare."},
+{"domanda": "Un disco e un anello di uguale massa e raggio rotolano giù dallo stesso piano inclinato. Quale arriva prima?", "risposta": "Il disco, perché ha momento d'inerzia minore e quindi una frazione minore di energia va in rotazione."},
+{"domanda": "Quale relazione lega v e ω nel rotolamento senza strisciamento?", "risposta": "v = ω·R, dove v è la velocità del centro e R il raggio."}
+]
+},
+"universita": {
+"spiegazione": [
+"Per un punto materiale il momento angolare rispetto a un polo O è L = r × p, e la sua derivata è dL/dt = r × F = M (se O è fisso). Per un sistema di punti vale la seconda equazione cardinale dL/dt = M_ext: le forze interne, se centrali, non contribuiscono. Se il momento esterno è nullo il momento angolare si conserva. Per un corpo rigido che ruota attorno a un asse fisso z la componente lungo l'asse è L_z = I_z·ω, con I_z = ∫ r⊥² dm, e l'equazione del moto è M_z = I_z·α. Il lavoro del momento è W = ∫ M dθ e la potenza P = M·ω: un motore che eroga 200 N·m a 3000 giri/min (314 rad/s) fornisce circa 63 kW.",
+"Il calcolo dei momenti d'inerzia usa due teoremi. Il teorema di Steiner (assi paralleli): I = I_cm + M·d², dove d è la distanza tra l'asse e un asse parallelo passante per il centro di massa. Per un'asta attorno a un estremo: ML²/12 + M(L/2)² = ML²/3. Il teorema degli assi perpendicolari, per lamine piane: I_z = I_x + I_y; per un disco ne segue I_diametro = ¼MR². In generale il momento angolare è L = 𝐈·ω, con 𝐈 tensore d'inerzia (matrice simmetrica 3×3): L e ω sono paralleli solo se la rotazione avviene attorno a un asse principale. Per un corpo che ruota attorno a un asse non principale servono momenti dei vincoli per tenerlo in rotazione: è il motivo per cui si equilibrano le ruote delle auto.",
+"Per il moto generale di un corpo rigido si usano le due equazioni cardinali, M·a_cm = F_ext e dL_cm/dt = M_cm, e l'energia si decompone con il teorema di König: K = ½M·v_cm² + ½I_cm·ω². Nel rotolamento puro su un piano inclinato di angolo θ: M·a = M·g·sin θ − f, I·α = f·R, a = α·R, da cui a = g·sin θ/(1 + I/(MR²)) e f = I·a/R². Per una sfera piena a = (5/7)g sin θ, per un cilindro pieno (2/3)g sin θ, per un anello ½g sin θ. Il rotolamento richiede f ≤ μ_s·N, cioè tan θ ≤ μ_s·(1 + MR²/I): per un cilindro pieno tan θ ≤ 3μ_s. L'attrito statico nel rotolamento puro non compie lavoro, perché il punto di contatto è istantaneamente fermo.",
+"Esempio con una carrucola dotata di massa (macchina di Atwood): due masse m₁ = 3,0 kg e m₂ = 2,0 kg appese a un filo che passa su un disco di massa 2,0 kg (I/R² = 1,0 kg). Le tensioni nei due tratti sono diverse perché devono far ruotare la carrucola: (T₁ − T₂)R = Iα. Risolvendo il sistema si ottiene a = (m₁ − m₂)g/(m₁ + m₂ + I/R²) = 9,81/6,0 ≈ 1,64 m/s², invece di 1,96 m/s² con carrucola senza massa. Le tensioni sono T₁ = m₁(g − a) ≈ 24,5 N e T₂ = m₂(g + a) ≈ 22,9 N. In un urto tra un proiettile e un'asta incernierata si conserva invece solo il momento angolare rispetto alla cerniera, non la quantità di moto, perché la cerniera esercita una forza impulsiva.",
+"Quando su un corpo che ruota velocemente agisce un momento perpendicolare a L, il vettore L cambia direzione invece di modulo: è la precessione giroscopica. Per una trottola di massa m con baricentro a distanza d dal punto d'appoggio, il momento del peso m·g·d fa ruotare L attorno alla verticale con velocità angolare Ω = m·g·d/(I·ω), nell'ipotesi di rotazione propria rapida. Esempio: m = 0,50 kg, d = 0,040 m, I = 5,0·10⁻⁴ kg·m², ω = 100 rad/s danno Ω = 0,196/0,050 ≈ 3,9 rad/s. Più la trottola gira veloce, più lenta è la precessione. Lo stesso fenomeno causa la precessione degli equinozi dell'asse terrestre (periodo circa 26 000 anni) ed è sfruttato nei giroscopi per la navigazione e nella risonanza magnetica nucleare."
+],
+"metodo": [
+"Ricava con gli integrali i momenti d'inerzia di asta, disco, sfera e cilindro cavo, poi usa Steiner per gli assi spostati.",
+"Negli esercizi di dinamica scrivi sempre insieme l'equazione di traslazione, quella di rotazione e il vincolo cinematico (a = αR).",
+"Per gli urti con corpi incernierati scegli il polo sulla cerniera e conserva il momento angolare rispetto a quel punto.",
+"Ricava la formula della precessione partendo da dL/dt = M e disegna i vettori L, M e ΔL.",
+"Verifica i risultati con casi limite: carrucola di massa nulla, I → 0 nel rotolamento, ecc.",
+"Calcola il tensore d'inerzia di un parallelepipedo e trova gli assi principali per simmetria."
+],
+"ricorda": [
+"Steiner: spostare l'asse costa sempre M·d² in più.",
+"König: energia = traslazione del baricentro + rotazione attorno al baricentro.",
+"Rotolando la sfera scende a 5/7 g sin θ, il cilindro a 2/3, l'anello a 1/2.",
+"Trottola veloce, precessione lenta: Ω = mgd/(Iω)."
+],
+"errori": [
+"Applicare Steiner partendo da un asse che non passa per il centro di massa.",
+"Considerare uguali le tensioni ai due lati di una carrucola con massa.",
+"Conservare la quantità di moto in un urto con un corpo vincolato a una cerniera: la cerniera fornisce un impulso esterno.",
+"Pensare che L sia sempre parallelo a ω: lo è solo per rotazioni attorno ad assi principali.",
+"Attribuire lavoro all'attrito statico nel rotolamento puro: il punto di contatto non scivola e il lavoro è nullo."
+],
+"domande": [
+{"domanda": "Ricava il momento d'inerzia di un'asta attorno a un estremo con il teorema di Steiner.", "risposta": "I = I_cm + M(L/2)² = ML²/12 + ML²/4 = ML²/3."},
+{"domanda": "Con che accelerazione un cilindro pieno rotola su un piano inclinato di 30°?", "risposta": "a = g sin θ/(1 + ½) = (2/3)·9,81·0,5 ≈ 3,27 m/s²."},
+{"domanda": "Che cosa afferma il teorema di König per l'energia cinetica?", "risposta": "Che l'energia cinetica di un sistema è la somma di quella del centro di massa, ½Mv_cm², e di quella del moto relativo al centro di massa, che per un corpo rigido è ½I_cm ω²."},
+{"domanda": "Perché in un urto tra un proiettile e un'asta incernierata non si conserva la quantità di moto?", "risposta": "Perché la cerniera esercita una forza esterna impulsiva; però il suo momento rispetto alla cerniera è nullo, quindi si conserva il momento angolare rispetto a quel punto."},
+{"domanda": "Come cambia la velocità di precessione se la trottola gira due volte più veloce?", "risposta": "Si dimezza, perché Ω = mgd/(Iω) è inversamente proporzionale a ω."}
+]
+}
+}
+}

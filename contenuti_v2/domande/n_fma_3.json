@@ -1,0 +1,962 @@
+[
+ {
+  "id": "NFMA-081",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Il nucleo di uranio-238 (Z = 92) emette una particella alfa. Quale nucleo si forma?",
+  "opzioni": {
+   "A": "Torio-234 (Z = 90)",
+   "B": "Uranio-234 (Z = 92)",
+   "C": "Protoattinio-238 (Z = 91)",
+   "D": "Torio-236 (Z = 90)",
+   "E": "Plutonio-242 (Z = 94)"
+  },
+  "giusta": "A",
+  "perche": "Una particella alfa è un nucleo di elio-4 (2 protoni e 2 neutroni): il nucleo figlio ha quindi Z diminuito di 2 e A diminuito di 4, cioè Z = 90 (torio) e A = 234. Il protoattinio-238 sarebbe il prodotto di un decadimento beta meno, che lascia invariato A; Torio-236 sbaglia la variazione del numero di massa.",
+  "semplice": "Nel decadimento alfa il nucleo lancia via un pezzetto fatto di 2 protoni e 2 neutroni. Perde quindi 2 posti nella tavola periodica e 4 unità di massa.",
+  "passaggi": [
+   "Ricorda la composizione della particella alfa: ⁴₂He",
+   "Conserva il numero di massa: 238 = A + 4, quindi A = 234",
+   "Conserva la carica: 92 = Z + 2, quindi Z = 90 (torio)",
+   "Resta la A: torio-234"
+  ],
+  "concetto": "decadimento alfa"
+ },
+ {
+  "id": "NFMA-082",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Lo iodio-131 ha un tempo di dimezzamento di 8 giorni. Di un campione di 80 g, quanto ne resta dopo 24 giorni?",
+  "opzioni": {
+   "A": "0 g",
+   "B": "10 g",
+   "C": "20 g",
+   "D": "26,7 g",
+   "E": "40 g"
+  },
+  "giusta": "B",
+  "perche": "24 giorni corrispondono a 24/8 = 3 tempi di dimezzamento; dopo ciascuno la quantità si dimezza: 80 → 40 → 20 → 10 g, cioè N = N₀·(1/2)³ = 80 g/8 = 10 g. Il valore 26,7 g si ottiene dividendo per 3 invece che per 2³; 0 g deriva dall'idea sbagliata che il decadimento sia lineare.",
+  "semplice": "Ogni 8 giorni metà dello iodio se ne va. Dopo tre volte resta un ottavo: è come tagliare una torta a metà, poi la metà a metà, poi ancora.",
+  "passaggi": [
+   "Dati: N₀ = 80 g, T½ = 8 giorni, t = 24 giorni",
+   "Numero di dimezzamenti: 24/8 = 3",
+   "Formula: N = N₀·(1/2)^(t/T½)",
+   "Calcolo: 80 g · 1/8 = 10 g"
+  ],
+  "concetto": "tempo di dimezzamento"
+ },
+ {
+  "id": "NFMA-083",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Che cosa accade nel nucleo durante un decadimento beta meno (β⁻)?",
+  "opzioni": {
+   "A": "Un protone si trasforma in neutrone emettendo un positrone",
+   "B": "Il nucleo emette un fotone e resta invariato",
+   "C": "Un neutrone si trasforma in protone emettendo un elettrone e un antineutrino",
+   "D": "Il nucleo emette un nucleo di elio",
+   "E": "Un elettrone dell'atomo viene catturato dal nucleo"
+  },
+  "giusta": "C",
+  "perche": "Nel decadimento β⁻ un neutrone del nucleo diventa protone, con emissione di un elettrone e di un antineutrino: Z aumenta di 1 e A non cambia. La trasformazione di un protone in neutrone con emissione di un positrone è invece il decadimento β⁺, la distrazione più vicina; la cattura elettronica è un altro processo ancora.",
+  "semplice": "Nel nucleo un neutrone «si trasforma» in protone e lancia fuori un elettrone: l'atomo avanza di un posto nella tavola periodica, ma pesa praticamente uguale.",
+  "passaggi": [
+   "Ricorda che la particella β⁻ è un elettrone nato nel nucleo",
+   "Per conservare la carica un neutrone diventa protone",
+   "Viene emesso anche un antineutrino",
+   "Escludi A (β⁺) ed E (cattura elettronica): resta la C"
+  ],
+  "concetto": "decadimento beta meno"
+ },
+ {
+  "id": "NFMA-084",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Il difetto di massa del nucleo di elio-4 è circa 0,0304 u. Qual è la sua energia di legame? (1 u corrisponde a 931,5 MeV)",
+  "opzioni": {
+   "A": "7,1 MeV",
+   "B": "0,0304 MeV",
+   "C": "931,5 MeV",
+   "D": "28,3 MeV",
+   "E": "113 MeV"
+  },
+  "giusta": "D",
+  "perche": "L'energia di legame è l'energia equivalente al difetto di massa: E = Δm·c² = 0,0304 u · 931,5 MeV/u ≈ 28,3 MeV. Dividendo per i 4 nucleoni si ottengono circa 7,1 MeV per nucleone: chi sceglie 7,1 MeV confonde energia di legame totale e per nucleone.",
+  "semplice": "Un nucleo pesa un po' meno della somma dei suoi pezzi: quella massa «mancante» è diventata l'energia che li tiene incollati insieme.",
+  "passaggi": [
+   "Dati: Δm = 0,0304 u, 1 u ↔ 931,5 MeV",
+   "Formula: E_legame = Δm·c²",
+   "Calcolo: 0,0304 · 931,5 MeV",
+   "Risultato: E ≈ 28,3 MeV (circa 7,1 MeV per nucleone)"
+  ],
+  "concetto": "difetto di massa ed energia di legame"
+ },
+ {
+  "id": "NFMA-085",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sul potere penetrante delle radiazioni è corretta?",
+  "opzioni": {
+   "A": "Le particelle alfa attraversano facilmente diversi centimetri di piombo",
+   "B": "I raggi gamma sono fermati da un foglio di carta",
+   "C": "Le particelle beta sono più penetranti dei raggi gamma",
+   "D": "Tutte le radiazioni hanno lo stesso potere penetrante",
+   "E": "Le particelle alfa sono fermate da un foglio di carta, mentre i raggi gamma richiedono spessori notevoli di piombo o cemento"
+  },
+  "giusta": "E",
+  "perche": "Le particelle alfa, pesanti e con carica doppia, perdono rapidamente energia ionizzando la materia e sono fermate da un foglio di carta o dallo strato superficiale della pelle. Le beta richiedono qualche millimetro di alluminio; i raggi gamma, privi di carica e massa, sono i più penetranti. Il basso potere penetrante non rende innocue le alfa se il materiale viene inalato o ingerito.",
+  "semplice": "Le alfa sono come palle da bowling: grosse ma si fermano subito. I raggi gamma sono come spilli invisibili che passano quasi dappertutto.",
+  "passaggi": [
+   "Ricorda l'ordine: alfa < beta < gamma per potere penetrante",
+   "Le alfa si fermano con un foglio di carta",
+   "Le gamma richiedono piombo o cemento spessi",
+   "Resta la E"
+  ],
+  "concetto": "potere penetrante delle radiazioni"
+ },
+ {
+  "id": "NFMA-086",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Un reperto di legno contiene il 25% del carbonio-14 presente in un legno vivo. Quanti anni ha? (tempo di dimezzamento del ¹⁴C: 5730 anni)",
+  "opzioni": {
+   "A": "11 460 anni",
+   "B": "5730 anni",
+   "C": "1432 anni",
+   "D": "22 920 anni",
+   "E": "17 190 anni"
+  },
+  "giusta": "A",
+  "perche": "Il 25% corrisponde a 1/4 = (1/2)², cioè a due tempi di dimezzamento: t = 2 · 5730 = 11 460 anni. Chi risponde 22 920 anni moltiplica per quattro, pensando che 1/4 richieda quattro dimezzamenti; 5730 anni corrisponderebbe al 50%.",
+  "semplice": "Quando un albero muore smette di assorbire carbonio-14, che poi si dimezza ogni 5730 anni. Se ne resta un quarto, si è dimezzato due volte.",
+  "passaggi": [
+   "Dati: N/N₀ = 0,25, T½ = 5730 anni",
+   "Riconosci che 0,25 = (1/2)²: due dimezzamenti",
+   "Calcolo: t = 2 · 5730 anni",
+   "Risultato: t = 11 460 anni"
+  ],
+  "concetto": "datazione con il carbonio-14"
+ },
+ {
+  "id": "NFMA-087",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Perché la fissione di un nucleo pesante come l'uranio-235 libera energia?",
+  "opzioni": {
+   "A": "Perché i neutroni emessi hanno massa negativa",
+   "B": "Perché i nuclei prodotti hanno un'energia di legame per nucleone maggiore di quella del nucleo iniziale",
+   "C": "Perché il nucleo di uranio è più leggero dei frammenti",
+   "D": "Perché aumenta il numero totale di protoni",
+   "E": "Perché i frammenti si attraggono per forza nucleare"
+  },
+  "giusta": "B",
+  "perche": "La curva dell'energia di legame per nucleone ha un massimo vicino al ferro: i nuclei di massa intermedia prodotti dalla fissione sono più legati dell'uranio. La massa totale dei prodotti è quindi minore di quella iniziale, e la differenza si libera come energia secondo E = Δm·c². Il numero di protoni si conserva, quindi D è falsa.",
+  "semplice": "Dividendo un nucleo grande e «traballante» in due pezzi più compatti e stabili si libera energia, come quando un mucchio instabile di sassi crolla e diventa ordinato.",
+  "passaggi": [
+   "Ricorda la curva dell'energia di legame per nucleone, massima intorno al ferro",
+   "I frammenti di fissione stanno più vicini al massimo dell'uranio",
+   "Più legame significa meno massa: la differenza diventa energia",
+   "Resta la B"
+  ],
+  "concetto": "fissione nucleare"
+ },
+ {
+  "id": "NFMA-088",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Quanti neutroni contiene il nucleo di carbonio-14 (Z = 6)?",
+  "opzioni": {
+   "A": "6",
+   "B": "14",
+   "C": "8",
+   "D": "20",
+   "E": "7"
+  },
+  "giusta": "C",
+  "perche": "Il numero di massa A conta protoni più neutroni: N = A − Z = 14 − 6 = 8. Il carbonio-14 è un isotopo del carbonio-12, con lo stesso numero di protoni ma due neutroni in più. Il valore 14 confonde il numero di massa con il numero di neutroni.",
+  "semplice": "Il numero dopo il nome dell'elemento conta tutte le particelle del nucleo. Togli i 6 protoni del carbonio e restano 8 neutroni.",
+  "passaggi": [
+   "Dati: A = 14, Z = 6",
+   "Formula: N = A − Z",
+   "Calcolo: 14 − 6",
+   "Risultato: N = 8 neutroni"
+  ],
+  "concetto": "numero di massa e isotopi"
+ },
+ {
+  "id": "NFMA-089",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Un isotopo radioattivo ha un tempo di dimezzamento di 10 minuti. Quanto vale la sua costante di decadimento λ?",
+  "opzioni": {
+   "A": "0,10 s⁻¹",
+   "B": "6,9 s⁻¹",
+   "C": "0,050 min⁻¹",
+   "D": "1,2·10⁻³ s⁻¹",
+   "E": "14 min⁻¹"
+  },
+  "giusta": "D",
+  "perche": "Costante di decadimento e tempo di dimezzamento sono legati da λ = ln 2/T½. Con T½ = 10 min = 600 s: λ = 0,693/600 s ≈ 1,2·10⁻³ s⁻¹ (pari a 0,069 min⁻¹). Il valore 0,10 s⁻¹ si ottiene facendo 1/T½ senza ln 2 e senza convertire in secondi; 0,050 min⁻¹ usa ½ al posto di ln 2.",
+  "semplice": "La costante di decadimento dice che frazione di nuclei decade ogni secondo. Se in 10 minuti se ne va metà, al secondo ne decade circa uno su mille.",
+  "passaggi": [
+   "Dati: T½ = 10 min = 600 s",
+   "Formula: λ = ln 2/T½",
+   "Calcolo: 0,693 / 600 s",
+   "Risultato: λ ≈ 1,2·10⁻³ s⁻¹"
+  ],
+  "concetto": "costante di decadimento"
+ },
+ {
+  "id": "NFMA-090",
+  "materia": "Fisica",
+  "argomento": "Fisica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Perché la fusione dell'idrogeno nel nucleo del Sole richiede temperature di milioni di kelvin?",
+  "opzioni": {
+   "A": "Perché l'idrogeno a bassa temperatura è un gas inerte",
+   "B": "Perché la fusione assorbe energia",
+   "C": "Perché serve fondere i neutroni presenti nell'idrogeno",
+   "D": "Perché a basse temperature la forza nucleare è repulsiva",
+   "E": "Perché i nuclei, carichi positivamente, devono avere energia sufficiente a vincere la repulsione elettrostatica e avvicinarsi abbastanza"
+  },
+  "giusta": "E",
+  "perche": "La forza nucleare forte agisce solo a distanze dell'ordine di 10⁻¹⁵ m; per arrivarci i nuclei, entrambi positivi, devono superare la barriera di repulsione coulombiana. Solo ad altissime temperature (con l'aiuto dell'effetto tunnel) l'agitazione termica basta. La fusione dei nuclei leggeri libera energia, non la assorbe.",
+  "semplice": "I nuclei sono come calamite che si respingono: per farli unire bisogna lanciarli l'uno contro l'altro fortissimo. Il calore enorme del Sole li fa correre abbastanza veloci.",
+  "passaggi": [
+   "Ricorda che i nuclei di idrogeno sono protoni, tutti positivi",
+   "Per fondere devono avvicinarsi moltissimo, vincendo la repulsione",
+   "Serve quindi grande energia cinetica, cioè alta temperatura",
+   "Escludi B: la fusione libera energia. Resta la E"
+  ],
+  "concetto": "fusione nucleare"
+ },
+ {
+  "id": "NFMA-091",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Qual è il momento d'inerzia di un disco pieno omogeneo di massa 2,0 kg e raggio 0,30 m rispetto al suo asse di simmetria perpendicolare al piano?",
+  "opzioni": {
+   "A": "0,090 kg·m²",
+   "B": "0,18 kg·m²",
+   "C": "0,30 kg·m²",
+   "D": "0,060 kg·m²",
+   "E": "0,036 kg·m²"
+  },
+  "giusta": "A",
+  "perche": "Per un disco pieno omogeneo rispetto all'asse centrale I = ½·M·R² = 0,5 · 2,0 kg · 0,090 m² = 0,090 kg·m². Il valore 0,18 kg·m² corrisponde a M·R², cioè al momento d'inerzia di un anello sottile, in cui tutta la massa sta al bordo.",
+  "semplice": "Un disco ha massa distribuita anche vicino al centro, quindi è più facile da far girare di un anello con la stessa massa e lo stesso raggio.",
+  "passaggi": [
+   "Dati: M = 2,0 kg, R = 0,30 m",
+   "Formula: I = ½·M·R²",
+   "Calcolo: 0,5 · 2,0 kg · (0,30 m)² = 1,0 · 0,090 kg·m²",
+   "Risultato: I = 0,090 kg·m²"
+  ],
+  "concetto": "momento d'inerzia del disco"
+ },
+ {
+  "id": "NFMA-092",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Un pattinatore ruota a 2,0 rad/s con momento d'inerzia 4,0 kg·m². Stringendo le braccia porta il momento d'inerzia a 1,6 kg·m². Trascurando gli attriti, quale velocità angolare raggiunge?",
+  "opzioni": {
+   "A": "0,80 rad/s",
+   "B": "5,0 rad/s",
+   "C": "3,2 rad/s",
+   "D": "2,0 rad/s",
+   "E": "12,5 rad/s"
+  },
+  "giusta": "B",
+  "perche": "In assenza di momenti esterni il momento angolare si conserva: I₁·ω₁ = I₂·ω₂, quindi ω₂ = 4,0 · 2,0 / 1,6 = 5,0 rad/s. L'energia cinetica di rotazione invece aumenta (da 8,0 J a 20 J), a spese del lavoro muscolare. Il valore 0,80 rad/s si ottiene invertendo il rapporto dei momenti d'inerzia.",
+  "semplice": "Quando il pattinatore chiude le braccia, gira molto più veloce senza alcuna spinta esterna: il «giro» totale si conserva e si concentra.",
+  "passaggi": [
+   "Dati: I₁ = 4,0 kg·m², ω₁ = 2,0 rad/s, I₂ = 1,6 kg·m²",
+   "Principio: momento esterno nullo, quindi L = I·ω costante",
+   "Formula: ω₂ = I₁·ω₁/I₂",
+   "Calcolo: 8,0 kg·m²/s / 1,6 kg·m² = 5,0 rad/s"
+  ],
+  "concetto": "conservazione del momento angolare"
+ },
+ {
+  "id": "NFMA-093",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Un'asta sottile omogenea di massa M e lunghezza L ha momento d'inerzia ML²/12 rispetto a un asse perpendicolare passante per il centro. Quanto vale il momento d'inerzia rispetto a un asse parallelo passante per un estremo?",
+  "opzioni": {
+   "A": "ML²/12",
+   "B": "ML²/4",
+   "C": "ML²/3",
+   "D": "ML²/2",
+   "E": "ML²"
+  },
+  "giusta": "C",
+  "perche": "Per il teorema di Huygens-Steiner I = I_cm + M·d², con d = L/2 distanza tra i due assi: I = ML²/12 + ML²/4 = ML²/12 + 3ML²/12 = ML²/3. Il valore ML²/4 è soltanto il termine M·d², dimenticando il contributo del centro di massa.",
+  "semplice": "Far ruotare un bastone tenendolo per una punta è più faticoso che tenerlo dal centro: la massa sta mediamente più lontana dall'asse.",
+  "passaggi": [
+   "Dati: I_cm = ML²/12, distanza tra gli assi d = L/2",
+   "Formula: teorema degli assi paralleli I = I_cm + M·d²",
+   "Calcolo: ML²/12 + M·L²/4 = ML²/12 + 3ML²/12",
+   "Risultato: I = 4ML²/12 = ML²/3"
+  ],
+  "concetto": "teorema di Huygens-Steiner"
+ },
+ {
+  "id": "NFMA-094",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Una sfera piena, un cilindro pieno e un anello sottile, con uguale massa e raggio, partono da fermi dalla stessa altezza e rotolano senza strisciare lungo lo stesso piano inclinato. Quale arriva per primo in fondo?",
+  "opzioni": {
+   "A": "L'anello",
+   "B": "Il cilindro pieno",
+   "C": "Arrivano tutti insieme",
+   "D": "La sfera piena",
+   "E": "Dipende dalla massa comune"
+  },
+  "giusta": "D",
+  "perche": "Per rotolamento puro v² = 2gh/(1 + I/(MR²)). Il rapporto I/(MR²) vale 2/5 per la sfera, 1/2 per il cilindro e 1 per l'anello: la sfera ha il denominatore più piccolo, quindi la velocità e l'accelerazione maggiori. Il risultato non dipende né da massa né da raggio. «Tutti insieme» varrebbe solo per corpi che scivolano senza attrito.",
+  "semplice": "Chi mette meno energia nella rotazione ne ha di più per avanzare. La sfera piena ha la massa raccolta vicino al centro, quindi «spreca» meno nel girare e scende più in fretta.",
+  "passaggi": [
+   "Scrivi la conservazione dell'energia: Mgh = ½Mv² + ½I·ω², con ω = v/R",
+   "Ricava v² = 2gh/(1 + I/(MR²))",
+   "Confronta I/(MR²): sfera 0,4, cilindro 0,5, anello 1",
+   "Il valore più piccolo è della sfera: resta la D"
+  ],
+  "concetto": "rotolamento senza strisciamento"
+ },
+ {
+  "id": "NFMA-095",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Un cilindro pieno di massa 4,0 kg rotola senza strisciare su un piano orizzontale con velocità del centro di massa 3,0 m/s. Qual è la sua energia cinetica totale?",
+  "opzioni": {
+   "A": "18 J",
+   "B": "9,0 J",
+   "C": "36 J",
+   "D": "12 J",
+   "E": "27 J"
+  },
+  "giusta": "E",
+  "perche": "L'energia cinetica totale è la somma di quella di traslazione e di quella di rotazione: K = ½Mv² + ½I·ω², con I = ½MR² e ω = v/R. Si ottiene K = ½Mv² + ¼Mv² = ¾Mv² = 0,75 · 4,0 · 9,0 = 27 J. Il valore 18 J tiene conto della sola traslazione.",
+  "semplice": "Un cilindro che rotola fa due cose insieme: avanza e gira. Ha quindi due «scorte» di energia, e la parte di rotazione è metà di quella di avanzamento.",
+  "passaggi": [
+   "Dati: M = 4,0 kg, v = 3,0 m/s, I = ½MR², ω = v/R",
+   "Traslazione: ½ · 4,0 · 3,0² = 18 J",
+   "Rotazione: ½ · ½MR² · (v/R)² = ¼ · 4,0 · 9,0 = 9,0 J",
+   "Totale: K = 18 J + 9,0 J = 27 J"
+  ],
+  "concetto": "energia cinetica di rotolamento"
+ },
+ {
+  "id": "NFMA-096",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Quale equazione descrive l'evoluzione del momento angolare totale L di un sistema rispetto a un polo fisso?",
+  "opzioni": {
+   "A": "dL/dt = τ_ext, dove τ_ext è il momento risultante delle sole forze esterne",
+   "B": "dL/dt = F_ext, dove F_ext è la risultante delle forze esterne",
+   "C": "dL/dt = τ_int + τ_ext, e i momenti interni non si annullano",
+   "D": "L = m·v per ogni sistema",
+   "E": "dL/dt = 0 sempre"
+  },
+  "giusta": "A",
+  "perche": "È la seconda equazione cardinale della dinamica: la derivata temporale del momento angolare totale, calcolato rispetto a un polo fisso (o al centro di massa), è uguale al momento risultante delle forze esterne. I momenti delle forze interne si annullano a coppie se le forze sono centrali (terzo principio). Se τ_ext = 0, L si conserva, ma non sempre.",
+  "semplice": "Per cambiare il modo in cui un oggetto gira serve qualcosa da fuori che lo «torca». Le spinte tra le parti interne non bastano.",
+  "passaggi": [
+   "Riconosci la seconda equazione cardinale",
+   "Ricorda che i momenti delle forze interne si annullano a coppie",
+   "Escludi B (prima equazione cardinale) ed E (vale solo con τ_ext = 0)",
+   "Resta la A"
+  ],
+  "concetto": "seconda equazione cardinale"
+ },
+ {
+  "id": "NFMA-097",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Un volano con momento d'inerzia 0,50 kg·m² è soggetto a un momento torcente costante di 6,0 N·m. Quanto vale la sua accelerazione angolare?",
+  "opzioni": {
+   "A": "3,0 rad/s²",
+   "B": "12 rad/s²",
+   "C": "0,083 rad/s²",
+   "D": "6,5 rad/s²",
+   "E": "36 rad/s²"
+  },
+  "giusta": "B",
+  "perche": "L'equazione fondamentale della dinamica rotazionale attorno a un asse fisso è τ = I·α, analoga a F = m·a. Quindi α = τ/I = 6,0 N·m / 0,50 kg·m² = 12 rad/s². Il valore 3,0 rad/s² si ottiene moltiplicando invece di dividere; 0,083 rad/s² è il rapporto inverso.",
+  "semplice": "Il momento d'inerzia per le rotazioni è come la massa per gli spostamenti: un volano leggero con una buona spinta di rotazione accelera in fretta.",
+  "passaggi": [
+   "Dati: I = 0,50 kg·m², τ = 6,0 N·m",
+   "Formula: τ = I·α",
+   "Calcolo: α = 6,0 / 0,50 rad/s²",
+   "Risultato: α = 12 rad/s²"
+  ],
+  "concetto": "dinamica rotazionale"
+ },
+ {
+  "id": "NFMA-098",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Un punto materiale di 2,0 kg percorre una circonferenza di raggio 0,50 m con velocità di modulo 3,0 m/s. Quanto vale il modulo del suo momento angolare rispetto al centro?",
+  "opzioni": {
+   "A": "1,5 kg·m²/s",
+   "B": "6,0 kg·m²/s",
+   "C": "3,0 kg·m²/s",
+   "D": "9,0 kg·m²/s",
+   "E": "0,75 kg·m²/s"
+  },
+  "giusta": "C",
+  "perche": "Il momento angolare è L = r × p e, poiché nel moto circolare r e v sono perpendicolari, |L| = r·m·v = 0,50 m · 2,0 kg · 3,0 m/s = 3,0 kg·m²/s. Il valore 6,0 kg·m²/s è il modulo della quantità di moto (in kg·m/s), non del momento angolare.",
+  "semplice": "Il momento angolare misura «quanto giro» ha un oggetto: dipende da quanto pesa, quanto va veloce e quanto è lontano dal centro.",
+  "passaggi": [
+   "Dati: m = 2,0 kg, r = 0,50 m, v = 3,0 m/s",
+   "Formula: |L| = r·m·v·sin 90° = r·m·v",
+   "Calcolo: 0,50 m · 2,0 kg · 3,0 m/s",
+   "Risultato: L = 3,0 kg·m²/s"
+  ],
+  "concetto": "momento angolare di un punto materiale"
+ },
+ {
+  "id": "NFMA-099",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Una sfera piena parte da ferma e rotola senza strisciare lungo un piano inclinato, scendendo di un'altezza di 1,4 m. Qual è la velocità del suo centro di massa in fondo? (g = 9,8 m/s²)",
+  "opzioni": {
+   "A": "5,2 m/s",
+   "B": "3,7 m/s",
+   "C": "2,8 m/s",
+   "D": "4,4 m/s",
+   "E": "6,3 m/s"
+  },
+  "giusta": "D",
+  "perche": "Per la sfera piena I = (2/5)MR², quindi l'energia cinetica totale è ½Mv² + ½·(2/5)MR²·(v/R)² = (7/10)Mv². Uguagliandola a Mgh: v = √(10gh/7) = √(10 · 9,8 · 1,4/7) = √19,6 ≈ 4,4 m/s. Il valore 5,2 m/s è √(2gh), cioè quello di un corpo che scivola senza attrito e senza ruotare.",
+  "semplice": "Una palla che rotola arriva in fondo un po' più lenta di un cubetto di ghiaccio che scivola, perché parte dell'energia la usa per girare su se stessa.",
+  "passaggi": [
+   "Dati: h = 1,4 m, g = 9,8 m/s², I = (2/5)MR²",
+   "Conservazione dell'energia: Mgh = (7/10)Mv²",
+   "Formula: v = √(10gh/7)",
+   "Calcolo: √(10 · 9,8 · 1,4 / 7) = √19,6 m/s ≈ 4,4 m/s"
+  ],
+  "concetto": "conservazione dell'energia nel rotolamento"
+ },
+ {
+  "id": "NFMA-100",
+  "materia": "Fisica",
+  "argomento": "Meccanica del corpo rigido e momento angolare",
+  "livello": "università",
+  "domanda": "Un corpo rigido ruota attorno a un asse fisso. Quale grandezza cinematica è la stessa per tutti i suoi punti in un dato istante?",
+  "opzioni": {
+   "A": "La velocità lineare",
+   "B": "L'accelerazione centripeta",
+   "C": "La distanza percorsa",
+   "D": "L'accelerazione tangenziale",
+   "E": "La velocità angolare"
+  },
+  "giusta": "E",
+  "perche": "In un corpo rigido le distanze tra i punti non cambiano, quindi tutti ruotano dello stesso angolo nello stesso tempo e hanno la stessa velocità angolare ω (e la stessa accelerazione angolare). Le grandezze lineari dipendono invece dalla distanza r dall'asse: v = ω·r, a_c = ω²·r, a_t = α·r.",
+  "semplice": "Su una giostra tutti fanno un giro nello stesso tempo, ma chi sta sul bordo corre molto più veloce di chi sta vicino al centro.",
+  "passaggi": [
+   "Ricorda che nel corpo rigido le distanze tra i punti restano fisse",
+   "Tutti i punti descrivono lo stesso angolo nello stesso tempo",
+   "Le grandezze lineari crescono con r: escludi A, B, C, D",
+   "Resta la E"
+  ],
+  "concetto": "cinematica del corpo rigido"
+ },
+ {
+  "id": "NFMA-101",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Una superficie chiusa racchiude una carica netta di 1,0 μC. Quanto vale il flusso del campo elettrico attraverso di essa? (ε₀ = 8,85·10⁻¹² C²/(N·m²))",
+  "opzioni": {
+   "A": "1,1·10⁵ N·m²/C",
+   "B": "8,9·10⁻¹⁸ N·m²/C",
+   "C": "1,1·10¹¹ N·m²/C",
+   "D": "0 N·m²/C",
+   "E": "9,0·10³ N·m²/C"
+  },
+  "giusta": "A",
+  "perche": "Per la legge di Gauss il flusso del campo elettrico attraverso una superficie chiusa è Φ = Q_int/ε₀ = 1,0·10⁻⁶ C / 8,85·10⁻¹² C²/(N·m²) ≈ 1,1·10⁵ N·m²/C, indipendentemente dalla forma della superficie. Il valore 1,1·10¹¹ si ottiene dimenticando il prefisso micro; il flusso è nullo solo se la carica interna netta è nulla.",
+  "semplice": "Il flusso conta quante linee di campo escono da una superficie chiusa: dipende solo da quanta carica c'è dentro, non dalla forma della «scatola».",
+  "passaggi": [
+   "Dati: Q = 1,0 μC = 1,0·10⁻⁶ C, ε₀ = 8,85·10⁻¹² C²/(N·m²)",
+   "Formula: Φ_E = Q_int/ε₀",
+   "Calcolo: 1,0·10⁻⁶ / 8,85·10⁻¹²",
+   "Risultato: Φ ≈ 1,1·10⁵ N·m²/C"
+  ],
+  "concetto": "legge di Gauss per il campo elettrico"
+ },
+ {
+  "id": "NFMA-102",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Che cosa esprime l'equazione ∇·B = 0 (legge di Gauss per il magnetismo)?",
+  "opzioni": {
+   "A": "Che il campo magnetico è sempre nullo all'interno dei conduttori",
+   "B": "Che non esistono cariche magnetiche isolate (monopoli) e il flusso di B attraverso ogni superficie chiusa è nullo",
+   "C": "Che il campo magnetico non varia nel tempo",
+   "D": "Che le correnti elettriche non generano campi magnetici",
+   "E": "Che il campo magnetico è conservativo"
+  },
+  "giusta": "B",
+  "perche": "La divergenza nulla di B significa che non ci sono sorgenti o pozzi puntiformi di campo magnetico: le linee di B sono chiuse, quanto flusso entra in una superficie chiusa tanto ne esce. Non dice nulla sulla variazione temporale né sulla circuitazione; in particolare B non è conservativo, perché la sua circuitazione è legata alle correnti (legge di Ampère-Maxwell).",
+  "semplice": "Se spezzi una calamita ottieni due calamite più piccole, ciascuna con nord e sud: un polo da solo non esiste. Per questo le linee del campo magnetico si chiudono sempre su se stesse.",
+  "passaggi": [
+   "Riconosci la divergenza: misura le sorgenti del campo",
+   "Divergenza nulla significa nessuna sorgente puntiforme: niente monopoli",
+   "In forma integrale, flusso nullo attraverso superfici chiuse",
+   "Escludi E: riguarda il rotore, non la divergenza. Resta la B"
+  ],
+  "concetto": "assenza di monopoli magnetici"
+ },
+ {
+  "id": "NFMA-103",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Perché Maxwell aggiunse alla legge di Ampère il termine di corrente di spostamento ε₀·dΦ_E/dt?",
+  "opzioni": {
+   "A": "Per spiegare la forza di Lorentz",
+   "B": "Per tenere conto della resistenza dei conduttori",
+   "C": "Per rendere la legge coerente con la conservazione della carica, ad esempio nel condensatore in carica, dove tra le armature non scorre corrente di conduzione",
+   "D": "Per descrivere i materiali ferromagnetici",
+   "E": "Per spiegare l'effetto fotoelettrico"
+  },
+  "giusta": "C",
+  "perche": "Nella forma originale la legge di Ampère dava risultati contraddittori per un condensatore in carica: una superficie attraversata dal filo e una che passa tra le armature davano circuitazioni diverse. Il termine di corrente di spostamento, legato alla variazione del campo elettrico, ripristina la coerenza con l'equazione di continuità e prevede che un campo elettrico variabile generi un campo magnetico, condizione essenziale per le onde elettromagnetiche.",
+  "semplice": "Maxwell capì che non solo le correnti, ma anche un campo elettrico che cambia crea un campo magnetico. Senza questa aggiunta la luce non potrebbe esistere come onda.",
+  "passaggi": [
+   "Ricorda la contraddizione del condensatore in carica",
+   "Tra le armature non c'è corrente di conduzione, ma E varia",
+   "Il termine ε₀·dΦ_E/dt sostituisce la corrente mancante",
+   "Resta la C"
+  ],
+  "concetto": "corrente di spostamento"
+ },
+ {
+  "id": "NFMA-104",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Dalle equazioni di Maxwell nel vuoto si ricava che le onde elettromagnetiche si propagano con velocità v. Quale relazione è corretta?",
+  "opzioni": {
+   "A": "v = μ₀·ε₀",
+   "B": "v = √(μ₀/ε₀)",
+   "C": "v = 1/(μ₀·ε₀)",
+   "D": "v = 1/√(μ₀·ε₀)",
+   "E": "v = √(μ₀·ε₀)"
+  },
+  "giusta": "D",
+  "perche": "Combinando le leggi di Faraday e di Ampère-Maxwell nel vuoto si ottiene un'equazione delle onde per E e B con velocità v = 1/√(μ₀ε₀). Con μ₀ = 4π·10⁻⁷ T·m/A ed ε₀ = 8,85·10⁻¹² F/m il prodotto vale circa 1,11·10⁻¹⁷ s²/m², la cui radice è 3,34·10⁻⁹ s/m: il reciproco è 3,0·10⁸ m/s, la velocità della luce. √(μ₀/ε₀) ≈ 377 Ω è invece l'impedenza del vuoto.",
+  "semplice": "Maxwell calcolò la velocità delle sue onde usando solo due costanti misurate in laboratorio con cariche e calamite, e trovò proprio la velocità della luce: capì così che la luce è un'onda elettromagnetica.",
+  "passaggi": [
+   "Ricorda che dalle equazioni nel vuoto si ottiene l'equazione delle onde",
+   "Il coefficiente è 1/(μ₀ε₀) = v²",
+   "Verifica: 1/√(4π·10⁻⁷ · 8,85·10⁻¹²) ≈ 3,0·10⁸ m/s",
+   "Escludi B: ha le dimensioni di una resistenza. Resta la D"
+  ],
+  "concetto": "velocità delle onde elettromagnetiche"
+ },
+ {
+  "id": "NFMA-105",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Quale delle seguenti è la legge di Faraday in forma differenziale?",
+  "opzioni": {
+   "A": "∇·E = ρ/ε₀",
+   "B": "∇·B = 0",
+   "C": "∇×B = μ₀J + μ₀ε₀ ∂E/∂t",
+   "D": "∇×E = 0",
+   "E": "∇×E = −∂B/∂t"
+  },
+  "giusta": "E",
+  "perche": "La legge di Faraday afferma che un campo magnetico variabile genera un campo elettrico con circuitazione non nulla: in forma differenziale il rotore di E è uguale a −∂B/∂t. La forma ∇×E = 0 vale solo in elettrostatica, quando i campi non dipendono dal tempo. A e B sono le due leggi di Gauss, C è la legge di Ampère-Maxwell.",
+  "semplice": "Quando il campo magnetico cambia, intorno nasce un campo elettrico che «gira»: è ciò che fa funzionare dinamo e trasformatori.",
+  "passaggi": [
+   "Riconosci che l'induzione riguarda il rotore di E",
+   "La sorgente è la variazione temporale di B",
+   "Escludi D: vale solo nel caso statico",
+   "Resta la E"
+  ],
+  "concetto": "legge di Faraday in forma locale"
+ },
+ {
+  "id": "NFMA-106",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Un filo rettilineo molto lungo è percorso da una corrente di 10 A. Quanto vale il campo magnetico a 2,0 cm dal filo? (μ₀ = 4π·10⁻⁷ T·m/A)",
+  "opzioni": {
+   "A": "1,0·10⁻⁴ T",
+   "B": "2,0·10⁻⁶ T",
+   "C": "6,3·10⁻⁴ T",
+   "D": "1,0·10⁻² T",
+   "E": "5,0·10⁻⁵ T"
+  },
+  "giusta": "A",
+  "perche": "Applicando la legge di Ampère a una circonferenza centrata sul filo, B·2πr = μ₀I, quindi B = μ₀I/(2πr) = 4π·10⁻⁷ · 10 / (2π · 0,020) T = 2,0·10⁻⁶/0,020 T = 1,0·10⁻⁴ T. Il valore 1,0·10⁻² T si ottiene usando r in centimetri; 6,3·10⁻⁴ T dimenticando il fattore 2π al denominatore.",
+  "semplice": "Attorno a un filo con corrente il campo magnetico forma cerchi; più ci si allontana, più è debole. A 2 cm da 10 A il campo è simile a quello terrestre, circa il doppio.",
+  "passaggi": [
+   "Dati: I = 10 A, r = 2,0 cm = 0,020 m",
+   "Legge di Ampère: B·2πr = μ₀I, quindi B = μ₀I/(2πr)",
+   "Calcolo: (4π·10⁻⁷ · 10)/(2π · 0,020) = 2,0·10⁻⁶/0,020 T",
+   "Risultato: B = 1,0·10⁻⁴ T"
+  ],
+  "concetto": "legge di Ampère per un filo rettilineo"
+ },
+ {
+  "id": "NFMA-107",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Un condensatore piano viene caricato con una corrente di conduzione costante di 2,0 A nei fili. Quanto vale la corrente di spostamento tra le armature?",
+  "opzioni": {
+   "A": "0 A, perché tra le armature c'è il vuoto",
+   "B": "2,0 A",
+   "C": "4,0 A",
+   "D": "1,0 A",
+   "E": "Dipende dalla distanza tra le armature"
+  },
+  "giusta": "B",
+  "perche": "La carica sulle armature cresce a ritmo dQ/dt = I. Il campo tra le armature è E = Q/(ε₀S), quindi ε₀·dΦ_E/dt = ε₀·S·dE/dt = dQ/dt = 2,0 A: la corrente di spostamento è uguale alla corrente di conduzione nei fili. Così la «corrente totale» è continua lungo tutto il circuito; pensare che sia nulla perché tra le armature non passano cariche è l'errore classico.",
+  "semplice": "Tra le armature non passa nessuna carica, ma il campo elettrico cresce, e questo fa le veci della corrente: per il campo magnetico è come se il filo non si interrompesse.",
+  "passaggi": [
+   "Dati: I = 2,0 A",
+   "Campo tra le armature: E = Q/(ε₀S), flusso Φ_E = Q/ε₀",
+   "Corrente di spostamento: ε₀·dΦ_E/dt = dQ/dt",
+   "Risultato: I_s = I = 2,0 A"
+  ],
+  "concetto": "continuità della corrente totale"
+ },
+ {
+  "id": "NFMA-108",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Un'onda elettromagnetica piana nel vuoto ha un campo elettrico di ampiezza 100 V/m. Qual è circa la sua intensità media? (μ₀ = 4π·10⁻⁷ T·m/A, c = 3,0·10⁸ m/s)",
+  "opzioni": {
+   "A": "27 W/m²",
+   "B": "100 W/m²",
+   "C": "13 W/m²",
+   "D": "3,3·10⁻⁷ W/m²",
+   "E": "1,3·10³ W/m²"
+  },
+  "giusta": "C",
+  "perche": "L'intensità media è il valore medio del vettore di Poynting: I = E₀²/(2μ₀c). Si ha E₀² = 1,0·10⁴ V²/m² e 2μ₀c = 2 · 4π·10⁻⁷ · 3,0·10⁸ ≈ 754 Ω, quindi I ≈ 13 W/m². Il valore 27 W/m² dimentica il fattore ½ della media temporale del sen².",
+  "semplice": "L'energia trasportata da un'onda cresce con il quadrato del campo: raddoppiando il campo elettrico l'intensità quadruplica.",
+  "passaggi": [
+   "Dati: E₀ = 100 V/m, μ₀ = 4π·10⁻⁷ T·m/A, c = 3,0·10⁸ m/s",
+   "Formula: I = E₀²/(2μ₀c)",
+   "Denominatore: 2 · 4π·10⁻⁷ · 3,0·10⁸ ≈ 754 Ω",
+   "Calcolo: 1,0·10⁴ / 754 ≈ 13 W/m²"
+  ],
+  "concetto": "intensità e vettore di Poynting"
+ },
+ {
+  "id": "NFMA-109",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "In un'onda elettromagnetica piana nel vuoto il campo elettrico ha ampiezza 300 V/m. Qual è l'ampiezza del campo magnetico?",
+  "opzioni": {
+   "A": "9,0·10¹⁰ T",
+   "B": "300 T",
+   "C": "1,0·10⁻³ T",
+   "D": "1,0·10⁻⁶ T",
+   "E": "3,8·10⁻⁴ T"
+  },
+  "giusta": "D",
+  "perche": "Dalle equazioni di Maxwell per un'onda piana nel vuoto segue che E e B sono in fase e che E = c·B in ogni istante. Quindi B₀ = E₀/c = 300 V/m / 3,0·10⁸ m/s = 1,0·10⁻⁶ T. Il valore 9,0·10¹⁰ T si ottiene moltiplicando per c invece di dividere: il campo magnetico di un'onda è molto piccolo in tesla, ma trasporta la stessa energia del campo elettrico.",
+  "semplice": "Nell'onda luminosa campo elettrico e campo magnetico vanno sempre di pari passo, ma misurati nelle loro unità il campo magnetico appare minuscolo: va diviso per la velocità della luce.",
+  "passaggi": [
+   "Dati: E₀ = 300 V/m, c = 3,0·10⁸ m/s",
+   "Relazione per l'onda piana: E = c·B",
+   "Calcolo: B₀ = 300 / 3,0·10⁸ T",
+   "Risultato: B₀ = 1,0·10⁻⁶ T"
+  ],
+  "concetto": "rapporto tra E e B in un'onda"
+ },
+ {
+  "id": "NFMA-110",
+  "materia": "Fisica",
+  "argomento": "Equazioni di Maxwell",
+  "livello": "università",
+  "domanda": "Quale equazione di Maxwell, in forma differenziale, collega il campo elettrico alla densità di carica?",
+  "opzioni": {
+   "A": "∇×E = −∂B/∂t",
+   "B": "∇·B = 0",
+   "C": "∇×B = μ₀J",
+   "D": "∇·J = 0",
+   "E": "∇·E = ρ/ε₀"
+  },
+  "giusta": "E",
+  "perche": "La legge di Gauss in forma locale afferma che la divergenza del campo elettrico in un punto è proporzionale alla densità di carica in quel punto: le cariche sono le sorgenti (positive) e i pozzi (negative) del campo elettrico. Si ricava dalla forma integrale con il teorema della divergenza. ∇·J = 0 esprime invece la conservazione della carica in regime stazionario e non è un'equazione di Maxwell.",
+  "semplice": "Le cariche sono come rubinetti da cui escono le linee del campo elettrico: dove c'è carica, il campo «nasce».",
+  "passaggi": [
+   "Riconosci che si cerca la sorgente di E: la carica",
+   "La sorgente di un campo si esprime con la divergenza",
+   "Escludi A, che riguarda il rotore di E, e D, che non contiene E",
+   "Resta la E"
+  ],
+  "concetto": "legge di Gauss in forma locale"
+ },
+ {
+  "id": "NFMA-111",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Qual è la negazione della proposizione «Tutti gli studenti della classe hanno superato l'esame»?",
+  "opzioni": {
+   "A": "Almeno uno studente della classe non ha superato l'esame",
+   "B": "Nessuno studente della classe ha superato l'esame",
+   "C": "Tutti gli studenti della classe non hanno superato l'esame",
+   "D": "Almeno uno studente della classe ha superato l'esame",
+   "E": "Qualche studente non ha sostenuto l'esame"
+  },
+  "giusta": "A",
+  "perche": "La negazione di «per ogni x vale P» è «esiste almeno un x per cui P non vale». Basta un solo studente bocciato per rendere falsa l'affermazione originale. «Nessuno ha superato l'esame» è la proposizione contraria, molto più forte: è l'errore più comune.",
+  "semplice": "Se qualcuno dice «tutti hanno passato l'esame», per smentirlo basta trovare una sola persona bocciata. Non serve che siano stati bocciati tutti.",
+  "passaggi": [
+   "Riconosci un quantificatore universale: «tutti»",
+   "Ricorda che ¬(∀x P) equivale a ∃x ¬P",
+   "Quindi basta un controesempio",
+   "Escludi B e C (contrarie, non negazioni): resta la A"
+  ],
+  "concetto": "negazione del quantificatore universale"
+ },
+ {
+  "id": "NFMA-112",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Dati A = {1, 2, 3, 4} e B = {3, 4, 5}, qual è l'insieme differenza A ∖ B?",
+  "opzioni": {
+   "A": "{5}",
+   "B": "{1, 2}",
+   "C": "{3, 4}",
+   "D": "{1, 2, 5}",
+   "E": "{1, 2, 3, 4, 5}"
+  },
+  "giusta": "B",
+  "perche": "La differenza A ∖ B contiene gli elementi di A che non appartengono a B: tolti 3 e 4, restano 1 e 2. {5} è B ∖ A; {3, 4} è l'intersezione; {1, 2, 5} è la differenza simmetrica; l'ultimo è l'unione.",
+  "semplice": "Dalla lista A cancelli tutto quello che compare anche in B: rimangono solo 1 e 2.",
+  "passaggi": [
+   "Ricorda la definizione: A ∖ B = {x ∈ A : x ∉ B}",
+   "Scorri A: 1 e 2 non sono in B, 3 e 4 sì",
+   "Restano {1, 2}",
+   "Escludi A (B ∖ A) e C (intersezione): resta la B"
+  ],
+  "concetto": "differenza tra insiemi"
+ },
+ {
+  "id": "NFMA-113",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "In quale caso l'implicazione p → q («se p allora q») è falsa?",
+  "opzioni": {
+   "A": "Quando p è falsa e q è vera",
+   "B": "Quando p e q sono entrambe false",
+   "C": "Quando p è vera e q è falsa",
+   "D": "Quando p e q sono entrambe vere",
+   "E": "Quando p è falsa, qualunque sia q"
+  },
+  "giusta": "C",
+  "perche": "L'implicazione materiale è falsa solo quando l'antecedente è vero e il conseguente è falso: è l'unico caso in cui la promessa «se p allora q» viene tradita. Se p è falsa l'implicazione è vera qualunque sia q. Molti studenti pensano erroneamente che p falsa renda falsa l'implicazione.",
+  "semplice": "«Se vinci, ti offro una pizza»: ho mentito solo se vinci e non ti offro la pizza. Se perdi, qualunque cosa io faccia non ho mancato la promessa.",
+  "passaggi": [
+   "Scrivi la tavola di verità di p → q",
+   "Con p falsa l'implicazione è sempre vera: escludi A, B, E",
+   "Con p e q vere è vera: escludi D",
+   "Resta la C"
+  ],
+  "concetto": "implicazione materiale"
+ },
+ {
+  "id": "NFMA-114",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Quanti sottoinsiemi ha un insieme di 5 elementi (contando l'insieme vuoto e l'insieme stesso)?",
+  "opzioni": {
+   "A": "5",
+   "B": "10",
+   "C": "25",
+   "D": "32",
+   "E": "120"
+  },
+  "giusta": "D",
+  "perche": "Per costruire un sottoinsieme si decide, per ciascuno dei 5 elementi, se includerlo o no: 2 scelte per elemento, quindi 2⁵ = 32 sottoinsiemi. 25 = 5² confonde la potenza; 120 = 5! conta gli ordinamenti, non i sottoinsiemi.",
+  "semplice": "Per ogni oggetto decidi «dentro» o «fuori». Con 5 oggetti hai 2·2·2·2·2 = 32 combinazioni possibili, compresa quella con tutti fuori.",
+  "passaggi": [
+   "Dati: |A| = 5",
+   "Formula: numero di sottoinsiemi = 2ⁿ",
+   "Calcolo: 2⁵ = 32",
+   "Risultato: 32 sottoinsiemi, incluso ∅ e A"
+  ],
+  "concetto": "insieme delle parti"
+ },
+ {
+  "id": "NFMA-115",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Quale proposizione è logicamente equivalente a «Se piove, la strada è bagnata»?",
+  "opzioni": {
+   "A": "Se la strada è bagnata, piove",
+   "B": "Se non piove, la strada non è bagnata",
+   "C": "Piove e la strada non è bagnata",
+   "D": "La strada è bagnata solo se piove",
+   "E": "Se la strada non è bagnata, non piove"
+  },
+  "giusta": "E",
+  "perche": "Un'implicazione p → q è equivalente alla sua contronominale ¬q → ¬p. L'inversa (A, q → p) e la contraria (B, ¬p → ¬q) non sono equivalenti: la strada può essere bagnata perché è passata l'autobotte. D significa «se la strada è bagnata allora piove», cioè di nuovo l'inversa.",
+  "semplice": "Se è vero che la pioggia bagna sempre la strada, allora vedere la strada asciutta ti garantisce che non sta piovendo. Ma una strada bagnata non prova che piova.",
+  "passaggi": [
+   "Indica p = «piove», q = «la strada è bagnata»",
+   "Ricorda che p → q equivale a ¬q → ¬p (contronominale)",
+   "Escludi A e D (inversa) e B (contraria)",
+   "Resta la E"
+  ],
+  "concetto": "contronominale"
+ },
+ {
+  "id": "NFMA-116",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "In una classe di 30 studenti, 18 studiano inglese, 12 francese e 5 entrambe le lingue. Quanti studenti non studiano nessuna delle due lingue?",
+  "opzioni": {
+   "A": "5",
+   "B": "0",
+   "C": "10",
+   "D": "7",
+   "E": "3"
+  },
+  "giusta": "A",
+  "perche": "Per il principio di inclusione-esclusione |I ∪ F| = |I| + |F| − |I ∩ F| = 18 + 12 − 5 = 25. Gli studenti che non studiano nessuna lingua sono 30 − 25 = 5. Chi risponde 0 somma 18 + 12 = 30 contando due volte i 5 che studiano entrambe le lingue.",
+  "semplice": "Se conti chi fa inglese e chi fa francese, chi fa entrambe lo conti due volte: va tolto una volta. Così trovi 25 studenti con almeno una lingua, e ne restano 5.",
+  "passaggi": [
+   "Dati: totale 30, |I| = 18, |F| = 12, |I ∩ F| = 5",
+   "Formula: |I ∪ F| = |I| + |F| − |I ∩ F|",
+   "Calcolo: 18 + 12 − 5 = 25",
+   "Nessuna lingua: 30 − 25 = 5"
+  ],
+  "concetto": "principio di inclusione-esclusione"
+ },
+ {
+  "id": "NFMA-117",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Secondo le leggi di De Morgan, a che cosa è equivalente ¬(p ∧ q)?",
+  "opzioni": {
+   "A": "¬p ∧ ¬q",
+   "B": "¬p ∨ ¬q",
+   "C": "p ∨ q",
+   "D": "¬p → q",
+   "E": "p ∧ ¬q"
+  },
+  "giusta": "B",
+  "perche": "Per De Morgan la negazione di una congiunzione è la disgiunzione delle negazioni: ¬(p ∧ q) ≡ ¬p ∨ ¬q. Basta che una delle due sia falsa per rendere falsa la congiunzione. ¬p ∧ ¬q è invece la negazione della disgiunzione ¬(p ∨ q), ed è l'errore più frequente.",
+  "semplice": "«Non è vero che ho studiato e dormito» significa che almeno una delle due cose non l'ho fatta, non per forza nessuna delle due.",
+  "passaggi": [
+   "Riconosci la negazione di una congiunzione",
+   "Applica De Morgan: «e» diventa «o» e si negano i termini",
+   "Ottieni ¬p ∨ ¬q",
+   "Escludi A, che nega p ∨ q: resta la B"
+  ],
+  "concetto": "leggi di De Morgan"
+ },
+ {
+  "id": "NFMA-118",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Se A ha 3 elementi e B ha 4 elementi, quanti elementi ha il prodotto cartesiano A × B?",
+  "opzioni": {
+   "A": "7",
+   "B": "64",
+   "C": "12",
+   "D": "81",
+   "E": "1"
+  },
+  "giusta": "C",
+  "perche": "Il prodotto cartesiano A × B è l'insieme di tutte le coppie ordinate (a, b) con a ∈ A e b ∈ B. Per ciascuno dei 3 elementi di A ci sono 4 scelte per b, quindi |A × B| = 3 · 4 = 12. Il valore 7 somma le cardinalità (sarebbe l'unione se gli insiemi fossero disgiunti); 64 = 4³ e 81 = 3⁴ confondono con le funzioni.",
+  "semplice": "Con 3 magliette e 4 pantaloni puoi formare 3 · 4 = 12 abbinamenti diversi: è proprio il prodotto cartesiano.",
+  "passaggi": [
+   "Dati: |A| = 3, |B| = 4",
+   "Formula: |A × B| = |A|·|B|",
+   "Calcolo: 3 · 4",
+   "Risultato: 12 coppie ordinate"
+  ],
+  "concetto": "prodotto cartesiano"
+ },
+ {
+  "id": "NFMA-119",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Qual è la negazione di «Esiste un numero reale x tale che x² < 0»?",
+  "opzioni": {
+   "A": "Esiste un numero reale x tale che x² > 0",
+   "B": "Per ogni numero reale x, x² > 0",
+   "C": "Esiste un numero reale x tale che x² ≥ 0",
+   "D": "Per ogni numero reale x, x² ≥ 0",
+   "E": "Nessun numero reale x è tale che x² ≥ 0"
+  },
+  "giusta": "D",
+  "perche": "La negazione di «∃x : P(x)» è «∀x : ¬P(x)»; la negazione di x² < 0 è x² ≥ 0 (non x² > 0, perché bisogna includere l'uguaglianza). Si ottiene «per ogni x reale, x² ≥ 0», che è vera. La B dimentica il caso x = 0.",
+  "semplice": "Dire che «non esiste un numero con il quadrato negativo» equivale a dire che «tutti i numeri hanno il quadrato positivo o nullo».",
+  "passaggi": [
+   "Ricorda che ¬(∃x P) equivale a ∀x ¬P",
+   "Nega la condizione: ¬(x² < 0) è x² ≥ 0",
+   "Escludi B: manca l'uguaglianza",
+   "Resta la D"
+  ],
+  "concetto": "negazione del quantificatore esistenziale"
+ },
+ {
+  "id": "NFMA-120",
+  "materia": "Matematica",
+  "argomento": "Logica e insiemi",
+  "livello": "superiori",
+  "domanda": "Due insiemi finiti A e B hanno rispettivamente 12 e 9 elementi, e la loro unione ha 17 elementi. Quanti elementi ha l'intersezione A ∩ B?",
+  "opzioni": {
+   "A": "21",
+   "B": "3",
+   "C": "8",
+   "D": "5",
+   "E": "4"
+  },
+  "giusta": "E",
+  "perche": "Dalla formula di inclusione-esclusione |A ∪ B| = |A| + |B| − |A ∩ B| si ricava |A ∩ B| = 12 + 9 − 17 = 4. Sommando 12 e 9 si ottiene 21, quattro in più dell'unione: sono proprio gli elementi contati due volte perché stanno in entrambi gli insiemi. Il valore 3 nasce da un semplice errore di sottrazione (12 − 9).",
+  "semplice": "Se metti insieme due liste e ottieni meno nomi della somma, la differenza sono i nomi che comparivano in tutte e due le liste.",
+  "passaggi": [
+   "Dati: |A| = 12, |B| = 9, |A ∪ B| = 17",
+   "Formula: |A ∩ B| = |A| + |B| − |A ∪ B|",
+   "Calcolo: 12 + 9 − 17",
+   "Risultato: |A ∩ B| = 4"
+  ],
+  "concetto": "cardinalità dell'intersezione"
+ }
+]

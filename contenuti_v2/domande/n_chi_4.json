@@ -1,0 +1,722 @@
+[
+ {
+  "id": "NCHI-121",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "Il prodotto di solubilità di AgCl a 25 °C è 1,8 × 10⁻¹⁰. Qual è la sua solubilità molare in acqua pura?",
+  "opzioni": {
+   "A": "1,8 × 10⁻¹⁰ mol/L",
+   "B": "1,3 × 10⁻⁵ mol/L",
+   "C": "9,0 × 10⁻¹¹ mol/L",
+   "D": "3,6 × 10⁻¹⁰ mol/L",
+   "E": "4,2 × 10⁻⁴ mol/L"
+  },
+  "giusta": "B",
+  "perche": "Per AgCl(s) ⇌ Ag⁺ + Cl⁻ si ha [Ag⁺] = [Cl⁻] = s, quindi Kps = s² e s = √(1,8 × 10⁻¹⁰) ≈ 1,3 × 10⁻⁵ mol/L. Confondere la solubilità con il Kps stesso è l'errore più frequente: il Kps è un prodotto di concentrazioni, non una concentrazione.",
+  "semplice": "Il cloruro d'argento si scioglie pochissimo: in un litro d'acqua ne passano in soluzione circa 13 milionesimi di mole, cioè circa 2 milligrammi.",
+  "passaggi": [
+   "Dissociazione: AgCl ⇌ Ag⁺ + Cl⁻",
+   "[Ag⁺] = [Cl⁻] = s",
+   "Kps = s² → s = √Kps",
+   "s = √(1,8 × 10⁻¹⁰) ≈ 1,3 × 10⁻⁵ mol/L"
+  ],
+  "concetto": "Kps e solubilità per sali 1:1"
+ },
+ {
+  "id": "NCHI-122",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "Un sale poco solubile di formula MX₂ ha solubilità molare 1,0 × 10⁻⁴ mol/L. Quanto vale il suo Kps?",
+  "opzioni": {
+   "A": "1,0 × 10⁻¹²",
+   "B": "2,0 × 10⁻⁸",
+   "C": "1,0 × 10⁻⁸",
+   "D": "2,0 × 10⁻¹²",
+   "E": "4,0 × 10⁻¹²"
+  },
+  "giusta": "E",
+  "perche": "Per MX₂ ⇌ M²⁺ + 2 X⁻ si ha [M²⁺] = s e [X⁻] = 2s, quindi Kps = s · (2s)² = 4s³ = 4 × (1,0 × 10⁻⁴)³ = 4,0 × 10⁻¹². Dimenticare di raddoppiare la concentrazione dell'anione porta a s³ = 1,0 × 10⁻¹², mentre dimenticare di elevarla al quadrato porta a 2,0 × 10⁻¹².",
+  "semplice": "Per ogni unità di sale che si scioglie si liberano un catione e due anioni: gli anioni sono il doppio. Nel Kps questo «doppio» compare al quadrato, e alla fine si ottiene 4s³.",
+  "passaggi": [
+   "Dissociazione: MX₂ ⇌ M²⁺ + 2 X⁻",
+   "[M²⁺] = s, [X⁻] = 2s",
+   "Kps = s · (2s)² = 4s³",
+   "Kps = 4,0 × 10⁻¹²"
+  ],
+  "concetto": "Kps per sali di tipo MX₂"
+ },
+ {
+  "id": "NCHI-123",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "Qual è la solubilità molare di AgCl (Kps = 1,8 × 10⁻¹⁰) in una soluzione di NaCl 0,10 M?",
+  "opzioni": {
+   "A": "1,3 × 10⁻⁵ mol/L",
+   "B": "1,8 × 10⁻¹¹ mol/L",
+   "C": "1,3 × 10⁻⁴ mol/L",
+   "D": "1,8 × 10⁻⁹ mol/L",
+   "E": "0,10 mol/L"
+  },
+  "giusta": "D",
+  "perche": "La presenza di Cl⁻ da NaCl riduce la solubilità di AgCl (effetto dello ione comune). Con [Cl⁻] ≈ 0,10 M, trascurando il piccolo contributo di AgCl, Kps = s · 0,10 e s = 1,8 × 10⁻¹⁰ / 0,10 = 1,8 × 10⁻⁹ mol/L, circa 7000 volte meno che in acqua pura. Il valore 1,3 × 10⁻⁵ mol/L è la solubilità in acqua pura e ignora lo ione comune.",
+  "semplice": "Se nell'acqua c'è già tanto cloruro, il cloruro d'argento fa ancora più fatica a sciogliersi: il «posto» per il cloruro è già quasi tutto occupato.",
+  "passaggi": [
+   "Riconosci lo ione comune: Cl⁻ da NaCl",
+   "Kps = [Ag⁺][Cl⁻] = s · (0,10 + s) ≈ s · 0,10",
+   "s = 1,8 × 10⁻¹⁰ / 0,10",
+   "s = 1,8 × 10⁻⁹ mol/L"
+  ],
+  "concetto": "Effetto dello ione comune"
+ },
+ {
+  "id": "NCHI-124",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "Si mescolano volumi uguali di AgNO₃ 2,0 × 10⁻⁴ M e di NaCl 2,0 × 10⁻⁴ M. Si forma un precipitato di AgCl (Kps = 1,8 × 10⁻¹⁰)?",
+  "opzioni": {
+   "A": "No, perché le soluzioni sono troppo diluite",
+   "B": "Sì, perché Q = 4,0 × 10⁻⁸ è maggiore del Kps",
+   "C": "No, perché Q è minore del Kps",
+   "D": "Solo se si aggiunge un catalizzatore",
+   "E": "Sì, perché il prodotto ionico Q = 1,0 × 10⁻⁸ è maggiore del Kps"
+  },
+  "giusta": "E",
+  "perche": "Dopo il mescolamento a volumi uguali ogni concentrazione si dimezza: [Ag⁺] = [Cl⁻] = 1,0 × 10⁻⁴ M. Il prodotto ionico è Q = (1,0 × 10⁻⁴)² = 1,0 × 10⁻⁸, che supera 1,8 × 10⁻¹⁰: la soluzione è sovrasatura e AgCl precipita. Dimenticare la diluizione dà Q = 4,0 × 10⁻⁸; la conclusione non cambia, ma il valore è sbagliato.",
+  "semplice": "Si confronta quanto argento e cloruro ci sono con quanto l'acqua ne può tenere sciolto. Anche se le concentrazioni sembrano piccole, sono comunque molte più di quante l'AgCl ne tolleri: si forma un precipitato bianco.",
+  "passaggi": [
+   "Diluizione 1:1: concentrazioni dimezzate, 1,0 × 10⁻⁴ M",
+   "Q = [Ag⁺][Cl⁻] = (1,0 × 10⁻⁴)²",
+   "Q = 1,0 × 10⁻⁸",
+   "Q > Kps: precipitazione"
+  ],
+  "concetto": "Criterio di precipitazione Q > Kps"
+ },
+ {
+  "id": "NCHI-125",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "Come varia la solubilità di Mg(OH)₂ se si abbassa il pH della soluzione?",
+  "opzioni": {
+   "A": "Diminuisce, per effetto dello ione comune",
+   "B": "Non cambia, perché il Kps è costante",
+   "C": "Diminuisce, perché l'acido reagisce con Mg²⁺",
+   "D": "Aumenta, perché il Kps aumenta con l'acidità",
+   "E": "Aumenta, perché gli ioni H⁺ consumano gli OH⁻ e spostano l'equilibrio di dissoluzione verso destra"
+  },
+  "giusta": "E",
+  "perche": "Nell'equilibrio Mg(OH)₂(s) ⇌ Mg²⁺ + 2 OH⁻ gli ioni H⁺ neutralizzano gli OH⁻ formando acqua. Diminuendo [OH⁻] il prodotto ionico scende sotto il Kps e altro solido si scioglie. Il Kps resta costante a temperatura fissata: cambia la solubilità, non la costante. Per questo il latte di magnesia neutralizza l'acidità gastrica sciogliendosi.",
+  "semplice": "Il latte di magnesia si scioglie poco in acqua, ma nello stomaco, che è acido, si scioglie e neutralizza l'acido. L'acido «mangia» gli ioni OH⁻ e il solido continua a sciogliersi.",
+  "passaggi": [
+   "Scrivi l'equilibrio: Mg(OH)₂ ⇌ Mg²⁺ + 2 OH⁻",
+   "H⁺ + OH⁻ → H₂O: gli OH⁻ vengono rimossi",
+   "Le Châtelier: l'equilibrio va verso destra",
+   "La solubilità aumenta, il Kps no"
+  ],
+  "concetto": "Solubilità e pH"
+ },
+ {
+  "id": "NCHI-126",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "AgCl ha Kps = 1,8 × 10⁻¹⁰ e Ag₂CrO₄ ha Kps = 1,1 × 10⁻¹². Quale dei due sali ha la solubilità molare maggiore in acqua pura?",
+  "opzioni": {
+   "A": "AgCl, perché ha il Kps maggiore",
+   "B": "Hanno la stessa solubilità",
+   "C": "Ag₂CrO₄, con s ≈ 6,5 × 10⁻⁵ mol/L contro 1,3 × 10⁻⁵ mol/L di AgCl",
+   "D": "AgCl, perché contiene un solo ione argento per unità di formula",
+   "E": "Non si può calcolare senza conoscere le masse molari"
+  },
+  "giusta": "C",
+  "perche": "I Kps si possono confrontare direttamente solo per sali con la stessa stechiometria. Per AgCl s = √Kps ≈ 1,3 × 10⁻⁵ M; per Ag₂CrO₄, Kps = (2s)² · s = 4s³, quindi s = (1,1 × 10⁻¹² / 4)^(1/3) ≈ 6,5 × 10⁻⁵ M. Il cromato, pur avendo un Kps più piccolo, è circa cinque volte più solubile. Scegliere AgCl solo perché il suo Kps è maggiore è l'errore più comune.",
+  "semplice": "Confrontare i Kps di sali diversi è come confrontare un'area con un volume: le formule sono diverse. Bisogna calcolare per ciascuno quante moli si sciolgono in un litro.",
+  "passaggi": [
+   "Nota: stechiometrie diverse, Kps non confrontabili direttamente",
+   "AgCl: s = √Kps ≈ 1,3 × 10⁻⁵ M",
+   "Ag₂CrO₄: Kps = 4s³ → s = (Kps/4)^(1/3) ≈ 6,5 × 10⁻⁵ M",
+   "Ag₂CrO₄ è più solubile"
+  ],
+  "concetto": "Confronto di solubilità tra sali diversi"
+ },
+ {
+  "id": "NCHI-127",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "La solubilità di PbI₂ in acqua a 25 °C è 1,5 × 10⁻³ mol/L. Quanto vale il suo Kps?",
+  "opzioni": {
+   "A": "2,3 × 10⁻⁶",
+   "B": "3,4 × 10⁻⁹",
+   "C": "1,4 × 10⁻⁸",
+   "D": "4,5 × 10⁻⁶",
+   "E": "6,8 × 10⁻⁹"
+  },
+  "giusta": "C",
+  "perche": "Per PbI₂ ⇌ Pb²⁺ + 2 I⁻ si ha [Pb²⁺] = s e [I⁻] = 2s, quindi Kps = 4s³ = 4 × (1,5 × 10⁻³)³ = 4 × 3,375 × 10⁻⁹ ≈ 1,4 × 10⁻⁸. Il valore 3,4 × 10⁻⁹ corrisponde a s³, cioè a dimenticare il coefficiente 2 dello ioduro; 2,3 × 10⁻⁶ è s², come per un sale 1:1.",
+  "semplice": "Ogni unità di ioduro di piombo che si scioglie libera un piombo e due ioduri. Inserendo questi numeri nella formula del prodotto di solubilità si ottiene circa 1,4 × 10⁻⁸.",
+  "passaggi": [
+   "Dissociazione: PbI₂ ⇌ Pb²⁺ + 2 I⁻",
+   "Kps = s · (2s)² = 4s³",
+   "s³ = (1,5 × 10⁻³)³ = 3,375 × 10⁻⁹",
+   "Kps = 4 × 3,375 × 10⁻⁹ ≈ 1,4 × 10⁻⁸"
+  ],
+  "concetto": "Kps dalla solubilità"
+ },
+ {
+  "id": "NCHI-128",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "A una soluzione contenente Cl⁻ 0,010 M e I⁻ 0,010 M si aggiunge lentamente AgNO₃. Quale sale precipita per primo? (Kps AgCl = 1,8 × 10⁻¹⁰; Kps AgI = 8,5 × 10⁻¹⁷)",
+  "opzioni": {
+   "A": "AgI, perché richiede una concentrazione di Ag⁺ molto più bassa per superare il proprio Kps",
+   "B": "AgCl, perché ha il Kps maggiore",
+   "C": "Precipitano insieme nello stesso istante",
+   "D": "Nessuno dei due, perché gli anioni sono troppo diluiti",
+   "E": "AgCl, perché il cloro è più elettronegativo dello iodio"
+  },
+  "giusta": "A",
+  "perche": "La precipitazione inizia quando [Ag⁺] supera Kps/[anione]. Per AgI servono [Ag⁺] = 8,5 × 10⁻¹⁷/0,010 = 8,5 × 10⁻¹⁵ M, per AgCl 1,8 × 10⁻¹⁰/0,010 = 1,8 × 10⁻⁸ M. Aggiungendo argento poco a poco si raggiunge prima la soglia di AgI, che precipita per primo: è il principio della precipitazione frazionata. L'elettronegatività non c'entra con l'ordine di precipitazione.",
+  "semplice": "Vince chi si accontenta di meno argento per diventare solido. Lo ioduro d'argento è così poco solubile che bastano tracce di argento per farlo precipitare.",
+  "passaggi": [
+   "Calcola [Ag⁺] di inizio precipitazione: Kps / [anione]",
+   "AgI: 8,5 × 10⁻¹⁵ M",
+   "AgCl: 1,8 × 10⁻⁸ M",
+   "La soglia più bassa è di AgI: precipita per primo"
+  ],
+  "concetto": "Precipitazione frazionata"
+ },
+ {
+  "id": "NCHI-129",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "Una soluzione contiene Fe³⁺ 0,010 M. A quale pH comincia a precipitare Fe(OH)₃? (Kps di Fe(OH)₃ = 4,0 × 10⁻³⁸)",
+  "opzioni": {
+   "A": "Circa 7,0",
+   "B": "Circa 2,2",
+   "C": "Circa 11,8",
+   "D": "Circa 12,0",
+   "E": "Circa 4,5"
+  },
+  "giusta": "B",
+  "perche": "La precipitazione comincia quando [Fe³⁺][OH⁻]³ = Kps: [OH⁻]³ = 4,0 × 10⁻³⁸ / 0,010 = 4,0 × 10⁻³⁶, quindi [OH⁻] ≈ 1,6 × 10⁻¹² M. Il pOH è circa 11,8 e il pH = 14 − 11,8 ≈ 2,2. Scegliere 11,8 significa confondere pOH e pH. Per questo il ferro(III) precipita già in ambiente acido.",
+  "semplice": "L'idrossido di ferro(III) è così poco solubile che basta pochissima base per farlo precipitare: già a pH 2, in una soluzione ancora molto acida, compare il precipitato color ruggine.",
+  "passaggi": [
+   "Condizione: [Fe³⁺][OH⁻]³ = Kps",
+   "[OH⁻]³ = 4,0 × 10⁻³⁸ / 0,010 = 4,0 × 10⁻³⁶",
+   "[OH⁻] ≈ 1,6 × 10⁻¹² M → pOH ≈ 11,8",
+   "pH = 14 − 11,8 ≈ 2,2"
+  ],
+  "concetto": "pH di precipitazione degli idrossidi"
+ },
+ {
+  "id": "NCHI-130",
+  "materia": "Chimica",
+  "argomento": "Equilibri di solubilità e prodotto di solubilità",
+  "livello": "università",
+  "domanda": "Perché AgCl, praticamente insolubile in acqua, si scioglie in una soluzione concentrata di ammoniaca?",
+  "opzioni": {
+   "A": "Perché l'ammoniaca aumenta il Kps di AgCl",
+   "B": "Perché Ag⁺ forma il complesso stabile [Ag(NH₃)₂]⁺, che sottrae ioni argento all'equilibrio di solubilità",
+   "C": "Perché l'ammoniaca riduce Ag⁺ ad argento metallico",
+   "D": "Perché l'ammoniaca acidifica la soluzione",
+   "E": "Perché NH₃ reagisce con Cl⁻ formando NH₄Cl insolubile"
+  },
+  "giusta": "B",
+  "perche": "L'equilibrio AgCl(s) ⇌ Ag⁺ + Cl⁻ è accoppiato alla formazione del complesso Ag⁺ + 2 NH₃ ⇌ [Ag(NH₃)₂]⁺, con costante di formazione molto grande. La concentrazione di Ag⁺ libero si abbassa, il prodotto ionico scende sotto il Kps e il solido si scioglie. Il Kps non cambia; l'ammoniaca inoltre è basica, non acida.",
+  "semplice": "L'ammoniaca «abbraccia» gli ioni argento e li nasconde in un complesso solubile. Il solido, vedendo sparire l'argento libero, continua a sciogliersi per rimpiazzarlo.",
+  "passaggi": [
+   "Scrivi l'equilibrio di solubilità di AgCl",
+   "NH₃ lega Ag⁺ formando [Ag(NH₃)₂]⁺",
+   "[Ag⁺] libero diminuisce: Q < Kps",
+   "Il solido si scioglie"
+  ],
+  "concetto": "Formazione di complessi e solubilità"
+ },
+ {
+  "id": "NCHI-131",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Nel composto [Co(NH₃)₄Cl₂]Cl, quali sono lo stato di ossidazione del cobalto e il suo numero di coordinazione?",
+  "opzioni": {
+   "A": "+3 e 6",
+   "B": "+2 e 6",
+   "C": "+3 e 7",
+   "D": "+1 e 4",
+   "E": "+3 e 4"
+  },
+  "giusta": "A",
+  "perche": "Lo ione complesso [Co(NH₃)₄Cl₂]⁺ ha carica +1, bilanciata dal cloruro esterno. NH₃ è neutra e ciascun Cl⁻ legato vale −1, quindi x + 0 − 2 = +1 e x = +3. I leganti legati direttamente al metallo sono 4 NH₃ e 2 Cl⁻: numero di coordinazione 6. Contare anche il cloruro esterno, che è un controione, porta all'errore 7.",
+  "semplice": "Dentro la parentesi quadra c'è tutto quello che è attaccato al cobalto: 4 ammoniache e 2 cloruri, cioè 6 leganti. Il cloruro fuori dalla parentesi serve solo a bilanciare la carica.",
+  "passaggi": [
+   "Carica dello ione complesso: +1 (un Cl⁻ esterno)",
+   "Leganti: NH₃ neutra, Cl⁻ −1",
+   "x + 4(0) + 2(−1) = +1 → x = +3",
+   "Leganti legati al metallo: 4 + 2 = 6"
+  ],
+  "concetto": "Stato di ossidazione e numero di coordinazione"
+ },
+ {
+  "id": "NCHI-132",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Qual è il nome IUPAC del composto K₄[Fe(CN)₆]?",
+  "opzioni": {
+   "A": "Esacianoferro(II) di potassio",
+   "B": "Esacianoferrato(III) di potassio",
+   "C": "Tetrapotassio ferro esacianuro",
+   "D": "Esacianoferrato(IV) di potassio",
+   "E": "Esacianoferrato(II) di potassio"
+  },
+  "giusta": "E",
+  "perche": "Il complesso anionico [Fe(CN)₆]⁴⁻ prende la desinenza -ato sul nome del metallo, per il ferro dalla radice latina: «ferrato». Lo stato di ossidazione si ricava da x + 6(−1) = −4, quindi x = +2. Chi dimentica di usare la desinenza -ato per un complesso anionico sceglie «esacianoferro(II)»; chi sbaglia la carica sceglie Fe(III), che corrisponde invece a K₃[Fe(CN)₆].",
+  "semplice": "Quando il complesso ha carica negativa il nome del metallo finisce in «-ato», come in «ferrato». Il numero romano indica la carica del ferro: qui è +2.",
+  "passaggi": [
+   "Il complesso [Fe(CN)₆]⁴⁻ è anionico: desinenza -ato",
+   "Ferro → ferrato (radice latina)",
+   "Calcolo: x − 6 = −4 → x = +2",
+   "Nome: esacianoferrato(II) di potassio"
+  ],
+  "concetto": "Nomenclatura dei complessi"
+ },
+ {
+  "id": "NCHI-133",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Perché l'EDTA forma complessi molto stabili con molti ioni metallici?",
+  "opzioni": {
+   "A": "Perché è un legante monodentato con carica molto alta",
+   "B": "Perché è un legante esadentato che avvolge il metallo formando più anelli chelati (effetto chelante)",
+   "C": "Perché forma legami ionici con il metallo",
+   "D": "Perché riduce gli ioni metallici a metallo",
+   "E": "Perché è un legante a campo debole"
+  },
+  "giusta": "B",
+  "perche": "L'EDTA possiede sei atomi donatori (due azoti e quattro ossigeni carbossilati) che si legano contemporaneamente allo stesso ione, formando cinque anelli chelati. La stabilità superiore rispetto a sei leganti monodentati è dovuta soprattutto all'aumento di entropia: una molecola di EDTA libera sei molecole d'acqua coordinate. Per questo si usa nelle titolazioni complessometriche e nel trattamento dell'intossicazione da piombo.",
+  "semplice": "L'EDTA è come una mano con sei dita che afferra lo ione metallico da tutti i lati: è molto più difficile da staccare di sei mani con un solo dito ciascuna.",
+  "passaggi": [
+   "Conta gli atomi donatori dell'EDTA: 6",
+   "Legante polidentato → forma anelli chelati",
+   "Effetto chelante: guadagno entropico",
+   "Il complesso è molto stabile"
+  ],
+  "concetto": "Effetto chelante"
+ },
+ {
+  "id": "NCHI-134",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "In un campo cristallino ottaedrico, quali orbitali d hanno energia più alta?",
+  "opzioni": {
+   "A": "d(xy), d(xz) e d(yz), cioè il set t₂g",
+   "B": "Tutti i cinque orbitali d hanno la stessa energia",
+   "C": "d(xy) e d(x²−y²)",
+   "D": "d(z²) e d(x²−y²), cioè il set e_g",
+   "E": "Solo d(z²)"
+  },
+  "giusta": "D",
+  "perche": "In un complesso ottaedrico i sei leganti si trovano lungo gli assi x, y e z. Gli orbitali d(z²) e d(x²−y²) hanno i lobi diretti proprio lungo gli assi e subiscono la repulsione maggiore: salgono di energia (e_g). Gli orbitali d(xy), d(xz) e d(yz) puntano tra gli assi e si stabilizzano (t₂g). Nel campo tetraedrico la situazione è invertita, fonte di frequente confusione.",
+  "semplice": "I leganti si avvicinano lungo gli assi: gli orbitali che puntano proprio verso di loro vengono «spinti» più in alto in energia, quelli che puntano in mezzo restano più comodi.",
+  "passaggi": [
+   "Ricorda: nell'ottaedro i leganti stanno sugli assi",
+   "d(z²) e d(x²−y²) hanno lobi sugli assi",
+   "Massima repulsione → energia più alta",
+   "Formano il set e_g"
+  ],
+  "concetto": "Separazione del campo cristallino ottaedrico"
+ },
+ {
+  "id": "NCHI-135",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Lo ione [Fe(CN)₆]⁴⁻ è diamagnetico. Come si spiega?",
+  "opzioni": {
+   "A": "Fe²⁺ non ha elettroni d",
+   "B": "CN⁻ è un legante a campo debole che favorisce l'alto spin",
+   "C": "Il complesso è tetraedrico",
+   "D": "Fe²⁺ è d⁶ e CN⁻ è un legante a campo forte: i sei elettroni si appaiano tutti nel set t₂g (basso spin)",
+   "E": "Fe è nello stato di ossidazione +6"
+  },
+  "giusta": "D",
+  "perche": "Fe²⁺ ha configurazione d⁶. Il cianuro, in cima alla serie spettrochimica, produce una separazione Δo maggiore dell'energia di appaiamento: conviene sistemare tutti e sei gli elettroni appaiati nei tre orbitali t₂g (t₂g⁶ e_g⁰), senza elettroni spaiati. Con un legante a campo debole, come F⁻ o H₂O, lo stesso ione sarebbe ad alto spin e paramagnetico.",
+  "semplice": "Il cianuro allarga molto la distanza tra gli orbitali bassi e quelli alti. Agli elettroni conviene stringersi a coppie negli orbitali bassi piuttosto che salire: così non resta nessun elettrone solo e il complesso non è attratto da un magnete.",
+  "passaggi": [
+   "Stato di ossidazione: x − 6 = −4 → Fe²⁺, d⁶",
+   "CN⁻ è a campo forte: Δo > energia di appaiamento",
+   "Configurazione basso spin: t₂g⁶ e_g⁰",
+   "Nessun elettrone spaiato: diamagnetico"
+  ],
+  "concetto": "Basso spin e serie spettrochimica"
+ },
+ {
+  "id": "NCHI-136",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Qual è il momento magnetico «solo spin» atteso per il complesso ad alto spin [CoF₆]³⁻?",
+  "opzioni": {
+   "A": "0 μB",
+   "B": "Circa 2,83 μB",
+   "C": "Circa 3,87 μB",
+   "D": "Circa 5,92 μB",
+   "E": "Circa 4,90 μB"
+  },
+  "giusta": "E",
+  "perche": "Co³⁺ ha configurazione d⁶; con il fluoruro, legante a campo debole, il complesso è ad alto spin: t₂g⁴ e_g², con 4 elettroni spaiati. Il momento solo spin è μ = √(n(n+2)) = √(4 × 6) = √24 ≈ 4,90 μB. Se lo si considerasse a basso spin, come per i complessi con NH₃ o CN⁻, il momento sarebbe zero.",
+  "semplice": "Più elettroni spaiati ha un complesso, più è attratto da un magnete. Qui gli elettroni spaiati sono quattro, e la formula dà circa 4,9 magnetoni di Bohr.",
+  "passaggi": [
+   "Co³⁺: d⁶",
+   "F⁻ campo debole → alto spin: t₂g⁴ e_g²",
+   "Elettroni spaiati: n = 4",
+   "μ = √(4 × 6) = √24 ≈ 4,90 μB"
+  ],
+  "concetto": "Momento magnetico solo spin"
+ },
+ {
+  "id": "NCHI-137",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Il cisplatino, cis-[Pt(NH₃)₂Cl₂], è un farmaco antitumorale. Che tipo di isomeria presenta questo complesso planare quadrato?",
+  "opzioni": {
+   "A": "Isomeria ottica, perché è chirale",
+   "B": "Isomeria di legame",
+   "C": "Isomeria di ionizzazione",
+   "D": "Isomeria geometrica cis/trans",
+   "E": "Nessuna isomeria, perché ha un solo metallo"
+  },
+  "giusta": "D",
+  "perche": "In un complesso planare quadrato MA₂B₂ i due leganti uguali possono stare su lati adiacenti (cis, a 90°) o opposti (trans, a 180°): sono isomeri geometrici con proprietà diverse. Solo l'isomero cis è attivo come farmaco, perché i due cloruri adiacenti, una volta sostituiti, permettono al platino di legare due basi vicine del DNA. Il complesso è planare e ha un piano di simmetria, quindi non è chirale.",
+  "semplice": "Due ammoniache e due cloruri attorno al platino possono stare «vicini» o «di fronte», come due amici seduti agli angoli adiacenti o opposti di un tavolo quadrato. Le due disposizioni sono sostanze diverse.",
+  "passaggi": [
+   "Riconosci la geometria: planare quadrata, tipo MA₂B₂",
+   "Leganti uguali adiacenti (cis) o opposti (trans)",
+   "Sono isomeri geometrici",
+   "Escludi l'isomeria ottica: la molecola ha un piano di simmetria"
+  ],
+  "concetto": "Isomeria geometrica nei complessi"
+ },
+ {
+  "id": "NCHI-138",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Una soluzione contenente 1 mol di [Co(NH₃)₅Cl]Cl₂ viene trattata con AgNO₃ in eccesso. Quante moli di AgCl precipitano?",
+  "opzioni": {
+   "A": "2 mol",
+   "B": "1 mol",
+   "C": "3 mol",
+   "D": "5 mol",
+   "E": "0 mol"
+  },
+  "giusta": "A",
+  "perche": "Solo gli ioni cloruro esterni alla sfera di coordinazione sono liberi in soluzione e precipitano con Ag⁺. Il composto si dissocia in [Co(NH₃)₅Cl]²⁺ + 2 Cl⁻: precipitano quindi 2 mol di AgCl. Il cloruro legato al cobalto resta nel complesso. Contare tutti e tre i cloruri porta all'errore 3 mol; storicamente questo esperimento ha aiutato Werner a definire la struttura dei complessi.",
+  "semplice": "Il nitrato d'argento «pesca» solo i cloruri liberi nell'acqua. Quello attaccato al cobalto è ben legato e non si fa catturare: ne restano due da pescare.",
+  "passaggi": [
+   "Distingui cloruri dentro e fuori la parentesi quadra",
+   "Dissociazione: [Co(NH₃)₅Cl]²⁺ + 2 Cl⁻",
+   "Solo i Cl⁻ liberi reagiscono con Ag⁺",
+   "Precipitano 2 mol di AgCl"
+  ],
+  "concetto": "Sfera di coordinazione e controioni"
+ },
+ {
+  "id": "NCHI-139",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Perché lo ione [Zn(H₂O)₆]²⁺ è incolore, mentre [Cu(H₂O)₆]²⁺ è azzurro?",
+  "opzioni": {
+   "A": "Perché Zn²⁺ è d¹⁰: con il set d pieno non sono possibili transizioni d-d",
+   "B": "Perché lo zinco non forma legami con l'acqua",
+   "C": "Perché Zn²⁺ è d⁰ e non ha elettroni d",
+   "D": "Perché il complesso di zinco è tetraedrico",
+   "E": "Perché l'acqua è un legante a campo forte con lo zinco"
+  },
+  "giusta": "A",
+  "perche": "Il colore dei complessi dei metalli di transizione deriva in gran parte dall'assorbimento di luce visibile che promuove un elettrone da un orbitale d a uno d di energia più alta. Zn²⁺ ha configurazione 3d¹⁰: tutti gli orbitali d sono pieni e non c'è posto dove promuovere un elettrone, quindi niente assorbimento nel visibile. Cu²⁺ è d⁹ e ha una transizione d-d che assorbe nel rosso-arancio, apparendo azzurro.",
+  "semplice": "Un complesso è colorato quando i suoi elettroni possono «saltare» da un orbitale d a un altro assorbendo luce. Nello zinco tutti i posti sono già occupati: nessun salto possibile, quindi nessun colore.",
+  "passaggi": [
+   "Ricorda: il colore nasce da transizioni d-d",
+   "Configurazione di Zn²⁺: 3d¹⁰",
+   "Orbitali d tutti pieni: nessuna transizione d-d",
+   "Nessun assorbimento nel visibile: incolore"
+  ],
+  "concetto": "Colore dei complessi"
+ },
+ {
+  "id": "NCHI-140",
+  "materia": "Chimica",
+  "argomento": "Composti di coordinazione",
+  "livello": "università",
+  "domanda": "Qual è l'energia di stabilizzazione del campo cristallino (CFSE) di uno ione d³, come Cr³⁺, in un complesso ottaedrico?",
+  "opzioni": {
+   "A": "−0,4 Δo",
+   "B": "−1,2 Δo",
+   "C": "−0,6 Δo",
+   "D": "0",
+   "E": "−1,8 Δo"
+  },
+  "giusta": "B",
+  "perche": "In un ottaedro gli orbitali t₂g sono stabilizzati di 0,4 Δo e quelli e_g destabilizzati di 0,6 Δo. Con tre elettroni, uno per ciascun orbitale t₂g (t₂g³), la CFSE è 3 × (−0,4 Δo) = −1,2 Δo, senza energia di appaiamento aggiuntiva. Usare 0,6 Δo per gli orbitali t₂g, che vale invece per gli e_g, porta a −1,8 Δo.",
+  "semplice": "Ogni elettrone che va negli orbitali bassi fa «guadagnare» 0,4 Δo di stabilità. Il cromo(III) ne mette tre in quegli orbitali: guadagna in tutto 1,2 Δo, ed è per questo che i suoi complessi sono molto stabili.",
+  "passaggi": [
+   "Ricorda: t₂g = −0,4 Δo, e_g = +0,6 Δo per elettrone",
+   "Configurazione d³ ottaedrica: t₂g³ e_g⁰",
+   "CFSE = 3 × (−0,4 Δo)",
+   "CFSE = −1,2 Δo"
+  ],
+  "concetto": "Energia di stabilizzazione del campo cristallino"
+ },
+ {
+  "id": "NCHI-141",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Come varia la reattività dei metalli alcalini con l'acqua scendendo lungo il gruppo, dal litio al cesio?",
+  "opzioni": {
+   "A": "Aumenta, perché diminuisce l'energia di prima ionizzazione",
+   "B": "Diminuisce, perché aumenta la massa atomica",
+   "C": "Resta uguale, perché hanno tutti un solo elettrone di valenza",
+   "D": "Aumenta, perché aumenta l'elettronegatività",
+   "E": "Diminuisce, perché aumenta il raggio atomico"
+  },
+  "giusta": "A",
+  "perche": "Tutti i metalli alcalini reagiscono con l'acqua secondo 2 M + 2 H₂O → 2 MOH + H₂, ma scendendo nel gruppo l'elettrone ns¹ è più lontano dal nucleo e più schermato, quindi si cede più facilmente: la reazione diventa sempre più violenta. L'elettronegatività invece diminuisce scendendo; l'aumento del raggio favorisce, non ostacola, la perdita dell'elettrone.",
+  "semplice": "Il litio nell'acqua frigge piano, il sodio corre sulla superficie, il potassio prende fuoco e il cesio esplode. Più l'atomo è grande, più facilmente perde il suo unico elettrone esterno.",
+  "passaggi": [
+   "Ricorda la reazione: 2 M + 2 H₂O → 2 MOH + H₂",
+   "Scendendo nel gruppo il raggio aumenta",
+   "L'energia di ionizzazione diminuisce",
+   "La reattività aumenta: Li < Na < K < Rb < Cs"
+  ],
+  "concetto": "Andamento della reattività nel gruppo 1"
+ },
+ {
+  "id": "NCHI-142",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Perché per il piombo lo stato di ossidazione +2 è più stabile di +4, mentre per il carbonio prevale +4?",
+  "opzioni": {
+   "A": "Perché il piombo ha meno elettroni di valenza del carbonio",
+   "B": "Perché il piombo è più elettronegativo del carbonio",
+   "C": "Perché il piombo non può formare legami covalenti",
+   "D": "Perché il carbonio ha orbitali d disponibili",
+   "E": "Per l'effetto della coppia inerte: negli elementi pesanti gli elettroni ns² sono poco disponibili a formare legami"
+  },
+  "giusta": "E",
+  "perche": "Carbonio e piombo hanno entrambi configurazione di valenza ns² np². Negli elementi pesanti del blocco p gli elettroni ns² sono più stabilizzati (per la scarsa schermatura degli elettroni d e f e per effetti relativistici) e l'energia per coinvolgerli nei legami non è compensata: prevale lo stato di ossidazione inferiore di due unità. Per questo PbO₂ è un forte ossidante, mentre per il carbonio +4 è lo stato comune.",
+  "semplice": "Nel piombo i due elettroni s più esterni sono «pigri»: restano attaccati all'atomo e non partecipano ai legami. Così il piombo usa solo due elettroni e preferisce lo stato +2.",
+  "passaggi": [
+   "Nota: stessa configurazione di valenza ns² np²",
+   "Negli elementi pesanti gli elettroni ns² sono più stabilizzati",
+   "Coinvolgerli costa troppa energia: effetto della coppia inerte",
+   "Lo stato +2 diventa il più stabile per Pb"
+  ],
+  "concetto": "Effetto della coppia inerte"
+ },
+ {
+  "id": "NCHI-143",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Quale coppia di elementi è un classico esempio di relazione diagonale nella tavola periodica?",
+  "opzioni": {
+   "A": "Litio e sodio",
+   "B": "Magnesio e calcio",
+   "C": "Litio e magnesio",
+   "D": "Boro e alluminio",
+   "E": "Carbonio e silicio"
+  },
+  "giusta": "C",
+  "perche": "La relazione diagonale lega un elemento del secondo periodo all'elemento del periodo successivo nel gruppo a destra, perché i due hanno rapporto carica/raggio e polarizzabilità simili. Litio e magnesio formano entrambi nitruri per reazione diretta con l'azoto e carbonati poco stabili al calore; altre coppie sono Be–Al e B–Si. Litio e sodio, o magnesio e calcio, sono invece nello stesso gruppo: sono simili per motivi diversi.",
+  "semplice": "Il litio somiglia più al magnesio, suo «vicino in diagonale», che ad alcuni dei suoi fratelli di gruppo. Tutti e due, per esempio, reagiscono direttamente con l'azoto dell'aria.",
+  "passaggi": [
+   "Ricorda la definizione: periodo 2 con gruppo successivo nel periodo 3",
+   "Litio (gruppo 1, periodo 2) → magnesio (gruppo 2, periodo 3)",
+   "Somiglianza dovuta a rapporto carica/raggio simile",
+   "Escludi le coppie dello stesso gruppo"
+  ],
+  "concetto": "Relazione diagonale"
+ },
+ {
+  "id": "NCHI-144",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Il diborano, B₂H₆, ha una struttura con due atomi di idrogeno a ponte tra i due atomi di boro. Che tipo di legame coinvolge questi idrogeni?",
+  "opzioni": {
+   "A": "Legami a idrogeno tra molecole diverse",
+   "B": "Legami ionici tra B³⁺ e H⁻",
+   "C": "Legami a tre centri e due elettroni (B–H–B)",
+   "D": "Doppi legami B=B",
+   "E": "Normali legami covalenti a due centri e due elettroni"
+  },
+  "giusta": "C",
+  "perche": "Il diborano ha troppo pochi elettroni di valenza (12) per formare legami a due centri e due elettroni tra tutti gli atomi adiacenti: è una molecola elettron-deficiente. Ogni idrogeno a ponte condivide un'unica coppia di elettroni con entrambi gli atomi di boro, formando un legame a tre centri e due elettroni. I quattro idrogeni terminali formano invece normali legami covalenti.",
+  "semplice": "Nel diborano gli elettroni non bastano per dare a ogni legame la sua coppia. Allora un idrogeno fa da «ponte» e una sola coppia di elettroni tiene insieme tre atomi.",
+  "passaggi": [
+   "Conta gli elettroni di valenza: 2 × 3 + 6 × 1 = 12",
+   "Per 8 legami a due centri ne servirebbero 16",
+   "Molecola elettron-deficiente",
+   "Idrogeni a ponte: legami a tre centri e due elettroni"
+  ],
+  "concetto": "Legami a tre centri e due elettroni"
+ },
+ {
+  "id": "NCHI-145",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Perché la grafite conduce la corrente elettrica mentre il diamante è un isolante?",
+  "opzioni": {
+   "A": "Perché nella grafite ogni carbonio è ibridato sp² e un elettrone per atomo è delocalizzato negli strati",
+   "B": "Perché la grafite contiene impurezze metalliche",
+   "C": "Perché nel diamante il carbonio è ibridato sp²",
+   "D": "Perché la grafite è formata da ioni C⁴⁺",
+   "E": "Perché nel diamante gli elettroni sono delocalizzati in tre dimensioni"
+  },
+  "giusta": "A",
+  "perche": "Nella grafite ogni carbonio forma tre legami σ con atomi dello stesso strato (ibridazione sp²) e l'orbitale p rimanente contribuisce a un sistema π esteso e delocalizzato, che permette il moto degli elettroni lungo gli strati. Nel diamante ogni carbonio è sp³ e usa tutti e quattro gli elettroni in legami σ localizzati: non ci sono elettroni liberi di muoversi.",
+  "semplice": "Nella grafite, la mina della matita, ogni atomo di carbonio tiene un elettrone «in comune» con tutto il foglio: quell'elettrone può viaggiare e trasportare corrente. Nel diamante invece ogni elettrone è bloccato in un legame.",
+  "passaggi": [
+   "Diamante: C sp³, quattro legami σ localizzati",
+   "Grafite: C sp², tre legami σ nel piano",
+   "Il quarto elettrone forma un sistema π delocalizzato",
+   "Elettroni mobili negli strati: la grafite conduce"
+  ],
+  "concetto": "Allotropi del carbonio"
+ },
+ {
+  "id": "NCHI-146",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Quale dei seguenti ossidi ha comportamento anfotero, cioè reagisce sia con gli acidi sia con le basi?",
+  "opzioni": {
+   "A": "Na₂O",
+   "B": "SO₃",
+   "C": "CaO",
+   "D": "Al₂O₃",
+   "E": "P₄O₁₀"
+  },
+  "giusta": "D",
+  "perche": "L'ossido di alluminio si scioglie negli acidi formando Al³⁺ e nelle basi forti formando lo ione alluminato [Al(OH)₄]⁻: è anfotero. Lungo un periodo il carattere degli ossidi passa da basico (Na₂O, metalli a sinistra) ad acido (P₄O₁₀, SO₃, non metalli a destra), con gli anfoteri al confine, come Al, Zn e Be. CaO è basico.",
+  "semplice": "L'ossido di alluminio è un «doppiogiochista»: con un acido si comporta da base, con una base si comporta da acido. Si trova a metà strada tra i metalli e i non metalli.",
+  "passaggi": [
+   "Ricorda l'andamento: ossidi basici a sinistra, acidi a destra",
+   "Na₂O e CaO sono basici",
+   "SO₃ e P₄O₁₀ sono acidi",
+   "Al₂O₃ reagisce con entrambi: anfotero"
+  ],
+  "concetto": "Carattere acido-base degli ossidi"
+ },
+ {
+  "id": "NCHI-147",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Che cosa succede se si fa gorgogliare cloro gassoso in una soluzione di bromuro di potassio?",
+  "opzioni": {
+   "A": "Non succede nulla, perché il bromo è più reattivo del cloro",
+   "B": "Il bromuro ossida il cloro: si forma Cl⁻ e K",
+   "C": "Il cloro ossida il bromuro a bromo: Cl₂ + 2 KBr → 2 KCl + Br₂",
+   "D": "Si forma il composto interalogeno BrCl e si libera potassio metallico",
+   "E": "Il cloro viene ridotto a Cl₂O"
+  },
+  "giusta": "C",
+  "perche": "Il potere ossidante degli alogeni diminuisce scendendo nel gruppo: F₂ > Cl₂ > Br₂ > I₂. Il cloro, ossidante più forte del bromo, strappa elettroni agli ioni Br⁻ formando Br₂, che colora la soluzione di giallo-arancio, e si riduce a Cl⁻. Il bromo non potrebbe invece ossidare il cloruro: la reazione inversa non è spontanea.",
+  "semplice": "Il cloro è più «prepotente» del bromo nel prendersi gli elettroni: li ruba agli ioni bromuro, che diventano bromo e colorano la soluzione di arancione.",
+  "passaggi": [
+   "Ricorda l'ordine del potere ossidante: F₂ > Cl₂ > Br₂ > I₂",
+   "Cl₂ è più ossidante di Br₂",
+   "Cl₂ ossida Br⁻ a Br₂ e si riduce a Cl⁻",
+   "Reazione: Cl₂ + 2 KBr → 2 KCl + Br₂"
+  ],
+  "concetto": "Potere ossidante degli alogeni"
+ },
+ {
+  "id": "NCHI-148",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Perché l'acido fluoridrico (HF) è un acido debole in acqua, mentre HCl, HBr e HI sono acidi forti?",
+  "opzioni": {
+   "A": "Perché il fluoro è il meno elettronegativo degli alogeni",
+   "B": "Perché HF non è solubile in acqua",
+   "C": "Perché il legame H–F è molto forte e lo ione F⁻, piccolo, è fortemente coinvolto in legami a idrogeno",
+   "D": "Perché HF è un composto ionico",
+   "E": "Perché F⁻ è una base più debole di Cl⁻"
+  },
+  "giusta": "C",
+  "perche": "Scendendo lungo il gruppo l'acidità di HX aumenta perché diminuisce l'energia del legame H–X. Il legame H–F è il più forte e la dissociazione è sfavorita anche perché HF e F⁻ formano legami a idrogeno molto intensi con l'acqua e tra loro (per esempio HF₂⁻). L'elevata elettronegatività del fluoro renderebbe polare il legame, ma non basta: conta soprattutto la sua forza. F⁻ è infatti una base più forte di Cl⁻, non più debole.",
+  "semplice": "Il fluoro tiene l'idrogeno così stretto che in acqua lo lascia andare raramente. Il cloro, l'iodio e il bromo, più grandi, lo mollano subito.",
+  "passaggi": [
+   "Ricorda: forza acida di HX legata all'energia del legame H–X",
+   "H–F è il legame più forte del gruppo",
+   "F⁻ e HF formano forti legami a idrogeno",
+   "Dissociazione sfavorita: HF è debole"
+  ],
+  "concetto": "Acidità degli acidi alogenidrici"
+ },
+ {
+  "id": "NCHI-149",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Perché lo xeno forma composti stabili come XeF₂ e XeF₄, mentre elio e neon non formano composti?",
+  "opzioni": {
+   "A": "Perché lo xeno non ha l'ottetto completo",
+   "B": "Perché lo xeno ha un'energia di ionizzazione relativamente bassa e gli elettroni esterni possono essere coinvolti nei legami con un elemento molto elettronegativo",
+   "C": "Perché lo xeno è un metallo",
+   "D": "Perché lo xeno è il gas nobile più leggero",
+   "E": "Perché il fluoro cede elettroni allo xeno"
+  },
+  "giusta": "B",
+  "perche": "Scendendo nel gruppo 18 l'energia di ionizzazione diminuisce: gli elettroni 5p dello xeno sono lontani dal nucleo e schermati, quindi possono partecipare a legami con atomi molto elettronegativi come fluoro e ossigeno. Elio e neon hanno energie di ionizzazione altissime e non formano composti stabili. Lo xeno ha comunque l'ottetto completo: è proprio il fluoro, molto elettronegativo, ad attrarre i suoi elettroni.",
+  "semplice": "Lo xeno è un gas nobile grande, e i suoi elettroni più esterni sono lontani dal nucleo: un elemento «aggressivo» come il fluoro riesce a coinvolgerli in un legame. Nei gas nobili piccoli gli elettroni sono tenuti troppo stretti.",
+  "passaggi": [
+   "Ricorda: i gas nobili hanno l'ottetto completo",
+   "Scendendo nel gruppo l'energia di ionizzazione cala",
+   "Xe ha elettroni esterni più disponibili",
+   "Con F, molto elettronegativo, forma XeF₂ e XeF₄"
+  ],
+  "concetto": "Chimica dei gas nobili"
+ },
+ {
+  "id": "NCHI-150",
+  "materia": "Chimica",
+  "argomento": "Chimica degli elementi dei gruppi principali",
+  "livello": "università",
+  "domanda": "Nel processo industriale «a contatto» per la produzione dell'acido solforico, quale reazione richiede un catalizzatore di pentossido di vanadio (V₂O₅)?",
+  "opzioni": {
+   "A": "S + O₂ → SO₂",
+   "B": "SO₃ + H₂O → H₂SO₄",
+   "C": "N₂ + 3 H₂ ⇌ 2 NH₃",
+   "D": "2 SO₂ + O₂ ⇌ 2 SO₃",
+   "E": "4 NH₃ + 5 O₂ → 4 NO + 6 H₂O"
+  },
+  "giusta": "D",
+  "perche": "Il processo a contatto prevede tre tappe: la combustione dello zolfo a SO₂, l'ossidazione di SO₂ a SO₃ e l'assorbimento di SO₃. La seconda tappa è esotermica e lenta: si usa V₂O₅ come catalizzatore a circa 400-450 °C, compromesso tra velocità e resa. La sintesi dell'ammoniaca (catalizzatore a base di ferro) e l'ossidazione dell'ammoniaca a NO (platino) appartengono ad altri processi industriali.",
+  "semplice": "Per fare l'acido solforico bisogna trasformare SO₂ in SO₃, ma da sola questa reazione va troppo piano. Il pentossido di vanadio la accelera, come un aiutante che non si consuma.",
+  "passaggi": [
+   "Ricorda le tappe del processo a contatto",
+   "S → SO₂ → SO₃ → H₂SO₄",
+   "La tappa lenta è SO₂ → SO₃",
+   "Si catalizza con V₂O₅"
+  ],
+  "concetto": "Processo a contatto"
+ }
+]

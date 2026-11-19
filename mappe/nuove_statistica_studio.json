@@ -1,0 +1,734 @@
+{
+ "Statistica descrittiva": {
+  "superiore": {
+   "spiegazione": [
+    "La statistica descrittiva serve a mettere ordine in un insieme di dati e a riassumerlo con pochi numeri e qualche grafico. Il primo passo è capire che tipo di variabile si sta osservando. Le variabili qualitative si esprimono con parole o categorie: possono essere nominali, se le categorie non hanno ordine (colore degli occhi, gruppo sanguigno), oppure ordinali, se un ordine c'è (giudizio insufficiente, sufficiente, buono). Le variabili quantitative si esprimono con numeri e possono essere discrete, se assumono valori «contabili» come il numero di fratelli, o continue, se possono assumere qualunque valore in un intervallo, come l'altezza o il tempo.",
+    "Dopo aver raccolto i dati si costruisce una tabella di frequenze. La frequenza assoluta è il numero di volte in cui compare una modalità; la frequenza relativa è lo stesso numero diviso per il totale, e moltiplicata per 100 diventa una percentuale. Per esempio, se in una classe di 25 studenti 10 praticano calcio, la frequenza relativa è 10/25 = 0,4, cioè il 40%. Le frequenze relative di tutte le modalità sommano sempre a 1. Le frequenze relative sono utili per confrontare gruppi di dimensioni diverse, come due classi con un numero diverso di alunni.",
+    "I grafici permettono di vedere a colpo d'occhio la forma dei dati. Il diagramma a barre è adatto alle variabili qualitative o discrete, con barre separate. Il diagramma a torta mostra le parti di un totale quando le categorie sono poche. L'istogramma si usa per variabili continue raggruppate in classi: i rettangoli sono attaccati e l'area di ciascuno è proporzionale alla frequenza. Un buon grafico ha sempre titolo, assi con unità di misura e una scala che non inganna.",
+    "Gli indici di posizione indicano dove si trova il «centro» dei dati. La media aritmetica è la somma dei valori divisa per il loro numero: con i voti 6, 7 e 8 la media è 7. La mediana è il valore che sta a metà dei dati ordinati: con un numero pari di valori si fa la media dei due centrali. La moda è il valore più frequente. Media e mediana coincidono nelle distribuzioni simmetriche, ma possono essere molto diverse quando ci sono valori estremi.",
+    "Proprio per questo è importante saper scegliere l'indice giusto. La media risente molto dei valori anomali: se in un gruppo di nove persone che guadagnano 1500 € al mese entra una persona che ne guadagna 15 000, la media sale a 2850 €, mentre la mediana resta 1500 €. Si dice che la mediana è un indice robusto. Per i redditi, i prezzi delle case o i tempi di attesa, che hanno pochi valori molto alti, la mediana descrive meglio il caso tipico.",
+    "Gli indici di dispersione dicono quanto i dati sono sparsi. Il campo di variazione è la differenza tra massimo e minimo, semplice ma sensibile agli estremi. La varianza è la media dei quadrati degli scarti dalla media, e la deviazione standard è la sua radice quadrata, espressa nella stessa unità dei dati. Due classi possono avere la stessa media di 7, ma in una tutti hanno tra 6,5 e 7,5 e nell'altra si va da 4 a 10: la deviazione standard della seconda è molto più grande."
+   ],
+   "metodo": [
+    "Prima di ogni calcolo chiediti che tipo di variabile hai davanti: questo decide quali indici e grafici puoi usare.",
+    "Per la mediana ordina sempre i dati e scrivi la posizione centrale: (n + 1)/2 se n è dispari, la media dei due centrali se n è pari.",
+    "Costruisci a mano una tabella delle frequenze con una colonna per le frequenze assolute, una per le relative e una per le percentuali, e controlla che i totali tornino.",
+    "Calcola la deviazione standard con una tabella a colonne: dato, scarto dalla media, scarto al quadrato.",
+    "Prendi dati veri (i tuoi voti, le ore di sonno della settimana) e calcola media, mediana, moda e deviazione standard: poi commenta il risultato in una frase."
+   ],
+   "ricorda": [
+    "«La media si fa trascinare, la mediana sta ferma»: con valori estremi preferisci la mediana.",
+    "Le frequenze relative sommano sempre a 1 (100%): è il controllo più veloce sui conti.",
+    "Barre separate per categorie, barre attaccate (istogramma) per classi di numeri.",
+    "La deviazione standard ha la stessa unità dei dati, la varianza ha l'unità al quadrato."
+   ],
+   "errori": [
+    "Calcolare la mediana senza aver prima ordinato i dati.",
+    "Confondere frequenza assoluta e relativa, o dimenticare di moltiplicare per 100 per ottenere la percentuale.",
+    "Usare la media per variabili qualitative come il colore preferito: per queste ha senso solo la moda.",
+    "Fermarsi alla varianza quando si chiede la deviazione standard, dimenticando la radice quadrata."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la media di 5, 8, 11?",
+     "risposta": "8: (5 + 8 + 11) / 3 = 24 / 3."
+    },
+    {
+     "domanda": "Qual è la mediana di 2, 9, 4, 7?",
+     "risposta": "5,5: ordinati sono 2, 4, 7, 9 e (4 + 7) / 2 = 5,5."
+    },
+    {
+     "domanda": "Il numero di fratelli è una variabile discreta o continua?",
+     "risposta": "Discreta: assume solo valori interi come 0, 1, 2."
+    },
+    {
+     "domanda": "In 40 famiglie, 10 hanno un cane. Qual è la frequenza percentuale?",
+     "risposta": "25%: 10 / 40 = 0,25."
+    },
+    {
+     "domanda": "Quale indice di posizione è meno sensibile ai valori anomali?",
+     "risposta": "La mediana."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La statistica descrittiva fornisce gli strumenti per sintetizzare dati osservati, sia che provengano da un'intera popolazione sia da un campione. La scelta degli strumenti dipende dalla scala di misura: nominale (solo uguale o diverso), ordinale (ordine tra modalità), a intervalli (differenze significative ma zero convenzionale, come la temperatura in gradi Celsius) e di rapporti (zero assoluto, come peso o concentrazione). Su una scala ordinale, per esempio un punteggio di dolore da 0 a 10, ha senso la mediana ma la media va interpretata con cautela. In ambito biomedico molte variabili cliniche sono ordinali (stadio di un tumore, scala di Likert in psicologia).",
+    "La distribuzione di frequenza si descrive con frequenze assolute, relative e cumulate. Le frequenze cumulate permettono di trovare i quantili: il p-esimo percentile è il valore sotto cui cade il p% delle osservazioni, e i quartili Q1, Q2 e Q3 dividono i dati in quattro parti uguali. Nell'istogramma con classi di ampiezza diversa, l'altezza dei rettangoli deve essere la densità di frequenza (frequenza divisa per l'ampiezza), altrimenti le classi larghe appaiono ingiustamente importanti. Le curve di crescita pediatriche, per esempio, si leggono proprio in percentili.",
+    "Tra gli indici di posizione, la media aritmetica è il valore che minimizza la somma dei quadrati degli scarti, mentre la mediana minimizza la somma degli scarti in valore assoluto. Quando i dati hanno pesi diversi si usa la media ponderata, x̄ = Σ w_i x_i / Σ w_i, come nel calcolo della media dei voti pesata sui crediti. La media è efficiente ma poco robusta; mediana e quantili hanno un punto di rottura del 50%, cioè restano stabili anche se quasi metà dei dati è contaminata. In presenza di forte asimmetria, come per i tempi di degenza o le concentrazioni di un farmaco, si riportano spesso mediana e distanza interquartile.",
+    "La variabilità si misura con varianza e deviazione standard. Nel campione si usa s² = Σ(x − x̄)² / (n − 1): il divisore n − 1, detto correzione di Bessel, rende s² uno stimatore non distorto della varianza della popolazione, perché gli scarti calcolati dalla media campionaria sono sistematicamente più piccoli di quelli dalla media vera. La distanza interquartile IQR = Q3 − Q1 è la misura robusta di dispersione, e la regola di Tukey segnala come anomali i valori fuori da [Q1 − 1,5·IQR; Q3 + 1,5·IQR]. Il coefficiente di variazione CV = s / x̄ è un numero puro che permette di confrontare la variabilità di grandezze con unità diverse.",
+    "La forma della distribuzione si descrive con asimmetria e curtosi. In una distribuzione con coda a destra (asimmetria positiva) di solito media > mediana > moda; con coda a sinistra l'ordine si inverte. Il box plot mostra tutte queste informazioni insieme: scatola tra Q1 e Q3, linea della mediana, baffi fino ai dati non anomali e punti isolati per gli anomali. Affiancare i box plot di più gruppi, per esempio la pressione arteriosa in tre fasce d'età, è uno dei modi più efficaci di confrontarli.",
+    "Infine, conviene conoscere l'effetto delle trasformazioni lineari Y = aX + b: la media diventa a·x̄ + b, la deviazione standard |a|·s e la varianza a²·s². Sommare una costante sposta la distribuzione senza cambiarne la dispersione, mentre cambiare unità di misura la riscala. Un caso particolare è la standardizzazione z = (x − x̄) / s, che produce dati con media 0 e deviazione standard 1 e consente di confrontare valori provenienti da distribuzioni diverse. Per esempio, un voto di 27 in un esame difficile può corrispondere a un punteggio z più alto di un 29 in un esame facile."
+   ],
+   "metodo": [
+    "Per ogni variabile di un dataset scrivi la scala di misura e accanto gli indici e i grafici ammessi.",
+    "Calcola a mano s² con il metodo delle colonne e poi controlla con la formula rapida s² = (Σx² − n·x̄²) / (n − 1).",
+    "Disegna il box plot di un piccolo insieme di dati calcolando quartili, IQR e limiti di Tukey.",
+    "Confronta media e mediana di dati reali asimmetrici (redditi, tempi di attesa) e spiega la differenza in termini di asimmetria.",
+    "Esercitati con le trasformazioni lineari: cambia l'unità di misura dei dati e prevedi media e deviazione standard prima di ricalcolarle.",
+    "Collega la mappa a «Distribuzione normale» (punteggi z) e a «Campionamento e intervalli di confidenza» (s come stima di σ)."
+   ],
+   "ricorda": [
+    "Bessel: «n − 1 perché un grado di libertà l'ha già preso la media».",
+    "Var(aX + b) = a²·Var(X): la costante b sparisce, il fattore a esce al quadrato.",
+    "Coda a destra → media più a destra di tutti: media > mediana > moda.",
+    "Dati asimmetrici: riporta mediana e IQR; dati simmetrici: media e deviazione standard."
+   ],
+   "errori": [
+    "Usare n invece di n − 1 quando si stima la varianza di una popolazione da un campione.",
+    "Costruire un istogramma con classi di ampiezza diversa usando la frequenza al posto della densità.",
+    "Confrontare deviazioni standard di variabili con unità o medie molto diverse invece dei coefficienti di variazione.",
+    "Eliminare automaticamente i valori anomali senza chiedersi se sono errori di misura o casi reali informativi.",
+    "Calcolare la media di punteggi ordinali come se le distanze tra le categorie fossero uguali."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale s² per i dati 1, 3, 5?",
+     "risposta": "4: media 3, scarti al quadrato 4, 0, 4, somma 8, diviso n − 1 = 2."
+    },
+    {
+     "domanda": "Con Q1 = 10 e Q3 = 18, qual è il limite inferiore di Tukey?",
+     "risposta": "−2: 10 − 1,5 · 8."
+    },
+    {
+     "domanda": "Una variabile ha media 40 e s = 6. Quanto vale il CV?",
+     "risposta": "0,15, cioè il 15%."
+    },
+    {
+     "domanda": "Se X ha deviazione standard 5, quale ha Y = −3X + 7?",
+     "risposta": "15: |−3| · 5."
+    },
+    {
+     "domanda": "Perché per i tempi di degenza si riporta spesso la mediana?",
+     "risposta": "Perché la distribuzione ha una lunga coda a destra e la media è trascinata dai pochi ricoveri molto lunghi."
+    }
+   ]
+  }
+ },
+ "Probabilità": {
+  "superiore": {
+   "spiegazione": [
+    "La probabilità è un numero che misura quanto è possibile che accada un evento il cui esito non è prevedibile con certezza, come l'uscita di un numero alla roulette o la nascita di un maschio o di una femmina. L'insieme di tutti gli esiti possibili si chiama spazio campionario: per un dado è {1, 2, 3, 4, 5, 6}. Un evento è un sottoinsieme di questi esiti, per esempio «esce un numero pari». La probabilità vale 0 per l'evento impossibile, 1 per quello certo, e un valore intermedio per tutti gli altri.",
+    "Secondo la definizione classica la probabilità è il rapporto tra casi favorevoli e casi possibili, purché questi siano equiprobabili. Con un dado la probabilità di fare più di 4 è 2/6 = 1/3. Con due dadi bisogna fare attenzione: gli esiti sono le 36 coppie ordinate, e la somma 7 ha probabilità 6/36 perché si ottiene in sei modi diversi. La definizione frequentista invece stima la probabilità con la frequenza relativa osservata su molte prove: è il modo con cui una compagnia assicurativa stima la probabilità di un incidente.",
+    "Il legame tra le due definizioni è la legge dei grandi numeri: ripetendo un esperimento molte volte, la frequenza relativa si avvicina alla probabilità. Con 10 lanci di moneta si possono ottenere 7 teste, ma con 10 000 lanci la percentuale sarà quasi sempre vicina al 50%. Attenzione però: la legge non dice che le uscite si «compensano». Dopo cinque teste di fila, la probabilità di testa al lancio successivo resta 1/2; pensare il contrario è la fallacia del giocatore.",
+    "Per calcolare la probabilità di eventi composti si usano alcune regole. L'evento contrario ha probabilità 1 − P(A): è comodissimo per gli eventi del tipo «almeno uno». La probabilità che si verifichi A oppure B è P(A) + P(B) − P(A e B); se gli eventi sono incompatibili, cioè non possono verificarsi insieme, l'ultima parte vale zero. La probabilità che si verifichino A e B insieme, se gli eventi sono indipendenti, è il prodotto P(A) · P(B): per esempio due teste in due lanci hanno probabilità 1/2 · 1/2 = 1/4.",
+    "Quando si estrae senza reinserimento le prove non sono più indipendenti: da un'urna con 3 palline rosse su 10, la probabilità di estrarne due rosse è 3/10 · 2/9, perché dopo la prima estrazione ne restano 2 rosse su 9. Per contare i casi favorevoli e possibili si usa il calcolo combinatorio. Le permutazioni contano i modi di mettere in fila n oggetti (n!), le disposizioni i modi di scegliere k oggetti in ordine, le combinazioni i modi di sceglierli senza ordine: i gruppi di 3 persone su 10 sono C(10,3) = 120."
+   ],
+   "metodo": [
+    "Prima di calcolare, scrivi lo spazio campionario o almeno contane gli elementi, e chiediti se sono equiprobabili.",
+    "Davanti a «almeno uno» passa subito all'evento contrario «nessuno».",
+    "Per ogni problema chiediti: gli eventi possono avvenire insieme? Si influenzano a vicenda? La risposta decide se sommare, sottrarre o moltiplicare.",
+    "Disegna diagrammi ad albero per le prove ripetute e moltiplica le probabilità lungo i rami.",
+    "Nel calcolo combinatorio chiediti sempre «l'ordine conta?» prima di scegliere tra disposizioni e combinazioni."
+   ],
+   "ricorda": [
+    "«O» si somma (togliendo i doppi), «e» si moltiplica (se indipendenti).",
+    "«Almeno uno» = 1 − «nessuno».",
+    "Il dado e la moneta non hanno memoria.",
+    "Due dadi: 36 casi, e il 7 è la somma più probabile (6 modi)."
+   ],
+   "errori": [
+    "Confondere eventi incompatibili (non possono avvenire insieme) ed eventi indipendenti (non si influenzano).",
+    "Sommare le probabilità di eventi che possono verificarsi insieme senza togliere l'intersezione.",
+    "Trattare le estrazioni senza reinserimento come se fossero con reinserimento.",
+    "Contare (1,6) e (6,1) come un solo caso quando i dadi sono due.",
+    "Ottenere una probabilità maggiore di 1 senza accorgersi che il calcolo è sbagliato."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la probabilità di estrarre una figura da un mazzo di 40 carte italiane (3 figure per seme)?",
+     "risposta": "12/40 = 3/10."
+    },
+    {
+     "domanda": "Qual è la probabilità di ottenere due 6 lanciando due dadi?",
+     "risposta": "1/36: 1/6 · 1/6."
+    },
+    {
+     "domanda": "Qual è la probabilità di non ottenere nessun 6 in due lanci di un dado?",
+     "risposta": "25/36: 5/6 · 5/6."
+    },
+    {
+     "domanda": "Quanti anagrammi ha la parola LUCE?",
+     "risposta": "24: 4!."
+    },
+    {
+     "domanda": "Se P(A) = 0,35, quanto vale P(non A)?",
+     "risposta": "0,65."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La teoria moderna della probabilità si fonda sugli assiomi di Kolmogorov: la probabilità è una funzione che associa a ogni evento un numero non negativo, vale 1 sull'intero spazio campionario Ω ed è additiva sugli eventi a due a due incompatibili. Da questi assiomi discendono tutte le regole di calcolo, come P(Ā) = 1 − P(A) e la regola dell'addizione P(A ∪ B) = P(A) + P(B) − P(A ∩ B). Le interpretazioni classica, frequentista e soggettiva (bayesiana) sono modi diversi di assegnare i valori, ma rispettano gli stessi assiomi. In medicina, per esempio, la probabilità di una diagnosi prima degli esami può essere un giudizio soggettivo basato sull'esperienza clinica.",
+    "La probabilità condizionata P(A | B) = P(A ∩ B) / P(B) esprime la probabilità di A sapendo che B si è verificato: in pratica si restringe lo spazio campionario a B. Da qui si ricava la regola del prodotto P(A ∩ B) = P(A | B) · P(B), usata per esempio nelle estrazioni senza reinserimento. Due eventi sono indipendenti se P(A | B) = P(A), cioè se P(A ∩ B) = P(A) · P(B). L'indipendenza non va confusa con l'incompatibilità: due eventi incompatibili con probabilità positiva sono anzi fortemente dipendenti, perché il verificarsi dell'uno esclude l'altro.",
+    "Se gli eventi A₁, …, A_k formano una partizione di Ω, il teorema della probabilità totale permette di calcolare P(B) = Σ P(B | A_i) · P(A_i). Il teorema di Bayes inverte il condizionamento: P(A_i | B) = P(B | A_i) · P(A_i) / P(B). In termini bayesiani, P(A_i) è la probabilità a priori, P(B | A_i) la verosimiglianza e P(A_i | B) la probabilità a posteriori, aggiornata alla luce dei dati. È il meccanismo con cui si aggiorna una convinzione quando arriva una nuova informazione.",
+    "L'applicazione più importante in ambito sanitario sono i test diagnostici. La sensibilità è P(positivo | malato), la specificità P(negativo | sano), la prevalenza la probabilità a priori di malattia. Il valore predittivo positivo P(malato | positivo) dipende fortemente dalla prevalenza: con prevalenza 1%, sensibilità 90% e specificità 95%, su 10 000 persone si hanno 90 veri positivi e 495 falsi positivi, quindi il VPP è solo del 15% circa. Per questo lo screening di malattie rare richiede test molto specifici e la conferma con un secondo esame.",
+    "Il calcolo combinatorio fornisce gli strumenti per contare gli esiti in spazi finiti equiprobabili. Le permutazioni di n oggetti distinti sono n!; le disposizioni semplici di k oggetti su n sono n!/(n − k)!; le combinazioni sono C(n,k) = n!/(k!(n − k)!), il coefficiente binomiale. Se alcuni oggetti sono ripetuti, le permutazioni si dividono per i fattoriali delle ripetizioni. Il paradosso del compleanno (con 23 persone la probabilità di almeno una coincidenza supera il 50%) mostra quanto il conteggio delle coppie sia controintuitivo.",
+    "Molti errori di ragionamento probabilistico sono documentati anche in psicologia cognitiva. La fallacia del giocatore attribuisce memoria a eventi indipendenti; la fallacia del procuratore scambia P(prova | innocente) con P(innocente | prova); la trascuratezza della probabilità a priori porta a sovrastimare il valore di un test positivo. Riconoscere questi errori è fondamentale per leggere correttamente articoli scientifici e risultati clinici. La probabilità è infine la base per le variabili casuali e per tutta la statistica inferenziale."
+   ],
+   "metodo": [
+    "Scrivi sempre in simboli quale probabilità ti serve, per esempio P(malato | positivo), prima di cercare i dati.",
+    "Per i problemi con Bayes costruisci una tabella 2×2 con frequenze naturali su 10 000 persone: è più intuitiva delle formule.",
+    "Disegna un albero di probabilità per la probabilità totale e moltiplica lungo i rami, sommando poi i rami che portano allo stesso evento.",
+    "Verifica l'indipendenza calcolando sia P(A ∩ B) sia P(A) · P(B).",
+    "Esercitati a ricavare n!/(k!(n − k)!) contando le disposizioni e dividendo per i riordinamenti.",
+    "Collega la mappa a «Variabili casuali e distribuzioni» (binomiale) e a «Test delle ipotesi» (errori di I e II tipo come probabilità condizionate)."
+   ],
+   "ricorda": [
+    "Sensibilità guarda i malati, specificità guarda i sani, il VPP guarda i positivi.",
+    "P(A | B) ≠ P(B | A): non scambiare mai il condizionamento.",
+    "Incompatibili ⇒ dipendenti (se le probabilità sono positive).",
+    "Bayes: a posteriori ∝ verosimiglianza × a priori."
+   ],
+   "errori": [
+    "Confondere sensibilità e valore predittivo positivo di un test.",
+    "Ignorare la prevalenza (probabilità a priori) nel valutare un risultato positivo.",
+    "Moltiplicare le probabilità di eventi non indipendenti come se lo fossero.",
+    "Usare le combinazioni quando l'ordine conta, o le disposizioni quando non conta."
+   ],
+   "domande": [
+    {
+     "domanda": "Se P(A) = 0,4, P(B) = 0,5 e P(A ∩ B) = 0,1, quanto vale P(A | B)?",
+     "risposta": "0,2: 0,1 / 0,5."
+    },
+    {
+     "domanda": "Gli eventi della domanda precedente sono indipendenti?",
+     "risposta": "No: P(A) · P(B) = 0,2 ≠ 0,1."
+    },
+    {
+     "domanda": "Con prevalenza 10%, sensibilità 80% e specificità 90%, quanto vale il VPP?",
+     "risposta": "Circa 47%: 80 / (80 + 90) su 1000 persone."
+    },
+    {
+     "domanda": "Quanti sono i possibili gruppi di 2 persone scelte tra 6?",
+     "risposta": "15: C(6,2)."
+    },
+    {
+     "domanda": "Quanti anagrammi ha la parola ANNA?",
+     "risposta": "6: 4! / (2! · 2!)."
+    }
+   ]
+  }
+ },
+ "Variabili casuali e distribuzioni": {
+  "superiore": {
+   "spiegazione": [
+    "Una variabile casuale è una regola che associa un numero a ciascun esito di un esperimento casuale. Lanciando tre monete, per esempio, possiamo definire X come «numero di teste ottenute», che può valere 0, 1, 2 o 3. Le variabili casuali sono discrete quando assumono valori separati che si possono contare, come il numero di teste o di figli, e continue quando possono assumere qualunque valore in un intervallo, come il peso di un neonato o il tempo di attesa dell'autobus. Questa distinzione cambia il modo in cui si calcolano le probabilità.",
+    "Per una variabile discreta la distribuzione di probabilità elenca tutti i valori possibili con le rispettive probabilità, e queste devono sommare a 1. Per il numero di teste in due lanci di moneta si ha P(0) = 0,25, P(1) = 0,5, P(2) = 0,25. La funzione di ripartizione F(x) = P(X ≤ x) accumula le probabilità: F(1) = 0,25 + 0,5 = 0,75. È l'equivalente delle frequenze cumulate della statistica descrittiva.",
+    "Il valore atteso, o speranza matematica, è la media dei valori pesata con le loro probabilità: E[X] = Σ x · P(x). Per un dado vale 3,5, un risultato che non può uscire ma che rappresenta la media su moltissimi lanci. Il valore atteso serve per valutare i giochi: se si vincono 10 € con probabilità 0,2 e si perdono 3 € altrimenti, il guadagno atteso è 10 · 0,2 − 3 · 0,8 = −0,40 €, quindi il gioco è svantaggioso. Un gioco si dice equo se il guadagno atteso è zero.",
+    "La varianza di una variabile casuale misura quanto i valori si allontanano dal valore atteso e si calcola come Var(X) = E[X²] − (E[X])². La sua radice quadrata è la deviazione standard. Due giochi con lo stesso guadagno atteso possono essere molto diversi: uno con vincite piccole e frequenti ha varianza bassa, uno simile a una lotteria ha varianza altissima. La varianza misura quindi anche il rischio.",
+    "La distribuzione binomiale descrive il numero di successi in n prove indipendenti, ciascuna con due esiti e con la stessa probabilità di successo p. La formula è P(X = k) = C(n,k) · pᵏ · (1 − p)ⁿ⁻ᵏ, dove il coefficiente binomiale conta in quanti ordini possono presentarsi i k successi. La media è np e la varianza np(1 − p): se il 30% delle persone ha un certo gruppo sanguigno, su 50 donatori ci si aspettano in media 15 persone con quel gruppo. Per le variabili continue, invece, la probabilità si legge come area sotto una curva detta densità, la cui area totale vale 1."
+   ],
+   "metodo": [
+    "Per ogni esercizio scrivi prima la tabella valore-probabilità e controlla che la somma faccia 1.",
+    "Calcola il valore atteso con una colonna x · P(x) e la varianza con una colonna x² · P(x).",
+    "Davanti a un problema chiediti se valgono le quattro condizioni della binomiale prima di usare la formula.",
+    "Svolgi a mano qualche binomiale piccola (n = 3, 4, 5) scrivendo tutte le sequenze, e poi verifica con la formula.",
+    "Valuta il valore atteso di giochi reali (gratta e vinci, scommesse) per capire perché in media si perde."
+   ],
+   "ricorda": [
+    "Valore atteso = media pesata con le probabilità: non è detto che sia un valore possibile.",
+    "Binomiale: «n prove, due esiti, stessa p, nessuna memoria».",
+    "Media della binomiale np: 100 lanci di moneta → 50 teste attese.",
+    "Per le continue la probabilità è un'area, non un'altezza."
+   ],
+   "errori": [
+    "Dimenticare il coefficiente binomiale C(n,k) nella formula della binomiale.",
+    "Calcolare la varianza come E[X²] senza sottrarre il quadrato della media.",
+    "Usare la binomiale quando le prove non sono indipendenti, come nelle estrazioni senza reinserimento da un'urna piccola.",
+    "Pensare che il valore atteso sia il valore più probabile."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è il valore atteso del numero di teste in 10 lanci di moneta?",
+     "risposta": "5: np = 10 · 0,5."
+    },
+    {
+     "domanda": "Qual è la probabilità di ottenere 2 teste in 2 lanci?",
+     "risposta": "1/4: 0,5 · 0,5."
+    },
+    {
+     "domanda": "Un gioco fa vincere 5 € con probabilità 0,1 e perdere 1 € altrimenti. È equo?",
+     "risposta": "No: E = 0,5 − 0,9 = −0,40 €, è svantaggioso."
+    },
+    {
+     "domanda": "Qual è la varianza di una binomiale con n = 20 e p = 0,5?",
+     "risposta": "5: 20 · 0,5 · 0,5."
+    },
+    {
+     "domanda": "Il tempo di reazione di un pilota è una variabile discreta o continua?",
+     "risposta": "Continua: può assumere qualunque valore in un intervallo."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Formalmente una variabile casuale è una funzione X: Ω → ℝ che associa un numero reale a ciascun esito dello spazio campionario. Se X è discreta è descritta dalla funzione di probabilità p(x) = P(X = x), con Σ p(x) = 1; se è continua è descritta da una densità f(x) ≥ 0 con area totale 1, e le probabilità si ottengono come integrali: P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx. Di conseguenza per una variabile continua ogni singolo punto ha probabilità zero. In entrambi i casi la funzione di ripartizione F(x) = P(X ≤ x) è non decrescente e va da 0 a 1.",
+    "Il valore atteso E[X] e la varianza Var(X) = E[(X − μ)²] = E[X²] − μ² sono i due momenti fondamentali. Valgono proprietà di linearità: E[aX + b] = aE[X] + b e Var(aX + b) = a² Var(X). Per variabili indipendenti la varianza della somma e della differenza è la somma delle varianze: Var(X ± Y) = Var(X) + Var(Y). Questa regola spiega la propagazione degli errori in laboratorio: la differenza tra due misure è più incerta di ciascuna delle due.",
+    "Tra i modelli discreti, la Bernoulli descrive una singola prova con successo di probabilità p; la binomiale la somma di n Bernoulli indipendenti, con μ = np e σ² = np(1 − p); la geometrica il numero di prove fino al primo successo, P(X = k) = (1 − p)ᵏ⁻¹ p. La distribuzione di Poisson, P(X = k) = e^(−λ) λᵏ / k!, descrive il numero di eventi rari in un intervallo di tempo o di spazio, come le mutazioni in un tratto di DNA, le colonie su una piastra o i decadimenti radioattivi. La Poisson ha media e varianza entrambe uguali a λ e approssima la binomiale quando n è grande e p piccolo.",
+    "Tra i modelli continui, l'uniforme su [a, b] ha densità costante 1/(b − a), media (a + b)/2 e varianza (b − a)²/12. L'esponenziale descrive tempi di attesa tra eventi di Poisson, con media 1/λ, e gode della proprietà di assenza di memoria. Il modello più importante è la normale, a cui è dedicato un capitolo apposito. Dalla normale derivano la t di Student, il chi-quadrato e la F di Fisher, che sono la base degli intervalli di confidenza e dei test delle ipotesi.",
+    "Scegliere il modello giusto è un passaggio cruciale dell'analisi dei dati. I conteggi di eventi indipendenti in un'unità di tempo suggeriscono una Poisson; il numero di successi su un numero fissato di soggetti suggerisce una binomiale; misure biologiche continue come pressione o glicemia sono spesso approssimate dalla normale. Quando i dati di conteggio mostrano una varianza molto più grande della media si parla di sovradispersione, e la Poisson non è più adatta. Confrontare media e varianza osservate è quindi un primo controllo semplice ma utile."
+   ],
+   "metodo": [
+    "Per ogni modello costruisci una scheda con: situazione tipica, parametri, formula di P(X = k) o della densità, media, varianza.",
+    "Ricava media e varianza della binomiale sommando n Bernoulli indipendenti, invece di memorizzarle.",
+    "Esercitati con la Poisson calcolando P(X = 0), P(X = 1) e P(X ≥ 2) = 1 − P(0) − P(1).",
+    "Verifica numericamente che Var(X − Y) = Var(X) + Var(Y) simulando con un foglio di calcolo due variabili indipendenti.",
+    "Per ogni insieme di dati di conteggio confronta media e varianza osservate prima di scegliere la Poisson.",
+    "Collega la mappa a «Distribuzione normale» e a «Test delle ipotesi», dove ricompaiono t, chi-quadrato e F."
+   ],
+   "ricorda": [
+    "Poisson: «media uguale a varianza, uguale a λ».",
+    "Le varianze di variabili indipendenti si sommano sempre, anche nella differenza.",
+    "Continua: P(X = a) = 0, quindi ≤ e < sono la stessa cosa.",
+    "Geometrica: k − 1 fallimenti, poi un successo.",
+    "Uniforme: varianza (b − a)²/12."
+   ],
+   "errori": [
+    "Confondere la densità f(x) con una probabilità: la densità può superare 1.",
+    "Sottrarre le varianze nel calcolo di Var(X − Y).",
+    "Usare la Poisson per conteggi sovradispersi senza verificarne la validità.",
+    "Applicare la binomiale a estrazioni senza reinserimento da una popolazione piccola, dove serve l'ipergeometrica."
+   ],
+   "domande": [
+    {
+     "domanda": "X ~ Poisson(3): quanto vale P(X = 1)?",
+     "risposta": "3e^(−3) ≈ 0,149."
+    },
+    {
+     "domanda": "X ~ Binomiale(50; 0,1): quanto valgono media e varianza?",
+     "risposta": "Media 5, varianza 4,5."
+    },
+    {
+     "domanda": "X uniforme su [0, 12]: quanto vale la varianza?",
+     "risposta": "12: 12²/12."
+    },
+    {
+     "domanda": "E[X] = 4 e Var(X) = 2: quanto vale E[X²]?",
+     "risposta": "18: Var(X) + (E[X])² = 2 + 16."
+    },
+    {
+     "domanda": "Con p = 0,5, qual è la probabilità che il primo successo arrivi alla quarta prova?",
+     "risposta": "1/16: 0,5³ · 0,5."
+    }
+   ]
+  }
+ },
+ "Distribuzione normale": {
+  "superiore": {
+   "spiegazione": [
+    "La distribuzione normale, o gaussiana, è il modello più usato in statistica. Ha la forma di una campana simmetrica: i valori più frequenti si trovano intorno alla media, e diventano sempre più rari man mano che ci si allontana, in modo uguale a destra e a sinistra. Per questo media, mediana e moda coincidono. Molte grandezze naturali si distribuiscono approssimativamente così: l'altezza delle persone della stessa età e dello stesso sesso, il peso alla nascita, gli errori di misura in laboratorio.",
+    "Una distribuzione normale è definita da due soli parametri: la media μ, che indica dove è centrata la campana, e la deviazione standard σ, che indica quanto è larga. Cambiando μ la curva scivola a destra o a sinistra senza cambiare forma; aumentando σ la curva si allarga e si abbassa, perché l'area totale sotto la curva deve rimanere uguale a 1, cioè al 100% dei casi. Due classi con la stessa media di voto possono quindi avere campane molto diverse.",
+    "La proprietà più utile da ricordare è la regola empirica 68-95-99,7. Entro una deviazione standard dalla media cade circa il 68% dei dati, entro due circa il 95%, entro tre circa il 99,7%. Se l'altezza dei ragazzi di 16 anni ha media 175 cm e σ = 7 cm, circa il 95% di loro è alto tra 161 e 189 cm. Un ragazzo di 196 cm, a tre deviazioni standard dalla media, è davvero raro.",
+    "Per confrontare valori di distribuzioni diverse si usa il punteggio z = (x − μ)/σ, che dice di quante deviazioni standard un valore si allontana dalla media. Un 8 in una verifica con media 6 e σ = 1 ha z = 2, mentre un 9 in una verifica con media 8 e σ = 1 ha z = 1: il primo risultato è più eccezionale anche se il voto è più basso. Standardizzando si ottiene la normale standard, con media 0 e deviazione standard 1.",
+    "Le probabilità della normale standard sono raccolte in una tavola che, per ogni valore z, fornisce l'area a sinistra di z, cioè P(Z < z). Per esempio P(Z < 1) ≈ 0,84 e P(Z < 2) ≈ 0,977. Per risolvere un problema si trasforma il valore in punteggio z, si legge la tavola e si sfrutta la simmetria: P(Z > z) = 1 − P(Z < z). Con il QI, che ha media 100 e σ = 15, un valore sopra 130 corrisponde a z > 2 e riguarda circa il 2,3% delle persone."
+   ],
+   "metodo": [
+    "Disegna sempre la campana, segna la media e i punti a ±1σ, ±2σ, ±3σ, e colora l'area che ti interessa.",
+    "Trasforma ogni valore in punteggio z prima di usare la tavola, scrivendo la formula per intero.",
+    "Impara la regola 68-95-99,7 e usala per stimare il risultato prima di fare il calcolo preciso.",
+    "Usa la simmetria: l'area a destra di z è uguale a quella a sinistra di −z.",
+    "Esercitati con dati realistici (altezze, pesi alla nascita, punteggi di test) per dare un senso concreto ai numeri."
+   ],
+   "ricorda": [
+    "68-95-99,7: «uno, due, tre sigma».",
+    "z = (valore − media) / deviazione standard.",
+    "Metà dell'area sta sopra la media, metà sotto.",
+    "σ più grande → campana più larga e più bassa."
+   ],
+   "errori": [
+    "Usare il 95% per una sola coda invece di dividerlo: oltre +2σ c'è circa il 2,5%, non il 5%.",
+    "Dimenticare di dividere per σ quando si calcola il punteggio z.",
+    "Confrontare voti di prove diverse senza standardizzarli.",
+    "Pensare che tutti i fenomeni naturali siano distribuiti normalmente."
+   ],
+   "domande": [
+    {
+     "domanda": "Con media 50 e σ = 10, entro quale intervallo cade circa il 95% dei dati?",
+     "risposta": "Tra 30 e 70."
+    },
+    {
+     "domanda": "Qual è il punteggio z di 44 se la media è 50 e σ = 4?",
+     "risposta": "−1,5."
+    },
+    {
+     "domanda": "Circa che percentuale dei dati supera μ + 2σ?",
+     "risposta": "Circa il 2,3% (circa 2,5% con la regola empirica)."
+    },
+    {
+     "domanda": "Quanto vale P(Z < 0)?",
+     "risposta": "0,5."
+    },
+    {
+     "domanda": "Cosa succede alla campana se aumenta la media?",
+     "risposta": "Si sposta verso destra senza cambiare forma."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Una variabile X ~ N(μ, σ²) ha densità f(x) = 1/(σ√(2π)) · e^(−(x − μ)²/(2σ²)), definita su tutta la retta reale. La curva è simmetrica rispetto a μ, ha un unico massimo in x = μ e due punti di flesso in μ ± σ. La standardizzazione Z = (X − μ)/σ riconduce qualunque normale alla normale standard N(0, 1), la cui funzione di ripartizione Φ(z) non ha forma chiusa ma è tabulata. Grazie alla simmetria vale Φ(−z) = 1 − Φ(z).",
+    "Alcuni quantili ricorrono continuamente: z = 1,645 lascia il 5% a destra, z = 1,96 lascia il 2,5% a destra (95% centrale) e z = 2,576 lascia lo 0,5% (99% centrale). Il percentile p di una normale si ottiene come x_p = μ + z_p σ: con punteggi di un test N(500, 100²) il 90° percentile vale circa 500 + 1,28 · 100 = 628. In medicina gli intervalli di riferimento degli esami di laboratorio sono spesso definiti come μ ± 1,96σ della popolazione sana, per cui per costruzione il 5% delle persone sane ha valori «fuori norma».",
+    "La normale è chiusa rispetto alle trasformazioni lineari e alla somma di variabili indipendenti: aX + b ~ N(aμ + b, a²σ²) e, se X e Y sono normali indipendenti, X + Y ~ N(μ₁ + μ₂, σ₁² + σ₂²). Nella somma si sommano le varianze, non le deviazioni standard. Ne segue che la media di n osservazioni normali indipendenti è esattamente N(μ, σ²/n).",
+    "Il motivo profondo dell'importanza della normale è il teorema del limite centrale: la somma o la media di molte variabili indipendenti con varianza finita tende a distribuirsi normalmente, qualunque sia la loro distribuzione di partenza. Per questo grandezze che risultano da molti piccoli effetti additivi (genetici e ambientali, come la statura) sono approssimativamente normali. Il teorema giustifica anche l'approssimazione normale della binomiale, N(np, np(1 − p)), accettabile quando np e n(1 − p) sono almeno 5-10, eventualmente con la correzione di continuità ± 0,5.",
+    "Molti metodi inferenziali presuppongono la normalità dei dati o dei residui, quindi è importante verificarla. Si usano strumenti grafici, come l'istogramma e soprattutto il Q-Q plot, e test formali come Shapiro-Wilk; con campioni grandi conviene dare più peso ai grafici, perché i test rilevano anche scostamenti irrilevanti. Dati con forte asimmetria positiva, come concentrazioni di farmaci o anticorpi, sono spesso log-normali: il loro logaritmo è normale. Dalla normale derivano infine il χ², la t di Student e la F, che si incontrano negli intervalli di confidenza e nei test."
+   ],
+   "metodo": [
+    "Per ogni esercizio scrivi: distribuzione di X, standardizzazione, probabilità in termini di Φ, valore numerico.",
+    "Memorizza i quantili 1,645, 1,96 e 2,576 e verifica di saper ricavare da quali aree derivano.",
+    "Esercitati nel problema inverso: data una probabilità o un percentile, trova il valore x.",
+    "Simula con un foglio di calcolo medie di campioni da una distribuzione uniforme o esponenziale e osserva il teorema del limite centrale all'opera.",
+    "Per un insieme di dati reali costruisci istogramma e Q-Q plot e decidi se la normalità è plausibile.",
+    "Collega la mappa a «Campionamento e intervalli di confidenza» (σ/√n) e a «Test delle ipotesi» (statistica z)."
+   ],
+   "ricorda": [
+    "1,645 – 1,96 – 2,576: i tre z da sapere a memoria.",
+    "Somma di normali indipendenti: si sommano le varianze.",
+    "Il TLC parla della media, non dei singoli dati.",
+    "Intervallo di riferimento clinico: il 5% dei sani è «fuori norma» per costruzione."
+   ],
+   "errori": [
+    "Confondere 1,645 (una coda al 5%) con 1,96 (due code al 5%).",
+    "Pensare che il teorema del limite centrale renda normali i dati originali.",
+    "Sommare le deviazioni standard invece delle varianze.",
+    "Applicare l'approssimazione normale alla binomiale con np troppo piccolo.",
+    "Fidarsi solo del test di Shapiro-Wilk con campioni molto grandi senza guardare il Q-Q plot."
+   ],
+   "domande": [
+    {
+     "domanda": "X ~ N(80, 10²): quanto vale circa P(X > 95)?",
+     "risposta": "Circa 0,067: z = 1,5 e 1 − Φ(1,5) ≈ 0,0668."
+    },
+    {
+     "domanda": "Qual è il 95° percentile di N(20, 4²)?",
+     "risposta": "Circa 26,6: 20 + 1,645 · 4."
+    },
+    {
+     "domanda": "X ~ N(5, 2²), Y = 3X + 1: come è distribuita Y?",
+     "risposta": "N(16, 36), cioè media 16 e deviazione standard 6."
+    },
+    {
+     "domanda": "Media di 25 osservazioni da N(100, 15²): qual è la sua deviazione standard?",
+     "risposta": "3: 15/√25."
+    },
+    {
+     "domanda": "Si può approssimare con la normale una binomiale con n = 20 e p = 0,05?",
+     "risposta": "No: np = 1, troppo piccolo; meglio la Poisson."
+    }
+   ]
+  }
+ },
+ "Campionamento e intervalli di confidenza": {
+  "superiore": {
+   "spiegazione": [
+    "Quasi mai è possibile osservare tutte le unità che ci interessano: non si può misurare la pressione di tutti gli italiani né chiedere l'opinione a ogni elettore. Per questo si studia un campione, cioè un sottoinsieme della popolazione, e si usano i risultati per trarre conclusioni sull'intera popolazione. Questo passaggio dal particolare al generale si chiama inferenza statistica. I valori che descrivono la popolazione, come la media vera μ, si chiamano parametri; quelli calcolati sul campione, come la media campionaria x̄, si chiamano statistiche.",
+    "Perché un campione sia utile deve essere rappresentativo, e il modo migliore per ottenerlo è sceglierlo a caso. Nel campionamento casuale semplice ogni unità ha la stessa probabilità di essere estratta, come in un sorteggio. Nel campionamento stratificato la popolazione si divide in gruppi omogenei (per esempio per età o per regione) e si sorteggia dentro ciascuno. Nel campionamento a grappoli si estraggono gruppi interi, come scuole o condomini. I campioni volontari o «di comodo», come i sondaggi online, sono invece a rischio di distorsione: chi risponde non è come chi non risponde.",
+    "La media di un campione non coincide quasi mai con la media della popolazione e cambia da campione a campione. Questa variabilità si misura con l'errore standard della media, SE = σ/√n, dove σ è la deviazione standard della popolazione e n la dimensione del campione. Più il campione è grande, più l'errore standard è piccolo: con σ = 10, un campione di 25 persone dà SE = 2, uno di 100 persone dà SE = 1. Attenzione: per dimezzare l'errore serve un campione quattro volte più grande.",
+    "Invece di dare un solo numero come stima, è più onesto dare un intervallo di valori plausibili, detto intervallo di confidenza. Per la media al 95% si calcola x̄ ± 1,96 · σ/√n: per esempio, se 25 studenti dormono in media 7 ore e σ = 1 ora, l'intervallo è 7 ± 1,96 · 0,2, cioè da circa 6,6 a 7,4 ore. Per una proporzione si usa p̂ ± 1,96 · √(p̂(1 − p̂)/n): se in un sondaggio su 1000 persone il 40% è favorevole, il margine di errore è circa ± 3 punti.",
+    "Il «95%» non significa che il 95% dei dati cada nell'intervallo, né che la media vera abbia il 95% di probabilità di trovarsi lì. Significa che, se ripetessimo l'indagine molte volte con lo stesso metodo, circa 95 intervalli su 100 conterrebbero il valore vero. Se vogliamo una fiducia maggiore, per esempio il 99%, l'intervallo diventa più largo. Un intervallo stretto, quindi una stima precisa, si ottiene soprattutto aumentando il numero di unità osservate."
+   ],
+   "metodo": [
+    "Per ogni esercizio individua popolazione, campione, parametro e statistica, scrivendoli esplicitamente.",
+    "Calcola l'errore standard come primo passo: senza di esso non si costruisce nessun intervallo.",
+    "Scrivi l'intervallo nella forma «stima ± margine» e solo alla fine calcola gli estremi.",
+    "Analizza sondaggi veri sui giornali: cerca il numero di intervistati e il margine di errore dichiarato.",
+    "Ripeti a voce l'interpretazione corretta del 95% finché non ti viene spontanea."
+   ],
+   "ricorda": [
+    "Errore standard = σ / √n: «la radice frena».",
+    "Quattro volte il campione, metà del margine.",
+    "Campione grande ma distorto = risultato preciso ma sbagliato.",
+    "IC al 95%: stima ± 1,96 errori standard."
+   ],
+   "errori": [
+    "Usare la deviazione standard dei dati invece dell'errore standard nell'intervallo.",
+    "Pensare che un campione molto grande corregga una scelta non casuale.",
+    "Interpretare l'intervallo al 95% come l'intervallo che contiene il 95% dei dati.",
+    "Credere che raddoppiare il campione dimezzi il margine di errore."
+   ],
+   "domande": [
+    {
+     "domanda": "Con σ = 20 e n = 100, quanto vale l'errore standard?",
+     "risposta": "2: 20/√100."
+    },
+    {
+     "domanda": "Con x̄ = 50 e SE = 2, qual è l'IC al 95%?",
+     "risposta": "Da 46,08 a 53,92: 50 ± 1,96 · 2."
+    },
+    {
+     "domanda": "In un sondaggio su 100 persone, 50 dicono sì. Qual è il margine di errore al 95%?",
+     "risposta": "Circa ± 9,8 punti: 1,96 · √(0,25/100)."
+    },
+    {
+     "domanda": "Che cosa si intende per campione stratificato?",
+     "risposta": "Un campione estratto a caso dentro ciascun gruppo omogeneo della popolazione."
+    },
+    {
+     "domanda": "Un IC al 99% è più largo o più stretto di uno al 95%?",
+     "risposta": "Più largo."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "L'inferenza statistica richiede che il campione sia ottenuto con un meccanismo probabilistico noto. Il campionamento casuale semplice è il riferimento teorico; il sistematico (un'unità ogni k da una lista) è pratico ma rischioso se la lista ha periodicità; lo stratificato riduce la varianza delle stime quando gli strati sono internamente omogenei; quello a grappoli è economico ma, poiché le unità dello stesso grappolo si somigliano, ha un «effetto disegno» che aumenta l'errore standard. I campioni non probabilistici (di convenienza, per quote, volontari) non permettono di quantificare l'errore e sono esposti a distorsioni di selezione che un aumento di n non corregge. Negli studi clinici, per esempio, i pazienti di un singolo centro specialistico possono non rappresentare i pazienti della medicina generale.",
+    "Uno stimatore è una statistica usata per stimare un parametro. Le proprietà desiderate sono la non distorsione (il valore atteso coincide con il parametro), l'efficienza (varianza piccola) e la consistenza (converge al parametro al crescere di n). La media campionaria x̄ è non distorta per μ, con errore standard σ/√n; s² con divisore n − 1 è non distorta per σ²; la proporzione campionaria p̂ è non distorta per p con errore standard √(p(1 − p)/n). Per il teorema del limite centrale, x̄ e p̂ sono approssimativamente normali per n grande.",
+    "Un intervallo di confidenza ha la struttura generale «stima ± valore critico · errore standard». Se σ è nota si usa il quantile della normale z_(α/2) (1,96 al 95%); se σ è ignota e si stima con s, la statistica (x̄ − μ)/(s/√n) segue una t di Student con n − 1 gradi di libertà, che ha code più pesanti e produce intervalli più larghi: con n = 16 il valore critico al 95% è 2,131. Al crescere di n la t si avvicina alla normale. Per la differenza tra due medie, per esempio tra un gruppo trattato e uno di controllo, si usa la stessa logica con l'errore standard della differenza.",
+    "L'interpretazione corretta è frequentista: il parametro è fisso, l'intervallo è casuale, e il livello di confidenza 1 − α è la frazione di intervalli che, su infiniti campioni ripetuti, contengono il parametro. Una volta calcolato, un intervallo specifico o contiene il parametro o non lo contiene. L'ampiezza dipende da tre fattori: il livello di confidenza (più alto, più largo), la variabilità dei dati e la dimensione del campione, con un'ampiezza proporzionale a 1/√n. Nelle pubblicazioni scientifiche l'intervallo di confidenza è spesso più informativo del solo p-value, perché mostra sia la direzione sia l'entità plausibile dell'effetto.",
+    "In fase di progettazione si determina la dimensione campionaria necessaria per ottenere un margine di errore E prefissato. Per una proporzione n = z² p(1 − p)/E², usando p = 0,5 se non si ha un'idea del valore: con E = 3% al 95% servono 1068 soggetti. Per una media n = (zσ/E)², con σ stimata da studi pilota o dalla letteratura. Il risultato va sempre arrotondato per eccesso e, negli studi reali, aumentato per tener conto dei possibili abbandoni. Un campione troppo piccolo produce stime imprecise; uno inutilmente grande spreca risorse e, negli studi clinici, espone più persone del necessario."
+   ],
+   "metodo": [
+    "Per ogni intervallo scrivi lo schema: stimatore, errore standard, distribuzione (z o t con gradi di libertà), valore critico, estremi.",
+    "Decidi tra z e t con una sola domanda: σ è nota o stimata dal campione?",
+    "Simula con un foglio di calcolo 100 campioni e i relativi intervalli al 95%, contando quanti contengono la media vera.",
+    "Esercitati nel calcolo della dimensione campionaria per proporzioni e medie, arrotondando sempre per eccesso.",
+    "Leggi l'abstract di un articolo scientifico e interpreta gli intervalli di confidenza riportati.",
+    "Collega la mappa a «Test delle ipotesi»: un IC al 95% che non contiene il valore nullo corrisponde a un test significativo al 5%."
+   ],
+   "ricorda": [
+    "z se σ è nota, t con n − 1 gradi di libertà se è stimata.",
+    "Il parametro è fermo, l'intervallo si muove.",
+    "Margine 3% al 95% → circa mille intervistati.",
+    "Ampiezza ∝ 1/√n."
+   ],
+   "errori": [
+    "Dire «il parametro ha il 95% di probabilità di stare in questo intervallo» nell'impostazione frequentista.",
+    "Usare la normale invece della t con campioni piccoli e σ ignota.",
+    "Trascurare l'effetto disegno nei campioni a grappoli.",
+    "Calcolare la dimensione campionaria arrotondando per difetto.",
+    "Confondere errore standard e deviazione standard nel riportare i risultati."
+   ],
+   "domande": [
+    {
+     "domanda": "n = 9, x̄ = 20, s = 6, t(0,975; 8) = 2,306: qual è l'IC al 95%?",
+     "risposta": "Da 15,39 a 24,61: 20 ± 2,306 · 2."
+    },
+    {
+     "domanda": "Quanti soggetti servono per stimare una media con E = 2, σ = 10 al 95%?",
+     "risposta": "97: (1,96 · 10/2)² ≈ 96,04, arrotondato per eccesso."
+    },
+    {
+     "domanda": "Quale proprietà ha uno stimatore il cui valore atteso è uguale al parametro?",
+     "risposta": "È non distorto (corretto)."
+    },
+    {
+     "domanda": "Con p̂ = 0,2 e n = 100, quanto vale l'errore standard?",
+     "risposta": "0,04: √(0,2 · 0,8/100)."
+    },
+    {
+     "domanda": "Perché la t di Student ha code più pesanti della normale?",
+     "risposta": "Perché tiene conto dell'incertezza aggiuntiva dovuta alla stima di σ con s."
+    }
+   ]
+  }
+ },
+ "Test delle ipotesi": {
+  "superiore": {
+   "spiegazione": [
+    "Un test delle ipotesi è un procedimento per decidere, sulla base di un campione, se un'affermazione sulla popolazione è credibile. Si parte da un'ipotesi nulla H₀, che di solito afferma l'assenza di effetti o di differenze (per esempio «la moneta è regolare» o «il farmaco non funziona meglio del placebo»), e da un'ipotesi alternativa H₁, che rappresenta l'effetto che si vuole dimostrare. La logica è simile a quella di un processo: H₀ è considerata vera finché i dati non forniscono prove sufficienti contro di essa.",
+    "Dai dati si calcola una statistica test, che misura quanto il risultato osservato si allontana da ciò che H₀ prevede. Per una media con σ nota si usa z = (x̄ − μ₀)/(σ/√n). Se, per esempio, si ipotizza μ₀ = 50, con σ = 10 e un campione di 100 persone si osserva x̄ = 52, allora z = 2/1 = 2. Più la statistica è lontana da zero, più il risultato è sorprendente se H₀ è vera.",
+    "Il p-value è la probabilità di ottenere un risultato almeno così estremo come quello osservato, supponendo vera H₀. Se il p-value è minore o uguale al livello di significatività α, fissato prima dell'esperimento e di solito pari a 0,05, si rifiuta H₀ e si dice che il risultato è statisticamente significativo. In modo equivalente, si confronta la statistica con un valore critico: per un test bilaterale al 5% si rifiuta H₀ se |z| > 1,96. Nell'esempio precedente z = 2 supera 1,96, quindi si rifiuta H₀.",
+    "Ogni decisione può essere sbagliata. L'errore di I tipo consiste nel rifiutare H₀ quando è vera, come un allarme che suona senza motivo, e ha probabilità α. L'errore di II tipo consiste nel non rifiutare H₀ quando è falsa, come un allarme che non suona durante un furto, e ha probabilità β. La potenza del test, 1 − β, è la capacità di accorgersi di un effetto reale, e aumenta soprattutto con la dimensione del campione.",
+    "È importante interpretare bene i risultati. Non rifiutare H₀ non vuol dire averla dimostrata: forse i dati erano troppo pochi per vedere l'effetto. Allo stesso modo, un risultato significativo non è necessariamente importante: con campioni enormi anche differenze minime diventano significative. Infine, se si eseguono molti test, prima o poi qualcuno risulterà significativo per puro caso: con 20 test al 5%, la probabilità di almeno un falso positivo supera il 60%."
+   ],
+   "metodo": [
+    "Per ogni esercizio segui sempre cinque passi: ipotesi, livello α, statistica test, p-value o valore critico, conclusione a parole.",
+    "Scrivi la conclusione nel linguaggio del problema («i dati indicano che il farmaco riduce la pressione»), non solo «si rifiuta H₀».",
+    "Costruisci una tabella 2×2 con «H₀ vera / H₀ falsa» e «rifiuto / non rifiuto» e inserisci i due tipi di errore.",
+    "Esercitati con esempi di moneta e dado, in cui l'ipotesi nulla è intuitiva.",
+    "Leggi notizie di giornale su studi scientifici e chiediti quale fosse l'ipotesi nulla e se il risultato è anche importante."
+   ],
+   "ricorda": [
+    "«p piccolo, H₀ in castigo»: se p ≤ α si rifiuta H₀.",
+    "I tipo = falso allarme, II tipo = allarme mancato.",
+    "Bilaterale al 5%: il confine è 1,96.",
+    "Non rifiutare non è dimostrare."
+   ],
+   "errori": [
+    "Scrivere come ipotesi nulla ciò che si vuole dimostrare.",
+    "Interpretare il p-value come la probabilità che H₀ sia vera.",
+    "Dire «accetto H₀» come se fosse provata.",
+    "Confondere significatività statistica e importanza pratica."
+   ],
+   "domande": [
+    {
+     "domanda": "Con μ₀ = 70, σ = 12, n = 36 e x̄ = 74, quanto vale z?",
+     "risposta": "2: (74 − 70)/(12/6)."
+    },
+    {
+     "domanda": "Con p = 0,08 e α = 0,05, si rifiuta H₀?",
+     "risposta": "No, perché 0,08 > 0,05."
+    },
+    {
+     "domanda": "Come si chiama l'errore di non accorgersi di un effetto reale?",
+     "risposta": "Errore di II tipo."
+    },
+    {
+     "domanda": "Se β = 0,1, quanto vale la potenza?",
+     "risposta": "0,9."
+    },
+    {
+     "domanda": "Qual è l'ipotesi nulla per verificare se una moneta è truccata?",
+     "risposta": "Che la probabilità di testa sia 0,5."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Il test delle ipotesi secondo l'impostazione di Neyman e Pearson richiede di specificare H₀ e H₁, una statistica test con distribuzione nota sotto H₀ e un livello di significatività α che determina la regione di rifiuto. L'alternativa può essere bilaterale (μ ≠ μ₀) o unilaterale (μ > μ₀ oppure μ < μ₀); la scelta deve essere fatta prima di vedere i dati. Il p-value, introdotto da Fisher come misura continua dell'evidenza, è P(risultato almeno così estremo | H₀) e non va mai interpretato come P(H₀ | dati). Un p-value di 0,04 non significa che H₀ ha il 4% di probabilità di essere vera.",
+    "Gli errori di I e II tipo hanno probabilità α e β; la potenza 1 − β dipende dalla dimensione dell'effetto, dalla variabilità, dalla numerosità e da α. Ridurre α a parità di n aumenta β, quindi esiste un compromesso tra i due errori. Negli studi clinici si esegue un'analisi della potenza per stabilire quanti pazienti servono per rilevare un effetto clinicamente rilevante con una potenza, tipicamente, dell'80 o del 90%. Uno studio sottodimensionato ha poche probabilità di trovare effetti reali e, quando li trova, tende a sovrastimarli.",
+    "Per confrontare medie si usano il test z (σ nota) e il test t di Student (σ stimata). Il test t a un campione usa t = (x̄ − μ₀)/(s/√n) con n − 1 gradi di libertà. Per due gruppi indipendenti si usa il t con varianza comune o, se le varianze sono diverse, la versione di Welch; per misure ripetute sugli stessi soggetti si usa il test t appaiato sulle differenze, più potente perché elimina la variabilità tra individui. Per tre o più gruppi si usa l'ANOVA, che confronta con la statistica F la variabilità tra gruppi e quella entro i gruppi, seguita da test post hoc.",
+    "Per variabili qualitative si usano i test chi-quadrato. Il test di bontà dell'adattamento confronta le frequenze osservate con quelle attese da un modello, con k − 1 gradi di libertà; il test di indipendenza verifica l'associazione tra due variabili in una tabella di contingenza, con (r − 1)(c − 1) gradi di libertà. La statistica è χ² = Σ (O − A)²/A e l'approssimazione è affidabile se le frequenze attese sono almeno 5; altrimenti si usa il test esatto di Fisher. Quando le ipotesi di normalità non sono sostenibili si ricorre ai test non parametrici basati sui ranghi, come Mann-Whitney e Wilcoxon.",
+    "Un uso corretto dei test richiede attenzione a diversi problemi. Con molti confronti la probabilità di almeno un falso positivo cresce rapidamente (1 − 0,95^k), e si applicano correzioni come Bonferroni (α/k) o il controllo del false discovery rate negli studi genomici. La significatività va sempre accompagnata dalla dimensione dell'effetto e dal suo intervallo di confidenza: un IC al 95% che esclude il valore nullo equivale a un test bilaterale significativo al 5%, ma mostra anche l'entità plausibile dell'effetto. Pratiche come cambiare ipotesi, soglie o analisi dopo aver visto i dati («p-hacking») sono una delle cause della crisi di replicabilità in psicologia e biomedicina."
+   ],
+   "metodo": [
+    "Costruisci una tabella decisionale: tipo di variabile, numero di gruppi, dati indipendenti o appaiati, normalità → test da usare.",
+    "Per ogni test scrivi la statistica, la sua distribuzione sotto H₀ e i gradi di libertà.",
+    "Calcola a mano un test t a un campione e un χ² su una tabella 2×2, poi verifica con un software.",
+    "Esercitati a riformulare i risultati in termini di intervallo di confidenza e dimensione dell'effetto.",
+    "Analizza un articolo scientifico identificando ipotesi, test usati, p-value, potenza dichiarata e eventuali confronti multipli.",
+    "Collega la mappa a «Campionamento e intervalli di confidenza» e a «Regressione e correlazione» (test sulla pendenza)."
+   ],
+   "ricorda": [
+    "p-value: probabilità dei dati dato H₀, mai di H₀ dati i dati.",
+    "Stessi soggetti misurati due volte → test appaiato.",
+    "Tre o più gruppi → ANOVA, non tanti t.",
+    "χ²: attese almeno 5, altrimenti Fisher.",
+    "Bonferroni: α diviso il numero di test."
+   ],
+   "errori": [
+    "Scegliere un test unilaterale dopo aver visto la direzione dei dati.",
+    "Usare il t per campioni indipendenti su dati appaiati.",
+    "Eseguire molti test senza correzione e riportare solo quelli significativi.",
+    "Interpretare un p-value non significativo come prova di equivalenza.",
+    "Applicare il chi-quadrato con frequenze attese troppo piccole."
+   ],
+   "domande": [
+    {
+     "domanda": "n = 16, x̄ = 53, s = 8, μ₀ = 50: quanto vale t e con quanti gradi di libertà?",
+     "risposta": "t = 1,5 con 15 gradi di libertà: 3/(8/4)."
+    },
+    {
+     "domanda": "Qual è la soglia di Bonferroni per 10 test con α globale 0,05?",
+     "risposta": "0,005."
+    },
+    {
+     "domanda": "Quanti gradi di libertà ha un χ² di indipendenza su una tabella 2×2?",
+     "risposta": "1."
+    },
+    {
+     "domanda": "Quale test si usa per confrontare tre diete sullo stesso esito continuo?",
+     "risposta": "L'ANOVA a una via, seguita da test post hoc se significativa."
+    },
+    {
+     "domanda": "Perché uno studio con bassa potenza è problematico anche quando trova un effetto?",
+     "risposta": "Perché gli effetti trovati tendono a essere sovrastimati e i risultati sono poco replicabili."
+    }
+   ]
+  }
+ },
+ "Regressione e correlazione": {
+  "superiore": {
+   "spiegazione": [
+    "Spesso interessa capire se due grandezze misurate sugli stessi individui sono legate tra loro: le ore di studio e il voto, l'altezza e il peso, l'età e la pressione arteriosa. Il primo strumento è il diagramma di dispersione, in cui ogni individuo è rappresentato da un punto con coordinate (x, y). Se la nuvola di punti sale da sinistra a destra la relazione è positiva, se scende è negativa; se i punti sono sparsi senza direzione non c'è relazione evidente. Il grafico permette anche di scoprire valori anomali e relazioni curve.",
+    "La forza della relazione lineare si misura con il coefficiente di correlazione di Pearson, r, che va da −1 a +1. Un valore vicino a +1 indica che i punti stanno quasi su una retta crescente, vicino a −1 su una retta decrescente, vicino a 0 che non c'è relazione lineare. Per esempio, tra altezza e numero di scarpe di un gruppo di ragazzi si trova di solito un r intorno a 0,8. Il coefficiente r non dipende dalle unità di misura: misurare l'altezza in metri o in centimetri non lo cambia.",
+    "Quando la relazione è lineare, la si può descrivere con una retta di regressione ŷ = a + bx. La pendenza b indica di quanto cambia in media y quando x aumenta di un'unità; l'intercetta a è il valore previsto per x = 0. Se, per esempio, ŷ = 2 + 0,5x lega le ore di studio settimanali al voto, ogni ora in più vale in media mezzo punto, e chi studia 10 ore ha un voto previsto di 7. La retta si calcola con il metodo dei minimi quadrati, che rende minima la somma dei quadrati delle distanze verticali tra i punti e la retta.",
+    "La differenza tra il valore osservato e quello previsto dalla retta si chiama residuo: se uno studente che studia 10 ore prende 9, il suo residuo è 9 − 7 = 2. I residui mostrano quanto la retta si adatta ai dati. Bisogna però usare la retta con prudenza: le previsioni sono affidabili solo nell'intervallo di valori osservati. Usare una retta costruita su bambini di 2-10 anni per prevedere il peso di un adulto è un'estrapolazione che porta a risultati assurdi.",
+    "L'errore più importante da evitare è confondere correlazione e causalità. Il fatto che due grandezze varino insieme non significa che una causi l'altra: spesso entrambe dipendono da una terza variabile, detta confondente. Le vendite di gelati e gli annegamenti crescono insieme, ma la causa comune è il caldo estivo. Per dimostrare un rapporto di causa ed effetto servono esperimenti controllati, in cui si modifica una variabile tenendo fisse le altre."
+   ],
+   "metodo": [
+    "Disegna sempre il diagramma di dispersione prima di calcolare r o la retta.",
+    "Per stimare r a occhio, esercitati con nuvole di punti diverse e confronta la tua stima con il calcolo.",
+    "Per ogni retta di regressione scrivi a parole il significato della pendenza nel contesto del problema.",
+    "Calcola i residui di alcuni punti e segnali sul grafico come segmenti verticali.",
+    "Per ogni correlazione trovata in un articolo di giornale, cerca una possibile variabile confondente."
+   ],
+   "ricorda": [
+    "Il segno di r dice la direzione, il valore assoluto la forza.",
+    "Residuo = osservato − previsto.",
+    "Correlazione non è causalità: cerca la terza variabile.",
+    "La retta vale dentro i dati, fuori è un azzardo."
+   ],
+   "errori": [
+    "Pensare che r = −0,9 indichi una relazione debole.",
+    "Dimenticare l'intercetta quando si fa una previsione con la retta.",
+    "Concludere che una variabile causa l'altra solo perché sono correlate.",
+    "Usare la retta per prevedere valori molto lontani dall'intervallo dei dati."
+   ],
+   "domande": [
+    {
+     "domanda": "Con la retta ŷ = 10 + 3x, quale valore si prevede per x = 4?",
+     "risposta": "22: 10 + 3 · 4."
+    },
+    {
+     "domanda": "Se il valore osservato per x = 4 è 20, quanto vale il residuo?",
+     "risposta": "−2: 20 − 22."
+    },
+    {
+     "domanda": "Cosa indica un r vicino a 0?",
+     "risposta": "Che non c'è una relazione lineare tra le due variabili."
+    },
+    {
+     "domanda": "Altitudine e temperatura sono correlate positivamente o negativamente?",
+     "risposta": "Negativamente: salendo di quota la temperatura scende."
+    },
+    {
+     "domanda": "Quale grafico usi per vedere la relazione tra due variabili quantitative?",
+     "risposta": "Il diagramma di dispersione."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Lo studio della relazione tra due variabili quantitative parte dalla covarianza, s_xy = Σ(x − x̄)(y − ȳ)/(n − 1), che è positiva quando gli scarti dalle medie tendono ad avere lo stesso segno. Poiché dipende dalle unità di misura, la si normalizza ottenendo il coefficiente di Pearson r = s_xy/(s_x s_y), compreso tra −1 e +1 e invariante per cambi di scala e di origine. Il coefficiente misura solo la relazione lineare: relazioni curve possono dare r ≈ 0, e un singolo punto influente può alterarlo profondamente. Per dati ordinali o relazioni monotone non lineari si usa il coefficiente di Spearman, calcolato sui ranghi.",
+    "Il modello di regressione lineare semplice è y = β₀ + β₁x + ε, dove ε è un errore casuale. Le stime dei minimi quadrati, che minimizzano Σ(y − ŷ)², sono b = s_xy/s_x² = r · s_y/s_x e a = ȳ − b x̄; la retta passa quindi sempre per il punto delle medie. I residui e = y − ŷ hanno somma zero. Per esempio, con r = 0,6, s_x = 4, s_y = 10, x̄ = 20 e ȳ = 50 si ottiene ŷ = 20 + 1,5x.",
+    "La variabilità totale di y si scompone in una parte spiegata dalla retta e una residua: SST = SSR + SSE. Il rapporto R² = SSR/SST, che nella regressione semplice coincide con r², indica la quota di varianza di y spiegata da x: con r = 0,8 è il 64%. L'inferenza sulla pendenza si basa sul test t per H₀: β₁ = 0, con n − 2 gradi di libertà, e sull'intervallo di confidenza per β₁. Questo test equivale al test di significatività di r.",
+    "Le conclusioni inferenziali sono valide se gli errori sono indipendenti, con media zero, varianza costante (omoschedasticità) e, per piccoli campioni, distribuzione normale. Queste ipotesi si controllano con i grafici dei residui: un andamento a imbuto segnala varianza non costante, una curva segnala che la relazione non è lineare. Va ricordato che la regressione di y su x e quella di x su y danno rette diverse, pur con lo stesso r, perché minimizzano errori in direzioni diverse. Francis Galton, studiando l'altezza di padri e figli, osservò che i figli di padri molto alti tendono a essere meno estremi: è la regressione verso la media, da cui il metodo prende il nome.",
+    "Il limite più importante è che correlazione e regressione descrivono associazioni, non relazioni causali. Le associazioni osservate in studi osservazionali possono essere prodotte da variabili confondenti, da causalità inversa o da distorsioni di selezione; per stabilire la causalità servono studi sperimentali randomizzati o modelli che controllino i confondenti. La regressione multipla estende il modello a più predittori, stimando l'effetto di ciascuno a parità degli altri, e la regressione logistica tratta esiti binari come malato/sano. Infine, le previsioni vanno limitate all'intervallo dei dati, perché l'estrapolazione presuppone che la relazione resti lineare dove non è stata osservata."
+   ],
+   "metodo": [
+    "Calcola a mano r e la retta per un piccolo insieme di 5 punti con il metodo delle colonne (scarti, prodotti, quadrati).",
+    "Controlla sempre che la retta passi per (x̄, ȳ).",
+    "Per ogni regressione costruisci il grafico dei residui contro i valori previsti e descrivi cosa vedi.",
+    "Sperimenta con un foglio di calcolo l'effetto di un punto anomalo su r e sulla pendenza.",
+    "Leggi studi osservazionali e individua per ciascuno almeno un possibile confondente.",
+    "Collega la mappa a «Test delle ipotesi» (test t sulla pendenza) e a «Statistica descrittiva» (covarianza come estensione della varianza)."
+   ],
+   "ricorda": [
+    "b = r · s_y / s_x: la pendenza è r «ritradotto» nelle unità di misura.",
+    "R² = r² nella regressione semplice.",
+    "Test sulla pendenza: t con n − 2 gradi di libertà.",
+    "Residui a imbuto = varianza non costante."
+   ],
+   "errori": [
+    "Interpretare r come percentuale di varianza spiegata invece di r².",
+    "Usare Pearson su relazioni chiaramente non lineari o su dati ordinali.",
+    "Ottenere la retta di x su y invertendo semplicemente quella di y su x.",
+    "Trarre conclusioni causali da dati osservazionali senza considerare i confondenti.",
+    "Ignorare i punti influenti e i grafici dei residui."
+   ],
+   "domande": [
+    {
+     "domanda": "s_xy = 12, s_x = 3, s_y = 5: quanto vale r?",
+     "risposta": "0,8: 12/(3 · 5)."
+    },
+    {
+     "domanda": "Con i dati precedenti, quanto vale la pendenza di y su x?",
+     "risposta": "4/3 ≈ 1,33: s_xy/s_x² = 12/9."
+    },
+    {
+     "domanda": "Se R² = 0,25, quanto può valere r?",
+     "risposta": "0,5 oppure −0,5, a seconda del segno della pendenza."
+    },
+    {
+     "domanda": "Quanti gradi di libertà ha il test t sulla pendenza con n = 20?",
+     "risposta": "18."
+    },
+    {
+     "domanda": "Che cos'è la regressione verso la media?",
+     "risposta": "La tendenza dei valori estremi in una misura a essere seguiti, in una seconda misura correlata, da valori più vicini alla media."
+    }
+   ]
+  }
+ }
+}

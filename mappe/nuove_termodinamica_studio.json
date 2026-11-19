@@ -1,0 +1,631 @@
+{
+ "Primo principio della termodinamica": {
+  "superiore": {
+   "spiegazione": [
+    "La termodinamica studia come l'energia passa da un corpo all'altro sotto forma di calore e di lavoro. Il sistema è la porzione di materia che osserviamo (per esempio il gas in un cilindro), tutto il resto è l'ambiente. Ogni sistema possiede un'energia interna U, cioè la somma delle energie delle sue molecole. Il calore Q è energia che passa per una differenza di temperatura, il lavoro L è energia che passa quando una forza sposta qualcosa, come un pistone. Calore e lavoro quindi non sono «posseduti» dal sistema: sono energia in viaggio.",
+    "Il primo principio è la conservazione dell'energia applicata a questi scambi: ΔU = Q − L. Si usa la convenzione per cui Q è positivo se il sistema assorbe calore e L è positivo se il sistema compie lavoro sull'ambiente, per esempio espandendosi. Se un gas riceve 500 J di calore e compie 200 J di lavoro, la sua energia interna cresce di 300 J. Se invece viene compresso, il lavoro è negativo e l'energia interna tende ad aumentare. Prima di fare i conti conviene sempre chiedersi se l'energia entra o esce.",
+    "Il legame tra calore e lavoro fu dimostrato da Joule con un mulinello che, girando nell'acqua grazie a un peso che scendeva, la scaldava. Trovò che 1 cal corrisponde a circa 4,186 J: calore e lavoro sono la stessa grandezza misurata in unità diverse. Per scaldare un corpo senza cambiarne lo stato serve Q = m·c·ΔT, dove c è il calore specifico. L'acqua ha c ≈ 4186 J/(kg·K), un valore molto alto: per questo i mari mitigano il clima delle coste.",
+    "Per un gas il lavoro dipende da come cambia il volume. A pressione costante vale L = p·ΔV; più in generale, nel piano p-V il lavoro è l'area sotto la curva della trasformazione. Se il gas si espande il lavoro è positivo, se viene compresso è negativo. Per un ciclo, cioè una sequenza di trasformazioni che riporta il gas allo stato iniziale, il lavoro netto è l'area racchiusa dal ciclo.",
+    "Applicare il primo principio alle trasformazioni più semplici dà risultati molto utili. In un'isocora il volume non cambia, quindi L = 0 e ΔU = Q. In un'isoterma di un gas ideale la temperatura non cambia, quindi ΔU = 0 e Q = L: il calore entra e diventa tutto lavoro. In un'adiabatica non c'è calore, quindi ΔU = −L: se il gas si espande si raffredda, se viene compresso si scalda, come succede in una pompa da bicicletta. In un ciclo ΔU = 0 e quindi il calore netto è uguale al lavoro netto."
+   ],
+   "metodo": [
+    "Scrivi su un foglio la formula ΔU = Q − L e accanto una tabella dei segni: Q > 0 assorbito, Q < 0 ceduto, L > 0 fatto dal gas, L < 0 subito.",
+    "Per ogni esercizio individua prima il tipo di trasformazione (isocora, isobara, isoterma, adiabatica, ciclo) e scrivi che cosa vale zero.",
+    "Disegna sempre il grafico p-V: l'area sotto la curva ti dice il segno e la grandezza del lavoro.",
+    "Converti le unità prima di calcolare: volumi in m³, pressioni in Pa, temperature in K, così il risultato esce in joule.",
+    "Fai almeno 8 esercizi di bilancio energetico cambiando i segni di Q e L, controllando ogni volta se il risultato ha senso fisico.",
+    "Collega il capitolo a «Gas ideali e trasformazioni» e a «Cicli termodinamici», dove le stesse regole si usano su più passaggi."
+   ],
+   "ricorda": [
+    "«Il gas spende quando spinge»: se si espande, L è positivo ed esce energia.",
+    "Isocora: niente lavoro; isoterma: niente ΔU; adiabatica: niente calore; ciclo: niente ΔU.",
+    "1 cal ≈ 4,2 J e 1 kcal ≈ 4200 J."
+   ],
+   "errori": [
+    "Sommare calore e lavoro senza badare al verso: ΔU = Q − L, non Q + L con la convenzione usata.",
+    "Pensare che adiabatico voglia dire temperatura costante: nell'adiabatica la temperatura cambia proprio perché non c'è calore.",
+    "Calcolare p·V al posto di p·ΔV per il lavoro isobaro.",
+    "Dire che un corpo «contiene calore»: contiene energia interna, il calore è solo energia in transito."
+   ],
+   "domande": [
+    {
+     "domanda": "Un gas assorbe 400 J e compie 150 J di lavoro. Quanto vale ΔU?",
+     "risposta": "+250 J: ΔU = 400 − 150."
+    },
+    {
+     "domanda": "In una trasformazione isocora un gas riceve 600 J. Quanto lavoro compie?",
+     "risposta": "Zero: il volume non cambia, quindi tutto il calore aumenta U."
+    },
+    {
+     "domanda": "Perché la pompa della bicicletta si scalda?",
+     "risposta": "Perché l'aria viene compressa quasi adiabaticamente: il lavoro fatto sul gas aumenta la sua energia interna e la sua temperatura."
+    },
+    {
+     "domanda": "Quanto lavoro fa un gas che si espande di 0,02 m³ a 1,5·10⁵ Pa costanti?",
+     "risposta": "3000 J: L = p·ΔV = 1,5·10⁵ · 0,02."
+    },
+    {
+     "domanda": "Quanto vale ΔU dopo un ciclo completo?",
+     "risposta": "Zero, perché il gas torna allo stato iniziale e U è una funzione di stato."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Il primo principio per un sistema chiuso si scrive in forma differenziale dU = δQ − δL. L'energia interna U è una funzione di stato e dU è un differenziale esatto: la sua variazione dipende solo dagli stati iniziale e finale. Calore e lavoro invece dipendono dal percorso, per questo si indicano con δ. Ne segue che due trasformazioni diverse tra gli stessi stati hanno lo stesso ΔU ma possono avere Q e L molto diversi, come si vede confrontando le aree nel piano p-V.",
+    "Il lavoro di espansione reversibile è L = ∫p dV e si calcola integrando lungo la trasformazione. Per un'isoterma di gas ideale p = nRT/V e quindi L = nRT·ln(V₂/V₁): un raddoppio di volume di una mole a 300 K produce circa 1,73 kJ. Per un'adiabatica reversibile L = (p₁V₁ − p₂V₂)/(γ − 1) = n·c_v·(T₁ − T₂). Nell'espansione libera di Joule il gas non incontra resistenza, quindi L = 0, Q = 0 e, per un gas ideale, la temperatura non cambia: è la prova che U dipende solo da T.",
+    "Conviene introdurre l'entalpia H = U + pV, anch'essa funzione di stato. A volume costante il calore scambiato è Q_v = ΔU, a pressione costante è Q_p = ΔH. Da qui nascono i calori specifici c_v = (∂u/∂T)_v e c_p = (∂h/∂T)_p. Per un gas ideale ΔU = n·c_v·ΔT e ΔH = n·c_p·ΔT per qualunque trasformazione, e vale la relazione di Mayer c_p − c_v = R. Per un monoatomico c_v = 3R/2, per un biatomico a temperatura ambiente c_v = 5R/2.",
+    "In ingegneria i sistemi sono spesso aperti: un fluido entra ed esce da turbine, compressori, pompe, scambiatori. In regime stazionario il bilancio per unità di massa è q − l = Δh + Δ(v²/2) + gΔz. Il termine p·v, il lavoro necessario per spingere il fluido dentro e fuori, è già contenuto nell'entalpia: per questo nei sistemi aperti si usa h e non u. La potenza si ottiene moltiplicando per la portata: P = ṁ·l.",
+    "Questa equazione si specializza facilmente. In una turbina o un compressore adiabatici l = h₁ − h₂; in uno scambiatore senza lavoro q = h₂ − h₁; in una valvola di laminazione q = 0 e l = 0, quindi h₁ = h₂; in un ugello la diminuzione di entalpia diventa energia cinetica. Per esempio, una turbina con h₁ = 3200 kJ/kg, h₂ = 2600 kJ/kg e ṁ = 5 kg/s produce 3 MW. Il primo principio però non dice in che verso avvengono i processi: per questo serve il secondo principio."
+   ],
+   "metodo": [
+    "Definisci sempre il sistema e il suo confine, e decidi se è chiuso o aperto prima di scegliere la forma del bilancio.",
+    "Ricava da solo L = nRT·ln(V₂/V₁) e L = n·c_v·(T₁ − T₂) partendo da L = ∫p dV: capirai da dove vengono le formule.",
+    "Prepara una tabella con le quattro trasformazioni del gas ideale e, per ciascuna, Q, L, ΔU e ΔH.",
+    "Per i sistemi aperti scrivi il bilancio completo e cancella esplicitamente i termini trascurabili (q, l, Δv², Δz), motivando ogni scelta.",
+    "Esercitati con le tabelle del vapore: leggi h in ingresso e uscita di una turbina e calcola la potenza.",
+    "Collega il capitolo al secondo principio: il primo principio dice quanto, il secondo dice se e in che verso."
+   ],
+   "ricorda": [
+    "U e H sono funzioni di stato, Q e L no.",
+    "Sistema chiuso → u; sistema aperto → h (contiene il lavoro di pulsione p·v).",
+    "Q_v = ΔU, Q_p = ΔH; c_p − c_v = R.",
+    "Laminazione = isoentalpica; turbina adiabatica: l = h₁ − h₂."
+   ],
+   "errori": [
+    "Usare p·ΔV per un'isoterma, dove la pressione cambia: serve l'integrale con il logaritmo.",
+    "Usare l'energia interna al posto dell'entalpia nel bilancio dei sistemi aperti.",
+    "Usare c_p per calcolare ΔU di un gas ideale: ΔU = n·c_v·ΔT in ogni trasformazione.",
+    "Dimenticare il segno del lavoro di compressione, che nel bilancio è negativo.",
+    "Credere che ΔH = Q valga sempre: vale solo a pressione costante e senza altri lavori."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto lavoro fanno 2 mol di gas ideale a 400 K che triplicano il volume in modo isotermo?",
+     "risposta": "Circa 7,3 kJ: L = 2 · 8,314 · 400 · ln 3."
+    },
+    {
+     "domanda": "Perché nell'espansione libera di un gas ideale la temperatura non cambia?",
+     "risposta": "Perché Q = 0 e L = 0, quindi ΔU = 0, e U dipende solo da T."
+    },
+    {
+     "domanda": "Quanto vale ΔH per 1 mol di gas biatomico scaldata di 50 K?",
+     "risposta": "Circa 1,45 kJ: c_p = 7R/2, ΔH = 3,5 · 8,314 · 50."
+    },
+    {
+     "domanda": "Un compressore adiabatico porta l'aria da h₁ = 300 kJ/kg a h₂ = 580 kJ/kg con portata 2 kg/s. Che potenza assorbe?",
+     "risposta": "560 kW: l = h₁ − h₂ = −280 kJ/kg, P = 2 · 280."
+    },
+    {
+     "domanda": "Che cosa resta costante in una valvola di laminazione?",
+     "risposta": "L'entalpia: q = 0, l = 0 e variazioni cinetiche trascurabili danno h₁ = h₂."
+    }
+   ]
+  }
+ },
+ "Secondo principio ed entropia": {
+  "superiore": {
+   "spiegazione": [
+    "Il primo principio dice che l'energia si conserva, ma non spiega perché certi fenomeni avvengono solo in un verso. Una tazza di tè si raffredda da sola, ma non si riscalda mai da sola prendendo calore dall'aria più fredda. Il secondo principio descrive proprio questo verso naturale dei processi. Clausius lo enunciò così: il calore non può passare spontaneamente da un corpo più freddo a uno più caldo. Per farlo serve spendere lavoro, come fa il frigorifero.",
+    "Kelvin e Planck diedero un enunciato equivalente pensando ai motori: è impossibile costruire una macchina ciclica che trasformi in lavoro tutto il calore preso da una sola sorgente. Una macchina termica deve sempre lavorare tra una sorgente calda e una fredda, cedendo a quest'ultima una parte del calore. Il rendimento è η = L/Q_c = 1 − Q_f/Q_c. Se un motore assorbe 1000 J e ne cede 700, produce 300 J di lavoro e ha un rendimento del 30%.",
+    "Carnot dimostrò che il rendimento massimo possibile tra due temperature è η = 1 − T_f/T_c, con le temperature in kelvin. Tra 600 K e 300 K nessuna macchina può superare il 50%. Questo limite non dipende dalla bravura dei costruttori: è una legge di natura. Se qualcuno dichiara un motore con rendimento superiore a quello di Carnot, sta dichiarando qualcosa di impossibile.",
+    "Per descrivere il secondo principio con una grandezza si usa l'entropia S. Quando un sistema riceve un calore Q in modo reversibile alla temperatura T, la sua entropia cresce di ΔS = Q/T, misurata in J/K. Per esempio, 1 kg di ghiaccio che fonde a 273 K assorbe 334 kJ e la sua entropia aumenta di circa 1,22 kJ/K. Il secondo principio dice che l'entropia di un sistema isolato non diminuisce mai: aumenta nei processi reali e resta costante solo in quelli ideali reversibili.",
+    "Intuitivamente l'entropia misura il disordine, o meglio il numero di modi in cui le particelle possono disporsi. Un gas che si espande, un solido che fonde, il calore che passa dal caldo al freddo: sono tutti processi in cui l'entropia totale cresce. L'entropia di una parte può diminuire, come nell'interno del frigorifero, ma solo se aumenta di più quella dell'ambiente. Frigoriferi e pompe di calore si valutano con il COP: un frigorifero che estrae 600 J spendendo 200 J ha COP = 3."
+   ],
+   "metodo": [
+    "Impara i due enunciati del secondo principio con un esempio concreto ciascuno: la tazza che si raffredda e il motore dell'auto che ha bisogno del radiatore.",
+    "Converti sempre le temperature in kelvin prima di usare la formula di Carnot: scrivi la conversione come primo passaggio.",
+    "Fai una tabella con rendimento del motore, COP del frigorifero e COP della pompa di calore, scrivendo per ciascuno «che cosa ottengo / che cosa pago».",
+    "Calcola l'entropia in casi semplici: fusione, ebollizione, calore che passa tra due sorgenti.",
+    "Verifica ogni risultato chiedendoti se l'entropia totale aumenta: se diminuisce, c'è un errore.",
+    "Collega il capitolo a «Cicli termodinamici e macchine termiche», dove Carnot fa da riferimento per tutti i motori."
+   ],
+   "ricorda": [
+    "«Il calore scende da solo, per salire va spinto»: Clausius.",
+    "Carnot: η = 1 − T_f/T_c, sempre in kelvin.",
+    "Entropia: ΔS = Q/T; nell'universo può solo crescere.",
+    "COP = quello che ottieni diviso quello che paghi."
+   ],
+   "errori": [
+    "Usare i gradi Celsius nella formula di Carnot.",
+    "Pensare che il secondo principio vieti al calore di andare dal freddo al caldo in ogni caso: lo vieta solo spontaneamente, senza lavoro.",
+    "Credere che un COP maggiore di 1 sia impossibile: il frigorifero sposta calore, non lo crea.",
+    "Dire che l'entropia di un sistema non può mai diminuire: vale solo per sistemi isolati."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è il rendimento massimo tra 500 K e 300 K?",
+     "risposta": "40%: η = 1 − 300/500."
+    },
+    {
+     "domanda": "Un motore assorbe 2000 J e produce 500 J di lavoro. Quanto calore cede e qual è il rendimento?",
+     "risposta": "Cede 1500 J; rendimento 25%."
+    },
+    {
+     "domanda": "Perché un frigorifero acceso con lo sportello aperto non raffredda la cucina?",
+     "risposta": "Perché cede alla cucina il calore estratto più il lavoro elettrico: nel complesso la cucina si scalda."
+    },
+    {
+     "domanda": "Quanto aumenta l'entropia di 2 kg di ghiaccio che fondono a 273 K (L_f = 334 kJ/kg)?",
+     "risposta": "Circa 2,45 kJ/K: ΔS = 668 000/273."
+    },
+    {
+     "domanda": "Che cosa misura il COP di una pompa di calore?",
+     "risposta": "Il calore fornito all'ambiente caldo diviso il lavoro elettrico speso."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "I due enunciati classici del secondo principio, di Clausius e di Kelvin-Planck, sono equivalenti: si dimostra che se uno fosse violato lo sarebbe anche l'altro, accoppiando una macchina «impossibile» con una normale. Il teorema di Carnot afferma che tutte le macchine reversibili che operano tra le stesse due sorgenti hanno lo stesso rendimento, e che nessuna macchina irreversibile può superarlo. Poiché il rendimento reversibile dipende solo dalle temperature, si può definire una scala termodinamica assoluta ponendo Q_c/Q_f = T_c/T_f. Ne segue η_C = 1 − T_f/T_c.",
+    "Dalla relazione Q_c/T_c = Q_f/T_f valida per il ciclo di Carnot si arriva, scomponendo un ciclo qualsiasi in tanti cicli di Carnot elementari, alla disuguaglianza di Clausius: ∮δQ/T ≤ 0, con l'uguaglianza solo per i cicli reversibili. L'uguaglianza implica che δQ_rev/T è un differenziale esatto: si definisce così l'entropia, dS = δQ_rev/T, funzione di stato. Per un processo qualsiasi vale dS = δQ/T + δS_gen, dove S_gen ≥ 0 è l'entropia generata dalle irreversibilità (attriti, scambi con differenze di temperatura finite, mescolamenti).",
+    "Poiché S è funzione di stato, ΔS si calcola lungo un percorso reversibile immaginario tra gli stessi stati. Per un solido o un liquido ΔS = m·c·ln(T₂/T₁); per un cambiamento di fase ΔS = L/T; per un gas ideale ΔS = n·c_v·ln(T₂/T₁) + nR·ln(V₂/V₁). Un'adiabatica reversibile è isoentropica, mentre un'adiabatica con attriti fa crescere S. Nel piano T-s l'area sotto una trasformazione reversibile è il calore scambiato, e un ciclo di Carnot appare come un rettangolo.",
+    "Per un sistema isolato, o per l'universo (sistema più ambiente), vale ΔS ≥ 0: è il principio dell'aumento dell'entropia. Se un calore Q passa per conduzione da una sorgente a T₁ a una a T₂ < T₁, l'entropia dell'universo cresce di Q(1/T₂ − 1/T₁). L'entropia generata misura quanto lavoro si è perso: il lavoro perso, o exergia distrutta, vale T₀·S_gen, dove T₀ è la temperatura dell'ambiente. Questo collega il secondo principio all'analisi dell'efficienza degli impianti.",
+    "Boltzmann interpretò l'entropia in modo statistico: S = k·ln W, dove W è il numero di microstati compatibili con il macrostato. I processi spontanei vanno verso i macrostati con più microstati, semplicemente perché sono enormemente più probabili. Il terzo principio fissa lo zero: per un cristallo perfetto a 0 K c'è un solo microstato e S = 0, il che permette di tabulare entropie assolute. Per le macchine inverse i COP ideali sono COP_f = T_f/(T_c − T_f) e COP_pdc = T_c/(T_c − T_f): tra 270 K e 300 K una pompa di calore ideale ha COP = 10."
+   ],
+   "metodo": [
+    "Ricostruisci la dimostrazione dell'equivalenza tra Clausius e Kelvin-Planck con un disegno di due macchine accoppiate.",
+    "Per calcolare ΔS scegli sempre un percorso reversibile tra gli stessi stati, anche se il processo reale è irreversibile.",
+    "Nei problemi con più corpi calcola separatamente ΔS di ogni parte e dell'ambiente, poi somma e verifica che il totale sia ≥ 0.",
+    "Disegna i cicli nel piano T-s accanto al piano p-V e confronta le aree.",
+    "Calcola il lavoro perso T₀·S_gen in un esempio di scambio termico con ΔT finito.",
+    "Collega il capitolo a «Termodinamica chimica», dove l'entropia entra nell'energia libera di Gibbs."
+   ],
+   "ricorda": [
+    "dS = δQ_rev/T; per un processo reale dS = δQ/T + δS_gen, con S_gen ≥ 0.",
+    "Adiabatica reversibile = isoentropica.",
+    "ΔS_universo ≥ 0: il segno uguale solo per l'ideale reversibile.",
+    "S = k·ln W: più microstati, più entropia."
+   ],
+   "errori": [
+    "Calcolare ΔS di un processo irreversibile come ∫δQ/T lungo il percorso reale: si deve usare un percorso reversibile.",
+    "Pensare che un'isoterma sia isoentropica: un gas ideale che si espande isotermicamente aumenta la sua entropia.",
+    "Confondere ∮dS = 0 (sempre, S è funzione di stato) con ∮δQ/T ≤ 0.",
+    "Applicare ΔS ≥ 0 a un sistema non isolato senza considerare l'ambiente.",
+    "Scambiare COP del frigorifero e della pompa di calore: differiscono di 1."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale ΔS di 1 mol di gas ideale che si espande liberamente da V a 3V?",
+     "risposta": "Circa 9,13 J/K: ΔS = R·ln 3, calcolato su un'isoterma reversibile."
+    },
+    {
+     "domanda": "Quanto varia l'entropia di 2 kg d'acqua scaldati da 300 K a 360 K (c = 4186 J/(kg·K))?",
+     "risposta": "Circa 1,53 kJ/K: 2 · 4186 · ln(1,2)."
+    },
+    {
+     "domanda": "1000 J passano da 500 K a 250 K. Quanta entropia si genera?",
+     "risposta": "+2 J/K: 1000/250 − 1000/500."
+    },
+    {
+     "domanda": "Con T₀ = 300 K, quanto lavoro si perde nel caso precedente?",
+     "risposta": "600 J: T₀·S_gen = 300 · 2."
+    },
+    {
+     "domanda": "Qual è il COP ideale di un frigorifero tra 260 K e 300 K?",
+     "risposta": "6,5: 260/40."
+    }
+   ]
+  }
+ },
+ "Gas ideali e trasformazioni": {
+  "superiore": {
+   "spiegazione": [
+    "Un gas è descritto da poche grandezze, dette variabili di stato: pressione p, volume V, temperatura T e quantità di sostanza n (in moli). Nelle leggi dei gas la temperatura va sempre espressa in kelvin, T = t + 273,15. Lo zero assoluto, 0 K = −273,15 °C, è la temperatura più bassa possibile. Il modello del gas ideale funziona bene per i gas reali a pressioni non troppo alte e temperature non troppo basse, come l'aria nelle condizioni di tutti i giorni.",
+    "Le tre leggi storiche dei gas descrivono trasformazioni in cui una variabile resta fissa. La legge di Boyle (temperatura costante) dice che pV è costante: se il volume si dimezza la pressione raddoppia. La prima legge di Gay-Lussac (pressione costante) dice che V/T è costante: un palloncino scaldato si gonfia. La seconda legge di Gay-Lussac (volume costante) dice che p/T è costante: per questo una bomboletta al sole può diventare pericolosa.",
+    "Le tre leggi si riassumono nell'equazione di stato dei gas ideali pV = nRT, con R = 8,314 J/(mol·K). Usando il pascal per la pressione e il metro cubo per il volume si ottengono risultati coerenti. Per esempio 0,5 mol a 300 K in 10 litri (0,010 m³) esercitano circa 1,25·10⁵ Pa. A 0 °C e 1 atm una mole di qualunque gas ideale occupa 22,4 L, indipendentemente dal tipo di gas.",
+    "Oltre alle trasformazioni con una variabile costante esiste l'adiabatica, in cui il gas non scambia calore. In una compressione adiabatica il gas si scalda, in un'espansione adiabatica si raffredda: è ciò che succede con l'aria che esce da una bomboletta spray o che sale lungo una montagna formando nuvole. Nel piano p-V l'adiabatica è più ripida dell'isoterma. Nelle miscele di gas vale la legge di Dalton: la pressione totale è la somma delle pressioni parziali, e quella dell'ossigeno nell'aria è circa il 21% della pressione atmosferica.",
+    "La teoria cinetica spiega queste leggi a partire dalle molecole. La pressione nasce dagli urti delle molecole contro le pareti, e la temperatura misura la loro energia cinetica media, che vale (3/2)k·T. Se si scalda un gas le molecole vanno più veloci e urtano più spesso e più forte, quindi la pressione cresce. Le molecole dell'aria a temperatura ambiente si muovono in media a circa 500 m/s, ma percorrono tratti brevissimi tra un urto e l'altro."
+   ],
+   "metodo": [
+    "Prepara una tabella con le quattro trasformazioni (isoterma, isobara, isocora, adiabatica): variabile costante, legge, forma del grafico p-V.",
+    "Converti sempre le temperature in kelvin e scrivi la conversione come primo passaggio di ogni esercizio.",
+    "Negli esercizi con pV = nRT controlla che le unità siano Pa, m³, mol e K.",
+    "Risolvi problemi con due stati usando p₁V₁/T₁ = p₂V₂/T₂ e semplifica ciò che resta costante.",
+    "Disegna le isoterme nel piano p-V a temperature diverse: quella più lontana dagli assi è la più calda.",
+    "Collega il capitolo al «Primo principio della termodinamica» per capire dove va l'energia in ogni trasformazione."
+   ],
+   "ricorda": [
+    "«Boyle: pV fisso; Gay-Lussac: V/T o p/T fissi».",
+    "pV = nRT con R = 8,314 J/(mol·K).",
+    "Una mole a 0 °C e 1 atm: 22,4 L.",
+    "Temperatura sempre in kelvin: +273."
+   ],
+   "errori": [
+    "Usare i gradi Celsius nelle leggi dei gas.",
+    "Inserire i litri in pV = nRT con R = 8,314: serve il metro cubo (1 L = 10⁻³ m³).",
+    "Confondere isoterma e adiabatica nel grafico p-V: l'adiabatica è più ripida.",
+    "Pensare che le molecole più pesanti abbiano più energia cinetica alla stessa temperatura: hanno la stessa energia media, ma sono più lente."
+   ],
+   "domande": [
+    {
+     "domanda": "Un gas a 2 atm occupa 3 L. A che volume arriva a 6 atm, a T costante?",
+     "risposta": "1 L, per la legge di Boyle."
+    },
+    {
+     "domanda": "Un gas a 27 °C e volume 4 L viene scaldato a 177 °C a pressione costante. Che volume occupa?",
+     "risposta": "6 L: 4 · 450/300."
+    },
+    {
+     "domanda": "Quante moli ci sono in 0,0224 m³ a 273 K e 101 325 Pa?",
+     "risposta": "Circa 1 mol, da n = pV/(RT)."
+    },
+    {
+     "domanda": "Perché un gas che si espande adiabaticamente si raffredda?",
+     "risposta": "Perché compie lavoro senza ricevere calore e quindi spende la propria energia interna."
+    },
+    {
+     "domanda": "Da che cosa dipende l'energia cinetica media delle molecole di un gas?",
+     "risposta": "Solo dalla temperatura assoluta: E = (3/2)k·T."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Il gas ideale è un modello in cui le molecole sono puntiformi e non interagiscono se non con urti elastici. La sua equazione di stato si scrive pV = nRT oppure, per unità di massa, pv = R*T con R* = R/M (per l'aria circa 287 J/(kg·K)). Da essa segue la densità ρ = pM/(RT): l'aria a 20 °C e 1 atm ha circa 1,2 kg/m³. Poiché le molecole non interagiscono, l'energia interna dipende solo dalla temperatura, U = U(T), e lo stesso vale per l'entalpia.",
+    "I calori specifici molari si ricavano dal teorema di equipartizione: ogni grado di libertà contribuisce con R/2 a c_v. Un gas monoatomico ha solo i 3 gradi di traslazione, quindi c_v = 3R/2, c_p = 5R/2 e γ = 5/3. Un gas biatomico a temperatura ambiente ha anche 2 gradi di rotazione: c_v = 5R/2, c_p = 7R/2 e γ = 1,4, valore usato per l'aria. A temperature elevate si attivano le vibrazioni e c_v cresce ancora.",
+    "Le trasformazioni reversibili più comuni rientrano nella famiglia delle politropiche pV^n = costante: n = 0 dà l'isobara, n = 1 l'isoterma, n = γ l'adiabatica reversibile e n → ∞ l'isocora. Per l'adiabatica valgono anche TV^(γ−1) = costante e T·p^((1−γ)/γ) = costante: comprimendo l'aria a metà volume da 300 K si arriva a circa 396 K, con un aumento di pressione di 2^1,4 ≈ 2,64 volte. Il lavoro adiabatico è n·c_v·(T₁ − T₂), quello isotermo nRT·ln(V₂/V₁), mentre i calori sono n·c_p·ΔT nell'isobara e n·c_v·ΔT nell'isocora.",
+    "La teoria cinetica collega le grandezze macroscopiche a quelle molecolari: pV = (1/3)N·m·⟨v²⟩. Confrontandola con pV = NkT si ottiene ⟨E_c⟩ = (3/2)kT e la velocità quadratica media v_qm = √(3RT/M). Per l'azoto a 300 K v_qm ≈ 517 m/s; l'idrogeno, molto più leggero, va quasi quattro volte più veloce. Le velocità delle molecole non sono tutte uguali ma seguono la distribuzione di Maxwell-Boltzmann, che si allarga e si sposta verso valori più alti al crescere di T.",
+    "I gas reali si discostano dal modello ideale ad alte pressioni e basse temperature. L'equazione di van der Waals (p + an²/V²)(V − nb) = nRT introduce il parametro a, che tiene conto delle attrazioni tra molecole, e il covolume b, che tiene conto del loro volume proprio. Lo scostamento si misura con il fattore di compressibilità Z = pV/(nRT), pari a 1 per il gas ideale. Sotto la temperatura critica un gas può essere liquefatto per compressione, ed è questo comportamento che sfruttano i cicli frigoriferi e gli impianti a vapore."
+   ],
+   "metodo": [
+    "Ricava da solo le relazioni dell'adiabatica (pV^γ, TV^(γ−1)) partendo dal primo principio con δQ = 0 e da pV = nRT.",
+    "Costruisci una tabella politropica: per ogni n scrivi lavoro, calore, ΔU e forma della curva.",
+    "Calcola γ per gas mono e biatomici partendo dai gradi di libertà, senza memorizzare i numeri.",
+    "Esercitati a passare da grandezze molari (R) a grandezze specifiche (R* = R/M) e viceversa.",
+    "Confronta, con un esempio numerico, la pressione prevista dal modello ideale e da van der Waals per la CO₂ ad alta pressione.",
+    "Collega il capitolo ai «Cicli termodinamici», dove ogni ciclo è una sequenza di queste trasformazioni."
+   ],
+   "ricorda": [
+    "Politropica: n = 0 isobara, 1 isoterma, γ adiabatica, ∞ isocora.",
+    "γ = 5/3 monoatomico, 7/5 biatomico.",
+    "v_qm = √(3RT/M) con M in kg/mol.",
+    "van der Waals: «a attrae, b occupa»."
+   ],
+   "errori": [
+    "Usare la massa molare in g/mol nella formula della velocità quadratica media.",
+    "Applicare pV^γ = costante a un'adiabatica irreversibile.",
+    "Confondere R (per mole) con R* (per kilogrammo).",
+    "Dimenticare che c_v e c_p cambiano con la temperatura nei gas poliatomici e ad alte temperature.",
+    "Scambiare il ruolo dei parametri a e b di van der Waals."
+   ],
+   "domande": [
+    {
+     "domanda": "Aria a 1 bar e 300 K viene compressa adiabaticamente fino a 8 bar. Che temperatura raggiunge?",
+     "risposta": "Circa 543 K: T₂ = 300 · 8^(0,4/1,4)."
+    },
+    {
+     "domanda": "Qual è la densità dell'elio (M = 0,004 kg/mol) a 1 atm e 273 K?",
+     "risposta": "Circa 0,18 kg/m³: ρ = pM/(RT)."
+    },
+    {
+     "domanda": "Quanto vale v_qm dell'idrogeno (M = 0,002 kg/mol) a 300 K?",
+     "risposta": "Circa 1934 m/s: √(3 · 8,314 · 300/0,002)."
+    },
+    {
+     "domanda": "Quale politropica ha n = 1 per un gas ideale?",
+     "risposta": "L'isoterma, perché pV = nRT è costante a T costante."
+    },
+    {
+     "domanda": "Che cosa indica Z < 1 per un gas reale?",
+     "risposta": "Che prevalgono le attrazioni tra molecole: il gas è più comprimibile di quello ideale."
+    }
+   ]
+  }
+ },
+ "Cicli termodinamici e macchine termiche": {
+  "superiore": {
+   "spiegazione": [
+    "Una macchina termica è un dispositivo che trasforma calore in lavoro in modo continuo, ripetendo sempre lo stesso ciclo. Alla fine di ogni ciclo il fluido torna nello stato iniziale, quindi ΔU = 0 e il lavoro netto è L = Q_c − Q_f: il calore assorbito dalla sorgente calda meno quello ceduto alla sorgente fredda. Il rendimento è η = L/Q_c. Nel piano p-V il lavoro netto è l'area racchiusa dal ciclo, positiva se il ciclo è percorso in senso orario.",
+    "Il ciclo di riferimento è quello di Carnot, formato da due isoterme e due adiabatiche reversibili. È il ciclo con il rendimento più alto possibile tra due temperature, η = 1 − T_f/T_c. Tra 800 K e 300 K, per esempio, rende il 62,5%: su 4000 J assorbiti produce 2500 J di lavoro. In pratica non si costruisce, perché gli scambi isotermi richiederebbero tempi lunghissimi, ma serve come metro di paragone.",
+    "Il motore a benzina segue in modo approssimato il ciclo Otto: compressione adiabatica della miscela, combustione rapidissima a volume quasi costante innescata dalla candela, espansione adiabatica che spinge il pistone, scarico a volume costante. Il rendimento cresce con il rapporto di compressione, ma oltre certi valori la miscela si accende da sola (detonazione). Il motore diesel comprime solo aria, a valori molto più alti, e il gasolio iniettato si accende per la temperatura raggiunta: la combustione è modellata a pressione costante.",
+    "Nelle centrali termoelettriche si usa il ciclo Rankine, con acqua e vapore. Una pompa porta l'acqua ad alta pressione, la caldaia la trasforma in vapore, il vapore si espande in turbina facendo girare l'alternatore e infine il condensatore lo riporta allo stato liquido cedendo calore a un fiume, al mare o a una torre di raffreddamento. Le turbine a gas degli aerei e di molte centrali seguono invece il ciclo Brayton, con compressore, camera di combustione e turbina.",
+    "Se un ciclo viene percorso al contrario, spendendo lavoro si sposta calore da un ambiente freddo a uno caldo: è il principio del frigorifero e della pompa di calore. Il refrigerante evapora nell'evaporatore assorbendo calore dalla cella, viene compresso dal compressore, cede calore nel condensatore sul retro e torna a bassa pressione nella valvola di laminazione. L'efficienza si misura con il COP: una pompa di calore con COP = 4 che assorbe 2 kW elettrici porta in casa 8 kW di calore."
+   ],
+   "metodo": [
+    "Per ogni ciclo (Carnot, Otto, Diesel, Rankine, frigorifero) disegna lo schema dei componenti e il grafico p-V, indicando dove entra e dove esce il calore.",
+    "Scrivi il bilancio di ogni esercizio: Q_c, Q_f, L e verifica che L = Q_c − Q_f.",
+    "Calcola sempre anche il rendimento di Carnot tra le stesse temperature e confrontalo con quello del ciclo.",
+    "Ripeti a voce le quattro fasi del motore a quattro tempi collegandole alle trasformazioni del ciclo Otto.",
+    "Per frigoriferi e pompe di calore chiediti sempre «che cosa mi serve» (freddo o caldo) per scegliere la formula del COP giusta.",
+    "Collega il capitolo a «Secondo principio ed entropia» e a «Gas ideali e trasformazioni»."
+   ],
+   "ricorda": [
+    "Carnot: 2 isoterme + 2 adiabatiche; Otto: 2 adiabatiche + 2 isocore; Brayton: 2 adiabatiche + 2 isobare.",
+    "Rankine: pompa → caldaia → turbina → condensatore.",
+    "Frigorifero: evaporatore dentro (assorbe), condensatore fuori (cede).",
+    "Lavoro netto = area del ciclo."
+   ],
+   "errori": [
+    "Confondere il calore ceduto con il lavoro prodotto nei calcoli di rendimento.",
+    "Pensare che il motore diesel abbia la candela o che lavori a pressioni più basse del benzina.",
+    "Credere che il frigorifero «produca freddo»: sposta calore dall'interno all'esterno.",
+    "Attribuire al compressore del frigorifero l'assorbimento di calore dagli alimenti: avviene nell'evaporatore."
+   ],
+   "domande": [
+    {
+     "domanda": "Un motore assorbe 5000 J e ne cede 3500. Quanto lavoro fa e con quale rendimento?",
+     "risposta": "1500 J, rendimento 30%."
+    },
+    {
+     "domanda": "Qual è il rendimento di Carnot tra 900 K e 300 K?",
+     "risposta": "Circa 67%: 1 − 300/900."
+    },
+    {
+     "domanda": "In quale componente di una centrale a vapore il fluido cede calore?",
+     "risposta": "Nel condensatore."
+    },
+    {
+     "domanda": "Una pompa di calore con COP = 3,5 assorbe 2 kW. Quanto calore fornisce?",
+     "risposta": "7 kW."
+    },
+    {
+     "domanda": "Perché nei motori a benzina non si può aumentare troppo il rapporto di compressione?",
+     "risposta": "Perché la miscela si autoaccenderebbe prima della scintilla (detonazione)."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Ogni ciclo reale si confronta con il ciclo di Carnot tra le stesse temperature estreme, che fissa il limite η_C = 1 − T_f/T_c. Un criterio più utile è quello delle temperature medie: un ciclo che riceve calore a una temperatura media T_m,c e lo cede a T_m,f ha rendimento η = 1 − T_m,f/T_m,c. Da qui si capisce come migliorare un ciclo: alzare la temperatura media di introduzione del calore o abbassare quella di cessione. Le perdite reali dipendono dalle irreversibilità, come attriti, scambi termici con differenze di temperatura finite e perdite di carico.",
+    "Il ciclo Otto ideale ha rendimento η = 1 − 1/r^(γ−1), dove r è il rapporto volumetrico di compressione: con r = 9 e γ = 1,4 si ottiene circa il 58%. Il limite pratico di r nei motori a benzina è la detonazione, per cui r resta tra circa 9 e 12. Nel ciclo Diesel il calore entra a pressione costante e il rendimento dipende anche dal rapporto di combustione; a parità di r il Diesel rende meno dell'Otto, ma potendo usare r molto più alti (15-22) nella pratica rende di più. Nei motori reali i rendimenti effettivi sono circa 30-45%.",
+    "Il ciclo Joule-Brayton descrive le turbine a gas: compressione adiabatica, combustione isobara, espansione adiabatica in turbina e cessione isobara di calore. Il rendimento ideale dipende dal rapporto delle pressioni β: η = 1 − β^(−(γ−1)/γ), circa 48% per β = 10. Il compressore assorbe una frazione importante del lavoro della turbina (back work ratio), perché comprime un gas. Il rendimento si migliora con la rigenerazione, che recupera il calore dei gas di scarico, e con la compressione interrefrigerata.",
+    "Il ciclo Rankine usa un fluido che cambia fase, di solito acqua. La pompa comprime liquido e il suo lavoro, ∫v dp, è piccolissimo perché il volume specifico del liquido è circa mille volte minore di quello del vapore. Il rendimento aumenta con il surriscaldamento (che alza la temperatura media di introduzione del calore e riduce l'umidità in uscita dalla turbina), con il risurriscaldamento e con la rigenerazione tramite spillamenti di vapore. Si studia sui diagrammi T-s e h-s (di Mollier). Nei cicli combinati i gas di scarico di una turbina a gas producono il vapore di un ciclo Rankine, arrivando a rendimenti del 55-60%.",
+    "Il ciclo frigorifero a compressione di vapore è un Rankine inverso con una valvola al posto della turbina. Il refrigerante evapora a bassa pressione assorbendo il calore q_f = h₁ − h₄, viene compresso con lavoro l = h₂ − h₁, condensa cedendo calore e si lamina in modo isoentalpico (h₄ = h₃). Il COP del frigorifero è (h₁ − h₄)/(h₂ − h₁), mentre per la pompa di calore conta il calore al condensatore, (h₂ − h₃)/(h₂ − h₁). Questi cicli si leggono comodamente sul diagramma p-h del refrigerante."
+   ],
+   "metodo": [
+    "Ricava le formule di rendimento di Otto e Brayton a partire dalle relazioni dell'adiabatica e dai calori isocori o isobari.",
+    "Per ogni ciclo traccia i diagrammi p-V e T-s e individua le aree che rappresentano calore e lavoro.",
+    "Esercitati con le tabelle del vapore: calcola lavoro di turbina, lavoro di pompa, calore in caldaia e rendimento di un Rankine semplice.",
+    "Valuta l'effetto di ciascun miglioramento (surriscaldamento, rigenerazione, pressione del condensatore) con il criterio delle temperature medie.",
+    "Risolvi un ciclo frigorifero sul diagramma p-h numerando i punti 1-2-3-4 sempre nello stesso modo.",
+    "Collega il capitolo al primo principio per sistemi aperti: ogni componente è un bilancio di entalpia."
+   ],
+   "ricorda": [
+    "Otto: η = 1 − 1/r^(γ−1); Brayton: η = 1 − β^(−(γ−1)/γ).",
+    "Più alta la temperatura media del calore in ingresso, più alto il rendimento.",
+    "Lavoro di pompaggio = ∫v dp: piccolo per i liquidi.",
+    "Laminazione isoentalpica: h₄ = h₃."
+   ],
+   "errori": [
+    "Usare nel Brayton l'esponente γ − 1 come nell'Otto: con il rapporto delle pressioni serve (γ − 1)/γ.",
+    "Pensare che aumentare la pressione del condensatore migliori il Rankine: alza la temperatura di cessione e lo peggiora.",
+    "Trattare la valvola di laminazione come isoentropica.",
+    "Calcolare il COP della pompa di calore con il calore all'evaporatore.",
+    "Dimenticare il lavoro del compressore nel bilancio di una turbina a gas."
+   ],
+   "domande": [
+    {
+     "domanda": "Rendimento ideale di un Otto con r = 11 e γ = 1,4?",
+     "risposta": "Circa 61%: 1 − 11^(−0,4)."
+    },
+    {
+     "domanda": "Rendimento ideale di un Brayton con β = 16 e γ = 1,4?",
+     "risposta": "Circa 55%: 1 − 16^(−0,286)."
+    },
+    {
+     "domanda": "Perché il surriscaldamento migliora il ciclo Rankine?",
+     "risposta": "Alza la temperatura media di introduzione del calore e riduce l'umidità del vapore in uscita dalla turbina."
+    },
+    {
+     "domanda": "In un ciclo frigorifero h₁ = 400, h₂ = 430, h₄ = 250 kJ/kg. Quanto vale il COP?",
+     "risposta": "5: (400 − 250)/(430 − 400)."
+    },
+    {
+     "domanda": "Che cosa sono i cicli combinati?",
+     "risposta": "Impianti in cui i gas caldi di una turbina a gas producono il vapore di un ciclo Rankine, con rendimenti del 55-60%."
+    }
+   ]
+  }
+ },
+ "Trasmissione del calore": {
+  "superiore": {
+   "spiegazione": [
+    "Il calore passa sempre da un corpo più caldo a uno più freddo, finché le temperature non diventano uguali. Questo passaggio avviene in tre modi: conduzione, convezione e irraggiamento. Spesso agiscono insieme: un termosifone scalda l'aria a contatto per conduzione, l'aria calda sale per convezione e il termosifone emette anche radiazione infrarossa. Capire i tre meccanismi serve per isolare le case, raffreddare i motori e progettare gli impianti di riscaldamento.",
+    "La conduzione è il trasferimento di energia attraverso un materiale fermo, da particella a particella. Per una parete vale la legge di Fourier: P = k·A·ΔT/s, dove k è la conducibilità termica, A l'area, ΔT la differenza di temperatura e s lo spessore. Una parete di 10 m², spessa 20 cm, con k = 0,8 W/(m·K) e 20 °C di differenza lascia passare 800 W. I metalli conducono benissimo (il rame ha k ≈ 400 W/(m·K)), mentre aria ferma e materiali porosi come il polistirene sono ottimi isolanti.",
+    "La convezione è il trasporto di calore da parte di un fluido in movimento. Nella convezione naturale il fluido scaldato diventa meno denso e sale, mentre quello freddo scende, creando correnti: succede nell'acqua di una pentola e nell'aria di una stanza. Nella convezione forzata il moto è prodotto da un ventilatore o da una pompa, come nel radiatore di un'auto. La potenza scambiata si calcola con P = h·A·ΔT, dove h è il coefficiente convettivo, molto più alto con il vento o con un liquido.",
+    "L'irraggiamento è l'emissione di onde elettromagnetiche da parte di ogni corpo a temperatura sopra lo zero assoluto. Non ha bisogno di un mezzo, ed è così che il Sole scalda la Terra attraverso il vuoto. La potenza emessa segue la legge di Stefan-Boltzmann P = ε·σ·A·T⁴: raddoppiando la temperatura assoluta la potenza diventa sedici volte più grande. Il corpo nero è un emettitore e assorbitore ideale (ε = 1); i corpi caldi come il nostro emettono soprattutto nell'infrarosso.",
+    "Molti oggetti quotidiani sono progettati per controllare questi meccanismi. Il thermos usa il vuoto per bloccare conduzione e convezione e pareti a specchio per ridurre l'irraggiamento. I doppi vetri imprigionano uno strato di aria o gas, che conduce poco. Il cappotto termico delle case aggiunge uno strato isolante che riduce molto le dispersioni. L'effetto serra, nelle auto al sole come nell'atmosfera, nasce dal fatto che il vetro o certi gas lasciano entrare la luce visibile ma trattengono l'infrarosso."
+   ],
+   "metodo": [
+    "Per ogni situazione quotidiana (pentola, termosifone, Sole, cucchiaio caldo) individua quali meccanismi sono in gioco.",
+    "Scrivi le tre formule (Fourier, Newton, Stefan-Boltzmann) su un'unica scheda con le unità di ogni grandezza.",
+    "Negli esercizi di conduzione controlla che lo spessore sia in metri e che stia al denominatore.",
+    "Fai un confronto numerico tra le conducibilità di rame, vetro, legno e polistirene per fissare gli ordini di grandezza.",
+    "Nell'irraggiamento usa sempre la temperatura in kelvin elevata alla quarta.",
+    "Collega il capitolo all'edilizia e all'efficienza energetica: isolamento, finestre, pompe di calore."
+   ],
+   "ricorda": [
+    "«Conduzione tocca, convezione scorre, irraggiamento vola».",
+    "Fourier: più spesso = meno calore; Stefan-Boltzmann: T alla quarta.",
+    "Nel vuoto passa solo l'irraggiamento.",
+    "I migliori isolanti sono quelli che imprigionano aria ferma."
+   ],
+   "errori": [
+    "Dire che «il calore sale»: sale il fluido caldo, per convezione.",
+    "Pensare che un metallo sia più freddo del legno nella stessa stanza: conduce meglio e quindi sottrae calore più in fretta alla mano.",
+    "Moltiplicare per lo spessore nella legge di Fourier invece di dividere.",
+    "Usare i gradi Celsius nella legge di Stefan-Boltzmann."
+   ],
+   "domande": [
+    {
+     "domanda": "Che potenza attraversa un vetro di 2 m², spesso 4 mm, con k = 1 W/(m·K) e ΔT = 10 K?",
+     "risposta": "5000 W: 1 · 2 · 10 / 0,004 (per questo serve il doppio vetro)."
+    },
+    {
+     "domanda": "Quale meccanismo porta il calore del Sole sulla Terra?",
+     "risposta": "L'irraggiamento, l'unico che funziona nel vuoto."
+    },
+    {
+     "domanda": "Se la temperatura assoluta di una stella triplica, quanto cresce la potenza emessa per unità di area?",
+     "risposta": "81 volte: 3⁴."
+    },
+    {
+     "domanda": "Perché il vento fa sentire più freddo?",
+     "risposta": "Perché aumenta il coefficiente convettivo h e quindi il calore sottratto alla pelle."
+    },
+    {
+     "domanda": "Come funziona il thermos?",
+     "risposta": "Il vuoto tra le pareti blocca conduzione e convezione, le superfici a specchio riducono l'irraggiamento."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La conduzione è descritta dal postulato di Fourier q = −k·∇T: il flusso termico è proporzionale al gradiente di temperatura e diretto verso le temperature più basse. Combinandolo con il bilancio di energia si ottiene l'equazione del calore ∂T/∂t = α·∇²T, dove α = k/(ρc) è la diffusività termica, che dice quanto rapidamente un materiale si adegua a un cambiamento di temperatura. In regime stazionario e senza generazione interna, in una parete piana il profilo di temperatura è lineare e la resistenza termica è R = s/(kA). In uno strato cilindrico, come l'isolante di un tubo, il profilo è logaritmico e R = ln(r₂/r₁)/(2πkL).",
+    "L'analogia elettrica rende semplici i problemi stazionari: la differenza di temperatura è come la tensione, la potenza termica come la corrente, e le resistenze termiche si combinano in serie e in parallelo. Una parete con 25 cm di mattoni (R = 0,50 m²K/W) e 5 cm di isolante (R = 1,25 m²K/W) ha una resistenza totale di 1,75 m²K/W e, con 20 K di differenza, lascia passare circa 11,4 W/m². Alle resistenze conduttive si aggiungono quelle convettive sulle due facce, 1/(hA). L'inverso della resistenza totale per unità di area è la trasmittanza U, in W/(m²·K), usata nelle norme sull'edilizia.",
+    "La convezione si descrive con la legge di Newton q = h·(T_s − T_∞), dove tutta la complessità del moto del fluido è racchiusa nel coefficiente h. Per calcolarlo si usano correlazioni tra numeri adimensionali: il numero di Nusselt Nu = hL/k confronta lo scambio convettivo con quello conduttivo; nella convezione forzata Nu = f(Re, Pr), in quella naturale Nu = f(Gr, Pr) o f(Ra). Il numero di Reynolds distingue moto laminare e turbolento, il numero di Prandtl confronta diffusione della quantità di moto e del calore. Il numero di Biot, Bi = hL/k_solido, dice se un corpo che si raffredda si può trattare a temperatura uniforme (Bi < 0,1).",
+    "L'irraggiamento termico è emissione di onde elettromagnetiche. Il corpo nero emette E = σT⁴ con uno spettro il cui massimo segue la legge di Wien, λ_max·T ≈ 2,898·10⁻³ m·K: circa 500 nm per il Sole, circa 9,4 μm per il corpo umano. I corpi reali, trattati spesso come grigi, hanno emissività ε < 1 e, per la legge di Kirchhoff, assorbanza uguale all'emissività. Lo scambio netto tra un piccolo corpo e un ambiente grande vale q = εσ(T₁⁴ − T₂⁴); tra superfici generiche intervengono i fattori di vista, che descrivono la geometria.",
+    "Gli scambiatori di calore trasferiscono energia tra due fluidi separati da una parete. La potenza si calcola con P = U·A·ΔT_ml, dove ΔT_ml = (ΔT₁ − ΔT₂)/ln(ΔT₁/ΔT₂) è la differenza di temperatura media logaritmica tra le due estremità. La configurazione controcorrente è la più efficace, perché mantiene una differenza di temperatura più uniforme e permette al fluido freddo di uscire più caldo di quanto esce il fluido caldo. Quando le temperature di uscita non sono note si usa il metodo ε-NTU, che lega l'efficienza dello scambiatore al numero di unità di trasferimento NTU = UA/C_min."
+   ],
+   "metodo": [
+    "Disegna sempre il circuito termico equivalente con tutte le resistenze (convettive, conduttive, radiative) prima di calcolare.",
+    "Ricava da solo la resistenza dello strato cilindrico integrando la legge di Fourier in coordinate radiali.",
+    "Per la convezione prepara una scheda con Nu, Re, Pr, Gr, Bi: definizione, significato fisico e un valore tipico.",
+    "Negli esercizi di irraggiamento calcola prima T⁴ di ogni superficie e poi la differenza, in kelvin.",
+    "Risolvi uno stesso scambiatore in equicorrente e controcorrente e confronta ΔT_ml e area necessaria.",
+    "Collega il capitolo ai cicli: caldaie, condensatori ed evaporatori sono scambiatori di calore."
+   ],
+   "ricorda": [
+    "Serie di strati: R_tot = Σ R_i; U = 1/(R_tot·A).",
+    "Nu = hL/k: quanto il moto migliora lo scambio rispetto al fluido fermo.",
+    "Wien: λ_max·T ≈ 2,9 mm·K.",
+    "Controcorrente batte equicorrente."
+   ],
+   "errori": [
+    "Usare la formula della parete piana per un tubo isolato.",
+    "Confondere il numero di Biot (k del solido) con il numero di Nusselt (k del fluido).",
+    "Calcolare lo scambio radiativo con (T₁ − T₂)⁴ invece di T₁⁴ − T₂⁴.",
+    "Usare la media aritmetica delle differenze di temperatura invece della media logaritmica.",
+    "Dimenticare le resistenze convettive superficiali nel calcolo della trasmittanza."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la resistenza di uno strato isolante (k = 0,04 W/(m·K)) spesso 10 cm su 1 m²?",
+     "risposta": "2,5 K/W: R = s/(kA)."
+    },
+    {
+     "domanda": "Quanto vale ΔT_ml con ΔT₁ = 50 K e ΔT₂ = 20 K?",
+     "risposta": "Circa 32,7 K: 30/ln 2,5."
+    },
+    {
+     "domanda": "A che lunghezza d'onda emette di più un filamento a 2900 K?",
+     "risposta": "Circa 1 μm, nel vicino infrarosso."
+    },
+    {
+     "domanda": "Che cosa significa Bi < 0,1?",
+     "risposta": "Che la resistenza interna del solido è trascurabile e il corpo si può considerare a temperatura uniforme."
+    },
+    {
+     "domanda": "Una superficie a 400 K (ε = 0,8) in un ambiente a 300 K: quanto calore irradia netto per m²?",
+     "risposta": "Circa 794 W/m²: 0,8 · 5,67·10⁻⁸ · (400⁴ − 300⁴)."
+    }
+   ]
+  }
+ },
+ "Termodinamica chimica: entalpia ed energia libera": {
+  "superiore": {
+   "spiegazione": [
+    "Durante una reazione chimica si rompono e si formano legami, e questo comporta scambi di energia con l'ambiente. Se la reazione avviene a pressione costante, come in un recipiente aperto, il calore scambiato è uguale alla variazione di entalpia ΔH. Se ΔH < 0 la reazione è esotermica e cede calore, come una combustione; se ΔH > 0 è endotermica e lo assorbe, come la fusione del ghiaccio o la decomposizione del calcare. Il calore di reazione si misura con il calorimetro, osservando l'aumento di temperatura di una quantità nota d'acqua: Q = m·c·ΔT.",
+    "Poiché l'entalpia è una funzione di stato, vale la legge di Hess: il ΔH di una reazione non dipende dal percorso, ma solo dallo stato iniziale e finale. Se una reazione si può scrivere come somma di più reazioni, il suo ΔH è la somma dei loro ΔH. Questo permette di calcolare calori di reazione difficili da misurare. In modo simile, si usano tabelle di entalpie standard di formazione ΔH°f, cioè il calore per formare una mole di composto dagli elementi.",
+    "Per convenzione gli elementi nella loro forma più stabile, come O₂, N₂ o C grafite, hanno ΔH°f = 0. Il ΔH di una reazione si calcola come somma delle entalpie di formazione dei prodotti meno quella dei reagenti, ognuna moltiplicata per il proprio coefficiente. Per la combustione del metano si ottiene circa −890 kJ per mole. Una stima più rapida, ma approssimata, si ottiene dalle energie di legame: energia dei legami rotti meno energia dei legami formati.",
+    "Il segno di ΔH non basta per sapere se una reazione avviene spontaneamente: il ghiaccio fonde da solo a temperatura ambiente pur assorbendo calore. Bisogna considerare anche l'entropia S, che misura il disordine. L'entropia aumenta quando si forma un gas da un solido, quando un solido si scioglie o quando aumenta il numero di molecole di gas. Per esempio, nella decomposizione CaCO₃ → CaO + CO₂ si libera un gas e l'entropia cresce.",
+    "Entalpia ed entropia si combinano nell'energia libera di Gibbs: ΔG = ΔH − TΔS. A temperatura e pressione costanti una reazione è spontanea se ΔG < 0, è all'equilibrio se ΔG = 0 e non è spontanea se ΔG > 0. Se ΔH e ΔS hanno lo stesso segno, la spontaneità dipende dalla temperatura. Attenzione: «spontanea» non vuol dire «veloce»; la velocità dipende dall'energia di attivazione e un catalizzatore la accelera senza cambiare ΔH né ΔG."
+   ],
+   "metodo": [
+    "Scrivi su una scheda la regola dei segni: ΔH < 0 esotermica, ΔH > 0 endotermica, ΔG < 0 spontanea.",
+    "Negli esercizi con le entalpie di formazione prepara due colonne, prodotti e reagenti, con i coefficienti, e somma separatamente.",
+    "Ricorda di porre a zero il ΔH°f degli elementi stabili e controlla lo stato fisico (H₂O liquida o gassosa).",
+    "Costruisci una tabella con le quattro combinazioni di segno di ΔH e ΔS e la spontaneità al variare della temperatura.",
+    "Converti sempre ΔS da J/K a kJ/K prima di usarlo in ΔG = ΔH − TΔS.",
+    "Collega il capitolo al «Primo principio» (entalpia) e al «Secondo principio ed entropia»."
+   ],
+   "ricorda": [
+    "«Eso esce, endo entra»: il calore esce nelle esotermiche.",
+    "ΔH° = Σ prodotti − Σ reagenti.",
+    "ΔG = ΔH − TΔS: negativo significa spontaneo.",
+    "Il catalizzatore cambia la velocità, non ΔG."
+   ],
+   "errori": [
+    "Dimenticare i coefficienti stechiometrici nel calcolo con le entalpie di formazione.",
+    "Mescolare kJ e J nel calcolo di ΔG.",
+    "Pensare che ogni reazione esotermica sia spontanea.",
+    "Confondere spontaneità e velocità di reazione."
+   ],
+   "domande": [
+    {
+     "domanda": "Una reazione ha ΔH = +50 kJ. È esotermica o endotermica?",
+     "risposta": "Endotermica: assorbe calore."
+    },
+    {
+     "domanda": "Quanto vale ΔH°f dell'azoto N₂ gassoso?",
+     "risposta": "Zero, è un elemento nella forma stabile."
+    },
+    {
+     "domanda": "ΔH = −80 kJ e ΔS = +50 J/K: la reazione è spontanea a 298 K?",
+     "risposta": "Sì, sempre: ΔG = −80 − 298 · 0,050 ≈ −95 kJ."
+    },
+    {
+     "domanda": "Perché il ghiaccio fonde da solo a 20 °C anche se il processo è endotermico?",
+     "risposta": "Perché l'aumento di entropia, moltiplicato per T, supera ΔH e rende ΔG negativo."
+    },
+    {
+     "domanda": "200 g d'acqua si scaldano di 5 K in un calorimetro. Quanto calore ha ceduto la reazione?",
+     "risposta": "Circa 4,2 kJ: 0,200 · 4186 · 5."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La termodinamica chimica applica i principi a sistemi in cui la composizione cambia. Le funzioni di stato chiave sono H, S e l'energia libera di Gibbs G = H − TS. A temperatura e pressione costanti il secondo principio si esprime come dG ≤ 0: i processi spontanei fanno diminuire G e all'equilibrio G è minima. L'opposto di ΔG è il massimo lavoro utile, diverso da quello di espansione, ottenibile dalla reazione: in una pila diventa lavoro elettrico, ΔG = −nFE, circa −212 kJ per la pila Daniell con E = 1,10 V.",
+    "L'entalpia standard di reazione si calcola come ΔH°_r = Σν·ΔH°f(prodotti) − Σν·ΔH°f(reagenti), con lo stato standard a 1 bar e di solito 298 K. La legge di Hess permette di combinare linearmente reazioni note, e le energie di legame danno stime rapide utili in fase gassosa. La dipendenza dalla temperatura segue la legge di Kirchhoff, d(ΔH)/dT = Δc_p: se Δc_p è costante, ΔH(T₂) = ΔH(T₁) + Δc_p·(T₂ − T₁). Spesso Δc_p è piccolo e ΔH si può considerare quasi costante in intervalli moderati.",
+    "Grazie al terzo principio si tabulano entropie assolute S°, diverse da zero anche per gli elementi. L'entropia di reazione è ΔS°_r = Σν·S°(prodotti) − Σν·S°(reagenti): per la sintesi dell'ammoniaca vale circa −199 J/K, negativa perché le moli di gas diminuiscono da 4 a 2. Combinando entalpia ed entropia, ΔG° = ΔH° − TΔS°. Se ΔH < 0 e ΔS > 0 la reazione è sempre spontanea, con segni opposti mai; se hanno lo stesso segno esiste una temperatura di inversione T* = ΔH/ΔS, per esempio circa 1110 K per la decomposizione del carbonato di calcio.",
+    "Per una miscela di reagenti e prodotti in condizioni qualsiasi vale ΔG = ΔG° + RT·ln Q, dove Q è il quoziente di reazione. All'equilibrio ΔG = 0 e Q = K, quindi ΔG° = −RT·ln K: un ΔG° di −5,7 kJ/mol a 298 K corrisponde a K ≈ 10. La dipendenza di K dalla temperatura è data dall'equazione di van 't Hoff, d ln K/dT = ΔH°/(RT²): per le reazioni esotermiche K diminuisce scaldando, come prevede anche il principio di Le Châtelier. Alla base di tutto c'è il potenziale chimico μ = (∂G/∂n) a T e p costanti, che regola anche gli equilibri di fase e di soluzione.",
+    "Gli stessi strumenti descrivono i passaggi di stato. Alla temperatura di transizione le due fasi sono in equilibrio, quindi ΔG = 0 e T = ΔH/ΔS: per l'acqua 40,7 kJ/mol diviso 109 J/(mol·K) dà circa 373 K. L'equazione di Clausius-Clapeyron, d ln p/dT = ΔH_vap/(RT²), lega la tensione di vapore alla temperatura e spiega perché in montagna l'acqua bolle sotto i 100 °C. Infine, la termodinamica dice se e quanto una reazione può procedere, ma non quanto velocemente: un catalizzatore abbassa l'energia di attivazione senza modificare ΔH, ΔG né K."
+   ],
+   "metodo": [
+    "Per ogni calcolo di ΔH°, ΔS° e ΔG° usa la stessa tabella a colonne: specie, coefficiente, valore, prodotto.",
+    "Ricava ΔG° = −RT·ln K da ΔG = ΔG° + RT·ln Q imponendo l'equilibrio.",
+    "Usa la regola pratica «5,7 kJ/mol ↔ un fattore 10 in K a 298 K» per controllare l'ordine di grandezza dei risultati.",
+    "Calcola la temperatura di inversione di alcune reazioni industriali (calcinazione, sintesi dell'ammoniaca) e confrontala con le condizioni reali di processo.",
+    "Applica van 't Hoff a due temperature per stimare ΔH° da due valori di K.",
+    "Collega il capitolo all'elettrochimica (ΔG = −nFE) e agli equilibri chimici."
+   ],
+   "ricorda": [
+    "G = H − TS; spontaneo se ΔG < 0 a T e p costanti.",
+    "ΔG° = −RT·ln K; ΔG° < 0 ↔ K > 1.",
+    "T* = ΔH/ΔS; all'equilibrio di fase T = ΔH/ΔS.",
+    "Kirchhoff: d(ΔH)/dT = Δc_p; van 't Hoff: d ln K/dT = ΔH°/(RT²)."
+   ],
+   "errori": [
+    "Confondere ΔG e ΔG°: è ΔG, non ΔG°, che decide la spontaneità nelle condizioni reali.",
+    "Porre a zero le entropie standard degli elementi come si fa con le entalpie di formazione.",
+    "Dimenticare n nella relazione ΔG = −nFE.",
+    "Usare ln K con K espresso in unità non coerenti con lo stato standard.",
+    "Pensare che un catalizzatore sposti l'equilibrio."
+   ],
+   "domande": [
+    {
+     "domanda": "Quale K corrisponde a ΔG° = −11,4 kJ/mol a 298 K?",
+     "risposta": "Circa 100: ln K = 11 400/(8,314 · 298) ≈ 4,6."
+    },
+    {
+     "domanda": "Sintesi dell'ammoniaca: ΔH° = −92 kJ, ΔS° = −199 J/K. Sotto quale temperatura è spontanea in condizioni standard?",
+     "risposta": "Sotto circa 462 K: T* = 92 000/199."
+    },
+    {
+     "domanda": "Una pila con n = 2 ha ΔG° = −193 kJ. Quanto vale E°?",
+     "risposta": "Circa 1,0 V: E° = 193 000/(2 · 96 485)."
+    },
+    {
+     "domanda": "Per una reazione esotermica, che cosa succede a K se si aumenta la temperatura?",
+     "risposta": "Diminuisce, secondo van 't Hoff (ΔH° < 0)."
+    },
+    {
+     "domanda": "L'etanolo ha ΔH_vap ≈ 38,6 kJ/mol e ΔS_vap ≈ 110 J/(mol·K). Dove bolle?",
+     "risposta": "Circa a 351 K (78 °C): 38 600/110."
+    }
+   ]
+  }
+ }
+}

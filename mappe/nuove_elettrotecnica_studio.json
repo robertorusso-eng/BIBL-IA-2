@@ -1,0 +1,638 @@
+{
+  "Leggi di Ohm e di Kirchhoff": {
+    "superiore": {
+      "spiegazione": [
+        "Un circuito elettrico si descrive con tre grandezze. La corrente I è la quantità di carica che attraversa una sezione del conduttore ogni secondo e si misura in ampere (1 A = 1 C/s). La tensione V è la differenza di potenziale tra due punti, cioè l'energia che ogni coulomb di carica guadagna o perde passando da un punto all'altro, e si misura in volt. La resistenza R misura quanto un componente ostacola il passaggio della corrente e si misura in ohm. Un'immagine utile è quella dell'acqua: la tensione è il dislivello, la corrente è la portata, la resistenza è un tubo più o meno stretto.",
+        "La prima legge di Ohm dice che in un conduttore ohmico la tensione è proporzionale alla corrente: V = R·I. Da questa formula si ricavano I = V/R e R = V/I, quindi basta conoscere due grandezze per trovare la terza. Per esempio un resistore da 4 Ω collegato a 12 V è attraversato da 3 A. Nel grafico tensione-corrente un resistore ohmico è una retta che passa per l'origine, con pendenza uguale alla resistenza. Componenti come il diodo o la lampadina a filamento non seguono questa legge, perché la loro resistenza cambia con la corrente o con la temperatura.",
+        "La seconda legge di Ohm spiega da che cosa dipende la resistenza di un filo: R = ρ·L/S. La resistività ρ è una proprietà del materiale (il rame ne ha pochissima, la plastica moltissima), L è la lunghezza e S la sezione. Un filo lungo e sottile ha più resistenza di uno corto e grosso: per questo i cavi delle stufe sono più spessi di quelli di una lampada. Nei metalli la resistenza cresce con la temperatura, secondo R = R₀(1 + αΔT), proprietà sfruttata nei termometri a resistenza.",
+        "Quando la corrente attraversa una resistenza, l'energia elettrica si trasforma in calore: è l'effetto Joule. La potenza dissipata è P = V·I, che con la legge di Ohm diventa anche P = R·I² e P = V²/R. L'energia è potenza per tempo, E = P·t: in bolletta si misura in kilowattora, cioè l'energia di un apparecchio da 1000 W acceso per un'ora. Un asciugacapelli da 2000 W acceso per mezz'ora consuma 1 kWh.",
+        "Le leggi di Kirchhoff servono per i circuiti con più rami. La legge dei nodi dice che in ogni nodo la somma delle correnti entranti è uguale alla somma delle uscenti, perché la carica non si accumula. La legge delle maglie dice che, percorrendo un anello chiuso, la somma delle tensioni dei generatori è uguale alla somma delle cadute sui resistori. Per esempio con un generatore da 24 V e due cadute da 6 V e 10 V, sul terzo resistore restano 8 V. Insieme alla legge di Ohm, queste due regole permettono di risolvere qualsiasi rete di resistori."
+      ],
+      "metodo": [
+        "Impara il «triangolo» V-R-I: copri la grandezza che cerchi e leggi la formula che resta.",
+        "Prima di ogni calcolo converti tutto in unità base: mA in A, kΩ in Ω, mm² in m².",
+        "Disegna sempre il circuito e segna con una freccia il verso scelto per ogni corrente.",
+        "Per la legge delle maglie percorri l'anello in un verso fisso e scrivi con il segno ogni tensione incontrata.",
+        "Controlla il risultato con un secondo calcolo, per esempio la potenza sia con V·I sia con R·I².",
+        "Collega la mappa a «Circuiti in corrente continua» e alla fisica dell'elettricità."
+      ],
+      "ricorda": [
+        "«Vieni Rapido In treno»: V = R · I.",
+        "Più spinta (V) = più corrente; più freno (R) = meno corrente.",
+        "Nodi = correnti, maglie = tensioni.",
+        "1 kWh = 1000 W per 1 ora = 3,6 milioni di joule."
+      ],
+      "errori": [
+        "Moltiplicare tensione e resistenza per trovare la corrente invece di dividere.",
+        "Dimenticare di convertire i milliampere in ampere o i mm² in m².",
+        "Confondere la legge dei nodi (correnti) con quella delle maglie (tensioni).",
+        "Collegare l'amperometro in parallelo: va in serie, mentre il voltmetro va in parallelo.",
+        "Pensare che la resistenza di un filo dipenda dalla tensione applicata."
+      ],
+      "domande": [
+        {
+          "domanda": "Quale corrente passa in un resistore da 10 Ω collegato a 5 V?",
+          "risposta": "0,5 A: I = 5/10."
+        },
+        {
+          "domanda": "Che potenza dissipa un resistore da 100 Ω attraversato da 0,5 A?",
+          "risposta": "25 W: P = R·I² = 100 · 0,25."
+        },
+        {
+          "domanda": "In un nodo entrano 3 A e 4 A ed escono 5 A da un ramo. Quanto esce dall'altro?",
+          "risposta": "2 A: 3 + 4 − 5."
+        },
+        {
+          "domanda": "Se raddoppi la lunghezza di un filo, che cosa succede alla sua resistenza?",
+          "risposta": "Raddoppia, perché R = ρL/S."
+        },
+        {
+          "domanda": "Come si collega un voltmetro?",
+          "risposta": "In parallelo al componente di cui si vuole misurare la tensione."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "In un bipolo lineare la relazione costitutiva del resistore è v = R·i, con la convenzione degli utilizzatori: la corrente entra dal morsetto a potenziale più alto e la potenza assorbita p = v·i è positiva. La conduttanza G = 1/R, in siemens, semplifica i calcoli con elementi in parallelo. La resistenza di un conduttore omogeneo è R = ρL/S, e la dipendenza dalla temperatura nei metalli è approssimata da R = R₀(1 + αΔT), con α ≈ 0,0039 °C⁻¹ per il rame. Nei semiconduttori e nei termistori NTC il coefficiente è invece negativo.",
+        "Le leggi di Kirchhoff sono le equazioni topologiche della rete e valgono indipendentemente dalla natura dei componenti. La LKC (legge di Kirchhoff delle correnti) è conseguenza della conservazione della carica; la LKT (delle tensioni) deriva dal fatto che il campo elettrostatico è conservativo. In una rete con n nodi e r rami si scrivono n − 1 equazioni ai nodi indipendenti e r − n + 1 equazioni alle maglie indipendenti, per un totale di r equazioni nelle r correnti incognite. Per esempio con 4 nodi e 6 rami servono 3 equazioni ai nodi e 3 alle maglie.",
+        "Per ridurre il numero di equazioni si usano metodi sistematici. Il metodo delle correnti di maglia assegna una corrente fittizia a ogni maglia indipendente e scrive solo le LKT: il sistema ha r − n + 1 incognite. Il metodo dei potenziali di nodo fissa un nodo di riferimento e scrive le LKC in funzione dei potenziali degli altri n − 1 nodi, con la matrice delle conduttanze. La scelta conviene in base a quale numero è più piccolo e al tipo di generatori presenti.",
+        "Il principio di sovrapposizione degli effetti vale per le reti lineari: ogni tensione e corrente è la somma dei contributi dei singoli generatori indipendenti, ciascuno agente da solo. I generatori di tensione spenti si sostituiscono con cortocircuiti, quelli di corrente con circuiti aperti. Il principio non si applica alle potenze, che sono quadratiche nelle correnti. È molto utile anche per capire l'effetto di ogni sorgente in reti con alimentazioni diverse.",
+        "Il modello del generatore reale di tensione è una f.e.m. E in serie a una resistenza interna Ri: la tensione ai morsetti diminuisce con la corrente, V = E − Ri·I. La corrente di cortocircuito Icc = E/Ri e la tensione a vuoto E caratterizzano completamente il generatore lineare. Con E = 12 V e Ri = 0,5 Ω si ha Icc = 24 A. Questa descrizione è il punto di partenza dei teoremi di Thévenin e Norton."
+      ],
+      "metodo": [
+        "Per ogni esercizio conta nodi e rami e decidi subito se conviene il metodo delle maglie o quello dei nodi.",
+        "Usa sempre la convenzione degli utilizzatori e indica i versi positivi prima di scrivere le equazioni.",
+        "Scrivi il sistema in forma matriciale e risolvilo con Cramer o per sostituzione, poi verifica una LKC non usata.",
+        "Con la sovrapposizione disegna un circuito separato per ogni generatore acceso.",
+        "Controlla il bilancio delle potenze: la somma delle potenze erogate deve uguagliare quella assorbita.",
+        "Collega l'argomento ai teoremi delle reti in «Circuiti in corrente continua»."
+      ],
+      "ricorda": [
+        "n − 1 nodi, r − n + 1 maglie: in totale r equazioni.",
+        "Generatore spento: tensione → filo, corrente → buco.",
+        "La sovrapposizione somma correnti e tensioni, mai potenze.",
+        "Bilancio di Tellegen: Σ potenze = 0."
+      ],
+      "errori": [
+        "Scrivere una LKC per tutti gli n nodi e ottenere un sistema singolare.",
+        "Spegnere un generatore di corrente sostituendolo con un cortocircuito.",
+        "Applicare la sovrapposizione alle potenze.",
+        "Mescolare convenzione degli utilizzatori e dei generatori, sbagliando il segno delle potenze.",
+        "Considerare ideale un generatore reale e trovare correnti di cortocircuito infinite."
+      ],
+      "domande": [
+        {
+          "domanda": "Quante equazioni alle maglie indipendenti ha una rete con 5 nodi e 8 rami?",
+          "risposta": "4: r − n + 1 = 8 − 5 + 1."
+        },
+        {
+          "domanda": "Da quale principio fisico deriva la LKC?",
+          "risposta": "Dalla conservazione della carica elettrica."
+        },
+        {
+          "domanda": "Un generatore ha tensione a vuoto 9 V e corrente di cortocircuito 3 A. Quanto vale Ri?",
+          "risposta": "3 Ω: Ri = E / Icc."
+        },
+        {
+          "domanda": "Perché la sovrapposizione non vale per le potenze?",
+          "risposta": "Perché la potenza dipende dal quadrato della corrente, quindi non è lineare."
+        },
+        {
+          "domanda": "Quanto vale una resistenza di rame da 10 Ω a 20 °C se la temperatura sale di 50 °C (α = 0,0039)?",
+          "risposta": "Circa 11,95 Ω: 10 · (1 + 0,0039 · 50)."
+        }
+      ]
+    }
+  },
+  "Circuiti in corrente continua": {
+    "superiore": {
+      "spiegazione": [
+        "Due componenti sono in serie quando sono attraversati dalla stessa corrente, uno dopo l'altro, senza diramazioni. In questo caso le resistenze si sommano: Req = R1 + R2 + … e la resistenza equivalente è sempre maggiore della più grande. La tensione del generatore si divide tra i resistori in proporzione al loro valore: è il partitore di tensione, Vk = V·Rk/Req. Con 10 V su 2 Ω e 3 Ω in serie, sul primo cadono 4 V e sul secondo 6 V.",
+        "Due componenti sono in parallelo quando sono collegati agli stessi due nodi e hanno quindi la stessa tensione. In questo caso si sommano gli inversi: 1/Req = 1/R1 + 1/R2 + …, e la resistenza equivalente è sempre minore della più piccola. Per due soli resistori conviene la formula «prodotto diviso somma». La corrente si divide tra i rami in proporzione inversa alle resistenze: nel ramo con meno resistenza passa più corrente. Le prese di casa sono collegate in parallelo, per questo ogni apparecchio riceve 230 V.",
+        "I circuiti misti si risolvono riducendoli a passi, partendo dai gruppi più interni, come si fa con le parentesi in un'espressione. Per esempio 6 Ω e 3 Ω in parallelo danno 2 Ω, che in serie con altri 2 Ω danno 4 Ω. Trovata la resistenza equivalente si calcola la corrente totale e poi, tornando indietro, le tensioni e le correnti in ogni ramo. Questo procedimento si chiama «riduzione e ricostruzione».",
+        "Un generatore reale, come una pila, ha una piccola resistenza interna: la tensione ai morsetti diminuisce quando eroga corrente, V = E − Ri·I. Per questo le luci dell'auto calano quando si avvia il motore. Il ponte di Wheatstone è un circuito a quattro resistori che permette di misurare con precisione una resistenza sconosciuta, cercando la condizione in cui nel ramo centrale non passa corrente. Per esempio una pila da 9 V con 1 Ω di resistenza interna, che eroga 1 A, fornisce ai morsetti solo 8 V.",
+        "Il condensatore è formato da due armature separate da un isolante e accumula carica: Q = C·V, con C in farad. In continua, una volta carico, non lascia passare corrente e si comporta come un circuito aperto. La carica attraverso una resistenza non è istantanea: la costante di tempo τ = R·C indica la velocità, e dopo un τ il condensatore è carico al 63%, dopo 5τ praticamente del tutto. Con 1 kΩ e 100 µF si ha τ = 0,1 s."
+      ],
+      "metodo": [
+        "Prima di calcolare, ridisegna il circuito con i nodi ben evidenziati per riconoscere serie e parallelo.",
+        "Riduci il circuito un passo alla volta scrivendo accanto il valore di ogni gruppo.",
+        "Dopo aver trovato la corrente totale, ricostruisci all'indietro tensioni e correnti di ogni ramo.",
+        "Verifica che le correnti rispettino la legge dei nodi e le tensioni la legge delle maglie.",
+        "Esercitati con il calcolo della resistenza di limitazione di un LED e con il partitore di tensione.",
+        "Collega la mappa a «Leggi di Ohm e di Kirchhoff» e a «Componenti elettronici»."
+      ],
+      "ricorda": [
+        "Serie: stessa corrente, le R si sommano.",
+        "Parallelo: stessa tensione, si sommano gli 1/R.",
+        "Due in parallelo: prodotto diviso somma.",
+        "τ = RC: 63% dopo un τ, carico dopo 5τ."
+      ],
+      "errori": [
+        "Considerare in serie due resistori tra i quali c'è un nodo con una diramazione.",
+        "Dimenticare di invertire il risultato di 1/Req nel calcolo del parallelo.",
+        "Pensare che in un parallelo la corrente si divida sempre in parti uguali.",
+        "Ignorare la resistenza interna del generatore quando è indicata.",
+        "Credere che un condensatore lasci passare corrente continua a regime."
+      ],
+      "domande": [
+        {
+          "domanda": "Quanto vale la resistenza equivalente di 4 Ω e 12 Ω in parallelo?",
+          "risposta": "3 Ω: 48/16."
+        },
+        {
+          "domanda": "E di 4 Ω e 12 Ω in serie?",
+          "risposta": "16 Ω."
+        },
+        {
+          "domanda": "Un partitore con 1 kΩ e 4 kΩ è alimentato a 10 V. Quanta tensione cade su 4 kΩ?",
+          "risposta": "8 V: 10 · 4/5."
+        },
+        {
+          "domanda": "Qual è la costante di tempo con R = 10 kΩ e C = 10 µF?",
+          "risposta": "0,1 s."
+        },
+        {
+          "domanda": "Che cosa succede alle altre lampadine in parallelo se una si brucia?",
+          "risposta": "Restano accese, perché ognuna ha il suo ramo alla stessa tensione."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "In regime stazionario le reti di resistori e generatori si analizzano con le leggi di Kirchhoff e con le regole di equivalenza serie-parallelo. Quando la rete non è riducibile in serie e parallelo, come nel caso di un ponte non bilanciato, si usano le trasformazioni stella-triangolo oppure i metodi sistematici dei nodi e delle maglie. Le formule del partitore di tensione e di corrente restano gli strumenti più rapidi per i casi semplici. Il ponte di Wheatstone bilanciato soddisfa R1·R4 = R2·R3 e la corrente nel ramo centrale è nulla.",
+        "Il teorema di Thévenin afferma che una rete lineare vista da due morsetti equivale a un generatore ideale Eth in serie a una resistenza Rth. Eth è la tensione a vuoto tra i morsetti; Rth è la resistenza vista dai morsetti con tutti i generatori indipendenti spenti, oppure il rapporto Eth/Icc. Il teorema di Norton è il duale: un generatore di corrente In = Icc in parallelo a Rn = Rth. Per esempio 12 V con 3 Ω in serie e 6 Ω in parallelo ai morsetti danno Eth = 8 V e Rth = 2 Ω.",
+        "Il teorema del massimo trasferimento di potenza stabilisce che la potenza sul carico è massima quando RL = Rth e vale Pmax = Eth²/(4Rth). In quella condizione il rendimento è del 50%, perché metà della potenza è dissipata in Rth. Per questo l'adattamento si usa nelle telecomunicazioni e nell'audio, ma non nella distribuzione di energia, dove si cerca invece RL molto maggiore di Rth per avere alto rendimento. Per esempio con Eth = 9 V e Rth = 3 Ω il carico ottimale è 3 Ω e riceve 6,75 W.",
+        "I circuiti del primo ordine contengono un solo elemento con memoria. Per un circuito RC la tensione sul condensatore segue vc(t) = vc(∞) + [vc(0) − vc(∞)]·e^(−t/τ) con τ = RC; per un circuito RL la stessa forma vale per la corrente nell'induttore con τ = L/R. A regime stazionario il condensatore è un circuito aperto e l'induttore un cortocircuito. Le grandezze di stato, tensione sul condensatore e corrente nell'induttore, sono continue nel tempo anche quando si chiude un interruttore.",
+        "L'energia immagazzinata vale W = ½CV² nel condensatore e W = ½LI² nell'induttore. Un condensatore da 100 µF a 12 V contiene 7,2 mJ. Interrompere bruscamente la corrente in un induttore genera sovratensioni elevate, perché v = L·di/dt: per questo le bobine dei relè si proteggono con un diodo di ricircolo. Nei circuiti reali si considerano anche la resistenza serie equivalente dei condensatori e la resistenza degli avvolgimenti."
+      ],
+      "metodo": [
+        "Per Thévenin calcola Eth e Rth in due disegni separati, poi verificali con Icc = Eth/Rth.",
+        "Con generatori dipendenti calcola Rth applicando un generatore di prova ai morsetti.",
+        "Nei transitori trova sempre tre cose: valore iniziale, valore finale e costante di tempo.",
+        "Controlla le dimensioni: RC e L/R devono risultare in secondi.",
+        "Risolvi lo stesso circuito con nodi, maglie e Thévenin per confrontare i metodi.",
+        "Collega l'argomento alla «Corrente alternata», dove gli stessi teoremi valgono con le impedenze."
+      ],
+      "ricorda": [
+        "Thévenin: tensione a vuoto e resistenza a generatori spenti.",
+        "Rth = Eth / Icc.",
+        "Massimo trasferimento: RL = Rth, rendimento 50%.",
+        "Transitorio: x(t) = x∞ + (x₀ − x∞)·e^(−t/τ)."
+      ],
+      "errori": [
+        "Calcolare Rth senza spegnere i generatori indipendenti.",
+        "Spegnere anche i generatori dipendenti nel calcolo di Rth.",
+        "Confondere massimo trasferimento di potenza e massimo rendimento.",
+        "Usare τ = RC per un circuito RL invece di τ = L/R.",
+        "Imporre una discontinuità della tensione sul condensatore all'istante di commutazione."
+      ],
+      "domande": [
+        {
+          "domanda": "Un bipolo ha tensione a vuoto 10 V e corrente di cortocircuito 2 A. Qual è il suo equivalente di Norton?",
+          "risposta": "Generatore di corrente da 2 A in parallelo a 5 Ω."
+        },
+        {
+          "domanda": "Quanto vale la massima potenza trasferibile da Eth = 12 V, Rth = 4 Ω?",
+          "risposta": "9 W: 144/16."
+        },
+        {
+          "domanda": "Quanto vale τ per un circuito RL con L = 50 mH e R = 10 Ω?",
+          "risposta": "5 ms."
+        },
+        {
+          "domanda": "Quale grandezza è continua in un induttore all'istante di commutazione?",
+          "risposta": "La corrente."
+        },
+        {
+          "domanda": "Quanta energia contiene un induttore da 0,2 H percorso da 3 A?",
+          "risposta": "0,9 J: ½ · 0,2 · 9."
+        }
+      ]
+    }
+  },
+  "Corrente alternata": {
+    "superiore": {
+      "spiegazione": [
+        "La corrente alternata cambia continuamente valore e verso seguendo una sinusoide: v(t) = Vmax·sin(ωt). Il tempo di un'oscillazione completa è il periodo T, il numero di oscillazioni al secondo è la frequenza f = 1/T, in hertz. In Italia la rete elettrica è a 50 Hz, quindi ogni periodo dura 20 ms. La pulsazione ω = 2πf si misura in radianti al secondo. L'alternata si usa nella distribuzione perché si può alzare e abbassare facilmente con i trasformatori.",
+        "Poiché il valore cambia sempre, si usa il valore efficace: è il valore della corrente continua che produrrebbe lo stesso calore sulla stessa resistenza. Per una sinusoide Veff = Vmax/√2. I 230 V di casa sono un valore efficace: il picco è circa 325 V. Strumenti e targhette degli apparecchi indicano sempre valori efficaci, salvo indicazione diversa.",
+        "I componenti si comportano in modo diverso in alternata. Nel resistore tensione e corrente sono in fase. Nell'induttore la corrente è in ritardo di 90° sulla tensione e l'opposizione al passaggio è la reattanza induttiva XL = 2πfL, che cresce con la frequenza. Nel condensatore la corrente è in anticipo di 90° e la reattanza capacitiva XC = 1/(2πfC) diminuisce con la frequenza. Per esempio una bobina da 0,1 H a 50 Hz ha XL ≈ 31,4 Ω.",
+        "Nei circuiti con resistenze e reattanze l'opposizione totale si chiama impedenza Z, in ohm. In un circuito RL serie Z = √(R² + XL²): con R = 30 Ω e XL = 40 Ω si ottiene Z = 50 Ω. La legge di Ohm diventa V = Z·I. Lo sfasamento φ tra tensione e corrente dipende dal rapporto tra reattanza e resistenza.",
+        "In alternata ci sono tre potenze. La potenza attiva P = V·I·cosφ, in watt, è quella che fa lavoro utile o scalda. La reattiva Q = V·I·senφ, in var, oscilla tra rete e carico. L'apparente S = V·I, in VA, è quella su cui si dimensionano cavi e trasformatori. Il cosφ è il fattore di potenza: se è basso serve più corrente per la stessa potenza utile. Nella distribuzione si usa il sistema trifase, con 400 V tra due fasi e 230 V tra fase e neutro."
+      ],
+      "metodo": [
+        "Disegna una sinusoide e segna periodo, picco e valore efficace con i numeri della rete di casa.",
+        "Fai una tabella R, L, C con reattanza, dipendenza dalla frequenza e sfasamento.",
+        "Risolvi i circuiti serie con il triangolo dell'impedenza e quello delle potenze.",
+        "Ricorda le terne pitagoriche (3-4-5, 6-8-10) che compaiono spesso negli esercizi.",
+        "Leggi la targhetta di un elettrodomestico e ricava corrente e potenza.",
+        "Collega la mappa a «Macchine elettriche» per trasformatori e motori trifase."
+      ],
+      "ricorda": [
+        "«ELI the ICE man»: in L la tensione (E) viene prima di I, in C la corrente (I) prima di E.",
+        "Picco = efficace × 1,41.",
+        "L ama le basse frequenze, C ama le alte.",
+        "400 V tra fasi, 230 V tra fase e neutro (rapporto √3)."
+      ],
+      "errori": [
+        "Confondere valore efficace e valore di picco.",
+        "Sommare resistenza e reattanza direttamente invece che come cateti.",
+        "Calcolare la potenza attiva come V·I senza il cosφ.",
+        "Invertire le dipendenze: XL cresce con f, XC diminuisce.",
+        "Dimenticare il fattore 2π nelle reattanze."
+      ],
+      "domande": [
+        {
+          "domanda": "Quanto vale il periodo di una tensione a 60 Hz?",
+          "risposta": "Circa 16,7 ms."
+        },
+        {
+          "domanda": "Qual è il picco di una tensione di 12 V efficaci?",
+          "risposta": "Circa 17 V: 12 · √2."
+        },
+        {
+          "domanda": "Un circuito RC serie ha R = 6 Ω e XC = 8 Ω. Quanto vale Z?",
+          "risposta": "10 Ω."
+        },
+        {
+          "domanda": "Un carico assorbe 5 A a 230 V con cosφ = 0,9. Quanto vale P?",
+          "risposta": "1035 W."
+        },
+        {
+          "domanda": "In quale componente la corrente è in anticipo sulla tensione?",
+          "risposta": "Nel condensatore."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "In regime sinusoidale permanente ogni grandezza ha la stessa pulsazione ω e si rappresenta con un fasore, un numero complesso che ne contiene ampiezza (di solito efficace) e fase. Le derivate diventano moltiplicazioni per jω: per questo le relazioni costitutive diventano V = Z·I con ZR = R, ZL = jωL, ZC = 1/(jωC). Le leggi di Kirchhoff, i teoremi di Thévenin e Norton e la sovrapposizione si applicano come in continua, ma in campo complesso. L'impedenza Z = R + jX ha parte reale resistiva e parte immaginaria reattiva.",
+        "L'angolo dell'impedenza è lo sfasamento φ = arctan(X/R) tra tensione e corrente: positivo per carichi induttivi (corrente in ritardo), negativo per carichi capacitivi. Con R = 30 Ω e XL = 40 Ω si ha φ ≈ 53° e cosφ = 0,6. L'inverso dell'impedenza è l'ammettenza Y = G + jB, utile per i paralleli. La rappresentazione nel piano complesso permette di sommare graficamente le tensioni con il diagramma fasoriale.",
+        "La potenza complessa è S = V·I* = P + jQ, dove I* è il coniugato della corrente. La potenza attiva è la media della potenza istantanea, quella reattiva rappresenta lo scambio di energia con i campi elettrici e magnetici. Per il teorema di Boucherot in una rete si conservano separatamente le potenze attive e reattive. Il rifasamento consiste nell'aggiungere condensatori in parallelo al carico induttivo: la potenza reattiva necessaria è Qc = P·(tanφ₁ − tanφ₂), e riduce la corrente di linea e le perdite.",
+        "In un circuito RLC serie la reattanza totale X = ωL − 1/(ωC) si annulla alla pulsazione di risonanza ω₀ = 1/√(LC). L'impedenza è allora minima e pari a R, la corrente è massima e in fase con la tensione. Il fattore di merito Q = ω₀L/R misura la selettività: le tensioni su L e C possono essere Q volte la tensione applicata. Nel parallelo ideale, alla risonanza, l'impedenza tende all'infinito. Con L = 10 mH e C = 1 µF si ha f₀ ≈ 1,59 kHz.",
+        "I sistemi trifase simmetrici usano tre tensioni di uguale ampiezza sfasate di 120°. Nel collegamento a stella la tensione concatenata è √3 volte quella di fase e le correnti di linea coincidono con quelle di fase; nel collegamento a triangolo è la corrente di linea a essere √3 volte quella di fase. La potenza attiva totale di un carico equilibrato è P = √3·V·I·cosφ, con V concatenata e I di linea. Rispetto al monofase, a parità di potenza il trifase richiede meno rame e produce un campo rotante utile per i motori."
+      ],
+      "metodo": [
+        "Esercitati a passare da forma algebrica a forma polare dei numeri complessi e viceversa con la calcolatrice.",
+        "Disegna sempre il diagramma fasoriale prima di calcolare: aiuta a prevedere segni e sfasamenti.",
+        "Per il rifasamento procedi sempre con tanφ, non con gli angoli o i coseni direttamente.",
+        "Nei trifase equilibrati riduci il problema al circuito monofase equivalente fase-neutro.",
+        "Verifica i risultati con il bilancio di Boucherot su P e Q.",
+        "Collega la mappa ai «Circuiti in corrente continua» (stessi teoremi) e alle «Macchine elettriche»."
+      ],
+      "ricorda": [
+        "Derivare = moltiplicare per jω.",
+        "S = V·I*: parte reale P, parte immaginaria Q.",
+        "Risonanza serie: Z = R, corrente massima.",
+        "Stella: V di linea = √3 V di fase; triangolo: I di linea = √3 I di fase."
+      ],
+      "errori": [
+        "Usare il valore massimo al posto dell'efficace nel calcolo delle potenze.",
+        "Dimenticare il coniugato nella potenza complessa.",
+        "Sbagliare il segno della reattanza capacitiva (−j/ωC).",
+        "Applicare √3 nel posto sbagliato tra stella e triangolo.",
+        "Confondere frequenza f e pulsazione ω nella formula della risonanza."
+      ],
+      "domande": [
+        {
+          "domanda": "Quanto vale l'impedenza di un condensatore da 10 µF a ω = 1000 rad/s?",
+          "risposta": "−j100 Ω."
+        },
+        {
+          "domanda": "Un carico ha S = 10 kVA e P = 8 kW. Quanto vale Q?",
+          "risposta": "6 kvar."
+        },
+        {
+          "domanda": "Che cosa afferma il teorema di Boucherot?",
+          "risposta": "Che in una rete le potenze attive e reattive totali sono la somma di quelle dei singoli elementi."
+        },
+        {
+          "domanda": "Qual è la pulsazione di risonanza con L = 1 mH e C = 1 µF?",
+          "risposta": "31 623 rad/s circa: 1/√(10⁻⁹)."
+        },
+        {
+          "domanda": "Perché si rifasano gli impianti industriali?",
+          "risposta": "Per ridurre la corrente di linea, le perdite e le penali per l'energia reattiva."
+        }
+      ]
+    }
+  },
+  "Componenti elettronici: diodi e transistor": {
+    "superiore": {
+      "spiegazione": [
+        "I componenti elettronici moderni sono fatti di semiconduttori, soprattutto silicio. Il silicio puro conduce poco, ma aggiungendo piccolissime quantità di altri elementi (drogaggio) si controlla la sua conducibilità. Con elementi a cinque elettroni di valenza, come il fosforo, si ottiene silicio di tipo N, ricco di elettroni liberi; con elementi a tre, come il boro, si ottiene silicio di tipo P, ricco di lacune, cioè «posti vuoti» che si comportano come cariche positive. Bastano pochi atomi di drogante ogni milione di atomi di silicio per cambiare la conducibilità di migliaia di volte.",
+        "Unendo una zona P e una zona N si forma una giunzione PN, cioè un diodo. Vicino al confine si crea una zona senza portatori liberi (zona di svuotamento) che fa da barriera. Se l'anodo (P) è più positivo del catodo (N) di circa 0,7 V il diodo al silicio conduce: è la polarizzazione diretta. In polarizzazione inversa passa una corrente quasi nulla. Il diodo funziona quindi come una valvola che lascia passare la corrente in un solo verso.",
+        "L'uso più comune dei diodi è il raddrizzatore, che trasforma l'alternata in una tensione di un solo segno. Con un diodo si raddrizza una sola semionda; con il ponte di Graetz a quattro diodi si raddrizzano entrambe. Un condensatore di filtro riempie i «vuoti» tra le semionde e rende la tensione quasi continua. Tra i diodi speciali ci sono lo Zener, che in inversa mantiene una tensione costante, e il LED, che emette luce con soglie tra circa 1,8 V e 3,3 V.",
+        "Il transistor bipolare (BJT) ha tre strati, NPN o PNP, e tre terminali: base, collettore ed emettitore. Una piccola corrente di base controlla una corrente di collettore molto più grande: Ic = β·Ib, con β tipicamente tra 50 e 300. Con β = 100 e Ib = 20 µA si ottiene Ic = 2 mA. In zona attiva il transistor amplifica; in interdizione è spento e in saturazione è completamente acceso, quindi può fare da interruttore.",
+        "Il MOSFET è un transistor a effetto di campo con terminali gate, drain e source. Il gate è isolato da un sottile strato di ossido, quindi il MOSFET si comanda con una tensione e non assorbe corrente in continua. Quando la tensione gate-source supera una soglia si forma un canale conduttivo tra drain e source. I MOSFET sono alla base dei circuiti digitali CMOS e degli interruttori di potenza negli alimentatori e negli inverter."
+      ],
+      "metodo": [
+        "Disegna la struttura P-N del diodo con anodo e catodo e il verso della freccia del simbolo.",
+        "Risolvi i circuiti con diodi sostituendo il diodo in conduzione con una caduta di 0,7 V.",
+        "Disegna le forme d'onda di un raddrizzatore a semionda e a doppia semionda, con e senza condensatore.",
+        "Per i BJT impara la catena: Ib → Ic = β·Ib → caduta su Rc → Vce.",
+        "Calcola una resistenza per un LED e una per uno Zener con dati reali.",
+        "Collega la mappa a «Circuiti in corrente continua» e a «Elettronica digitale e porte logiche»."
+      ],
+      "ricorda": [
+        "La freccia del diodo indica il verso in cui passa la corrente.",
+        "Silicio: 0,7 V per accendersi.",
+        "N = negativo (elettroni), P = positivo (lacune).",
+        "BJT: comando in corrente; MOSFET: comando in tensione."
+      ],
+      "errori": [
+        "Dimenticare la caduta di 0,7 V sul diodo nei calcoli.",
+        "Montare uno Zener in polarizzazione diretta pensando che stabilizzi.",
+        "Collegare un LED senza resistenza in serie.",
+        "Confondere i terminali del BJT con quelli del MOSFET.",
+        "Pensare che il gate del MOSFET assorba corrente come la base del BJT."
+      ],
+      "domande": [
+        {
+          "domanda": "Che tipo di semiconduttore si ottiene drogando il silicio con boro?",
+          "risposta": "Di tipo P."
+        },
+        {
+          "domanda": "Quale resistenza serve per un LED da 2 V e 10 mA alimentato a 5 V?",
+          "risposta": "300 Ω: 3 V / 0,01 A."
+        },
+        {
+          "domanda": "Con β = 200 e Ib = 50 µA quanto vale Ic?",
+          "risposta": "10 mA."
+        },
+        {
+          "domanda": "Quanti diodi ha un ponte di Graetz?",
+          "risposta": "Quattro."
+        },
+        {
+          "domanda": "In quali zone lavora un transistor usato come interruttore?",
+          "risposta": "Interdizione e saturazione."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "La caratteristica del diodo a giunzione segue l'equazione di Shockley: I = Is·(e^(V/(n·VT)) − 1), dove Is è la corrente di saturazione inversa, n il fattore di idealità e VT = kT/q ≈ 26 mV a temperatura ambiente. La dipendenza esponenziale spiega perché la tensione in conduzione cambi poco con la corrente, circa 60 mV per decade: da qui il modello a soglia costante di 0,7 V. In inversa, oltre la tensione di breakdown, la corrente cresce bruscamente per effetto Zener o valanga. La capacità di giunzione limita la velocità di commutazione.",
+        "Nei raddrizzatori con filtro capacitivo il condensatore si carica al picco e si scarica sul carico tra un picco e l'altro: il ripple picco-picco è circa ΔV ≈ I/(f_r·C), con f_r = 100 Hz per la doppia semionda a 50 Hz. I diodi conducono solo brevi impulsi di corrente molto intensi vicino al picco. Senza filtro, la doppia semionda ha valore medio 2Vmax/π. Dopo il filtro, regolatori lineari o switching mantengono costante la tensione.",
+        "Nel BJT in zona attiva la giunzione base-emettitore è in diretta e quella base-collettore in inversa. Valgono Ie = Ic + Ib, Ic = α·Ie, Ic = β·Ib e β = α/(1 − α): con α = 0,99 si ha β = 99. La polarizzazione fissa il punto di lavoro (Ic, Vce) sulla retta di carico; la configurazione a partitore con resistenza di emettitore lo rende stabile rispetto alle variazioni di β e temperatura. Nel modello per piccoli segnali compaiono la transconduttanza gm = Ic/VT e la resistenza re = VT/Ie.",
+        "Lo stadio a emettitore comune ha guadagno di tensione circa −gm·Rc (con emettitore a massa per il segnale) e inverte la fase; il collettore comune (inseguitore di emettitore) ha guadagno circa unitario ma bassa impedenza d'uscita; la base comune ha bassa impedenza d'ingresso ed è adatta alle alte frequenze. In commutazione il transistor va in saturazione quando β·Ib supera la corrente richiesta dal carico, con un margine di sicurezza (fattore di sovrasaturazione). Per esempio con Ic = 1 mA e Rc = 5 kΩ il guadagno dell'emettitore comune è circa −5000/26 ≈ −190. Nella pratica una resistenza di emettitore non bypassata riduce il guadagno a circa −Rc/Re ma lo rende stabile e prevedibile.",
+        "Il MOSFET ad arricchimento a canale N conduce quando Vgs > Vt. In zona di triodo si comporta come una resistenza controllata in tensione; in saturazione Id = k·(Vgs − Vt)², con k che dipende da mobilità, capacità dell'ossido e rapporto W/L. La transconduttanza è gm = 2k(Vgs − Vt). La logica CMOS accoppia un MOSFET N e uno P in modo che in condizioni statiche uno dei due sia sempre spento: il consumo statico è quasi nullo e la potenza dinamica vale circa C·V²·f."
+      ],
+      "metodo": [
+        "Ricava a mano dall'equazione di Shockley quanti millivolt servono per moltiplicare per 10 la corrente.",
+        "Per ogni circuito a transistor fai prima l'analisi in continua (punto di lavoro), poi quella per piccoli segnali.",
+        "Disegna la retta di carico sulle caratteristiche d'uscita e segna il punto di lavoro.",
+        "Confronta le tre configurazioni del BJT in una tabella con guadagno, impedenze e fase.",
+        "Simula i circuiti con un simulatore gratuito come LTspice o ngspice e confronta con i calcoli.",
+        "Collega l'argomento a «Elettronica digitale» per la logica CMOS."
+      ],
+      "ricorda": [
+        "VT ≈ 26 mV a temperatura ambiente.",
+        "β = α / (1 − α), gm = Ic / VT.",
+        "Id = k(Vgs − Vt)² in saturazione.",
+        "Ripple ≈ I / (f_r C)."
+      ],
+      "errori": [
+        "Usare 0,7 V al posto di VT nei modelli per piccoli segnali.",
+        "Usare 50 Hz invece di 100 Hz per il ripple della doppia semionda.",
+        "Confondere la saturazione del BJT (interruttore chiuso) con la saturazione del MOSFET (zona amplificatrice).",
+        "Polarizzare con il solo resistore di base, ottenendo un punto di lavoro che dipende troppo da β.",
+        "Dimenticare la condizione Vgs > Vt prima di applicare la legge quadratica."
+      ],
+      "domande": [
+        {
+          "domanda": "Quanto vale gm di un BJT con Ic = 2 mA?",
+          "risposta": "Circa 77 mS: 2 mA / 26 mV."
+        },
+        {
+          "domanda": "Di quanto cresce la tensione di un diodo se la corrente aumenta di 10 volte (n = 1)?",
+          "risposta": "Circa 60 mV."
+        },
+        {
+          "domanda": "Quale configurazione del BJT ha guadagno di tensione circa unitario?",
+          "risposta": "Il collettore comune (inseguitore di emettitore)."
+        },
+        {
+          "domanda": "Con k = 1 mA/V², Vt = 1 V e Vgs = 3 V quanto vale Id in saturazione?",
+          "risposta": "4 mA."
+        },
+        {
+          "domanda": "Perché la logica CMOS consuma poco in condizioni statiche?",
+          "risposta": "Perché uno dei due transistor complementari è sempre spento e non c'è percorso diretto tra alimentazione e massa."
+        }
+      ]
+    }
+  },
+  "Elettronica digitale e porte logiche": {
+    "superiore": {
+      "spiegazione": [
+        "L'elettronica digitale lavora con due soli livelli di tensione, rappresentati con 0 e 1: sono i bit. Un livello basso, vicino a 0 V, vale 0; un livello alto, per esempio vicino a 5 V o 3,3 V, vale 1. Usare due soli livelli rende i circuiti molto resistenti ai disturbi. Con n bit si rappresentano 2ⁿ valori: 8 bit, cioè un byte, danno 256 combinazioni, da 0 a 255.",
+        "I numeri si scrivono in binario usando le potenze di 2: 1011 vale 8 + 0 + 2 + 1 = 11. L'esadecimale usa sedici cifre (0-9 e A-F) e ogni cifra corrisponde esattamente a 4 bit: 2F vale 2·16 + 15 = 47. I numeri negativi si rappresentano di solito in complemento a due: si invertono i bit e si aggiunge 1, così −5 su 8 bit diventa 11111011. Per passare da binario a esadecimale basta dividere i bit in gruppi di quattro partendo da destra.",
+        "Le porte logiche realizzano le operazioni dell'algebra di Boole. La AND dà 1 solo se tutti gli ingressi sono 1; la OR dà 1 se almeno un ingresso è 1; la NOT inverte; la XOR dà 1 se gli ingressi sono diversi. Le porte NAND e NOR sono la negazione di AND e OR e sono «universali», perché con una sola di esse si costruisce qualsiasi funzione. Ogni porta si descrive con una tabella di verità che elenca tutte le combinazioni degli ingressi.",
+        "I circuiti combinatori hanno uscite che dipendono solo dagli ingressi del momento: esempi sono i sommatori, i decodificatori e i multiplexer, che con n linee di selezione scelgono uno tra 2ⁿ ingressi. Per progettarli si parte dalla tabella di verità e si semplifica l'espressione con l'algebra di Boole o con le mappe di Karnaugh. Il teorema di De Morgan permette di trasformare un AND negato in un OR di variabili negate, e viceversa. Per esempio un multiplexer con 3 linee di selezione sceglie uno tra 8 ingressi.",
+        "I circuiti sequenziali hanno memoria: l'uscita dipende anche da ciò che è successo prima. L'elemento base è il flip-flop, che memorizza un bit. Il flip-flop D copia l'ingresso sull'uscita al fronte del clock; il flip-flop T cambia stato a ogni impulso. Collegando più flip-flop si ottengono registri, che memorizzano parole di bit, e contatori: un contatore a 4 bit conta da 0 a 15 e divide la frequenza del clock per 16."
+      ],
+      "metodo": [
+        "Esercitati ogni giorno a convertire 5 numeri tra decimale, binario ed esadecimale.",
+        "Impara a memoria le tabelle di verità di AND, OR, NOT, NAND, NOR e XOR disegnando anche i simboli.",
+        "Per ogni problema parti dalla tabella di verità, scrivi l'espressione e poi semplificala.",
+        "Verifica le semplificazioni confrontando la tabella di verità prima e dopo.",
+        "Usa un simulatore logico gratuito o una breadboard con integrati 74HC per provare i circuiti.",
+        "Collega la mappa a «Componenti elettronici» (transistor CMOS) e all'informatica."
+      ],
+      "ricorda": [
+        "AND = tutti, OR = almeno uno, XOR = diversi.",
+        "Pesi binari: 128, 64, 32, 16, 8, 4, 2, 1.",
+        "De Morgan: «spezza la barra e cambia il segno».",
+        "Complemento a due: inverti e aggiungi 1."
+      ],
+      "errori": [
+        "Leggere i pesi binari da sinistra verso destra partendo da 1.",
+        "Confondere OR con XOR quando entrambi gli ingressi sono 1.",
+        "Applicare De Morgan negando le variabili senza scambiare AND e OR.",
+        "Dire che con 8 bit si arriva a 256 invece che a 255.",
+        "Pensare che un circuito combinatorio possa ricordare uno stato precedente."
+      ],
+      "domande": [
+        {
+          "domanda": "Come si scrive 45 in binario?",
+          "risposta": "101101."
+        },
+        {
+          "domanda": "Quanto vale l'uscita di una NAND con ingressi 1 e 1?",
+          "risposta": "0."
+        },
+        {
+          "domanda": "Quanti ingressi di dati ha un multiplexer con 2 linee di selezione?",
+          "risposta": "4."
+        },
+        {
+          "domanda": "Che valore decimale ha FF in esadecimale?",
+          "risposta": "255."
+        },
+        {
+          "domanda": "Qual è la differenza tra un circuito combinatorio e uno sequenziale?",
+          "risposta": "Il sequenziale ha memoria, il combinatorio dipende solo dagli ingressi attuali."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Una funzione booleana di n variabili si può sempre scrivere in forma canonica come somma di mintermini (SOP) o prodotto di maxtermini (POS). La minimizzazione con le mappe di Karnaugh raggruppa celle adiacenti in potenze di 2, eliminando le variabili che cambiano all'interno del gruppo; le condizioni indifferenti (don't care) permettono gruppi più grandi. Per molte variabili si usa il metodo di Quine-McCluskey, implementato nei programmi di sintesi. Esempio: A·B + A·B̄ = A.",
+        "I circuiti combinatori notevoli includono sommatori (half adder e full adder, con propagazione o anticipo del riporto), comparatori, codificatori, decodificatori, multiplexer e demultiplexer. Un multiplexer a 2ⁿ ingressi può realizzare qualsiasi funzione di n variabili. Nei sommatori ripple-carry il ritardo cresce linearmente col numero di bit; il carry-lookahead lo riduce calcolando in parallelo i segnali di generazione e propagazione. I ritardi di propagazione possono causare impulsi spuri (glitch) chiamati alee.",
+        "Nei circuiti sequenziali sincroni tutti i flip-flop commutano sullo stesso fronte di clock. Si descrivono come macchine a stati finiti di Moore (uscita dipendente solo dallo stato) o di Mealy (uscita dipendente da stato e ingressi). Il progetto parte dal diagramma degli stati, assegna una codifica binaria, ricava le funzioni di eccitazione dei flip-flop (D, JK o T) e le minimizza. I vincoli temporali sono tempo di setup, tempo di hold e ritardo clock-uscita, che determinano la frequenza massima.",
+        "Le famiglie logiche si confrontano per livelli di tensione, margini di rumore, fan-out, ritardo di propagazione e consumo. La TTL usa transistor bipolari ed è oggi poco diffusa; la CMOS domina per il bassissimo consumo statico, con potenza dinamica P ≈ α·C·V²·f. Abbassare la tensione di alimentazione riduce il consumo in modo quadratico, motivo per cui i processori moderni lavorano sotto 1 V. Uscite open-drain e tri-state permettono di condividere linee comuni come i bus.",
+        "La conversione tra mondo analogico e digitale avviene con ADC e DAC. Un ADC a n bit con fondo scala Vfs ha risoluzione LSB = Vfs/2ⁿ e introduce un errore di quantizzazione fino a ½ LSB. Le architetture principali sono flash (velocissima, molti comparatori), ad approssimazioni successive (SAR, compromesso tipico nei microcontrollori) e sigma-delta (alta risoluzione per l'audio). Per il teorema del campionamento la frequenza di campionamento deve superare il doppio della massima frequenza del segnale."
+      ],
+      "metodo": [
+        "Minimizza ogni funzione con Karnaugh e verifica con una simulazione o con la tabella di verità.",
+        "Per le macchine a stati disegna sempre il diagramma prima della tabella di transizione.",
+        "Calcola la frequenza massima di clock sommando ritardo clock-uscita, ritardo combinatorio e setup.",
+        "Scrivi piccoli moduli in un linguaggio di descrizione hardware (VHDL o Verilog) con simulatori gratuiti.",
+        "Confronta in una tabella le architetture di ADC per velocità, risoluzione e costo.",
+        "Collega l'argomento all'architettura dei calcolatori e ai sistemi embedded."
+      ],
+      "ricorda": [
+        "Karnaugh: gruppi di 1, 2, 4, 8 celle adiacenti, anche ai bordi.",
+        "Moore: uscita dallo stato; Mealy: da stato e ingressi.",
+        "P dinamica CMOS ≈ α C V² f.",
+        "Campiona ad almeno il doppio della frequenza massima."
+      ],
+      "errori": [
+        "Dimenticare che i bordi della mappa di Karnaugh sono adiacenti.",
+        "Ignorare i don't care che permetterebbero gruppi più grandi.",
+        "Violare il tempo di setup collegando logica troppo lenta tra due flip-flop.",
+        "Confondere fan-in e fan-out.",
+        "Pensare che aumentando i bit dell'ADC si possa campionare più lentamente."
+      ],
+      "domande": [
+        {
+          "domanda": "Quante celle ha una mappa di Karnaugh a 4 variabili?",
+          "risposta": "16."
+        },
+        {
+          "domanda": "Qual è la frequenza massima di clock se ritardo clock-uscita, logica e setup sommano 10 ns?",
+          "risposta": "100 MHz."
+        },
+        {
+          "domanda": "Quanto vale l'LSB di un ADC a 10 bit con fondo scala 5 V?",
+          "risposta": "Circa 4,9 mV: 5/1024."
+        },
+        {
+          "domanda": "Come cambia la potenza dinamica CMOS se la tensione scende da 1,2 V a 0,9 V?",
+          "risposta": "Si riduce a circa il 56%: (0,9/1,2)²."
+        },
+        {
+          "domanda": "Che cosa distingue una macchina di Mealy da una di Moore?",
+          "risposta": "In Mealy l'uscita dipende anche dagli ingressi, in Moore solo dallo stato."
+        }
+      ]
+    }
+  },
+  "Macchine elettriche": {
+    "superiore": {
+      "spiegazione": [
+        "Le macchine elettriche trasformano energia sfruttando l'induzione elettromagnetica: un flusso magnetico che varia induce una tensione in un conduttore. Si dividono in macchine statiche, come il trasformatore, e macchine rotanti, come motori e generatori. Ogni macchina rotante ha uno statore fisso e un rotore che gira. Il rendimento η = Putile/Passorbita è sempre minore di 1 a causa delle perdite: una macchina che assorbe 10 kW e ne rende 9 ha η = 90%.",
+        "Il trasformatore è formato da due avvolgimenti, primario e secondario, su un nucleo di ferro. La tensione alternata del primario crea un flusso variabile che induce tensione nel secondario. Le tensioni stanno come i numeri di spire: V1/V2 = N1/N2. Con 2000 e 100 spire, 230 V diventano 11,5 V. In un trasformatore ideale la potenza si conserva, quindi se la tensione scende la corrente sale. Il nucleo è fatto di lamierini isolati per ridurre le correnti parassite.",
+        "Il motore asincrono trifase è il motore più diffuso nell'industria: robusto, economico e senza spazzole. Le tre fasi dello statore creano un campo magnetico rotante con velocità di sincronismo n₀ = 60·f/p, dove p è il numero di coppie polari: con 2 coppie a 50 Hz, 1500 giri/min. Il rotore gira un po' più lento; la differenza relativa è lo scorrimento s = (n₀ − n)/n₀, di solito pochi punti percentuali. Scambiando due fasi il motore gira al contrario.",
+        "Il motore a corrente continua ha un rotore (armatura) alimentato attraverso spazzole e collettore a lamelle. Quando gira produce una forza controelettromotrice proporzionale alla velocità, che si oppone alla tensione di alimentazione: V = E + Ra·I. All'avviamento E è nulla e la corrente è molto alta, perciò si usano sistemi di avviamento. La velocità si regola facilmente variando la tensione, ed è per questo che i motori in continua si usano in giocattoli, utensili a batteria e automazione.",
+        "I generatori trasformano energia meccanica in elettrica. L'alternatore sincrono, usato nelle centrali, produce tensione alternata con frequenza proporzionale alla velocità di rotazione; la dinamo produce corrente continua. La potenza meccanica di un motore si lega alla coppia con P = C·ω: un motore da 5,5 kW a 1450 giri/min dà circa 36 N·m. Oggi gli inverter permettono di regolare la velocità dei motori asincroni variando la frequenza."
+      ],
+      "metodo": [
+        "Disegna un trasformatore con primario, secondario e nucleo, e scrivi accanto le formule di tensioni e correnti.",
+        "Fai una tabella con velocità di sincronismo per 1, 2, 3 e 4 coppie polari a 50 Hz.",
+        "Negli esercizi sui motori converti sempre i giri/min in rad/s prima di calcolare la coppia.",
+        "Leggi la targa di un motore reale (potenza, tensioni, corrente, cosφ, giri) e ricava rendimento e scorrimento.",
+        "Collega la mappa a «Corrente alternata» (trifase, potenze) e alla fisica dell'induzione.",
+        "Ripassa con schemi: per ogni macchina scrivi che cosa entra, che cosa esce e quali perdite ci sono."
+      ],
+      "ricorda": [
+        "Tensioni come le spire, correnti al contrario.",
+        "A 50 Hz: 3000, 1500, 1000, 750 giri/min per 1, 2, 3, 4 coppie polari.",
+        "Due fasi scambiate = motore al contrario.",
+        "Statore sta, rotore ruota."
+      ],
+      "errori": [
+        "Pensare che un trasformatore funzioni in corrente continua.",
+        "Usare il numero di poli invece delle coppie polari nella velocità di sincronismo.",
+        "Credere che il rotore asincrono raggiunga la velocità di sincronismo.",
+        "Ottenere un rendimento maggiore del 100% invertendo il rapporto.",
+        "Dividere la potenza per i giri/min invece che per i rad/s nel calcolo della coppia."
+      ],
+      "domande": [
+        {
+          "domanda": "Un trasformatore ha N1 = 500 e N2 = 1000 e primario a 115 V. Quanto vale V2?",
+          "risposta": "230 V: è un elevatore con rapporto 1:2."
+        },
+        {
+          "domanda": "Qual è la velocità di sincronismo di un motore a 6 poli a 50 Hz?",
+          "risposta": "1000 giri/min."
+        },
+        {
+          "domanda": "Un motore asincrono da 1000 giri/min di sincronismo ruota a 960. Quanto vale lo scorrimento?",
+          "risposta": "4%."
+        },
+        {
+          "domanda": "Perché il nucleo del trasformatore è lamellare?",
+          "risposta": "Per ridurre le correnti parassite e le perdite nel ferro."
+        },
+        {
+          "domanda": "Che cosa fa un generatore elettrico?",
+          "risposta": "Trasforma energia meccanica in energia elettrica."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Il trasformatore reale si studia con un circuito equivalente: resistenze degli avvolgimenti e reattanze di dispersione in serie, ramo di magnetizzazione (reattanza magnetizzante e resistenza delle perdite nel ferro) in parallelo. Le grandezze si riportano a un unico lato: tensioni moltiplicate per il rapporto spire, impedenze per il suo quadrato. Con la prova a vuoto si misurano le perdite nel ferro e i parametri del ramo trasversale; con la prova in cortocircuito, a corrente nominale e tensione ridotta, le perdite nel rame e i parametri longitudinali. La tensione di cortocircuito percentuale caratterizza la caduta di tensione e la corrente di guasto.",
+        "Il rendimento del trasformatore è η = P2/(P2 + P0 + Pcu), dove P0 sono le perdite nel ferro, costanti, e Pcu quelle nel rame, proporzionali al quadrato del carico. Il rendimento è massimo quando le perdite nel rame uguagliano quelle nel ferro, di solito tra il 50% e il 75% del carico nominale. Nei trasformatori trifase i collegamenti (stella, triangolo, zig-zag) introducono sfasamenti indicati dal gruppo orario, essenziale per mettere in parallelo più trasformatori. Per esempio un trasformatore con P0 = 200 W e Pcu nominale = 800 W ha rendimento massimo a metà carico, dove Pcu = 800 · 0,5² = 200 W.",
+        "Nel motore asincrono trifase il campo rotante induce correnti nel rotore a frequenza s·f. Il circuito equivalente è simile a quello del trasformatore, con resistenza rotorica R2'/s: la parte R2'(1 − s)/s rappresenta la potenza meccanica. La potenza trasmessa al traferro si ripartisce in perdite rotoriche (s·Ptr) e potenza meccanica ((1 − s)·Ptr). La caratteristica coppia-velocità mostra coppia di spunto, coppia massima e la zona di funzionamento stabile a piccoli scorrimenti. La regolazione di velocità moderna usa inverter a tensione e frequenza variabili con rapporto V/f costante.",
+        "Nella macchina a corrente continua la f.c.e.m. è E = k·Φ·ω e la coppia è C = k·Φ·I: le stesse costanti legano il lato elettrico e quello meccanico. Con eccitazione indipendente la velocità si regola variando la tensione d'armatura (sotto la base) o indebolendo il campo (sopra la base). Il motore serie ha coppia di spunto elevata ed è stato usato nella trazione ferroviaria. Oggi molti azionamenti usano motori brushless a magneti permanenti, con commutazione elettronica al posto del collettore.",
+        "La macchina sincrona ruota esattamente alla velocità del campo, n = 60·f/p. Come alternatore in parallelo alla rete, la corrente di eccitazione regola la potenza reattiva scambiata: sovraeccitata eroga reattiva (comportamento capacitivo), sottoeccitata la assorbe. La potenza attiva dipende dall'angolo di carico δ tra f.e.m. e tensione di rete, P = (E·V/Xs)·sen δ, con limite di stabilità statica a δ = 90°. Gli alternatori delle centrali idroelettriche hanno molte coppie polari e girano lentamente."
+      ],
+      "metodo": [
+        "Disegna il circuito equivalente del trasformatore e del motore asincrono e confrontali voce per voce.",
+        "Negli esercizi sul motore asincrono imposta il bilancio delle potenze: assorbita, traferro, perdite rotoriche, meccanica.",
+        "Ricava i parametri del trasformatore dai dati delle prove a vuoto e in cortocircuito.",
+        "Studia le caratteristiche coppia-velocità con grafici, segnando i punti notevoli.",
+        "Collega l'argomento all'elettronica di potenza (inverter, raddrizzatori controllati).",
+        "Ripassa le formule trifase da «Corrente alternata» prima di affrontare gli esercizi."
+      ],
+      "ricorda": [
+        "Impedenze riportate: moltiplica per (N1/N2)².",
+        "Rendimento massimo quando Pcu = P0.",
+        "Ptraferro: s va in calore, (1 − s) diventa lavoro.",
+        "Sincrona sovraeccitata = eroga reattiva."
+      ],
+      "errori": [
+        "Riportare le impedenze con il rapporto spire invece del suo quadrato.",
+        "Attribuire alla prova in cortocircuito le perdite nel ferro.",
+        "Confondere frequenza di rete e frequenza delle correnti rotoriche (s·f).",
+        "Dimenticare che con l'indebolimento di campo nel motore in continua la coppia disponibile diminuisce.",
+        "Pensare che l'eccitazione di un alternatore in rete regoli la frequenza."
+      ],
+      "domande": [
+        {
+          "domanda": "Un motore asincrono ha Ptraferro = 10 kW e s = 0,04. Quanto vale la potenza meccanica interna?",
+          "risposta": "9,6 kW: (1 − s) · Ptr."
+        },
+        {
+          "domanda": "Quanto valgono le perdite rotoriche nello stesso caso?",
+          "risposta": "0,4 kW: s · Ptr."
+        },
+        {
+          "domanda": "A che frequenza sono le correnti di rotore con s = 0,03 a 50 Hz?",
+          "risposta": "1,5 Hz."
+        },
+        {
+          "domanda": "Quando è massimo il rendimento di un trasformatore?",
+          "risposta": "Quando le perdite nel rame uguagliano quelle nel ferro."
+        },
+        {
+          "domanda": "Come si regola la velocità di un motore asincrono con un inverter?",
+          "risposta": "Variando la frequenza e la tensione di alimentazione mantenendo circa costante il rapporto V/f."
+        }
+      ]
+    }
+  }
+}

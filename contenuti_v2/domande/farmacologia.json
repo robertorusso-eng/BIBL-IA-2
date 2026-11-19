@@ -1,0 +1,3034 @@
+[
+ {
+  "id": "FAR-001",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "test",
+  "domanda": "Che cosa studia la farmacocinetica?",
+  "opzioni": {
+   "A": "Il meccanismo con cui il farmaco produce il suo effetto sul bersaglio",
+   "B": "La relazione tra struttura chimica e attività biologica di una molecola",
+   "C": "Il destino del farmaco nell'organismo: assorbimento, distribuzione, metabolismo ed eliminazione",
+   "D": "Le reazioni avverse rilevate dopo la commercializzazione",
+   "E": "La sintesi industriale del principio attivo"
+  },
+  "giusta": "C",
+  "perche": "La farmacocinetica descrive che cosa fa l'organismo al farmaco: come entra (assorbimento), dove va (distribuzione), come viene trasformato (metabolismo) e come esce (escrezione), riassunti nella sigla ADME. La farmacodinamica studia invece l'opposto, cioè che cosa fa il farmaco all'organismo. La trappola tipica è scambiare i due termini, che hanno un nome simile ma prospettive opposte.",
+  "semplice": "Immagina di seguire una compressa dopo che è stata ingoiata: passa dall'intestino al sangue, arriva ai tessuti, il fegato la modifica e i reni la eliminano con le urine. Questo viaggio è la farmacocinetica.",
+  "passaggi": [
+   "La domanda chiede la definizione di farmacocinetica: «cinetica» richiama il movimento del farmaco nel corpo.",
+   "Ricorda la sigla ADME: assorbimento, distribuzione, metabolismo, eliminazione, cioè che cosa fa l'organismo al farmaco.",
+   "Il meccanismo d'azione sul bersaglio (A) è farmacodinamica; struttura-attività, farmacovigilanza e sintesi industriale sono altri ambiti.",
+   "Resta la C: il destino del farmaco nell'organismo dall'ingresso all'eliminazione."
+  ],
+  "concetto": "ADME"
+ },
+ {
+  "id": "FAR-002",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Un farmaco ha volume di distribuzione di 42 L e clearance totale di 6 L/h. Qual è la sua emivita di eliminazione approssimativa?",
+  "opzioni": {
+   "A": "Circa 7 ore",
+   "B": "Circa 0,14 ore",
+   "C": "Circa 4,9 ore",
+   "D": "Circa 252 ore",
+   "E": "Circa 2,5 ore"
+  },
+  "giusta": "C",
+  "perche": "Per una cinetica di primo ordine l'emivita dipende da volume e clearance secondo t½ = 0,693 · Vd / CL. Con 42 L e 6 L/h il rapporto Vd/CL vale 7 ore, che moltiplicato per 0,693 dà circa 4,9 ore. La trappola è dimenticare il fattore ln 2 e rispondere 7 ore, oppure moltiplicare volume e clearance invece di dividerli.",
+  "semplice": "Più grande è il «serbatoio» in cui il farmaco si distribuisce, più tempo serve per svuotarlo; più veloce è la «pompa» che lo elimina, meno tempo serve. Per questo l'emivita sale con il volume e scende con la clearance.",
+  "passaggi": [
+   "1. Formula: t½ = 0,693 · Vd / CL",
+   "2. Vd / CL = 42 L / 6 L/h = 7 h",
+   "3. t½ = 0,693 · 7 h ≈ 4,85 h ≈ 4,9 h"
+  ],
+  "concetto": "emivita, Vd e clearance"
+ },
+ {
+  "id": "FAR-003",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Dopo la somministrazione endovenosa in bolo di 500 mg di un farmaco, la concentrazione plasmatica estrapolata al tempo zero è 10 mg/L. Qual è il volume di distribuzione apparente?",
+  "opzioni": {
+   "A": "50 L",
+   "B": "5 L",
+   "C": "5000 L",
+   "D": "0,02 L",
+   "E": "500 L"
+  },
+  "giusta": "A",
+  "perche": "Il volume di distribuzione apparente è il volume in cui il farmaco dovrebbe sciogliersi per dare la concentrazione misurata nel plasma: Vd = dose / C₀. Con 500 mg e 10 mg/L si ottengono 50 L. La trappola è invertire il rapporto (C₀/dose) oppure pensare che il Vd sia un volume anatomico reale: è un parametro «apparente», che può superare anche di molto l'acqua corporea.",
+  "semplice": "Se sciogli 500 mg di sale in una vasca e trovi 10 mg in ogni litro, la vasca contiene 50 litri. Il Vd ragiona allo stesso modo, usando il plasma come campione.",
+  "passaggi": [
+   "1. Formula: Vd = dose / C₀",
+   "2. Vd = 500 mg / 10 mg/L",
+   "3. Vd = 50 L"
+  ],
+  "concetto": "volume di distribuzione"
+ },
+ {
+  "id": "FAR-004",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "test",
+  "domanda": "In una cinetica di primo ordine, quale frazione della quantità iniziale di farmaco resta nell'organismo dopo tre emivite?",
+  "opzioni": {
+   "A": "25%",
+   "B": "33%",
+   "C": "6,25%",
+   "D": "12,5%",
+   "E": "0%"
+  },
+  "giusta": "D",
+  "perche": "In una cinetica di primo ordine ogni emivita dimezza la quantità presente: dopo una emivita resta il 50%, dopo due il 25%, dopo tre il 12,5%. La trappola è pensare che dopo tre emivite il farmaco sia stato eliminato per tre terzi, cioè del tutto, oppure confondere tre con quattro emivite (6,25%).",
+  "semplice": "Dimezza tre volte una torta: metà, poi un quarto, poi un ottavo. Un ottavo è il 12,5%.",
+  "passaggi": [
+   "1. Frazione residua = (1/2)ⁿ con n = numero di emivite",
+   "2. (1/2)³ = 1/8",
+   "3. 1/8 = 0,125 = 12,5%"
+  ],
+  "concetto": "dimezzamenti successivi"
+ },
+ {
+  "id": "FAR-005",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "test",
+  "domanda": "Un farmaco somministrato a dosi ripetute regolari ha emivita di 6 ore. Dopo quanto tempo, approssimativamente, si raggiunge lo stato stazionario?",
+  "opzioni": {
+   "A": "Circa 6 ore",
+   "B": "Circa 12 ore",
+   "C": "Circa 24-30 ore",
+   "D": "Circa 3 ore",
+   "E": "Mai, perché la concentrazione cresce sempre"
+  },
+  "giusta": "C",
+  "perche": "Il tempo per raggiungere lo stato stazionario dipende solo dall'emivita e non dalla dose: servono circa 4-5 emivite per arrivare al 94-97% del valore finale. Con 6 ore di emivita sono quindi 24-30 ore. La trappola è credere che aumentando la dose si arrivi prima allo stato stazionario: cambia il livello raggiunto, non il tempo necessario.",
+  "semplice": "È come riempire una vasca con il tappo un po' aperto: all'inizio il livello sale, poi si stabilizza quando l'acqua che entra eguaglia quella che esce. Per il farmaco questo equilibrio arriva dopo circa 4-5 emivite.",
+  "passaggi": [
+   "1. Stato stazionario ≈ 4-5 emivite",
+   "2. 4 · 6 h = 24 h",
+   "3. 5 · 6 h = 30 h"
+  ],
+  "concetto": "stato stazionario"
+ },
+ {
+  "id": "FAR-006",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Lo stesso farmaco, alla stessa dose, dà un'AUC di 30 mg·h/L per via orale e di 50 mg·h/L per via endovenosa. Qual è la biodisponibilità orale?",
+  "opzioni": {
+   "A": "40%",
+   "B": "60%",
+   "C": "167%",
+   "D": "20%",
+   "E": "80%"
+  },
+  "giusta": "B",
+  "perche": "La biodisponibilità assoluta è la frazione della dose che raggiunge immutata la circolazione sistemica e si calcola confrontando le aree sotto la curva: F = AUC orale / AUC endovenosa, a parità di dose. Qui 30/50 = 0,6, cioè il 60%. La trappola è fare il rapporto inverso (oltre il 100%, impossibile) o calcolare la frazione persa (40%) invece di quella assorbita.",
+  "semplice": "La via endovenosa porta nel sangue tutto il farmaco, quindi vale 100%. Se per bocca l'esposizione è 30 su 50, nel sangue ne arriva il 60%: il resto non viene assorbito o è distrutto prima.",
+  "passaggi": [
+   "1. F = AUC(os) / AUC(ev) a parità di dose",
+   "2. F = 30 / 50",
+   "3. F = 0,6 = 60%"
+  ],
+  "concetto": "biodisponibilità"
+ },
+ {
+  "id": "FAR-007",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Dopo una dose endovenosa di 400 mg l'area sotto la curva concentrazione-tempo è 80 mg·h/L. Qual è la clearance totale?",
+  "opzioni": {
+   "A": "5 L/h",
+   "B": "0,2 L/h",
+   "C": "32 000 L/h",
+   "D": "320 L/h",
+   "E": "50 L/h"
+  },
+  "giusta": "A",
+  "perche": "La clearance è il volume di plasma depurato dal farmaco nell'unità di tempo e, per la via endovenosa (F = 1), si ricava come CL = dose / AUC. Con 400 mg e 80 mg·h/L si ottiene 5 L/h. La trappola è invertire il rapporto, ottenendo 0,2, che ha anche un'unità di misura sbagliata.",
+  "semplice": "L'AUC misura quanta «esposizione» ha avuto il corpo. Se l'organismo elimina il farmaco in fretta, l'area è piccola e la clearance grande; se lo elimina lentamente, l'area è grande e la clearance piccola.",
+  "passaggi": [
+   "1. Formula: CL = F · dose / AUC, con F = 1 per via ev",
+   "2. CL = 400 mg / 80 mg·h/L",
+   "3. CL = 5 L/h"
+  ],
+  "concetto": "clearance da AUC"
+ },
+ {
+  "id": "FAR-008",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Un farmaco con cinetica di primo ordine ha emivita di 3,5 ore. Qual è la costante di eliminazione k?",
+  "opzioni": {
+   "A": "Circa 2,4 h⁻¹",
+   "B": "Circa 5 h⁻¹",
+   "C": "Circa 0,2 h⁻¹",
+   "D": "Circa 0,29 h⁻¹",
+   "E": "Circa 0,02 h⁻¹"
+  },
+  "giusta": "C",
+  "perche": "La costante di eliminazione e l'emivita sono legate da k = ln 2 / t½ = 0,693 / t½. Con 3,5 ore si ottiene circa 0,198 h⁻¹, cioè, in prima approssimazione, poco meno di un quinto della quantità presente eliminato ogni ora (esattamente 1 − e^(−0,198) ≈ 18%). La trappola è moltiplicare invece di dividere o usare 1/t½ (0,29) dimenticando il logaritmo naturale di 2.",
+  "semplice": "Una costante k di 0,2 h⁻¹ significa, in modo approssimato, che ogni ora se ne va circa un quinto del farmaco presente in quel momento.",
+  "passaggi": [
+   "1. Formula: k = 0,693 / t½",
+   "2. k = 0,693 / 3,5 h",
+   "3. k ≈ 0,198 h⁻¹ ≈ 0,2 h⁻¹"
+  ],
+  "concetto": "costante di eliminazione"
+ },
+ {
+  "id": "FAR-009",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "test",
+  "domanda": "Un farmaco ha concentrazione plasmatica iniziale di 80 mg/L ed emivita di 4 ore. Quale concentrazione si misura dopo 12 ore?",
+  "opzioni": {
+   "A": "20 mg/L",
+   "B": "40 mg/L",
+   "C": "26,7 mg/L",
+   "D": "5 mg/L",
+   "E": "10 mg/L"
+  },
+  "giusta": "E",
+  "perche": "In 12 ore passano 12/4 = 3 emivite: la concentrazione si dimezza tre volte, da 80 a 40, poi 20, poi 10 mg/L. La trappola è dividere per 3 (26,7 mg/L), come se l'eliminazione fosse lineare, oppure fermarsi a due dimezzamenti.",
+  "semplice": "Ogni 4 ore il valore si dimezza: 80 → 40 dopo 4 ore, 20 dopo 8 ore, 10 dopo 12 ore.",
+  "passaggi": [
+   "1. Numero di emivite: n = 12 h / 4 h = 3",
+   "2. C = C₀ · (1/2)ⁿ = 80 · 1/8",
+   "3. C = 10 mg/L"
+  ],
+  "concetto": "decadimento esponenziale"
+ },
+ {
+  "id": "FAR-010",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Un acido debole con pKa 4,4 si trova nel succo gastrico a pH 1,4. Come si presenta prevalentemente e che cosa ne consegue per l'assorbimento?",
+  "opzioni": {
+   "A": "In forma ionizzata (circa 1000 a 1), quindi intrappolato nello stomaco",
+   "B": "In forma non ionizzata (circa 1000 a 1), quindi liposolubile e capace di attraversare le membrane",
+   "C": "Metà ionizzato e metà non ionizzato, perché il pH non conta",
+   "D": "In forma ionizzata, quindi assorbito più rapidamente per diffusione",
+   "E": "Completamente legato alla mucina gastrica"
+  },
+  "giusta": "B",
+  "perche": "Per un acido debole il rapporto forma ionizzata / non ionizzata vale 10^(pH − pKa) = 10^(1,4 − 4,4) = 10⁻³: per ogni molecola ionizzata ce ne sono circa mille neutre. La forma neutra è liposolubile e attraversa per diffusione le membrane. La trappola è applicare la regola delle basi agli acidi: gli acidi sono poco ionizzati in ambiente acido, le basi lo sono molto.",
+  "semplice": "Un acido in mezzo a tanto acido «non ha motivo» di cedere il suo protone, quindi resta neutro. Le molecole neutre passano le membrane come chi viaggia senza bagagli ingombranti.",
+  "passaggi": [
+   "1. Acido debole: ionizzata / non ionizzata = 10^(pH − pKa)",
+   "2. 10^(1,4 − 4,4) = 10⁻³",
+   "3. Circa 1 ionizzata ogni 1000 non ionizzate → prevale la forma neutra"
+  ],
+  "concetto": "Henderson-Hasselbalch"
+ },
+ {
+  "id": "FAR-011",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Si vuole ottenere subito una concentrazione plasmatica di 2 mg/L di un farmaco con Vd = 35 L, somministrato per via endovenosa (F = 1). Quale dose di carico serve, in un esercizio di calcolo teorico?",
+  "opzioni": {
+   "A": "17,5 mg",
+   "B": "37 mg",
+   "C": "0,057 mg",
+   "D": "140 mg",
+   "E": "70 mg"
+  },
+  "giusta": "E",
+  "perche": "La dose di carico serve a «riempire» subito il volume di distribuzione fino alla concentrazione desiderata: dose = C desiderata · Vd / F. Con 2 mg/L e 35 L si ottengono 70 mg. La trappola è dividere il volume per la concentrazione o confondere dose di carico (che dipende dal Vd) e dose di mantenimento (che dipende dalla clearance).",
+  "semplice": "Per avere 2 mg in ogni litro di un serbatoio da 35 litri ne servono 70 mg in tutto: è una semplice moltiplicazione.",
+  "passaggi": [
+   "1. Formula: dose di carico = C target · Vd / F",
+   "2. 2 mg/L · 35 L / 1",
+   "3. = 70 mg"
+  ],
+  "concetto": "dose di carico"
+ },
+ {
+  "id": "FAR-012",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "test",
+  "domanda": "Che cosa si intende per effetto di primo passaggio?",
+  "opzioni": {
+   "A": "L'effetto massimo ottenuto con la prima dose",
+   "B": "La prima reazione allergica a un farmaco mai assunto prima",
+   "C": "Il passaggio del farmaco attraverso la placenta",
+   "D": "La quota di farmaco assorbito per bocca che viene metabolizzata dall'intestino e dal fegato prima di raggiungere la circolazione sistemica",
+   "E": "La filtrazione del farmaco nel glomerulo renale"
+  },
+  "giusta": "D",
+  "perche": "Dopo l'assorbimento intestinale il farmaco arriva al fegato attraverso la vena porta prima di entrare nella circolazione generale; parte di esso può essere metabolizzata dagli enzimi della parete intestinale e del fegato. Questo riduce la biodisponibilità orale. La via sublinguale e quella endovenosa evitano il primo passaggio: per questo la nitroglicerina si usa sotto la lingua. La trappola è pensare che riguardi la prima somministrazione nel tempo.",
+  "semplice": "È come una dogana tra intestino e resto del corpo: il fegato controlla tutto ciò che arriva dall'intestino e ne trattiene una parte prima che prosegua.",
+  "passaggi": [
+   "Riconosci la parola chiave: «primo passaggio» si riferisce al primo transito del farmaco preso per bocca.",
+   "Ricorda il percorso: intestino, vena porta, fegato, e solo dopo la circolazione sistemica.",
+   "Durante questo tragitto enzimi intestinali ed epatici ne metabolizzano una parte, riducendo la biodisponibilità orale.",
+   "Prima dose, prima allergia, placenta e filtrazione glomerulare non c'entrano con questo tragitto.",
+   "La risposta è la D: la quota metabolizzata da intestino e fegato prima di arrivare in circolo."
+  ],
+  "concetto": "effetto di primo passaggio"
+ },
+ {
+  "id": "FAR-013",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "test",
+  "domanda": "A quale proteina plasmatica si legano soprattutto i farmaci acidi deboli?",
+  "opzioni": {
+   "A": "Glicoproteina acida α1",
+   "B": "Emoglobina",
+   "C": "Fibrinogeno",
+   "D": "Albumina",
+   "E": "Transferrina"
+  },
+  "giusta": "D",
+  "perche": "L'albumina è la proteina plasmatica più abbondante e lega soprattutto i farmaci acidi (per esempio warfarin e molti FANS), mentre la glicoproteina acida α1 lega preferibilmente le basi deboli. Solo la frazione libera è attiva, si distribuisce e viene eliminata. La trappola è pensare che il farmaco legato sia quello che agisce: il legame è un deposito temporaneo.",
+  "semplice": "Pensa all'albumina come a un taxi: il farmaco seduto dentro viaggia nel sangue ma non può scendere ad agire finché non si stacca.",
+  "passaggi": [
+   "La domanda riguarda il legame alle proteine plasmatiche dei farmaci acidi deboli.",
+   "Ricorda la regola: gli acidi deboli (warfarin, FANS) si legano all'albumina, le basi deboli alla glicoproteina acida α1.",
+   "Emoglobina, fibrinogeno e transferrina non sono i trasportatori principali dei farmaci.",
+   "La risposta è la D: l'albumina."
+  ],
+  "concetto": "legame proteico"
+ },
+ {
+  "id": "FAR-014",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Quale isoforma del citocromo P450 è coinvolta nel metabolismo del maggior numero di farmaci?",
+  "opzioni": {
+   "A": "CYP3A4",
+   "B": "CYP1A2",
+   "C": "CYP2E1",
+   "D": "CYP2C19",
+   "E": "CYP2A6"
+  },
+  "giusta": "A",
+  "perche": "Il CYP3A4, molto espresso nel fegato e nella parete intestinale, ossida circa la metà dei farmaci metabolizzati dai citocromi. Per questo è al centro di molte interazioni: inibitori come il succo di pompelmo e induttori come la rifampicina ne alterano l'attività. La trappola è scegliere CYP2D6 o CYP2C19 perché famosi per i polimorfismi genetici, ma trattano meno farmaci.",
+  "semplice": "Il CYP3A4 è come lo sportello più affollato di un ufficio: tantissimi farmaci passano da lì, quindi se lo sportello rallenta o accelera, molte terapie ne risentono.",
+  "passaggi": [
+   "Si cerca l'isoforma del citocromo P450 che metabolizza più farmaci in assoluto.",
+   "Ricorda che il CYP3A4, abbondante in fegato e intestino, ossida circa la metà dei farmaci metabolizzati dai citocromi.",
+   "CYP2C19 e altre isoforme sono famose per i polimorfismi ma trattano meno farmaci; CYP2E1 è legato soprattutto all'etanolo.",
+   "La risposta è la A: CYP3A4, bersaglio di molte interazioni come quella con il succo di pompelmo."
+  ],
+  "concetto": "citocromo P450"
+ },
+ {
+  "id": "FAR-015",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Quale reazione è un tipico esempio di metabolismo di fase II?",
+  "opzioni": {
+   "A": "Glucuronidazione",
+   "B": "Ossidazione da citocromo P450",
+   "C": "Idrolisi di un estere",
+   "D": "Riduzione di un gruppo nitro",
+   "E": "Dealchilazione ossidativa"
+  },
+  "giusta": "A",
+  "perche": "Le reazioni di fase II sono coniugazioni: al farmaco o al suo metabolita viene legata una molecola endogena (acido glucuronico, solfato, glutatione, acetile), ottenendo un composto più idrosolubile e facile da eliminare. Ossidazioni, riduzioni e idrolisi sono invece reazioni di fase I, che introducono o smascherano gruppi funzionali. La trappola è pensare che la fase II debba sempre seguire la fase I: alcuni farmaci vengono coniugati direttamente.",
+  "semplice": "La fase I aggiunge una «maniglia» alla molecola, la fase II ci attacca una «etichetta» idrosolubile che la fa uscire con urine o bile. L'acido glucuronico è l'etichetta più usata.",
+  "passaggi": [
+   "Ricorda la distinzione: la fase I introduce o smaschera gruppi funzionali, la fase II coniuga una molecola endogena.",
+   "Ossidazione da P450, idrolisi, riduzione di un nitro e dealchilazione sono reazioni di fase I.",
+   "La glucuronidazione lega acido glucuronico al farmaco, rendendolo più idrosolubile: è una coniugazione.",
+   "La risposta è la A: glucuronidazione."
+  ],
+  "concetto": "metabolismo di fase II"
+ },
+ {
+  "id": "FAR-016",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "test",
+  "domanda": "Quale frazione di un farmaco viene filtrata nel glomerulo renale?",
+  "opzioni": {
+   "A": "Solo la frazione legata all'albumina",
+   "B": "Tutto il farmaco, legato e libero",
+   "C": "Solo i farmaci liposolubili",
+   "D": "Solo i metaboliti di fase I",
+   "E": "Solo la frazione libera, non legata alle proteine plasmatiche"
+  },
+  "giusta": "E",
+  "perche": "La membrana glomerulare lascia passare le piccole molecole ma trattiene le proteine come l'albumina; di conseguenza un farmaco legato alle proteine resta nel sangue e solo la frazione libera viene filtrata. I farmaci legati possono però essere eliminati per secrezione tubulare attiva. La trappola è dimenticare che il legame proteico rallenta la filtrazione.",
+  "semplice": "Il glomerulo è un setaccio a maglie fini: passa il farmaco «da solo», non quello attaccato a una grossa proteina.",
+  "passaggi": [
+   "Ricorda come funziona il filtro glomerulare: passano le piccole molecole, non le proteine come l'albumina.",
+   "Un farmaco legato all'albumina resta quindi nel sangue insieme alla proteina.",
+   "Si escludono A e B (il legato non passa) e le opzioni sulla liposolubilità o sui metaboliti, che non sono il criterio.",
+   "La risposta è la E: viene filtrata solo la frazione libera."
+  ],
+  "concetto": "filtrazione glomerulare"
+ },
+ {
+  "id": "FAR-017",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Che cosa caratterizza un'eliminazione di ordine zero, come quella dell'etanolo?",
+  "opzioni": {
+   "A": "Viene eliminata una frazione costante di sostanza per unità di tempo",
+   "B": "Viene eliminata una quantità costante di sostanza per unità di tempo, perché gli enzimi sono saturi",
+   "C": "L'emivita è costante e indipendente dalla concentrazione",
+   "D": "La sostanza non viene eliminata",
+   "E": "L'eliminazione avviene solo per via polmonare"
+  },
+  "giusta": "B",
+  "perche": "Quando gli enzimi che metabolizzano una sostanza sono saturi, la velocità di eliminazione diventa massima e costante: si elimina la stessa quantità ogni ora, indipendentemente da quanta ce n'è. È il caso dell'etanolo e, ad alte concentrazioni, della fenitoina. Ne consegue che l'emivita non è costante e piccoli aumenti di dose possono far salire molto le concentrazioni. La trappola è confondere l'ordine zero (quantità costante) con il primo ordine (frazione costante).",
+  "semplice": "Una cassa con un solo cassiere serve sempre lo stesso numero di clienti all'ora, anche se la fila si allunga: questo è l'ordine zero.",
+  "passaggi": [
+   "Riconosci il concetto: cinetica di ordine zero, con l'esempio dell'etanolo.",
+   "Ricorda che quando gli enzimi sono saturi la velocità di eliminazione è massima e costante.",
+   "Si elimina quindi una quantità fissa per unità di tempo, non una frazione fissa (quella è l'ordine uno, opzione A).",
+   "Ne segue che l'emivita non è costante (si esclude C); D ed E sono false.",
+   "La risposta è la B."
+  ],
+  "concetto": "cinetica di ordine zero"
+ },
+ {
+  "id": "FAR-018",
+  "materia": "Farmacologia",
+  "argomento": "Farmacocinetica",
+  "livello": "università",
+  "domanda": "Un farmaco viene infuso per via endovenosa a velocità costante di 10 mg/h e ha clearance di 5 L/h. Quale concentrazione allo stato stazionario si raggiunge?",
+  "opzioni": {
+   "A": "50 mg/L",
+   "B": "2 mg/L",
+   "C": "0,5 mg/L",
+   "D": "15 mg/L",
+   "E": "5 mg/L"
+  },
+  "giusta": "B",
+  "perche": "Allo stato stazionario la velocità di ingresso eguaglia quella di eliminazione, che è CL · Css; quindi Css = velocità di infusione / CL. Con 10 mg/h e 5 L/h si ottengono 2 mg/L. La trappola è moltiplicare i due valori o pensare che la Css dipenda dall'emivita: l'emivita stabilisce quanto tempo serve per arrivarci, non il livello.",
+  "semplice": "Se entrano 10 mg all'ora e il corpo ripulisce 5 litri di plasma all'ora, l'equilibrio si ha quando in ogni litro ci sono 2 mg: così 5 litri contengono proprio i 10 mg eliminati.",
+  "passaggi": [
+   "1. Allo stato stazionario: velocità di infusione = CL · Css",
+   "2. Css = 10 mg/h / 5 L/h",
+   "3. Css = 2 mg/L"
+  ],
+  "concetto": "infusione continua"
+ },
+ {
+  "id": "FAR-019",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "test",
+  "domanda": "Che cosa studia la farmacodinamica?",
+  "opzioni": {
+   "A": "Gli effetti biochimici e fisiologici dei farmaci e il loro meccanismo d'azione",
+   "B": "L'assorbimento e l'eliminazione dei farmaci",
+   "C": "La produzione industriale delle forme farmaceutiche",
+   "D": "Il costo e la rimborsabilità dei medicinali",
+   "E": "La conservazione dei farmaci in farmacia"
+  },
+  "giusta": "A",
+  "perche": "La farmacodinamica descrive che cosa fa il farmaco all'organismo: a quale bersaglio si lega (recettore, enzima, canale, trasportatore), quale risposta provoca e come questa dipende dalla concentrazione. La farmacocinetica, al contrario, segue il destino del farmaco nel corpo. La trappola è confondere i due ambiti, che però vanno sempre considerati insieme per capire l'effetto finale.",
+  "semplice": "La farmacodinamica è la parte che spiega perché un antidolorifico toglie il dolore: con quale «serratura» interagisce la «chiave» del farmaco e cosa succede dopo.",
+  "passaggi": [
+   "La domanda chiede la definizione di farmacodinamica: «dinamica» richiama l'azione del farmaco.",
+   "Ricorda: la farmacodinamica studia che cosa fa il farmaco all'organismo, cioè bersaglio, effetto e meccanismo.",
+   "Assorbimento ed eliminazione (B) sono farmacocinetica; produzione, costi e conservazione sono altri campi.",
+   "La risposta è la A."
+  ],
+  "concetto": "definizione di farmacodinamica"
+ },
+ {
+  "id": "FAR-020",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "test",
+  "domanda": "Che differenza c'è tra un agonista e un antagonista recettoriale?",
+  "opzioni": {
+   "A": "L'agonista si lega in modo irreversibile; l'antagonista in modo reversibile",
+   "B": "L'agonista agisce solo sugli enzimi; l'antagonista solo sui canali ionici",
+   "C": "L'agonista ha affinità nulla; l'antagonista ha efficacia massima",
+   "D": "L'agonista si lega al recettore e lo attiva; l'antagonista si lega senza attivarlo e impedisce l'azione dell'agonista",
+   "E": "Non c'è differenza: sono sinonimi"
+  },
+  "giusta": "D",
+  "perche": "Un agonista possiede sia affinità (capacità di legarsi) sia efficacia (capacità di attivare il recettore e innescare una risposta). Un antagonista ha affinità ma efficacia nulla: occupa il recettore senza attivarlo e blocca l'agonista. La trappola è pensare che l'antagonista produca un effetto «opposto» da solo: in assenza di agonista, un antagonista puro non fa nulla di visibile.",
+  "semplice": "L'agonista è una chiave che entra e gira nella serratura; l'antagonista è una chiave che entra ma non gira, e intanto impedisce alla chiave giusta di entrare.",
+  "passaggi": [
+   "Ricorda i due concetti: affinità (capacità di legarsi) ed efficacia (capacità di attivare il recettore).",
+   "L'agonista ha affinità ed efficacia: si lega e attiva.",
+   "L'antagonista ha affinità ma efficacia nulla: occupa il recettore e impedisce all'agonista di agire.",
+   "Le altre opzioni confondono reversibilità, tipo di bersaglio o dicono che sono sinonimi.",
+   "La risposta è la D."
+  ],
+  "concetto": "agonista e antagonista"
+ },
+ {
+  "id": "FAR-021",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Come cambia la curva dose-risposta di un agonista in presenza di un antagonista competitivo reversibile?",
+  "opzioni": {
+   "A": "Si sposta a sinistra con effetto massimo aumentato",
+   "B": "Si abbassa l'effetto massimo senza spostamento laterale",
+   "C": "Si sposta a destra in modo parallelo, con effetto massimo invariato",
+   "D": "Diventa una retta orizzontale",
+   "E": "Non cambia in alcun modo"
+  },
+  "giusta": "C",
+  "perche": "L'antagonista competitivo compete con l'agonista per lo stesso sito di legame; aumentando la concentrazione di agonista lo si può spiazzare. Serve quindi più agonista per avere lo stesso effetto (aumenta l'EC50, curva spostata a destra), ma l'effetto massimo resta raggiungibile. La trappola è confonderlo con l'antagonista non competitivo, che invece riduce l'effetto massimo.",
+  "semplice": "Se un intruso occupa alcune sedie e tu porti più amici, alla fine riempite comunque tutte le sedie: serve solo più gente. È il caso dell'antagonista competitivo.",
+  "passaggi": [
+   "Riconosci il tipo di antagonista: competitivo reversibile, che si contende lo stesso sito con l'agonista.",
+   "Aumentando la concentrazione di agonista lo si può spiazzare, quindi serve più agonista per lo stesso effetto (EC50 maggiore).",
+   "L'effetto massimo resta però raggiungibile, quindi la curva non si abbassa.",
+   "La risposta è la C: spostamento a destra parallelo con effetto massimo invariato."
+  ],
+  "concetto": "antagonismo competitivo"
+ },
+ {
+  "id": "FAR-022",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Quale effetto ha tipicamente un antagonista non competitivo (o irreversibile) sulla curva dose-risposta dell'agonista?",
+  "opzioni": {
+   "A": "Sposta la curva a destra senza modificare l'effetto massimo",
+   "B": "Riduce l'effetto massimo ottenibile, anche aumentando molto la concentrazione di agonista",
+   "C": "Aumenta l'efficacia dell'agonista",
+   "D": "Diminuisce l'EC50 dell'agonista",
+   "E": "Rende la curva più ripida senza altre modifiche"
+  },
+  "giusta": "B",
+  "perche": "Un antagonista non competitivo agisce su un sito diverso da quello dell'agonista, oppure si lega in modo irreversibile: in entrambi i casi una parte dei recettori diventa indisponibile e non può essere recuperata aumentando la dose di agonista. L'effetto massimo quindi si abbassa. La trappola è pensare che «più agonista» risolva sempre il blocco: vale solo per l'antagonismo competitivo reversibile.",
+  "semplice": "Se qualcuno incolla alcune sedie con la colla, anche portando cento amici non riuscirete a sedervi su quelle: il numero massimo di posti disponibili è diminuito.",
+  "passaggi": [
+   "Riconosci il tipo di antagonismo: non competitivo o irreversibile.",
+   "In questi casi una parte dei recettori diventa indisponibile e non si recupera aumentando l'agonista.",
+   "Si esclude A, che descrive l'antagonista competitivo; C, D ed E non sono effetti di un antagonista.",
+   "La risposta è la B: si riduce l'effetto massimo ottenibile."
+  ],
+  "concetto": "antagonismo non competitivo"
+ },
+ {
+  "id": "FAR-023",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "test",
+  "domanda": "Il farmaco X ha EC50 di 1 nM, il farmaco Y di 100 nM, ed entrambi raggiungono lo stesso effetto massimo. Che cosa si può dire?",
+  "opzioni": {
+   "A": "X è più potente di Y, ma i due hanno la stessa efficacia",
+   "B": "Y è più potente di X",
+   "C": "X è più efficace di Y",
+   "D": "Y ha un effetto massimo maggiore",
+   "E": "Non si può dire nulla senza conoscere l'emivita"
+  },
+  "giusta": "A",
+  "perche": "La potenza indica la concentrazione necessaria per ottenere un certo effetto e si confronta con l'EC50: più è bassa, più il farmaco è potente. L'efficacia è invece l'effetto massimo raggiungibile. X basta in quantità 100 volte minore ma i due arrivano allo stesso massimo, quindi hanno uguale efficacia. La trappola è usare «potente» come sinonimo di «efficace»: in clinica conta spesso di più l'efficacia.",
+  "semplice": "Due auto arrivano alla stessa velocità massima, ma una ci arriva premendo poco l'acceleratore: è più «potente» nel senso farmacologico, non più veloce.",
+  "passaggi": [
+   "Ricorda le definizioni: la potenza si legge dall'EC50 (più è bassa, più il farmaco è potente), l'efficacia dall'effetto massimo.",
+   "X ha EC50 di 1 nM, Y di 100 nM: X ottiene lo stesso effetto con una concentrazione 100 volte minore, quindi è più potente.",
+   "Entrambi raggiungono lo stesso effetto massimo, quindi hanno la stessa efficacia.",
+   "La risposta è la A."
+  ],
+  "concetto": "potenza ed efficacia"
+ },
+ {
+  "id": "FAR-024",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Che cos'è un agonista parziale?",
+  "opzioni": {
+   "A": "Un farmaco che si lega solo a metà dei recettori disponibili",
+   "B": "Un farmaco con affinità nulla per il recettore",
+   "C": "Un farmaco che, anche occupando tutti i recettori, produce una risposta massima inferiore a quella dell'agonista pieno",
+   "D": "Un farmaco che stabilizza lo stato inattivo del recettore riducendo l'attività basale",
+   "E": "Un farmaco attivo solo per via parenterale"
+  },
+  "giusta": "C",
+  "perche": "L'agonista parziale ha efficacia intrinseca intermedia: anche a saturazione dei recettori non raggiunge l'effetto massimo di un agonista pieno. In presenza di un agonista pieno può quindi comportarsi da antagonista, perché ne occupa i recettori dando una risposta minore. Un esempio è la buprenorfina sul recettore μ degli oppioidi. La trappola è confonderlo con l'agonista inverso, che riduce l'attività basale del recettore.",
+  "semplice": "È come una lampadina che, anche con l'interruttore al massimo, fa solo metà luce: se la metti al posto di una lampadina potente, la stanza diventa più buia.",
+  "passaggi": [
+   "Ricorda il concetto di efficacia intrinseca: l'agonista pieno ha efficacia massima, l'antagonista nulla.",
+   "L'agonista parziale sta nel mezzo: anche occupando tutti i recettori dà una risposta massima minore.",
+   "Si esclude D, che descrive l'agonista inverso, e B, che descrive l'assenza di legame.",
+   "La risposta è la C."
+  ],
+  "concetto": "agonista parziale"
+ },
+ {
+  "id": "FAR-025",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Un farmaco ha costante di dissociazione Kd = 10 nM e si trova alla concentrazione libera di 90 nM. Secondo il modello di occupazione semplice, quale frazione dei recettori è occupata?",
+  "opzioni": {
+   "A": "50%",
+   "B": "10%",
+   "C": "9%",
+   "D": "100%",
+   "E": "90%"
+  },
+  "giusta": "E",
+  "perche": "Nel modello di legame semplice la frazione di recettori occupati è C / (C + Kd). Con C = 90 nM e Kd = 10 nM si ottiene 90/100 = 0,9, cioè il 90%. Quando la concentrazione eguaglia la Kd l'occupazione è del 50%: è proprio la definizione di Kd. La trappola è pensare che a concentrazione 9 volte la Kd i recettori siano tutti occupati: il legame si avvicina al 100% solo gradualmente.",
+  "semplice": "La Kd è la concentrazione a cui metà dei posti è occupata. Con una concentrazione molto più alta si riempiono quasi tutti i posti, ma mai proprio tutti.",
+  "passaggi": [
+   "1. Frazione occupata = C / (C + Kd)",
+   "2. = 90 / (90 + 10) = 90 / 100",
+   "3. = 0,9 = 90%"
+  ],
+  "concetto": "occupazione recettoriale"
+ },
+ {
+  "id": "FAR-026",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Quale via di trasduzione è attivata da un recettore accoppiato a proteina Gs?",
+  "opzioni": {
+   "A": "Inibizione dell'adenilato ciclasi con riduzione di AMP ciclico",
+   "B": "Attivazione della fosfolipasi C con produzione di IP3 e DAG",
+   "C": "Apertura diretta di un canale per il cloro",
+   "D": "Attivazione dell'adenilato ciclasi con aumento di AMP ciclico",
+   "E": "Autofosforilazione di residui di tirosina"
+  },
+  "giusta": "D",
+  "perche": "La proteina Gs (stimolante) attiva l'adenilato ciclasi, che trasforma ATP in AMP ciclico; il cAMP attiva la proteina chinasi A. È la via dei recettori β-adrenergici. La Gi inibisce l'adenilato ciclasi, mentre la Gq attiva la fosfolipasi C con produzione di IP3 (rilascio di calcio) e DAG (attivazione della PKC). La trappola è confondere Gs e Gq, che portano entrambe a «stimolare» la cellula ma con secondi messaggeri diversi.",
+  "semplice": "Pensa a un citofono: il recettore sente la chiamata fuori dalla cellula, la proteina Gs porta il messaggio all'adenilato ciclasi, che produce tanti cAMP come tanti messaggeri che diffondono la notizia all'interno.",
+  "passaggi": [
+   "Riconosci la proteina: Gs, cioè G stimolante.",
+   "Ricorda: Gs attiva l'adenilato ciclasi, Gi la inibisce, Gq attiva la fosfolipasi C.",
+   "Si escludono quindi A (Gi), B (Gq), C (recettore-canale) ed E (recettore tirosin-chinasico).",
+   "La risposta è la D: attivazione dell'adenilato ciclasi con aumento di AMP ciclico."
+  ],
+  "concetto": "proteina Gs e cAMP"
+ },
+ {
+  "id": "FAR-027",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Quale dei seguenti è un recettore-canale ionico attivato da ligando?",
+  "opzioni": {
+   "A": "Recettore β2-adrenergico",
+   "B": "Recettore muscarinico M2",
+   "C": "Recettore nicotinico dell'acetilcolina",
+   "D": "Recettore dell'insulina",
+   "E": "Recettore dei glucocorticoidi"
+  },
+  "giusta": "C",
+  "perche": "Il recettore nicotinico è formato da cinque subunità che delimitano un canale: il legame dell'acetilcolina lo apre in pochi millisecondi, facendo entrare sodio. Altri esempi sono il recettore GABA-A e il recettore NMDA. I recettori β2 e muscarinici sono accoppiati a proteine G, quello dell'insulina è un recettore tirosin-chinasico e quello dei glucocorticoidi è nucleare. La trappola è pensare che tutti i recettori dell'acetilcolina funzionino allo stesso modo.",
+  "semplice": "Un recettore-canale è una porta con la serratura: quando arriva la chiave giusta la porta si spalanca subito e gli ioni entrano. Per questo dà le risposte più rapide.",
+  "passaggi": [
+   "Si cerca un recettore che sia esso stesso un canale ionico aperto dal ligando.",
+   "β2 e muscarinico M2 sono accoppiati a proteine G; il recettore dell'insulina è tirosin-chinasico; quello dei glucocorticoidi è nucleare.",
+   "Il recettore nicotinico è formato da cinque subunità attorno a un canale che l'acetilcolina apre.",
+   "La risposta è la C."
+  ],
+  "concetto": "recettori ionotropi"
+ },
+ {
+  "id": "FAR-028",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Dove si trovano e come agiscono i recettori per gli ormoni steroidei come i glucocorticoidi?",
+  "opzioni": {
+   "A": "Sulla membrana plasmatica, dove aprono canali per il sodio",
+   "B": "Nel citoplasma o nel nucleo; il complesso ormone-recettore regola la trascrizione di geni bersaglio",
+   "C": "Sulla membrana plasmatica, accoppiati alla proteina Gq",
+   "D": "Nei mitocondri, dove inibiscono la catena respiratoria",
+   "E": "Nei ribosomi, dove bloccano la sintesi proteica batterica"
+  },
+  "giusta": "B",
+  "perche": "Gli steroidi sono lipofili e attraversano la membrana; si legano a recettori intracellulari che, attivati, si spostano nel nucleo e si legano a sequenze specifiche del DNA, aumentando o riducendo la trascrizione di geni. Per questo i loro effetti compaiono con un ritardo di ore e durano a lungo. La trappola è aspettarsi dagli steroidi un effetto immediato come quello dei recettori-canale.",
+  "semplice": "Il cortisone non bussa alla porta della cellula: entra, raggiunge il nucleo e cambia le istruzioni che la cellula sta leggendo. Per questo serve più tempo prima di vederne gli effetti.",
+  "passaggi": [
+   "Riconosci la proprietà degli steroidi: sono lipofili e attraversano la membrana.",
+   "Quindi i loro recettori sono intracellulari, nel citoplasma o nel nucleo.",
+   "Il complesso ormone-recettore si lega al DNA e regola la trascrizione dei geni bersaglio.",
+   "Le opzioni con recettori di membrana, mitocondri o ribosomi sono escluse.",
+   "La risposta è la B."
+  ],
+  "concetto": "recettori nucleari"
+ },
+ {
+  "id": "FAR-029",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "test",
+  "domanda": "Un farmaco ha dose tossica mediana (TD50) di 400 mg/kg e dose efficace mediana (ED50) di 20 mg/kg negli studi preclinici. Qual è l'indice terapeutico?",
+  "opzioni": {
+   "A": "0,05",
+   "B": "380",
+   "C": "20",
+   "D": "8000",
+   "E": "420"
+  },
+  "giusta": "C",
+  "perche": "L'indice terapeutico è il rapporto TD50 / ED50 (o DL50 / ED50 negli animali): 400 / 20 = 20. Più è alto, più ampio è lo scarto tra dose efficace e dose tossica e quindi più il farmaco è maneggevole. La trappola è fare il rapporto inverso o la differenza: l'indice è un numero puro, senza unità.",
+  "semplice": "Se per curare serve 1 «unità» e per fare danno ne servono 20, c'è un buon margine. Farmaci come la digossina o il litio hanno invece indici molto bassi e richiedono controlli stretti.",
+  "passaggi": [
+   "1. Indice terapeutico = TD50 / ED50",
+   "2. = 400 mg/kg / 20 mg/kg",
+   "3. = 20 (numero puro)"
+  ],
+  "concetto": "indice terapeutico"
+ },
+ {
+  "id": "FAR-030",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Che cosa accade ai recettori dopo un'esposizione prolungata a un antagonista, come un β-bloccante?",
+  "opzioni": {
+   "A": "Diminuiscono di numero (down-regulation)",
+   "B": "Diventano incapaci di legare qualsiasi molecola",
+   "C": "Si trasformano in recettori nucleari",
+   "D": "Non subiscono alcuna variazione",
+   "E": "Possono aumentare di numero (up-regulation), con ipersensibilità se il farmaco viene sospeso bruscamente"
+  },
+  "giusta": "E",
+  "perche": "La cellula compensa il blocco prolungato aumentando il numero di recettori in membrana. Se l'antagonista viene sospeso di colpo, le catecolamine trovano più recettori del normale e si può avere un effetto rimbalzo (tachicardia, ipertensione, peggioramento dell'angina). Per questo i β-bloccanti si sospendono gradualmente. La trappola è confondere questo fenomeno con la down-regulation, tipica invece della stimolazione cronica con agonisti.",
+  "semplice": "Se un negozio vede che la gente non entra perché una porta è bloccata, apre altre porte. Quando togli il blocco, entra una folla tutta insieme.",
+  "passaggi": [
+   "Riconosci la situazione: blocco prolungato dei recettori con un antagonista.",
+   "La cellula compensa la mancanza di stimolo aumentando il numero di recettori (up-regulation).",
+   "La down-regulation (A) è invece tipica dell'esposizione prolungata a un agonista.",
+   "Alla sospensione brusca i recettori in più causano ipersensibilità ed effetto rimbalzo.",
+   "La risposta è la E."
+  ],
+  "concetto": "up-regulation recettoriale"
+ },
+ {
+  "id": "FAR-031",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Che cos'è la tachifilassi?",
+  "opzioni": {
+   "A": "Una rapida riduzione della risposta a un farmaco somministrato ripetutamente a breve distanza",
+   "B": "Un aumento progressivo della risposta a dosi ripetute",
+   "C": "Una reazione allergica immediata",
+   "D": "L'accelerazione del battito causata da un farmaco",
+   "E": "L'eliminazione molto rapida di un farmaco per via renale"
+  },
+  "giusta": "A",
+  "perche": "La tachifilassi è una forma di tolleranza che si instaura in minuti o poche ore: dosi ripetute producono effetti sempre minori. Può dipendere dall'esaurimento di un mediatore (come i depositi di noradrenalina svuotati dall'efedrina) o dalla desensibilizzazione rapida dei recettori. La trappola è confonderla con la tachicardia per l'assonanza del nome, oppure con la tolleranza lenta che si sviluppa in settimane.",
+  "semplice": "È come spremere più volte la stessa spugna: la prima volta esce tanta acqua, poi sempre meno, perché la riserva si è svuotata.",
+  "passaggi": [
+   "Ricorda il significato del termine: «tachi» = rapido, «filassi» = protezione; è una tolleranza rapida.",
+   "Dosi ripetute a breve distanza danno effetti sempre minori, in minuti o ore.",
+   "Si escludono l'aumento della risposta, l'allergia, la tachicardia e l'eliminazione rapida.",
+   "La risposta è la A."
+  ],
+  "concetto": "tachifilassi"
+ },
+ {
+  "id": "FAR-032",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Che cos'è un agonista inverso?",
+  "opzioni": {
+   "A": "Un antagonista competitivo puro, senza alcun effetto proprio",
+   "B": "Un farmaco che si lega a recettori con attività costitutiva e la riduce, producendo effetti opposti a quelli dell'agonista",
+   "C": "Un agonista che si lega in modo irreversibile",
+   "D": "Un farmaco che attiva il recettore solo a basse concentrazioni",
+   "E": "Un profarmaco che diventa agonista dopo il metabolismo"
+  },
+  "giusta": "B",
+  "perche": "Alcuni recettori hanno un'attività basale anche senza ligando (attività costitutiva). L'agonista inverso stabilizza la forma inattiva e abbassa questa attività sotto il livello basale, cioè ha efficacia negativa. Un antagonista neutro invece non cambia l'attività basale e blocca sia agonisti sia agonisti inversi. La trappola è considerare sinonimi agonista inverso e antagonista.",
+  "semplice": "Se una radio è sempre accesa a basso volume, l'agonista la alza, l'antagonista impedisce di toccare la manopola, l'agonista inverso la abbassa ancora di più.",
+  "passaggi": [
+   "Ricorda che alcuni recettori hanno attività costitutiva, cioè sono attivi anche senza ligando.",
+   "L'agonista inverso stabilizza la forma inattiva e abbassa l'attività sotto il livello basale (efficacia negativa).",
+   "L'antagonista neutro (A) invece non cambia l'attività basale.",
+   "La risposta è la B."
+  ],
+  "concetto": "agonismo inverso"
+ },
+ {
+  "id": "FAR-033",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "test",
+  "domanda": "La protamina neutralizza l'eparina legandosi direttamente a essa. Di quale tipo di antagonismo si tratta?",
+  "opzioni": {
+   "A": "Antagonismo competitivo recettoriale",
+   "B": "Antagonismo fisiologico (funzionale)",
+   "C": "Antagonismo farmacocinetico",
+   "D": "Antagonismo chimico",
+   "E": "Agonismo parziale"
+  },
+  "giusta": "D",
+  "perche": "Nell'antagonismo chimico l'antagonista si combina direttamente con il farmaco e lo inattiva, senza passare da un recettore: la protamina, carica positivamente, forma un complesso inattivo con l'eparina, carica negativamente. L'antagonismo fisiologico invece coinvolge due sostanze che agiscono su recettori diversi con effetti opposti (per esempio istamina e adrenalina sui bronchi). La trappola è pensare che ogni antagonista debba agire su un recettore.",
+  "semplice": "È come due calamite di segno opposto che si attaccano tra loro: una volta unite, nessuna delle due è più libera di agire.",
+  "passaggi": [
+   "Riconosci il dettaglio chiave: la protamina si lega direttamente all'eparina, senza passare da un recettore.",
+   "Ricorda: l'antagonismo chimico è la combinazione diretta tra due sostanze che inattiva il farmaco.",
+   "Non è competitivo recettoriale né fisiologico (recettori diversi con effetti opposti) né farmacocinetico.",
+   "La risposta è la D: antagonismo chimico (protamina positiva, eparina negativa)."
+  ],
+  "concetto": "antagonismo chimico"
+ },
+ {
+  "id": "FAR-034",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Che cosa si intende con «recettori di riserva» (spare receptors)?",
+  "opzioni": {
+   "A": "La possibilità di ottenere l'effetto massimo occupando solo una parte dei recettori disponibili",
+   "B": "Recettori che si trovano solo nel nucleo",
+   "C": "Recettori che vengono sintetizzati solo in caso di malattia",
+   "D": "Recettori bloccati in modo permanente da un antagonista",
+   "E": "Recettori presenti solo nei tessuti embrionali"
+  },
+  "giusta": "A",
+  "perche": "In molti tessuti la risposta massima si ottiene già quando solo una parte dei recettori è occupata, perché la cascata del segnale amplifica moltissimo il messaggio. I recettori in eccesso sono detti di riserva. Ne consegue che l'EC50 è inferiore alla Kd e che un antagonista irreversibile, prima di ridurre l'effetto massimo, sposta la curva verso destra. La trappola è credere che serva sempre il 100% di occupazione per l'effetto massimo.",
+  "semplice": "Se in un concerto bastano metà dei microfoni accesi per riempire la sala di suono, gli altri microfoni sono «di riserva».",
+  "passaggi": [
+   "Ricorda che la cascata del segnale amplifica molto il messaggio recettoriale.",
+   "Quindi l'effetto massimo si può ottenere occupando solo una parte dei recettori: gli altri sono «di riserva».",
+   "Le altre opzioni parlano di localizzazione, malattia o blocco permanente, che non c'entrano.",
+   "La risposta è la A."
+  ],
+  "concetto": "recettori di riserva"
+ },
+ {
+  "id": "FAR-035",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "test",
+  "domanda": "Due farmaci, somministrati insieme, producono un effetto molto maggiore della somma degli effetti singoli. Come si chiama questa interazione?",
+  "opzioni": {
+   "A": "Additività",
+   "B": "Sinergismo (potenziamento)",
+   "C": "Antagonismo",
+   "D": "Tolleranza crociata",
+   "E": "Tachifilassi"
+  },
+  "giusta": "B",
+  "perche": "Si parla di additività quando l'effetto combinato è uguale alla somma degli effetti singoli e di sinergismo quando è superiore. Un esempio classico di sinergia è l'associazione sulfametossazolo-trimetoprim, che blocca due tappe successive della sintesi dei folati batterici. La sinergia è utile in terapia ma pericolosa negli effetti tossici, come per alcol e benzodiazepine sulla depressione respiratoria. La trappola è confondere sinergia e additività.",
+  "semplice": "Uno più uno che fa tre: due farmaci che si aiutano a vicenda ottengono più di quanto farebbero separatamente.",
+  "passaggi": [
+   "Confronta l'effetto combinato con la somma degli effetti singoli.",
+   "Se è uguale alla somma si parla di additività; se è molto maggiore si parla di sinergismo o potenziamento.",
+   "Antagonismo, tolleranza crociata e tachifilassi riducono l'effetto, non lo aumentano.",
+   "La risposta è la B."
+  ],
+  "concetto": "sinergismo"
+ },
+ {
+  "id": "FAR-036",
+  "materia": "Farmacologia",
+  "argomento": "Farmacodinamica e recettori",
+  "livello": "università",
+  "domanda": "Su quale tipo di recettore agisce l'insulina?",
+  "opzioni": {
+   "A": "Recettore accoppiato a proteina Gs",
+   "B": "Recettore-canale per il potassio",
+   "C": "Recettore nucleare",
+   "D": "Recettore accoppiato a proteina Gi",
+   "E": "Recettore con attività tirosin-chinasica intrinseca"
+  },
+  "giusta": "E",
+  "perche": "Il recettore dell'insulina è un dimero transmembrana con un dominio tirosin-chinasico nella parte intracellulare: il legame dell'ormone provoca autofosforilazione e fosforilazione di substrati (IRS) che attivano le vie di PI3K-Akt e delle MAP chinasi. Questo porta, tra l'altro, allo spostamento dei trasportatori GLUT4 in membrana. Allo stesso tipo appartengono i recettori di molti fattori di crescita. La trappola è pensare che un ormone peptidico agisca sempre attraverso proteine G.",
+  "semplice": "Il recettore dell'insulina è come un interruttore che, quando viene premuto, si «auto-firma» con gruppi fosfato e poi passa il messaggio a una catena di altre proteine.",
+  "passaggi": [
+   "Ricorda la struttura del recettore dell'insulina: un dimero transmembrana con dominio intracellulare enzimatico.",
+   "Il legame dell'insulina provoca autofosforilazione su residui di tirosina e attiva la via PI3K-Akt.",
+   "Non è accoppiato a proteine G, non è un canale né un recettore nucleare.",
+   "La risposta è la E: recettore con attività tirosin-chinasica intrinseca."
+  ],
+  "concetto": "recettori tirosin-chinasici"
+ },
+ {
+  "id": "FAR-037",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Su quale recettore agiscono le benzodiazepine?",
+  "opzioni": {
+   "A": "Recettore D2 della dopamina, come antagonisti",
+   "B": "Recettore μ degli oppioidi, come agonisti",
+   "C": "Recettore GABA-A, come modulatori allosterici positivi",
+   "D": "Recettore NMDA del glutammato, come agonisti",
+   "E": "Recettore muscarinico M1, come antagonisti"
+  },
+  "giusta": "C",
+  "perche": "Le benzodiazepine si legano a un sito del recettore GABA-A diverso da quello del GABA e ne aumentano l'effetto, rendendo più frequente l'apertura del canale per il cloro. La cellula si iperpolarizza ed è meno eccitabile: ne derivano effetti ansiolitici, sedativi, miorilassanti e anticonvulsivanti. La trappola è pensare che attivino il recettore da sole: senza GABA il loro effetto è minimo, e questo le rende più sicure dei barbiturici.",
+  "semplice": "Il GABA è il «freno» del cervello. Le benzodiazepine non premono il freno da sole, ma rendono più efficace ogni pressione che fa il GABA.",
+  "passaggi": [
+   "Ricorda gli effetti delle benzodiazepine: ansiolitici, sedativi, miorilassanti, anticonvulsivanti, cioè inibitori.",
+   "Il principale sistema inibitorio è quello del GABA con il recettore-canale GABA-A per il cloro.",
+   "Le benzodiazepine si legano a un sito diverso da quello del GABA e ne potenziano l'effetto: sono modulatori allosterici positivi.",
+   "La risposta è la C."
+  ],
+  "concetto": "benzodiazepine e GABA-A"
+ },
+ {
+  "id": "FAR-038",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Che differenza c'è tra benzodiazepine e barbiturici nell'azione sul recettore GABA-A?",
+  "opzioni": {
+   "A": "Le benzodiazepine aumentano la frequenza di apertura del canale; i barbiturici ne aumentano la durata e ad alte dosi lo aprono anche senza GABA",
+   "B": "Le benzodiazepine bloccano il canale; i barbiturici lo aprono",
+   "C": "Entrambi agiscono solo in assenza di GABA",
+   "D": "I barbiturici agiscono sul recettore GABA-B, le benzodiazepine sul GABA-A",
+   "E": "Non ci sono differenze di meccanismo"
+  },
+  "giusta": "A",
+  "perche": "Le benzodiazepine aumentano la frequenza con cui il canale del cloro si apre in presenza di GABA. I barbiturici prolungano il tempo di apertura e, a dosi elevate, attivano il canale anche senza GABA: per questo hanno un effetto tetto molto più alto e possono causare depressione respiratoria mortale. La trappola è ritenerli equivalenti perché agiscono sullo stesso recettore.",
+  "semplice": "Le benzodiazepine fanno aprire la porta più spesso quando qualcuno bussa; i barbiturici la tengono aperta più a lungo e, se sono tanti, la spalancano anche se nessuno bussa.",
+  "passaggi": [
+   "Entrambe le classi agiscono sul recettore GABA-A, ma in modo diverso.",
+   "Le benzodiazepine aumentano la frequenza di apertura del canale del cloro, solo in presenza di GABA.",
+   "I barbiturici ne prolungano la durata di apertura e ad alte dosi lo aprono anche senza GABA: per questo sono più pericolosi.",
+   "La risposta è la A."
+  ],
+  "concetto": "barbiturici vs benzodiazepine"
+ },
+ {
+  "id": "FAR-039",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Quale sostanza è l'antagonista usato per invertire gli effetti di un sovradosaggio di benzodiazepine?",
+  "opzioni": {
+   "A": "Naloxone",
+   "B": "Atropina",
+   "C": "Fisostigmina",
+   "D": "N-acetilcisteina",
+   "E": "Flumazenil"
+  },
+  "giusta": "E",
+  "perche": "Il flumazenil è un antagonista competitivo del sito delle benzodiazepine sul recettore GABA-A e ne annulla rapidamente gli effetti. Il naloxone è invece l'antagonista degli oppioidi. Il flumazenil ha emivita breve e può scatenare convulsioni in chi usa benzodiazepine in modo cronico, quindi va usato con cautela. La trappola è scambiare i due antidoti, che agiscono su recettori diversi.",
+  "semplice": "Flumazenil e benzodiazepine si contendono lo stesso posto sul recettore: se arriva il flumazenil, la benzodiazepina viene spinta via.",
+  "passaggi": [
+   "Si cerca l'antidoto specifico delle benzodiazepine.",
+   "Ricorda: il flumazenil è antagonista competitivo del sito benzodiazepinico del GABA-A.",
+   "Il naloxone è l'antidoto degli oppioidi, l'atropina degli eccessi colinergici, la N-acetilcisteina del paracetamolo.",
+   "La risposta è la E: flumazenil."
+  ],
+  "concetto": "antidoto delle benzodiazepine"
+ },
+ {
+  "id": "FAR-040",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Qual è il meccanismo d'azione degli inibitori selettivi della ricaptazione della serotonina (SSRI)?",
+  "opzioni": {
+   "A": "Inibiscono le monoamino ossidasi",
+   "B": "Bloccano i recettori D2 della dopamina",
+   "C": "Aumentano la sintesi di serotonina dal triptofano",
+   "D": "Bloccano il trasportatore della serotonina (SERT), aumentandone la presenza nella fessura sinaptica",
+   "E": "Sono agonisti diretti di tutti i recettori serotoninergici"
+  },
+  "giusta": "D",
+  "perche": "Dopo il rilascio la serotonina viene ricaptata nel neurone presinaptico dal trasportatore SERT. Gli SSRI, come fluoxetina e sertralina, bloccano questo trasportatore e prolungano la permanenza del neurotrasmettitore nella sinapsi. L'effetto antidepressivo compare dopo alcune settimane, per adattamenti dei recettori. La trappola è aspettarsi un effetto immediato o confondere gli SSRI con gli IMAO, che agiscono sulla degradazione.",
+  "semplice": "Normalmente la serotonina viene «aspirata» indietro dopo l'uso. Gli SSRI spengono l'aspirapolvere, così ne resta di più a disposizione dei recettori.",
+  "passaggi": [
+   "Leggi la sigla: SSRI = inibitori selettivi della ricaptazione della serotonina.",
+   "Dopo il rilascio la serotonina viene riportata nel neurone dal trasportatore SERT.",
+   "Bloccando il SERT, la serotonina resta più a lungo nella fessura sinaptica.",
+   "Inibire le MAO (A) è il meccanismo degli IMAO; le altre opzioni non corrispondono.",
+   "La risposta è la D."
+  ],
+  "concetto": "SSRI"
+ },
+ {
+  "id": "FAR-041",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Perché i pazienti trattati con inibitori non selettivi delle MAO devono evitare alimenti ricchi di tiramina, come formaggi stagionati?",
+  "opzioni": {
+   "A": "Perché la tiramina non viene degradata e provoca un massiccio rilascio di noradrenalina con crisi ipertensiva",
+   "B": "Perché la tiramina inattiva il farmaco nello stomaco",
+   "C": "Perché la tiramina provoca ipoglicemia grave",
+   "D": "Perché la tiramina blocca la ricaptazione della serotonina",
+   "E": "Perché la tiramina causa insufficienza renale acuta"
+  },
+  "giusta": "A",
+  "perche": "La tiramina alimentare viene normalmente distrutta dalle MAO dell'intestino e del fegato. Se questi enzimi sono inibiti, la tiramina entra in circolo e spiazza la noradrenalina dalle vescicole delle terminazioni simpatiche, causando un brusco aumento della pressione (la cosiddetta «reazione del formaggio»). La trappola è pensare a un'interazione di assorbimento: è un effetto simpaticomimetico indiretto.",
+  "semplice": "Le MAO sono come guardie che fermano la tiramina all'ingresso. Se le guardie sono addormentate dal farmaco, la tiramina entra e fa svuotare i depositi di noradrenalina tutti insieme.",
+  "passaggi": [
+   "Ricorda che la tiramina alimentare viene normalmente distrutta dalle MAO di intestino e fegato.",
+   "Con le MAO inibite la tiramina entra in circolo e spiazza la noradrenalina dalle vescicole simpatiche.",
+   "Il massiccio rilascio di noradrenalina provoca una crisi ipertensiva («reazione del formaggio»).",
+   "La risposta è la A."
+  ],
+  "concetto": "IMAO e tiramina"
+ },
+ {
+  "id": "FAR-042",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Gli effetti extrapiramidali (parkinsonismo, distonie) degli antipsicotici tipici derivano principalmente da:",
+  "opzioni": {
+   "A": "Blocco dei recettori muscarinici corticali",
+   "B": "Stimolazione dei recettori 5-HT2A",
+   "C": "Blocco dei recettori H1 ipotalamici",
+   "D": "Blocco dei recettori D2 nella via nigrostriatale",
+   "E": "Stimolazione dei recettori GABA-A"
+  },
+  "giusta": "D",
+  "perche": "Gli antipsicotici tipici, come l'aloperidolo, bloccano i recettori D2 in modo non selettivo: nella via mesolimbica ciò riduce i sintomi positivi, ma nella via nigrostriatale provoca disturbi del movimento simili al Parkinson. Il blocco D2 nella via tuberoinfundibolare causa invece iperprolattinemia. La trappola è attribuire gli effetti extrapiramidali al blocco muscarinico, che al contrario tende a ridurli.",
+  "semplice": "La dopamina della via nigrostriatale serve a muoversi in modo fluido. Se gli antipsicotici la bloccano anche lì, compaiono rigidità e tremori come nel Parkinson.",
+  "passaggi": [
+   "Riconosci gli effetti extrapiramidali come disturbi del movimento simili al Parkinson.",
+   "Il controllo del movimento dipende dalla dopamina nella via nigrostriatale.",
+   "Gli antipsicotici tipici bloccano i D2 anche lì, riducendo la trasmissione dopaminergica motoria.",
+   "Il blocco muscarinico (A) anzi attenua questi effetti; le altre opzioni non c'entrano.",
+   "La risposta è la D."
+  ],
+  "concetto": "effetti extrapiramidali"
+ },
+ {
+  "id": "FAR-043",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Quale grave effetto avverso ematologico richiede il monitoraggio periodico dell'emocromo durante la terapia con clozapina?",
+  "opzioni": {
+   "A": "Policitemia",
+   "B": "Trombocitosi",
+   "C": "Anemia megaloblastica",
+   "D": "Agranulocitosi",
+   "E": "Emolisi da deficit di G6PD"
+  },
+  "giusta": "D",
+  "perche": "La clozapina è un antipsicotico atipico molto efficace nella schizofrenia resistente, con scarsi effetti extrapiramidali, ma può causare agranulocitosi, cioè una grave riduzione dei neutrofili con alto rischio di infezioni. Per questo il suo uso prevede controlli regolari dei globuli bianchi. La trappola è pensare che, essendo «atipica», sia priva di effetti avversi gravi: ha anche aumento di peso, sedazione e rischio di convulsioni.",
+  "semplice": "La clozapina funziona bene, ma in pochi pazienti può far crollare i globuli bianchi che difendono dalle infezioni: per questo si controlla spesso il sangue.",
+  "passaggi": [
+   "Riconosci il farmaco: la clozapina, antipsicotico atipico.",
+   "Ricorda il suo effetto avverso ematologico noto: la grave riduzione dei neutrofili.",
+   "Questo spiega il controllo periodico dei globuli bianchi con l'emocromo.",
+   "La risposta è la D: agranulocitosi."
+  ],
+  "concetto": "clozapina e agranulocitosi"
+ },
+ {
+  "id": "FAR-044",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Perché la levodopa per la malattia di Parkinson viene associata alla carbidopa?",
+  "opzioni": {
+   "A": "La carbidopa inibisce la dopa-decarbossilasi periferica, così più levodopa raggiunge il cervello e diminuiscono gli effetti periferici",
+   "B": "La carbidopa è un agonista dopaminergico più potente della levodopa",
+   "C": "La carbidopa aumenta l'assorbimento intestinale della levodopa",
+   "D": "La carbidopa blocca le MAO-B nel cervello",
+   "E": "La carbidopa riduce l'eliminazione renale della levodopa"
+  },
+  "giusta": "A",
+  "perche": "La dopamina non attraversa la barriera ematoencefalica, mentre il suo precursore levodopa sì. Senza protezione, però, gran parte della levodopa verrebbe trasformata in dopamina già in periferia dalla dopa-decarbossilasi, con nausea e aritmie. La carbidopa inibisce questo enzima ma non entra nel cervello, quindi non ostacola la conversione dove serve. La trappola è credere che la carbidopa agisca nel sistema nervoso centrale.",
+  "semplice": "La carbidopa è una scorta che protegge la levodopa durante il viaggio nel sangue e la lascia libera solo una volta arrivata nel cervello.",
+  "passaggi": [
+   "Ricorda che la dopamina non passa la barriera ematoencefalica, la levodopa sì.",
+   "In periferia la dopa-decarbossilasi trasformerebbe gran parte della levodopa in dopamina, con nausea e aritmie.",
+   "La carbidopa inibisce questo enzima ma non entra nel cervello, dove la conversione deve avvenire.",
+   "La risposta è la A."
+  ],
+  "concetto": "levodopa e carbidopa"
+ },
+ {
+  "id": "FAR-045",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Su quale recettore agisce principalmente la morfina per produrre analgesia?",
+  "opzioni": {
+   "A": "Recettore κ (kappa) degli oppioidi",
+   "B": "Recettore GABA-A",
+   "C": "Recettore μ (mu) degli oppioidi",
+   "D": "Recettore 5-HT3",
+   "E": "Recettore NMDA"
+  },
+  "giusta": "C",
+  "perche": "La morfina è un agonista del recettore μ, accoppiato a proteine Gi/o: riduce il cAMP, apre canali del potassio e chiude canali del calcio, riducendo la trasmissione del dolore nel midollo e nel cervello. Lo stesso recettore media anche depressione respiratoria, miosi, stipsi ed euforia. La trappola è attribuire l'analgesia della morfina al recettore κ, che contribuisce ma non è il bersaglio principale.",
+  "semplice": "Il recettore μ è come un regolatore di volume del dolore: la morfina lo gira verso il basso, ma lo stesso regolatore abbassa anche il «volume» del respiro.",
+  "passaggi": [
+   "Si cerca il recettore principale dell'analgesia da morfina.",
+   "Ricorda: la morfina è un agonista del recettore μ degli oppioidi, accoppiato a Gi/o.",
+   "Il recettore κ contribuisce ma non è il bersaglio principale; GABA-A, 5-HT3 e NMDA sono altri sistemi.",
+   "La risposta è la C."
+  ],
+  "concetto": "oppioidi e recettore μ"
+ },
+ {
+  "id": "FAR-046",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Perché dopo la somministrazione di naloxone per un'intossicazione da oppioidi a lunga durata il paziente va tenuto sotto osservazione?",
+  "opzioni": {
+   "A": "Perché il naloxone causa a sua volta depressione respiratoria",
+   "B": "Perché il naloxone ha durata d'azione più breve di molti oppioidi e la depressione respiratoria può ricomparire",
+   "C": "Perché il naloxone è un agonista parziale che si accumula",
+   "D": "Perché il naloxone provoca agranulocitosi",
+   "E": "Perché il naloxone viene trasformato in morfina dal fegato"
+  },
+  "giusta": "B",
+  "perche": "Il naloxone è un antagonista competitivo dei recettori oppioidi con durata d'azione di circa 30-90 minuti. Se l'oppioide assunto dura più a lungo (per esempio metadone o formulazioni a rilascio prolungato), finito l'effetto dell'antidoto l'oppioide può tornare a occupare i recettori e deprimere il respiro. Nei soggetti dipendenti, inoltre, può scatenare una crisi di astinenza. La trappola è considerare il problema risolto dopo il primo risveglio.",
+  "semplice": "Il naloxone è come un buttafuori che lavora solo per un'ora: se l'oppioide resta nel locale per molte ore, quando il buttafuori se ne va torna a creare problemi.",
+  "passaggi": [
+   "Confronta le durate: il naloxone agisce per circa 30-90 minuti.",
+   "Molti oppioidi, come metadone o forme a rilascio prolungato, durano molto di più.",
+   "Finito l'effetto dell'antidoto, l'oppioide può tornare sui recettori e deprimere di nuovo il respiro.",
+   "La risposta è la B."
+  ],
+  "concetto": "naloxone"
+ },
+ {
+  "id": "FAR-047",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Qual è il meccanismo d'azione principale della fenitoina e della carbamazepina come antiepilettici?",
+  "opzioni": {
+   "A": "Blocco dei canali del sodio voltaggio-dipendenti nello stato inattivato",
+   "B": "Blocco dei canali del calcio di tipo T talamici",
+   "C": "Agonismo sui recettori GABA-B",
+   "D": "Inibizione della acetilcolinesterasi",
+   "E": "Antagonismo dei recettori D2"
+  },
+  "giusta": "A",
+  "perche": "Fenitoina e carbamazepina si legano preferibilmente ai canali del sodio nello stato inattivato e ne rallentano il recupero: in questo modo limitano le scariche ad alta frequenza tipiche della crisi senza bloccare l'attività normale. L'etosuccimide agisce invece sui canali del calcio di tipo T ed è usata nelle assenze. La trappola è attribuire a tutti gli antiepilettici un meccanismo GABAergico.",
+  "semplice": "Questi farmaci non spengono i neuroni, ma impediscono loro di «sparare a raffica»: il canale del sodio resta chiuso un po' più a lungo dopo ogni scarica.",
+  "passaggi": [
+   "Ricorda che fenitoina e carbamazepina limitano le scariche neuronali ad alta frequenza.",
+   "Lo fanno legandosi ai canali del sodio voltaggio-dipendenti nello stato inattivato e rallentandone il recupero.",
+   "I canali del calcio di tipo T (B) sono il bersaglio dell'etosuccimide; le altre opzioni non c'entrano.",
+   "La risposta è la A."
+  ],
+  "concetto": "antiepilettici e canali Na⁺"
+ },
+ {
+  "id": "FAR-048",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Perché la fenitoina richiede particolare attenzione quando si aumenta la dose?",
+  "opzioni": {
+   "A": "Perché viene eliminata immodificata dal rene",
+   "B": "Perché il suo metabolismo è saturabile: oltre una certa concentrazione passa a una cinetica di ordine zero e le concentrazioni salgono in modo sproporzionato",
+   "C": "Perché non si lega alle proteine plasmatiche",
+   "D": "Perché ha un indice terapeutico molto ampio",
+   "E": "Perché la sua emivita diminuisce all'aumentare della dose"
+  },
+  "giusta": "B",
+  "perche": "Gli enzimi epatici che metabolizzano la fenitoina si saturano a concentrazioni vicine a quelle terapeutiche. Oltre questa soglia l'eliminazione diventa di ordine zero: un piccolo aumento di dose può provocare un forte aumento della concentrazione plasmatica e tossicità (nistagmo, atassia, confusione). Per questo se ne misurano spesso i livelli. La trappola è pensare che raddoppiare la dose raddoppi semplicemente la concentrazione.",
+  "semplice": "Se gli «operai» del fegato lavorano già al massimo, ogni farmaco in più resta in coda e si accumula: la concentrazione cresce molto più di quanto ti aspetteresti.",
+  "passaggi": [
+   "Ricorda la cinetica della fenitoina: gli enzimi epatici che la metabolizzano si saturano vicino alle dosi terapeutiche.",
+   "Oltre la saturazione l'eliminazione diventa di ordine zero.",
+   "Quindi un piccolo aumento di dose può far salire molto la concentrazione e dare tossicità.",
+   "La risposta è la B."
+  ],
+  "concetto": "cinetica saturabile della fenitoina"
+ },
+ {
+  "id": "FAR-049",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Su quale principio si basa l'uso di donepezil e rivastigmina nella malattia di Alzheimer?",
+  "opzioni": {
+   "A": "Bloccano i recettori muscarinici centrali",
+   "B": "Inibiscono l'acetilcolinesterasi aumentando l'acetilcolina disponibile nelle sinapsi corticali",
+   "C": "Rimuovono le placche di β-amiloide dal cervello",
+   "D": "Stimolano i recettori D2 della dopamina",
+   "E": "Bloccano i canali del sodio dei neuroni corticali"
+  },
+  "giusta": "B",
+  "perche": "Nell'Alzheimer si perdono precocemente i neuroni colinergici che proiettano alla corteccia. Gli inibitori della colinesterasi rallentano la degradazione dell'acetilcolina e potenziano la trasmissione residua, con un beneficio sintomatico modesto. Non modificano il processo neurodegenerativo. La trappola è pensare che curino la causa della malattia; un'altra classe, la memantina, agisce invece sui recettori NMDA.",
+  "semplice": "Se l'acqua che arriva nel giardino è poca, chiudi gli scarichi per non perderne: gli inibitori della colinesterasi fanno lo stesso con l'acetilcolina.",
+  "passaggi": [
+   "Ricorda che nell'Alzheimer si perdono precocemente i neuroni colinergici diretti alla corteccia.",
+   "Donepezil e rivastigmina inibiscono l'acetilcolinesterasi, l'enzima che degrada l'acetilcolina.",
+   "Così aumenta l'acetilcolina disponibile nelle sinapsi residue, con beneficio sintomatico.",
+   "Non rimuovono l'amiloide e non bloccano i muscarinici.",
+   "La risposta è la B."
+  ],
+  "concetto": "anticolinesterasici"
+ },
+ {
+  "id": "FAR-050",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Perché il litio, usato nel disturbo bipolare, richiede il dosaggio periodico della concentrazione plasmatica?",
+  "opzioni": {
+   "A": "Perché viene metabolizzato in modo imprevedibile dal citocromo P450",
+   "B": "Perché provoca agranulocitosi",
+   "C": "Perché non viene assorbito per via orale",
+   "D": "Perché è un antagonista dei recettori D2",
+   "E": "Perché ha un indice terapeutico molto ristretto"
+  },
+  "giusta": "E",
+  "perche": "Le concentrazioni efficaci del litio sono molto vicine a quelle tossiche (tremore grossolano, confusione, aritmie). Il litio non viene metabolizzato ed è eliminato dal rene come il sodio: disidratazione, diuretici tiazidici e FANS ne riducono l'escrezione e possono farlo accumulare. La trappola è pensare a interazioni metaboliche epatiche: per il litio conta soprattutto la funzione renale.",
+  "semplice": "Con il litio la strada tra «giusto» e «troppo» è stretta come un marciapiede: basta poco, per esempio sudare molto d'estate, per finire fuori strada.",
+  "passaggi": [
+   "Ricorda che il litio ha concentrazioni efficaci molto vicine a quelle tossiche.",
+   "Questo significa indice terapeutico ristretto, che impone di misurare i livelli plasmatici.",
+   "Il litio non è metabolizzato dal P450, si assorbe per bocca e non è antagonista D2.",
+   "La risposta è la E."
+  ],
+  "concetto": "litio e indice terapeutico"
+ },
+ {
+  "id": "FAR-051",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Perché gli anestetici locali funzionano peggio in un tessuto infiammato e acido?",
+  "opzioni": {
+   "A": "Perché l'acidità li trasforma in acidi forti inattivi",
+   "B": "Perché l'infiammazione blocca i canali del sodio al loro posto",
+   "C": "Perché, essendo basi deboli, in ambiente acido sono più ionizzati e attraversano meno la membrana del nervo",
+   "D": "Perché l'acidità aumenta la loro velocità di metabolismo epatico",
+   "E": "Perché in ambiente acido si legano all'emoglobina"
+  },
+  "giusta": "C",
+  "perche": "Gli anestetici locali bloccano i canali del sodio dal lato interno della membrana. Sono basi deboli: la forma neutra attraversa la membrana, mentre la forma ionizzata è quella che blocca il canale una volta dentro. In un tessuto acido prevale la forma ionizzata già all'esterno, che non riesce a entrare, quindi l'effetto si riduce. La trappola è dimenticare che serve la forma neutra per il passaggio.",
+  "semplice": "L'anestetico deve entrare nel nervo «senza carica» per passare la membrana. Un ambiente acido gli attacca una carica troppo presto e lo lascia fuori dalla porta.",
+  "passaggi": [
+   "Ricorda che gli anestetici locali sono basi deboli e agiscono dal lato interno della membrana del nervo.",
+   "Solo la forma neutra attraversa la membrana; dentro, la forma ionizzata blocca il canale del sodio.",
+   "In un tessuto acido prevale la forma ionizzata già all'esterno, che non riesce a entrare.",
+   "La risposta è la C."
+  ],
+  "concetto": "anestetici locali e pH"
+ },
+ {
+  "id": "FAR-052",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Quali effetti produce un farmaco antimuscarinico come l'atropina?",
+  "opzioni": {
+   "A": "Bradicardia, miosi e aumento della salivazione",
+   "B": "Broncocostrizione e diarrea",
+   "C": "Tachicardia, midriasi, bocca secca e riduzione della motilità intestinale",
+   "D": "Ipotensione con aumento della sudorazione",
+   "E": "Contrazione della vescica e aumento della lacrimazione"
+  },
+  "giusta": "C",
+  "perche": "L'atropina blocca i recettori muscarinici e quindi gli effetti del parasimpatico, il sistema del «riposo e digestione». Ne derivano aumento della frequenza cardiaca, dilatazione della pupilla, secchezza delle mucose, stipsi e ritenzione urinaria. La trappola è elencare gli effetti della stimolazione colinergica, che sono l'esatto opposto.",
+  "semplice": "Se togli il freno parasimpatico il corpo va in modalità «allerta»: il cuore accelera, le pupille si allargano e la bocca diventa secca.",
+  "passaggi": [
+   "Riconosci la classe: l'atropina blocca i recettori muscarinici, cioè gli effetti del parasimpatico.",
+   "Togliendo il «riposo e digestione» si ottiene il contrario: cuore più veloce, pupilla dilatata, meno secrezioni e motilità.",
+   "A, B, D ed E descrivono invece effetti di stimolazione colinergica.",
+   "La risposta è la C: tachicardia, midriasi, bocca secca e stipsi."
+  ],
+  "concetto": "farmaci antimuscarinici"
+ },
+ {
+  "id": "FAR-053",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "test",
+  "domanda": "Il salbutamolo, usato nell'asma, è:",
+  "opzioni": {
+   "A": "Un antagonista dei recettori β2 che costringe i bronchi",
+   "B": "Un agonista selettivo dei recettori β2-adrenergici che rilassa la muscolatura bronchiale",
+   "C": "Un corticosteroide inalatorio",
+   "D": "Un antagonista dei recettori H1",
+   "E": "Un inibitore della acetilcolinesterasi"
+  },
+  "giusta": "B",
+  "perche": "Il salbutamolo stimola i recettori β2 della muscolatura liscia bronchiale; tramite proteina Gs e cAMP provoca rilassamento e broncodilatazione rapida. La selettività è relativa: a dosi elevate stimola anche i β1 cardiaci e i β2 dei muscoli scheletrici, causando tachicardia e tremore. La trappola è confonderlo con i β-bloccanti, che anzi possono peggiorare l'asma.",
+  "semplice": "Il salbutamolo «apre» i bronchi come quando si allenta un elastico stretto intorno a un tubo: l'aria passa meglio in pochi minuti.",
+  "passaggi": [
+   "Ricorda che nell'asma serve dilatare i bronchi.",
+   "I recettori β2 della muscolatura bronchiale, tramite Gs e cAMP, provocano rilassamento.",
+   "Il salbutamolo è un agonista selettivo β2: non un antagonista, né un corticosteroide, né un antistaminico.",
+   "La risposta è la B."
+  ],
+  "concetto": "β2-agonisti"
+ },
+ {
+  "id": "FAR-054",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci del sistema nervoso",
+  "livello": "università",
+  "domanda": "Gli antidepressivi triciclici, oltre a bloccare la ricaptazione di noradrenalina e serotonina, causano spesso secchezza delle fauci, stipsi e sedazione. Perché?",
+  "opzioni": {
+   "A": "Perché stimolano i recettori nicotinici",
+   "B": "Perché inibiscono le MAO intestinali",
+   "C": "Perché aumentano il rilascio di acetilcolina",
+   "D": "Perché sono agonisti dei recettori GABA-A",
+   "E": "Perché bloccano anche recettori muscarinici, istaminici H1 e α1-adrenergici"
+  },
+  "giusta": "E",
+  "perche": "I triciclici sono poco selettivi: il blocco muscarinico dà effetti anticolinergici (bocca secca, stipsi, ritenzione urinaria), il blocco H1 dà sedazione e aumento di peso, il blocco α1 dà ipotensione ortostatica. In sovradosaggio bloccano anche i canali del sodio cardiaci e sono molto pericolosi. Gli SSRI sono stati sviluppati proprio per ridurre questi effetti. La trappola è attribuire tutti gli effetti avversi al meccanismo antidepressivo.",
+  "semplice": "I triciclici sono una chiave che apre molte serrature diverse oltre a quella voluta: ogni serratura in più porta un effetto collaterale.",
+  "passaggi": [
+   "Riconosci gli effetti descritti: bocca secca e stipsi sono anticolinergici, la sedazione è tipica dell'antistaminico.",
+   "Ricorda che i triciclici sono poco selettivi e bloccano anche altri recettori oltre ai trasportatori.",
+   "Blocco muscarinico dà secchezza e stipsi, blocco H1 dà sedazione, blocco α1 dà ipotensione ortostatica.",
+   "Le altre opzioni (stimolazione nicotinica, MAO, più acetilcolina, GABA-A) non spiegano questi effetti.",
+   "La risposta è la E."
+  ],
+  "concetto": "effetti dei triciclici"
+ },
+ {
+  "id": "FAR-055",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "test",
+  "domanda": "Qual è il meccanismo d'azione degli ACE-inibitori, come l'enalapril?",
+  "opzioni": {
+   "A": "Bloccano il recettore AT1 dell'angiotensina II",
+   "B": "Inibiscono direttamente la renina",
+   "C": "Bloccano i recettori β1 cardiaci",
+   "D": "Inibiscono l'enzima che converte l'angiotensina I in angiotensina II",
+   "E": "Bloccano i canali del calcio di tipo L"
+  },
+  "giusta": "D",
+  "perche": "L'enzima di conversione dell'angiotensina (ACE) trasforma l'angiotensina I nell'angiotensina II, potente vasocostrittore che stimola anche la secrezione di aldosterone. Gli ACE-inibitori ne riducono la formazione, abbassando la pressione e il carico sul cuore. I sartani agiscono un passo dopo, bloccando il recettore AT1, mentre l'aliskiren inibisce la renina. La trappola è confondere questi tre livelli del sistema renina-angiotensina.",
+  "semplice": "Il sistema renina-angiotensina è una catena di montaggio che produce un «restringi-vasi». L'ACE-inibitore ferma la macchina che fa l'ultimo passaggio.",
+  "passaggi": [
+   "Leggi la sigla: ACE = enzima di conversione dell'angiotensina.",
+   "Ricorda che l'ACE trasforma l'angiotensina I in angiotensina II, vasocostrittore che stimola l'aldosterone.",
+   "Bloccare il recettore AT1 è dei sartani (A), inibire la renina è dell'aliskiren (B); C ed E sono altre classi.",
+   "La risposta è la D."
+  ],
+  "concetto": "ACE-inibitori"
+ },
+ {
+  "id": "FAR-056",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Perché gli ACE-inibitori possono causare tosse secca, mentre i sartani molto meno?",
+  "opzioni": {
+   "A": "Perché gli ACE-inibitori sono broncocostrittori diretti",
+   "B": "Perché i sartani hanno anche un effetto antitosse",
+   "C": "Perché gli ACE-inibitori bloccano i recettori β2 bronchiali",
+   "D": "Perché gli ACE-inibitori aumentano l'angiotensina II nel polmone",
+   "E": "Perché l'ACE degrada anche la bradichinina, che si accumula quando l'enzima è inibito"
+  },
+  "giusta": "E",
+  "perche": "L'ACE è la stessa chininasi II che degrada la bradichinina. Inibendolo, la bradichinina e altre sostanze come la sostanza P si accumulano e irritano le vie aeree, provocando tosse secca persistente e, raramente, angioedema. I sartani bloccano solo il recettore AT1 senza toccare la bradichinina e sono l'alternativa in chi non tollera la tosse. La trappola è pensare a un effetto diretto sui bronchi.",
+  "semplice": "L'ACE ha due lavori: produrre angiotensina II e smaltire bradichinina. Se lo blocchi, smette di fare entrambi e la bradichinina rimasta in giro solletica la gola.",
+  "passaggi": [
+   "Ricorda che l'ACE è la stessa chininasi II che degrada la bradichinina.",
+   "Inibendo l'ACE, bradichinina e sostanza P si accumulano e irritano le vie aeree, causando tosse secca.",
+   "I sartani bloccano solo il recettore AT1 e non toccano la degradazione della bradichinina.",
+   "La risposta è la E."
+  ],
+  "concetto": "tosse da ACE-inibitori"
+ },
+ {
+  "id": "FAR-057",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Su quale trasportatore agiscono i diuretici dell'ansa come la furosemide?",
+  "opzioni": {
+   "A": "Cotrasportatore Na⁺-Cl⁻ (NCC) del tubulo contorto distale",
+   "B": "Canale epiteliale del sodio (ENaC) del dotto collettore",
+   "C": "Anidrasi carbonica del tubulo prossimale",
+   "D": "Recettore dei mineralcorticoidi",
+   "E": "Cotrasportatore Na⁺-K⁺-2Cl⁻ (NKCC2) del tratto ascendente spesso dell'ansa di Henle"
+  },
+  "giusta": "E",
+  "perche": "La furosemide blocca il cotrasportatore NKCC2, che riassorbe una quota importante del sodio filtrato: ne risulta una diuresi molto intensa, utile negli edemi e nello scompenso. Si perdono anche potassio, magnesio e calcio. I tiazidici agiscono invece sul cotrasportatore NCC del tubulo distale e hanno effetto più moderato. La trappola è confondere sede e trasportatore di ansa e tiazidici.",
+  "semplice": "L'ansa di Henle è uno dei punti in cui il rene «recupera» più sale. La furosemide chiude quella porta e il sale, insieme all'acqua, finisce nelle urine.",
+  "passaggi": [
+   "Riconosci la classe: diuretici dell'ansa, quindi il bersaglio è nell'ansa di Henle.",
+   "Ricorda che la furosemide blocca il cotrasportatore Na⁺-K⁺-2Cl⁻ (NKCC2) del tratto ascendente spesso.",
+   "NCC del distale è dei tiazidici, ENaC dell'amiloride, anidrasi carbonica dell'acetazolamide, recettore mineralcorticoide dello spironolattone.",
+   "La risposta è la E."
+  ],
+  "concetto": "diuretici dell'ansa"
+ },
+ {
+  "id": "FAR-058",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Quale alterazione elettrolitica è tipica dei diuretici tiazidici e dell'ansa ma non dello spironolattone?",
+  "opzioni": {
+   "A": "Iperkaliemia",
+   "B": "Ipernatriemia",
+   "C": "Ipercloremia",
+   "D": "Ipokaliemia",
+   "E": "Ipermagnesiemia"
+  },
+  "giusta": "D",
+  "perche": "Tiazidici e diuretici dell'ansa aumentano l'arrivo di sodio al dotto collettore, dove viene scambiato con potassio sotto l'azione dell'aldosterone: si perde così potassio con le urine. Lo spironolattone, antagonista del recettore dei mineralcorticoidi, fa l'opposto e trattiene potassio, con rischio di iperkaliemia soprattutto se associato ad ACE-inibitori. La trappola è dimenticare che non tutti i diuretici fanno perdere potassio.",
+  "semplice": "Più sodio arriva in fondo al tubulo, più il rene lo scambia con il potassio: per questo molti diuretici «svuotano» il potassio, mentre quelli risparmiatori lo conservano.",
+  "passaggi": [
+   "Ricorda che tiazidici e diuretici dell'ansa aumentano il sodio che arriva al dotto collettore.",
+   "Lì il sodio viene riassorbito in scambio con il potassio sotto l'azione dell'aldosterone, che va perso con le urine.",
+   "Lo spironolattone blocca l'aldosterone e trattiene il potassio, quindi tende all'opposto (iperkaliemia).",
+   "La risposta è la D: ipokaliemia."
+  ],
+  "concetto": "diuretici e potassio"
+ },
+ {
+  "id": "FAR-059",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "test",
+  "domanda": "Come agisce lo spironolattone?",
+  "opzioni": {
+   "A": "Inibisce il cotrasportatore Na⁺-K⁺-2Cl⁻",
+   "B": "Inibisce l'anidrasi carbonica",
+   "C": "È un agonista del recettore dell'aldosterone",
+   "D": "È un antagonista del recettore dei mineralcorticoidi (aldosterone)",
+   "E": "Blocca i canali del calcio vascolari"
+  },
+  "giusta": "D",
+  "perche": "Lo spironolattone compete con l'aldosterone per il suo recettore intracellulare nel dotto collettore, riducendo il riassorbimento di sodio e la secrezione di potassio. È un diuretico debole ma utile nello scompenso cardiaco e nell'iperaldosteronismo. Poiché blocca anche i recettori degli androgeni, può causare ginecomastia. La trappola è classificarlo come un diuretico potente o come uno che fa perdere potassio.",
+  "semplice": "L'aldosterone dice al rene «trattieni sale e butta potassio». Lo spironolattone tappa le orecchie del rene a quel messaggio.",
+  "passaggi": [
+   "Ricorda che lo spironolattone è un diuretico risparmiatore di potassio.",
+   "Agisce competendo con l'aldosterone per il recettore dei mineralcorticoidi nel dotto collettore.",
+   "Non è un agonista (C) e non agisce su NKCC2, anidrasi carbonica o canali del calcio.",
+   "La risposta è la D: antagonista del recettore dei mineralcorticoidi."
+  ],
+  "concetto": "antagonisti dell'aldosterone"
+ },
+ {
+  "id": "FAR-060",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Perché i β-bloccanti non selettivi vanno usati con cautela nei pazienti asmatici?",
+  "opzioni": {
+   "A": "Perché stimolano i recettori muscarinici bronchiali",
+   "B": "Perché aumentano la produzione di istamina",
+   "C": "Perché riducono la sintesi di surfattante",
+   "D": "Perché aumentano la frequenza cardiaca",
+   "E": "Perché bloccano anche i recettori β2 bronchiali e possono causare broncocostrizione"
+  },
+  "giusta": "E",
+  "perche": "I recettori β2 mediano la dilatazione dei bronchi. Un β-bloccante non selettivo come il propranololo blocca sia i β1 cardiaci sia i β2 bronchiali e può scatenare crisi asmatiche, oltre a ridurre l'effetto dei broncodilatatori β2-agonisti. I β1-selettivi (cardioselettivi), come bisoprololo e metoprololo, sono meno rischiosi ma la selettività non è assoluta. La trappola è pensare che i cardioselettivi siano del tutto privi di effetti sui bronchi.",
+  "semplice": "Il β2 è il recettore che «apre» i bronchi. Se un farmaco lo blocca, i bronchi di chi ha l'asma tendono a chiudersi.",
+  "passaggi": [
+   "Ricorda che la dilatazione dei bronchi è mediata dai recettori β2.",
+   "Un β-bloccante non selettivo, come il propranololo, blocca sia i β1 cardiaci sia i β2 bronchiali.",
+   "Bloccare i β2 può scatenare broncocostrizione e ridurre l'effetto dei broncodilatatori.",
+   "La risposta è la E."
+  ],
+  "concetto": "β-bloccanti e asma"
+ },
+ {
+  "id": "FAR-061",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Quale differenza c'è tra calcio-antagonisti diidropiridinici (es. amlodipina) e non diidropiridinici (es. verapamil)?",
+  "opzioni": {
+   "A": "I diidropiridinici agiscono soprattutto sui vasi; verapamil e diltiazem agiscono molto anche sul cuore, rallentando frequenza e conduzione",
+   "B": "I diidropiridinici agiscono solo sul cuore, il verapamil solo sui vasi",
+   "C": "Il verapamil blocca i canali del sodio, l'amlodipina quelli del potassio",
+   "D": "Entrambi aumentano la frequenza cardiaca in modo diretto",
+   "E": "Non ci sono differenze di selettività"
+  },
+  "giusta": "A",
+  "perche": "Tutti bloccano i canali del calcio di tipo L, ma con selettività diversa. Le diidropiridine dilatano soprattutto le arteriole e possono provocare tachicardia riflessa ed edemi alle caviglie. Verapamil e diltiazem riducono anche la frequenza, la conduzione atrioventricolare e la contrattilità: sono utili in alcune aritmie, ma la loro associazione con i β-bloccanti può causare bradicardia e blocchi. La trappola è considerare la classe omogenea.",
+  "semplice": "Le diidropiridine «allargano i tubi», mentre il verapamil «rallenta la pompa». Per questo si scelgono in situazioni diverse.",
+  "passaggi": [
+   "Ricorda che tutti i calcio-antagonisti bloccano i canali del calcio di tipo L, ma con selettività diversa.",
+   "Le diidropiridine come l'amlodipina agiscono soprattutto sulle arteriole (vasodilatazione).",
+   "Verapamil e diltiazem agiscono molto anche sul cuore, riducendo frequenza e conduzione atrioventricolare.",
+   "Le altre opzioni invertono i ruoli o citano canali sbagliati.",
+   "La risposta è la A."
+  ],
+  "concetto": "calcio-antagonisti"
+ },
+ {
+  "id": "FAR-062",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Come agiscono i nitrati organici, come la nitroglicerina, nell'angina?",
+  "opzioni": {
+   "A": "Bloccano i recettori β1 cardiaci",
+   "B": "Liberano ossido nitrico che attiva la guanilato ciclasi, aumenta il cGMP e rilassa la muscolatura vascolare, soprattutto venosa",
+   "C": "Inibiscono la Na⁺/K⁺-ATPasi cardiaca",
+   "D": "Aumentano il calcio intracellulare nelle cellule muscolari lisce",
+   "E": "Bloccano l'aggregazione piastrinica inibendo la COX-1"
+  },
+  "giusta": "B",
+  "perche": "I nitrati vengono convertiti in ossido nitrico, che attiva la guanilato ciclasi solubile: il cGMP prodotto porta al rilassamento del muscolo liscio. La venodilatazione riduce il ritorno venoso (precarico) e quindi il lavoro e il consumo di ossigeno del cuore. Con l'uso continuo si sviluppa tolleranza, per cui si prevede un intervallo libero. La trappola è attribuirne l'effetto principale alla dilatazione coronarica: conta soprattutto il minor lavoro cardiaco.",
+  "semplice": "La nitroglicerina fa «parcheggiare» più sangue nelle vene, così al cuore ne torna meno e deve faticare meno: il dolore dell'angina si attenua.",
+  "passaggi": [
+   "Ricorda che i nitrati liberano ossido nitrico (NO).",
+   "L'NO attiva la guanilato ciclasi, aumenta il cGMP e rilassa il muscolo liscio, soprattutto venoso.",
+   "La venodilatazione riduce il precarico e quindi il consumo di ossigeno del cuore.",
+   "Le altre opzioni descrivono β-bloccanti, digossina o aspirina.",
+   "La risposta è la B."
+  ],
+  "concetto": "nitrati e NO"
+ },
+ {
+  "id": "FAR-063",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Qual è il bersaglio molecolare della digossina?",
+  "opzioni": {
+   "A": "La pompa Na⁺/K⁺-ATPasi delle cellule cardiache",
+   "B": "Il recettore β1-adrenergico",
+   "C": "La fosfodiesterasi 3",
+   "D": "I canali del calcio di tipo L",
+   "E": "Il recettore AT1"
+  },
+  "giusta": "A",
+  "perche": "La digossina inibisce la Na⁺/K⁺-ATPasi: il sodio intracellulare aumenta, lo scambiatore sodio-calcio espelle meno calcio e il calcio disponibile per la contrazione cresce, con effetto inotropo positivo. Ha anche effetti vagali che rallentano la conduzione atrioventricolare. Il suo indice terapeutico è stretto e l'ipokaliemia ne aumenta la tossicità, perché digossina e potassio competono per lo stesso sito. La trappola è pensare che agisca su recettori adrenergici.",
+  "semplice": "Bloccando una pompa, la digossina fa restare più calcio nella cellula del cuore, che così si contrae con più forza.",
+  "passaggi": [
+   "Ricorda il meccanismo della digossina: aumenta la forza di contrazione del cuore.",
+   "Lo fa inibendo la pompa Na⁺/K⁺-ATPasi: sale il sodio interno, lo scambiatore Na⁺/Ca²⁺ espelle meno calcio.",
+   "Più calcio disponibile significa effetto inotropo positivo.",
+   "La risposta è la A."
+  ],
+  "concetto": "digossina"
+ },
+ {
+  "id": "FAR-064",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "test",
+  "domanda": "Quale condizione aumenta il rischio di tossicità da digossina?",
+  "opzioni": {
+   "A": "Iperkaliemia lieve",
+   "B": "Ipernatriemia",
+   "C": "Ipokaliemia",
+   "D": "Ipoglicemia",
+   "E": "Iperuricemia"
+  },
+  "giusta": "C",
+  "perche": "La digossina si lega alla Na⁺/K⁺-ATPasi nello stesso sito in cui agisce il potassio. Se il potassio è basso, la digossina si lega di più e i suoi effetti, anche tossici (aritmie, nausea, disturbi della visione dei colori), aumentano. L'ipokaliemia è spesso causata da diuretici dell'ansa o tiazidici usati nello stesso paziente. La trappola è pensare che più potassio sia pericoloso in questo contesto: è vero il contrario.",
+  "semplice": "Digossina e potassio si contendono la stessa sedia. Se il potassio manca, la digossina si siede ovunque e ne fa troppi effetti.",
+  "passaggi": [
+   "Ricorda che digossina e potassio competono per lo stesso sito sulla Na⁺/K⁺-ATPasi.",
+   "Se il potassio è basso, la digossina si lega di più e i suoi effetti, anche tossici, aumentano.",
+   "L'iperkaliemia lieve al contrario riduce il legame; le altre alterazioni non c'entrano.",
+   "La risposta è la C: ipokaliemia, spesso causata dai diuretici."
+  ],
+  "concetto": "digossina e potassio"
+ },
+ {
+  "id": "FAR-065",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "test",
+  "domanda": "Qual è il meccanismo d'azione delle statine?",
+  "opzioni": {
+   "A": "Bloccano l'assorbimento intestinale del colesterolo",
+   "B": "Sequestrano gli acidi biliari nell'intestino",
+   "C": "Inibiscono l'HMG-CoA reduttasi, enzima chiave della sintesi del colesterolo",
+   "D": "Attivano la lipoproteina lipasi",
+   "E": "Inibiscono la PCSK9 con anticorpi"
+  },
+  "giusta": "C",
+  "perche": "Le statine bloccano l'HMG-CoA reduttasi, che trasforma l'HMG-CoA in mevalonato. Il fegato, avendo meno colesterolo, espone più recettori per le LDL e le capta dal sangue, abbassandone i livelli. L'effetto avverso più noto è il danno muscolare (dalle mialgie alla rara rabdomiolisi). L'ezetimibe riduce invece l'assorbimento intestinale. La trappola è credere che le statine agiscano soprattutto nell'intestino.",
+  "semplice": "Le statine chiudono la «fabbrica» di colesterolo nel fegato; il fegato allora va a prenderne dal sangue, che così si «pulisce».",
+  "passaggi": [
+   "Ricorda il nome dell'enzima chiave della sintesi del colesterolo: HMG-CoA reduttasi.",
+   "Le statine lo inibiscono; il fegato, con meno colesterolo, espone più recettori LDL e le capta dal sangue.",
+   "A è l'ezetimibe, B le resine, D i fibrati, E gli anticorpi anti-PCSK9.",
+   "La risposta è la C."
+  ],
+  "concetto": "statine"
+ },
+ {
+  "id": "FAR-066",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Come agisce il warfarin?",
+  "opzioni": {
+   "A": "Potenzia l'antitrombina III",
+   "B": "Inibisce la vitamina K epossido reduttasi, riducendo la carbossilazione dei fattori II, VII, IX e X",
+   "C": "Inibisce direttamente la trombina",
+   "D": "Blocca il recettore P2Y12 delle piastrine",
+   "E": "Inibisce in modo irreversibile la COX-1"
+  },
+  "giusta": "B",
+  "perche": "Il warfarin blocca il riciclo della vitamina K (enzima VKORC1): i fattori della coagulazione II, VII, IX e X e le proteine C e S vengono prodotti in forma non carbossilata e poco funzionante. L'effetto si sviluppa in alcuni giorni, man mano che i fattori già presenti si esauriscono, e si controlla con l'INR. Ha moltissime interazioni con farmaci e alimenti ricchi di vitamina K. La trappola è confonderlo con l'eparina, che agisce subito tramite l'antitrombina.",
+  "semplice": "Il warfarin toglie al fegato un «attrezzo» (la vitamina K attiva) necessario per montare bene alcuni fattori della coagulazione: i nuovi fattori escono difettosi.",
+  "passaggi": [
+   "Ricorda che il warfarin è un antagonista della vitamina K.",
+   "Blocca la vitamina K epossido reduttasi, impedendo il riciclo della vitamina K.",
+   "Così i fattori II, VII, IX e X sono prodotti non carbossilati e poco funzionanti.",
+   "A è l'eparina, C gli antitrombinici diretti, D il clopidogrel, E l'aspirina.",
+   "La risposta è la B."
+  ],
+  "concetto": "warfarin e vitamina K"
+ },
+ {
+  "id": "FAR-067",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Qual è il meccanismo d'azione dell'eparina non frazionata?",
+  "opzioni": {
+   "A": "Inibisce la sintesi epatica dei fattori vitamina K-dipendenti",
+   "B": "Blocca la glicoproteina IIb/IIIa piastrinica",
+   "C": "Si lega all'antitrombina e ne accelera fortemente l'inibizione di trombina e fattore Xa",
+   "D": "Degrada direttamente la fibrina",
+   "E": "Chela il calcio plasmatico"
+  },
+  "giusta": "C",
+  "perche": "L'eparina agisce come catalizzatore: legandosi all'antitrombina ne modifica la forma e la rende migliaia di volte più rapida nell'inattivare trombina e fattore Xa. Si somministra per via parenterale, agisce subito e si monitora con l'aPTT. L'antidoto è la protamina. Le eparine a basso peso molecolare agiscono prevalentemente sul fattore Xa. La trappola è pensare che l'eparina sciolga i trombi già formati: ne impedisce la crescita, non li lisa.",
+  "semplice": "L'antitrombina è un poliziotto lento; l'eparina gli dà una moto, così ferma molto più in fretta la trombina.",
+  "passaggi": [
+   "Ricorda che l'eparina non agisce da sola: usa un cofattore plasmatico.",
+   "Si lega all'antitrombina e la rende migliaia di volte più rapida nell'inattivare trombina e fattore Xa.",
+   "A è il warfarin, B gli anti-GP IIb/IIIa, D i fibrinolitici, E il citrato in provetta.",
+   "La risposta è la C."
+  ],
+  "concetto": "eparina"
+ },
+ {
+  "id": "FAR-068",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Perché l'acido acetilsalicilico a basse dosi ha effetto antiaggregante prolungato per giorni?",
+  "opzioni": {
+   "A": "Perché acetila in modo irreversibile la COX-1 piastrinica e le piastrine, prive di nucleo, non possono risintetizzare l'enzima",
+   "B": "Perché ha un'emivita plasmatica di diversi giorni",
+   "C": "Perché blocca in modo irreversibile il recettore P2Y12",
+   "D": "Perché si accumula nel midollo osseo",
+   "E": "Perché aumenta la produzione di trombossano"
+  },
+  "giusta": "A",
+  "perche": "L'aspirina trasferisce un gruppo acetile a una serina della COX-1, bloccandola definitivamente. Le piastrine non hanno nucleo e non producono nuovo enzima: per tutta la loro vita (circa 7-10 giorni) non sintetizzano più trombossano A2, che promuove l'aggregazione. Le cellule endoteliali invece risintetizzano la COX e continuano a produrre prostaciclina. La trappola è attribuire l'effetto a una lunga emivita: l'aspirina resta in circolo poco, ma il danno all'enzima è permanente.",
+  "semplice": "L'aspirina rompe un ingranaggio delle piastrine che queste non sanno riparare: finché non nascono piastrine nuove, quelle colpite restano «spente».",
+  "passaggi": [
+   "Ricorda che l'aspirina acetila in modo irreversibile la COX-1.",
+   "Le piastrine non hanno nucleo e non possono produrre nuovo enzima.",
+   "Per tutta la loro vita (7-10 giorni) non sintetizzano più trombossano A2: l'effetto dura quindi giorni anche se il farmaco sparisce dal sangue.",
+   "Non è per un'emivita lunga (B) né per il P2Y12 (C).",
+   "La risposta è la A."
+  ],
+  "concetto": "aspirina antiaggregante"
+ },
+ {
+  "id": "FAR-069",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Su quale bersaglio agisce il clopidogrel?",
+  "opzioni": {
+   "A": "Inibisce la COX-1 piastrinica",
+   "B": "Blocca in modo irreversibile il recettore P2Y12 dell'ADP sulle piastrine",
+   "C": "Inibisce direttamente il fattore Xa",
+   "D": "Inibisce la vitamina K epossido reduttasi",
+   "E": "Attiva il plasminogeno"
+  },
+  "giusta": "B",
+  "perche": "Il clopidogrel è un profarmaco che il fegato, tramite CYP2C19, trasforma in un metabolita attivo che si lega in modo irreversibile al recettore P2Y12, impedendo all'ADP di attivare le piastrine. Si associa spesso all'aspirina dopo uno stent coronarico. Nei soggetti con varianti poco funzionanti di CYP2C19 l'attivazione è ridotta. La trappola è dimenticare che si tratta di un profarmaco.",
+  "semplice": "L'ADP è un segnale che dice alle piastrine «attaccatevi tra voi». Il clopidogrel tappa l'orecchio con cui le piastrine sentono quel segnale.",
+  "passaggi": [
+   "Ricorda che il clopidogrel è un antiaggregante diverso dall'aspirina.",
+   "È un profarmaco attivato dal CYP2C19 che si lega in modo irreversibile al recettore P2Y12 dell'ADP.",
+   "La COX-1 è il bersaglio dell'aspirina, il fattore Xa dei «-xaban», la VKOR del warfarin.",
+   "La risposta è la B."
+  ],
+  "concetto": "clopidogrel e P2Y12"
+ },
+ {
+  "id": "FAR-070",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "Quale farmaco anticoagulante orale è un inibitore diretto del fattore Xa?",
+  "opzioni": {
+   "A": "Dabigatran",
+   "B": "Warfarin",
+   "C": "Rivaroxaban",
+   "D": "Eparina non frazionata",
+   "E": "Clopidogrel"
+  },
+  "giusta": "C",
+  "perche": "I nuovi anticoagulanti orali ad azione diretta (DOAC) si dividono in inibitori del fattore Xa, come rivaroxaban, apixaban ed edoxaban, e inibitori diretti della trombina, come il dabigatran. Non richiedono il controllo dell'INR e hanno meno interazioni alimentari rispetto al warfarin. La trappola è confondere dabigatran (anti-trombina) con gli «-xaban» (anti-Xa): il suffisso aiuta a ricordare.",
+  "semplice": "Il suffisso «-xaban» contiene la «Xa»: è un promemoria che questi farmaci bloccano il fattore Xa.",
+  "passaggi": [
+   "Ricorda che gli inibitori diretti del fattore Xa hanno nomi in «-xaban».",
+   "Il dabigatran è un inibitore diretto della trombina, il warfarin un antagonista della vitamina K.",
+   "L'eparina non è orale e il clopidogrel è un antiaggregante.",
+   "La risposta è la C: rivaroxaban."
+  ],
+  "concetto": "DOAC anti-Xa"
+ },
+ {
+  "id": "FAR-071",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "università",
+  "domanda": "L'amiodarone appartiene principalmente alla classe III della classificazione di Vaughan Williams. Che cosa significa?",
+  "opzioni": {
+   "A": "Che blocca soprattutto i canali del sodio rapidi",
+   "B": "Che blocca soprattutto i canali del potassio, prolungando il potenziale d'azione e il periodo refrattario",
+   "C": "Che è un β-bloccante",
+   "D": "Che blocca i canali del calcio nodali",
+   "E": "Che inibisce la Na⁺/K⁺-ATPasi"
+  },
+  "giusta": "B",
+  "perche": "Nella classificazione di Vaughan Williams la classe I comprende i bloccanti dei canali del sodio, la II i β-bloccanti, la III i bloccanti dei canali del potassio e la IV i calcio-antagonisti. L'amiodarone prolunga la ripolarizzazione (allunga il QT) ma ha anche effetti delle altre classi. Contiene iodio e può alterare la funzione tiroidea, oltre a dare tossicità polmonare ed epatica. La trappola è pensare che ogni antiaritmico appartenga a una sola classe.",
+  "semplice": "Allungando la fase di «riposo» delle cellule cardiache, l'amiodarone impedisce ai circuiti elettrici anomali di rientrare troppo presto e di sostenere un'aritmia.",
+  "passaggi": [
+   "Ricorda le classi di Vaughan Williams: I sodio, II β-bloccanti, III potassio, IV calcio.",
+   "La classe III blocca i canali del potassio e quindi rallenta la ripolarizzazione.",
+   "Ne risulta un potenziale d'azione e un periodo refrattario più lunghi (QT allungato).",
+   "La risposta è la B."
+  ],
+  "concetto": "antiaritmici di classe III"
+ },
+ {
+  "id": "FAR-072",
+  "materia": "Farmacologia",
+  "argomento": "Farmaci cardiovascolari",
+  "livello": "test",
+  "domanda": "Quale farmaco antipertensivo blocca il recettore AT1 dell'angiotensina II?",
+  "opzioni": {
+   "A": "Losartan",
+   "B": "Enalapril",
+   "C": "Amlodipina",
+   "D": "Furosemide",
+   "E": "Atenololo"
+  },
+  "giusta": "A",
+  "perche": "Il losartan e gli altri sartani (con nomi che finiscono in «-sartan») sono antagonisti del recettore AT1: impediscono all'angiotensina II di restringere i vasi e di stimolare l'aldosterone, qualunque sia la via con cui l'angiotensina si è formata. L'enalapril è un ACE-inibitore, l'amlodipina un calcio-antagonista, la furosemide un diuretico dell'ansa e l'atenololo un β-bloccante. La trappola è confondere sartani e ACE-inibitori, che agiscono sullo stesso sistema ma in punti diversi.",
+  "semplice": "L'ACE-inibitore impedisce di produrre il messaggio «stringi i vasi»; il sartano lascia produrre il messaggio ma tappa l'orecchio che dovrebbe riceverlo.",
+  "passaggi": [
+   "Riconosci il bersaglio: il recettore AT1, bloccato dai sartani.",
+   "Cerca il nome che finisce in «-sartan»: losartan.",
+   "Enalapril è un ACE-inibitore, amlodipina un calcio-antagonista, furosemide un diuretico, atenololo un β-bloccante.",
+   "La risposta è la A."
+  ],
+  "concetto": "sartani"
+ },
+ {
+  "id": "FAR-073",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "test",
+  "domanda": "Qual è il bersaglio dei β-lattamici, come penicilline e cefalosporine?",
+  "opzioni": {
+   "A": "La subunità 30S del ribosoma batterico",
+   "B": "La DNA girasi batterica",
+   "C": "L'RNA polimerasi DNA-dipendente",
+   "D": "Le proteine leganti la penicillina (PBP), enzimi che formano i legami crociati del peptidoglicano",
+   "E": "La diidrofolato reduttasi"
+  },
+  "giusta": "D",
+  "perche": "I β-lattamici si legano in modo covalente alle PBP, le transpeptidasi che uniscono tra loro le catene del peptidoglicano. La parete batterica risulta indebolita e il batterio in crescita va incontro a lisi: per questo sono battericidi. Le cellule umane non hanno peptidoglicano, quindi la tossicità selettiva è alta. La trappola è attribuire ai β-lattamici un'azione sui ribosomi, tipica di altre classi.",
+  "semplice": "La parete del batterio è una rete di fili intrecciati. Le penicilline bloccano l'«uncinetto» che annoda i fili: la rete si sfalda e il batterio scoppia.",
+  "passaggi": [
+   "Ricorda che i β-lattamici agiscono sulla parete batterica.",
+   "Si legano in modo covalente alle PBP, le transpeptidasi che formano i legami crociati del peptidoglicano.",
+   "Ribosoma, DNA girasi, RNA polimerasi e diidrofolato reduttasi sono bersagli di altre classi.",
+   "La risposta è la D."
+  ],
+  "concetto": "β-lattamici e PBP"
+ },
+ {
+  "id": "FAR-074",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Perché l'amoxicillina viene associata all'acido clavulanico?",
+  "opzioni": {
+   "A": "Perché l'acido clavulanico è un antibiotico ad ampio spettro che agisce sui ribosomi",
+   "B": "Perché aumenta l'assorbimento intestinale dell'amoxicillina",
+   "C": "Perché l'acido clavulanico inibisce molte β-lattamasi e protegge l'amoxicillina dalla degradazione",
+   "D": "Perché riduce l'eliminazione renale dell'amoxicillina",
+   "E": "Perché previene le reazioni allergiche alla penicillina"
+  },
+  "giusta": "C",
+  "perche": "Molti batteri resistenti producono β-lattamasi, enzimi che aprono l'anello β-lattamico e inattivano l'antibiotico. L'acido clavulanico ha scarsa attività antibatterica propria ma si lega a molte β-lattamasi e le inattiva, permettendo all'amoxicillina di agire. Non è efficace contro altri meccanismi di resistenza, come le PBP modificate degli stafilococchi resistenti alla meticillina. La trappola è considerarlo un secondo antibiotico.",
+  "semplice": "L'acido clavulanico è una guardia del corpo: si getta contro le «forbici» del batterio che taglierebbero l'amoxicillina.",
+  "passaggi": [
+   "Ricorda che molti batteri resistenti producono β-lattamasi, che aprono l'anello β-lattamico.",
+   "L'acido clavulanico ha poca attività propria ma inibisce molte β-lattamasi.",
+   "Così protegge l'amoxicillina dalla degradazione e le permette di agire.",
+   "La risposta è la C."
+  ],
+  "concetto": "inibitori delle β-lattamasi"
+ },
+ {
+  "id": "FAR-075",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Qual è il principale meccanismo di resistenza degli stafilococchi resistenti alla meticillina (MRSA)?",
+  "opzioni": {
+   "A": "Produzione di β-lattamasi sensibili all'acido clavulanico",
+   "B": "Mutazione della DNA girasi",
+   "C": "Produzione di una PBP modificata (PBP2a) a bassa affinità per i β-lattamici",
+   "D": "Pompe di efflusso per gli aminoglicosidi",
+   "E": "Perdita della parete cellulare"
+  },
+  "giusta": "C",
+  "perche": "Gli MRSA possiedono il gene mecA, che codifica la PBP2a: questa transpeptidasi continua a costruire il peptidoglicano anche in presenza di quasi tutti i β-lattamici, perché li lega poco. Per questo gli MRSA resistono anche alle associazioni con inibitori delle β-lattamasi e richiedono farmaci diversi, come la vancomicina. La trappola è credere che basti aggiungere acido clavulanico.",
+  "semplice": "Il batterio ha cambiato la serratura: la chiave della penicillina non entra più, quindi proteggerla dalle forbici non serve a nulla.",
+  "passaggi": [
+   "Ricorda che gli MRSA hanno il gene mecA.",
+   "Questo gene codifica la PBP2a, una transpeptidasi che lega poco i β-lattamici e continua a costruire la parete.",
+   "Non dipende da β-lattamasi (infatti l'acido clavulanico non aiuta), né da girasi o pompe di efflusso.",
+   "La risposta è la C."
+  ],
+  "concetto": "MRSA e PBP2a"
+ },
+ {
+  "id": "FAR-076",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Come agisce la vancomicina?",
+  "opzioni": {
+   "A": "Inibisce la subunità 50S del ribosoma",
+   "B": "Si lega al terminale D-Ala-D-Ala dei precursori del peptidoglicano e ne impedisce l'incorporazione nella parete",
+   "C": "Inibisce le PBP legandosi a esse come i β-lattamici",
+   "D": "Danneggia la membrana esterna dei Gram-negativi",
+   "E": "Inibisce la sintesi dei folati"
+  },
+  "giusta": "B",
+  "perche": "La vancomicina è un glicopeptide di grandi dimensioni che lega le unità precursori del peptidoglicano al livello della sequenza D-alanil-D-alanina, bloccando transglicosilazione e transpeptidazione. Non attraversa la membrana esterna dei Gram-negativi ed è quindi attiva sui Gram-positivi, inclusi gli MRSA. Gli enterococchi resistenti sostituiscono D-Ala-D-Ala con D-Ala-D-Lattato. La trappola è pensare che agisca sulle PBP come i β-lattamici.",
+  "semplice": "Invece di bloccare l'operaio, la vancomicina copre i mattoni: l'operaio non riesce più a prenderli per costruire il muro.",
+  "passaggi": [
+   "Ricorda che la vancomicina è un glicopeptide che agisce sulla parete, ma non come i β-lattamici.",
+   "Si lega al terminale D-Ala-D-Ala dei precursori del peptidoglicano e ne impedisce l'incorporazione.",
+   "Non agisce sul ribosoma, sulle PBP, sulla membrana esterna o sui folati.",
+   "La risposta è la B."
+  ],
+  "concetto": "vancomicina"
+ },
+ {
+  "id": "FAR-077",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "test",
+  "domanda": "Quali sono i principali effetti tossici degli aminoglicosidi, come la gentamicina?",
+  "opzioni": {
+   "A": "Nefrotossicità e ototossicità",
+   "B": "Colorazione dei denti e fotosensibilità",
+   "C": "Sindrome grigia del neonato",
+   "D": "Rottura dei tendini",
+   "E": "Colite pseudomembranosa come effetto tipico e unico"
+  },
+  "giusta": "A",
+  "perche": "Gli aminoglicosidi si accumulano nelle cellule del tubulo renale e nell'orecchio interno, danneggiandoli: la nefrotossicità è spesso reversibile, l'ototossicità (sordità, disturbi dell'equilibrio) può essere permanente. Per questo se ne controllano le concentrazioni. Possono inoltre causare blocco neuromuscolare. La trappola è confondere i loro effetti con quelli di tetracicline, cloramfenicolo o fluorochinoloni.",
+  "semplice": "La gentamicina è efficace ma «ama» reni e orecchie in modo pericoloso: si accumula proprio lì e può danneggiarli.",
+  "passaggi": [
+   "Ricorda dove si accumulano gli aminoglicosidi: cellule del tubulo renale e orecchio interno.",
+   "Ne derivano nefrotossicità e ototossicità.",
+   "Denti colorati sono delle tetracicline, sindrome grigia del cloramfenicolo, rottura dei tendini dei fluorochinoloni.",
+   "La risposta è la A."
+  ],
+  "concetto": "tossicità degli aminoglicosidi"
+ },
+ {
+  "id": "FAR-078",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Perché le tetracicline non vanno assunte con latte o antiacidi contenenti calcio, magnesio o alluminio?",
+  "opzioni": {
+   "A": "Perché il latte ne accelera il metabolismo epatico",
+   "B": "Perché formano chelati con i cationi bivalenti e trivalenti, riducendo l'assorbimento intestinale",
+   "C": "Perché il calcio ne aumenta la tossicità renale",
+   "D": "Perché gli antiacidi le trasformano in un composto tossico",
+   "E": "Perché il latte provoca una reazione simile a quella del disulfiram"
+  },
+  "giusta": "B",
+  "perche": "Le tetracicline legano strettamente gli ioni metallici come calcio, magnesio, ferro e alluminio formando complessi poco assorbibili. La stessa affinità per il calcio spiega perché si depositano in denti e ossa in crescita, macchiando i denti dei bambini. La trappola è pensare a un'interazione metabolica: è un problema di assorbimento nell'intestino.",
+  "semplice": "Le tetracicline si «aggrappano» al calcio del latte come una calamita e il complesso che si forma è troppo grande per essere assorbito.",
+  "passaggi": [
+   "Ricorda che le tetracicline legano strettamente gli ioni metallici come calcio, magnesio, ferro e alluminio.",
+   "Si formano chelati poco assorbibili, quindi arriva meno farmaco nel sangue.",
+   "Il problema è di assorbimento, non di metabolismo o tossicità.",
+   "La risposta è la B."
+  ],
+  "concetto": "tetracicline e chelazione"
+ },
+ {
+  "id": "FAR-079",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Su quale bersaglio agiscono i macrolidi, come eritromicina e claritromicina?",
+  "opzioni": {
+   "A": "Subunità 30S del ribosoma, causando errori di lettura",
+   "B": "Subunità 50S del ribosoma batterico, bloccando la traslocazione",
+   "C": "DNA girasi",
+   "D": "Parete cellulare",
+   "E": "Membrana citoplasmatica"
+  },
+  "giusta": "B",
+  "perche": "I macrolidi si legano all'RNA ribosomiale 23S della subunità 50S e impediscono l'avanzamento della catena peptidica: sono in genere batteriostatici. La claritromicina e l'eritromicina inibiscono il CYP3A4 e possono aumentare le concentrazioni di molti farmaci; alcuni prolungano il QT. Le tetracicline e gli aminoglicosidi agiscono invece sulla subunità 30S. La trappola è confondere le due subunità.",
+  "semplice": "Un trucco: «Compra a 30, vendi a 50». Aminoglicosidi e tetracicline sulla 30S; macrolidi, cloramfenicolo e clindamicina sulla 50S.",
+  "passaggi": [
+   "Ricorda che i macrolidi inibiscono la sintesi proteica batterica.",
+   "Si legano all'RNA 23S della subunità 50S e bloccano la traslocazione della catena peptidica.",
+   "La 30S è il bersaglio di aminoglicosidi e tetracicline; girasi, parete e membrana sono di altre classi.",
+   "La risposta è la B."
+  ],
+  "concetto": "macrolidi e 50S"
+ },
+ {
+  "id": "FAR-080",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Qual è il bersaglio dei fluorochinoloni, come la ciprofloxacina?",
+  "opzioni": {
+   "A": "DNA girasi (topoisomerasi II) e topoisomerasi IV batteriche",
+   "B": "RNA polimerasi batterica",
+   "C": "Subunità 30S del ribosoma",
+   "D": "Sintesi dell'acido micolico",
+   "E": "Diidropteroato sintetasi"
+  },
+  "giusta": "A",
+  "perche": "I fluorochinoloni inibiscono le topoisomerasi batteriche che gestiscono il superavvolgimento del DNA durante la replicazione, causando rotture del DNA e morte del batterio. Tra gli effetti avversi caratteristici ci sono tendinopatie fino alla rottura del tendine d'Achille, prolungamento del QT e disturbi neurologici. Come le tetracicline, vengono chelati da cationi bivalenti. La trappola è confondere girasi e RNA polimerasi, bersaglio della rifampicina.",
+  "semplice": "Il DNA del batterio è un gomitolo molto attorcigliato: la girasi lo srotola quando serve. I chinoloni bloccano la girasi e il gomitolo si spezza.",
+  "passaggi": [
+   "Ricorda che i fluorochinoloni agiscono sulla replicazione del DNA batterico.",
+   "Inibiscono la DNA girasi (topoisomerasi II) e la topoisomerasi IV, causando rotture del DNA.",
+   "RNA polimerasi è della rifampicina, 30S degli aminoglicosidi, acido micolico dell'isoniazide, diidropteroato sintetasi dei sulfamidici.",
+   "La risposta è la A."
+  ],
+  "concetto": "fluorochinoloni"
+ },
+ {
+  "id": "FAR-081",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Perché l'associazione sulfametossazolo-trimetoprim è sinergica?",
+  "opzioni": {
+   "A": "Perché i due farmaci agiscono su subunità ribosomiali diverse",
+   "B": "Perché il trimetoprim inibisce le β-lattamasi",
+   "C": "Perché blocca due tappe successive della sintesi dei folati batterici",
+   "D": "Perché il sulfametossazolo aumenta l'assorbimento del trimetoprim",
+   "E": "Perché entrambi inibiscono la DNA girasi"
+  },
+  "giusta": "C",
+  "perche": "I sulfamidici, analoghi dell'acido para-aminobenzoico, inibiscono la diidropteroato sintetasi; il trimetoprim inibisce la diidrofolato reduttasi batterica, un passaggio successivo. Bloccare due punti della stessa via produce un effetto molto maggiore della somma dei singoli. Le cellule umane assumono i folati con la dieta e la loro reduttasi è poco sensibile al trimetoprim. La trappola è pensare a due meccanismi indipendenti.",
+  "semplice": "Se in una catena di montaggio blocchi due macchine una dopo l'altra, la produzione si ferma molto più che bloccandone una sola.",
+  "passaggi": [
+   "Ricorda la via dei folati batterici: PABA, diidropteroato sintetasi, poi diidrofolato reduttasi.",
+   "Il sulfametossazolo inibisce la diidropteroato sintetasi, il trimetoprim la diidrofolato reduttasi.",
+   "Bloccare due tappe successive della stessa via dà un effetto superiore alla somma.",
+   "La risposta è la C."
+  ],
+  "concetto": "blocco sequenziale dei folati"
+ },
+ {
+  "id": "FAR-082",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "test",
+  "domanda": "Quale effetto è tipico dell'assunzione di alcol durante la terapia con metronidazolo?",
+  "opzioni": {
+   "A": "Aumento dell'effetto antibatterico",
+   "B": "Sonnolenza profonda dovuta a potenziamento del GABA",
+   "C": "Colorazione arancione delle urine",
+   "D": "Agranulocitosi",
+   "E": "Reazione simile a quella del disulfiram: nausea, vomito, vampate e tachicardia"
+  },
+  "giusta": "E",
+  "perche": "Il metronidazolo inibisce l'aldeide deidrogenasi: l'acetaldeide prodotta dall'alcol si accumula e provoca malessere intenso, rossore, nausea e palpitazioni. Il metronidazolo è attivo su batteri anaerobi e su alcuni protozoi. La colorazione arancione dei liquidi corporei è invece tipica della rifampicina. La trappola è sottovalutare l'interazione o attribuirla a un altro antibiotico.",
+  "semplice": "Il metronidazolo blocca lo «spazzino» che elimina un prodotto tossico dell'alcol; il prodotto si accumula e fa stare molto male.",
+  "passaggi": [
+   "Ricorda che il metronidazolo inibisce l'aldeide deidrogenasi, come il disulfiram.",
+   "L'acetaldeide prodotta dall'alcol si accumula.",
+   "Ne derivano nausea, vomito, vampate e tachicardia.",
+   "Le urine arancioni sono della rifampicina; le altre opzioni non c'entrano.",
+   "La risposta è la E."
+  ],
+  "concetto": "effetto disulfiram-simile"
+ },
+ {
+  "id": "FAR-083",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Perché la rifampicina riduce l'efficacia di molti altri farmaci, inclusi i contraccettivi orali?",
+  "opzioni": {
+   "A": "Perché è un potente induttore del CYP3A4 e di altri enzimi metabolici",
+   "B": "Perché inibisce l'assorbimento intestinale di tutti i farmaci",
+   "C": "Perché si lega all'albumina spiazzando gli altri farmaci",
+   "D": "Perché è un inibitore del CYP3A4",
+   "E": "Perché aumenta la filtrazione glomerulare"
+  },
+  "giusta": "A",
+  "perche": "La rifampicina attiva il recettore nucleare PXR e aumenta la sintesi di CYP3A4, altri citocromi e trasportatori come la glicoproteina P. I farmaci metabolizzati da questi sistemi vengono eliminati più in fretta e perdono efficacia; l'effetto si instaura e scompare nell'arco di giorni o settimane. Il suo bersaglio antibatterico è l'RNA polimerasi. La trappola è confondere induzione e inibizione enzimatica.",
+  "semplice": "La rifampicina fa assumere al fegato tanti operai in più: gli altri farmaci vengono smaltiti così in fretta da non riuscire ad agire.",
+  "passaggi": [
+   "Ricorda che la rifampicina è un forte induttore enzimatico.",
+   "Aumenta la sintesi di CYP3A4, altri citocromi e glicoproteina P.",
+   "I farmaci metabolizzati da questi sistemi, come gli estroprogestinici, vengono eliminati più in fretta e perdono efficacia.",
+   "Non è un inibitore (D), che anzi aumenterebbe le concentrazioni.",
+   "La risposta è la A."
+  ],
+  "concetto": "rifampicina induttore"
+ },
+ {
+  "id": "FAR-084",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Che cosa distingue un antibiotico «tempo-dipendente» da uno «concentrazione-dipendente»?",
+  "opzioni": {
+   "A": "I tempo-dipendenti agiscono solo di notte",
+   "B": "I concentrazione-dipendenti non hanno una MIC",
+   "C": "I tempo-dipendenti sono sempre batteriostatici e i concentrazione-dipendenti sempre battericidi",
+   "D": "Non esiste alcuna differenza pratica",
+   "E": "Per i tempo-dipendenti conta il tempo con concentrazione sopra la MIC; per i concentrazione-dipendenti conta raggiungere picchi elevati"
+  },
+  "giusta": "E",
+  "perche": "Per i β-lattamici l'efficacia dipende soprattutto dal tempo in cui la concentrazione resta sopra la concentrazione minima inibente (MIC): si preferiscono somministrazioni frequenti o infusioni prolungate. Per aminoglicosidi e fluorochinoloni conta il rapporto tra picco e MIC: dosi più alte e meno frequenti sono più efficaci, aiutate anche dall'effetto post-antibiotico. La trappola è associare in modo rigido tempo-dipendente con batteriostatico.",
+  "semplice": "Con alcuni antibiotici serve una pressione costante e prolungata, come un assedio; con altri serve un colpo forte, come un'irruzione.",
+  "passaggi": [
+   "Ricorda il parametro che conta per ciascun tipo di antibiotico.",
+   "Per i tempo-dipendenti (β-lattamici) conta quanto a lungo la concentrazione resta sopra la MIC.",
+   "Per i concentrazione-dipendenti (aminoglicosidi, fluorochinoloni) conta raggiungere picchi alti rispetto alla MIC.",
+   "Le altre opzioni sono false o confondono con batteriostatico/battericida.",
+   "La risposta è la E."
+  ],
+  "concetto": "PK/PD degli antibiotici"
+ },
+ {
+  "id": "FAR-085",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "test",
+  "domanda": "Che cos'è la MIC (concentrazione minima inibente)?",
+  "opzioni": {
+   "A": "La concentrazione massima tollerata dal paziente",
+   "B": "La concentrazione che uccide il 99,9% dei batteri",
+   "C": "La più bassa concentrazione di antibiotico che impedisce la crescita visibile di un batterio in vitro",
+   "D": "La dose giornaliera raccomandata di antibiotico",
+   "E": "La concentrazione di batteri nel sangue"
+  },
+  "giusta": "C",
+  "perche": "La MIC si misura in laboratorio esponendo il batterio a diluizioni scalari dell'antibiotico: la più bassa che blocca la crescita è la MIC. Più è bassa, più il batterio è sensibile. La concentrazione che uccide il 99,9% dell'inoculo è invece la MBC (concentrazione minima battericida). La trappola è confondere MIC e MBC, cioè inibire con uccidere.",
+  "semplice": "Si preparano tante provette con dosi decrescenti di antibiotico: l'ultima provetta ancora limpida, senza batteri cresciuti, indica la MIC.",
+  "passaggi": [
+   "Leggi la sigla: concentrazione minima inibente.",
+   "Si ottiene in laboratorio con diluizioni scalari: la più bassa che impedisce la crescita visibile è la MIC.",
+   "La concentrazione che uccide il 99,9% è la MBC (B); le altre opzioni non sono definizioni di laboratorio.",
+   "La risposta è la C."
+  ],
+  "concetto": "MIC"
+ },
+ {
+  "id": "FAR-086",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Su quale enzima agisce il metotrexato come chemioterapico antitumorale?",
+  "opzioni": {
+   "A": "Timidilato sintasi tramite metabolita fluorurato",
+   "B": "Topoisomerasi I",
+   "C": "Tubulina",
+   "D": "Diidrofolato reduttasi umana",
+   "E": "Tirosin-chinasi BCR-ABL"
+  },
+  "giusta": "D",
+  "perche": "Il metotrexato è un analogo dei folati che inibisce la diidrofolato reduttasi: si riduce il tetraidrofolato necessario per sintetizzare timidina e purine, colpendo le cellule in rapida divisione (fase S). La tossicità per midollo e mucose si può limitare con l'acido folinico. Il 5-fluorouracile inibisce invece la timidilato sintasi, l'imatinib la BCR-ABL. La trappola è confondere metotrexato e trimetoprim, che inibisce la reduttasi batterica.",
+  "semplice": "Il metotrexato toglie alle cellule un ingrediente indispensabile per copiare il DNA: chi si divide molto, come le cellule tumorali, ne soffre di più.",
+  "passaggi": [
+   "Ricorda che il metotrexato è un analogo dei folati.",
+   "Inibisce la diidrofolato reduttasi umana, riducendo il tetraidrofolato necessario per timidina e purine.",
+   "La timidilato sintasi tramite metabolita fluorurato è del 5-fluorouracile; le altre sono bersagli di altri farmaci.",
+   "La risposta è la D."
+  ],
+  "concetto": "antimetaboliti"
+ },
+ {
+  "id": "FAR-087",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Che differenza c'è tra il meccanismo dei taxani (es. paclitaxel) e quello degli alcaloidi della vinca (es. vincristina)?",
+  "opzioni": {
+   "A": "Entrambi impediscono la polimerizzazione dei microtubuli",
+   "B": "I taxani alchilano il DNA, gli alcaloidi della vinca inibiscono la topoisomerasi",
+   "C": "I taxani inibiscono la diidrofolato reduttasi",
+   "D": "Gli alcaloidi della vinca stabilizzano i microtubuli",
+   "E": "I taxani stabilizzano i microtubuli impedendone la depolimerizzazione; gli alcaloidi della vinca ne impediscono la polimerizzazione"
+  },
+  "giusta": "E",
+  "perche": "Entrambe le classi agiscono sul fuso mitotico e bloccano le cellule in mitosi, ma in modo opposto: i taxani «congelano» i microtubuli rendendoli troppo stabili, la vincristina impedisce l'assemblaggio della tubulina. Un effetto avverso comune è la neuropatia periferica, perché i microtubuli servono anche al trasporto lungo gli assoni. La trappola è considerare i due meccanismi identici.",
+  "semplice": "Il fuso mitotico deve montarsi e smontarsi come un'impalcatura. La vincristina impedisce di montarla, i taxani impediscono di smontarla: in entrambi i casi la divisione si blocca.",
+  "passaggi": [
+   "Entrambe le classi agiscono sui microtubuli del fuso mitotico, ma in modo opposto.",
+   "I taxani stabilizzano i microtubuli e ne impediscono la depolimerizzazione.",
+   "Gli alcaloidi della vinca impediscono la polimerizzazione della tubulina.",
+   "A e D attribuiscono lo stesso meccanismo o lo invertono; B e C citano bersagli sbagliati.",
+   "La risposta è la E."
+  ],
+  "concetto": "farmaci antimicrotubuli"
+ },
+ {
+  "id": "FAR-088",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Perché l'aciclovir è selettivo per le cellule infettate da herpes simplex?",
+  "opzioni": {
+   "A": "Perché viene fosforilato in forma attiva soprattutto dalla timidina chinasi virale",
+   "B": "Perché entra solo nelle cellule nervose",
+   "C": "Perché inibisce un enzima umano presente solo nella pelle",
+   "D": "Perché si lega all'envelope del virus fuori dalle cellule",
+   "E": "Perché blocca la neuraminidasi virale"
+  },
+  "giusta": "A",
+  "perche": "L'aciclovir è un analogo della guanosina. La prima fosforilazione è eseguita in modo efficiente dalla timidina chinasi codificata dal virus e molto poco da quella umana; poi enzimi cellulari completano la trasformazione in trifosfato, che inibisce la DNA polimerasi virale e interrompe la catena. Le cellule sane quasi non lo attivano. La trappola è pensare che agisca su virus liberi fuori dalle cellule.",
+  "semplice": "L'aciclovir è una «bomba» che può essere innescata solo da un attrezzo che possiede il virus: nelle cellule non infettate resta inattivo.",
+  "passaggi": [
+   "Ricorda che l'aciclovir è un analogo della guanosina che deve essere fosforilato per agire.",
+   "La prima fosforilazione è fatta efficacemente dalla timidina chinasi virale, molto poco da quella umana.",
+   "Quindi il farmaco si attiva quasi solo nelle cellule infettate e inibisce la DNA polimerasi virale.",
+   "La risposta è la A."
+  ],
+  "concetto": "aciclovir"
+ },
+ {
+  "id": "FAR-089",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "università",
+  "domanda": "Su quale bersaglio agiscono gli antifungini azolici, come il fluconazolo?",
+  "opzioni": {
+   "A": "Si legano all'ergosterolo formando pori nella membrana",
+   "B": "Inibiscono la sintesi della chitina",
+   "C": "Inibiscono la β-glucano sintasi della parete",
+   "D": "Inibiscono la 14α-demetilasi (un citocromo P450 fungino) bloccando la sintesi dell'ergosterolo",
+   "E": "Bloccano la subunità 30S fungina"
+  },
+  "giusta": "D",
+  "perche": "Gli azoli inibiscono l'enzima che trasforma il lanosterolo in ergosterolo, lo sterolo della membrana dei funghi: la membrana diventa instabile e la crescita si blocca. Poiché inibiscono anche citocromi P450 umani (soprattutto il ketoconazolo e, in parte, il fluconazolo), causano interazioni. L'amfotericina B invece si lega direttamente all'ergosterolo formando pori; le echinocandine inibiscono la sintesi del β-glucano. La trappola è confondere questi tre meccanismi.",
+  "semplice": "I funghi usano l'ergosterolo come noi usiamo il colesterolo. Gli azoli fermano la fabbrica dell'ergosterolo e la membrana del fungo si indebolisce.",
+  "passaggi": [
+   "Ricorda che l'ergosterolo è lo sterolo della membrana dei funghi.",
+   "Gli azoli inibiscono la 14α-demetilasi, un citocromo P450 fungino che trasforma il lanosterolo in ergosterolo.",
+   "Legarsi all'ergosterolo formando pori è dell'amfotericina B; la β-glucano sintasi è delle echinocandine.",
+   "La risposta è la D."
+  ],
+  "concetto": "antifungini azolici"
+ },
+ {
+  "id": "FAR-090",
+  "materia": "Farmacologia",
+  "argomento": "Antibiotici e chemioterapici",
+  "livello": "test",
+  "domanda": "Che differenza c'è tra un antibiotico batteriostatico e uno battericida?",
+  "opzioni": {
+   "A": "Il batteriostatico agisce solo sui virus",
+   "B": "Il batteriostatico arresta la crescita dei batteri, il battericida li uccide",
+   "C": "Il battericida agisce solo sui funghi",
+   "D": "Il batteriostatico si usa solo per via endovenosa",
+   "E": "Non c'è differenza nel risultato sui batteri"
+  },
+  "giusta": "B",
+  "perche": "Un batteriostatico, come tetracicline e macrolidi a dosi usuali, blocca la moltiplicazione e lascia al sistema immunitario il compito di eliminare i batteri; un battericida, come β-lattamici, aminoglicosidi e fluorochinoloni, provoca la morte dei batteri. Nei pazienti immunodepressi o in infezioni come l'endocardite si preferiscono i battericidi. La distinzione dipende anche dalla concentrazione e dal batterio. La trappola è pensare che i batteriostatici siano sempre inefficaci.",
+  "semplice": "Il batteriostatico mette i batteri «in punizione» e ferma la loro moltiplicazione; il battericida li elimina. Nel primo caso il resto del lavoro lo fanno le nostre difese.",
+  "passaggi": [
+   "Leggi i suffissi: «-statico» = ferma, «-cida» = uccide.",
+   "Il batteriostatico arresta la moltiplicazione e lascia al sistema immunitario l'eliminazione.",
+   "Il battericida provoca la morte dei batteri.",
+   "Le altre opzioni parlano di virus, funghi o vie di somministrazione, che non c'entrano.",
+   "La risposta è la B."
+  ],
+  "concetto": "batteriostatico e battericida"
+ },
+ {
+  "id": "FAR-091",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "test",
+  "domanda": "Qual è il meccanismo d'azione comune dei FANS (antinfiammatori non steroidei)?",
+  "opzioni": {
+   "A": "Inibizione della fosfolipasi A2 tramite recettori nucleari",
+   "B": "Agonismo sui recettori μ degli oppioidi",
+   "C": "Blocco dei recettori H1 dell'istamina",
+   "D": "Blocco dei canali del sodio nei nocicettori",
+   "E": "Inibizione delle cicloossigenasi (COX) con riduzione della sintesi di prostaglandine"
+  },
+  "giusta": "E",
+  "perche": "I FANS inibiscono le cicloossigenasi, che trasformano l'acido arachidonico in prostaglandine e trombossani. Riducendo le prostaglandine diminuiscono infiammazione, dolore e febbre. L'inibizione della fosfolipasi A2, più a monte, è invece tipica dei glucocorticoidi. La trappola è confondere il bersaglio dei FANS con quello dei cortisonici o degli oppioidi.",
+  "semplice": "Le prostaglandine sono «sirene» che amplificano dolore e infiammazione. I FANS spengono la macchina che le produce.",
+  "passaggi": [
+   "Ricorda che i FANS riducono dolore, febbre e infiammazione abbassando le prostaglandine.",
+   "Le prostaglandine nascono dall'acido arachidonico grazie alle cicloossigenasi (COX).",
+   "Inibire la fosfolipasi A2 è tipico dei glucocorticoidi (A); oppioidi, antistaminici e anestetici locali sono altro.",
+   "La risposta è la E."
+  ],
+  "concetto": "FANS e COX"
+ },
+ {
+  "id": "FAR-092",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Perché i FANS non selettivi possono causare ulcere gastriche?",
+  "opzioni": {
+   "A": "Perché stimolano la produzione di istamina nello stomaco",
+   "B": "Perché aumentano la produzione di muco gastrico",
+   "C": "Perché bloccano la pompa protonica",
+   "D": "Perché attivano l'Helicobacter pylori",
+   "E": "Perché riducono le prostaglandine prodotte dalla COX-1 che proteggono la mucosa gastrica"
+  },
+  "giusta": "E",
+  "perche": "Nello stomaco le prostaglandine prodotte dalla COX-1 riducono la secrezione acida, aumentano muco e bicarbonato e mantengono un buon flusso di sangue nella mucosa. Inibirle toglie queste difese, indipendentemente dalla via di somministrazione: anche un FANS per iniezione può dare ulcera. Il danno locale diretto contribuisce, ma non è la causa principale. La trappola è pensare che basti assumerli a stomaco pieno per eliminare il rischio.",
+  "semplice": "Le prostaglandine dello stomaco sono come una vernice protettiva sulla parete. I FANS tolgono la vernice e l'acido può corrodere.",
+  "passaggi": [
+   "Ricorda il ruolo delle prostaglandine prodotte dalla COX-1 nello stomaco.",
+   "Riducono la secrezione acida, aumentano muco e bicarbonato e mantengono il flusso di sangue nella mucosa.",
+   "I FANS non selettivi inibiscono la COX-1 e tolgono queste difese, anche se presi non per bocca.",
+   "Le altre opzioni sono false: i FANS non bloccano la pompa protonica né aumentano il muco.",
+   "La risposta è la E."
+  ],
+  "concetto": "gastrolesività dei FANS"
+ },
+ {
+  "id": "FAR-093",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Perché gli inibitori selettivi della COX-2 (coxib) sono associati a un aumento del rischio cardiovascolare trombotico?",
+  "opzioni": {
+   "A": "Perché inibiscono in modo irreversibile la COX-1 piastrinica",
+   "B": "Perché aumentano i livelli di colesterolo LDL",
+   "C": "Perché causano bradicardia grave",
+   "D": "Perché riducono la prostaciclina endoteliale senza ridurre il trombossano A2 piastrinico, spostando l'equilibrio verso la trombosi",
+   "E": "Perché bloccano i recettori dell'aldosterone"
+  },
+  "giusta": "D",
+  "perche": "Nell'endotelio la COX-2 contribuisce alla produzione di prostaciclina, che è vasodilatatrice e antiaggregante. Nelle piastrine la COX-1 produce il trombossano A2, pro-aggregante. Inibendo solo la COX-2 si riduce la prostaciclina ma non il trombossano, e l'equilibrio si sposta verso la trombosi (infarto, ictus). In compenso i coxib sono meno gastrolesivi. La trappola è considerarli in tutto più sicuri dei FANS tradizionali.",
+  "semplice": "Prostaciclina e trombossano sono due pesi sui piatti di una bilancia. Se togli solo il peso della prostaciclina, la bilancia pende dalla parte della coagulazione.",
+  "passaggi": [
+   "Ricorda l'equilibrio tra due prostanoidi: prostaciclina endoteliale (antiaggregante) e trombossano A2 piastrinico (pro-aggregante).",
+   "La prostaciclina dipende in parte dalla COX-2, il trombossano dalla COX-1 delle piastrine.",
+   "Un coxib riduce la prostaciclina ma lascia intatto il trombossano: l'equilibrio si sposta verso la trombosi.",
+   "La risposta è la D."
+  ],
+  "concetto": "coxib e rischio cardiovascolare"
+ },
+ {
+  "id": "FAR-094",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "test",
+  "domanda": "Quale caratteristica distingue il paracetamolo dai FANS classici?",
+  "opzioni": {
+   "A": "Ha forte attività antinfiammatoria ma non è antipiretico",
+   "B": "Ha effetto analgesico e antipiretico ma scarsa attività antinfiammatoria periferica",
+   "C": "Inibisce in modo irreversibile la COX-1 piastrinica",
+   "D": "È un agonista dei recettori μ",
+   "E": "Causa frequentemente ulcere gastriche"
+  },
+  "giusta": "B",
+  "perche": "Il paracetamolo riduce febbre e dolore agendo soprattutto a livello centrale, ma nei tessuti infiammati, dove ci sono molti perossidi, inibisce poco le COX: per questo è un debole antinfiammatorio. Ha scarsi effetti su stomaco e piastrine. Il rischio principale è l'epatotossicità in caso di sovradosaggio. La trappola è considerarlo un FANS a tutti gli effetti.",
+  "semplice": "Il paracetamolo abbassa la febbre e attenua il mal di testa, ma su una caviglia gonfia per una distorsione riduce poco il gonfiore.",
+  "passaggi": [
+   "Ricorda le tre azioni dei FANS: analgesica, antipiretica, antinfiammatoria.",
+   "Il paracetamolo agisce soprattutto a livello centrale: abbassa febbre e dolore.",
+   "Nei tessuti infiammati inibisce poco le COX, quindi è un debole antinfiammatorio, e risparmia stomaco e piastrine.",
+   "La risposta è la B."
+  ],
+  "concetto": "paracetamolo"
+ },
+ {
+  "id": "FAR-095",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Perché il sovradosaggio di paracetamolo danneggia il fegato e come agisce la N-acetilcisteina?",
+  "opzioni": {
+   "A": "Il paracetamolo inibisce la sintesi proteica epatica; la N-acetilcisteina la riattiva",
+   "B": "Il paracetamolo forma cristalli nei dotti biliari; la N-acetilcisteina li scioglie",
+   "C": "Si accumula il metabolita reattivo NAPQI quando il glutatione si esaurisce; la N-acetilcisteina ricostituisce il glutatione",
+   "D": "Il paracetamolo blocca la COX-1 epatica; la N-acetilcisteina la stimola",
+   "E": "Il paracetamolo causa emolisi; la N-acetilcisteina protegge i globuli rossi"
+  },
+  "giusta": "C",
+  "perche": "A dosi normali il paracetamolo viene coniugato con glucuronide e solfato; una piccola quota è ossidata dai citocromi a NAPQI, che viene neutralizzato dal glutatione. In caso di sovradosaggio le vie di coniugazione si saturano, si forma molto NAPQI, il glutatione si esaurisce e il metabolita lega le proteine degli epatociti causando necrosi. La N-acetilcisteina fornisce cisteina per rigenerare il glutatione ed è più efficace se data presto. La trappola è pensare che sia il paracetamolo in sé a essere tossico.",
+  "semplice": "Il fegato ha una scorta di «estintori» (glutatione) per spegnere un sottoprodotto pericoloso. Se il paracetamolo è troppo, gli estintori finiscono; la N-acetilcisteina ne porta di nuovi.",
+  "passaggi": [
+   "Ricorda il metabolismo normale: il paracetamolo è coniugato con glucuronide e solfato, e una piccola quota diventa NAPQI, neutralizzato dal glutatione.",
+   "Nel sovradosaggio le coniugazioni si saturano e si forma molto NAPQI.",
+   "Esaurito il glutatione, il NAPQI danneggia gli epatociti.",
+   "La N-acetilcisteina fornisce cisteina per ricostituire il glutatione.",
+   "La risposta è la C."
+  ],
+  "concetto": "tossicità del paracetamolo"
+ },
+ {
+  "id": "FAR-096",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Perché l'acido acetilsalicilico è sconsigliato nei bambini e ragazzi con infezioni virali come influenza o varicella?",
+  "opzioni": {
+   "A": "Perché non abbassa la febbre nei bambini",
+   "B": "Perché provoca agranulocitosi nei bambini",
+   "C": "Perché causa la sindrome grigia",
+   "D": "Per il rischio di sindrome di Reye, con danno epatico ed encefalopatia",
+   "E": "Perché colora i denti in crescita"
+  },
+  "giusta": "D",
+  "perche": "Nei bambini con infezioni virali l'uso di salicilati è stato associato alla sindrome di Reye, rara ma grave, con steatosi epatica e edema cerebrale. Per questo nei più giovani si preferiscono altri antipiretici. La sindrome grigia riguarda il cloramfenicolo nel neonato, la colorazione dei denti le tetracicline. La trappola è confondere tra loro queste controindicazioni pediatriche.",
+  "semplice": "Per la febbre di un bambino con influenza l'aspirina non è la scelta adatta, per un rischio raro ma serio a fegato e cervello.",
+  "passaggi": [
+   "Riconosci la situazione: bambini con infezioni virali come influenza o varicella e salicilati.",
+   "Ricorda l'associazione con la sindrome di Reye, rara ma grave, con danno epatico ed encefalopatia.",
+   "La sindrome grigia è del cloramfenicolo, i denti colorati delle tetracicline.",
+   "La risposta è la D."
+  ],
+  "concetto": "sindrome di Reye"
+ },
+ {
+  "id": "FAR-097",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Come agiscono i glucocorticoidi come antinfiammatori?",
+  "opzioni": {
+   "A": "Legano un recettore intracellulare e modificano la trascrizione genica, riducendo citochine, COX-2 e mediatori lipidici",
+   "B": "Inibiscono direttamente la COX-1 nelle piastrine",
+   "C": "Bloccano i recettori H1 sui vasi",
+   "D": "Sono agonisti dei recettori β2",
+   "E": "Neutralizzano le prostaglandine già formate nel sangue"
+  },
+  "giusta": "A",
+  "perche": "I glucocorticoidi attivano il recettore citoplasmatico, che nel nucleo induce proteine antinfiammatorie (come l'annessina-1, che riduce l'attività della fosfolipasi A2) e reprime la trascrizione di geni infiammatori come citochine e COX-2, ostacolando fattori come NF-κB. L'effetto è ampio ma comporta molti effetti avversi con l'uso prolungato. La trappola è pensare che agiscano come i FANS sulle COX già presenti.",
+  "semplice": "I FANS bloccano una macchina già accesa; il cortisone invece riscrive gli ordini della fabbrica, così molte macchine dell'infiammazione non vengono neanche costruite.",
+  "passaggi": [
+   "Ricorda che i glucocorticoidi sono steroidi e agiscono su un recettore intracellulare.",
+   "Il complesso ormone-recettore modifica la trascrizione: induce proteine antinfiammatorie e reprime citochine e COX-2.",
+   "Non inibiscono direttamente la COX-1, non bloccano H1 e non sono β2-agonisti.",
+   "La risposta è la A."
+  ],
+  "concetto": "glucocorticoidi"
+ },
+ {
+  "id": "FAR-098",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Perché una terapia prolungata con glucocorticoidi non va sospesa bruscamente?",
+  "opzioni": {
+   "A": "Perché si sviluppa una crisi ipertensiva da tiramina",
+   "B": "Perché l'asse ipotalamo-ipofisi-surrene è soppresso e può verificarsi un'insufficienza surrenalica acuta",
+   "C": "Perché si ha un aumento improvviso della glicemia",
+   "D": "Perché aumentano rapidamente i recettori β1 cardiaci",
+   "E": "Perché il farmaco si accumula nel tessuto adiposo"
+  },
+  "giusta": "B",
+  "perche": "Somministrare glucocorticoidi per settimane sopprime la produzione di CRH e ACTH, e le surrenali si atrofizzano e producono poco cortisolo. Interrompendo di colpo la terapia l'organismo resta senza cortisolo, con rischio di crisi surrenalica (ipotensione, ipoglicemia, shock) e di riaccensione della malattia. Per questo si riduce la dose gradualmente. La trappola è pensare che la sospensione dia solo un ritorno dei sintomi.",
+  "semplice": "Se per mesi qualcuno fa il lavoro al posto delle surrenali, queste «si arrugginiscono». Bisogna rimetterle in moto piano, riducendo la dose a poco a poco.",
+  "passaggi": [
+   "Ricorda che il cortisolo esterno, dato a lungo, frena CRH e ACTH con il feedback negativo.",
+   "Senza ACTH le surrenali si atrofizzano e producono poco cortisolo.",
+   "Se la terapia si interrompe di colpo, l'organismo resta senza cortisolo: insufficienza surrenalica acuta.",
+   "La risposta è la B."
+  ],
+  "concetto": "soppressione dell'asse HPA"
+ },
+ {
+  "id": "FAR-099",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Quali effetti avversi sono tipici dell'uso prolungato di glucocorticoidi sistemici?",
+  "opzioni": {
+   "A": "Osteoporosi, iperglicemia, aumento del rischio di infezioni e redistribuzione del grasso",
+   "B": "Ipoglicemia, perdita di peso e aumento della massa ossea",
+   "C": "Ototossicità e nefrotossicità",
+   "D": "Bradicardia e broncocostrizione",
+   "E": "Colorazione dei denti e fotosensibilità"
+  },
+  "giusta": "A",
+  "perche": "Il cortisolo in eccesso aumenta la glicemia, riduce la formazione ossea, sopprime le difese immunitarie, provoca accumulo di grasso al volto e al tronco, assottigliamento della pelle, ipertensione, cataratta e alterazioni dell'umore: è il quadro della sindrome di Cushing iatrogena. Molti di questi effetti dipendono da dose e durata. La trappola è considerare «innocuo» un cortisonico usato per lunghi periodi solo perché efficace.",
+  "semplice": "Prendere cortisone a lungo è come avere sempre addosso l'ormone dello stress: la glicemia sale, le ossa si indeboliscono e le difese calano.",
+  "passaggi": [
+   "Pensa agli effetti del cortisolo in eccesso, cioè a una sindrome di Cushing da farmaci.",
+   "Il cortisolo aumenta la glicemia, riduce la formazione ossea, sopprime le difese e redistribuisce il grasso.",
+   "B dice l'opposto; C, D ed E sono effetti tipici di altri farmaci.",
+   "La risposta è la A."
+  ],
+  "concetto": "effetti avversi dei corticosteroidi"
+ },
+ {
+  "id": "FAR-100",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Perché l'effetto della codeina può variare molto tra individui?",
+  "opzioni": {
+   "A": "Perché è assorbita solo a stomaco vuoto",
+   "B": "Perché agisce sui recettori κ, molto variabili",
+   "C": "Perché è attivata a morfina dal CYP2D6, che presenta varianti genetiche con attività assente o molto elevata",
+   "D": "Perché viene eliminata immodificata dal rene",
+   "E": "Perché si lega in modo variabile all'emoglobina"
+  },
+  "giusta": "C",
+  "perche": "La codeina è in gran parte un profarmaco: la sua efficacia analgesica dipende dalla quota trasformata in morfina dal CYP2D6. I metabolizzatori lenti ottengono poca analgesia, mentre i metabolizzatori ultrarapidi possono produrre molta morfina con rischio di depressione respiratoria. È un esempio di farmacogenetica con implicazioni di sicurezza. La trappola è pensare che la variabilità dipenda dall'assorbimento.",
+  "semplice": "La codeina è come una lettera che deve essere «tradotta» in morfina. Se il traduttore è lento capisci poco, se è velocissimo ricevi troppo.",
+  "passaggi": [
+   "Ricorda che la codeina è in gran parte un profarmaco.",
+   "L'analgesia dipende dalla quota trasformata in morfina dal CYP2D6.",
+   "Il CYP2D6 ha varianti genetiche: metabolizzatori lenti hanno poca analgesia, ultrarapidi rischiano tossicità.",
+   "La risposta è la C."
+  ],
+  "concetto": "codeina e CYP2D6"
+ },
+ {
+  "id": "FAR-101",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "test",
+  "domanda": "Quale dei seguenti è un effetto tipico degli analgesici oppioidi a cui di solito NON si sviluppa tolleranza?",
+  "opzioni": {
+   "A": "Euforia",
+   "B": "Analgesia",
+   "C": "Depressione respiratoria",
+   "D": "Stipsi",
+   "E": "Nausea"
+  },
+  "giusta": "D",
+  "perche": "Con l'uso continuato di oppioidi si sviluppa tolleranza a molti effetti, compresi analgesia, euforia, nausea e, in parte, depressione respiratoria. Alla stipsi e alla miosi invece la tolleranza è minima: per questo la stipsi va prevenuta per tutta la durata della terapia. La trappola è pensare che la tolleranza riguardi in modo uguale tutti gli effetti.",
+  "semplice": "Il corpo si abitua presto a molti effetti degli oppioidi, ma l'intestino resta «addormentato»: la stipsi accompagna il paziente per tutta la terapia.",
+  "passaggi": [
+   "Ricorda che con l'uso continuato di oppioidi la tolleranza si sviluppa a molti effetti.",
+   "Analgesia, euforia, nausea e in parte depressione respiratoria diminuiscono col tempo.",
+   "Alla stipsi (e alla miosi) invece la tolleranza è minima: va prevenuta per tutta la terapia.",
+   "La risposta è la D."
+  ],
+  "concetto": "tolleranza agli oppioidi"
+ },
+ {
+  "id": "FAR-102",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Come agisce l'allopurinolo nella prevenzione della gotta?",
+  "opzioni": {
+   "A": "Aumenta l'escrezione renale di acido urico",
+   "B": "Inibisce la xantina ossidasi riducendo la produzione di acido urico",
+   "C": "Inibisce la migrazione dei neutrofili legando la tubulina",
+   "D": "Blocca la COX-2 nelle articolazioni",
+   "E": "Scioglie direttamente i cristalli di urato"
+  },
+  "giusta": "B",
+  "perche": "La xantina ossidasi trasforma ipoxantina in xantina e xantina in acido urico. L'allopurinolo la inibisce e abbassa l'uricemia, prevenendo nuovi attacchi e i tofi. Non si usa per trattare l'attacco acuto, dove servono colchicina, FANS o cortisonici; all'inizio può anzi scatenare attacchi spostando i cristalli. Inibisce anche il metabolismo dell'azatioprina. La trappola è confonderlo con la colchicina, che agisce sui microtubuli dei neutrofili.",
+  "semplice": "L'allopurinolo chiude il rubinetto dell'acido urico: ne arriva meno nel sangue e si formano meno cristalli nelle articolazioni.",
+  "passaggi": [
+   "Ricorda la via di produzione dell'acido urico: ipoxantina, xantina, acido urico, grazie alla xantina ossidasi.",
+   "L'allopurinolo inibisce questo enzima e abbassa l'uricemia.",
+   "Aumentare l'escrezione è dei uricosurici, legare la tubulina è della colchicina.",
+   "La risposta è la B."
+  ],
+  "concetto": "allopurinolo"
+ },
+ {
+  "id": "FAR-103",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Qual è il meccanismo d'azione della colchicina nell'attacco acuto di gotta?",
+  "opzioni": {
+   "A": "Inibisce la xantina ossidasi",
+   "B": "Aumenta l'escrezione renale di urati",
+   "C": "Inibisce la COX-1 piastrinica",
+   "D": "Blocca il recettore dell'interleuchina-6",
+   "E": "Lega la tubulina e inibisce la polimerizzazione dei microtubuli, riducendo migrazione e attivazione dei neutrofili"
+  },
+  "giusta": "E",
+  "perche": "Nella gotta i cristalli di urato richiamano neutrofili che scatenano l'infiammazione. La colchicina, legandosi alla tubulina, impedisce la formazione dei microtubuli necessari alla migrazione e all'attivazione di queste cellule, riducendo anche l'attivazione dell'inflammasoma. Ha un margine terapeutico stretto e la diarrea è un segnale precoce di tossicità. La trappola è attribuirle un effetto sui livelli di acido urico.",
+  "semplice": "La colchicina non toglie i cristalli, ma impedisce ai «soldati» dell'infiammazione di arrivare e attaccare l'articolazione.",
+  "passaggi": [
+   "Ricorda che nell'attacco di gotta i cristalli di urato richiamano neutrofili che scatenano l'infiammazione.",
+   "La colchicina lega la tubulina e impedisce la formazione dei microtubuli.",
+   "Senza microtubuli i neutrofili migrano e si attivano meno.",
+   "La xantina ossidasi (A) è il bersaglio dell'allopurinolo, che serve alla prevenzione.",
+   "La risposta è la E."
+  ],
+  "concetto": "colchicina"
+ },
+ {
+  "id": "FAR-104",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Quale farmaco antireumatico a basse dosi è considerato il riferimento nell'artrite reumatoide?",
+  "opzioni": {
+   "A": "Paracetamolo",
+   "B": "Morfina",
+   "C": "Metotrexato",
+   "D": "Allopurinolo",
+   "E": "Codeina"
+  },
+  "giusta": "C",
+  "perche": "Il metotrexato, usato a dosi settimanali basse, è il farmaco antireumatico modificante la malattia (DMARD) di prima scelta nell'artrite reumatoide: riduce l'attività infiammatoria e rallenta il danno articolare. A queste dosi agisce in parte aumentando l'adenosina extracellulare, antinfiammatoria. Richiede controlli di emocromo e funzionalità epatica e la supplementazione di acido folico. La trappola è considerare i semplici analgesici capaci di modificare il decorso della malattia.",
+  "semplice": "Gli antidolorifici tolgono il dolore della giornata; il metotrexato lavora sotto, rallentando la malattia che danneggia le articolazioni.",
+  "passaggi": [
+   "La domanda chiede il farmaco antireumatico di fondo (DMARD) di riferimento nell'artrite reumatoide.",
+   "Paracetamolo, morfina e codeina sono analgesici, l'allopurinolo serve nella gotta.",
+   "Il metotrexato a basse dosi settimanali è il DMARD di prima scelta.",
+   "La risposta è la C."
+  ],
+  "concetto": "DMARD"
+ },
+ {
+  "id": "FAR-105",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Qual è il bersaglio dei farmaci biologici come infliximab e adalimumab?",
+  "opzioni": {
+   "A": "La COX-2",
+   "B": "Il fattore di necrosi tumorale α (TNF-α)",
+   "C": "Il recettore μ degli oppioidi",
+   "D": "La xantina ossidasi",
+   "E": "Il recettore H2"
+  },
+  "giusta": "B",
+  "perche": "Infliximab e adalimumab sono anticorpi monoclonali che legano il TNF-α, una citochina chiave dell'infiammazione cronica in malattie come artrite reumatoide e malattie infiammatorie intestinali. Bloccandolo riducono l'infiammazione, ma aumentano il rischio di infezioni, in particolare la riattivazione della tubercolosi latente, che va esclusa prima di iniziare. La trappola è pensare che siano FANS o immunostimolanti.",
+  "semplice": "Il TNF-α è un «megafono» che chiama sempre più infiammazione. Questi anticorpi lo afferrano e lo spengono.",
+  "passaggi": [
+   "Riconosci i nomi: il suffisso «-mab» indica anticorpi monoclonali.",
+   "Infliximab e adalimumab legano una citochina chiave dell'infiammazione cronica.",
+   "Questa citochina è il fattore di necrosi tumorale α (TNF-α).",
+   "La risposta è la B."
+  ],
+  "concetto": "farmaci anti-TNF"
+ },
+ {
+  "id": "FAR-106",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Su quali recettori agiscono i triptani usati nell'attacco di emicrania?",
+  "opzioni": {
+   "A": "Antagonisti dei recettori 5-HT3",
+   "B": "Agonisti dei recettori D2",
+   "C": "Agonisti dei recettori serotoninergici 5-HT1B/1D",
+   "D": "Antagonisti dei recettori μ",
+   "E": "Antagonisti dei recettori H1"
+  },
+  "giusta": "C",
+  "perche": "I triptani, come il sumatriptan, stimolano i recettori 5-HT1B dei vasi cranici, causando vasocostrizione, e i 5-HT1D delle terminazioni del trigemino, riducendo il rilascio di neuropeptidi infiammatori come il CGRP. Per l'effetto vasocostrittore sono controindicati in chi ha malattia coronarica. La trappola è confonderli con gli antagonisti 5-HT3 come l'ondansetron, usati contro il vomito.",
+  "semplice": "Nell'emicrania alcuni vasi della testa e i nervi vicini sono «in allarme». Il triptano stimola recettori della serotonina che restringono quei vasi e calmano i nervi.",
+  "passaggi": [
+   "Ricorda che i triptani, come il sumatriptan, imitano la serotonina in modo selettivo.",
+   "Stimolano i 5-HT1B dei vasi cranici (vasocostrizione) e i 5-HT1D del trigemino (meno CGRP).",
+   "Gli antagonisti 5-HT3 sono antiemetici; le altre opzioni non c'entrano con l'emicrania.",
+   "La risposta è la C: agonisti 5-HT1B/1D."
+  ],
+  "concetto": "triptani"
+ },
+ {
+  "id": "FAR-107",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "test",
+  "domanda": "Che cosa prevede la scala analgesica a gradini proposta dall'OMS per il dolore oncologico?",
+  "opzioni": {
+   "A": "Un uso progressivo di non oppioidi, oppioidi deboli e oppioidi forti in base all'intensità del dolore, con eventuali adiuvanti",
+   "B": "L'uso di oppioidi forti solo quando il paziente è in fin di vita",
+   "C": "L'uso esclusivo di FANS per tutti i livelli di dolore",
+   "D": "L'uso degli antibiotici prima degli analgesici",
+   "E": "La somministrazione di analgesici solo al bisogno, mai a orario"
+  },
+  "giusta": "A",
+  "perche": "La scala dell'OMS suggerisce di scegliere il farmaco in base all'intensità del dolore: non oppioidi (paracetamolo, FANS) per il dolore lieve, oppioidi deboli per quello moderato, oppioidi forti per quello grave, aggiungendo farmaci adiuvanti come antidepressivi o antiepilettici nel dolore neuropatico. Si preferisce la somministrazione a orari regolari. La trappola è pensare che gli oppioidi forti siano riservati alle fasi terminali.",
+  "semplice": "È come salire una scala: si parte dal gradino più basso e si sale solo se il dolore non viene controllato.",
+  "passaggi": [
+   "Ricorda l'idea della scala OMS: scegliere il farmaco in base all'intensità del dolore.",
+   "Dolore lieve: non oppioidi; moderato: oppioidi deboli; grave: oppioidi forti, con eventuali adiuvanti.",
+   "Le altre opzioni limitano gli oppioidi al fine vita, usano solo FANS o solo al bisogno: sono errate.",
+   "La risposta è la A."
+  ],
+  "concetto": "scala analgesica OMS"
+ },
+ {
+  "id": "FAR-108",
+  "materia": "Farmacologia",
+  "argomento": "Antinfiammatori e analgesici",
+  "livello": "università",
+  "domanda": "Perché i FANS possono peggiorare la funzione renale in pazienti disidratati o con scompenso cardiaco?",
+  "opzioni": {
+   "A": "Perché in queste condizioni le prostaglandine renali mantengono la perfusione glomerulare e i FANS ne riducono la sintesi",
+   "B": "Perché i FANS ostruiscono i tubuli formando cristalli",
+   "C": "Perché i FANS aumentano direttamente la filtrazione glomerulare",
+   "D": "Perché i FANS sono fortemente nefrotossici come gli aminoglicosidi in ogni paziente",
+   "E": "Perché i FANS causano iperkaliemia che blocca il glomerulo"
+  },
+  "giusta": "A",
+  "perche": "Quando il flusso di sangue al rene è ridotto, le prostaglandine dilatano l'arteriola afferente e sostengono la filtrazione. Inibendole, i FANS possono causare insufficienza renale acuta, soprattutto se associati a diuretici e ACE-inibitori o sartani (la cosiddetta «tripla interazione»). Riducono anche l'escrezione di sodio, con ritenzione idrica e minore efficacia degli antipertensivi. La trappola è pensare che il rischio renale riguardi allo stesso modo una persona sana e idratata.",
+  "semplice": "Quando al rene arriva poco sangue, le prostaglandine tengono aperta la «porta d'ingresso». Un FANS la socchiude proprio nel momento peggiore.",
+  "passaggi": [
+   "Ricorda che quando il flusso renale è ridotto le prostaglandine dilatano l'arteriola afferente.",
+   "Così mantengono la perfusione glomerulare e la filtrazione.",
+   "I FANS ne riducono la sintesi e possono causare insufficienza renale acuta in questi pazienti.",
+   "La risposta è la A."
+  ],
+  "concetto": "FANS e rene"
+ },
+ {
+  "id": "FAR-109",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "test",
+  "domanda": "A chi si attribuisce il principio «è la dose che fa il veleno», alla base della tossicologia?",
+  "opzioni": {
+   "A": "Ippocrate",
+   "B": "Galeno",
+   "C": "Claude Bernard",
+   "D": "Paul Ehrlich",
+   "E": "Paracelso"
+  },
+  "giusta": "E",
+  "perche": "Paracelso, nel Cinquecento, sottolineò che ogni sostanza può essere tossica e che solo la dose distingue un rimedio da un veleno. Il principio è alla base della relazione dose-risposta: anche l'acqua o le vitamine diventano dannose a quantità eccessive, mentre sostanze molto tossiche possono avere usi terapeutici a dosi basse. Paul Ehrlich è invece legato al concetto di «proiettile magico». La trappola è confondere i padri della medicina antica con il fondatore di questo principio.",
+  "semplice": "La vitamina A è indispensabile, ma a dosi molto alte diventa tossica per il fegato: è la dose che decide.",
+  "passaggi": [
+   "Riconosci la frase: «è la dose che fa il veleno».",
+   "Ricorda che fu Paracelso, nel Cinquecento, a sostenere che solo la dose distingue rimedio e veleno.",
+   "Ippocrate, Galeno, Bernard ed Ehrlich sono figure importanti ma legate ad altri contributi.",
+   "La risposta è la E: Paracelso."
+  ],
+  "concetto": "principio della dose"
+ },
+ {
+  "id": "FAR-110",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "test",
+  "domanda": "Negli studi su animali la DL50 di una sostanza è 600 mg/kg e la DE50 è 40 mg/kg. Qual è l'indice terapeutico?",
+  "opzioni": {
+   "A": "0,067",
+   "B": "560",
+   "C": "24 000",
+   "D": "15",
+   "E": "640"
+  },
+  "giusta": "D",
+  "perche": "L'indice terapeutico negli studi preclinici si calcola come DL50 / DE50, cioè la dose letale per metà degli animali divisa per la dose efficace per metà di essi: 600 / 40 = 15. Più il valore è alto, più è ampio il margine tra effetto utile e tossicità. La trappola è sottrarre le due dosi o invertire il rapporto.",
+  "semplice": "Se la dose pericolosa è 15 volte quella utile, c'è un buon cuscinetto di sicurezza; se è appena il doppio, il farmaco va maneggiato con grande attenzione.",
+  "passaggi": [
+   "1. Indice terapeutico = DL50 / DE50",
+   "2. = 600 mg/kg / 40 mg/kg",
+   "3. = 15"
+  ],
+  "concetto": "DL50 e indice terapeutico"
+ },
+ {
+  "id": "FAR-111",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Un farmaco ha DT1 (dose tossica nell'1% dei soggetti) di 150 mg/kg e DE99 (dose efficace nel 99%) di 50 mg/kg. Qual è il margine di sicurezza (DT1/DE99)?",
+  "opzioni": {
+   "A": "3",
+   "B": "0,33",
+   "C": "100",
+   "D": "200",
+   "E": "7500"
+  },
+  "giusta": "A",
+  "perche": "Il margine di sicurezza confronta la dose che dà tossicità in pochissimi soggetti con quella efficace in quasi tutti: 150 / 50 = 3. È un indicatore più prudente dell'indice terapeutico, perché tiene conto delle code delle curve dose-risposta, dove si trovano i soggetti più sensibili. La trappola è usare le dosi mediane e sovrastimare la sicurezza quando le curve hanno pendenze diverse.",
+  "semplice": "Non basta sapere cosa succede alla persona «media»: il margine di sicurezza chiede se la dose che funziona per quasi tutti è lontana da quella che fa male ai più sensibili.",
+  "passaggi": [
+   "1. Margine di sicurezza = DT1 / DE99",
+   "2. = 150 mg/kg / 50 mg/kg",
+   "3. = 3"
+  ],
+  "concetto": "margine di sicurezza"
+ },
+ {
+  "id": "FAR-112",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "test",
+  "domanda": "In quale fase della sperimentazione clinica un nuovo farmaco viene somministrato per la prima volta all'uomo, di solito a pochi volontari, per valutarne sicurezza e farmacocinetica?",
+  "opzioni": {
+   "A": "Fase II",
+   "B": "Fase I",
+   "C": "Fase III",
+   "D": "Fase IV",
+   "E": "Fase preclinica"
+  },
+  "giusta": "B",
+  "perche": "Nella fase I si studiano sicurezza, tollerabilità e farmacocinetica su un piccolo numero di volontari (spesso sani, ma pazienti nel caso di farmaci molto tossici come gli antitumorali). La fase II valuta efficacia e dose su pazienti, la fase III conferma l'efficacia su grandi numeri contro placebo o terapia standard, la fase IV è la sorveglianza dopo la commercializzazione. La trappola è pensare che la fase preclinica coinvolga persone.",
+  "semplice": "Prima si controlla che il farmaco sia tollerato da poche persone (fase I), poi se funziona (fase II), poi lo si confronta su migliaia di pazienti (fase III), infine lo si sorveglia nell'uso reale (fase IV).",
+  "passaggi": [
+   "Ricorda le fasi della sperimentazione: preclinica su animali e cellule, poi fasi I, II, III e IV sull'uomo.",
+   "La prima somministrazione all'uomo, su pochi volontari per sicurezza e farmacocinetica, è la fase I.",
+   "La fase II valuta efficacia e dose, la III conferma su grandi numeri, la IV è dopo la commercializzazione.",
+   "La risposta è la B."
+  ],
+  "concetto": "fasi della sperimentazione"
+ },
+ {
+  "id": "FAR-113",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Perché la farmacovigilanza (fase IV) è indispensabile anche dopo studi clinici di fase III ben condotti?",
+  "opzioni": {
+   "A": "Perché gli studi di fase III non valutano l'efficacia",
+   "B": "Perché la fase IV serve a stabilire il prezzo del farmaco",
+   "C": "Perché in fase III il farmaco non viene mai confrontato con il placebo",
+   "D": "Perché la fase IV sostituisce la sperimentazione animale",
+   "E": "Perché gli studi pre-registrativi coinvolgono troppe poche persone e troppo poco tempo per evidenziare reazioni avverse rare o tardive"
+  },
+  "giusta": "E",
+  "perche": "Anche grandi studi di fase III includono qualche migliaio di pazienti selezionati e seguiti per periodi limitati: una reazione che compare in 1 caso su 10 000 o dopo anni può sfuggire. Solo l'uso nella popolazione reale, con anziani, politerapie e malattie associate, permette di scoprirla. Le segnalazioni spontanee di sospette reazioni avverse da parte di operatori sanitari e cittadini sono uno strumento chiave. La trappola è credere che l'approvazione garantisca la conoscenza completa dei rischi.",
+  "semplice": "Un effetto che capita a una persona su diecimila difficilmente si vede in uno studio su tremila; diventa visibile quando il farmaco lo usano milioni di persone.",
+  "passaggi": [
+   "Ricorda i limiti degli studi di fase III: qualche migliaio di pazienti selezionati, seguiti per tempi limitati.",
+   "Una reazione che compare in 1 caso su 10 000 o dopo anni può sfuggire.",
+   "Solo l'uso nella popolazione reale può farla emergere: è il compito della farmacovigilanza.",
+   "La risposta è la E."
+  ],
+  "concetto": "farmacovigilanza"
+ },
+ {
+  "id": "FAR-114",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Che cosa caratterizza una reazione avversa di tipo A secondo la classificazione di Rawlins e Thompson?",
+  "opzioni": {
+   "A": "È prevedibile dal meccanismo d'azione, dipende dalla dose ed è relativamente frequente",
+   "B": "È imprevedibile, rara e non dipende dalla dose",
+   "C": "Compare solo dopo anni di terapia",
+   "D": "Si manifesta solo alla sospensione del farmaco",
+   "E": "È sempre di natura allergica"
+  },
+  "giusta": "A",
+  "perche": "Le reazioni di tipo A («augmented») sono un'esagerazione dell'effetto farmacologico noto: per esempio un'emorragia con un anticoagulante o un'ipoglicemia con l'insulina. Sono dose-dipendenti e spesso si risolvono riducendo la dose. Le reazioni di tipo B («bizarre») sono invece imprevedibili, rare e non legate alla dose, come le reazioni allergiche o idiosincrasiche. La trappola è considerare tutte le reazioni avverse delle allergie.",
+  "semplice": "Se un farmaco per abbassare la pressione la abbassa troppo e fa girare la testa, è una reazione di tipo A: è il suo effetto, solo eccessivo.",
+  "passaggi": [
+   "Ricorda la classificazione: tipo A = «augmented», tipo B = «bizarre».",
+   "Il tipo A è un'esagerazione dell'effetto noto: prevedibile, dose-dipendente e frequente.",
+   "B descrive il tipo B; le altre opzioni riguardano reazioni tardive, da sospensione o allergiche.",
+   "La risposta è la A."
+  ],
+  "concetto": "reazioni avverse tipo A e B"
+ },
+ {
+  "id": "FAR-115",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "In quale periodo della gravidanza l'embrione è più vulnerabile all'azione dei farmaci teratogeni nel causare malformazioni strutturali maggiori?",
+  "opzioni": {
+   "A": "Nelle prime due settimane dal concepimento, sempre con malformazioni",
+   "B": "Solo nell'ultimo mese di gravidanza",
+   "C": "Tra la 3ª e l'8ª settimana dal concepimento (organogenesi)",
+   "D": "Durante il parto",
+   "E": "Il rischio è uguale in tutte le settimane"
+  },
+  "giusta": "C",
+  "perche": "Durante l'organogenesi si formano gli abbozzi degli organi e un farmaco teratogeno può causare malformazioni gravi, come accadde con la talidomide e le anomalie degli arti. Nelle prime due settimane vale in genere la regola del «tutto o nulla»: l'embrione muore o si riprende senza malformazioni. Nel periodo fetale i farmaci possono ancora alterare crescita e funzione degli organi. La trappola è credere che dopo il primo trimestre ogni rischio sparisca.",
+  "semplice": "L'embrione è come una casa in costruzione: quando si stanno alzando i muri, un errore lascia segni permanenti. Quel momento corrisponde alle settimane 3-8.",
+  "passaggi": [
+   "Ricorda le fasi dello sviluppo: prime due settimane con regola del «tutto o nulla», poi organogenesi, poi periodo fetale.",
+   "Le malformazioni strutturali maggiori nascono quando si formano gli abbozzi degli organi.",
+   "L'organogenesi va dalla 3ª all'8ª settimana dal concepimento.",
+   "La risposta è la C."
+  ],
+  "concetto": "teratogenesi"
+ },
+ {
+  "id": "FAR-116",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Perché il succo di pompelmo può aumentare le concentrazioni di alcuni farmaci, come certe statine e calcio-antagonisti?",
+  "opzioni": {
+   "A": "Perché inibisce in modo irreversibile il CYP3A4 della parete intestinale, riducendo il metabolismo di primo passaggio",
+   "B": "Perché aumenta la filtrazione glomerulare",
+   "C": "Perché induce il CYP3A4 epatico",
+   "D": "Perché lega i farmaci formando chelati",
+   "E": "Perché aumenta il legame alle proteine plasmatiche"
+  },
+  "giusta": "A",
+  "perche": "Le furanocumarine del pompelmo inattivano il CYP3A4 degli enterociti: una quota maggiore di farmaco supera la parete intestinale intatta e la biodisponibilità aumenta, talvolta di molte volte, con rischio di tossicità (per esempio danno muscolare con alcune statine). Poiché l'inibizione è irreversibile, l'effetto dura finché l'intestino non produce nuovo enzima. La trappola è pensare a un effetto di induzione, che porterebbe al risultato opposto.",
+  "semplice": "Il pompelmo «mette fuori servizio» una barriera dell'intestino che normalmente distrugge parte del farmaco: così ne entra molto di più.",
+  "passaggi": [
+   "Ricorda che il pompelmo contiene furanocumarine.",
+   "Queste inattivano in modo irreversibile il CYP3A4 della parete intestinale.",
+   "Si riduce il metabolismo di primo passaggio e la biodisponibilità del farmaco aumenta.",
+   "Indurre il CYP3A4 (C) farebbe l'effetto opposto.",
+   "La risposta è la A."
+  ],
+  "concetto": "interazione con il pompelmo"
+ },
+ {
+  "id": "FAR-117",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Che cosa accade alle concentrazioni di un farmaco metabolizzato dal CYP3A4 se si aggiunge un induttore come l'iperico (erba di San Giovanni)?",
+  "opzioni": {
+   "A": "Aumentano subito, con rischio di tossicità",
+   "B": "Diminuiscono nel giro di alcuni giorni, con rischio di perdita di efficacia",
+   "C": "Non cambiano, perché i prodotti erboristici non interagiscono",
+   "D": "Aumentano solo dopo la sospensione dell'iperico",
+   "E": "Diventano costanti indipendentemente dalla dose"
+  },
+  "giusta": "B",
+  "perche": "L'iperico attiva il recettore PXR e aumenta la sintesi di CYP3A4 e della glicoproteina P: i farmaci substrati vengono eliminati più rapidamente e le concentrazioni scendono. L'induzione richiede giorni perché servono nuove proteine; alla sospensione dell'induttore le concentrazioni risalgono, con possibile tossicità. Sono note perdite di efficacia di contraccettivi, immunosoppressori e antiretrovirali. La trappola è pensare che un prodotto «naturale» sia privo di interazioni.",
+  "semplice": "L'iperico fa lavorare di più il fegato: un farmaco che prima restava in circolo a lungo viene smaltito in fretta e potrebbe non bastare più.",
+  "passaggi": [
+   "Riconosci che l'iperico è un induttore del CYP3A4 (tramite il recettore PXR).",
+   "Un induttore fa produrre più enzima: i substrati vengono eliminati più in fretta e le concentrazioni scendono.",
+   "L'induzione richiede giorni, perché si devono sintetizzare nuove proteine.",
+   "La risposta è la B: diminuiscono in alcuni giorni, con rischio di perdita di efficacia."
+  ],
+  "concetto": "induzione enzimatica"
+ },
+ {
+  "id": "FAR-118",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "test",
+  "domanda": "Quale antidoto si usa nell'intossicazione da insetticidi organofosfati, insieme alla pralidossima?",
+  "opzioni": {
+   "A": "Naloxone",
+   "B": "Atropina",
+   "C": "Flumazenil",
+   "D": "Vitamina K",
+   "E": "Deferoxamina"
+  },
+  "giusta": "B",
+  "perche": "Gli organofosfati inibiscono l'acetilcolinesterasi: l'acetilcolina si accumula e provoca salivazione, lacrimazione, broncorrea, bradicardia, miosi e fascicolazioni. L'atropina blocca i recettori muscarinici e contrasta gli effetti più pericolosi sulle vie aeree; la pralidossima, se data presto, può riattivare l'enzima. La trappola è scegliere un antidoto di un'altra intossicazione, come il naloxone per gli oppioidi.",
+  "semplice": "Gli organofosfati fanno «allagare» le sinapsi di acetilcolina. L'atropina mette un tappo ai recettori muscarinici per ridurre i danni dell'allagamento.",
+  "passaggi": [
+   "Ricorda che gli organofosfati inibiscono l'acetilcolinesterasi: l'acetilcolina si accumula.",
+   "Gli effetti più pericolosi sono muscarinici: broncorrea, bradicardia, salivazione.",
+   "L'atropina blocca i recettori muscarinici; la pralidossima riattiva l'enzima.",
+   "Naloxone, flumazenil, vitamina K e deferoxamina sono antidoti di altre intossicazioni.",
+   "La risposta è la B."
+  ],
+  "concetto": "antidoto degli organofosfati"
+ },
+ {
+  "id": "FAR-119",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Perché il fomepizolo (o l'etanolo) si usa nell'intossicazione da metanolo o glicole etilenico?",
+  "opzioni": {
+   "A": "Perché lega direttamente il metanolo nel sangue",
+   "B": "Perché aumenta la velocità di trasformazione del metanolo in acido formico",
+   "C": "Perché neutralizza l'acidosi come il bicarbonato",
+   "D": "Perché inibisce l'alcol deidrogenasi e impedisce la formazione dei metaboliti tossici",
+   "E": "Perché è un antagonista dei recettori GABA-A"
+  },
+  "giusta": "D",
+  "perche": "Il metanolo e il glicole etilenico sono poco tossici di per sé, ma l'alcol deidrogenasi li trasforma in acido formico e in acido ossalico e altri acidi, responsabili di acidosi, cecità e danno renale. Il fomepizolo inibisce l'enzima (l'etanolo lo occupa competendo come substrato), così la sostanza madre viene eliminata immodificata, eventualmente con l'emodialisi. La trappola è pensare che l'antidoto agisca sul metanolo stesso.",
+  "semplice": "Il metanolo diventa velenoso solo dopo essere passato da una «macchina» del fegato. Il fomepizolo spegne la macchina e il veleno non viene prodotto.",
+  "passaggi": [
+   "Ricorda che metanolo e glicole etilenico diventano tossici dopo essere trasformati.",
+   "L'alcol deidrogenasi li converte in acido formico, acido ossalico e altri acidi tossici.",
+   "Il fomepizolo inibisce l'enzima e l'etanolo lo occupa competitivamente: i metaboliti tossici non si formano.",
+   "La risposta è la D."
+  ],
+  "concetto": "fomepizolo e metanolo"
+ },
+ {
+  "id": "FAR-120",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "test",
+  "domanda": "Quale antidoto si usa in caso di emorragia da eccesso di warfarin?",
+  "opzioni": {
+   "A": "Protamina solfato",
+   "B": "Vitamina K",
+   "C": "Flumazenil",
+   "D": "N-acetilcisteina",
+   "E": "Atropina"
+  },
+  "giusta": "B",
+  "perche": "Il warfarin blocca il riciclo della vitamina K; somministrare vitamina K permette al fegato di produrre nuovamente fattori della coagulazione funzionanti, ma l'effetto richiede alcune ore. Nelle emorragie gravi si aggiungono concentrati di complesso protrombinico o plasma, che forniscono subito i fattori. La protamina è invece l'antidoto dell'eparina. La trappola è scambiare gli antidoti dei due anticoagulanti.",
+  "semplice": "Il warfarin toglie al fegato la vitamina K «pronta all'uso»; per rimediare gliela si restituisce.",
+  "passaggi": [
+   "Ricorda che il warfarin blocca il riciclo della vitamina K.",
+   "Dare vitamina K permette al fegato di produrre di nuovo fattori della coagulazione funzionanti.",
+   "La protamina è l'antidoto dell'eparina, il flumazenil delle benzodiazepine, la N-acetilcisteina del paracetamolo.",
+   "La risposta è la B."
+  ],
+  "concetto": "antidoto del warfarin"
+ },
+ {
+  "id": "FAR-121",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Quale situazione aumenta il rischio di sindrome serotoninergica?",
+  "opzioni": {
+   "A": "L'associazione di un β-bloccante con un diuretico",
+   "B": "L'uso di paracetamolo a dosi terapeutiche",
+   "C": "L'associazione di un SSRI con un inibitore delle MAO o con altri farmaci serotoninergici come il tramadolo",
+   "D": "L'associazione di eparina e vitamina K",
+   "E": "La sospensione di un antibiotico β-lattamico"
+  },
+  "giusta": "C",
+  "perche": "La sindrome serotoninergica deriva da un eccesso di stimolazione serotoninergica: agitazione, febbre, sudorazione, tremori, mioclono e iperriflessia, fino a forme gravi. Il rischio è alto quando si associano farmaci che aumentano la serotonina con meccanismi diversi, come SSRI e IMAO, o con tramadolo, triptani a dosi elevate, linezolid o iperico. Per questo, passando da un IMAO a un SSRI, si rispetta un intervallo di sospensione. La trappola è sottovalutare l'interazione con farmaci non psichiatrici.",
+  "semplice": "Due farmaci che alzano la serotonina in modi diversi possono sommare i loro effetti fino a farla «traboccare».",
+  "passaggi": [
+   "Ricorda che la sindrome serotoninergica nasce da un eccesso di stimolazione serotoninergica.",
+   "Il rischio è alto quando si associano farmaci che aumentano la serotonina con meccanismi diversi.",
+   "SSRI più IMAO, o più tramadolo, è l'esempio classico; le altre associazioni non coinvolgono la serotonina.",
+   "La risposta è la C."
+  ],
+  "concetto": "sindrome serotoninergica"
+ },
+ {
+  "id": "FAR-122",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Perché i farmaci che prolungano l'intervallo QT richiedono attenzione, soprattutto se associati tra loro?",
+  "opzioni": {
+   "A": "Perché causano sempre bradicardia sinusale benigna",
+   "B": "Perché provocano ipertensione grave",
+   "C": "Perché riducono la contrattilità renale",
+   "D": "Perché aumentano l'aggregazione piastrinica",
+   "E": "Perché aumentano il rischio di torsione di punta, un'aritmia ventricolare potenzialmente mortale"
+  },
+  "giusta": "E",
+  "perche": "Molti farmaci di classi diverse (alcuni antiaritmici, macrolidi, fluorochinoloni, antipsicotici, antidepressivi, antiemetici) bloccano i canali del potassio hERG e ritardano la ripolarizzazione ventricolare, allungando il QT. Un QT molto lungo favorisce la torsione di punta, che può degenerare in fibrillazione ventricolare. Il rischio cresce con l'associazione di più farmaci, l'ipokaliemia, l'ipomagnesiemia e la bradicardia. La trappola è pensare che riguardi solo i farmaci per il cuore.",
+  "semplice": "Il QT misura il tempo che il cuore impiega per «ricaricarsi» dopo ogni battito. Se la ricarica dura troppo, possono partire battiti caotici.",
+  "passaggi": [
+   "Ricorda che il QT lungo indica una ripolarizzazione ventricolare ritardata.",
+   "Molti farmaci bloccano i canali del potassio hERG; associati tra loro, l'effetto si somma.",
+   "Un QT molto lungo favorisce la torsione di punta, aritmia ventricolare potenzialmente mortale.",
+   "La risposta è la E."
+  ],
+  "concetto": "prolungamento del QT"
+ },
+ {
+  "id": "FAR-123",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Che cosa si intende per «acetilatori lenti» nella farmacogenetica dell'isoniazide?",
+  "opzioni": {
+   "A": "Persone che assorbono lentamente l'isoniazide nell'intestino",
+   "B": "Persone con un CYP3A4 iperattivo",
+   "C": "Persone con varianti poco attive dell'enzima NAT2, che eliminano più lentamente l'isoniazide e hanno più rischio di neuropatia",
+   "D": "Persone che eliminano l'isoniazide solo per via biliare",
+   "E": "Persone allergiche all'isoniazide"
+  },
+  "giusta": "C",
+  "perche": "L'isoniazide viene inattivata per acetilazione dalla N-acetiltransferasi 2 (NAT2), un enzima con varianti genetiche frequenti. Gli acetilatori lenti mantengono concentrazioni più alte e sono più soggetti alla neuropatia periferica, prevenibile con vitamina B6; gli acetilatori rapidi eliminano il farmaco più in fretta. La frequenza dei due fenotipi varia tra popolazioni. La trappola è confondere un polimorfismo di fase II con quelli dei citocromi.",
+  "semplice": "Due persone prendono la stessa dose, ma una «smaltisce» il farmaco con un enzima lento: nel suo sangue ne resta di più e gli effetti avversi sono più probabili.",
+  "passaggi": [
+   "Ricorda che l'isoniazide viene inattivata per acetilazione dall'enzima NAT2.",
+   "NAT2 ha varianti genetiche frequenti: chi ha varianti poco attive è «acetilatore lento».",
+   "Gli acetilatori lenti eliminano il farmaco più lentamente e rischiano di più la neuropatia periferica.",
+   "La risposta è la C."
+  ],
+  "concetto": "polimorfismo di acetilazione"
+ },
+ {
+  "id": "FAR-124",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "test",
+  "domanda": "Che cos'è l'idiosincrasia a un farmaco?",
+  "opzioni": {
+   "A": "Una risposta anomala, spesso su base genetica, che si manifesta solo in alcuni individui",
+   "B": "La normale risposta prevedibile di tutta la popolazione",
+   "C": "L'effetto placebo",
+   "D": "La riduzione dell'effetto con l'uso ripetuto",
+   "E": "L'accumulo del farmaco per insufficienza renale"
+  },
+  "giusta": "A",
+  "perche": "L'idiosincrasia è una reazione insolita e non prevedibile sulla base del meccanismo d'azione, legata spesso a caratteristiche genetiche del singolo: per esempio l'emolisi da alcuni farmaci ossidanti nei soggetti con deficit di glucosio-6-fosfato deidrogenasi. Non è una reazione allergica, perché non coinvolge il sistema immunitario. La trappola è confonderla con l'allergia o con la tolleranza.",
+  "semplice": "Lo stesso farmaco, alla stessa dose, va bene a quasi tutti ma provoca un problema serio a poche persone con una particolare caratteristica genetica.",
+  "passaggi": [
+   "Ricorda il significato: idiosincrasia = reazione propria di quel singolo individuo.",
+   "È una risposta anomala, non prevedibile dal meccanismo, spesso su base genetica (per esempio deficit di G6PD).",
+   "B è la risposta normale, C il placebo, D la tolleranza, E un problema farmacocinetico.",
+   "La risposta è la A."
+  ],
+  "concetto": "idiosincrasia"
+ },
+ {
+  "id": "FAR-125",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Per quale antidoto specifico è indicata un'intossicazione grave da digossina?",
+  "opzioni": {
+   "A": "Protamina",
+   "B": "Deferoxamina",
+   "C": "Naloxone",
+   "D": "Frammenti Fab di anticorpi antidigossina",
+   "E": "Vitamina K"
+  },
+  "giusta": "D",
+  "perche": "I frammenti Fab antidigossina legano la digossina nel sangue e nei tessuti e la rendono inattiva; il complesso viene poi eliminato dal rene. Sono indicati in caso di aritmie gravi, iperkaliemia marcata o ingestione massiva. La deferoxamina è invece l'antidoto del ferro, la protamina dell'eparina. La trappola è pensare che basti correggere il potassio senza neutralizzare il farmaco.",
+  "semplice": "Gli anticorpi antidigossina sono come tante piccole «manette» che afferrano le molecole di digossina e impediscono loro di agire sul cuore.",
+  "passaggi": [
+   "Si cerca l'antidoto specifico della digossina.",
+   "I frammenti Fab di anticorpi antidigossina la legano e la inattivano; il complesso è eliminato dal rene.",
+   "Protamina è per l'eparina, deferoxamina per il ferro, naloxone per gli oppioidi, vitamina K per il warfarin.",
+   "La risposta è la D."
+  ],
+  "concetto": "antidoto della digossina"
+ },
+ {
+  "id": "FAR-126",
+  "materia": "Farmacologia",
+  "argomento": "Tossicologia e sicurezza dei farmaci",
+  "livello": "università",
+  "domanda": "Che cosa indica il NOAEL negli studi di tossicologia preclinica?",
+  "opzioni": {
+   "A": "La dose che uccide il 50% degli animali",
+   "B": "La dose minima efficace nell'uomo",
+   "C": "La dose più alta alla quale non si osservano effetti avversi nella specie studiata",
+   "D": "La concentrazione minima inibente di un antibiotico",
+   "E": "La dose massima prescrivibile in clinica"
+  },
+  "giusta": "C",
+  "perche": "Il NOAEL (No Observed Adverse Effect Level) è il livello di dose più elevato senza effetti avversi rilevabili negli studi su animali. È il punto di partenza per stimare dosi sicure nell'uomo e livelli di esposizione accettabili, applicando fattori di sicurezza che tengono conto delle differenze tra specie e tra individui. La trappola è confonderlo con la DL50, che misura la letalità.",
+  "semplice": "Se nei test una certa dose non provoca alcun danno, mentre una appena più alta sì, quella dose «innocua» più alta è il NOAEL.",
+  "passaggi": [
+   "Leggi la sigla: No Observed Adverse Effect Level.",
+   "Indica la dose più alta alla quale, negli studi sugli animali, non si osservano effetti avversi.",
+   "La dose letale per il 50% è la DL50, la MIC riguarda gli antibiotici.",
+   "La risposta è la C."
+  ],
+  "concetto": "NOAEL"
+ }
+]

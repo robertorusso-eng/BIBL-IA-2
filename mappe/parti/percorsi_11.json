@@ -1,0 +1,1467 @@
+{
+ "risposta immunitaria innata": {
+  "titolo": "Risposta immunitaria innata: la difesa pronta subito",
+  "dove": "Pelle e mucose, tessuto infetto (macrofagi residenti), vasi del tessuto e sangue",
+  "inizio": "agente patogeno",
+  "intro": "L'immunità innata è la prima difesa: parte in minuti o ore ed è presente dalla nascita. Riconosce strutture comuni a molti microbi (PAMP) con recettori ereditati, uguali in tutte le persone. Non lascia memoria, ma frena l'infezione nei primi giorni e prepara la risposta adattativa.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Barriere e difese solubili: nei primi minuti"
+   },
+   {
+    "da": 3,
+    "nome": "Allarme: i macrofagi riconoscono il microbo"
+   },
+   {
+    "da": 5,
+    "nome": "Arrivo dei neutrofili e uccisione del microbo (ore)"
+   },
+   {
+    "da": 8,
+    "nome": "Pulizia e riparazione"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "agente patogeno"
+    ],
+    "a": [
+     "PAMP"
+    ],
+    "enzima": "barriere di pelle e mucose",
+    "entra": [],
+    "esce": [
+     "defensine",
+     "lisozima"
+    ],
+    "nota": "Pelle e mucose fermano quasi tutti i microbi, anche con sostanze antimicrobiche come le defensine e il lisozima. Il microbo che supera la barriera espone nei tessuti molecole tipiche dei microbi e assenti nelle nostre cellule: i PAMP (lipopolisaccaride, peptidoglicano, flagellina, RNA a doppio filamento)."
+   },
+   {
+    "da": [
+     "PAMP"
+    ],
+    "a": [
+     "microbo opsonizzato"
+    ],
+    "enzima": "complemento",
+    "entra": [],
+    "esce": [
+     "C3a e C5a"
+    ],
+    "nota": "In pochi minuti il complemento si attiva sulla superficie del microbo con la via alternativa e la via lectinica, senza bisogno di anticorpi. Il C3b ricopre il microbo (opsonizzazione), C3a e C5a richiamano i fagociti e il complesso di attacco alla membrana (C5b-C9) può bucare alcuni batteri."
+   },
+   {
+    "da": [
+     "microbo opsonizzato"
+    ],
+    "a": [
+     "macrofagi"
+    ],
+    "enzima": "recettori Toll-like (TLR)",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "I macrofagi residenti nel tessuto riconoscono i PAMP con i recettori di riconoscimento (PRR): i TLR sulla membrana e negli endosomi, NOD e RIG-I nel citoplasma. Riconoscono anche i DAMP, molecole liberate dalle nostre cellule danneggiate. È il momento in cui scatta l'allarme."
+   },
+   {
+    "da": [
+     "macrofagi"
+    ],
+    "a": [
+     "citochine"
+    ],
+    "enzima": "NF-κB",
+    "entra": [],
+    "esce": [
+     "TNF-α",
+     "interleuchina-1 (IL-1)",
+     "interleuchina-6 (IL-6)",
+     "chemochine"
+    ],
+    "nota": "Il segnale dei TLR attiva il fattore di trascrizione NF-κB: il macrofago produce citochine infiammatorie e chemochine. Per liberare l'IL-1β matura serve anche l'inflammasoma (caspasi-1)."
+   },
+   {
+    "da": [
+     "citochine"
+    ],
+    "a": [
+     "neutrofili"
+    ],
+    "enzima": "endotelio attivato",
+    "entra": [
+     "chemochine"
+    ],
+    "esce": [],
+    "nota": "TNF-α e IL-1 attivano l'endotelio delle venule vicine. I neutrofili del sangue rotolano (selectine), si fermano (integrine) ed escono dal vaso, guidati dalle chemochine (es. IL-8) e da C5a. Sono le prime cellule ad arrivare, entro poche ore."
+   },
+   {
+    "da": [
+     "neutrofili"
+    ],
+    "a": [
+     "fagolisosoma"
+    ],
+    "enzima": "lisosomi",
+    "entra": [
+     "microbo opsonizzato"
+    ],
+    "esce": [],
+    "nota": "Neutrofili e macrofagi legano il microbo ricoperto di C3b (e di anticorpi, se ci sono) e lo inglobano in un fagosoma (fagocitosi). Il fagosoma si fonde con i lisosomi e diventa fagolisosoma."
+   },
+   {
+    "da": [
+     "fagolisosoma"
+    ],
+    "a": [
+     "eliminazione del patogeno"
+    ],
+    "enzima": "NADPH ossidasi",
+    "entra": [
+     "O₂"
+    ],
+    "esce": [
+     "specie reattive dell'ossigeno (ROS)"
+    ],
+    "nota": "Nel fagolisosoma la NADPH ossidasi trasforma l'O₂ in superossido (burst respiratorio); la mieloperossidasi forma acido ipocloroso. Insieme agli enzimi lisosomiali uccidono e digeriscono il microbo. I neutrofili possono anche lanciare reti di DNA (NET) che intrappolano i batteri."
+   },
+   {
+    "da": [
+     "eliminazione del patogeno"
+    ],
+    "a": [
+     "riparazione del tessuto"
+    ],
+    "enzima": "macrofagi",
+    "entra": [],
+    "esce": [],
+    "nota": "I neutrofili vivono poco e muoiono per apoptosi; i macrofagi li inglobano e cambiano programma: producono IL-10 e TGF-β, spengono l'infiammazione e avviano la riparazione."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Barriere (pelle, mucose, defensine, lisozima) → complemento → macrofagi che riconoscono i PAMP",
+   "Citochine (TNF-α, IL-1, IL-6) e chemochine → arrivano i neutrofili → fagocitosi e uccisione",
+   "Contro i virus: interferoni di tipo I e cellule NK",
+   "È rapida e uguale per tutti i microbi, non ha memoria; tramite le cellule dendritiche avvia l'immunità adattativa"
+  ],
+  "dopo": {
+   "titolo": "Contro i virus e verso l'immunità adattativa",
+   "strade": [
+    {
+     "condizione": "Il microbo è un virus dentro una cellula",
+     "da": "cellula infettata da virus",
+     "a": "stato antivirale",
+     "enzima": "interferoni di tipo I",
+     "entra": [],
+     "esce": [],
+     "nota": "La cellula infettata riconosce l'RNA virale (RIG-I, TLR3, TLR7) e libera interferoni α e β. Le cellule vicine bloccano la sintesi delle proteine e degradano l'RNA (PKR, OAS-RNasi L): il virus si diffonde meno."
+    },
+    {
+     "condizione": "La cellula infettata o tumorale perde l'MHC di classe I",
+     "da": "cellula infettata da virus",
+     "a": "apoptosi",
+     "enzima": "cellule NK",
+     "entra": [],
+     "esce": [
+      "perforina e granzimi"
+     ],
+     "nota": "Le cellule NK uccidono le cellule che hanno perso l'MHC di classe I («missing self») o che mostrano segnali di stress. La perforina apre un poro e i granzimi attivano le caspasi: la cellula muore per apoptosi."
+    },
+    {
+     "condizione": "Ponte verso l'immunità adattativa",
+     "da": "cellule dendritiche",
+     "a": "linfonodo",
+     "enzima": "vasi linfatici",
+     "entra": [
+      "antigene"
+     ],
+     "esce": [],
+     "nota": "Le cellule dendritiche catturano l'antigene nel tessuto, si attivano grazie ai PAMP e migrano con la linfa al linfonodo, dove lo mostrano ai linfociti T.",
+     "prossimo": "risposta immunitaria adattativa"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Le forze dell'immunità innata",
+    "voci": [
+     [
+      "Barriere e sostanze antimicrobiche",
+      [
+       "barriere di pelle e mucose",
+       "defensine",
+       "lisozima"
+      ]
+     ],
+     [
+      "Proteine del sangue",
+      [
+       "complemento",
+       "proteine di fase acuta"
+      ]
+     ],
+     [
+      "Cellule",
+      [
+       "neutrofili",
+       "macrofagi",
+       "cellule dendritiche",
+       "cellule NK",
+       "mastociti"
+      ]
+     ],
+     [
+      "Messaggi",
+      [
+       "citochine",
+       "interferoni di tipo I"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "risposta immunitaria adattativa": {
+  "titolo": "Risposta immunitaria adattativa: specifica e con memoria",
+  "dove": "Tessuto infetto, vasi linfatici, linfonodi e milza (zona T e follicoli B), poi sangue e tessuto infetto",
+  "inizio": "antigene",
+  "intro": "L'immunità adattativa riconosce un antigene preciso con recettori diversi in ogni linfocita. Solo pochissimi linfociti sono adatti per un certo antigene: vengono selezionati e moltiplicati (selezione clonale). Servono 1-2 settimane la prima volta, ma resta la memoria. I linfociti T fanno l'immunità cellulare, i linfociti B quella umorale (anticorpi).",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Riconoscimento dell'antigene nel linfonodo"
+   },
+   {
+    "da": 3,
+    "nome": "Attivazione ed espansione dei linfociti T"
+   },
+   {
+    "da": 6,
+    "nome": "Risposta umorale: linfociti B e anticorpi"
+   },
+   {
+    "da": 9,
+    "nome": "Eliminazione e memoria"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "antigene"
+    ],
+    "a": [
+     "complesso peptide-MHC"
+    ],
+    "enzima": "cellule dendritiche",
+    "entra": [
+     "MHC di classe II",
+     "MHC di classe I"
+    ],
+    "esce": [],
+    "nota": "La cellula dendritica taglia l'antigene in peptidi. Le proteine prese da fuori (endosomi) finiscono sull'MHC di classe II; quelle del citoplasma, tagliate dal proteasoma, sull'MHC di classe I. Le dendritiche possono mettere anche antigeni esterni sull'MHC I (presentazione crociata)."
+   },
+   {
+    "da": [
+     "complesso peptide-MHC"
+    ],
+    "a": [
+     "linfocita T naive"
+    ],
+    "enzima": "recettore dei linfociti T (TCR)",
+    "entra": [],
+    "esce": [],
+    "nota": "La dendritica attivata migra nella zona T del linfonodo, dove passano di continuo i linfociti T naive. Solo circa 1 linfocita su 10⁵-10⁶ ha il TCR giusto: è il primo segnale. Il CD4 lega l'MHC II, il CD8 l'MHC I."
+   },
+   {
+    "da": [
+     "linfocita T naive"
+    ],
+    "a": [
+     "espansione clonale"
+    ],
+    "enzima": "costimolazione B7-CD28",
+    "entra": [],
+    "esce": [
+     "interleuchina-2 (IL-2)"
+    ],
+    "limitante": true,
+    "nota": "Per attivarsi il linfocita T ha bisogno di un secondo segnale: le molecole B7 (CD80/CD86) della dendritica attivata legano il CD28. Senza secondo segnale diventa inattivo (anergia). Il linfocita attivato produce IL-2 e si moltiplica in migliaia di copie identiche."
+   },
+   {
+    "da": [
+     "espansione clonale"
+    ],
+    "a": [
+     "linfocita T helper (CD4⁺)"
+    ],
+    "enzima": "citochine",
+    "entra": [],
+    "esce": [],
+    "nota": "Le citochine presenti decidono il tipo di T helper. Th1 (con IL-12): IFN-γ, attivano i macrofagi contro i microbi intracellulari. Th2 (con IL-4): IL-4, IL-5, IL-13, contro i vermi. Th17 (con IL-6, TGF-β, IL-23): IL-17, richiamano neutrofili contro batteri extracellulari e funghi. Tfh: aiutano i linfociti B."
+   },
+   {
+    "da": [
+     "linfocita T helper (CD4⁺)"
+    ],
+    "a": [
+     "linfocita T citotossico (CD8⁺)"
+    ],
+    "enzima": "MHC di classe I",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [
+     "perforina e granzimi"
+    ],
+    "nota": "I T CD8⁺ si attivano sulla dendritica, aiutati dai T helper (IL-2, CD40L). Diventati citotossici (CTL), escono dal linfonodo, riconoscono le cellule infettate che mostrano il peptide sull'MHC I e le uccidono con perforina e granzimi (e Fas ligando): è l'immunità cellulare."
+   },
+   {
+    "da": [
+     "linfocita T helper (CD4⁺)"
+    ],
+    "a": [
+     "linfocita B"
+    ],
+    "enzima": "linfociti T follicolari helper (Tfh)",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "nota": "Il linfocita B riconosce l'antigene intero con il suo recettore (BCR), lo internalizza e ne mostra i peptidi sull'MHC II. Al confine tra follicolo e zona T un Tfh con lo stesso bersaglio lo aiuta con CD40L e IL-21."
+   },
+   {
+    "da": [
+     "linfocita B"
+    ],
+    "a": [
+     "plasmacellula",
+     "cellule della memoria"
+    ],
+    "enzima": "centro germinativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Nel centro germinativo l'enzima AID introduce mutazioni nei geni dell'anticorpo (ipermutazione somatica): sopravvivono i B con l'anticorpo più preciso (maturazione dell'affinità). Cambiano anche classe (IFN-γ → IgG; IL-4 → IgE; TGF-β → IgA). Escono plasmacellule e B della memoria."
+   },
+   {
+    "da": [
+     "plasmacellula"
+    ],
+    "a": [
+     "anticorpi"
+    ],
+    "enzima": "reticolo endoplasmatico rugoso",
+    "entra": [],
+    "esce": [],
+    "nota": "Le plasmacellule producono migliaia di anticorpi al secondo, tutti uguali. Prima compaiono le IgM, poi IgG, IgA o IgE. Le plasmacellule a lunga vita si stabiliscono nel midollo osseo e producono anticorpi per anni."
+   },
+   {
+    "da": [
+     "anticorpi"
+    ],
+    "a": [
+     "eliminazione del patogeno"
+    ],
+    "enzima": "complemento",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "nota": "Gli anticorpi neutralizzano virus e tossine, ricoprono i microbi per i fagociti (opsonizzazione), attivano il complemento (via classica) e guidano le cellule NK a uccidere le cellule ricoperte (ADCC)."
+   },
+   {
+    "da": [
+     "eliminazione del patogeno"
+    ],
+    "a": [
+     "memoria immunitaria"
+    ],
+    "enzima": "cellule della memoria",
+    "entra": [],
+    "esce": [],
+    "nota": "Eliminato l'antigene, circa il 90-95% dei linfociti espansi muore per apoptosi (contrazione). Restano linfociti T e B della memoria, più numerosi e più pronti dei naive."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Dendritica: antigene → peptide su MHC → linfocita T naive giusto (selezione clonale)",
+   "Due segnali (TCR + B7-CD28) → IL-2 → espansione clonale → T helper e T citotossici",
+   "T follicolari helper → linfocita B → centro germinativo → plasmacellule (anticorpi) e memoria",
+   "Specifica, lenta la prima volta (1-2 settimane), poi memoria: base dei vaccini"
+  ],
+  "dopo": {
+   "titolo": "Quando lo stesso antigene ritorna",
+   "strade": [
+    {
+     "condizione": "Secondo incontro con lo stesso antigene",
+     "da": "memoria immunitaria",
+     "a": "risposta secondaria",
+     "enzima": "cellule della memoria",
+     "entra": [
+      "antigene"
+     ],
+     "esce": [],
+     "nota": "Le cellule della memoria si riattivano in pochi giorni, anche senza un forte secondo segnale: la risposta è più rapida, più forte e fatta di IgG ad alta affinità. È ciò che sfruttano i vaccini.",
+     "prossimo": "vaccinazione"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Le classi di anticorpi (immunoglobuline)",
+    "voci": [
+     [
+      "Prima risposta, pentamero",
+      [
+       "IgM"
+      ]
+     ],
+     [
+      "La più abbondante, passa la placenta",
+      [
+       "IgG"
+      ]
+     ],
+     [
+      "Sulle mucose e nel latte",
+      [
+       "IgA"
+      ]
+     ],
+     [
+      "Allergie e vermi",
+      [
+       "IgE"
+      ]
+     ],
+     [
+      "Sul linfocita B naive",
+      [
+       "IgD"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Quando l'immunità adattativa sbaglia",
+    "voci": [
+     [
+      "Difese troppo deboli",
+      [
+       "immunodeficienze"
+      ]
+     ],
+     [
+      "Attacco contro sé stessi",
+      [
+       "autoimmunità"
+      ]
+     ],
+     [
+      "Reazione esagerata a sostanze innocue",
+      [
+       "ipersensibilità (allergia)"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "infiammazione acuta": {
+  "titolo": "Infiammazione acuta: dal danno alla riparazione",
+  "dove": "Tessuto danneggiato o infetto, soprattutto i piccoli vasi (arteriole, capillari e venule postcapillari)",
+  "inizio": "danno tissutale",
+  "intro": "L'infiammazione acuta è la risposta rapida (minuti-giorni) dei tessuti vascolarizzati a un'infezione o a un danno. Porta sul posto liquido, proteine del sangue e globuli bianchi (soprattutto neutrofili) per eliminare la causa. Ha una fase vascolare e una fase cellulare, poi si spegne da sola (risoluzione). Produce i segni classici: rossore, calore, gonfiore, dolore e perdita della funzione.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Innesco: le sentinelle liberano i mediatori"
+   },
+   {
+    "da": 2,
+    "nome": "Fase vascolare: rossore, calore, gonfiore"
+   },
+   {
+    "da": 4,
+    "nome": "Fase cellulare: arrivano i neutrofili"
+   },
+   {
+    "da": 6,
+    "nome": "Risoluzione e riparazione"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "danno tissutale"
+    ],
+    "a": [
+     "mediatori dell'infiammazione"
+    ],
+    "enzima": "mastociti",
+    "entra": [],
+    "esce": [
+     "istamina",
+     "TNF-α",
+     "interleuchina-1 (IL-1)"
+    ],
+    "nota": "Microbi (PAMP), cellule morte (DAMP), traumi, ustioni o corpi estranei attivano le sentinelle del tessuto. I mastociti liberano subito l'istamina già pronta nei granuli; i macrofagi producono TNF-α e IL-1."
+   },
+   {
+    "da": [
+     "mediatori dell'infiammazione"
+    ],
+    "a": [
+     "vasodilatazione"
+    ],
+    "enzima": "cicloossigenasi (COX)",
+    "entra": [
+     "acido arachidonico"
+    ],
+    "esce": [
+     "prostaglandine"
+    ],
+    "nota": "La fosfolipasi A₂ libera l'acido arachidonico dalle membrane. Le COX lo trasformano in prostaglandine (PGE₂, PGI₂), che con istamina e ossido nitrico dilatano le arteriole: arriva più sangue (rossore e calore). La lipoossigenasi forma invece i leucotrieni."
+   },
+   {
+    "da": [
+     "vasodilatazione"
+    ],
+    "a": [
+     "aumento della permeabilità"
+    ],
+    "enzima": "endotelio attivato",
+    "entra": [
+     "istamina",
+     "bradichinina"
+    ],
+    "esce": [
+     "essudato"
+    ],
+    "nota": "Istamina, bradichinina e leucotrieni fanno contrarre le cellule endoteliali delle venule postcapillari: tra loro si aprono spazi. Esce un liquido ricco di proteine (essudato) che gonfia il tessuto (edema). Bradichinina e PGE₂ stimolano le terminazioni del dolore."
+   },
+   {
+    "da": [
+     "aumento della permeabilità"
+    ],
+    "a": [
+     "neutrofili"
+    ],
+    "enzima": "selectine e integrine",
+    "entra": [
+     "chemochine"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "Perdendo liquido il sangue rallenta e i leucociti si spostano verso la parete (marginazione). Rotolano sulle selectine, si fermano con le integrine (legate a ICAM-1) e passano tra le cellule endoteliali (diapedesi). Le chemochine (IL-8), C5a e il leucotriene B₄ li guidano (chemiotassi). I neutrofili prevalgono nelle prime 6-24 ore, poi arrivano i monociti."
+   },
+   {
+    "da": [
+     "neutrofili"
+    ],
+    "a": [
+     "eliminazione del patogeno"
+    ],
+    "enzima": "NADPH ossidasi",
+    "entra": [
+     "O₂"
+    ],
+    "esce": [
+     "specie reattive dell'ossigeno (ROS)"
+    ],
+    "nota": "I neutrofili inglobano i microbi e i detriti e li distruggono con specie reattive dell'ossigeno ed enzimi lisosomiali. Una parte di queste sostanze esce anche fuori e danneggia il tessuto: neutrofili morti, microbi e liquido formano il pus."
+   },
+   {
+    "da": [
+     "eliminazione del patogeno"
+    ],
+    "a": [
+     "risoluzione dell'infiammazione"
+    ],
+    "enzima": "macrofagi",
+    "entra": [
+     "neutrofili"
+    ],
+    "esce": [
+     "mediatori pro-risolutivi",
+     "IL-10 e TGF-β"
+    ],
+    "nota": "Tolta la causa, i mediatori si degradano in fretta. I macrofagi inglobano i neutrofili morti per apoptosi (efferocitosi) e producono IL-10, TGF-β e mediatori pro-risolutivi (lipossine, resolvine): l'infiammazione si spegne attivamente, non solo per esaurimento."
+   },
+   {
+    "da": [
+     "risoluzione dell'infiammazione"
+    ],
+    "a": [
+     "riparazione del tessuto"
+    ],
+    "enzima": "fibroblasti",
+    "entra": [],
+    "esce": [
+     "tessuto di granulazione"
+    ],
+    "nota": "Se il danno è piccolo e il tessuto sa rigenerarsi, torna come prima. Se no, fibroblasti e nuovi vasi formano il tessuto di granulazione, che diventa una cicatrice ricca di collagene."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Danno → mastociti e macrofagi → mediatori (istamina, prostaglandine, citochine)",
+   "Fase vascolare: vasodilatazione (rossore, calore) e permeabilità (gonfiore, essudato)",
+   "Fase cellulare: neutrofili escono dai vasi (selectine, integrine, chemochine) e uccidono i microbi",
+   "Risoluzione attiva (macrofagi, lipossine, IL-10) → rigenerazione o cicatrice; se la causa resta → infiammazione cronica"
+  ],
+  "dopo": {
+   "titolo": "Effetti in tutto il corpo e possibili esiti",
+   "strade": [
+    {
+     "condizione": "Effetto sul cervello: la febbre",
+     "da": "citochine",
+     "a": "febbre",
+     "enzima": "ipotalamo",
+     "entra": [
+      "interleuchina-1 (IL-1)",
+      "TNF-α"
+     ],
+     "esce": [
+      "prostaglandine"
+     ],
+     "nota": "IL-1, IL-6 e TNF-α fanno produrre PGE₂ nell'ipotalamo: il termostato si alza e il corpo produce e trattiene calore. Per questo i FANS abbassano la febbre."
+    },
+    {
+     "condizione": "Effetto sul fegato: le proteine di fase acuta",
+     "da": "citochine",
+     "a": "proteine di fase acuta",
+     "enzima": "fegato",
+     "entra": [
+      "interleuchina-6 (IL-6)"
+     ],
+     "esce": [
+      "proteina C reattiva (PCR)"
+     ],
+     "nota": "L'IL-6 fa produrre al fegato PCR, fibrinogeno e altre proteine di fase acuta: si misurano nel sangue come segno di infiammazione (PCR, VES)."
+    },
+    {
+     "condizione": "La causa non viene eliminata",
+     "da": "infiammazione",
+     "a": "infiammazione cronica",
+     "enzima": "macrofagi",
+     "entra": [],
+     "esce": [],
+     "nota": "Se lo stimolo persiste (infezioni come la tubercolosi, corpi estranei, autoimmunità) prevalgono macrofagi, linfociti e plasmacellule: danno e riparazione insieme, con fibrosi. A volte si formano granulomi."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "I segni classici dell'infiammazione",
+    "voci": [
+     [
+      "Rossore e calore (rubor, calor)",
+      [
+       "vasodilatazione"
+      ]
+     ],
+     [
+      "Gonfiore (tumor)",
+      [
+       "essudato"
+      ]
+     ],
+     [
+      "Dolore (dolor)",
+      [
+       "prostaglandine",
+       "bradichinina"
+      ]
+     ],
+     [
+      "Perdita della funzione (functio laesa)",
+      [
+       "danno tissutale"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "I farmaci che spengono l'infiammazione",
+    "voci": [
+     [
+      "Bloccano le cicloossigenasi",
+      [
+       "FANS"
+      ]
+     ],
+     [
+      "Bloccano molti geni dell'infiammazione",
+      [
+       "cortisonici"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "replicazione dei virus": {
+  "titolo": "Replicazione dei virus: dall'attacco alla nuova generazione",
+  "dove": "Dentro una cellula ospite (umana, animale, vegetale o batterica): membrana, citoplasma e, per molti virus a DNA, nucleo",
+  "inizio": "virione",
+  "intro": "Un virus è un parassita obbligato: è fatto solo di un genoma (DNA o RNA) dentro un involucro proteico (capside), a volte rivestito da una membrana (envelope). Non ha ribosomi né metabolismo, quindi può moltiplicarsi solo dentro una cellula, usandone le macchine. Il ciclo ha sempre le stesse tappe: attacco, ingresso, sintesi di proteine e genomi, assemblaggio, uscita.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Ingresso nella cellula"
+   },
+   {
+    "da": 3,
+    "nome": "Sintesi: la cellula lavora per il virus (fase di eclissi)"
+   },
+   {
+    "da": 6,
+    "nome": "Assemblaggio e uscita"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "virione"
+    ],
+    "a": [
+     "cellula ospite"
+    ],
+    "enzima": "proteine di attacco virali",
+    "entra": [
+     "recettore cellulare"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "Le proteine della superficie del virus si legano a un recettore preciso della cellula: per questo ogni virus infetta solo certi tessuti (tropismo). Esempi: HIV (gp120) lega CD4 e CCR5 o CXCR4; il virus influenzale (emoagglutinina) l'acido sialico; SARS-CoV-2 (proteina spike) l'ACE2."
+   },
+   {
+    "da": [
+     "cellula ospite"
+    ],
+    "a": [
+     "genoma virale"
+    ],
+    "enzima": "proteine di fusione virali",
+    "entra": [],
+    "esce": [],
+    "nota": "Il virus entra per fusione diretta con la membrana (HIV, con la gp41) oppure per endocitosi: nell'endosoma acido la membrana virale si fonde con quella dell'endosoma (influenza). Il capside si apre e libera il genoma (scapsidazione). I batteriofagi invece iniettano solo il genoma attraverso la parete."
+   },
+   {
+    "da": [
+     "genoma virale"
+    ],
+    "a": [
+     "mRNA virale"
+    ],
+    "enzima": "polimerasi virale",
+    "entra": [],
+    "esce": [],
+    "nota": "Ogni virus deve produrre un mRNA che i ribosomi possano leggere. I virus a RNA positivo usano direttamente il genoma come mRNA. I virus a RNA negativo portano con sé una RNA polimerasi RNA-dipendente. Quasi tutti i virus a DNA entrano nel nucleo e usano la RNA polimerasi II della cellula."
+   },
+   {
+    "da": [
+     "mRNA virale"
+    ],
+    "a": [
+     "proteine virali"
+    ],
+    "enzima": "ribosoma completo (80S)",
+    "entra": [
+     "amminoacidi"
+    ],
+    "esce": [],
+    "nota": "I ribosomi della cellula producono le proteine virali: prima quelle precoci (enzimi per copiare il genoma, proteine che bloccano le difese della cellula), poi quelle tardive (capside, envelope). Alcuni virus fanno una poliproteina che le proteasi virali tagliano (HIV, epatite C, coronavirus)."
+   },
+   {
+    "da": [
+     "proteine virali"
+    ],
+    "a": [
+     "genomi virali replicati"
+    ],
+    "enzima": "polimerasi virale",
+    "entra": [],
+    "esce": [],
+    "nota": "Le polimerasi virali copiano il genoma in centinaia o migliaia di esemplari. Le polimerasi dei virus a RNA non correggono i propri errori: nascono molte varianti, e così il virus sfugge più facilmente a anticorpi e farmaci."
+   },
+   {
+    "da": [
+     "genomi virali replicati"
+    ],
+    "a": [
+     "nuovi virioni"
+    ],
+    "enzima": "proteine del capside",
+    "entra": [],
+    "esce": [],
+    "nota": "Genomi e proteine del capside si assemblano spontaneamente in nuove particelle (nucleocapsidi). In questa fase dentro la cellula non c'è ancora nessun virus infettante completo (fase di eclissi), poi il numero sale rapidamente."
+   },
+   {
+    "da": [
+     "nuovi virioni"
+    ],
+    "a": [
+     "virione"
+    ],
+    "enzima": "membrana plasmatica",
+    "entra": [],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "I virus con envelope escono per gemmazione: si avvolgono in un pezzo di membrana della cellula in cui sono già inserite le proteine virali, spesso senza ucciderla subito (l'influenza usa la neuraminidasi per staccarsi). I virus nudi escono soprattutto con la rottura della cellula (lisi). Ogni cellula libera da decine a migliaia di virioni, che infettano altre cellule."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Attacco (proteina virale + recettore) → ingresso e scapsidazione",
+   "Genoma → mRNA → proteine virali (ribosomi della cellula) → copie del genoma",
+   "Assemblaggio → uscita per gemmazione (virus con envelope) o per lisi (virus nudi)",
+   "Ogni tappa è un possibile bersaglio dei farmaci antivirali"
+  ],
+  "dopo": {
+   "titolo": "Ciclo litico, ciclo lisogeno e retrovirus",
+   "strade": [
+    {
+     "condizione": "Ciclo litico (batteriofago virulento, es. T4)",
+     "da": "genoma virale",
+     "a": "lisi batterica",
+     "enzima": "batteriofago",
+     "entra": [],
+     "esce": [
+      "virione"
+     ],
+     "nota": "Il fago prende subito il controllo del batterio, si moltiplica e lo rompe con i suoi enzimi (endolisina): escono centinaia di nuovi fagi in meno di un'ora."
+    },
+    {
+     "condizione": "Ciclo lisogeno (fago temperato, es. lambda)",
+     "da": "genoma virale",
+     "a": "profago",
+     "enzima": "integrasi",
+     "entra": [],
+     "esce": [],
+     "nota": "Il DNA del fago si inserisce nel cromosoma del batterio e resta silenzioso (un repressore blocca i geni litici). Viene copiato a ogni divisione del batterio. Un danno al DNA (es. raggi UV) può risvegliarlo: allora parte il ciclo litico."
+    },
+    {
+     "condizione": "Retrovirus (es. HIV)",
+     "da": "genoma virale",
+     "a": "provirus",
+     "enzima": "trascrittasi inversa",
+     "entra": [
+      "desossiribonucleotidi (dNTP)"
+     ],
+     "esce": [],
+     "nota": "La trascrittasi inversa copia l'RNA virale in DNA a doppio filamento; l'integrasi lo inserisce nel DNA della cellula (provirus). Da qui la RNA polimerasi II produce mRNA e genomi nuovi; nelle cellule a riposo il provirus resta nascosto per anni (serbatoio latente)."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Farmaci antivirali e la tappa che bloccano",
+    "voci": [
+     [
+      "Trascrittasi inversa, integrasi, proteasi (HIV)",
+      [
+       "HIV e antiretrovirali"
+      ]
+     ],
+     [
+      "Polimerasi del DNA (herpes)",
+      [
+       "aciclovir"
+      ]
+     ],
+     [
+      "Uscita del virus (influenza)",
+      [
+       "oseltamivir"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "crescita batterica": {
+  "titolo": "Crescita batterica: dalla scissione binaria alla curva di crescita",
+  "dove": "Nel batterio (citoplasma, membrana e parete) e, per la curva, in una coltura chiusa in laboratorio (terreno liquido)",
+  "inizio": "cellula batterica",
+  "intro": "I batteri si moltiplicano per scissione binaria: una cellula copia il suo cromosoma, si allunga e si divide in due cellule identiche. In condizioni ideali alcune specie si dividono ogni 20 minuti, quindi il numero raddoppia a ogni generazione (1, 2, 4, 8…). In una coltura chiusa la crescita segue una curva con quattro fasi: latenza, esponenziale, stazionaria e morte.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Scissione binaria: una cellula diventa due"
+   },
+   {
+    "da": 5,
+    "nome": "La curva di crescita di una coltura chiusa"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "cellula batterica"
+    ],
+    "a": [
+     "cromosoma batterico duplicato"
+    ],
+    "enzima": "DNA polimerasi III",
+    "entra": [
+     "desossiribonucleotidi (dNTP)"
+    ],
+    "esce": [],
+    "nota": "Il batterio ha di solito un solo cromosoma circolare. La copia parte da un unico punto (origine, oriC) e procede nelle due direzioni. La DNA girasi scioglie le tensioni del DNA (bersaglio dei chinoloni)."
+   },
+   {
+    "da": [
+     "cromosoma batterico duplicato"
+    ],
+    "a": [
+     "cellula allungata"
+    ],
+    "enzima": "proteine leganti la penicillina (PBP)",
+    "entra": [
+     "peptidoglicano"
+    ],
+    "esce": [],
+    "nota": "La cellula raddoppia le sue componenti e si allunga; le due copie del cromosoma si separano verso le due metà. Le PBP inseriscono nuovo peptidoglicano nella parete e legano tra loro le catene: è il bersaglio dei beta-lattamici."
+   },
+   {
+    "da": [
+     "cellula allungata"
+    ],
+    "a": [
+     "setto di divisione"
+    ],
+    "enzima": "FtsZ",
+    "entra": [
+     "GTP"
+    ],
+    "esce": [],
+    "nota": "La proteina FtsZ, parente della tubulina, forma un anello al centro della cellula (anello Z). Richiama le altre proteine della divisione (divisoma), che costruiscono una parete trasversale: il setto."
+   },
+   {
+    "da": [
+     "setto di divisione"
+    ],
+    "a": [
+     "due batteri figli"
+    ],
+    "enzima": "autolisine",
+    "entra": [],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "Enzimi che tagliano il peptidoglicano (autolisine) separano le due cellule. Il tempo tra due divisioni è il tempo di generazione: circa 20 minuti per Escherichia coli in condizioni ottimali, circa 15-20 ore per Mycobacterium tuberculosis."
+   },
+   {
+    "da": [
+     "due batteri figli"
+    ],
+    "a": [
+     "fase di latenza (lag)"
+    ],
+    "enzima": "terreno di coltura",
+    "entra": [
+     "nutrienti"
+    ],
+    "esce": [],
+    "nota": "Ogni cellula figlia ripete la scissione: dopo n generazioni N = N₀ · 2ⁿ. Se si seminano batteri in un terreno fresco, all'inizio il numero non cresce: le cellule si adattano e producono enzimi, ribosomi e ATP (fase di latenza o lag)."
+   },
+   {
+    "da": [
+     "fase di latenza (lag)"
+    ],
+    "a": [
+     "fase esponenziale (log)"
+    ],
+    "enzima": "ribosoma batterico (70S)",
+    "entra": [
+     "nutrienti"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "I batteri si dividono al ritmo massimo e costante: il logaritmo del numero di cellule sale in linea retta. In questa fase le cellule sono più sensibili agli antibiotici che colpiscono la parete o la sintesi delle proteine."
+   },
+   {
+    "da": [
+     "fase esponenziale (log)"
+    ],
+    "a": [
+     "fase stazionaria"
+    ],
+    "enzima": "quorum sensing",
+    "entra": [],
+    "esce": [
+     "endospore"
+    ],
+    "nota": "I nutrienti finiscono e si accumulano prodotti tossici: le cellule che nascono sono pari a quelle che muoiono e il numero resta costante. I batteri «contano» la loro densità con piccoli segnali (quorum sensing) e cambiano geni: producono tossine, biofilm e, in Bacillus e Clostridium, endospore."
+   },
+   {
+    "da": [
+     "fase stazionaria"
+    ],
+    "a": [
+     "fase di morte (declino)"
+    ],
+    "enzima": "autolisine",
+    "entra": [],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "Senza nutrienti le cellule muoiono più velocemente di quanto nascano e il numero di cellule vive cala, spesso in modo esponenziale. Alcune cellule dormienti («persistenti») sopravvivono a lungo e tollerano gli antibiotici."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Scissione binaria: copia del cromosoma → allungamento (PBP) → anello FtsZ e setto → due cellule identiche",
+   "Crescita esponenziale: N = N₀ · 2ⁿ; tempo di generazione da 20 minuti a molte ore",
+   "Curva in una coltura chiusa: latenza → esponenziale → stazionaria → morte",
+   "Molti antibiotici colpiscono proprio le macchine della divisione: parete, DNA, ribosomi"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "I bersagli degli antibiotici nella cellula che si divide",
+    "voci": [
+     [
+      "Parete (peptidoglicano)",
+      [
+       "proteine leganti la penicillina (PBP)"
+      ]
+     ],
+     [
+      "DNA",
+      [
+       "DNA girasi"
+      ]
+     ],
+     [
+      "Proteine",
+      [
+       "ribosoma batterico (70S)"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "resistenza agli antibiotici": {
+  "titolo": "Resistenza agli antibiotici: come nasce e come si diffonde",
+  "dove": "Nel batterio (DNA, plasmidi, parete, membrana) e tra i batteri di persone, ospedali, animali e ambiente",
+  "inizio": "antibiotico",
+  "intro": "Un antibiotico colpisce una struttura del batterio che le nostre cellule non hanno o hanno diversa. Ma in una grande popolazione di batteri compaiono per caso alcune cellule resistenti, e i geni di resistenza possono passare da un batterio all'altro. L'antibiotico uccide i sensibili e lascia spazio ai resistenti: è la selezione naturale in tempo reale. Più antibiotici si usano, e male, più la resistenza si diffonde.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Come agisce l'antibiotico"
+   },
+   {
+    "da": 2,
+    "nome": "Come nasce un batterio resistente"
+   },
+   {
+    "da": 5,
+    "nome": "Selezione e diffusione"
+   },
+   {
+    "da": 8,
+    "nome": "Come si combatte"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "antibiotico"
+    ],
+    "a": [
+     "bersaglio batterico"
+    ],
+    "enzima": "porine",
+    "entra": [],
+    "esce": [],
+    "nota": "L'antibiotico deve raggiungere il suo bersaglio: la parete (beta-lattamici, vancomicina), il ribosoma 70S (aminoglicosidi, macrolidi, tetracicline), il DNA (chinoloni) o la sintesi dell'acido folico (sulfamidici, trimetoprim). Nei Gram-negativi molti antibiotici entrano attraverso i canali della membrana esterna (porine)."
+   },
+   {
+    "da": [
+     "bersaglio batterico"
+    ],
+    "a": [
+     "geni di resistenza"
+    ],
+    "enzima": "mutazione spontanea",
+    "entra": [],
+    "esce": [],
+    "nota": "Copiando il DNA il batterio fa per caso qualche errore. Raramente una mutazione cambia il bersaglio quel tanto che basta (es. gene gyrA per i chinoloni, rpoB per la rifampicina). La mutazione non è causata dall'antibiotico: c'era già prima."
+   },
+   {
+    "da": [
+     "geni di resistenza"
+    ],
+    "a": [
+     "plasmidi di resistenza"
+    ],
+    "enzima": "trasposoni e integroni",
+    "entra": [],
+    "esce": [],
+    "nota": "Molti geni di resistenza stanno su pezzi di DNA mobili (trasposoni, integroni) che saltano tra il cromosoma e i plasmidi. Così su un solo plasmide si raccolgono geni contro più classi di antibiotici."
+   },
+   {
+    "da": [
+     "plasmidi di resistenza"
+    ],
+    "a": [
+     "batterio resistente"
+    ],
+    "enzima": "coniugazione",
+    "entra": [],
+    "esce": [],
+    "nota": "Il plasmide passa a un altro batterio, anche di specie diversa, attraverso un ponte (pilo sessuale): è la coniugazione. I geni possono passare anche con un batteriofago (trasduzione) o come DNA libero assorbito dall'ambiente (trasformazione). È il trasferimento genico orizzontale."
+   },
+   {
+    "da": [
+     "batterio resistente"
+    ],
+    "a": [
+     "selezione dei resistenti"
+    ],
+    "enzima": "antibiotico",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "L'antibiotico uccide i batteri sensibili, anche quelli buoni della nostra flora. I resistenti sopravvivono e si moltiplicano senza concorrenti. Dosi troppo basse, terapie inutili (es. antibiotici per un raffreddore virale) e l'uso negli allevamenti aumentano questa selezione."
+   },
+   {
+    "da": [
+     "selezione dei resistenti"
+    ],
+    "a": [
+     "batteri multiresistenti"
+    ],
+    "enzima": "plasmidi di resistenza",
+    "entra": [],
+    "esce": [],
+    "nota": "Poiché un plasmide porta spesso più geni insieme, usare un antibiotico seleziona anche la resistenza ad altri (co-selezione). Nascono batteri resistenti a tre o più classi di antibiotici (multiresistenti)."
+   },
+   {
+    "da": [
+     "batteri multiresistenti"
+    ],
+    "a": [
+     "diffusione della resistenza"
+    ],
+    "enzima": "trasmissione crociata",
+    "entra": [],
+    "esce": [],
+    "nota": "I batteri resistenti passano da un paziente all'altro con le mani, le superfici e i dispositivi, soprattutto in ospedale e nelle residenze per anziani. Viaggiano anche con le persone, gli alimenti e l'ambiente."
+   },
+   {
+    "da": [
+     "diffusione della resistenza"
+    ],
+    "a": [
+     "controllo della resistenza"
+    ],
+    "enzima": "antibiogramma",
+    "entra": [],
+    "esce": [],
+    "nota": "L'antibiogramma dice quali antibiotici funzionano sul batterio isolato, così si sceglie quello giusto. Servono poi l'uso prudente degli antibiotici (stewardship), l'igiene delle mani, l'isolamento dei portatori e i vaccini, che riducono le infezioni e quindi il bisogno di antibiotici."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Nasce per caso (mutazioni) o si acquista da altri batteri (plasmidi, coniugazione, trasduzione, trasformazione)",
+   "Quattro difese: distruggere l'antibiotico, cambiare il bersaglio, pompare fuori l'antibiotico, chiudere le porine",
+   "L'uso degli antibiotici seleziona i resistenti; ospedali e mani li diffondono",
+   "Si combatte con antibiogramma, uso prudente, igiene delle mani, isolamento e vaccini"
+  ],
+  "dopo": {
+   "titolo": "Le quattro difese del batterio resistente",
+   "strade": [
+    {
+     "condizione": "Distruggere l'antibiotico",
+     "da": "antibiotico",
+     "a": "batterio resistente",
+     "enzima": "beta-lattamasi",
+     "entra": [],
+     "esce": [],
+     "nota": "Enzimi che rompono l'antibiotico prima che agisca: le beta-lattamasi aprono l'anello beta-lattamico; altri enzimi modificano gli aminoglicosidi."
+    },
+    {
+     "condizione": "Cambiare il bersaglio",
+     "da": "proteine leganti la penicillina (PBP)",
+     "a": "batterio resistente",
+     "enzima": "PBP2a",
+     "entra": [],
+     "esce": [],
+     "nota": "Il bersaglio cambia e l'antibiotico non si lega più: la PBP2a dell'MRSA non lega i beta-lattamici; gli enterococchi resistenti alla vancomicina cambiano la fine del peptidoglicano; la metilazione del ribosoma blocca i macrolidi."
+    },
+    {
+     "condizione": "Buttare fuori l'antibiotico",
+     "da": "antibiotico",
+     "a": "batterio resistente",
+     "enzima": "pompe di efflusso",
+     "entra": [],
+     "esce": [],
+     "nota": "Pompe della membrana espellono l'antibiotico prima che si accumuli: tipiche contro tetracicline, macrolidi e chinoloni."
+    },
+    {
+     "condizione": "Chiudere le porte",
+     "da": "antibiotico",
+     "a": "batterio resistente",
+     "enzima": "porine",
+     "entra": [],
+     "esce": [],
+     "nota": "Un Gram-negativo che perde o modifica una porina fa entrare meno antibiotico: per esempio Pseudomonas aeruginosa che perde la porina OprD diventa resistente all'imipenem."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Le principali classi di antibiotici e il loro bersaglio",
+    "voci": [
+     [
+      "Parete batterica",
+      [
+       "beta-lattamici",
+       "vancomicina"
+      ]
+     ],
+     [
+      "Ribosoma 70S",
+      [
+       "aminoglicosidi",
+       "macrolidi",
+       "tetracicline"
+      ]
+     ],
+     [
+      "DNA",
+      [
+       "fluorochinoloni"
+      ]
+     ],
+     [
+      "Sintesi dell'acido folico",
+      [
+       "sulfamidici e trimetoprim"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "I batteri resistenti da conoscere",
+    "voci": [
+     [
+      "Gram-positivi",
+      [
+       "MRSA",
+       "enterococchi resistenti alla vancomicina (VRE)"
+      ]
+     ],
+     [
+      "Gram-negativi",
+      [
+       "enterobatteri produttori di ESBL",
+       "enterobatteri resistenti ai carbapenemi (CRE)"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "vaccinazione": {
+  "titolo": "Vaccinazione: insegnare al corpo senza ammalarsi",
+  "dove": "Sede dell'iniezione (di solito il muscolo deltoide), linfonodo vicino, poi sangue e tutto il corpo; nella popolazione, la comunità",
+  "inizio": "vaccino",
+  "intro": "Il vaccino mostra al sistema immunitario un antigene del microbo (o il microbo indebolito) senza causare la malattia. Parte una risposta primaria come in una vera infezione, che lascia cellule della memoria. Quando arriva il vero microbo, la risposta secondaria è così rapida che la malattia non si sviluppa o resta lieve. Se si vaccinano abbastanza persone, il microbo smette di circolare.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Il vaccino porta l'antigene al linfonodo"
+   },
+   {
+    "da": 3,
+    "nome": "Risposta primaria: 1-2 settimane"
+   },
+   {
+    "da": 7,
+    "nome": "Memoria, richiami e protezione della comunità"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "vaccino"
+    ],
+    "a": [
+     "antigene"
+    ],
+    "enzima": "adiuvante",
+    "entra": [],
+    "esce": [],
+    "nota": "Il vaccino contiene l'antigene (microbo attenuato o ucciso, una sua proteina, una tossina inattivata) oppure le istruzioni per produrlo (vaccini a mRNA o a vettore virale). Gli antigeni purificati da soli attivano poco le difese: l'adiuvante (es. sali di alluminio) accende l'immunità innata nel punto dell'iniezione."
+   },
+   {
+    "da": [
+     "antigene"
+    ],
+    "a": [
+     "linfonodo"
+    ],
+    "enzima": "cellule dendritiche",
+    "entra": [],
+    "esce": [],
+    "nota": "Le cellule dendritiche catturano l'antigene nel muscolo, si attivano e lo portano al linfonodo più vicino (per questo a volte i linfonodi dell'ascella si gonfiano dopo il vaccino)."
+   },
+   {
+    "da": [
+     "linfonodo"
+    ],
+    "a": [
+     "linfocita T helper (CD4⁺)"
+    ],
+    "enzima": "MHC di classe II",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "nota": "Come in un'infezione vera, la dendritica mostra i peptidi del vaccino sull'MHC II e attiva i rari linfociti T helper specifici. I vaccini vivi e quelli a mRNA fanno produrre l'antigene dentro le cellule e attivano anche i T citotossici (via MHC I)."
+   },
+   {
+    "da": [
+     "linfocita T helper (CD4⁺)"
+    ],
+    "a": [
+     "linfocita B"
+    ],
+    "enzima": "linfociti T follicolari helper (Tfh)",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "I T follicolari helper aiutano i linfociti B che hanno legato lo stesso antigene. Gli zuccheri della capsula batterica da soli non attivano i T helper: nei vaccini coniugati vengono legati a una proteina, così anche i lattanti producono una buona risposta con memoria."
+   },
+   {
+    "da": [
+     "linfocita B"
+    ],
+    "a": [
+     "plasmacellula",
+     "cellule della memoria"
+    ],
+    "enzima": "centro germinativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Nel centro germinativo i linfociti B migliorano l'anticorpo (maturazione dell'affinità) e cambiano classe verso le IgG. Escono plasmacellule e linfociti B della memoria."
+   },
+   {
+    "da": [
+     "plasmacellula"
+    ],
+    "a": [
+     "risposta primaria"
+    ],
+    "enzima": "anticorpi",
+    "entra": [],
+    "esce": [
+     "IgM",
+     "IgG"
+    ],
+    "nota": "Dopo la prima dose gli anticorpi compaiono in circa 1-2 settimane: prima IgM, poi IgG, a livelli ancora bassi. Per questo la protezione non è immediata."
+   },
+   {
+    "da": [
+     "risposta primaria"
+    ],
+    "a": [
+     "memoria immunitaria"
+    ],
+    "enzima": "cellule della memoria",
+    "entra": [],
+    "esce": [],
+    "nota": "Finita la risposta restano linfociti B e T della memoria e plasmacellule a lunga vita nel midollo osseo, che mantengono un livello di anticorpi anche per anni."
+   },
+   {
+    "da": [
+     "memoria immunitaria"
+    ],
+    "a": [
+     "risposta secondaria"
+    ],
+    "enzima": "richiamo vaccinale",
+    "entra": [
+     "antigene"
+    ],
+    "esce": [],
+    "nota": "Una seconda dose (o il vero microbo) riattiva le cellule della memoria: in pochi giorni si producono molte più IgG, con affinità più alta. I richiami servono a rinforzare e allungare la protezione (es. tetano ogni 10 anni)."
+   },
+   {
+    "da": [
+     "risposta secondaria"
+    ],
+    "a": [
+     "immunità di gregge"
+    ],
+    "enzima": "copertura vaccinale",
+    "entra": [],
+    "esce": [],
+    "nota": "Se una quota abbastanza alta della popolazione è immune, il microbo non trova più persone da infettare e smette di circolare. Così sono protetti anche neonati, persone immunodepresse e chi non può vaccinarsi. La quota necessaria dipende dalla contagiosità (es. circa 95% per il morbillo)."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Vaccino (+ adiuvante) → cellule dendritiche → linfonodo → T helper → linfociti B",
+   "Risposta primaria in 1-2 settimane (IgM poi IgG) → cellule della memoria",
+   "Richiamo o vero microbo → risposta secondaria rapida e forte: niente malattia",
+   "Alta copertura vaccinale → immunità di gregge, che protegge anche chi non può vaccinarsi"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "I tipi di vaccino",
+    "voci": [
+     [
+      "Microbo vivo ma indebolito",
+      [
+       "vaccini vivi attenuati"
+      ]
+     ],
+     [
+      "Microbo ucciso",
+      [
+       "vaccini inattivati"
+      ]
+     ],
+     [
+      "Solo un pezzo del microbo",
+      [
+       "vaccini a subunità e coniugati",
+       "anatossine (tossoidi)"
+      ]
+     ],
+     [
+      "Istruzioni genetiche per l'antigene",
+      [
+       "vaccini a mRNA"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Immunità attiva e passiva",
+    "voci": [
+     [
+      "Attiva: il corpo produce i suoi anticorpi e la memoria",
+      [
+       "vaccino"
+      ]
+     ],
+     [
+      "Passiva: si ricevono anticorpi già pronti, senza memoria",
+      [
+       "immunizzazione passiva"
+      ]
+     ]
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,298 @@
+{
+"Metabolismo energetico e ATP": {
+"superiore": {
+"spiegazione": [
+"Il metabolismo è l'insieme delle reazioni chimiche di una cellula. Si divide in catabolismo, che demolisce molecole complesse (glucosio, acidi grassi, amminoacidi) in molecole semplici liberando energia, e anabolismo, che costruisce molecole complesse a partire da quelle semplici consumando energia. Le reazioni sono organizzate in vie metaboliche: sequenze di passaggi, ciascuno catalizzato da un enzima specifico, in cui il prodotto di una reazione diventa il substrato della successiva. Le vie cataboliche convergono verso pochi intermedi comuni (soprattutto l'acetil-CoA), quelle anaboliche divergono verso migliaia di prodotti diversi.",
+"Per capire se una reazione avviene spontaneamente si usa la variazione di energia libera ΔG: se ΔG < 0 la reazione è esoergonica e spontanea, se ΔG > 0 è endoergonica e richiede energia. Le cellule rendono possibili le reazioni endoergoniche accoppiandole a reazioni fortemente esoergoniche, in modo che la somma dei ΔG sia negativa. Il «mediatore» di questo accoppiamento è quasi sempre l'ATP.",
+"L'ATP (adenosina trifosfato) è formato da adenina, ribosio e tre gruppi fosfato. I legami tra i fosfati sono legami anidridici fosforici: la loro idrolisi libera molta energia, ΔG°' = −30,5 kJ/mol per ATP + H₂O → ADP + Pᵢ (e nella cellula, in condizioni reali, circa −50 kJ/mol). L'energia viene liberata perché i prodotti sono più stabili: si riduce la repulsione tra le cariche negative vicine, il fosfato libero è stabilizzato per risonanza e i prodotti sono meglio solvatati dall'acqua. Non si tratta quindi di un «legame ricco di energia» in sé, ma di una reazione con ΔG molto negativo.",
+"L'ATP non è una riserva di energia ma una moneta di scambio: un essere umano ne contiene solo circa 100 g, ma ogni giorno ne idrolizza e rigenera una quantità pari quasi al proprio peso corporeo. L'ATP si rigenera in due modi: con la fosforilazione a livello del substrato, in cui un fosfato passa direttamente da una molecola ad alto potenziale (come il fosfoenolpiruvato) all'ADP, e con la fosforilazione ossidativa nei mitocondri, che produce la grande maggioranza dell'ATP. Nel muscolo la fosfocreatina fa da piccola riserva rapida: cede il suo fosfato all'ADP nei primi secondi di uno sforzo intenso.",
+"Il secondo «carburante» della cellula sono gli elettroni ad alta energia. Nel catabolismo le molecole vengono ossidate e cedono elettroni (sotto forma di idruri o di atomi di idrogeno) a coenzimi trasportatori: il NAD⁺ diventa NADH e il FAD diventa FADH₂. Questi coenzimi ridotti portano gli elettroni alla catena respiratoria, dove la loro energia serve a produrre ATP. Il NADP⁺/NADPH invece fornisce elettroni per le sintesi (anabolismo riduttivo, come la sintesi degli acidi grassi). In sintesi: catabolismo = ossidazione che produce ATP e NADH; anabolismo = riduzione che consuma ATP e NADPH."
+],
+"metodo": [
+"Disegna l'ATP e indica i legami anidridici e i legami estere, segnando quale si rompe nell'idrolisi.",
+"Fai uno schema a due colonne catabolismo/anabolismo con esempi, direzione (demolizione/costruzione), energia, coenzimi usati.",
+"Esercitati con l'accoppiamento: somma i ΔG di reazioni come glucosio + Pᵢ → glucosio-6-fosfato (+13,8 kJ/mol) e idrolisi dell'ATP (−30,5).",
+"Impara a riconoscere ossidazioni e riduzioni nelle vie metaboliche cercando chi perde e chi acquista idrogeni.",
+"Prepara una mappa generale del metabolismo con al centro l'acetil-CoA e intorno le vie principali: la userai in tutti i capitoli successivi.",
+"Collega la fosfocreatina e la fosforilazione a livello del substrato agli sforzi brevi nello sport."
+],
+"ricorda": [
+"ATP = moneta, non salvadanaio: si spende e si ricarica continuamente.",
+"ΔG < 0 va da sé; ΔG > 0 va «spinto» dall'ATP.",
+"NADH per bruciare e fare ATP, NADPH per costruire.",
+"OIL RIG all'italiana: «Ossidarsi è Perdere elettroni, Ridursi è Guadagnarne»."
+],
+"errori": [
+"Dire che l'energia è «contenuta nel legame fosfato» che si rompe: rompere un legame richiede sempre energia; l'energia liberata deriva dalla maggiore stabilità dei prodotti.",
+"Pensare che l'ATP sia la riserva energetica dell'organismo: le riserve sono glicogeno e trigliceridi; l'ATP è poco e si ricicla in continuazione.",
+"Confondere NADH e NADPH: hanno quasi la stessa struttura, ma il NADH serve per produrre ATP, il NADPH per le sintesi riduttive.",
+"Credere che una reazione con ΔG negativo sia necessariamente veloce: il ΔG dice se è spontanea, la velocità dipende dall'energia di attivazione e dagli enzimi."
+],
+"domande": [
+{"domanda": "Quanto vale il ΔG°' dell'idrolisi dell'ATP ad ADP e fosfato?", "risposta": "Circa −30,5 kJ/mol (circa −7,3 kcal/mol); nelle condizioni cellulari è circa −50 kJ/mol."},
+{"domanda": "Che cosa significa accoppiare due reazioni?", "risposta": "Far avvenire una reazione endoergonica insieme a una esoergonica, con un intermedio comune, in modo che il ΔG totale sia negativo."},
+{"domanda": "Quali sono i due modi principali per produrre ATP?", "risposta": "La fosforilazione a livello del substrato e la fosforilazione ossidativa nei mitocondri."},
+{"domanda": "Che differenza c'è tra catabolismo e anabolismo?", "risposta": "Il catabolismo demolisce molecole liberando energia (ossidativo), l'anabolismo costruisce molecole consumando energia (riduttivo)."},
+{"domanda": "Che ruolo hanno NAD⁺ e FAD nel catabolismo?", "risposta": "Accettano elettroni dalle ossidazioni diventando NADH e FADH₂, che li portano alla catena respiratoria."}
+]
+},
+"universita": {
+"spiegazione": [
+"La termodinamica biochimica usa lo stato standard biochimico (ΔG°'): concentrazioni 1 M, pH 7, [Mg²⁺] specificata. Il ΔG effettivo dipende dalle concentrazioni: ΔG = ΔG°' + RT ln Q, con RT ≈ 2,58 kJ/mol a 37 °C; all'equilibrio ΔG = 0 e ΔG°' = −RT ln K'eq. Un ΔG°' di −5,7 kJ/mol corrisponde a K'eq ≈ 10 a 25 °C. Nelle vie metaboliche si distinguono reazioni vicine all'equilibrio (ΔG ≈ 0, reversibili, controllate dalle concentrazioni) e reazioni lontane dall'equilibrio (ΔG fortemente negativo, irreversibili), che sono i punti di regolazione e richiedono enzimi distinti per la via inversa. Esempio: nella cellula, con [ATP] = 3 mM, [ADP] = 1 mM e [Pᵢ] = 5 mM, ΔG dell'idrolisi dell'ATP = −30,5 + 2,58·ln(10⁻³·5·10⁻³/3·10⁻³) ≈ −30,5 + 2,58·(−6,4) ≈ −47 kJ/mol.",
+"Il potenziale di trasferimento del gruppo fosforico (−ΔG°' di idrolisi) ordina i composti fosforilati: fosfoenolpiruvato (−61,9 kJ/mol), 1,3-bisfosfoglicerato (−49,3), fosfocreatina (−43,0), ATP → ADP (−30,5), glucosio-1-fosfato (−20,9), glucosio-6-fosfato (−13,8), glicerolo-3-fosfato (−9,2). L'ATP sta a metà della scala: può ricevere fosfati dai composti sopra e cederli a quelli sotto, e questa posizione intermedia è la chiave del suo ruolo di trasportatore. Il PEP ha un potenziale altissimo perché dopo l'idrolisi l'enolpiruvato tautomerizza a piruvato, reazione molto favorita; l'1,3-BPG è un'anidride mista acil-fosfato. Anche i tioesteri (acetil-CoA, −31,4 kJ/mol) sono composti ad alta energia.",
+"L'accoppiamento non è una semplice somma «astratta» di reazioni: richiede un intermedio comune. Nella reazione della glutammina sintetasi, l'ATP fosforila il glutammato formando γ-glutamil fosfato, che reagisce poi con NH₃. In molte sintesi l'ATP viene idrolizzato ad AMP + PPᵢ, e il pirofosfato viene subito idrolizzato dalla pirofosfatasi inorganica (ΔG°' ≈ −19 kJ/mol): il processo complessivo è reso così fortemente irreversibile, come nell'attivazione degli acidi grassi e nella sintesi degli acidi nucleici. La carica energetica di Atkinson, ([ATP] + ½[ADP])/([ATP] + [ADP] + [AMP]), è mantenuta tra 0,8 e 0,95; l'adenilato chinasi (2 ADP ⇌ ATP + AMP) amplifica il segnale di stress energetico, perché piccoli cali di ATP si traducono in aumenti relativi grandi di AMP, segnale che attiva la chinasi AMPK.",
+"Le ossidoriduzioni biologiche si descrivono con i potenziali standard di riduzione E°'. ΔG°' = −nFΔE°', con F = 96,5 kJ/(mol·V). Il NAD⁺/NADH ha E°' = −0,32 V, il FAD/FADH₂ legato a proteine circa 0 V (variabile), l'O₂/H₂O +0,82 V. Il trasferimento di due elettroni dal NADH all'O₂ (ΔE°' = 1,14 V) libera −2·96,5·1,14 ≈ −220 kJ/mol, energia sufficiente in teoria per diverse molecole di ATP. Il NAD⁺ trasferisce un idruro (H⁻, due elettroni e un protone) dalla posizione 4 dell'anello di nicotinammide; le flavine possono trasferire uno o due elettroni, collegando i donatori a due elettroni con trasportatori a un elettrone come i centri Fe-S e i citocromi.",
+"La cellula mantiene due «pool» di nucleotidi piridinici con stati redox molto diversi: il rapporto [NAD⁺]/[NADH] citosolico è alto (circa 700 nel fegato), favorevole alle ossidazioni cataboliche, mentre [NADPH]/[NADP⁺] è alto (circa 70), favorevole alle riduzioni biosintetiche. Le vie cataboliche e anaboliche corrispondenti sono separate per compartimento (β-ossidazione nel mitocondrio, sintesi degli acidi grassi nel citosol), per enzimi (reazioni irreversibili diverse nelle due direzioni) e per regolazione reciproca. Questa organizzazione evita i «cicli futili», nei quali due vie opposte attive contemporaneamente consumerebbero ATP senza effetto netto, tranne quando servono a generare calore o sensibilità di regolazione."
+],
+"metodo": [
+"Esercitati a calcolare ΔG reali da ΔG°' e concentrazioni, e K'eq da ΔG°'.",
+"Disegna la scala del potenziale di trasferimento del fosfato e indica con frecce i trasferimenti possibili.",
+"Calcola ΔG°' da ΔE°' per coppie redox (NADH/O₂, FADH₂/O₂, succinato/fumarato).",
+"Per ogni via metabolica che studierai, individua le tre o quattro reazioni lontane dall'equilibrio: sono i punti di controllo.",
+"Scrivi esempi di accoppiamento con intermedio comune (glutammina sintetasi, attivazione degli acidi grassi).",
+"Collega carica energetica, adenilato chinasi e AMPK in uno schema di regolazione."
+],
+"ricorda": [
+"ΔG = ΔG°' + RT ln Q: le concentrazioni contano quanto lo standard.",
+"ATP a metà scala: riceve dal PEP e dall'1,3-BPG, cede agli zuccheri.",
+"ΔG°' = −nFΔE°': grande salto di potenziale, molta energia.",
+"NAD⁺ ossidato per il catabolismo, NADPH ridotto per l'anabolismo."
+],
+"errori": [
+"Usare ΔG°' per dire se una reazione avviene nella cellula: conta il ΔG reale; reazioni con ΔG°' positivo (aldolasi) procedono se i prodotti vengono consumati.",
+"Dimenticare che n è il numero di elettroni nel calcolo di ΔG da ΔE°': con n = 2 il valore raddoppia rispetto a un solo elettrone.",
+"Considerare l'idrolisi di ATP ad AMP + PPᵢ equivalente a quella ad ADP: consuma due «legami ad alta energia» se il PPᵢ viene idrolizzato.",
+"Pensare che le vie anaboliche siano le cataboliche al contrario: condividono reazioni reversibili ma usano enzimi diversi nei passaggi irreversibili."
+],
+"domande": [
+{"domanda": "Calcola K'eq a 25 °C per una reazione con ΔG°' = −11,4 kJ/mol.", "risposta": "ln K = 11400/(8,314·298) ≈ 4,6, quindi K'eq ≈ 100."},
+{"domanda": "Quanto vale ΔG°' per il trasferimento di 2 elettroni da NADH (−0,32 V) a O₂ (+0,82 V)?", "risposta": "ΔG°' = −2·96,5·1,14 ≈ −220 kJ/mol."},
+{"domanda": "Perché il fosfoenolpiruvato ha un potenziale di trasferimento del fosfato così alto?", "risposta": "Perché il prodotto, l'enolpiruvato, tautomerizza subito al piruvato chetonico, reazione molto esoergonica che si somma all'idrolisi."},
+{"domanda": "A che cosa serve la pirofosfatasi inorganica nelle reazioni che producono PPᵢ?", "risposta": "Idrolizza il PPᵢ a 2 Pᵢ (ΔG°' ≈ −19 kJ/mol) rendendo l'intero processo praticamente irreversibile."},
+{"domanda": "Perché l'AMP è un segnale sensibile dello stato energetico?", "risposta": "Per l'equilibrio dell'adenilato chinasi, una piccola diminuzione percentuale di ATP produce un grande aumento relativo di AMP, che attiva AMPK e enzimi catabolici."}
+]
+}
+},
+"Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno": {
+"superiore": {
+"spiegazione": [
+"Il glucosio (C₆H₁₂O₆) è il principale combustibile della cellula, e alcuni tessuti, come i globuli rossi e in gran parte il cervello, dipendono quasi solo da esso. La glicolisi è la via che, nel citoplasma, trasforma una molecola di glucosio in due molecole di piruvato (3 carboni) senza bisogno di ossigeno. Si svolge in dieci reazioni e in due fasi. Nella fase di investimento si spendono 2 ATP: il glucosio viene fosforilato a glucosio-6-fosfato (esochinasi), trasformato in fruttosio-6-fosfato e di nuovo fosforilato a fruttosio-1,6-bisfosfato (fosfofruttochinasi, il principale punto di controllo), che si spezza in due triosi fosfato.",
+"Nella fase di rendimento ciascuno dei due triosi (gliceraldeide-3-fosfato) viene ossidato: si forma un NADH e un composto ad alta energia che cede il fosfato all'ADP; più avanti il fosfoenolpiruvato cede il secondo fosfato (piruvato chinasi). Per ogni glucosio si producono 4 ATP e 2 NADH. Il bilancio netto è: glucosio + 2 NAD⁺ + 2 ADP + 2 Pᵢ → 2 piruvato + 2 NADH + 2 H⁺ + 2 ATP + 2 H₂O. Il guadagno è quindi di soli 2 ATP, ma la glicolisi è veloce e non richiede ossigeno.",
+"Il destino del piruvato dipende dall'ossigeno. In presenza di O₂ entra nei mitocondri, diventa acetil-CoA e viene ossidato completamente nella respirazione cellulare. In assenza di O₂ avviene la fermentazione, il cui scopo è rigenerare il NAD⁺ consumato, altrimenti la glicolisi si fermerebbe. Nella fermentazione lattica (muscoli sotto sforzo intenso, globuli rossi, batteri dello yogurt) il piruvato è ridotto a lattato dalla lattato deidrogenasi. Nella fermentazione alcolica (lieviti, nella produzione di pane, vino e birra) il piruvato perde CO₂ diventando acetaldeide, poi ridotta a etanolo. In entrambi i casi la resa resta di 2 ATP per glucosio.",
+"La gluconeogenesi è la sintesi di glucosio a partire da molecole che non sono carboidrati: lattato, glicerolo e alcuni amminoacidi (come l'alanina). Avviene soprattutto nel fegato (e in parte nel rene) durante il digiuno, per mantenere costante la glicemia (circa 70-100 mg/dL). Non è semplicemente la glicolisi al contrario: tre reazioni della glicolisi sono irreversibili e vengono aggirate da enzimi diversi, e il processo costa energia (6 legami ad alta energia per glucosio). Il lattato prodotto dal muscolo torna al fegato, viene trasformato in glucosio e rimandato al muscolo: è il ciclo di Cori.",
+"Il glucosio in eccesso si conserva come glicogeno, un polimero ramificato di glucosio (legami α-1,4 nelle catene e α-1,6 nelle ramificazioni), soprattutto nel fegato (circa 100 g) e nei muscoli (circa 400 g). La glicogenosintesi usa UDP-glucosio e l'enzima glicogeno sintasi; la glicogenolisi usa la glicogeno fosforilasi, che stacca glucosio-1-fosfato. Il glicogeno del fegato serve a tutto il corpo, perché il fegato possiede la glucosio-6-fosfatasi e può liberare glucosio nel sangue; quello del muscolo serve solo al muscolo stesso. L'insulina (dopo i pasti) stimola glicolisi e sintesi del glicogeno; il glucagone (a digiuno) e l'adrenalina (nello stress) stimolano la demolizione del glicogeno e, nel fegato, la gluconeogenesi."
+],
+"metodo": [
+"Disegna la glicolisi in due colonne (investimento e rendimento) e segna dove si consumano e producono ATP e NADH.",
+"Impara prima le tre reazioni irreversibili (esochinasi, fosfofruttochinasi, piruvato chinasi): sono le domande più frequenti.",
+"Fai il bilancio della glicolisi e delle due fermentazioni contando ATP e NADH.",
+"Disegna un incrocio a «Y» per il piruvato: con O₂ verso l'acetil-CoA, senza O₂ verso lattato o etanolo.",
+"Schematizza il ciclo di Cori tra muscolo e fegato con le frecce del lattato e del glucosio.",
+"Costruisci una tabella insulina/glucagone con l'effetto su glicolisi, gluconeogenesi, sintesi e demolizione del glicogeno."
+],
+"ricorda": [
+"Glicolisi: spendi 2, guadagni 4, netto 2 ATP.",
+"La fermentazione non produce ATP in più: serve a ridare NAD⁺ alla glicolisi.",
+"Il fegato è «generoso» (dona glucosio al sangue), il muscolo è «egoista» (tiene il glicogeno per sé).",
+"Insulina = immagazzina; glucagone = libera."
+],
+"errori": [
+"Pensare che la fermentazione produca energia oltre alla glicolisi: le sue reazioni non danno ATP, rigenerano solo il NAD⁺.",
+"Credere che la gluconeogenesi sia la glicolisi al contrario: tre passaggi irreversibili richiedono enzimi diversi e consumo di energia.",
+"Dire che il glicogeno muscolare mantiene la glicemia: il muscolo non ha la glucosio-6-fosfatasi e non può liberare glucosio nel sangue.",
+"Collocare la glicolisi nei mitocondri: avviene nel citoplasma; nei mitocondri avvengono il ciclo di Krebs e la catena respiratoria."
+],
+"domande": [
+{"domanda": "Qual è la resa netta di ATP della glicolisi per molecola di glucosio?", "risposta": "2 ATP (4 prodotti meno 2 consumati), più 2 NADH."},
+{"domanda": "A che cosa serve la fermentazione lattica?", "risposta": "A rigenerare il NAD⁺ riducendo il piruvato a lattato, così la glicolisi può continuare in assenza di ossigeno."},
+{"domanda": "Quale enzima è il principale punto di controllo della glicolisi?", "risposta": "La fosfofruttochinasi-1, che trasforma fruttosio-6-fosfato in fruttosio-1,6-bisfosfato."},
+{"domanda": "Che cos'è il ciclo di Cori?", "risposta": "Il percorso in cui il lattato prodotto dal muscolo va al fegato, viene trasformato in glucosio con la gluconeogenesi e torna al muscolo."},
+{"domanda": "Perché il fegato può liberare glucosio nel sangue e il muscolo no?", "risposta": "Perché solo il fegato (e il rene) possiede la glucosio-6-fosfatasi, che toglie il fosfato al glucosio-6-fosfato."}
+]
+},
+"universita": {
+"spiegazione": [
+"Le dieci reazioni della glicolisi sono: 1) esochinasi (glucosio → G6P, consuma ATP, irreversibile); 2) fosfoglucosio isomerasi (G6P ⇌ F6P); 3) fosfofruttochinasi-1 (F6P → F1,6BP, consuma ATP, irreversibile, passaggio di commissione); 4) aldolasi (F1,6BP ⇌ DHAP + GAP, ΔG°' = +23,8 kJ/mol ma ΔG reale vicino a zero); 5) triosofosfato isomerasi (DHAP ⇌ GAP, enzima a efficienza limitata dalla diffusione); 6) gliceraldeide-3-fosfato deidrogenasi (GAP + NAD⁺ + Pᵢ → 1,3-BPG + NADH, con un intermedio tioestere sulla cisteina del sito attivo); 7) fosfoglicerato chinasi (1,3-BPG + ADP → 3PG + ATP); 8) fosfoglicerato mutasi (3PG ⇌ 2PG); 9) enolasi (2PG → PEP + H₂O, inibita dal fluoruro); 10) piruvato chinasi (PEP + ADP → piruvato + ATP, irreversibile). La deidrogenasi del passaggio 6 accoppia un'ossidazione esoergonica alla formazione di un'anidride acil-fosfato: è il cuore energetico della via.",
+"La regolazione si concentra sui passaggi irreversibili. L'esochinasi è inibita dal suo prodotto G6P; la glucochinasi epatica no, ma è sequestrata nel nucleo dalla proteina regolatrice quando il glucosio è basso. La PFK-1 è inibita da ATP (che riduce l'affinità per F6P) e citrato, attivata da AMP, ADP e soprattutto dal fruttosio-2,6-bisfosfato (F2,6BP), prodotto dall'enzima bifunzionale PFK-2/FBPasi-2. Nel fegato il glucagone, tramite cAMP e proteina chinasi A, fosforila l'enzima bifunzionale: cala il F2,6BP, la glicolisi rallenta e la gluconeogenesi accelera. La piruvato chinasi epatica è attivata a monte (feed-forward) dal F1,6BP e inibita da ATP, alanina e fosforilazione PKA-dipendente.",
+"La gluconeogenesi aggira i tre passaggi irreversibili: piruvato carbossilasi (mitocondriale, biotina, attivata allostericamente dall'acetil-CoA: piruvato + CO₂ + ATP → ossalacetato) e PEP carbossichinasi (ossalacetato + GTP → PEP + CO₂); fruttosio-1,6-bisfosfatasi (inibita da F2,6BP e AMP); glucosio-6-fosfatasi (nel reticolo endoplasmatico). Il costo è di 4 ATP + 2 GTP + 2 NADH per glucosio a partire da 2 piruvati. L'ossalacetato esce dal mitocondrio come malato (che porta anche equivalenti riducenti) o come aspartato. Il glicerolo entra come DHAP; gli acidi grassi a numero pari di carboni non possono dare glucosio netto negli animali, perché la piruvato deidrogenasi è irreversibile e i due carboni dell'acetil-CoA vengono persi come CO₂ nel ciclo di Krebs.",
+"Il metabolismo del glicogeno è regolato in modo reciproco. La glicogeno fosforilasi (cofattore piridossal fosfato) taglia i legami α-1,4 per fosforolisi producendo G1P, risparmiando un ATP rispetto all'idrolisi; si ferma a quattro residui dai punti di ramificazione, dove agisce l'enzima deramificante (transferasi e α-1,6-glucosidasi, che libera glucosio libero). La glicogeno sintasi allunga le catene con UDP-glucosio, a partire dall'innesco della glicogenina; l'enzima ramificante crea legami α-1,6 ogni 8-12 residui. Il glucagone (fegato) e l'adrenalina (fegato e muscolo) attivano tramite cAMP-PKA la fosforilasi chinasi, che fosforila e attiva la fosforilasi e contemporaneamente PKA e GSK3 inattivano la sintasi. L'insulina attiva la proteina fosfatasi 1 e inibisce la GSK3 (tramite PI3K-Akt), con effetto opposto. Nel muscolo Ca²⁺ e AMP attivano la fosforilasi anche senza ormoni.",
+"Altre vie collegate: la via dei pentoso fosfati, che dal G6P produce NADPH (fase ossidativa, enzima glucosio-6-fosfato deidrogenasi) e ribosio-5-fosfato (fase non ossidativa, transchetolasi e transaldolasi); il suo difetto (favismo) rende i globuli rossi vulnerabili allo stress ossidativo. Il fruttosio è metabolizzato nel fegato dalla fruttochinasi e dall'aldolasi B, entrando nella glicolisi a valle della PFK-1, cosa che ne spiega l'effetto lipogenico. Il galattosio entra come G6P tramite la via di Leloir (UDP-galattosio 4-epimerasi). L'effetto Warburg descrive la tendenza delle cellule tumorali a usare la glicolisi aerobica con produzione di lattato anche in presenza di ossigeno, fenomeno sfruttato dalla PET con fluorodesossiglucosio."
+],
+"metodo": [
+"Scrivi le dieci reazioni con nomi di substrati, prodotti ed enzimi, e verifica il bilancio di carboni, fosfati, ATP e NADH.",
+"Disegna sullo stesso foglio glicolisi e gluconeogenesi in parallelo, evidenziando i tre «bypass» con enzimi e cofattori.",
+"Costruisci uno schema della regolazione del F2,6BP nel fegato con glucagone, cAMP, PKA ed enzima bifunzionale.",
+"Fai lo stesso per la cascata della glicogeno fosforilasi, distinguendo fegato e muscolo.",
+"Calcola il costo energetico della gluconeogenesi e confrontalo con la resa della glicolisi.",
+"Studia la via dei pentoso fosfati collegandola a sintesi degli acidi grassi, nucleotidi e difesa antiossidante."
+],
+"ricorda": [
+"I tre irreversibili: esochinasi, PFK-1, piruvato chinasi; i quattro bypass: PC, PEPCK, FBPasi-1, G6Pasi.",
+"F2,6BP: acceleratore della glicolisi e freno della gluconeogenesi nel fegato.",
+"Fosforilasi fosforilata = attiva; sintasi fosforilata = inattiva.",
+"Acetil-CoA non diventa glucosio negli animali, ma attiva la piruvato carbossilasi."
+],
+"errori": [
+"Indicare il F2,6BP come intermedio della glicolisi: è solo un regolatore allosterico, prodotto dalla PFK-2.",
+"Pensare che dagli acidi grassi si possa fare glucosio negli animali: l'acetil-CoA non dà sintesi netta di ossalacetato (manca il ciclo del gliossilato).",
+"Confondere l'effetto della fosforilazione su fosforilasi e sintasi: la stessa cascata attiva la prima e inattiva la seconda.",
+"Dimenticare che la fosforolisi del glicogeno produce G1P, convertito in G6P dalla fosfoglucomutasi, risparmiando l'ATP dell'esochinasi."
+],
+"domande": [
+{"domanda": "Quale reazione della glicolisi produce NADH e quale intermedio covalente coinvolge?", "risposta": "La GAP deidrogenasi; si forma un tioestere tra il substrato e una cisteina del sito attivo, poi attaccato dal fosfato inorganico."},
+{"domanda": "Come agisce il glucagone sul F2,6BP epatico?", "risposta": "Tramite cAMP e PKA fosforila l'enzima bifunzionale, attivando la FBPasi-2 e inibendo la PFK-2: il F2,6BP cala, la glicolisi rallenta e la gluconeogenesi accelera."},
+{"domanda": "Quanti legami fosfato ad alta energia costa la sintesi di un glucosio da 2 piruvati?", "risposta": "Sei: 4 ATP e 2 GTP (più 2 NADH)."},
+{"domanda": "Perché la fosforolisi del glicogeno è più vantaggiosa dell'idrolisi?", "risposta": "Perché produce G1P già fosforilato, che diventa G6P senza consumare l'ATP dell'esochinasi."},
+{"domanda": "Che cosa produce la fase ossidativa della via dei pentoso fosfati?", "risposta": "2 NADPH, CO₂ e ribulosio-5-fosfato per ogni G6P."}
+]
+}
+},
+"Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni": {
+"superiore": {
+"spiegazione": [
+"La respirazione cellulare è l'ossidazione completa del glucosio a CO₂ e H₂O in presenza di ossigeno: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O, con ΔG°' ≈ −2870 kJ/mol. Dopo la glicolisi nel citoplasma, il processo continua nei mitocondri in tre tappe: decarbossilazione ossidativa del piruvato, ciclo di Krebs e fosforilazione ossidativa (catena di trasporto degli elettroni e ATP sintasi). Il mitocondrio ha una membrana esterna permeabile e una interna ripiegata in creste, molto impermeabile, che racchiude la matrice: il ciclo di Krebs avviene nella matrice, la catena di trasporto sulla membrana interna.",
+"Il piruvato entra nella matrice e il complesso della piruvato deidrogenasi lo trasforma in acetil-CoA: perde un carbonio come CO₂ e cede elettroni al NAD⁺ (piruvato + CoA + NAD⁺ → acetil-CoA + CO₂ + NADH). L'acetil-CoA entra nel ciclo di Krebs (o ciclo dell'acido citrico), scoperto da Hans Krebs nel 1937: il gruppo acetile (2 C) si unisce all'ossalacetato (4 C) formando citrato (6 C). Attraverso otto reazioni il citrato perde due carboni come CO₂ e torna ossalacetato, pronto per un nuovo giro.",
+"Per ogni giro del ciclo si ottengono 3 NADH, 1 FADH₂, 1 GTP (equivalente a un ATP) e 2 CO₂. Poiché da un glucosio si formano due acetil-CoA, il ciclo gira due volte per glucosio. Il ciclo di Krebs di per sé produce poco ATP: la sua funzione principale è estrarre gli elettroni dai carboni dell'acetile e caricarli su NADH e FADH₂. È anche uno snodo centrale del metabolismo: vi entrano i prodotti della demolizione di acidi grassi e amminoacidi, e alcuni suoi intermedi servono a sintetizzare altre molecole.",
+"Nella catena di trasporto degli elettroni NADH e FADH₂ cedono i loro elettroni a una serie di complessi proteici della membrana interna (complessi I, II, III, IV), collegati dal coenzima Q (ubichinone) e dal citocromo c. Gli elettroni passano da trasportatori con minore a trasportatori con maggiore affinità per gli elettroni, fino all'ossigeno, l'accettore finale, che si riduce ad acqua. L'energia liberata viene usata dai complessi I, III e IV per pompare protoni (H⁺) dalla matrice allo spazio intermembrana: si crea così un gradiente di protoni, cioè una differenza di concentrazione e di carica ai lati della membrana.",
+"Secondo la teoria chemiosmotica di Peter Mitchell (Nobel 1978), i protoni rientrano nella matrice attraverso l'ATP sintasi, una vera turbina molecolare che usa il flusso di H⁺ per sintetizzare ATP da ADP e Pᵢ. Ogni NADH permette di produrre circa 2,5 ATP, ogni FADH₂ circa 1,5. Il bilancio complessivo è di circa 30-32 ATP per glucosio, contro i 2 della sola glicolisi. Veleni come il cianuro e il monossido di carbonio bloccano il complesso IV e fermano la respirazione; i disaccoppianti (come il dinitrofenolo, o la termogenina del tessuto adiposo bruno) lasciano rientrare i protoni senza produrre ATP, e l'energia si disperde come calore."
+],
+"metodo": [
+"Disegna un mitocondrio e colloca ogni tappa: glicolisi fuori, piruvato deidrogenasi e Krebs nella matrice, catena e ATP sintasi sulla membrana interna.",
+"Disegna il ciclo di Krebs come un cerchio con gli intermedi (citrato, isocitrato, α-chetoglutarato, succinil-CoA, succinato, fumarato, malato, ossalacetato) e segna dove escono CO₂, NADH, FADH₂ e GTP.",
+"Fai il bilancio completo dell'ATP per glucosio in una tabella (glicolisi, piruvato deidrogenasi, Krebs, fosforilazione ossidativa).",
+"Disegna la catena con i quattro complessi, ubichinone, citocromo c, il flusso degli elettroni e quello dei protoni.",
+"Usa un'analogia idraulica: la catena pompa acqua in alto in una diga, l'ATP sintasi è la turbina.",
+"Ripassa gli effetti di veleni e disaccoppianti chiedendoti ogni volta che cosa succede al gradiente e all'ATP."
+],
+"ricorda": [
+"«Citrato Isola Alfa Su Su Fa Male Ossa»: citrato, isocitrato, α-chetoglutarato, succinil-CoA, succinato, fumarato, malato, ossalacetato.",
+"Ogni giro: 3 NADH, 1 FADH₂, 1 GTP, 2 CO₂.",
+"NADH vale 2,5 ATP, FADH₂ vale 1,5.",
+"L'ossigeno è l'ultimo della fila: senza di lui la catena si ingorga."
+],
+"errori": [
+"Pensare che l'ossigeno respirato diventi la CO₂ espirata: l'O₂ diventa acqua alla fine della catena; la CO₂ viene dai carboni dei nutrienti, liberata da piruvato deidrogenasi e ciclo di Krebs.",
+"Credere che il ciclo di Krebs produca la maggior parte dell'ATP: produce direttamente solo 2 GTP per glucosio; la maggior parte dell'ATP viene dalla fosforilazione ossidativa.",
+"Dire che la catena di trasporto produce direttamente ATP: crea il gradiente di protoni, ed è l'ATP sintasi a produrre ATP usando quel gradiente.",
+"Collocare il ciclo di Krebs sulla membrana: avviene nella matrice, tranne la succinato deidrogenasi che è legata alla membrana interna (è anche il complesso II)."
+],
+"domande": [
+{"domanda": "Quanti NADH, FADH₂ e GTP si formano in un giro del ciclo di Krebs?", "risposta": "3 NADH, 1 FADH₂ e 1 GTP, con il rilascio di 2 CO₂."},
+{"domanda": "Qual è l'accettore finale degli elettroni nella catena respiratoria?", "risposta": "L'ossigeno, che si riduce ad acqua nel complesso IV."},
+{"domanda": "Che cosa afferma la teoria chemiosmotica?", "risposta": "Che l'energia del trasporto di elettroni crea un gradiente di protoni attraverso la membrana interna, e il ritorno dei protoni attraverso l'ATP sintasi produce ATP."},
+{"domanda": "Quanti ATP si ottengono circa dall'ossidazione completa di un glucosio?", "risposta": "Circa 30-32 ATP."},
+{"domanda": "Perché il cianuro è letale?", "risposta": "Blocca il complesso IV (citocromo c ossidasi): gli elettroni non arrivano all'ossigeno, il gradiente non si forma e la produzione di ATP si ferma."}
+]
+},
+"universita": {
+"spiegazione": [
+"Il complesso della piruvato deidrogenasi (PDH) è formato da tre enzimi (E1 con tiamina pirofosfato, E2 con lipoammide e CoA, E3 con FAD e NAD⁺) e cinque coenzimi. La sua attività è irreversibile e strettamente regolata: inibita dai prodotti acetil-CoA e NADH, e per fosforilazione da parte della PDH chinasi (attivata da ATP, NADH, acetil-CoA), mentre la PDH fosfatasi (attivata da Ca²⁺ e, nel tessuto adiposo, dall'insulina) la riattiva. Un deficit di tiamina (beriberi, sindrome di Wernicke negli alcolisti) compromette PDH e α-chetoglutarato deidrogenasi, con accumulo di piruvato e lattato.",
+"Le reazioni del ciclo di Krebs sono: citrato sintasi (acetil-CoA + ossalacetato → citrato, irreversibile); aconitasi (citrato ⇌ isocitrato, via cis-aconitato, centro Fe-S; bersaglio del fluoroacetato); isocitrato deidrogenasi (→ α-chetoglutarato + CO₂ + NADH, punto di controllo principale, attivata da ADP e Ca²⁺, inibita da ATP e NADH); α-chetoglutarato deidrogenasi (→ succinil-CoA + CO₂ + NADH, complesso analogo alla PDH); succinil-CoA sintetasi (→ succinato + GTP o ATP, fosforilazione a livello del substrato); succinato deidrogenasi (→ fumarato + FADH₂, inibita competitivamente dal malonato); fumarasi (→ L-malato); malato deidrogenasi (→ ossalacetato + NADH, ΔG°' = +29,7 kJ/mol, spinta dal consumo dell'ossalacetato nella reazione della citrato sintasi). Il ciclo è anfibolico: reazioni anaplerotiche (soprattutto la piruvato carbossilasi) reintegrano gli intermedi sottratti per biosintesi di amminoacidi, eme e acidi grassi.",
+"La catena respiratoria comprende: complesso I (NADH:ubichinone ossidoreduttasi, FMN e centri Fe-S, pompa 4 H⁺ per 2 e⁻; inibito da rotenone); complesso II (succinato deidrogenasi, non pompa protoni); ubichinone (Q), trasportatore liposolubile; complesso III (citocromo bc₁, ciclo Q, 4 H⁺ rilasciati nello spazio intermembrana per 2 e⁻; inibito dall'antimicina A); citocromo c, proteina periferica solubile; complesso IV (citocromo c ossidasi, eme a, a₃ e CuA, CuB; riduce O₂ a 2 H₂O consumando 4 H⁺ dalla matrice e pompandone altri 4 per O₂, cioè 2 per coppia di elettroni; inibito da CN⁻, CO, N₃⁻). In totale per 2 elettroni dal NADH si traslocano 10 H⁺, dal FADH₂ (via complesso II) 6 H⁺.",
+"La forza motrice protonica è Δp = Δψ − (2,3RT/F)·ΔpH, circa 150-200 mV, con Δψ ≈ 150 mV (matrice negativa) e ΔpH ≈ 0,5-0,75 unità (matrice basica). L'ATP sintasi (complesso V) ha una parte Fo nella membrana, il cui anello c ruota spinto dal flusso di H⁺, e una parte F₁ nella matrice con tre subunità β catalitiche che passano ciclicamente per gli stati aperto, lasco e stretto (meccanismo del cambiamento di legame di Boyer; la rotazione è stata osservata direttamente). Con 8 subunità c nei mammiferi servono 8 H⁺ per tre ATP, più 1 H⁺ per il trasporto di Pᵢ e lo scambio ATP/ADP tramite l'adenina nucleotide traslocasi (inibita dall'atrattiloside): circa 3,7 H⁺ per ATP. Da qui i rapporti P/O di circa 2,5 (NADH) e 1,5 (FADH₂).",
+"Il NADH citosolico prodotto dalla glicolisi non attraversa la membrana interna: lo fanno le navette. La navetta del glicerolo-3-fosfato (muscolo scheletrico, cervello) consegna gli elettroni al FAD della glicerolo-3-fosfato deidrogenasi mitocondriale e quindi al Q (1,5 ATP per NADH); la navetta malato-aspartato (fegato, cuore) li consegna al NADH della matrice (2,5 ATP). Da qui la resa di 30 o 32 ATP per glucosio. La respirazione è controllata dalla disponibilità di ADP (controllo respiratorio); il disaccoppiamento fisiologico tramite UCP1 nel tessuto adiposo bruno produce calore (termogenesi senza brivido). La catena genera anche specie reattive dell'ossigeno (superossido, soprattutto dai complessi I e III), neutralizzate da superossido dismutasi, catalasi e glutatione perossidasi; il citocromo c rilasciato nel citosol avvia l'apoptosi."
+],
+"metodo": [
+"Scrivi tutte le reazioni del ciclo di Krebs con enzimi, cofattori e tipo di reazione (condensazione, isomerizzazione, decarbossilazione ossidativa, fosforilazione a livello del substrato, deidrogenazione, idratazione).",
+"Disegna la catena respiratoria con potenziali redox crescenti e il numero di protoni pompati da ciascun complesso.",
+"Calcola il rapporto P/O da protoni pompati e protoni necessari per ATP, e ricava la resa per glucosio con entrambe le navette.",
+"Prepara una tabella degli inibitori (rotenone, antimicina A, cianuro, CO, oligomicina, atrattiloside, DNP) con il sito d'azione e l'effetto su consumo di O₂ e sintesi di ATP.",
+"Disegna l'ATP sintasi con Fo, F₁, rotore e statore e descrivi i tre stati delle subunità β.",
+"Collega regolazione del ciclo e della PDH allo stato energetico (ATP/ADP, NADH/NAD⁺, Ca²⁺)."
+],
+"ricorda": [
+"10 H⁺ per NADH, 6 per FADH₂; circa 4 H⁺ per ATP: P/O 2,5 e 1,5.",
+"Complesso II è anche succinato deidrogenasi e non pompa protoni.",
+"Oligomicina blocca la turbina; DNP buca la diga.",
+"Navetta del glicerolo-fosfato = sconto (1,5); malato-aspartato = prezzo pieno (2,5)."
+],
+"errori": [
+"Dire che il complesso II pompa protoni: trasferisce elettroni dal succinato al Q senza traslocare H⁺, e per questo il FADH₂ rende meno ATP.",
+"Pensare che con un disaccoppiante il consumo di O₂ si fermi: al contrario aumenta, perché il gradiente si dissipa e la catena lavora al massimo senza produrre ATP.",
+"Usare ancora i vecchi valori 3 e 2 ATP per NADH e FADH₂: le misure sperimentali e il conto dei protoni danno circa 2,5 e 1,5.",
+"Confondere l'effetto dell'oligomicina con quello del cianuro: l'oligomicina blocca l'ATP sintasi, e il consumo di O₂ cala per accoppiamento; il cianuro blocca direttamente il trasferimento di elettroni all'O₂."
+],
+"domande": [
+{"domanda": "Quale enzima del ciclo di Krebs è inibito dal malonato e di che tipo di inibizione si tratta?", "risposta": "La succinato deidrogenasi; il malonato è un analogo del succinato e la inibisce in modo competitivo."},
+{"domanda": "Calcola il rapporto P/O per il NADH sapendo che si pompano 10 H⁺ e servono circa 4 H⁺ per ATP.", "risposta": "10/4 = 2,5 ATP per coppia di elettroni (cioè per atomo di ossigeno ridotto)."},
+{"domanda": "Che cosa succede al consumo di ossigeno di mitocondri isolati dopo l'aggiunta di oligomicina e poi di DNP?", "risposta": "Con oligomicina cala quasi a zero perché il gradiente non si scarica; aggiungendo DNP riprende ad alta velocità perché i protoni rientrano senza passare per l'ATP sintasi."},
+{"domanda": "Quali sono i componenti della forza motrice protonica?", "risposta": "Il potenziale elettrico di membrana Δψ e il gradiente di pH ΔpH tra spazio intermembrana e matrice."},
+{"domanda": "Perché la reazione della malato deidrogenasi procede nonostante ΔG°' positivo?", "risposta": "Perché l'ossalacetato è mantenuto a concentrazione bassissima dalla citrato sintasi, reazione molto esoergonica, quindi il ΔG reale è negativo."}
+]
+}
+},
+"Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo": {
+"superiore": {
+"spiegazione": [
+"I trigliceridi sono la principale riserva di energia del corpo: un adulto magro ne conserva circa 10-15 kg nel tessuto adiposo, abbastanza per settimane di digiuno. Quando serve energia (digiuno, attività fisica prolungata) ormoni come glucagone e adrenalina attivano la lipasi del tessuto adiposo, che idrolizza i trigliceridi in glicerolo e acidi grassi. Il glicerolo va al fegato e può diventare glucosio; gli acidi grassi viaggiano nel sangue legati all'albumina e vengono presi da muscoli, cuore e fegato, che li ossidano.",
+"Nella cellula l'acido grasso viene attivato nel citoplasma legandosi al coenzima A (acil-CoA), con consumo di ATP. Per entrare nei mitocondri deve essere trasportato dalla carnitina (navetta della carnitina). Nella matrice avviene la β-ossidazione: una sequenza di quattro reazioni (ossidazione, idratazione, ossidazione, scissione) che stacca dall'acido grasso due carboni alla volta sotto forma di acetil-CoA, e a ogni giro produce un FADH₂ e un NADH. Il nome deriva dal fatto che si ossida il carbonio β, il terzo contando dal carbossile.",
+"Esempio: l'acido palmitico (16 C) compie 7 giri di β-ossidazione e produce 8 acetil-CoA, 7 FADH₂ e 7 NADH. Gli 8 acetil-CoA entrano nel ciclo di Krebs; il conto finale è di circa 106 ATP per molecola di palmitato (108 prodotti meno 2 spesi per l'attivazione), contro circa 30-32 per un glucosio. Per questo i grassi forniscono più energia per grammo: i loro carboni sono più ridotti e quindi possono cedere più elettroni.",
+"Nel digiuno prolungato o nel diabete non controllato il fegato produce più acetil-CoA di quanto il ciclo di Krebs possa ossidare, anche perché l'ossalacetato viene usato per la gluconeogenesi. L'acetil-CoA in eccesso viene trasformato in corpi chetonici: acetoacetato, β-idrossibutirrato e acetone (quest'ultimo si elimina con il respiro e gli dà un odore fruttato). Acetoacetato e β-idrossibutirrato passano nel sangue e sono usati come combustibile da cuore, muscoli e, dopo alcuni giorni di digiuno, dal cervello. Sono però acidi: se si accumulano troppo, come nel diabete di tipo 1 non trattato, abbassano il pH del sangue (chetoacidosi).",
+"Quando si mangia più del necessario, il glucosio in eccesso viene trasformato in acidi grassi, soprattutto nel fegato. La sintesi degli acidi grassi avviene nel citoplasma: l'acetil-CoA viene carbossilato a malonil-CoA (enzima acetil-CoA carbossilasi, attivato dall'insulina), e il complesso dell'acido grasso sintasi allunga la catena di due carboni alla volta usando NADPH, fino al palmitato (16 C). Gli acidi grassi vengono poi uniti al glicerolo e conservati come trigliceridi. Anche il colesterolo si sintetizza dall'acetil-CoA, nel fegato, attraverso il mevalonato; l'enzima chiave è l'HMG-CoA reduttasi, bersaglio dei farmaci chiamati statine."
+],
+"metodo": [
+"Disegna le quattro reazioni della β-ossidazione su un acido grasso generico, indicando dove si formano FADH₂, NADH e acetil-CoA.",
+"Calcola il numero di giri, di acetil-CoA e l'ATP totale per acidi grassi di 12, 16 e 18 carboni.",
+"Fai una tabella di confronto β-ossidazione / sintesi degli acidi grassi: luogo, coenzimi, trasportatore, ormone che la attiva.",
+"Schematizza la chetogenesi: da dove arrivano gli acetil-CoA, perché l'ossalacetato manca, dove vanno i corpi chetonici.",
+"Collega la carnitina e il malonil-CoA: capirai perché sintesi e ossidazione non avvengono insieme.",
+"Ripassa insieme il colesterolo, le lipoproteine e le statine."
+],
+"ricorda": [
+"β-ossidazione: si taglia la catena «a fette» di due carboni.",
+"n carboni → n/2 acetil-CoA e (n/2 − 1) giri.",
+"Ossidazione nel mitocondrio con FAD e NAD⁺; sintesi nel citoplasma con NADPH.",
+"Corpi chetonici: il fegato li fa ma non li usa, li «regala» agli altri organi."
+],
+"errori": [
+"Contare un giro di β-ossidazione per ogni acetil-CoA: l'ultimo giro spezza un frammento di quattro carboni in due acetil-CoA, quindi i giri sono uno in meno.",
+"Pensare che la sintesi degli acidi grassi sia la β-ossidazione al contrario: avviene in un altro compartimento, con altri enzimi e con NADPH invece di FAD e NAD⁺.",
+"Dire che il cervello usa gli acidi grassi come combustibile: gli acidi grassi non lo raggiungono in quantità utile; il cervello usa glucosio e, nel digiuno prolungato, corpi chetonici.",
+"Credere che i corpi chetonici siano solo prodotti di scarto: sono un combustibile importante nel digiuno; il problema nasce quando si accumulano fino all'acidosi."
+],
+"domande": [
+{"domanda": "Quanti acetil-CoA e quanti giri di β-ossidazione servono per l'acido stearico (18 C)?", "risposta": "9 acetil-CoA e 8 giri di β-ossidazione."},
+{"domanda": "Qual è il ruolo della carnitina?", "risposta": "Trasporta i gruppi acilici degli acidi grassi a catena lunga dal citoplasma alla matrice mitocondriale."},
+{"domanda": "Quali sono i corpi chetonici?", "risposta": "Acetoacetato, β-idrossibutirrato e acetone."},
+{"domanda": "Dove avviene la sintesi degli acidi grassi e quale coenzima fornisce gli elettroni?", "risposta": "Nel citoplasma, soprattutto del fegato e del tessuto adiposo; gli elettroni vengono dal NADPH."},
+{"domanda": "Quale enzima inibiscono le statine?", "risposta": "L'HMG-CoA reduttasi, che catalizza la tappa limitante della sintesi del colesterolo."}
+]
+},
+"universita": {
+"spiegazione": [
+"La lipolisi nel tessuto adiposo è regolata dalla lipasi dei trigliceridi adiposa (ATGL), dalla lipasi ormono-sensibile (HSL) e dalla perilipina: adrenalina e glucagone, tramite cAMP e PKA, fosforilano HSL e perilipina e attivano la lipolisi; l'insulina la inibisce attivando la fosfodiesterasi che degrada il cAMP. Gli acidi grassi vengono attivati ad acil-CoA dall'acil-CoA sintetasi (ATP → AMP + PPᵢ, costo di due legami ad alta energia) e, se a catena lunga, trasferiti alla carnitina dalla carnitina palmitoiltransferasi I (CPT-I) sulla membrana esterna, trasportati dalla traslocasi e riconvertiti in acil-CoA dalla CPT-II. La CPT-I è il punto di controllo: è inibita dal malonil-CoA, primo intermedio della sintesi, così che sintesi e ossidazione non procedano insieme.",
+"Le quattro reazioni della β-ossidazione sono: acil-CoA deidrogenasi (FAD, forma un trans-Δ²-enoil-CoA; isoforme per catene corte, medie, lunghe; il deficit di MCAD è una malattia comune nello screening neonatale), enoil-CoA idratasi (L-3-idrossiacil-CoA), 3-idrossiacil-CoA deidrogenasi (NAD⁺, 3-chetoacil-CoA) e tiolasi (CoA-SH scinde e libera acetil-CoA). Bilancio per il palmitoil-CoA: 8 acetil-CoA (8·10 = 80 ATP), 7 FADH₂ (10,5), 7 NADH (17,5) = 108 ATP, meno 2 per l'attivazione = 106. Gli acidi grassi insaturi richiedono un'isomerasi (cis-Δ³ → trans-Δ²) e, per i doppi legami in posizione pari, la 2,4-dienoil-CoA reduttasi (NADPH). Quelli a numero dispari danno alla fine propionil-CoA, convertito in succinil-CoA (carbossilasi con biotina, epimerasi, mutasi con vitamina B12): l'unica parte degli acidi grassi che può dare glucosio netto. Gli acidi grassi a catena molto lunga sono accorciati nei perossisomi, dove la prima ossidazione produce H₂O₂.",
+"La chetogenesi avviene nei mitocondri epatici: due acetil-CoA formano acetoacetil-CoA (tiolasi), che con un terzo acetil-CoA dà HMG-CoA (HMG-CoA sintasi mitocondriale, enzima regolato); l'HMG-CoA liasi libera acetoacetato, ridotto in parte a D-β-idrossibutirrato (NADH) o decarbossilato spontaneamente ad acetone. Il fegato non può usarli perché manca della succinil-CoA:3-chetoacido CoA transferasi (tioforasi), che negli altri tessuti riattiva l'acetoacetato ad acetoacetil-CoA. Nel digiuno prolungato i corpi chetonici arrivano a 5-7 mM e coprono fino a due terzi del fabbisogno del cervello, risparmiando proteine muscolari; nella chetoacidosi diabetica possono superare 20 mM, con acidosi metabolica a gap anionico aumentato.",
+"La sintesi degli acidi grassi richiede acetil-CoA nel citosol, che esce dal mitocondrio come citrato (navetta del citrato: ATP-citrato liasi nel citosol). L'acetil-CoA carbossilasi (ACC, biotina) produce malonil-CoA ed è il punto di controllo: attivata allostericamente dal citrato (che ne promuove la polimerizzazione), inibita dal palmitoil-CoA, inattivata per fosforilazione da AMPK e PKA (glucagone, adrenalina), attivata dall'insulina tramite defosforilazione. L'acido grasso sintasi dei mammiferi è un dimero multifunzionale con la proteina trasportatrice di acili (ACP, con fosfopanteteina): ogni ciclo comprende condensazione (con rilascio di CO₂, che rende la reazione favorevole), riduzione, disidratazione e seconda riduzione. Bilancio per il palmitato: 8 acetil-CoA + 7 ATP + 14 NADPH. Il NADPH proviene dalla via dei pentoso fosfati e dall'enzima malico. Allungamenti e desaturazioni avvengono nel reticolo endoplasmatico.",
+"La sintesi del colesterolo parte da tre acetil-CoA che formano HMG-CoA (isoforma citosolica della sintasi); l'HMG-CoA reduttasi (2 NADPH) produce mevalonato ed è la tappa limitante. Il mevalonato diventa isopentenil pirofosfato (C5), sei unità C5 formano lo squalene (C30), che ciclizza a lanosterolo e poi, in circa 19 passaggi, a colesterolo (C27). La reduttasi è regolata a livello trascrizionale dal fattore SREBP-2, che viene attivato quando il colesterolo nel reticolo è basso (sistema SCAP/Insig), per degradazione indotta dagli steroli, e per fosforilazione da parte di AMPK (inattivante). Le statine sono analoghi competitivi del mevalonato/HMG-CoA; l'inibizione aumenta l'espressione del recettore delle LDL tramite SREBP-2. Il colesterolo in eccesso viene esterificato (ACAT) o trasformato in acidi biliari (7α-idrossilasi), la principale via di eliminazione."
+],
+"metodo": [
+"Rifai il bilancio dettagliato di ATP per palmitato, stearato, un acido grasso insaturo e uno a numero dispari di carboni.",
+"Disegna la navetta della carnitina e la navetta del citrato sullo stesso schema di mitocondrio: vedrai la regolazione incrociata con il malonil-CoA.",
+"Costruisci una tabella di regolazione di ACC, CPT-I, HSL, HMG-CoA reduttasi con effettori allosterici, fosforilazione e ormoni.",
+"Scrivi le reazioni della chetogenesi e della chetolisi, indicando in quali tessuti avvengono e perché.",
+"Collega il metabolismo dei lipidi agli stati nutrizionali: pasto, digiuno breve, digiuno prolungato, diabete di tipo 1.",
+"Rivedi le vie del colesterolo partendo dalle unità isopreniche (C5 → C10 → C15 → C30)."
+],
+"ricorda": [
+"Malonil-CoA chiude la porta (CPT-I): mentre si costruisce non si brucia.",
+"Palmitato: 106 ATP ossidando, 7 ATP + 14 NADPH per costruirlo da 8 acetil-CoA.",
+"Il fegato fa i corpi chetonici ma non ha la tioforasi per usarli.",
+"SREBP-2: poco colesterolo → più reduttasi e più recettori LDL."
+],
+"errori": [
+"Calcolare l'attivazione dell'acido grasso come costo di 1 ATP: l'ATP diventa AMP + PPᵢ, equivalente a 2 legami ad alta energia.",
+"Pensare che gli acidi grassi a numero dispari siano totalmente non glucogenici: il propionil-CoA finale diventa succinil-CoA e può dare glucosio.",
+"Confondere le due HMG-CoA sintasi: quella mitocondriale serve alla chetogenesi, quella citosolica alla sintesi del colesterolo.",
+"Attribuire la sintesi degli acidi grassi all'enzima malico come fonte di acetil-CoA: l'enzima malico fornisce NADPH; l'acetil-CoA arriva tramite il citrato e l'ATP-citrato liasi."
+],
+"domande": [
+{"domanda": "Calcola l'ATP netto dall'ossidazione completa del laurato (12 C).", "risposta": "6 acetil-CoA (60 ATP) + 5 FADH₂ (7,5) + 5 NADH (12,5) = 80, meno 2 per l'attivazione = 78 ATP."},
+{"domanda": "Perché il malonil-CoA impedisce la β-ossidazione durante la sintesi degli acidi grassi?", "risposta": "Inibisce la CPT-I, bloccando l'ingresso degli acil-CoA nel mitocondrio."},
+{"domanda": "Perché il fegato non utilizza i corpi chetonici?", "risposta": "Perché manca della succinil-CoA:3-chetoacido CoA transferasi (tioforasi), necessaria per riattivare l'acetoacetato."},
+{"domanda": "Quanti NADPH servono per sintetizzare un palmitato e da dove provengono?", "risposta": "14 NADPH, forniti soprattutto dalla via dei pentoso fosfati e dall'enzima malico."},
+{"domanda": "Come regola SREBP-2 la sintesi del colesterolo?", "risposta": "Quando il colesterolo nel reticolo è basso, SREBP-2 migra al Golgi, viene tagliato e il frammento attivo entra nel nucleo, dove attiva i geni dell'HMG-CoA reduttasi e del recettore LDL."}
+]
+}
+}
+}

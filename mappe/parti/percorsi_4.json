@@ -1,0 +1,486 @@
+{
+  "apparato locomotore": {
+    "titolo": "Apparato locomotore: dal comando nervoso al movimento",
+    "dove": "Cervello e midollo spinale, nervo motore, muscolo scheletrico, tendini, ossa e articolazioni",
+    "inizio": "corteccia motoria",
+    "intro": "Per muovere un braccio il cervello manda un ordine elettrico lungo i nervi fino al muscolo. Nel muscolo il segnale libera calcio, e il calcio fa agganciare due proteine, actina e miosina, che scorrono una sull'altra usando ATP. Il muscolo si accorcia, tira il tendine e il tendine sposta l'osso attorno a un'articolazione.",
+    "fasi": [
+      {"da": 1, "nome": "Dal cervello al muscolo: il segnale nervoso"},
+      {"da": 4, "nome": "Dentro la fibra muscolare: la contrazione"},
+      {"da": 8, "nome": "Dal muscolo all'osso: il movimento"}
+    ],
+    "passaggi": [
+      {
+        "da": ["corteccia motoria"],
+        "a": ["motoneurone"],
+        "enzima": "via piramidale (corticospinale)",
+        "entra": [],
+        "esce": [],
+        "nota": "L'ordine parte dalla corteccia motoria del lobo frontale e scende nel midollo spinale; la maggior parte delle fibre incrocia nel bulbo, perciò l'emisfero sinistro muove la metà destra del corpo. Nel midollo il segnale passa al motoneurone."
+      },
+      {
+        "da": ["motoneurone"],
+        "a": ["placca motrice"],
+        "enzima": "canali del Ca²⁺ voltaggio-dipendenti",
+        "entra": ["Ca²⁺"],
+        "esce": ["acetilcolina"],
+        "nota": "Il potenziale d'azione corre lungo l'assone fino alla terminazione sul muscolo. Qui si aprono canali per il calcio: il Ca²⁺ entra e fa liberare l'acetilcolina contenuta nelle vescicole."
+      },
+      {
+        "da": ["placca motrice"],
+        "a": ["tubulo T"],
+        "enzima": "recettore nicotinico dell'acetilcolina",
+        "entra": ["acetilcolina", "Na⁺"],
+        "esce": [],
+        "nota": "L'acetilcolina apre i recettori-canale della fibra muscolare: entra Na⁺ e nasce un potenziale d'azione muscolare, che si propaga sulla membrana e scende nei tubuli T. L'acetilcolinesterasi demolisce subito l'acetilcolina, così ogni impulso dà una sola scossa."
+      },
+      {
+        "da": ["tubulo T"],
+        "a": ["reticolo sarcoplasmatico"],
+        "enzima": "recettore della rianodina (RyR1)",
+        "entra": [],
+        "esce": ["Ca²⁺"],
+        "nota": "Nel tubulo T il sensore di voltaggio (recettore della diidropiridina) cambia forma e apre meccanicamente il RyR1 del reticolo sarcoplasmatico: il Ca²⁺ immagazzinato esce nel citoplasma (accoppiamento eccitazione-contrazione)."
+      },
+      {
+        "da": ["reticolo sarcoplasmatico"],
+        "a": ["actina"],
+        "enzima": "troponina e tropomiosina",
+        "entra": ["Ca²⁺"],
+        "esce": [],
+        "nota": "Il Ca²⁺ si lega alla troponina C; il complesso della troponina cambia forma e sposta la tropomiosina, che a riposo copre i punti dell'actina dove si attacca la miosina. Ora l'actina è «libera»."
+      },
+      {
+        "da": ["actina"],
+        "a": ["ponte actina-miosina"],
+        "enzima": "miosina",
+        "entra": [],
+        "esce": ["fosfato (Pi)", "ADP"],
+        "nota": "La testa della miosina, già «caricata» (tiene ADP e fosfato dall'ATP usato prima), si aggancia all'actina. L'uscita del fosfato fa scattare il colpo di forza: la testa ruota e tira il filamento sottile verso il centro del sarcomero; poi esce l'ADP."
+      },
+      {
+        "da": ["ponte actina-miosina"],
+        "a": ["sarcomero"],
+        "enzima": "miosina",
+        "entra": ["ATP"],
+        "esce": [],
+        "nota": "Un nuovo ATP si lega alla testa e la stacca dall'actina; la miosina lo idrolizza e si ricarica per un altro colpo. Finché ci sono Ca²⁺ e ATP il ciclo si ripete: i filamenti scorrono, le linee Z si avvicinano e il sarcomero si accorcia (i filamenti non cambiano lunghezza)."
+      },
+      {
+        "da": ["sarcomero"],
+        "a": ["tendine"],
+        "enzima": "muscolo scheletrico",
+        "entra": [],
+        "esce": [],
+        "nota": "Migliaia di sarcomeri in fila formano le miofibrille, le miofibrille riempiono le fibre e le fibre sono raccolte in fasci: tutto il muscolo si accorcia e tira il tendine. La forza aumenta attivando più unità motorie e mandando impulsi più fitti."
+      },
+      {
+        "da": ["tendine"],
+        "a": ["osso"],
+        "enzima": "collagene di tipo I",
+        "entra": [],
+        "esce": [],
+        "nota": "Il tendine è fatto di fasci paralleli di collagene di tipo I: è molto resistente alla trazione e poco elastico, quindi trasmette la forza quasi senza perderla. Si ancora all'osso in una zona chiamata entesi."
+      },
+      {
+        "da": ["osso"],
+        "a": ["movimento"],
+        "enzima": "articolazione sinoviale",
+        "entra": [],
+        "esce": [],
+        "nota": "L'osso fa da leva e ruota attorno all'articolazione, che fa da fulcro: per esempio il bicipite flette il gomito. Il muscolo può solo tirare, quindi per tornare indietro lavora il muscolo antagonista (il tricipite)."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Nervo → acetilcolina → potenziale d'azione muscolare → Ca²⁺ dal reticolo sarcoplasmatico",
+      "Ca²⁺ sposta troponina e tropomiosina: la miosina si aggancia all'actina e tira usando ATP",
+      "Il sarcomero si accorcia, il muscolo tira il tendine e il tendine muove l'osso attorno all'articolazione",
+      "Il muscolo consuma ATP sia per contrarsi sia per rilassarsi"
+    ],
+    "dopo": {
+      "titolo": "Come finisce la contrazione",
+      "strade": [
+        {
+          "condizione": "Quando il nervo smette di mandare impulsi (rilassamento)",
+          "da": "Ca²⁺",
+          "a": "reticolo sarcoplasmatico",
+          "enzima": "pompa SERCA",
+          "entra": ["ATP"],
+          "esce": ["ADP", "fosfato (Pi)"],
+          "nota": "La pompa SERCA riporta il Ca²⁺ dentro il reticolo sarcoplasmatico consumando ATP. La tropomiosina torna a coprire l'actina, i ponti non si riformano e il muscolo si rilassa."
+        },
+        {
+          "condizione": "Dopo la morte, quando l'ATP finisce",
+          "da": "ponte actina-miosina",
+          "a": "rigor mortis",
+          "enzima": "miosina",
+          "entra": [],
+          "esce": [],
+          "nota": "Senza ATP le teste della miosina non riescono a staccarsi dall'actina: i muscoli restano bloccati e rigidi. La rigidità scompare solo quando le proteine del muscolo vengono degradate."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Da dove arriva l'ATP del muscolo",
+        "voci": [
+          ["Primi secondi di uno sforzo massimo: la riserva pronta", ["fosfocreatina"]],
+          ["Sforzo intenso e breve: glicolisi senza ossigeno", ["glicogeno", "lattato"]],
+          ["Sforzo lungo e moderato: respirazione con ossigeno", ["glucosio", "acido grasso", "O₂"]]
+        ]
+      }
+    ]
+  },
+  "apparato tegumentario": {
+    "titolo": "Apparato tegumentario: il rinnovo della pelle, dallo strato basale alla desquamazione",
+    "dove": "Epidermide, la parte più esterna della pelle (sopra il derma e l'ipoderma)",
+    "inizio": "strato basale",
+    "intro": "L'epidermide si rinnova di continuo dal basso verso l'alto. Nello strato più profondo nascono nuove cellule, i cheratinociti, che salendo si riempiono di cheratina, si appiattiscono e muoiono, diventando le scaglie dello strato corneo. Alla fine si staccano senza che ce ne accorgiamo: il viaggio dura circa un mese.",
+    "fasi": [
+      {"da": 1, "nome": "Nascono nuove cellule"},
+      {"da": 2, "nome": "Le cellule salgono e si trasformano"},
+      {"da": 5, "nome": "Le cellule morte si staccano"}
+    ],
+    "passaggi": [
+      {
+        "da": ["strato basale"],
+        "a": ["cheratinocita"],
+        "enzima": "divisione cellulare (mitosi)",
+        "entra": [],
+        "esce": [],
+        "nota": "Le cellule staminali dello strato basale, attaccate alla membrana basale, si dividono: una cellula figlia resta staminale, l'altra comincia a salire verso la superficie come cheratinocita."
+      },
+      {
+        "da": ["cheratinocita"],
+        "a": ["strato spinoso"],
+        "enzima": "desmosomi",
+        "entra": [],
+        "esce": ["cheratina"],
+        "nota": "Salendo, i cheratinociti producono molta cheratina e si tengono stretti tra loro con i desmosomi: al microscopio sembrano coperti di spine, da cui il nome. Qui si trovano anche le cellule di Langerhans, sentinelle del sistema immunitario."
+      },
+      {
+        "da": ["strato spinoso"],
+        "a": ["strato granuloso"],
+        "enzima": "filaggrina",
+        "entra": ["cheratina"],
+        "esce": ["ceramidi"],
+        "nota": "Compaiono granuli scuri di cheratoialina: la filaggrina raccoglie i filamenti di cheratina in fasci compatti. Altri granuli (corpi lamellari) versano tra le cellule lipidi come le ceramidi, che formano la barriera contro la perdita d'acqua."
+      },
+      {
+        "da": ["strato granuloso"],
+        "a": ["strato corneo"],
+        "enzima": "transglutaminasi",
+        "entra": [],
+        "esce": [],
+        "nota": "La cellula perde nucleo e organelli e muore in modo programmato (cornificazione). La transglutaminasi lega tra loro le proteine sotto la membrana e forma un involucro rigido: il cheratinocita diventa un corneocita. Nella pelle spessa di palmi e piante c'è in mezzo anche lo strato lucido."
+      },
+      {
+        "da": ["strato corneo"],
+        "a": ["desquamazione"],
+        "enzima": "callicreine della pelle",
+        "entra": [],
+        "esce": [],
+        "nota": "Lo strato corneo è un muro di corneociti («mattoni») immersi nei lipidi («malta»). In superficie alcune proteasi tagliano i legami rimasti tra le cellule e i corneociti si staccano uno alla volta, mentre dal basso ne arrivano di nuovi."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Strato basale → spinoso → granuloso → (lucido) → corneo → desquamazione",
+      "Le cellule salendo producono cheratina, poi muoiono e diventano corneociti",
+      "Ceramidi e altri lipidi tra le cellule formano la barriera all'acqua",
+      "Un ciclo completo dura circa un mese"
+    ],
+    "dopo": {
+      "titolo": "Che cosa fa la pelle con il sole",
+      "strade": [
+        {
+          "condizione": "Protezione dai raggi UV: l'abbronzatura",
+          "da": "melanocita",
+          "a": "cheratinocita",
+          "enzima": "tirosinasi",
+          "entra": ["tirosina"],
+          "esce": ["melanina"],
+          "nota": "Nei melanociti dello strato basale la tirosinasi trasforma la tirosina in melanina. I melanociti passano la melanina ai cheratinociti vicini, dove si dispone come un cappuccio sopra il nucleo e protegge il DNA."
+        },
+        {
+          "condizione": "Produzione di vitamina D",
+          "da": "7-deidrocolesterolo",
+          "a": "vitamina D₃ (colecalciferolo)",
+          "enzima": "raggi UVB",
+          "entra": [],
+          "esce": [],
+          "nota": "Gli UVB rompono un anello del 7-deidrocolesterolo dell'epidermide e si forma la previtamina D₃, che con il calore del corpo diventa vitamina D₃. Fegato e rene la attivano poi in due passaggi."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Gli strati della pelle, dall'esterno all'interno",
+        "voci": [
+          ["Epidermide (epitelio senza vasi sanguigni)", ["strato corneo", "strato granuloso", "strato spinoso", "strato basale"]],
+          ["Derma (connettivo con vasi, nervi e annessi)", ["derma"]],
+          ["Ipoderma o sottocute (soprattutto grasso)", ["ipoderma"]]
+        ]
+      },
+      {
+        "titolo": "Gli annessi della pelle",
+        "voci": [
+          ["Fatti di cheratina dura", ["pelo", "unghia"]],
+          ["Ghiandole", ["ghiandola sudoripara", "ghiandola sebacea"]],
+          ["Sensori", ["recettori cutanei"]]
+        ]
+      }
+    ]
+  },
+  "apparato riproduttore": {
+    "titolo": "Apparato riproduttore: dai gameti all'impianto",
+    "dove": "Testicoli e vie spermatiche nell'uomo; ovaio, tuba di Falloppio e utero nella donna",
+    "inizio": "spermatogonio",
+    "intro": "Per formare un nuovo essere umano servono due gameti: lo spermatozoo prodotto dal testicolo e l'ovocita prodotto dall'ovaio, ciascuno con metà dei cromosomi (23). Si incontrano nella tuba di Falloppio, dove avviene la fecondazione. Lo zigote si divide mentre scende verso l'utero e, circa una settimana dopo, si impianta nella sua parete.",
+    "fasi": [
+      {"da": 1, "nome": "Si formano i gameti"},
+      {"da": 4, "nome": "Il viaggio dei gameti e la fecondazione"},
+      {"da": 7, "nome": "Dallo zigote all'impianto"}
+    ],
+    "passaggi": [
+      {
+        "da": ["spermatogonio"],
+        "a": ["spermatozoo"],
+        "enzima": "cellule del Sertoli",
+        "entra": ["FSH", "testosterone"],
+        "esce": [],
+        "nota": "Nei tubuli seminiferi, dalla pubertà in poi, gli spermatogoni (46 cromosomi) si dividono, vanno incontro alla meiosi e diventano spermatidi (23 cromosomi), che si allungano e mettono la coda (spermiogenesi). Le cellule del Sertoli li nutrono sotto lo stimolo di FSH e testosterone; tutto dura circa due mesi e mezzo."
+      },
+      {
+        "da": ["spermatozoo"],
+        "a": ["sperma (liquido seminale)"],
+        "enzima": "epididimo",
+        "entra": ["fruttosio"],
+        "esce": [],
+        "nota": "Nell'epididimo gli spermatozoi maturano e diventano capaci di muoversi. Con l'eiaculazione passano nel dotto deferente e si mescolano con i liquidi delle vescicole seminali (ricchi di fruttosio, il loro carburante) e della prostata."
+      },
+      {
+        "da": ["ovocita I"],
+        "a": ["ovocita II"],
+        "enzima": "follicolo ovarico",
+        "entra": ["FSH"],
+        "esce": [],
+        "nota": "Gli ovociti si formano prima della nascita e restano fermi a metà della prima divisione meiotica. A ogni ciclo l'FSH fa crescere alcuni follicoli, ma di solito ne matura uno solo: poco prima dell'ovulazione il suo ovocita finisce la meiosi I, espelle il primo globulo polare e si ferma di nuovo, in metafase II."
+      },
+      {
+        "da": ["ovocita II"],
+        "a": ["tuba di Falloppio"],
+        "enzima": "LH",
+        "entra": [],
+        "esce": [],
+        "nota": "A metà ciclo (verso il 14° giorno in un ciclo di 28) un picco di LH fa rompere il follicolo: è l'ovulazione. Le fimbrie della tuba raccolgono l'ovocita, che resta fecondabile solo per circa 12-24 ore; il follicolo vuoto diventa corpo luteo."
+      },
+      {
+        "da": ["sperma (liquido seminale)"],
+        "a": ["tuba di Falloppio"],
+        "enzima": "flagello dello spermatozoo",
+        "entra": [],
+        "esce": [],
+        "nota": "Gli spermatozoi depositati in vagina risalgono cervice, utero e tuba fino all'ampolla; dei milioni di partenza ne arrivano poche centinaia. Lungo la strada avviene la capacitazione, che li rende capaci di fecondare; possono sopravvivere fino a circa 5 giorni."
+      },
+      {
+        "da": ["spermatozoo", "ovocita II"],
+        "a": ["zigote"],
+        "enzima": "reazione acrosomiale",
+        "entra": [],
+        "esce": [],
+        "nota": "Lo spermatozoo attraversa la corona radiata, si lega alla zona pellucida e libera gli enzimi dell'acrosoma, poi la sua membrana si fonde con quella dell'ovocita. La reazione corticale blocca l'ingresso di altri spermatozoi; l'ovocita completa la meiosi II e i due corredi da 23 cromosomi formano lo zigote (46)."
+      },
+      {
+        "da": ["zigote"],
+        "a": ["morula"],
+        "enzima": "divisione cellulare (mitosi)",
+        "entra": [],
+        "esce": [],
+        "nota": "Lo zigote si divide più volte (segmentazione) senza crescere, sempre dentro la zona pellucida, mentre la tuba lo spinge verso l'utero. Verso il 3°-4° giorno è una pallina compatta di circa 16 cellule: la morula."
+      },
+      {
+        "da": ["morula"],
+        "a": ["blastocisti"],
+        "enzima": "trofoblasto",
+        "entra": [],
+        "esce": [],
+        "nota": "Verso il 5° giorno, già nell'utero, le cellule esterne (trofoblasto) pompano liquido all'interno e si forma una cavità: è la blastocisti. Dentro c'è un gruppetto di cellule (massa cellulare interna) che diventerà l'embrione; il trofoblasto formerà la parte fetale della placenta."
+      },
+      {
+        "da": ["blastocisti"],
+        "a": ["endometrio"],
+        "enzima": "sinciziotrofoblasto",
+        "entra": [],
+        "esce": ["hCG"],
+        "nota": "La blastocisti esce dalla zona pellucida e verso il 6°-7° giorno si attacca all'endometrio, preparato dal progesterone. Il sinciziotrofoblasto lo invade (impianto completo verso il 10°-12° giorno) e produce hCG, l'ormone dei test di gravidanza, che mantiene attivo il corpo luteo."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Spermatozoo (23 cromosomi) + ovocita II (23 cromosomi) → zigote (46 cromosomi)",
+      "La fecondazione avviene nell'ampolla della tuba entro circa un giorno dall'ovulazione",
+      "Zigote → morula (3°-4° giorno) → blastocisti (5° giorno) → impianto nell'endometrio (6°-12° giorno)",
+      "L'hCG dell'embrione mantiene il corpo luteo e quindi il progesterone"
+    ],
+    "dopo": {
+      "titolo": "Se la fecondazione non avviene",
+      "strade": [
+        {
+          "condizione": "Nessun embrione e quindi nessun hCG",
+          "da": "corpo luteo",
+          "a": "mestruazione",
+          "enzima": "endometrio",
+          "entra": [],
+          "esce": ["progesterone"],
+          "nota": "Senza hCG il corpo luteo si spegne dopo circa 14 giorni e il progesterone cala. Lo strato superficiale dell'endometrio si sfalda con la mestruazione e comincia un nuovo ciclo."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Gli ormoni della riproduzione",
+        "voci": [
+          ["Dall'ipofisi (comandano le gonadi)", ["FSH", "LH"]],
+          ["Dall'ovaio", ["estrogeni", "progesterone"]],
+          ["Dal testicolo", ["testosterone"]],
+          ["Dall'embrione", ["hCG"]]
+        ]
+      }
+    ]
+  },
+  "apparati del corpo umano": {
+    "titolo": "Apparati del corpo umano: come lavorano insieme (il viaggio dell'ossigeno e del glucosio)",
+    "dove": "Tutto il corpo: polmoni, intestino, cuore e vasi sanguigni, cellule, reni",
+    "inizio": "O₂",
+    "intro": "Nessun apparato lavora da solo. Per produrre energia una cellula ha bisogno di ossigeno, che arriva con l'apparato respiratorio, e di glucosio, che arriva con il digerente; il sangue spinto dal cuore li porta a destinazione. Gli scarti (CO₂ e acidi) vengono eliminati da polmoni e reni, mentre sistema nervoso e ormoni coordinano tutto.",
+    "fasi": [
+      {"da": 1, "nome": "Entrano ossigeno e glucosio (respiratorio e digerente)"},
+      {"da": 4, "nome": "Il trasporto (cardiovascolare)"},
+      {"da": 6, "nome": "Nella cellula: l'energia"},
+      {"da": 8, "nome": "Gli scarti escono (respiratorio e urinario)"}
+    ],
+    "passaggi": [
+      {
+        "da": ["O₂"],
+        "a": ["alveolo polmonare"],
+        "enzima": "diaframma",
+        "entra": [],
+        "esce": [],
+        "nota": "Il diaframma si contrae e si abbassa, il torace si allarga e l'aria entra (inspirazione). Passando per naso, trachea e bronchi l'aria viene filtrata, scaldata e umidificata fino agli alveoli."
+      },
+      {
+        "da": ["alveolo polmonare"],
+        "a": ["emoglobina"],
+        "enzima": "membrana alveolo-capillare",
+        "entra": ["O₂"],
+        "esce": [],
+        "nota": "L'ossigeno attraversa per diffusione la sottilissima parete tra alveolo e capillare, perché nell'alveolo è più concentrato che nel sangue venoso. Nel sangue si lega quasi tutto all'emoglobina dei globuli rossi."
+      },
+      {
+        "da": ["amido"],
+        "a": ["glucosio"],
+        "enzima": "intestino tenue",
+        "entra": [],
+        "esce": [],
+        "nota": "Intanto il digerente smonta l'amido del pane e della pasta in glucosio (amilasi della saliva e del pancreas, poi enzimi dell'intestino). Le cellule dell'intestino tenue assorbono il glucosio e lo passano al sangue della vena porta, che va al fegato."
+      },
+      {
+        "da": ["emoglobina", "glucosio"],
+        "a": ["sangue arterioso"],
+        "enzima": "cuore",
+        "entra": [],
+        "esce": [],
+        "nota": "Il sangue ossigenato torna dai polmoni al cuore sinistro, che lo spinge nell'aorta verso tutto il corpo. Il glucosio, dopo il fegato, raggiunge il cuore destro, passa dai polmoni e arriva anch'esso al cuore sinistro. A riposo il cuore pompa circa 5 litri al minuto."
+      },
+      {
+        "da": ["sangue arterioso"],
+        "a": ["cellula"],
+        "enzima": "capillari",
+        "entra": [],
+        "esce": [],
+        "nota": "Nei capillari, dove la parete è un solo strato di cellule, l'ossigeno si stacca dall'emoglobina (nei tessuti ce n'è poco e c'è più CO₂ e acidità) e diffonde nelle cellule. Il glucosio entra con i trasportatori GLUT; in muscolo e tessuto adiposo serve l'insulina."
+      },
+      {
+        "da": ["cellula"],
+        "a": ["mitocondrio"],
+        "enzima": "citoplasma",
+        "entra": ["glucosio"],
+        "esce": ["piruvato", "ATP"],
+        "nota": "Nel citoplasma la glicolisi spezza ogni glucosio in 2 piruvato e dà un piccolo guadagno di ATP. Se c'è ossigeno, il piruvato entra nel mitocondrio."
+      },
+      {
+        "da": ["mitocondrio"],
+        "a": ["CO₂", "H₂O"],
+        "enzima": "catena respiratoria e ATP sintasi",
+        "entra": ["piruvato", "O₂", "ADP"],
+        "esce": ["ATP"],
+        "nota": "Nel mitocondrio il ciclo di Krebs ossida i carboni del piruvato fino a CO₂; la catena respiratoria consegna gli elettroni all'ossigeno, che diventa acqua, e l'ATP sintasi produce la maggior parte dell'ATP (circa 30-32 per glucosio in tutto)."
+      },
+      {
+        "da": ["CO₂"],
+        "a": ["bicarbonato"],
+        "enzima": "anidrasi carbonica",
+        "entra": ["H₂O"],
+        "esce": ["H⁺"],
+        "nota": "La CO₂ esce dalle cellule e passa nel sangue venoso. Nei globuli rossi l'anidrasi carbonica la unisce all'acqua: si formano bicarbonato, che viaggia nel plasma, e H⁺, che l'emoglobina tampona."
+      },
+      {
+        "da": ["bicarbonato"],
+        "a": ["CO₂"],
+        "enzima": "anidrasi carbonica",
+        "entra": ["H⁺"],
+        "esce": ["H₂O"],
+        "nota": "Il sangue venoso torna al cuore destro e va ai polmoni. Nei capillari polmonari la reazione va al contrario: si riforma CO₂, che diffonde negli alveoli ed esce con l'espirazione."
+      },
+      {
+        "da": ["H⁺"],
+        "a": ["urina"],
+        "enzima": "rene",
+        "entra": [],
+        "esce": ["bicarbonato"],
+        "nota": "La CO₂ è un acido «volatile» che se ne va dai polmoni; gli acidi «fissi» prodotti soprattutto dalle proteine li elimina il rene, che secerne H⁺ e recupera bicarbonato. Il rene filtra anche il glucosio ma lo riassorbe tutto, finché la glicemia non è troppo alta."
+      }
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Respiratorio (O₂) + digerente (glucosio) → cardiovascolare (trasporto) → cellule (ATP nei mitocondri)",
+      "Scarti: CO₂ eliminata dai polmoni, acidi fissi e urea eliminati dai reni",
+      "Il sistema nervoso regola respiro e battito, il sistema endocrino (insulina e glucagone) regola il glucosio",
+      "Glucosio + 6 O₂ → 6 CO₂ + 6 H₂O + energia (ATP)"
+    ],
+    "dopo": {
+      "titolo": "Chi tiene in equilibrio il glucosio (sistema endocrino)",
+      "strade": [
+        {
+          "condizione": "Dopo un pasto: glucosio alto nel sangue",
+          "da": "glucosio",
+          "a": "glicogeno",
+          "enzima": "insulina",
+          "entra": [],
+          "esce": [],
+          "nota": "Le cellule β del pancreas liberano insulina: muscoli e tessuto adiposo prendono il glucosio, fegato e muscoli lo conservano come glicogeno e la glicemia scende."
+        },
+        {
+          "condizione": "A digiuno: glucosio basso nel sangue",
+          "da": "glicogeno",
+          "a": "glucosio",
+          "enzima": "glucagone",
+          "entra": [],
+          "esce": [],
+          "nota": "Le cellule α del pancreas liberano glucagone: il fegato smonta il glicogeno e produce nuovo glucosio (gluconeogenesi), che passa nel sangue e la glicemia risale."
+        }
+      ]
+    },
+    "da_sapere": [
+      {
+        "titolo": "Chi coordina gli apparati",
+        "voci": [
+          ["Sistema nervoso (veloce: segnali elettrici)", ["centri respiratori del bulbo", "sistema nervoso autonomo"]],
+          ["Sistema endocrino (più lento: ormoni nel sangue)", ["insulina", "glucagone"]]
+        ]
+      }
+    ]
+  }
+}

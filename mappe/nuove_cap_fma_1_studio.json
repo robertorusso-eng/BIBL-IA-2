@@ -1,0 +1,382 @@
+{
+"Statica ed equilibrio dei corpi": {
+"superiore": {
+"spiegazione": [
+"La statica studia i corpi che restano fermi (o si muovono di moto rettilineo uniforme) perché le forze che agiscono su di loro si compensano. Per un punto materiale basta una condizione: la somma vettoriale delle forze deve essere nulla, ΣF = 0. In pratica si scompongono le forze lungo due assi perpendicolari e si impone ΣFₓ = 0 e ΣFᵧ = 0. Esempio: una lampada di 5,0 kg è appesa a due funi simmetriche che formano ciascuna un angolo di 30° con l'orizzontale. Le componenti orizzontali delle tensioni si annullano a vicenda; in verticale 2·T·sin 30° = m·g, cioè 2·T·0,5 = 5,0·9,8, quindi T = 49 N: ogni fune regge quanto l'intero peso della lampada. Più le funi sono vicine all'orizzontale, più la tensione cresce.",
+"Per un corpo esteso (corpo rigido) non basta ΣF = 0: il corpo potrebbe ruotare. Serve anche che la somma dei momenti delle forze, calcolati rispetto a un punto qualunque, sia nulla: ΣM = 0. Il momento di una forza rispetto a un punto O vale M = F·b, dove b è il braccio, cioè la distanza tra O e la retta d'azione della forza (equivalentemente M = F·r·sin θ). Si misura in N·m e ha un segno: per convenzione positivo se fa ruotare in senso antiorario. Una coppia di forze (due forze uguali e opposte con rette d'azione diverse) ha risultante nulla ma momento diverso da zero: è quello che fai girando un volante.",
+"Le leve sono l'applicazione più classica. Una leva è in equilibrio quando F_motrice·b_motrice = F_resistente·b_resistente. Esempio: su un'altalena a bilico un bambino di 30 kg siede a 2,0 m dal fulcro; dove deve sedersi un bambino di 40 kg? 30·g·2,0 = 40·g·x, quindi x = 1,5 m. Le leve si classificano in tre generi: primo genere con il fulcro in mezzo (forbici, altalena), secondo genere con la resistenza in mezzo (schiaccianoci, carriola, sempre vantaggiose), terzo genere con la forza motrice in mezzo (pinzette, avambraccio, sempre svantaggiose ma veloci).",
+"Sul piano inclinato il peso si scompone in una componente parallela al piano, m·g·sin α, che tende a far scivolare il corpo, e una perpendicolare, m·g·cos α, bilanciata dalla reazione normale N. Per una cassa di 10 kg su un piano a 30°: componente parallela 10·9,8·0,5 = 49 N, normale 10·9,8·0,866 ≈ 84,9 N. L'attrito statico può valere al massimo F_s,max = μ_s·N: se μ_s = 0,6 l'attrito può arrivare a 0,6·84,9 ≈ 51 N > 49 N, quindi la cassa resta ferma. Allo stesso modo, per smuovere una cassa di 20 kg su un pavimento con μ_s = 0,5 serve una spinta orizzontale maggiore di 0,5·20·9,8 = 98 N.",
+"Il baricentro è il punto in cui si può pensare concentrato tutto il peso del corpo. L'equilibrio può essere stabile (se spostato, il corpo torna indietro: il baricentro si alza, come una pallina sul fondo di una ciotola), instabile (si allontana: il baricentro si abbassa, pallina in cima a una cupola) o indifferente (resta nella nuova posizione: sfera su un piano). Un corpo appoggiato su una base resta in piedi finché la verticale passante per il baricentro cade dentro la base d'appoggio: per questo un camion carico in alto si ribalta più facilmente e gli equilibristi abbassano il baricentro allargando le gambe."
+],
+"metodo": [
+"Per ogni esercizio disegna sempre il diagramma di corpo libero: il corpo isolato con tutte le forze (peso, reazioni, tensioni, attriti) come frecce.",
+"Scegli gli assi in modo furbo: sul piano inclinato un asse parallelo al piano e uno perpendicolare, così il peso è l'unica forza da scomporre.",
+"Per il corpo rigido scrivi prima l'equazione dei momenti rispetto al punto dove agiscono le forze incognite: il loro momento è zero e l'equazione si semplifica.",
+"Esercitati con una serie di leve dei tre generi, riconoscendo ogni volta fulcro, forza motrice e resistenza.",
+"Controlla sempre le unità: forze in newton, masse in kg, bracci in metri, momenti in N·m.",
+"Alla fine verifica il risultato con il buon senso: una tensione non può essere negativa e l'attrito statico non supera mai μ_s·N."
+],
+"ricorda": [
+"Equilibrio = niente traslazione (ΣF = 0) e niente rotazione (ΣM = 0).",
+"Braccio = distanza dalla retta d'azione, non dal punto in cui la forza è applicata.",
+"Funi quasi orizzontali = tensioni enormi: per questo un filo da stendere teso non si può rendere perfettamente dritto.",
+"Leva di secondo genere = sempre vantaggiosa, come la carriola."
+],
+"errori": [
+"Usare la distanza dal punto di applicazione invece del braccio: se la forza è inclinata il momento è F·r·sin θ, non F·r.",
+"Credere che l'attrito statico valga sempre μ_s·N: quello è solo il valore massimo, l'attrito vale quanto basta a impedire il moto.",
+"Scambiare sin e cos sul piano inclinato: per α → 0 la componente parallela deve tendere a zero, quindi è m·g·sin α.",
+"Dimenticare la condizione sui momenti: un corpo con ΣF = 0 può comunque ruotare se agisce una coppia.",
+"Pensare che la reazione normale sia sempre uguale al peso: sul piano inclinato vale m·g·cos α, e cambia se ci sono altre forze verticali."
+],
+"domande": [
+{"domanda": "Quali sono le due condizioni di equilibrio di un corpo rigido?", "risposta": "La somma delle forze deve essere nulla (ΣF = 0) e la somma dei momenti rispetto a un punto qualsiasi deve essere nulla (ΣM = 0)."},
+{"domanda": "Una forza di 20 N agisce perpendicolarmente all'estremità di una chiave lunga 0,25 m. Quanto vale il momento?", "risposta": "M = F·b = 20·0,25 = 5,0 N·m."},
+{"domanda": "A che genere appartiene lo schiaccianoci e perché è vantaggioso?", "risposta": "È una leva di secondo genere: la resistenza (la noce) sta tra il fulcro e la forza motrice, quindi il braccio motore è sempre più lungo di quello resistente."},
+{"domanda": "Un corpo di 4,0 kg è fermo su un piano inclinato di 30°. Quanto vale la forza d'attrito statico?", "risposta": "Deve bilanciare la componente parallela del peso: 4,0·9,8·sin 30° = 19,6 N, diretta verso l'alto lungo il piano."},
+{"domanda": "Quando un corpo appoggiato si ribalta?", "risposta": "Quando la verticale passante per il baricentro esce dalla base d'appoggio: il momento del peso allora fa ruotare il corpo attorno allo spigolo."}
+]
+},
+"universita": {
+"spiegazione": [
+"In meccanica un corpo rigido è in equilibrio statico se la risultante delle forze esterne e il momento risultante delle forze esterne sono nulli: ΣF = 0 e ΣM_O = 0, dove M_O = Σ rᵢ × Fᵢ. Nello spazio sono 6 equazioni scalari (3 per le forze, 3 per i momenti), nel piano 3 (ΣFₓ = 0, ΣFᵧ = 0, ΣM_z = 0). Una proprietà utile: se ΣF = 0, il momento risultante non dipende dal polo scelto, perché M_O' = M_O + (O − O') × ΣF. Si può quindi scegliere il polo dove passano più forze incognite. Le forze interne si annullano a coppie per il terzo principio e non entrano nelle equazioni.",
+"I vincoli (appoggi, cerniere, incastri, funi) esercitano reazioni vincolari incognite. Un appoggio semplice dà una reazione perpendicolare al piano d'appoggio (1 incognita), una cerniera due componenti (2 incognite), un incastro due componenti più un momento (3 incognite). Una struttura piana è isostatica quando le incognite sono esattamente 3 e le equazioni le determinano; iperstatica se sono di più (servono le deformazioni per risolverla). Esempio: trave lunga 4,0 m appoggiata agli estremi A e B, peso proprio 200 N al centro e un carico di 600 N a 1,0 m da A. Momenti rispetto ad A: R_B·4,0 = 200·2,0 + 600·1,0 = 1000, quindi R_B = 250 N; dalla somma delle forze R_A = 800 − 250 = 550 N. Il vincolo più vicino al carico porta di più.",
+"Un problema classico con l'attrito è la scala appoggiata a una parete liscia su un pavimento scabro con coefficiente μ. Siano L la lunghezza, m la massa (baricentro a metà) e θ l'angolo con il pavimento. Il pavimento dà N₁ verticale e l'attrito f orizzontale, la parete solo N₂ orizzontale. Allora N₁ = m·g e f = N₂. Momenti rispetto al piede: N₂·L·sin θ = m·g·(L/2)·cos θ, quindi N₂ = m·g/(2·tan θ). La condizione f ≤ μ·N₁ dà tan θ ≥ 1/(2μ). Con μ = 0,4 si ottiene tan θ ≥ 1,25, cioè θ ≥ 51,3°: più la scala è inclinata verso il pavimento, più facilmente scivola.",
+"L'equilibrio si può anche formulare con l'energia. Per forze conservative la forza generalizzata è F = −dU/dq: le posizioni di equilibrio sono i punti stazionari dell'energia potenziale, dU/dq = 0. L'equilibrio è stabile se U ha un minimo (d²U/dq² > 0), instabile se ha un massimo (d²U/dq² < 0); se la derivata seconda è nulla occorre studiare gli ordini superiori. Il principio dei lavori virtuali generalizza l'idea: un sistema con vincoli lisci è in equilibrio se e solo se il lavoro delle forze attive è nullo per ogni spostamento virtuale compatibile con i vincoli, δW = Σ Fᵢ·δrᵢ = 0. Per esempio per una leva ideale F₁·δs₁ = F₂·δs₂ dà subito la legge della leva senza calcolare la reazione del fulcro.",
+"Il baricentro (centro di massa in campo uniforme) si calcola come r_G = Σ mᵢ rᵢ / Σ mᵢ, o con un integrale per corpi continui. Esempio: una L formata da due aste uguali di massa m e lunghezza a, una sull'asse x da 0 ad a e una sull'asse y da 0 ad a: i baricentri delle aste sono in (a/2, 0) e (0, a/2), quindi r_G = (a/4, a/4), un punto che sta fuori dal materiale. Per un corpo sospeso a un punto, all'equilibrio il baricentro si dispone sulla verticale del punto di sospensione, sotto di esso se l'equilibrio è stabile: è il metodo sperimentale per trovarlo con due sospensioni successive."
+],
+"metodo": [
+"Per ogni struttura conta incognite ed equazioni prima di calcolare: capisci subito se è isostatica e se il problema è risolvibile con la sola statica.",
+"Scegli il polo dei momenti dove si incontrano due reazioni incognite, così ottieni subito un'equazione in una sola incognita.",
+"Ripeti la derivazione della scala con attrito anche nel caso di parete scabra (coefficiente μ₂): è un ottimo esercizio di controllo.",
+"Per i problemi di stabilità scrivi U(q), deriva due volte e studia il segno: collega sempre il risultato all'intuizione fisica.",
+"Allenati con il principio dei lavori virtuali su leve, carrucole e meccanismi articolati: spesso è più veloce delle equazioni cardinali.",
+"Calcola baricentri di figure composte (L, T, lamina con foro) usando masse negative per i fori."
+],
+"ricorda": [
+"Se ΣF = 0 il polo dei momenti è libero: sceglilo dove le incognite si annullano.",
+"Equilibrio stabile = minimo dell'energia potenziale, come una pallina in fondo a una valle.",
+"Appoggio 1, cerniera 2, incastro 3: le incognite che porta ogni vincolo.",
+"Scala: tan θ ≥ 1/(2μ), più attrito permette angoli più bassi."
+],
+"errori": [
+"Usare l'attrito come se valesse sempre μ·N e poi trovare risultati contraddittori: in statica μ·N è solo il limite di scivolamento.",
+"Confondere il segno dei momenti in uno stesso esercizio: va fissata una convenzione (antiorario positivo) e mantenuta.",
+"Inserire le forze interne nelle equazioni cardinali del sistema intero: si cancellano a coppie e non vanno contate.",
+"Credere che il baricentro debba trovarsi dentro il corpo: per un anello o una L sta fuori dal materiale.",
+"Considerare stabile ogni punto con dU/dq = 0: un massimo di U è instabile, e serve sempre il segno della derivata seconda."
+],
+"domande": [
+{"domanda": "Perché, se la risultante è nulla, il momento risultante non dipende dal polo?", "risposta": "Perché M_O' = M_O + (O − O') × ΣF; con ΣF = 0 il secondo termine si annulla e i momenti coincidono."},
+{"domanda": "Una trave di 6 m appoggiata agli estremi porta un carico di 900 N a 2 m da A (trascura il peso della trave). Calcola le reazioni.", "risposta": "Momenti in A: R_B·6 = 900·2, quindi R_B = 300 N; R_A = 900 − 300 = 600 N."},
+{"domanda": "Qual è l'angolo minimo con il pavimento per una scala su parete liscia se μ = 0,5?", "risposta": "tan θ ≥ 1/(2·0,5) = 1, quindi θ ≥ 45°."},
+{"domanda": "Come si riconosce la stabilità di un equilibrio con l'energia potenziale?", "risposta": "Nella posizione di equilibrio dU/dq = 0; se d²U/dq² > 0 (minimo) l'equilibrio è stabile, se d²U/dq² < 0 (massimo) è instabile."},
+{"domanda": "Quante equazioni di equilibrio ha un corpo rigido nello spazio e quante nel piano?", "risposta": "Sei nello spazio (tre di forza e tre di momento), tre nel piano (due di forza e una di momento)."}
+]
+}
+},
+"Gravitazione universale": {
+"superiore": {
+"spiegazione": [
+"All'inizio del Seicento Keplero, analizzando le misure di Tycho Brahe, trovò tre leggi del moto dei pianeti. Prima legge: le orbite sono ellissi e il Sole occupa uno dei fuochi. Seconda legge: il raggio Sole-pianeta spazza aree uguali in tempi uguali, quindi il pianeta è più veloce al perielio (vicino al Sole) e più lento all'afelio. Terza legge: il quadrato del periodo è proporzionale al cubo del semiasse maggiore, T²/a³ = costante, la stessa per tutti i pianeti del Sistema solare. Per esempio Marte ha a ≈ 1,52 UA, quindi T = √(1,52³) ≈ 1,87 anni.",
+"Newton spiegò queste leggi con un'unica forza: due corpi di massa m₁ e m₂ a distanza r si attraggono con F = G·m₁·m₂/r², diretta lungo la congiungente. G = 6,67·10⁻¹¹ N·m²/kg² è la costante di gravitazione universale, misurata per la prima volta da Cavendish con la bilancia di torsione. È piccolissima: due persone di 70 kg a 1 m si attraggono con circa 3·10⁻⁷ N. Per la Terra (M = 5,97·10²⁴ kg) e la Luna (m = 7,35·10²² kg) a 3,84·10⁸ m: F = 6,67·10⁻¹¹·5,97·10²⁴·7,35·10²²/(3,84·10⁸)² ≈ 1,98·10²⁰ N. La forza dipende dall'inverso del quadrato: raddoppiando la distanza diventa un quarto.",
+"L'accelerazione di gravità sulla superficie di un pianeta si ricava uguagliando il peso alla forza di Newton: m·g = G·M·m/R², cioè g = G·M/R². Per la Terra (R = 6,371·10⁶ m): g = 6,67·10⁻¹¹·5,97·10²⁴/(6,371·10⁶)² ≈ 9,81 m/s². La massa m del corpo si semplifica: per questo tutti i corpi cadono con la stessa accelerazione. Salendo di quota g diminuisce: a un'altezza pari al raggio terrestre (r = 2R) vale un quarto, circa 2,45 m/s².",
+"Un satellite in orbita circolare è in caduta continua: la forza di gravità fornisce la forza centripeta, G·M·m/r² = m·v²/r, quindi v = √(G·M/r), indipendente dalla massa del satellite. Per la Stazione spaziale internazionale, a circa 400 km di quota (r ≈ 6,771·10⁶ m): v = √(3,98·10¹⁴/6,771·10⁶) ≈ 7,67 km/s e periodo T = 2πr/v ≈ 5550 s, circa 92 minuti. Gli astronauti sembrano senza peso non perché la gravità sia assente (lassù vale ancora circa 8,7 m/s²) ma perché cadono insieme alla stazione.",
+"Dalla stessa uguaglianza si ricava la terza legge di Keplero per orbite circolari: T² = 4π²·r³/(G·M). La costante T²/r³ dipende solo dalla massa del corpo centrale, non da quella del pianeta: si usa per «pesare» il Sole o un pianeta osservando i suoi satelliti. Newton capì così che la stessa forza che fa cadere una mela tiene la Luna in orbita: la Luna, 60 volte più lontana dal centro della Terra della mela, ha un'accelerazione 60² = 3600 volte minore, circa 2,7·10⁻³ m/s², come confermato dal suo periodo di 27,3 giorni."
+],
+"metodo": [
+"Impara a memoria i valori di G, massa e raggio della Terra: compaiono in quasi tutti gli esercizi.",
+"Allenati con le potenze di 10: scrivi i numeri in notazione scientifica e calcola mantissa ed esponente separatamente.",
+"Per ogni problema di orbite parti sempre da «forza di gravità = forza centripeta» e ricava quello che serve.",
+"Disegna l'ellisse con i fuochi, perielio e afelio, e segna le aree uguali della seconda legge.",
+"Risolvi esercizi di proporzionalità: cosa succede a F se la distanza triplica o se una massa raddoppia.",
+"Confronta g sulla Terra, sulla Luna e su Marte usando g = GM/R²."
+],
+"ricorda": [
+"Distanza doppia, forza quattro volte più piccola: legge dell'inverso del quadrato.",
+"La massa del satellite si semplifica sempre: l'orbita dipende solo dal corpo centrale.",
+"Gli astronauti non sono senza gravità: stanno cadendo, come in un ascensore a cui si sono rotti i cavi.",
+"Keplero: ellisse, aree uguali, T² proporzionale ad a³."
+],
+"errori": [
+"Usare l'altezza dal suolo come r: nella legge di Newton r è la distanza dal centro della Terra, cioè R + h.",
+"Pensare che in orbita non ci sia gravità: a 400 km g è ancora circa il 90% di quella al suolo.",
+"Credere che un satellite più pesante debba andare più veloce: v = √(GM/r) non dipende dalla sua massa.",
+"Dimenticare di elevare al quadrato la distanza nel denominatore.",
+"Confondere G (costante universale) con g (accelerazione locale di gravità)."
+],
+"domande": [
+{"domanda": "Enuncia la seconda legge di Keplero e la sua conseguenza sul moto del pianeta.", "risposta": "Il raggio vettore spazza aree uguali in tempi uguali; quindi il pianeta è più veloce vicino al Sole (perielio) e più lento lontano (afelio)."},
+{"domanda": "Come cambia la forza gravitazionale tra due corpi se la distanza si dimezza?", "risposta": "Diventa quattro volte più grande, perché dipende da 1/r²."},
+{"domanda": "Calcola g sulla Luna (M = 7,35·10²² kg, R = 1,74·10⁶ m).", "risposta": "g = GM/R² = 6,67·10⁻¹¹·7,35·10²²/(1,74·10⁶)² ≈ 1,62 m/s², circa un sesto di quella terrestre."},
+{"domanda": "Da cosa dipende la velocità di un satellite in orbita circolare?", "risposta": "Solo dalla massa del corpo centrale e dal raggio dell'orbita: v = √(GM/r)."},
+{"domanda": "Perché tutti i corpi cadono con la stessa accelerazione?", "risposta": "Perché la forza di gravità è proporzionale alla massa del corpo e, dividendo per la massa (F = ma), questa si semplifica: g = GM/R²."}
+]
+},
+"universita": {
+"spiegazione": [
+"La legge di gravitazione in forma vettoriale è F₁₂ = −G·m₁·m₂·r̂/r², dove r̂ è il versore che va da m₁ a m₂. Si definisce il campo gravitazionale g(r) = F/m, che per una massa puntiforme M vale g = −G·M·r̂/r². Il campo è conservativo: il lavoro non dipende dal percorso e si può definire l'energia potenziale U(r) = −G·M·m/r, nulla all'infinito, e il potenziale V = −G·M/r. Vicino alla superficie si ritrova U ≈ m·g·h, perché −GMm/(R + h) + GMm/R ≈ GMm·h/R² = m·g·h per h ≪ R.",
+"Il teorema di Gauss per la gravità afferma che il flusso del campo attraverso una superficie chiusa vale −4πG·M_int. Ne seguono due risultati di Newton: una distribuzione sferica di massa attrae i corpi esterni come se la massa fosse tutta nel centro, e un guscio sferico esercita forza nulla su un corpo al suo interno. Dentro una sfera omogenea la massa interna cresce come r³, quindi g(r) = G·M·r/R³: il campo cresce linearmente dal centro (dove è nullo) fino alla superficie. Un tunnel che attraversasse una Terra omogenea darebbe un moto armonico con periodo 2π√(R³/GM) ≈ 84 minuti.",
+"Per un'orbita circolare di raggio r: v = √(GM/r), energia cinetica K = GMm/(2r), energia potenziale U = −GMm/r, energia meccanica E = −GMm/(2r) = −K. Per un'orbita ellittica vale E = −GMm/(2a) con a semiasse maggiore. La velocità di fuga è quella che porta l'energia a zero: ½mv² − GMm/R = 0, v_f = √(2GM/R). Per la Terra v_f = √(2·3,986·10¹⁴/6,371·10⁶) ≈ 11,2 km/s, cioè √2 volte la velocità orbitale radente (7,9 km/s). Se E < 0 l'orbita è chiusa (ellisse), se E = 0 è una parabola, se E > 0 un'iperbole.",
+"La forza gravitazionale è centrale, quindi il momento angolare L = r × m·v si conserva. Ne seguono due fatti: il moto avviene in un piano e la velocità areolare dA/dt = L/(2m) è costante, cioè la seconda legge di Keplero. Al perielio e all'afelio la velocità è perpendicolare al raggio, quindi r_p·v_p = r_a·v_a. Uguagliando gravità e forza centripeta per un'orbita circolare, GM/r² = 4π²r/T², si ottiene la terza legge T² = 4π²r³/(GM), che per le ellissi vale con il semiasse maggiore a. Nel problema dei due corpi, a rigore, compare M + m al posto di M.",
+"Esempio numerico: l'orbita geostazionaria ha periodo pari al giorno siderale, T = 86 164 s. Da r³ = GM·T²/(4π²) = 3,986·10¹⁴·(86 164)²/39,48 ≈ 7,49·10²² m³ si ottiene r ≈ 4,22·10⁷ m, cioè una quota di circa 35 800 km sopra l'equatore. Velocità orbitale: v = 2πr/T ≈ 3,07 km/s. Energia necessaria per portare 1000 kg dall'orbita bassa a 400 km (r₁ = 6,77·10⁶ m) a quella geostazionaria: ΔE = (GMm/2)(1/r₁ − 1/r₂) = 1,993·10¹⁷·(1,477·10⁻⁷ − 2,37·10⁻⁸) ≈ 2,47·10¹⁰ J. La massa della Terra stessa si ricava dal periodo della Luna: è così che si «pesano» i corpi celesti."
+],
+"metodo": [
+"Ricava da solo, almeno una volta, U = −GMm/r integrando la forza da r all'infinito.",
+"Rifai la dimostrazione con Gauss del campo dentro e fuori una sfera omogenea, disegnando il grafico di g(r).",
+"Per ogni problema orbitale scrivi due conservazioni: energia meccanica e momento angolare.",
+"Tieni una tabella con le energie dell'orbita circolare (K, U, E) e verifica che E = −K.",
+"Esercitati sui trasferimenti di Hohmann: calcola le velocità al perielio e all'afelio dell'ellisse di trasferimento.",
+"Usa GM della Terra (3,986·10¹⁴ m³/s²) invece di G e M separati: riduce errori e calcoli."
+],
+"ricorda": [
+"Orbita circolare: E = −K = U/2.",
+"Velocità di fuga = √2 · velocità orbitale radente.",
+"Forza centrale → momento angolare costante → aree uguali in tempi uguali.",
+"Dentro un guscio sferico il campo è nullo; dentro una sfera piena cresce linearmente con r."
+],
+"errori": [
+"Dare a U un segno positivo: con lo zero all'infinito l'energia potenziale gravitazionale è sempre negativa.",
+"Usare m·g·h per grandi quote: vale solo per h ≪ R, altrimenti serve −GMm/r.",
+"Pensare che per salire di orbita bisogna aumentare la velocità finale: l'orbita più alta ha velocità minore, anche se l'energia totale è maggiore.",
+"Applicare la velocità di fuga come se dipendesse dalla direzione di lancio: ignorando l'atmosfera e la rotazione terrestre dipende solo dal modulo.",
+"Credere che il campo gravitazionale al centro della Terra sia massimo: è nullo."
+],
+"domande": [
+{"domanda": "Ricava la velocità di fuga da un pianeta di massa M e raggio R.", "risposta": "Imponendo energia meccanica nulla: ½mv² − GMm/R = 0, quindi v_f = √(2GM/R)."},
+{"domanda": "Quanto vale l'energia meccanica di un satellite di massa m su un'orbita circolare di raggio r?", "risposta": "E = −GMm/(2r), cioè l'opposto dell'energia cinetica e metà dell'energia potenziale."},
+{"domanda": "Un pianeta ha perielio a 1,0 UA con velocità 40 km/s e afelio a 2,0 UA. Quanto vale la velocità all'afelio?", "risposta": "Per la conservazione del momento angolare r_p·v_p = r_a·v_a, quindi v_a = 40·1,0/2,0 = 20 km/s."},
+{"domanda": "Come varia g all'interno di una sfera omogenea?", "risposta": "Linearmente con la distanza dal centro: g(r) = GMr/R³, nullo al centro e massimo in superficie."},
+{"domanda": "Perché la seconda legge di Keplero è una conseguenza della conservazione del momento angolare?", "risposta": "Perché la velocità areolare vale dA/dt = L/(2m); se la forza è centrale L è costante e quindi lo è anche dA/dt."}
+]
+}
+},
+"Moto armonico e oscillazioni": {
+"superiore": {
+"spiegazione": [
+"Un moto armonico è un moto periodico in cui la posizione varia nel tempo come una funzione seno o coseno: x(t) = A·cos(ω·t + φ). A è l'ampiezza (spostamento massimo), ω la pulsazione in rad/s, φ la fase iniziale. Il periodo T è il tempo di un'oscillazione completa, la frequenza f = 1/T si misura in hertz, e valgono ω = 2π/T = 2πf. Il moto armonico è la proiezione su un diametro di un moto circolare uniforme di raggio A e velocità angolare ω: un'ombra di una pallina che gira su un piatto si muove proprio di moto armonico.",
+"Velocità e accelerazione si ottengono dalla stessa idea: v(t) = −ωA·sin(ωt + φ) e a(t) = −ω²A·cos(ωt + φ) = −ω²·x. La velocità è massima (v_max = ωA) al centro, dove x = 0, ed è nulla agli estremi; l'accelerazione è massima in modulo agli estremi (a_max = ω²A) ed è sempre diretta verso il centro. La relazione a = −ω²x è la firma del moto armonico: accelerazione proporzionale allo spostamento e di verso opposto.",
+"Il sistema massa-molla obbedisce alla legge di Hooke, F = −k·x. Confrontando con F = m·a = −m·ω²·x si ottiene ω = √(k/m) e T = 2π√(m/k). Esempio: una massa di 0,50 kg attaccata a una molla con k = 200 N/m, spostata di 5,0 cm e lasciata. ω = √(200/0,50) = 20 rad/s, T = 2π/20 ≈ 0,314 s, f ≈ 3,18 Hz. Velocità massima ωA = 20·0,050 = 1,0 m/s, accelerazione massima ω²A = 400·0,050 = 20 m/s². Il periodo non dipende dall'ampiezza: oscillazioni ampie e piccole durano uguale.",
+"L'energia meccanica si conserva e passa continuamente da potenziale elastica a cinetica: E = ½kx² + ½mv² = ½kA². Nell'esempio E = ½·200·(0,050)² = 0,25 J; infatti al centro tutta l'energia è cinetica, ½·0,50·(1,0)² = 0,25 J. Nel punto x = A/2 l'energia potenziale è un quarto del totale e quella cinetica tre quarti.",
+"Il pendolo semplice (massa appesa a un filo di lunghezza L) per piccole oscillazioni, sotto i 10-15°, compie un moto armonico con T = 2π√(L/g): il periodo dipende solo dalla lunghezza e da g, non dalla massa né dall'ampiezza (isocronismo, osservato da Galileo). Un pendolo lungo 1,00 m ha T = 2π√(1,00/9,81) ≈ 2,01 s. Nella realtà l'attrito fa diminuire l'ampiezza (oscillazioni smorzate); se invece si spinge un sistema con la sua stessa frequenza naturale l'ampiezza cresce molto: è la risonanza, che si usa per spingere un'altalena e che può far crollare un ponte."
+],
+"metodo": [
+"Disegna sullo stesso grafico x(t), v(t) e a(t) per un periodo: vedi subito gli sfasamenti e dove ciascuna è massima o nulla.",
+"Impara a passare con sicurezza tra T, f e ω: è la fonte del 50% degli errori di calcolo.",
+"Per gli esercizi di energia usa E = ½kA² come totale e sottrai l'energia potenziale per trovare quella cinetica.",
+"Fai un esperimento a casa: misura il periodo di un pendolo con un filo e un cronometro su 10 oscillazioni, poi ricava g.",
+"Confronta molla e pendolo: in entrambi il periodo non dipende dall'ampiezza, ma dipende dalla massa solo per la molla.",
+"Verifica le formule con le unità: √(m/k) ha le dimensioni di un tempo, √(L/g) anche."
+],
+"ricorda": [
+"Molla: più massa → più lento; molla più dura → più veloce (T = 2π√(m/k)).",
+"Al centro corre, agli estremi si ferma e torna indietro.",
+"a = −ω²x: l'accelerazione punta sempre verso il centro.",
+"Il pendolo se ne frega della massa: conta solo la lunghezza."
+],
+"errori": [
+"Confondere frequenza e pulsazione: ω = 2πf, non ω = f.",
+"Mettere la calcolatrice in gradi quando l'argomento ωt è in radianti.",
+"Pensare che il periodo di un pendolo dipenda dalla massa appesa.",
+"Credere che la velocità sia massima agli estremi: lì è nulla, è l'accelerazione a essere massima.",
+"Usare T = 2π√(L/g) anche per oscillazioni ampie: vale solo per piccoli angoli."
+],
+"domande": [
+{"domanda": "Una massa di 2,0 kg oscilla su una molla con k = 50 N/m. Qual è il periodo?", "risposta": "T = 2π√(m/k) = 2π√(2,0/50) = 2π·0,20 ≈ 1,26 s."},
+{"domanda": "Dove è massima la velocità in un moto armonico e quanto vale?", "risposta": "Nella posizione di equilibrio (x = 0), e vale v_max = ωA."},
+{"domanda": "Quanto deve essere lungo un pendolo per avere un periodo di 1,0 s?", "risposta": "L = g·T²/(4π²) = 9,81·1/39,5 ≈ 0,25 m."},
+{"domanda": "Se si quadruplica la massa su una molla, come cambia il periodo?", "risposta": "Raddoppia, perché T è proporzionale a √m."},
+{"domanda": "Che cos'è la risonanza?", "risposta": "Il forte aumento di ampiezza che si ottiene quando un sistema oscillante viene sollecitato con una frequenza uguale (o vicina) alla sua frequenza naturale."}
+]
+},
+"universita": {
+"spiegazione": [
+"L'oscillatore armonico è descritto dall'equazione differenziale m·ẍ + k·x = 0, cioè ẍ + ω₀²·x = 0 con ω₀ = √(k/m). È lineare, del secondo ordine, a coefficienti costanti: la soluzione generale è x(t) = A·cos(ω₀t + φ), oppure equivalentemente x(t) = C₁·cos ω₀t + C₂·sin ω₀t, con due costanti fissate dalle condizioni iniziali. Da x(0) = x₀ e v(0) = v₀ si ricava A = √(x₀² + (v₀/ω₀)²) e tan φ = −v₀/(ω₀·x₀). Esempio: ω₀ = 10 rad/s, x₀ = 3,0 cm, v₀ = 40 cm/s dà A = √(9 + 16) = 5,0 cm. L'importanza dell'oscillatore deriva dal fatto che ogni sistema vicino a un minimo di energia potenziale si comporta così: sviluppando U(x) ≈ U(x₀) + ½U''(x₀)(x − x₀)² si ottiene una molla efficace con k = U''(x₀).",
+"Con un attrito viscoso F = −b·v l'equazione diventa m·ẍ + b·ẋ + k·x = 0. Ponendo γ = b/(2m) le soluzioni sono di tre tipi. Se γ < ω₀ (sottosmorzato) x(t) = A·e^(−γt)·cos(ω_d·t + φ), con ω_d = √(ω₀² − γ²): oscillazioni la cui ampiezza decresce esponenzialmente. Se γ = ω₀ (smorzamento critico) il sistema torna all'equilibrio nel tempo più breve senza oscillare: è il regime scelto per gli ammortizzatori. Se γ > ω₀ (sovrasmorzato) il ritorno è lento e senza oscillazioni. Esempio: m = 1,0 kg, k = 100 N/m, b = 2,0 kg/s: ω₀ = 10 rad/s, γ = 1,0 s⁻¹, ω_d = √99 ≈ 9,95 rad/s. L'ampiezza si riduce di un fattore e in 1/γ = 1,0 s e l'energia, proporzionale al quadrato dell'ampiezza, decresce come e^(−2γt).",
+"Se si aggiunge una forza esterna F₀·cos(ωt), dopo un transitorio il sistema oscilla alla frequenza della forzante con ampiezza A(ω) = (F₀/m)/√((ω₀² − ω²)² + (2γω)²) e uno sfasamento δ dato da tan δ = 2γω/(ω₀² − ω²). Per smorzamento piccolo l'ampiezza è massima per ω ≈ ω₀ (risonanza) e lì la risposta è sfasata di 90° rispetto alla forzante. Il fattore di qualità Q = ω₀/(2γ) misura quanto è stretta la curva di risonanza: la larghezza a metà potenza è Δω ≈ 2γ = ω₀/Q. Nell'esempio precedente Q = 10/2 = 5; un diapason ha Q di migliaia, un circuito RLC può essere descritto con la stessa matematica (L ↔ m, R ↔ b, 1/C ↔ k).",
+"Il pendolo semplice segue l'equazione θ̈ + (g/L)·sin θ = 0, non lineare; per piccoli angoli sin θ ≈ θ e si ottiene T = 2π√(L/g). Per ampiezze maggiori il periodo cresce: con buona approssimazione T ≈ T₀(1 + θ₀²/16), quindi a 20° (0,349 rad) l'aumento è circa lo 0,8%. Per un corpo rigido che oscilla attorno a un asse a distanza d dal baricentro (pendolo fisico) l'equazione I·θ̈ = −m·g·d·θ dà T = 2π√(I/(m·g·d)). Esempio: asta omogenea di 1,00 m appesa a un estremo, I = mL²/3, d = L/2: T = 2π√(2L/(3g)) = 2π√(0,0680) ≈ 1,64 s, meno del pendolo semplice di uguale lunghezza (2,01 s).",
+"Più oscillatori si combinano in modi utili. Molle in parallelo: k = k₁ + k₂; in serie: 1/k = 1/k₁ + 1/k₂. Due moti armonici sullo stesso asse con frequenze vicine danno battimenti con frequenza |f₁ − f₂|: due diapason a 440 e 443 Hz producono 3 battimenti al secondo. Due oscillatori accoppiati hanno modi normali, cioè configurazioni in cui tutto il sistema oscilla con un'unica frequenza (in fase e in controfase); qualsiasi moto è una sovrapposizione dei modi normali. Questa idea porta direttamente alle onde, ai fononi nei solidi e all'oscillatore quantistico."
+],
+"metodo": [
+"Risolvi esplicitamente l'equazione ẍ + ω₀²x = 0 con il metodo dell'equazione caratteristica e ritrova i tre regimi di smorzamento.",
+"Disegna la curva di risonanza A(ω) per diversi valori di Q e lo sfasamento δ(ω): fissa l'idea del passaggio per 90° a ω₀.",
+"Esercitati a riconoscere un oscillatore in sistemi diversi (tubo a U con liquido, galleggiante, circuito LC) scrivendo l'equazione in forma ẍ + ω₀²x = 0.",
+"Per il pendolo fisico calcola I con il teorema di Steiner e controlla che per una massa puntiforme ritrovi il pendolo semplice.",
+"Confronta numericamente il periodo esatto e quello approssimato del pendolo per ampiezze crescenti.",
+"Usa l'analogia meccanica-elettrica per studiare insieme oscillatori e circuiti RLC."
+],
+"ricorda": [
+"Ogni minimo di energia potenziale è, da vicino, una molla con k = U''.",
+"γ < ω₀ oscilla, γ = ω₀ torna più in fretta, γ > ω₀ si trascina.",
+"Alla risonanza la risposta è in ritardo di un quarto di periodo.",
+"Q alto = campana che suona a lungo e risonanza stretta."
+],
+"errori": [
+"Usare ω₀ invece di ω_d per il periodo delle oscillazioni smorzate: la differenza è piccola solo se γ ≪ ω₀.",
+"Pensare che l'ampiezza a regime dipenda dalle condizioni iniziali: dipende solo da forzante e smorzamento, le condizioni iniziali contano nel transitorio.",
+"Scambiare le formule delle molle in serie e in parallelo (in serie la molla equivalente è più morbida).",
+"Usare la distanza dal punto di sospensione al baricentro come lunghezza del pendolo fisico: la lunghezza equivalente è I/(m·d).",
+"Dimenticare che l'energia di un oscillatore smorzato decresce con 2γ, il doppio del tasso dell'ampiezza."
+],
+"domande": [
+{"domanda": "Scrivi l'equazione del moto di un oscillatore smorzato e la condizione di smorzamento critico.", "risposta": "m·ẍ + b·ẋ + k·x = 0; lo smorzamento è critico quando γ = b/(2m) = ω₀, cioè b = 2√(km)."},
+{"domanda": "Un oscillatore ha ω₀ = 100 rad/s e γ = 2 s⁻¹. Quanto vale Q e quanto è larga la risonanza?", "risposta": "Q = ω₀/(2γ) = 25; larghezza Δω ≈ 2γ = 4 rad/s."},
+{"domanda": "Ricava il periodo di un'asta di lunghezza L appesa a un estremo.", "risposta": "T = 2π√(I/(mgd)) con I = mL²/3 e d = L/2, quindi T = 2π√(2L/(3g))."},
+{"domanda": "Due molle uguali con k = 100 N/m sono collegate in serie e reggono 1,0 kg. Qual è il periodo?", "risposta": "k_eq = 50 N/m, quindi T = 2π√(1,0/50) ≈ 0,89 s."},
+{"domanda": "Con x₀ = 0 e v₀ = 2,0 m/s, ω₀ = 4,0 rad/s, quanto vale l'ampiezza?", "risposta": "A = √(x₀² + (v₀/ω₀)²) = 2,0/4,0 = 0,50 m."}
+]
+}
+},
+"Ottica geometrica: specchi e lenti": {
+"superiore": {
+"spiegazione": [
+"L'ottica geometrica descrive la luce come raggi rettilinei, un'approssimazione valida quando gli oggetti sono molto più grandi della lunghezza d'onda. Nella riflessione l'angolo di incidenza è uguale all'angolo di riflessione, entrambi misurati rispetto alla normale alla superficie, e i due raggi stanno nello stesso piano. Nella rifrazione, cioè nel passaggio da un mezzo all'altro, il raggio cambia direzione secondo la legge di Snell: n₁·sin θ₁ = n₂·sin θ₂, dove n = c/v è l'indice di rifrazione (aria ≈ 1,00, acqua 1,33, vetro circa 1,5). Esempio: un raggio passa dall'aria all'acqua con θ₁ = 45°: sin θ₂ = 0,707/1,33 = 0,532, quindi θ₂ ≈ 32°: entrando in un mezzo più denso il raggio si avvicina alla normale.",
+"Passando da un mezzo più denso a uno meno denso il raggio si allontana dalla normale e, oltre un angolo limite, non esce più: è la riflessione totale. L'angolo limite vale sin θ_L = n₂/n₁. Dal vetro (n = 1,5) all'aria: sin θ_L = 1/1,5 = 0,667, θ_L ≈ 41,8°. Su questo fenomeno si basano le fibre ottiche e i prismi dei binocoli. L'indice di rifrazione dipende leggermente dal colore (dispersione): per questo un prisma separa la luce bianca nei colori dell'arcobaleno.",
+"Uno specchio sferico concavo ha un fuoco F a distanza f = R/2 dal vertice, dove R è il raggio di curvatura: i raggi paralleli all'asse ottico, dopo la riflessione, passano per F. La posizione dell'immagine si ricava con l'equazione dei punti coniugati 1/p + 1/q = 1/f, con p distanza dell'oggetto e q dell'immagine, e l'ingrandimento è G = −q/p. Esempio: specchio concavo con f = 10 cm e oggetto a 30 cm: 1/q = 1/10 − 1/30 = 2/30, q = 15 cm; G = −15/30 = −0,5: immagine reale, capovolta, grande la metà. Se l'oggetto è tra fuoco e specchio (p < f) q risulta negativo: immagine virtuale, dritta, ingrandita (specchio da trucco). Lo specchio convesso (f negativa) dà sempre immagini virtuali, dritte e rimpicciolite, e allarga il campo visivo: specchietti retrovisori.",
+"Le lenti sottili seguono la stessa equazione 1/p + 1/q = 1/f. Le lenti convergenti (più spesse al centro) hanno f > 0, le divergenti (più sottili al centro) f < 0. Il potere diottrico è P = 1/f, misurato in diottrie (m⁻¹): una lente con f = 0,50 m ha P = +2 D. Esempio: lente convergente con f = 20 cm e oggetto a 10 cm: 1/q = 1/20 − 1/10 = −1/20, q = −20 cm. L'immagine è virtuale, dalla stessa parte dell'oggetto, dritta e con G = −q/p = +2: è la lente d'ingrandimento. Se invece l'oggetto sta a 60 cm: 1/q = 1/20 − 1/60 = 2/60, q = 30 cm, immagine reale e capovolta con G = −0,5, come nella macchina fotografica.",
+"Per costruire le immagini si usano tre raggi notevoli: quello parallelo all'asse, che dopo la lente passa per il fuoco; quello per il centro della lente, che non devia; quello passante per il primo fuoco, che esce parallelo all'asse. L'occhio funziona come una lente convergente che forma un'immagine reale sulla retina. Nella miopia l'immagine si forma davanti alla retina e si corregge con lenti divergenti; nell'ipermetropia dietro, e si corregge con lenti convergenti. Due lenti sottili a contatto si comportano come un'unica lente di potere P = P₁ + P₂."
+],
+"metodo": [
+"Per ogni esercizio fai il disegno con almeno due raggi notevoli prima di usare la formula: così controlli il segno di q.",
+"Impara una convenzione dei segni e usala sempre: p positivo per oggetti reali, q positivo per immagini reali, f positiva per specchi concavi e lenti convergenti.",
+"Prepara una tabella con le posizioni dell'oggetto (oltre 2f, in 2f, tra f e 2f, in f, dentro f) e il tipo di immagine.",
+"Esercitati con Snell disegnando la normale e misurando gli angoli da essa, mai dalla superficie.",
+"Fai esercizi sulla riflessione totale calcolando l'angolo limite per acqua, vetro e diamante.",
+"Collega ogni caso a un oggetto reale: lente d'ingrandimento, proiettore, macchina fotografica, specchietto."
+],
+"ricorda": [
+"Raggio che entra nel denso si avvicina alla normale, che esce si allontana.",
+"q negativo = immagine virtuale, dalla stessa parte dell'oggetto.",
+"Oggetto dentro la focale di una convergente = lente d'ingrandimento.",
+"Miope vede bene da vicino e porta lenti divergenti (negative)."
+],
+"errori": [
+"Misurare gli angoli dalla superficie invece che dalla normale.",
+"Mescolare le convenzioni di segno tra specchi e lenti, ottenendo immagini dalla parte sbagliata.",
+"Dimenticare di fare il reciproco alla fine: 1/q = 0,05 cm⁻¹ significa q = 20 cm, non 0,05 cm.",
+"Pensare che uno specchio convesso possa dare immagini reali di un oggetto reale.",
+"Calcolare il potere diottrico con f in centimetri: va espressa in metri."
+],
+"domande": [
+{"domanda": "Calcola l'angolo limite per il passaggio acqua-aria (n = 1,33).", "risposta": "sin θ_L = 1/1,33 = 0,752, θ_L ≈ 48,8°."},
+{"domanda": "Un oggetto è a 15 cm da uno specchio concavo con f = 10 cm. Dove si forma l'immagine e com'è?", "risposta": "1/q = 1/10 − 1/15 = 1/30, q = 30 cm; G = −2: immagine reale, capovolta, ingrandita due volte."},
+{"domanda": "Quanto vale il potere diottrico di una lente divergente con f = −25 cm?", "risposta": "P = 1/f = 1/(−0,25 m) = −4 D."},
+{"domanda": "Che tipo di lente corregge la miopia e perché?", "risposta": "Una lente divergente: l'occhio miope fa convergere troppo i raggi davanti alla retina, la lente divergente sposta l'immagine indietro sulla retina."},
+{"domanda": "Su che fenomeno si basano le fibre ottiche?", "risposta": "Sulla riflessione totale: la luce colpisce la parete interna con un angolo maggiore dell'angolo limite e resta intrappolata nella fibra."}
+]
+},
+"universita": {
+"spiegazione": [
+"Le leggi dell'ottica geometrica discendono dal principio di Fermat: la luce percorre il cammino che rende stazionario il tempo di percorrenza, cioè il cammino ottico L = ∫ n·ds. Per la riflessione si ottiene l'uguaglianza degli angoli, per la rifrazione la legge di Snell n₁ sin θ₁ = n₂ sin θ₂: minimizzando t(x) = n₁√(h₁² + x²)/c + n₂√(h₂² + (d − x)²)/c si trova n₁ sin θ₁ = n₂ sin θ₂. L'ottica geometrica vale quando le dimensioni in gioco sono molto maggiori di λ; altrimenti contano diffrazione e interferenza. Inoltre si lavora in approssimazione parassiale: raggi poco inclinati rispetto all'asse, sin θ ≈ tan θ ≈ θ.",
+"Per una singola superficie sferica di raggio R che separa due mezzi (diottro) l'equazione dei punti coniugati è n₁/p + n₂/q = (n₂ − n₁)/R, con R positivo se il centro sta dalla parte della luce uscente. Applicandola due volte a una lente sottile di indice n in aria si ricava la formula del costruttore di lenti: 1/f = (n − 1)·(1/R₁ − 1/R₂). Esempio: lente biconvessa simmetrica con n = 1,50, R₁ = +20 cm e R₂ = −20 cm: 1/f = 0,50·(1/20 + 1/20) = 0,050 cm⁻¹, f = 20 cm. Se la stessa lente è immersa in acqua (n_m = 1,33) il fattore diventa (n − n_m)/n_m = 0,128 invece di 0,50, e la focale sale a circa 78 cm: per questo sott'acqua senza maschera vediamo sfocato.",
+"Nei sistemi di più lenti l'immagine della prima diventa l'oggetto della seconda, e l'ingrandimento totale è il prodotto degli ingrandimenti. Esempio: lente 1 con f₁ = 10 cm, lente 2 con f₂ = 15 cm a 40 cm di distanza, oggetto a 15 cm davanti alla prima. Prima lente: 1/q₁ = 1/10 − 1/15 = 1/30, q₁ = 30 cm, G₁ = −2. L'immagine sta a 40 − 30 = 10 cm davanti alla seconda lente, quindi p₂ = 10 cm: 1/q₂ = 1/15 − 1/10 = −1/30, q₂ = −30 cm (immagine virtuale), G₂ = +3. Ingrandimento totale G = −6: immagine virtuale e capovolta rispetto all'oggetto, sei volte più grande. Se l'immagine intermedia cade oltre la seconda lente l'oggetto per essa è virtuale e p₂ si prende negativo.",
+"Gli strumenti ottici combinano lenti per aumentare l'angolo sotto cui vediamo un oggetto. La lente d'ingrandimento dà un ingrandimento angolare M ≈ 25 cm/f (con l'occhio rilassato). Il microscopio composto ha obiettivo di focale breve e oculare: M ≈ −(L/f_ob)·(25 cm/f_oc), con L distanza tra il fuoco posteriore dell'obiettivo e quello dell'oculare; con L = 16 cm, f_ob = 4 mm, f_oc = 25 mm si ottiene circa −40·10 = −400. Il telescopio kepleriano, con oggetto all'infinito, ha M = −f_ob/f_oc: con f_ob = 1,0 m e f_oc = 2,5 cm si ottiene −40. Il potere risolutivo, però, non è dato dall'ottica geometrica ma dalla diffrazione: θ_min ≈ 1,22·λ/D.",
+"Le lenti reali hanno aberrazioni. L'aberrazione sferica nasce perché i raggi lontani dall'asse vengono focalizzati più vicino alla lente (fallisce l'approssimazione parassiale) e si riduce con diaframmi o superfici asferiche. L'aberrazione cromatica deriva dalla dispersione n(λ): il blu ha n maggiore del rosso e si focalizza più vicino; si corregge con doppietti acromatici di vetri a dispersione diversa. Esistono poi coma, astigmatismo, curvatura di campo e distorsione. Per sistemi complessi si usano le matrici di trasferimento dei raggi (ottica matriciale), che descrivono ogni elemento con una matrice 2×2 che agisce sul vettore (altezza, angolo) del raggio."
+],
+"metodo": [
+"Ricava la legge di Snell dal principio di Fermat minimizzando il tempo: è un ottimo esercizio di derivate.",
+"Usa una convenzione dei segni unica (per esempio quella cartesiana) per diottri, specchi e lenti e scrivila su un foglio da tenere davanti.",
+"Nei sistemi di lenti procedi una lente alla volta, annotando p, q, G e la distanza tra le lenti.",
+"Disegna in scala i sistemi a due lenti e confronta il tracciamento grafico con il calcolo.",
+"Calcola la focale della stessa lente in aria, acqua e olio per capire il ruolo dell'indice relativo.",
+"Prova a scrivere la matrice di trasferimento di una lente sottile e di un tratto di propagazione libera e moltiplicale."
+],
+"ricorda": [
+"Fermat: la luce sceglie il cammino ottico stazionario, non sempre quello più corto in metri.",
+"Costruttore di lenti: (n − 1) per la differenza delle curvature.",
+"Ingrandimenti in serie si moltiplicano, poteri a contatto si sommano.",
+"Il blu si piega di più: aberrazione cromatica con fuoco blu più vicino."
+],
+"errori": [
+"Dimenticare il segno di R₂ nella formula del costruttore: per una lente biconvessa R₂ è negativo e i termini si sommano.",
+"Usare la distanza dell'immagine intermedia dalla prima lente come p₂: va misurata dalla seconda lente.",
+"Applicare il potere risolutivo dell'ottica geometrica: il limite è imposto dalla diffrazione.",
+"Considerare costante la focale di una lente in mezzi diversi: dipende dall'indice relativo.",
+"Usare la formula delle lenti sottili per lenti spesse senza i piani principali."
+],
+"domande": [
+{"domanda": "Una lente piano-convessa (R₁ = 15 cm, R₂ = ∞) ha n = 1,6. Quanto vale la focale?", "risposta": "1/f = 0,6·(1/15 − 0) = 0,04 cm⁻¹, f = 25 cm."},
+{"domanda": "Enuncia il principio di Fermat.", "risposta": "La luce che va da un punto a un altro percorre il cammino per cui il cammino ottico ∫ n·ds (cioè il tempo di percorrenza) è stazionario rispetto a piccole variazioni del percorso."},
+{"domanda": "Un telescopio ha obiettivo da 1,2 m di focale e oculare da 3 cm. Qual è l'ingrandimento?", "risposta": "M = −f_ob/f_oc = −120/3 = −40."},
+{"domanda": "Che cos'è l'aberrazione cromatica e come si corregge?", "risposta": "È la diversa focalizzazione dei colori dovuta alla dispersione n(λ); si corregge con doppietti acromatici formati da una lente convergente e una divergente di vetri con dispersione diversa."},
+{"domanda": "Due lenti sottili a contatto hanno f₁ = 20 cm e f₂ = −40 cm. Quanto vale la focale del sistema?", "risposta": "P = 5 D − 2,5 D = 2,5 D, quindi f = 40 cm."}
+]
+}
+},
+"Corrente elettrica e leggi di Ohm": {
+"superiore": {
+"spiegazione": [
+"La corrente elettrica è un flusso ordinato di cariche. La sua intensità è la carica che attraversa una sezione del conduttore in un intervallo di tempo: I = Δq/Δt, misurata in ampere (1 A = 1 C/s). Nei metalli si muovono gli elettroni, ma per convenzione il verso della corrente è quello in cui si muoverebbero cariche positive, cioè dal polo + al polo − nel circuito esterno. Per avere corrente serve una differenza di potenziale (tensione), fornita da un generatore: una pila o una batteria mantiene la tensione grazie a reazioni chimiche. Esempio: se in 2,0 s passano 6,0 C, I = 3,0 A, cioè circa 1,9·10¹⁹ elettroni al secondo (3,0/1,6·10⁻¹⁹).",
+"La prima legge di Ohm dice che in molti conduttori (detti ohmici) la corrente è proporzionale alla tensione: V = R·I, dove R è la resistenza in ohm (Ω). La seconda legge di Ohm lega la resistenza alla forma del conduttore: R = ρ·L/S, con ρ resistività del materiale (Ω·m), L lunghezza e S sezione. Esempio: un filo di rame (ρ = 1,7·10⁻⁸ Ω·m) lungo 10 m e con sezione 1,0 mm² = 1,0·10⁻⁶ m² ha R = 1,7·10⁻⁸·10/10⁻⁶ = 0,17 Ω. Raddoppiando la lunghezza R raddoppia, raddoppiando la sezione si dimezza. La resistività cresce con la temperatura nei metalli.",
+"I resistori si collegano in serie (uno dopo l'altro, stessa corrente) o in parallelo (tra gli stessi due punti, stessa tensione). In serie R_eq = R₁ + R₂ + …; in parallelo 1/R_eq = 1/R₁ + 1/R₂ + … e la resistenza equivalente è più piccola della minore. Esempio: un resistore da 6 Ω e uno da 3 Ω in parallelo danno 1/R = 1/6 + 1/3 = 1/2, R = 2 Ω; aggiungendo in serie 4 Ω si ottiene 6 Ω. Con un generatore da 12 V la corrente totale è 12/6 = 2,0 A; sul resistore da 4 Ω cadono 8 V, sul parallelo 4 V, che spingono 4/6 ≈ 0,67 A nel ramo da 6 Ω e 4/3 ≈ 1,33 A in quello da 3 Ω (la somma torna 2,0 A).",
+"Quando una corrente attraversa una resistenza l'energia elettrica si trasforma in calore (effetto Joule). La potenza dissipata è P = V·I = R·I² = V²/R, in watt. Esempio: un asciugacapelli da 2000 W alimentato a 230 V assorbe I = 2000/230 ≈ 8,7 A e ha una resistenza R = 230²/2000 ≈ 26 Ω. Usato per mezz'ora consuma E = P·t = 2,0 kW·0,5 h = 1,0 kWh, l'unità delle bollette (1 kWh = 3,6·10⁶ J). I fusibili sfruttano l'effetto Joule: un filo sottile fonde se la corrente supera il limite.",
+"Per i circuiti più complessi si usano le leggi di Kirchhoff. Legge dei nodi: la somma delle correnti che entrano in un nodo è uguale alla somma di quelle che escono (conservazione della carica). Legge delle maglie: lungo un percorso chiuso la somma delle tensioni (forze elettromotrici dei generatori e cadute R·I) è zero (conservazione dell'energia). Un generatore reale ha una resistenza interna r: la tensione ai suoi morsetti è V = ε − r·I, minore della forza elettromotrice ε quando eroga corrente. Esempio: una pila con ε = 9,0 V e r = 1,0 Ω collegata a 8,0 Ω eroga I = 9,0/9,0 = 1,0 A e ai morsetti misura 8,0 V."
+],
+"metodo": [
+"Ridisegna ogni circuito in forma ordinata, identificando prima tutti i nodi e i rami.",
+"Riduci passo passo le resistenze (serie e parallelo) fino a una sola, poi torna indietro calcolando correnti e tensioni di ogni ramo.",
+"Controlla sempre che la somma delle correnti nei rami in parallelo dia la corrente totale e che le tensioni in serie diano quella del generatore.",
+"Per la potenza scegli la formula giusta: se conosci V e R usa V²/R, se conosci I e R usa R·I².",
+"Fai esercizi di bolletta: potenza degli elettrodomestici, ore d'uso, kWh e costo.",
+"Impara a memoria la resistività di rame e alluminio e l'ordine di grandezza di quella dei semiconduttori e degli isolanti."
+],
+"ricorda": [
+"V = R·I: «Vittorio Resta In casa».",
+"Serie: si sommano le resistenze; parallelo: si sommano i reciproci (e le correnti).",
+"Filo lungo e sottile = resistenza alta; corto e grosso = bassa.",
+"La corrente non si consuma: quella che entra in un nodo ne esce tutta."
+],
+"errori": [
+"Pensare che la corrente si consumi lungo il circuito: si consuma l'energia, la corrente in serie è la stessa ovunque.",
+"Dimenticare di invertire alla fine nel calcolo del parallelo: 1/R = 1/2 vuol dire R = 2 Ω.",
+"Usare la sezione in mm² nella seconda legge di Ohm senza convertirla in m².",
+"Confondere potenza (W) ed energia (kWh): il kilowattora è un'energia, non una potenza.",
+"Credere che un generatore fornisca sempre la stessa tensione: ai morsetti cala con la corrente per la resistenza interna."
+],
+"domande": [
+{"domanda": "Una lampadina da 60 W funziona a 230 V. Qual è la sua corrente e la sua resistenza?", "risposta": "I = P/V = 60/230 ≈ 0,26 A; R = V²/P = 230²/60 ≈ 880 Ω."},
+{"domanda": "Tre resistori da 12 Ω sono in parallelo. Quanto vale la resistenza equivalente?", "risposta": "1/R = 3/12, quindi R = 4 Ω."},
+{"domanda": "Come cambia la resistenza di un filo se si raddoppiano sia la lunghezza sia il diametro?", "risposta": "La lunghezza raddoppia R, la sezione (proporzionale al quadrato del diametro) quadruplica e divide R per 4: in tutto R si dimezza."},
+{"domanda": "Enuncia la legge dei nodi di Kirchhoff.", "risposta": "In ogni nodo la somma delle correnti entranti è uguale alla somma delle correnti uscenti, perché la carica si conserva."},
+{"domanda": "Quanta energia consuma un forno da 2,5 kW acceso per 2 ore?", "risposta": "E = P·t = 2,5 kW·2 h = 5,0 kWh = 1,8·10⁷ J."}
+]
+},
+"universita": {
+"spiegazione": [
+"A livello microscopico la corrente è descritta dalla densità di corrente j, un vettore con modulo pari alla corrente per unità di area: I = ∫ j·dS. Se n è il numero di portatori per unità di volume, q la loro carica e v_d la velocità di deriva, j = n·q·v_d. Nel rame n ≈ 8,5·10²⁸ m⁻³: con I = 1,0 A in un filo da 1,0 mm² si ha v_d = I/(n·e·S) = 1,0/(8,5·10²⁸·1,6·10⁻¹⁹·10⁻⁶) ≈ 7,4·10⁻⁵ m/s, meno di un decimo di millimetro al secondo. Il segnale invece si propaga quasi alla velocità della luce, perché il campo elettrico si stabilisce in tutto il circuito quasi istantaneamente. La conservazione della carica si esprime con l'equazione di continuità ∇·j + ∂ρ/∂t = 0.",
+"La legge di Ohm in forma locale è j = σ·E, con σ = 1/ρ conducibilità. Il modello di Drude la spiega: gli elettroni accelerati dal campo urtano il reticolo in media ogni tempo τ, e acquistano una velocità di deriva v_d = −e·E·τ/m, quindi σ = n·e²·τ/m. Per il rame si ottiene τ ≈ 2,5·10⁻¹⁴ s. La resistività dei metalli cresce con la temperatura, approssimativamente ρ(T) = ρ₀·[1 + α·(T − T₀)], con α ≈ 3,9·10⁻³ K⁻¹ per il rame: tra 20 °C e 100 °C la resistenza sale del 31% circa. Nei semiconduttori invece ρ diminuisce con T perché aumenta n; nei superconduttori sotto una temperatura critica si annulla. Molti dispositivi (diodi, lampade a filamento) non sono ohmici: la caratteristica I(V) non è una retta.",
+"Le reti si risolvono con le leggi di Kirchhoff o con il metodo dei potenziali di nodo. Esempio: due generatori ε₁ = 12 V con R₁ = 2 Ω e ε₂ = 6 V con R₂ = 4 Ω sono collegati in parallelo su un carico R₃ = 4 Ω. Detto V il potenziale del nodo superiore rispetto a quello inferiore, la legge dei nodi dà (ε₁ − V)/R₁ + (ε₂ − V)/R₂ = V/R₃, cioè (12 − V)/2 + (6 − V)/4 = V/4. Moltiplicando per 4: 30 − 3V = V, quindi V = 7,5 V. Correnti: I₁ = 2,25 A, I₂ = (6 − 7,5)/4 = −0,375 A (il segno meno indica che la corrente entra nel secondo generatore, che si sta ricaricando), I₃ = 1,875 A. Verifica: 2,25 − 0,375 = 1,875 A.",
+"Il teorema di Thévenin afferma che una rete lineare vista da due morsetti equivale a un generatore ideale ε_Th in serie con una resistenza R_Th; Norton fornisce l'equivalente con generatore di corrente. Un generatore di forza elettromotrice ε e resistenza interna r fornisce a un carico R la potenza P = ε²·R/(R + r)², massima quando R = r (adattamento di impedenza): in quel caso P_max = ε²/(4r) e il rendimento è solo del 50%. Per esempio una batteria con ε = 12 V e r = 0,5 Ω può trasferire al massimo 72 W, su un carico da 0,5 Ω.",
+"Nei circuiti con condensatori la corrente varia nel tempo. Nella carica di un condensatore C attraverso R con un generatore ε: q(t) = C·ε·(1 − e^(−t/τ)), I(t) = (ε/R)·e^(−t/τ), con costante di tempo τ = R·C. Esempio: R = 10 kΩ e C = 100 μF danno τ = 1,0 s; dopo 1 s il condensatore ha il 63% della carica finale, dopo 5τ più del 99%. L'energia immagazzinata alla fine è ½Cε², e la stessa quantità viene dissipata in R durante la carica, qualunque sia il valore di R: metà dell'energia fornita dal generatore va sempre in calore."
+],
+"metodo": [
+"Ricava v_d per diversi conduttori e correnti, per fissare l'ordine di grandezza e il contrasto con la velocità del segnale.",
+"Risolvi la stessa rete con le maglie e con i potenziali di nodo: confronta i risultati e scegli il metodo con meno incognite.",
+"Dopo ogni rete fai il bilancio delle potenze: la potenza erogata dai generatori deve uguagliare quella dissipata più quella assorbita.",
+"Esercitati a calcolare equivalenti di Thévenin spegnendo i generatori per trovare R_Th.",
+"Disegna q(t) e I(t) nella carica e scarica RC e segna τ sul grafico.",
+"Collega il modello di Drude ai dati reali: ricava τ dalla resistività misurata del rame."
+],
+"ricorda": [
+"j = n·q·v_d: gli elettroni camminano lentissimi, il segnale corre.",
+"j = σE è la legge di Ohm vista da vicino.",
+"Massima potenza al carico quando R = r, ma con rendimento 50%.",
+"τ = RC: dopo un τ il 63%, dopo cinque τ è praticamente fatto."
+],
+"errori": [
+"Confondere velocità di deriva e velocità del segnale elettrico.",
+"Scartare una corrente negativa come errore: indica solo che il verso reale è opposto a quello ipotizzato.",
+"Considerare ohmico ogni componente: diodi e lampade hanno caratteristiche non lineari.",
+"Credere che l'adattamento di impedenza massimizzi il rendimento: massimizza la potenza trasferita, il rendimento è solo il 50%.",
+"Usare la legge di Ohm con la resistività a 20 °C per un filamento incandescente: a 2500 °C la resistenza è molte volte maggiore."
+],
+"domande": [
+{"domanda": "Ricava la conducibilità nel modello di Drude.", "risposta": "Con v_d = eEτ/m in modulo e j = n·e·v_d si ottiene j = (n·e²·τ/m)·E, quindi σ = n·e²·τ/m."},
+{"domanda": "Un filo di rame ha R = 10 Ω a 20 °C. Quanto vale a 70 °C (α = 3,9·10⁻³ K⁻¹)?", "risposta": "R = 10·(1 + 3,9·10⁻³·50) ≈ 11,95 Ω."},
+{"domanda": "Qual è la condizione di massimo trasferimento di potenza?", "risposta": "La resistenza del carico deve essere uguale alla resistenza interna del generatore (R = r); allora P = ε²/(4r)."},
+{"domanda": "Un condensatore da 47 μF si carica attraverso 2,0 kΩ. Quanto vale τ e dopo quanto è carico al 99%?", "risposta": "τ = RC = 2000·47·10⁻⁶ ≈ 0,094 s; il 99% si raggiunge dopo circa 4,6τ ≈ 0,43 s."},
+{"domanda": "Che cosa esprime l'equazione di continuità?", "risposta": "La conservazione locale della carica: ∇·j + ∂ρ/∂t = 0, cioè la carica che esce da un volume è uguale alla diminuzione della carica contenuta."}
+]
+}
+}
+}

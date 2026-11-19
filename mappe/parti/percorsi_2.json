@@ -1,0 +1,197 @@
+{
+  "apparato cardiovascolare": {
+    "titolo": "Apparato cardiovascolare: il viaggio del sangue",
+    "dove": "Cuore, vasi sanguigni e polmoni",
+    "inizio": "atrio destro",
+    "intro": "Il sangue gira in un circuito chiuso spinto dal cuore, che funziona come due pompe affiancate. Il cuore destro manda il sangue povero di ossigeno ai polmoni (piccola circolazione); il cuore sinistro manda il sangue ricco di ossigeno a tutto il corpo (grande circolazione). Le valvole fanno andare il sangue in un solo verso.",
+    "fasi": [
+      {"da": 1, "nome": "Piccola circolazione (polmonare): cuore destro → polmoni → cuore sinistro"},
+      {"da": 5, "nome": "Grande circolazione (sistemica): cuore sinistro → corpo → cuore destro"}
+    ],
+    "passaggi": [
+      {"da": ["atrio destro"], "a": ["ventricolo destro"], "enzima": "valvola tricuspide", "entra": [], "esce": [],
+       "nota": "L'atrio destro raccoglie il sangue povero di ossigeno che torna dal corpo e lo passa al ventricolo destro attraverso la valvola tricuspide, che poi si chiude e impedisce il ritorno."},
+      {"da": ["ventricolo destro"], "a": ["arterie polmonari"], "enzima": "valvola polmonare", "entra": [], "esce": [],
+       "nota": "Il ventricolo destro si contrae (sistole) e spinge il sangue nel tronco polmonare e nelle arterie polmonari. Sono le uniche arterie che portano sangue povero di ossigeno."},
+      {"da": ["arterie polmonari"], "a": ["vene polmonari"], "enzima": "membrana alveolo-capillare", "entra": ["O₂"], "esce": ["CO₂"],
+       "nota": "Nei capillari attorno agli alveoli il sangue lascia la CO₂ e prende l'O₂ per diffusione. Ora è sangue arterioso, ricco di ossigeno."},
+      {"da": ["vene polmonari"], "a": ["atrio sinistro"], "enzima": "ritorno venoso", "entra": [], "esce": [],
+       "nota": "Le quattro vene polmonari portano il sangue ossigenato all'atrio sinistro: sono le uniche vene con sangue ricco di ossigeno."},
+      {"da": ["atrio sinistro"], "a": ["ventricolo sinistro"], "enzima": "valvola mitrale", "entra": [], "esce": [],
+       "nota": "Il sangue passa nel ventricolo sinistro attraverso la valvola mitrale (bicuspide). Quando il ventricolo si contrae la mitrale si chiude: è una parte del primo tono cardiaco."},
+      {"da": ["ventricolo sinistro"], "a": ["aorta"], "enzima": "valvola aortica", "entra": [], "esce": [],
+       "nota": "Il ventricolo sinistro, con la parete più spessa, spinge il sangue nell'aorta a una pressione massima di circa 120 mmHg. La chiusura delle valvole aortica e polmonare dà il secondo tono."},
+      {"da": ["aorta"], "a": ["arteriole"], "enzima": "arterie", "entra": [], "esce": [],
+       "nota": "L'aorta e le grandi arterie elastiche si dilatano in sistole e si ritraggono in diastole: così il flusso resta continuo. Le arterie si ramificano verso tutti gli organi."},
+      {"da": ["arteriole"], "a": ["capillari sistemici"], "enzima": "muscolatura liscia delle arteriole", "entra": [], "esce": [], "limitante": true,
+       "nota": "Le arteriole si stringono o si allargano e decidono quanto sangue arriva a ogni tessuto. Sono la sede principale delle resistenze periferiche, quindi regolano la pressione arteriosa."},
+      {"da": ["capillari sistemici"], "a": ["venule"], "enzima": "endotelio capillare", "entra": ["CO₂"], "esce": ["O₂"],
+       "nota": "Nei capillari, con la parete di un solo strato di cellule, avvengono gli scambi: l'O₂ e le sostanze nutritive passano ai tessuti, la CO₂ e gli scarti passano nel sangue."},
+      {"da": ["venule"], "a": ["vene cave"], "enzima": "valvole venose", "entra": [], "esce": [],
+       "nota": "Le vene hanno pressione bassa: il sangue risale verso il cuore grazie alle valvole a nido di rondine e alla spremitura dei muscoli delle gambe (pompa muscolare)."},
+      {"da": ["vene cave"], "a": ["atrio destro"], "enzima": "ritorno venoso", "entra": [], "esce": [],
+       "nota": "La vena cava superiore e la vena cava inferiore riportano il sangue all'atrio destro e il giro ricomincia. A riposo il cuore pompa circa 5 litri di sangue al minuto."}
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Cuore destro → polmoni → cuore sinistro: il sangue si carica di O₂ e lascia la CO₂",
+      "Cuore sinistro → aorta → arterie → arteriole → capillari → vene → cuore destro",
+      "Le valvole (tricuspide, polmonare, mitrale, aortica) fanno andare il sangue in un solo verso",
+      "Le arteriole regolano il flusso e la pressione; i capillari fanno gli scambi"
+    ],
+    "da_sapere": [
+      {"titolo": "Chi dà il ritmo al cuore (sistema di conduzione)",
+       "voci": [
+         ["Il segnapassi naturale", ["nodo senoatriale"]],
+         ["Il filtro che ritarda il segnale", ["nodo atrioventricolare"]],
+         ["I fili che lo portano ai ventricoli", ["fascio di His e fibre di Purkinje"]]
+       ]}
+    ]
+  },
+
+  "apparato respiratorio": {
+    "titolo": "Apparato respiratorio: il percorso dell'aria",
+    "dove": "Vie aeree, polmoni e sangue",
+    "inizio": "cavità nasali",
+    "intro": "Respirando, l'aria entra dal naso, scende lungo vie sempre più piccole e arriva agli alveoli, minuscoli sacchetti dove l'ossigeno passa nel sangue e l'anidride carbonica esce. Il sangue porta l'ossigeno ai tessuti legato all'emoglobina e riporta la CO₂ ai polmoni, soprattutto come bicarbonato.",
+    "fasi": [
+      {"da": 1, "nome": "Vie di conduzione: l'aria viene pulita, riscaldata e portata in basso"},
+      {"da": 6, "nome": "Zona respiratoria: scambio dei gas"},
+      {"da": 8, "nome": "Trasporto dei gas nel sangue"}
+    ],
+    "passaggi": [
+      {"da": ["cavità nasali"], "a": ["faringe"], "enzima": "mucosa nasale", "entra": ["O₂"], "esce": [],
+       "nota": "Quando il diaframma si contrae, l'aria entra. Nel naso peli, muco e vasi sanguigni la filtrano, la umidificano e la riscaldano."},
+      {"da": ["faringe"], "a": ["laringe"], "enzima": "epiglottide", "entra": [], "esce": [],
+       "nota": "La faringe è un incrocio tra la via dell'aria e quella del cibo. Quando deglutiamo l'epiglottide chiude la laringe, così il cibo va nell'esofago e non nelle vie aeree."},
+      {"da": ["laringe"], "a": ["trachea"], "enzima": "cartilagini tracheali", "entra": [], "esce": [],
+       "nota": "Nella laringe ci sono le corde vocali. La trachea resta sempre aperta grazie ad anelli di cartilagine a forma di C."},
+      {"da": ["trachea"], "a": ["bronchi"], "enzima": "epitelio ciliato", "entra": [], "esce": [],
+       "nota": "La trachea si divide nei due bronchi principali. Il muco cattura polvere e germi e le ciglia lo spingono verso la gola (clearance mucociliare)."},
+      {"da": ["bronchi"], "a": ["bronchioli"], "enzima": "muscolatura liscia bronchiale", "entra": [], "esce": [], "limitante": true,
+       "nota": "I bronchi si ramificano in bronchioli sempre più sottili, senza cartilagine. Il muscolo liscio ne regola il calibro e quindi quanta aria passa: nell'asma si contrae troppo."},
+      {"da": ["bronchioli"], "a": ["alveoli"], "enzima": "surfattante", "entra": [], "esce": [],
+       "nota": "L'aria arriva agli alveoli, sacchetti dalla parete sottilissima. Il surfattante riduce la tensione superficiale e impedisce agli alveoli di afflosciarsi."},
+      {"da": ["alveoli"], "a": ["capillari polmonari"], "enzima": "membrana alveolo-capillare", "entra": ["O₂"], "esce": ["CO₂"],
+       "nota": "I gas passano per diffusione, da dove la pressione parziale è più alta a dove è più bassa: l'O₂ dall'alveolo al sangue, la CO₂ dal sangue all'alveolo."},
+      {"da": ["capillari polmonari"], "a": ["globuli rossi"], "enzima": "emoglobina", "entra": ["O₂"], "esce": [],
+       "nota": "Quasi tutto l'ossigeno (circa il 98%) viaggia legato all'emoglobina dei globuli rossi; solo una piccola parte è sciolta nel plasma. Ogni emoglobina lega fino a 4 O₂."},
+      {"da": ["globuli rossi"], "a": ["tessuti"], "enzima": "emoglobina", "entra": [], "esce": ["O₂"],
+       "nota": "Nei tessuti c'è poco ossigeno, più CO₂, più acidità e più calore: l'emoglobina lascia andare l'O₂ più facilmente (effetto Bohr)."},
+      {"da": ["tessuti"], "a": ["bicarbonato (HCO₃⁻)"], "enzima": "anidrasi carbonica", "entra": ["CO₂", "H₂O"], "esce": ["H⁺"],
+       "nota": "La CO₂ prodotta dalle cellule entra nei globuli rossi e l'anidrasi carbonica la trasforma in bicarbonato e H⁺. Circa il 70% della CO₂ viaggia così; il resto legato all'emoglobina o sciolto."},
+      {"da": ["bicarbonato (HCO₃⁻)"], "a": ["alveoli"], "enzima": "anidrasi carbonica", "entra": ["H⁺"], "esce": ["CO₂", "H₂O"],
+       "nota": "Nei capillari polmonari la reazione va al contrario: il bicarbonato torna CO₂, che passa negli alveoli ed esce con l'espirazione."}
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Naso → faringe → laringe → trachea → bronchi → bronchioli → alveoli",
+      "Negli alveoli: l'O₂ entra nel sangue, la CO₂ esce (diffusione)",
+      "O₂ trasportato dall'emoglobina (circa 98%)",
+      "CO₂ trasportata soprattutto come bicarbonato (circa 70%)"
+    ],
+    "da_sapere": [
+      {"titolo": "Chi fa entrare e uscire l'aria",
+       "voci": [
+         ["I muscoli dell'inspirazione", ["diaframma", "muscoli intercostali"]],
+         ["Chi comanda il ritmo del respiro", ["centri respiratori del tronco encefalico"]]
+       ]}
+    ]
+  },
+
+  "apparato digerente": {
+    "titolo": "Apparato digerente: il viaggio del cibo",
+    "dove": "Tubo digerente (dalla bocca all'ano), con ghiandole salivari, fegato e pancreas",
+    "inizio": "bocca",
+    "intro": "Il cibo viene spezzettato (digestione meccanica) e poi scomposto dagli enzimi in molecole piccole (digestione chimica): zuccheri semplici, amminoacidi, acidi grassi. Queste molecole vengono assorbite soprattutto nell'intestino tenue; ciò che resta forma le feci.",
+    "fasi": [
+      {"da": 1, "nome": "Bocca, esofago e stomaco: si sminuzza e si comincia a digerire"},
+      {"da": 4, "nome": "Intestino tenue: digestione completa e assorbimento"},
+      {"da": 6, "nome": "Intestino crasso: acqua, fibre e feci"}
+    ],
+    "passaggi": [
+      {"da": ["bocca"], "a": ["esofago"], "enzima": "amilasi salivare", "entra": ["amido"], "esce": ["maltosio"],
+       "nota": "I denti masticano e la saliva ammorbidisce il cibo. L'amilasi salivare comincia a spezzare l'amido; poi la lingua spinge il boccone nella faringe e lo deglutiamo."},
+      {"da": ["esofago"], "a": ["stomaco"], "enzima": "peristalsi", "entra": [], "esce": [],
+       "nota": "Onde di contrazione dei muscoli spingono il boccone verso lo stomaco, anche a testa in giù. In fondo all'esofago uno sfintere si apre e poi si richiude per non far risalire l'acido."},
+      {"da": ["stomaco"], "a": ["duodeno"], "enzima": "pepsina", "entra": ["proteine"], "esce": ["peptidi"],
+       "nota": "Lo stomaco rimescola il cibo con il succo gastrico, molto acido (HCl). La pepsina comincia a tagliare le proteine. Il piloro lascia passare poco per volta il chimo nel duodeno."},
+      {"da": ["duodeno"], "a": ["digiuno e ileo"], "enzima": "succo pancreatico", "entra": ["bile", "trigliceridi", "amido", "peptidi"], "esce": ["acido grasso", "monogliceridi", "maltosio"],
+       "nota": "Nel duodeno arrivano la bile (emulsiona i grassi in goccioline) e il succo pancreatico: il bicarbonato neutralizza l'acido, la lipasi scompone i grassi, l'amilasi l'amido, tripsina e chimotripsina tagliano i peptidi in pezzi più corti."},
+      {"da": ["digiuno e ileo"], "a": ["intestino crasso"], "enzima": "enzimi dell'orletto a spazzola", "entra": ["maltosio", "saccarosio", "lattosio", "peptidi"], "esce": ["glucosio", "fruttosio", "galattosio", "amminoacidi"],
+       "nota": "Gli enzimi sulla superficie dei villi finiscono la digestione e le molecole piccole vengono assorbite. Ciò che non è stato assorbito passa nel crasso attraverso la valvola ileocecale."},
+      {"da": ["intestino crasso"], "a": ["retto"], "enzima": "microbiota intestinale", "entra": ["fibre alimentari"], "esce": ["acidi grassi a catena corta"],
+       "nota": "Il colon riassorbe gran parte dell'acqua e dei sali rimasti. I batteri fermentano parte delle fibre; la cellulosa invece resta quasi intatta e dà volume alle feci."},
+      {"da": ["retto"], "a": ["ano"], "enzima": "sfinteri anali", "entra": [], "esce": [],
+       "nota": "Quando il retto si riempie sentiamo lo stimolo. Lo sfintere interno si apre da solo, quello esterno lo controlliamo noi: così le feci escono quando decidiamo (defecazione)."}
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Bocca → esofago → stomaco → duodeno → digiuno e ileo → intestino crasso → retto → ano",
+      "Amido e zuccheri → glucosio, fruttosio, galattosio; proteine → amminoacidi; grassi → acidi grassi e monogliceridi",
+      "L'assorbimento avviene soprattutto nell'intestino tenue (villi)",
+      "Il crasso riassorbe acqua; le fibre non digerite formano le feci"
+    ],
+    "dopo": {
+      "titolo": "Dove vanno le sostanze assorbite",
+      "strade": [
+        {"condizione": "Zuccheri e amminoacidi (si sciolgono in acqua)", "da": "digiuno e ileo", "a": "fegato", "enzima": "enterociti",
+         "entra": ["glucosio", "amminoacidi"], "esce": [],
+         "nota": "Passano nei capillari dei villi e, attraverso la vena porta, arrivano prima al fegato, che li immagazzina, li trasforma o li manda al resto del corpo."},
+        {"condizione": "Grassi (non si sciolgono in acqua)", "da": "digiuno e ileo", "a": "vasi chiliferi", "enzima": "enterociti",
+         "entra": ["acido grasso", "monogliceridi"], "esce": ["chilomicroni"],
+         "nota": "Dentro gli enterociti tornano trigliceridi e vengono impacchettati nei chilomicroni, che entrano nei vasi linfatici dei villi e arrivano al sangue senza passare prima dal fegato."}
+      ]
+    },
+    "da_sapere": [
+      {"titolo": "Gli zuccheri (carboidrati), dal più piccolo al più grande",
+       "voci": [
+         ["Monosaccaridi (1 zucchero): si assorbono così come sono", ["glucosio", "fruttosio", "galattosio"]],
+         ["Disaccaridi (2 zuccheri uniti): li spezzano gli enzimi dell'intestino", ["saccarosio", "lattosio", "maltosio"]],
+         ["Polisaccaridi (tanti zuccheri in catena)", ["amido", "glicogeno", "cellulosa"]]
+       ]},
+      {"titolo": "Proteine e grassi: da cosa sono fatti",
+       "voci": [
+         ["Proteine → pezzi più piccoli", ["proteine", "peptidi", "amminoacidi"]],
+         ["Grassi → pezzi più piccoli", ["trigliceridi", "acido grasso", "monogliceridi", "glicerolo"]]
+       ]}
+    ]
+  },
+
+  "apparato urinario": {
+    "titolo": "Apparato urinario: dal sangue all'urina",
+    "dove": "Reni (nefroni) e vie urinarie",
+    "inizio": "arteria renale",
+    "intro": "I reni puliscono il sangue: ogni rene ha circa un milione di nefroni. Il glomerulo filtra una grande quantità di plasma (circa 180 litri al giorno); poi i tubuli riprendono quasi tutto ciò che serve (riassorbimento) e aggiungono ciò che va eliminato (secrezione). Alla fine resta 1-2 litri di urina, che scende fino alla vescica.",
+    "fasi": [
+      {"da": 1, "nome": "Filtrazione: dal sangue al filtrato"},
+      {"da": 3, "nome": "Riassorbimento e secrezione: il nefrone corregge il filtrato"},
+      {"da": 7, "nome": "Vie urinarie: trasporto e raccolta dell'urina"}
+    ],
+    "passaggi": [
+      {"da": ["arteria renale"], "a": ["glomerulo"], "enzima": "arteriola afferente", "entra": [], "esce": [], "limitante": true,
+       "nota": "Il sangue arriva al rene e, attraverso l'arteriola afferente, al glomerulo. Stringendosi o allargandosi l'arteriola mantiene la filtrazione quasi costante anche se la pressione cambia (autoregolazione)."},
+      {"da": ["glomerulo"], "a": ["tubulo contorto prossimale"], "enzima": "barriera di filtrazione glomerulare", "entra": ["H₂O", "Na⁺", "K⁺", "glucosio", "amminoacidi", "urea"], "esce": [],
+       "nota": "Acqua e piccole molecole passano nella capsula di Bowman e poi nel tubulo; cellule del sangue e quasi tutte le proteine restano nel sangue. Il sangue esce dal glomerulo con l'arteriola efferente."},
+      {"da": ["tubulo contorto prossimale"], "a": ["ansa di Henle"], "enzima": "Na⁺/K⁺-ATPasi", "entra": ["H⁺"], "esce": ["glucosio", "amminoacidi", "Na⁺", "H₂O", "bicarbonato (HCO₃⁻)"],
+       "nota": "Il tubulo prossimale riassorbe circa due terzi di acqua e sodio e, normalmente, tutto il glucosio e gli amminoacidi. Secerne H⁺ e molti farmaci."},
+      {"da": ["ansa di Henle"], "a": ["tubulo contorto distale"], "enzima": "cotrasportatore Na⁺-K⁺-2Cl⁻ (NKCC2)", "entra": [], "esce": ["H₂O", "Na⁺", "K⁺", "Cl⁻"],
+       "nota": "Il ramo discendente lascia uscire acqua, quello ascendente spesso riassorbe sale ma non acqua. Così la midollare del rene diventa molto concentrata e il filtrato che sale diventa diluito."},
+      {"da": ["tubulo contorto distale"], "a": ["dotto collettore"], "enzima": "cotrasportatore Na⁺-Cl⁻ (NCC)", "entra": [], "esce": ["Na⁺", "Cl⁻"],
+       "nota": "Il tubulo distale riassorbe un'altra piccola parte di sale e regola il calcio sotto il controllo del paratormone."},
+      {"da": ["dotto collettore"], "a": ["pelvi renale"], "enzima": "ADH (vasopressina)", "entra": ["K⁺", "H⁺"], "esce": ["H₂O", "Na⁺"], "limitante": true,
+       "nota": "Qui si decide la quantità finale di acqua e sale. L'ADH apre canali per l'acqua (urina concentrata); l'aldosterone fa riassorbire Na⁺ e secernere K⁺. Altre cellule secernono H⁺."},
+      {"da": ["pelvi renale"], "a": ["vescica"], "enzima": "ureteri", "entra": [], "esce": [],
+       "nota": "L'urina si raccoglie nei calici e nella pelvi renale, poi scende nella vescica lungo gli ureteri, spinta da onde di peristalsi."},
+      {"da": ["vescica"], "a": ["uretra"], "enzima": "muscolo detrusore", "entra": [], "esce": [],
+       "nota": "La vescica si riempie e si distende. Quando decidiamo di urinare, il detrusore si contrae, gli sfinteri si rilassano e l'urina esce attraverso l'uretra (minzione)."}
+    ],
+    "titolo_bilancio": "In sintesi",
+    "bilancio": [
+      "Filtrazione nel glomerulo: circa 180 litri di filtrato al giorno",
+      "Riassorbimento nei tubuli: torna nel sangue più del 99% dell'acqua e quasi tutto il glucosio",
+      "Secrezione: si aggiungono H⁺, K⁺ e farmaci",
+      "Urina: 1-2 litri al giorno → ureteri → vescica → uretra"
+    ]
+  }
+}

@@ -1,0 +1,988 @@
+[
+ {
+  "id": "NBCH-081",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Quali sono i prodotti della fase ossidativa della via dei pentoso fosfati per ogni molecola di glucosio-6-fosfato?",
+  "opzioni": {
+   "A": "2 NADPH, 1 CO₂ e ribulosio-5-fosfato",
+   "B": "2 NADH, 1 CO₂ e ribosio-5-fosfato",
+   "C": "1 NADPH, 2 CO₂ e xilulosio-5-fosfato",
+   "D": "2 ATP e 2 piruvato",
+   "E": "1 FADH₂, 1 NADPH e sedoeptulosio-7-fosfato"
+  },
+  "giusta": "A",
+  "perche": "La glucosio-6-fosfato deidrogenasi produce il primo NADPH e il 6-fosfogluconolattone; dopo l'idrolisi, la 6-fosfogluconato deidrogenasi decarbossila ossidativamente il 6-fosfogluconato formando il secondo NADPH, CO₂ e ribulosio-5-fosfato. La via produce NADPH e non NADH, distinzione importante perché il NADPH serve alle biosintesi riduttive. Il ribosio-5-fosfato si ottiene dopo, per isomerizzazione.",
+  "semplice": "La prima parte della via toglie un carbonio al glucosio come CO₂ e intanto carica due «batterie» speciali, i NADPH, che servono a costruire grassi e a difendersi dall'ossidazione.",
+  "passaggi": [
+   "Prima ossidazione: G6PD → 1 NADPH",
+   "Seconda ossidazione con decarbossilazione → 1 NADPH + CO₂",
+   "Prodotto a 5 C: ribulosio-5-fosfato",
+   "Escludi B: si forma NADPH, non NADH",
+   "Resta la A"
+  ],
+  "concetto": "Fase ossidativa: 2 NADPH + CO₂"
+ },
+ {
+  "id": "NBCH-082",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Quale enzima controlla la velocità della via dei pentoso fosfati e quale molecola ne è il principale regolatore?",
+  "opzioni": {
+   "A": "Transchetolasi; ATP",
+   "B": "Transaldolasi; citrato",
+   "C": "6-fosfogluconato deidrogenasi; AMP",
+   "D": "Glucosio-6-fosfato deidrogenasi; rapporto NADP⁺/NADPH",
+   "E": "Ribosio-5-fosfato isomerasi; glucagone"
+  },
+  "giusta": "D",
+  "perche": "La glucosio-6-fosfato deidrogenasi catalizza la prima tappa irreversibile ed è il punto di controllo: è stimolata dal NADP⁺ e inibita dal NADPH. Quando la cellula consuma NADPH (per esempio sintetizzando acidi grassi o contrastando lo stress ossidativo) il NADP⁺ sale e la via accelera. Transchetolasi e transaldolasi catalizzano reazioni reversibili e non sono punti di regolazione.",
+  "semplice": "La via si regola da sola come un serbatoio con galleggiante: quando il NADPH viene consumato, il NADP⁺ che resta apre il rubinetto e ne fa produrre altro.",
+  "passaggi": [
+   "Cerca la prima tappa irreversibile: la G6PD",
+   "Ricorda il suo regolatore: il rapporto NADP⁺/NADPH",
+   "Escludi gli enzimi della fase non ossidativa, reversibili",
+   "Resta la D"
+  ],
+  "concetto": "G6PD regolata dal NADP⁺"
+ },
+ {
+  "id": "NBCH-083",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Perché le persone con deficit di glucosio-6-fosfato deidrogenasi possono avere crisi emolitiche dopo aver mangiato fave o assunto alcuni farmaci?",
+  "opzioni": {
+   "A": "Perché i globuli rossi non riescono a fare la glicolisi",
+   "B": "Perché nei globuli rossi manca NADPH per rigenerare il glutatione ridotto, e gli ossidanti danneggiano membrana ed emoglobina",
+   "C": "Perché le fave bloccano la sintesi di emoglobina",
+   "D": "Perché i globuli rossi non producono ATP mitocondriale",
+   "E": "Perché aumenta la produzione di ribosio-5-fosfato"
+  },
+  "giusta": "B",
+  "perche": "Nel globulo rosso la via dei pentoso fosfati è l'unica fonte di NADPH, che serve alla glutatione reduttasi per mantenere ridotto il glutatione. Senza glutatione ridotto il perossido di idrogeno e gli ossidanti (contenuti nelle fave o prodotti da farmaci come la primachina) ossidano le proteine: l'emoglobina precipita (corpi di Heinz) e la cellula si rompe. I globuli rossi non hanno mitocondri in nessun caso, quindi la D non c'entra con il deficit.",
+  "semplice": "Il NADPH è lo «scudo» del globulo rosso contro l'ossidazione. Chi ha il favismo ha uno scudo debole: con le fave arriva un attacco di ossidanti e i globuli rossi si rompono.",
+  "passaggi": [
+   "Ricorda che nel globulo rosso il NADPH viene solo dalla G6PD",
+   "Il NADPH serve a ridurre il glutatione",
+   "Senza glutatione ridotto gli ossidanti danneggiano la cellula",
+   "Collega con le fave (favismo) e i farmaci ossidanti",
+   "Resta la B"
+  ],
+  "concetto": "Favismo e glutatione"
+ },
+ {
+  "id": "NBCH-084",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Quale coenzima richiede la transchetolasi e quanti atomi di carbonio trasferisce?",
+  "opzioni": {
+   "A": "Biotina; 1 C",
+   "B": "PLP; 3 C",
+   "C": "NAD⁺; 2 C",
+   "D": "Coenzima A; 2 C",
+   "E": "Tiamina pirofosfato; 2 C"
+  },
+  "giusta": "E",
+  "perche": "La transchetolasi, come le decarbossilasi degli α-chetoacidi, usa la tiamina pirofosfato e trasferisce un'unità di 2 atomi di carbonio da un chetoso donatore a un aldoso accettore. La transaldolasi, invece, trasferisce 3 atomi di carbonio senza coenzimi, tramite una base di Schiff con una lisina. Lo scambio tra 2 e 3 carboni è l'errore più frequente.",
+  "semplice": "La transchetolasi è un «facchino» che sposta pezzi da due carboni da uno zucchero all'altro, e per farlo ha bisogno della vitamina B1.",
+  "passaggi": [
+   "Ricorda il coenzima della transchetolasi: TPP",
+   "Ricorda il frammento trasferito: 2 C",
+   "Distingui la transaldolasi: 3 C, senza coenzima",
+   "Resta la E"
+  ],
+  "concetto": "Transchetolasi: TPP e 2 C"
+ },
+ {
+  "id": "NBCH-085",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Quale affermazione sulla fase non ossidativa della via dei pentoso fosfati è corretta?",
+  "opzioni": {
+   "A": "È irreversibile e produce NADPH",
+   "B": "Avviene nei mitocondri",
+   "C": "È formata da reazioni reversibili che interconvertono pentosi fosfati e intermedi della glicolisi (fruttosio-6-fosfato e gliceraldeide-3-fosfato)",
+   "D": "Produce CO₂ in ogni passaggio",
+   "E": "Richiede ossigeno molecolare"
+  },
+  "giusta": "C",
+  "perche": "Ribosio-5-fosfato isomerasi, ribulosio-5-fosfato epimerasi, transchetolasi e transaldolasi catalizzano reazioni reversibili che collegano i pentosi alla glicolisi: 3 pentosi fosfati diventano 2 fruttosio-6-fosfato e 1 gliceraldeide-3-fosfato, e viceversa. La fase non produce NADPH né CO₂; tutta la via è citosolica, quindi anche la B è sbagliata.",
+  "semplice": "La seconda parte della via è un «rimescolamento» di zuccheri: smonta e rimonta i pezzi per passare dai pentosi agli zuccheri della glicolisi e tornare indietro, a seconda di cosa serve.",
+  "passaggi": [
+   "Ricorda gli enzimi: isomerasi, epimerasi, transchetolasi, transaldolasi",
+   "Sono reazioni reversibili, senza NADPH né CO₂",
+   "Collegano i pentosi a F6P e G3P",
+   "Escludi B: la via è citosolica",
+   "Resta la C"
+  ],
+  "concetto": "Fase non ossidativa reversibile"
+ },
+ {
+  "id": "NBCH-086",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Se 3 molecole di glucosio-6-fosfato percorrono la fase ossidativa della via dei pentoso fosfati, quanti NADPH e quante CO₂ si producono?",
+  "opzioni": {
+   "A": "6 NADPH e 3 CO₂",
+   "B": "3 NADPH e 3 CO₂",
+   "C": "6 NADPH e 6 CO₂",
+   "D": "3 NADPH e 6 CO₂",
+   "E": "12 NADPH e 3 CO₂"
+  },
+  "giusta": "A",
+  "perche": "Ogni glucosio-6-fosfato dà nella fase ossidativa 2 NADPH e 1 CO₂: per 3 molecole si ottengono 6 NADPH e 3 CO₂, con 3 ribulosio-5-fosfato. I tre pentosi possono poi essere riconvertiti dalla fase non ossidativa in 2 fruttosio-6-fosfato e 1 gliceraldeide-3-fosfato. L'errore più comune è contare 1 NADPH per glucosio, dimenticando la seconda deidrogenasi.",
+  "semplice": "Ogni glucosio che entra produce due NADPH e libera un pezzetto di CO₂. Con tre glucosi basta moltiplicare per tre.",
+  "passaggi": [
+   "Per 1 G6P: 2 NADPH + 1 CO₂",
+   "Moltiplica per 3",
+   "Risultato: 6 NADPH e 3 CO₂",
+   "Resta la A"
+  ],
+  "concetto": "Stechiometria della fase ossidativa"
+ },
+ {
+  "id": "NBCH-087",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "In quale tessuto la via dei pentoso fosfati è POCO attiva?",
+  "opzioni": {
+   "A": "Fegato",
+   "B": "Tessuto adiposo",
+   "C": "Corteccia surrenale",
+   "D": "Muscolo scheletrico",
+   "E": "Ghiandola mammaria in lattazione"
+  },
+  "giusta": "D",
+  "perche": "La via è molto attiva nei tessuti che fanno biosintesi riduttive: fegato e tessuto adiposo (acidi grassi), ghiandola mammaria in lattazione (grassi del latte), corteccia surrenale e gonadi (steroidi), oltre che nei globuli rossi per il glutatione. Il muscolo scheletrico usa il glucosio soprattutto per produrre ATP con la glicolisi e ha poca richiesta di NADPH.",
+  "semplice": "La via serve a chi «costruisce» grassi e ormoni. Il muscolo invece è un consumatore di energia, non un costruttore: per lui conta l'ATP.",
+  "passaggi": [
+   "Ricorda a cosa serve il NADPH: biosintesi riduttive",
+   "Individua i tessuti che sintetizzano lipidi o steroidi",
+   "Il muscolo scheletrico non ha questa necessità",
+   "Resta la D"
+  ],
+  "concetto": "Distribuzione tissutale della via"
+ },
+ {
+  "id": "NBCH-088",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Una cellula in rapida divisione ha bisogno di molto ribosio-5-fosfato per i nucleotidi ma di poco NADPH. Come si procura il ribosio-5-fosfato?",
+  "opzioni": {
+   "A": "Solo con la fase ossidativa, accumulando NADPH",
+   "B": "Invertendo la fase non ossidativa: da fruttosio-6-fosfato e gliceraldeide-3-fosfato forma pentosi con transchetolasi e transaldolasi",
+   "C": "Demolendo il DNA",
+   "D": "Con la gluconeogenesi da acetil-CoA",
+   "E": "Dalla β-ossidazione degli acidi grassi"
+  },
+  "giusta": "B",
+  "perche": "Poiché le reazioni della fase non ossidativa sono reversibili, intermedi glicolitici (2 fruttosio-6-fosfato + 1 gliceraldeide-3-fosfato) possono essere trasformati in 3 pentosi fosfati senza passare per la fase ossidativa e quindi senza produrre NADPH. La A porterebbe a un eccesso di NADPH non necessario; acetil-CoA e β-ossidazione non danno zuccheri.",
+  "semplice": "Se serve solo il «materiale» e non l'energia riducente, la cellula usa la parte reversibile della via al contrario, come prendere una scorciatoia nell'altro senso.",
+  "passaggi": [
+   "Identifica il bisogno: ribosio-5-fosfato sì, NADPH no",
+   "Ricorda che la fase non ossidativa è reversibile",
+   "Da F6P e G3P si ottengono pentosi senza NADPH",
+   "Resta la B"
+  ],
+  "concetto": "Flessibilità della via dei pentoso fosfati"
+ },
+ {
+  "id": "NBCH-089",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "Quale affermazione su NADPH e NADH è corretta?",
+  "opzioni": {
+   "A": "Sono intercambiabili in tutte le reazioni",
+   "B": "Il NADPH è usato soprattutto nella catena respiratoria per produrre ATP",
+   "C": "Nel citosol il NADPH è mantenuto in gran parte ossidato",
+   "D": "Il NADH è il principale riducente per la sintesi degli acidi grassi",
+   "E": "Il NADPH è usato per biosintesi riduttive e difesa antiossidante, ed è mantenuto prevalentemente in forma ridotta"
+  },
+  "giusta": "E",
+  "perche": "NADH e NADPH differiscono per un fosfato sul ribosio dell'adenosina, che permette agli enzimi di distinguerli. Il NADH, prevalentemente ossidato (NAD⁺) nel citosol, serve ai processi catabolici e cede elettroni alla catena respiratoria; il NADPH, mantenuto per lo più ridotto, fornisce elettroni a sintesi di acidi grassi e steroidi e al glutatione. Le opzioni B e D scambiano i ruoli.",
+  "semplice": "Sono due portafogli diversi: il NADH si spende per fare ATP, il NADPH si spende per costruire molecole e proteggere le cellule.",
+  "passaggi": [
+   "Ricorda la differenza strutturale: un fosfato in più",
+   "NADH: catabolismo e catena respiratoria",
+   "NADPH: biosintesi riduttive e antiossidanti, rapporto ridotto/ossidato alto",
+   "Escludi B e D, che scambiano i ruoli",
+   "Resta la E"
+  ],
+  "concetto": "Ruoli distinti di NADH e NADPH"
+ },
+ {
+  "id": "NBCH-090",
+  "materia": "Biochimica",
+  "argomento": "Via dei pentoso fosfati",
+  "livello": "università",
+  "domanda": "L'attività della transchetolasi nei globuli rossi viene misurata in laboratorio per valutare la carenza di quale vitamina?",
+  "opzioni": {
+   "A": "Vitamina B12",
+   "B": "Acido folico",
+   "C": "Tiamina (vitamina B1)",
+   "D": "Vitamina C",
+   "E": "Riboflavina"
+  },
+  "giusta": "C",
+  "perche": "La transchetolasi richiede la tiamina pirofosfato. Nei soggetti carenti (per esempio alcolisti con encefalopatia di Wernicke) l'attività dell'enzima negli eritrociti è bassa e aumenta molto se si aggiunge TPP alla provetta: è un test funzionale dello stato della tiamina. La riboflavina si valuta invece con la glutatione reduttasi, enzima che usa FAD.",
+  "semplice": "Se aggiungendo vitamina B1 alla provetta l'enzima si «risveglia» molto, vuol dire che alla persona quella vitamina mancava.",
+  "passaggi": [
+   "Ricorda il coenzima della transchetolasi: TPP",
+   "TPP deriva dalla tiamina",
+   "Il test misura l'aumento di attività con TPP aggiunto",
+   "Escludi la riboflavina (glutatione reduttasi)",
+   "Resta la C"
+  ],
+  "concetto": "Transchetolasi e tiamina"
+ },
+ {
+  "id": "NBCH-091",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Quale enzima catalizza la tappa limitante della sintesi degli acidi grassi e come è regolato allostericamente?",
+  "opzioni": {
+   "A": "Acido grasso sintasi; attivata dal malonil-CoA",
+   "B": "Carnitina palmitoil-transferasi I; inibita dal citrato",
+   "C": "Acetil-CoA carbossilasi; attivata dal citrato e inibita dal palmitoil-CoA",
+   "D": "HMG-CoA reduttasi; attivata dal colesterolo",
+   "E": "Citrato liasi; inibita dall'insulina"
+  },
+  "giusta": "C",
+  "perche": "L'acetil-CoA carbossilasi, con biotina e ATP, trasforma l'acetil-CoA in malonil-CoA: è la tappa impegnativa. Il citrato, che segnala abbondanza di acetil-CoA ed energia, ne favorisce la polimerizzazione in filamenti attivi; il palmitoil-CoA, prodotto finale, la inibisce (feedback). La CPT I appartiene alla β-ossidazione ed è inibita dal malonil-CoA, non dal citrato.",
+  "semplice": "La sintesi dei grassi parte quando c'è tanto citrato, cioè quando la cellula ha energia in avanzo; si ferma quando i grassi prodotti sono già tanti.",
+  "passaggi": [
+   "Ricorda la prima tappa: acetil-CoA → malonil-CoA",
+   "L'enzima è l'acetil-CoA carbossilasi",
+   "Attivatore: citrato; inibitore: palmitoil-CoA",
+   "Escludi B, che riguarda la β-ossidazione",
+   "Resta la C"
+  ],
+  "concetto": "Regolazione dell'acetil-CoA carbossilasi"
+ },
+ {
+  "id": "NBCH-092",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Come esce l'acetil-CoA dal mitocondrio per essere usato nella sintesi citosolica degli acidi grassi?",
+  "opzioni": {
+   "A": "Sotto forma di citrato, che nel citosol viene scisso dalla citrato liasi (ATP-citrato liasi) in acetil-CoA e ossalacetato",
+   "B": "Attraverso la navetta della carnitina",
+   "C": "Come acetil-CoA libero attraverso un canale specifico",
+   "D": "Come malonil-CoA",
+   "E": "Come acetoacetato"
+  },
+  "giusta": "A",
+  "perche": "La membrana mitocondriale interna è impermeabile all'acetil-CoA. Nel mitocondrio l'acetil-CoA si condensa con l'ossalacetato a formare citrato, che esce con un trasportatore; nel citosol l'ATP-citrato liasi lo scinde consumando ATP. L'ossalacetato diventa malato e poi piruvato tramite l'enzima malico, che genera NADPH. La navetta della carnitina porta gli acidi grassi nel verso opposto.",
+  "semplice": "L'acetil-CoA non ha il permesso di uscire dal mitocondrio, quindi si «nasconde» dentro il citrato; fuori il citrato viene smontato e l'acetil-CoA è di nuovo libero.",
+  "passaggi": [
+   "Ricorda che l'acetil-CoA non attraversa la membrana interna",
+   "Forma citrato con l'ossalacetato ed esce",
+   "La citrato liasi lo libera nel citosol",
+   "Escludi B: la carnitina serve per l'ingresso degli acidi grassi",
+   "Resta la A"
+  ],
+  "concetto": "Navetta del citrato"
+ },
+ {
+  "id": "NBCH-093",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Quanti acetil-CoA, ATP e NADPH servono per sintetizzare una molecola di palmitato (16 C) a partire da acetil-CoA citosolico?",
+  "opzioni": {
+   "A": "8 acetil-CoA, 8 ATP, 16 NADPH",
+   "B": "7 acetil-CoA, 7 ATP, 14 NADPH",
+   "C": "8 acetil-CoA, 0 ATP, 14 NADH",
+   "D": "16 acetil-CoA, 7 ATP, 7 NADPH",
+   "E": "8 acetil-CoA, 7 ATP, 14 NADPH"
+  },
+  "giusta": "E",
+  "perche": "Il palmitato richiede 8 acetil-CoA: uno fa da innesco e 7 vengono prima carbossilati a malonil-CoA (7 ATP). Ogni giro di allungamento ha due riduzioni con NADPH, quindi 7 × 2 = 14 NADPH. L'opzione A conta un malonil-CoA di troppo, perché il primo acetil-CoA non viene carbossilato.",
+  "semplice": "Si parte da un mattone da due carboni e se ne aggiungono altri sette, ognuno «pagato» con un ATP e due NADPH: alla fine si hanno 16 carboni.",
+  "passaggi": [
+   "Dati: 16 C = 8 unità da 2 C",
+   "1 acetil-CoA innesco + 7 malonil-CoA → 7 ATP",
+   "7 giri × 2 NADPH = 14 NADPH",
+   "Resta la E"
+  ],
+  "concetto": "Stechiometria della sintesi del palmitato"
+ },
+ {
+  "id": "NBCH-094",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Perché, durante la sintesi degli acidi grassi, la β-ossidazione si blocca?",
+  "opzioni": {
+   "A": "Perché il citrato inibisce l'acil-CoA deidrogenasi",
+   "B": "Perché il malonil-CoA inibisce la carnitina palmitoil-transferasi I, impedendo l'ingresso degli acidi grassi nel mitocondrio",
+   "C": "Perché manca il FAD",
+   "D": "Perché l'insulina degrada la carnitina",
+   "E": "Perché l'acido grasso sintasi consuma tutto il CoA"
+  },
+  "giusta": "B",
+  "perche": "Il malonil-CoA, primo intermedio della sintesi, è un inibitore della CPT I: così gli acidi grassi appena sintetizzati non entrano nel mitocondrio per essere demoliti, evitando un ciclo futile. È un esempio di regolazione reciproca tra due vie opposte. Il citrato regola l'acetil-CoA carbossilasi, non l'acil-CoA deidrogenasi.",
+  "semplice": "Sarebbe assurdo costruire un muro e intanto smontarlo dall'altro lato. Il malonil-CoA, che compare quando si costruisce, chiude la porta d'ingresso alla demolizione.",
+  "passaggi": [
+   "Ricorda il primo intermedio della sintesi: malonil-CoA",
+   "Ricorda il bersaglio: CPT I",
+   "Senza CPT I gli acidi grassi non entrano nel mitocondrio",
+   "Resta la B"
+  ],
+  "concetto": "Malonil-CoA inibisce la CPT I"
+ },
+ {
+  "id": "NBCH-095",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Quali sono le principali fonti di NADPH per la sintesi degli acidi grassi nel fegato?",
+  "opzioni": {
+   "A": "Ciclo di Krebs e catena respiratoria",
+   "B": "Glicolisi e fermentazione lattica",
+   "C": "β-ossidazione e chetogenesi",
+   "D": "Via dei pentoso fosfati ed enzima malico",
+   "E": "Ciclo dell'urea e transaminazioni"
+  },
+  "giusta": "D",
+  "perche": "La via dei pentoso fosfati fornisce NADPH dalla fase ossidativa; l'enzima malico decarbossila il malato a piruvato producendo NADPH, sfruttando l'ossalacetato che deriva dalla scissione del citrato. Anche l'isocitrato deidrogenasi citosolica NADP-dipendente contribuisce. Glicolisi e ciclo di Krebs producono invece NADH.",
+  "semplice": "Per costruire i grassi servono le «batterie» NADPH, e le due officine che le caricano sono la via dei pentoso fosfati e l'enzima malico.",
+  "passaggi": [
+   "Ricorda che la sintesi usa NADPH, non NADH",
+   "Fonte 1: via dei pentoso fosfati",
+   "Fonte 2: enzima malico (malato → piruvato)",
+   "Escludi le vie che producono NADH",
+   "Resta la D"
+  ],
+  "concetto": "Fonti di NADPH"
+ },
+ {
+  "id": "NBCH-096",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Quale affermazione sull'HMG-CoA reduttasi è corretta?",
+  "opzioni": {
+   "A": "È mitocondriale e produce corpi chetonici",
+   "B": "Converte lo squalene in lanosterolo",
+   "C": "Si trova nel reticolo endoplasmatico, riduce l'HMG-CoA a mevalonato con NADPH ed è il bersaglio delle statine",
+   "D": "È attivata dal colesterolo",
+   "E": "Usa NADH e produce acetoacetato"
+  },
+  "giusta": "C",
+  "perche": "L'HMG-CoA reduttasi è un enzima di membrana del reticolo endoplasmatico che riduce l'HMG-CoA a mevalonato con 2 NADPH: è la tappa limitante della sintesi del colesterolo. Le statine sono inibitori competitivi. L'HMG-CoA mitocondriale del fegato è invece scisso dall'HMG-CoA liasi in acetoacetato (corpi chetonici), per cui A ed E confondono le due vie.",
+  "semplice": "L'HMG-CoA è un bivio: nel mitocondrio diventa corpi chetonici, nel reticolo endoplasmatico diventa colesterolo. Le statine bloccano proprio la strada verso il colesterolo.",
+  "passaggi": [
+   "Ricorda la reazione: HMG-CoA → mevalonato con NADPH",
+   "Sede: reticolo endoplasmatico",
+   "Tappa limitante, bersaglio delle statine",
+   "Escludi A ed E (via dei corpi chetonici)",
+   "Resta la C"
+  ],
+  "concetto": "HMG-CoA reduttasi"
+ },
+ {
+  "id": "NBCH-097",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Che cosa succede quando il colesterolo nella cellula diminuisce?",
+  "opzioni": {
+   "A": "La proteina SREBP viene tagliata e attivata, entra nel nucleo e aumenta la trascrizione di HMG-CoA reduttasi e recettore delle LDL",
+   "B": "La cellula riduce il numero di recettori delle LDL",
+   "C": "L'HMG-CoA reduttasi viene degradata più rapidamente",
+   "D": "Si attiva la β-ossidazione",
+   "E": "Aumenta la produzione di acidi biliari"
+  },
+  "giusta": "A",
+  "perche": "Con poco colesterolo nella membrana del reticolo endoplasmatico, il complesso SREBP-SCAP si sposta nel Golgi dove SREBP viene tagliata; il frammento attivo entra nel nucleo e si lega agli elementi SRE, aumentando la sintesi di HMG-CoA reduttasi e del recettore delle LDL. Così la cellula ne produce e ne capta di più. Con molto colesterolo avviene il contrario, e la reduttasi viene degradata più rapidamente (opzione C).",
+  "semplice": "Quando il colesterolo scarseggia la cellula accende un «allarme» genetico: produce più macchine per fabbricarlo e più porte per catturarlo dal sangue.",
+  "passaggi": [
+   "Ricorda il sensore: SREBP-SCAP nel reticolo endoplasmatico",
+   "Con poco colesterolo SREBP viene tagliata e va nel nucleo",
+   "Aumenta la trascrizione di HMG-CoA reduttasi e recettore LDL",
+   "Escludi B e C, che avvengono con colesterolo alto",
+   "Resta la A"
+  ],
+  "concetto": "Regolazione tramite SREBP"
+ },
+ {
+  "id": "NBCH-098",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Quale affermazione sulla regolazione dell'acetil-CoA carbossilasi è corretta?",
+  "opzioni": {
+   "A": "Il glucagone la attiva tramite defosforilazione",
+   "B": "È attivata dal palmitoil-CoA",
+   "C": "L'insulina la fosforila e la inattiva",
+   "D": "È regolata solo a livello trascrizionale",
+   "E": "L'AMPK, attiva quando l'energia scarseggia, la fosforila e la inattiva"
+  },
+  "giusta": "E",
+  "perche": "Quando il rapporto AMP/ATP sale, la protein chinasi attivata dall'AMP (AMPK) fosforila l'acetil-CoA carbossilasi e la inattiva, perché non ha senso spendere energia per fare grassi. Anche il glucagone e l'adrenalina favoriscono la forma fosforilata inattiva. L'insulina invece promuove la defosforilazione e l'attivazione, quindi le opzioni A e C sono invertite.",
+  "semplice": "Quando la cellula è a corto di energia, l'AMPK spegne l'interruttore della fabbrica dei grassi. Dopo un pasto, l'insulina lo riaccende.",
+  "passaggi": [
+   "Ricorda: forma fosforilata = inattiva",
+   "AMPK, glucagone, adrenalina → fosforilazione → inattiva",
+   "Insulina → defosforilazione → attiva",
+   "Escludi A e C, che sono invertite",
+   "Resta la E"
+  ],
+  "concetto": "AMPK e acetil-CoA carbossilasi"
+ },
+ {
+  "id": "NBCH-099",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Perché l'acido linoleico (18:2, ω-6) è un acido grasso essenziale per l'uomo?",
+  "opzioni": {
+   "A": "Perché l'uomo non sintetizza acidi grassi a 18 C",
+   "B": "Perché l'uomo non può introdurre doppi legami oltre il carbonio 9 della catena",
+   "C": "Perché l'acido grasso sintasi produce solo acidi grassi insaturi",
+   "D": "Perché è il prodotto finale della β-ossidazione",
+   "E": "Perché non può essere allungato nel reticolo endoplasmatico"
+  },
+  "giusta": "B",
+  "perche": "L'acido grasso sintasi produce palmitato (16:0), che può essere allungato a stearato (18:0) e desaturato a oleato (18:1, Δ9). Le desaturasi umane, però, non introducono doppi legami tra il carbonio 9 e l'estremità metilica: per questo linoleico (ω-6) e α-linolenico (ω-3) devono venire dalla dieta. L'uomo produce acidi grassi a 18 C, quindi la A è falsa.",
+  "semplice": "Il nostro corpo sa fare grassi lunghi e anche aggiungere un doppio legame vicino all'inizio della catena, ma non verso la coda: quei grassi li prendiamo da semi, noci e oli vegetali.",
+  "passaggi": [
+   "Ricorda il prodotto dell'acido grasso sintasi: palmitato",
+   "Allungamento e desaturazione Δ9 sono possibili",
+   "Mancano desaturasi oltre il C9",
+   "Linoleico (Δ9,12) richiede un doppio legame in posizione 12",
+   "Resta la B"
+  ],
+  "concetto": "Acidi grassi essenziali"
+ },
+ {
+  "id": "NBCH-100",
+  "materia": "Biochimica",
+  "argomento": "Sintesi degli acidi grassi e del colesterolo",
+  "livello": "università",
+  "domanda": "Lo squalene, precursore a 30 atomi di carbonio del colesterolo, deriva dalla condensazione di unità isopreniche a 5 atomi di carbonio. Quante unità isopreniche lo compongono?",
+  "opzioni": {
+   "A": "3",
+   "B": "5",
+   "C": "4",
+   "D": "6",
+   "E": "10"
+  },
+  "giusta": "D",
+  "perche": "Le unità isopreniche attive sono l'isopentenil pirofosfato e il dimetilallil pirofosfato (5 C), derivate dal mevalonato. Tre unità formano il farnesil pirofosfato (15 C) e due farnesil si uniscono testa-testa nello squalene: 30/5 = 6 unità. Il valore 3 è il numero di unità del farnesil pirofosfato. Dallo squalene si forma il lanosterolo e poi il colesterolo (27 C), con perdita di 3 carboni.",
+  "semplice": "Lo squalene è una collana fatta con sei perline da cinque carboni ciascuna: 6 × 5 = 30.",
+  "passaggi": [
+   "Dato: squalene 30 C, unità isoprenica 5 C",
+   "Calcolo: 30 / 5 = 6",
+   "Controllo: 2 farnesil × 3 unità = 6",
+   "Resta la D"
+  ],
+  "concetto": "Unità isopreniche dello squalene"
+ },
+ {
+  "id": "NBCH-101",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Quali lipoproteine trasportano i trigliceridi assorbiti con la dieta dall'intestino ai tessuti periferici?",
+  "opzioni": {
+   "A": "HDL",
+   "B": "LDL",
+   "C": "VLDL",
+   "D": "IDL",
+   "E": "Chilomicroni"
+  },
+  "giusta": "E",
+  "perche": "Gli enterociti riassemblano i trigliceridi alimentari e li inseriscono nei chilomicroni, caratterizzati dall'apoB-48, che entrano nella linfa e poi nel sangue. Le VLDL trasportano invece i trigliceridi sintetizzati dal fegato (endogeni), quindi sono la distrazione più probabile. Le LDL trasportano soprattutto colesterolo.",
+  "semplice": "Dopo un pasto grasso l'intestino spedisce i grassi in grandi «camion», i chilomicroni, che passano prima nella linfa e poi nel sangue. Per questo il siero dopo un pasto molto grasso appare lattiginoso.",
+  "passaggi": [
+   "Riconosci l'origine: lipidi della dieta, dall'intestino",
+   "La lipoproteina intestinale è il chilomicrone (apoB-48)",
+   "Escludi le VLDL, che sono epatiche",
+   "Resta la E"
+  ],
+  "concetto": "Chilomicroni e lipidi alimentari"
+ },
+ {
+  "id": "NBCH-102",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Quale enzima idrolizza i trigliceridi di chilomicroni e VLDL nei capillari e quale apolipoproteina lo attiva?",
+  "opzioni": {
+   "A": "Lipasi ormono-sensibile; apoB-100",
+   "B": "Lipoproteina lipasi; apoC-II",
+   "C": "Lipasi pancreatica; apoA-I",
+   "D": "LCAT; apoE",
+   "E": "Lipasi gastrica; apoB-48"
+  },
+  "giusta": "B",
+  "perche": "La lipoproteina lipasi è ancorata all'endotelio dei capillari, soprattutto di tessuto adiposo e muscolo, e libera acidi grassi dai trigliceridi delle lipoproteine; l'apoC-II, presente su chilomicroni e VLDL, è il suo attivatore. La lipasi ormono-sensibile agisce invece dentro gli adipociti sui trigliceridi di riserva, durante il digiuno. La LCAT esterifica il colesterolo nelle HDL.",
+  "semplice": "Le lipoproteine passano nei capillari e la lipoproteina lipasi le «svuota» dei grassi, ma solo se le riconosce dal cartellino apoC-II.",
+  "passaggi": [
+   "Riconosci la sede: capillari, lipoproteine circolanti",
+   "L'enzima è la lipoproteina lipasi",
+   "Il suo attivatore è l'apoC-II",
+   "Escludi A: la lipasi ormono-sensibile è intracellulare",
+   "Resta la B"
+  ],
+  "concetto": "Lipoproteina lipasi e apoC-II"
+ },
+ {
+  "id": "NBCH-103",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Quale affermazione sulle LDL è corretta?",
+  "opzioni": {
+   "A": "Sono le lipoproteine più ricche di trigliceridi",
+   "B": "Sono prodotte direttamente dall'intestino",
+   "C": "Contengono apoB-48 come apolipoproteina principale",
+   "D": "Sono ricche di esteri di colesterolo, contengono apoB-100 e vengono captate tramite il recettore delle LDL",
+   "E": "Trasportano il colesterolo dai tessuti al fegato"
+  },
+  "giusta": "D",
+  "perche": "Le LDL derivano dalle VLDL del fegato dopo la perdita di trigliceridi (passando per le IDL); sono ricche di esteri di colesterolo e hanno una sola apoB-100, che il recettore delle LDL riconosce per l'endocitosi. Il trasporto dai tessuti al fegato (trasporto inverso) è compito delle HDL. Le più ricche di trigliceridi sono i chilomicroni.",
+  "semplice": "Le LDL sono i camion che portano il colesterolo dal fegato alle cellule. Se ce ne sono troppi nel sangue il colesterolo si deposita nelle arterie: per questo vengono chiamate «colesterolo cattivo».",
+  "passaggi": [
+   "Ricorda l'origine: VLDL → IDL → LDL",
+   "Contenuto: esteri di colesterolo",
+   "Apolipoproteina: apoB-100, ligando del recettore LDL",
+   "Escludi E, funzione delle HDL",
+   "Resta la D"
+  ],
+  "concetto": "LDL e recettore LDL"
+ },
+ {
+  "id": "NBCH-104",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Qual è il ruolo principale delle HDL?",
+  "opzioni": {
+   "A": "Raccogliere il colesterolo in eccesso dai tessuti periferici e riportarlo al fegato (trasporto inverso del colesterolo), con l'aiuto della LCAT attivata dall'apoA-I",
+   "B": "Trasportare i trigliceridi alimentari",
+   "C": "Portare il colesterolo dal fegato ai tessuti periferici",
+   "D": "Trasportare gli acidi grassi liberi nel sangue",
+   "E": "Trasportare i trigliceridi sintetizzati dal fegato"
+  },
+  "giusta": "A",
+  "perche": "Le HDL nascenti, ricche di apoA-I, ricevono colesterolo dalle cellule (tramite il trasportatore ABCA1); la LCAT, attivata dall'apoA-I, lo esterifica e lo sposta all'interno della particella. Il colesterolo arriva al fegato direttamente (recettore SR-B1) o passando ad altre lipoproteine, e viene eliminato con la bile. Per questo le HDL alte sono considerate protettive. Gli acidi grassi liberi viaggiano legati all'albumina.",
+  "semplice": "Le HDL sono gli «spazzini» che raccolgono il colesterolo in eccesso dalle cellule e lo riportano al fegato per smaltirlo.",
+  "passaggi": [
+   "Ricorda la funzione: trasporto inverso del colesterolo",
+   "Ricorda l'apoA-I e la LCAT",
+   "Escludi C, funzione delle LDL",
+   "Escludi D: gli acidi grassi liberi viaggiano con l'albumina",
+   "Resta la A"
+  ],
+  "concetto": "HDL e trasporto inverso"
+ },
+ {
+  "id": "NBCH-105",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Un ragazzo ha colesterolo LDL molto elevato fin dall'infanzia e xantomi tendinei; il padre ha avuto un infarto a 40 anni. Quale difetto è più probabile?",
+  "opzioni": {
+   "A": "Deficit di lipoproteina lipasi",
+   "B": "Deficit di apoC-II",
+   "C": "Mutazione del gene del recettore delle LDL (ipercolesterolemia familiare)",
+   "D": "Deficit di LCAT",
+   "E": "Eccesso di HDL"
+  },
+  "giusta": "C",
+  "perche": "Nell'ipercolesterolemia familiare, autosomica dominante, il recettore delle LDL è assente o difettoso: le LDL non vengono rimosse dal sangue e il colesterolo LDL sale molto, con xantomi e aterosclerosi precoce. Il deficit di lipoproteina lipasi o di apoC-II causa invece un accumulo di chilomicroni e trigliceridi, con pancreatite, non un aumento isolato di LDL.",
+  "semplice": "Le LDL sono come lettere che non vengono consegnate perché manca la cassetta della posta (il recettore): restano nel sangue e si accumulano.",
+  "passaggi": [
+   "Nota: LDL molto alte, esordio precoce, familiarità",
+   "Ricorda che le LDL vengono rimosse dal recettore LDL",
+   "Un difetto del recettore spiega l'accumulo",
+   "Escludi A e B, che aumentano i trigliceridi",
+   "Resta la C"
+  ],
+  "concetto": "Ipercolesterolemia familiare"
+ },
+ {
+  "id": "NBCH-106",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Quale ordine di densità crescente delle lipoproteine è corretto?",
+  "opzioni": {
+   "A": "HDL < LDL < IDL < VLDL < chilomicroni",
+   "B": "LDL < HDL < VLDL < chilomicroni < IDL",
+   "C": "VLDL < chilomicroni < LDL < HDL < IDL",
+   "D": "Chilomicroni < LDL < VLDL < IDL < HDL",
+   "E": "Chilomicroni < VLDL < IDL < LDL < HDL"
+  },
+  "giusta": "E",
+  "perche": "La densità dipende dal rapporto tra lipidi (leggeri) e proteine (dense). I chilomicroni, quasi tutti trigliceridi, sono i meno densi; seguono VLDL, IDL e LDL man mano che perdono trigliceridi; le HDL, con circa metà del peso fatto da proteine, sono le più dense. La A è l'ordine inverso, errore frequente se si confonde densità con dimensione.",
+  "semplice": "Più grasso c'è, più la particella è leggera, come l'olio che galleggia sull'acqua. I chilomicroni, pieni di grasso, sono i più leggeri; le HDL, ricche di proteine, le più pesanti.",
+  "passaggi": [
+   "Ricorda: lipidi = bassa densità, proteine = alta densità",
+   "Chilomicroni: più lipidi, meno densi",
+   "HDL: più proteine, più dense",
+   "Resta la E"
+  ],
+  "concetto": "Densità delle lipoproteine"
+ },
+ {
+  "id": "NBCH-107",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Quale lipoproteina trasporta i trigliceridi sintetizzati dal fegato verso i tessuti periferici?",
+  "opzioni": {
+   "A": "Chilomicroni",
+   "B": "VLDL",
+   "C": "HDL",
+   "D": "LDL",
+   "E": "Albumina"
+  },
+  "giusta": "B",
+  "perche": "Le VLDL (lipoproteine a densità molto bassa) sono prodotte dal fegato con apoB-100 e trasportano trigliceridi endogeni, sintetizzati per esempio da un eccesso di carboidrati. La lipoproteina lipasi le trasforma in IDL e poi in LDL. I chilomicroni trasportano i trigliceridi della dieta e l'albumina trasporta acidi grassi liberi, non trigliceridi.",
+  "semplice": "Il fegato confeziona i grassi che produce in pacchi chiamati VLDL e li spedisce a muscoli e tessuto adiposo.",
+  "passaggi": [
+   "Riconosci l'origine: trigliceridi del fegato (endogeni)",
+   "Il veicolo epatico è la VLDL",
+   "Escludi i chilomicroni (dieta)",
+   "Resta la B"
+  ],
+  "concetto": "VLDL e trigliceridi endogeni"
+ },
+ {
+  "id": "NBCH-108",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Con quale meccanismo le statine riducono il colesterolo LDL nel sangue?",
+  "opzioni": {
+   "A": "Inibiscono l'HMG-CoA reduttasi: il colesterolo nelle cellule epatiche cala, SREBP aumenta l'espressione del recettore LDL e il fegato capta più LDL dal sangue",
+   "B": "Bloccano l'assorbimento intestinale del colesterolo",
+   "C": "Attivano la lipoproteina lipasi",
+   "D": "Distruggono le LDL nel sangue",
+   "E": "Aumentano la sintesi di apoB-100"
+  },
+  "giusta": "A",
+  "perche": "Inibendo l'HMG-CoA reduttasi, le statine riducono la sintesi epatica di colesterolo; la cellula «sente» la carenza tramite SREBP e produce più recettori delle LDL, che rimuovono più LDL dal sangue. È questo secondo effetto a spiegare gran parte della riduzione delle LDL. Il blocco dell'assorbimento intestinale è il meccanismo di un altro farmaco, l'ezetimibe.",
+  "semplice": "Se il fegato produce meno colesterolo, va a «prenderlo» dal sangue aprendo più porte (recettori LDL). Così il colesterolo nel sangue scende.",
+  "passaggi": [
+   "Ricorda il bersaglio delle statine: HMG-CoA reduttasi",
+   "Meno colesterolo nell'epatocita",
+   "SREBP aumenta i recettori LDL",
+   "Più LDL captate dal sangue",
+   "Resta la A"
+  ],
+  "concetto": "Meccanismo delle statine"
+ },
+ {
+  "id": "NBCH-109",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Quale apolipoproteina permette al fegato di captare i residui dei chilomicroni e le IDL?",
+  "opzioni": {
+   "A": "ApoA-I",
+   "B": "ApoC-II",
+   "C": "ApoB-48",
+   "D": "ApoE",
+   "E": "ApoC-III"
+  },
+  "giusta": "D",
+  "perche": "Dopo l'azione della lipoproteina lipasi, i residui dei chilomicroni e le IDL vengono riconosciuti dal fegato grazie all'apoE, che si lega al recettore delle LDL e alla proteina correlata (LRP). L'apoB-48 non lega il recettore LDL, per cui non basta ai chilomicroni. Varianti di apoE (come la E4) sono associate a rischio cardiovascolare e di Alzheimer.",
+  "semplice": "L'apoE è il «codice di ritiro» che permette al fegato di riprendersi i resti delle lipoproteine dopo che hanno consegnato i grassi.",
+  "passaggi": [
+   "Ricorda che i residui vengono captati dal fegato",
+   "Il ligando per il recettore epatico è l'apoE",
+   "Escludi l'apoB-48, che non lega il recettore LDL",
+   "Escludi l'apoC-II, che attiva la lipoproteina lipasi",
+   "Resta la D"
+  ],
+  "concetto": "ApoE e captazione dei residui"
+ },
+ {
+  "id": "NBCH-110",
+  "materia": "Biochimica",
+  "argomento": "Lipoproteine e trasporto dei lipidi",
+  "livello": "università",
+  "domanda": "Un paziente a digiuno ha colesterolo totale 240 mg/dL, colesterolo HDL 50 mg/dL e trigliceridi 150 mg/dL. Qual è il colesterolo LDL stimato con la formula di Friedewald (LDL = CT − HDL − TG/5)?",
+  "opzioni": {
+   "A": "190 mg/dL",
+   "B": "40 mg/dL",
+   "C": "160 mg/dL",
+   "D": "130 mg/dL",
+   "E": "210 mg/dL"
+  },
+  "giusta": "C",
+  "perche": "Il termine TG/5 stima il colesterolo contenuto nelle VLDL: 150/5 = 30 mg/dL. Quindi LDL = 240 − 50 − 30 = 160 mg/dL. Chi dimentica il termine dei trigliceridi ottiene 190; la formula non è affidabile con trigliceridi sopra circa 400 mg/dL.",
+  "semplice": "Il colesterolo totale è la somma dei colesteroli dei vari «camion». Togliendo quello delle HDL e quello stimato delle VLDL resta quello delle LDL.",
+  "passaggi": [
+   "Dati: CT 240, HDL 50, TG 150 mg/dL",
+   "Colesterolo VLDL ≈ TG/5 = 30 mg/dL",
+   "LDL = 240 − 50 − 30",
+   "Risultato: 160 mg/dL",
+   "Resta la C"
+  ],
+  "concetto": "Formula di Friedewald"
+ },
+ {
+  "id": "NBCH-111",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Quale molecola fornisce il ribosio-5-fosfato attivato per la sintesi dei nucleotidi, sia de novo sia di recupero?",
+  "opzioni": {
+   "A": "Glucosio-6-fosfato",
+   "B": "5-fosforibosil-1-pirofosfato (PRPP)",
+   "C": "UDP-glucosio",
+   "D": "Desossiribosio",
+   "E": "Ribulosio-1,5-bisfosfato"
+  },
+  "giusta": "B",
+  "perche": "La PRPP sintetasi trasferisce un pirofosfato dall'ATP al carbonio 1 del ribosio-5-fosfato, formando PRPP. Il PRPP è usato nella sintesi delle purine (su cui viene costruito l'anello), delle pirimidine (a cui si lega l'anello già formato) e nelle vie di recupero. Il ribulosio-1,5-bisfosfato è il substrato della RuBisCO nelle piante.",
+  "semplice": "Il PRPP è la base su cui si montano i nucleotidi, come il telaio di un'auto su cui si attaccano gli altri pezzi.",
+  "passaggi": [
+   "Ricorda la sorgente del ribosio: via dei pentoso fosfati",
+   "Il ribosio-5-fosfato viene attivato a PRPP con ATP",
+   "Il PRPP serve a sintesi de novo e recupero",
+   "Resta la B"
+  ],
+  "concetto": "PRPP"
+ },
+ {
+  "id": "NBCH-112",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Qual è il prodotto finale del catabolismo delle purine nell'uomo?",
+  "opzioni": {
+   "A": "Urea",
+   "B": "β-alanina",
+   "C": "Allantoina",
+   "D": "Acido urico",
+   "E": "Ammoniaca"
+  },
+  "giusta": "D",
+  "perche": "Nell'uomo e nei primati AMP e GMP vengono degradati a ipoxantina e xantina, che la xantina ossidasi trasforma in acido urico, eliminato con le urine. Molti altri mammiferi hanno l'urato ossidasi e producono allantoina, più solubile. La β-alanina deriva invece dal catabolismo delle pirimidine (citosina e uracile).",
+  "semplice": "Le purine si smontano fino all'acido urico. Se ce n'è troppo cristallizza nelle articolazioni e causa la gotta.",
+  "passaggi": [
+   "Ricorda la via: purine → ipoxantina → xantina → acido urico",
+   "L'uomo non ha l'urato ossidasi",
+   "Escludi l'allantoina, prodotto di altri mammiferi",
+   "Escludi la β-alanina, dalle pirimidine",
+   "Resta la D"
+  ],
+  "concetto": "Acido urico come prodotto finale"
+ },
+ {
+  "id": "NBCH-113",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Qual è il primo nucleotide purinico completo che si forma nella sintesi de novo, da cui derivano AMP e GMP?",
+  "opzioni": {
+   "A": "Inosina monofosfato (IMP)",
+   "B": "Uridina monofosfato (UMP)",
+   "C": "Adenosina trifosfato (ATP)",
+   "D": "Orotato",
+   "E": "Xantina"
+  },
+  "giusta": "A",
+  "perche": "La sintesi de novo delle purine costruisce l'anello direttamente sul PRPP, in dieci passaggi, fino all'inosina monofosfato (IMP), che contiene la base ipoxantina. Dall'IMP si formano l'AMP (con aspartato e GTP) e il GMP (con glutammina e ATP). UMP e orotato appartengono alla sintesi delle pirimidine.",
+  "semplice": "L'IMP è il «grezzo» da cui si ricavano i due prodotti finiti, AMP e GMP, come un blocco di legno da cui si scolpiscono due statue diverse.",
+  "passaggi": [
+   "Ricorda che l'anello purinico si forma sul PRPP",
+   "Il primo nucleotide completo è l'IMP",
+   "Da IMP si formano AMP e GMP",
+   "Escludi UMP e orotato (pirimidine)",
+   "Resta la A"
+  ],
+  "concetto": "IMP, capostipite delle purine"
+ },
+ {
+  "id": "NBCH-114",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Quale affermazione sulla sintesi de novo delle pirimidine è corretta?",
+  "opzioni": {
+   "A": "L'anello viene costruito direttamente sul PRPP, come per le purine",
+   "B": "Il primo nucleotide formato è l'IMP",
+   "C": "L'anello pirimidinico (orotato) viene formato prima e poi legato al PRPP; la prima tappa usa la carbamil fosfato sintetasi II citosolica",
+   "D": "Usa la carbamil fosfato sintetasi I mitocondriale",
+   "E": "Il prodotto finale è l'acido urico"
+  },
+  "giusta": "C",
+  "perche": "Nelle pirimidine il carbamil fosfato (formato dalla carbamil fosfato sintetasi II citosolica, con glutammina come fonte di azoto) si unisce all'aspartato e, dopo chiusura e ossidazione, si forma l'orotato; solo allora l'anello viene legato al PRPP, formando OMP, poi UMP. La carbamil fosfato sintetasi I, mitocondriale e con NH₄⁺, appartiene al ciclo dell'urea.",
+  "semplice": "Per le pirimidine si costruisce prima l'anello «a parte» e poi lo si attacca allo zucchero; per le purine si costruisce l'anello pezzo per pezzo direttamente sullo zucchero.",
+  "passaggi": [
+   "Ricorda la differenza con le purine",
+   "Prima l'orotato, poi il legame con il PRPP",
+   "La prima tappa usa la CPS II citosolica",
+   "Escludi D, che riguarda il ciclo dell'urea",
+   "Resta la C"
+  ],
+  "concetto": "Sintesi delle pirimidine"
+ },
+ {
+  "id": "NBCH-115",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Quale enzima forma i desossiribonucleotidi necessari alla sintesi del DNA?",
+  "opzioni": {
+   "A": "Timidilato sintasi",
+   "B": "DNA polimerasi",
+   "C": "Diidrofolato reduttasi",
+   "D": "Xantina ossidasi",
+   "E": "Ribonucleotide reduttasi, che riduce i ribonucleosidi difosfato a desossiribonucleosidi difosfato"
+  },
+  "giusta": "E",
+  "perche": "La ribonucleotide reduttasi rimuove l'ossidrile in 2' del ribosio nei ribonucleosidi difosfato (ADP, GDP, CDP, UDP), usando elettroni che provengono in ultima analisi dal NADPH tramite tioredossina. È finemente regolata da siti allosterici per bilanciare i quattro dNTP. La timidilato sintasi interviene dopo, metilando il dUMP a dTMP, ma non forma il desossiribosio.",
+  "semplice": "Per passare dall'RNA al DNA bisogna togliere un ossigeno allo zucchero. L'enzima che fa questo «taglio» è la ribonucleotide reduttasi.",
+  "passaggi": [
+   "Ricorda la differenza tra ribosio e desossiribosio: OH in 2'",
+   "La riduzione avviene a livello di NDP",
+   "L'enzima è la ribonucleotide reduttasi",
+   "Escludi A, che metila il dUMP",
+   "Resta la E"
+  ],
+  "concetto": "Ribonucleotide reduttasi"
+ },
+ {
+  "id": "NBCH-116",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Il 5-fluorouracile e il metotrexato sono farmaci antitumorali che bloccano la sintesi del timidilato. Quali enzimi inibiscono rispettivamente?",
+  "opzioni": {
+   "A": "Ribonucleotide reduttasi e timidilato sintasi",
+   "B": "Timidilato sintasi (direttamente) e diidrofolato reduttasi",
+   "C": "Xantina ossidasi e HGPRT",
+   "D": "Diidrofolato reduttasi e PRPP sintetasi",
+   "E": "Adenosina deaminasi e timidilato sintasi"
+  },
+  "giusta": "B",
+  "perche": "La timidilato sintasi trasferisce un metile dal N⁵,N¹⁰-metilene-tetraidrofolato al dUMP, formando dTMP e diidrofolato. Il 5-fluorouracile, come FdUMP, inibisce irreversibilmente la timidilato sintasi. Il metotrexato inibisce la diidrofolato reduttasi, impedendo di rigenerare il tetraidrofolato e quindi bloccando indirettamente la stessa reazione. Le cellule che si dividono velocemente sono le più colpite.",
+  "semplice": "Due farmaci, due modi di bloccare la stessa catena di montaggio: il 5-fluorouracile inceppa la macchina principale, il metotrexato le toglie il carburante (il folato ridotto).",
+  "passaggi": [
+   "Ricorda la reazione: dUMP → dTMP con metilene-THF",
+   "Il 5-FU (come FdUMP) inibisce la timidilato sintasi",
+   "Il metotrexato inibisce la diidrofolato reduttasi",
+   "Resta la B"
+  ],
+  "concetto": "Bersagli di 5-FU e metotrexato"
+ },
+ {
+  "id": "NBCH-117",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Come agisce l'allopurinolo nel trattamento della gotta?",
+  "opzioni": {
+   "A": "Aumenta l'escrezione renale di acido urico",
+   "B": "Scioglie i cristalli di urato",
+   "C": "Inibisce la PRPP sintetasi",
+   "D": "Inibisce la xantina ossidasi, riducendo la produzione di acido urico",
+   "E": "Attiva l'urato ossidasi"
+  },
+  "giusta": "D",
+  "perche": "L'allopurinolo è un analogo dell'ipoxantina che viene trasformato in alloxantina (ossipurinolo), un potente inibitore della xantina ossidasi. Si accumulano ipoxantina e xantina, più solubili e riciclabili, e la produzione di acido urico diminuisce. Aumentare l'escrezione renale è il meccanismo di altri farmaci (uricosurici come il probenecid), non dell'allopurinolo.",
+  "semplice": "L'allopurinolo blocca l'ultima macchina che produce l'acido urico, così se ne forma meno e non cristallizza nelle articolazioni.",
+  "passaggi": [
+   "Ricorda le ultime tappe: ipoxantina → xantina → acido urico",
+   "Le catalizza la xantina ossidasi",
+   "L'allopurinolo la inibisce",
+   "Escludi A, meccanismo degli uricosurici",
+   "Resta la D"
+  ],
+  "concetto": "Allopurinolo e xantina ossidasi"
+ },
+ {
+  "id": "NBCH-118",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "La sindrome di Lesch-Nyhan, con iperuricemia, ritardo e autolesionismo, è dovuta al deficit di quale enzima?",
+  "opzioni": {
+   "A": "Ipoxantina-guanina fosforibosiltransferasi (HGPRT), della via di recupero delle purine",
+   "B": "Adenosina deaminasi",
+   "C": "Xantina ossidasi",
+   "D": "Carbamil fosfato sintetasi II",
+   "E": "Timidilato sintasi"
+  },
+  "giusta": "A",
+  "perche": "L'HGPRT recupera ipoxantina e guanina legandole al PRPP per riformare IMP e GMP. Se manca, le basi vengono degradate ad acido urico e il PRPP non consumato si accumula, stimolando la sintesi de novo: si produce ancora più acido urico. Il deficit di adenosina deaminasi causa invece un'immunodeficienza grave combinata.",
+  "semplice": "Senza HGPRT le purine non vengono riciclate ma buttate via come acido urico, e intanto la cellula ne produce di nuove: i «rifiuti» aumentano moltissimo.",
+  "passaggi": [
+   "Ricorda le vie di recupero delle purine",
+   "Riconosci l'enzima: HGPRT",
+   "Senza recupero aumentano degradazione e sintesi de novo",
+   "Escludi B, che causa immunodeficienza",
+   "Resta la A"
+  ],
+  "concetto": "HGPRT e Lesch-Nyhan"
+ },
+ {
+  "id": "NBCH-119",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Il deficit di adenosina deaminasi (ADA) causa soprattutto:",
+  "opzioni": {
+   "A": "gotta precoce",
+   "B": "anemia emolitica dopo l'assunzione di fave",
+   "C": "immunodeficienza grave combinata (SCID), per accumulo di dATP tossico nei linfociti",
+   "D": "ipoglicemia a digiuno",
+   "E": "fenilchetonuria"
+  },
+  "giusta": "C",
+  "perche": "L'ADA trasforma adenosina e desossiadenosina in inosina e desossinosina. Se manca, la desossiadenosina si accumula e nei linfociti viene fosforilata a dATP, che inibisce la ribonucleotide reduttasi e blocca la sintesi del DNA: linfociti T e B non proliferano. Il deficit di ADA è stato uno dei primi casi trattati con terapia genica. L'anemia dopo le fave è il favismo (G6PD).",
+  "semplice": "Senza ADA si accumula una sostanza tossica proprio nei linfociti, i soldati del sistema immunitario: il bambino resta senza difese contro le infezioni.",
+  "passaggi": [
+   "Ricorda la reazione dell'ADA: (desossi)adenosina → (desossi)inosina",
+   "Nel deficit si accumula dATP nei linfociti",
+   "Il dATP inibisce la ribonucleotide reduttasi",
+   "Ne deriva SCID",
+   "Resta la C"
+  ],
+  "concetto": "Deficit di ADA e SCID"
+ },
+ {
+  "id": "NBCH-120",
+  "materia": "Biochimica",
+  "argomento": "Metabolismo dei nucleotidi",
+  "livello": "università",
+  "domanda": "Quale amminoacido fornisce, come molecola intera, gli atomi C4, C5 e N7 dell'anello purinico?",
+  "opzioni": {
+   "A": "Aspartato",
+   "B": "Glutammina",
+   "C": "Serina",
+   "D": "Alanina",
+   "E": "Glicina"
+  },
+  "giusta": "E",
+  "perche": "Nella sintesi de novo delle purine la glicina viene incorporata intera (C4, C5 e N7). La glutammina fornisce N3 e N9, l'aspartato N1, la CO₂ il C6 e il formil-tetraidrofolato C2 e C8. La glutammina è una distrazione plausibile perché dona più atomi, ma soltanto come gruppi amminici, non con il suo scheletro.",
+  "semplice": "L'anello delle purine è un puzzle fatto con pezzi di provenienze diverse; la glicina è l'unico pezzo che entra tutto intero.",
+  "passaggi": [
+   "Ricorda le fonti degli atomi delle purine",
+   "Glicina: C4, C5, N7 (intera)",
+   "Glutammina: N3, N9; aspartato: N1; CO₂: C6; formile: C2, C8",
+   "Resta la E"
+  ],
+  "concetto": "Origine degli atomi delle purine"
+ }
+]

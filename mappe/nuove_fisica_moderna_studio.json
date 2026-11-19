@@ -1,0 +1,745 @@
+{
+ "Relatività ristretta": {
+  "superiore": {
+   "spiegazione": [
+    "Alla fine dell'Ottocento la fisica aveva un problema: le equazioni di Maxwell prevedono che la luce viaggi a c ≈ 3 × 10⁸ m/s, ma rispetto a che cosa? Si pensava a un mezzo invisibile, l'etere, ma l'esperimento di Michelson e Morley non riuscì a rilevare il moto della Terra rispetto a esso. Nel 1905 Einstein risolse la questione con due postulati. Primo: le leggi della fisica sono le stesse in tutti i sistemi di riferimento inerziali. Secondo: la velocità della luce nel vuoto è la stessa per tutti gli osservatori inerziali, qualunque sia il moto della sorgente.",
+    "Da questi due principi discendono conseguenze sorprendenti, tutte governate dal fattore di Lorentz γ = 1/√(1 − v²/c²). Il fattore vale 1 quando il corpo è fermo e cresce senza limite quando v si avvicina a c: a 0,6c vale 1,25, a 0,8c circa 1,67, a 0,99c circa 7. Alle velocità quotidiane γ è praticamente 1, ed è per questo che non ci accorgiamo degli effetti relativistici. Un'auto a 100 km/h ha un γ che differisce da 1 per circa 4 parti su un milione di miliardi.",
+    "La prima conseguenza è la dilatazione dei tempi: un orologio in moto, visto da un osservatore fermo, scorre più lentamente. Se Δt₀ è il tempo proprio, cioè misurato da un orologio solidale con il fenomeno, l'osservatore che lo vede muoversi misura Δt = γΔt₀. I muoni creati dai raggi cosmici a circa 15 km di quota ne sono una prova: vivono in media solo 2,2 μs, eppure arrivano al suolo perché, visti da terra, il loro tempo è dilatato. Anche gli orologi dei satelliti GPS devono essere corretti per questo effetto.",
+    "La seconda conseguenza è la contrazione delle lunghezze: un oggetto in moto appare più corto nella direzione del moto, secondo L = L₀/γ, dove L₀ è la lunghezza propria misurata da fermo. Un'astronave di 100 m che passa a 0,8c appare lunga 60 m, ma non più stretta. A questo si aggiunge la relatività della simultaneità: due eventi contemporanei per un osservatore possono non esserlo per un altro in moto. L'ordine tra causa ed effetto, però, non si inverte mai.",
+    "Anche le velocità si compongono in modo nuovo: u' = (u + v)/(1 + uv/c²). Se due razzi si allontanano dalla Terra in versi opposti a 0,5c, uno vede l'altro allontanarsi a 0,8c, non a c. Infine la celebre E = mc² dice che la massa è una forma di energia: un grammo di materia corrisponde a 9 × 10¹³ J. Per un corpo in moto l'energia totale è E = γmc² e l'energia cinetica è K = (γ − 1)mc²; poiché γ tende all'infinito vicino a c, nessun corpo con massa può raggiungere la velocità della luce."
+   ],
+   "metodo": [
+    "Impara a memoria i due postulati e prova a spiegarli a voce con l'esempio del treno e della torcia.",
+    "Calcola γ per 0,6c, 0,8c, 0,9c e 0,99c e tieni la tabellina a portata di mano: velocizza tutti gli esercizi.",
+    "Prima di ogni esercizio chiediti quale sia il tempo proprio o la lunghezza propria: è quella misurata nel sistema dove l'oggetto è fermo.",
+    "Controlla sempre il risultato: un tempo dilatato deve essere più lungo del tempo proprio, una lunghezza contratta più corta di quella propria.",
+    "Per E = mc² converti sempre la massa in kilogrammi e ricordati del quadrato di c.",
+    "Collega il capitolo a «Effetto fotoelettrico e quanti di luce» (fotoni con E = pc) e a «Particelle elementari» (energie negli acceleratori)."
+   ],
+   "ricorda": [
+    "«Orologi in moto rallentano, righelli in moto si accorciano».",
+    "Tabellina di γ: 0,6c → 1,25; 0,8c → 5/3; 0,99c → circa 7.",
+    "Il tempo proprio è sempre il più corto, la lunghezza propria sempre la più lunga.",
+    "Nulla con massa raggiunge c: servirebbe un'energia infinita."
+   ],
+   "errori": [
+    "Dividere per γ invece di moltiplicare nella dilatazione dei tempi (o il contrario nella contrazione).",
+    "Applicare la contrazione anche alle dimensioni perpendicolari al moto.",
+    "Sommare le velocità come in fisica classica, ottenendo valori maggiori di c.",
+    "Usare la massa in grammi in E = mc², sbagliando di un fattore mille.",
+    "Pensare che gli effetti relativistici siano solo «apparenti»: sono misurabili e reali."
+   ],
+   "domande": [
+    {
+     "domanda": "Quali sono i due postulati della relatività ristretta?",
+     "risposta": "Le leggi della fisica sono le stesse in tutti i sistemi inerziali; la velocità della luce nel vuoto è la stessa per tutti gli osservatori inerziali."
+    },
+    {
+     "domanda": "Quanto vale γ per v = 0,8c?",
+     "risposta": "γ = 1/√(1 − 0,64) = 1/0,6 ≈ 1,67."
+    },
+    {
+     "domanda": "Che cos'è il tempo proprio?",
+     "risposta": "È l'intervallo di tempo misurato da un orologio fermo rispetto al fenomeno osservato; è il più breve tra quelli misurati dai vari osservatori."
+    },
+    {
+     "domanda": "Perché i muoni cosmici arrivano al suolo?",
+     "risposta": "Perché, visti da terra, il loro tempo di vita è dilatato di un fattore γ: vivono abbastanza a lungo da percorrere diversi chilometri."
+    },
+    {
+     "domanda": "Quanta energia equivale a 1 g di massa?",
+     "risposta": "E = mc² = 10⁻³ kg × 9 × 10¹⁶ m²/s² = 9 × 10¹³ J."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La relatività ristretta si costruisce a partire dal principio di relatività e dall'invarianza di c. Richiedendo che la trasformazione tra due sistemi inerziali sia lineare e lasci invariata la velocità della luce, si ottengono le trasformazioni di Lorentz: x' = γ(x − vt), t' = γ(t − vx/c²), con y e z invariati. Il termine vx/c² mescola tempo e spazio ed è all'origine della relatività della simultaneità. Nel limite v ≪ c si ritrovano le trasformazioni di Galileo. Composte tra loro, le trasformazioni di Lorentz producono la legge di addizione relativistica w = (u + v)/(1 + uv/c²).",
+    "Dilatazione dei tempi e contrazione delle lunghezze sono casi particolari. Due eventi nello stesso punto del sistema S' (Δx' = 0) sono separati in S da Δt = γΔt'. Per misurare una lunghezza in moto bisogna rilevare le posizioni dei due estremi simultaneamente in S, e si trova L = L₀/γ. È importante capire che i due effetti sono coerenti: nel caso dei muoni, nel sistema della Terra il loro tempo si dilata, nel sistema del muone è lo spessore dell'atmosfera a contrarsi. Il numero di muoni che arriva al suolo è lo stesso in entrambe le descrizioni.",
+    "Minkowski reinterpretò la teoria come geometria di uno spazio-tempo quadridimensionale. L'intervallo s² = (cΔt)² − Δx² − Δy² − Δz² è invariante per trasformazioni di Lorentz. Se s² > 0 l'intervallo è di tipo tempo e i due eventi possono essere legati causalmente; se s² < 0 è di tipo spazio e nessun segnale può collegarli; se s² = 0 sono collegati da un raggio di luce. Il cono di luce di un evento separa il suo passato e il suo futuro causali dalla regione «altrove». Il tempo proprio lungo una linea d'universo è dτ = ds/c.",
+    "Il paradosso dei gemelli si risolve in questo linguaggio. Tra due eventi di tipo tempo, la linea d'universo inerziale (retta) è quella con il massimo tempo proprio: è l'analogo, con il segno cambiato, del fatto che in geometria euclidea la retta è il cammino più breve. Il gemello che viaggia e torna percorre una linea spezzata e accumula meno tempo proprio. Il fenomeno non richiede la relatività generale; è stato verificato con orologi atomici trasportati in aereo e con particelle instabili in anelli di accumulazione.",
+    "In dinamica si introducono i quadrivettori. La quadri-quantità di moto P = (E/c, p), con E = γmc² e p = γmv, ha norma invariante (E/c)² − p² = m²c², da cui E² = (pc)² + (mc²)². Per particelle senza massa E = pc. In ogni processo isolato si conserva il quadrivettore totale: è lo strumento per calcolare soglie di reazione, cinematica di decadimenti e massa invariante di un sistema di particelle. Ad esempio, nell'annichilazione di un elettrone e un positrone fermi si producono due fotoni opposti da 0,511 MeV ciascuno."
+   ],
+   "metodo": [
+    "Ricava da solo le trasformazioni di Lorentz partendo dalla linearità e dall'invarianza di x² − c²t²: fissa la logica della teoria.",
+    "Disegna diagrammi di Minkowski per i problemi di simultaneità e per il paradosso dei gemelli: rendono visibile ciò che le formule nascondono.",
+    "Nei problemi d'urto lavora con i quadrivettori e con la massa invariante, scegliendo il sistema di riferimento più comodo (spesso quello del centro di massa).",
+    "Usa le unità naturali in MeV, MeV/c e MeV/c² per accelerare i calcoli con le particelle.",
+    "Verifica sempre il limite non relativistico: per v ≪ c le formule devono ridare la meccanica classica (per esempio K → ½mv²).",
+    "Collega il capitolo a «Particelle elementari» (cinematica relativistica delle collisioni) e all'elettromagnetismo (trasformazione dei campi)."
+   ],
+   "ricorda": [
+    "Lorentz: «x' = γ(x − vt), t' = γ(t − vx/c²)»; l'inversa si ottiene cambiando il segno di v.",
+    "Triangolo dell'energia: E² = (pc)² + (mc²)², ipotenusa E.",
+    "Linea retta nello spazio-tempo = massimo tempo proprio.",
+    "Tipo tempo, tipo spazio, tipo luce: guarda il segno di s²."
+   ],
+   "errori": [
+    "Confondere gli eventi simultanei in un sistema con quelli simultanei nell'altro durante la misura di una lunghezza.",
+    "Applicare la formula della dilatazione quando i due eventi non avvengono nello stesso punto di nessuno dei due sistemi.",
+    "Ritenere invariante l'energia o la quantità di moto da sole, anziché la loro combinazione E² − (pc)².",
+    "Attribuire il paradosso dei gemelli all'accelerazione come «causa» gravitazionale, invece che alla diversa geometria delle linee d'universo.",
+    "Usare la cosiddetta «massa relativistica» γm come se fosse una massa invariante."
+   ],
+   "domande": [
+    {
+     "domanda": "Scrivi le trasformazioni di Lorentz per un moto lungo x.",
+     "risposta": "x' = γ(x − vt), y' = y, z' = z, t' = γ(t − vx/c²), con γ = 1/√(1 − v²/c²)."
+    },
+    {
+     "domanda": "Quale grandezza è invariante per trasformazioni di Lorentz?",
+     "risposta": "L'intervallo s² = (cΔt)² − Δx² − Δy² − Δz²; in dinamica la norma del quadrivettore energia-impulso, m²c²."
+    },
+    {
+     "domanda": "Come si risolve il paradosso dei gemelli?",
+     "risposta": "Il gemello viaggiatore non resta in un solo sistema inerziale; la sua linea d'universo ha tempo proprio minore di quella inerziale del gemello a terra."
+    },
+    {
+     "domanda": "Quanto vale la velocità relativa di due particelle che si allontanano in versi opposti a 0,8c?",
+     "risposta": "w = 1,6c/(1 + 0,64) ≈ 0,976c."
+    },
+    {
+     "domanda": "Che cosa rappresenta la relazione E² = (pc)² + (mc²)²?",
+     "risposta": "È la norma invariante della quadri-quantità di moto; dà E = mc² a riposo ed E = pc per particelle senza massa."
+    }
+   ]
+  }
+ },
+ "Effetto fotoelettrico e quanti di luce": {
+  "superiore": {
+   "spiegazione": [
+    "Intorno al 1900 la fisica classica non riusciva a spiegare la luce emessa dai corpi caldi. Un corpo nero, cioè un oggetto ideale che assorbe tutta la radiazione, emette uno spettro che dipende solo dalla temperatura. Il picco si sposta verso lunghezze d'onda più corte quando la temperatura sale (legge di Wien, λ_max·T ≈ 2,9 × 10⁻³ m·K): per il Sole, a circa 5800 K, cade intorno a 500 nm. La potenza totale emessa cresce come T⁴ (legge di Stefan-Boltzmann): raddoppiando la temperatura assoluta si irraggia 16 volte di più.",
+    "La teoria classica prevedeva che l'energia emessa crescesse senza limite verso l'ultravioletto, un risultato assurdo chiamato «catastrofe ultravioletta». Max Planck trovò la soluzione supponendo che l'energia venisse scambiata solo in pacchetti, i quanti, di valore E = hf, dove h ≈ 6,63 × 10⁻³⁴ J·s è la costante di Planck. All'inizio Planck la considerava un trucco matematico. Fu Einstein, nel 1905, a prendere sul serio l'idea, affermando che la luce stessa è formata da quanti, poi chiamati fotoni.",
+    "L'effetto fotoelettrico è l'emissione di elettroni da un metallo colpito dalla luce. Gli esperimenti mostravano fatti strani per la fisica classica: sotto una certa frequenza di soglia non esce alcun elettrone, per quanto intensa sia la luce; sopra la soglia gli elettroni escono subito; la loro energia massima dipende dalla frequenza e non dall'intensità. Con l'ipotesi dei fotoni tutto si spiega: ogni elettrone assorbe un solo fotone, e se l'energia hf non basta a vincere il legame con il metallo, l'elettrone resta dentro. Aumentare l'intensità, cioè il numero di fotoni, aumenta solo il numero di elettroni emessi.",
+    "Einstein scrisse il bilancio energetico K_max = hf − W, dove W è il lavoro di estrazione, cioè l'energia minima per strappare un elettrone dal metallo. La frequenza di soglia è f₀ = W/h. L'energia massima si misura con il potenziale di arresto: è la tensione frenante V₀ che azzera la corrente, con eV₀ = K_max. Un esempio: un metallo con W = 2,3 eV illuminato con luce di 400 nm (fotoni da 3,1 eV) emette elettroni con K_max ≈ 0,8 eV, quindi V₀ ≈ 0,8 V.",
+    "Per i calcoli è comodissima la scorciatoia E(eV) = 1240/λ(nm). La luce visibile ha fotoni da circa 1,6 eV (rosso) a 3,3 eV (violetto). Aumentare l'intensità significa aumentare il numero di fotoni al secondo, non la loro energia: un laser da 1 mW ne emette circa 3 × 10¹⁵ al secondo. L'effetto fotoelettrico è alla base delle fotocellule, dei sensori delle fotocamere e, in una forma un po' diversa, dei pannelli solari. Valse a Einstein il premio Nobel del 1921."
+   ],
+   "metodo": [
+    "Memorizza la catena di idee: corpo nero → Planck (E = hf) → Einstein (fotoni) → effetto fotoelettrico.",
+    "Imparare a usare E = 1240/λ con λ in nm ed E in eV ti fa risparmiare molti calcoli con le potenze di dieci.",
+    "Negli esercizi sul fotoelettrico segui sempre lo schema: energia del fotone, confronto con W, differenza = K_max, poi V₀.",
+    "Disegna il grafico K_max in funzione della frequenza: è una retta con pendenza h che taglia l'asse delle frequenze in f₀.",
+    "Prepara una tabella con tre colonne: che cosa prevedeva la fisica classica, che cosa si osserva, come lo spiegano i fotoni.",
+    "Collega il capitolo a «Modelli atomici e spettri» (i fotoni emessi dagli atomi) e a «Semiconduttori e laser» (LED e celle solari)."
+   ],
+   "ricorda": [
+    "«Il colore decide l'energia, l'intensità decide il numero».",
+    "E(eV) ≈ 1240/λ(nm): 620 nm → 2 eV, 400 nm → 3,1 eV.",
+    "K_max = hf − W: il fotone «paga l'uscita» W e il resto è energia cinetica.",
+    "Wien: più caldo = picco più blu; Stefan: doppia T, 16 volte la potenza."
+   ],
+   "errori": [
+    "Pensare che una luce più intensa produca elettroni più veloci.",
+    "Sommare il lavoro di estrazione all'energia del fotone invece di sottrarlo.",
+    "Confondere la soglia in frequenza (un minimo) con quella in lunghezza d'onda (un massimo).",
+    "Usare la temperatura in gradi Celsius nelle leggi di Wien e di Stefan-Boltzmann.",
+    "Attribuire a Einstein l'ipotesi di Planck sul corpo nero."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché la luce rossa intensa non estrae elettroni dallo zinco?",
+     "risposta": "Perché ogni fotone rosso ha energia minore del lavoro di estrazione dello zinco e un elettrone assorbe un solo fotone alla volta."
+    },
+    {
+     "domanda": "Qual è l'energia di un fotone da 500 nm?",
+     "risposta": "E = 1240/500 ≈ 2,5 eV."
+    },
+    {
+     "domanda": "Che cosa misura il potenziale di arresto?",
+     "risposta": "L'energia cinetica massima dei fotoelettroni, tramite eV₀ = K_max."
+    },
+    {
+     "domanda": "Che cosa cambia aumentando l'intensità della luce sopra la soglia?",
+     "risposta": "Aumenta il numero di elettroni emessi, cioè la corrente; l'energia cinetica massima resta invariata."
+    },
+    {
+     "domanda": "Dove cade il picco di emissione del Sole secondo la legge di Wien?",
+     "risposta": "λ_max = 2,9 × 10⁻³/5800 ≈ 500 nm, nel visibile."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Lo spettro del corpo nero è il punto di partenza della fisica quantistica. Contando i modi stazionari della radiazione in una cavità si trova una densità di modi proporzionale a f². Assegnando a ciascun modo l'energia media classica kT si ottiene la legge di Rayleigh-Jeans, che funziona alle basse frequenze ma diverge alle alte: è la catastrofe ultravioletta. Planck suppose che l'energia di un modo potesse valere solo nhf; l'energia media diventa hf/(e^(hf/kT) − 1), che coincide con kT per hf ≪ kT e si annulla esponenzialmente per hf ≫ kT. Dalla legge di Planck si ricavano, come conseguenze, la legge di Wien e quella di Stefan-Boltzmann.",
+    "Nel 1905 Einstein propose che la radiazione stessa sia fatta di quanti di energia hf, localizzati e indivisibili nell'assorbimento. Questa ipotesi spiega le proprietà dell'effetto fotoelettrico: esistenza di una soglia, emissione praticamente istantanea anche con luce debolissima, indipendenza dell'energia degli elettroni dall'intensità. La teoria ondulatoria classica, in cui l'energia si accumula gradualmente, prevedrebbe invece ritardi misurabili con luce debole e nessuna soglia in frequenza. L'equazione di Einstein è eV₀ = hf − W.",
+    "Millikan misurò con cura V₀ in funzione di f per diversi metalli. I dati si allineano su rette parallele di pendenza h/e, con intercette che dipendono dal lavoro di estrazione. Il valore di h così ottenuto concordava con quello di Planck, e la conferma fu decisiva, nonostante lo scetticismo iniziale dello stesso Millikan. Nei metalli reali W è dell'ordine di 2-5 eV; dipende dalla superficie e dalla sua pulizia, ed è legato alla posizione del livello di Fermi rispetto al vuoto.",
+    "Il fotone porta anche quantità di moto p = E/c = h/λ. L'effetto Compton (1923) lo dimostra: raggi X diffusi da elettroni quasi liberi escono con lunghezza d'onda aumentata di Δλ = (h/m_e c)(1 − cos θ), con h/m_e c ≈ 2,43 pm. La formula si ricava imponendo la conservazione relativistica di energia e quantità di moto in un urto tra fotone ed elettrone. Lo spostamento non dipende da λ e quindi è rilevante solo per lunghezze d'onda corte, come i raggi X e gamma; con la luce visibile sarebbe una frazione minuscola.",
+    "Il quadro che emerge è il dualismo onda-corpuscolo: la luce produce interferenza e diffrazione, quindi si propaga come un'onda, ma scambia energia e quantità di moto in quanti discreti. A seconda dell'energia del fotone prevalgono processi diversi di interazione con la materia: effetto fotoelettrico a bassa energia, effetto Compton a energie intermedie, produzione di coppie sopra 1,022 MeV. Queste idee sono alla base di fotomoltiplicatori, sensori CCD e CMOS, spettroscopia fotoelettronica e rivelatori di raggi gamma. Nessuna delle due descrizioni, presa da sola, basta a spiegare tutti gli esperimenti."
+   ],
+   "metodo": [
+    "Ricava la legge di Rayleigh-Jeans e poi quella di Planck, controllando i due limiti hf ≪ kT e hf ≫ kT.",
+    "Ricava la formula di Compton dalla conservazione del quadrivettore energia-impulso: è un ottimo esercizio di relatività.",
+    "Costruisci un grafico V₀–f con dati inventati per due metalli e ricava h/e e i lavori di estrazione.",
+    "Tieni un quadro dei processi fotone-materia (fotoelettrico, Compton, coppie) con soglie e dipendenza dall'energia.",
+    "Esercitati con le conversioni tra J, eV, Hz e nm usando hc ≈ 1240 eV·nm e h ≈ 4,14 × 10⁻¹⁵ eV·s.",
+    "Collega il capitolo a «Meccanica quantistica di base» (dualismo esteso alla materia) e a «Relatività ristretta» (fotone con E = pc)."
+   ],
+   "ricorda": [
+    "Planck: energia media hf/(e^(hf/kT) − 1).",
+    "Millikan: pendenza della retta V₀–f = h/e.",
+    "Compton: Δλ = 2,43 pm × (1 − cos θ), massimo a 180°.",
+    "Fotone: E = hf, p = h/λ, m = 0."
+   ],
+   "errori": [
+    "Confondere la pendenza della retta V₀–f (h/e) con la sua intercetta (legata a W).",
+    "Trascurare la relatività nel ricavare la formula di Compton per elettroni di rinculo veloci.",
+    "Pensare che l'effetto Compton dipenda dalla lunghezza d'onda incidente.",
+    "Ritenere che il fotone non abbia quantità di moto perché è privo di massa.",
+    "Credere che l'ipotesi di Planck riguardasse la luce: riguardava gli scambi di energia degli oscillatori."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa prevede la legge di Rayleigh-Jeans ad alte frequenze?",
+     "risposta": "Una densità di energia che cresce come f² senza limite, quindi energia totale infinita: la catastrofe ultravioletta."
+    },
+    {
+     "domanda": "Come si ricava h dall'esperimento di Millikan?",
+     "risposta": "Dalla pendenza h/e della retta che lega il potenziale di arresto alla frequenza, moltiplicandola per la carica elementare."
+    },
+    {
+     "domanda": "Qual è lo spostamento Compton a 90°?",
+     "risposta": "Δλ = h/(m_e c) ≈ 2,43 pm, perché cos 90° = 0."
+    },
+    {
+     "domanda": "Qual è la quantità di moto di un fotone di 663 nm?",
+     "risposta": "p = h/λ = 6,63 × 10⁻³⁴/6,63 × 10⁻⁷ = 1,0 × 10⁻²⁷ kg·m/s."
+    },
+    {
+     "domanda": "Quali osservazioni del fotoelettrico contraddicono la teoria ondulatoria?",
+     "risposta": "Esistenza della frequenza di soglia, emissione istantanea anche con luce debole, energia cinetica massima indipendente dall'intensità."
+    }
+   ]
+  }
+ },
+ "Modelli atomici e spettri": {
+  "superiore": {
+   "spiegazione": [
+    "La storia dei modelli atomici è un bell'esempio di come la scienza procede per tentativi e correzioni. Dopo la scoperta dell'elettrone (1897), Thomson immaginò l'atomo come una sfera di carica positiva con gli elettroni immersi, come uvette in un panettone. Il modello spiegava la neutralità dell'atomo ma non resse alla prova sperimentale. Nel 1909 Geiger e Marsden, guidati da Rutherford, bombardarono una sottilissima lamina d'oro con particelle alfa.",
+    "Quasi tutte le particelle passavano senza deviare, ma alcune venivano deviate molto, e qualcuna tornava indietro. Rutherford concluse che la carica positiva e quasi tutta la massa sono concentrate in un nucleo piccolissimo, circa centomila volte più piccolo dell'atomo, con gli elettroni che ruotano intorno. Se l'atomo fosse grande come uno stadio, il nucleo sarebbe una formica a centrocampo. Il modello però aveva un difetto grave: un elettrone in orbita è accelerato e, secondo l'elettromagnetismo classico, dovrebbe irraggiare energia e cadere sul nucleo in un tempo brevissimo.",
+    "Nel 1913 Bohr propose un modello per l'atomo di idrogeno basato su nuovi postulati. L'elettrone può stare solo su certe orbite, dette stazionarie, in cui non irraggia; su queste orbite il momento angolare è un multiplo intero di h/2π. Le energie permesse sono E_n = −13,6 eV/n² e i raggi r_n = n² × 0,053 nm. Il livello più basso, n = 1, è lo stato fondamentale; per ionizzare l'atomo partendo da lì servono 13,6 eV.",
+    "Un atomo emette luce quando l'elettrone salta da un livello alto a uno più basso: il fotone ha energia uguale alla differenza tra i livelli, hf = E_alto − E_basso. Per l'idrogeno la transizione da n = 3 a n = 2 dà 1,89 eV, cioè luce rossa a 656 nm. Le transizioni che terminano in n = 2 formano la serie di Balmer, nel visibile; quelle verso n = 1 la serie di Lyman, nell'ultravioletto; quelle verso n = 3 la serie di Paschen, nell'infrarosso. Al contrario, un atomo può assorbire solo fotoni con energia esattamente uguale a un salto possibile.",
+    "Ne risulta che ogni elemento ha uno spettro a righe caratteristico, come un'impronta digitale. Un gas caldo e rarefatto produce uno spettro di emissione (righe colorate su fondo scuro); la luce bianca che attraversa un gas più freddo mostra uno spettro di assorbimento (righe scure sul fondo continuo). È così che conosciamo la composizione chimica delle stelle: l'elio fu scoperto nello spettro del Sole prima che sulla Terra. Il modello di Bohr funziona bene per l'idrogeno, ma non riesce a spiegare gli atomi con più elettroni: per questi serve la meccanica quantistica."
+   ],
+   "metodo": [
+    "Costruisci una linea del tempo dei modelli (Thomson, Rutherford, Bohr, quantistico) con, per ognuno, che cosa spiega e dove fallisce.",
+    "Disegna il diagramma dei livelli dell'idrogeno da n = 1 a n = 5 con le energie, e traccia le frecce delle serie di Lyman, Balmer e Paschen.",
+    "Negli esercizi calcola prima le energie dei due livelli, poi la differenza, infine λ = 1240/ΔE.",
+    "Osserva con uno spettroscopio economico o con un CD le righe di una lampada a risparmio energetico.",
+    "Ripeti a voce perché l'esperimento di Rutherford smentisce Thomson: è una domanda classica.",
+    "Collega il capitolo a «Effetto fotoelettrico e quanti di luce» (E = hf) e a «Meccanica quantistica di base» (orbitali)."
+   ],
+   "ricorda": [
+    "Idrogeno: E_n = −13,6/n² eV → −13,6; −3,4; −1,51; −0,85 eV.",
+    "«Lyman in UV, Balmer nel visibile, Paschen nell'infrarosso»: arrivo in n = 1, 2, 3.",
+    "H-alfa = 3 → 2 = 656 nm rosso.",
+    "Numero di righe da un livello n: n(n − 1)/2."
+   ],
+   "errori": [
+    "Dividere per n invece che per n² nelle energie di Bohr.",
+    "Dimenticare il segno meno delle energie dei livelli legati.",
+    "Confondere spettro di emissione e spettro di assorbimento.",
+    "Pensare che il modello di Bohr valga per tutti gli atomi.",
+    "Credere che nell'esperimento di Rutherford la maggior parte delle particelle rimbalzasse."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa dimostrarono le grandi deviazioni delle particelle alfa?",
+     "risposta": "Che la carica positiva e quasi tutta la massa dell'atomo sono concentrate in un nucleo piccolissimo."
+    },
+    {
+     "domanda": "Quanto vale l'energia del livello n = 3 dell'idrogeno?",
+     "risposta": "E₃ = −13,6/9 ≈ −1,51 eV."
+    },
+    {
+     "domanda": "Perché lo spettro di un gas è a righe?",
+     "risposta": "Perché gli elettroni occupano livelli discreti e i fotoni emessi hanno energie pari alle differenze tra livelli."
+    },
+    {
+     "domanda": "Quale serie spettrale dell'idrogeno cade nel visibile?",
+     "risposta": "La serie di Balmer, con transizioni che terminano nel livello n = 2."
+    },
+    {
+     "domanda": "Quanti fotoni di energie diverse possono emettere atomi eccitati fino a n = 4?",
+     "risposta": "Sei: 4→3, 4→2, 4→1, 3→2, 3→1, 2→1."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "L'esperimento di Rutherford si interpreta con la sezione d'urto differenziale per diffusione coulombiana, proporzionale a 1/sin⁴(θ/2). L'accordo con i dati fino a grandi angoli mostra che la carica positiva è puntiforme alla scala delle energie usate; deviazioni a energie maggiori rivelano le dimensioni del nucleo, dell'ordine di 10⁻¹⁵ m. Il modello planetario che ne deriva è però instabile secondo l'elettrodinamica classica: la formula di Larmor dà un tempo di caduta dell'elettrone di circa 10⁻¹¹ s, e lo spettro emesso durante la caduta sarebbe continuo, non a righe. Serviva quindi un'idea nuova, che arrivò con Bohr.",
+    "Il modello di Bohr introduce la quantizzazione del momento angolare, mvr = nħ, e il postulato delle orbite stazionarie. Per un atomo idrogenoide con carica nucleare Ze si trovano r_n = n²a₀/Z ed E_n = −13,6 eV·Z²/n². La regola di Rydberg 1/λ = R(1/n₁² − 1/n₂²), trovata empiricamente prima di Bohr, ne diventa una conseguenza, e la costante R viene calcolata a partire da costanti fondamentali. De Broglie diede in seguito una lettura ondulatoria della condizione: la circonferenza dell'orbita deve contenere un numero intero di lunghezze d'onda. L'esperimento di Franck e Hertz (1914) confermò direttamente i livelli discreti misurando perdite di energia di 4,9 eV degli elettroni negli urti con il mercurio.",
+    "In meccanica quantistica l'idrogeno si tratta risolvendo l'equazione di Schrödinger con potenziale coulombiano. Le soluzioni sono caratterizzate da tre numeri quantici: n ≥ 1 per l'energia, l = 0, …, n − 1 per il modulo del momento angolare, m_l = −l, …, +l per la sua proiezione. A essi si aggiunge lo spin dell'elettrone con m_s = ±½. Le energie dipendono solo da n e coincidono con quelle di Bohr, ma le orbite sono sostituite da orbitali, distribuzioni di probabilità; per esempio lo stato 1s ha momento angolare nullo, cosa impossibile per un'orbita circolare classica. Ogni livello n contiene 2n² stati.",
+    "Negli atomi a più elettroni il principio di esclusione di Pauli impone che non ci siano due elettroni nello stesso stato quantico. Combinato con l'effetto di schermo, che rimuove la degenerazione in l, spiega l'ordine di riempimento degli orbitali e la struttura della tavola periodica. Le transizioni ottiche seguono regole di selezione, come Δl = ±1 per il dipolo elettrico. I raggi X caratteristici nascono da transizioni tra gusci interni: la legge di Moseley, √f ∝ (Z − 1) per la riga Kα, permise di ordinare gli elementi per numero atomico.",
+    "Gli spettri reali mostrano dettagli che il modello semplice non prevede. La struttura fine, dovuta a correzioni relativistiche e all'interazione spin-orbita, separa i livelli di una frazione dell'ordine di α² ≈ 5 × 10⁻⁵. La struttura iperfine, dovuta allo spin del nucleo, è ancora più piccola: nell'idrogeno dà la famosa riga a 21 cm usata in radioastronomia. Un campo magnetico esterno separa ulteriormente le righe (effetto Zeeman). Queste piccole differenze sono la base degli orologi atomici e della spettroscopia di precisione."
+   ],
+   "metodo": [
+    "Ricava i raggi e le energie di Bohr eguagliando forza coulombiana e forza centripeta e imponendo mvr = nħ.",
+    "Verifica numericamente la costante di Rydberg a partire da m_e, e, h ed ε₀.",
+    "Prepara una tabella degli stati dell'idrogeno per n = 1, 2, 3 con l, m_l, numero di stati e nomi spettroscopici (1s, 2s, 2p…).",
+    "Studia il confronto tra orbite di Bohr e orbitali disegnando la densità di probabilità radiale per 1s, 2s e 2p.",
+    "Esercitati con la formula di Rydberg calcolando prime righe e limiti delle serie di Lyman, Balmer e Paschen.",
+    "Collega il capitolo a «Meccanica quantistica di base» (equazione di Schrödinger) e a «Semiconduttori e laser» (transizioni e livelli)."
+   ],
+   "ricorda": [
+    "Idrogenoidi: E_n = −13,6 Z²/n² eV, r_n = n²a₀/Z.",
+    "n, l, m_l, m_s: 2n² stati per livello.",
+    "Limiti di serie: Lyman 91 nm, Balmer 365 nm, Paschen 820 nm.",
+    "Moseley: √f ∝ (Z − 1), lo «meno uno» è lo schermo dell'altro elettrone K."
+   ],
+   "errori": [
+    "Usare Z invece di Z² nelle energie degli ioni idrogenoidi.",
+    "Considerare le orbite di Bohr come traiettorie reali anche in meccanica quantistica.",
+    "Dire che due elettroni non possono stare nello stesso orbitale (possono, con spin opposti).",
+    "Confondere struttura fine (interna all'atomo) ed effetto Zeeman (campo esterno).",
+    "Dimenticare le regole di selezione e prevedere righe che non si osservano."
+   ],
+   "domande": [
+    {
+     "domanda": "Perché il modello di Rutherford è instabile classicamente?",
+     "risposta": "Perché un elettrone in orbita è accelerato e, secondo la formula di Larmor, irraggerebbe energia cadendo sul nucleo in circa 10⁻¹¹ s."
+    },
+    {
+     "domanda": "Quanto vale l'energia fondamentale di He⁺?",
+     "risposta": "E₁ = −13,6 × 2² = −54,4 eV."
+    },
+    {
+     "domanda": "Qual è il limite della serie di Balmer?",
+     "risposta": "1/λ = R/4, quindi λ ≈ 365 nm."
+    },
+    {
+     "domanda": "Quanti stati ha il livello n = 3 dell'idrogeno, includendo lo spin?",
+     "risposta": "2n² = 18."
+    },
+    {
+     "domanda": "Che cosa misura l'esperimento di Franck e Hertz?",
+     "risposta": "Le perdite discrete di energia degli elettroni negli urti con atomi di mercurio (4,9 eV), prova diretta dei livelli quantizzati."
+    }
+   ]
+  }
+ },
+ "Meccanica quantistica di base": {
+  "superiore": {
+   "spiegazione": [
+    "Dopo aver scoperto che la luce, considerata un'onda, si comporta anche come un insieme di particelle, nel 1924 Louis de Broglie fece l'ipotesi inversa: anche le particelle materiali hanno un comportamento ondulatorio. A una particella con quantità di moto p è associata un'onda di lunghezza λ = h/p. Per un elettrone accelerato da 100 V si ottiene λ ≈ 0,12 nm, simile alla distanza tra gli atomi di un cristallo. Nel 1927 Davisson e Germer osservarono proprio la diffrazione di elettroni da un cristallo di nichel, confermando l'ipotesi.",
+    "Per gli oggetti di tutti i giorni la lunghezza d'onda di de Broglie è incredibilmente piccola: una palla da tennis di 0,1 kg a 10 m/s ha λ ≈ 6,6 × 10⁻³⁴ m. Nessuna fenditura potrà mai mostrare la sua diffrazione, e per questo la fisica classica funziona benissimo nella vita quotidiana. Gli effetti quantistici diventano importanti quando λ è paragonabile alle dimensioni del sistema, come per gli elettroni negli atomi. Il microscopio elettronico sfrutta la piccola λ degli elettroni per vedere dettagli invisibili alla luce.",
+    "L'esperimento più famoso è la doppia fenditura con elettroni inviati uno alla volta. Ogni elettrone lascia sullo schermo un singolo puntino, come una particella; ma dopo migliaia di arrivi i puntini formano frange d'interferenza, come farebbe un'onda passata per entrambe le fenditure. Se si cerca di scoprire da quale fenditura passa ciascun elettrone, le frange spariscono. Bohr chiamò complementarità questo fatto: aspetto ondulatorio e corpuscolare sono entrambi necessari, ma non si manifestano nello stesso esperimento.",
+    "In meccanica quantistica lo stato di una particella è descritto da una funzione d'onda ψ. Il suo modulo quadro |ψ|² non è l'energia né la traiettoria, ma la densità di probabilità di trovare la particella in un certo punto. Siccome la particella deve trovarsi da qualche parte, la probabilità totale deve valere 1 (normalizzazione). La meccanica quantistica quindi prevede probabilità, non traiettorie certe: possiamo dire con precisione dove è probabile trovare l'elettrone, non dove sarà.",
+    "Il principio di indeterminazione di Heisenberg stabilisce che Δx·Δp ≥ ħ/2: più è definita la posizione, meno lo è la quantità di moto. Non è un difetto degli strumenti, ma una proprietà della natura. Un elettrone confinato in 0,1 nm ha un'incertezza di velocità di circa 6 × 10⁵ m/s. Una conseguenza è la quantizzazione dell'energia per particelle confinate: in una scatola le energie sono E_n ∝ n². Un'altra è l'effetto tunnel: una particella può attraversare una barriera più alta della sua energia, come accade nel decadimento alfa e nel microscopio a effetto tunnel."
+   ],
+   "metodo": [
+    "Fai una mappa del dualismo: luce (onda → anche particella) e materia (particella → anche onda), con gli esperimenti chiave.",
+    "Calcola λ di de Broglie per un elettrone, un protone e una palla alla stessa velocità per capire perché il mondo macroscopico sembra classico.",
+    "Racconta a voce l'esperimento della doppia fenditura con elettroni singoli: che cosa si vede, che cosa si conclude.",
+    "Negli esercizi su Heisenberg scrivi sempre Δp ≥ ħ/(2Δx) e poi dividi per la massa per trovare Δv.",
+    "Disegna le prime tre onde stazionarie in una scatola e osserva che ci stanno 1, 2, 3 mezze lunghezze d'onda.",
+    "Collega il capitolo a «Modelli atomici e spettri» (orbitali) e a «Semiconduttori e laser» (bande e tunnel)."
+   ],
+   "ricorda": [
+    "de Broglie: λ = h/p, «più veloce = onda più corta».",
+    "|ψ|² = probabilità, non traiettoria.",
+    "Heisenberg: Δx·Δp ≥ ħ/2, «stringi la posizione, allarghi la velocità».",
+    "Scatola: E_n ∝ n², il secondo livello vale 4 volte il primo."
+   ],
+   "errori": [
+    "Pensare che l'indeterminazione dipenda solo dalla precisione degli strumenti.",
+    "Interpretare ψ come una traiettoria o come una carica «spalmata».",
+    "Credere che l'interferenza nella doppia fenditura nasca da urti tra elettroni.",
+    "Ritenere che nell'effetto tunnel la particella acquisti energia.",
+    "Usare h al posto di ħ = h/2π nel principio di indeterminazione."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa afferma l'ipotesi di de Broglie?",
+     "risposta": "Che a ogni particella di quantità di moto p è associata un'onda di lunghezza λ = h/p."
+    },
+    {
+     "domanda": "Perché non vediamo la diffrazione delle palline da tennis?",
+     "risposta": "Perché la loro lunghezza d'onda è dell'ordine di 10⁻³⁴ m, enormemente più piccola di qualsiasi fenditura."
+    },
+    {
+     "domanda": "Che cosa rappresenta |ψ|²?",
+     "risposta": "La densità di probabilità di trovare la particella in un punto."
+    },
+    {
+     "domanda": "Che cosa si vede inviando elettroni uno alla volta su una doppia fenditura?",
+     "risposta": "Impatti singoli che, accumulati, formano frange d'interferenza."
+    },
+    {
+     "domanda": "Che cos'è l'effetto tunnel?",
+     "risposta": "La possibilità che una particella attraversi una barriera di potenziale più alta della sua energia."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Lo stato di un sistema quantistico è descritto da una funzione d'onda ψ(x, t), elemento di uno spazio di Hilbert, che evolve secondo l'equazione di Schrödinger iħ∂ψ/∂t = Ĥψ, con Ĥ = −(ħ²/2m)∂²/∂x² + V(x). L'equazione è lineare e del primo ordine nel tempo: dato lo stato iniziale, l'evoluzione è deterministica. Per potenziali indipendenti dal tempo si cercano soluzioni separabili ψ = φ(x)e^(−iEt/ħ), dove φ risolve l'equazione stazionaria Ĥφ = Eφ. Gli stati stazionari hanno densità di probabilità costante nel tempo.",
+    "Le grandezze osservabili sono rappresentate da operatori hermitiani: posizione x̂, quantità di moto p̂ = −iħ d/dx, energia Ĥ. I possibili risultati di una misura sono gli autovalori dell'operatore, reali per hermiticità; la probabilità di ciascun risultato è il modulo quadro della componente dello stato sul corrispondente autostato (regola di Born), e dopo la misura lo stato è ridotto su quell'autostato. Il valore atteso è ⟨A⟩ = ∫ψ*Âψ dx. Il teorema di Ehrenfest mostra che i valori attesi di x e p obbediscono, in media, alle equazioni di Newton: è il ponte con la fisica classica.",
+    "Il commutatore canonico [x̂, p̂] = iħ esprime l'incompatibilità di posizione e quantità di moto. In generale, per due osservabili A e B vale la relazione di Robertson ΔA·ΔB ≥ ½|⟨[Â, B̂]⟩|, che per x e p dà Δx·Δp ≥ ħ/2. Un pacchetto gaussiano realizza il minimo. La sovrapposizione di stati, permessa dalla linearità, è all'origine dell'interferenza: nella doppia fenditura la probabilità non è la somma delle probabilità delle singole fenditure, perché compare un termine di interferenza tra le ampiezze.",
+    "Alcuni sistemi modello si risolvono esattamente. Nella buca infinita di larghezza L, le autofunzioni sono seni con n mezze onde e le energie E_n = n²h²/(8mL²); per un elettrone in 1 nm E₁ ≈ 0,38 eV. L'oscillatore armonico ha livelli equispaziati E_n = ħω(n + ½), con un'energia di punto zero ħω/2 imposta dall'indeterminazione. Nella buca finita la funzione d'onda penetra nelle regioni classicamente proibite con un andamento esponenziale. Per una barriera di altezza V₀ > E e spessore L, il coefficiente di trasmissione è circa e^(−2κL), con κ = √(2m(V₀ − E))/ħ.",
+    "L'effetto tunnel spiega fenomeni molto diversi: il decadimento alfa (Gamow), l'emissione di campo da punte metalliche, il funzionamento del microscopio a effetto tunnel e dei diodi tunnel, la fusione nel Sole a temperature apparentemente troppo basse. La sua dipendenza esponenziale dallo spessore rende la corrente di tunnel sensibilissima alle distanze. Più in generale, la meccanica quantistica di base è il fondamento di chimica, fisica dello stato solido e tecnologie quantistiche come punti quantici, sensori e qubit. Comprendere questi modelli semplici è quindi il primo passo per affrontare sistemi reali come atomi, molecole e solidi."
+   ],
+   "metodo": [
+    "Risolvi da solo la buca infinita: condizioni al contorno, normalizzazione, energie, poi calcola ⟨x⟩ e ⟨x²⟩ per n = 1.",
+    "Verifica il commutatore [x̂, p̂] applicandolo a una funzione di prova: aiuta a non perdere segni e unità immaginarie.",
+    "Prepara una tabella dei sistemi modello (buca infinita, buca finita, oscillatore, barriera) con potenziale, energie e forma delle autofunzioni.",
+    "Per ogni postulato (stato, evoluzione, osservabili, misura) scrivi un esempio concreto.",
+    "Stima ordini di grandezza: energie di confinamento, lunghezze d'onda, coefficienti di tunnel con numeri realistici.",
+    "Collega il capitolo a «Modelli atomici e spettri» (idrogeno) e a «Radioattività e fisica nucleare» (decadimento alfa)."
+   ],
+   "ricorda": [
+    "iħ∂ψ/∂t = Ĥψ; stazionaria Ĥφ = Eφ.",
+    "p̂ = −iħ d/dx e [x̂, p̂] = iħ.",
+    "Buca: E ∝ n²/L²; oscillatore: E = ħω(n + ½).",
+    "Tunnel: T ≈ e^(−2κL), sensibilissimo a L."
+   ],
+   "errori": [
+    "Confondere l'evoluzione deterministica di ψ con il carattere probabilistico della misura.",
+    "Dimenticare la normalizzazione prima di calcolare probabilità e valori attesi.",
+    "Sommare probabilità invece di ampiezze in presenza di interferenza.",
+    "Ritenere che l'energia di punto zero possa essere eliminata raffreddando il sistema.",
+    "Usare l'approssimazione e^(−2κL) anche per barriere sottili o energie vicine alla sommità della barriera."
+   ],
+   "domande": [
+    {
+     "domanda": "Scrivi l'equazione di Schrödinger dipendente dal tempo in una dimensione.",
+     "risposta": "iħ ∂ψ/∂t = −(ħ²/2m) ∂²ψ/∂x² + V(x)ψ."
+    },
+    {
+     "domanda": "Quanto vale [x̂, p̂] e che cosa implica?",
+     "risposta": "Vale iħ; implica che posizione e quantità di moto non possono avere valori definiti contemporaneamente (Δx·Δp ≥ ħ/2)."
+    },
+    {
+     "domanda": "Quali sono le energie di una particella in una buca infinita?",
+     "risposta": "E_n = n²h²/(8mL²), con n = 1, 2, 3…"
+    },
+    {
+     "domanda": "Che cos'è l'energia di punto zero dell'oscillatore armonico?",
+     "risposta": "È l'energia dello stato fondamentale, ħω/2, non nulla per via del principio di indeterminazione."
+    },
+    {
+     "domanda": "Come dipende la probabilità di tunnel dallo spessore della barriera?",
+     "risposta": "In modo esponenziale, circa e^(−2κL) con κ = √(2m(V₀ − E))/ħ."
+    }
+   ]
+  }
+ },
+ "Radioattività e fisica nucleare": {
+  "superiore": {
+   "spiegazione": [
+    "Il nucleo atomico è formato da protoni e neutroni, detti nucleoni. Il numero di protoni Z (numero atomico) identifica l'elemento; il numero di massa A = Z + N conta tutti i nucleoni. Atomi con lo stesso Z ma diverso numero di neutroni sono isotopi: per esempio il carbonio-12 e il carbonio-14. I protoni si respingono elettricamente, ma l'interazione nucleare forte, intensa e a cortissimo raggio, li tiene uniti ai neutroni. Alcuni nuclei sono stabili, altri sono instabili e si trasformano spontaneamente: sono radioattivi.",
+    "Esistono tre tipi principali di decadimento. Nel decadimento alfa il nucleo emette un nucleo di elio-4: Z diminuisce di 2 e A di 4 (l'uranio-238 diventa torio-234). Nel decadimento beta meno un neutrone diventa protone emettendo un elettrone e un antineutrino: Z aumenta di 1 e A resta uguale (il carbonio-14 diventa azoto-14). Nel decadimento gamma il nucleo eccitato emette un fotone di alta energia senza cambiare Z né A. Le radiazioni alfa si fermano con un foglio di carta, le beta con qualche millimetro di alluminio, le gamma richiedono piombo o calcestruzzo.",
+    "Il decadimento di un singolo nucleo è casuale, ma un campione con moltissimi nuclei segue una legge precisa. Il tempo di dimezzamento T½ è il tempo dopo il quale metà dei nuclei è decaduta: N = N₀(½)^(t/T½). Dopo tre tempi di dimezzamento ne resta un ottavo. L'attività, cioè il numero di decadimenti al secondo, si misura in becquerel (Bq). La datazione al carbonio-14 (T½ = 5730 anni) sfrutta questa legge: un reperto con un quarto dell'attività di un organismo vivo ha circa 11 500 anni.",
+    "La massa di un nucleo è sempre un po' minore della somma delle masse dei suoi nucleoni separati. Questo difetto di massa, moltiplicato per c², è l'energia di legame: per l'elio-4 vale circa 28 MeV. L'energia di legame per nucleone è massima per nuclei medi come il ferro. Per questo si libera energia sia spezzando nuclei pesanti (fissione) sia unendo nuclei leggeri (fusione). Le energie nucleari sono milioni di volte più grandi di quelle chimiche.",
+    "Nella fissione un nucleo di uranio-235 colpito da un neutrone si spezza in due frammenti liberando circa 200 MeV e 2-3 neutroni, che possono provocare altre fissioni: è la reazione a catena, controllata nelle centrali nucleari. Nella fusione nuclei leggeri come deuterio e trizio si uniscono formando elio: è il processo che alimenta il Sole e le altre stelle. Le radiazioni ionizzanti possono danneggiare le cellule; la dose si misura in gray e la dose equivalente in sievert. In medicina sono preziose: diagnostica con traccianti, radioterapia, PET."
+   ],
+   "metodo": [
+    "Fai una tabella dei decadimenti con: particella emessa, variazione di Z, variazione di A, esempio, schermatura.",
+    "Esercitati a completare reazioni nucleari controllando che si conservino separatamente la somma dei numeri atomici e quella dei numeri di massa.",
+    "Per i problemi sul dimezzamento calcola prima quanti tempi di dimezzamento sono trascorsi, poi applica (½)ⁿ.",
+    "Disegna la curva dell'energia di legame per nucleone e segna dove avvengono fissione e fusione.",
+    "Distingui con cura becquerel (attività), gray (dose assorbita) e sievert (dose equivalente).",
+    "Collega il capitolo a «Particelle elementari» (neutrino, interazione debole) e a «Relatività ristretta» (E = mc²)."
+   ],
+   "ricorda": [
+    "Alfa: −2 in Z, −4 in A; beta meno: +1 in Z; gamma: nulla cambia.",
+    "«Carta, alluminio, piombo» per alfa, beta, gamma.",
+    "Dopo n dimezzamenti resta (½)ⁿ: 1/2, 1/4, 1/8, 1/16…",
+    "Ferro = nucleo più legato: verso di lui si libera energia."
+   ],
+   "errori": [
+    "Pensare che dopo due tempi di dimezzamento il campione sia del tutto decaduto.",
+    "Confondere decadimento beta meno (Z + 1) e beta più (Z − 1).",
+    "Considerare l'elettrone del decadimento beta come un elettrone «che era nel nucleo».",
+    "Confondere fissione e fusione.",
+    "Confondere l'attività della sorgente con la dose assorbita da una persona."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa succede a Z e A in un decadimento alfa?",
+     "risposta": "Z diminuisce di 2 e A di 4, perché viene emesso un nucleo di elio-4."
+    },
+    {
+     "domanda": "Quanto resta di 80 g di un isotopo dopo tre tempi di dimezzamento?",
+     "risposta": "80 × 1/8 = 10 g."
+    },
+    {
+     "domanda": "Che cos'è il difetto di massa?",
+     "risposta": "La differenza tra la somma delle masse dei nucleoni separati e la massa del nucleo; moltiplicata per c² dà l'energia di legame."
+    },
+    {
+     "domanda": "Perché sia fissione sia fusione liberano energia?",
+     "risposta": "Perché in entrambi i casi i prodotti hanno un'energia di legame per nucleone maggiore, avvicinandosi al massimo del ferro."
+    },
+    {
+     "domanda": "Su quale isotopo si basa la datazione dei reperti organici?",
+     "risposta": "Sul carbonio-14, con tempo di dimezzamento di 5730 anni."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "I nuclei hanno raggio R ≈ 1,2 fm·A^(1/3): il volume è proporzionale ad A, quindi la densità della materia nucleare è circa costante, intorno a 2 × 10¹⁷ kg/m³. Questo e il fatto che l'energia di legame per nucleone sia quasi costante (circa 8 MeV) indicano che la forza nucleare è a corto raggio e saturata: ogni nucleone interagisce solo con i vicini. La formula semiempirica di Weizsäcker descrive l'energia di legame con termini di volume, superficie, repulsione coulombiana, asimmetria tra protoni e neutroni e accoppiamento. Il massimo di B/A, circa 8,8 MeV, si trova vicino a ferro-56 e nichel-62.",
+    "Il decadimento radioattivo è un processo statistico con probabilità per unità di tempo λ costante: dN/dt = −λN, quindi N = N₀e^(−λt). Il tempo di dimezzamento è T½ = ln 2/λ, la vita media τ = 1/λ = T½/ln 2. L'attività è A = λN; per esempio 1 mg di iodio-131 (T½ ≈ 8 giorni) ha un'attività di circa 4,6 × 10¹² Bq. Nelle catene di decadimento, se il capostipite ha vita molto più lunga dei discendenti, si raggiunge l'equilibrio secolare, in cui tutte le attività sono uguali.",
+    "Ciascun tipo di decadimento ha un meccanismo diverso. Il decadimento alfa è un effetto tunnel attraverso la barriera coulombiana (teoria di Gamow): la probabilità dipende esponenzialmente dall'energia, ciò che spiega la legge di Geiger-Nuttall e vite medie che vanno da microsecondi a miliardi di anni. Il decadimento beta è dovuto all'interazione debole, che trasforma un quark d in un quark u (o viceversa); lo spettro continuo degli elettroni portò Pauli a ipotizzare il neutrino. Il decadimento gamma è una transizione elettromagnetica tra livelli nucleari, analoga all'emissione di fotoni negli atomi ma con energie dell'ordine dei MeV.",
+    "Nelle reazioni nucleari il valore Q = (m_iniziale − m_finale)c² indica l'energia liberata (Q > 0) o richiesta (Q < 0). Nella fissione dell'uranio-235 indotta da neutroni termici si liberano circa 200 MeV, gran parte come energia cinetica dei frammenti. Un reattore funziona con fattore di moltiplicazione k = 1; il moderatore rallenta i neutroni, le barre di controllo li assorbono, e i neutroni ritardati emessi dai frammenti rendono il controllo possibile. La fusione D + T → ⁴He + n libera 17,6 MeV, ma richiede di superare la barriera coulombiana con un plasma a oltre cento milioni di kelvin.",
+    "Le radiazioni ionizzanti cedono energia alla materia in modo diverso: le particelle alfa la depositano in pochi micrometri di tessuto, i gamma vengono attenuati esponenzialmente. La dose assorbita si misura in gray (J/kg); la dose equivalente ed efficace in sievert, con fattori di peso per il tipo di radiazione e per gli organi. Il fondo naturale è di qualche millisievert all'anno. Le applicazioni comprendono la medicina nucleare (traccianti come il tecnezio-99m, la PET, la radioterapia), la datazione radiometrica e la produzione di energia."
+   ],
+   "metodo": [
+    "Ricava la legge esponenziale dalla probabilità costante di decadimento e verifica le relazioni tra λ, τ e T½.",
+    "Calcola energie di legame da tabelle di masse atomiche, ricordando che usare masse atomiche (con elettroni) richiede coerenza tra reagenti e prodotti.",
+    "Costruisci la formula semiempirica termine per termine e confronta il risultato con alcuni nuclei reali.",
+    "Per ogni reazione verifica conservazione di carica, numero barionico, numero leptonico e calcola Q.",
+    "Usa le unità MeV e u (1 u = 931,5 MeV/c²) e controlla gli ordini di grandezza.",
+    "Collega il capitolo a «Meccanica quantistica di base» (tunnel) e a «Particelle elementari» (interazione debole e quark)."
+   ],
+   "ricorda": [
+    "R ≈ 1,2 fm·A^(1/3), densità nucleare costante.",
+    "T½ = 0,693/λ, τ = 1,44 T½.",
+    "1 u = 931,5 MeV/c²; Q > 0 significa energia liberata.",
+    "Fissione U-235 ≈ 200 MeV; fusione D-T = 17,6 MeV."
+   ],
+   "errori": [
+    "Lasciare λ in giorni⁻¹ quando si calcola un'attività in becquerel.",
+    "Confondere la vita media con il tempo di dimezzamento.",
+    "Usare masse nucleari per alcuni termini e atomiche per altri nello stesso bilancio.",
+    "Credere che un reattore a fissione richieda k molto maggiore di 1.",
+    "Dimenticare il neutrino nel bilancio energetico del decadimento beta."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale circa il raggio di un nucleo con A = 216?",
+     "risposta": "R ≈ 1,2 × 216^(1/3) = 1,2 × 6 = 7,2 fm."
+    },
+    {
+     "domanda": "Come sono legati λ, τ e T½?",
+     "risposta": "τ = 1/λ e T½ = ln 2/λ = τ ln 2."
+    },
+    {
+     "domanda": "Quale meccanismo spiega il decadimento alfa?",
+     "risposta": "L'effetto tunnel della particella alfa attraverso la barriera coulombiana del nucleo (teoria di Gamow)."
+    },
+    {
+     "domanda": "Quanta energia libera la reazione D + T → ⁴He + n?",
+     "risposta": "Circa 17,6 MeV, dal difetto di massa di circa 0,0189 u."
+    },
+    {
+     "domanda": "Che cosa significa k = 1 in un reattore?",
+     "risposta": "Che in media ogni fissione provoca esattamente un'altra fissione: la reazione si autosostiene a potenza costante."
+    }
+   ]
+  }
+ },
+ "Particelle elementari": {
+  "superiore": {
+   "spiegazione": [
+    "Per secoli si è cercato di capire quali siano i «mattoni» ultimi della materia. Oggi sappiamo che atomi, nuclei, protoni e neutroni non sono elementari: protoni e neutroni sono formati da quark. La teoria che descrive le particelle elementari e le loro interazioni si chiama Modello Standard. Divide le particelle in due grandi gruppi: i fermioni, che costituiscono la materia, e i bosoni, che trasmettono le interazioni. A questi si aggiunge il bosone di Higgs, legato all'origine della massa.",
+    "I fermioni si dividono in quark e leptoni, organizzati in tre generazioni. I quark sono sei: up, down, charm, strange, top e bottom, con cariche frazionarie (+2/3 per up, charm e top; −1/3 per down, strange e bottom). I leptoni sono l'elettrone, il muone, il tau e i tre neutrini corrispondenti. La materia ordinaria è fatta quasi solo della prima generazione: quark up e down ed elettroni. Le particelle delle altre generazioni sono più pesanti e instabili, e si osservano nei raggi cosmici e negli acceleratori.",
+    "I quark non si trovano mai isolati, ma sempre legati in adroni: è il confinamento. I barioni sono formati da tre quark: il protone è uud (carica 2/3 + 2/3 − 1/3 = +1), il neutrone udd (carica 0). I mesoni sono formati da un quark e un antiquark: il pione positivo è u d̄. Ogni particella ha la sua antiparticella, con la stessa massa e carica opposta: il positrone è l'antielettrone. Quando particella e antiparticella si incontrano si annichilano, trasformando la massa in energia: un elettrone e un positrone fermi producono due fotoni da 0,511 MeV ciascuno.",
+    "Le interazioni fondamentali sono quattro: gravitazionale, elettromagnetica, forte e debole. Nel Modello Standard le ultime tre sono trasmesse da bosoni mediatori: il fotone per l'elettromagnetismo, otto gluoni per l'interazione forte, i bosoni W⁺, W⁻ e Z⁰ per quella debole. La gravità non è inclusa nel Modello Standard: il gravitone è ipotetico. Nel 2012 al CERN di Ginevra gli esperimenti ATLAS e CMS hanno scoperto il bosone di Higgs, con massa di circa 125 GeV/c².",
+    "Le reazioni tra particelle obbediscono a leggi di conservazione: oltre a energia, quantità di moto e carica, si conservano il numero barionico (barioni +1, antibarioni −1) e il numero leptonico. Per questo il protone non decade in un positrone e un fotone, anche se la carica tornerebbe. Le particelle si studiano facendo scontrare fasci ad altissima energia negli acceleratori, come il Large Hadron Collider, lungo 27 km. Grazie a E = mc², l'energia delle collisioni si trasforma in nuove particelle, spesso più pesanti di quelle iniziali."
+   ],
+   "metodo": [
+    "Disegna la tabella del Modello Standard: tre colonne di generazioni, righe per quark e leptoni, a parte i bosoni.",
+    "Esercitati a calcolare la carica di barioni e mesoni dai quark che li compongono.",
+    "Per ogni reazione proposta controlla carica, numero barionico e numero leptonico prima di dire se è permessa.",
+    "Associa a ogni interazione il suo mediatore e un fenomeno quotidiano o di laboratorio.",
+    "Leggi qualche notizia divulgativa sul CERN e prova a riconoscere i termini studiati.",
+    "Collega il capitolo a «Radioattività e fisica nucleare» (decadimento beta, neutrino) e a «Relatività ristretta» (E = mc² nelle collisioni)."
+   ],
+   "ricorda": [
+    "Protone uud, neutrone udd.",
+    "Fotone (e.m.), gluoni (forte), W e Z (debole), Higgs (massa).",
+    "Barioni = 3 quark, mesoni = quark + antiquark.",
+    "Annichilazione e⁺e⁻: due fotoni da 0,511 MeV."
+   ],
+   "errori": [
+    "Confondere la composizione di protone e neutrone.",
+    "Dare all'antiquark la stessa carica del quark.",
+    "Considerare il pione un leptone perché è leggero.",
+    "Pensare che il bosone di Higgs sia il mediatore della gravità.",
+    "Controllare solo la carica e non il numero barionico o leptonico."
+   ],
+   "domande": [
+    {
+     "domanda": "Da quali quark è formato il neutrone e quale carica ha?",
+     "risposta": "udd: 2/3 − 1/3 − 1/3 = 0."
+    },
+    {
+     "domanda": "Quali sono i mediatori delle interazioni nel Modello Standard?",
+     "risposta": "Fotone per l'elettromagnetica, gluoni per la forte, W⁺, W⁻ e Z⁰ per la debole."
+    },
+    {
+     "domanda": "Che cos'è un'antiparticella?",
+     "risposta": "Una particella con la stessa massa e carica (e altri numeri quantici) opposta rispetto alla particella corrispondente."
+    },
+    {
+     "domanda": "Perché il protone non decade in e⁺ + γ?",
+     "risposta": "Perché si violerebbe la conservazione del numero barionico (da 1 a 0)."
+    },
+    {
+     "domanda": "Che cosa fu scoperto al CERN nel 2012?",
+     "risposta": "Il bosone di Higgs, con massa di circa 125 GeV/c²."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Il Modello Standard è una teoria quantistica dei campi basata sul gruppo di simmetria di gauge SU(3) × SU(2) × U(1). Il settore SU(3) è la cromodinamica quantistica (QCD), che descrive l'interazione forte tra quark e gluoni; SU(2) × U(1) è la teoria elettrodebole di Glashow, Weinberg e Salam, che unifica elettromagnetismo e interazione debole. I fermioni di spin ½ sono organizzati in tre generazioni di quark (u, d), (c, s), (t, b) e leptoni (e, ν_e), (μ, ν_μ), (τ, ν_τ). I bosoni di gauge di spin 1 sono il fotone, i W± e lo Z⁰, e otto gluoni.",
+    "Nella QCD i quark portano una carica di colore con tre valori e i gluoni portano combinazioni di colore e anticolore, quindi interagiscono anche tra loro. Questo produce due comportamenti opposti. A grandi distanze l'energia del legame cresce, ed è energeticamente favorevole creare nuove coppie quark-antiquark piuttosto che separare i quark: è il confinamento, per cui si osservano solo adroni neutri di colore. A piccole distanze, cioè ad alte energie, la costante di accoppiamento α_s diminuisce: è la libertà asintotica, che spiega perché nei processi ad alta energia i quark si comportano quasi come liberi.",
+    "La portata di un'interazione è legata alla massa del mediatore: R ≈ ħ/(Mc). Yukawa usò questa idea al contrario: dalla portata della forza nucleare, circa 1,4 fm, stimò un mediatore di circa 140 MeV/c², poi identificato con il pione. I bosoni W e Z, con masse di 80 e 91 GeV/c², danno all'interazione debole una portata di circa 10⁻³ fm, e la rendono debole a basse energie. La massa dei W e Z, e quella dei fermioni, nasce dal meccanismo di Higgs, cioè dalla rottura spontanea della simmetria elettrodebole; il bosone di Higgs ne è la conferma sperimentale.",
+    "Le leggi di conservazione organizzano i processi possibili. Energia, quantità di moto, momento angolare e carica si conservano sempre; il numero barionico e quello leptonico totale si conservano in tutti i processi osservati finora. Stranezza e altri sapori si conservano nelle interazioni forti ed elettromagnetiche, ma non in quella debole, che è anche l'unica a violare la parità e, in piccola misura, la simmetria CP. I numeri leptonici di famiglia si conservano nelle interazioni del Modello Standard, ma le oscillazioni dei neutrini mostrano che non sono esatti e che i neutrini hanno una massa piccola ma non nulla.",
+    "I processi si rappresentano con i diagrammi di Feynman, in cui le linee sono particelle e i vertici le interazioni, ciascuno con un fattore legato alla costante di accoppiamento. Gli esperimenti si basano su acceleratori e rivelatori che misurano traiettorie, energie e identità delle particelle prodotte; la cinematica relativistica, con la massa invariante, permette di riconoscere particelle che decadono subito, come l'Higgs. Nonostante i suoi successi, il Modello Standard lascia aperte domande: la natura della materia oscura, l'asimmetria tra materia e antimateria, l'origine delle masse dei neutrini e l'unificazione con la gravità. Per rispondere si progettano nuovi acceleratori, rivelatori sotterranei e osservazioni cosmologiche."
+   ],
+   "metodo": [
+    "Memorizza la struttura del Modello Standard con masse approssimate e cariche, e collega ogni settore al gruppo di gauge.",
+    "Per ogni processo disegna il diagramma di Feynman più semplice e individua il tipo di interazione dal mediatore.",
+    "Usa la stima R ≈ ħc/Mc² con ħc ≈ 197 MeV·fm per legare portate e masse.",
+    "Fai un elenco di grandezze conservate con, per ciascuna, le interazioni che la rispettano o la violano.",
+    "Esercitati con la cinematica relativistica: soglie di produzione e massa invariante di coppie di particelle.",
+    "Collega il capitolo a «Relatività ristretta» (quadrivettori) e a «Radioattività e fisica nucleare» (decadimento beta come processo debole)."
+   ],
+   "ricorda": [
+    "SU(3) × SU(2) × U(1): forte × elettrodebole.",
+    "Confinamento a grandi distanze, libertà asintotica a piccole.",
+    "ħc ≈ 197 MeV·fm: R ≈ 1,4 fm → 140 MeV.",
+    "Solo la debole cambia il sapore e viola la parità."
+   ],
+   "errori": [
+    "Confondere la carica di colore con la carica elettrica.",
+    "Pensare che la libertà asintotica permetta di osservare quark liberi.",
+    "Attribuire la debolezza dell'interazione debole a un accoppiamento intrinsecamente piccolo invece che alla massa dei mediatori.",
+    "Ritenere che i numeri leptonici di famiglia siano conservazioni esatte.",
+    "Credere che il Modello Standard includa la gravità."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è il gruppo di simmetria del Modello Standard?",
+     "risposta": "SU(3) × SU(2) × U(1): SU(3) per l'interazione forte, SU(2) × U(1) per quella elettrodebole."
+    },
+    {
+     "domanda": "Che cos'è la libertà asintotica?",
+     "risposta": "La diminuzione della costante di accoppiamento forte ad alte energie, per cui i quark a piccole distanze si comportano quasi come liberi."
+    },
+    {
+     "domanda": "Come si stima la massa del mediatore dalla portata di un'interazione?",
+     "risposta": "Con mc² ≈ ħc/R; per R ≈ 1,4 fm si ottiene circa 140 MeV."
+    },
+    {
+     "domanda": "Quali leggi di conservazione impongono i neutrini nel decadimento del muone?",
+     "risposta": "La conservazione dei numeri leptonici elettronico e muonico."
+    },
+    {
+     "domanda": "Quale interazione viola la conservazione della stranezza?",
+     "risposta": "L'interazione debole, l'unica che può cambiare il sapore dei quark."
+    }
+   ]
+  }
+ },
+ "Semiconduttori e laser": {
+  "superiore": {
+   "spiegazione": [
+    "In un atomo isolato gli elettroni occupano livelli energetici precisi. In un solido gli atomi sono vicinissimi e i loro livelli si allargano in bande di energia, separate da intervalli in cui non ci sono stati: i gap, o bande proibite. La banda di valenza è quella occupata dagli elettroni dei legami; la banda di conduzione, se contiene elettroni, permette loro di muoversi e trasportare corrente. Nei metalli le bande sono parzialmente piene o sovrapposte, negli isolanti il gap è grande (diversi eV), nei semiconduttori è piccolo: circa 1,12 eV nel silicio.",
+    "In un semiconduttore puro, a temperatura ambiente, alcuni elettroni ricevono abbastanza energia termica per saltare in banda di conduzione, lasciando nella banda di valenza delle lacune, che si comportano come cariche positive mobili. Al crescere della temperatura i portatori aumentano e la resistività diminuisce, al contrario di quanto accade nei metalli. Si può aumentare molto la conduzione con il drogaggio, cioè aggiungendo piccole quantità di altri elementi. Il fosforo, con 5 elettroni di valenza, fornisce elettroni liberi (tipo n); il boro, con 3, crea lacune (tipo p).",
+    "Unendo una zona p e una zona n si ottiene una giunzione p-n, cioè un diodo. Alla giunzione elettroni e lacune si ricombinano, formando una zona di svuotamento con un campo elettrico interno. In polarizzazione diretta la corrente passa facilmente, in polarizzazione inversa quasi per niente: il diodo è una valvola a senso unico. Nei LED la ricombinazione di elettroni e lacune emette fotoni con energia vicina al gap: un gap di 2 eV dà luce rossa a 620 nm. Nelle celle solari avviene il contrario: la luce crea coppie elettrone-lacuna e il campo interno le separa producendo corrente.",
+    "Il laser sfrutta un processo previsto da Einstein nel 1917: l'emissione stimolata. Un atomo eccitato colpito da un fotone di energia giusta emette un secondo fotone identico al primo, con stessa frequenza, direzione e fase. Normalmente però gli atomi sono quasi tutti nel livello più basso, e i fotoni vengono assorbiti più che moltiplicati. Serve allora un'inversione di popolazione, con più atomi nel livello eccitato che in quello inferiore. Si ottiene con il pompaggio (luce, scariche elettriche, corrente) e usando livelli metastabili, in cui gli atomi restano a lungo.",
+    "Il mezzo attivo è posto tra due specchi, uno dei quali parzialmente trasparente: è la cavità ottica. La luce rimbalza avanti e indietro, si amplifica a ogni passaggio e in parte esce come fascio. La luce laser è quasi monocromatica, coerente e molto direzionale, e può essere concentrata in un punto minuscolo. Il laser elio-neon emette a 632,8 nm (fotoni da circa 1,96 eV), mentre i laser a semiconduttore sono minuscoli e si trovano in lettori ottici, stampanti e fibre ottiche. Semiconduttori e laser sono il cuore dell'elettronica e delle telecomunicazioni moderne."
+   ],
+   "metodo": [
+    "Disegna lo schema delle bande per conduttore, semiconduttore e isolante e scrivi accanto un esempio di materiale.",
+    "Fai un disegno del silicio drogato con fosforo e con boro mostrando l'elettrone in più e la lacuna.",
+    "Per la giunzione p-n disegna le due polarizzazioni con il verso della corrente e della zona di svuotamento.",
+    "Usa λ = 1240/E_g per trovare il colore dei LED e la lunghezza d'onda massima assorbita da una cella solare.",
+    "Prepara uno schema dei tre processi luce-materia: assorbimento, emissione spontanea, emissione stimolata.",
+    "Collega il capitolo a «Modelli atomici e spettri» (livelli e transizioni) e a «Effetto fotoelettrico e quanti di luce» (fotoni)."
+   ],
+   "ricorda": [
+    "«Fosforo = Più elettroni (n), Boro = Buchi (p)».",
+    "LED: λ(nm) = 1240/E_g(eV); gap grande = luce blu.",
+    "LASER: emissione stimolata + inversione di popolazione + cavità.",
+    "Semiconduttore caldo conduce meglio, metallo caldo peggio."
+   ],
+   "errori": [
+    "Pensare che le lacune siano protoni o ioni che si muovono.",
+    "Confondere drogaggio n e p.",
+    "Credere che un gap maggiore dia luce più rossa.",
+    "Confondere emissione spontanea ed emissione stimolata.",
+    "Pensare che il laser sia solo una luce molto intensa, dimenticando coerenza e direzionalità."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa distingue un semiconduttore da un isolante?",
+     "risposta": "Il gap tra banda di valenza e banda di conduzione è piccolo (circa 1 eV) invece che grande."
+    },
+    {
+     "domanda": "Quale elemento rende il silicio di tipo p?",
+     "risposta": "Il boro, che con 3 elettroni di valenza crea lacune."
+    },
+    {
+     "domanda": "Di che colore è un LED con gap di 2,0 eV?",
+     "risposta": "Rosso-arancio, circa 620 nm."
+    },
+    {
+     "domanda": "Che cos'è l'inversione di popolazione?",
+     "risposta": "Una situazione in cui il livello eccitato della transizione laser è più popolato di quello inferiore."
+    },
+    {
+     "domanda": "Quali sono le proprietà della luce laser?",
+     "risposta": "È quasi monocromatica, coerente e molto direzionale."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "In un cristallo il potenziale periodico rende le funzioni d'onda elettroniche onde di Bloch e organizza le energie in bande separate da gap. L'occupazione degli stati segue la distribuzione di Fermi-Dirac f(E) = 1/(e^((E − E_F)/kT) + 1), dove E_F è il livello di Fermi. In un semiconduttore intrinseco E_F cade circa a metà del gap e la concentrazione dei portatori è n_i ∝ T^(3/2)e^(−E_g/2kT): per il silicio passare da 300 K a 350 K moltiplica n_i per circa venti solo per il fattore esponenziale. Vale la legge di azione di massa n·p = n_i², che rimane valida anche con il drogaggio, all'equilibrio.",
+    "Il drogaggio con donatori o accettori sposta E_F verso la banda di conduzione o di valenza, e le concentrazioni dei portatori maggioritari diventano circa uguali a quelle dei droganti ionizzati. In una giunzione p-n all'equilibrio E_F è uniforme: ciò produce un potenziale di contatto e una zona di svuotamento priva di portatori liberi. La caratteristica del diodo ideale è I = I₀(e^(eV/kT) − 1), con corrente di saturazione inversa I₀ molto piccola. Su questa struttura si basano diodi, transistor bipolari e MOSFET, mattoni dell'elettronica integrata.",
+    "Nei dispositivi optoelettronici conta il tipo di gap. Nei semiconduttori a gap diretto, come l'arseniuro di gallio, il minimo della banda di conduzione e il massimo di quella di valenza cadono allo stesso vettore d'onda e la ricombinazione radiativa è efficiente: si usano per LED e laser a diodo. Nel silicio, a gap indiretto, la ricombinazione richiede un fonone e l'emissione di luce è debole. Nelle celle fotovoltaiche fotoni con energia maggiore del gap creano coppie elettrone-lacuna che il campo della giunzione separa; l'eccesso di energia dei fotoni si perde in calore, il che limita l'efficienza di una singola giunzione (limite di Shockley-Queisser, circa 33%).",
+    "Einstein descrisse l'interazione tra radiazione e un sistema a due livelli con tre processi: assorbimento e emissione stimolata, entrambi proporzionali alla densità di radiazione tramite i coefficienti B, ed emissione spontanea, con coefficiente A. All'equilibrio termico le popolazioni seguono Boltzmann, N₂/N₁ = e^(−ΔE/kT): per ΔE = 2 eV a 300 K il rapporto è circa 10⁻³⁴. In un sistema a due livelli il pompaggio ottico non può superare N₂ = N₁, perché la stessa radiazione stimola anche l'emissione. Per l'inversione servono schemi a tre livelli (come il rubino) o quattro livelli (come il Nd:YAG), in cui il livello superiore laser è metastabile e quello inferiore si svuota rapidamente.",
+    "Il laser richiede che il guadagno del mezzo superi le perdite della cavità: è la condizione di soglia. La cavità di lunghezza L seleziona modi longitudinali con frequenze f_n = nc/(2L), separati da Δf = c/(2L), pari a 500 MHz per L = 30 cm; la larghezza della curva di guadagno determina quanti modi oscillano. I laser si distinguono per mezzo attivo e regime: continui o impulsati, a gas (He-Ne, CO₂), a stato solido (Nd:YAG), a semiconduttore, a fibra. Le applicazioni spaziano dalle telecomunicazioni in fibra alla chirurgia, alla lavorazione dei materiali, alla metrologia e al LIDAR."
+   ],
+   "metodo": [
+    "Ricava la concentrazione intrinseca dalla distribuzione di Fermi-Dirac nell'approssimazione di Boltzmann e verifica n·p = n_i².",
+    "Disegna il diagramma a bande della giunzione p-n all'equilibrio e nelle due polarizzazioni, con il livello di Fermi.",
+    "Scrivi le equazioni di bilancio di un sistema a due, tre e quattro livelli e verifica quando è possibile l'inversione.",
+    "Calcola numericamente rapporti di Boltzmann, spaziature dei modi e lunghezze d'onda per casi realistici.",
+    "Confronta gap diretti e indiretti con un disegno E(k) e collega la differenza all'uso in LED o celle solari.",
+    "Collega il capitolo a «Meccanica quantistica di base» (stati nella buca e tunnel) e a «Modelli atomici e spettri» (transizioni e regole di selezione)."
+   ],
+   "ricorda": [
+    "Fermi-Dirac: f(E_F) = 1/2.",
+    "n_i ∝ T^(3/2)e^(−E_g/2kT) e n·p = n_i².",
+    "Diodo: I = I₀(e^(eV/kT) − 1).",
+    "Due livelli: al massimo N₂ = N₁; servono tre o quattro livelli.",
+    "Modi della cavità: Δf = c/2L."
+   ],
+   "errori": [
+    "Pensare che il livello di Fermi debba coincidere con uno stato permesso.",
+    "Applicare ai semiconduttori la dipendenza dalla temperatura della resistività dei metalli.",
+    "Dimenticare il fattore 2 nella spaziatura dei modi della cavità.",
+    "Credere che basti pompare più forte un sistema a due livelli per ottenere l'inversione.",
+    "Ignorare la differenza tra gap diretto e indiretto nella scelta dei materiali per LED."
+   ],
+   "domande": [
+    {
+     "domanda": "Che cosa rappresenta il livello di Fermi?",
+     "risposta": "L'energia alla quale la probabilità di occupazione secondo Fermi-Dirac vale 1/2."
+    },
+    {
+     "domanda": "Perché il silicio emette poca luce rispetto al GaAs?",
+     "risposta": "Perché ha un gap indiretto: la ricombinazione radiativa richiede un fonone ed è poco probabile."
+    },
+    {
+     "domanda": "Qual è la caratteristica corrente-tensione del diodo ideale?",
+     "risposta": "I = I₀(e^(eV/kT) − 1)."
+    },
+    {
+     "domanda": "Perché un sistema a due livelli non può fare da laser con pompaggio ottico?",
+     "risposta": "Perché la radiazione di pompa stimola anche l'emissione e le popolazioni tendono al massimo a eguagliarsi."
+    },
+    {
+     "domanda": "Quanto vale la spaziatura dei modi di una cavità di 30 cm?",
+     "risposta": "Δf = c/(2L) = 3 × 10⁸/0,6 = 500 MHz."
+    }
+   ]
+  }
+ }
+}

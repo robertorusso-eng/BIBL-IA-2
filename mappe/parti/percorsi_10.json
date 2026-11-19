@@ -1,0 +1,1455 @@
+{
+ "coagulazione del sangue": {
+  "titolo": "Coagulazione del sangue: dal vaso rotto al coagulo, e poi alla sua rimozione",
+  "dove": "Nel punto in cui un vaso sanguigno si rompe: parete del vaso, piastrine e proteine del plasma (quasi tutte prodotte dal fegato)",
+  "inizio": "vaso sanguigno lesionato",
+  "intro": "Quando un vaso si rompe, il corpo ferma il sangue in tre tempi. Prima il vaso si stringe e le piastrine formano un tappo (emostasi primaria). Poi una catena di proteine del plasma, i fattori della coagulazione, si attivano l'una con l'altra e producono la trombina, che trasforma il fibrinogeno in una rete di fibrina: il tappo diventa un coagulo solido. Quando il vaso è riparato, la plasmina scioglie il coagulo (fibrinolisi).",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Emostasi primaria: vaso che si stringe e tappo di piastrine"
+   },
+   {
+    "da": 4,
+    "nome": "Coagulazione: la cascata dei fattori produce trombina e fibrina"
+   },
+   {
+    "da": 10,
+    "nome": "Fibrinolisi: il coagulo viene sciolto"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "vaso sanguigno lesionato"
+    ],
+    "a": [
+     "collagene sottoendoteliale"
+    ],
+    "enzima": "spasmo vascolare",
+    "entra": [],
+    "esce": [],
+    "nota": "Subito dopo la lesione il muscolo liscio della parete si contrae e il vaso si stringe: esce meno sangue. Dove l'endotelio manca restano scoperti il collagene e il fattore tissutale, che danno il via a tutto il resto."
+   },
+   {
+    "da": [
+     "collagene sottoendoteliale"
+    ],
+    "a": [
+     "piastrine attivate"
+    ],
+    "enzima": "fattore di von Willebrand",
+    "entra": [
+     "piastrine"
+    ],
+    "esce": [
+     "ADP",
+     "trombossano A₂ (TXA₂)"
+    ],
+    "nota": "Il fattore di von Willebrand fa da ponte tra il collagene e il recettore GPIb delle piastrine: le piastrine si attaccano (adesione). Poi cambiano forma, emettono prolungamenti e liberano i loro granuli con ADP, trombossano A₂, serotonina e Ca²⁺."
+   },
+   {
+    "da": [
+     "piastrine attivate"
+    ],
+    "a": [
+     "tappo piastrinico"
+    ],
+    "enzima": "glicoproteina IIb/IIIa",
+    "entra": [
+     "fibrinogeno"
+    ],
+    "esce": [],
+    "nota": "ADP e trombossano A₂ richiamano e attivano altre piastrine. Sulla loro superficie si accende il recettore GPIIb/IIIa, che lega il fibrinogeno e unisce le piastrine tra loro (aggregazione). Il tappo chiude i piccoli buchi, ma da solo è fragile."
+   },
+   {
+    "da": [
+     "fattore tissutale"
+    ],
+    "a": [
+     "fattore Xa"
+    ],
+    "enzima": "fattore VIIa",
+    "entra": [
+     "fattore X",
+     "Ca²⁺"
+    ],
+    "esce": [],
+    "nota": "Innesco (la vecchia «via estrinseca»): il fattore tissutale, esposto dalla lesione, lega il fattore VII e lo attiva. Il complesso fattore tissutale-VIIa attiva il fattore X (e anche il IX). Serve il Ca²⁺, che lega i fattori ai fosfolipidi delle membrane."
+   },
+   {
+    "da": [
+     "fattore Xa"
+    ],
+    "a": [
+     "trombina"
+    ],
+    "enzima": "protrombinasi (Xa-Va)",
+    "entra": [
+     "protrombina (fattore II)",
+     "Ca²⁺"
+    ],
+    "esce": [],
+    "nota": "Il fattore Xa, insieme al fattore Va, taglia la protrombina e forma la trombina. All'inizio se ne forma poca, ma basta per accendere l'amplificazione."
+   },
+   {
+    "da": [
+     "trombina"
+    ],
+    "a": [
+     "tenasi intrinseca (IXa-VIIIa)"
+    ],
+    "enzima": "piastrine attivate",
+    "entra": [
+     "fattore VIII",
+     "fattore IX"
+    ],
+    "esce": [],
+    "nota": "Amplificazione: la poca trombina attiva le piastrine e i fattori V, VIII e XI. Sulla membrana delle piastrine attivate il fattore IXa si unisce al VIIIa: è la tenasi intrinseca. Qui mancano il fattore VIII nell'emofilia A e il IX nell'emofilia B."
+   },
+   {
+    "da": [
+     "tenasi intrinseca (IXa-VIIIa)"
+    ],
+    "a": [
+     "trombina"
+    ],
+    "enzima": "protrombinasi (Xa-Va)",
+    "entra": [
+     "fattore X",
+     "protrombina (fattore II)"
+    ],
+    "esce": [],
+    "limitante": true,
+    "nota": "Propagazione: la tenasi intrinseca attiva moltissimo fattore X, e la protrombinasi sulla superficie delle piastrine produce un'esplosione di trombina. È la tappa che decide quanto coagulo si forma: la frenano l'antitrombina e il sistema della proteina C."
+   },
+   {
+    "da": [
+     "fibrinogeno"
+    ],
+    "a": [
+     "fibrina"
+    ],
+    "enzima": "trombina",
+    "entra": [],
+    "esce": [],
+    "nota": "La trombina taglia il fibrinogeno (una proteina solubile del plasma) in monomeri di fibrina, che si attaccano tra loro in lunghi fili e formano una rete intorno alle piastrine e ai globuli rossi."
+   },
+   {
+    "da": [
+     "fibrina"
+    ],
+    "a": [
+     "coagulo stabile"
+    ],
+    "enzima": "fattore XIIIa",
+    "entra": [
+     "Ca²⁺"
+    ],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "Il fattore XIIIa, attivato anch'esso dalla trombina, lega i fili di fibrina tra loro con legami covalenti: la rete diventa solida e resistente. Poi le piastrine si contraggono e il coagulo si ritira (retrazione), spremendo fuori il siero e avvicinando i bordi della ferita."
+   },
+   {
+    "da": [
+     "plasminogeno"
+    ],
+    "a": [
+     "plasmina"
+    ],
+    "enzima": "attivatore tissutale del plasminogeno (tPA)",
+    "entra": [],
+    "esce": [],
+    "nota": "Mentre il vaso guarisce, l'endotelio libera il tPA. Il tPA lavora soprattutto sul plasminogeno già legato alla fibrina, così la plasmina si forma proprio dentro il coagulo e non in tutto il sangue."
+   },
+   {
+    "da": [
+     "coagulo stabile"
+    ],
+    "a": [
+     "D-dimero"
+    ],
+    "enzima": "plasmina",
+    "entra": [],
+    "esce": [],
+    "nota": "La plasmina taglia la fibrina in frammenti (prodotti di degradazione della fibrina). Il D-dimero nasce solo dalla fibrina già stabilizzata dal fattore XIII: se è nel sangue, da qualche parte si è formato e si sta sciogliendo un coagulo."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Emostasi primaria: vaso che si stringe + tappo di piastrine (fattore di von Willebrand, GPIIb/IIIa)",
+   "Coagulazione: fattore tissutale-VIIa → Xa → trombina → fibrinogeno diventa fibrina (stabilizzata dal XIIIa)",
+   "Freni naturali: antitrombina, proteina C e S, endotelio sano",
+   "Fibrinolisi: tPA → plasmina → la fibrina si scioglie (D-dimero)"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "I freni naturali della coagulazione",
+    "voci": [
+     [
+      "Bloccano trombina e Xa",
+      [
+       "antitrombina"
+      ]
+     ],
+     [
+      "Spengono i fattori Va e VIIIa",
+      [
+       "proteina C e proteina S"
+      ]
+     ],
+     [
+      "Serve per produrre i fattori II, VII, IX e X",
+      [
+       "vitamina K"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Farmaci e malattie da conoscere",
+    "voci": [
+     [
+      "Antiaggreganti (frenano le piastrine)",
+      [
+       "acido acetilsalicilico (aspirina)"
+      ]
+     ],
+     [
+      "Anticoagulanti",
+      [
+       "eparina",
+       "warfarin"
+      ]
+     ],
+     [
+      "Si sanguina troppo",
+      [
+       "emofilia"
+      ]
+     ],
+     [
+      "Si coagula troppo",
+      [
+       "trombosi venosa profonda"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "emopoiesi": {
+  "titolo": "Emopoiesi: dalla cellula staminale ai globuli rossi",
+  "dove": "Midollo osseo rosso: nell'adulto soprattutto vertebre, sterno, coste, bacino e parte alta di femore e omero (nel feto anche fegato e milza)",
+  "inizio": "cellula staminale ematopoietica",
+  "intro": "Tutte le cellule del sangue nascono nel midollo osseo da un'unica cellula madre, la cellula staminale ematopoietica. Questa si rinnova e intanto produce progenitori sempre più specializzati: globuli rossi, piastrine e globuli bianchi. Seguiamo la strada dei globuli rossi, la più abbondante: è comandata dall'eritropoietina del rene e ha bisogno di ferro, vitamina B₁₂ e acido folico.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Dalla staminale al progenitore: la scelta della linea"
+   },
+   {
+    "da": 3,
+    "nome": "Maturazione nel midollo: si fa l'emoglobina e si perde il nucleo"
+   },
+   {
+    "da": 6,
+    "nome": "Nel sangue: vita e fine del globulo rosso"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "cellula staminale ematopoietica"
+    ],
+    "a": [
+     "progenitore mieloide comune"
+    ],
+    "enzima": "citochine",
+    "entra": [],
+    "esce": [],
+    "nota": "La staminale si divide: una figlia resta staminale (autorinnovamento), l'altra si specializza. Le citochine del midollo decidono la strada: progenitore linfoide (linfociti) o progenitore mieloide (globuli rossi, piastrine, granulociti, monociti)."
+   },
+   {
+    "da": [
+     "progenitore mieloide comune"
+    ],
+    "a": [
+     "proeritroblasto"
+    ],
+    "enzima": "eritropoietina (EPO)",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "Quando nei tessuti arriva poco ossigeno, il rene libera eritropoietina. L'EPO salva dalla morte i progenitori eritroidi e li fa moltiplicare e maturare: più EPO, più globuli rossi. È la tappa che regola tutta la produzione."
+   },
+   {
+    "da": [
+     "proeritroblasto"
+    ],
+    "a": [
+     "eritroblasti"
+    ],
+    "enzima": "divisione cellulare (mitosi)",
+    "entra": [
+     "vitamina B₁₂",
+     "acido folico"
+    ],
+    "esce": [],
+    "nota": "Il proeritroblasto si divide più volte. Per copiare il DNA servono vitamina B₁₂ e acido folico: se mancano, le cellule crescono ma non riescono a dividersi e restano grandi (anemia megaloblastica)."
+   },
+   {
+    "da": [
+     "eritroblasti"
+    ],
+    "a": [
+     "eritroblasto ortocromatico"
+    ],
+    "enzima": "ALA sintasi",
+    "entra": [
+     "ferro",
+     "succinil-CoA",
+     "glicina"
+    ],
+    "esce": [
+     "emoglobina"
+    ],
+    "nota": "Gli eritroblasti riempiono il citoplasma di emoglobina. La sintesi dell'eme comincia nel mitocondrio, dove la ALA sintasi unisce succinil-CoA e glicina; alla fine si inserisce il ferro. Intanto il nucleo diventa sempre più piccolo e scuro."
+   },
+   {
+    "da": [
+     "eritroblasto ortocromatico"
+    ],
+    "a": [
+     "reticolocito"
+    ],
+    "enzima": "macrofagi",
+    "entra": [],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "La cellula espelle il nucleo, che viene mangiato da un macrofago al centro dell'«isola» di eritroblasti. Resta il reticolocito, senza nucleo ma ancora con un po' di ribosomi."
+   },
+   {
+    "da": [
+     "reticolocito"
+    ],
+    "a": [
+     "globuli rossi"
+    ],
+    "enzima": "midollo osseo",
+    "entra": [],
+    "esce": [],
+    "nota": "Il reticolocito attraversa la parete dei sinusoidi del midollo ed entra nel sangue. In 1-2 giorni perde i ribosomi e diventa un globulo rosso maturo: un disco biconcavo, flessibile, pieno di emoglobina, senza nucleo e senza mitocondri (vive di glicolisi)."
+   },
+   {
+    "da": [
+     "globuli rossi"
+    ],
+    "a": [
+     "bilirubina"
+    ],
+    "enzima": "milza",
+    "entra": [],
+    "esce": [
+     "ferro",
+     "amminoacidi"
+    ],
+    "nota": "Dopo circa 120 giorni il globulo rosso è vecchio e rigido. I macrofagi della milza (e del fegato) lo distruggono: le globine diventano amminoacidi, il ferro torna al midollo legato alla transferrina, l'eme diventa bilirubina, che il fegato elimina con la bile."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Cellula staminale → progenitore mieloide → proeritroblasto → eritroblasti → reticolocito → globulo rosso",
+   "Comando: poco O₂ nei tessuti → il rene libera eritropoietina → più globuli rossi (feedback negativo)",
+   "Materie prime: ferro (emoglobina), vitamina B₁₂ e acido folico (DNA)",
+   "Il globulo rosso vive circa 120 giorni; la milza lo elimina e ricicla il ferro"
+  ],
+  "dopo": {
+   "titolo": "Le altre cellule del sangue",
+   "strade": [
+    {
+     "condizione": "Linea delle piastrine",
+     "da": "progenitore mieloide comune",
+     "a": "piastrine",
+     "enzima": "trombopoietina (TPO)",
+     "entra": [],
+     "esce": [],
+     "nota": "Il progenitore diventa megacariocita, una cellula gigante con molti nuclei, che si frammenta in migliaia di piastrine. La trombopoietina, prodotta soprattutto dal fegato, ne comanda la produzione."
+    },
+    {
+     "condizione": "Linea dei granulociti e dei monociti",
+     "da": "progenitore mieloide comune",
+     "a": "neutrofili",
+     "enzima": "G-CSF",
+     "entra": [],
+     "esce": [],
+     "nota": "Dallo stesso progenitore nascono neutrofili, eosinofili, basofili e monociti (che nei tessuti diventano macrofagi). Il G-CSF fa produrre e liberare i neutrofili; nelle infezioni la loro produzione aumenta molto."
+    },
+    {
+     "condizione": "Linea linfoide",
+     "da": "cellula staminale ematopoietica",
+     "a": "linfocita B",
+     "enzima": "midollo osseo",
+     "entra": [],
+     "esce": [],
+     "nota": "Il progenitore linfoide dà i linfociti B (maturano nel midollo), i linfociti T (maturano nel timo) e le cellule NK.",
+     "prossimo": "sistema linfatico e immunitario"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Cosa serve per fare i globuli rossi",
+    "voci": [
+     [
+      "Il segnale",
+      [
+       "eritropoietina (EPO)"
+      ]
+     ],
+     [
+      "Per l'emoglobina",
+      [
+       "ferro"
+      ]
+     ],
+     [
+      "Per dividersi (sintesi del DNA)",
+      [
+       "vitamina B₁₂",
+       "acido folico"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Quando i globuli rossi sono pochi: le anemie",
+    "voci": [
+     [
+      "Che cos'è",
+      [
+       "anemia"
+      ]
+     ],
+     [
+      "Globuli rossi piccoli e pallidi",
+      [
+       "anemia sideropenica"
+      ]
+     ],
+     [
+      "Globuli rossi grandi",
+      [
+       "anemia megaloblastica"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "trasporto dei gas nel sangue": {
+  "titolo": "Trasporto dei gas nel sangue: l'ossigeno ai tessuti, la CO₂ ai polmoni",
+  "dove": "Sangue: plasma e globuli rossi, tra i capillari polmonari e i capillari dei tessuti",
+  "inizio": "alveoli",
+  "intro": "L'ossigeno si scioglie poco in acqua: per questo quasi tutto viaggia legato all'emoglobina dei globuli rossi. Nei tessuti l'emoglobina lo cede, tanto più facilmente quanto più il tessuto lavora (effetto Bohr). La CO₂ fa la strada inversa, soprattutto trasformata in bicarbonato. Questo percorso approfondisce la parte finale dell'apparato respiratorio.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Ossigeno: dai polmoni ai tessuti"
+   },
+   {
+    "da": 5,
+    "nome": "Anidride carbonica: dai tessuti ai polmoni"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "alveoli"
+    ],
+    "a": [
+     "O₂ disciolto nel plasma"
+    ],
+    "enzima": "membrana alveolo-capillare",
+    "entra": [
+     "O₂"
+    ],
+    "esce": [
+     "CO₂"
+    ],
+    "nota": "L'O₂ passa per diffusione dall'alveolo (pressione parziale circa 100 mmHg) al sangue venoso (circa 40 mmHg). Sciolto nel plasma ce n'è pochissimo, circa 0,3 mL ogni 100 mL di sangue: troppo poco per vivere."
+   },
+   {
+    "da": [
+     "O₂ disciolto nel plasma"
+    ],
+    "a": [
+     "ossiemoglobina"
+    ],
+    "enzima": "emoglobina",
+    "entra": [
+     "O₂"
+    ],
+    "esce": [],
+    "nota": "L'O₂ entra nei globuli rossi e si lega al ferro dell'eme. Il legame è cooperativo: ogni O₂ legato facilita il successivo, perciò la curva di saturazione ha la forma a S. A 100 mmHg l'emoglobina è satura per circa il 97-98%. Ogni grammo di emoglobina porta circa 1,34 mL di O₂: con 15 g/dL fanno circa 20 mL ogni 100 mL di sangue."
+   },
+   {
+    "da": [
+     "ossiemoglobina"
+    ],
+    "a": [
+     "capillari sistemici"
+    ],
+    "enzima": "cuore",
+    "entra": [],
+    "esce": [],
+    "nota": "Il cuore spinge il sangue arterioso in tutto il corpo. A riposo i tessuti ne prendono solo un quarto circa: il sangue venoso torna al cuore ancora saturo per circa il 75%, una riserva pronta per lo sforzo."
+   },
+   {
+    "da": [
+     "capillari sistemici"
+    ],
+    "a": [
+     "deossiemoglobina"
+    ],
+    "enzima": "effetto Bohr",
+    "entra": [
+     "2,3-bisfosfoglicerato (2,3-BPG)"
+    ],
+    "esce": [
+     "O₂"
+    ],
+    "limitante": true,
+    "nota": "Nei tessuti la PO₂ è bassa (circa 40 mmHg) e l'emoglobina cede O₂. Dove il tessuto lavora di più ci sono più CO₂, più H⁺ e più calore: la curva si sposta a destra e l'emoglobina cede ancora più O₂ (effetto Bohr). Anche il 2,3-BPG dei globuli rossi sposta la curva a destra. È la tappa che adatta la consegna di O₂ al bisogno."
+   },
+   {
+    "da": [
+     "CO₂"
+    ],
+    "a": [
+     "bicarbonato (HCO₃⁻)"
+    ],
+    "enzima": "anidrasi carbonica",
+    "entra": [
+     "H₂O"
+    ],
+    "esce": [
+     "H⁺"
+    ],
+    "nota": "La CO₂ prodotta dalle cellule entra nei globuli rossi. L'anidrasi carbonica la unisce all'acqua: si forma acido carbonico, che si divide subito in bicarbonato e H⁺. Così viaggia circa il 70% della CO₂; circa il 7% resta sciolta nel plasma."
+   },
+   {
+    "da": [
+     "deossiemoglobina"
+    ],
+    "a": [
+     "carbamminoemoglobina"
+    ],
+    "enzima": "effetto Haldane",
+    "entra": [
+     "CO₂",
+     "H⁺"
+    ],
+    "esce": [],
+    "nota": "L'emoglobina che ha ceduto l'O₂ lega meglio gli H⁺ (fa da tampone e il pH cambia poco) e lega la CO₂ ai suoi gruppi amminici: carbamminoemoglobina, circa il 20-30% della CO₂. Meno O₂ legato, più CO₂ trasportata: è l'effetto Haldane."
+   },
+   {
+    "da": [
+     "bicarbonato (HCO₃⁻)"
+    ],
+    "a": [
+     "plasma"
+    ],
+    "enzima": "scambiatore Cl⁻/HCO₃⁻ (banda 3)",
+    "entra": [
+     "Cl⁻"
+    ],
+    "esce": [],
+    "nota": "Il bicarbonato esce dal globulo rosso nel plasma e al suo posto entra uno ione cloruro (spostamento dei cloruri). Così il globulo rosso può continuare a produrre bicarbonato, e il plasma trasporta gran parte della CO₂."
+   },
+   {
+    "da": [
+     "plasma"
+    ],
+    "a": [
+     "alveoli"
+    ],
+    "enzima": "anidrasi carbonica",
+    "entra": [
+     "H⁺"
+    ],
+    "esce": [
+     "CO₂",
+     "H₂O"
+    ],
+    "nota": "Nei capillari polmonari tutto va al contrario. L'O₂ si lega all'emoglobina, che libera H⁺ e CO₂; il bicarbonato rientra nel globulo rosso (esce il Cl⁻) e torna CO₂ e acqua. La CO₂ passa negli alveoli ed esce con l'espirazione."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "O₂: circa 98% legato all'emoglobina, circa 2% sciolto nel plasma",
+   "CO₂: circa 70% come bicarbonato, circa 20-30% legata all'emoglobina, circa 7% sciolta",
+   "Effetto Bohr: più CO₂, H⁺, calore e 2,3-BPG → l'emoglobina cede più O₂",
+   "Effetto Haldane: l'emoglobina senza O₂ trasporta più CO₂ e più H⁺"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "Cosa cambia la presa dell'emoglobina sull'ossigeno",
+    "voci": [
+     [
+      "La curva si sposta a destra: l'O₂ viene ceduto di più",
+      [
+       "H⁺",
+       "CO₂",
+       "2,3-bisfosfoglicerato (2,3-BPG)"
+      ]
+     ],
+     [
+      "Legano l'O₂ più forte dell'emoglobina dell'adulto",
+      [
+       "emoglobina fetale (HbF)",
+       "mioglobina"
+      ]
+     ],
+     [
+      "Bloccano il trasporto dell'O₂",
+      [
+       "monossido di carbonio (CO)",
+       "metaemoglobina"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "equilibrio acido-base": {
+  "titolo": "Equilibrio acido-base: tamponi, polmone e rene",
+  "dove": "Sangue e liquidi del corpo (tamponi), polmoni (eliminano la CO₂), reni (eliminano gli H⁺ e recuperano il bicarbonato)",
+  "inizio": "acidi del metabolismo",
+  "intro": "Il pH del sangue arterioso deve restare tra 7,35 e 7,45, anche se il metabolismo produce acidi in continuazione. Tre difese lavorano insieme: i tamponi (in pochi secondi), il polmone che elimina la CO₂ (in minuti) e il rene che elimina gli H⁺ e produce nuovo bicarbonato (in ore e giorni). Il pH dipende dal rapporto tra bicarbonato e CO₂: pH = 6,1 + log [HCO₃⁻ / (0,03 × PCO₂)].",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Pochi secondi: i tamponi"
+   },
+   {
+    "da": 4,
+    "nome": "Minuti: il polmone elimina la CO₂"
+   },
+   {
+    "da": 5,
+    "nome": "Ore e giorni: il rene elimina gli H⁺"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "acidi del metabolismo"
+    ],
+    "a": [
+     "H⁺"
+    ],
+    "enzima": "tessuti",
+    "entra": [],
+    "esce": [
+     "CO₂"
+    ],
+    "nota": "Le cellule producono ogni giorno molta CO₂ (acido «volatile», che si elimina col respiro) e una quota di acidi «fissi» (acido solforico dalle proteine, acido fosforico, acido lattico, corpi chetonici), circa 1 mEq per kg di peso al giorno, che solo il rene può eliminare."
+   },
+   {
+    "da": [
+     "H⁺"
+    ],
+    "a": [
+     "acido carbonico (H₂CO₃)"
+    ],
+    "enzima": "tampone bicarbonato",
+    "entra": [
+     "bicarbonato (HCO₃⁻)"
+    ],
+    "esce": [],
+    "nota": "Il bicarbonato del plasma (circa 24 mEq/L) cattura subito gli H⁺. È il tampone più importante fuori dalle cellule perché i suoi due pezzi sono regolati: la CO₂ dal polmone, il bicarbonato dal rene. Dentro le cellule e nei globuli rossi lavorano anche fosfati, proteine ed emoglobina."
+   },
+   {
+    "da": [
+     "acido carbonico (H₂CO₃)"
+    ],
+    "a": [
+     "CO₂"
+    ],
+    "enzima": "anidrasi carbonica",
+    "entra": [],
+    "esce": [
+     "H₂O"
+    ],
+    "nota": "L'acido carbonico si divide in CO₂ e acqua. L'acido è diventato CO₂, che il polmone può eliminare: per questo si dice che il sistema bicarbonato è «aperto»."
+   },
+   {
+    "da": [
+     "CO₂"
+    ],
+    "a": [
+     "alveoli"
+    ],
+    "enzima": "centri respiratori del tronco encefalico",
+    "entra": [],
+    "esce": [
+     "CO₂"
+    ],
+    "limitante": true,
+    "nota": "Se gli H⁺ o la CO₂ salgono, i chemocettori (centrali nel bulbo e periferici nei glomi carotidei) fanno respirare più forte e più spesso: si elimina più CO₂ e il pH risale. Se il pH sale, il respiro rallenta. In pochi minuti il polmone corregge in parte, non del tutto."
+   },
+   {
+    "da": [
+     "bicarbonato filtrato"
+    ],
+    "a": [
+     "bicarbonato (HCO₃⁻)"
+    ],
+    "enzima": "tubulo contorto prossimale",
+    "entra": [
+     "Na⁺"
+    ],
+    "esce": [
+     "H⁺"
+    ],
+    "nota": "Il glomerulo filtra ogni giorno moltissimo bicarbonato, che non deve andare perso. Le cellule del tubulo secernono H⁺ (scambiatore Na⁺/H⁺): nel lume H⁺ e bicarbonato diventano CO₂ e acqua, la CO₂ rientra nella cellula e torna bicarbonato, che passa nel sangue. Il prossimale ne recupera circa l'80-90%."
+   },
+   {
+    "da": [
+     "fosfato (Pi)"
+    ],
+    "a": [
+     "acidità titolabile"
+    ],
+    "enzima": "cellule intercalate di tipo A",
+    "entra": [
+     "H⁺"
+    ],
+    "esce": [
+     "bicarbonato (HCO₃⁻)"
+    ],
+    "nota": "Nel tubulo distale e nel dotto collettore le cellule intercalate di tipo A pompano H⁺ nel lume con una H⁺-ATPasi. Gli H⁺ si legano ai tamponi dell'urina, soprattutto il fosfato. Per ogni H⁺ eliminato così, nel sangue entra un bicarbonato nuovo. L'urina può arrivare fino a pH 4,5."
+   },
+   {
+    "da": [
+     "glutammina"
+    ],
+    "a": [
+     "ammonio (NH₄⁺)"
+    ],
+    "enzima": "tubulo contorto prossimale",
+    "entra": [],
+    "esce": [
+     "bicarbonato (HCO₃⁻)"
+    ],
+    "limitante": true,
+    "nota": "Il tubulo prossimale smonta la glutammina: si formano ione ammonio, che va nell'urina, e bicarbonato nuovo, che va nel sangue. Nell'acidosi che dura giorni questa produzione aumenta molto: è la difesa più potente e adattabile del rene."
+   },
+   {
+    "da": [
+     "acidità titolabile",
+     "ammonio (NH₄⁺)"
+    ],
+    "a": [
+     "urina"
+    ],
+    "enzima": "dotto collettore",
+    "entra": [],
+    "esce": [
+     "H⁺"
+    ],
+    "nota": "L'ammonio resta intrappolato nel lume e se ne va con l'urina insieme all'acidità titolabile. Acido eliminato dal rene = ammonio + acidità titolabile − bicarbonato perso nelle urine: ogni giorno pareggia gli acidi fissi prodotti."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "pH arterioso normale 7,35-7,45; HCO₃⁻ circa 24 mEq/L; PCO₂ circa 40 mmHg",
+   "Tamponi (secondi) → polmone, elimina CO₂ (minuti) → rene, elimina H⁺ e produce HCO₃⁻ (ore-giorni)",
+   "Rene: recupera il bicarbonato filtrato ed elimina gli acidi come acidità titolabile e ammonio",
+   "Un disturbo metabolico è compensato dal polmone; un disturbo respiratorio dal rene"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "I quattro disturbi principali",
+    "voci": [
+     [
+      "Bicarbonato basso",
+      [
+       "acidosi metabolica"
+      ]
+     ],
+     [
+      "Bicarbonato alto",
+      [
+       "alcalosi metabolica"
+      ]
+     ],
+     [
+      "CO₂ alta (si respira poco)",
+      [
+       "acidosi respiratoria"
+      ]
+     ],
+     [
+      "CO₂ bassa (si respira troppo)",
+      [
+       "alcalosi respiratoria"
+      ]
+     ],
+     [
+      "Esempio importante di acidosi metabolica",
+      [
+       "chetoacidosi diabetica"
+      ]
+     ],
+     [
+      "L'esame che li misura",
+      [
+       "emogasanalisi"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "regolazione della glicemia": {
+  "titolo": "Regolazione della glicemia: insulina e glucagone",
+  "dove": "Pancreas endocrino (isole di Langerhans), fegato, muscoli e tessuto adiposo",
+  "inizio": "glucosio",
+  "intro": "Il glucosio nel sangue (glicemia) resta tra circa 70 e 100 mg/dL a digiuno e sale poco dopo i pasti, perché il cervello ne ha bisogno di continuo. Due ormoni del pancreas lavorano in direzioni opposte: dopo il pasto l'insulina fa entrare il glucosio nelle cellule e lo mette da parte; nel digiuno il glucagone fa liberare glucosio dal fegato. Quando il digiuno si allunga, si usano i grassi e si formano i corpi chetonici.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Dopo il pasto: l'insulina abbassa la glicemia"
+   },
+   {
+    "da": 5,
+    "nome": "Nel digiuno: il glucagone la rialza"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "glucosio"
+    ],
+    "a": [
+     "cellule β del pancreas"
+    ],
+    "enzima": "glucochinasi",
+    "entra": [],
+    "esce": [
+     "ATP"
+    ],
+    "limitante": true,
+    "nota": "Dopo un pasto il glucosio sale ed entra nelle cellule β delle isole di Langerhans. La glucochinasi lo fosforila con una velocità proporzionale alla glicemia: funziona da «sensore» del glucosio. Più glucosio, più ATP prodotto dalla cellula."
+   },
+   {
+    "da": [
+     "cellule β del pancreas"
+    ],
+    "a": [
+     "insulina"
+    ],
+    "enzima": "canali K⁺-ATP",
+    "entra": [
+     "Ca²⁺"
+    ],
+    "esce": [
+     "peptide C"
+    ],
+    "nota": "L'ATP chiude i canali del potassio sensibili all'ATP: la membrana si depolarizza, si aprono i canali del Ca²⁺ e il calcio che entra fa liberare i granuli di insulina. Con l'insulina esce, in quantità uguale, il peptide C. Le incretine dell'intestino (GLP-1, GIP) rendono la risposta più forte."
+   },
+   {
+    "da": [
+     "insulina"
+    ],
+    "a": [
+     "fegato"
+    ],
+    "enzima": "recettore dell'insulina",
+    "entra": [
+     "glucosio"
+    ],
+    "esce": [
+     "glicogeno"
+    ],
+    "nota": "L'insulina arriva prima al fegato attraverso la vena porta. Il fegato immagazzina il glucosio come glicogeno, lo usa nella glicolisi e trasforma l'eccesso in grassi; intanto smette di produrre glucosio (frena glicogenolisi e gluconeogenesi)."
+   },
+   {
+    "da": [
+     "insulina"
+    ],
+    "a": [
+     "muscolo scheletrico",
+     "tessuto adiposo"
+    ],
+    "enzima": "GLUT4",
+    "entra": [
+     "glucosio",
+     "K⁺"
+    ],
+    "esce": [
+     "glicogeno",
+     "trigliceridi"
+    ],
+    "nota": "Nel muscolo e nel tessuto adiposo l'insulina porta in membrana il trasportatore GLUT4: il glucosio entra. Il muscolo lo conserva come glicogeno, il tessuto adiposo lo usa per fare trigliceridi e smette di liberare acidi grassi. L'insulina fa entrare nelle cellule anche il K⁺."
+   },
+   {
+    "da": [
+     "glucosio"
+    ],
+    "a": [
+     "glucagone"
+    ],
+    "enzima": "cellule α del pancreas",
+    "entra": [
+     "amminoacidi"
+    ],
+    "esce": [],
+    "nota": "Tra i pasti e nel digiuno la glicemia scende: l'insulina cala e le cellule α liberano glucagone. Lo stimolano anche gli amminoacidi di un pasto proteico e il sistema nervoso simpatico; lo frenano il glucosio e l'insulina."
+   },
+   {
+    "da": [
+     "glucagone"
+    ],
+    "a": [
+     "fegato"
+    ],
+    "enzima": "recettore del glucagone",
+    "entra": [
+     "glicogeno"
+    ],
+    "esce": [
+     "glucosio"
+    ],
+    "nota": "Il glucagone agisce soprattutto sul fegato (il muscolo non ha il suo recettore). Tramite cAMP accende la glicogeno fosforilasi e spegne la glicogeno sintasi: il glicogeno si smonta e il glucosio esce nel sangue. Basta per le prime ore di digiuno; la riserva del fegato si esaurisce in circa un giorno."
+   },
+   {
+    "da": [
+     "amminoacidi",
+     "lattato",
+     "glicerolo"
+    ],
+    "a": [
+     "glucosio"
+    ],
+    "enzima": "PEP carbossichinasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Quando il digiuno continua, il fegato (e in parte il rene) fabbrica glucosio nuovo da amminoacidi, lattato e glicerolo: è la gluconeogenesi. Glucagone e cortisolo aumentano gli enzimi che servono, come la PEP carbossichinasi; l'insulina li frena."
+   },
+   {
+    "da": [
+     "acido grasso"
+    ],
+    "a": [
+     "corpi chetonici"
+    ],
+    "enzima": "HMG-CoA sintasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Con poca insulina il tessuto adiposo libera acidi grassi. Muscoli e cuore li bruciano al posto del glucosio; il fegato ne trasforma una parte in corpi chetonici, che dopo alcuni giorni di digiuno nutrono anche il cervello e risparmiano le proteine dei muscoli."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "Glicemia normale a digiuno: circa 70-100 mg/dL",
+   "Dopo il pasto: glucosio → cellule β → insulina → glucosio nelle cellule (glicogeno, trigliceridi)",
+   "Nel digiuno: cellule α → glucagone → fegato (glicogenolisi, poi gluconeogenesi) → glucosio nel sangue",
+   "Digiuno lungo: grassi → acidi grassi → corpi chetonici"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "Gli ormoni della glicemia",
+    "voci": [
+     [
+      "L'unico che la abbassa",
+      [
+       "insulina"
+      ]
+     ],
+     [
+      "Quelli che la alzano (controregolatori)",
+      [
+       "glucagone",
+       "adrenalina",
+       "cortisolo",
+       "ormone della crescita (GH)"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Quando la regolazione si guasta",
+    "voci": [
+     [
+      "Glicemia troppo alta",
+      [
+       "diabete mellito di tipo 1",
+       "diabete mellito di tipo 2"
+      ]
+     ],
+     [
+      "Emergenze",
+      [
+       "chetoacidosi diabetica",
+       "ipoglicemia"
+      ]
+     ],
+     [
+      "Esame del controllo nel tempo",
+      [
+       "emoglobina glicata (HbA1c)"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "ciclo ovarico e mestruale": {
+  "titolo": "Ciclo ovarico e mestruale: un mese di ormoni",
+  "dove": "Ipotalamo e ipofisi (il comando), ovaio (follicolo e corpo luteo), utero (endometrio)",
+  "inizio": "ipotalamo",
+  "intro": "Ogni mese, in media ogni 28 giorni (ma è normale tra circa 21 e 35), il corpo della donna prepara un ovocita e l'utero per una possibile gravidanza. Due cicli vanno insieme: nell'ovaio (fase follicolare, ovulazione, fase luteale) e nell'utero (mestruazione, fase proliferativa, fase secretiva). Li guidano gli ormoni dell'ipofisi (FSH e LH) e quelli dell'ovaio (estrogeni e progesterone). Il primo giorno di mestruazione è il giorno 1 del ciclo.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Fase follicolare (dal giorno 1 all'ovulazione)"
+   },
+   {
+    "da": 5,
+    "nome": "Ovulazione (circa 14° giorno in un ciclo di 28)"
+   },
+   {
+    "da": 7,
+    "nome": "Fase luteale (circa 14 giorni)"
+   },
+   {
+    "da": 9,
+    "nome": "Senza gravidanza: mestruazione e nuovo ciclo"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "ipotalamo"
+    ],
+    "a": [
+     "GnRH"
+    ],
+    "enzima": "neuroni a GnRH",
+    "entra": [],
+    "esce": [],
+    "nota": "I neuroni dell'ipotalamo liberano il GnRH a impulsi, nel sistema portale verso l'ipofisi. Gli impulsi sono indispensabili: un GnRH continuo, al contrario, spegne l'ipofisi."
+   },
+   {
+    "da": [
+     "GnRH"
+    ],
+    "a": [
+     "LH e FSH"
+    ],
+    "enzima": "adenoipofisi",
+    "entra": [],
+    "esce": [],
+    "nota": "Le cellule gonadotrope dell'ipofisi anteriore rispondono liberando FSH e LH. All'inizio del ciclo l'FSH è un po' più alto, perché alla fine del ciclo precedente estrogeni, progesterone e inibina sono crollati."
+   },
+   {
+    "da": [
+     "LH e FSH"
+    ],
+    "a": [
+     "follicolo dominante"
+    ],
+    "enzima": "cellule della granulosa",
+    "entra": [],
+    "esce": [
+     "estrogeni",
+     "inibina"
+    ],
+    "nota": "L'FSH fa crescere un gruppo di follicoli; uno solo, il più sensibile all'FSH, diventa dominante e gli altri regrediscono. L'LH fa produrre androgeni alle cellule della teca; l'FSH fa trasformare questi androgeni in estradiolo dalle cellule della granulosa (aromatasi)."
+   },
+   {
+    "da": [
+     "estrogeni"
+    ],
+    "a": [
+     "endometrio proliferativo"
+    ],
+    "enzima": "endometrio",
+    "entra": [],
+    "esce": [],
+    "nota": "Gli estrogeni fanno ricostruire e ispessire l'endometrio (fase proliferativa) e rendono il muco del collo dell'utero abbondante e filante, facile da attraversare per gli spermatozoi."
+   },
+   {
+    "da": [
+     "estrogeni"
+    ],
+    "a": [
+     "picco di LH"
+    ],
+    "enzima": "feedback positivo",
+    "entra": [],
+    "esce": [],
+    "limitante": true,
+    "nota": "Quando gli estrogeni restano alti per circa due giorni, il loro effetto sull'ipotalamo e sull'ipofisi si capovolge: invece di frenare, stimolano. Parte un'ondata di LH (e un po' di FSH): è il picco di LH, la tappa che decide il momento dell'ovulazione."
+   },
+   {
+    "da": [
+     "picco di LH"
+    ],
+    "a": [
+     "ovocita II",
+     "corpo luteo"
+    ],
+    "enzima": "ovulazione",
+    "entra": [],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "Circa 36 ore dopo l'inizio del picco di LH il follicolo si rompe e libera l'ovocita, che ha appena completato la prima divisione meiotica. Le fimbrie della tuba lo raccolgono. Il follicolo vuoto si trasforma in corpo luteo."
+   },
+   {
+    "da": [
+     "corpo luteo"
+    ],
+    "a": [
+     "progesterone"
+    ],
+    "enzima": "LH",
+    "entra": [],
+    "esce": [
+     "estrogeni",
+     "inibina"
+    ],
+    "nota": "Stimolato dall'LH, il corpo luteo produce molto progesterone e anche estrogeni e inibina. Insieme frenano ipotalamo e ipofisi (feedback negativo): FSH e LH restano bassi e non partono nuovi follicoli. Il progesterone alza la temperatura basale di circa mezzo grado."
+   },
+   {
+    "da": [
+     "progesterone"
+    ],
+    "a": [
+     "endometrio secretivo"
+    ],
+    "enzima": "endometrio",
+    "entra": [],
+    "esce": [],
+    "nota": "Il progesterone trasforma l'endometrio: le ghiandole si riempiono di glicogeno e secernono, le arterie spirali si allungano, il tessuto diventa morbido e ricco di nutrienti, pronto ad accogliere un embrione. Il muco cervicale diventa denso."
+   },
+   {
+    "da": [
+     "corpo luteo"
+    ],
+    "a": [
+     "corpo albicante"
+    ],
+    "enzima": "luteolisi",
+    "entra": [],
+    "esce": [],
+    "nota": "Se non c'è gravidanza manca l'hCG dell'embrione: dopo circa 12-14 giorni di vita il corpo luteo regredisce e diventa una cicatrice bianca (corpo albicante). Progesterone ed estrogeni crollano. Se invece c'è un embrione, l'hCG mantiene vivo il corpo luteo."
+   },
+   {
+    "da": [
+     "endometrio secretivo"
+    ],
+    "a": [
+     "mestruazione"
+    ],
+    "enzima": "prostaglandine",
+    "entra": [],
+    "esce": [],
+    "nota": "Senza progesterone le arterie spirali si contraggono a lungo per effetto delle prostaglandine: lo strato superficiale dell'endometrio resta senza sangue, muore e si stacca. La mestruazione dura in genere 3-7 giorni. Le prostaglandine fanno anche contrarre l'utero (crampi)."
+   },
+   {
+    "da": [
+     "mestruazione"
+    ],
+    "a": [
+     "FSH"
+    ],
+    "enzima": "feedback negativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Con estrogeni, progesterone e inibina bassi il freno su ipotalamo e ipofisi si toglie: l'FSH risale già negli ultimi giorni del ciclo e recluta nuovi follicoli. Comincia un nuovo ciclo."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "GnRH a impulsi → FSH e LH → follicolo dominante → estrogeni (endometrio proliferativo)",
+   "Estrogeni alti → feedback positivo → picco di LH → ovulazione (circa 14 giorni prima della mestruazione successiva)",
+   "Corpo luteo → progesterone (endometrio secretivo, temperatura più alta)",
+   "Senza hCG il corpo luteo regredisce → crollo di progesterone → mestruazione → nuovo ciclo"
+  ],
+  "dopo": {
+   "titolo": "Se l'ovocita viene fecondato",
+   "strade": [
+    {
+     "condizione": "Embrione impiantato nell'endometrio",
+     "da": "corpo luteo",
+     "a": "progesterone",
+     "enzima": "hCG",
+     "entra": [],
+     "esce": [],
+     "nota": "L'embrione produce hCG, che fa le veci dell'LH: il corpo luteo resta vivo e continua a produrre progesterone, quindi la mestruazione non arriva. Dopo alcune settimane il compito passa alla placenta.",
+     "prossimo": "apparato riproduttore"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Gli ormoni del ciclo",
+    "voci": [
+     [
+      "Dall'ipofisi",
+      [
+       "FSH",
+       "LH"
+      ]
+     ],
+     [
+      "Dall'ovaio",
+      [
+       "estrogeni",
+       "progesterone",
+       "inibina"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Quando il ciclo cambia o si ferma",
+    "voci": [
+     [
+      "Le mestruazioni mancano",
+      [
+       "amenorrea"
+      ]
+     ],
+     [
+      "Causa frequente di cicli irregolari",
+      [
+       "sindrome dell'ovaio policistico (PCOS)"
+      ]
+     ],
+     [
+      "Fine dei cicli",
+      [
+       "menopausa"
+      ]
+     ],
+     [
+      "Il ciclo bloccato apposta",
+      [
+       "pillola estroprogestinica"
+      ]
+     ],
+     [
+      "La gravidanza non arriva",
+      [
+       "infertilità"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "spermatogenesi": {
+  "titolo": "Spermatogenesi: dalla cellula staminale allo spermatozoo",
+  "dove": "Testicolo: tubuli seminiferi (cellule germinali e cellule del Sertoli) e tessuto tra i tubuli (cellule di Leydig); poi epididimo",
+  "inizio": "ipotalamo",
+  "intro": "Dalla pubertà in poi i testicoli producono spermatozoi in continuazione, molti milioni al giorno. Il lavoro avviene nei tubuli seminiferi, a una temperatura di qualche grado più bassa di quella del corpo. Il comando arriva dall'ipotalamo e dall'ipofisi: l'LH fa produrre testosterone alle cellule di Leydig, l'FSH stimola le cellule del Sertoli. Da una cellula staminale servono circa 70 giorni per avere uno spermatozoo.",
+  "fasi": [
+   {
+    "da": 1,
+    "nome": "Il comando ormonale"
+   },
+   {
+    "da": 5,
+    "nome": "Nei tubuli seminiferi: mitosi, meiosi e spermiogenesi (circa 70 giorni)"
+   },
+   {
+    "da": 9,
+    "nome": "Maturazione e controllo"
+   }
+  ],
+  "passaggi": [
+   {
+    "da": [
+     "ipotalamo"
+    ],
+    "a": [
+     "GnRH"
+    ],
+    "enzima": "neuroni a GnRH",
+    "entra": [],
+    "esce": [],
+    "nota": "Dalla pubertà l'ipotalamo libera il GnRH a impulsi verso l'ipofisi. Nell'uomo non c'è un ciclo mensile: la produzione è continua."
+   },
+   {
+    "da": [
+     "GnRH"
+    ],
+    "a": [
+     "LH e FSH"
+    ],
+    "enzima": "adenoipofisi",
+    "entra": [],
+    "esce": [],
+    "nota": "L'ipofisi anteriore risponde liberando LH e FSH, che con il sangue raggiungono il testicolo."
+   },
+   {
+    "da": [
+     "LH e FSH"
+    ],
+    "a": [
+     "testosterone"
+    ],
+    "enzima": "cellule di Leydig",
+    "entra": [],
+    "esce": [],
+    "nota": "L'LH stimola le cellule di Leydig, tra i tubuli, a produrre testosterone dal colesterolo. Una parte va nel sangue (caratteri sessuali maschili, muscoli, ossa, desiderio sessuale); una parte resta nel testicolo, dove la sua concentrazione è molto più alta che nel sangue."
+   },
+   {
+    "da": [
+     "testosterone"
+    ],
+    "a": [
+     "cellule del Sertoli"
+    ],
+    "enzima": "recettore degli androgeni",
+    "entra": [
+     "FSH"
+    ],
+    "esce": [
+     "inibina"
+    ],
+    "limitante": true,
+    "nota": "Le cellule del Sertoli hanno bisogno di due segnali: il testosterone (tramite il recettore degli androgeni) e l'FSH. Così nutrono le cellule germinali, producono la proteina che lega gli androgeni (ABP) e mantengono la barriera emato-testicolare. Liberano anche inibina B."
+   },
+   {
+    "da": [
+     "spermatogonio"
+    ],
+    "a": [
+     "spermatocita primario"
+    ],
+    "enzima": "divisione cellulare (mitosi)",
+    "entra": [],
+    "esce": [],
+    "nota": "Gli spermatogoni, cellule staminali alla base del tubulo, si dividono per mitosi: alcuni restano staminali, altri si differenziano e diventano spermatociti primari (46 cromosomi, DNA duplicato), che attraversano la barriera tra le cellule del Sertoli."
+   },
+   {
+    "da": [
+     "spermatocita primario"
+    ],
+    "a": [
+     "spermatociti secondari"
+    ],
+    "enzima": "meiosi I",
+    "entra": [],
+    "esce": [],
+    "nota": "Nella lunga profase della prima divisione meiotica i cromosomi omologhi si appaiano e si scambiano pezzi (crossing-over). Poi si separano: nascono due spermatociti secondari con 23 cromosomi, ciascuno ancora con due cromatidi."
+   },
+   {
+    "da": [
+     "spermatociti secondari"
+    ],
+    "a": [
+     "spermatidi"
+    ],
+    "enzima": "meiosi II",
+    "entra": [],
+    "esce": [],
+    "nota": "La seconda divisione meiotica è rapida e separa i cromatidi: da ogni spermatocita primario nascono 4 spermatidi aploidi. Metà portano il cromosoma X, metà il cromosoma Y. Le cellule figlie restano unite da ponti di citoplasma."
+   },
+   {
+    "da": [
+     "spermatidi"
+    ],
+    "a": [
+     "spermatozoo"
+    ],
+    "enzima": "spermiogenesi",
+    "entra": [],
+    "esce": [],
+    "nota": "Senza più dividersi, lo spermatide cambia forma: si forma l'acrosoma (un cappuccio di enzimi), cresce il flagello, il DNA si compatta in una testa piccolissima e i mitocondri si dispongono intorno alla base della coda. Il citoplasma in più viene mangiato dalle cellule del Sertoli e lo spermatozoo si stacca nel lume (spermiazione)."
+   },
+   {
+    "da": [
+     "spermatozoo"
+    ],
+    "a": [
+     "spermatozoo maturo"
+    ],
+    "enzima": "epididimo",
+    "entra": [],
+    "esce": [],
+    "nota": "Gli spermatozoi che escono dal testicolo non sanno ancora nuotare bene. Nel lungo tubulo dell'epididimo maturano e acquistano la capacità di muoversi; vengono conservati nella coda dell'epididimo e nel dotto deferente. La capacità di fecondare la ottengono solo nelle vie genitali femminili (capacitazione)."
+   },
+   {
+    "da": [
+     "testosterone",
+     "inibina"
+    ],
+    "a": [
+     "ipotalamo",
+     "adenoipofisi"
+    ],
+    "enzima": "feedback negativo",
+    "entra": [],
+    "esce": [],
+    "nota": "Il testosterone frena ipotalamo e ipofisi e fa scendere soprattutto l'LH; l'inibina B delle cellule del Sertoli frena l'FSH. Per questo chi assume testosterone o anabolizzanti dall'esterno spegne la propria spermatogenesi."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "GnRH → LH (cellule di Leydig → testosterone) e FSH (cellule del Sertoli)",
+   "Spermatogonio (mitosi) → spermatocita primario → meiosi I → 2 spermatociti secondari → meiosi II → 4 spermatidi → spermiogenesi → 4 spermatozoi",
+   "Circa 70 giorni nel testicolo, poi maturazione nell'epididimo",
+   "Feedback negativo: testosterone frena l'LH, inibina B frena l'FSH"
+  ],
+  "da_sapere": [
+   {
+    "titolo": "Le cellule del testicolo",
+    "voci": [
+     [
+      "Nei tubuli seminiferi (nutrono le cellule germinali)",
+      [
+       "cellule del Sertoli"
+      ]
+     ],
+     [
+      "Tra i tubuli (producono testosterone)",
+      [
+       "cellule di Leydig"
+      ]
+     ]
+    ]
+   },
+   {
+    "titolo": "Quando gli spermatozoi sono pochi o assenti",
+    "voci": [
+     [
+      "L'esame del seme",
+      [
+       "spermiogramma"
+      ]
+     ],
+     [
+      "Cause frequenti",
+      [
+       "varicocele",
+       "criptorchidismo"
+      ]
+     ],
+     [
+      "La coppia non riesce ad avere figli",
+      [
+       "infertilità"
+      ]
+     ]
+    ]
+   }
+  ]
+ }
+}

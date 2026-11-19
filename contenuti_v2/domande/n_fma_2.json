@@ -1,0 +1,962 @@
+[
+ {
+  "id": "NFMA-041",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Un resistore collegato a una differenza di potenziale di 12 V è attraversato da una corrente di 0,40 A. Qual è la sua resistenza?",
+  "opzioni": {
+   "A": "30 Ω",
+   "B": "4,8 Ω",
+   "C": "0,033 Ω",
+   "D": "12 Ω",
+   "E": "48 Ω"
+  },
+  "giusta": "A",
+  "perche": "Per la prima legge di Ohm V = R·I, quindi R = V/I = 12 V / 0,40 A = 30 Ω. Il valore 4,8 Ω si ottiene moltiplicando tensione e corrente (che dà la potenza in watt, non la resistenza); 0,033 Ω è il rapporto inverso I/V.",
+  "semplice": "La resistenza dice quanto un componente «frena» la corrente: servono 12 volt per far passare appena 0,4 ampere, quindi il freno è di 30 ohm.",
+  "passaggi": [
+   "Dati: V = 12 V, I = 0,40 A",
+   "Formula: R = V/I (prima legge di Ohm)",
+   "Calcolo: 12 V / 0,40 A",
+   "Risultato: R = 30 Ω"
+  ],
+  "concetto": "prima legge di Ohm"
+ },
+ {
+  "id": "NFMA-042",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Due resistori da 4,0 Ω e 6,0 Ω sono collegati in serie a un generatore ideale di 20 V. Qual è la differenza di potenziale ai capi del resistore da 6,0 Ω?",
+  "opzioni": {
+   "A": "8,0 V",
+   "B": "12 V",
+   "C": "20 V",
+   "D": "10 V",
+   "E": "3,3 V"
+  },
+  "giusta": "B",
+  "perche": "In serie le resistenze si sommano: R = 10 Ω, quindi la corrente, uguale in entrambi i resistori, è I = 20 V / 10 Ω = 2,0 A. La tensione sul resistore da 6,0 Ω è 6,0 Ω · 2,0 A = 12 V, mentre sull'altro cadono 8,0 V. Chi risponde 20 V confonde la serie con il parallelo, in cui ogni ramo ha la stessa tensione.",
+  "semplice": "In serie la tensione si divide tra i resistori in proporzione alla loro resistenza: quello più grande si prende la fetta maggiore, qui 12 dei 20 volt.",
+  "passaggi": [
+   "Dati: R₁ = 4,0 Ω, R₂ = 6,0 Ω, V = 20 V",
+   "Resistenza equivalente in serie: R = 4,0 Ω + 6,0 Ω = 10 Ω",
+   "Corrente: I = 20 V / 10 Ω = 2,0 A",
+   "Tensione su R₂: V₂ = 6,0 Ω · 2,0 A = 12 V"
+  ],
+  "concetto": "partitore di tensione in serie"
+ },
+ {
+  "id": "NFMA-043",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Qual è la resistenza equivalente di due resistori da 6,0 Ω e 3,0 Ω collegati in parallelo?",
+  "opzioni": {
+   "A": "9,0 Ω",
+   "B": "4,5 Ω",
+   "C": "2,0 Ω",
+   "D": "0,50 Ω",
+   "E": "18 Ω"
+  },
+  "giusta": "C",
+  "perche": "In parallelo si sommano i reciproci: 1/R = 1/6,0 + 1/3,0 = 1/6,0 + 2/6,0 = 3/6,0, quindi R = 2,0 Ω. La resistenza equivalente di un parallelo è sempre minore della più piccola delle resistenze. Il valore 0,50 Ω è 1/R, dimenticando di fare il reciproco finale; 9,0 Ω è la serie.",
+  "semplice": "Aprire una seconda strada fa passare più corrente, come aprire una seconda cassa al supermercato: la coda scorre meglio. Per questo il parallelo ha resistenza minore di ciascun ramo.",
+  "passaggi": [
+   "Dati: R₁ = 6,0 Ω, R₂ = 3,0 Ω in parallelo",
+   "Formula: 1/R = 1/R₁ + 1/R₂",
+   "Calcolo: 1/R = 1/6,0 + 2/6,0 = 0,50 Ω⁻¹",
+   "Risultato: R = 2,0 Ω, minore di 3,0 Ω come atteso"
+  ],
+  "concetto": "resistori in parallelo"
+ },
+ {
+  "id": "NFMA-044",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Un filo di rame (resistività 1,7·10⁻⁸ Ω·m) è lungo 10 m e ha sezione 1,0 mm². Qual è la sua resistenza?",
+  "opzioni": {
+   "A": "1,7·10⁻⁷ Ω",
+   "B": "17 Ω",
+   "C": "1,7 Ω",
+   "D": "0,17 Ω",
+   "E": "0,017 Ω"
+  },
+  "giusta": "D",
+  "perche": "Per la seconda legge di Ohm R = ρ·L/S. Convertendo la sezione in metri quadrati (1,0 mm² = 1,0·10⁻⁶ m²): R = 1,7·10⁻⁸ Ω·m · 10 m / 1,0·10⁻⁶ m² = 0,17 Ω. Il valore 1,7·10⁻⁷ Ω deriva dal non convertire i mm²; dimenticare la conversione è l'errore più comune.",
+  "semplice": "Un filo lungo e sottile resiste di più, uno corto e grosso di meno, come un tubo dell'acqua. Dieci metri di buon filo di rame resistono pochissimo.",
+  "passaggi": [
+   "Dati: ρ = 1,7·10⁻⁸ Ω·m, L = 10 m, S = 1,0 mm² = 1,0·10⁻⁶ m²",
+   "Formula: R = ρ·L/S",
+   "Calcolo: 1,7·10⁻⁸ · 10 / 1,0·10⁻⁶ Ω",
+   "Risultato: R = 0,17 Ω"
+  ],
+  "concetto": "seconda legge di Ohm"
+ },
+ {
+  "id": "NFMA-045",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Una stufa elettrica da 2000 W resta accesa per 3 ore. Se l'energia costa 0,25 € al kWh, quanto si spende?",
+  "opzioni": {
+   "A": "0,15 €",
+   "B": "500 €",
+   "C": "6,00 €",
+   "D": "15,00 €",
+   "E": "1,50 €"
+  },
+  "giusta": "E",
+  "perche": "L'energia consumata è E = P·t = 2,0 kW · 3 h = 6,0 kWh; moltiplicando per il prezzo si ottiene 6,0 · 0,25 € = 1,50 €. Chi risponde 6,00 € ha calcolato l'energia ma si è fermato senza applicare il prezzo; 500 € viene dal non convertire i watt in kilowatt.",
+  "semplice": "La bolletta conta i kilowattora: un apparecchio da 2 kW acceso un'ora consuma 2 kWh. In tre ore sono 6 kWh, a 25 centesimi l'uno fa un euro e mezzo.",
+  "passaggi": [
+   "Dati: P = 2000 W = 2,0 kW, t = 3 h, prezzo 0,25 €/kWh",
+   "Formula: E = P·t",
+   "Calcolo: E = 2,0 kW · 3 h = 6,0 kWh",
+   "Costo: 6,0 kWh · 0,25 €/kWh = 1,50 €"
+  ],
+  "concetto": "energia elettrica e kilowattora"
+ },
+ {
+  "id": "NFMA-046",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "In un conduttore circola una corrente costante di 3,0 A. Quanta carica attraversa una sua sezione in 2,0 minuti?",
+  "opzioni": {
+   "A": "360 C",
+   "B": "6,0 C",
+   "C": "1,5 C",
+   "D": "40 C",
+   "E": "0,025 C"
+  },
+  "giusta": "A",
+  "perche": "L'intensità di corrente è la carica che attraversa una sezione nell'unità di tempo, I = Q/Δt, quindi Q = I·Δt. Convertendo il tempo in secondi (2,0 min = 120 s): Q = 3,0 A · 120 s = 360 C. Il valore 6,0 C deriva dal non convertire i minuti in secondi.",
+  "semplice": "Un ampere significa che passa un coulomb di carica ogni secondo. Con 3 ampere per 120 secondi passano 360 coulomb, come contare quanta acqua esce da un rubinetto in due minuti.",
+  "passaggi": [
+   "Dati: I = 3,0 A, Δt = 2,0 min = 120 s",
+   "Formula: Q = I·Δt",
+   "Calcolo: 3,0 A · 120 s",
+   "Risultato: Q = 360 C"
+  ],
+  "concetto": "intensità di corrente"
+ },
+ {
+  "id": "NFMA-047",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Su quale principio si basa la prima legge di Kirchhoff (legge dei nodi)?",
+  "opzioni": {
+   "A": "Conservazione dell'energia",
+   "B": "Conservazione della carica elettrica",
+   "C": "Conservazione della quantità di moto",
+   "D": "Principio di sovrapposizione dei campi",
+   "E": "Legge di Coulomb"
+  },
+  "giusta": "B",
+  "perche": "La legge dei nodi afferma che la somma delle correnti entranti in un nodo è uguale alla somma di quelle uscenti: la carica non si accumula e non si crea nel nodo, quindi si conserva. La conservazione dell'energia è invece alla base della seconda legge, quella delle maglie, e per questo è la distrazione più frequente.",
+  "semplice": "Un incrocio di tubi dell'acqua: quanta acqua entra, tanta ne esce. Lo stesso fa la carica elettrica in un punto di diramazione del circuito.",
+  "passaggi": [
+   "Ricorda l'enunciato: correnti entranti = correnti uscenti",
+   "Ciò significa che la carica non si crea né si accumula",
+   "Escludi A: riguarda la legge delle maglie",
+   "Resta la B"
+  ],
+  "concetto": "legge dei nodi"
+ },
+ {
+  "id": "NFMA-048",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sulla resistività dei metalli è corretta?",
+  "opzioni": {
+   "A": "È indipendente dalla temperatura",
+   "B": "Diminuisce all'aumentare della temperatura, come nei semiconduttori",
+   "C": "Aumenta all'aumentare della temperatura, perché aumentano gli urti degli elettroni con il reticolo",
+   "D": "Dipende dalla lunghezza del filo",
+   "E": "È uguale per tutti i metalli"
+  },
+  "giusta": "C",
+  "perche": "Nei metalli le vibrazioni termiche degli ioni del reticolo crescono con la temperatura e ostacolano maggiormente il moto degli elettroni di conduzione, per cui la resistività aumenta (in prima approssimazione in modo lineare). Nei semiconduttori accade l'opposto perché aumenta il numero di portatori. La resistività è una proprietà del materiale, non della geometria del filo.",
+  "semplice": "In un metallo caldo gli atomi si agitano di più e gli elettroni urtano più spesso, come chi attraversa una piazza piena di gente che si muove: va più lento.",
+  "passaggi": [
+   "Ricorda che la resistività è una proprietà del materiale: escludi D",
+   "Nei metalli l'agitazione termica ostacola gli elettroni",
+   "Quindi la resistività cresce con la temperatura",
+   "Escludi B, che vale per i semiconduttori: resta la C"
+  ],
+  "concetto": "resistività e temperatura"
+ },
+ {
+  "id": "NFMA-049",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "Una batteria con forza elettromotrice 12 V e resistenza interna 0,50 Ω alimenta una resistenza esterna di 5,5 Ω. Qual è la differenza di potenziale ai morsetti della batteria?",
+  "opzioni": {
+   "A": "12 V",
+   "B": "1,0 V",
+   "C": "2,0 V",
+   "D": "11 V",
+   "E": "13 V"
+  },
+  "giusta": "D",
+  "perche": "La corrente è I = fem/(R + r) = 12 V / 6,0 Ω = 2,0 A. Parte della fem si perde sulla resistenza interna: r·I = 0,50 Ω · 2,0 A = 1,0 V, per cui ai morsetti si misura 12 V − 1,0 V = 11 V. Chi risponde 12 V tratta la batteria come ideale.",
+  "semplice": "Una batteria reale «spreca» un po' di tensione al suo interno quando eroga corrente: per questo le pile scariche danno meno tensione quando le usi.",
+  "passaggi": [
+   "Dati: fem = 12 V, r = 0,50 Ω, R = 5,5 Ω",
+   "Corrente: I = fem/(R + r) = 12 V / 6,0 Ω = 2,0 A",
+   "Caduta interna: r·I = 0,50 Ω · 2,0 A = 1,0 V",
+   "Tensione ai morsetti: V = 12 V − 1,0 V = 11 V"
+  ],
+  "concetto": "generatore reale e resistenza interna"
+ },
+ {
+  "id": "NFMA-050",
+  "materia": "Fisica",
+  "argomento": "Corrente elettrica e leggi di Ohm",
+  "livello": "superiori",
+  "domanda": "In un resistore di resistenza costante la corrente raddoppia. Come cambia la potenza dissipata per effetto Joule?",
+  "opzioni": {
+   "A": "Raddoppia",
+   "B": "Resta uguale",
+   "C": "Si dimezza",
+   "D": "Aumenta di √2 volte",
+   "E": "Quadruplica"
+  },
+  "giusta": "E",
+  "perche": "La potenza dissipata è P = R·I²: con R costante e I' = 2I si ottiene P' = R·4I² = 4P. L'errore tipico è usare P = V·I pensando che V resti fissa, mentre per la legge di Ohm anche la tensione raddoppia.",
+  "semplice": "Il calore prodotto da un filo cresce molto in fretta con la corrente: raddoppiando la corrente il riscaldamento diventa quattro volte maggiore. Per questo i fili sovraccarichi si scaldano pericolosamente.",
+  "passaggi": [
+   "Scrivi la formula: P = R·I²",
+   "Sostituisci I con 2I: P' = R·(2I)² = 4R·I²",
+   "Quindi P' = 4P",
+   "Escludi A: anche V raddoppia con I. Resta la E"
+  ],
+  "concetto": "effetto Joule"
+ },
+ {
+  "id": "NFMA-051",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Una bobina di 50 spire, ciascuna di area 0,020 m², è immersa in un campo magnetico uniforme di 0,50 T perpendicolare alle spire. Il campo si annulla in 0,10 s. Qual è la fem media indotta?",
+  "opzioni": {
+   "A": "5,0 V",
+   "B": "0,10 V",
+   "C": "250 V",
+   "D": "0,50 V",
+   "E": "50 V"
+  },
+  "giusta": "A",
+  "perche": "Per la legge di Faraday-Neumann |fem| = N·ΔΦ/Δt. Il flusso per spira passa da B·S = 0,50 T · 0,020 m² = 0,010 Wb a zero, quindi |fem| = 50 · 0,010 Wb / 0,10 s = 5,0 V. Il valore 0,10 V è la fem di una sola spira: dimenticare il numero di spire è l'errore più frequente.",
+  "semplice": "Quando il campo magnetico dentro una bobina cambia, nella bobina nasce una tensione. Più spire ci sono e più rapido è il cambiamento, più alta è la tensione.",
+  "passaggi": [
+   "Dati: N = 50, S = 0,020 m², B da 0,50 T a 0, Δt = 0,10 s",
+   "Flusso iniziale per spira: Φ = B·S = 0,010 Wb",
+   "Formula: |fem| = N·ΔΦ/Δt",
+   "Calcolo: 50 · 0,010 Wb / 0,10 s = 5,0 V"
+  ],
+  "concetto": "legge di Faraday-Neumann"
+ },
+ {
+  "id": "NFMA-052",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Che cosa afferma la legge di Lenz?",
+  "opzioni": {
+   "A": "La fem indotta è proporzionale alla resistenza del circuito",
+   "B": "La corrente indotta ha un verso tale da opporsi alla variazione di flusso magnetico che l'ha generata",
+   "C": "La corrente indotta rafforza sempre il campo magnetico esterno",
+   "D": "Un campo magnetico costante induce una corrente costante",
+   "E": "Le linee del campo magnetico sono chiuse"
+  },
+  "giusta": "B",
+  "perche": "Lenz stabilisce il verso della corrente indotta: essa genera un campo magnetico che si oppone alla variazione di flusso (da qui il segno meno nella legge di Faraday). È una conseguenza della conservazione dell'energia: se la corrente rafforzasse la variazione, si otterrebbe energia dal nulla. Un campo costante non induce alcuna corrente.",
+  "semplice": "Il circuito è «pigro»: se avvicini una calamita, la respinge; se la allontani, cerca di trattenerla. Si oppone sempre al cambiamento.",
+  "passaggi": [
+   "Riconosci che la domanda riguarda il verso della corrente indotta",
+   "Ricorda che la corrente si oppone alla variazione del flusso",
+   "Escludi C (violerebbe la conservazione dell'energia) e D (un flusso costante non induce nulla)",
+   "Resta la B"
+  ],
+  "concetto": "legge di Lenz"
+ },
+ {
+  "id": "NFMA-053",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Un trasformatore ideale ha 1000 spire al primario e 50 al secondario. Se il primario è collegato a 230 V alternati, quale tensione si ottiene al secondario?",
+  "opzioni": {
+   "A": "4600 V",
+   "B": "230 V",
+   "C": "11,5 V",
+   "D": "46 V",
+   "E": "1,15 V"
+  },
+  "giusta": "C",
+  "perche": "In un trasformatore ideale le tensioni stanno nel rapporto delle spire: V₂/V₁ = N₂/N₁, quindi V₂ = 230 V · 50/1000 = 11,5 V. È un trasformatore abbassatore. Il valore 4600 V si ottiene invertendo il rapporto delle spire.",
+  "semplice": "Il trasformatore è come un cambio di marcia per la tensione: meno spire nel secondario significa tensione più bassa, come negli alimentatori dei telefoni.",
+  "passaggi": [
+   "Dati: N₁ = 1000, N₂ = 50, V₁ = 230 V",
+   "Formula: V₂ = V₁·N₂/N₁",
+   "Calcolo: 230 V · 50/1000",
+   "Risultato: V₂ = 11,5 V"
+  ],
+  "concetto": "trasformatore"
+ },
+ {
+  "id": "NFMA-054",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Una stazione radio trasmette in modulazione di frequenza a 100 MHz. Qual è la lunghezza d'onda delle onde emesse? (c = 3,0·10⁸ m/s)",
+  "opzioni": {
+   "A": "30 m",
+   "B": "0,33 m",
+   "C": "300 m",
+   "D": "3,0 m",
+   "E": "3,0 cm"
+  },
+  "giusta": "D",
+  "perche": "Per un'onda elettromagnetica nel vuoto c = λ·f, quindi λ = c/f = 3,0·10⁸ m/s / 1,0·10⁸ Hz = 3,0 m. Il valore 0,33 m è il rapporto inverso f/c; 300 m si ottiene prendendo per errore 100 MHz come 10⁶ Hz.",
+  "semplice": "Tutte le onde elettromagnetiche viaggiano alla stessa velocità: più alta è la frequenza, più corta è l'onda. Le onde della radio FM sono lunghe circa come un'auto.",
+  "passaggi": [
+   "Dati: f = 100 MHz = 1,0·10⁸ Hz, c = 3,0·10⁸ m/s",
+   "Formula: λ = c/f",
+   "Calcolo: 3,0·10⁸ / 1,0·10⁸ m",
+   "Risultato: λ = 3,0 m"
+  ],
+  "concetto": "relazione tra lunghezza d'onda e frequenza"
+ },
+ {
+  "id": "NFMA-055",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sulle onde elettromagnetiche è corretta?",
+  "opzioni": {
+   "A": "Sono onde longitudinali",
+   "B": "Hanno bisogno di un mezzo materiale per propagarsi",
+   "C": "Il campo elettrico e il campo magnetico sono paralleli tra loro",
+   "D": "Nel vuoto la loro velocità dipende dalla frequenza",
+   "E": "Sono onde trasversali in cui campo elettrico e magnetico oscillano perpendicolarmente tra loro e alla direzione di propagazione"
+  },
+  "giusta": "E",
+  "perche": "Le onde elettromagnetiche sono costituite da campi elettrici e magnetici variabili che si generano a vicenda, oscillano perpendicolarmente tra loro e alla direzione di moto (onde trasversali) e si propagano anche nel vuoto, tutte alla stessa velocità c. L'idea che servano un mezzo deriva dal confronto con il suono, che però è un'onda meccanica longitudinale.",
+  "semplice": "La luce del Sole arriva fino a noi attraversando lo spazio vuoto: non le serve aria, a differenza del suono. È fatta di due campi che oscillano di traverso rispetto al percorso.",
+  "passaggi": [
+   "Ricorda che le onde EM si propagano nel vuoto: escludi B",
+   "E e B sono perpendicolari, non paralleli: escludi C",
+   "Sono trasversali: escludi A",
+   "Nel vuoto viaggiano tutte a c: escludi D. Resta la E"
+  ],
+  "concetto": "proprietà delle onde elettromagnetiche"
+ },
+ {
+  "id": "NFMA-056",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Quale sequenza ordina correttamente le radiazioni elettromagnetiche per frequenza crescente?",
+  "opzioni": {
+   "A": "Onde radio, microonde, infrarosso, visibile, ultravioletto, raggi X, raggi gamma",
+   "B": "Raggi gamma, raggi X, ultravioletto, visibile, infrarosso, microonde, onde radio",
+   "C": "Microonde, onde radio, visibile, infrarosso, raggi X, ultravioletto, raggi gamma",
+   "D": "Onde radio, infrarosso, microonde, visibile, raggi X, ultravioletto, raggi gamma",
+   "E": "Visibile, infrarosso, ultravioletto, onde radio, microonde, raggi X, raggi gamma"
+  },
+  "giusta": "A",
+  "perche": "Lo spettro elettromagnetico, a frequenza crescente (e lunghezza d'onda decrescente), va dalle onde radio alle microonde, all'infrarosso, al visibile, all'ultravioletto, ai raggi X e ai raggi gamma. La sequenza B è quella giusta ma rovesciata, cioè per frequenza decrescente: è la distrazione più insidiosa.",
+  "semplice": "Pensa all'energia: le onde radio sono innocue e attraversano i muri, i raggi X e gamma sono molto energetici e pericolosi. Più energia significa frequenza più alta.",
+  "passaggi": [
+   "Ricorda che frequenza ed energia crescono insieme",
+   "Parti dalle meno energetiche: onde radio e microonde",
+   "Poi infrarosso, visibile, ultravioletto",
+   "Infine raggi X e gamma: è la A (la B è al contrario)"
+  ],
+  "concetto": "spettro elettromagnetico"
+ },
+ {
+  "id": "NFMA-057",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Una sbarretta conduttrice lunga 0,50 m si muove a 4,0 m/s perpendicolarmente a un campo magnetico uniforme di 0,20 T, scorrendo su due binari conduttori. Quanto vale la fem indotta?",
+  "opzioni": {
+   "A": "4,0 V",
+   "B": "0,40 V",
+   "C": "0,025 V",
+   "D": "10 V",
+   "E": "1,6 V"
+  },
+  "giusta": "B",
+  "perche": "La fem cinetica di un conduttore in moto perpendicolare al campo è fem = B·l·v = 0,20 T · 0,50 m · 4,0 m/s = 0,40 V. Si può ricavare anche da Faraday: l'area del circuito cresce di l·v ogni secondo, quindi il flusso aumenta di B·l·v. Il valore 1,6 V si ottiene dimenticando la lunghezza della sbarretta.",
+  "semplice": "Muovendo un pezzo di metallo dentro un campo magnetico gli elettroni vengono spinti da un lato e nasce una piccola tensione: è il principio delle dinamo.",
+  "passaggi": [
+   "Dati: l = 0,50 m, v = 4,0 m/s, B = 0,20 T",
+   "Formula: fem = B·l·v",
+   "Calcolo: 0,20 T · 0,50 m · 4,0 m/s",
+   "Risultato: fem = 0,40 V"
+  ],
+  "concetto": "fem cinetica"
+ },
+ {
+  "id": "NFMA-058",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Perché un trasformatore non funziona se il primario viene collegato a una batteria (corrente continua)?",
+  "opzioni": {
+   "A": "Perché la corrente continua è troppo intensa",
+   "B": "Perché le spire si surriscaldano subito",
+   "C": "Perché una corrente costante produce un flusso magnetico costante, che non induce fem nel secondario",
+   "D": "Perché il nucleo di ferro non si magnetizza con la corrente continua",
+   "E": "Perché la corrente continua scorre solo in superficie"
+  },
+  "giusta": "C",
+  "perche": "L'induzione elettromagnetica richiede una variazione del flusso concatenato. Con corrente continua, dopo il transitorio iniziale, il flusso nel nucleo è costante e nel secondario non si induce alcuna fem. Il nucleo di ferro si magnetizza anche in continua, quindi D è falsa.",
+  "semplice": "Il trasformatore passa energia da una bobina all'altra solo se il campo magnetico cambia continuamente. La corrente di una batteria non cambia, quindi il secondario resta muto.",
+  "passaggi": [
+   "Ricorda che serve un flusso variabile per indurre fem",
+   "La corrente continua genera un flusso costante",
+   "Quindi nel secondario non c'è tensione indotta",
+   "Escludi D: il ferro si magnetizza comunque. Resta la C"
+  ],
+  "concetto": "induzione e corrente alternata"
+ },
+ {
+  "id": "NFMA-059",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "La tensione di rete ha un valore di picco di circa 325 V. Qual è il suo valore efficace?",
+  "opzioni": {
+   "A": "162 V",
+   "B": "460 V",
+   "C": "325 V",
+   "D": "230 V",
+   "E": "110 V"
+  },
+  "giusta": "D",
+  "perche": "Per una tensione sinusoidale il valore efficace è V_eff = V₀/√2 = 325 V / 1,414 ≈ 230 V: è la tensione continua che dissiperebbe la stessa potenza media in un resistore. Il valore 460 V si ottiene moltiplicando per √2 invece di dividere; 162 V dividendo per 2.",
+  "semplice": "La tensione di casa sale e scende 50 volte al secondo fino a 325 V, ma in media «scalda» come 230 V costanti: per questo si dice che la rete è a 230 V.",
+  "passaggi": [
+   "Dati: V₀ = 325 V",
+   "Formula: V_eff = V₀/√2",
+   "Calcolo: 325 V / 1,414",
+   "Risultato: V_eff ≈ 230 V"
+  ],
+  "concetto": "valore efficace della corrente alternata"
+ },
+ {
+  "id": "NFMA-060",
+  "materia": "Fisica",
+  "argomento": "Induzione elettromagnetica e onde elettromagnetiche",
+  "livello": "superiori",
+  "domanda": "Qual è la frequenza di una luce verde con lunghezza d'onda 500 nm nel vuoto? (c = 3,0·10⁸ m/s)",
+  "opzioni": {
+   "A": "1,5·10² Hz",
+   "B": "1,7·10⁻¹⁵ Hz",
+   "C": "6,0·10¹¹ Hz",
+   "D": "1,5·10¹⁷ Hz",
+   "E": "6,0·10¹⁴ Hz"
+  },
+  "giusta": "E",
+  "perche": "Da c = λ·f si ricava f = c/λ. Convertendo λ in metri (500 nm = 5,0·10⁻⁷ m): f = 3,0·10⁸ / 5,0·10⁻⁷ = 6,0·10¹⁴ Hz. Il valore 6,0·10¹¹ Hz deriva da un errore di conversione dei nanometri (10⁻⁹ m); 1,5·10¹⁷ Hz dal moltiplicare invece di dividere.",
+  "semplice": "La luce visibile oscilla in modo incredibilmente rapido: centinaia di migliaia di miliardi di volte al secondo.",
+  "passaggi": [
+   "Dati: λ = 500 nm = 5,0·10⁻⁷ m, c = 3,0·10⁸ m/s",
+   "Formula: f = c/λ",
+   "Calcolo: 3,0·10⁸ / 5,0·10⁻⁷ Hz",
+   "Risultato: f = 6,0·10¹⁴ Hz"
+  ],
+  "concetto": "frequenza della luce visibile"
+ },
+ {
+  "id": "NFMA-061",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Quali sono i due postulati della relatività ristretta?",
+  "opzioni": {
+   "A": "Le leggi della fisica sono le stesse in tutti i sistemi inerziali; la velocità della luce nel vuoto è la stessa per tutti gli osservatori inerziali",
+   "B": "Il tempo è assoluto; lo spazio è relativo",
+   "C": "La massa si conserva; l'energia si conserva",
+   "D": "Esiste un etere immobile; la luce si propaga in esso a velocità c",
+   "E": "Le velocità si sommano sempre; la luce ha velocità infinita"
+  },
+  "giusta": "A",
+  "perche": "La relatività ristretta si fonda sul principio di relatività (le leggi fisiche hanno la stessa forma in ogni sistema inerziale) e sulla costanza della velocità della luce nel vuoto, indipendente dal moto della sorgente e dell'osservatore. Da questi due postulati discendono dilatazione dei tempi e contrazione delle lunghezze. L'etere è proprio l'ipotesi che la teoria abbandona.",
+  "semplice": "Chiunque si muova a velocità costante vede le stesse leggi della fisica, e tutti misurano la stessa velocità per la luce, anche se le corrono dietro.",
+  "passaggi": [
+   "Ricorda che la teoria nasce da due ipotesi di base",
+   "La prima estende il principio di relatività a tutta la fisica",
+   "La seconda riguarda la costanza di c",
+   "Escludi D: l'etere viene abbandonato. Resta la A"
+  ],
+  "concetto": "postulati della relatività ristretta"
+ },
+ {
+  "id": "NFMA-062",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Un'astronave viaggia a 0,60c rispetto alla Terra. Un orologio a bordo misura un intervallo di 8,0 s tra due eventi che avvengono nello stesso punto dell'astronave. Quanto dura lo stesso intervallo per un osservatore terrestre?",
+  "opzioni": {
+   "A": "6,4 s",
+   "B": "10 s",
+   "C": "8,0 s",
+   "D": "4,8 s",
+   "E": "13 s"
+  },
+  "giusta": "B",
+  "perche": "Il fattore di Lorentz vale γ = 1/√(1 − v²/c²) = 1/√(1 − 0,36) = 1/0,80 = 1,25. L'intervallo di tempo proprio (8,0 s) è il più breve; per l'osservatore terrestre Δt = γ·Δt₀ = 1,25 · 8,0 s = 10 s. Il valore 6,4 s si ottiene dividendo per γ, scambiando tempo proprio e tempo dilatato.",
+  "semplice": "Per chi sta a terra gli orologi dell'astronave vanno più piano: mentre a bordo passano 8 secondi, sulla Terra ne passano 10.",
+  "passaggi": [
+   "Dati: v = 0,60c, Δt₀ = 8,0 s (tempo proprio)",
+   "Fattore di Lorentz: γ = 1/√(1 − 0,60²) = 1/0,80 = 1,25",
+   "Formula: Δt = γ·Δt₀",
+   "Calcolo: 1,25 · 8,0 s = 10 s"
+  ],
+  "concetto": "dilatazione dei tempi"
+ },
+ {
+  "id": "NFMA-063",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Un'astronave lunga 100 m a riposo passa davanti a un osservatore alla velocità di 0,80c. Che lunghezza misura l'osservatore?",
+  "opzioni": {
+   "A": "100 m",
+   "B": "167 m",
+   "C": "60 m",
+   "D": "80 m",
+   "E": "36 m"
+  },
+  "giusta": "C",
+  "perche": "Con v = 0,80c il fattore di Lorentz è γ = 1/√(1 − 0,64) = 1/0,60 ≈ 1,67. La lunghezza propria si contrae nella direzione del moto: L = L₀/γ = 100 m · 0,60 = 60 m. Il valore 167 m si ottiene moltiplicando per γ; 36 m usando 1 − v²/c² senza radice.",
+  "semplice": "Un oggetto che sfreccia vicino alla velocità della luce appare più corto nel senso del moto. A 0,8c una nave da 100 m sembra lunga solo 60 m.",
+  "passaggi": [
+   "Dati: L₀ = 100 m, v = 0,80c",
+   "Fattore: √(1 − v²/c²) = √(1 − 0,64) = 0,60",
+   "Formula: L = L₀·√(1 − v²/c²)",
+   "Calcolo: 100 m · 0,60 = 60 m"
+  ],
+  "concetto": "contrazione delle lunghezze"
+ },
+ {
+  "id": "NFMA-064",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Quanta energia corrisponde, secondo la relazione E = mc², alla massa di 1,0 g? (c = 3,0·10⁸ m/s)",
+  "opzioni": {
+   "A": "3,0·10⁵ J",
+   "B": "9,0·10¹⁶ J",
+   "C": "3,0·10⁸ J",
+   "D": "9,0·10¹³ J",
+   "E": "9,0·10¹⁰ J"
+  },
+  "giusta": "D",
+  "perche": "Convertendo la massa in kilogrammi (1,0 g = 1,0·10⁻³ kg): E = 1,0·10⁻³ kg · (3,0·10⁸ m/s)² = 1,0·10⁻³ · 9,0·10¹⁶ J = 9,0·10¹³ J. Il valore 9,0·10¹⁶ J corrisponde a 1 kg: è l'errore di chi non converte i grammi. Si tratta di un'energia enorme, paragonabile a quella di una grande esplosione.",
+  "semplice": "Anche una piccolissima quantità di massa racchiude un'energia gigantesca, perché va moltiplicata per la velocità della luce al quadrato. Un grammo basterebbe per l'elettricità di una città per giorni.",
+  "passaggi": [
+   "Dati: m = 1,0 g = 1,0·10⁻³ kg, c = 3,0·10⁸ m/s",
+   "Formula: E = m·c²",
+   "Calcolo: 1,0·10⁻³ kg · 9,0·10¹⁶ m²/s²",
+   "Risultato: E = 9,0·10¹³ J"
+  ],
+  "concetto": "equivalenza massa-energia"
+ },
+ {
+  "id": "NFMA-065",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "I muoni prodotti nell'alta atmosfera vivono in media circa 2,2 μs nel loro sistema di riferimento, eppure molti raggiungono il suolo dopo aver percorso decine di chilometri. Perché?",
+  "opzioni": {
+   "A": "Perché viaggiano più veloci della luce",
+   "B": "Perché la gravità terrestre li accelera",
+   "C": "Perché il loro tempo di vita non dipende dal sistema di riferimento",
+   "D": "Perché l'atmosfera rallenta il loro decadimento",
+   "E": "Perché nel sistema terrestre la loro vita media è dilatata dal fattore γ, molto maggiore di 1"
+  },
+  "giusta": "E",
+  "perche": "Con 2,2 μs anche alla velocità della luce si percorrerebbero solo circa 660 m. I muoni però viaggiano quasi a c, e per un osservatore terrestre la loro vita media è γ volte più lunga; nel sistema del muone, equivalentemente, è lo spessore dell'atmosfera a contrarsi. Nessuna particella supera la velocità della luce.",
+  "semplice": "I muoni hanno un «orologio interno» che, visto da terra, rallenta tantissimo perché vanno quasi alla velocità della luce: così vivono abbastanza per arrivare fino a noi.",
+  "passaggi": [
+   "Calcola la distanza senza relatività: 3·10⁸ m/s · 2,2·10⁻⁶ s ≈ 660 m",
+   "Riconosci che non basta per decine di chilometri",
+   "La dilatazione dei tempi allunga la vita media vista da terra",
+   "Escludi A: nulla supera c. Resta la E"
+  ],
+  "concetto": "verifica sperimentale della dilatazione dei tempi"
+ },
+ {
+  "id": "NFMA-066",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Un'astronave che viaggia a 0,50c rispetto alla Terra accende un faro verso la direzione del moto. Con quale velocità un osservatore terrestre vede propagarsi la luce del faro?",
+  "opzioni": {
+   "A": "c",
+   "B": "1,5c",
+   "C": "0,50c",
+   "D": "1,25c",
+   "E": "0,75c"
+  },
+  "giusta": "A",
+  "perche": "Per il secondo postulato la velocità della luce nel vuoto è la stessa per tutti gli osservatori inerziali, indipendentemente dal moto della sorgente. Anche la legge relativistica di composizione delle velocità lo conferma: (c + 0,5c)/(1 + 0,5c·c/c²) = 1,5c/1,5 = c. La somma galileiana 1,5c è l'errore classico.",
+  "semplice": "Comunque si muova la sorgente, la luce arriva sempre alla stessa velocità. Non si può «lanciare» la luce più forte correndo.",
+  "passaggi": [
+   "Ricorda il secondo postulato: c è uguale per tutti",
+   "Verifica con la composizione relativistica: (c + 0,5c)/(1 + 0,5) = c",
+   "Escludi 1,5c: è la somma galileiana",
+   "Resta la A"
+  ],
+  "concetto": "costanza della velocità della luce"
+ },
+ {
+  "id": "NFMA-067",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Due navicelle si allontanano da una stazione spaziale in versi opposti, ciascuna a 0,50c rispetto alla stazione. Qual è la velocità di una navicella misurata dall'altra?",
+  "opzioni": {
+   "A": "1,0c",
+   "B": "0,80c",
+   "C": "0,50c",
+   "D": "0,75c",
+   "E": "0,94c"
+  },
+  "giusta": "B",
+  "perche": "Le velocità non si sommano in modo galileiano: la formula relativistica è u = (u₁ + u₂)/(1 + u₁u₂/c²) = (0,50c + 0,50c)/(1 + 0,25) = 1,0c/1,25 = 0,80c. Il risultato 1,0c sarebbe quello classico, ma nessun corpo materiale può raggiungere la velocità della luce rispetto a un altro.",
+  "semplice": "A velocità altissime le velocità non si sommano più semplicemente: metà più metà della velocità della luce non fa la velocità della luce, ma l'80%.",
+  "passaggi": [
+   "Dati: u₁ = 0,50c, u₂ = 0,50c",
+   "Formula: u = (u₁ + u₂)/(1 + u₁·u₂/c²)",
+   "Calcolo: 1,0c / (1 + 0,25) = 1,0c / 1,25",
+   "Risultato: u = 0,80c"
+  ],
+  "concetto": "composizione relativistica delle velocità"
+ },
+ {
+  "id": "NFMA-068",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Che cosa afferma la relatività della simultaneità?",
+  "opzioni": {
+   "A": "Due eventi simultanei per un osservatore lo sono per tutti",
+   "B": "Gli eventi simultanei avvengono sempre nello stesso luogo",
+   "C": "Due eventi in luoghi diversi, simultanei per un osservatore, possono non esserlo per un altro in moto rispetto al primo",
+   "D": "Il tempo scorre allo stesso modo per tutti",
+   "E": "La simultaneità dipende dalla massa degli osservatori"
+  },
+  "giusta": "C",
+  "perche": "Poiché la luce ha la stessa velocità in tutti i sistemi inerziali, due eventi distanti che un osservatore giudica simultanei possono apparire in successione a un osservatore in moto relativo. La simultaneità di eventi in luoghi diversi non è quindi assoluta. Per eventi nello stesso punto la simultaneità invece si conserva.",
+  "semplice": "Due lampi che per chi sta sulla banchina partono insieme, per chi è su un treno velocissimo possono arrivare uno prima dell'altro. «Allo stesso momento» dipende da chi guarda.",
+  "passaggi": [
+   "Ricorda che c è uguale per tutti gli osservatori",
+   "Ne segue che il giudizio di simultaneità dipende dal sistema",
+   "Escludi A e D, che esprimono il tempo assoluto di Newton",
+   "Resta la C"
+  ],
+  "concetto": "relatività della simultaneità"
+ },
+ {
+  "id": "NFMA-069",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Una particella si muove a 0,80c. A quale frazione della sua energia a riposo mc² è pari la sua energia cinetica relativistica?",
+  "opzioni": {
+   "A": "0,32",
+   "B": "0,80",
+   "C": "1,67",
+   "D": "0,67",
+   "E": "0,40"
+  },
+  "giusta": "D",
+  "perche": "L'energia cinetica relativistica è K = (γ − 1)·mc². Con v = 0,80c si ha γ = 1/0,60 ≈ 1,67, quindi K ≈ 0,67·mc². Il valore 0,32 è quello della formula classica ½mv² = ½ · 0,64 · mc², che a queste velocità sottostima molto l'energia; 1,67 è l'energia totale, non quella cinetica.",
+  "semplice": "Vicino alla velocità della luce accelerare costa sempre di più: l'energia di movimento cresce molto più di quanto prevede la formula di tutti i giorni.",
+  "passaggi": [
+   "Dati: v = 0,80c",
+   "Fattore di Lorentz: γ = 1/√(1 − 0,64) = 1/0,60 ≈ 1,67",
+   "Formula: K = (γ − 1)·mc²",
+   "Calcolo: K = 0,67·mc²; il valore classico 0,32 è sbagliato"
+  ],
+  "concetto": "energia cinetica relativistica"
+ },
+ {
+  "id": "NFMA-070",
+  "materia": "Fisica",
+  "argomento": "Relatività ristretta",
+  "livello": "superiori",
+  "domanda": "Perché, secondo la relatività ristretta, un corpo dotato di massa non può raggiungere la velocità della luce?",
+  "opzioni": {
+   "A": "Perché l'attrito con il vuoto lo impedisce",
+   "B": "Perché la sua massa a riposo si annullerebbe",
+   "C": "Perché il tempo si fermerebbe nel sistema dell'osservatore",
+   "D": "Perché la luce lo respingerebbe",
+   "E": "Perché il fattore γ tenderebbe all'infinito e servirebbe un'energia infinita"
+  },
+  "giusta": "E",
+  "perche": "L'energia di un corpo è E = γ·mc² e γ = 1/√(1 − v²/c²) cresce senza limite quando v si avvicina a c. Per portare un corpo dotato di massa fino a c servirebbe dunque un lavoro infinito. Solo particelle senza massa, come i fotoni, viaggiano a c.",
+  "semplice": "Più un corpo va veloce, più diventa difficile accelerarlo ancora: avvicinandosi alla velocità della luce servirebbe una spinta infinita.",
+  "passaggi": [
+   "Scrivi l'energia totale: E = γ·mc²",
+   "Osserva che γ → ∞ quando v → c",
+   "Quindi l'energia necessaria sarebbe infinita",
+   "Resta la E"
+  ],
+  "concetto": "limite della velocità della luce"
+ },
+ {
+  "id": "NFMA-071",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Qual è l'energia di un fotone di frequenza 5,0·10¹⁴ Hz? (h = 6,63·10⁻³⁴ J·s)",
+  "opzioni": {
+   "A": "3,3·10⁻¹⁹ J",
+   "B": "1,3·10⁻⁴⁸ J",
+   "C": "7,5·10⁴⁷ J",
+   "D": "3,3·10⁻¹⁶ J",
+   "E": "6,6·10⁻³⁴ J"
+  },
+  "giusta": "A",
+  "perche": "L'energia di un fotone è E = h·f = 6,63·10⁻³⁴ J·s · 5,0·10¹⁴ Hz ≈ 3,3·10⁻¹⁹ J, circa 2 eV, tipica della luce visibile. Il valore 1,3·10⁻⁴⁸ J si ottiene dividendo h per f; 6,6·10⁻³⁴ J è la sola costante di Planck.",
+  "semplice": "La luce arriva a pacchetti, i fotoni. Ognuno porta un'energia piccolissima, proporzionale al colore: la luce blu ha pacchetti più energetici della rossa.",
+  "passaggi": [
+   "Dati: f = 5,0·10¹⁴ Hz, h = 6,63·10⁻³⁴ J·s",
+   "Formula: E = h·f",
+   "Calcolo: 6,63·10⁻³⁴ · 5,0·10¹⁴ J",
+   "Risultato: E ≈ 3,3·10⁻¹⁹ J"
+  ],
+  "concetto": "energia del fotone"
+ },
+ {
+  "id": "NFMA-072",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Un metallo illuminato con luce rossa non emette elettroni. Che cosa succede se si aumenta molto l'intensità della stessa luce rossa?",
+  "opzioni": {
+   "A": "Gli elettroni vengono emessi dopo un certo tempo di accumulo",
+   "B": "Non vengono emessi elettroni, perché ogni fotone ha energia minore del lavoro di estrazione",
+   "C": "Vengono emessi elettroni più veloci",
+   "D": "Vengono emessi elettroni solo se il metallo si scalda",
+   "E": "Il metallo emette fotoni blu"
+  },
+  "giusta": "B",
+  "perche": "Nell'effetto fotoelettrico ogni elettrone assorbe un singolo fotone, la cui energia h·f dipende solo dalla frequenza. Se h·f è minore del lavoro di estrazione, nessun elettrone esce, qualunque sia l'intensità: aumentarla significa solo più fotoni, ciascuno insufficiente. L'idea dell'accumulo nel tempo era la previsione classica smentita dagli esperimenti.",
+  "semplice": "È come cercare di scavalcare un muro alto con tanti piccoli salti: non importa quante volte salti, se ogni salto è troppo basso non passi mai.",
+  "passaggi": [
+   "Ricorda che un elettrone assorbe un fotone alla volta",
+   "L'energia del fotone dipende dalla frequenza, non dall'intensità",
+   "Sotto la frequenza di soglia nessun elettrone esce",
+   "Escludi A (previsione classica smentita): resta la B"
+  ],
+  "concetto": "frequenza di soglia nell'effetto fotoelettrico"
+ },
+ {
+  "id": "NFMA-073",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Fotoni da 4,0 eV colpiscono un metallo con lavoro di estrazione 2,3 eV. Qual è l'energia cinetica massima degli elettroni emessi?",
+  "opzioni": {
+   "A": "6,3 eV",
+   "B": "2,3 eV",
+   "C": "1,7 eV",
+   "D": "4,0 eV",
+   "E": "0,58 eV"
+  },
+  "giusta": "C",
+  "perche": "Per l'equazione di Einstein dell'effetto fotoelettrico K_max = h·f − W = 4,0 eV − 2,3 eV = 1,7 eV. L'energia del fotone serve prima a liberare l'elettrone e il resto diventa energia cinetica. Il valore 6,3 eV somma invece di sottrarre.",
+  "semplice": "Il fotone «paga» prima il biglietto d'uscita dell'elettrone (2,3 eV) e il resto glielo dà come velocità (1,7 eV).",
+  "passaggi": [
+   "Dati: E_fotone = 4,0 eV, W = 2,3 eV",
+   "Formula: K_max = h·f − W",
+   "Calcolo: 4,0 eV − 2,3 eV",
+   "Risultato: K_max = 1,7 eV"
+  ],
+  "concetto": "equazione di Einstein dell'effetto fotoelettrico"
+ },
+ {
+  "id": "NFMA-074",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Qual è la lunghezza d'onda di de Broglie di un elettrone (m = 9,11·10⁻³¹ kg) che si muove a 1,0·10⁶ m/s? (h = 6,63·10⁻³⁴ J·s)",
+  "opzioni": {
+   "A": "6,0·10⁻²⁸ m",
+   "B": "1,4·10⁹ m",
+   "C": "7,3·10⁻⁴ m",
+   "D": "7,3·10⁻¹⁰ m",
+   "E": "3,0·10⁻⁷ m"
+  },
+  "giusta": "D",
+  "perche": "La lunghezza d'onda di de Broglie è λ = h/p = h/(m·v). La quantità di moto vale 9,11·10⁻³¹ kg · 1,0·10⁶ m/s = 9,11·10⁻²⁵ kg·m/s, quindi λ = 6,63·10⁻³⁴ / 9,11·10⁻²⁵ ≈ 7,3·10⁻¹⁰ m, confrontabile con le distanze tra gli atomi in un cristallo. Per questo gli elettroni danno diffrazione sui cristalli.",
+  "semplice": "Anche gli elettroni si comportano come onde. La loro «onda» è lunga quanto la distanza tra gli atomi, quindi i cristalli li deviano come un reticolo devia la luce.",
+  "passaggi": [
+   "Dati: m = 9,11·10⁻³¹ kg, v = 1,0·10⁶ m/s, h = 6,63·10⁻³⁴ J·s",
+   "Formula: λ = h/(m·v)",
+   "Quantità di moto: p = 9,11·10⁻²⁵ kg·m/s",
+   "Calcolo: λ = 6,63·10⁻³⁴ / 9,11·10⁻²⁵ m ≈ 7,3·10⁻¹⁰ m"
+  ],
+  "concetto": "lunghezza d'onda di de Broglie"
+ },
+ {
+  "id": "NFMA-075",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Che cosa afferma il principio di indeterminazione di Heisenberg per posizione e quantità di moto?",
+  "opzioni": {
+   "A": "Gli strumenti di misura non sono mai abbastanza precisi",
+   "B": "La posizione di una particella non si può misurare",
+   "C": "L'energia di una particella è sempre indeterminata",
+   "D": "La quantità di moto di un elettrone è sempre nulla",
+   "E": "Il prodotto delle incertezze su posizione e quantità di moto non può essere minore di h/(4π)"
+  },
+  "giusta": "E",
+  "perche": "Il principio afferma che Δx·Δp ≥ h/(4π): più si conosce con precisione la posizione, meno si può conoscere la quantità di moto, e viceversa. Non è un limite tecnico degli strumenti (errore molto comune), ma una proprietà intrinseca della natura ondulatoria della materia. Ciascuna grandezza, presa da sola, si può misurare con precisione.",
+  "semplice": "Per un elettrone non si può sapere insieme e con esattezza dove si trova e quanto veloce va: più stringi una delle due informazioni, più l'altra si allarga.",
+  "passaggi": [
+   "Ricorda la relazione Δx·Δp ≥ h/(4π)",
+   "Il limite riguarda il prodotto delle incertezze, non una singola misura: escludi B",
+   "Non dipende dagli strumenti: escludi A",
+   "Resta la E"
+  ],
+  "concetto": "principio di indeterminazione"
+ },
+ {
+  "id": "NFMA-076",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Nell'atomo di idrogeno di Bohr i livelli energetici sono E_n = −13,6 eV/n². Quale energia ha il fotone emesso nella transizione da n = 2 a n = 1?",
+  "opzioni": {
+   "A": "10,2 eV",
+   "B": "13,6 eV",
+   "C": "3,4 eV",
+   "D": "6,8 eV",
+   "E": "17,0 eV"
+  },
+  "giusta": "A",
+  "perche": "L'energia del fotone è la differenza tra i livelli: E₂ = −13,6/4 = −3,4 eV ed E₁ = −13,6 eV, quindi ΔE = −3,4 − (−13,6) = 10,2 eV, nell'ultravioletto (prima riga della serie di Lyman). Il valore 3,4 eV è solo il modulo di E₂; 13,6 eV è l'energia di ionizzazione dallo stato fondamentale.",
+  "semplice": "L'elettrone scende come da un gradino all'altro di una scala e l'energia in eccesso esce come luce. Il salto dal secondo al primo gradino vale 10,2 eV.",
+  "passaggi": [
+   "Dati: E_n = −13,6 eV/n², transizione 2 → 1",
+   "Calcola E₂ = −13,6/4 = −3,4 eV ed E₁ = −13,6 eV",
+   "Formula: E_fotone = E₂ − E₁",
+   "Risultato: −3,4 − (−13,6) = 10,2 eV"
+  ],
+  "concetto": "livelli energetici dell'atomo di Bohr"
+ },
+ {
+  "id": "NFMA-077",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Quale ipotesi introdusse Planck per spiegare lo spettro del corpo nero?",
+  "opzioni": {
+   "A": "La luce è composta da onde longitudinali",
+   "B": "L'energia scambiata tra materia e radiazione è quantizzata in multipli di h·f",
+   "C": "Gli elettroni orbitano su traiettorie ellittiche",
+   "D": "La velocità della luce dipende dalla temperatura",
+   "E": "Il corpo nero assorbe solo la luce visibile"
+  },
+  "giusta": "B",
+  "perche": "Planck ipotizzò che gli oscillatori delle pareti del corpo nero potessero scambiare energia solo in pacchetti E = h·f. Con questa ipotesi la sua legge riproduce lo spettro misurato ed elimina la «catastrofe ultravioletta» prevista dalla fisica classica. Le orbite quantizzate dell'elettrone sono invece un'idea successiva di Bohr.",
+  "semplice": "Planck capì che l'energia non si scambia in modo continuo, come l'acqua da un rubinetto, ma a pacchetti, come monete: è l'inizio della fisica quantistica.",
+  "passaggi": [
+   "Riconosci il problema: lo spettro del corpo nero",
+   "La fisica classica prevedeva energia infinita nell'ultravioletto",
+   "Planck introdusse lo scambio di energia in quanti h·f",
+   "Escludi C (modello di Bohr): resta la B"
+  ],
+  "concetto": "quantizzazione dell'energia di Planck"
+ },
+ {
+  "id": "NFMA-078",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "La superficie del Sole ha una temperatura di circa 5800 K. Secondo la legge di Wien (λ_max·T = 2,9·10⁻³ m·K), a quale lunghezza d'onda ha il massimo di emissione?",
+  "opzioni": {
+   "A": "5,0 μm",
+   "B": "1,7·10⁷ m",
+   "C": "500 nm",
+   "D": "2,0 nm",
+   "E": "50 nm"
+  },
+  "giusta": "C",
+  "perche": "Dalla legge di Wien λ_max = 2,9·10⁻³ m·K / 5800 K = 5,0·10⁻⁷ m = 500 nm, nel visibile (verde-azzurro). Un corpo più caldo ha il picco a lunghezze d'onda minori. Il valore 5,0 μm è dieci volte più grande, tipico di corpi molto più freddi; 1,7·10⁷ m si ottiene moltiplicando invece di dividere.",
+  "semplice": "Più un oggetto è caldo, più la sua luce si sposta verso il blu: il ferro scaldato diventa prima rosso e poi bianco. Il Sole emette soprattutto nel visibile.",
+  "passaggi": [
+   "Dati: T = 5800 K, costante di Wien 2,9·10⁻³ m·K",
+   "Formula: λ_max = 2,9·10⁻³ / T",
+   "Calcolo: 2,9·10⁻³ / 5800 = 5,0·10⁻⁷ m",
+   "Risultato: λ_max = 500 nm"
+  ],
+  "concetto": "legge di Wien"
+ },
+ {
+  "id": "NFMA-079",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Quale esperimento mostrò che anche gli elettroni hanno un comportamento ondulatorio?",
+  "opzioni": {
+   "A": "L'esperimento di Rutherford con le particelle alfa",
+   "B": "L'esperimento di Millikan con le gocce d'olio",
+   "C": "L'esperimento di Michelson e Morley",
+   "D": "La diffrazione di elettroni da parte di un cristallo (Davisson e Germer)",
+   "E": "L'effetto fotoelettrico"
+  },
+  "giusta": "D",
+  "perche": "Davisson e Germer osservarono figure di diffrazione inviando elettroni su un cristallo di nichel, con angoli in accordo con la lunghezza d'onda di de Broglie: la diffrazione è un fenomeno tipicamente ondulatorio. L'effetto fotoelettrico mostra invece la natura corpuscolare della luce, quindi è la distrazione più insidiosa.",
+  "semplice": "Se lanci elettroni su un cristallo, questi si dispongono a frange come fa la luce: solo le onde si comportano così.",
+  "passaggi": [
+   "Riconosci che serve un fenomeno ondulatorio: diffrazione o interferenza",
+   "Gli elettroni diffratti da un cristallo mostrano proprio questo",
+   "Escludi E: riguarda la natura corpuscolare della luce",
+   "Resta la D"
+  ],
+  "concetto": "dualismo onda-particella della materia"
+ },
+ {
+  "id": "NFMA-080",
+  "materia": "Fisica",
+  "argomento": "Fisica quantistica",
+  "livello": "superiori",
+  "domanda": "Nell'effetto Compton un fotone di raggi X diffuso da un elettrone ha una lunghezza d'onda maggiore di quella iniziale. Che cosa dimostra questo fenomeno?",
+  "opzioni": {
+   "A": "Che la luce si propaga solo come onda",
+   "B": "Che gli elettroni non hanno massa",
+   "C": "Che la velocità della luce diminuisce nella materia",
+   "D": "Che i raggi X non trasportano energia",
+   "E": "Che il fotone si comporta come una particella dotata di quantità di moto, che urta l'elettrone cedendogli energia"
+  },
+  "giusta": "E",
+  "perche": "L'aumento della lunghezza d'onda dipende dall'angolo di diffusione secondo la formula di Compton, ricavata trattando l'interazione come un urto tra un fotone con quantità di moto p = h/λ e un elettrone. Il fotone cede parte della sua energia, quindi la sua frequenza diminuisce e λ aumenta. Un modello solo ondulatorio non prevede questo spostamento.",
+  "semplice": "È come una partita a biliardo: il fotone urta l'elettrone, gli passa un po' di energia e se ne va più «stanco», cioè con lunghezza d'onda maggiore.",
+  "passaggi": [
+   "Riconosci che la lunghezza d'onda cambia dopo l'urto",
+   "Un fotone che perde energia ha frequenza minore e λ maggiore",
+   "Il fenomeno si spiega solo come urto tra particelle",
+   "Resta la E"
+  ],
+  "concetto": "effetto Compton"
+ }
+]

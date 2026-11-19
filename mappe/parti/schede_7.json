@@ -1,0 +1,1157 @@
+{
+ "origine di replicazione": {
+  "tipo": "struttura",
+  "base": "Il punto del «libro di istruzioni» da cui la cellula comincia a fotocopiarlo.",
+  "superiore": "Sequenza di DNA da cui parte la replicazione. I cromosomi degli eucarioti ne hanno moltissime, così il DNA si copia in tanti punti insieme; il cromosoma circolare dei batteri ne ha una sola.",
+  "universita": "Nei batteri l'origine (oriC) è riconosciuta da DnaA. Negli eucarioti è legata dal complesso ORC; nei mammiferi le origini non hanno una sequenza fissa e dipendono dalla cromatina. Solo una parte delle origini autorizzate in G1 viene davvero attivata in S; le altre fanno da riserva se una forcella si blocca.",
+  "clinica": ""
+ },
+ "complesso di pre-replicazione": {
+  "tipo": "struttura",
+  "base": "La macchina della fotocopia montata sul punto di partenza, ancora spenta.",
+  "superiore": "Insieme di proteine che si monta sulle origini in G1 (ORC, Cdc6, Cdt1 ed elicasi MCM): l'origine è «autorizzata» a partire nella fase S.",
+  "universita": "Il caricamento delle MCM (doppio esamero inattivo attorno al DNA a doppio filamento) avviene solo quando l'attività delle CDK è bassa (fine M e G1). Nelle fasi S, G2 e M le CDK fosforilano Cdc6 e ORC e la geminina blocca Cdt1: nessuna nuova autorizzazione. È il meccanismo che garantisce una sola replicazione per ciclo.",
+  "clinica": ""
+ },
+ "ORC, Cdc6 e Cdt1": {
+  "tipo": "enzima",
+  "base": "Le proteine che preparano il punto di partenza della fotocopia.",
+  "superiore": "ORC (complesso di riconoscimento dell'origine) si lega all'origine; Cdc6 e Cdt1 lo aiutano a caricare l'elicasi MCM sul DNA.",
+  "universita": "ORC (sei subunità, Orc1-6) e Cdc6 sono ATPasi della famiglia AAA+: l'idrolisi di ATP serve a caricare gli anelli MCM. Cdt1 accompagna le MCM; nella fase S Cdt1 è inibita dalla geminina e degradata.",
+  "clinica": "Mutazioni di ORC1, ORC4, ORC6, CDT1 o CDC6 causano la sindrome di Meier-Gorlin (bassa statura, microtia, rotule piccole o assenti)."
+ },
+ "elicasi MCM": {
+  "tipo": "enzima",
+  "base": "La «cerniera lampo» che aprirà il DNA, ancora chiusa.",
+  "superiore": "Elicasi: enzima che separa i due filamenti del DNA usando ATP. Le MCM vengono caricate sulle origini in G1 ma restano spente fino alla fase S.",
+  "universita": "Complesso esamerico ad anello (Mcm2-7), ATPasi AAA+. Caricato come doppio esamero sul DNA a doppio filamento; attivato in S dalle chinasi DDK e CDK, che reclutano Cdc45 e GINS formando l'elicasi CMG. Si muove 3'→5' sul filamento guida.",
+  "clinica": "Le proteine MCM (es. MCM2) sono usate in istopatologia come marcatori di proliferazione, come Ki-67."
+ },
+ "forcella di replicazione": {
+  "tipo": "struttura",
+  "base": "Il punto a forma di «Y» dove il DNA si apre come una cerniera e viene copiato.",
+  "superiore": "Zona a forma di Y dove i due filamenti si separano e vengono copiati. Da ogni origine partono due forcelle in direzioni opposte (replicazione bidirezionale).",
+  "universita": "Nel replisoma eucariotico lavorano insieme: elicasi CMG, pol ε sul filamento guida, pol α-primasi e pol δ sul filamento lento, PCNA con il caricatore RFC, RPA, topoisomerasi. Negli eucarioti la forcella avanza di circa 50 nucleotidi al secondo, nei batteri molto più veloce. Le forcelle bloccate attivano ATR.",
+  "clinica": "Molti chemioterapici bloccano le forcelle: analoghi dei nucleotidi (citarabina, gemcitabina), inibitori delle topoisomerasi, agenti che legano i due filamenti (cisplatino)."
+ },
+ "CDK e DDK (Cdc7-Dbf4)": {
+  "tipo": "enzima",
+  "base": "Gli «interruttori» che accendono la fotocopia del DNA.",
+  "superiore": "Due chinasi che, all'inizio della fase S, attivano l'elicasi sulle origini autorizzate e fanno partire la replicazione.",
+  "universita": "Serina/treonina chinasi. DDK (Cdc7 con la subunità Dbf4) fosforila le MCM; le CDK di fase S fosforilano Sld2 e Sld3 (Treslin nei vertebrati), permettendo il reclutamento di Cdc45 e GINS. Le stesse CDK impediscono una nuova autorizzazione delle origini fino alla mitosi.",
+  "clinica": "Inibitori di CDC7 sono in sperimentazione come farmaci antitumorali."
+ },
+ "Cdc45 e GINS": {
+  "tipo": "molecola",
+  "base": "I pezzi che, aggiunti alla cerniera, la fanno funzionare.",
+  "superiore": "Proteine che si uniscono all'elicasi MCM nella fase S e la rendono attiva.",
+  "universita": "Cdc45 e il complesso GINS (Sld5, Psf1, Psf2, Psf3) formano con Mcm2-7 l'elicasi CMG (Cdc45-MCM-GINS), il motore del replisoma. Il loro reclutamento richiede DDK e CDK.",
+  "clinica": ""
+ },
+ "DNA a filamento singolo": {
+  "tipo": "molecola",
+  "base": "Il DNA aperto: le due metà della «scala» separate.",
+  "superiore": "Tratto di DNA in cui i due filamenti sono separati: ogni filamento fa da stampo per costruirne uno nuovo complementare.",
+  "universita": "È fragile e tende a formare forcine: viene subito ricoperto da RPA. Lunghi tratti di DNA a filamento singolo ricoperto da RPA sono il segnale che attiva la chinasi ATR (punto di controllo della replicazione).",
+  "clinica": ""
+ },
+ "elicasi CMG": {
+  "tipo": "enzima",
+  "base": "La «cerniera lampo» in movimento che apre il DNA davanti alla fotocopiatrice.",
+  "superiore": "Elicasi attiva della replicazione negli eucarioti: usa ATP per separare i due filamenti del DNA davanti alla forcella.",
+  "universita": "Complesso Cdc45-MCM-GINS. Avvolge solo il filamento guida e si muove 3'→5' su di esso, escludendo il filamento lento. È associata alla pol ε. Alla fine della replicazione viene ubiquitinata e smontata.",
+  "clinica": ""
+ },
+ "proteina RPA": {
+  "tipo": "molecola",
+  "base": "Le «mollette» che tengono aperte le due metà del DNA.",
+  "superiore": "Proteina che si lega al DNA a filamento singolo: lo stabilizza e impedisce che si richiuda o si attorcigli.",
+  "universita": "Replication protein A, eterotrimero (RPA70, RPA32, RPA14). Serve in replicazione, riparazione (NER, ricombinazione) e nella segnalazione dei danni: il DNA ricoperto da RPA richiama ATR-ATRIP.",
+  "clinica": ""
+ },
+ "primer di RNA": {
+  "tipo": "molecola",
+  "base": "Un piccolo «gancio» da cui la fotocopiatrice può partire.",
+  "superiore": "Innesco (primer): breve tratto di RNA complementare allo stampo. Serve perché la DNA polimerasi sa solo allungare una catena già esistente.",
+  "universita": "Prodotto dalla primasi (circa 10 nucleotidi di RNA) e allungato dalla pol α con un breve tratto di DNA. Fornisce l'estremità 3'-OH libera. Sul filamento lento se ne forma uno per ogni frammento di Okazaki; poi viene rimosso (RNasi H, FEN1) e sostituito con DNA.",
+  "clinica": "Nella PCR in laboratorio gli inneschi sono invece brevi pezzi di DNA sintetico."
+ },
+ "DNA polimerasi α-primasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che mette il «gancio» da cui parte la fotocopia.",
+  "superiore": "Complesso di due enzimi: la primasi costruisce un breve innesco di RNA, la DNA polimerasi α lo allunga con un po' di DNA.",
+  "universita": "Quattro subunità: primasi (PRIM1, PRIM2) e pol α (POLA1, POLA2). La pol α non ha correzione di bozze (niente esonucleasi 3'→5'): il suo tratto viene spesso corretto o sostituito. Lavora una volta sul filamento guida e a ogni frammento di Okazaki.",
+  "clinica": "Mutazioni di POLA1 causano una forma legata all'X di disturbo pigmentario con immunodeficienza (XLPDR)."
+ },
+ "filamento guida (leading)": {
+  "tipo": "molecola",
+  "base": "La metà del DNA che viene copiata tutta d'un fiato.",
+  "superiore": "Filamento nuovo sintetizzato in modo continuo, nella stessa direzione in cui avanza la forcella (5'→3').",
+  "universita": "Prodotto soprattutto dalla pol ε, legata all'elicasi CMG. Ha bisogno di un solo innesco per ogni origine (per ogni forcella).",
+  "clinica": ""
+ },
+ "DNA polimerasi ε": {
+  "tipo": "enzima",
+  "base": "La fotocopiatrice che copia la metà «facile» del DNA, senza fermarsi.",
+  "superiore": "DNA polimerasi che sintetizza il filamento guida. Corregge i propri errori.",
+  "universita": "Pol epsilon (subunità catalitica POLE), famiglia B, con attività esonucleasica 3'→5' (correzione di bozze). Molto processiva grazie a PCNA e al legame con CMG.",
+  "clinica": "Mutazioni del dominio di correzione di POLE causano tumori del colon e dell'endometrio con moltissime mutazioni (ultramutati), che rispondono bene all'immunoterapia; in forma ereditaria: poliposi da correzione di bozze delle polimerasi (PPAP)."
+ },
+ "PCNA (pinza scorrevole)": {
+  "tipo": "molecola",
+  "base": "Un «anello» che tiene la fotocopiatrice agganciata al DNA, così non cade.",
+  "superiore": "Proteina ad anello che circonda il DNA e scorre con la polimerasi, tenendola attaccata: così la copia è veloce e continua.",
+  "universita": "Proliferating cell nuclear antigen: omotrimero ad anello caricato dal complesso RFC con ATP. Rende processive pol δ e pol ε e fa da piattaforma per FEN1, DNA ligasi I, CAF-1, sistema dei mismatch. Se ubiquitinata richiama le polimerasi translesione.",
+  "clinica": "Come dice il nome, è un marcatore di cellule in proliferazione in istologia."
+ },
+ "frammenti di Okazaki": {
+  "tipo": "molecola",
+  "base": "I pezzetti con cui viene copiata la metà «difficile» del DNA.",
+  "superiore": "Brevi tratti di DNA, ciascuno con il suo innesco di RNA, con cui si costruisce il filamento lento: la sintesi va in direzione opposta alla forcella.",
+  "universita": "Lunghi circa 100-200 nucleotidi negli eucarioti e 1000-2000 nei batteri. Ognuno inizia con un innesco della pol α-primasi ed è allungato dalla pol δ. Scoperti da Reiji e Tsuneko Okazaki (1968).",
+  "clinica": ""
+ },
+ "DNA polimerasi δ": {
+  "tipo": "enzima",
+  "base": "La fotocopiatrice che copia la metà «difficile» del DNA, a pezzetti.",
+  "superiore": "DNA polimerasi che sintetizza il filamento lento (frammenti di Okazaki). Corregge i propri errori e lavora anche nella riparazione del DNA.",
+  "universita": "Pol delta (subunità catalitica POLD1), famiglia B, con esonucleasi 3'→5'. Legata a PCNA. Allunga i frammenti di Okazaki, solleva l'innesco del frammento precedente (spostamento del filamento) creando il lembo tagliato da FEN1. Partecipa a riparazione dei mismatch, NER e ricombinazione omologa.",
+  "clinica": "Mutazioni di correzione di POLD1 predispongono a tumori del colon e dell'endometrio (PPAP)."
+ },
+ "frammenti di Okazaki senza primer": {
+  "tipo": "molecola",
+  "base": "I pezzetti di copia senza più i «ganci»: manca solo la colla.",
+  "superiore": "Frammenti del filamento lento in cui l'innesco di RNA è stato tolto e sostituito con DNA. Tra un frammento e l'altro resta una piccola interruzione (nick).",
+  "universita": "Il nick ha un 3'-OH e un 5'-fosfato adiacenti: è il substrato della DNA ligasi I.",
+  "clinica": ""
+ },
+ "RNasi H e FEN1": {
+  "tipo": "enzima",
+  "base": "Le «gomme» che cancellano i ganci di RNA dalla copia.",
+  "superiore": "Nucleasi che tolgono gli inneschi di RNA dai frammenti di Okazaki: la RNasi H taglia l'RNA appaiato al DNA, FEN1 taglia il lembo sollevato dalla polimerasi.",
+  "universita": "RNasi H (EC 3.1.26.4) degrada l'RNA negli ibridi RNA-DNA. FEN1 (flap endonuclease 1) è un'endonucleasi specifica per i lembi 5', legata a PCNA. Nella via principale degli eucarioti la pol δ solleva l'innesco e FEN1 lo taglia.",
+  "clinica": "Mutazioni della RNasi H2 causano la sindrome di Aicardi-Goutières: l'accumulo di ibridi RNA-DNA attiva l'interferone e danneggia il cervello."
+ },
+ "ribonucleotidi monofosfato (NMP)": {
+  "tipo": "molecola",
+  "base": "Le «lettere» dell'RNA staccate una a una quando un RNA viene smontato.",
+  "superiore": "AMP, GMP, CMP e UMP: nucleotidi con un solo fosfato, che si liberano quando l'RNA viene degradato.",
+  "universita": "Vengono riciclati: le chinasi dei nucleotidi li rifosforilano a NDP e NTP, oppure sono degradati (le purine fino ad acido urico, le pirimidine fino a β-alanina e β-amminoisobutirrato).",
+  "clinica": ""
+ },
+ "filamento lento (lagging) continuo": {
+  "tipo": "molecola",
+  "base": "La metà «difficile» del DNA ormai copiata e incollata in un pezzo unico.",
+  "superiore": "Filamento lento completo: i frammenti di Okazaki sono stati uniti dalla DNA ligasi.",
+  "universita": "Sintetizzato in direzione 5'→3' ma globalmente in direzione opposta alla forcella. Alla fine dei cromosomi lineari l'ultimo tratto resta scoperto (problema della replicazione delle estremità).",
+  "clinica": ""
+ },
+ "DNA ligasi I": {
+  "tipo": "enzima",
+  "base": "La «colla» che unisce i pezzetti di DNA.",
+  "superiore": "Enzima che chiude le interruzioni nel DNA formando un legame fosfodiestere tra due nucleotidi vicini. Usa l'energia dell'ATP.",
+  "universita": "Ligasi (EC 6.5.1.1). L'ATP adenila prima l'enzima (lisina) e poi il 5'-fosfato del nick; il 3'-OH attacca e si libera AMP. È la ligasi della replicazione (legata a PCNA). La ligasi III lavora nella BER, la IV nella NHEJ. Nei batteri la ligasi usa NAD⁺ invece di ATP.",
+  "clinica": "La rara carenza di DNA ligasi I causa immunodeficienza e ritardo di crescita. In laboratorio la ligasi del fago T4 si usa per clonare il DNA."
+ },
+ "telomeri allungati": {
+  "tipo": "struttura",
+  "base": "I «cappucci» alle estremità dei cromosomi, come quelli dei lacci delle scarpe, rimessi a nuovo.",
+  "superiore": "Telomeri: estremità dei cromosomi fatte di una breve sequenza ripetuta molte volte (TTAGGG nell'uomo). Proteggono il cromosoma e si accorciano un po' a ogni divisione, se la telomerasi non li allunga.",
+  "universita": "L'estremità 3' sporge come filamento singolo e si ripiega formando un'ansa (t-loop), protetta dal complesso shelterin (TRF1, TRF2, POT1...): così non viene scambiata per una rottura. Quando i telomeri sono troppo corti la cellula va in senescenza o in apoptosi (limite di Hayflick).",
+  "clinica": "Telomeri troppo corti per difetti della telomerasi: discheratosi congenita, fibrosi polmonare, insufficienza midollare (telomeropatie)."
+ },
+ "telomerasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che allunga le punte dei cromosomi, così non si consumano.",
+  "superiore": "Enzima che allunga i telomeri. Contiene un pezzo di RNA che fa da stampo: è una trascrittasi inversa (costruisce DNA a partire da RNA).",
+  "universita": "Ribonucleoproteina: TERT (trascrittasi inversa, EC 2.7.7.49) + TERC (RNA stampo) + discherina. Aggiunge ripetizioni TTAGGG all'estremità 3'; poi il filamento complementare viene completato da pol α-primasi. Attiva nelle cellule germinali, staminali e nella maggior parte dei tumori; spenta in quasi tutte le cellule somatiche.",
+  "clinica": "Riattivata nella maggior parte dei tumori (spesso per mutazioni del promotore di TERT, es. melanoma, glioblastoma). Mutazioni di TERT, TERC o DKC1: discheratosi congenita. L'imetelstat, inibitore della telomerasi, è usato in alcune sindromi mielodisplastiche."
+ },
+ "due molecole di DNA figlie": {
+  "tipo": "molecola",
+  "base": "Le due copie identiche del DNA, una per ogni cellula figlia.",
+  "superiore": "Il risultato della replicazione: due doppie eliche uguali, ognuna con un filamento vecchio e uno nuovo (replicazione semiconservativa, dimostrata da Meselson e Stahl nel 1958).",
+  "universita": "Restano unite come cromatidi fratelli dalla coesina, caricata in G1 e resa stabile durante la fase S. Si separano solo all'anafase, quando la separasi taglia la coesina.",
+  "clinica": ""
+ },
+ "CAF-1 (assemblaggio della cromatina)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che riavvolge il DNA copiato sui suoi «rocchetti».",
+  "superiore": "Proteina che, subito dietro la forcella, rimette gli istoni sul DNA nuovo e ricostruisce i nucleosomi.",
+  "universita": "Chromatin assembly factor 1: chaperone degli istoni H3-H4 appena sintetizzati, legato a PCNA. Gli istoni vecchi vengono distribuiti tra le due molecole figlie con le loro modifiche, che guidano le modifiche dei nuovi (eredità epigenetica).",
+  "clinica": ""
+ },
+ "istoni": {
+  "tipo": "molecola",
+  "base": "I «rocchetti» su cui si avvolge il DNA per stare in ordine nel nucleo.",
+  "superiore": "Proteine basiche (ricche di lisina e arginina, quindi positive) attorno a cui si avvolge il DNA, che è negativo. Otto istoni con il DNA attorno formano un nucleosoma.",
+  "universita": "Ottamero: due copie ciascuno di H2A, H2B, H3 e H4, con circa 147 paia di basi avvolte; H1 lega il DNA tra i nucleosomi. Le code degli istoni vengono acetilate (cromatina aperta, geni accesi), metilate, fosforilate, ubiquitinate. Vengono sintetizzati soprattutto in fase S; i loro mRNA non hanno coda poli(A).",
+  "clinica": "Anticorpi anti-istoni: tipici del lupus indotto da farmaci (procainamide, idralazina). Mutazioni dell'istone H3 (H3K27M) nei gliomi della linea mediana dei bambini."
+ },
+ "appaiamento sbagliato (mismatch)": {
+  "tipo": "molecola",
+  "base": "Una «lettera» sbagliata nella copia del DNA.",
+  "superiore": "Coppia di basi non complementari (es. G di fronte a T) lasciata dalla DNA polimerasi durante la replicazione, oppure un piccolo anello per una base in più o in meno.",
+  "universita": "Gli anelli di inserzione o delezione sono frequenti nei microsatelliti (sequenze brevi ripetute), dove la polimerasi «scivola». Se non corretti diventano mutazioni alla replicazione successiva: per questo i tumori senza riparazione dei mismatch mostrano instabilità dei microsatelliti (MSI).",
+  "clinica": ""
+ },
+ "DNA riparato": {
+  "tipo": "molecola",
+  "base": "Il DNA aggiustato, di nuovo uguale all'originale.",
+  "superiore": "DNA in cui il danno è stato tolto e il tratto ricostruito usando come stampo il filamento sano (o il cromatidio fratello).",
+  "universita": "La riparazione è senza errori quando c'è uno stampo intatto (BER, NER, MMR, ricombinazione omologa); l'unione diretta delle estremità (NHEJ) e la sintesi translesione possono invece lasciare mutazioni.",
+  "clinica": ""
+ },
+ "MutSα e MutLα (MSH2-MSH6, MLH1-PMS2)": {
+  "tipo": "enzima",
+  "base": "I «correttori di bozze» che trovano e cancellano le lettere sbagliate dopo la copia.",
+  "superiore": "Proteine del sistema di riparazione dei mismatch (MMR): MutSα trova la base sbagliata, MutLα riconosce il filamento nuovo e lo fa tagliare. Poi il tratto viene ricopiato.",
+  "universita": "Omologhi umani di MutS e MutL dei batteri. MutSα (MSH2-MSH6) riconosce i mismatch e i piccoli anelli; MutSβ (MSH2-MSH3) gli anelli più grandi. MutLα (MLH1-PMS2) ha attività endonucleasica attivata da PCNA; il filamento nuovo è riconosciuto dalle interruzioni ancora presenti. EXO1 rimuove il tratto, pol δ lo risintetizza, la ligasi I chiude. Usano ATP.",
+  "clinica": "Mutazioni germinali di MLH1, MSH2, MSH6, PMS2 (o delezioni di EPCAM): sindrome di Lynch, con tumori del colon, dell'endometrio, dell'ovaio. Si cerca con immunoistochimica per le 4 proteine o con il test MSI. I tumori con difetto dei mismatch (dMMR/MSI-H) rispondono bene agli inibitori dei checkpoint immunitari (pembrolizumab)."
+ },
+ "topoisomerasi I": {
+  "tipo": "enzima",
+  "base": "L'aiutante che scioglie i «nodi» del DNA tagliando un filo per un attimo.",
+  "superiore": "Enzima che taglia un solo filamento del DNA, lascia ruotare l'elica per sciogliere la torsione e poi richiude il taglio. Non usa ATP.",
+  "universita": "Tipo I (EC 5.6.2.1): forma un legame covalente transitorio tra una tirosina e il fosfato del DNA, cambiando il numero di legame di 1. Lavora davanti alle forcelle di replicazione e alle RNA polimerasi.",
+  "clinica": "Bersaglio degli inibitori irinotecan e topotecan (derivati della camptotecina): bloccano l'enzima legato al DNA e creano rotture. Anticorpi anti-topoisomerasi I (anti-Scl-70): tipici della sclerosi sistemica diffusa."
+ },
+ "topoisomerasi II": {
+  "tipo": "enzima",
+  "base": "L'aiutante che scioglie i «grovigli» del DNA tagliando i due fili insieme.",
+  "superiore": "Enzima che taglia entrambi i filamenti del DNA, fa passare un'altra doppia elica attraverso il taglio e lo richiude. Usa ATP. Serve anche a separare i cromosomi copiati prima della mitosi.",
+  "universita": "Tipo II (EC 5.6.2.2): cambia il numero di legame di 2; separa le molecole figlie intrecciate (decatenazione). Nei batteri la DNA girasi è una topoisomerasi II che introduce superavvolgimenti negativi.",
+  "clinica": "Farmaci contro la topoisomerasi II umana: etoposide, antracicline (doxorubicina). Contro la girasi e la topoisomerasi IV dei batteri: fluorochinoloni (ciprofloxacina, levofloxacina)."
+ },
+ "cromatina aperta": {
+  "tipo": "struttura",
+  "base": "Il «libro» del DNA aperto alla pagina giusta, pronto per essere letto.",
+  "superiore": "Cromatina poco compatta (eucromatina) in cui il DNA del promotore è accessibile ai fattori di trascrizione e alla RNA polimerasi.",
+  "universita": "Caratterizzata da istoni acetilati (es. H3K27ac) e da H3K4me3 sui promotori attivi; i nucleosomi sono spostati dai complessi di rimodellamento (SWI/SNF). La cromatina chiusa (eterocromatina) ha istoni deacetilati e metilazioni come H3K9me3, e DNA metilato sulle CpG.",
+  "clinica": "Gli inibitori delle deacetilasi degli istoni (vorinostat, romidepsina) riaprono la cromatina e si usano in alcuni linfomi T cutanei; gli ipometilanti (azacitidina, decitabina) nelle sindromi mielodisplastiche."
+ },
+ "attivatori trascrizionali": {
+  "tipo": "enzima",
+  "base": "I «capisquadra» che decidono quale ricetta del DNA leggere.",
+  "superiore": "Fattori di trascrizione specifici: proteine che si legano a sequenze di DNA vicino o lontano dal gene (enhancer) e aumentano la sua trascrizione. Altri fattori (repressori) la riducono.",
+  "universita": "Hanno un dominio di legame al DNA (es. zinc finger, omeodominio, leucine zipper, elica-ansa-elica) e un dominio di attivazione che recluta coattivatori e il Mediatore. Molti sono attivati da segnali: recettori nucleari degli ormoni steroidei e tiroidei, CREB (cAMP), STAT, NF-κB.",
+  "clinica": "Molti farmaci agiscono su fattori di trascrizione: tamoxifene (recettore degli estrogeni), glucocorticoidi (recettore dei glucocorticoidi), enzalutamide (recettore degli androgeni). Fattori di trascrizione alterati sono oncogeni (MYC)."
+ },
+ "coattivatori (HAT e rimodellatori)": {
+  "tipo": "enzima",
+  "base": "Gli aiutanti che «sfogliano» il libro del DNA fino alla pagina giusta.",
+  "superiore": "Proteine reclutate dagli attivatori che rendono la cromatina accessibile: le istone acetiltransferasi (HAT) acetilano gli istoni, i complessi di rimodellamento spostano i nucleosomi usando ATP.",
+  "universita": "HAT come CBP/p300 e GCN5 trasferiscono acetili dall'acetil-CoA alle lisine degli istoni, neutralizzandone la carica positiva; le lisine acetilate richiamano proteine con bromodominio. Rimodellatori ATP-dipendenti: SWI/SNF, ISWI, CHD, INO80. Le deacetilasi (HDAC) fanno il contrario.",
+  "clinica": "Mutazioni di CBP (CREBBP) o EP300: sindrome di Rubinstein-Taybi. Subunità di SWI/SNF (ARID1A, SMARCB1) sono mutate in molti tumori (es. tumore rabdoide con perdita di SMARCB1)."
+ },
+ "TFIID sulla TATA box": {
+  "tipo": "struttura",
+  "base": "La prima «bandierina» piantata all'inizio della ricetta.",
+  "superiore": "TFIID legato al promotore: segna il punto da cui partirà la trascrizione e fa da base per gli altri fattori.",
+  "universita": "TBP si inserisce nel solco minore della TATA box e piega il DNA di circa 80°. TFIIA e TFIIB stabilizzano il complesso; TFIIB riconosce anche l'elemento BRE e posiziona la polimerasi sul punto di inizio.",
+  "clinica": ""
+ },
+ "TFIID (con TBP)": {
+  "tipo": "enzima",
+  "base": "Il «segnalibro» che trova l'inizio della ricetta nel DNA.",
+  "superiore": "Fattore generale di trascrizione che riconosce il promotore. La sua subunità TBP si lega alla TATA box.",
+  "universita": "Complesso di TBP (TATA-binding protein) e circa 13 TAF (fattori associati a TBP), che riconoscono anche altri elementi del promotore (Inr, DPE) e gli istoni modificati. TBP è usata anche dalle RNA polimerasi I e III.",
+  "clinica": "Espansione di triplette CAG nel gene di TBP: atassia spinocerebellare di tipo 17 (SCA17)."
+ },
+ "complesso di pre-inizio (PIC)": {
+  "tipo": "struttura",
+  "base": "La macchina che copia la ricetta, montata e pronta a partire.",
+  "superiore": "Insieme della RNA polimerasi II e dei fattori generali di trascrizione (TFIID, TFIIA, TFIIB, TFIIF, TFIIE, TFIIH) montati sul promotore.",
+  "universita": "Si monta in modo ordinato: TFIID, TFIIA e TFIIB, poi Pol II-TFIIF, infine TFIIE e TFIIH. Il Mediatore ne favorisce il montaggio e trasmette i segnali degli attivatori. In vivo spesso parte del complesso resta sul promotore per più cicli di trascrizione (riavvio).",
+  "clinica": ""
+ },
+ "fattori generali di trascrizione": {
+  "tipo": "enzima",
+  "base": "Gli aiutanti che servono per leggere qualunque ricetta del DNA.",
+  "superiore": "Proteine necessarie alla RNA polimerasi II per iniziare la trascrizione di tutti i geni: TFIID, TFIIA, TFIIB, TFIIE, TFIIF, TFIIH.",
+  "universita": "TFIID riconosce il promotore; TFIIB posiziona la polimerasi; TFIIF la accompagna; TFIIE recluta TFIIH; TFIIH apre il DNA (XPB) e fosforila il CTD (CDK7). Diversamente dagli attivatori, non scelgono quali geni accendere.",
+  "clinica": ""
+ },
+ "Mediatore": {
+  "tipo": "molecola",
+  "base": "Il «messaggero» che porta gli ordini dei capisquadra alla macchina che copia.",
+  "superiore": "Grande complesso di proteine che fa da ponte tra gli attivatori legati al DNA (anche lontani) e la RNA polimerasi II.",
+  "universita": "Circa 30 subunità (MED). Si lega al CTD non fosforilato della Pol II e agli attivatori; favorisce il montaggio del complesso di pre-inizio e la fosforilazione del CTD da parte di TFIIH. Il modulo con CDK8 può reprimere o attivare.",
+  "clinica": "Mutazioni di MED12 sono presenti nella maggior parte dei leiomiomi uterini (fibromi)."
+ },
+ "bolla di trascrizione": {
+  "tipo": "struttura",
+  "base": "Il punto in cui il DNA è aperto come un occhiello mentre viene letto.",
+  "superiore": "Piccola zona in cui la doppia elica è aperta: un filamento (stampo) viene letto dalla RNA polimerasi e appaiato temporaneamente all'RNA nascente.",
+  "universita": "Larga circa una dozzina di nucleotidi; contiene un ibrido RNA-DNA di circa 8-9 paia di basi. Si sposta con la polimerasi: davanti il DNA si apre, dietro si richiude.",
+  "clinica": ""
+ },
+ "TFIIH": {
+  "tipo": "enzima",
+  "base": "L'aiutante che apre il DNA per leggerlo, e che aiuta anche ad aggiustarlo.",
+  "superiore": "Fattore generale di trascrizione con due attività: apre il DNA (elicasi) e fosforila la RNA polimerasi II (chinasi). Partecipa anche alla riparazione per escissione di nucleotidi (NER).",
+  "universita": "Dieci subunità: il nucleo con le ATPasi/elicasi XPB (apertura del promotore; nella NER) e XPD (elicasi 5'→3' nella NER) e il modulo CAK (CDK7, ciclina H, MAT1), che fosforila la Ser5 del CTD e attiva altre CDK del ciclo cellulare.",
+  "clinica": "Mutazioni di XPB, XPD o di altre subunità causano xeroderma pigmentoso, sindrome di Cockayne o tricotiodistrofia (capelli fragili poveri di zolfo, sensibilità alla luce): la stessa proteina serve a trascrizione e riparazione."
+ },
+ "RNA nascente": {
+  "tipo": "molecola",
+  "base": "I primi pezzetti della copia della ricetta.",
+  "superiore": "RNA appena iniziato, ancora appaiato al filamento stampo dentro la polimerasi.",
+  "universita": "Nella fase iniziale la polimerasi produce spesso trascritti abortivi di 2-10 nucleotidi (in vitro); superati circa 10 nucleotidi il complesso diventa stabile e la polimerasi lascia il promotore.",
+  "clinica": ""
+ },
+ "polimerasi in pausa": {
+  "tipo": "struttura",
+  "base": "La macchina della copia ferma ai blocchi di partenza, pronta a ripartire.",
+  "superiore": "RNA polimerasi II ferma poco dopo l'inizio del gene, in attesa del segnale per proseguire. Così il gene può essere acceso molto in fretta.",
+  "universita": "Pausa prossimale al promotore, a circa 20-60 nucleotidi dall'inizio: la stabilizzano DSIF (Spt4-Spt5) e NELF. In questa fase l'RNA riceve il cappuccio. Frequente nei geni di risposta rapida (shock termico, geni regolati da MYC o NF-κB).",
+  "clinica": ""
+ },
+ "CDK7 (di TFIIH)": {
+  "tipo": "enzima",
+  "base": "L'«interruttore» che fa partire la macchina della copia dal punto d'inizio.",
+  "superiore": "Chinasi che fa parte di TFIIH: fosforila la coda (CTD) della RNA polimerasi II e le permette di lasciare il promotore.",
+  "universita": "Con ciclina H e MAT1 forma il complesso CAK. Fosforila la Ser5 (e la Ser7) del CTD; come CAK attiva anche CDK1, CDK2, CDK4/6 fosforilandone la treonina dell'ansa T: collega trascrizione e ciclo cellulare.",
+  "clinica": "Inibitori di CDK7 sono in sperimentazione nei tumori dipendenti dalla trascrizione."
+ },
+ "polimerasi in allungamento": {
+  "tipo": "struttura",
+  "base": "La macchina della copia lanciata lungo la ricetta.",
+  "superiore": "RNA polimerasi II che avanza lungo il gene allungando l'RNA. Ha la coda (CTD) fosforilata in serina 2.",
+  "universita": "Complesso processivo con fattori di allungamento (DSIF fosforilato, PAF1, SPT6) e chaperoni degli istoni (FACT) che smontano e rimontano i nucleosomi al passaggio. La polimerasi può tornare indietro e tagliare l'RNA sbagliato con TFIIS (correzione).",
+  "clinica": ""
+ },
+ "P-TEFb (CDK9-ciclina T)": {
+  "tipo": "enzima",
+  "base": "L'«interruttore» che dà il via libera alla macchina della copia ferma ai blocchi.",
+  "superiore": "Chinasi che libera la RNA polimerasi II dalla pausa: fosforila la sua coda (CTD) e i fattori che la trattengono.",
+  "universita": "Positive transcription elongation factor b: CDK9 con ciclina T1. Fosforila la Ser2 del CTD, Spt5 (DSIF diventa un fattore positivo) e NELF (che si stacca). Nelle cellule è in gran parte tenuto inattivo dal complesso 7SK snRNP-HEXIM1 e viene rilasciato quando serve (es. da BRD4).",
+  "clinica": "Nell'HIV la proteina virale Tat lega l'RNA TAR e recluta P-TEFb per trascrivere il genoma virale. Inibitori di CDK9 (es. flavopiridolo) sono stati studiati nelle leucemie."
+ },
+ "pre-mRNA in crescita": {
+  "tipo": "molecola",
+  "base": "La copia della ricetta che si allunga lettera dopo lettera.",
+  "superiore": "Trascritto che la RNA polimerasi II sta ancora allungando. Ha già il cappuccio e mentre cresce viene già lavorato (splicing).",
+  "universita": "La maturazione è co-trascrizionale: il CTD fosforilato porta enzimi del capping (Ser5-P), fattori di splicing e di poliadenilazione (Ser2-P). La velocità della polimerasi influenza lo splicing alternativo.",
+  "clinica": ""
+ },
+ "RNA a valle del taglio": {
+  "tipo": "molecola",
+  "base": "Il pezzo di copia in più, dopo la fine della ricetta, che viene buttato.",
+  "superiore": "Parte di RNA che la polimerasi continua a produrre dopo il sito di taglio e poliadenilazione: non serve e viene degradato.",
+  "universita": "Ha un'estremità 5'-monofosfato non protetta, attaccata dall'esonucleasi 5'→3' Xrn2. Il suo degrado, insieme ai cambiamenti della polimerasi dopo il segnale poli(A), porta alla terminazione.",
+  "clinica": ""
+ },
+ "CPSF e CstF": {
+  "tipo": "enzima",
+  "base": "Le «forbici» che tagliano la copia alla fine della ricetta.",
+  "superiore": "Complessi proteici che riconoscono il segnale di fine dell'RNA (AAUAAA) e tagliano il pre-mRNA, preparando l'aggiunta della coda poli(A).",
+  "universita": "CPSF (fattore di specificità per taglio e poliadenilazione) riconosce AAUAAA (subunità CPSF30 e WDR33); la sua subunità CPSF73 è l'endonucleasi. CstF (fattore di stimolazione del taglio) lega la sequenza ricca di G/U a valle. Collaborano CFIm, CFIIm e la poli(A) polimerasi. Viaggiano legati al CTD fosforilato in Ser2.",
+  "clinica": "Mutazioni del segnale AATAAA nei geni delle globine causano forme di α- e β-talassemia. Siti di poliadenilazione alternativi cambiano la lunghezza della regione 3' non tradotta (spesso più corta nei tumori)."
+ },
+ "RNA polimerasi II libera": {
+  "tipo": "enzima",
+  "base": "La macchina della copia che ha finito e può ricominciare con un'altra ricetta.",
+  "superiore": "RNA polimerasi II staccata dal DNA alla fine della trascrizione, pronta per un nuovo ciclo.",
+  "universita": "Per essere riutilizzata il CTD deve essere defosforilato (fosfatasi FCP1, SSU72): solo la forma non fosforilata entra in un nuovo complesso di pre-inizio.",
+  "clinica": ""
+ },
+ "esonucleasi Xrn2": {
+  "tipo": "enzima",
+  "base": "La «pacman» che mangia il pezzo di copia in più e fa staccare la macchina.",
+  "superiore": "Enzima che degrada l'RNA dall'estremità 5' verso la 3'. Dopo il taglio del pre-mRNA mangia l'RNA rimasto attaccato alla polimerasi e la fa staccare.",
+  "universita": "Esoribonucleasi 5'→3' nucleare (in lievito Rat1). Modello «a siluro» della terminazione, combinato con il modello allosterico (la polimerasi cambia dopo aver trascritto il segnale poli(A)). La sua forma citoplasmatica, Xrn1, degrada gli mRNA senza cappuccio.",
+  "clinica": ""
+ },
+ "RNA polimerasi I": {
+  "tipo": "enzima",
+  "base": "La fotocopiatrice che copia le istruzioni per costruire i ribosomi.",
+  "superiore": "RNA polimerasi del nucleolo: trascrive i geni degli RNA ribosomiali grandi (rRNA 28S, 18S e 5,8S).",
+  "universita": "Trascrive un unico precursore (rRNA 45S nei mammiferi) da centinaia di copie geniche ripetute nei nucleoli; il precursore viene poi tagliato e modificato. Produce la maggior parte dell'RNA della cellula. Ha bisogno di UBF e SL1 (con TBP).",
+  "clinica": "Mutazioni di subunità condivise con la pol III (POLR1C, POLR1D) o di TCOF1 causano la sindrome di Treacher Collins (difetti dello sviluppo del volto)."
+ },
+ "RNA polimerasi III": {
+  "tipo": "enzima",
+  "base": "La fotocopiatrice che copia le istruzioni per i piccoli RNA, come i «furgoncini» degli amminoacidi.",
+  "superiore": "RNA polimerasi del nucleo che trascrive i tRNA, l'rRNA 5S e altri piccoli RNA (es. snRNA U6, RNA 7SL).",
+  "universita": "Usa promotori interni al gene (box A e B nei tRNA) riconosciuti da TFIIIC e TFIIIB (che contiene TBP); per l'rRNA 5S serve anche TFIIIA. Termina su una serie di T nel filamento codificante.",
+  "clinica": "Mutazioni di POLR3A o POLR3B: leucodistrofia ipomielinizzante (sindrome 4H: ipomielinizzazione, ipodonzia, ipogonadismo ipogonadotropo)."
+ },
+ "RNA polimerasi batterica": {
+  "tipo": "enzima",
+  "base": "La fotocopiatrice dei batteri: diversa dalla nostra, per questo si può colpire con i farmaci.",
+  "superiore": "Nei batteri un'unica RNA polimerasi trascrive tutti i geni. Riconosce il promotore grazie alla subunità sigma (σ), senza fattori generali come negli eucarioti.",
+  "universita": "Oloenzima α₂ββ'ωσ. Il fattore σ⁷⁰ riconosce le sequenze −35 e −10 (box di Pribnow); fattori σ alternativi accendono gruppi di geni (es. shock termico). Terminazione con forcina ricca di GC seguita da U, oppure con la proteina Rho. Trascrizione e traduzione sono accoppiate.",
+  "clinica": "Bersaglio della rifampicina (subunità β; tubercolosi, profilassi della meningite; induttore del citocromo P450, colora di rosso urine e lacrime) e della fidaxomicina (colite da Clostridioides difficile)."
+ },
+ "dominio C-terminale (CTD)": {
+  "tipo": "struttura",
+  "base": "La lunga «coda» della macchina della copia, su cui si attaccano gli aiutanti.",
+  "superiore": "Coda della subunità maggiore della RNA polimerasi II, fatta di una breve sequenza ripetuta. Viene fosforilata in modi diversi e così richiama, una dopo l'altra, le proteine che lavorano l'RNA.",
+  "universita": "Ripetizioni dell'eptapeptide YSPTSPS (52 nell'uomo). All'inizio è poco fosforilato; Ser5-P (CDK7) vicino al promotore richiama gli enzimi del capping; Ser2-P (CDK9) cresce verso la fine del gene e richiama fattori di splicing e poliadenilazione. Esiste solo nella Pol II: per questo solo gli mRNA ricevono cappuccio e coda.",
+  "clinica": ""
+ },
+ "pre-mRNA con 5'-difosfato": {
+  "tipo": "molecola",
+  "base": "La copia della ricetta preparata per ricevere il cappellino.",
+  "superiore": "Pre-mRNA il cui primo nucleotide ha perso uno dei tre fosfati: è il primo passo del capping.",
+  "universita": "Prodotto dell'RNA trifosfatasi (pppN → ppN + Pi); è il substrato della guanililtransferasi.",
+  "clinica": ""
+ },
+ "RNA trifosfatasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che prepara la punta della copia per il cappellino.",
+  "superiore": "Primo enzima del capping: toglie il fosfato più esterno dal primo nucleotide del pre-mRNA.",
+  "universita": "Idrolasi del fosfato γ all'estremità 5'. Nei mammiferi è un dominio dello stesso enzima della guanililtransferasi (RNGTT, enzima bifunzionale del capping), legato al CTD fosforilato in Ser5.",
+  "clinica": ""
+ },
+ "cappuccio non metilato (GpppN)": {
+  "tipo": "molecola",
+  "base": "Il cappellino appena messo, non ancora rifinito.",
+  "superiore": "Guanina aggiunta all'inizio del pre-mRNA con un legame 5'-5' a tre fosfati, prima della metilazione.",
+  "universita": "Struttura G(5')ppp(5')N. Il legame 5'-5' rende l'estremità resistente alle esonucleasi 5'→3'. Senza metilazione in N7 il cappuccio non è riconosciuto bene da CBC ed eIF4E.",
+  "clinica": ""
+ },
+ "guanililtransferasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che mette il cappellino sulla copia.",
+  "superiore": "Enzima del capping che aggiunge una guanina (GMP preso dal GTP) all'inizio del pre-mRNA con un legame 5'-5'.",
+  "universita": "mRNA guanililtransferasi (EC 2.7.7.50): forma un intermedio covalente enzima-GMP (su una lisina) liberando PPi, poi trasferisce il GMP al 5'-difosfato dell'RNA. Nei mammiferi fa parte dell'enzima bifunzionale RNGTT.",
+  "clinica": ""
+ },
+ "guanina-N7 metiltransferasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che rifinisce il cappellino con un piccolo pezzo (un metile).",
+  "superiore": "Enzima del capping che attacca un gruppo metile all'azoto 7 della guanina del cappuccio, usando la S-adenosilmetionina (SAM).",
+  "universita": "mRNA (guanina-N7)-metiltransferasi (EC 2.1.1.56; RNMT nell'uomo). Produce il cappuccio 0 (m⁷GpppN). Altre metiltransferasi (CMTR1) metilano il 2'-OH del primo nucleotide (cappuccio 1): questo segnala all'immunità innata che l'RNA è «nostro».",
+  "clinica": "Gli mRNA dei vaccini anti-COVID sono prodotti con un cappuccio 1 e nucleosidi modificati, per essere tradotti bene e non attivare troppo l'immunità innata."
+ },
+ "S-adenosilomocisteina (SAH)": {
+  "tipo": "molecola",
+  "base": "Quello che resta del «donatore di metili» dopo averlo ceduto.",
+  "superiore": "Prodotto di tutte le reazioni di metilazione che usano la SAM: è la SAM senza il suo gruppo metile.",
+  "universita": "Inibisce le metiltransferasi, quindi va eliminata: la SAH idrolasi la scinde in adenosina e omocisteina. L'omocisteina viene rimetilata a metionina (con folato e vitamina B₁₂) o trasformata in cisteina (con vitamina B₆).",
+  "clinica": "Carenze di folato, B₁₂ o B₆ e difetti genetici (omocistinuria) aumentano l'omocisteina nel sangue: fattore di rischio per trombosi."
+ },
+ "complesso E (introne riconosciuto)": {
+  "tipo": "struttura",
+  "base": "La parte da tagliare è stata segnata alle due estremità.",
+  "superiore": "Primo complesso dello splicing: la snRNP U1 è legata al sito 5' dell'introne e altre proteine segnano il punto di ramificazione e il sito 3'.",
+  "universita": "Complesso «early»: U1 snRNP sul sito 5' (GU), SF1/BBP sul punto di ramificazione, U2AF65 sul tratto di pirimidine e U2AF35 sull'AG. Non richiede ATP. Negli introni lunghi il riconoscimento avviene spesso attraverso l'esone (definizione dell'esone).",
+  "clinica": ""
+ },
+ "snRNP U1": {
+  "tipo": "enzima",
+  "base": "La «pinza» che segna l'inizio della parte da tagliare.",
+  "superiore": "Piccola ribonucleoproteina nucleare (snRNA U1 + proteine): il suo RNA si appaia alla sequenza all'inizio dell'introne (sito di splicing 5').",
+  "universita": "L'snRNA U1 si appaia con la sequenza consenso del sito 5' (AG|GURAGU). Contiene le proteine Sm comuni e proteine specifiche (U1-70K, U1-A, U1-C). U1 protegge anche i trascritti da poliadenilazioni premature (telescripting). Le snRNP sono assemblate con l'aiuto del complesso SMN.",
+  "clinica": "Anticorpi anti-U1 RNP: alti nella connettivite mista. Anticorpi anti-Sm: molto specifici per il lupus."
+ },
+ "complesso A": {
+  "tipo": "struttura",
+  "base": "Le due estremità della parte da tagliare sono state agganciate.",
+  "superiore": "Complesso dello splicing in cui anche la snRNP U2 è legata, al punto di ramificazione dell'introne.",
+  "universita": "Detto anche complesso pre-spliceosomiale. La formazione richiede ATP (elicasi Prp5/DDX46) e sostituisce SF1 con U2. L'adenina di ramificazione resta spaiata, pronta per la prima reazione.",
+  "clinica": ""
+ },
+ "snRNP U2": {
+  "tipo": "enzima",
+  "base": "La «pinza» che segna il punto in cui la parte da tagliare si chiuderà ad anello.",
+  "superiore": "Piccola ribonucleoproteina nucleare che si appaia alla sequenza del punto di ramificazione dell'introne. Il suo RNA fa parte del centro catalitico dello spliceosoma.",
+  "universita": "L'snRNA U2 si appaia alla sequenza di ramificazione lasciando spaiata (sporgente) l'adenina. Il complesso SF3B, parte di U2, riconosce il punto di ramificazione. Nello spliceosoma attivo U2 si appaia con U6.",
+  "clinica": "Mutazioni di SF3B1 (subunità di U2): sindromi mielodisplastiche con sideroblasti ad anello, leucemia linfatica cronica, melanoma uveale."
+ },
+ "spliceosoma attivo": {
+  "tipo": "struttura",
+  "base": "La macchina di taglia e cuci montata e pronta a tagliare.",
+  "superiore": "Spliceosoma riorganizzato in cui il centro di RNA (U2 e U6) è pronto a tagliare l'introne.",
+  "universita": "Complesso B attivato (Bact) e poi C. Elicasi DEAD/DEAH-box (Brr2, Prp2 e altre) usano ATP per separare U4 da U6 e far uscire U1. U6 si appaia al sito 5' e a U2: il centro catalitico coordina due ioni Mg²⁺, come nei ribozimi degli introni di gruppo II.",
+  "clinica": ""
+ },
+ "tri-snRNP U4/U6·U5": {
+  "tipo": "enzima",
+  "base": "Il grosso pezzo che completa la macchina di taglia e cuci.",
+  "superiore": "Complesso di tre snRNP (U4, U6, U5) che entra nello spliceosoma: U6 diventerà parte del centro catalitico, U5 tiene vicini i due esoni.",
+  "universita": "U4 tiene U6 appaiato e inattivo; l'elicasi Brr2 (in U5) separa U4 da U6, che si appaia a U2 e al sito 5'. U5 contiene Prp8, la proteina più grande e conservata dello spliceosoma, che fa da impalcatura per il centro catalitico.",
+  "clinica": "Mutazioni di PRPF8, PRPF31 e altre proteine del tri-snRNP causano forme ereditarie di retinite pigmentosa. Mutazioni dell'snRNA U4atac (dello spliceosoma minore) causano il nanismo primordiale osteodisplastico microcefalico di tipo I."
+ },
+ "intermedio a cappio (lariat)": {
+  "tipo": "molecola",
+  "base": "La parte da buttare chiusa ad anello, ancora attaccata a un pezzo di ricetta.",
+  "superiore": "Prodotto della prima reazione dello splicing: l'esone a monte è staccato; l'introne è chiuso a forma di cappio e ancora unito all'esone a valle.",
+  "universita": "Il cappio è chiuso da un legame 2'-5' fosfodiestere tra la G iniziale dell'introne e l'adenina di ramificazione, che ha quindi tre legami fosfodiestere (2', 3' e 5'). L'esone 1 resta trattenuto nello spliceosoma con un 3'-OH libero.",
+  "clinica": ""
+ },
+ "esoni uniti": {
+  "tipo": "molecola",
+  "base": "I pezzi utili della ricetta, ora attaccati uno all'altro.",
+  "superiore": "Pre-mRNA dopo lo splicing: gli esoni sono uniti in ordine e gli introni sono stati tolti.",
+  "universita": "La seconda transesterificazione unisce gli esoni con un normale legame 3'-5'. A circa 20-24 nucleotidi a monte di ogni giunzione resta il complesso EJC (exon junction complex), che aiuta l'esportazione e la traduzione e serve al controllo NMD.",
+  "clinica": ""
+ },
+ "pre-mRNA tagliato al 3'": {
+  "tipo": "molecola",
+  "base": "La copia della ricetta tagliata alla fine, pronta a ricevere la sua «coda».",
+  "superiore": "Pre-mRNA tagliato dopo il segnale AAUAAA: ha un'estremità 3' libera a cui verrà aggiunta la coda poli(A).",
+  "universita": "Il taglio dell'endonucleasi CPSF73 avviene di solito dopo un dinucleotide CA, 10-30 nucleotidi a valle di AAUAAA. L'estremità 3'-OH resta legata al complesso, che recluta la poli(A) polimerasi.",
+  "clinica": ""
+ },
+ "PABPN1": {
+  "tipo": "molecola",
+  "base": "La proteina che si attacca alla coda della copia e la misura.",
+  "superiore": "Proteina nucleare che si lega alla coda poli(A) mentre viene costruita: la allunga più in fretta e ne decide la lunghezza.",
+  "universita": "Poly(A)-binding protein nuclear 1. Con CPSF stimola la processività della poli(A) polimerasi e fa terminare la coda a circa 200-250 adenine. Nel citoplasma viene sostituita da PABPC1, che lega eIF4G e chiude l'mRNA ad anello per la traduzione.",
+  "clinica": "Una piccola espansione di triplette GCN nel gene PABPN1 causa la distrofia muscolare oculofaringea (ptosi palpebrale e disfagia in età adulta)."
+ },
+ "NXF1-NXT1 (recettore di esportazione)": {
+  "tipo": "enzima",
+  "base": "Il «passaporto» che fa uscire la ricetta pronta dal nucleo.",
+  "superiore": "Recettore che accompagna l'mRNA maturo attraverso i pori nucleari verso il citoplasma.",
+  "universita": "Eterodimero NXF1 (TAP) e NXT1 (p15). Lega l'mRNP tramite gli adattatori del complesso TREX e interagisce con le nucleoporine FG del poro. A differenza di proteine e tRNA, l'esportazione dell'mRNA non usa il sistema Ran-GTP: la direzione la dà l'elicasi Dbp5/DDX19 sul lato citoplasmatico, che stacca le proteine usando ATP.",
+  "clinica": ""
+ },
+ "complesso TREX": {
+  "tipo": "molecola",
+  "base": "L'«etichetta» che dice: questa ricetta è pronta per uscire.",
+  "superiore": "Complesso di proteine che si carica sull'mRNA alla fine della maturazione e lo consegna al recettore di esportazione.",
+  "universita": "Transcription-export complex: THO + UAP56 (DDX39B) + ALYREF. Viene reclutato dal cappuccio (tramite CBC) e dallo splicing; così solo gli mRNA con cappuccio, ben lavorati e poliadenilati vengono esportati.",
+  "clinica": ""
+ },
+ "isoforme proteiche diverse": {
+  "tipo": "molecola",
+  "base": "Proteine un po' diverse costruite a partire dalla stessa ricetta, ritagliata in modi diversi.",
+  "superiore": "Proteine prodotte dallo stesso gene grazie allo splicing alternativo: hanno parti in comune e parti diverse.",
+  "universita": "Tipi di splicing alternativo: salto di esoni, esoni mutuamente esclusivi, siti 5' o 3' alternativi, ritenzione di introni. Esempi: tropomiosina e troponina T diverse nei vari muscoli; forma solubile o di membrana degli anticorpi (IgM); calcitonina nella tiroide e CGRP nei neuroni dallo stesso gene.",
+  "clinica": "Nella distrofia di Duchenne l'eteplirsen fa saltare un esone per ricostruire la cornice di lettura e ottenere una distrofina più corta ma funzionante (come nella forma di Becker)."
+ },
+ "proteine SR e hnRNP": {
+  "tipo": "enzima",
+  "base": "Gli aiutanti che scelgono quali pezzi della ricetta tenere e quali saltare.",
+  "superiore": "Proteine che regolano lo splicing alternativo: le proteine SR di solito fanno includere un esone, le hnRNP spesso lo fanno saltare.",
+  "universita": "Le proteine SR (ricche di serina e arginina, es. SRSF1, SRSF2) legano sequenze stimolatrici esoniche (ESE) e reclutano U1 e U2AF; le hnRNP (es. hnRNP A1, PTB) legano silenziatori. La loro quantità e fosforilazione cambiano da tessuto a tessuto.",
+  "clinica": "Mutazioni di SRSF2 sono frequenti nelle sindromi mielodisplastiche e nella leucemia mielomonocitica cronica."
+ },
+ "mRNA degradato": {
+  "tipo": "molecola",
+  "base": "Una ricetta sbagliata che viene distrutta prima di fare danni.",
+  "superiore": "mRNA eliminato dai sistemi di controllo della cellula perché difettoso o perché non serve più.",
+  "universita": "Gli mRNA vengono degradati di solito accorciando la coda poli(A), togliendo il cappuccio (DCP2) e digerendo l'RNA con Xrn1 (5'→3') o con l'esosoma (3'→5'). Nella NMD il taglio parte dalla proteina UPF1 e dall'endonucleasi SMG6.",
+  "clinica": ""
+ },
+ "decadimento mediato da nonsenso (NMD)": {
+  "tipo": "enzima",
+  "base": "Il «controllore» che butta via le ricette con un punto messo troppo presto.",
+  "superiore": "Sistema di controllo che distrugge gli mRNA con un codone di stop prematuro, evitando la produzione di proteine troncate.",
+  "universita": "Se il ribosoma si ferma su uno stop che si trova più di circa 50-55 nucleotidi prima dell'ultima giunzione esone-esone (dove c'è ancora un EJC), UPF1 viene fosforilata da SMG1 e l'mRNA viene degradato. Gli stop nell'ultimo esone sfuggono alla NMD.",
+  "clinica": "Spiega perché molte mutazioni nonsenso sono recessive (non si forma proteina). Quando lo stop è nell'ultimo esone la proteina tronca si forma e può essere dannosa: es. forme dominanti di β-talassemia."
+ },
+ "cellula quiescente (G0)": {
+  "tipo": "struttura",
+  "base": "Una cellula che lavora ma per ora non si divide: è «in pausa».",
+  "superiore": "Fase G0: la cellula è uscita dal ciclo cellulare. Svolge le sue funzioni ma non si prepara a dividersi. Può restarci per sempre (neuroni) o ripartire se riceve segnali (epatociti, linfociti).",
+  "universita": "In G0 le CDK sono spente: livelli alti di inibitori (p27, p16), Rb non fosforilata, ciclina D bassa. Si distinguono quiescenza (reversibile) e senescenza (arresto permanente con p16 e p21 alti, spesso per telomeri corti o danno al DNA). Gran parte delle cellule di un adulto è in G0.",
+  "clinica": "Le cellule in G0 sono poco sensibili ai chemioterapici che colpiscono le fasi S e M: per questo le cellule staminali tumorali quiescenti possono sopravvivere alla terapia."
+ },
+ "fattori di crescita (mitogeni)": {
+  "tipo": "enzima",
+  "base": "I «messaggi» che arrivano da fuori e dicono alla cellula: puoi dividerti.",
+  "superiore": "Proteine segnale (es. EGF, PDGF) che si legano a recettori sulla membrana e spingono la cellula a entrare nel ciclo cellulare.",
+  "universita": "Agiscono su recettori tirosin-chinasici (EGFR, PDGFR, HER2...) che attivano RAS → RAF → MEK → ERK; ERK induce fattori di trascrizione (MYC, AP-1) e quindi la ciclina D. La via PI3K-AKT-mTOR fa crescere la cellula. Servono fino al punto di restrizione.",
+  "clinica": "Bersagli di molti farmaci antitumorali: trastuzumab (HER2, mammella), cetuximab (EGFR, colon), inibitori di EGFR (osimertinib) nel polmone con EGFR mutato. Mutazioni di RAS e BRAF rendono la via accesa senza fattore di crescita."
+ },
+ "ciclina D": {
+  "tipo": "molecola",
+  "base": "Il «segnale di via» prodotto quando la cellula riceve il permesso di dividersi.",
+  "superiore": "Ciclina della fase G1: si forma quando arrivano i fattori di crescita e attiva CDK4 e CDK6.",
+  "universita": "Tre forme (D1, D2, D3). È il sensore dei mitogeni: la sua sintesi dipende da RAS-ERK, la sua stabilità da GSK3β. Non oscilla come le altre cicline: resta finché ci sono i mitogeni.",
+  "clinica": "La traslocazione t(11;14) porta la ciclina D1 sotto il controllo del gene delle immunoglobuline: linfoma mantellare (ciclina D1 positiva all'immunoistochimica). Amplificata in alcuni tumori della mammella e della testa-collo."
+ },
+ "Rb parzialmente fosforilata": {
+  "tipo": "molecola",
+  "base": "Il freno della divisione allentato un po', non ancora tolto.",
+  "superiore": "Proteina Rb con i primi fosfati, aggiunti da CDK4/6-ciclina D: tiene ancora legato E2F, ma meno saldamente.",
+  "universita": "CDK4/6-ciclina D monofosforila Rb su uno dei suoi siti; l'iperfosforilazione completa, che libera E2F, la fanno CDK2-ciclina E e poi CDK2-ciclina A. CDK4/6-ciclina D sequestra anche p27 e p21, favorendo l'attivazione di CDK2.",
+  "clinica": ""
+ },
+ "CDK4/6-ciclina D": {
+  "tipo": "enzima",
+  "base": "Il primo «interruttore» che prepara la cellula a dividersi.",
+  "superiore": "Chinasi della fase G1 (CDK4 o CDK6 legate alla ciclina D). Fosforila la proteina Rb e comincia a togliere il freno al ciclo cellulare.",
+  "universita": "Serina/treonina chinasi ciclina-dipendenti (EC 2.7.11.22). Attivate dalla ciclina D e dalla CAK (CDK7); inibite dalle proteine INK4 (p16, p15, p18, p19). Bersaglio principale: Rb e le proteine simili p107 e p130.",
+  "clinica": "Gli inibitori di CDK4/6 (palbociclib, ribociclib, abemaciclib), con la terapia ormonale, si usano nel carcinoma mammario con recettori ormonali positivi e HER2 negativo. Amplificazione di CDK4 nei liposarcomi ben differenziati."
+ },
+ "proteina Rb": {
+  "tipo": "molecola",
+  "base": "Il «freno» che impedisce alla cellula di dividersi quando non deve.",
+  "superiore": "Proteina del retinoblastoma: gene oncosoppressore. Quando non è fosforilata trattiene il fattore E2F e blocca il passaggio dalla fase G1 alla fase S.",
+  "universita": "Rb ipofosforilata lega il dominio di attivazione di E2F e recluta deacetilasi degli istoni sui promotori dei geni della fase S. La fosforilazione progressiva da parte delle CDK la inattiva; viene defosforilata da PP1 alla fine della mitosi.",
+  "clinica": "Mutazioni di RB1: retinoblastoma (ereditario, spesso bilaterale, secondo l'ipotesi dei «due colpi» di Knudson) e osteosarcoma. La proteina E7 dei papillomavirus ad alto rischio (HPV 16, 18) lega e inattiva Rb: per questo p16 sale ed è usata come marcatore di HPV nei tumori della cervice e dell'orofaringe."
+ },
+ "E2F libero": {
+  "tipo": "molecola",
+  "base": "L'«ordine» che, liberato, fa partire la copia del DNA.",
+  "superiore": "Fattore di trascrizione E2F staccato da Rb: accende i geni che servono per la fase S.",
+  "universita": "E2F1-3 (attivatori) con DP1 accendono geni come ciclina E, ciclina A, CDC6, CDT1, MCM, DNA polimerasi α, timidilato sintasi, ribonucleotide reduttasi. Inducendo la ciclina E crea una retroazione positiva che rende la transizione G1/S rapida e irreversibile. E2F1 in eccesso può anche indurre apoptosi (via p14ARF-p53).",
+  "clinica": ""
+ },
+ "CDK2-ciclina E": {
+  "tipo": "enzima",
+  "base": "L'«interruttore» che decide definitivamente: la cellula si dividerà.",
+  "superiore": "Chinasi del passaggio G1/S. Completa la fosforilazione di Rb (punto di restrizione) e prepara l'inizio della replicazione del DNA.",
+  "universita": "CDK2 legata alla ciclina E1 o E2. Inibita da p21 e p27 (famiglia CIP/KIP). Fosforila Rb, p27 (che viene degradato dall'ubiquitina ligasi SCF-Skp2), NPAT (geni degli istoni) e componenti della duplicazione del centrosoma. La ciclina E viene poi degradata (SCF-Fbw7).",
+  "clinica": "Amplificazione di CCNE1 (ciclina E1) in alcuni carcinomi ovarici sierosi di alto grado, con prognosi peggiore. FBXW7 è un oncosoppressore."
+ },
+ "CDK2-ciclina A": {
+  "tipo": "enzima",
+  "base": "L'«interruttore» che tiene accesa la copia del DNA.",
+  "superiore": "Chinasi della fase S: attiva la replicazione del DNA e impedisce che venga ripetuta nello stesso ciclo.",
+  "universita": "La ciclina A2 si lega prima a CDK2 (fase S) e poi a CDK1 (G2). CDK2-ciclina A fosforila componenti delle origini (attivazione) e Cdc6 (che viene esportato), impedendo nuove autorizzazioni. La ciclina A viene degradata dall'APC/C all'inizio della mitosi.",
+  "clinica": ""
+ },
+ "Wee1 (chinasi inibitoria)": {
+  "tipo": "enzima",
+  "base": "Il «freno a mano» che tiene spento l'interruttore della divisione finché tutto è pronto.",
+  "superiore": "Chinasi che fosforila CDK1 in un punto che la blocca: impedisce l'entrata in mitosi prima del tempo.",
+  "universita": "Tirosin-chinasi che fosforila la Tyr15 di CDK1 (Myt1 fosforila Thr14 e Tyr15). Viene inattivata da CDK1 e Plk1 e degradata all'inizio della mitosi (retroazione positiva). Il punto di controllo G2/M agisce mantenendo i fosfati inibitori: Chk1 attiva Wee1 e inibisce Cdc25.",
+  "clinica": "Inibitori di WEE1 (es. adavosertib) sono in sperimentazione, soprattutto nei tumori con p53 mutata che dipendono dal punto di controllo G2/M."
+ },
+ "ciclina B": {
+  "tipo": "molecola",
+  "base": "La «chiave» che accende l'interruttore della divisione.",
+  "superiore": "Ciclina della mitosi: si accumula in G2, si lega a CDK1 e forma l'MPF. Viene distrutta in anafase e così la mitosi finisce.",
+  "universita": "La ciclina B1 sale in S e G2, si sposta nel nucleo all'inizio della profase. All'anafase l'APC/C-Cdc20 la ubiquitina (riconosce la sequenza «destruction box») e il proteasoma la degrada: senza questa distruzione la cellula non esce dalla mitosi.",
+  "clinica": ""
+ },
+ "fosfatasi Cdc25": {
+  "tipo": "enzima",
+  "base": "L'aiutante che toglie il freno a mano e fa partire la divisione.",
+  "superiore": "Fosfatasi che toglie i fosfati inibitori a CDK1 (e ad altre CDK), accendendola.",
+  "universita": "Tirosina fosfatasi a doppia specificità (Cdc25A, B, C): toglie i fosfati da Thr14 e Tyr15. CDK1 attiva fosforila Cdc25 e la rende ancora più attiva (retroazione positiva). Dopo un danno al DNA, Chk1 e Chk2 fosforilano Cdc25: Cdc25A viene degradata, Cdc25C viene trattenuta nel citoplasma, e il ciclo si ferma.",
+  "clinica": ""
+ },
+ "ubiquitina": {
+  "tipo": "molecola",
+  "base": "Un'«etichetta» che la cellula attacca alle proteine da buttare via.",
+  "superiore": "Piccola proteina (76 amminoacidi) che viene attaccata ad altre proteine. Una catena di ubiquitine è il segnale per la distruzione nel proteasoma.",
+  "universita": "Legata alle lisine dei bersagli tramite tre enzimi: E1 (attivazione, con ATP), E2 (coniugazione), E3 (ligasi, sceglie il bersaglio: es. APC/C, SCF, MDM2). Catene legate su K48 → proteasoma; su K63 o singole ubiquitine → segnalazione, riparazione del DNA, traffico di membrana.",
+  "clinica": "Il bortezomib blocca il proteasoma (mieloma multiplo). La talidomide e la lenalidomide agiscono modificando una ligasi E3 (cereblon). Mutazioni della ligasi E3 parkina causano una forma giovanile di Parkinson."
+ },
+ "APC/C-Cdh1": {
+  "tipo": "enzima",
+  "base": "Il «netturbino» che tiene pulita la cellula dagli interruttori della divisione finché non serve dividersi di nuovo.",
+  "superiore": "Il complesso promotore dell'anafase legato al suo secondo attivatore (Cdh1): dalla fine della mitosi a tutta G1 fa distruggere le cicline mitotiche.",
+  "universita": "Ubiquitina ligasi E3. Cdh1 sostituisce Cdc20 a fine mitosi (quando CDK1 è spenta, perché CDK1 fosforila Cdh1 e la inattiva). Degrada ciclina B, ciclina A, Cdc20, geminina, Plk1, Skp2. Viene spento alla fine di G1 dalle CDK e dall'inibitore Emi1.",
+  "clinica": ""
+ },
+ "arresto del ciclo in G1": {
+  "tipo": "struttura",
+  "base": "La cellula si ferma per aggiustare il suo DNA prima di copiarlo.",
+  "superiore": "Blocco del ciclo cellulare prima della fase S, dovuto al punto di controllo del danno al DNA: la cellula non copia un DNA rovinato.",
+  "universita": "Due fasi: subito Chk1/Chk2 fanno degradare Cdc25A (CDK2 si spegne); poi p53 induce p21, che inibisce CDK2-ciclina E e CDK4/6. Se il danno persiste l'arresto può diventare permanente (senescenza) oppure p53 avvia l'apoptosi.",
+  "clinica": "Le cellule con p53 mutata non si fermano in G1: copiano DNA danneggiato e accumulano mutazioni."
+ },
+ "p53": {
+  "tipo": "enzima",
+  "base": "Il «guardiano» del DNA: se il DNA è rovinato ferma la cellula o la fa morire.",
+  "superiore": "Proteina oncosoppressore e fattore di trascrizione. In caso di danno al DNA accende geni che fermano il ciclo cellulare (p21), avviano la riparazione o, se il danno è grave, l'apoptosi.",
+  "universita": "Tetramero che lega sequenze specifiche del DNA. Normalmente è tenuta bassa dall'ubiquitina ligasi MDM2 (che p53 stessa induce: retroazione negativa). Dopo un danno ATM/ATR e Chk2/Chk1 la fosforilano e la stabilizzano. Geni bersaglio: CDKN1A (p21), GADD45, PUMA, NOXA, BAX, FAS, MDM2. Gli oncogeni la attivano tramite p14ARF.",
+  "clinica": "Il gene TP53 è mutato in circa metà dei tumori umani. Mutazioni germinali: sindrome di Li-Fraumeni (sarcomi, tumori della mammella, del cervello, del surrene in giovane età). La proteina E6 degli HPV ad alto rischio fa degradare p53. L'aflatossina causa una mutazione tipica (codone 249) nell'epatocarcinoma."
+ },
+ "p21 (inibitore delle CDK)": {
+  "tipo": "molecola",
+  "base": "Il «freno» che p53 tira quando il DNA è danneggiato.",
+  "superiore": "Proteina che si lega alle CDK e le blocca: ferma il ciclo cellulare. È accesa da p53 dopo un danno al DNA.",
+  "universita": "Prodotto del gene CDKN1A, famiglia CIP/KIP (con p27 e p57). Inibisce soprattutto CDK2-ciclina E e A; si lega anche a PCNA e blocca la replicazione. Media l'arresto in G1 e contribuisce a quello in G2 e alla senescenza.",
+  "clinica": ""
+ },
+ "inibitori delle CDK (p16, p27)": {
+  "tipo": "molecola",
+  "base": "I «freni» che tengono la cellula ferma quando non deve dividersi.",
+  "superiore": "Proteine che bloccano le chinasi del ciclo cellulare: p16 blocca CDK4/6, p27 blocca CDK2. Sono geni oncosoppressori.",
+  "universita": "Famiglia INK4 (p16INK4a, p15, p18, p19): legano CDK4/6 e impediscono il legame della ciclina D. Famiglia CIP/KIP (p21, p27, p57): legano i complessi CDK-ciclina. p27 è alta nelle cellule in G0 (es. per contatto tra cellule o TGF-β) e viene degradata quando le cellule ripartono. p16 aumenta con l'invecchiamento (marcatore di senescenza).",
+  "clinica": "Delezioni o mutazioni di CDKN2A (p16): melanoma familiare e tumore del pancreas; frequenti in molti tumori. p16 iperespressa è un marcatore di infezione da HPV ad alto rischio."
+ },
+ "danno al DNA o stress cellulare": {
+  "tipo": "struttura",
+  "base": "Una cellula rovinata: il suo DNA è danneggiato o la cellula è in difficoltà.",
+  "superiore": "Situazioni che possono portare all'apoptosi: DNA danneggiato (radiazioni, farmaci), mancanza di fattori di crescita, proteine mal ripiegate, infezioni virali, mancanza di ossigeno.",
+  "universita": "I diversi stress convergono sulle proteine BH3-only: danno al DNA → p53 → PUMA e NOXA; mancanza di fattori di crescita → BIM e BAD; stress del reticolo endoplasmatico (risposta alle proteine mal ripiegate) → CHOP e BIM.",
+  "clinica": "Radioterapia e molti chemioterapici uccidono le cellule tumorali soprattutto inducendo apoptosi: i tumori con p53 mutata o BCL-2 alta rispondono meno."
+ },
+ "p53 stabilizzata": {
+  "tipo": "molecola",
+  "base": "Il guardiano del DNA svegliato e pronto ad agire.",
+  "superiore": "p53 che si accumula nella cellula dopo un danno al DNA, perché non viene più distrutta.",
+  "universita": "La fosforilazione (es. Ser15 da ATM/ATR, Ser20 da Chk2) impedisce il legame con MDM2; anche p14ARF (attivata dagli oncogeni) sequestra MDM2. L'acetilazione ne aumenta il legame al DNA. Dopo pochi minuti-ore i livelli di p53 salgono molto.",
+  "clinica": "Gli inibitori di MDM2 (es. idasanutlin) cercano di stabilizzare p53 nei tumori in cui p53 non è mutata: sono in sperimentazione."
+ },
+ "chinasi ATM e ATR": {
+  "tipo": "enzima",
+  "base": "Le «sentinelle» che suonano l'allarme quando il DNA è rotto.",
+  "superiore": "Chinasi che riconoscono il DNA danneggiato e lanciano il segnale: fermano il ciclo cellulare, avviano la riparazione e attivano p53.",
+  "universita": "Chinasi simili alle PI3K (famiglia PIKK). ATM è attivata dalle rotture a doppio filamento tramite il complesso MRN (MRE11-RAD50-NBS1) e attiva Chk2; ATR è attivata dal DNA a filamento singolo ricoperto da RPA (forcelle bloccate, resezione) con ATRIP e attiva Chk1. Bersagli: H2AX, p53, BRCA1, Chk1/Chk2.",
+  "clinica": "Mutazioni di ATM: atassia-teleangectasia (atassia, teleangectasie, immunodeficienza, linfomi, grande sensibilità alle radiazioni). Mutazioni di NBS1: sindrome di Nijmegen. Inibitori di ATR in sperimentazione come antitumorali."
+ },
+ "proteine BH3-only (PUMA, NOXA, BIM)": {
+  "tipo": "molecola",
+  "base": "I «messaggeri di morte» che dicono alla cellula di spegnersi.",
+  "superiore": "Proteine della famiglia BCL-2 con un solo dominio BH3: ricevono i segnali di stress e spingono la cellula verso l'apoptosi.",
+  "universita": "Alcune (BIM, PUMA, tBID) attivano direttamente BAX e BAK; altre (BAD, NOXA) neutralizzano soprattutto le antiapoptotiche (NOXA preferisce MCL-1, BAD preferisce BCL-2/BCL-xL). PUMA e NOXA sono indotte da p53; BIM aumenta senza fattori di crescita; BID è tagliata dalla caspasi-8 in tBID.",
+  "clinica": "I farmaci «BH3-mimetici» imitano queste proteine: venetoclax blocca BCL-2."
+ },
+ "BAX e BAK attivati": {
+  "tipo": "molecola",
+  "base": "Le proteine che bucano la «centrale elettrica» della cellula e avviano la fine.",
+  "superiore": "Proteine proapoptotiche della famiglia BCL-2: quando si attivano si uniscono e formano pori nella membrana esterna del mitocondrio.",
+  "universita": "BAX è nel citosol e si sposta sul mitocondrio; BAK è già nella membrana esterna. Attivate, cambiano forma e formano dimeri e oligomeri che permeabilizzano la membrana esterna (MOMP). Le cellule senza entrambe resistono alla via intrinseca.",
+  "clinica": "Mutazioni di BAX nei tumori del colon con instabilità dei microsatelliti."
+ },
+ "famiglia BCL-2": {
+  "tipo": "enzima",
+  "base": "Una «squadra» di proteine che decide se la cellula vive o muore.",
+  "superiore": "Famiglia di proteine che controlla la via mitocondriale dell'apoptosi. Comprende membri protettivi (BCL-2, BCL-xL, MCL-1), effettori che bucano il mitocondrio (BAX, BAK) e sensori del danno (BH3-only).",
+  "universita": "Condividono domini di omologia BH (BH1-BH4). Le antiapoptotiche legano e bloccano BAX/BAK e le BH3-only attivatrici; le BH3-only, legandosi al solco idrofobico delle antiapoptotiche, le neutralizzano. Il rapporto tra i membri decide la soglia di apoptosi di ogni cellula.",
+  "clinica": "BCL-2 è stata scoperta nel linfoma follicolare con traslocazione t(14;18). Venetoclax (inibitore di BCL-2) è usato nella leucemia linfatica cronica e nella leucemia mieloide acuta."
+ },
+ "BCL-2 e BCL-xL (antiapoptotiche)": {
+  "tipo": "molecola",
+  "base": "Le «guardie del corpo» che proteggono la cellula dalla morte.",
+  "superiore": "Proteine della famiglia BCL-2 che impediscono l'apoptosi: si legano a BAX e BAK e non lasciano bucare il mitocondrio.",
+  "universita": "Ancorate alla membrana esterna del mitocondrio e del reticolo endoplasmatico. Hanno domini BH1-BH4 e un solco che lega i domini BH3. Della stessa squadra fa parte MCL-1 (breve emivita, importante in molti tumori ematologici). La loro espressione è aumentata da fattori di crescita e citochine.",
+  "clinica": "t(14;18) con BCL-2 iperespressa: linfoma follicolare (cellule che non muoiono). Venetoclax inibisce BCL-2 (attenzione alla sindrome da lisi tumorale all'inizio della terapia)."
+ },
+ "citocromo c nel citosol": {
+  "tipo": "molecola",
+  "base": "Una piccola proteina che normalmente lavora nella centrale elettrica: quando esce, è il segnale di morte.",
+  "superiore": "Il citocromo c, che di solito trasporta elettroni tra il complesso III e il complesso IV nello spazio intermembrana del mitocondrio, esce nel citoplasma e attiva l'apoptosi.",
+  "universita": "Piccola emoproteina solubile. Liberato dopo la permeabilizzazione della membrana esterna (MOMP), si lega ad APAF-1 e ne permette l'assemblaggio nell'apoptosoma. La sua uscita è considerata il punto di non ritorno della via intrinseca.",
+  "clinica": ""
+ },
+ "Smac/DIABLO": {
+  "tipo": "molecola",
+  "base": "La proteina che toglie il «freno» alle forbici della morte.",
+  "superiore": "Proteina che esce dal mitocondrio insieme al citocromo c e blocca gli inibitori delle caspasi (XIAP), lasciando libere le caspasi di lavorare.",
+  "universita": "Si lega con il suo motivo N-terminale (AVPI) ai domini BIR di XIAP e cIAP, spostando le caspasi. Un'altra proteina mitocondriale con funzione simile è HtrA2/Omi.",
+  "clinica": "I «Smac-mimetici» sono studiati come farmaci antitumorali."
+ },
+ "apoptosoma": {
+  "tipo": "enzima",
+  "base": "Una «ruota» che si forma nella cellula e accende le forbici della morte.",
+  "superiore": "Complesso a forma di ruota fatto di sette APAF-1 legati al citocromo c: raccoglie e attiva la caspasi-9.",
+  "universita": "Eptamero di APAF-1-citocromo c (circa 1 MDa). I domini CARD centrali reclutano le procaspasi-9 tramite i loro CARD; la vicinanza e la dimerizzazione le attivano. La caspasi-9 è attiva soprattutto finché resta legata all'apoptosoma (oloenzima).",
+  "clinica": ""
+ },
+ "APAF-1": {
+  "tipo": "enzima",
+  "base": "La proteina che, quando riceve il segnale, costruisce la ruota della morte.",
+  "superiore": "Apoptotic protease activating factor 1: proteina del citoplasma che, legando il citocromo c, si assembla nell'apoptosoma.",
+  "universita": "Ha un dominio CARD, un dominio ATPasico (NB-ARC) e ripetizioni WD40 che legano il citocromo c. Il legame del citocromo c e lo scambio di (d)ADP con (d)ATP permettono l'oligomerizzazione. Simile alla proteina CED-4 del verme C. elegans, in cui l'apoptosi è stata scoperta geneticamente.",
+  "clinica": ""
+ },
+ "procaspasi-9": {
+  "tipo": "molecola",
+  "base": "Le forbici della morte ancora chiuse nella loro custodia.",
+  "superiore": "Forma inattiva (zimogeno) della caspasi-9, presente sempre nella cellula.",
+  "universita": "Ha un lungo prodominio con CARD per il reclutamento sull'apoptosoma. È attivata per dimerizzazione indotta dalla vicinanza, non dal taglio: dopo si autotaglia. AKT (via di sopravvivenza) la può fosforilare e inibire.",
+  "clinica": ""
+ },
+ "caspasi-9": {
+  "tipo": "enzima",
+  "base": "La prima forbice della morte che, una volta aperta, apre tutte le altre.",
+  "superiore": "Caspasi iniziatrice della via intrinseca (mitocondriale): attivata sull'apoptosoma, taglia e attiva le caspasi esecutrici.",
+  "universita": "Cisteina proteasi (famiglia EC 3.4.22) che taglia dopo un aspartato. Taglia la procaspasi-3 e -7. È inibita da XIAP (dominio BIR3).",
+  "clinica": ""
+ },
+ "procaspasi-3 e -7": {
+  "tipo": "molecola",
+  "base": "Le forbici che smontano la cellula, ancora chiuse.",
+  "superiore": "Forme inattive delle caspasi esecutrici: sono già dimeri, ma diventano attive solo quando una caspasi iniziatrice le taglia.",
+  "universita": "Hanno un prodominio corto. Il taglio tra la subunità grande e la piccola riordina il sito attivo. Possono essere attivate dalla caspasi-9 (via intrinseca), dalla caspasi-8 (via estrinseca) e dal granzima B.",
+  "clinica": ""
+ },
+ "caspasi-3 e -7 (esecutrici)": {
+  "tipo": "enzima",
+  "base": "Le «forbici» che smontano la cellula pezzo per pezzo.",
+  "superiore": "Caspasi esecutrici: proteasi che tagliano centinaia di proteine della cellula e causano i cambiamenti dell'apoptosi.",
+  "universita": "Cisteina-aspartato proteasi (famiglia EC 3.4.22; motivo riconosciuto DEVD). Bersagli: ICAD (liberazione della DNasi CAD), lamine nucleari, PARP1, proteine del citoscheletro (fodrina, gelsolina), ROCK1 (blebbing), lo scramblasi XKR8 (esposizione della fosfatidilserina). Inibite da XIAP.",
+  "clinica": "La caspasi-3 tagliata (attiva) si rileva con l'immunoistochimica come marcatore di apoptosi nei tessuti."
+ },
+ "ICAD-CAD (DNasi inattiva)": {
+  "tipo": "enzima",
+  "base": "Le «forbici per il DNA» tenute chiuse da un lucchetto.",
+  "superiore": "Coppia di proteine: CAD è una DNasi che taglia il DNA, ICAD è il suo inibitore. Finché sono unite il DNA è al sicuro.",
+  "universita": "CAD (caspase-activated DNase, DFF40) e ICAD (DFF45). ICAD serve anche come chaperone per il corretto ripiegamento di CAD. Le caspasi-3 e -7 tagliano ICAD; CAD libera forma dimeri e taglia il DNA nei tratti tra i nucleosomi.",
+  "clinica": ""
+ },
+ "DNA frammentato": {
+  "tipo": "molecola",
+  "base": "Il DNA della cellula che muore, tagliato a pezzetti.",
+  "superiore": "Il DNA della cellula in apoptosi tagliato tra un nucleosoma e l'altro in pezzi di lunghezza regolare.",
+  "universita": "Frammenti multipli di circa 180-200 paia di basi (la «scala» all'elettroforesi su gel), diversi dalla degradazione casuale («strisciata») della necrosi. Le estremità libere si marcano con il saggio TUNEL.",
+  "clinica": "Il saggio TUNEL e l'annessina V (che lega la fosfatidilserina) sono i metodi classici per misurare l'apoptosi nei tessuti e nelle cellule."
+ },
+ "corpi apoptotici": {
+  "tipo": "struttura",
+  "base": "I «pacchetti» chiusi in cui si divide la cellula che muore, pronti per essere raccolti.",
+  "superiore": "Frammenti della cellula in apoptosi, circondati da membrana, che contengono pezzi di nucleo e citoplasma. Non si rompono e non causano infiammazione.",
+  "universita": "Al microscopio: cellula rimpicciolita con citoplasma eosinofilo denso, cromatina condensata (picnosi) e frammentata (carioressi), protrusioni della membrana (blebbing); la membrana resta integra. Nel fegato le cellule apoptotiche si chiamano corpi di Councilman (epatite virale).",
+  "clinica": ""
+ },
+ "cellula rimossa senza infiammazione": {
+  "tipo": "struttura",
+  "base": "La cellula morta è stata «spazzata via» in silenzio, senza arrossamento né gonfiore.",
+  "superiore": "Risultato finale dell'apoptosi: i corpi apoptotici vengono mangiati dai macrofagi o dalle cellule vicine prima che si rompano.",
+  "universita": "L'efferocitosi riconosce la fosfatidilserina (recettori TIM-4, MERTK con le proteine ponte Gas6 e MFG-E8) e segnali «trova-mi» come l'LPC. I macrofagi che inglobano cellule apoptotiche producono TGF-β e IL-10 (antinfiammatori).",
+  "clinica": "Difetti nella rimozione delle cellule apoptotiche (es. carenza di C1q) espongono antigeni nucleari al sistema immunitario e predispongono al lupus."
+ },
+ "fosfatidilserina esposta": {
+  "tipo": "molecola",
+  "base": "Il cartellino «mangiami» che la cellula che muore mette fuori.",
+  "superiore": "La fosfatidilserina è un fosfolipide che di solito sta solo sul lato interno della membrana; nell'apoptosi passa sul lato esterno e segnala ai macrofagi di inglobare la cellula.",
+  "universita": "L'asimmetria è mantenuta dalle flippasi (ATP-dipendenti, es. ATP11A/C), che le caspasi inattivano tagliandole, mentre attivano lo scramblasi XKR8. L'annessina V si lega con Ca²⁺ alla fosfatidilserina esposta.",
+  "clinica": "L'annessina V marcata con un fluorocromo si usa in citometria a flusso per contare le cellule apoptotiche. La fosfatidilserina esposta sulle piastrine attivate serve anche alla coagulazione."
+ },
+ "ligando di morte (FasL, TNF, TRAIL)": {
+  "tipo": "molecola",
+  "base": "Il «messaggio di morte» che un'altra cellula consegna da fuori.",
+  "superiore": "Proteine segnale della famiglia del TNF che si legano ai recettori di morte su un'altra cellula e ne attivano l'apoptosi (via estrinseca).",
+  "universita": "Trimeri (spesso di membrana, come FasL sui linfociti T attivati). FasL lega Fas (CD95), TRAIL lega DR4/DR5, TNF lega TNFR1 (che può dare sopravvivenza tramite NF-κB, apoptosi o necroptosi secondo il contesto).",
+  "clinica": "Il sistema Fas-FasL elimina i linfociti autoreattivi: mutazioni di FAS o FASLG causano la sindrome linfoproliferativa autoimmune (ALPS). Il TNF è bersaglio dei farmaci anti-TNF (infliximab, adalimumab) nelle malattie infiammatorie."
+ },
+ "recettori di morte (Fas, TNFR1)": {
+  "tipo": "enzima",
+  "base": "Le «antenne» sulla cellula che ricevono il messaggio di morte.",
+  "superiore": "Recettori della membrana che, legando il loro ligando, attivano dall'interno la caspasi-8 e l'apoptosi.",
+  "universita": "Famiglia del recettore del TNF con un dominio di morte (DD) intracellulare. Fas trimerizzato lega FADD tramite i DD; FADD recluta la procaspasi-8 tramite i domini DED: complesso DISC. La proteina c-FLIP può bloccare l'attivazione della caspasi-8.",
+  "clinica": "Mutazioni di FAS: sindrome linfoproliferativa autoimmune (ALPS), con linfonodi e milza grandi, citopenie autoimmuni e linfociti T «doppi negativi»."
+ },
+ "FADD": {
+  "tipo": "molecola",
+  "base": "Il «gancio» che collega l'antenna della morte alle forbici.",
+  "superiore": "Proteina adattatrice che collega i recettori di morte alla procaspasi-8.",
+  "universita": "Fas-associated death domain protein: ha un dominio di morte (DD), che lega il recettore, e un dominio effettore di morte (DED), che lega la procaspasi-8.",
+  "clinica": ""
+ },
+ "caspasi-8": {
+  "tipo": "enzima",
+  "base": "La prima forbice della morte attivata dal messaggio che arriva da fuori.",
+  "superiore": "Caspasi iniziatrice della via estrinseca: si attiva sui recettori di morte e attiva le caspasi esecutrici.",
+  "universita": "Attivata per dimerizzazione nel DISC. Taglia la procaspasi-3 e -7 e la proteina BID in tBID, che attiva BAX/BAK: collega la via estrinseca a quella mitocondriale (importante negli epatociti). Blocca anche la necroptosi tagliando RIPK1 e RIPK3.",
+  "clinica": ""
+ },
+ "granzima B": {
+  "tipo": "enzima",
+  "base": "Il «veleno» che i globuli bianchi killer iniettano nelle cellule malate.",
+  "superiore": "Proteasi contenuta nei granuli dei linfociti T citotossici e delle cellule NK. Entra nella cellula bersaglio e ne attiva l'apoptosi.",
+  "universita": "Serina proteasi che, come le caspasi, taglia dopo un aspartato. Attiva direttamente la caspasi-3 e taglia BID (via mitocondriale). Entra grazie alla perforina.",
+  "clinica": ""
+ },
+ "perforina": {
+  "tipo": "molecola",
+  "base": "La proteina che fa un «buco» nella cellula malata per far entrare il veleno.",
+  "superiore": "Proteina dei linfociti T citotossici e delle cellule NK che forma pori nella membrana della cellula bersaglio, permettendo l'ingresso dei granzimi.",
+  "universita": "Rilasciata nella sinapsi immunologica insieme ai granzimi; polimerizza in presenza di Ca²⁺ formando pori simili a quelli del complemento (C9).",
+  "clinica": "Mutazioni di PRF1: linfoistiocitosi emofagocitica familiare (HLH) di tipo 2, con attivazione immunitaria incontrollata."
+ },
+ "XIAP": {
+  "tipo": "molecola",
+  "base": "Il «freno» che tiene chiuse le forbici della morte se si aprono per sbaglio.",
+  "superiore": "Proteina inibitrice dell'apoptosi (famiglia IAP): si lega alle caspasi-9, -3 e -7 e le blocca.",
+  "universita": "X-linked inhibitor of apoptosis: tre domini BIR (BIR2 blocca le caspasi-3 e -7, BIR3 la caspasi-9) e un dominio RING (ubiquitina ligasi). È neutralizzata da Smac/DIABLO.",
+  "clinica": "Mutazioni di XIAP: sindrome linfoproliferativa legata all'X di tipo 2 (XLP2), con emofagocitosi e malattia infiammatoria intestinale."
+ },
+ "necrosi": {
+  "tipo": "struttura",
+  "base": "La morte «disordinata» della cellula: si gonfia, scoppia e provoca infiammazione.",
+  "superiore": "Morte cellulare accidentale per danno grave (mancanza di ossigeno, tossine, traumi): la cellula si gonfia, la membrana si rompe e il contenuto esce causando infiammazione. Non consuma ATP, al contrario dell'apoptosi.",
+  "universita": "Rigonfiamento di cellula e organelli, rottura delle membrane, cromatina dissolta (cariolisi). Coinvolge gruppi di cellule. Tipi: coagulativa (infarto), colliquativa (cervello, ascessi), caseosa (tubercolosi), steatonecrosi (pancreatite), fibrinoide (vasculiti). Esistono anche forme «programmate» di necrosi: necroptosi (RIPK1-RIPK3-MLKL), piroptosi (gasdermina D), ferroptosi.",
+  "clinica": "Le proteine che escono dalle cellule necrotiche si misurano nel sangue: troponine (infarto del miocardio), transaminasi (fegato), CK (muscolo), LDH."
+ },
+ "base danneggiata": {
+  "tipo": "molecola",
+  "base": "Una «lettera» del DNA rovinata, come una lettera sbiadita in un libro.",
+  "superiore": "Base del DNA modificata chimicamente: per esempio ossidata (8-ossoguanina), deaminata (la citosina diventa uracile), alchilata (aggiunta di un metile) o persa.",
+  "universita": "Danni spontanei frequentissimi: depurinazione (in una cellula umana si stimano migliaia di eventi al giorno), deaminazione della citosina in uracile e della 5-metilcitosina in timina, ossidazione da ROS. Riparati soprattutto dalla BER.",
+  "clinica": "La deaminazione della 5-metilcitosina in timina non viene riconosciuta come base estranea: per questo le CpG sono i punti più mutati del genoma (transizioni C→T)."
+ },
+ "sito abasico (AP)": {
+  "tipo": "molecola",
+  "base": "Un buco nel DNA dove manca una lettera.",
+  "superiore": "Punto del DNA in cui lo zucchero è rimasto senza base (apurinico o apirimidinico): si forma spontaneamente o quando una glicosilasi toglie una base danneggiata.",
+  "universita": "Non dà informazione per la copia: se non riparato la polimerasi inserisce spesso una A di fronte (regola della A). Lo zucchero aperto è instabile e può rompere il filamento.",
+  "clinica": ""
+ },
+ "DNA glicosilasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che trova la lettera rovinata e la stacca.",
+  "superiore": "Enzimi che riconoscono una base danneggiata o estranea e la staccano dallo zucchero, iniziando la riparazione per escissione di basi (BER).",
+  "universita": "Idrolasi dei legami N-glicosidici (EC 3.2.2). Ognuna è specifica: UNG (uracile), OGG1 (8-ossoguanina appaiata a C), MUTYH (A appaiata a 8-ossoguanina), MPG (basi alchilate), TDG (T appaiata a G). Fanno «uscire» la base dall'elica (base flipping). Alcune (OGG1) hanno anche attività liasica e tagliano lo scheletro.",
+  "clinica": "Mutazioni di MUTYH (in entrambe le copie): poliposi associata a MUTYH (MAP), con numerosi polipi del colon e mutazioni G:C→T:A nel gene APC. Il 5-fluorouracile incorporato nel DNA viene tolto dalle glicosilasi."
+ },
+ "DNA con un nucleotide mancante": {
+  "tipo": "molecola",
+  "base": "Il DNA con un piccolo buco tagliato, pronto per essere riempito.",
+  "superiore": "Filamento interrotto nel punto in cui c'era la base danneggiata: manca un solo nucleotide.",
+  "universita": "Dopo il taglio di APE1 il filamento ha un 3'-OH e un residuo di zucchero (5'-dRP) da togliere. Le interruzioni di un filamento sono riconosciute anche da PARP1, che sintetizza catene di poli(ADP-ribosio) e richiama XRCC1.",
+  "clinica": "Gli inibitori di PARP (olaparib, niraparib) bloccano la riparazione delle interruzioni di un filamento: nelle cellule tumorali senza BRCA1 o BRCA2 queste lesioni diventano rotture non riparabili (letalità sintetica). Si usano nei tumori di ovaio, mammella, prostata e pancreas con mutazioni BRCA."
+ },
+ "AP endonucleasi (APE1)": {
+  "tipo": "enzima",
+  "base": "Le «forbici» che tagliano il filo del DNA dove manca la lettera.",
+  "superiore": "Enzima che taglia lo scheletro di zucchero-fosfato vicino a un sito senza base, preparando il buco da riempire.",
+  "universita": "Endonucleasi che idrolizza il legame fosfodiestere al lato 5' del sito AP, lasciando un 3'-OH e un 5'-desossiribosio fosfato. È anche un regolatore redox di fattori di trascrizione (Ref-1).",
+  "clinica": ""
+ },
+ "DNA polimerasi β": {
+  "tipo": "enzima",
+  "base": "La piccola fotocopiatrice che rimette la lettera mancante.",
+  "superiore": "DNA polimerasi della riparazione per escissione di basi: toglie il resto di zucchero e inserisce il nucleotide giusto nel buco.",
+  "universita": "Polimerasi piccola della famiglia X, senza correzione di bozze. Ha un dominio liasico (8 kDa) che rimuove il 5'-dRP. Riempie di solito un solo nucleotide (BER a tratto corto); poi la DNA ligasi III con XRCC1 sigilla. Nella BER a tratto lungo lavorano pol δ/ε, FEN1 e ligasi I.",
+  "clinica": ""
+ },
+ "dimero di timina": {
+  "tipo": "molecola",
+  "base": "Due lettere del DNA «incollate» tra loro dalla luce del sole.",
+  "superiore": "Danno causato dai raggi UV: due timine (o altre pirimidine) vicine sullo stesso filamento si legano tra loro e deformano la doppia elica.",
+  "universita": "Due tipi principali: dimeri di pirimidine a ciclobutano (CPD, i più frequenti) e fotoprodotti 6-4 (deformano di più l'elica). Bloccano DNA e RNA polimerasi. Nell'uomo li toglie solo la NER (molti altri organismi hanno la fotoliasi). Se copiati male danno transizioni C→T e CC→TT, la «firma» degli UV.",
+  "clinica": "La firma mutazionale UV si trova nel melanoma e nei carcinomi della pelle (basocellulare, squamocellulare). La protezione solare riduce i dimeri."
+ },
+ "lesione riconosciuta": {
+  "tipo": "struttura",
+  "base": "Il punto rovinato del DNA è stato trovato e segnato.",
+  "superiore": "Danno del DNA a cui si sono legate le proteine di riconoscimento: da qui parte la riparazione per escissione di nucleotidi (NER).",
+  "universita": "Nella NER globale XPC-RAD23B (con UV-DDB, cioè DDB1-DDB2/XPE, per i CPD) riconosce la distorsione; nella NER accoppiata alla trascrizione (TC-NER) il segnale è la RNA polimerasi II bloccata, con CSB, CSA e UVSSA. Entrambe proseguono con TFIIH.",
+  "clinica": "Mutazioni di CSA o CSB: sindrome di Cockayne (nanismo, invecchiamento precoce, neurodegenerazione, fotosensibilità ma senza aumento dei tumori della pelle)."
+ },
+ "XPC (riconoscimento della lesione)": {
+  "tipo": "enzima",
+  "base": "La «sentinella» che trova i punti del DNA deformati, per esempio dal sole.",
+  "superiore": "Proteina che scorre lungo il DNA e riconosce le deformazioni della doppia elica, avviando la riparazione per escissione di nucleotidi.",
+  "universita": "XPC-RAD23B-centrina 2: riconosce il filamento non danneggiato di fronte alla deformazione, non la lesione stessa; per questo vede molti danni diversi (dimeri UV, addotti del cisplatino, addotti del benzopirene). Recluta TFIIH.",
+  "clinica": "Mutazioni di XPC: xeroderma pigmentoso del gruppo C, uno dei più frequenti."
+ },
+ "DNA aperto attorno alla lesione": {
+  "tipo": "struttura",
+  "base": "Il DNA aperto come una bolla attorno al punto rovinato.",
+  "superiore": "Tratto di DNA in cui la doppia elica è stata aperta da TFIIH attorno al danno, pronto per i tagli.",
+  "universita": "Bolla di circa 25-30 nucleotidi. L'elicasi XPD si ferma sulla lesione (verifica del danno). XPA lega il DNA danneggiato e organizza il complesso; RPA ricopre il filamento integro e posiziona le due endonucleasi.",
+  "clinica": "Mutazioni di XPA: xeroderma pigmentoso del gruppo A, con forme gravi e danni neurologici."
+ },
+ "varco di circa 30 nucleotidi": {
+  "tipo": "molecola",
+  "base": "Il buco lasciato nel DNA dopo aver tagliato via il pezzo rovinato.",
+  "superiore": "Tratto a filamento singolo rimasto dopo la rimozione dell'oligonucleotide danneggiato: va riempito copiando il filamento sano.",
+  "universita": "Lungo come il frammento rimosso (circa 24-32 nucleotidi). Il taglio di XPF-ERCC1 lascia un 3'-OH da cui la polimerasi può partire anche prima del taglio di XPG.",
+  "clinica": ""
+ },
+ "endonucleasi XPF-ERCC1 e XPG": {
+  "tipo": "enzima",
+  "base": "Le «forbici» che tagliano il pezzo rovinato da una parte e dall'altra.",
+  "superiore": "Due enzimi che tagliano lo stesso filamento ai due lati del danno: XPF-ERCC1 dal lato 5', XPG dal lato 3'. Il pezzo con il danno viene così rimosso.",
+  "universita": "Endonucleasi specifiche per strutture: tagliano al confine tra DNA a doppio e a singolo filamento della bolla. XPF-ERCC1 serve anche a riparare i legami crociati tra i due filamenti (con la via di Fanconi).",
+  "clinica": "Mutazioni di XPF o XPG: xeroderma pigmentoso (XPG anche con quadro di Cockayne). Il cisplatino forma addotti riparati dalla NER: tumori con molta ERCC1 tendono a resistere al cisplatino."
+ },
+ "oligonucleotide con la lesione": {
+  "tipo": "molecola",
+  "base": "Il pezzetto di DNA rovinato tagliato via e buttato.",
+  "superiore": "Breve frammento di DNA a filamento singolo (circa 30 nucleotidi) che contiene il danno e viene eliminato dalla NER.",
+  "universita": "Viene rilasciato legato a TFIIH e poi degradato. La lunghezza del frammento è caratteristica: negli eucarioti 24-32 nucleotidi, nei batteri (sistema UvrABC) 12-13.",
+  "clinica": ""
+ },
+ "tratto del filamento nuovo rimosso": {
+  "tipo": "molecola",
+  "base": "La parte di copia con l'errore, cancellata per essere riscritta.",
+  "superiore": "Buco nel filamento appena sintetizzato, dove si trovava la base sbagliata: verrà ricopiato usando il filamento vecchio, che è quello giusto.",
+  "universita": "L'esonucleasi EXO1 parte dall'interruzione creata da MutLα e rimuove il filamento oltre il mismatch, anche per centinaia di nucleotidi; RPA protegge lo stampo.",
+  "clinica": ""
+ },
+ "rottura a doppio filamento": {
+  "tipo": "molecola",
+  "base": "Il DNA spezzato del tutto, come una corda tagliata in due.",
+  "superiore": "Il danno più pericoloso: entrambi i filamenti del DNA sono rotti nello stesso punto. Se non riparata può far perdere un pezzo di cromosoma o unire cromosomi diversi.",
+  "universita": "Cause: radiazioni ionizzanti, ROS, inibitori delle topoisomerasi, forcelle che collassano. Sono anche prodotte apposta nella ricombinazione V(D)J dei linfociti (RAG1/RAG2), nello scambio di classe e nella meiosi (Spo11). Riparate da NHEJ o ricombinazione omologa.",
+  "clinica": "Rotture riparate male causano traslocazioni: t(9;22) BCR-ABL (leucemia mieloide cronica), t(8;14) MYC (linfoma di Burkitt)."
+ },
+ "rottura segnalata (γH2AX)": {
+  "tipo": "struttura",
+  "base": "La rottura del DNA con intorno le «bandierine» d'allarme.",
+  "superiore": "Tratto di cromatina attorno a una rottura in cui l'istone H2AX è fosforilato: richiama le proteine della riparazione e del punto di controllo.",
+  "universita": "ATM (e DNA-PK, ATR) fosforila la Ser139 di H2AX (γH2AX) per un tratto molto lungo attorno alla rottura. MDC1 lega γH2AX e amplifica il segnale; RNF8 e RNF168 ubiquitinano gli istoni e richiamano 53BP1 (che favorisce la NHEJ) e BRCA1 (che favorisce la ricombinazione omologa).",
+  "clinica": "I «foci» di γH2AX si contano al microscopio a fluorescenza per misurare le rotture del DNA (es. dopo radioterapia)."
+ },
+ "estremità riunite (NHEJ)": {
+  "tipo": "molecola",
+  "base": "Le due parti del DNA spezzato incollate di nuovo, ma a volte con qualche lettera persa.",
+  "superiore": "Risultato dell'unione delle estremità non omologhe (NHEJ): le due estremità rotte sono state saldate direttamente, senza stampo. Spesso restano piccole delezioni o inserzioni.",
+  "universita": "Via principale nelle cellule umane, attiva in tutto il ciclo. Le estremità vengono rese compatibili da Artemis (nucleasi attivata da DNA-PKcs) e polimerasi della famiglia X (pol μ, pol λ); XRCC4-XLF stabilizzano la ligasi IV. È essenziale per la ricombinazione V(D)J.",
+  "clinica": ""
+ },
+ "Ku70/80, DNA-PKcs e DNA ligasi IV": {
+  "tipo": "enzima",
+  "base": "La squadra che riattacca in fretta le due parti del DNA spezzato.",
+  "superiore": "Proteine dell'unione delle estremità non omologhe (NHEJ): Ku riconosce le estremità, DNA-PKcs le tiene vicine e le prepara, la ligasi IV le salda.",
+  "universita": "Ku (eterodimero Ku70-Ku80) è un anello che infila le estremità del DNA. DNA-PKcs è una chinasi della famiglia PIKK attivata da Ku; fosforila Artemis e se stessa. La ligasi IV (con XRCC4 e XLF) usa ATP.",
+  "clinica": "Difetti di DNA-PKcs (PRKDC), Artemis o ligasi IV: immunodeficienza combinata grave (SCID) radiosensibile, perché non si completa la ricombinazione V(D)J; la sindrome LIG4 ha anche microcefalia."
+ },
+ "BRCA1, BRCA2 e RAD51": {
+  "tipo": "enzima",
+  "base": "La squadra che aggiusta il DNA spezzato copiando la parte uguale dalla «fotocopia» gemella.",
+  "superiore": "Proteine della ricombinazione omologa: usano il cromatidio fratello come stampo per riparare una rottura a doppio filamento senza errori. BRCA1 e BRCA2 sono geni oncosoppressori.",
+  "universita": "BRCA1 (con CtIP e MRN) favorisce la resezione delle estremità in S/G2 e contrasta 53BP1. BRCA2 (con PALB2) carica RAD51 sulle code 3' ricoperte da RPA. RAD51 forma un filamento nucleoproteico che cerca la sequenza omologa e invade la doppia elica (D-loop); la polimerasi copia lo stampo e le strutture finali vengono risolte.",
+  "clinica": "Mutazioni germinali di BRCA1 e BRCA2: alto rischio di tumori della mammella e dell'ovaio (anche prostata e pancreas, soprattutto BRCA2). Mutazioni bialleliche di BRCA2 causano l'anemia di Fanconi (FANCD1). I tumori con BRCA mutato sono sensibili ai sali di platino e agli inibitori di PARP."
+ },
+ "lesione superata": {
+  "tipo": "struttura",
+  "base": "La copia del DNA ha «saltato l'ostacolo» senza fermarsi.",
+  "superiore": "La replicazione è passata oltre un danno non riparato grazie a una polimerasi speciale. Il danno è ancora lì, ma la cellula non si blocca.",
+  "universita": "Dopo il blocco della forcella PCNA viene monoubiquitinata (RAD6-RAD18) e richiama le polimerasi translesione (famiglia Y: η, ι, κ, REV1; e pol ζ). La lesione verrà riparata dopo. È una tolleranza del danno, a volte mutagena.",
+  "clinica": ""
+ },
+ "DNA polimerasi η (translesione)": {
+  "tipo": "enzima",
+  "base": "Una fotocopiatrice speciale che riesce a copiare anche le lettere incollate dal sole.",
+  "superiore": "DNA polimerasi translesione: ha un sito attivo largo che accoglie il DNA danneggiato e riesce a copiare oltre un dimero di timina, mettendo le basi giuste.",
+  "universita": "Famiglia Y (gene POLH). Inserisce due A di fronte al dimero di timina CPD in modo efficiente e corretto. Senza correzione di bozze: su DNA normale sbaglia molto più delle polimerasi replicative, per questo lavora solo per brevi tratti.",
+  "clinica": "Mutazioni di POLH: xeroderma pigmentoso variante (XP-V): NER normale ma molti tumori della pelle, perché i dimeri vengono copiati da polimerasi meno precise."
+ },
+ "radiazioni ionizzanti": {
+  "tipo": "energia",
+  "base": "Raggi invisibili molto forti (come i raggi X) che possono spezzare il DNA.",
+  "superiore": "Radiazioni con energia sufficiente a strappare elettroni agli atomi (raggi X, raggi γ, particelle α e β). Danneggiano il DNA direttamente o producendo radicali liberi dall'acqua.",
+  "universita": "Gran parte del danno è indiretto, tramite il radicale ossidrile (·OH) prodotto dalla radiolisi dell'acqua. Producono basi ossidate, rotture di un filamento e, più pericolose, rotture a doppio filamento (anche a grappolo). La dose si misura in gray (Gy).",
+  "clinica": "La radioterapia uccide le cellule tumorali con rotture del DNA; l'ossigeno ne aumenta l'effetto (i tumori ipossici sono più radioresistenti). L'esposizione aumenta il rischio di leucemie e tumori solidi; ATM e BRCA mutati rendono più sensibili."
+ },
+ "specie reattive dell'ossigeno (ROS)": {
+  "tipo": "piccola",
+  "base": "Piccole particelle «arrabbiate» che si formano usando l'ossigeno e possono rovinare il DNA.",
+  "superiore": "Molecole derivate dall'ossigeno molto reattive: anione superossido (O₂⁻·), perossido di idrogeno (H₂O₂), radicale ossidrile (·OH). Si formano normalmente nei mitocondri e possono ossidare DNA, proteine e lipidi.",
+  "universita": "Prodotte soprattutto dai complessi I e III della catena respiratoria, dalla NADPH ossidasi dei fagociti, da radiazioni e infiammazione. Il ·OH (reazione di Fenton con Fe²⁺) è il più dannoso. Difese: superossido dismutasi, catalasi, glutatione perossidasi. Lesione tipica del DNA: 8-ossoguanina, che si appaia con A (transversioni G:C→T:A).",
+  "clinica": "Lo stress ossidativo contribuisce a invecchiamento, aterosclerosi e tumori. La NADPH ossidasi usa le ROS per uccidere i batteri: se manca, malattia granulomatosa cronica."
+ },
+ "lesione del DNA": {
+  "tipo": "molecola",
+  "base": "Un punto rovinato nel DNA, che si può ancora aggiustare.",
+  "superiore": "Alterazione chimica o fisica del DNA (base modificata, base mancante, dimero, rottura). Non è ancora una mutazione: lo diventa solo se viene copiata prima di essere riparata.",
+  "universita": "Lesioni spontanee (depurinazione, deaminazione, ossidazione) ed esogene (UV, radiazioni, agenti alchilanti, idrocarburi policiclici, aflatossina). Ogni agente lascia una «firma mutazionale» riconoscibile nel sequenziamento dei tumori.",
+  "clinica": ""
+ },
+ "agenti mutageni": {
+  "tipo": "enzima",
+  "base": "Le cose che possono rovinare il DNA: troppo sole, fumo, alcune sostanze chimiche.",
+  "superiore": "Agenti fisici, chimici o biologici che aumentano la frequenza delle mutazioni: radiazioni (UV, raggi X), sostanze chimiche (benzopirene del fumo, aflatossina, agenti alchilanti), alcuni virus. Molti sono anche cancerogeni.",
+  "universita": "Meccanismi: analoghi delle basi (5-bromouracile), modificazione delle basi (agenti alchilanti, acido nitroso che deamina), agenti intercalanti (acridine: inserzioni e delezioni), addotti voluminosi (benzopirene diolepossido sulla guanina), legami crociati (cisplatino, mostarde azotate). Il test di Ames misura la mutagenicità sui batteri.",
+  "clinica": "Esempi: fumo di tabacco → carcinoma polmonare; aflatossina B1 (cibi ammuffiti) → epatocarcinoma; UV → tumori della pelle; amine aromatiche → carcinoma della vescica. Anche alcuni chemioterapici (alchilanti, inibitori della topoisomerasi II) possono causare leucemie secondarie."
+ },
+ "mutazione fissata nei due filamenti": {
+  "tipo": "molecola",
+  "base": "L'errore ormai copiato su tutte e due le metà del DNA: non si può più correggere.",
+  "superiore": "Mutazione vera e propria: la coppia di basi è cambiata su entrambi i filamenti, quindi i sistemi di riparazione non riconoscono più l'errore e lo copiano a ogni divisione.",
+  "universita": "Le sostituzioni si dividono in transizioni (purina↔purina o pirimidina↔pirimidina, più frequenti) e transversioni (purina↔pirimidina). Una mutazione può nascere in qualunque cellula; quelle delle cellule germinali passano alla generazione successiva.",
+  "clinica": ""
+ },
+ "mRNA alterato": {
+  "tipo": "molecola",
+  "base": "La copia della ricetta che porta anche l'errore.",
+  "superiore": "mRNA prodotto da un gene mutato: ha una sequenza diversa, oppure è stato tagliato male (splicing), oppure è prodotto in quantità sbagliata.",
+  "universita": "Mutazioni dei siti di splicing (GU-AG), di sequenze regolatrici esoniche o introniche, o la creazione di siti criptici cambiano l'mRNA anche quando la parte codificante è intatta. Un mRNA con stop prematuro è di solito eliminato dalla NMD.",
+  "clinica": "Talassemie da splicing: nella β-talassemia la mutazione IVS1-110 G→A, frequente nel Mediterraneo, crea un sito di splicing nuovo nell'introne 1 e riduce molto la β-globina normale (β⁺)."
+ },
+ "proteina alterata": {
+  "tipo": "molecola",
+  "base": "Una proteina costruita con una ricetta sbagliata: può funzionare male o non funzionare.",
+  "superiore": "Proteina prodotta da un gene mutato: può avere un amminoacido diverso, essere più corta, avere una sequenza tutta cambiata dopo un certo punto, o non essere prodotta.",
+  "universita": "L'effetto dipende da dove cade la mutazione (sito attivo, interfaccia tra subunità, punto essenziale per il ripiegamento) e dal tipo di amminoacido sostituito (conservativa o no). Alcune proteine mutate interferiscono con quella normale (effetto dominante negativo, es. collagene nell'osteogenesi imperfetta, p53).",
+  "clinica": ""
+ },
+ "perdita di funzione": {
+  "tipo": "struttura",
+  "base": "La proteina sbagliata non fa più il suo lavoro, o lo fa meno.",
+  "superiore": "Mutazione che riduce o elimina l'attività della proteina. Di solito è recessiva: la copia sana dell'altro cromosoma basta (servono due copie mutate per la malattia).",
+  "universita": "Eccezioni dominanti: aploinsufficienza (metà proteina non basta, es. ipercolesterolemia familiare con LDLR, molte malattie del connettivo) ed effetto dominante negativo. Nei geni oncosoppressori servono di solito due colpi (Knudson).",
+  "clinica": "Esempi: fibrosi cistica (CFTR F508del: proteina mal ripiegata e degradata; i modulatori come elexacaftor-tezacaftor-ivacaftor ne migliorano ripiegamento e funzione), fenilchetonuria, anemia di Fanconi, β-talassemia."
+ },
+ "proteasoma": {
+  "tipo": "enzima",
+  "base": "Il «tritarifiuti» della cellula che fa a pezzi le proteine vecchie o sbagliate.",
+  "superiore": "Grande complesso di proteasi a forma di botte che distrugge le proteine marcate con ubiquitina (sbagliate, danneggiate o che non servono più, come le cicline).",
+  "universita": "Proteasoma 26S: nucleo catalitico 20S (con attività simili a chimotripsina, tripsina e caspasi, siti con treonina N-terminale) e particelle regolatrici 19S che riconoscono l'ubiquitina, srotolano la proteina con ATP e la infilano nella botte. Produce peptidi brevi, alcuni presentati dall'MHC di classe I.",
+  "clinica": "Inibitori del proteasoma (bortezomib, carfilzomib) nel mieloma multiplo. Nelle cellule con proteine mutate mal ripiegate (es. CFTR F508del) la degradazione da parte del sistema ubiquitina-proteasoma causa la perdita di funzione."
+ },
+ "guadagno di funzione": {
+  "tipo": "struttura",
+  "base": "La proteina sbagliata lavora troppo o fa un lavoro nuovo e dannoso.",
+  "superiore": "Mutazione che rende la proteina più attiva, sempre accesa o capace di una funzione nuova. Di solito è dominante: basta una copia mutata.",
+  "universita": "Meccanismi: proteina che non si spegne (RAS che non idrolizza più il GTP, recettori tirosin-chinasici sempre attivi), proteina prodotta in eccesso (amplificazione, traslocazioni), proteina con proprietà tossiche (aggregati della poliglutammina nella còrea di Huntington).",
+  "clinica": "Esempi: acondroplasia (FGFR3 G380R), oncogeni (KRAS, BRAF V600E: bersaglio di vemurafenib e dabrafenib nel melanoma), JAK2 V617F nelle neoplasie mieloproliferative, còrea di Huntington."
+ },
+ "sistemi di riparazione del DNA": {
+  "tipo": "enzima",
+  "base": "Le «squadre di manutenzione» che controllano e aggiustano il DNA ogni giorno.",
+  "superiore": "Insieme degli enzimi che correggono i danni e gli errori del DNA: escissione di basi (BER), escissione di nucleotidi (NER), riparazione dei mismatch (MMR), riparazione delle rotture a doppio filamento (NHEJ e ricombinazione omologa).",
+  "universita": "Ogni sistema riconosce un tipo di danno; quasi tutti rimuovono il tratto danneggiato e lo risintetizzano dal filamento complementare. Collegati ai punti di controllo del ciclo (ATM/ATR, p53) che danno il tempo di riparare.",
+  "clinica": "Malattie da difetti della riparazione: xeroderma pigmentoso (NER), sindrome di Lynch (MMR), tumori da BRCA1/2 (ricombinazione omologa), atassia-teleangectasia (ATM), anemia di Fanconi (legami crociati), SCID radiosensibili (NHEJ)."
+ },
+ "clone di cellule mutate": {
+  "tipo": "struttura",
+  "base": "Un gruppo di cellule nate tutte dalla stessa cellula, che hanno tutte lo stesso errore.",
+  "superiore": "Insieme di cellule che derivano per mitosi da una sola cellula con una mutazione somatica: tutte portano la stessa mutazione, le altre cellule del corpo no.",
+  "universita": "Se la mutazione dà un vantaggio di crescita il clone si espande e può acquisire altre mutazioni (evoluzione clonale). Un tumore nasce di solito dall'accumulo di più mutazioni in oncogeni e oncosoppressori (es. sequenza adenoma-carcinoma del colon: APC, KRAS, TP53). Le mutazioni avvenute presto nello sviluppo danno mosaicismo.",
+  "clinica": "Ematopoiesi clonale di potenziale indeterminato (CHIP): con l'età molte persone hanno cloni del sangue con mutazioni (DNMT3A, TET2), associati a più rischio di leucemia e di malattie cardiovascolari."
+ },
+ "mutazione ereditaria": {
+  "tipo": "molecola",
+  "base": "Un errore nel DNA che passa da genitori a figli.",
+  "superiore": "Mutazione germinale: presente in un gamete, passa al figlio, che la ha in tutte le cellule del corpo e può trasmetterla a sua volta. Segue le leggi dell'ereditarietà (dominante, recessiva, legata all'X).",
+  "universita": "Può essere ereditata da un genitore o comparire per la prima volta nel figlio (mutazione de novo, più frequente con l'età avanzata del padre). Il mosaicismo germinale spiega fratelli malati con genitori sani in malattie dominanti. Mutazioni del DNA mitocondriale si trasmettono solo per via materna.",
+  "clinica": "Si studiano con la consulenza genetica e i test genetici (pannelli, esoma); in gravidanza con diagnosi prenatale e test sul DNA fetale libero."
+ },
+ "mutazione silente": {
+  "tipo": "molecola",
+  "base": "Una lettera cambiata che però non cambia il significato della parola.",
+  "superiore": "Sostituzione di una base che non cambia l'amminoacido, perché il codice genetico è ridondante (più codoni per lo stesso amminoacido). Spesso riguarda la terza base del codone.",
+  "universita": "Detta anche sinonima. Non sempre è innocua: può creare o distruggere un sito di splicing o una sequenza regolatrice esonica, o cambiare la velocità di traduzione.",
+  "clinica": "Nel gene SMN2 una sostituzione C→T nell'esone 7, senza cambio di amminoacido, fa saltare l'esone: per questo SMN2 non compensa SMN1 nell'atrofia muscolare spinale."
+ },
+ "mutazione missenso": {
+  "tipo": "molecola",
+  "base": "Una lettera cambiata che cambia un mattone della proteina.",
+  "superiore": "Sostituzione di una base che cambia un amminoacido con un altro. L'effetto va da nessuno a gravissimo, secondo dove cade e quanto è diverso il nuovo amminoacido.",
+  "universita": "Conservativa se l'amminoacido nuovo ha proprietà simili (es. leucina → isoleucina), non conservativa se diverse (es. acido → idrofobico). Molte varianti missenso sono «di significato incerto» (VUS) e vanno interpretate con dati di popolazione, funzionali e familiari.",
+  "clinica": "Anemia falciforme: nel gene della β-globina GAG → GTG, acido glutammico → valina in posizione 6: l'emoglobina S polimerizza quando cede ossigeno e i globuli rossi diventano a falce."
+ },
+ "mutazione nonsenso": {
+  "tipo": "molecola",
+  "base": "Una lettera cambiata che mette un «punto» a metà frase: la proteina resta tronca.",
+  "superiore": "Sostituzione di una base che trasforma il codone di un amminoacido in un codone di stop (UAA, UAG, UGA): la traduzione si ferma prima e la proteina è più corta.",
+  "universita": "L'mRNA con stop prematuro viene spesso distrutto dalla NMD: non si forma proteina (perdita di funzione). Se lo stop cade nell'ultimo esone si forma una proteina tronca, che può avere effetto dominante negativo.",
+  "clinica": "β⁰-talassemia da codone 39 (CAG → UAG nell'mRNA): la forma più frequente in Sardegna. Molti casi di distrofia di Duchenne e di fibrosi cistica sono dovuti a mutazioni nonsenso."
+ },
+ "mutazione frameshift": {
+  "tipo": "molecola",
+  "base": "Una lettera in più o in meno che sposta tutte le parole della frase: dopo quel punto non ha più senso.",
+  "superiore": "Inserzione o delezione di un numero di basi non multiplo di 3: cambia la cornice di lettura dei codoni, quindi cambiano tutti gli amminoacidi che seguono e di solito compare presto un codone di stop.",
+  "universita": "Spesso l'mRNA viene eliminato dalla NMD. Le inserzioni o delezioni multiple di 3 invece tolgono o aggiungono amminoacidi senza spostare la cornice (in-frame). Frequenti nei microsatelliti quando manca la riparazione dei mismatch.",
+  "clinica": "Regola della cornice di lettura nella distrofina: delezioni che spostano la cornice → distrofia di Duchenne (grave, niente distrofina); delezioni in-frame → distrofia di Becker (più lieve, distrofina più corta). La malattia di Tay-Sachs negli ebrei ashkenaziti è spesso dovuta a un'inserzione di 4 basi in HEXA."
+ },
+ "espansione di triplette": {
+  "tipo": "molecola",
+  "base": "Un pezzetto di tre lettere ripetuto troppe volte, come un disco rotto.",
+  "superiore": "Mutazione in cui una sequenza di tre basi ripetuta in tandem aumenta di numero oltre una soglia. Può peggiorare passando da una generazione all'altra (anticipazione).",
+  "universita": "Instabile in meiosi (e nelle cellule somatiche). Le espansioni nella parte codificante (CAG → poliglutammina) danno proteine tossiche; quelle nelle parti non codificanti spengono il gene (CGG nell'X fragile, GAA in Friedreich) o producono RNA tossici (CTG nella distrofia miotonica).",
+  "clinica": "Còrea di Huntington (CAG in HTT, anticipazione per via paterna), sindrome dell'X fragile (CGG in FMR1, la più frequente causa ereditaria di disabilità intellettiva), distrofia miotonica di tipo 1 (CTG in DMPK, forma congenita per via materna), atassia di Friedreich (GAA in FXN), atassie spinocerebellari."
+ },
+ "oncogene": {
+  "tipo": "molecola",
+  "base": "Un gene che, quando è rotto, fa da «acceleratore bloccato»: spinge la cellula a dividersi sempre.",
+  "superiore": "Forma mutata e iperattiva di un proto-oncogene, un gene normale che stimola la crescita e la divisione della cellula. Basta una copia mutata (guadagno di funzione, dominante).",
+  "universita": "Meccanismi di attivazione: mutazioni puntiformi (RAS, BRAF, EGFR), amplificazione (HER2/ERBB2, MYCN), traslocazioni (BCR-ABL, MYC nel Burkitt), inserzione di virus. I prodotti sono fattori di crescita, recettori, trasduttori del segnale, fattori di trascrizione, regolatori del ciclo (ciclina D1, CDK4).",
+  "clinica": "Bersagli della terapia a bersaglio molecolare: imatinib (BCR-ABL, leucemia mieloide cronica), trastuzumab (HER2), osimertinib (EGFR), vemurafenib (BRAF V600E), sotorasib (KRAS G12C)."
+ },
+ "gene oncosoppressore": {
+  "tipo": "molecola",
+  "base": "Un gene che fa da «freno» alla divisione della cellula: se si rompe, la cellula non si ferma più.",
+  "superiore": "Gene che normalmente frena la divisione cellulare, ripara il DNA o avvia l'apoptosi. Per perdere il freno servono di solito entrambe le copie mutate (perdita di funzione, recessiva a livello della cellula).",
+  "universita": "Ipotesi dei due colpi di Knudson: nelle forme ereditarie il primo colpo è nella linea germinale, il secondo (spesso perdita di eterozigosi) avviene in una cellula somatica; per questo i tumori ereditari sono precoci e multipli. Esempi: RB1, TP53, APC, BRCA1/2, geni dei mismatch, CDKN2A, VHL, NF1, PTEN.",
+  "clinica": "Sindromi tumorali ereditarie: retinoblastoma (RB1), Li-Fraumeni (TP53), poliposi adenomatosa familiare (APC), tumori ereditari di mammella e ovaio (BRCA1/2), sindrome di Lynch (MLH1, MSH2...), von Hippel-Lindau (VHL)."
+ }
+}

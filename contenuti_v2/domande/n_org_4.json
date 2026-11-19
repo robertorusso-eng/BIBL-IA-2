@@ -1,0 +1,962 @@
+[
+ {
+  "id": "NORG-121",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Qual è il bilancio netto della glicolisi per una molecola di glucosio?",
+  "opzioni": {
+   "A": "2 piruvato, 2 ATP e 2 NADH",
+   "B": "2 piruvato, 4 ATP e 2 NADH",
+   "C": "1 piruvato, 2 ATP e 1 NADH",
+   "D": "2 piruvato, 2 ATP e 2 FADH₂",
+   "E": "2 acetil-CoA, 2 ATP e 2 NADH"
+  },
+  "giusta": "A",
+  "perche": "Nella fase preparatoria si spendono 2 ATP (esochinasi e fosfofruttochinasi-1); nella fase di recupero si formano 4 ATP (2 dalla fosfoglicerato chinasi e 2 dalla piruvato chinasi) e 2 NADH (gliceraldeide-3-fosfato deidrogenasi). Il guadagno netto è quindi 2 ATP, con 2 piruvato e 2 NADH. Rispondere 4 ATP significa dimenticare l'investimento iniziale; l'acetil-CoA si forma solo dopo, nei mitocondri.",
+  "semplice": "La glicolisi è un piccolo investimento: si spendono 2 ATP per «aprire» il glucosio e se ne guadagnano 4, per un utile netto di 2 ATP, più due NADH.",
+  "passaggi": [
+   "Conta l'ATP speso: 2 nella fase preparatoria",
+   "Conta l'ATP prodotto: 4 nella fase di recupero",
+   "Bilancio ATP: 4 − 2 = 2",
+   "Aggiungi 2 NADH e 2 piruvato"
+  ],
+  "concetto": "bilancio della glicolisi"
+ },
+ {
+  "id": "NORG-122",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Quale enzima catalizza la principale tappa regolatoria della glicolisi, la prima irreversibile e specifica della via?",
+  "opzioni": {
+   "A": "Esochinasi",
+   "B": "Aldolasi",
+   "C": "Fosfofruttochinasi-1",
+   "D": "Gliceraldeide-3-fosfato deidrogenasi",
+   "E": "Fosfoglucosio isomerasi"
+  },
+  "giusta": "C",
+  "perche": "La fosfofruttochinasi-1 trasforma il fruttosio-6-fosfato in fruttosio-1,6-bisfosfato consumando ATP: è la prima tappa che impegna lo zucchero esclusivamente nella glicolisi. È regolata allostericamente: inibita da ATP e citrato (segnali di abbondanza di energia), attivata da AMP e fruttosio-2,6-bisfosfato. L'esochinasi catalizza una tappa irreversibile, ma il glucosio-6-fosfato può prendere anche altre vie, come la sintesi del glicogeno.",
+  "semplice": "La fosfofruttochinasi-1 è il «semaforo» della glicolisi: se la cellula ha già tanta energia (molto ATP) diventa rosso, se ne ha poca (molto AMP) diventa verde.",
+  "passaggi": [
+   "Cerca la tappa irreversibile che impegna il substrato solo nella glicolisi",
+   "Il glucosio-6-fosfato ha più destini, il fruttosio-1,6-bisfosfato no",
+   "L'enzima di questa tappa è la fosfofruttochinasi-1",
+   "È regolata da ATP, AMP, citrato e fruttosio-2,6-bisfosfato"
+  ],
+  "concetto": "PFK-1 regola la glicolisi"
+ },
+ {
+  "id": "NORG-123",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Durante uno sprint, nelle fibre muscolari in carenza di ossigeno il piruvato viene ridotto a lattato. Qual è la funzione principale di questa reazione?",
+  "opzioni": {
+   "A": "Produrre direttamente ATP in grande quantità",
+   "B": "Trasformare il piruvato in glucosio",
+   "C": "Consumare l'acido lattico accumulato",
+   "D": "Produrre CO₂ per la respirazione",
+   "E": "Rigenerare il NAD⁺ necessario alla glicolisi per continuare"
+  },
+  "giusta": "E",
+  "perche": "La lattato deidrogenasi riduce il piruvato a lattato ossidando il NADH a NAD⁺. Senza ossigeno il NADH non può essere riossidato dalla catena respiratoria, e senza NAD⁺ la gliceraldeide-3-fosfato deidrogenasi si fermerebbe, bloccando la glicolisi. La reazione non produce ATP: l'ATP della fermentazione deriva tutto dalla glicolisi (2 per glucosio). Non si forma CO₂, a differenza della fermentazione alcolica.",
+  "semplice": "Senza ossigeno il «taxi» NAD⁺ resta sempre pieno (NADH). Trasformando il piruvato in lattato il taxi si svuota e la glicolisi può continuare a produrre un po' di ATP.",
+  "passaggi": [
+   "Ricorda che la glicolisi consuma NAD⁺",
+   "Senza O₂ il NADH non viene riossidato nei mitocondri",
+   "La lattato deidrogenasi ossida il NADH a NAD⁺",
+   "Il NAD⁺ rigenerato permette alla glicolisi di continuare"
+  ],
+  "concetto": "fermentazione = rigenerazione del NAD⁺"
+ },
+ {
+  "id": "NORG-124",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Nella fermentazione alcolica dei lieviti, quali sono le due tappe che trasformano il piruvato in etanolo?",
+  "opzioni": {
+   "A": "Decarbossilazione del piruvato ad acetaldeide con liberazione di CO₂, poi riduzione dell'acetaldeide a etanolo con NADH",
+   "B": "Riduzione diretta del piruvato a etanolo senza produrre CO₂",
+   "C": "Ossidazione del piruvato ad acetil-CoA, poi riduzione a etanolo",
+   "D": "Carbossilazione del piruvato a ossalacetato, poi riduzione a etanolo",
+   "E": "Riduzione del piruvato a lattato, poi decarbossilazione a etanolo"
+  },
+  "giusta": "A",
+  "perche": "La piruvato decarbossilasi elimina CO₂ dal piruvato formando acetaldeide; poi l'alcol deidrogenasi riduce l'acetaldeide a etanolo ossidando NADH a NAD⁺. La CO₂ liberata è quella che fa lievitare il pane e rende frizzanti spumante e birra. Il lattato non è un intermedio di questa via; la formazione di acetil-CoA avviene nella respirazione aerobica.",
+  "semplice": "Il lievito prima toglie un pezzo di CO₂ al piruvato (le bollicine) e poi trasforma ciò che resta in alcol. Per questo l'impasto si gonfia.",
+  "passaggi": [
+   "Ricorda che il piruvato ha tre carboni e l'etanolo due",
+   "Primo passo: decarbossilazione ad acetaldeide (si libera CO₂)",
+   "Secondo passo: riduzione dell'acetaldeide a etanolo con NADH",
+   "Il NAD⁺ rigenerato torna alla glicolisi"
+  ],
+  "concetto": "fermentazione alcolica"
+ },
+ {
+  "id": "NORG-125",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Quanta energia richiede la gluconeogenesi per sintetizzare una molecola di glucosio a partire da due molecole di piruvato?",
+  "opzioni": {
+   "A": "2 ATP e 2 NADH",
+   "B": "6 ATP e nessun NADH",
+   "C": "4 ATP, 2 GTP e 2 NADH",
+   "D": "2 ATP, 2 GTP e 2 NADPH",
+   "E": "Nessuna: libera energia"
+  },
+  "giusta": "C",
+  "perche": "La piruvato carbossilasi consuma 1 ATP per piruvato (2 in totale), la PEP carbossichinasi 1 GTP per ossalacetato (2), la fosfoglicerato chinasi in senso inverso 1 ATP per molecola (2), e la gliceraldeide-3-fosfato deidrogenasi 1 NADH per molecola (2). In totale 4 ATP + 2 GTP + 2 NADH, cioè 6 legami fosfato ad alta energia. Rispetto ai 2 ATP prodotti dalla glicolisi, la gluconeogenesi costa di più, ed è questo che la rende termodinamicamente favorevole.",
+  "semplice": "Costruire glucosio costa più di quanto la glicolisi rende: si spendono sei «monete» fosfato (4 ATP e 2 GTP) e due NADH, contro le due monete guadagnate demolendolo.",
+  "passaggi": [
+   "Elenca le tappe che consumano energia",
+   "Piruvato carbossilasi: 2 ATP; PEP carbossichinasi: 2 GTP",
+   "Fosfoglicerato chinasi inversa: 2 ATP; G3P deidrogenasi: 2 NADH",
+   "Totale: 4 ATP, 2 GTP, 2 NADH"
+  ],
+  "concetto": "costo energetico della gluconeogenesi"
+ },
+ {
+  "id": "NORG-126",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Perché il glicogeno del muscolo scheletrico non può essere usato per mantenere la glicemia?",
+  "opzioni": {
+   "A": "Il muscolo non possiede la glicogeno fosforilasi",
+   "B": "Il glicogeno muscolare è formato da fruttosio",
+   "C": "Il muscolo non contiene glicogeno",
+   "D": "Il muscolo non possiede la glucosio-6-fosfatasi e non può liberare glucosio libero nel sangue",
+   "E": "Il glucosio-6-fosfato attraversa liberamente la membrana ma viene distrutto nel sangue"
+  },
+  "giusta": "D",
+  "perche": "La glicogenolisi produce glucosio-1-fosfato, poi trasformato in glucosio-6-fosfato. Solo il fegato (e il rene) ha la glucosio-6-fosfatasi, che toglie il fosfato e permette al glucosio di uscire dalla cellula. Nel muscolo il glucosio-6-fosfato, carico negativamente, resta intrappolato e viene usato dalla glicolisi della fibra stessa. Il muscolo ha invece la glicogeno fosforilasi.",
+  "semplice": "Il glicogeno del muscolo è «riservato» al muscolo: senza l'enzima che toglie il fosfato, il glucosio resta chiuso dentro la cellula come in una cassaforte senza uscita.",
+  "passaggi": [
+   "Ricorda il prodotto della glicogenolisi: glucosio-1-fosfato → glucosio-6-fosfato",
+   "Il glucosio fosforilato non attraversa la membrana",
+   "Serve la glucosio-6-fosfatasi per liberarlo",
+   "Il muscolo non ha questo enzima, il fegato sì"
+  ],
+  "concetto": "glucosio-6-fosfatasi epatica"
+ },
+ {
+  "id": "NORG-127",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Qual è il prodotto diretto dell'azione della glicogeno fosforilasi sul glicogeno?",
+  "opzioni": {
+   "A": "Glucosio libero",
+   "B": "Glucosio-6-fosfato",
+   "C": "UDP-glucosio",
+   "D": "Fruttosio-6-fosfato",
+   "E": "Glucosio-1-fosfato"
+  },
+  "giusta": "E",
+  "perche": "La glicogeno fosforilasi rompe i legami α(1→4) all'estremità delle catene usando fosfato inorganico (fosforolisi) e non acqua: il prodotto è glucosio-1-fosfato. Poi la fosfoglucomutasi lo trasforma in glucosio-6-fosfato. In questo modo il glucosio è già fosforilato senza spendere ATP. Il glucosio libero si ottiene solo in piccola quantità dai punti di ramificazione, per azione dell'enzima deramificante.",
+  "semplice": "La fosforilasi «stacca» un glucosio dal glicogeno usando un fosfato invece dell'acqua, così il glucosio esce già «carico» con il fosfato attaccato, risparmiando un ATP.",
+  "passaggi": [
+   "Ricorda che la fosforilasi usa fosfato inorganico, non acqua",
+   "Il fosfato si lega al C1 del glucosio staccato",
+   "Si forma glucosio-1-fosfato",
+   "La fosfoglucomutasi lo convertirà poi in glucosio-6-fosfato"
+  ],
+  "concetto": "fosforolisi del glicogeno"
+ },
+ {
+  "id": "NORG-128",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Quale molecola fornisce direttamente le unità di glucosio alla glicogeno sintasi?",
+  "opzioni": {
+   "A": "Glucosio-6-fosfato",
+   "B": "Glucosio libero",
+   "C": "Glucosio-1-fosfato",
+   "D": "UDP-glucosio",
+   "E": "ADP-glucosio"
+  },
+  "giusta": "D",
+  "perche": "Nella sintesi del glicogeno animale il glucosio-1-fosfato reagisce con UTP formando UDP-glucosio (forma «attivata» dello zucchero) e pirofosfato, che viene subito idrolizzato rendendo il processo irreversibile. La glicogeno sintasi trasferisce poi il glucosio dall'UDP-glucosio all'estremità di una catena, formando un legame α(1→4). L'ADP-glucosio è usato invece dalle piante per la sintesi dell'amido.",
+  "semplice": "Prima di essere agganciato al glicogeno, il glucosio deve essere «attivato» legandosi all'UDP, come un vagone che deve essere spinto da una locomotiva per agganciarsi al treno.",
+  "passaggi": [
+   "Ricorda che per la sintesi serve uno zucchero attivato",
+   "Glucosio-1-fosfato + UTP → UDP-glucosio + PPᵢ",
+   "La glicogeno sintasi usa l'UDP-glucosio",
+   "L'ADP-glucosio è tipico dell'amido vegetale"
+  ],
+  "concetto": "UDP-glucosio nella glicogenosintesi"
+ },
+ {
+  "id": "NORG-129",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Quale di queste molecole NON può essere usata dall'uomo come substrato per la sintesi netta di glucosio tramite gluconeogenesi?",
+  "opzioni": {
+   "A": "Lattato",
+   "B": "Acetil-CoA proveniente da acidi grassi a numero pari di carboni",
+   "C": "Glicerolo",
+   "D": "Alanina",
+   "E": "Ossalacetato"
+  },
+  "giusta": "B",
+  "perche": "Il lattato e l'alanina si trasformano in piruvato, il glicerolo in diidrossiacetone fosfato, l'ossalacetato è già un intermedio della via. L'acetil-CoA, invece, non può dare piruvato perché la piruvato deidrogenasi è irreversibile; nel ciclo di Krebs i suoi due carboni entrano ma ne escono due come CO₂, quindi non c'è guadagno netto di ossalacetato. Per questo gli acidi grassi a numero pari non forniscono glucosio, mentre il glicerolo dei trigliceridi sì.",
+  "semplice": "Gli acidi grassi si spezzano in pezzi da due carboni (acetil-CoA) che la cellula sa bruciare ma non sa rimontare in glucosio: la strada verso il glucosio è a senso unico.",
+  "passaggi": [
+   "Ricorda i substrati gluconeogenici: lattato, amminoacidi glucogenici, glicerolo",
+   "L'acetil-CoA non può tornare a piruvato",
+   "Nel ciclo di Krebs i suoi carboni escono come CO₂",
+   "Quindi non dà sintesi netta di glucosio"
+  ],
+  "concetto": "l'acetil-CoA non è gluconeogenico"
+ },
+ {
+  "id": "NORG-130",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei carboidrati: glicolisi, fermentazione, gluconeogenesi e glicogeno",
+  "livello": "superiori",
+  "domanda": "Che cosa descrive il ciclo di Cori?",
+  "opzioni": {
+   "A": "Il glucosio del fegato viene trasformato in lattato nel muscolo e accumulato",
+   "B": "Il lattato prodotto dal muscolo viene trasformato in glucosio nel fegato e il glucosio torna al muscolo",
+   "C": "L'alanina del muscolo viene trasformata in urea nel rene",
+   "D": "Il glicogeno del fegato viene trasferito direttamente al muscolo",
+   "E": "L'acetil-CoA del muscolo viene trasformato in glucosio nel fegato"
+  },
+  "giusta": "B",
+  "perche": "Nel muscolo in intensa attività la glicolisi anaerobia produce lattato, che passa nel sangue e raggiunge il fegato. Qui il lattato viene riossidato a piruvato e trasformato in glucosio mediante gluconeogenesi, spendendo energia (6 legami ad alta energia contro 2 ATP prodotti nel muscolo). Il glucosio torna poi al muscolo. Il ciclo che coinvolge l'alanina è il ciclo glucosio-alanina, un processo diverso.",
+  "semplice": "Il muscolo «presta» il lattato al fegato, che lo ricicla in glucosio e lo rimanda indietro come carburante nuovo. Il fegato paga il conto energetico del riciclo.",
+  "passaggi": [
+   "Ricorda che il muscolo in anaerobiosi produce lattato",
+   "Il lattato raggiunge il fegato attraverso il sangue",
+   "Nel fegato la gluconeogenesi lo trasforma in glucosio",
+   "Il glucosio torna al muscolo: è il ciclo di Cori"
+  ],
+  "concetto": "ciclo di Cori"
+ },
+ {
+  "id": "NORG-131",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Quale reazione catalizza il complesso della piruvato deidrogenasi e dove avviene?",
+  "opzioni": {
+   "A": "Piruvato + NADH → lattato + NAD⁺, nel citosol",
+   "B": "Piruvato + CO₂ + ATP → ossalacetato, nel citosol",
+   "C": "Piruvato → acetaldeide + CO₂, nella matrice",
+   "D": "Piruvato + CoA + NAD⁺ → acetil-CoA + CO₂ + NADH, nella matrice mitocondriale",
+   "E": "Piruvato + CoA → acetil-CoA + CO₂, senza coenzimi redox, nello spazio intermembrana"
+  },
+  "giusta": "D",
+  "perche": "Il piruvato prodotto nel citosol entra nei mitocondri e, nella matrice, il complesso della piruvato deidrogenasi lo decarbossila e lo ossida: si formano acetil-CoA, CO₂ e NADH. Il complesso usa cinque coenzimi (tiamina pirofosfato, acido lipoico, CoA, FAD, NAD⁺). La reazione è irreversibile e collega la glicolisi al ciclo di Krebs. La riduzione a lattato è invece la fermentazione lattica.",
+  "semplice": "La piruvato deidrogenasi è il «ponte» tra glicolisi e ciclo di Krebs: toglie un carbonio come CO₂ e lega i due carboni rimasti al coenzima A, pronti per entrare nel ciclo.",
+  "passaggi": [
+   "Ricorda che il piruvato entra nel mitocondrio",
+   "Il complesso lo decarbossila (CO₂) e lo ossida (NADH)",
+   "Il gruppo acetile viene legato al CoA",
+   "La reazione avviene nella matrice mitocondriale"
+  ],
+  "concetto": "decarbossilazione ossidativa del piruvato"
+ },
+ {
+  "id": "NORG-132",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Per ogni molecola di acetil-CoA ossidata nel ciclo di Krebs, quali prodotti si ottengono?",
+  "opzioni": {
+   "A": "2 CO₂, 2 NADH, 2 FADH₂ e 2 ATP",
+   "B": "2 CO₂, 3 NADH, 1 FADH₂ e 1 GTP (o ATP)",
+   "C": "1 CO₂, 3 NADH, 1 FADH₂ e 1 GTP",
+   "D": "3 CO₂, 4 NADH e 1 GTP",
+   "E": "2 CO₂, 1 NADH, 3 FADH₂ e 1 GTP"
+  },
+  "giusta": "B",
+  "perche": "Le due decarbossilazioni ossidative (isocitrato deidrogenasi e α-chetoglutarato deidrogenasi) liberano 2 CO₂ e 2 NADH; la malato deidrogenasi produce il terzo NADH; la succinato deidrogenasi produce 1 FADH₂; la succinil-CoA sintetasi forma 1 GTP (o ATP) per fosforilazione a livello del substrato. Per una molecola di glucosio i valori vanno raddoppiati, perché si formano due acetil-CoA.",
+  "semplice": "Ogni «giro» del ciclo brucia i due carboni dell'acetile, che escono come 2 CO₂, e carica quattro navette di elettroni (3 NADH e 1 FADH₂), più una moneta di energia (GTP).",
+  "passaggi": [
+   "Conta le decarbossilazioni: 2 CO₂",
+   "Conta le deidrogenasi che usano NAD⁺: 3 NADH",
+   "La succinato deidrogenasi usa FAD: 1 FADH₂",
+   "La succinil-CoA sintetasi produce 1 GTP"
+  ],
+  "concetto": "resa del ciclo di Krebs"
+ },
+ {
+  "id": "NORG-133",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Quale enzima del ciclo di Krebs fa anche parte della catena di trasporto degli elettroni, come complesso II?",
+  "opzioni": {
+   "A": "Citrato sintasi",
+   "B": "Isocitrato deidrogenasi",
+   "C": "Succinato deidrogenasi",
+   "D": "Malato deidrogenasi",
+   "E": "Aconitasi"
+  },
+  "giusta": "C",
+  "perche": "La succinato deidrogenasi ossida il succinato a fumarato trasferendo gli elettroni al FAD legato all'enzima e poi all'ubichinone. È l'unico enzima del ciclo inserito nella membrana mitocondriale interna e coincide con il complesso II della catena respiratoria. Il complesso II non pompa protoni: per questo il FADH₂ rende meno ATP del NADH.",
+  "semplice": "La succinato deidrogenasi ha un «piede» nel ciclo di Krebs e uno nella catena respiratoria: passa direttamente gli elettroni alla catena senza bisogno di navette.",
+  "passaggi": [
+   "Ricorda quali enzimi del ciclo sono solubili nella matrice",
+   "Solo uno è legato alla membrana interna",
+   "È la succinato deidrogenasi, che usa FAD",
+   "Coincide con il complesso II"
+  ],
+  "concetto": "complesso II = succinato deidrogenasi"
+ },
+ {
+  "id": "NORG-134",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Qual è l'accettore finale degli elettroni nella catena respiratoria mitocondriale e in che cosa viene trasformato?",
+  "opzioni": {
+   "A": "Il NAD⁺, ridotto a NADH dal complesso I",
+   "B": "La CO₂, ridotta a glucosio",
+   "C": "Il citocromo c, ridotto dal complesso III",
+   "D": "L'ossigeno, ridotto ad acqua dal complesso IV",
+   "E": "L'ubichinone, ridotto a ubichinolo"
+  },
+  "giusta": "D",
+  "perche": "Gli elettroni dei coenzimi ridotti passano attraverso i complessi I, III e IV (o II, III e IV) e infine raggiungono l'ossigeno, che il complesso IV (citocromo c ossidasi) riduce ad acqua: ½ O₂ + 2 e⁻ + 2 H⁺ → H₂O. Ubichinone e citocromo c sono trasportatori intermedi, non accettori finali. Il NAD⁺ è il primo donatore della catena nella sua forma ridotta, NADH.",
+  "semplice": "L'ossigeno che respiriamo serve come «capolinea» degli elettroni: li raccoglie alla fine della catena e insieme ai protoni diventa acqua.",
+  "passaggi": [
+   "Ricorda la sequenza: NADH → I → Q → III → citocromo c → IV",
+   "Il complesso IV cede gli elettroni all'ossigeno",
+   "L'ossigeno, con protoni, forma acqua",
+   "Ubichinone e citocromo c sono solo intermedi"
+  ],
+  "concetto": "O₂ accettore finale"
+ },
+ {
+  "id": "NORG-135",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Secondo la teoria chemiosmotica di Mitchell, che cosa fornisce direttamente l'energia all'ATP sintasi?",
+  "opzioni": {
+   "A": "Il flusso di protoni che rientra nella matrice secondo il gradiente elettrochimico",
+   "B": "L'idrolisi del NADH all'interno dell'ATP sintasi",
+   "C": "Il legame diretto dell'ossigeno all'ATP sintasi",
+   "D": "L'energia del GTP prodotto dal ciclo di Krebs",
+   "E": "Il flusso di elettroni che attraversa l'ATP sintasi"
+  },
+  "giusta": "A",
+  "perche": "I complessi I, III e IV usano l'energia degli elettroni per pompare protoni dalla matrice allo spazio intermembrana, creando un gradiente di concentrazione e di carica (forza motrice protonica). I protoni rientrano nella matrice attraverso il canale dell'ATP sintasi, facendone ruotare una parte: questa rotazione provoca la sintesi di ATP da ADP e Pᵢ. Gli elettroni non attraversano l'ATP sintasi.",
+  "semplice": "La catena respiratoria pompa acqua in una diga (i protoni nello spazio intermembrana). L'ATP sintasi è la turbina: i protoni che tornano indietro la fanno girare e producono ATP.",
+  "passaggi": [
+   "Ricorda che la catena pompa H⁺ nello spazio intermembrana",
+   "Si forma un gradiente elettrochimico di protoni",
+   "I protoni rientrano attraverso l'ATP sintasi",
+   "Il loro flusso fa ruotare l'enzima e produce ATP"
+  ],
+  "concetto": "chemiosmosi"
+ },
+ {
+  "id": "NORG-136",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Il cianuro blocca il complesso IV (citocromo c ossidasi). Quale conseguenza immediata provoca nelle cellule?",
+  "opzioni": {
+   "A": "Aumenta la sintesi di ATP perché gli elettroni si accumulano",
+   "B": "Si blocca soltanto la glicolisi, mentre la respirazione continua",
+   "C": "Si ferma il flusso di elettroni, il gradiente protonico crolla e la sintesi di ATP mitocondriale si arresta",
+   "D": "L'ossigeno viene ridotto a perossido d'idrogeno in grande quantità senza conseguenze sull'ATP",
+   "E": "Il ciclo di Krebs accelera perché aumenta il NAD⁺"
+  },
+  "giusta": "C",
+  "perche": "Con il complesso IV bloccato gli elettroni non possono più raggiungere l'ossigeno: tutti i trasportatori a monte restano ridotti, il pompaggio dei protoni si ferma e l'ATP sintasi non ha più forza motrice. Il NADH si accumula e il NAD⁺ diminuisce, quindi rallenta anche il ciclo di Krebs. La cellula può contare solo sulla glicolisi anaerobia, insufficiente per cuore e cervello: per questo il cianuro è così tossico.",
+  "semplice": "Il cianuro tappa l'uscita della catena: gli elettroni si fermano come auto in un ingorgo, le pompe di protoni si spengono e la «turbina» dell'ATP smette di girare.",
+  "passaggi": [
+   "Ricorda che il complesso IV cede gli elettroni all'O₂",
+   "Bloccandolo, tutta la catena resta ridotta",
+   "Senza flusso di elettroni non si pompano protoni",
+   "Senza gradiente l'ATP sintasi si ferma"
+  ],
+  "concetto": "inibitori della catena respiratoria"
+ },
+ {
+  "id": "NORG-137",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Il tessuto adiposo bruno dei neonati contiene la termogenina (UCP1). Qual è il suo effetto?",
+  "opzioni": {
+   "A": "Accelera l'ATP sintasi producendo più ATP",
+   "B": "Blocca il complesso IV come il cianuro",
+   "C": "Trasporta il NADH dal citosol nei mitocondri",
+   "D": "Trasforma il grasso bruno in glucosio",
+   "E": "Permette ai protoni di rientrare nella matrice senza passare dall'ATP sintasi, producendo calore invece di ATP"
+  },
+  "giusta": "E",
+  "perche": "La termogenina è una proteina disaccoppiante: apre un canale per i protoni nella membrana interna, dissipando il gradiente. La catena respiratoria continua a ossidare i substrati e a consumare ossigeno, ma l'energia del gradiente viene liberata come calore anziché essere usata per sintetizzare ATP. È un meccanismo per produrre calore (termogenesi senza brivido), importante nei neonati e negli animali in letargo.",
+  "semplice": "La termogenina è come un buco nella diga: l'acqua (i protoni) torna giù senza far girare la turbina, e l'energia si trasforma in calore. Così il neonato si scalda.",
+  "passaggi": [
+   "Ricorda che normalmente i protoni rientrano solo attraverso l'ATP sintasi",
+   "La termogenina crea una via alternativa",
+   "Il gradiente si dissipa senza produrre ATP",
+   "L'energia viene liberata come calore"
+  ],
+  "concetto": "disaccoppiamento e termogenesi"
+ },
+ {
+  "id": "NORG-138",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Considerando 2,5 ATP per NADH e 1,5 ATP per FADH₂, quante molecole di ATP si ottengono dall'ossidazione completa di una molecola di acetil-CoA nel ciclo di Krebs e nella catena respiratoria?",
+  "opzioni": {
+   "A": "12",
+   "B": "10",
+   "C": "8",
+   "D": "15",
+   "E": "32"
+  },
+  "giusta": "B",
+  "perche": "Un giro del ciclo produce 3 NADH, 1 FADH₂ e 1 GTP. Con i coefficienti attuali: 3 × 2,5 = 7,5; 1 × 1,5 = 1,5; più 1 GTP. Totale 7,5 + 1,5 + 1 = 10 ATP. Il valore 12 deriva dai vecchi coefficienti (3 ATP per NADH e 2 per FADH₂); 32 è la resa approssimativa dell'intero glucosio.",
+  "semplice": "Ogni navetta di elettroni vale un certo numero di ATP: i tre NADH ne valgono 7,5, il FADH₂ 1,5 e il GTP 1. In tutto fanno 10.",
+  "passaggi": [
+   "Prodotti del ciclo: 3 NADH, 1 FADH₂, 1 GTP",
+   "NADH: 3 × 2,5 = 7,5 ATP",
+   "FADH₂: 1 × 1,5 = 1,5 ATP",
+   "Totale: 7,5 + 1,5 + 1 = 10 ATP"
+  ],
+  "concetto": "resa energetica dell'acetil-CoA"
+ },
+ {
+  "id": "NORG-139",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "Quale reazione apre il ciclo di Krebs?",
+  "opzioni": {
+   "A": "La condensazione di acetil-CoA e ossalacetato a citrato, catalizzata dalla citrato sintasi",
+   "B": "La decarbossilazione dell'isocitrato ad α-chetoglutarato",
+   "C": "L'ossidazione del succinato a fumarato",
+   "D": "La condensazione di due acetil-CoA ad acetoacetil-CoA",
+   "E": "La carbossilazione del piruvato a ossalacetato"
+  },
+  "giusta": "A",
+  "perche": "La citrato sintasi unisce il gruppo acetile (2 C) dell'acetil-CoA all'ossalacetato (4 C) formando citrato (6 C); l'idrolisi del tioestere rende la reazione molto favorevole. Alla fine del ciclo l'ossalacetato viene rigenerato dalla malato deidrogenasi, per questo il ciclo può ripartire. La carbossilazione del piruvato è una reazione anaplerotica che rifornisce l'ossalacetato, ma non è la prima tappa del ciclo.",
+  "semplice": "L'ossalacetato è come una giostra che accoglie un passeggero di due carboni (acetile): insieme formano il citrato, e alla fine del giro la giostra torna libera per il successivo.",
+  "passaggi": [
+   "Ricorda che il ciclo inizia con l'ingresso dell'acetile",
+   "L'acetile si lega all'ossalacetato",
+   "Si forma il citrato, a sei carboni",
+   "L'enzima è la citrato sintasi"
+  ],
+  "concetto": "prima tappa del ciclo di Krebs"
+ },
+ {
+  "id": "NORG-140",
+  "materia": "Chimica organica",
+  "argomento": "Respirazione cellulare: ciclo di Krebs e catena di trasporto degli elettroni",
+  "livello": "superiori",
+  "domanda": "In quale compartimento della cellula eucariotica si svolge ciascuna delle seguenti fasi: glicolisi, ciclo di Krebs, catena di trasporto degli elettroni?",
+  "opzioni": {
+   "A": "Matrice mitocondriale, citosol, membrana esterna",
+   "B": "Citosol, spazio intermembrana, membrana esterna",
+   "C": "Membrana interna, matrice, citosol",
+   "D": "Nucleo, citosol, reticolo endoplasmatico",
+   "E": "Citosol, matrice mitocondriale, membrana mitocondriale interna"
+  },
+  "giusta": "E",
+  "perche": "La glicolisi avviene nel citosol, dove si trovano tutti i suoi enzimi. Il ciclo di Krebs si svolge nella matrice mitocondriale, tranne la succinato deidrogenasi, legata alla membrana interna. I complessi della catena respiratoria e l'ATP sintasi sono inseriti nella membrana mitocondriale interna, ripiegata in creste per aumentarne la superficie. La membrana esterna è permeabile alle piccole molecole e non contiene la catena.",
+  "semplice": "La «cucina» della cellula ha tre stanze: il citosol per la glicolisi, l'interno del mitocondrio (matrice) per il ciclo di Krebs, la «parete» interna del mitocondrio per la catena respiratoria.",
+  "passaggi": [
+   "Glicolisi: enzimi solubili nel citosol",
+   "Ciclo di Krebs: enzimi nella matrice mitocondriale",
+   "Catena respiratoria: complessi nella membrana interna",
+   "Risposta: citosol, matrice, membrana interna"
+  ],
+  "concetto": "localizzazione della respirazione cellulare"
+ },
+ {
+  "id": "NORG-141",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Prima della β-ossidazione un acido grasso viene attivato ad acil-CoA dall'acil-CoA sintetasi nel citosol. Quanta energia costa questa attivazione?",
+  "opzioni": {
+   "A": "Due legami fosfato ad alta energia, perché l'ATP viene scisso in AMP e pirofosfato",
+   "B": "Nessuna: l'attivazione libera ATP",
+   "C": "Un solo legame, perché l'ATP diventa ADP",
+   "D": "Tre ATP, uno per ogni tappa",
+   "E": "Un NADH"
+  },
+  "giusta": "A",
+  "perche": "La reazione è: acido grasso + CoA + ATP → acil-CoA + AMP + PPᵢ. Il pirofosfato viene poi idrolizzato a 2 Pᵢ dalla pirofosfatasi, rendendo il processo irreversibile. Poiché l'ATP passa ad AMP, si spendono due legami ad alta energia, equivalenti a 2 ATP: per questo nei bilanci della β-ossidazione si sottraggono 2 ATP.",
+  "semplice": "Per «accendere» un acido grasso la cellula spende l'equivalente di due ATP, perché dall'ATP stacca due fosfati in un colpo solo. È il prezzo d'ingresso, ripagato abbondantemente dopo.",
+  "passaggi": [
+   "Scrivi la reazione: ATP → AMP + PPᵢ",
+   "Il PPᵢ viene idrolizzato a 2 Pᵢ",
+   "Si spendono due legami fosfoanidridici",
+   "Nei bilanci si sottraggono 2 ATP"
+  ],
+  "concetto": "attivazione degli acidi grassi"
+ },
+ {
+  "id": "NORG-142",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Come entrano nella matrice mitocondriale gli acil-CoA a catena lunga?",
+  "opzioni": {
+   "A": "Tramite la navetta della carnitina, la cui prima tappa (CPT-I) è inibita dal malonil-CoA",
+   "B": "Diffondono liberamente attraverso entrambe le membrane",
+   "C": "Legati all'albumina",
+   "D": "Tramite la navetta malato-aspartato",
+   "E": "Come citrato, attraverso il trasportatore del citrato"
+  },
+  "giusta": "A",
+  "perche": "La membrana mitocondriale interna è impermeabile al CoA e ai suoi derivati. La carnitina aciltransferasi I (CPT-I) trasferisce il gruppo acilico alla carnitina; l'acil-carnitina attraversa la membrana interna con una traslocasi e la CPT-II riforma l'acil-CoA nella matrice. Il malonil-CoA, primo intermedio della sintesi degli acidi grassi, inibisce la CPT-I: così, quando la cellula sintetizza acidi grassi, non li ossida contemporaneamente. Il citrato serve invece a portare acetil-CoA fuori dal mitocondrio.",
+  "semplice": "La carnitina è il «traghetto» che porta gli acidi grassi dentro il mitocondrio. Quando la cellula sta producendo grassi, il malonil-CoA ferma il traghetto per non bruciare ciò che si sta costruendo.",
+  "passaggi": [
+   "Ricorda che l'acil-CoA non attraversa la membrana interna",
+   "Il gruppo acilico viene trasferito alla carnitina (CPT-I)",
+   "L'acil-carnitina entra e la CPT-II riforma l'acil-CoA",
+   "Il malonil-CoA inibisce la CPT-I"
+  ],
+  "concetto": "navetta della carnitina"
+ },
+ {
+  "id": "NORG-143",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Qual è l'ordine corretto delle quattro reazioni di ogni giro della β-ossidazione?",
+  "opzioni": {
+   "A": "Idratazione, ossidazione con NAD⁺, ossidazione con FAD, tiolisi",
+   "B": "Tiolisi, ossidazione con FAD, idratazione, ossidazione con NAD⁺",
+   "C": "Ossidazione con FAD, idratazione, ossidazione con NAD⁺, tiolisi",
+   "D": "Ossidazione con NAD⁺, idratazione, ossidazione con FAD, tiolisi",
+   "E": "Riduzione con NADPH, disidratazione, riduzione con NADPH, condensazione"
+  },
+  "giusta": "C",
+  "perche": "Ogni giro inizia con l'acil-CoA deidrogenasi, che forma un doppio legame trans tra Cα e Cβ riducendo il FAD a FADH₂; segue l'idratazione del doppio legame a 3-idrossiacil-CoA; poi la 3-idrossiacil-CoA deidrogenasi ossida l'OH a chetone producendo NADH; infine la tiolasi scinde il 3-chetoacil-CoA con un nuovo CoA, liberando acetil-CoA e un acil-CoA più corto di due carboni. La sequenza riduzione-disidratazione-riduzione-condensazione con NADPH è la sintesi degli acidi grassi, praticamente il percorso inverso.",
+  "semplice": "Ogni giro funziona come una sega che stacca due carboni alla volta: prima si toglie idrogeno (FAD), poi si aggiunge acqua, poi si toglie di nuovo idrogeno (NAD⁺) e infine si taglia.",
+  "passaggi": [
+   "Prima tappa: acil-CoA deidrogenasi, FAD → FADH₂, doppio legame",
+   "Seconda tappa: idratazione del doppio legame",
+   "Terza tappa: ossidazione dell'OH, NAD⁺ → NADH",
+   "Quarta tappa: tiolisi, si libera acetil-CoA"
+  ],
+  "concetto": "le quattro tappe della β-ossidazione"
+ },
+ {
+  "id": "NORG-144",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Quante molecole di ATP si ottengono dall'ossidazione completa di una molecola di palmitato (C16), considerando 2,5 ATP per NADH, 1,5 per FADH₂, 10 per acetil-CoA e il costo dell'attivazione?",
+  "opzioni": {
+   "A": "108",
+   "B": "129",
+   "C": "96",
+   "D": "106",
+   "E": "131"
+  },
+  "giusta": "D",
+  "perche": "Il palmitato richiede 7 giri di β-ossidazione, che producono 8 acetil-CoA, 7 FADH₂ e 7 NADH. Resa: 8 × 10 = 80; 7 × 1,5 = 10,5; 7 × 2,5 = 17,5; totale 108 ATP. Sottraendo i 2 legami ad alta energia spesi per l'attivazione si ottengono 106 ATP. 108 dimentica l'attivazione; 129 e 131 sono i valori calcolati con i vecchi coefficienti (3 e 2 ATP).",
+  "semplice": "Un acido grasso di 16 carboni viene tagliato in 8 pezzi da due carboni con 7 tagli. Ogni pezzo vale 10 ATP e ogni taglio 4: in tutto 108, meno i 2 spesi per attivarlo.",
+  "passaggi": [
+   "Calcola i giri: 16/2 − 1 = 7; gli acetil-CoA: 8",
+   "Acetil-CoA: 8 × 10 = 80 ATP",
+   "FADH₂ e NADH: 7 × 1,5 + 7 × 2,5 = 28 ATP",
+   "Totale 108 − 2 (attivazione) = 106 ATP"
+  ],
+  "concetto": "bilancio energetico della β-ossidazione"
+ },
+ {
+  "id": "NORG-145",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Quanti giri di β-ossidazione sono necessari per degradare completamente lo stearoil-CoA (acido stearico, C18) ad acetil-CoA, e quanti acetil-CoA si formano?",
+  "opzioni": {
+   "A": "9 giri e 9 acetil-CoA",
+   "B": "9 giri e 8 acetil-CoA",
+   "C": "18 giri e 9 acetil-CoA",
+   "D": "8 giri e 9 acetil-CoA",
+   "E": "8 giri e 8 acetil-CoA"
+  },
+  "giusta": "D",
+  "perche": "Ogni giro stacca due carboni come acetil-CoA. Per una catena di n carboni (n pari) servono n/2 − 1 giri, perché l'ultimo giro scinde un butirril-CoA (C4) in due acetil-CoA. Per C18: 18/2 = 9 acetil-CoA e 9 − 1 = 8 giri. L'errore più frequente è pensare che servano tanti giri quanti acetil-CoA.",
+  "semplice": "Per tagliare un bastone in 9 pezzi bastano 8 tagli: l'ultimo taglio produce due pezzi insieme.",
+  "passaggi": [
+   "Calcola gli acetil-CoA: 18 / 2 = 9",
+   "Ricorda che l'ultimo giro libera due acetil-CoA",
+   "Giri = acetil-CoA − 1 = 8",
+   "Risposta: 8 giri, 9 acetil-CoA"
+  ],
+  "concetto": "numero di giri della β-ossidazione"
+ },
+ {
+  "id": "NORG-146",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sui corpi chetonici è corretta?",
+  "opzioni": {
+   "A": "Sono prodotti nel muscolo e utilizzati dal fegato",
+   "B": "Sono prodotti dal fegato a partire dal glucosio quando la glicemia è alta",
+   "C": "Il cervello non può mai utilizzarli",
+   "D": "Sono sintetizzati nel citosol a partire dal malonil-CoA",
+   "E": "Sono acetoacetato, β-idrossibutirrato e acetone, prodotti nei mitocondri del fegato ma non utilizzati dal fegato stesso"
+  },
+  "giusta": "E",
+  "perche": "Nel fegato, quando l'acetil-CoA è in eccesso, due acetil-CoA formano acetoacetil-CoA e poi HMG-CoA, da cui si libera acetoacetato; questo può essere ridotto a β-idrossibutirrato o decarbossilarsi spontaneamente ad acetone. Il fegato manca dell'enzima che riattiva l'acetoacetato ad acetoacetil-CoA (la succinil-CoA:acetoacetato CoA transferasi), quindi li esporta a cuore, muscolo e, nel digiuno prolungato, al cervello. Si formano con glicemia bassa o insulina scarsa, non quando il glucosio abbonda.",
+  "semplice": "Il fegato prepara i corpi chetonici come «carburante da asporto» per gli altri organi, ma non li usa per sé: gli manca l'enzima per «riaprire la confezione».",
+  "passaggi": [
+   "Ricorda i tre corpi chetonici",
+   "Sono sintetizzati nei mitocondri epatici da acetil-CoA via HMG-CoA",
+   "Il fegato non ha l'enzima per riutilizzarli",
+   "Vengono usati da cuore, muscolo e cervello nel digiuno"
+  ],
+  "concetto": "chetogenesi epatica"
+ },
+ {
+  "id": "NORG-147",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Perché nel diabete di tipo 1 non trattato o nel digiuno prolungato aumenta la produzione di corpi chetonici?",
+  "opzioni": {
+   "A": "Il fegato produce troppo glucosio, che viene trasformato direttamente in acetone",
+   "B": "L'ossalacetato epatico viene usato per la gluconeogenesi, e l'acetil-CoA prodotto in abbondanza dalla β-ossidazione non può entrare nel ciclo di Krebs",
+   "C": "L'insulina in eccesso stimola la chetogenesi",
+   "D": "Manca la carnitina e gli acidi grassi restano nel citosol",
+   "E": "Il muscolo smette di produrre lattato"
+  },
+  "giusta": "B",
+  "perche": "Con insulina bassa e glucagone alto la lipolisi aumenta e il fegato riceve molti acidi grassi, che la β-ossidazione trasforma in grandi quantità di acetil-CoA. Contemporaneamente l'ossalacetato viene sottratto al ciclo di Krebs per la gluconeogenesi: l'acetil-CoA non trova abbastanza ossalacetato con cui condensarsi e viene dirottato verso i corpi chetonici. Nel diabete di tipo 1 l'accumulo può causare chetoacidosi. L'insulina inibisce la chetogenesi, non la stimola.",
+  "semplice": "L'acetil-CoA per entrare nel ciclo di Krebs ha bisogno di un «compagno», l'ossalacetato. Se il fegato usa l'ossalacetato per fabbricare glucosio, l'acetil-CoA resta solo e viene trasformato in corpi chetonici.",
+  "passaggi": [
+   "Ricorda le condizioni: insulina bassa, lipolisi elevata",
+   "La β-ossidazione produce molto acetil-CoA",
+   "L'ossalacetato viene usato per la gluconeogenesi",
+   "L'acetil-CoA in eccesso diventa corpi chetonici"
+  ],
+  "concetto": "regolazione della chetogenesi"
+ },
+ {
+  "id": "NORG-148",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Per sintetizzare una molecola di palmitato a partire da acetil-CoA, quali sono il fabbisogno di acetil-CoA, ATP e NADPH?",
+  "opzioni": {
+   "A": "8 acetil-CoA, 8 ATP e 16 NADPH",
+   "B": "8 acetil-CoA, 7 ATP e 14 NADPH",
+   "C": "7 acetil-CoA, 7 ATP e 7 NADPH",
+   "D": "8 acetil-CoA, 7 ATP e 14 NADH",
+   "E": "16 acetil-CoA, 14 ATP e 28 NADPH"
+  },
+  "giusta": "B",
+  "perche": "Un acetil-CoA fa da innesco e gli altri 7 vengono carbossilati a malonil-CoA dall'acetil-CoA carbossilasi, spendendo 1 ATP ciascuno (7 ATP). Ognuno dei 7 cicli di allungamento richiede due riduzioni con NADPH (14 NADPH) e libera la CO₂ aggiunta in precedenza. L'equazione complessiva è: 8 acetil-CoA + 7 ATP + 14 NADPH → palmitato + 8 CoA + 7 ADP + 7 Pᵢ + 14 NADP⁺ + 6 H₂O. Il coenzima riducente è il NADPH, non il NADH.",
+  "semplice": "Servono 8 pezzi da due carboni per fare 16 carboni. Sette pezzi vanno prima «attivati» spendendo un ATP ciascuno, e ogni aggiunta richiede due riduzioni con NADPH.",
+  "passaggi": [
+   "Calcola gli acetil-CoA: 16 / 2 = 8",
+   "7 di essi diventano malonil-CoA: 7 ATP",
+   "7 cicli di allungamento con 2 riduzioni ciascuno: 14 NADPH",
+   "Il donatore di elettroni è il NADPH"
+  ],
+  "concetto": "bilancio della sintesi del palmitato"
+ },
+ {
+  "id": "NORG-149",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Quale enzima catalizza la tappa limitante della sintesi del colesterolo ed è il bersaglio dei farmaci statine?",
+  "opzioni": {
+   "A": "HMG-CoA sintasi mitocondriale",
+   "B": "Acetil-CoA carbossilasi",
+   "C": "Lipasi ormono-sensibile",
+   "D": "Acil-CoA deidrogenasi",
+   "E": "HMG-CoA reduttasi, che trasforma l'HMG-CoA in mevalonato"
+  },
+  "giusta": "E",
+  "perche": "Nel citosol e nel reticolo endoplasmatico due acetil-CoA formano acetoacetil-CoA e poi, con un terzo acetil-CoA, HMG-CoA. L'HMG-CoA reduttasi lo riduce a mevalonato usando 2 NADPH: è la tappa irreversibile e regolata della via, inibita dal colesterolo stesso. Le statine sono inibitori competitivi di questo enzima e riducono il colesterolo prodotto dal fegato. L'HMG-CoA sintasi mitocondriale appartiene invece alla via dei corpi chetonici.",
+  "semplice": "L'HMG-CoA reduttasi è il «rubinetto» principale della produzione di colesterolo. Le statine chiudono parzialmente il rubinetto, così il fegato ne produce meno.",
+  "passaggi": [
+   "Ricorda la via: acetil-CoA → HMG-CoA → mevalonato → … → colesterolo",
+   "La tappa irreversibile e regolata è HMG-CoA → mevalonato",
+   "L'enzima è l'HMG-CoA reduttasi",
+   "È il bersaglio delle statine"
+  ],
+  "concetto": "HMG-CoA reduttasi e statine"
+ },
+ {
+  "id": "NORG-150",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo dei lipidi: beta-ossidazione, corpi chetonici, sintesi di acidi grassi e colesterolo",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sul confronto tra β-ossidazione e sintesi degli acidi grassi è ERRATA?",
+  "opzioni": {
+   "A": "La sintesi avviene nel citosol, la β-ossidazione nei mitocondri",
+   "B": "La sintesi usa NADPH, la β-ossidazione produce NADH e FADH₂",
+   "C": "Entrambe avvengono nella matrice mitocondriale e usano il NAD⁺ come coenzima",
+   "D": "Nella sintesi gli intermedi sono legati alla proteina trasportatrice di acili (ACP)",
+   "E": "Entrambe procedono aggiungendo o togliendo due atomi di carbonio alla volta"
+  },
+  "giusta": "C",
+  "perche": "Le due vie sono separate per poter essere regolate indipendentemente: la β-ossidazione avviene nella matrice mitocondriale, produce FADH₂ e NADH e usa intermedi legati al CoA; la sintesi avviene nel citosol, consuma NADPH e usa intermedi legati all'ACP dell'acido grasso sintasi. In entrambe la catena cambia di due carboni per volta (nella sintesi tramite malonil-CoA con perdita di CO₂). L'affermazione che le colloca entrambe nei mitocondri con NAD⁺ è quindi falsa.",
+  "semplice": "Costruire e demolire gli acidi grassi sono come due cantieri in due quartieri diversi della città: uno nel citosol, l'altro nei mitocondri, con attrezzi diversi (NADPH per costruire, FAD e NAD⁺ per demolire).",
+  "passaggi": [
+   "Ricorda dove avviene ciascuna via: sintesi nel citosol, β-ossidazione nei mitocondri",
+   "Confronta i coenzimi: NADPH nella sintesi, FAD e NAD⁺ nella degradazione",
+   "Verifica le altre affermazioni: ACP e unità da due carboni sono corrette",
+   "L'affermazione errata è quella che le mette entrambe nei mitocondri"
+  ],
+  "concetto": "compartimentazione delle vie lipidiche"
+ },
+ {
+  "id": "NORG-151",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Nelle reazioni di transaminazione, quale coenzima è indispensabile e da quale vitamina deriva?",
+  "opzioni": {
+   "A": "NAD⁺, derivato dalla vitamina B3",
+   "B": "Tiamina pirofosfato, derivata dalla vitamina B1",
+   "C": "Piridossal fosfato, derivato dalla vitamina B6",
+   "D": "FAD, derivato dalla vitamina B2",
+   "E": "Biotina, la vitamina B7"
+  },
+  "giusta": "C",
+  "perche": "Le transaminasi (amminotransferasi) trasferiscono il gruppo α-amminico da un amminoacido a un α-chetoacido. Il piridossal fosfato (PLP), forma attiva della vitamina B6, forma una base di Schiff con l'amminoacido e accetta temporaneamente il gruppo amminico, diventando piridossammina fosfato. Il NAD⁺ serve alle deidrogenasi, la biotina alle carbossilasi.",
+  "semplice": "Il piridossal fosfato è come una mano che prende il gruppo amminico da un amminoacido e lo passa a un altro. Questa «mano» si costruisce con la vitamina B6.",
+  "passaggi": [
+   "Riconosci la reazione: trasferimento di un gruppo amminico",
+   "Gli enzimi sono le transaminasi",
+   "Il loro coenzima è il piridossal fosfato",
+   "Il PLP deriva dalla vitamina B6"
+  ],
+  "concetto": "PLP nelle transaminazioni"
+ },
+ {
+  "id": "NORG-152",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Quali prodotti si ottengono dalla reazione catalizzata dall'alanina amminotransferasi (ALT) tra alanina e α-chetoglutarato?",
+  "opzioni": {
+   "A": "Lattato e glutammina",
+   "B": "Ossalacetato e aspartato",
+   "C": "Piruvato e ammoniaca libera",
+   "D": "Acetil-CoA e glutammato",
+   "E": "Piruvato e glutammato"
+  },
+  "giusta": "E",
+  "perche": "La transaminazione scambia gruppo amminico e gruppo chetonico: l'alanina cede il suo NH₂ e diventa il corrispondente α-chetoacido, il piruvato; l'α-chetoglutarato lo riceve e diventa glutammato. Non si libera ammoniaca: l'azoto è solo trasferito. La reazione tra aspartato e α-chetoglutarato (AST) dà invece ossalacetato e glutammato. ALT e AST nel sangue sono indici di danno epatico.",
+  "semplice": "La transaminazione è uno scambio: l'alanina dà il suo «cappello» amminico all'α-chetoglutarato. L'alanina senza cappello diventa piruvato, l'α-chetoglutarato con il cappello diventa glutammato.",
+  "passaggi": [
+   "Ricorda che la transaminazione scambia NH₂ e C=O",
+   "L'alanina perde NH₂ e diventa piruvato",
+   "L'α-chetoglutarato acquista NH₂ e diventa glutammato",
+   "Non si libera ammoniaca"
+  ],
+  "concetto": "transaminazione"
+ },
+ {
+  "id": "NORG-153",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Quale enzima libera ione ammonio (NH₄⁺) dal glutammato nei mitocondri del fegato?",
+  "opzioni": {
+   "A": "Alanina amminotransferasi",
+   "B": "Glutammina sintetasi",
+   "C": "Arginasi",
+   "D": "Glutammato deidrogenasi",
+   "E": "Carbamil fosfato sintetasi I"
+  },
+  "giusta": "D",
+  "perche": "La glutammato deidrogenasi catalizza la deaminazione ossidativa: glutammato + NAD(P)⁺ + H₂O → α-chetoglutarato + NH₄⁺ + NAD(P)H. Insieme alle transaminasi, che raccolgono l'azoto di molti amminoacidi sul glutammato, permette di liberare l'ammonio che entrerà nel ciclo dell'urea. La glutammina sintetasi fa il contrario (incorpora NH₄⁺), l'arginasi libera urea, la carbamil fosfato sintetasi I usa l'NH₄⁺.",
+  "semplice": "Le transaminasi raccolgono l'azoto di tutti gli amminoacidi sul glutammato, poi la glutammato deidrogenasi lo «scarica» come ammonio, pronto per diventare urea.",
+  "passaggi": [
+   "Ricorda che serve una deaminazione ossidativa",
+   "Il substrato è il glutammato",
+   "L'enzima è la glutammato deidrogenasi",
+   "Prodotti: α-chetoglutarato, NH₄⁺ e NAD(P)H"
+  ],
+  "concetto": "deaminazione ossidativa"
+ },
+ {
+  "id": "NORG-154",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Dove avviene il ciclo dell'urea?",
+  "opzioni": {
+   "A": "Nel rene, interamente nel citosol",
+   "B": "Nel muscolo, interamente nei mitocondri",
+   "C": "Nel fegato, in parte nella matrice mitocondriale e in parte nel citosol",
+   "D": "Nel fegato, interamente nel reticolo endoplasmatico",
+   "E": "Nell'intestino, interamente nel nucleo"
+  },
+  "giusta": "C",
+  "perche": "Il ciclo dell'urea si svolge negli epatociti. Le prime due reazioni (sintesi del carbamil fosfato e formazione della citrullina dall'ornitina) avvengono nella matrice mitocondriale; la citrullina passa nel citosol, dove si formano argininosuccinato, arginina e infine urea con rigenerazione dell'ornitina. Il rene elimina l'urea con le urine ma non la produce in quantità rilevanti.",
+  "semplice": "Il fegato è la «fabbrica» dell'urea: il lavoro inizia dentro il mitocondrio e finisce nel citosol. Il rene poi si limita a «spedire» l'urea fuori con le urine.",
+  "passaggi": [
+   "Ricorda che l'urea si produce nel fegato",
+   "Carbamil fosfato e citrullina si formano nei mitocondri",
+   "Le tappe successive avvengono nel citosol",
+   "Il rene la elimina ma non la produce"
+  ],
+  "concetto": "localizzazione del ciclo dell'urea"
+ },
+ {
+  "id": "NORG-155",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Da dove provengono i due atomi di azoto della molecola di urea?",
+  "opzioni": {
+   "A": "Uno dallo ione ammonio (tramite il carbamil fosfato) e uno dall'aspartato",
+   "B": "Entrambi dallo ione ammonio libero",
+   "C": "Entrambi dalla glutammina",
+   "D": "Uno dall'arginina alimentare e uno dalla creatina",
+   "E": "Uno dall'ornitina e uno dalla citrullina"
+  },
+  "giusta": "A",
+  "perche": "Il primo azoto entra come NH₄⁺ nella sintesi del carbamil fosfato (carbamil fosfato sintetasi I), che si unisce all'ornitina formando citrullina. Il secondo azoto viene portato dall'aspartato, che si condensa con la citrullina formando argininosuccinato. L'ornitina è solo un trasportatore che viene rigenerato a ogni giro, non una fonte netta di azoto.",
+  "semplice": "L'urea ha due «gambe» di azoto: una arriva dall'ammonio, l'altra viene portata dall'aspartato. L'ornitina è come un vassoio che passa di mano e torna sempre indietro.",
+  "passaggi": [
+   "Ricorda la formula dell'urea: H₂N–CO–NH₂",
+   "Primo N: NH₄⁺ nel carbamil fosfato",
+   "Secondo N: aspartato nella formazione dell'argininosuccinato",
+   "L'ornitina è rigenerata a ogni giro"
+  ],
+  "concetto": "origine degli azoti dell'urea"
+ },
+ {
+  "id": "NORG-156",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Quanta energia richiede la sintesi di una molecola di urea nel ciclo dell'urea?",
+  "opzioni": {
+   "A": "3 ATP, corrispondenti a 4 legami fosfato ad alta energia",
+   "B": "Nessuna: il ciclo produce ATP",
+   "C": "1 ATP",
+   "D": "2 ATP, corrispondenti a 2 legami ad alta energia",
+   "E": "6 ATP, corrispondenti a 6 legami ad alta energia"
+  },
+  "giusta": "A",
+  "perche": "La carbamil fosfato sintetasi I consuma 2 ATP (che diventano 2 ADP); l'argininosuccinato sintetasi consuma 1 ATP che diventa AMP + PPᵢ, e l'idrolisi del pirofosfato equivale a un secondo legame. In totale 3 ATP e 4 legami ad alta energia. Una parte di questo costo è recuperata perché il fumarato prodotto può essere trasformato in ossalacetato, generando NADH.",
+  "semplice": "Eliminare l'azoto in modo sicuro costa: per ogni urea si spendono 3 ATP, ma uno viene «spezzato» due volte, quindi valgono come 4 monete di energia.",
+  "passaggi": [
+   "Carbamil fosfato sintetasi I: 2 ATP → 2 ADP",
+   "Argininosuccinato sintetasi: 1 ATP → AMP + PPᵢ",
+   "Il PPᵢ viene idrolizzato: un legame in più",
+   "Totale: 3 ATP, 4 legami ad alta energia"
+  ],
+  "concetto": "costo energetico del ciclo dell'urea"
+ },
+ {
+  "id": "NORG-157",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Quale intermedio collega il ciclo dell'urea con il ciclo di Krebs (la cosiddetta «bicicletta di Krebs»)?",
+  "opzioni": {
+   "A": "Il citrato",
+   "B": "L'acetil-CoA",
+   "C": "Il succinil-CoA",
+   "D": "Il fumarato, liberato dalla scissione dell'argininosuccinato",
+   "E": "La citrullina"
+  },
+  "giusta": "D",
+  "perche": "L'argininosuccinato liasi scinde l'argininosuccinato in arginina e fumarato. Il fumarato, nel citosol, può essere idratato a malato e ossidato a ossalacetato, che con una transaminazione rigenera l'aspartato necessario al ciclo dell'urea. I due cicli sono così collegati e l'azoto dell'aspartato viene «riciclato». La citrullina è un intermedio solo del ciclo dell'urea.",
+  "semplice": "I due cicli sono come due ruote di una bicicletta unite da una catena: il fumarato prodotto dal ciclo dell'urea passa verso il ciclo di Krebs e da lì torna l'aspartato.",
+  "passaggi": [
+   "Ricorda la scissione dell'argininosuccinato in arginina e fumarato",
+   "Il fumarato è anche un intermedio del ciclo di Krebs",
+   "Fumarato → malato → ossalacetato → aspartato",
+   "Il collegamento è il fumarato"
+  ],
+  "concetto": "collegamento urea-Krebs"
+ },
+ {
+  "id": "NORG-158",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "Quali amminoacidi sono esclusivamente chetogenici nell'uomo, cioè producono solo acetil-CoA o acetoacetato e non possono dare glucosio?",
+  "opzioni": {
+   "A": "Alanina e serina",
+   "B": "Glutammato e aspartato",
+   "C": "Glicina e cisteina",
+   "D": "Isoleucina e treonina",
+   "E": "Leucina e lisina"
+  },
+  "giusta": "E",
+  "perche": "La leucina e la lisina vengono degradate solo ad acetil-CoA e acetoacetil-CoA, che non possono dare sintesi netta di glucosio: sono quindi puramente chetogenici. Alanina, serina, glicina e cisteina danno piruvato; glutammato e aspartato danno α-chetoglutarato e ossalacetato: sono glucogenici. Isoleucina e treonina sono sia glucogenici sia chetogenici.",
+  "semplice": "La maggior parte degli amminoacidi può diventare glucosio. Leucina e lisina sono le uniche due che, una volta smontate, danno solo pezzi utili per energia o corpi chetonici.",
+  "passaggi": [
+   "Ricorda la differenza: glucogenici → piruvato o intermedi del ciclo; chetogenici → acetil-CoA/acetoacetato",
+   "Alanina, serina, glicina, cisteina danno piruvato: glucogenici",
+   "Isoleucina e treonina sono misti",
+   "Solo leucina e lisina sono puramente chetogenici"
+  ],
+  "concetto": "amminoacidi chetogenici"
+ },
+ {
+  "id": "NORG-159",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "In un paziente con grave insufficienza epatica aumenta l'ammoniaca nel sangue. Perché l'ammoniaca è tossica soprattutto per il cervello?",
+  "opzioni": {
+   "A": "Si trasforma in urea nel cervello, che cristallizza nei neuroni",
+   "B": "Nel cervello l'NH₄⁺ in eccesso sottrae α-chetoglutarato e glutammato formando glutammina, alterando il ciclo di Krebs e la neurotrasmissione",
+   "C": "Ossida il glucosio a CO₂ troppo velocemente",
+   "D": "Blocca la sintesi del colesterolo nelle cellule nervose",
+   "E": "Viene trasformata in acido urico nei neuroni"
+  },
+  "giusta": "B",
+  "perche": "Il fegato malato non riesce a trasformare l'ammoniaca in urea. Nel cervello l'NH₄⁺ viene fissata dalla glutammato deidrogenasi (sull'α-chetoglutarato) e dalla glutammina sintetasi (sul glutammato): si impoverisce l'α-chetoglutarato del ciclo di Krebs, calano la produzione di ATP e il glutammato (e quindi il GABA), e la glutammina accumulata richiama acqua negli astrociti causando edema. Il cervello non sintetizza urea.",
+  "semplice": "Il cervello prova a «neutralizzare» l'ammoniaca usando molecole che gli servono anche per produrre energia e per comunicare. Così resta senza scorte e funziona male.",
+  "passaggi": [
+   "Ricorda che il fegato trasforma NH₄⁺ in urea",
+   "Se non lo fa, l'NH₄⁺ raggiunge il cervello",
+   "L'NH₄⁺ consuma α-chetoglutarato e glutammato",
+   "Calano energia e neurotrasmettitori, la glutammina si accumula"
+  ],
+  "concetto": "tossicità dell'ammoniaca"
+ },
+ {
+  "id": "NORG-160",
+  "materia": "Chimica organica",
+  "argomento": "Metabolismo delle proteine: transaminazione e ciclo dell'urea",
+  "livello": "superiori",
+  "domanda": "In che forma il muscolo scheletrico invia al fegato l'azoto degli amminoacidi degradati durante il digiuno, insieme a uno scheletro carbonioso utile per la gluconeogenesi?",
+  "opzioni": {
+   "A": "Come urea già pronta",
+   "B": "Come alanina, nel ciclo glucosio-alanina",
+   "C": "Come ammoniaca libera",
+   "D": "Come acido urico",
+   "E": "Come lattato"
+  },
+  "giusta": "B",
+  "perche": "Nel muscolo il gruppo amminico degli amminoacidi viene trasferito al piruvato formando alanina, che passa nel sangue. Nel fegato l'alanina cede il suo azoto per transaminazione (che finirà nell'urea) e ritorna piruvato, utilizzato per produrre glucosio, che torna al muscolo. Il muscolo non ha il ciclo dell'urea, e l'ammoniaca libera sarebbe tossica. Il lattato trasporta carbonio, ma non azoto (ciclo di Cori).",
+  "semplice": "L'alanina è come un camion che porta due carichi insieme: l'azoto da smaltire e lo scheletro di carbonio da riciclare in glucosio.",
+  "passaggi": [
+   "Ricorda che il muscolo non produce urea",
+   "L'azoto viene trasferito al piruvato: si forma alanina",
+   "Il fegato riceve l'alanina, toglie l'azoto (→ urea) e usa il piruvato (→ glucosio)",
+   "È il ciclo glucosio-alanina"
+  ],
+  "concetto": "ciclo glucosio-alanina"
+ }
+]

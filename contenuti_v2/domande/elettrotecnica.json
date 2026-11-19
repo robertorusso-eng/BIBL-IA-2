@@ -1,0 +1,2535 @@
+[
+ {
+  "id": "ELT-001",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "Un resistore da 4 Ω è collegato a una batteria da 12 V. Quale corrente lo attraversa?",
+  "opzioni": {
+   "A": "3 A",
+   "B": "16 A",
+   "C": "8 A",
+   "D": "48 A",
+   "E": "0,33 A"
+  },
+  "giusta": "A",
+  "perche": "Per la prima legge di Ohm la corrente è il rapporto tra tensione e resistenza: I = V/R = 12 V / 4 Ω = 3 A. La trappola tipica è moltiplicare tensione e resistenza (48) oppure invertire il rapporto (4/12 ≈ 0,33). Ricorda che, a parità di tensione, più resistenza significa meno corrente.",
+  "semplice": "La tensione è la «spinta», la resistenza è il «freno». Con 12 V di spinta e un freno da 4 Ω passano 3 ampere: come dividere 12 caramelle tra 4 amici.",
+  "passaggi": [
+   "1. Dati: V = 12 V, R = 4 Ω",
+   "2. I = V / R",
+   "3. I = 12 / 4 = 3 A"
+  ],
+  "concetto": "prima legge di Ohm"
+ },
+ {
+  "id": "ELT-002",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "Qual è l'unità di misura della resistenza elettrica nel Sistema Internazionale?",
+  "opzioni": {
+   "A": "Siemens (S)",
+   "B": "Coulomb (C)",
+   "C": "Henry (H)",
+   "D": "Volt (V)",
+   "E": "Ohm (Ω)"
+  },
+  "giusta": "E",
+  "perche": "La resistenza si misura in ohm, simbolo Ω, e 1 Ω è la resistenza che con 1 V lascia passare 1 A. Il siemens è l'unità della conduttanza, cioè dell'inverso della resistenza, ed è la trappola più comune. Il volt misura la tensione, l'henry l'induttanza e il coulomb la carica.",
+  "semplice": "Ohm è il nome dello scienziato tedesco che ha trovato la legge V = R·I. Un filo da cuffie ha pochi ohm, una resistenza di un circuito stampato può averne migliaia.",
+  "passaggi": [
+   "Ricorda l'unità SI della resistenza: l'ohm, simbolo Ω.",
+   "1 Ω è la resistenza che con 1 V lascia passare 1 A (R = V/I).",
+   "Il siemens misura la conduttanza (1/R), il volt la tensione, l'henry l'induttanza, il coulomb la carica.",
+   "La resistenza si misura in ohm (Ω)."
+  ],
+  "concetto": "unità della resistenza"
+ },
+ {
+  "id": "ELT-003",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "Un asciugacapelli assorbe 2000 W dalla rete a 230 V. Circa quanta corrente assorbe?",
+  "opzioni": {
+   "A": "0,115 A",
+   "B": "115 A",
+   "C": "8,7 A",
+   "D": "460 kA",
+   "E": "2,3 A"
+  },
+  "giusta": "C",
+  "perche": "La potenza elettrica è P = V·I, quindi I = P/V = 2000 W / 230 V ≈ 8,7 A. L'errore tipico è dividere al contrario (230/2000 ≈ 0,115) o moltiplicare le due grandezze. Il valore ottenuto è realistico: una presa domestica da 10 A regge un asciugacapelli, ma non due insieme.",
+  "semplice": "Potenza = tensione × corrente. Se la tensione di casa è circa 230 V, ogni 230 W servono circa 1 A: 2000 W sono quindi poco meno di 9 A.",
+  "passaggi": [
+   "1. P = V · I",
+   "2. I = P / V",
+   "3. I = 2000 / 230 ≈ 8,7 A"
+  ],
+  "concetto": "potenza elettrica"
+ },
+ {
+  "id": "ELT-004",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "Che cosa afferma la prima legge di Kirchhoff (legge dei nodi)?",
+  "opzioni": {
+   "A": "La corrente in un conduttore è proporzionale alla tensione",
+   "B": "La somma delle correnti che entrano in un nodo è uguale alla somma di quelle che escono",
+   "C": "La resistenza di un filo cresce con la sua lunghezza",
+   "D": "In un nodo la tensione si divide in parti uguali",
+   "E": "La somma delle tensioni in una maglia chiusa è uguale a zero"
+  },
+  "giusta": "B",
+  "perche": "La legge dei nodi esprime la conservazione della carica: in un nodo le cariche non si accumulano, quindi quanta corrente entra tanta ne esce. La trappola è confonderla con la legge delle maglie, che riguarda invece le tensioni lungo un percorso chiuso. Non c'è alcuna regola che divida le correnti in parti uguali: dipende dalle resistenze dei rami.",
+  "semplice": "Pensa a un incrocio di tubi d'acqua: se entrano 5 litri al secondo, devono uscirne 5 in tutto, magari 3 da un tubo e 2 dall'altro.",
+  "passaggi": [
+   "La legge dei nodi esprime la conservazione della carica.",
+   "In un nodo le cariche non si accumulano: quanta corrente entra, tanta ne esce.",
+   "La somma delle tensioni in una maglia è la seconda legge (delle maglie); la proporzionalità V-I è la legge di Ohm.",
+   "Prima legge: somma delle correnti entranti = somma delle correnti uscenti."
+  ],
+  "concetto": "legge dei nodi"
+ },
+ {
+  "id": "ELT-005",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "In un nodo entrano due correnti di 2 A e 5 A, ed esce una corrente di 3 A da un primo ramo. Quanto vale la corrente che esce dal secondo ramo?",
+  "opzioni": {
+   "A": "0 A",
+   "B": "1 A",
+   "C": "6 A",
+   "D": "4 A",
+   "E": "10 A"
+  },
+  "giusta": "D",
+  "perche": "Per la legge dei nodi la somma delle correnti entranti, 2 + 5 = 7 A, deve uguagliare quella delle uscenti: 3 A + I = 7 A, quindi I = 4 A. L'errore tipico è sommare tutte le correnti senza distinguere il verso (10 A) o sottrarre in modo disordinato. Conviene sempre scrivere da un lato le entranti e dall'altro le uscenti.",
+  "semplice": "Se in una stanza entrano 7 persone e da una porta ne escono 3, dall'altra porta ne escono 4: nessuno resta dentro.",
+  "passaggi": [
+   "1. Entranti: 2 + 5 = 7 A",
+   "2. Uscenti: 3 + I",
+   "3. 3 + I = 7 → I = 4 A"
+  ],
+  "concetto": "legge dei nodi"
+ },
+ {
+  "id": "ELT-006",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "In una maglia ci sono un generatore da 24 V e due resistori: sul primo cadono 6 V e sul secondo 10 V. Il resto della tensione cade su un terzo resistore. Quanto vale questa tensione?",
+  "opzioni": {
+   "A": "16 V",
+   "B": "24 V",
+   "C": "40 V",
+   "D": "4 V",
+   "E": "8 V"
+  },
+  "giusta": "E",
+  "perche": "Per la legge delle maglie, percorrendo il circuito chiuso, la tensione fornita dal generatore è uguale alla somma delle cadute sui resistori: 24 = 6 + 10 + V, da cui V = 8 V. La trappola è sommare tutte le tensioni compresa quella del generatore (40 V). Il generatore «alza» il potenziale, i resistori lo «abbassano».",
+  "semplice": "Il generatore è come una scala che porta l'acqua in alto di 24 metri; scendendo lungo i resistori l'acqua perde 6, poi 10 e infine gli 8 metri che restano.",
+  "passaggi": [
+   "1. Legge delle maglie: E = V1 + V2 + V3",
+   "2. 24 = 6 + 10 + V3",
+   "3. V3 = 24 − 16 = 8 V"
+  ],
+  "concetto": "legge delle maglie"
+ },
+ {
+  "id": "ELT-007",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "Da quali grandezze dipende la resistenza di un filo conduttore secondo la seconda legge di Ohm?",
+  "opzioni": {
+   "A": "Solo dalla tensione applicata ai capi",
+   "B": "Dalla lunghezza e dalla massa del filo",
+   "C": "Solo dalla corrente che lo attraversa",
+   "D": "Dalla resistività del materiale, dalla lunghezza e dalla sezione del filo",
+   "E": "Dal colore e dalla forma della guaina isolante"
+  },
+  "giusta": "D",
+  "perche": "La seconda legge di Ohm dice che R = ρ·L/S: la resistenza cresce con la resistività ρ del materiale e con la lunghezza L, e diminuisce con la sezione S. La trappola tipica è credere che la resistenza dipenda dalla tensione o dalla corrente: in un conduttore ohmico è una proprietà del filo. La guaina isolante non influisce sulla resistenza del conduttore.",
+  "semplice": "Un filo lungo e sottile è come una cannuccia lunga e stretta: si fa più fatica a farci passare qualcosa. Un cavo corto e grosso, come quello della batteria dell'auto, ha resistenza bassissima.",
+  "passaggi": [
+   "Seconda legge di Ohm: R = ρ·L/S.",
+   "ρ è la resistività del materiale, L la lunghezza, S la sezione.",
+   "R cresce con ρ e L, diminuisce con S.",
+   "In un conduttore ohmico R non dipende da tensione o corrente, né dalla guaina.",
+   "Dipende da resistività, lunghezza e sezione."
+  ],
+  "concetto": "seconda legge di Ohm"
+ },
+ {
+  "id": "ELT-008",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "superiori",
+  "domanda": "Una lampadina ha una resistenza di 48 Ω quando è accesa ed è alimentata a 12 V. Che potenza dissipa?",
+  "opzioni": {
+   "A": "3 W",
+   "B": "4 W",
+   "C": "36 W",
+   "D": "576 W",
+   "E": "0,25 W"
+  },
+  "giusta": "A",
+  "perche": "Conoscendo tensione e resistenza conviene usare P = V²/R = 144/48 = 3 W. L'errore tipico è calcolare la corrente (0,25 A) e fermarsi lì, oppure moltiplicare V per R. Si può verificare anche con P = V·I = 12 · 0,25 = 3 W.",
+  "semplice": "Con V e R si usa la formula «tensione al quadrato diviso resistenza». È la potenza tipica di una piccola luce di cortesia in auto.",
+  "passaggi": [
+   "1. P = V² / R",
+   "2. V² = 12² = 144",
+   "3. P = 144 / 48 = 3 W"
+  ],
+  "concetto": "potenza dissipata"
+ },
+ {
+  "id": "ELT-009",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "test",
+  "domanda": "Due resistori uguali da R sono collegati in parallelo. Quanto vale la resistenza equivalente?",
+  "opzioni": {
+   "A": "R²",
+   "B": "R/2",
+   "C": "R",
+   "D": "4R",
+   "E": "2R"
+  },
+  "giusta": "B",
+  "perche": "In parallelo si sommano le conduttanze: 1/Req = 1/R + 1/R = 2/R, quindi Req = R/2. La trappola è usare la regola della serie e ottenere 2R. Un buon controllo è ricordare che la resistenza equivalente di un parallelo è sempre minore della più piccola delle resistenze.",
+  "semplice": "Due casse al supermercato invece di una: la coda scorre il doppio più veloce, come se l'ostacolo fosse dimezzato.",
+  "passaggi": [
+   "1. 1/Req = 1/R + 1/R = 2/R",
+   "2. Req = R / 2"
+  ],
+  "concetto": "resistori in parallelo"
+ },
+ {
+  "id": "ELT-010",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "test",
+  "domanda": "Un filo di rame (resistività 1,72·10⁻⁸ Ω·m) è lungo 100 m e ha sezione 1,5 mm². Quanto vale circa la sua resistenza?",
+  "opzioni": {
+   "A": "0,87 Ω",
+   "B": "11,5 Ω",
+   "C": "1,15 Ω",
+   "D": "115 Ω",
+   "E": "0,0115 Ω"
+  },
+  "giusta": "C",
+  "perche": "Con la seconda legge di Ohm R = ρL/S, avendo cura di convertire la sezione in m²: 1,5 mm² = 1,5·10⁻⁶ m². Allora R = 1,72·10⁻⁸ · 100 / 1,5·10⁻⁶ ≈ 1,15 Ω. L'errore più frequente è dimenticare la conversione dei mm² e sbagliare di potenze di dieci. Un valore di circa un ohm per cento metri è tipico dei cavi domestici.",
+  "semplice": "Le prolunghe molto lunghe hanno una resistenza non trascurabile: per questo se sono troppo sottili si scaldano quando alimentano una stufetta.",
+  "passaggi": [
+   "1. S = 1,5 mm² = 1,5·10⁻⁶ m²",
+   "2. R = ρ·L / S",
+   "3. R = 1,72·10⁻⁸ · 100 / 1,5·10⁻⁶ ≈ 1,15 Ω"
+  ],
+  "concetto": "resistività e sezione"
+ },
+ {
+  "id": "ELT-011",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "test",
+  "domanda": "Una resistenza di platino vale 100 Ω a 0 °C e ha coefficiente di temperatura 0,0039 °C⁻¹. Quanto vale circa a 50 °C?",
+  "opzioni": {
+   "A": "119 500 Ω",
+   "B": "139 Ω",
+   "C": "80,5 Ω",
+   "D": "100 Ω",
+   "E": "119,5 Ω"
+  },
+  "giusta": "E",
+  "perche": "Nei metalli la resistenza cresce con la temperatura secondo R = R₀(1 + αΔT) = 100·(1 + 0,0039·50) = 119,5 Ω. La trappola è pensare che diminuisca, come accade invece nei semiconduttori. Questa proprietà è sfruttata nei sensori di temperatura chiamati termoresistenze.",
+  "semplice": "Scaldando un metallo gli atomi vibrano di più e ostacolano gli elettroni: la resistenza sale. Un termometro digitale industriale legge proprio questo aumento.",
+  "passaggi": [
+   "1. R = R₀ · (1 + α·ΔT)",
+   "2. α·ΔT = 0,0039 · 50 = 0,195",
+   "3. R = 100 · 1,195 = 119,5 Ω"
+  ],
+  "concetto": "resistenza e temperatura"
+ },
+ {
+  "id": "ELT-012",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "test",
+  "domanda": "Un'utenza assorbe 1 A per 2 ore da una rete a 230 V. Quanta energia consuma?",
+  "opzioni": {
+   "A": "460 kWh",
+   "B": "115 Wh",
+   "C": "0,46 kWh",
+   "D": "1,66 kWh",
+   "E": "230 J"
+  },
+  "giusta": "C",
+  "perche": "La potenza è P = V·I = 230 W; l'energia è potenza per tempo, quindi 230 W · 2 h = 460 Wh = 0,46 kWh (pari a circa 1,66 MJ). La trappola è confondere kWh e MJ, oppure dimenticare di moltiplicare per il tempo. In bolletta l'energia è sempre espressa in kilowattora.",
+  "semplice": "Il kilowattora è l'energia di un apparecchio da 1000 W acceso per un'ora. Un apparecchio da 230 W acceso 2 ore consuma un po' meno di mezzo kWh.",
+  "passaggi": [
+   "1. P = V·I = 230 · 1 = 230 W",
+   "2. E = P·t = 230 W · 2 h = 460 Wh",
+   "3. 460 Wh = 0,46 kWh"
+  ],
+  "concetto": "energia elettrica"
+ },
+ {
+  "id": "ELT-013",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "test",
+  "domanda": "Che cosa misura un amperometro e come va collegato?",
+  "opzioni": {
+   "A": "Misura la corrente e va collegato in serie al ramo",
+   "B": "Misura la potenza e va collegato solo al generatore",
+   "C": "Misura la tensione e va collegato in serie al ramo",
+   "D": "Misura la resistenza e va collegato con il circuito alimentato",
+   "E": "Misura la corrente e va collegato in parallelo al componente"
+  },
+  "giusta": "A",
+  "perche": "L'amperometro misura la corrente, quindi la corrente da misurare deve attraversarlo: va inserito in serie, aprendo il circuito. Ha una resistenza interna molto piccola per non alterare la corrente. La trappola è collegarlo in parallelo come un voltmetro: si crea quasi un cortocircuito e spesso si brucia il fusibile dello strumento.",
+  "semplice": "Per contare le auto che passano su una strada devi metterti sulla strada stessa (in serie), non su una strada laterale.",
+  "passaggi": [
+   "L'amperometro misura la corrente.",
+   "La corrente da misurare deve attraversarlo: va inserito in serie, aprendo il circuito.",
+   "Ha resistenza interna piccolissima per non alterare la corrente.",
+   "In parallelo creerebbe quasi un cortocircuito: in parallelo va il voltmetro.",
+   "Misura la corrente e va in serie al ramo."
+  ],
+  "concetto": "amperometro e voltmetro"
+ },
+ {
+  "id": "ELT-014",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "test",
+  "domanda": "Un conduttore viene attraversato da una carica di 6 C in 3 s. Quanto vale l'intensità di corrente media?",
+  "opzioni": {
+   "A": "0,5 A",
+   "B": "2 A",
+   "C": "9 A",
+   "D": "3 A",
+   "E": "18 A"
+  },
+  "giusta": "B",
+  "perche": "L'intensità di corrente è la carica che attraversa una sezione nell'unità di tempo: I = Q/t = 6 C / 3 s = 2 A. La trappola è moltiplicare carica e tempo oppure invertire il rapporto. Un ampere equivale a un coulomb al secondo.",
+  "semplice": "La corrente è come il numero di persone che passa da un tornello ogni secondo: 6 persone in 3 secondi sono 2 al secondo.",
+  "passaggi": [
+   "1. I = Q / t",
+   "2. I = 6 / 3 = 2 A"
+  ],
+  "concetto": "intensità di corrente"
+ },
+ {
+  "id": "ELT-015",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "università",
+  "domanda": "Una rete ha 4 nodi e 6 rami. Quante equazioni indipendenti alle maglie si possono scrivere con il metodo di Kirchhoff?",
+  "opzioni": {
+   "A": "6",
+   "B": "10",
+   "C": "4",
+   "D": "3",
+   "E": "2"
+  },
+  "giusta": "D",
+  "perche": "In una rete con n nodi e r rami le equazioni indipendenti ai nodi sono n − 1 = 3 e quelle alle maglie sono r − n + 1 = 6 − 4 + 1 = 3. In totale si hanno r = 6 equazioni, tante quante le correnti incognite. La trappola è scrivere un'equazione per ogni nodo: l'ultima è sempre combinazione delle altre.",
+  "semplice": "Ogni ramo ha una corrente incognita, quindi servono tante equazioni quanti i rami: una parte viene dai nodi, il resto dalle maglie indipendenti.",
+  "passaggi": [
+   "1. Equazioni ai nodi: n − 1 = 4 − 1 = 3",
+   "2. Equazioni alle maglie: r − n + 1 = 6 − 4 + 1 = 3",
+   "3. Totale: 3 + 3 = 6 = numero di rami"
+  ],
+  "concetto": "maglie indipendenti"
+ },
+ {
+  "id": "ELT-016",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "università",
+  "domanda": "Un generatore reale ha forza elettromotrice 12 V e resistenza interna 0,5 Ω. Quanto vale la sua corrente di cortocircuito?",
+  "opzioni": {
+   "A": "24 A",
+   "B": "infinita",
+   "C": "12 A",
+   "D": "6 A",
+   "E": "0,04 A"
+  },
+  "giusta": "A",
+  "perche": "In cortocircuito la resistenza esterna è nulla, quindi la corrente è limitata solo dalla resistenza interna: Icc = E/Ri = 12 / 0,5 = 24 A. La trappola è rispondere «infinita», che vale solo per un generatore ideale. Proprio la corrente di cortocircuito permette di misurare la resistenza interna confrontandola con la tensione a vuoto.",
+  "semplice": "Una batteria vera ha sempre un piccolo «freno» dentro di sé. Anche collegando i morsetti con un filo grosso, la corrente non diventa infinita, ma può essere grande e pericolosa.",
+  "passaggi": [
+   "1. Cortocircuito: R esterna = 0",
+   "2. Icc = E / Ri",
+   "3. Icc = 12 / 0,5 = 24 A"
+  ],
+  "concetto": "generatore reale"
+ },
+ {
+  "id": "ELT-017",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "università",
+  "domanda": "Che cosa afferma il principio di sovrapposizione degli effetti in una rete lineare con più generatori?",
+  "opzioni": {
+   "A": "Le tensioni dei generatori si sommano sempre in modulo",
+   "B": "Le resistenze in serie si sommano solo se i generatori sono uguali",
+   "C": "La potenza totale è la somma delle potenze dovute a ciascun generatore agente da solo",
+   "D": "Ogni corrente è la somma delle correnti dovute a ciascun generatore agente da solo, con gli altri spenti",
+   "E": "Un generatore di tensione spento si sostituisce con un circuito aperto"
+  },
+  "giusta": "D",
+  "perche": "In una rete lineare ogni corrente e ogni tensione si ottiene sommando, con il loro segno, i contributi di ciascun generatore lasciato acceso da solo. I generatori di tensione spenti vanno sostituiti con un cortocircuito, quelli di corrente con un circuito aperto: invertire le due regole è un errore classico. La sovrapposizione non vale per le potenze, perché dipendono dal quadrato della corrente.",
+  "semplice": "Se due rubinetti riempiono la stessa vasca, il flusso totale è la somma dei due flussi presi uno alla volta. Però l'«energia» non si somma allo stesso modo, perché va col quadrato.",
+  "passaggi": [
+   "Rete lineare con più generatori: si accende un generatore alla volta.",
+   "I generatori di tensione spenti diventano cortocircuiti, quelli di corrente circuiti aperti.",
+   "Ogni corrente (o tensione) è la somma, con segno, dei contributi di ciascun generatore da solo.",
+   "Non vale per le potenze, che dipendono dal quadrato della corrente.",
+   "Risposta: la D."
+  ],
+  "concetto": "sovrapposizione degli effetti"
+ },
+ {
+  "id": "ELT-018",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Leggi di Ohm e di Kirchhoff",
+  "livello": "università",
+  "domanda": "Una maglia contiene un generatore da 10 V, una resistenza da 2 Ω e una da 3 Ω in serie. Quanto vale la tensione ai capi della resistenza da 3 Ω?",
+  "opzioni": {
+   "A": "10 V",
+   "B": "6 V",
+   "C": "15 V",
+   "D": "2 V",
+   "E": "4 V"
+  },
+  "giusta": "B",
+  "perche": "La corrente di maglia è I = 10 / (2 + 3) = 2 A, quindi sulla resistenza da 3 Ω cade V = 3 · 2 = 6 V. È la regola del partitore di tensione: V3 = E · 3/(2+3). L'errore tipico è attribuire la tensione maggiore alla resistenza minore, ottenendo 4 V, che è invece la caduta sulla resistenza da 2 Ω.",
+  "semplice": "In serie la tensione si divide in proporzione alle resistenze: la resistenza più grande «si prende» la fetta più grande.",
+  "passaggi": [
+   "1. I = E / (R1 + R2) = 10 / 5 = 2 A",
+   "2. V3 = R · I = 3 · 2 = 6 V",
+   "3. Controllo: 4 V + 6 V = 10 V"
+  ],
+  "concetto": "partitore di tensione"
+ },
+ {
+  "id": "ELT-019",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "superiori",
+  "domanda": "Tre resistori da 10 Ω, 20 Ω e 30 Ω sono collegati in serie. Quanto vale la resistenza equivalente?",
+  "opzioni": {
+   "A": "6000 Ω",
+   "B": "30 Ω",
+   "C": "60 Ω",
+   "D": "5,45 Ω",
+   "E": "20 Ω"
+  },
+  "giusta": "C",
+  "perche": "In serie la corrente è la stessa in tutti i resistori e le tensioni si sommano, quindi le resistenze si sommano: 10 + 20 + 30 = 60 Ω. Il valore 5,45 Ω è quello del parallelo, la trappola più comune. In serie la resistenza equivalente è sempre maggiore della più grande.",
+  "semplice": "In serie gli ostacoli sono uno dopo l'altro sulla stessa strada: si sommano. Come attraversare tre semafori di fila.",
+  "passaggi": [
+   "1. Serie: Req = R1 + R2 + R3",
+   "2. Req = 10 + 20 + 30 = 60 Ω"
+  ],
+  "concetto": "resistori in serie"
+ },
+ {
+  "id": "ELT-020",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "superiori",
+  "domanda": "Tre resistori da 2 Ω, 3 Ω e 6 Ω sono collegati in parallelo. Quanto vale la resistenza equivalente?",
+  "opzioni": {
+   "A": "36 Ω",
+   "B": "11 Ω",
+   "C": "3,67 Ω",
+   "D": "0,5 Ω",
+   "E": "1 Ω"
+  },
+  "giusta": "E",
+  "perche": "In parallelo si sommano gli inversi: 1/Req = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 1, quindi Req = 1 Ω. La trappola è sommare le resistenze come in serie (11 Ω) o fermarsi al valore di 1/Req senza invertirlo. Il risultato è minore della resistenza più piccola, come deve essere.",
+  "semplice": "Aprendo più corsie su un'autostrada il traffico scorre meglio: ogni resistore in parallelo è una corsia in più per la corrente.",
+  "passaggi": [
+   "1. 1/Req = 1/2 + 1/3 + 1/6",
+   "2. 1/Req = 3/6 + 2/6 + 1/6 = 1",
+   "3. Req = 1 Ω"
+  ],
+  "concetto": "resistori in parallelo"
+ },
+ {
+  "id": "ELT-021",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "superiori",
+  "domanda": "Un resistore da 2 Ω è in serie al parallelo di un resistore da 6 Ω e uno da 3 Ω. Quanto vale la resistenza equivalente?",
+  "opzioni": {
+   "A": "11 Ω",
+   "B": "3,2 Ω",
+   "C": "4 Ω",
+   "D": "6 Ω",
+   "E": "2,5 Ω"
+  },
+  "giusta": "C",
+  "perche": "Si risolve partendo dal gruppo più interno: il parallelo 6 ∥ 3 vale 6·3/(6+3) = 2 Ω, poi in serie con 2 Ω si ottiene 4 Ω. L'errore tipico è sommare tutti i valori (11 Ω) senza riconoscere il parallelo. Per due soli resistori in parallelo la formula «prodotto diviso somma» è la più veloce.",
+  "semplice": "Riduci il circuito un pezzo alla volta, come si semplifica un'espressione partendo dalle parentesi.",
+  "passaggi": [
+   "1. Parallelo: 6·3/(6+3) = 18/9 = 2 Ω",
+   "2. Serie: 2 + 2 = 4 Ω"
+  ],
+  "concetto": "circuiti misti"
+ },
+ {
+  "id": "ELT-022",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "superiori",
+  "domanda": "In un circuito in serie, quale grandezza è uguale per tutti i componenti?",
+  "opzioni": {
+   "A": "La corrente",
+   "B": "La resistenza",
+   "C": "La potenza",
+   "D": "L'energia dissipata",
+   "E": "La tensione"
+  },
+  "giusta": "A",
+  "perche": "In un collegamento in serie esiste un solo percorso, quindi la stessa corrente attraversa tutti i componenti. Le tensioni invece si ripartiscono in proporzione alle resistenze. La trappola è confondere serie e parallelo: nel parallelo è la tensione a essere comune.",
+  "semplice": "Le luci di un vecchio albero di Natale in serie: se se ne brucia una si spengono tutte, perché la corrente ha un'unica strada.",
+  "passaggi": [
+   "In serie esiste un solo percorso per le cariche.",
+   "Quindi la stessa corrente attraversa tutti i componenti.",
+   "Le tensioni invece si ripartiscono in proporzione alle resistenze (nel parallelo è comune la tensione).",
+   "La grandezza uguale per tutti è la corrente."
+  ],
+  "concetto": "collegamento in serie"
+ },
+ {
+  "id": "ELT-023",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "superiori",
+  "domanda": "Un LED rosso richiede 2 V e 20 mA. Va alimentato da una pila da 9 V. Quale resistenza va messa in serie?",
+  "opzioni": {
+   "A": "450 Ω",
+   "B": "550 Ω",
+   "C": "0,35 Ω",
+   "D": "350 Ω",
+   "E": "100 Ω"
+  },
+  "giusta": "D",
+  "perche": "Sulla resistenza deve cadere la tensione in eccesso, 9 − 2 = 7 V, con la corrente del LED di 0,02 A: R = 7 / 0,02 = 350 Ω. L'errore tipico è usare tutti i 9 V e ottenere 450 Ω, oppure dimenticare di convertire i milliampere in ampere. In pratica si sceglie il valore commerciale più vicino, per esempio 390 Ω, che dà una corrente un po' più bassa.",
+  "semplice": "La resistenza «mangia» i volt in più che il LED non vuole. Senza di essa il LED riceverebbe troppa corrente e si brucerebbe in un attimo.",
+  "passaggi": [
+   "1. VR = 9 − 2 = 7 V",
+   "2. I = 20 mA = 0,02 A",
+   "3. R = VR / I = 7 / 0,02 = 350 Ω"
+  ],
+  "concetto": "resistenza di limitazione"
+ },
+ {
+  "id": "ELT-024",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "superiori",
+  "domanda": "Che cosa succede alla tensione ai capi di due lampadine collegate in parallelo a una pila da 4,5 V?",
+  "opzioni": {
+   "A": "Ciascuna lampadina ha 2,25 V ai capi",
+   "B": "La tensione si divide in proporzione alle resistenze",
+   "C": "La lampadina più potente ha 9 V ai capi",
+   "D": "La tensione dipende da quale lampadina è più vicina alla pila",
+   "E": "Ciascuna lampadina ha 4,5 V ai capi"
+  },
+  "giusta": "E",
+  "perche": "In parallelo tutti i componenti sono collegati agli stessi due punti, quindi hanno la stessa tensione, quella del generatore. Si dividono invece le correnti, in proporzione inversa alle resistenze. La trappola è applicare la regola del partitore di tensione, che vale per la serie.",
+  "semplice": "Le prese di casa sono tutte in parallelo: per questo ogni elettrodomestico riceve 230 V, indipendentemente da quanti ne accendi.",
+  "passaggi": [
+   "In parallelo i componenti sono collegati agli stessi due punti.",
+   "Quindi hanno tutti la stessa tensione, quella del generatore.",
+   "Si dividono le correnti, non la tensione (il partitore di tensione vale in serie).",
+   "Ciascuna lampadina ha 4,5 V ai capi."
+  ],
+  "concetto": "collegamento in parallelo"
+ },
+ {
+  "id": "ELT-025",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "test",
+  "domanda": "Un generatore di corrente da 5 A alimenta due resistori in parallelo da 4 Ω e 1 Ω. Quale corrente passa nel resistore da 1 Ω?",
+  "opzioni": {
+   "A": "5 A",
+   "B": "4 A",
+   "C": "1 A",
+   "D": "0,8 A",
+   "E": "2,5 A"
+  },
+  "giusta": "B",
+  "perche": "Con il partitore di corrente, la corrente in un ramo è proporzionale alla resistenza dell'altro ramo: I1 = 5 · 4/(4 + 1) = 4 A. La trappola è invertire le resistenze e ottenere 1 A, che è invece la corrente nel ramo da 4 Ω. La corrente preferisce la strada più facile, cioè quella con resistenza minore.",
+  "semplice": "Quando c'è una strada larga e una stretta, la maggior parte delle auto prende quella larga: qui 4 ampere su 5 vanno nel resistore piccolo.",
+  "passaggi": [
+   "1. Partitore di corrente: I1 = I · R2 / (R1 + R2)",
+   "2. I1 = 5 · 4 / (1 + 4) = 4 A",
+   "3. Controllo: nell'altro ramo 1 A, totale 5 A"
+  ],
+  "concetto": "partitore di corrente"
+ },
+ {
+  "id": "ELT-026",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "test",
+  "domanda": "Un generatore da 12 V con resistenza interna 2 Ω alimenta il parallelo di 4 Ω e 12 Ω. Quanto vale la tensione ai morsetti del carico?",
+  "opzioni": {
+   "A": "6 V",
+   "B": "7,2 V",
+   "C": "12 V",
+   "D": "4,8 V",
+   "E": "9 V"
+  },
+  "giusta": "B",
+  "perche": "Il parallelo 4 ∥ 12 vale 3 Ω; con la resistenza interna in serie si forma un partitore: V = 12 · 3/(2 + 3) = 7,2 V. La trappola è dimenticare la resistenza interna e rispondere 12 V. I restanti 4,8 V cadono dentro il generatore e si trasformano in calore.",
+  "semplice": "Una batteria vera «perde» un po' di tensione al suo interno quando eroga corrente: per questo le luci dell'auto calano quando si avvia il motore.",
+  "passaggi": [
+   "1. Rp = 4·12/(4+12) = 3 Ω",
+   "2. I = 12 / (2 + 3) = 2,4 A",
+   "3. V = Rp · I = 3 · 2,4 = 7,2 V"
+  ],
+  "concetto": "generatore con resistenza interna"
+ },
+ {
+  "id": "ELT-027",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "test",
+  "domanda": "Un condensatore da 100 µF si carica attraverso una resistenza da 1 kΩ. Quanto vale la costante di tempo del circuito?",
+  "opzioni": {
+   "A": "100 s",
+   "B": "1 s",
+   "C": "0,1 s",
+   "D": "0,001 s",
+   "E": "10 s"
+  },
+  "giusta": "C",
+  "perche": "La costante di tempo di un circuito RC è τ = R·C = 1000 Ω · 100·10⁻⁶ F = 0,1 s. L'errore tipico è sbagliare la conversione dei microfarad. Dopo un τ il condensatore è carico al 63% circa, dopo 5τ (qui mezzo secondo) si considera praticamente carico.",
+  "semplice": "τ è il «tempo caratteristico» del riempimento: come un secchio sotto un rubinetto che si riempie velocemente all'inizio e sempre più piano alla fine.",
+  "passaggi": [
+   "1. C = 100 µF = 100·10⁻⁶ F = 10⁻⁴ F",
+   "2. τ = R·C = 10³ · 10⁻⁴",
+   "3. τ = 0,1 s"
+  ],
+  "concetto": "costante di tempo RC"
+ },
+ {
+  "id": "ELT-028",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "test",
+  "domanda": "In corrente continua, a regime, come si comporta un condensatore ideale?",
+  "opzioni": {
+   "A": "Come una resistenza da 1 Ω",
+   "B": "Come un generatore di corrente costante",
+   "C": "Come un diodo",
+   "D": "Come un circuito aperto",
+   "E": "Come un cortocircuito"
+  },
+  "giusta": "D",
+  "perche": "A regime il condensatore è completamente carico, la tensione ai suoi capi non cambia più e quindi la corrente i = C·dv/dt si annulla: si comporta come un circuito aperto. La trappola è confonderlo con l'induttore, che a regime in continua si comporta invece come un cortocircuito. Durante il transitorio, appena chiuso l'interruttore, il condensatore scarico si comporta all'opposto, quasi come un cortocircuito.",
+  "semplice": "Un condensatore è come un palloncino attaccato a un tubo: si gonfia finché la pressione dentro uguaglia quella del tubo, poi l'aria smette di scorrere.",
+  "passaggi": [
+   "Relazione del condensatore: i = C·dv/dt.",
+   "A regime è carico e la tensione ai suoi capi non cambia: dv/dt = 0.",
+   "Quindi i = 0: non passa corrente.",
+   "Nessuna corrente con tensione ai capi: si comporta come un circuito aperto (l'induttore invece come un cortocircuito)."
+  ],
+  "concetto": "condensatore in continua"
+ },
+ {
+  "id": "ELT-029",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "test",
+  "domanda": "Un ponte di Wheatstone è in equilibrio con R1 = 100 Ω, R2 = 150 Ω e R3 = 300 Ω, dove la resistenza incognita soddisfa Rx/R3 = R1/R2. Quanto vale Rx?",
+  "opzioni": {
+   "A": "150 Ω",
+   "B": "450 Ω",
+   "C": "500 Ω",
+   "D": "50 Ω",
+   "E": "200 Ω"
+  },
+  "giusta": "E",
+  "perche": "All'equilibrio il galvanometro centrale non è attraversato da corrente e vale la relazione indicata: Rx = R3 · R1/R2 = 300 · 100/150 = 200 Ω. L'errore tipico è invertire il rapporto e ottenere 450 Ω. Il ponte permette misure molto precise perché si cerca uno zero, non si legge un valore.",
+  "semplice": "Il ponte è come una bilancia a due piatti: quando l'ago sta fermo al centro i due lati sono «in pari» e si ricava il valore incognito.",
+  "passaggi": [
+   "1. Rx / R3 = R1 / R2",
+   "2. Rx = 300 · 100 / 150",
+   "3. Rx = 200 Ω"
+  ],
+  "concetto": "ponte di Wheatstone"
+ },
+ {
+  "id": "ELT-030",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "test",
+  "domanda": "Una batteria da 12 V ha una capacità di 2 Ah. Quanta energia può immagazzinare idealmente?",
+  "opzioni": {
+   "A": "24 Wh",
+   "B": "2 Wh",
+   "C": "6 Wh",
+   "D": "14 Wh",
+   "E": "86,4 Wh"
+  },
+  "giusta": "A",
+  "perche": "La capacità in ampereora indica la carica: 2 Ah. Moltiplicata per la tensione dà l'energia: 12 V · 2 Ah = 24 Wh, cioè 86 400 J. La trappola è confondere ampereora e wattora, o dividere invece di moltiplicare. Nella realtà l'energia utilizzabile è un po' minore per le perdite interne.",
+  "semplice": "Gli ampereora dicono «quanta carica» c'è, i volt «quanto spinge»: insieme danno l'energia. Una power bank da 10 Ah a 3,7 V contiene circa 37 Wh.",
+  "passaggi": [
+   "1. E = V · Q",
+   "2. E = 12 V · 2 Ah = 24 Wh",
+   "3. In joule: 24 · 3600 = 86 400 J"
+  ],
+  "concetto": "capacità di una batteria"
+ },
+ {
+  "id": "ELT-031",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "università",
+  "domanda": "Un generatore da 12 V con resistenza 3 Ω in serie alimenta un resistore da 6 Ω collegato tra i morsetti A e B. Qual è l'equivalente di Thévenin visto dai morsetti A-B?",
+  "opzioni": {
+   "A": "Eth = 4 V, Rth = 3 Ω",
+   "B": "Eth = 12 V, Rth = 9 Ω",
+   "C": "Eth = 12 V, Rth = 2 Ω",
+   "D": "Eth = 8 V, Rth = 2 Ω",
+   "E": "Eth = 8 V, Rth = 9 Ω"
+  },
+  "giusta": "D",
+  "perche": "La tensione di Thévenin è la tensione a vuoto tra A e B, data dal partitore: 12 · 6/(3 + 6) = 8 V. La resistenza di Thévenin si calcola spegnendo il generatore di tensione (cortocircuito): restano 3 Ω e 6 Ω in parallelo, cioè 2 Ω. La trappola è sommare le resistenze in serie, dimenticando che con il generatore spento sono in parallelo rispetto ai morsetti.",
+  "semplice": "Thévenin riassume una rete complicata in una sola pila con una sola resistenza: comoda quando devi provare tanti carichi diversi sugli stessi morsetti.",
+  "passaggi": [
+   "1. Eth = tensione a vuoto = 12 · 6/(3+6) = 8 V",
+   "2. Spengo il generatore: 3 Ω e 6 Ω in parallelo",
+   "3. Rth = 3·6/(3+6) = 2 Ω"
+  ],
+  "concetto": "teorema di Thévenin"
+ },
+ {
+  "id": "ELT-032",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "università",
+  "domanda": "Un generatore con Eth = 9 V e Rth = 3 Ω alimenta un carico variabile. Qual è la massima potenza trasferibile al carico?",
+  "opzioni": {
+   "A": "9 W",
+   "B": "13,5 W",
+   "C": "3 W",
+   "D": "27 W",
+   "E": "6,75 W"
+  },
+  "giusta": "E",
+  "perche": "Per il teorema del massimo trasferimento di potenza il carico deve essere uguale alla resistenza interna, RL = 3 Ω. La corrente è 9/6 = 1,5 A e la potenza sul carico 3 · 1,5² = 6,75 W, cioè E²/(4R). La trappola è calcolare E²/R = 27 W, che sarebbe la potenza con il carico in cortocircuito e tutta dissipata nella resistenza interna. In questa condizione il rendimento è solo del 50%.",
+  "semplice": "Il carico «adattato» spreme dal generatore la potenza massima, ma metà va persa in calore dentro il generatore: va bene per un'antenna, non per una centrale.",
+  "passaggi": [
+   "1. Condizione: RL = Rth = 3 Ω",
+   "2. I = 9 / (3 + 3) = 1,5 A",
+   "3. Pmax = RL · I² = 3 · 2,25 = 6,75 W"
+  ],
+  "concetto": "massimo trasferimento di potenza"
+ },
+ {
+  "id": "ELT-033",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "università",
+  "domanda": "Un generatore di corrente da 5 A ha in parallelo una resistenza da 4 Ω. Qual è il generatore di tensione equivalente?",
+  "opzioni": {
+   "A": "9 V con 4 Ω in parallelo",
+   "B": "5 V con 4 Ω in serie",
+   "C": "20 V con 4 Ω in serie",
+   "D": "1,25 V con 4 Ω in serie",
+   "E": "20 V con 0,25 Ω in serie"
+  },
+  "giusta": "C",
+  "perche": "Un generatore di Norton (corrente I con resistenza R in parallelo) equivale a un generatore di Thévenin con tensione E = R·I e la stessa resistenza in serie: E = 4 · 5 = 20 V. La trappola è dividere invece di moltiplicare o cambiare il valore della resistenza. La trasformazione permette di semplificare reti con generatori misti.",
+  "semplice": "Le due forme sono due «fotografie» dello stesso generatore: guardato dai morsetti si comporta in modo identico con qualunque carico.",
+  "passaggi": [
+   "1. E = R · I",
+   "2. E = 4 · 5 = 20 V",
+   "3. Resistenza in serie: 4 Ω"
+  ],
+  "concetto": "trasformazione Norton-Thévenin"
+ },
+ {
+  "id": "ELT-034",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "università",
+  "domanda": "Un condensatore da 100 µF è carico a 12 V. Quanta energia contiene?",
+  "opzioni": {
+   "A": "0,6 J",
+   "B": "7,2 mJ",
+   "C": "1,2 mJ",
+   "D": "14,4 mJ",
+   "E": "7,2 J"
+  },
+  "giusta": "B",
+  "perche": "L'energia di un condensatore carico è W = ½·C·V² = 0,5 · 100·10⁻⁶ · 144 = 7,2·10⁻³ J. La trappola è dimenticare il fattore ½ e ottenere 14,4 mJ, oppure non elevare al quadrato la tensione. L'energia cresce col quadrato della tensione: raddoppiando V si quadruplica.",
+  "semplice": "Il condensatore immagazzina energia nel campo elettrico tra le armature: è l'energia che fa scattare il flash di una macchina fotografica.",
+  "passaggi": [
+   "1. W = ½ · C · V²",
+   "2. C = 100·10⁻⁶ F, V² = 144",
+   "3. W = 0,5 · 10⁻⁴ · 144 = 7,2·10⁻³ J = 7,2 mJ"
+  ],
+  "concetto": "energia nel condensatore"
+ },
+ {
+  "id": "ELT-035",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "università",
+  "domanda": "Un condensatore scarico si carica tramite un resistore da un generatore da 10 V. Quanto vale la sua tensione dopo un tempo pari a una costante di tempo τ?",
+  "opzioni": {
+   "A": "Circa 6,3 V",
+   "B": "Circa 9,9 V",
+   "C": "10 V",
+   "D": "5 V",
+   "E": "Circa 3,7 V"
+  },
+  "giusta": "A",
+  "perche": "Durante la carica la tensione segue vc(t) = E(1 − e^(−t/τ)); per t = τ si ha 1 − 1/e ≈ 0,632, quindi circa 6,3 V. La trappola è rispondere 3,7 V, che è il valore della tensione residua in una scarica dopo un τ. Il valore di 5 V si raggiunge prima, dopo circa 0,69·τ.",
+  "semplice": "Nel primo τ il condensatore fa quasi due terzi della strada; poi rallenta sempre di più, come quando si riempie un bicchiere sotto un filo d'acqua sempre più sottile.",
+  "passaggi": [
+   "1. vc(t) = E · (1 − e^(−t/τ))",
+   "2. Per t = τ: 1 − e^(−1) ≈ 0,632",
+   "3. vc ≈ 10 · 0,632 ≈ 6,3 V"
+  ],
+  "concetto": "transitorio di carica RC"
+ },
+ {
+  "id": "ELT-036",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Circuiti in corrente continua",
+  "livello": "università",
+  "domanda": "Un induttore ideale è inserito in un circuito in corrente continua. Una volta esaurito il transitorio, come si comporta?",
+  "opzioni": {
+   "A": "Come un condensatore carico",
+   "B": "Come un circuito aperto",
+   "C": "Come una resistenza pari a L",
+   "D": "Come un generatore di tensione pari a L",
+   "E": "Come un cortocircuito"
+  },
+  "giusta": "E",
+  "perche": "La tensione su un induttore è v = L·di/dt: a regime in continua la corrente è costante, la derivata è nulla e quindi la tensione è zero, come in un filo. L'induttore si comporta quindi come un cortocircuito, mentre il condensatore in continua si comporta come un circuito aperto. La trappola è scambiare i due comportamenti. Durante il transitorio invece l'induttore si oppone alle variazioni di corrente.",
+  "semplice": "L'induttore è come un volano: fa resistenza solo quando cerchi di accelerarlo o frenarlo. Se la corrente scorre costante, non fa più nulla.",
+  "passaggi": [
+   "Relazione dell'induttore: v = L·di/dt.",
+   "A regime in continua la corrente è costante: di/dt = 0.",
+   "Quindi v = 0: nessuna tensione ai capi, come un filo.",
+   "Si comporta come un cortocircuito (il condensatore invece come un circuito aperto)."
+  ],
+  "concetto": "induttore in continua"
+ },
+ {
+  "id": "ELT-037",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "superiori",
+  "domanda": "La tensione di rete in Italia ha una frequenza di 50 Hz. Quanto dura un periodo?",
+  "opzioni": {
+   "A": "0,5 s",
+   "B": "20 ms",
+   "C": "50 ms",
+   "D": "200 ms",
+   "E": "2 ms"
+  },
+  "giusta": "B",
+  "perche": "Il periodo è l'inverso della frequenza: T = 1/f = 1/50 = 0,02 s, cioè 20 ms. La trappola è confondere frequenza e periodo e rispondere 50 ms. In 20 ms la tensione compie un'oscillazione completa, passando due volte per lo zero.",
+  "semplice": "50 Hz significa 50 oscillazioni ogni secondo: ognuna dura un cinquantesimo di secondo, troppo poco perché l'occhio veda la lampadina sfarfallare.",
+  "passaggi": [
+   "1. T = 1 / f",
+   "2. T = 1 / 50 = 0,02 s = 20 ms"
+  ],
+  "concetto": "periodo e frequenza"
+ },
+ {
+  "id": "ELT-038",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "superiori",
+  "domanda": "La tensione di rete ha valore efficace 230 V. Quanto vale circa il suo valore massimo (di picco)?",
+  "opzioni": {
+   "A": "400 V",
+   "B": "163 V",
+   "C": "325 V",
+   "D": "460 V",
+   "E": "230 V"
+  },
+  "giusta": "C",
+  "perche": "Per una grandezza sinusoidale il valore massimo è √2 volte il valore efficace: 230 · 1,414 ≈ 325 V. La trappola è dividere per √2 (163 V) oppure confondere la tensione di picco con quella concatenata trifase (400 V). Il valore efficace è quello che produce lo stesso calore di una tensione continua uguale.",
+  "semplice": "La tensione di casa sale fino a circa 325 V, scende a zero, va a −325 V e torna su; in media «scalda» come 230 V continui.",
+  "passaggi": [
+   "1. Vmax = √2 · Veff",
+   "2. Vmax = 1,414 · 230 ≈ 325 V"
+  ],
+  "concetto": "valore efficace"
+ },
+ {
+  "id": "ELT-039",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "superiori",
+  "domanda": "Che cosa indica il valore efficace di una corrente alternata?",
+  "opzioni": {
+   "A": "Il valore della corrente continua che produce lo stesso effetto termico su una resistenza",
+   "B": "La media aritmetica dei valori istantanei in un periodo",
+   "C": "Il valore della corrente quando la tensione è nulla",
+   "D": "Il valore massimo raggiunto dalla corrente in un periodo",
+   "E": "La differenza tra il valore massimo e il minimo"
+  },
+  "giusta": "A",
+  "perche": "Il valore efficace è definito in base all'effetto Joule: è la corrente continua che, sulla stessa resistenza, dissiperebbe la stessa potenza media. La trappola è confonderlo con il valore medio, che per una sinusoide in un periodo intero è zero. Gli strumenti da laboratorio e le targhe degli apparecchi indicano normalmente valori efficaci.",
+  "semplice": "Se una stufa scalda allo stesso modo con 230 V alternati o con 230 V continui, allora 230 V è il valore efficace dell'alternata.",
+  "passaggi": [
+   "Il valore efficace è definito tramite l'effetto Joule.",
+   "È la corrente continua che sulla stessa resistenza dissiperebbe la stessa potenza media.",
+   "Non è la media aritmetica: per una sinusoide in un periodo è zero.",
+   "Non è il valore massimo: per una sinusoide Ieff = Imax/√2.",
+   "Risposta: la A."
+  ],
+  "concetto": "valore efficace"
+ },
+ {
+  "id": "ELT-040",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "superiori",
+  "domanda": "In un circuito puramente resistivo alimentato in alternata, come sono sfasate tensione e corrente?",
+  "opzioni": {
+   "A": "La corrente è in ritardo di 45°",
+   "B": "La corrente è in anticipo di 90°",
+   "C": "La corrente è in ritardo di 90°",
+   "D": "Sono in fase",
+   "E": "Sono in opposizione di fase"
+  },
+  "giusta": "D",
+  "perche": "In un resistore vale istante per istante v = R·i, quindi tensione e corrente raggiungono il massimo e lo zero negli stessi istanti: sono in fase. Lo sfasamento di 90° compare solo con induttori o condensatori ideali. La trappola è pensare che l'alternata produca sempre uno sfasamento.",
+  "semplice": "Il ferro da stiro e la stufetta sono quasi solo resistenze: la corrente segue la tensione passo per passo, come un'ombra.",
+  "passaggi": [
+   "In un resistore vale istante per istante v = R·i, con R costante.",
+   "Tensione e corrente raggiungono massimi e zeri negli stessi istanti.",
+   "Lo sfasamento di 90° compare solo con induttori o condensatori.",
+   "Tensione e corrente sono in fase."
+  ],
+  "concetto": "circuito resistivo"
+ },
+ {
+  "id": "ELT-041",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "superiori",
+  "domanda": "Un induttore da 0,1 H è alimentato a 50 Hz. Quanto vale circa la sua reattanza induttiva?",
+  "opzioni": {
+   "A": "31,4 Ω",
+   "B": "314 Ω",
+   "C": "3,14 Ω",
+   "D": "0,031 Ω",
+   "E": "5 Ω"
+  },
+  "giusta": "A",
+  "perche": "La reattanza induttiva è XL = 2π·f·L = 2 · 3,14 · 50 · 0,1 ≈ 31,4 Ω. La trappola è dimenticare il fattore 2π e moltiplicare solo f per L, ottenendo 5 Ω. La reattanza induttiva cresce con la frequenza: in continua (f = 0) è nulla.",
+  "semplice": "Più la corrente cambia in fretta, più l'induttore si oppone: per questo a frequenze alte una bobina diventa un ostacolo sempre più grande.",
+  "passaggi": [
+   "1. XL = 2π · f · L",
+   "2. XL = 2 · 3,1416 · 50 · 0,1",
+   "3. XL ≈ 31,4 Ω"
+  ],
+  "concetto": "reattanza induttiva"
+ },
+ {
+  "id": "ELT-042",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "superiori",
+  "domanda": "Come varia la reattanza di un condensatore se la frequenza raddoppia?",
+  "opzioni": {
+   "A": "Quadruplica",
+   "B": "Si dimezza",
+   "C": "Si annulla",
+   "D": "Resta uguale",
+   "E": "Raddoppia"
+  },
+  "giusta": "B",
+  "perche": "La reattanza capacitiva è XC = 1/(2π·f·C), quindi è inversamente proporzionale alla frequenza: se la frequenza raddoppia la reattanza si dimezza. La trappola è applicare il comportamento dell'induttore, la cui reattanza cresce con la frequenza. Per questo i condensatori lasciano passare bene i segnali ad alta frequenza.",
+  "semplice": "Il condensatore blocca la continua ma fa passare sempre meglio i segnali veloci: è il principio dei filtri che separano i toni acuti in una cassa acustica.",
+  "passaggi": [
+   "Reattanza capacitiva: XC = 1/(2π·f·C).",
+   "XC è inversamente proporzionale alla frequenza f.",
+   "Con f' = 2f: XC' = 1/(2π·2f·C) = XC/2.",
+   "La reattanza si dimezza."
+  ],
+  "concetto": "reattanza capacitiva"
+ },
+ {
+  "id": "ELT-043",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "test",
+  "domanda": "Un circuito RL serie ha R = 30 Ω e XL = 40 Ω. Quanto vale l'impedenza?",
+  "opzioni": {
+   "A": "70 Ω",
+   "B": "35 Ω",
+   "C": "50 Ω",
+   "D": "1200 Ω",
+   "E": "10 Ω"
+  },
+  "giusta": "C",
+  "perche": "Resistenza e reattanza sono sfasate di 90°, quindi si sommano come i cateti di un triangolo rettangolo: Z = √(30² + 40²) = √2500 = 50 Ω. La trappola è sommarle direttamente (70 Ω), come se fossero resistenze in serie. Il triangolo 30-40-50 è il classico triangolo 3-4-5 moltiplicato per 10.",
+  "semplice": "L'impedenza è l'ipotenusa del «triangolo dell'impedenza»: un cateto è la resistenza, l'altro la reattanza.",
+  "passaggi": [
+   "1. Z = √(R² + XL²)",
+   "2. Z = √(900 + 1600) = √2500",
+   "3. Z = 50 Ω"
+  ],
+  "concetto": "impedenza RL"
+ },
+ {
+  "id": "ELT-044",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "test",
+  "domanda": "Un carico monofase assorbe 10 A a 230 V con fattore di potenza 0,8. Quanto vale la potenza attiva?",
+  "opzioni": {
+   "A": "2300 W",
+   "B": "2875 W",
+   "C": "184 W",
+   "D": "1380 W",
+   "E": "1840 W"
+  },
+  "giusta": "E",
+  "perche": "La potenza attiva è P = V·I·cosφ = 230 · 10 · 0,8 = 1840 W. Il prodotto V·I = 2300 VA è la potenza apparente, la trappola più comune. Il valore 1380 corrisponde alla potenza reattiva, calcolata con senφ = 0,6.",
+  "semplice": "Solo una parte della potenza «che viaggia» nei fili fa lavoro utile: è quella attiva. Il cosφ dice quale frazione.",
+  "passaggi": [
+   "1. P = V · I · cosφ",
+   "2. P = 230 · 10 · 0,8",
+   "3. P = 1840 W"
+  ],
+  "concetto": "potenza attiva"
+ },
+ {
+  "id": "ELT-045",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "test",
+  "domanda": "In quale unità di misura si esprime la potenza reattiva?",
+  "opzioni": {
+   "A": "Kilowattora (kWh)",
+   "B": "Watt (W)",
+   "C": "Joule (J)",
+   "D": "Voltampere reattivi (var)",
+   "E": "Voltampere (VA)"
+  },
+  "giusta": "D",
+  "perche": "La potenza reattiva Q si misura in voltampere reattivi, var, per distinguerla dalla potenza attiva in watt e da quella apparente in voltampere. Le tre grandezze sono legate dal triangolo delle potenze, S² = P² + Q². La trappola è usare il watt per tutte e tre. Il kilowattora è un'unità di energia, non di potenza.",
+  "semplice": "Watt per la potenza che lavora, var per quella che «va e viene» tra rete e carico, VA per la somma vettoriale delle due.",
+  "passaggi": [
+   "Ci sono tre potenze in alternata: attiva P, reattiva Q, apparente S.",
+   "P si misura in watt (W), S in voltampere (VA).",
+   "Q si misura in voltampere reattivi (var); il kWh è energia, non potenza.",
+   "L'unità della potenza reattiva è il var."
+  ],
+  "concetto": "potenza reattiva"
+ },
+ {
+  "id": "ELT-046",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "test",
+  "domanda": "In un circuito RLC serie, che cosa succede alla frequenza di risonanza?",
+  "opzioni": {
+   "A": "L'impedenza diventa infinita",
+   "B": "La corrente si annulla",
+   "C": "Le reattanze induttiva e capacitiva si annullano e l'impedenza è minima e pari a R",
+   "D": "La reattanza capacitiva diventa nulla",
+   "E": "Tensione e corrente sono sfasate di 90°"
+  },
+  "giusta": "C",
+  "perche": "Alla risonanza XL = XC e, poiché in serie le due reattanze hanno segno opposto, si annullano: l'impedenza si riduce alla sola resistenza e la corrente è massima. Tensione e corrente tornano in fase. La trappola è confondere il circuito serie con il parallelo, dove alla risonanza l'impedenza ideale diventa invece massima.",
+  "semplice": "È come spingere un'altalena al ritmo giusto: con la frequenza «giusta» il circuito risponde con la massima corrente. Le vecchie radio si sintonizzavano proprio così.",
+  "passaggi": [
+   "Alla risonanza XL = XC.",
+   "In serie le reattanze hanno segno opposto: Z = R + j(XL − XC) = R.",
+   "L'impedenza è minima, pari a R, e la corrente è massima.",
+   "Tensione e corrente tornano in fase (l'impedenza massima è il caso del parallelo).",
+   "Risposta: la C."
+  ],
+  "concetto": "risonanza serie"
+ },
+ {
+  "id": "ELT-047",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "test",
+  "domanda": "Un circuito LC ha L = 10 mH e C = 1 µF. Quanto vale circa la frequenza di risonanza?",
+  "opzioni": {
+   "A": "159 Hz",
+   "B": "15,9 kHz",
+   "C": "100 Hz",
+   "D": "1,59 kHz",
+   "E": "10 kHz"
+  },
+  "giusta": "D",
+  "perche": "La frequenza di risonanza è f₀ = 1/(2π√(LC)); con LC = 10·10⁻³ · 10⁻⁶ = 10⁻⁸ si ha √(LC) = 10⁻⁴ e f₀ = 1/(2π·10⁻⁴) ≈ 1592 Hz. La trappola è dimenticare la radice quadrata o il 2π: senza il 2π si otterrebbe 10 kHz, che è la pulsazione ω₀ in rad/s. Occhio a convertire bene milli e micro.",
+  "semplice": "Ogni coppia bobina-condensatore ha una sua «nota» naturale, come una corda di chitarra: qui è circa 1,6 kHz, un suono acuto.",
+  "passaggi": [
+   "1. LC = 0,01 · 10⁻⁶ = 10⁻⁸ s²",
+   "2. √(LC) = 10⁻⁴ s",
+   "3. f₀ = 1 / (2π · 10⁻⁴) ≈ 1592 Hz ≈ 1,59 kHz"
+  ],
+  "concetto": "frequenza di risonanza"
+ },
+ {
+  "id": "ELT-048",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "test",
+  "domanda": "Nel sistema trifase di distribuzione in bassa tensione, la tensione concatenata è 400 V. Quanto vale circa la tensione di fase (stellata)?",
+  "opzioni": {
+   "A": "133 V",
+   "B": "565 V",
+   "C": "693 V",
+   "D": "400 V",
+   "E": "230 V"
+  },
+  "giusta": "E",
+  "perche": "In un sistema trifase simmetrico la tensione concatenata (tra due fasi) è √3 volte quella di fase (tra fase e neutro): Vf = 400/√3 ≈ 230 V. La trappola è moltiplicare per √3 invece di dividere, ottenendo 693 V. È proprio per questo che a casa, collegati tra una fase e il neutro, abbiamo 230 V.",
+  "semplice": "Tra due fili di fase ci sono 400 V, tra un filo di fase e il neutro 230 V: è la stessa rete, guardata in due modi.",
+  "passaggi": [
+   "1. Vf = Vc / √3",
+   "2. Vf = 400 / 1,732 ≈ 230 V"
+  ],
+  "concetto": "sistema trifase"
+ },
+ {
+  "id": "ELT-049",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "università",
+  "domanda": "In un circuito RL serie con R = 30 Ω e XL = 40 Ω, di quanto la corrente è sfasata rispetto alla tensione?",
+  "opzioni": {
+   "A": "In ritardo di 90°",
+   "B": "In ritardo di circa 53°",
+   "C": "In anticipo di circa 53°",
+   "D": "In fase",
+   "E": "In ritardo di circa 37°"
+  },
+  "giusta": "B",
+  "perche": "L'angolo di sfasamento è φ = arctan(XL/R) = arctan(40/30) ≈ 53,1°, e in un circuito induttivo la corrente è in ritardo rispetto alla tensione. La trappola è invertire il rapporto (arctan(30/40) ≈ 36,9°) o il verso dello sfasamento, che è in anticipo nei circuiti capacitivi. Il fattore di potenza è cosφ = R/Z = 0,6.",
+  "semplice": "Gli induttori fanno «arrivare in ritardo» la corrente, i condensatori la fanno «arrivare in anticipo». Più la reattanza pesa rispetto alla resistenza, più lo sfasamento è vicino a 90°.",
+  "passaggi": [
+   "1. tanφ = XL / R = 40 / 30 ≈ 1,333",
+   "2. φ = arctan(1,333) ≈ 53,1°",
+   "3. Carico induttivo → corrente in ritardo"
+  ],
+  "concetto": "sfasamento RL"
+ },
+ {
+  "id": "ELT-050",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "università",
+  "domanda": "Un motore trifase assorbe 10 A con tensione concatenata 400 V e cosφ = 0,85. Quanto vale circa la potenza attiva assorbita?",
+  "opzioni": {
+   "A": "5,89 kW",
+   "B": "6,93 kW",
+   "C": "4,00 kW",
+   "D": "10,2 kW",
+   "E": "3,40 kW"
+  },
+  "giusta": "A",
+  "perche": "Per un carico trifase equilibrato P = √3·V·I·cosφ = 1,732 · 400 · 10 · 0,85 ≈ 5889 W. La trappola è dimenticare √3 (3,40 kW) oppure il cosφ (6,93 kW, che è la potenza apparente in kVA). Nelle formule trifase si usano la tensione concatenata e la corrente di linea.",
+  "semplice": "Il trifase porta più potenza a parità di cavi: per un motore da officina 10 A sono sufficienti per quasi 6 kW.",
+  "passaggi": [
+   "1. P = √3 · V · I · cosφ",
+   "2. √3 · 400 · 10 = 6928 VA",
+   "3. P = 6928 · 0,85 ≈ 5889 W ≈ 5,89 kW"
+  ],
+  "concetto": "potenza trifase"
+ },
+ {
+  "id": "ELT-051",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "università",
+  "domanda": "Un impianto assorbe 10 kW con cosφ = 0,7. Quanta potenza reattiva capacitiva serve circa per portare il fattore di potenza a 0,95?",
+  "opzioni": {
+   "A": "3,3 kvar",
+   "B": "6,9 kvar",
+   "C": "2,5 kvar",
+   "D": "14,3 kvar",
+   "E": "10,2 kvar"
+  },
+  "giusta": "B",
+  "perche": "La potenza reattiva da compensare è Qc = P·(tanφ₁ − tanφ₂). Con cosφ₁ = 0,7 si ha tanφ₁ ≈ 1,020, con cosφ₂ = 0,95 tanφ₂ ≈ 0,329: Qc = 10 · (1,020 − 0,329) ≈ 6,9 kvar. La trappola è usare solo tanφ₁ (10,2 kvar), che annullerebbe tutta la reattiva portando cosφ a 1. Rifasare riduce la corrente nelle linee e le penali in bolletta.",
+  "semplice": "I condensatori di rifasamento «restituiscono» al motore la potenza reattiva che altrimenti dovrebbe arrivare dalla rete, alleggerendo i cavi.",
+  "passaggi": [
+   "1. tanφ₁ = tan(arccos 0,7) ≈ 1,020",
+   "2. tanφ₂ = tan(arccos 0,95) ≈ 0,329",
+   "3. Qc = 10 · (1,020 − 0,329) ≈ 6,9 kvar"
+  ],
+  "concetto": "rifasamento"
+ },
+ {
+  "id": "ELT-052",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "università",
+  "domanda": "Con la notazione dei fasori, come si scrive l'impedenza di un induttore ideale di induttanza L alla pulsazione ω?",
+  "opzioni": {
+   "A": "Z = jωL",
+   "B": "Z = −jωL",
+   "C": "Z = 1/(jωL)",
+   "D": "Z = j/(ωC)",
+   "E": "Z = ωL (numero reale)"
+  },
+  "giusta": "A",
+  "perche": "L'induttore ha impedenza puramente immaginaria positiva Z = jωL: la tensione è in anticipo di 90° sulla corrente. Il condensatore ha invece Z = 1/(jωC) = −j/(ωC). La trappola è scambiare i segni o scrivere la reattanza come numero reale, perdendo l'informazione sullo sfasamento. Con i fasori le leggi di Ohm e Kirchhoff si applicano come in continua, ma con numeri complessi.",
+  "semplice": "Il «j» è il modo matematico per dire «ruotato di 90°». Così si possono sommare resistenze e reattanze senza perdere gli sfasamenti.",
+  "passaggi": [
+   "L'induttore ha impedenza puramente immaginaria positiva.",
+   "Z = jωL: la tensione è in anticipo di 90° sulla corrente.",
+   "1/(jωC) = −j/(ωC) è invece il condensatore.",
+   "Scrivere ωL come numero reale perde l'informazione sullo sfasamento.",
+   "L'impedenza dell'induttore è Z = jωL."
+  ],
+  "concetto": "impedenza complessa"
+ },
+ {
+  "id": "ELT-053",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "università",
+  "domanda": "Una bobina da 10 mH è attraversata da una corrente sinusoidale di 1 kHz. Quanto vale la sua reattanza?",
+  "opzioni": {
+   "A": "0,016 Ω",
+   "B": "10 Ω",
+   "C": "628 Ω",
+   "D": "62,8 Ω",
+   "E": "6,28 Ω"
+  },
+  "giusta": "D",
+  "perche": "XL = 2π·f·L = 2π · 1000 · 0,01 ≈ 62,8 Ω. L'errore tipico è non convertire i millihenry in henry, sbagliando di un fattore mille. Il valore 0,016 Ω deriva invece dall'aver usato per errore la formula del condensatore.",
+  "semplice": "Una piccola bobina che a 50 Hz quasi non si sente diventa un ostacolo serio per i segnali audio acuti: è così che funzionano i filtri dei woofer.",
+  "passaggi": [
+   "1. L = 10 mH = 0,01 H",
+   "2. XL = 2π · 1000 · 0,01",
+   "3. XL ≈ 62,8 Ω"
+  ],
+  "concetto": "reattanza induttiva"
+ },
+ {
+  "id": "ELT-054",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Corrente alternata",
+  "livello": "università",
+  "domanda": "Un carico ha potenza attiva 6 kW e potenza reattiva 8 kvar. Quanto valgono la potenza apparente e il fattore di potenza?",
+  "opzioni": {
+   "A": "2 kVA e cosφ = 0,75",
+   "B": "10 kVA e cosφ = 0,8",
+   "C": "14 kVA e cosφ = 0,43",
+   "D": "48 kVA e cosφ = 0,6",
+   "E": "10 kVA e cosφ = 0,6"
+  },
+  "giusta": "E",
+  "perche": "Dal triangolo delle potenze S = √(P² + Q²) = √(36 + 64) = 10 kVA, e cosφ = P/S = 6/10 = 0,6. La trappola è sommare direttamente P e Q (14) oppure calcolare il rapporto Q/S = 0,8, che è senφ. Un fattore di potenza 0,6 è basso e richiederebbe un rifasamento.",
+  "semplice": "Le tre potenze formano un triangolo rettangolo: P e Q sono i cateti, S è l'ipotenusa. Qui è il solito triangolo 6-8-10.",
+  "passaggi": [
+   "1. S = √(P² + Q²) = √(36 + 64) = 10 kVA",
+   "2. cosφ = P / S = 6 / 10",
+   "3. cosφ = 0,6"
+  ],
+  "concetto": "triangolo delle potenze"
+ },
+ {
+  "id": "ELT-055",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "superiori",
+  "domanda": "Qual è la funzione principale di un diodo a giunzione?",
+  "opzioni": {
+   "A": "Amplificare la tensione",
+   "B": "Aumentare la frequenza di un segnale",
+   "C": "Lasciar passare la corrente in un solo verso",
+   "D": "Immagazzinare carica elettrica",
+   "E": "Generare corrente alternata"
+  },
+  "giusta": "C",
+  "perche": "Il diodo è formato da una giunzione tra un semiconduttore di tipo P e uno di tipo N e conduce quasi solo quando è polarizzato direttamente, cioè con l'anodo più positivo del catodo. In polarizzazione inversa passa solo una corrente piccolissima. La trappola è confonderlo con il condensatore, che accumula carica, o con il transistor, che amplifica.",
+  "semplice": "Il diodo è come una valvola di non ritorno in un tubo dell'acqua: l'acqua passa in un senso e viene bloccata nell'altro.",
+  "passaggi": [
+   "Il diodo è una giunzione tra semiconduttore P e N.",
+   "Conduce quasi solo in polarizzazione diretta (anodo più positivo del catodo).",
+   "In inversa passa solo una corrente piccolissima.",
+   "Amplificare è compito del transistor, immagazzinare carica del condensatore.",
+   "Funzione: lasciar passare la corrente in un solo verso."
+  ],
+  "concetto": "diodo a giunzione"
+ },
+ {
+  "id": "ELT-056",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "superiori",
+  "domanda": "Qual è la tensione di soglia tipica di un diodo al silicio in conduzione?",
+  "opzioni": {
+   "A": "Circa 0,7 V",
+   "B": "Circa 2 V",
+   "C": "Circa 0,07 V",
+   "D": "Circa 7 V",
+   "E": "Circa 0,3 V"
+  },
+  "giusta": "A",
+  "perche": "Un diodo al silicio comincia a condurre in modo apprezzabile intorno a 0,6-0,7 V, valore usato nei calcoli semplificati. Circa 0,3 V è il valore tipico dei vecchi diodi al germanio o dei diodi Schottky, ed è la trappola più frequente. I LED hanno soglie più alte, da circa 1,8 V a oltre 3 V a seconda del colore.",
+  "semplice": "Prima di aprirsi, il diodo al silicio «chiede» circa 0,7 V di pedaggio: per questo in un circuito si toglie sempre quella tensione dal totale.",
+  "passaggi": [
+   "Il diodo al silicio comincia a condurre apprezzabilmente a 0,6-0,7 V.",
+   "Circa 0,3 V è il valore dei diodi al germanio o Schottky.",
+   "I LED hanno soglie più alte (da 1,8 V a oltre 3 V).",
+   "La soglia tipica del silicio è circa 0,7 V."
+  ],
+  "concetto": "tensione di soglia"
+ },
+ {
+  "id": "ELT-057",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "superiori",
+  "domanda": "Che cosa si ottiene drogando il silicio con atomi di fosforo, che hanno cinque elettroni di valenza?",
+  "opzioni": {
+   "A": "Un superconduttore",
+   "B": "Un isolante perfetto",
+   "C": "Un semiconduttore intrinseco",
+   "D": "Un semiconduttore di tipo N, con elettroni in eccesso",
+   "E": "Un semiconduttore di tipo P, con lacune in eccesso"
+  },
+  "giusta": "D",
+  "perche": "Il fosforo ha un elettrone di valenza in più rispetto al silicio: quell'elettrone resta quasi libero e diventa un portatore di carica negativo, per cui il materiale è di tipo N. Il drogaggio con elementi a tre elettroni, come il boro, crea invece lacune e un materiale di tipo P. La trappola è scambiare le due lettere: N sta per negativo, cioè per gli elettroni in eccesso.",
+  "semplice": "Aggiungere pochissimi atomi di fosforo è come mettere qualche pallina in più in un vassoio pieno: quelle palline libere possono muoversi e portare corrente.",
+  "passaggi": [
+   "Il silicio ha 4 elettroni di valenza, il fosforo 5.",
+   "Il quinto elettrone del fosforo non partecipa ai legami e resta quasi libero.",
+   "Gli elettroni in eccesso sono portatori negativi: materiale di tipo N.",
+   "Il tipo P si ottiene con elementi a 3 elettroni, come il boro.",
+   "Si ottiene un semiconduttore di tipo N."
+  ],
+  "concetto": "drogaggio di tipo N"
+ },
+ {
+  "id": "ELT-058",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "superiori",
+  "domanda": "A che cosa serve un ponte di Graetz (ponte a quattro diodi)?",
+  "opzioni": {
+   "A": "A misurare una resistenza sconosciuta",
+   "B": "A raddrizzare a doppia semionda una tensione alternata",
+   "C": "A trasformare una tensione continua in alternata",
+   "D": "A stabilizzare una tensione continua a un valore fisso",
+   "E": "Ad amplificare un segnale audio"
+  },
+  "giusta": "B",
+  "perche": "Il ponte di Graetz usa quattro diodi in modo che, in entrambe le semionde, la corrente attraversi il carico sempre nello stesso verso: è un raddrizzatore a doppia semionda. Per ottenere una tensione continua livellata servono poi un condensatore di filtro e spesso un regolatore. La trappola è confonderlo con il ponte di Wheatstone, che serve a misurare resistenze.",
+  "semplice": "Dentro ogni caricabatterie c'è un ponte di diodi che «ribalta» le semionde negative facendole diventare positive.",
+  "passaggi": [
+   "Il ponte di Graetz usa quattro diodi.",
+   "In entrambe le semionde la corrente attraversa il carico sempre nello stesso verso.",
+   "È quindi un raddrizzatore a doppia semionda (poi servono filtro e regolatore per una continua livellata).",
+   "Il ponte di Wheatstone, non quello di Graetz, misura resistenze.",
+   "Serve a raddrizzare a doppia semionda."
+  ],
+  "concetto": "raddrizzatore a ponte"
+ },
+ {
+  "id": "ELT-059",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "superiori",
+  "domanda": "Un transistor BJT ha guadagno di corrente β = 100 e una corrente di base di 20 µA. Quanto vale la corrente di collettore in zona attiva?",
+  "opzioni": {
+   "A": "5 mA",
+   "B": "2 A",
+   "C": "2 mA",
+   "D": "0,2 mA",
+   "E": "20 mA"
+  },
+  "giusta": "C",
+  "perche": "In zona attiva la corrente di collettore è β volte quella di base: Ic = 100 · 20 µA = 2000 µA = 2 mA. L'errore più comune è sbagliare la conversione dei microampere. Una piccola corrente di base controlla così una corrente di collettore cento volte più grande.",
+  "semplice": "La base è come il rubinetto e il collettore come il tubo grande: girando di poco il rubinetto, nel tubo passa molta più acqua.",
+  "passaggi": [
+   "1. Ic = β · Ib",
+   "2. Ic = 100 · 20 µA = 2000 µA",
+   "3. Ic = 2 mA"
+  ],
+  "concetto": "guadagno di corrente β"
+ },
+ {
+  "id": "ELT-060",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "superiori",
+  "domanda": "Quali sono i tre terminali di un transistor bipolare (BJT)?",
+  "opzioni": {
+   "A": "Anodo, catodo e gate",
+   "B": "Source, gate e drain",
+   "C": "Ingresso, massa e uscita",
+   "D": "Anodo, catodo e griglia",
+   "E": "Emettitore, base e collettore"
+  },
+  "giusta": "E",
+  "perche": "Un BJT ha emettitore, base e collettore: la base, sottile e poco drogata, controlla il passaggio di corrente tra collettore ed emettitore. Source, gate e drain sono invece i terminali dei transistor a effetto di campo (MOSFET), la trappola più comune. Ingresso, massa e uscita sono i piedini di un regolatore di tensione integrato.",
+  "semplice": "Pensa al BJT come a una porta: l'emettitore «emette» i portatori, il collettore li «raccoglie» e la base decide quanti farne passare.",
+  "passaggi": [
+   "Il BJT è il transistor bipolare.",
+   "I suoi terminali sono emettitore, base e collettore.",
+   "Source, gate e drain sono del MOSFET; anodo e catodo del diodo; ingresso, massa, uscita di un regolatore.",
+   "Risposta: emettitore, base e collettore."
+  ],
+  "concetto": "terminali del BJT"
+ },
+ {
+  "id": "ELT-061",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "test",
+  "domanda": "Un diodo Zener da 5,1 V deve essere alimentato da 12 V con una corrente di 20 mA. Quale resistenza serie serve?",
+  "opzioni": {
+   "A": "255 Ω",
+   "B": "600 Ω",
+   "C": "345 Ω",
+   "D": "34,5 Ω",
+   "E": "855 Ω"
+  },
+  "giusta": "C",
+  "perche": "Sulla resistenza serie cade la differenza tra ingresso e tensione di Zener: 12 − 5,1 = 6,9 V. Con 0,02 A la resistenza è 6,9/0,02 = 345 Ω. La trappola è usare l'intera tensione di ingresso (600 Ω) o la sola tensione di Zener (255 Ω). Lo Zener, polarizzato inversamente, mantiene ai suoi capi una tensione quasi costante.",
+  "semplice": "Lo Zener è come uno sfioratore di una diga: tiene il livello fisso a 5,1 V e la resistenza assorbe tutto il resto.",
+  "passaggi": [
+   "1. VR = Vin − Vz = 12 − 5,1 = 6,9 V",
+   "2. I = 20 mA = 0,02 A",
+   "3. R = 6,9 / 0,02 = 345 Ω"
+  ],
+  "concetto": "stabilizzatore Zener"
+ },
+ {
+  "id": "ELT-062",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "test",
+  "domanda": "Un trasformatore fornisce 12 V efficaci a un raddrizzatore a una semionda con un diodo al silicio. Quanto vale circa il picco della tensione sul carico?",
+  "opzioni": {
+   "A": "17 V",
+   "B": "8,5 V",
+   "C": "11,3 V",
+   "D": "16,3 V",
+   "E": "12 V"
+  },
+  "giusta": "D",
+  "perche": "Il picco della sinusoide è 12 · √2 ≈ 17 V; togliendo la caduta di circa 0,7 V sul diodo si ottengono circa 16,3 V. La trappola è dimenticare il fattore √2 (12 V o 11,3 V) oppure la caduta sul diodo (17 V). Con un ponte di Graetz le cadute da togliere sarebbero due, circa 1,4 V.",
+  "semplice": "Il voltmetro legge il valore efficace, ma il condensatore di filtro si carica al valore di picco: per questo un alimentatore «da 12 V» a vuoto spesso ne misura di più.",
+  "passaggi": [
+   "1. Vmax = √2 · 12 ≈ 16,97 V",
+   "2. Caduta sul diodo ≈ 0,7 V",
+   "3. Vpicco carico ≈ 16,97 − 0,7 ≈ 16,3 V"
+  ],
+  "concetto": "raddrizzatore a semionda"
+ },
+ {
+  "id": "ELT-063",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "test",
+  "domanda": "In un amplificatore a emettitore comune Vcc = 12 V, Rc = 2 kΩ e Ic = 3 mA (emettitore a massa). Quanto vale Vce?",
+  "opzioni": {
+   "A": "6 V",
+   "B": "3 V",
+   "C": "0 V",
+   "D": "9 V",
+   "E": "12 V"
+  },
+  "giusta": "A",
+  "perche": "Sulla resistenza di collettore cade Rc·Ic = 2000 · 0,003 = 6 V, quindi Vce = 12 − 6 = 6 V. Questo punto di lavoro, a metà della tensione di alimentazione, è ideale perché lascia al segnale lo stesso spazio verso l'alto e verso il basso. La trappola è confondere la tensione su Rc con quella sul transistor: qui coincidono per caso, ma in generale non è così.",
+  "semplice": "La tensione di alimentazione si divide tra la resistenza e il transistor: quello che non cade su uno cade sull'altro.",
+  "passaggi": [
+   "1. VRc = Rc · Ic = 2000 · 0,003 = 6 V",
+   "2. Vce = Vcc − VRc",
+   "3. Vce = 12 − 6 = 6 V"
+  ],
+  "concetto": "punto di lavoro"
+ },
+ {
+  "id": "ELT-064",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "test",
+  "domanda": "In quali zone di funzionamento lavora un transistor BJT usato come interruttore?",
+  "opzioni": {
+   "A": "Solo zona attiva",
+   "B": "Solo breakdown",
+   "C": "Zona attiva e zona di breakdown",
+   "D": "Zona attiva inversa e zona attiva diretta",
+   "E": "Interdizione e saturazione"
+  },
+  "giusta": "E",
+  "perche": "Come interruttore il transistor deve essere o spento, in interdizione, con corrente di collettore quasi nulla, o completamente acceso, in saturazione, con Vce di pochi decimi di volt. La zona attiva si usa invece per amplificare. La trappola è credere che un interruttore elettronico lavori in zona attiva: lì dissiperebbe molta potenza e si scalderebbe.",
+  "semplice": "Un transistor che comanda un relè o una striscia LED con un microcontrollore è come un interruttore della luce: tutto acceso o tutto spento.",
+  "passaggi": [
+   "Un interruttore deve essere o aperto o chiuso.",
+   "Spento: interdizione, corrente di collettore quasi nulla.",
+   "Acceso: saturazione, Vce di pochi decimi di volt.",
+   "La zona attiva serve ad amplificare: come interruttore lì dissiperebbe molta potenza.",
+   "Lavora in interdizione e saturazione."
+  ],
+  "concetto": "transistor in commutazione"
+ },
+ {
+  "id": "ELT-065",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "test",
+  "domanda": "Come si comporta il terminale di gate di un MOSFET rispetto alla corrente continua?",
+  "opzioni": {
+   "A": "È in cortocircuito con il source",
+   "B": "È isolato e non assorbe praticamente corrente",
+   "C": "Assorbe una corrente proporzionale alla corrente di drain",
+   "D": "Assorbe sempre circa 0,7 A",
+   "E": "Si comporta come una base di un BJT con β = 1"
+  },
+  "giusta": "B",
+  "perche": "Il gate di un MOSFET è separato dal canale da un sottilissimo strato di ossido isolante, quindi in continua non assorbe corrente: il dispositivo è comandato in tensione. Il BJT invece è comandato in corrente, tramite la base. La trappola è applicare al MOSFET il modello del BJT. In commutazione veloce il gate assorbe comunque brevi impulsi di corrente per caricare la sua capacità.",
+  "semplice": "Il MOSFET si comanda «con la presenza» di una tensione, come un cancello che si apre se avvicini un telecomando, senza bisogno di spingere.",
+  "passaggi": [
+   "Il gate del MOSFET è separato dal canale da un sottile strato di ossido isolante.",
+   "In continua quindi non passa praticamente corrente nel gate.",
+   "Il MOSFET è comandato in tensione, il BJT in corrente tramite la base.",
+   "Il gate è isolato e non assorbe praticamente corrente."
+  ],
+  "concetto": "MOSFET"
+ },
+ {
+  "id": "ELT-066",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "test",
+  "domanda": "Che cos'è la regione di svuotamento in una giunzione PN?",
+  "opzioni": {
+   "A": "La zona del diodo in cui si accumulano gli elettroni liberi",
+   "B": "Una zona vicino alla giunzione priva di portatori liberi, dove c'è un campo elettrico",
+   "C": "La parte del diodo collegata alla massa",
+   "D": "Il contatto metallico del catodo",
+   "E": "La zona in cui il silicio si fonde durante la conduzione"
+  },
+  "giusta": "B",
+  "perche": "Quando si forma la giunzione, elettroni e lacune vicini al confine si ricombinano, lasciando ioni fissi di segno opposto ai due lati. Questa zona, senza portatori liberi, ospita un campo elettrico che si oppone a un'ulteriore diffusione. In polarizzazione diretta si restringe e il diodo conduce, in inversa si allarga. La trappola è pensare che sia una zona ricca di portatori.",
+  "semplice": "È come una «terra di nessuno» tra due territori: i portatori l'hanno abbandonata e resta solo una barriera che bisogna superare.",
+  "passaggi": [
+   "Formando la giunzione, elettroni e lacune vicini al confine si ricombinano.",
+   "Restano ioni fissi di segno opposto ai due lati.",
+   "Questa zona non ha portatori liberi e contiene un campo elettrico che si oppone alla diffusione.",
+   "In diretta si restringe, in inversa si allarga.",
+   "È la zona priva di portatori liberi con un campo elettrico."
+  ],
+  "concetto": "giunzione PN"
+ },
+ {
+  "id": "ELT-067",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "università",
+  "domanda": "Un raddrizzatore a doppia semionda alimenta un carico da 0,5 A con un condensatore di filtro da 2200 µF a 50 Hz di rete. Quanto vale circa l'ondulazione (ripple) picco-picco?",
+  "opzioni": {
+   "A": "4,5 V",
+   "B": "0,23 V",
+   "C": "1,1 V",
+   "D": "2,3 V",
+   "E": "23 V"
+  },
+  "giusta": "D",
+  "perche": "Con buona approssimazione il ripple è ΔV = I/(f_r·C), dove f_r è la frequenza delle semionde, 100 Hz per la doppia semionda. ΔV = 0,5/(100 · 2200·10⁻⁶) ≈ 2,3 V. La trappola è usare 50 Hz, ottenendo 4,5 V, che è il valore per la singola semionda. Un condensatore più grande riduce il ripple in proporzione.",
+  "semplice": "Tra un picco e l'altro il condensatore fa da serbatoio e si scarica un po' sul carico: più è grande, meno il livello scende.",
+  "passaggi": [
+   "1. Doppia semionda → f_r = 2 · 50 = 100 Hz",
+   "2. ΔV = I / (f_r · C)",
+   "3. ΔV = 0,5 / (100 · 0,0022) ≈ 2,3 V"
+  ],
+  "concetto": "ripple del filtro"
+ },
+ {
+  "id": "ELT-068",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "università",
+  "domanda": "Un MOSFET ad arricchimento in saturazione segue la legge Id = k(Vgs − Vt)², con k = 0,5 mA/V² e Vt = 2 V. Quanto vale Id per Vgs = 4 V?",
+  "opzioni": {
+   "A": "2 mA",
+   "B": "8 mA",
+   "C": "0,5 mA",
+   "D": "1 mA",
+   "E": "4 mA"
+  },
+  "giusta": "A",
+  "perche": "Si sostituisce nella legge quadratica: Id = 0,5 · (4 − 2)² = 0,5 · 4 = 2 mA. La trappola è non elevare al quadrato la tensione di overdrive (1 mA) o usare Vgs invece di Vgs − Vt (8 mA). Se Vgs fosse inferiore a Vt il canale non si formerebbe e la corrente sarebbe nulla.",
+  "semplice": "Il MOSFET si accende solo sopra la soglia; oltre la soglia la corrente cresce col quadrato di quanto la superi.",
+  "passaggi": [
+   "1. Vov = Vgs − Vt = 4 − 2 = 2 V",
+   "2. Vov² = 4 V²",
+   "3. Id = 0,5 mA/V² · 4 V² = 2 mA"
+  ],
+  "concetto": "legge quadratica del MOSFET"
+ },
+ {
+  "id": "ELT-069",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "università",
+  "domanda": "Quanto vale circa la resistenza dinamica re dell'emettitore di un BJT con Ie = 1 mA a temperatura ambiente?",
+  "opzioni": {
+   "A": "0,7 Ω",
+   "B": "26 kΩ",
+   "C": "2,6 Ω",
+   "D": "260 Ω",
+   "E": "26 Ω"
+  },
+  "giusta": "E",
+  "perche": "Nel modello per piccoli segnali re = VT/Ie, dove VT è l'equivalente in tensione della temperatura, circa 26 mV a temperatura ambiente: re = 26 mV / 1 mA = 26 Ω. La trappola è usare 0,7 V al posto di VT. Da re dipende il guadagno di tensione dell'emettitore comune, che senza resistenza di emettitore vale circa −Rc/re.",
+  "semplice": "Più corrente fai scorrere nel transistor, più la sua resistenza interna «dinamica» diventa piccola: con 1 mA vale circa 26 ohm.",
+  "passaggi": [
+   "1. re = VT / Ie",
+   "2. VT ≈ 26 mV a 25 °C circa",
+   "3. re = 26 mV / 1 mA = 26 Ω"
+  ],
+  "concetto": "modello a piccoli segnali"
+ },
+ {
+  "id": "ELT-070",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "università",
+  "domanda": "Un BJT ha guadagno α = Ic/Ie = 0,99. Quanto vale il guadagno di corrente β = Ic/Ib?",
+  "opzioni": {
+   "A": "100",
+   "B": "9,9",
+   "C": "99",
+   "D": "0,99",
+   "E": "1,01"
+  },
+  "giusta": "C",
+  "perche": "Poiché Ie = Ic + Ib, vale β = α/(1 − α) = 0,99/0,01 = 99. La trappola è scrivere β = 100 per arrotondamento mentale o confondere α con β. Un α molto vicino a 1 significa che quasi tutti i portatori emessi raggiungono il collettore, e piccole variazioni di α cambiano molto β.",
+  "semplice": "Se su 100 elettroni che partono dall'emettitore 99 arrivano al collettore e solo 1 esce dalla base, il rapporto tra collettore e base è 99.",
+  "passaggi": [
+   "1. β = α / (1 − α)",
+   "2. 1 − α = 0,01",
+   "3. β = 0,99 / 0,01 = 99"
+  ],
+  "concetto": "relazione α-β"
+ },
+ {
+  "id": "ELT-071",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "università",
+  "domanda": "Un transistor in saturazione deve comandare un carico con Ic = 0,43 A partendo da un'uscita logica da 5 V, con Rb = 1 kΩ e Vbe = 0,7 V. Qual è il β minimo per avere la saturazione?",
+  "opzioni": {
+   "A": "43",
+   "B": "1000",
+   "C": "10",
+   "D": "430",
+   "E": "100"
+  },
+  "giusta": "E",
+  "perche": "La corrente di base è Ib = (5 − 0,7)/1000 = 4,3 mA. Per saturare il transistor serve β·Ib ≥ Ic, quindi β ≥ 0,43/0,0043 = 100. La trappola è dimenticare di togliere Vbe (ottenendo un β diverso) o confondere ampere e milliampere. In pratica si sceglie un transistor con β ben superiore per avere margine.",
+  "semplice": "La base deve ricevere abbastanza corrente perché il transistor si «apra» del tutto; se β è troppo basso il transistor resta socchiuso e scalda.",
+  "passaggi": [
+   "1. Ib = (5 − 0,7) / 1000 = 0,0043 A",
+   "2. Condizione: β · Ib ≥ Ic",
+   "3. β ≥ 0,43 / 0,0043 = 100"
+  ],
+  "concetto": "saturazione del BJT"
+ },
+ {
+  "id": "ELT-072",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Componenti elettronici: diodi e transistor",
+  "livello": "università",
+  "domanda": "Un raddrizzatore a doppia semionda ideale fornisce una tensione con picco 10 V. Quanto vale circa il suo valore medio senza filtro?",
+  "opzioni": {
+   "A": "5 V",
+   "B": "10 V",
+   "C": "3,18 V",
+   "D": "6,37 V",
+   "E": "7,07 V"
+  },
+  "giusta": "D",
+  "perche": "Per una sinusoide raddrizzata a doppia semionda il valore medio è 2Vm/π = 2 · 10/3,1416 ≈ 6,37 V. La trappola è usare il valore efficace (7,07 V) oppure la formula della singola semionda, Vm/π ≈ 3,18 V. È questo valore medio che leggerebbe un voltmetro in continua sul carico.",
+  "semplice": "Raddrizzando entrambe le semionde la media raddoppia rispetto alla semionda singola: per questo i ponti di diodi sono più efficienti.",
+  "passaggi": [
+   "1. Vmedio = 2 · Vm / π",
+   "2. Vmedio = 20 / 3,1416",
+   "3. Vmedio ≈ 6,37 V"
+  ],
+  "concetto": "valore medio raddrizzato"
+ },
+ {
+  "id": "ELT-073",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "superiori",
+  "domanda": "Quale numero decimale corrisponde al numero binario 1011?",
+  "opzioni": {
+   "A": "9",
+   "B": "13",
+   "C": "11",
+   "D": "7",
+   "E": "1011"
+  },
+  "giusta": "C",
+  "perche": "Ogni cifra binaria vale una potenza di 2 a seconda della posizione, partendo da destra con 2⁰: 1·8 + 0·4 + 1·2 + 1·1 = 11. La trappola è leggere le cifre da sinistra con pesi crescenti, ottenendo 13 (cioè 1101). Conviene sempre scrivere sopra ogni cifra il suo peso: 8, 4, 2, 1.",
+  "semplice": "In binario ogni posto vale il doppio di quello alla sua destra: 1, 2, 4, 8... Basta sommare i pesi dove c'è un 1.",
+  "passaggi": [
+   "1. Pesi da destra: 1, 2, 4, 8",
+   "2. 1·8 + 0·4 + 1·2 + 1·1",
+   "3. 8 + 0 + 2 + 1 = 11"
+  ],
+  "concetto": "conversione binario-decimale"
+ },
+ {
+  "id": "ELT-074",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "superiori",
+  "domanda": "Quale porta logica dà in uscita 1 solo quando tutti gli ingressi valgono 1?",
+  "opzioni": {
+   "A": "AND",
+   "B": "NOT",
+   "C": "OR",
+   "D": "XOR",
+   "E": "NOR"
+  },
+  "giusta": "A",
+  "perche": "La porta AND realizza il prodotto logico: l'uscita è 1 solo se tutti gli ingressi sono 1. La porta OR dà invece 1 se almeno un ingresso è 1, ed è la confusione più frequente. La XOR vale 1 quando gli ingressi sono diversi.",
+  "semplice": "Pensa a due interruttori in serie che accendono una lampada: si accende solo se sono chiusi entrambi. È un AND.",
+  "passaggi": [
+   "Cerca la porta che dà 1 solo se tutti gli ingressi sono 1.",
+   "OR dà 1 se almeno un ingresso è 1; XOR se gli ingressi sono diversi; NOR solo se tutti sono 0.",
+   "Il prodotto logico, 1 solo con tutti 1, è la porta AND."
+  ],
+  "concetto": "porta AND"
+ },
+ {
+  "id": "ELT-075",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "superiori",
+  "domanda": "Quale porta logica ha come uscita il valore opposto dell'ingresso?",
+  "opzioni": {
+   "A": "Buffer",
+   "B": "NOT",
+   "C": "XOR",
+   "D": "OR",
+   "E": "AND"
+  },
+  "giusta": "B",
+  "perche": "La porta NOT, o invertitore, ha un solo ingresso e restituisce il valore negato: 0 diventa 1 e 1 diventa 0. Il buffer, che ha lo stesso simbolo triangolare ma senza pallino, copia invece l'ingresso senza invertirlo, ed è la trappola tipica. Il pallino all'uscita di un simbolo logico indica sempre una negazione.",
+  "semplice": "È come la regola «se piove non esco»: se la condizione è vera, l'azione è falsa e viceversa.",
+  "passaggi": [
+   "Cerca la porta che restituisce il valore opposto: 0 → 1, 1 → 0.",
+   "Il buffer copia l'ingresso senza invertirlo.",
+   "OR, AND, XOR hanno due ingressi e non sono semplici inversioni.",
+   "È la porta NOT (invertitore)."
+  ],
+  "concetto": "porta NOT"
+ },
+ {
+  "id": "ELT-076",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "superiori",
+  "domanda": "Quale porta logica dà in uscita 1 quando i due ingressi sono diversi tra loro?",
+  "opzioni": {
+   "A": "XNOR",
+   "B": "NAND",
+   "C": "XOR",
+   "D": "OR",
+   "E": "AND"
+  },
+  "giusta": "C",
+  "perche": "L'OR esclusivo (XOR) vale 1 se gli ingressi sono diversi (01 o 10) e 0 se sono uguali. La XNOR fa l'opposto e segnala l'uguaglianza. La trappola è confonderla con l'OR, che vale 1 anche quando entrambi gli ingressi sono 1.",
+  "semplice": "Il deviatore delle scale funziona come uno XOR: cambiando la posizione di uno qualsiasi dei due interruttori la luce cambia stato.",
+  "passaggi": [
+   "Scrivi la tabella: ingressi 00, 01, 10, 11.",
+   "Uscita 1 solo per 01 e 10, cioè ingressi diversi.",
+   "OR darebbe 1 anche per 11; XNOR fa l'opposto (1 se uguali).",
+   "È la porta XOR."
+  ],
+  "concetto": "porta XOR"
+ },
+ {
+  "id": "ELT-077",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "superiori",
+  "domanda": "Quanti valori diversi si possono rappresentare con 8 bit?",
+  "opzioni": {
+   "A": "255",
+   "B": "256",
+   "C": "512",
+   "D": "64",
+   "E": "8"
+  },
+  "giusta": "B",
+  "perche": "Con n bit si ottengono 2ⁿ combinazioni diverse: 2⁸ = 256. Il valore massimo rappresentabile senza segno è 255, perché si parte da 0, ed è proprio questa la trappola. Gruppi di 8 bit si chiamano byte.",
+  "semplice": "Ogni bit in più raddoppia le possibilità: 1 bit dà 2 valori, 2 bit ne danno 4, 8 bit ne danno 256, da 0 a 255.",
+  "passaggi": [
+   "1. Combinazioni = 2ⁿ",
+   "2. 2⁸ = 256"
+  ],
+  "concetto": "numero di combinazioni"
+ },
+ {
+  "id": "ELT-078",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "superiori",
+  "domanda": "Quale numero decimale corrisponde al numero esadecimale 2F?",
+  "opzioni": {
+   "A": "29",
+   "B": "32",
+   "C": "215",
+   "D": "62",
+   "E": "47"
+  },
+  "giusta": "E",
+  "perche": "In esadecimale la cifra F vale 15 e il peso della seconda posizione è 16: 2·16 + 15 = 47. L'errore tipico è trattare F come se valesse 0 o sbagliare il peso, ottenendo 32 o 29. L'esadecimale è comodo perché ogni cifra corrisponde esattamente a 4 bit: 2F = 0010 1111.",
+  "semplice": "In esadecimale si conta fino a 15 usando le lettere A-F. Il numero 2F è «due sedicine e quindici».",
+  "passaggi": [
+   "1. 2 · 16 = 32",
+   "2. F = 15",
+   "3. 32 + 15 = 47"
+  ],
+  "concetto": "sistema esadecimale"
+ },
+ {
+  "id": "ELT-079",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "test",
+  "domanda": "Perché le porte NAND sono dette «universali»?",
+  "opzioni": {
+   "A": "Perché possono avere un numero infinito di ingressi",
+   "B": "Perché sono le uniche porte usate nei microprocessori",
+   "C": "Perché hanno sempre uscita 1",
+   "D": "Perché combinando solo porte NAND si può realizzare qualunque funzione logica",
+   "E": "Perché funzionano con qualunque tensione di alimentazione"
+  },
+  "giusta": "D",
+  "perche": "Con le sole NAND si possono costruire NOT (collegando insieme gli ingressi), AND (NAND seguita da NOT) e OR (con il teorema di De Morgan): quindi qualunque funzione logica. La stessa proprietà vale per le NOR. La trappola è pensare che «universale» si riferisca a caratteristiche elettriche. Nei circuiti integrati questo semplifica molto la produzione.",
+  "semplice": "Con un solo tipo di mattoncino Lego si può costruire qualunque cosa: la NAND è quel mattoncino per la logica.",
+  "passaggi": [
+   "«Universale» significa che basta un solo tipo di porta per costruire ogni funzione.",
+   "NOT: NAND con gli ingressi collegati insieme.",
+   "AND: NAND seguita da un NOT fatto con NAND.",
+   "OR: con De Morgan, NAND degli ingressi negati.",
+   "Con NOT, AND e OR si fa tutto: risposta D."
+  ],
+  "concetto": "porte universali"
+ },
+ {
+  "id": "ELT-080",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "test",
+  "domanda": "Secondo il teorema di De Morgan, a che cosa equivale la negazione di (A AND B)?",
+  "opzioni": {
+   "A": "(NOT A) OR (NOT B)",
+   "B": "A OR B",
+   "C": "NOT (A OR B)",
+   "D": "A XOR B",
+   "E": "(NOT A) AND (NOT B)"
+  },
+  "giusta": "A",
+  "perche": "Il teorema di De Morgan afferma che negare un prodotto logico equivale a sommare le negazioni: NOT(A·B) = Ā + B̄. Analogamente NOT(A + B) = Ā·B̄. La trappola è negare le variabili senza scambiare AND con OR. È lo strumento principale per trasformare circuiti in sole NAND o sole NOR.",
+  "semplice": "«Non è vero che piove e fa freddo» equivale a «non piove, oppure non fa freddo»: basta che una delle due cose manchi.",
+  "passaggi": [
+   "Teorema di De Morgan: negare un AND significa negare le variabili e scambiare AND con OR.",
+   "NOT(A·B) = Ā + B̄.",
+   "Controllo con A = 1, B = 0: NOT(0) = 1 e (0) OR (1) = 1.",
+   "Risposta: (NOT A) OR (NOT B)."
+  ],
+  "concetto": "teorema di De Morgan"
+ },
+ {
+  "id": "ELT-081",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "test",
+  "domanda": "Come si rappresenta il numero −5 in complemento a due su 8 bit?",
+  "opzioni": {
+   "A": "00000101",
+   "B": "11111010",
+   "C": "11111101",
+   "D": "10000101",
+   "E": "11111011"
+  },
+  "giusta": "E",
+  "perche": "Si parte da +5 = 00000101, si invertono tutti i bit ottenendo 11111010 (complemento a uno) e si aggiunge 1: 11111011. La trappola è fermarsi al complemento a uno oppure usare la rappresentazione modulo e segno (10000101). Il complemento a due permette di fare le sottrazioni come semplici addizioni.",
+  "semplice": "Il trucco è: «inverti tutto e aggiungi uno». Il primo bit a 1 dice che il numero è negativo.",
+  "passaggi": [
+   "1. +5 = 00000101",
+   "2. Inverto i bit: 11111010",
+   "3. Aggiungo 1: 11111011"
+  ],
+  "concetto": "complemento a due"
+ },
+ {
+  "id": "ELT-082",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "test",
+  "domanda": "Che cosa distingue un circuito sequenziale da uno combinatorio?",
+  "opzioni": {
+   "A": "Non c'è differenza, sono due nomi dello stesso circuito",
+   "B": "Il combinatorio ha sempre un clock",
+   "C": "Il sequenziale ha memoria: l'uscita dipende anche dagli stati precedenti",
+   "D": "Il sequenziale usa solo porte NOT",
+   "E": "Il combinatorio può memorizzare un bit"
+  },
+  "giusta": "C",
+  "perche": "In un circuito combinatorio l'uscita dipende solo dagli ingressi in quell'istante; in un circuito sequenziale dipende anche dallo stato interno, cioè dalla storia passata. Gli elementi di memoria sono latch e flip-flop, spesso sincronizzati da un clock. La trappola è credere che sia il clock a definire un circuito come combinatorio: è vero il contrario.",
+  "semplice": "Un sommatore è combinatorio: 2 + 3 fa sempre 5. Un contatore è sequenziale: premendo lo stesso tasto ottieni numeri diversi perché si ricorda dove era arrivato.",
+  "passaggi": [
+   "Combinatorio: l'uscita dipende solo dagli ingressi in quell'istante.",
+   "Sequenziale: l'uscita dipende anche dallo stato interno, cioè dalla storia passata.",
+   "La memoria è data da latch e flip-flop, spesso con clock (il clock appartiene ai sequenziali).",
+   "Il sequenziale ha memoria."
+  ],
+  "concetto": "logica sequenziale"
+ },
+ {
+  "id": "ELT-083",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "test",
+  "domanda": "Un flip-flop di tipo D, sul fronte attivo del clock, che cosa memorizza?",
+  "opzioni": {
+   "A": "Il valore presente sull'ingresso D in quell'istante",
+   "B": "Sempre il valore 1",
+   "C": "Il valore opposto a quello sull'ingresso D",
+   "D": "La somma dei valori dei due ingressi",
+   "E": "Il valore dell'uscita precedente, senza cambiare"
+  },
+  "giusta": "A",
+  "perche": "Il flip-flop D copia sull'uscita Q il valore dell'ingresso D al momento del fronte attivo del clock e lo mantiene fino al fronte successivo. Per questo è l'elemento base dei registri e delle memorie. La trappola è confonderlo con il flip-flop T, che invece inverte lo stato quando T = 1. Tra un fronte e l'altro le variazioni di D vengono ignorate.",
+  "semplice": "È come scattare una foto: al «clic» del clock il flip-flop fotografa l'ingresso e tiene la foto finché non scatta di nuovo.",
+  "passaggi": [
+   "Il flip-flop D campiona l'ingresso D sul fronte attivo del clock.",
+   "Copia quel valore sull'uscita Q.",
+   "Lo mantiene fino al fronte successivo, ignorando le variazioni intermedie di D.",
+   "Memorizza il valore presente su D in quell'istante."
+  ],
+  "concetto": "flip-flop D"
+ },
+ {
+  "id": "ELT-084",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "test",
+  "domanda": "Un multiplexer ha 8 ingressi di dati. Quante linee di selezione servono?",
+  "opzioni": {
+   "A": "4",
+   "B": "3",
+   "C": "8",
+   "D": "256",
+   "E": "2"
+  },
+  "giusta": "B",
+  "perche": "Le linee di selezione devono individuare uno degli 8 ingressi, quindi servono n bit con 2ⁿ = 8, cioè n = 3. La trappola è pensare a una linea per ingresso (8). Il multiplexer funziona come un commutatore elettronico che porta in uscita l'ingresso scelto.",
+  "semplice": "Con tre interruttori si formano 8 combinazioni, una per ogni canale: come un telecomando a tre tasti che sceglie tra 8 canali.",
+  "passaggi": [
+   "1. 2ⁿ ≥ 8",
+   "2. 2³ = 8",
+   "3. n = 3 linee di selezione"
+  ],
+  "concetto": "multiplexer"
+ },
+ {
+  "id": "ELT-085",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "università",
+  "domanda": "Un contatore binario asincrono a 4 flip-flop è pilotato da un clock da 1 MHz. Quanto vale la frequenza all'uscita dell'ultimo flip-flop?",
+  "opzioni": {
+   "A": "125 kHz",
+   "B": "250 kHz",
+   "C": "16 MHz",
+   "D": "62,5 kHz",
+   "E": "4 MHz"
+  },
+  "giusta": "D",
+  "perche": "Ogni flip-flop in configurazione toggle divide la frequenza per 2, quindi quattro stadi dividono per 2⁴ = 16: 1 MHz/16 = 62,5 kHz. La trappola è dividere per 4, il numero di flip-flop, ottenendo 250 kHz. Per lo stesso motivo un contatore a 4 bit conta da 0 a 15.",
+  "semplice": "È come un orologio: la lancetta dei secondi fa 60 giri mentre quella dei minuti ne fa uno. Ogni stadio del contatore gira a metà velocità del precedente.",
+  "passaggi": [
+   "1. Ogni flip-flop divide per 2",
+   "2. 4 stadi: divisione per 2⁴ = 16",
+   "3. f = 1 000 000 / 16 = 62 500 Hz"
+  ],
+  "concetto": "contatore divisore"
+ },
+ {
+  "id": "ELT-086",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "università",
+  "domanda": "Un convertitore A/D a 8 bit ha un fondo scala di 5 V. Qual è circa la sua risoluzione (valore di un LSB), considerando 2⁸ livelli?",
+  "opzioni": {
+   "A": "19,5 mV",
+   "B": "0,625 V",
+   "C": "1,95 mV",
+   "D": "39 mV",
+   "E": "5 mV"
+  },
+  "giusta": "A",
+  "perche": "La risoluzione è il fondo scala diviso per il numero di livelli: 5 V / 256 ≈ 19,5 mV. La trappola è dividere per il numero di bit (5/8 = 0,625 V). Alcuni testi dividono per 2⁸ − 1 = 255 ottenendo circa 19,6 mV: la differenza è trascurabile, ma l'ordine di grandezza è quello. Con 10 o 12 bit la risoluzione migliora rispettivamente di 4 e 16 volte.",
+  "semplice": "Il convertitore taglia l'intervallo da 0 a 5 V in 256 scalini: ogni scalino è alto circa 20 millivolt, e variazioni più piccole non vengono viste.",
+  "passaggi": [
+   "1. Livelli = 2⁸ = 256",
+   "2. LSB = 5 V / 256",
+   "3. LSB ≈ 0,0195 V ≈ 19,5 mV"
+  ],
+  "concetto": "risoluzione ADC"
+ },
+ {
+  "id": "ELT-087",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "università",
+  "domanda": "Come si semplifica l'espressione booleana A·B + A·B̄?",
+  "opzioni": {
+   "A": "B",
+   "B": "A",
+   "C": "A + B",
+   "D": "1",
+   "E": "A·B"
+  },
+  "giusta": "B",
+  "perche": "Raccogliendo A si ottiene A·(B + B̄), e poiché B + B̄ = 1, il risultato è A. Sulla mappa di Karnaugh i due mintermini sono adiacenti e si raggruppano eliminando la variabile che cambia, cioè B. La trappola è credere che la somma di due prodotti non si possa ridurre. Semplificare riduce il numero di porte necessarie.",
+  "semplice": "«Esco se c'è il sole e ho tempo, oppure se c'è il sole e non ho tempo» significa semplicemente «esco se c'è il sole».",
+  "passaggi": [
+   "1. A·B + A·B̄ = A·(B + B̄)",
+   "2. B + B̄ = 1",
+   "3. A · 1 = A"
+  ],
+  "concetto": "semplificazione booleana"
+ },
+ {
+  "id": "ELT-088",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "università",
+  "domanda": "Che cosa indica il «fan-out» di una porta logica?",
+  "opzioni": {
+   "A": "La potenza dissipata per ogni commutazione",
+   "B": "Il numero di ingressi della porta",
+   "C": "Il ritardo di propagazione tra ingresso e uscita",
+   "D": "Il numero massimo di ingressi di altre porte che la sua uscita può pilotare correttamente",
+   "E": "La frequenza massima di clock"
+  },
+  "giusta": "D",
+  "perche": "Il fan-out è il numero massimo di ingressi della stessa famiglia logica che un'uscita può pilotare mantenendo livelli di tensione validi. Il numero di ingressi di una porta si chiama invece fan-in, ed è la confusione classica. Nelle famiglie TTL il limite è dato dalle correnti; nelle CMOS dipende soprattutto dalle capacità e quindi dalla velocità.",
+  "semplice": "Una persona con la voce forte può farsi sentire da molte altre, ma non da infinite: il fan-out dice quanti «ascoltatori» un'uscita può servire bene.",
+  "passaggi": [
+   "«Fan-out» = quante uscite «a ventaglio» si possono collegare.",
+   "È il numero massimo di ingressi di altre porte che un'uscita pilota mantenendo livelli validi.",
+   "Il numero di ingressi della porta stessa si chiama fan-in.",
+   "Risposta: la D."
+  ],
+  "concetto": "fan-out"
+ },
+ {
+  "id": "ELT-089",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "università",
+  "domanda": "Un microcontrollore ha un ADC a 12 bit con riferimento 3,3 V. Quanto vale circa la sua risoluzione?",
+  "opzioni": {
+   "A": "0,08 mV",
+   "B": "12,9 mV",
+   "C": "0,81 mV",
+   "D": "3,3 mV",
+   "E": "275 mV"
+  },
+  "giusta": "C",
+  "perche": "Con 12 bit si hanno 2¹² = 4096 livelli: 3,3 V / 4096 ≈ 0,000806 V, cioè circa 0,81 mV. La trappola è dividere per 12, ottenendo 275 mV, oppure usare 2⁸ e ottenere 12,9 mV. Una risoluzione fine permette di leggere sensori con piccole variazioni di tensione.",
+  "semplice": "Aumentare i bit è come usare un righello con tacche più fitte: con 12 bit le tacche sono circa 4000.",
+  "passaggi": [
+   "1. Livelli = 2¹² = 4096",
+   "2. LSB = 3,3 / 4096",
+   "3. LSB ≈ 0,81 mV"
+  ],
+  "concetto": "risoluzione ADC"
+ },
+ {
+  "id": "ELT-090",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Elettronica digitale e porte logiche",
+  "livello": "università",
+  "domanda": "Qual è la differenza principale tra un latch SR e un flip-flop SR sincronizzato sul fronte?",
+  "opzioni": {
+   "A": "Il flip-flop non ha uscita negata",
+   "B": "Il flip-flop ha sempre quattro ingressi",
+   "C": "Il latch non ha memoria, il flip-flop sì",
+   "D": "Il latch funziona solo con logica TTL",
+   "E": "Il latch risponde agli ingressi in ogni momento in cui è abilitato, il flip-flop solo sul fronte del clock"
+  },
+  "giusta": "E",
+  "perche": "Sia latch sia flip-flop memorizzano un bit. Il latch è sensibile al livello: finché è abilitato l'uscita segue gli ingressi. Il flip-flop edge-triggered campiona gli ingressi solo nell'istante del fronte di clock, rendendo i sistemi sincroni più prevedibili. La trappola è pensare che il latch non abbia memoria. Nel latch SR la combinazione S = R = 1 è vietata nella versione con porte NOR.",
+  "semplice": "Il latch è una porta che resta aperta finché tieni premuto il pulsante; il flip-flop è una porta girevole che lascia passare una sola persona per ogni spinta.",
+  "passaggi": [
+   "Sia latch sia flip-flop memorizzano un bit.",
+   "Il latch è sensibile al livello: finché è abilitato l'uscita segue gli ingressi.",
+   "Il flip-flop edge-triggered campiona gli ingressi solo sul fronte del clock.",
+   "Risposta: la E."
+  ],
+  "concetto": "latch e flip-flop"
+ },
+ {
+  "id": "ELT-091",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "superiori",
+  "domanda": "Su quale fenomeno fisico si basa il funzionamento del trasformatore?",
+  "opzioni": {
+   "A": "L'effetto fotoelettrico",
+   "B": "L'elettrolisi dell'acqua",
+   "C": "L'induzione elettromagnetica tra due avvolgimenti accoppiati da un nucleo",
+   "D": "La conduzione nei semiconduttori",
+   "E": "L'effetto Joule nei conduttori"
+  },
+  "giusta": "C",
+  "perche": "Nel trasformatore la corrente alternata del primario crea nel nucleo di ferro un flusso magnetico variabile, che induce una tensione nel secondario secondo la legge di Faraday. Per questo il trasformatore funziona solo in alternata: con una tensione continua il flusso non varierebbe. L'effetto Joule è la trappola tipica, ma rappresenta solo una perdita, non il principio di funzionamento.",
+  "semplice": "Due bobine avvolte sullo stesso pezzo di ferro «si parlano» attraverso il campo magnetico, senza toccarsi elettricamente: è così che il caricabatterie riduce la tensione di rete.",
+  "passaggi": [
+   "Nel primario la corrente alternata crea nel nucleo un flusso magnetico variabile.",
+   "Il flusso variabile induce una tensione nel secondario (legge di Faraday).",
+   "In continua il flusso non varia e non c'è induzione.",
+   "L'effetto Joule è solo una perdita, non il principio.",
+   "Il fenomeno è l'induzione elettromagnetica tra avvolgimenti accoppiati."
+  ],
+  "concetto": "principio del trasformatore"
+ },
+ {
+  "id": "ELT-092",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "superiori",
+  "domanda": "Un trasformatore ideale ha 2000 spire al primario e 100 al secondario. Il primario è alimentato a 230 V. Quanto vale la tensione al secondario?",
+  "opzioni": {
+   "A": "230 V",
+   "B": "11,5 V",
+   "C": "4600 V",
+   "D": "23 V",
+   "E": "115 V"
+  },
+  "giusta": "B",
+  "perche": "In un trasformatore ideale le tensioni stanno tra loro come i numeri di spire: V2 = V1 · N2/N1 = 230 · 100/2000 = 11,5 V. La trappola è invertire il rapporto, ottenendo 4600 V. Qui il trasformatore è un abbassatore, con rapporto di trasformazione 20.",
+  "semplice": "Ogni spira «porta» la stessa quantità di volt: se il secondario ha venti volte meno spire, avrà venti volte meno tensione.",
+  "passaggi": [
+   "1. V2 / V1 = N2 / N1",
+   "2. V2 = 230 · 100 / 2000",
+   "3. V2 = 11,5 V"
+  ],
+  "concetto": "rapporto di trasformazione"
+ },
+ {
+  "id": "ELT-093",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "superiori",
+  "domanda": "In un trasformatore abbassatore di tensione ideale, che cosa succede alla corrente al secondario rispetto al primario?",
+  "opzioni": {
+   "A": "È uguale",
+   "B": "È nulla",
+   "C": "È continua invece che alternata",
+   "D": "È minore, nello stesso rapporto della tensione",
+   "E": "È maggiore, perché la potenza si conserva"
+  },
+  "giusta": "E",
+  "perche": "In un trasformatore ideale la potenza in ingresso è uguale a quella in uscita: V1·I1 = V2·I2. Se la tensione si abbassa, la corrente deve aumentare nello stesso rapporto. La trappola è credere che corrente e tensione diminuiscano insieme. Per questo gli avvolgimenti a bassa tensione hanno fili più grossi.",
+  "semplice": "Il trasformatore non regala energia: se abbassa i volt, aumenta gli ampere. Per questo il cavo di una saldatrice è molto spesso.",
+  "passaggi": [
+   "Trasformatore ideale: la potenza si conserva, V1·I1 = V2·I2.",
+   "Abbassatore: V2 < V1.",
+   "Quindi I2 = I1·V1/V2 > I1: la corrente aumenta nello stesso rapporto in cui la tensione cala.",
+   "La corrente al secondario è maggiore."
+  ],
+  "concetto": "conservazione della potenza"
+ },
+ {
+  "id": "ELT-094",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "superiori",
+  "domanda": "Quale parte di un motore elettrico rotante è fissa?",
+  "opzioni": {
+   "A": "Il collettore a lamelle",
+   "B": "La ventola di raffreddamento sull'albero",
+   "C": "L'albero motore",
+   "D": "Lo statore",
+   "E": "Il rotore"
+  },
+  "giusta": "D",
+  "perche": "Ogni macchina rotante ha uno statore, la parte fissa collegata alla carcassa, e un rotore, la parte che gira solidale con l'albero. Il collettore a lamelle e la ventola calettata sull'albero ruotano con il rotore. La trappola è confondere i due termini, che si distinguono facilmente ricordando che «statore» richiama «stare fermo».",
+  "semplice": "In un ventilatore da tavolo lo statore è la parte avvolta di rame chiusa nel corpo del motore, il rotore è quello che fa girare le pale.",
+  "passaggi": [
+   "Una macchina rotante ha una parte fissa e una che gira.",
+   "Il rotore gira con l'albero; collettore e ventola calettati sull'albero ruotano anch'essi.",
+   "La parte fissa, collegata alla carcassa, è lo statore («stare fermo»).",
+   "Risposta: lo statore."
+  ],
+  "concetto": "statore e rotore"
+ },
+ {
+  "id": "ELT-095",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "superiori",
+  "domanda": "Che cosa fa un generatore elettrico (alternatore o dinamo)?",
+  "opzioni": {
+   "A": "Trasforma energia meccanica in energia elettrica",
+   "B": "Trasforma corrente alternata in continua",
+   "C": "Immagazzina energia elettrica come una batteria",
+   "D": "Trasforma energia elettrica in energia meccanica",
+   "E": "Aumenta la tensione senza parti in movimento"
+  },
+  "giusta": "A",
+  "perche": "Il generatore sfrutta l'induzione elettromagnetica: facendo ruotare conduttori in un campo magnetico, o un campo magnetico vicino a conduttori, si induce una tensione. Trasforma quindi lavoro meccanico in energia elettrica, l'opposto del motore. La trappola è confonderlo con il raddrizzatore o con il trasformatore, che non hanno parti in rotazione.",
+  "semplice": "La dinamo della bicicletta trasforma la tua pedalata in luce per il fanale: più pedali veloce, più luce fa.",
+  "passaggi": [
+   "Il generatore fa ruotare conduttori in un campo magnetico (o il campo vicino ai conduttori).",
+   "Per induzione elettromagnetica nasce una tensione.",
+   "Entra lavoro meccanico, esce energia elettrica: l'opposto del motore.",
+   "Raddrizzatore e trasformatore non hanno parti rotanti e non producono energia.",
+   "Trasforma energia meccanica in energia elettrica."
+  ],
+  "concetto": "generatore elettrico"
+ },
+ {
+  "id": "ELT-096",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "superiori",
+  "domanda": "Un motore assorbe 10 kW elettrici e ne rende 9 kW meccanici all'albero. Quanto vale il suo rendimento?",
+  "opzioni": {
+   "A": "9%",
+   "B": "111%",
+   "C": "90%",
+   "D": "1%",
+   "E": "10%"
+  },
+  "giusta": "C",
+  "perche": "Il rendimento è il rapporto tra potenza utile e potenza assorbita: η = 9/10 = 0,9, cioè 90%. La trappola è invertire il rapporto, ottenendo un valore superiore al 100% che è impossibile. Il kilowatt mancante è perso in calore nel rame, nel ferro e per attrito.",
+  "semplice": "Su 10 parti di energia che entrano, 9 diventano lavoro utile e 1 diventa calore: per questo i motori hanno una ventola di raffreddamento.",
+  "passaggi": [
+   "1. η = Putile / Passorbita",
+   "2. η = 9 / 10 = 0,9",
+   "3. η = 90%"
+  ],
+  "concetto": "rendimento"
+ },
+ {
+  "id": "ELT-097",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "test",
+  "domanda": "Un motore asincrono trifase a 4 poli (2 coppie polari) è alimentato a 50 Hz. Qual è la velocità di sincronismo?",
+  "opzioni": {
+   "A": "6000 giri/min",
+   "B": "1000 giri/min",
+   "C": "750 giri/min",
+   "D": "3000 giri/min",
+   "E": "1500 giri/min"
+  },
+  "giusta": "E",
+  "perche": "La velocità del campo rotante è n₀ = 60·f/p, con p numero di coppie polari: 60 · 50/2 = 1500 giri/min. La trappola è usare il numero di poli (4) al posto delle coppie polari, ottenendo 750 giri/min. Il rotore di un motore asincrono gira un po' più lentamente di questa velocità.",
+  "semplice": "Il campo magnetico creato dalle tre fasi «ruota» nello statore; con più coppie di poli gira più lentamente, come un ingranaggio con più denti.",
+  "passaggi": [
+   "1. n₀ = 60 · f / p",
+   "2. 4 poli → p = 2 coppie",
+   "3. n₀ = 60 · 50 / 2 = 1500 giri/min"
+  ],
+  "concetto": "velocità di sincronismo"
+ },
+ {
+  "id": "ELT-098",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "test",
+  "domanda": "Un motore asincrono con velocità di sincronismo 1500 giri/min ruota a 1440 giri/min. Quanto vale lo scorrimento?",
+  "opzioni": {
+   "A": "4%",
+   "B": "40%",
+   "C": "0,4%",
+   "D": "96%",
+   "E": "60%"
+  },
+  "giusta": "A",
+  "perche": "Lo scorrimento è s = (n₀ − n)/n₀ = (1500 − 1440)/1500 = 0,04, cioè 4%. La trappola è dividere per la velocità effettiva o confondere lo scorrimento con il rapporto n/n₀ (96%). Valori di pochi punti percentuali sono tipici a pieno carico.",
+  "semplice": "Il rotore «insegue» il campo rotante senza raggiungerlo mai: se lo raggiungesse non ci sarebbe più induzione e quindi niente coppia.",
+  "passaggi": [
+   "1. s = (n₀ − n) / n₀",
+   "2. s = (1500 − 1440) / 1500 = 60 / 1500",
+   "3. s = 0,04 = 4%"
+  ],
+  "concetto": "scorrimento"
+ },
+ {
+  "id": "ELT-099",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "test",
+  "domanda": "Perché il nucleo di un trasformatore è realizzato con lamierini isolati tra loro invece che con un blocco di ferro pieno?",
+  "opzioni": {
+   "A": "Per eliminare del tutto le perdite nel rame",
+   "B": "Per ridurre le correnti parassite (di Foucault) e le relative perdite",
+   "C": "Per aumentare la resistenza degli avvolgimenti",
+   "D": "Per ridurre il numero di spire necessarie",
+   "E": "Per rendere il trasformatore adatto alla corrente continua"
+  },
+  "giusta": "B",
+  "perche": "Il flusso variabile induce nel ferro stesso correnti che circolano in anelli chiusi, le correnti parassite, e lo riscaldano. Dividendo il nucleo in lamierini sottili e isolati si allungano e si interrompono questi percorsi, riducendo le perdite. La trappola è pensare che i lamierini riducano le perdite nel rame, che dipendono invece dalla resistenza degli avvolgimenti. Il ferro al silicio riduce anche le perdite per isteresi.",
+  "semplice": "È come tagliare un lago in tanti canali stretti: i vortici d'acqua non riescono più a formarsi.",
+  "passaggi": [
+   "Il flusso variabile induce correnti anche nel ferro del nucleo: correnti parassite (di Foucault).",
+   "Queste correnti scaldano il nucleo: sono perdite.",
+   "Lamierini sottili e isolati interrompono gli anelli di corrente e le riducono.",
+   "Le perdite nel rame dipendono dagli avvolgimenti, non dal nucleo.",
+   "I lamierini servono a ridurre le correnti parassite."
+  ],
+  "concetto": "correnti parassite"
+ },
+ {
+  "id": "ELT-100",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "test",
+  "domanda": "Un motore in corrente continua è alimentato a 220 V, ha resistenza d'armatura 0,5 Ω e assorbe 20 A. Quanto vale la forza controelettromotrice?",
+  "opzioni": {
+   "A": "230 V",
+   "B": "200 V",
+   "C": "10 V",
+   "D": "210 V",
+   "E": "220 V"
+  },
+  "giusta": "D",
+  "perche": "Nel circuito d'armatura V = E + Ra·I, quindi E = 220 − 0,5 · 20 = 210 V. La trappola è sommare la caduta invece di sottrarla (230 V) o dimenticarla del tutto. La forza controelettromotrice è proporzionale alla velocità: all'avviamento è nulla, e per questo la corrente di spunto è molto alta.",
+  "semplice": "Quando il motore gira produce a sua volta una tensione che «si oppone» all'alimentazione: più va veloce, meno corrente assorbe.",
+  "passaggi": [
+   "1. V = E + Ra · I",
+   "2. E = V − Ra · I",
+   "3. E = 220 − 0,5 · 20 = 210 V"
+  ],
+  "concetto": "forza controelettromotrice"
+ },
+ {
+  "id": "ELT-101",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "test",
+  "domanda": "Un motore eroga 5,5 kW a 1450 giri/min. Quanto vale circa la coppia all'albero?",
+  "opzioni": {
+   "A": "7975 N·m",
+   "B": "0,26 N·m",
+   "C": "228 N·m",
+   "D": "36 N·m",
+   "E": "3,8 N·m"
+  },
+  "giusta": "D",
+  "perche": "La coppia si ottiene da C = P/ω, con ω in rad/s: ω = 2π · 1450/60 ≈ 151,8 rad/s, quindi C = 5500/151,8 ≈ 36 N·m. La trappola è dividere la potenza per i giri al minuto (3,8) o moltiplicare invece di dividere. Bisogna sempre convertire la velocità in radianti al secondo.",
+  "semplice": "Potenza = coppia × velocità di rotazione: a parità di potenza un motore lento ha più coppia, come una bici in marcia corta in salita.",
+  "passaggi": [
+   "1. ω = 2π · n / 60 = 2π · 1450 / 60 ≈ 151,8 rad/s",
+   "2. C = P / ω",
+   "3. C = 5500 / 151,8 ≈ 36 N·m"
+  ],
+  "concetto": "coppia e potenza"
+ },
+ {
+  "id": "ELT-102",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "test",
+  "domanda": "Come si inverte il senso di rotazione di un motore asincrono trifase?",
+  "opzioni": {
+   "A": "Scambiando tutte e tre le fasi in modo circolare",
+   "B": "Scambiando tra loro due delle tre fasi di alimentazione",
+   "C": "Aumentando la frequenza",
+   "D": "Invertendo la polarità di una batteria",
+   "E": "Collegando il neutro al posto di una fase"
+  },
+  "giusta": "B",
+  "perche": "Il verso del campo rotante dipende dalla sequenza delle fasi: scambiando due fasi qualsiasi la sequenza si inverte e il motore gira al contrario. Una permutazione circolare di tutte e tre le fasi, invece, lascia la sequenza invariata, ed è la trappola tipica. Nei quadri elettrici si usano due contattori interbloccati per questa manovra.",
+  "semplice": "È come cambiare l'ordine in cui si accendono tre lampadine in fila: scambiandone due, la «luce che corre» va nel verso opposto.",
+  "passaggi": [
+   "Il verso del campo rotante dipende dalla sequenza delle fasi (L1-L2-L3).",
+   "Scambiando due fasi la sequenza diventa L1-L3-L2: si inverte.",
+   "Una permutazione circolare di tutte e tre (L2-L3-L1) lascia la sequenza uguale.",
+   "Si scambiano tra loro due delle tre fasi."
+  ],
+  "concetto": "inversione di marcia"
+ },
+ {
+  "id": "ELT-103",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "università",
+  "domanda": "Un trasformatore ideale ha rapporto di spire N1/N2 = 10. Sul secondario è collegato un resistore da 2 Ω. Quale resistenza si vede dal primario?",
+  "opzioni": {
+   "A": "20 Ω",
+   "B": "0,02 Ω",
+   "C": "0,2 Ω",
+   "D": "2 Ω",
+   "E": "200 Ω"
+  },
+  "giusta": "E",
+  "perche": "Un'impedenza riportata dal secondario al primario si moltiplica per il quadrato del rapporto spire: R' = 2 · 10² = 200 Ω. La trappola è moltiplicare per il rapporto e non per il suo quadrato, ottenendo 20 Ω. Questa proprietà si usa per adattare l'impedenza, per esempio tra un amplificatore a valvole e un altoparlante.",
+  "semplice": "Il trasformatore «ingrandisce» il carico visto da monte: un piccolo altoparlante da pochi ohm può sembrare, dall'altra parte, un carico molto più grande.",
+  "passaggi": [
+   "1. R' = R · (N1/N2)²",
+   "2. (N1/N2)² = 100",
+   "3. R' = 2 · 100 = 200 Ω"
+  ],
+  "concetto": "impedenza riportata"
+ },
+ {
+  "id": "ELT-104",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "università",
+  "domanda": "Un motore asincrono a 2 poli (1 coppia polare) alimentato a 50 Hz ha uno scorrimento del 5%. A che velocità ruota?",
+  "opzioni": {
+   "A": "2850 giri/min",
+   "B": "3150 giri/min",
+   "C": "2995 giri/min",
+   "D": "3000 giri/min",
+   "E": "1425 giri/min"
+  },
+  "giusta": "A",
+  "perche": "La velocità di sincronismo è 60 · 50/1 = 3000 giri/min; la velocità del rotore è n = n₀(1 − s) = 3000 · 0,95 = 2850 giri/min. La trappola è sommare lo scorrimento (3150) o dimenticarlo (3000). Un motore asincrono funzionante come motore non raggiunge mai il sincronismo.",
+  "semplice": "I motori «da 2900 giri» delle pompe sono motori a due poli: senza carico si avvicinano a 3000, sotto carico scendono un po'.",
+  "passaggi": [
+   "1. n₀ = 60 · 50 / 1 = 3000 giri/min",
+   "2. n = n₀ · (1 − s)",
+   "3. n = 3000 · 0,95 = 2850 giri/min"
+  ],
+  "concetto": "velocità del motore asincrono"
+ },
+ {
+  "id": "ELT-105",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "università",
+  "domanda": "Quali perdite di un trasformatore si misurano con la prova a vuoto?",
+  "opzioni": {
+   "A": "Le perdite nel rame a pieno carico",
+   "B": "Le perdite dielettriche dei condensatori",
+   "C": "Le perdite nel ferro (isteresi e correnti parassite)",
+   "D": "Le perdite per ventilazione del rotore",
+   "E": "Le perdite meccaniche per attrito"
+  },
+  "giusta": "C",
+  "perche": "Nella prova a vuoto il secondario è aperto e il primario è alimentato alla tensione nominale: la corrente assorbita è piccola, quindi le perdite nel rame sono trascurabili e la potenza misurata corrisponde alle perdite nel ferro. Le perdite nel rame si misurano invece con la prova in cortocircuito, a tensione ridotta e corrente nominale. La trappola è scambiare le due prove. Il trasformatore non ha parti rotanti, quindi non ha perdite meccaniche.",
+  "semplice": "A vuoto il trasformatore «magnetizza» il nucleo ma non fa lavorare i fili: quello che consuma è quasi tutto perso nel ferro.",
+  "passaggi": [
+   "Prova a vuoto: secondario aperto, primario a tensione nominale.",
+   "La corrente assorbita è piccola, quindi le perdite nel rame (R·I²) sono trascurabili.",
+   "Con tensione nominale il flusso è nominale: la potenza misurata sono le perdite nel ferro.",
+   "Le perdite nel rame si misurano con la prova in cortocircuito; il trasformatore non ha parti rotanti.",
+   "Si misurano le perdite nel ferro (isteresi e correnti parassite)."
+  ],
+  "concetto": "prova a vuoto"
+ },
+ {
+  "id": "ELT-106",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "università",
+  "domanda": "Perché un motore asincrono di media potenza viene spesso avviato con il collegamento stella-triangolo?",
+  "opzioni": {
+   "A": "Per aumentare la coppia di avviamento di tre volte",
+   "B": "Per far girare il motore oltre la velocità di sincronismo",
+   "C": "Per ridurre a circa un terzo la corrente di spunto durante l'avviamento",
+   "D": "Per alimentarlo in corrente continua",
+   "E": "Per eliminare lo scorrimento"
+  },
+  "giusta": "C",
+  "perche": "All'avviamento gli avvolgimenti sono collegati a stella, così ognuno riceve una tensione √3 volte minore; la corrente di linea e la coppia si riducono a circa un terzo. Quando il motore ha preso velocità si commuta a triangolo per lavorare alla tensione nominale. La trappola è credere che la coppia aumenti: diminuisce anch'essa, quindi il metodo va bene per avviamenti con carico leggero.",
+  "semplice": "È come partire in salita con la marcia giusta invece di dare tutto gas: si evita il «colpo» sulla rete elettrica, che altrimenti farebbe calare la tensione per tutti.",
+  "passaggi": [
+   "All'avvio a stella ogni avvolgimento riceve una tensione √3 volte minore.",
+   "La corrente di fase cala di √3 e, rispetto al triangolo, la corrente di linea cala di (√3)² = 3.",
+   "Anche la coppia (proporzionale a V²) scende a circa un terzo.",
+   "Preso velocità, si passa a triangolo alla tensione nominale.",
+   "Serve a ridurre a circa un terzo la corrente di spunto."
+  ],
+  "concetto": "avviamento stella-triangolo"
+ },
+ {
+  "id": "ELT-107",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "università",
+  "domanda": "Un trasformatore trifase da 100 kVA lavora con tensione concatenata secondaria di 400 V. Quanto vale circa la corrente nominale di linea al secondario?",
+  "opzioni": {
+   "A": "144 A",
+   "B": "83 A",
+   "C": "433 A",
+   "D": "0,25 A",
+   "E": "250 A"
+  },
+  "giusta": "A",
+  "perche": "Per un sistema trifase S = √3·V·I, quindi I = S/(√3·V) = 100 000/(1,732 · 400) ≈ 144 A. La trappola è dimenticare √3 e ottenere 250 A, come se fosse monofase. Si usa la potenza apparente in kVA perché il trasformatore è dimensionato su tensione e corrente, indipendentemente dal cosφ del carico.",
+  "semplice": "Un trasformatore di cabina da 100 kVA può dare circa 144 ampere per ogni filo di fase: abbastanza per una piccola azienda.",
+  "passaggi": [
+   "1. I = S / (√3 · V)",
+   "2. √3 · 400 ≈ 692,8",
+   "3. I = 100 000 / 692,8 ≈ 144 A"
+  ],
+  "concetto": "corrente nominale trifase"
+ },
+ {
+  "id": "ELT-108",
+  "materia": "Elettrotecnica ed elettronica",
+  "argomento": "Macchine elettriche",
+  "livello": "università",
+  "domanda": "In un alternatore sincrono, da che cosa dipende la frequenza della tensione generata?",
+  "opzioni": {
+   "A": "Solo dalla corrente di eccitazione",
+   "B": "Dalla velocità di rotazione e dal numero di coppie polari",
+   "C": "Dal fattore di potenza del carico",
+   "D": "Dalla resistenza degli avvolgimenti di statore",
+   "E": "Solo dal carico collegato"
+  },
+  "giusta": "B",
+  "perche": "La frequenza segue la relazione f = p·n/60: dipende dal numero di coppie polari e dalla velocità di rotazione in giri al minuto. La corrente di eccitazione regola invece l'ampiezza della tensione e, con la rete collegata, la potenza reattiva. La trappola è credere che la frequenza vari con il carico: nelle centrali i regolatori di velocità mantengono la rotazione costante per tenere la frequenza a 50 Hz.",
+  "semplice": "Un alternatore a 2 poli deve girare a 3000 giri/min per dare 50 Hz; uno idroelettrico lento, con molte coppie polari, gira molto più piano ma dà la stessa frequenza.",
+  "passaggi": [
+   "Relazione: f = p·n/60, con p coppie polari e n giri al minuto.",
+   "Esempio: p = 2, n = 1500 giri/min → f = 2·1500/60 = 50 Hz.",
+   "La corrente di eccitazione regola l'ampiezza della tensione, non la frequenza.",
+   "La frequenza dipende da velocità di rotazione e numero di coppie polari."
+  ],
+  "concetto": "alternatore sincrono"
+ }
+]

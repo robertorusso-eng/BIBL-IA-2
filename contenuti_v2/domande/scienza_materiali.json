@@ -1,0 +1,3060 @@
+[
+ {
+  "id": "SMT-001",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "superiori",
+  "domanda": "Quanti atomi contiene, in totale, la cella elementare cubica a corpo centrato (CCC)?",
+  "opzioni": {
+   "A": "1",
+   "B": "4",
+   "C": "2",
+   "D": "6",
+   "E": "8"
+  },
+  "giusta": "C",
+  "perche": "Gli 8 atomi ai vertici sono condivisi ciascuno da 8 celle e contano quindi 1/8 l'uno, per un totale di 1 atomo; a questo si aggiunge l'atomo al centro, che appartiene interamente alla cella. Il totale è 8 · 1/8 + 1 = 2. La trappola tipica è contare 9 atomi «visibili» nel disegno, dimenticando che quelli ai vertici sono condivisi con le celle vicine.",
+  "semplice": "Immagina una scatola con una pallina al centro e un ottavo di pallina in ogni angolo: gli otto spicchi messi insieme fanno una pallina intera. Pallina centrale più pallina ricomposta fanno 2. È la struttura del ferro a temperatura ambiente.",
+  "passaggi": [
+   "Atomi ai vertici: 8 · 1/8 = 1",
+   "Atomo al centro: 1",
+   "Totale: 1 + 1 = 2 atomi per cella"
+  ],
+  "concetto": "atomi per cella CCC"
+ },
+ {
+  "id": "SMT-002",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "superiori",
+  "domanda": "Quanti atomi appartengono alla cella elementare cubica a facce centrate (CFC)?",
+  "opzioni": {
+   "A": "4",
+   "B": "2",
+   "C": "6",
+   "D": "8",
+   "E": "14"
+  },
+  "giusta": "A",
+  "perche": "Gli 8 atomi ai vertici contano 1/8 ciascuno (totale 1) e i 6 atomi al centro delle facce sono condivisi tra due celle, quindi contano 1/2 ciascuno (totale 3). Sommando si ottengono 4 atomi. L'errore tipico è rispondere 14, cioè contare tutti gli atomi disegnati senza tenere conto della condivisione.",
+  "semplice": "Ogni faccia di un cubo è la parete in comune tra due stanze: l'atomo sulla parete è metà di una stanza e metà dell'altra. Sei mezzi atomi più un atomo ricomposto dagli angoli fanno 4. Rame, alluminio, oro e nichel hanno questa struttura.",
+  "passaggi": [
+   "Vertici: 8 · 1/8 = 1",
+   "Facce: 6 · 1/2 = 3",
+   "Totale: 1 + 3 = 4 atomi per cella"
+  ],
+  "concetto": "atomi per cella CFC"
+ },
+ {
+  "id": "SMT-003",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "superiori",
+  "domanda": "Qual è il fattore di impaccamento atomico (APF) della struttura cubica a facce centrate?",
+  "opzioni": {
+   "A": "0,68",
+   "B": "0,52",
+   "C": "0,34",
+   "D": "1,00",
+   "E": "0,74"
+  },
+  "giusta": "E",
+  "perche": "Nella CFC gli atomi si toccano lungo la diagonale della faccia, e il volume occupato dalle 4 sfere è il 74% del volume della cella: è il massimo possibile per sfere uguali, lo stesso dell'esagonale compatta. Il valore 0,68 è quello della CCC e 0,52 quello della cubica semplice. La trappola è pensare che un impaccamento «perfetto» riempia tutto lo spazio (1,00): tra sfere rimangono sempre dei vuoti.",
+  "semplice": "Prova a impilare arance al mercato: per quanto le sistemi bene, resta sempre circa un quarto di spazio vuoto tra l'una e l'altra. La disposizione migliore, quella del fruttivendolo, è proprio quella CFC.",
+  "passaggi": [
+   "Volume atomi: 4 · (4/3)πR³",
+   "Lato: a = 2√2·R, volume cella a³ = 16√2·R³",
+   "APF = (16/3)πR³ / (16√2 R³) = π/(3√2) ≈ 0,74"
+  ],
+  "concetto": "fattore di impaccamento"
+ },
+ {
+  "id": "SMT-004",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "superiori",
+  "domanda": "Qual è il numero di coordinazione (numero di atomi primi vicini) nella struttura cubica a corpo centrato?",
+  "opzioni": {
+   "A": "8",
+   "B": "6",
+   "C": "12",
+   "D": "4",
+   "E": "10"
+  },
+  "giusta": "A",
+  "perche": "Nella CCC l'atomo al centro tocca gli 8 atomi ai vertici del cubo, lungo le diagonali di corpo: il suo numero di coordinazione è 8. Nelle strutture compatte (CFC ed esagonale compatta) il numero sale a 12, nella cubica semplice scende a 6. L'errore tipico è confondere la CCC con la CFC e rispondere 12.",
+  "semplice": "Siediti al centro di una stanza cubica: gli atomi che puoi toccare allungando le braccia sono quelli negli 8 angoli. Ecco perché il numero di coordinazione è 8.",
+  "passaggi": [
+   "Il numero di coordinazione è il numero di atomi a contatto con un atomo dato.",
+   "Nella cubica a corpo centrato c'è un atomo al centro del cubo e uno a ogni vertice.",
+   "L'atomo centrale tocca gli 8 atomi dei vertici lungo le diagonali del cubo.",
+   "12 vale per le strutture compatte (CFC, EC), 6 per la cubica semplice.",
+   "La risposta è 8."
+  ],
+  "concetto": "numero di coordinazione"
+ },
+ {
+  "id": "SMT-005",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "test",
+  "domanda": "Il rame ha struttura CFC e raggio atomico R = 0,128 nm. Quanto vale circa il lato a della cella?",
+  "opzioni": {
+   "A": "0,256 nm",
+   "B": "0,296 nm",
+   "C": "0,362 nm",
+   "D": "0,512 nm",
+   "E": "0,181 nm"
+  },
+  "giusta": "C",
+  "perche": "Nella CFC gli atomi si toccano lungo la diagonale di una faccia, lunga 4R; poiché la diagonale di un quadrato vale a√2, si ha a = 4R/√2 = 2√2·R ≈ 0,362 nm. Il valore 0,296 nm si ottiene usando per errore la relazione della CCC (a = 4R/√3). Rispondere 0,256 nm significa pensare che gli atomi si tocchino lungo lo spigolo, cosa vera solo nella cubica semplice.",
+  "semplice": "Disegna una faccia del cubo: tre atomi in fila sulla diagonale si toccano, quindi la diagonale è lunga quattro raggi. Dal teorema di Pitagora ricavi il lato.",
+  "passaggi": [
+   "Diagonale di faccia = 4R = a√2",
+   "a = 4R/√2 = 2√2 · 0,128 nm",
+   "a ≈ 0,362 nm"
+  ],
+  "concetto": "parametro reticolare CFC"
+ },
+ {
+  "id": "SMT-006",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "test",
+  "domanda": "Il ferro α ha struttura CCC e raggio atomico R = 0,124 nm. Quanto vale circa il parametro reticolare a?",
+  "opzioni": {
+   "A": "0,351 nm",
+   "B": "0,248 nm",
+   "C": "0,496 nm",
+   "D": "0,286 nm",
+   "E": "0,215 nm"
+  },
+  "giusta": "D",
+  "perche": "Nella CCC gli atomi si toccano lungo la diagonale del cubo, che misura 4R e vale anche a√3: quindi a = 4R/√3 ≈ 0,286 nm. Il valore 0,351 nm deriva dalla formula della CFC, applicata per errore. Chi risponde 0,248 nm pensa che gli atomi si tocchino sullo spigolo.",
+  "semplice": "Nella CCC l'atomo centrale fa da ponte tra due vertici opposti del cubo. La diagonale «dall'angolo in basso a quello in alto opposto» è quindi lunga quattro raggi.",
+  "passaggi": [
+   "Diagonale di corpo = 4R = a√3",
+   "a = 4 · 0,124 / √3 nm",
+   "a ≈ 0,286 nm"
+  ],
+  "concetto": "parametro reticolare CCC"
+ },
+ {
+  "id": "SMT-007",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "università",
+  "domanda": "Il rame (CFC, massa molare 63,55 g/mol) ha parametro reticolare a = 0,3615 nm. Quanto vale la densità teorica?",
+  "opzioni": {
+   "A": "circa 2,23 g/cm³",
+   "B": "circa 4,47 g/cm³",
+   "C": "circa 7,87 g/cm³",
+   "D": "circa 8,94 g/cm³",
+   "E": "circa 17,9 g/cm³"
+  },
+  "giusta": "D",
+  "perche": "La densità teorica è ρ = n·A / (V_c·N_A), con n = 4 atomi per cella CFC e V_c = a³ = (3,615·10⁻⁸ cm)³. Il calcolo dà circa 8,94 g/cm³, molto vicino al valore misurato. Usare n = 1 dà un quarto del valore (2,23), n = 2 la metà (4,47) e n = 8 il doppio; 7,87 è invece la densità del ferro. Attenzione a convertire i nanometri in centimetri prima di elevare al cubo.",
+  "semplice": "La densità è massa diviso volume: basta pesare gli atomi contenuti in una sola cella e dividerli per il volume della cella. Un cubetto di rame di 1 cm di lato pesa infatti circa 9 grammi.",
+  "passaggi": [
+   "a = 0,3615 nm = 3,615·10⁻⁸ cm; a³ ≈ 4,724·10⁻²³ cm³",
+   "Massa nella cella: 4 · 63,55 / 6,022·10²³ ≈ 4,221·10⁻²² g",
+   "ρ = 4,221·10⁻²² / 4,724·10⁻²³ ≈ 8,94 g/cm³"
+  ],
+  "concetto": "densità teorica"
+ },
+ {
+  "id": "SMT-008",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "superiori",
+  "domanda": "Quale dei seguenti è un difetto di punto (adimensionale) in un cristallo?",
+  "opzioni": {
+   "A": "La dislocazione a spigolo",
+   "B": "Il bordo di grano",
+   "C": "Il bordo di geminazione",
+   "D": "Il poro",
+   "E": "La vacanza"
+  },
+  "giusta": "E",
+  "perche": "La vacanza è un sito reticolare rimasto vuoto: coinvolge un solo punto del reticolo ed è quindi un difetto di punto, come l'atomo interstiziale o quello sostituzionale. Le dislocazioni sono difetti di linea, i bordi di grano e di geminazione sono difetti di superficie, i pori sono difetti di volume. La trappola è considerare «piccolo» un difetto lineare solo perché è invisibile a occhio nudo.",
+  "semplice": "Pensa a un parcheggio pieno di auto in file ordinate: un posto vuoto è una vacanza. Se invece è sfalsata un'intera fila, il difetto è una linea, cioè una dislocazione.",
+  "passaggi": [
+   "Classifica i difetti per dimensione: di punto, di linea, di superficie, di volume.",
+   "Un difetto di punto coinvolge un solo sito del reticolo.",
+   "La dislocazione è un difetto di linea; bordi di grano e di geminazione sono di superficie; il poro è di volume.",
+   "La vacanza è un sito reticolare vuoto: un singolo punto.",
+   "La risposta è la vacanza."
+  ],
+  "concetto": "classificazione dei difetti"
+ },
+ {
+  "id": "SMT-009",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "superiori",
+  "domanda": "Nei metalli la deformazione plastica avviene principalmente per:",
+  "opzioni": {
+   "A": "scorrimento delle dislocazioni lungo piani cristallini",
+   "B": "rottura simultanea di tutti i legami di un piano",
+   "C": "diffusione delle vacanze verso la superficie",
+   "D": "fusione locale del reticolo",
+   "E": "trasformazione del reticolo da cristallino ad amorfo"
+  },
+  "giusta": "A",
+  "perche": "Le dislocazioni permettono a un piano di atomi di scorrere sull'altro rompendo e riformando pochi legami alla volta, con uno sforzo molto più basso di quello necessario per far scivolare un piano intero in blocco. Per questo la resistenza reale dei metalli è centinaia di volte inferiore a quella teorica. L'errore tipico è immaginare la deformazione come lo slittamento rigido di interi piani.",
+  "semplice": "Per spostare un grande tappeto pesante non lo trascini tutto insieme: crei una piega e la fai avanzare fino all'altro lato. La piega è la dislocazione e richiede molta meno fatica.",
+  "passaggi": [
+   "Rompere tutti i legami di un piano insieme richiederebbe uno sforzo enorme, molto più alto di quello reale.",
+   "Le dislocazioni fanno scorrere un piano sull'altro rompendo pochi legami alla volta.",
+   "Lo scorrimento avviene lungo piani cristallini, senza fondere né rendere amorfo il reticolo.",
+   "La diffusione delle vacanze conta solo nel creep ad alta temperatura.",
+   "La risposta è lo scorrimento delle dislocazioni lungo piani cristallini."
+  ],
+  "concetto": "dislocazioni e plasticità"
+ },
+ {
+  "id": "SMT-010",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "test",
+  "domanda": "In un cristallo ionico come NaCl, che cos'è un difetto di Schottky?",
+  "opzioni": {
+   "A": "Un catione spostato da un sito reticolare in una posizione interstiziale",
+   "B": "Un atomo estraneo che sostituisce un catione",
+   "C": "Una coppia di vacanze, una cationica e una anionica",
+   "D": "Un elettrone intrappolato in una vacanza anionica",
+   "E": "Un piano di atomi in più inserito nel reticolo"
+  },
+  "giusta": "C",
+  "perche": "Nel difetto di Schottky mancano un catione e un anione in proporzione stechiometrica, così il cristallo resta elettricamente neutro. Se invece un catione lascia il suo posto per andare in una posizione interstiziale, si ha un difetto di Frenkel (vacanza più interstiziale). La trappola è confondere i due, che hanno in comune solo la presenza di una vacanza.",
+  "semplice": "Immagina una scacchiera di pedine bianche (Na⁺) e nere (Cl⁻): se togli una bianca e una nera, il conto resta in pari. Questo è un difetto di Schottky.",
+  "passaggi": [
+   "In un cristallo ionico i difetti devono mantenere la neutralità elettrica.",
+   "Il difetto di Schottky è una coppia di vacanze: manca un catione e manca un anione.",
+   "Il catione spostato in posizione interstiziale è invece il difetto di Frenkel.",
+   "Atomi sostituzionali e piani in più sono altri tipi di difetto.",
+   "La risposta è una coppia di vacanze, una cationica e una anionica."
+  ],
+  "concetto": "difetti di Schottky e Frenkel"
+ },
+ {
+  "id": "SMT-011",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "università",
+  "domanda": "Un piano di un reticolo cubico intercetta gli assi in x = 1, y = 2 e z = ∞ (parallelo all'asse z), in unità del parametro reticolare. Quali sono i suoi indici di Miller?",
+  "opzioni": {
+   "A": "(1 2 0)",
+   "B": "(2 1 0)",
+   "C": "(1 2 ∞)",
+   "D": "(2 1 1)",
+   "E": "(0 1 2)"
+  },
+  "giusta": "B",
+  "perche": "Si prendono i reciproci delle intercette (1, 1/2, 0) e si moltiplicano per il minimo comune multiplo dei denominatori, cioè 2: si ottiene (2 1 0). L'errore più comune è scrivere direttamente le intercette, ottenendo (1 2 0) o addirittura (1 2 ∞). Ricorda che un piano parallelo a un asse ha intercetta infinita e quindi indice zero.",
+  "semplice": "Gli indici di Miller sono come un indirizzo del piano: si scrivono «al contrario», cioè con i reciproci. Più un piano è lontano dall'origine lungo un asse, più piccolo è il suo indice per quell'asse.",
+  "passaggi": [
+   "Intercette: 1, 2, ∞",
+   "Reciproci: 1, 1/2, 0",
+   "Moltiplico per 2: 2, 1, 0",
+   "Indici: (2 1 0)"
+  ],
+  "concetto": "indici di Miller"
+ },
+ {
+  "id": "SMT-012",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "università",
+  "domanda": "Con raggi X di lunghezza d'onda λ = 0,1542 nm si osserva la riflessione del primo ordine da piani con distanza interplanare d = 0,200 nm. Qual è circa l'angolo θ di Bragg?",
+  "opzioni": {
+   "A": "45,3°",
+   "B": "11,3°",
+   "C": "50,4°",
+   "D": "22,7°",
+   "E": "67,3°"
+  },
+  "giusta": "D",
+  "perche": "La legge di Bragg è nλ = 2d sinθ: con n = 1 si ha sinθ = 0,1542 / 0,400 = 0,3855 e quindi θ ≈ 22,7°. Il valore 45,3° corrisponde all'angolo 2θ, che è quello letto direttamente sui diffrattogrammi: è la trappola tipica. Gli altri valori nascono dal dimenticare il fattore 2 o dall'usare il coseno.",
+  "semplice": "I piani di atomi si comportano come specchi a gradini: i raggi riflessi si rinforzano solo per certi angoli. Misurando quegli angoli si ricava la distanza fra i piani, come si fa in laboratorio per riconoscere un materiale.",
+  "passaggi": [
+   "nλ = 2d sinθ con n = 1",
+   "sinθ = 0,1542 / (2 · 0,200) = 0,3855",
+   "θ = arcsin(0,3855) ≈ 22,7° (2θ ≈ 45,3°)"
+  ],
+  "concetto": "legge di Bragg"
+ },
+ {
+  "id": "SMT-013",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "università",
+  "domanda": "Per il rame l'energia di formazione delle vacanze è circa 0,9 eV. Quale frazione dei siti reticolari è vacante all'equilibrio a 1000 °C? (k = 8,62·10⁻⁵ eV/K)",
+  "opzioni": {
+   "A": "circa 2,7·10⁻²",
+   "B": "circa 2,7·10⁻⁴",
+   "C": "circa 2,7·10⁻⁸",
+   "D": "circa 0,9",
+   "E": "circa 3,7·10³"
+  },
+  "giusta": "B",
+  "perche": "Il numero di vacanze all'equilibrio segue N_v/N = exp(−Q_v / kT), con T in kelvin: 1000 °C = 1273 K, quindi l'esponente vale −8,2 e la frazione circa 2,7·10⁻⁴. Vuol dire circa una vacanza ogni 3700 siti, un numero che cresce molto rapidamente con la temperatura. L'errore più comune è usare la temperatura in gradi Celsius, che porta a un risultato completamente diverso.",
+  "semplice": "Scaldando un metallo gli atomi vibrano sempre di più e qualcuno «salta fuori» dal proprio posto. Vicino alla fusione il rame ha circa un posto vuoto ogni qualche migliaio.",
+  "passaggi": [
+   "T = 1000 + 273 = 1273 K",
+   "kT = 8,62·10⁻⁵ · 1273 ≈ 0,1097 eV",
+   "Q_v/kT = 0,9 / 0,1097 ≈ 8,2",
+   "N_v/N = e^(−8,2) ≈ 2,7·10⁻⁴"
+  ],
+  "concetto": "concentrazione di vacanze"
+ },
+ {
+  "id": "SMT-014",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "università",
+  "domanda": "In una dislocazione a spigolo, come è orientato il vettore di Burgers rispetto alla linea di dislocazione?",
+  "opzioni": {
+   "A": "Parallelo alla linea",
+   "B": "Perpendicolare alla linea",
+   "C": "Inclinato di 45° rispetto alla linea",
+   "D": "Sempre nullo",
+   "E": "Perpendicolare al piano di scorrimento"
+  },
+  "giusta": "B",
+  "perche": "Nella dislocazione a spigolo il vettore di Burgers è perpendicolare alla linea, mentre nella dislocazione a vite è parallelo; nelle dislocazioni miste ha un angolo intermedio. In entrambi i casi il vettore di Burgers giace nel piano di scorrimento, non perpendicolare a esso. La trappola è invertire spigolo e vite, ricordando male a quale corrisponda la geometria «a elica».",
+  "semplice": "Il vettore di Burgers indica di quanto e in che direzione si sposta il cristallo al passaggio della dislocazione. Nello spigolo il mezzo piano in più è come un cuneo inserito, e lo spostamento avviene di traverso rispetto al bordo del cuneo.",
+  "passaggi": [
+   "Ricorda le due dislocazioni pure: a spigolo e a vite.",
+   "Nella dislocazione a vite il vettore di Burgers è parallelo alla linea.",
+   "Nella dislocazione a spigolo è perpendicolare alla linea.",
+   "In entrambe il vettore giace nel piano di scorrimento, non perpendicolare a esso.",
+   "La risposta è: perpendicolare alla linea."
+  ],
+  "concetto": "vettore di Burgers"
+ },
+ {
+  "id": "SMT-015",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "università",
+  "domanda": "Perché i metalli con struttura CFC, come rame e alluminio, sono in genere molto duttili anche a basse temperature?",
+  "opzioni": {
+   "A": "Non contengono dislocazioni",
+   "B": "Hanno 12 sistemi di scorrimento su piani compatti {111}",
+   "C": "Hanno un numero di coordinazione pari a 8",
+   "D": "I loro legami sono covalenti e direzionali",
+   "E": "Hanno il fattore di impaccamento più basso tra le strutture metalliche"
+  },
+  "giusta": "B",
+  "perche": "La CFC offre 4 piani compatti {111} con 3 direzioni compatte ciascuno, cioè 12 sistemi di scorrimento con bassa resistenza al moto delle dislocazioni. Per questo non presenta la transizione duttile-fragile tipica di molti metalli CCC. La trappola è pensare che la duttilità derivi dall'assenza di difetti: è vero il contrario, perché servono proprio le dislocazioni per deformarsi.",
+  "semplice": "Più strade ci sono per scivolare, più è facile deformare il materiale senza romperlo. Un foglio d'alluminio da cucina si piega in mille modi anche appena uscito dal freezer.",
+  "passaggi": [
+   "La duttilità dipende da quanto facilmente si muovono le dislocazioni.",
+   "La CFC ha 4 piani compatti {111} con 3 direzioni compatte ciascuno: 12 sistemi di scorrimento.",
+   "Questi sistemi richiedono poco sforzo anche a bassa temperatura.",
+   "Le dislocazioni servono alla duttilità; la coordinazione della CFC è 12 e i legami sono metallici.",
+   "La risposta è: hanno 12 sistemi di scorrimento su piani compatti {111}."
+  ],
+  "concetto": "sistemi di scorrimento"
+ },
+ {
+  "id": "SMT-016",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "università",
+  "domanda": "Secondo la relazione di Hall-Petch σ_y = σ₀ + k·d^(−1/2), con σ₀ = 70 MPa e k = 0,74 MPa·m^(1/2), quanto vale il carico di snervamento per una dimensione media del grano d = 25 µm?",
+  "opzioni": {
+   "A": "148 MPa",
+   "B": "70 MPa",
+   "C": "218 MPa",
+   "D": "88 MPa",
+   "E": "370 MPa"
+  },
+  "giusta": "C",
+  "perche": "Con d = 25·10⁻⁶ m si ha d^(−1/2) = 200 m^(−1/2); il contributo dei bordi di grano è 0,74 · 200 = 148 MPa, da sommare a σ₀: totale 218 MPa. Il valore 148 MPa dimentica σ₀, mentre 70 MPa ignora del tutto l'effetto del grano; attenzione anche a convertire i micrometri in metri, altrimenti il risultato cambia completamente. Il messaggio fisico è che grani più piccoli ostacolano di più le dislocazioni e rendono il metallo più resistente.",
+  "semplice": "I bordi di grano sono come recinti che fermano le dislocazioni. Più grani piccoli ci sono, più recinti si incontrano e più sforzo serve per deformare il metallo.",
+  "passaggi": [
+   "d = 25 µm = 25·10⁻⁶ m",
+   "d^(−1/2) = 1/√(25·10⁻⁶) = 200 m^(−1/2)",
+   "k·d^(−1/2) = 0,74 · 200 = 148 MPa",
+   "σ_y = 70 + 148 = 218 MPa"
+  ],
+  "concetto": "legge di Hall-Petch"
+ },
+ {
+  "id": "SMT-017",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "test",
+  "domanda": "Il ferro puro a 1000 °C si trova nella forma:",
+  "opzioni": {
+   "A": "γ (austenite), con struttura CFC",
+   "B": "α (ferrite), con struttura CCC",
+   "C": "δ, con struttura CFC",
+   "D": "liquida",
+   "E": "esagonale compatta"
+  },
+  "giusta": "A",
+  "perche": "Il ferro è allotropico: è CCC (ferro α) fino a 912 °C, diventa CFC (ferro γ, austenite) tra 912 e 1394 °C, torna CCC (ferro δ) fino alla fusione a 1538 °C. A 1000 °C è quindi γ, CFC. La trappola è pensare che salendo di temperatura la struttura possa solo «diventare più aperta», mentre qui avviene il contrario.",
+  "semplice": "Lo stesso ferro cambia «vestito» cristallino secondo la temperatura, come l'acqua che diventa ghiaccio. È proprio questo cambio di struttura che rende possibile la tempra degli acciai.",
+  "passaggi": [
+   "Ricorda le forme allotropiche del ferro puro.",
+   "Fino a 912 °C è ferro α, CCC.",
+   "Tra 912 e 1394 °C è ferro γ (austenite), CFC.",
+   "Sopra 1394 °C torna CCC (δ) e fonde a 1538 °C.",
+   "A 1000 °C è quindi ferro γ, austenite CFC."
+  ],
+  "concetto": "allotropia del ferro"
+ },
+ {
+  "id": "SMT-018",
+  "materia": "Scienza dei materiali",
+  "argomento": "Struttura cristallina e difetti",
+  "livello": "superiori",
+  "domanda": "Che tipo di soluzione solida forma il carbonio sciolto nel ferro?",
+  "opzioni": {
+   "A": "Sostituzionale, perché il carbonio prende il posto del ferro",
+   "B": "Nessuna: carbonio e ferro sono insolubili allo stato solido",
+   "C": "Ordinata, con un atomo di carbonio per ogni atomo di ferro",
+   "D": "Interstiziale, perché l'atomo di carbonio è molto più piccolo di quello di ferro",
+   "E": "Sostituzionale, perché i due elementi hanno la stessa valenza"
+  },
+  "giusta": "D",
+  "perche": "Il carbonio ha un raggio atomico molto piccolo rispetto al ferro e si sistema negli spazi vuoti (interstizi) tra gli atomi del reticolo. Nelle soluzioni sostituzionali, invece, l'atomo estraneo prende il posto di un atomo del solvente, e serve una differenza di raggio inferiore a circa il 15% (regola di Hume-Rothery). La trappola è pensare che ogni elemento di lega si comporti allo stesso modo: il nichel nel rame, ad esempio, è sostituzionale.",
+  "semplice": "Immagina un cesto di arance: puoi infilare dei piselli negli spazi tra un'arancia e l'altra senza togliere nulla. I piselli sono gli atomi di carbonio nell'acciaio.",
+  "passaggi": [
+   "Confronta le dimensioni: l'atomo di carbonio è molto più piccolo di quello di ferro.",
+   "Una soluzione sostituzionale richiede raggi simili (differenza sotto circa il 15%).",
+   "Un atomo piccolo si sistema invece negli spazi vuoti tra gli atomi del reticolo.",
+   "Il carbonio è solubile nel ferro, soprattutto nell'austenite.",
+   "La risposta è: soluzione interstiziale, perché il carbonio è molto più piccolo."
+  ],
+  "concetto": "soluzione solida interstiziale"
+ },
+ {
+  "id": "SMT-019",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "Una barra cilindrica di diametro 10 mm è tirata con una forza di 10 kN. Quanto vale circa lo sforzo normale?",
+  "opzioni": {
+   "A": "1000 MPa",
+   "B": "32 MPa",
+   "C": "127 MPa",
+   "D": "318 MPa",
+   "E": "12,7 MPa"
+  },
+  "giusta": "C",
+  "perche": "Lo sforzo è σ = F/A, con A area della sezione: A = π·d²/4 = π·100/4 ≈ 78,5 mm², quindi σ = 10 000 N / 78,5 mm² ≈ 127 N/mm², cioè 127 MPa. Il valore 32 MPa si ottiene calcolando l'area come π·d², cioè usando il diametro al posto del raggio in πr²: l'area risulta quattro volte troppo grande. Ricorda che 1 N/mm² = 1 MPa: è la scorciatoia più comoda.",
+  "semplice": "Lo sforzo dice quanta forza grava su ogni millimetro quadrato. La stessa forza su un cavo sottile è molto più «pericolosa» che su una trave grossa.",
+  "passaggi": [
+   "A = π·d²/4 = π·10²/4 ≈ 78,5 mm²",
+   "σ = F/A = 10 000 N / 78,5 mm²",
+   "σ ≈ 127 N/mm² = 127 MPa"
+  ],
+  "concetto": "sforzo normale"
+ },
+ {
+  "id": "SMT-020",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "Un provino lungo 50 mm si allunga elasticamente di 0,1 mm. Qual è la deformazione?",
+  "opzioni": {
+   "A": "0,02 (cioè 2%)",
+   "B": "5 (cioè 500%)",
+   "C": "0,1 mm",
+   "D": "500",
+   "E": "0,002 (cioè 0,2%)"
+  },
+  "giusta": "E",
+  "perche": "La deformazione ingegneristica è ε = ΔL/L₀ = 0,1/50 = 0,002, un numero puro che in percentuale vale 0,2%. Rispondere 0,1 mm significa confondere deformazione e allungamento, che ha le dimensioni di una lunghezza. L'errore inverso, dividere L₀ per ΔL, porta al valore assurdo 500.",
+  "semplice": "La deformazione dice di quanto si allunga ogni millimetro del pezzo. Un elastico di 10 cm che arriva a 11 cm si è deformato del 10%.",
+  "passaggi": [
+   "ε = ΔL / L₀",
+   "ε = 0,1 / 50 = 0,002",
+   "In percentuale: 0,2%"
+  ],
+  "concetto": "deformazione"
+ },
+ {
+  "id": "SMT-021",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "Un acciaio con modulo di Young E = 200 GPa è sollecitato in campo elastico con σ = 300 MPa. Quanto vale la deformazione?",
+  "opzioni": {
+   "A": "0,0015",
+   "B": "0,67",
+   "C": "1,5",
+   "D": "60 000",
+   "E": "0,015"
+  },
+  "giusta": "A",
+  "perche": "Nel tratto elastico vale la legge di Hooke σ = E·ε, da cui ε = σ/E = 300 MPa / 200 000 MPa = 0,0015. L'errore più frequente è non uniformare le unità: 200 GPa vanno trasformati in 200 000 MPa. Il valore 0,015 deriva proprio da una conversione sbagliata di un fattore 10.",
+  "semplice": "Il modulo di Young è la «rigidezza» del materiale: più è grande, meno il pezzo si allunga. L'acciaio è circa tre volte più rigido dell'alluminio.",
+  "passaggi": [
+   "E = 200 GPa = 200 000 MPa",
+   "ε = σ/E = 300 / 200 000",
+   "ε = 0,0015 (0,15%)"
+  ],
+  "concetto": "legge di Hooke"
+ },
+ {
+  "id": "SMT-022",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "test",
+  "domanda": "Quale valore è più vicino al modulo di Young dell'alluminio?",
+  "opzioni": {
+   "A": "7 GPa",
+   "B": "210 GPa",
+   "C": "400 GPa",
+   "D": "70 GPa",
+   "E": "700 MPa"
+  },
+  "giusta": "D",
+  "perche": "Le leghe di alluminio hanno E ≈ 70 GPa, circa un terzo dell'acciaio (≈ 210 GPa); 400 GPa è un valore tipico di ceramici come l'allumina. Il modulo elastico dipende dall'intensità dei legami atomici e cambia poco con la composizione della lega o i trattamenti termici. La trappola è confondere il modulo di Young con il carico di snervamento, che si misura in centinaia di MPa.",
+  "semplice": "Una trave d'alluminio, a parità di forma, si flette circa tre volte più di una d'acciaio. Per questo i telai di bici in alluminio hanno tubi più grossi.",
+  "passaggi": [
+   "Ricorda il valore di riferimento dell'acciaio: E ≈ 210 GPa.",
+   "L'alluminio ha un modulo circa un terzo di quello dell'acciaio.",
+   "210 / 3 ≈ 70 GPa.",
+   "400 GPa è tipico dei ceramici; 700 MPa e 7 GPa sono troppo bassi.",
+   "La risposta è 70 GPa."
+  ],
+  "concetto": "modulo elastico"
+ },
+ {
+  "id": "SMT-023",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "Come si definisce il carico di snervamento convenzionale R_p0,2?",
+  "opzioni": {
+   "A": "Lo sforzo massimo raggiunto nella prova di trazione",
+   "B": "Lo sforzo al momento della rottura",
+   "C": "Lo sforzo che lascia una deformazione permanente dello 0,2% dopo lo scarico",
+   "D": "Lo sforzo che produce una deformazione totale del 2%",
+   "E": "Il 20% del carico di rottura"
+  },
+  "giusta": "C",
+  "perche": "Molti metalli non mostrano un passaggio netto dal campo elastico a quello plastico. Si traccia allora una retta parallela al tratto elastico a partire da ε = 0,002 e si legge lo sforzo dove interseca la curva: quella è la deformazione permanente dello 0,2%. La trappola è confonderlo con il carico di rottura (resistenza a trazione), che è lo sforzo massimo.",
+  "semplice": "Se pieghi un po' una graffetta e la lasci, torna com'era; se esageri, resta storta. Lo snervamento è il confine tra questi due comportamenti, fissato per convenzione a una piccola deformazione permanente.",
+  "passaggi": [
+   "In molti metalli non c'è un punto di snervamento netto: serve una convenzione.",
+   "Si traccia una retta parallela al tratto elastico partendo da ε = 0,002, cioè 0,2%.",
+   "Lo sforzo dove la retta interseca la curva lascia una deformazione permanente dello 0,2% dopo lo scarico.",
+   "Sforzo massimo e sforzo a rottura sono altre grandezze; non c'entra il 2% totale.",
+   "La risposta è lo sforzo che lascia una deformazione permanente dello 0,2%."
+  ],
+  "concetto": "carico di snervamento"
+ },
+ {
+  "id": "SMT-024",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "In una prova di trazione su un metallo duttile, che cosa accade dopo che è stato raggiunto il carico massimo (resistenza a trazione)?",
+  "opzioni": {
+   "A": "Il provino torna in campo elastico",
+   "B": "Inizia la strizione: la sezione si riduce in una zona localizzata",
+   "C": "Il provino si rompe immediatamente",
+   "D": "Il materiale si incrudisce in modo uniforme su tutta la lunghezza",
+   "E": "Il modulo di Young aumenta"
+  },
+  "giusta": "B",
+  "perche": "Fino al carico massimo la deformazione plastica è uniforme; poi in un punto la sezione inizia a ridursi più che altrove (strizione) e la forza necessaria per continuare a deformare diminuisce. La rottura arriva più tardi, al termine della strizione. La trappola è pensare che dopo il massimo il provino si spezzi subito: nei metalli duttili c'è ancora un tratto di deformazione.",
+  "semplice": "Se tiri una barretta di plastilina, a un certo punto si forma un «collo» sottile che si allunga sempre di più finché si stacca. Quel collo è la strizione.",
+  "passaggi": [
+   "Fino al carico massimo la deformazione plastica è uniforme lungo il provino.",
+   "Dopo il massimo la deformazione si concentra in una zona: la sezione si restringe.",
+   "Questo fenomeno si chiama strizione, e la forza necessaria cala.",
+   "Nei metalli duttili la rottura arriva solo dopo la strizione; il provino non torna elastico.",
+   "La risposta è: inizia la strizione."
+  ],
+  "concetto": "strizione"
+ },
+ {
+  "id": "SMT-025",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "test",
+  "domanda": "Un provino con tratto utile iniziale di 50 mm misura 62 mm dopo la rottura (riaccostando i monconi). Qual è l'allungamento percentuale a rottura?",
+  "opzioni": {
+   "A": "24%",
+   "B": "12%",
+   "C": "81%",
+   "D": "124%",
+   "E": "19%"
+  },
+  "giusta": "A",
+  "perche": "L'allungamento percentuale è A% = (L_f − L₀)/L₀ · 100 = 12/50 · 100 = 24%. È la misura più usata della duttilità. Il valore 19% si ottiene dividendo per la lunghezza finale invece che iniziale; 12% scambia l'allungamento in millimetri con una percentuale.",
+  "semplice": "Se un pezzo lungo 50 cm si allunga di 12 cm prima di rompersi, ogni 100 cm si sarebbe allungato di 24: è un materiale abbastanza duttile, come molti acciai da costruzione.",
+  "passaggi": [
+   "ΔL = 62 − 50 = 12 mm",
+   "A% = 12 / 50 · 100",
+   "A% = 24%"
+  ],
+  "concetto": "allungamento a rottura"
+ },
+ {
+  "id": "SMT-026",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "università",
+  "domanda": "Un acciaio (coefficiente di Poisson ν = 0,30) è teso in campo elastico con deformazione longitudinale ε = 0,002. Quanto vale la deformazione trasversale?",
+  "opzioni": {
+   "A": "+0,0006",
+   "B": "−0,0067",
+   "C": "−0,0006",
+   "D": "−0,002",
+   "E": "+0,0023"
+  },
+  "giusta": "C",
+  "perche": "Il coefficiente di Poisson lega le due deformazioni: ε_trasv = −ν·ε_long = −0,30 · 0,002 = −0,0006. Il segno meno indica che, mentre il provino si allunga, la sezione si restringe. L'errore tipico è dimenticare il segno o dividere per ν invece di moltiplicare.",
+  "semplice": "Quando tiri un elastico, diventa più lungo ma anche più sottile. Il coefficiente di Poisson dice quanto si assottiglia rispetto a quanto si allunga.",
+  "passaggi": [
+   "ε_trasv = −ν · ε_long",
+   "ε_trasv = −0,30 · 0,002",
+   "ε_trasv = −0,0006"
+  ],
+  "concetto": "coefficiente di Poisson"
+ },
+ {
+  "id": "SMT-027",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "Nella prova di durezza Vickers il penetratore è:",
+  "opzioni": {
+   "A": "una sfera di acciaio temprato",
+   "B": "un cono di diamante con punta arrotondata",
+   "C": "un cilindro di carburo di tungsteno",
+   "D": "un ago di acciaio inossidabile",
+   "E": "una piramide di diamante a base quadrata"
+  },
+  "giusta": "E",
+  "perche": "La prova Vickers usa una piramide di diamante a base quadrata con angolo al vertice di 136° e misura le diagonali dell'impronta. La sfera è tipica della prova Brinell, il cono di diamante della Rockwell C. La trappola è mescolare i penetratori delle tre prove, che si ricordano meglio associando la forma alla misura: diametro per Brinell, diagonali per Vickers, profondità per Rockwell.",
+  "semplice": "La durezza misura quanto un materiale resiste a essere inciso. È come premere la punta di una matita su una gomma o su un tavolo: l'impronta lasciata dice quanto è «duro» il materiale.",
+  "passaggi": [
+   "Associa ogni prova di durezza al suo penetratore.",
+   "Brinell usa una sfera, Rockwell C un cono di diamante.",
+   "Vickers usa una piramide di diamante a base quadrata (136°) e misura le diagonali.",
+   "La risposta è una piramide di diamante a base quadrata."
+  ],
+  "concetto": "prove di durezza"
+ },
+ {
+  "id": "SMT-028",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "Che cosa misura la prova Charpy (pendolo su provino intagliato)?",
+  "opzioni": {
+   "A": "Il modulo di Young",
+   "B": "L'energia assorbita nella rottura per urto, cioè la resilienza",
+   "C": "Il carico di snervamento statico",
+   "D": "La durezza superficiale",
+   "E": "La resistenza a fatica"
+  },
+  "giusta": "B",
+  "perche": "Il pendolo parte da una certa altezza, rompe il provino e risale a un'altezza minore: la differenza di energia potenziale è l'energia assorbita nella rottura. Un materiale tenace assorbe molta energia, uno fragile poca. La trappola è confonderla con una prova di resistenza statica: qui conta l'urto, rapido, in presenza di un intaglio.",
+  "semplice": "È come colpire un pezzo con un martello e vedere quanta «botta» riesce ad assorbire prima di spezzarsi. Un vetro si rompe con poco, una lamiera d'acciaio dolce assorbe molto.",
+  "passaggi": [
+   "La prova Charpy usa un pendolo che colpisce un provino intagliato.",
+   "Il pendolo dopo la rottura risale meno in alto di dove era partito.",
+   "La differenza di energia potenziale è l'energia assorbita dalla rottura per urto.",
+   "Non misura grandezze statiche come modulo, snervamento o durezza, né la fatica.",
+   "La risposta è: l'energia assorbita nella rottura per urto, la resilienza."
+  ],
+  "concetto": "resilienza e prova Charpy"
+ },
+ {
+  "id": "SMT-029",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "test",
+  "domanda": "Quale tipo di materiale presenta in modo marcato la transizione duttile-fragile al diminuire della temperatura?",
+  "opzioni": {
+   "A": "Il rame puro (CFC)",
+   "B": "L'alluminio e le sue leghe (CFC)",
+   "C": "Gli acciai inossidabili austenitici (CFC)",
+   "D": "L'oro (CFC)",
+   "E": "Gli acciai ferritici con struttura CCC"
+  },
+  "giusta": "E",
+  "perche": "Nei metalli CCC il moto delle dislocazioni diventa molto difficile a bassa temperatura e il materiale passa da una rottura duttile a una fragile in un intervallo ristretto. I metalli CFC, come rame, alluminio e acciai austenitici, rimangono duttili anche a temperature criogeniche. Le navi Liberty della seconda guerra mondiale, spezzatesi nelle acque fredde, sono l'esempio classico.",
+  "semplice": "Un acciaio comune che a temperatura ambiente si piega può rompersi come vetro a −40 °C. Per i serbatoi di gas liquefatti si usano infatti acciai austenitici o leghe d'alluminio.",
+  "passaggi": [
+   "La transizione duttile-fragile dipende dalla struttura cristallina.",
+   "Nei metalli CFC le dislocazioni si muovono bene anche al freddo: restano duttili.",
+   "Rame, alluminio, inox austenitici e oro sono tutti CFC: si escludono.",
+   "Nei metalli CCC il moto delle dislocazioni diventa difficile a bassa temperatura.",
+   "La risposta è: gli acciai ferritici con struttura CCC."
+  ],
+  "concetto": "transizione duttile-fragile"
+ },
+ {
+  "id": "SMT-030",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "superiori",
+  "domanda": "Che cos'è la fatica nei materiali?",
+  "opzioni": {
+   "A": "La deformazione lenta sotto carico costante ad alta temperatura",
+   "B": "La perdita di durezza per riscaldamento",
+   "C": "La rottura istantanea per urto",
+   "D": "Il cedimento dovuto a carichi ciclici, anche inferiori al carico di snervamento",
+   "E": "La corrosione dovuta all'umidità"
+  },
+  "giusta": "D",
+  "perche": "Sotto carichi che si ripetono milioni di volte, una piccola cricca nasce di solito in superficie e cresce un poco a ogni ciclo, finché la sezione residua non regge più. Avviene anche con sforzi ben inferiori a quello di snervamento ed è responsabile della maggior parte delle rotture di organi meccanici. La trappola è confonderla con lo scorrimento viscoso (creep), che dipende dal tempo e dalla temperatura, non dai cicli.",
+  "semplice": "Se pieghi avanti e indietro una graffetta, alla fine si spezza anche se ogni piegatura è leggera. Alberi, molle e ali degli aerei vanno progettati proprio contro questo fenomeno.",
+  "passaggi": [
+   "La fatica è legata a carichi che si ripetono molte volte.",
+   "Una piccola cricca nasce e cresce un poco a ogni ciclo.",
+   "La rottura arriva anche con sforzi inferiori allo snervamento.",
+   "Il creep è sotto carico costante ad alta temperatura; urto e corrosione sono altro.",
+   "La risposta è: cedimento per carichi ciclici, anche inferiori allo snervamento."
+  ],
+  "concetto": "fatica"
+ },
+ {
+  "id": "SMT-031",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "test",
+  "domanda": "Lo scorrimento viscoso (creep) dei metalli diventa importante in genere quando la temperatura supera circa:",
+  "opzioni": {
+   "A": "0,1 volte la temperatura di fusione in gradi Celsius",
+   "B": "la temperatura di fusione",
+   "C": "100 °C per qualsiasi metallo",
+   "D": "0,4 volte la temperatura di fusione espressa in kelvin",
+   "E": "la temperatura ambiente per qualsiasi metallo"
+  },
+  "giusta": "D",
+  "perche": "Il creep è una deformazione che cresce nel tempo sotto carico costante, controllata da diffusione e moto termicamente attivato delle dislocazioni. Diventa significativo sopra circa 0,4 T_f (in kelvin): per l'acciaio parliamo di qualche centinaio di gradi, per il piombo già della temperatura ambiente. L'errore tipico è usare i gradi Celsius, che non hanno uno zero fisico.",
+  "semplice": "Le palette di una turbina a gas lavorano caldissime e, con gli anni, si allungano poco a poco. Le vecchie lastre di piombo dei tetti si incurvano per lo stesso motivo.",
+  "passaggi": [
+   "Il creep è controllato dalla diffusione, che dipende dalla temperatura assoluta.",
+   "Va quindi confrontato con la temperatura di fusione espressa in kelvin, non in Celsius.",
+   "La regola pratica è sopra circa 0,4 T_f in kelvin.",
+   "Esempio: per il piombo, 0,4 × 600 K ≈ 240 K, già sotto la temperatura ambiente.",
+   "La risposta è circa 0,4 volte la temperatura di fusione in kelvin."
+  ],
+  "concetto": "creep"
+ },
+ {
+  "id": "SMT-032",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "università",
+  "domanda": "In una prova di trazione lo sforzo ingegneristico è 400 MPa e la deformazione ingegneristica 0,20, prima della strizione. Quanto vale lo sforzo vero?",
+  "opzioni": {
+   "A": "480 MPa",
+   "B": "333 MPa",
+   "C": "400 MPa",
+   "D": "80 MPa",
+   "E": "2000 MPa"
+  },
+  "giusta": "A",
+  "perche": "Finché la deformazione è uniforme e il volume si conserva, σ_vero = σ_ing · (1 + ε_ing) = 400 · 1,20 = 480 MPa. Lo sforzo vero è maggiore perché si riferisce alla sezione attuale, più piccola di quella iniziale. Il valore 333 MPa nasce dal dividere invece che moltiplicare per (1 + ε).",
+  "semplice": "Mentre un provino si allunga diventa anche più sottile: la stessa forza grava su meno materiale. Lo sforzo «vero» tiene conto di questa sezione ridotta.",
+  "passaggi": [
+   "σ_vero = σ_ing · (1 + ε_ing)",
+   "σ_vero = 400 · (1 + 0,20)",
+   "σ_vero = 480 MPa"
+  ],
+  "concetto": "sforzo vero"
+ },
+ {
+  "id": "SMT-033",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "università",
+  "domanda": "Una lastra contiene una cricca superficiale di profondità a = 2 mm ed è caricata con σ = 200 MPa; si assume Y = 1. Quanto vale il fattore di intensità degli sforzi K_I = Y·σ·√(πa)?",
+  "opzioni": {
+   "A": "circa 15,9 MPa·m^(1/2)",
+   "B": "circa 502 MPa·m^(1/2)",
+   "C": "circa 1,26 MPa·m^(1/2)",
+   "D": "circa 400 MPa·m^(1/2)",
+   "E": "circa 8,9 MPa·m^(1/2)"
+  },
+  "giusta": "A",
+  "perche": "Con a = 0,002 m si ha √(π·0,002) ≈ 0,0793 m^(1/2) e quindi K_I ≈ 200 · 0,0793 ≈ 15,9 MPa·m^(1/2). Se K_I raggiunge la tenacità a frattura K_Ic del materiale, la cricca si propaga in modo instabile. L'errore più comune è lasciare la profondità in millimetri, ottenendo circa 502.",
+  "semplice": "Una cricca concentra lo sforzo sul suo apice come una lente concentra la luce. K_I misura quanto è «intenso» questo effetto: dipende sia dal carico sia dalla lunghezza della cricca.",
+  "passaggi": [
+   "a = 2 mm = 0,002 m",
+   "√(π · 0,002) ≈ 0,0793 m^(1/2)",
+   "K_I = 1 · 200 · 0,0793 ≈ 15,9 MPa·m^(1/2)"
+  ],
+  "concetto": "fattore di intensità degli sforzi"
+ },
+ {
+  "id": "SMT-034",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "università",
+  "domanda": "Un acciaio ha tenacità a frattura K_Ic = 50 MPa·m^(1/2). Con Y = 1 e una cricca di profondità 1 mm, qual è circa lo sforzo critico di rottura?",
+  "opzioni": {
+   "A": "circa 28 MPa",
+   "B": "circa 1580 MPa",
+   "C": "circa 50 MPa",
+   "D": "circa 280 MPa",
+   "E": "circa 890 MPa"
+  },
+  "giusta": "E",
+  "perche": "Dalla relazione K_Ic = Y·σ_c·√(πa) si ricava σ_c = K_Ic / (Y·√(πa)) = 50 / √(π·0,001) ≈ 50 / 0,0560 ≈ 890 MPa. Se il carico di snervamento è inferiore, il pezzo snerva prima di rompersi per frattura fragile. Il valore 1580 MPa si ottiene dimenticando π, mentre 28 MPa usando a in millimetri.",
+  "semplice": "Più una cricca è lunga, minore è il carico che il pezzo sopporta. Per questo nei controlli non distruttivi di aerei e ponti si cercano cricche anche di pochi millimetri.",
+  "passaggi": [
+   "a = 1 mm = 0,001 m",
+   "√(π · 0,001) ≈ 0,0560 m^(1/2)",
+   "σ_c = 50 / 0,0560 ≈ 892 MPa"
+  ],
+  "concetto": "tenacità a frattura"
+ },
+ {
+  "id": "SMT-035",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "università",
+  "domanda": "Un acciaio ha carico di snervamento 250 MPa e modulo di Young 200 GPa. Quanto vale il modulo di resilienza U_r = σ_y²/(2E)?",
+  "opzioni": {
+   "A": "circa 156 MJ/m³",
+   "B": "circa 0,16 MJ/m³",
+   "C": "circa 0,63 MJ/m³",
+   "D": "circa 1,25 MJ/m³",
+   "E": "circa 0,0016 MJ/m³"
+  },
+  "giusta": "B",
+  "perche": "Il modulo di resilienza è l'energia elastica per unità di volume che il materiale può immagazzinare fino allo snervamento, cioè l'area sotto il tratto elastico della curva. U_r = (250·10⁶)² / (2 · 200·10⁹) = 156 250 J/m³ ≈ 0,16 MJ/m³. Gli errori tipici sono mescolare MPa e GPa senza convertirli o dimenticare il fattore 2.",
+  "semplice": "Una molla deve accumulare energia e restituirla senza deformarsi in modo permanente. Per questo si scelgono materiali con snervamento alto e modulo non troppo elevato.",
+  "passaggi": [
+   "σ_y² = (250·10⁶ Pa)² = 6,25·10¹⁶ Pa²",
+   "2E = 4·10¹¹ Pa",
+   "U_r = 6,25·10¹⁶ / 4·10¹¹ = 156 250 J/m³ ≈ 0,16 MJ/m³"
+  ],
+  "concetto": "modulo di resilienza"
+ },
+ {
+  "id": "SMT-036",
+  "materia": "Scienza dei materiali",
+  "argomento": "Proprietà meccaniche",
+  "livello": "test",
+  "domanda": "Un tirante deve sopportare 50 kN; l'acciaio ha σ_y = 360 MPa e si usa un coefficiente di sicurezza 2. Qual è il diametro minimo?",
+  "opzioni": {
+   "A": "circa 13,3 mm",
+   "B": "circa 9,4 mm",
+   "C": "circa 18,8 mm",
+   "D": "circa 26,6 mm",
+   "E": "circa 37,6 mm"
+  },
+  "giusta": "C",
+  "perche": "Lo sforzo ammissibile è σ_amm = σ_y / n = 180 MPa; l'area necessaria è A = F / σ_amm = 50 000 / 180 ≈ 278 mm², e da A = πd²/4 si ricava d ≈ 18,8 mm. Il valore 13,3 mm si ottiene dimenticando il coefficiente di sicurezza, 9,4 mm confondendo raggio e diametro. È buona pratica arrotondare poi alla misura commerciale superiore.",
+  "semplice": "Il coefficiente di sicurezza è un margine: si progetta come se il materiale fosse due volte meno resistente, per coprire incertezze su carichi e difetti.",
+  "passaggi": [
+   "σ_amm = 360 / 2 = 180 MPa",
+   "A = 50 000 N / 180 MPa ≈ 277,8 mm²",
+   "d = √(4A/π) = √(4 · 277,8 / π) ≈ 18,8 mm"
+  ],
+  "concetto": "coefficiente di sicurezza"
+ },
+ {
+  "id": "SMT-037",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "Che cosa distingue, per definizione, un acciaio da una ghisa?",
+  "opzioni": {
+   "A": "L'acciaio contiene cromo, la ghisa no",
+   "B": "La ghisa è ferro puro, l'acciaio una lega",
+   "C": "L'acciaio è prodotto in altoforno, la ghisa in forno elettrico",
+   "D": "La ghisa contiene meno carbonio dell'acciaio",
+   "E": "L'acciaio contiene meno di circa il 2% di carbonio, la ghisa di più"
+  },
+  "giusta": "E",
+  "perche": "Il limite è la massima solubilità del carbonio nell'austenite, circa 2,1% in massa: sotto si parla di acciai, sopra di ghise. Le ghise, con più carbonio, fondono a temperatura più bassa e sono adatte alla colata, ma sono più fragili. La trappola è credere che sia il cromo a fare l'acciaio: il cromo caratterizza gli acciai inossidabili, che sono solo una famiglia di acciai.",
+  "semplice": "Una padella di ghisa è pesante, si cola in stampo e se cade su una piastrella può spezzarsi. Una lamiera d'acciaio invece si piega: la differenza principale è quanto carbonio contengono.",
+  "passaggi": [
+   "La distinzione si basa sul contenuto di carbonio.",
+   "Il limite è circa il 2,1%, la massima solubilità del carbonio nell'austenite.",
+   "Sotto si parla di acciaio, sopra di ghisa: la ghisa ha più carbonio.",
+   "Il cromo caratterizza solo gli inossidabili e la ghisa non è ferro puro.",
+   "La risposta è: acciaio con meno di circa il 2% di carbonio, ghisa con di più."
+  ],
+  "concetto": "acciai e ghise"
+ },
+ {
+  "id": "SMT-038",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "Nel diagramma ferro-carbonio, la reazione eutettoide avviene a 727 °C con un contenuto di carbonio di circa:",
+  "opzioni": {
+   "A": "0,76%",
+   "B": "2,11%",
+   "C": "4,3%",
+   "D": "6,7%",
+   "E": "0,022%"
+  },
+  "giusta": "A",
+  "perche": "All'eutettoide (0,76% C, 727 °C) l'austenite si trasforma per raffreddamento in perlite, miscela di ferrite e cementite. Il 4,3% è il punto eutettico (liquido che solidifica), il 2,11% la massima solubilità del C nell'austenite, il 6,7% la composizione della cementite e lo 0,022% la massima solubilità nella ferrite. La trappola è confondere eutettico ed eutettoide: il primo parte da un liquido, il secondo da un solido.",
+  "semplice": "Un acciaio con circa 0,8% di carbonio, raffreddato lentamente, diventa tutto perlite: al microscopio sembra una madreperla a strisce, da cui il nome.",
+  "passaggi": [
+   "Ricorda i punti notevoli del diagramma ferro-carbonio.",
+   "Eutettoide: 727 °C e 0,76% C, l'austenite diventa perlite.",
+   "Eutettico: 4,3% C; massima solubilità nell'austenite: 2,11%; cementite: 6,7%; ferrite: 0,022%.",
+   "Non confondere eutettoide (solido → solido) con eutettico (liquido → solido).",
+   "La risposta è 0,76%."
+  ],
+  "concetto": "punto eutettoide"
+ },
+ {
+  "id": "SMT-039",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "Da che cosa è costituita la perlite?",
+  "opzioni": {
+   "A": "Da austenite e martensite",
+   "B": "Da grafite in noduli dentro la ferrite",
+   "C": "Da lamelle alternate di ferrite e cementite",
+   "D": "Da martensite rinvenuta",
+   "E": "Da un'unica fase CFC"
+  },
+  "giusta": "C",
+  "perche": "La perlite si forma dalla trasformazione eutettoide dell'austenite: il carbonio si ridistribuisce creando sottili lamelle di cementite (Fe₃C, dura) alternate a lamelle di ferrite (tenera e duttile). È un costituente, cioè una miscela di due fasi, non una fase singola. La trappola è pensarla come una fase a sé, mentre in una sua sezione si vedono sempre due fasi diverse.",
+  "semplice": "Immagina un panino a strati: fette sottili e dure di cementite alternate a fette morbide di ferrite. L'insieme è resistente ma non fragile, ed è tipico delle rotaie ferroviarie.",
+  "passaggi": [
+   "La perlite nasce dalla trasformazione eutettoide dell'austenite.",
+   "Il carbonio si ridistribuisce in due fasi: ferrite (povera di C) e cementite Fe₃C (ricca di C).",
+   "Le due fasi si dispongono in lamelle alternate.",
+   "Non è una fase singola né contiene martensite o grafite.",
+   "La risposta è: lamelle alternate di ferrite e cementite."
+  ],
+  "concetto": "perlite"
+ },
+ {
+  "id": "SMT-040",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "test",
+  "domanda": "Qual è la percentuale in massa di carbonio nella cementite Fe₃C? (Fe = 55,85; C = 12,01)",
+  "opzioni": {
+   "A": "circa 25%",
+   "B": "circa 6,7%",
+   "C": "circa 4,3%",
+   "D": "circa 21,5%",
+   "E": "circa 0,76%"
+  },
+  "giusta": "B",
+  "perche": "Nella formula Fe₃C ci sono tre atomi di ferro e uno di carbonio: la massa molare vale 3·55,85 + 12,01 = 179,56 g/mol e la frazione di C è 12,01 / 179,56 ≈ 6,7%. Il 25% è la frazione atomica (1 atomo su 4), non quella in massa: è la trappola principale. Il valore 6,7% è il limite destro del diagramma ferro-carbonio usato nei libri.",
+  "semplice": "Su quattro atomi uno è di carbonio, ma il carbonio pesa molto meno del ferro. Per questo in massa il carbonio è poco meno del 7%.",
+  "passaggi": [
+   "M(Fe₃C) = 3 · 55,85 + 12,01 = 179,56 g/mol",
+   "%C = 12,01 / 179,56 · 100",
+   "%C ≈ 6,69%"
+  ],
+  "concetto": "composizione della cementite"
+ },
+ {
+  "id": "SMT-041",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "test",
+  "domanda": "Un acciaio con 0,40% C è raffreddato lentamente fino appena sotto 727 °C. Quale frazione della microstruttura è perlite? (ferrite 0,022% C, eutettoide 0,76% C)",
+  "opzioni": {
+   "A": "circa 51%",
+   "B": "circa 49%",
+   "C": "circa 40%",
+   "D": "circa 6%",
+   "E": "circa 76%"
+  },
+  "giusta": "A",
+  "perche": "Per la regola della leva, la frazione di perlite è (0,40 − 0,022) / (0,76 − 0,022) ≈ 0,51; il resto, circa 49%, è ferrite proeutettoide. Rispondere 49% significa invertire i due bracci della leva, l'errore più comune. Rispondere 40% vuol dire usare direttamente la percentuale di carbonio come frazione di perlite.",
+  "semplice": "La regola della leva è come un'altalena: più la composizione della lega è vicina a quella di una fase, più quella fase è abbondante. Lo 0,40% sta circa a metà tra 0,022 e 0,76, quindi perlite e ferrite sono quasi metà e metà.",
+  "passaggi": [
+   "Frazione perlite = (C₀ − C_α) / (C_eutettoide − C_α)",
+   "= (0,40 − 0,022) / (0,76 − 0,022) = 0,378 / 0,738",
+   "≈ 0,51, cioè 51%"
+  ],
+  "concetto": "regola della leva"
+ },
+ {
+  "id": "SMT-042",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "università",
+  "domanda": "Quale frazione in massa di cementite contiene la perlite? (ferrite 0,022% C; perlite 0,76% C; cementite 6,70% C)",
+  "opzioni": {
+   "A": "circa 89%",
+   "B": "circa 76%",
+   "C": "circa 50%",
+   "D": "circa 11%",
+   "E": "circa 0,3%"
+  },
+  "giusta": "D",
+  "perche": "Applicando la regola della leva alla linea eutettoide: W_Fe₃C = (0,76 − 0,022) / (6,70 − 0,022) ≈ 0,11. Quindi la perlite è per circa l'89% ferrite e per l'11% cementite, ed è per questo che le lamelle di ferrite appaiono molto più spesse. L'89% è la frazione di ferrite, cioè la leva letta al contrario.",
+  "semplice": "Nella perlite le strisce scure di cementite sono sottili rispetto a quelle chiare di ferrite. Questo rispecchia il fatto che la cementite è solo circa un decimo del totale.",
+  "passaggi": [
+   "W_cem = (0,76 − 0,022) / (6,70 − 0,022)",
+   "= 0,738 / 6,678",
+   "≈ 0,11, cioè 11%"
+  ],
+  "concetto": "leva sull'eutettoide"
+ },
+ {
+  "id": "SMT-043",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "Che cosa si ottiene raffreddando molto rapidamente in acqua un acciaio portato allo stato austenitico?",
+  "opzioni": {
+   "A": "Perlite grossolana, tenera",
+   "B": "Martensite, molto dura ma fragile",
+   "C": "Ferrite pura, molto duttile",
+   "D": "Austenite stabile a temperatura ambiente in qualsiasi acciaio al carbonio",
+   "E": "Grafite libera"
+  },
+  "giusta": "B",
+  "perche": "Con un raffreddamento rapido il carbonio non ha il tempo di diffondere per formare ferrite e cementite: il reticolo CFC si trasforma senza diffusione in una struttura tetragonale sovrassatura di carbonio, la martensite. È durissima ma fragile, perciò dopo la tempra si esegue il rinvenimento. La trappola è pensare che raffreddando in fretta si ottenga un materiale «più morbido».",
+  "semplice": "Il fabbro che immerge una lama rovente nell'acqua sta facendo la tempra: la lama diventa durissima. Ma se la si lasciasse così, si scheggerebbe al primo colpo.",
+  "passaggi": [
+   "Per formare ferrite e cementite il carbonio deve diffondere, e questo richiede tempo.",
+   "Con un raffreddamento rapido in acqua il carbonio non fa in tempo.",
+   "Il reticolo cambia senza diffusione in una struttura tetragonale sovrassatura: la martensite.",
+   "La martensite è durissima ma fragile; perlite e ferrite si formano con raffreddamenti lenti.",
+   "La risposta è la martensite."
+  ],
+  "concetto": "tempra e martensite"
+ },
+ {
+  "id": "SMT-044",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "A che cosa serve il rinvenimento eseguito dopo la tempra?",
+  "opzioni": {
+   "A": "Ad aumentare ancora la durezza",
+   "B": "A trasformare la martensite in austenite",
+   "C": "A ridurre la fragilità della martensite aumentando la tenacità",
+   "D": "A eliminare il carbonio dall'acciaio",
+   "E": "Ad aumentare il modulo di Young"
+  },
+  "giusta": "C",
+  "perche": "Il rinvenimento consiste nel riscaldare l'acciaio temprato a una temperatura inferiore a 727 °C: parte del carbonio precipita come carburi finissimi e le tensioni interne si rilassano. Si perde un po' di durezza ma si guadagna molta tenacità. L'insieme tempra più rinvenimento si chiama bonifica. La trappola è credere che serva ad aumentare la durezza.",
+  "semplice": "Dopo la tempra la lama è come un biscotto secco: dura ma si spezza. Il rinvenimento la rende più simile a un biscotto un po' morbido, che si piega prima di rompersi.",
+  "passaggi": [
+   "Dopo la tempra l'acciaio è martensitico: duro ma fragile.",
+   "Il rinvenimento è un riscaldamento sotto 727 °C.",
+   "Precipitano carburi fini e si rilassano le tensioni interne.",
+   "Si perde un po' di durezza e si guadagna tenacità; non torna austenite.",
+   "La risposta è: ridurre la fragilità della martensite aumentando la tenacità."
+  ],
+  "concetto": "rinvenimento"
+ },
+ {
+  "id": "SMT-045",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "Che cosa rende «inossidabile» un acciaio inox?",
+  "opzioni": {
+   "A": "Il rivestimento di zinco",
+   "B": "L'elevato contenuto di carbonio",
+   "C": "Uno strato di vernice applicato in acciaieria",
+   "D": "Il cromo (almeno circa 10,5%) che forma in superficie un sottile film passivo di ossido",
+   "E": "L'assenza totale di ferro"
+  },
+  "giusta": "D",
+  "perche": "Con almeno il 10,5% circa di cromo si forma spontaneamente uno strato di ossido di cromo di pochi nanometri, compatto e aderente, che si riforma da solo se graffiato. Questa è la passivazione. Il rivestimento di zinco è invece la zincatura, usata sugli acciai comuni. La trappola è pensare che un inox non possa mai corrodersi: in presenza di cloruri può soffrire di vaiolatura.",
+  "semplice": "Le posate in acciaio inox restano lucide anni anche se lavate in continuazione. Un sottilissimo «vestito» invisibile di ossido di cromo le protegge.",
+  "passaggi": [
+   "Un acciaio inox resiste alla corrosione senza rivestimenti esterni.",
+   "Con almeno circa il 10,5% di cromo si forma in superficie un film di ossido di cromo.",
+   "Il film è sottile, compatto e si riforma da solo: è la passivazione.",
+   "Lo zinco è la zincatura; il carbonio alto non aiuta; il ferro c'è.",
+   "La risposta è il cromo che forma il film passivo."
+  ],
+  "concetto": "acciai inossidabili"
+ },
+ {
+  "id": "SMT-046",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "L'ottone è una lega di:",
+  "opzioni": {
+   "A": "rame e zinco",
+   "B": "rame e stagno",
+   "C": "ferro e nichel",
+   "D": "alluminio e rame",
+   "E": "piombo e stagno"
+  },
+  "giusta": "A",
+  "perche": "L'ottone è rame più zinco (in genere 5-40% di Zn), facile da lavorare e di colore giallo. Il bronzo è invece rame più stagno, storicamente usato per statue e campane. La trappola è scambiare ottone e bronzo; piombo e stagno formano le vecchie leghe per saldatura dolce.",
+  "semplice": "Le maniglie dorate e molte valvole idrauliche sono di ottone. Le statue antiche, come i Bronzi di Riace, sono di bronzo.",
+  "passaggi": [
+   "Ricorda le due leghe classiche del rame.",
+   "Ottone = rame + zinco.",
+   "Bronzo = rame + stagno.",
+   "Piombo e stagno sono le leghe per saldatura dolce.",
+   "La risposta è rame e zinco."
+  ],
+  "concetto": "leghe del rame"
+ },
+ {
+  "id": "SMT-047",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "test",
+  "domanda": "Con quale meccanismo si aumenta la resistenza di molte leghe di alluminio, come la 2024 (Al-Cu)?",
+  "opzioni": {
+   "A": "Tempra martensitica",
+   "B": "Aggiunta di carbonio interstiziale",
+   "C": "Trasformazione allotropica CCC-CFC",
+   "D": "Indurimento per precipitazione (solubilizzazione e invecchiamento)",
+   "E": "Cementazione superficiale"
+  },
+  "giusta": "D",
+  "perche": "La lega viene portata a una temperatura in cui il rame è tutto disciolto, poi raffreddata rapidamente e infine mantenuta a temperatura moderata: si formano precipitati finissimi che ostacolano le dislocazioni. L'alluminio non ha trasformazioni allotropiche e non forma martensite come gli acciai. La trappola è applicare all'alluminio i trattamenti tipici dell'acciaio.",
+  "semplice": "Nell'alluminio aeronautico ci sono miliardi di minuscoli «sassolini» di composti di rame sparsi nel metallo. Fanno da ostacoli e rendono la lega molto più resistente.",
+  "passaggi": [
+   "L'alluminio non ha trasformazioni allotropiche: non può formare martensite.",
+   "Si usa l'indurimento per precipitazione.",
+   "Solubilizzazione: si scioglie il rame ad alta temperatura; poi raffreddamento rapido.",
+   "Invecchiamento: a temperatura moderata si formano precipitati fini che ostacolano le dislocazioni.",
+   "La risposta è l'indurimento per precipitazione."
+  ],
+  "concetto": "indurimento per precipitazione"
+ },
+ {
+  "id": "SMT-048",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "Che effetto ha la lavorazione plastica a freddo (incrudimento) su un metallo?",
+  "opzioni": {
+   "A": "Riduce resistenza e durezza e aumenta la duttilità",
+   "B": "Non cambia le proprietà meccaniche",
+   "C": "Riduce il modulo di Young a metà",
+   "D": "Aumenta resistenza e durezza ma riduce la duttilità",
+   "E": "Trasforma il metallo in un materiale amorfo"
+  },
+  "giusta": "D",
+  "perche": "Deformando a freddo aumenta moltissimo la densità di dislocazioni, che si ostacolano a vicenda: il metallo diventa più resistente e duro ma meno capace di deformarsi ancora. Per recuperare duttilità si fa una ricottura che provoca la ricristallizzazione. La trappola è confondere l'incrudimento con la ricottura, che ha l'effetto opposto.",
+  "semplice": "Un filo di rame piegato più volte nello stesso punto diventa sempre più rigido, fino a spezzarsi. È l'incrudimento: il metallo si «indurisce» lavorandolo.",
+  "passaggi": [
+   "Deformando a freddo aumenta molto la densità di dislocazioni.",
+   "Le dislocazioni si ostacolano a vicenda: serve più sforzo per deformare.",
+   "Quindi aumentano resistenza e durezza, ma si riduce la duttilità.",
+   "Il modulo di Young non cambia; l'effetto opposto lo dà la ricottura.",
+   "La risposta è: aumenta resistenza e durezza ma riduce la duttilità."
+  ],
+  "concetto": "incrudimento"
+ },
+ {
+  "id": "SMT-049",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "test",
+  "domanda": "Un filo di diametro 10 mm viene trafilato fino a 8 mm. Qual è la percentuale di lavorazione a freddo (riduzione di sezione)?",
+  "opzioni": {
+   "A": "20%",
+   "B": "36%",
+   "C": "64%",
+   "D": "25%",
+   "E": "80%"
+  },
+  "giusta": "B",
+  "perche": "La percentuale di lavorazione a freddo si calcola sulle aree: %CW = (A₀ − A_d)/A₀ · 100. Poiché le aree sono proporzionali al quadrato del diametro, (100 − 64)/100 = 36%. Il 20% è la riduzione del diametro, non dell'area: è la trappola più diffusa. Il 64% è il rapporto tra le aree finale e iniziale.",
+  "semplice": "Passando da 10 a 8 mm sembra di togliere poco, ma la sezione è un cerchio: l'area scende da 100 a 64 «unità», cioè più di un terzo.",
+  "passaggi": [
+   "A₀ ∝ 10² = 100; A_d ∝ 8² = 64",
+   "%CW = (100 − 64) / 100 · 100",
+   "%CW = 36%"
+  ],
+  "concetto": "grado di incrudimento"
+ },
+ {
+  "id": "SMT-050",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "università",
+  "domanda": "In un sistema binario a pressione costante, quanti gradi di libertà ci sono nel punto eutettico, dove coesistono liquido e due fasi solide?",
+  "opzioni": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "−1",
+   "E": "0"
+  },
+  "giusta": "E",
+  "perche": "A pressione fissata la regola delle fasi diventa F = C − P + 1: con C = 2 componenti e P = 3 fasi si ottiene F = 0. Il punto eutettico è quindi invariante: temperatura e composizioni delle fasi sono fissate. La trappola è usare la forma F = C − P + 2, che vale quando anche la pressione può variare.",
+  "semplice": "Zero gradi di libertà significa che non puoi cambiare nulla senza far sparire una fase. Per questo una lega eutettica fonde a una temperatura precisa, come un metallo puro.",
+  "passaggi": [
+   "Pressione costante: F = C − P + 1",
+   "C = 2, P = 3 (liquido + α + β)",
+   "F = 2 − 3 + 1 = 0"
+  ],
+  "concetto": "regola delle fasi"
+ },
+ {
+  "id": "SMT-051",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "università",
+  "domanda": "Una lega Cu-Ni con il 35% di Ni si trova a una temperatura in cui il liquido contiene il 32% di Ni e il solido α il 43% di Ni. Qual è la frazione in massa di liquido?",
+  "opzioni": {
+   "A": "circa 27%",
+   "B": "circa 35%",
+   "C": "circa 68%",
+   "D": "circa 81%",
+   "E": "circa 73%"
+  },
+  "giusta": "E",
+  "perche": "Con la regola della leva, la frazione di liquido è il braccio opposto diviso la lunghezza totale: W_L = (C_α − C₀)/(C_α − C_L) = (43 − 35)/(43 − 32) ≈ 0,73. La lega ha composizione vicina a quella del liquido, quindi il liquido prevale. Rispondere 27% significa usare il braccio sbagliato, cioè dare la frazione di solido.",
+  "semplice": "La composizione 35% è molto più vicina al 32% del liquido che al 43% del solido. Come su un'altalena, il lato più vicino al fulcro «pesa» di più: c'è più liquido.",
+  "passaggi": [
+   "W_L = (C_α − C₀) / (C_α − C_L)",
+   "W_L = (43 − 35) / (43 − 32) = 8/11",
+   "W_L ≈ 0,73; W_α ≈ 0,27"
+  ],
+  "concetto": "leva nel campo bifase"
+ },
+ {
+  "id": "SMT-052",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "università",
+  "domanda": "La diffusione del carbonio nel ferro γ ha D₀ = 2,3·10⁻⁵ m²/s ed energia di attivazione Q = 148 kJ/mol. Quanto vale circa il coefficiente di diffusione a 900 °C? (R = 8,314 J/(mol·K))",
+  "opzioni": {
+   "A": "circa 2,3·10⁻⁵ m²/s",
+   "B": "circa 5,9·10⁻⁶ m²/s",
+   "C": "circa 5,9·10⁻¹² m²/s",
+   "D": "circa 1,8·10⁻¹⁵ m²/s",
+   "E": "circa 3,1·10⁻⁹ m²/s"
+  },
+  "giusta": "C",
+  "perche": "Il coefficiente segue la legge di Arrhenius D = D₀·exp(−Q/RT), con T = 1173 K: l'esponente vale circa −15,2 e quindi D ≈ 5,9·10⁻¹² m²/s. Il valore 2,3·10⁻⁵ è solo il fattore pre-esponenziale, mentre usare 900 al posto di 1173 K porta a un valore troppo piccolo. Questi numeri spiegano perché la cementazione richiede alcune ore ad alta temperatura.",
+  "semplice": "Gli atomi di carbonio saltano da un interstizio all'altro, e più è caldo più saltano spesso. È come uno zucchero che si scioglie più in fretta nel tè caldo che in quello freddo.",
+  "passaggi": [
+   "T = 900 + 273 = 1173 K",
+   "Q/RT = 148 000 / (8,314 · 1173) ≈ 15,18",
+   "D = 2,3·10⁻⁵ · e^(−15,18) ≈ 5,9·10⁻¹² m²/s"
+  ],
+  "concetto": "diffusione e Arrhenius"
+ },
+ {
+  "id": "SMT-053",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "università",
+  "domanda": "Che cosa misura la prova Jominy?",
+  "opzioni": {
+   "A": "La resilienza a bassa temperatura",
+   "B": "La resistenza a fatica",
+   "C": "La temprabilità, cioè quanto in profondità un acciaio riesce a indurire con la tempra",
+   "D": "La durezza della martensite pura",
+   "E": "La velocità di corrosione"
+  },
+  "giusta": "C",
+  "perche": "Un provino cilindrico austenitizzato viene raffreddato con un getto d'acqua su una sola estremità; poi si misura la durezza lungo l'asse. La curva ottenuta mostra fino a che distanza dall'estremità si forma martensite. Gli elementi di lega come Cr, Mo e Ni spostano a destra le curve di trasformazione e aumentano la temprabilità. La trappola è confondere temprabilità e durezza massima, che dipende soprattutto dal carbonio.",
+  "semplice": "Due acciai possono diventare ugualmente duri in superficie, ma uno solo indurisce anche al centro di un pezzo grosso. La prova Jominy dice quale.",
+  "passaggi": [
+   "Nella prova Jominy un provino austenitizzato viene raffreddato con acqua da una sola estremità.",
+   "Si misura poi la durezza lungo l'asse.",
+   "La curva mostra fino a che distanza si forma martensite.",
+   "Questo misura quanto in profondità l'acciaio indurisce con la tempra.",
+   "La risposta è la temprabilità."
+  ],
+  "concetto": "temprabilità"
+ },
+ {
+  "id": "SMT-054",
+  "materia": "Scienza dei materiali",
+  "argomento": "Metalli e leghe",
+  "livello": "superiori",
+  "domanda": "Perché la lega di titanio Ti-6Al-4V si usa per protesi d'anca e componenti aeronautici?",
+  "opzioni": {
+   "A": "Unisce alta resistenza, bassa densità, resistenza alla corrosione e biocompatibilità",
+   "B": "È il metallo più economico disponibile",
+   "C": "Ha la densità più alta tra i metalli strutturali",
+   "D": "È magnetica e quindi visibile ai controlli",
+   "E": "Si può saldare facilmente all'aria come un acciaio dolce"
+  },
+  "giusta": "A",
+  "perche": "Il titanio ha densità di circa 4,5 g/cm³, poco più della metà dell'acciaio, con resistenza paragonabile; inoltre si ricopre di un ossido protettivo e il corpo umano lo tollera bene. Il costo è invece elevato e la saldatura richiede protezione con gas inerte. La trappola è scegliere la risposta del costo, che è anzi uno dei limiti principali del titanio.",
+  "semplice": "Una protesi deve restare nel corpo per decenni senza arrugginire né dare reazioni, e non deve pesare troppo. Il titanio soddisfa tutte queste richieste.",
+  "passaggi": [
+   "Pensa alle esigenze di protesi e aerei: leggerezza, resistenza, nessuna corrosione, tollerabilità.",
+   "Il titanio ha densità circa 4,5 g/cm³, poco più della metà dell'acciaio, con resistenza simile.",
+   "Si ricopre di ossido protettivo ed è biocompatibile.",
+   "È costoso, non è magnetico e va saldato in gas inerte: le altre opzioni sono false.",
+   "La risposta è: unisce alta resistenza, bassa densità, resistenza alla corrosione e biocompatibilità."
+  ],
+  "concetto": "leghe di titanio"
+ },
+ {
+  "id": "SMT-055",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Che cos'è un polimero?",
+  "opzioni": {
+   "A": "Una macromolecola formata dalla ripetizione di molte unità chiamate monomeri",
+   "B": "Un cristallo ionico formato da metalli e non metalli",
+   "C": "Una lega di due o più metalli",
+   "D": "Una miscela di gas nobili",
+   "E": "Un composto formato da un solo tipo di atomo legato in una piccola molecola"
+  },
+  "giusta": "A",
+  "perche": "Il termine viene dal greco «molte parti»: un polimero è una lunghissima catena, a volte ramificata o reticolata, ottenuta legando fra loro migliaia di monomeri. Per esempio il polietilene nasce dall'unione di molte molecole di etilene. La trappola è pensare che i polimeri siano solo sintetici: cellulosa, amido, proteine e DNA sono polimeri naturali.",
+  "semplice": "Pensa a una collana fatta con migliaia di perline uguali agganciate una all'altra: ogni perlina è un monomero, la collana intera è il polimero.",
+  "passaggi": [
+   "Il nome viene dal greco «molte parti».",
+   "Un polimero è una macromolecola formata da molte unità ripetute, i monomeri.",
+   "Esempio: il polietilene nasce dall'unione di molte molecole di etilene.",
+   "Leghe, cristalli ionici e piccole molecole non sono polimeri.",
+   "La risposta è: una macromolecola formata dalla ripetizione di monomeri."
+  ],
+  "concetto": "definizione di polimero"
+ },
+ {
+  "id": "SMT-056",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "test",
+  "domanda": "Un campione di polietilene ha massa molare media numerica di 280 000 g/mol. Qual è circa il grado di polimerizzazione? (unità ripetente −CH₂−CH₂−, 28,05 g/mol)",
+  "opzioni": {
+   "A": "circa 280",
+   "B": "circa 5000",
+   "C": "circa 20 000",
+   "D": "circa 10 000",
+   "E": "circa 7,8·10⁶"
+  },
+  "giusta": "D",
+  "perche": "Il grado di polimerizzazione è il numero medio di unità ripetenti per catena: DP = M_n / m = 280 000 / 28,05 ≈ 9980, cioè circa 10 000. Il valore 20 000 si ottiene usando come unità ripetente −CH₂− (14 g/mol) invece di −CH₂−CH₂−; il valore 7,8·10⁶ moltiplicando invece di dividere.",
+  "semplice": "Se una collana pesa 280 grammi e ogni perlina pesa 0,028 grammi, contando si trovano circa 10 000 perline. Lo stesso ragionamento si fa con le catene di polietilene.",
+  "passaggi": [
+   "DP = M_n / massa unità ripetente",
+   "DP = 280 000 / 28,05",
+   "DP ≈ 9980 ≈ 10 000"
+  ],
+  "concetto": "grado di polimerizzazione"
+ },
+ {
+  "id": "SMT-057",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Qual è la differenza principale tra un termoplastico e un termoindurente?",
+  "opzioni": {
+   "A": "Il termoindurente si ammorbidisce scaldandolo, il termoplastico no",
+   "B": "Il termoplastico è sempre trasparente, il termoindurente sempre opaco",
+   "C": "Il termoindurente è un metallo, il termoplastico un polimero",
+   "D": "Il termoplastico si può rifondere e rimodellare, il termoindurente no perché è reticolato",
+   "E": "Non c'è differenza: sono due nomi dello stesso materiale"
+  },
+  "giusta": "D",
+  "perche": "Nei termoplastici le catene sono lineari o ramificate e tenute insieme da forze deboli: scaldando scorrono e il materiale si può rimodellare più volte. Nei termoindurenti si forma durante la cura un reticolo tridimensionale di legami covalenti: scaldando il materiale non fonde ma, oltre una certa temperatura, si degrada. La trappola è invertire i due nomi, pensando che «termoindurente» voglia dire che diventa morbido col calore.",
+  "semplice": "Una bottiglia di plastica si può fondere e trasformare in una nuova bottiglia. Il manico di una vecchia pentola in bachelite invece, se lo scaldi troppo, brucia ma non fonde.",
+  "passaggi": [
+   "Nei termoplastici le catene sono legate da forze deboli: scaldando scorrono.",
+   "Quindi i termoplastici si possono rifondere e rimodellare.",
+   "Nei termoindurenti le catene formano un reticolo di legami covalenti.",
+   "Scaldandoli non fondono, si degradano.",
+   "La risposta è: il termoplastico si rimodella, il termoindurente no perché è reticolato."
+  ],
+  "concetto": "termoplastici e termoindurenti"
+ },
+ {
+  "id": "SMT-058",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Che cosa accade nella vulcanizzazione della gomma naturale?",
+  "opzioni": {
+   "A": "Le catene vengono spezzate in piccole molecole",
+   "B": "La gomma diventa un metallo",
+   "C": "La gomma si trasforma in un vetro inorganico",
+   "D": "Si elimina tutto il carbonio dalla gomma",
+   "E": "Le catene vengono collegate da ponti di zolfo, e la gomma diventa elastica e resistente"
+  },
+  "giusta": "E",
+  "perche": "La vulcanizzazione, scoperta da Goodyear, crea ponti di zolfo tra le catene di poliisoprene: si forma un reticolo leggero che impedisce alle catene di scorrere in modo permanente. Così la gomma, dopo essere stata deformata, torna alla forma iniziale. Troppi ponti, invece, rendono il materiale rigido come l'ebanite. La trappola è pensare che serva a rompere le catene.",
+  "semplice": "La gomma grezza è appiccicosa e d'estate cola. Vulcanizzata diventa lo pneumatico che si deforma sulla strada e poi torna rotondo.",
+  "passaggi": [
+   "La gomma naturale grezza ha catene libere di scorrere: si deforma in modo permanente.",
+   "Nella vulcanizzazione si aggiunge zolfo.",
+   "Lo zolfo forma ponti tra le catene di poliisoprene.",
+   "Il reticolo leggero fa tornare la gomma alla forma iniziale: diventa elastica e resistente.",
+   "La risposta è: le catene vengono collegate da ponti di zolfo."
+  ],
+  "concetto": "elastomeri e vulcanizzazione"
+ },
+ {
+  "id": "SMT-059",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Che cosa succede a un polimero amorfo quando viene raffreddato al di sotto della sua temperatura di transizione vetrosa (Tg)?",
+  "opzioni": {
+   "A": "Fonde completamente",
+   "B": "Diventa gommoso ed elastico",
+   "C": "Si trasforma in un metallo",
+   "D": "Diventa rigido e fragile, come un vetro",
+   "E": "Diventa conduttore elettrico"
+  },
+  "giusta": "D",
+  "perche": "Sopra Tg i segmenti di catena si muovono e il polimero amorfo è gommoso; sotto Tg i movimenti si bloccano e il materiale diventa rigido e fragile. La Tg non è una fusione: non ci sono cristalli che fondono. La trappola è confondere Tg con la temperatura di fusione Tm, che riguarda solo la parte cristallina.",
+  "semplice": "Una pallina di gomma immersa nell'azoto liquido diventa così rigida che, lanciata a terra, va in frantumi. È scesa molto sotto la sua Tg.",
+  "passaggi": [
+   "Sopra la Tg i segmenti di catena di un polimero amorfo si muovono: il materiale è gommoso.",
+   "Sotto la Tg questi movimenti si bloccano.",
+   "Il materiale diventa rigido e fragile, come un vetro.",
+   "La Tg non è una fusione: quella è la Tm della parte cristallina.",
+   "La risposta è: diventa rigido e fragile."
+  ],
+  "concetto": "transizione vetrosa"
+ },
+ {
+  "id": "SMT-060",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Che cosa caratterizza una polimerizzazione per condensazione (a stadi)?",
+  "opzioni": {
+   "A": "Ogni legame che si forma libera una piccola molecola, spesso acqua",
+   "B": "I monomeri si legano aprendo un doppio legame senza perdere atomi",
+   "C": "Si usa solo per produrre polietilene",
+   "D": "Avviene solo allo stato gassoso",
+   "E": "Non richiede monomeri con gruppi funzionali"
+  },
+  "giusta": "A",
+  "perche": "Nella condensazione i monomeri hanno gruppi funzionali (ad esempio −OH, −COOH, −NH₂) che reagiscono tra loro eliminando una piccola molecola come H₂O o HCl. Così si producono nylon, PET e policarbonati. Nella poliaddizione invece si aprono doppi legami C=C senza perdere atomi, come per polietilene e PVC. La trappola è assegnare il polietilene alla condensazione.",
+  "semplice": "È come costruire una catena di mattoncini dove ogni volta che ne attacchi uno cade a terra un piccolo pezzetto. Nel nylon quel pezzetto è una molecola d'acqua.",
+  "passaggi": [
+   "Distingui condensazione e addizione.",
+   "Nella condensazione reagiscono gruppi funzionali (−OH, −COOH, −NH₂).",
+   "A ogni legame che si forma si libera una piccola molecola, spesso acqua.",
+   "L'apertura di doppi legami senza perdere atomi è l'addizione (es. polietilene).",
+   "La risposta è: ogni legame libera una piccola molecola, spesso acqua."
+  ],
+  "concetto": "polimerizzazione per condensazione"
+ },
+ {
+  "id": "SMT-061",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Perché il polietilene ad alta densità (HDPE) è più rigido e denso del polietilene a bassa densità (LDPE)?",
+  "opzioni": {
+   "A": "Contiene atomi di cloro nella catena",
+   "B": "È un termoindurente reticolato",
+   "C": "Ha catene molto più ramificate",
+   "D": "Contiene fibre di vetro",
+   "E": "Ha catene lineari, poco ramificate, che si impacchettano meglio e cristallizzano di più"
+  },
+  "giusta": "E",
+  "perche": "Le catene lineari dell'HDPE si allineano facilmente formando zone cristalline ordinate; le ramificazioni dell'LDPE invece ostacolano l'impacchettamento. Più cristallinità significa maggiore densità, rigidezza e resistenza chimica. Chimicamente sono lo stesso polimero: la trappola è pensare che differiscano per composizione.",
+  "semplice": "I flaconi rigidi del detersivo sono di HDPE, i sacchetti morbidi della spesa di LDPE. Stessa molecola, catene disposte in modo diverso, come spaghetti crudi in un pacco rispetto a spaghetti aggrovigliati.",
+  "passaggi": [
+   "HDPE e LDPE sono lo stesso polimero: cambia la forma delle catene.",
+   "Le catene lineari dell'HDPE si impacchettano bene.",
+   "Un buon impacchettamento dà più zone cristalline.",
+   "Più cristallinità significa maggiore densità e rigidezza; le ramificazioni sono dell'LDPE.",
+   "La risposta è: catene lineari, poco ramificate, che cristallizzano di più."
+  ],
+  "concetto": "cristallinità e ramificazioni"
+ },
+ {
+  "id": "SMT-062",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "università",
+  "domanda": "Un campione contiene lo stesso numero di moli di catene con massa 10 000 g/mol e 30 000 g/mol. Quanto vale la massa molare media ponderale M_w?",
+  "opzioni": {
+   "A": "20 000 g/mol",
+   "B": "25 000 g/mol",
+   "C": "15 000 g/mol",
+   "D": "40 000 g/mol",
+   "E": "1,25 g/mol"
+  },
+  "giusta": "B",
+  "perche": "M_w pesa ogni catena con la sua massa: M_w = Σ n_i M_i² / Σ n_i M_i = (10 000² + 30 000²) / (10 000 + 30 000) = 25 000 g/mol. Il valore 20 000 è la media numerica M_n, la semplice media aritmetica. Il rapporto M_w/M_n = 1,25 è l'indice di polidispersità, che è un numero puro e non una massa molare.",
+  "semplice": "Nella media ponderale le catene lunghe «contano di più» perché portano più massa. Per questo M_w è sempre maggiore o uguale a M_n.",
+  "passaggi": [
+   "M_n = (10 000 + 30 000) / 2 = 20 000 g/mol",
+   "M_w = (10 000² + 30 000²) / (10 000 + 30 000)",
+   "M_w = 1·10⁹ / 4·10⁴ = 25 000 g/mol",
+   "PDI = 25 000 / 20 000 = 1,25"
+  ],
+  "concetto": "masse molari medie"
+ },
+ {
+  "id": "SMT-063",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "università",
+  "domanda": "Quale configurazione rende il polipropilene in grado di cristallizzare e quindi adatto a usi strutturali?",
+  "opzioni": {
+   "A": "Atattica, con i gruppi metilici disposti a caso",
+   "B": "Ramificata in modo irregolare",
+   "C": "Isotattica, con tutti i gruppi metilici dalla stessa parte della catena",
+   "D": "Reticolata con ponti di zolfo",
+   "E": "Con catene molto corte"
+  },
+  "giusta": "C",
+  "perche": "La tatticità descrive la disposizione regolare dei gruppi laterali: nel PP isotattico i −CH₃ sono tutti dalla stessa parte, la catena è regolare e può cristallizzare. Il PP atattico, disordinato, resta amorfo, appiccicoso e di scarso interesse strutturale. La scoperta dei catalizzatori stereospecifici valse il Nobel a Natta e Ziegler. La trappola è pensare che più disordine renda il materiale più resistente.",
+  "semplice": "Se i rami di una catena sono tutti ordinati dallo stesso lato, le catene si avvicinano come pettini che si incastrano. I contenitori alimentari in PP devono la loro rigidità proprio a questo ordine.",
+  "passaggi": [
+   "Per cristallizzare una catena deve essere regolare.",
+   "La tatticità descrive come sono disposti i gruppi laterali −CH₃.",
+   "Nel PP isotattico sono tutti dalla stessa parte: catena regolare, cristallizzabile.",
+   "Il PP atattico, disordinato, resta amorfo e poco utile.",
+   "La risposta è la configurazione isotattica."
+  ],
+  "concetto": "tatticità"
+ },
+ {
+  "id": "SMT-064",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Qual è il monomero del PVC?",
+  "opzioni": {
+   "A": "L'etilene, CH₂=CH₂",
+   "B": "Il cloruro di vinile, CH₂=CHCl",
+   "C": "Lo stirene, C₆H₅−CH=CH₂",
+   "D": "Il propilene, CH₂=CH−CH₃",
+   "E": "Il tetrafluoroetilene, CF₂=CF₂"
+  },
+  "giusta": "B",
+  "perche": "Il PVC (polivinilcloruro) si ottiene per poliaddizione del cloruro di vinile: rispetto all'etilene, un idrogeno è sostituito da un cloro. Dall'etilene si ottiene il polietilene, dallo stirene il polistirene, dal propilene il polipropilene e dal tetrafluoroetilene il PTFE (Teflon). La trappola è scegliere l'etilene perché il nome «vinile» ricorda il doppio legame.",
+  "semplice": "Tubi per gli scarichi, telai di finestre e cavi elettrici sono spesso in PVC. Il cloro nella catena lo rende anche più difficile da incendiare.",
+  "passaggi": [
+   "PVC significa polivinilcloruro.",
+   "Il monomero è il cloruro di vinile: un etilene con un idrogeno sostituito da un cloro.",
+   "La formula è CH₂=CHCl.",
+   "Etilene dà polietilene, stirene polistirene, propilene polipropilene, tetrafluoroetilene PTFE.",
+   "La risposta è il cloruro di vinile."
+  ],
+  "concetto": "monomeri comuni"
+ },
+ {
+  "id": "SMT-065",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "test",
+  "domanda": "Il PET delle bottiglie per bevande è:",
+  "opzioni": {
+   "A": "una poliammide ottenuta per addizione",
+   "B": "un elastomero vulcanizzato",
+   "C": "un termoindurente epossidico",
+   "D": "una poliolefina come il polietilene",
+   "E": "un poliestere ottenuto per condensazione"
+  },
+  "giusta": "E",
+  "perche": "Il PET (polietilene tereftalato) nasce dalla condensazione tra glicole etilenico e acido tereftalico (o un suo estere): il legame che si forma è un estere, quindi è un poliestere. È un termoplastico e infatti si ricicla come fibra o nuove bottiglie. La trappola è dedurre dal nome «polietilene» che sia una poliolefina.",
+  "semplice": "La stessa plastica della bottiglia d'acqua, riciclata, diventa le fibre di un pile. È il PET, un poliestere.",
+  "passaggi": [
+   "PET significa polietilene tereftalato.",
+   "Si ottiene da glicole etilenico e acido tereftalico, con eliminazione di acqua: condensazione.",
+   "Il legame che si forma è un estere: è un poliestere.",
+   "Non è una poliolefina nonostante il nome, né un termoindurente o un elastomero.",
+   "La risposta è: un poliestere ottenuto per condensazione."
+  ],
+  "concetto": "poliesteri"
+ },
+ {
+  "id": "SMT-066",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "università",
+  "domanda": "Che cosa indica il comportamento viscoelastico di un polimero?",
+  "opzioni": {
+   "A": "Il polimero segue sempre la legge di Hooke",
+   "B": "La risposta meccanica dipende dal tempo e dalla velocità di carico",
+   "C": "Il polimero è un liquido a qualsiasi temperatura",
+   "D": "Il modulo elastico non dipende dalla temperatura",
+   "E": "Il polimero non si deforma mai sotto carico costante"
+  },
+  "giusta": "B",
+  "perche": "Un materiale viscoelastico combina una parte elastica (che restituisce l'energia) e una viscosa (che la dissipa). Sotto carico costante si deforma lentamente (creep), a deformazione costante lo sforzo cala nel tempo (rilassamento). Inoltre la rigidezza misurata aumenta se il carico è applicato più rapidamente. La trappola è applicare ai polimeri le leggi elastiche dei metalli a temperatura ambiente.",
+  "semplice": "Il silly putty rimbalza come una pallina se lo lanci, ma se lo lasci su un tavolo col tempo si spiana. È un esempio estremo di viscoelasticità.",
+  "passaggi": [
+   "Viscoelastico unisce elastico (restituisce energia) e viscoso (la dissipa).",
+   "La parte viscosa fa dipendere la risposta dal tempo.",
+   "Si osservano creep, rilassamento e rigidezza che cambia con la velocità di carico.",
+   "Le opzioni con la legge di Hooke sempre valida o senza deformazione sono sbagliate.",
+   "La risposta è: la risposta meccanica dipende dal tempo e dalla velocità di carico."
+  ],
+  "concetto": "viscoelasticità"
+ },
+ {
+  "id": "SMT-067",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "università",
+  "domanda": "Un polietilene ha densità 0,950 g/cm³; la fase cristallina ha densità 1,000 g/cm³ e quella amorfa 0,870 g/cm³. Qual è la percentuale di cristallinità in massa?",
+  "opzioni": {
+   "A": "circa 65%",
+   "B": "circa 62%",
+   "C": "circa 35%",
+   "D": "circa 95%",
+   "E": "circa 87%"
+  },
+  "giusta": "A",
+  "perche": "La cristallinità in massa si calcola con %χ = ρ_c(ρ − ρ_a) / [ρ(ρ_c − ρ_a)] · 100 = 1,000·0,080 / (0,950·0,130) · 100 ≈ 65%. Il valore 62% si ottiene con la semplice proporzione lineare sulle densità, che fornisce la frazione in volume e non in massa. Le zone cristalline sono più dense perché le catene sono impacchettate ordinatamente.",
+  "semplice": "Più un polimero è cristallino, più è denso: misurando quanto pesa un centimetro cubo si può stimare quanta parte è ordinata in cristalli.",
+  "passaggi": [
+   "ρ − ρ_a = 0,950 − 0,870 = 0,080",
+   "ρ_c − ρ_a = 1,000 − 0,870 = 0,130",
+   "%χ = 1,000 · 0,080 / (0,950 · 0,130) · 100 ≈ 64,8%"
+  ],
+  "concetto": "cristallinità da densità"
+ },
+ {
+  "id": "SMT-068",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Quale dei seguenti materiali NON si può riciclare semplicemente rifondendolo?",
+  "opzioni": {
+   "A": "Una resina epossidica indurita",
+   "B": "Una bottiglia in PET",
+   "C": "Un flacone in HDPE",
+   "D": "Una vaschetta in PP",
+   "E": "Un vasetto in polistirene"
+  },
+  "giusta": "A",
+  "perche": "Le resine epossidiche indurite sono termoindurenti: il loro reticolo covalente non si scioglie con il calore e quindi non si possono rifondere. PET, HDPE, PP e polistirene sono termoplastici e si possono rifondere e ristampare, anche se ogni ciclo degrada un po' le catene. La trappola è pensare che «plastica» significhi sempre riciclabile allo stesso modo.",
+  "semplice": "Le colle bicomponenti, una volta indurite, non si ammorbidiscono più. Le bottiglie e i flaconi invece vanno nella raccolta della plastica e diventano nuovi oggetti.",
+  "passaggi": [
+   "Si rifondono solo i termoplastici.",
+   "PET, HDPE, PP e polistirene sono termoplastici.",
+   "La resina epossidica indurita è un termoindurente con reticolo covalente.",
+   "Scaldandola non fonde, si degrada.",
+   "La risposta è la resina epossidica indurita."
+  ],
+  "concetto": "riciclo dei polimeri"
+ },
+ {
+  "id": "SMT-069",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "test",
+  "domanda": "Perché si aggiungono plastificanti al PVC?",
+  "opzioni": {
+   "A": "Per aumentarne la durezza",
+   "B": "Per renderlo conduttore elettrico",
+   "C": "Per abbassarne la temperatura di transizione vetrosa e renderlo flessibile",
+   "D": "Per reticolarlo come un termoindurente",
+   "E": "Per aumentarne la temperatura di fusione"
+  },
+  "giusta": "C",
+  "perche": "Il PVC puro ha Tg di circa 80 °C ed è rigido a temperatura ambiente. I plastificanti sono piccole molecole che si inseriscono tra le catene, ne facilitano il movimento e abbassano la Tg sotto la temperatura ambiente. Così si ottengono tubi flessibili, guaine e pellicole. La trappola è pensare che gli additivi servano sempre a irrigidire.",
+  "semplice": "Il tubo rigido dello scarico e il tubo morbido da giardino possono essere entrambi di PVC: nel secondo ci sono plastificanti che fanno da «lubrificante» tra le catene.",
+  "passaggi": [
+   "Il PVC puro ha Tg di circa 80 °C: a temperatura ambiente è rigido.",
+   "I plastificanti sono piccole molecole che si inseriscono tra le catene.",
+   "Facilitano il movimento delle catene e abbassano la Tg sotto la temperatura ambiente.",
+   "Il risultato è un materiale flessibile, non più duro o reticolato.",
+   "La risposta è: abbassare la Tg e renderlo flessibile."
+  ],
+  "concetto": "plastificanti"
+ },
+ {
+  "id": "SMT-070",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "A che cosa deve il Kevlar (aramide) la sua altissima resistenza a trazione?",
+  "opzioni": {
+   "A": "A un reticolo di ponti di zolfo",
+   "B": "All'assenza totale di orientazione delle catene",
+   "C": "A catene rigide e allineate, legate tra loro da legami a idrogeno",
+   "D": "Alla presenza di atomi di ferro nella catena",
+   "E": "Alla struttura amorfa e disordinata"
+  },
+  "giusta": "C",
+  "perche": "Le aramidi hanno anelli aromatici in catena che rendono le molecole quasi diritte; durante la filatura si allineano parallele all'asse della fibra e si legano tra loro con legami a idrogeno. Il carico è così sopportato direttamente dai legami covalenti lungo la catena. La trappola è attribuire la resistenza alla reticolazione, come negli elastomeri.",
+  "semplice": "I giubbotti antiproiettile e le corde per la vela usano fibre aramidiche: a parità di peso sono molto più resistenti dell'acciaio.",
+  "passaggi": [
+   "La resistenza a trazione di una fibra è massima se il carico grava sui legami covalenti lungo la catena.",
+   "Gli anelli aromatici rendono le catene dell'aramide rigide e quasi diritte.",
+   "Con la filatura si allineano lungo la fibra e si legano tra loro con legami a idrogeno.",
+   "Non ci sono ponti di zolfo, ferro o strutture disordinate.",
+   "La risposta è: catene rigide e allineate, legate da legami a idrogeno."
+  ],
+  "concetto": "fibre aramidiche"
+ },
+ {
+  "id": "SMT-071",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "superiori",
+  "domanda": "Da quale materia prima si ottiene principalmente l'acido polilattico (PLA), usato anche nella stampa 3D?",
+  "opzioni": {
+   "A": "Dal petrolio, per cracking del gasolio",
+   "B": "Dal carbone, per distillazione",
+   "C": "Dalla silice fusa",
+   "D": "Da zuccheri vegetali, ad esempio dall'amido di mais, fermentati ad acido lattico",
+   "E": "Dalla bauxite"
+  },
+  "giusta": "D",
+  "perche": "Il PLA si produce fermentando zuccheri di origine vegetale per ottenere acido lattico, che poi viene polimerizzato. È un poliestere compostabile in impianti industriali, cioè a temperatura e umidità controllate. La trappola è credere che «biodegradabile» significhi che si dissolve rapidamente in qualsiasi ambiente: nel mare o in un prato si degrada molto lentamente.",
+  "semplice": "Molti filamenti per stampanti 3D e alcuni bicchieri «compostabili» sono di PLA. Vengono da una coltivazione, non da un pozzo di petrolio.",
+  "passaggi": [
+   "Il nome «acido polilattico» indica che il monomero è l'acido lattico.",
+   "L'acido lattico si ottiene fermentando zuccheri.",
+   "Gli zuccheri vengono da fonti vegetali, ad esempio l'amido di mais.",
+   "Petrolio, carbone, silice e bauxite non danno acido lattico.",
+   "La risposta è: da zuccheri vegetali fermentati ad acido lattico."
+  ],
+  "concetto": "polimeri da fonti rinnovabili"
+ },
+ {
+  "id": "SMT-072",
+  "materia": "Scienza dei materiali",
+  "argomento": "Polimeri",
+  "livello": "università",
+  "domanda": "Il polietilene a temperatura ambiente si trova tra la sua Tg (circa −120 °C) e la Tm (circa 130 °C). Come si comporta un polimero semicristallino in queste condizioni?",
+  "opzioni": {
+   "A": "È un liquido viscoso",
+   "B": "È fragile come un vetro perché entrambe le fasi sono rigide",
+   "C": "È tenace e flessibile: i cristalli danno rigidezza, la fase amorfa gommosa assorbe energia",
+   "D": "È completamente amorfo",
+   "E": "È gommoso come un elastomero senza alcuna rigidezza"
+  },
+  "giusta": "C",
+  "perche": "Tra Tg e Tm la parte amorfa è allo stato gommoso, mobile, mentre i cristalli restano solidi e fanno da punti di ancoraggio. Il risultato è un materiale tenace, che si deforma molto prima di rompersi. Sotto Tg diventerebbe fragile, sopra Tm fonderebbe. La trappola è pensare che basti superare la Tg per ottenere un liquido.",
+  "semplice": "Un sacchetto di polietilene si stira e si deforma moltissimo prima di strapparsi. È il comportamento tipico di un polimero semicristallino tra Tg e Tm.",
+  "passaggi": [
+   "Sopra la Tg la parte amorfa è gommosa e mobile.",
+   "Sotto la Tm i cristalli restano solidi.",
+   "I cristalli danno rigidezza, la fase gommosa assorbe energia deformandosi.",
+   "Non è liquido (siamo sotto Tm) né fragile (siamo sopra Tg).",
+   "La risposta è: tenace e flessibile."
+  ],
+  "concetto": "semicristallini tra Tg e Tm"
+ },
+ {
+  "id": "SMT-073",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Quale insieme di proprietà è tipico dei materiali ceramici?",
+  "opzioni": {
+   "A": "Duttili, buoni conduttori elettrici e malleabili",
+   "B": "Teneri, con bassa temperatura di fusione e molto elastici",
+   "C": "Duri, fragili, isolanti e con alta temperatura di fusione",
+   "D": "Leggeri come i polimeri e facilmente rifondibili",
+   "E": "Magnetici e buoni conduttori di calore come i metalli"
+  },
+  "giusta": "C",
+  "perche": "I ceramici sono tenuti insieme da legami ionici e covalenti, forti e direzionali, senza elettroni liberi. Ne derivano durezza elevata, alta temperatura di fusione, isolamento elettrico e termico, ma anche fragilità. La trappola è generalizzare troppo: alcuni ceramici avanzati conducono (come certi ossidi superconduttori) o sono buoni conduttori di calore (come il nitruro di alluminio), ma sono eccezioni.",
+  "semplice": "Una tazzina di porcellana regge l'acqua bollente, non conduce corrente e non si graffia con un coltello, ma se cade si frantuma. Questo è il profilo tipico di un ceramico.",
+  "passaggi": [
+   "I ceramici hanno legami ionici e covalenti, forti e direzionali, senza elettroni liberi.",
+   "Legami forti: durezza e alta temperatura di fusione.",
+   "Nessun elettrone libero: isolanti elettrici.",
+   "Legami direzionali: niente deformazione plastica, quindi fragilità.",
+   "La risposta è: duri, fragili, isolanti e con alta temperatura di fusione."
+  ],
+  "concetto": "proprietà dei ceramici"
+ },
+ {
+  "id": "SMT-074",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Perché i ceramici cristallini sono fragili?",
+  "opzioni": {
+   "A": "Hanno troppi elettroni liberi",
+   "B": "Hanno legami metallici deboli",
+   "C": "Sono sempre amorfi",
+   "D": "Le dislocazioni si muovono con grande difficoltà e le cricche si propagano senza deformazione plastica",
+   "E": "Hanno un modulo di Young molto basso"
+  },
+  "giusta": "D",
+  "perche": "Nei cristalli ionici, far scorrere un piano porterebbe a contatto ioni con la stessa carica che si respingono; nei covalenti i legami direzionali si oppongono allo scorrimento. Senza deformazione plastica, l'energia all'apice di una cricca non viene dissipata e la cricca avanza. In più, porosità e piccoli difetti di lavorazione fanno da innesco. La trappola è attribuire la fragilità a legami deboli: i legami sono anzi molto forti.",
+  "semplice": "Un metallo prima di rompersi si piega e ti avverte; un piatto di ceramica no. Il motivo è che al suo interno gli atomi non riescono a scivolare uno sull'altro.",
+  "passaggi": [
+   "La fragilità nasce dall'assenza di deformazione plastica.",
+   "Nei cristalli ionici lo scorrimento avvicinerebbe ioni di stessa carica; nei covalenti i legami direzionali lo impediscono.",
+   "Le dislocazioni quindi si muovono con grande difficoltà.",
+   "L'energia all'apice di una cricca non si dissipa e la cricca avanza.",
+   "La risposta è: le dislocazioni si muovono a fatica e le cricche si propagano senza deformazione plastica."
+  ],
+  "concetto": "fragilità dei ceramici"
+ },
+ {
+  "id": "SMT-075",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "test",
+  "domanda": "Nel cloruro di sodio r(Na⁺) = 0,102 nm e r(Cl⁻) = 0,181 nm. Quale numero di coordinazione è previsto per il catione in base al rapporto dei raggi?",
+  "opzioni": {
+   "A": "4",
+   "B": "8",
+   "C": "12",
+   "D": "6",
+   "E": "3"
+  },
+  "giusta": "D",
+  "perche": "Il rapporto r_C/r_A = 0,102/0,181 ≈ 0,56 cade nell'intervallo 0,414–0,732, che corrisponde alla coordinazione ottaedrica, cioè 6. Sotto 0,414 si avrebbe coordinazione 4 (tetraedrica), sopra 0,732 coordinazione 8 (cubica). L'errore tipico è fare il rapporto al contrario (anione/catione), ottenendo un numero maggiore di 1.",
+  "semplice": "Attorno a una pallina piccola ci stanno meno palline grandi. Il rapporto dei raggi dice quante palline di cloro riescono a «toccare» lo ione sodio: nel sale sono sei.",
+  "passaggi": [
+   "r_C/r_A = 0,102 / 0,181 ≈ 0,564",
+   "0,414 < 0,564 < 0,732",
+   "Coordinazione ottaedrica: NC = 6"
+  ],
+  "concetto": "rapporto dei raggi"
+ },
+ {
+  "id": "SMT-076",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "test",
+  "domanda": "Nel cloruro di cesio r(Cs⁺) = 0,170 nm e r(Cl⁻) = 0,181 nm. Quale numero di coordinazione ci si aspetta?",
+  "opzioni": {
+   "A": "6",
+   "B": "4",
+   "C": "12",
+   "D": "2",
+   "E": "8"
+  },
+  "giusta": "E",
+  "perche": "Il rapporto r_C/r_A ≈ 0,94 è superiore a 0,732, quindi il catione è abbastanza grande da essere circondato da 8 anioni ai vertici di un cubo. Il CsCl ha infatti una struttura cubica semplice con un catione al centro, simile solo in apparenza alla CCC dei metalli. La trappola è pensare che tutti i cloruri alcalini abbiano la struttura di NaCl.",
+  "semplice": "Lo ione cesio è quasi grande quanto lo ione cloro, quindi intorno a lui c'è più spazio: ci stanno 8 ioni cloro invece di 6.",
+  "passaggi": [
+   "r_C/r_A = 0,170 / 0,181 ≈ 0,94",
+   "0,94 > 0,732",
+   "Coordinazione cubica: NC = 8"
+  ],
+  "concetto": "struttura del CsCl"
+ },
+ {
+  "id": "SMT-077",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Perché nel vetro comune (sodico-calcico) si aggiunge ossido di sodio (Na₂O) alla silice?",
+  "opzioni": {
+   "A": "Rende il vetro un conduttore metallico",
+   "B": "Lo fa cristallizzare completamente",
+   "C": "Aumenta la temperatura di fusione oltre i 2000 °C",
+   "D": "Rompe parte della rete di tetraedri SiO₄ e abbassa la temperatura di lavorazione",
+   "E": "Elimina del tutto l'ossigeno dal vetro"
+  },
+  "giusta": "D",
+  "perche": "La silice pura forma una rete continua di tetraedri SiO₄ e richiede temperature altissime per essere lavorata. Il Na₂O è un modificatore: introduce ossigeni non pontanti che interrompono la rete, abbassando la viscosità e la temperatura di lavorazione. Il CaO viene aggiunto per migliorare la resistenza chimica, che il solo sodio peggiorerebbe. La trappola è pensare che l'additivo serva a renderlo più resistente al calore.",
+  "semplice": "La silice da sola è come una rete da pesca tutta annodata: difficile da far scorrere. Il sodio taglia alcuni nodi e la rete diventa più «morbida» da modellare.",
+  "passaggi": [
+   "La silice pura forma una rete continua di tetraedri SiO₄ che si lavora solo a temperature altissime.",
+   "Il Na₂O è un modificatore di rete.",
+   "Introduce ossigeni non pontanti che interrompono parte della rete.",
+   "La rete più interrotta ha viscosità minore: si lavora a temperature più basse.",
+   "La risposta è: rompe parte della rete e abbassa la temperatura di lavorazione."
+  ],
+  "concetto": "vetri silicatici"
+ },
+ {
+  "id": "SMT-078",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Che cosa distingue il vetro da un solido cristallino come il quarzo?",
+  "opzioni": {
+   "A": "Il vetro è amorfo: non ha ordine a lungo raggio e non ha una temperatura di fusione netta",
+   "B": "Il vetro ha un reticolo cubico perfetto",
+   "C": "Il vetro contiene solo atomi di sodio",
+   "D": "Il vetro è un liquido che scorre visibilmente a temperatura ambiente",
+   "E": "Il vetro fonde sempre a esattamente 1000 °C"
+  },
+  "giusta": "A",
+  "perche": "Nel vetro i tetraedri SiO₄ sono collegati in modo disordinato: c'è ordine locale ma non ripetizione periodica. Scaldandolo si ammorbidisce gradualmente invece di fondere a una temperatura precisa, e si definisce una temperatura di transizione vetrosa. La trappola è la leggenda delle vetrate medievali più spesse in basso perché il vetro «cola»: dipende dal modo in cui venivano prodotte, non dallo scorrimento.",
+  "semplice": "Il quarzo è come un esercito schierato in file ordinate, il vetro come una folla in piazza: ognuno ha i vicini a distanza simile, ma non ci sono file.",
+  "passaggi": [
+   "Il quarzo è cristallino: i tetraedri SiO₄ si ripetono in modo periodico.",
+   "Nel vetro gli stessi tetraedri sono collegati in modo disordinato: c'è solo ordine locale.",
+   "Senza ordine a lungo raggio il vetro si ammorbidisce gradualmente, senza fondere a una temperatura netta.",
+   "Il vetro non cola visibilmente a temperatura ambiente.",
+   "La risposta è: il vetro è amorfo, senza ordine a lungo raggio né fusione netta."
+  ],
+  "concetto": "stato vetroso"
+ },
+ {
+  "id": "SMT-079",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Perché il vetro temprato è più resistente del vetro normale?",
+  "opzioni": {
+   "A": "Contiene fibre di acciaio",
+   "B": "È completamente cristallino",
+   "C": "La superficie è in trazione",
+   "D": "La superficie è in compressione e le cricche superficiali faticano ad aprirsi",
+   "E": "Ha un modulo di Young dieci volte maggiore"
+  },
+  "giusta": "D",
+  "perche": "Nella tempra termica il vetro viene scaldato e poi raffreddato rapidamente con getti d'aria: la superficie solidifica per prima e, quando l'interno si contrae, viene messa in compressione. Un carico deve prima annullare questa compressione per aprire le cricche superficiali. Quando si rompe, l'energia immagazzinata lo frantuma in piccoli pezzi poco taglienti. La trappola è invertire i segni degli sforzi.",
+  "semplice": "I finestrini laterali delle auto e i box doccia sono in vetro temprato: se si rompono diventano tanti granelli invece di lame affilate.",
+  "passaggi": [
+   "Il vetro si rompe partendo da piccole cricche superficiali che si aprono in trazione.",
+   "Nella tempra la superficie si raffredda per prima; poi l'interno si contrae e la mette in compressione.",
+   "Un carico deve prima annullare la compressione prima di aprire le cricche.",
+   "Il vetro temprato resta amorfo e ha lo stesso modulo; la superficie non è in trazione.",
+   "La risposta è: la superficie è in compressione e le cricche faticano ad aprirsi."
+  ],
+  "concetto": "vetro temprato"
+ },
+ {
+  "id": "SMT-080",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Quale dei seguenti è un ceramico avanzato usato per utensili da taglio e componenti resistenti all'usura?",
+  "opzioni": {
+   "A": "Polietilene",
+   "B": "Ottone",
+   "C": "Gomma naturale",
+   "D": "Polistirene espanso",
+   "E": "Nitruro di silicio (Si₃N₄)"
+  },
+  "giusta": "E",
+  "perche": "I ceramici avanzati (o tecnici) sono materiali sintetici ad alta purezza come allumina (Al₂O₃), carburo di silicio (SiC), nitruro di silicio (Si₃N₄) e zirconia (ZrO₂). Sono molto duri e resistono ad alte temperature, quindi si usano per inserti da taglio, cuscinetti e componenti di motori. Gli altri materiali elencati sono polimeri o leghe metalliche.",
+  "semplice": "Alcuni cuscinetti delle biciclette da corsa hanno sfere ceramiche in nitruro di silicio: più leggere e più dure dell'acciaio.",
+  "passaggi": [
+   "Cerca un ceramico avanzato: duro, resistente all'usura e al calore.",
+   "Polietilene, gomma e polistirene sono polimeri; l'ottone è una lega metallica.",
+   "Il nitruro di silicio Si₃N₄ è un ceramico tecnico come allumina e carburo di silicio.",
+   "Si usa per inserti da taglio e cuscinetti.",
+   "La risposta è il nitruro di silicio (Si₃N₄)."
+  ],
+  "concetto": "ceramici avanzati"
+ },
+ {
+  "id": "SMT-081",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Come fa presa e indurisce il cemento Portland?",
+  "opzioni": {
+   "A": "Per reazione chimica con l'acqua (idratazione), che forma silicati di calcio idrati",
+   "B": "Per semplice evaporazione dell'acqua",
+   "C": "Per fusione e successivo raffreddamento",
+   "D": "Per reazione con l'azoto dell'aria",
+   "E": "Per polimerizzazione delle catene di carbonio"
+  },
+  "giusta": "A",
+  "perche": "I silicati e gli alluminati di calcio del cemento reagiscono con l'acqua formando silicati di calcio idrati (C-S-H), un gel che lega gli aggregati, e idrossido di calcio. Per questo il cemento indurisce anche sott'acqua e il getto va mantenuto umido nei primi giorni. La trappola è credere che si indurisca «asciugandosi»: se si secca troppo presto, l'idratazione si interrompe e il calcestruzzo è meno resistente.",
+  "semplice": "I muratori bagnano il calcestruzzo fresco nelle giornate calde. Non è per tenerlo morbido, ma perché ha bisogno di acqua per completare la reazione che lo indurisce.",
+  "passaggi": [
+   "Il cemento indurisce anche sott'acqua: non può essere semplice essiccamento.",
+   "I silicati di calcio del cemento reagiscono chimicamente con l'acqua: idratazione.",
+   "Si formano silicati di calcio idrati (C-S-H) che legano gli aggregati.",
+   "Non c'è fusione, né reazione con l'azoto, né polimerizzazione di catene di carbonio.",
+   "La risposta è: per idratazione, che forma silicati di calcio idrati."
+  ],
+  "concetto": "idratazione del cemento"
+ },
+ {
+  "id": "SMT-082",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "test",
+  "domanda": "Che cos'è la sinterizzazione?",
+  "opzioni": {
+   "A": "La fusione completa della polvere in uno stampo",
+   "B": "Il consolidamento di polveri compattate riscaldandole sotto la temperatura di fusione",
+   "C": "La tempra di un vetro con getti d'aria",
+   "D": "La rimozione dell'acqua da un'argilla a temperatura ambiente",
+   "E": "La deposizione di un rivestimento metallico"
+  },
+  "giusta": "B",
+  "perche": "Nella sinterizzazione le particelle si saldano tra loro grazie alla diffusione atomica, che riduce l'energia superficiale: i pori si restringono e il pezzo si densifica e si ritira. Si lavora sotto la temperatura di fusione, il che permette di produrre pezzi in materiali che fondono a temperature altissime. La trappola è pensare che le polveri vengano fuse.",
+  "semplice": "È un po' come una manciata di neve che, compressa e lasciata qualche ora, diventa un blocco di ghiaccio compatto senza essersi mai sciolta.",
+  "passaggi": [
+   "La sinterizzazione parte da polveri compattate.",
+   "Si riscalda sotto la temperatura di fusione.",
+   "La diffusione atomica salda le particelle, i pori si restringono e il pezzo si densifica.",
+   "Non è una fusione completa, né una tempra o un rivestimento.",
+   "La risposta è: consolidamento di polveri riscaldate sotto la temperatura di fusione."
+  ],
+  "concetto": "sinterizzazione"
+ },
+ {
+  "id": "SMT-083",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "test",
+  "domanda": "Un pezzo di allumina sinterizzata ha densità 3,60 g/cm³; la densità teorica dell'allumina è 3,98 g/cm³. Qual è circa la porosità?",
+  "opzioni": {
+   "A": "circa 90,5%",
+   "B": "circa 9,5%",
+   "C": "circa 10,6%",
+   "D": "circa 3,8%",
+   "E": "circa 0,38%"
+  },
+  "giusta": "B",
+  "perche": "La densità relativa è 3,60/3,98 ≈ 0,905, cioè il 90,5% del volume è materiale pieno; la porosità è il complemento, 1 − 0,905 ≈ 9,5%. Il 90,5% è appunto la densità relativa, scambiata per porosità. Il 10,6% deriva dal dividere per la densità misurata invece che per quella teorica.",
+  "semplice": "Se un pezzo pesa meno di quanto dovrebbe in base al materiale, la differenza è spazio vuoto. Qui circa un decimo del volume è fatto di piccoli pori.",
+  "passaggi": [
+   "Densità relativa = 3,60 / 3,98 ≈ 0,905",
+   "Porosità = 1 − 0,905 = 0,095",
+   "Porosità ≈ 9,5%"
+  ],
+  "concetto": "porosità"
+ },
+ {
+  "id": "SMT-084",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "università",
+  "domanda": "Un vetro (E = 70 GPa, α = 9·10⁻⁶ K⁻¹) ha la superficie completamente vincolata e subisce un brusco raffreddamento di 100 K. Quanto vale circa lo sforzo termico σ = E·α·ΔT?",
+  "opzioni": {
+   "A": "6,3 MPa",
+   "B": "630 MPa",
+   "C": "0,63 MPa",
+   "D": "7,8 MPa",
+   "E": "63 MPa"
+  },
+  "giusta": "E",
+  "perche": "σ = 70·10⁹ · 9·10⁻⁶ · 100 = 6,3·10⁷ Pa = 63 MPa. Nel raffreddamento la superficie è in trazione, pericolosa per un materiale fragile che può avere resistenza a trazione di poche decine di MPa. È il meccanismo dello shock termico. Gli errori tipici riguardano le potenze di dieci nella conversione da GPa a Pa.",
+  "semplice": "Se versi acqua fredda in un bicchiere di vetro bollente, la superficie si contrae di colpo e si può incrinare. Il vetro borosilicato (tipo Pyrex) resiste meglio perché si dilata circa tre volte meno.",
+  "passaggi": [
+   "σ = E · α · ΔT",
+   "σ = 70·10⁹ Pa · 9·10⁻⁶ K⁻¹ · 100 K",
+   "σ = 6,3·10⁷ Pa = 63 MPa"
+  ],
+  "concetto": "shock termico"
+ },
+ {
+  "id": "SMT-085",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "università",
+  "domanda": "Che cosa indica un modulo di Weibull m elevato per un ceramico?",
+  "opzioni": {
+   "A": "Una resistenza media più bassa",
+   "B": "Una maggiore duttilità",
+   "C": "Poca dispersione dei valori di resistenza e quindi un materiale più affidabile",
+   "D": "Una maggiore porosità",
+   "E": "Un modulo di Young più elevato"
+  },
+  "giusta": "C",
+  "perche": "La resistenza dei ceramici dipende dal difetto più grave presente e varia molto da pezzo a pezzo: si descrive con la statistica di Weibull. Un modulo m alto (oltre 20) significa che i difetti sono simili tra loro e i valori di rottura sono raccolti attorno alla media; un m basso (5-10) indica grande dispersione. La trappola è confondere m con la resistenza media o con il modulo elastico.",
+  "semplice": "Se dieci piastrelle si rompono tutte allo stesso carico, puoi fidarti del materiale; se una regge il doppio di un'altra, no. Il modulo di Weibull misura proprio questa «costanza».",
+  "passaggi": [
+   "La resistenza dei ceramici varia da pezzo a pezzo, secondo il difetto peggiore presente.",
+   "Il modulo di Weibull m misura quanto sono dispersi i valori di rottura.",
+   "m alto significa valori raccolti attorno alla media.",
+   "Quindi il materiale è più prevedibile e affidabile; m non indica resistenza media, duttilità o rigidezza.",
+   "La risposta è: poca dispersione dei valori, materiale più affidabile."
+  ],
+  "concetto": "statistica di Weibull"
+ },
+ {
+  "id": "SMT-086",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "università",
+  "domanda": "In una prova di flessione su tre punti un provino ceramico rettangolare (b = 4 mm, h = 3 mm, distanza tra gli appoggi L = 40 mm) si rompe con F = 400 N. Quanto vale la resistenza a flessione σ = 3FL/(2bh²)?",
+  "opzioni": {
+   "A": "circa 222 MPa",
+   "B": "circa 667 MPa",
+   "C": "circa 2000 MPa",
+   "D": "circa 500 MPa",
+   "E": "circa 1333 MPa"
+  },
+  "giusta": "B",
+  "perche": "Sostituendo: σ = 3·400·40 / (2·4·3²) = 48 000 / 72 ≈ 667 MPa. Per i ceramici si usa la flessione invece della trazione perché è difficile afferrare provini fragili senza romperli negli afferraggi. Gli errori tipici sono non elevare al quadrato lo spessore (ottenendo 2000) o scambiare base e spessore (ottenendo 500).",
+  "semplice": "Si appoggia una barretta su due supporti e si preme al centro finché si spezza. Dalla forza e dalle dimensioni si calcola quanto sforzo ha sopportato la fibra più tesa.",
+  "passaggi": [
+   "Numeratore: 3 · 400 · 40 = 48 000 N·mm",
+   "Denominatore: 2 · 4 · 3² = 72 mm³",
+   "σ = 48 000 / 72 ≈ 667 MPa"
+  ],
+  "concetto": "resistenza a flessione"
+ },
+ {
+  "id": "SMT-087",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "università",
+  "domanda": "Nella zirconia drogata con ittria (Y₂O₃), quante vacanze di ossigeno si formano per ogni 2 ioni Y³⁺ che sostituiscono 2 ioni Zr⁴⁺?",
+  "opzioni": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "Nessuna",
+   "E": "1"
+  },
+  "giusta": "E",
+  "perche": "Ogni Y³⁺ al posto di uno Zr⁴⁺ porta una carica positiva in meno: due sostituzioni lasciano un difetto di −2. Per mantenere la neutralità manca uno ione O²⁻, cioè si forma una vacanza di ossigeno. Queste vacanze rendono la zirconia stabilizzata un conduttore di ioni ossigeno, usato nelle sonde lambda e nelle celle a combustibile a ossidi solidi. La trappola è contare una vacanza per ogni ione drogante.",
+  "semplice": "È un bilancio di cariche: se tolgo due cariche positive, devo togliere anche una carica doppia negativa. Lo ione ossigeno, con carica −2, è proprio quello che manca.",
+  "passaggi": [
+   "Carica persa: 2 · (4 − 3) = 2 cariche positive",
+   "Una vacanza O²⁻ compensa 2 cariche",
+   "Vacanze per 2 Y³⁺ = 1"
+  ],
+  "concetto": "difetti e neutralità elettrica"
+ },
+ {
+  "id": "SMT-088",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "università",
+  "domanda": "Su che cosa si basa la tenacizzazione per trasformazione della zirconia parzialmente stabilizzata?",
+  "opzioni": {
+   "A": "Sulla trasformazione tetragonale-monoclina all'apice della cricca, che aumenta il volume e la richiude",
+   "B": "Sulla fusione locale del materiale",
+   "C": "Sulla formazione di martensite ferrosa",
+   "D": "Sull'aggiunta di fibre di carbonio",
+   "E": "Sulla riduzione del volume dei grani all'apice della cricca"
+  },
+  "giusta": "A",
+  "perche": "Grani tetragonali metastabili, sotto l'elevato sforzo all'apice della cricca, si trasformano nella fase monoclina con un aumento di volume di circa il 4%. Questa espansione genera sforzi di compressione che ostacolano l'apertura della cricca. È uno dei pochi modi per rendere tenace un ceramico ed è usato in protesi e coltelli ceramici. La trappola è pensare a una contrazione invece che a un'espansione.",
+  "semplice": "È come se, quando una crepa avanza, il materiale intorno si «gonfiasse» stringendola. I coltelli da cucina in ceramica bianca sfruttano proprio questo trucco.",
+  "passaggi": [
+   "Nella zirconia ci sono grani tetragonali metastabili.",
+   "All'apice di una cricca l'alto sforzo li trasforma in fase monoclina.",
+   "La trasformazione aumenta il volume di circa il 4%.",
+   "L'espansione comprime la cricca e ne ostacola l'apertura; non c'è fusione né riduzione di volume.",
+   "La risposta è: la trasformazione tetragonale-monoclina che aumenta il volume e richiude la cricca."
+  ],
+  "concetto": "tenacizzazione per trasformazione"
+ },
+ {
+  "id": "SMT-089",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "superiori",
+  "domanda": "Perché l'argilla è adatta a essere modellata nelle ceramiche tradizionali?",
+  "opzioni": {
+   "A": "È un metallo morbido",
+   "B": "È un polimero termoplastico",
+   "C": "È un silicato di alluminio idrato a strati che, con l'acqua, diventa plastico",
+   "D": "È un vetro già fuso",
+   "E": "Contiene fibre di carbonio"
+  },
+  "giusta": "C",
+  "perche": "Le argille, come la caolinite, sono silicati di alluminio idrati con struttura a strati; l'acqua si inserisce tra le lamelle e le fa scorrere, rendendo l'impasto plastico. Dopo l'essiccamento la cottura elimina l'acqua legata e forma nuove fasi e una parte vetrosa che consolida il pezzo. Con l'argilla si fanno mattoni, piastrelle, terracotta e porcellana. La trappola è credere che la cottura semplicemente «asciughi» il pezzo.",
+  "semplice": "Un vaso modellato al tornio si deforma facilmente finché è umido; dopo la cottura in forno diventa duro e non torna più argilla, anche se lo bagni.",
+  "passaggi": [
+   "L'argilla è un minerale, non un metallo o un polimero.",
+   "È un silicato di alluminio idrato con struttura a strati (es. caolinite).",
+   "L'acqua si inserisce tra le lamelle e le fa scorrere.",
+   "Per questo l'impasto diventa plastico e si modella; poi la cottura lo consolida.",
+   "La risposta è: silicato di alluminio idrato a strati che con l'acqua diventa plastico."
+  ],
+  "concetto": "argille e ceramiche tradizionali"
+ },
+ {
+  "id": "SMT-090",
+  "materia": "Scienza dei materiali",
+  "argomento": "Ceramici e vetri",
+  "livello": "test",
+  "domanda": "Perché i piani di cottura in vetroceramica resistono a forti sbalzi di temperatura?",
+  "opzioni": {
+   "A": "Conducono la corrente elettrica",
+   "B": "Sono completamente amorfi come il vetro comune",
+   "C": "Hanno un coefficiente di dilatazione termica quasi nullo",
+   "D": "Sono fatti di metallo verniciato",
+   "E": "Hanno un'altissima porosità"
+  },
+  "giusta": "C",
+  "perche": "Le vetroceramiche si ottengono cristallizzando in modo controllato un vetro: si formano cristalli finissimi che, combinati con la fase vetrosa residua, danno una dilatazione termica quasi nulla. Senza dilatazione non nascono gli sforzi termici che provocano lo shock termico. La trappola è confonderle con un vetro comune, che invece si spaccherebbe.",
+  "semplice": "Su un piano a induzione o radiante puoi appoggiare una pentola rovente e versarci accanto acqua fredda senza che si crepi: il materiale quasi non si dilata.",
+  "passaggi": [
+   "Lo shock termico nasce dagli sforzi dovuti alla dilatazione non uniforme.",
+   "Se il materiale non si dilata, questi sforzi non nascono.",
+   "La vetroceramica, cristallizzata in modo controllato, ha dilatazione termica quasi nulla.",
+   "Non è amorfa come il vetro comune, non è metallo e non è porosa.",
+   "La risposta è: coefficiente di dilatazione termica quasi nullo."
+  ],
+  "concetto": "vetroceramiche"
+ },
+ {
+  "id": "SMT-091",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "superiori",
+  "domanda": "Che cos'è un materiale composito?",
+  "opzioni": {
+   "A": "Una lega metallica omogenea",
+   "B": "Un polimero formato da un solo monomero",
+   "C": "Un materiale formato da due o più fasi distinte, una matrice e un rinforzo, con proprietà migliori dei singoli componenti",
+   "D": "Un ceramico perfettamente cristallino",
+   "E": "Qualsiasi materiale che contiene impurezze"
+  },
+  "giusta": "C",
+  "perche": "In un composito i costituenti restano distinti e riconoscibili: la matrice tiene insieme e protegge il rinforzo, il rinforzo (fibre o particelle) porta la maggior parte del carico. Lo scopo è ottenere combinazioni di proprietà impossibili con un materiale solo. La trappola è chiamare composito una lega: nelle leghe gli elementi formano soluzioni solide o fasi a scala atomica, non componenti macroscopici distinti.",
+  "semplice": "I mattoni di fango e paglia degli antichi erano già compositi: il fango dà forma, la paglia impedisce che si crepi. Oggi le canne da pesca in fibra di carbonio seguono lo stesso principio.",
+  "passaggi": [
+   "Un composito è formato da costituenti che restano distinti.",
+   "La matrice tiene insieme e protegge; il rinforzo porta il carico.",
+   "L'insieme ha proprietà migliori dei singoli componenti.",
+   "Una lega è omogenea (soluzione solida), non un composito; le impurezze non bastano.",
+   "La risposta è: due o più fasi distinte, matrice e rinforzo."
+  ],
+  "concetto": "definizione di composito"
+ },
+ {
+  "id": "SMT-092",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "test",
+  "domanda": "Un composito unidirezionale ha il 60% in volume di fibre di carbonio (E_f = 230 GPa) in resina epossidica (E_m = 3,5 GPa). Quanto vale il modulo nella direzione delle fibre secondo la regola delle miscele?",
+  "opzioni": {
+   "A": "circa 139 GPa",
+   "B": "circa 8,6 GPa",
+   "C": "circa 233 GPa",
+   "D": "circa 93 GPa",
+   "E": "circa 117 GPa"
+  },
+  "giusta": "A",
+  "perche": "Caricando nella direzione delle fibre le due fasi si deformano insieme (isodeformazione) e il modulo è la media pesata: E_c = V_f·E_f + V_m·E_m = 0,6·230 + 0,4·3,5 ≈ 139 GPa. Il valore 8,6 GPa è invece il modulo trasversale (isosforzo), la trappola più frequente. Si nota che la matrice contribuisce pochissimo alla rigidezza longitudinale.",
+  "semplice": "Se tiri insieme un fascio di corde rigide e uno di elastici incollati, si allungano della stessa quantità: la rigidezza totale è una media che dipende da quanta parte del fascio è fatta di corde.",
+  "passaggi": [
+   "E_c = V_f·E_f + V_m·E_m",
+   "E_c = 0,6 · 230 + 0,4 · 3,5 = 138 + 1,4",
+   "E_c ≈ 139 GPa"
+  ],
+  "concetto": "regola delle miscele"
+ },
+ {
+  "id": "SMT-093",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "università",
+  "domanda": "Per lo stesso composito (V_f = 0,6; E_f = 230 GPa; E_m = 3,5 GPa) quanto vale il modulo in direzione perpendicolare alle fibre, secondo il modello a isosforzo?",
+  "opzioni": {
+   "A": "circa 139 GPa",
+   "B": "circa 117 GPa",
+   "C": "circa 3,5 GPa",
+   "D": "circa 46 GPa",
+   "E": "circa 8,6 GPa"
+  },
+  "giusta": "E",
+  "perche": "Caricando perpendicolarmente alle fibre le fasi sono «in serie» e sopportano lo stesso sforzo: 1/E_c = V_f/E_f + V_m/E_m = 0,6/230 + 0,4/3,5 ≈ 0,1169 GPa⁻¹, quindi E_c ≈ 8,6 GPa. Il risultato è dominato dalla matrice, poco rigida. È il motivo per cui i laminati alternano strati orientati in direzioni diverse. La trappola è usare la media pesata semplice anche in questa direzione.",
+  "semplice": "Un pacco di bastoncini incollati con la colla è rigido se lo tiri lungo i bastoncini, ma se lo tiri di traverso cede la colla. La resistenza trasversale dipende soprattutto dalla matrice.",
+  "passaggi": [
+   "1/E_c = V_f/E_f + V_m/E_m",
+   "= 0,6/230 + 0,4/3,5 ≈ 0,00261 + 0,11429 = 0,11690 GPa⁻¹",
+   "E_c ≈ 1/0,11690 ≈ 8,6 GPa"
+  ],
+  "concetto": "modello a isosforzo"
+ },
+ {
+  "id": "SMT-094",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "superiori",
+  "domanda": "Un composito contiene il 50% in volume di fibre di vetro (densità 2,54 g/cm³) e il 50% di resina (densità 1,20 g/cm³). Qual è la sua densità?",
+  "opzioni": {
+   "A": "3,74 g/cm³",
+   "B": "1,63 g/cm³",
+   "C": "1,87 g/cm³",
+   "D": "2,54 g/cm³",
+   "E": "0,94 g/cm³"
+  },
+  "giusta": "C",
+  "perche": "La densità di un composito segue sempre la regola delle miscele in volume: ρ_c = V_f·ρ_f + V_m·ρ_m = 0,5·2,54 + 0,5·1,20 = 1,87 g/cm³. Il valore 3,74 è la somma delle due densità senza pesarle. Il valore 1,63 si ottiene usando la media armonica, che non si applica alla densità quando si conoscono le frazioni in volume.",
+  "semplice": "Se riempi un barattolo per metà con sabbia e per metà con acqua, la densità del contenuto è a metà strada tra quella della sabbia e quella dell'acqua.",
+  "passaggi": [
+   "ρ_c = V_f·ρ_f + V_m·ρ_m",
+   "ρ_c = 0,5 · 2,54 + 0,5 · 1,20",
+   "ρ_c = 1,27 + 0,60 = 1,87 g/cm³"
+  ],
+  "concetto": "densità del composito"
+ },
+ {
+  "id": "SMT-095",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "università",
+  "domanda": "In un composito unidirezionale con V_f = 0,4, fibre di vetro (E_f = 72 GPa) e matrice con E_m = 3 GPa, quale frazione del carico longitudinale è sopportata dalle fibre?",
+  "opzioni": {
+   "A": "circa 40%",
+   "B": "circa 94%",
+   "C": "circa 60%",
+   "D": "circa 6%",
+   "E": "circa 76%"
+  },
+  "giusta": "B",
+  "perche": "In isodeformazione F_f/F_m = (E_f·V_f)/(E_m·V_m) = (72·0,4)/(3·0,6) = 16: le fibre portano 16 volte il carico della matrice, cioè 16/17 ≈ 94% del totale. Anche se occupano solo il 40% del volume, sono molto più rigide e quindi si «prendono» quasi tutto il carico. La trappola è pensare che la frazione di carico coincida con quella di volume.",
+  "semplice": "In una squadra che trascina una corda, chi è più forte tira di più anche se è in minoranza. Nel composito le fibre rigide fanno quasi tutto il lavoro.",
+  "passaggi": [
+   "F_f/F_m = (E_f·V_f) / (E_m·V_m) = (72 · 0,4) / (3 · 0,6) = 28,8 / 1,8 = 16",
+   "Frazione sulle fibre = 16 / (16 + 1)",
+   "≈ 0,94, cioè 94%"
+  ],
+  "concetto": "ripartizione del carico"
+ },
+ {
+  "id": "SMT-096",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "superiori",
+  "domanda": "Quale tipo di fibra offre in genere la rigidezza specifica più alta nei compositi strutturali?",
+  "opzioni": {
+   "A": "Fibra di vetro E",
+   "B": "Fibra di carbonio",
+   "C": "Fibra di cotone",
+   "D": "Fibra di nylon",
+   "E": "Fibra di lana"
+  },
+  "giusta": "B",
+  "perche": "Le fibre di carbonio combinano un modulo elastico molto alto (da circa 230 fino a oltre 500 GPa) con una densità di circa 1,8 g/cm³: il rapporto E/ρ è il più alto tra le fibre comuni. Le fibre di vetro costano meno ma hanno modulo di circa 72 GPa e densità più alta. Le aramidi sono eccellenti per la resistenza agli urti più che per la rigidezza. La trappola è scegliere il vetro perché è la fibra più diffusa.",
+  "semplice": "I telai delle bici da corsa di alta gamma e le ali dei moderni aerei di linea sono in fibra di carbonio: rigidi come l'acciaio ma molto più leggeri.",
+  "passaggi": [
+   "Rigidezza specifica significa rapporto tra modulo e densità, E/ρ.",
+   "Le fibre di carbonio hanno E da circa 230 a oltre 500 GPa con densità circa 1,8 g/cm³.",
+   "Le fibre di vetro hanno E circa 72 GPa e densità più alta: rapporto molto minore.",
+   "Cotone, nylon e lana sono molto meno rigidi.",
+   "La risposta è la fibra di carbonio."
+  ],
+  "concetto": "fibre di rinforzo"
+ },
+ {
+  "id": "SMT-097",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "superiori",
+  "domanda": "Nel calcestruzzo armato, qual è il ruolo delle barre d'acciaio?",
+  "opzioni": {
+   "A": "Sopportare gli sforzi di compressione, che il calcestruzzo non regge",
+   "B": "Sopportare gli sforzi di trazione, che il calcestruzzo regge molto male",
+   "C": "Rendere il calcestruzzo impermeabile",
+   "D": "Ridurre il peso della struttura",
+   "E": "Far indurire più rapidamente il cemento"
+  },
+  "giusta": "B",
+  "perche": "Il calcestruzzo resiste bene a compressione ma pochissimo a trazione, circa un decimo. Le barre d'acciaio, posizionate dove la struttura è tesa (ad esempio nella parte bassa di una trave), assorbono la trazione. Funziona anche perché acciaio e calcestruzzo hanno coefficienti di dilatazione termica simili e l'ambiente alcalino protegge l'acciaio. La trappola è assegnare all'acciaio il compito della compressione.",
+  "semplice": "Una trave caricata al centro si incurva: la parte di sopra si accorcia, quella di sotto si allunga. Il ferro va messo sotto, dove il calcestruzzo da solo si creperebbe.",
+  "passaggi": [
+   "Il calcestruzzo resiste bene a compressione ma poco a trazione, circa un decimo.",
+   "Serve quindi un materiale che porti la trazione.",
+   "Le barre d'acciaio vanno messe nelle zone tese della struttura.",
+   "Non servono per la compressione, il peso o la presa.",
+   "La risposta è: sopportare gli sforzi di trazione."
+  ],
+  "concetto": "calcestruzzo armato"
+ },
+ {
+  "id": "SMT-098",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "test",
+  "domanda": "Come si classificano i compositi in base alla matrice?",
+  "opzioni": {
+   "A": "A matrice liquida, solida o gassosa",
+   "B": "A matrice ferrosa o non ferrosa soltanto",
+   "C": "A matrice cristallina o amorfa soltanto",
+   "D": "A matrice polimerica, metallica o ceramica",
+   "E": "A matrice organica o vegetale"
+  },
+  "giusta": "D",
+  "perche": "Si distinguono PMC (matrice polimerica, come le resine epossidiche con fibre di carbonio), MMC (matrice metallica, ad esempio alluminio rinforzato con particelle di SiC) e CMC (matrice ceramica, ad esempio carburo di silicio con fibre di SiC per i freni ad alte prestazioni). I PMC sono i più diffusi. La trappola è classificarli in base al rinforzo invece che alla matrice.",
+  "semplice": "Lo scafo di una barca in vetroresina è un composito a matrice polimerica; i dischi dei freni carbo-ceramici delle auto sportive sono a matrice ceramica.",
+  "passaggi": [
+   "La classificazione richiesta è in base alla matrice.",
+   "Le matrici possono essere polimeriche (PMC), metalliche (MMC) o ceramiche (CMC).",
+   "Esempi: resina epossidica con carbonio, alluminio con SiC, SiC con fibre di SiC.",
+   "Le altre classificazioni non sono quelle usate per i compositi.",
+   "La risposta è: a matrice polimerica, metallica o ceramica."
+  ],
+  "concetto": "classificazione per matrice"
+ },
+ {
+  "id": "SMT-099",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "università",
+  "domanda": "Fibre di carbonio con resistenza σ_f = 3500 MPa e diametro d = 7 µm sono immerse in una matrice con resistenza dell'interfaccia τ_c = 50 MPa. Quanto vale la lunghezza critica l_c = σ_f·d/(2τ_c)?",
+  "opzioni": {
+   "A": "0,49 mm",
+   "B": "2,45 mm",
+   "C": "0,0245 mm",
+   "D": "24,5 mm",
+   "E": "0,245 mm"
+  },
+  "giusta": "E",
+  "perche": "l_c = 3500 · 7 µm / (2 · 50) = 245 µm = 0,245 mm. Fibre più corte di l_c non riescono a essere caricate fino alla loro resistenza, perché il trasferimento di carico dalla matrice avviene per taglio lungo l'interfaccia. Per un rinforzo efficace le fibre devono essere molto più lunghe, circa 15 volte l_c. Il valore 0,49 mm dimentica il fattore 2.",
+  "semplice": "Per tirare fuori un chiodo piantato poco ci vuole poco sforzo; se è piantato a fondo, si spezza prima di uscire. Una fibra lunga abbastanza «si fa carico» completamente prima di sfilarsi dalla matrice.",
+  "passaggi": [
+   "l_c = σ_f · d / (2τ_c)",
+   "l_c = 3500 · 7 µm / 100 = 245 µm",
+   "l_c = 0,245 mm"
+  ],
+  "concetto": "lunghezza critica delle fibre"
+ },
+ {
+  "id": "SMT-100",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "superiori",
+  "domanda": "Perché nei laminati in fibra si sovrappongono strati con orientazioni diverse (ad esempio 0°, 90°, ±45°)?",
+  "opzioni": {
+   "A": "Per rendere il materiale isolante",
+   "B": "Per aumentare la densità",
+   "C": "Perché un singolo strato unidirezionale è molto rigido lungo le fibre ma debole trasversalmente",
+   "D": "Per ridurre il costo della resina",
+   "E": "Perché le fibre non si possono produrre lunghe"
+  },
+  "giusta": "C",
+  "perche": "Un composito unidirezionale è fortemente anisotropo: le proprietà lungo le fibre possono essere decine di volte superiori a quelle trasversali. Sovrapponendo strati orientati in modo diverso si ottengono proprietà più equilibrate nelle direzioni in cui la struttura è caricata. Gli strati a ±45° servono soprattutto per i carichi di taglio e di torsione. La trappola è pensare che un composito sia uguale in tutte le direzioni.",
+  "semplice": "Il compensato si fa incollando fogli di legno con le venature incrociate: così non si spacca in nessuna direzione. I laminati in carbonio seguono la stessa idea.",
+  "passaggi": [
+   "Un singolo strato unidirezionale è molto rigido lungo le fibre e debole di traverso.",
+   "Una struttura reale è caricata in più direzioni.",
+   "Sovrapponendo strati a 0°, 90° e ±45° si ottengono proprietà equilibrate (±45° per taglio e torsione).",
+   "Isolamento, densità e costo non sono il motivo.",
+   "La risposta è: lo strato unidirezionale è rigido lungo le fibre ma debole trasversalmente."
+  ],
+  "concetto": "anisotropia e laminati"
+ },
+ {
+  "id": "SMT-101",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "superiori",
+  "domanda": "Quale materiale naturale è considerato un composito?",
+  "opzioni": {
+   "A": "Il quarzo",
+   "B": "L'oro nativo",
+   "C": "Il diamante",
+   "D": "Il sale da cucina",
+   "E": "Il legno, con fibre di cellulosa in una matrice di lignina"
+  },
+  "giusta": "E",
+  "perche": "Il legno è formato da microfibrille di cellulosa resistenti, immerse in una matrice di lignina ed emicellulose che le tiene unite. Proprio come un composito artificiale è molto più resistente lungo le fibre che di traverso. Anche le ossa sono compositi naturali, di collagene e cristalli di idrossiapatite. La trappola è pensare che i compositi siano solo materiali moderni e sintetici.",
+  "semplice": "Un ciocco di legna si spacca facilmente lungo la venatura, ma è difficile da rompere di traverso: è il comportamento tipico di un composito a fibre.",
+  "passaggi": [
+   "Un composito ha un rinforzo in una matrice.",
+   "Quarzo, oro, diamante e sale sono materiali omogenei.",
+   "Il legno ha fibre di cellulosa immerse in una matrice di lignina.",
+   "Come un composito artificiale, è più resistente lungo le fibre.",
+   "La risposta è il legno."
+  ],
+  "concetto": "compositi naturali"
+ },
+ {
+  "id": "SMT-102",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "test",
+  "domanda": "Perché i pannelli sandwich (due pelli sottili e rigide con un'anima leggera a nido d'ape) sono molto usati in aeronautica?",
+  "opzioni": {
+   "A": "Hanno un'elevata rigidezza a flessione con un peso molto basso",
+   "B": "Sono i più economici da produrre",
+   "C": "Conducono bene l'elettricità",
+   "D": "Non subiscono mai delaminazione",
+   "E": "Resistono meglio di tutti al fuoco"
+  },
+  "giusta": "A",
+  "perche": "Allontanare le pelli dall'asse neutro aumenta moltissimo il momento d'inerzia della sezione, e quindi la rigidezza a flessione, con poco materiale in più. L'anima leggera tiene distanziate le pelli e sopporta il taglio. È lo stesso principio della trave a doppia T. La trappola è pensare che la rigidezza dipenda solo dal materiale e non dalla forma.",
+  "semplice": "Un foglio di cartone ondulato è molto più rigido di due fogli di carta piatti dello stesso peso, perché l'ondulazione li tiene distanziati.",
+  "passaggi": [
+   "La rigidezza a flessione dipende dal momento d'inerzia della sezione.",
+   "Allontanare le pelli dall'asse neutro aumenta molto il momento d'inerzia.",
+   "L'anima a nido d'ape è leggera e tiene distanziate le pelli.",
+   "Così si ottiene alta rigidezza con poco peso, come nella trave a doppia T.",
+   "La risposta è: elevata rigidezza a flessione con peso molto basso."
+  ],
+  "concetto": "pannelli sandwich"
+ },
+ {
+  "id": "SMT-103",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "università",
+  "domanda": "Un composito in fibra di carbonio ha E = 140 GPa e densità 1,6 g/cm³; un acciaio ha E = 210 GPa e densità 7,85 g/cm³. Qual è circa il rapporto tra le rigidezze specifiche (E/ρ) del composito e dell'acciaio?",
+  "opzioni": {
+   "A": "circa 3,3",
+   "B": "circa 0,67",
+   "C": "circa 4,9",
+   "D": "circa 1,5",
+   "E": "circa 0,30"
+  },
+  "giusta": "A",
+  "perche": "E/ρ vale 140/1,6 = 87,5 per il composito e 210/7,85 ≈ 26,8 per l'acciaio (in GPa·cm³/g): il rapporto è circa 3,3. Anche se l'acciaio ha un modulo assoluto più alto, a parità di peso il composito è più di tre volte più rigido. Rispondere 0,67 significa confrontare solo i moduli, trascurando la densità: è la trappola principale.",
+  "semplice": "Per un'auto da corsa non conta solo quanto è rigido un pezzo, ma quanto è rigido per ogni chilo. Per questo i telai di Formula 1 sono in fibra di carbonio.",
+  "passaggi": [
+   "Composito: E/ρ = 140 / 1,6 = 87,5 GPa·cm³/g",
+   "Acciaio: E/ρ = 210 / 7,85 ≈ 26,8 GPa·cm³/g",
+   "Rapporto = 87,5 / 26,8 ≈ 3,3"
+  ],
+  "concetto": "rigidezza specifica"
+ },
+ {
+  "id": "SMT-104",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "università",
+  "domanda": "Perché le fibre di vetro vengono trattate con agenti di accoppiamento a base di silani prima di essere inglobate nella resina?",
+  "opzioni": {
+   "A": "Per colorare le fibre",
+   "B": "Per aumentare la densità del vetro",
+   "C": "Per migliorare l'adesione fibra-matrice e il trasferimento del carico all'interfaccia",
+   "D": "Per rendere le fibre conduttive",
+   "E": "Per abbassare il modulo di Young delle fibre"
+  },
+  "giusta": "C",
+  "perche": "Il silano ha un'estremità che si lega chimicamente alla superficie del vetro e un'altra compatibile con la resina: fa da «ponte» tra due materiali molto diversi. Un'interfaccia solida permette di trasferire il carico dalla matrice alle fibre e protegge il vetro dall'umidità. Con un'interfaccia debole le fibre si sfilano e il composito perde resistenza. La trappola è sottovalutare l'interfaccia, che spesso decide il comportamento del composito.",
+  "semplice": "Anche la colla migliore non tiene se le superfici sono unte. Il silano è come un primer che prepara la fibra ad attaccarsi bene alla resina.",
+  "passaggi": [
+   "In un composito il carico passa dalla matrice alle fibre attraverso l'interfaccia.",
+   "Vetro e resina sono materiali molto diversi e aderiscono male.",
+   "Il silano ha un'estremità che si lega al vetro e una compatibile con la resina.",
+   "Fa da ponte: migliora adesione e trasferimento del carico.",
+   "La risposta è: migliorare l'adesione fibra-matrice e il trasferimento del carico."
+  ],
+  "concetto": "interfaccia fibra-matrice"
+ },
+ {
+  "id": "SMT-105",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "test",
+  "domanda": "Qual è un meccanismo di danneggiamento tipico dei laminati compositi, spesso invisibile dall'esterno dopo un urto?",
+  "opzioni": {
+   "A": "La strizione",
+   "B": "La ricristallizzazione",
+   "C": "La martensite da deformazione",
+   "D": "La delaminazione, cioè il distacco tra strati adiacenti",
+   "E": "La corrosione intergranulare"
+  },
+  "giusta": "D",
+  "perche": "Tra uno strato e l'altro c'è solo matrice, e gli sforzi interlaminari dovuti a un urto possono separare gli strati. La superficie può sembrare intatta mentre all'interno il laminato ha perso gran parte della resistenza a compressione. Per questo nelle strutture in composito si fanno controlli a ultrasuoni. La strizione e la ricristallizzazione riguardano invece i metalli.",
+  "semplice": "Un quaderno con le pagine incollate può sembrare integro anche se all'interno alcune pagine si sono staccate. Nei compositi si parla di delaminazione.",
+  "passaggi": [
+   "Tra gli strati di un laminato c'è solo matrice, la parte debole.",
+   "Un urto genera sforzi tra gli strati che possono separarli.",
+   "Questo distacco tra strati si chiama delaminazione e spesso non si vede dall'esterno.",
+   "Strizione, ricristallizzazione, martensite e corrosione intergranulare riguardano i metalli.",
+   "La risposta è la delaminazione."
+  ],
+  "concetto": "delaminazione"
+ },
+ {
+  "id": "SMT-106",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "superiori",
+  "domanda": "Il «metallo duro» delle punte da trapano e degli inserti da tornio (carburo di tungsteno con cobalto) è un esempio di:",
+  "opzioni": {
+   "A": "polimero termoplastico",
+   "B": "vetro sodico-calcico",
+   "C": "composito a fibre lunghe di carbonio",
+   "D": "acciaio inossidabile austenitico",
+   "E": "composito particellare a matrice metallica"
+  },
+  "giusta": "E",
+  "perche": "Nel metallo duro, particelle durissime di WC (circa il 90%) sono tenute insieme da una piccola quantità di cobalto, metallo duttile che fa da legante. Le particelle danno la durezza necessaria a tagliare, il cobalto conferisce tenacità e impedisce che l'utensile si scheggi. Si produce per sinterizzazione di polveri. La trappola è chiamarlo «acciaio» per il suo aspetto metallico.",
+  "semplice": "È un po' come il calcestruzzo: sassi duri (il carburo) tenuti insieme da un legante (il cobalto). Il risultato taglia l'acciaio come burro.",
+  "passaggi": [
+   "Nel metallo duro ci sono particelle di carburo di tungsteno (circa 90%).",
+   "Sono tenute insieme da cobalto, un metallo che fa da matrice.",
+   "Rinforzo a particelle in matrice metallica: composito particellare a matrice metallica.",
+   "Non è un acciaio, un polimero, un vetro o un composito a fibre.",
+   "La risposta è: composito particellare a matrice metallica."
+  ],
+  "concetto": "compositi particellari"
+ },
+ {
+  "id": "SMT-107",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "test",
+  "domanda": "Quale processo si usa per produrre in continuo profili a sezione costante in composito, tirando le fibre impregnate attraverso uno stampo riscaldato?",
+  "opzioni": {
+   "A": "La pultrusione",
+   "B": "La laminazione a freddo",
+   "C": "La pressofusione",
+   "D": "Il soffiaggio",
+   "E": "La sinterizzazione"
+  },
+  "giusta": "A",
+  "perche": "Nella pultrusione le fibre passano in un bagno di resina e poi vengono tirate attraverso una filiera calda che dà la forma e fa indurire la resina, producendo profili continui come tondi, tubi e travi. La laminazione e la pressofusione sono processi tipici dei metalli, il soffiaggio dei termoplastici cavi. La trappola è confonderla con l'estrusione, in cui il materiale viene spinto e non tirato.",
+  "semplice": "Le aste delle tende da campeggio e molti grigliati industriali in vetroresina sono prodotti per pultrusione, come un lungo spaghetto rigido tagliato a misura.",
+  "passaggi": [
+   "Il processo descritto tira le fibre impregnate attraverso uno stampo caldo.",
+   "«Tirare» in inglese è to pull: il processo è la pultrusione.",
+   "Produce profili continui a sezione costante.",
+   "Laminazione e pressofusione sono dei metalli, il soffiaggio dei corpi cavi termoplastici.",
+   "La risposta è la pultrusione."
+  ],
+  "concetto": "pultrusione"
+ },
+ {
+  "id": "SMT-108",
+  "materia": "Scienza dei materiali",
+  "argomento": "Materiali compositi",
+  "livello": "università",
+  "domanda": "Un composito unidirezionale ha V_f = 0,6, fibre con resistenza 3000 MPa e una matrice che, alla deformazione di rottura delle fibre, porta uno sforzo di 50 MPa. Qual è la resistenza longitudinale stimata?",
+  "opzioni": {
+   "A": "1800 MPa",
+   "B": "3050 MPa",
+   "C": "1230 MPa",
+   "D": "1820 MPa",
+   "E": "1525 MPa"
+  },
+  "giusta": "D",
+  "perche": "Se le fibre si rompono prima della matrice, σ_c = σ_f·V_f + σ'_m·(1 − V_f) = 3000·0,6 + 50·0,4 = 1820 MPa. Lo sforzo da usare per la matrice è quello presente alla deformazione di rottura delle fibre, non la sua resistenza massima. Il valore 1800 MPa trascura il contributo della matrice, mentre 1230 MPa scambia V_f e V_m.",
+  "semplice": "È ancora una media pesata: ogni componente contribuisce alla resistenza in proporzione a quanto spazio occupa e a quanto è carico nel momento della rottura.",
+  "passaggi": [
+   "σ_c = σ_f·V_f + σ'_m·(1 − V_f)",
+   "σ_c = 3000 · 0,6 + 50 · 0,4 = 1800 + 20",
+   "σ_c = 1820 MPa"
+  ],
+  "concetto": "resistenza longitudinale"
+ },
+ {
+  "id": "SMT-109",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "superiori",
+  "domanda": "In una cella di corrosione, che cosa avviene all'anodo?",
+  "opzioni": {
+   "A": "La riduzione dell'ossigeno",
+   "B": "Lo sviluppo di idrogeno per riduzione",
+   "C": "Il deposito di metallo dalla soluzione",
+   "D": "Nessuna reazione: l'anodo è sempre protetto",
+   "E": "L'ossidazione del metallo, che passa in soluzione come ione cedendo elettroni"
+  },
+  "giusta": "E",
+  "perche": "La corrosione dei metalli è un processo elettrochimico: all'anodo il metallo si ossida (ad esempio Fe → Fe²⁺ + 2e⁻) e si consuma, mentre al catodo avviene una riduzione che consuma quegli elettroni, come O₂ + 2H₂O + 4e⁻ → 4OH⁻. La trappola è collegare l'anodo al segno positivo come nelle pile e confondersi: conviene ricordare «anodo = ossidazione», entrambe iniziano per vocale.",
+  "semplice": "Il punto di una ringhiera che arrugginisce è l'anodo: lì il ferro si «scioglie» poco a poco. Gli elettroni liberati vengono usati altrove dall'ossigeno dell'aria umida.",
+  "passaggi": [
+   "Ricorda la regola: all'anodo avviene sempre l'ossidazione.",
+   "Nella corrosione il metallo si ossida e passa in soluzione come ione.",
+   "Esempio: Fe → Fe²⁺ + 2e⁻.",
+   "Riduzione dell'ossigeno, idrogeno e deposito di metallo avvengono al catodo.",
+   "La risposta è: l'ossidazione del metallo che cede elettroni."
+  ],
+  "concetto": "anodo e catodo"
+ },
+ {
+  "id": "SMT-110",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "superiori",
+  "domanda": "Che cosa serve perché il ferro formi la ruggine a temperatura ambiente?",
+  "opzioni": {
+   "A": "Solo l'ossigeno secco",
+   "B": "Solo la luce del sole",
+   "C": "Solo l'azoto dell'aria",
+   "D": "Una temperatura superiore a 500 °C",
+   "E": "La presenza contemporanea di acqua e ossigeno"
+  },
+  "giusta": "E",
+  "perche": "La ruggine è un insieme di ossidi e idrossidi di ferro idrati che si forma con un meccanismo elettrochimico: l'acqua fa da elettrolita, l'ossigeno è il reagente al catodo. In aria perfettamente secca, o in acqua senza ossigeno disciolto, il ferro si corrode pochissimo. I sali, come quello sparso sulle strade d'inverno, accelerano il processo perché aumentano la conducibilità dell'acqua. La trappola è pensare che basti l'aria.",
+  "semplice": "Un chiodo in un barattolo chiuso con aria secca resta lucido; uno in un bicchiere d'acqua lasciato aperto arrugginisce in pochi giorni.",
+  "passaggi": [
+   "La ruggine si forma con un meccanismo elettrochimico.",
+   "Serve un elettrolita: l'acqua.",
+   "Serve un reagente al catodo: l'ossigeno.",
+   "In aria secca o in acqua senza ossigeno il ferro si corrode pochissimo; luce e azoto non c'entrano.",
+   "La risposta è: presenza contemporanea di acqua e ossigeno."
+  ],
+  "concetto": "formazione della ruggine"
+ },
+ {
+  "id": "SMT-111",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "superiori",
+  "domanda": "Perché la zincatura protegge l'acciaio anche quando il rivestimento è graffiato?",
+  "opzioni": {
+   "A": "Lo zinco è più nobile del ferro e lo fa da catodo",
+   "B": "Lo zinco rende il ferro magnetico",
+   "C": "Lo zinco impedisce il passaggio della luce",
+   "D": "Lo zinco è più attivo del ferro e si corrode al suo posto come anodo sacrificale",
+   "E": "Lo zinco trasforma il ferro in acciaio inox"
+  },
+  "giusta": "D",
+  "perche": "Nella serie galvanica lo zinco è più attivo del ferro: quando i due sono a contatto in presenza di umidità, lo zinco diventa anodo e si ossida, mentre il ferro esposto dal graffio fa da catodo ed è protetto. Con un rivestimento più nobile, come lo stagno della latta, succede il contrario: se si graffia, il ferro si corrode ancora più in fretta. La trappola è pensare che ogni rivestimento metallico protegga allo stesso modo.",
+  "semplice": "I guard-rail e i pali della luce sono zincati: anche se graffiati non arrugginiscono subito, perché lo zinco «si sacrifica» per proteggere l'acciaio.",
+  "passaggi": [
+   "Confronta zinco e ferro nella serie galvanica: lo zinco è più attivo.",
+   "A contatto con umidità il metallo più attivo diventa anodo e si ossida.",
+   "Lo zinco si corrode al posto del ferro, che fa da catodo ed è protetto.",
+   "Se lo zinco fosse più nobile accadrebbe il contrario, come con la latta.",
+   "La risposta è: lo zinco si corrode al suo posto come anodo sacrificale."
+  ],
+  "concetto": "zincatura e protezione galvanica"
+ },
+ {
+  "id": "SMT-112",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "test",
+  "domanda": "Qual è la forza elettromotrice standard della pila Zn | Zn²⁺ ‖ Cu²⁺ | Cu? (E°(Zn²⁺/Zn) = −0,76 V; E°(Cu²⁺/Cu) = +0,34 V)",
+  "opzioni": {
+   "A": "0,42 V",
+   "B": "1,10 V",
+   "C": "−1,10 V",
+   "D": "0,26 V",
+   "E": "1,52 V"
+  },
+  "giusta": "B",
+  "perche": "La forza elettromotrice è E°_catodo − E°_anodo = 0,34 − (−0,76) = 1,10 V; il rame, più nobile, è il catodo e lo zinco, più attivo, l'anodo e si corrode. Il valore 0,42 V nasce dal sommare i potenziali con il loro segno, invece di sottrarli. Un valore negativo indica di aver invertito anodo e catodo.",
+  "semplice": "È la storica pila Daniell. Più due metalli sono lontani nella scala dei potenziali, più è grande la tensione e più velocemente si corrode quello meno nobile se sono a contatto.",
+  "passaggi": [
+   "Catodo: Cu (E° più alto); anodo: Zn",
+   "E° = E°_cat − E°_an = 0,34 − (−0,76)",
+   "E° = 1,10 V"
+  ],
+  "concetto": "forza elettromotrice"
+ },
+ {
+  "id": "SMT-113",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "superiori",
+  "domanda": "Quale metallo si usa comunemente come anodo sacrificale per proteggere scafi o tubazioni interrate in acciaio?",
+  "opzioni": {
+   "A": "Il rame",
+   "B": "L'oro",
+   "C": "Il magnesio",
+   "D": "L'argento",
+   "E": "Il platino"
+  },
+  "giusta": "C",
+  "perche": "Un anodo sacrificale deve essere più attivo dell'acciaio nella serie galvanica: magnesio, zinco e alluminio sono le scelte tipiche. Collegato elettricamente all'acciaio, l'anodo si consuma e va sostituito periodicamente, mentre la struttura resta catodica e protetta. Rame, argento, oro e platino sono più nobili del ferro e ne accelererebbero la corrosione. La trappola è scegliere un metallo «resistente» invece di uno più attivo.",
+  "semplice": "Sotto le barche e dentro gli scaldabagni ci sono blocchetti di metallo che, col tempo, si consumano. È voluto: si corrodono al posto dell'acciaio.",
+  "passaggi": [
+   "Un anodo sacrificale deve essere più attivo dell'acciaio.",
+   "Rame, oro, argento e platino sono più nobili: accelererebbero la corrosione.",
+   "Il magnesio è molto attivo, come zinco e alluminio.",
+   "La risposta è il magnesio."
+  ],
+  "concetto": "anodi sacrificali"
+ },
+ {
+  "id": "SMT-114",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "superiori",
+  "domanda": "Perché l'alluminio, pur essendo un metallo molto reattivo, resiste bene alla corrosione atmosferica?",
+  "opzioni": {
+   "A": "Non reagisce con l'ossigeno",
+   "B": "È un metallo nobile come l'oro",
+   "C": "Contiene sempre il 18% di cromo",
+   "D": "Si ricopre spontaneamente di uno strato sottile, compatto e aderente di ossido che lo protegge",
+   "E": "Assorbe l'umidità e la trasforma in idrogeno"
+  },
+  "giusta": "D",
+  "perche": "L'alluminio reagisce subito con l'ossigeno, ma l'Al₂O₃ che si forma è compatto e aderente e blocca l'ulteriore reazione: è la passivazione. Con l'anodizzazione questo strato viene ispessito artificialmente e può essere colorato. In ambienti molto acidi, molto basici o ricchi di cloruri lo strato può essere attaccato. La trappola è dedurre dalla buona resistenza che l'alluminio sia poco reattivo.",
+  "semplice": "Le finestre in alluminio durano decenni all'aperto senza vernice. Un velo di ossido invisibile, spesso pochi nanometri, fa da scudo.",
+  "passaggi": [
+   "L'alluminio è reattivo: reagisce subito con l'ossigeno.",
+   "L'ossido Al₂O₃ che si forma è compatto e aderente.",
+   "Questo strato blocca l'ulteriore reazione: è la passivazione.",
+   "L'alluminio non è nobile e non contiene cromo.",
+   "La risposta è: si ricopre di uno strato sottile e aderente di ossido protettivo."
+  ],
+  "concetto": "passivazione"
+ },
+ {
+  "id": "SMT-115",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "test",
+  "domanda": "Quale forma di corrosione colpisce tipicamente gli acciai inossidabili in acqua di mare, con piccoli fori profondi?",
+  "opzioni": {
+   "A": "La corrosione per vaiolatura (pitting) causata dai cloruri",
+   "B": "La corrosione uniforme generalizzata",
+   "C": "La corrosione per erosione da sabbia",
+   "D": "La dezincificazione",
+   "E": "L'ossidazione a secco ad alta temperatura"
+  },
+  "giusta": "A",
+  "perche": "Gli ioni cloruro rompono localmente il film passivo dell'inox; nel piccolo foro che si forma l'ambiente diventa acido e ricco di cloruri, e la corrosione prosegue in profondità mentre la superficie intorno resta passiva. È insidiosa perché la perdita di massa è piccola ma i fori possono perforare la parete. Gli inox con molibdeno, come l'AISI 316, resistono meglio. La trappola è aspettarsi un attacco uniforme.",
+  "semplice": "Un lavello in acciaio può mostrare puntini scuri dove è rimasta a lungo acqua con candeggina o sale. Sono piccoli crateri di pitting.",
+  "passaggi": [
+   "Indizi: acciaio inossidabile, acqua di mare, piccoli fori profondi.",
+   "L'acqua di mare contiene cloruri.",
+   "I cloruri rompono localmente il film passivo e scavano fori: è la vaiolatura (pitting).",
+   "Corrosione uniforme ed erosione non danno fori isolati; la dezincificazione riguarda gli ottoni.",
+   "La risposta è la corrosione per vaiolatura causata dai cloruri."
+  ],
+  "concetto": "vaiolatura"
+ },
+ {
+  "id": "SMT-116",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "università",
+  "domanda": "In una fessura stretta (ad esempio sotto una guarnizione), quale zona si comporta da anodo nella corrosione per aerazione differenziale?",
+  "opzioni": {
+   "A": "La zona esterna, ricca di ossigeno",
+   "B": "La zona interna, povera di ossigeno",
+   "C": "Entrambe le zone allo stesso modo",
+   "D": "Nessuna delle due: in una fessura non c'è corrosione",
+   "E": "La guarnizione stessa"
+  },
+  "giusta": "B",
+  "perche": "Dove c'è più ossigeno avviene preferenzialmente la riduzione catodica; la zona interna, con poco ossigeno, diventa anodica e si corrode. All'interno, inoltre, l'idrolisi degli ioni metallici abbassa il pH e richiama cloruri, aggravando l'attacco. La trappola è pensare che la zona più esposta all'aria si corroda di più: in questo meccanismo è il contrario.",
+  "semplice": "Sotto una rondella o tra due lamiere sovrapposte l'acciaio può corrodersi molto più che sulla superficie esposta. Proprio dove non arriva aria si forma l'anodo.",
+  "passaggi": [
+   "Nella aerazione differenziale conta dove c'è più ossigeno.",
+   "Dove c'è più ossigeno avviene la riduzione: quella zona è il catodo.",
+   "Dentro la fessura c'è poco ossigeno: quella zona diventa anodo.",
+   "L'anodo è la zona che si corrode.",
+   "La risposta è la zona interna, povera di ossigeno."
+  ],
+  "concetto": "corrosione interstiziale"
+ },
+ {
+  "id": "SMT-117",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "università",
+  "domanda": "Quale accoppiamento galvanico è il più pericoloso per il metallo meno nobile?",
+  "opzioni": {
+   "A": "Un piccolo anodo collegato a un grande catodo",
+   "B": "Un grande anodo collegato a un piccolo catodo",
+   "C": "Due metalli identici con la stessa area",
+   "D": "Un anodo e un catodo isolati elettricamente",
+   "E": "Un grande anodo senza elettrolita"
+  },
+  "giusta": "A",
+  "perche": "La corrente catodica totale dipende dall'area del catodo, e deve essere bilanciata dalla corrente anodica: se l'anodo è piccolo, la densità di corrente anodica è altissima e il metallo si consuma rapidamente. Per questo i rivetti d'acciaio su una lamiera di rame si corrodono in fretta, mentre rivetti di rame su lamiera d'acciaio danno pochi problemi. La trappola è pensare che conti solo la differenza di potenziale.",
+  "semplice": "Se una grande superficie «chiama» elettroni e solo un piccolo punto può fornirli, quel punto si consuma molto in fretta. È come una piccola fontana che deve riempire una piscina.",
+  "passaggi": [
+   "La corrente anodica deve bilanciare quella catodica, che cresce con l'area del catodo.",
+   "Se l'anodo è piccolo, la stessa corrente si concentra su poca superficie.",
+   "La densità di corrente anodica diventa altissima e il metallo si consuma in fretta.",
+   "Esempio: rivetti d'acciaio su lamiera di rame.",
+   "La risposta è: un piccolo anodo collegato a un grande catodo."
+  ],
+  "concetto": "effetto area"
+ },
+ {
+  "id": "SMT-118",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "test",
+  "domanda": "Una corrente di corrosione di 2 A agisce per 24 ore su un pezzo di ferro (Fe → Fe²⁺ + 2e⁻; M = 55,85 g/mol; F = 96 485 C/mol). Quanto ferro si consuma?",
+  "opzioni": {
+   "A": "circa 100 g",
+   "B": "circa 25 g",
+   "C": "circa 50 g",
+   "D": "circa 2,1 g",
+   "E": "circa 0,58 g"
+  },
+  "giusta": "C",
+  "perche": "Dalla legge di Faraday m = I·t·M/(n·F) = 2 · 86 400 · 55,85 / (2 · 96 485) ≈ 50 g. Il tempo va in secondi: 24 h = 86 400 s. Il valore 100 g dimentica che per ogni atomo di ferro servono 2 elettroni (n = 2); lasciare il tempo in ore invece che in secondi porta invece a un valore minuscolo. È un buon esempio di quanto materiale possa consumare anche una corrente modesta.",
+  "semplice": "Ogni elettrone che passa nel circuito di corrosione corrisponde a un pezzetto di metallo che se ne va. Contando la carica elettrica totale si ricava quanta massa si è persa.",
+  "passaggi": [
+   "t = 24 h = 86 400 s; carica Q = I·t = 172 800 C",
+   "moli di elettroni = 172 800 / 96 485 ≈ 1,79 mol; moli di Fe = 1,79 / 2 ≈ 0,895 mol",
+   "m = 0,895 · 55,85 ≈ 50 g"
+  ],
+  "concetto": "legge di Faraday"
+ },
+ {
+  "id": "SMT-119",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "università",
+  "domanda": "Una lamiera d'acciaio (densità 7,87 g/cm³) con area esposta di 100 cm² perde 10 g in un anno per corrosione uniforme. Quanto vale la velocità di penetrazione?",
+  "opzioni": {
+   "A": "circa 1,3 mm/anno",
+   "B": "circa 0,013 mm/anno",
+   "C": "circa 12,7 mm/anno",
+   "D": "circa 0,13 mm/anno",
+   "E": "circa 0,79 mm/anno"
+  },
+  "giusta": "D",
+  "perche": "Il volume perso è 10 / 7,87 ≈ 1,27 cm³; diviso l'area dà uno spessore di 0,0127 cm, cioè circa 0,13 mm in un anno. Gli errori tipici sono le conversioni tra centimetri e millimetri, che spostano la virgola di una posizione. Un valore attorno a 0,1 mm/anno è considerato accettabile per molte strutture, ma va tenuto in conto nel sovraspessore di progetto.",
+  "semplice": "Se conosci quanto materiale è sparito e su quale superficie, puoi immaginare di «spalmarlo»: ottieni lo spessore perso. Qui è poco più di un decimo di millimetro all'anno.",
+  "passaggi": [
+   "Volume perso: V = m/ρ = 10 / 7,87 ≈ 1,27 cm³",
+   "Spessore: V/A = 1,27 / 100 = 0,0127 cm",
+   "= 0,127 mm/anno ≈ 0,13 mm/anno"
+  ],
+  "concetto": "velocità di corrosione"
+ },
+ {
+  "id": "SMT-120",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "università",
+  "domanda": "Qual è il potenziale di un elettrodo di rame immerso in una soluzione con [Cu²⁺] = 0,010 M a 25 °C? (E° = +0,34 V)",
+  "opzioni": {
+   "A": "circa 0,40 V",
+   "B": "circa 0,28 V",
+   "C": "circa 0,22 V",
+   "D": "circa 0,34 V",
+   "E": "circa 0,46 V"
+  },
+  "giusta": "B",
+  "perche": "Con l'equazione di Nernst E = E° + (0,0592/n)·log[Cu²⁺] = 0,34 + 0,0296·(−2) ≈ 0,28 V. Diminuendo la concentrazione degli ioni il potenziale scende. Il valore 0,22 V si ottiene dimenticando n = 2, mentre 0,40 V invertendo il segno del logaritmo.",
+  "semplice": "Il potenziale di un metallo non è fisso: dipende da quanti suoi ioni ci sono in soluzione. Meno ioni ci sono, più il metallo tende a sciogliersi.",
+  "passaggi": [
+   "E = E° + (0,0592/n)·log[Cu²⁺]",
+   "log(0,010) = −2; 0,0592/2 = 0,0296",
+   "E = 0,34 − 0,0592 ≈ 0,28 V"
+  ],
+  "concetto": "equazione di Nernst"
+ },
+ {
+  "id": "SMT-121",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "università",
+  "domanda": "Secondo il rapporto di Pilling-Bedworth (volume dell'ossido / volume del metallo consumato), quale ossido è in genere protettivo?",
+  "opzioni": {
+   "A": "Uno con rapporto molto minore di 1, come quello del magnesio (≈ 0,8)",
+   "B": "Uno con rapporto molto maggiore di 2, perché più spesso",
+   "C": "Qualsiasi ossido, indipendentemente dal rapporto",
+   "D": "Solo gli ossidi con rapporto esattamente uguale a 0",
+   "E": "Uno con rapporto compreso circa tra 1 e 2, come quello dell'alluminio (≈ 1,3)"
+  },
+  "giusta": "E",
+  "perche": "Se il rapporto è minore di 1 l'ossido non copre tutta la superficie ed è poroso; se è molto maggiore di 2 si generano forti sforzi di compressione e lo strato tende a sfaldarsi. Tra 1 e 2 l'ossido è continuo e aderente e rallenta l'ossidazione. È solo una regola indicativa: contano anche la diffusività degli ioni nell'ossido e la sua adesione. La trappola è pensare che un ossido «più voluminoso» protegga sempre di più.",
+  "semplice": "Un ossido troppo piccolo è come un lenzuolo corto che lascia scoperti i piedi; uno troppo grande si raggrinzisce e si stacca. Quello giusto copre e aderisce.",
+  "passaggi": [
+   "Il rapporto di Pilling-Bedworth confronta il volume dell'ossido con quello del metallo consumato.",
+   "Se è minore di 1 l'ossido non copre tutta la superficie: poroso.",
+   "Se è molto maggiore di 2 si crea troppa compressione e lo strato si sfalda.",
+   "Tra 1 e 2 l'ossido è continuo e aderente, come per l'alluminio (≈ 1,3).",
+   "La risposta è: rapporto compreso circa tra 1 e 2."
+  ],
+  "concetto": "rapporto di Pilling-Bedworth"
+ },
+ {
+  "id": "SMT-122",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "test",
+  "domanda": "Che cos'è la tensocorrosione (stress corrosion cracking)?",
+  "opzioni": {
+   "A": "La corrosione uniforme di un pezzo scarico",
+   "B": "L'usura dovuta allo sfregamento di due superfici",
+   "C": "La formazione di cricche per l'azione combinata di uno sforzo di trazione e di un ambiente corrosivo specifico",
+   "D": "La deformazione lenta ad alta temperatura",
+   "E": "La rottura per urto a bassa temperatura"
+  },
+  "giusta": "C",
+  "perche": "Nella tensocorrosione né lo sforzo da solo né l'ambiente da solo basterebbero a rompere il pezzo: insieme producono cricche fragili, spesso ramificate, con sforzi anche inferiori allo snervamento. Ogni lega è sensibile a ambienti specifici, ad esempio gli inox austenitici ai cloruri a caldo e gli ottoni all'ammoniaca. Gli sforzi possono anche essere residui, dovuti a saldature o lavorazioni a freddo. La trappola è confonderla con il creep.",
+  "semplice": "Un tubo d'acciaio inox che lavora in pressione con acqua calda e salata può creparsi all'improvviso, senza essersi assottigliato. È la combinazione di carico e ambiente a renderlo fragile.",
+  "passaggi": [
+   "Il nome unisce tensione e corrosione.",
+   "Servono insieme uno sforzo di trazione e un ambiente corrosivo specifico.",
+   "Insieme producono cricche, anche sotto lo snervamento.",
+   "Usura, creep e rottura per urto sono fenomeni diversi.",
+   "La risposta è: cricche per l'azione combinata di trazione e ambiente corrosivo."
+  ],
+  "concetto": "tensocorrosione"
+ },
+ {
+  "id": "SMT-123",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "superiori",
+  "domanda": "Qual è la causa principale del degrado di molti polimeri esposti all'aperto, che diventano fragili e scoloriti?",
+  "opzioni": {
+   "A": "La formazione di ruggine",
+   "B": "La corrosione galvanica",
+   "C": "La ricristallizzazione dei grani metallici",
+   "D": "La fotoossidazione causata dai raggi ultravioletti",
+   "E": "La diffusione del carbonio nel ferro"
+  },
+  "giusta": "D",
+  "perche": "La radiazione UV ha energia sufficiente a rompere legami nelle catene; con l'ossigeno si innescano reazioni a catena che accorciano le macromolecole e formano gruppi ossidati. Il polimero perde tenacità, si screpola e ingiallisce. Si contrasta con stabilizzanti UV, antiossidanti e pigmenti come il nerofumo. La trappola è applicare ai polimeri il meccanismo elettrochimico tipico dei metalli.",
+  "semplice": "Una sedia da giardino in plastica lasciata al sole per anni diventa opaca e alla fine si spezza. I tubi neri sono più durevoli perché il nerofumo assorbe gli UV.",
+  "passaggi": [
+   "I polimeri non arrugginiscono e non hanno grani metallici: escludi quelle opzioni.",
+   "All'aperto il fattore principale è la luce solare, con la sua componente UV.",
+   "Gli UV rompono legami nelle catene e, con l'ossigeno, innescano reazioni di ossidazione.",
+   "Il polimero si accorcia nelle catene, diventa fragile e ingiallisce.",
+   "La risposta è la fotoossidazione causata dai raggi UV."
+  ],
+  "concetto": "degrado dei polimeri"
+ },
+ {
+  "id": "SMT-124",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "università",
+  "domanda": "Perché un acciaio inox austenitico tenuto a lungo tra circa 450 e 850 °C (ad esempio vicino a una saldatura) può subire corrosione intergranulare?",
+  "opzioni": {
+   "A": "Si forma martensite ai bordi di grano",
+   "B": "Il nichel evapora dalla superficie",
+   "C": "I grani diventano amorfi",
+   "D": "L'acciaio assorbe idrogeno e si trasforma in ferrite",
+   "E": "Precipitano carburi di cromo ai bordi di grano, impoverendo di cromo le zone vicine"
+  },
+  "giusta": "E",
+  "perche": "In questo intervallo di temperatura il carbonio si combina con il cromo formando carburi lungo i bordi di grano; le zone adiacenti scendono sotto il 10-12% di Cr e non riescono più a passivarsi. È il fenomeno della sensibilizzazione. Si previene con acciai a basso carbonio (serie «L», come il 304L) o stabilizzati con titanio o niobio, che legano il carbonio. La trappola è pensare che un inox sia protetto ovunque in modo uguale.",
+  "semplice": "Il cromo è lo «scudo» dell'inox. Se si sposta tutto ai bordi dei grani sotto forma di carburi, le zone vicine restano senza scudo e si corrodono.",
+  "passaggi": [
+   "Tra 450 e 850 °C il carbonio si combina con il cromo.",
+   "Si formano carburi di cromo lungo i bordi di grano.",
+   "Le zone vicine ai bordi scendono sotto il 10-12% di cromo e non si passivano più.",
+   "Si corrodono quindi lungo i bordi di grano: è la sensibilizzazione.",
+   "La risposta è: precipitano carburi di cromo ai bordi di grano."
+  ],
+  "concetto": "sensibilizzazione degli inox"
+ },
+ {
+  "id": "SMT-125",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "test",
+  "domanda": "Nella protezione catodica a corrente impressa di una condotta interrata in acciaio, a quale polo del generatore si collega la condotta?",
+  "opzioni": {
+   "A": "Al polo positivo",
+   "B": "Al polo negativo",
+   "C": "A nessuno dei due: basta metterla a terra",
+   "D": "Alternativamente ai due poli",
+   "E": "Al polo positivo, con un anodo di rame collegato al negativo"
+  },
+  "giusta": "B",
+  "perche": "Collegando la condotta al polo negativo le si forniscono elettroni: diventa il catodo e l'ossidazione del ferro viene soppressa. Il polo positivo è collegato ad anodi ausiliari, spesso di materiali poco consumabili come ghisa al silicio o titanio rivestito, sistemati nel terreno. Collegare la condotta al polo positivo ne accelererebbe la corrosione: è la trappola tipica.",
+  "semplice": "Se dai al tubo un «rifornimento» continuo di elettroni dall'esterno, il ferro non ha più bisogno di cederli e non si corrode.",
+  "passaggi": [
+   "Per proteggere la condotta bisogna farla diventare catodo.",
+   "Il catodo riceve elettroni.",
+   "Gli elettroni escono dal polo negativo del generatore.",
+   "Collegarla al positivo la renderebbe anodo e ne accelererebbe la corrosione.",
+   "La risposta è: al polo negativo."
+  ],
+  "concetto": "protezione catodica"
+ },
+ {
+  "id": "SMT-126",
+  "materia": "Scienza dei materiali",
+  "argomento": "Corrosione e degrado",
+  "livello": "superiori",
+  "domanda": "Che cos'è la carbonatazione del calcestruzzo e perché è dannosa per le armature?",
+  "opzioni": {
+   "A": "Il calcestruzzo assorbe carbonio e diventa più resistente",
+   "B": "Le barre d'acciaio si trasformano in grafite",
+   "C": "La CO₂ dell'aria abbassa il pH del calcestruzzo e le barre d'acciaio perdono la protezione passiva",
+   "D": "Il cemento perde tutta l'acqua e si sbriciola subito",
+   "E": "Si formano fibre di carbonio che rinforzano la struttura"
+  },
+  "giusta": "C",
+  "perche": "Il calcestruzzo fresco ha pH intorno a 13, ambiente in cui l'acciaio si passiva. L'anidride carbonica reagisce con l'idrossido di calcio formando carbonato di calcio, e il pH scende sotto circa 9: quando il fronte di carbonatazione raggiunge le armature, queste iniziano a corrodersi. La ruggine occupa più volume del ferro, spacca il copriferro e lo fa staccare. La trappola è pensare che sia un problema del cemento e non delle barre.",
+  "semplice": "Su vecchi balconi si vedono spesso pezzi di calcestruzzo staccati e ferri arrugginiti in vista. È il risultato di decenni di carbonatazione.",
+  "passaggi": [
+   "Il calcestruzzo fresco ha pH circa 13: in questo ambiente l'acciaio è passivato.",
+   "La CO₂ dell'aria reagisce con l'idrossido di calcio formando carbonato di calcio.",
+   "Il pH scende sotto circa 9.",
+   "Quando questo fronte arriva alle armature, l'acciaio perde la passività e si corrode.",
+   "La risposta è: la CO₂ abbassa il pH e le barre perdono la protezione passiva."
+  ],
+  "concetto": "carbonatazione"
+ }
+]

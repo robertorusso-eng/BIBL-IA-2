@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/2.1.2/viz.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/2.1.2/full.render.js"></script>
+<style>
+  body{margin:0;background:transparent;font-family:-apple-system,Segoe UI,sans-serif;color:#0F1B3D}
+  #mappa svg{width:100%;height:auto;display:block}
+  #mappa g.node.tocca{cursor:pointer}
+  #mappa g.node.tocca:hover polygon,#mappa g.node.tocca:hover path{stroke:#2563EB;stroke-width:3}
+  #mappa g.node.scelto polygon,#mappa g.node.scelto path{stroke:#16A34A;stroke-width:4}
+  #aiuto{font-size:13px;opacity:.75;margin:4px 2px 0}
+</style></head><body>
+<div id="mappa">Disegno la mappa…</div>
+<div id="aiuto">👆 Tocca un concetto della mappa: puoi chiedere spiegazioni o modificarlo.</div>
+<script>
+// Componente Streamlit scritto a mano: disegna la mappa (DOT → SVG con viz.js) e rimanda il concetto toccato.
+function invia(tipo, dati){ window.parent.postMessage(Object.assign({isStreamlitMessage:true, type:tipo}, dati), "*"); }
+function altezza(){ invia("streamlit:setFrameHeight", {height: document.body.scrollHeight + 6}); }
+let firma = null;
+const viz = new Viz();
+function disegna(args){
+  viz.renderSVGElement(args.dot).then(svg => {
+    const box = document.getElementById("mappa"); box.innerHTML = ""; box.appendChild(svg);
+    svg.removeAttribute("width"); svg.removeAttribute("height");
+    svg.querySelectorAll("g.node").forEach(g => {
+      const id = (g.querySelector("title") || {}).textContent;
+      const nome = args.nomi[id];
+      if (!nome) return;                      // i riquadri delle frasi sulle frecce non si toccano
+      g.classList.add("tocca");
+      g.addEventListener("click", () => {
+        svg.querySelectorAll("g.node.scelto").forEach(x => x.classList.remove("scelto"));
+        g.classList.add("scelto");
+        invia("streamlit:setComponentValue", {value: {nodo: nome, t: Date.now()}, dataType: "json"});
+      });
+    });
+    altezza(); setTimeout(altezza, 300);
+  }).catch(e => { document.getElementById("mappa").textContent = "Non riesco a disegnare la mappa: " + e; altezza(); });
+}
+window.addEventListener("message", e => {
+  const d = e.data; if (!d || d.type !== "streamlit:render") return;
+  if (d.args.dot === firma) return;
+  firma = d.args.dot; disegna(d.args);
+});
+window.addEventListener("resize", altezza);
+invia("streamlit:componentReady", {apiVersion: 1});
+altezza();
+</script></body></html>

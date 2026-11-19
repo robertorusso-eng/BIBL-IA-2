@@ -1,0 +1,1769 @@
+{
+ "Farmacocinetica": {
+  "superiore": [
+   {
+    "da": "Farmacocinetica",
+    "relazione": "studia",
+    "a": "Cosa fa l'organismo al farmaco"
+   },
+   {
+    "da": "Farmacocinetica",
+    "relazione": "fasi (ADME):",
+    "a": "Assorbimento"
+   },
+   {
+    "da": "Farmacocinetica",
+    "relazione": "fasi (ADME):",
+    "a": "Distribuzione"
+   },
+   {
+    "da": "Farmacocinetica",
+    "relazione": "fasi (ADME):",
+    "a": "Metabolismo"
+   },
+   {
+    "da": "Farmacocinetica",
+    "relazione": "fasi (ADME):",
+    "a": "Eliminazione"
+   },
+   {
+    "da": "Assorbimento",
+    "relazione": "dipende da",
+    "a": "Via di somministrazione (orale, endovena...)"
+   },
+   {
+    "da": "Assorbimento",
+    "relazione": "favorito per",
+    "a": "Molecole piccole, liposolubili, non ionizzate"
+   },
+   {
+    "da": "Assorbimento",
+    "relazione": "misurato da",
+    "a": "Biodisponibilità F"
+   },
+   {
+    "da": "Biodisponibilità F",
+    "relazione": "endovena:",
+    "a": "F = 100%"
+   },
+   {
+    "da": "Biodisponibilità F",
+    "relazione": "per via orale ridotta da",
+    "a": "Effetto di primo passaggio epatico"
+   },
+   {
+    "da": "Distribuzione",
+    "relazione": "ostacolata da",
+    "a": "Legame alle proteine plasmatiche (albumina)"
+   },
+   {
+    "da": "Distribuzione",
+    "relazione": "barriera:",
+    "a": "Ematoencefalica"
+   },
+   {
+    "da": "Distribuzione",
+    "relazione": "misurata da",
+    "a": "Volume di distribuzione Vd"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "sede principale:",
+    "a": "Fegato"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "fase I:",
+    "a": "Ossidazioni (citocromo P450)"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "fase II:",
+    "a": "Coniugazioni (glucuronide): più idrosolubile"
+   },
+   {
+    "da": "Eliminazione",
+    "relazione": "vie:",
+    "a": "Rene (urine), bile"
+   },
+   {
+    "da": "Eliminazione",
+    "relazione": "descritta da",
+    "a": "Emivita t½"
+   },
+   {
+    "da": "Emivita t½",
+    "relazione": "stato stazionario dopo",
+    "a": "4-5 emivite"
+   }
+  ],
+  "universita": [
+   {
+    "da": "Farmacocinetica",
+    "relazione": "studia",
+    "a": "Concentrazione del farmaco nel tempo"
+   },
+   {
+    "da": "Farmacocinetica",
+    "relazione": "fasi:",
+    "a": "ADME"
+   },
+   {
+    "da": "ADME",
+    "relazione": "A:",
+    "a": "Assorbimento"
+   },
+   {
+    "da": "Assorbimento",
+    "relazione": "meccanismi:",
+    "a": "Diffusione passiva, trasporto attivo, P-gp"
+   },
+   {
+    "da": "Assorbimento",
+    "relazione": "ionizzazione secondo",
+    "a": "Henderson-Hasselbalch (pKa e pH)"
+   },
+   {
+    "da": "Assorbimento",
+    "relazione": "parametri:",
+    "a": "Cmax, tmax, AUC"
+   },
+   {
+    "da": "Assorbimento",
+    "relazione": "biodisponibilità:",
+    "a": "F = AUC orale/AUC ev"
+   },
+   {
+    "da": "ADME",
+    "relazione": "D:",
+    "a": "Distribuzione"
+   },
+   {
+    "da": "Distribuzione",
+    "relazione": "volume:",
+    "a": "Vd = dose/C₀"
+   },
+   {
+    "da": "Distribuzione",
+    "relazione": "legame:",
+    "a": "Albumina (acidi), α1-glicoproteina (basi)"
+   },
+   {
+    "da": "Distribuzione",
+    "relazione": "solo il farmaco libero",
+    "a": "È attivo ed eliminabile"
+   },
+   {
+    "da": "ADME",
+    "relazione": "M:",
+    "a": "Metabolismo"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "fase I:",
+    "a": "CYP450 (CYP3A4, 2D6, 2C9)"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "fase II:",
+    "a": "Glucuronazione, solfatazione, acetilazione"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "interazioni:",
+    "a": "Induttori (rifampicina) e inibitori (ketoconazolo)"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "variabilità:",
+    "a": "Farmacogenetica (metabolizzatori lenti/rapidi)"
+   },
+   {
+    "da": "Metabolismo",
+    "relazione": "possibile:",
+    "a": "Profarmaci (attivati dal metabolismo)"
+   },
+   {
+    "da": "ADME",
+    "relazione": "E:",
+    "a": "Eliminazione"
+   },
+   {
+    "da": "Eliminazione",
+    "relazione": "renale:",
+    "a": "Filtrazione, secrezione, riassorbimento"
+   },
+   {
+    "da": "Eliminazione",
+    "relazione": "clearance:",
+    "a": "CL = dose·F/AUC"
+   },
+   {
+    "da": "Eliminazione",
+    "relazione": "emivita:",
+    "a": "t½ = 0,693 · Vd/CL"
+   },
+   {
+    "da": "Eliminazione",
+    "relazione": "cinetica di primo ordine:",
+    "a": "Frazione costante (la maggior parte)"
+   },
+   {
+    "da": "Eliminazione",
+    "relazione": "ordine zero:",
+    "a": "Quantità costante (etanolo, fenitoina ad alte dosi)"
+   },
+   {
+    "da": "Farmacocinetica",
+    "relazione": "applicazioni:",
+    "a": "Regimi di dosaggio"
+   },
+   {
+    "da": "Regimi di dosaggio",
+    "relazione": "dose di carico:",
+    "a": "Vd · C bersaglio / F"
+   },
+   {
+    "da": "Regimi di dosaggio",
+    "relazione": "dose di mantenimento:",
+    "a": "CL · C bersaglio · τ / F"
+   },
+   {
+    "da": "Regimi di dosaggio",
+    "relazione": "stato stazionario:",
+    "a": "4-5 emivite"
+   },
+   {
+    "da": "Regimi di dosaggio",
+    "relazione": "si controllano con",
+    "a": "Monitoraggio terapeutico (digossina, aminoglicosidi)"
+   },
+   {
+    "da": "Regimi di dosaggio",
+    "relazione": "si aggiustano in",
+    "a": "Insufficienza renale, anziani, bambini"
+   }
+  ]
+ },
+ "Farmacodinamica e recettori": {
+  "superiore": [
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "studia",
+    "a": "Cosa fa il farmaco all'organismo"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "bersagli:",
+    "a": "Recettori"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "si legano con",
+    "a": "Affinità (riconoscimento)"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "tipi:",
+    "a": "Canali ionici (GABA-A)"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "tipi:",
+    "a": "Accoppiati a proteine G (β-adrenergici)"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "tipi:",
+    "a": "Ad attività enzimatica (insulina)"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "tipi:",
+    "a": "Intracellulari (steroidi)"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "bersagli non recettoriali:",
+    "a": "Enzimi, trasportatori, canali"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "classifica i farmaci:",
+    "a": "Agonisti e antagonisti"
+   },
+   {
+    "da": "Agonisti e antagonisti",
+    "relazione": "agonista:",
+    "a": "Attiva il recettore (morfina)"
+   },
+   {
+    "da": "Agonisti e antagonisti",
+    "relazione": "antagonista:",
+    "a": "Blocca il recettore (naloxone)"
+   },
+   {
+    "da": "Agonisti e antagonisti",
+    "relazione": "agonista parziale:",
+    "a": "Effetto massimo minore"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "si rappresenta con",
+    "a": "Curva dose-risposta"
+   },
+   {
+    "da": "Curva dose-risposta",
+    "relazione": "misura la potenza con",
+    "a": "EC50 (dose per metà effetto)"
+   },
+   {
+    "da": "Curva dose-risposta",
+    "relazione": "misura l'efficacia con",
+    "a": "Effetto massimo Emax"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "sicurezza:",
+    "a": "Indice terapeutico (TD50/ED50)"
+   },
+   {
+    "da": "Indice terapeutico (TD50/ED50)",
+    "relazione": "se piccolo:",
+    "a": "Farmaco pericoloso (digossina, litio)"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "con l'uso ripetuto:",
+    "a": "Tolleranza e desensibilizzazione"
+   }
+  ],
+  "universita": [
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "studia",
+    "a": "Meccanismo d'azione ed effetti"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "bersagli:",
+    "a": "Recettori"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "ionotropici:",
+    "a": "Risposta in ms (nicotinico, GABA-A)"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "accoppiati a proteine G:",
+    "a": "Gs (↑cAMP), Gi (↓cAMP), Gq (IP₃/Ca²⁺)"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "tirosin-chinasici:",
+    "a": "Insulina, fattori di crescita"
+   },
+   {
+    "da": "Recettori",
+    "relazione": "nucleari:",
+    "a": "Steroidi, ormoni tiroidei (ore-giorni)"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "descritta da",
+    "a": "Teoria dell'occupazione recettoriale"
+   },
+   {
+    "da": "Teoria dell'occupazione recettoriale",
+    "relazione": "affinità:",
+    "a": "Kd (concentrazione al 50% di occupazione)"
+   },
+   {
+    "da": "Teoria dell'occupazione recettoriale",
+    "relazione": "efficacia:",
+    "a": "Attività intrinseca"
+   },
+   {
+    "da": "Teoria dell'occupazione recettoriale",
+    "relazione": "amplificazione:",
+    "a": "Recettori di riserva"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "classifica i ligandi:",
+    "a": "Agonisti"
+   },
+   {
+    "da": "Agonisti",
+    "relazione": "pieni:",
+    "a": "Attività intrinseca 1"
+   },
+   {
+    "da": "Agonisti",
+    "relazione": "parziali:",
+    "a": "Effetto tetto (buprenorfina)"
+   },
+   {
+    "da": "Agonisti",
+    "relazione": "inversi:",
+    "a": "Riducono l'attività costitutiva"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "classifica i ligandi:",
+    "a": "Antagonisti"
+   },
+   {
+    "da": "Antagonisti",
+    "relazione": "competitivi:",
+    "a": "Spostano la curva a destra, Emax uguale"
+   },
+   {
+    "da": "Antagonisti",
+    "relazione": "non competitivi/irreversibili:",
+    "a": "Riducono Emax"
+   },
+   {
+    "da": "Antagonisti",
+    "relazione": "altri tipi:",
+    "a": "Fisiologico e chimico"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "si rappresenta con",
+    "a": "Curve dose-risposta"
+   },
+   {
+    "da": "Curve dose-risposta",
+    "relazione": "graduali:",
+    "a": "Potenza (EC50) ed efficacia (Emax)"
+   },
+   {
+    "da": "Curve dose-risposta",
+    "relazione": "quantali:",
+    "a": "ED50, TD50, LD50"
+   },
+   {
+    "da": "Curve dose-risposta",
+    "relazione": "sicurezza:",
+    "a": "Indice terapeutico e margine di sicurezza"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "modulazione:",
+    "a": "Regolazione dei recettori"
+   },
+   {
+    "da": "Regolazione dei recettori",
+    "relazione": "uso cronico di agonisti:",
+    "a": "Desensibilizzazione e down-regulation"
+   },
+   {
+    "da": "Regolazione dei recettori",
+    "relazione": "uso cronico di antagonisti:",
+    "a": "Up-regulation (rimbalzo alla sospensione)"
+   },
+   {
+    "da": "Regolazione dei recettori",
+    "relazione": "rapida:",
+    "a": "Tachifilassi"
+   },
+   {
+    "da": "Farmacodinamica e recettori",
+    "relazione": "altro meccanismo:",
+    "a": "Modulatori allosterici (benzodiazepine su GABA-A)"
+   }
+  ]
+ },
+ "Farmaci del sistema nervoso": {
+  "superiore": [
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "sistema nervoso autonomo:",
+    "a": "Simpatico e parasimpatico"
+   },
+   {
+    "da": "Simpatico e parasimpatico",
+    "relazione": "simpaticomimetici:",
+    "a": "Adrenalina, salbutamolo (β2)"
+   },
+   {
+    "da": "Simpatico e parasimpatico",
+    "relazione": "β-bloccanti:",
+    "a": "Propranololo"
+   },
+   {
+    "da": "Simpatico e parasimpatico",
+    "relazione": "colinergici:",
+    "a": "Neostigmina (anticolinesterasico)"
+   },
+   {
+    "da": "Simpatico e parasimpatico",
+    "relazione": "anticolinergici:",
+    "a": "Atropina"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Ansiolitici e ipnotici"
+   },
+   {
+    "da": "Ansiolitici e ipnotici",
+    "relazione": "esempio:",
+    "a": "Benzodiazepine (potenziano GABA)"
+   },
+   {
+    "da": "Benzodiazepine (potenziano GABA)",
+    "relazione": "antidoto:",
+    "a": "Flumazenil"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antidepressivi"
+   },
+   {
+    "da": "Antidepressivi",
+    "relazione": "esempio:",
+    "a": "SSRI (fluoxetina): ↑ serotonina"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antipsicotici"
+   },
+   {
+    "da": "Antipsicotici",
+    "relazione": "meccanismo:",
+    "a": "Bloccano i recettori D2"
+   },
+   {
+    "da": "Antipsicotici",
+    "relazione": "effetto collaterale:",
+    "a": "Sintomi extrapiramidali"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antiepilettici (valproato, carbamazepina)"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antiparkinson"
+   },
+   {
+    "da": "Antiparkinson",
+    "relazione": "esempio:",
+    "a": "Levodopa + carbidopa"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "dolore:",
+    "a": "Oppioidi"
+   },
+   {
+    "da": "Oppioidi",
+    "relazione": "esempio:",
+    "a": "Morfina (recettori μ)"
+   },
+   {
+    "da": "Oppioidi",
+    "relazione": "rischio:",
+    "a": "Depressione respiratoria"
+   },
+   {
+    "da": "Oppioidi",
+    "relazione": "antidoto:",
+    "a": "Naloxone"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "anestesia:",
+    "a": "Anestetici generali e locali (lidocaina)"
+   }
+  ],
+  "universita": [
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "sistema nervoso autonomo:",
+    "a": "Farmaci autonomici"
+   },
+   {
+    "da": "Farmaci autonomici",
+    "relazione": "agonisti α1:",
+    "a": "Fenilefrina (vasocostrizione)"
+   },
+   {
+    "da": "Farmaci autonomici",
+    "relazione": "agonisti β2:",
+    "a": "Salbutamolo (broncodilatazione)"
+   },
+   {
+    "da": "Farmaci autonomici",
+    "relazione": "antagonisti β:",
+    "a": "Propranololo, metoprololo (β1 selettivo)"
+   },
+   {
+    "da": "Farmaci autonomici",
+    "relazione": "muscarinici:",
+    "a": "Atropina (antagonista), pilocarpina (agonista)"
+   },
+   {
+    "da": "Farmaci autonomici",
+    "relazione": "anticolinesterasici:",
+    "a": "Neostigmina, donepezil"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Sedativi-ipnotici"
+   },
+   {
+    "da": "Sedativi-ipnotici",
+    "relazione": "benzodiazepine:",
+    "a": "↑ frequenza apertura canale Cl⁻"
+   },
+   {
+    "da": "Sedativi-ipnotici",
+    "relazione": "barbiturici:",
+    "a": "↑ durata apertura, rischio maggiore"
+   },
+   {
+    "da": "Sedativi-ipnotici",
+    "relazione": "antidoto benzodiazepine:",
+    "a": "Flumazenil"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antidepressivi"
+   },
+   {
+    "da": "Antidepressivi",
+    "relazione": "SSRI/SNRI:",
+    "a": "Inibiscono la ricaptazione"
+   },
+   {
+    "da": "Antidepressivi",
+    "relazione": "triciclici:",
+    "a": "Effetti anticolinergici, cardiotossici"
+   },
+   {
+    "da": "Antidepressivi",
+    "relazione": "IMAO:",
+    "a": "Crisi ipertensiva con tiramina"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Stabilizzatori dell'umore (litio, IT stretto)"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antipsicotici"
+   },
+   {
+    "da": "Antipsicotici",
+    "relazione": "tipici (aloperidolo):",
+    "a": "Antagonisti D2, extrapiramidali"
+   },
+   {
+    "da": "Antipsicotici",
+    "relazione": "atipici (clozapina):",
+    "a": "Anche 5-HT2A; effetti metabolici"
+   },
+   {
+    "da": "Antipsicotici",
+    "relazione": "rari ma gravi:",
+    "a": "Sindrome maligna da neurolettici"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antiepilettici"
+   },
+   {
+    "da": "Antiepilettici",
+    "relazione": "bloccanti canali Na⁺:",
+    "a": "Fenitoina, carbamazepina"
+   },
+   {
+    "da": "Antiepilettici",
+    "relazione": "ad ampio spettro:",
+    "a": "Valproato (teratogeno)"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "SNC:",
+    "a": "Antiparkinson"
+   },
+   {
+    "da": "Antiparkinson",
+    "relazione": "levodopa + carbidopa:",
+    "a": "Carbidopa blocca la decarbossilasi periferica"
+   },
+   {
+    "da": "Antiparkinson",
+    "relazione": "altri:",
+    "a": "Agonisti dopaminergici, inibitori MAO-B"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "dolore:",
+    "a": "Analgesici oppioidi"
+   },
+   {
+    "da": "Analgesici oppioidi",
+    "relazione": "recettori:",
+    "a": "μ, κ, δ"
+   },
+   {
+    "da": "Analgesici oppioidi",
+    "relazione": "effetti avversi:",
+    "a": "Depressione respiratoria, stipsi, miosi"
+   },
+   {
+    "da": "Analgesici oppioidi",
+    "relazione": "antidoto:",
+    "a": "Naloxone (antagonista competitivo)"
+   },
+   {
+    "da": "Farmaci del sistema nervoso",
+    "relazione": "anestesia:",
+    "a": "Anestetici"
+   },
+   {
+    "da": "Anestetici",
+    "relazione": "locali:",
+    "a": "Bloccano i canali Na⁺ (lidocaina)"
+   },
+   {
+    "da": "Anestetici",
+    "relazione": "generali:",
+    "a": "Inalatori (sevoflurano), propofol"
+   }
+  ]
+ },
+ "Farmaci cardiovascolari": {
+  "superiore": [
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Ipertensione"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "diuretici:",
+    "a": "Tiazidi (idroclorotiazide)"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "ACE-inibitori:",
+    "a": "Enalapril (effetto collaterale: tosse)"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "sartani:",
+    "a": "Losartan (bloccano AT1)"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "calcio-antagonisti:",
+    "a": "Amlodipina"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "β-bloccanti:",
+    "a": "Atenololo, metoprololo"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Angina"
+   },
+   {
+    "da": "Angina",
+    "relazione": "nitrati:",
+    "a": "Nitroglicerina (rilascia NO, vasodilata)"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Scompenso cardiaco"
+   },
+   {
+    "da": "Scompenso cardiaco",
+    "relazione": "farmaci:",
+    "a": "ACE-inibitori, β-bloccanti, diuretici"
+   },
+   {
+    "da": "Scompenso cardiaco",
+    "relazione": "inotropo:",
+    "a": "Digossina (indice terapeutico stretto)"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Aritmie"
+   },
+   {
+    "da": "Aritmie",
+    "relazione": "esempio:",
+    "a": "Amiodarone"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Trombosi"
+   },
+   {
+    "da": "Trombosi",
+    "relazione": "antiaggreganti:",
+    "a": "Aspirina a basse dosi"
+   },
+   {
+    "da": "Trombosi",
+    "relazione": "anticoagulanti:",
+    "a": "Eparina, warfarin, anticoagulanti orali diretti"
+   },
+   {
+    "da": "Eparina, warfarin, anticoagulanti orali diretti",
+    "relazione": "rischio:",
+    "a": "Emorragie"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Colesterolo alto"
+   },
+   {
+    "da": "Colesterolo alto",
+    "relazione": "statine:",
+    "a": "Inibiscono HMG-CoA reduttasi"
+   }
+  ],
+  "universita": [
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Ipertensione"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "diuretici:",
+    "a": "Tiazidici, dell'ansa (furosemide), risparmiatori di K⁺"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "sistema renina-angiotensina:",
+    "a": "ACE-inibitori e sartani"
+   },
+   {
+    "da": "ACE-inibitori e sartani",
+    "relazione": "ACE-inibitori:",
+    "a": "Tosse e angioedema (bradichinina)"
+   },
+   {
+    "da": "ACE-inibitori e sartani",
+    "relazione": "controindicati in",
+    "a": "Gravidanza; attenzione a iperkaliemia"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "calcio-antagonisti:",
+    "a": "Diidropiridine (vasi), verapamil (cuore)"
+   },
+   {
+    "da": "Ipertensione",
+    "relazione": "β-bloccanti:",
+    "a": "Non selettivi vs β1-selettivi"
+   },
+   {
+    "da": "Non selettivi vs β1-selettivi",
+    "relazione": "cautela in",
+    "a": "Asma (broncospasmo)"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Cardiopatia ischemica"
+   },
+   {
+    "da": "Cardiopatia ischemica",
+    "relazione": "nitrati:",
+    "a": "NO → cGMP → vasodilatazione venosa"
+   },
+   {
+    "da": "NO → cGMP → vasodilatazione venosa",
+    "relazione": "controindicati con",
+    "a": "Inibitori PDE5 (sildenafil)"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Scompenso cardiaco"
+   },
+   {
+    "da": "Scompenso cardiaco",
+    "relazione": "riducono la mortalità:",
+    "a": "ACE-I/sartani, β-bloccanti, antialdosteronici"
+   },
+   {
+    "da": "Scompenso cardiaco",
+    "relazione": "riducono la mortalità:",
+    "a": "Inibitori SGLT2"
+   },
+   {
+    "da": "Scompenso cardiaco",
+    "relazione": "digossina:",
+    "a": "Inibisce la Na⁺/K⁺-ATPasi"
+   },
+   {
+    "da": "Inibisce la Na⁺/K⁺-ATPasi",
+    "relazione": "tossicità favorita da",
+    "a": "Ipokaliemia"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Aritmie"
+   },
+   {
+    "da": "Aritmie",
+    "relazione": "classificazione di",
+    "a": "Vaughan Williams"
+   },
+   {
+    "da": "Vaughan Williams",
+    "relazione": "I:",
+    "a": "Bloccanti Na⁺ (flecainide)"
+   },
+   {
+    "da": "Vaughan Williams",
+    "relazione": "II:",
+    "a": "β-bloccanti"
+   },
+   {
+    "da": "Vaughan Williams",
+    "relazione": "III:",
+    "a": "Bloccanti K⁺ (amiodarone: tiroide, polmone)"
+   },
+   {
+    "da": "Vaughan Williams",
+    "relazione": "IV:",
+    "a": "Calcio-antagonisti non diidropiridinici"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Trombosi"
+   },
+   {
+    "da": "Trombosi",
+    "relazione": "antiaggreganti:",
+    "a": "Aspirina (COX-1), clopidogrel (P2Y12)"
+   },
+   {
+    "da": "Trombosi",
+    "relazione": "eparine:",
+    "a": "Potenziano l'antitrombina (antidoto: protamina)"
+   },
+   {
+    "da": "Trombosi",
+    "relazione": "warfarin:",
+    "a": "Antagonista vitamina K, controllo con INR"
+   },
+   {
+    "da": "Trombosi",
+    "relazione": "anticoagulanti orali diretti:",
+    "a": "Anti-Xa (apixaban), anti-IIa (dabigatran)"
+   },
+   {
+    "da": "Trombosi",
+    "relazione": "fibrinolitici:",
+    "a": "Alteplase"
+   },
+   {
+    "da": "Farmaci cardiovascolari",
+    "relazione": "per",
+    "a": "Dislipidemie"
+   },
+   {
+    "da": "Dislipidemie",
+    "relazione": "statine:",
+    "a": "↓ LDL; rischio miopatia"
+   },
+   {
+    "da": "Dislipidemie",
+    "relazione": "altri:",
+    "a": "Ezetimibe, inibitori PCSK9"
+   }
+  ]
+ },
+ "Antibiotici e chemioterapici": {
+  "superiore": [
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "agiscono per",
+    "a": "Tossicità selettiva (bersagli del batterio)"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "effetto:",
+    "a": "Battericidi o batteriostatici"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "Parete cellulare"
+   },
+   {
+    "da": "Parete cellulare",
+    "relazione": "β-lattamici:",
+    "a": "Penicilline, cefalosporine, carbapenemi"
+   },
+   {
+    "da": "Parete cellulare",
+    "relazione": "glicopeptidi:",
+    "a": "Vancomicina"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "Sintesi proteica (ribosoma 70S)"
+   },
+   {
+    "da": "Sintesi proteica (ribosoma 70S)",
+    "relazione": "esempi:",
+    "a": "Aminoglicosidi, tetracicline, macrolidi"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "DNA batterico"
+   },
+   {
+    "da": "DNA batterico",
+    "relazione": "esempi:",
+    "a": "Fluorochinoloni (ciprofloxacina)"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "Acido folico"
+   },
+   {
+    "da": "Acido folico",
+    "relazione": "esempio:",
+    "a": "Sulfamidici + trimetoprim"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "spettro:",
+    "a": "Ampio o ristretto"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "problema:",
+    "a": "Resistenza agli antibiotici"
+   },
+   {
+    "da": "Resistenza agli antibiotici",
+    "relazione": "meccanismo:",
+    "a": "β-lattamasi (rompono l'anello)"
+   },
+   {
+    "da": "Resistenza agli antibiotici",
+    "relazione": "esempio:",
+    "a": "MRSA"
+   },
+   {
+    "da": "Resistenza agli antibiotici",
+    "relazione": "si limita con",
+    "a": "Uso corretto (dose e durata giuste)"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "chemioterapici:",
+    "a": "Antivirali e antitumorali"
+   },
+   {
+    "da": "Antivirali e antitumorali",
+    "relazione": "antivirali:",
+    "a": "Aciclovir (herpes)"
+   },
+   {
+    "da": "Antivirali e antitumorali",
+    "relazione": "antitumorali:",
+    "a": "Colpiscono le cellule in rapida divisione"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "effetti avversi:",
+    "a": "Allergie (penicilline), alterazione della flora intestinale"
+   }
+  ],
+  "universita": [
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "principio:",
+    "a": "Tossicità selettiva"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "effetto:",
+    "a": "Battericidi vs batteriostatici"
+   },
+   {
+    "da": "Battericidi vs batteriostatici",
+    "relazione": "tempo-dipendenti:",
+    "a": "β-lattamici (T > MIC)"
+   },
+   {
+    "da": "Battericidi vs batteriostatici",
+    "relazione": "concentrazione-dipendenti:",
+    "a": "Aminoglicosidi, chinoloni (Cmax/MIC)"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "Sintesi della parete"
+   },
+   {
+    "da": "Sintesi della parete",
+    "relazione": "β-lattamici:",
+    "a": "Legano le PBP (transpeptidasi)"
+   },
+   {
+    "da": "Sintesi della parete",
+    "relazione": "inibitori β-lattamasi:",
+    "a": "Acido clavulanico, tazobactam"
+   },
+   {
+    "da": "Sintesi della parete",
+    "relazione": "vancomicina:",
+    "a": "Lega D-Ala-D-Ala (Gram+, MRSA)"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "Ribosoma batterico"
+   },
+   {
+    "da": "Ribosoma batterico",
+    "relazione": "30S:",
+    "a": "Aminoglicosidi (oto-/nefrotossici), tetracicline"
+   },
+   {
+    "da": "Ribosoma batterico",
+    "relazione": "50S:",
+    "a": "Macrolidi, linezolid, clindamicina"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "Acidi nucleici"
+   },
+   {
+    "da": "Acidi nucleici",
+    "relazione": "fluorochinoloni:",
+    "a": "DNA girasi e topoisomerasi IV"
+   },
+   {
+    "da": "Acidi nucleici",
+    "relazione": "rifampicina:",
+    "a": "RNA polimerasi (induttore CYP)"
+   },
+   {
+    "da": "Acidi nucleici",
+    "relazione": "metronidazolo:",
+    "a": "Anaerobi (effetto antabuse)"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "bersaglio:",
+    "a": "Metabolismo dei folati"
+   },
+   {
+    "da": "Metabolismo dei folati",
+    "relazione": "sinergia:",
+    "a": "Sulfametossazolo + trimetoprim"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "problema:",
+    "a": "Resistenze"
+   },
+   {
+    "da": "Resistenze",
+    "relazione": "meccanismi:",
+    "a": "Enzimi inattivanti (β-lattamasi, ESBL)"
+   },
+   {
+    "da": "Resistenze",
+    "relazione": "meccanismi:",
+    "a": "Bersaglio modificato (PBP2a nel MRSA)"
+   },
+   {
+    "da": "Resistenze",
+    "relazione": "meccanismi:",
+    "a": "Pompe di efflusso, ridotta permeabilità"
+   },
+   {
+    "da": "Resistenze",
+    "relazione": "trasmissione:",
+    "a": "Plasmidi (trasferimento orizzontale)"
+   },
+   {
+    "da": "Resistenze",
+    "relazione": "prevenzione:",
+    "a": "Antibiotic stewardship"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "chemioterapici:",
+    "a": "Antivirali"
+   },
+   {
+    "da": "Antivirali",
+    "relazione": "aciclovir:",
+    "a": "Attivato dalla timidina chinasi virale"
+   },
+   {
+    "da": "Antivirali",
+    "relazione": "HIV:",
+    "a": "Inibitori di trascrittasi inversa e proteasi"
+   },
+   {
+    "da": "Antibiotici e chemioterapici",
+    "relazione": "chemioterapici:",
+    "a": "Antitumorali"
+   },
+   {
+    "da": "Antitumorali",
+    "relazione": "classi:",
+    "a": "Alchilanti, antimetaboliti, antimitotici"
+   },
+   {
+    "da": "Antitumorali",
+    "relazione": "tossicità:",
+    "a": "Midollo, mucose, capelli"
+   },
+   {
+    "da": "Antitumorali",
+    "relazione": "terapie mirate:",
+    "a": "Inibitori di chinasi, anticorpi monoclonali"
+   }
+  ]
+ },
+ "Antinfiammatori e analgesici": {
+  "superiore": [
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "FANS"
+   },
+   {
+    "da": "FANS",
+    "relazione": "meccanismo:",
+    "a": "Inibiscono le COX"
+   },
+   {
+    "da": "FANS",
+    "relazione": "effetti:",
+    "a": "Antinfiammatorio, analgesico, antipiretico"
+   },
+   {
+    "da": "FANS",
+    "relazione": "esempi:",
+    "a": "Ibuprofene, diclofenac, aspirina"
+   },
+   {
+    "da": "FANS",
+    "relazione": "rischi:",
+    "a": "Gastrolesività (ulcera)"
+   },
+   {
+    "da": "FANS",
+    "relazione": "rischi:",
+    "a": "Danno renale"
+   },
+   {
+    "da": "FANS",
+    "relazione": "aspirina:",
+    "a": "Antiaggregante (COX-1 piastrinica)"
+   },
+   {
+    "da": "Antiaggregante (COX-1 piastrinica)",
+    "relazione": "nei bambini rischio di",
+    "a": "Sindrome di Reye"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Paracetamolo"
+   },
+   {
+    "da": "Paracetamolo",
+    "relazione": "effetti:",
+    "a": "Analgesico e antipiretico, poco antinfiammatorio"
+   },
+   {
+    "da": "Paracetamolo",
+    "relazione": "in sovradosaggio:",
+    "a": "Tossico per il fegato"
+   },
+   {
+    "da": "Paracetamolo",
+    "relazione": "antidoto:",
+    "a": "N-acetilcisteina"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Corticosteroidi"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "esempi:",
+    "a": "Prednisone, desametasone"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "effetti:",
+    "a": "Antinfiammatori e immunosoppressori potenti"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "uso lungo:",
+    "a": "Osteoporosi, iperglicemia, infezioni"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "sospensione:",
+    "a": "Graduale"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Oppioidi (dolore forte)"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "per il dolore si usa",
+    "a": "Scala analgesica (FANS → oppioidi deboli → forti)"
+   }
+  ],
+  "universita": [
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "FANS"
+   },
+   {
+    "da": "FANS",
+    "relazione": "meccanismo:",
+    "a": "Inibizione COX → ↓ prostaglandine"
+   },
+   {
+    "da": "FANS",
+    "relazione": "COX-1:",
+    "a": "Costitutiva (stomaco, rene, piastrine)"
+   },
+   {
+    "da": "FANS",
+    "relazione": "COX-2:",
+    "a": "Inducibile (infiammazione)"
+   },
+   {
+    "da": "FANS",
+    "relazione": "non selettivi:",
+    "a": "Ibuprofene, naprossene, diclofenac"
+   },
+   {
+    "da": "FANS",
+    "relazione": "selettivi COX-2:",
+    "a": "Coxib (meno gastro-, più cardiotossici)"
+   },
+   {
+    "da": "FANS",
+    "relazione": "aspirina:",
+    "a": "Acetilazione irreversibile della COX"
+   },
+   {
+    "da": "Acetilazione irreversibile della COX",
+    "relazione": "effetto",
+    "a": "Antiaggregante per la vita della piastrina"
+   },
+   {
+    "da": "FANS",
+    "relazione": "effetti avversi:",
+    "a": "Ulcera, insufficienza renale, ↑ pressione"
+   },
+   {
+    "da": "FANS",
+    "relazione": "prevenzione gastrica:",
+    "a": "Inibitori di pompa protonica"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Paracetamolo"
+   },
+   {
+    "da": "Paracetamolo",
+    "relazione": "meccanismo:",
+    "a": "Azione centrale (COX nel SNC)"
+   },
+   {
+    "da": "Paracetamolo",
+    "relazione": "tossicità:",
+    "a": "Metabolita NAPQI"
+   },
+   {
+    "da": "Metabolita NAPQI",
+    "relazione": "normalmente neutralizzato da",
+    "a": "Glutatione"
+   },
+   {
+    "da": "Metabolita NAPQI",
+    "relazione": "antidoto:",
+    "a": "N-acetilcisteina (ripristina glutatione)"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Corticosteroidi"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "meccanismo:",
+    "a": "Recettore nucleare → ↓ geni infiammatori"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "inibiscono",
+    "a": "Fosfolipasi A2 (via lipocortina)"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "effetti avversi:",
+    "a": "Cushing iatrogeno, osteoporosi, diabete"
+   },
+   {
+    "da": "Corticosteroidi",
+    "relazione": "sospensione brusca:",
+    "a": "Insufficienza surrenalica"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Analgesici oppioidi"
+   },
+   {
+    "da": "Analgesici oppioidi",
+    "relazione": "agiscono su",
+    "a": "Recettori μ"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Farmaci antireumatici"
+   },
+   {
+    "da": "Farmaci antireumatici",
+    "relazione": "DMARD:",
+    "a": "Metotrexato, idrossiclorochina"
+   },
+   {
+    "da": "Farmaci antireumatici",
+    "relazione": "biologici:",
+    "a": "Anti-TNF (infliximab)"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "comprende",
+    "a": "Antigottosi"
+   },
+   {
+    "da": "Antigottosi",
+    "relazione": "attacco acuto:",
+    "a": "Colchicina, FANS"
+   },
+   {
+    "da": "Antigottosi",
+    "relazione": "prevenzione:",
+    "a": "Allopurinolo (inibisce xantina ossidasi)"
+   },
+   {
+    "da": "Antinfiammatori e analgesici",
+    "relazione": "strategia:",
+    "a": "Scala analgesica OMS e adiuvanti"
+   }
+  ]
+ },
+ "Tossicologia e sicurezza dei farmaci": {
+  "superiore": [
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "principio:",
+    "a": "La dose fa il veleno (Paracelso)"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "misura la tossicità con",
+    "a": "Indicatori di dose"
+   },
+   {
+    "da": "Indicatori di dose",
+    "relazione": "letale:",
+    "a": "DL50"
+   },
+   {
+    "da": "Indicatori di dose",
+    "relazione": "sicurezza:",
+    "a": "Indice terapeutico (DT50/DE50)"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "studia",
+    "a": "Reazioni avverse ai farmaci"
+   },
+   {
+    "da": "Reazioni avverse ai farmaci",
+    "relazione": "tipo A:",
+    "a": "Prevedibili, legate alla dose"
+   },
+   {
+    "da": "Reazioni avverse ai farmaci",
+    "relazione": "tipo B:",
+    "a": "Imprevedibili (allergie, anafilassi)"
+   },
+   {
+    "da": "Reazioni avverse ai farmaci",
+    "relazione": "si segnalano con",
+    "a": "Farmacovigilanza"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "riguarda le",
+    "a": "Interazioni tra farmaci"
+   },
+   {
+    "da": "Interazioni tra farmaci",
+    "relazione": "esempio:",
+    "a": "Pompelmo inibisce CYP3A4"
+   },
+   {
+    "da": "Interazioni tra farmaci",
+    "relazione": "esempio:",
+    "a": "Warfarin + FANS → emorragie"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "riguarda le",
+    "a": "Popolazioni a rischio"
+   },
+   {
+    "da": "Popolazioni a rischio",
+    "relazione": "gravidanza:",
+    "a": "Farmaci teratogeni (talidomide)"
+   },
+   {
+    "da": "Popolazioni a rischio",
+    "relazione": "anziani:",
+    "a": "Politerapia, ridotta funzione renale"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "tratta gli",
+    "a": "Avvelenamenti"
+   },
+   {
+    "da": "Avvelenamenti",
+    "relazione": "decontaminazione:",
+    "a": "Carbone attivo"
+   },
+   {
+    "da": "Avvelenamenti",
+    "relazione": "antidoti:",
+    "a": "Antidoti specifici"
+   },
+   {
+    "da": "Antidoti specifici",
+    "relazione": "oppioidi:",
+    "a": "Naloxone"
+   },
+   {
+    "da": "Antidoti specifici",
+    "relazione": "paracetamolo:",
+    "a": "N-acetilcisteina"
+   },
+   {
+    "da": "Antidoti specifici",
+    "relazione": "benzodiazepine:",
+    "a": "Flumazenil"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "sviluppo dei farmaci:",
+    "a": "Fasi della sperimentazione (preclinica, fasi I-IV)"
+   }
+  ],
+  "universita": [
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "principio:",
+    "a": "Relazione dose-effetto tossico"
+   },
+   {
+    "da": "Relazione dose-effetto tossico",
+    "relazione": "parametri:",
+    "a": "DL50, NOAEL, dose giornaliera accettabile"
+   },
+   {
+    "da": "Relazione dose-effetto tossico",
+    "relazione": "margine:",
+    "a": "Indice terapeutico e margine di sicurezza"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "studia",
+    "a": "Reazioni avverse (ADR)"
+   },
+   {
+    "da": "Reazioni avverse (ADR)",
+    "relazione": "tipo A:",
+    "a": "Aumentate, dose-dipendenti (80%)"
+   },
+   {
+    "da": "Reazioni avverse (ADR)",
+    "relazione": "tipo B:",
+    "a": "Bizzarre, idiosincrasiche o immunitarie"
+   },
+   {
+    "da": "Reazioni avverse (ADR)",
+    "relazione": "ipersensibilità:",
+    "a": "Tipi I-IV di Gell e Coombs"
+   },
+   {
+    "da": "Reazioni avverse (ADR)",
+    "relazione": "altri tipi:",
+    "a": "C (croniche), D (ritardate), E (sospensione)"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "organi bersaglio:",
+    "a": "Tossicità d'organo"
+   },
+   {
+    "da": "Tossicità d'organo",
+    "relazione": "fegato:",
+    "a": "Paracetamolo, isoniazide"
+   },
+   {
+    "da": "Tossicità d'organo",
+    "relazione": "rene:",
+    "a": "Aminoglicosidi, FANS"
+   },
+   {
+    "da": "Tossicità d'organo",
+    "relazione": "cuore:",
+    "a": "Allungamento QT (torsione di punta)"
+   },
+   {
+    "da": "Tossicità d'organo",
+    "relazione": "midollo:",
+    "a": "Agranulocitosi (clozapina)"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "meccanismi:",
+    "a": "Bioattivazione e stress ossidativo"
+   },
+   {
+    "da": "Bioattivazione e stress ossidativo",
+    "relazione": "esempio:",
+    "a": "Metaboliti reattivi (NAPQI)"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "riguarda le",
+    "a": "Interazioni farmacologiche"
+   },
+   {
+    "da": "Interazioni farmacologiche",
+    "relazione": "farmacocinetiche:",
+    "a": "Induzione/inibizione CYP, spiazzamento"
+   },
+   {
+    "da": "Interazioni farmacologiche",
+    "relazione": "farmacodinamiche:",
+    "a": "Sinergia o antagonismo"
+   },
+   {
+    "da": "Interazioni farmacologiche",
+    "relazione": "esempio grave:",
+    "a": "Sindrome serotoninergica"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "popolazioni speciali:",
+    "a": "Gravidanza e allattamento"
+   },
+   {
+    "da": "Gravidanza e allattamento",
+    "relazione": "periodo critico:",
+    "a": "Organogenesi (3ª-8ª settimana)"
+   },
+   {
+    "da": "Gravidanza e allattamento",
+    "relazione": "teratogeni:",
+    "a": "Talidomide, isotretinoina, valproato, warfarin"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "tratta gli",
+    "a": "Avvelenamenti"
+   },
+   {
+    "da": "Avvelenamenti",
+    "relazione": "gestione:",
+    "a": "ABC, decontaminazione, eliminazione, antidoto"
+   },
+   {
+    "da": "Avvelenamenti",
+    "relazione": "antidoti:",
+    "a": "Naloxone, NAC, flumazenil, atropina + pralidossima"
+   },
+   {
+    "da": "Avvelenamenti",
+    "relazione": "eliminazione aumentata:",
+    "a": "Alcalinizzazione urine, emodialisi"
+   },
+   {
+    "da": "Tossicologia e sicurezza dei farmaci",
+    "relazione": "sicurezza del farmaco:",
+    "a": "Sviluppo e sorveglianza"
+   },
+   {
+    "da": "Sviluppo e sorveglianza",
+    "relazione": "preclinica:",
+    "a": "Studi su cellule e animali"
+   },
+   {
+    "da": "Sviluppo e sorveglianza",
+    "relazione": "fasi I-III:",
+    "a": "Volontari, pazienti, studi controllati"
+   },
+   {
+    "da": "Sviluppo e sorveglianza",
+    "relazione": "fase IV:",
+    "a": "Farmacovigilanza post-marketing"
+   }
+  ]
+ }
+}

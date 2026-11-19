@@ -1,0 +1,3007 @@
+[
+ {
+  "id": "GAL-001",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "superiori",
+  "domanda": "Dati u = (2, −1, 3) e v = (1, 4, −2), quanto vale la somma u + v?",
+  "opzioni": {
+   "A": "(1, −5, 5)",
+   "B": "(3, 3, 1)",
+   "C": "(2, −4, −6)",
+   "D": "(3, 5, 1)",
+   "E": "(1, 3, 5)"
+  },
+  "giusta": "B",
+  "perche": "La somma di due vettori si fa componente per componente: si sommano le prime componenti, poi le seconde, poi le terze. Si ottiene (2 + 1, −1 + 4, 3 − 2) = (3, 3, 1). La trappola tipica è sottrarre invece di sommare, ottenendo u − v = (1, −5, 5), oppure moltiplicare le componenti tra loro, che non è un'operazione standard tra vettori. Un altro errore frequente è sbagliare i segni con i numeri negativi.",
+  "semplice": "Pensa a due spostamenti: prima ti muovi di u, poi di v. Lo spostamento totale è u + v. Per esempio (1, 2) + (3, 0) = (4, 2): quattro passi a destra e due in alto.",
+  "passaggi": [
+   "1. Prima componente: 2 + 1 = 3",
+   "2. Seconda componente: −1 + 4 = 3",
+   "3. Terza componente: 3 + (−2) = 1",
+   "4. Risultato: u + v = (3, 3, 1)"
+  ],
+  "concetto": "somma di vettori"
+ },
+ {
+  "id": "GAL-002",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "superiori",
+  "domanda": "Qual è il modulo (lunghezza) del vettore v = (3, 4)?",
+  "opzioni": {
+   "A": "7",
+   "B": "25",
+   "C": "5",
+   "D": "√7",
+   "E": "12"
+  },
+  "giusta": "C",
+  "perche": "Il modulo di un vettore del piano si calcola con il teorema di Pitagora: |v| = √(3² + 4²) = √(9 + 16) = √25 = 5. Le componenti sono i cateti di un triangolo rettangolo e il vettore è l'ipotenusa. La trappola tipica è sommare le componenti (3 + 4 = 7) oppure dimenticare la radice quadrata e rispondere 25.",
+  "semplice": "Se cammini 3 metri verso est e 4 metri verso nord, in linea d'aria sei a 5 metri dal punto di partenza, non a 7. Il modulo misura proprio questa distanza in linea d'aria.",
+  "passaggi": [
+   "1. Formula: |v| = √(x² + y²)",
+   "2. Quadrati: 3² = 9 e 4² = 16",
+   "3. Somma: 9 + 16 = 25",
+   "4. Radice: √25 = 5"
+  ],
+  "concetto": "modulo di un vettore"
+ },
+ {
+  "id": "GAL-003",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "superiori",
+  "domanda": "Quanto vale il prodotto scalare tra u = (1, 2, 3) e v = (4, −5, 6)?",
+  "opzioni": {
+   "A": "(4, −10, 18)",
+   "B": "32",
+   "C": "0",
+   "D": "12",
+   "E": "24"
+  },
+  "giusta": "D",
+  "perche": "Il prodotto scalare si ottiene moltiplicando le componenti corrispondenti e sommando i risultati: 1·4 + 2·(−5) + 3·6 = 4 − 10 + 18 = 12. Il risultato è un numero, non un vettore. La trappola tipica è fermarsi ai prodotti e scrivere il vettore (4, −10, 18), oppure ignorare il segno meno e ottenere 32.",
+  "semplice": "Il prodotto scalare «riassume» due vettori in un solo numero. Per esempio (1, 1)·(2, 3) = 2 + 3 = 5. Se il risultato è zero, i vettori sono perpendicolari.",
+  "passaggi": [
+   "1. Prodotti delle componenti: 1·4 = 4, 2·(−5) = −10, 3·6 = 18",
+   "2. Somma: 4 − 10 + 18",
+   "3. Risultato: 12"
+  ],
+  "concetto": "prodotto scalare"
+ },
+ {
+  "id": "GAL-004",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "superiori",
+  "domanda": "Due vettori non nulli sono perpendicolari se e solo se:",
+  "opzioni": {
+   "A": "il loro prodotto vettoriale è il vettore nullo",
+   "B": "hanno lo stesso modulo",
+   "C": "la somma delle loro componenti è zero",
+   "D": "uno è multiplo dell'altro",
+   "E": "il loro prodotto scalare è zero"
+  },
+  "giusta": "E",
+  "perche": "Il prodotto scalare vale u·v = |u||v| cos θ, dove θ è l'angolo tra i vettori. Se i vettori non sono nulli, il prodotto si annulla solo quando cos θ = 0, cioè θ = 90°. La trappola tipica è confondere con il prodotto vettoriale: è il prodotto vettoriale a essere nullo quando i vettori sono paralleli, non perpendicolari. Anche essere multipli uno dell'altro significa essere paralleli.",
+  "semplice": "I vettori (1, 0) e (0, 1) puntano uno a destra e l'altro in alto: formano un angolo retto, e infatti 1·0 + 0·1 = 0. Anche (2, 1) e (−1, 2) sono perpendicolari: −2 + 2 = 0.",
+  "passaggi": [
+   "Ricorda la formula del prodotto scalare: u·v = |u||v| cos θ.",
+   "Se u e v non sono nulli, |u| e |v| sono diversi da zero: il prodotto si annulla solo se cos θ = 0.",
+   "cos θ = 0 significa θ = 90°: i vettori sono perpendicolari.",
+   "Escludi il prodotto vettoriale nullo e «uno multiplo dell'altro»: descrivono vettori paralleli, non perpendicolari.",
+   "Conclusione: perpendicolari se e solo se il prodotto scalare è zero."
+  ],
+  "concetto": "perpendicolarità e prodotto scalare"
+ },
+ {
+  "id": "GAL-005",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "superiori",
+  "domanda": "Quanto vale −2·v se v = (1, −3, 4)?",
+  "opzioni": {
+   "A": "(−2, 6, −8)",
+   "B": "(−2, −6, −8)",
+   "C": "(2, −6, 8)",
+   "D": "(−1, −5, 2)",
+   "E": "(−2, 6, 8)"
+  },
+  "giusta": "A",
+  "perche": "Moltiplicare un vettore per un numero significa moltiplicare ogni componente per quel numero: (−2·1, −2·(−3), −2·4) = (−2, 6, −8). Il segno meno inverte il verso del vettore e il 2 ne raddoppia la lunghezza. La trappola tipica è sbagliare la regola dei segni sulla componente negativa, oppure sommare −2 alle componenti invece di moltiplicare.",
+  "semplice": "Se v indica «un passo avanti», 2v indica due passi avanti e −2v due passi indietro. Per esempio −2·(1, 0) = (−2, 0).",
+  "passaggi": [
+   "1. Prima componente: −2·1 = −2",
+   "2. Seconda: −2·(−3) = 6",
+   "3. Terza: −2·4 = −8",
+   "4. Risultato: (−2, 6, −8)"
+  ],
+  "concetto": "prodotto per uno scalare"
+ },
+ {
+  "id": "GAL-006",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "superiori",
+  "domanda": "Qual è il versore (vettore di modulo 1 con la stessa direzione e verso) di v = (0, 3, 4)?",
+  "opzioni": {
+   "A": "(0, 1, 1)",
+   "B": "(0, 3/7, 4/7)",
+   "C": "(0, 3/5, 4/5)",
+   "D": "(0, 4/5, 3/5)",
+   "E": "(0, 3/25, 4/25)"
+  },
+  "giusta": "C",
+  "perche": "Il versore si ottiene dividendo il vettore per il suo modulo. Il modulo è √(0 + 9 + 16) = 5, quindi il versore è (0, 3/5, 4/5), che ha modulo √(9/25 + 16/25) = 1. La trappola tipica è dividere per la somma delle componenti (7) o per il quadrato del modulo (25). Scambiare le componenti cambia invece la direzione.",
+  "semplice": "Il versore conserva solo la direzione e il verso, «buttando via» la lunghezza. Per esempio il versore di (5, 0) è (1, 0).",
+  "passaggi": [
+   "1. Modulo: |v| = √(0² + 3² + 4²) = 5",
+   "2. Divisione: v / 5 = (0, 3/5, 4/5)",
+   "3. Controllo: (3/5)² + (4/5)² = 1"
+  ],
+  "concetto": "versore"
+ },
+ {
+  "id": "GAL-007",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "test",
+  "domanda": "Qual è l'angolo tra i vettori u = (1, 0) e v = (1, 1)?",
+  "opzioni": {
+   "A": "30°",
+   "B": "45°",
+   "C": "60°",
+   "D": "90°",
+   "E": "135°"
+  },
+  "giusta": "B",
+  "perche": "Si usa cos θ = u·v / (|u||v|). Il prodotto scalare è 1, il modulo di u è 1 e quello di v è √2, quindi cos θ = 1/√2 e θ = 45°. La trappola tipica è dimenticare di dividere per i moduli, ottenendo cos θ = 1 e quindi un angolo nullo che non ha senso. Graficamente v è la diagonale del quadrato unitario.",
+  "semplice": "Il vettore (1, 1) va in diagonale, a metà strada tra «destra» e «su». L'asse x e la diagonale del quadrato formano proprio mezzo angolo retto, cioè 45°.",
+  "passaggi": [
+   "1. Prodotto scalare: u·v = 1·1 + 0·1 = 1",
+   "2. Moduli: |u| = 1, |v| = √2",
+   "3. cos θ = 1/√2",
+   "4. θ = 45°"
+  ],
+  "concetto": "angolo tra vettori"
+ },
+ {
+  "id": "GAL-008",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "test",
+  "domanda": "Quanto vale il prodotto vettoriale (1, 0, 0) × (0, 1, 0)?",
+  "opzioni": {
+   "A": "(0, 0, −1)",
+   "B": "0 (un numero)",
+   "C": "(1, 1, 0)",
+   "D": "(0, 0, 1)",
+   "E": "(0, 0, 0)"
+  },
+  "giusta": "D",
+  "perche": "Il prodotto vettoriale di due vettori è un vettore perpendicolare a entrambi, con verso dato dalla regola della mano destra. Per i versori degli assi vale i × j = k, cioè (0, 0, 1). La trappola tipica è sbagliare il verso, ottenendo −k, che invece è j × i: il prodotto vettoriale non è commutativo. Un altro errore è confonderlo con il prodotto scalare, che qui varrebbe 0.",
+  "semplice": "Con la mano destra: indice lungo l'asse x, medio lungo l'asse y, il pollice punta verso l'alto, lungo l'asse z. Per questo i × j = k.",
+  "passaggi": [
+   "1. Formula: u × v = (u₂v₃ − u₃v₂, u₃v₁ − u₁v₃, u₁v₂ − u₂v₁)",
+   "2. Prima componente: 0·0 − 0·1 = 0",
+   "3. Seconda: 0·0 − 1·0 = 0",
+   "4. Terza: 1·1 − 0·0 = 1",
+   "5. Risultato: (0, 0, 1)"
+  ],
+  "concetto": "prodotto vettoriale"
+ },
+ {
+  "id": "GAL-009",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "test",
+  "domanda": "Per quale valore di k i vettori (2, k, 1) e (1, 3, −4) sono perpendicolari?",
+  "opzioni": {
+   "A": "k = 2",
+   "B": "k = −2/3",
+   "C": "k = 4/3",
+   "D": "k = −2",
+   "E": "k = 2/3"
+  },
+  "giusta": "E",
+  "perche": "Due vettori sono perpendicolari quando il loro prodotto scalare è zero. Qui 2·1 + k·3 + 1·(−4) = 3k − 2, che si annulla per k = 2/3. La trappola tipica è dimenticare il segno meno della terza componente, ottenendo 3k + 6 = 0, oppure sbagliare l'ultimo passaggio scrivendo k = 3/2 o k = −2/3.",
+  "semplice": "Si impone che il prodotto scalare sia zero e si risolve un'equazione di primo grado. Per esempio (1, k) e (2, 4) sono perpendicolari quando 2 + 4k = 0, cioè k = −1/2.",
+  "passaggi": [
+   "1. Prodotto scalare: 2·1 + k·3 + 1·(−4)",
+   "2. Semplificazione: 3k − 2",
+   "3. Condizione: 3k − 2 = 0",
+   "4. Soluzione: k = 2/3"
+  ],
+  "concetto": "condizione di perpendicolarità"
+ },
+ {
+  "id": "GAL-010",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "test",
+  "domanda": "Qual è l'area del parallelogramma costruito sui vettori u = (1, 2, 0) e v = (3, 1, 0)?",
+  "opzioni": {
+   "A": "5",
+   "B": "5/2",
+   "C": "−5",
+   "D": "7",
+   "E": "25"
+  },
+  "giusta": "A",
+  "perche": "L'area del parallelogramma è il modulo del prodotto vettoriale. Si ha u × v = (0, 0, 1·1 − 2·3) = (0, 0, −5), con modulo 5. Il segno meno indica solo il verso del vettore, mentre un'area è sempre positiva. La trappola tipica è dividere per 2, che darebbe invece l'area del triangolo, o rispondere con il valore negativo.",
+  "semplice": "Il prodotto vettoriale «misura» quanta superficie coprono due vettori. Per esempio i vettori (2, 0, 0) e (0, 3, 0) formano un rettangolo di area 6, e infatti il loro prodotto vettoriale è (0, 0, 6).",
+  "passaggi": [
+   "1. Prodotto vettoriale: u × v = (2·0 − 0·1, 0·3 − 1·0, 1·1 − 2·3) = (0, 0, −5)",
+   "2. Modulo: |(0, 0, −5)| = 5",
+   "3. Area = 5"
+  ],
+  "concetto": "area e prodotto vettoriale"
+ },
+ {
+  "id": "GAL-011",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "test",
+  "domanda": "Qual è la proiezione ortogonale del vettore u = (2, 3) sulla direzione del vettore v = (1, 1)?",
+  "opzioni": {
+   "A": "(5, 5)",
+   "B": "(2, 3)",
+   "C": "(5/2, 5/2)",
+   "D": "(5/√2, 5/√2)",
+   "E": "(1, 1)"
+  },
+  "giusta": "C",
+  "perche": "La proiezione ortogonale di u su v è (u·v / v·v)·v. Qui u·v = 5 e v·v = 2, quindi la proiezione è (5/2)·(1, 1) = (5/2, 5/2). La trappola tipica è dividere per il modulo di v invece che per il suo quadrato, ottenendo (5/√2, 5/√2), che è troppo lungo. Si può controllare che u meno la proiezione, cioè (−1/2, 1/2), sia perpendicolare a v.",
+  "semplice": "La proiezione è l'«ombra» di u sulla retta di v quando la luce cade perpendicolare. Per esempio l'ombra di (3, 4) sull'asse x è (3, 0).",
+  "passaggi": [
+   "1. Prodotto scalare: u·v = 2 + 3 = 5",
+   "2. v·v = 1 + 1 = 2",
+   "3. Coefficiente: 5/2",
+   "4. Proiezione: (5/2)·(1, 1) = (5/2, 5/2)",
+   "5. Controllo: (2, 3) − (5/2, 5/2) = (−1/2, 1/2), perpendicolare a (1, 1)"
+  ],
+  "concetto": "proiezione ortogonale"
+ },
+ {
+  "id": "GAL-012",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "test",
+  "domanda": "Se |u| = 3 e |v| = 4, quale valore NON può assumere |u + v|?",
+  "opzioni": {
+   "A": "1",
+   "B": "5",
+   "C": "7",
+   "D": "8",
+   "E": "3,5"
+  },
+  "giusta": "D",
+  "perche": "Per la disuguaglianza triangolare |u + v| ≤ |u| + |v| = 7, e inoltre |u + v| ≥ ||u| − |v|| = 1. Quindi |u + v| può assumere solo valori tra 1 e 7. Il valore 1 si ha con vettori opposti, 7 con vettori concordi, 5 con vettori perpendicolari. La trappola tipica è pensare che il modulo della somma sia sempre la somma dei moduli.",
+  "semplice": "Due persone tirano una corda con forze 3 e 4: se tirano nello stesso verso la forza totale è 7, se tirano in versi opposti è 1. In nessun caso si arriva a 8.",
+  "passaggi": [
+   "1. Massimo: |u| + |v| = 7 (vettori concordi)",
+   "2. Minimo: |4 − 3| = 1 (vettori opposti)",
+   "3. Intervallo possibile: da 1 a 7",
+   "4. 8 è fuori dall'intervallo"
+  ],
+  "concetto": "disuguaglianza triangolare"
+ },
+ {
+  "id": "GAL-013",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "università",
+  "domanda": "Qual è il volume del parallelepipedo costruito sui vettori (1, 0, 0), (0, 2, 0) e (1, 1, 3)?",
+  "opzioni": {
+   "A": "3",
+   "B": "6",
+   "C": "1",
+   "D": "0",
+   "E": "2"
+  },
+  "giusta": "B",
+  "perche": "Il volume è il valore assoluto del prodotto misto, cioè del determinante della matrice che ha i tre vettori come righe: det [[1, 0, 0], [0, 2, 0], [1, 1, 3]] = 6. Sviluppando lungo la prima riga si ottiene 1·(2·3 − 0·1) = 6. La trappola tipica è dividere per 6 pensando al tetraedro, che avrebbe volume 1, o sommare le componenti.",
+  "semplice": "Il prodotto misto u·(v × w) misura il volume della «scatola» obliqua formata dai tre vettori. Se i vettori stanno nello stesso piano la scatola è schiacciata e il volume è zero.",
+  "passaggi": [
+   "1. Matrice: [[1, 0, 0], [0, 2, 0], [1, 1, 3]]",
+   "2. Sviluppo lungo la prima riga: 1·(2·3 − 0·1)",
+   "3. Determinante: 6",
+   "4. Volume = |6| = 6"
+  ],
+  "concetto": "prodotto misto e volume"
+ },
+ {
+  "id": "GAL-014",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "università",
+  "domanda": "Quanto vale il prodotto vettoriale (1, 2, 3) × (4, 5, 6)?",
+  "opzioni": {
+   "A": "(3, −6, 3)",
+   "B": "(−3, −6, −3)",
+   "C": "(4, 10, 18)",
+   "D": "(−3, 6, 3)",
+   "E": "(−3, 6, −3)"
+  },
+  "giusta": "E",
+  "perche": "Con la formula u × v = (u₂v₃ − u₃v₂, u₃v₁ − u₁v₃, u₁v₂ − u₂v₁) si ottiene (12 − 15, 12 − 6, 5 − 8) = (−3, 6, −3). Si può controllare che il risultato sia perpendicolare a entrambi: (−3, 6, −3)·(1, 2, 3) = −3 + 12 − 9 = 0. La trappola tipica è invertire l'ordine dei fattori, ottenendo il vettore opposto (3, −6, 3), oppure sbagliare il segno della componente centrale.",
+  "semplice": "Il prodotto vettoriale si può ricordare come il determinante simbolico con i, j, k nella prima riga. Il controllo più rapido è verificare che il risultato sia perpendicolare ai due vettori di partenza.",
+  "passaggi": [
+   "1. Prima componente: 2·6 − 3·5 = −3",
+   "2. Seconda: 3·4 − 1·6 = 6",
+   "3. Terza: 1·5 − 2·4 = −3",
+   "4. Risultato: (−3, 6, −3)",
+   "5. Controllo: prodotto scalare con (1, 2, 3) e con (4, 5, 6) uguale a 0"
+  ],
+  "concetto": "calcolo del prodotto vettoriale"
+ },
+ {
+  "id": "GAL-015",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "università",
+  "domanda": "Quale affermazione sul prodotto vettoriale in R³ è FALSA?",
+  "opzioni": {
+   "A": "(u × v) × w = u × (v × w) per ogni u, v, w",
+   "B": "u × v = −(v × u)",
+   "C": "u × u = 0",
+   "D": "u × v è perpendicolare sia a u sia a v",
+   "E": "|u × v| = |u||v| sin θ"
+  },
+  "giusta": "A",
+  "perche": "Il prodotto vettoriale non è associativo. Per esempio (i × i) × j = 0 × j = 0, mentre i × (i × j) = i × k = −j. Le altre proprietà sono invece vere: è anticommutativo, il prodotto di un vettore per sé stesso è nullo e il risultato è perpendicolare ai due fattori, con modulo |u||v| sin θ. La trappola tipica è estendere al prodotto vettoriale le regole del prodotto tra numeri.",
+  "semplice": "Con i numeri (2·3)·4 = 2·(3·4), ma con il prodotto vettoriale non funziona così. Basta provare con i versori degli assi per trovare un controesempio.",
+  "passaggi": [
+   "La domanda chiede l'affermazione FALSA: controlla le proprietà una per una.",
+   "Anticommutatività u × v = −(v × u), u × u = 0, perpendicolarità ai fattori e |u × v| = |u||v| sin θ sono tutte vere.",
+   "Prova l'associatività con i versori: (i × i) × j = 0 × j = 0.",
+   "Invece i × (i × j) = i × k = −j, che è diverso da 0.",
+   "Il prodotto vettoriale non è associativo: la falsa è (u × v) × w = u × (v × w)."
+  ],
+  "concetto": "proprietà del prodotto vettoriale"
+ },
+ {
+  "id": "GAL-016",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "università",
+  "domanda": "Due vettori u e v hanno |u| = 2, |v| = 5 e u·v = 10. Che cosa si può concludere?",
+  "opzioni": {
+   "A": "Sono perpendicolari",
+   "B": "Formano un angolo di 60°",
+   "C": "Sono paralleli e con lo stesso verso",
+   "D": "Sono paralleli e con verso opposto",
+   "E": "La situazione è impossibile"
+  },
+  "giusta": "C",
+  "perche": "Per la disuguaglianza di Cauchy–Schwarz |u·v| ≤ |u||v| = 10, e l'uguaglianza vale solo se i vettori sono paralleli. Poiché u·v = +10 è positivo, cos θ = 1 e l'angolo è 0°: stesso verso, e in effetti v = (5/2)u. La trappola tipica è pensare che il caso limite sia impossibile, oppure confondere il segno: con u·v = −10 sarebbero paralleli ma opposti.",
+  "semplice": "Il prodotto scalare è massimo quando i vettori puntano esattamente nella stessa direzione. Per esempio u = (2, 0) e v = (5, 0) danno u·v = 10 = 2·5.",
+  "passaggi": [
+   "1. cos θ = u·v / (|u||v|) = 10 / 10 = 1",
+   "2. θ = 0°",
+   "3. Conclusione: paralleli e concordi"
+  ],
+  "concetto": "disuguaglianza di Cauchy–Schwarz"
+ },
+ {
+  "id": "GAL-017",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "università",
+  "domanda": "Per quale valore di k i vettori (1, 0, 1), (0, 1, 1) e (1, 1, k) sono complanari?",
+  "opzioni": {
+   "A": "k = 0",
+   "B": "k = 1",
+   "C": "k = −2",
+   "D": "k = 2",
+   "E": "Per nessun valore di k"
+  },
+  "giusta": "D",
+  "perche": "Tre vettori di R³ sono complanari (linearmente dipendenti) se e solo se il loro prodotto misto, cioè il determinante della matrice che li ha come righe, è zero. Si calcola det [[1, 0, 1], [0, 1, 1], [1, 1, k]] = 1·(k − 1) + 1·(0 − 1) = k − 2, che si annulla per k = 2. Infatti per k = 2 il terzo vettore è la somma dei primi due. La trappola tipica è sbagliare un segno nello sviluppo del determinante.",
+  "semplice": "Complanari significa «appoggiati sullo stesso piano»: il volume della scatola che formano è zero. Qui (1, 0, 1) + (0, 1, 1) = (1, 1, 2), quindi con k = 2 il terzo vettore sta nel piano dei primi due.",
+  "passaggi": [
+   "1. Matrice: [[1, 0, 1], [0, 1, 1], [1, 1, k]]",
+   "2. Sviluppo lungo la prima riga: 1·(1·k − 1·1) − 0 + 1·(0·1 − 1·1)",
+   "3. Determinante: k − 1 − 1 = k − 2",
+   "4. Condizione: k − 2 = 0, quindi k = 2"
+  ],
+  "concetto": "complanarità e prodotto misto"
+ },
+ {
+  "id": "GAL-018",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Vettori",
+  "livello": "università",
+  "domanda": "Qual è l'angolo tra i vettori (1, 1, 0) e (1, 0, 1)?",
+  "opzioni": {
+   "A": "60°",
+   "B": "45°",
+   "C": "90°",
+   "D": "30°",
+   "E": "120°"
+  },
+  "giusta": "A",
+  "perche": "Si calcola cos θ = u·v / (|u||v|). Il prodotto scalare vale 1 e i due moduli valgono √2, quindi cos θ = 1/2 e θ = 60°. La trappola tipica è dimenticare la terza componente o pensare che vettori «diversi» siano per forza perpendicolari. Il risultato si capisce anche geometricamente: i due vettori sono diagonali di facce adiacenti di un cubo e formano un triangolo equilatero con (0, 1, −1).",
+  "semplice": "Le diagonali di due facce vicine di un cubo, uscenti dallo stesso spigolo, formano un angolo di 60°. Il calcolo con il prodotto scalare lo conferma.",
+  "passaggi": [
+   "1. Prodotto scalare: 1·1 + 1·0 + 0·1 = 1",
+   "2. Moduli: √2 e √2",
+   "3. cos θ = 1/2",
+   "4. θ = 60°"
+  ],
+  "concetto": "angolo tra vettori nello spazio"
+ },
+ {
+  "id": "GAL-019",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "superiori",
+  "domanda": "Quanto vale la somma delle matrici [[1, 2], [3, 4]] e [[0, −1], [2, 5]]?",
+  "opzioni": {
+   "A": "[[1, 3], [1, −1]]",
+   "B": "[[1, 1], [5, 9]]",
+   "C": "[[0, −2], [6, 20]]",
+   "D": "[[1, 1], [5, −1]]",
+   "E": "[[2, 1], [5, 9]]"
+  },
+  "giusta": "B",
+  "perche": "Due matrici della stessa dimensione si sommano elemento per elemento, nella stessa posizione. Si ottiene [[1 + 0, 2 − 1], [3 + 2, 4 + 5]] = [[1, 1], [5, 9]]. La trappola tipica è moltiplicare gli elementi corrispondenti, ottenendo [[0, −2], [6, 20]], oppure sottrarre le matrici. Ricorda che la somma non è definita tra matrici di dimensioni diverse.",
+  "semplice": "Una matrice è una tabella di numeri. Sommare due tabelle significa sommare le caselle che si trovano nello stesso posto, come quando sommi le vendite di due mesi negozio per negozio.",
+  "passaggi": [
+   "1. Riga 1: 1 + 0 = 1 e 2 + (−1) = 1",
+   "2. Riga 2: 3 + 2 = 5 e 4 + 5 = 9",
+   "3. Risultato: [[1, 1], [5, 9]]"
+  ],
+  "concetto": "somma di matrici"
+ },
+ {
+  "id": "GAL-020",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "superiori",
+  "domanda": "Quanto vale il determinante della matrice [[3, 1], [2, 4]]?",
+  "opzioni": {
+   "A": "10",
+   "B": "14",
+   "C": "2",
+   "D": "−10",
+   "E": "5"
+  },
+  "giusta": "A",
+  "perche": "Per una matrice 2×2 [[a, b], [c, d]] il determinante è ad − bc. Qui si ottiene 3·4 − 1·2 = 12 − 2 = 10. La trappola tipica è sommare i due prodotti invece di sottrarli (14) o invertire l'ordine della sottrazione (−10). Un altro errore è moltiplicare gli elementi delle righe invece di quelli delle diagonali.",
+  "semplice": "Il determinante 2×2 è «diagonale principale meno diagonale secondaria». Per esempio det [[2, 1], [1, 3]] = 6 − 1 = 5.",
+  "passaggi": [
+   "1. Diagonale principale: 3·4 = 12",
+   "2. Diagonale secondaria: 1·2 = 2",
+   "3. Differenza: 12 − 2 = 10"
+  ],
+  "concetto": "determinante 2×2"
+ },
+ {
+  "id": "GAL-021",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "superiori",
+  "domanda": "Quanto vale il prodotto righe per colonne A·B con A = [[1, 2], [0, 1]] e B = [[3, 0], [1, 2]]?",
+  "opzioni": {
+   "A": "[[3, 0], [0, 2]]",
+   "B": "[[3, 6], [1, 4]]",
+   "C": "[[4, 2], [1, 3]]",
+   "D": "[[5, 4], [1, 2]]",
+   "E": "[[5, 2], [1, 4]]"
+  },
+  "giusta": "D",
+  "perche": "Nel prodotto righe per colonne l'elemento in posizione (i, j) è il prodotto scalare tra la riga i di A e la colonna j di B. Si ottiene: riga 1 per colonna 1 = 1·3 + 2·1 = 5, riga 1 per colonna 2 = 1·0 + 2·2 = 4, riga 2 per colonna 1 = 1, riga 2 per colonna 2 = 2. La trappola tipica è moltiplicare elemento per elemento, oppure calcolare B·A, che dà [[3, 6], [1, 4]]: il prodotto di matrici non è commutativo.",
+  "semplice": "Ogni casella del risultato nasce da «una riga di A che incontra una colonna di B». Per esempio la riga (1, 2) incontra la colonna (3, 1): 1·3 + 2·1 = 5.",
+  "passaggi": [
+   "1. (1,1): 1·3 + 2·1 = 5",
+   "2. (1,2): 1·0 + 2·2 = 4",
+   "3. (2,1): 0·3 + 1·1 = 1",
+   "4. (2,2): 0·0 + 1·2 = 2",
+   "5. Risultato: [[5, 4], [1, 2]]"
+  ],
+  "concetto": "prodotto righe per colonne"
+ },
+ {
+  "id": "GAL-022",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "superiori",
+  "domanda": "Qual è la trasposta della matrice [[1, 2, 3], [4, 5, 6]]?",
+  "opzioni": {
+   "A": "[[3, 2, 1], [6, 5, 4]]",
+   "B": "[[4, 5, 6], [1, 2, 3]]",
+   "C": "[[1, 2], [3, 4], [5, 6]]",
+   "D": "[[6, 5, 4], [3, 2, 1]]",
+   "E": "[[1, 4], [2, 5], [3, 6]]"
+  },
+  "giusta": "E",
+  "perche": "La trasposta si ottiene scambiando righe e colonne: la prima riga (1, 2, 3) diventa la prima colonna, la seconda riga (4, 5, 6) la seconda colonna. Una matrice 2×3 diventa quindi 3×2: [[1, 4], [2, 5], [3, 6]]. La trappola tipica è riscrivere gli stessi numeri in ordine di lettura in una tabella 3×2, ottenendo [[1, 2], [3, 4], [5, 6]], che ha la forma giusta ma il contenuto sbagliato.",
+  "semplice": "Trasporre è come «ribaltare» la tabella lungo la diagonale: quello che stava in riga i e colonna j va in riga j e colonna i.",
+  "passaggi": [
+   "1. Prima riga (1, 2, 3) → prima colonna",
+   "2. Seconda riga (4, 5, 6) → seconda colonna",
+   "3. Risultato 3×2: [[1, 4], [2, 5], [3, 6]]"
+  ],
+  "concetto": "matrice trasposta"
+ },
+ {
+  "id": "GAL-023",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "superiori",
+  "domanda": "A è una matrice 2×3 e B è una matrice 3×4. Che dimensione ha il prodotto A·B?",
+  "opzioni": {
+   "A": "3×3",
+   "B": "2×3",
+   "C": "2×4",
+   "D": "4×2",
+   "E": "Il prodotto non è definito"
+  },
+  "giusta": "C",
+  "perche": "Il prodotto A·B è definito quando il numero di colonne di A è uguale al numero di righe di B: qui 3 = 3, quindi si può fare. Il risultato ha tante righe quante A (2) e tante colonne quante B (4): è una matrice 2×4. La trappola tipica è concludere che il prodotto non esiste perché le matrici hanno forme diverse, oppure invertire righe e colonne del risultato.",
+  "semplice": "Scrivi le dimensioni una accanto all'altra: (2×3)(3×4). I numeri «interni» devono coincidere, quelli «esterni» danno la dimensione del risultato: 2×4.",
+  "passaggi": [
+   "Dati: A è 2×3 (2 righe, 3 colonne), B è 3×4 (3 righe, 4 colonne).",
+   "Regola: A·B esiste se le colonne di A sono quante le righe di B; qui 3 = 3, quindi il prodotto esiste.",
+   "Il risultato ha le righe di A e le colonne di B.",
+   "Risultato: A·B è una matrice 2×4."
+  ],
+  "concetto": "dimensioni nel prodotto di matrici"
+ },
+ {
+  "id": "GAL-024",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "superiori",
+  "domanda": "Una matrice quadrata ha due righe uguali. Quanto vale il suo determinante?",
+  "opzioni": {
+   "A": "1",
+   "B": "0",
+   "C": "Il quadrato della somma delle righe",
+   "D": "Dipende dagli altri elementi",
+   "E": "−1"
+  },
+  "giusta": "B",
+  "perche": "Se una matrice ha due righe uguali il determinante è sempre zero. Infatti scambiando le due righe il determinante cambia segno, ma la matrice resta la stessa: l'unico numero uguale al proprio opposto è zero. Lo stesso vale se una riga è multipla di un'altra o se c'è una riga di zeri. La trappola tipica è pensare che il risultato dipenda dagli altri numeri della matrice.",
+  "semplice": "Per esempio det [[2, 5], [2, 5]] = 2·5 − 5·2 = 0. Due righe uguali sono «informazioni ripetute»: la matrice non è invertibile.",
+  "passaggi": [
+   "Ricorda: scambiando due righe il determinante cambia segno.",
+   "Se le due righe sono uguali, lo scambio lascia la matrice identica, quindi det = −det.",
+   "L'unico numero uguale al proprio opposto è 0.",
+   "Il risultato non dipende dagli altri elementi: il determinante è 0."
+  ],
+  "concetto": "proprietà del determinante"
+ },
+ {
+  "id": "GAL-025",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "test",
+  "domanda": "Quanto vale il determinante della matrice [[2, 0, 1], [1, 3, 2], [0, 1, 4]]?",
+  "opzioni": {
+   "A": "19",
+   "B": "23",
+   "C": "20",
+   "D": "21",
+   "E": "0"
+  },
+  "giusta": "D",
+  "perche": "Conviene sviluppare con la regola di Laplace lungo la prima riga, che contiene uno zero. Si ottiene 2·det [[3, 2], [1, 4]] − 0 + 1·det [[1, 3], [0, 1]] = 2·(12 − 2) + 1·(1 − 0) = 20 + 1 = 21. La trappola tipica è dimenticare il segno alternato dei complementi algebrici o fermarsi al primo termine (20). Si può controllare con la regola di Sarrus.",
+  "semplice": "Il determinante 3×3 si riduce a tre determinanti 2×2. Scegliere la riga con più zeri fa risparmiare calcoli.",
+  "passaggi": [
+   "1. Sviluppo lungo la prima riga: 2·M₁₁ − 0·M₁₂ + 1·M₁₃",
+   "2. M₁₁ = det [[3, 2], [1, 4]] = 12 − 2 = 10",
+   "3. M₁₃ = det [[1, 3], [0, 1]] = 1",
+   "4. Somma: 2·10 + 1·1 = 21"
+  ],
+  "concetto": "determinante 3×3 (Laplace)"
+ },
+ {
+  "id": "GAL-026",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "test",
+  "domanda": "Qual è l'inversa della matrice [[2, 1], [5, 3]]?",
+  "opzioni": {
+   "A": "[[3, −1], [−5, 2]]",
+   "B": "[[−3, 1], [5, −2]]",
+   "C": "[[1/2, 1], [1/5, 1/3]]",
+   "D": "[[2, −5], [−1, 3]]",
+   "E": "Non esiste perché la matrice non è invertibile"
+  },
+  "giusta": "A",
+  "perche": "Per una matrice 2×2 [[a, b], [c, d]] l'inversa è (1/det)·[[d, −b], [−c, a]]. Qui det = 2·3 − 1·5 = 1, quindi l'inversa è [[3, −1], [−5, 2]]. Si controlla moltiplicando: [[2, 1], [5, 3]]·[[3, −1], [−5, 2]] = [[1, 0], [0, 1]]. La trappola tipica è invertire i singoli elementi (1/2, 1/5, ...) oppure sbagliare i segni fuori diagonale.",
+  "semplice": "La ricetta 2×2: scambia gli elementi della diagonale principale, cambia segno agli altri due e dividi per il determinante. Se il determinante fosse zero l'inversa non esisterebbe.",
+  "passaggi": [
+   "1. Determinante: 2·3 − 1·5 = 1",
+   "2. Scambio diagonale: 2 ↔ 3",
+   "3. Cambio di segno: 1 → −1, 5 → −5",
+   "4. Divisione per det = 1: [[3, −1], [−5, 2]]",
+   "5. Controllo: A·A⁻¹ = I"
+  ],
+  "concetto": "inversa di una matrice 2×2"
+ },
+ {
+  "id": "GAL-027",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "test",
+  "domanda": "A è una matrice 3×3 con det A = 5. Quanto vale det(2A)?",
+  "opzioni": {
+   "A": "10",
+   "B": "20",
+   "C": "25",
+   "D": "80",
+   "E": "40"
+  },
+  "giusta": "E",
+  "perche": "Moltiplicare la matrice per 2 significa moltiplicare per 2 ciascuna delle 3 righe, e ogni riga moltiplicata per 2 raddoppia il determinante. Quindi det(2A) = 2³·det A = 8·5 = 40. In generale per una matrice n×n vale det(kA) = kⁿ det A. La trappola tipica è pensare che il determinante raddoppi soltanto, rispondendo 10.",
+  "semplice": "Pensa al volume: se ingrandisci un cubo raddoppiando ogni lato, il volume diventa 8 volte più grande. Il determinante 3×3 si comporta come un volume.",
+  "passaggi": [
+   "1. Regola: det(kA) = kⁿ det A",
+   "2. n = 3, k = 2: 2³ = 8",
+   "3. det(2A) = 8·5 = 40"
+  ],
+  "concetto": "determinante e multipli"
+ },
+ {
+  "id": "GAL-028",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "test",
+  "domanda": "Per quale valore di k la matrice [[1, k], [2, 8]] NON è invertibile?",
+  "opzioni": {
+   "A": "k = 2",
+   "B": "k = −4",
+   "C": "k = 4",
+   "D": "k = 16",
+   "E": "k = 1/4"
+  },
+  "giusta": "C",
+  "perche": "Una matrice quadrata è invertibile se e solo se il suo determinante è diverso da zero. Qui det = 1·8 − 2k = 8 − 2k, che si annulla per k = 4. Per k = 4 la seconda riga (2, 8) è il doppio della prima (1, 4). La trappola tipica è risolvere male l'equazione, per esempio scrivendo k = 16 o k = −4.",
+  "semplice": "Una matrice è «bloccata» (non invertibile) quando una riga è un multiplo dell'altra. Con k = 4 la riga (2, 8) è proprio 2 volte (1, 4).",
+  "passaggi": [
+   "1. Determinante: 1·8 − k·2 = 8 − 2k",
+   "2. Condizione di non invertibilità: 8 − 2k = 0",
+   "3. Soluzione: k = 4"
+  ],
+  "concetto": "invertibilità e determinante"
+ },
+ {
+  "id": "GAL-029",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "test",
+  "domanda": "A e B sono matrici 3×3 con det A = 3 e det B = −2. Quanto vale det(AB)?",
+  "opzioni": {
+   "A": "1",
+   "B": "−6",
+   "C": "−5",
+   "D": "6",
+   "E": "9"
+  },
+  "giusta": "B",
+  "perche": "Il teorema di Binet afferma che il determinante di un prodotto è il prodotto dei determinanti: det(AB) = det A · det B = 3·(−2) = −6. La trappola tipica è sommare i determinanti, ottenendo 1, oppure perdere il segno. Attenzione: per la somma non vale nessuna regola simile, cioè in generale det(A + B) ≠ det A + det B.",
+  "semplice": "Il determinante misura di quanto una matrice «ingrandisce» le aree o i volumi. Se A li triplica e B li raddoppia ribaltandoli, fare una dopo l'altra le moltiplica per −6.",
+  "passaggi": [
+   "1. Teorema di Binet: det(AB) = det A · det B",
+   "2. Calcolo: 3·(−2) = −6"
+  ],
+  "concetto": "teorema di Binet"
+ },
+ {
+  "id": "GAL-030",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "test",
+  "domanda": "Quale affermazione è vera per TUTTE le matrici quadrate A e B della stessa dimensione?",
+  "opzioni": {
+   "A": "AB = BA",
+   "B": "(A + B)² = A² + 2AB + B²",
+   "C": "Se AB = 0 allora A = 0 oppure B = 0",
+   "D": "det(AB) = det(BA)",
+   "E": "det(A + B) = det A + det B"
+  },
+  "giusta": "D",
+  "perche": "Per il teorema di Binet det(AB) = det A · det B = det B · det A = det(BA), perché i determinanti sono numeri e i numeri commutano. Le altre affermazioni falliscono perché il prodotto di matrici non è commutativo: (A + B)² = A² + AB + BA + B² e AB ≠ BA in generale. Inoltre esistono matrici non nulle con prodotto nullo, come [[0, 1], [0, 0]] moltiplicata per sé stessa.",
+  "semplice": "Con le matrici molte regole dell'algebra dei numeri cadono. Per esempio [[0, 1], [0, 0]]·[[0, 1], [0, 0]] dà la matrice nulla anche se nessuno dei due fattori è nullo.",
+  "passaggi": [
+   "Cerca una proprietà che valga per tutte le matrici, ricordando che in generale AB ≠ BA.",
+   "AB = BA è falsa; (A + B)² = A² + AB + BA + B², che è diverso da A² + 2AB + B² se AB ≠ BA.",
+   "AB = 0 non implica A = 0 o B = 0: [[0, 1], [0, 0]] al quadrato dà la matrice nulla. E det(A + B) ≠ det A + det B in generale.",
+   "Per il teorema di Binet det(AB) = det A · det B, e i numeri commutano: det A · det B = det B · det A = det(BA).",
+   "Resta la D: det(AB) = det(BA)."
+  ],
+  "concetto": "non commutatività del prodotto"
+ },
+ {
+  "id": "GAL-031",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "università",
+  "domanda": "A è una matrice 3×3 con det A = 4. Quanto vale det(2A⁻¹)?",
+  "opzioni": {
+   "A": "2",
+   "B": "1/2",
+   "C": "8",
+   "D": "1/32",
+   "E": "32"
+  },
+  "giusta": "A",
+  "perche": "Si usano due proprietà: det(A⁻¹) = 1/det A e det(kM) = kⁿ det M per una matrice n×n. Quindi det(2A⁻¹) = 2³·(1/4) = 8/4 = 2. La trappola tipica è dimenticare l'esponente 3 sul fattore 2, ottenendo 1/2, oppure invertire anche il 2 ottenendo 1/32.",
+  "semplice": "Dividi il problema in due pezzi: prima l'inversa (determinante 1/4), poi il fattore 2 su ogni riga (moltiplica per 8). Il risultato è 2.",
+  "passaggi": [
+   "1. det(A⁻¹) = 1/4",
+   "2. det(2M) = 2³ det M = 8 det M",
+   "3. det(2A⁻¹) = 8·(1/4) = 2"
+  ],
+  "concetto": "determinante dell'inversa"
+ },
+ {
+  "id": "GAL-032",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "università",
+  "domanda": "Qual è il rango della matrice [[1, 2, 3], [2, 4, 6], [1, 0, 1]]?",
+  "opzioni": {
+   "A": "1",
+   "B": "3",
+   "C": "0",
+   "D": "Dipende dalla base scelta",
+   "E": "2"
+  },
+  "giusta": "E",
+  "perche": "Il rango è il numero massimo di righe (o colonne) linearmente indipendenti. La seconda riga è il doppio della prima, quindi il determinante 3×3 è zero e il rango è minore di 3. Le righe (1, 2, 3) e (1, 0, 1) non sono proporzionali, e il minore [[1, 2], [1, 0]] vale −2 ≠ 0, quindi il rango è 2. La trappola tipica è fermarsi al determinante nullo e concludere che il rango sia 1 o 0.",
+  "semplice": "Il rango conta le righe «davvero nuove». Qui la seconda riga ripete la prima raddoppiata, mentre la terza porta informazione nuova: in tutto due righe utili.",
+  "passaggi": [
+   "1. Riga 2 = 2 · Riga 1 → det = 0, rango < 3",
+   "2. Minore 2×2 [[1, 2], [1, 0]]: 1·0 − 2·1 = −2 ≠ 0",
+   "3. Rango = 2"
+  ],
+  "concetto": "rango di una matrice"
+ },
+ {
+  "id": "GAL-033",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "università",
+  "domanda": "Q è una matrice reale ortogonale (QᵀQ = I). Quali valori può assumere det Q?",
+  "opzioni": {
+   "A": "Solo 1",
+   "B": "Qualsiasi numero diverso da zero",
+   "C": "1 oppure −1",
+   "D": "0",
+   "E": "Solo −1"
+  },
+  "giusta": "C",
+  "perche": "Da QᵀQ = I, per Binet si ha det(Qᵀ)·det(Q) = 1. Poiché det(Qᵀ) = det(Q), si ottiene (det Q)² = 1, cioè det Q = 1 oppure det Q = −1. Le rotazioni hanno determinante 1, le simmetrie (riflessioni) −1. La trappola tipica è pensare che una matrice ortogonale sia sempre una rotazione e quindi abbia determinante 1.",
+  "semplice": "Le matrici ortogonali non deformano le figure: conservano lunghezze e angoli. Per esempio la simmetria [[1, 0], [0, −1]] è ortogonale e ha determinante −1.",
+  "passaggi": [
+   "1. QᵀQ = I",
+   "2. Binet: det(Qᵀ)·det(Q) = det I = 1",
+   "3. det(Qᵀ) = det(Q) → (det Q)² = 1",
+   "4. det Q = ±1"
+  ],
+  "concetto": "matrici ortogonali"
+ },
+ {
+  "id": "GAL-034",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "università",
+  "domanda": "Quanto vale il determinante della matrice triangolare [[2, 7, −1], [0, 3, 5], [0, 0, −4]]?",
+  "opzioni": {
+   "A": "1",
+   "B": "−24",
+   "C": "24",
+   "D": "−2",
+   "E": "0"
+  },
+  "giusta": "B",
+  "perche": "Il determinante di una matrice triangolare è il prodotto degli elementi sulla diagonale principale: 2·3·(−4) = −24. Gli elementi sopra la diagonale non contano, come si vede sviluppando lungo la prima colonna. La trappola tipica è sommare gli elementi diagonali (che dà la traccia, 1) oppure perdere il segno negativo.",
+  "semplice": "Con una matrice triangolare il determinante si legge «a colpo d'occhio»: basta moltiplicare la diagonale. Per questo la riduzione a scala è un buon metodo per calcolare determinanti grandi.",
+  "passaggi": [
+   "1. La matrice è triangolare superiore",
+   "2. Prodotto della diagonale: 2·3·(−4)",
+   "3. Risultato: −24"
+  ],
+  "concetto": "determinante di matrici triangolari"
+ },
+ {
+  "id": "GAL-035",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "università",
+  "domanda": "A è una matrice 3×3 con det A = 7. B si ottiene da A scambiando due righe e poi moltiplicando una riga per 3. Quanto vale det B?",
+  "opzioni": {
+   "A": "21",
+   "B": "−7",
+   "C": "10",
+   "D": "−21",
+   "E": "7"
+  },
+  "giusta": "D",
+  "perche": "Le operazioni elementari agiscono sul determinante in modo preciso: scambiare due righe cambia il segno, moltiplicare una riga per k moltiplica il determinante per k, sommare a una riga un multiplo di un'altra non lo cambia. Quindi det B = (−1)·3·7 = −21. La trappola tipica è dimenticare il cambio di segno dovuto allo scambio, rispondendo 21.",
+  "semplice": "Ogni mossa sulle righe ha il suo «prezzo»: lo scambio cambia segno, la moltiplicazione per 3 triplica. Applicandoli in sequenza: 7 → −7 → −21.",
+  "passaggi": [
+   "1. Scambio di due righe: 7 → −7",
+   "2. Una riga moltiplicata per 3: −7 → −21",
+   "3. det B = −21"
+  ],
+  "concetto": "operazioni elementari e determinante"
+ },
+ {
+  "id": "GAL-036",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Matrici e determinanti",
+  "livello": "università",
+  "domanda": "A è una matrice quadrata con A² = 0 (matrice nulla). Che cosa si può concludere con certezza?",
+  "opzioni": {
+   "A": "det A = 0",
+   "B": "A è la matrice nulla",
+   "C": "A è la matrice identità",
+   "D": "det A = 1",
+   "E": "A è invertibile"
+  },
+  "giusta": "A",
+  "perche": "Per il teorema di Binet (det A)² = det(A²) = det 0 = 0, quindi det A = 0 e A non è invertibile. Non si può però concludere che A sia nulla: per esempio [[0, 1], [0, 0]] non è nulla ma il suo quadrato è la matrice nulla. Matrici di questo tipo si chiamano nilpotenti. La trappola tipica è ragionare come con i numeri, dove x² = 0 implica x = 0.",
+  "semplice": "Con i numeri, se x·x = 0 allora x = 0. Con le matrici no: [[0, 1], [0, 0]] moltiplicata per sé stessa dà zero. Quello che si può dire è solo che il determinante è zero.",
+  "passaggi": [
+   "1. det(A²) = (det A)²",
+   "2. A² = 0 → (det A)² = 0",
+   "3. det A = 0",
+   "4. Controesempio a «A = 0»: [[0, 1], [0, 0]]"
+  ],
+  "concetto": "matrici nilpotenti"
+ },
+ {
+  "id": "GAL-037",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "superiori",
+  "domanda": "Qual è la soluzione del sistema x + y = 5, x − y = 1?",
+  "opzioni": {
+   "A": "(2, 3)",
+   "B": "(4, 1)",
+   "C": "(3, 2)",
+   "D": "(5, 0)",
+   "E": "Il sistema non ha soluzioni"
+  },
+  "giusta": "C",
+  "perche": "Sommando le due equazioni si elimina y: 2x = 6, quindi x = 3; sostituendo nella prima si trova y = 2. La soluzione è la coppia (3, 2), che soddisfa entrambe le equazioni: 3 + 2 = 5 e 3 − 2 = 1. La trappola tipica è scambiare l'ordine e scrivere (2, 3), che verifica la prima equazione ma non la seconda. Controllare sempre la soluzione in tutte le equazioni.",
+  "semplice": "Cerchi due numeri che sommati danno 5 e la cui differenza è 1: sono 3 e 2. Il primo numero della coppia è x, il secondo è y.",
+  "passaggi": [
+   "1. Somma delle equazioni: 2x = 6",
+   "2. x = 3",
+   "3. Sostituzione: 3 + y = 5 → y = 2",
+   "4. Controllo: 3 − 2 = 1 ✓",
+   "5. Soluzione: (3, 2)"
+  ],
+  "concetto": "metodo di riduzione"
+ },
+ {
+  "id": "GAL-038",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "superiori",
+  "domanda": "Nel sistema x = 3, 2x + 3y = 12, quanto vale y?",
+  "opzioni": {
+   "A": "2",
+   "B": "3",
+   "C": "6",
+   "D": "4",
+   "E": "0"
+  },
+  "giusta": "A",
+  "perche": "Con il metodo di sostituzione si mette x = 3 nella seconda equazione: 6 + 3y = 12, quindi 3y = 6 e y = 2. La trappola tipica è dimenticare di moltiplicare x per 2, ottenendo 3 + 3y = 12 e y = 3. Un altro errore è fermarsi a 3y = 6 e rispondere 6.",
+  "semplice": "Quando una incognita è già nota, basta sostituirla nell'altra equazione. È come completare un cruciverba partendo da una parola già scritta.",
+  "passaggi": [
+   "1. Sostituzione: 2·3 + 3y = 12",
+   "2. 6 + 3y = 12 → 3y = 6",
+   "3. y = 2"
+  ],
+  "concetto": "metodo di sostituzione"
+ },
+ {
+  "id": "GAL-039",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "superiori",
+  "domanda": "Quante soluzioni ha il sistema x + 2y = 3, 2x + 4y = 6?",
+  "opzioni": {
+   "A": "Una sola",
+   "B": "Nessuna",
+   "C": "Due",
+   "D": "Solo la coppia (1, 1)",
+   "E": "Infinite"
+  },
+  "giusta": "E",
+  "perche": "La seconda equazione è esattamente il doppio della prima: le due equazioni descrivono la stessa retta. Ogni punto di quella retta è soluzione, quindi le soluzioni sono infinite, per esempio (1, 1), (3, 0), (−1, 2). Il sistema si dice indeterminato. La trappola tipica è trovare una soluzione, come (1, 1), e pensare che sia l'unica.",
+  "semplice": "Due equazioni che dicono la stessa cosa non aggiungono informazione: è come avere un solo indizio per due incognite. Le soluzioni si scrivono con un parametro: x = 3 − 2t, y = t.",
+  "passaggi": [
+   "1. Seconda equazione = 2 · prima equazione",
+   "2. Le rette coincidono",
+   "3. Soluzioni: x = 3 − 2t, y = t con t qualsiasi"
+  ],
+  "concetto": "sistema indeterminato"
+ },
+ {
+  "id": "GAL-040",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "superiori",
+  "domanda": "Quante soluzioni ha il sistema x + 2y = 3, 2x + 4y = 7?",
+  "opzioni": {
+   "A": "Infinite",
+   "B": "Nessuna: il sistema è impossibile",
+   "C": "Una sola, (1, 1)",
+   "D": "Due",
+   "E": "Una sola, (3, 0)"
+  },
+  "giusta": "B",
+  "perche": "Moltiplicando la prima equazione per 2 si ottiene 2x + 4y = 6, che contraddice 2x + 4y = 7: la stessa espressione non può valere sia 6 sia 7. Geometricamente le due rette hanno la stessa pendenza ma termini noti incompatibili: sono parallele e distinte, quindi non si incontrano mai. La trappola tipica è guardare solo i coefficienti delle incognite, uguali a quelli del caso indeterminato, senza controllare i termini noti.",
+  "semplice": "Due rette parallele non hanno punti in comune. Qui le rette hanno la stessa «inclinazione» ma sono spostate una rispetto all'altra.",
+  "passaggi": [
+   "1. Prima equazione · 2: 2x + 4y = 6",
+   "2. Confronto con 2x + 4y = 7: 6 ≠ 7",
+   "3. Il sistema è impossibile"
+  ],
+  "concetto": "sistema impossibile"
+ },
+ {
+  "id": "GAL-041",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "superiori",
+  "domanda": "Un sistema di due equazioni lineari in due incognite ha esattamente una soluzione. Che cosa rappresentano geometricamente le due equazioni?",
+  "opzioni": {
+   "A": "Due rette parallele e distinte",
+   "B": "Due rette coincidenti",
+   "C": "Due rette sempre perpendicolari",
+   "D": "Due rette incidenti in un punto",
+   "E": "Due rette sghembe"
+  },
+  "giusta": "D",
+  "perche": "Ogni equazione lineare in x e y rappresenta una retta nel piano, e le soluzioni del sistema sono i punti comuni alle due rette. Una sola soluzione significa che le rette si incontrano in un solo punto: sono incidenti. Non devono per forza essere perpendicolari, basta che abbiano pendenze diverse. Le rette sghembe esistono solo nello spazio, mai nel piano.",
+  "semplice": "Disegna due rette con inclinazioni diverse: si incrociano in un punto, come due strade a un incrocio. Le coordinate dell'incrocio sono la soluzione del sistema.",
+  "passaggi": [
+   "Ogni equazione lineare in x e y rappresenta una retta nel piano.",
+   "Le soluzioni del sistema sono i punti comuni alle due rette.",
+   "Rette parallele distinte: nessuna soluzione; rette coincidenti: infinite soluzioni; rette sghembe non esistono nel piano.",
+   "Una sola soluzione significa un solo punto in comune: le rette sono incidenti (non per forza perpendicolari)."
+  ],
+  "concetto": "interpretazione geometrica"
+ },
+ {
+  "id": "GAL-042",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "superiori",
+  "domanda": "Con la regola di Cramer, quanto vale x nel sistema 3x + y = 7, x + 2y = 4?",
+  "opzioni": {
+   "A": "2",
+   "B": "1",
+   "C": "10",
+   "D": "7/3",
+   "E": "5"
+  },
+  "giusta": "A",
+  "perche": "Il determinante della matrice dei coefficienti è 3·2 − 1·1 = 5. Per x si sostituisce la colonna dei coefficienti di x con i termini noti: det [[7, 1], [4, 2]] = 14 − 4 = 10. Quindi x = 10/5 = 2 (e allo stesso modo y = 1). La trappola tipica è fermarsi al numeratore (10) o dividere per il termine noto.",
+  "semplice": "Cramer: x = (determinante con i termini noti al posto della colonna di x) diviso (determinante dei coefficienti). Controllo: 3·2 + 1 = 7 e 2 + 2·1 = 4.",
+  "passaggi": [
+   "1. D = det [[3, 1], [1, 2]] = 6 − 1 = 5",
+   "2. Dₓ = det [[7, 1], [4, 2]] = 14 − 4 = 10",
+   "3. x = Dₓ/D = 2",
+   "4. Controllo con y = 1: 3·2 + 1 = 7 ✓"
+  ],
+  "concetto": "regola di Cramer"
+ },
+ {
+  "id": "GAL-043",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "test",
+  "domanda": "Qual è la soluzione del sistema x + y + z = 6, y + z = 5, z = 3?",
+  "opzioni": {
+   "A": "(3, 2, 1)",
+   "B": "(1, 1, 4)",
+   "C": "(2, 2, 2)",
+   "D": "(1, 3, 2)",
+   "E": "(1, 2, 3)"
+  },
+  "giusta": "E",
+  "perche": "Il sistema è già in forma triangolare (a scala) e si risolve all'indietro: dalla terza equazione z = 3, dalla seconda y = 5 − 3 = 2, dalla prima x = 6 − 2 − 3 = 1. La soluzione è (1, 2, 3). La trappola tipica è leggere i valori nell'ordine sbagliato, scrivendo (3, 2, 1). Controllare: 1 + 2 + 3 = 6 ✓.",
+  "semplice": "Un sistema a scala si risolve «dal basso verso l'alto», come salire una scala al contrario: ogni equazione aggiunge una sola incognita nuova.",
+  "passaggi": [
+   "1. z = 3",
+   "2. y = 5 − z = 2",
+   "3. x = 6 − y − z = 1",
+   "4. Soluzione: (1, 2, 3)"
+  ],
+  "concetto": "sostituzione all'indietro"
+ },
+ {
+  "id": "GAL-044",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "test",
+  "domanda": "In un sistema lineare il rango della matrice dei coefficienti è 2 e il rango della matrice completa è 3. Quante soluzioni ha il sistema?",
+  "opzioni": {
+   "A": "Una sola",
+   "B": "Nessuna",
+   "C": "Infinite, con un parametro libero",
+   "D": "Infinite, con due parametri liberi",
+   "E": "Esattamente due"
+  },
+  "giusta": "B",
+  "perche": "Il teorema di Rouché–Capelli afferma che un sistema ha soluzioni se e solo se la matrice dei coefficienti e la matrice completa hanno lo stesso rango. Qui i ranghi sono diversi (2 e 3), quindi il sistema è impossibile. La trappola tipica è usare il numero di incognite per contare i parametri senza aver prima controllato la compatibilità. Un sistema lineare non può mai avere esattamente due soluzioni.",
+  "semplice": "Se aggiungendo la colonna dei termini noti il rango cresce, vuol dire che i termini noti introducono una contraddizione, come 0 = 1 dopo la riduzione a scala.",
+  "passaggi": [
+   "Dati: rango della matrice dei coefficienti = 2, rango della matrice completa = 3.",
+   "Teorema di Rouché–Capelli: il sistema ha soluzioni se e solo se i due ranghi sono uguali.",
+   "Qui 2 ≠ 3, quindi il sistema è incompatibile.",
+   "Non serve contare le incognite: il sistema non ha nessuna soluzione."
+  ],
+  "concetto": "teorema di Rouché–Capelli"
+ },
+ {
+  "id": "GAL-045",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "test",
+  "domanda": "Che cosa si può dire con certezza di un sistema lineare omogeneo AX = 0?",
+  "opzioni": {
+   "A": "Può essere impossibile",
+   "B": "Ha solo la soluzione nulla",
+   "C": "Ammette sempre almeno la soluzione nulla",
+   "D": "Ha sempre infinite soluzioni",
+   "E": "È impossibile se det A = 0"
+  },
+  "giusta": "C",
+  "perche": "In un sistema omogeneo tutti i termini noti sono zero, quindi X = 0 è sempre una soluzione: il sistema non è mai impossibile. Se A è quadrata con det A ≠ 0, la soluzione nulla è l'unica; se det A = 0 ci sono anche infinite soluzioni non nulle. La trappola tipica è pensare che det A = 0 renda il sistema impossibile, mentre lo rende indeterminato.",
+  "semplice": "Mettere tutte le incognite a zero rende vera ogni equazione del tipo «… = 0». Per esempio x + 2y = 0 è soddisfatta da (0, 0), ma anche da (2, −1).",
+  "passaggi": [
+   "In un sistema omogeneo AX = 0 tutti i termini noti sono zero.",
+   "Sostituendo X = 0 si ottiene A·0 = 0: la soluzione nulla va sempre bene.",
+   "Quindi il sistema non è mai impossibile; se det A = 0 ha anche infinite soluzioni, se det A ≠ 0 ha solo quella nulla.",
+   "L'unica affermazione sempre vera: ammette sempre almeno la soluzione nulla."
+  ],
+  "concetto": "sistemi omogenei"
+ },
+ {
+  "id": "GAL-046",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "test",
+  "domanda": "Per quali valori di k il sistema kx + y = 1, x + ky = 1 ha una e una sola soluzione?",
+  "opzioni": {
+   "A": "Solo per k = 1",
+   "B": "Per ogni k ≠ 1",
+   "C": "Solo per k = 0",
+   "D": "Per ogni k diverso da 1 e da −1",
+   "E": "Per ogni valore di k"
+  },
+  "giusta": "D",
+  "perche": "Un sistema quadrato ha una sola soluzione quando il determinante dei coefficienti è diverso da zero. Qui det [[k, 1], [1, k]] = k² − 1, che si annulla per k = 1 e per k = −1. Quindi la soluzione è unica per k ≠ ±1. La trappola tipica è dimenticare la radice negativa: per k = −1 il sistema diventa −x + y = 1, x − y = 1, che è impossibile.",
+  "semplice": "Si cerca dove il determinante si annulla e si escludono quei valori. Per k = 1 le due equazioni coincidono (infinite soluzioni), per k = −1 si contraddicono (nessuna soluzione).",
+  "passaggi": [
+   "1. Determinante: k·k − 1·1 = k² − 1",
+   "2. k² − 1 = 0 per k = 1 e k = −1",
+   "3. Soluzione unica per k ≠ 1 e k ≠ −1"
+  ],
+  "concetto": "sistemi con parametro"
+ },
+ {
+  "id": "GAL-047",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "test",
+  "domanda": "Un sistema in 3 incognite è compatibile e la sua matrice dei coefficienti ha rango 2. Quante soluzioni ha?",
+  "opzioni": {
+   "A": "Infinite, dipendenti da un parametro (∞¹)",
+   "B": "Infinite, dipendenti da due parametri (∞²)",
+   "C": "Una sola",
+   "D": "Nessuna",
+   "E": "Infinite, dipendenti da tre parametri (∞³)"
+  },
+  "giusta": "A",
+  "perche": "Per il teorema di Rouché–Capelli, se il sistema è compatibile le soluzioni dipendono da n − r parametri liberi, dove n è il numero di incognite e r il rango. Qui 3 − 2 = 1, quindi le soluzioni sono ∞¹: geometricamente formano una retta nello spazio. La trappola tipica è usare il rango come numero di parametri, rispondendo ∞².",
+  "semplice": "Ogni equazione «indipendente» blocca un grado di libertà. Con 3 incognite e 2 equazioni indipendenti resta un solo grado di libertà, come muoversi lungo una retta.",
+  "passaggi": [
+   "1. Numero di incognite: n = 3",
+   "2. Rango: r = 2",
+   "3. Parametri liberi: n − r = 1",
+   "4. Soluzioni: ∞¹"
+  ],
+  "concetto": "numero di parametri liberi"
+ },
+ {
+  "id": "GAL-048",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "test",
+  "domanda": "Con il metodo di Gauss, qual è la soluzione del sistema x + 2y = 4, 3x + 5y = 11?",
+  "opzioni": {
+   "A": "(1, 2)",
+   "B": "(4, 0)",
+   "C": "(2, 2)",
+   "D": "(2, 1)",
+   "E": "(0, 2)"
+  },
+  "giusta": "D",
+  "perche": "Si sottrae alla seconda equazione la prima moltiplicata per 3: (3x + 5y) − 3(x + 2y) = 11 − 12, cioè −y = −1, quindi y = 1. Sostituendo nella prima: x = 4 − 2 = 2. La soluzione è (2, 1). La trappola tipica è sbagliare il segno nella sottrazione (ottenendo y = −1) o scambiare l'ordine di x e y.",
+  "semplice": "Gauss elimina un'incognita alla volta combinando le equazioni. Controllo finale: 2 + 2·1 = 4 e 3·2 + 5·1 = 11.",
+  "passaggi": [
+   "1. R₂ − 3R₁: −y = −1",
+   "2. y = 1",
+   "3. x = 4 − 2·1 = 2",
+   "4. Controllo: 3·2 + 5·1 = 11 ✓"
+  ],
+  "concetto": "metodo di eliminazione di Gauss"
+ },
+ {
+  "id": "GAL-049",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "università",
+  "domanda": "Si consideri il sistema x + y + z = 1, x + 2y + 3z = 2, 2x + 3y + kz = 3. Che cosa succede per k = 4?",
+  "opzioni": {
+   "A": "Il sistema è impossibile",
+   "B": "Ha una sola soluzione",
+   "C": "Ha ∞² soluzioni",
+   "D": "Ha solo la soluzione nulla",
+   "E": "Ha ∞¹ soluzioni"
+  },
+  "giusta": "E",
+  "perche": "Il determinante della matrice dei coefficienti è k − 4, quindi per k ≠ 4 la soluzione è unica. Per k = 4 la terza equazione è la somma delle prime due, anche nei termini noti (1 + 2 = 3): il rango della matrice dei coefficienti e quello della matrice completa valgono entrambi 2. Per Rouché–Capelli le soluzioni sono ∞^(3−2) = ∞¹. La trappola tipica è concludere che det = 0 significhi sistema impossibile, senza controllare i termini noti.",
+  "semplice": "Quando il determinante si annulla bisogna «guardare dentro» al sistema: se l'equazione in più è una combinazione delle altre anche a destra dell'uguale, è ripetuta e le soluzioni sono infinite.",
+  "passaggi": [
+   "1. det [[1, 1, 1], [1, 2, 3], [2, 3, k]] = k − 4",
+   "2. Per k = 4: R₃ = R₁ + R₂ (anche 3 = 1 + 2)",
+   "3. Rango dei coefficienti = rango della completa = 2",
+   "4. Soluzioni: ∞^(3 − 2) = ∞¹"
+  ],
+  "concetto": "discussione di un sistema parametrico"
+ },
+ {
+  "id": "GAL-050",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "università",
+  "domanda": "Se x₀ è una soluzione del sistema AX = b, come si descrivono TUTTE le soluzioni?",
+  "opzioni": {
+   "A": "x₀ + v, con v soluzione qualsiasi di AX = b",
+   "B": "x₀ + v, con v nel nucleo di A (soluzioni di AX = 0)",
+   "C": "I multipli di x₀",
+   "D": "Formano sempre un sottospazio vettoriale",
+   "E": "C'è solo x₀"
+  },
+  "giusta": "B",
+  "perche": "Se x₁ è un'altra soluzione, A(x₁ − x₀) = b − b = 0, quindi la differenza sta nel nucleo di A; viceversa x₀ più un elemento del nucleo è ancora soluzione. Dunque la soluzione generale è «soluzione particolare + soluzione generale dell'omogeneo associato». Se b ≠ 0 l'insieme delle soluzioni non contiene lo zero, quindi non è un sottospazio ma un sottospazio traslato. La trappola tipica è sommare due soluzioni del sistema non omogeneo, che dà una soluzione di AX = 2b.",
+  "semplice": "Le soluzioni di AX = 0 sono una retta (o un piano) per l'origine; quelle di AX = b sono la stessa retta spostata in modo da passare per x₀.",
+  "passaggi": [
+   "Prendi un'altra soluzione x₁ e calcola A(x₁ − x₀) = b − b = 0.",
+   "Quindi la differenza di due soluzioni sta nel nucleo di A (soluzioni di AX = 0).",
+   "Viceversa, se Av = 0 allora A(x₀ + v) = b + 0 = b: x₀ + v è ancora soluzione.",
+   "Escludi «v soluzione di AX = b»: A(x₀ + v) = 2b, non b.",
+   "Tutte le soluzioni sono x₀ + v con v nel nucleo di A."
+  ],
+  "concetto": "struttura delle soluzioni"
+ },
+ {
+  "id": "GAL-051",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "università",
+  "domanda": "Un sistema omogeneo ha 3 equazioni e 5 incognite. Che cosa si può dire delle sue soluzioni?",
+  "opzioni": {
+   "A": "Ha solo la soluzione nulla",
+   "B": "Può essere impossibile",
+   "C": "Ha infinite soluzioni, con almeno 2 parametri liberi",
+   "D": "Ha sempre esattamente ∞³ soluzioni",
+   "E": "Ha una sola soluzione non nulla"
+  },
+  "giusta": "C",
+  "perche": "Il rango della matrice dei coefficienti, che è 3×5, è al massimo 3. Le soluzioni di un sistema omogeneo dipendono da 5 − r parametri, quindi da almeno 5 − 3 = 2 parametri. Il sistema non è mai impossibile perché ammette la soluzione nulla. La trappola tipica è pensare che i parametri siano sempre esattamente 5 − 3 = 2 o sempre 3: dipende dal rango, che può essere 1, 2 o 3.",
+  "semplice": "Con più incognite che equazioni le equazioni non riescono a «bloccare» tutte le variabili. Per esempio x + y + z = 0 da sola ha ∞² soluzioni.",
+  "passaggi": [
+   "1. Rango r ≤ min(3, 5) = 3",
+   "2. Parametri liberi: 5 − r ≥ 2",
+   "3. Il sistema omogeneo è sempre compatibile"
+  ],
+  "concetto": "sistemi sottodeterminati"
+ },
+ {
+  "id": "GAL-052",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "università",
+  "domanda": "Quante soluzioni ha il sistema x + y = 1, 2x + 2y = 2, x − y = 0?",
+  "opzioni": {
+   "A": "Una sola, (1/2, 1/2)",
+   "B": "Nessuna, perché ci sono più equazioni che incognite",
+   "C": "Infinite",
+   "D": "Una sola, (1, 0)",
+   "E": "Una sola, (0, 0)"
+  },
+  "giusta": "A",
+  "perche": "La seconda equazione è il doppio della prima, quindi non aggiunge informazione. Restano x + y = 1 e x − y = 0, indipendenti: il rango dei coefficienti e quello della matrice completa valgono entrambi 2, pari al numero di incognite, e la soluzione è unica. Risolvendo si ottiene x = y = 1/2. La trappola tipica è pensare che con più equazioni che incognite il sistema sia per forza impossibile.",
+  "semplice": "Contano le equazioni indipendenti, non quante ne sono scritte. Qui una delle tre è una copia raddoppiata di un'altra.",
+  "passaggi": [
+   "1. 2x + 2y = 2 è 2·(x + y = 1): ridondante",
+   "2. Restano x + y = 1 e x − y = 0",
+   "3. Somma: 2x = 1 → x = 1/2",
+   "4. y = 1/2"
+  ],
+  "concetto": "equazioni ridondanti"
+ },
+ {
+  "id": "GAL-053",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "università",
+  "domanda": "Per il sistema x + y + z = 6, 2x − y + z = 3, x + 2y − z = 2, quanto valgono il determinante della matrice dei coefficienti e l'incognita z?",
+  "opzioni": {
+   "A": "det = −7, z = 3",
+   "B": "det = 7, z = 1",
+   "C": "det = 0, infinite soluzioni",
+   "D": "det = 7, z = 3",
+   "E": "det = 5, z = 2"
+  },
+  "giusta": "D",
+  "perche": "Sviluppando lungo la prima riga: det [[1, 1, 1], [2, −1, 1], [1, 2, −1]] = 1·(1 − 2) − 1·(−2 − 1) + 1·(4 + 1) = −1 + 3 + 5 = 7. Essendo non nullo, la soluzione è unica: risolvendo si ottiene (1, 2, 3), quindi z = 3. Si controlla nella seconda equazione: 2 − 2 + 3 = 3 ✓. La trappola tipica è sbagliare il segno del secondo complemento algebrico, ottenendo −7.",
+  "semplice": "Prima si controlla che il determinante non sia zero (soluzione unica), poi si risolve. Sommando la prima e la terza equazione z sparisce: 2x + 3y = 8.",
+  "passaggi": [
+   "1. det = 1·(−1·(−1) − 1·2) − 1·(2·(−1) − 1·1) + 1·(2·2 − (−1)·1) = −1 + 3 + 5 = 7",
+   "2. Prima + terza: 2x + 3y = 8",
+   "3. Seconda + terza: 3x + y = 5",
+   "4. Da qui x = 1, y = 2",
+   "5. z = 6 − 1 − 2 = 3"
+  ],
+  "concetto": "sistema 3×3 con soluzione unica"
+ },
+ {
+  "id": "GAL-054",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Sistemi lineari",
+  "livello": "università",
+  "domanda": "Riducendo a scala una matrice 4×6 si ottengono 3 pivot. Qual è la dimensione del nucleo della matrice?",
+  "opzioni": {
+   "A": "1",
+   "B": "4",
+   "C": "2",
+   "D": "6",
+   "E": "3"
+  },
+  "giusta": "E",
+  "perche": "Il numero di pivot è il rango, quindi r = 3. Per il teorema della dimensione (nullità più rango) la dimensione del nucleo è il numero di colonne meno il rango: 6 − 3 = 3. Le variabili senza pivot sono le variabili libere, e ce ne sono 3. La trappola tipica è sottrarre il rango dal numero di righe, ottenendo 4 − 3 = 1.",
+  "semplice": "Ogni colonna senza pivot corrisponde a un'incognita che puoi scegliere liberamente. Con 6 colonne e 3 pivot restano 3 incognite libere.",
+  "passaggi": [
+   "1. Rango = numero di pivot = 3",
+   "2. Numero di colonne (incognite) = 6",
+   "3. dim ker = 6 − 3 = 3"
+  ],
+  "concetto": "pivot e nucleo"
+ },
+ {
+  "id": "GAL-055",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "superiori",
+  "domanda": "Quale coppia di vettori NON è una base di R²?",
+  "opzioni": {
+   "A": "(1, 0) e (0, 1)",
+   "B": "(1, 2) e (2, 4)",
+   "C": "(1, 1) e (1, −1)",
+   "D": "(2, 0) e (0, 3)",
+   "E": "(1, 2) e (3, 1)"
+  },
+  "giusta": "B",
+  "perche": "Due vettori formano una base di R² se e solo se non sono paralleli, cioè sono linearmente indipendenti. Il vettore (2, 4) è il doppio di (1, 2), quindi i due vettori stanno sulla stessa retta e non possono generare tutto il piano. Il controllo rapido è il determinante: det [[1, 2], [2, 4]] = 0. La trappola tipica è pensare che basti avere due vettori diversi.",
+  "semplice": "Con due frecce sulla stessa retta puoi muoverti solo avanti e indietro lungo quella retta, mai di lato. Per coprire tutto il piano servono due direzioni diverse.",
+  "passaggi": [
+   "1. Controllo con il determinante: det [[1, 2], [2, 4]] = 4 − 4 = 0",
+   "2. Determinante nullo → vettori dipendenti",
+   "3. Non è una base"
+  ],
+  "concetto": "base di R²"
+ },
+ {
+  "id": "GAL-056",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "superiori",
+  "domanda": "Quanti vettori contiene ogni base di R³?",
+  "opzioni": {
+   "A": "1",
+   "B": "2",
+   "C": "Infiniti",
+   "D": "3",
+   "E": "Dipende dalla base scelta"
+  },
+  "giusta": "D",
+  "perche": "Tutte le basi di uno stesso spazio vettoriale hanno lo stesso numero di elementi, e questo numero è la dimensione dello spazio. Per R³ la dimensione è 3, come mostra la base canonica (1, 0, 0), (0, 1, 0), (0, 0, 1). La trappola tipica è pensare che basi diverse possano avere un numero diverso di vettori: cambiano i vettori, non quanti sono. Con meno di 3 vettori non si genera R³, con più di 3 non sono indipendenti.",
+  "semplice": "Lo spazio ha tre direzioni indipendenti: larghezza, profondità, altezza. Ogni base deve averne esattamente tre, anche se scelte in modo diverso.",
+  "passaggi": [
+   "Ricorda: tutte le basi di uno spazio vettoriale hanno lo stesso numero di vettori, la dimensione.",
+   "La base canonica di R³ è (1, 0, 0), (0, 1, 0), (0, 0, 1): 3 vettori.",
+   "Con meno di 3 vettori non si genera R³, con più di 3 non sono indipendenti.",
+   "Ogni base di R³ contiene 3 vettori."
+  ],
+  "concetto": "dimensione"
+ },
+ {
+  "id": "GAL-057",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "superiori",
+  "domanda": "Per quali numeri a e b vale (5, 7) = a·(1, 1) + b·(1, 2)?",
+  "opzioni": {
+   "A": "a = 3, b = 2",
+   "B": "a = 2, b = 3",
+   "C": "a = 5, b = 1",
+   "D": "a = 1, b = 3",
+   "E": "Non esistono numeri a e b adatti"
+  },
+  "giusta": "A",
+  "perche": "Uguagliando componente per componente si ottiene il sistema a + b = 5 e a + 2b = 7. Sottraendo la prima equazione dalla seconda si trova b = 2, e quindi a = 3. Controllo: 3·(1, 1) + 2·(1, 2) = (3 + 2, 3 + 4) = (5, 7). La trappola tipica è scambiare a e b o provare a caso senza impostare il sistema.",
+  "semplice": "Scrivere un vettore come combinazione lineare è come preparare una ricetta: quante «dosi» del primo vettore e quante del secondo servono per ottenere il risultato.",
+  "passaggi": [
+   "1. Sistema: a + b = 5, a + 2b = 7",
+   "2. Sottrazione: b = 2",
+   "3. a = 5 − 2 = 3",
+   "4. Controllo: (3 + 2, 3 + 4) = (5, 7)"
+  ],
+  "concetto": "combinazione lineare"
+ },
+ {
+  "id": "GAL-058",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "superiori",
+  "domanda": "Come sono i vettori (1, 2, 3) e (2, 4, 6)?",
+  "opzioni": {
+   "A": "Linearmente indipendenti",
+   "B": "Ortogonali",
+   "C": "Una base di R³",
+   "D": "Generatori di R³",
+   "E": "Linearmente dipendenti"
+  },
+  "giusta": "E",
+  "perche": "Il secondo vettore è il doppio del primo: (2, 4, 6) = 2·(1, 2, 3). Quindi esiste una combinazione lineare non banale nulla, 2·(1, 2, 3) − (2, 4, 6) = 0, e i vettori sono linearmente dipendenti. Non sono ortogonali, perché il loro prodotto scalare è 28. La trappola tipica è pensare che due vettori diversi siano sempre indipendenti; inoltre due soli vettori non possono mai formare una base di R³.",
+  "semplice": "Due vettori sono dipendenti quando uno è un multiplo dell'altro, cioè puntano lungo la stessa retta. Qui il secondo è semplicemente il primo «allungato» del doppio.",
+  "passaggi": [
+   "Confronta le componenti: 2 = 2·1, 4 = 2·2, 6 = 2·3.",
+   "Quindi (2, 4, 6) = 2·(1, 2, 3): un vettore è multiplo dell'altro.",
+   "Esiste la combinazione non banale 2·(1, 2, 3) − (2, 4, 6) = 0: i vettori sono dipendenti.",
+   "Non sono ortogonali (prodotto scalare 2 + 8 + 18 = 28) e due vettori non bastano per una base di R³.",
+   "Sono linearmente dipendenti."
+  ],
+  "concetto": "dipendenza lineare"
+ },
+ {
+  "id": "GAL-059",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "superiori",
+  "domanda": "Quale di questi insiemi è un sottospazio vettoriale di R²?",
+  "opzioni": {
+   "A": "La retta y = 2x + 1",
+   "B": "Il primo quadrante (x ≥ 0, y ≥ 0)",
+   "C": "La retta y = 2x",
+   "D": "La circonferenza x² + y² = 1",
+   "E": "L'insieme formato dal solo punto (1, 1)"
+  },
+  "giusta": "C",
+  "perche": "Un sottospazio deve contenere il vettore nullo ed essere chiuso rispetto alla somma e alla moltiplicazione per scalari. La retta y = 2x passa per l'origine e la somma di due suoi punti, o un loro multiplo, resta sulla retta. La retta y = 2x + 1 non passa per l'origine; il primo quadrante non è chiuso rispetto ai multipli negativi; la circonferenza e il singolo punto non sono chiusi rispetto alla somma. La trappola tipica è pensare che ogni retta sia un sottospazio.",
+  "semplice": "Un primo controllo velocissimo: il sottospazio deve contenere lo zero. Le rette che non passano per l'origine sono subito escluse.",
+  "passaggi": [
+   "Un sottospazio deve contenere il vettore nullo ed essere chiuso per somma e per multiplo scalare.",
+   "La retta y = 2x + 1 non passa per (0, 0): esclusa. Il singolo punto (1, 1) non contiene lo zero: escluso.",
+   "Il primo quadrante non è chiuso per multipli negativi: −1·(1, 1) = (−1, −1) esce. La circonferenza non contiene lo zero.",
+   "La retta y = 2x passa per l'origine; se y₁ = 2x₁ e y₂ = 2x₂, allora y₁ + y₂ = 2(x₁ + x₂) e ky₁ = 2(kx₁).",
+   "Il sottospazio è la retta y = 2x."
+  ],
+  "concetto": "sottospazio vettoriale"
+ },
+ {
+  "id": "GAL-060",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "superiori",
+  "domanda": "Quattro vettori di R³:",
+  "opzioni": {
+   "A": "possono essere linearmente indipendenti",
+   "B": "sono sempre linearmente dipendenti",
+   "C": "formano sempre una base di R³",
+   "D": "generano sempre R³",
+   "E": "sono sempre a due a due ortogonali"
+  },
+  "giusta": "B",
+  "perche": "In uno spazio di dimensione 3 non possono esistere più di 3 vettori linearmente indipendenti. Quindi 4 vettori di R³ sono sempre dipendenti: almeno uno si scrive come combinazione degli altri. Non è detto invece che generino R³: per esempio quattro vettori tutti sull'asse x generano solo una retta. La trappola tipica è pensare che «più vettori» significhi automaticamente «base».",
+  "semplice": "Nello spazio ci sono solo tre direzioni indipendenti. Un quarto vettore è per forza «costruibile» con gli altri, come un quarto ingrediente che si ottiene mescolando i primi tre.",
+  "passaggi": [
+   "R³ ha dimensione 3.",
+   "Regola: in uno spazio di dimensione n non ci sono più di n vettori linearmente indipendenti.",
+   "4 > 3, quindi 4 vettori di R³ sono sempre linearmente dipendenti.",
+   "Non generano per forza R³: quattro vettori tutti sull'asse x generano solo una retta.",
+   "La risposta è: sono sempre linearmente dipendenti."
+  ],
+  "concetto": "massimo numero di vettori indipendenti"
+ },
+ {
+  "id": "GAL-061",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "test",
+  "domanda": "Qual è la dimensione del sottospazio di R³ formato dai vettori (x, y, z) con x + y + z = 0?",
+  "opzioni": {
+   "A": "0",
+   "B": "1",
+   "C": "3",
+   "D": "2",
+   "E": "Infinita"
+  },
+  "giusta": "D",
+  "perche": "L'equazione x + y + z = 0 impone un solo vincolo su tre incognite, quindi restano 3 − 1 = 2 parametri liberi: per esempio y e z, con x = −y − z. Una base è data da (−1, 1, 0) e (−1, 0, 1). Geometricamente il sottospazio è un piano per l'origine. La trappola tipica è confondere la dimensione con il numero di vettori del sottospazio, che sono infiniti.",
+  "semplice": "Ogni equazione indipendente «toglie» una dimensione. Partendo dallo spazio a 3 dimensioni, un'equazione lascia un piano, che ha dimensione 2.",
+  "passaggi": [
+   "1. Vincolo: x = −y − z",
+   "2. Parametri liberi: y, z",
+   "3. Base: (−1, 1, 0), (−1, 0, 1)",
+   "4. Dimensione: 2"
+  ],
+  "concetto": "dimensione di un sottospazio"
+ },
+ {
+  "id": "GAL-062",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "test",
+  "domanda": "Qual è la dimensione del sottospazio generato dai vettori (1, 0, 1), (0, 1, 1) e (1, 1, 2)?",
+  "opzioni": {
+   "A": "2",
+   "B": "3",
+   "C": "1",
+   "D": "0",
+   "E": "6"
+  },
+  "giusta": "A",
+  "perche": "Il terzo vettore è la somma dei primi due: (1, 0, 1) + (0, 1, 1) = (1, 1, 2). Quindi non aggiunge nulla al sottospazio generato, mentre i primi due non sono proporzionali e sono indipendenti. Il sottospazio generato ha quindi dimensione 2: è un piano. La trappola tipica è contare i vettori dati e rispondere 3 senza controllare la dipendenza.",
+  "semplice": "La dimensione conta i generatori «utili». Se un vettore si ottiene sommando altri vettori già presenti, è un doppione.",
+  "passaggi": [
+   "1. (1, 0, 1) + (0, 1, 1) = (1, 1, 2)",
+   "2. Il terzo vettore è dipendente",
+   "3. I primi due sono indipendenti",
+   "4. Dimensione: 2"
+  ],
+  "concetto": "sottospazio generato"
+ },
+ {
+  "id": "GAL-063",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "test",
+  "domanda": "Per quali valori di k i vettori (1, k) e (k, 4) sono linearmente dipendenti?",
+  "opzioni": {
+   "A": "Solo per k = 2",
+   "B": "Per k = 4",
+   "C": "Per k = 0",
+   "D": "Per k = 4 oppure k = −4",
+   "E": "Per k = 2 oppure k = −2"
+  },
+  "giusta": "E",
+  "perche": "Due vettori di R² sono dipendenti quando il determinante della matrice che li contiene è zero: det [[1, k], [k, 4]] = 4 − k². L'equazione 4 − k² = 0 dà k = 2 oppure k = −2. Per k = 2 i vettori sono (1, 2) e (2, 4); per k = −2 sono (1, −2) e (−2, 4), anch'essi proporzionali. La trappola tipica è dimenticare la soluzione negativa.",
+  "semplice": "Un'equazione di secondo grado come k² = 4 ha due soluzioni. Conviene sempre verificarle entrambe sostituendo.",
+  "passaggi": [
+   "1. det [[1, k], [k, 4]] = 4 − k²",
+   "2. 4 − k² = 0",
+   "3. k = ±2",
+   "4. Controllo: per k = −2, (−2, 4) = −2·(1, −2) ✓"
+  ],
+  "concetto": "dipendenza con parametro"
+ },
+ {
+  "id": "GAL-064",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "test",
+  "domanda": "Quali sono le coordinate del vettore (3, 1) rispetto alla base {(1, 1), (1, −1)}?",
+  "opzioni": {
+   "A": "(3, 1)",
+   "B": "(1, 2)",
+   "C": "(2, 1)",
+   "D": "(4, 2)",
+   "E": "(1, 1)"
+  },
+  "giusta": "C",
+  "perche": "Bisogna trovare a e b tali che a·(1, 1) + b·(1, −1) = (3, 1), cioè a + b = 3 e a − b = 1. Sommando le equazioni si ottiene a = 2, poi b = 1. Le coordinate sono quindi (2, 1). La trappola tipica è rispondere (3, 1), che sono le coordinate rispetto alla base canonica, non rispetto alla base data.",
+  "semplice": "Le coordinate dicono «quanti passi» fare lungo ciascun vettore della base. Con la base {(1, 1), (1, −1)} servono 2 passi lungo il primo e 1 lungo il secondo: 2·(1, 1) + 1·(1, −1) = (3, 1).",
+  "passaggi": [
+   "1. Sistema: a + b = 3, a − b = 1",
+   "2. Somma: 2a = 4 → a = 2",
+   "3. b = 1",
+   "4. Coordinate: (2, 1)"
+  ],
+  "concetto": "coordinate rispetto a una base"
+ },
+ {
+  "id": "GAL-065",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "test",
+  "domanda": "Qual è la dimensione dello spazio vettoriale dei polinomi reali di grado al massimo 3?",
+  "opzioni": {
+   "A": "3",
+   "B": "4",
+   "C": "Infinita",
+   "D": "2",
+   "E": "5"
+  },
+  "giusta": "B",
+  "perche": "Ogni polinomio di grado al massimo 3 si scrive in modo unico come a + bx + cx² + dx³, quindi la base canonica è {1, x, x², x³}, formata da 4 elementi. La dimensione è 4. La trappola tipica è dimenticare il termine costante e rispondere 3. Lo spazio di tutti i polinomi, senza limite di grado, ha invece dimensione infinita.",
+  "semplice": "Un polinomio di grado al massimo 3 è determinato da 4 numeri: i suoi coefficienti. Per esempio 2 − x + 5x³ corrisponde a (2, −1, 0, 5).",
+  "passaggi": [
+   "Un polinomio di grado al massimo 3 si scrive a + bx + cx² + dx³.",
+   "I coefficienti liberi sono 4: a, b, c, d.",
+   "Una base è {1, x, x², x³}, formata da 4 elementi (non dimenticare il termine costante).",
+   "La dimensione è 4."
+  ],
+  "concetto": "spazi di polinomi"
+ },
+ {
+  "id": "GAL-066",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "test",
+  "domanda": "Qual è la dimensione dello spazio vettoriale delle matrici reali 2×3?",
+  "opzioni": {
+   "A": "5",
+   "B": "2",
+   "C": "3",
+   "D": "6",
+   "E": "9"
+  },
+  "giusta": "D",
+  "perche": "Una matrice 2×3 ha 6 elementi, ciascuno scelto liberamente. Una base è formata dalle 6 matrici che hanno un 1 in una posizione e 0 altrove, quindi la dimensione è 2·3 = 6. La trappola tipica è sommare righe e colonne (5) o pensare al rango della matrice, che è un'altra cosa.",
+  "semplice": "Ogni casella della tabella è un «grado di libertà». Una tabella con 2 righe e 3 colonne ha 6 caselle, quindi lo spazio ha dimensione 6.",
+  "passaggi": [
+   "Una matrice 2×3 ha 2·3 = 6 elementi, tutti scelti liberamente.",
+   "Una base è formata dalle 6 matrici con un 1 in una posizione e 0 altrove.",
+   "Non si sommano righe e colonne (5) e il rango non c'entra.",
+   "La dimensione è 6."
+  ],
+  "concetto": "spazi di matrici"
+ },
+ {
+  "id": "GAL-067",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "università",
+  "domanda": "U e W sono due sottospazi distinti di R⁴, entrambi di dimensione 3. Quanto vale dim(U ∩ W)?",
+  "opzioni": {
+   "A": "2",
+   "B": "1",
+   "C": "3",
+   "D": "0",
+   "E": "6"
+  },
+  "giusta": "A",
+  "perche": "Poiché U ≠ W e hanno la stessa dimensione, U + W contiene strettamente U, quindi ha dimensione 4 ed è tutto R⁴. Per la formula di Grassmann dim(U ∩ W) = dim U + dim W − dim(U + W) = 3 + 3 − 4 = 2. La trappola tipica è dimenticare l'intersezione e pensare che dim(U + W) = 6, che è impossibile dentro R⁴.",
+  "semplice": "È l'analogo di due piani distinti per l'origine in R³, che si incontrano in una retta: qui due «iperpiani» di R⁴ si incontrano in un sottospazio di dimensione 2.",
+  "passaggi": [
+   "1. U ≠ W, stessa dimensione → U + W ⊋ U",
+   "2. dim(U + W) = 4",
+   "3. Grassmann: 3 + 3 − 4 = 2"
+  ],
+  "concetto": "formula di Grassmann"
+ },
+ {
+  "id": "GAL-068",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "università",
+  "domanda": "Qual è la dimensione del sottospazio delle matrici simmetriche reali 3×3?",
+  "opzioni": {
+   "A": "9",
+   "B": "3",
+   "C": "5",
+   "D": "4",
+   "E": "6"
+  },
+  "giusta": "E",
+  "perche": "Una matrice simmetrica 3×3 è determinata dagli elementi sulla diagonale (3) e da quelli sopra la diagonale (3), perché quelli sotto sono uguali a questi. In tutto servono 3 + 3 = 6 numeri, quindi la dimensione è 6; in generale per n×n è n(n + 1)/2. La trappola tipica è contare tutti i 9 elementi oppure solo la diagonale.",
+  "semplice": "In una matrice simmetrica la parte sotto la diagonale è lo «specchio» della parte sopra: si sceglie liberamente solo metà della tabella, diagonale compresa.",
+  "passaggi": [
+   "1. Elementi diagonali liberi: 3",
+   "2. Elementi sopra la diagonale liberi: 3",
+   "3. Elementi sotto la diagonale: determinati",
+   "4. Dimensione: 3 + 3 = 6 = 3·4/2"
+  ],
+  "concetto": "matrici simmetriche"
+ },
+ {
+  "id": "GAL-069",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "università",
+  "domanda": "Quale affermazione è vera per due sottospazi U e W di uno spazio vettoriale V?",
+  "opzioni": {
+   "A": "U ∪ W è sempre un sottospazio",
+   "B": "U ∩ W può essere l'insieme vuoto",
+   "C": "U ∩ W è sempre un sottospazio",
+   "D": "dim(U + W) = dim U + dim W sempre",
+   "E": "U + W coincide con U ∪ W"
+  },
+  "giusta": "C",
+  "perche": "L'intersezione di due sottospazi contiene sempre il vettore nullo ed è chiusa rispetto a somma e prodotto per scalari, quindi è sempre un sottospazio (mai vuota). L'unione invece in generale non lo è: l'asse x e l'asse y sono sottospazi di R², ma (1, 0) + (0, 1) = (1, 1) non sta in nessuno dei due. La formula corretta per la somma è quella di Grassmann, che sottrae dim(U ∩ W).",
+  "semplice": "Due rette per l'origine nel piano si incontrano almeno nell'origine: l'intersezione è un sottospazio. Ma messe insieme formano una «croce», che non è chiusa rispetto alla somma.",
+  "passaggi": [
+   "Ogni sottospazio contiene il vettore nullo, quindi anche U ∩ W lo contiene: non è mai vuoto.",
+   "Se u, v stanno in U e in W, anche u + v e ku stanno in entrambi: U ∩ W è chiuso, quindi è un sottospazio.",
+   "L'unione in generale non lo è: asse x e asse y in R², ma (1, 0) + (0, 1) = (1, 1) non sta in nessuno dei due.",
+   "La formula di Grassmann è dim(U + W) = dim U + dim W − dim(U ∩ W), non la semplice somma.",
+   "Resta la C: U ∩ W è sempre un sottospazio."
+  ],
+  "concetto": "intersezione e unione di sottospazi"
+ },
+ {
+  "id": "GAL-070",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "università",
+  "domanda": "Applicando il procedimento di Gram–Schmidt a v₁ = (1, 1, 0) e v₂ = (1, 0, 1), qual è il secondo vettore ortogonale (prima della normalizzazione)?",
+  "opzioni": {
+   "A": "(1, 0, 1)",
+   "B": "(1/2, −1/2, 1)",
+   "C": "(0, −1, 1)",
+   "D": "(1/2, 1/2, 1)",
+   "E": "(1, −1, 0)"
+  },
+  "giusta": "B",
+  "perche": "Si sottrae a v₂ la sua proiezione su v₁: w₂ = v₂ − (v₂·v₁ / v₁·v₁)·v₁. Qui v₂·v₁ = 1 e v₁·v₁ = 2, quindi w₂ = (1, 0, 1) − (1/2)(1, 1, 0) = (1/2, −1/2, 1). Si controlla che w₂·v₁ = 1/2 − 1/2 + 0 = 0. La trappola tipica è dividere per |v₁| invece che per |v₁|², oppure sommare la proiezione invece di sottrarla.",
+  "semplice": "Gram–Schmidt «raddrizza» i vettori uno alla volta togliendo a ciascuno la parte che punta nella direzione dei precedenti.",
+  "passaggi": [
+   "1. v₂·v₁ = 1, v₁·v₁ = 2",
+   "2. Proiezione: (1/2)·(1, 1, 0) = (1/2, 1/2, 0)",
+   "3. w₂ = (1, 0, 1) − (1/2, 1/2, 0) = (1/2, −1/2, 1)",
+   "4. Controllo: w₂·v₁ = 0"
+  ],
+  "concetto": "procedimento di Gram–Schmidt"
+ },
+ {
+  "id": "GAL-071",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "università",
+  "domanda": "Rispetto alla base {1, x − 1, (x − 1)²} dei polinomi di grado al massimo 2, quali sono le coordinate del polinomio x²?",
+  "opzioni": {
+   "A": "(0, 0, 1)",
+   "B": "(1, −2, 1)",
+   "C": "(1, 1, 1)",
+   "D": "(1, 2, 1)",
+   "E": "(−1, 2, 1)"
+  },
+  "giusta": "D",
+  "perche": "Bisogna scrivere x² come a·1 + b·(x − 1) + c·(x − 1)². Ponendo t = x − 1 si ha x = t + 1 e x² = t² + 2t + 1, quindi x² = 1 + 2(x − 1) + (x − 1)². Le coordinate sono (1, 2, 1). La trappola tipica è rispondere (0, 0, 1), cioè le coordinate rispetto alla base canonica, o sbagliare il segno ottenendo (1, −2, 1), che corrisponde invece a (x − 2)².",
+  "semplice": "È lo sviluppo di Taylor del polinomio intorno a x = 1: il valore in 1 (cioè 1), la derivata in 1 (cioè 2) e metà della derivata seconda (cioè 1).",
+  "passaggi": [
+   "1. Sostituzione: t = x − 1, x = t + 1",
+   "2. x² = (t + 1)² = t² + 2t + 1",
+   "3. x² = 1·1 + 2·(x − 1) + 1·(x − 1)²",
+   "4. Coordinate: (1, 2, 1)"
+  ],
+  "concetto": "coordinate di un polinomio"
+ },
+ {
+  "id": "GAL-072",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Spazi vettoriali e basi",
+  "livello": "università",
+  "domanda": "U è il piano z = 0 di R³. Quale sottospazio W rende R³ = U ⊕ W (somma diretta)?",
+  "opzioni": {
+   "A": "W = span{(1, 1, 0)}",
+   "B": "W = span{(1, 0, 0), (0, 0, 1)}",
+   "C": "W = {0}",
+   "D": "W = span{(2, 3, 0)}",
+   "E": "W = span{(1, 1, 1)}"
+  },
+  "giusta": "E",
+  "perche": "Per avere R³ = U ⊕ W servono due condizioni: U + W = R³ e U ∩ W = {0}. Con Grassmann serve dim W = 1 e un vettore fuori dal piano z = 0: (1, 1, 1) ha terza componente non nulla, quindi va bene. I vettori (1, 1, 0) e (2, 3, 0) stanno già in U; il sottospazio generato da (1, 0, 0) e (0, 0, 1) dà R³ come somma ma interseca U nell'asse x, quindi la somma non è diretta. La trappola tipica è controllare solo che la somma sia tutto R³.",
+  "semplice": "Somma diretta significa che ogni vettore si scompone in modo unico in un pezzo di U e uno di W. Basta aggiungere al piano una direzione che «esce» dal piano.",
+  "passaggi": [
+   "1. dim U = 2 → serve dim W = 1",
+   "2. Il generatore di W non deve stare in U (terza componente ≠ 0)",
+   "3. (1, 1, 1) ∉ U → U ∩ W = {0}",
+   "4. R³ = U ⊕ span{(1, 1, 1)}"
+  ],
+  "concetto": "somma diretta"
+ },
+ {
+  "id": "GAL-073",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "superiori",
+  "domanda": "L'applicazione f(x, y) = (2x, 3y) in quale vettore trasforma (1, −1)?",
+  "opzioni": {
+   "A": "(2, 3)",
+   "B": "(3, −2)",
+   "C": "(2, −3)",
+   "D": "(−2, 3)",
+   "E": "(1, −1)"
+  },
+  "giusta": "C",
+  "perche": "Basta sostituire x = 1 e y = −1 nella formula: f(1, −1) = (2·1, 3·(−1)) = (2, −3). La prima componente viene raddoppiata e la seconda triplicata, con il suo segno. La trappola tipica è perdere il segno meno, ottenendo (2, 3), oppure scambiare i ruoli di x e y.",
+  "semplice": "L'applicazione allunga il piano: due volte in orizzontale e tre volte in verticale. Il punto (1, −1) finisce quindi in (2, −3).",
+  "passaggi": [
+   "1. x = 1 → 2x = 2",
+   "2. y = −1 → 3y = −3",
+   "3. f(1, −1) = (2, −3)"
+  ],
+  "concetto": "immagine di un vettore"
+ },
+ {
+  "id": "GAL-074",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "superiori",
+  "domanda": "Quale di queste funzioni da R in R è lineare?",
+  "opzioni": {
+   "A": "f(x) = 3x",
+   "B": "f(x) = 3x + 1",
+   "C": "f(x) = x²",
+   "D": "f(x) = |x|",
+   "E": "f(x) = sin x"
+  },
+  "giusta": "A",
+  "perche": "Una funzione è lineare se f(a + b) = f(a) + f(b) e f(k·a) = k·f(a). Per f(x) = 3x entrambe le proprietà valgono. La funzione 3x + 1 non è lineare in questo senso, perché f(0) = 1 ≠ 0: il suo grafico è una retta, ma non passa per l'origine. La trappola tipica è chiamare «lineare» ogni funzione con grafico rettilineo; x², |x| e sin x non rispettano la somma.",
+  "semplice": "Una funzione lineare «rispetta le proporzioni»: se raddoppi l'ingresso raddoppia l'uscita, e il valore in 0 è 0. Con 3x + 1 invece f(2) = 7 non è il doppio di f(1) = 4.",
+  "passaggi": [
+   "Una funzione è lineare se f(a + b) = f(a) + f(b) e f(k·a) = k·f(a); in particolare f(0) = 0.",
+   "f(x) = 3x + 1 ha f(0) = 1 ≠ 0: non è lineare, anche se il grafico è una retta.",
+   "x², |x| e sin x non rispettano la somma: per esempio (1 + 1)² = 4 ≠ 1² + 1² = 2.",
+   "f(x) = 3x: 3(a + b) = 3a + 3b e 3(ka) = k(3a).",
+   "La funzione lineare è f(x) = 3x."
+  ],
+  "concetto": "definizione di linearità"
+ },
+ {
+  "id": "GAL-075",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "superiori",
+  "domanda": "La rotazione di 90° in senso antiorario attorno all'origine dove porta il punto (1, 0)?",
+  "opzioni": {
+   "A": "(−1, 0)",
+   "B": "(0, −1)",
+   "C": "(1, 1)",
+   "D": "(1, 0)",
+   "E": "(0, 1)"
+  },
+  "giusta": "E",
+  "perche": "Il punto (1, 0) si trova sull'asse x positivo. Ruotandolo di 90° in senso antiorario finisce sull'asse y positivo, cioè in (0, 1). La matrice della rotazione è [[0, −1], [1, 0]], e moltiplicandola per (1, 0) si ottiene proprio (0, 1). La trappola tipica è ruotare in senso orario, ottenendo (0, −1).",
+  "semplice": "Immagina la lancetta di un orologio che punta alle 3 e girala all'indietro di un quarto di giro: arriva alle 12, cioè verso l'alto.",
+  "passaggi": [
+   "1. Matrice della rotazione di 90°: [[0, −1], [1, 0]]",
+   "2. Prodotto per (1, 0): (0·1 − 1·0, 1·1 + 0·0)",
+   "3. Risultato: (0, 1)"
+  ],
+  "concetto": "rotazione nel piano"
+ },
+ {
+  "id": "GAL-076",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "superiori",
+  "domanda": "Qual è la matrice della simmetria rispetto all'asse x nel piano?",
+  "opzioni": {
+   "A": "[[−1, 0], [0, 1]]",
+   "B": "[[0, 1], [1, 0]]",
+   "C": "[[1, 0], [0, 1]]",
+   "D": "[[1, 0], [0, −1]]",
+   "E": "[[−1, 0], [0, −1]]"
+  },
+  "giusta": "D",
+  "perche": "La simmetria rispetto all'asse x lascia invariata la x e cambia segno alla y: (x, y) → (x, −y). Le colonne della matrice sono le immagini dei vettori della base: (1, 0) resta (1, 0) e (0, 1) diventa (0, −1). Quindi la matrice è [[1, 0], [0, −1]]. La trappola tipica è confonderla con la simmetria rispetto all'asse y, [[−1, 0], [0, 1]], o con quella rispetto all'origine.",
+  "semplice": "Un punto sopra l'asse x finisce alla stessa distanza sotto l'asse, come riflesso in uno specchio steso lungo l'asse: (3, 2) diventa (3, −2).",
+  "passaggi": [
+   "1. Immagine di (1, 0): (1, 0)",
+   "2. Immagine di (0, 1): (0, −1)",
+   "3. Colonne della matrice: [[1, 0], [0, −1]]"
+  ],
+  "concetto": "matrice di una simmetria"
+ },
+ {
+  "id": "GAL-077",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "superiori",
+  "domanda": "Un'applicazione lineare f trasforma sempre il vettore nullo in:",
+  "opzioni": {
+   "A": "il vettore (1, 1)",
+   "B": "il vettore nullo",
+   "C": "un vettore di modulo 1",
+   "D": "un vettore qualsiasi, dipende da f",
+   "E": "nulla: f non è definita nel vettore nullo"
+  },
+  "giusta": "B",
+  "perche": "Per la linearità f(0) = f(0·v) = 0·f(v) = 0, quindi ogni applicazione lineare manda il vettore nullo nel vettore nullo. Questa proprietà è un controllo rapido: se f(0) ≠ 0, la funzione non è lineare. La trappola tipica è pensare che una traslazione, come (x, y) → (x + 1, y), sia lineare: non lo è, perché sposta l'origine.",
+  "semplice": "Le applicazioni lineari possono ruotare, allungare o schiacciare il piano, ma l'origine resta sempre ferma.",
+  "passaggi": [
+   "Usa la proprietà f(k·v) = k·f(v) con k = 0.",
+   "f(0) = f(0·v) = 0·f(v) = 0.",
+   "Quindi ogni applicazione lineare manda il vettore nullo nel vettore nullo, qualunque sia f.",
+   "Controllo rapido: se f(0) ≠ 0 (come per una traslazione) la funzione non è lineare."
+  ],
+  "concetto": "applicazioni lineari e origine"
+ },
+ {
+  "id": "GAL-078",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "superiori",
+  "domanda": "L'applicazione lineare di matrice [[2, 0], [0, 2]] per quanto moltiplica l'area di una figura?",
+  "opzioni": {
+   "A": "2",
+   "B": "1",
+   "C": "4",
+   "D": "8",
+   "E": "1/2"
+  },
+  "giusta": "C",
+  "perche": "La matrice raddoppia sia le lunghezze orizzontali sia quelle verticali, quindi l'area viene moltiplicata per 2·2 = 4. In generale il fattore con cui cambia l'area è il valore assoluto del determinante, qui det = 4. La trappola tipica è pensare che, raddoppiando le lunghezze, raddoppi anche l'area.",
+  "semplice": "Un quadrato di lato 1 diventa un quadrato di lato 2: la sua area passa da 1 a 4, come quando si ingrandisce una foto del doppio in entrambe le direzioni.",
+  "passaggi": [
+   "1. det [[2, 0], [0, 2]] = 4",
+   "2. Fattore di area: |det| = 4"
+  ],
+  "concetto": "determinante come fattore di area"
+ },
+ {
+  "id": "GAL-079",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "test",
+  "domanda": "Qual è la matrice associata (rispetto alle basi canoniche) all'applicazione f(x, y, z) = (x + y, y − z)?",
+  "opzioni": {
+   "A": "[[1, 1, 0], [0, 1, −1]]",
+   "B": "[[1, 0], [1, 1], [0, −1]]",
+   "C": "[[1, 1], [1, −1]]",
+   "D": "[[1, 1, 0], [0, 1, 1]]",
+   "E": "[[1, 0, 1], [0, 1, −1]]"
+  },
+  "giusta": "A",
+  "perche": "f va da R³ a R², quindi la matrice è 2×3: una riga per ogni componente del risultato e una colonna per ogni variabile. La prima riga contiene i coefficienti di x, y, z in x + y, cioè (1, 1, 0); la seconda quelli di y − z, cioè (0, 1, −1). La trappola tipica è scrivere la trasposta, 3×2, che non può moltiplicare un vettore di R³.",
+  "semplice": "Ogni riga della matrice «legge» i coefficienti di una formula. Controllo: [[1, 1, 0], [0, 1, −1]]·(1, 2, 3) = (3, −1), proprio come f(1, 2, 3).",
+  "passaggi": [
+   "1. Dimensione: 2 righe (arrivo R²) × 3 colonne (partenza R³)",
+   "2. Riga 1 da x + y: (1, 1, 0)",
+   "3. Riga 2 da y − z: (0, 1, −1)"
+  ],
+  "concetto": "matrice associata"
+ },
+ {
+  "id": "GAL-080",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "test",
+  "domanda": "Qual è il nucleo dell'applicazione f(x, y) = (x − y, 2x − 2y)?",
+  "opzioni": {
+   "A": "{(0, 0)}",
+   "B": "span{(1, −1)}",
+   "C": "Tutto R²",
+   "D": "span{(1, 1)}",
+   "E": "span{(1, 2)}"
+  },
+  "giusta": "D",
+  "perche": "Il nucleo è l'insieme dei vettori che vengono mandati in (0, 0). Entrambe le componenti si annullano quando x = y, quindi il nucleo è la retta generata da (1, 1). Infatti f(1, 1) = (0, 0), mentre f(1, −1) = (2, 4). La trappola tipica è pensare che il nucleo contenga solo lo zero, oppure confonderlo con l'immagine, che è la retta generata da (1, 2).",
+  "semplice": "Il nucleo raccoglie i vettori che l'applicazione «schiaccia» sullo zero. Qui ogni vettore del tipo (t, t) sparisce.",
+  "passaggi": [
+   "1. Condizioni: x − y = 0 e 2x − 2y = 0",
+   "2. Entrambe equivalenti a x = y",
+   "3. ker f = {(t, t)} = span{(1, 1)}"
+  ],
+  "concetto": "nucleo"
+ },
+ {
+  "id": "GAL-081",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "test",
+  "domanda": "Un'applicazione lineare f: R⁵ → R³ è suriettiva. Quanto vale la dimensione del suo nucleo?",
+  "opzioni": {
+   "A": "0",
+   "B": "2",
+   "C": "3",
+   "D": "5",
+   "E": "8"
+  },
+  "giusta": "B",
+  "perche": "Per il teorema della dimensione (nullità più rango) dim ker f + dim Im f = dim R⁵ = 5. Se f è suriettiva l'immagine è tutto R³, quindi dim Im f = 3 e dim ker f = 5 − 3 = 2. La trappola tipica è pensare che una funzione suriettiva sia anche iniettiva e abbia nucleo nullo: da 5 a 3 dimensioni non è possibile.",
+  "semplice": "Lo spazio di partenza ha 5 «direzioni»: 3 servono per coprire tutto l'arrivo, le altre 2 vengono schiacciate sullo zero.",
+  "passaggi": [
+   "1. Teorema della dimensione: dim ker + dim Im = 5",
+   "2. Suriettiva: dim Im = 3",
+   "3. dim ker = 5 − 3 = 2"
+  ],
+  "concetto": "teorema della dimensione"
+ },
+ {
+  "id": "GAL-082",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "test",
+  "domanda": "Un'applicazione lineare f: R³ → R³ con matrice A è iniettiva se e solo se:",
+  "opzioni": {
+   "A": "det A = 0",
+   "B": "A è simmetrica",
+   "C": "A ha una riga nulla",
+   "D": "la traccia di A è diversa da zero",
+   "E": "det A ≠ 0"
+  },
+  "giusta": "E",
+  "perche": "f è iniettiva se e solo se il nucleo contiene solo il vettore nullo, cioè se il sistema AX = 0 ha solo la soluzione nulla. Per una matrice quadrata questo accade esattamente quando det A ≠ 0. Per un endomorfismo di R³, poi, iniettiva, suriettiva e invertibile sono equivalenti. La trappola tipica è confondere determinante e traccia, oppure pensare che la simmetria della matrice c'entri.",
+  "semplice": "Iniettiva vuol dire che due vettori diversi non finiscono mai nello stesso punto. Se det A = 0, la matrice schiaccia lo spazio su un piano o una retta e molti vettori finiscono sovrapposti.",
+  "passaggi": [
+   "f è iniettiva se e solo se il suo nucleo contiene solo il vettore nullo.",
+   "Il nucleo è l'insieme delle soluzioni di AX = 0.",
+   "Per una matrice quadrata, AX = 0 ha solo la soluzione nulla esattamente quando det A ≠ 0.",
+   "Traccia, simmetria e righe nulle non danno la condizione (una riga nulla anzi rende det A = 0).",
+   "f è iniettiva se e solo se det A ≠ 0."
+  ],
+  "concetto": "iniettività e determinante"
+ },
+ {
+  "id": "GAL-083",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "test",
+  "domanda": "Siano f(x, y) = (y, x) e g(x, y) = (2x, y). Quanto vale (g ∘ f)(1, 3), cioè g(f(1, 3))?",
+  "opzioni": {
+   "A": "(3, 2)",
+   "B": "(2, 3)",
+   "C": "(6, 1)",
+   "D": "(1, 6)",
+   "E": "(6, 3)"
+  },
+  "giusta": "C",
+  "perche": "Nella composizione g ∘ f si applica prima f e poi g. Si ha f(1, 3) = (3, 1) e poi g(3, 1) = (2·3, 1) = (6, 1). La trappola tipica è applicare le funzioni nell'ordine in cui sono scritte da sinistra: f(g(1, 3)) = f(2, 3) = (3, 2) è un risultato diverso. Questo mostra che la composizione, come il prodotto di matrici, non è commutativa.",
+  "semplice": "g ∘ f si legge «g dopo f». È come vestirsi: prima la camicia (f), poi la giacca (g); invertendo l'ordine il risultato cambia.",
+  "passaggi": [
+   "1. f(1, 3) = (3, 1)",
+   "2. g(3, 1) = (6, 1)",
+   "3. (g ∘ f)(1, 3) = (6, 1)"
+  ],
+  "concetto": "composizione di applicazioni"
+ },
+ {
+  "id": "GAL-084",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "test",
+  "domanda": "Può esistere un'applicazione lineare f: R² → R³ suriettiva?",
+  "opzioni": {
+   "A": "No, perché l'immagine ha dimensione al massimo 2",
+   "B": "Sì, sempre",
+   "C": "Sì, se f è iniettiva",
+   "D": "Solo se f è l'applicazione nulla",
+   "E": "Sì, se la matrice associata ha rango 3"
+  },
+  "giusta": "A",
+  "perche": "La dimensione dell'immagine è il rango della matrice associata, che è 3×2 e quindi ha rango al massimo 2. Un sottospazio di dimensione al più 2 non può essere tutto R³. In generale un'applicazione lineare non può «aumentare» la dimensione. La trappola tipica è pensare a funzioni non lineari, come le curve che riempiono lo spazio, che però non sono lineari.",
+  "semplice": "Con due sole direzioni di partenza si può coprire al massimo un piano dentro lo spazio, mai tutto lo spazio.",
+  "passaggi": [
+   "La matrice di f: R² → R³ è 3×2: 3 righe e 2 colonne.",
+   "Il rango di una matrice 3×2 è al massimo 2 (il numero di colonne).",
+   "La dimensione dell'immagine è il rango, quindi è al più 2.",
+   "Per essere suriettiva l'immagine dovrebbe essere tutto R³, di dimensione 3: impossibile.",
+   "Risposta: no, l'immagine ha dimensione al massimo 2."
+  ],
+  "concetto": "rango e suriettività"
+ },
+ {
+  "id": "GAL-085",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "università",
+  "domanda": "f: R³ → R³ ha matrice [[1, 2, 1], [2, 4, 2], [0, 1, 1]]. Quanto valgono dim Im f e dim ker f?",
+  "opzioni": {
+   "A": "3 e 0",
+   "B": "1 e 2",
+   "C": "2 e 2",
+   "D": "2 e 1",
+   "E": "1 e 1"
+  },
+  "giusta": "D",
+  "perche": "La dimensione dell'immagine è il rango della matrice. La seconda riga è il doppio della prima, mentre la terza non è proporzionale alla prima, quindi il rango è 2. Per il teorema della dimensione dim ker f = 3 − 2 = 1; per esempio (1, −1, 1) sta nel nucleo, perché 1 − 2 + 1 = 0 e −1 + 1 = 0. La trappola tipica è dare due numeri la cui somma non è 3, violando il teorema della dimensione.",
+  "semplice": "Immagine e nucleo si «dividono» le 3 dimensioni dello spazio di partenza: se l'immagine ne ha 2, il nucleo ne ha 1.",
+  "passaggi": [
+   "1. R₂ = 2R₁, R₃ non proporzionale a R₁",
+   "2. Rango = 2 → dim Im = 2",
+   "3. dim ker = 3 − 2 = 1",
+   "4. Esempio: (1, −1, 1) ∈ ker f"
+  ],
+  "concetto": "immagine e nucleo"
+ },
+ {
+  "id": "GAL-086",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "università",
+  "domanda": "Cambiando la base di R² (B = P⁻¹AP), quale di queste grandezze legate alla matrice di un endomorfismo PUÒ cambiare?",
+  "opzioni": {
+   "A": "Il determinante",
+   "B": "I singoli elementi della matrice associata",
+   "C": "La traccia",
+   "D": "Il rango",
+   "E": "Il polinomio caratteristico"
+  },
+  "giusta": "B",
+  "perche": "Matrici che rappresentano lo stesso endomorfismo in basi diverse sono simili: B = P⁻¹AP. Matrici simili hanno lo stesso determinante, la stessa traccia, lo stesso rango, lo stesso polinomio caratteristico e quindi gli stessi autovalori. I singoli elementi, invece, in generale cambiano: per esempio [[1, 1], [0, 2]] è simile a [[1, 0], [0, 2]]. La trappola tipica è pensare che una matrice diversa rappresenti per forza un'applicazione diversa.",
+  "semplice": "È come descrivere lo stesso oggetto in due lingue: le parole (gli elementi) cambiano, ma il significato (determinante, traccia, autovalori) resta lo stesso.",
+  "passaggi": [
+   "Matrici dello stesso endomorfismo in basi diverse sono simili: B = P⁻¹AP.",
+   "Matrici simili hanno uguali determinante, traccia, rango e polinomio caratteristico (quindi gli autovalori).",
+   "I singoli elementi invece possono cambiare: [[1, 1], [0, 2]] è simile a [[1, 0], [0, 2]].",
+   "Ciò che può cambiare sono i singoli elementi della matrice."
+  ],
+  "concetto": "invarianti per similitudine"
+ },
+ {
+  "id": "GAL-087",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "università",
+  "domanda": "f(x, y) = (y, x) è la simmetria rispetto alla retta y = x. Qual è la sua matrice rispetto alla base {(1, 1), (1, −1)}?",
+  "opzioni": {
+   "A": "[[0, 1], [1, 0]]",
+   "B": "[[1, 0], [0, 1]]",
+   "C": "[[−1, 0], [0, 1]]",
+   "D": "[[1, 1], [1, −1]]",
+   "E": "[[1, 0], [0, −1]]"
+  },
+  "giusta": "E",
+  "perche": "Si calcolano le immagini dei vettori della base e le si scrive in coordinate rispetto alla stessa base. f(1, 1) = (1, 1), che ha coordinate (1, 0); f(1, −1) = (−1, 1) = −(1, −1), che ha coordinate (0, −1). Le colonne della matrice sono quindi (1, 0) e (0, −1). La trappola tipica è riscrivere la matrice nella base canonica, [[0, 1], [1, 0]], dimenticando il cambio di base.",
+  "semplice": "Scegliendo come base la retta dello specchio e la sua perpendicolare, la simmetria diventa semplicissima: un vettore resta fermo, l'altro si ribalta.",
+  "passaggi": [
+   "1. f(1, 1) = (1, 1) = 1·(1, 1) + 0·(1, −1)",
+   "2. f(1, −1) = (−1, 1) = 0·(1, 1) − 1·(1, −1)",
+   "3. Colonne: (1, 0) e (0, −1)",
+   "4. Matrice: [[1, 0], [0, −1]]"
+  ],
+  "concetto": "matrice rispetto a una base"
+ },
+ {
+  "id": "GAL-088",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "università",
+  "domanda": "Un'applicazione lineare f: R² → R² verifica f(1, 0) = (2, 1) e f(0, 1) = (−1, 3). Quanto vale f(3, 2)?",
+  "opzioni": {
+   "A": "(4, 9)",
+   "B": "(6, 2)",
+   "C": "(1, 4)",
+   "D": "(5, 5)",
+   "E": "(3, 8)"
+  },
+  "giusta": "A",
+  "perche": "Un'applicazione lineare è determinata dai valori sui vettori di una base. Poiché (3, 2) = 3·(1, 0) + 2·(0, 1), per la linearità f(3, 2) = 3·(2, 1) + 2·(−1, 3) = (6 − 2, 3 + 6) = (4, 9). La trappola tipica è moltiplicare componente per componente, oppure sommare semplicemente le due immagini senza i coefficienti 3 e 2.",
+  "semplice": "Conoscere dove vanno i vettori della base basta per sapere dove va ogni altro vettore: si «ricostruisce» il vettore con la base e si trasforma ogni pezzo.",
+  "passaggi": [
+   "1. (3, 2) = 3·(1, 0) + 2·(0, 1)",
+   "2. f(3, 2) = 3·f(1, 0) + 2·f(0, 1)",
+   "3. = (6, 3) + (−2, 6)",
+   "4. = (4, 9)"
+  ],
+  "concetto": "linearità e basi"
+ },
+ {
+  "id": "GAL-089",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "università",
+  "domanda": "Quali sono il nucleo e l'immagine della proiezione ortogonale di R³ sul piano z = 0, (x, y, z) → (x, y, 0)?",
+  "opzioni": {
+   "A": "Nucleo {0}, immagine R³",
+   "B": "Nucleo il piano z = 0, immagine l'asse z",
+   "C": "Nucleo l'asse z, immagine il piano z = 0",
+   "D": "Nucleo l'asse x, immagine il piano z = 0",
+   "E": "Nucleo e immagine coincidono con il piano z = 0"
+  },
+  "giusta": "C",
+  "perche": "I vettori mandati in zero sono quelli con x = y = 0, cioè l'asse z: è il nucleo. Tutti i risultati hanno terza componente nulla, e ogni vettore (a, b, 0) si ottiene, quindi l'immagine è il piano z = 0. Le dimensioni tornano: 1 + 2 = 3. La trappola tipica è scambiare nucleo e immagine.",
+  "semplice": "Pensa all'ombra di un oggetto sul pavimento con il sole a picco: tutto finisce sul pavimento (immagine), e i punti della verticale sotto il sole finiscono nell'origine (nucleo).",
+  "passaggi": [
+   "1. f(x, y, z) = 0 ⇔ x = 0, y = 0 → ker = asse z",
+   "2. Im = {(a, b, 0)} = piano z = 0",
+   "3. Controllo: 1 + 2 = 3"
+  ],
+  "concetto": "proiezione ortogonale"
+ },
+ {
+  "id": "GAL-090",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Applicazioni lineari",
+  "livello": "università",
+  "domanda": "A quale spazio è isomorfo lo spazio vettoriale delle matrici reali 2×2?",
+  "opzioni": {
+   "A": "R²",
+   "B": "R³",
+   "C": "R⁸",
+   "D": "R⁴",
+   "E": "Allo spazio dei polinomi di grado al massimo 4"
+  },
+  "giusta": "D",
+  "perche": "Due spazi vettoriali reali di dimensione finita sono isomorfi se e solo se hanno la stessa dimensione. Le matrici 2×2 hanno 4 elementi liberi, quindi dimensione 4, e sono isomorfe a R⁴ tramite [[a, b], [c, d]] → (a, b, c, d). I polinomi di grado al massimo 4 hanno dimensione 5, quindi non sono isomorfi. La trappola tipica è pensare che spazi «di natura diversa» non possano mai essere isomorfi.",
+  "semplice": "Isomorfo significa «uguale nella struttura»: una matrice 2×2 è solo un modo diverso di scrivere 4 numeri.",
+  "passaggi": [
+   "Due spazi vettoriali reali di dimensione finita sono isomorfi se e solo se hanno la stessa dimensione.",
+   "Le matrici 2×2 hanno 4 elementi liberi: dimensione 4.",
+   "L'isomorfismo è [[a, b], [c, d]] → (a, b, c, d).",
+   "I polinomi di grado al massimo 4 hanno dimensione 5: non vanno bene.",
+   "Lo spazio è isomorfo a R⁴."
+  ],
+  "concetto": "isomorfismi"
+ },
+ {
+  "id": "GAL-091",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "superiori",
+  "domanda": "Un autovettore di una matrice quadrata A è un vettore v non nullo tale che:",
+  "opzioni": {
+   "A": "Av = 0",
+   "B": "Av = λv per qualche numero λ",
+   "C": "Av = v sempre",
+   "D": "Av è perpendicolare a v",
+   "E": "|Av| = 1"
+  },
+  "giusta": "B",
+  "perche": "Un autovettore è un vettore non nullo che la matrice non fa «girare»: lo trasforma in un suo multiplo, Av = λv. Il numero λ si chiama autovalore. Il caso Av = 0 corrisponde all'autovalore 0 ed è solo un caso particolare, così come Av = v corrisponde a λ = 1. La trappola tipica è dimenticare la condizione v ≠ 0: il vettore nullo soddisfa sempre A·0 = λ·0 e per questo è escluso.",
+  "semplice": "Immagina di stirare un elastico: quasi tutti i punti cambiano direzione rispetto al centro, ma quelli lungo la direzione di stiramento restano sulla stessa retta, solo più lontani. Quella direzione è un autovettore.",
+  "passaggi": [
+   "Un autovettore è un vettore non nullo che la matrice trasforma in un suo multiplo.",
+   "In formula: Av = λv, dove il numero λ è l'autovalore.",
+   "Av = 0 (λ = 0) e Av = v (λ = 1) sono solo casi particolari.",
+   "Il vettore nullo è escluso perché A·0 = λ·0 vale per ogni λ.",
+   "Risposta: Av = λv per qualche numero λ."
+  ],
+  "concetto": "definizione di autovettore"
+ },
+ {
+  "id": "GAL-092",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "superiori",
+  "domanda": "Quali sono gli autovalori della matrice diagonale [[3, 0], [0, −2]]?",
+  "opzioni": {
+   "A": "3 e 2",
+   "B": "1 e 1",
+   "C": "0 e 1",
+   "D": "3 e −2",
+   "E": "−6 e 1"
+  },
+  "giusta": "D",
+  "perche": "In una matrice diagonale gli autovalori sono gli elementi della diagonale: 3 e −2. Infatti [[3, 0], [0, −2]]·(1, 0) = (3, 0) = 3·(1, 0) e [[3, 0], [0, −2]]·(0, 1) = (0, −2) = −2·(0, 1). La trappola tipica è perdere il segno meno o rispondere con il determinante (−6) e la traccia (1).",
+  "semplice": "La matrice allunga di 3 volte lungo l'asse x e ribalta raddoppiando lungo l'asse y. Gli assi sono le direzioni degli autovettori, i fattori 3 e −2 sono gli autovalori.",
+  "passaggi": [
+   "In una matrice diagonale gli autovalori sono gli elementi sulla diagonale.",
+   "Verifica: [[3, 0], [0, −2]]·(1, 0) = (3, 0) = 3·(1, 0).",
+   "Verifica: [[3, 0], [0, −2]]·(0, 1) = (0, −2) = −2·(0, 1).",
+   "Non confondere con determinante (3·(−2) = −6) e traccia (3 − 2 = 1).",
+   "Gli autovalori sono 3 e −2."
+  ],
+  "concetto": "autovalori di matrici diagonali"
+ },
+ {
+  "id": "GAL-093",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "superiori",
+  "domanda": "Data A = [[4, 1], [2, 3]], il vettore v = (1, 1) è un autovettore. Qual è il suo autovalore?",
+  "opzioni": {
+   "A": "5",
+   "B": "4",
+   "C": "1",
+   "D": "3",
+   "E": "v non è un autovettore"
+  },
+  "giusta": "A",
+  "perche": "Si calcola Av = (4·1 + 1·1, 2·1 + 3·1) = (5, 5) = 5·(1, 1). Quindi v è un autovettore con autovalore 5. La trappola tipica è leggere un elemento della diagonale (4 o 3) come autovalore: questo funziona solo per le matrici diagonali o triangolari.",
+  "semplice": "Per verificare se un vettore è autovettore basta moltiplicarlo per la matrice e vedere se il risultato è un suo multiplo. Qui (5, 5) è 5 volte (1, 1).",
+  "passaggi": [
+   "1. Av = (4 + 1, 2 + 3) = (5, 5)",
+   "2. (5, 5) = 5·(1, 1)",
+   "3. Autovalore: 5"
+  ],
+  "concetto": "verifica di un autovettore"
+ },
+ {
+  "id": "GAL-094",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "superiori",
+  "domanda": "Quali sono gli autovalori della matrice triangolare [[1, 4], [0, 6]]?",
+  "opzioni": {
+   "A": "4 e 6",
+   "B": "1 e 4",
+   "C": "0 e 7",
+   "D": "5 e 2",
+   "E": "1 e 6"
+  },
+  "giusta": "E",
+  "perche": "Per una matrice triangolare il polinomio caratteristico è il prodotto dei fattori (aᵢᵢ − λ), quindi gli autovalori sono gli elementi diagonali: 1 e 6. Infatti det [[1 − λ, 4], [0, 6 − λ]] = (1 − λ)(6 − λ). L'elemento 4 fuori dalla diagonale non influisce sugli autovalori. La trappola tipica è includere gli elementi fuori diagonale.",
+  "semplice": "Nelle matrici triangolari (zeri sotto o sopra la diagonale) gli autovalori si leggono direttamente sulla diagonale, senza calcoli.",
+  "passaggi": [
+   "1. det(A − λI) = (1 − λ)(6 − λ) − 4·0",
+   "2. Autovalori: λ = 1 e λ = 6"
+  ],
+  "concetto": "autovalori di matrici triangolari"
+ },
+ {
+  "id": "GAL-095",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "superiori",
+  "domanda": "Se una matrice quadrata A ha l'autovalore 0, allora:",
+  "opzioni": {
+   "A": "A è la matrice nulla",
+   "B": "A è la matrice identità",
+   "C": "det A = 0 e A non è invertibile",
+   "D": "A è invertibile",
+   "E": "tutti gli autovalori di A sono 0"
+  },
+  "giusta": "C",
+  "perche": "Se 0 è autovalore esiste un vettore v ≠ 0 con Av = 0, cioè il nucleo non è banale. Allora A non è invertibile e det A = 0; del resto il determinante è il prodotto degli autovalori. Non è detto però che A sia nulla: [[1, 0], [0, 0]] ha autovalori 1 e 0. La trappola tipica è pensare che un autovalore nullo renda nulla tutta la matrice.",
+  "semplice": "Autovalore 0 significa che una direzione viene «schiacciata» sullo zero. Una trasformazione che schiaccia qualcosa non si può annullare: la matrice non ha inversa.",
+  "passaggi": [
+   "Autovalore 0 significa che esiste v ≠ 0 con Av = 0·v = 0.",
+   "Quindi il nucleo di A non è solo {0}: A non è invertibile.",
+   "Il determinante è il prodotto degli autovalori: con un fattore 0 si ottiene det A = 0.",
+   "A non è per forza nulla: [[1, 0], [0, 0]] ha autovalori 1 e 0.",
+   "Conclusione: det A = 0 e A non è invertibile."
+  ],
+  "concetto": "autovalore zero e invertibilità"
+ },
+ {
+  "id": "GAL-096",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "superiori",
+  "domanda": "Come si trovano gli autovalori di una matrice quadrata A?",
+  "opzioni": {
+   "A": "Risolvendo det A = λ",
+   "B": "Risolvendo det(A − λI) = 0",
+   "C": "Risolvendo A − λ = 0 elemento per elemento",
+   "D": "Ponendo la traccia di A uguale a λ",
+   "E": "Risolvendo A·λ = I"
+  },
+  "giusta": "B",
+  "perche": "λ è autovalore se esiste v ≠ 0 con (A − λI)v = 0, cioè se la matrice A − λI non è invertibile. Questo accade esattamente quando det(A − λI) = 0, che è l'equazione caratteristica. Le sue soluzioni sono gli autovalori. La trappola tipica è sottrarre λ a tutti gli elementi della matrice, mentre λI ha λ solo sulla diagonale.",
+  "semplice": "Si sottrae λ sulla diagonale, si calcola il determinante e si risolve l'equazione in λ. Per [[2, 0], [0, 5]] si ottiene (2 − λ)(5 − λ) = 0, cioè λ = 2 o λ = 5.",
+  "passaggi": [
+   "λ è autovalore se esiste v ≠ 0 con Av = λv, cioè (A − λI)v = 0.",
+   "Un sistema omogeneo ha soluzioni non nulle solo se la matrice A − λI non è invertibile.",
+   "Questo accade quando det(A − λI) = 0 (equazione caratteristica).",
+   "Attenzione: λI ha λ solo sulla diagonale, non si sottrae λ a tutti gli elementi.",
+   "Gli autovalori si trovano risolvendo det(A − λI) = 0."
+  ],
+  "concetto": "equazione caratteristica"
+ },
+ {
+  "id": "GAL-097",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "test",
+  "domanda": "Quali sono gli autovalori della matrice [[5, 2], [1, 4]]?",
+  "opzioni": {
+   "A": "3 e 6",
+   "B": "5 e 4",
+   "C": "2 e 7",
+   "D": "−3 e −6",
+   "E": "1 e 9"
+  },
+  "giusta": "A",
+  "perche": "Il polinomio caratteristico è det [[5 − λ, 2], [1, 4 − λ]] = (5 − λ)(4 − λ) − 2 = λ² − 9λ + 18. Le radici sono λ = 3 e λ = 6. Controllo: la somma 3 + 6 = 9 è la traccia e il prodotto 3·6 = 18 è il determinante (20 − 2). La trappola tipica è prendere gli elementi diagonali come autovalori, cosa valida solo per matrici triangolari.",
+  "semplice": "Per una matrice 2×2 il polinomio caratteristico è λ² − (traccia)λ + det. Qui traccia 9 e determinante 18 danno λ² − 9λ + 18 = (λ − 3)(λ − 6).",
+  "passaggi": [
+   "1. Traccia = 9, det = 20 − 2 = 18",
+   "2. Polinomio: λ² − 9λ + 18",
+   "3. Radici: λ = 3 e λ = 6",
+   "4. Controllo: 3 + 6 = 9, 3·6 = 18"
+  ],
+  "concetto": "calcolo degli autovalori 2×2"
+ },
+ {
+  "id": "GAL-098",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "test",
+  "domanda": "Quale vettore è un autovettore della matrice [[2, 1], [1, 2]] relativo all'autovalore 3?",
+  "opzioni": {
+   "A": "(1, −1)",
+   "B": "(1, 0)",
+   "C": "(1, 1)",
+   "D": "(0, 1)",
+   "E": "(2, 1)"
+  },
+  "giusta": "C",
+  "perche": "Si risolve (A − 3I)v = 0 con A − 3I = [[−1, 1], [1, −1]]: l'equazione −x + y = 0 dà y = x, quindi gli autovettori sono i multipli non nulli di (1, 1). Controllo: [[2, 1], [1, 2]]·(1, 1) = (3, 3) = 3·(1, 1). Il vettore (1, −1) è invece autovettore relativo all'autovalore 1. La trappola tipica è scegliere un autovettore della matrice ma relativo all'autovalore sbagliato.",
+  "semplice": "Per trovare un autovettore si cerca una soluzione non nulla di (A − λI)v = 0. Il risultato non è unico: anche (2, 2) o (−5, −5) vanno bene.",
+  "passaggi": [
+   "1. A − 3I = [[−1, 1], [1, −1]]",
+   "2. Equazione: −x + y = 0 → y = x",
+   "3. Autovettore: (1, 1)",
+   "4. Controllo: A(1, 1) = (3, 3)"
+  ],
+  "concetto": "calcolo di un autovettore"
+ },
+ {
+  "id": "GAL-099",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "test",
+  "domanda": "Una matrice 3×3 ha autovalori 2, 3 e −1. Quanto vale il suo determinante?",
+  "opzioni": {
+   "A": "4",
+   "B": "6",
+   "C": "0",
+   "D": "−4",
+   "E": "−6"
+  },
+  "giusta": "E",
+  "perche": "Il determinante di una matrice è il prodotto dei suoi autovalori (contati con la molteplicità): 2·3·(−1) = −6. La somma degli autovalori, 2 + 3 − 1 = 4, è invece la traccia. La trappola tipica è confondere le due relazioni e rispondere 4, oppure perdere il segno meno.",
+  "semplice": "Due regole da ricordare in coppia: somma degli autovalori = traccia, prodotto degli autovalori = determinante.",
+  "passaggi": [
+   "1. det A = λ₁·λ₂·λ₃",
+   "2. 2·3·(−1) = −6"
+  ],
+  "concetto": "determinante e autovalori"
+ },
+ {
+  "id": "GAL-100",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "test",
+  "domanda": "La matrice A ha autovalori 2 e −3. Quali sono gli autovalori di A²?",
+  "opzioni": {
+   "A": "2 e −3",
+   "B": "4 e −9",
+   "C": "4 e 6",
+   "D": "4 e 9",
+   "E": "−6"
+  },
+  "giusta": "D",
+  "perche": "Se Av = λv, allora A²v = A(λv) = λ·Av = λ²v. Quindi gli autovalori di A² sono i quadrati degli autovalori di A: 2² = 4 e (−3)² = 9, con gli stessi autovettori. La trappola tipica è scrivere −9, dimenticando che il quadrato di un numero negativo è positivo.",
+  "semplice": "Applicare due volte la matrice a un autovettore significa allungarlo due volte dello stesso fattore: prima ×λ, poi ancora ×λ.",
+  "passaggi": [
+   "1. Av = λv → A²v = λ²v",
+   "2. 2² = 4",
+   "3. (−3)² = 9"
+  ],
+  "concetto": "autovalori delle potenze"
+ },
+ {
+  "id": "GAL-101",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "test",
+  "domanda": "Una matrice invertibile A ha autovalori 2 e 5. Quali sono gli autovalori di A⁻¹?",
+  "opzioni": {
+   "A": "1/2 e 1/5",
+   "B": "−2 e −5",
+   "C": "2 e 5",
+   "D": "5 e 2",
+   "E": "A⁻¹ non ha autovalori"
+  },
+  "giusta": "A",
+  "perche": "Da Av = λv, moltiplicando per A⁻¹, si ottiene v = λA⁻¹v, cioè A⁻¹v = (1/λ)v. Gli autovalori dell'inversa sono i reciproci di quelli di A, e gli autovettori sono gli stessi. La trappola tipica è prendere gli opposti (−2 e −5) invece dei reciproci. Questo ragionamento richiede λ ≠ 0, che è garantito perché A è invertibile.",
+  "semplice": "Se A allunga una direzione di 2 volte, l'inversa deve «riportarla indietro» accorciandola della metà: fattore 1/2.",
+  "passaggi": [
+   "1. Av = λv",
+   "2. Moltiplico per A⁻¹: v = λA⁻¹v",
+   "3. A⁻¹v = (1/λ)v",
+   "4. Autovalori: 1/2 e 1/5"
+  ],
+  "concetto": "autovalori dell'inversa"
+ },
+ {
+  "id": "GAL-102",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "test",
+  "domanda": "Quanti autovalori reali ha la matrice di rotazione di 90° [[0, −1], [1, 0]]?",
+  "opzioni": {
+   "A": "Due: 1 e −1",
+   "B": "Nessuno: gli autovalori sono i numeri complessi ±i",
+   "C": "Uno solo: 0, doppio",
+   "D": "Uno solo: 1, doppio",
+   "E": "Uno: 90"
+  },
+  "giusta": "B",
+  "perche": "Il polinomio caratteristico è det [[−λ, −1], [1, −λ]] = λ² + 1, che non ha radici reali: le radici sono ±i. Geometricamente una rotazione di 90° cambia la direzione di ogni vettore non nullo, quindi non esiste nessuna retta che venga mandata in sé stessa. La trappola tipica è confondere l'angolo di rotazione con un autovalore.",
+  "semplice": "Una rotazione di un quarto di giro fa «girare» tutte le frecce: nessuna resta sulla propria retta, quindi non ci sono autovettori reali.",
+  "passaggi": [
+   "1. det(A − λI) = λ² + 1",
+   "2. λ² + 1 = 0 non ha soluzioni reali",
+   "3. Autovalori complessi: λ = ±i"
+  ],
+  "concetto": "autovalori complessi"
+ },
+ {
+  "id": "GAL-103",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "università",
+  "domanda": "La matrice [[1, 1], [0, 1]] è diagonalizzabile?",
+  "opzioni": {
+   "A": "Sì, perché è triangolare",
+   "B": "Sì, perché ha autovalori reali",
+   "C": "No: l'autovalore 1 ha molteplicità algebrica 2 ma geometrica 1",
+   "D": "Sì, è già diagonale",
+   "E": "No, perché non ha autovalori"
+  },
+  "giusta": "C",
+  "perche": "L'unico autovalore è 1, con molteplicità algebrica 2. L'autospazio si ottiene da (A − I)v = 0 con A − I = [[0, 1], [0, 0]], che dà y = 0: è la retta generata da (1, 0), di dimensione 1. Mancano quindi autovettori per formare una base, e la matrice non è diagonalizzabile. La trappola tipica è pensare che avere autovalori reali, o essere triangolare, basti per la diagonalizzabilità.",
+  "semplice": "Questa matrice fa «scivolare» il piano in orizzontale (taglio). Solo l'asse x resta fermo, quindi c'è una sola direzione di autovettori invece delle due necessarie.",
+  "passaggi": [
+   "1. Autovalore: λ = 1 (doppio)",
+   "2. A − I = [[0, 1], [0, 0]], rango 1",
+   "3. Molteplicità geometrica: 2 − 1 = 1",
+   "4. 1 < 2 → non diagonalizzabile"
+  ],
+  "concetto": "molteplicità algebrica e geometrica"
+ },
+ {
+  "id": "GAL-104",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "università",
+  "domanda": "Che cosa garantisce il teorema spettrale per una matrice reale simmetrica?",
+  "opzioni": {
+   "A": "Che può avere autovalori complessi non reali",
+   "B": "Che non sempre è diagonalizzabile",
+   "C": "Che i suoi autovettori sono sempre paralleli",
+   "D": "Che il suo determinante è sempre positivo",
+   "E": "Che ha autovalori reali ed è diagonalizzabile mediante una matrice ortogonale"
+  },
+  "giusta": "E",
+  "perche": "Il teorema spettrale afferma che ogni matrice reale simmetrica ha tutti gli autovalori reali e ammette una base ortonormale di autovettori: A = QDQᵀ con Q ortogonale e D diagonale. In particolare autovettori relativi ad autovalori distinti sono ortogonali. Il determinante può essere negativo, per esempio [[0, 1], [1, 0]] ha determinante −1. La trappola tipica è confondere le matrici simmetriche con quelle definite positive.",
+  "semplice": "Le matrici simmetriche sono le più «comode»: si possono sempre ruotare gli assi in modo da renderle diagonali. È il motivo per cui si usano per descrivere coniche, quadriche e tensori in fisica.",
+  "passaggi": [
+   "Ricorda l'enunciato del teorema spettrale per matrici reali simmetriche.",
+   "Tutti gli autovalori sono reali: si esclude la possibilità di autovalori complessi.",
+   "Esiste una base ortonormale di autovettori: A = QDQᵀ con Q ortogonale e D diagonale, quindi è sempre diagonalizzabile.",
+   "Il determinante può essere negativo: [[0, 1], [1, 0]] ha det = −1.",
+   "Risposta: autovalori reali e diagonalizzabile con una matrice ortogonale."
+  ],
+  "concetto": "teorema spettrale"
+ },
+ {
+  "id": "GAL-105",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "università",
+  "domanda": "Una matrice reale 3×3 ha polinomio caratteristico (1 − λ)(2 − λ)(3 − λ). Che cosa si può concludere?",
+  "opzioni": {
+   "A": "È diagonalizzabile",
+   "B": "Non è diagonalizzabile",
+   "C": "Potrebbe non essere diagonalizzabile, dipende dagli autovettori",
+   "D": "Ha determinante 6 e traccia 1",
+   "E": "Non è invertibile"
+  },
+  "giusta": "A",
+  "perche": "Gli autovalori 1, 2 e 3 sono distinti e ciascuno ha almeno un autovettore. Autovettori relativi ad autovalori distinti sono linearmente indipendenti, quindi si ottengono 3 autovettori indipendenti, cioè una base di R³: la matrice è diagonalizzabile. Inoltre det = 1·2·3 = 6 e traccia = 1 + 2 + 3 = 6, e non c'è l'autovalore 0, quindi è invertibile. La trappola tipica è pensare che servano altri controlli: con n autovalori distinti la diagonalizzabilità è garantita.",
+  "semplice": "Autovalori tutti diversi = abbastanza direzioni speciali indipendenti. È la condizione sufficiente più rapida da controllare.",
+  "passaggi": [
+   "Dal polinomio caratteristico gli autovalori sono 1, 2 e 3: tre valori distinti.",
+   "Ogni autovalore ha almeno un autovettore; autovettori di autovalori distinti sono linearmente indipendenti.",
+   "Si hanno quindi 3 autovettori indipendenti in R³: una base di autovettori, la matrice è diagonalizzabile.",
+   "Controllo delle altre opzioni: det = 1·2·3 = 6, traccia = 1 + 2 + 3 = 6 (non 1), nessun autovalore 0 quindi è invertibile.",
+   "Conclusione: è diagonalizzabile."
+  ],
+  "concetto": "autovalori distinti"
+ },
+ {
+  "id": "GAL-106",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "università",
+  "domanda": "Sapendo che A = [[2, 1], [1, 2]] = PDP⁻¹ con D = [[1, 0], [0, 3]], quanto vale A³?",
+  "opzioni": {
+   "A": "[[8, 1], [1, 8]]",
+   "B": "[[27, 1], [1, 27]]",
+   "C": "[[9, 8], [8, 9]]",
+   "D": "[[14, 13], [13, 14]]",
+   "E": "[[13, 14], [14, 13]]"
+  },
+  "giusta": "D",
+  "perche": "Da A = PDP⁻¹ segue Aⁿ = PDⁿP⁻¹. Con autovettori (1, −1) per λ = 1 e (1, 1) per λ = 3 si ottiene Aⁿ = (1/2)·[[3ⁿ + 1, 3ⁿ − 1], [3ⁿ − 1, 3ⁿ + 1]]. Per n = 3: (1/2)·[[28, 26], [26, 28]] = [[14, 13], [13, 14]]. Si controlla direttamente: A² = [[5, 4], [4, 5]] e A³ = A²·A = [[14, 13], [13, 14]]. La trappola tipica è elevare al cubo i singoli elementi della matrice.",
+  "semplice": "La diagonalizzazione trasforma un problema difficile (potenze di una matrice) in uno facile (potenze di numeri sulla diagonale). È utile per esempio nelle successioni definite per ricorrenza.",
+  "passaggi": [
+   "1. Aⁿ = PDⁿP⁻¹",
+   "2. D³ = [[1, 0], [0, 27]]",
+   "3. A³ = (1/2)·[[27 + 1, 27 − 1], [27 − 1, 27 + 1]]",
+   "4. A³ = [[14, 13], [13, 14]]",
+   "5. Controllo: A² = [[5, 4], [4, 5]], A²·A = [[14, 13], [13, 14]]"
+  ],
+  "concetto": "potenze tramite diagonalizzazione"
+ },
+ {
+  "id": "GAL-107",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "università",
+  "domanda": "Qual è la molteplicità geometrica dell'autovalore 3 per la matrice [[3, 1, 0], [0, 3, 0], [0, 0, 3]]?",
+  "opzioni": {
+   "A": "3",
+   "B": "2",
+   "C": "1",
+   "D": "0",
+   "E": "4"
+  },
+  "giusta": "B",
+  "perche": "La molteplicità geometrica è la dimensione dell'autospazio, cioè 3 − rango(A − 3I). Si ha A − 3I = [[0, 1, 0], [0, 0, 0], [0, 0, 0]], di rango 1, quindi la molteplicità geometrica è 2. La molteplicità algebrica è invece 3, quindi la matrice non è diagonalizzabile. La trappola tipica è confondere le due molteplicità e rispondere 3.",
+  "semplice": "L'autospazio qui è formato dai vettori con seconda componente nulla: il piano generato da (1, 0, 0) e (0, 0, 1). Un piano ha dimensione 2.",
+  "passaggi": [
+   "1. A − 3I = [[0, 1, 0], [0, 0, 0], [0, 0, 0]]",
+   "2. Rango = 1",
+   "3. dim autospazio = 3 − 1 = 2",
+   "4. Molteplicità algebrica = 3 > 2 → non diagonalizzabile"
+  ],
+  "concetto": "molteplicità geometrica"
+ },
+ {
+  "id": "GAL-108",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Autovalori e autovettori",
+  "livello": "università",
+  "domanda": "A è una matrice 2×2 con traccia 5 e determinante 6. Per il teorema di Cayley–Hamilton, quale relazione vale?",
+  "opzioni": {
+   "A": "A² = 6A − 5I",
+   "B": "A² = 5A + 6I",
+   "C": "A² = 5A − 6I",
+   "D": "A² = −5A + 6I",
+   "E": "A² = 30I"
+  },
+  "giusta": "C",
+  "perche": "Il polinomio caratteristico di una matrice 2×2 è λ² − (tr A)λ + det A = λ² − 5λ + 6. Il teorema di Cayley–Hamilton afferma che ogni matrice annulla il proprio polinomio caratteristico: A² − 5A + 6I = 0, cioè A² = 5A − 6I. La trappola tipica è sbagliare i segni nel portare i termini dall'altra parte, oppure scambiare il ruolo di traccia e determinante.",
+  "semplice": "La matrice «soddisfa la propria equazione». Per esempio diag(2, 3) ha traccia 5 e determinante 6, e infatti diag(4, 9) = 5·diag(2, 3) − 6I = diag(10 − 6, 15 − 6).",
+  "passaggi": [
+   "1. Polinomio caratteristico: λ² − 5λ + 6",
+   "2. Cayley–Hamilton: A² − 5A + 6I = 0",
+   "3. A² = 5A − 6I"
+  ],
+  "concetto": "teorema di Cayley–Hamilton"
+ },
+ {
+  "id": "GAL-109",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è la distanza tra i punti A(1, 2, 3) e B(4, 6, 3)?",
+  "opzioni": {
+   "A": "7",
+   "B": "25",
+   "C": "5",
+   "D": "√7",
+   "E": "√41"
+  },
+  "giusta": "C",
+  "perche": "Nello spazio la distanza è AB = √((x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²). Qui le differenze sono 3, 4 e 0, quindi AB = √(9 + 16 + 0) = √25 = 5. La trappola tipica è sommare le differenze senza elevarle al quadrato (7) o dimenticare la radice (25).",
+  "semplice": "È il teorema di Pitagora con una coordinata in più. In questo caso i punti hanno la stessa quota z, quindi è come misurare la distanza sul piano: un triangolo 3-4-5.",
+  "passaggi": [
+   "1. Differenze: 4 − 1 = 3, 6 − 2 = 4, 3 − 3 = 0",
+   "2. Quadrati: 9 + 16 + 0 = 25",
+   "3. Radice: √25 = 5"
+  ],
+  "concetto": "distanza tra due punti"
+ },
+ {
+  "id": "GAL-110",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è il punto medio del segmento di estremi A(2, −4, 6) e B(4, 0, −2)?",
+  "opzioni": {
+   "A": "(3, −2, 2)",
+   "B": "(6, −4, 4)",
+   "C": "(1, 2, −4)",
+   "D": "(2, 4, −8)",
+   "E": "(3, 2, 2)"
+  },
+  "giusta": "A",
+  "perche": "Il punto medio ha come coordinate le medie delle coordinate degli estremi: ((2 + 4)/2, (−4 + 0)/2, (6 − 2)/2) = (3, −2, 2). La trappola tipica è dimenticare di dividere per 2, ottenendo (6, −4, 4), oppure calcolare le semidifferenze invece delle semisomme. Anche il segno della seconda coordinata è un punto delicato.",
+  "semplice": "Il punto medio sta «a metà strada» in ogni direzione. Per esempio tra (0, 0, 0) e (2, 4, 6) il punto medio è (1, 2, 3).",
+  "passaggi": [
+   "1. x: (2 + 4)/2 = 3",
+   "2. y: (−4 + 0)/2 = −2",
+   "3. z: (6 + (−2))/2 = 2",
+   "4. M = (3, −2, 2)"
+  ],
+  "concetto": "punto medio"
+ },
+ {
+  "id": "GAL-111",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "superiori",
+  "domanda": "Che cosa rappresenta l'equazione z = 0 nello spazio?",
+  "opzioni": {
+   "A": "L'asse z",
+   "B": "Solo l'origine",
+   "C": "L'asse x",
+   "D": "Una retta",
+   "E": "Il piano xy, che contiene l'asse x e l'asse y"
+  },
+  "giusta": "E",
+  "perche": "Nello spazio un'equazione lineare in x, y, z rappresenta un piano. L'equazione z = 0 è soddisfatta da tutti i punti (x, y, 0), con x e y liberi: è il piano coordinato xy, che contiene gli assi x e y. La trappola tipica è pensare al piano cartesiano, dove un'equazione come y = 0 rappresenta una retta: nello spazio c'è una coordinata libera in più.",
+  "semplice": "Pensa al pavimento di una stanza: tutti i suoi punti hanno altezza zero, ma possono stare ovunque in lunghezza e larghezza.",
+  "passaggi": [
+   "Nello spazio un'equazione lineare in x, y, z rappresenta un piano.",
+   "z = 0 è soddisfatta da tutti i punti (x, y, 0) con x e y qualsiasi: due coordinate libere.",
+   "Non è una retta: nello spazio c'è una coordinata libera in più rispetto al piano cartesiano.",
+   "È il piano coordinato xy, che contiene l'asse x e l'asse y."
+  ],
+  "concetto": "piani coordinati"
+ },
+ {
+  "id": "GAL-112",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è un vettore normale (perpendicolare) al piano 2x − y + 3z = 7?",
+  "opzioni": {
+   "A": "(2, −1, 7)",
+   "B": "(7, 3, −1)",
+   "C": "(1, 1, 1)",
+   "D": "(2, −1, 3)",
+   "E": "(−2, 1, 3)"
+  },
+  "giusta": "D",
+  "perche": "Per un piano di equazione ax + by + cz = d, il vettore (a, b, c) formato dai coefficienti delle incognite è perpendicolare al piano. Qui si ottiene (2, −1, 3). Il termine noto 7 non c'entra: indica solo la posizione del piano, non la sua inclinazione. La trappola tipica è includere il termine noto o cambiare segno a una sola componente.",
+  "semplice": "I coefficienti di x, y e z dicono «verso dove guarda» il piano. Piani con gli stessi coefficienti e termini noti diversi sono paralleli.",
+  "passaggi": [
+   "Per un piano ax + by + cz = d il vettore normale è (a, b, c), formato dai coefficienti delle incognite.",
+   "Qui a = 2, b = −1, c = 3.",
+   "Il termine noto 7 indica solo la posizione del piano, non la sua direzione: non si usa.",
+   "Il vettore normale è (2, −1, 3)."
+  ],
+  "concetto": "vettore normale a un piano"
+ },
+ {
+  "id": "GAL-113",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "superiori",
+  "domanda": "La retta di equazioni parametriche x = 1 + 3t, y = −t, z = 2 + t, quale punto raggiunge per t = 2?",
+  "opzioni": {
+   "A": "(6, −2, 2)",
+   "B": "(7, −2, 4)",
+   "C": "(5, 2, 4)",
+   "D": "(7, 2, 4)",
+   "E": "(4, −1, 3)"
+  },
+  "giusta": "B",
+  "perche": "Basta sostituire t = 2 in ciascuna equazione: x = 1 + 6 = 7, y = −2, z = 2 + 2 = 4. Il punto è (7, −2, 4). La trappola tipica è dimenticare il punto di partenza (1, 0, 2), ottenendo solo 2·(3, −1, 1) = (6, −2, 2), o perdere il segno di y. Il valore t = 1 darebbe invece (4, −1, 3).",
+  "semplice": "Le equazioni parametriche descrivono un viaggio: si parte da (1, 0, 2) e a ogni unità di «tempo» t ci si sposta di (3, −1, 1). Dopo 2 unità si è in (7, −2, 4).",
+  "passaggi": [
+   "1. x = 1 + 3·2 = 7",
+   "2. y = −2",
+   "3. z = 2 + 2 = 4",
+   "4. Punto: (7, −2, 4)"
+  ],
+  "concetto": "equazioni parametriche della retta"
+ },
+ {
+  "id": "GAL-114",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "superiori",
+  "domanda": "Quale punto appartiene al piano x + 2y − z = 2?",
+  "opzioni": {
+   "A": "(1, 1, 1)",
+   "B": "(1, 0, 0)",
+   "C": "(0, 1, 1)",
+   "D": "(2, 1, 0)",
+   "E": "(0, 0, 2)"
+  },
+  "giusta": "A",
+  "perche": "Un punto appartiene al piano se le sue coordinate soddisfano l'equazione. Per (1, 1, 1): 1 + 2 − 1 = 2 ✓. Per gli altri punti si ottiene 1, 1, 4 e −2, tutti diversi da 2. La trappola tipica è sbagliare il segno del termine −z, per esempio con (0, 0, 2), che dà −2 e non 2.",
+  "semplice": "Per controllare se un punto sta su un piano basta «metterlo dentro» l'equazione e vedere se l'uguaglianza è vera.",
+  "passaggi": [
+   "1. (1, 1, 1): 1 + 2·1 − 1 = 2 ✓",
+   "2. (1, 0, 0): 1 ≠ 2",
+   "3. (0, 1, 1): 2 − 1 = 1 ≠ 2",
+   "4. (2, 1, 0): 4 ≠ 2",
+   "5. (0, 0, 2): −2 ≠ 2"
+  ],
+  "concetto": "appartenenza a un piano"
+ },
+ {
+  "id": "GAL-115",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "test",
+  "domanda": "Qual è l'equazione del piano passante per P(1, 2, −1) e perpendicolare al vettore n = (3, 0, 2)?",
+  "opzioni": {
+   "A": "3x + 2y − 1 = 0",
+   "B": "x + 2y − z = 0",
+   "C": "3x + 2z − 1 = 0",
+   "D": "3x + 2z + 1 = 0",
+   "E": "3x + 2z − 7 = 0"
+  },
+  "giusta": "C",
+  "perche": "Il piano per P con vettore normale (a, b, c) ha equazione a(x − x₀) + b(y − y₀) + c(z − z₀) = 0. Qui 3(x − 1) + 0·(y − 2) + 2(z + 1) = 0, cioè 3x − 3 + 2z + 2 = 0, quindi 3x + 2z − 1 = 0. Controllo: 3·1 + 2·(−1) − 1 = 0 ✓. La trappola tipica è usare le coordinate del punto come coefficienti, oppure sbagliare il segno di z₀ = −1.",
+  "semplice": "Il vettore normale dà i coefficienti, il punto serve a trovare il termine noto. Manca y perché il vettore normale ha seconda componente zero: il piano è parallelo all'asse y.",
+  "passaggi": [
+   "1. Formula: 3(x − 1) + 0(y − 2) + 2(z + 1) = 0",
+   "2. Sviluppo: 3x − 3 + 2z + 2 = 0",
+   "3. Piano: 3x + 2z − 1 = 0",
+   "4. Controllo con P: 3 − 2 − 1 = 0"
+  ],
+  "concetto": "piano per un punto con normale data"
+ },
+ {
+  "id": "GAL-116",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "test",
+  "domanda": "Qual è la distanza del punto P(1, 2, 3) dal piano 2x + y − 2z + 4 = 0?",
+  "opzioni": {
+   "A": "2",
+   "B": "4/3",
+   "C": "0",
+   "D": "2/9",
+   "E": "2/3"
+  },
+  "giusta": "E",
+  "perche": "La distanza di un punto dal piano ax + by + cz + d = 0 è |ax₀ + by₀ + cz₀ + d| / √(a² + b² + c²). Il numeratore vale |2 + 2 − 6 + 4| = 2 e il denominatore √(4 + 1 + 4) = 3, quindi la distanza è 2/3. La trappola tipica è dimenticare la radice al denominatore, ottenendo 2/9, oppure dimenticare il termine noto d.",
+  "semplice": "La formula «mette il punto nell'equazione» e poi divide per la lunghezza del vettore normale, così il risultato non dipende da come si scrive l'equazione del piano.",
+  "passaggi": [
+   "1. Numeratore: |2·1 + 1·2 − 2·3 + 4| = |2| = 2",
+   "2. Denominatore: √(2² + 1² + (−2)²) = 3",
+   "3. Distanza: 2/3"
+  ],
+  "concetto": "distanza punto-piano"
+ },
+ {
+  "id": "GAL-117",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "test",
+  "domanda": "Come sono tra loro i piani 2x − y + z = 1 e 4x − 2y + 2z = 5?",
+  "opzioni": {
+   "A": "Coincidenti",
+   "B": "Perpendicolari",
+   "C": "Incidenti lungo una retta",
+   "D": "Paralleli e distinti",
+   "E": "Sghembi"
+  },
+  "giusta": "D",
+  "perche": "I vettori normali (2, −1, 1) e (4, −2, 2) sono proporzionali, quindi i piani sono paralleli. Moltiplicando la prima equazione per 2 si ottiene 4x − 2y + 2z = 2, che ha termine noto diverso da 5: i piani non coincidono. La trappola tipica è guardare solo i coefficienti e concludere che siano coincidenti; inoltre il termine «sghembi» si usa per le rette, non per i piani.",
+  "semplice": "Due piani con la stessa «inclinazione» sono come i piani di un edificio: paralleli e separati. Coincidono solo se anche i termini noti sono nello stesso rapporto.",
+  "passaggi": [
+   "1. Normali: (2, −1, 1) e (4, −2, 2) = 2·(2, −1, 1)",
+   "2. Prima equazione × 2: 4x − 2y + 2z = 2",
+   "3. 2 ≠ 5 → paralleli distinti"
+  ],
+  "concetto": "posizione reciproca di due piani"
+ },
+ {
+  "id": "GAL-118",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "test",
+  "domanda": "In quale punto la retta (x, y, z) = (t, 1 + t, 2t) interseca il piano x + y + z = 9?",
+  "opzioni": {
+   "A": "(2, 3, 4)",
+   "B": "(1, 2, 2)",
+   "C": "(3, 4, 6)",
+   "D": "(9, 0, 0)",
+   "E": "Non lo interseca"
+  },
+  "giusta": "A",
+  "perche": "Si sostituiscono le equazioni parametriche nel piano: t + (1 + t) + 2t = 9, cioè 4t + 1 = 9 e t = 2. Il punto corrispondente è (2, 3, 4), e infatti 2 + 3 + 4 = 9 ✓. La trappola tipica è risolvere per t e dare t come risposta, oppure sostituire un valore sbagliato nelle coordinate.",
+  "semplice": "Si cerca il «momento» t in cui chi viaggia sulla retta attraversa il piano. Trovato t, si calcola dove si trova in quel momento.",
+  "passaggi": [
+   "1. Sostituzione: t + 1 + t + 2t = 9",
+   "2. 4t = 8 → t = 2",
+   "3. Punto: (2, 1 + 2, 4) = (2, 3, 4)",
+   "4. Controllo: 2 + 3 + 4 = 9"
+  ],
+  "concetto": "intersezione retta-piano"
+ },
+ {
+  "id": "GAL-119",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "test",
+  "domanda": "Qual è l'equazione del piano passante per i punti (1, 0, 0), (0, 2, 0) e (0, 0, 3)?",
+  "opzioni": {
+   "A": "x + 2y + 3z = 6",
+   "B": "6x + 3y + 2z = 6",
+   "C": "x + y + z = 1",
+   "D": "3x + 2y + z = 6",
+   "E": "6x + 3y + 2z = 0"
+  },
+  "giusta": "B",
+  "perche": "Un piano che taglia gli assi in a, b e c ha equazione segmentaria x/a + y/b + z/c = 1. Qui x/1 + y/2 + z/3 = 1; moltiplicando per 6 si ottiene 6x + 3y + 2z = 6. Controllo: (0, 2, 0) dà 6 ✓ e (0, 0, 3) dà 6 ✓. La trappola tipica è usare le intercette come coefficienti, scrivendo x + 2y + 3z = 6, che non passa per (0, 2, 0).",
+  "semplice": "Le intercette vanno ai denominatori, non ai numeratori. Controlla sempre l'equazione trovata sostituendo i tre punti.",
+  "passaggi": [
+   "1. Forma segmentaria: x/1 + y/2 + z/3 = 1",
+   "2. Moltiplico per 6: 6x + 3y + 2z = 6",
+   "3. Controllo dei tre punti: 6 = 6 in tutti i casi"
+  ],
+  "concetto": "piano per tre punti"
+ },
+ {
+  "id": "GAL-120",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "test",
+  "domanda": "Quali sono centro e raggio della sfera x² + y² + z² − 2x + 4y − 4 = 0?",
+  "opzioni": {
+   "A": "Centro (−1, 2, 0), raggio 3",
+   "B": "Centro (1, −2, 0), raggio 9",
+   "C": "Centro (1, −2, 0), raggio 3",
+   "D": "Centro (1, −2, 0), raggio 2",
+   "E": "Centro (2, −4, 0), raggio 4"
+  },
+  "giusta": "C",
+  "perche": "Si completano i quadrati: x² − 2x = (x − 1)² − 1 e y² + 4y = (y + 2)² − 4. L'equazione diventa (x − 1)² + (y + 2)² + z² = 4 + 1 + 4 = 9, quindi il centro è (1, −2, 0) e il raggio √9 = 3. La trappola tipica è prendere il centro con i segni sbagliati, cioè i coefficienti stessi, o dimenticare la radice quadrata del raggio.",
+  "semplice": "Il centro ha coordinate uguali a metà dei coefficienti di x, y, z cambiati di segno. Per il raggio bisogna sempre estrarre la radice.",
+  "passaggi": [
+   "1. x² − 2x = (x − 1)² − 1",
+   "2. y² + 4y = (y + 2)² − 4",
+   "3. (x − 1)² + (y + 2)² + z² = 4 + 1 + 4 = 9",
+   "4. Centro (1, −2, 0), raggio 3"
+  ],
+  "concetto": "equazione della sfera"
+ },
+ {
+  "id": "GAL-121",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "università",
+  "domanda": "Le rette r: (t, 0, 0) e s: (0, u, 1), con t e u reali, come sono tra loro e a che distanza si trovano?",
+  "opzioni": {
+   "A": "Incidenti",
+   "B": "Parallele, a distanza 1",
+   "C": "Sghembe, a distanza 0",
+   "D": "Coincidenti",
+   "E": "Sghembe, a distanza 1"
+  },
+  "giusta": "E",
+  "perche": "Le direzioni sono (1, 0, 0) e (0, 1, 0), non parallele. Un punto comune dovrebbe avere y = 0 e z = 0 dalla prima retta, ma z = 1 dalla seconda: non esiste. Rette né parallele né incidenti sono sghembe. La perpendicolare comune è il segmento da (0, 0, 0) a (0, 0, 1), quindi la distanza è 1. La trappola tipica è dire «parallele» perché non si incontrano: nello spazio esistono rette che non si incontrano senza essere parallele.",
+  "semplice": "Pensa all'asse x sul pavimento e a una trave del soffitto che va in direzione y, un metro più in alto: non si toccano mai ma non sono parallele.",
+  "passaggi": [
+   "1. Direzioni (1, 0, 0) e (0, 1, 0): non parallele",
+   "2. Intersezione: z = 0 e z = 1, impossibile",
+   "3. Sghembe",
+   "4. Perpendicolare comune: asse z, distanza = |1 − 0| = 1"
+  ],
+  "concetto": "rette sghembe"
+ },
+ {
+  "id": "GAL-122",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "università",
+  "domanda": "Qual è la distanza del punto P(1, 1, 1) dalla retta passante per l'origine con direzione (1, 0, 0)?",
+  "opzioni": {
+   "A": "√2",
+   "B": "1",
+   "C": "√3",
+   "D": "2",
+   "E": "0"
+  },
+  "giusta": "A",
+  "perche": "La retta è l'asse x. La distanza di un punto da una retta si può calcolare come |OP × d| / |d|: (1, 1, 1) × (1, 0, 0) = (0, 1, −1), di modulo √2, e |d| = 1. Quindi la distanza è √2. Ragionando geometricamente, la distanza dall'asse x dipende solo da y e z: √(1² + 1²) = √2. La trappola tipica è calcolare la distanza dall'origine, √3.",
+  "semplice": "La distanza da una retta si misura lungo la perpendicolare. Per l'asse x conta solo quanto il punto è «spostato» in y e in z.",
+  "passaggi": [
+   "1. OP = (1, 1, 1), d = (1, 0, 0)",
+   "2. OP × d = (1·0 − 1·0, 1·1 − 1·0, 1·0 − 1·1) = (0, 1, −1)",
+   "3. |OP × d| = √2, |d| = 1",
+   "4. Distanza = √2"
+  ],
+  "concetto": "distanza punto-retta"
+ },
+ {
+  "id": "GAL-123",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "università",
+  "domanda": "Qual è l'angolo tra i piani x + y = 0 e y + z = 0?",
+  "opzioni": {
+   "A": "30°",
+   "B": "45°",
+   "C": "90°",
+   "D": "60°",
+   "E": "0°"
+  },
+  "giusta": "D",
+  "perche": "L'angolo tra due piani è l'angolo tra i loro vettori normali (scegliendo quello acuto). Le normali sono (1, 1, 0) e (0, 1, 1): il prodotto scalare vale 1 e i moduli √2, quindi cos θ = 1/2 e θ = 60°. La trappola tipica è usare vettori che stanno nei piani invece delle normali, oppure dimenticare di dividere per i moduli.",
+  "semplice": "Due piani si «aprono» come le pagine di un libro: l'angolo tra le pagine è lo stesso angolo (o il supplementare) tra le due frecce perpendicolari alle pagine.",
+  "passaggi": [
+   "1. Normali: n₁ = (1, 1, 0), n₂ = (0, 1, 1)",
+   "2. n₁·n₂ = 1",
+   "3. |n₁| = |n₂| = √2",
+   "4. cos θ = 1/2 → θ = 60°"
+  ],
+  "concetto": "angolo tra piani"
+ },
+ {
+  "id": "GAL-124",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "università",
+  "domanda": "La retta è data come intersezione dei piani x + y + z = 1 e x − y = 0. Qual è un suo vettore direzione?",
+  "opzioni": {
+   "A": "(1, 1, 1)",
+   "B": "(1, −1, 0)",
+   "C": "(1, 1, −2)",
+   "D": "(2, 0, 1)",
+   "E": "(0, 0, 0)"
+  },
+  "giusta": "C",
+  "perche": "La retta sta in entrambi i piani, quindi la sua direzione è perpendicolare a entrambe le normali (1, 1, 1) e (1, −1, 0). Il prodotto vettoriale dà (1·0 − 1·(−1), 1·1 − 1·0, 1·(−1) − 1·1) = (1, 1, −2). Controllo: (1, 1, −2)·(1, 1, 1) = 0 e (1, 1, −2)·(1, −1, 0) = 0. La trappola tipica è scegliere una delle normali come direzione: le normali sono perpendicolari alla retta, non parallele.",
+  "semplice": "La retta è lo «spigolo» dove si incontrano i due piani. Lo spigolo è perpendicolare alle due frecce normali, e il prodotto vettoriale serve proprio a trovare una direzione perpendicolare a due vettori.",
+  "passaggi": [
+   "1. n₁ = (1, 1, 1), n₂ = (1, −1, 0)",
+   "2. d = n₁ × n₂ = (1, 1, −2)",
+   "3. Controllo: d·n₁ = 0, d·n₂ = 0"
+  ],
+  "concetto": "retta come intersezione di piani"
+ },
+ {
+  "id": "GAL-125",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "università",
+  "domanda": "Qual è la posizione della retta (t, 2t, −t) rispetto al piano x + y + 3z = 5?",
+  "opzioni": {
+   "A": "È perpendicolare al piano",
+   "B": "È parallela al piano e non lo interseca",
+   "C": "È contenuta nel piano",
+   "D": "Lo interseca in un solo punto",
+   "E": "Lo interseca nel punto (1, 2, −1)"
+  },
+  "giusta": "B",
+  "perche": "La direzione della retta è d = (1, 2, −1) e la normale del piano è n = (1, 1, 3). Si ha d·n = 1 + 2 − 3 = 0, quindi la retta è parallela al piano (oppure contenuta in esso). Il punto (0, 0, 0) della retta dà 0 ≠ 5, quindi non sta nel piano: la retta è parallela e non lo interseca. Sostituendo t si ottiene infatti 0·t = 5, impossibile. La trappola tipica è interpretare d·n = 0 come perpendicolarità tra retta e piano, mentre indica il parallelismo.",
+  "semplice": "Se la direzione della retta è perpendicolare alla normale del piano, la retta «scorre» parallela al piano. Resta da controllare se ci sta sopra o ne è staccata.",
+  "passaggi": [
+   "1. d = (1, 2, −1), n = (1, 1, 3)",
+   "2. d·n = 0 → retta parallela al piano",
+   "3. Sostituzione: t + 2t − 3t = 0 = 5, impossibile",
+   "4. Parallela, senza punti in comune"
+  ],
+  "concetto": "posizione retta-piano"
+ },
+ {
+  "id": "GAL-126",
+  "materia": "Geometria e algebra lineare",
+  "argomento": "Geometria analitica nello spazio",
+  "livello": "università",
+  "domanda": "Che cosa rappresenta l'equazione x² + y² = z² nello spazio?",
+  "opzioni": {
+   "A": "Una sfera",
+   "B": "Un paraboloide",
+   "C": "Un cilindro",
+   "D": "Un iperboloide a una falda",
+   "E": "Un cono (a due falde) con asse z e vertice nell'origine"
+  },
+  "giusta": "E",
+  "perche": "Per ogni quota z fissata la sezione orizzontale è la circonferenza x² + y² = z², di raggio |z|, che cresce linearmente con la quota e si riduce a un punto per z = 0. Una superficie con queste sezioni è un cono circolare con vertice nell'origine e asse z, con due falde (z > 0 e z < 0). La trappola tipica è confondere con l'iperboloide x² + y² − z² = 1, che ha termine noto non nullo e non passa per l'origine, o con il paraboloide x² + y² = z, in cui il raggio cresce come una radice.",
+  "semplice": "Taglia la superficie a varie altezze: a quota 1 trovi un cerchio di raggio 1, a quota 2 di raggio 2, a quota 0 solo un punto. Sono i cerchi di due coni di gelato uniti per la punta.",
+  "passaggi": [
+   "1. Sezioni z = k: x² + y² = k²",
+   "2. Circonferenze di raggio |k|, crescita lineare",
+   "3. Per k = 0: solo l'origine (vertice)",
+   "4. Superficie: cono a due falde"
+  ],
+  "concetto": "quadriche: il cono"
+ }
+]

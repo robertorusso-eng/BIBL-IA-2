@@ -1,0 +1,626 @@
+{
+ "Limiti e continuità": {
+  "superiore": {
+   "spiegazione": [
+    "Il limite descrive dove «va» il valore di una funzione quando x si avvicina a un certo numero, senza preoccuparsi di che cosa succede esattamente in quel punto. Si scrive lim x→x₀ f(x) = L. Per esempio f(x) = (x² − 1)/(x − 1) non è definita in 1, ma per x = 0,99 vale 1,99 e per x = 1,01 vale 2,01: il limite è 2. Si possono calcolare anche i limiti da destra e da sinistra; il limite esiste solo se coincidono. Un limite può valere anche +∞ o −∞, quando la funzione cresce o scende senza fermarsi.",
+    "Molti limiti si calcolano sostituendo direttamente il valore. I problemi nascono con le forme indeterminate: 0/0, ∞/∞, ∞ − ∞, 0 · ∞ e 1^∞. Non sono risultati ma segnali che bisogna lavorare sull'espressione. Con 0/0 di solito si scompone e si semplifica; con ∞/∞ nei rapporti tra polinomi si raccoglie la potenza più alta; con ∞ − ∞ e le radici si razionalizza. Per esempio lim x→+∞ (3x² + 1)/(2x² − x) = 3/2, il rapporto dei coefficienti di grado massimo.",
+    "Alcuni limiti tornano così spesso che conviene ricordarli: sono i limiti notevoli. Per x → 0 si ha sin x / x → 1, (1 − cos x)/x² → 1/2 e (eˣ − 1)/x → 1; per x → +∞ si ha (1 + 1/x)^x → e. Si usano per riconoscere forme simili: lim x→0 sin(5x)/x = 5, perché sin(5x) si comporta come 5x. All'infinito vale la gerarchia: il logaritmo cresce più lentamente di ogni potenza, e ogni potenza più lentamente di un esponenziale.",
+    "Una funzione è continua in x₀ se il limite in x₀ esiste ed è uguale a f(x₀): in pratica il grafico si disegna senza staccare la penna. Polinomi, esponenziali, seno e coseno sono continui dove sono definiti. Quando la continuità fallisce si ha una discontinuità: di prima specie (salto, come x/|x| in 0), di seconda specie (almeno un limite infinito o inesistente, come 1/x in 0) o di terza specie, detta eliminabile (il limite esiste finito ma la funzione manca o vale altro, come sin x / x in 0). Per esempio la funzione che vale x + 1 per x < 0 e x² per x ≥ 0 ha in 0 un salto: da sinistra arriva a 1, da destra a 0.",
+    "I limiti servono anche a trovare gli asintoti, cioè le rette a cui il grafico si avvicina. Se f → ∞ per x → x₀ c'è un asintoto verticale x = x₀; se f → L per x → ±∞ c'è un asintoto orizzontale y = L. Se invece f cresce come una retta, per esempio quando il numeratore di una frazione ha grado una unità più del denominatore, si cerca un asintoto obliquo y = mx + q. Per (2x² + 1)/(x − 1) l'asintoto obliquo è y = 2x + 2."
+   ],
+   "metodo": [
+    "Prima di ogni calcolo sostituisci il valore: se ottieni un numero hai finito, se ottieni una forma indeterminata scegli la tecnica giusta.",
+    "Prepara una scheda con le cinque forme indeterminate e, accanto a ognuna, la tecnica tipica e un esempio svolto.",
+    "Ripeti i limiti notevoli finché li riconosci anche «travestiti», come sin(3x)/x o (1 + 2/x)^x.",
+    "Controlla i risultati con la calcolatrice, sostituendo valori molto vicini al punto (1,999 e 2,001) o molto grandi (10 000).",
+    "Per la continuità disegna i tre tipi di discontinuità con un esempio ciascuno e annota quali limiti esistono.",
+    "Collega questa mappa a «Studio di funzione»: limiti e asintoti sono la base per disegnare il grafico."
+   ],
+   "ricorda": [
+    "«0/0 non fa zero»: è un invito a semplificare.",
+    "Polinomi all'infinito: comanda il termine di grado più alto.",
+    "Gerarchia: «log < potenza < esponenziale» quando x → +∞.",
+    "Discontinuità: salto (1ª), infinito (2ª), buco tappabile (3ª)."
+   ],
+   "errori": [
+    "Scrivere 0/0 = 0 oppure ∞/∞ = 1 invece di risolvere la forma indeterminata.",
+    "Pensare che 1 elevato a qualcosa che tende a ∞ dia sempre 1: (1 + 1/x)^x tende a e.",
+    "Credere che il limite in x₀ coincida sempre con f(x₀): è vero solo per funzioni continue.",
+    "Dimenticare di controllare limite destro e sinistro separatamente, per esempio con valori assoluti o funzioni a tratti."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale lim x→3 (x² − 9)/(x − 3)?",
+     "risposta": "6: si scompone in (x − 3)(x + 3) e si semplifica."
+    },
+    {
+     "domanda": "Quanto vale lim x→0 sin(4x)/x?",
+     "risposta": "4: sin(4x) si comporta come 4x."
+    },
+    {
+     "domanda": "Quanto vale lim x→+∞ (5x³ − x)/(2x³ + 7)?",
+     "risposta": "5/2, il rapporto dei coefficienti di grado massimo."
+    },
+    {
+     "domanda": "Che discontinuità ha 1/x in x = 0?",
+     "risposta": "Di seconda specie: i limiti destro e sinistro sono infiniti (+∞ e −∞)."
+    },
+    {
+     "domanda": "Qual è l'asintoto orizzontale di (4x + 1)/(2x − 3)?",
+     "risposta": "y = 2."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "La definizione rigorosa di limite è: lim x→x₀ f(x) = L se per ogni ε > 0 esiste δ > 0 tale che 0 < |x − x₀| < δ implica |f(x) − L| < ε. L'ordine dei quantificatori è essenziale: δ dipende da ε. Il punto x₀ è escluso, quindi f può non essere definita lì. In modo analogo si definiscono i limiti infiniti e all'infinito, sostituendo gli intorni con semirette. Per esempio, per dimostrare che lim x→2 (3x − 1) = 5 basta scegliere δ = ε/3.",
+    "Dalla definizione seguono i teoremi generali: unicità del limite, permanenza del segno (se L > 0 la funzione è positiva vicino a x₀) e teorema del confronto (se g ≤ f ≤ h e g, h tendono a L, anche f tende a L). Il confronto serve a dimostrare sin x / x → 1 usando le disuguaglianze sin x ≤ x ≤ tan x. Vale anche il limite delle successioni: lim x→x₀ f(x) = L se e solo se f(xₙ) → L per ogni successione xₙ → x₀ con xₙ ≠ x₀; questo è utile per dimostrare che un limite non esiste, come per sin(1/x) in 0. Per esempio −|x| ≤ x · sin(1/x) ≤ |x|, e per il confronto x · sin(1/x) → 0.",
+    "Per le forme indeterminate lo strumento più potente sono gli infinitesimi equivalenti e il simbolo o-piccolo. Vicino a 0 si ha sin x = x + o(x), ln(1 + x) = x + o(x), eˣ − 1 = x + o(x), 1 − cos x = x²/2 + o(x²). Sostituendo questi sviluppi si risolvono rapidamente limiti come sin(3x)/tan(5x) → 3/5. Bisogna però fare attenzione alle somme: in x − sin x i termini di primo ordine si cancellano e serve lo sviluppo fino a x³/6. La gerarchia degli infiniti (logaritmi, potenze, esponenziali, fattoriali) si dimostra con de l'Hôpital o con le successioni.",
+    "Una funzione continua su un intervallo chiuso e limitato [a, b] gode di proprietà globali. Il teorema di Weierstrass garantisce massimo e minimo assoluti; il teorema degli zeri garantisce una radice se f(a) e f(b) hanno segni opposti; il teorema dei valori intermedi dice che f assume tutti i valori tra il minimo e il massimo. Le ipotesi sono indispensabili: 1/x su (0, 1] non ha massimo, e senza continuità il teorema degli zeri fallisce. Il teorema degli zeri è la base del metodo di bisezione, che approssima una radice dimezzando ogni volta l'intervallo.",
+    "Le discontinuità si classificano studiando i limiti destro e sinistro. In una discontinuità di prima specie entrambi esistono finiti ma sono diversi; nella seconda almeno uno è infinito o non esiste; nella terza il limite esiste finito ma è diverso da f(x₀) o f non è definita. Una funzione monotona può avere solo discontinuità di prima specie, e al più un'infinità numerabile. Infine, per gli asintoti obliqui si calcolano m = lim f(x)/x e q = lim [f(x) − mx]: entrambi devono esistere finiti, con m ≠ 0."
+   ],
+   "metodo": [
+    "Dimostra con la definizione ε-δ due o tre limiti di funzioni lineari e quadratiche, scrivendo esplicitamente come scegli δ.",
+    "Costruisci una tabella degli sviluppi al primo e al secondo ordine (sin, cos, eˣ, ln(1 + x), (1 + x)^α) e usala sistematicamente sui limiti.",
+    "Per ogni teorema (Weierstrass, zeri, valori intermedi) annota un controesempio in cui manca un'ipotesi e la tesi cade.",
+    "Esercitati a mostrare che un limite non esiste trovando due successioni con limiti diversi.",
+    "Implementa a mano tre o quattro passi del metodo di bisezione su x³ + x − 1 = 0.",
+    "Ripassa il legame con le successioni: molte dimostrazioni sui limiti di funzioni passano da lì."
+   ],
+   "ricorda": [
+    "«Per ogni ε esiste δ»: prima la tolleranza, poi l'intorno.",
+    "Negli sviluppi, attenzione alle cancellazioni: se il primo ordine si annulla, serve il successivo.",
+    "Weierstrass vuole «chiuso, limitato e continuo»: tre ipotesi, nessuna sacrificabile.",
+    "Per smentire un limite bastano due successioni con limiti diversi."
+   ],
+   "errori": [
+    "Scambiare i quantificatori nella definizione, scrivendo «esiste ε per ogni δ».",
+    "Sostituire infinitesimi equivalenti dentro somme e differenze senza controllare le cancellazioni.",
+    "Applicare il teorema degli zeri a funzioni non continue o su intervalli aperti.",
+    "Dimenticare che per l'asintoto obliquo devono esistere finiti sia m sia q."
+   ],
+   "domande": [
+    {
+     "domanda": "Come scegli δ per dimostrare lim x→2 (3x − 1) = 5?",
+     "risposta": "δ = ε/3: infatti |3x − 1 − 5| = 3|x − 2| < 3δ = ε."
+    },
+    {
+     "domanda": "Quanto vale lim x→0 (x − sin x)/x³?",
+     "risposta": "1/6, usando sin x = x − x³/6 + o(x³)."
+    },
+    {
+     "domanda": "Perché sin(1/x) non ha limite per x → 0?",
+     "risposta": "Le successioni xₙ = 1/(nπ) e xₙ = 1/(π/2 + 2nπ) danno valori 0 e 1: limiti diversi."
+    },
+    {
+     "domanda": "Quale ipotesi di Weierstrass manca per 1/x su (0, 1]?",
+     "risposta": "L'intervallo non è chiuso: manca lo 0, e infatti non c'è massimo."
+    },
+    {
+     "domanda": "Quanto vale lim x→0 ln(1 + 2x)/x?",
+     "risposta": "2, perché ln(1 + 2x) ~ 2x."
+    }
+   ]
+  }
+ },
+ "Derivate": {
+  "superiore": {
+   "spiegazione": [
+    "La derivata misura quanto rapidamente cambia una funzione. Si parte dal rapporto incrementale [f(x₀ + h) − f(x₀)]/h, che è la pendenza della retta secante tra due punti del grafico. Quando h tende a 0 la secante diventa la retta tangente, e il limite del rapporto si chiama derivata f'(x₀). Per esempio per f(x) = x² il rapporto vale 2x₀ + h, che tende a 2x₀: quindi f'(x) = 2x. Se il limite non esiste o è infinito, la funzione non è derivabile in quel punto.",
+    "Geometricamente la derivata è il coefficiente angolare della retta tangente, che ha equazione y = f(x₀) + f'(x₀)(x − x₀). Per y = x² in x₀ = 3 si ottiene y = 6x − 9. In fisica la derivata della posizione rispetto al tempo è la velocità istantanea, e la derivata della velocità è l'accelerazione. In economia la derivata del costo è il costo marginale. Ovunque ci sia un «tasso di variazione istantaneo» c'è una derivata.",
+    "Non serve calcolare ogni volta il limite: si usano le derivate fondamentali e le regole di calcolo. Le principali sono (xⁿ)' = n xⁿ⁻¹, (eˣ)' = eˣ, (ln x)' = 1/x, (sin x)' = cos x, (cos x)' = −sin x. La derivata di una somma è la somma delle derivate e le costanti moltiplicative restano fuori. Per il prodotto vale (fg)' = f'g + fg', per il quoziente (f/g)' = (f'g − fg')/g². Per esempio (x eˣ)' = eˣ + x eˣ.",
+    "La regola più importante è quella della catena, per le funzioni composte: la derivata di f(g(x)) è f'(g(x)) · g'(x). Si deriva «da fuori verso dentro», moltiplicando ogni volta per la derivata dell'interno. Per esempio (e^(3x))' = 3e^(3x), (sin(x²))' = 2x cos(x²) e (ln(x² + 1))' = 2x/(x² + 1). Dimenticare la derivata dell'interno è l'errore più frequente in assoluto.",
+    "Se una funzione è derivabile in un punto, allora è anche continua lì; il contrario non vale. La funzione |x| è continua in 0 ma ha un punto angoloso: la pendenza vale −1 a sinistra e +1 a destra. Derivando la derivata si ottiene la derivata seconda f'', che misura come cambia la pendenza e serve a studiare la concavità. Per esempio se f(x) = x⁴ − 2x², allora f''(x) = 12x² − 4."
+   ],
+   "metodo": [
+    "Ricava a mano, con il rapporto incrementale, le derivate di x² e di 1/x, per capire da dove nascono le regole.",
+    "Scrivi la tabella delle derivate fondamentali su un cartoncino e ripetila finché non la sai a memoria.",
+    "Per ogni esercizio individua prima la «forma» (somma, prodotto, quoziente, composta) e poi applica la regola corrispondente.",
+    "Controlla le derivate con un esempio numerico: calcola [f(x + 0,001) − f(x)]/0,001 e confronta.",
+    "Svolgi almeno cinque problemi di retta tangente e cinque problemi di velocità da una legge oraria.",
+    "Collega la mappa a «Studio di funzione»: il segno di f' e di f'' dice come è fatto il grafico."
+   ],
+   "ricorda": [
+    "Prodotto: «uno derivato per l'altro fermo, più il viceversa».",
+    "Quoziente: «sotto per derivata di sopra, meno sopra per derivata di sotto, fratto sotto al quadrato» (l'ordine conta).",
+    "Catena: «derivo fuori, lascio dentro, moltiplico per la derivata di dentro».",
+    "Tangente: punto (x₀, f(x₀)) e pendenza f'(x₀)."
+   ],
+   "errori": [
+    "Derivare un prodotto moltiplicando le derivate: (fg)' non è f'g'.",
+    "Dimenticare la derivata dell'argomento nelle funzioni composte, per esempio scrivere (sin 2x)' = cos 2x.",
+    "Sbagliare il segno della derivata del coseno: (cos x)' = −sin x.",
+    "Credere che ogni funzione continua sia derivabile: |x| in 0 è un controesempio."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la derivata di x⁵?",
+     "risposta": "5x⁴."
+    },
+    {
+     "domanda": "Qual è la derivata di cos(3x)?",
+     "risposta": "−3 sin(3x)."
+    },
+    {
+     "domanda": "Qual è la tangente a y = x³ in x = 1?",
+     "risposta": "y = 3x − 2."
+    },
+    {
+     "domanda": "Se s(t) = 5t², qual è la velocità a t = 4 s?",
+     "risposta": "40 m/s, perché v = 10t."
+    },
+    {
+     "domanda": "Qual è la derivata di x²·ln x?",
+     "risposta": "2x ln x + x."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Una funzione f è derivabile in x₀ se esiste finito il limite del rapporto incrementale; equivalentemente, se f(x₀ + h) = f(x₀) + f'(x₀)h + o(h). Questa seconda forma dice che la retta tangente è la migliore approssimazione lineare di f vicino a x₀, e la quantità f'(x₀)h si chiama differenziale. La derivabilità implica la continuità, ma non viceversa. I punti di non derivabilità di una funzione continua sono i punti angolosi (derivate destra e sinistra finite e diverse), le cuspidi (derivate laterali infinite di segno opposto) e i flessi a tangente verticale.",
+    "Oltre alle regole di prodotto, quoziente e catena, servono la derivata della funzione inversa e la derivazione logaritmica. Se f è invertibile e f'(x) ≠ 0, allora (f⁻¹)'(y) = 1/f'(x) con y = f(x): da qui si ottengono (arctan x)' = 1/(1 + x²) e (arcsin x)' = 1/√(1 − x²). Per funzioni come xˣ si scrive e^(x ln x) e si deriva: xˣ(ln x + 1). Questi strumenti permettono di derivare qualsiasi funzione elementare.",
+    "I teoremi del calcolo differenziale collegano la derivata al comportamento globale. Il teorema di Fermat dice che in un estremo interno di una funzione derivabile la derivata è nulla. Rolle: se f è continua su [a, b], derivabile su (a, b) e f(a) = f(b), esiste c con f'(c) = 0. Lagrange (valor medio): esiste c con f'(c) = [f(b) − f(a)]/(b − a). Conseguenze importanti: se f' = 0 su un intervallo f è costante, se f' > 0 f è strettamente crescente.",
+    "Dal teorema di Cauchy, generalizzazione di Lagrange, segue il teorema di de l'Hôpital: per forme 0/0 o ∞/∞, se esiste lim f'/g' allora esiste anche lim f/g ed è uguale. Va usato con cura: le ipotesi vanno controllate e talvolta bisogna applicarlo più volte, come in (eˣ − 1 − x)/x² → 1/2. Non va usato quando la forma non è indeterminata e non è sempre la via più rapida: spesso gli sviluppi di Taylor sono più efficienti. Per esempio lim x→+∞ ln x / x si risolve con un solo passaggio: (1/x)/1 → 0.",
+    "Le derivate successive permettono di costruire il polinomio di Taylor: f(x) = f(x₀) + f'(x₀)(x − x₀) + f''(x₀)(x − x₀)²/2! + … + f⁽ⁿ⁾(x₀)(x − x₀)ⁿ/n! + o((x − x₀)ⁿ). Con il resto di Lagrange si può stimare l'errore commesso. Per esempio eˣ ≈ 1 + x + x²/2 vicino a 0, con un errore dell'ordine di x³/6. Taylor unifica limiti notevoli, de l'Hôpital e studio locale delle funzioni."
+   ],
+   "metodo": [
+    "Per ogni teorema (Fermat, Rolle, Lagrange, de l'Hôpital) scrivi ipotesi, tesi, un esempio e un controesempio.",
+    "Ricava le derivate delle inverse goniometriche con la regola della funzione inversa, senza memorizzarle soltanto.",
+    "Svolgi limiti sia con de l'Hôpital sia con Taylor e confronta la lunghezza dei calcoli.",
+    "Classifica i punti di non derivabilità di funzioni come |x² − 1|, ∛x e √|x|.",
+    "Usa Lagrange per dimostrare disuguaglianze, per esempio |sin a − sin b| ≤ |a − b|.",
+    "Scrivi i polinomi di Taylor di eˣ, sin x, cos x, ln(1 + x) fino al quarto ordine e verificali numericamente."
+   ],
+   "ricorda": [
+    "Derivabile ⇒ continua, mai il contrario.",
+    "Inversa: «la pendenza dell'inversa è il reciproco della pendenza», calcolata nel punto corrispondente.",
+    "de l'Hôpital solo per 0/0 e ∞/∞, e solo se il limite delle derivate esiste.",
+    "Lagrange: «almeno una volta la velocità istantanea è uguale alla velocità media»."
+   ],
+   "errori": [
+    "Applicare de l'Hôpital derivando il quoziente invece di numeratore e denominatore separatamente.",
+    "Calcolare (f⁻¹)'(y) usando f'(y) invece di f'(x) con f(x) = y.",
+    "Concludere che f'(x₀) = 0 implica un estremo: x³ in 0 è un controesempio.",
+    "Dimenticare l'ipotesi di derivabilità in Rolle, come con |x| su [−1, 1]."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è la derivata di arcsin x?",
+     "risposta": "1/√(1 − x²), per |x| < 1."
+    },
+    {
+     "domanda": "Trova c di Lagrange per f(x) = x³ su [0, 3].",
+     "risposta": "3c² = 27/3 = 9, quindi c = √3."
+    },
+    {
+     "domanda": "Quanto vale lim x→0 (sin x − x)/x³?",
+     "risposta": "−1/6."
+    },
+    {
+     "domanda": "Che tipo di punto ha ∛x in 0?",
+     "risposta": "Un flesso a tangente verticale: la derivata tende a +∞ da entrambi i lati."
+    },
+    {
+     "domanda": "Qual è il polinomio di Taylor di cos x al secondo ordine in 0?",
+     "risposta": "1 − x²/2."
+    }
+   ]
+  }
+ },
+ "Studio di funzione": {
+  "superiore": {
+   "spiegazione": [
+    "Lo studio di funzione è una procedura ordinata per disegnare il grafico di una funzione partendo dalla sua formula. Si parte dal dominio, cioè dall'insieme delle x per cui la formula ha senso: denominatori diversi da zero, radici di indice pari con argomento non negativo, argomenti dei logaritmi strettamente positivi. Per esempio ln(x − 2)/(x − 5) ha dominio x > 2 con x ≠ 5. Poi si cercano le simmetrie: se f(−x) = f(x) la funzione è pari e il grafico è simmetrico rispetto all'asse y; se f(−x) = −f(x) è dispari, simmetrica rispetto all'origine.",
+    "Il passo successivo è trovare le intersezioni con gli assi e il segno della funzione. Si pone x = 0 per l'intersezione con l'asse y e f(x) = 0 per quelle con l'asse x. Lo studio del segno, con la tabella dei segni per prodotti e quozienti, dice in quali zone il grafico sta sopra o sotto l'asse x. Per esempio (x − 1)/(x + 3) è positiva per x < −3 e per x > 1. Così si cancellano dal piano le zone in cui il grafico non può passare.",
+    "Poi si calcolano i limiti agli estremi del dominio, che danno gli asintoti. Un limite infinito in un punto escluso dà un asintoto verticale; un limite finito all'infinito dà un asintoto orizzontale; se f cresce come una retta si cerca l'asintoto obliquo y = mx + q. Per (3x − 1)/(x + 2) gli asintoti sono x = −2 e y = 3. Per decidere da che parte il grafico si avvicina a un asintoto verticale si calcolano separatamente i limiti destro e sinistro. Un polinomio, invece, non ha asintoti di alcun tipo.",
+    "La derivata prima dice dove la funzione cresce (f' > 0) e dove decresce (f' < 0). I punti in cui f' cambia segno sono massimi o minimi relativi. Per f(x) = x³ − 3x si ha f'(x) = 3(x − 1)(x + 1): la funzione cresce fino a −1, decresce tra −1 e 1, poi cresce di nuovo. In x = −1 c'è un massimo (quota 2), in x = 1 un minimo (quota −2).",
+    "La derivata seconda descrive la concavità: se f'' > 0 il grafico è a forma di coppa (concavità verso l'alto), se f'' < 0 è a forma di cupola. Dove f'' cambia segno c'è un flesso. Per x³ − 6x² + 1 il flesso è in x = 2. Messe insieme, queste informazioni permettono di disegnare un grafico probabile. Le stesse tecniche risolvono i problemi di ottimizzazione: tra tutti i rettangoli di perimetro 20 il più grande è il quadrato di lato 5."
+   ],
+   "metodo": [
+    "Segui sempre lo stesso schema in sette passi: dominio, simmetrie, intersezioni, segno, limiti e asintoti, derivata prima, derivata seconda.",
+    "Riporta subito sul piano cartesiano ogni informazione trovata, anche prima di finire: il grafico si costruisce un pezzo alla volta.",
+    "Per il segno di f' e f'' usa sempre la tabella dei segni con una riga per ogni fattore.",
+    "Verifica il grafico finale con qualche valore calcolato a mano, per esempio f(0), f(1), f(−1).",
+    "Studia completamente almeno una funzione per tipo: polinomio, razionale fratta, esponenziale, logaritmica.",
+    "Nei problemi di ottimizzazione scrivi la funzione da rendere massima in una sola variabile prima di derivare."
+   ],
+   "ricorda": [
+    "«Prima dove esiste, poi dove sta, poi dove va»: dominio, segno, limiti.",
+    "f' dice se sali o scendi, f'' dice se la strada curva verso l'alto o verso il basso.",
+    "Massimo: f' passa da + a −; minimo: da − a +.",
+    "Un polinomio non ha asintoti: va all'infinito senza avvicinarsi a nessuna retta."
+   ],
+   "errori": [
+    "Dimenticare una condizione del dominio, per esempio il denominatore quando c'è anche un logaritmo.",
+    "Cercare i flessi dove si annulla f' invece che dove cambia segno f''.",
+    "Confondere il segno della funzione con il segno della derivata.",
+    "Nei problemi di massimo assoluto su un intervallo chiuso, dimenticare di controllare gli estremi."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è il dominio di √(x − 3)?",
+     "risposta": "x ≥ 3."
+    },
+    {
+     "domanda": "f(x) = x⁴ − x² è pari o dispari?",
+     "risposta": "Pari: f(−x) = f(x)."
+    },
+    {
+     "domanda": "Dove ha il minimo f(x) = x² − 6x + 2?",
+     "risposta": "In x = 3, dove f vale −7."
+    },
+    {
+     "domanda": "Qual è l'asintoto verticale di 1/(x + 4)?",
+     "risposta": "x = −4."
+    },
+    {
+     "domanda": "Dove ha il flesso f(x) = x³ + 3x²?",
+     "risposta": "In x = −1, dove f''(x) = 6x + 6 cambia segno."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Lo studio di funzione all'università richiede di giustificare ogni passaggio con i teoremi. Il dominio va determinato con precisione, e spesso conviene studiare la funzione solo dove è definita e prolungabile. Le simmetrie e la periodicità riducono il lavoro. I limiti agli estremi del dominio si calcolano con gli strumenti più potenti: gerarchia degli infiniti, infinitesimi equivalenti, de l'Hôpital, sviluppi di Taylor. Per esempio x² e^(−x) → 0 per x → +∞ perché l'esponenziale domina ogni potenza.",
+    "Per gli estremi relativi il teorema di Fermat fornisce una condizione necessaria: se x₀ è interno al dominio, f è derivabile in x₀ e x₀ è un estremo, allora f'(x₀) = 0. Non è sufficiente: x³ ha derivata nulla in 0 ma lì ha un flesso orizzontale. Per decidere si studia il segno di f' oppure si usa il criterio della derivata seconda: f'(x₀) = 0 e f''(x₀) > 0 danno un minimo, f''(x₀) < 0 un massimo. Se anche f''(x₀) = 0 si guardano le derivate successive: la prima non nulla di ordine pari indica un estremo, di ordine dispari un flesso.",
+    "Gli estremi assoluti su un intervallo chiuso [a, b] esistono per Weierstrass se f è continua. I candidati sono tre tipi di punti: i punti stazionari interni, i punti interni di non derivabilità e gli estremi a e b. Si calcola f in ciascuno e si confrontano i valori. Per x² − 4x + 1 su [0, 5] il minimo è −3 in x = 2 e il massimo è 6 in x = 5. Dimenticare gli estremi o i punti angolosi porta a risultati sbagliati.",
+    "La concavità si definisce in generale con la convessità: f è convessa su un intervallo se il grafico sta sotto ogni corda, cioè f(tx + (1 − t)y) ≤ t f(x) + (1 − t) f(y). Per funzioni derivabili due volte equivale a f'' ≥ 0. Una funzione convessa sta sopra le sue tangenti: da qui disuguaglianze come eˣ ≥ 1 + x. I flessi sono i punti in cui la concavità cambia; se lì la tangente è orizzontale si parla di flesso a tangente orizzontale.",
+    "Lo studio di funzione si applica a problemi concreti. Il numero di soluzioni di f(x) = k si legge dal grafico, confrontando k con i valori dei massimi e minimi relativi e con i limiti: x³ − 3x + 1 = 0 ha tre radici perché il massimo vale 3 > 0 e il minimo −1 < 0. Nei problemi di ottimizzazione si scrive la grandezza da ottimizzare come funzione di una variabile, si determina il dominio di significato e si cercano gli estremi assoluti. Infine gli sviluppi di Taylor permettono di studiare il comportamento locale vicino a punti critici."
+   ],
+   "metodo": [
+    "Per ogni punto stazionario decidi la natura con due metodi diversi (segno di f' e derivata seconda) e controlla che coincidano.",
+    "Fai un elenco dei candidati per gli estremi assoluti prima di qualsiasi calcolo: stazionari, non derivabili, estremi.",
+    "Esercitati con funzioni con valori assoluti e radici, che hanno punti angolosi e cuspidi.",
+    "Usa lo studio di f(x) − k per discutere il numero di soluzioni al variare di un parametro k.",
+    "Dimostra almeno tre disuguaglianze con la convessità o con lo studio della differenza di due funzioni.",
+    "Confronta il grafico ottenuto con un software solo alla fine, per verificare e non per sostituire il ragionamento."
+   ],
+   "ricorda": [
+    "Fermat: necessaria, non sufficiente.",
+    "Estremi assoluti su [a, b]: stazionari + non derivabili + bordi.",
+    "Prima derivata non nulla in x₀: ordine pari ⇒ estremo, ordine dispari ⇒ flesso.",
+    "Convessa = sopra le tangenti, sotto le corde."
+   ],
+   "errori": [
+    "Applicare il criterio della derivata seconda quando f''(x₀) = 0 e trarre conclusioni.",
+    "Trascurare i punti di non derivabilità nella ricerca degli estremi.",
+    "Calcolare gli asintoti obliqui senza verificare che m sia finito e non nullo.",
+    "Nei problemi di ottimizzazione, accettare soluzioni fuori dal dominio di significato (lunghezze negative)."
+   ],
+   "domande": [
+    {
+     "domanda": "Che punto è x = 0 per f(x) = x⁴?",
+     "risposta": "Un minimo: la prima derivata non nulla in 0 è la quarta (ordine pari) e vale 24 > 0."
+    },
+    {
+     "domanda": "Quanti zeri reali ha x³ − 3x + 3?",
+     "risposta": "Uno: il minimo relativo f(1) = 1 è positivo."
+    },
+    {
+     "domanda": "Perché eˣ ≥ 1 + x per ogni x?",
+     "risposta": "eˣ è convessa e y = 1 + x è la sua tangente in 0."
+    },
+    {
+     "domanda": "Quali sono i candidati per gli estremi assoluti di |x − 1| su [0, 3]?",
+     "risposta": "x = 0, x = 3 (estremi) e x = 1 (punto angoloso): minimo 0 in 1, massimo 2 in 3."
+    },
+    {
+     "domanda": "Qual è l'asintoto obliquo di x + 1/x?",
+     "risposta": "y = x."
+    }
+   ]
+  }
+ },
+ "Integrali": {
+  "superiore": {
+   "spiegazione": [
+    "Integrare significa fare il contrario di derivare: data f, si cerca una funzione F, detta primitiva, tale che F' = f. Le primitive di una funzione sono infinite e differiscono per una costante, per questo si scrive ∫ f(x) dx = F(x) + C. Per esempio ∫ 2x dx = x² + C, perché la derivata di x² + 5 o di x² − 3 è sempre 2x. Il modo più sicuro per controllare un integrale è derivare il risultato e vedere se si torna alla funzione di partenza.",
+    "Gli integrali immediati si ricavano leggendo al contrario la tabella delle derivate. ∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C per n ≠ −1, ∫ (1/x) dx = ln|x| + C, ∫ eˣ dx = eˣ + C, ∫ cos x dx = sin x + C e ∫ sin x dx = −cos x + C. Quando il numeratore è la derivata del denominatore si ottiene un logaritmo: ∫ 2x/(x² + 1) dx = ln(x² + 1) + C. Questa forma f'/f compare spesso negli esercizi.",
+    "Per integrali più complessi ci sono due tecniche principali. Con la sostituzione si cambia variabile, per esempio t = x² + 1, per ricondursi a un integrale immediato. Con l'integrazione per parti si usa la formula ∫ f g' dx = f g − ∫ f' g dx, che deriva dalla regola del prodotto. Per ∫ x eˣ dx si sceglie f = x (che derivata diventa 1) e g' = eˣ, e si ottiene (x − 1)eˣ + C. Con lo stesso trucco ∫ ln x dx = x ln x − x + C.",
+    "L'integrale definito ∫ₐᵇ f(x) dx rappresenta l'area con segno compresa tra il grafico di f e l'asse x, tra a e b: le parti sopra l'asse contano positive, quelle sotto negative. Il teorema fondamentale del calcolo permette di calcolarlo con una primitiva: ∫ₐᵇ f(x) dx = F(b) − F(a). Per esempio ∫₀² 3x² dx = 8 − 0 = 8. Una funzione dispari integrata su un intervallo simmetrico come [−2, 2] dà sempre 0.",
+    "Gli integrali definiti hanno molte applicazioni. L'area tra due curve si calcola integrando la differenza tra quella sopra e quella sotto: tra y = x e y = x² da 0 a 1 l'area è 1/6. Il volume di un solido ottenuto ruotando il grafico attorno all'asse x è V = π ∫ f(x)² dx. Il valore medio di f su [a, b] è (1/(b − a)) ∫ₐᵇ f(x) dx. In fisica, l'integrale della velocità nel tempo dà lo spazio percorso."
+   ],
+   "metodo": [
+    "Impara la tabella degli integrali immediati insieme a quella delle derivate, leggendole una come il contrario dell'altra.",
+    "Dopo ogni integrale indefinito, deriva il risultato per controllarlo: è il metodo di verifica più veloce.",
+    "Davanti a un esercizio chiediti in ordine: è immediato? c'è la forma f'/f o f' · g(f)? serve la sostituzione? serve per parti?",
+    "Per gli integrali definiti disegna sempre il grafico, così vedi subito se l'area dovrebbe venire positiva, negativa o nulla.",
+    "Svolgi almeno cinque problemi di area tra due curve, trovando prima i punti di intersezione.",
+    "Collega la mappa a «Derivate» (regole inverse) e a «Cinematica» (spazio come area sotto il grafico v-t)."
+   ],
+   "ricorda": [
+    "«Integrale indefinito senza + C è incompleto».",
+    "Potenze: «alzo l'esponente di uno e divido per il nuovo esponente».",
+    "Per parti: «deriva quello che si semplifica, integra quello che sai integrare».",
+    "Definito: «primitiva in alto meno primitiva in basso»."
+   ],
+   "errori": [
+    "Dimenticare la costante C negli integrali indefiniti.",
+    "Applicare la regola delle potenze a 1/x, che ha invece primitiva ln|x|.",
+    "Confondere integrale definito e area: se f cambia segno, per l'area bisogna spezzare l'intervallo e usare i valori assoluti.",
+    "Integrare un prodotto come prodotto degli integrali."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale ∫ (4x³ − 2x) dx?",
+     "risposta": "x⁴ − x² + C."
+    },
+    {
+     "domanda": "Quanto vale ∫₀¹ eˣ dx?",
+     "risposta": "e − 1."
+    },
+    {
+     "domanda": "Quanto vale ∫ sin x dx?",
+     "risposta": "−cos x + C."
+    },
+    {
+     "domanda": "Qual è l'area sotto y = x² tra 0 e 3?",
+     "risposta": "9: [x³/3] da 0 a 3."
+    },
+    {
+     "domanda": "Quanto vale ∫ 3x² e^(x³) dx?",
+     "risposta": "e^(x³) + C, con la sostituzione t = x³."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "L'integrale di Riemann si costruisce dividendo [a, b] in sottointervalli e confrontando le somme inferiori (con il minimo di f su ciascun pezzo) e le somme superiori (con il massimo). Se, raffinando la suddivisione, l'estremo superiore delle somme inferiori coincide con l'estremo inferiore delle superiori, f è integrabile e quel valore è ∫ₐᵇ f(x) dx. Tutte le funzioni continue su [a, b] sono integrabili, così come quelle monotone o con un numero finito di discontinuità di salto. L'integrale è lineare, monotono e additivo rispetto all'intervallo.",
+    "Il teorema della media integrale afferma che, se f è continua su [a, b], esiste c in [a, b] con f(c) = (1/(b − a)) ∫ₐᵇ f(x) dx. Da qui si dimostra il teorema fondamentale del calcolo: la funzione integrale F(x) = ∫ₐˣ f(t) dt è derivabile e F'(x) = f(x) per f continua. Ne segue che ∫ₐᵇ f = G(b) − G(a) per ogni primitiva G. Se l'estremo superiore è una funzione g(x), la derivata è f(g(x)) · g'(x): per esempio d/dx ∫₀^(x²) eᵗ dt = 2x e^(x²).",
+    "Le tecniche di integrazione si combinano tra loro. La sostituzione richiede di trasformare anche il differenziale e, negli integrali definiti, anche gli estremi. L'integrazione per parti si può iterare (∫ x² eˣ dx) o portare a un'equazione nell'integrale stesso (∫ eˣ sin x dx). Le funzioni razionali si integrano con la scomposizione in fratti semplici: per esempio 1/(x² − 1) = (1/2)[1/(x − 1) − 1/(x + 1)]. Alcune funzioni, come e^(−x²) o sin(x²), non hanno primitive elementari, ma le loro funzioni integrali esistono comunque.",
+    "Gli integrali impropri estendono l'integrale a intervalli illimitati o a funzioni illimitate, definendolo come limite. ∫₁^∞ 1/xᵖ dx converge se e solo se p > 1, mentre ∫₀¹ 1/xᵖ dx converge se e solo se p < 1. Per decidere la convergenza senza calcolare si usano il criterio del confronto e quello del confronto asintotico: se f ~ g all'infinito, gli integrali hanno lo stesso carattere. Per esempio ∫₁^∞ 1/(x² + x) dx converge perché l'integranda si comporta come 1/x².",
+    "Le applicazioni geometriche e fisiche sono numerose. L'area tra due curve, il volume di solidi di rotazione (V = π ∫ f² dx attorno all'asse x), la lunghezza di una curva (∫ √(1 + f'²) dx), il lavoro di una forza variabile e il baricentro di una figura si esprimono tutti con integrali. Esiste anche un legame con le serie: il criterio dell'integrale dice che, per f positiva e decrescente, Σ f(n) e ∫₁^∞ f(x) dx hanno lo stesso carattere. Così si dimostra che la serie armonica diverge."
+   ],
+   "metodo": [
+    "Calcola a mano le somme di Riemann di x² su [0, 1] con 4 e 8 sottointervalli e osserva come si avvicinano a 1/3.",
+    "Dimostra il teorema fondamentale partendo dal teorema della media, scrivendo ogni passaggio.",
+    "Raccogli una tabella di integrali con fratti semplici: radici reali distinte, radice doppia, denominatore irriducibile.",
+    "Per gli impropri individua sempre il comportamento asintotico dell'integranda prima di provare a calcolare.",
+    "Nelle sostituzioni per integrali definiti cambia subito gli estremi, per non dover tornare alla variabile iniziale.",
+    "Collega la mappa a «Successioni e serie» tramite il criterio dell'integrale."
+   ],
+   "ricorda": [
+    "Funzione integrale: «la derivata dell'integrale è l'integranda calcolata nell'estremo, per la derivata dell'estremo».",
+    "Impropri: 1/xᵖ converge all'infinito per p > 1 e vicino a 0 per p < 1.",
+    "Sostituzione nei definiti: cambia variabile, differenziale ed estremi.",
+    "Non avere primitiva elementare non vuol dire non essere integrabile."
+   ],
+   "errori": [
+    "Dimenticare il fattore g'(x) nella derivata di una funzione integrale con estremo variabile.",
+    "Calcolare un integrale improprio senza passare al limite, sommando ∞ − ∞.",
+    "Integrare oltre un punto in cui la funzione è illimitata come se fosse un integrale normale, per esempio ∫₋₁¹ 1/x² dx.",
+    "Sbagliare il segno o l'ordine nei fratti semplici, invertendo la frazione dentro il logaritmo."
+   ],
+   "domande": [
+    {
+     "domanda": "Quanto vale ∫₀¹ 1/√x dx?",
+     "risposta": "2: è improprio ma converge, perché p = 1/2 < 1."
+    },
+    {
+     "domanda": "Quanto vale d/dx ∫₁^(sin x) ln t dt?",
+     "risposta": "ln(sin x) · cos x."
+    },
+    {
+     "domanda": "∫₁^∞ 1/(x² + 1) dx converge?",
+     "risposta": "Sì, vale π/4 (arctan da 1 a ∞: π/2 − π/4)."
+    },
+    {
+     "domanda": "Quanto vale ∫ x² eˣ dx?",
+     "risposta": "(x² − 2x + 2)eˣ + C, applicando due volte l'integrazione per parti."
+    },
+    {
+     "domanda": "Perché ∫₋₁¹ 1/x² dx non vale −2?",
+     "risposta": "L'integranda è illimitata in 0: l'integrale è improprio e diverge a +∞."
+    }
+   ]
+  }
+ },
+ "Successioni e serie": {
+  "superiore": {
+   "spiegazione": [
+    "Una successione è un elenco infinito e ordinato di numeri a₁, a₂, a₃, …, descritto da una regola, per esempio aₙ = 1/n oppure aₙ = 2ⁿ. Ci interessa soprattutto il suo comportamento quando n diventa grande. Se aₙ si avvicina a un numero L, la successione è convergente; se cresce o scende senza limite è divergente; se oscilla senza stabilizzarsi, come (−1)ⁿ, è irregolare. Per esempio (2n + 1)/(n + 3) converge a 2.",
+    "Due famiglie di successioni sono particolarmente importanti. Nella progressione aritmetica ogni termine si ottiene aggiungendo una costante d: aₙ = a₁ + (n − 1)d, e la somma dei primi n termini è n(a₁ + aₙ)/2. Così 1 + 2 + … + 100 = 5050. Nella progressione geometrica ogni termine si ottiene moltiplicando per una costante q: aₙ = a₁qⁿ⁻¹. Un esempio è l'interesse composto o la crescita di una popolazione che raddoppia.",
+    "Per i limiti delle successioni si usano le stesse tecniche dei limiti di funzioni. Vale la gerarchia ln n ≪ nᵏ ≪ aⁿ ≪ n!: per esempio n/2ⁿ tende a 0. Il limite più famoso è (1 + 1/n)ⁿ → e ≈ 2,718. Una successione crescente e limitata superiormente converge sempre: è il motivo per cui (1 + 1/n)ⁿ ha un limite finito.",
+    "Una serie è la somma di infiniti termini, a₁ + a₂ + a₃ + …, e si scrive Σ aₙ. Per darle significato si guardano le somme parziali Sₙ = a₁ + … + aₙ: se tendono a un numero S la serie converge e S è la sua somma. Il modello principale è la serie geometrica Σ qⁿ, che converge a 1/(1 − q) se |q| < 1. Per esempio 1 + 1/2 + 1/4 + … = 2. Se |q| ≥ 1 la serie non converge.",
+    "Perché una serie converga i suoi termini devono tendere a 0, ma questo non basta. La serie armonica Σ 1/n ha termini che tendono a 0 ma diverge: cresce lentissimamente, ma supera qualsiasi numero. Invece Σ 1/n² converge (la somma è π²/6 ≈ 1,645). In generale Σ 1/nᵖ converge se e solo se p > 1. Questo confronto è la chiave per capire molte altre serie."
+   ],
+   "metodo": [
+    "Scrivi i primi 5-6 termini di ogni successione prima di calcolarne il limite: spesso il comportamento si vede subito.",
+    "Prepara una scheda con le formule di progressioni aritmetiche e geometriche e un esempio numerico per ciascuna.",
+    "Per le serie geometriche individua sempre primo termine e ragione, e controlla da quale n parte la somma.",
+    "Calcola con la calcolatrice alcune somme parziali (S₅, S₁₀, S₂₀) per vedere se si stabilizzano.",
+    "Memorizza le tre serie di riferimento: geometrica, armonica, armonica generalizzata.",
+    "Collega la mappa a «Limiti e continuità»: le tecniche per i limiti sono le stesse."
+   ],
+   "ricorda": [
+    "«Termini che vanno a zero: necessario, non sufficiente».",
+    "Geometrica: converge se |q| < 1 e la somma è «primo termine fratto (1 − q)».",
+    "Armonica Σ 1/n diverge, Σ 1/n² converge.",
+    "Somma di Gauss: 1 + 2 + … + n = n(n + 1)/2."
+   ],
+   "errori": [
+    "Pensare che una somma di infiniti numeri positivi sia sempre infinita.",
+    "Credere che se aₙ → 0 la serie converga: la serie armonica lo smentisce.",
+    "Usare 1/(1 − q) anche quando la serie parte da n = 1 invece che da n = 0.",
+    "Confondere il limite della successione aₙ con la somma della serie Σ aₙ."
+   ],
+   "domande": [
+    {
+     "domanda": "Qual è il limite di aₙ = (n² + 1)/(3n²)?",
+     "risposta": "1/3."
+    },
+    {
+     "domanda": "Quanto vale 3 + 6 + 9 + … + 30?",
+     "risposta": "165: sono 10 termini, 10 · (3 + 30)/2."
+    },
+    {
+     "domanda": "Quanto vale la serie Σ (1/4)ⁿ per n da 0 a ∞?",
+     "risposta": "4/3."
+    },
+    {
+     "domanda": "La serie Σ 1/√n converge?",
+     "risposta": "No: è armonica generalizzata con p = 1/2 ≤ 1."
+    },
+    {
+     "domanda": "Come si comporta aₙ = (−1)ⁿ/n?",
+     "risposta": "Converge a 0: oscilla ma con ampiezza che tende a zero."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Una successione aₙ converge a L se per ogni ε > 0 esiste N tale che |aₙ − L| < ε per ogni n > N. Le successioni convergenti sono limitate, e il limite è unico. Il teorema delle successioni monotone afferma che ogni successione monotona e limitata converge; il teorema di Bolzano-Weierstrass che ogni successione limitata ha una sottosuccessione convergente. Una successione converge se e solo se è di Cauchy, cioè se i suoi termini diventano arbitrariamente vicini tra loro: è una conseguenza della completezza di ℝ.",
+    "Una serie Σ aₙ converge se converge la successione delle somme parziali. La condizione necessaria è aₙ → 0. Per le serie a termini positivi le somme parziali sono crescenti, quindi la serie converge o diverge a +∞, e si usano i criteri: confronto (0 ≤ aₙ ≤ bₙ), confronto asintotico (aₙ ~ bₙ), rapporto (lim aₙ₊₁/aₙ = ℓ) e radice (lim ⁿ√aₙ = ℓ). Con ℓ < 1 la serie converge, con ℓ > 1 diverge, con ℓ = 1 il criterio non decide. Per esempio Σ n/2ⁿ converge perché il rapporto tende a 1/2.",
+    "Per le serie a termini di segno qualsiasi si studia prima la convergenza assoluta: se Σ |aₙ| converge, converge anche Σ aₙ. Il viceversa è falso: la serie di Leibniz Σ (−1)ⁿ⁺¹/n converge (a ln 2) ma non assolutamente. Il criterio di Leibniz garantisce la convergenza delle serie a segni alterni con |aₙ| decrescente e tendente a 0, e stima l'errore: il resto è minore del primo termine trascurato. Per le serie convergenti solo semplicemente, riordinare i termini può cambiare la somma (teorema di Riemann).",
+    "Alcune serie si sommano esattamente. Le geometriche hanno somma a/(1 − q); le telescopiche, come Σ 1/(n(n + 1)) = Σ [1/n − 1/(n + 1)], hanno somme parziali in cui i termini si cancellano, e qui la somma vale 1. Il criterio dell'integrale collega serie e integrali impropri: per f positiva e decrescente, Σ f(n) e ∫₁^∞ f(x) dx hanno lo stesso carattere. Da qui si ottiene subito il comportamento di Σ 1/nᵖ.",
+    "Le serie di potenze Σ aₙ(x − x₀)ⁿ convergono in un intervallo centrato in x₀ di raggio R, che si calcola con 1/R = lim |aₙ₊₁/aₙ| o con il criterio della radice. All'interno si possono derivare e integrare termine a termine; agli estremi il comportamento va studiato a parte. Le serie di Taylor rappresentano molte funzioni: eˣ = Σ xⁿ/n! (R = ∞), 1/(1 − x) = Σ xⁿ (R = 1), ln(1 + x) = Σ (−1)ⁿ⁺¹xⁿ/n (R = 1). Così si calcolano valori numerici e si risolvono limiti ed equazioni differenziali."
+   ],
+   "metodo": [
+    "Per ogni serie segui un ordine: condizione necessaria, segno dei termini, criterio adatto (confronto per potenze, rapporto per fattoriali ed esponenziali, radice per potenze n-esime).",
+    "Tieni una lista di serie campione con il loro carattere, da usare nei confronti.",
+    "Per le serie a segni alterni studia sempre prima la convergenza assoluta, poi Leibniz.",
+    "Calcola il raggio di convergenza e poi controlla separatamente i due estremi dell'intervallo.",
+    "Ricava gli sviluppi di ln(1 + x) e arctan x integrando termine a termine le serie geometriche.",
+    "Dimostra almeno una volta che Σ 1/n diverge sia raggruppando i termini sia con il criterio dell'integrale."
+   ],
+   "ricorda": [
+    "Rapporto o radice uguale a 1: il criterio tace, serve altro.",
+    "Assoluta ⇒ semplice, non viceversa.",
+    "Leibniz: segni alterni, |aₙ| decrescente, |aₙ| → 0.",
+    "Serie di potenze: dentro il raggio tutto bene, agli estremi si controlla a mano."
+   ],
+   "errori": [
+    "Applicare il criterio del rapporto a serie con termini di segno variabile senza i valori assoluti.",
+    "Concludere la convergenza da un rapporto che tende a 1.",
+    "Usare il criterio di Leibniz senza verificare che |aₙ| sia decrescente.",
+    "Dimenticare di studiare gli estremi dell'intervallo di convergenza delle serie di potenze."
+   ],
+   "domande": [
+    {
+     "domanda": "Σ n!/nⁿ converge?",
+     "risposta": "Sì: il rapporto tende a 1/e < 1."
+    },
+    {
+     "domanda": "Σ (−1)ⁿ/√n converge assolutamente?",
+     "risposta": "No: converge per Leibniz, ma Σ 1/√n diverge."
+    },
+    {
+     "domanda": "Qual è il raggio di convergenza di Σ xⁿ/n!?",
+     "risposta": "R = ∞: la serie converge per ogni x e rappresenta eˣ."
+    },
+    {
+     "domanda": "Quanto vale Σ 1/(n(n + 2)) per n da 1 a ∞?",
+     "risposta": "3/4, scomponendo in (1/2)[1/n − 1/(n + 2)]."
+    },
+    {
+     "domanda": "Σ 1/(n ln n) per n ≥ 2 converge?",
+     "risposta": "No: per il criterio dell'integrale ∫ 1/(x ln x) dx = ln(ln x) diverge."
+    }
+   ]
+  }
+ },
+ "Equazioni differenziali": {
+  "superiore": {
+   "spiegazione": [
+    "Un'equazione differenziale è un'equazione in cui l'incognita è una funzione y(x) e compaiono le sue derivate. Per esempio y' = 3y chiede di trovare le funzioni la cui derivata è il triplo della funzione stessa. L'ordine dell'equazione è quello della derivata più alta: y'' + 3y' = x è del secondo ordine. Risolvere significa trovare tutte le funzioni che soddisfano l'equazione, e per controllare una soluzione basta sostituirla e verificare.",
+    "Il caso più semplice è y' = f(x), dove la derivata dipende solo da x: basta integrare, y = ∫ f(x) dx + C. Per esempio y' = cos x ha soluzioni y = sin x + C. La costante C indica che le soluzioni sono infinite: l'insieme di tutte si chiama integrale generale. In generale un'equazione di ordine n ha n costanti arbitrarie, perché per risolverla bisogna in sostanza integrare n volte.",
+    "Per scegliere una sola soluzione si aggiungono delle condizioni iniziali: è il problema di Cauchy. Per y' = 2x con y(0) = 5 l'integrale generale è y = x² + C e la condizione dà C = 5, quindi y = x² + 5. Per un'equazione del secondo ordine servono due condizioni, di solito il valore di y e quello di y' in un punto. In fisica sono la posizione e la velocità iniziali.",
+    "L'equazione y' = ky è il modello della crescita e del decadimento esponenziale, e ha soluzioni y = C e^(kx). Se k > 0 descrive una popolazione di batteri o un capitale con interesse continuo; se k < 0 descrive il decadimento radioattivo o il raffreddamento. Nel decadimento il tempo di dimezzamento è T = ln 2/|k| e non dipende dalla quantità iniziale. Una popolazione che raddoppia ogni 3 ore, dopo 9 ore si è moltiplicata per 2³ = 8.",
+    "Molte equazioni del primo ordine si risolvono separando le variabili. Se y' = g(x) · h(y), si scrive dy/h(y) = g(x) dx e si integrano i due lati. Per esempio y' = x y diventa dy/y = x dx, da cui ln|y| = x²/2 + k e y = C e^(x²/2). È lo stesso metodo che porta alla soluzione di y' = ky."
+   ],
+   "metodo": [
+    "Per ogni soluzione trovata, sostituiscila nell'equazione e verifica che funzioni: è il controllo più importante.",
+    "Distingui sempre l'integrale generale (con le costanti) dalla soluzione particolare del problema di Cauchy.",
+    "Esercitati con i problemi di crescita e decadimento usando dati reali: carbonio-14, interessi bancari, raffreddamento di una bevanda.",
+    "Nella separazione delle variabili scrivi chiaramente le y a sinistra e le x a destra prima di integrare.",
+    "Disegna qualche soluzione dell'integrale generale per vedere come cambia al variare di C.",
+    "Collega la mappa a «Integrali» (si risolvono integrando) e alla fisica (moto, circuiti, radioattività)."
+   ],
+   "ricorda": [
+    "Ordine n ⇒ n costanti ⇒ n condizioni iniziali.",
+    "y' = ky ⇒ y = C e^(kx): «la crescita proporzionale a sé stessa è esponenziale».",
+    "Dimezzamento: T = ln 2 / k ≈ 0,693 / k.",
+    "Separabili: «le y con dy, le x con dx, poi integro»."
+   ],
+   "errori": [
+    "Dimenticare la costante di integrazione e trovare una sola soluzione invece dell'integrale generale.",
+    "Applicare la condizione iniziale prima di aver integrato.",
+    "Perdere il segno meno nei modelli di decadimento.",
+    "Ragionare in modo lineare nella crescita esponenziale (dopo tre raddoppi non si triplica, si moltiplica per 8)."
+   ],
+   "domande": [
+    {
+     "domanda": "Di che ordine è y''' − y = 0?",
+     "risposta": "Del terzo ordine."
+    },
+    {
+     "domanda": "Risolvi y' = 3x² con y(0) = 2.",
+     "risposta": "y = x³ + 2."
+    },
+    {
+     "domanda": "Qual è la soluzione di y' = 0,5y con y(0) = 10?",
+     "risposta": "y = 10 e^(0,5x)."
+    },
+    {
+     "domanda": "Una sostanza ha k = 0,2 all'anno. Qual è il tempo di dimezzamento?",
+     "risposta": "ln 2/0,2 ≈ 3,47 anni."
+    },
+    {
+     "domanda": "Come si risolve y' = y²?",
+     "risposta": "Separando: dy/y² = dx, quindi −1/y = x + C e y = −1/(x + C) (più la soluzione y = 0)."
+    }
+   ]
+  },
+  "universita": {
+   "spiegazione": [
+    "Un'equazione differenziale ordinaria di ordine n lega x, y(x) e le derivate fino a y⁽ⁿ⁾. Il problema di Cauchy aggiunge n condizioni iniziali in un punto x₀. Il teorema di esistenza e unicità (Cauchy-Lipschitz) garantisce che, per y' = f(x, y) con f continua e lipschitziana in y, esiste un'unica soluzione locale. Senza l'ipotesi di Lipschitz l'unicità può fallire: y' = 2√|y| con y(0) = 0 ha sia la soluzione y = 0 sia y = x² per x ≥ 0.",
+    "Le equazioni lineari del primo ordine hanno la forma y' + P(x)y = Q(x). Moltiplicando per il fattore integrante μ(x) = e^(∫P dx) il primo membro diventa (μy)', e quindi y = (1/μ)[∫ μQ dx + C]. Per y' + y = 1 si ha μ = eˣ, (eˣ y)' = eˣ e y = 1 + C e^(−x). Più in generale, l'integrale generale di un'equazione lineare è la somma dell'integrale generale dell'omogenea e di una soluzione particolare della completa.",
+    "Le equazioni lineari del secondo ordine a coefficienti costanti, a y'' + b y' + c y = 0, si risolvono cercando soluzioni del tipo e^(rx). Si ottiene l'equazione caratteristica a r² + b r + c = 0. Se Δ > 0 ci sono due radici reali e y = C₁e^(r₁x) + C₂e^(r₂x); se Δ = 0 la radice è doppia e y = (C₁ + C₂x)e^(rx); se Δ < 0 le radici sono α ± iβ e y = e^(αx)(A cos βx + B sin βx). Per esempio y'' + 2y' + 5y = 0 dà e^(−x)(A cos 2x + B sin 2x).",
+    "Per l'equazione completa a y'' + b y' + c y = g(x) si cerca una soluzione particolare con il metodo di somiglianza: se g è un polinomio, un esponenziale o una combinazione di seno e coseno, si prova una funzione dello stesso tipo con coefficienti da determinare. Se la funzione di prova risolve già l'omogenea (risonanza), la si moltiplica per x. Per y'' − y = 2 basta y = −2. Il metodo generale è la variazione delle costanti, che funziona per qualsiasi g continua.",
+    "Le equazioni differenziali sono il linguaggio dei modelli. L'oscillatore armonico m x'' + k x = 0 descrive molle e pendoli; aggiungendo l'attrito si ottiene l'oscillatore smorzato, con i casi sottosmorzato, critico e sovrasmorzato secondo il segno di Δ. L'equazione logistica y' = r y (1 − y/K) descrive una popolazione con risorse limitate: ha equilibri y = 0 (instabile) e y = K (stabile). Lo studio qualitativo degli equilibri e del segno di y' permette di capire il comportamento delle soluzioni anche senza risolverle."
+   ],
+   "metodo": [
+    "Classifica ogni equazione prima di risolverla: ordine, lineare o no, omogenea o no, coefficienti costanti o variabili, separabile.",
+    "Per il secondo ordine prepara una tabella con i tre casi del discriminante e un esempio ciascuno.",
+    "Per le soluzioni particolari scrivi la funzione di prova e controlla subito se c'è risonanza con l'omogenea.",
+    "Applica le condizioni iniziali solo all'integrale generale completo, non alla sola parte omogenea.",
+    "Per le equazioni autonome y' = f(y) disegna la linea delle fasi con equilibri e frecce.",
+    "Collega la mappa alla fisica: scrivi l'equazione di un circuito RC e di una molla con attrito e risolvile."
+   ],
+   "ricorda": [
+    "Lineare: «generale = omogenea + particolare».",
+    "Δ > 0 due esponenziali, Δ = 0 esponenziale per (C₁ + C₂x), Δ < 0 esponenziale per seno e coseno.",
+    "Fattore integrante: e^(∫P dx), con P coefficiente di y.",
+    "Equilibrio stabile: le frecce della linea delle fasi puntano verso di lui."
+   ],
+   "errori": [
+    "Imporre le condizioni iniziali alla sola soluzione dell'omogenea, dimenticando la particolare.",
+    "Nel caso di radice doppia scrivere C₁e^(rx) + C₂e^(rx), che è una sola soluzione.",
+    "Scegliere una funzione di prova già soluzione dell'omogenea senza moltiplicarla per x.",
+    "Scambiare parte reale e immaginaria nelle radici complesse."
+   ],
+   "domande": [
+    {
+     "domanda": "Risolvi y'' − y = 0.",
+     "risposta": "y = C₁eˣ + C₂e^(−x)."
+    },
+    {
+     "domanda": "Risolvi y' + 2y = 4 con y(0) = 0.",
+     "risposta": "y = 2 − 2e^(−2x)."
+    },
+    {
+     "domanda": "Quale funzione di prova usi per y'' − 3y' + 2y = eˣ?",
+     "risposta": "A x eˣ, perché eˣ risolve già l'omogenea (r = 1 è radice)."
+    },
+    {
+     "domanda": "Che tipo di smorzamento ha y'' + 4y' + 4y = 0?",
+     "risposta": "Critico: la radice r = −2 è doppia."
+    },
+    {
+     "domanda": "Quali sono gli equilibri di y' = y(1 − y)(y − 3)?",
+     "risposta": "y = 0, y = 1, y = 3. Dal segno di y' si vede che 0 e 3 sono stabili (le soluzioni vicine si avvicinano) e 1 è instabile."
+    }
+   ]
+  }
+ }
+}

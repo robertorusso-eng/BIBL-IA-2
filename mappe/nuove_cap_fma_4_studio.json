@@ -1,0 +1,306 @@
+{
+"Vettori e matrici": {
+"superiore": {
+"spiegazione": [
+"Un vettore è un ente caratterizzato da modulo (lunghezza), direzione e verso; si rappresenta con una freccia. Nel piano cartesiano si descrive con le sue componenti: v = (vₓ, vᵧ), e il modulo è |v| = √(vₓ² + vᵧ²). Il vettore (3, 4) ha modulo √(9 + 16) = 5. Nello spazio i vettori hanno tre componenti, v = (vₓ, vᵧ, v_z), e |v| = √(vₓ² + vᵧ² + v_z²). I vettori servono a descrivere grandezze come spostamenti, velocità e forze, che non sono determinate da un solo numero.",
+"Le operazioni sui vettori si fanno componente per componente. La somma (3, 4) + (1, −2) = (4, 2) corrisponde geometricamente alla regola del parallelogramma (o punta-coda). Il prodotto per uno scalare k·v allunga o accorcia il vettore e, se k < 0, ne inverte il verso: 2·(3, 4) = (6, 8). Il prodotto scalare di due vettori è un numero: a·b = |a|·|b|·cos θ = aₓbₓ + aᵧbᵧ (+ a_z b_z). Esempio: (3, 4)·(4, −3) = 12 − 12 = 0, quindi i due vettori sono perpendicolari. Dal prodotto scalare si ricava l'angolo: per a = (1, 0) e b = (1, 1), cos θ = 1/(1·√2), θ = 45°. Il prodotto vettoriale a × b, definito nello spazio, è un vettore perpendicolare ad a e b, di modulo |a|·|b|·sin θ (l'area del parallelogramma) e verso dato dalla regola della mano destra.",
+"Una matrice è una tabella di numeri disposti in m righe e n colonne. Due matrici delle stesse dimensioni si sommano elemento per elemento, e si moltiplicano per un numero moltiplicando ogni elemento. Il prodotto di matrici si fa «righe per colonne»: l'elemento in riga i e colonna j di A·B è il prodotto scalare della riga i di A con la colonna j di B; serve che il numero di colonne di A sia uguale al numero di righe di B. Esempio: con A = [[1, 2], [3, 4]] e B = [[0, 1], [1, 0]], A·B = [[2, 1], [4, 3]] mentre B·A = [[3, 4], [1, 2]]: il prodotto di matrici in generale non è commutativo. La matrice identità I (1 sulla diagonale, 0 altrove) è l'elemento neutro: A·I = I·A = A.",
+"Il determinante è un numero associato a una matrice quadrata. Per una 2×2 [[a, b], [c, d]] vale det = a·d − b·c; per una 3×3 si calcola con la regola di Sarrus o sviluppando lungo una riga. Esempio: det [[1, 2], [3, 4]] = 4 − 6 = −2. Geometricamente il valore assoluto del determinante 2×2 è l'area del parallelogramma formato dai vettori riga. Una matrice quadrata è invertibile se e solo se il suo determinante è diverso da zero; per una 2×2 l'inversa è (1/det)·[[d, −b], [−c, a]]. Per [[1, 2], [3, 4]]: A⁻¹ = (−1/2)·[[4, −2], [−3, 1]] = [[−2, 1], [1,5, −0,5]].",
+"Le matrici servono a scrivere e risolvere i sistemi lineari. Il sistema 2x + y = 5, x − y = 1 si scrive A·X = B con A = [[2, 1], [1, −1]]. Con la regola di Cramer: det A = −2 − 1 = −3; x = det [[5, 1], [1, −1]]/det A = (−5 − 1)/(−3) = 2; y = det [[2, 5], [1, 1]]/det A = (2 − 5)/(−3) = 1. Verifica: 2·2 + 1 = 5 e 2 − 1 = 1. Se det A = 0 il sistema è impossibile o ha infinite soluzioni (le rette sono parallele o coincidenti). Le matrici descrivono anche trasformazioni del piano: la matrice [[0, −1], [1, 0]] ruota ogni vettore di 90° in senso antiorario."
+],
+"metodo": [
+"Disegna sempre i vettori sul piano quadrettato quando li sommi o li moltiplichi: la geometria conferma il calcolo.",
+"Per il prodotto righe per colonne scrivi le dimensioni delle matrici (m×n · n×p = m×p) prima di cominciare.",
+"Esercitati a calcolare determinanti 2×2 e 3×3 sia con Sarrus sia con lo sviluppo di Laplace, e confronta i risultati.",
+"Dopo aver calcolato un'inversa verifica sempre che A·A⁻¹ = I.",
+"Risolvi lo stesso sistema con sostituzione, Cramer e matrice inversa per capire che danno lo stesso risultato.",
+"Usa il prodotto scalare per verificare la perpendicolarità e calcolare angoli tra vettori."
+],
+"ricorda": [
+"Prodotto scalare zero = vettori perpendicolari.",
+"Righe per colonne: la riga «si sdraia» sulla colonna.",
+"Determinante zero = matrice non invertibile, sistema senza soluzione unica.",
+"A·B ≠ B·A: l'ordine delle matrici conta."
+],
+"errori": [
+"Sommare i moduli dei vettori invece delle componenti: |a + b| non è |a| + |b| in generale.",
+"Moltiplicare le matrici elemento per elemento invece che righe per colonne.",
+"Dimenticare il segno meno nel determinante 2×2 (ad − bc).",
+"Scambiare l'ordine dei fattori nel prodotto di matrici pensando che sia commutativo.",
+"Usare Cramer quando il determinante è zero."
+],
+"domande": [
+{"domanda": "Calcola il modulo di v = (2, −1, 2).", "risposta": "|v| = √(4 + 1 + 4) = 3."},
+{"domanda": "Calcola il prodotto scalare di (1, 2, 3) e (4, 0, −1).", "risposta": "4 + 0 − 3 = 1."},
+{"domanda": "Calcola det [[3, 5], [2, 4]].", "risposta": "3·4 − 5·2 = 2."},
+{"domanda": "Quando un sistema lineare quadrato ha una e una sola soluzione?", "risposta": "Quando il determinante della matrice dei coefficienti è diverso da zero."},
+{"domanda": "Si possono moltiplicare una matrice 2×3 e una 2×3?", "risposta": "No: il numero di colonne della prima (3) deve essere uguale al numero di righe della seconda (2)."}
+]
+},
+"universita": {
+"spiegazione": [
+"Uno spazio vettoriale su ℝ è un insieme in cui si possono sommare elementi e moltiplicarli per scalari con le proprietà usuali (associatività, commutatività, distributività, elemento neutro e opposto). Oltre a ℝⁿ sono spazi vettoriali i polinomi, le matrici m×n, le funzioni continue. I vettori v₁, …, vₖ sono linearmente indipendenti se l'unica combinazione nulla c₁v₁ + … + cₖvₖ = 0 è quella con tutti i cᵢ = 0. Una base è un insieme di vettori indipendenti che genera lo spazio; tutte le basi hanno lo stesso numero di elementi, la dimensione. Esempio: (1, 1) e (1, −1) sono una base di ℝ², e il vettore (3, 1) si scrive 2·(1, 1) + 1·(1, −1).",
+"Un'applicazione lineare f: V → W rispetta somma e prodotto per scalari, e in basi fissate è rappresentata da una matrice. Il nucleo Ker f (vettori mandati in 0) e l'immagine Im f sono sottospazi, e vale il teorema della dimensione: dim V = dim Ker f + dim Im f. Il rango di una matrice è il numero massimo di righe (o colonne) indipendenti, uguale alla dimensione dell'immagine; si calcola riducendo la matrice a scala con l'eliminazione di Gauss. Il teorema di Rouché-Capelli afferma che il sistema A·x = b ha soluzioni se e solo se rango A = rango [A|b], e in tal caso le soluzioni dipendono da n − rango A parametri liberi.",
+"Il determinante di una matrice quadrata è l'unica funzione multilineare e alternante delle righe che vale 1 sull'identità. Proprietà: scambiare due righe cambia il segno, una riga multipla di un'altra lo annulla, det(A·B) = det A·det B, det(Aᵀ) = det A, det(A⁻¹) = 1/det A. Il suo valore assoluto è il fattore con cui l'applicazione moltiplica aree o volumi. Esempio: per A = [[1, 2, 0], [3, 1, 2], [0, 1, 1]], sviluppando lungo la prima riga: 1·(1·1 − 2·1) − 2·(3·1 − 2·0) + 0 = −1 − 6 = −7. L'inversa si ottiene come A⁻¹ = (1/det A)·adj(A), con adj la trasposta dei complementi algebrici, o più efficientemente con Gauss-Jordan su [A|I].",
+"Un autovettore di A è un vettore non nullo v tale che A·v = λ·v; λ è l'autovalore. Gli autovalori sono le radici del polinomio caratteristico det(A − λI) = 0. Esempio: A = [[2, 1], [1, 2]] ha det(A − λI) = (2 − λ)² − 1 = λ² − 4λ + 3, con radici λ = 1 e λ = 3; gli autovettori sono (1, −1) per λ = 1 e (1, 1) per λ = 3. Se A ha n autovettori indipendenti è diagonalizzabile: A = P·D·P⁻¹, con D diagonale degli autovalori e P le cui colonne sono gli autovettori. Allora Aᵏ = P·Dᵏ·P⁻¹ si calcola facilmente. Valgono traccia A = somma degli autovalori (2 + 2 = 1 + 3) e det A = prodotto (4 − 1 = 1·3).",
+"Il teorema spettrale afferma che ogni matrice simmetrica reale ha autovalori reali ed è diagonalizzabile con una matrice ortogonale (autovettori ortonormali): nell'esempio, (1, −1)/√2 e (1, 1)/√2. È la base dell'analisi delle forme quadratiche (classificazione di coniche e quadriche, punti critici con la matrice hessiana), della meccanica (assi principali d'inerzia, modi normali) e della statistica (analisi delle componenti principali). Il prodotto vettoriale in ℝ³ si calcola con il determinante formale di [[i, j, k], [aₓ, aᵧ, a_z], [bₓ, bᵧ, b_z]], e il prodotto misto a·(b × c) è il determinante dei tre vettori: il volume del parallelepipedo che formano."
+],
+"metodo": [
+"Per verificare l'indipendenza di vettori mettili in una matrice e calcola il rango con Gauss.",
+"Risolvi sistemi parametrici discutendo con Rouché-Capelli: calcola il determinante in funzione del parametro e studia a parte i valori che lo annullano.",
+"Per gli autovalori segui sempre lo schema: polinomio caratteristico, radici, autospazi, molteplicità algebrica e geometrica.",
+"Controlla gli autovalori con traccia e determinante.",
+"Interpreta geometricamente le matrici 2×2 (rotazioni, simmetrie, dilatazioni, proiezioni) disegnando l'immagine del quadrato unitario.",
+"Allenati con l'eliminazione di Gauss finché non diventa automatica: serve per rango, sistemi, inverse e determinanti."
+],
+"ricorda": [
+"dim V = dim Ker + dim Im.",
+"Rouché-Capelli: rango di A uguale a rango della completa ⇔ il sistema ha soluzioni.",
+"Traccia = somma, determinante = prodotto degli autovalori.",
+"Matrice simmetrica: autovalori reali e autovettori perpendicolari."
+],
+"errori": [
+"Pensare che ogni matrice sia diagonalizzabile: [[1, 1], [0, 1]] ha un solo autovalore e un solo autovettore indipendente.",
+"Dimenticare che un autovettore deve essere non nullo.",
+"Credere che det(A + B) = det A + det B: vale solo per il prodotto.",
+"Effettuare operazioni sulle colonne durante Gauss per risolvere un sistema, cambiando le incognite senza accorgersene.",
+"Confondere il rango con il numero di righe non nulle prima della riduzione a scala."
+],
+"domande": [
+{"domanda": "I vettori (1, 2, 3), (2, 4, 6) e (0, 1, 1) sono linearmente indipendenti?", "risposta": "No: il secondo è il doppio del primo, quindi il rango è 2 e i vettori sono dipendenti."},
+{"domanda": "Trova gli autovalori di [[4, 1], [2, 3]].", "risposta": "(4 − λ)(3 − λ) − 2 = λ² − 7λ + 10 = 0, quindi λ = 2 e λ = 5."},
+{"domanda": "Un'applicazione lineare da ℝ⁴ a ℝ³ ha immagine di dimensione 3. Quanto vale la dimensione del nucleo?", "risposta": "4 − 3 = 1."},
+{"domanda": "Se det A = 3 e A è 3×3, quanto vale det(2A)?", "risposta": "2³·3 = 24, perché ogni riga viene moltiplicata per 2."},
+{"domanda": "Che cosa afferma il teorema di Rouché-Capelli?", "risposta": "Un sistema lineare ha soluzioni se e solo se il rango della matrice dei coefficienti è uguale al rango della matrice completa; le soluzioni dipendono da n − r parametri."}
+]
+}
+},
+"Geometria dello spazio": {
+"superiore": {
+"spiegazione": [
+"Nello spazio gli enti fondamentali sono punti, rette e piani. Per tre punti non allineati passa uno e un solo piano. Due rette possono essere incidenti (si incontrano in un punto), parallele (stanno su uno stesso piano senza incontrarsi) o sghembe (non si incontrano e non stanno su uno stesso piano: per esempio uno spigolo verticale e uno orizzontale non adiacenti di un cubo). Una retta e un piano possono essere incidenti, paralleli o la retta può giacere nel piano; due piani sono paralleli o si incontrano lungo una retta. Una retta è perpendicolare a un piano se è perpendicolare a due rette del piano passanti per il suo piede; l'angolo tra due semipiani con la stessa origine si chiama diedro.",
+"I poliedri sono solidi limitati da poligoni (facce). Per ogni poliedro convesso vale la relazione di Eulero: V − S + F = 2, con V vertici, S spigoli, F facce. Il cubo ha 8 − 12 + 6 = 2; il tetraedro 4 − 6 + 4 = 2. I poliedri regolari (facce poligoni regolari uguali e angoloidi uguali) sono solo cinque: tetraedro, cubo, ottaedro, dodecaedro, icosaedro. Il prisma ha due basi uguali e parallele e facce laterali rettangolari (se retto); la piramide ha una base poligonale e facce laterali triangolari che convergono nel vertice. In un parallelepipedo rettangolo di spigoli a, b, c la diagonale vale d = √(a² + b² + c²): per spigoli 3, 4, 12 si ha d = √(9 + 16 + 144) = 13.",
+"Le formule principali di area e volume: prisma V = A_base·h; piramide V = A_base·h/3; cilindro di raggio r e altezza h: superficie laterale 2πrh, volume πr²h; cono: apotema a = √(r² + h²), superficie laterale πra, volume πr²h/3; sfera: superficie 4πr², volume (4/3)πr³. Esempio: un cono con r = 3 cm e h = 4 cm ha apotema 5 cm, superficie laterale 15π ≈ 47,1 cm², superficie totale 15π + 9π = 24π ≈ 75,4 cm², volume 12π ≈ 37,7 cm³. Una sfera di raggio 3 cm ha volume 36π ≈ 113,1 cm³ e superficie 36π ≈ 113,1 cm².",
+"Il principio di Cavalieri afferma che se due solidi hanno la stessa altezza e sezioni di uguale area a ogni quota, hanno lo stesso volume. Spiega perché un prisma obliquo ha lo stesso volume di uno retto di uguale base e altezza, e perché la piramide è un terzo del prisma. Archimede dimostrò che una sfera inscritta in un cilindro equilatero (h = 2r) ha volume pari ai 2/3 di quello del cilindro: (4/3)πr³ contro 2πr³; anche la superficie della sfera è uguale alla superficie laterale del cilindro, 4πr². Ne era così fiero da volerlo inciso sulla sua tomba.",
+"I solidi di rotazione si ottengono facendo ruotare una figura piana attorno a un asse: un rettangolo genera un cilindro, un triangolo rettangolo attorno a un cateto genera un cono, un semicerchio una sfera. Quando le dimensioni lineari di un solido si moltiplicano per k, le aree si moltiplicano per k² e i volumi per k³. Per questo raddoppiando il raggio di una palla il suo volume diventa 8 volte più grande, mentre la superficie solo 4 volte: è il motivo per cui gli animali grandi disperdono meno calore in proporzione alla massa."
+],
+"metodo": [
+"Costruisci con cartoncino o stuzzicadenti cubo, piramide e tetraedro: vedere le rette sghembe e i diedri dal vero aiuta molto.",
+"Nei problemi disegna il solido in prospettiva e poi le sezioni piane che servono (triangolo rettangolo con altezza, apotema e raggio).",
+"Scrivi un formulario ordinato con tutte le aree e i volumi e ripassalo con un esercizio per formula.",
+"Usa il teorema di Pitagora nello spazio per diagonali e apotemi, individuando sempre il triangolo rettangolo giusto.",
+"Esercitati con problemi di similitudine (rapporto k su lunghezze, k² su aree, k³ su volumi).",
+"Verifica la relazione di Eulero su tutti i poliedri che incontri."
+],
+"ricorda": [
+"Piramide e cono: un terzo di base per altezza.",
+"Rette sghembe: non si toccano ma non sono parallele.",
+"Lunghezze ×k, aree ×k², volumi ×k³.",
+"Eulero: vertici meno spigoli più facce fa 2."
+],
+"errori": [
+"Dimenticare il fattore 1/3 nel volume di piramide e cono.",
+"Usare l'altezza al posto dell'apotema nella superficie laterale del cono.",
+"Pensare che due rette che non si incontrano siano sempre parallele: nello spazio possono essere sghembe.",
+"Confondere superficie laterale e totale, dimenticando le basi.",
+"Raddoppiare il volume quando si raddoppiano le dimensioni: il volume diventa 8 volte."
+],
+"domande": [
+{"domanda": "Calcola il volume di un cilindro con raggio 2 cm e altezza 5 cm.", "risposta": "V = πr²h = π·4·5 = 20π ≈ 62,8 cm³."},
+{"domanda": "Quanto misura la diagonale di un cubo di spigolo 6 cm?", "risposta": "d = 6√3 ≈ 10,4 cm."},
+{"domanda": "Un poliedro ha 12 vertici e 30 spigoli. Quante facce ha?", "risposta": "Per Eulero F = 2 − V + S = 2 − 12 + 30 = 20 (è l'icosaedro)."},
+{"domanda": "Calcola la superficie di una sfera di raggio 5 cm.", "risposta": "S = 4πr² = 100π ≈ 314 cm²."},
+{"domanda": "Che rapporto c'è tra il volume di un cono e quello del cilindro con la stessa base e altezza?", "risposta": "Il cono ha un terzo del volume del cilindro."}
+]
+},
+"universita": {
+"spiegazione": [
+"Nella geometria analitica dello spazio un punto è una terna (x, y, z) e la distanza tra due punti è d = √((x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²). Un piano ha equazione ax + by + cz + d = 0, dove n = (a, b, c) è un vettore normale al piano. Il piano per i tre punti A(1, 0, 0), B(0, 2, 0), C(0, 0, 3) si scrive in forma segmentaria x/1 + y/2 + z/3 = 1, cioè 6x + 3y + 2z − 6 = 0; in generale si trova la normale come prodotto vettoriale (B − A) × (C − A). Due piani sono paralleli se hanno normali parallele, perpendicolari se le normali hanno prodotto scalare nullo; l'angolo tra due piani è l'angolo tra le normali.",
+"Una retta si scrive in forma parametrica P(t) = P₀ + t·v, con v vettore direttore: x = x₀ + t·vₓ, y = y₀ + t·vᵧ, z = z₀ + t·v_z; oppure come intersezione di due piani non paralleli (forma cartesiana), con v = n₁ × n₂. Una retta è parallela a un piano se v·n = 0, perpendicolare se v è parallelo a n. Due rette sono complanari se il prodotto misto (P₂ − P₁)·(v₁ × v₂) = 0; altrimenti sono sghembe e la loro distanza è d = |(P₂ − P₁)·(v₁ × v₂)|/|v₁ × v₂|. Esempio: la retta per l'origine con direzione (1, 0, 0) e quella per (0, 1, 1) con direzione (0, 1, 0): v₁ × v₂ = (0, 0, 1), (P₂ − P₁)·(0, 0, 1) = 1, quindi d = 1.",
+"La distanza di un punto P₀(x₀, y₀, z₀) dal piano ax + by + cz + d = 0 è |ax₀ + by₀ + cz₀ + d|/√(a² + b² + c²). Esempio: il punto (1, 2, 3) dal piano 2x − y + 2z − 3 = 0 dista |2 − 2 + 6 − 3|/√(4 + 1 + 4) = 3/3 = 1. Il prodotto misto dà i volumi: il parallelepipedo generato da u, v, w ha volume |u·(v × w)|, il tetraedro di vertici A, B, C, D ha volume |(B − A)·((C − A) × (D − A))|/6. Per il tetraedro con vertici nell'origine e in (1, 0, 0), (0, 2, 0), (0, 0, 3) si ottiene 6/6 = 1.",
+"La sfera di centro (x₀, y₀, z₀) e raggio r ha equazione (x − x₀)² + (y − y₀)² + (z − z₀)² = r²; un piano la taglia in una circonferenza se la distanza dal centro è minore di r, con raggio della sezione √(r² − d²). Le quadriche generalizzano le coniche: ellissoide x²/a² + y²/b² + z²/c² = 1, iperboloidi a una e a due falde, paraboloidi ellittico (z = x² + y²) e iperbolico (z = x² − y², a sella), coni e cilindri quadrici. La classificazione si fa diagonalizzando la matrice simmetrica della forma quadratica: i segni degli autovalori distinguono i vari tipi. L'iperboloide a una falda e il paraboloide iperbolico sono superfici rigate, generate da rette: per questo si costruiscono torri di raffreddamento con travi dritte.",
+"Volumi e aree dei solidi si ottengono con il calcolo integrale. Il volume di un solido con sezioni di area A(z) è V = ∫ A(z) dz (principio di Cavalieri in forma integrale): per la sfera A(z) = π(r² − z²) e V = ∫ da −r a r di π(r² − z²) dz = (4/3)πr³. Per i solidi di rotazione attorno all'asse x, V = π∫ f(x)² dx. Il teorema di Guldino afferma che il volume generato dalla rotazione di una figura piana di area A attorno a un asse esterno è V = 2π·d·A, con d distanza del baricentro dall'asse: il toro ottenuto ruotando un cerchio di raggio r a distanza R dall'asse ha V = 2πR·πr² = 2π²Rr². Con R = 5 cm e r = 1 cm, V ≈ 98,7 cm³."
+],
+"metodo": [
+"Per ogni problema su rette e piani individua prima i vettori chiave (normali e direttori) e ragiona con prodotti scalari e vettoriali.",
+"Esercitati a passare tra forma parametrica e cartesiana della retta in entrambi i versi.",
+"Tieni una scheda con le formule di distanza (punto-punto, punto-piano, punto-retta, retta-retta) e una con le condizioni di parallelismo e perpendicolarità.",
+"Disegna le quadriche con le loro sezioni con piani paralleli ai piani coordinati: capisci la forma dalle sezioni.",
+"Ricava i volumi di cono, sfera e toro con gli integrali e confrontali con le formule elementari.",
+"Verifica ogni risultato con un caso particolare semplice (per esempio punti sugli assi)."
+],
+"ricorda": [
+"I coefficienti (a, b, c) del piano sono il vettore normale.",
+"Prodotto misto nullo = vettori complanari.",
+"Tetraedro = un sesto del prodotto misto.",
+"Guldino: volume = area per la strada fatta dal baricentro."
+],
+"errori": [
+"Usare il vettore normale del piano come direzione di una retta contenuta in esso.",
+"Dimenticare il valore assoluto o la radice nella formula della distanza punto-piano.",
+"Dichiarare incidenti due rette non parallele senza verificare che siano complanari.",
+"Confondere il paraboloide iperbolico con l'iperboloide.",
+"Usare la formula di Guldino con un asse che taglia la figura."
+],
+"domande": [
+{"domanda": "Scrivi il piano passante per (1, 1, 1) e perpendicolare al vettore (2, −1, 3).", "risposta": "2(x − 1) − (y − 1) + 3(z − 1) = 0, cioè 2x − y + 3z − 4 = 0."},
+{"domanda": "Calcola la distanza dell'origine dal piano x + 2y + 2z − 9 = 0.", "risposta": "|−9|/√(1 + 4 + 4) = 9/3 = 3."},
+{"domanda": "Quando due rette dello spazio sono sghembe?", "risposta": "Quando non sono parallele e il prodotto misto (P₂ − P₁)·(v₁ × v₂) è diverso da zero, cioè non stanno su un piano."},
+{"domanda": "Che superficie rappresenta z = x² − y²?", "risposta": "Un paraboloide iperbolico (a sella), una superficie rigata."},
+{"domanda": "Ricava il volume della sfera con l'integrale delle sezioni.", "risposta": "Le sezioni a quota z sono cerchi di area π(r² − z²); V = ∫ da −r a r di π(r² − z²) dz = π(2r³ − 2r³/3) = (4/3)πr³."}
+]
+}
+},
+"Derivate e studio di funzione": {
+"superiore": {
+"spiegazione": [
+"La derivata di una funzione f in un punto x₀ è il limite del rapporto incrementale: f'(x₀) = lim per h → 0 di [f(x₀ + h) − f(x₀)]/h. Geometricamente è la pendenza (coefficiente angolare) della retta tangente al grafico in x₀; fisicamente misura la rapidità di variazione: se s(t) è la posizione, s'(t) è la velocità. La retta tangente ha equazione y = f(x₀) + f'(x₀)·(x − x₀). Esempio: f(x) = x² in x₀ = 3. Il rapporto incrementale è [(3 + h)² − 9]/h = 6 + h, che tende a 6. La tangente è y = 9 + 6(x − 3), cioè y = 6x − 9.",
+"Non serve calcolare ogni volta il limite: si usano le derivate fondamentali e le regole. Derivate: (k)' = 0; (xⁿ)' = n·xⁿ⁻¹; (eˣ)' = eˣ; (ln x)' = 1/x; (sin x)' = cos x; (cos x)' = −sin x. Regole: (f + g)' = f' + g'; prodotto (f·g)' = f'·g + f·g'; quoziente (f/g)' = (f'·g − f·g')/g²; funzione composta (f(g(x)))' = f'(g(x))·g'(x). Esempi: (x²·sin x)' = 2x·sin x + x²·cos x; (e^(3x))' = 3e^(3x); (ln(x² + 1))' = 2x/(x² + 1).",
+"Il segno della derivata prima dice dove la funzione cresce (f' > 0) o decresce (f' < 0). I punti in cui f' = 0 sono punti stazionari: possono essere massimi, minimi o flessi a tangente orizzontale. La derivata seconda dice la concavità: f'' > 0 concavità verso l'alto (convessa), f'' < 0 verso il basso; dove f'' cambia segno c'è un flesso. Esempio: f(x) = x³ − 3x. f'(x) = 3x² − 3 = 0 per x = ±1; f' > 0 per x < −1 e x > 1, negativa in mezzo. Quindi massimo relativo in x = −1 (f = 2) e minimo relativo in x = 1 (f = −2). f''(x) = 6x si annulla in 0: flesso nell'origine.",
+"Lo studio di funzione segue uno schema: 1) dominio; 2) simmetrie (pari, dispari) ed eventuale periodicità; 3) intersezioni con gli assi e segno; 4) limiti agli estremi del dominio e asintoti (verticali, orizzontali, obliqui); 5) derivata prima: crescenza, massimi e minimi; 6) derivata seconda: concavità e flessi; 7) grafico. Esempio: f(x) = x·e^(−x). Dominio ℝ; si annulla solo in 0, positiva per x > 0. Per x → +∞ tende a 0 (l'esponenziale vince): asintoto y = 0; per x → −∞ tende a −∞. f'(x) = (1 − x)·e^(−x): cresce per x < 1, decresce dopo, massimo in (1, 1/e ≈ 0,37). f''(x) = (x − 2)·e^(−x): flesso in (2, 2/e² ≈ 0,27).",
+"Le derivate risolvono problemi di ottimizzazione. Esempio: con 100 m di rete si vuole recintare un rettangolo di area massima. Con lati x e 50 − x l'area è A(x) = x·(50 − x) = 50x − x²; A'(x) = 50 − 2x = 0 per x = 25: il rettangolo migliore è il quadrato di 25 m di lato, con area 625 m². Teoremi importanti: Rolle (se f(a) = f(b) esiste un punto con f' = 0), Lagrange o del valor medio (esiste c con f'(c) = [f(b) − f(a)]/(b − a)) e de l'Hôpital, che permette di calcolare limiti 0/0 o ∞/∞ con il rapporto delle derivate: lim per x → 0 di sin x/x = lim cos x/1 = 1."
+],
+"metodo": [
+"Impara a memoria la tabella delle derivate fondamentali e allenati con almeno venti esercizi di derivazione, soprattutto di funzioni composte.",
+"Nello studio di funzione segui sempre lo stesso schema e riporta ogni risultato su un unico grafico di prova.",
+"Studia il segno della derivata con lo schema grafico delle linee (segno dei fattori) e frecce di crescenza.",
+"Controlla massimi e minimi sia con il segno di f' sia con il segno di f'' nel punto stazionario.",
+"Per i problemi di ottimizzazione scrivi la funzione in una sola variabile usando il vincolo, poi deriva.",
+"Verifica i grafici con un software come GeoGebra solo dopo averli fatti a mano."
+],
+"ricorda": [
+"Derivata = pendenza della tangente = velocità di variazione.",
+"f' > 0 sale, f' < 0 scende; f'' > 0 sorride, f'' < 0 è imbronciata.",
+"Funzione composta: derivata di fuori per derivata di dentro.",
+"Quoziente: «sotto per derivata di sopra meno sopra per derivata di sotto, tutto fratto sotto al quadrato»."
+],
+"errori": [
+"Dimenticare la derivata interna nelle funzioni composte: (sin 2x)' = 2cos 2x, non cos 2x.",
+"Pensare che f'(x₀) = 0 implichi sempre un massimo o un minimo: x³ ha f'(0) = 0 ma in 0 c'è un flesso.",
+"Scambiare l'ordine nella regola del quoziente, sbagliando il segno.",
+"Dimenticare di studiare il dominio prima di tutto il resto.",
+"Usare de l'Hôpital su limiti che non sono forme indeterminate 0/0 o ∞/∞."
+],
+"domande": [
+{"domanda": "Calcola la derivata di f(x) = 3x⁴ − 2x + 7.", "risposta": "f'(x) = 12x³ − 2."},
+{"domanda": "Calcola la derivata di f(x) = e^(x²).", "risposta": "f'(x) = 2x·e^(x²) (regola della funzione composta)."},
+{"domanda": "Scrivi la tangente al grafico di f(x) = 1/x nel punto x = 1.", "risposta": "f(1) = 1, f'(x) = −1/x², f'(1) = −1: y = 1 − (x − 1), cioè y = −x + 2."},
+{"domanda": "Trova massimi e minimi di f(x) = x² − 4x + 1.", "risposta": "f'(x) = 2x − 4 = 0 per x = 2; f'' = 2 > 0, quindi minimo in (2, −3); non ci sono massimi."},
+{"domanda": "Che cosa indica il cambio di segno della derivata seconda?", "risposta": "Un punto di flesso, dove la funzione cambia concavità."}
+]
+},
+"universita": {
+"spiegazione": [
+"Una funzione f è derivabile in x₀ se esiste finito il limite del rapporto incrementale; equivalentemente è differenziabile: f(x₀ + h) = f(x₀) + f'(x₀)·h + o(h), cioè approssimabile linearmente con un errore che va a zero più velocemente di h. La derivabilità implica la continuità, ma non viceversa: f(x) = |x| è continua in 0 ma ha derivata sinistra −1 e destra +1 (punto angoloso); f(x) = ∛x ha in 0 tangente verticale (flesso a tangente verticale); √|x| ha una cuspide. La derivata della funzione inversa si ottiene da (f⁻¹)'(y) = 1/f'(x) con y = f(x): per esempio (arctan y)' = 1/(1 + tan²x) = 1/(1 + y²) e (arcsin y)' = 1/√(1 − y²).",
+"I teoremi del calcolo differenziale collegano proprietà locali e globali. Fermat: in un estremo interno di una funzione derivabile f' = 0. Rolle: f continua in [a, b], derivabile in (a, b), f(a) = f(b) ⇒ esiste c con f'(c) = 0. Lagrange: esiste c con f'(c) = (f(b) − f(a))/(b − a); ne segue che una funzione con derivata nulla su un intervallo è costante e che il segno di f' determina la monotonia. Cauchy generalizza Lagrange a due funzioni e porta al teorema di de l'Hôpital: se f/g è una forma 0/0 o ∞/∞ e f'/g' ha limite, f/g ha lo stesso limite. Esempio: lim per x → 0 di (1 − cos x)/x² = lim sin x/(2x) = ½.",
+"La formula di Taylor approssima una funzione con un polinomio: f(x) = Σ f⁽ᵏ⁾(x₀)(x − x₀)ᵏ/k! + R_n(x), con resto di Peano o(|x − x₀|ⁿ) o di Lagrange f⁽ⁿ⁺¹⁾(ξ)(x − x₀)ⁿ⁺¹/(n + 1)!. Sviluppi di McLaurin da sapere: eˣ = 1 + x + x²/2 + x³/6 + o(x³); sin x = x − x³/6 + o(x⁴); cos x = 1 − x²/2 + x⁴/24 + o(x⁵); ln(1 + x) = x − x²/2 + x³/3 + o(x³); (1 + x)^α = 1 + αx + α(α − 1)x²/2 + o(x²). Esempio: e^0,1 ≈ 1 + 0,1 + 0,005 + 0,000167 = 1,105167, contro il valore vero 1,105171. Con gli sviluppi si calcolano limiti difficili: (sin x − x)/x³ → −1/6.",
+"Lo studio completo di funzione richiede anche gli asintoti obliqui: y = mx + q con m = lim f(x)/x e q = lim [f(x) − mx]. Esempio: f(x) = (x² + 1)/(x − 1). Dividendo, f(x) = x + 1 + 2/(x − 1): asintoto verticale x = 1, asintoto obliquo y = x + 1 per x → ±∞. f'(x) = 1 − 2/(x − 1)² si annulla per (x − 1)² = 2, x = 1 ± √2. In x = 1 − √2 ≈ −0,41 c'è un massimo relativo con f = 2 − 2√2 ≈ −0,83; in x = 1 + √2 ≈ 2,41 un minimo relativo con f = 2 + 2√2 ≈ 4,83. f''(x) = 4/(x − 1)³: la funzione è concava per x < 1 e convessa per x > 1, senza flessi (il cambio di concavità avviene sull'asintoto, fuori dal dominio).",
+"Per i punti stazionari si usa il test delle derivate successive: se f'(x₀) = … = f⁽ⁿ⁻¹⁾(x₀) = 0 e f⁽ⁿ⁾(x₀) ≠ 0, per n pari c'è un estremo (minimo se f⁽ⁿ⁾ > 0), per n dispari un flesso a tangente orizzontale; x⁴ in 0 ha un minimo, x⁵ un flesso. Una funzione è convessa su un intervallo se il grafico sta sopra ogni tangente; per funzioni due volte derivabili equivale a f'' ≥ 0. La convessità garantisce che ogni punto stazionario sia un minimo globale, fatto centrale nell'ottimizzazione. Il metodo di Newton per risolvere f(x) = 0, xₙ₊₁ = xₙ − f(xₙ)/f'(xₙ), usa la tangente: per f(x) = x² − 2 da x₀ = 1 dà 1,5; 1,4167; 1,41422, con convergenza quadratica."
+],
+"metodo": [
+"Studia le dimostrazioni di Rolle, Lagrange e de l'Hôpital: chiariscono le ipotesi e quando i teoremi falliscono.",
+"Memorizza gli sviluppi di McLaurin fondamentali e allenati sui limiti con gli sviluppi invece di applicare de l'Hôpital più volte.",
+"Classifica i punti di non derivabilità (angolosi, cuspidi, flessi verticali) con esempi e controesempi.",
+"In ogni studio di funzione verifica la coerenza tra segno, limiti, monotonia e concavità prima di disegnare.",
+"Per l'ottimizzazione controlla sempre gli estremi del dominio e i punti di non derivabilità, oltre ai punti stazionari.",
+"Applica il metodo di Newton a mano per due o tre iterazioni su equazioni semplici."
+],
+"ricorda": [
+"Derivabile ⇒ continua, ma |x| insegna che non vale il contrario.",
+"Lagrange: c'è sempre un punto dove la tangente è parallela alla corda.",
+"Taylor: la funzione vista con la lente d'ingrandimento è un polinomio.",
+"Asintoto obliquo: m = lim f/x, q = lim (f − mx)."
+],
+"errori": [
+"Applicare de l'Hôpital senza verificare che il limite sia una forma indeterminata o quando f'/g' non ha limite.",
+"Troncare gli sviluppi di Taylor a un ordine troppo basso e ottenere 0/0 di nuovo.",
+"Cercare massimi e minimi assoluti solo tra i punti stazionari, dimenticando gli estremi e i punti di non derivabilità.",
+"Considerare un flesso un punto in cui f'' = 0 senza controllare il cambio di concavità (x⁴ in 0 non è un flesso).",
+"Calcolare m dell'asintoto obliquo e dimenticare di verificare che anche q sia finito."
+],
+"domande": [
+{"domanda": "Calcola con gli sviluppi di Taylor lim per x → 0 di (eˣ − 1 − x)/x².", "risposta": "eˣ − 1 − x = x²/2 + o(x²), quindi il limite vale ½."},
+{"domanda": "f(x) = |x − 2| è derivabile in x = 2?", "risposta": "No: le derivate destra (+1) e sinistra (−1) sono diverse, c'è un punto angoloso."},
+{"domanda": "Trova l'asintoto obliquo di f(x) = (2x² + 3x)/(x + 1).", "risposta": "m = lim f/x = 2; q = lim [f(x) − 2x] = lim x/(x + 1) = 1: asintoto y = 2x + 1."},
+{"domanda": "Enuncia il teorema di Lagrange.", "risposta": "Se f è continua in [a, b] e derivabile in (a, b), esiste c in (a, b) tale che f'(c) = [f(b) − f(a)]/(b − a)."},
+{"domanda": "Che tipo di punto ha f(x) = x⁴ in x = 0?", "risposta": "Un minimo: le derivate fino alla terza sono nulle e f⁽⁴⁾(0) = 24 > 0, con ordine pari."}
+]
+}
+},
+"Distribuzioni di probabilità": {
+"superiore": {
+"spiegazione": [
+"Una variabile aleatoria (o casuale) è una grandezza numerica che dipende dall'esito di un esperimento casuale: il numero uscito lanciando un dado, il numero di teste in 10 lanci di moneta, l'altezza di una persona scelta a caso. È discreta se assume valori isolati (che si possono contare), continua se può assumere tutti i valori di un intervallo. La distribuzione di probabilità di una variabile discreta associa a ogni valore xᵢ la sua probabilità pᵢ, con Σpᵢ = 1. Per un dado equilibrato ogni valore da 1 a 6 ha probabilità 1/6 (distribuzione uniforme).",
+"Due numeri riassumono una distribuzione. Il valore atteso (media) E(X) = Σ xᵢ·pᵢ indica il «centro»: per il dado E(X) = (1 + 2 + 3 + 4 + 5 + 6)/6 = 3,5, un valore che non esce mai ma è la media su moltissimi lanci. La varianza Var(X) = E(X²) − [E(X)]² misura quanto i valori si disperdono attorno alla media; la sua radice è la deviazione standard σ. Per il dado E(X²) = 91/6 ≈ 15,17, quindi Var(X) = 15,17 − 12,25 ≈ 2,92 e σ ≈ 1,71. In un gioco equo il valore atteso della vincita netta è zero.",
+"La distribuzione binomiale descrive il numero X di successi in n prove indipendenti, ognuna con probabilità di successo p: P(X = k) = C(n, k)·pᵏ·(1 − p)ⁿ⁻ᵏ. Il coefficiente binomiale conta in quali prove cadono i successi. Esempio: lanciando 10 volte una moneta, la probabilità di ottenere esattamente 6 teste è C(10, 6)·(½)¹⁰ = 210/1024 ≈ 0,205. La binomiale ha media E(X) = n·p e varianza Var(X) = n·p·(1 − p): in 10 lanci ci si aspettano in media 5 teste con σ = √2,5 ≈ 1,58.",
+"Spesso conviene passare all'evento contrario. Esempio: rispondendo a caso a 5 domande con 4 opzioni ciascuna, la probabilità di non indovinarne nessuna è (3/4)⁵ ≈ 0,237, quindi quella di indovinarne almeno una è 1 − 0,237 ≈ 0,763. La probabilità di indovinarle tutte e cinque è (1/4)⁵ ≈ 0,001. La media delle risposte giuste è 5·0,25 = 1,25: per questo nei test a risposta multipla si penalizzano le risposte sbagliate, così che rispondere a caso abbia valore atteso zero.",
+"Per le variabili continue la probabilità si legge come area sotto una curva, la densità di probabilità, la cui area totale vale 1. La più importante è la distribuzione normale (o gaussiana), a forma di campana, simmetrica attorno alla media μ e con larghezza data da σ. Vale la regola 68-95-99,7: circa il 68% dei valori cade tra μ − σ e μ + σ, il 95% entro 2σ, il 99,7% entro 3σ. Esempio: se le altezze dei ragazzi hanno μ = 175 cm e σ = 7 cm, circa il 95% è tra 161 e 189 cm, e solo il 2,5% supera 189 cm. Per confrontare valori di distribuzioni diverse si usa il punteggio standard z = (x − μ)/σ: 189 cm corrisponde a z = 2."
+],
+"metodo": [
+"Per ogni variabile aleatoria scrivi una tabella con valori, probabilità, prodotti xᵢpᵢ e xᵢ²pᵢ: media e varianza si leggono subito.",
+"Prima di usare la binomiale verifica le tre condizioni: numero fisso di prove, prove indipendenti, stessa probabilità di successo.",
+"Quando trovi «almeno uno» pensa subito all'evento contrario.",
+"Disegna l'istogramma delle distribuzioni discrete e la campana per la normale, con media e deviazione standard segnate.",
+"Esercitati con la regola 68-95-99,7 su esempi reali: altezze, voti, tempi di attesa.",
+"Simula con un foglio di calcolo molti lanci di dadi o monete e confronta le frequenze con le probabilità teoriche."
+],
+"ricorda": [
+"Valore atteso = media pesata con le probabilità.",
+"Binomiale: n·p in media, n·p·(1 − p) di varianza.",
+"«Almeno uno» = 1 meno «nessuno».",
+"Normale: 68% entro un σ, 95% entro due, 99,7% entro tre."
+],
+"errori": [
+"Dimenticare il coefficiente binomiale e calcolare solo pᵏ(1 − p)ⁿ⁻ᵏ.",
+"Calcolare la varianza come E(X²) senza sottrarre il quadrato della media.",
+"Pensare che il valore atteso sia il valore più probabile: per il dado 3,5 non esce mai.",
+"Applicare la binomiale a estrazioni senza reinserimento da una popolazione piccola: le prove non sono indipendenti.",
+"Credere che per una variabile continua P(X = x) sia positiva: la probabilità di un singolo valore è zero."
+],
+"domande": [
+{"domanda": "Calcola il valore atteso del numero di teste in 20 lanci di una moneta.", "risposta": "E(X) = n·p = 20·0,5 = 10."},
+{"domanda": "Qual è la probabilità di ottenere esattamente due 6 in tre lanci di un dado?", "risposta": "C(3, 2)·(1/6)²·(5/6) = 3·5/216 = 15/216 ≈ 0,069."},
+{"domanda": "Un gioco paga 10 € con probabilità 0,1 e niente altrimenti; costa 1,50 €. È equo?", "risposta": "No: la vincita attesa è 10·0,1 = 1 €, minore del costo; il guadagno atteso è −0,50 € a partita."},
+{"domanda": "Se i voti di un test hanno μ = 60 e σ = 10, che percentuale di studenti prende più di 80?", "risposta": "80 è a 2σ sopra la media: circa il 2,5%."},
+{"domanda": "Quanto vale la deviazione standard di una binomiale con n = 100 e p = 0,2?", "risposta": "σ = √(100·0,2·0,8) = √16 = 4."}
+]
+},
+"universita": {
+"spiegazione": [
+"Una variabile aleatoria X è una funzione dagli esiti di un esperimento ai numeri reali; la sua legge è descritta dalla funzione di ripartizione F(x) = P(X ≤ x), non decrescente, continua a destra, con limiti 0 e 1. Per variabili discrete si usa la densità discreta p(x) = P(X = x); per variabili assolutamente continue la densità f(x) ≥ 0 con F(x) = ∫ da −∞ a x di f(t) dt e P(a < X ≤ b) = ∫ da a a b di f. Il valore atteso è E[X] = Σ x·p(x) oppure ∫ x·f(x) dx, e più in generale E[g(X)] = ∫ g(x)f(x) dx. Il valore atteso è lineare, E[aX + bY] = aE[X] + bE[Y] sempre; la varianza soddisfa Var(aX + b) = a²·Var(X) e, per variabili indipendenti (o solo scorrelate), Var(X + Y) = Var X + Var Y.",
+"Distribuzioni discrete principali. Bernoulli(p): valori 0 e 1, media p, varianza p(1 − p). Binomiale(n, p): somma di n Bernoulli indipendenti, media np, varianza np(1 − p). Geometrica: numero di prove fino al primo successo, P(X = k) = (1 − p)ᵏ⁻¹p, media 1/p (in media servono 6 lanci per fare 6 con un dado). Poisson(λ): P(X = k) = λᵏe^(−λ)/k!, con media e varianza entrambe uguali a λ; descrive eventi rari e indipendenti in un intervallo (chiamate a un centralino, decadimenti radioattivi) ed è il limite della binomiale per n grande, p piccolo, np = λ. Esempio: se arrivano in media 3 chiamate al minuto, P(0) = e⁻³ ≈ 0,050 e P(2) = (9/2)·e⁻³ ≈ 0,224.",
+"Distribuzioni continue principali. Uniforme su [a, b]: densità 1/(b − a), media (a + b)/2, varianza (b − a)²/12. Esponenziale(λ): f(x) = λe^(−λx) per x ≥ 0, media 1/λ, P(X > t) = e^(−λt); è l'unica continua senza memoria, P(X > s + t | X > s) = P(X > t), e descrive i tempi d'attesa tra eventi di Poisson e le vite dei componenti che non invecchiano. Se una lampadina dura in media 1000 ore, la probabilità che superi le 2000 ore è e⁻² ≈ 0,135. Normale N(μ, σ²): f(x) = (1/(σ√(2π)))·e^(−(x−μ)²/(2σ²)); si standardizza con Z = (X − μ)/σ ∼ N(0, 1) e si usano le tavole di Φ: Φ(1) ≈ 0,841, Φ(1,96) ≈ 0,975, Φ(2,58) ≈ 0,995.",
+"Il teorema del limite centrale afferma che la somma (o la media) di n variabili indipendenti e identicamente distribuite con varianza finita, opportunamente standardizzata, tende in distribuzione alla normale standard: (Sₙ − nμ)/(σ√n) → N(0, 1). È il motivo per cui la gaussiana è ovunque e per cui una binomiale con n grande si approssima con una normale. Esempio: 100 lanci di moneta, X ∼ Bin(100; 0,5), μ = 50, σ = 5. P(X ≥ 60) ≈ P(Z ≥ (59,5 − 50)/5) = P(Z ≥ 1,9) = 1 − 0,9713 ≈ 0,029 (con la correzione di continuità 59,5). La legge dei grandi numeri garantisce che la media campionaria converge al valore atteso; la disuguaglianza di Chebyshev, P(|X − μ| ≥ kσ) ≤ 1/k², dà una stima valida per qualunque distribuzione.",
+"Per più variabili si introducono la distribuzione congiunta, le marginali e la covarianza Cov(X, Y) = E[XY] − E[X]E[Y], con coefficiente di correlazione ρ = Cov/(σ_X σ_Y) compreso tra −1 e 1. L'indipendenza implica covarianza nulla, ma non il viceversa: se X è uniforme su [−1, 1] e Y = X², Cov(X, Y) = E[X³] − E[X]E[X²] = 0 pur essendo Y funzione di X. Dalla normale derivano le distribuzioni usate in statistica inferenziale: chi-quadro (somma di quadrati di normali standard), t di Student (per stimare la media con σ incognita) e F di Fisher (per confrontare varianze). Gli intervalli di confidenza al 95% per una media, con σ nota, sono x̄ ± 1,96·σ/√n."
+],
+"metodo": [
+"Costruisci una scheda per ogni distribuzione con: quando si usa, densità, media, varianza, un esempio tipico.",
+"Riconosci il modello dal testo: prove ripetute → binomiale, eventi rari per unità di tempo → Poisson, attese → esponenziale, somme di molti contributi → normale.",
+"Allenati con la standardizzazione e la lettura delle tavole della normale, incluse le probabilità tra due valori e sulle code.",
+"Ricava media e varianza di binomiale e Poisson usando la linearità e le serie: rafforza sia la probabilità sia l'analisi.",
+"Verifica il teorema del limite centrale con una simulazione: istogramma delle medie di dadi per n = 1, 2, 5, 30.",
+"Quando approssimi una distribuzione discreta con la normale ricordati la correzione di continuità."
+],
+"ricorda": [
+"Poisson: media = varianza = λ.",
+"Esponenziale: non ha memoria, la lampadina non sa da quanto è accesa.",
+"Limite centrale: sommando tanto, viene una campana.",
+"Indipendenti ⇒ scorrelate, ma non il contrario."
+],
+"errori": [
+"Sommare le deviazioni standard di variabili indipendenti invece delle varianze.",
+"Confondere il parametro λ dell'esponenziale con la media: la media è 1/λ.",
+"Usare l'approssimazione normale della binomiale con n·p troppo piccolo (regola pratica: np e n(1 − p) almeno 5-10).",
+"Dimenticare la correzione di continuità nell'approssimazione normale di variabili discrete.",
+"Dedurre l'indipendenza da una covarianza nulla."
+],
+"domande": [
+{"domanda": "Calcola media e varianza di una Poisson con λ = 4.", "risposta": "Entrambe valgono 4; la deviazione standard è 2."},
+{"domanda": "X ∼ N(100, 15²). Quanto vale P(X > 130)?", "risposta": "z = (130 − 100)/15 = 2, P(Z > 2) = 1 − 0,977 ≈ 0,023."},
+{"domanda": "Che cosa afferma la proprietà di assenza di memoria dell'esponenziale?", "risposta": "Che P(X > s + t | X > s) = P(X > t): sapere di aver già atteso s non cambia la distribuzione dell'attesa residua."},
+{"domanda": "Se X e Y sono indipendenti con Var X = 4 e Var Y = 9, quanto vale Var(2X − Y)?", "risposta": "Var = 4·4 + 1·9 = 25."},
+{"domanda": "Enuncia il teorema del limite centrale.", "risposta": "Se X₁, …, Xₙ sono indipendenti e identicamente distribuite con media μ e varianza σ² finita, allora (ΣXᵢ − nμ)/(σ√n) converge in distribuzione alla normale standard per n → ∞."}
+]
+}
+}
+}

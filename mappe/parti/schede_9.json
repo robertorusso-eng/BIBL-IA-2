@@ -1,0 +1,795 @@
+{
+ "gradienti di Na⁺ e K⁺": {
+  "tipo": "energia",
+  "base": "Fuori dalla cellula c'è tanto sodio, dentro tanto potassio: come acqua tenuta in alto da una diga, è energia pronta da usare.",
+  "superiore": "Differenze di concentrazione degli ioni ai due lati della membrana: Na⁺ alto fuori e basso dentro, K⁺ alto dentro e basso fuori. Sono mantenute dalla pompa Na⁺/K⁺ e sono la base del potenziale di membrana.",
+  "universita": "Valori tipici: Na⁺ circa 142 mM fuori e 14 mM dentro; K⁺ circa 4 mM fuori e 140 mM dentro. Il potenziale di equilibrio (equazione di Nernst) è circa +60 mV per il Na⁺ e circa −90 mV per il K⁺; il potenziale di riposo è descritto dall'equazione di Goldman-Hodgkin-Katz, che pesa le permeabilità.",
+  "clinica": "Le alterazioni del K⁺ nel sangue cambiano l'eccitabilità: l'iperkaliemia depolarizza le cellule e può dare aritmie gravi; l'ipokaliemia dà debolezza muscolare e aritmie."
+ },
+ "canali di fuga del K⁺": {
+  "tipo": "enzima",
+  "base": "Piccole porte sempre un po' aperte che lasciano uscire il potassio dalla cellula.",
+  "superiore": "Canali del potassio aperti anche a riposo. Rendono la membrana molto più permeabile al K⁺ che al Na⁺, e per questo il potenziale di riposo è vicino al potenziale di equilibrio del K⁺.",
+  "universita": "Comprendono soprattutto i canali K2P (a due domini del poro, per esempio TREK e TASK) e alcuni canali Kir (rettificanti entranti). A riposo la permeabilità al K⁺ è circa 25-100 volte quella al Na⁺, a seconda della cellula.",
+  "clinica": "Alcuni anestetici generali volatili attivano i canali K2P e iperpolarizzano i neuroni."
+ },
+ "potenziale di riposo": {
+  "tipo": "energia",
+  "base": "La piccola carica elettrica che una cellula nervosa ha quando è ferma, come una pila carica in attesa.",
+  "superiore": "Differenza di potenziale tra interno ed esterno della cellula a riposo: circa −70 mV nei neuroni (l'interno è negativo). Dipende dai gradienti di Na⁺ e K⁺ e dalla maggiore permeabilità al K⁺.",
+  "universita": "Valori: circa −70 mV nel neurone, −90 mV nel muscolo scheletrico e nel miocardio ventricolare. È determinato soprattutto dalla diffusione del K⁺ (equazione di Goldman-Hodgkin-Katz); la pompa Na⁺/K⁺, elettrogenica, contribuisce direttamente per pochi mV.",
+  "clinica": "L'iperkaliemia rende il potenziale di riposo meno negativo: i canali del Na⁺ si inattivano e il cuore può fermarsi. Il calcio endovena stabilizza la membrana."
+ },
+ "potenziale graduato": {
+  "tipo": "energia",
+  "base": "Un piccolo segnale elettrico che nasce in un punto e si spegne man mano che si allontana, come un'onda in uno stagno.",
+  "superiore": "Variazione locale del potenziale di membrana, proporzionale allo stimolo. Può depolarizzare o iperpolarizzare, si attenua con la distanza e può sommarsi ad altri. Esempi: potenziali postsinaptici e potenziali di recettore.",
+  "universita": "Si propaga in modo elettrotonico (passivo), con un decremento descritto dalla costante di spazio della membrana. Non ha soglia né periodo refrattario e si somma nel tempo e nello spazio. Diventa potenziale d'azione solo se porta il segmento iniziale dell'assone alla soglia.",
+  "clinica": ""
+ },
+ "recettori ionotropi": {
+  "tipo": "enzima",
+  "base": "Porte nella membrana che si aprono quando arriva un messaggero chimico: come una serratura che diventa subito un passaggio.",
+  "superiore": "Recettori che sono anche canali ionici (canali ligando-dipendenti). Quando legano il neurotrasmettitore si aprono e lasciano passare ioni: la risposta è rapidissima (millisecondi).",
+  "universita": "Esempi: recettore nicotinico dell'acetilcolina (Na⁺/K⁺), recettori del glutammato AMPA, NMDA (anche Ca²⁺, bloccato dal Mg²⁺ a riposo) e kainato, recettori GABA-A e della glicina (Cl⁻), recettore 5-HT₃ della serotonina.",
+  "clinica": "Bersaglio di molti farmaci: benzodiazepine (GABA-A), ketamina e memantina (NMDA), bloccanti neuromuscolari (nicotinici), ondansetron (5-HT₃, contro il vomito)."
+ },
+ "soglia": {
+  "tipo": "energia",
+  "base": "Il punto da superare perché il nervo «spari» il suo messaggio: come la forza minima per far scattare una molla.",
+  "superiore": "Valore del potenziale di membrana (circa −55 mV nei neuroni) a cui si aprono abbastanza canali del Na⁺ da far partire il potenziale d'azione. Sotto la soglia non succede nulla, sopra parte un impulso completo.",
+  "universita": "La soglia è il punto in cui la corrente entrante di Na⁺ supera le correnti uscenti di K⁺ e si innesca il ciclo di feedback positivo (ciclo di Hodgkin). Si alza se la membrana resta depolarizzata a lungo (accomodazione, inattivazione dei canali del Na⁺).",
+  "clinica": "L'ipocalcemia abbassa la soglia dei nervi: crampi, formicolii e tetania (segni di Chvostek e Trousseau)."
+ },
+ "segmento iniziale dell'assone": {
+  "tipo": "struttura",
+  "base": "Il punto di partenza del «filo» del neurone, dove si decide se il messaggio parte o no.",
+  "superiore": "Primo tratto dell'assone, subito dopo il cono di emergenza (monticolo). Ha la soglia più bassa del neurone: qui si sommano i segnali e nasce il potenziale d'azione.",
+  "universita": "Ha la densità più alta di canali Na⁺ voltaggio-dipendenti (soprattutto Nav1.6), ancorati dall'anchirina G. Riceve sinapsi inibitorie (cellule a candelabro) che controllano in modo molto efficace l'uscita del neurone.",
+  "clinica": ""
+ },
+ "depolarizzazione": {
+  "tipo": "energia",
+  "base": "Il momento in cui l'interno del neurone, da negativo, diventa positivo per un istante.",
+  "superiore": "Fase di salita del potenziale d'azione: si aprono i canali del Na⁺, il Na⁺ entra e il potenziale passa da circa −55 mV a circa +30 mV.",
+  "universita": "Dovuta alla corrente entrante rapida di Na⁺ (INa) con feedback positivo. Il picco non raggiunge il potenziale di equilibrio del Na⁺ (circa +60 mV) perché i canali del Na⁺ si inattivano e si aprono quelli del K⁺. Nel miocardio è la fase 0 del potenziale d'azione.",
+  "clinica": "I farmaci antiaritmici di classe I bloccano i canali del Na⁺ e rallentano la fase 0."
+ },
+ "ripolarizzazione": {
+  "tipo": "energia",
+  "base": "Il ritorno dell'interno del neurone a negativo, dopo il picco dell'impulso.",
+  "superiore": "Fase di discesa del potenziale d'azione: i canali del Na⁺ si chiudono (inattivazione) e si aprono quelli del K⁺; il K⁺ esce e la membrana torna negativa.",
+  "universita": "Dovuta alla corrente uscente ritardata di K⁺ (rettificante ritardata) e all'inattivazione dei canali Nav. Nel miocardio è molto più lenta (plateau sostenuto da canali Ca²⁺ di tipo L) e coinvolge correnti IKr e IKs.",
+  "clinica": "Nel cuore una ripolarizzazione rallentata allunga il QT (sindrome del QT lungo, farmaci che bloccano hERG) ed espone alle torsioni di punta."
+ },
+ "canali del potassio voltaggio-dipendenti": {
+  "tipo": "enzima",
+  "base": "Porte che si aprono un attimo dopo quelle del sodio e lasciano uscire il potassio: così il segnale si spegne.",
+  "superiore": "Canali che si aprono con la depolarizzazione, ma più lentamente dei canali del Na⁺. L'uscita di K⁺ riporta la membrana a valori negativi (ripolarizzazione) e causa l'iperpolarizzazione postuma.",
+  "universita": "Famiglia Kv (per esempio Kv1-Kv4 nei neuroni; hERG/Kv11.1 e KvLQT1/Kv7.1 nel cuore). Tetrameri con 6 segmenti per subunità e sensore di voltaggio S4. Bloccati sperimentalmente dal tetraetilammonio.",
+  "clinica": "Gli antiaritmici di classe III (amiodarone, sotalolo) bloccano i canali del K⁺ cardiaci e allungano il potenziale d'azione. La 4-aminopiridina (fampridina) li blocca nelle fibre demielinizzate e migliora la marcia nella sclerosi multipla."
+ },
+ "iperpolarizzazione postuma": {
+  "tipo": "energia",
+  "base": "Dopo l'impulso il neurone diventa per un attimo «più scarico» del normale, poi torna a riposo.",
+  "superiore": "Breve fase in cui il potenziale scende sotto il valore di riposo, verso circa −90 mV, perché i canali del K⁺ restano aperti un po' più a lungo.",
+  "universita": "Avvicina la membrana al potenziale di equilibrio del K⁺. Coincide con il periodo refrattario relativo. In molti neuroni è prolungata da canali K⁺ attivati dal Ca²⁺ e regola la frequenza di scarica.",
+  "clinica": ""
+ },
+ "conduzione continua": {
+  "tipo": "energia",
+  "base": "Il messaggio avanza piano piano, un pezzettino dopo l'altro, lungo un filo nervoso senza rivestimento.",
+  "superiore": "Propagazione del potenziale d'azione nelle fibre senza mielina: ogni tratto di membrana depolarizza quello vicino. È lenta.",
+  "universita": "Velocità circa 0,5-2 m/s nelle fibre C (dolore lento, temperatura, fibre postgangliari autonome). La velocità cresce con il diametro dell'assone, perché diminuisce la resistenza interna.",
+  "clinica": "Le fibre C trasportano il dolore sordo e persistente; per questo il dolore «secondo» arriva dopo quello acuto."
+ },
+ "conduzione saltatoria": {
+  "tipo": "energia",
+  "base": "Il messaggio salta da un punto all'altro del filo nervoso rivestito, come chi attraversa un fiume saltando sui sassi: è molto più veloce.",
+  "superiore": "Propagazione del potenziale d'azione nelle fibre con mielina: l'impulso nasce solo nei nodi di Ranvier e «salta» da un nodo al successivo.",
+  "universita": "La mielina riduce la capacità e aumenta la resistenza della membrana, quindi la corrente passa lontano senza disperdersi. Velocità fino a circa 100 m/s nelle fibre Aα. Risparmio di energia: si scambiano ioni solo ai nodi.",
+  "clinica": "Nelle malattie demielinizzanti (sclerosi multipla, sindrome di Guillain-Barré) la conduzione rallenta o si blocca: all'elettroneurografia la velocità di conduzione è ridotta."
+ },
+ "nodi di Ranvier": {
+  "tipo": "struttura",
+  "base": "Piccole interruzioni nel rivestimento del filo nervoso, dove il messaggio si «ricarica».",
+  "superiore": "Brevi tratti di assone scoperti tra due segmenti di guaina mielinica. Qui si concentrano i canali del Na⁺ e si rigenera il potenziale d'azione.",
+  "universita": "Nei nodi i canali Nav (soprattutto Nav1.6) sono molto densi; nella zona vicino al nodo (paranodo e juxtaparanodo) si trovano proteine di adesione e canali Kv.",
+  "clinica": "In alcune varianti della sindrome di Guillain-Barré gli anticorpi colpiscono direttamente le proteine del nodo (nodopatie)."
+ },
+ "periodo refrattario assoluto": {
+  "tipo": "energia",
+  "base": "Un attimo subito dopo l'impulso in cui il neurone non può rispondere in nessun modo, come uno sciacquone che deve ricaricarsi.",
+  "superiore": "Intervallo durante il quale nessuno stimolo, anche fortissimo, può far partire un nuovo potenziale d'azione, perché i canali del Na⁺ sono aperti o inattivati.",
+  "universita": "Dura circa 1 ms nelle fibre nervose e limita la frequenza massima di scarica. Garantisce che l'impulso viaggi in una sola direzione. Nel miocardio dura quasi quanto la contrazione, così il cuore non può andare in tetano.",
+  "clinica": ""
+ },
+ "periodo refrattario relativo": {
+  "tipo": "energia",
+  "base": "Un momento dopo l'impulso in cui il neurone risponde solo se lo stimolo è più forte del solito.",
+  "superiore": "Intervallo dopo il periodo refrattario assoluto in cui si può avere un nuovo potenziale d'azione, ma solo con uno stimolo più forte del normale.",
+  "universita": "Dovuto ai canali del Na⁺ non ancora tutti riattivati e ai canali del K⁺ ancora aperti (iperpolarizzazione postuma). Nel cuore uno stimolo in questa fase (fenomeno R su T) può scatenare aritmie.",
+  "clinica": "Un extrasistole ventricolare che cade sull'onda T (R su T) può innescare una fibrillazione ventricolare."
+ },
+ "anestetici locali": {
+  "tipo": "molecola",
+  "base": "Medicine che addormentano solo una piccola parte del corpo, come quelle del dentista: il dolore non arriva al cervello.",
+  "superiore": "Farmaci che bloccano i canali del Na⁺ voltaggio-dipendenti delle fibre nervose e impediscono il potenziale d'azione. Esempi: lidocaina, mepivacaina, bupivacaina, ropivacaina.",
+  "universita": "Basi deboli: attraversano la membrana nella forma non ionizzata e bloccano il canale dall'interno nella forma ionizzata, preferendo i canali aperti o inattivati (blocco uso-dipendente). Le fibre piccole e amieliniche del dolore si bloccano per prime. Si dividono in esteri (procaina) e ammidi (lidocaina). L'adrenalina aggiunta ne prolunga l'effetto.",
+  "clinica": "Tossicità sistemica: formicolio della bocca, convulsioni, aritmie e arresto cardiaco (soprattutto bupivacaina); si tratta con emulsione lipidica endovena. In un tessuto infiammato (acido) funzionano peggio."
+ },
+ "sclerosi multipla": {
+  "tipo": "struttura",
+  "base": "Una malattia in cui le difese del corpo rovinano il rivestimento dei nervi del cervello e del midollo: i messaggi viaggiano male.",
+  "superiore": "Malattia autoimmune e infiammatoria del sistema nervoso centrale che distrugge la mielina in zone sparse (placche). Colpisce soprattutto giovani adulti, più spesso donne.",
+  "universita": "Linfociti T e B autoreattivi attraversano la barriera ematoencefalica e attaccano la mielina prodotta dagli oligodendrociti; con il tempo si perdono anche gli assoni. Forme: recidivante-remittente (la più comune), secondariamente progressiva, primariamente progressiva.",
+  "clinica": "Sintomi tipici: neurite ottica, disturbi della sensibilità, debolezza, diplopia, segno di Lhermitte, fatica, peggioramento con il caldo (fenomeno di Uhthoff). Diagnosi con risonanza magnetica (criteri di McDonald) e bande oligoclonali nel liquor. Terapie che modificano la malattia: interferone β, natalizumab, ocrelizumab e altre."
+ },
+ "assone": {
+  "tipo": "struttura",
+  "base": "Il «filo» lungo del neurone che porta il messaggio lontano, fino ad altri neuroni o ai muscoli.",
+  "superiore": "Prolungamento unico del neurone che conduce il potenziale d'azione dal corpo cellulare ai terminali sinaptici. Può essere rivestito di mielina.",
+  "universita": "Inizia con il cono di emergenza e il segmento iniziale. Il trasporto assonale veloce (chinesine verso il terminale, dineine verso il corpo) porta vescicole e organelli lungo i microtubuli. Lunghezza da pochi µm a circa un metro (motoneuroni del midollo lombare).",
+  "clinica": "Nelle neuropatie assonali (diabete, alcol, chemioterapici) si riduce l'ampiezza del segnale all'elettroneurografia più che la velocità. La tossina tetanica e il virus della rabbia risalgono l'assone con il trasporto retrogrado."
+ },
+ "terminale presinaptico": {
+  "tipo": "struttura",
+  "base": "La punta del filo nervoso, dove il neurone conserva il messaggero chimico da passare alla cellula vicina.",
+  "superiore": "Estremità rigonfia dell'assone (bottone sinaptico) che contiene le vescicole con il neurotrasmettitore e forma il lato «che parla» della sinapsi.",
+  "universita": "Contiene molti mitocondri, vescicole sinaptiche e zone attive dove si trovano canali Ca²⁺ voltaggio-dipendenti (tipo N e P/Q) e proteine SNARE. Possiede autorecettori e trasportatori di ricaptazione che regolano la liberazione del neurotrasmettitore.",
+  "clinica": "Nella sindrome miastenica di Lambert-Eaton gli anticorpi colpiscono i canali del Ca²⁺ del terminale: si libera meno acetilcolina."
+ },
+ "vescicole sinaptiche": {
+  "tipo": "struttura",
+  "base": "Piccole bolle nella punta del neurone, piene di messaggero chimico, pronte a scoppiare quando arriva il segnale.",
+  "superiore": "Vescicole del terminale presinaptico che contengono il neurotrasmettitore. Con l'arrivo del Ca²⁺ si fondono con la membrana e liberano il contenuto (esocitosi).",
+  "universita": "Diametro circa 40-50 nm. Il neurotrasmettitore è caricato da trasportatori vescicolari che usano il gradiente di H⁺ creato da una pompa protonica (V-ATPasi). Una vescicola libera un «quanto» di neurotrasmettitore. Dopo l'esocitosi la membrana viene recuperata per endocitosi e le vescicole si riciclano.",
+  "clinica": "La reserpina e la tetrabenazina bloccano il trasportatore vescicolare delle monoamine (VMAT) e svuotano le vescicole."
+ },
+ "proteine SNARE": {
+  "tipo": "enzima",
+  "base": "Proteine che fanno da «cerniera»: agganciano la bolla di messaggero alla membrana e la fanno aprire.",
+  "superiore": "Proteine della vescicola (sinaptobrevina) e della membrana (sintaxina e SNAP-25) che si intrecciano e fanno fondere la vescicola con la membrana durante l'esocitosi.",
+  "universita": "La v-SNARE sinaptobrevina (VAMP) e le t-SNARE sintaxina e SNAP-25 formano un fascio di quattro eliche che avvicina le membrane. La sinaptotagmina è il sensore del Ca²⁺ che fa scattare la fusione. Dopo la fusione NSF (una ATPasi) e α-SNAP separano il complesso.",
+  "clinica": "Le tossine botulinica e tetanica sono proteasi che tagliano le SNARE: la botulinica blocca l'acetilcolina alla placca (paralisi flaccida), la tetanica blocca la liberazione di GABA e glicina negli interneuroni inibitori del midollo (paralisi spastica)."
+ },
+ "fessura sinaptica": {
+  "tipo": "struttura",
+  "base": "Lo spazietto tra due cellule nervose che il messaggero chimico deve attraversare.",
+  "superiore": "Spazio tra la membrana presinaptica e la membrana postsinaptica in una sinapsi chimica. Il neurotrasmettitore lo attraversa per diffusione.",
+  "universita": "Larga circa 20-40 nm (più ampia alla placca motrice, dove contiene una lamina basale con l'acetilcolinesterasi). È tenuta allineata da molecole di adesione (neurexine e neuroligine).",
+  "clinica": ""
+ },
+ "neurotrasmettitore": {
+  "tipo": "molecola",
+  "base": "Il messaggero chimico con cui una cellula nervosa «parla» con la cellula vicina.",
+  "superiore": "Sostanza liberata dal terminale presinaptico che si lega a recettori della cellula postsinaptica e la eccita o la inibisce. Esempi: acetilcolina, glutammato, GABA, glicina, dopamina, noradrenalina, serotonina.",
+  "universita": "Classi: amminoacidi (glutammato, GABA, glicina), amine (acetilcolina, catecolamine, serotonina, istamina), purine (ATP), neuropeptidi (endorfine, sostanza P), gas (NO). L'effetto dipende dal recettore, non dalla molecola: l'acetilcolina eccita il muscolo scheletrico e rallenta il cuore.",
+  "clinica": "Molti farmaci psichiatrici e neurologici agiscono sui neurotrasmettitori: antidepressivi (serotonina, noradrenalina), antipsicotici (dopamina), levodopa nel Parkinson, inibitori della colinesterasi nell'Alzheimer."
+ },
+ "potenziale postsinaptico eccitatorio (PPSE)": {
+  "tipo": "energia",
+  "base": "Una piccola spinta elettrica che avvicina il neurone a mandare il suo messaggio.",
+  "superiore": "Piccola depolarizzazione della membrana postsinaptica dovuta all'ingresso di ioni positivi (soprattutto Na⁺). Avvicina il neurone alla soglia.",
+  "universita": "Nel sistema nervoso centrale è dovuto soprattutto ai recettori AMPA del glutammato; i recettori NMDA (permeabili al Ca²⁺) aggiungono una componente lenta importante per la plasticità (potenziamento a lungo termine). Un singolo PPSE vale di solito meno di 1 mV, quindi servono molti PPSE sommati.",
+  "clinica": "Un eccesso di attività eccitatoria (glutammato) è alla base delle crisi epilettiche e del danno neuronale nell'ictus (eccitotossicità)."
+ },
+ "potenziale postsinaptico inibitorio (PPSI)": {
+  "tipo": "energia",
+  "base": "Un piccolo freno elettrico che allontana il neurone dal mandare il suo messaggio.",
+  "superiore": "Piccola iperpolarizzazione (o stabilizzazione) della membrana postsinaptica dovuta all'ingresso di Cl⁻ o all'uscita di K⁺. Allontana il neurone dalla soglia.",
+  "universita": "Prodotto dal GABA (recettori GABA-A, canali per il Cl⁻; GABA-B, che aprono canali K⁺) e dalla glicina nel midollo spinale e nel tronco encefalico. Anche senza iperpolarizzare, l'apertura dei canali del Cl⁻ «cortocircuita» i PPSE (inibizione da shunt).",
+  "clinica": "La stricnina blocca i recettori della glicina e la tossina tetanica ne impedisce la liberazione: spasmi e rigidità muscolare."
+ },
+ "recettore GABA-A": {
+  "tipo": "enzima",
+  "base": "La «porta del freno» dei neuroni: quando la apre il GABA, il neurone si calma.",
+  "superiore": "Recettore ionotropo del GABA: è un canale per il Cl⁻. Quando si apre, il Cl⁻ entra e il neurone viene inibito. È il principale recettore inibitorio del cervello.",
+  "universita": "Pentamero (di solito 2 α, 2 β, 1 γ) della famiglia dei recettori a cappio di cisteine. Ha siti di legame distinti per GABA, benzodiazepine (tra α e γ), barbiturici, neurosteroidi, etanolo e anestetici generali (propofol).",
+  "clinica": "Bersaglio di benzodiazepine, barbiturici, propofol e alcol. L'astinenza da alcol o da benzodiazepine può dare crisi convulsive. Il flumazenil antagonizza le benzodiazepine."
+ },
+ "sommazione": {
+  "tipo": "energia",
+  "base": "Il neurone «fa la somma» dei messaggi che riceve: se i «sì» sono abbastanza, manda il suo segnale.",
+  "superiore": "Integrazione dei potenziali postsinaptici: spaziale (da sinapsi diverse nello stesso momento) e temporale (impulsi ravvicinati dalla stessa sinapsi). PPSE e PPSI si sommano con segno opposto.",
+  "universita": "Dipende dalle costanti di spazio e di tempo della membrana. Le sinapsi vicine al segmento iniziale (sul corpo cellulare) pesano più di quelle sulle parti lontane dei dendriti. È la base del calcolo neuronale.",
+  "clinica": ""
+ },
+ "recettori metabotropi": {
+  "tipo": "enzima",
+  "base": "Recettori che non aprono una porta subito, ma accendono una catena di segnali dentro la cellula: l'effetto arriva più tardi ma dura di più.",
+  "superiore": "Recettori accoppiati a proteine G. Quando legano il neurotrasmettitore attivano una proteina G, che apre o chiude canali o produce secondi messaggeri. Esempi: muscarinici, adrenergici, dopaminergici, GABA-B.",
+  "universita": "Sette segmenti transmembrana. Gs attiva l'adenilato ciclasi (cAMP), Gi la inibisce, Gq attiva la fosfolipasi C (IP₃ e DAG). Le subunità βγ possono aprire direttamente canali K⁺ (GIRK), come fa l'acetilcolina sul nodo senoatriale.",
+  "clinica": "Sono il bersaglio di circa un terzo dei farmaci: beta-bloccanti, antistaminici, oppioidi, antipsicotici, triptani."
+ },
+ "secondi messaggeri": {
+  "tipo": "piccola",
+  "base": "Piccoli messaggeri interni che ripetono dentro la cellula l'ordine arrivato da fuori.",
+  "superiore": "Molecole prodotte dentro la cellula quando un recettore viene attivato: portano e amplificano il segnale. Esempi: cAMP, cGMP, IP₃, DAG, Ca²⁺.",
+  "universita": "Il cAMP attiva la protein chinasi A; IP₃ libera Ca²⁺ dal reticolo endoplasmatico; DAG attiva la protein chinasi C; il cGMP attiva la protein chinasi G. Ogni recettore attivato produce molte molecole: il segnale si amplifica.",
+  "clinica": "Il sildenafil blocca la fosfodiesterasi 5 e aumenta il cGMP; la tossina del colera mantiene attiva la Gs e fa salire il cAMP nell'intestino (diarrea)."
+ },
+ "trasportatori di ricaptazione": {
+  "tipo": "enzima",
+  "base": "Piccoli «aspirapolvere» che riportano il messaggero chimico dentro il neurone, così il messaggio finisce.",
+  "superiore": "Proteine della membrana del terminale presinaptico (o delle cellule gliali) che riportano il neurotrasmettitore dentro la cellula per riusarlo, e così chiudono il segnale.",
+  "universita": "Cotrasportatori Na⁺/Cl⁻-dipendenti: SERT (serotonina), NET (noradrenalina), DAT (dopamina), GAT (GABA), GlyT (glicina); per il glutammato i trasportatori EAAT, soprattutto negli astrociti.",
+  "clinica": "SSRI e SNRI (antidepressivi) e triciclici bloccano SERT e NET; la cocaina blocca DAT, NET e SERT; le anfetamine invertono il trasporto e fanno uscire dopamina e noradrenalina."
+ },
+ "glicina": {
+  "tipo": "piccola",
+  "smiles": "NCC(=O)O",
+  "base": "Il più piccolo dei mattoncini delle proteine; nel midollo spinale fa anche da messaggero che calma i neuroni.",
+  "superiore": "L'amminoacido più semplice (la catena laterale è un idrogeno). Oltre a far parte delle proteine (molto nel collagene), è un neurotrasmettitore inibitorio del midollo spinale e del tronco encefalico.",
+  "universita": "Il recettore della glicina è un canale per il Cl⁻ (bloccato dalla stricnina). La glicina è anche co-agonista obbligatorio del recettore NMDA del glutammato. Serve per la sintesi di eme (con il succinil-CoA), creatina, purine e glutatione.",
+  "clinica": "Avvelenamento da stricnina: contrazioni muscolari violente. Iperglicinemia non chetotica: malattia metabolica con convulsioni nel neonato."
+ },
+ "tossina botulinica": {
+  "tipo": "molecola",
+  "base": "Un veleno fortissimo prodotto da un batterio nei cibi in scatola mal conservati: blocca i muscoli. In piccolissime dosi si usa anche come medicina.",
+  "superiore": "Neurotossina del Clostridium botulinum. Entra nel terminale del motoneurone e impedisce la liberazione dell'acetilcolina: il muscolo resta paralizzato (paralisi flaccida).",
+  "universita": "È una metalloproteasi a zinco: la catena leggera taglia le proteine SNARE (SNAP-25 per i tipi A ed E, sinaptobrevina per il tipo B). Agisce sulle sinapsi colinergiche periferiche, compresi i gangli autonomi e il parasimpatico. Il recupero richiede la crescita di nuovi terminali (mesi).",
+  "clinica": "Botulismo: paralisi discendente simmetrica che parte dai nervi cranici (diplopia, disfagia), pupille dilatate, coscienza normale; si cura con antitossina e supporto respiratorio. Uso medico: distonie, spasticità, emicrania cronica, iperidrosi, estetica."
+ },
+ "inibitori selettivi della ricaptazione della serotonina (SSRI)": {
+  "tipo": "molecola",
+  "base": "Medicine contro la depressione che lasciano più a lungo nel cervello un messaggero chimico legato all'umore.",
+  "superiore": "Antidepressivi che bloccano il trasportatore della serotonina (SERT): la serotonina resta più a lungo nella fessura sinaptica. Esempi: sertralina, fluoxetina, paroxetina, citalopram, escitalopram.",
+  "universita": "Il blocco di SERT è immediato, ma l'effetto antidepressivo compare dopo 2-4 settimane, legato a modifiche dei recettori (desensibilizzazione degli autorecettori 5-HT1A) e a fenomeni di plasticità. Alcuni (fluoxetina, paroxetina) inibiscono il citocromo CYP2D6.",
+  "clinica": "Usati per depressione, disturbi d'ansia, disturbo ossessivo-compulsivo. Effetti: nausea, disturbi sessuali, iponatriemia (SIADH) negli anziani, aumento del rischio di sanguinamento. Associati ad altri serotoninergici (triptani, tramadolo, linezolid, IMAO) possono dare sindrome serotoninergica."
+ },
+ "benzodiazepine": {
+  "tipo": "molecola",
+  "base": "Medicine che calmano l'ansia e aiutano a dormire, rinforzando il «freno» naturale del cervello.",
+  "superiore": "Farmaci che potenziano l'effetto del GABA sul recettore GABA-A: il canale del Cl⁻ si apre più spesso. Hanno effetto ansiolitico, sedativo, ipnotico, anticonvulsivante e miorilassante. Esempi: diazepam, lorazepam, alprazolam, midazolam.",
+  "universita": "Modulatori allosterici positivi: si legano tra le subunità α e γ e aumentano la frequenza di apertura del canale (i barbiturici ne aumentano la durata). Senza GABA non hanno effetto, quindi da sole sono più sicure dei barbiturici. Antagonista: flumazenil.",
+  "clinica": "Rischio di dipendenza e tolleranza, cadute negli anziani, depressione respiratoria se associate a oppioidi o alcol. Si usano per lo stato di male epilettico (lorazepam, midazolam) e per l'astinenza alcolica. Non vanno sospese di colpo dopo un uso prolungato."
+ },
+ "potenziale di placca": {
+  "tipo": "energia",
+  "base": "La scossa elettrica che il nervo provoca sul muscolo: è sempre abbastanza forte da farlo partire.",
+  "superiore": "Depolarizzazione della membrana della fibra muscolare nella placca motrice, dovuta all'apertura dei recettori nicotinici da parte dell'acetilcolina. Fa nascere il potenziale d'azione muscolare.",
+  "universita": "Ampiezza molto maggiore di quella necessaria per la soglia (fattore di sicurezza): ogni potenziale d'azione del motoneurone produce un potenziale d'azione nella fibra. Il singolo «quanto» di acetilcolina dà il potenziale di placca in miniatura (circa 0,5 mV).",
+  "clinica": "Nella miastenia gravis e con i bloccanti neuromuscolari il fattore di sicurezza si riduce: alcune fibre non si attivano e compare debolezza che peggiora con la ripetizione (risposta decrementale alla stimolazione ripetitiva)."
+ },
+ "recettore delle diidropiridine (DHPR)": {
+  "tipo": "enzima",
+  "base": "Il «sensore» nel tunnel del muscolo che sente arrivare il segnale elettrico e apre il magazzino del calcio.",
+  "superiore": "Canale del calcio di tipo L nella membrana dei tubuli T. Sente la depolarizzazione e attiva il recettore della rianodina del reticolo sarcoplasmatico: è il ponte tra segnale elettrico e contrazione.",
+  "universita": "Nel muscolo scheletrico (Cav1.1) funziona soprattutto come sensore di voltaggio ed è collegato meccanicamente a RyR1: non serve che entri Ca²⁺. Nel cuore (Cav1.2) invece fa entrare Ca²⁺, che a sua volta apre RyR2 (liberazione di Ca²⁺ indotta dal Ca²⁺).",
+  "clinica": "I calcio-antagonisti diidropiridinici (amlodipina, nifedipina) bloccano i canali di tipo L dei vasi. Alcune mutazioni di Cav1.1 causano paralisi periodica ipokaliemica o predispongono all'ipertermia maligna."
+ },
+ "siti dell'actina scoperti": {
+  "tipo": "struttura",
+  "base": "I «ganci» della corda di actina che, quando arriva il calcio, restano liberi: ora la miosina li può afferrare.",
+  "superiore": "Punti di legame per la miosina sul filamento di actina. A riposo sono coperti dalla tropomiosina; il Ca²⁺ legato alla troponina sposta la tropomiosina e li rende disponibili.",
+  "universita": "Modello a tre stati della tropomiosina (bloccato, chiuso, aperto): il Ca²⁺ sulla troponina C la sposta nello stato chiuso, il legame delle prime teste di miosina la spinge nello stato aperto e recluta altre teste (cooperatività).",
+  "clinica": "Mutazioni di troponina e tropomiosina cardiache causano cardiomiopatie (ipertrofica o dilatativa). La troponina cardiaca nel sangue è il marcatore dell'infarto."
+ },
+ "colpo di forza": {
+  "tipo": "energia",
+  "base": "La «tirata» della testa di miosina sulla corda di actina, come un rematore che spinge il remo.",
+  "superiore": "Rotazione della testa della miosina legata all'actina, che fa scorrere il filamento sottile verso il centro del sarcomero. Avviene quando la testa libera il fosfato e poi l'ADP.",
+  "universita": "Ogni colpo sposta il filamento di circa 5-10 nm. Il distacco del Pi innesca la rotazione del braccio di leva; segue il rilascio dell'ADP e la testa resta legata (stato rigor) finché non lega un nuovo ATP. La forza totale dipende da quante teste sono agganciate.",
+  "clinica": ""
+ },
+ "testa della miosina carica": {
+  "tipo": "struttura",
+  "base": "La testa di miosina pronta a tirare di nuovo, come una molla ricaricata grazie all'ATP.",
+  "superiore": "Stato della testa della miosina dopo che ha scisso l'ATP in ADP e fosfato: la testa è staccata dall'actina e piegata in posizione «armata», pronta a un nuovo ciclo.",
+  "universita": "L'ATP legato abbassa l'affinità per l'actina e la testa si stacca; l'idrolisi dell'ATP (attività ATPasica della miosina) riporta il braccio di leva nella posizione di partenza. La velocità di questa ATPasi distingue le fibre rapide (tipo II) da quelle lente (tipo I).",
+  "clinica": "Il mavacamten, inibitore della miosina cardiaca, riduce i ponti attivi nella cardiomiopatia ipertrofica ostruttiva."
+ },
+ "rilasciamento muscolare": {
+  "tipo": "struttura",
+  "base": "Il muscolo smette di tirare e torna morbido, come quando apri il pugno.",
+  "superiore": "Ritorno della fibra muscolare allo stato di riposo: il Ca²⁺ viene riportato nel reticolo sarcoplasmatico, la tropomiosina ricopre l'actina e i ponti trasversali non si formano più. Richiede ATP.",
+  "universita": "Condizioni: fine degli impulsi del motoneurone, degradazione dell'acetilcolina da parte dell'acetilcolinesterasi, recupero del Ca²⁺ con la pompa SERCA (2 Ca²⁺ per ATP), immagazzinato dalla calsequestrina. Nel cuore partecipano anche lo scambiatore Na⁺/Ca²⁺ e il fosfolambano, che regola la SERCA2a.",
+  "clinica": "Nella miotonia (per esempio distrofia miotonica) il rilasciamento è lento: la mano fatica ad aprirsi dopo aver stretto. Il dantrolene blocca RyR1 e fa rilasciare il muscolo nell'ipertermia maligna."
+ },
+ "miastenia gravis": {
+  "tipo": "struttura",
+  "base": "Una malattia in cui i muscoli si stancano molto in fretta, perché le difese del corpo rovinano il punto di contatto tra nervo e muscolo.",
+  "superiore": "Malattia autoimmune: anticorpi contro il recettore nicotinico dell'acetilcolina della placca motrice. Meno recettori funzionanti: debolezza muscolare che peggiora con lo sforzo e migliora con il riposo.",
+  "universita": "Anticorpi anti-recettore dell'acetilcolina (circa l'85% dei casi generalizzati) o anti-MuSK; bloccano e distruggono i recettori con il complemento. Associata a iperplasia del timo o timoma. Stimolazione nervosa ripetitiva: risposta decrementale.",
+  "clinica": "Ptosi palpebrale e diplopia che peggiorano a fine giornata, debolezza bulbare e degli arti; crisi miastenica con insufficienza respiratoria. Terapia: inibitori della colinesterasi (piridostigmina), corticosteroidi e immunosoppressori, timectomia, immunoglobuline o plasmaferesi nelle crisi. Molti farmaci (aminoglicosidi, fluorochinoloni, magnesio) la peggiorano."
+ },
+ "ipertermia maligna": {
+  "tipo": "struttura",
+  "base": "Una reazione rara e pericolosa ad alcuni farmaci per l'anestesia: i muscoli si irrigidiscono e la temperatura sale moltissimo.",
+  "superiore": "Malattia ereditaria in cui alcuni anestetici fanno uscire troppo Ca²⁺ dal reticolo sarcoplasmatico: i muscoli si contraggono senza sosta, consumano tanto ATP e producono molto calore.",
+  "universita": "Di solito dovuta a mutazioni del recettore della rianodina (RyR1), più raramente di Cav1.1 (DHPR); trasmissione autosomica dominante. Scatenata dagli anestetici alogenati volatili (sevoflurano, desflurano) e dalla succinilcolina. Il muscolo diventa ipermetabolico: più CO₂, acidosi, rabdomiolisi, iperkaliemia.",
+  "clinica": "Segni precoci: aumento della CO₂ espirata, tachicardia, rigidità (anche dei masseteri), poi febbre altissima. Terapia: sospendere l'anestetico, dantrolene endovena, raffreddamento, correzione di iperkaliemia e acidosi. Nei pazienti a rischio si usano anestetici non scatenanti."
+ },
+ "bloccanti neuromuscolari": {
+  "tipo": "molecola",
+  "base": "Medicine usate durante gli interventi per rilassare completamente i muscoli; poi il paziente va aiutato a respirare.",
+  "superiore": "Farmaci che bloccano la trasmissione alla placca motrice agendo sul recettore nicotinico. Si usano in anestesia per l'intubazione e la chirurgia. Esempi: rocuronio, vecuronio, cisatracurio, succinilcolina.",
+  "universita": "Non depolarizzanti (curari: rocuronio, vecuronio, cisatracurio): antagonisti competitivi del recettore; si annullano con gli inibitori della colinesterasi (neostigmina, con atropina) o, per rocuronio e vecuronio, con il sugammadex. Depolarizzanti (succinilcolina): attivano il recettore e mantengono la membrana depolarizzata, così i canali del Na⁺ restano inattivati (fascicolazioni e poi paralisi).",
+  "clinica": "La succinilcolina può dare iperkaliemia grave (ustionati, immobilizzati, malattie neuromuscolari), scatenare l'ipertermia maligna e durare a lungo in chi ha deficit della pseudocolinesterasi. Non danno sedazione né analgesia: il paziente deve essere anestetizzato."
+ },
+ "sistole atriale": {
+  "tipo": "struttura",
+  "base": "Gli atri, le stanze di sopra del cuore, si stringono e danno l'ultima spinta di sangue ai ventricoli.",
+  "superiore": "Contrazione degli atri alla fine della diastole ventricolare. Completa il riempimento dei ventricoli. Corrisponde all'onda P dell'ECG.",
+  "universita": "A riposo aggiunge circa il 20% del volume telediastolico; il contributo cresce quando la frequenza è alta (diastole breve) o il ventricolo è rigido. Nella curva della pressione atriale produce l'onda «a».",
+  "clinica": "Nella fibrillazione atriale la sistole atriale manca: la gittata cala, soprattutto in chi ha un ventricolo rigido (ipertrofia, stenosi aortica). Un quarto tono (S4) indica un atrio che spinge contro un ventricolo poco distensibile."
+ },
+ "eccitazione dei ventricoli": {
+  "tipo": "energia",
+  "base": "Il segnale elettrico del battito arriva ai ventricoli e li prepara a stringersi.",
+  "superiore": "Depolarizzazione dei ventricoli: l'impulso passa dal nodo atrioventricolare al fascio di His, alle sue branche e alle fibre di Purkinje, e si diffonde a tutto il miocardio ventricolare. Corrisponde al complesso QRS dell'ECG.",
+  "universita": "L'eccitazione procede dal setto (da sinistra a destra) verso l'apice e poi alla base, dall'endocardio all'epicardio. Il QRS normale dura meno di 0,12 s; l'intervallo PR (conduzione atrioventricolare) va da 0,12 a 0,20 s.",
+  "clinica": "Un blocco di branca allarga il QRS; i blocchi atrioventricolari allungano il PR o interrompono il passaggio dell'impulso (fino al blocco completo)."
+ },
+ "contrazione isovolumetrica": {
+  "tipo": "struttura",
+  "base": "Il ventricolo comincia a stringersi con tutte le porte chiuse: la pressione sale ma il sangue non esce ancora.",
+  "superiore": "Prima fase della sistole ventricolare: le valvole atrioventricolari si sono chiuse e quelle semilunari non si sono ancora aperte. La pressione sale rapidamente, il volume resta uguale.",
+  "universita": "Dura circa 0,02-0,03 s. Termina quando la pressione del ventricolo sinistro supera quella diastolica dell'aorta (circa 80 mmHg) e quella del destro supera quella dell'arteria polmonare (circa 8-10 mmHg). La velocità di salita della pressione (dP/dt) misura la contrattilità.",
+  "clinica": ""
+ },
+ "eiezione rapida": {
+  "tipo": "struttura",
+  "base": "Le porte d'uscita si aprono e il sangue schizza fuori dal cuore nelle grandi arterie.",
+  "superiore": "Fase della sistole in cui le valvole aortica e polmonare sono aperte e il sangue esce velocemente dai ventricoli. La pressione arriva al massimo (circa 120 mmHg nel ventricolo sinistro e nell'aorta).",
+  "universita": "Nel primo terzo del periodo di eiezione esce circa il 70% della gittata sistolica. La pressione del ventricolo supera di poco quella dell'aorta. Corrisponde al tratto ST dell'ECG.",
+  "clinica": "Nella stenosi aortica c'è una grande differenza di pressione tra ventricolo e aorta (gradiente) e si sente un soffio sistolico eiettivo."
+ },
+ "eiezione lenta": {
+  "tipo": "struttura",
+  "base": "Il sangue continua a uscire dal cuore, ma sempre più piano.",
+  "superiore": "Ultima parte della sistole: il ventricolo comincia a rilasciarsi, la pressione cala e il sangue esce più lentamente. Coincide con l'onda T dell'ECG (ripolarizzazione dei ventricoli).",
+  "universita": "Negli ultimi due terzi dell'eiezione esce circa il 30% della gittata sistolica. Il sangue continua a uscire anche quando la pressione del ventricolo è appena sotto quella dell'aorta, grazie alla sua inerzia.",
+  "clinica": ""
+ },
+ "rilasciamento isovolumetrico": {
+  "tipo": "struttura",
+  "base": "Il ventricolo si rilassa con tutte le porte chiuse: la pressione dentro crolla.",
+  "superiore": "Prima fase della diastole: le valvole semilunari si sono chiuse (secondo tono) e quelle atrioventricolari non si sono ancora aperte. La pressione scende, il volume resta quello telesistolico.",
+  "universita": "Dura circa 0,03-0,06 s. Il rilasciamento attivo richiede ATP (pompa SERCA2a). La chiusura della valvola aortica lascia nella curva della pressione aortica l'incisura dicrota.",
+  "clinica": "Nella disfunzione diastolica (ipertrofia, ischemia, anziani) il rilasciamento è lento: è uno dei meccanismi dello scompenso a frazione d'eiezione conservata."
+ },
+ "riempimento rapido": {
+  "tipo": "struttura",
+  "base": "Le porte tra le stanze del cuore si aprono e il sangue entra di corsa nei ventricoli.",
+  "superiore": "Fase della diastole in cui le valvole mitrale e tricuspide si aprono e il sangue accumulato negli atri entra velocemente nei ventricoli. Avviene nel primo terzo della diastole.",
+  "universita": "Il ventricolo che si rilascia «aspira» sangue (suzione diastolica). Gran parte del riempimento ventricolare avviene in questa fase; all'ecocardiogramma Doppler corrisponde all'onda E del flusso mitralico.",
+  "clinica": "Un terzo tono (S3) in questa fase è normale nei bambini e nei giovani, ma negli adulti indica di solito un ventricolo sovraccarico (scompenso cardiaco)."
+ },
+ "diastasi": {
+  "tipo": "struttura",
+  "base": "Una pausa a metà della fase di riposo del cuore: il sangue entra nei ventricoli lentamente.",
+  "superiore": "Fase centrale della diastole: le pressioni di atri e ventricoli sono quasi uguali e il riempimento è lento, alimentato solo dal sangue che torna dalle vene.",
+  "universita": "È la fase che si accorcia di più quando la frequenza cardiaca aumenta: a frequenze alte scompare quasi del tutto e il riempimento dipende di più dal riempimento rapido e dalla sistole atriale.",
+  "clinica": ""
+ },
+ "legge di Frank-Starling": {
+  "tipo": "struttura",
+  "base": "Più sangue entra nel cuore, più forte il cuore lo spinge fuori: come un elastico che, più lo tiri, più scatta forte.",
+  "superiore": "Legge del cuore: entro certi limiti, più il ventricolo si riempie in diastole (precarico), più forte si contrae e più sangue espelle. Così il cuore pompa tutto il sangue che riceve e i due ventricoli restano in equilibrio.",
+  "universita": "Base cellulare: lo stiramento porta la lunghezza del sarcomero vicino all'ottimo (circa 2,2 µm) e aumenta la sensibilità al Ca²⁺ dei miofilamenti. Si rappresenta con le curve di funzione ventricolare (gittata in funzione della pressione di riempimento); l'inotropismo positivo sposta la curva verso l'alto.",
+  "clinica": "Nello scompenso la curva è spostata in basso e appiattita: aumentare il riempimento dà poca gittata in più ma congestione (edema polmonare). Per questo si usano i diuretici per ridurre il precarico."
+ },
+ "gittata sistolica": {
+  "tipo": "struttura",
+  "base": "La quantità di sangue che il cuore spinge fuori a ogni battito, circa come una tazzina.",
+  "superiore": "Volume di sangue espulso da un ventricolo a ogni battito: volume telediastolico − volume telesistolico. A riposo circa 70 mL. Moltiplicata per la frequenza dà la gittata cardiaca.",
+  "universita": "Dipende da precarico (riempimento), postcarico (pressione contro cui il ventricolo spinge) e contrattilità. La frazione d'eiezione (gittata sistolica / volume telediastolico) è normalmente circa 55-70%.",
+  "clinica": "La frazione d'eiezione all'ecocardiogramma classifica lo scompenso: ridotta (≤40%), lievemente ridotta (41-49%) o conservata (≥50%)."
+ },
+ "frequenza cardiaca": {
+  "tipo": "struttura",
+  "base": "Quante volte batte il cuore in un minuto: a riposo, in un adulto, di solito tra 60 e 100 volte.",
+  "superiore": "Numero di battiti al minuto, deciso dal nodo senoatriale e regolato dal sistema nervoso autonomo: il simpatico la aumenta, il parasimpatico (vago) la riduce.",
+  "universita": "Bradicardia sotto 60 e tachicardia sopra 100 battiti al minuto. Il simpatico aumenta la pendenza della depolarizzazione diastolica del nodo senoatriale (corrente If e Ca²⁺); il vago la riduce e iperpolarizza (canali K⁺ attivati dall'acetilcolina). Senza innervazione il nodo batterebbe più veloce del normale riposo: a riposo prevale il vago.",
+  "clinica": "L'ivabradina blocca la corrente If e rallenta il cuore senza ridurre la forza. Beta-bloccanti, verapamil, diltiazem e digossina rallentano la frequenza; l'atropina la aumenta nella bradicardia."
+ },
+ "recettori β1": {
+  "tipo": "enzima",
+  "base": "Le «serrature» del cuore e del rene che, quando ricevono l'adrenalina, fanno battere il cuore più forte e veloce.",
+  "superiore": "Recettori adrenergici legati a proteine G, soprattutto nel cuore e nelle cellule iuxtaglomerulari del rene. Attivati da noradrenalina e adrenalina: aumentano frequenza, forza e velocità di conduzione del cuore e la liberazione di renina.",
+  "universita": "Accoppiati a Gs → adenilato ciclasi → cAMP → protein chinasi A, che fosforila i canali Ca²⁺ di tipo L, il fosfolambano (rilasciamento più rapido) e la troponina I. Effetti: cronotropo, inotropo, dromotropo e lusitropo positivi.",
+  "clinica": "Bersaglio dei beta-bloccanti (bisoprololo, metoprololo) e degli inotropi come la dobutamina. Usati nello scompenso, nella cardiopatia ischemica, nelle tachiaritmie e nell'ipertensione."
+ },
+ "nervo vago": {
+  "tipo": "struttura",
+  "base": "Un lungo nervo che scende dal cervello agli organi del torace e della pancia: fa rallentare il cuore e aiuta la digestione.",
+  "superiore": "Decimo nervo cranico, principale nervo del parasimpatico. Rallenta il cuore, stimola la digestione e porta al cervello informazioni dagli organi interni (anche dai barocettori dell'arco aortico).",
+  "universita": "Le fibre cardiache partono dal nucleo ambiguo e dal nucleo motore dorsale e liberano acetilcolina sui recettori muscarinici M2 dei nodi senoatriale e atrioventricolare (apertura di canali K⁺, riduzione della corrente If e del cAMP). Circa l'80% delle sue fibre è sensitivo.",
+  "clinica": "Le manovre vagali (Valsalva, massaggio del seno carotideo) possono interrompere una tachicardia sopraventricolare. Un'eccessiva risposta vagale dà la sincope vasovagale. L'atropina blocca gli effetti del vago."
+ },
+ "primo tono cardiaco": {
+  "tipo": "struttura",
+  "base": "Il primo suono del battito, il «tum» del «tum-ta», quando si chiudono le porte tra atri e ventricoli.",
+  "superiore": "Suono dovuto alla chiusura delle valvole mitrale e tricuspide all'inizio della sistole ventricolare. Si sente meglio all'apice del cuore.",
+  "universita": "Prodotto dalle vibrazioni dei lembi valvolari, delle corde tendinee e del sangue. Coincide con il QRS e con il polso carotideo. È più forte quando i lembi sono ancora molto aperti al momento della chiusura (PR corto, stenosi mitralica).",
+  "clinica": "Un primo tono rinforzato si trova nella stenosi mitralica e nella tachicardia; ridotto nell'insufficienza mitralica e nel PR lungo; di intensità variabile nella dissociazione atrioventricolare."
+ },
+ "secondo tono cardiaco": {
+  "tipo": "struttura",
+  "base": "Il secondo suono del battito, il «ta» del «tum-ta», quando si chiudono le porte di uscita del cuore.",
+  "superiore": "Suono dovuto alla chiusura delle valvole aortica e polmonare all'inizio della diastole. Si sente meglio alla base del cuore.",
+  "universita": "Ha due componenti, aortica (A2) e polmonare (P2). In inspirazione torna più sangue al cuore destro e P2 ritarda: lo sdoppiamento fisiologico aumenta in inspirazione.",
+  "clinica": "Sdoppiamento fisso nel difetto interatriale; sdoppiamento paradosso nel blocco di branca sinistra e nella stenosi aortica grave; P2 rinforzato nell'ipertensione polmonare."
+ },
+ "soffi cardiaci": {
+  "tipo": "struttura",
+  "base": "Rumori «soffiati» del cuore causati dal sangue che passa in modo disordinato, spesso per una porta che non si apre o non si chiude bene.",
+  "superiore": "Suoni prodotti dal flusso turbolento del sangue attraverso valvole ristrette (stenosi) o che non chiudono (insufficienza), o attraverso comunicazioni anomale. Possono anche essere innocenti, soprattutto nei bambini.",
+  "universita": "Si descrivono per fase (sistolico, diastolico, continuo), sede, irradiazione, intensità (scala di Levine da 1 a 6) e forma. Sistolici: stenosi aortica (eiettivo, irradiato alle carotidi), insufficienza mitralica (olosistolico, irradiato all'ascella). Diastolici: insufficienza aortica, stenosi mitralica.",
+  "clinica": "Un soffio diastolico è sempre da studiare. L'esame per confermare è l'ecocardiogramma."
+ },
+ "elettrocardiogramma (ECG)": {
+  "tipo": "struttura",
+  "base": "Un esame con piccoli adesivi sul petto che disegna su un foglio i segnali elettrici del cuore.",
+  "superiore": "Registrazione dell'attività elettrica del cuore dalla superficie del corpo. Onda P: depolarizzazione degli atri; complesso QRS: depolarizzazione dei ventricoli; onda T: ripolarizzazione dei ventricoli.",
+  "universita": "ECG standard a 12 derivazioni (6 periferiche, 6 precordiali). Valori normali: PR 0,12-0,20 s, QRS < 0,12 s, QT corretto per la frequenza di solito sotto circa 0,44-0,46 s. Carta a 25 mm/s: un quadretto piccolo = 0,04 s.",
+  "clinica": "Esame chiave per aritmie, blocchi, infarto (sopraslivellamento del tratto ST, onde Q), ipertrofia, disturbi del potassio (onde T alte e appuntite nell'iperkaliemia) e farmaci che allungano il QT."
+ },
+ "antiaritmici": {
+  "tipo": "molecola",
+  "base": "Medicine che aiutano il cuore a battere con un ritmo regolare.",
+  "superiore": "Farmaci che correggono o prevengono le aritmie agendo sui canali ionici o sui recettori del cuore. Classificazione di Vaughan Williams in quattro classi principali.",
+  "universita": "Classe I: bloccanti dei canali del Na⁺ (Ia chinidina, Ib lidocaina, Ic flecainide e propafenone). Classe II: beta-bloccanti. Classe III: bloccanti dei canali del K⁺ (amiodarone, sotalolo, dronedarone), allungano il potenziale d'azione. Classe IV: calcio-antagonisti non diidropiridinici (verapamil, diltiazem). Altri: digossina, adenosina, ivabradina.",
+  "clinica": "Possono essi stessi causare aritmie (proaritmia): la classe Ic è controindicata dopo un infarto o con cardiopatia strutturale; classe III e Ia allungano il QT (torsioni di punta). L'amiodarone dà problemi a tiroide, polmone, fegato e pelle. L'adenosina interrompe le tachicardie da rientro nel nodo atrioventricolare."
+ },
+ "barocettori": {
+  "tipo": "struttura",
+  "base": "Piccoli sensori nelle grandi arterie del collo e del petto che sentono quanto è alta la pressione del sangue.",
+  "superiore": "Recettori di stiramento nella parete del seno carotideo e dell'arco aortico. Quando la pressione sale si stirano e mandano più impulsi al bulbo; quando scende ne mandano meno.",
+  "universita": "Terminazioni libere sensibili allo stiramento, più alla variazione rapida che al valore costante. I barocettori carotidei inviano segnali attraverso il nervo di Hering (glossofaringeo), quelli aortici attraverso il vago. Rispondono soprattutto tra circa 60 e 180 mmHg. In 1-2 giorni si adattano a un nuovo livello di pressione, quindi non correggono l'ipertensione a lungo termine.",
+  "clinica": "Ipersensibilità del seno carotideo: sincope quando si gira la testa o si stringe il colletto. Il massaggio del seno carotideo rallenta il cuore. Con l'età e l'aterosclerosi i barocettori funzionano peggio (ipotensione ortostatica)."
+ },
+ "segnali dei barocettori": {
+  "tipo": "energia",
+  "base": "I messaggi che i sensori della pressione mandano continuamente al cervello: più la pressione è alta, più messaggi.",
+  "superiore": "Impulsi nervosi che dai barocettori arrivano al bulbo lungo il glossofaringeo e il vago. La loro frequenza aumenta con la pressione: è il dato che il cervello usa per regolarla.",
+  "universita": "La frequenza di scarica segue la pressione battito per battito ed è più alta in sistole. Sono segnali «frenanti»: più impulsi inibiscono il centro vasomotore e attivano il vago. Se le vie si interrompono (denervazione) la pressione diventa molto variabile.",
+  "clinica": ""
+ },
+ "centro cardiovascolare del bulbo": {
+  "tipo": "struttura",
+  "base": "Una piccola centrale nel cervello, appena sopra il collo, che decide quanto veloce batte il cuore e quanto stretti sono i vasi.",
+  "superiore": "Insieme di nuclei del bulbo (tronco encefalico) che regolano cuore e vasi attraverso il sistema nervoso autonomo: un'area aumenta il simpatico (vasomotrice), un'altra attiva il vago (cardioinibitrice).",
+  "universita": "Comprende il nucleo del tratto solitario (ingresso), il bulbo ventrolaterale caudale (inibitorio) e rostrale (RVLM, che manda segnali ai neuroni pregangliari simpatici del midollo toracolombare), il nucleo ambiguo e il nucleo motore dorsale del vago. Riceve anche segnali dall'ipotalamo, dalla corteccia e dai chemocettori.",
+  "clinica": "Lesioni del tronco encefalico o un aumento della pressione intracranica alterano la regolazione: la triade di Cushing (ipertensione, bradicardia, respiro irregolare) segnala un'ernia cerebrale imminente."
+ },
+ "nucleo del tratto solitario": {
+  "tipo": "struttura",
+  "base": "La «porta d'ingresso» nel cervello per i messaggi che arrivano dagli organi interni, come quelli della pressione.",
+  "superiore": "Nucleo del bulbo che riceve le informazioni sensitive dagli organi interni attraverso il glossofaringeo e il vago: barocettori, chemocettori, gusto, polmoni, intestino.",
+  "universita": "Nel riflesso barocettivo i neuroni del nucleo del tratto solitario, con il glutammato, eccitano il bulbo ventrolaterale caudale (che inibisce con il GABA il bulbo rostrale e quindi il simpatico) e i neuroni vagali del nucleo ambiguo. Partecipa anche ai riflessi del respiro, della tosse e del vomito.",
+  "clinica": ""
+ },
+ "attivazione del simpatico": {
+  "tipo": "struttura",
+  "base": "Il corpo si mette in «modalità emergenza»: il cuore accelera, i vasi si stringono, la pressione sale.",
+  "superiore": "Aumento dell'attività della parte simpatica del sistema nervoso autonomo. Libera noradrenalina su cuore e vasi e adrenalina dalla midollare del surrene: aumentano frequenza, forza del cuore e resistenze dei vasi.",
+  "universita": "Neuroni pregangliari nella colonna intermediolaterale del midollo toracolombare (T1-L2), sinapsi nicotinica nei gangli, neurotrasmettitore postgangliare noradrenalina (recettori α1 vasali, β1 cardiaci e renali). Nel riflesso barocettivo si associa alla riduzione del tono vagale.",
+  "clinica": "Un'attivazione cronica del simpatico peggiora lo scompenso cardiaco e l'ipertensione: per questo si usano i beta-bloccanti. Nel feocromocitoma un eccesso di catecolamine dà crisi di ipertensione, cefalea, sudorazione e palpitazioni."
+ },
+ "aumento della gittata cardiaca": {
+  "tipo": "struttura",
+  "base": "Il cuore pompa più sangue ogni minuto, battendo più spesso e più forte.",
+  "superiore": "Aumento del volume di sangue pompato dal cuore in un minuto (gittata cardiaca = frequenza × gittata sistolica). A riposo circa 5 L/min; durante uno sforzo intenso può aumentare di molte volte.",
+  "universita": "Mediato da effetti cronotropi e inotropi positivi (recettori β1) e da un maggior ritorno venoso (venocostrizione, legge di Frank-Starling). Nell'atleta allenato può superare 30 L/min, soprattutto per una gittata sistolica più grande.",
+  "clinica": "La gittata cardiaca si misura con l'ecocardiogramma, la termodiluizione (catetere di Swan-Ganz) o metodi meno invasivi. Una gittata bassa con resistenze alte è tipica dello shock cardiogeno."
+ },
+ "recettori α1": {
+  "tipo": "enzima",
+  "base": "Le «serrature» dei vasi sanguigni che, quando ricevono la noradrenalina, fanno stringere i vasi.",
+  "superiore": "Recettori adrenergici della muscolatura liscia dei vasi (e di altri organi). Attivati soprattutto dalla noradrenalina: fanno contrarre il muscolo liscio e stringono arteriole e vene.",
+  "universita": "Accoppiati a Gq → fosfolipasi C → IP₃ e DAG → aumento del Ca²⁺ nella cellula muscolare liscia. Presenti anche nel muscolo dilatatore della pupilla (midriasi), nello sfintere della vescica e nella prostata.",
+  "clinica": "Gli agonisti α1 (fenilefrina, noradrenalina) si usano nell'ipotensione e nello shock. Gli α1-bloccanti (doxazosina, tamsulosina) si usano nell'ipertrofia prostatica e talvolta nell'ipertensione; danno ipotensione ortostatica alla prima dose."
+ },
+ "midollare del surrene": {
+  "tipo": "struttura",
+  "base": "La parte interna delle ghiandole sopra i reni che, quando c'è un pericolo, versa adrenalina nel sangue.",
+  "superiore": "Parte centrale del surrene, formata da cellule cromaffini. È un ganglio simpatico modificato: stimolata dalle fibre simpatiche libera nel sangue adrenalina (circa 80%) e noradrenalina.",
+  "universita": "Le cellule cromaffini ricevono fibre pregangliari (acetilcolina, recettori nicotinici). La conversione di noradrenalina in adrenalina (feniletanolamina N-metiltransferasi) è indotta dal cortisolo che arriva dalla corticale attraverso il circolo portale del surrene.",
+  "clinica": "Il feocromocitoma è un tumore delle cellule cromaffini che produce catecolamine: ipertensione (spesso a crisi), cefalea, sudorazione, palpitazioni. Diagnosi con le metanefrine nel plasma o nelle urine."
+ },
+ "aumento del volume del sangue": {
+  "tipo": "struttura",
+  "base": "Nel sangue c'è più liquido: i vasi sono più pieni e la pressione sale.",
+  "superiore": "Aumento del volume del plasma dovuto al riassorbimento di sodio e acqua da parte del rene e all'acqua bevuta. Fa tornare più sangue al cuore e aumenta la gittata cardiaca.",
+  "universita": "Il rene regola il volume del liquido extracellulare attraverso il bilancio del sodio: aldosterone, angiotensina II e simpatico riducono l'escrezione di Na⁺, l'ADH trattiene acqua libera. È il meccanismo di controllo della pressione a lungo termine (natriuresi da pressione, modello di Guyton).",
+  "clinica": "Un eccesso di volume (insufficienza renale, scompenso, eccesso di aldosterone) dà ipertensione ed edemi; si tratta con diuretici e poco sale."
+ },
+ "pressione arteriosa alta": {
+  "tipo": "struttura",
+  "base": "Quando il sangue spinge troppo forte sulle pareti delle arterie.",
+  "superiore": "Aumento della pressione nelle arterie. Se è stabile nel tempo (valori ripetuti di almeno 140/90 mmHg in ambulatorio) si parla di ipertensione arteriosa.",
+  "universita": "Un aumento acuto è corretto in pochi secondi dal riflesso barocettivo (più vago, meno simpatico) e, nel tempo, dal rene, che elimina più sodio e acqua (natriuresi da pressione) e libera meno renina. Le cellule degli atri stirate liberano ANP.",
+  "clinica": "Valori molto alti con danno d'organo (encefalopatia, edema polmonare, dissezione aortica, danno renale) sono un'emergenza ipertensiva."
+ },
+ "distensione degli atri": {
+  "tipo": "struttura",
+  "base": "Quando nel cuore arriva troppo sangue, le stanze di sopra (gli atri) si gonfiano come palloncini.",
+  "superiore": "Stiramento della parete degli atri quando aumenta il volume di sangue che torna al cuore. È un segnale di «troppo volume» e fa liberare il peptide natriuretico atriale.",
+  "universita": "I recettori di stiramento atriali (a bassa pressione) riducono anche la liberazione di ADH e la scarica simpatica verso il rene, e aumentano la frequenza (riflesso di Bainbridge).",
+  "clinica": "Nello scompenso cardiaco gli atri e i ventricoli distesi liberano peptidi natriuretici: il BNP e l'NT-proBNP nel sangue servono a diagnosticarlo e seguirlo."
+ },
+ "eliminazione di sodio e acqua": {
+  "tipo": "struttura",
+  "base": "I reni buttano fuori più sale e più acqua con la pipì, così nel sangue c'è meno liquido.",
+  "superiore": "Aumento dell'escrezione renale di sodio (natriuresi) e di acqua (diuresi). Riduce il volume del sangue e quindi la pressione.",
+  "universita": "Favorita da ANP (aumenta la filtrazione e riduce il riassorbimento di Na⁺ nel dotto collettore), dalla pressione alta stessa (natriuresi da pressione), dalla riduzione di angiotensina II e aldosterone e dai diuretici.",
+  "clinica": ""
+ },
+ "peptide natriuretico atriale (ANP)": {
+  "tipo": "molecola",
+  "base": "Un ormone prodotto dal cuore quando è troppo pieno: dice ai reni di buttare fuori sale e acqua.",
+  "superiore": "Ormone peptidico liberato dalle cellule muscolari degli atri quando vengono stirate. Fa eliminare sodio e acqua, allarga i vasi e frena renina, aldosterone e ADH: abbassa la pressione.",
+  "universita": "Peptide di 28 aminoacidi. Agisce sul recettore NPR-A, che è una guanilato ciclasi (aumenta il cGMP). Aumenta la filtrazione glomerulare (dilata l'afferente, stringe l'efferente) e riduce il riassorbimento di Na⁺ nel dotto collettore. È degradato dalla neprilisina. Il BNP, simile, è prodotto soprattutto dai ventricoli.",
+  "clinica": "BNP e NT-proBNP alti indicano scompenso cardiaco. Il sacubitril inibisce la neprilisina e aumenta i peptidi natriuretici (associato al valsartan nello scompenso)."
+ },
+ "diuretici": {
+  "tipo": "molecola",
+  "base": "Medicine che fanno fare più pipì: il corpo perde sale e acqua e la pressione scende.",
+  "superiore": "Farmaci che aumentano l'eliminazione di sodio e acqua con l'urina bloccando il riassorbimento in diversi tratti del nefrone. Si usano per ipertensione, scompenso cardiaco ed edemi.",
+  "universita": "Classi: diuretici dell'ansa (furosemide, su NKCC2), tiazidici (idroclorotiazide, clortalidone, su NCC), risparmiatori di potassio (spironolattone ed eplerenone sul recettore dell'aldosterone; amiloride e triamterene su ENaC), inibitori dell'anidrasi carbonica (acetazolamide), osmotici (mannitolo). Quasi tutti, tranne lo spironolattone, raggiungono il loro bersaglio dal lume del tubulo dopo essere stati secreti nel tubulo prossimale.",
+  "clinica": "Effetti da controllare: disidratazione, alterazioni di sodio e potassio (ipokaliemia con ansa e tiazidici, iperkaliemia con i risparmiatori), peggioramento della funzione renale, gotta."
+ },
+ "calcio-antagonisti": {
+  "tipo": "molecola",
+  "base": "Medicine per la pressione alta che fanno rilassare e allargare i vasi sanguigni.",
+  "superiore": "Farmaci che bloccano i canali del calcio di tipo L. Diidropiridine (amlodipina, nifedipina): agiscono soprattutto sui vasi. Non diidropiridinici (verapamil, diltiazem): agiscono anche sul cuore e lo rallentano.",
+  "universita": "Riducendo l'ingresso di Ca²⁺ nella muscolatura liscia dei vasi la rilasciano (vasodilatazione arteriolare, poco effetto sulle vene). Verapamil e diltiazem rallentano il nodo senoatriale e il nodo atrioventricolare e riducono la contrattilità (antiaritmici di classe IV).",
+  "clinica": "Usati per ipertensione, angina e (verapamil, diltiazem) per controllare la frequenza nella fibrillazione atriale. Effetti: edemi alle caviglie, vampate e cefalea (diidropiridine); bradicardia, blocchi, stitichezza (verapamil). Verapamil e diltiazem sono controindicati nello scompenso con frazione d'eiezione ridotta."
+ },
+ "beta-bloccanti": {
+  "tipo": "molecola",
+  "base": "Medicine che fanno battere il cuore più piano e con meno forza, così si affatica meno e la pressione scende.",
+  "superiore": "Antagonisti dei recettori β-adrenergici. Riducono frequenza e forza del cuore e la liberazione di renina. Esempi: bisoprololo, metoprololo, atenololo (selettivi β1), propranololo (non selettivo), carvedilolo (anche α1).",
+  "universita": "Effetti cronotropo, inotropo e dromotropo negativi; riducono il consumo di ossigeno del cuore. Antiaritmici di classe II. Nello scompenso cronico, iniziati a basse dosi, riducono la mortalità (bisoprololo, metoprololo succinato, carvedilolo, nebivololo).",
+  "clinica": "Indicati in cardiopatia ischemica, scompenso a frazione d'eiezione ridotta, fibrillazione atriale, ipertensione; il propranololo anche per emicrania, tremore essenziale, ipertensione portale e tireotossicosi. Attenzione: asma (soprattutto non selettivi), bradicardia e blocchi, mascheramento dei sintomi dell'ipoglicemia; non sospendere di colpo."
+ },
+ "ipertensione arteriosa": {
+  "tipo": "struttura",
+  "base": "Una malattia in cui la pressione del sangue resta troppo alta per anni: non fa male, ma col tempo rovina cuore, cervello, reni e occhi.",
+  "superiore": "Pressione arteriosa stabilmente elevata (in ambulatorio almeno 140/90 mmHg). Nella maggior parte dei casi non ha una causa unica (essenziale o primaria); in una minoranza è dovuta a un'altra malattia (secondaria).",
+  "universita": "Meccanismi: aumento delle resistenze periferiche, rigidità delle arterie, ritenzione di sodio da parte del rene (spostamento della curva di natriuresi da pressione), attivazione di simpatico e renina-angiotensina. Cause secondarie: iperaldosteronismo primario, malattie renali e stenosi dell'arteria renale, apnee notturne, feocromocitoma, sindrome di Cushing, coartazione aortica, farmaci (FANS, contraccettivi).",
+  "clinica": "Fattore di rischio principale per ictus, infarto, scompenso, insufficienza renale e fibrillazione atriale. Terapia: meno sale, peso, attività fisica, poi farmaci (ACE-inibitori o sartani, calcio-antagonisti, diuretici tiazidici, spesso associati; beta-bloccanti se ci sono altre indicazioni)."
+ },
+ "ipotensione ortostatica": {
+  "tipo": "struttura",
+  "base": "Quando ti alzi in piedi di scatto e ti gira la testa o vedi nero: la pressione scende troppo e il sangue arriva poco al cervello.",
+  "superiore": "Calo della pressione quando si passa dalla posizione sdraiata a quella eretta: almeno 20 mmHg di sistolica o 10 di diastolica entro 3 minuti. Dovuto a una correzione insufficiente del riflesso barocettivo.",
+  "universita": "In piedi circa mezzo litro di sangue o più si sposta verso le gambe e l'addome: il ritorno venoso e la gittata calano. Normalmente i barocettori attivano subito il simpatico (tachicardia e vasocostrizione). Cause: disidratazione, farmaci (diuretici, α-bloccanti, nitrati), neuropatia autonomica (diabete, malattia di Parkinson, atrofia multisistemica), allettamento prolungato.",
+  "clinica": "Causa frequente di cadute e sincope negli anziani. Si misura la pressione sdraiati e in piedi. Terapia: rivedere i farmaci, bere di più, alzarsi lentamente, calze elastiche; nei casi gravi fludrocortisone o midodrina."
+ },
+ "variazione della temperatura": {
+  "tipo": "energia",
+  "base": "Quando fuori fa più freddo o più caldo, o quando il corpo si scalda correndo.",
+  "superiore": "Cambiamento della temperatura dell'ambiente o di quella interna del corpo (per esempio per l'esercizio fisico o la digestione). È lo stimolo che attiva la termoregolazione.",
+  "universita": "Il corpo distingue la temperatura interna («nucleo»: organi del torace, dell'addome e del cervello, mantenuta intorno a 37 °C) da quella della superficie (pelle), che varia molto con l'ambiente. La temperatura interna normale oscilla di circa mezzo grado nel corso della giornata (più bassa al mattino).",
+  "clinica": "La temperatura si misura in bocca, sotto l'ascella, nell'orecchio o nel retto: il valore rettale è il più vicino a quello interno."
+ },
+ "termocettori": {
+  "tipo": "struttura",
+  "base": "Piccoli sensori nella pelle e nel cervello che sentono il freddo e il caldo.",
+  "superiore": "Recettori sensibili alla temperatura: nella pelle ci sono recettori per il freddo (più numerosi) e per il caldo; nell'ipotalamo ci sono neuroni che sentono la temperatura del sangue.",
+  "universita": "Sono terminazioni nervose libere con canali TRP: TRPM8 (freddo, attivato anche dal mentolo), TRPV1 (caldo intenso e dolore, attivato dalla capsaicina). Rispondono soprattutto ai cambiamenti di temperatura e si adattano. Recettori sensibili alla temperatura si trovano anche nel midollo spinale e negli organi addominali.",
+  "clinica": "Nelle neuropatie (per esempio diabetica) la sensibilità termica si perde e aumenta il rischio di ustioni ai piedi."
+ },
+ "segnali dei termocettori": {
+  "tipo": "energia",
+  "base": "I messaggi che i sensori di caldo e freddo mandano al cervello.",
+  "superiore": "Impulsi nervosi che portano all'ipotalamo le informazioni sulla temperatura della pelle e del sangue.",
+  "universita": "I segnali cutanei salgono con le fibre Aδ (freddo) e C (caldo) e la via spinotalamica laterale fino all'ipotalamo e alla corteccia. Nell'ipotalamo si integrano con la temperatura del sangue: la pelle «anticipa» i cambiamenti, la temperatura interna conta di più.",
+  "clinica": ""
+ },
+ "punto di regolazione (set point)": {
+  "tipo": "struttura",
+  "base": "Il numero a cui è impostato il «termostato» del corpo: circa 37 gradi.",
+  "superiore": "Valore di temperatura interna che l'ipotalamo cerca di mantenere, circa 37 °C. Se la temperatura è sotto il set point si attivano le risposte al freddo, se è sopra quelle al caldo.",
+  "universita": "È deciso dai neuroni dell'area preottica dell'ipotalamo anteriore, che confrontano i segnali di neuroni sensibili al caldo e al freddo. I pirogeni (attraverso la prostaglandina E₂) alzano il set point: è il meccanismo della febbre.",
+  "clinica": "Distingue la febbre (set point alzato: il paziente ha brividi mentre la temperatura sale) dall'ipertermia (set point normale, ma il calore non viene smaltito: gli antipiretici non funzionano)."
+ },
+ "vasocostrizione cutanea": {
+  "tipo": "struttura",
+  "base": "Con il freddo i vasi della pelle si stringono: la pelle diventa pallida e fredda, ma l'interno del corpo resta caldo.",
+  "superiore": "Restringimento dei vasi della pelle comandato dal simpatico. Arriva meno sangue caldo in superficie e si disperde meno calore.",
+  "universita": "Mediata dalla noradrenalina sui recettori α1 e α2 delle arteriole e delle anastomosi artero-venose di mani, piedi, orecchie e naso. Lo strato di grasso sotto la pelle fa da isolante. Con il freddo intenso la vasocostrizione si interrompe a tratti per proteggere i tessuti (vasodilatazione da freddo).",
+  "clinica": "Nel fenomeno di Raynaud la vasocostrizione delle dita è esagerata: le dita diventano bianche, poi blu, poi rosse. Il congelamento colpisce le parti più periferiche."
+ },
+ "brivido": {
+  "tipo": "struttura",
+  "base": "Il tremore che viene quando si ha freddo: i muscoli si muovono da soli per produrre calore.",
+  "superiore": "Contrazioni involontarie e ritmiche dei muscoli scheletrici comandate dall'ipotalamo. Non producono movimento utile ma molto calore.",
+  "universita": "Il centro motore primario del brivido è nell'ipotalamo dorsomediale (posteriore); i segnali scendono ai motoneuroni e aumentano il tono muscolare fino alle oscillazioni del brivido. Può aumentare di alcune volte la produzione di calore, consumando molto ossigeno e glucosio.",
+  "clinica": "Il brivido dopo l'anestesia aumenta il consumo di ossigeno ed è pericoloso nei cardiopatici. Nell'ipotermia grave (sotto circa 32 °C) il brivido si ferma. Brividi forti all'inizio della febbre suggeriscono batteriemia."
+ },
+ "calore": {
+  "tipo": "energia",
+  "base": "Il caldo che il corpo produce bruciando il cibo, come una piccola stufa sempre accesa.",
+  "superiore": "Energia termica. Nel corpo deriva dal metabolismo: gran parte dell'energia del cibo non diventa ATP o lavoro ma calore, che mantiene la temperatura corporea.",
+  "universita": "A riposo i maggiori produttori di calore sono fegato, cuore, cervello e reni; durante l'esercizio i muscoli. L'efficienza del lavoro muscolare è circa il 20-25%: il resto dell'energia diventa calore. Si perde per irraggiamento, conduzione, convezione ed evaporazione.",
+  "clinica": ""
+ },
+ "termogenesi senza brivido": {
+  "tipo": "struttura",
+  "base": "Un modo per produrre calore senza tremare, usando un grasso speciale (il grasso bruno), molto importante nei neonati.",
+  "superiore": "Produzione di calore da parte del tessuto adiposo bruno, stimolato dal simpatico. Nei mitocondri del grasso bruno la termogenina disaccoppia la respirazione: l'energia diventa calore invece che ATP.",
+  "universita": "La noradrenalina agisce sui recettori β3 degli adipociti bruni: lipolisi, acidi grassi liberi che attivano UCP1 e la fanno lavorare come canale per i protoni. Gli ormoni tiroidei la potenziano. Nel neonato il grasso bruno si trova tra le scapole, attorno ai reni e ai grandi vasi; nell'adulto ne restano piccole quantità (collo, regione sopraclaveare).",
+  "clinica": "I neonati, soprattutto prematuri, perdono calore facilmente e dipendono da questa risposta: vanno asciugati e tenuti al caldo (contatto pelle a pelle, incubatrice)."
+ },
+ "vasodilatazione cutanea": {
+  "tipo": "struttura",
+  "base": "Con il caldo i vasi della pelle si allargano: la pelle diventa rossa e il calore esce.",
+  "superiore": "Allargamento dei vasi della pelle: arriva più sangue caldo in superficie e il calore passa all'ambiente. Avviene soprattutto riducendo il tono del simpatico.",
+  "universita": "Nelle mani, nei piedi, nelle orecchie e nel viso basta togliere il tono simpatico (anastomosi artero-venose). Nel resto della pelle c'è anche una vasodilatazione attiva, legata alle fibre simpatiche colinergiche della sudorazione (con NO e altri mediatori). Con il caldo intenso il flusso alla pelle può aumentare moltissimo e richiede più gittata cardiaca.",
+  "clinica": "Con il caldo la vasodilatazione cutanea sottrae sangue al cuore: negli anziani e nei cardiopatici facilita svenimenti (sincope da calore) e scompenso."
+ },
+ "sudorazione": {
+  "tipo": "struttura",
+  "base": "La pelle fa il sudore: quando evapora porta via il calore e il corpo si rinfresca.",
+  "superiore": "Produzione di sudore da parte delle ghiandole sudoripare eccrine, comandate dal simpatico. L'evaporazione del sudore sottrae calore alla pelle. Funziona male quando l'aria è molto umida.",
+  "universita": "Le fibre simpatiche postgangliari delle ghiandole eccrine liberano acetilcolina (recettori muscarinici M3). Il sudore primario simile al plasma viene impoverito di NaCl nel dotto; l'aldosterone aumenta questo recupero (acclimatazione). Con il caldo e l'allenamento si possono perdere più litri di sudore all'ora.",
+  "clinica": "Nella fibrosi cistica il dotto non recupera il cloro: test del sudore con Cl⁻ alto. Gli anticolinergici (atropina, antistaminici, triciclici) riducono la sudorazione e favoriscono il colpo di calore. Iperidrosi: si tratta con antitraspiranti o tossina botulinica."
+ },
+ "temperatura corporea normale": {
+  "tipo": "struttura",
+  "base": "La temperatura giusta del corpo, intorno a 37 gradi: né troppo caldo né troppo freddo.",
+  "superiore": "Temperatura interna mantenuta circa a 37 °C (36,5-37,5 °C) dalla termoregolazione. Permette agli enzimi di funzionare al meglio.",
+  "universita": "Varia con il ritmo del giorno (minimo al mattino presto, massimo nel tardo pomeriggio), con il ciclo mestruale (dopo l'ovulazione il progesterone la alza di circa 0,3-0,5 °C), con l'esercizio e con l'età. La temperatura misurata sotto l'ascella è più bassa di quella rettale.",
+  "clinica": ""
+ },
+ "pirogeni": {
+  "tipo": "molecola",
+  "base": "Sostanze dei microbi o del nostro corpo che fanno venire la febbre.",
+  "superiore": "Sostanze che fanno salire la temperatura corporea alzando il set point dell'ipotalamo. Esogeni: parti dei microbi (per esempio il lipopolisaccaride dei batteri Gram-negativi). Endogeni: citochine prodotte dai globuli bianchi (IL-1, IL-6, TNF-α).",
+  "universita": "I pirogeni esogeni stimolano macrofagi e monociti (attraverso recettori come TLR4) a produrre citochine pirogene. Queste agiscono sugli organi circumventricolari senza barriera ematoencefalica (OVLT) e sull'endotelio dei vasi cerebrali: inducono COX-2 e la sintesi di prostaglandina E₂, che alza il set point.",
+  "clinica": "Le reazioni febbrili alle trasfusioni o alle infusioni contaminate sono dovute a pirogeni. Anche tumori, malattie autoimmuni, farmaci e danni dei tessuti possono dare febbre."
+ },
+ "prostaglandina E₂": {
+  "tipo": "molecola",
+  "base": "Una sostanza che il corpo produce durante le infezioni e che «alza il termostato»: fa venire la febbre e il dolore.",
+  "superiore": "Prostaglandina derivata dall'acido arachidonico per azione delle cicloossigenasi (COX). Nell'ipotalamo alza il set point della temperatura; nei tessuti partecipa all'infiammazione e al dolore.",
+  "universita": "Agisce sui recettori EP (soprattutto EP3 nell'area preottica per la febbre). Ha anche altri effetti: protegge la mucosa dello stomaco, mantiene il flusso renale quando la pressione è bassa, mantiene aperto il dotto arterioso nel feto, matura la cervice uterina.",
+  "clinica": "FANS e paracetamolo riducono la febbre inibendo la sua sintesi. Gli analoghi della PGE₁ (alprostadil) mantengono aperto il dotto arterioso; il dinoprostone (PGE₂) si usa per maturare il collo dell'utero prima del parto indotto."
+ },
+ "febbre": {
+  "tipo": "struttura",
+  "base": "Quando il corpo, per combattere un'infezione, alza di proposito la sua temperatura.",
+  "superiore": "Aumento della temperatura corporea dovuto all'innalzamento del set point dell'ipotalamo da parte dei pirogeni. In genere oltre circa 38 °C. È una difesa: rallenta la crescita di molti microbi e attiva le difese immunitarie.",
+  "universita": "Tre fasi: salita (il corpo «sente freddo»: brividi, vasocostrizione, pelle pallida), plateau (la temperatura ha raggiunto il nuovo set point), defervescenza (il set point torna normale: sudorazione e vasodilatazione, pelle calda). Ogni grado in più aumenta il metabolismo e la frequenza cardiaca.",
+  "clinica": "Gli antipiretici servono soprattutto per il benessere del paziente. Attenzione: febbre nel neonato sotto i 3 mesi, nel paziente neutropenico, con rigidità nucale o petecchie (sepsi, meningite). Nei bambini piccoli la febbre può dare convulsioni febbrili, di solito benigne."
+ },
+ "colpo di calore": {
+  "tipo": "struttura",
+  "base": "Un'emergenza che arriva quando il corpo si scalda troppo e non riesce più a raffreddarsi, per esempio sotto il sole forte o facendo sport con il caldo umido.",
+  "superiore": "Aumento grave della temperatura interna (oltre circa 40 °C) con disturbi del sistema nervoso (confusione, convulsioni, coma), perché i meccanismi che disperdono il calore non bastano. Il set point è normale: non è febbre.",
+  "universita": "Classico (anziani, malati cronici, ondate di calore, farmaci anticolinergici o diuretici) o da sforzo (giovani sportivi, militari). Il calore danneggia direttamente le cellule: rabdomiolisi, insufficienza renale e del fegato, coagulazione intravascolare disseminata.",
+  "clinica": "Va raffreddato subito, il più velocemente possibile (immersione in acqua fredda, raffreddamento per evaporazione), con supporto delle funzioni vitali. Gli antipiretici non servono, perché il set point è normale."
+ },
+ "temperatura corporea alta": {
+  "tipo": "struttura",
+  "base": "Quando il corpo è più caldo del normale.",
+  "superiore": "Temperatura interna sopra il normale. Può dipendere dalla febbre (set point alzato) o dall'ipertermia (troppo calore prodotto o non smaltito, con set point normale).",
+  "universita": "Cause di ipertermia: ambiente caldo e umido, sforzo intenso, ipertiroidismo, farmaci e droghe (anticolinergici, cocaina, anfetamine), sindrome serotoninergica, sindrome neurolettica maligna, ipertermia maligna.",
+  "clinica": "Sopra circa 41-42 °C le proteine e le cellule vengono danneggiate: serve raffreddare rapidamente."
+ },
+ "irraggiamento": {
+  "tipo": "energia",
+  "base": "Il corpo manda calore intorno a sé come una stufa, anche senza toccare nulla.",
+  "superiore": "Perdita (o acquisto) di calore sotto forma di raggi infrarossi tra il corpo e gli oggetti circostanti, senza contatto. A riposo, in un ambiente fresco, è la via principale di perdita di calore.",
+  "universita": "In una persona svestita a temperatura ambiente circa il 60% del calore si perde per irraggiamento. Se gli oggetti attorno sono più caldi della pelle (sole, pareti calde) il corpo acquista calore per irraggiamento.",
+  "clinica": "I teli termici riflettenti riducono la perdita per irraggiamento nei pazienti ipotermici."
+ },
+ "conduzione e convezione": {
+  "tipo": "energia",
+  "base": "Il calore passa dal corpo a ciò che tocca (una sedia fredda, l'acqua) e all'aria, che si scalda e si sposta portandolo via, come quando soffia il vento.",
+  "superiore": "Conduzione: passaggio di calore per contatto diretto con oggetti, aria o acqua. Convezione: l'aria (o l'acqua) scaldata dal corpo si allontana e viene sostituita da aria fresca, che porta via altro calore.",
+  "universita": "La conduzione verso gli oggetti è piccola (pochi per cento); quella verso l'aria, insieme alla convezione, conta di più e aumenta molto con il vento (effetto wind chill). L'acqua conduce il calore molto meglio dell'aria: in acqua fredda si perde calore molto più rapidamente.",
+  "clinica": "Le persone cadute in acqua fredda o rimaste a terra bagnate vanno incontro rapidamente a ipotermia."
+ },
+ "evaporazione": {
+  "tipo": "energia",
+  "base": "Quando il sudore si asciuga sulla pelle porta via il calore: per questo dopo il bagno, bagnati, si sente freddo.",
+  "superiore": "Passaggio dell'acqua (sudore, acqua dei polmoni) allo stato di vapore: per evaporare l'acqua prende calore dal corpo. È l'unico modo di perdere calore quando l'ambiente è più caldo della pelle.",
+  "universita": "Ogni grammo d'acqua che evapora sottrae circa 0,58 kcal. Anche senza sudare si perde acqua dalla pelle e dai polmoni (perspiratio insensibilis, circa 600-700 mL al giorno). Con l'aria umida l'evaporazione rallenta molto.",
+  "clinica": "Con caldo umido e sforzo la sudorazione abbondante ma non evaporata non raffredda: rischio di colpo di calore. Il raffreddamento per evaporazione (acqua nebulizzata più ventilatore) si usa per curarlo."
+ },
+ "antipiretici": {
+  "tipo": "molecola",
+  "base": "Medicine che fanno scendere la febbre, come il paracetamolo.",
+  "superiore": "Farmaci che riducono la febbre inibendo la sintesi delle prostaglandine nell'ipotalamo e riportando il set point alla norma. Esempi: paracetamolo, ibuprofene e altri FANS, acido acetilsalicilico.",
+  "universita": "Inibiscono le cicloossigenasi (COX-1 e COX-2); il paracetamolo agisce soprattutto nel sistema nervoso centrale e ha poco effetto antinfiammatorio. Non abbassano la temperatura normale e non funzionano nell'ipertermia (set point normale).",
+  "clinica": "Paracetamolo: in dose eccessiva danneggia il fegato (antidoto N-acetilcisteina). FANS: rischi per stomaco, rene e pressione. Acido acetilsalicilico da evitare nei bambini con infezioni virali (sindrome di Reye)."
+ },
+ "autoregolazione renale": {
+  "tipo": "struttura",
+  "base": "Il rene si protegge da solo: anche se la pressione del sangue cambia, continua a filtrare più o meno la stessa quantità.",
+  "superiore": "Capacità del rene di mantenere quasi costanti il flusso di sangue e la filtrazione glomerulare quando la pressione arteriosa varia, regolando il calibro dell'arteriola afferente.",
+  "universita": "Due meccanismi: risposta miogena (la parete dell'arteriola afferente stirata si contrae) e feedback tubulo-glomerulare (la macula densa che sente più NaCl libera adenosina, che stringe l'afferente). Efficace tra circa 80 e 170-180 mmHg di pressione media.",
+  "clinica": "FANS (meno prostaglandine che dilatano l'afferente) e ACE-inibitori o sartani (meno angiotensina II che stringe l'efferente) riducono la capacità del rene di proteggere la filtrazione: in caso di disidratazione possono causare insufficienza renale acuta, soprattutto se associati ai diuretici."
+ },
+ "filtrato glomerulare": {
+  "tipo": "struttura",
+  "base": "Il liquido che il filtro del rene ricava dal sangue: acqua con sali e piccole sostanze, ma senza cellule.",
+  "superiore": "Liquido che passa dal glomerulo nella capsula di Bowman. Ha la stessa composizione del plasma ma quasi senza proteine. Se ne formano circa 180 litri al giorno.",
+  "universita": "Ultrafiltrato del plasma, isosmotico (circa 300 mOsm/L). La filtrazione dipende dalla pressione netta: pressione idrostatica del capillare glomerulare (circa 60 mmHg) meno quella della capsula di Bowman (circa 18 mmHg) e la pressione oncotica del plasma (circa 32 mmHg), cioè circa 10 mmHg. La frazione di filtrazione è circa il 20% del plasma che arriva al rene.",
+  "clinica": "Quando la barriera è danneggiata nel filtrato passano proteine (proteinuria, sindrome nefrosica) o globuli rossi (ematuria, sindrome nefritica)."
+ },
+ "filtrato isosmotico": {
+  "tipo": "struttura",
+  "base": "Il liquido rimasto dopo il primo tratto del tubulo: il rene ha già ripreso gran parte dell'acqua, del sale e tutto lo zucchero.",
+  "superiore": "Filtrato che esce dal tubulo prossimale: circa un terzo di quello filtrato, con la stessa concentrazione del plasma (isosmotico), perché sale e acqua sono stati riassorbiti in proporzione.",
+  "universita": "Nel tubulo prossimale si riassorbono circa il 65% di Na⁺ e acqua, quasi tutto il glucosio e gli amminoacidi, circa l'80-90% del bicarbonato, buona parte di K⁺, fosfato e urea. Il riassorbimento è guidato dalla pompa Na⁺/K⁺ basolaterale; l'acqua segue attraverso le acquaporine 1.",
+  "clinica": "Nella sindrome di Fanconi il tubulo prossimale non riassorbe bene: glucosio, amminoacidi, fosfato e bicarbonato nelle urine (glicosuria con glicemia normale, acidosi tubulare prossimale)."
+ },
+ "filtrato concentrato": {
+  "tipo": "struttura",
+  "base": "Il liquido nel tubulo che scende in profondità nel rene: perde acqua e diventa più concentrato.",
+  "superiore": "Filtrato in fondo al ramo discendente dell'ansa di Henle: ha perso acqua verso l'interstizio salato della midollare e diventa molto concentrato.",
+  "universita": "La concentrazione all'apice dell'ansa raggiunge quella dell'interstizio della midollare interna, fino a circa 1200 mOsm/L. Il ramo discendente sottile è molto permeabile all'acqua (acquaporina 1) e poco ai soluti.",
+  "clinica": ""
+ },
+ "filtrato diluito": {
+  "tipo": "struttura",
+  "base": "Il liquido nel tubulo dopo che il rene gli ha tolto il sale ma non l'acqua: è più «leggero» del sangue.",
+  "superiore": "Filtrato che esce dal ramo ascendente spesso dell'ansa di Henle: è ipotonico rispetto al plasma, perché il sale è stato pompato fuori ma l'acqua no (segmento diluente).",
+  "universita": "All'uscita dal ramo ascendente spesso l'osmolarità è circa 100 mOsm/L. Da qui dipende la capacità di produrre urina diluita (se manca l'ADH) o concentrata (se c'è l'ADH, grazie alla midollare salata).",
+  "clinica": "I diuretici dell'ansa bloccano sia la diluizione sia la concentrazione dell'urina: l'urina diventa abbondante e isosmotica."
+ },
+ "acquaporina 1": {
+  "tipo": "enzima",
+  "base": "Piccoli canali per l'acqua, sempre aperti, nel primo tratto del tubulo del rene e nei globuli rossi.",
+  "superiore": "Canale per l'acqua sempre presente nella membrana del tubulo prossimale e del ramo discendente dell'ansa di Henle. Permette all'acqua di seguire il sale senza bisogno di ormoni.",
+  "universita": "Tetramero; ogni subunità ha un poro che lascia passare solo molecole d'acqua (non H⁺). Espressa anche nei globuli rossi, nell'endotelio dei capillari e nei vasa recta. A differenza dell'acquaporina 2 non è regolata dall'ADH.",
+  "clinica": ""
+ },
+ "anioni e cationi organici": {
+  "tipo": "molecola",
+  "base": "Sostanze di scarto e medicine che il rene prende dal sangue e butta nell'urina.",
+  "superiore": "Molecole organiche cariche (acidi e basi) che il tubulo prossimale secerne attivamente dal sangue al filtrato: molti farmaci (penicilline, diuretici, metotrexato), acido urico, creatinina in piccola parte.",
+  "universita": "Trasportatori di anioni organici (OAT1, OAT3) e di cationi organici (OCT2) sulla membrana basolaterale, e trasportatori sulla membrana luminale (MATE, MRP). La secrezione permette di eliminare sostanze legate alle proteine, che non vengono filtrate. Il PAH viene quasi completamente eliminato in un passaggio e misura il flusso plasmatico renale.",
+  "clinica": "Il probenecid blocca la secrezione delle penicilline (ne prolunga l'effetto). Trimetoprim e cimetidina bloccano la secrezione di creatinina e la fanno salire senza un vero danno renale. Il metotrexato compete con FANS e penicilline: rischio di tossicità."
+ },
+ "diuretici dell'ansa": {
+  "tipo": "molecola",
+  "base": "Le medicine più forti per fare urinare: si usano quando c'è troppa acqua nel corpo, per esempio nei polmoni.",
+  "superiore": "Diuretici che bloccano il cotrasportatore Na⁺-K⁺-2Cl⁻ (NKCC2) del ramo ascendente spesso dell'ansa di Henle. Sono i più potenti. Esempi: furosemide, torasemide, bumetanide.",
+  "universita": "Vengono secreti nel tubulo prossimale e agiscono dal lume. Riducono il gradiente della midollare (meno concentrazione dell'urina) e aumentano l'eliminazione di Ca²⁺ e Mg²⁺. L'arrivo di più Na⁺ al dotto collettore aumenta la perdita di K⁺ e H⁺.",
+  "clinica": "Usati per edema polmonare acuto, scompenso cardiaco, edemi da cirrosi o sindrome nefrosica, ipercalcemia. Effetti: disidratazione, ipokaliemia, ipomagnesiemia, alcalosi metabolica, ototossicità (dosi alte, con aminoglicosidi), iperuricemia."
+ },
+ "tiazidici": {
+  "tipo": "molecola",
+  "base": "Medicine che fanno urinare un po' di più e abbassano la pressione: sono tra le più usate per la pressione alta.",
+  "superiore": "Diuretici che bloccano il cotrasportatore Na⁺-Cl⁻ (NCC) del tubulo contorto distale. Esempi: idroclorotiazide, clortalidone, indapamide.",
+  "universita": "Effetto diuretico moderato (agiscono su una piccola parte del sodio filtrato). A differenza dei diuretici dell'ansa riducono l'eliminazione di Ca²⁺. Perdono efficacia quando la filtrazione è molto ridotta (il clortalidone un po' meno).",
+  "clinica": "Usati per l'ipertensione e per i calcoli di calcio nelle urine; nel diabete insipido nefrogenico riducono paradossalmente il volume delle urine. Effetti: iponatriemia (soprattutto negli anziani), ipokaliemia, ipercalcemia, iperuricemia (gotta), iperglicemia e aumento dei lipidi."
+ },
+ "inibitori dell'SGLT2 (gliflozine)": {
+  "tipo": "molecola",
+  "base": "Medicine per il diabete che fanno uscire lo zucchero in più con la pipì; proteggono anche il cuore e i reni.",
+  "superiore": "Farmaci che bloccano il cotrasportatore sodio-glucosio SGLT2 del tubulo prossimale: il glucosio non viene riassorbito e finisce nelle urine (glicosuria). Esempi: dapagliflozin, empagliflozin, canagliflozin.",
+  "universita": "SGLT2 riassorbe la maggior parte del glucosio filtrato nel primo tratto del tubulo prossimale (SGLT1 il resto). Bloccandolo arriva più Na⁺ alla macula densa: il feedback tubulo-glomerulare stringe l'afferente e riduce l'iperfiltrazione, un meccanismo di protezione del rene. Effetto diuretico e natriuretico modesto.",
+  "clinica": "Indicati nel diabete di tipo 2, nello scompenso cardiaco (con frazione d'eiezione ridotta e conservata) e nella malattia renale cronica. Effetti: infezioni genitali da funghi, disidratazione, raramente chetoacidosi con glicemia quasi normale (euglicemica); sospendere prima di interventi o in caso di malattia acuta."
+ },
+ "velocità di filtrazione glomerulare (VFG)": {
+  "tipo": "struttura",
+  "base": "Quanto sangue i reni riescono a «ripulire» ogni minuto: è il modo di misurare quanto bene lavorano.",
+  "superiore": "Volume di filtrato prodotto da tutti i glomeruli in un minuto. Nell'adulto giovane circa 125 mL/min (circa 180 litri al giorno). È il miglior indice della funzione renale.",
+  "universita": "VFG = Kf × pressione netta di filtrazione. Si misura con la clearance di sostanze filtrate liberamente e non riassorbite né secrete (inulina); in pratica si stima dalla creatinina del sangue con formule (CKD-EPI) che tengono conto di età e sesso, o dalla cistatina C. Si riduce con l'età.",
+  "clinica": "Classifica la malattia renale cronica (stadi G1-G5; sotto 60 mL/min/1,73 m² per più di 3 mesi è malattia renale cronica; sotto 15 insufficienza renale terminale). Serve per adattare la dose di molti farmaci (metformina, anticoagulanti, antibiotici)."
+ },
+ "creatinina": {
+  "tipo": "piccola",
+  "smiles": "CN1CC(=O)N=C1N",
+  "base": "Una sostanza di scarto dei muscoli che i reni eliminano: se nel sangue ce n'è troppa, i reni lavorano male.",
+  "superiore": "Prodotto di scarto della creatina e della fosfocreatina dei muscoli. Viene prodotta a velocità quasi costante e eliminata dal rene soprattutto per filtrazione: la sua concentrazione nel sangue indica la funzione renale.",
+  "universita": "Liberamente filtrata e in piccola parte secreta dal tubulo prossimale (per questo la clearance della creatinina sovrastima un po' la VFG). Il rapporto tra creatinina e VFG non è lineare: la creatinina sale in modo evidente solo quando la VFG si è già ridotta molto. Dipende dalla massa muscolare.",
+  "clinica": "Si usa per stimare la VFG (eGFR) e per diagnosticare l'insufficienza renale acuta (aumento rispetto al valore di base, criteri KDIGO). Valori bassi negli anziani magri o con poca massa muscolare possono nascondere una funzione renale ridotta."
+ },
+ "clearance renale": {
+  "tipo": "struttura",
+  "base": "Quanta parte del sangue il rene riesce a liberare da una certa sostanza in un minuto.",
+  "superiore": "Volume di plasma che il rene libera completamente da una sostanza nell'unità di tempo. Si calcola con la formula C = (U × V) / P: concentrazione nelle urine per volume di urina al minuto, diviso la concentrazione nel plasma.",
+  "universita": "Una sostanza solo filtrata (inulina) ha clearance uguale alla VFG; se è anche riassorbita la clearance è minore (glucosio: normalmente zero); se è anche secreta è maggiore (PAH: si avvicina al flusso plasmatico renale, circa 600-650 mL/min).",
+  "clinica": "La clearance della creatinina sulle urine delle 24 ore è ancora usata in alcune situazioni (massa muscolare molto diversa dal normale, gravidanza). La dose dei farmaci eliminati dal rene si adatta alla clearance."
+ }
+}

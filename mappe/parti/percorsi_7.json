@@ -1,0 +1,1017 @@
+{
+ "replicazione del dna": {
+  "titolo": "Replicazione del DNA: da una doppia elica a due copie identiche",
+  "dove": "Nucleo, durante la fase S del ciclo cellulare (nei batteri nel citoplasma, da un'unica origine)",
+  "inizio": "origine di replicazione",
+  "intro": "Prima di dividersi la cellula copia tutto il suo DNA, una sola volta. I due filamenti della doppia elica si separano e ognuno fa da stampo per un filamento nuovo: ogni molecola figlia ha un filamento vecchio e uno nuovo (replicazione semiconservativa). Le DNA polimerasi costruiscono solo in direzione 5'→3' e hanno bisogno di un innesco: per questo un filamento si copia di continuo (guida) e l'altro a pezzi (lento). Il collegamento con la divisione è nella mappa «mitosi», quello con gli errori nella mappa «riparazione del dna».",
+  "fasi": [
+   {"da": 1, "nome": "Autorizzazione delle origini (fase G1)"},
+   {"da": 2, "nome": "Inizio: si accende l'elicasi e si apre la forcella (fase S)"},
+   {"da": 4, "nome": "Allungamento: filamento guida e filamento lento"},
+   {"da": 7, "nome": "Rifinitura del filamento lento"},
+   {"da": 9, "nome": "Estremità dei cromosomi e cromatina"}
+  ],
+  "passaggi": [
+   {
+    "da": ["origine di replicazione"],
+    "a": ["complesso di pre-replicazione"],
+    "enzima": "ORC, Cdc6 e Cdt1",
+    "entra": ["elicasi MCM", "ATP"],
+    "esce": ["ADP"],
+    "nota": "In G1 il complesso ORC, aiutato da Cdc6 e Cdt1, carica su ogni origine due anelli dell'elicasi MCM, ancora spenti. L'origine è ora «autorizzata» (licensing): potrà partire una sola volta."
+   },
+   {
+    "da": ["complesso di pre-replicazione"],
+    "a": ["forcella di replicazione"],
+    "enzima": "CDK e DDK (Cdc7-Dbf4)",
+    "entra": ["Cdc45 e GINS", "ATP"],
+    "esce": ["ADP"],
+    "limitante": true,
+    "nota": "In fase S le chinasi CDK e DDK attivano l'elicasi: con Cdc45 e GINS si forma l'elicasi attiva CMG. Da ogni origine partono due forcelle in direzioni opposte (replicazione bidirezionale). Le stesse CDK impediscono di caricare nuove MCM fino alla mitosi: così nessun tratto viene copiato due volte."
+   },
+   {
+    "da": ["forcella di replicazione"],
+    "a": ["DNA a filamento singolo"],
+    "enzima": "elicasi CMG",
+    "entra": ["ATP", "proteina RPA"],
+    "esce": ["ADP"],
+    "nota": "L'elicasi scorre lungo il DNA e separa i due filamenti rompendo i legami a idrogeno tra le basi. La proteina RPA ricopre i filamenti singoli e li protegge. Davanti alla forcella le topoisomerasi sciolgono la torsione che si accumula."
+   },
+   {
+    "da": ["DNA a filamento singolo"],
+    "a": ["primer di RNA"],
+    "enzima": "DNA polimerasi α-primasi",
+    "entra": ["ribonucleotidi (NTP)", "desossiribonucleotidi (dNTP)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "Le DNA polimerasi non sanno partire da zero. La primasi costruisce un breve innesco di RNA (circa 10 nucleotidi) e la pol α lo allunga con un breve tratto di DNA. Sul filamento guida basta un innesco per origine; sul filamento lento ne serve uno per ogni frammento."
+   },
+   {
+    "da": ["primer di RNA"],
+    "a": ["filamento guida (leading)"],
+    "enzima": "DNA polimerasi ε",
+    "entra": ["desossiribonucleotidi (dNTP)", "PCNA (pinza scorrevole)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "Il filamento guida cresce in direzione 5'→3' verso la forcella, senza interruzioni. La pinza PCNA tiene la polimerasi agganciata al DNA. Se la polimerasi sbaglia una base, la toglie subito con la sua attività esonucleasica 3'→5' (correzione di bozze)."
+   },
+   {
+    "da": ["primer di RNA"],
+    "a": ["frammenti di Okazaki"],
+    "enzima": "DNA polimerasi δ",
+    "entra": ["desossiribonucleotidi (dNTP)", "PCNA (pinza scorrevole)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "Sull'altro stampo la sintesi 5'→3' va in direzione opposta alla forcella: il filamento lento si costruisce a pezzi, i frammenti di Okazaki (negli eucarioti lunghi circa 100-200 nucleotidi). Ogni frammento parte da un nuovo innesco."
+   },
+   {
+    "da": ["frammenti di Okazaki"],
+    "a": ["frammenti di Okazaki senza primer"],
+    "enzima": "RNasi H e FEN1",
+    "entra": [],
+    "esce": ["ribonucleotidi monofosfato (NMP)"],
+    "nota": "Quando la pol δ raggiunge l'innesco del frammento precedente, lo solleva come un lembo; la nucleasi FEN1 taglia il lembo e la RNasi H toglie l'RNA appaiato al DNA. Il buco viene riempito con DNA."
+   },
+   {
+    "da": ["frammenti di Okazaki senza primer"],
+    "a": ["filamento lento (lagging) continuo"],
+    "enzima": "DNA ligasi I",
+    "entra": ["ATP"],
+    "esce": ["AMP", "pirofosfato (PPi)"],
+    "nota": "La ligasi chiude l'ultima interruzione tra due frammenti formando un legame fosfodiestere. Usa l'energia dell'ATP, che diventa AMP + PPi. Ora anche il filamento lento è un pezzo unico."
+   },
+   {
+    "da": ["filamento lento (lagging) continuo"],
+    "a": ["telomeri allungati"],
+    "enzima": "telomerasi",
+    "entra": ["desossiribonucleotidi (dNTP)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "All'estremità del cromosoma l'ultimo innesco non può essere sostituito con DNA: a ogni copia il cromosoma si accorcerebbe. La telomerasi porta un suo stampo di RNA e aggiunge ripetizioni TTAGGG all'estremità 3'. È attiva nelle cellule germinali, nelle staminali e nella maggior parte dei tumori; nelle cellule somatiche quasi per niente."
+   },
+   {
+    "da": ["telomeri allungati"],
+    "a": ["due molecole di DNA figlie"],
+    "enzima": "CAF-1 (assemblaggio della cromatina)",
+    "entra": ["istoni", "coesina"],
+    "esce": [],
+    "nota": "Dietro la forcella istoni vecchi e nuovi si rimontano in nucleosomi e la cromatina si ricompone. Le due copie (cromatidi fratelli) restano unite dalla coesina fino all'anafase. Ogni copia ha un filamento vecchio e uno nuovo."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "1 doppia elica → 2 doppie eliche identiche, ognuna con un filamento vecchio e uno nuovo (semiconservativa)",
+   "filamento guida continuo; filamento lento a frammenti di Okazaki, poi uniti dalla ligasi",
+   "ogni nucleotide aggiunto: dNTP → dNMP nel DNA + PPi",
+   "correzione di bozze e riparazione dei mismatch: alla fine circa 1 errore ogni 10⁹-10¹⁰ basi"
+  ],
+  "dopo": {
+   "titolo": "Che cosa succede dopo la copia",
+   "strade": [
+    {
+     "condizione": "Se resta un errore di appaiamento",
+     "da": "appaiamento sbagliato (mismatch)",
+     "a": "DNA riparato",
+     "enzima": "MutSα e MutLα (MSH2-MSH6, MLH1-PMS2)",
+     "entra": ["ATP"],
+     "esce": ["ADP"],
+     "nota": "Il sistema dei mismatch riconosce la base sbagliata subito dopo il passaggio della forcella, la toglie dal filamento nuovo e fa ricopiare il tratto.",
+     "prossimo": "riparazione del dna"
+    },
+    {
+     "condizione": "Quando la copia è finita (fine della fase S)",
+     "da": "cromosomi duplicati (fase S)",
+     "a": "cellula pronta (G2)",
+     "enzima": "CDK1-ciclina B (MPF)",
+     "entra": [],
+     "esce": [],
+     "nota": "La cellula controlla che tutto il DNA sia copiato e integro, poi si prepara alla divisione.",
+     "prossimo": "ciclo cellulare"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Chi aiuta alla forcella",
+    "voci": [
+     ["Chi scioglie la torsione davanti alla forcella", ["topoisomerasi I", "topoisomerasi II"]],
+     ["Chi protegge il filamento singolo e chi aggancia la polimerasi", ["proteina RPA", "PCNA (pinza scorrevole)"]]
+    ]
+   },
+   {
+    "titolo": "Le tre DNA polimerasi della replicazione",
+    "voci": [
+     ["Innesco, filamento guida, filamento lento", ["DNA polimerasi α-primasi", "DNA polimerasi ε", "DNA polimerasi δ"]]
+    ]
+   }
+  ]
+ },
+
+ "trascrizione": {
+  "titolo": "Trascrizione: dal gene al pre-mRNA",
+  "dove": "Nucleo (i geni per le proteine sono trascritti dalla RNA polimerasi II)",
+  "inizio": "gene (DNA)",
+  "intro": "La trascrizione copia un gene in RNA. Negli eucarioti i geni per le proteine li trascrive la RNA polimerasi II, che però da sola non sa trovare l'inizio del gene: le servono i fattori di trascrizione. È il primo e il più importante punto in cui la cellula decide quali geni usare e quanto. Qui la trascrizione è vista in dettaglio; la mappa «sintesi proteica» mostra il viaggio completo fino alla proteina.",
+  "fasi": [
+   {"da": 1, "nome": "Preparazione: si apre la cromatina"},
+   {"da": 2, "nome": "Inizio: si monta la macchina sul promotore"},
+   {"da": 6, "nome": "Fuga dal promotore e pausa"},
+   {"da": 8, "nome": "Allungamento"},
+   {"da": 9, "nome": "Terminazione"}
+  ],
+  "passaggi": [
+   {
+    "da": ["gene (DNA)"],
+    "a": ["cromatina aperta"],
+    "enzima": "attivatori trascrizionali",
+    "entra": ["coattivatori (HAT e rimodellatori)", "acetil-CoA"],
+    "esce": ["coenzima A"],
+    "limitante": true,
+    "nota": "Gli attivatori si legano a sequenze regolatrici (enhancer), anche lontane dal gene. Richiamano coattivatori che acetilano gli istoni (usando acetil-CoA) e spostano i nucleosomi: il promotore diventa accessibile. Qui si decide se il gene sarà acceso."
+   },
+   {
+    "da": ["cromatina aperta"],
+    "a": ["TFIID sulla TATA box"],
+    "enzima": "TFIID (con TBP)",
+    "entra": [],
+    "esce": [],
+    "nota": "La proteina TBP, parte di TFIID, riconosce la TATA box, una sequenza ricca di T e A circa 25-30 nucleotidi prima del punto di inizio, e piega il DNA. Molti promotori non hanno la TATA box: TFIID li riconosce con altre sequenze."
+   },
+   {
+    "da": ["TFIID sulla TATA box"],
+    "a": ["complesso di pre-inizio (PIC)"],
+    "enzima": "fattori generali di trascrizione",
+    "entra": ["RNA polimerasi II", "Mediatore"],
+    "esce": [],
+    "nota": "Si aggiungono in ordine TFIIB, la polimerasi con TFIIF, poi TFIIE e TFIIH. Il Mediatore fa da ponte tra gli attivatori e la polimerasi. Il complesso montato si chiama complesso di pre-inizio."
+   },
+   {
+    "da": ["complesso di pre-inizio (PIC)"],
+    "a": ["bolla di trascrizione"],
+    "enzima": "TFIIH",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "Una subunità di TFIIH con attività elicasica (XPB) usa ATP per aprire la doppia elica attorno al punto di inizio: si forma la «bolla» e il filamento stampo è libero."
+   },
+   {
+    "da": ["bolla di trascrizione"],
+    "a": ["RNA nascente"],
+    "enzima": "RNA polimerasi II",
+    "entra": ["ribonucleotidi (NTP)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "La polimerasi comincia senza bisogno di innesco. Spesso fa vari tentativi a vuoto, liberando RNA di pochi nucleotidi (inizio abortivo), prima di partire davvero."
+   },
+   {
+    "da": ["RNA nascente"],
+    "a": ["polimerasi in pausa"],
+    "enzima": "CDK7 (di TFIIH)",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "La chinasi CDK7 fosforila la serina 5 della «coda» della polimerasi (CTD): la polimerasi si stacca dai fattori generali (fuga dal promotore) e richiama gli enzimi del cappuccio. Dopo poche decine di nucleotidi in molti geni si ferma, trattenuta dai fattori DSIF e NELF."
+   },
+   {
+    "da": ["polimerasi in pausa"],
+    "a": ["polimerasi in allungamento"],
+    "enzima": "P-TEFb (CDK9-ciclina T)",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "limitante": true,
+    "nota": "La chinasi P-TEFb fosforila la serina 2 del CTD, DSIF e NELF: NELF se ne va e la polimerasi riparte. Molti geni di risposta rapida (per esempio allo stress) sono regolati proprio qui."
+   },
+   {
+    "da": ["polimerasi in allungamento"],
+    "a": ["pre-mRNA in crescita"],
+    "enzima": "RNA polimerasi II",
+    "entra": ["ribonucleotidi (NTP)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "La polimerasi legge il filamento stampo in direzione 3'→5' e costruisce l'RNA 5'→3', con U al posto di T. Dietro di lei il DNA si richiude. Il CTD fosforilato porta con sé i fattori dello splicing e della coda, che lavorano mentre l'RNA esce."
+   },
+   {
+    "da": ["pre-mRNA in crescita"],
+    "a": ["pre-mRNA", "RNA a valle del taglio"],
+    "enzima": "CPSF e CstF",
+    "entra": [],
+    "esce": [],
+    "nota": "Quando la polimerasi ha trascritto il segnale AAUAAA, CPSF e CstF tagliano l'RNA poco più avanti. Il pezzo a monte è il pre-mRNA, che riceverà la coda poli(A); la polimerasi però continua a trascrivere per un tratto."
+   },
+   {
+    "da": ["RNA a valle del taglio"],
+    "a": ["RNA polimerasi II libera"],
+    "enzima": "esonucleasi Xrn2",
+    "entra": [],
+    "esce": ["ribonucleotidi monofosfato (NMP)"],
+    "irreversibile": true,
+    "nota": "L'esonucleasi Xrn2 divora l'RNA rimasto attaccato alla polimerasi, la raggiunge e la fa staccare dal DNA (modello «a siluro»). Le fosfatasi tolgono i fosfati del CTD e la polimerasi può ricominciare su un altro gene."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "gene (DNA) → pre-mRNA, letto sul filamento stampo 3'→5' e costruito 5'→3' (U al posto di T)",
+   "ogni nucleotide aggiunto: NTP → NMP nell'RNA + PPi",
+   "la regolazione avviene soprattutto all'inizio (attivatori, cromatina) e alla ripartenza dalla pausa (P-TEFb)",
+   "un gene molto attivo è trascritto da molte polimerasi una dietro l'altra"
+  ],
+  "dopo": {
+   "titolo": "Dove va il pre-mRNA",
+   "strade": [
+    {
+     "condizione": "Nel nucleo, mentre la trascrizione è ancora in corso",
+     "da": "pre-mRNA",
+     "a": "mRNA maturo",
+     "enzima": "spliceosoma",
+     "entra": [],
+     "esce": ["introni"],
+     "nota": "Il pre-mRNA riceve il cappuccio, perde gli introni e prende la coda poli(A): diventa mRNA maturo e può uscire dal nucleo.",
+     "prossimo": "maturazione dell'mrna"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Tre RNA polimerasi negli eucarioti, una sola nei batteri",
+    "voci": [
+     ["rRNA grandi, mRNA, tRNA e rRNA 5S", ["RNA polimerasi I", "RNA polimerasi II", "RNA polimerasi III"]],
+     ["Nei batteri (bersaglio della rifampicina)", ["RNA polimerasi batterica"]]
+    ]
+   },
+   {
+    "titolo": "La «coda» della polimerasi che coordina tutto",
+    "voci": [
+     ["Fosforilata in modo diverso a ogni fase", ["dominio C-terminale (CTD)", "CDK7 (di TFIIH)", "P-TEFb (CDK9-ciclina T)"]]
+    ]
+   }
+  ]
+ },
+
+ "maturazione dell'mrna": {
+  "titolo": "Maturazione dell'mRNA: cappuccio, splicing e coda poli(A)",
+  "dove": "Nucleo, in gran parte mentre la RNA polimerasi II sta ancora trascrivendo",
+  "inizio": "pre-mRNA",
+  "intro": "Il pre-mRNA appena trascritto non si può ancora usare. Riceve un cappuccio all'inizio (5'), perde gli introni (splicing) e prende una coda di adenine alla fine (3'). Solo così è stabile, esce dal nucleo e viene letto dal ribosoma. Qui ogni lavorazione è vista passo per passo; la mappa «sintesi proteica» la riassume in tre tappe.",
+  "fasi": [
+   {"da": 1, "nome": "Capping: il cappuccio al 5' (quando l'RNA è lungo 20-30 nucleotidi)"},
+   {"da": 4, "nome": "Splicing: si ripete per ogni introne"},
+   {"da": 9, "nome": "Poliadenilazione: taglio e coda al 3'"},
+   {"da": 11, "nome": "Esportazione nel citoplasma"}
+  ],
+  "passaggi": [
+   {
+    "da": ["pre-mRNA"],
+    "a": ["pre-mRNA con 5'-difosfato"],
+    "enzima": "RNA trifosfatasi",
+    "entra": ["H₂O"],
+    "esce": ["fosfato (Pi)"],
+    "nota": "Il primo nucleotide dell'RNA ha tre fosfati. La trifosfatasi toglie l'ultimo e ne lascia due."
+   },
+   {
+    "da": ["pre-mRNA con 5'-difosfato"],
+    "a": ["cappuccio non metilato (GpppN)"],
+    "enzima": "guanililtransferasi",
+    "entra": ["GTP"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "Si aggiunge una guanina (GMP preso dal GTP) «al contrario», con un legame 5'-5' a tre fosfati. Un legame così non esiste da nessun'altra parte nell'RNA."
+   },
+   {
+    "da": ["cappuccio non metilato (GpppN)"],
+    "a": ["pre-mRNA con cappuccio"],
+    "enzima": "guanina-N7 metiltransferasi",
+    "entra": ["S-adenosilmetionina (SAM)"],
+    "esce": ["S-adenosilomocisteina (SAH)"],
+    "nota": "La guanina riceve un metile sull'azoto 7: nasce il cappuccio m⁷G. Spesso viene metilato anche il ribosio dei primi nucleotidi. Il cappuccio viene legato dal complesso CBC e protegge l'RNA dalle esonucleasi."
+   },
+   {
+    "da": ["pre-mRNA con cappuccio"],
+    "a": ["complesso E (introne riconosciuto)"],
+    "enzima": "snRNP U1",
+    "entra": [],
+    "esce": [],
+    "nota": "L'RNA della snRNP U1 si appaia al sito di splicing 5' (che inizia con GU). Altre proteine (SF1 e U2AF) riconoscono il punto di ramificazione, il tratto ricco di pirimidine e l'AG finale dell'introne."
+   },
+   {
+    "da": ["complesso E (introne riconosciuto)"],
+    "a": ["complesso A"],
+    "enzima": "snRNP U2",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "La snRNP U2 si appaia alla sequenza del punto di ramificazione. La adenina del punto di ramificazione resta spaiata e sporge: sarà lei ad attaccare."
+   },
+   {
+    "da": ["complesso A"],
+    "a": ["spliceosoma attivo"],
+    "enzima": "tri-snRNP U4/U6·U5",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "Arriva il tri-snRNP. Elicasi che usano ATP riorganizzano gli RNA: U1 e U4 escono, U6 prende il posto di U1 al sito 5' e si appaia con U2. Si forma così il centro catalitico di RNA (U2/U6 con ioni Mg²⁺)."
+   },
+   {
+    "da": ["spliceosoma attivo"],
+    "a": ["intermedio a cappio (lariat)"],
+    "enzima": "spliceosoma",
+    "entra": [],
+    "esce": [],
+    "nota": "Prima transesterificazione: il 2'-OH della adenina di ramificazione attacca il fosfato del sito 5'. L'esone a monte si stacca e l'introne si chiude su se stesso a forma di cappio."
+   },
+   {
+    "da": ["intermedio a cappio (lariat)"],
+    "a": ["esoni uniti"],
+    "enzima": "spliceosoma",
+    "entra": [],
+    "esce": ["introni"],
+    "nota": "Seconda transesterificazione: il 3'-OH dell'esone a monte attacca il sito 3' (AG). I due esoni si uniscono e l'introne esce a cappio e viene degradato. Poco a monte della giunzione resta un complesso proteico (EJC) che ricorda dove c'era l'introne."
+   },
+   {
+    "da": ["esoni uniti"],
+    "a": ["pre-mRNA tagliato al 3'"],
+    "enzima": "CPSF e CstF",
+    "entra": [],
+    "esce": ["RNA a valle del taglio"],
+    "nota": "CPSF riconosce il segnale AAUAAA, CstF una sequenza ricca di G e U più a valle. L'RNA viene tagliato tra le due, circa 10-30 nucleotidi dopo AAUAAA."
+   },
+   {
+    "da": ["pre-mRNA tagliato al 3'"],
+    "a": ["mRNA maturo"],
+    "enzima": "poli(A) polimerasi",
+    "entra": ["ATP", "PABPN1"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "La poli(A) polimerasi aggiunge adenine senza stampo, circa 200 nei mammiferi. La proteina PABPN1 si lega alla coda, accelera la sintesi e ne stabilisce la lunghezza. Ora l'mRNA ha cappuccio, esoni uniti e coda."
+   },
+   {
+    "da": ["mRNA maturo"],
+    "a": ["mRNA nel citoplasma"],
+    "enzima": "NXF1-NXT1 (recettore di esportazione)",
+    "entra": ["complesso TREX"],
+    "esce": [],
+    "nota": "Il complesso TREX segnala che l'mRNA è pronto e lo affida al recettore NXF1-NXT1, che lo accompagna attraverso il poro nucleare. Gli RNA lavorati male restano nel nucleo e vengono distrutti dall'esosoma."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "pre-mRNA → mRNA maturo: cappuccio m⁷G al 5', esoni uniti, coda poli(A) al 3'",
+   "ogni introne: 2 transesterificazioni, esce a forma di cappio",
+   "il cappuccio costa 1 GTP e 1 SAM; la coda circa un ATP per ogni adenina",
+   "solo l'mRNA maturo e ben fatto esce dal nucleo"
+  ],
+  "dopo": {
+   "titolo": "Varianti e controlli",
+   "strade": [
+    {
+     "condizione": "Se gli esoni vengono combinati in modo diverso (splicing alternativo)",
+     "da": "pre-mRNA con cappuccio",
+     "a": "isoforme proteiche diverse",
+     "enzima": "proteine SR e hnRNP",
+     "entra": [],
+     "esce": [],
+     "nota": "Le proteine SR favoriscono l'uso di un esone, le hnRNP spesso lo fanno saltare. Così un solo gene può dare più proteine, diverse da tessuto a tessuto.",
+     "prossimo": "sintesi proteica"
+    },
+    {
+     "condizione": "Se l'mRNA contiene un codone di stop troppo presto",
+     "da": "mRNA nel citoplasma",
+     "a": "mRNA degradato",
+     "enzima": "decadimento mediato da nonsenso (NMD)",
+     "entra": [],
+     "esce": [],
+     "nota": "Al primo passaggio del ribosoma, se lo stop si trova prima di un complesso EJC rimasto sull'mRNA, l'mRNA viene distrutto. Così non si producono proteine tronche e dannose.",
+     "prossimo": "mutazioni genetiche"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "I pezzi dello spliceosoma",
+    "voci": [
+     ["Piccole ribonucleoproteine nucleari (snRNP)", ["snRNP U1", "snRNP U2", "tri-snRNP U4/U6·U5"]],
+     ["Le parti dell'introne che vengono riconosciute", ["introni"]]
+    ]
+   },
+   {
+    "titolo": "Le due estremità dell'mRNA",
+    "voci": [
+     ["Al 5': il cappuccio", ["enzimi del capping", "pre-mRNA con cappuccio"]],
+     ["Al 3': la coda", ["poli(A) polimerasi", "PABPN1"]]
+    ]
+   }
+  ]
+ },
+
+ "ciclo cellulare": {
+  "titolo": "Ciclo cellulare: fasi, cicline e punti di controllo",
+  "dove": "Tutte le cellule che si dividono (midollo osseo, epiteli, cellule in crescita)",
+  "inizio": "cellula quiescente (G0)",
+  "intro": "Il ciclo cellulare è la sequenza G1 → S → G2 → M che porta una cellula a dividersi in due. Lo guidano chinasi che funzionano solo legate a una ciclina (CDK): le cicline salgono e scendono a ogni fase e danno il ritmo. I punti di controllo fermano il ciclo se qualcosa non va (DNA danneggiato, cromosomi non agganciati). Una cellula umana in coltura completa un ciclo in circa 24 ore. I dettagli della divisione sono nella mappa «mitosi».",
+  "fasi": [
+   {"da": 1, "nome": "G1: la decisione di dividersi"},
+   {"da": 4, "nome": "S: copia del DNA"},
+   {"da": 5, "nome": "G2: controllo e preparazione"},
+   {"da": 7, "nome": "M: mitosi e uscita"}
+  ],
+  "passaggi": [
+   {
+    "da": ["cellula quiescente (G0)"],
+    "a": ["cellula in interfase (G1)"],
+    "enzima": "fattori di crescita (mitogeni)",
+    "entra": [],
+    "esce": ["ciclina D"],
+    "nota": "Una cellula ferma (G0) riparte solo se riceve segnali dall'esterno. I fattori di crescita attivano la via RAS-MAPK, che accende il gene della ciclina D."
+   },
+   {
+    "da": ["cellula in interfase (G1)"],
+    "a": ["Rb parzialmente fosforilata"],
+    "enzima": "CDK4/6-ciclina D",
+    "entra": ["proteina Rb", "ATP"],
+    "esce": ["ADP"],
+    "nota": "La ciclina D si lega a CDK4 o CDK6, che cominciano a fosforilare la proteina Rb. Rb è il freno che tiene spento il fattore E2F."
+   },
+   {
+    "da": ["Rb parzialmente fosforilata"],
+    "a": ["E2F libero"],
+    "enzima": "CDK2-ciclina E",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "limitante": true,
+    "nota": "Punto di restrizione: CDK2-ciclina E completa la fosforilazione di Rb, che lascia libero E2F. E2F accende i geni della fase S, compresa la ciclina E stessa (retroazione positiva). Superato questo punto la cellula si divide anche senza più fattori di crescita."
+   },
+   {
+    "da": ["E2F libero"],
+    "a": ["cromosomi duplicati (fase S)"],
+    "enzima": "CDK2-ciclina A",
+    "entra": ["desossiribonucleotidi (dNTP)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "Le CDK di fase S, insieme alla chinasi DDK, accendono le origini di replicazione e il DNA viene copiato una sola volta. Se la copia incontra danni, il punto di controllo della fase S (ATR-Chk1) la rallenta."
+   },
+   {
+    "da": ["cromosomi duplicati (fase S)"],
+    "a": ["cellula pronta (G2)"],
+    "enzima": "Wee1 (chinasi inibitoria)",
+    "entra": ["ciclina B", "ATP"],
+    "esce": ["ADP"],
+    "nota": "In G2 la ciclina B si accumula e si lega a CDK1, ma Wee1 tiene il complesso spento fosforilando CDK1 in Tyr15. Se il DNA è danneggiato o non ancora copiato, le chinasi ATR-Chk1 bloccano l'attivatore Cdc25: punto di controllo G2/M."
+   },
+   {
+    "da": ["cellula pronta (G2)"],
+    "a": ["CDK1-ciclina B (MPF)"],
+    "enzima": "fosfatasi Cdc25",
+    "entra": [],
+    "esce": ["fosfato (Pi)"],
+    "limitante": true,
+    "nota": "Cdc25 toglie i fosfati inibitori e CDK1 si accende. CDK1 attiva altra Cdc25 e spegne Wee1: con questa doppia retroazione positiva tutto l'MPF si accende di colpo e la cellula entra in mitosi."
+   },
+   {
+    "da": ["CDK1-ciclina B (MPF)"],
+    "a": ["piastra metafasica (metafase)"],
+    "enzima": "punto di controllo del fuso (SAC)",
+    "entra": [],
+    "esce": [],
+    "nota": "L'MPF fa condensare i cromosomi, rompe l'involucro nucleare e monta il fuso. Il punto di controllo del fuso blocca l'APC/C finché ogni cinetocore non è agganciato bene: un solo cromosoma libero basta a fermare tutto."
+   },
+   {
+    "da": ["piastra metafasica (metafase)"],
+    "a": ["cromatidi separati (anafase)"],
+    "enzima": "complesso promotore dell'anafase (APC/C)",
+    "entra": ["ubiquitina"],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "L'APC/C, con il suo attivatore Cdc20, attacca ubiquitina a securina e ciclina B, che vengono distrutte dal proteasoma. La separasi taglia la coesina e i cromatidi si separano. La distruzione delle proteine rende questo passaggio senza ritorno."
+   },
+   {
+    "da": ["cromatidi separati (anafase)"],
+    "a": ["due cellule figlie"],
+    "enzima": "fosfatasi mitotiche (PP1, PP2A)",
+    "entra": [],
+    "esce": ["fosfato (Pi)"],
+    "nota": "Senza ciclina B l'attività di CDK1 crolla e le fosfatasi tolgono i fosfati messi in mitosi: si riformano i nuclei (telofase) e il citoplasma si divide (citocinesi)."
+   },
+   {
+    "da": ["due cellule figlie"],
+    "a": ["cellula in interfase (G1)"],
+    "enzima": "APC/C-Cdh1",
+    "entra": [],
+    "esce": [],
+    "nota": "In G1 l'APC/C legato a Cdh1 tiene basse le cicline mitotiche. Ogni cellula figlia può ricominciare il ciclo, se riceve fattori di crescita, oppure uscire in G0 e differenziarsi."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "G1 → S → G2 → M: in G1 si decide, in S si copia il DNA, in G2 si controlla, in M ci si divide",
+   "ogni fase ha la sua coppia CDK-ciclina: CDK4/6-ciclina D, CDK2-ciclina E, CDK2-ciclina A, CDK1-ciclina B",
+   "punti di controllo: restrizione (G1/S), danno al DNA (G1, S, G2/M), fuso (metafase/anafase)",
+   "le cicline vengono distrutte dal proteasoma: per questo il ciclo va in una sola direzione"
+  ],
+  "dopo": {
+   "titolo": "Quando il ciclo si ferma",
+   "strade": [
+    {
+     "condizione": "Se il DNA è danneggiato in G1",
+     "da": "cellula in interfase (G1)",
+     "a": "arresto del ciclo in G1",
+     "enzima": "p53",
+     "entra": [],
+     "esce": ["p21 (inibitore delle CDK)"],
+     "nota": "Il danno stabilizza p53, che accende il gene di p21: p21 blocca CDK2 e la cellula si ferma per riparare. Se il danno è troppo grave, p53 avvia la morte programmata.",
+     "prossimo": "apoptosi"
+    },
+    {
+     "condizione": "Se mancano i fattori di crescita o la cellula si differenzia",
+     "da": "cellula in interfase (G1)",
+     "a": "cellula quiescente (G0)",
+     "enzima": "inibitori delle CDK (p16, p27)",
+     "entra": [],
+     "esce": [],
+     "nota": "p16 blocca CDK4/6, p27 blocca CDK2: Rb resta attiva e la cellula esce dal ciclo. Neuroni e fibre muscolari restano in G0 per sempre; epatociti e linfociti possono ripartire."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Le coppie CDK-ciclina, fase per fase",
+    "voci": [
+     ["G1", ["CDK4/6-ciclina D"]],
+     ["Passaggio G1/S e fase S", ["CDK2-ciclina E", "CDK2-ciclina A"]],
+     ["G2/M", ["CDK1-ciclina B (MPF)"]]
+    ]
+   },
+   {
+    "titolo": "I freni del ciclo (geni oncosoppressori)",
+    "voci": [
+     ["Chi trattiene E2F", ["proteina Rb"]],
+     ["Il guardiano del genoma e i suoi inibitori", ["p53", "p21 (inibitore delle CDK)", "inibitori delle CDK (p16, p27)"]]
+    ]
+   }
+  ]
+ },
+
+ "apoptosi": {
+  "titolo": "Apoptosi: la morte cellulare programmata",
+  "dove": "Tutte le cellule; la via intrinseca passa dai mitocondri, quella estrinseca parte dai recettori di morte sulla membrana",
+  "inizio": "danno al DNA o stress cellulare",
+  "intro": "L'apoptosi è un suicidio ordinato: la cellula si smonta da sola in pacchetti che vengono mangiati dai macrofagi, senza infiammazione. Serve a eliminare cellule danneggiate, infettate o in più (per esempio tra le dita dell'embrione). Il cuore del processo sono le caspasi, proteasi che si attivano a cascata. Qui si segue la via intrinseca (mitocondriale); la via estrinseca è tra le strade alla fine.",
+  "fasi": [
+   {"da": 1, "nome": "Il segnale: p53 e le proteine BH3-only"},
+   {"da": 3, "nome": "La decisione al mitocondrio (punto di non ritorno)"},
+   {"da": 5, "nome": "La cascata delle caspasi"},
+   {"da": 8, "nome": "Lo smontaggio e la rimozione"}
+  ],
+  "passaggi": [
+   {
+    "da": ["danno al DNA o stress cellulare"],
+    "a": ["p53 stabilizzata"],
+    "enzima": "chinasi ATM e ATR",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "Normalmente p53 viene subito distrutta grazie a MDM2. Quando il DNA è danneggiato, ATM e ATR (con Chk2 e Chk1) fosforilano p53, che sfugge a MDM2 e si accumula."
+   },
+   {
+    "da": ["p53 stabilizzata"],
+    "a": ["proteine BH3-only (PUMA, NOXA, BIM)"],
+    "enzima": "p53",
+    "entra": [],
+    "esce": [],
+    "nota": "p53 è un fattore di trascrizione: se il danno è lieve accende p21 e ferma il ciclo; se è grave accende i geni di PUMA e NOXA. Altri stress (mancanza di fattori di crescita, stress del reticolo) attivano BIM e le altre BH3-only."
+   },
+   {
+    "da": ["proteine BH3-only (PUMA, NOXA, BIM)"],
+    "a": ["BAX e BAK attivati"],
+    "enzima": "famiglia BCL-2",
+    "entra": ["BCL-2 e BCL-xL (antiapoptotiche)"],
+    "esce": [],
+    "limitante": true,
+    "nota": "Le BH3-only neutralizzano le proteine protettive (BCL-2, BCL-xL, MCL-1) e attivano BAX e BAK. È l'equilibrio tra membri protettivi e membri killer della famiglia BCL-2 a decidere se la cellula vive o muore."
+   },
+   {
+    "da": ["BAX e BAK attivati"],
+    "a": ["citocromo c nel citosol"],
+    "enzima": "mitocondrio",
+    "entra": [],
+    "esce": ["Smac/DIABLO"],
+    "irreversibile": true,
+    "nota": "BAX e BAK si uniscono in gruppi e bucano la membrana esterna del mitocondrio. Escono il citocromo c (che normalmente porta elettroni nella catena respiratoria) e Smac/DIABLO. Da qui in genere non si torna indietro."
+   },
+   {
+    "da": ["citocromo c nel citosol"],
+    "a": ["apoptosoma"],
+    "enzima": "APAF-1",
+    "entra": ["ATP"],
+    "esce": [],
+    "nota": "Il citocromo c si lega ad APAF-1, che con l'aiuto di (d)ATP si riunisce in una ruota a sette raggi: l'apoptosoma."
+   },
+   {
+    "da": ["procaspasi-9"],
+    "a": ["caspasi-9"],
+    "enzima": "apoptosoma",
+    "entra": [],
+    "esce": [],
+    "nota": "L'apoptosoma raccoglie le procaspasi-9 e le avvicina: così si attivano. La caspasi-9 è la caspasi iniziatrice della via intrinseca."
+   },
+   {
+    "da": ["procaspasi-3 e -7"],
+    "a": ["caspasi-3 e -7 (esecutrici)"],
+    "enzima": "caspasi-9",
+    "entra": [],
+    "esce": [],
+    "irreversibile": true,
+    "nota": "La caspasi-9 taglia e attiva le caspasi esecutrici: ogni caspasi attiva ne accende molte, e il segnale si amplifica. La proteina XIAP potrebbe frenarle, ma Smac/DIABLO uscito dal mitocondrio la blocca."
+   },
+   {
+    "da": ["ICAD-CAD (DNasi inattiva)"],
+    "a": ["DNA frammentato"],
+    "enzima": "caspasi-3 e -7 (esecutrici)",
+    "entra": [],
+    "esce": [],
+    "nota": "Le caspasi tagliano l'inibitore ICAD e liberano la DNasi CAD, che spezza il DNA tra un nucleosoma e l'altro (frammenti multipli di circa 180-200 paia di basi: la «scala» all'elettroforesi). Tagliano anche le lamine: il nucleo si condensa (picnosi) e si frammenta (carioressi)."
+   },
+   {
+    "da": ["DNA frammentato"],
+    "a": ["corpi apoptotici"],
+    "enzima": "caspasi-3 e -7 (esecutrici)",
+    "entra": [],
+    "esce": [],
+    "nota": "Tagliando proteine del citoscheletro le caspasi fanno restringere la cellula e gonfiare la membrana in bolle (blebbing). La cellula si divide in pacchetti chiusi da membrana: i corpi apoptotici. Il contenuto non esce, quindi non c'è infiammazione."
+   },
+   {
+    "da": ["corpi apoptotici"],
+    "a": ["cellula rimossa senza infiammazione"],
+    "enzima": "macrofagi",
+    "entra": ["fosfatidilserina esposta"],
+    "esce": [],
+    "nota": "La fosfatidilserina, che di solito sta nel lato interno della membrana, passa all'esterno e fa da segnale «mangiami». I macrofagi inglobano i corpi apoptotici (efferocitosi) e liberano segnali antinfiammatori."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "segnale di morte → BH3-only → BAX/BAK → citocromo c → apoptosoma → caspasi-9 → caspasi-3 e -7 → corpi apoptotici",
+   "la cellula si smonta in modo ordinato, consuma ATP e non provoca infiammazione (al contrario della necrosi)",
+   "troppo poca apoptosi: tumori e malattie autoimmuni; troppa: neurodegenerazione, danno da ischemia"
+  ],
+  "dopo": {
+   "titolo": "Le altre strade verso le caspasi",
+   "strade": [
+    {
+     "condizione": "Via estrinseca: il segnale arriva da fuori (recettori di morte)",
+     "da": "ligando di morte (FasL, TNF, TRAIL)",
+     "a": "caspasi-8",
+     "enzima": "recettori di morte (Fas, TNFR1)",
+     "entra": ["FADD"],
+     "esce": [],
+     "nota": "Il ligando unisce i recettori, che richiamano FADD e la procaspasi-8 (complesso DISC). La caspasi-8 attiva direttamente le caspasi-3 e -7; in alcune cellule taglia anche BID e coinvolge il mitocondrio."
+    },
+    {
+     "condizione": "Linfociti T citotossici e cellule NK uccidono una cellula infetta o tumorale",
+     "da": "granzima B",
+     "a": "caspasi-3 e -7 (esecutrici)",
+     "enzima": "linfocita T citotossico (CD8⁺)",
+     "entra": ["perforina"],
+     "esce": [],
+     "nota": "La perforina apre la strada al granzima B, una proteasi che entra nella cellula bersaglio e attiva direttamente le caspasi esecutrici (e taglia BID)."
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "La famiglia BCL-2: chi protegge e chi uccide",
+    "voci": [
+     ["Proteggono il mitocondrio", ["BCL-2 e BCL-xL (antiapoptotiche)"]],
+     ["Bucano il mitocondrio", ["BAX e BAK attivati"]],
+     ["Danno il segnale", ["proteine BH3-only (PUMA, NOXA, BIM)"]]
+    ]
+   },
+   {
+    "titolo": "Freni e acceleratori delle caspasi",
+    "voci": [
+     ["Il freno e chi lo toglie", ["XIAP", "Smac/DIABLO"]]
+    ]
+   },
+   {
+    "titolo": "Un'altra morte, disordinata",
+    "voci": [
+     ["La cellula si gonfia e scoppia, con infiammazione", ["necrosi"]]
+    ]
+   }
+  ]
+ },
+
+ "riparazione del dna": {
+  "titolo": "Riparazione del DNA: una squadra per ogni tipo di danno",
+  "dove": "Nucleo di tutte le cellule (anche il DNA dei mitocondri ha una riparazione più semplice)",
+  "inizio": "base danneggiata",
+  "intro": "Ogni giorno il DNA di ogni cellula subisce migliaia di danni: basi ossidate o deaminate, legami creati dai raggi UV, rotture dei filamenti, errori di copia. Per ogni tipo di danno c'è un sistema dedicato. Quasi tutti usano lo stesso trucco: tolgono il pezzo rovinato e lo ricopiano usando come stampo il filamento sano. I quattro gruppi di passaggi qui sotto sono quattro sistemi diversi.",
+  "fasi": [
+   {"da": 1, "nome": "Escissione di basi (BER): una sola base rovinata"},
+   {"da": 4, "nome": "Escissione di nucleotidi (NER): un tratto deformato, per esempio dai raggi UV"},
+   {"da": 8, "nome": "Riparazione dei mismatch (MMR): un errore di copia"},
+   {"da": 10, "nome": "Rottura dei due filamenti: unione diretta (NHEJ) o ricombinazione omologa (HR)"}
+  ],
+  "passaggi": [
+   {
+    "da": ["base danneggiata"],
+    "a": ["sito abasico (AP)"],
+    "enzima": "DNA glicosilasi",
+    "entra": [],
+    "esce": [],
+    "nota": "Una glicosilasi specifica scorre sul DNA, fa uscire la base rovinata dall'elica e la stacca dallo zucchero. Per esempio l'uracile (da deaminazione della citosina) è tolto da UNG, l'8-ossoguanina da OGG1. Resta uno zucchero senza base."
+   },
+   {
+    "da": ["sito abasico (AP)"],
+    "a": ["DNA con un nucleotide mancante"],
+    "enzima": "AP endonucleasi (APE1)",
+    "entra": [],
+    "esce": [],
+    "nota": "APE1 taglia lo scheletro di zucchero-fosfato accanto al sito senza base: il filamento si interrompe e resta un buco di un nucleotide."
+   },
+   {
+    "da": ["DNA con un nucleotide mancante"],
+    "a": ["DNA riparato"],
+    "enzima": "DNA polimerasi β",
+    "entra": ["desossiribonucleotidi (dNTP)", "ATP"],
+    "esce": ["pirofosfato (PPi)", "AMP"],
+    "nota": "La pol β toglie il resto dello zucchero e inserisce il nucleotide giusto copiando il filamento opposto. La DNA ligasi III (con XRCC1) chiude il filamento usando ATP."
+   },
+   {
+    "da": ["dimero di timina"],
+    "a": ["lesione riconosciuta"],
+    "enzima": "XPC (riconoscimento della lesione)",
+    "entra": [],
+    "esce": [],
+    "nota": "I raggi UV uniscono due pirimidine vicine (dimeri di timina e fotoprodotti 6-4) e deformano l'elica. XPC riconosce la deformazione in tutto il genoma; nei geni che si stanno trascrivendo il segnale è invece la RNA polimerasi II bloccata, con CSA e CSB."
+   },
+   {
+    "da": ["lesione riconosciuta"],
+    "a": ["DNA aperto attorno alla lesione"],
+    "enzima": "TFIIH",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "Lo stesso TFIIH della trascrizione apre la doppia elica con le sue elicasi XPB e XPD. XPA e RPA controllano che ci sia davvero una lesione e tengono aperto il DNA."
+   },
+   {
+    "da": ["DNA aperto attorno alla lesione"],
+    "a": ["varco di circa 30 nucleotidi"],
+    "enzima": "endonucleasi XPF-ERCC1 e XPG",
+    "entra": [],
+    "esce": ["oligonucleotide con la lesione"],
+    "nota": "Due tagli sullo stesso filamento: XPF-ERCC1 dal lato 5' e XPG dal lato 3' della lesione. Esce un pezzetto di circa 30 nucleotidi che contiene il danno."
+   },
+   {
+    "da": ["varco di circa 30 nucleotidi"],
+    "a": ["DNA riparato"],
+    "enzima": "DNA polimerasi",
+    "entra": ["desossiribonucleotidi (dNTP)", "PCNA (pinza scorrevole)", "ATP"],
+    "esce": ["pirofosfato (PPi)", "AMP"],
+    "nota": "Una DNA polimerasi (δ, ε o κ) con la pinza PCNA ricopia il tratto usando il filamento sano come stampo; una DNA ligasi chiude l'ultima interruzione."
+   },
+   {
+    "da": ["appaiamento sbagliato (mismatch)"],
+    "a": ["tratto del filamento nuovo rimosso"],
+    "enzima": "MutSα e MutLα (MSH2-MSH6, MLH1-PMS2)",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "MutSα riconosce la base sbagliata (o un piccolo anello di inserzione) lasciata dalla polimerasi. MutLα riconosce il filamento nuovo, che ha ancora interruzioni, e lo taglia; l'esonucleasi EXO1 rimuove il tratto con l'errore."
+   },
+   {
+    "da": ["tratto del filamento nuovo rimosso"],
+    "a": ["DNA riparato"],
+    "enzima": "DNA polimerasi δ",
+    "entra": ["desossiribonucleotidi (dNTP)", "ATP"],
+    "esce": ["pirofosfato (PPi)", "AMP"],
+    "nota": "La pol δ ricopia il tratto, questa volta correttamente, e la ligasi chiude. Senza questo sistema gli errori di replicazione sarebbero da 100 a 1000 volte più frequenti."
+   },
+   {
+    "da": ["rottura a doppio filamento"],
+    "a": ["rottura segnalata (γH2AX)"],
+    "enzima": "chinasi ATM e ATR",
+    "entra": ["ATP"],
+    "esce": ["ADP"],
+    "nota": "Il complesso MRN riconosce le estremità rotte e richiama ATM, che fosforila l'istone H2AX (γH2AX) su un ampio tratto attorno alla rottura e attiva Chk2 e p53: il ciclo cellulare si ferma mentre si ripara."
+   },
+   {
+    "da": ["rottura segnalata (γH2AX)"],
+    "a": ["estremità riunite (NHEJ)"],
+    "enzima": "Ku70/80, DNA-PKcs e DNA ligasi IV",
+    "entra": ["ATP"],
+    "esce": ["AMP", "pirofosfato (PPi)"],
+    "nota": "Unione diretta (NHEJ): Ku afferra le due estremità, DNA-PKcs le tiene vicine, le estremità vengono ripulite e la ligasi IV le salda. È veloce e funziona in ogni fase, soprattutto in G1, ma spesso perde o aggiunge qualche nucleotide."
+   },
+   {
+    "da": ["rottura segnalata (γH2AX)"],
+    "a": ["DNA riparato"],
+    "enzima": "BRCA1, BRCA2 e RAD51",
+    "entra": ["cromatidi fratelli", "ATP"],
+    "esce": ["ADP"],
+    "nota": "Ricombinazione omologa (HR), solo in fase S e G2: le estremità vengono accorciate fino a lasciare code singole 3'. BRCA2 vi carica RAD51, che cerca la sequenza uguale sul cromatidio fratello e la usa come stampo. La riparazione è senza errori."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "base singola rovinata → BER; tratto deformato (UV, cisplatino) → NER; errore di copia → MMR; rottura dei due filamenti → NHEJ o HR",
+   "quasi sempre: riconoscere il danno → tagliare → ricopiare dal filamento sano → saldare con la ligasi",
+   "se il danno è troppo grave la cellula si ferma (p53) o muore per apoptosi",
+   "difetti della riparazione: più mutazioni e più tumori (xeroderma pigmentoso, sindrome di Lynch, BRCA)"
+  ],
+  "dopo": {
+   "titolo": "Se il danno non si ripara in tempo",
+   "strade": [
+    {
+     "condizione": "Se il danno è troppo grave",
+     "da": "rottura segnalata (γH2AX)",
+     "a": "p53 stabilizzata",
+     "enzima": "chinasi ATM e ATR",
+     "entra": [],
+     "esce": [],
+     "nota": "p53 ferma il ciclo cellulare per dare tempo alla riparazione; se non basta, avvia l'apoptosi.",
+     "prossimo": "apoptosi"
+    },
+    {
+     "condizione": "Se la forcella di replicazione arriva su una lesione non ancora riparata",
+     "da": "dimero di timina",
+     "a": "lesione superata",
+     "enzima": "DNA polimerasi η (translesione)",
+     "entra": ["desossiribonucleotidi (dNTP)"],
+     "esce": ["pirofosfato (PPi)"],
+     "nota": "Polimerasi speciali «scavalcano» la lesione. La pol η mette due A davanti a un dimero di timina, quindi in modo corretto; altre polimerasi translesione sbagliano più spesso e lasciano mutazioni.",
+     "prossimo": "mutazioni genetiche"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Che cosa danneggia il DNA",
+    "voci": [
+     ["Dall'esterno", ["raggi UVB", "radiazioni ionizzanti"]],
+     ["Dall'interno della cellula", ["specie reattive dell'ossigeno (ROS)"]]
+    ]
+   },
+   {
+    "titolo": "Il guardiano del genoma",
+    "voci": [
+     ["Ferma il ciclo o fa morire la cellula", ["p53"]]
+    ]
+   }
+  ]
+ },
+
+ "mutazioni genetiche": {
+  "titolo": "Mutazioni genetiche: da un errore nel DNA a una proteina diversa",
+  "dove": "Nel DNA di qualunque cellula (nucleo e mitocondri); trasmesse ai figli solo se sono nelle cellule germinali",
+  "inizio": "gene (DNA)",
+  "intro": "Una mutazione è un cambiamento permanente della sequenza del DNA. Nasce da un errore di copia o da un danno non riparato prima della replicazione. Può non avere effetti, cambiare un amminoacido, interrompere la proteina o alterarne la quantità. Le mutazioni sono la causa delle malattie genetiche e dei tumori, ma anche la fonte della variabilità su cui agisce l'evoluzione.",
+  "fasi": [
+   {"da": 1, "nome": "Come nasce una mutazione"},
+   {"da": 3, "nome": "Dal gene mutato alla proteina"},
+   {"da": 5, "nome": "Che cosa cambia nella proteina"}
+  ],
+  "passaggi": [
+   {
+    "da": ["gene (DNA)"],
+    "a": ["lesione del DNA"],
+    "enzima": "agenti mutageni",
+    "entra": ["raggi UVB", "radiazioni ionizzanti", "specie reattive dell'ossigeno (ROS)"],
+    "esce": [],
+    "nota": "Il danno può venire da fuori (raggi UV, radiazioni, fumo di tabacco, aflatossina) o da dentro (ossigeno reattivo, perdita spontanea di basi, deaminazione della citosina). Anche la DNA polimerasi a volte sbaglia: in questo caso l'errore è già un appaiamento sbagliato."
+   },
+   {
+    "da": ["lesione del DNA"],
+    "a": ["mutazione fissata nei due filamenti"],
+    "enzima": "DNA polimerasi",
+    "entra": ["desossiribonucleotidi (dNTP)"],
+    "esce": ["pirofosfato (PPi)"],
+    "irreversibile": true,
+    "nota": "Finché il danno è su un solo filamento si può ancora riparare. Se arriva prima la replicazione, la polimerasi mette la base sbagliata di fronte alla lesione; alla copia successiva l'errore è su entrambi i filamenti e diventa una mutazione permanente. Esempio: la 8-ossoguanina si appaia con A, e una coppia G-C diventa T-A."
+   },
+   {
+    "da": ["mutazione fissata nei due filamenti"],
+    "a": ["mRNA alterato"],
+    "enzima": "RNA polimerasi II",
+    "entra": ["ribonucleotidi (NTP)"],
+    "esce": ["pirofosfato (PPi)"],
+    "nota": "Se la mutazione cade in un esone viene copiata nell'mRNA. Se cade in un sito di splicing l'mRNA perde un esone o tiene un pezzo di introne (per esempio in molte β-talassemie). Se cade nel promotore cambia la quantità di mRNA."
+   },
+   {
+    "da": ["mRNA alterato"],
+    "a": ["proteina alterata"],
+    "enzima": "ribosoma completo (80S)",
+    "entra": ["amminoacil-tRNA"],
+    "esce": [],
+    "nota": "Il ribosoma legge i codoni come sono scritti. Una sostituzione può non cambiare nulla (silente), cambiare un amminoacido (missenso) o creare uno stop (nonsenso). Un'inserzione o una delezione non multipla di 3 sposta la cornice di lettura (frameshift) e cambia tutto ciò che segue."
+   },
+   {
+    "da": ["proteina alterata"],
+    "a": ["perdita di funzione"],
+    "enzima": "proteasoma",
+    "entra": [],
+    "esce": [],
+    "nota": "Spesso la proteina mutata si ripiega male e viene distrutta dal proteasoma, oppure funziona meno. Di solito basta la copia sana dell'altro cromosoma: queste mutazioni sono in genere recessive (fibrosi cistica, molte malattie metaboliche)."
+   },
+   {
+    "da": ["proteina alterata"],
+    "a": ["guadagno di funzione"],
+    "enzima": "proteina alterata",
+    "entra": [],
+    "esce": [],
+    "nota": "A volte la proteina mutata è sempre accesa o fa un lavoro nuovo e dannoso: queste mutazioni sono di solito dominanti. Esempi: RAS mutata che manda il segnale di crescita senza sosta, il recettore FGFR3 sempre attivo nell'acondroplasia."
+   }
+  ],
+  "titolo_bilancio": "In sintesi",
+  "bilancio": [
+   "danno o errore di copia → (se non riparato) mutazione permanente → mRNA → proteina diversa",
+   "puntiformi (silenti, missenso, nonsenso), inserzioni e delezioni (frameshift), espansioni di triplette, grandi mutazioni dei cromosomi",
+   "somatiche: solo nella persona (tumori); germinali: passano ai figli",
+   "perdita di funzione → di solito recessiva; guadagno di funzione → di solito dominante"
+  ],
+  "dopo": {
+   "titolo": "Che fine fa la mutazione",
+   "strade": [
+    {
+     "condizione": "Se il danno viene riparato prima della replicazione",
+     "da": "lesione del DNA",
+     "a": "DNA riparato",
+     "enzima": "sistemi di riparazione del DNA",
+     "entra": [],
+     "esce": [],
+     "nota": "La grande maggioranza dei danni viene corretta e non diventa mai una mutazione.",
+     "prossimo": "riparazione del dna"
+    },
+    {
+     "condizione": "Se è in una cellula del corpo (mutazione somatica)",
+     "da": "mutazione fissata nei due filamenti",
+     "a": "clone di cellule mutate",
+     "enzima": "divisione cellulare (mitosi)",
+     "entra": [],
+     "esce": [],
+     "nota": "La mutazione passa solo alle cellule figlie di quella cellula. Se colpisce oncogeni e geni oncosoppressori, e se ne accumulano diverse, può nascere un tumore.",
+     "prossimo": "ciclo cellulare"
+    },
+    {
+     "condizione": "Se è in una cellula germinale (uovo o spermatozoo)",
+     "da": "mutazione fissata nei due filamenti",
+     "a": "mutazione ereditaria",
+     "enzima": "fecondazione",
+     "entra": [],
+     "esce": [],
+     "nota": "Il figlio la riceve in tutte le cellule del corpo e la può trasmettere a sua volta.",
+     "prossimo": "meiosi"
+    }
+   ]
+  },
+  "da_sapere": [
+   {
+    "titolo": "Le mutazioni puntiformi (una sola base)",
+    "voci": [
+     ["Stesso amminoacido, amminoacido diverso, stop", ["mutazione silente", "mutazione missenso", "mutazione nonsenso"]]
+    ]
+   },
+   {
+    "titolo": "Inserzioni, delezioni e ripetizioni",
+    "voci": [
+     ["Si sposta la cornice di lettura", ["mutazione frameshift"]],
+     ["Una tripletta ripetuta troppe volte", ["espansione di triplette"]]
+    ]
+   },
+   {
+    "titolo": "Mutazioni dei cromosomi e del loro numero",
+    "voci": [
+     ["Un cromosoma in più o in meno", ["non-disgiunzione", "gamete aneuploide (n+1 o n−1)"]]
+    ]
+   },
+   {
+    "titolo": "Mutazioni e tumori",
+    "voci": [
+     ["Acceleratore bloccato e freno rotto", ["oncogene", "gene oncosoppressore"]]
+    ]
+   }
+  ]
+ }
+}

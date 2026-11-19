@@ -1,0 +1,244 @@
+[
+ {
+  "id": "NBIO-161",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Che cosa fanno gli enzimi di restrizione usati nell'ingegneria genetica?",
+  "opzioni": {
+   "A": "Uniscono frammenti di DNA tra loro",
+   "B": "Copiano l'RNA in DNA",
+   "C": "Separano i frammenti di DNA in base alla lunghezza",
+   "D": "Tagliano il DNA in corrispondenza di specifiche sequenze di riconoscimento, spesso palindromiche",
+   "E": "Sintetizzano DNA a partire da un innesco"
+  },
+  "giusta": "D",
+  "perche": "Gli enzimi di restrizione sono endonucleasi di origine batterica, che in natura difendono i batteri dai fagi. Ognuno riconosce una sequenza breve e specifica, spesso palindromica (per esempio GAATTC per EcoRI), e taglia entrambi i filamenti producendo estremità piatte o coesive. Unire i frammenti (A) è il compito della DNA ligasi, che viene spesso confusa con questi enzimi.",
+  "semplice": "Gli enzimi di restrizione sono «forbici molecolari» che tagliano il DNA solo dove leggono una precisa parola, sempre la stessa. Così si possono ritagliare geni in modo preciso.",
+  "passaggi": [
+   "Ricorda gli strumenti base: forbici (restrizione), colla (ligasi), fotocopiatrice (polimerasi)",
+   "Unire è compito della ligasi: escludi A",
+   "Copiare è compito delle polimerasi: escludi B ed E",
+   "Separare per lunghezza è l'elettroforesi: escludi C",
+   "Resta la D"
+  ],
+  "concetto": "Enzimi di restrizione"
+ },
+ {
+  "id": "NBIO-162",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Quale enzima viene usato per inserire un gene in un plasmide, saldando i legami fosfodiestere tra i frammenti di DNA?",
+  "opzioni": {
+   "A": "La DNA ligasi",
+   "B": "L'elicasi",
+   "C": "La trascrittasi inversa",
+   "D": "L'enzima di restrizione",
+   "E": "L'RNA polimerasi"
+  },
+  "giusta": "A",
+  "perche": "Dopo aver tagliato il plasmide e il gene con lo stesso enzima di restrizione, le estremità coesive complementari si appaiano tramite legami a idrogeno; la DNA ligasi forma poi i legami fosfodiestere che uniscono stabilmente i frammenti, producendo un DNA ricombinante. L'enzima di restrizione (D) prepara le estremità, ma non le salda. L'elicasi separa i filamenti durante la replicazione.",
+  "semplice": "Se l'enzima di restrizione è la forbice, la ligasi è la colla: incolla il gene nel plasmide in modo stabile, come un pezzo aggiunto a una collana.",
+  "passaggi": [
+   "Individua l'azione richiesta: unire frammenti di DNA",
+   "L'enzima che forma legami fosfodiestere tra frammenti è la ligasi",
+   "L'enzima di restrizione taglia, non unisce: escludi D",
+   "Resta la A"
+  ],
+  "concetto": "DNA ligasi e DNA ricombinante"
+ },
+ {
+  "id": "NBIO-163",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Partendo da una sola molecola di DNA a doppio filamento, quante copie della sequenza bersaglio si ottengono in teoria dopo 10 cicli di PCR?",
+  "opzioni": {
+   "A": "20",
+   "B": "100",
+   "C": "1024",
+   "D": "512",
+   "E": "10 000"
+  },
+  "giusta": "C",
+  "perche": "In ogni ciclo di PCR ogni molecola a doppio filamento viene denaturata e copiata, quindi il numero di copie raddoppia. Dopo n cicli, partendo da una molecola, si ottengono 2ⁿ copie: 2¹⁰ = 1024. L'errore tipico è rispondere 20, pensando a un aumento lineare (due copie per ciclo), oppure 512, che corrisponde a 9 cicli.",
+  "semplice": "La PCR funziona come una catena di fotocopie dove ogni copia viene fotocopiata di nuovo: 1, 2, 4, 8... Dopo 10 raddoppi si arriva a 1024.",
+  "passaggi": [
+   "Dati: 1 molecola iniziale, 10 cicli",
+   "Ogni ciclo raddoppia: N = N₀ × 2ⁿ",
+   "Calcolo: 1 × 2¹⁰ = 1024",
+   "Risposta C"
+  ],
+  "concetto": "Amplificazione esponenziale nella PCR"
+ },
+ {
+  "id": "NBIO-164",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Perché nella PCR si usa una DNA polimerasi termostabile, come la Taq polimerasi?",
+  "opzioni": {
+   "A": "Perché è l'unica che riconosce i primer",
+   "B": "Perché taglia il DNA in punti precisi",
+   "C": "Perché lavora senza nucleotidi",
+   "D": "Perché sintetizza RNA invece di DNA",
+   "E": "Perché resiste alle alte temperature (circa 95 °C) della fase di denaturazione ripetuta a ogni ciclo"
+  },
+  "giusta": "E",
+  "perche": "Ogni ciclo di PCR comprende denaturazione a circa 94-95 °C, appaiamento dei primer (annealing) a circa 50-65 °C ed estensione a circa 72 °C. Una polimerasi comune verrebbe denaturata a ogni ciclo, mentre la Taq, isolata dal batterio termofilo Thermus aquaticus, resta attiva e permette di automatizzare il processo. Come tutte le DNA polimerasi ha comunque bisogno di nucleotidi e primer.",
+  "semplice": "La PCR è come cuocere e raffreddare l'impasto molte volte di seguito. Serve un «cuoco» che non si scotti: la Taq viene da batteri che vivono nelle sorgenti calde, quindi sopporta il caldo.",
+  "passaggi": [
+   "Ricorda le tre fasi della PCR e le loro temperature",
+   "La denaturazione a circa 95 °C distruggerebbe una polimerasi normale",
+   "La Taq proviene da un batterio termofilo e resiste al calore",
+   "Resta la E"
+  ],
+  "concetto": "PCR e Taq polimerasi"
+ },
+ {
+  "id": "NBIO-165",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Nell'elettroforesi su gel di agarosio, come si muovono i frammenti di DNA?",
+  "opzioni": {
+   "A": "Verso il polo negativo, e i più grandi sono i più veloci",
+   "B": "Verso il polo positivo, e i frammenti più piccoli migrano più lontano",
+   "C": "Verso il polo positivo, e i frammenti più grandi migrano più lontano",
+   "D": "Restano fermi perché il DNA è neutro",
+   "E": "Verso il polo negativo, a velocità uguale per tutti"
+  },
+  "giusta": "B",
+  "perche": "Il DNA è carico negativamente per i gruppi fosfato dello scheletro, quindi nel campo elettrico migra verso il polo positivo (anodo). Il gel agisce come un setaccio: i frammenti più piccoli si muovono più facilmente tra le maglie e percorrono una distanza maggiore, mentre quelli più grandi restano più vicini ai pozzetti. La C inverte la relazione con la lunghezza ed è la distrazione più frequente.",
+  "semplice": "Il gel è come un bosco fitto: i bambini piccoli corrono veloci tra gli alberi, gli adulti grandi avanzano lentamente. Tutti però corrono verso il «più», attratti dalla carica positiva.",
+  "passaggi": [
+   "Ricorda la carica del DNA: negativa, per i fosfati",
+   "Le cariche negative migrano verso il polo positivo: escludi A, D ed E",
+   "Il gel rallenta di più i frammenti grandi",
+   "I piccoli vanno più lontano: resta la B"
+  ],
+  "concetto": "Elettroforesi su gel"
+ },
+ {
+  "id": "NBIO-166",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Per produrre insulina umana in Escherichia coli si inserisce nel plasmide il cDNA del gene invece del gene preso direttamente dal genoma. Perché?",
+  "opzioni": {
+   "A": "Perché il cDNA contiene più introni",
+   "B": "Perché il cDNA è a singolo filamento",
+   "C": "Perché i batteri non hanno ribosomi",
+   "D": "Perché il cDNA è più lungo e quindi più stabile",
+   "E": "Perché il cDNA, ottenuto dall'mRNA maturo, non contiene introni, che i batteri non saprebbero rimuovere"
+  },
+  "giusta": "E",
+  "perche": "I geni eucariotici contengono introni, che nella cellula umana vengono eliminati con lo splicing. I batteri non possiedono il macchinario dello splicing, quindi tradurrebbero anche gli introni producendo una proteina sbagliata. Il cDNA si ottiene con la trascrittasi inversa a partire dall'mRNA maturo: contiene solo la sequenza codificante e può essere espresso correttamente dal batterio. I batteri hanno ribosomi, per cui la C è falsa.",
+  "semplice": "Il gene umano è come una ricetta piena di note a margine (introni) che il cuoco umano sa saltare, ma il cuoco batterico no. Il cDNA è la ricetta già ripulita, pronta da seguire.",
+  "passaggi": [
+   "Ricorda che i geni eucariotici hanno introni",
+   "I batteri non fanno lo splicing",
+   "Il cDNA deriva dall'mRNA maturo, già senza introni",
+   "Resta la E"
+  ],
+  "concetto": "cDNA ed espressione in batteri"
+ },
+ {
+  "id": "NBIO-167",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Nel sistema CRISPR-Cas9, che cosa indirizza l'enzima Cas9 sulla sequenza di DNA da tagliare?",
+  "opzioni": {
+   "A": "Un anticorpo specifico",
+   "B": "Un RNA guida complementare alla sequenza bersaglio",
+   "C": "Un enzima di restrizione",
+   "D": "Un plasmide circolare",
+   "E": "Un primer di DNA della PCR"
+  },
+  "giusta": "B",
+  "perche": "Cas9 è una nucleasi che taglia il DNA a doppio filamento; la sua specificità deriva da un RNA guida, progettato in laboratorio, che si appaia per complementarità alla sequenza bersaglio vicino a un breve motivo detto PAM. Dopo il taglio, i sistemi di riparazione della cellula possono inattivare il gene o inserire una sequenza nuova. In origine CRISPR è un sistema di difesa dei batteri contro i virus.",
+  "semplice": "Cas9 è come una forbice con il navigatore: l'RNA guida è l'indirizzo che le dice esattamente in quale punto del DNA tagliare.",
+  "passaggi": [
+   "Ricorda le due componenti del sistema: Cas9 e RNA guida",
+   "L'RNA guida riconosce il bersaglio per complementarità",
+   "Le altre opzioni non fanno parte di CRISPR-Cas9",
+   "Resta la B"
+  ],
+  "concetto": "Editing genomico con CRISPR-Cas9"
+ },
+ {
+  "id": "NBIO-168",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Le piante di mais Bt sono state modificate geneticamente inserendo un gene del batterio Bacillus thuringiensis. Quale vantaggio offre questa modifica?",
+  "opzioni": {
+   "A": "Aumenta la fotosintesi",
+   "B": "Rende la pianta resistente alla siccità",
+   "C": "La pianta produce una proteina tossica per alcuni insetti che se ne nutrono, riducendo l'uso di insetticidi",
+   "D": "Arricchisce il mais di vitamina A",
+   "E": "Rende la pianta capace di fissare l'azoto atmosferico"
+  },
+  "giusta": "C",
+  "perche": "Il gene inserito codifica una proteina Cry (tossina Bt) che, nell'intestino alcalino di alcune larve di insetti come la piralide, si attiva e danneggia l'epitelio, uccidendole. La pianta si difende così da sola e servono meno trattamenti insetticidi. L'arricchimento in provitamina A (D) è invece l'obiettivo del «golden rice», un altro organismo geneticamente modificato.",
+  "semplice": "Il mais Bt è come una pianta che si porta dietro il proprio insetticida naturale: gli insetti che la mangiano si ammalano, mentre per l'uomo la proteina non è tossica.",
+  "passaggi": [
+   "Collega Bacillus thuringiensis alla sua proteina insetticida",
+   "La pianta modificata produce la tossina Bt",
+   "La vitamina A riguarda il golden rice: escludi D",
+   "Resta la C"
+  ],
+  "concetto": "Piante transgeniche Bt"
+ },
+ {
+  "id": "NBIO-169",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Che cosa sono le cellule staminali pluripotenti indotte (iPS)?",
+  "opzioni": {
+   "A": "Cellule somatiche adulte riprogrammate, tramite l'espressione di pochi fattori di trascrizione, a uno stato simile a quello delle staminali embrionali",
+   "B": "Cellule prelevate direttamente dalla massa interna della blastocisti",
+   "C": "Cellule tumorali coltivate in laboratorio",
+   "D": "Cellule staminali unipotenti della pelle",
+   "E": "Gameti ottenuti per meiosi in provetta"
+  },
+  "giusta": "A",
+  "perche": "Le iPS si ottengono da cellule già differenziate, per esempio fibroblasti della pelle, nelle quali si fanno esprimere alcuni fattori di trascrizione chiave (come Oct4, Sox2, Klf4 e c-Myc). Le cellule tornano pluripotenti e possono differenziarsi in molti tipi cellulari. La B descrive le staminali embrionali vere e proprie; le iPS evitano l'uso di embrioni e possono essere compatibili con il paziente da cui derivano.",
+  "semplice": "Le iPS sono cellule «riportate all'infanzia»: si prende una cellula adulta della pelle e, con pochi interruttori genetici, la si fa tornare capace di diventare quasi qualsiasi tipo di cellula.",
+  "passaggi": [
+   "Ricorda il significato di «indotte»: ottenute artificialmente",
+   "Partono da cellule adulte differenziate",
+   "Vengono riprogrammate con fattori di trascrizione",
+   "La B descrive le staminali embrionali: resta la A"
+  ],
+  "concetto": "Cellule staminali pluripotenti indotte"
+ },
+ {
+  "id": "NBIO-170",
+  "materia": "Biologia",
+  "argomento": "Biotecnologie e loro applicazioni",
+  "livello": "superiori",
+  "domanda": "Nelle indagini forensi il profilo genetico (DNA fingerprinting) si basa soprattutto sull'analisi di:",
+  "opzioni": {
+   "A": "geni che codificano per l'emoglobina",
+   "B": "sequenze dell'RNA ribosomiale",
+   "C": "proteine del sangue",
+   "D": "brevi sequenze ripetute in tandem (STR), il cui numero di ripetizioni varia molto da persona a persona",
+   "E": "i soli geni del cromosoma Y"
+  },
+  "giusta": "D",
+  "perche": "Gli STR (short tandem repeats) sono brevi sequenze di poche basi ripetute più volte di seguito in regioni non codificanti; il numero di ripetizioni a ciascun locus varia moltissimo tra gli individui. Amplificando con la PCR una serie di loci STR e misurandone la lunghezza si ottiene un profilo praticamente unico, utile per identificazioni e test di paternità. I geni codificanti come quello dell'emoglobina sono troppo simili tra le persone.",
+  "semplice": "Ognuno di noi ha nel DNA certe «parole» ripetute un numero diverso di volte, come una firma: contando le ripetizioni in più punti si ottiene un codice quasi unico, come un'impronta digitale.",
+  "passaggi": [
+   "Cerca regioni molto variabili tra individui",
+   "I geni codificanti sono molto simili tra le persone: escludi A e B",
+   "Gli STR variano nel numero di ripetizioni",
+   "Il cromosoma Y manca nelle donne: escludi E",
+   "Resta la D"
+  ],
+  "concetto": "Profilo del DNA con gli STR"
+ }
+]

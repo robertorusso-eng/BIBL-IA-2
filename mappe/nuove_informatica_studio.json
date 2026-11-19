@@ -1,0 +1,717 @@
+{
+  "Rappresentazione dei dati e sistema binario": {
+    "superiore": {
+      "spiegazione": [
+        "Un computer lavora solo con due stati elettrici, che rappresentiamo con le cifre 0 e 1: ciascuna di queste cifre si chiama bit. Otto bit formano un byte, l'unità con cui si misura la dimensione dei file. Con n bit si ottengono 2ⁿ combinazioni diverse: con 1 bit 2, con 8 bit 256, con 10 bit 1024. Per questo, se devo dare un codice diverso a 300 oggetti, mi servono 9 bit (2⁹ = 512), perché 8 bit (256) non bastano.",
+        "Il sistema decimale è posizionale: in 345 il 3 vale 300 perché sta nella posizione delle centinaia. Il sistema binario funziona allo stesso modo, ma ogni posizione vale il doppio della precedente: 1, 2, 4, 8, 16, 32, 64, 128. Per convertire un binario in decimale si sommano i pesi delle posizioni con cifra 1: 1101 = 8 + 4 + 1 = 13. Per il percorso inverso si divide ripetutamente per 2 e si leggono i resti dal basso verso l'alto: 13 → resti 1, 0, 1, 1 → 1101.",
+        "I numeri binari diventano lunghi in fretta, quindi si usa spesso l'esadecimale (base 16), con le cifre 0-9 e A-F (A = 10, F = 15). Ogni cifra esadecimale corrisponde esattamente a 4 bit, quindi la conversione è immediata: 1011 0111 → B7. Lo incontri nei colori delle pagine web (#FF0000 è il rosso puro) e negli indirizzi di memoria. Esiste anche l'ottale (base 8), in cui ogni cifra corrisponde a 3 bit.",
+        "Per i numeri negativi i computer usano il complemento a due: si scrive il numero positivo, si invertono tutti i bit e si aggiunge 1. Ad esempio +5 = 00000101, invertito 11111010, più 1 = 11111011 = -5. Con 8 bit si rappresentano i numeri da -128 a +127. Se il risultato di un calcolo esce da questo intervallo si ha un overflow: il valore «ricomincia dall'altro lato», come un contachilometri che dopo 999 torna a 000.",
+        "Anche testo, immagini e suoni diventano numeri. Ogni carattere ha un codice: in ASCII la 'A' è 65 e la 'a' è 97; con Unicode e la codifica UTF-8 si possono scrivere tutte le lingue, usando da 1 a 4 byte per carattere. Un'immagine è una griglia di pixel, ognuno con tre valori di rosso, verde e blu (24 bit): una foto di 800 × 600 pixel occupa 800 · 600 · 3 = 1 440 000 byte prima della compressione. Un suono viene misurato (campionato) migliaia di volte al secondo e ogni misura diventa un numero."
+      ],
+      "metodo": [
+        "Scrivi su un foglio la tabella delle potenze di 2 fino a 2¹⁰ = 1024 e ripetila finché la sai a memoria.",
+        "Fai ogni giorno cinque conversioni decimale → binario → esadecimale e verifica il risultato in Python con bin(), hex() e int('...', 2).",
+        "Per il complemento a due segui sempre gli stessi tre passi (positivo, inverti, +1) e controlla sommando il numero al suo opposto: deve dare zero.",
+        "Nei problemi su file e velocità scrivi accanto a ogni numero l'unità (bit o byte) e converti con il fattore 8 prima di fare i conti.",
+        "Collega l'argomento a «Architettura del computer e sistemi operativi»: registri, bus e memoria lavorano proprio con questi numeri binari."
+      ],
+      "ricorda": [
+        "«b minuscola = bit, B maiuscola = byte»: 100 Mbit/s non sono 100 MB/s, ma 12,5 MB/s.",
+        "Una cifra esadecimale = 4 bit, una cifra ottale = 3 bit: taglia sempre a gruppi partendo da destra.",
+        "Complemento a due: «inverti e aggiungi uno».",
+        "Con n bit: 2ⁿ valori, da 0 a 2ⁿ - 1 senza segno."
+      ],
+      "errori": [
+        "Leggere i resti delle divisioni per 2 dall'alto verso il basso: il primo resto è la cifra più a destra.",
+        "Fermarsi al complemento a uno (solo inversione dei bit) dimenticando di aggiungere 1.",
+        "Confondere bit e byte nei calcoli di dimensione e velocità, sbagliando di un fattore 8.",
+        "Credere che 1 kB sia sempre 1024 byte: nel sistema internazionale è 1000 byte, 1024 byte è 1 KiB."
+      ],
+      "domande": [
+        {
+          "domanda": "Quanto vale in decimale il binario 101010?",
+          "risposta": "42: 32 + 8 + 2."
+        },
+        {
+          "domanda": "Come si scrive 200 in esadecimale?",
+          "risposta": "C8: 200 = 12 · 16 + 8."
+        },
+        {
+          "domanda": "Qual è la rappresentazione di -1 in complemento a due su 8 bit?",
+          "risposta": "11111111."
+        },
+        {
+          "domanda": "Quanti valori diversi si rappresentano con 12 bit?",
+          "risposta": "4096 (2¹²)."
+        },
+        {
+          "domanda": "Quanti byte occupa la parola «ciao» in ASCII?",
+          "risposta": "4 byte, uno per carattere."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "In una notazione posizionale in base b il numero cₙ…c₁c₀ vale Σ cᵢ · bⁱ. Le basi di interesse sono 2, 8 e 16, e il passaggio tra binario ed esadecimale è immediato perché 16 = 2⁴. Gli interi senza segno con n bit coprono l'intervallo [0, 2ⁿ - 1]; le operazioni avvengono modulo 2ⁿ, quindi su 8 bit 200 + 100 dà 44. Molti linguaggi (C, Java) hanno interi a dimensione fissa e quindi questo comportamento; Python invece usa interi a precisione arbitraria.",
+        "Il complemento a due rappresenta un intero x su n bit come x se x ≥ 0 e come 2ⁿ + x se x < 0. L'intervallo è [-2ⁿ⁻¹, 2ⁿ⁻¹ - 1] e il bit più significativo indica il segno. Il grande vantaggio è che la somma binaria ordinaria funziona per positivi e negativi: la sottrazione a - b si calcola come a + (-b) con lo stesso sommatore. L'overflow si riconosce perché sommando due numeri dello stesso segno si ottiene un risultato di segno opposto.",
+        "Gli operatori bit a bit (AND, OR, XOR, NOT) e gli scorrimenti (shift) lavorano direttamente sulla rappresentazione. x << k equivale a x · 2ᵏ, x >> k alla divisione intera per 2ᵏ; x & 1 dice se x è dispari. L'AND con una maschera isola alcuni bit, ed è proprio ciò che fa un router con la subnet mask. Lo XOR ha la proprietà a ^ b ^ b = a, usata in crittografia e nei codici di controllo.",
+        "I numeri reali si rappresentano in virgola mobile secondo lo standard IEEE 754: valore = (-1)ˢ · 1,mantissa · 2^(esponente - bias). In doppia precisione (il float di Python) si usano 64 bit: 1 di segno, 11 di esponente, 52 di mantissa, con circa 15-16 cifre decimali significative. Molti numeri decimali semplici, come 0,1, in binario sono periodici e vengono arrotondati: per questo 0.1 + 0.2 == 0.3 è falso. I float si confrontano con una tolleranza (math.isclose) e non vanno usati per importi monetari esatti, per i quali esiste il modulo decimal.",
+        "Unicode assegna un numero (code point) a ogni carattere; UTF-8 lo codifica con 1-4 byte ed è compatibile con ASCII per i primi 128 caratteri. Per proteggere i dati dagli errori di trasmissione si aggiungono bit ridondanti: la parità rileva un errore singolo, i codici CRC rilevano raffiche di errori, i codici di Hamming permettono anche di correggerli. Per i segnali analogici il teorema di Nyquist-Shannon impone di campionare almeno al doppio della frequenza massima: per l'udibile (fino a circa 20 kHz) si usano 44,1 kHz. La compressione può essere senza perdita (ZIP, PNG) o con perdita (JPEG, MP3), che elimina dettagli poco percepibili."
+      ],
+      "metodo": [
+        "Dimostra a mano, su 4 bit, che il complemento a due rende corretta la somma: scrivi tutti i 16 valori e somma qualche coppia.",
+        "Scrivi in Python una funzione che converte un intero in una base qualsiasi da 2 a 16 e confrontala con bin() e hex().",
+        "Usa struct.pack('>d', 0.1) e il metodo float.hex() per vedere i bit di un float e riconoscere segno, esponente e mantissa.",
+        "Esercitati con le maschere di bit: estrai, imposta e azzera singoli bit di un intero con &, | e ^.",
+        "Prepara una scheda con le formule di dimensione (immagini, audio, video) e applicale a esempi reali: una foto del telefono, un minuto di audio CD."
+      ],
+      "ricorda": [
+        "Complemento a due: -x = ~x + 1, e l'intervallo è asimmetrico (un negativo in più).",
+        "IEEE 754 doppia precisione: 1 + 11 + 52 bit, circa 16 cifre significative.",
+        "Nyquist: frequenza di campionamento ≥ 2 · frequenza massima del segnale.",
+        "Mai confrontare float con ==: usa una tolleranza."
+      ],
+      "errori": [
+        "Pensare che l'overflow generi sempre un errore: in molti linguaggi il valore «gira» in silenzio.",
+        "Usare float per calcoli monetari e stupirsi degli arrotondamenti.",
+        "Confondere il code point Unicode di un carattere con il numero di byte usati in UTF-8.",
+        "Applicare lo shift a destra ai negativi aspettandosi la divisione troncata verso zero: in complemento a due arrotonda verso -∞ (in Python -7 >> 1 = -4)."
+      ],
+      "domande": [
+        {
+          "domanda": "Qual è l'intervallo degli interi in complemento a due su 16 bit?",
+          "risposta": "Da -32 768 a +32 767."
+        },
+        {
+          "domanda": "Quanto vale 0b1100 ^ 0b1010?",
+          "risposta": "0b0110, cioè 6."
+        },
+        {
+          "domanda": "Perché 0.1 non è rappresentabile esattamente in binario?",
+          "risposta": "Perché in base 2 è un numero periodico (0,000110011…) e la mantissa ha un numero finito di bit."
+        },
+        {
+          "domanda": "Quanti bit di mantissa ha un float a doppia precisione?",
+          "risposta": "52 (più il bit implicito iniziale)."
+        },
+        {
+          "domanda": "A quale frequenza minima bisogna campionare un segnale con componenti fino a 8 kHz?",
+          "risposta": "16 kHz."
+        }
+      ]
+    }
+  },
+  "Algoritmi e diagrammi di flusso": {
+    "superiore": {
+      "spiegazione": [
+        "Un algoritmo è una sequenza finita di istruzioni precise che risolve un problema. Ogni passo deve essere eseguibile e non ambiguo, e l'algoritmo deve terminare dopo un numero finito di passi producendo un risultato. Una ricetta di cucina ben scritta è un esempio quotidiano, ma «aggiungi sale quanto basta» non sarebbe accettabile per un computer, perché è ambiguo. L'algoritmo è l'idea della soluzione; il programma è la sua traduzione in un linguaggio come Python.",
+        "Gli algoritmi si possono descrivere in pseudocodice (un italiano strutturato) oppure con un diagramma di flusso. Nel diagramma l'ovale indica inizio e fine, il parallelogramma l'input e l'output, il rettangolo un calcolo o un'assegnazione, il rombo una condizione con due uscite (vero e falso). Le frecce indicano l'ordine di esecuzione. Disegnare il diagramma aiuta a vedere i percorsi possibili prima di scrivere il codice.",
+        "Secondo il teorema di Böhm-Jacopini bastano tre strutture per scrivere qualsiasi algoritmo: la sequenza (un'istruzione dopo l'altra), la selezione (se… altrimenti) e l'iterazione (ripeti). I cicli possono essere a contatore, quando si sa quante volte ripetere (per i da 1 a 10), oppure a condizione, quando si ripete finché una condizione resta vera. Un ciclo la cui condizione non diventa mai falsa non termina: è un ciclo infinito, un errore da evitare.",
+        "Due problemi classici sono la ricerca e l'ordinamento. La ricerca lineare controlla gli elementi uno alla volta e funziona sempre; la ricerca binaria, possibile solo su dati ordinati, guarda l'elemento centrale e scarta ogni volta metà della lista: su 1000 elementi bastano 10 confronti. Tra gli ordinamenti semplici ci sono il bubble sort, che scambia coppie vicine fuori ordine, e il selection sort, che a ogni passata porta il minimo nella prima posizione libera.",
+        "Per controllare che un algoritmo funzioni si usa la tabella di traccia: una colonna per ogni variabile e una riga per ogni passo, aggiornando i valori come farebbe il computer. Conviene provarlo con casi normali e con casi limite, come una lista vuota, un solo elemento o tutti numeri negativi. Per esempio, un algoritmo che cerca il massimo partendo da m = 0 sbaglia se tutti i numeri sono negativi: bisogna partire dal primo elemento della lista."
+      ],
+      "metodo": [
+        "Prima di scrivere codice, descrivi l'algoritmo a parole in 5-6 passi numerati, poi trasformalo in diagramma di flusso.",
+        "Disegna i diagrammi di flusso di tre problemi semplici: maggiore tra due numeri, somma dei primi n numeri, conteggio dei voti sufficienti.",
+        "Esegui a mano bubble sort e selection sort su una lista di 5 numeri, scrivendo la lista dopo ogni passata.",
+        "Usa sempre una tabella di traccia per i cicli e controlla in particolare il primo e l'ultimo giro.",
+        "Gioca a «indovina il numero» da 1 a 100 usando la strategia della ricerca binaria e conta quante domande servono.",
+        "Collega la mappa a «Programmazione (Python)», dove ogni struttura del diagramma diventa un'istruzione."
+      ],
+      "ricorda": [
+        "Rombo = domanda con due uscite; parallelogramma = input/output; rettangolo = calcolo.",
+        "Ricerca binaria: solo su liste ordinate, circa log₂ n confronti.",
+        "Sequenza, selezione, iterazione: i tre mattoncini di ogni algoritmo.",
+        "Il massimo si inizializza con il primo elemento, non con 0."
+      ],
+      "errori": [
+        "Usare la ricerca binaria su una lista non ordinata.",
+        "Scrivere un ciclo la cui variabile di controllo non cambia o non raggiunge mai il valore di uscita.",
+        "Sbagliare il numero di ripetizioni di un ciclo di uno (errore «fuori di uno»), includendo o escludendo l'ultimo valore.",
+        "Confondere il ciclo a condizione iniziale (può non eseguire mai il corpo) con quello a condizione finale (lo esegue almeno una volta)."
+      ],
+      "domande": [
+        {
+          "domanda": "Quale simbolo del diagramma di flusso ha due uscite?",
+          "risposta": "Il rombo, che rappresenta una condizione."
+        },
+        {
+          "domanda": "Quanti confronti servono al massimo per la ricerca binaria su 64 elementi?",
+          "risposta": "7: la formula è ⌊log₂ n⌋ + 1, e log₂ 64 = 6."
+        },
+        {
+          "domanda": "Quali sono le tre strutture del teorema di Böhm-Jacopini?",
+          "risposta": "Sequenza, selezione, iterazione."
+        },
+        {
+          "domanda": "Dopo la prima passata del bubble sort su [4, 2, 5, 1] dove si trova il 5?",
+          "risposta": "In ultima posizione: [2, 4, 1, 5]."
+        },
+        {
+          "domanda": "Perché un algoritmo deve essere finito?",
+          "risposta": "Perché deve terminare e dare un risultato dopo un numero finito di passi."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "L'efficienza di un algoritmo si misura con la complessità computazionale: come crescono il tempo e la memoria al crescere della dimensione n dell'input. La notazione O grande descrive un limite superiore asintotico, ignorando le costanti: 3n² + 5n + 2 è O(n²). Le classi più comuni, dalla migliore alla peggiore, sono O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ). Con n = 10⁶, un algoritmo O(n log n) fa circa 2 · 10⁷ operazioni, uno O(n²) 10¹²: la differenza tra un secondo e diverse ore.",
+        "La ricorsione risolve un problema riducendolo a istanze più piccole dello stesso problema, fino a un caso base risolto direttamente. Il costo di un algoritmo ricorsivo si esprime con un'equazione di ricorrenza: per il merge sort T(n) = 2T(n/2) + O(n), che dà O(n log n); per la ricerca binaria T(n) = T(n/2) + O(1), che dà O(log n). Ogni chiamata occupa spazio nella pila delle chiamate, quindi una ricorsione troppo profonda esaurisce la memoria (in Python il limite predefinito è circa 1000 livelli).",
+        "Esistono tecniche generali di progetto. Il divide et impera spezza il problema in parti indipendenti e combina le soluzioni (merge sort, quicksort). La programmazione dinamica si usa quando i sottoproblemi si ripetono: memorizza i risultati per non ricalcolarli, e trasforma ad esempio il Fibonacci ricorsivo da esponenziale a lineare. Gli algoritmi greedy fanno a ogni passo la scelta migliore al momento: funzionano per il resto con le monete in euro o per Dijkstra, ma non sono sempre ottimi.",
+        "Per dimostrare che un algoritmo è corretto si usano le invarianti di ciclo: una proprietà vera prima del ciclo, mantenuta da ogni iterazione e che, alla fine, implica il risultato. Nel selection sort l'invariante è «i primi k elementi sono i k più piccoli, in ordine». La terminazione si prova trovando una quantità intera non negativa che diminuisce a ogni giro, come la lunghezza della parte da esaminare. È lo stesso ragionamento dell'induzione matematica.",
+        "Non tutti i problemi sono risolvibili. Turing ha dimostrato che il problema della fermata, cioè stabilire se un programma qualsiasi termina, è indecidibile. Tra i problemi risolvibili, la classe P contiene quelli risolvibili in tempo polinomiale, la classe NP quelli la cui soluzione si verifica in tempo polinomiale. Se P = NP è uno dei grandi problemi aperti della matematica. Inoltre si dimostra che ogni ordinamento basato su confronti richiede Ω(n log n) confronti nel caso peggiore."
+      ],
+      "metodo": [
+        "Per ogni algoritmo che studi scrivi in una tabella: idea, pseudocodice, complessità nel caso migliore, medio e peggiore, memoria usata.",
+        "Implementa in Python merge sort, quicksort e ricerca binaria, poi misura i tempi con il modulo time su liste di dimensioni crescenti.",
+        "Risolvi le ricorrenze tipiche con l'albero delle chiamate prima di imparare il teorema dell'esperto (master theorem).",
+        "Per ogni ciclo importante scrivi l'invariante come commento nel codice.",
+        "Trasforma una funzione ricorsiva lenta (Fibonacci) in una versione con memoizzazione e una iterativa, confrontando i tempi."
+      ],
+      "ricorda": [
+        "O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ).",
+        "Divide et impera: dividi, risolvi, combina.",
+        "Programmazione dinamica = ricorsione + memoria dei risultati.",
+        "Invariante: vera all'inizio, mantenuta a ogni giro, utile alla fine."
+      ],
+      "errori": [
+        "Confondere il caso medio con il caso peggiore (quicksort: medio O(n log n), peggiore O(n²)).",
+        "Contare le costanti nella notazione O, scrivendo ad esempio O(2n) invece di O(n).",
+        "Scrivere funzioni ricorsive senza caso base raggiungibile.",
+        "Pensare che un algoritmo greedy dia sempre la soluzione ottima."
+      ],
+      "domande": [
+        {
+          "domanda": "Qual è la complessità della ricerca binaria?",
+          "risposta": "O(log n)."
+        },
+        {
+          "domanda": "Che cosa risolve la programmazione dinamica rispetto alla ricorsione semplice?",
+          "risposta": "Evita di ricalcolare gli stessi sottoproblemi memorizzandone i risultati."
+        },
+        {
+          "domanda": "Qual è la ricorrenza del merge sort?",
+          "risposta": "T(n) = 2T(n/2) + O(n), che dà O(n log n)."
+        },
+        {
+          "domanda": "Che cos'è un'invariante di ciclo?",
+          "risposta": "Una proprietà vera prima del ciclo e dopo ogni iterazione, usata per dimostrare la correttezza."
+        },
+        {
+          "domanda": "Il problema della fermata è difficile o impossibile?",
+          "risposta": "Impossibile in generale: è indecidibile."
+        }
+      ]
+    }
+  },
+  "Programmazione (Python)": {
+    "superiore": {
+      "spiegazione": [
+        "Un programma Python è una sequenza di istruzioni eseguite dall'alto verso il basso. I dati si memorizzano in variabili create con un'assegnazione, ad esempio voto = 7. I tipi di base sono int (interi), float (numeri con la virgola), str (testo tra virgolette) e bool (True o False). Il tipo conta: \"5\" + \"5\" dà \"55\", mentre 5 + 5 dà 10. La funzione input() restituisce sempre una stringa, quindi per fare calcoli bisogna convertirla con int() o float().",
+        "Gli operatori aritmetici sono +, -, *, / (divisione con la virgola), // (divisione intera), % (resto) e ** (potenza). Il resto è utilissimo: n % 2 == 0 significa «n è pari». Gli operatori di confronto (==, !=, <, >, <=, >=) producono valori booleani, che si combinano con and, or e not. Attenzione a non confondere = (assegnazione) con == (confronto).",
+        "La selezione si scrive con if, elif ed else; i blocchi sono definiti dall'indentazione, cioè dai rientri di 4 spazi, e non da parentesi. Il ciclo for scorre una sequenza: for i in range(1, 6) assegna a i i valori da 1 a 5, perché la fine di range è esclusa. Il ciclo while ripete finché una condizione è vera ed è adatto quando non si sa quante volte ripetere, ad esempio per chiedere un dato finché non è valido.",
+        "Stringhe e liste sono sequenze: si accede agli elementi con un indice che parte da 0, e gli indici negativi contano dalla fine (s[-1] è l'ultimo carattere). Con le fette s[a:b] si prende la parte dall'indice a all'indice b escluso: \"informatica\"[2:5] è \"for\". Le liste si possono modificare (append, pop, assegnazione a un indice), le stringhe no. len() restituisce la lunghezza di entrambe.",
+        "Le funzioni permettono di dare un nome a un pezzo di codice e riusarlo: def area(b, h): return b * h / 2. I parametri ricevono i valori passati nella chiamata, e return restituisce il risultato. Le variabili create dentro una funzione sono locali: esistono solo durante la chiamata e non modificano quelle esterne con lo stesso nome. Spezzare un programma in piccole funzioni lo rende più facile da leggere e da controllare."
+      ],
+      "metodo": [
+        "Scrivi ogni giorno un piccolo programma (10-20 righe) e fallo girare: la programmazione si impara solo provando.",
+        "Prima di eseguire un frammento di codice, prevedi su carta che cosa stamperà, poi controlla: è il miglior allenamento per le domande dei test.",
+        "Quando ricevi un errore, leggi l'ultima riga del messaggio: dice il tipo di errore (TypeError, ValueError, IndexError) e la riga in cui è avvenuto.",
+        "Usa print() per vedere il valore delle variabili dentro i cicli quando il risultato non è quello atteso.",
+        "Rifai gli esercizi di «Algoritmi e diagrammi di flusso» traducendo ogni diagramma in Python."
+      ],
+      "ricorda": [
+        "range(a, b) arriva fino a b - 1.",
+        "Gli indici partono da 0; s[-1] è l'ultimo elemento.",
+        "// = quoziente intero, % = resto, / = divisione con la virgola.",
+        "input() dà sempre una stringa: converti con int()."
+      ],
+      "errori": [
+        "Usare = invece di == in una condizione.",
+        "Dimenticare i due punti alla fine di if, for, while e def, o sbagliare l'indentazione.",
+        "Sommare un numero a una stringa letta con input() senza convertirla.",
+        "Pensare che una variabile modificata dentro una funzione cambi anche fuori."
+      ],
+      "domande": [
+        {
+          "domanda": "Che cosa stampa print(17 % 5)?",
+          "risposta": "2."
+        },
+        {
+          "domanda": "Che valori assume i in for i in range(3)?",
+          "risposta": "0, 1, 2."
+        },
+        {
+          "domanda": "Che cosa restituisce \"python\"[1:4]?",
+          "risposta": "\"yth\"."
+        },
+        {
+          "domanda": "Come si aggiunge l'elemento 5 in fondo alla lista l?",
+          "risposta": "l.append(5)."
+        },
+        {
+          "domanda": "Che tipo restituisce 7 / 7?",
+          "risposta": "float: 1.0."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Python è un linguaggio interpretato a tipizzazione dinamica e forte: il tipo appartiene all'oggetto, non alla variabile, e non si mescolano tipi incompatibili senza conversione esplicita (\"3\" + 4 è un TypeError). Una variabile è un nome che fa riferimento a un oggetto. L'assegnazione b = a non copia l'oggetto, crea un secondo nome per lo stesso oggetto: se l'oggetto è mutabile (liste, dizionari, insiemi), una modifica fatta tramite b si vede anche tramite a. Per copiare si usano a.copy(), a[:] o, per strutture annidate, copy.deepcopy.",
+        "Gli argomenti delle funzioni si passano «per riferimento all'oggetto»: la funzione riceve lo stesso oggetto del chiamante, quindi può modificarlo se è mutabile, ma riassegnare il parametro non cambia la variabile esterna. I valori predefiniti sono valutati una sola volta, alla definizione: def f(x, l=[]) condivide la stessa lista tra tutte le chiamate, e la soluzione è usare None. La ricerca dei nomi segue la regola LEGB: locale, funzione racchiudente, globale, built-in.",
+        "Python offre costrutti molto espressivi. Le comprehension creano liste, insiemi e dizionari in una riga: {p: len(p) for p in parole}. I generatori, scritti con yield o con le parentesi tonde, producono i valori uno alla volta senza tenerli tutti in memoria. Le eccezioni si gestiscono con try/except/else/finally; è buona pratica catturare solo le eccezioni previste (except ValueError) e non usare except generici che nascondono gli errori.",
+        "La programmazione a oggetti organizza il codice in classi, che definiscono attributi (dati) e metodi (funzioni). Il metodo __init__ inizializza l'oggetto, self è il riferimento all'istanza corrente, e i metodi speciali come __str__ ed __eq__ definiscono come l'oggetto si stampa e si confronta. L'ereditarietà permette a una classe di estenderne un'altra, riusando e ridefinendo i metodi (polimorfismo). Ad esempio class Quadrato(Rettangolo) può riusare il calcolo dell'area.",
+        "Un programma reale è diviso in moduli, importati con import, e usa la libreria standard: math per le funzioni matematiche, random per i numeri casuali, collections per Counter, deque e defaultdict. I file si aprono con with open(nome) as f, che li chiude automaticamente anche in caso di errore. La qualità si controlla con i test automatici (assert, unittest o pytest) e con le annotazioni di tipo, che documentano il codice anche se Python non le impone a tempo di esecuzione."
+      ],
+      "metodo": [
+        "Usa Python Tutor (o il debugger del tuo editor) per visualizzare nomi, oggetti e riferimenti mentre il codice viene eseguito.",
+        "Per ogni concetto (mutabilità, default mutabili, scope) scrivi un esempio minimo che mostri il comportamento sorprendente e spiegalo con parole tue.",
+        "Scrivi una piccola classe (ad esempio Frazione o ContoBancario) con __init__, __str__, __eq__ e un test per ogni metodo.",
+        "Risolvi esercizi su siti di programmazione competitiva per allenarti a scrivere codice corretto ed efficiente.",
+        "Leggi la documentazione ufficiale delle strutture dati di Python per conoscere la complessità delle loro operazioni."
+      ],
+      "ricorda": [
+        "b = a crea un alias, non una copia.",
+        "Default mutabili: usa None e crea l'oggetto dentro la funzione.",
+        "LEGB: locale, racchiudente, globale, built-in.",
+        "with open(...) chiude il file da solo."
+      ],
+      "errori": [
+        "Modificare una lista mentre la si scorre con un for.",
+        "Creare matrici con [[0] * n] * m, ottenendo righe che sono lo stesso oggetto.",
+        "Catturare tutte le eccezioni con except: e nascondere gli errori veri.",
+        "Confrontare oggetti con is invece di == (is confronta l'identità, non il valore)."
+      ],
+      "domande": [
+        {
+          "domanda": "Che cosa stampa a = [1]; b = a; b += [2]; print(a)?",
+          "risposta": "[1, 2]: a e b sono lo stesso oggetto."
+        },
+        {
+          "domanda": "Che differenza c'è tra is e ==?",
+          "risposta": "is confronta l'identità degli oggetti, == il loro valore."
+        },
+        {
+          "domanda": "A che cosa serve self in un metodo?",
+          "risposta": "È il riferimento all'oggetto su cui il metodo è stato chiamato."
+        },
+        {
+          "domanda": "Che cosa produce (x * x for x in range(3))?",
+          "risposta": "Un generatore che fornisce 0, 1, 4 uno alla volta."
+        },
+        {
+          "domanda": "Come si crea correttamente una matrice 3 × 3 di zeri?",
+          "risposta": "[[0] * 3 for _ in range(3)]."
+        }
+      ]
+    }
+  },
+  "Strutture dati": {
+    "superiore": {
+      "spiegazione": [
+        "Una struttura dati è un modo di organizzare i dati in memoria per usarli in modo comodo ed efficiente. La più semplice è l'array, o lista in Python: una sequenza di elementi numerati da 0. L'accesso a un elemento tramite l'indice è immediato, ad esempio voti[3], qualunque sia la lunghezza della lista. Inserire un elemento all'inizio, invece, richiede di spostare tutti gli altri di un posto.",
+        "La pila (stack) segue la regola LIFO: l'ultimo elemento inserito è il primo a uscire, come in una pila di piatti. Le operazioni sono push (metti in cima) e pop (togli dalla cima); in Python si usano append() e pop() su una lista. Le pile servono per la funzione «annulla» dei programmi, per controllare che le parentesi siano bilanciate e per tenere traccia delle chiamate di funzione. Se inserisco 1, 2, 3, il primo pop restituisce 3.",
+        "La coda (queue) segue la regola FIFO: il primo elemento entrato è il primo a uscire, come la fila alla cassa. Si inserisce in fondo (enqueue) e si toglie dall'inizio (dequeue); in Python si usa collections.deque con append() e popleft(). Le code gestiscono, ad esempio, i documenti in attesa di stampa o le richieste a un server. La coda con priorità è una variante in cui esce per primo l'elemento più importante, come al pronto soccorso.",
+        "Il dizionario associa chiavi a valori, come una rubrica che collega nomi e numeri: rubrica[\"Anna\"] = \"333123\". Le chiavi sono uniche e devono essere immutabili (numeri, stringhe, tuple), mentre i valori possono essere di qualsiasi tipo. La ricerca per chiave è molto veloce, anche con milioni di elementi. L'insieme (set) contiene elementi senza duplicati ed è comodo per eliminare le ripetizioni; la tupla è una sequenza non modificabile, adatta per dati fissi come le coordinate (3, 4).",
+        "Quando i dati hanno una struttura gerarchica si usano gli alberi: un nodo radice con dei figli, che a loro volta hanno figli, come le cartelle di un computer o un albero genealogico. Nell'albero binario di ricerca ogni nodo ha a sinistra valori più piccoli e a destra valori più grandi, così la ricerca scarta metà dell'albero a ogni passo. Quando i collegamenti sono liberi, come tra le città collegate da strade o tra amici su un social network, si usa un grafo, fatto di nodi e archi."
+      ],
+      "metodo": [
+        "Per ogni struttura scrivi su una scheda: regola di funzionamento, operazioni principali, esempio della vita reale, istruzioni Python corrispondenti.",
+        "Simula a mano una pila e una coda con dei foglietti numerati, eseguendo una sequenza di inserimenti ed estrazioni.",
+        "Scrivi in Python un controllore di parentesi bilanciate usando una lista come pila.",
+        "Disegna l'albero binario di ricerca che si ottiene inserendo 8 numeri e verifica che la visita in ordine li dia ordinati.",
+        "Collega la mappa a «Algoritmi e diagrammi di flusso»: la scelta della struttura cambia la velocità degli algoritmi."
+      ],
+      "ricorda": [
+        "Pila = LIFO (piatti), coda = FIFO (fila alla cassa).",
+        "Chiavi dei dizionari: uniche e immutabili.",
+        "Set = niente doppioni; tupla = niente modifiche.",
+        "Albero binario di ricerca: piccoli a sinistra, grandi a destra."
+      ],
+      "errori": [
+        "Scambiare pila e coda, facendo uscire l'elemento sbagliato.",
+        "Usare una lista come chiave di un dizionario (non è permesso, è mutabile).",
+        "Pensare che un set mantenga l'ordine di inserimento o i duplicati.",
+        "Usare lista.pop(0) per code molto lunghe: è lento, meglio deque.popleft()."
+      ],
+      "domande": [
+        {
+          "domanda": "Inserisco A, B, C in una pila: in che ordine escono?",
+          "risposta": "C, B, A."
+        },
+        {
+          "domanda": "Inserisco A, B, C in una coda: in che ordine escono?",
+          "risposta": "A, B, C."
+        },
+        {
+          "domanda": "Che cosa stampa len(set([1, 1, 2]))?",
+          "risposta": "2."
+        },
+        {
+          "domanda": "Quale struttura useresti per una rubrica nome → telefono?",
+          "risposta": "Un dizionario."
+        },
+        {
+          "domanda": "In un albero binario di ricerca, dove si trova il valore minimo?",
+          "risposta": "Nel nodo più a sinistra."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Un tipo di dato astratto (ADT) definisce che cosa si può fare con i dati (le operazioni e le loro proprietà) senza dire come è realizzato. La pila, ad esempio, è definita da push, pop e top; si può implementare con un array o con una lista concatenata. La scelta dell'implementazione determina il costo delle operazioni. Un array dinamico (come la list di Python) offre accesso O(1) e append in O(1) ammortizzato, ma inserimenti e cancellazioni all'inizio in O(n); una lista concatenata inserisce in testa in O(1) ma accede all'i-esimo elemento in O(n).",
+        "La tabella hash memorizza coppie chiave-valore in un array, calcolando la posizione con una funzione hash della chiave. In media ricerca, inserimento e cancellazione costano O(1). Quando due chiavi finiscono nella stessa posizione si ha una collisione, gestita con liste di trabocco (chaining) o con l'indirizzamento aperto; se la tabella si riempie troppo (fattore di carico alto) viene ingrandita e le chiavi ridistribuite. Nel caso peggiore le operazioni degradano a O(n). Il dict e il set di Python sono tabelle hash.",
+        "Gli alberi binari di ricerca (BST) mantengono l'ordine delle chiavi: per ogni nodo, le chiavi nel sottoalbero sinistro sono minori e quelle nel destro maggiori. Ricerca, inserimento e cancellazione costano O(h), dove h è l'altezza: O(log n) se l'albero è bilanciato, O(n) se degenera in una catena (ad esempio inserendo chiavi già ordinate). Gli alberi auto-bilanciati, come AVL e rosso-neri, garantiscono h = O(log n). Le visite in profondità sono pre-ordine, in-ordine (che nel BST dà le chiavi ordinate) e post-ordine; la visita per livelli usa una coda.",
+        "L'heap binario è un albero quasi completo, memorizzato in un array, in cui ogni nodo è minore o uguale ai figli (min-heap). Il minimo è sempre nella radice e si legge in O(1); inserimento ed estrazione del minimo costano O(log n). È l'implementazione standard della coda con priorità (modulo heapq in Python) ed è alla base dell'heapsort, che ordina in O(n log n). Per i figli del nodo in posizione i si usano le posizioni 2i + 1 e 2i + 2.",
+        "Un grafo G = (V, E) è un insieme di nodi e di archi, orientati o no, eventualmente pesati. Si rappresenta con liste di adiacenza (spazio O(V + E), adatte ai grafi sparsi) o con una matrice di adiacenza (spazio O(V²), test di adiacenza in O(1)). La visita in ampiezza (BFS) usa una coda e trova i cammini con meno archi; la visita in profondità (DFS) usa una pila o la ricorsione ed è utile per trovare cicli e componenti connesse. Con pesi non negativi l'algoritmo di Dijkstra, basato su una coda con priorità, trova i cammini minimi."
+      ],
+      "metodo": [
+        "Costruisci una tabella di confronto: per array, lista concatenata, hash, BST bilanciato e heap scrivi il costo di accesso, ricerca, inserimento e cancellazione.",
+        "Implementa da zero in Python una lista concatenata, una pila, un BST con inserimento e visite, e un heap con heappush e heappop.",
+        "Disegna l'array di un heap e l'albero corrispondente, e simula a mano tre inserimenti e un'estrazione.",
+        "Esegui a mano BFS e DFS su un grafo di 6-7 nodi, scrivendo il contenuto della coda o della pila a ogni passo.",
+        "Davanti a un problema, chiediti quali operazioni sono più frequenti e scegli la struttura che le rende più economiche."
+      ],
+      "ricorda": [
+        "Hash: O(1) in media, O(n) nel caso peggiore.",
+        "BST: O(altezza); bilanciato → O(log n).",
+        "Heap: minimo in O(1), inserimento ed estrazione in O(log n).",
+        "BFS → coda, DFS → pila."
+      ],
+      "errori": [
+        "Dare per scontato che un BST sia sempre bilanciato.",
+        "Confondere l'heap con un BST: nell'heap il fratello sinistro non è necessariamente minore del destro.",
+        "Usare la matrice di adiacenza per grafi enormi e sparsi, sprecando memoria.",
+        "Dimenticare di segnare i nodi visitati in BFS e DFS, entrando in cicli infiniti."
+      ],
+      "domande": [
+        {
+          "domanda": "Qual è il costo dell'accesso all'elemento i in una lista concatenata?",
+          "risposta": "O(n) nel caso peggiore."
+        },
+        {
+          "domanda": "Che cosa succede a un BST se si inseriscono chiavi già ordinate?",
+          "risposta": "Degenera in una catena con altezza n e operazioni O(n)."
+        },
+        {
+          "domanda": "In un heap memorizzato in un array, dove sono i figli del nodo in posizione i?",
+          "risposta": "In 2i + 1 e 2i + 2."
+        },
+        {
+          "domanda": "Quale visita di un grafo trova il cammino con meno archi?",
+          "risposta": "La visita in ampiezza (BFS)."
+        },
+        {
+          "domanda": "Che cos'è il fattore di carico di una tabella hash?",
+          "risposta": "Il rapporto tra numero di elementi e numero di posizioni della tabella."
+        }
+      ]
+    }
+  },
+  "Basi di dati e SQL": {
+    "superiore": {
+      "spiegazione": [
+        "Una base di dati (database) è una raccolta organizzata di dati gestita da un programma apposito, il DBMS, che permette di salvarli, cercarli e modificarli in modo sicuro anche da parte di molti utenti contemporaneamente. Nel modello relazionale i dati sono organizzati in tabelle: ogni riga (record) rappresenta un oggetto, ad esempio uno studente, e ogni colonna (campo) una sua caratteristica, come nome o classe. Esempi di DBMS sono MySQL, PostgreSQL e SQLite.",
+        "Ogni tabella ha una chiave primaria, un campo (o un gruppo di campi) che identifica ogni riga in modo univoco e non può essere vuoto, come la matricola. Le tabelle si collegano con le chiavi esterne: nella tabella STUDENTI il campo id_classe contiene il codice di una riga della tabella CLASSI. Così i dati della classe si scrivono una volta sola, evitando ripetizioni ed errori.",
+        "Il database si progetta prima su carta con il modello Entità-Relazione (E-R). Le entità (rettangoli) sono gli oggetti di interesse, come STUDENTE e CORSO; gli attributi sono le loro proprietà; le associazioni (rombi) sono i legami, come «frequenta». Le associazioni hanno una cardinalità: uno a uno, uno a molti (una classe ha molti studenti), molti a molti (uno studente frequenta molti corsi e un corso ha molti studenti). Le relazioni molti a molti diventano una tabella in più, ad esempio ISCRIZIONI.",
+        "SQL è il linguaggio per interrogare i database. La struttura base è SELECT colonne FROM tabella WHERE condizione: ad esempio SELECT nome FROM STUDENTI WHERE voto >= 6 elenca i sufficienti. ORDER BY ordina i risultati (DESC per l'ordine decrescente), DISTINCT elimina i duplicati, LIKE cerca testi con un modello ('M%' = che iniziano per M). Le funzioni COUNT, SUM, AVG, MIN e MAX calcolano un valore su più righe.",
+        "SQL serve anche a modificare i dati: INSERT INTO aggiunge righe, UPDATE … SET cambia valori, DELETE FROM cancella righe. Senza WHERE, UPDATE e DELETE agiscono su tutte le righe, quindi bisogna fare molta attenzione. Per combinare informazioni di più tabelle si usa la JOIN: SELECT S.nome, C.sezione FROM STUDENTI S JOIN CLASSI C ON S.id_classe = C.id_classe abbina ogni studente alla sua classe."
+      ],
+      "metodo": [
+        "Installa SQLite (o usa il modulo sqlite3 di Python) e crea due tabelle collegate su un tema che ti piace: libri e autori, squadre e giocatori.",
+        "Scrivi a mano l'output atteso di ogni query prima di eseguirla, come nelle domande dei test.",
+        "Disegna lo schema E-R di una biblioteca o di una scuola, indicando chiavi e cardinalità, e poi trasformalo in tabelle.",
+        "Impara le clausole nell'ordine in cui si scrivono: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT.",
+        "Prima di ogni DELETE o UPDATE prova la stessa WHERE con una SELECT, per vedere quali righe verranno toccate."
+      ],
+      "ricorda": [
+        "Chiave primaria: unica e mai vuota; chiave esterna: rimanda a un'altra tabella.",
+        "Molti a molti = tabella di collegamento.",
+        "DELETE senza WHERE svuota tutta la tabella.",
+        "LIKE: % = qualsiasi sequenza di caratteri, _ = un solo carattere."
+      ],
+      "errori": [
+        "Usare come chiave primaria un campo che può ripetersi, come il cognome.",
+        "Scrivere WHERE campo = NULL invece di WHERE campo IS NULL.",
+        "Dimenticare la condizione ON nella JOIN, ottenendo il prodotto cartesiano.",
+        "Mettere più valori nella stessa cella (ad esempio più telefoni separati da virgole)."
+      ],
+      "domande": [
+        {
+          "domanda": "Che cosa fa SELECT COUNT(*) FROM LIBRI?",
+          "risposta": "Conta le righe della tabella LIBRI."
+        },
+        {
+          "domanda": "Come si ordinano i risultati dal voto più alto al più basso?",
+          "risposta": "ORDER BY voto DESC."
+        },
+        {
+          "domanda": "Come si rappresenta la relazione «uno studente frequenta molti corsi e un corso ha molti studenti»?",
+          "risposta": "Con una tabella di collegamento, ad esempio ISCRIZIONI(matricola, id_corso)."
+        },
+        {
+          "domanda": "Quale comando cambia il valore di un campo in righe esistenti?",
+          "risposta": "UPDATE … SET … WHERE …"
+        },
+        {
+          "domanda": "Quali nomi trova WHERE nome LIKE 'A%'?",
+          "risposta": "Quelli che iniziano con la lettera A."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "La progettazione di una base di dati procede in tre fasi. La progettazione concettuale produce lo schema E-R, indipendente dal DBMS. La progettazione logica lo traduce in schema relazionale: ogni entità diventa una tabella, le associazioni 1:N diventano chiavi esterne nel lato «molti», le associazioni N:N diventano tabelle con chiave composta dalle chiavi delle entità coinvolte. La progettazione fisica sceglie tipi, indici e organizzazione dei file per le prestazioni.",
+        "La normalizzazione elimina ridondanze e anomalie (di inserimento, aggiornamento e cancellazione) partendo dalle dipendenze funzionali. La prima forma normale richiede valori atomici; la seconda che ogni attributo non chiave dipenda dall'intera chiave e non da una sua parte; la terza che non ci siano dipendenze transitive tra attributi non chiave. Ad esempio, in ESAMI(matricola, corso, voto, nome_studente) il nome dipende solo dalla matricola: viola la 2FN e va spostato nella tabella STUDENTI.",
+        "Il fondamento teorico di SQL è l'algebra relazionale, con operatori come selezione (σ, filtrare righe), proiezione (π, scegliere colonne), prodotto cartesiano, join, unione e differenza. In SQL la JOIN interna restituisce solo le coppie che soddisfano la condizione, la LEFT JOIN conserva tutte le righe della tabella sinistra mettendo NULL dove manca la corrispondenza. GROUP BY raggruppa le righe e le funzioni di aggregazione calcolano un valore per gruppo; WHERE filtra le righe prima del raggruppamento, HAVING i gruppi dopo. Le sottoquery permettono di usare il risultato di una query dentro un'altra.",
+        "NULL rappresenta un valore sconosciuto o assente e introduce una logica a tre valori (vero, falso, sconosciuto): qualunque confronto con NULL dà sconosciuto, quindi si usano IS NULL e IS NOT NULL. Le funzioni di aggregazione ignorano i NULL, tranne COUNT(*). I vincoli (PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE, CHECK) fanno rispettare l'integrità dei dati direttamente nel DBMS, senza affidarsi ai programmi che li usano.",
+        "Una transazione è una sequenza di operazioni che deve rispettare le proprietà ACID: atomicità (tutto o niente), coerenza (i vincoli restano rispettati), isolamento (le transazioni concorrenti non si disturbano), durabilità (i dati confermati con COMMIT sopravvivono ai guasti). ROLLBACK annulla le modifiche non confermate. Gli indici, di solito alberi B+, velocizzano ricerche e join al prezzo di scritture più lente. Per la sicurezza si gestiscono i permessi con GRANT e si usano query parametrizzate per evitare la SQL injection."
+      ],
+      "metodo": [
+        "Prendi uno schema reale (ad esempio un negozio online) e svolgi tutte le fasi: E-R, schema logico, normalizzazione fino alla 3FN, creazione delle tabelle.",
+        "Per ogni query complessa scrivi prima l'espressione in algebra relazionale, poi la traduzione in SQL.",
+        "Esercitati su un database di prova con almeno 1000 righe per vedere l'effetto degli indici (EXPLAIN QUERY PLAN in SQLite).",
+        "Scrivi esempi con NULL e verifica il comportamento di =, IS NULL, COUNT(*) e COUNT(colonna).",
+        "Simula una transazione bancaria con BEGIN, due UPDATE e un ROLLBACK, osservando che i dati tornano come prima."
+      ],
+      "ricorda": [
+        "1FN atomici, 2FN niente dipendenze parziali, 3FN niente dipendenze transitive.",
+        "WHERE filtra righe, HAVING filtra gruppi.",
+        "ACID: atomicità, coerenza, isolamento, durabilità.",
+        "NULL non è uguale a niente, neanche a NULL."
+      ],
+      "errori": [
+        "Usare funzioni di aggregazione nella WHERE invece che in HAVING o in una sottoquery.",
+        "Inserire nella SELECT colonne che non sono nel GROUP BY né aggregate.",
+        "Costruire le query concatenando stringhe con i dati dell'utente (rischio di SQL injection).",
+        "Creare indici su ogni colonna senza considerare il costo sulle scritture."
+      ],
+      "domande": [
+        {
+          "domanda": "Che cosa restituisce una LEFT JOIN per una riga sinistra senza corrispondenza?",
+          "risposta": "La riga sinistra con NULL nelle colonne della tabella destra."
+        },
+        {
+          "domanda": "Che differenza c'è tra COUNT(*) e COUNT(telefono)?",
+          "risposta": "COUNT(*) conta tutte le righe, COUNT(telefono) solo quelle con telefono non NULL."
+        },
+        {
+          "domanda": "Quale forma normale viola una dipendenza da una parte della chiave composta?",
+          "risposta": "La seconda forma normale."
+        },
+        {
+          "domanda": "Che cosa garantisce l'atomicità?",
+          "risposta": "Che la transazione venga eseguita per intero oppure per niente."
+        },
+        {
+          "domanda": "Come si previene la SQL injection?",
+          "risposta": "Con query parametrizzate (prepared statement) invece di concatenare stringhe."
+        }
+      ]
+    }
+  },
+  "Reti e Internet": {
+    "superiore": {
+      "spiegazione": [
+        "Una rete è un insieme di dispositivi collegati che si scambiano dati. Per estensione si distinguono le LAN (reti locali, come quella di casa o della scuola), le MAN (cittadine) e le WAN (geografiche); Internet è la «rete delle reti», che le collega tutte. La forma dei collegamenti si chiama topologia: nella topologia a stella, la più diffusa, ogni dispositivo è collegato a un nodo centrale. I collegamenti possono essere via cavo (Ethernet, fibra) o senza fili (Wi-Fi, rete mobile).",
+        "Dentro una rete locale lo switch smista i dati tra i dispositivi, riconoscendoli dal loro indirizzo fisico, il MAC. Il router collega reti diverse e sceglie la strada per far arrivare i dati a destinazione usando gli indirizzi IP. Il «modem» di casa in realtà contiene un router, uno switch e un punto di accesso Wi-Fi. I dati viaggiano divisi in piccoli pacchetti, che possono seguire strade diverse e vengono rimessi insieme all'arrivo.",
+        "Per capirsi, i dispositivi seguono regole comuni chiamate protocolli, organizzate a livelli nel modello TCP/IP. Il protocollo IP indirizza e instrada i pacchetti; TCP garantisce che arrivino tutti e in ordine, chiedendo di rimandare quelli persi; UDP è più rapido ma senza garanzie, ed è usato per videochiamate e giochi online. Al livello più alto ci sono i protocolli delle applicazioni: HTTP per il web, SMTP per inviare email, DNS per i nomi.",
+        "Ogni dispositivo in rete ha un indirizzo IP. Un indirizzo IPv4 è formato da 32 bit, scritti come quattro numeri da 0 a 255 (ad esempio 192.168.1.10); poiché gli indirizzi IPv4 stanno finendo si sta passando a IPv6, a 128 bit. Il servizio DHCP assegna automaticamente un indirizzo a chi si collega. Il DNS traduce i nomi facili da ricordare, come www.esempio.it, negli indirizzi IP che i computer usano davvero.",
+        "Quando apri una pagina, il browser chiede al DNS l'indirizzo del server, apre una connessione TCP e invia una richiesta HTTP; il server risponde con la pagina e un codice di stato (200 = tutto bene, 404 = pagina non trovata). Con HTTPS la comunicazione è cifrata con TLS: chi intercetta i dati non può leggerli né modificarli. Il lucchetto però garantisce solo che la connessione è protetta, non che il sito sia onesto: anche i siti truffa possono averlo."
+      ],
+      "metodo": [
+        "Apri il terminale e prova i comandi ping, ipconfig (Windows) o ifconfig/ip a (macOS, Linux) per vedere il tuo indirizzo IP e i tempi di risposta.",
+        "Prepara una tabella dei protocolli principali con livello, funzione e porta (HTTP 80, HTTPS 443, DNS 53, SMTP 25).",
+        "Racconta a voce, passo dopo passo, che cosa succede quando scrivi un indirizzo nel browser e premi Invio.",
+        "Allenati con le conversioni bit/byte nei problemi di velocità di download.",
+        "Collega la mappa a «Rappresentazione dei dati e sistema binario»: gli indirizzi IP e le maschere sono numeri binari."
+      ],
+      "ricorda": [
+        "Switch = dentro la rete (MAC), router = tra le reti (IP).",
+        "TCP = raccomandata con ricevuta, UDP = cartolina.",
+        "DNS = rubrica dei nomi, DHCP = reception che assegna gli indirizzi.",
+        "IPv4 = 32 bit, IPv6 = 128 bit."
+      ],
+      "errori": [
+        "Confondere Internet (la rete) con il web (uno dei servizi che usano Internet).",
+        "Pensare che il lucchetto HTTPS voglia dire «sito affidabile».",
+        "Scambiare DNS e DHCP.",
+        "Dimenticare che le velocità di rete sono in bit al secondo, non in byte."
+      ],
+      "domande": [
+        {
+          "domanda": "Quale dispositivo collega la rete di casa a Internet?",
+          "risposta": "Il router."
+        },
+        {
+          "domanda": "Quale protocollo traduce i nomi di dominio in indirizzi IP?",
+          "risposta": "Il DNS."
+        },
+        {
+          "domanda": "Da quanti bit è formato un indirizzo IPv4?",
+          "risposta": "32 bit."
+        },
+        {
+          "domanda": "Che cosa significa il codice HTTP 404?",
+          "risposta": "Che la risorsa richiesta non è stata trovata."
+        },
+        {
+          "domanda": "Perché per le videochiamate si usa spesso UDP?",
+          "risposta": "Perché è più veloce e perdere qualche pacchetto è meglio che aspettarlo."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "Le reti sono progettate a livelli: ogni livello offre un servizio a quello superiore e usa quello inferiore. Il modello ISO/OSI ne ha sette (fisico, collegamento, rete, trasporto, sessione, presentazione, applicazione); il modello TCP/IP, quello realmente usato, ne ha quattro. Scendendo i livelli i dati vengono incapsulati: il messaggio dell'applicazione diventa un segmento TCP, poi un pacchetto IP, poi un frame Ethernet, poi bit sul mezzo fisico. Ogni livello aggiunge la sua intestazione, che il livello corrispondente del destinatario legge e rimuove.",
+        "Al livello di rete IP fornisce un servizio senza connessione e «best effort». Con la notazione CIDR un indirizzo come 192.168.10.77/26 indica che i primi 26 bit identificano la rete: l'indirizzo di rete si ottiene con l'AND bit a bit tra indirizzo e maschera (192.168.10.64), il broadcast mettendo a 1 i bit host (192.168.10.127), e gli host utilizzabili sono 2⁶ - 2 = 62. Gli indirizzi privati (10/8, 172.16/12, 192.168/16) escono su Internet tramite NAT. I router scelgono il percorso con tabelle di instradamento costruite da protocolli come OSPF e BGP, e ICMP trasporta i messaggi di controllo usati da ping e traceroute.",
+        "Al livello di trasporto le porte (16 bit) identificano le applicazioni. TCP è orientato alla connessione: la apre con il three-way handshake (SYN, SYN-ACK, ACK), numera i byte, usa conferme e ritrasmissioni, regola la velocità con il controllo di flusso (finestra del ricevitore) e di congestione. UDP aggiunge alle funzioni di IP solo le porte e un checksum: ha meno ritardi ed è usato da DNS, streaming in tempo reale e giochi. Al livello di collegamento Ethernet usa indirizzi MAC a 48 bit, e ARP trova il MAC corrispondente a un indirizzo IP nella rete locale.",
+        "Le prestazioni di una rete si descrivono con la banda (bit al secondo trasmissibili), la latenza (tempo perché un bit arrivi) e il throughput effettivo. Il tempo per trasferire un file è circa latenza + dimensione/banda: per file piccoli domina la latenza, per file grandi la banda. Al livello applicazione HTTP funziona a richiesta-risposta, con metodi (GET, POST, PUT, DELETE), intestazioni e codici di stato (2xx successo, 3xx reindirizzamento, 4xx errore del client, 5xx errore del server). HTTP è senza stato: le sessioni si mantengono con i cookie.",
+        "La sicurezza si basa sulla crittografia. Quella simmetrica (AES) usa una sola chiave condivisa ed è veloce; quella asimmetrica (RSA, curve ellittiche) usa una coppia di chiavi: si cifra con la chiave pubblica del destinatario e si firma con la propria chiave privata. TLS combina le due: con l'asimmetrica autentica il server tramite un certificato firmato da un'autorità e concorda una chiave di sessione, poi cifra i dati con la simmetrica. Firewall, VPN e aggiornamenti completano la difesa contro attacchi come intercettazione, phishing e negazione del servizio."
+      ],
+      "metodo": [
+        "Impara a memoria la tabella dei livelli OSI e TCP/IP con un protocollo e un dispositivo di esempio per ciascuno.",
+        "Esercitati con il subnetting: per 10 indirizzi CIDR calcola maschera, indirizzo di rete, broadcast e numero di host, e verifica con il modulo ipaddress di Python.",
+        "Usa Wireshark (o tcpdump) per osservare un handshake TCP, una richiesta DNS e una richiesta HTTP.",
+        "Disegna lo schema del three-way handshake e dello scambio TLS con le frecce tra client e server.",
+        "Risolvi problemi numerici su tempi di trasferimento separando il contributo della latenza da quello della banda."
+      ],
+      "ricorda": [
+        "Host per sottorete /n: 2^(32 - n) - 2.",
+        "Indirizzo di rete = IP AND maschera; broadcast = bit host tutti a 1.",
+        "TCP: SYN, SYN-ACK, ACK.",
+        "Cifra con la pubblica del destinatario, firma con la tua privata."
+      ],
+      "errori": [
+        "Dimenticare di togliere gli indirizzi di rete e di broadcast nel conteggio degli host.",
+        "Confondere controllo di flusso (protegge il ricevitore) e controllo di congestione (protegge la rete).",
+        "Pensare che la crittografia asimmetrica si usi per cifrare tutti i dati: è lenta, si usa per scambiare le chiavi e per le firme.",
+        "Attribuire al livello di rete compiti del livello di trasporto, come la ritrasmissione dei dati persi."
+      ],
+      "domande": [
+        {
+          "domanda": "Quanti host utilizzabili ha una sottorete /28?",
+          "risposta": "14: 2⁴ - 2."
+        },
+        {
+          "domanda": "Qual è l'indirizzo di broadcast di 10.0.0.0/30?",
+          "risposta": "10.0.0.3."
+        },
+        {
+          "domanda": "A che cosa serve ARP?",
+          "risposta": "A trovare l'indirizzo MAC che corrisponde a un indirizzo IP nella rete locale."
+        },
+        {
+          "domanda": "Quali sono i tre messaggi del three-way handshake?",
+          "risposta": "SYN, SYN-ACK, ACK."
+        },
+        {
+          "domanda": "Perché TLS usa anche la crittografia simmetrica?",
+          "risposta": "Perché è molto più veloce per cifrare grandi quantità di dati."
+        }
+      ]
+    }
+  },
+  "Architettura del computer e sistemi operativi": {
+    "superiore": {
+      "spiegazione": [
+        "Quasi tutti i computer seguono l'architettura di von Neumann: una CPU che elabora, una memoria centrale, i dispositivi di input e output, e i bus che li collegano. L'idea chiave è che il programma stia nella stessa memoria dei dati: per fare un lavoro diverso basta caricare un altro programma. Il bus degli indirizzi indica la cella di memoria da usare, il bus dei dati trasporta i valori, il bus di controllo dice se leggere o scrivere.",
+        "La CPU contiene l'unità di controllo, che coordina le operazioni, l'ALU, che esegue calcoli e confronti, e i registri, piccole memorie velocissime. Lavora ripetendo il ciclo fetch-decode-execute: preleva l'istruzione all'indirizzo indicato dal Program Counter, la decodifica e la esegue, poi passa alla successiva. Il ritmo è dato dal clock: a 3 GHz ci sono 3 miliardi di cicli al secondo, ognuno di circa 0,33 nanosecondi. Le CPU moderne hanno più core, cioè più unità di elaborazione che lavorano in parallelo.",
+        "Le memorie formano una gerarchia: in cima i registri, poi la cache, poi la RAM e infine i dischi (HDD e SSD). Salendo, le memorie sono più veloci ma più piccole e costose. La RAM è volatile: perde il contenuto quando si spegne il computer, e contiene i programmi in esecuzione. La ROM e la memoria flash del firmware sono non volatili e contengono il programma di avvio. I file restano invece sul disco, che è la memoria di massa.",
+        "Il sistema operativo è il software che gestisce le risorse del computer e fa da intermediario tra l'hardware e le applicazioni. Gestisce i processi (i programmi in esecuzione), decidendo a turno chi usa la CPU; assegna la memoria; organizza i file in cartelle; controlla le periferiche tramite i driver; protegge gli utenti con account e permessi. Esempi sono Windows, macOS, Linux, Android e iOS. Senza sistema operativo ogni programma dovrebbe sapere come comandare direttamente ogni componente.",
+        "I programmi vengono scritti in linguaggi comprensibili per le persone e poi tradotti nel linguaggio macchina della CPU. Il compilatore traduce tutto il programma prima di eseguirlo e produce un file eseguibile (come avviene per il C); l'interprete invece legge ed esegue le istruzioni una alla volta (Python usa un interprete). Il codice compilato è in genere più veloce, quello interpretato è più comodo da provare e correggere. In entrambi i casi alla fine la CPU esegue solo istruzioni in binario."
+      ],
+      "metodo": [
+        "Disegna lo schema di von Neumann con CPU, memoria, I/O e i tre bus, e spiegalo a voce in un minuto.",
+        "Simula su carta il ciclo fetch-decode-execute di tre istruzioni, scrivendo a ogni passo il valore del Program Counter.",
+        "Fai una tabella delle memorie (registri, cache, RAM, SSD, HDD) con velocità indicativa, capacità e volatilità.",
+        "Apri il gestore attività (Task Manager o Monitoraggio Attività) e osserva i processi, l'uso della CPU e della RAM.",
+        "Collega la mappa a «Rappresentazione dei dati e sistema binario» per capire perché la memoria si misura in potenze di 2."
+      ],
+      "ricorda": [
+        "Von Neumann: dati e programma nella stessa memoria.",
+        "Fetch, decode, execute: preleva, interpreta, esegui.",
+        "RAM volatile, ROM non volatile.",
+        "Programma = ricetta, processo = ricetta in preparazione."
+      ],
+      "errori": [
+        "Chiamare «memoria» lo spazio sul disco confondendolo con la RAM.",
+        "Pensare che una frequenza di clock più alta basti da sola a rendere un computer più veloce.",
+        "Confondere sistema operativo e applicazioni (il browser non è il sistema operativo).",
+        "Credere che il Program Counter conti i programmi aperti."
+      ],
+      "domande": [
+        {
+          "domanda": "Che cosa contiene il Program Counter?",
+          "risposta": "L'indirizzo della prossima istruzione da eseguire."
+        },
+        {
+          "domanda": "Quale memoria perde il contenuto allo spegnimento?",
+          "risposta": "La RAM."
+        },
+        {
+          "domanda": "Quanto dura un ciclo di clock a 1 GHz?",
+          "risposta": "1 nanosecondo."
+        },
+        {
+          "domanda": "Quale componente della CPU esegue le somme?",
+          "risposta": "L'ALU."
+        },
+        {
+          "domanda": "Che differenza c'è tra programma e processo?",
+          "risposta": "Il programma è il file con le istruzioni, il processo è il programma in esecuzione."
+        }
+      ]
+    },
+    "universita": {
+      "spiegazione": [
+        "La CPU esegue le istruzioni del suo insieme di istruzioni (ISA). Le architetture RISC (ARM, RISC-V) hanno istruzioni semplici e di lunghezza fissa, le CISC (x86) istruzioni più complesse e variabili. Le prestazioni dipendono da frequenza di clock, istruzioni per ciclo e numero di istruzioni eseguite: tempo = istruzioni · CPI / frequenza. La pipeline sovrappone le fasi di istruzioni diverse; i processori multicore eseguono più flussi in parallelo, ma la legge di Amdahl, S = 1 / ((1 - p) + p/n), ricorda che la parte sequenziale limita l'accelerazione.",
+        "Con un bus indirizzi di n bit si indirizzano 2ⁿ celle: 32 bit danno 4 GiB. Poiché la RAM è molto più lenta della CPU, si usano una o più cache, che sfruttano la località temporale (un dato usato ora sarà riusato presto) e spaziale (si useranno dati vicini). Un hit evita l'accesso alla RAM, un miss carica un intero blocco. L'I/O avviene tramite interrupt, segnali che interrompono la CPU per gestire un evento, e DMA, che trasferisce blocchi di dati tra periferiche e memoria senza impegnare la CPU.",
+        "Il sistema operativo ha un nucleo, il kernel, che gira in modalità privilegiata e può eseguire tutte le istruzioni; i programmi utente girano in modalità protetta e chiedono servizi al kernel con le chiamate di sistema (system call), come open, read e fork. Un processo è un programma in esecuzione con il suo spazio di memoria; i thread sono flussi di esecuzione che condividono la memoria dello stesso processo. Ogni processo attraversa gli stati nuovo, pronto, in esecuzione, bloccato e terminato.",
+        "Lo scheduler decide quale processo pronto ottiene la CPU. FCFS serve in ordine di arrivo ma soffre dell'effetto convoglio; SJF minimizza l'attesa media ma richiede di conoscere le durate; round robin assegna a turno un quanto di tempo e garantisce reattività. Quando più processi o thread usano dati condivisi servono meccanismi di sincronizzazione (mutex, semafori) per evitare le race condition. Un uso scorretto può causare il deadlock, che richiede quattro condizioni insieme: mutua esclusione, possesso e attesa, assenza di prelazione, attesa circolare.",
+        "La memoria virtuale dà a ogni processo uno spazio di indirizzi proprio e più grande della RAM fisica. Con la paginazione lo spazio è diviso in pagine (ad esempio 4 KiB) e la tabella delle pagine, con l'aiuto del TLB, traduce l'indirizzo virtuale (numero di pagina + offset) in indirizzo fisico. Se una pagina non è in RAM si ha un page fault e il sistema la carica dal disco; se succede di continuo il sistema rallenta drasticamente (thrashing). Il file system organizza i dati sui dischi in file e directory, con permessi di lettura, scrittura ed esecuzione (in Unix rwx, impostati con chmod)."
+      ],
+      "metodo": [
+        "Calcola a mano esempi di scheduling (FCFS, SJF, round robin) con diagrammi di Gantt e tempi medi di attesa.",
+        "Risolvi esercizi di paginazione: dati indirizzi e dimensione di pagina, trova bit di offset, numero di pagina e indirizzo fisico.",
+        "Su Linux o macOS usa ps, top e ls -l per osservare processi, stati e permessi; prova chmod su un file di prova.",
+        "Scrivi in Python un programma con due thread che incrementano un contatore condiviso, prima senza e poi con un Lock, e confronta i risultati.",
+        "Riassumi in una pagina il percorso di una system call, dall'applicazione al kernel e ritorno."
+      ],
+      "ricorda": [
+        "Amdahl: S = 1 / ((1 - p) + p/n).",
+        "Pagina di 2ᵏ byte → k bit di offset.",
+        "Deadlock: mutua esclusione, possesso e attesa, no prelazione, attesa circolare.",
+        "rwx = 4, 2, 1: chmod 754 = rwxr-xr--."
+      ],
+      "errori": [
+        "Confondere processi e thread: i thread di uno stesso processo condividono la memoria.",
+        "Pensare che aggiungere processori acceleri in modo proporzionale qualsiasi programma.",
+        "Confondere deadlock e starvation.",
+        "Dimenticare che lo stato «bloccato» non è «pronto»: un processo bloccato non può usare la CPU finché non arriva l'evento atteso."
+      ],
+      "domande": [
+        {
+          "domanda": "Con pagine da 8 KiB, quanti bit di offset servono?",
+          "risposta": "13, perché 8 KiB = 2¹³ byte."
+        },
+        {
+          "domanda": "Speedup massimo con il 90% parallelizzabile e infiniti processori?",
+          "risposta": "10: 1 / 0,1."
+        },
+        {
+          "domanda": "Che cos'è una system call?",
+          "risposta": "Una richiesta di un programma utente al kernel per ottenere un servizio del sistema operativo."
+        },
+        {
+          "domanda": "Quale scheduling minimizza il tempo medio di attesa se si conoscono le durate?",
+          "risposta": "SJF (Shortest Job First)."
+        },
+        {
+          "domanda": "Che cosa succede in un page fault?",
+          "risposta": "La pagina richiesta non è in RAM e il sistema operativo la carica dal disco."
+        }
+      ]
+    }
+  }
+}

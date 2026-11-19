@@ -1,0 +1,962 @@
+[
+ {
+  "id": "NCHI-081",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Qual è l'espressione della costante di equilibrio Kc per la reazione N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g)?",
+  "opzioni": {
+   "A": "Kc = [N₂][H₂]³ / [NH₃]²",
+   "B": "Kc = 2[NH₃] / ([N₂] · 3[H₂])",
+   "C": "Kc = [NH₃] / ([N₂][H₂])",
+   "D": "Kc = [NH₃]² / ([N₂] + [H₂]³)",
+   "E": "Kc = [NH₃]² / ([N₂][H₂]³)"
+  },
+  "giusta": "E",
+  "perche": "Per la legge di azione di massa la costante è il prodotto delle concentrazioni dei prodotti diviso il prodotto di quelle dei reagenti, ciascuna elevata al proprio coefficiente stechiometrico. Quindi [NH₃]² al numeratore e [N₂][H₂]³ al denominatore. Moltiplicare per i coefficienti invece di usarli come esponenti, o invertire numeratore e denominatore, sono gli errori più frequenti.",
+  "semplice": "Nella costante di equilibrio i prodotti stanno sopra e i reagenti sotto, e ogni coefficiente diventa un esponente: 2 NH₃ diventa [NH₃]², 3 H₂ diventa [H₂]³.",
+  "passaggi": [
+   "Prodotti al numeratore: [NH₃]",
+   "Reagenti al denominatore: [N₂] e [H₂]",
+   "Coefficienti come esponenti: 2 per NH₃, 3 per H₂",
+   "Kc = [NH₃]² / ([N₂][H₂]³)"
+  ],
+  "concetto": "Legge di azione di massa"
+ },
+ {
+  "id": "NCHI-082",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Per la reazione H₂(g) + I₂(g) ⇌ 2 HI(g), all'equilibrio [H₂] = [I₂] = 0,10 M e [HI] = 0,70 M. Quanto vale Kc?",
+  "opzioni": {
+   "A": "70",
+   "B": "7,0",
+   "C": "49",
+   "D": "35",
+   "E": "0,020"
+  },
+  "giusta": "C",
+  "perche": "Kc = [HI]² / ([H₂][I₂]) = (0,70)² / (0,10 × 0,10) = 0,49 / 0,010 = 49. Dimenticare di elevare al quadrato [HI] dà 70; invertire l'espressione dà circa 0,020.",
+  "semplice": "Basta inserire i numeri nella formula: sopra l'acido iodidrico al quadrato (0,49), sotto il prodotto di idrogeno e iodio (0,01). 0,49 diviso 0,01 fa 49.",
+  "passaggi": [
+   "Scrivi Kc = [HI]² / ([H₂][I₂])",
+   "Numeratore: (0,70)² = 0,49",
+   "Denominatore: 0,10 × 0,10 = 0,010",
+   "Kc = 0,49 / 0,010 = 49"
+  ],
+  "concetto": "Calcolo di Kc"
+ },
+ {
+  "id": "NCHI-083",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Per l'equilibrio N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g), che cosa succede se si aumenta la pressione riducendo il volume del recipiente?",
+  "opzioni": {
+   "A": "L'equilibrio si sposta verso sinistra, dove ci sono più moli di gas",
+   "B": "Non succede nulla, perché la pressione non influisce sugli equilibri",
+   "C": "L'equilibrio si sposta verso destra, dove ci sono meno moli di gas",
+   "D": "La costante di equilibrio aumenta",
+   "E": "La reazione si arresta"
+  },
+  "giusta": "C",
+  "perche": "Per il principio di Le Châtelier il sistema reagisce a una perturbazione cercando di attenuarla: un aumento di pressione viene contrastato spostando l'equilibrio verso il lato con meno moli gassose. A sinistra ci sono 4 moli di gas, a destra 2, quindi si forma più ammoniaca. La costante non cambia, perché dipende solo dalla temperatura.",
+  "semplice": "Se stringi le molecole in uno spazio più piccolo, il sistema cerca di «fare spazio» riducendo il numero di molecole: quattro molecole di reagenti diventano due di ammoniaca.",
+  "passaggi": [
+   "Conta le moli di gas: 4 a sinistra, 2 a destra",
+   "Applica Le Châtelier: l'aumento di P favorisce meno moli",
+   "Spostamento verso destra",
+   "K non cambia: dipende solo da T"
+  ],
+  "concetto": "Le Châtelier ed effetto della pressione"
+ },
+ {
+  "id": "NCHI-084",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Una reazione all'equilibrio è esotermica nel verso diretto. Che cosa succede se si aumenta la temperatura?",
+  "opzioni": {
+   "A": "L'equilibrio si sposta verso i prodotti e K aumenta",
+   "B": "L'equilibrio si sposta verso i reagenti ma K resta uguale",
+   "C": "L'equilibrio si sposta verso i reagenti e la costante di equilibrio diminuisce",
+   "D": "Non cambia nulla, perché la temperatura agisce solo sulla velocità",
+   "E": "K aumenta ma l'equilibrio non si sposta"
+  },
+  "giusta": "C",
+  "perche": "In una reazione esotermica il calore può essere considerato un prodotto. Aumentando la temperatura il sistema assorbe calore favorendo la reazione inversa, endotermica. A differenza di concentrazione e pressione, la temperatura cambia il valore stesso della costante: per una reazione esotermica K diminuisce al crescere di T.",
+  "semplice": "Se la reazione «produce calore» e tu ne aggiungi altro scaldando, il sistema prova a consumarlo andando all'indietro. E in questo caso cambia proprio il punto di equilibrio, cioè la costante.",
+  "passaggi": [
+   "Tratta il calore come un prodotto della reazione esotermica",
+   "Aumentare T = aggiungere un prodotto",
+   "Le Châtelier: spostamento verso i reagenti",
+   "La temperatura modifica K: per reazione esotermica diminuisce"
+  ],
+  "concetto": "Effetto della temperatura sull'equilibrio"
+ },
+ {
+  "id": "NCHI-085",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "In una miscela di reazione il quoziente di reazione Q è minore della costante di equilibrio K. In quale verso procede la reazione?",
+  "opzioni": {
+   "A": "Verso sinistra, formando reagenti",
+   "B": "Non procede, perché è già all'equilibrio",
+   "C": "Verso destra finché i reagenti non si esauriscono del tutto",
+   "D": "Verso destra, formando prodotti, finché Q non diventa uguale a K",
+   "E": "Il verso dipende solo dalla presenza di un catalizzatore"
+  },
+  "giusta": "D",
+  "perche": "Q ha la stessa espressione di K ma è calcolato con le concentrazioni del momento. Se Q < K, il rapporto prodotti/reagenti è troppo piccolo rispetto all'equilibrio: la reazione procede verso i prodotti, aumentando Q fino a K. Non si arriva al consumo totale dei reagenti, ma all'equilibrio.",
+  "semplice": "K è il traguardo. Se Q è più piccolo, ci sono ancora pochi prodotti rispetto a quelli che ci saranno all'equilibrio, quindi la reazione continua a produrne.",
+  "passaggi": [
+   "Ricorda: Q ha la forma di K ma con concentrazioni attuali",
+   "Q < K: troppi reagenti rispetto all'equilibrio",
+   "La reazione avanza verso i prodotti",
+   "Si ferma quando Q = K"
+  ],
+  "concetto": "Quoziente di reazione"
+ },
+ {
+  "id": "NCHI-086",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Per l'equilibrio A ⇌ B, Kc = 4,0. Se inizialmente [A] = 1,0 M e [B] = 0, quale sarà [B] all'equilibrio?",
+  "opzioni": {
+   "A": "0,20 M",
+   "B": "0,80 M",
+   "C": "4,0 M",
+   "D": "0,50 M",
+   "E": "0,25 M"
+  },
+  "giusta": "B",
+  "perche": "Con la tabella delle concentrazioni: si consuma x di A e si forma x di B, quindi all'equilibrio [A] = 1,0 − x e [B] = x. Kc = x / (1,0 − x) = 4,0, da cui x = 4,0 − 4,0x, 5,0x = 4,0 e x = 0,80 M. Il valore 0,20 M è la concentrazione di A rimasta, non quella di B.",
+  "semplice": "Una costante pari a 4 significa che all'equilibrio c'è quattro volte più B che A. Dividendo 1 mole in 5 parti, 4 parti vanno a B (0,8) e 1 parte resta come A (0,2).",
+  "passaggi": [
+   "Equilibrio: [A] = 1,0 − x, [B] = x",
+   "Kc = x / (1,0 − x) = 4,0",
+   "x = 4,0 − 4,0x → 5,0x = 4,0",
+   "x = [B] = 0,80 M"
+  ],
+  "concetto": "Calcolo delle concentrazioni di equilibrio"
+ },
+ {
+  "id": "NCHI-087",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Che effetto ha l'aggiunta di un catalizzatore a una reazione già all'equilibrio?",
+  "opzioni": {
+   "A": "L'equilibrio si sposta verso i prodotti",
+   "B": "L'equilibrio si sposta verso i reagenti",
+   "C": "Nessuno spostamento: le concentrazioni di equilibrio restano invariate",
+   "D": "La costante di equilibrio aumenta",
+   "E": "La reazione diventa irreversibile"
+  },
+  "giusta": "C",
+  "perche": "Il catalizzatore accelera nella stessa misura la reazione diretta e quella inversa, quindi non altera le concentrazioni all'equilibrio né la costante: permette solo di raggiungere l'equilibrio più in fretta. Se il sistema è già all'equilibrio, non cambia nulla. Pensare che un catalizzatore «produca più prodotto» è l'errore più diffuso.",
+  "semplice": "Il catalizzatore fa andare più veloci sia chi va avanti sia chi torna indietro. Se il traffico nelle due direzioni era già bilanciato, resta bilanciato.",
+  "passaggi": [
+   "Ricorda: il catalizzatore accelera diretta e inversa",
+   "Non cambia K",
+   "Se il sistema è all'equilibrio, le velocità restano uguali",
+   "Nessuno spostamento"
+  ],
+  "concetto": "Catalizzatore ed equilibrio"
+ },
+ {
+  "id": "NCHI-088",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Per quale delle seguenti reazioni Kp è uguale a Kc?",
+  "opzioni": {
+   "A": "H₂(g) + Cl₂(g) ⇌ 2 HCl(g)",
+   "B": "N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g)",
+   "C": "2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g)",
+   "D": "N₂O₄(g) ⇌ 2 NO₂(g)",
+   "E": "PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)"
+  },
+  "giusta": "A",
+  "perche": "Kp e Kc sono legate da Kp = Kc(RT)^Δn, dove Δn è la differenza tra moli gassose di prodotti e di reagenti. Quando Δn = 0 il termine (RT)⁰ vale 1 e le due costanti coincidono. Per H₂ + Cl₂ ⇌ 2 HCl si hanno 2 moli di gas a sinistra e 2 a destra; in tutte le altre reazioni il numero di moli gassose cambia.",
+  "semplice": "Le due costanti sono uguali quando la reazione non cambia il numero di molecole di gas: due molecole entrano e due escono.",
+  "passaggi": [
+   "Ricorda: Kp = Kc(RT)^Δn",
+   "Kp = Kc solo se Δn = 0",
+   "Calcola Δn: per H₂ + Cl₂ ⇌ 2 HCl, 2 − 2 = 0",
+   "Nelle altre Δn ≠ 0"
+  ],
+  "concetto": "Relazione tra Kp e Kc"
+ },
+ {
+  "id": "NCHI-089",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "In un recipiente rigido contenente l'equilibrio 2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g) si aggiunge argon, a volume e temperatura costanti. Che cosa succede?",
+  "opzioni": {
+   "A": "L'equilibrio si sposta a destra perché aumenta la pressione totale",
+   "B": "L'equilibrio si sposta a sinistra perché l'argon diluisce i gas",
+   "C": "L'argon reagisce con l'ossigeno",
+   "D": "Nulla: le concentrazioni (e le pressioni parziali) dei gas reagenti non cambiano",
+   "E": "La costante di equilibrio diminuisce"
+  },
+  "giusta": "D",
+  "perche": "A volume costante l'argon aumenta la pressione totale ma non modifica le moli né le concentrazioni delle specie che partecipano all'equilibrio, quindi le loro pressioni parziali restano uguali e Q resta uguale a K. Lo spostamento verso destra si avrebbe solo riducendo il volume, cioè aumentando le concentrazioni dei gas reagenti.",
+  "semplice": "L'argon è un ospite che non partecipa al gioco: entra nella stanza ma non cambia quante molecole di ciascun giocatore ci sono in ogni litro. Il gioco quindi continua come prima.",
+  "passaggi": [
+   "Nota: volume costante, gas inerte",
+   "Le moli e le concentrazioni di SO₂, O₂, SO₃ non cambiano",
+   "Le pressioni parziali restano uguali: Q = K",
+   "Nessuno spostamento"
+  ],
+  "concetto": "Gas inerte e equilibrio"
+ },
+ {
+  "id": "NCHI-090",
+  "materia": "Chimica",
+  "argomento": "Equilibrio chimico e Le Châtelier",
+  "livello": "superiori",
+  "domanda": "Per l'equilibrio eterogeneo CaCO₃(s) ⇌ CaO(s) + CO₂(g), qual è l'espressione corretta di Kp?",
+  "opzioni": {
+   "A": "Kp = P(CaO) · P(CO₂) / P(CaCO₃)",
+   "B": "Kp = 1 / P(CO₂)",
+   "C": "Kp = [CaO][CO₂] / [CaCO₃]",
+   "D": "Kp = P(CO₂)",
+   "E": "Kp = P(CO₂)²"
+  },
+  "giusta": "D",
+  "perche": "Nella costante di equilibrio non compaiono i solidi puri (né i liquidi puri), perché la loro attività è costante e uguale a 1. Restano solo i gas: Kp = P(CO₂). Ne segue che, a una data temperatura, la pressione di CO₂ all'equilibrio è fissa, qualunque sia la quantità di carbonato o di ossido presente.",
+  "semplice": "I solidi sono «sempre uguali a se stessi», quindi non entrano nel conto. Conta solo quanta anidride carbonica c'è nell'aria sopra di loro.",
+  "passaggi": [
+   "Individua le fasi: due solidi e un gas",
+   "Escludi i solidi puri dalla costante",
+   "Resta solo il gas prodotto",
+   "Kp = P(CO₂)"
+  ],
+  "concetto": "Equilibri eterogenei"
+ },
+ {
+  "id": "NCHI-091",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Qual è la forza elettromotrice standard della pila Daniell (Zn | Zn²⁺ || Cu²⁺ | Cu)? (E°(Zn²⁺/Zn) = −0,76 V; E°(Cu²⁺/Cu) = +0,34 V)",
+  "opzioni": {
+   "A": "0,42 V",
+   "B": "−1,10 V",
+   "C": "0,34 V",
+   "D": "1,10 V",
+   "E": "0,76 V"
+  },
+  "giusta": "D",
+  "perche": "La f.e.m. standard è E°(catodo) − E°(anodo). Al catodo si riduce la coppia con potenziale maggiore (rame), all'anodo si ossida lo zinco: 0,34 − (−0,76) = 1,10 V. Sommare i valori algebricamente senza la sottrazione, 0,34 + (−0,76), dà −0,42 V e porta all'errore 0,42 V.",
+  "semplice": "Lo zinco ha molta voglia di perdere elettroni, il rame di prenderli. La «spinta» totale è la distanza tra i due valori sulla scala dei potenziali: da −0,76 a +0,34 ci sono 1,10 V.",
+  "passaggi": [
+   "Catodo: potenziale più alto, Cu (+0,34 V)",
+   "Anodo: potenziale più basso, Zn (−0,76 V)",
+   "f.e.m. = E°catodo − E°anodo",
+   "0,34 − (−0,76) = 1,10 V"
+  ],
+  "concetto": "Forza elettromotrice di una pila"
+ },
+ {
+  "id": "NCHI-092",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Qual è la f.e.m. standard di una pila formata dagli elettrodi Zn²⁺/Zn (E° = −0,76 V) e Ag⁺/Ag (E° = +0,80 V)?",
+  "opzioni": {
+   "A": "1,56 V",
+   "B": "0,04 V",
+   "C": "2,36 V",
+   "D": "0,80 V",
+   "E": "1,10 V"
+  },
+  "giusta": "A",
+  "perche": "Il catodo è l'argento (potenziale più alto) e l'anodo è lo zinco: f.e.m. = 0,80 − (−0,76) = 1,56 V. Anche se nella reazione bilanciata servono 2 Ag⁺ per ogni Zn, il potenziale è una proprietà intensiva e non si moltiplica per il coefficiente: farlo (2 × 0,80 + 0,76 = 2,36 V) è un errore classico.",
+  "semplice": "La tensione di una pila non dipende da quanti ioni reagiscono, così come la tensione di una batteria non cambia se è grande o piccola. Conta solo la differenza tra i due potenziali.",
+  "passaggi": [
+   "Catodo: Ag (+0,80 V); anodo: Zn (−0,76 V)",
+   "f.e.m. = E°catodo − E°anodo",
+   "Non moltiplicare i potenziali per i coefficienti",
+   "0,80 − (−0,76) = 1,56 V"
+  ],
+  "concetto": "I potenziali sono grandezze intensive"
+ },
+ {
+  "id": "NCHI-093",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "In una pila galvanica, quale affermazione sull'anodo è corretta?",
+  "opzioni": {
+   "A": "All'anodo avviene la riduzione ed è il polo positivo",
+   "B": "All'anodo avviene l'ossidazione ed è il polo positivo",
+   "C": "All'anodo si depositano sempre i cationi metallici",
+   "D": "All'anodo gli elettroni entrano dal circuito esterno",
+   "E": "All'anodo avviene l'ossidazione ed è il polo negativo"
+  },
+  "giusta": "E",
+  "perche": "In qualunque cella elettrochimica l'anodo è l'elettrodo in cui avviene l'ossidazione. Nella pila l'ossidazione è spontanea e libera elettroni che restano sull'elettrodo, rendendolo il polo negativo; gli elettroni escono dall'anodo verso il catodo. Nell'elettrolisi invece l'anodo è positivo: confondere le due celle è la causa più comune dell'errore.",
+  "semplice": "Nella pila lo zinco si «consuma» e lascia indietro elettroni: quel lato si carica negativamente ed è l'anodo. Gli elettroni partono da lì e viaggiano nel filo fino al rame.",
+  "passaggi": [
+   "Ricorda: anodo = ossidazione, in ogni cella",
+   "Nella pila l'ossidazione libera elettroni sull'elettrodo",
+   "Quindi l'anodo della pila è negativo",
+   "Gli elettroni escono dall'anodo verso il catodo"
+  ],
+  "concetto": "Anodo e catodo nella pila"
+ },
+ {
+  "id": "NCHI-094",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Qual è la funzione del ponte salino in una pila?",
+  "opzioni": {
+   "A": "Permettere il passaggio degli elettroni tra i due elettrodi",
+   "B": "Permettere il passaggio di ioni tra le due semicelle, mantenendo la neutralità elettrica delle soluzioni",
+   "C": "Fornire gli ioni metallici che si depositano al catodo",
+   "D": "Impedire qualsiasi contatto tra le due soluzioni",
+   "E": "Aumentare la f.e.m. della pila"
+  },
+  "giusta": "B",
+  "perche": "Mentre la pila funziona, nella semicella anodica si accumulano cationi e in quella catodica anioni in eccesso; senza compensazione, la reazione si fermerebbe subito. Il ponte salino, che contiene un elettrolita come KNO₃, rilascia anioni verso l'anodo e cationi verso il catodo chiudendo il circuito interno. Gli elettroni invece passano nel filo esterno, non nel ponte.",
+  "semplice": "Il ponte salino è come una valvola di sfogo: lascia passare gli ioni per evitare che una parte della pila si carichi troppo di positivo e l'altra di negativo. Senza di lui la corrente si interrompe subito.",
+  "passaggi": [
+   "Nota che le semicelle accumulano carica durante il funzionamento",
+   "Gli elettroni passano nel circuito esterno",
+   "Il ponte salino fa migrare ioni",
+   "Mantiene la neutralità elettrica e chiude il circuito"
+  ],
+  "concetto": "Ponte salino"
+ },
+ {
+  "id": "NCHI-095",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Una corrente di 2,00 A attraversa per 9650 s una soluzione di CuSO₄. Quanti grammi di rame si depositano al catodo? (F = 96 500 C/mol; M(Cu) = 63,5 g/mol)",
+  "opzioni": {
+   "A": "12,7 g",
+   "B": "3,18 g",
+   "C": "63,5 g",
+   "D": "0,635 g",
+   "E": "6,35 g"
+  },
+  "giusta": "E",
+  "perche": "La carica è Q = I · t = 2,00 × 9650 = 19 300 C, che corrispondono a 19 300/96 500 = 0,200 mol di elettroni. Poiché Cu²⁺ + 2e⁻ → Cu, le moli di rame sono 0,100 mol, pari a 0,100 × 63,5 = 6,35 g. Chi dimentica che servono 2 elettroni per ogni atomo di rame ottiene 12,7 g.",
+  "semplice": "Ogni ione rame ha bisogno di due elettroni per diventare metallo. La corrente fornisce 0,2 moli di elettroni, quindi si formano 0,1 moli di rame, circa 6 grammi.",
+  "passaggi": [
+   "Carica: Q = I · t = 2,00 A × 9650 s = 19 300 C",
+   "Moli di e⁻: 19 300 / 96 500 = 0,200 mol",
+   "Cu²⁺ + 2e⁻ → Cu: moli di Cu = 0,100 mol",
+   "Massa: 0,100 × 63,5 = 6,35 g"
+  ],
+  "concetto": "Leggi di Faraday"
+ },
+ {
+  "id": "NCHI-096",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Nell'elettrolisi del cloruro di sodio fuso, che cosa si ottiene agli elettrodi?",
+  "opzioni": {
+   "A": "Cloro al catodo e sodio all'anodo",
+   "B": "Idrogeno al catodo e ossigeno all'anodo",
+   "C": "Idrogeno al catodo e cloro all'anodo",
+   "D": "Sodio metallico al catodo e cloro gassoso all'anodo",
+   "E": "Sodio metallico a entrambi gli elettrodi"
+  },
+  "giusta": "D",
+  "perche": "Nel sale fuso ci sono solo ioni Na⁺ e Cl⁻. Al catodo (negativo) i cationi si riducono: Na⁺ + e⁻ → Na. All'anodo (positivo) gli anioni si ossidano: 2 Cl⁻ → Cl₂ + 2e⁻. Idrogeno al catodo e cloro all'anodo si ottengono invece dall'elettrolisi della soluzione acquosa, dove si riduce l'acqua al posto del sodio.",
+  "semplice": "Senza acqua, nel sale fuso ci sono solo sodio e cloro: il polo negativo attira il sodio e lo trasforma in metallo, il polo positivo attira il cloro e lo trasforma in gas.",
+  "passaggi": [
+   "Identifica le specie presenti nel fuso: Na⁺ e Cl⁻",
+   "Catodo (−): riduzione di Na⁺ a Na",
+   "Anodo (+): ossidazione di Cl⁻ a Cl₂",
+   "Non c'è acqua, quindi niente H₂ né O₂"
+  ],
+  "concetto": "Elettrolisi dei sali fusi"
+ },
+ {
+  "id": "NCHI-097",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Quanto vale ΔG° per la reazione della pila Daniell, che ha E° = 1,10 V e scambia 2 elettroni? (F = 96 485 C/mol)",
+  "opzioni": {
+   "A": "+212 kJ/mol",
+   "B": "−212 kJ/mol",
+   "C": "−106 kJ/mol",
+   "D": "−2,20 kJ/mol",
+   "E": "−424 kJ/mol"
+  },
+  "giusta": "B",
+  "perche": "La relazione tra energia libera e f.e.m. è ΔG° = −nFE° = −2 × 96 485 × 1,10 = −212 267 J/mol ≈ −212 kJ/mol. Il segno negativo indica che la reazione è spontanea, come atteso per una pila con E° positivo. Dimenticare n = 2 dà −106 kJ/mol; dimenticare il segno meno dà +212 kJ/mol.",
+  "semplice": "Una pila che funziona da sola deve avere energia libera negativa: la reazione «scende» spontaneamente e quell'energia la usiamo come corrente elettrica.",
+  "passaggi": [
+   "Dati: n = 2, F = 96 485 C/mol, E° = 1,10 V",
+   "Formula: ΔG° = −nFE°",
+   "ΔG° = −2 × 96 485 × 1,10 = −212 267 J/mol",
+   "Risultato: circa −212 kJ/mol"
+  ],
+  "concetto": "ΔG° = −nFE°"
+ },
+ {
+  "id": "NCHI-098",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Quale dei seguenti metalli, immerso in una soluzione di Cu²⁺ (E°(Cu²⁺/Cu) = +0,34 V), si ricopre spontaneamente di rame metallico?",
+  "opzioni": {
+   "A": "Argento (E°(Ag⁺/Ag) = +0,80 V)",
+   "B": "Oro (E°(Au³⁺/Au) = +1,50 V)",
+   "C": "Zinco (E°(Zn²⁺/Zn) = −0,76 V)",
+   "D": "Platino (E°(Pt²⁺/Pt) = +1,18 V)",
+   "E": "Mercurio (E°(Hg²⁺/Hg) = +0,85 V)"
+  },
+  "giusta": "C",
+  "perche": "Un metallo riduce Cu²⁺ spontaneamente solo se la sua coppia ha potenziale standard più basso di quella del rame: il metallo si ossida (anodo) e il rame si riduce (catodo), con f.e.m. positiva. Lo zinco, con −0,76 V, soddisfa la condizione; argento, oro, platino e mercurio hanno potenziali più alti e sono «più nobili» del rame, quindi non reagiscono.",
+  "semplice": "I metalli in basso nella scala dei potenziali cedono volentieri elettroni a quelli più in alto. Lo zinco sta molto più in basso del rame: gli cede gli elettroni e il rame si deposita.",
+  "passaggi": [
+   "Condizione: E° del metallo < E° del rame",
+   "Confronta i potenziali con +0,34 V",
+   "Solo lo zinco ha potenziale minore",
+   "Lo zinco si ossida e il rame si deposita"
+  ],
+  "concetto": "Scala dei potenziali e spontaneità"
+ },
+ {
+  "id": "NCHI-099",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "In una pila Daniell si aumenta la concentrazione di Cu²⁺ nella semicella catodica, lasciando invariato il resto. Che cosa succede alla f.e.m.?",
+  "opzioni": {
+   "A": "Diminuisce",
+   "B": "Resta uguale, perché la f.e.m. dipende solo dai potenziali standard",
+   "C": "Si annulla",
+   "D": "Aumenta, come previsto dall'equazione di Nernst",
+   "E": "Cambia segno"
+  },
+  "giusta": "D",
+  "perche": "L'equazione di Nernst per la pila è E = E° − (0,0592/2) log([Zn²⁺]/[Cu²⁺]) a 25 °C. Aumentando [Cu²⁺] il rapporto diminuisce, il logaritmo diventa più negativo e E aumenta. In termini di Le Châtelier, più reagente spinge la reazione verso i prodotti. I potenziali standard valgono solo a concentrazioni 1 M.",
+  "semplice": "Più ioni rame ci sono, più la reazione ha «carburante» al catodo e spinge con più forza: la tensione sale un po'.",
+  "passaggi": [
+   "Scrivi Nernst: E = E° − (0,0592/n) log Q",
+   "Q = [Zn²⁺] / [Cu²⁺]",
+   "Più Cu²⁺: Q diminuisce, log Q diminuisce",
+   "E aumenta"
+  ],
+  "concetto": "Equazione di Nernst"
+ },
+ {
+  "id": "NCHI-100",
+  "materia": "Chimica",
+  "argomento": "Pile, elettrolisi e potenziali standard",
+  "livello": "superiori",
+  "domanda": "Per proteggere dalla corrosione lo scafo in acciaio di una nave si fissano blocchi di zinco o magnesio. Perché funziona?",
+  "opzioni": {
+   "A": "Perché zinco e magnesio sono più nobili del ferro",
+   "B": "Perché formano una vernice impermeabile sullo scafo",
+   "C": "Perché catalizzano la riduzione del ferro arrugginito",
+   "D": "Perché aumentano il potenziale di ossidazione del ferro",
+   "E": "Perché zinco e magnesio hanno potenziale di riduzione più basso del ferro e si ossidano al suo posto (anodo sacrificale)"
+  },
+  "giusta": "E",
+  "perche": "Collegando il ferro a un metallo più facilmente ossidabile si forma una pila in cui il ferro fa da catodo e il metallo più attivo da anodo: è quest'ultimo a corrodersi, mentre il ferro resta protetto. Per questo i blocchi vanno sostituiti periodicamente. Dire che zinco e magnesio sono più nobili è il contrario della verità: proprio perché sono meno nobili si sacrificano.",
+  "semplice": "È come una guardia del corpo che si prende i colpi al posto del capo: lo zinco si arrugginisce al posto del ferro, che rimane intatto.",
+  "passaggi": [
+   "Confronta i potenziali: Zn e Mg più bassi del Fe",
+   "Il metallo con potenziale più basso si ossida",
+   "Il ferro diventa il catodo e non si corrode",
+   "Lo zinco o il magnesio si consumano: anodo sacrificale"
+  ],
+  "concetto": "Protezione catodica"
+ },
+ {
+  "id": "NCHI-101",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "L'uranio-238 (Z = 92) emette una particella α. Quale nucleo si forma?",
+  "opzioni": {
+   "A": "Torio-236 (Z = 90)",
+   "B": "Protoattinio-238 (Z = 91)",
+   "C": "Plutonio-242 (Z = 94)",
+   "D": "Torio-234 (Z = 90)",
+   "E": "Uranio-234 (Z = 92)"
+  },
+  "giusta": "D",
+  "perche": "La particella α è un nucleo di elio ⁴₂He: il nucleo che la emette perde 4 unità di massa e 2 di numero atomico. Quindi ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He. Il protoattinio con la stessa massa si otterrebbe invece da un decadimento β⁻, che aumenta Z di 1 senza cambiare A.",
+  "semplice": "Il decadimento α è come staccare un pezzetto da 4 (2 protoni e 2 neutroni) dal nucleo: la massa scende da 238 a 234 e il numero atomico da 92 a 90, che è il torio.",
+  "passaggi": [
+   "Particella α = ⁴₂He",
+   "Nuovo A = 238 − 4 = 234",
+   "Nuovo Z = 92 − 2 = 90",
+   "Z = 90 è il torio: ²³⁴Th"
+  ],
+  "concetto": "Decadimento alfa"
+ },
+ {
+  "id": "NCHI-102",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Che cosa avviene nel nucleo durante un decadimento β⁻?",
+  "opzioni": {
+   "A": "Un neutrone si trasforma in un protone, emettendo un elettrone e un antineutrino; Z aumenta di 1 e A resta uguale",
+   "B": "Un protone si trasforma in un neutrone; Z diminuisce di 1",
+   "C": "Un elettrone degli orbitali esterni viene espulso",
+   "D": "Il nucleo perde due protoni e due neutroni",
+   "E": "Il nucleo emette solo energia sotto forma di raggi γ"
+  },
+  "giusta": "A",
+  "perche": "Nel decadimento β⁻ un neutrone del nucleo diventa protone e viene emesso un elettrone di origine nucleare insieme a un antineutrino. Il numero di massa non cambia, mentre Z cresce di un'unità: per esempio ¹⁴C → ¹⁴N. L'elettrone emesso non proviene dagli orbitali, errore frequente; la trasformazione di un protone in neutrone è il decadimento β⁺.",
+  "semplice": "Nel decadimento beta un neutrone «cambia maglia» e diventa protone, lanciando fuori un elettrone. Il nucleo pesa uguale ma ora ha un protone in più: è diventato l'elemento successivo.",
+  "passaggi": [
+   "Ricorda: la particella β⁻ è un elettrone di origine nucleare",
+   "Nasce dalla trasformazione n → p + e⁻ + antineutrino",
+   "A resta uguale, Z aumenta di 1",
+   "Esempio: ¹⁴C diventa ¹⁴N"
+  ],
+  "concetto": "Decadimento beta meno"
+ },
+ {
+  "id": "NCHI-103",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Lo iodio-131 ha un tempo di dimezzamento di 8 giorni. Quanti grammi restano di un campione di 80 g dopo 24 giorni?",
+  "opzioni": {
+   "A": "20 g",
+   "B": "26,7 g",
+   "C": "10 g",
+   "D": "40 g",
+   "E": "0 g"
+  },
+  "giusta": "C",
+  "perche": "In 24 giorni passano 24/8 = 3 tempi di dimezzamento. La massa si dimezza a ogni periodo: 80 → 40 → 20 → 10 g, cioè 80 × (1/2)³ = 10 g. Il valore 26,7 g deriva dal dividere per 3 invece di dimezzare tre volte: il decadimento è esponenziale, non lineare.",
+  "semplice": "Ogni 8 giorni metà dello iodio radioattivo sparisce. Dopo 8 giorni ne hai 40 g, dopo 16 giorni 20 g e dopo 24 giorni 10 g.",
+  "passaggi": [
+   "Numero di emivite: 24 / 8 = 3",
+   "Formula: m = m₀ · (1/2)ⁿ",
+   "m = 80 × (1/2)³ = 80 / 8",
+   "Risultato: 10 g"
+  ],
+  "concetto": "Tempo di dimezzamento"
+ },
+ {
+  "id": "NCHI-104",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Quale ordine di potere penetrante nella materia è corretto per le radiazioni nucleari?",
+  "opzioni": {
+   "A": "α > β > γ",
+   "B": "γ > β > α",
+   "C": "β > γ > α",
+   "D": "α > γ > β",
+   "E": "Tutte e tre hanno lo stesso potere penetrante"
+  },
+  "giusta": "B",
+  "perche": "Le particelle α, pesanti e con carica +2, interagiscono moltissimo con la materia e sono fermate da un foglio di carta o dallo strato superficiale della pelle. Le β, elettroni veloci, sono fermate da pochi millimetri di alluminio. I raggi γ, fotoni senza carica né massa, richiedono spessi strati di piombo o cemento. Il potere ionizzante segue l'ordine opposto.",
+  "semplice": "Le α sono come palle da bowling: grosse ma si fermano presto. Le β sono come proiettili piccoli. I γ sono luce invisibile ad altissima energia, che attraversa quasi tutto tranne il piombo.",
+  "passaggi": [
+   "Ricorda le caratteristiche: α pesanti e cariche, β elettroni, γ fotoni",
+   "Più carica e massa = più interazioni = meno penetrazione",
+   "α fermate dalla carta, β dall'alluminio, γ dal piombo",
+   "Ordine: γ > β > α"
+  ],
+  "concetto": "Potere penetrante delle radiazioni"
+ },
+ {
+  "id": "NCHI-105",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Un reperto di legno contiene il 25% del carbonio-14 presente in un legno vivo. Sapendo che il tempo di dimezzamento del ¹⁴C è circa 5730 anni, quanti anni ha il reperto?",
+  "opzioni": {
+   "A": "Circa 1432 anni",
+   "B": "Circa 4298 anni",
+   "C": "Circa 22 920 anni",
+   "D": "Circa 17 190 anni",
+   "E": "Circa 11 460 anni"
+  },
+  "giusta": "E",
+  "perche": "Restare al 25% significa essere passati da 100% a 50% e poi a 25%: due tempi di dimezzamento. L'età è quindi 2 × 5730 = 11 460 anni. Il valore 4298 anni si ottiene con un ragionamento lineare (75% di 5730), che non vale per il decadimento radioattivo.",
+  "semplice": "Ogni 5730 anni il carbonio-14 si dimezza. Un quarto vuol dire che si è dimezzato due volte: sono passati due «turni» da 5730 anni.",
+  "passaggi": [
+   "Il 25% corrisponde a (1/2)²",
+   "Sono passati 2 tempi di dimezzamento",
+   "Età = 2 × 5730 anni",
+   "Risultato: circa 11 460 anni"
+  ],
+  "concetto": "Datazione con il carbonio-14"
+ },
+ {
+  "id": "NCHI-106",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Quale processo produce l'energia nelle stelle come il Sole?",
+  "opzioni": {
+   "A": "La fissione di nuclei pesanti come l'uranio",
+   "B": "La combustione dell'idrogeno con l'ossigeno",
+   "C": "Il decadimento α del radio",
+   "D": "La reazione tra materia e antimateria",
+   "E": "La fusione di nuclei leggeri, principalmente idrogeno che si trasforma in elio"
+  },
+  "giusta": "E",
+  "perche": "Nel nucleo del Sole temperatura e pressione altissime permettono ai nuclei di idrogeno di superare la repulsione elettrica e fondersi formando elio. La massa dei prodotti è leggermente minore di quella dei reagenti e la differenza si trasforma in energia secondo E = mc². La fissione, usata nelle centrali nucleari, spezza invece nuclei pesanti; la combustione è una reazione chimica, che non coinvolge i nuclei.",
+  "semplice": "Nel Sole i nuclei di idrogeno si scontrano così forte che si uniscono e formano elio. Ogni volta una piccolissima quantità di massa diventa una enorme quantità di energia, che ci arriva come luce e calore.",
+  "passaggi": [
+   "Distingui fusione (nuclei leggeri si uniscono) e fissione (nuclei pesanti si spezzano)",
+   "Nel Sole c'è soprattutto idrogeno",
+   "L'idrogeno si fonde in elio",
+   "La massa persa diventa energia: E = mc²"
+  ],
+  "concetto": "Fusione nucleare"
+ },
+ {
+  "id": "NCHI-107",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Perché la massa di un nucleo è sempre un po' minore della somma delle masse dei protoni e dei neutroni che lo compongono?",
+  "opzioni": {
+   "A": "Perché gli elettroni non sono contati",
+   "B": "Perché i neutroni perdono massa quando entrano nel nucleo per decadimento",
+   "C": "Perché parte della massa si è trasformata nell'energia di legame liberata alla formazione del nucleo (difetto di massa)",
+   "D": "Perché la misura delle masse nucleari ha sempre un errore",
+   "E": "Perché i protoni si respingono e si allontanano"
+  },
+  "giusta": "C",
+  "perche": "Quando nucleoni separati si uniscono a formare un nucleo, si libera energia di legame; per l'equivalenza E = mc² a questa energia corrisponde una diminuzione di massa, detta difetto di massa. Maggiore è l'energia di legame per nucleone, più stabile è il nucleo. Non è un errore di misura né dipende dagli elettroni, che non fanno parte del nucleo.",
+  "semplice": "Mettere insieme protoni e neutroni libera energia, e quella energia «costa» un po' di massa. Per questo il nucleo intero pesa un pochino meno dei suoi pezzi presi separatamente.",
+  "passaggi": [
+   "Ricorda che la formazione del nucleo libera energia",
+   "Energia e massa sono equivalenti: E = mc²",
+   "L'energia liberata corrisponde a massa persa",
+   "Questa differenza è il difetto di massa"
+  ],
+  "concetto": "Difetto di massa ed energia di legame"
+ },
+ {
+  "id": "NCHI-108",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Il fluoro-18, usato nella PET, decade emettendo un positrone (β⁺). Quale nucleo si forma? (Z del fluoro = 9)",
+  "opzioni": {
+   "A": "Ossigeno-18 (Z = 8)",
+   "B": "Neon-18 (Z = 10)",
+   "C": "Fluoro-17 (Z = 9)",
+   "D": "Azoto-14 (Z = 7)",
+   "E": "Ossigeno-17 (Z = 8)"
+  },
+  "giusta": "A",
+  "perche": "Nel decadimento β⁺ un protone diventa neutrone ed emette un positrone e un neutrino: il numero di massa resta 18 e Z diminuisce di 1, da 9 a 8, cioè ossigeno. Il neon-18 si otterrebbe con un aumento di Z, come in un decadimento β⁻. Nella PET il positrone si annichila con un elettrone producendo due fotoni γ rilevati dallo strumento.",
+  "semplice": "Il positrone è un «elettrone positivo». Per emetterlo un protone si trasforma in neutrone: il nucleo pesa uguale ma ha un protone in meno, e il fluoro diventa ossigeno.",
+  "passaggi": [
+   "Decadimento β⁺: p → n + e⁺ + neutrino",
+   "A resta 18",
+   "Z passa da 9 a 8",
+   "Z = 8 è l'ossigeno: ¹⁸O"
+  ],
+  "concetto": "Decadimento beta più"
+ },
+ {
+  "id": "NCHI-109",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Completa la reazione nucleare: ²⁷₁₃Al + ⁴₂He → ³⁰₁₅P + ?",
+  "opzioni": {
+   "A": "Un protone, ¹₁H",
+   "B": "Un neutrone, ¹₀n",
+   "C": "Un elettrone, ⁰₋₁e",
+   "D": "Una particella α, ⁴₂He",
+   "E": "Un deutone, ²₁H"
+  },
+  "giusta": "B",
+  "perche": "Nelle reazioni nucleari si conservano sia il numero di massa sia il numero atomico. A sinistra A = 27 + 4 = 31 e Z = 13 + 2 = 15; a destra il fosforo ha A = 30 e Z = 15, quindi la particella mancante ha A = 1 e Z = 0: è un neutrone. Un protone avrebbe Z = 1 e sbilancerebbe la carica.",
+  "semplice": "È come un conto da far quadrare due volte: le masse devono tornare (31 = 30 + 1) e anche le cariche (15 = 15 + 0). Il pezzo che manca pesa 1 e non ha carica: un neutrone.",
+  "passaggi": [
+   "Somma A a sinistra: 27 + 4 = 31",
+   "Somma Z a sinistra: 13 + 2 = 15",
+   "Particella mancante: A = 31 − 30 = 1, Z = 15 − 15 = 0",
+   "A = 1, Z = 0: neutrone"
+  ],
+  "concetto": "Conservazione di A e Z"
+ },
+ {
+  "id": "NCHI-110",
+  "materia": "Chimica",
+  "argomento": "Chimica nucleare e radioattività",
+  "livello": "superiori",
+  "domanda": "Nella serie radioattiva che porta dall'uranio-238 (Z = 92) al piombo-206 (Z = 82), quante particelle α e quante β⁻ vengono emesse in tutto?",
+  "opzioni": {
+   "A": "6 α e 8 β⁻",
+   "B": "8 α e 6 β⁻",
+   "C": "8 α e 10 β⁻",
+   "D": "10 α e 4 β⁻",
+   "E": "4 α e 6 β⁻"
+  },
+  "giusta": "B",
+  "perche": "Solo i decadimenti α cambiano il numero di massa, di 4 per volta: (238 − 206)/4 = 8 α. Questi 8 α farebbero scendere Z di 16, da 92 a 76; per arrivare a 82 servono 6 decadimenti β⁻, ciascuno dei quali aumenta Z di 1. Chi dimentica che i β⁻ aumentano Z ottiene combinazioni errate come 8 α e 10 β⁻.",
+  "semplice": "Prima conti quante volte il nucleo ha perso pezzi da 4 (gli α), guardando solo la massa. Poi controlli le cariche: gli α ne hanno tolte troppe, e i β ne rimettono alcune.",
+  "passaggi": [
+   "Variazione di A: 238 − 206 = 32 → 32 / 4 = 8 α",
+   "Effetto degli 8 α su Z: 92 − 16 = 76",
+   "Z finale deve essere 82: mancano 6 unità",
+   "Ogni β⁻ aumenta Z di 1: 6 β⁻"
+  ],
+  "concetto": "Serie radioattive"
+ },
+ {
+  "id": "NCHI-111",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Per una reazione ΔH° = +180 kJ/mol e ΔS° = +200 J/(mol·K), considerati costanti con la temperatura. Al di sopra di quale temperatura la reazione è spontanea in condizioni standard?",
+  "opzioni": {
+   "A": "900 K",
+   "B": "0,9 K",
+   "C": "180 K",
+   "D": "373 K",
+   "E": "1800 K"
+  },
+  "giusta": "A",
+  "perche": "La reazione diventa spontanea quando ΔG° = ΔH° − TΔS° < 0, cioè per T > ΔH°/ΔS°. Convertendo ΔS° in kJ: 0,200 kJ/(mol·K), quindi T = 180/0,200 = 900 K. Se si dimentica di uniformare le unità (180/200) si ottiene 0,9 K, valore assurdo.",
+  "semplice": "Una reazione che assorbe calore ma aumenta il disordine diventa spontanea solo se fa abbastanza caldo: il termine del disordine, che cresce con la temperatura, deve superare il costo energetico. Qui il pareggio è a 900 K.",
+  "passaggi": [
+   "Condizione di spontaneità: ΔG° < 0",
+   "ΔG° = 0 per T = ΔH° / ΔS°",
+   "Uniforma le unità: ΔS° = 0,200 kJ/(mol·K)",
+   "T = 180 / 0,200 = 900 K: spontanea sopra"
+  ],
+  "concetto": "Temperatura di inversione della spontaneità"
+ },
+ {
+  "id": "NCHI-112",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Sono note le entalpie: C(s) + O₂(g) → CO₂(g), ΔH° = −393,5 kJ; CO(g) + ½ O₂(g) → CO₂(g), ΔH° = −283,0 kJ. Quanto vale ΔH° per C(s) + ½ O₂(g) → CO(g)?",
+  "opzioni": {
+   "A": "−110,5 kJ",
+   "B": "−676,5 kJ",
+   "C": "+110,5 kJ",
+   "D": "−393,5 kJ",
+   "E": "−283,0 kJ"
+  },
+  "giusta": "A",
+  "perche": "Per la legge di Hess si combinano le reazioni: si mantiene la prima e si inverte la seconda (CO₂ → CO + ½ O₂, ΔH° = +283,0 kJ). Sommando si ottiene C + ½ O₂ → CO con ΔH° = −393,5 + 283,0 = −110,5 kJ. Sommare le due entalpie senza invertire il segno della seconda porta a −676,5 kJ.",
+  "semplice": "Bruciare il carbonio fino a CO₂ si può fare in un colpo solo o in due tappe passando per CO: il totale è lo stesso. Quindi la prima tappa vale il totale meno la seconda tappa.",
+  "passaggi": [
+   "Obiettivo: C + ½ O₂ → CO",
+   "Tieni la prima reazione: ΔH = −393,5 kJ",
+   "Inverti la seconda: ΔH = +283,0 kJ",
+   "Somma: −393,5 + 283,0 = −110,5 kJ"
+  ],
+  "concetto": "Legge di Hess"
+ },
+ {
+  "id": "NCHI-113",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Calcola ΔH° per CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l), sapendo che ΔH°f vale −74,8 kJ/mol per CH₄, −393,5 kJ/mol per CO₂ e −285,8 kJ/mol per H₂O(l).",
+  "opzioni": {
+   "A": "−604,5 kJ",
+   "B": "−890,3 kJ",
+   "C": "−754,1 kJ",
+   "D": "+890,3 kJ",
+   "E": "−1040 kJ"
+  },
+  "giusta": "B",
+  "perche": "ΔH°reazione = Σ ΔH°f(prodotti) − Σ ΔH°f(reagenti) = [−393,5 + 2(−285,8)] − [−74,8 + 0] = −965,1 + 74,8 = −890,3 kJ. L'O₂ ha entalpia di formazione nulla perché è un elemento nel suo stato standard. Dimenticare il coefficiente 2 dell'acqua porta a −604,5 kJ.",
+  "semplice": "Si calcola come un bilancio: quanto «vale» ciò che ottieni meno quanto valeva ciò che avevi. La combustione del metano libera molta energia, circa 890 kJ per mole: è il gas dei fornelli.",
+  "passaggi": [
+   "Formula: ΔH° = Σ ΔH°f prodotti − Σ ΔH°f reagenti",
+   "Prodotti: −393,5 + 2(−285,8) = −965,1 kJ",
+   "Reagenti: −74,8 + 0 = −74,8 kJ",
+   "ΔH° = −965,1 − (−74,8) = −890,3 kJ"
+  ],
+  "concetto": "Entalpie standard di formazione"
+ },
+ {
+  "id": "NCHI-114",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "A 298 K una reazione ha ΔG° = −5,71 kJ/mol. Quanto vale approssimativamente la costante di equilibrio? (R = 8,314 J/(mol·K))",
+  "opzioni": {
+   "A": "0,10",
+   "B": "1",
+   "C": "2,3",
+   "D": "10",
+   "E": "100"
+  },
+  "giusta": "D",
+  "perche": "Da ΔG° = −RT ln K si ricava ln K = −ΔG°/(RT) = 5710/(8,314 × 298) = 5710/2478 ≈ 2,30, quindi K = e²·³⁰ ≈ 10. Il valore 2,3 è ln K, non K; 0,10 si ottiene sbagliando il segno di ΔG°. Un ΔG° negativo implica sempre K > 1.",
+  "semplice": "Un'energia libera standard negativa vuol dire che all'equilibrio prevalgono i prodotti. Circa −5,7 kJ/mol a temperatura ambiente corrisponde a dieci volte più prodotti che reagenti.",
+  "passaggi": [
+   "Relazione: ΔG° = −RT ln K",
+   "ln K = 5710 / (8,314 × 298) ≈ 2,30",
+   "K = e²·³⁰",
+   "K ≈ 10"
+  ],
+  "concetto": "ΔG° e costante di equilibrio"
+ },
+ {
+  "id": "NCHI-115",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Per quale delle seguenti trasformazioni ci si aspetta ΔS > 0?",
+  "opzioni": {
+   "A": "H₂O(g) → H₂O(l)",
+   "B": "N₂(g) + 3 H₂(g) → 2 NH₃(g)",
+   "C": "2 SO₂(g) + O₂(g) → 2 SO₃(g)",
+   "D": "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+   "E": "CaCO₃(s) → CaO(s) + CO₂(g)"
+  },
+  "giusta": "E",
+  "perche": "L'entropia aumenta soprattutto quando si formano gas da solidi o liquidi, o quando aumenta il numero di moli gassose. Nella decomposizione del carbonato da un solido si ottengono un solido e un gas: ΔS > 0. Condensazione, sintesi dell'ammoniaca e di SO₃ riducono le moli gassose, e la precipitazione di AgCl porta ioni dispersi in un solido ordinato: tutte hanno ΔS < 0.",
+  "semplice": "L'entropia misura quanto le cose sono sparpagliate. Quando un solido libera un gas, le molecole del gas si sparpagliano ovunque: il disordine aumenta.",
+  "passaggi": [
+   "Ricorda: i gas hanno entropia molto più alta di solidi e liquidi",
+   "Cerca la trasformazione che aumenta le moli di gas",
+   "CaCO₃ solido → CaO solido + CO₂ gas",
+   "Le altre riducono i gas o formano un solido: ΔS < 0"
+  ],
+  "concetto": "Previsione del segno di ΔS"
+ },
+ {
+  "id": "NCHI-116",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Quale delle seguenti grandezze NON è una funzione di stato?",
+  "opzioni": {
+   "A": "Il calore q scambiato in una trasformazione",
+   "B": "L'energia interna U",
+   "C": "L'entalpia H",
+   "D": "L'entropia S",
+   "E": "L'energia libera di Gibbs G"
+  },
+  "giusta": "A",
+  "perche": "Una funzione di stato dipende solo dallo stato iniziale e finale del sistema, non dal percorso seguito. U, H, S e G lo sono. Calore e lavoro invece dipendono da come avviene la trasformazione: per esempio, un gas può passare dallo stesso stato iniziale allo stesso stato finale scambiando quantità di calore diverse. Solo la loro somma, ΔU = q + w, è indipendente dal percorso.",
+  "semplice": "Se scali una montagna, il dislivello tra partenza e cima è sempre lo stesso (funzione di stato), ma la fatica dipende dal sentiero scelto. Il calore è come la fatica: cambia con il percorso.",
+  "passaggi": [
+   "Ricorda la definizione: dipende solo da stato iniziale e finale",
+   "U, H, S, G sono funzioni di stato",
+   "q e w dipendono dal percorso",
+   "Risposta: il calore q"
+  ],
+  "concetto": "Funzioni di stato"
+ },
+ {
+  "id": "NCHI-117",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Che cosa afferma il terzo principio della termodinamica?",
+  "opzioni": {
+   "A": "L'energia dell'universo si conserva",
+   "B": "L'entropia dell'universo aumenta in ogni processo spontaneo",
+   "C": "L'entropia di un cristallo perfetto di una sostanza pura è zero allo zero assoluto",
+   "D": "L'entalpia di formazione degli elementi è zero",
+   "E": "Due corpi in equilibrio termico con un terzo sono in equilibrio tra loro"
+  },
+  "giusta": "C",
+  "perche": "Il terzo principio fissa uno zero assoluto per l'entropia: a 0 K un cristallo perfetto ha un solo microstato possibile, quindi S = k ln 1 = 0. Questo permette di calcolare entropie assolute, a differenza delle entalpie per cui si usano valori di formazione convenzionali. Le altre affermazioni sono il primo principio, il secondo principio, una convenzione sulle entalpie e il principio zero.",
+  "semplice": "Allo zero assoluto, in un cristallo perfetto, ogni atomo è fermo al suo posto e c'è un solo modo di disporli: il disordine è nullo, quindi l'entropia è zero.",
+  "passaggi": [
+   "Associa i principi: zero = equilibrio termico, primo = energia, secondo = entropia universo",
+   "Il terzo riguarda l'entropia a 0 K",
+   "Cristallo perfetto: un solo microstato",
+   "S = k ln 1 = 0"
+  ],
+  "concetto": "Terzo principio della termodinamica"
+ },
+ {
+  "id": "NCHI-118",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Una reazione ha ΔH < 0 e ΔS < 0. In quali condizioni è spontanea?",
+  "opzioni": {
+   "A": "A qualsiasi temperatura",
+   "B": "Solo a temperature sufficientemente alte",
+   "C": "A nessuna temperatura",
+   "D": "Solo in presenza di un catalizzatore",
+   "E": "Solo a temperature sufficientemente basse"
+  },
+  "giusta": "E",
+  "perche": "In ΔG = ΔH − TΔS il termine ΔH è negativo (favorevole) e il termine −TΔS è positivo (sfavorevole) e cresce con T. A bassa temperatura prevale l'entalpia e ΔG < 0; ad alta temperatura prevale il termine entropico e ΔG > 0. Il catalizzatore non cambia la spontaneità, ma solo la velocità.",
+  "semplice": "È il caso dell'acqua che congela: libera calore ma diventa più ordinata. Succede spontaneamente solo quando fa abbastanza freddo, sotto 0 °C.",
+  "passaggi": [
+   "Scrivi ΔG = ΔH − TΔS",
+   "ΔH < 0: favorevole",
+   "−TΔS > 0: sfavorevole e cresce con T",
+   "Spontanea solo a T bassa"
+  ],
+  "concetto": "Spontaneità e segni di ΔH e ΔS"
+ },
+ {
+  "id": "NCHI-119",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "Un sistema assorbe 50 kJ di calore e compie sull'ambiente un lavoro di 20 kJ. Qual è la variazione della sua energia interna? (convenzione ΔU = q + w, con w lavoro fatto sul sistema)",
+  "opzioni": {
+   "A": "+30 kJ",
+   "B": "+70 kJ",
+   "C": "−30 kJ",
+   "D": "−70 kJ",
+   "E": "+50 kJ"
+  },
+  "giusta": "A",
+  "perche": "Con la convenzione indicata, q = +50 kJ (calore assorbito) e w = −20 kJ (il sistema compie lavoro, quindi riceve lavoro negativo). ΔU = 50 + (−20) = +30 kJ. Il valore +70 kJ si ottiene sommando il lavoro con il segno sbagliato.",
+  "semplice": "È come un conto in banca: entrano 50 euro di calore, ne escono 20 come lavoro fatto all'esterno. Restano 30 euro in più.",
+  "passaggi": [
+   "Calore assorbito: q = +50 kJ",
+   "Lavoro compiuto dal sistema: w = −20 kJ",
+   "Primo principio: ΔU = q + w",
+   "ΔU = 50 − 20 = +30 kJ"
+  ],
+  "concetto": "Primo principio della termodinamica"
+ },
+ {
+  "id": "NCHI-120",
+  "materia": "Chimica",
+  "argomento": "Termodinamica chimica: entalpia, entropia ed energia libera",
+  "livello": "università",
+  "domanda": "L'entalpia di vaporizzazione dell'acqua è 40,7 kJ/mol alla temperatura di ebollizione normale (373 K). Qual è l'entropia di vaporizzazione?",
+  "opzioni": {
+   "A": "0,109 J/(mol·K)",
+   "B": "109 J/(mol·K)",
+   "C": "15,2 kJ/(mol·K)",
+   "D": "9,17 J/(mol·K)",
+   "E": "40,7 J/(mol·K)"
+  },
+  "giusta": "B",
+  "perche": "Al punto di ebollizione liquido e vapore sono in equilibrio, quindi ΔG = 0 e ΔS = ΔH/T = 40 700 J/mol / 373 K = 109 J/(mol·K). Se non si converte ΔH da kJ a J si ottiene 0,109, ma con unità sbagliate; invertire il rapporto dà valori privi di senso.",
+  "semplice": "Quando l'acqua bolle diventa vapore, molto più disordinato del liquido. L'aumento di disordine si calcola dividendo il calore assorbito per la temperatura.",
+  "passaggi": [
+   "Al punto di ebollizione: ΔG = 0",
+   "Quindi ΔS = ΔH / T",
+   "ΔS = 40 700 J/mol / 373 K",
+   "Risultato: circa 109 J/(mol·K)"
+  ],
+  "concetto": "Entropia dei passaggi di stato"
+ }
+]

@@ -1,0 +1,962 @@
+[
+ {
+  "id": "NFMA-121",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "In quanti modi diversi si possono disporre 5 libri diversi su uno scaffale?",
+  "opzioni": {
+   "A": "120",
+   "B": "25",
+   "C": "5",
+   "D": "3125",
+   "E": "60"
+  },
+  "giusta": "A",
+  "perche": "Si tratta di permutazioni semplici di 5 oggetti distinti: P₅ = 5! = 5 · 4 · 3 · 2 · 1 = 120. Il primo posto si può riempire in 5 modi, il secondo in 4 e così via. Il valore 3125 = 5⁵ ammetterebbe di usare lo stesso libro più volte, cosa impossibile.",
+  "semplice": "Per il primo posto scegli tra 5 libri, per il secondo ne restano 4, poi 3, 2 e 1: moltiplicando ottieni 120 modi.",
+  "passaggi": [
+   "Riconosci permutazioni semplici: tutti gli oggetti, conta l'ordine",
+   "Formula: Pₙ = n!",
+   "Calcolo: 5! = 5 · 4 · 3 · 2 · 1",
+   "Risultato: 120"
+  ],
+  "concetto": "permutazioni semplici"
+ },
+ {
+  "id": "NFMA-122",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "In una classe di 8 studenti si deve formare un gruppo di 3 rappresentanti, senza ruoli distinti. Quanti gruppi diversi si possono formare?",
+  "opzioni": {
+   "A": "336",
+   "B": "56",
+   "C": "24",
+   "D": "512",
+   "E": "40320"
+  },
+  "giusta": "B",
+  "perche": "L'ordine di scelta non conta, quindi si usano le combinazioni semplici: C(8, 3) = 8!/(3!·5!) = (8 · 7 · 6)/(3 · 2 · 1) = 336/6 = 56. Il valore 336 corrisponde alle disposizioni, cioè conta come diversi gli stessi tre studenti scelti in ordine diverso.",
+  "semplice": "Scegliere Anna, Bruno e Carla è lo stesso gruppo di Carla, Anna e Bruno. Per questo si contano prima le scelte ordinate (336) e poi si divide per i 6 modi di ordinare tre persone.",
+  "passaggi": [
+   "Riconosci combinazioni: l'ordine non conta",
+   "Formula: C(n, k) = n!/(k!·(n − k)!)",
+   "Calcolo: (8 · 7 · 6)/(3 · 2 · 1) = 336/6",
+   "Risultato: 56 gruppi"
+  ],
+  "concetto": "combinazioni semplici"
+ },
+ {
+  "id": "NFMA-123",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "A una gara partecipano 8 atleti. In quanti modi diversi può essere composto il podio (primo, secondo e terzo posto)?",
+  "opzioni": {
+   "A": "56",
+   "B": "24",
+   "C": "336",
+   "D": "512",
+   "E": "6"
+  },
+  "giusta": "C",
+  "perche": "L'ordine conta (primo, secondo e terzo sono posizioni diverse) e un atleta non può occupare due posti: sono disposizioni semplici D(8, 3) = 8 · 7 · 6 = 336. Il valore 56 corrisponde alle combinazioni, che ignorano l'ordine; 512 = 8³ ammette ripetizioni.",
+  "semplice": "Per l'oro hai 8 possibili vincitori, per l'argento ne restano 7, per il bronzo 6: in tutto 8 · 7 · 6 = 336 podi diversi.",
+  "passaggi": [
+   "Riconosci disposizioni semplici: conta l'ordine, niente ripetizioni",
+   "Formula: D(n, k) = n·(n − 1)·…·(n − k + 1)",
+   "Calcolo: 8 · 7 · 6",
+   "Risultato: 336"
+  ],
+  "concetto": "disposizioni semplici"
+ },
+ {
+  "id": "NFMA-124",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "Quanti anagrammi distinti, anche privi di significato, si possono formare con le lettere della parola MAMMA?",
+  "opzioni": {
+   "A": "120",
+   "B": "20",
+   "C": "60",
+   "D": "10",
+   "E": "5"
+  },
+  "giusta": "D",
+  "perche": "La parola ha 5 lettere con ripetizioni: M compare 3 volte e A 2 volte. Le permutazioni con ripetizione sono 5!/(3!·2!) = 120/(6 · 2) = 10. Il valore 120 tratta tutte le lettere come diverse; 20 divide solo per 3!.",
+  "semplice": "Scambiare tra loro due M non produce una parola nuova. Per questo dalle 120 disposizioni bisogna togliere i doppioni dovuti alle lettere uguali.",
+  "passaggi": [
+   "Dati: 5 lettere, M ripetuta 3 volte, A ripetuta 2 volte",
+   "Formula: n!/(k₁!·k₂!)",
+   "Calcolo: 5!/(3!·2!) = 120/12",
+   "Risultato: 10 anagrammi"
+  ],
+  "concetto": "permutazioni con ripetizione"
+ },
+ {
+  "id": "NFMA-125",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "Quanti codici PIN di 4 cifre (da 0 a 9, ripetizioni ammesse) esistono?",
+  "opzioni": {
+   "A": "40",
+   "B": "5040",
+   "C": "210",
+   "D": "9999",
+   "E": "10 000"
+  },
+  "giusta": "E",
+  "perche": "Ogni posizione può contenere una qualsiasi delle 10 cifre, indipendentemente dalle altre: sono disposizioni con ripetizione, 10⁴ = 10 000 (da 0000 a 9999). Il valore 5040 = 10 · 9 · 8 · 7 vieta le ripetizioni; 9999 dimentica il codice 0000.",
+  "semplice": "Ogni cifra del PIN ha 10 possibilità, e le quattro scelte sono indipendenti: 10 · 10 · 10 · 10 = 10 000 codici.",
+  "passaggi": [
+   "Riconosci disposizioni con ripetizione",
+   "Formula: n^k con n = 10 cifre e k = 4 posizioni",
+   "Calcolo: 10⁴",
+   "Risultato: 10 000 codici"
+  ],
+  "concetto": "disposizioni con ripetizione"
+ },
+ {
+  "id": "NFMA-126",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "Qual è il coefficiente del termine x³ nello sviluppo di (x + 2)⁵?",
+  "opzioni": {
+   "A": "40",
+   "B": "10",
+   "C": "80",
+   "D": "20",
+   "E": "32"
+  },
+  "giusta": "A",
+  "perche": "Per la formula del binomio di Newton il termine generico è C(5, k)·x^k·2^(5−k). Per k = 3 si ha C(5, 3)·2² = 10 · 4 = 40. Il valore 10 dimentica la potenza di 2; 80 usa 2³ al posto di 2².",
+  "semplice": "Sviluppando (x + 2)⁵ si sceglie da ciascuno dei 5 fattori o una x o un 2. Per avere x³ si prendono 3 x e 2 volte il 2: ci sono 10 modi di farlo e ognuno vale 4.",
+  "passaggi": [
+   "Scrivi il termine generico: C(5, k)·x^k·2^(5−k)",
+   "Poni k = 3",
+   "Calcolo: C(5, 3) = 10 e 2² = 4",
+   "Risultato: 10 · 4 = 40"
+  ],
+  "concetto": "binomio di Newton"
+ },
+ {
+  "id": "NFMA-127",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "A una riunione partecipano 10 persone e ognuna stringe la mano a tutte le altre una sola volta. Quante strette di mano ci sono in totale?",
+  "opzioni": {
+   "A": "100",
+   "B": "45",
+   "C": "90",
+   "D": "20",
+   "E": "10"
+  },
+  "giusta": "B",
+  "perche": "Ogni stretta di mano coinvolge una coppia non ordinata di persone, quindi il numero è C(10, 2) = 10 · 9/2 = 45. Il valore 90 conta ogni stretta due volte (una per ciascuna delle due persone); 100 include anche le «strette con sé stessi».",
+  "semplice": "Ognuno stringe 9 mani, quindi 10 · 9 = 90; ma ogni stretta è stata contata da entrambe le persone, quindi si divide per due: 45.",
+  "passaggi": [
+   "Riconosci coppie non ordinate: combinazioni di 2 elementi",
+   "Formula: C(n, 2) = n·(n − 1)/2",
+   "Calcolo: 10 · 9/2",
+   "Risultato: 45 strette di mano"
+  ],
+  "concetto": "combinazioni di due elementi"
+ },
+ {
+  "id": "NFMA-128",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "Quale proprietà dei coefficienti binomiali è sempre vera per 0 ≤ k ≤ n?",
+  "opzioni": {
+   "A": "C(n, k) = n·k",
+   "B": "C(n, k) = C(n, k + 1)",
+   "C": "C(n, k) = C(n, n − k)",
+   "D": "C(n, k) = n!/k!",
+   "E": "C(n, k) = 2ⁿ/k"
+  },
+  "giusta": "C",
+  "perche": "Scegliere i k elementi da prendere equivale a scegliere gli n − k da lasciare, quindi C(n, k) = C(n, n − k); per esempio C(10, 3) = C(10, 7) = 120. Questa simmetria si vede anche nel triangolo di Tartaglia. n!/k! dimentica il fattore (n − k)! al denominatore.",
+  "semplice": "Scegliere 3 studenti che vanno in gita su 10 equivale a scegliere i 7 che restano a casa: il numero di modi è lo stesso.",
+  "passaggi": [
+   "Ricorda la definizione C(n, k) = n!/(k!·(n − k)!)",
+   "Scambiando k con n − k la formula non cambia",
+   "Verifica: C(5, 2) = C(5, 3) = 10",
+   "Resta la C"
+  ],
+  "concetto": "simmetria dei coefficienti binomiali"
+ },
+ {
+  "id": "NFMA-129",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "In quanti modi diversi 6 persone possono sedersi attorno a un tavolo rotondo, se contano solo le posizioni relative (rotazioni equivalenti)?",
+  "opzioni": {
+   "A": "720",
+   "B": "36",
+   "C": "6",
+   "D": "120",
+   "E": "60"
+  },
+  "giusta": "D",
+  "perche": "Attorno a un tavolo rotondo le disposizioni che differiscono solo per una rotazione sono equivalenti: si fissa una persona e si permutano le altre 5, ottenendo (6 − 1)! = 5! = 120. Il valore 720 = 6! conta come diverse le 6 rotazioni di ogni disposizione.",
+  "semplice": "Al tavolo rotondo non c'è un «primo posto»: conta solo chi hai a destra e a sinistra. Fissi una persona e disponi le altre 5 intorno a lei.",
+  "passaggi": [
+   "Riconosci permutazioni circolari",
+   "Formula: (n − 1)!",
+   "Calcolo: 5! = 120",
+   "Escludi 720: conta le rotazioni come diverse. Resta la D"
+  ],
+  "concetto": "permutazioni circolari"
+ },
+ {
+  "id": "NFMA-130",
+  "materia": "Matematica",
+  "argomento": "Calcolo combinatorio",
+  "livello": "superiori",
+  "domanda": "Quante diagonali ha un poligono convesso di 10 lati?",
+  "opzioni": {
+   "A": "45",
+   "B": "10",
+   "C": "70",
+   "D": "20",
+   "E": "35"
+  },
+  "giusta": "E",
+  "perche": "I segmenti che uniscono due vertici sono C(10, 2) = 45; di questi 10 sono lati, quindi le diagonali sono 45 − 10 = 35, in accordo con la formula n·(n − 3)/2 = 10 · 7/2 = 35. Il valore 45 conta anche i lati; 70 dimentica di dividere per 2.",
+  "semplice": "Da ogni vertice partono diagonali verso tutti gli altri tranne sé stesso e i due vicini: 7 diagonali. Con 10 vertici sono 70, ma ogni diagonale ha due estremi, quindi 35.",
+  "passaggi": [
+   "Conta i segmenti tra due vertici: C(10, 2) = 45",
+   "Togli i 10 lati: 45 − 10 = 35",
+   "Verifica con n·(n − 3)/2 = 10 · 7/2 = 35",
+   "Risultato: 35 diagonali"
+  ],
+  "concetto": "diagonali di un poligono"
+ },
+ {
+  "id": "NFMA-131",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "In una progressione aritmetica il primo termine è 3 e la ragione è 4. Quanto vale il ventesimo termine?",
+  "opzioni": {
+   "A": "79",
+   "B": "83",
+   "C": "80",
+   "D": "76",
+   "E": "63"
+  },
+  "giusta": "A",
+  "perche": "Il termine n-esimo di una progressione aritmetica è aₙ = a₁ + (n − 1)·d = 3 + 19 · 4 = 3 + 76 = 79. Il valore 83 usa n al posto di n − 1 (3 + 20 · 4): è l'errore più comune, perché tra il primo e il ventesimo termine ci sono 19 «passi».",
+  "semplice": "Partendo da 3 e aggiungendo 4 ogni volta, per arrivare al ventesimo numero fai 19 salti da 4: 3 + 76 = 79.",
+  "passaggi": [
+   "Dati: a₁ = 3, d = 4, n = 20",
+   "Formula: aₙ = a₁ + (n − 1)·d",
+   "Calcolo: 3 + 19 · 4 = 3 + 76",
+   "Risultato: a₂₀ = 79"
+  ],
+  "concetto": "termine generale della progressione aritmetica"
+ },
+ {
+  "id": "NFMA-132",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Quanto vale la somma dei primi 100 numeri naturali, 1 + 2 + 3 + … + 100?",
+  "opzioni": {
+   "A": "10 000",
+   "B": "5050",
+   "C": "5000",
+   "D": "10 100",
+   "E": "4950"
+  },
+  "giusta": "B",
+  "perche": "È la somma di una progressione aritmetica: Sₙ = n·(a₁ + aₙ)/2 = 100 · (1 + 100)/2 = 100 · 101/2 = 5050. Il valore 10 100 dimentica di dividere per 2; 4950 è la somma da 1 a 99.",
+  "semplice": "Accoppia il primo e l'ultimo numero (1 + 100), il secondo e il penultimo (2 + 99) e così via: ogni coppia fa 101 e le coppie sono 50, quindi 5050.",
+  "passaggi": [
+   "Dati: a₁ = 1, a₁₀₀ = 100, n = 100",
+   "Formula: Sₙ = n·(a₁ + aₙ)/2",
+   "Calcolo: 100 · 101/2",
+   "Risultato: 5050"
+  ],
+  "concetto": "somma di una progressione aritmetica"
+ },
+ {
+  "id": "NFMA-133",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "In una progressione geometrica il primo termine è 2 e la ragione è 3. Quanto vale il sesto termine?",
+  "opzioni": {
+   "A": "1458",
+   "B": "36",
+   "C": "486",
+   "D": "162",
+   "E": "18"
+  },
+  "giusta": "C",
+  "perche": "Il termine n-esimo di una progressione geometrica è aₙ = a₁·q^(n−1) = 2 · 3⁵ = 2 · 243 = 486. Il valore 1458 = 2 · 3⁶ usa l'esponente n invece di n − 1; 36 confonde la progressione geometrica con quella aritmetica moltiplicando 2 · 3 · 6.",
+  "semplice": "Partendo da 2 e moltiplicando ogni volta per 3: 2, 6, 18, 54, 162, 486. Il sesto numero è 486.",
+  "passaggi": [
+   "Dati: a₁ = 2, q = 3, n = 6",
+   "Formula: aₙ = a₁·q^(n−1)",
+   "Calcolo: 2 · 3⁵ = 2 · 243",
+   "Risultato: a₆ = 486"
+  ],
+  "concetto": "termine generale della progressione geometrica"
+ },
+ {
+  "id": "NFMA-134",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Quanto vale la somma della serie geometrica infinita 3 + 1 + 1/3 + 1/9 + …?",
+  "opzioni": {
+   "A": "La serie diverge",
+   "B": "4",
+   "C": "13/3",
+   "D": "4,5",
+   "E": "6"
+  },
+  "giusta": "D",
+  "perche": "È una serie geometrica con primo termine 3 e ragione q = 1/3; poiché |q| < 1 converge e la somma è a₁/(1 − q) = 3/(2/3) = 9/2 = 4,5. Il valore 13/3 è la somma dei soli primi tre termini. Pensare che una somma di infiniti termini positivi debba divergere è un errore comune.",
+  "semplice": "Ogni termine è un terzo del precedente, quindi i pezzi diventano così piccoli che la somma si avvicina a un numero preciso senza mai superarlo: 4,5.",
+  "passaggi": [
+   "Dati: a₁ = 3, q = 1/3",
+   "Condizione di convergenza: |q| < 1, verificata",
+   "Formula: S = a₁/(1 − q)",
+   "Calcolo: 3/(1 − 1/3) = 3/(2/3) = 4,5"
+  ],
+  "concetto": "serie geometrica convergente"
+ },
+ {
+  "id": "NFMA-135",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Quanto vale la somma 1 + 2 + 4 + 8 + … + 2⁹?",
+  "opzioni": {
+   "A": "512",
+   "B": "1024",
+   "C": "511",
+   "D": "2047",
+   "E": "1023"
+  },
+  "giusta": "E",
+  "perche": "Sono i primi 10 termini di una progressione geometrica con a₁ = 1 e q = 2: Sₙ = a₁·(qⁿ − 1)/(q − 1) = (2¹⁰ − 1)/1 = 1023. Il valore 1024 = 2¹⁰ dimentica di sottrarre 1; 511 = 2⁹ − 1 conta un termine in meno.",
+  "semplice": "Raddoppiando ogni volta, la somma di tutti i termini fino a un certo punto è sempre uno in meno del termine successivo: 1 + 2 + 4 = 7 = 8 − 1.",
+  "passaggi": [
+   "Dati: a₁ = 1, q = 2, termini da 2⁰ a 2⁹: n = 10",
+   "Formula: Sₙ = (qⁿ − 1)/(q − 1)",
+   "Calcolo: (2¹⁰ − 1)/(2 − 1) = 1024 − 1",
+   "Risultato: 1023"
+  ],
+  "concetto": "somma di una progressione geometrica"
+ },
+ {
+  "id": "NFMA-136",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Quale affermazione su una successione numerica reale è corretta?",
+  "opzioni": {
+   "A": "Ogni successione monotona crescente e limitata superiormente è convergente",
+   "B": "Ogni successione limitata è convergente",
+   "C": "Ogni successione crescente diverge a +∞",
+   "D": "Una successione convergente è sempre monotona",
+   "E": "Ogni successione a termini positivi è convergente"
+  },
+  "giusta": "A",
+  "perche": "Per il teorema sulle successioni monotone, una successione crescente e limitata superiormente converge al proprio estremo superiore. La sola limitatezza non basta: (−1)ⁿ è limitata ma non converge. Una successione convergente può non essere monotona, per esempio (−1)ⁿ/n.",
+  "semplice": "Se un numero sale sempre ma non può superare un certo tetto, prima o poi deve «assestarsi» vicino a un valore: non ha altra scelta.",
+  "passaggi": [
+   "Ricorda il teorema delle successioni monotone",
+   "Verifica B con il controesempio (−1)ⁿ: limitata ma oscillante",
+   "Verifica D con (−1)ⁿ/n: converge a 0 ma non è monotona",
+   "Resta la A"
+  ],
+  "concetto": "convergenza delle successioni monotone"
+ },
+ {
+  "id": "NFMA-137",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Tre numeri sono in progressione aritmetica, hanno somma 30 e il primo vale 4. Quanto vale il terzo?",
+  "opzioni": {
+   "A": "10",
+   "B": "16",
+   "C": "14",
+   "D": "22",
+   "E": "6"
+  },
+  "giusta": "B",
+  "perche": "In tre termini consecutivi di una progressione aritmetica il termine centrale è la media degli altri due, quindi la somma vale 3 volte il termine centrale: 3·a₂ = 30, a₂ = 10. La ragione è d = 10 − 4 = 6 e il terzo termine è 10 + 6 = 16. Il valore 10 è il termine centrale, non il terzo.",
+  "semplice": "Se tre numeri crescono a passi uguali, quello in mezzo è la loro media: 30 diviso 3 fa 10. Da 4 a 10 il passo è 6, quindi il terzo è 16.",
+  "passaggi": [
+   "Dati: a₁ = 4, a₁ + a₂ + a₃ = 30",
+   "Il termine centrale è la media: a₂ = 30/3 = 10",
+   "Ragione: d = a₂ − a₁ = 6",
+   "Terzo termine: a₃ = 10 + 6 = 16 (verifica: 4 + 10 + 16 = 30)"
+  ],
+  "concetto": "proprietà della media nella progressione aritmetica"
+ },
+ {
+  "id": "NFMA-138",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Una successione è definita per ricorrenza da a₁ = 1 e aₙ₊₁ = 2·aₙ + 1. Quanto vale a₅?",
+  "opzioni": {
+   "A": "9",
+   "B": "15",
+   "C": "31",
+   "D": "63",
+   "E": "11"
+  },
+  "giusta": "C",
+  "perche": "Applicando la regola passo per passo: a₂ = 2 · 1 + 1 = 3, a₃ = 2 · 3 + 1 = 7, a₄ = 2 · 7 + 1 = 15, a₅ = 2 · 15 + 1 = 31. In generale aₙ = 2ⁿ − 1. Il valore 15 è a₄; 63 è a₆: sbagliare il conteggio degli indici è l'errore più frequente.",
+  "semplice": "Ogni numero si ottiene dal precedente raddoppiandolo e aggiungendo 1: 1, 3, 7, 15, 31. Basta fare i passaggi uno alla volta.",
+  "passaggi": [
+   "Dati: a₁ = 1, aₙ₊₁ = 2aₙ + 1",
+   "Calcola a₂ = 3 e a₃ = 7",
+   "Calcola a₄ = 15",
+   "Calcola a₅ = 2 · 15 + 1 = 31"
+  ],
+  "concetto": "successioni per ricorrenza"
+ },
+ {
+  "id": "NFMA-139",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Si depositano 1000 € a un interesse composto del 5% annuo. Quale sarà il capitale dopo 3 anni?",
+  "opzioni": {
+   "A": "1150,00 €",
+   "B": "1050,00 €",
+   "C": "1500,00 €",
+   "D": "1157,63 €",
+   "E": "1102,50 €"
+  },
+  "giusta": "D",
+  "perche": "Con l'interesse composto il capitale si moltiplica ogni anno per 1,05: i valori annuali formano una progressione geometrica di ragione 1,05. Dopo 3 anni C = 1000 · 1,05³ = 1000 · 1,157625 ≈ 1157,63 €. Il valore 1150 € corrisponde all'interesse semplice; 1102,50 € al capitale dopo 2 anni.",
+  "semplice": "Ogni anno guadagni il 5% non solo sui soldi iniziali ma anche sugli interessi già maturati: per questo dopo 3 anni hai un po' più di 1150 €.",
+  "passaggi": [
+   "Dati: C₀ = 1000 €, tasso 5%, n = 3 anni",
+   "Formula: Cₙ = C₀·(1 + i)ⁿ",
+   "Calcolo: 1,05³ = 1,157625",
+   "Risultato: C₃ = 1000 € · 1,157625 ≈ 1157,63 €"
+  ],
+  "concetto": "progressione geometrica e interesse composto"
+ },
+ {
+  "id": "NFMA-140",
+  "materia": "Matematica",
+  "argomento": "Successioni e progressioni",
+  "livello": "superiori",
+  "domanda": "Quale delle seguenti successioni è una progressione geometrica?",
+  "opzioni": {
+   "A": "2, 4, 6, 8, …",
+   "B": "1, 4, 9, 16, …",
+   "C": "1, 2, 4, 7, …",
+   "D": "3, 6, 10, 15, …",
+   "E": "5, −10, 20, −40, …"
+  },
+  "giusta": "E",
+  "perche": "In una progressione geometrica il rapporto tra ogni termine e il precedente è costante. In 5, −10, 20, −40 il rapporto è sempre −2, quindi è geometrica con ragione negativa (i segni si alternano). La A ha differenza costante (aritmetica); la B è la successione dei quadrati; nelle altre né la differenza né il rapporto sono costanti.",
+  "semplice": "Una progressione geometrica si ottiene moltiplicando sempre per lo stesso numero. Qui si moltiplica sempre per −2, e il segno cambia a ogni passo.",
+  "passaggi": [
+   "Calcola i rapporti tra termini consecutivi in ogni successione",
+   "Nella E: −10/5 = 20/(−10) = −40/20 = −2",
+   "Escludi A: la differenza, non il rapporto, è costante",
+   "Resta la E"
+  ],
+  "concetto": "progressione geometrica"
+ },
+ {
+  "id": "NFMA-141",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Qual è il prodotto scalare tra i vettori u = (2, −1, 3) e v = (1, 4, 2)?",
+  "opzioni": {
+   "A": "4",
+   "B": "12",
+   "C": "(2, −4, 6)",
+   "D": "−4",
+   "E": "8"
+  },
+  "giusta": "A",
+  "perche": "Il prodotto scalare si calcola sommando i prodotti delle componenti corrispondenti: u·v = 2 · 1 + (−1) · 4 + 3 · 2 = 2 − 4 + 6 = 4. Il risultato è un numero, non un vettore: la C riporta i prodotti componente per componente senza sommarli. 12 ignora il segno meno.",
+  "semplice": "Moltiplichi le componenti a coppie (prima con prima, seconda con seconda, terza con terza) e poi sommi tutto: ottieni un unico numero.",
+  "passaggi": [
+   "Dati: u = (2, −1, 3), v = (1, 4, 2)",
+   "Formula: u·v = u₁v₁ + u₂v₂ + u₃v₃",
+   "Calcolo: 2 − 4 + 6",
+   "Risultato: u·v = 4"
+  ],
+  "concetto": "prodotto scalare"
+ },
+ {
+  "id": "NFMA-142",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Qual è il modulo del vettore v = (3, 4, 12)?",
+  "opzioni": {
+   "A": "19",
+   "B": "13",
+   "C": "169",
+   "D": "√19",
+   "E": "12"
+  },
+  "giusta": "B",
+  "perche": "Il modulo di un vettore nello spazio è |v| = √(x² + y² + z²) = √(9 + 16 + 144) = √169 = 13. Il valore 19 somma le componenti senza elevarle al quadrato; 169 dimentica la radice quadrata.",
+  "semplice": "Il modulo è la lunghezza della freccia: si usa il teorema di Pitagora, prima nel piano (3 e 4 danno 5) e poi in altezza (5 e 12 danno 13).",
+  "passaggi": [
+   "Dati: v = (3, 4, 12)",
+   "Formula: |v| = √(x² + y² + z²)",
+   "Calcolo: √(9 + 16 + 144) = √169",
+   "Risultato: |v| = 13"
+  ],
+  "concetto": "modulo di un vettore"
+ },
+ {
+  "id": "NFMA-143",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Qual è il determinante della matrice A = [[2, 3], [1, 4]] (prima riga 2, 3; seconda riga 1, 4)?",
+  "opzioni": {
+   "A": "11",
+   "B": "−5",
+   "C": "5",
+   "D": "8",
+   "E": "10"
+  },
+  "giusta": "C",
+  "perche": "Per una matrice 2×2 [[a, b], [c, d]] il determinante è a·d − b·c = 2 · 4 − 3 · 1 = 8 − 3 = 5. Il valore 11 somma i due prodotti invece di sottrarli; −5 inverte l'ordine della sottrazione (diagonale secondaria meno principale).",
+  "semplice": "Moltiplichi i numeri sulla diagonale che scende (2 · 4) e togli il prodotto di quelli sull'altra diagonale (3 · 1).",
+  "passaggi": [
+   "Dati: a = 2, b = 3, c = 1, d = 4",
+   "Formula: det A = a·d − b·c",
+   "Calcolo: 2 · 4 − 3 · 1 = 8 − 3",
+   "Risultato: det A = 5"
+  ],
+  "concetto": "determinante di una matrice 2×2"
+ },
+ {
+  "id": "NFMA-144",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Per quale valore di k i vettori u = (1, k) e v = (4, 2) sono perpendicolari?",
+  "opzioni": {
+   "A": "k = 2",
+   "B": "k = 1/2",
+   "C": "k = 8",
+   "D": "k = −2",
+   "E": "k = −1/2"
+  },
+  "giusta": "D",
+  "perche": "Due vettori non nulli sono perpendicolari se e solo se il loro prodotto scalare è zero: u·v = 1 · 4 + k · 2 = 4 + 2k = 0, quindi k = −2. Il valore k = 1/2 rende i vettori paralleli (proporzionali), non perpendicolari: è la confusione più comune.",
+  "semplice": "Due frecce formano un angolo retto quando il loro prodotto scalare è nullo: basta imporre questa condizione e risolvere un'equazione semplice.",
+  "passaggi": [
+   "Condizione di perpendicolarità: u·v = 0",
+   "Calcolo: 1 · 4 + k · 2 = 4 + 2k",
+   "Equazione: 4 + 2k = 0",
+   "Risultato: k = −2 (k = 1/2 darebbe vettori paralleli)"
+  ],
+  "concetto": "perpendicolarità tra vettori"
+ },
+ {
+  "id": "NFMA-145",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Se A è una matrice 2×3 e B è una matrice 3×4, che dimensioni ha il prodotto A·B?",
+  "opzioni": {
+   "A": "3×3",
+   "B": "2×3",
+   "C": "3×4",
+   "D": "Il prodotto non è definito",
+   "E": "2×4"
+  },
+  "giusta": "E",
+  "perche": "Il prodotto A·B è definito quando il numero di colonne di A è uguale al numero di righe di B (qui 3 = 3); il risultato ha tante righe quante A e tante colonne quante B, cioè 2×4. Il prodotto B·A invece non sarebbe definito, perché B ha 4 colonne e A ha 2 righe.",
+  "semplice": "Per moltiplicare due matrici i «numeri interni» devono coincidere (2×3 e 3×4: il 3 combacia); il risultato prende i «numeri esterni»: 2×4.",
+  "passaggi": [
+   "Verifica la compatibilità: colonne di A = 3 = righe di B",
+   "Il risultato ha le righe di A: 2",
+   "E le colonne di B: 4",
+   "Risultato: 2×4"
+  ],
+  "concetto": "dimensioni del prodotto di matrici"
+ },
+ {
+  "id": "NFMA-146",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Quando una matrice quadrata A è invertibile?",
+  "opzioni": {
+   "A": "Se e solo se il suo determinante è diverso da zero",
+   "B": "Se e solo se tutti i suoi elementi sono diversi da zero",
+   "C": "Se e solo se è simmetrica",
+   "D": "Se e solo se il suo determinante è positivo",
+   "E": "Sempre"
+  },
+  "giusta": "A",
+  "perche": "Una matrice quadrata ammette inversa se e solo se det A ≠ 0, cioè se le sue righe (o colonne) sono linearmente indipendenti; l'inversa si costruisce dividendo per il determinante. Una matrice con elementi tutti non nulli può avere determinante zero, per esempio [[1, 2], [2, 4]]; anche il segno negativo va bene.",
+  "semplice": "Il determinante dice se la matrice «schiaccia» lo spazio fino ad appiattirlo: se vale zero, alcune informazioni si perdono e non si può tornare indietro.",
+  "passaggi": [
+   "Ricorda la formula dell'inversa: contiene 1/det A",
+   "Serve quindi det A ≠ 0",
+   "Controesempio per B: [[1, 2], [2, 4]] ha determinante 0",
+   "Escludi D: anche un determinante negativo va bene. Resta la A"
+  ],
+  "concetto": "invertibilità di una matrice"
+ },
+ {
+  "id": "NFMA-147",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Qual è il prodotto vettoriale i × j tra i versori degli assi x e y?",
+  "opzioni": {
+   "A": "0",
+   "B": "k = (0, 0, 1)",
+   "C": "−k = (0, 0, −1)",
+   "D": "1",
+   "E": "i + j"
+  },
+  "giusta": "B",
+  "perche": "Il prodotto vettoriale di due vettori perpendicolari di modulo 1 è un vettore di modulo 1 perpendicolare a entrambi, con verso dato dalla regola della mano destra: i × j = k. Il risultato è un vettore, non uno scalare (escludi A e D); −k sarebbe j × i, perché il prodotto vettoriale è anticommutativo.",
+  "semplice": "Con la mano destra punta l'indice lungo l'asse x e piega le dita verso l'asse y: il pollice indica l'asse z, verso l'alto.",
+  "passaggi": [
+   "Ricorda che il prodotto vettoriale dà un vettore perpendicolare ai due fattori",
+   "Modulo: |i|·|j|·sin 90° = 1",
+   "Verso con la regola della mano destra: +z",
+   "Escludi C (è j × i): resta la B"
+  ],
+  "concetto": "prodotto vettoriale"
+ },
+ {
+  "id": "NFMA-148",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Qual è il determinante della matrice 3×3 con righe (1, 2, 0), (0, 3, 1), (2, 0, 1)?",
+  "opzioni": {
+   "A": "−1",
+   "B": "3",
+   "C": "7",
+   "D": "11",
+   "E": "−7"
+  },
+  "giusta": "C",
+  "perche": "Sviluppando secondo la prima riga: det = 1·(3·1 − 1·0) − 2·(0·1 − 1·2) + 0·(…) = 1·3 − 2·(−2) = 3 + 4 = 7. Lo stesso risultato si ottiene con la regola di Sarrus: 3 + 4 + 0 − 0 − 0 − 0 = 7. Il valore −1 si ottiene sbagliando il segno del secondo termine (3 − 4).",
+  "semplice": "Si spezza il determinante grande in determinanti 2×2 più piccoli, alternando i segni +, −, +. Attenzione ai segni: è lì che si sbaglia più spesso.",
+  "passaggi": [
+   "Sviluppa secondo la prima riga con segni +, −, +",
+   "Primo minore: 3·1 − 1·0 = 3",
+   "Secondo minore: 0·1 − 1·2 = −2, con segno meno e coefficiente 2: −2·(−2) = +4",
+   "Terzo termine nullo (coefficiente 0); totale 3 + 4 = 7"
+  ],
+  "concetto": "determinante di una matrice 3×3"
+ },
+ {
+  "id": "NFMA-149",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sul prodotto tra matrici quadrate dello stesso ordine è corretta?",
+  "opzioni": {
+   "A": "È sempre commutativo: A·B = B·A",
+   "B": "Si calcola moltiplicando gli elementi nella stessa posizione",
+   "C": "Il prodotto di due matrici non nulle è sempre non nullo",
+   "D": "In generale non è commutativo, ma è associativo: (A·B)·C = A·(B·C)",
+   "E": "Il determinante del prodotto è la somma dei determinanti"
+  },
+  "giusta": "D",
+  "perche": "Il prodotto righe per colonne è associativo e distributivo, ma in generale A·B ≠ B·A. Inoltre esistono matrici non nulle con prodotto nullo, per esempio [[0, 1], [0, 0]] moltiplicata per sé stessa. Il determinante del prodotto è il prodotto dei determinanti (teorema di Binet), non la somma.",
+  "semplice": "Con le matrici l'ordine conta, come con le azioni di tutti i giorni: prima ruotare e poi capovolgere un foglio non dà lo stesso risultato che capovolgerlo e poi ruotarlo.",
+  "passaggi": [
+   "Ricorda che il prodotto si fa righe per colonne: escludi B",
+   "Prova un controesempio per A: in generale A·B ≠ B·A",
+   "Ricorda Binet: det(A·B) = det A · det B, escludi E",
+   "Resta la D"
+  ],
+  "concetto": "proprietà del prodotto tra matrici"
+ },
+ {
+  "id": "NFMA-150",
+  "materia": "Matematica",
+  "argomento": "Vettori e matrici",
+  "livello": "superiori",
+  "domanda": "Qual è l'angolo tra i vettori u = (1, 1) e v = (1, 0)?",
+  "opzioni": {
+   "A": "90°",
+   "B": "30°",
+   "C": "60°",
+   "D": "0°",
+   "E": "45°"
+  },
+  "giusta": "E",
+  "perche": "Dalla formula cos θ = u·v/(|u|·|v|): u·v = 1, |u| = √2, |v| = 1, quindi cos θ = 1/√2 ≈ 0,707 e θ = 45°. Il vettore (1, 1) è infatti la diagonale del quadrato unitario. Il valore 60° corrisponderebbe a cos θ = 0,5.",
+  "semplice": "Il vettore (1, 1) va in diagonale, a metà strada tra l'asse x e l'asse y, quindi forma 45° con l'asse x.",
+  "passaggi": [
+   "Dati: u = (1, 1), v = (1, 0)",
+   "Formula: cos θ = u·v/(|u|·|v|)",
+   "Calcolo: u·v = 1, |u| = √2, |v| = 1, cos θ = 1/√2",
+   "Risultato: θ = 45°"
+  ],
+  "concetto": "angolo tra due vettori"
+ },
+ {
+  "id": "NFMA-151",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è il volume di una sfera di raggio 3 cm?",
+  "opzioni": {
+   "A": "36π cm³",
+   "B": "12π cm³",
+   "C": "27π cm³",
+   "D": "108π cm³",
+   "E": "9π cm³"
+  },
+  "giusta": "A",
+  "perche": "Il volume della sfera è V = (4/3)·π·r³ = (4/3) · π · 27 cm³ = 36π cm³ ≈ 113 cm³. Il valore 12π cm³ usa r² invece di r³; 108π cm³ dimentica la divisione per 3. Per r = 3 anche la superficie 4πr² vale 36π, ma in cm²: è una coincidenza numerica.",
+  "semplice": "Il volume di una palla cresce con il cubo del raggio: con raggio 3 il cubo è 27, e moltiplicando per 4/3 di π si ottiene 36π.",
+  "passaggi": [
+   "Dati: r = 3 cm",
+   "Formula: V = (4/3)·π·r³",
+   "Calcolo: (4/3) · π · 27 cm³",
+   "Risultato: V = 36π cm³ ≈ 113 cm³"
+  ],
+  "concetto": "volume della sfera"
+ },
+ {
+  "id": "NFMA-152",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è la lunghezza della diagonale di un cubo di spigolo 4 cm?",
+  "opzioni": {
+   "A": "4√2 cm",
+   "B": "4√3 cm",
+   "C": "12 cm",
+   "D": "8 cm",
+   "E": "16 cm"
+  },
+  "giusta": "B",
+  "perche": "La diagonale del cubo si ottiene applicando due volte il teorema di Pitagora: la diagonale di una faccia è l·√2, e la diagonale del cubo è √(2l² + l²) = l·√3 = 4√3 cm ≈ 6,9 cm. Il valore 4√2 cm è la diagonale di una faccia, non del cubo.",
+  "semplice": "Prima attraversi una faccia in diagonale, poi sali in verticale: la diagonale del cubo è l'ipotenusa di questo secondo triangolo rettangolo.",
+  "passaggi": [
+   "Dati: l = 4 cm",
+   "Diagonale di faccia: l·√2",
+   "Diagonale del cubo: d = √(l² + l² + l²) = l·√3",
+   "Risultato: d = 4√3 cm ≈ 6,9 cm"
+  ],
+  "concetto": "diagonale del cubo"
+ },
+ {
+  "id": "NFMA-153",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è il volume di un cono con raggio di base 3 cm e altezza 4 cm?",
+  "opzioni": {
+   "A": "36π cm³",
+   "B": "15π cm³",
+   "C": "12π cm³",
+   "D": "48π cm³",
+   "E": "4π cm³"
+  },
+  "giusta": "C",
+  "perche": "Il volume del cono è un terzo di quello del cilindro con stessa base e altezza: V = (1/3)·π·r²·h = (1/3) · π · 9 · 4 cm³ = 12π cm³. Il valore 36π cm³ è il volume del cilindro corrispondente; 15π è la superficie laterale (π·r·apotema, con apotema 5 cm), che si misura in cm².",
+  "semplice": "Un cono pieno d'acqua riempie esattamente un terzo di un bicchiere cilindrico con la stessa base e la stessa altezza.",
+  "passaggi": [
+   "Dati: r = 3 cm, h = 4 cm",
+   "Formula: V = (1/3)·π·r²·h",
+   "Calcolo: (1/3) · π · 9 cm² · 4 cm",
+   "Risultato: V = 12π cm³"
+  ],
+  "concetto": "volume del cono"
+ },
+ {
+  "id": "NFMA-154",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è la distanza tra i punti P(1, 2, 3) e Q(3, 5, 9)?",
+  "opzioni": {
+   "A": "√11",
+   "B": "11",
+   "C": "49",
+   "D": "7",
+   "E": "√21"
+  },
+  "giusta": "D",
+  "perche": "La distanza tra due punti nello spazio è d = √((x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²) = √(2² + 3² + 6²) = √(4 + 9 + 36) = √49 = 7. Il valore 11 somma le differenze senza elevarle al quadrato; 49 dimentica la radice.",
+  "semplice": "È il teorema di Pitagora in tre dimensioni: calcoli quanto ti sposti lungo ciascun asse, elevi al quadrato, sommi ed estrai la radice.",
+  "passaggi": [
+   "Dati: P(1, 2, 3), Q(3, 5, 9)",
+   "Differenze: Δx = 2, Δy = 3, Δz = 6",
+   "Formula: d = √(Δx² + Δy² + Δz²)",
+   "Calcolo: √(4 + 9 + 36) = √49 = 7"
+  ],
+  "concetto": "distanza tra due punti nello spazio"
+ },
+ {
+  "id": "NFMA-155",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Che cosa sono due rette sghembe nello spazio?",
+  "opzioni": {
+   "A": "Due rette parallele distinte",
+   "B": "Due rette incidenti perpendicolari",
+   "C": "Due rette coincidenti",
+   "D": "Due rette che si incontrano in un solo punto",
+   "E": "Due rette che non stanno su uno stesso piano e quindi non sono né parallele né incidenti"
+  },
+  "giusta": "E",
+  "perche": "Nello spazio due rette possono essere incidenti, parallele (in entrambi i casi complanari) oppure sghembe: non esiste alcun piano che le contenga entrambe, non si incontrano e non sono parallele. L'errore tipico è pensare che due rette che non si incontrano siano per forza parallele, come accade nel piano.",
+  "semplice": "Pensa a una strada e a un cavalcavia che la incrocia dall'alto in direzione diversa: non si toccano mai, ma non sono nemmeno parallele.",
+  "passaggi": [
+   "Elenca le posizioni reciproche di due rette nello spazio",
+   "Parallele e incidenti sono sempre complanari",
+   "Le sghembe non sono complanari",
+   "Resta la E"
+  ],
+  "concetto": "rette sghembe"
+ },
+ {
+  "id": "NFMA-156",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è l'area della superficie di una sfera di raggio 5 cm?",
+  "opzioni": {
+   "A": "100π cm²",
+   "B": "25π cm²",
+   "C": "(500/3)π cm²",
+   "D": "50π cm²",
+   "E": "20π cm²"
+  },
+  "giusta": "A",
+  "perche": "L'area della superficie sferica è S = 4·π·r² = 4 · π · 25 cm² = 100π cm² ≈ 314 cm², cioè quattro volte l'area del cerchio massimo. Il valore 25π cm² è l'area di un solo cerchio massimo; (500/3)π è il volume, che si misura in cm³.",
+  "semplice": "La buccia di un'arancia ricopre esattamente quattro cerchi grandi quanto la sezione dell'arancia tagliata a metà.",
+  "passaggi": [
+   "Dati: r = 5 cm",
+   "Formula: S = 4·π·r²",
+   "Calcolo: 4 · π · 25 cm²",
+   "Risultato: S = 100π cm²"
+  ],
+  "concetto": "superficie della sfera"
+ },
+ {
+  "id": "NFMA-157",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Un cilindro ha raggio r e altezza h. Se il raggio raddoppia e l'altezza si dimezza, come cambia il volume?",
+  "opzioni": {
+   "A": "Resta uguale",
+   "B": "Raddoppia",
+   "C": "Quadruplica",
+   "D": "Si dimezza",
+   "E": "Diventa otto volte maggiore"
+  },
+  "giusta": "B",
+  "perche": "Il volume del cilindro è V = π·r²·h. Con r' = 2r e h' = h/2: V' = π·(2r)²·(h/2) = π·4r²·h/2 = 2·π·r²·h = 2V. L'idea che gli effetti si compensino («raddoppio e dimezzo, resta uguale») ignora che il raggio compare al quadrato.",
+  "semplice": "Allargare un barattolo conta più che accorciarlo, perché la base cresce come un quadrato: raggio doppio vuol dire base quattro volte più grande, e anche dimezzando l'altezza il volume raddoppia.",
+  "passaggi": [
+   "Scrivi la formula: V = π·r²·h",
+   "Sostituisci r' = 2r e h' = h/2",
+   "Calcolo: π·4r²·h/2 = 2·π·r²·h",
+   "Il volume raddoppia: resta la B"
+  ],
+  "concetto": "volume del cilindro"
+ },
+ {
+  "id": "NFMA-158",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è l'equazione del piano che passa per i punti (1, 0, 0), (0, 2, 0) e (0, 0, 3)?",
+  "opzioni": {
+   "A": "x + y + z = 1",
+   "B": "x + 2y + 3z = 6",
+   "C": "6x + 3y + 2z = 6",
+   "D": "3x + 2y + z = 6",
+   "E": "x + 2y + 3z = 1"
+  },
+  "giusta": "C",
+  "perche": "Un piano che taglia gli assi nei punti a, b, c ha equazione segmentaria x/a + y/b + z/c = 1, qui x/1 + y/2 + z/3 = 1. Moltiplicando per 6: 6x + 3y + 2z = 6. Verifica: (0, 2, 0) dà 3 · 2 = 6 e (0, 0, 3) dà 2 · 3 = 6. La B mette le intercette come coefficienti invece che come denominatori.",
+  "semplice": "Un piano che taglia i tre assi in 1, 2 e 3 si scrive mettendo questi numeri sotto x, y e z; poi si eliminano le frazioni.",
+  "passaggi": [
+   "Riconosci le intercette: a = 1, b = 2, c = 3",
+   "Equazione segmentaria: x/1 + y/2 + z/3 = 1",
+   "Moltiplica per 6: 6x + 3y + 2z = 6",
+   "Verifica sostituendo i tre punti: resta la C"
+  ],
+  "concetto": "equazione del piano"
+ },
+ {
+  "id": "NFMA-159",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Un icosaedro regolare ha 20 facce e 30 spigoli. Quanti vertici ha?",
+  "opzioni": {
+   "A": "10",
+   "B": "50",
+   "C": "20",
+   "D": "12",
+   "E": "8"
+  },
+  "giusta": "D",
+  "perche": "Per la relazione di Eulero sui poliedri convessi V − S + F = 2, dove V sono i vertici, S gli spigoli e F le facce. Quindi V = 2 + S − F = 2 + 30 − 20 = 12. Si può verificare: ogni faccia è un triangolo, 20 · 3 = 60 incidenze vertice-faccia, e in ogni vertice si incontrano 5 facce, quindi V = 60/5 = 12.",
+  "semplice": "Per ogni solido convesso, vertici meno spigoli più facce dà sempre 2. Conoscendo due di questi numeri si ricava il terzo.",
+  "passaggi": [
+   "Dati: F = 20, S = 30",
+   "Relazione di Eulero: V − S + F = 2",
+   "Calcolo: V = 2 + 30 − 20",
+   "Risultato: V = 12"
+  ],
+  "concetto": "relazione di Eulero"
+ },
+ {
+  "id": "NFMA-160",
+  "materia": "Matematica",
+  "argomento": "Geometria dello spazio",
+  "livello": "superiori",
+  "domanda": "Qual è il volume di una piramide retta a base quadrata con lato di base 6 cm e altezza 4 cm?",
+  "opzioni": {
+   "A": "144 cm³",
+   "B": "24 cm³",
+   "C": "72 cm³",
+   "D": "96 cm³",
+   "E": "48 cm³"
+  },
+  "giusta": "E",
+  "perche": "Il volume di una piramide è un terzo del prodotto tra area di base e altezza: V = (1/3) · 6² · 4 cm³ = (1/3) · 36 · 4 = 48 cm³. Il valore 144 cm³ è il volume del prisma con la stessa base e altezza; 72 cm³ divide per 2 anziché per 3.",
+  "semplice": "Una piramide occupa un terzo dello spazio della scatola con la stessa base e la stessa altezza.",
+  "passaggi": [
+   "Dati: lato di base 6 cm, h = 4 cm",
+   "Area di base: 6² = 36 cm²",
+   "Formula: V = (1/3)·A_base·h",
+   "Calcolo: (1/3) · 36 cm² · 4 cm = 48 cm³"
+  ],
+  "concetto": "volume della piramide"
+ }
+]

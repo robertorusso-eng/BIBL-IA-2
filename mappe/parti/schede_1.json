@@ -1,0 +1,611 @@
+{
+  "gene (DNA)": {
+    "tipo": "molecola",
+    "base": "Un pezzo del «libro di istruzioni» che c'è in ogni cellula: contiene la ricetta per costruire una proteina.",
+    "superiore": "Tratto di DNA che contiene l'informazione per una proteina (o per un RNA funzionale). Comprende il promotore (dove inizia la trascrizione), gli esoni (parti che restano nell'mRNA) e gli introni (parti che vengono tolte).",
+    "universita": "Nell'uomo circa 20.000 geni codificano proteine, ma le sequenze codificanti sono solo circa l'1-2% del genoma. Un gene eucariotico ha promotore (es. TATA box, legata da TBP/TFIID), elementi regolatori anche lontani (enhancer, silencer), esoni e introni. Solo il filamento stampo (antisenso) viene letto; l'mRNA ha la stessa sequenza del filamento codificante, con U al posto di T.",
+    "clinica": "Le mutazioni di un gene possono essere puntiformi (missenso, nonsenso, silenti), delezioni, inserzioni o espansioni di triplette (es. còrea di Huntington, X fragile); si studiano con il sequenziamento (pannelli genici, esoma)."
+  },
+  "pre-mRNA": {
+    "tipo": "molecola",
+    "base": "La prima copia della ricetta, ancora «in brutta»: va ripulita prima di usarla.",
+    "superiore": "RNA appena trascritto dal gene (trascritto primario): contiene sia gli esoni sia gli introni e non ha ancora cappuccio e coda.",
+    "universita": "Detto anche hnRNA (RNA nucleare eterogeneo). È sintetizzato 5'→3' dalla RNA polimerasi II; la maturazione (capping, splicing, poliadenilazione) avviene in gran parte durante la trascrizione, coordinata dal dominio C-terminale (CTD) della polimerasi.",
+    "clinica": ""
+  },
+  "RNA polimerasi II": {
+    "tipo": "enzima",
+    "base": "La «fotocopiatrice» che copia la ricetta dal DNA in una copia che può uscire dal nucleo.",
+    "superiore": "Enzima del nucleo che legge il DNA e costruisce l'RNA messaggero unendo ribonucleotidi complementari (A-U, T-A, G-C, C-G). Non ha bisogno di innesco (primer).",
+    "universita": "RNA polimerasi DNA-dipendente (EC 2.7.7.6). Trascrive i geni per le proteine (mRNA) e molti snRNA e miRNA; la RNA pol I fa gli rRNA grandi, la III i tRNA e l'rRNA 5S. Ha bisogno dei fattori generali di trascrizione (TFIID con TBP, TFIIB, TFIIF, TFIIE, TFIIH: quest'ultimo apre il DNA e fosforila la Ser5 del CTD per far partire l'allungamento). Sintesi 5'→3', libera PPi a ogni nucleotide aggiunto.",
+    "clinica": "L'α-amanitina dell'Amanita phalloides la blocca: insufficienza epatica acuta. La rifampicina blocca invece la RNA polimerasi dei batteri (tubercolosi), non la nostra."
+  },
+  "ribonucleotidi (NTP)": {
+    "tipo": "molecola",
+    "base": "Le «lettere» con cui si scrive l'RNA.",
+    "superiore": "ATP, GTP, CTP e UTP: nucleotidi con lo zucchero ribosio. L'RNA usa l'uracile (U) al posto della timina (T) del DNA.",
+    "universita": "Ogni aggiunta lega il fosfato α del nucleotide all'OH 3' della catena e libera pirofosfato (PPi), che la pirofosfatasi idrolizza subito: questo spinge la reazione in avanti. Il 2'-OH del ribosio rende l'RNA meno stabile del DNA.",
+    "clinica": ""
+  },
+  "pre-mRNA con cappuccio": {
+    "tipo": "molecola",
+    "base": "La copia della ricetta con un «cappellino» in testa che la protegge.",
+    "superiore": "pre-mRNA con il cappuccio (cap) all'estremità 5': una guanina modificata (7-metilguanosina). Protegge l'RNA e fa da segnale per il ribosoma.",
+    "universita": "Cap 0: m⁷G legata con un ponte trifosfato 5'-5' al primo nucleotide; spesso il ribosio dei primi nucleotidi è metilato in 2'-O (cap 1). Il cap è legato dal complesso CBC nel nucleo (export) e da eIF4E nel citoplasma (inizio della traduzione); protegge dalle esonucleasi 5'→3'.",
+    "clinica": ""
+  },
+  "enzimi del capping": {
+    "tipo": "enzima",
+    "base": "Gli aiutanti che mettono il «cappellino» all'inizio della copia.",
+    "superiore": "Tre attività enzimatiche che aggiungono il cappuccio di 7-metilguanosina all'inizio (5') del pre-mRNA.",
+    "universita": "1) RNA trifosfatasi: toglie il fosfato γ dell'estremità 5'. 2) Guanililtransferasi (EC 2.7.7.50): aggiunge un GMP preso dal GTP con legame 5'-5', liberando PPi. 3) Guanina-N7 metiltransferasi (EC 2.1.1.56): metila la guanina usando la SAM, che diventa S-adenosilomocisteina. Si legano al CTD della RNA polimerasi II fosforilato in Ser5.",
+    "clinica": ""
+  },
+  "S-adenosilmetionina (SAM)": {
+    "tipo": "coenzima",
+    "base": "Una molecola che regala piccoli pezzetti (gruppi metile) ad altre molecole.",
+    "superiore": "Coenzima formato da metionina + adenosina (dall'ATP). È il principale donatore di gruppi metile (–CH₃) della cellula.",
+    "universita": "Sintetizzata dalla metionina adenosiltransferasi (metionina + ATP). Dopo aver ceduto il metile diventa S-adenosilomocisteina, poi omocisteina, che torna metionina con la metionina sintasi (vitamina B12 + 5-metil-THF) o va verso la cisteina (vitamina B6). Serve a metilare DNA, RNA, proteine e molti composti (adrenalina, fosfatidilcolina, creatina).",
+    "clinica": "Carenze di B12 o folati bloccano il ciclo: aumenta l'omocisteina (fattore di rischio cardiovascolare) e si ha anemia megaloblastica."
+  },
+  "pre-mRNA con cappuccio e coda poli(A)": {
+    "tipo": "molecola",
+    "base": "La copia della ricetta con il cappellino in testa e una lunga «coda» in fondo.",
+    "superiore": "pre-mRNA con cappuccio al 5' e coda poli(A) al 3': una fila di circa 200 adenine che protegge l'RNA e lo aiuta a uscire dal nucleo e a essere tradotto.",
+    "universita": "Il complesso CPSF riconosce il segnale AAUAAA, CstF lega una sequenza ricca di G/U a valle; l'RNA è tagliato circa 10-30 nucleotidi dopo il segnale e la poli(A) polimerasi aggiunge le A. La coda è legata dalle proteine PABP, che interagiscono con eIF4G e «chiudono ad anello» l'mRNA, favorendo la traduzione. Accorciamento della coda (deadenilazione) = primo passo della degradazione.",
+    "clinica": "Mutazioni del segnale di poliadenilazione (AAUAAA) del gene dell'α-globina causano alcune forme di α-talassemia."
+  },
+  "poli(A) polimerasi": {
+    "tipo": "enzima",
+    "base": "L'aiutante che attacca la coda alla copia della ricetta.",
+    "superiore": "Enzima che aggiunge una dopo l'altra molte adenine (dall'ATP) all'estremità 3' del pre-mRNA, senza bisogno di uno stampo.",
+    "universita": "Polinucleotide adenililtransferasi (EC 2.7.7.19). Usa ATP e libera PPi a ogni A aggiunta. Lavora con CPSF e, dopo le prime A, con la proteina PABPN1 che la rende processiva e ne regola la lunghezza (circa 200-250 A nei mammiferi).",
+    "clinica": "Espansioni di triplette nel gene PABPN1 causano la distrofia muscolare oculofaringea."
+  },
+  "spliceosoma": {
+    "tipo": "enzima",
+    "base": "Le «forbici con la colla» che tagliano via le parti inutili della ricetta e uniscono quelle utili.",
+    "superiore": "Grande complesso di RNA e proteine nel nucleo che taglia gli introni dal pre-mRNA e unisce gli esoni (splicing).",
+    "universita": "Formato da 5 snRNP (U1, U2, U4, U5, U6: piccoli RNA nucleari + proteine) e molte altre proteine. Riconosce il sito 5' (GU), il punto di ramificazione (una A) e il sito 3' (AG) dell'introne. Due reazioni di transesterificazione: l'introne esce a forma di cappio (lariat). È in larga parte un ribozima (catalisi da U2/U6). Lo splicing alternativo, regolato da proteine SR e hnRNP, permette a circa il 95% dei geni umani con più esoni di dare più varianti.",
+    "clinica": "Anticorpi anti-Sm (contro proteine delle snRNP): molto specifici per il lupus (LES). Atrofia muscolare spinale (SMA): il gene SMN2 perde l'esone 7 per uno splicing sbagliato; il nusinersen (oligonucleotide antisenso) e il risdiplam correggono lo splicing. Mutazioni di SF3B1 nelle sindromi mielodisplastiche con sideroblasti ad anello."
+  },
+  "introni": {
+    "tipo": "molecola",
+    "base": "Le parti della ricetta che non servono e vengono tagliate via.",
+    "superiore": "Tratti di un gene che vengono trascritti ma poi eliminati dal pre-mRNA con lo splicing; gli esoni invece restano nell'mRNA maturo.",
+    "universita": "Iniziano quasi sempre con GU e finiscono con AG (regola GU-AG); contengono il punto di ramificazione. Escono come cappio (lariat), vengono linearizzati dall'enzima di deramificazione e degradati; alcuni contengono snoRNA o miRNA. Negli umani gli introni sono molto più lunghi degli esoni. I batteri in genere non hanno introni.",
+    "clinica": "Mutazioni nei siti di splicing (es. in alcune β-talassemie) fanno restare pezzi di introne o saltare esoni: proteina sbagliata o assente."
+  },
+  "mRNA maturo": {
+    "tipo": "molecola",
+    "base": "La ricetta pulita e pronta, che può uscire dal nucleo e andare in «cucina».",
+    "superiore": "RNA messaggero pronto per la traduzione: cappuccio al 5', zona non tradotta (5' UTR), sequenza codificante (dal codone AUG al codone di stop), zona non tradotta (3' UTR) e coda poli(A).",
+    "universita": "La giunzione tra esoni è marcata dal complesso EJC, che serve al controllo di qualità (decadimento mediato da mutazioni nonsenso, NMD). La 3' UTR contiene siti per miRNA ed elementi che regolano la stabilità (es. sequenze ricche di AU). La vita media degli mRNA varia da minuti a molte ore.",
+    "clinica": "I vaccini a mRNA (es. contro COVID-19) usano un mRNA sintetico con cappuccio, UTR e coda poli(A), con nucleosidi modificati (N1-metilpseudouridina) e chiuso in nanoparticelle lipidiche."
+  },
+  "mRNA nel citoplasma": {
+    "tipo": "molecola",
+    "base": "La ricetta arrivata in «cucina», dove i ribosomi la leggono.",
+    "superiore": "mRNA maturo uscito dal nucleo: nel citoplasma viene tradotto dai ribosomi liberi o, se la proteina è destinata alla membrana o all'esterno, dai ribosomi del reticolo endoplasmatico ruvido.",
+    "universita": "Un mRNA può essere letto da molti ribosomi insieme (poliribosoma). Può essere conservato in granuli (P-bodies, granuli da stress), represso dai miRNA o degradato (deadenilazione, decapping, esonucleasi XRN1 o esosoma).",
+    "clinica": ""
+  },
+  "complesso del poro nucleare": {
+    "tipo": "struttura",
+    "base": "Le «porte» del nucleo: lasciano passare solo chi ha il permesso.",
+    "superiore": "Grandi canali proteici che attraversano le due membrane dell'involucro nucleare e regolano il passaggio di molecole tra nucleo e citoplasma.",
+    "universita": "Formato da molte copie di circa 30 tipi di nucleoporine, con una massa di circa 110-120 MDa nei vertebrati. Le piccole molecole passano liberamente; le grandi passano con recettori di trasporto (importine/esportine guidate dal gradiente di Ran-GTP). L'mRNA esce soprattutto con il recettore NXF1-NXT1, in modo indipendente da Ran, dopo il caricamento del complesso TREX.",
+    "clinica": "Anticorpi anti-gp210 e anti-p62 (proteine del poro): tipici della colangite biliare primitiva."
+  },
+  "complesso di inizio": {
+    "tipo": "struttura",
+    "base": "La metà piccola della «macchina» che legge la ricetta, posata sul punto di partenza.",
+    "superiore": "Subunità minore del ribosoma + tRNA iniziatore (con la metionina) + mRNA, posizionati sul codone di inizio AUG.",
+    "universita": "Il complesso 43S (40S + eIF1, eIF1A, eIF3, eIF5 + complesso ternario eIF2-GTP-Met-tRNAi) si lega al cap tramite eIF4F (4E, 4G, 4A) e scorre in direzione 5'→3' (scansione) fino al primo AUG in buon contesto (sequenza di Kozak, es. gccRccAUGG). Al riconoscimento dell'AUG, eIF5 fa idrolizzare il GTP di eIF2: si forma il complesso 48S.",
+    "clinica": ""
+  },
+  "fattori di inizio (eIF)": {
+    "tipo": "enzima",
+    "base": "Gli aiutanti che mettono in posizione la macchina che legge la ricetta.",
+    "superiore": "Proteine (eIF = fattori di inizio eucariotici) che portano il tRNA iniziatore, riconoscono il cappuccio dell'mRNA, cercano il codone AUG e aiutano a unire le due subunità del ribosoma.",
+    "universita": "eIF4E lega il cap; eIF4G fa da impalcatura (lega eIF4E, eIF4A, eIF3 e PABP); eIF4A è un'elicasi che srotola la 5' UTR. eIF2 (con GTP) porta il Met-tRNAi; eIF2B riscambia GDP con GTP. eIF5B (GTPasi) unisce la 60S. Regolazione: fosforilazione di eIF2α (PERK, PKR, GCN2, HRI: risposta integrata allo stress) blocca l'inizio; mTORC1 fosforila le 4E-BP liberando eIF4E.",
+    "clinica": "Mutazioni di eIF2B: leucoencefalopatia con sostanza bianca evanescente. Gli inibitori di mTOR (sirolimus, everolimus) riducono la traduzione cap-dipendente (immunosoppressione, alcuni tumori)."
+  },
+  "subunità minore del ribosoma (40S)": {
+    "tipo": "struttura",
+    "base": "La metà piccola della «macchina» che legge la ricetta.",
+    "superiore": "Parte piccola del ribosoma eucariotico, fatta di RNA ribosomiale e proteine. Lega l'mRNA e controlla che codone e anticodone si appaino correttamente.",
+    "universita": "Coefficiente di sedimentazione 40S: rRNA 18S + circa 33 proteine (RPS). Contiene il centro di decodifica. Gli rRNA sono trascritti dalla RNA polimerasi I nel nucleolo, dove le subunità vengono assemblate prima di essere esportate.",
+    "clinica": "Anemia di Diamond-Blackfan: ribosomopatia, spesso da mutazioni di RPS19 (anemia macrocitica aregenerativa del lattante)."
+  },
+  "tRNA iniziatore (Met-tRNAi)": {
+    "tipo": "molecola",
+    "base": "Il primo «furgoncino» che porta il primo mattone, sempre lo stesso.",
+    "superiore": "tRNA speciale che porta la metionina e riconosce il codone di inizio AUG: per questo quasi tutte le proteine iniziano con la metionina (che spesso viene poi tolta).",
+    "universita": "Diverso dal tRNA che porta la metionina all'interno della catena. È l'unico che entra direttamente nel sito P. Negli eucarioti la metionina non è modificata; nei batteri e nei mitocondri è formilata (fMet-tRNAfMet).",
+    "clinica": "I peptidi con N-formilmetionina, prodotti dai batteri (e dai mitocondri danneggiati), sono riconosciuti dai recettori FPR dei neutrofili e li richiamano: segnale di infezione o danno."
+  },
+  "subunità maggiore del ribosoma (60S)": {
+    "tipo": "struttura",
+    "base": "La metà grande della «macchina» che legge la ricetta: è lì che i mattoni vengono uniti.",
+    "superiore": "Parte grande del ribosoma eucariotico. Contiene il centro che forma il legame peptidico e un tunnel da cui esce la catena di amminoacidi.",
+    "universita": "Coefficiente 60S: rRNA 28S, 5,8S e 5S + circa 47 proteine (RPL). Il centro peptidil transferasico è fatto di rRNA 28S. Ha tre siti per i tRNA, condivisi con la 40S: A (amminoacil), P (peptidil), E (uscita).",
+    "clinica": "La ricina (semi di ricino) e la tossina Shiga (Shigella, E. coli enteroemorragico, sindrome emolitico-uremica) tolgono un'adenina dall'rRNA 28S e bloccano la sintesi proteica."
+  },
+  "ribosoma completo (80S)": {
+    "tipo": "struttura",
+    "base": "La «macchina» completa che legge la ricetta e costruisce la proteina.",
+    "superiore": "Ribosoma eucariotico formato dalle due subunità (40S + 60S): legge l'mRNA un codone alla volta e unisce gli amminoacidi. Ha tre siti per i tRNA: A, P ed E.",
+    "universita": "80S (i coefficienti di sedimentazione non si sommano). Circa 2/3 della massa è rRNA. Ribosomi liberi: proteine del citosol, nucleo, mitocondri, perossisomi; ribosomi legati al reticolo endoplasmatico ruvido (tramite SRP e traslocone Sec61): proteine di membrana, secrete, lisosomiali. I mitocondri hanno ribosomi propri (55S) simili a quelli dei batteri.",
+    "clinica": ""
+  },
+  "amminoacil-tRNA nel sito A": {
+    "tipo": "struttura",
+    "base": "Il nuovo mattone appena arrivato al suo posto, accanto alla catena già costruita.",
+    "superiore": "tRNA con il suo amminoacido entrato nel sito A del ribosoma: il suo anticodone è appaiato al codone dell'mRNA.",
+    "universita": "La scelta del tRNA giusto avviene in due tempi (selezione iniziale e correzione dopo l'idrolisi del GTP di eEF1A: proofreading cinetico); il ribosoma controlla la geometria delle prime due coppie codone-anticodone. Errore della traduzione circa 1 amminoacido su 10³-10⁴.",
+    "clinica": ""
+  },
+  "eEF1A (fattore di allungamento)": {
+    "tipo": "enzima",
+    "base": "L'aiutante che porta ogni nuovo mattone dentro la macchina.",
+    "superiore": "Fattore di allungamento che, legato al GTP, accompagna l'amminoacil-tRNA nel sito A del ribosoma.",
+    "universita": "GTPasi (equivalente batterico: EF-Tu). Il complesso ternario eEF1A-GTP-amminoacil-tRNA entra nel sito A; se l'appaiamento codone-anticodone è corretto il ribosoma attiva l'idrolisi del GTP ed eEF1A-GDP esce. eEF1B riscambia GDP con GTP (come EF-Ts nei batteri). Costo: 1 GTP per amminoacido.",
+    "clinica": ""
+  },
+  "amminoacil-tRNA": {
+    "tipo": "molecola",
+    "base": "Il «furgoncino» carico del suo mattone.",
+    "superiore": "tRNA legato al suo amminoacido (tRNA «carico»). L'amminoacido è attaccato all'estremità 3' del tRNA.",
+    "universita": "L'amminoacido è legato con un legame estere ad alta energia (carbossile dell'amminoacido con il 2'- o 3'-OH dell'adenosina terminale della sequenza CCA). Questa energia servirà a formare il legame peptidico. Il ribosoma non controlla l'amminoacido ma solo l'anticodone: la correttezza dipende dalla sintetasi.",
+    "clinica": ""
+  },
+  "peptidil-tRNA nel sito A": {
+    "tipo": "struttura",
+    "base": "La catena di mattoni, ora più lunga di uno, appesa al furgoncino appena arrivato.",
+    "superiore": "Dopo la formazione del legame peptidico, la catena si trova sul tRNA del sito A; il tRNA del sito P è ora scarico.",
+    "universita": "Il gruppo α-amminico dell'amminoacil-tRNA (sito A) attacca il legame estere del peptidil-tRNA (sito P): la catena cresce dall'estremità N- verso la C-terminale. Durante la traslocazione i tRNA passano per stati ibridi (A/P e P/E).",
+    "clinica": ""
+  },
+  "peptidil transferasi (rRNA)": {
+    "tipo": "enzima",
+    "base": "Il punto della macchina che «incolla» un mattone al successivo.",
+    "superiore": "Centro catalitico della subunità maggiore che forma il legame peptidico tra la catena e il nuovo amminoacido. È fatto di RNA ribosomiale: è un ribozima.",
+    "universita": "Ribozima dell'rRNA 28S (23S nei batteri), senza proteine nel sito attivo; la catalisi è dovuta soprattutto al posizionamento dei substrati e al 2'-OH del tRNA nel sito P. Lo stesso centro, con il fattore di rilascio, idrolizza il peptidil-tRNA alla terminazione. La puromicina, simile a un amminoacil-tRNA, riceve la catena e la fa staccare prima del tempo.",
+    "clinica": "Nei batteri è bersaglio del cloramfenicolo (rischio di anemia aplastica e «sindrome grigia» del neonato) e del linezolid; i macrolidi bloccano il tunnel di uscita vicino a questo centro."
+  },
+  "catena polipeptidica in crescita": {
+    "tipo": "molecola",
+    "base": "La fila di mattoni che diventa sempre più lunga.",
+    "superiore": "Catena di amminoacidi uniti da legami peptidici, che si allunga di un amminoacido a ogni ciclo e esce dal ribosoma attraverso un tunnel.",
+    "universita": "Velocità di allungamento negli eucarioti circa 5-6 amminoacidi al secondo (circa 20 nei batteri). Il tunnel contiene circa 30-40 amminoacidi. Se all'inizio c'è un peptide segnale idrofobico, la SRP lo riconosce, ferma la traduzione e porta il ribosoma sul reticolo endoplasmatico (traslocazione cotraduzionale).",
+    "clinica": ""
+  },
+  "eEF2 (traslocasi)": {
+    "tipo": "enzima",
+    "base": "L'aiutante che fa avanzare la macchina di un passo lungo la ricetta.",
+    "superiore": "Fattore di allungamento che, usando GTP, fa avanzare il ribosoma di un codone lungo l'mRNA (traslocazione).",
+    "universita": "GTPasi (equivalente batterico: EF-G). Si lega al sito A e sposta i tRNA da A a P e da P a E, liberando il sito A. Contiene una istidina modificata, la diftamide. È inibito dalla fosforilazione da parte della eEF2 chinasi (quando manca energia). Costo: 1 GTP per amminoacido.",
+    "clinica": "La tossina difterica e l'esotossina A di Pseudomonas aeruginosa ADP-ribosilano (usando NAD⁺) la diftamide di eEF2: la sintesi proteica si ferma e la cellula muore. L'acido fusidico blocca invece l'EF-G dei batteri."
+  },
+  "tRNA scarico": {
+    "tipo": "molecola",
+    "base": "Il furgoncino vuoto che esce dalla macchina e torna a caricare un altro mattone.",
+    "superiore": "tRNA che ha ceduto il suo amminoacido alla catena: esce dal sito E e può essere ricaricato dalla sua amminoacil-tRNA sintetasi.",
+    "universita": "Un eccesso di tRNA scarichi segnala carenza di amminoacidi: negli eucarioti attiva la chinasi GCN2, che fosforila eIF2α e riduce la traduzione generale (risposta integrata allo stress); nei batteri attiva la «risposta stringente» (ppGpp).",
+    "clinica": ""
+  },
+  "catena polipeptidica liberata": {
+    "tipo": "molecola",
+    "base": "La fila di mattoni finita, staccata dalla macchina, ancora tutta «srotolata».",
+    "superiore": "Catena di amminoacidi completa (struttura primaria), staccata dal ribosoma dopo il codone di stop. Ha un'estremità N-terminale e una C-terminale.",
+    "universita": "Spesso inizia già a ripiegarsi mentre esce dal tunnel (ripiegamento cotraduzionale). La metionina iniziale viene spesso rimossa dalle metionina amminopeptidasi; l'N-terminale è spesso acetilato.",
+    "clinica": "Le mutazioni nonsenso producono catene tronche, di solito non funzionanti; spesso l'mRNA viene distrutto prima (decadimento mediato da mutazioni nonsenso)."
+  },
+  "fattori di rilascio (eRF1, eRF3)": {
+    "tipo": "enzima",
+    "base": "Gli aiutanti che leggono «fine» e staccano la proteina finita.",
+    "superiore": "Proteine che riconoscono i codoni di stop nel sito A e fanno staccare la catena dal tRNA; poi il ribosoma si divide nelle due subunità.",
+    "universita": "eRF1 ha forma simile a un tRNA, riconosce tutti e tre i codoni di stop e con il motivo GGQ fa idrolizzare (con H₂O) il legame estere peptidil-tRNA nel centro peptidil transferasico. eRF3 è una GTPasi che lo accompagna. Il riciclo del ribosoma è fatto da ABCE1 (con ATP). Nei batteri: RF1 (UAA, UAG), RF2 (UAA, UGA), RF3.",
+    "clinica": ""
+  },
+  "chaperoni molecolari": {
+    "tipo": "enzima",
+    "base": "Gli «accompagnatori» che aiutano la proteina a piegarsi nella forma giusta, come chi aiuta a piegare un lenzuolo.",
+    "superiore": "Proteine che aiutano altre proteine a ripiegarsi correttamente e impediscono che si attacchino tra loro in grumi. Molte sono proteine da shock termico (Hsp), prodotte di più con il calore e lo stress.",
+    "universita": "Hsp70 (lega tratti idrofobici, ciclo ATP-dipendente con cochaperoni Hsp40 e fattori di scambio), Hsp90 (recettori steroidei, chinasi), chaperonine (TRiC/CCT negli eucarioti, GroEL/GroES nei batteri: camera chiusa dove la proteina si ripiega, con ATP). Nel reticolo: BiP, calnexina e calreticolina. Le proteine che non si ripiegano sono marcate con ubiquitina e distrutte dal proteasoma; nel reticolo l'accumulo attiva la risposta UPR.",
+    "clinica": "Fibrosi cistica: la mutazione F508del fa ripiegare male CFTR, che viene distrutto; i «correttori» (lumacaftor, tezacaftor, elexacaftor) ne aiutano il ripiegamento. Deficit di α1-antitripsina (variante Z): la proteina mal ripiegata si accumula negli epatociti."
+  },
+  "proteina funzionante": {
+    "tipo": "molecola",
+    "base": "Il prodotto finito: una proteina pronta a lavorare (per esempio come aiutante, come mattone del corpo o come trasportatore).",
+    "superiore": "Proteina ripiegata nella sua forma tridimensionale: struttura primaria (sequenza), secondaria (α-elica, foglietto β), terziaria (forma completa) e, se ha più catene, quaternaria (es. emoglobina).",
+    "universita": "Modificazioni post-traduzionali: taglio proteolitico (es. proinsulina → insulina), fosforilazione, glicosilazione (N- nel reticolo, O- nel Golgi), ponti disolfuro, acetilazione, ubiquitinazione, ancore lipidiche. La destinazione dipende da segnali nella sequenza (peptide segnale, NLS, segnale mitocondriale, KDEL, mannosio 6-fosfato per i lisosomi).",
+    "clinica": "Malattie da ripiegamento sbagliato: amiloidosi, malattie da prioni, Alzheimer e Parkinson (aggregati). Mucolipidosi II (I-cell disease): manca il mannosio 6-fosfato e gli enzimi dei lisosomi finiscono fuori dalla cellula."
+  },
+  "amminoacido": {
+    "tipo": "molecola",
+    "base": "Il «mattoncino» con cui si costruiscono le proteine: ce ne sono 20 tipi diversi.",
+    "superiore": "Molecola con un gruppo amminico (–NH₂), un gruppo carbossilico (–COOH) e una catena laterale (R) che cambia da un amminoacido all'altro. Gli amminoacidi si uniscono con legami peptidici.",
+    "universita": "20 amminoacidi standard (forma L) + selenocisteina (codificata da UGA in un contesto speciale) e pirrolisina (solo in alcuni procarioti). Classificati in base alla catena laterale: apolari, polari neutri, acidi, basici. Essenziali per l'adulto: 9 (His, Ile, Leu, Lys, Met, Phe, Thr, Trp, Val).",
+    "clinica": "Fenilchetonuria (deficit di fenilalanina idrossilasi): si accumula fenilalanina, dannosa per il cervello; si cerca con lo screening neonatale e si cura con la dieta."
+  },
+  "tRNA": {
+    "tipo": "molecola",
+    "base": "Il «furgoncino» che porta il mattone giusto alla macchina che costruisce la proteina.",
+    "superiore": "RNA di trasporto: piccolo RNA a forma di trifoglio (a L nello spazio) che porta un amminoacido all'estremità 3' e ha l'anticodone, che si appaia al codone dell'mRNA.",
+    "universita": "Circa 73-93 nucleotidi, molte basi modificate (pseudouridina, inosina, diidrouridina). Estremità 3' sempre CCA. Trascritto dalla RNA polimerasi III. Per il vacillamento (wobble) della terza base un tRNA può leggere più codoni: bastano meno di 61 tipi di tRNA.",
+    "clinica": "Mutazioni dei tRNA mitocondriali causano malattie mitocondriali (es. MELAS: tRNA-Leu; MERRF: tRNA-Lys)."
+  },
+  "amminoacil-tRNA sintetasi": {
+    "tipo": "enzima",
+    "base": "L'aiutante che carica ogni furgoncino con il suo mattone giusto, senza sbagliare.",
+    "superiore": "Enzima che attacca ogni amminoacido al suo tRNA, usando l'energia dell'ATP. Ce n'è uno per ogni amminoacido: è qui che si «traduce» davvero il codice.",
+    "universita": "Ligasi (EC 6.1.1.x). Due tappe: amminoacido + ATP → amminoacil-AMP + PPi; poi amminoacil-AMP + tRNA → amminoacil-tRNA + AMP. Costo: 2 legami ad alta energia (il PPi viene idrolizzato). Due classi (I e II) con siti attivi diversi; molte hanno un sito di correzione (editing) che idrolizza l'amminoacido sbagliato.",
+    "clinica": "La mupirocina (pomata) blocca l'isoleucil-tRNA sintetasi dei batteri (Staphylococcus aureus). Anticorpi anti-Jo-1 (istidil-tRNA sintetasi): sindrome da antisintetasi (miosite, interstiziopatia polmonare)."
+  },
+  "codone": {
+    "tipo": "molecola",
+    "base": "Una «parola» di tre lettere nella ricetta: ogni parola indica un mattone.",
+    "superiore": "Tripletta di nucleotidi dell'mRNA che corrisponde a un amminoacido o a un segnale di stop. Le combinazioni sono 4³ = 64: 61 indicano amminoacidi, 3 sono di stop.",
+    "universita": "Il codice è degenerato (più codoni per lo stesso amminoacido, di solito diversi alla terza base), non ambiguo, senza virgole e quasi universale. Eccezioni nei mitocondri umani: UGA = triptofano, AUA = metionina, AGA/AGG = stop. La lettura parte dall'AUG e stabilisce la cornice di lettura.",
+    "clinica": "Anemia falciforme: nel gene della β-globina il codone GAG (acido glutammico) diventa GUG (valina) in posizione 6. Inserzioni o delezioni non multiple di 3 spostano la cornice di lettura (frameshift)."
+  },
+  "anticodone": {
+    "tipo": "molecola",
+    "base": "Le tre lettere sul furgoncino che devono combaciare con la parola della ricetta.",
+    "superiore": "Tripletta di basi del tRNA che si appaia, in modo complementare e antiparallelo, al codone dell'mRNA.",
+    "universita": "Si trova nell'ansa dell'anticodone. La prima base dell'anticodone (che si appaia alla terza del codone) segue le regole del vacillamento di Crick: es. G legge C o U; l'inosina (I) legge U, C o A.",
+    "clinica": ""
+  },
+  "codone di inizio (AUG)": {
+    "tipo": "molecola",
+    "base": "La parola «via!»: da qui si comincia a leggere la ricetta.",
+    "superiore": "Il codone AUG indica dove inizia la traduzione e codifica la metionina; stabilisce anche la cornice di lettura (come si raggruppano le lettere a tre a tre).",
+    "universita": "Negli eucarioti di solito è il primo AUG dopo il cap, in un buon contesto di Kozak (purina in −3, G in +4). Nei batteri è riconosciuto grazie alla sequenza di Shine-Dalgarno, che si appaia all'rRNA 16S. AUG interni codificano metionina normale.",
+    "clinica": ""
+  },
+  "codoni di stop": {
+    "tipo": "molecola",
+    "base": "Le parole «fine»: dicono alla macchina che la proteina è finita.",
+    "superiore": "UAA, UAG e UGA: non codificano amminoacidi; nessun tRNA li riconosce, ma i fattori di rilascio, che staccano la proteina.",
+    "universita": "Chiamati anche codoni nonsenso (ocra UAA, ambra UAG, opale UGA). Un codone di stop prematuro, più di circa 50-55 nucleotidi prima dell'ultima giunzione esone-esone, attiva il decadimento dell'mRNA (NMD).",
+    "clinica": "Le mutazioni nonsenso (un codone diventa di stop) danno proteine tronche: es. alcune forme di distrofia muscolare di Duchenne e di fibrosi cistica (G542X)."
+  },
+  "ribosoma batterico (70S)": {
+    "tipo": "struttura",
+    "base": "La macchina che costruisce le proteine nei batteri: è diversa dalla nostra, così alcune medicine possono bloccare solo quella dei batteri.",
+    "superiore": "Ribosoma dei procarioti, più piccolo di quello eucariotico: subunità 30S + 50S. Molti antibiotici agiscono legandosi a queste subunità.",
+    "universita": "30S: rRNA 16S + 21 proteine; 50S: rRNA 23S e 5S + circa 33 proteine. I ribosomi dei mitocondri (55S) gli somigliano: spiega alcuni effetti tossici degli antibiotici.",
+    "clinica": "Sulla 30S: aminoglicosidi (gentamicina, amikacina: errori di lettura; ototossici e nefrotossici) e tetracicline (bloccano l'ingresso del tRNA nel sito A). Sulla 50S: macrolidi (azitromicina), clindamicina, cloramfenicolo, linezolid. Tossicità mitocondriale: linezolid (acidosi lattica, neuropatia con uso prolungato), sordità da aminoglicosidi nei portatori della mutazione mitocondriale m.1555A>G."
+  },
+  "cellula in interfase (G1)": {
+    "tipo": "struttura",
+    "base": "La cellula nel suo periodo «normale»: cresce, lavora e si prepara a dividersi.",
+    "superiore": "Fase G1 dell'interfase: la cellula cresce, produce proteine e organelli e decide se dividersi. Ogni cromosoma ha un solo cromatidio (2n). Le cellule che non si dividono più escono dal ciclo in G0 (es. neuroni).",
+    "universita": "Contenuto di DNA 2c. Al punto di restrizione (fine G1) i complessi CDK4/6-ciclina D e poi CDK2-ciclina E fosforilano la proteina Rb, che libera E2F e attiva i geni della fase S. Se il DNA è danneggiato, p53 induce p21 e ferma il ciclo. Fasi del ciclo: G1, S, G2 (interfase) e M.",
+    "clinica": "Gli inibitori di CDK4/6 (palbociclib, ribociclib, abemaciclib) si usano nel tumore della mammella con recettori ormonali positivi. Mutazioni di RB1 causano il retinoblastoma; p53 è mutata in circa metà dei tumori (sindrome di Li-Fraumeni se ereditaria)."
+  },
+  "cromosomi duplicati (fase S)": {
+    "tipo": "struttura",
+    "base": "Ogni «libretto di istruzioni» della cellula è stato fotocopiato: ora ce ne sono due copie attaccate.",
+    "superiore": "Fase S (sintesi): il DNA si replica e ogni cromosoma è formato da due cromatidi fratelli identici, uniti al centromero. Il numero di cromosomi non cambia (2n), raddoppia la quantità di DNA.",
+    "universita": "Contenuto di DNA da 2c a 4c. La replicazione parte da migliaia di origini, «autorizzate» in G1 (caricamento delle elicasi MCM) e attivate in S da CDK e DDK: così ogni tratto viene copiato una sola volta per ciclo. Leading strand (pol ε) e lagging strand (pol δ, frammenti di Okazaki). Anche gli istoni vengono sintetizzati in S.",
+    "clinica": "Molti chemioterapici agiscono soprattutto in fase S: metotrexato, 5-fluorouracile, citarabina, idrossiurea, gemcitabina."
+  },
+  "DNA polimerasi": {
+    "tipo": "enzima",
+    "base": "La «fotocopiatrice» che copia tutto il libretto di istruzioni prima che la cellula si divida.",
+    "superiore": "Enzima che costruisce un nuovo filamento di DNA complementare allo stampo, unendo desossiribonucleotidi in direzione 5'→3'. Ha bisogno di un innesco (primer) e corregge i propri errori.",
+    "universita": "DNA polimerasi DNA-dipendente (EC 2.7.7.7). Negli eucarioti: pol α-primasi (innesco), pol ε (filamento guida), pol δ (filamento lento); la pinza PCNA la mantiene sul DNA. Attività esonucleasica 3'→5' (correzione di bozze): errore finale circa 1 su 10⁹-10¹⁰ basi, insieme alla riparazione dei mismatch. Libera PPi per ogni nucleotide.",
+    "clinica": "Bersaglio di antivirali (aciclovir e ganciclovir sulle DNA polimerasi degli herpesvirus) e di chemioterapici (citarabina). Mutazioni della pol ε (POLE) causano tumori del colon e dell'endometrio con moltissime mutazioni."
+  },
+  "desossiribonucleotidi (dNTP)": {
+    "tipo": "molecola",
+    "base": "Le «lettere» con cui si scrive il DNA.",
+    "superiore": "dATP, dGTP, dCTP, dTTP: nucleotidi con lo zucchero desossiribosio (senza l'OH in posizione 2'). Il DNA usa la timina (T) invece dell'uracile.",
+    "universita": "Si formano dai ribonucleotidi difosfato grazie alla ribonucleotide reduttasi (regolata per mantenere equilibrate le quattro scorte). La timina viene dal dUMP tramite la timidilato sintasi, che usa un folato (N⁵,N¹⁰-metilene-THF).",
+    "clinica": "Farmaci che riducono i dNTP: idrossiurea (ribonucleotide reduttasi; anemia falciforme, malattie mieloproliferative), 5-fluorouracile (timidilato sintasi), metotrexato (diidrofolato reduttasi)."
+  },
+  "cellula pronta (G2)": {
+    "tipo": "struttura",
+    "base": "La cellula ha fatto le copie e controlla che sia tutto a posto prima di dividersi.",
+    "superiore": "Fase G2: la cellula ha già duplicato il DNA (cromosomi con due cromatidi), continua a crescere e controlla che la copia sia completa e senza errori prima di entrare in mitosi.",
+    "universita": "Contenuto di DNA 4c. Punto di controllo G2/M: i danni al DNA attivano ATM/ATR → Chk1/Chk2, che inibiscono la fosfatasi Cdc25; così CDK1-ciclina B resta inattiva (fosforilata da Wee1) e la cellula non entra in mitosi.",
+    "clinica": "Le cellule in G2 e in mitosi sono le più sensibili alle radiazioni (radioterapia); quelle in fine fase S le più resistenti."
+  },
+  "CDK1-ciclina B (MPF)": {
+    "tipo": "enzima",
+    "base": "L'«interruttore» che dà il via alla divisione della cellula.",
+    "superiore": "Complesso formato da una chinasi (CDK1) e dalla sua ciclina (ciclina B), detto MPF (fattore che promuove la mitosi). Quando si attiva, la cellula entra in mitosi; quando la ciclina viene distrutta, la mitosi finisce.",
+    "universita": "Chinasi ciclina-dipendente (EC 2.7.11.22, serina/treonina chinasi). Per essere attiva servono la ciclina B, la fosforilazione della Thr161 (da CAK) e la rimozione dei fosfati inibitori su Thr14/Tyr15 (messi da Wee1/Myt1, tolti da Cdc25): un circuito a retroazione positiva la accende di colpo. Fosforila lamine (rottura dell'involucro), condensine, proteine del fuso. In anafase l'APC/C fa distruggere la ciclina B.",
+    "clinica": ""
+  },
+  "cromosomi condensati (profase)": {
+    "tipo": "struttura",
+    "base": "I lunghi fili di istruzioni si arrotolano e diventano dei «bastoncini» ben visibili.",
+    "superiore": "Profase: la cromatina si condensa e ogni cromosoma appare formato da due cromatidi fratelli uniti al centromero. Il nucleolo scompare; i centrosomi si spostano ai poli e cominciano a formare il fuso.",
+    "universita": "La compattazione (circa 10.000 volte rispetto al DNA disteso) è opera delle condensine, che formano anse; la coesina lungo i bracci viene in gran parte rimossa (via della chinasi Plk1 e Wapl), mentre quella al centromero resta protetta dalla shugoshina. Fosforilazione dell'istone H3 (Ser10) da Aurora B.",
+    "clinica": ""
+  },
+  "condensine": {
+    "tipo": "enzima",
+    "base": "Gli aiutanti che arrotolano i fili di istruzioni per renderli compatti e facili da spostare.",
+    "superiore": "Complessi proteici che compattano i cromosomi all'inizio della mitosi, usando ATP.",
+    "universita": "Complessi SMC (SMC2-SMC4 + subunità non-SMC); negli eucarioti superiori condensina I e II. Sono ATPasi che estrudono anse di DNA (loop extrusion) e danno rigidità ai cromosomi mitotici. Attivate dalla fosforilazione da parte di CDK1 e Aurora B.",
+    "clinica": ""
+  },
+  "cromosomi agganciati al fuso (prometafase)": {
+    "tipo": "struttura",
+    "base": "Il nucleo si «apre» e i fili della cellula afferrano i cromosomi.",
+    "superiore": "Prometafase: l'involucro nucleare si disgrega e i microtubuli del fuso si agganciano ai cinetocori dei cromosomi, che cominciano a muoversi verso il centro.",
+    "universita": "La fosforilazione delle lamine da CDK1 smonta la lamina nucleare; l'involucro si frammenta in vescicole o confluisce nel reticolo. I microtubuli «cercano e catturano» i cinetocori; gli agganci sbagliati (es. entrambi i cinetocori allo stesso polo) vengono corretti dalla chinasi Aurora B, finché ogni cromosoma è biorientato.",
+    "clinica": ""
+  },
+  "fuso mitotico": {
+    "tipo": "struttura",
+    "base": "Una specie di «ragnatela» di fili che afferra i cromosomi e li tira ai due lati della cellula.",
+    "superiore": "Struttura di microtubuli che parte dai due centrosomi (poli). I microtubuli del cinetocore tirano i cromosomi, quelli polari spingono i poli lontani, quelli astrali ancorano il fuso alla membrana.",
+    "universita": "Microtubuli del cinetocore (fibre K), interpolari e astrali, con estremità − ai poli e + verso il centro. Proteine motrici: chinesine (es. Eg5/chinesina-5 separa i poli) e dineina. In anafase A i microtubuli del cinetocore si accorciano (depolimerizzazione) e i cromatidi vanno ai poli; in anafase B i microtubuli interpolari scorrono e i poli si allontanano.",
+    "clinica": "Farmaci antimitotici: alcaloidi della vinca (vincristina, vinblastina) e eribulina impediscono la formazione dei microtubuli; taxani (paclitaxel, docetaxel) li stabilizzano troppo. In entrambi i casi la cellula si blocca in mitosi e muore. La colchicina (gotta, febbre mediterranea familiare) depolimerizza i microtubuli; in laboratorio si usa per fermare le cellule in metafase e studiare il cariotipo."
+  },
+  "piastra metafasica (metafase)": {
+    "tipo": "struttura",
+    "base": "Tutti i cromosomi si mettono in fila al centro della cellula, come in un allineamento perfetto.",
+    "superiore": "Metafase: i cromosomi, ancora con due cromatidi, sono allineati sul piano equatoriale (piastra metafasica), con i cinetocori dei due cromatidi rivolti a poli opposti. È il momento in cui i cromosomi sono più condensati e si vedono meglio.",
+    "universita": "Le forze dei microtubuli dei due poli si bilanciano (tensione ai cinetocori). La mitosi resta ferma qui finché il punto di controllo del fuso (SAC) non è soddisfatto, cioè finché tutti i cinetocori sono agganciati.",
+    "clinica": "Il cariotipo si fa su cellule in metafase (linfociti in coltura, amniociti, villi coriali) bloccate con colchicina: si valutano numero e struttura dei cromosomi (bandeggio G)."
+  },
+  "cromatidi separati (anafase)": {
+    "tipo": "struttura",
+    "base": "Le due copie di ogni cromosoma si staccano e vanno una da una parte e una dall'altra.",
+    "superiore": "Anafase: i cromatidi fratelli si separano e ognuno, ora chiamato cromosoma, viene tirato verso un polo. Ai due poli arriva così lo stesso identico corredo di cromosomi.",
+    "universita": "L'APC/C-Cdc20 ubiquitina securina e ciclina B → proteasoma. La separasi libera taglia la subunità RAD21 (Scc1) della coesina. La caduta di CDK1 attiva le fosfatasi e prepara l'uscita dalla mitosi. Anafase A (accorciamento dei microtubuli del cinetocore) e anafase B (allontanamento dei poli).",
+    "clinica": "Errori di separazione nelle cellule somatiche danno aneuploidia e mosaicismi; l'instabilità cromosomica è tipica di molti tumori."
+  },
+  "separasi": {
+    "tipo": "enzima",
+    "base": "Le «forbici» che tagliano la colla che tiene unite le due copie dei cromosomi.",
+    "superiore": "Enzima che taglia la coesina all'inizio dell'anafase e permette ai cromatidi (o, nella meiosi I, agli omologhi) di separarsi. Prima dell'anafase è tenuto bloccato dalla securina.",
+    "universita": "Cisteina proteasi simile alle caspasi (EC 3.4.22.49). Taglia la cleisina della coesina: RAD21 nella mitosi, REC8 nella meiosi. Inibita da securina e da CDK1-ciclina B; attivata quando l'APC/C fa degradare entrambe. Nella meiosi I non taglia la REC8 centromerica perché è protetta dalla shugoshina-PP2A.",
+    "clinica": ""
+  },
+  "due nuclei (telofase)": {
+    "tipo": "struttura",
+    "base": "Ai due lati della cellula si formano due nuovi nuclei, ognuno con tutte le istruzioni.",
+    "superiore": "Telofase: attorno a ogni gruppo di cromosomi si riforma l'involucro nucleare, i cromosomi si decondensano e ricompaiono i nucleoli. Il fuso si smonta.",
+    "universita": "La defosforilazione delle lamine e delle nucleoporine permette di ricostruire involucro e pori; il complesso ESCRT-III sigilla i buchi dell'involucro. I nucleoli si riformano attorno alle regioni dell'organizzatore nucleolare (geni dell'rRNA, sui bracci corti dei cromosomi acrocentrici).",
+    "clinica": ""
+  },
+  "fosfatasi mitotiche (PP1, PP2A)": {
+    "tipo": "enzima",
+    "base": "Gli aiutanti che «spengono» la divisione e rimettono la cellula in ordine.",
+    "superiore": "Enzimi che tolgono i fosfati messi dalla CDK1 durante la mitosi: così la cellula esce dalla mitosi e riforma i nuclei.",
+    "universita": "Fosfoproteina fosfatasi serina/treonina (EC 3.1.3.16). PP2A-B55 è inibita in mitosi (via Greatwall-ENSA/ARPP19) e si riattiva quando cala CDK1; PP1 defosforila lamine e altri substrati. Il rapporto tra attività di chinasi e fosfatasi decide l'ordine degli eventi in uscita dalla mitosi.",
+    "clinica": ""
+  },
+  "due cellule figlie": {
+    "tipo": "struttura",
+    "base": "Alla fine ci sono due cellule uguali alla mamma, con le stesse istruzioni.",
+    "superiore": "Due cellule diploidi (2n) geneticamente identiche alla cellula madre, che rientrano in G1 (o in G0).",
+    "universita": "Ciascuna ha DNA 2c e un centrosoma. La distribuzione degli organelli è approssimativamente uguale; in alcune divisioni (cellule staminali) le figlie ricevono destini diversi (divisione asimmetrica).",
+    "clinica": "La quantità di cellule in divisione (conta delle mitosi, indice Ki-67) aiuta a stabilire il grado di un tumore: più è alta, più il tumore cresce in fretta."
+  },
+  "anello contrattile (actina e miosina II)": {
+    "tipo": "struttura",
+    "base": "Una specie di «cintura» che si stringe in mezzo alla cellula fino a dividerla in due.",
+    "superiore": "Anello di filamenti di actina e miosina sotto la membrana, all'equatore della cellula: contraendosi forma il solco di divisione e separa il citoplasma (citocinesi).",
+    "universita": "Posizionato dal fuso centrale (proteine come centralspindlina) che attiva localmente RhoA; la miosina II consuma ATP per far scorrere l'actina. Alla fine resta un ponte sottile (corpo intermedio, midbody) tagliato dal complesso ESCRT-III (abscissione). Nelle cellule vegetali si forma invece la piastra cellulare dal fragmoplasto e dalle vescicole del Golgi.",
+    "clinica": ""
+  },
+  "cromosoma": {
+    "tipo": "struttura",
+    "base": "Un «libretto» di istruzioni: nelle nostre cellule ce ne sono 46, in 23 coppie.",
+    "superiore": "Molecola di DNA molto lunga avvolta su proteine (istoni) a formare la cromatina. Nell'uomo le cellule somatiche hanno 46 cromosomi: 22 coppie di autosomi + 2 cromosomi sessuali (XX nella femmina, XY nel maschio).",
+    "universita": "Unità della cromatina: nucleosoma (circa 147 coppie di basi avvolte attorno a un ottamero di istoni H2A, H2B, H3, H4; H1 come linker). Elementi essenziali: centromero, due telomeri (ripetizioni TTAGGG mantenute dalla telomerasi) e origini di replicazione. Classificati per posizione del centromero: metacentrici, submetacentrici, acrocentrici (13, 14, 15, 21, 22).",
+    "clinica": "Le anomalie cromosomiche possono essere di numero (aneuploidie: trisomie, monosomie) o di struttura (delezioni, duplicazioni, inversioni, traslocazioni: es. t(9;22) cromosoma Philadelphia nella leucemia mieloide cronica)."
+  },
+  "cromatidi fratelli": {
+    "tipo": "struttura",
+    "base": "Le due copie identiche di un cromosoma, attaccate tra loro come due gemelli che si tengono per mano.",
+    "superiore": "Le due copie identiche di un cromosoma prodotte nella fase S, unite al centromero dalla coesina. Si separano nell'anafase della mitosi e della meiosi II.",
+    "universita": "La coesione è stabilita durante la replicazione (acetilazione di SMC3 da ESCO1/2). Restano uniti da G2 fino all'anafase; dopo il crossing-over, nella meiosi, i cromatidi fratelli non sono più del tutto identici.",
+    "clinica": "Nella sindrome di Bloom (gene BLM) aumentano molto gli scambi tra cromatidi fratelli; è un test diagnostico."
+  },
+  "centromero": {
+    "tipo": "struttura",
+    "base": "Il punto in cui le due copie del cromosoma sono attaccate, come il nodo al centro di una «X».",
+    "superiore": "Strozzatura primaria del cromosoma: tiene uniti i cromatidi fratelli e su di esso si forma il cinetocore, dove si agganciano i microtubuli del fuso.",
+    "universita": "Nell'uomo è formato da DNA satellite α (ripetizioni di circa 171 coppie di basi) ed è definito soprattutto dalla variante istonica CENP-A (definizione epigenetica). La coesina centromerica è l'ultima a essere tagliata.",
+    "clinica": "Anticorpi anti-centromero (anti-CENP-B): tipici della sclerosi sistemica cutanea limitata (sindrome CREST). Traslocazioni robertsoniane (fusione al centromero di due acrocentrici, es. 14;21): causa della sindrome di Down familiare."
+  },
+  "cinetocore": {
+    "tipo": "struttura",
+    "base": "Il «gancio» su ogni copia del cromosoma, dove si attaccano i fili che lo tirano.",
+    "superiore": "Struttura di proteine che si forma su ciascun centromero (uno per cromatidio) e collega il cromosoma ai microtubuli del fuso.",
+    "universita": "Cinetocore interno (legato a CENP-A, complesso CCAN) ed esterno (rete KMN, con il complesso Ndc80 che lega i microtubuli). Percepisce la tensione e l'aggancio, e se non è agganciato produce il segnale di attesa del punto di controllo del fuso (Mad2).",
+    "clinica": ""
+  },
+  "coesina": {
+    "tipo": "struttura",
+    "base": "La «colla» che tiene unite le due copie di un cromosoma finché non è il momento di separarle.",
+    "superiore": "Complesso di proteine ad anello che tiene uniti i cromatidi fratelli dalla fase S fino all'anafase.",
+    "universita": "Anello formato da SMC1, SMC3, una cleisina (RAD21 nella mitosi, REC8 nella meiosi) e SA/STAG. Caricata dal complesso NIPBL-MAU2. Rimossa in due tempi: dai bracci in profase (Plk1, Wapl) e al centromero in anafase (separasi). Organizza anche le anse della cromatina in interfase, regolando i geni.",
+    "clinica": "Sindrome di Cornelia de Lange: mutazioni di NIPBL (più frequente), SMC1A, SMC3, RAD21. Nell'ovocita la coesina si forma prima della nascita e si consuma con gli anni: è una delle cause proposte dell'aumento delle trisomie con l'età materna."
+  },
+  "centrosoma": {
+    "tipo": "struttura",
+    "base": "Il «centro di partenza» da cui nascono i fili che formano il fuso.",
+    "superiore": "Principale centro di organizzazione dei microtubuli della cellula animale: due centrioli perpendicolari circondati da materiale pericentriolare. Si duplica nella fase S e i due centrosomi diventano i poli del fuso.",
+    "universita": "Ogni centriolo è un cilindro di 9 triplette di microtubuli. Il materiale pericentriolare contiene i complessi ad anello della γ-tubulina, che fanno nascere i microtubuli. Duplicazione controllata (Plk4) una volta per ciclo. Le cellule vegetali e gli ovociti umani formano il fuso senza centrosomi.",
+    "clinica": "Mutazioni di geni del centrosoma e del fuso (es. ASPM) causano microcefalia primaria; l'eccesso di centrosomi è frequente nei tumori."
+  },
+  "microtubuli": {
+    "tipo": "struttura",
+    "base": "Fili sottilissimi e cavi, come cannucce, che formano lo scheletro della cellula e il fuso.",
+    "superiore": "Tubi di proteina tubulina (α e β) che fanno parte del citoscheletro: danno forma alla cellula, fanno da binari per il trasporto e formano il fuso, le ciglia e i flagelli.",
+    "universita": "Diametro circa 25 nm, 13 protofilamenti di dimeri α/β-tubulina legati al GTP. Polari (estremità + e −) e dinamici: crescono e si accorciano rapidamente (instabilità dinamica, legata al cappuccio di GTP-tubulina). Motori: chinesine (in genere verso +) e dineine (verso −).",
+    "clinica": "Bersaglio di colchicina, alcaloidi della vinca, taxani; la neuropatia periferica di vincristina e taxani dipende dal danno al trasporto lungo gli assoni. Albendazolo e mebendazolo legano la tubulina dei vermi. Difetti delle ciglia: discinesia ciliare primaria (sindrome di Kartagener)."
+  },
+  "punto di controllo del fuso (SAC)": {
+    "tipo": "struttura",
+    "base": "Un «controllore» che non fa partire la separazione finché tutti i cromosomi non sono agganciati bene.",
+    "superiore": "Sistema di controllo che blocca la cellula in metafase finché tutti i cinetocori non sono attaccati correttamente al fuso. Evita che le cellule figlie ricevano un numero sbagliato di cromosomi.",
+    "universita": "Proteine Mad1, Mad2, Bub1, BubR1, Bub3 e la chinasi Mps1. Un solo cinetocore non agganciato basta a produrre il complesso MCC (Mad2-BubR1-Bub3-Cdc20), che inibisce l'APC/C. Quando tutti sono agganciati, il segnale si spegne e parte l'anafase.",
+    "clinica": "I farmaci antimitotici funzionano tenendo attivo a lungo questo controllo (blocco in mitosi → morte cellulare). Mutazioni di BUB1B: aneuploidia a mosaico variegato, con rischio di tumori."
+  },
+  "complesso promotore dell'anafase (APC/C)": {
+    "tipo": "enzima",
+    "base": "L'aiutante che dà il segnale «via!» alla separazione dei cromosomi.",
+    "superiore": "Grande complesso enzimatico che marca alcune proteine (securina e ciclina B) per farle distruggere: così si libera la separasi e la cellula passa dalla metafase all'anafase e poi esce dalla mitosi.",
+    "universita": "Ubiquitina ligasi E3 multiproteica. Coattivatori: Cdc20 (metafase-anafase, bloccato dal SAC) e Cdh1 (fine mitosi e G1). Riconosce le sequenze D-box e KEN-box dei substrati; le proteine poliubiquitinate sono degradate dal proteasoma 26S.",
+    "clinica": ""
+  },
+  "cellula germinale diploide (2n)": {
+    "tipo": "struttura",
+    "base": "La cellula speciale, nei testicoli o nelle ovaie, da cui nasceranno gli spermatozoi o le cellule uovo.",
+    "superiore": "Cellula della linea germinale con 46 cromosomi (2n) che entra in meiosi: spermatocita primario nel maschio, ovocita primario nella femmina. Deriva da spermatogoni o ovogoni, che si moltiplicano per mitosi.",
+    "universita": "Nel maschio gli spermatogoni (cellule staminali nei tubuli seminiferi) entrano in meiosi dalla pubertà in poi. Nella femmina gli ovogoni entrano in meiosi durante la vita fetale; gli ovociti primari si fermano in profase I (diplotene, stadio dittiotene) fino all'ovulazione, anche per decenni.",
+    "clinica": ""
+  },
+  "tetradi (cromosomi omologhi appaiati)": {
+    "tipo": "struttura",
+    "base": "I cromosomi della mamma e del papà si mettono vicini a coppie, come due fili affiancati.",
+    "superiore": "In profase I ogni cromosoma si appaia al suo omologo (sinapsi): la coppia, con 4 cromatidi in tutto, si chiama tetrade o bivalente. Nell'uomo si formano 23 bivalenti.",
+    "universita": "Profase I: leptotene (condensazione, inizio delle rotture del DNA), zigotene (inizio della sinapsi), pachitene (sinapsi completa, crossing-over), diplotene (il complesso sinaptonemale si scioglie, si vedono i chiasmi), diacinesi (massima condensazione). X e Y si appaiano solo nelle regioni pseudoautosomiche (PAR).",
+    "clinica": ""
+  },
+  "complesso sinaptonemale": {
+    "tipo": "struttura",
+    "base": "Una specie di «cerniera» che tiene vicini i due cromosomi della coppia.",
+    "superiore": "Struttura proteica a forma di cerniera che unisce per tutta la lunghezza i due cromosomi omologhi durante la profase I, permettendo il crossing-over.",
+    "universita": "Elementi laterali (SYCP2, SYCP3, sugli assi dei cromosomi), filamenti trasversali (SYCP1) ed elemento centrale. Si assembla in zigotene, è completo in pachitene e si smonta in diplotene. Serve a stabilizzare l'appaiamento e a trasformare alcune rotture del DNA in crossing-over.",
+    "clinica": "Mutazioni di SYCP3 sono state descritte in maschi con azoospermia e in donne con aborti ripetuti."
+  },
+  "cromatidi ricombinati (chiasmi)": {
+    "tipo": "struttura",
+    "base": "Le due copie della coppia si sono scambiate dei pezzi: ora i cromosomi sono un «mix» di quelli della mamma e del papà.",
+    "superiore": "Dopo il crossing-over, cromatidi non fratelli degli omologhi contengono pezzi scambiati. I punti di scambio si vedono come incroci a X (chiasmi) e tengono uniti gli omologhi fino all'anafase I.",
+    "universita": "Ogni coppia di omologhi ha almeno un crossing-over (crossover obbligatorio), necessario per una corretta separazione in anafase I. La frequenza di ricombinazione tra due geni misura la loro distanza (1% = 1 centimorgan) e il crossing-over produce associazioni nuove di alleli.",
+    "clinica": "Un crossing-over tra tratti ripetuti mal allineati (ricombinazione omologa non allelica) causa delezioni o duplicazioni: es. duplicazione di PMP22 (Charcot-Marie-Tooth 1A) o delezione (neuropatia ereditaria da pressione, HNPP)."
+  },
+  "Spo11 e ricombinasi (RAD51, DMC1)": {
+    "tipo": "enzima",
+    "base": "Gli aiutanti che tagliano i cromosomi in punti precisi e li fanno scambiare pezzi.",
+    "superiore": "Spo11 taglia apposta il DNA (rotture a doppio filamento); le ricombinasi RAD51 e DMC1 fanno cercare al filamento tagliato il pezzo corrispondente sull'omologo, così avviene lo scambio (crossing-over).",
+    "universita": "Spo11 è simile a una topoisomerasi di tipo II e resta legata covalentemente al DNA; le estremità vengono resecate e i filamenti singoli rivestiti da RAD51 e da DMC1 (specifica della meiosi) invadono l'omologo. Si formano giunzioni di Holliday doppie, risolte in crossover (es. MutLγ) o in non-crossover. Si fanno molte più rotture che crossover.",
+    "clinica": "RAD51 ripara il DNA anche nelle cellule somatiche (ricombinazione omologa, con BRCA1 e BRCA2): i tumori con BRCA mutato non riparano bene e sono sensibili agli inibitori di PARP (olaparib) e ai derivati del platino."
+  },
+  "omologhi sulla piastra (metafase I)": {
+    "tipo": "struttura",
+    "base": "Le coppie di cromosomi si mettono in fila al centro della cellula: per ogni coppia, a caso, quello della mamma va da una parte e quello del papà dall'altra.",
+    "superiore": "Metafase I: le tetradi si allineano sul piano equatoriale. I due cinetocori dei cromatidi fratelli guardano lo stesso polo, l'omologo guarda il polo opposto. L'orientamento di ogni coppia è casuale (assortimento indipendente, seconda legge di Mendel).",
+    "universita": "I cinetocori fratelli sono co-orientati (monorientamento) e la tensione è data dai chiasmi. Nell'uomo 2²³ = 8.388.608 combinazioni possibili per gamete, senza contare il crossing-over.",
+    "clinica": ""
+  },
+  "fuso meiotico": {
+    "tipo": "struttura",
+    "base": "La «ragnatela» di fili che, nella meiosi, separa prima le coppie di cromosomi e poi le loro copie.",
+    "superiore": "Fuso di microtubuli che si forma nella meiosi I e di nuovo nella meiosi II. Nella meiosi I separa gli omologhi, nella meiosi II i cromatidi fratelli.",
+    "universita": "Nello spermatocita parte dai centrosomi come nella mitosi. Negli ovociti di mammifero (anche umani) il fuso si forma senza centrosomi, dai cromosomi stessi e da centri di organizzazione acentriolari, e si sposta vicino alla membrana per permettere la divisione diseguale (globuli polari).",
+    "clinica": "Il fuso dell'ovocita umano è poco stabile: gli errori di separazione negli ovociti sono molto più frequenti che negli spermatociti e aumentano con l'età materna."
+  },
+  "omologhi separati (anafase I)": {
+    "tipo": "struttura",
+    "base": "I cromosomi della coppia si separano: uno va da una parte, l'altro dall'altra, ma ognuno resta «doppio».",
+    "superiore": "Anafase I: gli omologhi di ogni coppia migrano ai poli opposti; i cromatidi fratelli restano uniti al centromero. È la divisione che dimezza il numero di cromosomi (riduzionale).",
+    "universita": "La separasi taglia REC8 sui bracci (liberando i chiasmi) ma non al centromero, protetto da shugoshina 2 (SGO2) con PP2A, che tiene REC8 defosforilata. Nell'ovocita l'anafase I avviene con lo stimolo dell'LH, poco prima dell'ovulazione.",
+    "clinica": "La maggior parte delle trisomie 21 di origine materna nasce da una non-disgiunzione in anafase I."
+  },
+  "due cellule aploidi (n, cromosomi doppi)": {
+    "tipo": "struttura",
+    "base": "Dopo la prima divisione ci sono due cellule con metà dei cromosomi, ma ognuno è ancora «doppio».",
+    "superiore": "Fine della meiosi I: due cellule con 23 cromosomi (n), ognuno ancora formato da due cromatidi. Nel maschio: spermatociti secondari; nella femmina: ovocita secondario (grande) e primo globulo polare (piccolo).",
+    "universita": "Contenuto di DNA 2c (n cromosomi × 2 cromatidi). Tra meiosi I e II c'è una breve intercinesi senza replicazione del DNA. Per la divisione diseguale, l'ovocita secondario tiene quasi tutto il citoplasma.",
+    "clinica": ""
+  },
+  "cromosomi sulla piastra (metafase II)": {
+    "tipo": "struttura",
+    "base": "Nelle due nuove cellule i cromosomi si mettono di nuovo in fila al centro.",
+    "superiore": "Metafase II: in ciascuna cellula aploide i cromosomi (con due cromatidi) si allineano sul piano equatoriale, con i cinetocori dei cromatidi fratelli rivolti a poli opposti, come in una mitosi.",
+    "universita": "Ora i cinetocori fratelli sono biorientati. L'ovocita secondario viene ovulato bloccato in metafase II (fattore citostatico, con Emi2 che inibisce l'APC/C) e completa la meiosi solo se viene fecondato.",
+    "clinica": ""
+  },
+  "cromatidi separati (anafase II)": {
+    "tipo": "struttura",
+    "base": "Le due copie di ogni cromosoma si staccano e vanno ai due lati della cellula.",
+    "superiore": "Anafase II: i cromatidi fratelli si separano e migrano ai poli opposti. È una divisione equazionale, come la mitosi, ma in cellule aploidi.",
+    "universita": "La shugoshina non protegge più la REC8 centromerica (si ridistribuisce e PP2A non la difende più), così la separasi la taglia. Nell'ovocita l'anafase II è innescata dalla fecondazione: le oscillazioni di Ca²⁺ fanno degradare Emi2 e attivano l'APC/C; si forma il secondo globulo polare.",
+    "clinica": ""
+  },
+  "quattro gameti aploidi (n)": {
+    "tipo": "struttura",
+    "base": "Alla fine ci sono 4 cellule con metà delle istruzioni, ognuna un po' diversa dalle altre: sono le cellule per fare un bambino.",
+    "superiore": "Prodotto finale della meiosi: 4 cellule aploidi (n = 23 nell'uomo), con cromosomi a un solo cromatidio e combinazioni di geni diverse. Nel maschio 4 spermatidi; nella femmina 1 cellula uovo e i globuli polari.",
+    "universita": "Contenuto di DNA 1c. Gli spermatidi diventano spermatozoi con la spermiogenesi (acrosoma, flagello, condensazione del nucleo con protamine). Gli spermatozoi contengono 22 autosomi + X oppure + Y; la cellula uovo sempre 22 + X.",
+    "clinica": ""
+  },
+  "zigote (2n)": {
+    "tipo": "struttura",
+    "base": "La prima cellula di un nuovo individuo, nata dall'unione della cellula del papà e di quella della mamma.",
+    "superiore": "Cellula diploide (2n = 46 nell'uomo) che si forma con la fecondazione: metà dei cromosomi viene dallo spermatozoo e metà dalla cellula uovo. Con le mitosi forma l'embrione.",
+    "universita": "I due pronuclei (maschile e femminile) replicano il DNA separatamente e poi i loro cromosomi si uniscono sul primo fuso mitotico (non c'è una vera fusione dei pronuclei nell'uomo). Il centrosoma dello zigote deriva dallo spermatozoo; i mitocondri solo dalla madre.",
+    "clinica": "Fecondazione da parte di due spermatozoi (dispermia): triploidia (69 cromosomi). Mola idatiforme completa: zigote con soli cromosomi paterni (di solito 46,XX)."
+  },
+  "fecondazione": {
+    "tipo": "struttura",
+    "base": "L'incontro tra lo spermatozoo e la cellula uovo, che si uniscono in una sola cellula.",
+    "superiore": "Unione di due gameti aploidi (spermatozoo e cellula uovo) che forma lo zigote diploide. Nell'uomo avviene di solito nella tuba di Falloppio (ampolla).",
+    "universita": "Fasi: capacitazione dello spermatozoo, legame alla zona pellucida e reazione acrosomiale, fusione delle membrane (Izumo1-Juno). L'ovocita si attiva con onde di Ca²⁺ (fosfolipasi Cζ dello spermatozoo): reazione corticale che blocca la polispermia e completamento della meiosi II.",
+    "clinica": "Procreazione medicalmente assistita: inseminazione, FIVET (fecondazione in provetta), ICSI (iniezione dello spermatozoo nell'ovocita) per infertilità maschile grave."
+  },
+  "gamete aneuploide (n+1 o n−1)": {
+    "tipo": "struttura",
+    "base": "Una cellula per fare un bambino che ha per errore un cromosoma in più o in meno.",
+    "superiore": "Gamete con 24 (n+1) o 22 (n−1) cromosomi invece di 23. Se viene fecondato, lo zigote avrà 47 cromosomi (trisomia) o 45 (monosomia).",
+    "universita": "L'aneuploidia degli ovociti è frequente e aumenta molto con l'età; è la causa più comune di aborto spontaneo nel primo trimestre (la trisomia 16 è la più frequente negli aborti). Nascono vivi soprattutto trisomia 21, 18, 13 e le aneuploidie dei cromosomi sessuali; l'unica monosomia compatibile con la vita è la 45,X.",
+    "clinica": "Sindromi: Down (47,+21), Edwards (47,+18), Patau (47,+13), Klinefelter (47,XXY), Turner (45,X). Screening prenatale: test combinato del primo trimestre (translucenza nucale, PAPP-A, β-hCG libera) e DNA fetale nel sangue materno (NIPT); diagnosi con villocentesi o amniocentesi."
+  },
+  "non-disgiunzione": {
+    "tipo": "struttura",
+    "base": "Un errore: due cromosomi che dovevano separarsi restano insieme e finiscono nella stessa cellula.",
+    "superiore": "Mancata separazione degli omologhi (in anafase I) o dei cromatidi fratelli (in anafase II o in mitosi). Produce cellule con un cromosoma in più e cellule con uno in meno.",
+    "universita": "Cause: assenza o posizione sfavorevole dei crossing-over, perdita della coesina con l'età nell'ovocita, separazione precoce dei cromatidi fratelli, errori del fuso. Se avviene in una mitosi dopo la fecondazione produce un mosaicismo (parte delle cellule normali).",
+    "clinica": "Trisomia 21 (circa 1 nato su 700): circa il 95% è libera da non-disgiunzione, per lo più materna e in meiosi I; il rischio cresce con l'età materna. Il resto è da traslocazione robertsoniana (ricorrenza familiare) o a mosaico."
+  },
+  "cromosomi omologhi": {
+    "tipo": "struttura",
+    "base": "Due cromosomi della stessa coppia: uno arriva dalla mamma e uno dal papà. Hanno le stesse istruzioni, ma a volte in «versioni» diverse.",
+    "superiore": "Coppia di cromosomi con gli stessi geni nella stessa posizione (stessi loci), uno di origine materna e uno paterna; possono portare alleli diversi. Nell'uomo 23 coppie: 22 di autosomi e i cromosomi sessuali.",
+    "universita": "Non sono identici come i cromatidi fratelli: differiscono per molte varianti di sequenza. X e Y sono omologhi solo nelle regioni pseudoautosomiche (PAR1 e PAR2), dove avvengono appaiamento e crossing-over nel maschio.",
+    "clinica": "Disomia uniparentale: entrambi gli omologhi vengono dallo stesso genitore (es. due cromosomi 15 materni: sindrome di Prader-Willi; due paterni: sindrome di Angelman), per l'imprinting genomico."
+  },
+  "shugoshina": {
+    "tipo": "struttura",
+    "base": "Il «guardiano» che protegge la colla al centro del cromosoma, così le due copie restano unite fino alla seconda divisione.",
+    "superiore": "Proteina che protegge la coesina del centromero durante la meiosi I: permette di separare prima gli omologhi e solo dopo, nella meiosi II, i cromatidi fratelli. Il nome viene dal giapponese «spirito guardiano».",
+    "universita": "Nei mammiferi SGO2 (meiosi) e SGO1 (mitosi). Recluta la fosfatasi PP2A, che mantiene defosforilata la REC8 centromerica e quindi non tagliabile dalla separasi. Nella mitosi protegge la coesina centromerica dalla via di rimozione della profase.",
+    "clinica": "Negli ovociti di donne più anziane la protezione del centromero si riduce: i cromatidi possono separarsi troppo presto, una delle cause proposte dell'aumento delle aneuploidie con l'età."
+  },
+  "spermatogenesi": {
+    "tipo": "struttura",
+    "base": "Il modo in cui i testicoli producono gli spermatozoi, continuamente, dalla pubertà in poi.",
+    "superiore": "Formazione degli spermatozoi nei tubuli seminiferi: spermatogoni (mitosi) → spermatociti primari (meiosi I) → spermatociti secondari (meiosi II) → 4 spermatidi → spermatozoi (spermiogenesi). Da ogni spermatocita primario nascono 4 spermatozoi.",
+    "universita": "Sostenuta dalle cellule del Sertoli (barriera emato-testicolare, stimolate da FSH) e dal testosterone delle cellule di Leydig (stimolate da LH). Il ciclo completo dura circa 70 giorni. Le cellule figlie restano unite da ponti citoplasmatici fino alla spermiazione.",
+    "clinica": "Sindrome di Klinefelter (47,XXY) e microdelezioni del cromosoma Y (regioni AZF): cause genetiche di azoospermia. Chemioterapia e radioterapia possono distruggere la spermatogenesi: si propone la crioconservazione del seme prima delle cure."
+  },
+  "ovogenesi": {
+    "tipo": "struttura",
+    "base": "Il modo in cui le ovaie preparano le cellule uovo: tutte le «scorte» si formano prima della nascita.",
+    "superiore": "Formazione della cellula uovo: ovogoni (mitosi, nella vita fetale) → ovociti primari (bloccati in profase I) → a ogni ciclo, dopo la pubertà, un ovocita completa la meiosi I (ovocita secondario + primo globulo polare) e si ferma in metafase II fino alla fecondazione. Da ogni ovocita primario nasce una sola cellula uovo.",
+    "universita": "Gli ovociti primari, nei follicoli primordiali, restano in dittiotene anche 40-50 anni. Alla nascita ce ne sono circa 1-2 milioni, alla pubertà circa 400.000; ne vengono ovulati solo circa 400-500 nella vita. La ripresa della meiosi I è innescata dal picco di LH.",
+    "clinica": "Il rischio di trisomie aumenta con l'età materna, soprattutto dopo i 35 anni. Insufficienza ovarica precoce (es. premutazione del gene FMR1, sindrome di Turner)."
+  },
+  "globuli polari": {
+    "tipo": "struttura",
+    "base": "Piccole cellule «di scarto» che si formano quando nasce la cellula uovo: servono solo a buttare via i cromosomi in più.",
+    "superiore": "Piccole cellule che si staccano dall'ovocita nella meiosi femminile: il primo alla fine della meiosi I, il secondo alla fine della meiosi II (dopo la fecondazione). Contengono cromosomi ma pochissimo citoplasma e degenerano.",
+    "universita": "La divisione diseguale lascia all'ovocita quasi tutto il citoplasma (riserve, mitocondri, mRNA materni) necessario all'embrione. Il primo globulo polare può dividersi ancora o no. Analizzando i globuli polari si deduce indirettamente il corredo cromosomico dell'ovocita.",
+    "clinica": "La biopsia dei globuli polari è una delle tecniche di diagnosi genetica preimpianto (PGT) nella fecondazione assistita."
+  }
+}

@@ -1,0 +1,989 @@
+[
+ {
+  "id": "NMED-081",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Con [K⁺] extracellulare = 5 mM e intracellulare = 140 mM a 37 °C, qual è il potenziale di equilibrio del potassio? (E = 61,5 mV · log(Cₑ/Cᵢ) per ioni monovalenti positivi)",
+  "opzioni": {
+   "A": "+89 mV",
+   "B": "−61 mV",
+   "C": "Circa −89 mV",
+   "D": "−70 mV",
+   "E": "0 mV"
+  },
+  "giusta": "C",
+  "perche": "Con l'equazione di Nernst: E_K = 61,5 · log(5/140) = 61,5 · log(0,0357) = 61,5 · (−1,447) ≈ −89 mV. Il segno è negativo perché il K⁺ è più concentrato dentro e tende a uscire, lasciando l'interno negativo. Il potenziale di riposo reale (circa −70 mV) è meno negativo di E_K perché la membrana è un po' permeabile anche al Na⁺.",
+  "semplice": "Il potassio vuole uscire dalla cellula perché dentro ce n'è molto di più. Il potenziale di equilibrio è la «forza elettrica» che bilancia questa spinta: circa −89 mV.",
+  "passaggi": [
+   "Scrivi la formula: E = 61,5 · log(Cₑ/Cᵢ)",
+   "Rapporto: 5 / 140 ≈ 0,0357",
+   "log 0,0357 ≈ −1,447",
+   "E_K = 61,5 · (−1,447) ≈ −89 mV"
+  ],
+  "concetto": "Equazione di Nernst"
+ },
+ {
+  "id": "NMED-082",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Quale evento causa la fase di depolarizzazione rapida del potenziale d'azione in un neurone?",
+  "opzioni": {
+   "A": "L'apertura dei canali Na⁺ voltaggio-dipendenti con ingresso di sodio",
+   "B": "L'apertura dei canali K⁺ con uscita di potassio",
+   "C": "L'attività della pompa Na⁺/K⁺-ATPasi",
+   "D": "L'ingresso di Cl⁻",
+   "E": "La chiusura dei canali di fuga del potassio"
+  },
+  "giusta": "A",
+  "perche": "Quando la membrana raggiunge la soglia, i canali Na⁺ voltaggio-dipendenti si aprono in modo rapido e con feedback positivo: il Na⁺ entra seguendo il gradiente elettrochimico e il potenziale sale verso E_Na. La ripolarizzazione dipende dall'inattivazione di questi canali e dall'apertura, più lenta, dei canali K⁺. La pompa Na⁺/K⁺ mantiene i gradienti nel lungo periodo ma non genera il singolo potenziale d'azione.",
+  "semplice": "La depolarizzazione è come una valanga: un po' di sodio entra, la membrana diventa meno negativa, si aprono altri canali del sodio e ne entra ancora di più, finché il segnale è partito.",
+  "passaggi": [
+   "Ricorda le fasi: soglia, depolarizzazione, ripolarizzazione, iperpolarizzazione",
+   "Associa la depolarizzazione all'ingresso di Na⁺",
+   "Associa la ripolarizzazione all'uscita di K⁺",
+   "Escludi C: la pompa non genera il picco",
+   "Scegli A"
+  ],
+  "concetto": "Basi ioniche del potenziale d'azione"
+ },
+ {
+  "id": "NMED-083",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Che cosa rende la conduzione saltatoria più veloce nelle fibre mieliniche?",
+  "opzioni": {
+   "A": "La mielina contiene canali Na⁺ in grande quantità",
+   "B": "La mielina aumenta la resistenza interna dell'assone",
+   "C": "Gli assoni mielinici sono sempre più sottili",
+   "D": "Il neurotrasmettitore viene liberato lungo tutto l'assone",
+   "E": "Il potenziale d'azione si rigenera solo ai nodi di Ranvier, dove sono concentrati i canali Na⁺"
+  },
+  "giusta": "E",
+  "perche": "La mielina isola l'assone, aumentandone la resistenza di membrana e riducendo la capacità: la corrente si propaga passivamente sotto la guaina con poche perdite fino al nodo successivo. I canali Na⁺ voltaggio-dipendenti sono concentrati nei nodi di Ranvier, dove il potenziale viene rigenerato; così il segnale «salta» da nodo a nodo. Nelle malattie demielinizzanti come la sclerosi multipla la conduzione rallenta o si blocca.",
+  "semplice": "È come un treno espresso che si ferma solo nelle stazioni principali (i nodi) invece che in ogni paese: arriva molto prima a destinazione.",
+  "passaggi": [
+   "Ricorda il ruolo isolante della mielina",
+   "Ricorda dove si concentrano i canali Na⁺: ai nodi",
+   "Collega: rigenerazione solo ai nodi, quindi salto",
+   "Escludi A: sotto la mielina i canali sono scarsi",
+   "Scegli E"
+  ],
+  "concetto": "Conduzione saltatoria"
+ },
+ {
+  "id": "NMED-084",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Qual è la causa del periodo refrattario assoluto?",
+  "opzioni": {
+   "A": "L'esaurimento del neurotrasmettitore",
+   "B": "L'arresto della pompa Na⁺/K⁺",
+   "C": "La concentrazione di K⁺ esterna troppo bassa",
+   "D": "L'inattivazione dei canali Na⁺ voltaggio-dipendenti, che non possono riaprirsi finché la membrana non si ripolarizza",
+   "E": "L'apertura dei canali Cl⁻"
+  },
+  "giusta": "D",
+  "perche": "Dopo l'apertura, i canali Na⁺ passano allo stato inattivato (chiusura del «cancello di inattivazione»), da cui non possono riaprirsi qualunque sia lo stimolo; tornano attivabili solo quando la membrana si ripolarizza. Durante questo intervallo un nuovo potenziale d'azione è impossibile (periodo refrattario assoluto). Nel periodo relativo serve invece uno stimolo più forte, perché molti canali K⁺ sono ancora aperti. Questo garantisce la propagazione in una sola direzione.",
+  "semplice": "Dopo aver suonato, un campanello ha bisogno di qualche istante per ricaricarsi: in quel momento non suona anche se premi il pulsante. I canali del sodio funzionano allo stesso modo.",
+  "passaggi": [
+   "Ricorda i tre stati del canale Na⁺: chiuso, aperto, inattivato",
+   "Nello stato inattivato il canale non risponde",
+   "Collega questo stato al periodo refrattario assoluto",
+   "Escludi B: la pompa non serve al singolo potenziale",
+   "Scegli D"
+  ],
+  "concetto": "Periodo refrattario"
+ },
+ {
+  "id": "NMED-085",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Quale evento innesca direttamente la fusione delle vescicole sinaptiche con la membrana presinaptica?",
+  "opzioni": {
+   "A": "L'ingresso di Cl⁻ nel terminale",
+   "B": "L'ingresso di Ca²⁺ attraverso canali voltaggio-dipendenti",
+   "C": "La ricaptazione del neurotrasmettitore",
+   "D": "L'idrolisi dell'acetilcolina",
+   "E": "L'uscita di K⁺ dal terminale"
+  },
+  "giusta": "B",
+  "perche": "Il potenziale d'azione che arriva al terminale apre canali Ca²⁺ voltaggio-dipendenti; il calcio entra e si lega alla sinaptotagmina, che con le proteine SNARE avvia la fusione delle vescicole e l'esocitosi del neurotrasmettitore. Le tossine botulinica e tetanica tagliano proprio le SNARE e bloccano il rilascio. Ricaptazione e degradazione servono invece a terminare il segnale.",
+  "semplice": "Il calcio è il «via libera» alla porta del neurone: quando entra, le vescicole si aprono verso l'esterno e versano il messaggio chimico nella sinapsi.",
+  "passaggi": [
+   "Ricorda la sequenza: potenziale d'azione → canali Ca²⁺ → esocitosi",
+   "Ricorda il sensore del calcio: sinaptotagmina",
+   "Escludi C e D, che terminano la trasmissione",
+   "Scegli B"
+  ],
+  "concetto": "Rilascio del neurotrasmettitore"
+ },
+ {
+  "id": "NMED-086",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Il GABA, legandosi ai recettori GABA-A, produce di solito un potenziale postsinaptico inibitorio. Con quale meccanismo?",
+  "opzioni": {
+   "A": "Apre un canale per il Cl⁻, che entra e iperpolarizza o stabilizza la membrana",
+   "B": "Apre un canale per il Na⁺, che depolarizza",
+   "C": "Chiude i canali K⁺",
+   "D": "Attiva una proteina G che aumenta l'AMP ciclico",
+   "E": "Blocca i canali Ca²⁺ presinaptici della stessa cellula"
+  },
+  "giusta": "A",
+  "perche": "Il recettore GABA-A è un canale ionotropico permeabile al cloro: nei neuroni maturi E_Cl è vicino o più negativo del potenziale di riposo, quindi l'ingresso di Cl⁻ iperpolarizza o «blocca» la membrana vicino al riposo, allontanandola dalla soglia. Benzodiazepine e barbiturici potenziano questo recettore. Il GABA-B è invece metabotropico e agisce tramite proteine G.",
+  "semplice": "Il GABA è il freno del cervello: apre una porta per il cloro, che rende il neurone più difficile da eccitare. I farmaci ansiolitici rinforzano questo freno.",
+  "passaggi": [
+   "Ricorda che GABA-A è un canale ionotropico",
+   "Ricorda lo ione: Cl⁻",
+   "Collega: ingresso di Cl⁻ → iperpolarizzazione → inibizione",
+   "Escludi D, che descrive il GABA-B",
+   "Scegli A"
+  ],
+  "concetto": "Inibizione GABAergica"
+ },
+ {
+  "id": "NMED-087",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Che cosa si intende per sommazione temporale in un neurone postsinaptico?",
+  "opzioni": {
+   "A": "La somma di segnali da sinapsi diverse nello stesso istante",
+   "B": "La somma di potenziali d'azione lungo l'assone",
+   "C": "La somma dei potenziali postsinaptici prodotti da stimoli ravvicinati nel tempo dalla stessa sinapsi",
+   "D": "L'aumento del periodo refrattario",
+   "E": "La riduzione della risposta dopo stimolazioni ripetute"
+  },
+  "giusta": "C",
+  "perche": "I potenziali postsinaptici sono graduati e decadono in alcuni millisecondi; se un secondo stimolo dalla stessa sinapsi arriva prima che il primo si esaurisca, i due si sommano e possono raggiungere la soglia al cono di emergenza. La somma di segnali provenienti da sinapsi diverse in contemporanea si chiama invece sommazione spaziale. I potenziali d'azione, essendo «tutto o nulla», non si sommano.",
+  "semplice": "Se qualcuno bussa una volta piano non apri; se bussa piano tante volte di seguito, alla fine te ne accorgi. I piccoli segnali ravvicinati si sommano fino a superare la soglia.",
+  "passaggi": [
+   "Ricorda che i potenziali postsinaptici sono graduati",
+   "Temporale: stessa sinapsi, stimoli ravvicinati",
+   "Spaziale: sinapsi diverse, stesso momento",
+   "Escludi A (spaziale) e B (i PA non si sommano)",
+   "Scegli C"
+  ],
+  "concetto": "Sommazione temporale e spaziale"
+ },
+ {
+  "id": "NMED-088",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Un impulso percorre 0,6 m di assone motorio in 10 ms. Qual è la velocità di conduzione?",
+  "opzioni": {
+   "A": "6 m/s",
+   "B": "0,06 m/s",
+   "C": "600 m/s",
+   "D": "16,7 m/s",
+   "E": "60 m/s"
+  },
+  "giusta": "E",
+  "perche": "La velocità è la distanza divisa per il tempo: 0,6 m / 0,010 s = 60 m/s, valore tipico di una fibra mielinica di medio-grande calibro (fibre Aα arrivano a circa 100-120 m/s). L'errore più frequente è non convertire i millisecondi in secondi (0,6/10 = 0,06).",
+  "semplice": "Se in un centesimo di secondo il segnale percorre poco più di mezzo metro, in un secondo farebbe 60 metri: quanto un'auto veloce in città.",
+  "passaggi": [
+   "Dati: distanza 0,6 m, tempo 10 ms",
+   "Converti: 10 ms = 0,010 s",
+   "Formula: v = d / t",
+   "Calcolo: 0,6 / 0,010 = 60 m/s"
+  ],
+  "concetto": "Velocità di conduzione nervosa"
+ },
+ {
+  "id": "NMED-089",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Quale meccanismo termina l'azione dell'acetilcolina nella fessura della giunzione neuromuscolare?",
+  "opzioni": {
+   "A": "La ricaptazione nel terminale presinaptico da parte di un trasportatore specifico",
+   "B": "La degradazione enzimatica da parte dell'acetilcolinesterasi",
+   "C": "La diffusione nel sangue",
+   "D": "La fosforilazione da parte della PKA",
+   "E": "La degradazione da parte delle MAO mitocondriali"
+  },
+  "giusta": "B",
+  "perche": "L'acetilcolinesterasi, ancorata alla lamina basale della fessura, idrolizza l'acetilcolina in colina e acetato in pochi millisecondi; la colina viene poi ricaptata per la nuova sintesi. Al contrario, catecolamine e serotonina vengono rimosse soprattutto per ricaptazione e poi degradate da MAO e COMT. Gli inibitori dell'acetilcolinesterasi (per es. nella miastenia) prolungano l'effetto dell'acetilcolina.",
+  "semplice": "L'acetilcolina è un messaggio che va cancellato subito, altrimenti il muscolo resterebbe contratto. L'acetilcolinesterasi è la gomma che lo cancella in un attimo.",
+  "passaggi": [
+   "Ricorda come si termina l'azione di un neurotrasmettitore: degradazione, ricaptazione, diffusione",
+   "Per l'acetilcolina il meccanismo principale è enzimatico",
+   "L'enzima è l'acetilcolinesterasi",
+   "Escludi E, che riguarda le monoamine",
+   "Scegli B"
+  ],
+  "concetto": "Terminazione della trasmissione colinergica"
+ },
+ {
+  "id": "NMED-090",
+  "materia": "Anatomia e fisiologia umana",
+  "argomento": "Neurofisiologia: potenziale d'azione e sinapsi",
+  "livello": "università",
+  "domanda": "Che cosa caratterizza una sinapsi elettrica rispetto a una chimica?",
+  "opzioni": {
+   "A": "Usa neurotrasmettitori a basso peso molecolare",
+   "B": "È sempre unidirezionale e lenta",
+   "C": "Richiede l'ingresso di calcio nel terminale",
+   "D": "Collega direttamente i citoplasmi tramite giunzioni comunicanti (connessoni) e trasmette quasi senza ritardo",
+   "E": "Può solo inibire il neurone successivo"
+  },
+  "giusta": "D",
+  "perche": "Nelle sinapsi elettriche i connessoni, formati da connessine, creano pori tra due cellule adiacenti: gli ioni passano direttamente e la corrente si trasmette quasi istantaneamente, spesso in entrambe le direzioni. Questo serve a sincronizzare gruppi di cellule, come nel miocardio e in alcuni circuiti neuronali. Le sinapsi chimiche invece hanno un ritardo sinaptico (circa 0,5 ms), richiedono calcio e sono unidirezionali.",
+  "semplice": "Una sinapsi elettrica è come un corridoio che unisce due stanze: chi passa arriva subito. Quella chimica è come spedire una lettera: c'è un po' di attesa, ma il messaggio si può modulare.",
+  "passaggi": [
+   "Ricorda la struttura: giunzioni gap con connessoni",
+   "Conseguenza: passaggio diretto di ioni, ritardo minimo",
+   "Spesso bidirezionale",
+   "Escludi A, B, C, tipiche della sinapsi chimica",
+   "Scegli D"
+  ],
+  "concetto": "Sinapsi elettriche"
+ },
+ {
+  "id": "NMED-091",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "In quale fase del ciclo cellulare avviene la duplicazione del DNA?",
+  "opzioni": {
+   "A": "Fase G1",
+   "B": "Fase S",
+   "C": "Fase G2",
+   "D": "Profase",
+   "E": "Anafase"
+  },
+  "giusta": "B",
+  "perche": "L'interfase comprende G1 (crescita e preparazione), S (sintesi: il DNA si replica e ogni cromosoma passa da una a due cromatidi) e G2 (controllo e preparazione alla mitosi). Profase e anafase appartengono alla fase M, quando il DNA è già duplicato. Un errore comune è pensare che la duplicazione avvenga durante la mitosi.",
+  "semplice": "Prima di dividersi in due, la cellula deve fare una copia completa delle sue «istruzioni». Lo fa con calma durante la fase S, molto prima che si veda la divisione.",
+  "passaggi": [
+   "Ricorda le fasi dell'interfase: G1, S, G2",
+   "S significa sintesi del DNA",
+   "Escludi D ed E, fasi della mitosi",
+   "Scegli B"
+  ],
+  "concetto": "Fase S e replicazione"
+ },
+ {
+  "id": "NMED-092",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Una cellula umana in G1 contiene 46 cromosomi e una quantità di DNA indicata con 2C. Quanti cromosomi e quanto DNA ha la stessa cellula in G2?",
+  "opzioni": {
+   "A": "92 cromosomi, 4C",
+   "B": "23 cromosomi, 2C",
+   "C": "46 cromosomi, 2C",
+   "D": "92 cromosomi, 2C",
+   "E": "46 cromosomi, ciascuno con due cromatidi, 4C"
+  },
+  "giusta": "E",
+  "perche": "Nella fase S ogni cromosoma si duplica, ma i due cromatidi fratelli restano uniti dal centromero: il numero di cromosomi resta 46 mentre la quantità di DNA raddoppia a 4C. I cromatidi si separano solo in anafase, quando per un breve momento si contano 92 cromosomi nella stessa cellula. Chi risponde 92 in G2 confonde cromatidi e cromosomi.",
+  "semplice": "Dopo la fase S ogni cromosoma è come una coppia di gemelli che si tengono per mano: sono due copie, ma contano ancora come un solo cromosoma finché non si separano.",
+  "passaggi": [
+   "Ricorda che in fase S il DNA raddoppia: da 2C a 4C",
+   "Ricorda che i cromatidi fratelli restano uniti",
+   "Il numero di cromosomi si conta dai centromeri: resta 46",
+   "Scegli E"
+  ],
+  "concetto": "Cromosomi, cromatidi e quantità di DNA"
+ },
+ {
+  "id": "NMED-093",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Quale proteina, detta «guardiano del genoma», blocca il ciclo in G1 o induce l'apoptosi quando il DNA è danneggiato?",
+  "opzioni": {
+   "A": "p53",
+   "B": "Ras",
+   "C": "Ciclina D",
+   "D": "Telomerasi",
+   "E": "Myc"
+  },
+  "giusta": "A",
+  "perche": "p53 è un fattore di trascrizione che si accumula quando il DNA è danneggiato: attiva p21, che inibisce i complessi ciclina-CDK e ferma il ciclo, e se il danno è irreparabile attiva geni dell'apoptosi. È un oncosoppressore mutato in circa metà dei tumori umani. Ras, Myc e ciclina D favoriscono invece la proliferazione e sono legati a proto-oncogeni.",
+  "semplice": "p53 è come un ispettore di qualità: se trova un difetto nel DNA ferma la catena di montaggio per ripararlo, e se il difetto è troppo grave fa «autodistruggere» la cellula.",
+  "passaggi": [
+   "Riconosci il soprannome: guardiano del genoma",
+   "Associa p53 a blocco del ciclo e apoptosi",
+   "Classificalo come oncosoppressore",
+   "Escludi B, C, E, che spingono la proliferazione",
+   "Scegli A"
+  ],
+  "concetto": "p53 oncosoppressore"
+ },
+ {
+  "id": "NMED-094",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Che cosa distingue un proto-oncogene da un gene oncosoppressore?",
+  "opzioni": {
+   "A": "I proto-oncogeni esistono solo nei virus",
+   "B": "Gli oncosoppressori diventano tumorali per mutazioni che li rendono iperattivi",
+   "C": "Un proto-oncogene mutato in modo attivante (oncogene) promuove la proliferazione, spesso con una sola copia alterata; un oncosoppressore agisce da freno e di solito va perso in entrambe le copie",
+   "D": "Entrambi agiscono solo durante la mitosi",
+   "E": "Non c'è differenza: sono sinonimi"
+  },
+  "giusta": "C",
+  "perche": "I proto-oncogeni codificano proteine che stimolano normalmente la crescita (recettori, Ras, fattori di trascrizione); una mutazione attivante in un solo allele basta a farli agire come «acceleratore bloccato» (effetto dominante). Gli oncosoppressori come p53 e RB sono «freni»: per perdere la funzione servono di norma due eventi, uno per allele (ipotesi dei due colpi). I proto-oncogeni sono geni normali delle nostre cellule, non solo virali.",
+  "semplice": "Il proto-oncogene è l'acceleratore: se si incastra premuto, l'auto corre anche con un solo pedale guasto. L'oncosoppressore è il freno: per perderlo bisogna rompere entrambi i freni di sicurezza.",
+  "passaggi": [
+   "Ricorda la funzione normale: acceleratore contro freno",
+   "Ricorda il tipo di mutazione: guadagno di funzione contro perdita",
+   "Ricorda il numero di alleli coinvolti: uno contro due",
+   "Escludi B, che inverte i concetti",
+   "Scegli C"
+  ],
+  "concetto": "Oncogeni e oncosoppressori"
+ },
+ {
+  "id": "NMED-095",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Qual è il ruolo dei complessi ciclina-CDK nel ciclo cellulare?",
+  "opzioni": {
+   "A": "Duplicano il DNA come la DNA polimerasi",
+   "B": "Formano il fuso mitotico",
+   "C": "Degradano i cromosomi alla fine della mitosi",
+   "D": "Fosforilano proteine bersaglio che fanno avanzare la cellula da una fase all'altra",
+   "E": "Producono ATP per la divisione"
+  },
+  "giusta": "D",
+  "perche": "Le chinasi ciclina-dipendenti (CDK) sono presenti per tutto il ciclo ma diventano attive solo legandosi alle cicline, la cui quantità sale e scende nelle varie fasi. I complessi attivi fosforilano proteine come RB, che libera il fattore E2F e permette l'ingresso in fase S, o proteine della mitosi. La distruzione programmata delle cicline spegne la CDK e permette di passare alla fase successiva.",
+  "semplice": "Le CDK sono motori e le cicline le chiavi: ogni fase del ciclo ha la sua chiave, che accende il motore giusto e poi viene buttata via per passare alla fase dopo.",
+  "passaggi": [
+   "Ricorda che le CDK sono chinasi: fosforilano proteine",
+   "Ricorda che si attivano legando le cicline",
+   "Collega fosforilazione e passaggio di fase (es. RB in G1/S)",
+   "Escludi A, B, C, E",
+   "Scegli D"
+  ],
+  "concetto": "Regolazione con cicline e CDK"
+ },
+ {
+  "id": "NMED-096",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "In un tessuto in coltura il ciclo cellulare dura 20 ore e, osservando al microscopio, il 5% delle cellule si trova in mitosi. Quanto dura approssimativamente la fase M?",
+  "opzioni": {
+   "A": "5 ore",
+   "B": "4 ore",
+   "C": "10 minuti",
+   "D": "2 ore",
+   "E": "1 ora"
+  },
+  "giusta": "E",
+  "perche": "Se le cellule si dividono in modo asincrono, la frazione che si trova in una fase è proporzionale alla durata di quella fase. Quindi durata di M ≈ 0,05 · 20 h = 1 h. È il principio dell'indice mitotico. Rispondere 5 ore significa confondere la percentuale con un numero di ore.",
+  "semplice": "Se in una giornata passi un'ora a mangiare, in una foto scattata a caso hai circa una possibilità su 24 di essere a tavola. Allo stesso modo, la percentuale di cellule in mitosi indica quanto tempo dura la mitosi.",
+  "passaggi": [
+   "Dati: ciclo 20 h, indice mitotico 5%",
+   "Ricorda: frazione di cellule = frazione di tempo",
+   "Calcolo: 0,05 · 20 h = 1 h",
+   "Risultato: circa 1 ora"
+  ],
+  "concetto": "Indice mitotico e durata delle fasi"
+ },
+ {
+  "id": "NMED-097",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Quale punto di controllo impedisce l'inizio dell'anafase finché tutti i cromosomi non sono attaccati correttamente al fuso?",
+  "opzioni": {
+   "A": "Il punto di controllo G1/S",
+   "B": "Il punto di controllo della fase S",
+   "C": "Il punto di restrizione",
+   "D": "Il punto di controllo del fuso (metafase/anafase)",
+   "E": "Il punto di controllo G0"
+  },
+  "giusta": "D",
+  "perche": "Il punto di controllo del fuso verifica che ogni cinetocore sia legato ai microtubuli e sotto tensione; finché anche uno solo è libero, viene inibito il complesso APC/C, che deve degradare la securina e permettere alla separasi di tagliare le coesine. Così si evitano cromosomi in più o in meno (aneuploidie). Il punto G1/S controlla invece l'integrità del DNA e le condizioni per replicarlo.",
+  "semplice": "Prima di tirare i cromosomi ai due poli la cellula fa l'appello: se anche un solo cromosoma non è agganciato, aspetta. Così ogni cellula figlia riceve la serie completa.",
+  "passaggi": [
+   "Riconosci il momento: passaggio metafase → anafase",
+   "Ricorda cosa si controlla: attacco dei cinetocori",
+   "Nomina il punto di controllo del fuso",
+   "Escludi A e C, che sono in G1",
+   "Scegli D"
+  ],
+  "concetto": "Punto di controllo del fuso"
+ },
+ {
+  "id": "NMED-098",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Perché la maggior parte delle cellule tumorali può dividersi indefinitamente, mentre le cellule somatiche normali si fermano dopo un certo numero di divisioni?",
+  "opzioni": {
+   "A": "Perché non replicano il DNA",
+   "B": "Perché riattivano la telomerasi e mantengono la lunghezza dei telomeri",
+   "C": "Perché perdono il nucleo",
+   "D": "Perché non hanno centromeri",
+   "E": "Perché usano solo la meiosi"
+  },
+  "giusta": "B",
+  "perche": "A ogni replicazione le estremità dei cromosomi (telomeri) si accorciano, perché la DNA polimerasi non riesce a copiare fino in fondo il filamento ritardato; quando diventano troppo corti la cellula entra in senescenza. Circa l'85-90% dei tumori riattiva la telomerasi, una trascrittasi inversa che allunga i telomeri, e diventa così «immortale». Le cellule staminali e germinali hanno normalmente telomerasi attiva.",
+  "semplice": "I telomeri sono come la punta di plastica dei lacci delle scarpe: si consumano un po' a ogni divisione. Le cellule tumorali hanno un «rinforzatore» che rifà la punta, e così non si fermano mai.",
+  "passaggi": [
+   "Ricorda il problema della replicazione delle estremità",
+   "Ricorda che telomeri corti portano a senescenza",
+   "Ricorda che la telomerasi allunga i telomeri",
+   "Collega: le cellule tumorali la riattivano",
+   "Scegli B"
+  ],
+  "concetto": "Telomeri e immortalità tumorale"
+ },
+ {
+  "id": "NMED-099",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Quale caratteristica distingue un tumore maligno da uno benigno?",
+  "opzioni": {
+   "A": "Il tumore maligno cresce sempre più lentamente",
+   "B": "Il tumore benigno dà metastasi ma non invade i tessuti",
+   "C": "Il tumore maligno invade i tessuti vicini e può dare metastasi a distanza",
+   "D": "Il tumore benigno è sempre di origine virale",
+   "E": "Solo il tumore benigno contiene mutazioni"
+  },
+  "giusta": "C",
+  "perche": "Un tumore maligno (cancro) invade i tessuti circostanti superando la membrana basale e può diffondersi tramite vasi sanguigni e linfatici, formando metastasi. Un tumore benigno resta localizzato, spesso circondato da una capsula, e non dà metastasi, anche se può creare problemi comprimendo organi vicini. Entrambi derivano da mutazioni nelle cellule.",
+  "semplice": "Un tumore benigno è come un ospite ingombrante che resta nella sua stanza; uno maligno sfonda le pareti e manda «colonie» in altre stanze della casa.",
+  "passaggi": [
+   "Ricorda le caratteristiche di malignità: invasione e metastasi",
+   "Escludi B: i benigni non metastatizzano",
+   "Escludi A, D, E, false",
+   "Scegli C"
+  ],
+  "concetto": "Tumori benigni e maligni"
+ },
+ {
+  "id": "NMED-100",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Ciclo cellulare, controllo e cancro",
+  "livello": "superiori",
+  "domanda": "Come agiscono molti farmaci chemioterapici come i taxani (paclitaxel)?",
+  "opzioni": {
+   "A": "Stabilizzano i microtubuli e impediscono il normale funzionamento del fuso, bloccando la mitosi",
+   "B": "Riparano il DNA delle cellule tumorali",
+   "C": "Stimolano la telomerasi",
+   "D": "Attivano gli oncogeni",
+   "E": "Aumentano la produzione di cicline"
+  },
+  "giusta": "A",
+  "perche": "Il fuso mitotico deve poter montare e smontare continuamente i suoi microtubuli; i taxani li stabilizzano e impediscono la depolimerizzazione, così la cellula si blocca in mitosi e va in apoptosi. Colpiscono soprattutto le cellule che si dividono molto, il che spiega anche gli effetti collaterali su midollo osseo, bulbi piliferi e mucose. Gli alcaloidi della vinca agiscono sullo stesso bersaglio ma impedendo la polimerizzazione.",
+  "semplice": "Il fuso mitotico è come una gru che deve allungare e accorciare i suoi bracci per spostare i cromosomi. Il taxano la «blocca» in una posizione e la divisione si inceppa.",
+  "passaggi": [
+   "Ricorda che il fuso è fatto di microtubuli dinamici",
+   "I taxani bloccano la dinamica stabilizzandoli",
+   "Senza fuso funzionante la mitosi si arresta",
+   "Escludi B-E, che favorirebbero il tumore",
+   "Scegli A"
+  ],
+  "concetto": "Chemioterapici antimitotici"
+ },
+ {
+  "id": "NMED-101",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "Una malattia autosomica recessiva colpisce 1 neonato su 10 000. In una popolazione in equilibrio di Hardy-Weinberg, qual è la frequenza approssimata dei portatori sani?",
+  "opzioni": {
+   "A": "1 su 100",
+   "B": "1 su 10 000",
+   "C": "1 su 5000",
+   "D": "Circa 1 su 50",
+   "E": "1 su 25"
+  },
+  "giusta": "D",
+  "perche": "I malati sono omozigoti aa: q² = 1/10 000, quindi q = 0,01 e p = 0,99. I portatori sono gli eterozigoti: 2pq = 2 · 0,99 · 0,01 ≈ 0,0198, cioè circa 1 su 50. L'errore tipico è prendere q (1/100) come frequenza dei portatori, dimenticando il fattore 2pq.",
+  "semplice": "Anche se la malattia è rarissima, i portatori sani sono molti di più: circa uno ogni cinquanta persone. Per questo una malattia recessiva può «comparire all'improvviso» in una famiglia.",
+  "passaggi": [
+   "Malati aa: q² = 1/10 000",
+   "q = √(1/10 000) = 0,01; p = 1 − q = 0,99",
+   "Portatori: 2pq = 2 · 0,99 · 0,01 ≈ 0,0198",
+   "Risultato: circa 1 su 50"
+  ],
+  "concetto": "Frequenza dei portatori con Hardy-Weinberg"
+ },
+ {
+  "id": "NMED-102",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "In un campione di 1000 persone si trovano 360 AA, 480 Aa e 160 aa. Quali sono le frequenze alleliche e la popolazione è in equilibrio di Hardy-Weinberg?",
+  "opzioni": {
+   "A": "p = 0,36, q = 0,16; non in equilibrio",
+   "B": "p = 0,6, q = 0,4; sì, in equilibrio",
+   "C": "p = 0,5, q = 0,5; sì, in equilibrio",
+   "D": "p = 0,6, q = 0,4; non in equilibrio perché gli eterozigoti sono troppi",
+   "E": "p = 0,84, q = 0,16; in equilibrio"
+  },
+  "giusta": "B",
+  "perche": "Gli alleli totali sono 2000: alleli A = 2 · 360 + 480 = 1200, quindi p = 0,6 e q = 0,4. Le frequenze attese sono p² = 0,36 (360), 2pq = 0,48 (480) e q² = 0,16 (160), identiche a quelle osservate: la popolazione è in equilibrio. Confondere frequenze genotipiche (0,36 e 0,16) con quelle alleliche è l'errore più frequente.",
+  "semplice": "Conta le «lettere»: ogni persona ne ha due. Le A sono 1200 su 2000 (60%), le a 800 (40%). Se moltiplichi le probabilità ottieni proprio i numeri osservati, quindi tutto torna.",
+  "passaggi": [
+   "Alleli A: 2 · 360 + 480 = 1200 su 2000 → p = 0,6",
+   "Alleli a: 2 · 160 + 480 = 800 → q = 0,4",
+   "Attesi: p² = 0,36, 2pq = 0,48, q² = 0,16",
+   "Attesi in numero: 360, 480, 160 = osservati",
+   "Conclusione: in equilibrio, risposta B"
+  ],
+  "concetto": "Verifica dell'equilibrio di Hardy-Weinberg"
+ },
+ {
+  "id": "NMED-103",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "La fibrosi cistica colpisce circa 1 neonato su 2500 in una popolazione. Due persone sane, non imparentate e senza casi in famiglia, hanno un figlio. Qual è la probabilità approssimata che il figlio sia malato?",
+  "opzioni": {
+   "A": "Circa 1 su 2500",
+   "B": "1 su 4",
+   "C": "1 su 625",
+   "D": "1 su 25",
+   "E": "1 su 50"
+  },
+  "giusta": "A",
+  "perche": "q² = 1/2500, quindi q = 1/50 e la frequenza dei portatori è 2pq ≈ 2 · 1/50 = 1/25. Perché il figlio sia malato entrambi i genitori devono essere portatori (1/25 · 1/25 = 1/625) e il figlio deve ricevere l'allele mutato da entrambi (1/4 nell'incrocio Aa × Aa): 1/625 · 1/4 = 1/2500. Il risultato coincide con l'incidenza nella popolazione, come atteso per un incrocio casuale. Chi risponde 1/625 dimentica il fattore 1/4.",
+  "semplice": "Servono tre «sfortune» insieme: che la mamma sia portatrice, che lo sia il papà e che entrambi passino il gene difettoso. Moltiplicando le probabilità si torna alla frequenza della malattia nella popolazione.",
+  "passaggi": [
+   "q² = 1/2500 → q = 1/50",
+   "Portatori: 2pq ≈ 2 · 1/50 = 1/25",
+   "Entrambi portatori: 1/25 · 1/25 = 1/625",
+   "Incrocio Aa × Aa: figlio aa con probabilità 1/4",
+   "Totale: 1/625 · 1/4 = 1/2500"
+  ],
+  "concetto": "Rischio riproduttivo con Hardy-Weinberg"
+ },
+ {
+  "id": "NMED-104",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "Un uomo sano ha un fratello affetto da una malattia autosomica recessiva; i genitori sono sani. Sposa una donna sana della popolazione generale, dove la frequenza dei portatori è 1/50. Qual è il rischio che il primo figlio sia malato?",
+  "opzioni": {
+   "A": "1/100",
+   "B": "1/200",
+   "C": "1/4",
+   "D": "1/150",
+   "E": "1/300"
+  },
+  "giusta": "E",
+  "perche": "I genitori dell'uomo sono entrambi portatori (Aa × Aa). Sapendo che lui è sano, i genotipi possibili sono AA (1/3) e Aa (2/3): quindi è portatore con probabilità 2/3. La moglie è portatrice con probabilità 1/50. Se entrambi sono portatori, il figlio è aa con probabilità 1/4. Rischio = 2/3 · 1/50 · 1/4 = 2/600 = 1/300. L'errore comune è usare 1/2 invece di 2/3 per l'uomo, ottenendo 1/400, o non considerare l'1/4.",
+  "semplice": "Il fratello malato dice che i genitori sono portatori. L'uomo, essendo sano, ha due possibilità su tre di avere il gene nascosto. Moltiplicando per la probabilità della moglie e per il quarto dell'incrocio si arriva a 1 su 300.",
+  "passaggi": [
+   "Genitori dell'uomo: Aa × Aa (hanno un figlio aa)",
+   "L'uomo è sano: AA o Aa, con Aa = 2/3",
+   "La moglie è portatrice con probabilità 1/50",
+   "Figlio aa da Aa × Aa: 1/4",
+   "Rischio: 2/3 · 1/50 · 1/4 = 1/300"
+  ],
+  "concetto": "Probabilità condizionata nei pedigree"
+ },
+ {
+  "id": "NMED-105",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "Il daltonismo rosso-verde, recessivo legato all'X, colpisce l'8% dei maschi in una popolazione. Qual è la frequenza attesa delle femmine daltoniche?",
+  "opzioni": {
+   "A": "8%",
+   "B": "4%",
+   "C": "Circa 0,64%",
+   "D": "16%",
+   "E": "0,08%"
+  },
+  "giusta": "C",
+  "perche": "Nei maschi, emizigoti, la frequenza dei malati coincide con la frequenza dell'allele: q = 0,08. Le femmine devono essere omozigoti, quindi q² = 0,08² = 0,0064, cioè 0,64%, circa 12 volte meno dei maschi. Le femmine portatrici sono 2pq = 2 · 0,92 · 0,08 ≈ 14,7%. Rispondere 4% significa dividere a metà, ragionamento che non ha basi genetiche.",
+  "semplice": "Il maschio ha una sola X: basta che sia «difettosa» per essere daltonico. La femmina ne ha due e devono esserlo entrambe: per questo il daltonismo nelle donne è molto più raro.",
+  "passaggi": [
+   "Nei maschi: frequenza malati = q = 0,08",
+   "Nelle femmine malate servono due alleli: q²",
+   "Calcolo: 0,08² = 0,0064",
+   "Risultato: 0,64%"
+  ],
+  "concetto": "Hardy-Weinberg per geni legati all'X"
+ },
+ {
+  "id": "NMED-106",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "Nel sistema MN (alleli codominanti) un campione di 100 persone comprende 49 MM, 42 MN e 9 NN. Qual è la frequenza dell'allele M?",
+  "opzioni": {
+   "A": "0,70",
+   "B": "0,49",
+   "C": "0,91",
+   "D": "0,58",
+   "E": "0,30"
+  },
+  "giusta": "A",
+  "perche": "Con alleli codominanti ogni genotipo si riconosce dal fenotipo, quindi si contano direttamente gli alleli: M = 2 · 49 + 42 = 140 su 200, cioè 0,70; N = 2 · 9 + 42 = 60, cioè 0,30. Rispondere 0,49 significa confondere la frequenza del genotipo MM con quella dell'allele. Si noti che 0,7² = 0,49, 2 · 0,7 · 0,3 = 0,42 e 0,3² = 0,09: la popolazione è in equilibrio.",
+  "semplice": "In 100 persone ci sono 200 «copie» del gene. Ogni MM ne porta due M, ogni MN una sola. Contando si arriva a 140 M su 200, cioè il 70%.",
+  "passaggi": [
+   "Alleli totali: 2 · 100 = 200",
+   "Alleli M: 2 · 49 + 42 = 140",
+   "Frequenza M: 140 / 200 = 0,70",
+   "Controllo: N = 60 / 200 = 0,30; p + q = 1"
+  ],
+  "concetto": "Calcolo delle frequenze alleliche con codominanza"
+ },
+ {
+  "id": "NMED-107",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "Due genitori sono entrambi portatori sani di una malattia autosomica recessiva e hanno tre figli. Qual è la probabilità che esattamente uno dei tre sia malato?",
+  "opzioni": {
+   "A": "1/4",
+   "B": "3/4",
+   "C": "1/64",
+   "D": "9/64",
+   "E": "27/64"
+  },
+  "giusta": "E",
+  "perche": "Ogni figlio è malato con probabilità 1/4 e sano con probabilità 3/4, indipendentemente dagli altri. Esattamente uno malato su tre si ottiene in 3 combinazioni (il primo, il secondo o il terzo): 3 · (1/4) · (3/4)² = 3 · 1/4 · 9/16 = 27/64 ≈ 0,42. Rispondere 1/4 significa ignorare il numero di figli; 9/64 dimentica il coefficiente 3 delle combinazioni.",
+  "semplice": "È come lanciare tre volte una moneta truccata che dà «malato» una volta su quattro. Bisogna contare in quanti modi diversi può uscire un solo malato: tre modi.",
+  "passaggi": [
+   "Incrocio Aa × Aa: P(malato) = 1/4, P(sano) = 3/4",
+   "Un caso specifico (malato, sano, sano): 1/4 · 3/4 · 3/4 = 9/64",
+   "Le posizioni possibili del figlio malato sono 3",
+   "Totale: 3 · 9/64 = 27/64"
+  ],
+  "concetto": "Distribuzione binomiale negli incroci"
+ },
+ {
+  "id": "NMED-108",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "In quale condizione la deriva genetica ha l'effetto maggiore sulle frequenze alleliche?",
+  "opzioni": {
+   "A": "In popolazioni molto grandi con accoppiamento casuale",
+   "B": "Quando la selezione naturale è molto forte",
+   "C": "In popolazioni piccole, per esempio dopo un collo di bottiglia o in una popolazione fondatrice",
+   "D": "Quando c'è un flusso genico intenso tra popolazioni",
+   "E": "Solo per alleli dominanti"
+  },
+  "giusta": "C",
+  "perche": "La deriva genetica è la variazione casuale delle frequenze alleliche dovuta al campionamento dei gameti da una generazione all'altra; la sua intensità è inversamente proporzionale alla dimensione della popolazione. Nelle popolazioni piccole, dopo un collo di bottiglia o per effetto del fondatore, un allele può fissarsi o perdersi per puro caso. Il flusso genico al contrario rende le popolazioni più simili e attenua la deriva.",
+  "semplice": "Se lanci una moneta 10 volte puoi ottenere 8 teste per caso; se la lanci 10 000 volte otterrai quasi esattamente metà e metà. Le piccole popolazioni sono come pochi lanci: il caso pesa molto.",
+  "passaggi": [
+   "Definisci la deriva: variazione casuale delle frequenze",
+   "Ricorda che l'effetto cresce quando la popolazione è piccola",
+   "Riconosci collo di bottiglia ed effetto del fondatore",
+   "Escludi A e D, che riducono la deriva",
+   "Scegli C"
+  ],
+  "concetto": "Deriva genetica"
+ },
+ {
+  "id": "NMED-109",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "Quale NON è una condizione richiesta per l'equilibrio di Hardy-Weinberg?",
+  "opzioni": {
+   "A": "Popolazione molto grande",
+   "B": "Accoppiamento casuale",
+   "C": "Assenza di migrazione e di mutazione",
+   "D": "Alleli dominanti più frequenti dei recessivi",
+   "E": "Assenza di selezione"
+  },
+  "giusta": "D",
+  "perche": "Il modello richiede popolazione grande (niente deriva), accoppiamento casuale, assenza di mutazione, di migrazione e di selezione. Non richiede affatto che l'allele dominante sia più frequente: la dominanza riguarda il fenotipo e non modifica le frequenze alleliche, che possono essere qualsiasi. È un errore comune pensare che i caratteri dominanti tendano spontaneamente a diventare più comuni.",
+  "semplice": "Essere dominante non vuol dire essere più comune: le dita in più (polidattilia) sono dominanti ma rarissime. Hardy-Weinberg dice che, senza forze esterne, le frequenze restano quelle che sono.",
+  "passaggi": [
+   "Elenca le cinque condizioni dell'equilibrio",
+   "Confronta con le opzioni: A, B, C, E sono condizioni",
+   "Ricorda che la dominanza non cambia le frequenze alleliche",
+   "Scegli D"
+  ],
+  "concetto": "Condizioni dell'equilibrio di Hardy-Weinberg"
+ },
+ {
+  "id": "NMED-110",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genetica di popolazione",
+  "livello": "università",
+  "domanda": "Perché i matrimoni tra consanguinei aumentano il rischio di malattie autosomiche recessive rare?",
+  "opzioni": {
+   "A": "Perché aumentano la frequenza di mutazioni nuove",
+   "B": "Perché aumentano la probabilità che il figlio riceva due copie dello stesso allele ereditate da un antenato comune",
+   "C": "Perché rendono dominanti gli alleli recessivi",
+   "D": "Perché cambiano le frequenze alleliche della popolazione in una generazione",
+   "E": "Perché aumentano il numero di cromosomi"
+  },
+  "giusta": "B",
+  "perche": "I consanguinei condividono una parte di alleli ereditati da antenati comuni; se un antenato era portatore di un allele raro, entrambi i partner possono averlo ricevuto e il figlio può essere omozigote per discendenza (autozigote). Il coefficiente di inbreeding misura questa probabilità (per figli di cugini primi F = 1/16). La consanguineità aumenta gli omozigoti senza cambiare le frequenze alleliche né creare nuove mutazioni.",
+  "semplice": "Due cugini hanno nonni in comune: se un nonno aveva un gene difettoso nascosto, è facile che lo abbiano ereditato entrambi e lo passino insieme al figlio.",
+  "passaggi": [
+   "Ricorda che i parenti condividono alleli per discendenza",
+   "Gli alleli rari diventano più probabili in entrambi i partner",
+   "Aumentano gli omozigoti, non le mutazioni",
+   "Escludi D: le frequenze alleliche non cambiano",
+   "Scegli B"
+  ],
+  "concetto": "Consanguineità e omozigosi"
+ },
+ {
+  "id": "NMED-111",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Quale modifica epigenetica del DNA nei mammiferi è associata soprattutto al silenziamento dei promotori?",
+  "opzioni": {
+   "A": "La metilazione della citosina nei dinucleotidi CpG",
+   "B": "L'acetilazione della timina",
+   "C": "La fosforilazione del desossiribosio",
+   "D": "La sostituzione di una base con un'altra",
+   "E": "L'aggiunta di uracile al posto della timina"
+  },
+  "giusta": "A",
+  "perche": "Nei mammiferi le DNA metiltransferasi aggiungono un gruppo metilico al carbonio 5 della citosina che precede una guanina (CpG). Quando le isole CpG di un promotore sono metilate, proteine che legano il DNA metilato reclutano deacetilasi e compattano la cromatina, spegnendo il gene. Non cambia la sequenza delle basi: per questo è una modifica epigenetica e non una mutazione.",
+  "semplice": "La metilazione è come mettere un tappo su certe parole di un libro: il testo è sempre lo stesso, ma quelle parole non vengono più lette.",
+  "passaggi": [
+   "Riconosci il tipo di modifica: epigenetica sul DNA",
+   "Ricorda la sede: citosine nei CpG",
+   "Collega la metilazione del promotore al silenziamento",
+   "Escludi D: sostituire una base è una mutazione",
+   "Scegli A"
+  ],
+  "concetto": "Metilazione del DNA"
+ },
+ {
+  "id": "NMED-112",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Che effetto ha in genere l'acetilazione delle code degli istoni sulla trascrizione?",
+  "opzioni": {
+   "A": "La blocca, compattando la cromatina",
+   "B": "Degrada l'RNA messaggero",
+   "C": "Taglia il DNA tra i nucleosomi",
+   "D": "Neutralizza le cariche positive delle lisine, rilassa la cromatina e favorisce la trascrizione",
+   "E": "Metila le citosine vicine"
+  },
+  "giusta": "D",
+  "perche": "Le lisine delle code istoniche sono cariche positivamente e interagiscono con i fosfati negativi del DNA. Le acetiltransferasi (HAT) aggiungono gruppi acetile che neutralizzano queste cariche: la cromatina si apre (eucromatina) e i fattori di trascrizione accedono ai promotori. Le deacetilasi (HDAC) fanno il contrario e favoriscono il silenziamento; alcuni inibitori delle HDAC sono usati come farmaci antitumorali.",
+  "semplice": "Gli istoni sono rocchetti su cui è avvolto il filo del DNA. L'acetilazione allenta il filo e lo rende leggibile; togliere l'acetile lo stringe e lo nasconde.",
+  "passaggi": [
+   "Ricorda la carica positiva delle lisine istoniche",
+   "L'acetile neutralizza la carica positiva",
+   "Meno attrazione con il DNA: cromatina aperta",
+   "Cromatina aperta: più trascrizione",
+   "Scegli D"
+  ],
+  "concetto": "Acetilazione istonica"
+ },
+ {
+  "id": "NMED-113",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Le sindromi di Prader-Willi e di Angelman possono derivare dalla stessa delezione del cromosoma 15 (15q11-q13). Che cosa determina quale delle due si manifesta?",
+  "opzioni": {
+   "A": "Il sesso del figlio",
+   "B": "La dimensione della delezione",
+   "C": "Il genitore da cui proviene il cromosoma deleto, a causa dell'imprinting genomico",
+   "D": "La presenza di un cromosoma X in più",
+   "E": "L'età della madre al concepimento"
+  },
+  "giusta": "C",
+  "perche": "In quella regione alcuni geni sono espressi solo dall'allele paterno e altri (come UBE3A nel cervello) solo da quello materno, per effetto dell'imprinting. Se la delezione è sul cromosoma paterno mancano i geni paterni attivi e si ha la sindrome di Prader-Willi; se è sul materno manca UBE3A attivo e si ha la sindrome di Angelman. Le stesse sindromi possono derivare da disomia uniparentale (due copie dallo stesso genitore).",
+  "semplice": "Alcuni geni portano un'«etichetta» che dice se vengono dal papà o dalla mamma, e solo una delle due copie funziona. Se manca proprio la copia che doveva funzionare, la malattia dipende da quale genitore l'ha persa.",
+  "passaggi": [
+   "Riconosci il fenomeno: espressione dipendente dal genitore d'origine",
+   "Ricorda l'imprinting della regione 15q11-q13",
+   "Delezione paterna → Prader-Willi; materna → Angelman",
+   "Scegli C"
+  ],
+  "concetto": "Imprinting genomico"
+ },
+ {
+  "id": "NMED-114",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Approssimativamente, quanti geni codificanti proteine contiene il genoma umano e quale frazione del genoma è costituita da sequenze codificanti?",
+  "opzioni": {
+   "A": "Circa 100 000 geni; 50%",
+   "B": "Circa 20 000 geni; circa 1-2%",
+   "C": "Circa 5000 geni; 10%",
+   "D": "Circa 1 milione di geni; 98%",
+   "E": "Circa 20 000 geni; circa 50%"
+  },
+  "giusta": "B",
+  "perche": "Il genoma umano (circa 3,1 miliardi di paia di basi per corredo aploide) contiene circa 19 000-20 000 geni che codificano proteine; gli esoni codificanti rappresentano solo l'1-2% del totale. Il resto comprende introni, sequenze regolatrici, geni per RNA non codificanti, elementi ripetuti e trasposoni. Prima del Progetto Genoma Umano si stimavano circa 100 000 geni.",
+  "semplice": "Se il genoma fosse un'enciclopedia, solo poche pagine su cento conterrebbero ricette di proteine. Il resto sono istruzioni su quando usarle, ripetizioni e «note a margine».",
+  "passaggi": [
+   "Ricorda il numero attuale di geni codificanti: circa 20 000",
+   "Ricorda la frazione di esoni codificanti: 1-2%",
+   "Escludi A, stima vecchia",
+   "Escludi E: la percentuale è troppo alta",
+   "Scegli B"
+  ],
+  "concetto": "Struttura del genoma umano"
+ },
+ {
+  "id": "NMED-115",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Nelle femmine di mammifero, come avviene la compensazione del dosaggio per i geni del cromosoma X?",
+  "opzioni": {
+   "A": "Uno dei due cromosomi X viene perso durante lo sviluppo",
+   "B": "Il cromosoma Y del padre compensa",
+   "C": "Entrambe le X vengono trascritte a metà",
+   "D": "Le X vengono duplicate nei maschi",
+   "E": "Una delle due X viene inattivata in modo casuale nelle prime fasi embrionali, grazie all'RNA XIST, e forma il corpo di Barr"
+  },
+  "giusta": "E",
+  "perche": "Nelle prime fasi dello sviluppo, in ogni cellula un cromosoma X a caso viene ricoperto dall'RNA non codificante XIST, che recluta complessi che modificano gli istoni e metilano il DNA: la X diventa eterocromatina compatta (corpo di Barr). La scelta viene mantenuta nelle cellule figlie, quindi le femmine sono un mosaico, come mostra il mantello delle gatte tartarugate. La X non viene persa: è presente ma silenziata.",
+  "semplice": "Le gatte con il pelo a macchie arancioni e nere sono un esempio visibile: in ogni zona di pelle è «acceso» un cromosoma X diverso, uno con il colore arancione e l'altro con il nero.",
+  "passaggi": [
+   "Ricorda il problema: le femmine hanno due X, i maschi una",
+   "Ricorda la soluzione: inattivazione casuale di una X",
+   "Ricorda il ruolo dell'RNA XIST",
+   "Escludi A: la X resta, ma è compatta",
+   "Scegli E"
+  ],
+  "concetto": "Inattivazione del cromosoma X"
+ },
+ {
+  "id": "NMED-116",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Che cosa sono i microRNA (miRNA)?",
+  "opzioni": {
+   "A": "RNA ribosomiali piccoli che formano la subunità 40S",
+   "B": "RNA che trasportano gli amminoacidi",
+   "C": "Frammenti di DNA che si inseriscono nel genoma",
+   "D": "Piccoli RNA non codificanti di circa 22 nucleotidi che riducono l'espressione di mRNA bersaglio",
+   "E": "Precursori degli RNA messaggeri"
+  },
+  "giusta": "D",
+  "perche": "I miRNA sono trascritti come precursori a forcina, processati da Drosha e Dicer e caricati nel complesso RISC con le proteine Argonaute. Si appaiano, di solito in modo parziale, alla regione 3' non tradotta di mRNA bersaglio e ne riducono la traduzione o ne favoriscono la degradazione. Un singolo miRNA può regolare centinaia di geni, ed è considerato un meccanismo epigenetico in senso ampio.",
+  "semplice": "I microRNA sono come piccoli post-it che si attaccano a certi messaggi e dicono «non leggere questo». Così la cellula regola quante proteine produrre senza toccare il DNA.",
+  "passaggi": [
+   "Ricorda le dimensioni: circa 22 nucleotidi, non codificanti",
+   "Ricorda il complesso RISC",
+   "Ricorda l'effetto: meno traduzione o degradazione dell'mRNA",
+   "Escludi A e B: rRNA e tRNA",
+   "Scegli D"
+  ],
+  "concetto": "MicroRNA e regolazione post-trascrizionale"
+ },
+ {
+  "id": "NMED-117",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Che cos'è uno SNP (polimorfismo di un singolo nucleotide)?",
+  "opzioni": {
+   "A": "Una mutazione che causa sempre una malattia",
+   "B": "Una variazione di una singola base in una posizione del genoma, presente in una frazione apprezzabile della popolazione",
+   "C": "Una delezione di un intero gene",
+   "D": "Una copia in più di un cromosoma",
+   "E": "Una modifica chimica degli istoni"
+  },
+  "giusta": "B",
+  "perche": "Uno SNP è una posizione del genoma in cui individui diversi portano basi diverse, con l'allele meno comune presente di solito in almeno l'1% della popolazione. Gli SNP sono milioni e la maggior parte si trova in regioni non codificanti senza effetto evidente; servono come marcatori negli studi di associazione (GWAS) e in farmacogenetica. Una variazione in una base può anche causare malattia, ma la definizione di SNP non lo implica.",
+  "semplice": "Gli SNP sono come piccoli «errori di battitura» comuni nella popolazione: due persone qualsiasi ne differiscono per qualche milione. Di solito non fanno nulla, ma aiutano a capire chi è più a rischio di certe malattie.",
+  "passaggi": [
+   "Ricorda la definizione: variazione di una base",
+   "Ricorda la soglia di frequenza: polimorfismo, circa ≥ 1%",
+   "Escludi A: la maggior parte è neutra",
+   "Escludi C, D, E, che sono altri tipi di variazione",
+   "Scegli B"
+  ],
+  "concetto": "Polimorfismi a singolo nucleotide"
+ },
+ {
+  "id": "NMED-118",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Due gemelli monozigoti, con lo stesso DNA, a 60 anni mostrano differenze nell'espressione di molti geni. Qual è la spiegazione più probabile?",
+  "opzioni": {
+   "A": "Accumulo nel tempo di differenze epigenetiche (metilazione, modifiche istoniche) legate ad ambiente e stile di vita",
+   "B": "Hanno genomi diversi fin dalla nascita",
+   "C": "Uno dei due ha perso un cromosoma",
+   "D": "I gemelli monozigoti hanno mitocondri sempre diversi",
+   "E": "Lo sviluppo embrionale li ha resi dizigoti"
+  },
+  "giusta": "A",
+  "perche": "Studi su gemelli monozigoti mostrano che i loro profili di metilazione e di modifiche istoniche sono molto simili da giovani e divergono con l'età, soprattutto se hanno vissuto in modo diverso (fumo, dieta, attività fisica). Questo «drift epigenetico» spiega differenze di espressione genica e di rischio di malattia anche a parità di sequenza del DNA. Piccole mutazioni somatiche esistono, ma non spiegano un cambiamento diffuso di espressione.",
+  "semplice": "Due gemelli hanno lo stesso «libro» di istruzioni, ma con gli anni ognuno sottolinea e copre pagine diverse in base a come vive. Per questo da anziani possono avere malattie diverse.",
+  "passaggi": [
+   "Parti dal dato: genoma identico, espressione diversa",
+   "La differenza non è nella sequenza ma nella sua lettura",
+   "Collega alle modifiche epigenetiche che cambiano con età e ambiente",
+   "Escludi B, C, E, incompatibili con la monozigosi",
+   "Scegli A"
+  ],
+  "concetto": "Epigenetica e ambiente"
+ },
+ {
+  "id": "NMED-119",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Quale tecnica permette di misurare l'espressione di tutti i geni di un campione sequenziando l'RNA?",
+  "opzioni": {
+   "A": "Il Southern blot",
+   "B": "La cariotipizzazione",
+   "C": "La ChIP-seq",
+   "D": "Il sequenziamento con bisolfito",
+   "E": "L'RNA-seq"
+  },
+  "giusta": "E",
+  "perche": "Nell'RNA-seq l'RNA viene convertito in cDNA, frammentato e sequenziato con tecnologie di nuova generazione; il numero di letture associate a ogni gene stima il suo livello di espressione. La ChIP-seq identifica invece i siti del genoma legati a una proteina o a una modifica istonica, il sequenziamento con bisolfito mappa le citosine metilate e il Southern blot riconosce sequenze di DNA.",
+  "semplice": "L'RNA-seq è come contare quante copie di ogni ricetta stanno usando i cuochi in cucina in un certo momento: più copie, più quel gene è attivo.",
+  "passaggi": [
+   "Riconosci l'obiettivo: misurare l'espressione genica globale",
+   "Ricorda che l'espressione si legge nell'RNA",
+   "Associa ogni tecnica al suo bersaglio: RNA-seq → trascritti",
+   "Escludi C e D, che studiano l'epigenoma",
+   "Scegli E"
+  ],
+  "concetto": "Trascrittomica con RNA-seq"
+ },
+ {
+  "id": "NMED-120",
+  "materia": "Genetica e biologia molecolare",
+  "argomento": "Genomica ed epigenetica",
+  "livello": "università",
+  "domanda": "Che cosa individua uno studio di associazione sull'intero genoma (GWAS)?",
+  "opzioni": {
+   "A": "La sequenza completa di un singolo individuo",
+   "B": "Le mutazioni de novo in un trio genitori-figlio",
+   "C": "Varianti comuni (di solito SNP) più frequenti nei malati rispetto ai controlli, associate al rischio di una malattia",
+   "D": "Il cariotipo di una popolazione",
+   "E": "I geni che causano con certezza la malattia"
+  },
+  "giusta": "C",
+  "perche": "Un GWAS confronta centinaia di migliaia o milioni di SNP in molte persone con e senza un carattere, cercando varianti con frequenza diversa tra i gruppi. Trova associazioni statistiche, spesso con effetti piccoli, e la variante associata è spesso solo un marcatore vicino alla vera causa (linkage disequilibrium). Per questo non dimostra da sola che un gene causa la malattia.",
+  "semplice": "Un GWAS è come confrontare le abitudini di migliaia di persone con e senza mal di testa per scoprire cosa è più frequente in chi soffre. Trova indizi, non prove definitive.",
+  "passaggi": [
+   "Ricorda il disegno: casi contro controlli",
+   "Ricorda cosa si confronta: frequenze di SNP comuni",
+   "Il risultato è un'associazione statistica",
+   "Escludi E: associazione non è causalità",
+   "Scegli C"
+  ],
+  "concetto": "Studi di associazione genome-wide"
+ }
+]

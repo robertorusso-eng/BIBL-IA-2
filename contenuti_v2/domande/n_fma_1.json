@@ -1,0 +1,965 @@
+[
+ {
+  "id": "NFMA-001",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Un'asta rigida di massa trascurabile è appoggiata su un fulcro. Una forza di 200 N agisce perpendicolarmente all'asta a 0,30 m dal fulcro. Quale forza, perpendicolare all'asta e applicata dalla parte opposta a 1,2 m dal fulcro, mantiene l'asta in equilibrio?",
+  "opzioni": {
+   "A": "50 N",
+   "B": "800 N",
+   "C": "200 N",
+   "D": "60 N",
+   "E": "24 N"
+  },
+  "giusta": "A",
+  "perche": "All'equilibrio i momenti rispetto al fulcro si bilanciano: F₁·b₁ = F₂·b₂. Il momento della prima forza è 200 N · 0,30 m = 60 N·m, quindi F₂ = 60 N·m / 1,2 m = 50 N. Chi risponde 800 N moltiplica invece di dividere per il rapporto dei bracci; 60 N è il valore del momento, non della forza.",
+  "semplice": "Con una leva il braccio lungo fa risparmiare fatica: più lontano spingi dal fulcro, meno forza serve. È come aprire una porta spingendo vicino alla maniglia invece che vicino ai cardini.",
+  "passaggi": [
+   "Dati: F₁ = 200 N, b₁ = 0,30 m, b₂ = 1,2 m",
+   "Formula dell'equilibrio della leva: F₁·b₁ = F₂·b₂",
+   "Momento della prima forza: 200 N · 0,30 m = 60 N·m",
+   "F₂ = 60 N·m / 1,2 m = 50 N"
+  ],
+  "concetto": "equilibrio dei momenti in una leva"
+ },
+ {
+  "id": "NFMA-002",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Quali sono le condizioni necessarie e sufficienti perché un corpo rigido, inizialmente fermo, resti in equilibrio statico?",
+  "opzioni": {
+   "A": "Basta che la somma delle forze applicate sia nulla",
+   "B": "La somma vettoriale delle forze e la somma dei momenti rispetto a un polo qualsiasi devono essere entrambe nulle",
+   "C": "Basta che la somma dei momenti rispetto al baricentro sia nulla",
+   "D": "Le forze devono essere tutte applicate nel baricentro",
+   "E": "Il corpo deve essere appoggiato su una superficie orizzontale"
+  },
+  "giusta": "B",
+  "perche": "Per un corpo rigido la prima condizione (risultante nulla) impedisce la traslazione e la seconda (momento risultante nullo) impedisce la rotazione. Con la sola risultante nulla, una coppia di forze farebbe ruotare il corpo; con i soli momenti nulli il corpo potrebbe accelerare in linea retta. Servono quindi entrambe.",
+  "semplice": "Un oggetto resta fermo solo se non viene spinto via e non viene fatto girare. Due persone che spingono un tavolo con la stessa forza ma su lati opposti e in punti sfalsati lo fanno ruotare anche se le forze si annullano.",
+  "passaggi": [
+   "Ricorda che un corpo rigido può traslare e ruotare",
+   "La traslazione è legata alla risultante delle forze",
+   "La rotazione è legata al momento risultante",
+   "Servono entrambe le condizioni: resta la B"
+  ],
+  "concetto": "equilibrio di traslazione e di rotazione"
+ },
+ {
+  "id": "NFMA-003",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Un blocco di 10 kg è fermo su un piano inclinato liscio (senza attrito) di 30° rispetto all'orizzontale. Quale forza parallela al piano serve per tenerlo in equilibrio? (g = 9,8 m/s²)",
+  "opzioni": {
+   "A": "98 N",
+   "B": "85 N",
+   "C": "49 N",
+   "D": "9,8 N",
+   "E": "5,0 N"
+  },
+  "giusta": "C",
+  "perche": "Senza attrito l'unica componente del peso che fa scivolare il blocco è quella parallela al piano, P∥ = m·g·sin α = 10 kg · 9,8 m/s² · 0,5 = 49 N. La forza equilibrante deve essere uguale e opposta. Il valore 85 N si ottiene usando per errore il coseno, che dà la componente perpendicolare al piano, bilanciata dalla reazione vincolare.",
+  "semplice": "Più il piano è inclinato, più il peso tende a far scivolare il blocco. A 30° basta trattenerlo con metà del suo peso: come tenere un carrello su una rampa.",
+  "passaggi": [
+   "Dati: m = 10 kg, α = 30°, g = 9,8 m/s²",
+   "Formula: F = m·g·sin α",
+   "Calcolo: 10 kg · 9,8 m/s² · sin 30° = 98 N · 0,5",
+   "Risultato: F = 49 N"
+  ],
+  "concetto": "componente del peso lungo il piano inclinato"
+ },
+ {
+  "id": "NFMA-004",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Un quadro è appeso a un chiodo e può ruotare liberamente attorno ad esso. In quale caso il suo equilibrio è stabile?",
+  "opzioni": {
+   "A": "Quando il baricentro coincide con il punto di sospensione",
+   "B": "Quando il baricentro si trova sopra il punto di sospensione",
+   "C": "In ogni posizione, perché il chiodo sostiene tutto il peso",
+   "D": "Quando il baricentro si trova sotto il punto di sospensione, sulla stessa verticale",
+   "E": "Solo se il quadro è perfettamente simmetrico"
+  },
+  "giusta": "D",
+  "perche": "Un corpo sospeso è in equilibrio stabile quando il baricentro sta sotto il punto di sospensione sulla stessa verticale: se lo si sposta, il peso genera un momento che lo riporta indietro e l'energia potenziale è minima. Se il baricentro sta sopra, l'equilibrio è instabile; se coincide con il punto di sospensione, è indifferente.",
+  "semplice": "Un'altalena ferma torna sempre in basso se la spingi: il suo peso sta sotto il punto in cui è appesa. Una scopa in equilibrio sul dito, invece, cade appena si muove, perché il peso sta sopra.",
+  "passaggi": [
+   "Ricorda i tre tipi di equilibrio: stabile, instabile, indifferente",
+   "Nell'equilibrio stabile un piccolo spostamento genera un momento di richiamo",
+   "Questo accade se il baricentro sta sotto il punto di sospensione",
+   "Escludi A (indifferente) e B (instabile): resta la D"
+  ],
+  "concetto": "stabilità dell'equilibrio e posizione del baricentro"
+ },
+ {
+  "id": "NFMA-005",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Una chiave inglese lunga 0,25 m viene spinta all'estremità con una forza di 40 N che forma un angolo di 30° con la chiave. Quanto vale il momento della forza rispetto al bullone?",
+  "opzioni": {
+   "A": "10 N·m",
+   "B": "160 N·m",
+   "C": "8,7 N·m",
+   "D": "1,6 N·m",
+   "E": "5,0 N·m"
+  },
+  "giusta": "E",
+  "perche": "Il modulo del momento è M = r·F·sin θ, dove θ è l'angolo tra il braccio e la forza: 0,25 m · 40 N · sin 30° = 0,25 · 40 · 0,5 = 5,0 N·m. Il valore 10 N·m è quello che si avrebbe con forza perpendicolare; 8,7 N·m si ottiene usando per errore il coseno.",
+  "semplice": "Una forza fa girare meglio un bullone se spinge di traverso alla chiave. Se spingi storto, solo una parte della forza serve a girare: con 30° è esattamente la metà.",
+  "passaggi": [
+   "Dati: r = 0,25 m, F = 40 N, θ = 30°",
+   "Formula: M = r·F·sin θ",
+   "Calcolo: 0,25 m · 40 N · 0,5",
+   "Risultato: M = 5,0 N·m"
+  ],
+  "concetto": "momento di una forza non perpendicolare"
+ },
+ {
+  "id": "NFMA-006",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Una trave omogenea lunga 4,0 m e di massa 20 kg poggia su due supporti posti alle estremità. Una persona di 60 kg sta in piedi a 1,0 m dall'estremità sinistra. Quanto vale la forza esercitata dal supporto destro? (g = 9,8 m/s²)",
+  "opzioni": {
+   "A": "245 N",
+   "B": "539 N",
+   "C": "392 N",
+   "D": "784 N",
+   "E": "147 N"
+  },
+  "giusta": "A",
+  "perche": "Si impone che la somma dei momenti rispetto al supporto sinistro sia nulla: R_d · 4,0 m = (20 kg · g) · 2,0 m + (60 kg · g) · 1,0 m = 100 kg·m · g, quindi R_d = 25 kg · 9,8 m/s² = 245 N. Il supporto sinistro, più vicino alla persona, regge il resto: 80·9,8 − 245 = 539 N. Chi risponde 539 N ha scambiato i due supporti.",
+  "semplice": "Chi sta più vicino a un appoggio grava soprattutto su quello. La persona è vicina al supporto sinistro, quindi il destro regge meno: come in due che trasportano una panca, chi sta dal lato del carico fa più fatica.",
+  "passaggi": [
+   "Dati: L = 4,0 m, m_trave = 20 kg (peso al centro, a 2,0 m), m_persona = 60 kg a 1,0 m",
+   "Scegli come polo il supporto sinistro per eliminare la sua reazione",
+   "Equilibrio dei momenti: R_d · 4,0 m = 20 kg·g·2,0 m + 60 kg·g·1,0 m = 100 kg·m·g",
+   "R_d = 25 kg · 9,8 m/s² = 245 N",
+   "Controllo: R_s = 80 kg · 9,8 m/s² − 245 N = 539 N"
+  ],
+  "concetto": "equilibrio di una trave su due appoggi"
+ },
+ {
+  "id": "NFMA-007",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Che cosa si può affermare di una coppia di forze (due forze uguali in modulo, opposte in verso e con rette d'azione parallele distinte)?",
+  "opzioni": {
+   "A": "La risultante è doppia di ciascuna forza",
+   "B": "La risultante è nulla e il momento non dipende dal polo scelto",
+   "C": "Il momento è sempre nullo",
+   "D": "Produce solo traslazione",
+   "E": "Il momento dipende dalla distanza del polo dalla prima forza"
+  },
+  "giusta": "B",
+  "perche": "In una coppia la somma vettoriale delle forze è nulla, quindi il corpo non trasla, ma il momento vale F·d (d = distanza tra le rette d'azione) ed è lo stesso rispetto a qualsiasi polo. Per questo una coppia produce solo rotazione. L'errore più comune è pensare che, essendo nulla la risultante, sia nullo anche il momento.",
+  "semplice": "Quando giri il volante con due mani, una spinge su e l'altra giù: il volante non si sposta, ma ruota. Questa è una coppia di forze.",
+  "passaggi": [
+   "Somma le due forze: sono opposte, quindi la risultante è zero",
+   "Calcola il momento: vale F per la distanza tra le rette d'azione",
+   "Ricorda che per una risultante nulla il momento non dipende dal polo",
+   "Resta la B"
+  ],
+  "concetto": "coppia di forze"
+ },
+ {
+  "id": "NFMA-008",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Un baule di 5,0 kg è fermo su un pavimento orizzontale; il coefficiente di attrito statico è 0,40. Qual è la forza orizzontale minima che lo mette in movimento? (g = 9,8 m/s²)",
+  "opzioni": {
+   "A": "2,0 N",
+   "B": "49 N",
+   "C": "19,6 N",
+   "D": "12,3 N",
+   "E": "4,9 N"
+  },
+  "giusta": "C",
+  "perche": "La forza di attrito statico può crescere fino al valore massimo F = μs·N, dove su un piano orizzontale N = m·g. Quindi F = 0,40 · 5,0 kg · 9,8 m/s² = 19,6 N; appena la spinta supera questo valore il baule parte. 49 N è il peso, non la forza di attrito.",
+  "semplice": "L'attrito è come una colla debole che tiene fermo il baule: finché spingi poco, la colla resiste; quando superi un certo limite, il baule scivola. Il limite dipende da quanto pesa e da quanto sono ruvide le superfici.",
+  "passaggi": [
+   "Dati: m = 5,0 kg, μs = 0,40, g = 9,8 m/s²",
+   "Reazione normale: N = m·g = 5,0 kg · 9,8 m/s² = 49 N",
+   "Formula: F_max = μs·N",
+   "Calcolo: 0,40 · 49 N = 19,6 N"
+  ],
+  "concetto": "attrito statico massimo"
+ },
+ {
+  "id": "NFMA-009",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "Un lampione di peso 100 N è sostenuto da due funi uguali che formano ciascuna un angolo di 60° con la verticale. Qual è la tensione in ciascuna fune?",
+  "opzioni": {
+   "A": "50 N",
+   "B": "58 N",
+   "C": "87 N",
+   "D": "100 N",
+   "E": "200 N"
+  },
+  "giusta": "D",
+  "perche": "Le componenti orizzontali delle tensioni si annullano per simmetria; quelle verticali devono reggere il peso: 2·T·cos 60° = 100 N, quindi T = 100 N / (2 · 0,5) = 100 N. La risposta istintiva 50 N (metà del peso) vale solo se le funi sono verticali: più le funi sono aperte, più la tensione cresce.",
+  "semplice": "Se appendi un sacco a una corda tesa quasi orizzontale, la corda deve tirare tantissimo. Più le funi si aprono, più devono tirare per reggere lo stesso peso.",
+  "passaggi": [
+   "Dati: P = 100 N, angolo con la verticale 60°",
+   "Equilibrio verticale: 2·T·cos 60° = P",
+   "Calcolo: T = 100 N / (2 · 0,5)",
+   "Risultato: T = 100 N, cioè quanto il peso intero"
+  ],
+  "concetto": "equilibrio di forze concorrenti"
+ },
+ {
+  "id": "NFMA-010",
+  "materia": "Fisica",
+  "argomento": "Statica ed equilibrio dei corpi",
+  "livello": "superiori",
+  "domanda": "In una leva di secondo genere, come la carriola o lo schiaccianoci, come sono disposti fulcro, resistenza e forza motrice?",
+  "opzioni": {
+   "A": "Il fulcro sta tra la resistenza e la forza motrice",
+   "B": "La forza motrice sta tra il fulcro e la resistenza",
+   "C": "Resistenza e forza motrice sono applicate nello stesso punto",
+   "D": "Il fulcro sta all'esterno e la leva è sempre svantaggiosa",
+   "E": "La resistenza sta tra il fulcro e la forza motrice, e la leva è sempre vantaggiosa"
+  },
+  "giusta": "E",
+  "perche": "Nella leva di secondo genere la resistenza è compresa tra fulcro e potenza: il braccio della potenza è quindi sempre maggiore di quello della resistenza e la leva è sempre vantaggiosa. Il fulcro in mezzo caratterizza il primo genere (forbici, altalena), la potenza in mezzo il terzo genere (pinzette, avambraccio), sempre svantaggioso.",
+  "semplice": "Nella carriola la ruota è il fulcro, il carico sta nel mezzo e tu sollevi dai manici lontani: per questo riesci a sollevare pesi grandi con poca fatica.",
+  "passaggi": [
+   "Ricorda la classificazione delle leve in base all'elemento centrale",
+   "Nel secondo genere al centro c'è la resistenza",
+   "Il braccio della potenza è più lungo, quindi la leva è vantaggiosa",
+   "Resta la E"
+  ],
+  "concetto": "leve di secondo genere"
+ },
+ {
+  "id": "NFMA-011",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Due corpi si attraggono con una forza gravitazionale F. Se la distanza tra i loro centri raddoppia, quale diventa la forza?",
+  "opzioni": {
+   "A": "F/4",
+   "B": "F/2",
+   "C": "2F",
+   "D": "4F",
+   "E": "F"
+  },
+  "giusta": "A",
+  "perche": "La legge di gravitazione universale F = G·m₁·m₂/r² dice che la forza è inversamente proporzionale al quadrato della distanza. Se r diventa 2r, r² diventa 4r² e la forza si riduce a un quarto. La risposta F/2 confonde la proporzionalità inversa al quadrato con quella semplice.",
+  "semplice": "La gravità si indebolisce in fretta allontanandosi: raddoppiando la distanza diventa quattro volte più debole. È come la luce di una lampadina, che a distanza doppia si distribuisce su un'area quattro volte più grande.",
+  "passaggi": [
+   "Scrivi la legge: F = G·m₁·m₂/r²",
+   "Sostituisci r con 2r: il denominatore diventa 4r²",
+   "La forza diventa F/4",
+   "Escludi F/2: vale per una dipendenza da 1/r, non da 1/r²"
+  ],
+  "concetto": "dipendenza dall'inverso del quadrato della distanza"
+ },
+ {
+  "id": "NFMA-012",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Un pianeta ha massa doppia e raggio doppio rispetto alla Terra. Quanto vale circa l'accelerazione di gravità sulla sua superficie? (sulla Terra g = 9,8 m/s²)",
+  "opzioni": {
+   "A": "19,6 m/s²",
+   "B": "4,9 m/s²",
+   "C": "9,8 m/s²",
+   "D": "2,45 m/s²",
+   "E": "39,2 m/s²"
+  },
+  "giusta": "B",
+  "perche": "In superficie g = G·M/R². Con M' = 2M e R' = 2R si ottiene g' = G·2M/(4R²) = g/2 = 4,9 m/s². L'errore tipico è pensare che raddoppiando sia la massa sia il raggio l'effetto si compensi e g resti 9,8 m/s², dimenticando che il raggio compare al quadrato.",
+  "semplice": "Un pianeta più pesante attira di più, ma se è anche più grande stai più lontano dal suo centro, e questo conta di più perché la distanza va al quadrato. Così il peso finisce per dimezzarsi.",
+  "passaggi": [
+   "Dati: M' = 2M, R' = 2R, g = 9,8 m/s²",
+   "Formula: g = G·M/R²",
+   "Calcolo: g' = G·2M/(2R)² = (2/4)·G·M/R² = g/2",
+   "Risultato: g' = 9,8/2 = 4,9 m/s²"
+  ],
+  "concetto": "accelerazione di gravità superficiale"
+ },
+ {
+  "id": "NFMA-013",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Un pianeta orbita attorno al Sole con semiasse maggiore di 4 unità astronomiche (UA). Quanto dura il suo periodo di rivoluzione? (la Terra: 1 UA, 1 anno)",
+  "opzioni": {
+   "A": "4 anni",
+   "B": "16 anni",
+   "C": "8 anni",
+   "D": "2 anni",
+   "E": "64 anni"
+  },
+  "giusta": "C",
+  "perche": "La terza legge di Keplero afferma che T² è proporzionale ad a³. Misurando T in anni e a in UA la costante vale 1, quindi T² = 4³ = 64 e T = 8 anni. Chi risponde 64 anni dimentica di estrarre la radice quadrata; chi risponde 16 usa T ∝ a².",
+  "semplice": "Più un pianeta è lontano dal Sole, più tempo impiega a fare il giro: non solo perché il percorso è più lungo, ma anche perché si muove più lentamente.",
+  "passaggi": [
+   "Dati: a = 4 UA; per la Terra a = 1 UA, T = 1 anno",
+   "Formula: T² = a³ (in anni e UA)",
+   "Calcolo: T² = 4³ = 64 anni²",
+   "Risultato: T = √64 = 8 anni"
+  ],
+  "concetto": "terza legge di Keplero"
+ },
+ {
+  "id": "NFMA-014",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Un satellite percorre un'orbita circolare a una distanza di 7,0·10⁶ m dal centro della Terra. Qual è la sua velocità orbitale? (G = 6,67·10⁻¹¹ N·m²/kg², M_Terra = 6,0·10²⁴ kg)",
+  "opzioni": {
+   "A": "5,7·10⁷ m/s",
+   "B": "11 km/s",
+   "C": "3,1 km/s",
+   "D": "7,6 km/s",
+   "E": "760 m/s"
+  },
+  "giusta": "D",
+  "perche": "Per un'orbita circolare la forza di gravità fornisce la forza centripeta: G·M·m/r² = m·v²/r, da cui v = √(G·M/r). Si ha G·M = 4,0·10¹⁴ m³/s², diviso per 7,0·10⁶ m dà 5,7·10⁷ m²/s², la cui radice è circa 7,6·10³ m/s. Il valore 5,7·10⁷ è v², non v; 11 km/s è la velocità di fuga dalla superficie.",
+  "semplice": "Un satellite non cade sulla Terra perché va abbastanza veloce di lato: mentre cade, la Terra curva sotto di lui. Per un'orbita bassa servono circa 7,6 km al secondo.",
+  "passaggi": [
+   "Dati: r = 7,0·10⁶ m, G = 6,67·10⁻¹¹ N·m²/kg², M = 6,0·10²⁴ kg",
+   "Formula: v = √(G·M/r)",
+   "G·M = 6,67·10⁻¹¹ · 6,0·10²⁴ = 4,0·10¹⁴ m³/s²",
+   "G·M/r = 4,0·10¹⁴ / 7,0·10⁶ = 5,7·10⁷ m²/s²",
+   "v = √(5,7·10⁷) m/s ≈ 7,6·10³ m/s = 7,6 km/s"
+  ],
+  "concetto": "velocità orbitale circolare"
+ },
+ {
+  "id": "NFMA-015",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sulla seconda legge di Keplero è corretta?",
+  "opzioni": {
+   "A": "I pianeti si muovono a velocità costante lungo l'orbita",
+   "B": "Il Sole si trova al centro dell'ellisse",
+   "C": "Il periodo è proporzionale al semiasse maggiore",
+   "D": "La velocità del pianeta è massima all'afelio",
+   "E": "Il raggio vettore Sole-pianeta spazza aree uguali in tempi uguali, quindi il pianeta è più veloce al perielio"
+  },
+  "giusta": "E",
+  "perche": "La seconda legge afferma che la velocità areolare è costante, conseguenza della conservazione del momento angolare. Vicino al Sole (perielio) il raggio vettore è corto, quindi per spazzare la stessa area il pianeta deve muoversi più in fretta; all'afelio va più piano. Il Sole sta in uno dei fuochi, non al centro.",
+  "semplice": "Come una pattinatrice che gira più veloce quando stringe le braccia, il pianeta accelera quando passa vicino al Sole e rallenta quando è lontano.",
+  "passaggi": [
+   "Ricorda l'enunciato: aree uguali in tempi uguali",
+   "Vicino al Sole il raggio è corto, quindi il pianeta deve andare più veloce",
+   "Escludi D (è al contrario) e B (il Sole sta in un fuoco)",
+   "Resta la E"
+  ],
+  "concetto": "seconda legge di Keplero"
+ },
+ {
+  "id": "NFMA-016",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Con quale forza si attraggono due persone di 50 kg e 80 kg poste a 2,0 m di distanza? (G = 6,67·10⁻¹¹ N·m²/kg²)",
+  "opzioni": {
+   "A": "6,7·10⁻⁸ N",
+   "B": "1,3·10⁻⁷ N",
+   "C": "2,7·10⁻⁷ N",
+   "D": "6,7·10⁻¹¹ N",
+   "E": "3,3·10⁻⁸ N"
+  },
+  "giusta": "A",
+  "perche": "Applicando F = G·m₁·m₂/r²: m₁·m₂ = 4000 kg², r² = 4,0 m², quindi F = 6,67·10⁻¹¹ · 4000/4,0 = 6,67·10⁻⁸ N. 1,3·10⁻⁷ N si ottiene dividendo per r invece che per r². Il valore è minuscolo, e per questo non ci accorgiamo dell'attrazione tra oggetti comuni.",
+  "semplice": "Tutto attira tutto, anche due persone, ma la forza tra oggetti piccoli è così debole che non la sentiamo: qui è centinaia di volte più piccola del peso di una zanzara.",
+  "passaggi": [
+   "Dati: m₁ = 50 kg, m₂ = 80 kg, r = 2,0 m",
+   "Formula: F = G·m₁·m₂/r²",
+   "Calcolo: 6,67·10⁻¹¹ · (50 · 80) / (2,0)² = 6,67·10⁻¹¹ · 4000/4",
+   "Risultato: F ≈ 6,7·10⁻⁸ N"
+  ],
+  "concetto": "legge di gravitazione universale"
+ },
+ {
+  "id": "NFMA-017",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Se un pianeta avesse lo stesso raggio della Terra ma massa quattro volte maggiore, come cambierebbe la velocità di fuga dalla sua superficie?",
+  "opzioni": {
+   "A": "Quadruplicherebbe",
+   "B": "Raddoppierebbe",
+   "C": "Resterebbe uguale",
+   "D": "Si dimezzerebbe",
+   "E": "Aumenterebbe di sedici volte"
+  },
+  "giusta": "B",
+  "perche": "La velocità di fuga si ricava imponendo che l'energia totale sia nulla: ½mv² − G·M·m/R = 0, da cui v = √(2G·M/R). Con R fisso e M quadruplicata la velocità cresce di √4 = 2 volte. Chi risponde «quadruplicherebbe» dimentica la radice quadrata.",
+  "semplice": "Per sfuggire a un pianeta più massiccio serve più slancio, ma non in proporzione diretta: con una massa quattro volte più grande basta il doppio della velocità.",
+  "passaggi": [
+   "Scrivi la conservazione dell'energia: ½mv² = G·M·m/R",
+   "Ricava v = √(2G·M/R)",
+   "Con M' = 4M: v' = √4 · v = 2v",
+   "Resta la B"
+  ],
+  "concetto": "velocità di fuga"
+ },
+ {
+  "id": "NFMA-018",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Gli astronauti a bordo di una stazione spaziale in orbita a 400 km di quota fluttuano. Qual è la spiegazione corretta?",
+  "opzioni": {
+   "A": "A quella quota la gravità terrestre è nulla",
+   "B": "La Luna compensa l'attrazione della Terra",
+   "C": "Stazione e astronauti sono in caduta libera con la stessa accelerazione, quindi non si premono a vicenda",
+   "D": "Nello spazio manca l'aria, che produce il peso",
+   "E": "La forza centrifuga è maggiore della gravità"
+  },
+  "giusta": "C",
+  "perche": "A 400 km di quota g vale ancora circa il 90% di quella al suolo. La stazione e gli astronauti cadono continuamente verso la Terra con la stessa accelerazione, per cui il pavimento non esercita alcuna reazione sui corpi: è questa reazione che percepiamo come peso. L'idea che la gravità sia nulla è l'errore più comune.",
+  "semplice": "È la stessa sensazione che si prova sulle montagne russe in discesa: tu e il seggiolino cadete insieme e ti senti leggero. Gli astronauti provano la stessa cosa, sempre.",
+  "passaggi": [
+   "Calcola che a 400 km g è ancora circa 8,7 m/s²: escludi A",
+   "Ricorda che il peso percepito è la reazione dell'appoggio",
+   "In orbita stazione e astronauti cadono insieme: nessuna reazione",
+   "Resta la C"
+  ],
+  "concetto": "caduta libera e assenza di peso apparente"
+ },
+ {
+  "id": "NFMA-019",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Perché l'energia potenziale gravitazionale di un corpo di massa m a distanza r da un pianeta di massa M si scrive U = −G·M·m/r, con il segno meno?",
+  "opzioni": {
+   "A": "Perché la forza di gravità è repulsiva",
+   "B": "Perché l'energia potenziale è sempre negativa per convenzione in fisica",
+   "C": "Perché il lavoro della gravità è sempre negativo",
+   "D": "Perché si pone U = 0 a distanza infinita e la forza è attrattiva, quindi avvicinandosi U diminuisce",
+   "E": "Perché r è misurato dal corpo verso il pianeta"
+  },
+  "giusta": "D",
+  "perche": "Lo zero dell'energia potenziale si sceglie all'infinito, dove l'attrazione è nulla. Poiché la gravità è attrattiva, portando il corpo più vicino la forza compie lavoro positivo e l'energia potenziale diminuisce, quindi diventa negativa. Un'energia totale negativa indica un sistema legato, come un satellite in orbita.",
+  "semplice": "Immagina che lontanissimo dal pianeta l'energia sia zero. Avvicinandoti cadi «in una buca», quindi l'energia scende sotto lo zero; per uscirne devi spendere energia.",
+  "passaggi": [
+   "Ricorda dove si pone lo zero: all'infinito",
+   "La gravità è attrattiva: avvicinandosi il corpo perde energia potenziale",
+   "Quindi a distanza finita U è minore di zero",
+   "Escludi A e B: la gravità non è repulsiva e lo zero non è una convenzione generale; resta la D"
+  ],
+  "concetto": "energia potenziale gravitazionale"
+ },
+ {
+  "id": "NFMA-020",
+  "materia": "Fisica",
+  "argomento": "Gravitazione universale",
+  "livello": "superiori",
+  "domanda": "Un satellite geostazionario ha un periodo di circa 8,6·10⁴ s. A quale distanza dal centro della Terra si trova? (G·M_Terra = 4,0·10¹⁴ m³/s²)",
+  "opzioni": {
+   "A": "6,4·10⁶ m",
+   "B": "3,6·10⁷ m",
+   "C": "3,8·10⁸ m",
+   "D": "1,5·10⁸ m",
+   "E": "4,2·10⁷ m"
+  },
+  "giusta": "E",
+  "perche": "Uguagliando la gravità alla forza centripeta con v = 2πr/T si ottiene r³ = G·M·T²/(4π²). Con T = 8,6·10⁴ s: T² ≈ 7,4·10⁹ s², G·M·T² ≈ 3,0·10²⁴, diviso 4π² ≈ 39,5 dà circa 7,5·10²² m³, la cui radice cubica è circa 4,2·10⁷ m. Il valore 3,6·10⁷ m è la quota sopra la superficie, non la distanza dal centro.",
+  "semplice": "Per restare sempre sopra lo stesso punto della Terra, il satellite deve fare un giro al giorno. Questo succede solo a una distanza precisa, circa 42 000 km dal centro della Terra.",
+  "passaggi": [
+   "Dati: T = 8,6·10⁴ s, G·M = 4,0·10¹⁴ m³/s²",
+   "Formula: r³ = G·M·T²/(4π²)",
+   "Calcolo: 4,0·10¹⁴ · 7,4·10⁹ / 39,5 ≈ 7,5·10²² m³",
+   "Risultato: r = ∛(7,5·10²²) ≈ 4,2·10⁷ m"
+  ],
+  "concetto": "orbita geostazionaria"
+ },
+ {
+  "id": "NFMA-021",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Una massa di 0,50 kg è attaccata a una molla di costante elastica 200 N/m e oscilla su un piano senza attrito. Qual è il periodo delle oscillazioni?",
+  "opzioni": {
+   "A": "0,31 s",
+   "B": "0,050 s",
+   "C": "3,2 s",
+   "D": "0,10 s",
+   "E": "20 s"
+  },
+  "giusta": "A",
+  "perche": "Per un oscillatore massa-molla T = 2π√(m/k). Si ha m/k = 0,50/200 = 0,0025 s², la cui radice è 0,050 s; moltiplicando per 2π ≈ 6,28 si ottiene T ≈ 0,31 s. Il valore 0,050 s dimentica il fattore 2π; 3,2 s è circa il reciproco del risultato corretto.",
+  "semplice": "Una molla dura e una massa leggera oscillano velocemente; una molla morbida e una massa pesante oscillano lentamente. Qui la molla è dura e la massa leggera, quindi il periodo è breve, circa un terzo di secondo.",
+  "passaggi": [
+   "Dati: m = 0,50 kg, k = 200 N/m",
+   "Formula: T = 2π√(m/k)",
+   "Calcolo: m/k = 0,50 kg / 200 N/m = 0,0025 s², radice = 0,050 s",
+   "Risultato: T = 6,28 · 0,050 s ≈ 0,31 s"
+  ],
+  "concetto": "periodo dell'oscillatore massa-molla"
+ },
+ {
+  "id": "NFMA-022",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Un pendolo semplice è lungo 1,0 m. Qual è il periodo delle piccole oscillazioni? (g = 9,8 m/s²)",
+  "opzioni": {
+   "A": "1,0 s",
+   "B": "2,0 s",
+   "C": "0,32 s",
+   "D": "6,3 s",
+   "E": "3,1 s"
+  },
+  "giusta": "B",
+  "perche": "Per piccole oscillazioni T = 2π√(L/g) = 2π·√(1,0/9,8) = 6,28 · 0,32 s ≈ 2,0 s. Il valore 0,32 s è la sola radice senza il fattore 2π. Il periodo non dipende né dalla massa né dall'ampiezza, purché quest'ultima sia piccola.",
+  "semplice": "Un pendolo lungo un metro impiega circa due secondi per andare e tornare: un secondo per ogni passaggio. Non importa quanto è pesante la pallina appesa.",
+  "passaggi": [
+   "Dati: L = 1,0 m, g = 9,8 m/s²",
+   "Formula: T = 2π√(L/g)",
+   "Calcolo: √(1,0 m / 9,8 m/s²) = √0,102 s² ≈ 0,32 s",
+   "Risultato: T = 6,28 · 0,32 s ≈ 2,0 s"
+  ],
+  "concetto": "periodo del pendolo semplice"
+ },
+ {
+  "id": "NFMA-023",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "In un moto armonico semplice, in quale posizione l'accelerazione ha modulo massimo e la velocità è nulla?",
+  "opzioni": {
+   "A": "Nella posizione di equilibrio",
+   "B": "A metà strada tra equilibrio ed estremo",
+   "C": "Agli estremi dell'oscillazione",
+   "D": "In nessuna posizione: sono sempre entrambe diverse da zero",
+   "E": "In tutte le posizioni, perché l'accelerazione è costante"
+  },
+  "giusta": "C",
+  "perche": "Nel moto armonico a = −ω²·x: l'accelerazione è proporzionale allo spostamento ed è massima dove |x| = A, cioè agli estremi, dove il corpo si ferma per invertire il moto. Nella posizione di equilibrio succede l'opposto: velocità massima e accelerazione nulla. L'accelerazione non è costante, quindi E è sbagliata.",
+  "semplice": "Un'altalena si ferma un istante nei punti più alti e lì viene tirata indietro con più forza; in basso passa velocissima, ma lì nessuno la spinge.",
+  "passaggi": [
+   "Ricorda la relazione a = −ω²·x",
+   "L'accelerazione è massima dove lo spostamento è massimo, cioè agli estremi",
+   "Agli estremi il corpo inverte il moto, quindi la velocità è nulla",
+   "Resta la C"
+  ],
+  "concetto": "velocità e accelerazione nel moto armonico"
+ },
+ {
+  "id": "NFMA-024",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Come cambia il periodo di un pendolo semplice se la sua lunghezza viene quadruplicata?",
+  "opzioni": {
+   "A": "Quadruplica",
+   "B": "Si riduce a un quarto",
+   "C": "Resta uguale",
+   "D": "Raddoppia",
+   "E": "Si dimezza"
+  },
+  "giusta": "D",
+  "perche": "Poiché T = 2π√(L/g), il periodo è proporzionale alla radice quadrata della lunghezza: con L' = 4L si ha T' = √4·T = 2T. L'errore tipico è pensare a una proporzionalità diretta e rispondere che quadruplica.",
+  "semplice": "Un pendolo più lungo oscilla più lentamente, ma non in proporzione: per raddoppiare il tempo di un'oscillazione bisogna allungare il filo quattro volte.",
+  "passaggi": [
+   "Scrivi la formula: T = 2π√(L/g)",
+   "Sostituisci L con 4L: T' = 2π√(4L/g)",
+   "Porta fuori √4 = 2: T' = 2T",
+   "Resta la D"
+  ],
+  "concetto": "dipendenza del periodo dalla lunghezza"
+ },
+ {
+  "id": "NFMA-025",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Un corpo si muove secondo la legge x(t) = 0,10 m · cos(5,0 rad/s · t). Quanto vale la sua velocità massima?",
+  "opzioni": {
+   "A": "0,10 m/s",
+   "B": "2,5 m/s",
+   "C": "5,0 m/s",
+   "D": "0,020 m/s",
+   "E": "0,50 m/s"
+  },
+  "giusta": "E",
+  "perche": "Derivando x(t) si ottiene v(t) = −A·ω·sin(ωt), quindi la velocità massima vale A·ω = 0,10 m · 5,0 rad/s = 0,50 m/s. Il valore 2,5 m/s è invece l'accelerazione massima A·ω² (in m/s²); 0,020 m/s si ottiene dividendo A per ω.",
+  "semplice": "Il corpo va avanti e indietro di 10 cm; più rapidamente oscilla, più veloce passa dal centro. Qui al centro raggiunge mezzo metro al secondo.",
+  "passaggi": [
+   "Dati: A = 0,10 m, ω = 5,0 rad/s",
+   "Formula: v_max = A·ω",
+   "Calcolo: 0,10 m · 5,0 rad/s",
+   "Risultato: v_max = 0,50 m/s"
+  ],
+  "concetto": "velocità massima nel moto armonico"
+ },
+ {
+  "id": "NFMA-026",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Una molla di costante k = 400 N/m oscilla con ampiezza 5,0 cm. Quanto vale l'energia meccanica totale dell'oscillatore?",
+  "opzioni": {
+   "A": "0,50 J",
+   "B": "1,0 J",
+   "C": "10 J",
+   "D": "500 J",
+   "E": "20 J"
+  },
+  "giusta": "A",
+  "perche": "L'energia meccanica di un oscillatore armonico è uguale all'energia elastica agli estremi, E = ½·k·A². Convertendo l'ampiezza in metri (A = 0,050 m): E = ½ · 400 N/m · 0,0025 m² = 0,50 J. 1,0 J dimentica il fattore ½; 500 J deriva dall'uso dei centimetri al posto dei metri.",
+  "semplice": "Quando la molla è tutta tesa, tutta l'energia è immagazzinata nella molla, come in un elastico tirato. Questa energia poi si trasforma in movimento e torna indietro, sempre la stessa.",
+  "passaggi": [
+   "Dati: k = 400 N/m, A = 5,0 cm = 0,050 m",
+   "Formula: E = ½·k·A²",
+   "Calcolo: ½ · 400 N/m · (0,050 m)² = 200 · 0,0025 J",
+   "Risultato: E = 0,50 J"
+  ],
+  "concetto": "energia dell'oscillatore armonico"
+ },
+ {
+  "id": "NFMA-027",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Che cosa si intende per risonanza in un sistema oscillante?",
+  "opzioni": {
+   "A": "Lo smorzamento progressivo delle oscillazioni per attrito",
+   "B": "Il forte aumento dell'ampiezza quando la frequenza della forza esterna è vicina alla frequenza propria del sistema",
+   "C": "L'oscillazione di un sistema senza alcuna forza esterna",
+   "D": "La sovrapposizione di due onde di frequenza leggermente diversa",
+   "E": "La diminuzione della frequenza dovuta all'aumento della massa"
+  },
+  "giusta": "B",
+  "perche": "Un oscillatore forzato risponde con ampiezza massima quando la frequenza della forza esterna coincide (o quasi) con la sua frequenza propria: in questa condizione l'energia viene trasferita nel modo più efficiente. La sovrapposizione di frequenze vicine descrive invece i battimenti; l'oscillazione senza forze esterne è quella libera.",
+  "semplice": "Se spingi un'altalena proprio al ritmo giusto, anche con piccole spinte la fai andare altissima. Se spingi a caso, si muove poco.",
+  "passaggi": [
+   "Riconosci che si parla di oscillazioni forzate",
+   "Ricorda che l'ampiezza dipende dalla frequenza della forza esterna",
+   "È massima quando questa coincide con la frequenza propria",
+   "Escludi D (battimenti) e A (smorzamento): resta la B"
+  ],
+  "concetto": "risonanza"
+ },
+ {
+  "id": "NFMA-028",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Un oscillatore ha pulsazione ω = 10π rad/s. Qual è la sua frequenza?",
+  "opzioni": {
+   "A": "10 Hz",
+   "B": "31 Hz",
+   "C": "5,0 Hz",
+   "D": "0,20 Hz",
+   "E": "20 Hz"
+  },
+  "giusta": "C",
+  "perche": "La pulsazione e la frequenza sono legate da ω = 2π·f, quindi f = ω/(2π) = 10π/(2π) = 5,0 Hz; il periodo è 0,20 s. Chi risponde 0,20 Hz ha calcolato il periodo e lo ha scambiato per la frequenza; 31 Hz è il valore numerico di ω.",
+  "semplice": "La pulsazione conta gli angoli percorsi al secondo, la frequenza conta i giri completi al secondo. Un giro sono 2π radianti, quindi basta dividere.",
+  "passaggi": [
+   "Dati: ω = 10π rad/s",
+   "Formula: f = ω/(2π)",
+   "Calcolo: 10π / 2π = 5,0",
+   "Risultato: f = 5,0 Hz (e T = 1/f = 0,20 s)"
+  ],
+  "concetto": "pulsazione e frequenza"
+ },
+ {
+  "id": "NFMA-029",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Quale affermazione sull'oscillatore massa-molla ideale è corretta?",
+  "opzioni": {
+   "A": "Il periodo raddoppia se raddoppia l'ampiezza",
+   "B": "Il periodo dipende dall'accelerazione di gravità",
+   "C": "Il periodo raddoppia se raddoppia la costante elastica",
+   "D": "Se la massa quadruplica, il periodo raddoppia",
+   "E": "Il periodo è proporzionale alla massa"
+  },
+  "giusta": "D",
+  "perche": "Da T = 2π√(m/k) si vede che il periodo è proporzionale a √m: con massa quadrupla T raddoppia. Il periodo non dipende dall'ampiezza (isocronismo) né da g, e aumentando k il periodo diminuisce. L'idea che dipenda dall'ampiezza è un errore frequente.",
+  "semplice": "Una molla con un peso più grande oscilla più lentamente, ma ci vuole un peso quattro volte maggiore per rendere l'oscillazione due volte più lenta. Quanto la tiri all'inizio non conta.",
+  "passaggi": [
+   "Scrivi la formula: T = 2π√(m/k)",
+   "Escludi A e B: ampiezza e g non compaiono",
+   "Escludi C: se k cresce, T diminuisce",
+   "Con m' = 4m: T' = 2T, resta la D"
+  ],
+  "concetto": "dipendenza del periodo da massa e costante elastica"
+ },
+ {
+  "id": "NFMA-030",
+  "materia": "Fisica",
+  "argomento": "Moto armonico e oscillazioni",
+  "livello": "superiori",
+  "domanda": "Che cosa accade in un'oscillazione smorzata dalla presenza di attrito viscoso?",
+  "opzioni": {
+   "A": "L'ampiezza cresce nel tempo",
+   "B": "La frequenza aumenta continuamente fino all'infinito",
+   "C": "L'energia meccanica si conserva",
+   "D": "Il moto diventa rettilineo uniforme",
+   "E": "L'ampiezza diminuisce nel tempo perché l'energia meccanica viene dissipata"
+  },
+  "giusta": "E",
+  "perche": "Con attrito viscoso una parte dell'energia meccanica si trasforma a ogni oscillazione in energia termica, per cui l'ampiezza decresce (per smorzamento debole, in modo esponenziale). L'energia meccanica quindi non si conserva. L'ampiezza crescerebbe solo con una forza esterna che fornisce energia, come nella risonanza.",
+  "semplice": "Un'altalena lasciata andare oscilla sempre meno finché si ferma: l'aria e l'attrito le rubano un po' di energia a ogni passaggio.",
+  "passaggi": [
+   "Riconosci la presenza di una forza dissipativa",
+   "Ricorda che l'attrito trasforma energia meccanica in calore",
+   "Con meno energia l'ampiezza si riduce",
+   "Escludi C e A: resta la E"
+  ],
+  "concetto": "oscillazioni smorzate"
+ },
+ {
+  "id": "NFMA-031",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Un oggetto è posto a 30 cm da una lente convergente sottile con distanza focale 10 cm. A che distanza dalla lente si forma l'immagine?",
+  "opzioni": {
+   "A": "15 cm dalla parte opposta, reale e capovolta",
+   "B": "7,5 cm dalla stessa parte, virtuale",
+   "C": "20 cm dalla parte opposta, reale e dritta",
+   "D": "30 cm dalla parte opposta, reale e capovolta",
+   "E": "15 cm dalla stessa parte, virtuale e dritta"
+  },
+  "giusta": "A",
+  "perche": "Dalla legge delle lenti sottili 1/p + 1/q = 1/f si ricava 1/q = 1/10 − 1/30 = 2/30, quindi q = 15 cm, positivo: l'immagine è reale, dalla parte opposta all'oggetto. L'ingrandimento G = −q/p = −0,5 indica un'immagine capovolta e rimpicciolita. Il valore 7,5 cm si ottiene sommando invece di sottrarre.",
+  "semplice": "Una lente da ingrandimento tenuta lontano dall'oggetto proietta un'immagine piccola e capovolta, come fa l'obiettivo di una macchina fotografica sul sensore.",
+  "passaggi": [
+   "Dati: p = 30 cm, f = 10 cm",
+   "Formula: 1/p + 1/q = 1/f",
+   "Calcolo: 1/q = 1/10 − 1/30 = 3/30 − 1/30 = 2/30 cm⁻¹",
+   "Risultato: q = 15 cm, positivo: immagine reale; G = −15/30 = −0,5, capovolta"
+  ],
+  "concetto": "legge delle lenti sottili"
+ },
+ {
+  "id": "NFMA-032",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Quali sono le caratteristiche dell'immagine prodotta da uno specchio piano?",
+  "opzioni": {
+   "A": "Reale, capovolta, rimpicciolita",
+   "B": "Virtuale, dritta, uguale all'oggetto, simmetrica rispetto allo specchio",
+   "C": "Reale, dritta, ingrandita",
+   "D": "Virtuale, capovolta, uguale all'oggetto",
+   "E": "Reale, dritta, alla stessa distanza dell'oggetto ma davanti allo specchio"
+  },
+  "giusta": "B",
+  "perche": "I raggi riflessi da uno specchio piano divergono e sembrano provenire da un punto dietro lo specchio, dove nessun raggio passa davvero: l'immagine è quindi virtuale. Si trova alla stessa distanza dell'oggetto, è dritta e ha le stesse dimensioni, ma con destra e sinistra scambiate (simmetria speculare). Un'immagine reale si potrebbe raccogliere su uno schermo, cosa impossibile con uno specchio piano.",
+  "semplice": "Nello specchio del bagno ti vedi dritto e della tua grandezza, come se ci fosse un altro te dietro il vetro. Ma se alzi la mano destra, la tua immagine alza quella che sembra la sinistra.",
+  "passaggi": [
+   "Ricorda che i raggi riflessi divergono: l'immagine è virtuale",
+   "L'immagine è dritta e della stessa dimensione dell'oggetto",
+   "Si trova dietro lo specchio, alla stessa distanza dell'oggetto",
+   "Resta la B"
+  ],
+  "concetto": "immagine in uno specchio piano"
+ },
+ {
+  "id": "NFMA-033",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Un oggetto si trova a 10 cm da uno specchio concavo con raggio di curvatura 40 cm. Com'è l'immagine?",
+  "opzioni": {
+   "A": "Reale, capovolta, a 20 cm davanti allo specchio",
+   "B": "Reale, dritta, a 40 cm",
+   "C": "Virtuale, dritta, ingrandita 2 volte, a 20 cm dietro lo specchio",
+   "D": "Virtuale, capovolta, rimpicciolita",
+   "E": "Non si forma alcuna immagine"
+  },
+  "giusta": "C",
+  "perche": "La distanza focale è metà del raggio: f = 20 cm. L'oggetto è tra il fuoco e lo specchio, quindi 1/q = 1/20 − 1/10 = −1/20 e q = −20 cm: il segno negativo indica un'immagine virtuale, dietro lo specchio. L'ingrandimento G = −q/p = +2 indica un'immagine dritta e doppia. Chi usa f = 40 cm confonde raggio e distanza focale.",
+  "semplice": "Lo specchio per truccarsi o radersi è concavo: se ti avvicini molto, vedi il viso dritto e più grande, come attraverso una lente d'ingrandimento.",
+  "passaggi": [
+   "Dati: p = 10 cm, R = 40 cm, quindi f = R/2 = 20 cm",
+   "Formula: 1/p + 1/q = 1/f",
+   "Calcolo: 1/q = 1/20 − 1/10 = −1/20 cm⁻¹, q = −20 cm (virtuale)",
+   "Ingrandimento: G = −q/p = 20/10 = +2, dritta e doppia"
+  ],
+  "concetto": "specchio concavo con oggetto entro il fuoco"
+ },
+ {
+  "id": "NFMA-034",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Un raggio di luce passa dall'aria (n = 1,00) all'acqua (n = 1,33) con un angolo di incidenza di 30°. Qual è circa l'angolo di rifrazione?",
+  "opzioni": {
+   "A": "30°",
+   "B": "42°",
+   "C": "40°",
+   "D": "22°",
+   "E": "60°"
+  },
+  "giusta": "D",
+  "perche": "Per la legge di Snell n₁·sin θ₁ = n₂·sin θ₂: sin θ₂ = 1,00 · 0,50 / 1,33 ≈ 0,376, da cui θ₂ ≈ 22°. Passando in un mezzo più rifrangente il raggio si avvicina alla normale, quindi l'angolo deve essere minore di 30°: 40° e 42° sono incompatibili con questa regola.",
+  "semplice": "Quando la luce entra nell'acqua rallenta e si piega verso la verticale. Per questo un cucchiaino nel bicchiere sembra spezzato.",
+  "passaggi": [
+   "Dati: n₁ = 1,00, θ₁ = 30°, n₂ = 1,33",
+   "Formula: n₁·sin θ₁ = n₂·sin θ₂",
+   "Calcolo: sin θ₂ = 1,00 · 0,50 / 1,33 ≈ 0,376",
+   "Risultato: θ₂ = arcsin 0,376 ≈ 22°, minore di 30° come previsto"
+  ],
+  "concetto": "legge di Snell"
+ },
+ {
+  "id": "NFMA-035",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Qual è circa l'angolo limite per la riflessione totale di un raggio che passa dal vetro (n = 1,50) all'aria (n = 1,00)?",
+  "opzioni": {
+   "A": "90°",
+   "B": "34°",
+   "C": "56°",
+   "D": "30°",
+   "E": "42°"
+  },
+  "giusta": "E",
+  "perche": "La riflessione totale avviene quando il raggio passa a un mezzo meno rifrangente con un angolo maggiore dell'angolo limite, per il quale l'angolo di rifrazione è 90°: sin θ_L = n₂/n₁ = 1,00/1,50 ≈ 0,667, quindi θ_L ≈ 42°. Il fenomeno non può avvenire passando dall'aria al vetro.",
+  "semplice": "Se guardi dall'acqua verso la superficie molto di sbieco, la superficie diventa uno specchio. Nelle fibre ottiche la luce resta intrappolata proprio così.",
+  "passaggi": [
+   "Dati: n₁ = 1,50 (vetro), n₂ = 1,00 (aria)",
+   "Formula: sin θ_L = n₂/n₁",
+   "Calcolo: sin θ_L = 1,00/1,50 ≈ 0,667",
+   "Risultato: θ_L ≈ 42°"
+  ],
+  "concetto": "angolo limite e riflessione totale"
+ },
+ {
+  "id": "NFMA-036",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Un paio di occhiali ha lenti di +4 diottrie. Che tipo di lenti sono?",
+  "opzioni": {
+   "A": "Lenti convergenti con distanza focale 25 cm",
+   "B": "Lenti divergenti con distanza focale 25 cm",
+   "C": "Lenti convergenti con distanza focale 4 m",
+   "D": "Lenti divergenti con distanza focale 4 cm",
+   "E": "Lenti convergenti con distanza focale 40 cm"
+  },
+  "giusta": "A",
+  "perche": "Il potere diottrico è il reciproco della distanza focale in metri: P = 1/f, quindi f = 1/4 m = 0,25 m = 25 cm. Il segno positivo indica una lente convergente, usata per esempio per l'ipermetropia e la presbiopia. Chi risponde 4 m dimentica di fare il reciproco.",
+  "semplice": "Il numero delle diottrie dice quanto la lente è «forte»: più diottrie, fuoco più vicino. Il segno più significa che la lente concentra la luce, come una lente d'ingrandimento.",
+  "passaggi": [
+   "Dati: P = +4 D",
+   "Formula: f = 1/P (in metri)",
+   "Calcolo: f = 1/4 m = 0,25 m",
+   "Il segno + indica una lente convergente: f = 25 cm"
+  ],
+  "concetto": "potere diottrico"
+ },
+ {
+  "id": "NFMA-037",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Quali caratteristiche ha sempre l'immagine di un oggetto reale prodotta da una lente divergente?",
+  "opzioni": {
+   "A": "Reale, capovolta, ingrandita",
+   "B": "Virtuale, dritta, rimpicciolita",
+   "C": "Reale, dritta, rimpicciolita",
+   "D": "Virtuale, capovolta, ingrandita",
+   "E": "Dipende dalla posizione dell'oggetto rispetto al fuoco"
+  },
+  "giusta": "B",
+  "perche": "Una lente divergente allarga i raggi, che sembrano provenire da un punto dalla stessa parte dell'oggetto, tra la lente e il fuoco. Per ogni posizione dell'oggetto reale l'immagine è virtuale, dritta e più piccola. La risposta E vale per le lenti convergenti, non per quelle divergenti.",
+  "semplice": "Guardando attraverso gli occhiali di un miope gli oggetti sembrano più piccoli e un po' più vicini, ma sempre dritti.",
+  "passaggi": [
+   "Ricorda che una lente divergente allarga il fascio di raggi",
+   "I prolungamenti dei raggi si incontrano dalla parte dell'oggetto: immagine virtuale",
+   "L'immagine è sempre dritta e rimpicciolita",
+   "Escludi E, che vale per le lenti convergenti: resta la B"
+  ],
+  "concetto": "immagine in una lente divergente"
+ },
+ {
+  "id": "NFMA-038",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Qual è la velocità della luce in un vetro con indice di rifrazione 1,5? (c = 3,0·10⁸ m/s)",
+  "opzioni": {
+   "A": "4,5·10⁸ m/s",
+   "B": "3,0·10⁸ m/s",
+   "C": "2,0·10⁸ m/s",
+   "D": "1,5·10⁸ m/s",
+   "E": "1,0·10⁸ m/s"
+  },
+  "giusta": "C",
+  "perche": "L'indice di rifrazione è il rapporto tra la velocità della luce nel vuoto e quella nel mezzo: n = c/v, quindi v = c/n = 3,0·10⁸ / 1,5 = 2,0·10⁸ m/s. Chi risponde 4,5·10⁸ m/s moltiplica invece di dividere, ottenendo una velocità maggiore di c, impossibile.",
+  "semplice": "Nel vetro la luce va più piano che nell'aria, come una persona che cammina nell'acqua. Un indice 1,5 vuol dire che va una volta e mezza più lenta.",
+  "passaggi": [
+   "Dati: n = 1,5, c = 3,0·10⁸ m/s",
+   "Formula: v = c/n",
+   "Calcolo: 3,0·10⁸ m/s / 1,5",
+   "Risultato: v = 2,0·10⁸ m/s"
+  ],
+  "concetto": "indice di rifrazione"
+ },
+ {
+  "id": "NFMA-039",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Nell'occhio miope l'immagine di un oggetto lontano si forma davanti alla retina. Come si corregge questo difetto?",
+  "opzioni": {
+   "A": "Con una lente convergente",
+   "B": "Con uno specchio concavo",
+   "C": "Con una lente cilindrica",
+   "D": "Con una lente divergente",
+   "E": "Con un prisma"
+  },
+  "giusta": "D",
+  "perche": "Nell'occhio miope il sistema ottico è troppo convergente o il bulbo è troppo lungo, per cui i raggi paralleli si focalizzano prima della retina. Una lente divergente (potere negativo) allarga i raggi e sposta il fuoco indietro, sulla retina. La lente convergente serve invece per l'ipermetropia; quella cilindrica per l'astigmatismo.",
+  "semplice": "Il miope vede male da lontano perché il suo occhio «mette a fuoco troppo presto». Una lente che apre un po' i raggi sposta la messa a fuoco al punto giusto.",
+  "passaggi": [
+   "Riconosci il difetto: fuoco davanti alla retina",
+   "Serve ridurre la convergenza complessiva",
+   "Una lente divergente fa questo",
+   "Escludi A (ipermetropia) e C (astigmatismo): resta la D"
+  ],
+  "concetto": "correzione della miopia"
+ },
+ {
+  "id": "NFMA-040",
+  "materia": "Fisica",
+  "argomento": "Ottica geometrica: specchi e lenti",
+  "livello": "superiori",
+  "domanda": "Un francobollo alto 2,0 cm è posto a 4,0 cm da una lente convergente di distanza focale 5,0 cm. Quanto è alta la sua immagine?",
+  "opzioni": {
+   "A": "2,0 cm, reale",
+   "B": "1,0 cm, virtuale",
+   "C": "8,0 cm, reale e capovolta",
+   "D": "4,0 cm, virtuale",
+   "E": "10 cm, virtuale e dritta"
+  },
+  "giusta": "E",
+  "perche": "Con 1/p + 1/q = 1/f: 1/q = 1/5,0 − 1/4,0 = −1/20, quindi q = −20 cm (immagine virtuale dalla stessa parte dell'oggetto). L'ingrandimento è G = −q/p = 20/4,0 = 5, positivo, quindi l'immagine è dritta e alta 5 · 2,0 cm = 10 cm. Chi trascura il segno di q potrebbe concludere erroneamente che l'immagine sia reale e capovolta.",
+  "semplice": "È il funzionamento della lente d'ingrandimento: avvicinandola all'oggetto, entro il fuoco, si vede un francobollo grande e dritto.",
+  "passaggi": [
+   "Dati: h = 2,0 cm, p = 4,0 cm, f = 5,0 cm",
+   "Formula: 1/q = 1/f − 1/p",
+   "Calcolo: 1/q = 1/5,0 − 1/4,0 = −1/20 cm⁻¹, q = −20 cm (virtuale)",
+   "Ingrandimento: G = −q/p = 20/4,0 = 5",
+   "Altezza: 5 · 2,0 cm = 10 cm, dritta"
+  ],
+  "concetto": "lente d'ingrandimento"
+ }
+]

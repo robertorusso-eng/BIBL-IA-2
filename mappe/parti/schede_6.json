@@ -1,0 +1,804 @@
+{
+ "enzimi della glicolisi": {
+  "tipo": "enzima",
+  "base": "Una squadra di 10 aiutanti che, uno dopo l'altro, spezzano lo zucchero e ne ricavano un po' di energia.",
+  "superiore": "I 10 enzimi del citoplasma che trasformano il glucosio in 2 piruvato. Tre passaggi sono irreversibili (esochinasi, fosfofruttochinasi-1, piruvato chinasi); gli altri sette sono reversibili e servono anche alla gluconeogenesi.",
+  "universita": "Esochinasi/glucochinasi, fosfoglucosio isomerasi, PFK-1, aldolasi, trioso fosfato isomerasi, gliceraldeide 3-fosfato deidrogenasi, fosfoglicerato chinasi, fosfoglicerato mutasi, enolasi, piruvato chinasi. Controllo soprattutto su PFK-1 (AMP e fruttosio 2,6-bisfosfato attivano; ATP e citrato inibiscono) e piruvato chinasi (fruttosio 1,6-bisfosfato attiva; nel fegato il glucagone la inibisce per fosforilazione). Resa netta: 2 ATP e 2 NADH per glucosio.",
+  "clinica": "Deficit di piruvato chinasi: il globulo rosso, che vive solo di glicolisi, resta senza ATP; anemia emolitica cronica non sferocitica. Il fluoruro inibisce l'enolasi: per questo le provette per la glicemia contengono fluoruro di sodio."
+ },
+ "enzimi del ciclo di Krebs": {
+  "tipo": "enzima",
+  "base": "Una squadra di aiutanti nel mitocondrio che gira in cerchio: smonta il carburante, butta fuori anidride carbonica e carica le «pile» della cellula.",
+  "superiore": "Gli 8 enzimi della matrice mitocondriale che ossidano l'acetil-CoA a 2 CO₂. Per ogni giro producono 3 NADH, 1 FADH₂ e 1 GTP; l'ossalacetato iniziale si rigenera alla fine.",
+  "universita": "Citrato sintasi, aconitasi, isocitrato deidrogenasi, α-chetoglutarato deidrogenasi, succinil-CoA sintetasi, succinato deidrogenasi (unico legato alla membrana interna, complesso II), fumarasi, malato deidrogenasi. Tappe regolate: citrato sintasi, isocitrato deidrogenasi (attivata da ADP e Ca²⁺, inibita da ATP e NADH) e α-chetoglutarato deidrogenasi (inibita da succinil-CoA e NADH, attivata dal Ca²⁺). Il ciclo è anfibolico: i suoi intermedi servono anche alle sintesi e vanno reintegrati (anaplerosi, piruvato carbossilasi).",
+  "clinica": "Mutazioni di IDH1/IDH2 producono 2-idrossiglutarato (oncometabolita) in gliomi e leucemie mieloidi acute; esistono inibitori mirati. Mutazioni della succinato deidrogenasi predispongono a paragangliomi e feocromocitomi; quelle della fumarasi a leiomiomatosi e carcinoma renale ereditari."
+ },
+ "navetta malato-aspartato": {
+  "tipo": "struttura",
+  "base": "Un «traghetto» che porta l'energia raccolta nel citoplasma dentro il mitocondrio, senza perderne.",
+  "superiore": "Sistema che porta nel mitocondrio gli elettroni del NADH formato nella glicolisi. La membrana interna non lascia passare il NADH: gli elettroni viaggiano dentro il malato.",
+  "universita": "Nel citosol la malato deidrogenasi riduce l'ossalacetato a malato (NADH → NAD⁺); il malato entra con l'antiporto malato/α-chetoglutarato e nella matrice ridà NADH. L'ossalacetato torna fuori come aspartato (transaminasi e antiporto glutammato/aspartato). Gli elettroni arrivano al complesso I: circa 2,5 ATP per NADH citosolico. Attiva soprattutto in fegato, cuore e rene. È reversibile.",
+  "clinica": ""
+ },
+ "navetta del glicerolo 3-fosfato": {
+  "tipo": "struttura",
+  "base": "Un «traghetto» più veloce ma meno conveniente: porta l'energia nel mitocondrio perdendone un po'.",
+  "superiore": "Sistema che porta nel mitocondrio gli elettroni del NADH del citoplasma usando il glicerolo 3-fosfato. Gli elettroni arrivano come FADH₂, quindi rendono meno ATP.",
+  "universita": "La glicerolo 3-fosfato deidrogenasi citosolica riduce il diidrossiacetone fosfato a glicerolo 3-fosfato (NADH → NAD⁺); la forma mitocondriale, sulla faccia esterna della membrana interna, lo riossida con FAD e cede gli elettroni direttamente all'ubichinone, saltando il complesso I. Circa 1,5 ATP per NADH citosolico. Irreversibile; attiva soprattutto nel muscolo scheletrico e nel cervello. Spiega perché la resa per glucosio è circa 30 invece di 32 ATP.",
+  "clinica": ""
+ },
+ "proteasoma": {
+  "tipo": "struttura",
+  "base": "Un «tritarifiuti» dentro la cellula che fa a pezzi le proteine vecchie o rotte.",
+  "superiore": "Grande complesso proteico a forma di barile, nel citoplasma e nel nucleo. Demolisce le proteine marcate con una piccola proteina, l'ubiquitina, e le riduce in piccoli peptidi.",
+  "universita": "Proteasoma 26S: core 20S (4 anelli di 7 subunità; attività proteolitiche nelle subunità β, con treonina N-terminale) + particelle regolatrici 19S che riconoscono le catene di poliubiquitina, staccano l'ubiquitina e srotolano la proteina con ATP. Le proteine sono marcate dal sistema E1-E2-E3 (ubiquitina ligasi). Regola il ciclo cellulare (cicline), i fattori di trascrizione e la presentazione degli antigeni su MHC I.",
+  "clinica": "Bortezomib e carfilzomib (inibitori del proteasoma) si usano nel mieloma multiplo: le plasmacellule tumorali, che producono moltissime proteine, sono molto sensibili al blocco."
+ },
+ "α-chetoacido": {
+  "tipo": "molecola",
+  "base": "Quello che resta di un mattoncino delle proteine dopo che ha perso il suo azoto.",
+  "superiore": "Molecola con un gruppo chetonico vicino al gruppo carbossilico. È lo «scheletro di carbonio» di un amminoacido dopo la transaminazione: per esempio l'alanina diventa piruvato, l'aspartato diventa ossalacetato.",
+  "universita": "Ogni amminoacido ha il suo α-chetoacido: alanina → piruvato, aspartato → ossalacetato, glutammato → α-chetoglutarato. Gli scheletri confluiscono in 7 intermedi: piruvato, acetil-CoA, acetoacetil-CoA, α-chetoglutarato, succinil-CoA, fumarato, ossalacetato. Glucogenici quelli che danno piruvato o intermedi del ciclo di Krebs; chetogenici quelli che danno acetil-CoA o acetoacetil-CoA.",
+  "clinica": "Malattia delle urine a sciroppo d'acero: deficit della deidrogenasi degli α-chetoacidi a catena ramificata (da leucina, isoleucina, valina); si accumulano nel sangue e danneggiano il cervello. Screening neonatale e dieta."
+ },
+ "transaminasi (aminotransferasi)": {
+  "tipo": "enzima",
+  "base": "Un aiutante che sposta il pezzo con l'azoto da un mattoncino a un altro.",
+  "superiore": "Enzimi che trasferiscono il gruppo amminico da un amminoacido a un α-chetoacido (di solito l'α-chetoglutarato, che diventa glutammato). Servono sia a demolire sia a costruire amminoacidi. Hanno bisogno della vitamina B6.",
+  "universita": "Transferasi (EC 2.6.1.x) con piridossal fosfato come coenzima: meccanismo «a ping-pong», il PLP diventa temporaneamente piridossammina fosfato. Reazioni reversibili, vicine all'equilibrio. Le più note: ALT (alanina + α-chetoglutarato ⇄ piruvato + glutammato) e AST (aspartato + α-chetoglutarato ⇄ ossalacetato + glutammato). Lisina e treonina non vengono transaminate.",
+  "clinica": "ALT e AST nel sangue (transaminasi) sono indici di danno epatico: l'ALT è più specifica del fegato; un rapporto AST/ALT superiore a 2 orienta verso l'epatopatia alcolica. L'AST aumenta anche nel danno muscolare."
+ },
+ "ione ammonio (NH₄⁺)": {
+  "tipo": "piccola",
+  "smiles": "[NH4+]",
+  "base": "Uno scarto con l'azoto che si forma quando il corpo smonta le proteine. In grandi quantità è velenoso, soprattutto per il cervello.",
+  "superiore": "NH₄⁺: la forma con carica positiva dell'ammoniaca (NH₃ + H⁺). Si forma dalla demolizione degli amminoacidi; il fegato lo trasforma in urea, meno tossica.",
+  "universita": "Coppia NH₄⁺/NH₃ con pKa circa 9,25: al pH del sangue quasi tutto è NH₄⁺, ma la piccola quota di NH₃ attraversa le membrane. Fonti: glutammato deidrogenasi, glutaminasi, deaminasi, batteri intestinali. Smaltito dal fegato (ciclo dell'urea negli epatociti periportali, glutammina sintetasi in quelli perivenosi) e dal rene, che lo elimina nelle urine come NH₄⁺: è un modo importante di eliminare acidi.",
+  "clinica": "Iperammoniemia (difetti del ciclo dell'urea, insufficienza epatica): vomito, letargia, encefalopatia, coma. Nell'encefalopatia epatica si usano lattulosio e rifaximina; nei difetti congeniti dieta ipoproteica, sodio benzoato e fenilbutirrato, dialisi."
+ },
+ "glutammato deidrogenasi": {
+  "tipo": "enzima",
+  "base": "Un aiutante del fegato che stacca l'azoto e lo libera, così il fegato può smaltirlo.",
+  "superiore": "Enzima del mitocondrio, abbondante nel fegato, che toglie il gruppo amminico al glutammato come ione ammonio (deaminazione ossidativa) e lo trasforma in α-chetoglutarato.",
+  "universita": "Ossidoreduttasi (EC 1.4.1.3); usa sia NAD⁺ sia NADP⁺. Reazione reversibile: glutammato + NAD(P)⁺ + H₂O ⇄ α-chetoglutarato + NH₄⁺ + NAD(P)H. Allosterica: attivata da ADP e GDP (poca energia), inibita da GTP e ATP. Insieme alle transaminasi forma la «transdeaminazione», che raccoglie l'azoto di quasi tutti gli amminoacidi.",
+  "clinica": "Mutazioni che la rendono sempre attiva (gene GLUD1) causano la sindrome iperinsulinismo-iperammoniemia: ipoglicemie scatenate dalle proteine della dieta e ammonio moderatamente alto."
+ },
+ "carbamil fosfato": {
+  "tipo": "molecola",
+  "smiles": "NC(=O)OP(=O)(O)O",
+  "base": "Una piccola molecola con l'azoto da buttare via, pronta per entrare nel ciclo che fa l'urea.",
+  "superiore": "Molecola ad alta energia formata da ammonio, bicarbonato e fosfato. È il primo prodotto del ciclo dell'urea e porta il primo atomo di azoto.",
+  "universita": "H₂N–CO–O–PO₃²⁻, anidride mista ad alto potenziale di trasferimento. Nel mitocondrio epatico è prodotto dalla CPS I (con NH₄⁺) per il ciclo dell'urea; nel citosol la CPS II lo produce con la glutammina per la sintesi delle pirimidine.",
+  "clinica": "Nel deficit di ornitina transcarbamilasi il carbamil fosfato si accumula, passa nel citosol e va verso le pirimidine: aumenta l'acido orotico nelle urine. Serve a distinguerlo dal deficit di CPS I, dove l'acido orotico è normale o basso."
+ },
+ "carbamil fosfato sintetasi I": {
+  "tipo": "enzima",
+  "base": "L'aiutante che dà il via alla fabbrica dell'urea nel fegato.",
+  "superiore": "Enzima del mitocondrio del fegato che unisce ammonio e bicarbonato in carbamil fosfato, spendendo 2 ATP. È il primo e più regolato passaggio del ciclo dell'urea.",
+  "universita": "Ligasi (EC 6.3.4.16). NH₄⁺ + HCO₃⁻ + 2 ATP → carbamil fosfato + 2 ADP + Pi. Attivatore allosterico obbligato: N-acetilglutammato (NAG), prodotto dalla NAG sintasi da acetil-CoA e glutammato, stimolata dall'arginina; dopo un pasto proteico NAG e attività aumentano. Abbondantissima nella matrice degli epatociti periportali. Diversa dalla CPS II citosolica delle pirimidine, che usa glutammina.",
+  "clinica": "Deficit di CPS I o di NAG sintasi: iperammoniemia grave nei primi giorni di vita, acido orotico non aumentato. Il deficit di NAG sintasi si cura con l'acido carglumico, un analogo del NAG."
+ },
+ "ornitina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCCN)C(=O)O",
+  "base": "Una molecola «navetta» che gira in tondo nella fabbrica dell'urea e torna sempre indietro.",
+  "superiore": "Amminoacido che non si trova nelle proteine. Nel ciclo dell'urea accetta il carbamil fosfato e alla fine si rigenera, come l'ossalacetato nel ciclo di Krebs.",
+  "universita": "L-ornitina, omologo della lisina con un CH₂ in meno. Entra nel mitocondrio con il trasportatore ORNT1 in scambio con la citrullina. Precursore delle poliammine (ornitina decarbossilasi) e della prolina.",
+  "clinica": "Sindrome HHH (iperornitinemia-iperammoniemia-omocitrullinuria): difetto del trasportatore ORNT1. Deficit di ornitina aminotransferasi: atrofia girata della coroide e della retina."
+ },
+ "citrullina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCCNC(N)=O)C(=O)O",
+  "base": "Una tappa intermedia della fabbrica dell'urea: si forma nel mitocondrio e poi esce.",
+  "superiore": "Amminoacido che non si trova nelle proteine. Nasce dall'ornitina e dal carbamil fosfato nel mitocondrio, poi esce nel citoplasma per continuare il ciclo dell'urea.",
+  "universita": "L-citrullina. Si forma anche come coprodotto dell'ossido nitrico sintasi (arginina → NO + citrullina). È prodotta anche dall'intestino tenue e convertita in arginina dal rene.",
+  "clinica": "Citrullinemia di tipo I (deficit di argininosuccinato sintetasi): citrullina molto alta nel plasma e iperammoniemia; si cerca con lo screening neonatale."
+ },
+ "ornitina transcarbamilasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che attacca il pezzo con l'azoto alla molecola navetta.",
+  "superiore": "Enzima del mitocondrio del fegato che trasferisce il gruppo carbamilico dal carbamil fosfato all'ornitina: si forma citrullina e si libera fosfato.",
+  "universita": "Transferasi (EC 2.1.3.3), matrice mitocondriale degli epatociti e in parte dell'intestino. Gene OTC sul cromosoma X.",
+  "clinica": "Il deficit di OTC è il più frequente difetto del ciclo dell'urea ed è legato all'X: maschi con iperammoniemia neonatale grave, femmine portatrici spesso con crisi tardive (dopo pasti proteici, febbre, parto). Acido orotico urinario aumentato."
+ },
+ "aspartato": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CC(=O)O)C(=O)O",
+  "base": "Un mattoncino delle proteine che porta il secondo pezzo di azoto nella fabbrica dell'urea.",
+  "superiore": "Amminoacido non essenziale con un gruppo acido nella catena laterale (acido aspartico). Si forma dall'ossalacetato per transaminazione. Nel ciclo dell'urea porta il secondo atomo di azoto.",
+  "universita": "L-aspartato. AST: aspartato + α-chetoglutarato ⇄ ossalacetato + glutammato. Donatore di azoto nel ciclo dell'urea e nella sintesi delle purine; con il carbamil fosfato inizia la sintesi delle pirimidine (aspartato transcarbamilasi). Fa parte della navetta malato-aspartato. È anche un neurotrasmettitore eccitatorio.",
+  "clinica": "L'AST (aspartato aminotransferasi) nel sangue indica danno di fegato, muscolo o cuore. L'aspartame è un dipeptide di aspartato e fenilalanina: è segnalato sulle etichette per chi ha la fenilchetonuria."
+ },
+ "argininosuccinato": {
+  "tipo": "molecola",
+  "base": "Una molecola unita da due pezzi, che poi si spezza: da una parte esce il mattoncino che fa l'urea.",
+  "superiore": "Intermedio del ciclo dell'urea che si forma nel citoplasma dall'unione di citrullina e aspartato. Contiene i due atomi di azoto che finiranno nell'urea.",
+  "universita": "Prodotto dell'argininosuccinato sintetasi; scisso dall'argininosuccinato liasi in arginina e fumarato. Lo scheletro dell'aspartato esce come fumarato: è il punto di contatto con il ciclo di Krebs.",
+  "clinica": "Aciduria argininosuccinica (deficit di argininosuccinato liasi): iperammoniemia, epatopatia e capelli fragili con nodi (tricoressi nodosa)."
+ },
+ "argininosuccinato sintetasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che porta dentro il secondo pezzo di azoto da buttare via.",
+  "superiore": "Enzima del citoplasma del fegato che unisce citrullina e aspartato in argininosuccinato. Consuma ATP, che diventa AMP.",
+  "universita": "Ligasi (EC 6.3.4.5). Citrullina + aspartato + ATP → argininosuccinato + AMP + PPi; l'idrolisi del pirofosfato spinge la reazione. Costa 2 legami ad alta energia. Presente anche in altri tessuti per rifare arginina dalla citrullina (ciclo citrullina-NO).",
+  "clinica": "Deficit: citrullinemia di tipo I (gene ASS1), con iperammoniemia neonatale o più tardiva."
+ },
+ "arginina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCCNC(=N)N)C(=O)O",
+  "base": "Un mattoncino delle proteine da cui il fegato stacca l'urea.",
+  "superiore": "Amminoacido basico (carica positiva) con il gruppo guanidinico. Nel ciclo dell'urea viene tagliato dall'arginasi in urea e ornitina.",
+  "universita": "L-arginina, semi-essenziale (essenziale nella crescita e in alcune condizioni di stress). Precursore di ossido nitrico (NO sintasi), creatina, agmatina e poliammine. Attiva la N-acetilglutammato sintasi e quindi il ciclo dell'urea.",
+  "clinica": "Nei difetti del ciclo dell'urea (tranne il deficit di arginasi) l'arginina diventa essenziale e si dà come integratore. L'NO prodotto dall'arginina è un potente vasodilatatore."
+ },
+ "argininosuccinato liasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che spezza la molecola in due pezzi utili.",
+  "superiore": "Enzima del citoplasma del fegato che spezza l'argininosuccinato in arginina e fumarato, senza acqua.",
+  "universita": "Liasi (EC 4.3.2.1); stesso tipo di reazione dell'adenilosuccinato liasi nella sintesi delle purine. Il fumarato viene idratato a malato dalla fumarasi citosolica e poi ossidato a ossalacetato, che torna aspartato.",
+  "clinica": "Deficit: aciduria argininosuccinica. Oltre all'iperammoniemia può dare epatopatia cronica e tricoressi nodosa."
+ },
+ "arginasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che «stacca» l'urea, il rifiuto che poi buttiamo con la pipì.",
+  "superiore": "Enzima del citoplasma del fegato che, con una molecola d'acqua, divide l'arginina in urea e ornitina. È l'ultimo passaggio del ciclo dell'urea.",
+  "universita": "Idrolasi (EC 3.5.3.1) con manganese nel sito attivo. Isoforma epatica ARG1 (ciclo dell'urea) e mitocondriale ARG2 (rene, altri tessuti: produce ornitina per poliammine e prolina). Compete con l'NO sintasi per l'arginina.",
+  "clinica": "Deficit di ARG1 (iperargininemia): a differenza degli altri difetti del ciclo dell'urea dà raramente crisi neonatali, ma una diplegia spastica progressiva con ritardo dello sviluppo."
+ },
+ "glutammina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](CCC(N)=O)C(=O)O",
+  "base": "Un mattoncino delle proteine che porta in giro l'azoto in modo sicuro, senza avvelenare il corpo.",
+  "superiore": "Amminoacido non essenziale, il più abbondante nel sangue. Si forma dal glutammato più ammonio e trasporta l'azoto dai tessuti al fegato e al rene senza tossicità.",
+  "universita": "Sintetizzata dalla glutammina sintetasi (glutammato + NH₄⁺ + ATP), in muscolo, cervello (astrociti) e fegato perivenoso. La glutaminasi la idrolizza in glutammato + NH₄⁺ nel fegato, nell'intestino e nel rene; nel rene l'ammonio prodotto viene eliminato con le urine (aumenta nell'acidosi). Donatore di azoto per purine, pirimidine e amminozuccheri; combustibile degli enterociti e dei linfociti.",
+  "clinica": "Nell'encefalopatia epatica gli astrociti trasformano l'ammonio in eccesso in glutammina, che li fa gonfiare (edema cerebrale). Glutammina alta nel plasma nei difetti del ciclo dell'urea."
+ },
+ "alanina": {
+  "tipo": "molecola",
+  "smiles": "N[C@@H](C)C(=O)O",
+  "base": "Un piccolo mattoncino delle proteine che il muscolo manda al fegato per rifare zucchero.",
+  "superiore": "Amminoacido non essenziale con un gruppo metile come catena laterale. Per transaminazione diventa piruvato e viceversa: lega il metabolismo delle proteine a quello degli zuccheri.",
+  "universita": "L-alanina. ALT: alanina + α-chetoglutarato ⇄ piruvato + glutammato. Nel ciclo glucosio-alanina il muscolo transamina il piruvato ad alanina e la manda al fegato, che recupera lo scheletro per la gluconeogenesi e l'azoto per il ciclo dell'urea. Nel digiuno è il principale amminoacido gluconeogenico.",
+  "clinica": "Alanina plasmatica alta, insieme a lattato e piruvato, nelle malattie mitocondriali e nei difetti della piruvato deidrogenasi o della piruvato carbossilasi."
+ },
+ "piridossal fosfato (PLP)": {
+  "tipo": "coenzima",
+  "base": "Un piccolo aiutante che viene dalla vitamina B6 e serve a spostare l'azoto tra i mattoncini delle proteine.",
+  "superiore": "Forma attiva della vitamina B6. È il coenzima di transaminasi, decarbossilasi e molti altri enzimi che lavorano sugli amminoacidi.",
+  "universita": "Il gruppo aldeidico forma una base di Schiff con la lisina dell'enzima e poi con il gruppo amminico del substrato; stabilizza i carbanioni intermedi. Serve a transaminasi, decarbossilasi (sintesi di GABA, serotonina, dopamina, istamina), ALA sintasi, glicogeno fosforilasi, cistationina β-sintasi.",
+  "clinica": "Carenza di B6 (isoniazide, alcolismo): neuropatia periferica, convulsioni, anemia sideroblastica. Chi assume isoniazide riceve piridossina come profilassi. Convulsioni neonatali piridossino-dipendenti."
+ },
+ "glicina": {
+  "tipo": "molecola",
+  "smiles": "NCC(=O)O",
+  "base": "Il mattoncino delle proteine più piccolo di tutti; serve anche a costruire la parte rossa del sangue.",
+  "superiore": "Il più semplice degli amminoacidi: la catena laterale è un solo atomo di idrogeno, quindi non è chirale. Con il succinil-CoA è il punto di partenza dell'eme.",
+  "universita": "Abbondante nel collagene (un residuo ogni tre: Gly-X-Y). Precursore di eme, purine, creatina e glutatione; coniuga gli acidi biliari (glicocolato). Neurotrasmettitore inibitorio nel midollo spinale (recettore con canale per il Cl⁻) e co-agonista del recettore NMDA.",
+  "clinica": "La stricnina blocca il recettore della glicina: spasmi e convulsioni. Iperglicinemia non chetotica (difetto del sistema di scissione della glicina): encefalopatia neonatale."
+ },
+ "δ-aminolevulinato (ALA)": {
+  "tipo": "molecola",
+  "smiles": "NCC(=O)CCC(=O)O",
+  "base": "Il primo piccolo pezzo con cui si comincia a costruire la parte rossa del sangue.",
+  "superiore": "Acido δ-aminolevulinico (ALA): molecola a 5 atomi di carbonio, formata nel mitocondrio da succinil-CoA e glicina. È il primo intermedio della sintesi dell'eme.",
+  "universita": "Prodotto dell'ALA sintasi (con PLP e liberazione di CO₂ e CoA). Esce dal mitocondrio; due molecole sono condensate dall'ALA deidratasi in porfobilinogeno. Tutti gli atomi di carbonio e azoto dell'eme derivano da 8 ALA.",
+  "clinica": "ALA urinario aumentato nelle porfirie acute e nell'intossicazione da piombo; ad alte concentrazioni è considerato neurotossico. L'acido 5-aminolevulinico si usa nella terapia fotodinamica delle cheratosi attiniche e per rendere fluorescenti i gliomi in sala operatoria."
+ },
+ "ALA sintasi (ALAS)": {
+  "tipo": "enzima",
+  "base": "L'aiutante che dà il via alla costruzione della parte rossa del sangue, e decide quanta farne.",
+  "superiore": "Enzima del mitocondrio che unisce succinil-CoA e glicina in ALA. È il passaggio che regola tutta la sintesi dell'eme e richiede la vitamina B6.",
+  "universita": "Transferasi (EC 2.3.1.37), coenzima piridossal fosfato. ALAS1 (ubiquitaria, soprattutto fegato): l'eme ne riduce la sintesi e l'ingresso nel mitocondrio; è indotta da farmaci che aumentano i citocromi P450 (es. barbiturici) e dal digiuno. ALAS2 (eritroide, gene sul cromosoma X): la sua traduzione dipende dal ferro tramite l'elemento IRE nell'mRNA.",
+  "clinica": "Mutazioni di ALAS2: anemia sideroblastica legata all'X (microcitica, con sideroblasti ad anello), che spesso risponde alla piridossina. Nelle porfirie acute il givosiran (siRNA contro ALAS1) e l'emina endovena riducono l'attività di ALAS1 e prevengono o curano le crisi."
+ },
+ "porfobilinogeno (PBG)": {
+  "tipo": "molecola",
+  "smiles": "NCc1[nH]cc(CCC(=O)O)c1CC(=O)O",
+  "base": "Un piccolo anello: 4 di questi si uniranno per fare l'anello grande che tiene il ferro.",
+  "superiore": "Pirrolo (anello a 5 atomi con un azoto) formato da due molecole di ALA. Quattro porfobilinogeni costruiscono l'anello della porfirina.",
+  "universita": "Porta tre catene laterali: aminometile, acetato e propionato. Prodotto dall'ALA deidratasi; la porfobilinogeno deaminasi ne unisce 4 testa-coda in idrossimetilbilano liberando 4 NH₄⁺.",
+  "clinica": "Il PBG urinario molto aumentato durante una crisi è l'esame chiave per diagnosticare una porfiria acuta (soprattutto porfiria acuta intermittente). L'urina lasciata alla luce scurisce."
+ },
+ "ALA deidratasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che unisce due piccoli pezzi per fare il primo anellino. Il piombo lo blocca.",
+  "superiore": "Enzima del citoplasma (detto anche porfobilinogeno sintasi) che unisce due molecole di ALA in porfobilinogeno, liberando acqua. Contiene zinco.",
+  "universita": "Liasi (EC 4.2.1.24), omo-ottamero con zinco. Il piombo sostituisce lo zinco e inibisce fortemente l'enzima: è il bersaglio più sensibile del piombo nella sintesi dell'eme.",
+  "clinica": "Intossicazione da piombo: ALA alto nelle urine, zinco-protoporfirina alta, anemia microcitica con punteggiature basofile, dolori addominali, neuropatia. Il deficit genetico (porfiria da deficit di ALA deidratasi) è rarissimo."
+ },
+ "idrossimetilbilano": {
+  "tipo": "molecola",
+  "base": "Una catenella di 4 anellini ancora aperta, che sta per chiudersi in un cerchio.",
+  "superiore": "Tetrapirrolo lineare: 4 porfobilinogeni uniti in fila. È il precursore dell'anello della porfirina.",
+  "universita": "Detto anche preuroporfirinogeno. Instabile: senza uroporfirinogeno III sintasi si chiude spontaneamente nell'uroporfirinogeno I, isomero simmetrico che non può diventare eme.",
+  "clinica": "Nel deficit di uroporfirinogeno III sintasi (porfiria eritropoietica congenita) si accumulano porfirine di tipo I: urina rossa, denti rossastri fluorescenti, grave fotosensibilità, anemia emolitica."
+ },
+ "porfobilinogeno deaminasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che mette in fila 4 anellini come i vagoni di un trenino.",
+  "superiore": "Enzima del citoplasma (detto anche idrossimetilbilano sintasi) che unisce 4 molecole di porfobilinogeno in una catena lineare, liberando ammonio.",
+  "universita": "Transferasi (EC 2.5.1.61) con un cofattore insolito, il dipirrometano, legato covalentemente, su cui la catena cresce. Ha attività bassa rispetto agli altri enzimi della via: quando ALAS1 è indotta diventa il collo di bottiglia.",
+  "clinica": "Deficit (autosomico dominante): porfiria acuta intermittente. Crisi di dolore addominale, tachicardia, ipertensione, neuropatia motoria, iponatremia, sintomi psichiatrici; urine scure. Le scatenano farmaci induttori, alcol, digiuno, progesterone. Terapia: emina, glucosio; prevenzione con givosiran. Non dà fotosensibilità."
+ },
+ "uroporfirinogeno III": {
+  "tipo": "molecola",
+  "base": "Il primo anello grande, chiuso a cerchio, che diventerà la casa del ferro.",
+  "superiore": "Il primo tetrapirrolo ciclico della via. L'isomero III ha le catene laterali nell'ordine giusto per diventare eme.",
+  "universita": "Porta 4 catene acetato e 4 propionato; l'ultimo anello (D) è invertito rispetto all'isomero I. È anche il punto di partenza di vitamina B12 (nei batteri) e clorofilla (nelle piante). I «porfirinogeni» sono incolori; ossidati diventano porfirine colorate e fluorescenti.",
+  "clinica": "Nella porfiria cutanea tarda si accumulano uroporfirine (soprattutto nelle urine), che con la luce danneggiano la pelle."
+ },
+ "uroporfirinogeno III sintasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che chiude il trenino di anellini a cerchio, girando l'ultimo vagone nel verso giusto.",
+  "superiore": "Enzima del citoplasma che chiude l'idrossimetilbilano ad anello invertendo l'ultimo pirrolo: si forma l'uroporfirinogeno III e si libera acqua.",
+  "universita": "Liasi (EC 4.2.1.75). Senza l'enzima la ciclizzazione spontanea dà l'uroporfirinogeno I, che può essere decarbossilato a coproporfirinogeno I ma non va oltre.",
+  "clinica": "Deficit (autosomico recessivo): porfiria eritropoietica congenita (malattia di Günther), con fotosensibilità grave e mutilante fin dall'infanzia, eritrodonzia, urine rosse e anemia emolitica."
+ },
+ "coproporfirinogeno III": {
+  "tipo": "molecola",
+  "base": "L'anello grande dopo che ha perso 4 piccoli pezzi di carbonio.",
+  "superiore": "Porfirinogeno con 4 gruppi metile e 4 catene propionato. Si forma nel citoplasma e poi entra nel mitocondrio.",
+  "universita": "Prodotto dell'uroporfirinogeno decarbossilasi (4 acetati → 4 metili). Entra nello spazio intermembrana mitocondriale, dove la coproporfirinogeno ossidasi lo trasforma in protoporfirinogeno IX.",
+  "clinica": "Coproporfirine aumentate nelle urine e nelle feci nella coproporfiria ereditaria; un aumento lieve delle coproporfirine urinarie è comune e poco specifico (malattie epatiche, alcol, piombo)."
+ },
+ "uroporfirinogeno decarbossilasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che toglie 4 piccoli pezzi dall'anello grande.",
+  "superiore": "Enzima del citoplasma che stacca un CO₂ da ciascuna delle 4 catene acetato dell'uroporfirinogeno III, trasformandole in metili.",
+  "universita": "Liasi (EC 4.1.1.37); non richiede cofattori. Lavora in sequenza sui 4 anelli. È inibita dall'uroporfometene, che si forma nel fegato in presenza di ferro in eccesso e stress ossidativo.",
+  "clinica": "Porfiria cutanea tarda, la porfiria più comune: bolle e fragilità della pelle esposta al sole, ipertricosi. Fattori scatenanti: alcol, sovraccarico di ferro (emocromatosi), epatite C, estrogeni, HIV. Terapia: salassi o idrossiclorochina a basse dosi."
+ },
+ "protoporfirinogeno IX": {
+  "tipo": "molecola",
+  "base": "L'anello quasi pronto: manca solo di essere «acceso» e di ricevere il ferro.",
+  "superiore": "Porfirinogeno con 4 metili, 2 vinili e 2 propionati: ha già le catene laterali definitive dell'eme.",
+  "universita": "Si forma nello spazio intermembrana dalla coproporfirinogeno ossidasi; la protoporfirinogeno ossidasi, sulla membrana interna, lo ossida a protoporfirina IX.",
+  "clinica": ""
+ },
+ "coproporfirinogeno ossidasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante nel mitocondrio che usa ossigeno per sistemare due pezzi dell'anello.",
+  "superiore": "Enzima dello spazio intermembrana del mitocondrio. Con l'ossigeno toglie un CO₂ a due catene propionato e le trasforma in gruppi vinile.",
+  "universita": "Ossidoreduttasi (EC 1.3.3.3) che usa O₂ come accettore: decarbossilazione ossidativa dei propionati degli anelli A e B. Prodotto: protoporfirinogeno IX.",
+  "clinica": "Deficit (autosomico dominante): coproporfiria ereditaria, con crisi acute come la porfiria acuta intermittente e talvolta lesioni della pelle; coproporfirina III molto alta nelle feci."
+ },
+ "protoporfirina IX": {
+  "tipo": "molecola",
+  "base": "L'anello finito, di colore rosso-viola, pronto ad accogliere il ferro al centro.",
+  "superiore": "Porfirina con doppi legami coniugati: è colorata e fluorescente. Quando riceve il ferro diventa eme.",
+  "universita": "Ultimo intermedio della via, nella matrice mitocondriale. Assorbe la luce e genera specie reattive dell'ossigeno: per questo le porfirine accumulate danneggiano la pelle esposta al sole. In assenza di ferro la ferrochelatasi inserisce lo zinco (zinco-protoporfirina).",
+  "clinica": "Protoporfiria eritropoietica (deficit di ferrochelatasi): protoporfirina libera alta nei globuli rossi, dolore bruciante alla luce senza bolle, calcoli biliari, rischio di danno epatico. La zinco-protoporfirina aumenta nella carenza di ferro e nell'intossicazione da piombo."
+ },
+ "protoporfirinogeno ossidasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che «accende» l'anello e lo rende colorato.",
+  "superiore": "Enzima della membrana interna del mitocondrio che ossida il protoporfirinogeno IX a protoporfirina IX usando ossigeno.",
+  "universita": "Ossidoreduttasi (EC 1.3.3.4) con FAD; rimuove 6 elettroni creando il sistema coniugato della porfirina. Diversi erbicidi agiscono inibendo l'enzima vegetale.",
+  "clinica": "Deficit (autosomico dominante): porfiria variegata, con crisi acute e lesioni cutanee da fotosensibilità; frequente in Sudafrica per effetto del fondatore."
+ },
+ "ferro (Fe²⁺)": {
+  "tipo": "piccola",
+  "smiles": "[Fe+2]",
+  "base": "Il metallo che sta al centro della parte rossa del sangue e afferra l'ossigeno.",
+  "superiore": "Ione ferroso. Al centro dell'eme lega l'ossigeno nell'emoglobina e nella mioglobina; nei citocromi trasporta elettroni passando da Fe²⁺ a Fe³⁺.",
+  "universita": "Assorbito nel duodeno come Fe²⁺ (DMT1) dopo riduzione del Fe³⁺ (citocromo b duodenale); esce dall'enterocita con la ferroportina, viaggia con la transferrina come Fe³⁺, si deposita come ferritina. L'epcidina, prodotta dal fegato, blocca la ferroportina e regola tutto il bilancio. Nell'emoglobina deve restare Fe²⁺ per legare l'O₂.",
+  "clinica": "Carenza di ferro: anemia microcitica ipocromica con ferritina bassa, la più comune nel mondo. Sovraccarico: emocromatosi ereditaria (gene HFE) o da trasfusioni. La metaemoglobina (Fe³⁺) non lega l'O₂: si tratta con il blu di metilene."
+ },
+ "eme": {
+  "tipo": "molecola",
+  "base": "La parte dell'emoglobina che contiene il ferro e rende rosso il sangue.",
+  "superiore": "Anello di protoporfirina IX con un atomo di ferro (Fe²⁺) al centro. È il gruppo prostetico di emoglobina, mioglobina, citocromi, catalasi e perossidasi.",
+  "universita": "La maggior parte (circa l'80-85%) si produce negli eritroblasti, gran parte del resto nel fegato (citocromi P450). L'eme regola la propria sintesi: reprime ALAS1 nel fegato e, negli eritroblasti, favorisce la sintesi delle globine. Il ferro si lega ai 4 azoti pirrolici; le altre due posizioni di coordinazione restano per l'istidina prossimale e per l'O₂.",
+  "clinica": "L'emina (eme per via endovenosa) si usa nelle crisi di porfiria acuta. La degradazione dell'eme produce bilirubina: un'emolisi aumenta la bilirubina indiretta."
+ },
+ "ferrochelatasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che mette il ferro al centro dell'anello: l'eme è pronto.",
+  "superiore": "Enzima della membrana interna del mitocondrio, ultimo passaggio della sintesi dell'eme: inserisce il ferro ferroso nella protoporfirina IX.",
+  "universita": "Liasi con un centro ferro-zolfo, sul versante della matrice. Inibita dal piombo. Se il ferro scarseggia inserisce lo zinco: si forma zinco-protoporfirina, marcatore di eritropoiesi carente di ferro.",
+  "clinica": "Deficit: protoporfiria eritropoietica, con fotosensibilità dolorosa fin dall'infanzia (senza bolle) e possibile epatopatia da accumulo di protoporfirina. Nell'intossicazione da piombo aumenta la zinco-protoporfirina."
+ },
+ "bilirubina": {
+  "tipo": "molecola",
+  "base": "Una sostanza gialla che viene dalla parte rossa dei globuli rossi vecchi. Se ce n'è troppa, la pelle e gli occhi diventano gialli.",
+  "superiore": "Pigmento giallo che si forma dalla demolizione dell'eme. Nel sangue viaggia legata all'albumina (indiretta), il fegato la coniuga con l'acido glucuronico (diretta) e la elimina con la bile.",
+  "universita": "Eme → biliverdina (eme ossigenasi) → bilirubina (biliverdina reduttasi, NADPH). Non coniugata: liposolubile, legata all'albumina, non filtrata dal rene. Coniugazione nel fegato con UGT1A1 (diglucuronide), escrezione nei canalicoli con MRP2. Nell'intestino i batteri la trasformano in urobilinogeno e stercobilina (colore delle feci).",
+  "clinica": "Ittero quando supera circa 2-3 mg/dL. Indiretta alta: emolisi, sindrome di Gilbert, Crigler-Najjar, ittero neonatale (rischio di kernittero, si tratta con la fototerapia). Diretta alta: epatiti, colestasi, Dubin-Johnson; urine scure e feci chiare."
+ },
+ "eme ossigenasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che apre l'anello dell'eme quando i globuli rossi vecchi vengono smontati, e recupera il ferro.",
+  "superiore": "Enzima del reticolo endoplasmatico dei macrofagi (milza, fegato, midollo) che apre l'anello dell'eme. Si formano biliverdina, monossido di carbonio e ferro.",
+  "universita": "Usa O₂ e NADPH (tramite la citocromo P450 reduttasi). HO-1 è inducibile da eme, stress ossidativo e infiammazione; HO-2 è costitutiva. È la principale fonte endogena di CO, che ha anche un ruolo di segnale (vasodilatazione).",
+  "clinica": "La carbossiemoglobina endogena aumenta un poco nelle anemie emolitiche. Il deficit genetico di HO-1, rarissimo, causa emolisi, infiammazione e danno endoteliale."
+ },
+ "monossido di carbonio (CO)": {
+  "tipo": "piccola",
+  "smiles": "[C-]#[O+]",
+  "base": "Un gas invisibile e senza odore. Una piccolissima quantità la fa il corpo, ma molto CO (stufe, caldaie guaste) è velenoso.",
+  "superiore": "Gas formato da un carbonio e un ossigeno. Si lega all'emoglobina molto più dell'ossigeno e le impedisce di trasportarlo. Il corpo ne produce poco quando demolisce l'eme.",
+  "universita": "Prodotto endogeno dell'eme ossigenasi (una molecola per eme). Si lega al Fe²⁺ dell'eme: carbossiemoglobina, con spostamento a sinistra della curva di dissociazione dell'O₂ residuo. Inibisce anche il complesso IV della catena respiratoria. In piccole dosi è un messaggero (attiva la guanilato ciclasi).",
+  "clinica": "Intossicazione da CO: cefalea, nausea, confusione, coma; il saturimetro può dare valori falsamente normali e serve la co-ossimetria. Terapia: O₂ al 100% o iperbarico. La carbossiemoglobina è più alta nei fumatori."
+ },
+ "adenosina": {
+  "tipo": "molecola",
+  "smiles": "Nc1ncnc2c1ncn2C1OC(CO)C(O)C1O",
+  "base": "Un pezzo del DNA e dell'RNA (e dell'ATP) senza i fosfati: base adenina più uno zucchero.",
+  "superiore": "Nucleoside: adenina legata al ribosio. Si forma quando l'AMP perde il fosfato. Fuori dalle cellule è anche un segnale che rallenta il cuore e dilata i vasi.",
+  "universita": "Prodotta dalla 5'-nucleotidasi (anche ecto-5'-nucleotidasi CD73 dall'AMP extracellulare). Degradata dall'adenosina deaminasi a inosina o rifosforilata ad AMP dall'adenosina chinasi. Agisce sui recettori A₁, A₂A, A₂B, A₃: A₁ nel nodo atrioventricolare rallenta la conduzione, A₂A dilata le coronarie. La caffeina è un antagonista dei recettori dell'adenosina.",
+  "clinica": "Adenosina in bolo endovena: blocca per pochi secondi il nodo AV e interrompe le tachicardie parossistiche sopraventricolari; si usa anche come stress farmacologico nella scintigrafia miocardica. Il dipiridamolo ne aumenta l'effetto bloccandone la ricaptazione."
+ },
+ "5'-nucleotidasi": {
+  "tipo": "enzima",
+  "base": "Un aiutante che stacca il fosfato da un pezzetto del DNA o dell'RNA.",
+  "superiore": "Enzima che toglie il fosfato in posizione 5' dei nucleotidi (es. AMP → adenosina, GMP → guanosina). È il primo passaggio della demolizione dei nucleotidi.",
+  "universita": "Idrolasi (EC 3.1.3.5). Forme citosoliche (cN-I, cN-II, cN-III, quest'ultima per le pirimidine) e una forma ancorata alla membrana (ecto-5'-nucleotidasi, CD73), che produce adenosina extracellulare antinfiammatoria e immunosoppressiva.",
+  "clinica": "La 5'-nucleotidasi sierica aumenta nella colestasi: aiuta a capire se una fosfatasi alcalina alta viene dal fegato e non dall'osso. Il piombo inibisce la pirimidina 5'-nucleotidasi dei reticolociti: punteggiature basofile."
+ },
+ "inosina": {
+  "tipo": "molecola",
+  "smiles": "O=c1[nH]cnc2c1ncn2C1OC(CO)C(O)C1O",
+  "base": "Un pezzo che si forma quando l'adenosina perde il suo azoto.",
+  "superiore": "Nucleoside: ipoxantina legata al ribosio. Si forma dall'adenosina per deaminazione o dall'IMP per perdita del fosfato.",
+  "universita": "La purina nucleoside fosforilasi la scinde in ipoxantina e ribosio 1-fosfato. Nei tRNA l'inosina in prima posizione dell'anticodone si appaia con U, C o A (vacillamento).",
+  "clinica": ""
+ },
+ "adenosina deaminasi (ADA)": {
+  "tipo": "enzima",
+  "base": "Un aiutante che toglie l'azoto all'adenosina. Se manca, le difese del corpo non funzionano.",
+  "superiore": "Enzima che trasforma l'adenosina in inosina togliendo il gruppo amminico come ammonio. È molto attivo nei linfociti.",
+  "universita": "Idrolasi (EC 3.5.4.4) con zinco; agisce su adenosina e desossiadenosina. Senza ADA la desossiadenosina si accumula e viene fosforilata a dATP, che inibisce la ribonucleotide reduttasi e blocca la sintesi del DNA nei linfociti in proliferazione (e li porta ad apoptosi).",
+  "clinica": "Deficit di ADA: immunodeficienza combinata grave (SCID) autosomica recessiva, con linfociti T, B e NK quasi assenti; infezioni gravi nei primi mesi. Terapie: trapianto di cellule staminali, enzima sostitutivo (PEG-ADA), terapia genica. L'ADA nel liquido pleurico aumenta nella pleurite tubercolare."
+ },
+ "ipoxantina": {
+  "tipo": "molecola",
+  "smiles": "O=c1[nH]cnc2nc[nH]c12",
+  "base": "Una base che viene dall'adenina: può essere riciclata o trasformata in acido urico.",
+  "superiore": "Base purinica che deriva dall'adenina per perdita del gruppo amminico. La xantina ossidasi la trasforma in xantina; la via di recupero (HGPRT) la riporta a IMP.",
+  "universita": "6-ossipurina. Bivio tra degradazione (xantina ossidasi) e recupero (HGPRT con PRPP → IMP). L'allopurinolo è un suo analogo strutturale (isomero) ed è substrato e inibitore della xantina ossidasi.",
+  "clinica": "Nella sindrome di Lesch-Nyhan l'ipoxantina non viene riciclata e va tutta verso l'acido urico. Nel trattamento con allopurinolo aumentano ipoxantina e xantina, più solubili dell'acido urico."
+ },
+ "purina nucleoside fosforilasi (PNP)": {
+  "tipo": "enzima",
+  "base": "Un aiutante che separa la base dallo zucchero usando un fosfato.",
+  "superiore": "Enzima che stacca la base dal ribosio dei nucleosidi inosina e guanosina, usando un fosfato invece dell'acqua (fosforolisi). Si liberano la base e il ribosio 1-fosfato.",
+  "universita": "Transferasi (EC 2.4.2.1). Substrati: inosina, guanosina e i loro desossi-analoghi; non agisce sull'adenosina (che deve prima essere deaminata dall'ADA). Il ribosio 1-fosfato è convertito in ribosio 5-fosfato e può tornare PRPP.",
+  "clinica": "Deficit di PNP (autosomico recessivo): immunodeficienza soprattutto dei linfociti T (accumulo di dGTP), con disturbi neurologici e acido urico basso nel sangue. Esistono inibitori di PNP studiati nei linfomi T."
+ },
+ "ribosio 1-fosfato": {
+  "tipo": "zucchero",
+  "base": "Lo zucchero che si stacca dalla base e viene riutilizzato.",
+  "superiore": "Ribosio con un fosfato sul carbonio 1. Si libera quando la purina nucleoside fosforilasi separa la base dallo zucchero.",
+  "universita": "La fosfopentomutasi lo converte in ribosio 5-fosfato, che può entrare nella via dei pentoso fosfati o diventare PRPP per nuove sintesi di nucleotidi.",
+  "clinica": ""
+ },
+ "xantina ossidasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che fa gli ultimi due passi verso l'acido urico. Il farmaco per la gotta lo blocca.",
+  "superiore": "Enzima che ossida l'ipoxantina a xantina e la xantina ad acido urico, usando ossigeno. È abbondante nel fegato e nell'intestino. Bloccarlo riduce l'acido urico.",
+  "universita": "Ossidoreduttasi (EC 1.17.3.2) con molibdeno (molibdopterina), FAD e centri ferro-zolfo. Esiste come xantina deidrogenasi (accettore NAD⁺) e, per ossidazione o proteolisi, come ossidasi (accettore O₂, produce H₂O₂ e superossido): fonte di radicali nel danno da ischemia-riperfusione. Ossida anche la 6-mercaptopurina.",
+  "clinica": "Allopurinolo e febuxostat la inibiscono (gotta, prevenzione della lisi tumorale). Attenzione: con azatioprina o 6-mercaptopurina l'allopurinolo ne aumenta molto la tossicità midollare; bisogna ridurne la dose. Il deficit genetico (xantinuria) dà acido urico bassissimo e calcoli di xantina."
+ },
+ "xantina": {
+  "tipo": "molecola",
+  "smiles": "O=c1[nH]c(=O)c2[nH]cnc2[nH]1",
+  "base": "Il punto dove si incontrano le due strade: l'ultima tappa prima dell'acido urico.",
+  "superiore": "Base purinica (2,6-diossipurina) in cui convergono la demolizione dell'adenina (via ipoxantina) e della guanina. La xantina ossidasi la trasforma in acido urico.",
+  "universita": "Formata dalla xantina ossidasi (dall'ipoxantina) o dalla guanina deaminasi (dalla guanina). Caffeina, teofillina e teobromina sono metilxantine.",
+  "clinica": "Calcoli di xantina nella xantinuria ereditaria e, raramente, con allopurinolo ad alte dosi in pazienti con produzione di purine molto aumentata (lisi tumorale, Lesch-Nyhan)."
+ },
+ "perossido di idrogeno (H₂O₂)": {
+  "tipo": "piccola",
+  "smiles": "OO",
+  "base": "L'acqua ossigenata: una sostanza che si forma in piccole quantità nelle cellule e che va subito eliminata.",
+  "superiore": "H₂O₂: specie reattiva dell'ossigeno. Si forma in varie ossidazioni (xantina ossidasi, ossidasi dei perossisomi) e viene distrutta da catalasi e glutatione perossidasi.",
+  "universita": "In presenza di Fe²⁺ forma il radicale ossidrile (reazione di Fenton), molto dannoso. La catalasi lo scinde in H₂O e O₂; la glutatione perossidasi lo riduce usando glutatione, rigenerato con NADPH dalla via dei pentoso fosfati. A basse dosi funziona anche da segnale.",
+  "clinica": "Nel deficit di G6PD i globuli rossi non smaltiscono il perossido: emolisi con fave, alcuni farmaci e rasburicase (che produce H₂O₂). I neutrofili usano H₂O₂ con la mieloperossidasi per uccidere i batteri."
+ },
+ "GMP": {
+  "tipo": "molecola",
+  "smiles": "Nc1nc2c(ncn2C2OC(COP(=O)(O)O)C(O)C2O)c(=O)[nH]1",
+  "base": "Un pezzetto dell'RNA che contiene la base guanina.",
+  "superiore": "Guanosina monofosfato: nucleotide formato da guanina, ribosio e un fosfato. È un mattone dell'RNA e il precursore del GTP.",
+  "universita": "Sintetizzato dall'IMP (IMP deidrogenasi, poi GMP sintetasi con glutammina e ATP) o recuperato dalla guanina con HGPRT. Il GMP ciclico (cGMP) è un secondo messaggero diverso, prodotto dalla guanilato ciclasi.",
+  "clinica": "Micofenolato (immunosoppressore) inibisce l'IMP deidrogenasi: i linfociti, che dipendono dalla sintesi nuova di GMP, non proliferano."
+ },
+ "guanosina": {
+  "tipo": "molecola",
+  "smiles": "Nc1nc2c(ncn2C2OC(CO)C(O)C2O)c(=O)[nH]1",
+  "base": "La guanina attaccata a uno zucchero, dopo aver perso il fosfato.",
+  "superiore": "Nucleoside: guanina legata al ribosio. Si forma dal GMP per perdita del fosfato.",
+  "universita": "Substrato della purina nucleoside fosforilasi, che libera guanina e ribosio 1-fosfato. Analoghi della guanosina sono antivirali (aciclovir, ganciclovir).",
+  "clinica": ""
+ },
+ "guanina": {
+  "tipo": "molecola",
+  "smiles": "Nc1nc2[nH]cnc2c(=O)[nH]1",
+  "base": "Una delle quattro «lettere» del DNA (la G).",
+  "superiore": "Base purinica del DNA e dell'RNA; si appaia con la citosina con 3 legami idrogeno. Nella demolizione perde il gruppo amminico e diventa xantina.",
+  "universita": "2-ammino-6-ossipurina. Destini: guanina deaminasi → xantina (degradazione) oppure HGPRT con PRPP → GMP (recupero). Le coppie G-C rendono il DNA più stabile al calore.",
+  "clinica": "6-tioguanina e azatioprina/6-mercaptopurina sono analoghi delle purine attivati dall'HGPRT; usati in leucemie e malattie autoimmuni. Il deficit di TPMT ne aumenta la tossicità."
+ },
+ "guanina deaminasi": {
+  "tipo": "enzima",
+  "base": "L'aiutante che toglie l'azoto alla guanina.",
+  "superiore": "Enzima (guanasi) che trasforma la guanina in xantina liberando ammonio.",
+  "universita": "Idrolasi (EC 3.5.4.3) con zinco; abbondante in fegato, cervello e intestino. Chiude la strada della guanina verso la xantina.",
+  "clinica": ""
+ },
+ "acido urico": {
+  "tipo": "molecola",
+  "smiles": "O=c1[nH]c(=O)c2[nH]c(=O)[nH]c2[nH]1",
+  "base": "Lo scarto finale delle «lettere» A e G del DNA. Lo eliminiamo con la pipì; se ce n'è troppo può fare male alle articolazioni.",
+  "superiore": "Prodotto finale della demolizione delle purine nell'uomo (2,6,8-triossipurina). Al pH del sangue è quasi tutto come urato. È poco solubile e si elimina soprattutto con le urine.",
+  "universita": "L'uomo e le scimmie antropomorfe non hanno l'uricasi, che negli altri mammiferi lo trasforma in allantoina. Circa due terzi escono con il rene (filtrato, in gran parte riassorbito nel tubulo prossimale da URAT1 e GLUT9, in parte secreto), il resto con l'intestino. È un antiossidante del plasma. In urina acida precipita come acido urico.",
+  "clinica": "Iperuricemia oltre circa 6,8 mg/dL (limite di solubilità): gotta, tofi, calcoli, nefropatia. Cause: ridotta escrezione (insufficienza renale, diuretici tiazidici, alcol, aspirina a basse dosi) o aumentata produzione (lisi tumorale, dieta ricca di purine e fruttosio, Lesch-Nyhan). Obiettivo nella gotta: urato sotto 6 mg/dL."
+ },
+ "IMP (inosina monofosfato)": {
+  "tipo": "molecola",
+  "smiles": "O=c1[nH]cnc2c1ncn2C1OC(COP(=O)(O)O)C(O)C1O",
+  "base": "Il pezzo di partenza da cui la cellula costruisce le «lettere» A e G.",
+  "superiore": "Nucleotide con la base ipoxantina. È il primo nucleotide purinico completo della sintesi e da lui derivano AMP e GMP.",
+  "universita": "Prodotto finale della sintesi de novo delle purine (10 passaggi a partire dal PRPP) e della via di recupero dell'ipoxantina (HGPRT). Bivio: adenilosuccinato sintetasi (con GTP) → AMP; IMP deidrogenasi (con NAD⁺) → XMP → GMP. Nel muscolo si forma anche dall'AMP con l'AMP deaminasi (ciclo dei nucleotidi purinici).",
+  "clinica": "L'IMP deidrogenasi è il bersaglio del micofenolato e della ribavirina."
+ },
+ "ipoxantina-guanina fosforibosiltransferasi (HGPRT)": {
+  "tipo": "enzima",
+  "base": "Un aiutante del «riciclo»: invece di buttare via le basi, le rimonta e le riusa.",
+  "superiore": "Enzima della via di recupero: riattacca ipoxantina e guanina al ribosio fosfato preso dal PRPP, formando IMP e GMP. Così la cellula risparmia energia.",
+  "universita": "Transferasi (EC 2.4.2.8); gene HPRT1 sul cromosoma X. Ipoxantina + PRPP → IMP + PPi; guanina + PRPP → GMP + PPi. Molto attiva nel cervello (gangli della base). Attiva anche farmaci analoghi delle purine (6-mercaptopurina, 6-tioguanina).",
+  "clinica": "Deficit completo: sindrome di Lesch-Nyhan (legata all'X): iperuricemia, gotta e calcoli, distonia, deficit cognitivo e autolesionismo (si morde labbra e dita). Deficit parziale (sindrome di Kelley-Seegmiller): gotta precoce e calcoli senza i sintomi neurologici gravi."
+ },
+ "PRPP (5-fosforibosil-1-pirofosfato)": {
+  "tipo": "zucchero",
+  "base": "Uno zucchero «pronto all'uso» su cui la cellula costruisce le lettere del DNA.",
+  "superiore": "Ribosio 5-fosfato attivato con un pirofosfato sul carbonio 1. Fornisce il ribosio fosfato per costruire e riciclare i nucleotidi.",
+  "universita": "Sintetizzato dalla PRPP sintetasi: ribosio 5-fosfato + ATP → PRPP + AMP. Usato nella sintesi de novo delle purine (prima tappa regolata: glutammina-PRPP amidotrasferasi), delle pirimidine, nelle vie di recupero e nella sintesi di NAD⁺. La sua concentrazione accelera la sintesi delle purine.",
+  "clinica": "Superattività della PRPP sintetasi (legata all'X): troppo PRPP, eccesso di purine e iperuricemia con gotta precoce. Nel Lesch-Nyhan il PRPP non usato si accumula e stimola ancora di più la sintesi delle purine."
+ },
+ "cristalli di urato monosodico": {
+  "tipo": "piccola",
+  "base": "Piccoli aghi che si formano quando nel sangue c'è troppo acido urico: si piantano nelle articolazioni e fanno molto male.",
+  "superiore": "Cristalli a forma di ago che precipitano quando l'urato nel sangue è troppo alto. Nelle articolazioni scatenano un'infiammazione molto dolorosa: è la gotta.",
+  "universita": "Precipitano più facilmente a bassa temperatura e pH più basso: per questo colpiscono le articolazioni periferiche, tipicamente la prima metatarso-falangea (podagra). Attivano l'inflammasoma NLRP3 nei macrofagi, con liberazione di IL-1β e richiamo di neutrofili.",
+  "clinica": "Diagnosi con l'artrocentesi: cristalli aghiformi a birifrangenza negativa al microscopio a luce polarizzata (la pseudogotta ha cristalli romboidali a birifrangenza positiva). Attacco acuto: FANS, colchicina, cortisonici; prevenzione: allopurinolo o febuxostat con obiettivo urato sotto 6 mg/dL."
+ },
+ "allopurinolo": {
+  "tipo": "molecola",
+  "smiles": "O=c1[nH]cnc2[nH]ncc12",
+  "base": "Una medicina per la gotta: fa produrre meno acido urico.",
+  "superiore": "Farmaco simile all'ipoxantina che blocca la xantina ossidasi. Riduce la produzione di acido urico ed è il farmaco di base per prevenire la gotta.",
+  "universita": "Analogo dell'ipoxantina (pirazolopirimidina). La xantina ossidasi lo trasforma in ossipurinolo, che resta legato all'enzima e lo inibisce a lungo; l'ossipurinolo si elimina con il rene. Si inizia a dose bassa e si aumenta gradualmente.",
+  "clinica": "Rischio di reazioni cutanee gravi (DRESS, Stevens-Johnson) maggiore con l'allele HLA-B*58:01: alcune linee guida lo cercano prima di iniziare in popolazioni ad alta prevalenza. Ridurre molto la dose di azatioprina e 6-mercaptopurina. Usato anche per prevenire la lisi tumorale."
+ },
+ "febuxostat": {
+  "tipo": "molecola",
+  "base": "Un'altra medicina che fa produrre meno acido urico, per chi non può prendere quella più comune.",
+  "superiore": "Inibitore non purinico della xantina ossidasi. Abbassa l'acido urico come l'allopurinolo ed è un'alternativa a esso.",
+  "universita": "Inibitore selettivo che non ha struttura purinica: non interferisce con altri enzimi del metabolismo delle purine e delle pirimidine. Metabolismo prevalentemente epatico.",
+  "clinica": "Alternativa all'allopurinolo quando non è tollerato. Cautela nei pazienti con malattia cardiovascolare grave. Come l'allopurinolo, controindicato con azatioprina e mercaptopurina."
+ },
+ "probenecid": {
+  "tipo": "molecola",
+  "base": "Una medicina che fa uscire più acido urico con la pipì.",
+  "superiore": "Farmaco uricosurico: aumenta l'eliminazione dell'acido urico con le urine bloccandone il riassorbimento nel rene.",
+  "universita": "Inibisce URAT1 e altri trasportatori di anioni organici (OAT) del tubulo prossimale. Per la stessa ragione riduce la secrezione renale della penicillina e ne aumenta i livelli nel sangue.",
+  "clinica": "Inefficace se la funzione renale è molto ridotta; sconsigliato in chi ha calcoli di acido urico (aumenta l'urato nelle urine): bere molto. Usato anche per prolungare l'effetto di alcuni antibiotici beta-lattamici."
+ },
+ "rasburicase": {
+  "tipo": "molecola",
+  "base": "Una medicina che è un enzima: trasforma l'acido urico in una sostanza che si scioglie e si elimina facilmente.",
+  "superiore": "Urato ossidasi ricombinante: l'enzima che l'uomo non ha. Trasforma l'acido urico in allantoina, molto più solubile, e lo fa scendere in poche ore.",
+  "universita": "Ossida l'acido urico ad allantoina producendo H₂O₂ e CO₂. Somministrata per via endovenosa. Può interferire con la misura dell'acido urico nel campione se non viene conservato in ghiaccio.",
+  "clinica": "Prevenzione e trattamento della sindrome da lisi tumorale (leucemie e linfomi ad alto carico). Controindicata nel deficit di G6PD: il perossido prodotto causa emolisi e metaemoglobinemia; va cercato il deficit prima dell'uso."
+ },
+ "alanina aminotransferasi (ALT)": {
+  "tipo": "enzima",
+  "base": "Un aiutante soprattutto del fegato. Se il fegato è danneggiato, esce nel sangue e le analisi lo trovano.",
+  "superiore": "Transaminasi che scambia il gruppo amminico tra alanina e α-chetoglutarato: alanina + α-chetoglutarato ⇄ piruvato + glutammato. Collega il metabolismo degli amminoacidi a quello del glucosio.",
+  "universita": "Transferasi (EC 2.6.1.2) con piridossal fosfato. Isoforme citosolica (ALT1) e mitocondriale (ALT2). Nel muscolo lavora verso l'alanina, nel fegato verso il piruvato (ciclo glucosio-alanina).",
+  "clinica": "Marcatore più specifico di danno epatocellulare dell'AST: valori molto alti nelle epatiti acute virali, tossiche (paracetamolo) e ischemiche; aumenti modesti nella steatosi epatica. Nel referto: «GPT»."
+ },
+ "enzima (E)": {
+  "tipo": "enzima",
+  "base": "Un aiutante della cellula che rende velocissime le trasformazioni. Alla fine del lavoro resta uguale e ricomincia.",
+  "superiore": "Catalizzatore biologico, quasi sempre una proteina. Accelera una reazione abbassando l'energia di attivazione e non viene consumato. È specifico: riconosce solo certi substrati.",
+  "universita": "Accelerazioni fino a molti ordini di grandezza. Classificazione EC in 7 classi: ossidoreduttasi, transferasi, idrolasi, liasi, isomerasi, ligasi, traslocasi. Molti hanno bisogno di cofattori (ioni metallici o coenzimi derivati dalle vitamine). L'attività si regola per quantità (sintesi e degradazione), allosteria, modificazione covalente (fosforilazione), proteolisi di precursori (zimogeni). Alcuni RNA sono catalitici (ribozimi).",
+  "clinica": "Gli enzimi nel sangue sono marcatori di danno d'organo: transaminasi (fegato), CK (muscolo), lipasi (pancreas), troponine non sono enzimi ma marcatori analoghi per il cuore. Molti farmaci sono inibitori enzimatici."
+ },
+ "substrato (S)": {
+  "tipo": "molecola",
+  "base": "La molecola su cui l'aiutante (l'enzima) lavora, come il pezzo di legno per il falegname.",
+  "superiore": "La molecola che si lega all'enzima nel sito attivo e viene trasformata in prodotto. Ogni enzima riconosce uno o pochi substrati simili (specificità).",
+  "universita": "La concentrazione di substrato [S] determina la velocità secondo Michaelis-Menten: sotto la Km la velocità è quasi proporzionale a [S] (cinetica di primo ordine), molto sopra la Km l'enzima è saturo e la velocità non dipende più da [S] (ordine zero). Per enzimi con due substrati si parla di meccanismi sequenziali o a ping-pong.",
+  "clinica": "L'etanolo, metabolizzato dall'alcol deidrogenasi già saturata a basse concentrazioni, viene eliminato a velocità quasi costante (cinetica di ordine zero); lo stesso vale per la fenitoina a dosi alte."
+ },
+ "complesso enzima-substrato (ES)": {
+  "tipo": "molecola",
+  "base": "Il momento in cui l'aiutante tiene in mano il pezzo su cui lavora.",
+  "superiore": "L'unione temporanea tra enzima e substrato nel sito attivo. Da qui il substrato può staccarsi di nuovo o essere trasformato in prodotto.",
+  "universita": "E + S ⇄ ES → E + P (costanti k₁, k₋₁, k₂). Nell'ipotesi dello stato stazionario di Briggs e Haldane [ES] resta costante durante la misura: da qui si ricava l'equazione di Michaelis-Menten. Legami deboli (idrogeno, ionici, idrofobici, van der Waals); l'energia di legame è in parte usata per la catalisi.",
+  "clinica": ""
+ },
+ "sito attivo": {
+  "tipo": "struttura",
+  "base": "La «tasca» dell'enzima dove entra la molecola da trasformare, come una chiave nella serratura.",
+  "superiore": "Piccola regione dell'enzima, a forma di tasca o fessura, dove il substrato si lega e avviene la reazione. La sua forma e le sue cariche spiegano perché l'enzima è specifico.",
+  "universita": "Formato da pochi residui, spesso lontani nella sequenza ma vicini nella struttura terziaria. Modelli: chiave-serratura (Fischer) e adattamento indotto (Koshland). Meccanismi catalitici: catalisi acido-base generale, covalente, da ioni metallici, per vicinanza e orientamento; complementarietà allo stato di transizione.",
+  "clinica": "Molti farmaci sono progettati per occupare il sito attivo (inibitori competitivi) o per legarsi covalentemente a un suo residuo (aspirina sulla serina della COX)."
+ },
+ "stato di transizione": {
+  "tipo": "energia",
+  "base": "Il punto più «faticoso» della trasformazione, come la cima di una salita: l'enzima rende la salita più bassa.",
+  "superiore": "La configurazione di massima energia tra reagenti e prodotti. L'energia che serve per raggiungerlo è l'energia di attivazione; l'enzima la abbassa.",
+  "universita": "Specie di vita brevissima (non isolabile, a differenza degli intermedi). L'enzima lega lo stato di transizione più fortemente del substrato e così abbassa ΔG‡; non modifica il ΔG della reazione né la costante di equilibrio. Gli analoghi dello stato di transizione sono inibitori molto potenti.",
+  "clinica": "Diversi farmaci sono analoghi dello stato di transizione: per esempio l'oseltamivir (neuraminidasi dell'influenza) e gli inibitori della proteasi dell'HIV."
+ },
+ "prodotto (P)": {
+  "tipo": "molecola",
+  "base": "Quello che esce alla fine del lavoro dell'enzima.",
+  "superiore": "La molecola che si forma quando l'enzima ha trasformato il substrato. Si stacca dal sito attivo e l'enzima torna libero.",
+  "universita": "Nelle misure di velocità iniziale si assume [P] trascurabile, così la reazione inversa non conta. Spesso il prodotto inibisce il proprio enzima (inibizione da prodotto), e il prodotto finale di una via inibisce il primo enzima regolato (inibizione a feedback).",
+  "clinica": ""
+ },
+ "concentrazione di substrato [S]": {
+  "tipo": "struttura",
+  "base": "Quanta «materia prima» c'è a disposizione dell'enzima: più ce n'è, più lavora, fino a un massimo.",
+  "superiore": "La quantità di substrato per litro di soluzione (mol/L). È la variabile che si cambia negli esperimenti di cinetica per vedere come cambia la velocità.",
+  "universita": "In grafico sull'asse x della curva di Michaelis-Menten (o 1/[S] nel grafico dei doppi reciproci). Nella cellula molti enzimi lavorano con [S] vicina o inferiore alla Km: così la loro velocità segue i cambiamenti di substrato.",
+  "clinica": "La glucochinasi epatica, con Km alta, lavora più veloce quando la glicemia sale dopo i pasti: fa da sensore del glucosio."
+ },
+ "velocità iniziale (v₀)": {
+  "tipo": "struttura",
+  "base": "Quanto è veloce l'enzima appena comincia, quando c'è ancora tutta la materia prima.",
+  "superiore": "La velocità della reazione misurata nei primi istanti, quando il substrato non è ancora diminuito e il prodotto è quasi zero. Si esprime come quantità di prodotto formato al secondo o al minuto.",
+  "universita": "Si ricava dalla pendenza iniziale della curva prodotto/tempo. Usare v₀ evita gli effetti della reazione inversa, dell'inibizione da prodotto e del consumo di substrato. Unità di attività enzimatica: U (µmol/min) o katal (mol/s).",
+  "clinica": "Le attività degli enzimi nel siero (es. transaminasi, CK) si misurano in U/L proprio come velocità di reazione in condizioni standard."
+ },
+ "equazione di Michaelis-Menten": {
+  "tipo": "struttura",
+  "base": "Una formula che dice quanto è veloce un enzima a seconda di quanta materia prima ha.",
+  "superiore": "v₀ = Vmax·[S] / (Km + [S]). Descrive la velocità di molti enzimi: cresce con il substrato fino a un massimo (Vmax). Ha la forma di un'iperbole.",
+  "universita": "Ricavata (Briggs-Haldane) con l'ipotesi dello stato stazionario: [ES] costante, [S] molto maggiore di [E], misura di v₀. Casi limite: [S] << Km → v₀ ≈ (Vmax/Km)·[S]; [S] >> Km → v₀ ≈ Vmax; [S] = Km → v₀ = Vmax/2. kcat/Km (costante di specificità) misura l'efficienza catalitica; il massimo teorico è il limite della diffusione, circa 10⁸-10⁹ M⁻¹s⁻¹. Non vale per gli enzimi allosterici (curva sigmoide).",
+  "clinica": "La stessa forma matematica descrive il legame dei farmaci ai recettori e l'eliminazione dei farmaci saturabile (cinetica di Michaelis-Menten di fenitoina ed etanolo: piccoli aumenti di dose possono dare grandi aumenti della concentrazione)."
+ },
+ "velocità massima (Vmax)": {
+  "tipo": "struttura",
+  "base": "La velocità più alta che l'enzima può raggiungere quando è tutto occupato e non può lavorare di più.",
+  "superiore": "La velocità che si raggiunge quando tutti gli enzimi sono legati al substrato (saturazione). Aggiungere altro substrato non la aumenta; serve più enzima.",
+  "universita": "Vmax = kcat·[E]totale. kcat (numero di turnover) = molecole di substrato trasformate per sito attivo al secondo, a saturazione. Diminuisce con gli inibitori non competitivi, incompetitivi e irreversibili; non cambia con quelli competitivi.",
+  "clinica": "Induzione enzimatica (es. rifampicina sui citocromi P450): aumenta la quantità di enzima e quindi la Vmax, e altri farmaci vengono eliminati più in fretta."
+ },
+ "costante di Michaelis (Km)": {
+  "tipo": "struttura",
+  "base": "Un numero che dice quanta materia prima serve all'enzima per lavorare a metà della sua forza.",
+  "superiore": "La concentrazione di substrato a cui la velocità è metà della Vmax. Si misura in mol/L. Una Km bassa vuol dire che l'enzima lavora bene anche con poco substrato.",
+  "universita": "Km = (k₋₁ + k₂)/k₁. Se k₂ << k₋₁, Km ≈ Kd del complesso ES ed è un indice inverso di affinità. È caratteristica di ogni coppia enzima-substrato ed è indipendente dalla quantità di enzima. Aumenta (apparentemente) con gli inibitori competitivi; diminuisce con gli incompetitivi.",
+  "clinica": "Esochinasi (Km bassa per il glucosio) e glucochinasi epatica (Km alta) spiegano perché il fegato trattiene glucosio solo quando la glicemia è alta. L'aldeide deidrogenasi mitocondriale con Km bassa, poco attiva in molti asiatici (variante ALDH2*2), causa il flushing da alcol."
+ },
+ "grafico di Lineweaver-Burk": {
+  "tipo": "struttura",
+  "base": "Un disegno che trasforma una curva in una linea dritta, così è più facile leggere i numeri dell'enzima.",
+  "superiore": "Grafico dei doppi reciproci: 1/v₀ sull'asse y e 1/[S] sull'asse x. I punti stanno su una retta da cui si leggono Km e Vmax.",
+  "universita": "1/v₀ = (Km/Vmax)·(1/[S]) + 1/Vmax. Intercetta y = 1/Vmax, intercetta x = −1/Km, pendenza = Km/Vmax. Inibizione competitiva: rette che si incrociano sull'asse y; non competitiva pura: sull'asse x; incompetitiva: rette parallele; mista: si incrociano nel secondo quadrante. Difetto: dà troppo peso alle misure a [S] bassa; oggi si preferisce la regressione non lineare.",
+  "clinica": ""
+ },
+ "inibitore competitivo": {
+  "tipo": "molecola",
+  "base": "Una molecola che «ruba il posto» al substrato nella tasca dell'enzima. Se arriva tanto substrato, lo scaccia.",
+  "superiore": "Inibitore simile al substrato che si lega al sito attivo e compete con lui. Aumenta la Km apparente, non cambia la Vmax. Si supera aumentando il substrato.",
+  "universita": "Si lega solo all'enzima libero (E + I ⇄ EI, costante Ki). Km apparente = α·Km con α = 1 + [I]/Ki. Comprende analoghi del substrato e dello stato di transizione.",
+  "clinica": "Esempi: statine (HMG-CoA reduttasi), metotrexato (diidrofolato reduttasi), fomepizolo ed etanolo nell'intossicazione da metanolo o glicole etilenico (alcol deidrogenasi), sulfamidici (diidropteroato sintasi dei batteri)."
+ },
+ "complesso enzima-inibitore (EI)": {
+  "tipo": "molecola",
+  "base": "L'enzima con la tasca occupata da un intruso: non può lavorare.",
+  "superiore": "Unione tra enzima e inibitore. Finché l'inibitore è legato l'enzima non trasforma il substrato.",
+  "universita": "Nell'inibizione reversibile EI si dissocia (costante Ki = [E][I]/[EI]): più Ki è bassa, più l'inibitore è potente. Nell'inibizione irreversibile il legame è covalente e EI non si scioglie.",
+  "clinica": ""
+ },
+ "inibitore non competitivo": {
+  "tipo": "molecola",
+  "base": "Una molecola che non occupa la tasca ma «inceppa» l'enzima da un altro punto: più substrato non serve.",
+  "superiore": "Inibitore che si lega in un punto diverso dal sito attivo, sia all'enzima libero sia al complesso ES. Riduce la Vmax e lascia uguale la Km. Non si supera aggiungendo substrato.",
+  "universita": "Non competitiva pura: stessa affinità per E ed ES (Ki = Ki'), Vmax apparente = Vmax/α, Km invariata. È un caso particolare dell'inibizione mista, più comune, in cui le affinità per E ed ES sono diverse e cambiano sia Km sia Vmax.",
+  "clinica": "Molti farmaci e tossici che legano siti allosterici agiscono con inibizione non competitiva o mista; il loro effetto non viene vinto dall'accumulo del substrato."
+ },
+ "complesso enzima-substrato-inibitore (ESI)": {
+  "tipo": "molecola",
+  "base": "L'enzima che tiene il substrato ma è bloccato da un intruso: non riesce a finire il lavoro.",
+  "superiore": "Complesso in cui l'enzima ha legato sia il substrato sia l'inibitore. Non forma prodotto.",
+  "universita": "Si forma nell'inibizione non competitiva, mista e incompetitiva. Il legame di I a ES sottrae ES alla reazione: per questo la Vmax apparente diminuisce. Nell'incompetitiva sposta anche l'equilibrio E + S ⇄ ES verso ES, e la Km apparente diminuisce.",
+  "clinica": ""
+ },
+ "inibitore incompetitivo": {
+  "tipo": "molecola",
+  "base": "Un intruso che si attacca all'enzima solo quando l'enzima ha già preso il substrato.",
+  "superiore": "Inibitore che si lega solo al complesso enzima-substrato. Riduce sia la Vmax sia la Km dello stesso fattore.",
+  "universita": "Vmax apparente = Vmax/α' e Km apparente = Km/α', con α' = 1 + [I]/Ki'. Nel grafico dei doppi reciproci le rette sono parallele (stessa pendenza Km/Vmax). È più comune negli enzimi con due substrati.",
+  "clinica": "Il litio inibisce l'inositolo monofosfatasi in modo incompetitivo: l'effetto è maggiore proprio quando la via è più attiva; è una delle ipotesi sul suo meccanismo nel disturbo bipolare."
+ },
+ "enzima inattivato": {
+  "tipo": "enzima",
+  "base": "Un enzima rotto per sempre: la cellula deve costruirne uno nuovo.",
+  "superiore": "Enzima legato in modo permanente da un inibitore irreversibile. Non funziona più e l'attività torna solo con la sintesi di enzima nuovo.",
+  "universita": "La modificazione covalente colpisce di solito un residuo catalitico (serina, cisteina). La durata dell'effetto dipende dalla velocità di risintesi dell'enzima, non dalla permanenza del farmaco nel sangue.",
+  "clinica": "Nelle piastrine, che non hanno nucleo e non fanno proteine nuove, la COX inattivata dall'aspirina resta tale per tutta la vita della piastrina (circa 7-10 giorni): per questo si sospende l'aspirina alcuni giorni prima di certi interventi."
+ },
+ "inibitore irreversibile": {
+  "tipo": "molecola",
+  "base": "Una molecola che si incolla all'enzima per sempre e lo mette fuori uso.",
+  "superiore": "Inibitore che si lega all'enzima con un legame covalente (o così forte da non staccarsi). Riduce la quantità di enzima attivo: la Vmax diminuisce.",
+  "universita": "Comprende i reagenti di gruppo (es. organofosfati sulla serina) e gli inibitori «suicidi» (substrati che l'enzima stesso trasforma in una forma reattiva, es. acido clavulanico sulle β-lattamasi). L'inibizione aumenta con il tempo di contatto.",
+  "clinica": "Aspirina (COX), organofosfati e gas nervini (acetilcolinesterasi: crisi colinergica; si usano atropina e pralidossima), penicilline (transpeptidasi batteriche), omeprazolo (pompa protonica H⁺/K⁺-ATPasi), clopidogrel (recettore piastrinico P2Y12)."
+ },
+ "statine": {
+  "tipo": "molecola",
+  "base": "Medicine che abbassano il colesterolo nel sangue.",
+  "superiore": "Farmaci che inibiscono in modo competitivo l'HMG-CoA reduttasi, l'enzima che regola la sintesi del colesterolo. Il fegato ne produce meno e prende più colesterolo LDL dal sangue.",
+  "universita": "Somigliano all'HMG-CoA (porzione simile al mevalonato) e competono per il sito attivo. Il calo del colesterolo nell'epatocita attiva SREBP-2 e aumenta i recettori LDL. Esempi: atorvastatina, rosuvastatina, simvastatina.",
+  "clinica": "Prima scelta nella prevenzione cardiovascolare. Effetti avversi: dolori muscolari, raramente miopatia e rabdomiolisi (CK alta), aumento delle transaminasi; il rischio aumenta con farmaci che inibiscono il CYP3A4 (es. claritromicina). Controindicate in gravidanza."
+ },
+ "metotrexato": {
+  "tipo": "molecola",
+  "base": "Una medicina che frena le cellule che si moltiplicano troppo in fretta: si usa contro alcuni tumori e malattie delle articolazioni.",
+  "superiore": "Analogo dell'acido folico che inibisce in modo competitivo la diidrofolato reduttasi. Senza folati attivi la cellula non riesce a fare il DNA.",
+  "universita": "Si lega alla diidrofolato reduttasi con affinità molto più alta del substrato: si riduce il tetraidrofolato, si blocca la sintesi di timidilato e purine. Entra nelle cellule e viene trattenuto come poliglutammato. A basse dosi settimanali ha effetto antinfiammatorio (anche aumentando l'adenosina).",
+  "clinica": "Usato in leucemie, linfomi, artrite reumatoide, psoriasi, gravidanza ectopica. Tossicità: mucosite, mielosoppressione, epatotossicità, fibrosi polmonare; è teratogeno. Antidoto: acido folinico (leucovorina). Si dà acido folico nella terapia a basse dosi."
+ },
+ "aspirina": {
+  "tipo": "molecola",
+  "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+  "base": "Una medicina molto comune contro dolore e febbre; a piccole dosi rende il sangue meno «appiccicoso».",
+  "superiore": "Acido acetilsalicilico: inibitore irreversibile delle cicloossigenasi (COX). Trasferisce un gruppo acetile all'enzima e lo blocca per sempre.",
+  "universita": "Acetila una serina del sito attivo della COX-1 (e della COX-2): non si formano prostaglandine e trombossano A₂. Le piastrine non possono rifare l'enzima: l'effetto antiaggregante dura la vita della piastrina. Le cellule nucleate (endotelio) invece risintetizzano la COX.",
+  "clinica": "Basse dosi: prevenzione secondaria cardiovascolare. Effetti avversi: ulcera e sanguinamento gastrointestinale, asma da aspirina; nei bambini con infezioni virali rischio di sindrome di Reye. In sovradosaggio: alcalosi respiratoria e poi acidosi metabolica con gap anionico aumentato."
+ },
+ "acido (HA)": {
+  "tipo": "molecola",
+  "base": "Una sostanza dal sapore aspro, come il limone o l'aceto. Nell'acqua libera piccole particelle che rendono la soluzione acida.",
+  "superiore": "Secondo Brønsted-Lowry, una sostanza che cede un protone (H⁺) a una base. HA indica un acido generico: cedendo H⁺ diventa A⁻, la sua base coniugata. Secondo Arrhenius è una sostanza che in acqua libera ioni H⁺.",
+  "universita": "Definizione di Lewis, più ampia: un acido accetta un doppietto di elettroni (es. BF₃, ioni metallici). Acidi poliprotici (H₃PO₄, H₂CO₃) cedono più protoni in tappe successive, ognuna con il suo pKa. Negli amminoacidi e nelle proteine i gruppi acidi (–COOH, –NH₃⁺) cambiano carica a seconda del pH: da qui il punto isoelettrico.",
+  "clinica": "L'organismo produce ogni giorno acidi volatili (CO₂, eliminata dal polmone) e acidi fissi (solforico dalle proteine, lattico, chetoacidi), eliminati dal rene. Il loro accumulo causa acidosi metabolica."
+ },
+ "base (B)": {
+  "tipo": "molecola",
+  "base": "Il «contrario» di un acido: sostanze come il sapone o il bicarbonato da cucina. Mescolate a un acido lo «spengono».",
+  "superiore": "Secondo Brønsted-Lowry, una sostanza che accetta un protone (H⁺). Prendendolo diventa il suo acido coniugato (BH⁺). Secondo Arrhenius è una sostanza che in acqua libera ioni OH⁻.",
+  "universita": "Per Lewis una base dona un doppietto elettronico (es. NH₃, H₂O, ligandi dei metalli). Forza di una base: Kb = [BH⁺][OH⁻]/[B]; per una coppia coniugata Ka·Kb = Kw, quindi pKa + pKb = 14 a 25 °C. Più un acido è forte, più la sua base coniugata è debole.",
+  "clinica": "Le basi forti (soda caustica, detersivi per lavastoviglie) causano ustioni chimiche profonde con necrosi colliquativa, più gravi di quelle da acidi; l'ingestione danneggia soprattutto l'esofago."
+ },
+ "base coniugata (A⁻)": {
+  "tipo": "molecola",
+  "base": "Quello che resta di un acido dopo che ha lasciato andare la sua particellina: può riprenderla.",
+  "superiore": "La specie che si forma quando un acido cede un protone: HA → A⁻ + H⁺. Può riaccettare il protone, quindi è una base. Acido e base coniugata formano una coppia coniugata (es. CH₃COOH/CH₃COO⁻).",
+  "universita": "Ka(HA)·Kb(A⁻) = Kw. La base coniugata di un acido forte (Cl⁻) è così debole da non avere effetti sul pH; quella di un acido debole (acetato) è una base debole e rende basica la soluzione dei suoi sali (idrolisi salina). In un tampone è la componente che neutralizza gli acidi aggiunti.",
+  "clinica": "Il lattato e i chetoanioni (β-idrossibutirrato, acetoacetato) sono basi coniugate di acidi prodotti dal metabolismo: si accumulano nell'acidosi lattica e nella chetoacidosi e aumentano il gap anionico."
+ },
+ "ione idronio (H₃O⁺)": {
+  "tipo": "piccola",
+  "smiles": "[OH3+]",
+  "base": "La particella che rende acida l'acqua: più ce n'è, più la soluzione è acida.",
+  "superiore": "H₃O⁺: una molecola d'acqua che ha preso un protone. In acqua il protone non resta mai libero: si lega subito a una molecola d'acqua. Per semplicità si scrive spesso H⁺.",
+  "universita": "In realtà il protone è solvatato da più molecole d'acqua (es. H₅O₂⁺, H₉O₄⁺) e si sposta molto velocemente da una molecola all'altra (meccanismo di Grotthuss): per questo H⁺ e OH⁻ hanno una mobilità molto alta. pH = −log a(H₃O⁺), che in soluzioni diluite si approssima alla concentrazione.",
+  "clinica": ""
+ },
+ "ione idrossido (OH⁻)": {
+  "tipo": "piccola",
+  "smiles": "[OH-]",
+  "base": "La particella che rende basica (il contrario di acida) l'acqua.",
+  "superiore": "OH⁻: ione formato da un ossigeno e un idrogeno, con una carica negativa. Prevale nelle soluzioni basiche. Con lo ione idronio forma acqua (neutralizzazione).",
+  "universita": "pOH = −log[OH⁻]; a 25 °C pH + pOH = 14. Le basi forti (NaOH, KOH) lo liberano completamente in acqua; le basi deboli (NH₃) lo producono strappando un protone all'acqua.",
+  "clinica": ""
+ },
+ "acido coniugato (BH⁺)": {
+  "tipo": "molecola",
+  "base": "Una base che ha preso una particellina e ora può ridarla.",
+  "superiore": "La specie che si forma quando una base accetta un protone: B + H⁺ → BH⁺. Può cederlo di nuovo, quindi è un acido. Esempio: NH₃ (base) e NH₄⁺ (acido coniugato).",
+  "universita": "Per le basi deboli si usa spesso il pKa dell'acido coniugato: più è alto, più la base è forte. Ammine e farmaci basici sono protonati (carichi) quando il pH è sotto il loro pKa.",
+  "clinica": "I farmaci basici deboli (es. anestetici locali, pKa circa 8) in un tessuto infiammato e acido sono più protonati e attraversano meno le membrane: per questo l'anestesia locale funziona peggio negli ascessi."
+ },
+ "costante di acidità (Ka)": {
+  "tipo": "struttura",
+  "base": "Un numero che dice quanto è «forte» un acido: quanto facilmente lascia andare le sue particelle.",
+  "superiore": "Costante di equilibrio della dissociazione di un acido: Ka = [A⁻][H₃O⁺]/[HA]. Più Ka è grande, più l'acido è forte. Si usa spesso pKa = −log Ka: più pKa è piccolo, più l'acido è forte.",
+  "universita": "Dipende dalla temperatura, non dalle concentrazioni. Acido acetico: Ka 1,8 × 10⁻⁵, pKa 4,76 a 25 °C. Quando pH = pKa, metà dell'acido è dissociato ([A⁻] = [HA]). Per un acido debole HA di concentrazione C (non troppo diluito): [H₃O⁺] ≈ √(Ka·C).",
+  "clinica": "Il pKa di un farmaco e il pH del compartimento decidono quanto è ionizzato e quindi quanto attraversa le membrane (intrappolamento ionico): per esempio rendere alcaline le urine aumenta l'eliminazione dei salicilati e del fenobarbital."
+ },
+ "acido forte": {
+  "tipo": "molecola",
+  "base": "Un acido «potente», come l'acido dello stomaco: corrode e brucia.",
+  "superiore": "Acido che in acqua si dissocia completamente: tutte le molecole cedono il protone. Esempi: HCl, HNO₃, H₂SO₄ (prima dissociazione), HBr, HI, HClO₄. Il pH si calcola direttamente: pH = −log C.",
+  "universita": "Ka molto grande (pKa negativo): in acqua la specie acida più forte che esiste davvero è H₃O⁺ (effetto livellante del solvente). Una soluzione 0,1 M di HCl ha pH 1. Nelle titolazioni con base forte il punto di equivalenza è a pH 7.",
+  "clinica": "L'acido cloridrico dello stomaco (pH circa 1-2) è un acido forte prodotto dalle cellule parietali. L'ingestione di acidi forti causa ustioni con necrosi coagulativa, soprattutto dello stomaco."
+ },
+ "acido debole": {
+  "tipo": "molecola",
+  "base": "Un acido «gentile», come quello dell'aceto o degli agrumi: non corrode come gli acidi forti.",
+  "superiore": "Acido che in acqua si dissocia solo in parte: si forma un equilibrio tra HA, A⁻ e H₃O⁺. Esempi: acido acetico, acido carbonico, acido lattico, acido citrico. Con la sua base coniugata forma un tampone.",
+  "universita": "Ka piccola (pKa positivo): a parità di concentrazione dà un pH più alto di un acido forte. Una soluzione 0,1 M di acido acetico ha pH circa 2,9. Nelle titolazioni con base forte il punto di equivalenza è sopra 7 (la base coniugata idrolizza). Quasi tutti gli acidi biologici sono deboli.",
+  "clinica": "Acidi deboli prodotti dal metabolismo: acido lattico (pKa circa 3,9), β-idrossibutirrico e acetoacetico. Al pH del sangue sono quasi tutti dissociati: i loro anioni restano e i protoni consumano il bicarbonato."
+ },
+ "pH": {
+  "tipo": "struttura",
+  "base": "Un numero da 0 a 14 che dice quanto una cosa è acida o basica: 7 è neutro come l'acqua pura, sotto 7 acido (limone), sopra 7 basico (sapone).",
+  "superiore": "pH = −log[H₃O⁺]. Scala logaritmica: un'unità di pH in meno vuol dire 10 volte più ioni idronio. A 25 °C: acido sotto 7, neutro 7, basico sopra 7. Si misura con il pH-metro o con gli indicatori (cartina tornasole).",
+  "universita": "Kw dipende dalla temperatura: a 37 °C la neutralità è circa pH 6,8. Valori nel corpo: sangue arterioso 7,35-7,45; citosol circa 7,2; lisosomi circa 4,5-5; succo gastrico circa 1-2; urine molto variabili. Il pH influenza la carica delle proteine, l'attività degli enzimi (pH ottimale) e l'affinità dell'emoglobina per l'O₂ (effetto Bohr).",
+  "clinica": "Il pH arterioso si misura all'emogasanalisi: sotto 7,35 acidemia, sopra 7,45 alcalemia. Valori sotto circa 6,8 o sopra circa 7,8 sono difficilmente compatibili con la vita. Il pH vaginale normale è acido (circa 4,5); un pH più alto orienta verso vaginosi batterica o tricomoniasi."
+ },
+ "pH-metro": {
+  "tipo": "struttura",
+  "base": "Uno strumento con una sonda che, immersa in un liquido, dice subito il suo pH.",
+  "superiore": "Strumento che misura il pH con un elettrodo a vetro: la differenza di potenziale tra elettrodo e soluzione dipende dalla concentrazione di ioni idronio. Va tarato con soluzioni tampone a pH noto.",
+  "universita": "Il potenziale dell'elettrodo varia di circa 59 mV per unità di pH a 25 °C (equazione di Nernst). Misura l'attività degli ioni H⁺, non la concentrazione. Alternative: indicatori acido-base (fenolftaleina, metilarancio, tornasole), che cambiano colore in un intervallo di pH.",
+  "clinica": "Gli emogasanalizzatori usano elettrodi dello stesso tipo per misurare pH e PCO₂ nel sangue arterioso. La pH-metria esofagea delle 24 ore si usa per diagnosticare la malattia da reflusso."
+ },
+ "titolazione acido-base": {
+  "tipo": "struttura",
+  "base": "Un esperimento in cui si aggiunge una goccia alla volta di una sostanza basica a una acida (o al contrario) finché si «annullano»: un colore che cambia avvisa quando ci si è arrivati.",
+  "superiore": "Tecnica per trovare la concentrazione di un acido (o di una base) aggiungendo una base (o un acido) a concentrazione nota fino alla neutralizzazione. Al punto di equivalenza le moli di H₃O⁺ e di OH⁻ sono uguali: Ca·Va = Cb·Vb (per acidi e basi monoprotici).",
+  "universita": "La curva di titolazione (pH in funzione del volume aggiunto) mostra un salto netto al punto di equivalenza. Forte/forte: equivalenza a pH 7. Debole/forte: equivalenza sopra 7 per un acido debole, sotto 7 per una base debole; a metà titolazione pH = pKa (massimo potere tampone). L'indicatore si sceglie in modo che viri vicino al punto di equivalenza.",
+  "clinica": "L'acidità titolabile delle urine (soprattutto fosfati) è uno dei modi con cui il rene elimina gli acidi fissi, insieme all'ammonio."
+ },
+ "sale": {
+  "tipo": "piccola",
+  "base": "Quello che resta quando un acido e una base si «annullano»: per esempio il sale da cucina.",
+  "superiore": "Composto ionico formato dal catione della base e dall'anione dell'acido: HCl + NaOH → NaCl + H₂O. Sciolto in acqua si separa negli ioni.",
+  "universita": "Idrolisi salina: un sale di acido forte e base forte (NaCl) dà soluzione neutra; di acido debole e base forte (acetato di sodio) dà soluzione basica; di acido forte e base debole (NH₄Cl) dà soluzione acida.",
+  "clinica": "Soluzioni infusionali: la fisiologica (NaCl 0,9%) ha più cloro del plasma e, in grandi volumi, può dare acidosi metabolica ipercloremica; il Ringer lattato contiene lattato, che il fegato trasforma in bicarbonato."
+ },
+ "soluzione tampone": {
+  "tipo": "struttura",
+  "base": "Un liquido «ammortizzatore»: se aggiungi un po' di acido o di base, il suo pH quasi non cambia.",
+  "superiore": "Soluzione di un acido debole e della sua base coniugata (o di una base debole e del suo acido coniugato) in quantità simili. Si oppone alle variazioni di pH: la base coniugata neutralizza gli acidi aggiunti, l'acido debole neutralizza le basi.",
+  "universita": "pH = pKa + log([A⁻]/[HA]). Il potere tampone è massimo quando pH = pKa e aumenta con la concentrazione totale; utile in pratica nell'intervallo pKa ± 1. Diluire un tampone non cambia (in prima approssimazione) il pH, ma ne riduce la capacità.",
+  "clinica": "Tamponi del corpo: bicarbonato/CO₂ nel liquido extracellulare (il più importante), proteine ed emoglobina (grazie all'istidina), fosfati soprattutto dentro le cellule e nelle urine, ammoniaca/ammonio nelle urine."
+ },
+ "equazione di Henderson-Hasselbalch": {
+  "tipo": "struttura",
+  "base": "Una formula che permette di calcolare il pH di un liquido «ammortizzatore».",
+  "superiore": "pH = pKa + log([A⁻]/[HA]). Collega il pH di un tampone al pKa dell'acido e al rapporto tra base coniugata e acido. Se le due concentrazioni sono uguali, pH = pKa.",
+  "universita": "Si ricava dall'espressione di Ka prendendo il logaritmo. Per il sangue: pH = 6,1 + log([HCO₃⁻]/(0,03 × PCO₂)), con HCO₃⁻ in mmol/L e PCO₂ in mmHg; con valori normali (24 mmol/L, 40 mmHg) il rapporto è 20:1 e il pH 7,4. Serve anche a calcolare quanto un farmaco è ionizzato a un certo pH.",
+  "clinica": "Base dell'interpretazione dell'emogasanalisi: il pH dipende dal rapporto tra bicarbonato (regolato dal rene, componente metabolica) e PCO₂ (regolata dal polmone, componente respiratoria). Se uno cambia, l'altro cerca di seguirlo (compenso)."
+ },
+ "acido cloridrico (HCl)": {
+  "tipo": "piccola",
+  "smiles": "Cl",
+  "base": "Un acido molto forte. Ce n'è un po' nel nostro stomaco e serve a digerire.",
+  "superiore": "Acido forte monoprotico: in acqua si dissocia completamente in H₃O⁺ e Cl⁻. Il succo gastrico ne contiene a concentrazione tale da avere pH circa 1-2.",
+  "universita": "Secreto dalle cellule parietali delle ghiandole gastriche: la H⁺/K⁺-ATPasi pompa H⁺ nel lume, il Cl⁻ esce da canali apicali; dal lato del sangue esce bicarbonato («marea alcalina» dopo i pasti). Stimolato da gastrina, istamina (recettori H₂) e acetilcolina. Attiva il pepsinogeno in pepsina e uccide molti microrganismi.",
+  "clinica": "Gli inibitori della pompa protonica (omeprazolo) e gli antagonisti H₂ riducono l'acidità in reflusso e ulcera. Il vomito prolungato fa perdere HCl: alcalosi metabolica ipocloremica e ipokaliemica."
+ },
+ "acido acetico (CH₃COOH)": {
+  "tipo": "molecola",
+  "smiles": "CC(=O)O",
+  "base": "L'acido che dà all'aceto il suo sapore aspro.",
+  "superiore": "Acido carbossilico debole: in acqua si dissocia solo in piccola parte in acetato (CH₃COO⁻) e H₃O⁺. Ka 1,8 × 10⁻⁵, pKa 4,76 a 25 °C. Con l'acetato di sodio forma un tampone classico di laboratorio.",
+  "universita": "L'aceto ne contiene circa il 4-6%. Una soluzione 0,1 M ha pH circa 2,9. L'acetato attivato come acetil-CoA è al centro del metabolismo (dal glucosio, dagli acidi grassi, dall'etanolo).",
+  "clinica": "Il test con acido acetico diluito si usa in colposcopia: le aree di epitelio cervicale anomalo diventano bianche (acetobianche)."
+ },
+ "acido carbonico (H₂CO₃)": {
+  "tipo": "molecola",
+  "smiles": "OC(=O)O",
+  "base": "L'acido che si forma quando l'anidride carbonica si scioglie nell'acqua, per esempio nelle bibite gassate.",
+  "superiore": "Acido debole diprotico che si forma da CO₂ + H₂O e si dissocia in HCO₃⁻ + H⁺. Insieme al bicarbonato è il principale tampone del sangue.",
+  "universita": "In soluzione è poco abbondante rispetto alla CO₂ disciolta: per questo nel sangue si usa il pKa apparente 6,1, che comprende la CO₂ disciolta (0,03 × PCO₂ mmol/L). La sua formazione da CO₂ è lenta senza l'anidrasi carbonica. Il tampone è «aperto»: la CO₂ si elimina con la respirazione e il bicarbonato si regola con il rene.",
+  "clinica": "Ipoventilazione (BPCO, sedativi) → più CO₂, più acido carbonico: acidosi respiratoria. Iperventilazione (ansia, altitudine, embolia polmonare) → meno CO₂: alcalosi respiratoria, con parestesie e crampi da riduzione del calcio ionizzato."
+ },
+ "idrossido di sodio (NaOH)": {
+  "tipo": "piccola",
+  "smiles": "[Na+].[OH-]",
+  "base": "La soda caustica: una sostanza molto basica che si usa per stappare gli scarichi. Brucia la pelle.",
+  "superiore": "Base forte: in acqua si dissocia completamente in Na⁺ e OH⁻. Si usa in laboratorio per titolare gli acidi.",
+  "universita": "Una soluzione 0,1 M ha pH 13 (pOH 1). Assorbe CO₂ dall'aria formando carbonato: le soluzioni titolanti vanno standardizzate. Con i grassi dà saponi (saponificazione).",
+  "clinica": "Ingestione accidentale di caustici (soprattutto bambini): necrosi colliquativa profonda di esofago e stomaco, rischio di perforazione e di stenosi; non indurre il vomito né tentare di «neutralizzare»; endoscopia precoce per valutare il danno."
+ },
+ "ammoniaca (NH₃)": {
+  "tipo": "piccola",
+  "smiles": "N",
+  "base": "Un gas dall'odore pungente, presente in alcuni detersivi. Sciolta in acqua la rende basica.",
+  "superiore": "Base debole: in acqua prende un protone dall'acqua e forma lo ione ammonio: NH₃ + H₂O ⇄ NH₄⁺ + OH⁻. Kb 1,8 × 10⁻⁵ a 25 °C (pKa di NH₄⁺ circa 9,25).",
+  "universita": "Molecola piramidale con un doppietto libero sull'azoto: è anche una base di Lewis (forma complessi con i metalli). Nel corpo NH₃ attraversa le membrane, NH₄⁺ no: nel tubulo renale l'ammoniaca si lega agli H⁺ secreti e resta intrappolata nelle urine come NH₄⁺ (eliminazione di acidi).",
+  "clinica": "Nell'acidosi metabolica cronica il rene aumenta molto l'escrezione di NH₄⁺ (dalla glutammina); il gap anionico urinario aiuta a capire se questa risposta c'è (es. diarrea) o manca (acidosi tubulari renali)."
+ }
+}

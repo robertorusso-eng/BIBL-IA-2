@@ -1,0 +1,3373 @@
+[
+ {
+  "id": "INF-001",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Come si scrive il numero decimale 45 in binario?",
+  "opzioni": {
+   "A": "101011",
+   "B": "101101",
+   "C": "110101",
+   "D": "100101",
+   "E": "111001"
+  },
+  "giusta": "B",
+  "perche": "Scomponendo 45 in potenze di 2 si ottiene 32 + 8 + 4 + 1, cioè le posizioni 5, 3, 2 e 0: 101101. L'opzione A vale 43 e nasce da un errore nelle ultime cifre. Un errore tipico con il metodo delle divisioni successive è leggere i resti dall'alto verso il basso invece che dal basso verso l'alto. Controlla sempre ricalcolando il valore decimale del risultato.",
+  "semplice": "Per passare in binario dividi per 2 e annota i resti, poi leggili al contrario. Per 45: resti 1, 0, 1, 1, 0, 1 dal primo all'ultimo; letti dal basso danno 101101. Verifica: 32 + 8 + 4 + 1 = 45.",
+  "passaggi": [
+   "1. 45 : 2 = 22 resto 1",
+   "2. 22 : 2 = 11 resto 0",
+   "3. 11 : 2 = 5 resto 1",
+   "4. 5 : 2 = 2 resto 1",
+   "5. 2 : 2 = 1 resto 0",
+   "6. 1 : 2 = 0 resto 1",
+   "7. Resti letti dal basso: 101101"
+  ],
+  "concetto": "conversione decimale-binario"
+ },
+ {
+  "id": "INF-002",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Quanto vale in decimale il numero binario 11010110?",
+  "opzioni": {
+   "A": "212",
+   "B": "106",
+   "C": "214",
+   "D": "234",
+   "E": "198"
+  },
+  "giusta": "C",
+  "perche": "Si sommano le potenze di 2 nelle posizioni dove c'è un 1: 128 + 64 + 16 + 4 + 2 = 214. L'opzione B (106) si ottiene dimenticando il bit più a sinistra o spostando tutto di una posizione. L'errore tipico è numerare le posizioni partendo da 1 invece che da 0, cosa che raddoppia o dimezza il risultato. Il bit più a destra vale sempre 2⁰ = 1.",
+  "semplice": "Ogni cifra binaria vale il doppio di quella alla sua destra: 1, 2, 4, 8, 16, 32, 64, 128. Scrivi questi pesi sopra le cifre e somma solo quelli sopra gli 1. Per 11010110: 128 + 64 + 16 + 4 + 2 = 214.",
+  "passaggi": [
+   "1. Pesi: 128 64 32 16 8 4 2 1",
+   "2. Cifre: 1 1 0 1 0 1 1 0",
+   "3. Somma dei pesi con cifra 1: 128 + 64 + 16 + 4 + 2",
+   "4. Risultato: 214"
+  ],
+  "concetto": "conversione binario-decimale"
+ },
+ {
+  "id": "INF-003",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Quanto vale in decimale il numero esadecimale 3F?",
+  "opzioni": {
+   "A": "36",
+   "B": "61",
+   "C": "315",
+   "D": "48",
+   "E": "63"
+  },
+  "giusta": "E",
+  "perche": "In base 16 la cifra di sinistra vale 16 volte la sua cifra: 3 · 16 = 48, e F vale 15, quindi 48 + 15 = 63. L'opzione D (48) dimentica la cifra delle unità. L'errore tipico è leggere F come 6 (la lettera dopo la E nell'alfabeto non c'entra) o trattare 3F come se fosse in base 10. Le cifre esadecimali vanno da 0 a 9 e poi da A = 10 a F = 15.",
+  "semplice": "In esadecimale contiamo con 16 simboli: 0-9 e A-F. 3F significa «3 sedicine e 15 unità», cioè 48 + 15 = 63. È il numero che in binario si scrive 111111.",
+  "passaggi": [
+   "1. 3F₁₆ = 3 · 16¹ + F · 16⁰",
+   "2. F = 15",
+   "3. 3 · 16 + 15 = 48 + 15 = 63"
+  ],
+  "concetto": "sistema esadecimale"
+ },
+ {
+  "id": "INF-004",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Come si scrive in esadecimale il numero binario 10110111?",
+  "opzioni": {
+   "A": "B7",
+   "B": "7B",
+   "C": "267",
+   "D": "AB",
+   "E": "C7"
+  },
+  "giusta": "A",
+  "perche": "Si divide il numero in gruppi di 4 bit partendo da destra: 1011 e 0111. 1011 vale 11, cioè B, e 0111 vale 7, quindi il risultato è B7. L'opzione B inverte l'ordine dei gruppi, errore frequente quando si legge da destra a sinistra. L'opzione C è la conversione in ottale (gruppi di 3 bit), non in esadecimale.",
+  "semplice": "Ogni cifra esadecimale corrisponde esattamente a 4 bit. Basta tagliare il numero binario a blocchi di 4 da destra e tradurre ciascun blocco: 1011 → B, 0111 → 7. Risultato: B7 (che in decimale vale 183).",
+  "passaggi": [
+   "1. 10110111 → 1011 | 0111",
+   "2. 1011 = 8 + 2 + 1 = 11 = B",
+   "3. 0111 = 4 + 2 + 1 = 7",
+   "4. Risultato: B7"
+  ],
+  "concetto": "binario-esadecimale"
+ },
+ {
+  "id": "INF-005",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Quanti valori diversi si possono rappresentare con 10 bit?",
+  "opzioni": {
+   "A": "10",
+   "B": "100",
+   "C": "512",
+   "D": "1024",
+   "E": "1000"
+  },
+  "giusta": "D",
+  "perche": "Ogni bit ha 2 stati, quindi n bit danno 2ⁿ combinazioni: 2¹⁰ = 1024. L'opzione C (512) è 2⁹, l'errore di chi confonde il numero di valori con il valore massimo rappresentabile. Con 10 bit senza segno si va da 0 a 1023, quindi i valori sono 1024. L'opzione E confonde le potenze di 2 con quelle di 10.",
+  "semplice": "Con 1 bit hai 2 possibilità, con 2 bit 4, con 3 bit 8: ogni bit in più raddoppia. Con 10 bit raddoppi dieci volte: 1024. Per questo un «kibibyte» vale 1024 byte.",
+  "passaggi": [
+   "1. Valori = 2ⁿ",
+   "2. n = 10",
+   "3. 2¹⁰ = 1024"
+  ],
+  "concetto": "numero di combinazioni"
+ },
+ {
+  "id": "INF-006",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "test",
+  "domanda": "Qual è la rappresentazione di -5 in complemento a due su 8 bit?",
+  "opzioni": {
+   "A": "10000101",
+   "B": "11111010",
+   "C": "11111011",
+   "D": "00000101",
+   "E": "11111101"
+  },
+  "giusta": "C",
+  "perche": "Si parte da +5 = 00000101, si invertono tutti i bit (11111010) e si aggiunge 1: 11111011. L'opzione A è la rappresentazione in modulo e segno, l'opzione B è il complemento a uno, cioè il risultato prima di aggiungere 1. L'errore tipico è proprio fermarsi all'inversione dei bit. Verifica: 11111011 + 00000101 = 100000000, e il nono bit si scarta, dando 0.",
+  "semplice": "Il complemento a due è il modo in cui i computer scrivono i numeri negativi. La ricetta è: scrivi il numero positivo, inverti ogni bit, aggiungi 1. Il vantaggio è che la somma 5 + (-5) dà davvero zero con la normale addizione binaria.",
+  "passaggi": [
+   "1. +5 = 00000101",
+   "2. Inverto i bit: 11111010",
+   "3. Aggiungo 1: 11111011"
+  ],
+  "concetto": "complemento a due"
+ },
+ {
+  "id": "INF-007",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "test",
+  "domanda": "Quale intervallo di numeri interi si può rappresentare in complemento a due con 8 bit?",
+  "opzioni": {
+   "A": "da -128 a +127",
+   "B": "da -127 a +127",
+   "C": "da 0 a 255",
+   "D": "da -127 a +128",
+   "E": "da -256 a +255"
+  },
+  "giusta": "A",
+  "perche": "Con n bit in complemento a due l'intervallo va da -2ⁿ⁻¹ a 2ⁿ⁻¹ - 1, quindi con 8 bit da -128 a +127. L'opzione B è l'intervallo del modulo e segno, che spreca una combinazione per lo «zero negativo». L'opzione C è l'intervallo senza segno. C'è un negativo in più perché lo zero occupa una delle combinazioni con il primo bit a 0.",
+  "semplice": "Le 256 combinazioni di 8 bit vengono divise a metà: 128 iniziano con 0 (zero e i positivi, da 0 a 127) e 128 iniziano con 1 (i negativi, da -1 a -128). Ecco perché il più grande positivo è 127 ma il più piccolo negativo è -128.",
+  "passaggi": [
+   "1. Combinazioni: 2⁸ = 256",
+   "2. Minimo: -2⁷ = -128",
+   "3. Massimo: 2⁷ - 1 = 127"
+  ],
+  "concetto": "intervallo del complemento a due"
+ },
+ {
+  "id": "INF-008",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Un file di 50 MB (1 MB = 10⁶ byte) viene scaricato con una connessione a 100 Mbit/s. Qual è il tempo minimo di download?",
+  "opzioni": {
+   "A": "0,5 s",
+   "B": "2 s",
+   "C": "40 s",
+   "D": "4 s",
+   "E": "50 s"
+  },
+  "giusta": "D",
+  "perche": "Le velocità di rete si misurano in bit al secondo, mentre i file in byte: bisogna convertire. 50 MB = 50 · 8 = 400 Mbit, e 400 Mbit / 100 Mbit/s = 4 s. L'opzione A (0,5 s) è l'errore di chi divide 50 per 100 senza moltiplicare per 8. Ricorda che la b minuscola indica il bit e la B maiuscola il byte.",
+  "semplice": "Un byte è fatto di 8 bit. Il file è di 50 megabyte, cioè 400 megabit; la linea trasporta 100 megabit ogni secondo. Servono quindi 4 secondi, nel caso ideale senza rallentamenti.",
+  "passaggi": [
+   "1. 50 MB · 8 = 400 Mbit",
+   "2. t = 400 Mbit / 100 Mbit/s",
+   "3. t = 4 s"
+  ],
+  "concetto": "bit e byte"
+ },
+ {
+  "id": "INF-009",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Qual è il risultato della somma binaria 1011 + 0110?",
+  "opzioni": {
+   "A": "1101",
+   "B": "10001",
+   "C": "10101",
+   "D": "11001",
+   "E": "10011"
+  },
+  "giusta": "B",
+  "perche": "In decimale 1011 = 11 e 0110 = 6, quindi la somma è 17 = 10001. Facendo il calcolo in colonna si generano riporti nelle prime tre colonne da destra (escluse le unità). L'opzione A (1101 = 13) è l'errore di chi dimentica i riporti. Regola base: 1 + 1 = 10, cioè scrivo 0 e riporto 1.",
+  "semplice": "La somma binaria funziona come quella decimale, ma si «sfora» già a 2. Quindi 1 + 1 fa 0 con riporto di 1, e 1 + 1 + 1 fa 1 con riporto di 1. Puoi sempre controllare convertendo: 11 + 6 = 17, che in binario è 10001.",
+  "passaggi": [
+   "1. Colonna 0: 1 + 0 = 1",
+   "2. Colonna 1: 1 + 1 = 0, riporto 1",
+   "3. Colonna 2: 0 + 1 + 1 = 0, riporto 1",
+   "4. Colonna 3: 1 + 0 + 1 = 0, riporto 1",
+   "5. Riporto finale: 1 → 10001 (= 17)"
+  ],
+  "concetto": "somma binaria"
+ },
+ {
+  "id": "INF-010",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Nel codice ASCII la lettera 'A' ha codice 65. Quale codice ha la lettera minuscola 'a'?",
+  "opzioni": {
+   "A": "66",
+   "B": "91",
+   "C": "32",
+   "D": "1",
+   "E": "97"
+  },
+  "giusta": "E",
+  "perche": "In ASCII le lettere minuscole stanno 32 posizioni dopo le maiuscole corrispondenti, quindi 'a' = 65 + 32 = 97. La distanza di 32 corrisponde a un solo bit diverso (il bit di peso 32), e per questo convertire maiuscole e minuscole è facile per il computer. L'opzione C è proprio la distanza, non il codice. L'errore tipico è credere che maiuscole e minuscole abbiano lo stesso codice.",
+  "semplice": "Ogni carattere ha un numero. In ASCII l'alfabeto maiuscolo parte da 65 ('A') e quello minuscolo da 97 ('a'). In Python lo verifichi con ord('a'), che restituisce 97.",
+  "passaggi": [
+   "1. 'A' = 65",
+   "2. Distanza maiuscola-minuscola = 32",
+   "3. 'a' = 65 + 32 = 97"
+  ],
+  "concetto": "codifica ASCII"
+ },
+ {
+  "id": "INF-011",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Quanto vale in decimale il numero ottale 17?",
+  "opzioni": {
+   "A": "15",
+   "B": "17",
+   "C": "7",
+   "D": "23",
+   "E": "71"
+  },
+  "giusta": "A",
+  "perche": "In base 8 la cifra di sinistra vale 8 volte la sua cifra: 1 · 8 + 7 = 15. L'opzione B è l'errore di chi legge il numero come se fosse in base 10. L'opzione D (23) è 17 letto in esadecimale. Ogni base dà un valore diverso alla stessa scrittura, quindi controlla sempre la base indicata.",
+  "semplice": "In ottale si usano solo le cifre da 0 a 7, e ogni posizione vale 8 volte la precedente. Il numero 17 in ottale significa «un otto e sette unità», cioè 15. In binario 17₈ si scrive 001 111.",
+  "passaggi": [
+   "1. 17₈ = 1 · 8¹ + 7 · 8⁰",
+   "2. = 8 + 7",
+   "3. = 15"
+  ],
+  "concetto": "sistema ottale"
+ },
+ {
+  "id": "INF-012",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "test",
+  "domanda": "In un registro di 8 bit senza segno si calcola 200 + 100. Quale valore resta nel registro?",
+  "opzioni": {
+   "A": "300",
+   "B": "255",
+   "C": "44",
+   "D": "100",
+   "E": "0"
+  },
+  "giusta": "C",
+  "perche": "300 non sta in 8 bit, il cui massimo è 255: si ha un overflow. Il nono bit (di peso 256) viene perso e resta 300 - 256 = 44. L'opzione B è l'errore di chi pensa che il valore si blocchi al massimo («saturazione»), comportamento che esiste solo in alcuni casi speciali. Nell'aritmetica binaria normale il risultato è il resto della divisione per 2⁸.",
+  "semplice": "Immagina un contachilometri a tre cifre che arriva a 999 e poi riparte da 000. Un registro di 8 bit fa lo stesso: dopo 255 torna a 0. Quindi 200 + 100 = 300 diventa 300 - 256 = 44.",
+  "passaggi": [
+   "1. 200 + 100 = 300",
+   "2. Massimo con 8 bit: 255",
+   "3. 300 mod 256 = 44"
+  ],
+  "concetto": "overflow"
+ },
+ {
+  "id": "INF-013",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice Python?\n```python\nprint(13 << 2)\n```",
+  "opzioni": {
+   "A": "26",
+   "B": "52",
+   "C": "15",
+   "D": "3",
+   "E": "11"
+  },
+  "giusta": "B",
+  "perche": "L'operatore << sposta i bit verso sinistra: spostare di 2 posizioni significa moltiplicare per 2² = 4, quindi 13 · 4 = 52. In binario 1101 diventa 110100. L'opzione A è lo spostamento di una sola posizione. L'opzione D (3) è il risultato dello spostamento a destra, 13 >> 2, che divide per 4 scartando il resto.",
+  "semplice": "Spostare tutte le cifre binarie a sinistra di un posto aggiunge uno 0 in fondo, proprio come aggiungere uno 0 in decimale moltiplica per 10. In binario invece moltiplica per 2. Due spostamenti moltiplicano per 4: 13 → 52.",
+  "passaggi": [
+   "1. 13 = 1101₂",
+   "2. 1101 << 2 = 110100₂",
+   "3. 110100₂ = 32 + 16 + 4 = 52"
+  ],
+  "concetto": "scorrimento di bit"
+ },
+ {
+  "id": "INF-014",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Un'immagine non compressa di 800 × 600 pixel usa 24 bit per pixel. Quanto occupa?",
+  "opzioni": {
+   "A": "480 000 byte",
+   "B": "11 520 000 byte",
+   "C": "3 840 000 byte",
+   "D": "1 440 000 byte",
+   "E": "14 400 byte"
+  },
+  "giusta": "D",
+  "perche": "I pixel sono 800 · 600 = 480 000, e ognuno occupa 24 bit = 3 byte, quindi 1 440 000 byte (circa 1,44 MB). L'opzione B (11 520 000) è il risultato in bit, non in byte. L'opzione A conta un solo byte per pixel. L'errore tipico è dimenticare la conversione da bit a byte.",
+  "semplice": "Con 24 bit per pixel si usano 8 bit per il rosso, 8 per il verde e 8 per il blu (RGB): 3 byte a pixel. Basta moltiplicare il numero di pixel per 3. Per questo le foto vengono compresse, ad esempio in JPEG.",
+  "passaggi": [
+   "1. Pixel: 800 · 600 = 480 000",
+   "2. Byte per pixel: 24 / 8 = 3",
+   "3. 480 000 · 3 = 1 440 000 byte"
+  ],
+  "concetto": "dimensione di un'immagine"
+ },
+ {
+  "id": "INF-015",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice Python?\n```python\nprint(len('è'.encode('utf-8')), len('e'.encode('utf-8')))\n```",
+  "opzioni": {
+   "A": "1 1",
+   "B": "2 2",
+   "C": "2 1",
+   "D": "1 2",
+   "E": "4 1"
+  },
+  "giusta": "C",
+  "perche": "In UTF-8 i caratteri ASCII (come 'e') occupano 1 byte, mentre le lettere accentate come 'è' ne occupano 2. UTF-8 è una codifica a lunghezza variabile, da 1 a 4 byte per carattere. L'errore tipico è pensare che ogni carattere occupi sempre 1 byte, come nell'ASCII. L'opzione E pensa a una codifica a 4 byte fissi, che è UTF-32.",
+  "semplice": "Unicode assegna un numero a ogni carattere del mondo; UTF-8 è il modo più diffuso di scriverlo in byte. Le lettere semplici usano 1 byte, quelle accentate 2, gli ideogrammi cinesi 3 e le emoji 4. Così un testo inglese occupa poco, ma si possono scrivere tutte le lingue.",
+  "passaggi": [
+   "1. 'e' è un carattere ASCII → 1 byte",
+   "2. 'è' ha codice Unicode 232 > 127 → 2 byte in UTF-8",
+   "3. Output: 2 1"
+  ],
+  "concetto": "codifica UTF-8"
+ },
+ {
+  "id": "INF-016",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice Python?\n```python\nprint(0.1 + 0.2 == 0.3)\n```",
+  "opzioni": {
+   "A": "True",
+   "B": "0.3",
+   "C": "Errore di sintassi",
+   "D": "None",
+   "E": "False"
+  },
+  "giusta": "E",
+  "perche": "0,1 e 0,2 non si possono scrivere esattamente in binario: diventano numeri periodici e vengono arrotondati. La loro somma vale 0.30000000000000004, diversa dal valore memorizzato per 0.3, quindi il confronto dà False. L'errore tipico è confrontare numeri in virgola mobile con ==. Si usa invece una tolleranza, ad esempio abs(a - b) < 1e-9 oppure math.isclose(a, b).",
+  "semplice": "Come 1/3 in decimale diventa 0,333... senza fine, 0,1 in binario diventa 0,0001100110011... senza fine. Il computer deve tagliare, e i piccoli errori si sommano. Per questo 0.1 + 0.2 non è esattamente 0.3.",
+  "passaggi": [
+   "1. 0.1 + 0.2 → 0.30000000000000004",
+   "2. 0.3 → 0.29999999999999998...",
+   "3. I due valori sono diversi → False"
+  ],
+  "concetto": "virgola mobile"
+ },
+ {
+  "id": "INF-017",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Qual è il numero minimo di bit necessario per dare un codice diverso a 300 studenti?",
+  "opzioni": {
+   "A": "8",
+   "B": "9",
+   "C": "10",
+   "D": "300",
+   "E": "7"
+  },
+  "giusta": "B",
+  "perche": "Serve il più piccolo n con 2ⁿ ≥ 300. Con 8 bit si hanno 256 codici, non bastano; con 9 bit se ne hanno 512, sufficienti. L'opzione A è l'errore di chi pensa che un byte basti sempre. L'opzione C funziona ma non è il minimo.",
+  "semplice": "Raddoppia finché superi 300: 2, 4, 8, 16, 32, 64, 128, 256, 512. Ci vogliono 9 raddoppi, quindi 9 bit. Con 8 bit resterebbero 44 studenti senza codice.",
+  "passaggi": [
+   "1. 2⁸ = 256 < 300",
+   "2. 2⁹ = 512 ≥ 300",
+   "3. Servono 9 bit"
+  ],
+  "concetto": "numero minimo di bit"
+ },
+ {
+  "id": "INF-018",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Si usa un bit di parità pari. Quale bit va aggiunto alla sequenza 1101011?",
+  "opzioni": {
+   "A": "0",
+   "B": "Nessuno, la parità si usa solo con 8 bit",
+   "C": "1",
+   "D": "2",
+   "E": "Dipende dal bit più a sinistra"
+  },
+  "giusta": "C",
+  "perche": "Con la parità pari il numero totale di 1, compreso il bit di parità, deve essere pari. La sequenza 1101011 contiene cinque 1, quindi serve aggiungere un 1 per arrivare a sei. L'opzione A sarebbe giusta con la parità dispari. Il bit di parità rileva un singolo bit sbagliato ma non permette di capire quale sia.",
+  "semplice": "Conta gli 1: 1, 1, 0, 1, 0, 1, 1 → cinque. Cinque è dispari, quindi aggiungi un 1 per renderlo pari. Chi riceve riconta: se trova un numero dispari di 1, sa che c'è stato un errore.",
+  "passaggi": [
+   "1. Uni nella sequenza: 5",
+   "2. 5 è dispari",
+   "3. Bit di parità = 1 (totale 6, pari)"
+  ],
+  "concetto": "bit di parità"
+ },
+ {
+  "id": "INF-019",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "test",
+  "domanda": "Un audio non compresso è campionato a 44 100 Hz, con 16 bit per campione, in stereo (2 canali). Quanti byte occupa un secondo?",
+  "opzioni": {
+   "A": "88 200",
+   "B": "44 100",
+   "C": "1 411 200",
+   "D": "705 600",
+   "E": "176 400"
+  },
+  "giusta": "E",
+  "perche": "In un secondo ci sono 44 100 campioni per canale, ciascuno di 16 bit = 2 byte, su 2 canali: 44 100 · 2 · 2 = 176 400 byte. L'opzione C (1 411 200) è lo stesso valore espresso in bit. L'opzione A dimentica uno dei due canali. Si chiama bit rate: per la qualità CD è circa 1,4 Mbit/s.",
+  "semplice": "Ogni secondo il suono viene «fotografato» 44 100 volte per ciascun altoparlante. Ogni fotografia occupa 2 byte. Moltiplicando tutto: 44 100 · 2 · 2 = 176 400 byte al secondo, circa 10 MB al minuto.",
+  "passaggi": [
+   "1. Campioni al secondo per canale: 44 100",
+   "2. Byte per campione: 16 / 8 = 2",
+   "3. Canali: 2",
+   "4. 44 100 · 2 · 2 = 176 400 byte"
+  ],
+  "concetto": "digitalizzazione del suono"
+ },
+ {
+  "id": "INF-020",
+  "materia": "Informatica",
+  "argomento": "Rappresentazione dei dati e sistema binario",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice Python?\n```python\nprint(0b1010 + 0x0A)\n```",
+  "opzioni": {
+   "A": "20",
+   "B": "1010A",
+   "C": "10",
+   "D": "1020",
+   "E": "Errore"
+  },
+  "giusta": "A",
+  "perche": "Il prefisso 0b indica un numero binario e 0x un numero esadecimale: 0b1010 vale 10 e 0x0A vale 10, quindi la somma è 20. Python stampa il risultato in decimale. L'opzione B è l'errore di chi pensa a una concatenazione di testo. Per vedere il risultato in binario si userebbe bin(20), che dà '0b10100'.",
+  "semplice": "Python capisce i numeri in diverse basi grazie al prefisso: 0b per il binario, 0o per l'ottale, 0x per l'esadecimale. Dentro il computer sono tutti lo stesso numero. Qui sono due modi diversi di scrivere 10, quindi la somma fa 20.",
+  "passaggi": [
+   "1. 0b1010 = 8 + 2 = 10",
+   "2. 0x0A = 10",
+   "3. 10 + 10 = 20"
+  ],
+  "concetto": "letterali in basi diverse"
+ },
+ {
+  "id": "INF-021",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Quale di queste caratteristiche NON è richiesta a un algoritmo?",
+  "opzioni": {
+   "A": "Finitezza: deve terminare dopo un numero finito di passi",
+   "B": "Non ambiguità: ogni passo deve essere interpretabile in un solo modo",
+   "C": "Eseguibilità: ogni passo deve essere realizzabile",
+   "D": "Deve essere scritto in un linguaggio di programmazione",
+   "E": "Deve produrre un risultato"
+  },
+  "giusta": "D",
+  "perche": "Un algoritmo è una sequenza finita di istruzioni non ambigue ed eseguibili che risolve un problema: può essere scritto in italiano, in pseudocodice o con un diagramma di flusso. Il linguaggio di programmazione serve solo a trasformarlo in un programma. L'errore tipico è confondere algoritmo e programma. Una ricetta di cucina scritta bene è già un esempio di algoritmo.",
+  "semplice": "L'algoritmo è l'idea della soluzione, il programma è la sua traduzione per il computer. Puoi scrivere l'algoritmo per fare la media dei voti su un foglio, a parole. Deve però essere preciso, finire e dare un risultato.",
+  "passaggi": [
+   "La domanda chiede la caratteristica NON richiesta.",
+   "Un algoritmo deve essere finito, non ambiguo, eseguibile e produrre un risultato.",
+   "Può essere scritto in italiano, in pseudocodice o con un diagramma di flusso.",
+   "Il linguaggio di programmazione serve solo a trasformarlo in programma.",
+   "Non richiesto: essere scritto in un linguaggio di programmazione."
+  ],
+  "concetto": "proprietà di un algoritmo"
+ },
+ {
+  "id": "INF-022",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "In un diagramma di flusso, quale simbolo rappresenta una condizione con due uscite (vero/falso)?",
+  "opzioni": {
+   "A": "Il rettangolo",
+   "B": "Il parallelogramma",
+   "C": "L'ovale",
+   "D": "Il cerchio piccolo",
+   "E": "Il rombo"
+  },
+  "giusta": "E",
+  "perche": "Il rombo contiene una domanda con risposta sì/no e ha due frecce in uscita, una per il vero e una per il falso. Il rettangolo indica un'elaborazione (ad esempio un calcolo), il parallelogramma l'input o l'output, l'ovale l'inizio e la fine. Il cerchio piccolo è un connettore tra parti del diagramma. L'errore tipico è mettere una condizione in un rettangolo, perdendo le due uscite.",
+  "semplice": "Pensa al rombo come a un bivio stradale: arrivi, leggi il cartello (la condizione) e vai a destra o a sinistra. Ad esempio «voto ≥ 6?»: sì → «promosso», no → «insufficiente».",
+  "passaggi": [
+   "Una condizione ha due uscite: vero e falso.",
+   "Rettangolo = elaborazione, parallelogramma = input/output, ovale = inizio/fine, cerchio piccolo = connettore.",
+   "Il simbolo della decisione con due frecce in uscita è il rombo."
+  ],
+  "concetto": "simboli del diagramma di flusso"
+ },
+ {
+  "id": "INF-023",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "In un diagramma di flusso, l'istruzione «leggi N» va disegnata dentro:",
+  "opzioni": {
+   "A": "un parallelogramma",
+   "B": "un rombo",
+   "C": "un rettangolo",
+   "D": "un ovale",
+   "E": "un esagono"
+  },
+  "giusta": "A",
+  "perche": "Le operazioni di ingresso (leggere un dato) e di uscita (scrivere un risultato) si rappresentano con il parallelogramma. Il rettangolo è per i calcoli e le assegnazioni, come N ← N + 1. Il rombo è per le decisioni. In alcuni testi l'esagono indica un ciclo con contatore, ma non l'input.",
+  "semplice": "Ogni forma ha un compito. Parallelogramma = il computer parla con l'utente (riceve o mostra dati). Rettangolo = il computer lavora da solo (fa calcoli). Così il diagramma si legge a colpo d'occhio.",
+  "passaggi": [
+   "«Leggi N» è un'operazione di ingresso (input).",
+   "Input e output si disegnano nel parallelogramma.",
+   "Rettangolo per calcoli e assegnazioni, rombo per decisioni, ovale per inizio e fine.",
+   "Va in un parallelogramma."
+  ],
+  "concetto": "input e output"
+ },
+ {
+  "id": "INF-024",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "test",
+  "domanda": "Con la ricerca binaria, qual è il numero massimo di confronti necessari per trovare un elemento in una lista ordinata di 1000 elementi?",
+  "opzioni": {
+   "A": "1000",
+   "B": "500",
+   "C": "100",
+   "D": "10",
+   "E": "32"
+  },
+  "giusta": "D",
+  "perche": "A ogni confronto la ricerca binaria dimezza la parte di lista da esaminare, quindi servono circa log₂(1000) passi, arrotondato per eccesso a 10 (2¹⁰ = 1024 ≥ 1000). L'opzione A è il caso peggiore della ricerca lineare, l'opzione B il suo caso medio. L'errore tipico è dimenticare che la ricerca binaria funziona solo su dati ordinati. La sua complessità è O(log n).",
+  "semplice": "È il gioco «indovina il numero da 1 a 1000» rispondendo «più alto» o «più basso». Se dici sempre il numero di mezzo, elimini metà dei candidati ogni volta: 1000, 500, 250, 125, 63, 32, 16, 8, 4, 2, 1. In 10 domande hai finito.",
+  "passaggi": [
+   "1. Ogni passo dimezza: n → n/2",
+   "2. Cerco il minimo k con 2ᵏ ≥ 1000",
+   "3. 2⁹ = 512 < 1000, 2¹⁰ = 1024 ≥ 1000",
+   "4. k = 10"
+  ],
+  "concetto": "ricerca binaria"
+ },
+ {
+  "id": "INF-025",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Quale condizione è necessaria per applicare la ricerca binaria (dicotomica) a una lista?",
+  "opzioni": {
+   "A": "La lista deve contenere solo numeri",
+   "B": "La lista deve avere un numero pari di elementi",
+   "C": "La lista deve essere ordinata",
+   "D": "La lista non deve contenere duplicati",
+   "E": "La lista deve avere meno di 1000 elementi"
+  },
+  "giusta": "C",
+  "perche": "La ricerca binaria confronta l'elemento cercato con quello centrale e decide se proseguire a sinistra o a destra: questo ha senso solo se la lista è ordinata. Funziona anche con parole o altri dati confrontabili, quindi A è falsa. Il numero di elementi può essere qualsiasi e i duplicati non impediscono di trovare un elemento. L'errore tipico è applicarla a una lista non ordinata, ottenendo risposte sbagliate.",
+  "semplice": "In un dizionario cerchi una parola aprendo a metà e scegliendo la metà giusta: funziona perché le parole sono in ordine alfabetico. Se le parole fossero mescolate dovresti leggerle tutte, una per una.",
+  "passaggi": [
+   "La ricerca binaria confronta l'elemento cercato con quello centrale.",
+   "Se è minore prosegue a sinistra, se è maggiore a destra, scartando metà lista.",
+   "Questo scarto è corretto solo se gli elementi sono in ordine.",
+   "Tipo dei dati, numero pari di elementi o duplicati non contano.",
+   "La lista deve essere ordinata."
+  ],
+  "concetto": "precondizione della ricerca binaria"
+ },
+ {
+  "id": "INF-026",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Qual è la complessità nel caso peggiore della ricerca lineare (sequenziale) in una lista di n elementi?",
+  "opzioni": {
+   "A": "O(n)",
+   "B": "O(log n)",
+   "C": "O(n²)",
+   "D": "O(1)",
+   "E": "O(n log n)"
+  },
+  "giusta": "A",
+  "perche": "Nel caso peggiore l'elemento è l'ultimo o non c'è, e bisogna controllare tutti gli n elementi: il tempo cresce in modo proporzionale a n. O(log n) è la ricerca binaria, O(1) è l'accesso diretto a una posizione. L'errore tipico è confondere il caso migliore (elemento in prima posizione, 1 confronto) con il caso peggiore. La notazione O descrive come cresce il tempo quando n diventa grande.",
+  "semplice": "Cerchi un amico in una fila guardando le persone una per una. Se la fila raddoppia, nel caso peggiore ci metti il doppio. Questo è il comportamento «lineare», O(n).",
+  "passaggi": [
+   "Caso peggiore: l'elemento è l'ultimo o non c'è.",
+   "Bisogna controllare tutti gli n elementi uno per uno.",
+   "Il numero di confronti cresce in proporzione a n.",
+   "O(log n) è la binaria, O(1) l'accesso diretto.",
+   "La complessità è O(n)."
+  ],
+  "concetto": "complessità lineare"
+ },
+ {
+  "id": "INF-027",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "test",
+  "domanda": "Qual è la complessità nel caso peggiore del bubble sort su n elementi?",
+  "opzioni": {
+   "A": "O(n)",
+   "B": "O(n²)",
+   "C": "O(log n)",
+   "D": "O(n log n)",
+   "E": "O(2ⁿ)"
+  },
+  "giusta": "B",
+  "perche": "Il bubble sort fa fino a n - 1 passate, e in ogni passata confronta coppie di elementi vicini: in totale circa n(n-1)/2 confronti, cioè O(n²). L'opzione D è la complessità di algoritmi più efficienti come il merge sort. L'opzione A vale solo nel caso migliore (lista già ordinata) per la versione che si ferma quando non fa scambi. L'errore tipico è confondere caso migliore e caso peggiore.",
+  "semplice": "Con 10 elementi servono circa 45 confronti, con 100 elementi circa 4950: dieci volte più dati, cento volte più lavoro. È il segno di un algoritmo quadratico, che diventa lento con liste lunghe.",
+  "passaggi": [
+   "1. Passate: n - 1",
+   "2. Confronti totali: (n-1) + (n-2) + ... + 1 = n(n-1)/2",
+   "3. Termine dominante: n²/2 → O(n²)"
+  ],
+  "concetto": "complessità del bubble sort"
+ },
+ {
+  "id": "INF-028",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\ns = 0\nfor i in range(1, 6):\n    s = s + i * i\nprint(s)\n```",
+  "opzioni": {
+   "A": "15",
+   "B": "25",
+   "C": "30",
+   "D": "91",
+   "E": "55"
+  },
+  "giusta": "E",
+  "perche": "Il ciclo prende i = 1, 2, 3, 4, 5 (range(1, 6) esclude il 6) e somma i quadrati: 1 + 4 + 9 + 16 + 25 = 55. L'opzione A (15) somma i numeri senza elevarli al quadrato. L'opzione D (91) include anche 6² = 36, l'errore di chi pensa che range(1, 6) arrivi fino a 6. Fare una tabella con i valori di i e s a ogni giro evita questi errori.",
+  "semplice": "Un accumulatore parte da 0 e a ogni giro aggiunge qualcosa. Qui aggiunge il quadrato di i: 1, poi 4, poi 9, 16 e 25. Il totale è 55.",
+  "passaggi": [
+   "1. i=1: s = 0 + 1 = 1",
+   "2. i=2: s = 1 + 4 = 5",
+   "3. i=3: s = 5 + 9 = 14",
+   "4. i=4: s = 14 + 16 = 30",
+   "5. i=5: s = 30 + 25 = 55"
+  ],
+  "concetto": "variabile accumulatore"
+ },
+ {
+  "id": "INF-029",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nn = 20\nc = 0\nwhile n > 1:\n    n = n // 2\n    c = c + 1\nprint(c)\n```",
+  "opzioni": {
+   "A": "4",
+   "B": "5",
+   "C": "10",
+   "D": "20",
+   "E": "3"
+  },
+  "giusta": "A",
+  "perche": "n assume i valori 20 → 10 → 5 → 2 → 1: dopo 4 divisioni n vale 1 e la condizione n > 1 diventa falsa. Il contatore c conta i giri, quindi vale 4. L'opzione B è l'errore di chi esegue un giro in più, come se la condizione fosse n ≥ 1. Questo ciclo calcola la parte intera di log₂ n.",
+  "semplice": "Il ciclo dimezza n finché non arriva a 1 e conta quante volte lo fa. Da 20: 10, 5, 2, 1, cioè quattro dimezzamenti. L'operatore // fa la divisione intera, scartando il resto (5 // 2 = 2).",
+  "passaggi": [
+   "1. Giro 1: n = 10, c = 1",
+   "2. Giro 2: n = 5, c = 2",
+   "3. Giro 3: n = 2, c = 3",
+   "4. Giro 4: n = 1, c = 4",
+   "5. n > 1 è falso → stampa 4"
+  ],
+  "concetto": "ciclo while con contatore"
+ },
+ {
+  "id": "INF-030",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Con l'algoritmo di Euclide (a, b) → (b, a mod b), quanto vale il MCD di 48 e 18 e quante divisioni servono?",
+  "opzioni": {
+   "A": "MCD 6, 3 divisioni",
+   "B": "MCD 3, 2 divisioni",
+   "C": "MCD 6, 2 divisioni",
+   "D": "MCD 2, 4 divisioni",
+   "E": "MCD 9, 3 divisioni"
+  },
+  "giusta": "A",
+  "perche": "Si sostituisce la coppia (a, b) con (b, resto di a diviso b) finché il resto è zero: (48, 18) → (18, 12) → (12, 6) → (6, 0). Le divisioni eseguite sono tre e l'ultimo divisore non nullo, 6, è il MCD. L'opzione E sceglie un divisore di 18 ma non di 48. L'errore tipico è fermarsi un passo prima, quando il resto non è ancora zero.",
+  "semplice": "L'idea di Euclide: il MCD di due numeri è lo stesso del più piccolo e del resto della divisione. Si ripete finché il resto diventa zero. Qui 48 : 18 dà resto 12, 18 : 12 dà resto 6, 12 : 6 dà resto 0 → MCD = 6.",
+  "passaggi": [
+   "1. 48 mod 18 = 12 → (18, 12)",
+   "2. 18 mod 12 = 6 → (12, 6)",
+   "3. 12 mod 6 = 0 → (6, 0)",
+   "4. MCD = 6, 3 divisioni"
+  ],
+  "concetto": "algoritmo di Euclide"
+ },
+ {
+  "id": "INF-031",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "test",
+  "domanda": "Secondo il teorema di Böhm-Jacopini, quali strutture di controllo bastano per scrivere qualsiasi algoritmo?",
+  "opzioni": {
+   "A": "Sequenza, salto incondizionato (goto) e ricorsione",
+   "B": "Solo selezione e iterazione",
+   "C": "Sequenza, selezione e iterazione",
+   "D": "Sequenza e ricorsione",
+   "E": "Input, elaborazione e output"
+  },
+  "giusta": "C",
+  "perche": "Il teorema afferma che ogni algoritmo può essere scritto usando solo tre strutture: sequenza (istruzioni una dopo l'altra), selezione (if) e iterazione (ciclo). Il goto non è necessario: questo risultato è alla base della programmazione strutturata. L'opzione E descrive le fasi di un programma, non le strutture di controllo. L'errore tipico è dimenticare la sequenza, che sembra banale ma è una struttura a pieno titolo.",
+  "semplice": "Con tre «mattoncini» costruisci qualsiasi algoritmo: fai una cosa dopo l'altra, scegli tra due strade, ripeti. Per esempio, per contare i promossi: ripeti per ogni studente (iterazione), se il voto è ≥ 6 (selezione) aggiungi 1 al conteggio (sequenza).",
+  "passaggi": [
+   "Il teorema di Böhm-Jacopini indica le strutture di controllo sufficienti.",
+   "Sequenza: istruzioni una dopo l'altra.",
+   "Selezione: if; iterazione: ciclo.",
+   "Il goto non serve; input-elaborazione-output sono fasi, non strutture.",
+   "Bastano sequenza, selezione e iterazione."
+  ],
+  "concetto": "programmazione strutturata"
+ },
+ {
+  "id": "INF-032",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Quale di questi frammenti di codice NON termina mai?",
+  "opzioni": {
+   "A": "i parte da 0; finché i < 5: i = i + 1",
+   "B": "i parte da 10; finché i > 0: i = i - 2",
+   "C": "i parte da 1; finché i != 10: i = i + 2",
+   "D": "for i in range(100): pass",
+   "E": "i parte da 1; finché i < 100: i = i * 2"
+  },
+  "giusta": "C",
+  "perche": "Nell'opzione C i parte da 1 e cresce di 2: assume solo valori dispari (1, 3, 5, 7, 9, 11, ...) e non vale mai esattamente 10, quindi la condizione i != 10 resta sempre vera. Le altre opzioni modificano la variabile in modo da rendere prima o poi falsa la condizione. L'errore tipico è usare != come condizione di uscita: è più sicuro usare < o >. Un ciclo che non termina viola la proprietà di finitezza dell'algoritmo.",
+  "semplice": "Se cammini sugli scalini saltandone uno ogni volta, partendo dal primo, metti i piedi solo sugli scalini dispari: non poserai mai il piede sul decimo. Se la regola è «fermati sul decimo», non ti fermerai mai.",
+  "passaggi": [
+   "1. Valori di i: 1, 3, 5, 7, 9, 11, ...",
+   "2. i è sempre dispari",
+   "3. i != 10 è sempre vero → ciclo infinito"
+  ],
+  "concetto": "ciclo infinito"
+ },
+ {
+  "id": "INF-033",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "In una funzione ricorsiva che calcola il fattoriale, a che cosa serve il caso base (ad esempio «se n = 0 restituisci 1»)?",
+  "opzioni": {
+   "A": "A rendere più veloce il calcolo",
+   "B": "A fermare la ricorsione",
+   "C": "A gestire i numeri negativi",
+   "D": "A memorizzare i risultati già calcolati",
+   "E": "A evitare l'uso di variabili"
+  },
+  "giusta": "B",
+  "perche": "Una funzione ricorsiva chiama se stessa su un problema più piccolo; il caso base è il punto in cui smette di farlo e restituisce direttamente un valore. Senza caso base le chiamate continuerebbero all'infinito, fino all'esaurimento della memoria (in Python RecursionError). L'opzione D descrive la memoizzazione, una tecnica diversa. L'errore tipico è scrivere un caso base che non viene mai raggiunto.",
+  "semplice": "Le matrioske: apri una bambola e dentro ce n'è una più piccola, e così via, fino all'ultima che non si apre. Quella è il caso base. Per il fattoriale: 3! = 3 · 2!, 2! = 2 · 1!, 1! = 1 · 0!, e 0! = 1 chiude la catena.",
+  "passaggi": [
+   "La funzione ricorsiva chiama se stessa su un problema più piccolo (n! = n · (n − 1)!).",
+   "Il caso base restituisce direttamente un valore senza nuove chiamate.",
+   "Senza caso base le chiamate continuerebbero fino all'esaurimento della memoria.",
+   "Memorizzare i risultati è la memoizzazione, un'altra tecnica.",
+   "Il caso base serve a fermare la ricorsione."
+  ],
+  "concetto": "caso base della ricorsione"
+ },
+ {
+  "id": "INF-034",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\ndef f(n):\n    if n < 2:\n        return n\n    return f(n - 1) + f(n - 2)\n\nprint(f(6))\n```",
+  "opzioni": {
+   "A": "6",
+   "B": "13",
+   "C": "5",
+   "D": "21",
+   "E": "8"
+  },
+  "giusta": "E",
+  "perche": "La funzione calcola la successione di Fibonacci con f(0) = 0 e f(1) = 1: i valori sono 0, 1, 1, 2, 3, 5, 8, quindi f(6) = 8. L'opzione B (13) è f(7), l'errore di chi parte a contare da 1. L'opzione C è f(5). Questa versione ricorsiva è molto lenta per n grandi perché ricalcola più volte gli stessi valori.",
+  "semplice": "Ogni numero di Fibonacci è la somma dei due precedenti. Partendo da 0 e 1: 0, 1, 1, 2, 3, 5, 8. Il settimo valore della lista (indice 6) è 8.",
+  "passaggi": [
+   "1. f(0) = 0, f(1) = 1",
+   "2. f(2) = 1, f(3) = 2",
+   "3. f(4) = 3, f(5) = 5",
+   "4. f(6) = f(5) + f(4) = 5 + 3 = 8"
+  ],
+  "concetto": "ricorsione (Fibonacci)"
+ },
+ {
+  "id": "INF-035",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "test",
+  "domanda": "Qual è la complessità del merge sort nel caso peggiore?",
+  "opzioni": {
+   "A": "O(n²)",
+   "B": "O(n)",
+   "C": "O(log n)",
+   "D": "O(n³)",
+   "E": "O(n log n)"
+  },
+  "giusta": "E",
+  "perche": "Il merge sort divide la lista a metà ricorsivamente (log₂ n livelli) e a ogni livello fonde le parti ordinate con circa n operazioni: in totale O(n log n), anche nel caso peggiore. L'opzione A è la complessità di bubble, selection e insertion sort. Il quicksort ha media O(n log n) ma caso peggiore O(n²), quindi i due vengono spesso confusi. È dimostrato che nessun ordinamento basato su confronti può fare meglio di O(n log n) nel caso peggiore.",
+  "semplice": "Per ordinare un mazzo di carte lo dividi in due, ordini ciascuna metà (dividendola ancora) e poi unisci le metà come due file che si incastrano. Con 1000 carte servono circa 10 livelli da 1000 operazioni: circa 10 000 operazioni invece di un milione.",
+  "passaggi": [
+   "Il merge sort divide la lista a metà ricorsivamente: log₂ n livelli.",
+   "A ogni livello fonde le parti ordinate con circa n operazioni.",
+   "Totale: n · log n, anche nel caso peggiore.",
+   "O(n²) è il caso peggiore di bubble, selection, insertion e quicksort.",
+   "La complessità è O(n log n)."
+  ],
+  "concetto": "merge sort"
+ },
+ {
+  "id": "INF-036",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Quante volte viene stampata la parola «ciao»?\n```python\nfor i in range(3):\n    for j in range(4):\n        print('ciao')\n```",
+  "opzioni": {
+   "A": "7",
+   "B": "4",
+   "C": "12",
+   "D": "3",
+   "E": "16"
+  },
+  "giusta": "C",
+  "perche": "Il ciclo esterno fa 3 giri e, per ciascuno, il ciclo interno ne fa 4: in totale 3 · 4 = 12 stampe. L'opzione A somma i giri invece di moltiplicarli, errore tipico con i cicli annidati. range(3) produce 0, 1, 2 e range(4) produce 0, 1, 2, 3. Per questo due cicli annidati su n elementi danno complessità O(n²).",
+  "semplice": "Pensa a un orologio: per ogni ora la lancetta dei minuti fa un giro intero. Qui per ognuno dei 3 valori di i, j fa tutti i suoi 4 valori. 3 righe per 4 colonne = 12 caselle.",
+  "passaggi": [
+   "1. Giri esterni: 3",
+   "2. Giri interni per ogni giro esterno: 4",
+   "3. Totale: 3 · 4 = 12"
+  ],
+  "concetto": "cicli annidati"
+ },
+ {
+  "id": "INF-037",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Questo codice dovrebbe trovare il massimo di una lista. Che cosa stampa?\n```python\nlista = [-3, -7, -1]\nm = 0\nfor x in lista:\n    if x > m:\n        m = x\nprint(m)\n```",
+  "opzioni": {
+   "A": "0",
+   "B": "-7",
+   "C": "-3",
+   "D": "-1",
+   "E": "Errore"
+  },
+  "giusta": "A",
+  "perche": "Poiché m parte da 0 e tutti gli elementi sono negativi, la condizione x > m non è mai vera e m resta 0, un valore che non è neppure nella lista. Il massimo corretto sarebbe -1. L'errore di progetto è inizializzare il massimo con un valore arbitrario: va inizializzato con il primo elemento, m = lista[0]. È un tipico caso da scoprire con un test su dati «strani», come tutti numeri negativi.",
+  "semplice": "Se cerchi il più alto di un gruppo e parti dicendo «il record è 0», con persone tutte sotto lo 0 nessuno batte il record. Il record va preso dal primo concorrente reale, poi si confrontano gli altri.",
+  "passaggi": [
+   "1. m = 0",
+   "2. x = -3: -3 > 0? No",
+   "3. x = -7: -7 > 0? No",
+   "4. x = -1: -1 > 0? No",
+   "5. Stampa 0"
+  ],
+  "concetto": "inizializzazione del massimo"
+ },
+ {
+  "id": "INF-038",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Che differenza c'è tra un ciclo a condizione iniziale (while) e un ciclo a condizione finale (do-while / ripeti...finché)?",
+  "opzioni": {
+   "A": "Il ciclo while viene eseguito sempre almeno una volta",
+   "B": "Il ciclo a condizione finale può essere eseguito zero volte",
+   "C": "Non c'è differenza, cambia solo il nome",
+   "D": "Il ciclo a condizione finale esegue il corpo almeno una volta, il while può eseguirlo zero volte",
+   "E": "Il ciclo while non può avere una condizione composta"
+  },
+  "giusta": "D",
+  "perche": "Nel ciclo a condizione iniziale la condizione si controlla prima del corpo: se è subito falsa il corpo non viene mai eseguito. Nel ciclo a condizione finale il corpo si esegue prima e la condizione si controlla dopo, quindi almeno un giro c'è sempre. Le opzioni A e B invertono le due cose, errore molto frequente. Python ha solo il while, ma il do-while si simula con while True e break.",
+  "semplice": "Il while è come chiedere «hai fame?» prima di cucinare: se rispondi no, non si cucina. Il do-while è come assaggiare e poi chiedere «ne vuoi ancora?»: almeno un assaggio lo fai sempre. È utile, per esempio, per chiedere un dato all'utente finché non è valido.",
+  "passaggi": [
+   "While: la condizione si controlla prima del corpo; se è subito falsa, zero esecuzioni.",
+   "Do-while (ripeti...finché): il corpo si esegue prima, la condizione dopo.",
+   "Quindi il ciclo a condizione finale fa sempre almeno un giro.",
+   "Le opzioni A e B invertono le due cose.",
+   "Risposta: la D."
+  ],
+  "concetto": "tipi di ciclo"
+ },
+ {
+  "id": "INF-039",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "test",
+  "domanda": "Il «problema della fermata» (halting problem) chiede se esista un algoritmo generale che, dato un programma e un input, stabilisca se il programma termina. Qual è la risposta?",
+  "opzioni": {
+   "A": "Esiste, ma richiede tempo esponenziale",
+   "B": "Esiste solo per programmi scritti in Python",
+   "C": "Esiste ed è usato dai compilatori",
+   "D": "Non esiste: il problema è indecidibile",
+   "E": "Esiste, ma solo se il programma non usa cicli while"
+  },
+  "giusta": "D",
+  "perche": "Alan Turing dimostrò nel 1936 che nessun algoritmo può risolvere il problema della fermata per tutti i programmi: il problema è indecidibile. La dimostrazione è per assurdo: se esistesse, si potrebbe costruire un programma che fa il contrario di ciò che l'algoritmo prevede su se stesso. L'opzione A confonde l'indecidibilità con la difficoltà computazionale. I compilatori possono riconoscere alcuni cicli infiniti evidenti, ma non tutti.",
+  "semplice": "Esistono problemi ben definiti che nessun computer, per quanto potente, potrà mai risolvere in generale. Il più famoso è proprio stabilire se un programma qualsiasi si fermerà. Non è questione di velocità: è impossibile in linea di principio.",
+  "passaggi": [
+   "Il problema chiede un algoritmo che decida la terminazione di qualsiasi programma su qualsiasi input.",
+   "Turing (1936) dimostrò per assurdo che non può esistere.",
+   "Se esistesse, si costruirebbe un programma che fa il contrario di ciò che l'algoritmo prevede su se stesso: contraddizione.",
+   "Non è questione di tempo esponenziale o di linguaggio.",
+   "Non esiste: il problema è indecidibile."
+  ],
+  "concetto": "indecidibilità"
+ },
+ {
+  "id": "INF-040",
+  "materia": "Informatica",
+  "argomento": "Algoritmi e diagrammi di flusso",
+  "livello": "superiori",
+  "domanda": "Si applica il selection sort (a ogni passata si porta in prima posizione libera il minimo della parte non ordinata) alla lista [5, 3, 8, 1]. Com'è la lista dopo la prima passata?",
+  "opzioni": {
+   "A": "[1, 3, 8, 5]",
+   "B": "[3, 5, 8, 1]",
+   "C": "[3, 5, 1, 8]",
+   "D": "[1, 5, 3, 8]",
+   "E": "[1, 3, 5, 8]"
+  },
+  "giusta": "A",
+  "perche": "Nella prima passata si cerca il minimo di tutta la lista, che è 1, e lo si scambia con l'elemento in prima posizione, 5: si ottiene [1, 3, 8, 5]. L'opzione C è la lista dopo una passata di bubble sort, che porta il massimo in fondo. L'opzione E è la lista completamente ordinata, che si ottiene solo dopo altre passate. L'errore tipico è far «scivolare» gli elementi invece di fare un solo scambio.",
+  "semplice": "Il selection sort lavora come chi sistema le carte in mano: cerca la più piccola e la mette per prima, poi cerca la più piccola tra le rimanenti e la mette seconda, e così via. Alla prima passata 1 e 5 si scambiano di posto.",
+  "passaggi": [
+   "1. Minimo di [5, 3, 8, 1]: 1 (posizione 3)",
+   "2. Scambio posizione 0 e posizione 3",
+   "3. Risultato: [1, 3, 8, 5]"
+  ],
+  "concetto": "selection sort"
+ },
+ {
+  "id": "INF-041",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nprint(7 // 2, 7 % 2)\n```",
+  "opzioni": {
+   "A": "3.5 1",
+   "B": "3 1",
+   "C": "3 0.5",
+   "D": "4 1",
+   "E": "3.5 0"
+  },
+  "giusta": "B",
+  "perche": "L'operatore // calcola il quoziente della divisione intera (7 // 2 = 3) e % il resto (7 % 2 = 1). L'opzione A confonde // con /, che in Python 3 dà sempre un numero decimale (3.5). L'opzione D arrotonda invece di troncare. Il resto % 2 è molto usato per capire se un numero è pari (resto 0) o dispari (resto 1).",
+  "semplice": "Dividi 7 caramelle tra 2 bambini: ognuno ne prende 3 (quoziente, //) e ne avanza 1 (resto, %). Questi due operatori servono spessissimo: per esempio n % 2 == 0 significa «n è pari».",
+  "passaggi": [
+   "1. 7 // 2 = 3 (quoziente intero)",
+   "2. 7 % 2 = 1 (resto)",
+   "3. Output: 3 1"
+  ],
+  "concetto": "divisione intera e resto"
+ },
+ {
+  "id": "INF-042",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\nprint(2 ** 3 ** 2)\n```",
+  "opzioni": {
+   "A": "64",
+   "B": "36",
+   "C": "512",
+   "D": "12",
+   "E": "Errore"
+  },
+  "giusta": "C",
+  "perche": "L'operatore di potenza ** è associativo a destra: 2 ** 3 ** 2 si calcola come 2 ** (3 ** 2) = 2 ** 9 = 512. L'opzione A (64) è il risultato di (2 ** 3) ** 2, che si otterrebbe se si calcolasse da sinistra come per gli altri operatori. Anche in matematica una torre di esponenti si legge dall'alto verso il basso. Nel dubbio, metti le parentesi.",
+  "semplice": "Con le potenze impilate si parte dall'esponente più in alto: prima 3² = 9, poi 2⁹ = 512. Python segue la stessa regola della matematica. Le parentesi rendono il codice più chiaro anche quando non servono.",
+  "passaggi": [
+   "1. 3 ** 2 = 9",
+   "2. 2 ** 9 = 512"
+  ],
+  "concetto": "precedenza degli operatori"
+ },
+ {
+  "id": "INF-043",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nx = \"5\"\nprint(x * 3)\n```",
+  "opzioni": {
+   "A": "15",
+   "B": "555",
+   "C": "Errore: non si può moltiplicare una stringa",
+   "D": "5 5 5",
+   "E": "\"5\"3"
+  },
+  "giusta": "B",
+  "perche": "x è una stringa (ci sono le virgolette), e moltiplicare una stringa per un intero la ripete: \"5\" * 3 = \"555\". L'opzione A è l'errore di chi pensa che x sia il numero 5. Per ottenere 15 bisogna prima convertire: int(x) * 3. Invece \"5\" + 3 darebbe davvero errore (TypeError), perché non si può sommare testo e numero.",
+  "semplice": "Per Python \"5\" è un carattere, come una lettera. Moltiplicare un testo per 3 vuol dire scriverlo tre volte di seguito: \"ab\" * 3 = \"ababab\". Per fare i conti con un input da tastiera serve int().",
+  "passaggi": [
+   "1. x è di tipo str",
+   "2. str * int → ripetizione",
+   "3. \"5\" * 3 = \"555\""
+  ],
+  "concetto": "tipi di dato: stringhe"
+ },
+ {
+  "id": "INF-044",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\ns = \"informatica\"\nprint(s[2:5])\n```",
+  "opzioni": {
+   "A": "\"nfo\"",
+   "B": "\"form\"",
+   "C": "\"forma\"",
+   "D": "\"for\"",
+   "E": "\"orm\""
+  },
+  "giusta": "D",
+  "perche": "Gli indici partono da 0: i=0, n=1, f=2, o=3, r=4, m=5. La fetta s[2:5] prende gli indici 2, 3 e 4 (l'estremo finale è escluso), cioè \"for\". L'opzione B include anche l'indice 5, errore tipico di chi pensa che l'estremo destro sia incluso. L'opzione A parte dall'indice 1, come se si contasse da 1.",
+  "semplice": "Immagina dei paletti tra le lettere numerati da 0. s[2:5] taglia dal paletto 2 al paletto 5 e prende le 3 lettere in mezzo. La lunghezza della fetta è sempre fine meno inizio: 5 - 2 = 3.",
+  "passaggi": [
+   "1. Indici: i0 n1 f2 o3 r4 m5 ...",
+   "2. s[2:5] → indici 2, 3, 4",
+   "3. Caratteri: f, o, r → \"for\""
+  ],
+  "concetto": "slicing delle stringhe"
+ },
+ {
+  "id": "INF-045",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\ns = \"python\"\nprint(s[-1] + s[::-1][1:3])\n```",
+  "opzioni": {
+   "A": "\"noh\"",
+   "B": "\"nht\"",
+   "C": "\"nyp\"",
+   "D": "\"pyt\"",
+   "E": "\"nn\""
+  },
+  "giusta": "A",
+  "perche": "s[-1] è l'ultimo carattere, 'n'. s[::-1] è la stringa al contrario, \"nohtyp\", e la sua fetta [1:3] prende gli indici 1 e 2, cioè \"oh\". Concatenando si ottiene \"noh\". L'opzione E è l'errore di chi pensa che [1:3] prenda solo un carattere o confonde gli indici dopo l'inversione.",
+  "semplice": "Gli indici negativi contano dalla fine: -1 è l'ultimo carattere. Il passo -1 in [::-1] legge la stringa all'indietro. Poi si tagliano i caratteri in posizione 1 e 2 della stringa rovesciata.",
+  "passaggi": [
+   "1. s[-1] = 'n'",
+   "2. s[::-1] = \"nohtyp\"",
+   "3. \"nohtyp\"[1:3] = \"oh\"",
+   "4. 'n' + \"oh\" = \"noh\""
+  ],
+  "concetto": "indici negativi e passo"
+ },
+ {
+  "id": "INF-046",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\na = [1, 2, 3]\nb = a\nb.append(4)\nprint(a)\n```",
+  "opzioni": {
+   "A": "[1, 2, 3]",
+   "B": "[4]",
+   "C": "[1, 2, 3, 4]",
+   "D": "[1, 2, 3, [4]]",
+   "E": "Errore"
+  },
+  "giusta": "C",
+  "perche": "L'assegnazione b = a non copia la lista: fa sì che a e b siano due nomi per lo stesso oggetto. Modificando la lista tramite b, la modifica si vede anche da a. L'opzione A è l'errore tipico di chi pensa che b sia una copia indipendente. Per copiare davvero si usa b = a.copy() oppure b = a[:].",
+  "semplice": "Le variabili in Python sono come etichette attaccate agli oggetti. Con b = a attacchi una seconda etichetta alla stessa lista, non ne crei un'altra. Aggiungere un elemento «tramite b» cambia l'unica lista che c'è.",
+  "passaggi": [
+   "1. a → lista [1, 2, 3]",
+   "2. b = a → b punta alla stessa lista",
+   "3. b.append(4) → la lista diventa [1, 2, 3, 4]",
+   "4. print(a) → [1, 2, 3, 4]"
+  ],
+  "concetto": "riferimenti e mutabilità"
+ },
+ {
+  "id": "INF-047",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\ndef f(x, l=[]):\n    l.append(x)\n    return l\n\nf(1)\nprint(f(2))\n```",
+  "opzioni": {
+   "A": "[2]",
+   "B": "[1]",
+   "C": "[]",
+   "D": "Errore",
+   "E": "[1, 2]"
+  },
+  "giusta": "E",
+  "perche": "Il valore predefinito l=[] viene creato una sola volta, quando la funzione viene definita, e non a ogni chiamata. La prima chiamata aggiunge 1 a quella lista, la seconda aggiunge 2 alla stessa lista, quindi si stampa [1, 2]. L'opzione A è ciò che quasi tutti si aspettano, ed è un errore classico di Python. La soluzione è usare l=None e dentro la funzione scrivere if l is None: l = [].",
+  "semplice": "Il parametro predefinito è come un unico quaderno lasciato sul banco: ogni volta che la funzione viene chiamata senza passare una lista, scrive sullo stesso quaderno. Così le chiamate si «ricordano» di quelle precedenti.",
+  "passaggi": [
+   "1. Definizione: si crea una lista [] di default",
+   "2. f(1): la lista diventa [1]",
+   "3. f(2): la stessa lista diventa [1, 2]",
+   "4. Output: [1, 2]"
+  ],
+  "concetto": "argomenti predefiniti mutabili"
+ },
+ {
+  "id": "INF-048",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nprint(type(3 / 2), 3 / 2)\n```",
+  "opzioni": {
+   "A": "<class 'int'> 1",
+   "B": "<class 'float'> 1.5",
+   "C": "<class 'int'> 1.5",
+   "D": "<class 'float'> 1",
+   "E": "<class 'double'> 1.5"
+  },
+  "giusta": "B",
+  "perche": "In Python 3 l'operatore / restituisce sempre un float, anche quando i due operandi sono interi: 3 / 2 = 1.5. L'opzione A descrive il comportamento di Python 2 o di linguaggi come C, dove la divisione tra interi tronca. Per la divisione intera si usa //. Il tipo double non esiste in Python, i numeri decimali si chiamano float.",
+  "semplice": "Con / Python ti dà il risultato «vero», con la virgola. Con // ti dà solo la parte intera. Quindi 3 / 2 = 1.5 e 3 // 2 = 1.",
+  "passaggi": [
+   "In Python 3 l'operatore / restituisce sempre un float.",
+   "3 / 2 = 1.5.",
+   "type(1.5) è <class 'float'>; in Python non esiste il tipo double.",
+   "La divisione intera (che darebbe 1) si fa con //.",
+   "Stampa: <class 'float'> 1.5."
+  ],
+  "concetto": "divisione e tipo float"
+ },
+ {
+  "id": "INF-049",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nfor i in range(1, 10, 3):\n    print(i, end=' ')\n```",
+  "opzioni": {
+   "A": "1 4 7 10",
+   "B": "1 3 6 9",
+   "C": "3 6 9",
+   "D": "1 2 3",
+   "E": "1 4 7"
+  },
+  "giusta": "E",
+  "perche": "range(inizio, fine, passo) parte da 1 e aggiunge 3 a ogni passo finché resta sotto 10: 1, 4, 7. Il 10 è escluso perché la fine di range non è mai inclusa. L'opzione A è l'errore di chi include l'estremo finale. L'opzione B confonde il passo con «multipli di 3».",
+  "semplice": "range(1, 10, 3) è come salire una scala a salti di 3 gradini partendo dal primo, fermandosi prima del decimo. I gradini toccati sono 1, 4 e 7. end=' ' fa stampare tutto sulla stessa riga separato da spazi.",
+  "passaggi": [
+   "1. i = 1 (< 10, stampa)",
+   "2. i = 4 (< 10, stampa)",
+   "3. i = 7 (< 10, stampa)",
+   "4. i = 10: non < 10, fine"
+  ],
+  "concetto": "funzione range"
+ },
+ {
+  "id": "INF-050",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\nprint(bool(\"\"), bool(\"0\"), bool(0))\n```",
+  "opzioni": {
+   "A": "False False False",
+   "B": "True True False",
+   "C": "False True True",
+   "D": "False True False",
+   "E": "True False False"
+  },
+  "giusta": "D",
+  "perche": "In Python sono «falsi» i valori vuoti o nulli: la stringa vuota \"\", il numero 0, la lista vuota, None. La stringa \"0\" non è vuota (contiene un carattere), quindi è vera, mentre il numero 0 è falso. L'opzione A è l'errore di chi tratta la stringa \"0\" come il numero 0. Questo conta quando si scrive if testo: per controllare se l'utente ha scritto qualcosa.",
+  "semplice": "Regola semplice: vuoto = falso, pieno = vero. \"\" è una scatola vuota, \"0\" è una scatola con dentro un foglietto con scritto 0: non è vuota. Il numero 0 invece conta come falso.",
+  "passaggi": [
+   "1. bool(\"\") → stringa vuota → False",
+   "2. bool(\"0\") → stringa di 1 carattere → True",
+   "3. bool(0) → numero zero → False"
+  ],
+  "concetto": "valori di verità"
+ },
+ {
+  "id": "INF-051",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nprint([x * x for x in range(5) if x % 2 == 0])\n```",
+  "opzioni": {
+   "A": "[0, 4, 16]",
+   "B": "[1, 9]",
+   "C": "[0, 1, 4, 9, 16]",
+   "D": "[4, 16]",
+   "E": "[0, 2, 4]"
+  },
+  "giusta": "A",
+  "perche": "La list comprehension prende x da 0 a 4, tiene solo i pari (0, 2, 4) e ne calcola il quadrato: [0, 4, 16]. L'opzione B prende i dispari. L'opzione E dimentica di elevare al quadrato. L'opzione D dimentica che 0 è pari, errore frequente.",
+  "semplice": "Si legge come una frase: «il quadrato di x, per ogni x da 0 a 4, se x è pari». È un modo compatto di scrivere un ciclo for con un if e un append. Così in una riga si costruisce una lista nuova.",
+  "passaggi": [
+   "1. range(5): 0, 1, 2, 3, 4",
+   "2. Pari: 0, 2, 4",
+   "3. Quadrati: 0, 4, 16"
+  ],
+  "concetto": "list comprehension"
+ },
+ {
+  "id": "INF-052",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nx = 10\n\ndef f():\n    x = 5\n\nf()\nprint(x)\n```",
+  "opzioni": {
+   "A": "5",
+   "B": "None",
+   "C": "Errore: x non definita",
+   "D": "15",
+   "E": "10"
+  },
+  "giusta": "E",
+  "perche": "Dentro la funzione, x = 5 crea una nuova variabile locale che esiste solo durante l'esecuzione di f. La variabile globale x resta 10 e viene stampata. L'opzione A è l'errore di chi pensa che la funzione modifichi la x esterna. Per modificarla davvero servirebbe la dichiarazione global x, ma di solito è meglio restituire un valore con return.",
+  "semplice": "Ogni funzione ha la sua «stanza» con le sue variabili. La x della stanza f è un'altra variabile, anche se ha lo stesso nome di quella fuori. Quando f finisce, la sua x sparisce, e fuori x vale ancora 10.",
+  "passaggi": [
+   "1. x globale = 10",
+   "2. f() crea una x locale = 5",
+   "3. f termina, la x locale sparisce",
+   "4. print(x) → 10"
+  ],
+  "concetto": "variabili locali e globali"
+ },
+ {
+  "id": "INF-053",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Quale eccezione solleva l'istruzione int(\"abc\") in Python?",
+  "opzioni": {
+   "A": "TypeError",
+   "B": "SyntaxError",
+   "C": "ValueError",
+   "D": "NameError",
+   "E": "ZeroDivisionError"
+  },
+  "giusta": "C",
+  "perche": "La funzione int accetta una stringa (il tipo è giusto), ma il contenuto \"abc\" non rappresenta un numero: è un valore non valido, quindi ValueError. TypeError si avrebbe con un tipo sbagliato, ad esempio int([1, 2]). SyntaxError riguarda codice scritto male, che non viene neanche eseguito. Si gestisce con try: ... except ValueError: ...",
+  "semplice": "TypeError = hai dato l'oggetto sbagliato (una lista invece di un testo). ValueError = l'oggetto è del tipo giusto ma il contenuto non va bene. È come chiedere un numero di telefono e ricevere un foglio con scritto «ciao»: è un foglio, ma non contiene un numero.",
+  "passaggi": [
+   "int() accetta una stringa: il tipo dell'argomento è giusto, quindi non è TypeError.",
+   "Il contenuto \"abc\" però non rappresenta un numero: il valore non è valido.",
+   "Un valore non valido per un tipo corretto solleva ValueError.",
+   "Il codice è scritto bene (niente SyntaxError) e non ci sono nomi indefiniti o divisioni.",
+   "Solleva ValueError."
+  ],
+  "concetto": "eccezioni"
+ },
+ {
+  "id": "INF-054",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nprint(len([1, [2, 3], 4]))\n```",
+  "opzioni": {
+   "A": "4",
+   "B": "3",
+   "C": "2",
+   "D": "5",
+   "E": "Errore"
+  },
+  "giusta": "B",
+  "perche": "La lista esterna contiene tre elementi: il numero 1, la lista [2, 3] e il numero 4. len conta solo gli elementi del primo livello, quindi il risultato è 3. L'opzione A è l'errore di chi conta tutti i numeri presenti, anche dentro la lista interna. La lista interna conta come un solo elemento.",
+  "semplice": "Una lista dentro una lista è come una scatola dentro una scatola. Se conti gli oggetti nella scatola grande, la scatola piccola conta come un oggetto solo, qualunque cosa contenga.",
+  "passaggi": [
+   "1. Elemento 0: 1",
+   "2. Elemento 1: [2, 3]",
+   "3. Elemento 2: 4",
+   "4. len = 3"
+  ],
+  "concetto": "liste annidate"
+ },
+ {
+  "id": "INF-055",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\nfor n in [3, 5, 7]:\n    if n % 2 == 0:\n        print(\"pari\")\n        break\nelse:\n    print(\"nessun pari\")\n```",
+  "opzioni": {
+   "A": "pari",
+   "B": "Niente",
+   "C": "nessun pari",
+   "D": "Errore: else senza if",
+   "E": "nessun pari stampato tre volte"
+  },
+  "giusta": "C",
+  "perche": "In Python un ciclo for può avere un blocco else, che viene eseguito solo se il ciclo finisce senza incontrare un break. Qui tutti i numeri sono dispari, il break non viene mai eseguito e quindi si stampa «nessun pari». L'opzione D è l'errore di chi crede che else si possa usare solo con if. L'else è indentato allo stesso livello del for, non dell'if.",
+  "semplice": "Il for-else si legge così: «cerca, e se non hai mai trovato (mai fatto break), fai questo». È comodo per le ricerche: se trovi l'elemento esci con break, altrimenti l'else avvisa che non c'era.",
+  "passaggi": [
+   "1. n = 3: dispari",
+   "2. n = 5: dispari",
+   "3. n = 7: dispari",
+   "4. Ciclo finito senza break → esegue else",
+   "5. Output: nessun pari"
+  ],
+  "concetto": "for-else"
+ },
+ {
+  "id": "INF-056",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa succede eseguendo questo codice?\n```python\ns = \"ciao\"\ns[0] = \"C\"\nprint(s)\n```",
+  "opzioni": {
+   "A": "Stampa \"Ciao\"",
+   "B": "Stampa \"ciao\"",
+   "C": "Stampa \"C\"",
+   "D": "Errore TypeError: le stringhe non si possono modificare",
+   "E": "Stampa \"Cciao\""
+  },
+  "giusta": "D",
+  "perche": "Le stringhe in Python sono immutabili: non si può cambiare un singolo carattere con un'assegnazione. L'istruzione s[0] = \"C\" solleva TypeError. Per ottenere \"Ciao\" bisogna creare una nuova stringa, ad esempio s = \"C\" + s[1:] oppure s = s.capitalize(). Le liste invece sono mutabili, e l[0] = ... funziona.",
+  "semplice": "Una stringa è come una frase incisa su una targa: non puoi cambiare una lettera, puoi solo farne una nuova. Per Python \"Ciao\" è un oggetto nuovo, che puoi assegnare alla stessa variabile.",
+  "passaggi": [
+   "Le stringhe in Python sono immutabili.",
+   "s[0] = \"C\" prova a modificare un carattere della stringa.",
+   "Questa assegnazione solleva TypeError e print non viene eseguito.",
+   "Per ottenere \"Ciao\" serve una nuova stringa, per esempio \"C\" + s[1:].",
+   "Risultato: errore TypeError."
+  ],
+  "concetto": "immutabilità delle stringhe"
+ },
+ {
+  "id": "INF-057",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nprint(\"10\" == 10, 10 == 10.0)\n```",
+  "opzioni": {
+   "A": "True True",
+   "B": "False False",
+   "C": "True False",
+   "D": "Errore",
+   "E": "False True"
+  },
+  "giusta": "E",
+  "perche": "\"10\" è una stringa e 10 è un intero: in Python oggetti di tipo diverso come testo e numero non sono mai uguali, quindi il primo confronto dà False (senza errore). L'intero 10 e il float 10.0 invece rappresentano lo stesso valore numerico, quindi il secondo confronto dà True. L'opzione A è l'errore di chi pensa che Python converta automaticamente il testo in numero, come fanno altri linguaggi.",
+  "semplice": "Per Python il testo \"10\" e il numero 10 sono cose diverse, come la parola «dieci» scritta su un foglio e dieci monete. Tra numeri invece conta il valore: 10 e 10.0 sono la stessa quantità.",
+  "passaggi": [
+   "1. \"10\" == 10 → str contro int → False",
+   "2. 10 == 10.0 → stesso valore numerico → True"
+  ],
+  "concetto": "confronti tra tipi"
+ },
+ {
+  "id": "INF-058",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nd = {\"a\": 1}\nd[\"b\"] = d.get(\"b\", 0) + 1\nd[\"a\"] = d.get(\"a\", 0) + 1\nprint(d)\n```",
+  "opzioni": {
+   "A": "{'a': 1, 'b': 1}",
+   "B": "{'a': 2, 'b': 1}",
+   "C": "{'a': 2}",
+   "D": "Errore KeyError",
+   "E": "{'a': 2, 'b': 0}"
+  },
+  "giusta": "B",
+  "perche": "d.get(chiave, 0) restituisce il valore se la chiave c'è, altrimenti 0, senza errori. Per \"b\", che non c'è, si ottiene 0 + 1 = 1; per \"a\", che vale 1, si ottiene 1 + 1 = 2. L'opzione D sarebbe giusta se si usasse d[\"b\"] invece di d.get(\"b\", 0). È il modo classico per contare le occorrenze, ad esempio delle parole in un testo.",
+  "semplice": "Un dizionario associa chiavi a valori, come una rubrica. get chiede «quanto vale questa chiave? se non c'è, fai finta che sia 0». Così si può contare senza controllare prima se la chiave esiste.",
+  "passaggi": [
+   "1. d = {'a': 1}",
+   "2. d.get('b', 0) = 0 → d['b'] = 1",
+   "3. d.get('a', 0) = 1 → d['a'] = 2",
+   "4. Output: {'a': 2, 'b': 1}"
+  ],
+  "concetto": "dizionari e get"
+ },
+ {
+  "id": "INF-059",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\ndef f(n):\n    if n == 0:\n        return 0\n    return n % 10 + f(n // 10)\n\nprint(f(1234))\n```",
+  "opzioni": {
+   "A": "1234",
+   "B": "4321",
+   "C": "4",
+   "D": "24",
+   "E": "10"
+  },
+  "giusta": "E",
+  "perche": "A ogni chiamata n % 10 prende l'ultima cifra e n // 10 la toglie: la funzione somma le cifre del numero, 4 + 3 + 2 + 1 = 10. Il caso base n == 0 ferma la ricorsione quando non restano cifre. L'opzione B è l'errore di chi pensa che la funzione inverta il numero. L'opzione C si fermerebbe alla prima chiamata.",
+  "semplice": "% 10 ti dà l'ultima cifra di un numero, // 10 la cancella. Ripetendo, «sfogli» il numero cifra per cifra: 4, poi 3, poi 2, poi 1. Sommandole ottieni 10.",
+  "passaggi": [
+   "1. f(1234) = 4 + f(123)",
+   "2. f(123) = 3 + f(12)",
+   "3. f(12) = 2 + f(1)",
+   "4. f(1) = 1 + f(0) = 1 + 0",
+   "5. Totale: 4 + 3 + 2 + 1 = 10"
+  ],
+  "concetto": "ricorsione sulle cifre"
+ },
+ {
+  "id": "INF-060",
+  "materia": "Informatica",
+  "argomento": "Programmazione (Python)",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice in Python 3?\n```python\nprint(round(2.5), round(3.5))\n```",
+  "opzioni": {
+   "A": "3 4",
+   "B": "2 3",
+   "C": "2 4",
+   "D": "3 3",
+   "E": "2.5 3.5"
+  },
+  "giusta": "C",
+  "perche": "In Python 3 round usa l'arrotondamento «al pari» (detto anche del banchiere): quando un numero è esattamente a metà tra due interi, si sceglie l'intero pari. Quindi 2.5 → 2 e 3.5 → 4. L'opzione A è l'arrotondamento che si impara a scuola (metà verso l'alto), che però Python non usa. Questo metodo evita che gli errori di arrotondamento si accumulino sempre nella stessa direzione.",
+  "semplice": "A scuola .5 si arrotonda sempre in su. Python invece, per i casi esattamente a metà, va verso il numero pari più vicino: 2.5 diventa 2, 3.5 diventa 4. In una lunga serie di calcoli, metà delle volte arrotonda in su e metà in giù.",
+  "passaggi": [
+   "1. round(2.5): 2 e 3 equidistanti, sceglie il pari → 2",
+   "2. round(3.5): 3 e 4 equidistanti, sceglie il pari → 4",
+   "3. Output: 2 4"
+  ],
+  "concetto": "arrotondamento in Python"
+ },
+ {
+  "id": "INF-061",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "In una pila (stack) vuota si inseriscono nell'ordine 1, 2, 3 con push. Quale elemento restituisce la prima operazione pop?",
+  "opzioni": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "Tutti e tre insieme",
+   "E": "Nessuno, la pila restituisce solo il primo inserito"
+  },
+  "giusta": "C",
+  "perche": "La pila segue la regola LIFO (Last In, First Out): l'ultimo elemento inserito è il primo a uscire. L'ultimo push è stato 3, quindi pop restituisce 3. L'opzione A descrive il comportamento della coda (FIFO), errore tipico di chi confonde le due strutture. Le pile si usano per l'annullamento (Ctrl+Z) e per gestire le chiamate di funzione.",
+  "semplice": "Pensa a una pila di piatti: il piatto appoggiato per ultimo è in cima ed è il primo che prendi. Metti 1, 2, 3 e la prima cosa che togli è il 3.",
+  "passaggi": [
+   "1. push(1) → [1]",
+   "2. push(2) → [1, 2]",
+   "3. push(3) → [1, 2, 3]",
+   "4. pop() → 3"
+  ],
+  "concetto": "pila LIFO"
+ },
+ {
+  "id": "INF-062",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "In una coda (queue) vuota si inseriscono nell'ordine A, B, C. Quale elemento esce per primo?",
+  "opzioni": {
+   "A": "A",
+   "B": "C",
+   "C": "B",
+   "D": "Dipende dalla lunghezza della coda",
+   "E": "L'elemento più piccolo in ordine alfabetico"
+  },
+  "giusta": "A",
+  "perche": "La coda segue la regola FIFO (First In, First Out): il primo elemento entrato è il primo a uscire, quindi esce A. L'opzione B descrive la pila. L'opzione E descrive una coda con priorità, struttura diversa in cui esce l'elemento con priorità più alta. Le code servono, ad esempio, per gestire i documenti in attesa di stampa.",
+  "semplice": "È la fila alla cassa del supermercato: chi arriva prima viene servito per primo. Entrano A, B, C e il primo a uscire è A.",
+  "passaggi": [
+   "1. enqueue(A) → [A]",
+   "2. enqueue(B) → [A, B]",
+   "3. enqueue(C) → [A, B, C]",
+   "4. dequeue() → A"
+  ],
+  "concetto": "coda FIFO"
+ },
+ {
+  "id": "INF-063",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Qual è il costo per accedere all'elemento in posizione i in un array e in una lista concatenata semplice di n elementi?",
+  "opzioni": {
+   "A": "O(1) in entrambi",
+   "B": "O(n) nell'array, O(1) nella lista concatenata",
+   "C": "O(log n) in entrambi",
+   "D": "O(1) nell'array, O(n) nella lista concatenata",
+   "E": "O(n) in entrambi"
+  },
+  "giusta": "D",
+  "perche": "Gli elementi di un array stanno in celle di memoria consecutive, quindi l'indirizzo dell'elemento i si calcola subito: inizio + i · dimensione, cioè O(1). In una lista concatenata ogni nodo conosce solo il successivo, quindi bisogna scorrere i nodi dall'inizio: O(n) nel caso peggiore. L'opzione B inverte le due strutture. In compenso la lista concatenata permette inserimenti in testa in O(1).",
+  "semplice": "L'array è come una via con le case numerate: vai direttamente al civico 50. La lista concatenata è una caccia al tesoro: ogni biglietto dice dov'è il prossimo, e per arrivare al cinquantesimo devi leggerli tutti.",
+  "passaggi": [
+   "Array: celle consecutive in memoria.",
+   "Indirizzo dell'elemento i = inizio + i · dimensione: si calcola subito, O(1).",
+   "Lista concatenata: ogni nodo conosce solo il successivo, bisogna scorrere dall'inizio.",
+   "Nel caso peggiore servono n passi: O(n).",
+   "O(1) nell'array, O(n) nella lista concatenata."
+  ],
+  "concetto": "array e lista concatenata"
+ },
+ {
+  "id": "INF-064",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nl = [1, 2, 3, 4]\nl.pop()\nl.pop(0)\nl.append(9)\nprint(l)\n```",
+  "opzioni": {
+   "A": "[2, 3, 9]",
+   "B": "[1, 2, 3, 9]",
+   "C": "[2, 3, 4, 9]",
+   "D": "[9, 2, 3]",
+   "E": "[1, 2, 9]"
+  },
+  "giusta": "A",
+  "perche": "l.pop() senza argomenti toglie l'ultimo elemento (4), l.pop(0) toglie il primo (1), restando [2, 3]. append(9) aggiunge 9 in fondo, quindi [2, 3, 9]. L'opzione C è l'errore di chi pensa che pop() tolga il primo elemento. L'opzione D confonde append (in fondo) con un inserimento in testa.",
+  "semplice": "Una lista Python funziona bene come pila: append mette in cima, pop() toglie dalla cima. pop(0) invece toglie dal fondo opposto, l'inizio. Seguendo le operazioni una per una arrivi a [2, 3, 9].",
+  "passaggi": [
+   "1. l = [1, 2, 3, 4]",
+   "2. pop() → toglie 4 → [1, 2, 3]",
+   "3. pop(0) → toglie 1 → [2, 3]",
+   "4. append(9) → [2, 3, 9]"
+  ],
+  "concetto": "operazioni sulle liste"
+ },
+ {
+  "id": "INF-065",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\nfrom collections import deque\nq = deque([10, 20])\nq.append(30)\nq.appendleft(5)\nq.popleft()\nprint(list(q))\n```",
+  "opzioni": {
+   "A": "[5, 10, 20]",
+   "B": "[10, 20, 30]",
+   "C": "[5, 10, 20, 30]",
+   "D": "[20, 30]",
+   "E": "[10, 20]"
+  },
+  "giusta": "B",
+  "perche": "La deque (coda a due estremità) parte da [10, 20]; append(30) aggiunge a destra → [10, 20, 30]; appendleft(5) aggiunge a sinistra → [5, 10, 20, 30]; popleft() toglie da sinistra il 5. Resta [10, 20, 30]. L'opzione A è l'errore di chi fa togliere l'elemento da destra. La deque permette operazioni a entrambi gli estremi in tempo O(1), mentre l.pop(0) su una lista costa O(n).",
+  "semplice": "Una deque è una fila in cui si può entrare e uscire da tutti e due i lati. Aggiungi 30 in fondo, 5 davanti, poi fai uscire quello davanti (il 5). Restano 10, 20, 30.",
+  "passaggi": [
+   "1. [10, 20]",
+   "2. append(30) → [10, 20, 30]",
+   "3. appendleft(5) → [5, 10, 20, 30]",
+   "4. popleft() → [10, 20, 30]"
+  ],
+  "concetto": "deque"
+ },
+ {
+  "id": "INF-066",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "In un albero binario di ricerca (BST), quale visita restituisce le chiavi in ordine crescente?",
+  "opzioni": {
+   "A": "Visita in preordine (radice, sinistra, destra)",
+   "B": "Visita in postordine (sinistra, destra, radice)",
+   "C": "Visita per livelli (in ampiezza)",
+   "D": "Visita in ordine simmetrico (sinistra, radice, destra)",
+   "E": "Nessuna visita: bisogna ordinare le chiavi dopo"
+  },
+  "giusta": "D",
+  "perche": "In un BST ogni nodo ha a sinistra chiavi minori e a destra chiavi maggiori. La visita simmetrica (in-order) visita prima tutto il sottoalbero sinistro, poi il nodo, poi il destro: così le chiavi escono in ordine crescente. La preordine mette la radice per prima, quindi in generale non dà un ordine. L'errore tipico è confondere le tre visite in profondità: conta la posizione della radice.",
+  "semplice": "In un albero di ricerca i più piccoli stanno sempre a sinistra. Se leggi «prima a sinistra, poi il nodo, poi a destra» leggi le chiavi dalla più piccola alla più grande, come le pagine di un libro.",
+  "passaggi": [
+   "In un BST a sinistra stanno chiavi minori, a destra chiavi maggiori.",
+   "Visita simmetrica: prima il sottoalbero sinistro, poi il nodo, poi il destro.",
+   "Così si visitano prima le chiavi minori, poi la radice, poi le maggiori: ordine crescente.",
+   "Preordine e postordine mettono la radice prima o dopo e non danno l'ordine.",
+   "Risposta: la visita in ordine simmetrico."
+  ],
+  "concetto": "visita di un BST"
+ },
+ {
+  "id": "INF-067",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Si inseriscono in un albero binario di ricerca vuoto, nell'ordine, le chiavi 50, 30, 70, 20, 40. Qual è la visita in preordine (radice, sinistra, destra)?",
+  "opzioni": {
+   "A": "20 30 40 50 70",
+   "B": "50 30 70 20 40",
+   "C": "20 40 30 70 50",
+   "D": "50 70 30 40 20",
+   "E": "50 30 20 40 70"
+  },
+  "giusta": "E",
+  "perche": "L'albero ha radice 50, figlio sinistro 30 (con figli 20 e 40) e figlio destro 70. In preordine si visita la radice, poi tutto il sottoalbero sinistro (30, 20, 40), poi il destro (70): 50 30 20 40 70. L'opzione A è la visita simmetrica, l'opzione B è la visita per livelli, l'opzione C è la postordine. L'errore tipico è scrivere i nodi per livelli invece di scendere in profondità.",
+  "semplice": "In preordine dici il nome del nodo appena ci arrivi, poi esplori tutto a sinistra e solo dopo a destra. Parti da 50, scendi a 30, poi a 20, torni su e vai a 40, e solo alla fine vai a 70.",
+  "passaggi": [
+   "1. 50 è la radice",
+   "2. 30 < 50 → sinistra; 70 > 50 → destra",
+   "3. 20 < 30 → sinistra di 30; 40 > 30 → destra di 30",
+   "4. Preordine: 50, (30, 20, 40), (70)"
+  ],
+  "concetto": "visite di un albero"
+ },
+ {
+  "id": "INF-068",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Un albero binario contiene 15 nodi. Qual è il numero minimo di livelli che può avere?",
+  "opzioni": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "8",
+   "E": "15"
+  },
+  "giusta": "B",
+  "perche": "Un albero binario completo con k livelli può contenere al massimo 2ᵏ - 1 nodi: con 3 livelli al massimo 7, con 4 livelli al massimo 15. Quindi 15 nodi richiedono almeno 4 livelli. L'opzione E è il caso peggiore, un albero degenere in cui ogni nodo ha un solo figlio (diventa una lista). Più l'albero è bilanciato, più le ricerche sono veloci, O(log n) invece di O(n).",
+  "semplice": "Ogni livello può contenere il doppio dei nodi del precedente: 1, 2, 4, 8. Sommando i primi quattro livelli si arriva a 15. Quindi 15 nodi stanno tutti in 4 livelli, se l'albero è perfettamente pieno.",
+  "passaggi": [
+   "1. Nodi massimi con k livelli: 2ᵏ - 1",
+   "2. k = 3 → 7 < 15",
+   "3. k = 4 → 15 ≥ 15",
+   "4. Livelli minimi: 4"
+  ],
+  "concetto": "altezza di un albero"
+ },
+ {
+  "id": "INF-069",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "Qual è il costo medio della ricerca di una chiave in una tabella hash ben dimensionata (come un dizionario Python)?",
+  "opzioni": {
+   "A": "O(n)",
+   "B": "O(log n)",
+   "C": "O(1)",
+   "D": "O(n²)",
+   "E": "O(n log n)"
+  },
+  "giusta": "C",
+  "perche": "Una funzione hash trasforma la chiave nella posizione in cui cercarla, quindi in media la ricerca richiede un numero costante di passi, O(1). Nel caso peggiore, se molte chiavi finiscono nella stessa posizione (collisioni), può degradare a O(n). L'opzione B è il costo della ricerca binaria o di un albero bilanciato. Per questo controllare se una chiave è in un dizionario o in un set è molto più veloce che cercarla in una lista.",
+  "semplice": "La funzione hash è come una regola che, dal cognome, ti dice subito in quale cassetto dell'archivio guardare. Non devi aprire tutti i cassetti: vai dritto a quello giusto, qualunque sia la grandezza dell'archivio.",
+  "passaggi": [
+   "La funzione hash trasforma la chiave nella posizione dove cercarla.",
+   "In media basta un numero costante di passi, indipendente da n.",
+   "Solo con molte collisioni si degrada fino a O(n).",
+   "O(log n) è la ricerca binaria o un albero bilanciato.",
+   "Il costo medio è O(1)."
+  ],
+  "concetto": "tabelle hash"
+ },
+ {
+  "id": "INF-070",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Quale struttura dati di appoggio usa normalmente la visita in ampiezza (BFS) di un grafo?",
+  "opzioni": {
+   "A": "Una pila",
+   "B": "Un albero binario di ricerca",
+   "C": "Una tabella hash ordinata",
+   "D": "Una matrice triangolare",
+   "E": "Una coda"
+  },
+  "giusta": "E",
+  "perche": "La BFS visita prima tutti i vicini del nodo di partenza, poi i vicini dei vicini, e così via per livelli: per farlo usa una coda FIFO. La visita in profondità (DFS) usa invece una pila (oppure la ricorsione, che usa la pila delle chiamate). L'opzione A è l'errore tipico di chi scambia BFS e DFS. La BFS trova il cammino con meno archi in un grafo non pesato.",
+  "semplice": "La BFS è come un'onda in uno stagno: si allarga a cerchi, prima i vicini più vicini, poi quelli più lontani. La coda garantisce che chi è stato scoperto prima venga visitato prima.",
+  "passaggi": [
+   "La BFS visita i nodi per livelli: prima tutti i vicini, poi i vicini dei vicini.",
+   "Serve una struttura in cui chi entra prima esce prima: FIFO.",
+   "La struttura FIFO è la coda.",
+   "La pila (LIFO) è invece della DFS.",
+   "La BFS usa una coda."
+  ],
+  "concetto": "visita in ampiezza"
+ },
+ {
+  "id": "INF-071",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\ns = {1, 2, 2, 3, 3, 3}\nprint(len(s))\n```",
+  "opzioni": {
+   "A": "6",
+   "B": "1",
+   "C": "Errore",
+   "D": "2",
+   "E": "3"
+  },
+  "giusta": "E",
+  "perche": "Un set (insieme) non può contenere duplicati: gli elementi ripetuti vengono memorizzati una sola volta. L'insieme contiene quindi solo 1, 2 e 3, e la sua lunghezza è 3. L'opzione A è l'errore di chi conta gli elementi scritti tra le graffe. Il set è il modo più semplice per eliminare i duplicati: len(set(lista)) conta i valori distinti.",
+  "semplice": "Un insieme è come una collezione di figurine dove le doppie vengono scartate. Anche se ne metti tre uguali, ne resta una sola. Qui restano 1, 2 e 3.",
+  "passaggi": [
+   "1. {1, 2, 2, 3, 3, 3} → {1, 2, 3}",
+   "2. len = 3"
+  ],
+  "concetto": "insiemi (set)"
+ },
+ {
+  "id": "INF-072",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "Quale differenza principale c'è tra una lista e una tupla in Python?",
+  "opzioni": {
+   "A": "La tupla può contenere solo numeri",
+   "B": "La lista è immutabile, la tupla è modificabile",
+   "C": "La lista non può contenere elementi di tipi diversi",
+   "D": "La tupla non si può scorrere con un ciclo for",
+   "E": "La tupla è immutabile: dopo la creazione non si possono cambiare i suoi elementi"
+  },
+  "giusta": "E",
+  "perche": "Le liste ([1, 2]) sono mutabili, le tuple ((1, 2)) sono immutabili: non si possono aggiungere, togliere o sostituire elementi. L'opzione B inverte le due cose. Entrambe possono contenere dati di tipi diversi e si possono scorrere con for. Proprio perché immutabili, le tuple possono essere usate come chiavi di un dizionario, le liste no.",
+  "semplice": "Una tupla è come un dato «sigillato»: le coordinate di un punto (3, 4) o una data (15, 11, 2026). Una lista è come un elenco della spesa, a cui aggiungi e togli cose. Se provi t[0] = 5 su una tupla, ottieni un errore.",
+  "passaggi": [
+   "Liste [1, 2]: mutabili, si possono aggiungere, togliere e sostituire elementi.",
+   "Tuple (1, 2): immutabili dopo la creazione.",
+   "Entrambe contengono tipi diversi e si scorrono con for.",
+   "L'opzione B inverte le due cose.",
+   "La tupla è immutabile."
+  ],
+  "concetto": "liste e tuple"
+ },
+ {
+  "id": "INF-073",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Quale di queste istruzioni provoca un errore in Python?",
+  "opzioni": {
+   "A": "d = {(1, 2): \"a\"}",
+   "B": "d = {\"x\": [1, 2]}",
+   "C": "d = {3.5: \"b\"}",
+   "D": "d = {[1, 2]: \"a\"}",
+   "E": "d = {None: 0}"
+  },
+  "giusta": "D",
+  "perche": "Le chiavi di un dizionario devono essere hashable, cioè di fatto immutabili: numeri, stringhe, tuple, None vanno bene. Una lista è mutabile, quindi d = {[1, 2]: \"a\"} solleva TypeError: unhashable type: 'list'. L'opzione B è corretta perché la lista è un valore, non una chiave, e i valori possono essere di qualsiasi tipo. L'errore tipico è confondere i vincoli sulle chiavi con quelli sui valori.",
+  "semplice": "La chiave è come l'etichetta di un cassetto: se potesse cambiare, il dizionario non saprebbe più dove cercare. Per questo le chiavi devono essere fisse. Una lista può cambiare, quindi non può fare da etichetta; una tupla sì.",
+  "passaggi": [
+   "Le chiavi di un dizionario devono essere hashable (di fatto immutabili).",
+   "Tupla (1, 2), 3.5, None sono hashable: A, C, E vanno bene.",
+   "In B la lista è un valore, non una chiave: va bene.",
+   "In D la chiave è [1, 2], una lista mutabile: TypeError: unhashable type: 'list'.",
+   "Provoca errore la D."
+  ],
+  "concetto": "chiavi di un dizionario"
+ },
+ {
+  "id": "INF-074",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "In una lista concatenata semplice di n nodi (si conosce solo il puntatore alla testa), quanto costa inserire un nuovo nodo in testa?",
+  "opzioni": {
+   "A": "O(1)",
+   "B": "O(n)",
+   "C": "O(log n)",
+   "D": "O(n²)",
+   "E": "Non è possibile inserire in testa"
+  },
+  "giusta": "A",
+  "perche": "Per inserire in testa basta creare il nodo, farlo puntare alla vecchia testa e aggiornare il puntatore alla testa: un numero fisso di operazioni, O(1). In un array invece bisognerebbe spostare tutti gli elementi di una posizione, O(n). L'opzione B è il costo dell'inserimento in coda se non si conosce il puntatore all'ultimo nodo. Ogni struttura è veloce in alcune operazioni e lenta in altre.",
+  "semplice": "In un trenino di vagoni agganciati, aggiungere un vagone davanti richiede solo di agganciarlo al primo. Non importa quanto è lungo il treno: l'operazione è sempre la stessa.",
+  "passaggi": [
+   "Inserire in testa richiede: creare il nodo.",
+   "Farlo puntare alla vecchia testa.",
+   "Aggiornare il puntatore alla testa con il nuovo nodo.",
+   "Sono operazioni in numero fisso, indipendente da n.",
+   "Il costo è O(1)."
+  ],
+  "concetto": "lista concatenata"
+ },
+ {
+  "id": "INF-075",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "Per controllare se le parentesi in un'espressione come \"(a + [b * c])\" sono bilanciate, quale struttura dati è la più adatta?",
+  "opzioni": {
+   "A": "Una coda",
+   "B": "Un insieme (set)",
+   "C": "Un dizionario ordinato per valore",
+   "D": "Una pila",
+   "E": "Un albero binario di ricerca"
+  },
+  "giusta": "D",
+  "perche": "Si scorre l'espressione: ogni parentesi aperta si mette nella pila; a ogni parentesi chiusa si toglie la cima e si controlla che sia dello stesso tipo. Alla fine la pila deve essere vuota. La pila funziona perché l'ultima parentesi aperta è la prima che deve essere chiusa (LIFO). Con una coda si confronterebbe la prima aperta con la prima chiusa, che è sbagliato.",
+  "semplice": "Le parentesi si chiudono «a cipolla»: si chiude prima quella aperta per ultima. È esattamente la regola della pila. In \"( [ ] )\" metti (, metti [, trovi ] e togli [, trovi ) e togli (: pila vuota, tutto bilanciato.",
+  "passaggi": [
+   "Le parentesi si chiudono in ordine inverso a quello di apertura: l'ultima aperta è la prima chiusa.",
+   "Serve quindi una struttura LIFO: la pila.",
+   "Ogni parentesi aperta si mette nella pila; a ogni chiusa si toglie la cima e si controlla il tipo.",
+   "Alla fine la pila deve essere vuota.",
+   "La struttura più adatta è la pila."
+  ],
+  "concetto": "applicazioni della pila"
+ },
+ {
+  "id": "INF-076",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\nimport heapq\nh = []\nfor x in [5, 1, 8, 3]:\n    heapq.heappush(h, x)\nprint(heapq.heappop(h), heapq.heappop(h))\n```",
+  "opzioni": {
+   "A": "5 1",
+   "B": "8 5",
+   "C": "1 3",
+   "D": "1 5",
+   "E": "3 1"
+  },
+  "giusta": "C",
+  "perche": "Il modulo heapq realizza un min-heap: la radice è sempre l'elemento minimo, e heappop lo estrae. La prima estrazione dà 1, la seconda dà il nuovo minimo, 3. L'opzione A è l'errore di chi pensa a una coda FIFO, l'opzione B a un max-heap. Gli heap servono per le code con priorità, come nell'algoritmo di Dijkstra.",
+  "semplice": "Un heap è come una sala d'attesa del pronto soccorso: non esce chi è arrivato prima, ma chi ha la priorità più alta. Qui la priorità è il numero più piccolo, quindi escono 1 e poi 3.",
+  "passaggi": [
+   "1. Inseriti: 5, 1, 8, 3",
+   "2. heappop → minimo = 1",
+   "3. Restano 3, 5, 8 → heappop → 3",
+   "4. Output: 1 3"
+  ],
+  "concetto": "heap e code con priorità"
+ },
+ {
+  "id": "INF-077",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "Qual è il numero massimo di archi in un grafo non orientato semplice (senza cappi né archi multipli) con 6 nodi?",
+  "opzioni": {
+   "A": "36",
+   "B": "30",
+   "C": "12",
+   "D": "15",
+   "E": "6"
+  },
+  "giusta": "D",
+  "perche": "Ogni coppia di nodi distinti può essere collegata da al più un arco, e le coppie sono n(n-1)/2 = 6 · 5 / 2 = 15. L'opzione B (30) dimentica di dividere per 2, contando due volte ogni arco come se il grafo fosse orientato. L'opzione A (36) conta anche i cappi e le coppie ordinate. Un grafo con tutti gli archi possibili si chiama completo.",
+  "semplice": "Se 6 amici si stringono tutti la mano una volta, quante strette ci sono? Ognuno stringe 5 mani, 6 · 5 = 30, ma ogni stretta è contata due volte (una per ciascuno): 15.",
+  "passaggi": [
+   "1. Coppie di nodi: n(n - 1)/2",
+   "2. n = 6",
+   "3. 6 · 5 / 2 = 15"
+  ],
+  "concetto": "grafo completo"
+ },
+ {
+  "id": "INF-078",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "superiori",
+  "domanda": "Che cosa stampa questo codice?\n```python\nm = [[1, 2, 3],\n     [4, 5, 6]]\nprint(m[1][2], len(m), len(m[0]))\n```",
+  "opzioni": {
+   "A": "6 2 3",
+   "B": "2 2 3",
+   "C": "5 3 2",
+   "D": "6 3 2",
+   "E": "4 2 3"
+  },
+  "giusta": "A",
+  "perche": "m è una lista di 2 righe, ciascuna di 3 elementi. m[1] è la seconda riga [4, 5, 6] e m[1][2] è il suo terzo elemento, 6. len(m) conta le righe (2) e len(m[0]) gli elementi della prima riga, cioè le colonne (3). L'opzione B è l'errore di chi conta le righe da 1, l'opzione D scambia righe e colonne.",
+  "semplice": "Una matrice in Python è una lista di righe. Il primo indice sceglie la riga, il secondo la colonna, contando da 0. m[1][2] = «riga 1, colonna 2» = 6.",
+  "passaggi": [
+   "1. m[1] = [4, 5, 6]",
+   "2. m[1][2] = 6",
+   "3. len(m) = 2 righe",
+   "4. len(m[0]) = 3 colonne"
+  ],
+  "concetto": "matrici come liste di liste"
+ },
+ {
+  "id": "INF-079",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Che cosa stampa questo codice?\n```python\na = [[0] * 2] * 2\na[0][0] = 1\nprint(a)\n```",
+  "opzioni": {
+   "A": "[[1, 0], [0, 0]]",
+   "B": "[[1, 1], [0, 0]]",
+   "C": "[[1, 0], [1, 0]]",
+   "D": "[[1, 1], [1, 1]]",
+   "E": "Errore"
+  },
+  "giusta": "C",
+  "perche": "[[0] * 2] * 2 non crea due righe diverse: crea una lista che contiene due riferimenti alla stessa riga [0, 0]. Modificando a[0][0] si modifica quell'unica riga, e la modifica appare in entrambe le posizioni. L'opzione A è ciò che ci si aspetterebbe con righe indipendenti. Il modo corretto è a = [[0] * 2 for _ in range(2)], che crea una riga nuova per ogni giro.",
+  "semplice": "È come fotocopiare un indirizzo invece della casa: hai due foglietti, ma portano alla stessa casa. Se ridipingi la casa, entrambi i foglietti «vedono» il cambiamento. Qui le due righe sono la stessa riga.",
+  "passaggi": [
+   "1. [0] * 2 = [0, 0] (una sola riga)",
+   "2. [riga] * 2 → due riferimenti alla stessa riga",
+   "3. a[0][0] = 1 modifica quella riga → [1, 0]",
+   "4. print → [[1, 0], [1, 0]]"
+  ],
+  "concetto": "copie e riferimenti"
+ },
+ {
+  "id": "INF-080",
+  "materia": "Informatica",
+  "argomento": "Strutture dati",
+  "livello": "test",
+  "domanda": "Si valuta con una pila l'espressione in notazione postfissa (polacca inversa) \"3 4 + 2 *\". Qual è il risultato?",
+  "opzioni": {
+   "A": "11",
+   "B": "14",
+   "C": "10",
+   "D": "24",
+   "E": "7"
+  },
+  "giusta": "B",
+  "perche": "Si leggono i simboli da sinistra: i numeri si mettono nella pila, ogni operatore toglie due numeri e rimette il risultato. 3 e 4 entrano, + li sostituisce con 7; 2 entra, * toglie 7 e 2 e mette 14. L'espressione corrisponde a (3 + 4) · 2. L'opzione A è il risultato di 3 + 4 · 2, cioè l'errore di chi la legge come notazione normale.",
+  "semplice": "Nella notazione postfissa l'operatore viene dopo i numeri, e non servono parentesi. La pila tiene i numeri in attesa: quando arriva un operatore, usa gli ultimi due. Le calcolatrici HP e molti compilatori lavorano così.",
+  "passaggi": [
+   "1. 3 → pila [3]",
+   "2. 4 → pila [3, 4]",
+   "3. + → 3 + 4 = 7 → pila [7]",
+   "4. 2 → pila [7, 2]",
+   "5. * → 7 · 2 = 14 → pila [14]"
+  ],
+  "concetto": "notazione postfissa"
+ },
+ {
+  "id": "INF-081",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Quale proprietà deve avere la chiave primaria di una tabella?",
+  "opzioni": {
+   "A": "Deve essere sempre un numero intero",
+   "B": "Deve essere il primo campo della tabella",
+   "C": "Può ripetersi, ma non può essere vuota",
+   "D": "Deve identificare in modo univoco ogni riga e non può essere NULL",
+   "E": "Deve essere uguale in tutte le tabelle del database"
+  },
+  "giusta": "D",
+  "perche": "La chiave primaria serve a distinguere ogni riga dalle altre: i suoi valori devono essere unici e non nulli. Non deve per forza essere un numero (può essere un codice fiscale o una coppia di campi) e non deve essere il primo campo. L'opzione C viola l'unicità, che è il cuore della chiave. Un errore tipico è usare il cognome come chiave primaria, che può ripetersi.",
+  "semplice": "È come il numero di matricola di uno studente: non ce ne sono due uguali e ce l'ha per forza ognuno. Il nome no, perché ci possono essere due Marco Rossi.",
+  "passaggi": [
+   "La chiave primaria serve a distinguere ogni riga dalle altre.",
+   "Quindi i suoi valori devono essere unici (non si ripetono).",
+   "E non possono essere NULL.",
+   "Non deve essere per forza un numero né il primo campo.",
+   "Risposta: la D."
+  ],
+  "concetto": "chiave primaria"
+ },
+ {
+  "id": "INF-082",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "In un database ci sono le tabelle CLASSI(id_classe, sezione) e STUDENTI(matricola, nome, id_classe). Che ruolo ha il campo id_classe nella tabella STUDENTI?",
+  "opzioni": {
+   "A": "Chiave esterna che fa riferimento a CLASSI",
+   "B": "Chiave primaria di STUDENTI",
+   "C": "Indice che ordina gli studenti per nome",
+   "D": "Attributo calcolato",
+   "E": "Vincolo che vieta valori ripetuti"
+  },
+  "giusta": "A",
+  "perche": "id_classe in STUDENTI contiene valori che devono esistere come chiave primaria in CLASSI: è una chiave esterna (foreign key). Serve a collegare ogni studente alla sua classe, realizzando una relazione uno-a-molti. Non è chiave primaria di STUDENTI, dato che più studenti hanno la stessa classe. L'opzione E è sbagliata proprio perché i valori della chiave esterna possono ripetersi.",
+  "semplice": "La chiave esterna è un «rimando»: nella scheda dello studente scrivi il codice della classe invece di ricopiare tutti i dati della classe. Il database controlla che quel codice esista davvero (integrità referenziale).",
+  "passaggi": [
+   "Nella tabella STUDENTI, id_classe contiene valori che esistono come chiave primaria in CLASSI.",
+   "Un campo che fa riferimento alla chiave primaria di un'altra tabella è una chiave esterna.",
+   "Non è chiave primaria di STUDENTI: più studenti hanno la stessa classe, quindi i valori si ripetono.",
+   "Realizza una relazione uno-a-molti tra CLASSI e STUDENTI.",
+   "È una chiave esterna che fa riferimento a CLASSI."
+  ],
+  "concetto": "chiave esterna"
+ },
+ {
+  "id": "INF-083",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Che cosa restituisce questa query?\n```sql\nSELECT COUNT(*) FROM STUDENTI WHERE voto >= 6;\n```",
+  "opzioni": {
+   "A": "5",
+   "B": "3",
+   "C": "1",
+   "D": "4",
+   "E": "2"
+  },
+  "giusta": "D",
+  "perche": "La clausola WHERE tiene solo le righe con voto maggiore o uguale a 6: Anna (8), Carla (7), Dario (6) ed Elena (9). Bruno (5) è escluso. COUNT(*) conta le righe rimaste, quindi 4. L'opzione B è l'errore di chi usa > invece di >= ed esclude Dario.",
+  "semplice": "WHERE è un filtro: lascia passare solo le righe che rispettano la condizione. COUNT(*) le conta. Qui passano 4 studenti su 5.",
+  "passaggi": [
+   "1. Righe con voto >= 6: Anna, Carla, Dario, Elena",
+   "2. COUNT(*) = 4"
+  ],
+  "concetto": "SELECT con WHERE e COUNT"
+ },
+ {
+  "id": "INF-084",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Come si rappresenta in un database relazionale una relazione molti-a-molti, ad esempio tra STUDENTI e CORSI?",
+  "opzioni": {
+   "A": "Mettendo una chiave esterna in STUDENTI",
+   "B": "Con una terza tabella (di collegamento) che contiene le chiavi di entrambe",
+   "C": "Mettendo una chiave esterna in CORSI",
+   "D": "Unendo le due tabelle in una sola",
+   "E": "Non si può rappresentare"
+  },
+  "giusta": "B",
+  "perche": "Un attributo può contenere un solo valore, quindi una chiave esterna in una delle due tabelle realizza solo relazioni uno-a-molti. Per il molti-a-molti serve una tabella di collegamento, ad esempio ISCRIZIONI(matricola, id_corso), con una riga per ogni coppia. Le opzioni A e C costringerebbero a ripetere righe o a mettere più valori in un campo. Unire le tabelle creerebbe ridondanza e anomalie.",
+  "semplice": "Uno studente frequenta tanti corsi e un corso ha tanti studenti. La soluzione è un registro delle iscrizioni: ogni riga dice «lo studente X frequenta il corso Y». Così non si ripete nulla.",
+  "passaggi": [
+   "Una chiave esterna contiene un solo valore per riga: realizza solo relazioni uno-a-molti.",
+   "Uno studente segue molti corsi e un corso ha molti studenti.",
+   "Serve una terza tabella di collegamento, per esempio ISCRIZIONI(matricola, id_corso).",
+   "Ogni riga rappresenta una coppia studente-corso.",
+   "Risposta: la B."
+  ],
+  "concetto": "relazioni molti-a-molti"
+ },
+ {
+  "id": "INF-085",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "test",
+  "domanda": "Qual è la differenza tra WHERE e HAVING in SQL?",
+  "opzioni": {
+   "A": "Sono sinonimi",
+   "B": "WHERE si usa solo con le JOIN, HAVING con le tabelle singole",
+   "C": "WHERE filtra le righe prima del raggruppamento, HAVING filtra i gruppi dopo GROUP BY",
+   "D": "HAVING filtra le righe prima del raggruppamento, WHERE i gruppi",
+   "E": "HAVING si usa solo con ORDER BY"
+  },
+  "giusta": "C",
+  "perche": "WHERE agisce sulle singole righe, prima che vengano formati i gruppi, e quindi non può contenere funzioni di aggregazione come AVG o COUNT. HAVING agisce sui gruppi già formati con GROUP BY e può usare le funzioni di aggregazione, ad esempio HAVING AVG(voto) > 7. L'opzione D inverte i ruoli, errore molto frequente. Si possono usare entrambe nella stessa query.",
+  "semplice": "Immagina di dividere gli studenti per classe. WHERE decide chi entra nella stanza (ad esempio solo chi ha voto >= 6). HAVING decide quali gruppi tenere alla fine (ad esempio solo le classi con più di 20 studenti).",
+  "passaggi": [
+   "WHERE agisce sulle singole righe, prima che si formino i gruppi.",
+   "Per questo WHERE non può usare funzioni di aggregazione come AVG o COUNT.",
+   "HAVING agisce sui gruppi già formati con GROUP BY e può usare le aggregazioni (HAVING AVG(voto) > 7).",
+   "L'opzione D inverte i ruoli.",
+   "Risposta: la C."
+  ],
+  "concetto": "WHERE e HAVING"
+ },
+ {
+  "id": "INF-086",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Che cosa restituisce questa query?\n```sql\nSELECT classe, AVG(voto)\nFROM STUDENTI\nGROUP BY classe\nORDER BY classe;\n```",
+  "opzioni": {
+   "A": "3A 7.0 e 3B 7.0",
+   "B": "3A 7.33 e 3B 6.5",
+   "C": "3A 22 e 3B 13",
+   "D": "7.0",
+   "E": "3A 8.5 e 3B 6.5"
+  },
+  "giusta": "B",
+  "perche": "GROUP BY forma un gruppo per ogni classe e AVG calcola la media del voto in ciascun gruppo. Classe 3A: (8 + 5 + 9) / 3 ≈ 7,33; classe 3B: (7 + 6) / 2 = 6,5. L'opzione C è il risultato di SUM invece di AVG. L'opzione D è la media di tutta la tabella (35 / 5 = 7,0), che si otterrebbe senza GROUP BY.",
+  "semplice": "GROUP BY divide le righe in mucchietti, uno per classe, e la funzione di aggregazione lavora su ogni mucchietto. Per la 3A la media è 22 / 3 ≈ 7,33, per la 3B è 13 / 2 = 6,5. Il risultato ha una riga per gruppo.",
+  "passaggi": [
+   "1. Gruppo 3A: Anna 8, Bruno 5, Elena 9 → 22 / 3 ≈ 7,33",
+   "2. Gruppo 3B: Carla 7, Dario 6 → 13 / 2 = 6,5",
+   "3. ORDER BY classe → prima 3A, poi 3B"
+  ],
+  "concetto": "GROUP BY e AVG"
+ },
+ {
+  "id": "INF-087",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "test",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Tabella ISCRIZIONI(id_studente, corso) con le righe: (1, 'Fisica'), (1, 'Storia'), (3, 'Fisica'), (6, 'Arte'). Quante righe restituisce questa query?\n```sql\nSELECT S.nome, I.corso\nFROM STUDENTI S\nINNER JOIN ISCRIZIONI I ON S.id = I.id_studente;\n```",
+  "opzioni": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6",
+   "E": "20"
+  },
+  "giusta": "A",
+  "perche": "L'INNER JOIN restituisce solo le coppie di righe che soddisfano la condizione S.id = I.id_studente. Anna (id 1) compare due volte (Fisica e Storia), Carla (id 3) una volta; la riga con id_studente 6 non corrisponde a nessuno studente e viene scartata. In totale 3 righe. L'opzione B conta tutte le righe di ISCRIZIONI, l'opzione E è il prodotto cartesiano 5 · 4.",
+  "semplice": "La JOIN «incolla» le righe di due tabelle che hanno lo stesso codice. Ogni iscrizione cerca il suo studente: le prime tre lo trovano, l'ultima (studente 6) no. Gli studenti senza iscrizioni non compaiono.",
+  "passaggi": [
+   "1. (1, Fisica) → Anna",
+   "2. (1, Storia) → Anna",
+   "3. (3, Fisica) → Carla",
+   "4. (6, Arte) → nessuno studente con id 6, scartata",
+   "5. Totale: 3 righe"
+  ],
+  "concetto": "INNER JOIN"
+ },
+ {
+  "id": "INF-088",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "test",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Tabella ISCRIZIONI(id_studente, corso) con le righe: (1, 'Fisica'), (1, 'Storia'), (3, 'Fisica'), (6, 'Arte'). Quante righe restituisce questa query?\n```sql\nSELECT S.nome, I.corso\nFROM STUDENTI S\nLEFT JOIN ISCRIZIONI I ON S.id = I.id_studente;\n```",
+  "opzioni": {
+   "A": "3",
+   "B": "5",
+   "C": "4",
+   "D": "7",
+   "E": "6"
+  },
+  "giusta": "E",
+  "perche": "La LEFT JOIN restituisce tutte le righe della tabella di sinistra (STUDENTI), unite alle righe corrispondenti di destra; se non c'è corrispondenza, le colonne di destra valgono NULL. Anna compare due volte, Carla una, Bruno, Dario ed Elena una volta ciascuno con corso NULL: 6 righe. L'opzione B dimentica che Anna ha due iscrizioni. La riga (6, 'Arte') non compare perché non ha uno studente a sinistra.",
+  "semplice": "Con la LEFT JOIN nessuno studente viene lasciato fuori: chi non ha iscrizioni compare lo stesso, con un campo vuoto (NULL) al posto del corso. È utile per trovare, ad esempio, gli studenti che non frequentano nessun corso.",
+  "passaggi": [
+   "1. Anna → Fisica, Storia (2 righe)",
+   "2. Bruno → NULL (1 riga)",
+   "3. Carla → Fisica (1 riga)",
+   "4. Dario → NULL (1 riga)",
+   "5. Elena → NULL (1 riga)",
+   "6. Totale: 6 righe"
+  ],
+  "concetto": "LEFT JOIN"
+ },
+ {
+  "id": "INF-089",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "test",
+  "domanda": "Nella tabella CLIENTI alcuni clienti non hanno il telefono (campo telefono a NULL). Quale query li trova?",
+  "opzioni": {
+   "A": "SELECT * FROM CLIENTI WHERE telefono = NULL;",
+   "B": "SELECT * FROM CLIENTI WHERE telefono = '';",
+   "C": "SELECT * FROM CLIENTI WHERE telefono IS NULL;",
+   "D": "SELECT * FROM CLIENTI WHERE telefono = 0;",
+   "E": "SELECT * FROM CLIENTI WHERE NOT telefono;"
+  },
+  "giusta": "C",
+  "perche": "NULL significa «valore sconosciuto o assente», e qualsiasi confronto con = NULL dà come risultato UNKNOWN, mai vero: la query A non restituisce nessuna riga. Per controllare il NULL si usano IS NULL e IS NOT NULL. L'opzione B cerca la stringa vuota, che è un valore vero e proprio, diverso da NULL. È uno degli errori più comuni in SQL.",
+  "semplice": "NULL non è zero e non è una stringa vuota: è «non lo so». Chiedere «il telefono è uguale a non-lo-so?» non ha senso, quindi SQL ha una domanda apposta: IS NULL, cioè «manca il valore?».",
+  "passaggi": [
+   "NULL significa valore assente o sconosciuto.",
+   "Il confronto telefono = NULL dà UNKNOWN, mai vero: la A non restituisce righe.",
+   "'' e 0 sono valori veri e propri, diversi da NULL.",
+   "Per il NULL si usano IS NULL e IS NOT NULL.",
+   "La query giusta è WHERE telefono IS NULL."
+  ],
+  "concetto": "valori NULL"
+ },
+ {
+  "id": "INF-090",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Quante righe restituisce questa query?\n```sql\nSELECT DISTINCT classe FROM STUDENTI;\n```",
+  "opzioni": {
+   "A": "5",
+   "B": "2",
+   "C": "3",
+   "D": "1",
+   "E": "0"
+  },
+  "giusta": "B",
+  "perche": "DISTINCT elimina le righe duplicate dal risultato. La colonna classe contiene 3A, 3A, 3B, 3B, 3A, ma i valori diversi sono solo 3A e 3B, quindi 2 righe. L'opzione A è il numero di righe senza DISTINCT. Per contare i valori diversi in un colpo solo si può scrivere SELECT COUNT(DISTINCT classe).",
+  "semplice": "DISTINCT è come chiedere «quali classi ci sono?» invece di «di che classe è ciascuno?». Le classi ripetute vengono scritte una volta sola.",
+  "passaggi": [
+   "1. Valori: 3A, 3A, 3B, 3B, 3A",
+   "2. Valori distinti: 3A, 3B",
+   "3. Righe: 2"
+  ],
+  "concetto": "DISTINCT"
+ },
+ {
+  "id": "INF-091",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Che cosa restituisce questa query?\n```sql\nSELECT nome FROM STUDENTI\nORDER BY voto DESC\nLIMIT 2;\n```",
+  "opzioni": {
+   "A": "Bruno e Dario",
+   "B": "Anna e Bruno",
+   "C": "Elena e Carla",
+   "D": "Dario e Carla",
+   "E": "Elena e Anna"
+  },
+  "giusta": "E",
+  "perche": "ORDER BY voto DESC ordina dal voto più alto al più basso: Elena (9), Anna (8), Carla (7), Dario (6), Bruno (5). LIMIT 2 tiene solo le prime due righe: Elena e Anna. L'opzione A è il risultato con l'ordine crescente (ASC, che è quello predefinito). L'opzione B prende le prime due righe della tabella senza tener conto dell'ordinamento.",
+  "semplice": "DESC vuol dire «dal più grande al più piccolo», come una classifica. LIMIT 2 prende i primi due del podio. Qui il podio è Elena con 9 e Anna con 8.",
+  "passaggi": [
+   "1. Ordine decrescente: Elena 9, Anna 8, Carla 7, Dario 6, Bruno 5",
+   "2. LIMIT 2 → Elena, Anna"
+  ],
+  "concetto": "ORDER BY e LIMIT"
+ },
+ {
+  "id": "INF-092",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Quante righe restituisce questa query?\n```sql\nSELECT nome FROM STUDENTI WHERE nome LIKE '%a';\n```",
+  "opzioni": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "5",
+   "E": "0"
+  },
+  "giusta": "C",
+  "perche": "In LIKE il simbolo % sta per «qualsiasi sequenza di caratteri, anche vuota», quindi '%a' indica i nomi che finiscono con la lettera a: Anna, Carla, Elena. Bruno e Dario finiscono con o. L'opzione A è l'errore di chi interpreta '%a' come «inizia con a» (che sarebbe 'a%'). Il simbolo _ invece sta per un solo carattere qualsiasi.",
+  "semplice": "Il % è un jolly che può sostituire qualsiasi pezzo di testo. 'A%' = inizia con A, '%a' = finisce con a, '%an%' = contiene «an». Qui cerchiamo i nomi che finiscono con a: sono 3.",
+  "passaggi": [
+   "1. Anna → finisce con a ✓",
+   "2. Bruno → no",
+   "3. Carla → ✓",
+   "4. Dario → no",
+   "5. Elena → ✓",
+   "6. Totale: 3"
+  ],
+  "concetto": "operatore LIKE"
+ },
+ {
+  "id": "INF-093",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Che cosa fa l'istruzione SQL «DELETE FROM STUDENTI;»?",
+  "opzioni": {
+   "A": "Cancella tutte le righe della tabella, che resta vuota ma esiste ancora",
+   "B": "Cancella la tabella STUDENTI dal database",
+   "C": "Dà errore perché manca la clausola WHERE",
+   "D": "Cancella solo la prima riga",
+   "E": "Cancella solo le righe con valori NULL"
+  },
+  "giusta": "A",
+  "perche": "DELETE senza WHERE elimina tutte le righe, ma la struttura della tabella (colonne, vincoli) rimane: la tabella è vuota. Per eliminare la tabella intera si usa DROP TABLE STUDENTI. L'opzione C è un'illusione pericolosa: SQL non chiede conferma e non dà errore. Per questo, prima di un DELETE, è buona regola eseguire una SELECT con la stessa WHERE per vedere che cosa verrà cancellato.",
+  "semplice": "DELETE svuota il cassetto, DROP butta via il cassetto intero. E attenzione: senza WHERE il cassetto si svuota tutto, senza nessun avviso.",
+  "passaggi": [
+   "DELETE senza WHERE seleziona tutte le righe della tabella.",
+   "Le cancella tutte, ma la struttura (colonne, vincoli) resta.",
+   "Per eliminare la tabella si usa DROP TABLE; SQL non dà errore per la WHERE mancante.",
+   "Risultato: la tabella resta vuota ma esiste ancora."
+  ],
+  "concetto": "DELETE"
+ },
+ {
+  "id": "INF-094",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Dopo aver eseguito la prima istruzione, che cosa restituisce la seconda?\n```sql\nUPDATE STUDENTI SET voto = voto + 1 WHERE classe = '3B';\nSELECT SUM(voto) FROM STUDENTI;\n```",
+  "opzioni": {
+   "A": "35",
+   "B": "36",
+   "C": "40",
+   "D": "37",
+   "E": "13"
+  },
+  "giusta": "D",
+  "perche": "La somma iniziale dei voti è 8 + 5 + 7 + 6 + 9 = 35. L'UPDATE aumenta di 1 il voto dei soli studenti della 3B, Carla e Dario, quindi la somma cresce di 2: 37. L'opzione C (40) è l'errore di chi aggiunge 1 a tutti i 5 studenti, come se mancasse la WHERE. L'opzione A ignora l'UPDATE.",
+  "semplice": "UPDATE cambia i valori nelle righe scelte dalla WHERE. Solo due studenti prendono un punto in più, quindi il totale passa da 35 a 37.",
+  "passaggi": [
+   "1. Somma iniziale: 8 + 5 + 7 + 6 + 9 = 35",
+   "2. Righe con classe '3B': Carla, Dario",
+   "3. Ognuno +1 → +2 in totale",
+   "4. SUM = 37"
+  ],
+  "concetto": "UPDATE"
+ },
+ {
+  "id": "INF-095",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "test",
+  "domanda": "Una tabella ha la colonna «telefoni» che contiene valori come '333111, 347222'. Quale forma normale viene violata?",
+  "opzioni": {
+   "A": "La terza forma normale, perché c'è una dipendenza transitiva",
+   "B": "La forma normale di Boyce-Codd",
+   "C": "La seconda forma normale, perché la chiave è composta",
+   "D": "Nessuna, è una scelta corretta",
+   "E": "La prima forma normale, perché i valori non sono atomici"
+  },
+  "giusta": "E",
+  "perche": "La prima forma normale (1FN) richiede che ogni campo contenga un solo valore atomico, non una lista. Un elenco di telefoni separati da virgola rende difficile cercare, contare o modificare un singolo numero. La soluzione è una tabella separata TELEFONI(id_persona, numero) con una riga per numero. Le altre forme normali riguardano le dipendenze tra attributi, e presuppongono già la 1FN.",
+  "semplice": "In una casella di una tabella ci va un dato solo, come in un modulo cartaceo con una casella per lettera. Se una persona ha due telefoni, servono due righe in un'altra tabella, non due numeri nella stessa casella.",
+  "passaggi": [
+   "La prima forma normale richiede valori atomici: un solo valore per campo.",
+   "'333111, 347222' è una lista di due telefoni in un campo.",
+   "Quindi la 1FN è violata (le altre forme la presuppongono).",
+   "Soluzione: tabella TELEFONI(id_persona, numero) con una riga per numero.",
+   "È violata la prima forma normale."
+  ],
+  "concetto": "prima forma normale"
+ },
+ {
+  "id": "INF-096",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "A quale categoria di comandi SQL appartiene CREATE TABLE?",
+  "opzioni": {
+   "A": "DML (Data Manipulation Language)",
+   "B": "DDL (Data Definition Language)",
+   "C": "DCL (Data Control Language)",
+   "D": "QL (Query Language)",
+   "E": "TCL (Transaction Control Language)"
+  },
+  "giusta": "B",
+  "perche": "CREATE TABLE definisce la struttura del database, cioè lo schema: è un comando DDL, come ALTER TABLE e DROP TABLE. I comandi DML (INSERT, UPDATE, DELETE) modificano i dati contenuti nelle tabelle. DCL riguarda i permessi (GRANT, REVOKE) e TCL le transazioni (COMMIT, ROLLBACK). L'errore tipico è mettere CREATE e INSERT nella stessa categoria.",
+  "semplice": "DDL costruisce gli scaffali (le tabelle), DML mette, sposta e toglie gli oggetti sugli scaffali (le righe). CREATE TABLE costruisce uno scaffale nuovo, quindi è DDL.",
+  "passaggi": [
+   "CREATE TABLE definisce la struttura (lo schema) del database.",
+   "I comandi che definiscono lo schema sono DDL: CREATE, ALTER, DROP.",
+   "DML (INSERT, UPDATE, DELETE) modifica i dati; DCL i permessi; TCL le transazioni.",
+   "CREATE TABLE appartiene al DDL."
+  ],
+  "concetto": "DDL e DML"
+ },
+ {
+  "id": "INF-097",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "test",
+  "domanda": "In un bonifico bancario si toglie denaro da un conto e lo si aggiunge a un altro. Quale proprietà ACID garantisce che non possa succedere solo una delle due operazioni?",
+  "opzioni": {
+   "A": "Isolamento",
+   "B": "Durabilità",
+   "C": "Coerenza",
+   "D": "Atomicità",
+   "E": "Disponibilità"
+  },
+  "giusta": "D",
+  "perche": "L'atomicità garantisce che una transazione venga eseguita tutta oppure per niente: se qualcosa va storto a metà, si annulla tutto (rollback). L'isolamento riguarda transazioni contemporanee che non devono disturbarsi, la durabilità garantisce che i dati confermati (commit) non si perdano. L'opzione E non fa parte dell'acronimo ACID. L'errore tipico è confondere atomicità e coerenza: la coerenza riguarda il rispetto dei vincoli del database.",
+  "semplice": "«Atomico» significa indivisibile. Il bonifico è un blocco unico: o il denaro si sposta del tutto, o resta dov'era. Non può sparire da un conto senza arrivare sull'altro.",
+  "passaggi": [
+   "Il bonifico è una transazione con due operazioni: togliere da un conto e aggiungere all'altro.",
+   "Serve che avvengano tutte e due o nessuna.",
+   "L'atomicità garantisce «tutto o niente»: se qualcosa va storto a metà si fa rollback.",
+   "Isolamento riguarda transazioni contemporanee, durabilità i dati confermati, coerenza i vincoli; la disponibilità non è in ACID.",
+   "La proprietà è l'atomicità."
+  ],
+  "concetto": "transazioni ACID"
+ },
+ {
+  "id": "INF-098",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "La tabella A ha 3 righe e la tabella B ne ha 4. Quante righe restituisce «SELECT * FROM A, B;» (senza condizioni)?",
+  "opzioni": {
+   "A": "7",
+   "B": "12",
+   "C": "4",
+   "D": "3",
+   "E": "1"
+  },
+  "giusta": "B",
+  "perche": "Elencare due tabelle nel FROM senza condizione di unione produce il prodotto cartesiano: ogni riga di A viene abbinata a ogni riga di B, quindi 3 · 4 = 12 righe. L'opzione A somma le righe invece di moltiplicarle. Dimenticare la condizione di JOIN è un errore tipico, che produce risultati enormi e senza senso. Con tabelle di 10 000 righe ciascuna si otterrebbero 100 milioni di righe.",
+  "semplice": "È come abbinare 3 magliette con 4 pantaloni: ogni maglietta va con ogni pantalone, e i completi possibili sono 12. Il database fa lo stesso con le righe, se non gli dici quali coppie hanno senso.",
+  "passaggi": [
+   "1. Righe di A: 3",
+   "2. Righe di B: 4",
+   "3. Prodotto cartesiano: 3 · 4 = 12"
+  ],
+  "concetto": "prodotto cartesiano"
+ },
+ {
+  "id": "INF-099",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "superiori",
+  "domanda": "Nel modello Entità-Relazione (E-R), come si rappresentano graficamente un'entità e un'associazione (relazione)?",
+  "opzioni": {
+   "A": "Entità con un ovale, associazione con un rettangolo",
+   "B": "Entità con un rombo, associazione con un rettangolo",
+   "C": "Entità con un rettangolo, associazione con un rombo",
+   "D": "Entrambe con un rettangolo",
+   "E": "Entità con un cerchio pieno, associazione con una freccia"
+  },
+  "giusta": "C",
+  "perche": "Nel diagramma E-R le entità (ad esempio STUDENTE, CORSO) sono rettangoli e le associazioni tra loro (ad esempio FREQUENTA) sono rombi collegati alle entità. Gli attributi si disegnano come piccoli cerchi o ovali. L'opzione B inverte le forme. Il modello E-R si usa nella progettazione concettuale, prima di creare le tabelle.",
+  "semplice": "Rettangolo = una «cosa» (studente, libro, corso). Rombo = un «verbo» che lega le cose (frequenta, presta, insegna). Si legge come una frase: STUDENTE – frequenta – CORSO.",
+  "passaggi": [
+   "Nel diagramma E-R le entità sono oggetti come STUDENTE o CORSO.",
+   "Le entità si disegnano come rettangoli.",
+   "Le associazioni tra entità (come FREQUENTA) si disegnano come rombi.",
+   "Gli attributi sono piccoli cerchi o ovali; la B inverte le forme.",
+   "Entità con un rettangolo, associazione con un rombo."
+  ],
+  "concetto": "modello E-R"
+ },
+ {
+  "id": "INF-100",
+  "materia": "Informatica",
+  "argomento": "Basi di dati e SQL",
+  "livello": "test",
+  "domanda": "Tabella STUDENTI(id, nome, classe, voto) con le righe: (1, 'Anna', '3A', 8), (2, 'Bruno', '3A', 5), (3, 'Carla', '3B', 7), (4, 'Dario', '3B', 6), (5, 'Elena', '3A', 9). Che cosa restituisce questa query?\n```sql\nSELECT nome FROM STUDENTI\nWHERE voto > (SELECT AVG(voto) FROM STUDENTI);\n```",
+  "opzioni": {
+   "A": "Anna, Carla ed Elena",
+   "B": "Elena",
+   "C": "Bruno e Dario",
+   "D": "Anna ed Elena",
+   "E": "Nessuna riga"
+  },
+  "giusta": "D",
+  "perche": "La sottoquery calcola la media dei voti: 35 / 5 = 7. La query esterna restituisce gli studenti con voto strettamente maggiore di 7: Anna (8) ed Elena (9). Carla ha esattamente 7 e non viene inclusa, quindi l'opzione A è l'errore di chi legge > come >=. Non si può scrivere WHERE voto > AVG(voto) direttamente, perché le funzioni di aggregazione non sono ammesse nella WHERE.",
+  "semplice": "Prima SQL calcola la media della classe (7), poi cerca chi sta sopra la media. Anna con 8 ed Elena con 9 superano 7; Carla con 7 è alla pari, non sopra.",
+  "passaggi": [
+   "1. Sottoquery: AVG(voto) = 35 / 5 = 7",
+   "2. Condizione: voto > 7",
+   "3. Anna 8 ✓, Elena 9 ✓, Carla 7 ✗",
+   "4. Risultato: Anna, Elena"
+  ],
+  "concetto": "sottoquery"
+ },
+ {
+  "id": "INF-101",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Da quanti bit è formato un indirizzo IPv4 e da quanti un indirizzo IPv6?",
+  "opzioni": {
+   "A": "IPv4 32 bit, IPv6 128 bit",
+   "B": "IPv4 32 bit, IPv6 64 bit",
+   "C": "IPv4 4 bit, IPv6 6 bit",
+   "D": "IPv4 64 bit, IPv6 128 bit",
+   "E": "IPv4 16 bit, IPv6 32 bit"
+  },
+  "giusta": "A",
+  "perche": "Un indirizzo IPv4 è formato da 4 byte, cioè 32 bit, scritti come quattro numeri da 0 a 255 (es. 192.168.1.10). IPv6 usa 128 bit, scritti come otto gruppi esadecimali. IPv6 è nato perché i circa 4,3 miliardi di indirizzi IPv4 (2³²) non bastano più. L'errore tipico è dedurre il numero di bit dal numero di versione (opzione C).",
+  "semplice": "IPv4 = 4 numeri tra 0 e 255, ognuno da 8 bit: 4 · 8 = 32 bit. IPv6 ne usa quattro volte tanti, 128, e offre un numero di indirizzi praticamente illimitato.",
+  "passaggi": [
+   "1. IPv4: 4 ottetti · 8 bit = 32 bit",
+   "2. Indirizzi IPv4: 2³² ≈ 4,3 miliardi",
+   "3. IPv6: 8 gruppi · 16 bit = 128 bit"
+  ],
+  "concetto": "indirizzi IPv4 e IPv6"
+ },
+ {
+  "id": "INF-102",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Qual è il compito principale del DNS (Domain Name System)?",
+  "opzioni": {
+   "A": "Assegnare automaticamente gli indirizzi IP ai computer della rete locale",
+   "B": "Cifrare le pagine web",
+   "C": "Tradurre i nomi di dominio (es. www.esempio.it) in indirizzi IP",
+   "D": "Bloccare i virus",
+   "E": "Instradare i pacchetti tra le reti"
+  },
+  "giusta": "C",
+  "perche": "Il DNS è una sorta di rubrica distribuita: quando scrivi un nome di dominio, il computer chiede a un server DNS l'indirizzo IP corrispondente e poi si collega a quell'indirizzo. L'opzione A descrive il DHCP, l'opzione E il compito dei router. L'errore tipico è confondere DNS e DHCP perché entrambi sono servizi «automatici» di rete.",
+  "semplice": "Per le persone è facile ricordare un nome, per i computer serve un numero. Il DNS fa da rubrica telefonica: tu cerchi «esempio.it» e lui ti dà il «numero» (l'indirizzo IP) da chiamare.",
+  "passaggi": [
+   "Quando scrivi un nome di dominio il computer deve sapere a quale indirizzo IP collegarsi.",
+   "Il DNS fa da rubrica distribuita: traduce il nome nell'indirizzo IP.",
+   "Assegnare gli IP è il DHCP, instradare i pacchetti è compito dei router.",
+   "Il compito del DNS è tradurre i nomi di dominio in indirizzi IP."
+  ],
+  "concetto": "DNS"
+ },
+ {
+  "id": "INF-103",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Quale caratteristica distingue il protocollo TCP dal protocollo UDP?",
+  "opzioni": {
+   "A": "TCP è più veloce perché non controlla nulla",
+   "B": "TCP lavora al livello applicazione, UDP al livello rete",
+   "C": "UDP garantisce la consegna e l'ordine dei pacchetti",
+   "D": "TCP non usa le porte",
+   "E": "TCP stabilisce una connessione e garantisce consegna e ordine dei dati, UDP no"
+  },
+  "giusta": "E",
+  "perche": "TCP apre una connessione (three-way handshake), numera i segmenti, chiede conferme e ritrasmette quelli persi: i dati arrivano completi e in ordine. UDP invia i datagrammi senza connessione e senza garanzie, ma con meno ritardi. L'opzione C attribuisce a UDP le proprietà di TCP. Si usa TCP per web ed email, UDP per videochiamate, giochi online e DNS, dove la velocità conta più di un pacchetto perso.",
+  "semplice": "TCP è come una raccomandata con ricevuta di ritorno: sei sicuro che arrivi, ma serve tempo. UDP è come una cartolina: parte subito, ma se si perde nessuno se ne accorge. In una videochiamata è meglio perdere un fotogramma che aspettare.",
+  "passaggi": [
+   "TCP apre una connessione (three-way handshake) prima di inviare.",
+   "Numera i segmenti, chiede conferme e ritrasmette quelli persi: dati completi e in ordine.",
+   "UDP invia datagrammi senza connessione e senza garanzie, ma con meno ritardi.",
+   "Entrambi sono al livello di trasporto e usano le porte.",
+   "Risposta: la E."
+  ],
+  "concetto": "TCP e UDP"
+ },
+ {
+  "id": "INF-104",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Su quali porte lavorano di solito, rispettivamente, HTTP e HTTPS?",
+  "opzioni": {
+   "A": "21 e 22",
+   "B": "80 e 443",
+   "C": "25 e 110",
+   "D": "443 e 80",
+   "E": "53 e 8080"
+  },
+  "giusta": "B",
+  "perche": "Per convenzione il server web risponde sulla porta 80 per HTTP e sulla 443 per HTTPS, la versione cifrata con TLS. Le porte 21 e 22 sono FTP e SSH, 25 è SMTP (invio email), 110 è POP3, 53 è DNS. L'opzione D inverte i due protocolli. La porta indica a quale programma del computer di destinazione è rivolto il messaggio.",
+  "semplice": "L'indirizzo IP indica il palazzo, la porta indica l'appartamento. Il servizio web abita all'appartamento 80, quello cifrato al 443. Il browser sceglie da solo la porta giusta.",
+  "passaggi": [
+   "Per convenzione HTTP usa la porta 80.",
+   "HTTPS, la versione cifrata con TLS, usa la porta 443.",
+   "21/22 sono FTP/SSH, 25 SMTP, 110 POP3, 53 DNS; la D inverte l'ordine.",
+   "Risposta: 80 e 443."
+  ],
+  "concetto": "porte dei protocolli"
+ },
+ {
+  "id": "INF-105",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "test",
+  "domanda": "Quanti host si possono indirizzare in una sottorete IPv4 con maschera /24?",
+  "opzioni": {
+   "A": "256",
+   "B": "255",
+   "C": "254",
+   "D": "24",
+   "E": "512"
+  },
+  "giusta": "C",
+  "perche": "Con /24 i primi 24 bit identificano la rete e restano 8 bit per gli host: 2⁸ = 256 indirizzi. Due sono riservati: quello con tutti i bit host a 0 (indirizzo di rete) e quello con tutti a 1 (broadcast). Restano 256 - 2 = 254 host. L'opzione A dimentica gli indirizzi riservati.",
+  "semplice": "In una rete 192.168.1.0/24 gli indirizzi vanno da .0 a .255. Il .0 è il «nome» della rete e il .255 serve a parlare a tutti insieme. I computer possono usare da .1 a .254: sono 254.",
+  "passaggi": [
+   "1. Bit per gli host: 32 - 24 = 8",
+   "2. Indirizzi totali: 2⁸ = 256",
+   "3. Tolgo rete e broadcast: 256 - 2 = 254"
+  ],
+  "concetto": "sottoreti e host"
+ },
+ {
+  "id": "INF-106",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "test",
+  "domanda": "A quale subnet mask in notazione decimale corrisponde il prefisso /26?",
+  "opzioni": {
+   "A": "255.255.255.0",
+   "B": "255.255.255.128",
+   "C": "255.255.255.224",
+   "D": "255.255.0.0",
+   "E": "255.255.255.192"
+  },
+  "giusta": "E",
+  "perche": "/26 significa 26 bit a 1 seguiti da 6 bit a 0. I primi tre ottetti sono 255.255.255 (24 bit), e il quarto ha 2 bit a 1: 11000000 = 128 + 64 = 192. Quindi 255.255.255.192. L'opzione B è /25 e l'opzione C è /27. L'errore tipico è sbagliare a convertire l'ultimo ottetto parziale.",
+  "semplice": "Conta 26 «uni» da sinistra: tre ottetti pieni (255.255.255) e ne avanzano 2 per il quarto. 11000000 vale 192. Quella sottorete ha 64 indirizzi.",
+  "passaggi": [
+   "1. 26 = 8 + 8 + 8 + 2",
+   "2. Primi tre ottetti: 255.255.255",
+   "3. Quarto ottetto: 11000000 = 192",
+   "4. Maschera: 255.255.255.192"
+  ],
+  "concetto": "subnet mask"
+ },
+ {
+  "id": "INF-107",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "test",
+  "domanda": "Qual è l'indirizzo di rete dell'host 192.168.10.77/26?",
+  "opzioni": {
+   "A": "192.168.10.0",
+   "B": "192.168.10.64",
+   "C": "192.168.10.77",
+   "D": "192.168.10.127",
+   "E": "192.168.10.128"
+  },
+  "giusta": "B",
+  "perche": "Con /26 i blocchi del quarto ottetto sono di 64 indirizzi: 0-63, 64-127, 128-191, 192-255. 77 cade nel blocco 64-127, quindi l'indirizzo di rete è 192.168.10.64 (AND bit a bit tra 77 = 01001101 e 192 = 11000000 dà 01000000 = 64). L'opzione D è l'indirizzo di broadcast della stessa sottorete. L'opzione A sarebbe giusta con /24.",
+  "semplice": "La maschera /26 divide l'ultimo numero in fette da 64. Il 77 sta nella seconda fetta, che inizia da 64. Il primo indirizzo della fetta è il «nome» della rete: 192.168.10.64.",
+  "passaggi": [
+   "1. Maschera /26 → ultimo ottetto 192 = 11000000",
+   "2. 77 = 01001101",
+   "3. 77 AND 192 = 01000000 = 64",
+   "4. Indirizzo di rete: 192.168.10.64"
+  ],
+  "concetto": "indirizzo di rete"
+ },
+ {
+  "id": "INF-108",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Quale di questi indirizzi IPv4 è un indirizzo privato, non raggiungibile direttamente da Internet?",
+  "opzioni": {
+   "A": "8.8.8.8",
+   "B": "151.101.1.69",
+   "C": "1.1.1.1",
+   "D": "193.205.20.1",
+   "E": "10.0.0.5"
+  },
+  "giusta": "E",
+  "perche": "Gli intervalli privati IPv4 sono 10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16: 10.0.0.5 rientra nel primo. Gli indirizzi privati si usano nelle reti locali e possono ripetersi in reti diverse; per uscire su Internet passano attraverso il NAT del router. Gli altri indirizzi sono pubblici (8.8.8.8 e 1.1.1.1 sono server DNS molto noti). L'errore tipico è ricordare solo il blocco 192.168.",
+  "semplice": "Gli indirizzi privati sono come i numeri interni di un ufficio: il 10.0.0.5 può esistere in mille case diverse senza problemi. Per parlare con l'esterno serve il router, che usa l'unico indirizzo pubblico della casa.",
+  "passaggi": [
+   "Ricorda gli intervalli privati IPv4: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.",
+   "8.8.8.8 e 1.1.1.1 sono DNS pubblici noti; 151.101.1.69 e 193.205.20.1 non stanno in nessun intervallo privato.",
+   "10.0.0.5 inizia con 10: rientra in 10.0.0.0/8.",
+   "L'indirizzo privato è 10.0.0.5."
+  ],
+  "concetto": "indirizzi privati"
+ },
+ {
+  "id": "INF-109",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "test",
+  "domanda": "A quale livello del modello ISO/OSI opera l'indirizzo MAC di una scheda di rete, e da quanti bit è formato?",
+  "opzioni": {
+   "A": "Livello 3 (rete), 32 bit",
+   "B": "Livello 4 (trasporto), 16 bit",
+   "C": "Livello 7 (applicazione), 128 bit",
+   "D": "Livello 2 (collegamento dati), 48 bit",
+   "E": "Livello 1 (fisico), 8 bit"
+  },
+  "giusta": "D",
+  "perche": "L'indirizzo MAC identifica la scheda di rete all'interno della rete locale ed è usato al livello 2 (collegamento dati), ad esempio da Ethernet e dagli switch. È lungo 48 bit, scritti come sei coppie esadecimali (es. 3C:22:FB:1A:0B:7E). L'opzione A descrive l'indirizzo IPv4, che opera al livello 3. L'opzione B ricorda le porte, che sono numeri di 16 bit del livello trasporto.",
+  "semplice": "Il MAC è come il numero di telaio di un'auto: è legato all'oggetto fisico. L'indirizzo IP è come la targa o l'indirizzo di casa: può cambiare se ti sposti in un'altra rete.",
+  "passaggi": [
+   "L'indirizzo MAC identifica la scheda di rete nella rete locale.",
+   "È usato da Ethernet e dagli switch: livello 2 (collegamento dati).",
+   "È lungo 48 bit, scritti come sei coppie esadecimali (6 × 8 = 48).",
+   "32 bit al livello 3 è l'IPv4; 16 bit al livello 4 sono le porte.",
+   "Livello 2, 48 bit."
+  ],
+  "concetto": "indirizzo MAC"
+ },
+ {
+  "id": "INF-110",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Nello stack TCP/IP, a quale livello appartiene il protocollo IP?",
+  "opzioni": {
+   "A": "Livello di rete (Internet)",
+   "B": "Livello applicazione",
+   "C": "Livello di trasporto",
+   "D": "Livello fisico",
+   "E": "Livello di presentazione"
+  },
+  "giusta": "A",
+  "perche": "IP si occupa di indirizzare i pacchetti e di instradarli da una rete all'altra: è il protocollo del livello di rete (chiamato Internet nel modello TCP/IP). TCP e UDP stanno sopra, al livello di trasporto; HTTP, DNS e SMTP al livello applicazione. Il livello di presentazione esiste solo nel modello OSI. L'errore tipico è pensare che TCP/IP sia un unico protocollo, mentre sono due protocolli su due livelli diversi.",
+  "semplice": "Pensa a una spedizione: IP è il corriere che porta i pacchi da una città all'altra seguendo l'indirizzo. TCP è l'ufficio che controlla che tutti i pacchi siano arrivati e li rimette in ordine.",
+  "passaggi": [
+   "IP indirizza i pacchetti e li instrada da una rete all'altra.",
+   "Questo è il compito del livello di rete (Internet nel modello TCP/IP).",
+   "TCP e UDP stanno sopra (trasporto), HTTP e DNS al livello applicazione.",
+   "IP appartiene al livello di rete."
+  ],
+  "concetto": "livelli TCP/IP"
+ },
+ {
+  "id": "INF-111",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Qual è la differenza principale tra uno switch e un router?",
+  "opzioni": {
+   "A": "Lo switch collega reti diverse, il router i dispositivi della stessa rete",
+   "B": "Il router funziona solo senza fili",
+   "C": "Lo switch assegna gli indirizzi IP",
+   "D": "Sono lo stesso dispositivo con nomi diversi",
+   "E": "Lo switch inoltra i frame dentro una rete locale usando gli indirizzi MAC, il router instrada i pacchetti tra reti diverse usando gli indirizzi IP"
+  },
+  "giusta": "E",
+  "perche": "Lo switch lavora al livello 2: impara su quale porta si trova ogni indirizzo MAC e inoltra i frame solo verso il destinatario, all'interno della stessa LAN. Il router lavora al livello 3: guarda l'indirizzo IP di destinazione e sceglie, con la tabella di instradamento, verso quale rete inviare il pacchetto. L'opzione A inverte i ruoli. Il «modem-router» di casa contiene in realtà router, switch, access point Wi-Fi e server DHCP insieme.",
+  "semplice": "Lo switch è il postino di un condominio: consegna le lettere tra gli appartamenti. Il router è l'ufficio postale che spedisce le lettere verso altre città. Uno conosce gli interni, l'altro le strade.",
+  "passaggi": [
+   "Lo switch lavora al livello 2: impara su quale porta sta ogni MAC.",
+   "Inoltra i frame solo verso il destinatario dentro la stessa LAN.",
+   "Il router lavora al livello 3: legge l'IP di destinazione e sceglie la rete con la tabella di instradamento.",
+   "L'opzione A inverte i ruoli; assegnare IP è compito del DHCP.",
+   "Risposta: la E."
+  ],
+  "concetto": "switch e router"
+ },
+ {
+  "id": "INF-112",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Quale protocollo assegna automaticamente un indirizzo IP a un computer che si collega a una rete?",
+  "opzioni": {
+   "A": "DNS",
+   "B": "DHCP",
+   "C": "FTP",
+   "D": "ARP",
+   "E": "SMTP"
+  },
+  "giusta": "B",
+  "perche": "DHCP (Dynamic Host Configuration Protocol) assegna a ogni dispositivo che si collega un indirizzo IP libero, la subnet mask, il gateway predefinito e i server DNS. Senza DHCP bisognerebbe configurare tutto a mano. DNS traduce i nomi in indirizzi, ARP trova il MAC corrispondente a un IP nella rete locale. L'errore tipico è attribuire al DNS l'assegnazione degli indirizzi.",
+  "semplice": "Quando entri in un albergo, alla reception ti danno la chiave di una stanza libera. Il server DHCP fa lo stesso con gli indirizzi IP: appena ti colleghi al Wi-Fi te ne presta uno.",
+  "passaggi": [
+   "Un dispositivo che si collega ha bisogno di IP, subnet mask, gateway e DNS.",
+   "Il protocollo che li assegna automaticamente è DHCP.",
+   "DNS traduce nomi, ARP trova il MAC di un IP, FTP e SMTP trasferiscono file e posta.",
+   "Risposta: DHCP."
+  ],
+  "concetto": "DHCP"
+ },
+ {
+  "id": "INF-113",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Quanto tempo serve, come minimo, per trasferire un file di 1 GB (10⁹ byte) con una linea a 8 Mbit/s?",
+  "opzioni": {
+   "A": "125 s",
+   "B": "8 s",
+   "C": "1000 s",
+   "D": "8000 s",
+   "E": "1 s"
+  },
+  "giusta": "C",
+  "perche": "Il file contiene 10⁹ · 8 = 8 · 10⁹ bit; la linea ne trasporta 8 · 10⁶ al secondo; il tempo è 8 · 10⁹ / (8 · 10⁶) = 1000 s, poco meno di 17 minuti. L'opzione A (125 s) è l'errore di chi divide i byte per i bit senza moltiplicare per 8. L'opzione D moltiplica per 8 due volte. Nella realtà serve ancora più tempo per i dati di controllo dei protocolli.",
+  "semplice": "Prima trasforma i byte in bit moltiplicando per 8, poi dividi per la velocità. 1 GB sono 8000 megabit; a 8 megabit al secondo servono 1000 secondi.",
+  "passaggi": [
+   "1. 1 GB = 10⁹ byte = 8 · 10⁹ bit",
+   "2. Velocità: 8 Mbit/s = 8 · 10⁶ bit/s",
+   "3. t = 8 · 10⁹ / 8 · 10⁶ = 1000 s"
+  ],
+  "concetto": "velocità di trasferimento"
+ },
+ {
+  "id": "INF-114",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Che cosa garantisce il lucchetto di HTTPS nel browser?",
+  "opzioni": {
+   "A": "Che il sito non contenga virus",
+   "B": "Che il sito sia affidabile e onesto",
+   "C": "Che la connessione sia più veloce",
+   "D": "Che i dati scambiati con il server siano cifrati e che il server abbia un certificato valido per quel dominio",
+   "E": "Che nessuno possa sapere quali siti visiti"
+  },
+  "giusta": "D",
+  "perche": "HTTPS usa il protocollo TLS: cifra i dati in transito, così chi intercetta la comunicazione non può leggerli né modificarli, e verifica tramite certificato che il server sia davvero quello del dominio indicato. Non dice nulla sull'onestà di chi gestisce il sito: anche i siti di phishing possono avere il lucchetto. L'opzione E è sbagliata perché il nome del dominio visitato resta in parte visibile (ad esempio al DNS). L'errore tipico è scambiare «connessione sicura» per «sito sicuro».",
+  "semplice": "Il lucchetto vuol dire che la busta è sigillata e che il destinatario è chi dice di essere. Ma se mandi i tuoi dati a un truffatore con la busta sigillata, arrivano al truffatore lo stesso.",
+  "passaggi": [
+   "HTTPS usa il protocollo TLS.",
+   "TLS cifra i dati in transito: chi intercetta non può leggerli né modificarli.",
+   "Il certificato verifica che il server sia davvero quello del dominio indicato.",
+   "Non garantisce onestà del sito, assenza di virus o anonimato.",
+   "Risposta: la D."
+  ],
+  "concetto": "HTTPS e TLS"
+ },
+ {
+  "id": "INF-115",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Quale protocollo usa il comando ping per verificare se un host è raggiungibile?",
+  "opzioni": {
+   "A": "ICMP",
+   "B": "HTTP",
+   "C": "FTP",
+   "D": "TCP",
+   "E": "SMTP"
+  },
+  "giusta": "A",
+  "perche": "ping invia messaggi ICMP «echo request» e attende le risposte «echo reply», misurando il tempo di andata e ritorno. ICMP è un protocollo di servizio del livello di rete, usato per messaggi di controllo e di errore. Non usa porte e quindi non è né TCP né UDP. L'errore tipico è pensare che ping usi HTTP perché spesso si fa ping a un sito web.",
+  "semplice": "ping è come gridare «ci sei?» in una stanza e cronometrare la risposta. Se la risposta arriva in 20 ms, il collegamento è buono. ICMP è la lingua con cui le macchine si mandano questi brevi messaggi di servizio.",
+  "passaggi": [
+   "ping invia messaggi «echo request» e attende «echo reply».",
+   "Questi messaggi appartengono a ICMP, protocollo di controllo del livello di rete.",
+   "ICMP non usa porte: non è TCP né UDP, e non è HTTP.",
+   "ping usa ICMP."
+  ],
+  "concetto": "ICMP e ping"
+ },
+ {
+  "id": "INF-116",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "In quale topologia di rete tutti i dispositivi sono collegati a un nodo centrale, il cui guasto blocca l'intera rete?",
+  "opzioni": {
+   "A": "Ad anello",
+   "B": "A bus",
+   "C": "A maglia",
+   "D": "A stella",
+   "E": "Ad albero senza radice"
+  },
+  "giusta": "D",
+  "perche": "Nella topologia a stella ogni dispositivo ha un cavo verso un nodo centrale (oggi di solito uno switch). Se si guasta un cavo, si isola solo un dispositivo; se si guasta il centro, si ferma tutto. Nella topologia a maglia ci sono più percorsi e quindi è molto robusta, mentre nel bus tutti condividono un unico cavo. È la topologia più diffusa nelle reti locali Ethernet.",
+  "semplice": "È come una piazza da cui partono tutte le strade verso le case. Chiudere una strada isola una sola casa, ma se chiudi la piazza nessuno raggiunge più nessuno.",
+  "passaggi": [
+   "Cerca la topologia con un nodo centrale da cui dipendono tutti.",
+   "Nella stella ogni dispositivo ha un cavo verso il centro (oggi uno switch).",
+   "Un cavo guasto isola un dispositivo; il centro guasto ferma tutto.",
+   "La maglia ha più percorsi, il bus un cavo condiviso, l'anello un cerchio.",
+   "È la topologia a stella."
+  ],
+  "concetto": "topologie di rete"
+ },
+ {
+  "id": "INF-117",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Qual è l'indirizzo di broadcast della rete 192.168.1.0/24?",
+  "opzioni": {
+   "A": "192.168.1.0",
+   "B": "192.168.1.1",
+   "C": "255.255.255.0",
+   "D": "192.168.1.254",
+   "E": "192.168.1.255"
+  },
+  "giusta": "E",
+  "perche": "L'indirizzo di broadcast ha tutti i bit della parte host a 1. Con /24 la parte host è l'ultimo ottetto, che diventa 11111111 = 255: 192.168.1.255. L'opzione A è l'indirizzo di rete (bit host a 0), l'opzione C è la subnet mask. L'opzione B è spesso il router, per convenzione, ma non è un indirizzo speciale.",
+  "semplice": "Mandare un messaggio all'indirizzo di broadcast è come parlare con il megafono: lo ricevono tutti i dispositivi della rete. È l'ultimo indirizzo della rete, qui .255.",
+  "passaggi": [
+   "1. Parte host con /24: ultimo ottetto",
+   "2. Tutti i bit host a 1: 11111111 = 255",
+   "3. Broadcast: 192.168.1.255"
+  ],
+  "concetto": "indirizzo di broadcast"
+ },
+ {
+  "id": "INF-118",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "test",
+  "domanda": "Nella crittografia asimmetrica, Alice vuole mandare a Bob un messaggio che solo Bob possa leggere. Quale chiave usa per cifrarlo?",
+  "opzioni": {
+   "A": "La chiave privata di Alice",
+   "B": "La chiave pubblica di Bob",
+   "C": "La chiave privata di Bob",
+   "D": "La chiave pubblica di Alice",
+   "E": "Una chiave condivisa scritta nel messaggio"
+  },
+  "giusta": "B",
+  "perche": "Ogni persona ha una coppia di chiavi: quella pubblica si distribuisce a tutti, quella privata resta segreta. Ciò che è cifrato con la chiave pubblica di Bob può essere decifrato solo con la chiave privata di Bob, quindi solo lui può leggere il messaggio. L'opzione C è impossibile, perché Alice non conosce la chiave privata di Bob. Cifrare con la propria chiave privata (opzione A) serve invece alla firma digitale, che dimostra chi è il mittente.",
+  "semplice": "La chiave pubblica di Bob è come un lucchetto aperto che Bob regala a tutti: chiunque può chiudere una scatola con quel lucchetto, ma solo Bob ha la chiave per aprirlo. Alice chiude il messaggio con il lucchetto di Bob.",
+  "passaggi": [
+   "Ognuno ha una chiave pubblica (nota a tutti) e una privata (segreta).",
+   "Ciò che è cifrato con la pubblica di Bob si decifra solo con la privata di Bob.",
+   "Alice non conosce la privata di Bob; cifrare con la propria privata serve alla firma.",
+   "Alice usa la chiave pubblica di Bob."
+  ],
+  "concetto": "crittografia asimmetrica"
+ },
+ {
+  "id": "INF-119",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "superiori",
+  "domanda": "Che cosa indica il codice di stato HTTP 404 restituito da un server web?",
+  "opzioni": {
+   "A": "La risorsa richiesta non è stata trovata",
+   "B": "La richiesta è andata a buon fine",
+   "C": "Errore interno del server",
+   "D": "Accesso negato per mancanza di permessi",
+   "E": "La pagina è stata spostata in modo permanente"
+  },
+  "giusta": "A",
+  "perche": "I codici HTTP sono divisi in classi: 2xx successo, 3xx reindirizzamento, 4xx errore del client, 5xx errore del server. 404 Not Found indica che sul server non esiste la risorsa richiesta, spesso per un link sbagliato. 200 indica successo (opzione B), 500 errore interno (opzione C), 403 accesso negato (opzione D), 301 spostamento permanente (opzione E). L'errore tipico è pensare che 404 significhi che il server è spento: in quel caso non arriva proprio nessuna risposta.",
+  "semplice": "Il server ha risposto, ma ti dice «quello che cerchi qui non c'è». È come andare in biblioteca e sentirsi dire che quel libro non è a catalogo: la biblioteca è aperta, il libro no.",
+  "passaggi": [
+   "Classi dei codici HTTP: 2xx successo, 3xx reindirizzamento, 4xx errore del client, 5xx errore del server.",
+   "404 è un errore lato richiesta: «Not Found».",
+   "200 = successo, 500 = errore interno, 403 = accesso negato, 301 = spostamento permanente.",
+   "404 indica che la risorsa richiesta non è stata trovata."
+  ],
+  "concetto": "codici di stato HTTP"
+ },
+ {
+  "id": "INF-120",
+  "materia": "Informatica",
+  "argomento": "Reti e Internet",
+  "livello": "test",
+  "domanda": "A che cosa serve il NAT (Network Address Translation) in un router domestico?",
+  "opzioni": {
+   "A": "A cifrare il traffico Wi-Fi",
+   "B": "A tradurre i nomi di dominio in indirizzi IP",
+   "C": "A far uscire su Internet più dispositivi con indirizzi privati usando un unico indirizzo IP pubblico",
+   "D": "A bloccare la pubblicità",
+   "E": "A trasformare gli indirizzi IPv4 in indirizzi MAC"
+  },
+  "giusta": "C",
+  "perche": "I dispositivi di casa hanno indirizzi privati, che su Internet non sono instradabili. Il router con NAT sostituisce l'indirizzo privato del mittente con il proprio indirizzo pubblico, e ricorda la corrispondenza (usando anche le porte) per rimandare le risposte al dispositivo giusto. Questo ha permesso di risparmiare indirizzi IPv4. L'opzione B descrive il DNS, l'opzione E è il compito di ARP (che fa il percorso opposto, da IP a MAC).",
+  "semplice": "Il NAT è come il centralino di un'azienda: all'esterno c'è un solo numero di telefono, ma il centralinista sa a quale interno passare ogni chiamata. Fuori si vede solo l'indirizzo del router.",
+  "passaggi": [
+   "I dispositivi di casa hanno indirizzi privati, non instradabili su Internet.",
+   "Il router con NAT sostituisce l'indirizzo privato del mittente con il proprio IP pubblico.",
+   "Ricorda la corrispondenza (anche tramite le porte) per rimandare le risposte al dispositivo giusto.",
+   "Tradurre nomi è il DNS; da IP a MAC è ARP.",
+   "Risposta: la C."
+  ],
+  "concetto": "NAT"
+ },
+ {
+  "id": "INF-121",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Qual è la caratteristica fondamentale dell'architettura di von Neumann?",
+  "opzioni": {
+   "A": "Il computer non ha memoria",
+   "B": "Dati e istruzioni del programma sono memorizzati nella stessa memoria",
+   "C": "Il computer ha due CPU, una per i dati e una per le istruzioni",
+   "D": "Le istruzioni sono cablate nell'hardware e non si possono cambiare",
+   "E": "La memoria è collegata solo ai dispositivi di input"
+  },
+  "giusta": "B",
+  "perche": "Nel modello di von Neumann il programma, come i dati, sta nella memoria centrale: per cambiare programma basta caricarne un altro, senza modificare i circuiti. La CPU preleva le istruzioni dalla memoria una alla volta tramite il bus. L'opzione D descrive le prime macchine programmate ricollegando i cavi. L'architettura Harvard, usata in alcuni microcontrollori, tiene invece separate la memoria dei dati e quella delle istruzioni.",
+  "semplice": "Il programma è un insieme di dati come gli altri: sta nella stessa memoria delle foto e dei documenti. Per questo lo stesso computer può fare da calcolatrice, da lettore video o da videogioco.",
+  "passaggi": [
+   "Prima di von Neumann i computer si programmavano ricollegando i circuiti.",
+   "Von Neumann: il programma sta in memoria come i dati.",
+   "Per cambiare programma basta caricarne un altro, senza toccare l'hardware.",
+   "L'architettura Harvard separa invece dati e istruzioni.",
+   "Caratteristica: dati e istruzioni nella stessa memoria."
+  ],
+  "concetto": "architettura di von Neumann"
+ },
+ {
+  "id": "INF-122",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Qual è l'ordine corretto delle fasi con cui la CPU esegue un'istruzione?",
+  "opzioni": {
+   "A": "Execute, fetch, decode",
+   "B": "Decode, fetch, execute",
+   "C": "Fetch, execute, decode",
+   "D": "Fetch, decode, execute",
+   "E": "Store, fetch, decode"
+  },
+  "giusta": "D",
+  "perche": "La CPU prima preleva l'istruzione dalla memoria all'indirizzo indicato dal Program Counter (fetch), poi la interpreta capendo che operazione fare e su quali dati (decode), infine la esegue, ad esempio con l'ALU (execute). Poi il ciclo ricomincia con l'istruzione successiva. Non si può decodificare un'istruzione prima di averla prelevata, quindi le opzioni B e C sono impossibili. Le CPU moderne sovrappongono le fasi di istruzioni diverse (pipeline), ma ciascuna segue sempre questo ordine.",
+  "semplice": "È come seguire una ricetta: leggi il passo successivo (fetch), capisci cosa ti chiede (decode), lo fai (execute). Poi passi al passo dopo. La CPU lo ripete miliardi di volte al secondo.",
+  "passaggi": [
+   "Fetch: la CPU preleva l'istruzione dalla memoria all'indirizzo del Program Counter.",
+   "Decode: interpreta l'istruzione (operazione e dati).",
+   "Execute: la esegue, per esempio con l'ALU.",
+   "Non si può decodificare un'istruzione prima di averla prelevata.",
+   "Ordine: fetch, decode, execute."
+  ],
+  "concetto": "ciclo fetch-decode-execute"
+ },
+ {
+  "id": "INF-123",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Che cosa contiene il registro Program Counter (PC) della CPU?",
+  "opzioni": {
+   "A": "L'indirizzo della prossima istruzione da eseguire",
+   "B": "Il numero di programmi aperti",
+   "C": "Il risultato dell'ultima operazione dell'ALU",
+   "D": "Il numero di cicli di clock eseguiti",
+   "E": "La quantità di RAM libera"
+  },
+  "giusta": "A",
+  "perche": "Il Program Counter tiene l'indirizzo di memoria dell'istruzione successiva; dopo ogni fetch viene aggiornato per puntare all'istruzione seguente. Le istruzioni di salto (come quelle generate da if e cicli) funzionano cambiando il valore del PC. L'opzione C descrive l'accumulatore o un registro generale. L'errore tipico è prendere il nome alla lettera e pensare che «conti i programmi».",
+  "semplice": "Il PC è il segnalibro della CPU: indica a che punto del programma è arrivata. Un ciclo for, a livello di macchina, è un salto che riporta il segnalibro indietro di qualche riga.",
+  "passaggi": [
+   "Il Program Counter è un registro che punta in memoria.",
+   "Contiene l'indirizzo della prossima istruzione da eseguire e si aggiorna dopo ogni fetch.",
+   "I salti (if, cicli) funzionano cambiandone il valore.",
+   "Il risultato dell'ALU sta nell'accumulatore o in un registro generale.",
+   "Contiene l'indirizzo della prossima istruzione."
+  ],
+  "concetto": "registri della CPU"
+ },
+ {
+  "id": "INF-124",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Quale affermazione su RAM e ROM è corretta?",
+  "opzioni": {
+   "A": "La RAM conserva i dati anche a computer spento",
+   "B": "La ROM è più veloce dei registri della CPU",
+   "C": "La RAM è volatile e si legge e scrive; la ROM è non volatile e contiene ad esempio il firmware di avvio",
+   "D": "La ROM si usa per i programmi in esecuzione",
+   "E": "RAM e ROM sono due nomi della stessa memoria"
+  },
+  "giusta": "C",
+  "perche": "La RAM (memoria ad accesso casuale) contiene i programmi in esecuzione e i loro dati, ma perde tutto quando manca la corrente: è volatile. La ROM (e le sue versioni riscrivibili come la memoria flash del firmware) mantiene i dati senza alimentazione e contiene ad esempio il programma che avvia il computer. L'opzione A attribuisce alla RAM la caratteristica della ROM. L'errore tipico è chiamare «RAM» lo spazio sul disco o sulla memoria dello smartphone.",
+  "semplice": "La RAM è il banco di lavoro: veloce, ma a fine giornata si sgombera. La ROM è il libretto di istruzioni incollato dentro la macchina: resta lì anche a computer spento.",
+  "passaggi": [
+   "RAM: si legge e si scrive, contiene programmi in esecuzione e dati.",
+   "RAM è volatile: senza corrente perde tutto.",
+   "ROM (e flash del firmware): non volatile, contiene per esempio il programma di avvio.",
+   "La A attribuisce alla RAM la caratteristica della ROM.",
+   "Risposta: la C."
+  ],
+  "concetto": "RAM e ROM"
+ },
+ {
+  "id": "INF-125",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Ordina dalla più veloce alla più lenta queste memorie: RAM, registri, disco SSD, cache.",
+  "opzioni": {
+   "A": "RAM, registri, cache, SSD",
+   "B": "Registri, cache, RAM, SSD",
+   "C": "Cache, registri, SSD, RAM",
+   "D": "SSD, RAM, cache, registri",
+   "E": "Registri, RAM, cache, SSD"
+  },
+  "giusta": "B",
+  "perche": "I registri stanno dentro la CPU e sono i più veloci (e i più piccoli); poi viene la cache, sempre sul chip della CPU; poi la RAM; infine la memoria di massa come l'SSD, molto più capiente ma molto più lenta. Questa è la gerarchia di memoria: più una memoria è veloce, più è costosa e piccola. L'opzione E mette la RAM prima della cache, errore frequente. Anche un SSD veloce è migliaia di volte più lento della RAM.",
+  "semplice": "Pensa alla scrivania: i registri sono le cose che hai in mano, la cache il piano della scrivania, la RAM lo scaffale nella stanza, il disco la cantina. Più è vicino, più fai in fretta, ma meno spazio c'è.",
+  "passaggi": [
+   "I registri stanno dentro la CPU: i più veloci.",
+   "Poi la cache, sul chip della CPU.",
+   "Poi la RAM, poi la memoria di massa (SSD), molto più lenta.",
+   "Ordine: registri, cache, RAM, SSD."
+  ],
+  "concetto": "gerarchia di memoria"
+ },
+ {
+  "id": "INF-126",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Perché la memoria cache migliora le prestazioni della CPU?",
+  "opzioni": {
+   "A": "Perché aumenta la frequenza del clock",
+   "B": "Perché sostituisce il disco",
+   "C": "Perché comprime i dati della RAM",
+   "D": "Perché i programmi tendono a riusare dati vicini o appena usati (località), che la cache tiene a portata di mano",
+   "E": "Perché aumenta il numero di bit dei registri"
+  },
+  "giusta": "D",
+  "perche": "Il principio di località dice che un programma tende a riusare a breve gli stessi dati (località temporale) e ad accedere a indirizzi vicini (località spaziale), come gli elementi di un array. La cache conserva copie di questi dati in una memoria piccola e molto veloce, così la maggior parte degli accessi non deve arrivare fino alla RAM. Se il dato c'è si ha un hit, altrimenti un miss. L'opzione A confonde la cache con la frequenza di clock.",
+  "semplice": "Se stai studiando, tieni sulla scrivania i libri che stai usando, non tutta la biblioteca. La cache fa la stessa cosa: tiene vicini i dati usati da poco, perché è probabile che servano di nuovo.",
+  "passaggi": [
+   "Principio di località temporale: i dati appena usati verranno riusati presto.",
+   "Località spaziale: si accede spesso a indirizzi vicini (come gli elementi di un array).",
+   "La cache tiene copie di questi dati in una memoria piccola e veloce vicina alla CPU.",
+   "Così molti accessi (hit) non devono arrivare fino alla RAM; il clock non cambia.",
+   "Risposta: la D."
+  ],
+  "concetto": "cache e località"
+ },
+ {
+  "id": "INF-127",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Un processore ha un bus degli indirizzi di 32 bit e ogni indirizzo individua un byte. Quanta memoria può indirizzare al massimo?",
+  "opzioni": {
+   "A": "32 byte",
+   "B": "4 GiB (2³² byte)",
+   "C": "32 GiB",
+   "D": "64 KiB",
+   "E": "4 MiB"
+  },
+  "giusta": "B",
+  "perche": "Con 32 bit si possono formare 2³² indirizzi diversi, cioè 4 294 967 296; se ognuno indica un byte, la memoria massima è 4 GiB. Per questo i sistemi a 32 bit non potevano usare più di 4 GB di RAM direttamente. L'opzione D corrisponde a un bus di 16 bit. Con 64 bit il limite teorico diventa enorme, 2⁶⁴ byte.",
+  "semplice": "Ogni filo del bus porta un bit, e 32 fili danno 2³² combinazioni: circa 4 miliardi di caselle diverse. Una casella è un byte, quindi 4 miliardi di byte, cioè 4 GiB.",
+  "passaggi": [
+   "1. Indirizzi possibili: 2³²",
+   "2. 2³² = 4 294 967 296",
+   "3. 2³² byte = 2² · 2³⁰ byte = 4 GiB"
+  ],
+  "concetto": "spazio di indirizzamento"
+ },
+ {
+  "id": "INF-128",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Una CPU lavora con un clock a 2 GHz. Quanto dura un ciclo di clock?",
+  "opzioni": {
+   "A": "0,5 ns",
+   "B": "2 ns",
+   "C": "0,5 µs",
+   "D": "2 ms",
+   "E": "5 ns"
+  },
+  "giusta": "A",
+  "perche": "Il periodo è l'inverso della frequenza: T = 1 / f = 1 / (2 · 10⁹ Hz) = 0,5 · 10⁻⁹ s = 0,5 ns. L'opzione B confonde periodo e frequenza (2 ns corrisponderebbe a 500 MHz). L'opzione C sbaglia il prefisso, usando micro invece di nano. Una frequenza più alta non basta da sola a dire che una CPU è più veloce: conta anche quante istruzioni esegue per ciclo.",
+  "semplice": "2 GHz vuol dire 2 miliardi di «tic» al secondo. Ogni tic dura quindi mezzo miliardesimo di secondo, cioè mezzo nanosecondo. In quel tempo la luce percorre circa 15 cm.",
+  "passaggi": [
+   "1. f = 2 GHz = 2 · 10⁹ Hz",
+   "2. T = 1 / f",
+   "3. T = 1 / (2 · 10⁹) s = 0,5 · 10⁻⁹ s = 0,5 ns"
+  ],
+  "concetto": "frequenza di clock"
+ },
+ {
+  "id": "INF-129",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Quale componente della CPU esegue le operazioni aritmetiche (somme, sottrazioni) e logiche (AND, OR, confronti)?",
+  "opzioni": {
+   "A": "L'unità di controllo",
+   "B": "Il Program Counter",
+   "C": "La cache",
+   "D": "Il bus dei dati",
+   "E": "L'ALU (unità aritmetico-logica)"
+  },
+  "giusta": "E",
+  "perche": "L'ALU (Arithmetic Logic Unit) è il circuito che fa i calcoli e i confronti sui dati che riceve dai registri. L'unità di controllo invece coordina le operazioni: decodifica le istruzioni e dice all'ALU, ai registri e alla memoria che cosa fare. L'errore tipico è confondere le due unità, che lavorano insieme. Il bus dei dati trasporta i dati, ma non li elabora.",
+  "semplice": "Nella CPU l'unità di controllo è il direttore d'orchestra, l'ALU è il musicista che suona davvero le note. Quando il programma fa a + b, è l'ALU a calcolare la somma.",
+  "passaggi": [
+   "Cerca il componente che fa calcoli e confronti.",
+   "L'unità di controllo coordina e decodifica, ma non calcola.",
+   "Program Counter, cache e bus contengono o trasportano dati senza elaborarli.",
+   "L'ALU (unità aritmetico-logica) esegue somme, sottrazioni, AND, OR e confronti."
+  ],
+  "concetto": "ALU"
+ },
+ {
+  "id": "INF-130",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Quale di questi NON è un compito del sistema operativo?",
+  "opzioni": {
+   "A": "Gestire i processi e decidere quale usa la CPU",
+   "B": "Gestire la memoria assegnandola ai programmi",
+   "C": "Gestire i file e le cartelle sui dischi",
+   "D": "Controllare i dispositivi di input/output tramite i driver",
+   "E": "Correggere gli errori di ortografia nei documenti dell'utente"
+  },
+  "giusta": "E",
+  "perche": "Il sistema operativo gestisce le risorse del computer (CPU, memoria, file, dispositivi) e offre ai programmi un modo uniforme per usarle. Il correttore ortografico è una funzione di un'applicazione, come un programma di videoscrittura, non del sistema operativo. L'errore tipico è considerare «sistema operativo» tutto ciò che viene installato insieme a esso. Esempi di sistemi operativi sono Linux, Windows, macOS, Android e iOS.",
+  "semplice": "Il sistema operativo è il gestore di un condominio: assegna gli spazi, regola i turni dell'ascensore e tiene in ordine le cantine. Che cosa fanno gli inquilini nei loro appartamenti (le applicazioni) non è affar suo.",
+  "passaggi": [
+   "La domanda chiede ciò che NON è compito del sistema operativo.",
+   "Il sistema operativo gestisce processi (CPU), memoria, file e dispositivi tramite i driver.",
+   "Il correttore ortografico è una funzione di un'applicazione, come un programma di videoscrittura.",
+   "Non è compito del sistema operativo: correggere l'ortografia."
+  ],
+  "concetto": "funzioni del sistema operativo"
+ },
+ {
+  "id": "INF-131",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Qual è la differenza tra un programma e un processo?",
+  "opzioni": {
+   "A": "Non c'è differenza",
+   "B": "Il programma è un file con le istruzioni; il processo è un programma in esecuzione, con la sua memoria e il suo stato",
+   "C": "Il processo è il file su disco, il programma è in esecuzione",
+   "D": "Un processo può contenere solo un programma scritto in C",
+   "E": "Il programma gira nella CPU, il processo nel disco"
+  },
+  "giusta": "B",
+  "perche": "Il programma è un'entità passiva: un file eseguibile sul disco. Quando viene avviato, il sistema operativo crea un processo, che ha una zona di memoria, il valore dei registri (compreso il Program Counter), i file aperti e un identificativo (PID). Lo stesso programma può dare origine a più processi, ad esempio due finestre dello stesso editor. L'opzione C inverte i due concetti.",
+  "semplice": "Il programma è la ricetta scritta sul libro; il processo è la cucina in azione mentre qualcuno la prepara, con gli ingredienti sul tavolo e il segno di dove è arrivato. Due cuochi possono preparare la stessa ricetta contemporaneamente: due processi, un programma.",
+  "passaggi": [
+   "Programma: entità passiva, un file eseguibile sul disco.",
+   "Processo: il programma avviato, con memoria, registri (compreso il PC), file aperti e un PID.",
+   "Lo stesso programma può dare più processi (due finestre dello stesso editor).",
+   "La C inverte i concetti.",
+   "Risposta: la B."
+  ],
+  "concetto": "processo e programma"
+ },
+ {
+  "id": "INF-132",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Un processo in esecuzione chiede di leggere un file dal disco e deve attendere i dati. In quale stato passa?",
+  "opzioni": {
+   "A": "Pronto (ready)",
+   "B": "Terminato",
+   "C": "Nuovo",
+   "D": "Bloccato / in attesa (waiting)",
+   "E": "In esecuzione (running)"
+  },
+  "giusta": "D",
+  "perche": "Quando un processo attende un evento esterno, come la fine di un'operazione di input/output, il sistema operativo lo mette nello stato bloccato (o in attesa) e assegna la CPU a un altro processo. Quando i dati arrivano, il processo passa in stato pronto e attende il suo turno per tornare in esecuzione. L'opzione A è l'errore più frequente: un processo pronto potrebbe usare subito la CPU, uno bloccato no. Così la CPU non resta ferma ad aspettare il disco.",
+  "semplice": "Se in cucina aspetti che l'acqua bolla, nel frattempo lasci il fornello libero a qualcun altro. Non sei «pronto» a cucinare: stai aspettando un evento. Quando l'acqua bolle torni in fila per il fornello.",
+  "passaggi": [
+   "Il processo chiede dati al disco e deve aspettarli.",
+   "Un processo che attende un evento esterno (fine di un I/O) non può usare la CPU.",
+   "Il sistema operativo lo mette in stato bloccato (waiting) e dà la CPU a un altro.",
+   "«Pronto» è per chi potrebbe usare subito la CPU: non è questo il caso.",
+   "Passa nello stato bloccato / in attesa."
+  ],
+  "concetto": "stati di un processo"
+ },
+ {
+  "id": "INF-133",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Nello scheduling round robin con quanto di tempo di 4 ms, che cosa succede a un processo che dopo 4 ms non ha ancora finito?",
+  "opzioni": {
+   "A": "Viene terminato con errore",
+   "B": "Continua finché non finisce",
+   "C": "Viene sospeso e rimesso in fondo alla coda dei processi pronti",
+   "D": "Viene spostato sul disco",
+   "E": "Passa in testa alla coda con priorità massima"
+  },
+  "giusta": "C",
+  "perche": "Nel round robin ogni processo pronto riceve a turno la CPU per un intervallo fisso (il quanto). Se allo scadere del quanto non ha finito, il sistema operativo lo interrompe (prelazione) e lo rimette in fondo alla coda, poi dà la CPU al successivo. L'opzione B descrive uno scheduling senza prelazione come FCFS. Con un quanto piccolo il sistema è più reattivo, ma si perde più tempo nei cambi di contesto.",
+  "semplice": "È come un unico microfono che passa di mano in mano: ognuno parla al massimo 4 secondi, poi lo passa e torna in fila. Nessuno monopolizza il microfono e tutti parlano spesso.",
+  "passaggi": [
+   "Round robin: ogni processo pronto riceve la CPU a turno per un quanto fisso (qui 4 ms).",
+   "Allo scadere del quanto, se non ha finito, il sistema operativo lo interrompe (prelazione).",
+   "Il processo torna in fondo alla coda dei pronti e la CPU passa al successivo.",
+   "Continuare fino alla fine è tipico di FCFS, senza prelazione.",
+   "Risposta: la C."
+  ],
+  "concetto": "scheduling round robin"
+ },
+ {
+  "id": "INF-134",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Tre processi arrivano insieme e vengono serviti in ordine FCFS (first come, first served): P1 dura 24 ms, P2 3 ms, P3 3 ms. Qual è il tempo medio di attesa?",
+  "opzioni": {
+   "A": "3 ms",
+   "B": "10 ms",
+   "C": "30 ms",
+   "D": "17 ms",
+   "E": "27 ms"
+  },
+  "giusta": "D",
+  "perche": "Con FCFS P1 parte subito (attesa 0), P2 aspetta la fine di P1 (24 ms), P3 aspetta P1 e P2 (27 ms). La media è (0 + 24 + 27) / 3 = 17 ms. L'opzione C è la durata totale di tutti i processi. Se si servissero prima i processi brevi (scheduling SJF: P2, P3, P1) le attese sarebbero 0, 3, 6 e la media 3 ms: per questo FCFS soffre dell'«effetto convoglio».",
+  "semplice": "Alla cassa, se il primo ha un carrello pienissimo, tutti quelli con un solo prodotto aspettano tanto. Qui gli ultimi due aspettano 24 e 27 ms, e la media sale a 17 ms.",
+  "passaggi": [
+   "1. Attesa P1 = 0",
+   "2. Attesa P2 = 24",
+   "3. Attesa P3 = 24 + 3 = 27",
+   "4. Media = (0 + 24 + 27) / 3 = 17 ms"
+  ],
+  "concetto": "scheduling FCFS"
+ },
+ {
+  "id": "INF-135",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Due processi sono bloccati per sempre: P1 tiene la stampante e aspetta lo scanner, P2 tiene lo scanner e aspetta la stampante. Come si chiama questa situazione?",
+  "opzioni": {
+   "A": "Starvation (attesa indefinita per bassa priorità)",
+   "B": "Deadlock (stallo)",
+   "C": "Thrashing",
+   "D": "Race condition",
+   "E": "Overflow"
+  },
+  "giusta": "B",
+  "perche": "Si ha un deadlock quando un insieme di processi si blocca in un'attesa circolare: ognuno tiene una risorsa e aspetta quella tenuta da un altro. Le quattro condizioni necessarie (di Coffman) sono mutua esclusione, possesso e attesa, assenza di prelazione e attesa circolare. La starvation è diversa: un processo potrebbe procedere ma viene sempre scavalcato. Il thrashing riguarda la memoria virtuale, la race condition l'accesso non sincronizzato a dati condivisi.",
+  "semplice": "Due auto in una strada stretta, una di fronte all'altra: nessuna può avanzare finché l'altra non indietreggia, e nessuna indietreggia. Per uscirne bisogna rompere il cerchio, ad esempio togliendo la risorsa a uno dei due.",
+  "passaggi": [
+   "P1 tiene la stampante e aspetta lo scanner; P2 tiene lo scanner e aspetta la stampante.",
+   "Ognuno aspetta una risorsa tenuta dall'altro: attesa circolare.",
+   "Nessuno può procedere né rilasciare: blocco permanente.",
+   "Starvation è essere sempre scavalcati, thrashing riguarda la memoria virtuale, race condition i dati condivisi.",
+   "È un deadlock (stallo)."
+  ],
+  "concetto": "deadlock"
+ },
+ {
+  "id": "INF-136",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Un sistema usa indirizzi virtuali di 32 bit e pagine di 4 KiB. Quanti bit dell'indirizzo indicano lo spostamento (offset) dentro la pagina e quanti il numero di pagina?",
+  "opzioni": {
+   "A": "12 bit di offset, 20 bit di numero di pagina",
+   "B": "4 bit di offset, 28 bit di numero di pagina",
+   "C": "20 bit di offset, 12 bit di numero di pagina",
+   "D": "16 bit di offset, 16 bit di numero di pagina",
+   "E": "10 bit di offset, 22 bit di numero di pagina"
+  },
+  "giusta": "A",
+  "perche": "Una pagina di 4 KiB contiene 4096 = 2¹² byte, quindi servono 12 bit per indicare un byte al suo interno (offset). I bit rimanenti, 32 - 12 = 20, indicano il numero di pagina, per un totale di 2²⁰ pagine. L'opzione C inverte le due parti. L'opzione B è l'errore di chi usa 4 bit perché la pagina è «di 4» KiB.",
+  "semplice": "L'indirizzo virtuale è come «pagina e riga» di un libro. Per indicare una delle 4096 righe di una pagina servono 12 bit; il resto dell'indirizzo dice in quale pagina guardare. La tabella delle pagine traduce poi la pagina virtuale nella cornice reale in RAM.",
+  "passaggi": [
+   "1. Dimensione pagina: 4 KiB = 4096 = 2¹² byte",
+   "2. Bit di offset: 12",
+   "3. Bit di numero di pagina: 32 - 12 = 20"
+  ],
+  "concetto": "paginazione"
+ },
+ {
+  "id": "INF-137",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Che cos'è un interrupt?",
+  "opzioni": {
+   "A": "Un errore che spegne il computer",
+   "B": "Un'istruzione che termina il programma",
+   "C": "Un virus che interrompe le connessioni",
+   "D": "Un tipo di memoria",
+   "E": "Un segnale che chiede alla CPU di sospendere ciò che sta facendo per gestire un evento, come la pressione di un tasto"
+  },
+  "giusta": "E",
+  "perche": "Un interrupt è un segnale, inviato da un dispositivo (tastiera, timer, scheda di rete) o generato dal software, che avvisa la CPU di un evento. La CPU salva il proprio stato, esegue una routine di gestione e poi riprende da dove era rimasta. Senza interrupt la CPU dovrebbe controllare di continuo ogni dispositivo (polling), sprecando tempo. Il timer interrupt permette anche lo scheduling con prelazione.",
+  "semplice": "È come il campanello di casa: non devi andare alla porta ogni minuto a vedere se c'è qualcuno. Quando suona, interrompi quello che fai, apri, e poi torni al tuo lavoro.",
+  "passaggi": [
+   "Un interrupt è un segnale (da tastiera, timer, rete o software) che avvisa la CPU di un evento.",
+   "La CPU salva il proprio stato.",
+   "Esegue una routine di gestione dell'evento.",
+   "Poi riprende da dove era rimasta: non spegne il computer e non termina il programma.",
+   "Risposta: la E."
+  ],
+  "concetto": "interrupt"
+ },
+ {
+  "id": "INF-138",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "In un sistema Unix/Linux, quali permessi corrispondono alla notazione ottale 754?",
+  "opzioni": {
+   "A": "rwxr-xr--",
+   "B": "rwxrw-r--",
+   "C": "rw-r-xr--",
+   "D": "rwxr--r-x",
+   "E": "r-xr-xrw-"
+  },
+  "giusta": "A",
+  "perche": "Ogni cifra ottale indica i permessi di proprietario, gruppo e altri, sommando lettura r = 4, scrittura w = 2, esecuzione x = 1. 7 = 4 + 2 + 1 → rwx; 5 = 4 + 1 → r-x; 4 → r--. Quindi rwxr-xr--. L'opzione B è 764, l'opzione C è 654. L'errore tipico è assegnare i pesi nell'ordine sbagliato (ad esempio x = 4).",
+  "semplice": "Ogni cifra è una somma di tre interruttori: leggere vale 4, scrivere 2, eseguire 1. 7 = tutti accesi, 5 = leggere ed eseguire, 4 = solo leggere. Il proprietario può fare tutto, il gruppo legge ed esegue, gli altri leggono soltanto.",
+  "passaggi": [
+   "1. 7 = 4 + 2 + 1 → rwx (proprietario)",
+   "2. 5 = 4 + 1 → r-x (gruppo)",
+   "3. 4 = 4 → r-- (altri)",
+   "4. Risultato: rwxr-xr--"
+  ],
+  "concetto": "permessi dei file"
+ },
+ {
+  "id": "INF-139",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "superiori",
+  "domanda": "Qual è la differenza tra un compilatore e un interprete?",
+  "opzioni": {
+   "A": "Il compilatore esegue il programma riga per riga, l'interprete lo traduce tutto prima",
+   "B": "Il compilatore traduce l'intero programma in codice macchina prima dell'esecuzione; l'interprete lo esegue istruzione per istruzione mentre lo legge",
+   "C": "Il compilatore funziona solo con Python",
+   "D": "L'interprete produce un file eseguibile da distribuire",
+   "E": "Non c'è differenza"
+  },
+  "giusta": "B",
+  "perche": "Il compilatore (come per il C) legge tutto il codice sorgente, segnala gli errori e produce un file eseguibile, che poi gira velocemente senza bisogno del compilatore. L'interprete legge ed esegue il codice man mano, quindi è più comodo per provare e correggere, ma in genere più lento. L'opzione A inverte le definizioni. Python in realtà usa una via di mezzo: traduce il codice in bytecode, che viene poi eseguito da un interprete (la macchina virtuale).",
+  "semplice": "Il compilatore è un traduttore che ti consegna tutto il libro tradotto: poi lo leggi da solo, velocemente. L'interprete è un interprete simultaneo: traduce frase per frase mentre l'oratore parla, e se l'oratore sbaglia te ne accorgi subito.",
+  "passaggi": [
+   "Compilatore: legge tutto il sorgente e produce prima un file eseguibile in codice macchina.",
+   "L'eseguibile poi gira senza bisogno del compilatore.",
+   "Interprete: legge ed esegue il codice istruzione per istruzione, man mano.",
+   "La A inverte le definizioni; è il compilatore, non l'interprete, a produrre l'eseguibile.",
+   "Risposta: la B."
+  ],
+  "concetto": "compilatore e interprete"
+ },
+ {
+  "id": "INF-140",
+  "materia": "Informatica",
+  "argomento": "Architettura del computer e sistemi operativi",
+  "livello": "test",
+  "domanda": "Secondo la legge di Amdahl, un programma ha l'80% del lavoro parallelizzabile e il 20% necessariamente sequenziale. Qual è l'accelerazione (speedup) massima con 4 processori?",
+  "opzioni": {
+   "A": "4",
+   "B": "3,2",
+   "C": "2,5",
+   "D": "5",
+   "E": "1,8"
+  },
+  "giusta": "C",
+  "perche": "Lo speedup è S = 1 / ((1 - p) + p / n), con p = 0,8 e n = 4: S = 1 / (0,2 + 0,2) = 1 / 0,4 = 2,5. L'opzione A è l'errore di chi pensa che 4 processori diano sempre velocità quadrupla. L'opzione D (5) è il limite con infiniti processori, 1 / 0,2. La parte sequenziale limita sempre il guadagno, per quanti processori si aggiungano.",
+  "semplice": "Se 20 minuti su 100 di un lavoro li può fare una sola persona, anche con tanti aiutanti non scenderai mai sotto i 20 minuti. Con 4 persone gli altri 80 minuti diventano 20, e il totale è 40: due volte e mezzo più veloce.",
+  "passaggi": [
+   "1. p = 0,8; n = 4",
+   "2. Tempo relativo = (1 - p) + p/n = 0,2 + 0,8/4 = 0,2 + 0,2 = 0,4",
+   "3. S = 1 / 0,4 = 2,5"
+  ],
+  "concetto": "legge di Amdahl"
+ }
+]

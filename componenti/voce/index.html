@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  body{margin:0;font-family:Inter,-apple-system,Segoe UI,sans-serif;background:transparent;text-align:center}
+  .riga{display:flex;align-items:center;justify-content:center;gap:14px;padding:6px 0}
+  .onda{display:flex;gap:3px;align-items:center;height:40px;opacity:.35;transition:opacity .2s}
+  .onda i{display:block;width:3px;border-radius:3px;background:#3B82F6;height:8px}
+  .attivo .onda{opacity:1} .attivo .onda i{animation:su 0.9s ease-in-out infinite}
+  @keyframes su{0%,100%{height:6px}50%{height:34px}}
+  button{width:74px;height:74px;border-radius:50%;border:none;cursor:pointer;color:#fff;font-size:30px;
+    background:radial-gradient(circle at 35% 30%,#60A5FA,#2563EB 60%,#1D4ED8);box-shadow:0 0 0 8px rgba(37,99,235,.15),0 10px 30px rgba(37,99,235,.45)}
+  .attivo button{box-shadow:0 0 0 12px rgba(37,99,235,.25),0 0 40px rgba(56,189,248,.8)}
+  .scritta{font-weight:700;color:#0F1B3D;margin-top:4px} .stato{font-size:13px;color:#2563EB;min-height:18px}
+</style></head><body>
+<div id="box"><div class="riga"><div class="onda" id="o1"></div><button id="mic" title="Parla">🎙️</button><div class="onda" id="o2"></div></div>
+<div class="scritta">Parla</div><div class="stato" id="stato">Tocca il microfono e fai la tua domanda</div></div>
+<script>
+function invia(tipo, dati){ window.parent.postMessage(Object.assign({isStreamlitMessage:true, type:tipo}, dati), "*"); }
+for (const id of ["o1","o2"]) { const o=document.getElementById(id); for (let k=0;k<12;k++){const i=document.createElement("i"); i.style.animationDelay=(k*0.07)+"s"; o.appendChild(i);} }
+const R = window.SpeechRecognition || window.webkitSpeechRecognition;
+const stato = document.getElementById("stato"), box = document.getElementById("box");
+let ascolto = null;
+document.getElementById("mic").onclick = () => {
+  if (!R) { stato.textContent = "Questo browser non riconosce la voce: usa Safari o Chrome, oppure scrivi."; return; }
+  if (ascolto) { ascolto.stop(); return; }
+  ascolto = new R(); ascolto.lang = "it-IT"; ascolto.interimResults = true; ascolto.continuous = false;
+  box.classList.add("attivo"); stato.textContent = "Ti ascolto…";
+  ascolto.onresult = (e) => {
+    let t = ""; for (const r of e.results) t += r[0].transcript;
+    stato.textContent = t;
+    if (e.results[e.results.length - 1].isFinal) invia("streamlit:setComponentValue", {value: {testo: t, t: Date.now()}, dataType: "json"});
+  };
+  ascolto.onerror = (e) => { stato.textContent = e.error === "not-allowed" ? "Consenti il microfono al browser e riprova." : "Non ho sentito bene: riprova."; };
+  ascolto.onend = () => { box.classList.remove("attivo"); ascolto = null; };
+  ascolto.start();
+};
+window.addEventListener("message", (e) => { if (e.data && e.data.type === "streamlit:render") invia("streamlit:setFrameHeight", {height: 150}); });
+invia("streamlit:componentReady", {apiVersion: 1});
+</script></body></html>
