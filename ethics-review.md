@@ -1,6 +1,6 @@
 # Revisione etica – BIBL-IA 2
 
-BIBL-IA 2 è usato da studenti, spesso minorenni, e da professori. Per ognuna delle quattro dimensioni: il rischio concreto che abbiamo visto e la scelta di progetto con cui lo affrontiamo.
+BIBL-IA 2 è usato da studenti, spesso minorenni, e da professori. Per ognuna delle quattro dimensioni: il rischio concreto che ho visto e la scelta di progetto con cui lo affronto.
 
 ## 1. Privacy
 
@@ -21,7 +21,7 @@ BIBL-IA 2 è usato da studenti, spesso minorenni, e da professori. Per ognuna de
 - L'AI deve usare prima di tutto testi controllati di BIBL-IA e non inventare numeri; le risposte hanno una struttura fissa, più facile da controllare.
 - Le ricerche passano un filtro di pertinenza e mostrano sempre l'ente che le ha fatte, così lo studente vede da dove arrivano.
 - Il percorso si adatta al livello (test iniziale, argomenti deboli) e copre licei, tecnici e professionali, non solo l'università; l'app è in italiano e in inglese.
-- Abbiamo misurato gli errori invece di nasconderli: nel README sono scritti i limiti noti, compreso un errore vero del modello.
+- Ho misurato gli errori invece di nasconderli: nel README sono scritti i limiti noti, compreso un errore vero del modello.
 
 ## 3. Trasparenza
 
