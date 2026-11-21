@@ -684,7 +684,7 @@ def mostra_spiegazione_pronta(d, chiave):
         st.markdown("**🧭 Come si arriva alla risposta, passo per passo**")
         st.markdown("\n".join(f"{n}. {NUMERO_PASSO.sub('', p)}" for n, p in enumerate(passi, 1)))
         if not v.get("passaggi"):
-            st.caption("🤖 Passaggi scritti dall'AI del Mac partendo dalla spiegazione controllata.")
+            st.caption("🖥️ Passaggi scritti dall'AI del Mac partendo dalla spiegazione controllata.")
     elif st.button("🧭 Come si arriva alla risposta?", key=f"come_{chiave}",
                    help="L'AI del Mac scrive i passaggi del ragionamento, partendo dalla spiegazione controllata"):
         with st.spinner("L'AI del Mac scrive i passaggi del ragionamento..."):
@@ -695,7 +695,7 @@ def mostra_spiegazione_pronta(d, chiave):
         st.warning("⚠️ Attenzione: rivedendo la domanda, la risposta indicata come giusta nella prova ufficiale "
                    "sembra discutibile — " + verifica.split(":", 1)[-1].strip())
     colonne = st.columns(2)
-    if colonne[0].toggle("🧒 Spiegamelo in modo più semplice", key=f"semplice_pronta_{chiave}"):
+    if colonne[0].toggle("✨ Spiegamelo in modo più semplice", key=f"semplice_pronta_{chiave}"):
         st.info(v.get("semplice", ""))
         ascolta(v.get("semplice", ""), f"sempl_{chiave}")
     colonne[1].link_button("▶️ Non ho capito: video", ricerca_youtube(
@@ -907,7 +907,7 @@ def aiuto_domanda(d, chiave):
     colonne = st.columns(3)
     if colonne[0].button("💡 Il perché", key=f"perche_{chiave}", width="stretch"):
         st.session_state[f"vista_{chiave}"] = "perché"
-    if colonne[1].button("🧒 Spiegamelo in modo più semplice", key=f"semplice_{chiave}", width="stretch"):
+    if colonne[1].button("✨ Spiegamelo in modo più semplice", key=f"semplice_{chiave}", width="stretch"):
         st.session_state[f"vista_{chiave}"] = "semplice"
     colonne[2].link_button("▶️ Non ho capito: video", ricerca_youtube(d["argomento"] + " " + d["materia"]),
                            width="stretch")
@@ -951,7 +951,7 @@ def ragionamento_dello_studente(d, chiave, scelta=None):
         testo = st.text_area("Come sei arrivato alla risposta? Scrivi i passaggi con parole tue.",
                              key=f"rag_{chiave}", height=110,
                              placeholder="Per esempio: ho pensato che… quindi ho calcolato… e ho scelto…")
-        if testo.strip() and st.button("🤖 Controlla il mio ragionamento", key=f"ragbtn_{chiave}"):
+        if testo.strip() and st.button("🖥️ Controlla il mio ragionamento", key=f"ragbtn_{chiave}"):
             v = spiegazioni_pronte().get(d["id"], {})
             if d.get("tipo") == "completamento":
                 giusta = f"la risposta giusta è «{d.get('risposta', '')}»"
@@ -983,7 +983,7 @@ def ragionamento_dello_studente(d, chiave, scelta=None):
                 st.warning("L'AI del Mac non risponde: avvia Ollama (lo fa «Avvia BIBL-IA.command») e riprova.")
         if st.session_state.get(f"ragris_{chiave}"):
             st.info(st.session_state[f"ragris_{chiave}"])
-            st.caption("🤖 Scritto dall'intelligenza artificiale del Mac partendo dalla spiegazione controllata di BIBL-IA.")
+            st.caption("🖥️ Scritto dall'intelligenza artificiale del Mac partendo dalla spiegazione controllata di BIBL-IA.")
 
 
 @st.cache_data(show_spinner=False, max_entries=2000)
@@ -1380,7 +1380,7 @@ def frasi_dallo_studio(nodo, centro):
 
 
 def pannello_tocco(relazioni, centro, originali):
-    """Sotto la mappa: il concetto toccato, da spiegare meglio (🙋) o da modificare (✏️)."""
+    """Sotto la mappa: il concetto toccato, da spiegare meglio (✋) o da modificare (✏️)."""
     nodo = st.session_state.get(f"tocco_{centro}")
     nodi = {x for r in relazioni for x in (r["da"], r["a"])} | {centro}
     if relazioni is not originali:
@@ -1394,7 +1394,7 @@ def pannello_tocco(relazioni, centro, originali):
         return
     with st.container(border=True):
         st.markdown(f"👆 Hai toccato: **{nodo}**")
-        spiega, modifica = st.tabs(["🙋 Spiegamelo meglio", "✏️ Modifica questa parte"])
+        spiega, modifica = st.tabs(["✋ Spiegamelo meglio", "✏️ Modifica questa parte"])
         with spiega:
             definizione = scheda_concetto(nodo) or frasi_dallo_studio(nodo, centro)
             if definizione:
@@ -1663,7 +1663,7 @@ def mostra_lezione(argomento, materia, chiave):
 
 # --- Aiuto: biblioteca e mappe da costruire ---------------------------------------------------------
 
-AVVISO_AI = ("🤖 Risposta preparata dall'intelligenza artificiale di BIBL-IA: cerca, tra le lezioni, le mappe e le "
+AVVISO_AI = ("🖥️ Risposta preparata dall'intelligenza artificiale di BIBL-IA: cerca, tra le lezioni, le mappe e le "
              "spiegazioni scritte per BIBL-IA, i testi che rispondono alla tua domanda. Può sbagliare: verifica sempre "
              "gli argomenti importanti.")
 PAROLE_VUOTE = {"che", "cosa", "cos'è", "come", "quale", "quali", "sono", "della", "delle", "degli", "dello", "perché",
@@ -2208,7 +2208,7 @@ def ricerche_degli_enti(domanda, chiave, pronta=None):
         st.markdown("**🔬 Che cosa dicono le ricerche di università e centri di ricerca**")
         if sintesi:
             st.markdown(sintesi)
-            st.caption("🤖 Scritto dall'AI del Mac partendo dai riassunti delle ricerche: per i dettagli apri l'articolo.")
+            st.caption("🖥️ Scritto dall'AI del Mac partendo dai riassunti delle ricerche: per i dettagli apri l'articolo.")
         for n, a in enumerate(articoli, 1):
             dove = " · ".join(x for x in (a.get("ente"), a.get("rivista"), str(a.get("data", ""))[:4]) if x)
             titolo = re.sub(r"[\[\]<>]", "", a["titolo"])
@@ -2271,7 +2271,7 @@ def chiedi_ai_libri(chiave, suggerita=""):
     if domanda:
         riquadro_scheda_malattia(domanda, chiave)
     if domanda and racconta(domanda, f"dom_{chiave}", severo=True):
-        st.caption("🤖 Spiegazione presa dai percorsi controllati di BIBL-IA.")
+        st.caption("🖥️ Spiegazione presa dai percorsi controllati di BIBL-IA.")
         ricerche_degli_enti(domanda, chiave, risposta_pronta(domanda))
         return
     if domanda:
@@ -2308,7 +2308,7 @@ def chiedi_ai_libri(chiave, suggerita=""):
                                   + "\n- ".join(t for t, _ in trovati), 500)
             if testo:
                 st.info(testo)
-                st.caption("🤖 Scritta dall'intelligenza artificiale del Mac partendo dai testi di BIBL-IA.")
+                st.caption("🖥️ Scritta dall'intelligenza artificiale del Mac partendo dai testi di BIBL-IA.")
 
 
 def organo_leggibile(pagina):
@@ -2333,9 +2333,9 @@ def video_per_testo(testo, riserva=""):
 
 
 def non_capito(argomento, chiave, tema=None):
-    """🙋 «Non sto capendo»: lo studente scrive che cosa non gli è chiaro e BIBL-IA gli trova un video e una
+    """✋ «Non sto capendo»: lo studente scrive che cosa non gli è chiaro e BIBL-IA gli trova un video e una
     spiegazione (dai percorsi controllati o dai testi di studio, tramite l'intelligenza artificiale)."""
-    with st.expander("🙋 Non sto capendo qualcosa", expanded=False):
+    with st.expander("✋ Non sto capendo qualcosa", expanded=False):
         testo = st.text_input("Che cosa non ti è chiaro?", key=f"nc_{chiave}",
                               placeholder=f"Per esempio: non capisco {argomento.split(',')[0].lower()}")
         if not testo:
@@ -2353,12 +2353,12 @@ def non_capito(argomento, chiave, tema=None):
         # Prima il concetto (che cos'è); il racconto di un processo solo se è chiesto o se nei testi c'è poco.
         processo = re.search(r"\b(?:come (?:si fa|funziona|avviene)|passaggi|passi|ciclo|processo|fasi)\b", richiesta, re.I)
         if processo and racconta(richiesta, f"nc_r_{chiave}", severo=True):
-            st.caption("🤖 Spiegazione presa dai percorsi controllati di BIBL-IA.")
+            st.caption("🖥️ Spiegazione presa dai percorsi controllati di BIBL-IA.")
             return
         with st.spinner("L'intelligenza artificiale cerca la spiegazione..."):
             frasi = risposta_alla_domanda(f"che cos'è {richiesta}" if len(richiesta.split()) <= 4 else richiesta)
         if len(frasi or []) < 2 and racconta(richiesta, f"nc_r_{chiave}", severo=True):
-            st.caption("🤖 Spiegazione presa dai percorsi controllati di BIBL-IA.")
+            st.caption("🖥️ Spiegazione presa dai percorsi controllati di BIBL-IA.")
             return
         if frasi:
             with st.container(border=True):
@@ -3121,7 +3121,7 @@ def capitolo_materia(materia, argomento, numero):
                 st.session_state[f"semplice_{chiave}"] = testo
             if testo:
                 st.info(testo)
-                st.caption("🤖 Scritta dall'AI del Mac partendo dalla lezione controllata di BIBL-IA.")
+                st.caption("🖥️ Scritta dall'AI del Mac partendo dalla lezione controllata di BIBL-IA.")
             if sup.get("ricorda"):
                 st.markdown("**💡 Trucchi per ricordare**\n" + "\n".join(f"- {r}" for r in sup["ricorda"]))
         elif parte == parti[2]:
@@ -3480,14 +3480,14 @@ def passo_universita():
         carta_onboarding("Configuriamo il tuo profilo!", "Bastano pochi secondi: BIBL-IA prepara il percorso giusto per te.")
         p["nome"] = st.text_input("Come ti chiami?", value=p.get("nome", ""), max_chars=40, key="onb_nome",
                                   placeholder="Il tuo nome").strip()
-        ruolo = pulsanti_scelta("Sei…", {"studente": "🧑‍🎓 Uno studente", "docente": "👩‍🏫 Un docente"},
+        ruolo = pulsanti_scelta("Sei…", {"studente": "🎒 Uno studente", "docente": "🏫 Un docente"},
                                 p.get("ruolo", "studente"), "onb_ruolo")
         if ruolo != p.get("ruolo"):
             p["ruolo"] = ruolo
             st.rerun()
         if ruolo == "docente":
             st.info("Nell'**Area docenti** crei lezioni, dispense, domande e verifiche per i tuoi studenti.")
-            st.page_link(PAGINE["docenti"], label="Vai all'Area docenti", icon="👩‍🏫", width="stretch")
+            st.page_link(PAGINE["docenti"], label="Vai all'Area docenti", icon="🏫", width="stretch")
             return
         scelte = {"superiori": "🏫 Superiori", "test": "🎯 Test d'ammissione", "frequento": "🎓 Università"}
         stato = pulsanti_scelta("A che punto sei?", scelte, p.get("stato", "superiori"), "onb_stato", colonne=3)
@@ -4368,7 +4368,7 @@ def passo_lezione():
                 st.rerun()
         else:
             st.warning(f"{risultato['giuste']}/{risultato['totale']}: non ancora al 100%. Leggi le spiegazioni delle "
-                       "domande sbagliate qui sopra (e se qualcosa non ti è chiaro usa «🙋 Non sto capendo»), poi "
+                       "domande sbagliate qui sopra (e se qualcosa non ti è chiaro usa «✋ Non sto capendo»), poi "
                        "rifai il quiz: tornano le domande sbagliate con altre nuove.")
             prossima_soglia = soglia_lezione(tentativo + 1)
             if prossima_soglia < 1:
@@ -4672,9 +4672,9 @@ def esercitati():
     st.header("❓ Quiz ed esercitazioni")
     p = profilo()
     modo = st.radio("Su cosa?", ["Materie (superiori e test di ammissione)", "📜 Test degli anni passati",
-                                 "Esami universitari (tutti gli anni)", "👩‍🏫 Verifiche del docente"], horizontal=True,
+                                 "Esami universitari (tutti gli anni)", "🏫 Verifiche del docente"], horizontal=True,
                     key="eserc_modo")
-    if modo.startswith("👩‍🏫"):
+    if modo.startswith("🏫"):
         verifiche_per_studenti()
         return
     if modo.startswith("📜"):
@@ -4869,7 +4869,7 @@ def prova_scritta(materie, maturita):
                 voto = st.select_slider(L.tr("L'AI non è attiva: confrontati con la soluzione e datti un voto"),
                                         list(range(0, 11)), value=5, key=f"auto_{memo}")
             else:
-                st.markdown(f"**🤖 {L.tr('Voto')}: {voto:g}/10**")
+                st.markdown(f"**🖥️ {L.tr('Voto')}: {voto:g}/10**")
                 st.info(commento)
             voti.append(voto)
     media = sum(voti) / len(voti)
@@ -4997,9 +4997,9 @@ def simulazione(nome_test=None, chiave="sim"):
     modo = "ufficiale"
     if chiave == "sim":
         modo = st.radio("Che simulazione?", ["📋 Ufficiale: come il test vero", "🎛️ Libera: scegli materie e quante "
-                                             "domande", "🤖 Personalizzata dall'AI: sui tuoi punti deboli"],
+                                             "domande", "🖥️ Personalizzata dall'AI: sui tuoi punti deboli"],
                         horizontal=True, key=f"modo_sim_{nome_test}")
-        modo = {"📋": "ufficiale", "🎛": "personale", "🤖": "deboli"}[modo[0]]
+        modo = {"📋": "ufficiale", "🎛": "personale", "🖥️": "deboli"}[modo[0]]
         st.caption("Durante la simulazione niente aiuti: le spiegazioni compaiono solo dopo «Correggi».")
     if modo == "ufficiale":
         scelte = st.multiselect("Sezioni da fare (puoi farne anche una sola, per esempio solo Chimica)",
@@ -5609,7 +5609,7 @@ def come_si_arriva_al_nome(nome, sdf, info, chiave):
             st.link_button("🔎 Video sulla nomenclatura", ricerca_youtube(f"nomenclatura IUPAC {leggibile}"
                                                                          if regole else f"{leggibile} chimica"),
                            width="stretch")
-        if colonne[1].button("🤖 Spiegamelo con l'AI", key=f"ai_nome_{chiave}", width="stretch"):
+        if colonne[1].button("🖥️ Spiegamelo con l'AI", key=f"ai_nome_{chiave}", width="stretch"):
             with st.spinner("L'AI del Mac spiega il nome..."):
                 testo = chiedi_ai("Sei un professore di chimica. Spiega in italiano a uno studente, passo per passo e in "
                                   f"modo semplice, come si arriva al nome della molecola «{leggibile}»"
@@ -5936,34 +5936,82 @@ def modello_3d_da_smiles(smiles):
     """La molecola in 3D (idrogeni, geometria ottimizzata) con lo stesso metodo dei Modelli 3D di BIBL-IA."""
     from rdkit import Chem
     m = Chem.MolFromSmiles(smiles or "")
-    if m is None or m.GetNumHeavyAtoms() > 60:
+    if m is None or m.GetNumHeavyAtoms() > 80 or Chem.AddHs(m).GetNumAtoms() < 2:     # un atomo solo (H⁺, Na⁺): basta la formula
         return ""
     return modelli3d.forma_3d(Chem.MolToMolBlock(m))
 
 
-def html_reazione_3d(sinistra, destra, altezza=230):
-    """Le molecole di partenza → quelle di arrivo, ognuna in 3D (si ruota con il mouse o con il dito)."""
+# Le classi di molecole (non una molecola sola) con la loro formula generale: R è il resto della catena.
+FORMULE_GENERALI = {
+    "acido (HA)": "HA", "base (B)": "B", "acido coniugato (BH⁺)": "BH⁺", "base coniugata (A⁻)": "A⁻",
+    "acido forte": "HA (si dissocia tutto)", "acido debole": "HA ⇌ H⁺ + A⁻", "alogenuro alchilico": "R–X",
+    "alcol protonato": "R–OH₂⁺", "amminoacido": "H₂N–CHR–COOH", "amminoacidi": "H₂N–CHR–COOH",
+    "α-chetoacido": "R–CO–COOH", "α-chetoacidi": "R–CO–COOH", "acil-CoA": "R–CO–S–CoA",
+    "acil-CoA (2 C in meno)": "R′–CO–S–CoA", "trans-Δ²-enoil-CoA": "R–CH=CH–CO–S–CoA",
+    "L-3-idrossiacil-CoA": "R–CH(OH)–CH₂–CO–S–CoA", "3-chetoacil-CoA": "R–CO–CH₂–CO–S–CoA",
+    "acil-ACP (catena allungata)": "R–CO–S–ACP", "β-chetoacil-ACP": "R–CO–CH₂–CO–S–ACP",
+    "β-idrossiacil-ACP": "R–CH(OH)–CH₂–CO–S–ACP", "trans-Δ²-enoil-ACP": "R–CH=CH–CO–S–ACP",
+    "acilcarnitina": "R–CO–O–carnitina", "bicarbonato filtrato": "HCO₃⁻", "plastochinolo (PQH₂)": "PQH₂",
+    "citocromo c ossidato": "cit c (Fe³⁺)", "citocromo c ridotto": "cit c (Fe²⁺)",
+    "plastocianina ridotta": "plastocianina (Cu⁺)", "ferredossina ridotta": "Fd (ridotta)", "P680 eccitato": "P680*",
+    "carbonio elettrofilo (δ+)": "C^δ+", "stato di transizione SN2": "[Nu···C···X]⁻",
+}
+FORMULE_SENZA_STRUTTURA = {"h⁺": "H⁺", "h+": "H⁺", "elettroni": "e⁻", "luce": "hν (luce)", "luce solare": "hν (luce)",
+                           "calore": "energia termica", "nadh + h⁺": "NADH + H⁺"}
+
+
+def voci_della_somma(nomi):
+    """Le molecole di un lato della reazione, una per una («NADH + H⁺» diventa due voci), con formula e modello 3D."""
+    voci = []
+    for nome in nomi:
+        pezzi = [x.strip() for x in nome.split(" + ")]
+        for n, pezzo in enumerate(pezzi):
+            # «NADH + H⁺»: la struttura del nome intero vale per la prima molecola (NADH), H⁺ ha solo la formula
+            smiles = struttura_di(pezzo) or (struttura_di(nome) if n == 0 else None)
+            formula = formula_bruta(smiles) if smiles else ""
+            if not formula:
+                formula = FORMULE_GENERALI.get(pezzo, "")
+            if not formula:
+                chiave = re.sub(r"^\d+\s+", "", pezzo.lower()).strip()
+                formula = next((v for k, v in FORMULE_SENZA_STRUTTURA.items() if chiave.startswith(k)), "")
+            voci.append({"nome": pezzo, "formula": formula, "modello": modello_3d_da_smiles(smiles) if smiles else ""})
+    return voci
+
+
+def html_reazione_3d(sinistra, destra, altezza=210):
+    """Tutte le molecole della reazione in fila, con «+» e «→»: ognuna in 3D (si ruota con il mouse o con il dito)
+    con nome e formula; quelle senza struttura (H⁺, elettroni, luce) in un riquadro con la formula, mai spazi vuoti."""
     celle, modelli = [], []
-    for lato, nomi in ((0, sinistra), (1, destra)):
+    segno = lambda t: (f'<div style="font-size:30px;font-weight:700;color:#2563EB;align-self:center;padding:0 2px;'
+                       f'flex:0 0 auto;margin-bottom:34px">{t}</div>')
+    for lato, voci in ((0, sinistra), (1, destra)):
         if lato == 1:
-            celle.append('<div style="font-size:34px;color:#2563EB;padding:0 4px;align-self:center">→</div>')
-        for nome, modello in nomi:
-            ident = f"m{len(modelli)}"
-            modelli.append((ident, modello))
-            celle.append(f'<div style="flex:1 1 170px;min-width:150px"><div id="{ident}" style="height:{altezza}px;'
-                         f'position:relative;border-radius:12px;background:#0f1218"></div><div style="text-align:center;'
-                         f'font:13px sans-serif;color:#334155;margin-top:4px">{html.escape(nome)}</div></div>')
+            celle.append(segno("→"))
+        for k, v in enumerate(voci):
+            if k:
+                celle.append(segno("+"))
+            etichetta = (f'<div style="text-align:center;font:600 13px sans-serif;color:#0F1B3D;margin-top:4px">'
+                         f'{html.escape(v["nome"])}</div><div style="text-align:center;font:13px sans-serif;color:#2563EB">'
+                         f'{html.escape(v["formula"])}</div>')
+            if v["modello"]:
+                ident = f"m{len(modelli)}"
+                modelli.append((ident, v["modello"]))
+                riquadro = (f'<div id="{ident}" style="height:{altezza}px;width:170px;position:relative;border-radius:12px;'
+                            f'background:#0f1218"></div>')
+            else:
+                riquadro = (f'<div style="height:{altezza}px;width:170px;border-radius:12px;background:#EEF2F7;display:flex;'
+                            f'align-items:center;justify-content:center;font:700 26px sans-serif;color:#1E3A8A;text-align:'
+                            f'center;padding:8px;box-sizing:border-box">{html.escape(v["formula"] or v["nome"])}</div>')
+            celle.append(f'<div style="flex:0 0 170px">{riquadro}{etichetta}</div>')
     script = "".join(
         f'(function(){{const v=$3Dmol.createViewer("{i}",{{backgroundColor:"#0f1218"}});v.addModel({json.dumps(m)},"sdf");'
         "v.setStyle({},{stick:{radius:0.15,colorscheme:'Jmol'},sphere:{scale:0.25,colorscheme:'Jmol'}});"
         "v.zoomTo();v.zoom(0.85);v.render();v.spin('y',0.5);})();" for i, m in modelli)
-    return (f'<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">{"".join(celle)}</div>'
-            f'<script src="{modelli3d.LIBRERIA_3D}"></script><script>{script}</script>')
+    return (f'<div style="display:flex;gap:6px;flex-wrap:nowrap;align-items:flex-start;overflow-x:auto;padding-bottom:6px">'
+            f'{"".join(celle)}</div><script src="{modelli3d.LIBRERIA_3D}"></script><script>{script}</script>')
 
 
 def _con_formula(nome):
-    if TRASPORTATORI.search(nome):
-        return nome
     smiles = struttura_di(nome)
     f = formula_bruta(smiles) if smiles else ""
     return f"{nome} ({f})" if f and f != nome else nome
@@ -6007,12 +6055,12 @@ def reazioni_passo_passo(nome, chiave):
             testa += " · ×2 (una volta per ogni metà del glucosio)" if nome == "glicolisi" else " · ×2"
         st.markdown(testa)
         st.markdown(" + ".join(sinistra) + "  **→**  " + " + ".join(destra))
-        sinistra = [(m, modello_3d_da_smiles(struttura_di(m))) for m in x.get("da", []) if struttura_di(m)]
-        destra = [(m, modello_3d_da_smiles(struttura_di(m))) for m in x.get("a", []) if struttura_di(m)]
-        sinistra, destra = [v for v in sinistra if v[1]], [v for v in destra if v[1]]
+        sinistra = voci_della_somma(x.get("da", []) + x.get("entra", []))
+        destra = voci_della_somma(x.get("a", []) + x.get("esce", []))
         if sinistra and destra:
-            righe = 2 if len(sinistra) + len(destra) > 3 else 1
-            componenti.html(html_reazione_3d(sinistra, destra), height=275 * righe)
+            componenti.html(html_reazione_3d(sinistra, destra), height=272)
+            if len(sinistra) + len(destra) > 4:
+                st.caption("↔️ Scorri di lato per vedere tutte le molecole della reazione.")
         if x.get("nota"):
             st.caption(x["nota"])
     if p.get("bilancio"):
@@ -6495,7 +6543,7 @@ def reazione_scritta():
     prodotti = re.search(r"PRODOTTI:\s*(.+)", testo)
     resto = re.sub(r"(?m)^\s*(EQUAZIONE|PRODOTTI):.*$", "", testo).strip()
     with st.container(key="card_lab_risultato"):
-        st.markdown('<span class="badge" style="background:#FEF3C7;color:#92400E">🤖 Risposta dell\'AI: non controllata'
+        st.markdown('<span class="badge" style="background:#FEF3C7;color:#92400E">🖥️ Risposta dell\'AI: non controllata'
                     '</span>', unsafe_allow_html=True)
         if equazione and "nessuna" not in equazione.group(1).lower():
             equazione_grande(equazione.group(1).strip().strip("*"))
@@ -6846,12 +6894,12 @@ def guida():
 - **🧭 Piano di studio** — il piano come **📋 elenco** o come **📅 calendario** settimana per settimana; si aggiorna da solo con le lacune.
 - **📊 Statistiche** — andamento, precisione, ore di studio, memoria didattica.
 - **📄 Documenti** — **dispense e formulari** di ogni materia da scaricare (PDF o testo) e i tuoi documenti con l'AI.
-- **👩‍🏫 Area docenti** — progressi degli studenti, report, compiti e verifiche da assegnare.
+- **🏫 Area docenti** — progressi degli studenti, report, compiti e verifiche da assegnare.
 - **⚙️ Impostazioni** — profilo, obiettivo di preparazione (70-95%), domande al giorno, lingua, quale dashboard usare, promemoria, abbonamento, copia dei progressi.
 """)
-    with st.expander("🤖 Recupero intelligente, comandi rapidi e timer", expanded=False):
+    with st.expander("🖥️ Recupero intelligente, comandi rapidi e timer", expanded=False):
         st.markdown("""
-- **🤖 Pianifica il recupero con l'AI** (Dashboard → *Azioni chiave*): BIBL-IA calcola la priorità di ogni argomento
+- **🖥️ Pianifica il recupero con l'AI** (Dashboard → *Azioni chiave*): BIBL-IA calcola la priorità di ogni argomento
   (percentuale di errori, errori ripetuti sugli stessi concetti, peso nel tuo test e nelle prove ufficiali, giorni
   all'esame: più l'esame è vicino, più resta solo ciò che è sotto il 60%) e mette nel piano delle **Flash Review** da
   15-20 minuti, con prima il **prerequisito** se serve (per esempio i logaritmi prima del pH). L'AI del Mac spiega perché.
@@ -6925,7 +6973,7 @@ def guida():
 - 🇮🇹/🇬🇧 Nel menu puoi passare dall'italiano all'inglese; domande e lezioni si traducono con «Translate».
 
 **Quando correggi un quiz** la risposta sbagliata è barrata in rosso e quella giusta è cerchiata; sotto c'è
-**💡 il perché**, i **🧮 passaggi** per gli esercizi di calcolo, **🧒 la versione semplice** e **▶️ il video**. Ogni
+**💡 il perché**, i **🧮 passaggi** per gli esercizi di calcolo, **✨ la versione semplice** e **▶️ il video**. Ogni
 domanda ha la sua spiegazione, anche quando rispondi giusto. Nelle domande **a completamento** scrivi la parola o il
 numero che manca, come al Semestre filtro. Sotto ogni domanda corretta c'è **✍️ Scrivi il tuo ragionamento**: scrivi come
 sei arrivato alla risposta e l'intelligenza artificiale ti dice che cosa hai fatto bene, dove sbagli e te lo riscrive
@@ -6934,7 +6982,7 @@ in modo più semplice. Dove serve, le domande hanno la **figura** (geometria, gr
 **📜 Test degli anni passati** (in Esercitati): le prove ufficiali di Medicina e Odontoiatria, Veterinaria e
 professioni sanitarie, intere anno per anno o per argomento, con la spiegazione di ogni domanda.
 
-**🙋 Non sto capendo** — in ogni lezione e alla fine di ogni quiz: scrivi che cosa non ti è chiaro e BIBL-IA ti trova
+**✋ Non sto capendo** — in ogni lezione e alla fine di ogni quiz: scrivi che cosa non ti è chiaro e BIBL-IA ti trova
 un video e una spiegazione.
 
 **Le mappe** si possono toccare: tocca un concetto per farti spiegare meglio (testo, video, domanda) o per
@@ -7416,7 +7464,7 @@ def presentazione():
                       f'padding:9px 13px;font-size:13px;font-weight:600;color:#0F1B3D;box-shadow:0 10px 24px rgba(15,27,61,.2)">'
                       f'{t}</div>' for pos, t in [("left:18px;top:24px", "🧬 " + L.tr("Modelli 3D")),
                                                   ("right:18px;top:120px", "⚗️ " + L.tr("Laboratorio")),
-                                                  ("left:24px;bottom:70px", "🤖 " + L.tr("Tutor AI 24/7")),
+                                                  ("left:24px;bottom:70px", "🖥️ " + L.tr("Tutor AI 24/7")),
                                                   ("right:22px;bottom:24px", "📈 " + L.tr("I tuoi progressi"))])
             + '</div>', unsafe_allow_html=True)
     st.write("")
@@ -7767,7 +7815,7 @@ def flash_review(sessione, s, i):
         st.markdown("**Dove sbagli di più:** " + " · ".join(f"*{c}*" for c in diagnosi["concetti"]))
     chiave_ai = f"flash_ai_{seme_di(argomento)}"
     base = (studio_della_mappa("argomento", argomento, "superiore") or {}).get("spiegazione") or []
-    if not st.session_state.get(chiave_ai) and st.button("🤖 Riassunto flash dall'AI", key=f"flash_btn_{s}_{i}"):
+    if not st.session_state.get(chiave_ai) and st.button("🖥️ Riassunto flash dall'AI", key=f"flash_btn_{s}_{i}"):
         with st.spinner("L'AI del Mac prepara il riassunto (gratis, sul tuo computer)..."):
             st.session_state[chiave_ai] = chiedi_ai(
                 "Sei un professore. Scrivi in italiano un RIPASSO FLASH di massimo 6 punti elenco, brevi e precisi, "
@@ -7777,7 +7825,7 @@ def flash_review(sessione, s, i):
                 + "\n".join(base)[:3500], 450)
     if st.session_state.get(chiave_ai):
         st.info(st.session_state[chiave_ai])
-        st.caption("🤖 Scritto dall'AI del Mac sui testi controllati di BIBL-IA: se qualcosa non ti torna, apri il capitolo.")
+        st.caption("🖥️ Scritto dall'AI del Mac sui testi controllati di BIBL-IA: se qualcosa non ti torna, apri il capitolo.")
     elif base:
         with st.expander("📖 I punti chiave del capitolo", expanded=True):
             for paragrafo in base[:3]:
@@ -8651,10 +8699,10 @@ def panoramica_v3(p, test, prep, mancano):
         # --- Professore AI ---
         with st.container(key="card_ma_prof"):
             st.markdown(f'<div style="display:flex;justify-content:space-between;gap:10px"><div><div class="titolo-card" '
-                        f'style="font-size:19px">🤖 {L.tr("Il tuo Professore AI")}</div><div style="font-size:15px;'
+                        f'style="font-size:19px">🖥️ {L.tr("Il tuo Professore AI")}</div><div style="font-size:15px;'
                         f'color:#1E293B;margin-top:8px;line-height:1.45">'
                         f'{L.tr("Hai dubbi? Chiedimi qualsiasi cosa su tutte le materie scientifiche: spiegazioni, esercizi e quiz.")}'
-                        f'</div></div><div style="font-size:64px;line-height:1">🤖</div></div>', unsafe_allow_html=True)
+                        f'</div></div><div style="font-size:64px;line-height:1">🖥️</div></div>', unsafe_allow_html=True)
             with st.container(key="prof_bottone"):
                 st.page_link(PAGINE["tutor"], label="Parla con l'AI ✨")
         # --- Argomenti da recuperare: un clic li mette nel piano ---
@@ -8922,7 +8970,7 @@ def panoramica_v4(p, test, prep, mancano):
                     st.session_state["deb_seme"] = random.randint(1, 10 ** 6)
                     st.switch_page(PAGINE["ripasso"])
             with st.container(key="contorno_ai_piano"):
-                if st.button("🤖 Pianifica il recupero con l'AI", key="d_recupero_ai", width="stretch",
+                if st.button("🖥️ Pianifica il recupero con l'AI", key="d_recupero_ai", width="stretch",
                              help="Calcola le priorità (errori, ripetizioni, peso nel test, giorni all'esame), mette le "
                                   "Flash Review nel piano e l'AI del Mac ti spiega perché"):
                     lacune, aggiunte = pianifica_recupero()
@@ -8936,7 +8984,7 @@ def panoramica_v4(p, test, prep, mancano):
                 r_ai = p["recupero_ai"]
                 st.success(f"📅 {r_ai['aggiunte']} Flash Review aggiunte al piano: " + ", ".join(r_ai["argomenti"]))
                 if r_ai.get("testo"):
-                    with st.expander("🤖 Perché questo piano (AI del Mac)"):
+                    with st.expander("🖥️ Perché questo piano (AI del Mac)"):
                         st.write(r_ai["testo"])
             st.markdown(f'<div style="font-weight:700;font-size:14.5px;margin:4px 0 2px">{L.tr("Argomenti da recuperare")}:</div>',
                         unsafe_allow_html=True)
@@ -9023,7 +9071,7 @@ def panoramica_v4(p, test, prep, mancano):
         st.switch_page(PAGINE["tutor"])
 
 
-RIQUADRI_IN_PIU = {"previsione": "🔮 Previsione", "recupero": "🤖 Recupero delle lacune", "mese": "🎯 Obiettivo del mese"}
+RIQUADRI_IN_PIU = {"previsione": "🔮 Previsione", "recupero": "🖥️ Recupero delle lacune", "mese": "🎯 Obiettivo del mese"}
 
 
 def riquadri_in_piu(p, prep, mancano, escludi=()):
@@ -9075,7 +9123,7 @@ def riquadri_in_piu(p, prep, mancano, escludi=()):
                 if not lacune:
                     st.markdown(f'<div class="sotto-card">{L.tr("Nessun argomento da recuperare. 🎉")}</div>',
                                 unsafe_allow_html=True)
-                elif st.button("🤖 Pianifica il recupero con l'AI", key="x_recupero_ai", width="stretch",
+                elif st.button("🖥️ Pianifica il recupero con l'AI", key="x_recupero_ai", width="stretch",
                                help="Mette nel piano le Flash Review degli argomenti più urgenti"):
                     scelte, aggiunte = pianifica_recupero()
                     st.toast(f"📅 {aggiunte} Flash Review aggiunte al piano: " + ", ".join(r["argomento"] for r in scelte))
@@ -10064,7 +10112,7 @@ def flashcard_materie():
     return {m: sorted(v.items()) for m, v in schede.items()}
 
 
-VOTI_SCHEDA = [("😀 Facilissima", 3), ("🙂 Andava bene", 2), ("😅 Giusta, ma difficile", 1), ("🤷 Non lo sapevo", 0)]
+VOTI_SCHEDA = [("🟢 Facilissima", 3), ("🔵 Andava bene", 2), ("🟠 Giusta, ma difficile", 1), ("❔ Non lo sapevo", 0)]
 
 
 def flashcard():
@@ -10515,7 +10563,7 @@ def materiali_da_scaricare():
 
 def documenti_ai():
     st.header("📄 Documenti")
-    scheda = st.segmented_control("Documenti", ["📥 Dispense e formulari", "🤖 I tuoi documenti con l'AI"],
+    scheda = st.segmented_control("Documenti", ["📥 Dispense e formulari", "🖥️ I tuoi documenti con l'AI"],
                                   default="📥 Dispense e formulari", key="doc_scheda",
                                   label_visibility="collapsed") or "📥 Dispense e formulari"
     if scheda.startswith("📥"):
@@ -10820,13 +10868,13 @@ MODI_TUTOR = {
 
 
 PROFESSORI = {
-    "Lina": {"volto": "👩‍🏫", "materia": "Biologia e anatomia", "colore": "#2563EB",
+    "Lina": {"volto": "L", "materia": "Biologia e anatomia", "colore": "#2563EB",
              "saluto": "Ciao! Sono Lina: ti spiego biologia e anatomia partendo da quello che sai già. Cominciamo?"},
-    "Marco": {"volto": "👨‍🔬", "materia": "Chimica", "colore": "#16A34A",
+    "Marco": {"volto": "M", "materia": "Chimica", "colore": "#16A34A",
               "saluto": "Ciao, sono Marco! Atomi, legami, reazioni e pH: chiedimi tutto, anche le cose più semplici."},
-    "Sara": {"volto": "👩‍💻", "materia": "Fisica e matematica", "colore": "#7C3AED",
+    "Sara": {"volto": "S", "materia": "Fisica e matematica", "colore": "#7C3AED",
              "saluto": "Sono Sara: formule, esercizi e ragionamento logico, passo per passo. Da dove partiamo?"},
-    "Luca": {"volto": "👨‍⚕️", "materia": "Medicina e professioni sanitarie", "colore": "#DC2626",
+    "Luca": {"volto": "L", "materia": "Medicina e professioni sanitarie", "colore": "#DC2626",
              "saluto": "Sono Luca: ti preparo al test di Medicina con le domande vere e i trucchi per non sbagliare."},
 }
 @st.cache_resource(show_spinner=False)
@@ -10970,11 +11018,47 @@ def mappa_per_il_tutor(domanda, frasi):
     return {"centro": centro, "relazioni": relazioni[:20], "controllata": False}
 
 
+CARTELLA_PROFESSORI = ROOT / "immagini" / "professori"
+
+
+def foto_professore(nome):
+    """La foto del professore (immagini/professori/<nome>.jpg o .png), se c'è."""
+    for estensione in ("jpg", "jpeg", "png", "webp"):
+        f = CARTELLA_PROFESSORI / f"{nome.lower()}.{estensione}"
+        if f.exists():
+            return f
+    return None
+
+
+@st.cache_data(show_spinner=False)
+def _foto_base64(percorso, modificata):
+    tipo = "png" if percorso.endswith(".png") else ("webp" if percorso.endswith(".webp") else "jpeg")
+    return f"data:image/{tipo};base64," + base64.b64encode(Path(percorso).read_bytes()).decode()
+
+
+def volto_html(nome, misura=40):
+    """Il volto del professore in HTML: la foto rotonda, oppure l'iniziale in un cerchio colorato (mai faccine)."""
+    prof = PROFESSORI.get(nome, {})
+    foto = foto_professore(nome)
+    if foto:
+        return (f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:{misura}px;'
+                f'height:{misura}px;border-radius:50%;object-fit:cover;flex-shrink:0">')
+    return (f'<div style="width:{misura}px;height:{misura}px;border-radius:50%;background:{prof.get("colore", "#2563EB")};'
+            f'color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:{int(misura * .45)}px;'
+            f'flex-shrink:0">{html.escape(nome[:1])}</div>')
+
+
+def avatar_professore(nome):
+    """Per st.chat_message: il percorso della foto, oppure un'icona (non una faccina)."""
+    foto = foto_professore(nome)
+    return str(foto) if foto else ":material/school:"
+
+
 def mappa_nella_chat(m, chiave):
     """La mappa dentro la risposta del tutor: si tocca come nelle Mappe concettuali e sotto c'è scritta in frasi."""
     mappa_tocca(m["relazioni"], m["centro"], f"tutor_{chiave}_{seme_di(m['centro'])}")
     st.caption("🗺️ Mappa controllata di BIBL-IA." if m.get("controllata") else
-               "🤖 Mappa fatta dall'AI del Mac partendo dai testi di BIBL-IA: controllala con la spiegazione.")
+               "🖥️ Mappa fatta dall'AI del Mac partendo dai testi di BIBL-IA: controllala con la spiegazione.")
     with st.expander("📖 La mappa scritta in frasi"):
         rami_della_mappa(m["relazioni"], m["centro"])
 
@@ -11013,7 +11097,7 @@ def rispondi_tutor(domanda, modo, professore):
         testo = ""
     if frasi:
         # La risposta compare mentre l'AI la scrive (prima si aspettavano anche 20 secondi davanti a una rotellina).
-        with st.chat_message("assistant", avatar=PROFESSORI[professore].get("volto")):
+        with st.chat_message("assistant", avatar=avatar_professore(professore)):
             testo = st.write_stream(chiedi_ai_flusso(f"Sei {professore}, professore privato di {PROFESSORI[professore]['materia']} di uno studente "
                               f"italiano che prepara il test {p.get('test') or 'universitario'}. {MODI_TUTOR[modo]} Usa SOLO "
                               "le informazioni qui sotto: ogni affermazione deve venire da lì; se non bastano, dillo. Non "
@@ -11338,9 +11422,8 @@ def parla_una_volta(testo, chiave):
         st.audio(audio, format="audio/mp4", autoplay=True)
 
 
-def nuvoletta_professore(volto, testo, colore="#2563EB"):
-    st.markdown(f'<div style="display:flex;gap:12px;align-items:flex-start;margin:6px 0"><div style="font-size:40px;line-height:1">'
-                f'{volto}</div><div style="background:#F1F5F9;border-left:4px solid {colore};border-radius:14px;padding:12px 16px;'
+def nuvoletta_professore(nome, testo, colore="#2563EB"):
+    st.markdown(f'<div style="display:flex;gap:12px;align-items:flex-start;margin:6px 0">{volto_html(nome, 48)}<div style="background:#F1F5F9;border-left:4px solid {colore};border-radius:14px;padding:12px 16px;'
                 f'font-size:16px;color:#0F1B3D">{html.escape(testo)}</div></div>', unsafe_allow_html=True)
 
 
@@ -11390,7 +11473,7 @@ def interrogazione_orale():
     chiave = f"{o['id']}_{o['n']}"
     if o["fase"] == "domanda":
         domanda = o["domande"][o["n"]]
-        nuvoletta_professore(prof["volto"], f"{o['prof']}: {domanda}", prof["colore"])
+        nuvoletta_professore(o["prof"], f"{o['prof']}: {domanda}", prof["colore"])
         parla_una_volta(domanda, f"orale_d_{chiave}")
         ascolta(domanda, f"orale_d_{chiave}")
         parlato = voce_dello_studente(f"orale_{chiave}", "🎙️ Registra la risposta: premi, parla, premi di nuovo")
@@ -11403,7 +11486,7 @@ def interrogazione_orale():
                                     key=f"orale_testo_{chiave}", height=130)
             a, b, c = st.columns(3)
             valuta = a.form_submit_button("✅ Ho risposto: correggi", type="primary", width="stretch")
-            non_so = b.form_submit_button("🤷 Non lo so: spiegamelo", width="stretch")
+            non_so = b.form_submit_button("❔ Non lo so: spiegamelo", width="stretch")
             ferma = c.form_submit_button("⏹ Termina", width="stretch")
         if valuta and not risposta.strip():
             st.warning("Prima rispondi: registra la risposta con il microfono o scrivila nel riquadro.")
@@ -11427,7 +11510,7 @@ def interrogazione_orale():
         st.rerun()
     if o["fase"] == "esito":
         e = o["esiti"][-1]
-        nuvoletta_professore(prof["volto"], f"{o['prof']}: {e['domanda']}", prof["colore"])
+        nuvoletta_professore(o["prof"], f"{o['prof']}: {e['domanda']}", prof["colore"])
         if e["risposta"]:
             st.markdown(f'<div style="display:flex;justify-content:flex-end;margin:6px 0"><div style="background:#2563EB;'
                         f'color:#fff;border-radius:14px;padding:10px 14px;max-width:80%">{html.escape(e["risposta"])}</div></div>',
@@ -11443,13 +11526,13 @@ def interrogazione_orale():
             st.markdown("**🧩 Che cosa manca**\n" + "\n".join(f"- {x}" for x in e["manca"]))
         if e["errori"]:
             st.markdown("**⚠️ Da correggere**\n" + "\n".join(f"- {x}" for x in e["errori"]))
-        st.markdown(f"**{prof['volto']} La spiegazione di {o['prof']}**\n\n{e['spiegazione']}")
+        st.markdown(f"**🏫 La spiegazione di {o['prof']}**\n\n{e['spiegazione']}")
         parla_una_volta(e["spiegazione"], f"orale_s_{chiave}")
         ascolta(e["spiegazione"], f"orale_s_{chiave}")
         with st.expander("📘 Su che cosa si basa la correzione (testi controllati della lezione)"):
             for t in e["riferimento"]:
                 st.markdown(f"- {t}")
-        st.caption("🤖 Correzione e spiegazione scritte dall'AI del Mac confrontando la tua risposta con i testi controllati: "
+        st.caption("🖥️ Correzione e spiegazione scritte dall'AI del Mac confrontando la tua risposta con i testi controllati: "
                    "è un allenamento, non un voto ufficiale.")
         a, b, c = st.columns(3)
         ultima = o["n"] + 1 >= totale
@@ -11479,7 +11562,7 @@ def interrogazione_orale():
         p["interrogazioni"] = p["interrogazioni"][-50:]
         aggiungi_punti(5 * len(o["esiti"]))
         o["salvata"] = True
-    nuvoletta_professore(prof["volto"], f"{o['prof']}: abbiamo finito! " + (
+    nuvoletta_professore(o["prof"], f"{o['prof']}: abbiamo finito! " + (
         f"Media {media}/10 ({nome.lower()}). " if voti else "") + "Ecco il riepilogo: ripassa le domande segnate.", prof["colore"])
     for e in o["esiti"]:
         segno = "✅" if (e.get("voto") or 0) >= 6 else "🔁"
@@ -11538,7 +11621,7 @@ def tutor_ai():
             st.rerun()
         st.markdown('<div style="font-weight:700;margin:10px 0 6px">✦ Professori</div>', unsafe_allow_html=True)
         for nome, x in PROFESSORI.items():
-            if st.button(f"{x['volto']}  {nome}", key=f"prof_{nome}", width="stretch",
+            if st.button(nome, key=f"prof_{nome}", width="stretch",
                          type="primary" if nome == professore else "secondary", help=x["materia"]):
                 st.session_state["tutor_prof"] = nome
                 st.rerun()
@@ -11562,13 +11645,14 @@ def tutor_ai():
     with centro:
         st.markdown(f'<div style="background:#1E3A8A;'
                     f'border-radius:22px;padding:22px 24px;display:flex;align-items:center;gap:22px;flex-wrap:wrap">'
-                    f'<div style="font-size:92px;line-height:1;background:rgba(255,255,255,.08);border-radius:50%;width:140px;'
-                    f'height:140px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px {prof["colore"]}">'
-                    f'{prof["volto"]}</div><div style="flex:1;min-width:220px;background:rgba(255,255,255,.08);border:1px solid '
+                    f'<div style="border-radius:50%;box-shadow:0 0 0 4px {prof["colore"]};line-height:0">'
+                    f'{volto_html(professore, 140)}</div><div style="flex:1;min-width:220px;background:rgba(255,255,255,.08);border:1px solid '
                     f'rgba(255,255,255,.15);border-radius:16px;padding:14px 16px;color:#fff"><div style="font-size:19px;'
                     f'font-weight:700;color:#fff">✦ {professore}</div><div style="font-size:12.5px;color:#A9B6D3">'
                     f'{prof["materia"]}</div><div style="margin-top:8px;color:#E6ECF8;font-size:14.5px">{prof["saluto"]}</div>'
                     '</div></div>', unsafe_allow_html=True)
+        if foto_professore(professore):
+            st.caption("I volti dei professori sono generati dall'intelligenza artificiale: non sono persone reali.")
         vista = st.segmented_control("Che cosa vuoi fare?", ["💬 Chat con il professore", "🗣️ Interrogazione orale"],
                                      default="💬 Chat con il professore", key="tutor_vista") or "💬 Chat con il professore"
         if vista == "🗣️ Interrogazione orale":
@@ -11584,8 +11668,7 @@ def tutor_ai():
             pannello_collegamenti()
         with st.container(key="card_chat"):
             if not chat:
-                st.markdown(f'<div style="display:flex;gap:10px;align-items:flex-start"><div style="font-size:30px">'
-                            f'{prof["volto"]}</div><div style="background:#F1F5F9;border-radius:16px;padding:10px 14px;'
+                st.markdown(f'<div style="display:flex;gap:10px;align-items:flex-start">{volto_html(professore, 40)}<div style="background:#F1F5F9;border-radius:16px;padding:10px 14px;'
                             f'max-width:80%">{L.tr("Ciao")}{" " + html.escape((p.get("nome") or "").split(" ")[0]) if p.get("nome") else ""}! 👋 '
                             f'{L.tr("Su cosa vuoi che ti aiuti oggi? Puoi scrivere o registrare la domanda con il microfono, e ti rispondo anche a voce.")}</div></div>',
                             unsafe_allow_html=True)
@@ -11604,7 +11687,7 @@ def tutor_ai():
                                 f'<div style="font-size:10.5px;opacity:.8;text-align:right">{extra.get("ora", "")} ✓✓</div>'
                                 '</div></div>', unsafe_allow_html=True)
                     continue
-                with st.chat_message("assistant", avatar=prof["volto"]):
+                with st.chat_message("assistant", avatar=avatar_professore(professore)):
                     st.markdown(testo)
                     if extra.get("mappa"):
                         mappa_nella_chat(extra["mappa"], i)
@@ -11616,7 +11699,7 @@ def tutor_ai():
                             st.audio(audio, format="audio/mp4", autoplay=True)
                     ascolta(re.sub(r"[*#_>`]", "", testo.split("**✅")[0]), f"tutor_{i}")
                     if extra.get("fonti"):
-                        st.caption("🤖 Scritta dall'AI del Mac partendo dai testi controllati di BIBL-IA: se qualcosa non "
+                        st.caption("🖥️ Scritta dall'AI del Mac partendo dai testi controllati di BIBL-IA: se qualcosa non "
                                    "ti torna, controlla i testi qui sotto o segnalalo.")
                         with st.expander("📘 Su che cosa si basa (testi di BIBL-IA)"):
                             for f in extra["fonti"]:
@@ -11800,7 +11883,7 @@ def analisi_simulazione(elenco, risposte, chiave):
     deboli = sorted(((sum(v) / len(v), m) for m, v in per_m.items() if sum(v) / len(v) < 0.6))
     errori = sorted(((len(v) - sum(v), a, m) for (m, a), v in per_a.items() if len(v) > sum(v)), reverse=True)[:4]
     with st.container(border=True):
-        st.markdown("**🤖 Analisi della simulazione**")
+        st.markdown("**🖥️ Analisi della simulazione**")
         testo = f"Hai ottenuto il **{percento}%** delle risposte giuste."
         if forti:
             testo += f" Sei preparato in **{', '.join(forti)}**."
@@ -12029,12 +12112,12 @@ def area_docenti():
     menu, contenuto = st.columns([1, 3.6], gap="medium")
     voci = {"classi": "🏫 Le mie classi", "panoramica": "🏠 Panoramica", "lezioni": "📘 Lezioni", "compiti": "📋 Compiti e verifiche",
             "domande": "🗂️ Banca delle domande", "nuova": "➕ Nuova domanda", "analisi": "📊 Analisi",
-            "tutor": "🤖 Controllo del tutor AI", "pareri": "👍 Pareri sulle lezioni", "segnalazioni": "⚠️ Segnalazioni"}
+            "tutor": "🖥️ Controllo del tutor AI", "pareri": "👍 Pareri sulle lezioni", "segnalazioni": "⚠️ Segnalazioni"}
     if not proprietario():
         # Un professore invitato vede le sue classi e la banca delle domande, non i dati di tutto BIBL-IA.
         voci = {k: v for k, v in voci.items() if k in ("classi", "domande")}
         u = A.utente(utente_attuale()) or {}
-        st.caption(f"🧑‍🏫 Sei entrato come **{html.escape(u.get('nome') or utente_attuale())}** (`{utente_attuale()}`), "
+        st.caption(f"🏫 Sei entrato come **{html.escape(u.get('nome') or utente_attuale())}** (`{utente_attuale()}`), "
                    "con la tua password personale.")
     with menu, st.container(key="card_menu_docenti"):
         st.markdown('<div style="font-size:11.5px;color:#94A3B8;font-weight:600;letter-spacing:.05em;margin-bottom:6px">'
@@ -12077,12 +12160,12 @@ def parere_lezione(materia, argomento, chiave):
     fatto = st.session_state.get(f"parere_{chiave}")
     with st.container(key=f"parere_box_{chiave}"):
         if fatto:
-            st.caption(f"🙏 {L.tr('Grazie! Il tuo parere aiuta a migliorare le lezioni.')}")
+            st.caption(f"💙 {L.tr('Grazie! Il tuo parere aiuta a migliorare le lezioni.')}")
             return
         colonne = st.columns([2.2, 1, 1, 1], vertical_alignment="center")
         colonne[0].markdown(f'<div style="font-size:14px;color:#334155">{L.tr("Questa lezione era chiara?")}</div>',
                             unsafe_allow_html=True)
-        for colonna, (voto, etichetta) in zip(colonne[1:], [(3, "👍 Sì"), (2, "😐 Così così"), (1, "👎 No")]):
+        for colonna, (voto, etichetta) in zip(colonne[1:], [(3, "👍 Sì"), (2, "➖ Così così"), (1, "👎 No")]):
             if colonna.button(etichetta, key=f"parere_{voto}_{chiave}", width="stretch"):
                 st.session_state[f"parere_scelto_{chiave}"] = voto
         voto = st.session_state.get(f"parere_scelto_{chiave}")
@@ -12110,7 +12193,7 @@ def docenti_pareri():
     righe = sorted(per_lezione.items(), key=lambda kv: sum(v["voto"] for v in kv[1]) / len(kv[1]))
     st.markdown(f"**{len(pareri)}** pareri su **{len(per_lezione)}** lezioni. Prima le lezioni meno chiare.")
     st.dataframe([{"Materia": m, "Lezione": a, "Pareri": len(v),
-                   "👍": sum(x["voto"] == 3 for x in v), "😐": sum(x["voto"] == 2 for x in v),
+                   "👍": sum(x["voto"] == 3 for x in v), "➖": sum(x["voto"] == 2 for x in v),
                    "👎": sum(x["voto"] == 1 for x in v),
                    "Note": " · ".join(x["nota"] for x in v if x.get("nota"))[:300]} for (m, a), v in righe],
                  hide_index=True, width="stretch")
@@ -12358,7 +12441,7 @@ def lezioni_del_docente(materia, argomento):
     proprie = [l for l in leggi(LEZIONI_DOCENTI_FILE, []) if l["materia"] == materia
                and l["argomento"].lower() == argomento.lower()]
     for k, l in enumerate(proprie):
-        with st.expander(f"👩‍🏫 Lezione del docente: {l['titolo']}"):
+        with st.expander(f"🏫 Lezione del docente: {l['titolo']}"):
             st.markdown(l["testo"])
             if l.get("quiz"):
                 st.caption("⚠️ Domande preparate con l'AI dalla lezione del docente: non sono domande ufficiali.")
@@ -12774,7 +12857,7 @@ def pagina_ricerche():
                     testo = in_breve(a, codice)
                 if testo:
                     st.info(testo)
-                    st.caption("🤖 Scritto dall'AI del Mac partendo dal riassunto dell'articolo: per i dettagli apri l'articolo.")
+                    st.caption("🖥️ Scritto dall'AI del Mac partendo dal riassunto dell'articolo: per i dettagli apri l'articolo.")
                 else:
                     st.caption("L'AI del Mac non è attiva: ecco il riassunto originale, in inglese.")
                     st.write(a["riassunto"])
@@ -12864,7 +12947,7 @@ def pagina_accesso():
         dal_link = (st.query_params.get("invito") or st.query_params.get("classe") or "").strip().upper()
         if dal_link:
             st.session_state.setdefault("inv_codice", dal_link)
-        schede = [L.tr("Entra"), L.tr("Ho un codice di invito"), L.tr("🧑‍🏫 Sono un professore")]
+        schede = [L.tr("Entra"), L.tr("Ho un codice di invito"), L.tr("🏫 Sono un professore")]
         if dal_link:
             nuovo, entra, prof = st.tabs([schede[1], schede[0], schede[2]])
         else:
@@ -13010,7 +13093,7 @@ def richieste_professori():
     """Nel Pannello: le richieste dei professori da approvare, con l'email confermata e il parere dell'AI."""
     with st.container(border=True):
         attesa = A.richieste("in attesa")
-        st.markdown(f"**🧑‍🏫 Richieste dei professori da controllare ({len(attesa)})**")
+        st.markdown(f"**🏫 Richieste dei professori da controllare ({len(attesa)})**")
         if not posta_v2.attiva():
             st.warning("La casella email di BIBL-IA non è impostata: i codici non partono e le email dei professori "
                        "non sono confermate. Per impostarla apri «imposta_email.command» nella cartella di BIBL-IA.")
@@ -13023,7 +13106,7 @@ def richieste_professori():
                 st.markdown(f"**{html.escape(r['nome'])}** · `{r['utente']}` · {html.escape(r['scuola'])} ({html.escape(r['citta'])})  \n"
                             f"Classi: {html.escape(r['classi'])}  \nEmail: {html.escape(r['email'])} · "
                             + ("✅ confermata con il codice" if r.get("email_confermata") else "⚠️ non confermata")
-                            + f" · dominio: **{r['dominio']}**  \n🤖 AI: "
+                            + f" · dominio: **{r['dominio']}**  \n🖥️ AI: "
                             + ("👍 sembra un professore" if parere.get("professore") is True else
                                "👎 non convince" if parere.get("professore") is False else "—")
                             + (f" — {html.escape(parere.get('motivo', ''))}" if parere.get("motivo") else ""))
@@ -13048,7 +13131,7 @@ def gestione_account():
                    "entri senza password con il tuo profilo di sempre.")
         riga = st.columns([2, 1, 1], vertical_alignment="bottom")
         per_chi = riga[0].text_input("Per chi è l'invito? (facoltativo, lo vedi solo tu)", key="inv_per_chi")
-        da_prof = riga[1].toggle("🧑‍🏫 È un professore", key="inv_prof",
+        da_prof = riga[1].toggle("🏫 È un professore", key="inv_prof",
                                  help="Potrà creare le sue classi e invitare i suoi studenti con il codice della classe")
         if riga[2].button("➕ Crea un invito", type="primary", width="stretch", key="crea_invito"):
             st.session_state["ultimo_invito"] = A.crea_invito(per_chi, docente=da_prof)
@@ -13063,7 +13146,7 @@ def gestione_account():
             for c, v in sorted(liberi.items(), key=lambda x: x[1]["creato"], reverse=True):
                 r = st.columns([2, 2, 1], vertical_alignment="center")
                 r[0].code(c, language=None)
-                r[1].caption(("🧑‍🏫 professore · " if v.get("docente") else "") + f"{v.get('per') or '—'} · creato il {v['creato']}")
+                r[1].caption(("🏫 professore · " if v.get("docente") else "") + f"{v.get('per') or '—'} · creato il {v['creato']}")
                 if r[2].button("Annulla", key=f"annulla_{c}"):
                     A.elimina_invito(c)
                     st.rerun()

@@ -34,10 +34,10 @@ ICONE_LINEA = {"🩺": "stethoscope", "🧬": "genetics", "⚗": "science", "⚛
                "🧮": "calculate", "🔥": "local_fire_department", "🌱": "potted_plant", "💊": "medication",
                "🧱": "grid_view", "🧩": "extension", "📖": "menu_book", "📘": "menu_book", "📚": "library_books",
                "🕒": "schedule", "⏰": "alarm", "💬": "chat", "🔎": "search", "🔍": "search", "🗺": "map",
-               "🎓": "school", "🤖": "smart_toy", "❓": "help", "📄": "description", "🎮": "sports_esports",
+               "🎓": "school", "🖥️": "smart_toy", "❓": "help", "📄": "description", "🎮": "sports_esports",
                "🗂": "folder", "⏱": "timer", "🏆": "emoji_events", "🎯": "flag", "📈": "trending_up", "📝": "edit_note",
                "🔁": "replay", "🔄": "replay", "🗓": "calendar_month", "📅": "calendar_month", "🧭": "explore",
-               "👩‍🏫": "co_present", "🧑‍🎓": "school", "🆘": "support", "⭐": "star", "💳": "credit_card",
+               "🏫": "co_present", "🎒": "school", "🆘": "support", "⭐": "star", "💳": "credit_card",
                "🔖": "bookmark", "⚙": "settings", "🧰": "construction", "🔔": "notifications", "🧠": "psychology",
                "💡": "lightbulb", "🎉": "celebration", "👍": "thumb_up", "📌": "push_pin", "📦": "inventory_2"}
 _DA_SOLA = re.compile(r">(\s*)([^<>\sA-Za-z0-9]{1,12})(\s*)<")
