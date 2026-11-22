@@ -5136,6 +5136,129 @@ def tutte_le_molecole():
     return sorted(nomi)
 
 
+# ---- Molecole nuove: se uno studente chiede una molecola che non c'è, la si cerca su PubChem e si aggiunge -------
+# A Wikipedia, Wikidata e PubChem si manda solo il nome della molecola. Niente AI: il nome si traduce con Wikipedia
+# (la pagina italiana → il codice PubChem scritto in Wikidata) oppure con le regole della nomenclatura, e la formula
+# deve essere coerente con il nome. Così l'archivio cresce con le molecole che servono davvero.
+PUG_MOLECOLE = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/"
+try:
+    import ripara_molecole_v2 as _RIPARA
+except Exception:  # pragma: no cover
+    _RIPARA = None
+
+
+def _json_da(url):
+    return json.loads(modelli3d._richiesta(url, tempo=15))
+
+
+def _cid_da_wikipedia(nome):
+    """Il codice PubChem (CID) della molecola, dalla pagina di Wikipedia in italiano e da Wikidata."""
+    try:
+        pagine = _json_da("https://it.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops"
+                          "&ppprop=wikibase_item&titles=" + urllib.parse.quote(nome))["query"]["pages"]
+        voce = next(iter(pagine.values())).get("pageprops", {}).get("wikibase_item")
+        if not voce:
+            return None
+        dati = _json_da(f"https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&property=P662&entity={voce}")
+        cid = dati.get("claims", {}).get("P662", [{}])[0].get("mainsnak", {}).get("datavalue", {}).get("value")
+        return int(cid) if cid and str(cid).isdigit() else None
+    except Exception:
+        return None
+
+
+def _nomi_inglesi_possibili(nome):
+    """Le traduzioni del nome con le regole della nomenclatura (niente AI), con le correzioni più comuni."""
+    nomi = [nome]
+    try:
+        inglese = modelli3d.nome_inglese(nome)
+        nomi += [inglese, *modelli3d.varianti_inglesi(nome, inglese)]
+    except Exception:
+        pass
+    if _RIPARA:
+        nomi.append(_RIPARA.traduci_regole(nome))
+    corretti = []
+    for n in nomi:
+        n = re.sub(r"aceth", "acet", n or "")
+        n = re.sub(r"(an|en|in)(di|tri|tetra)(oic|ol|one|al|amine|yne|ene)", r"\1e\2\3", n)
+        n = re.sub(r"(methyl|ethyl)en(cyclo)", r"\1ene\2", n)
+        corretti.append(n)
+    return [n for n in dict.fromkeys(nomi + corretti) if n and 2 < len(n) < 90]
+
+
+def _nome_sistematico(nome):
+    """Un nome IUPAC (con i numeri delle posizioni o fatto di pezzi della nomenclatura): si traduce senza ambiguità."""
+    n = modelli3d.senza_accenti(nome.lower())
+    if re.search(r"\d", n):
+        return True
+    pezzi = r"(?:met|et|prop|but|pent|es|ept|ott|non|dec|cicl[oi]|fenil|benz|clor|brom|iod|fluor|idross|oss|ammin|nitr|" \
+            r"di|tri|tetra|il|an|en|in|ol|one|ale|oico|ato|uro|o|e|a|\s|-|acido)+"
+    # Ci vogliono la catena (met-, et-, prop-…) e la desinenza (-ano, -olo, -oico…): «benzoile» o «bromoidrina» no.
+    return bool(re.fullmatch(pezzi, n) and re.search(r"(?:met|et|prop|but|pent|es|ept|ott|non|dec)", n)
+                and re.search(r"(?:ano|ene|ino|olo|one|ale|oico|ammina|ammide)$", n)) and len(n) >= 6
+
+
+def _coerente(nome, formula):
+    if _RIPARA:
+        return _RIPARA.coerente(nome, formula)
+    return bool(formula)
+
+
+def cerca_molecola_nuova(testo):
+    """Cerca su PubChem una molecola che BIBL-IA non ha ancora, la salva in modelli_3d/molecole e restituisce il
+    nome del file (oppure None). Le molecole non trovate non si scrivono: si potranno cercare di nuovo."""
+    nome = re.sub(r"\s+", " ", (testo or "").strip().lower())
+    chiave = re.sub(r"[^a-z0-9]+", "_", modelli3d.senza_accenti(nome)).strip("_")
+    if not chiave or len(chiave) < 3 or modelli3d.senza_accenti(nome) in modelli3d.PAROLE_TROPPO_GENERICHE:
+        return None
+    file_molecola = ROOT / "modelli_3d" / "molecole" / f"{chiave}.json"
+    if leggi(file_molecola, {}).get("sdf"):
+        return chiave
+    campi = "/property/MolecularFormula,MolecularWeight,IUPACName,Title/JSON"
+    proprieta, inglese = None, ""
+    cid = _cid_da_wikipedia(nome)
+    if cid:
+        try:
+            proprieta = _json_da(f"{PUG_MOLECOLE}cid/{cid}{campi}")["PropertyTable"]["Properties"][0]
+            inglese = proprieta.get("Title", "")
+        except Exception:
+            proprieta = None
+    if proprieta is None:
+        for tentativo in _nomi_inglesi_possibili(nome):
+            try:
+                p = _json_da(PUG_MOLECOLE + "name/" + urllib.parse.quote(tentativo) + campi)["PropertyTable"]["Properties"][0]
+            except Exception:
+                continue
+            # Si tiene solo se PubChem chiama la molecola proprio così, oppure se il nome è sistematico (IUPAC):
+            # un nome comune tradotto male poteva portare a un'altra sostanza.
+            nome_pubchem = (p.get("Title") or "").lower()
+            if _coerente(nome, p.get("MolecularFormula")) and (nome_pubchem == tentativo.lower() or _nome_sistematico(nome)):
+                proprieta, inglese = p, tentativo
+                break
+    if proprieta is None:
+        return None
+    sdf, tre_d = "", False
+    for tipo in ("3d", "2d"):
+        try:
+            sdf = modelli3d._richiesta(f"{PUG_MOLECOLE}cid/{proprieta['CID']}/SDF?record_type={tipo}").decode()
+        except Exception:
+            continue
+        tre_d = tipo == "3d"
+        if not tre_d:
+            calcolata = modelli3d.forma_3d(sdf, massimo_atomi=400)
+            sdf, tre_d = (calcolata, True) if calcolata else (sdf, False)
+        break
+    if not sdf:
+        return None
+    info = {"nome": nome, "inglese": inglese, "cid": proprieta["CID"], "formula": proprieta.get("MolecularFormula", ""),
+            "peso": proprieta.get("MolecularWeight", ""), "iupac": proprieta.get("IUPACName", ""), "sdf": sdf,
+            "tridimensionale": tre_d, "aggiunta": "cercata da uno studente su PubChem"}
+    file_molecola.write_text(json.dumps(info, ensure_ascii=False), encoding="utf-8")
+    molecola.clear()
+    tutte_le_molecole.clear()
+    formule_molecole.clear()
+    return chiave
+
+
 def legenda_colori(formula, titolo="Che atomo è ogni colore"):
     """La legenda dei colori del modello 3D: ogni pallina colorata con il nome dell'elemento."""
     voci = modelli3d.legenda_atomi(formula)
@@ -5773,9 +5896,25 @@ def modelli_3d():
                           key="cerca_molecola").strip()
     if cerca:
         trovate = cerca_molecole(cerca)
+        esatta = re.sub(r"[^a-z0-9]+", "_", modelli3d.senza_accenti(cerca.lower())).strip("_")
+        cercate = st.session_state.setdefault("molecole_cercate_fuori", {})
+        formula = re.fullmatch(r"(?:[A-Z][a-z]?\d*)+", cerca.replace(" ", "")) and re.search(r"\d", cerca)
+        if esatta not in trovate and not formula and esatta not in cercate and (not trovate or st.button(
+                f"🔎 Non è tra queste? Cerca «{cerca}» su PubChem e aggiungila", key="cerca_fuori")):
+            with st.spinner(f"Cerco «{cerca}» su PubChem…"):
+                cercate[esatta] = cerca_molecola_nuova(cerca)
+            if cercate[esatta]:
+                st.session_state["risultato_molecola"] = cercate[esatta]
+                st.rerun()
+        nuova = cercate.get(esatta)
+        if nuova:
+            trovate = [nuova] + [t for t in cerca_molecole(cerca) if t != nuova]
+            st.success("Molecola nuova trovata su PubChem e aggiunta a BIBL-IA: da ora la trovano tutti.")
+        elif esatta in cercate and trovate:
+            st.caption(f"«{cerca}» non è su PubChem con questo nome: qui sotto le molecole di BIBL-IA che gli somigliano.")
         if not trovate:
-            st.info("Nessuna molecola con questo nome o formula. Prova con un'altra parola (anche solo l'inizio del "
-                    "nome).")
+            st.info("Non l'ho trovata né in BIBL-IA né su PubChem. Controlla come è scritta, oppure prova con il nome "
+                    "in inglese o con il nome IUPAC (per esempio «acido 2-idrossipropanoico»).")
             return
         nome = st.radio(f"Risultati ({len(trovate)}{', i primi 40' if len(trovate) > 40 else ''})", trovate[:40],
                         horizontal=True, key="risultato_molecola", format_func=lambda m: m.replace("_", " "))
