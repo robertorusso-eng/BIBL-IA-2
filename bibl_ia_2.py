@@ -1854,20 +1854,23 @@ SU_TAVOLA = re.compile(r"numero atomico|numero di massa|tavola periodica|protoni
 
 @st.cache_data(show_spinner=False, max_entries=300)
 def risposta_spiegata(domanda, frasi, lingua="it"):
-    """La risposta scritta come una spiegazione: che cos'è, esempi, dove si vede, come si calcola, in breve."""
+    """La risposta scritta come una spiegazione. Con un modello piccolo, meno frasi = meno errori: niente elenchi di
+    esempi con i numeri inventati, solo quello che le informazioni (Wikipedia e BIBL-IA) confermano."""
     return chiedi_ai(
         "Sei un professore di scienze che spiega a uno studente delle superiori o del primo anno di università. "
         f"Rispondi in italiano alla domanda «{domanda}» con questa struttura in Markdown:\n"
-        "**Che cos'è** – la definizione chiara in 1-2 frasi.\n"
-        "**Esempi** – 3 esempi concreti con i numeri (per esempio elementi, molecole, casi reali).\n"
-        "**Dove lo vedi / come si riconosce** – dove si trova o si osserva (per esempio nella tavola periodica, in un "
-        "grafico, nel corpo umano), se c'entra.\n"
-        "**Come si calcola** – formula e un esempio svolto passo per passo, solo se la domanda riguarda un calcolo.\n"
+        "**Che cos'è** – la risposta diretta alla domanda in 2-3 frasi chiare.\n"
+        "**I punti chiave** – da 3 a 5 punti, una frase ciascuno: come funziona, a che cosa serve, da che cosa è fatto.\n"
+        "**Un esempio** – un solo esempio concreto e sicuro (preso dalle informazioni o dalla vita di tutti i giorni).\n"
+        "**Come si calcola** – SOLO se la domanda chiede un calcolo o una formula: la formula e il conto svolto passo "
+        "per passo, controllando che il risultato sia giusto. Se la domanda non chiede un calcolo, NON scrivere questa parte.\n"
         "**In breve** – una frase da ricordare.\n"
-        "Comincia subito con **Che cos'è**, senza frasi di introduzione. "
-        "Usa prima di tutto le informazioni qui sotto (sono controllate). Puoi aggiungere solo conoscenze di base sicure "
-        "del programma di scuola; non inventare numeri. Non citare lettere di opzioni (A, B, C…).\n\n"
-        "Informazioni di BIBL-IA:\n- " + "\n- ".join(frasi), 750)
+        "Comincia subito con **Che cos'è**, senza frasi di introduzione. Regole importanti: scrivi solo cose di cui sei "
+        "sicuro, meglio una frase in meno che una sbagliata; segui le informazioni qui sotto (Wikipedia e testi di "
+        "BIBL-IA) e se quello che ricordi le contraddice, vale quello che dicono le informazioni; non inventare numeri, "
+        "nomi o percentuali; non parlare della tavola periodica o di grafici se la domanda non c'entra. Non citare "
+        "lettere di opzioni (A, B, C…).\n\n"
+        "Informazioni:\n- " + "\n- ".join(frasi), 650)
 
 
 _ARTICOLI = r"(?:(?:il|lo|la|i|gli|le|l'|un|uno|una|un'|the|a|an)\s+|l')?"
@@ -1902,6 +1905,10 @@ def voci_del_confronto(domanda):
         if len(voci) == 2:
             # «la cellula animale da quella vegetale» → «cellula vegetale»
             voci[1] = re.sub(r"^quell[oaie]\s+", voci[0].split()[0] + " ", voci[1], flags=re.I)
+        # «Cellula animale e vegetale» → «cellula animale» e «cellula vegetale»
+        if len(voci) == 2 and len(voci[0].split()) >= 2 and len(voci[1].split()) == 1 and \
+                re.search(r"(?:ale|ile|are|oso|osa|ico|ica|ato|ata|ivo|iva)$", voci[1], re.I):
+            voci[1] = voci[0].split()[0] + " " + voci[1]
         if len(voci) == 2 and voci[0].casefold() != voci[1].casefold():
             return voci
     return []
@@ -1959,9 +1966,73 @@ def _testi_per_la_domanda(domanda, quante=4):
     return scelti
 
 
-@st.cache_data(show_spinner=False, max_entries=300)
+@st.cache_data(show_spinner=False, max_entries=500, ttl=7 * 24 * 3600)
+def introduzione_wikipedia(voce):
+    """L'introduzione della voce di Wikipedia in italiano (solo il nome viene inviato): serve per controllare le
+    differenze con un testo affidabile. Restituisce "" se non c'è o se manca internet."""
+    try:
+        dati = json.loads(modelli3d._richiesta(
+            "https://it.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=extracts"
+            "&explaintext=1&exsectionformat=plain&titles=" + urllib.parse.quote(voce.strip().capitalize()), tempo=8))
+        pagina = next(iter(dati["query"]["pages"].values()))
+        testo = " ".join((pagina.get("extract") or "").split())
+        if "può riferirsi a" in testo[:200] or "disambigua" in testo[:200].lower():
+            return ""
+        return testo[:2500]
+    except Exception:
+        return ""
+
+
+def testi_del_confronto(voci):
+    """Per ognuna delle due cose confrontate: l'introduzione di Wikipedia, come testo di controllo."""
+    return [(f"{v.capitalize()} (Wikipedia): {t}", f"Wikipedia in italiano – voce «{v}»")
+            for v in voci for t in [introduzione_wikipedia(v)] if t]
+
+
+def _radici_testo(testo):
+    return {w[:5] for w in re.findall(r"[a-zà-ù0-9]{4,}", modelli3d.senza_accenti(testo.lower()))}
+
+
+def tabella_controllata(risposta, voci, frasi):
+    """Toglie dalla tabella delle differenze le righe uguali nelle due colonne e quelle che i testi di controllo
+    (Wikipedia e BIBL-IA) non confermano: ogni casella deve avere almeno una parola che compare nei testi."""
+    # Ogni colonna si controlla sui testi che parlano di quella cosa (la sua voce di Wikipedia e i testi di BIBL-IA
+    # che la nominano): così una cosa vera per l'una non «conferma» una riga sbagliata per l'altra.
+    fonti = [_radici_testo(" ".join(f for f in frasi if modelli3d.senza_accenti(v.lower())[:6]
+                                    in modelli3d.senza_accenti(f.lower()))) for v in voci]
+    nomi = _radici_testo(" ".join(voci)) | {"anche", "molto", "nella", "nelle", "della", "delle", "degli", "sono",
+                                            "viene", "princ", "prese", "tutti", "molte", "molti",
+                                            "inclu", "meno", "spesso", "speci", "gener", "quest", "quell"}
+    righe, tolte = [], 0
+    for riga in risposta.splitlines():
+        celle = [c.strip(" *") for c in riga.strip().strip("|").split("|")] if riga.strip().startswith("|") else []
+        if len(celle) == 3 and not set(celle[0]) <= set("-: ") and celle[0].lower() != "aspetto":
+            uguali = modelli3d.senza_accenti(celle[1].lower()) == modelli3d.senza_accenti(celle[2].lower())
+            # almeno metà delle parole di ogni casella deve comparire nei testi di controllo
+            confermata = all(len((_radici_testo(c) - nomi) & f) * 2 >= max(1, len(_radici_testo(c) - nomi))
+                             for c, f in zip(celle[1:], fonti))
+            if uguali or not confermata:
+                tolte += 1
+                continue
+        righe.append(riga)
+    return "\n".join(righe), tolte
+
+
 def risposta_confronto(domanda, voci, frasi):
-    """La risposta a una domanda sulle differenze: le differenze vere, una per una, in una tabella."""
+    """La risposta a una domanda sulle differenze: le differenze vere, una per una, in una tabella; poi le righe
+    che i testi di controllo non confermano vengono tolte."""
+    testo = _scrivi_confronto(domanda, voci, frasi)
+    if not testo:
+        return testo
+    controllata, tolte = tabella_controllata(testo, voci, frasi)
+    # Se il controllo toglierebbe quasi tutto (testi di controllo troppo brevi), resta la tabella dell'AI.
+    if controllata.count("\n|") - 2 >= 2:
+        return controllata
+    return testo
+
+
+@st.cache_data(show_spinner=False, max_entries=300)
+def _scrivi_confronto(domanda, voci, frasi):
     a, b = voci
     return chiedi_ai(
         "Sei un professore di scienze che spiega a uno studente delle superiori o del primo anno di università. "
@@ -1975,9 +2046,12 @@ def risposta_confronto(domanda, voci, frasi):
         "**Che cosa hanno in comune** – 1-3 punti, se ci sono.\n"
         "**Come non confonderli** – un trucco per ricordare la differenza principale.\n"
         "Comincia subito con **In breve**, senza frasi di introduzione. "
-        "Usa prima di tutto le informazioni qui sotto (sono controllate). Puoi aggiungere solo conoscenze di base sicure "
-        "del programma di scuola; non inventare numeri. Non citare lettere di opzioni (A, B, C…).\n\n"
-        "Informazioni di BIBL-IA:\n- " + "\n- ".join(frasi), 900)
+        "Non descrivere che cosa succede se si uniscono o reagiscono tra loro: lo studente vuole sapere in che cosa "
+        "sono DIVERSI. Usa prima di tutto le informazioni qui sotto (Wikipedia e testi di BIBL-IA): ogni riga della "
+        "tabella deve essere scritta o chiaramente ricavabile da queste informazioni o essere una conoscenza di base "
+        "sicura del programma di scuola; non inventare numeri. Dove si trova in natura, in quali alimenti o in quali "
+        "piante: scrivilo solo se è scritto nelle informazioni, per quella cosa. Non citare lettere di opzioni (A, B, C…).\n\n"
+        "Informazioni:\n- " + "\n- ".join(frasi), 900)
 
 
 def caselle_tavola_periodica():
@@ -2106,17 +2180,84 @@ def togli_risposta_pronta(domanda):
             scrivi(RISPOSTE_PRONTE_FILE, pronte)
 
 
+_DEFINIZIONE = re.compile(
+    r"^(?:che\s+)?(?:cos[a']?|che\s+cosa)\s*(?:è|e'|sono|significa|vuol\s+dire)\s+(?:il|lo|la|l'|i|gli|le|un|una|uno|un')?\s*"
+    r"(?P<x>[^?]{3,50}?)\s*\??$|^(?:spiegami|definisci|descrivi)\s+(?:il|lo|la|l'|i|gli|le)?\s*(?P<y>[^?]{3,50}?)\s*\??$", re.I)
+
+
+_PAROLE_DOMANDA = re.compile(r"\b(?:che|cosa|cos'?è|cos|è|sono|come|perché|perche|quale|quali|qual|a|di|da|in|il|lo|la|"
+                             r"l|i|gli|le|un|una|uno|del|della|dei|delle|si|ci|funziona|funzionano|serve|servono|"
+                             r"spiegami|dimmi|mi|what|is|are|the|how|why|does|do|of)\b", re.I)
+
+
+@st.cache_data(show_spinner=False, max_entries=1000, ttl=7 * 24 * 3600)
+def voce_wikipedia_della_domanda(domanda):
+    """Il titolo della voce di Wikipedia in italiano più vicina alla domanda (si inviano solo le parole della domanda,
+    senza le parole interrogative), oppure ""."""
+    parole = " ".join(_PAROLE_DOMANDA.sub(" ", traduci_frase(domanda).replace("’", "'")).replace("?", " ").split())
+    if len(parole) < 3:
+        return ""
+    try:
+        dati = json.loads(modelli3d._richiesta("https://it.wikipedia.org/w/api.php?action=query&format=json&list=search"
+                                               "&srlimit=1&srsearch=" + urllib.parse.quote(parole), tempo=8))
+        risultati = dati.get("query", {}).get("search", [])
+        if not risultati:
+            return ""
+        titolo = risultati[0]["title"]
+        # La voce vale solo se ogni parola del titolo è nella domanda («Rene» per «a cosa servono i reni» sì,
+        # «Cappuccetto Rosso» per «perché il sangue è rosso» no).
+        parole_domanda = re.findall(r"\w{3,}", modelli3d.senza_accenti(domanda.lower()))
+        def nella_domanda(t):
+            return any(t[:max(3, min(len(t), len(q), 6) - 1)] == q[:max(3, min(len(t), len(q), 6) - 1)]
+                       for q in parole_domanda)
+        parole_titolo = [t for t in re.findall(r"\w{3,}", modelli3d.senza_accenti(titolo.lower()))
+                         if t not in ("del", "della", "dei", "delle", "degli")]
+        return titolo if parole_titolo and all(nella_domanda(t) for t in parole_titolo) else ""
+    except Exception:
+        return ""
+
+
+def concetto_da_definire(domanda):
+    """Il concetto di una domanda di definizione («Che cos'è l'ossidazione?» → «ossidazione»), oppure ""."""
+    m = _DEFINIZIONE.match(" ".join(str(domanda or "").split()).replace("’", "'"))
+    return ((m.group("x") or m.group("y") or "").strip(" .,;:") if m else "")
+
+
+def ripulisci_risposta(testo):
+    """Toglie le frasi di introduzione («Ok, eccoci qui!») e la parte «Come si calcola» quando non c'è niente da
+    calcolare («Non è necessario calcolare nulla…»)."""
+    if not testo:
+        return testo
+    righe = testo.strip().splitlines()
+    while righe and not righe[0].lstrip().startswith(("**", "#", "|", "*", "-")):
+        righe.pop(0)
+    testo = "\n".join(righe).strip() or testo
+    return re.sub(r"\*\*Come si calcola\*\*[ :–-]*\s*(?:Non (?:è|c'è|serve|ci sono|occorre|si calcola)|Nessun)[^*]*?"
+                  r"(?=\n\s*\*\*|\Z)", "", testo, flags=re.S | re.I).strip()
+
+
 def prepara_risposta(domanda, lingua="it"):
     """Cerca nei testi di BIBL-IA e fa scrivere la spiegazione all'AI del Mac: (spiegazione, [(testo, fonte)])."""
     # I testi che rimandano alle lettere delle opzioni di una domanda d'esame («B e D sono trappole») non si
     # capiscono fuori dal quiz: non si usano.
     voci = voci_del_confronto(domanda) or voci_del_confronto(traduci_frase(domanda))
     trovati = [(t, f) for t, f in testi_per_la_domanda(domanda, 5) if not RIMANDI_OPZIONI.search(t)][:6 if voci else 4]
+    if voci:
+        # Le differenze si controllano anche su Wikipedia; i testi di BIBL-IA che parlano di reazioni tra i due
+        # (glucosio + fruttosio → saccarosio) non servono a spiegare in che cosa sono diversi.
+        trovati = testi_del_confronto(voci) + [(t, f) for t, f in trovati if "→" not in t][:4]
+    else:
+        # Anche la voce di Wikipedia più vicina alla domanda, come testo di controllo («Che cos'è X?» → la voce X).
+        voce = concetto_da_definire(domanda) or voce_wikipedia_della_domanda(domanda)
+        wiki = introduzione_wikipedia(voce) if voce else ""
+        if wiki:
+            trovati = [(f"{voce[0].upper() + voce[1:]} (Wikipedia): {wiki[:1500]}",
+                        f"Wikipedia in italiano – voce «{voce}»")] + trovati[:4]
     if not trovati:
         return "", []
     if voci:
-        return risposta_confronto(domanda, tuple(voci), tuple(t for t, _ in trovati)) or "", trovati
-    return risposta_spiegata(domanda, tuple(t for t, _ in trovati), lingua) or "", trovati
+        return ripulisci_risposta(risposta_confronto(domanda, tuple(voci), tuple(t for t, _ in trovati)) or ""), trovati
+    return ripulisci_risposta(risposta_spiegata(domanda, tuple(t for t, _ in trovati), lingua) or ""), trovati
 
 
 PAROLE_NON_CONCETTO = {"explanation", "explain", "understanding", "understand", "difference", "differences", "between",
@@ -2233,7 +2374,8 @@ def mostra_risposta(domanda, spiegata, trovati, chiave):
             for testo, fonte in trovati:
                 st.markdown(testo)
                 st.caption(f"📘 {fonte}")
-        reazioni_per_argomento(domanda, f"risp_{chiave}")
+        if not voci_del_confronto(domanda):
+            reazioni_per_argomento(domanda, f"risp_{chiave}")
 
 
 SALUTE_PERSONALE = re.compile(
@@ -2268,14 +2410,19 @@ def chiedi_ai_libri(chiave, suggerita=""):
     if domanda and risposta_fissa(domanda):
         st.info(risposta_fissa(domanda))
         return
-    if domanda:
+    confronto = bool(domanda) and bool(voci_del_confronto(domanda) or voci_del_confronto(traduci_frase(domanda)))
+    if domanda and not confronto:
         riquadro_scheda_malattia(domanda, chiave)
-    if domanda and racconta(domanda, f"dom_{chiave}", severo=True):
+    # Una domanda sulle differenze non deve finire su una reazione o un percorso («glucosio e fruttosio» →
+    # la prima tappa della glicolisi): si risponde con le differenze.
+    if domanda and not confronto and racconta(domanda, f"dom_{chiave}", severo=True):
         st.caption("🖥️ Spiegazione presa dai percorsi controllati di BIBL-IA.")
         ricerche_degli_enti(domanda, chiave, risposta_pronta(domanda))
         return
     if domanda:
         pronta = risposta_pronta(domanda)
+        if confronto and pronta and "differenze" not in str(pronta.get("risposta", "")).lower():
+            pronta = None   # una vecchia risposta senza la tabella delle differenze: si rifà
         if pronta and pronta.get("risposta"):
             spiegata, trovati = pronta["risposta"], [tuple(x) for x in pronta.get("fonti", [])]
             st.caption("⚡ Risposta già preparata da BIBL-IA per questa domanda.")
@@ -6301,6 +6448,11 @@ def trova_racconto(testo, severo=False):
     if nome:
         return ("percorso", nome)
     minuscolo = testo.lower()
+    # Nella Biblioteca una definizione («Che cos'è l'osmosi?», «what is osmosis?») non diventa l'impianto di
+    # osmosi inversa o una reazione: risponde la spiegazione.
+    if severo and re.match(r"^\s*(?:(?:che )?cos|cosa (?:si intende|sono|è)|quali sono|what (?:is|are)|define)", minuscolo) \
+            and not re.search(r"raccont|passagg|tapp|fasi|come funziona|come avviene|impiant|industri", minuscolo):
+        return None
     for n, parole in C.PAROLE_IMPIANTO.items():
         if any(w in minuscolo for w in parole):
             return ("impianto", n)
@@ -11229,6 +11381,14 @@ def rispondi_tutor(domanda, modo, professore):
         return
     with st.spinner(f"{professore} cerca nei testi di BIBL-IA e scrive la spiegazione..."):
         trovati = testi_per_la_domanda(domanda, 4)[:6]
+        if voci_del_confronto(domanda):
+            trovati = testi_del_confronto(voci_del_confronto(domanda)) + [(t, f) for t, f in trovati if "→" not in t][:4]
+        elif len(domanda.split()) >= 3:
+            voce = concetto_da_definire(domanda) or voce_wikipedia_della_domanda(domanda)
+            wiki = introduzione_wikipedia(voce) if voce else ""
+            if wiki:
+                trovati = [(f"{voce[0].upper() + voce[1:]} (Wikipedia): {wiki[:1200]}",
+                            f"Wikipedia in italiano – voce «{voce}»")] + trovati[:5]
         if st.session_state.get("tutor_doc_testo"):
             trovati = [(st.session_state["tutor_doc_testo"], "il documento allegato dallo studente")] + trovati
         frasi = [t for t, _ in trovati]

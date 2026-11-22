@@ -4,8 +4,12 @@ arriva subito. Gira sul Mac con l'AI del Mac (Ollama); per le ricerche serve int
 dell'argomento a Europe PMC). Si può fermare e rilanciare: le domande già pronte si saltano.
 
 Uso: ./venv/bin/python -I prepara_risposte_v2.py [quante domande al massimo]
+     ./venv/bin/python -I prepara_risposte_v2.py --bibl-ia-1 [quante]   le domande già fatte di BIBL-IA 1: le risposte
+     si riscrivono da capo con i testi di BIBL-IA 2 e Wikipedia (le frasi dei libri e i nomi dei libri non si usano),
+     senza ricerche (si possono aprire dopo, quando lo studente le chiede)
 """
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -45,6 +49,23 @@ def domande_da_preparare():
     return uniche
 
 
+def domande_bibl_ia_1():
+    """Le domande già fatte a BIBL-IA 1 (solo le domande: le sue risposte sono frasi dei libri e non si mostrano)."""
+    try:
+        voci = json.loads((ROOT / "risposte_pronte.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    visti, uniche = set(), []
+    for v in voci:
+        d = " ".join(str(v.get("domanda", "")).split())
+        if "variante_di" in v or len(d.split()) < 3 or re.search(r"libr[oi]|pagin|paragraf|capitol", d, re.I):
+            continue
+        if d.casefold() not in visti:
+            visti.add(d.casefold())
+            uniche.append(d)
+    return uniche
+
+
 def gia_pronte():
     try:
         return {v.get("domanda", "").casefold() for v in json.loads(PRONTE.read_text(encoding="utf-8")).values()
@@ -54,8 +75,18 @@ def gia_pronte():
 
 
 def main():
-    massimo = int(sys.argv[1]) if len(sys.argv) > 1 else 10_000
-    da_fare = [d for d in domande_da_preparare() if d.casefold() not in gia_pronte()][:massimo]
+    bibl_ia_1 = "--bibl-ia-1" in sys.argv
+    numeri = [a for a in sys.argv[1:] if a.isdigit()]
+    massimo = int(numeri[0]) if numeri else 10_000
+    if bibl_ia_1:
+        try:
+            fatte_gia = {v.get("domanda", "").casefold() for v in json.loads(PRONTE.read_text(encoding="utf-8")).values()
+                         if v.get("risposta")}
+        except (OSError, ValueError):
+            fatte_gia = set()
+        da_fare = [d for d in domande_bibl_ia_1() if d.casefold() not in fatte_gia][:massimo]
+    else:
+        da_fare = [d for d in domande_da_preparare() if d.casefold() not in gia_pronte()][:massimo]
     print(f"Da preparare: {len(da_fare)} domande", flush=True)
     studente = sorted((ROOT / "prove" / "studenti").glob("s*.json"))[0]
     copia = Path(tempfile.mkdtemp()) / "profilo.json"
@@ -70,6 +101,10 @@ def prepara_gruppo():
         spiegata, trovati = prepara_risposta(d, "it")
         if not spiegata:
             print("  (niente nei testi)", d, flush=True)
+            continue
+        if {bibl_ia_1!r}:
+            salva_risposta_pronta(d, lingua="it", risposta=spiegata, fonti=[list(x) for x in trovati])
+            print("  ok ·", d, flush=True)
             continue
         articoli = ricerche_per_domanda(d)
         salva_risposta_pronta(d, lingua="it", risposta=spiegata, fonti=[list(x) for x in trovati], ricerche=articoli,
