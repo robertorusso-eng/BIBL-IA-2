@@ -12218,9 +12218,21 @@ AVATAR_COLORI = {"Blu": "#2F5BEA", "Verde": "#16A34A", "Viola": "#7C3AED", "Ross
                  "Azzurro": "#0891B2", "Rosa": "#DB2777", "Grigio": "#475569"}
 
 
+@st.cache_data(show_spinner=False)
+def _personaggio_base64(codice):
+    import personaggi_avatar as PA
+    return base64.b64encode(PA.svg_personaggio(PA.PERSONAGGI[codice]).encode()).decode()
+
+
 def avatar_studente_html(p, misura=92):
-    """L'avatar scelto dallo studente (un simbolo o le iniziali, su un colore): niente faccine."""
+    """L'avatar scelto dallo studente: un personaggio disegnato, oppure un simbolo o le iniziali su un colore."""
+    import personaggi_avatar as PA
     scelta = p.get("avatar") or {}
+    bordo = 3 if misura >= 60 else 2
+    if scelta.get("personaggio") in PA.PERSONAGGI:
+        return (f'<img src="data:image/svg+xml;base64,{_personaggio_base64(scelta["personaggio"])}" alt="avatar" '
+                f'style="width:{misura}px;height:{misura}px;min-width:{misura}px;border-radius:50%;border:{bordo}px solid #fff;'
+                f'box-shadow:0 0 0 2px #2F5BEA;display:block">')
     colore = AVATAR_COLORI.get(scelta.get("colore"), "#2F5BEA")
     simbolo = scelta.get("simbolo", "Iniziali")
     if simbolo in AVATAR_SIMBOLI and simbolo != "Iniziali":
@@ -12228,24 +12240,47 @@ def avatar_studente_html(p, misura=92):
     else:
         nome = p.get("nome", "")
         dentro, grandezza = html.escape("".join(w[0] for w in nome.split()[:2]).upper() or "S"), int(misura * 0.35)
-    bordo = 3 if misura >= 60 else 2
     return (f'<div style="width:{misura}px;height:{misura}px;min-width:{misura}px;border-radius:50%;background:{colore}1F;'
             f'border:{bordo}px solid #fff;box-shadow:0 0 0 2px {colore};display:flex;align-items:center;'
             f'justify-content:center;font-size:{grandezza}px;font-weight:800;color:{colore};line-height:1">{dentro}</div>')
 
 
 def scegli_avatar(p, chiave):
-    """La scelta dell'avatar: un simbolo (o le iniziali) e un colore, con l'anteprima."""
+    """La scelta dell'avatar: uno dei personaggi già pronti, oppure un simbolo (o le iniziali) e un colore."""
+    import personaggi_avatar as PA
     scelta = dict(p.get("avatar") or {})
     st.markdown("**Il tuo avatar**")
     anteprima, scelte = st.columns([1, 6], vertical_alignment="center")
-    simbolo = scelte.pills("Simbolo", AVATAR_SIMBOLI, default=scelta.get("simbolo", "Iniziali"),
-                           key=f"avatar_simbolo_{chiave}", label_visibility="collapsed",
-                           format_func=lambda x: x if x == "Iniziali" else f"{x} {AVATAR_NOMI[x]}")
-    colore = scelte.pills("Colore", list(AVATAR_COLORI), default=scelta.get("colore", "Blu"),
-                          key=f"avatar_colore_{chiave}", label_visibility="collapsed")
-    p["avatar"] = {"simbolo": simbolo or "Iniziali", "colore": colore or "Blu"}
-    anteprima.markdown(avatar_studente_html(p, 64), unsafe_allow_html=True)
+    anteprima.markdown(avatar_studente_html(p, 72), unsafe_allow_html=True)
+    tipo = scelte.segmented_control("Tipo di avatar", ["Personaggio", "Simbolo"],
+                                    default="Simbolo" if scelta.get("simbolo") and not scelta.get("personaggio") else "Personaggio",
+                                    key=f"avatar_tipo_{chiave}", label_visibility="collapsed")
+    if tipo == "Simbolo":
+        simbolo = scelte.pills("Simbolo", AVATAR_SIMBOLI, default=scelta.get("simbolo", "Iniziali"),
+                               key=f"avatar_simbolo_{chiave}", label_visibility="collapsed",
+                               format_func=lambda x: x if x == "Iniziali" else f"{x} {AVATAR_NOMI[x]}")
+        colore = scelte.pills("Colore", list(AVATAR_COLORI), default=scelta.get("colore", "Blu"),
+                              key=f"avatar_colore_{chiave}", label_visibility="collapsed")
+        nuovo = {"simbolo": simbolo or "Iniziali", "colore": colore or "Blu"}
+        if nuovo != scelta:
+            p["avatar"] = nuovo
+            salva()
+            st.rerun()
+        return
+    griglia = scelte.container(horizontal=True, gap="small")
+    for codice in PA.PERSONAGGI:
+        colonna = griglia.container(width=76, gap=None)
+        scelto = scelta.get("personaggio") == codice
+        colonna.markdown(f'<img src="data:image/svg+xml;base64,{_personaggio_base64(codice)}" alt="personaggio" '
+                         f'style="width:62px;height:62px;border-radius:50%;display:block;margin:0 auto 2px;'
+                         f'box-shadow:0 0 0 {3 if scelto else 1}px {"#2563EB" if scelto else "#E2E8F0"}">',
+                         unsafe_allow_html=True)
+        if colonna.button("✓" if scelto else "Scegli", key=f"avatar_{codice}_{chiave}", width="stretch",
+                          type="primary" if scelto else "tertiary"):
+            p["avatar"] = {"personaggio": codice}
+            salva()
+            st.rerun()
+    scelte.caption("Personaggi disegnati apposta per BIBL-IA: scegli quello che ti somiglia di più.")
 
 
 def campi_profilo(p, chiave):
