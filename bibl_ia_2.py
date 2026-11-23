@@ -2140,9 +2140,20 @@ def chiave_domanda(domanda, lingua=None):
     return ("en|" if lingua == "en" else "") + " ".join(re.findall(r"[0-9a-zà-ÿ]+", domanda.casefold()))
 
 
-@st.cache_resource(show_spinner=False, max_entries=2)
+@st.cache_resource(show_spinner=False)
+def _archivio_vettori_pronte():
+    return {}
+
+
 def _vettori_pronte(chiavi):
-    return modello_frasi().encode(list(chiavi), normalize_embeddings=True)
+    """I vettori delle domande pronte: si calcolano solo quelli delle domande nuove (con 2.400 domande ricalcolarli
+    tutti a ogni risposta aggiunta richiedeva circa 12 secondi)."""
+    import numpy
+    archivio = _archivio_vettori_pronte()
+    nuove = [c for c in chiavi if c not in archivio]
+    if nuove:
+        archivio.update(zip(nuove, modello_frasi().encode(nuove, normalize_embeddings=True)))
+    return numpy.stack([archivio[c] for c in chiavi])
 
 
 def risposta_pronta(domanda):
