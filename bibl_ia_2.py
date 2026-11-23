@@ -3752,8 +3752,7 @@ def passo_obiettivo():
             p["data_esame"] = data.isoformat() if data else None
         elif obiettivo == "test" and stato == "superiori":
             st.caption("Dopo «Avanti» scegli il corso, l'università e il test.")
-        p["ore_giorno"] = st.select_slider("Ore che puoi studiare ogni giorno", [0.5, 1, 1.5, 2, 3, 4, 5, 6],
-                                           value=p.get("ore_giorno", 2), key="obi_ore")
+        scegli_tempo_studio(p, "obi", st)
         colonne = st.columns(2)
         if colonne[0].button("Indietro", width="stretch", key="obi_indietro"):
             p["passo"] = 0
@@ -7635,7 +7634,7 @@ def strategia():
     mancano = (date.fromisoformat(p["data_esame"]) - date.today()).days if p.get("data_esame") else None
     testo = (f"I prossimi {mancano} giorni saranno impegnativi, ma un grande miglioramento è alla tua portata. "
              if mancano and mancano > 0 else "Ogni giorno conta: poco ma costante funziona meglio di tanto ogni tanto. ")
-    testo += f"Studia circa {p.get('ore_giorno', 2)} ore al giorno: prima il ripasso degli errori (10 minuti), "
+    testo += f"Studia circa {durata_studio(p)} al giorno: prima il ripasso degli errori (10 minuti), "
     testo += ("poi " + " e ".join(a for _, _, _, a in deboli) + ", " if deboli else "poi una lezione nuova, ")
     testo += f"infine {obiettivo_giorno()} domande. Il sabato una simulazione completa."
     return testo
@@ -10767,7 +10766,7 @@ def calendario_piano(piano):
                     p["passo"] = 4
                     salva()
                     st.rerun()
-    st.caption(f"Le sessioni sono distribuite con le tue {p.get('ore_giorno', 2)} ore di studio al giorno (cambiale in "
+    st.caption(f"Le sessioni sono distribuite con il tuo tempo di studio: {durata_studio(p)} al giorno (cambialo in "
                "⚙️ Impostazioni). Le Flash Review e le verifiche si aggiungono da sole quando trovi delle lacune.")
 
 
@@ -11114,7 +11113,7 @@ def ripasso_intelligente():
         else:
             quante = min(carico_giornaliero()[0], len(dovute))
             if float(profilo().get("ore_giorno", 2) or 2) < 1.5:
-                st.caption(f"⏳ {L.tr('Ore di studio al giorno')}: {profilo().get('ore_giorno')} · {L.tr('Ripasso di oggi')}: "
+                st.caption(f"⏳ {L.tr('Tempo di studio al giorno')}: {durata_studio(profilo())} · {L.tr('Ripasso di oggi')}: "
                            f"{quante} · " + L.tr("Il ripasso resta breve, così c'è tempo per la sessione del piano. "
                                                  "Se ne hai di più, «Continua con le altre»."))
             giro = st.session_state.setdefault("rip_giro", 1)
@@ -12210,6 +12209,31 @@ def analisi_simulazione(elenco, risposte, chiave):
 
 # --- Profilo dello studente, fonti delle domande, segnalazioni ---------------------------------------------
 
+def testo_durata(minuti):
+    """90 → «1 ora e 30 minuti», 45 → «45 minuti», 120 → «2 ore»."""
+    ore, resto = divmod(int(minuti), 60)
+    parti = ([f"{ore} {'ora' if ore == 1 else 'ore'}"] if ore else []) + ([f"{resto} minuti"] if resto else [])
+    return " e ".join(parti) or "0 minuti"
+
+
+def durata_studio(p):
+    return testo_durata(round(float(p.get("ore_giorno", 2) or 2) * 60))
+
+
+def scegli_tempo_studio(p, chiave, dove):
+    """Il tempo di studio al giorno come un orario (ore:minuti, di 15 in 15 minuti): 00:30 è mezz'ora, 01:45 è
+    un'ora e tre quarti. Nel profilo resta in ore (1.75), come prima."""
+    from datetime import time as orario
+    minuti = int(round(float(p.get("ore_giorno", 2) or 2) * 60 / 15)) * 15
+    minuti = min(max(minuti, 15), 12 * 60)
+    scelto = dove.time_input("Quanto tempo puoi studiare ogni giorno? (ore:minuti)", value=orario(minuti // 60, minuti % 60),
+                             step=timedelta(minutes=15), key=f"tempo_{chiave}",
+                             help="Per esempio 00:30 = mezz'ora, 00:45 = tre quarti d'ora, 01:00 = un'ora, 02:15 = due ore e un quarto")
+    minuti = max(15, scelto.hour * 60 + scelto.minute) if scelto else minuti
+    p["ore_giorno"] = round(minuti / 60, 2)
+    dove.caption(f"⏱️ Studierai {testo_durata(minuti)} al giorno.")
+
+
 AVATAR_NOMI = {"Iniziali": "Iniziali", "🧬": "DNA", "🔬": "Microscopio", "🧪": "Provetta", "⚛️": "Atomo", "🩺": "Stetoscopio",
                "🧠": "Cervello", "🫀": "Cuore", "📚": "Libri", "🎓": "Laurea", "🚀": "Razzo", "🌱": "Pianta", "⭐": "Stella",
                "🔭": "Telescopio", "💊": "Farmaco", "🧮": "Abaco"}
@@ -12293,8 +12317,7 @@ def campi_profilo(p, chiave):
                            key=f"data_{chiave}")
     p["data_esame"] = data.isoformat() if data else None
     c = st.columns(2)
-    p["ore_giorno"] = c[0].select_slider("Ore che puoi studiare ogni giorno", [0.5, 1, 1.5, 2, 3, 4, 5, 6],
-                                         value=p.get("ore_giorno", 2), key=f"ore_{chiave}")
+    scegli_tempo_studio(p, chiave, c[0])
     p["materie_difficili"] = c[1].multiselect("Materie in cui hai più difficoltà", sorted(MATERIE_BANCA),
                                               default=[m for m in p.get("materie_difficili", []) if m in MATERIE_BANCA],
                                               key=f"diff_{chiave}", placeholder="Scegli, se vuoi")
