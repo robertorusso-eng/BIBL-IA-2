@@ -7715,9 +7715,7 @@ def barra_in_alto(titolo):
             leggi_pagina = pannello_accessibilita(p)
         nome = p.get("nome") or L.tr("Studente")
         colonne[3].markdown(f'<div style="display:flex;align-items:center;gap:10px;justify-content:flex-end">'
-                            f'<span style="font-size:18px">🔔</span><div style="width:36px;height:36px;border-radius:50%;'
-                            f'background:#2563EB;color:#fff;display:flex;align-items:center;justify-content:center;'
-                            f'font-weight:700">{html.escape(nome[:1].upper())}</div><b style="font-size:14px;color:#0F1B3D;'
+                            f'<span style="font-size:18px">🔔</span>{avatar_studente_html(p, 36)}<b style="font-size:14px;color:#0F1B3D;'
                             f'white-space:nowrap">{html.escape(nome)}</b></div>', unsafe_allow_html=True)
     if leggi_pagina:
         voce_del_browser(leggi_pagina)
@@ -9830,11 +9828,9 @@ def panoramica_v6(p, test, prep, mancano):
         testa = st.columns([3, 1], vertical_alignment="center")
         testa[0].markdown(f'<div class="ed-h">{L.tr("Profilo")}</div>', unsafe_allow_html=True)
         testa[1].page_link(PAGINE["impostazioni"], label="", icon=":material/edit:")
-        iniziali = "".join(w[0] for w in nome.split()[:2]).upper() or "S"
         corso = p.get("indirizzo") or p.get("corso") or test
-        st.markdown(f'<div style="text-align:center;margin:6px 0 14px"><div style="width:92px;height:92px;border-radius:50%;'
-                    f'margin:0 auto;background:#E0E8FF;border:3px solid #fff;box-shadow:0 0 0 2px #2F5BEA;display:flex;'
-                    f'align-items:center;justify-content:center;font-size:32px;font-weight:800;color:#2F5BEA">{html.escape(iniziali)}</div>'
+        st.markdown(f'<div style="text-align:center;margin:6px 0 14px"><div style="display:flex;justify-content:center">'
+                    f'{avatar_studente_html(p, 92)}</div>'
                     f'<div style="font-weight:700;color:#0F1B3D;font-size:16px;margin-top:10px">{html.escape(nome or L.tr("Studente"))}</div>'
                     f'<div style="font-size:12.5px;color:#64748B">{html.escape(str(corso))}</div></div>', unsafe_allow_html=True)
         # Il calendario della settimana: oggi cerchiato, un puntino nei giorni di studio, l'esame in rosso.
@@ -11992,10 +11988,11 @@ def tutor_ai():
                             st.rerun()
             for i, (ruolo, testo, extra) in enumerate(chat):
                 if ruolo == "user":
-                    st.markdown(f'<div style="display:flex;justify-content:flex-end;margin:8px 0"><div style="background:'
-                                f'#2563EB;color:#fff;border-radius:16px;padding:10px 14px;max-width:78%">{html.escape(testo)}'
-                                f'<div style="font-size:10.5px;opacity:.8;text-align:right">{extra.get("ora", "")} ✓✓</div>'
-                                '</div></div>', unsafe_allow_html=True)
+                    st.markdown(f'<div style="display:flex;justify-content:flex-end;align-items:flex-end;gap:8px;margin:8px 0">'
+                                f'<div style="background:#2563EB;color:#fff;border-radius:16px;padding:10px 14px;max-width:78%">'
+                                f'{html.escape(testo)}<div style="font-size:10.5px;opacity:.8;text-align:right">'
+                                f'{extra.get("ora", "")} ✓✓</div></div>{avatar_studente_html(p, 34)}</div>',
+                                unsafe_allow_html=True)
                     continue
                 with st.chat_message("assistant", avatar=avatar_professore(professore)):
                     st.markdown(testo)
@@ -12213,11 +12210,50 @@ def analisi_simulazione(elenco, risposte, chiave):
 
 # --- Profilo dello studente, fonti delle domande, segnalazioni ---------------------------------------------
 
+AVATAR_NOMI = {"Iniziali": "Iniziali", "🧬": "DNA", "🔬": "Microscopio", "🧪": "Provetta", "⚛️": "Atomo", "🩺": "Stetoscopio",
+               "🧠": "Cervello", "🫀": "Cuore", "📚": "Libri", "🎓": "Laurea", "🚀": "Razzo", "🌱": "Pianta", "⭐": "Stella",
+               "🔭": "Telescopio", "💊": "Farmaco", "🧮": "Abaco"}
+AVATAR_SIMBOLI = list(AVATAR_NOMI)
+AVATAR_COLORI = {"Blu": "#2F5BEA", "Verde": "#16A34A", "Viola": "#7C3AED", "Rosso": "#DC2626", "Arancione": "#EA580C",
+                 "Azzurro": "#0891B2", "Rosa": "#DB2777", "Grigio": "#475569"}
+
+
+def avatar_studente_html(p, misura=92):
+    """L'avatar scelto dallo studente (un simbolo o le iniziali, su un colore): niente faccine."""
+    scelta = p.get("avatar") or {}
+    colore = AVATAR_COLORI.get(scelta.get("colore"), "#2F5BEA")
+    simbolo = scelta.get("simbolo", "Iniziali")
+    if simbolo in AVATAR_SIMBOLI and simbolo != "Iniziali":
+        dentro, grandezza = simbolo, int(misura * 0.5)
+    else:
+        nome = p.get("nome", "")
+        dentro, grandezza = html.escape("".join(w[0] for w in nome.split()[:2]).upper() or "S"), int(misura * 0.35)
+    bordo = 3 if misura >= 60 else 2
+    return (f'<div style="width:{misura}px;height:{misura}px;min-width:{misura}px;border-radius:50%;background:{colore}1F;'
+            f'border:{bordo}px solid #fff;box-shadow:0 0 0 2px {colore};display:flex;align-items:center;'
+            f'justify-content:center;font-size:{grandezza}px;font-weight:800;color:{colore};line-height:1">{dentro}</div>')
+
+
+def scegli_avatar(p, chiave):
+    """La scelta dell'avatar: un simbolo (o le iniziali) e un colore, con l'anteprima."""
+    scelta = dict(p.get("avatar") or {})
+    st.markdown("**Il tuo avatar**")
+    anteprima, scelte = st.columns([1, 6], vertical_alignment="center")
+    simbolo = scelte.pills("Simbolo", AVATAR_SIMBOLI, default=scelta.get("simbolo", "Iniziali"),
+                           key=f"avatar_simbolo_{chiave}", label_visibility="collapsed",
+                           format_func=lambda x: x if x == "Iniziali" else f"{x} {AVATAR_NOMI[x]}")
+    colore = scelte.pills("Colore", list(AVATAR_COLORI), default=scelta.get("colore", "Blu"),
+                          key=f"avatar_colore_{chiave}", label_visibility="collapsed")
+    p["avatar"] = {"simbolo": simbolo or "Iniziali", "colore": colore or "Blu"}
+    anteprima.markdown(avatar_studente_html(p, 64), unsafe_allow_html=True)
+
+
 def campi_profilo(p, chiave):
-    """Le informazioni che servono al piano: nome, data dell'esame, ore al giorno, materie difficili."""
+    """Le informazioni che servono al piano: nome, avatar, data dell'esame, ore al giorno, materie difficili."""
     c = st.columns(2)
     p["nome"] = c[0].text_input("Come ti chiami? (facoltativo)", value=p.get("nome", ""), key=f"nome_{chiave}",
                                 max_chars=40).strip()
+    scegli_avatar(p, chiave)
     data = c[1].date_input("Data prevista dell'esame (se la sai)", value=data_futura(p), min_value=date.today(), format="DD/MM/YYYY",
                            key=f"data_{chiave}")
     p["data_esame"] = data.isoformat() if data else None
@@ -13959,10 +13995,8 @@ def main():
                         f'<div style="font-size:12.5px;color:#475569;margin:4px 0 8px">{L.tr("Tutte le funzioni sono già sbloccate, sul tuo computer.")}'
                         f'</div>', unsafe_allow_html=True)
             st.page_link(PAGINE["abbonamenti"], label="Scopri i piani →", width="stretch")
-        iniziale = html.escape((p.get("nome") or "S")[:1].upper())
         st.markdown(f'<div style="display:flex;align-items:center;gap:10px;border-top:1px solid #E7ECF3;padding-top:12px;'
-                    f'margin-top:8px"><div style="width:34px;height:34px;border-radius:50%;background:#2563EB;display:flex;'
-                    f'align-items:center;justify-content:center;font-weight:700;color:#fff">{iniziale}</div><div><div style="font-weight:'
+                    f'margin-top:8px">{avatar_studente_html(p, 34)}<div><div style="font-weight:'
                     f'600;font-size:14px">{html.escape(p.get("nome") or "Studente")}</div><div style="font-size:12px;'
                     f'color:#64748B">{("@" + html.escape(utente_attuale())) if utente_attuale() else L.tr("Il tuo account (su questo computer)")}</div></div></div>',
                     unsafe_allow_html=True)
