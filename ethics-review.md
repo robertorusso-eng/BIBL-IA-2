@@ -7,8 +7,9 @@ BIBL-IA 2 è usato da studenti, spesso minorenni, e da professori. Per ognuna de
 **Rischio.** Un agente di studio raccoglie molto su uno studente: che cosa non sa, quanto studia, i voti dei quiz, le domande che fa (a volte anche sulla propria salute, nella sezione Sintomi e cure). Mandare tutto questo a un servizio di AI esterno vorrebbe dire affidare dati di minorenni a terzi, spesso all'estero.
 
 **Scelte di progetto.**
-- L'AI gira sul computer (Ollama, `gemma3:4b`): le domande e le risposte non escono dal computer.
+- L'AI gira sul computer (Ollama, `gemma3:4b`): nessuna domanda viene mandata a servizi di AI esterni e le risposte vengono scritte sul computer.
 - Per le ricerche scientifiche a Europe PMC si inviano solo le parole dell'argomento (per esempio «cell division»), mai il nome dello studente o la sua domanda intera.
+- Per controllare i fatti l'agente cerca la voce su Wikipedia in italiano: si inviano le parole della domanda senza le parole interrogative (per esempio «mitocondrio»), mai il nome o i dati dello studente. Per una molecola nuova si invia a PubChem e Wikidata solo il suo nome.
 - Profili, classi, account e domande fatte sono in file locali esclusi da Git: nel repository ci sono solo profili finti per i test.
 - Le password sono salvate con PBKDF2 e un sale diverso per ognuna; le password del Pannello di gestione si scelgono con uno script che non le mostra mentre si scrivono.
 - Chi usa BIBL-IA e i suoi dati li vede solo il proprietario seduto davanti al computer: chi arriva dalla rete o attraverso un tunnel non viene mai trattato come proprietario.
