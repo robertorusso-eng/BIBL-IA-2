@@ -11899,6 +11899,11 @@ def tutor_ai():
     testa[1].markdown(f'<div style="display:flex;gap:8px;justify-content:flex-end"><span class="badge" style="font-size:'
                       f'13px;padding:6px 12px">🔥 {serie_giorni()} giorni di fila</span><span class="badge" style="font-size:'
                       f'13px;padding:6px 12px">⚡ {p.get("punti", 0)} XP</span></div>', unsafe_allow_html=True)
+    # Con la finestra stretta le colonne ai lati non si schiacciano (le parole andavano in verticale): hanno una
+    # larghezza minima e, se non c'è spazio, vanno a capo sotto il riquadro del professore.
+    st.markdown('<style>@media (max-width:1250px){div[data-testid="stHorizontalBlock"]:has(> div .st-key-card_avatar)'
+                '{flex-wrap:wrap}div[data-testid="stHorizontalBlock"]:has(> div .st-key-card_avatar)>div[data-testid="stColumn"]'
+                '{min-width:100%}}</style>', unsafe_allow_html=True)
     avatar, centro, destra = st.columns([1, 3.5, 1.1], gap="medium")
     with destra:
         # Strumenti rapidi: ogni pulsante chiede al tutor (o apre la pagina) senza scrivere niente.
