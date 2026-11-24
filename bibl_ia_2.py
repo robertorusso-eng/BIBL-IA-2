@@ -11322,10 +11322,30 @@ def _foto_base64(percorso, modificata):
     return f"data:image/{tipo};base64," + base64.b64encode(Path(percorso).read_bytes()).decode()
 
 
-def volto_html(nome, misura=40):
-    """Il volto del professore in HTML: la foto rotonda, oppure l'iniziale in un cerchio colorato (mai faccine)."""
+@st.cache_data(show_spinner=False)
+def _colore_sfondo_foto(percorso, modificata):
+    """Il colore dello sfondo della foto (la media dei due angoli in alto), per allargarla senza bordi."""
+    from PIL import Image
+    with Image.open(percorso) as im:
+        im = im.convert("RGB")
+        w, h = im.size
+        angoli = [im.crop((0, 0, w // 8, h // 8)), im.crop((w - w // 8, 0, w, h // 8))]
+        medie = [a.resize((1, 1)).getpixel((0, 0)) for a in angoli]
+    return "#%02X%02X%02X" % tuple(sum(c) // len(medie) for c in zip(*medie))
+
+
+def volto_html(nome, misura=40, intero=False):
+    """Il volto del professore in HTML: la foto rotonda, oppure l'iniziale in un cerchio colorato (mai faccine).
+    Con intero=True il volto è più piccolo e centrato nel cerchio, con intorno il colore dello sfondo della foto."""
     prof = PROFESSORI.get(nome, {})
     foto = foto_professore(nome)
+    if foto and intero:
+        sfondo = _colore_sfondo_foto(str(foto), foto.stat().st_mtime)
+        return (f'<div style="width:{misura}px;height:{misura}px;border-radius:50%;background:{sfondo};display:flex;'
+                f'align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">'
+                f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:72%;'
+                f'height:72%;object-fit:cover;border-radius:50%;-webkit-mask-image:radial-gradient(circle,#000 58%,transparent 72%);'
+                f'mask-image:radial-gradient(circle,#000 58%,transparent 72%)"></div>')
     if foto:
         return (f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:{misura}px;'
                 f'height:{misura}px;border-radius:50%;object-fit:cover;flex-shrink:0">')
@@ -11930,10 +11950,10 @@ def tutor_ai():
         st.session_state.pop("tutor_doc_testo", None)
     with centro:
         st.markdown(f'<div style="background:#1E3A8A;'
-                    f'border-radius:22px;padding:18px 22px;display:flex;flex-direction:column;align-items:center;gap:12px;'
-                    f'text-align:center"><div style="border-radius:50%;box-shadow:0 0 0 3px {prof["colore"]};line-height:0">'
-                    f'{volto_html(professore, 84)}</div><div style="width:100%;max-width:520px;background:rgba(255,255,255,.08);border:1px solid '
-                    f'rgba(255,255,255,.15);border-radius:16px;padding:12px 16px;color:#fff"><div style="font-size:18px;'
+                    f'border-radius:22px;padding:22px 24px;display:flex;align-items:center;gap:22px;flex-wrap:wrap">'
+                    f'<div style="border-radius:50%;box-shadow:0 0 0 4px {prof["colore"]};line-height:0">'
+                    f'{volto_html(professore, 140, intero=True)}</div><div style="flex:1;min-width:220px;background:rgba(255,255,255,.08);border:1px solid '
+                    f'rgba(255,255,255,.15);border-radius:16px;padding:14px 16px;color:#fff"><div style="font-size:19px;'
                     f'font-weight:700;color:#fff">✦ {professore}</div><div style="font-size:12.5px;color:#A9B6D3">'
                     f'{prof["materia"]}</div><div style="margin-top:8px;color:#E6ECF8;font-size:14.5px">{prof["saluto"]}</div>'
                     '</div></div>', unsafe_allow_html=True)
