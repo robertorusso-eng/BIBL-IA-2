@@ -17,7 +17,7 @@ Chi studia materie scientifiche ha poco tempo, programmi lunghi e spesso nessuno
 - **Reazioni passo per passo** in 23 percorsi di chimica e biochimica (glicolisi, ciclo di Krebs, fotosintesi, acidi e basi…): equazione generale bilanciata, ogni passaggio con enzima e formule, e le molecole di partenza e di arrivo in 3D da ruotare.
 - **Mappe concettuali** (oltre 600), **modelli 3D** di oltre 3.100 molecole e 82 organi (se uno studente cerca una molecola che non c'è, l'agente la trova su PubChem e la aggiunge per tutti), **Sintomi e cure** (circa 580 schede su fonti ufficiali, con l'avviso che non è un consulto medico).
 - **Piani di studio ufficiali** di 24 corsi di laurea, presi dai siti delle università.
-- **Classi.** Un professore crea una classe, i ragazzi entrano con un codice, il professore assegna compiti e vede chi è in difficoltà.
+- **Avatar.** Ogni studente sceglie il suo avatar tra 20 personaggi in stile cartone disegnati apposta, oppure un simbolo e un colore.
 
 ## 3. Come funziona l'agente
 
@@ -34,7 +34,7 @@ Chi studia materie scientifiche ha poco tempo, programmi lunghi e spesso nessuno
 - **Testi di BIBL-IA**: lezioni, schede e mappe scritte e controllate per il progetto. Il repository **non contiene libri** né frasi copiate dai libri.
 - **Domande**: scritte per BIBL-IA. Le domande delle prove ufficiali degli anni passati non sono nel repository: chi le ha può metterle in `contenuti_v2/banca_ufficiale.json` sul proprio computer.
 - **Fonti pubbliche**: Europe PMC e Wikipedia (si inviano solo le parole dell'argomento o della domanda, mai dati dello studente), PubChem e Wikidata per le molecole, BodyParts3D per gli organi, ISS / Ministero della Salute / OMS / Manuale MSD per le schede di salute, siti ufficiali degli atenei per i piani di studio (fonti in `contenuti_v2/ricerca_programmi/`).
-- **Dati degli studenti**: restano solo sul computer dove gira BIBL-IA (profili, classi, account in file locali esclusi da Git). Le password sono salvate con PBKDF2 e non compaiono mai.
+- **Dati degli studenti**: restano solo sul computer dove gira BIBL-IA (profili e account in file locali esclusi da Git). Le password sono salvate con PBKDF2 e non compaiono mai.
 
 ## 5. Installazione e avvio (Mac)
 

@@ -3638,15 +3638,7 @@ def passo_universita():
         carta_onboarding("Configuriamo il tuo profilo!", "Bastano pochi secondi: BIBL-IA prepara il percorso giusto per te.")
         p["nome"] = st.text_input("Come ti chiami?", value=p.get("nome", ""), max_chars=40, key="onb_nome",
                                   placeholder="Il tuo nome").strip()
-        ruolo = pulsanti_scelta("Sei…", {"studente": "🎒 Uno studente", "docente": "🏫 Un docente"},
-                                p.get("ruolo", "studente"), "onb_ruolo")
-        if ruolo != p.get("ruolo"):
-            p["ruolo"] = ruolo
-            st.rerun()
-        if ruolo == "docente":
-            st.info("Nell'**Area docenti** crei lezioni, dispense, domande e verifiche per i tuoi studenti.")
-            st.page_link(PAGINE["docenti"], label="Vai all'Area docenti", icon="🏫", width="stretch")
-            return
+        p["ruolo"] = "studente"
         scelte = {"superiori": "🏫 Superiori", "test": "🎯 Test d'ammissione", "frequento": "🎓 Università"}
         stato = pulsanti_scelta("A che punto sei?", scelte, p.get("stato", "superiori"), "onb_stato", colonne=3)
         if stato != p.get("stato"):
@@ -7190,12 +7182,10 @@ def guida():
 - **🩺 Sintomi e cure** — 582 schede di malattie e sintomi, con le fonti ufficiali, per studiare (non è un consulto medico). Compaiono anche nella Biblioteca quando la domanda nomina una malattia.
 - **🔭 Ricerche scientifiche** — le ricerche pubblicate da università e laboratori: scegli l'argomento e leggi che cosa hanno scoperto, in italiano o in inglese.
 - **🧭 Come si arriva alla risposta** — sotto ogni domanda corretta, i passaggi del ragionamento (o il pulsante che li fa scrivere all'AI del Mac).
-- **🧰 Tutti gli strumenti** — gli strumenti in più (Sintomi e cure, Ricerche scientifiche, Modelli 3D, Reazioni, Laboratorio, Documenti, Mini giochi e Aiuto), anche senza piano; Biblioteca, Tutor, Mappe e Quiz sono nel menu. In ogni capitolo il riquadro «Strumenti per questo argomento» li apre già sull'argomento (organi e grandi molecole, come il tRNA, si guardano in 3D lì stesso).
-- **👍 Questa lezione era chiara?** — in fondo a ogni lezione: i pareri restano sul computer e l'Area docenti mostra le lezioni meno chiare.
+- **🧰 Tutti gli strumenti** — gli strumenti in più (Sintomi e cure, Ricerche scientifiche, Modelli 3D, Reazioni, Laboratorio, Mini giochi e Aiuto), anche senza piano; Biblioteca, Tutor, Mappe e Quiz sono nel menu. In ogni capitolo il riquadro «Strumenti per questo argomento» li apre già sull'argomento (organi e grandi molecole, come il tRNA, si guardano in 3D lì stesso).
+- **👍 Questa lezione era chiara?** — in fondo a ogni lezione: i pareri servono a migliorare le lezioni meno chiare.
 - **🧭 Piano di studio** — il piano come **📋 elenco** o come **📅 calendario** settimana per settimana; si aggiorna da solo con le lacune.
 - **📊 Statistiche** — andamento, precisione, ore di studio, memoria didattica.
-- **📄 Documenti** — **dispense e formulari** di ogni materia da scaricare (PDF o testo) e i tuoi documenti con l'AI.
-- **🏫 Area docenti** — progressi degli studenti, report, compiti e verifiche da assegnare.
 - **⚙️ Impostazioni** — profilo, obiettivo di preparazione (70-95%), domande al giorno, lingua, quale dashboard usare, promemoria, abbonamento, copia dei progressi.
 """)
     with st.expander("🖥️ Recupero intelligente, comandi rapidi e timer", expanded=False):
@@ -7261,8 +7251,8 @@ def guida():
   domande e «segna per rivederla»; alla fine il report, il confronto con le simulazioni precedenti e il piano di recupero.
 - **📊 Statistiche** — la memoria didattica: per ogni argomento livello, ultima verifica, giuste, prossimo ripasso e
   stato (mai studiato, da migliorare, quasi, assimilato).
-- Ogni domanda dice se è **🏛️ ufficiale** o **✍️ originale BIBL-IA**; con **⚠️ Segnala un errore** la segnalazione
-  arriva all'**Area docenti**.
+- Ogni domanda dice se è **🏛️ ufficiale** o **✍️ originale BIBL-IA**; con **⚠️ Segnala un errore** la domanda
+  viene ricontrollata.
 
 **🔒 Privacy, sicurezza e qualità**
 - I tuoi progressi, le note e i documenti restano **su questo computer**: niente account, niente server esterni,
@@ -9903,7 +9893,6 @@ def dashboard():
         presentazione()
         return
     intestazione()
-    avviso_compiti()
     test = p.get("test") or "esame"
     if p.get("stato") == "superiori":
         test = f"{p.get('anno', '')}ª superiore"
@@ -11938,21 +11927,13 @@ def tutor_ai():
                     archivia_chat()
                     st.session_state["tutor_chat"] = [tuple(m) for m in p["chat_tutor"][k]["messaggi"]]
                     st.rerun()
-        st.markdown('<div style="font-weight:700;margin:12px 0 6px">📎 Documenti</div>', unsafe_allow_html=True)
-        allegato = st.file_uploader("Allega un documento", type=["pdf", "txt", "md"], key="tutor_doc",
-                                    label_visibility="collapsed")
-        if allegato:
-            st.session_state["tutor_doc_testo"] = " ".join(testo_del_documento(allegato).split()[:1800])
-            st.caption(f"📄 {allegato.name}: il tutor lo usa per rispondere.")
-        else:
-            st.session_state.pop("tutor_doc_testo", None)
-            st.caption("Nessun documento allegato a questa chat.")
+        st.session_state.pop("tutor_doc_testo", None)
     with centro:
         st.markdown(f'<div style="background:#1E3A8A;'
-                    f'border-radius:22px;padding:22px 24px;display:flex;align-items:center;gap:22px;flex-wrap:wrap">'
-                    f'<div style="border-radius:50%;box-shadow:0 0 0 4px {prof["colore"]};line-height:0">'
-                    f'{volto_html(professore, 140)}</div><div style="flex:1;min-width:220px;background:rgba(255,255,255,.08);border:1px solid '
-                    f'rgba(255,255,255,.15);border-radius:16px;padding:14px 16px;color:#fff"><div style="font-size:19px;'
+                    f'border-radius:22px;padding:18px 22px;display:flex;flex-direction:column;align-items:center;gap:12px;'
+                    f'text-align:center"><div style="border-radius:50%;box-shadow:0 0 0 3px {prof["colore"]};line-height:0">'
+                    f'{volto_html(professore, 84)}</div><div style="width:100%;max-width:520px;background:rgba(255,255,255,.08);border:1px solid '
+                    f'rgba(255,255,255,.15);border-radius:16px;padding:12px 16px;color:#fff"><div style="font-size:18px;'
                     f'font-weight:700;color:#fff">✦ {professore}</div><div style="font-size:12.5px;color:#A9B6D3">'
                     f'{prof["materia"]}</div><div style="margin-top:8px;color:#E6ECF8;font-size:14.5px">{prof["saluto"]}</div>'
                     '</div></div>', unsafe_allow_html=True)
@@ -12362,7 +12343,7 @@ def segnala_errore(d, chiave):
                            "motivo": motivo, "nota": nota, "data": datetime.now().strftime("%d/%m/%Y %H:%M"),
                            "stato": "da controllare"})
             scrivi(SEGNALAZIONI_FILE, elenco)
-            st.success("Grazie! Un docente la controllerà nell'area docenti.")
+            st.success("Grazie! La domanda verrà ricontrollata.")
 
 
 # --- Memoria didattica per argomento, calendario, simulazioni ------------------------------------------------
@@ -12927,9 +12908,6 @@ STRUMENTI = [
     ("laboratorio", "⚗️", "Laboratorio",
      "Che cosa succede se metti insieme due sostanze? Processi e impianti chimici, con i video.",
      "Collegato ai capitoli di chimica e agli esami di ingegneria chimica."),
-    ("documenti", "📄", "Documenti",
-     "Dispense e formulari di ogni materia da scaricare, e i tuoi documenti da studiare con l'AI.",
-     "Le dispense seguono i capitoli delle tue materie."),
     ("giochi", "🎮", "Mini giochi",
      "Imparare giocando: coppie, vero o falso, indovina la molecola, trova l'organo.",
      "I punti contano nei traguardi; ogni capitolo ha il suo gioco."),
@@ -13560,31 +13538,15 @@ def gestione_account():
         if not utenti:
             st.caption("Ancora nessun account.")
         for nome_u, u in sorted(utenti.items()):
-            r = st.columns([2, 2, 1, 1], vertical_alignment="center")
+            r = st.columns([2, 2, 1], vertical_alignment="center")
             r[0].markdown(f"**{html.escape(u.get('nome') or nome_u)}** · `{nome_u}`" + ("" if u.get("attivo", True) else " · ⛔ disattivato"))
             r[1].caption(f"creato il {u['creato']} · ultimo accesso: {u.get('ultimo_accesso') or 'mai'}"
                          + (f" · invito per {inviti.get(u.get('invito'), {}).get('per')}" if inviti.get(u.get("invito"), {}).get("per") else ""))
-            docente = r[2].toggle("Professore", value=bool(u.get("docente")), key=f"doc_{nome_u}",
-                                  help="Può aprire l'Area docenti, creare classi e dare compiti")
-            if docente != bool(u.get("docente")):
-                A.imposta(nome_u, docente=docente)
-                st.rerun()
             attivo = u.get("attivo", True)
-            if r[3].button("Disattiva" if attivo else "Riattiva", key=f"att_{nome_u}"):
+            if r[2].button("Disattiva" if attivo else "Riattiva", key=f"att_{nome_u}"):
                 A.imposta(nome_u, attivo=not attivo)
                 st.rerun()
         st.caption("Per provare la pagina di accesso anche sul Mac apri BIBL-IA con ?accedi=1 alla fine dell'indirizzo.")
-    with st.container(border=True):
-        classi = K.tutte()
-        st.markdown(f"**🏫 Tutte le classi ({len(classi)})**")
-        st.caption("Le classi create dai professori (e da te nell'Area docenti), con come va ogni studente. Le vedete "
-                   "solo tu e il professore della classe.")
-        if not classi:
-            st.caption("Ancora nessuna classe.")
-        for codice, c in sorted(classi.items(), key=lambda x: x[1]["creata"], reverse=True):
-            with st.expander(f"🏫 {K.nome_completo(c)} · prof. {c.get('docente_nome') or 'tu'} · "
-                             f"{len(c['studenti'])} studenti · {len(c['compiti'])} compiti · {codice}"):
-                andamento_classe(codice, c)
 
 
 def profilo_sicuro(dati):
@@ -13980,11 +13942,9 @@ def main():
         mappe=st.Page(pagina_mappe, title="Mappe concettuali", icon=":material/account_tree:", url_path="mappe"),
         esercitati=st.Page(_con_intestazione(esercitati), title="Quiz ed esercitazioni", icon=":material/check_circle:", url_path="esercitati"),
         segnalibri=st.Page(_con_intestazione(pagina_segnalibri), title="Segnalibri", icon=":material/bookmark:", url_path="segnalibri"),
-        docenti=st.Page(_con_intestazione(area_docenti), title="Area docenti", icon=":material/groups:", url_path="docenti"),
         simulazione=st.Page(_con_intestazione(simulazione), title="Simulazioni d'esame", icon=":material/emoji_events:", url_path="simulazione"),
         statistiche=st.Page(_con_intestazione(statistiche), title="Statistiche", icon=":material/bar_chart:", url_path="statistiche"),
         traguardi=st.Page(_con_intestazione(pagina_traguardi), title="Traguardi e livelli", icon=":material/military_tech:", url_path="traguardi"),
-        documenti=st.Page(_con_intestazione(documenti_ai), title="Documenti", icon=":material/folder:", url_path="documenti"),
         impostazioni=st.Page(_con_intestazione(pagina_impostazioni), title="Impostazioni", icon=":material/settings:",
                              url_path="impostazioni"),
         abbonamenti=st.Page(_con_intestazione(abbonamenti), title="Abbonamenti", icon=":material/credit_card:", url_path="abbonamenti"),
@@ -13999,26 +13959,24 @@ def main():
         malattie=st.Page(_con_intestazione(pagina_malattie), title="Sintomi e cure", icon=":material/medical_information:",
                          url_path="sintomi-e-cure"),
         ricerche=st.Page(_con_intestazione(pagina_ricerche), title="Ricerche scientifiche", icon=":material/biotech:",
-                         url_path="ricerche-scientifiche"),
-        classe=st.Page(_con_intestazione(pagina_classe), title="La mia classe", icon=":material/school:", url_path="classe"))
+                         url_path="ricerche-scientifiche"))
     # Il menu corto: le voci di studio, i progressi, «Tutti gli strumenti» e le impostazioni. Le pagine dei singoli
     # strumenti, i piani e la valutazione restano raggiungibili (da «Tutti gli strumenti», dai riquadri degli
     # argomenti, da «Scopri i piani» e da «Feedback»), ma non allungano il menu: si nascondono con NASCOSTE_DAL_MENU.
     pagine = {
         "Studio": [PAGINE["dashboard"], PAGINE["biblioteca"], PAGINE["percorso"], PAGINE["materie"], PAGINE["mappe"], PAGINE["tutor"],
-                   PAGINE["esercitati"], PAGINE["ripasso"], PAGINE["simulazione"], PAGINE["classe"]],
+                   PAGINE["esercitati"], PAGINE["ripasso"], PAGINE["simulazione"]],
         "Strumenti e progressi": [PAGINE["strumenti"], PAGINE["statistiche"], PAGINE["traguardi"], PAGINE["segnalibri"],
                                   PAGINE["malattie"], PAGINE["ricerche"], PAGINE["modelli3d"], PAGINE["reazioni"], PAGINE["laboratorio"],
-                                  PAGINE["documenti"], PAGINE["giochi"], PAGINE["aiuto"]],
+                                  PAGINE["giochi"], PAGINE["aiuto"]],
         "Altro": [PAGINE["impostazioni"], st.Page(_con_intestazione(guida), title="Guida", icon=":material/description:", url_path="guida"),
-                  PAGINE["docenti"], st.Page(_con_intestazione(pannello_gestione), title="Pannello di gestione", icon=":material/admin_panel_settings:",
+                  st.Page(_con_intestazione(pannello_gestione), title="Pannello di gestione", icon=":material/admin_panel_settings:",
                                              url_path="gestione"),
                   PAGINE["abbonamenti"], PAGINE["valuta"]],
     }
     if not proprietario():
-        # Chi entra con un account non vede il pannello di gestione (e l'area docenti solo se è segnato docente).
-        docente = (A.utente(utente_attuale()) or {}).get("docente")
-        pagine["Altro"] = [x for x in pagine["Altro"] if x.url_path != "gestione" and (docente or x.url_path != "docenti")]
+        # Chi entra con un account non vede il pannello di gestione.
+        pagine["Altro"] = [x for x in pagine["Altro"] if x.url_path != "gestione"]
     st.markdown("<style>" + ", ".join(f'[data-testid="stSidebarNav"] li:has(a[href$="/{u}"])'
                                        for u in NASCOSTE_DAL_MENU) + " {display:none !important}</style>",
                 unsafe_allow_html=True)
