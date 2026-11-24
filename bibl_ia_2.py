@@ -11322,30 +11322,15 @@ def _foto_base64(percorso, modificata):
     return f"data:image/{tipo};base64," + base64.b64encode(Path(percorso).read_bytes()).decode()
 
 
-@st.cache_data(show_spinner=False)
-def _colore_sfondo_foto(percorso, modificata):
-    """Il colore dello sfondo della foto (la media dei due angoli in alto), per allargarla senza bordi."""
-    from PIL import Image
-    with Image.open(percorso) as im:
-        im = im.convert("RGB")
-        w, h = im.size
-        angoli = [im.crop((0, 0, w // 8, h // 8)), im.crop((w - w // 8, 0, w, h // 8))]
-        medie = [a.resize((1, 1)).getpixel((0, 0)) for a in angoli]
-    return "#%02X%02X%02X" % tuple(sum(c) // len(medie) for c in zip(*medie))
-
-
 def volto_html(nome, misura=40, intero=False):
     """Il volto del professore in HTML: la foto rotonda, oppure l'iniziale in un cerchio colorato (mai faccine).
-    Con intero=True il volto è più piccolo e centrato nel cerchio, con intorno il colore dello sfondo della foto."""
+    Con intero=True la foto si vede tutta, così com'è (nel riquadro grande del Tutor)."""
     prof = PROFESSORI.get(nome, {})
     foto = foto_professore(nome)
     if foto and intero:
-        # Tutto il viso, senza tagli, su uno sfondo bianco semplice: i bordi della foto sfumano nel bianco.
-        sfuma = "radial-gradient(ellipse 48% 54% at 50% 50%,#000 70%,transparent 100%)"
-        return (f'<div style="width:{misura}px;height:{misura}px;border-radius:50%;background:#FFFFFF;display:flex;'
-                f'align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">'
-                f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:86%;'
-                f'height:86%;object-fit:contain;-webkit-mask-image:{sfuma};mask-image:{sfuma}"></div>')
+        # La foto intera, così com'è, con il suo sfondo: né ingrandita né rimpicciolita (il cerchio taglia solo gli angoli).
+        return (f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:{misura}px;'
+                f'height:{misura}px;border-radius:50%;object-fit:contain;background:#FFFFFF;flex-shrink:0">')
     if foto:
         return (f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:{misura}px;'
                 f'height:{misura}px;border-radius:50%;object-fit:cover;flex-shrink:0">')
