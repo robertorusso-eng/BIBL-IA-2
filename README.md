@@ -1,6 +1,8 @@
 # BIBL-IA 2 – un tutor di studio con l'intelligenza artificiale, gratuito e su misura per ogni studente
 
-🎬 **Video di presentazione (5 minuti):** https://youtu.be/utS--ekHjNw
+🎬 **Video di presentazione (4 minuti e 54 secondi):** https://youtu.be/utS--ekHjNw
+
+🌐 **Sito:** https://bibl-ai.xyz – in attivazione. Quando è acceso porta a BIBL-IA 2; si entra con un account creato su invito.
 
 BIBL-IA 2 è un agente di studio per chi frequenta le superiori o prepara un test e i primi esami dell'università nell'area scientifica e sanitaria (Medicina, Professioni sanitarie, Biotecnologie, Chimica, Ingegneria e altri corsi). Lo studente fa domande, chiede mappe e quiz, segue un piano di studio; l'agente risponde partendo da testi controllati, aggiunge le ricerche scientifiche di università e centri di ricerca e tiene il conto di che cosa lo studente sa già e che cosa deve ripassare. L'intelligenza artificiale è un modello gratuito (Ollama, modello `gemma3:4b`): niente abbonamenti, nessun costo per domanda, e le domande degli studenti non vengono mandate a servizi di AI esterni.
 
