@@ -11340,12 +11340,12 @@ def volto_html(nome, misura=40, intero=False):
     prof = PROFESSORI.get(nome, {})
     foto = foto_professore(nome)
     if foto and intero:
-        sfondo = _colore_sfondo_foto(str(foto), foto.stat().st_mtime)
-        return (f'<div style="width:{misura}px;height:{misura}px;border-radius:50%;background:{sfondo};display:flex;'
+        # Tutto il viso, senza tagli, su uno sfondo bianco semplice: i bordi della foto sfumano nel bianco.
+        sfuma = "radial-gradient(ellipse 48% 54% at 50% 50%,#000 70%,transparent 100%)"
+        return (f'<div style="width:{misura}px;height:{misura}px;border-radius:50%;background:#FFFFFF;display:flex;'
                 f'align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">'
-                f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:72%;'
-                f'height:72%;object-fit:cover;border-radius:50%;-webkit-mask-image:radial-gradient(circle,#000 58%,transparent 72%);'
-                f'mask-image:radial-gradient(circle,#000 58%,transparent 72%)"></div>')
+                f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:86%;'
+                f'height:86%;object-fit:contain;-webkit-mask-image:{sfuma};mask-image:{sfuma}"></div>')
     if foto:
         return (f'<img src="{_foto_base64(str(foto), foto.stat().st_mtime)}" alt="{html.escape(nome)}" style="width:{misura}px;'
                 f'height:{misura}px;border-radius:50%;object-fit:cover;flex-shrink:0">')
